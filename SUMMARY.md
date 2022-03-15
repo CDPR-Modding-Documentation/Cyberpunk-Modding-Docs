@@ -6,10 +6,15 @@
 
 ## 010 Editor
 
-* [Page 1](010-editor/page-1.md)
+* [Download and setup](010-editor/download-and-setup.md)
+* [Scripts](010-editor/scripts.md)
 
 ## Noesis
 
 * [Download and setup](noesis/download-and-setup.md)
-* [Previewing files](noesis/previewing-files.md)
+* [Preview](noesis/preview.md)
 * [Import/Export](noesis/import-export.md)
+
+## PixelRick Save Editor
+
+* [Download page](pixelrick-save-editor/download-page.md)
