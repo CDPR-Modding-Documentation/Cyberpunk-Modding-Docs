@@ -21,7 +21,12 @@
 
 * [Introduction](mlsetupbuilder/introduction.md)
 * [Download and Setup](mlsetupbuilder/download-and-setup.md)
+* [Guides](mlsetupbuilder/guides.md)
 
 ## PixelRick Save Editor
 
 * [Download page](pixelrick-save-editor/download-page.md)
+
+## 3ds Max
+
+* [Workflow](3ds-max/workflow.md)

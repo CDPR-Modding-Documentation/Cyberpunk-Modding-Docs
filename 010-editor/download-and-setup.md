@@ -16,4 +16,4 @@ Download the CP77\_CR2W.bt 010 template from [https://www.mediafire.com/file/udq
 
 ## Setup
 
-Install 010 Editor and run it. make sure that you have added _`oo2ext_7_win64.dll`_ next to the template file, install the template by going to Templates >  View Installed Templates, then click Add and add CP77\_CR2W.bt.
+Install 010 Editor and run it. make sure that you have added _`oo2ext_7_win64.dll`_ next to the template file, install the template by going to Templates >  View Installed Templates, then click Add and add CP77\_CR2W.bt. This way the editor will automatically activate the template if it detects a CP77 file that starts with CR2W
