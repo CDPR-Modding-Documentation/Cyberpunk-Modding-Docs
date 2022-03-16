@@ -14,8 +14,7 @@
 
 * [Introduction](noesis/introduction.md)
 * [Download and setup](noesis/download-and-setup.md)
-* [Preview](noesis/preview.md)
-* [Import/Export](noesis/import-export.md)
+* [Basic export/import process](noesis/basic-export-import-process.md)
 
 ## MlsetupBuilder&#x20;
 

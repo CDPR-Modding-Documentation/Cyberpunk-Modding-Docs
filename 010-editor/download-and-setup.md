@@ -10,7 +10,7 @@ description: How to get 010 Editor working for Cyberpunk 2077 files
 
 Download the 010 Editor software from Sweetscape's website [https://www.sweetscape.com/010editor/](https://www.sweetscape.com/010editor/)
 
-### AlphaZomega's 010 CP77 template
+### alphaZomega's 010 CP77 template
 
 Download the CP77\_CR2W.bt 010 template from [https://www.mediafire.com/file/udqqvb4yz1xpuka/CP77\_CR2W\_v0.51.zip](https://www.mediafire.com/file/udqqvb4yz1xpuka/CP77\_CR2W\_v0.51.zip/file)
 
