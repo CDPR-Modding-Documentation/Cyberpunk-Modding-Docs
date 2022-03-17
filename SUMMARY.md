@@ -16,15 +16,15 @@
 * [Download and setup](noesis/download-and-setup.md)
 * [Basic export/import process](noesis/basic-export-import-process.md)
 
-## MlsetupBuilder&#x20;
+## MlsetupBuilder
 
 * [Introduction](mlsetupbuilder/introduction.md)
 * [Download and Setup](mlsetupbuilder/download-and-setup.md)
 * [Guides](mlsetupbuilder/guides.md)
 
-## PixelRick Save Editor
+## PixelRick's Cyberpunk Save Editor
 
-* [Download page](pixelrick-save-editor/download-page.md)
+* [Introduction](pixelricks-cyberpunk-save-editor/download-page.md)
 
 ## 3ds Max
 
