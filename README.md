@@ -2,7 +2,7 @@
 
 Modding tutorials and documentation for Cyberpunk 2077
 
-This section of the Wiki will focus on tools that Cyberpunk 2077 modding relies on, such as **010 Editor** which is used to edit hexes inside REDengine 4 files like .mesh and .mi.  and **Noesis**, a tool allows the user to preview mesh and texture files, making them able to import/export from/into a wide variety of file extensions such as .fbx and .tga.
+This section of the Wiki will focus on tools that Cyberpunk 2077 modding relies on, such as **010 Editor** which is used to edit floats, ints, arrays and strings inside REDengine 4 files like .mesh and .mi.  and **Noesis**, a tool allows the user to preview mesh and texture files, making them able to import/export from/into a wide variety of file extensions such as .fbx and .tga.
 
 
 
