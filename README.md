@@ -1,15 +1,17 @@
 # Home
 
-Modding tutorials and documentation for Cyberpunk 2077
-
 {% hint style="danger" %}
 This wiki is under heavy construction! Do you see something missing, incorrect, or want to add information of your own? This is a community project so please consider reaching out to us on Discord to get involved! We have a #wiki channel!
 {% endhint %}
 
+{% content-ref url="modding/modding-cyberpunk-2077.md" %}
+[modding-cyberpunk-2077.md](modding/modding-cyberpunk-2077.md)
+{% endcontent-ref %}
 
-This section of the Wiki will focus on tools that Cyberpunk 2077 modding relies on, such as **010 Editor** which is used to edit floats, ints, arrays and strings inside REDengine 4 files like .mesh and .mi.  and **Noesis**, a tool allows the user to preview mesh and texture files, making them able to import/export from/into a wide variety of file extensions such as .fbx and .tga.
+{% content-ref url="developers/creating-mods.md" %}
+[creating-mods.md](developers/creating-mods.md)
+{% endcontent-ref %}
 
-
-If you want to contribue to this Wiki page, feel free to use the link below to do so.
-
-[https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/3r0n1pUTrfb3m02sLBBu](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/3r0n1pUTrfb3m02sLBBu)
+{% content-ref url="help/faq.md" %}
+[faq.md](help/faq.md)
+{% endcontent-ref %}

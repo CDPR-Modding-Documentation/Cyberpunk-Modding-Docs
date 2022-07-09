@@ -4,87 +4,54 @@
 * [Log in and edit](https://app.gitbook.com)
 * [Home](README.md)
 
-## 010 Editor
-
-* [Introduction](010-editor/introduction.md)
-* [Download and setup](010-editor/download-and-setup.md)
-* [Scripts](010-editor/scripts.md)
-
-## Noesis
-
-* [Introduction](noesis/introduction.md)
-* [Download and setup](noesis/download-and-setup.md)
-* [Basic export/import process](noesis/basic-export-import-process.md)
-
-## MlsetupBuilder
-
-* [Introduction](mlsetupbuilder/introduction.md)
-* [Download and Setup](mlsetupbuilder/download-and-setup.md)
-* [Guides](mlsetupbuilder/guides.md)
-
-## PixelRick's Cyberpunk Save Editor
-
-* [Introduction](pixelricks-cyberpunk-save-editor/download-page.md)
-
-## 3ds Max
-
-* [Workflow](3ds-max/workflow.md)
-
-## Assets
-
-* [Animation](assets/animation/README.md)
-  * [Overview](assets/animation/overview.md)
-  * [Face](assets/animation/face.md)
-  * [Character](assets/animation/character.md)
-* [Audio](assets/audio.md)
-* [Meshes](assets/mesh.md)
-* [Shaders](assets/shaders/README.md)
-  * [Shader Docs](assets/shaders/shader-docs.md)
-  * [Materials](assets/shaders/materials.md)
-  * [Multilayered.mt](assets/shaders/multilayer.mt.md)
-* [Textures](assets/texture.md)
-
-## Entities
-
-* [Vehicles](entities/vehicles/README.md)
-  * [TweakDB](entities/vehicles/tweakdb/README.md)
-    * [Vehicle Record](entities/vehicles/tweakdb/vehicle-record.md)
-    * [Vehicle Drive Model Data Record](entities/vehicles/tweakdb/vehicle-drive-model-data-record.md)
-  * [Archive](entities/vehicles/archive/README.md)
-    * [.ent File (entEntityTemplate)](entities/vehicles/archive/.ent-file-ententitytemplate.md)
-    * [.app File (appearanceResource)](entities/vehicles/archive/.app-file-appearanceresource.md)
-    * [Appearances Mappings](entities/vehicles/archive/appearances-mappings.md)
-    * [Vehicle Filename Parsing](entities/vehicles/archive/vehicle-filename-parsing.md)
-    * [Base Types Map](entities/vehicles/archive/base-types-map.md)
-    * [Parts & Parts Categories](entities/vehicles/archive/parts-and-parts-categories.md)
-
-## Formats
-
-* [Archive](formats/archive.md)
-* [W2RC](formats/w2rc/README.md)
-  * [Animations](formats/w2rc/animations.md)
-  * [Audio](formats/w2rc/audio.md)
-  * [Framework](formats/w2rc/framework.md)
-  * [Quest](formats/w2rc/quest.md)
-  * [UI](formats/w2rc/ui.md)
-  * [Visual Assets](formats/w2rc/visual-assets.md)
-  * [World](formats/w2rc/world.md)
-* [Generic](formats/generic.md)
-
 ## Modding
 
-* [Modding RED4](modding/modding-red4.md)
-* [Tools](modding/tools.md)
+* [Modding Cyberpunk 2077](modding/modding-cyberpunk-2077.md)
+* [Frameworks](modding/frameworks.md)
 
-## Guides
+## Developers
 
-* [Quest](guides/quest/README.md)
-  * [How to Edit Voiceover and Subtitles In a Quest.](guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
-  * [How to Change Position and Rotation of an entMeshComponent](guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
-  * [How to Remove an Animation (and Potentially Replace It)](guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
+* [Creating Mods](developers/creating-mods.md)
+* [REDengine 4 Research](developers/redengine-4-research/README.md)
+  * [File Formats](developers/redengine-4-research/file-formats/README.md)
+    * [Animations](developers/redengine-4-research/file-formats/animations.md)
+    * [UI](developers/redengine-4-research/file-formats/ui.md)
+    * [Visual Assets](developers/redengine-4-research/file-formats/visual-assets.md)
+  * [Entities](developers/redengine-4-research/entities/README.md)
+    * [Vehicles](developers/redengine-4-research/entities/vehicles/README.md)
+      * [TweakDB](developers/redengine-4-research/entities/vehicles/tweakdb/README.md)
+        * [Vehicle Record](developers/redengine-4-research/entities/vehicles/tweakdb/vehicle-record.md)
+        * [Vehicle Drive Model Data Record](developers/redengine-4-research/entities/vehicles/tweakdb/vehicle-drive-model-data-record.md)
+      * [Archive](developers/redengine-4-research/entities/vehicles/archive/README.md)
+        * [.ent File (entEntityTemplate)](developers/redengine-4-research/entities/vehicles/archive/.ent-file-ententitytemplate.md)
+        * [.app File (appearanceResource)](developers/redengine-4-research/entities/vehicles/archive/.app-file-appearanceresource.md)
+        * [Appearances Mappings](developers/redengine-4-research/entities/vehicles/archive/appearances-mappings.md)
+        * [Vehicle Filename Parsing](developers/redengine-4-research/entities/vehicles/archive/vehicle-filename-parsing.md)
+        * [Base Types Map](developers/redengine-4-research/entities/vehicles/archive/base-types-map.md)
+        * [Parts & Parts Categories](developers/redengine-4-research/entities/vehicles/archive/parts-and-parts-categories.md)
+  * [Assets](developers/redengine-4-research/assets/README.md)
+    * [Animation](developers/redengine-4-research/assets/animation.md)
+    * [Audio](developers/redengine-4-research/assets/audio.md)
+    * [Meshes](developers/redengine-4-research/assets/mesh.md)
+    * [Shaders](developers/redengine-4-research/assets/shaders/README.md)
+      * [Shader Docs](developers/redengine-4-research/assets/shaders/shader-docs.md)
+      * [Materials](developers/redengine-4-research/assets/shaders/materials.md)
+      * [Multilayered.mt](developers/redengine-4-research/assets/shaders/multilayer.mt.md)
+    * [Textures](developers/redengine-4-research/assets/texture.md)
+* [Modding Tools](developers/modding-tools/README.md)
+  * [010 Editor](developers/modding-tools/010-editor.md)
+  * [3DS MAX](developers/modding-tools/3ds-max.md)
+  * [PixelRick's Cyberpunk Save Editor](developers/modding-tools/pixelrick's-cyberpunk-save-editor.md)
+  * [Noesis](developers/modding-tools/noesis.md)
+  * [MLSETUP Builder](developers/modding-tools/mlsetup-builder.md)
+* [Guides](developers/guides/README.md)
+  * [Quest](developers/guides/quest/README.md)
+    * [How to Edit Voiceover and Subtitles In a Quest.](developers/guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
+    * [How to Change Position and Rotation of an entMeshComponent](developers/guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
+    * [How to Remove an Animation (and Potentially Replace It)](developers/guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
 
 ## Help
 
 * [Community](help/community.md)
+* [FAQ](help/faq.md)
 * [Glossary](help/glossary.md)
-
