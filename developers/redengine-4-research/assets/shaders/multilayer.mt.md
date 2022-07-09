@@ -17,11 +17,11 @@ While the multilayered supershader is very common, there are hundreds of other n
 The multilayered shader is composed of three distinct parts:
 
 1. **Layer Masks** | Mask textures that control where each surface is visible\
-   \*\*\*\*[ **.mlmask files**](multilayer.mt.md#what-is-the-mlmask)\\
+   [**.mlmask files**](multilayer.mt.md#what-is-the-mlmask)
 2. **Layer Definitions** | Controls procedural effects such as tiling or color for each layer\
-   [**.mlsetup files**](multilayer.mt.md#what-is-the-mlsetup)\\
+   [**.mlsetup files**](multilayer.mt.md#what-is-the-mlsetup)
 3. **Layer Surfaces** | Links PBR textures to create numerous pre-defined visual surfaces\
-   [**.mltemplate files**](multilayer.mt.md#what-is-the-mltemplate)\*\*\*\*
+   [**.mltemplate files**](multilayer.mt.md#what-is-the-mltemplate)
 
 ## What is the mlmask?
 
