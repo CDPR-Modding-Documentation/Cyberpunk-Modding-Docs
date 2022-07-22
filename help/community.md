@@ -1,7 +1,5 @@
 # Community
 
-The majority of communication about WolvenKit happens on our Discord server. Use the following link to join our modding community.
+Come check out our Discord server! We develop modding tools, create mods, and chat about Cyberpunk 2077.
 
 {% embed url="https://discord.com/invite/Epkq79kd96" %}
-
-If you want to follow development, look for help with our tools, or contribute, Discord is the place to be.
