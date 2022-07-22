@@ -30,6 +30,10 @@
 [RED4ext](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/)
 {% endcontent-ref %}
 
-### TweakXL
+### TweakXL + ArchiveXL
 
-\<What is TweakXL>
+\<What is TweakXL+ArchiveXL>
+
+{% embed url="https://github.com/psiberx/cp2077-tweak-xl" %}
+
+{% embed url="https://github.com/psiberx/cp2077-archive-xl" %}
