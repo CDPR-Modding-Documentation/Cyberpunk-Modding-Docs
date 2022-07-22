@@ -38,6 +38,7 @@
         * [Vehicle Filename Parsing](developers/redengine-4-research/entities/vehicles/archive/vehicle-filename-parsing.md)
         * [Base Types Map](developers/redengine-4-research/entities/vehicles/archive/base-types-map.md)
         * [Parts & Parts Categories](developers/redengine-4-research/entities/vehicles/archive/parts-and-parts-categories.md)
+  * [Tweaks](developers/redengine-4-research/tweaks.md)
 * [Modding Tools](developers/modding-tools/README.md)
   * [010 Editor](developers/modding-tools/010-editor.md)
   * [3DS MAX](developers/modding-tools/3ds-max.md)
