@@ -12,6 +12,10 @@ REDmod is a **modding framework** and a set of command line **tools** for moddin
 
 REDmod is shipped as free DLC with the game. You need to add it inside the platform store (GOG, Steam, Epic).
 
+* [DLC Link on GOG](https://www.gog.com/game/cyberpunk_2077_redmod)
+* [DLC Link on Steam](https://store.steampowered.com/app/2060310/Cyberpunk_2077_REDmod/)
+* [DLC Link on Epic](https://store.epicgames.com/p/cyberpunk-2077)
+
 ### GOG
 
 <figure><img src="../../../.gitbook/assets/dlc_gog_store.png" alt=""><figcaption></figcaption></figure>

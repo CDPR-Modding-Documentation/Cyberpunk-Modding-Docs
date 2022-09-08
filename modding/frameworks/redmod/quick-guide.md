@@ -17,6 +17,8 @@ The REDmod animation import tool can be used as a Plugin in [WolvenKit](https://
 
 > INFO - It is best to name `.re` animation correctly even if you replace an existing animation, because the imported animation will always have the filename of the `.re` file.
 
+> INFO - You need to have the `.rig` file used by the `.anims` animationset present in your WolvenKit project.
+
 <figure><img src="../../../.gitbook/assets/WolvenKit_animationmodding.jpg" alt=""><figcaption></figcaption></figure>
 
 ### Animation Modding - Manually
@@ -28,6 +30,8 @@ The `import` command imports an `.re` animation file into an existing `.anims` a
 Optional parameters include specifying an existing animation name to rename inside the animset file (otherwise the filename of the `.re` animation file is used) or specifying a different output path (default is overwrite).
 
 > INFO - It is best to name `.re` animation correctly even if you replace an existing animation, because the imported animation will always have the filename of the `.re` file.
+
+> INFO - You need to have the `.rig` file used by the `.anims` animationset present in your depot path.
 
 ## Script Modding
 

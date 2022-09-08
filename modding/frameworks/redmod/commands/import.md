@@ -35,6 +35,8 @@ Optional parameters include specifying an existing animation name to rename insi
 
 > INFO - this is the base depot from which relative \<resource-paths> are loaded
 
+> INFO - You need to have the `.rig` file used by the `.anims` animationset present in your depot path.
+
 * **`-inputPath=<file>`**
 
   absolute path to the animation `.re` file
