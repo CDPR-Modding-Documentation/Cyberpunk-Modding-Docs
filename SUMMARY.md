@@ -7,8 +7,9 @@
 ## Modding
 
 * [Modding Cyberpunk 2077](modding/modding-cyberpunk-2077.md)
-* [Frameworks](modding/frameworks/README.md)
-  * [REDmod](modding/frameworks/redmod.md)
+* [Frameworks](modding/frameworks.md)
+  * [REDmod](modding/frameworks/redmod/README.md)
+    * [Quick Guide](modding/frameworks/redmod/quick-guide.md)
 
 ## Developers
 
