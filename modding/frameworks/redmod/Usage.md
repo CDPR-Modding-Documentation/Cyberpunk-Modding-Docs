@@ -32,23 +32,11 @@ REDmod can stage installed mods to work when the game starts with the `modded` f
 
 In order to utilize deployed mods with REDmod, you need to run the game in a specific *modded* mode. You can do this by launching the game through WolvenKit or manually by specifying a command parameter.
 
-### Deploying Mods - REDlauncher
-
-#### **GOG REDprelauncher**
-
-- Open the `Cyberpunk 2077/REDprelauncher.exe`
-- Click the **Settings** button and **Enable mods**
-- Click **Play**
-- A window will open showing progress on mod deployment.
-
-<figure><img src="../../../.gitbook/assets/gog_prelauncher.png" alt=""><figcaption></figcaption></figure>
-
-#### **GOG Galaxy**
+### **GOG Galaxy**
 
 - Open GOG - *Cyberpunk 2077*
 - Click **Manage Installation** -> **Configure ...**
 - Open the **Features** Tab
-- Select **File 2** `REDprelauncher.exe` as default executable
 - Select **Enable mods**
 - Click **OK**
 - Play the game
@@ -56,13 +44,15 @@ In order to utilize deployed mods with REDmod, you need to run the game in a spe
 
 <figure><img src="../../../.gitbook/assets/redmod_gog.png" alt=""><figcaption></figcaption></figure>
 
-#### **Steam** and **Epic**
+### **Steam** and **Epic**
 
 - Navigate to *Cyberpunk 2077*
 - Click **Play**
 - Click the **Settings** button and **Enable mods**
 - Click **Play**
 - A window will open showing progress on mod deployment.
+
+<figure><img src="../../../.gitbook/assets/gog_prelauncher.png" alt=""><figcaption></figcaption></figure>
 
 ## Conflicts and Load Order
 
