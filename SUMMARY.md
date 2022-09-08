@@ -10,6 +10,9 @@
 * [Frameworks](modding/frameworks.md)
   * [REDmod](modding/frameworks/redmod/README.md)
     * [Quick Guide](modding/frameworks/redmod/quick-guide.md)
+    * [Commands](modding/frameworks/redmod/commands/README.md)
+      * [Deploy](modding/frameworks/redmod/commands/deploy.md)
+      * [Import](modding/frameworks/redmod/commands/import.md)
 
 ## Developers
 
