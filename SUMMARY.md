@@ -6,14 +6,14 @@
 
 ## Modding
 
-* [Modding Cyberpunk 2077](modding/modding-cyberpunk-2077.md)
-* [Frameworks](modding/frameworks.md)
-  * [REDmod](modding/frameworks/redmod/README.md)
-    * [Usage](modding/frameworks/redmod/Usage.md)
-    * [Modding Guide](modding/frameworks/redmod/quick-guide.md)
-    * [Commands](modding/frameworks/redmod/commands/README.md)
-      * [Deploy](modding/frameworks/redmod/commands/deploy.md)
-      * [Import](modding/frameworks/redmod/commands/import.md)
+* [Modding Cyberpunk 2077](modding/modding-cyberpunk-2077/README.md)
+  * [Frameworks](modding/modding-cyberpunk-2077/frameworks.md)
+* [REDmod](modding/redmod/README.md)
+  * [Usage](modding/redmod/usage.md)
+  * [Modding Guide](modding/redmod/quick-guide.md)
+  * [Commands](modding/redmod/commands/README.md)
+    * [Deploy](modding/redmod/commands/deploy.md)
+    * [Import](modding/redmod/commands/import.md)
 
 ## Developers
 
