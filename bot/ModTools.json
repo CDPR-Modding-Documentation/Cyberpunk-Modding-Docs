@@ -1,0 +1,109 @@
+{
+  "WolvenKit": {
+    "Title": "WolvenKit",
+    "Description": "Mod editor/creator for RedEngine games. The point is to have an all in one tool for creating mods for the games made with the engine.",
+    "Url": "https://github.com/WolvenKit/Wolvenkit",
+    "Color": "Blue",
+    "Author": 382111410382962690,
+    "ThumbnailUrl": "https://raw.githubusercontent.com/WolvenKit/WolvenKit/master/WolvenKit/Resources/Media/Images/Application/Sammy_Home.png",
+    "Wiki": "https://wiki.redmodding.org/wolvenkit/",
+    "Fields": [
+      {
+        "Title": "✅ Latest stable release",
+        "Value": "https://github.com/WolvenKit/WolvenKit/releases/latest"
+      },
+      {
+        "Title": "🚧 Latest nightly build",
+        "Value": "https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/latest"
+      }
+    ]
+  },
+  "CET": {
+    "Title": "CET",
+    "Description": "Cyber Engine Tweaks is a framework giving modders a way to script mods using Lua with access to all the internal scripting features. It also comes with a Dear ImGui to provide GUI for different mods you are using, along with console and TweakDB editor for more advanced usage. It also adds some patches for quality of life, all of which can be enabled/disabled through the settings menu or config files (requires game restart to apply).",
+    "Url": "https://github.com/yamashi/CyberEngineTweaks",
+    "Color": "DarkGreen",
+    "Author": 132818429022437376,
+    "Wiki": "https://wiki.redmodding.org/cyber-engine-tweaks/",
+    "Fields": [
+      {
+        "Title": "✅ Latest stable release",
+        "Value": "https://github.com/yamashi/CyberEngineTweaks/releases/latest"
+      }
+    ]
+  },
+  "Red4Ext": {
+    "Title": "Red4Ext",
+    "Description": "A script extender for REDengine 4 (Cyberpunk 2077). RED4ext is a library that extends REDengine 4. It will allow modders to add new features, modify the game behavior, add new scripting functions or call existing ones in your own plugins.",
+    "Url": "https://github.com/WopsS/RED4ext",
+    "Color": "DarkRed",
+    "Author": 134413846168207361,
+    "Wiki": "https://wiki.redmodding.org/red4ext/",
+    "Fields": [
+      {
+        "Title": "✅ Latest stable release",
+        "Value": "https://github.com/WopsS/RED4ext/releases/latest"
+      }
+    ]
+  },
+  "Redscript": {
+    "Title": "Redscript",
+    "Description": "Compiler/decompiler toolkit for redscript. Toolkit for working with scripts used by REDengine in Cyberpunk 2077. Currently includes a compiler, a decompiler and a disassembler.",
+    "Url": "https://github.com/jac3km4/redscript",
+    "Color": "Red",
+    "Author": 165287201016381440,
+    "ThumbnailUrl": "https://user-images.githubusercontent.com/11986158/145484796-9bf1f77f-e706-4e15-b46b-c9b949f0086c.png",
+    "Wiki": "https://wiki.redmodding.org/redscript/language/intro",
+    "Fields": [
+      {
+        "Title": "✅ Latest stable release",
+        "Value": "https://github.com/jac3km4/redscript/releases/latest"
+      }
+    ]
+  },
+  "MlsetupBuilder": {
+    "Title": "MlsetupBuilder",
+    "Description": "Cyberpunk 2077 modding tool to build json version of .mlsetup files",
+    "Url": "https://github.com/Neurolinked/MlsetupBuilder",
+    "Color": "LightOrange",
+    "Author": 235285346462597121,
+    "Wiki": "https://wiki.redmodding.org/redscript/language/intro",
+    "ThumbnailUrl": "https://www.kientzproduction.com/PRJ/img/mlsb.gif",
+    "Fields": [
+      {
+        "Title": "✅ Latest stable release",
+        "Value": "https://github.com/Neurolinked/MlsetupBuilder/releases/latest"
+      }
+    ]
+  },
+  "TweakXL": {
+    "Title": "TweakXL",
+    "Description": "Cyberpunk 2077 mod that allows you to modify TweakDB.",
+    "Url": "https://github.com/psiberx/cp2077-tweak-xl",
+    "Color": "Gold",
+    "Author": 753233104323346432,
+    "Wiki": "https://github.com/psiberx/cp2077-tweak-xl/wiki/Getting-Started",
+    "ThumbnailUrl": "https://avatars.githubusercontent.com/u/4366745?v=4",
+    "Fields": [
+      {
+        "Title": "✅ Latest stable release",
+        "Value": "https://github.com/psiberx/cp2077-tweak-xl/releases/latest"
+      }
+    ]
+  },
+  "ArchiveXL": {
+    "Title": "ArchiveXL",
+    "Description": "Cyberpunk 2077 mod that allows you to expand game resources without conflicts.",
+    "Url": "https://github.com/psiberx/cp2077-archive-xl",
+    "Color": "Gold",
+    "Author": 753233104323346432,
+    "Wiki": "https://github.com/psiberx/cp2077-archive-xl/blob/main/README.md",
+    "ThumbnailUrl": "https://avatars.githubusercontent.com/u/4366745?v=4",
+    "Fields": [
+      {
+        "Title": "✅ Latest stable release",
+        "Value": "https://github.com/psiberx/cp2077-archive-xl/releases/latest"
+      }
+    ]
+  }
+}
