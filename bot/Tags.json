@@ -1,0 +1,21 @@
+{
+  "wkit-log": {
+    "Body": "Can you post your error log file? it's found here:\n`%appdata%\\REDModding\\WolvenKit.`"
+  },
+   "cet-log": {
+    "Body": "https://i.imgur.com/cYD5Me6.gif"
+  },
+   "clean": {
+    "Body": "https://i.imgur.com/ETshb1n.png"
+  },
+  "redmod-wiki": {
+    "Body": "https://wiki.redmodding.org/cyberpunk-2077-modding/modding/redmod"
+  },
+  "redmod-steam": {
+    "Body": "```* Navigate to _Cyberpunk 2077_\n* Click **Play**\n* Click the **Settings** button and **Enable mods**\n* Click **Play** (Do not skip this)\n* A window will open showing progress on mod deployment.```\nhttps://raw.githubusercontent.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/main/.gitbook/assets/gog_prelauncher.png"
+  },
+  "redmod-gog": {
+    "Body": "```* Open GOG - _Cyberpunk 2077_\n* Click **Manage Installation** -> **Configure ...**\n* Open the **Features** Tab\n* Select **Enable mods**\n* Click **OK**\n* Play the game\n* A window will open showing progress on mod deployment.```\nhttps://raw.githubusercontent.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/main/.gitbook/assets/redmod_gog.png"
+  }
+}
+
