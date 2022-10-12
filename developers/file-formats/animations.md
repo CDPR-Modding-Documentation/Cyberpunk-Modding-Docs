@@ -1,5 +1,5 @@
 # Animations
 
-### [Anims](../assets/animation.md)
+### [Anims](broken-reference)
 
 Animation information
