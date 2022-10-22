@@ -2,7 +2,7 @@
 
 ## Where are the multilayered files?
 
-Thank you @86maylin#6375 on Discord for this answer! [Check out his answer](https://discordapp.com/channels/717692382849663036/1021886502709493881/1022477944842629121) for an example on jacket\_04 asset.
+Thank you @86maylin#6375 on Discord for this answer! [Check out their answer](https://discordapp.com/channels/717692382849663036/1021886502709493881/1022477944842629121) for an example on jacket\_04 asset.
 
 **In this example** I'm wanting to change the shade of blue on the man version of _Light XX Punch! Heat-Resistant Biker Turtleneck_, so I need to find its layer files.
 
