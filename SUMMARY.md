@@ -40,7 +40,7 @@
   * [Shader Docs](developers/shaders/shader-docs.md)
   * [Multilayered](developers/shaders/multilayered.md)
 * [Tweaks](developers/tweaks.md)
-* [File Formats](developers/file-formats.md)
+* [File Formats](developers/file-formats/README.md)
 * [Guides](developers/guides/README.md)
   * [Finding Materials for Assets](developers/guides/finding-materials-for-assets.md)
   * [Quest](developers/guides/quest/README.md)
