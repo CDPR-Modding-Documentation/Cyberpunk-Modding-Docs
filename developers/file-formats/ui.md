@@ -1,5 +1,0 @@
-# UI
-
-### FNT
-
-Font information

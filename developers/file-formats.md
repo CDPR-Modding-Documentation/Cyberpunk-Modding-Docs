@@ -151,12 +151,12 @@ description: All inclusive list of REDengine file formats
 
 #### File Structure
 
-| Name        | Type/Size                   | Info                                                                    |
-| ----------- | --------------------------- | ----------------------------------------------------------------------- |
-| Header      | [Header](./#undefined)      | See [specification of Header](./#undefined) below.                      |
-| Custom Data | [Custom Data](./#undefined) | WolvenKit only. See [specification of custom data](./#undefined) below. |
-| Files       | data                        | Raw file data                                                           |
-| File List   | [File List](./#undefined)   | See [specification of file list](./#undefined) below.                   |
+| Name        | Type/Size                                | Info                                                                                 |
+| ----------- | ---------------------------------------- | ------------------------------------------------------------------------------------ |
+| Header      | [Header](file-formats.md#undefined)      | See [specification of Header](file-formats.md#undefined) below.                      |
+| Custom Data | [Custom Data](file-formats.md#undefined) | WolvenKit only. See [specification of custom data](file-formats.md#undefined) below. |
+| Files       | data                                     | Raw file data                                                                        |
+| File List   | [File List](file-formats.md#undefined)   | See [specification of file list](file-formats.md#undefined) below.                   |
 
 #### Header
 
@@ -186,30 +186,30 @@ The following data only applies for archives created with WolvenKit
 
 #### File List
 
-| Name                    | Type/Size                                       | Info                                                      |
-| ----------------------- | ----------------------------------------------- | --------------------------------------------------------- |
-| FileTableOffset         | uint32                                          | Always 8                                                  |
-| FileTableSize           | uint32                                          |                                                           |
-| CRC                     | uint64                                          | Checksum of ???                                           |
-| FileEntryCount          | uint32                                          | Number of files                                           |
-| FileSegmentCount        | uint32                                          | Number of file segments                                   |
-| ResourceDependencyCount | uint32                                          | Number of resource dependencies                           |
-| FileRecords             | [File Record](./#file-record)\[FileEntryCount]  | See [specification of file record](./#file-record) below. |
-| FileSegments            | [File Segment](./#undefined)\[FileSegmentCount] | See [specification of file segment](./#undefined) below.  |
-| ResourceDependencies    | uint64\[ResourceDependencyCount]                |                                                           |
+| Name                    | Type/Size                                                    | Info                                                                   |
+| ----------------------- | ------------------------------------------------------------ | ---------------------------------------------------------------------- |
+| FileTableOffset         | uint32                                                       | Always 8                                                               |
+| FileTableSize           | uint32                                                       |                                                                        |
+| CRC                     | uint64                                                       | Checksum of ???                                                        |
+| FileEntryCount          | uint32                                                       | Number of files                                                        |
+| FileSegmentCount        | uint32                                                       | Number of file segments                                                |
+| ResourceDependencyCount | uint32                                                       | Number of resource dependencies                                        |
+| FileRecords             | [File Record](file-formats.md#file-record)\[FileEntryCount]  | See [specification of file record](file-formats.md#file-record) below. |
+| FileSegments            | [File Segment](file-formats.md#undefined)\[FileSegmentCount] | See [specification of file segment](file-formats.md#undefined) below.  |
+| ResourceDependencies    | uint64\[ResourceDependencyCount]                             |                                                                        |
 
 #### File Record
 
-| Name                      | Type/Size  | Info                                            |
-| ------------------------- | ---------- | ----------------------------------------------- |
-| NameHash64                | uint64     | FNV1A64 hash of the filename                    |
-| Timestamp                 | int64      | Windows filetime of file creation               |
-| NumInlineBufferSegments   | uint32     | Number of inline buffers                        |
-| SegmentsStart             | uint32     | Index of the first [file segment](./#undefined) |
-| SegmentsEnd               | uint32     | Index of the last [file segment](./#undefined)  |
-| ResourceDependenciesStart | uint32     | Index of the first resource dependency          |
-| ResourceDependenciesEnd   | uint32     | Index of the last resource dependency           |
-| SHA1Hash                  | uint8\[20] | SHA1 hash of the file                           |
+| Name                      | Type/Size  | Info                                                         |
+| ------------------------- | ---------- | ------------------------------------------------------------ |
+| NameHash64                | uint64     | FNV1A64 hash of the filename                                 |
+| Timestamp                 | int64      | Windows filetime of file creation                            |
+| NumInlineBufferSegments   | uint32     | Number of inline buffers                                     |
+| SegmentsStart             | uint32     | Index of the first [file segment](file-formats.md#undefined) |
+| SegmentsEnd               | uint32     | Index of the last [file segment](file-formats.md#undefined)  |
+| ResourceDependenciesStart | uint32     | Index of the first resource dependency                       |
+| ResourceDependenciesEnd   | uint32     | Index of the last resource dependency                        |
+| SHA1Hash                  | uint8\[20] | SHA1 hash of the file                                        |
 
 #### File Segment
 
