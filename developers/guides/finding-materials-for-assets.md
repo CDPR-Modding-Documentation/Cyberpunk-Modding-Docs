@@ -46,6 +46,6 @@ Wolvenkit does recursive searching in the Asset Browser that is based on the fol
 
 <mark style="background-color:yellow;">**E**</mark>xpand the material 22  and then expand values to find the multilayered files. That's it! Too easy right?
 
-![](<../../.gitbook/assets/image (22) (1).png>)
+![](<../../.gitbook/assets/image (22).png>)
 
 a

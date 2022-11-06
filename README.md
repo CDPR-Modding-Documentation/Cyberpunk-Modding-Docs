@@ -4,8 +4,8 @@
 This wiki is under heavy construction! Do you see something missing, incorrect, or want to add information of your own? This is a community project so please consider reaching out to us on Discord to get involved! We have a #wiki channel!
 {% endhint %}
 
-{% content-ref url="modding-know-how/modding-cyberpunk-2077/" %}
-[modding-cyberpunk-2077](modding-know-how/modding-cyberpunk-2077/)
+{% content-ref url="modding/modding-cyberpunk-2077/" %}
+[modding-cyberpunk-2077](modding/modding-cyberpunk-2077/)
 {% endcontent-ref %}
 
 {% content-ref url="developers/creating-mods.md" %}
