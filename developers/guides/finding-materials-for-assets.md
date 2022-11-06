@@ -8,7 +8,7 @@ Thank you @86maylin#6375 on Discord for this answer! [Check out their answer](ht
 
 <mark style="background-color:yellow;">**F**</mark>irst head over to [fandom](https://cyberpunk.fandom.com/wiki/Cyberpunk\_2077\_Clothing) and find the BaseID for the turtleneck. I don't know of a mod that will get this information in-game, but that would be amazing if one is ever made. The fandom site has images that match the images in the game, so it's a pretty quick way to find things.
 
-![](<../../.gitbook/assets/image (7) (1).png>)
+![](<../../.gitbook/assets/image (7).png>)
 
 <mark style="background-color:yellow;">**I**</mark>n Wolvenkit's Asset Browser search for the "base" portion of the turtleneck's BaseID. For Shirt\_02\_rich\_01, the base portion is Shirt\_02.
 
@@ -38,11 +38,11 @@ Wolvenkit does recursive searching in the Asset Browser that is based on the fol
 
 <mark style="background-color:yellow;">**E**</mark>xpand the mesh's appearances list and find the appearance that matches the meshAppearance from the previous step. Expand the appearance's chunkMaterials definition and take note of any material that may hold the information we're wanting to use.
 
-![](<../../.gitbook/assets/image (14) (1).png>)
+![](<../../.gitbook/assets/image (14).png>)
 
 <mark style="background-color:yellow;">**C**</mark>lose the appearances list, then scroll down and expand the localMaterialBuffer definition and then the materials definition. Take notice how the material's names are displayed on the right. At the bottom of the list is material 25 for the blue\_white material.
 
-![](<../../.gitbook/assets/image (17).png>)
+![](<../../.gitbook/assets/image (17) (1).png>)
 
 <mark style="background-color:yellow;">**E**</mark>xpand the material 22  and then expand values to find the multilayered files. That's it! Too easy right?
 
