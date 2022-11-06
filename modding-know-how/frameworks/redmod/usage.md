@@ -42,7 +42,7 @@ In order to utilize deployed mods with REDmod, you need to run the game in a spe
 * Play the game
 * A window will open showing progress on mod deployment.
 
-<figure><img src="../../.gitbook/assets/redmod_gog.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/redmod_gog.png" alt=""><figcaption></figcaption></figure>
 
 ### **Steam** and **Epic**
 
@@ -52,7 +52,7 @@ In order to utilize deployed mods with REDmod, you need to run the game in a spe
 * Click **Play** (Do not skip this)
 * A window will open showing progress on mod deployment.
 
-<figure><img src="../../.gitbook/assets/gog_prelauncher.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/gog_prelauncher.png" alt=""><figcaption></figcaption></figure>
 
 ## Conflicts and Load Order
 
