@@ -54,7 +54,7 @@ default is the fallback appearance that'll be used if anything can't be resolved
 
 This vest has only one chunkMask, so there's only one material. Remember its name and find it here:
 
-<figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption><p>It's ml_t2_002_ma_vest__puffy_bwstripes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>It's ml_t2_002_ma_vest__puffy_bwstripes</p></figcaption></figure>
 
 {% hint style="warning" %}
 Most meshes have their materials under `localMaterialBuffer/materials`. However, some of them (especially those with physics) use `preloadLocalMaterialInstances` instead.
@@ -68,17 +68,22 @@ You will (hopefully) see a material with three entries in `values` (order doesn'
 | MultilayerMask  | `base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\ml_t2_002_ma_vest__puffy_default.mlmask`    |
 | GlobalNormal    | `base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\t2_002_ma_vest__puffy_n01.xbm`              |
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 We change the appearance by editing the **MultilayerSetup**:
 
 1. Find the file and add it to your project.
 2. Right-click the file and select "Convert to JSON".
-3. Move your new json file in the same folder as the multilayer setup.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+If you have set configured MLSB, you can make use of MlSetupBuilder's export feature, rather than doing it via WolvenKit:
+{% endhint %}
 
-We'll make use of MlSetupBuilder's export feature, rather than doing it via WolvenKit.
+Move your new json file in the same folder as the multilayer setup.&#x20;
+
+<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+
+
 
 {% hint style="info" %}
 The json file will be named `ml_t2_002_ma_vest__puffy_bwstripes.mlsetup.json` (`originalFileName.originalExtension.json`)&#x20;
@@ -92,7 +97,7 @@ Open up MlSetupBuilder and load your .mlsetup.json file.
 If you select WolvenKit's "Open in File Explorer" option, you can copy the path from the explorer's address bar and paste it into the MlSetupBuilder's address bar.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 If you want to see which layers correspond to which part of the mesh, you can load it from the library:
 
@@ -110,15 +115,17 @@ TBD: Create/link to material description
 
 Save the file and overwrite the original `.mlsetup.json`:
 
-![](<../../.gitbook/assets/image (24).png>)
+![](<../../.gitbook/assets/image (11).png>)
 
-You will see a notification when the MlSetupBuilder has overwritten your original `*.mlsetup`.
+If you have configured MLSB and had both files in the same folders, you will see a notification when the MlSetupBuilder has overwritten your original `*.mlsetup`. This takes a few seconds.
+
+Otherwise, you need to right-click on the json file under "raw" and select "import from JSON".
 
 {% hint style="success" %}
 This is already working. You can pack the project and see it work!
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Since you haven't changed anything in the mesh itself, you can (and should) delete it from your mod. Only keep it if you want to do the steps below.
@@ -128,7 +135,7 @@ Since you haven't changed anything in the mesh itself, you can (and should) dele
 
 If you want to put up your own .mlsetup, rather than overwriting the original one, you can do that. All you have to do is changing the DepotPaths to the relative path of your mlsetup.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Keep your folder and file names unique! If you have two mods adding a file at the same location, the second one **will be unable to overwrite it** and will use the first mod's file.
@@ -138,7 +145,7 @@ Keep your folder and file names unique! If you have two mods adding a file at th
 
 You can rename a material by changing the "name" property inside the CMeshMaterialEntry in the `materials` array:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Don't forget to look through all the appearances and change the `chunkMaterial` names!

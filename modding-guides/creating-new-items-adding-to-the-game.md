@@ -70,6 +70,11 @@ Now, add the following files to your project and move them to `tutorial\my_shirt
    _(any file from this folder will do)_
 4. your mesh (I'll use `base\characters\garment\gang_monk\torso\t2_135_jacket__monk_shirt\t2_135_wa_jacket__monk_shirt.mesh`)
 
+{% hint style="warning" %}
+For 3., get an entity file from the folder corresponding to the type of item that you want to edit. The files are sorted by equipment slot and you can find them under \
+`base\characters\garment\player_equipment\<yourbodypart>`
+{% endhint %}
+
 and the **operative** files (these go into the subfolder `tutorial\ops`):
 
 1. `base\gameplay\factories\items\clothing.csv`
@@ -922,6 +927,11 @@ Now, it's time to test! Install the mod, then start Cyberpunk via start menu sho
 
 ## Troubleshooting
 
+First of all, check the logs:&#x20;
+
+* `red4ext/plugins/ArchiveXL/ArchiveXL.log`&#x20;
+* `red4ext/plugins/TweakXL/TweakXL.log`
+
 ### My item shows empty text instead of name/description!
 
 Something went wrong with your json file:
@@ -940,6 +950,7 @@ Check the following places:
 * `translation_strings.json`:
   * Is the spelling of the key defined in yaml's `displayName` and `localizedDescription` identical?
   * Did you set the femaleVariant (default)?
+  * Are you using quotation marks? If so, switch to singlequotes!
 
 ### I spawn my item, but nothing happens!
 
