@@ -8,7 +8,7 @@ Thank you @86maylin#6375 on Discord for this answer! [Check out their answer](ht
 
 <mark style="background-color:yellow;">**F**</mark>irst head over to [fandom](https://cyberpunk.fandom.com/wiki/Cyberpunk\_2077\_Clothing) and find the BaseID for the turtleneck. I don't know of a mod that will get this information in-game, but that would be amazing if one is ever made. The fandom site has images that match the images in the game, so it's a pretty quick way to find things.
 
-![](<../../.gitbook/assets/image (7).png>)
+![](<../../.gitbook/assets/image (7) (1).png>)
 
 <mark style="background-color:yellow;">**I**</mark>n Wolvenkit's Asset Browser search for the "base" portion of the turtleneck's BaseID. For Shirt\_02\_rich\_01, the base portion is Shirt\_02.
 
@@ -22,7 +22,7 @@ Wolvenkit does recursive searching in the Asset Browser that is based on the fol
 
 <mark style="background-color:yellow;">**R**</mark>ight click the t1\_shirt\_02.ent file and select Open without adding to the project. In the file viewer, select the Entity Preview tab and make sure the asset looks like the Light XX Punch! Heat-Resistant Biker Turtleneck.
 
-![](<../../.gitbook/assets/image (1).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)
 
 <mark style="background-color:yellow;">**B**</mark>ack in the Asset Browser, search again for t1\_shirt\_02 but look for the app (appearance) file instead. For easier results, search for t1\_shirt\_02.app. Right click the app file and open it without adding it to the project.&#x20;
 
@@ -30,7 +30,7 @@ Wolvenkit does recursive searching in the Asset Browser that is based on the fol
 
 <mark style="background-color:yellow;">**E**</mark>xpand the appearances definition and notice that the appearance's name is listed on the right side of the list. Scroll through the appearances list and find one with a name that matches the "specific" portion of the turtleneck's BaseID. For Shirt\_02\_rich\_01, the specific portion is rich\_01. I am looking for the man version of that appearance, so I need to find one ending in _m_ or _ma_ (man average).
 
-![](<../../.gitbook/assets/image (3).png>)
+![](<../../.gitbook/assets/image (3) (2).png>)
 
 <mark style="background-color:yellow;">**E**</mark>xpand appearance 25, then expand the components definitions, and for this asset there was only one mesh component. The meshAppearance value should correctly describe the asset we're looking for, in this case it correctly describes a blue and white shirt. At the end of the mesh value click the blue-arrowed icon to open the mesh in a new tab.
 
@@ -38,7 +38,7 @@ Wolvenkit does recursive searching in the Asset Browser that is based on the fol
 
 <mark style="background-color:yellow;">**E**</mark>xpand the mesh's appearances list and find the appearance that matches the meshAppearance from the previous step. Expand the appearance's chunkMaterials definition and take note of any material that may hold the information we're wanting to use.
 
-![](<../../.gitbook/assets/image (14).png>)
+![](<../../.gitbook/assets/image (14) (1).png>)
 
 <mark style="background-color:yellow;">**C**</mark>lose the appearances list, then scroll down and expand the localMaterialBuffer definition and then the materials definition. Take notice how the material's names are displayed on the right. At the bottom of the list is material 25 for the blue\_white material.
 

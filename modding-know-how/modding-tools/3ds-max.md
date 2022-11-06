@@ -45,7 +45,7 @@ FBX Settings for **Import**:
 \
 MaxScript Settings for **Export:**
 
-![](<../../.gitbook/assets/image (1) (1).png>)\\
+![](<../../.gitbook/assets/image (1) (1) (1).png>)\\
 
 FBX Settings for **Export:**
 
