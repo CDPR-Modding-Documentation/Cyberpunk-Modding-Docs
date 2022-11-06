@@ -728,12 +728,11 @@ You can leave `partsValues` alone - this just points at the file that loads the 
 
 ### Step 4: Add it to the .mesh
 
-This tutorial assumes you already know how to recolour an item. Quick reminder about the mlsetup:
+This tutorial assumes you already know how to [recolour an item](changing-items/recoloring-items.md). Quick reminder about the mlsetup:
 
 1. Export it to json
-2. put the json file in the same directory as the original .mlsetup
-3. edit the `mlsetup.json` with the [MLSetupBuilder](https://github.com/Neurolinked/MlsetupBuilder) (there's a WolvenKit plugin now)
-4. Save it under the new name.
+2. edit the `mlsetup.json` with the [MLSetupBuilder](https://github.com/Neurolinked/MlsetupBuilder)
+3. Import it back
 
 Now we're adding the new appearances:
 
