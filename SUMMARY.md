@@ -45,7 +45,6 @@
 
 ## Developers
 
-* [Creating Mods](developers/creating-mods.md)
 * [Assets](developers/assets.md)
 * [Vehicles](developers/vehicles/README.md)
   * [TweakDB](developers/vehicles/tweakdb/README.md)
