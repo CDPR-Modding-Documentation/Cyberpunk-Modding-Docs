@@ -34,15 +34,19 @@
 
 ## Modding: Guides
 
+* [WolvenKit Guide Section](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/\~/changes/wOF3pbwjMHQsS86d1gAh/guides/official)
 * [Community guides](modding-guides/community-guides.md)
 * [Changing items](modding-guides/changing-items/README.md)
   * [Finding Materials for Assets](modding-guides/changing-items/finding-materials-for-assets.md)
   * [Recoloring items](modding-guides/changing-items/recoloring-items.md)
   * [Mesh editing](modding-guides/changing-items/mesh-editing.md)
   * [Replace a player item with an NPC item](modding-guides/changing-items/replace-a-player-item-with-an-npc-item.md)
-* [Creating new items (adding to the game)](modding-guides/creating-new-items-adding-to-the-game.md)
+* [Adding new items](modding-guides/adding-new-items.md)
+* [World Editing](modding-guides/world-editing/README.md)
+  * [Adding Objects to the world](modding-guides/world-editing/adding-objects-to-the-world.md)
 * [Photo Mode](modding-guides/photo-mode/README.md)
   * [Custom Photo Mode Expressions](modding-guides/photo-mode/custom-photo-mode-expressions.md)
+* [Sound](modding-guides/sound.md)
 * [Quests](modding-guides/quest/README.md)
   * [How to Edit Voiceover and Subtitles In a Quest.](modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)

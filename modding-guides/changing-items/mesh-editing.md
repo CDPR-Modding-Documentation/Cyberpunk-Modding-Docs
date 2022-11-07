@@ -20,6 +20,8 @@ Noesis: 4.459
 
 ## Exporting the mesh into Blender
 
+For a comprehensive guide on how to export a mesh, see here.
+
 ### WolvenKit (\*.gdb)
 
 Use the Import/Export tool to export your mesh. Assuming the following path:

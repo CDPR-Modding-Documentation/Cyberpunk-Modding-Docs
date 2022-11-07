@@ -29,4 +29,4 @@ We will guide you through the step-by-step process that will allow you to rotate
 **IMPORTANT**: For a better understanding of how your changes may affect the ingame position and rotation use this [**website**](https://quaternions.online/) (kindly provided by **Loomy**)\
 **7**. **Repack, Build** and put into the **Mod** folder
 
-![](../../../.gitbook/assets/wkit\_wiki\_qEd\_res\_Duvet\_result.png)
+![](../../.gitbook/assets/wkit\_wiki\_qEd\_res\_Duvet\_result.png)

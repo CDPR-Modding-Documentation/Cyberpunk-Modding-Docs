@@ -2,7 +2,7 @@
 description: Add your own spawnable gear (TweakXL and ArchiveXL)
 ---
 
-# Creating new items (adding to the game)
+# Adding new items
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -58,7 +58,7 @@ archive
 It is good practice to have a folder for your modded stuff directly under `archive`. That way, `base` is reserved for the non-modded **base** game items.
 {% endhint %}
 
-As for an explanation which file does what, see the [next section](creating-new-items-adding-to-the-game.md#explanation-what-do-these-files-do).
+As for an explanation which file does what, see the [next section](adding-new-items.md#explanation-what-do-these-files-do).
 
 #### Grab entity and app files
 
@@ -200,7 +200,7 @@ You need to touch it only once, unless you want to add new files.
 
 The factory connects `yourModName.yml` via `entityName` to the corresponding `rootEntity.ent`.
 
-When reading `yourModName.yml` ([next section](creating-new-items-adding-to-the-game.md#yourmodname.yaml)), the game will find entries like this:
+When reading `yourModName.yml` ([next section](adding-new-items.md#yourmodname.yaml)), the game will find entries like this:
 
 ```
 Items.my_shirt:  
@@ -250,13 +250,13 @@ This will let you add the item via `Game.AddToInventory('Items.my_shirt')`.
 
 Three **mappings** take place here:
 
-1. `entityName`: Basically, the game will look through the [factory](creating-new-items-adding-to-the-game.md#my\_cool\_new\_items.csv-the-factory.) (`my_cool_new_items.csv)` until it finds an array where the value for \[0] (the first entry) is identical to this key. It will then use the file specified in \[1] (the second entry) to look up the `appearanceName`.
-2. `appearanceName`: In the [entity](creating-new-items-adding-to-the-game.md#rootentity.ent) specified via csv, it will look for an appearance by this name.\
+1. `entityName`: Basically, the game will look through the [factory](adding-new-items.md#my\_cool\_new\_items.csv-the-factory.) (`my_cool_new_items.csv)` until it finds an array where the value for \[0] (the first entry) is identical to this key. It will then use the file specified in \[1] (the second entry) to look up the `appearanceName`.
+2. `appearanceName`: In the [entity](adding-new-items.md#rootentity.ent) specified via csv, it will look for an appearance by this name.\
    \
-   The name will only be considered up to the first [suffix](creating-new-items-adding-to-the-game.md#suffixes-and-whether-you-need-them) - that is, **everything before the & will be ignored**.
+   The name will only be considered up to the first [suffix](adding-new-items.md#suffixes-and-whether-you-need-them) - that is, **everything before the & will be ignored**.
 3. `displayName`/`localizedDescription` : In the `translation_strings.json`, find an array where the value for \[3] (the last entry) is identical to this key. Then, check which gender V has, and display either `femaleVariant` or `maleVariant`.
 
-`$base` defines which type of clothing to use. All those types have different properties (e.g. on which slot they are), and they **inherit properties** from their parent template, which can cause problems (see "[**Suffixes, and whether you need them**](creating-new-items-adding-to-the-game.md#suffixes-and-whether-you-need-them)" below for more detail).
+`$base` defines which type of clothing to use. All those types have different properties (e.g. on which slot they are), and they **inherit properties** from their parent template, which can cause problems (see "[**Suffixes, and whether you need them**](adding-new-items.md#suffixes-and-whether-you-need-them)" below for more detail).
 
 The following types of clothing exist:
 
@@ -275,7 +275,7 @@ The first line of each block must not have spaces, the following lines must have
 
 #### yourModName.archive.xl
 
-This file tells the game to load the [factory](creating-new-items-adding-to-the-game.md#my\_cool\_new\_items.csv-the-factory.) (`my_cool_new_items.csv`) and the localization file (`translation_strings.json`).
+This file tells the game to load the [factory](adding-new-items.md#my\_cool\_new\_items.csv-the-factory.) (`my_cool_new_items.csv`) and the localization file (`translation_strings.json`).
 
 {% hint style="info" %}
 You need to touch it only once, unless you want to add new files.
@@ -335,7 +335,7 @@ appearanceResource:    DepotPath: tutorial\my_shirt\appearance.app
 name:                  my_shirt_&Suffixes  
 ```
 
-For an explanation of the **'\&suffixes'** part, see the [section below](creating-new-items-adding-to-the-game.md#suffixes-and-whether-you-need-them).
+For an explanation of the **'\&suffixes'** part, see the [section below](adding-new-items.md#suffixes-and-whether-you-need-them).
 
 {% hint style="info" %}
 If you do not need Suffixes (which includes not knowing what you would want them for), you should leave them out.
@@ -378,7 +378,7 @@ You don't strictly need it, as you could define the components array in the indi
 
 #### appearance.app
 
-Contains a list of appearances as mapped by [`rootentity.ent`](creating-new-items-adding-to-the-game.md#rootentity.ent). It will indicate which mesh to display by loading `mesh_entity.ent` , and overriding appearances.
+Contains a list of appearances as mapped by [`rootentity.ent`](adding-new-items.md#rootentity.ent). It will indicate which mesh to display by loading `mesh_entity.ent` , and overriding appearances.
 
 {% hint style="info" %}
 You will touch this file every time you add a colour variant.

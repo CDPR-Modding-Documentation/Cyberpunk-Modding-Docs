@@ -1,2 +1,2 @@
-# Quest
+# Quests
 
