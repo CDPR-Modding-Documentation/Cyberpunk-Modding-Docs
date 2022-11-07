@@ -42,6 +42,10 @@
   * [Mesh editing](modding-guides/changing-items/mesh-editing.md)
   * [Replace a player item with an NPC item](modding-guides/changing-items/replace-a-player-item-with-an-npc-item.md)
 * [Adding new items](modding-guides/adding-new-items.md)
+* [NPCs](modding-guides/npcs/README.md)
+  * [Create custom poses for spawned NPCs](modding-guides/npcs/create-custom-poses-for-spawned-npcs.md)
+  * [Custom bodyhair for NPCs](modding-guides/npcs/custom-bodyhair-for-npcs.md)
+  * [Swap Johnny during the Alt's scene](modding-guides/npcs/swap-johnny-during-the-alts-scene.md)
 * [World Editing](modding-guides/world-editing/README.md)
   * [Adding Objects to the world](modding-guides/world-editing/adding-objects-to-the-world.md)
 * [Photo Mode](modding-guides/photo-mode/README.md)
@@ -51,6 +55,9 @@
   * [How to Edit Voiceover and Subtitles In a Quest.](modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
   * [How to Remove an Animation (and Potentially Replace It)](modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
+* [Everything else](modding-guides/everything-else/README.md)
+  * [Custom Loading Screens](modding-guides/everything-else/custom-loading-screens.md)
+  * [Customise CP77 info on GOG](modding-guides/everything-else/customise-cp77-info-on-gog.md)
 
 ## Developers
 
