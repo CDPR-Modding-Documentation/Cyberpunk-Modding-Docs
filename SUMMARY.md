@@ -36,12 +36,17 @@
 
 * [Community guides](modding-guides/community-guides.md)
 * [Changing items](modding-guides/changing-items/README.md)
+  * [Finding Materials for Assets](modding-guides/changing-items/finding-materials-for-assets.md)
   * [Recoloring items](modding-guides/changing-items/recoloring-items.md)
   * [Mesh editing](modding-guides/changing-items/mesh-editing.md)
   * [Replace a player item with an NPC item](modding-guides/changing-items/replace-a-player-item-with-an-npc-item.md)
+* [Creating new items (adding to the game)](modding-guides/creating-new-items-adding-to-the-game.md)
 * [Photo Mode](modding-guides/photo-mode/README.md)
   * [Custom Photo Mode Expressions](modding-guides/photo-mode/custom-photo-mode-expressions.md)
-* [Creating new items (adding to the game)](modding-guides/creating-new-items-adding-to-the-game.md)
+* [Quests](modding-guides/quest/README.md)
+  * [How to Edit Voiceover and Subtitles In a Quest.](modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
+  * [How to Change Position and Rotation of an entMeshComponent](modding-guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
+  * [How to Remove an Animation (and Potentially Replace It)](modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
 
 ## Developers
 
@@ -62,12 +67,6 @@
   * [Multilayered](developers/shaders/multilayered.md)
 * [Tweaks](developers/tweaks.md)
 * [File Formats](developers/file-formats/README.md)
-* [Guides](developers/guides/README.md)
-  * [Finding Materials for Assets](developers/guides/finding-materials-for-assets.md)
-  * [Quest](developers/guides/quest/README.md)
-    * [How to Edit Voiceover and Subtitles In a Quest.](developers/guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
-    * [How to Change Position and Rotation of an entMeshComponent](developers/guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
-    * [How to Remove an Animation (and Potentially Replace It)](developers/guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
 
 ## Help
 
