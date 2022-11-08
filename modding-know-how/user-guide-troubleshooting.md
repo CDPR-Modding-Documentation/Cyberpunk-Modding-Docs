@@ -104,6 +104,8 @@ mv ./r6/cache/final.redscripts.bk ./r6/cache/final.redscripts
 
 ### Step 5: Repair game files
 
+_Exact procedure as documented by @ArsenicTouch_
+
 #### GOG
 
 Go to Games -> Installed, right-click on your game and select the following menu entry:
@@ -132,7 +134,27 @@ The game should launch now — all files you deleted have been re-acquired.&#x20
 You can now re-enable your mods. Do it in chunks and check that the game keeps working so that you can narrow down where the problem is, in case it isn't gone for good.
 {% endhint %}
 
-&#x20;
+## &#x20;Finding the broken mod (bisecting)
 
+First, go to your mod directory under
 
+```
+Cyberpunk 2077\archive\pc\mod
+```
 
+and re-name the entire directory to mod\_.&#x20;
+
+{% hint style="success" %}
+Start the game. If the problem isn't gone now, it's something more major — in that case, follow the steps [above](user-guide-troubleshooting.md#how-to-debug-if-your-game-isnt-starting).
+{% endhint %}
+
+If the problem is gone, create a new, empty folder "mod". Now, we need to roughly narrow down which mod has the error.&#x20;
+
+Move over half of the mods from your backup folder `mod_`, then start the game.
+
+You will now run into one of two scenarios:
+
+1. The error is gone: swap out the content of your mod folder with the last chunk you moved to the backup folder. Validate that the error persists, go to 2.
+2. The error is still there: Move half of the files from your mod folder into your backup folder and start the game and check your problem.&#x20;
+
+Repeat this process until you have identified the problem child!
