@@ -145,7 +145,7 @@ Keep your folder and file names unique! If you have two mods adding a file at th
 
 You can rename a material by changing the "name" property inside the CMeshMaterialEntry in the `materials` array:&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Don't forget to look through all the appearances and change the `chunkMaterial` names!

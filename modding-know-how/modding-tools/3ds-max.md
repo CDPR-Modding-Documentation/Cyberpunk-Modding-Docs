@@ -40,7 +40,7 @@ Click on "Import to Scene" and select the .mesh file you want to edit. Your cust
 \
 FBX Settings for **Import**:
 
-![](<../../.gitbook/assets/image (2) (1).png>)
+![](<../../.gitbook/assets/image (2) (1) (1).png>)
 
 \
 MaxScript Settings for **Export:**
@@ -49,5 +49,5 @@ MaxScript Settings for **Export:**
 
 FBX Settings for **Export:**
 
-![](<../../.gitbook/assets/image (4).png>)\
+![](<../../.gitbook/assets/image (4) (1).png>)\
 \*\*When exporting your mesh the plugin will ask you to select a mesh to export it over, in most cases you should select the original mesh.

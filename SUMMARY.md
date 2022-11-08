@@ -31,6 +31,7 @@
   * [Equipment](modding-know-how/references-lists-and-overviews/equipment/README.md)
     * [Variants and appearances](modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md)
   * [From spawn code to item](modding-know-how/references-lists-and-overviews/from-spawn-code-to-item.md)
+* [User guide: Troubleshooting](modding-know-how/user-guide-troubleshooting.md)
 
 ## Modding: Guides
 
