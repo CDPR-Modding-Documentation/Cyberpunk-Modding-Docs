@@ -30,6 +30,7 @@
   * [Hair](modding-know-how/references-lists-and-overviews/hair.md)
   * [Equipment](modding-know-how/references-lists-and-overviews/equipment/README.md)
     * [Variants and appearances](modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md)
+  * [Spawn Codes (Hashes)](modding-know-how/references-lists-and-overviews/spawn-codes-hashes.md)
   * [From spawn code to item](modding-know-how/references-lists-and-overviews/from-spawn-code-to-item.md)
 * [User guide: Troubleshooting](modding-know-how/user-guide-troubleshooting.md)
 
