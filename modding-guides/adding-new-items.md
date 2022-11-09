@@ -441,6 +441,10 @@ A mesh will first look for an appearance without any suffixes at all, and then a
 ℹ**This can be the reason why your item is invisible!**! You can and should disable the suffixes if you don't need them.\
 To do so, add an empty array to the yaml entry:
 
+```
+appearanceSuffixes: []
+```
+
 For clothing items, the following suffixes are relevant:
 
 | Suffix                                  | Explanation                                                                                                                                                                                                                                                                                                                                                 |
