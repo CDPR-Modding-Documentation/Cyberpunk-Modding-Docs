@@ -36,7 +36,7 @@
 
 ## Modding: Guides
 
-* [WolvenKit Guide Section](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/\~/changes/wOF3pbwjMHQsS86d1gAh/guides/official)
+* [WolvenKit Guide Section](https://wiki.redmodding.org/wolvenkit/guides/modding-community)
 * [Community guides](modding-guides/community-guides.md)
 * [Changing items](modding-guides/changing-items/README.md)
   * [Finding Materials for Assets](modding-guides/changing-items/finding-materials-for-assets.md)
