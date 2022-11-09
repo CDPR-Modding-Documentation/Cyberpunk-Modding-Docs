@@ -1,5 +1,5 @@
 ---
-description: Mostly aimed at non-modders for convenient linking
+description: If your mods are causing trouble, here's what you can do
 ---
 
 # User guide: Troubleshooting
