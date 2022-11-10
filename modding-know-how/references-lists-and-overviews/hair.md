@@ -1,6 +1,19 @@
+---
+description: Overview of hair related things
+---
+
 # Hair
 
+## Summary <a href="#summary" id="summary"></a>
+
+**Created by @manavortex**\
+**Published November 04 2022**
+
 ## Name in files by index
+
+{% hint style="info" %}
+List has been confirmed working before 1.6, but might need updating (especially since new hair was added)
+{% endhint %}
 
 | 01 | hh\_033\_wa\_\_player            | hh\_145\_ma\_\_v\_short          |
 | -- | -------------------------------- | -------------------------------- |

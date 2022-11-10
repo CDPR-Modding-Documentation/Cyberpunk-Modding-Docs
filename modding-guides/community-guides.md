@@ -22,9 +22,16 @@ description: This page holds a list of community guides all over the internet.
 |                                                                                                                                                             |                             |
 | ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
 | [Transferring and expanding skeletons](https://xbaebsae.jimdofree.com/tutorials/cp2077-transferring-and-expanding-skeletons-in-meshes/?preview\_sid=734631) | xbaebsae                    |
-| **AMM**: [Custom NPC spawn animations](https://pinkydude.tumblr.com/post/681983048582103040/hi-there-i-was-just-wondering-if-you-have-a)                    | tumblr, by Pinkydude        |
+| ****                                                                                                                                                        | tumblr, by Pinkydude        |
 | [Boneless MA to PWA Swap Tutorial](https://youtu.be/4stpA8BuLrk)                                                                                            | youtube video by Hineytroll |
 | [Rigging long hair for Cyberpunk](https://www.youtube.com/watch?v=g09ViwsOEFQ\&t=219s)                                                                      | youtube video by Raq#6517   |
+
+## AMM (Appearance Menu Mod)
+
+|                                                                                                                                  |                               |
+| -------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+|  [Custom NPC spawn animations](https://pinkydude.tumblr.com/post/681983048582103040/hi-there-i-was-just-wondering-if-you-have-a) | tumblr, by Pinkydude          |
+| [Custom Props Creation Kit](https://www.nexusmods.com/cyberpunk2077/mods/5979)                                                   | Not a guide, just a framework |
 
 ## Custom NPCs (NPVs)
 
@@ -37,11 +44,11 @@ description: This page holds a list of community guides all over the internet.
 
 ## References
 
-|                                                                                                                                        |                             |
-| -------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| [Pose mods and reference screenshots](https://docs.google.com/spreadsheets/d/1rYMbIRKFAFb0ajFk9oyE-3ic6MShWLep5HdqOa\_CGIg/edit#gid=0) | ordered by target           |
-| [Hair colours overview](https://docs.google.com/document/d/1c8Wx42HyWvGL2RSwngQ\_82xoUrG\_aTHvY7MUDPYGYns/edit)                        | Google Doc with screenshots |
-|                                                                                                                                        |                             |
+|                                                                                                                                        |                                                                   |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| [Pose mods and reference screenshots](https://docs.google.com/spreadsheets/d/1rYMbIRKFAFb0ajFk9oyE-3ic6MShWLep5HdqOa\_CGIg/edit#gid=0) | by trala#5476 - ordered by animated actor                         |
+| [Hair colours overview](https://docs.google.com/document/d/1c8Wx42HyWvGL2RSwngQ\_82xoUrG\_aTHvY7MUDPYGYns/edit)                        | Google Doc with screenshots (Who made this? Would like to credit) |
+|                                                                                                                                        |                                                                   |
 
 ## Scripting and quests
 
