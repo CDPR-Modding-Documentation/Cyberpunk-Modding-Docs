@@ -16,7 +16,7 @@ This guide will walk you through **adding your own items** to Cyberpunk 2077, wh
 * Cyberpunk 2077 game version 1.6
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) 8.7.1-nightly.2022-11-04
 * [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) 1.0.7
-* [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) 1.1.5
+* [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) 1.1.6
 * [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) 1.8.0
 
 **Assumed skill level:** \
@@ -43,6 +43,10 @@ We'll assume that your mod is named `my_shirt` and will live in the folder `arch
 `tutorial\my_shirt`
 
 Create a subfolder with the name of `ops` (for 'operations'). Here we'll put those files that organize how the items correspond to the appearances.
+
+{% hint style="danger" %}
+⚠⚠ As of ArchiveXL 1.1.6, capital letters in path or file names are **not** supported! ⚠⚠⚠
+{% endhint %}
 
 You should end up with the following file structure:
 
@@ -934,6 +938,8 @@ First of all, check the logs:&#x20;
 
 * `red4ext/plugins/ArchiveXL/ArchiveXL.log`&#x20;
 * `red4ext/plugins/TweakXL/TweakXL.log`
+
+Second of all, make sure that you do not have capital letters in any of your path or file names - as of 1-1-6, they are not currently supported.
 
 ### My item shows empty text instead of name/description!
 
