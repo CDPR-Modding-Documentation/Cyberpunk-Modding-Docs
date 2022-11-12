@@ -44,7 +44,7 @@ Open the menu "Build" and select first "Repository" to uncook the archives:
 
 &#x20;For editing material, "Appearance" and "Decal materials" are most relevant, maybe "gamedata" as well.
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 This can take several hours!

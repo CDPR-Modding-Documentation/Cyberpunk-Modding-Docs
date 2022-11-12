@@ -2,7 +2,7 @@
 description: PartsOverrides, visual tags, and how to use them
 ---
 
-# Changing other items
+# Influencing other items
 
 ### Summary <a href="#summary" id="summary"></a>
 
@@ -31,11 +31,11 @@ If you are using ArchiveXL, you can in addition use the [following visual tags](
 
 <div>
 
-<figure><img src="../.gitbook/assets/body-parts-male.png" alt=""><figcaption><p>male version - image by LadyLea</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/body-parts-male.png" alt=""><figcaption><p>male version - image by LadyLea</p></figcaption></figure>
 
  
 
-<figure><img src="../.gitbook/assets/bodyparts_female.png" alt=""><figcaption><p>female version - image by LadyLea</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/bodyparts_female.png" alt=""><figcaption><p>female version - image by LadyLea</p></figcaption></figure>
 
 </div>
 

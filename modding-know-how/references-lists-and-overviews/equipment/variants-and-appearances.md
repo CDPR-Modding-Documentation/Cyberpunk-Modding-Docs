@@ -9,7 +9,7 @@ description: For the purpose of recoloring or exchanging items
 **Created by @manavortex**\
 **Published November 05 2022**
 
-This page is a look-up for [recolouring ](../../../modding-guides/changing-items/recoloring-items.md)or [replacing](../../../modding-guides/changing-items/replace-a-player-item-with-an-npc-item.md) items. For an overview of existing items, see [here](./).
+This page is a look-up for [recolouring ](../../../modding-guides/items/editing-existing-items/recoloring-and-changing-materials.md)or [replacing](../../../modding-guides/items/editing-existing-items/replace-a-player-item-with-an-npc-item.md) items. For an overview of existing items, see [here](./).
 
 {% hint style="success" %}
 When adding an entry, please include the following information:
