@@ -54,7 +54,7 @@ default is the fallback appearance that'll be used if anything can't be resolved
 
 This vest has only one chunkMask, so there's only one material. Remember its name and find it here:
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption><p>It's ml_t2_002_ma_vest__puffy_bwstripes</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (3).png" alt=""><figcaption><p>It's ml_t2_002_ma_vest__puffy_bwstripes</p></figcaption></figure>
 
 {% hint style="warning" %}
 Most meshes have their materials under `localMaterialBuffer/materials`. However, some of them (especially those with physics) use `preloadLocalMaterialInstances` instead.
@@ -125,7 +125,7 @@ Otherwise, you need to right-click on the json file under "raw" and select "impo
 This is already working. You can pack the project and see it work!
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Since you haven't changed anything in the mesh itself, you can (and should) delete it from your mod. Only keep it if you want to do the steps below.
@@ -145,7 +145,7 @@ Keep your folder and file names unique! If you have two mods adding a file at th
 
 You can rename a material by changing the "name" property inside the CMeshMaterialEntry in the `materials` array:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Don't forget to look through all the appearances and change the `chunkMaterial` names!

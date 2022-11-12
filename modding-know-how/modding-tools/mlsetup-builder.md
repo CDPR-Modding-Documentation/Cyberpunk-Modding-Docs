@@ -16,11 +16,43 @@ MLSB can be downloaded from the releases section on GitHub, the latest release t
 
 {% embed url="https://github.com/Neurolinked/MlsetupBuilder/releases/" %}
 
-## Setup
+## Setup of export and preview function
 
-To use the utmost capabilities of MLSB, all the meshes from the game have to be exported in .glb format and the masks layers exported in .dds format, exporting them all would be around 20 GBs or so.
+{% hint style="info" %}
+MLSB lets you edit mlsetup files without doing this, but you'll have neither auto-generated mlsetup files, nor previews and material previews.
+{% endhint %}
 
-The process of doing so are done by uncooking the main archives. To do so, you need to setup a folder in the software preferences, choose the Wolvenkit-CLI executable, at least version 1.5.2 and from the build menu use the commands Build the repository, then do the same with the microblends, normals and decals.\
+Required: [WolvenKit CLI](https://github.com/WolvenKit/WolvenKit/releases) (not identical to normal WolvenKit)
+
+Open the preferences via "File" -> "Preferences".&#x20;
+
+For wolvenkit-CLI executable, put the path to your `WolvenKit.CLI.exe` (version >=1.5.2)
+
+{% hint style="info" %}
+Starting with version 1.6.5, this enables the auto-export function, where MLSB will generate an \*.mlsetup file when you save an \*.mlsetup.json
+{% endhint %}
+
+### Library and preview
+
+{% hint style="info" %}
+To take advantage of the **Preview** function, you need a folder with the meshes in \*.glb and the materials and mask layers. This takes about 20GB of disk space
+{% endhint %}
+
+Open the menu "Build" and select first "Repository" to uncook the archives:
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+&#x20;For editing material, "Appearance" and "Decal materials" are most relevant, maybe "gamedata" as well.
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="danger" %}
+This can take several hours!
+{% endhint %}
+
+After the process is complete, select "Microblends" to extract the microblends, normals, decals and layer masks.
+
+\
 There is also a dedicated thread on the [Cyberpunk 2077 Modding Discord Server](https://discord.com/channels/705931815109656596/939510887188947014) with the latest software updates.
 
 ## Video Guides

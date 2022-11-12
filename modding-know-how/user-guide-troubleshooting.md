@@ -110,7 +110,7 @@ _Exact procedure as documented by @ArsenicTouch_
 
 Go to Games -> Installed, right-click on your game and select the following menu entry:
 
-![](../.gitbook/assets/image.png)
+![](<../.gitbook/assets/image (2).png>)
 
 #### Steam
 
