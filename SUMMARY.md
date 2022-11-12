@@ -43,6 +43,7 @@
   * [Recoloring items](modding-guides/changing-items/recoloring-items.md)
   * [Mesh editing](modding-guides/changing-items/mesh-editing.md)
   * [Replace a player item with an NPC item](modding-guides/changing-items/replace-a-player-item-with-an-npc-item.md)
+* [Changing other items](modding-guides/changing-other-items.md)
 * [Adding new items](modding-guides/adding-new-items.md)
 * [NPCs](modding-guides/npcs/README.md)
   * [Create custom poses for spawned NPCs](modding-guides/npcs/create-custom-poses-for-spawned-npcs.md)
