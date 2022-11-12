@@ -35,12 +35,12 @@ description: This page holds a list of community guides all over the internet.
 
 ## Custom NPCs (NPVs)
 
-|                                                                                                                                   |                                              |
-| --------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------- |
-| [create an NPV (Google Docs by NoraLee)](https://docs.google.com/document/d/1omTh5B8z7MsYxIO6xzOEBqpm17tKxCCQgWqEbeFQXc8/)        | How to manually swap V over an NPC           |
-| [Create an NPV with WolvenKit](https://docs.google.com/document/d/1BYKf8e\_Z45am9mBH9aoHQONXkKrKTOEJRMr7NNuZuCY/edit?usp=sharing) | Addition to NoraLee's guide by nx#3390       |
-| [customize an NPV](https://xbaebsae.jimdofree.com/tutorials/cp2077-more-npv-customisation/)                                       | tutorial by xbaebsae                         |
-| [Adding/editing appearances to Custom NPV/NPC on the custom framework in WolvenKit](https://youtu.be/f2VaiP1u\_jE)                | YouTube video by Vesna \[CyberVesna/Vesn4\_] |
+|                                                                                                                                                                                                           |                                                                        |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| [create an NPV](https://docs.google.com/document/d/1omTh5B8z7MsYxIO6xzOEBqpm17tKxCCQgWqEbeFQXc8/) (resources on [Google Drive](https://drive.google.com/drive/folders/1R-knopKMhHDZuokPKaTt0nIDArXcQdrb)) | How to manually swap V over an NPC, by **NoraLee** (Google Docs/Drive) |
+| [Create an NPV with WolvenKit](https://docs.google.com/document/d/1BYKf8e\_Z45am9mBH9aoHQONXkKrKTOEJRMr7NNuZuCY/edit?usp=sharing)                                                                         | Addition to NoraLee's guide by nx#3390                                 |
+| [customize an NPV](https://xbaebsae.jimdofree.com/tutorials/cp2077-more-npv-customisation/)                                                                                                               | tutorial by xbaebsae                                                   |
+| [Adding/editing appearances to Custom NPV/NPC on the custom framework in WolvenKit](https://youtu.be/f2VaiP1u\_jE)                                                                                        | YouTube video by Vesna \[CyberVesna/Vesn4\_]                           |
 
 ## References
 
