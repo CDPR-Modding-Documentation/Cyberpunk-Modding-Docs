@@ -11,6 +11,8 @@ description: For the purpose of recoloring or exchanging items
 
 This page is a look-up for [recolouring ](../../../modding-guides/items/editing-existing-items/recoloring-and-changing-materials.md)or [replacing](../../../modding-guides/items/editing-existing-items/replace-a-player-item-with-an-npc-item.md) items. For an overview of existing items, see [here](./).
 
+As for how to find this information when it's not on the page, check [this guide](spawn-codes-baseids-hashes.md#the-.app).
+
 {% hint style="success" %}
 When adding an entry, please include the following information:
 
