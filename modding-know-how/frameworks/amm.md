@@ -6,4 +6,4 @@ description: Appearance Menu Mod
 
 Appearance Menu Mod has its own documentation at…
 
-You can find help on their [Discord](https://discord.gg/3CsUhvQv).
+You can find help on their [Discord](https://discord.com/invite/47jV2rNdgn).
