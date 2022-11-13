@@ -783,6 +783,10 @@ You can not use Photoshop for the final step. Or rather, you can, but the transp
 
 Cyberpunk uses xbm as format for its textures. These textures are then **mapped** (divided into slices) by inkatlas files. The individual slots can then be used by the game for pretty much everything from UI elements to phone call icons — and image previews.
 
+{% hint style="info" %}
+If you want to use the in-game previews, you can find them under `base\gameplay\gui\common\icons\items`
+{% endhint %}
+
 ### Setting up the files
 
 First of all, [download](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas\_templates\_apart\_v1.zip/file) the template archive (kindly provided by Apart). This includes the following files:
