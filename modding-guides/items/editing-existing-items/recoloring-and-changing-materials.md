@@ -72,6 +72,8 @@ You will (hopefully) see a material with three entries in `values` (order doesn'
 
 <figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
+### Exporting the .mlsetup
+
 We change the appearance by editing the **MultilayerSetup**:
 
 1. Find the file and add it to your project.
