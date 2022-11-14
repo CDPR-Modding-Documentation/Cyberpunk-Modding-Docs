@@ -9,6 +9,8 @@ description: PartsOverrides, visual tags, and how to use them
 **Created by @manavortex**\
 **Published November 12 2022**
 
+## Requirement: ArchiveXL >= 1.1.6
+
 This guide will explain how to influence meshes by directly in the .app file, overriding whatever is defined for the components in the .ent file which loads them.
 
 ## PartsOverrides
@@ -19,7 +21,7 @@ This section assumes that you're loading appearance parts via [associated .ent f
 
 In the .app file, each appearance lets you define [PartsOverrides](adding-new-items.md#appearance.app), which — as the name implies — let you override the appearance of parts. An entry looks as follows:
 
-<figure><img src="../../.gitbook/assets/partsOverrides.png" alt=""><figcaption><p>Overwrite the component "<code>kimono</code>" and "<code>kimono_filler</code>", which are defined in the file "<code>kimono_meshentity.ent</code>"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2022-11-14 at 09.35.06.png" alt=""><figcaption><p>Overwrite the component "<code>kimono</code>" and "<code>kimono_filler</code>", which are defined in the file "<code>kimono_meshentity.ent</code>"</p></figcaption></figure>
 
 Where **partsValues** lets you define the individual entity files that you'll load, **partsOverrides** lets you assign properties which take precedence over those defined in the .ent file:
 
