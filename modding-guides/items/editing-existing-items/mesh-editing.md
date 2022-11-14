@@ -28,7 +28,7 @@ Use the Import/Export tool to export your mesh. Assuming the following path:
 
 `<yourModDir>\archive\source\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.mesh`
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (2).png" alt=""><figcaption></figcaption></figure>
 
 This will create `<yourModDir>\archive\raw\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.gdb`
 
@@ -36,7 +36,7 @@ This will create `<yourModDir>\archive\raw\base\characters\garment\player_equipm
 To export a mesh with materials for import with the Cyberpunk Blender Plugin, double-click on it and then select "WithMaterials" as "MeshExportType":
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (23) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Noesis (\*.fbx)
 

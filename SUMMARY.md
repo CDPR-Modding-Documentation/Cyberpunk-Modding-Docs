@@ -7,7 +7,7 @@
 ## Modding: Know-how
 
 * [Modding Cyberpunk 2077](modding-know-how/modding-cyberpunk-2077/README.md)
-  * [Getting started: Tools and theory](modding-know-how/modding-cyberpunk-2077/frameworks.md)
+  * [Getting started: Tools and theory](modding/modding-cyberpunk-2077/frameworks.md)
 * [Frameworks](modding-know-how/frameworks/README.md)
   * [AMM](modding-know-how/frameworks/amm.md)
   * [CET (Cyber Engine Tweaks)](https://wiki.redmodding.org/cyber-engine-tweaks/)
@@ -57,6 +57,11 @@
   * [How to Edit Voiceover and Subtitles In a Quest.](modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
   * [How to Remove an Animation (and Potentially Replace It)](modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
+* [Files for Modding](modding-guides/files-for-modding/README.md)
+  * [People](modding-guides/files-for-modding/people.md)
+  * [Places](modding-guides/files-for-modding/places.md)
+  * [Weapons](modding-guides/files-for-modding/weapons.md)
+  * [Vehicles](modding-guides/files-for-modding/vehicles.md)
 * [Everything else](modding-guides/everything-else/README.md)
   * [Custom Loading Screens](modding-guides/everything-else/custom-loading-screens.md)
   * [Customise CP77 info on GOG](modding-guides/everything-else/customise-cp77-info-on-gog.md)
