@@ -60,11 +60,11 @@ description: This page holds a list of community guides all over the internet.
 
 ## Sound
 
-|                                                                                                                                                                      |                |
-| -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| [Creating voice effects](https://docs.google.com/document/d/1h\_far0MPnKtxnhuxUWLiQduqNw6dxgr2qSNB84dCkEQ/edit?usp=sharing) ([video](https://youtu.be/70cb4\_Sx7A0)) | "Vocoding"     |
-| [Making own radio stations](https://www.nexusmods.com/cyberpunk2077/articles/206)                                                                                    | Guide on Nexus |
-|                                                                                                                                                                      |                |
+|                                                                                                                                                                                             |                |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
+| [Creating voice effects](https://docs.google.com/document/d/1h\_far0MPnKtxnhuxUWLiQduqNw6dxgr2qSNB84dCkEQ/edit?usp=sharing) ([video](https://youtu.be/70cb4\_Sx7A0))                        | "Vocoding"     |
+| [Making own radio stations](https://www.nexusmods.com/cyberpunk2077/articles/206) ([guide](https://github.com/justarandomguyintheinternet/CP77\_radioExt#how-to-create-new-radio-stations)) | Guide on Nexus |
+|                                                                                                                                                                                             |                |
 
 
 
