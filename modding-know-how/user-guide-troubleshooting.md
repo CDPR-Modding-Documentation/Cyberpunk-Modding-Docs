@@ -48,7 +48,17 @@ Check if your game starts
 
 ### Step 3: Remove scripts and tweaks
 
-Find the following folders:
+First, remove the cache:&#x20;
+
+```
+ r6/cache/modded
+```
+
+{% hint style="success" %}
+Check if your game starts
+{% endhint %}
+
+If that didn't do the trick, find the following folders:
 
 ```
 Cyberpunk 2077\red4ext
@@ -134,7 +144,7 @@ The game should launch now — all files you deleted have been re-acquired.&#x20
 You can now re-enable your mods. Do it in chunks and check that the game keeps working so that you can narrow down where the problem is, in case it isn't gone for good.
 {% endhint %}
 
-## &#x20;Finding the broken mod (bisecting)
+## Finding the broken mod (bisecting)
 
 First, go to your mod directory under
 
@@ -158,3 +168,25 @@ You will now run into one of two scenarios:
 2. The error is still there: Move half of the files from your mod folder into your backup folder and start the game and check your problem.&#x20;
 
 Repeat this process until you have identified the problem child!
+
+## The nuclear option: a clean install
+
+If none of that helped, you'll want to reset your game to a clean install. Fortunately, you don't have to redownload the entire game for that.&#x20;
+
+Rename or remove the following folders:
+
+```
+/mod
+/plugins
+/engine
+/r6
+/red4ext
+/archive/pc/mod
+```
+
+and start your game client's file verification.&#x20;
+
+{% hint style="success" %}
+After the missing files have been recovered, you will now have what amounts to a clean install!
+{% endhint %}
+

@@ -31,6 +31,11 @@
   * [Equipment](modding-know-how/references-lists-and-overviews/equipment/README.md)
     * [Spawn Codes (BaseIDs/Hashes)](modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md)
     * [Variants and appearances](modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md)
+  * [Files for Modding](modding-know-how/references-lists-and-overviews/files-for-modding/README.md)
+    * [People](modding-know-how/references-lists-and-overviews/files-for-modding/people.md)
+    * [Places](modding-know-how/references-lists-and-overviews/files-for-modding/places.md)
+    * [Weapons](modding-know-how/references-lists-and-overviews/files-for-modding/weapons.md)
+    * [Vehicles](modding-know-how/references-lists-and-overviews/files-for-modding/vehicles.md)
 * [User guide: Troubleshooting](modding-know-how/user-guide-troubleshooting.md)
 
 ## Modding: Guides
@@ -57,11 +62,6 @@
   * [How to Edit Voiceover and Subtitles In a Quest.](modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
   * [How to Remove an Animation (and Potentially Replace It)](modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
-* [Files for Modding](modding-guides/files-for-modding/README.md)
-  * [People](modding-guides/files-for-modding/people.md)
-  * [Places](modding-guides/files-for-modding/places.md)
-  * [Weapons](modding-guides/files-for-modding/weapons.md)
-  * [Vehicles](modding-guides/files-for-modding/vehicles.md)
 * [Everything else](modding-guides/everything-else/README.md)
   * [Custom Loading Screens](modding-guides/everything-else/custom-loading-screens.md)
   * [Customise CP77 info on GOG](modding-guides/everything-else/customise-cp77-info-on-gog.md)
