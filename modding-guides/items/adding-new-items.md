@@ -45,7 +45,7 @@ We'll assume that your mod is named `my_shirt` and will live in the folder `arch
 Create a subfolder with the name of `ops` (for 'operations'). Here we'll put those files that organize how the items correspond to the appearances.
 
 {% hint style="danger" %}
-⚠⚠ As of ArchiveXL 1.1.6, capital letters in path or file names are **not** supported! ⚠⚠⚠
+⚠⚠ Currently (November 2022), capital letters in path or file names are **not** supported! If somebody tells you otherwise, try it at own risk! ⚠⚠⚠
 {% endhint %}
 
 You should end up with the following file structure:
