@@ -28,11 +28,11 @@ A comprehensive list of jargon you might see on this Wiki or around our communit
 * <mark style="color:yellow;">**Cooked**</mark>: A CR2W file that's imported or encoded as an engine file, then debugged, compressed, and buffered by the REDengine build process. Files extracted with the Asset Browser using WolvenKit (including Legacy) are cooked files.
 * <mark style="color:yellow;">**Packed**</mark>: The final unified package file used by REDengine games. The Witcher 3 uses bundle files while Cyberpunk 2077 uses the archive file format.
 * <mark style="color:yellow;">**Raw**</mark>: Generic term used to refer to non-REDengine files that have a CR2W counterpart. The raw format of the REDengine XBM texture format can be TGA, PNG, DDS, etc. e.g. "Do you have the raw texture?" - This is an inquiry about the TGA/PNG/DDS counterpart to a game texture file.
+* <mark style="color:yellow;">**Resource**</mark>: A technical term for a REDengine file, this term is baked into the game code.
 * <mark style="color:yellow;">**Uncooked**</mark>: A term used to describe a CR2W file in its most basic uncompressed state. e.g. After using the Official Witcher 3 Modkit to import an FBX to W2MESH, this file is uncooked. Rather than calling these files imported, the uncooked terminology is derived from the cooked (compressed) file state.
 * <mark style="color:yellow;">**W2RC/CR2W**</mark>: The file magic number for REDengine files. For more information about magic numbers see this Wikipedia page. REDengine format files are commonly referenced as W2RC/CR2W files for shorthand. Originally only CR2W was used, but it was discovered years later that the magic should be read backwards, as Witcher 2 Resource Class.
 
 ## Modding
 
-* <mark style="color:yellow;">**Decouple Asset**</mark>: Duplicate and rename an existing asset because it is conflicting with another mod.
-* <mark style="color:yellow;">**Unlink Asset**</mark>: Duplicate and rename an existing asset to grow the game and to mitigate the risk of conflicts with other assets.
-* <mark style="color:yellow;">**Vanilla**</mark>: Original or unmodified i.e. Johnny Silverhand's vanilla appearance can be changed with a DLC
+* <mark style="color:yellow;">**Reference**</mark>: A string value in a _resource_ that exists in another _resource_, and it is used to chain resource together as they are loaded into the game. Some examples are a DepotPath that points at another resource, a list index that points at a material entry, and an appearance that points at a component.
+* <mark style="color:yellow;">**Vanilla**</mark>: Original or unmodified i.e. Johnny Silverhand's vanilla appearance can be changed with a DLC.
