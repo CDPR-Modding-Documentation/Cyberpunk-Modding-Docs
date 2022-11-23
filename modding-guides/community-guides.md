@@ -15,7 +15,9 @@ description: This page holds a list of community guides all over the internet.
 | [Unique eye textures](https://docs.google.com/document/d/1Qm9X1RmEIOzeBR7zuFrkEp1Lj7kof8Ztq6VPyeHwseo/edit?usp=sharing)                   | Guide by Halvkyrie#4000                                                                                     |
 | [Creating normal maps](https://drive.google.com/file/d/11Z-SYF28nVpF\_ZbkIJ\_KHCetJK7EcT\_X/view)                                         | Guide by Тима (Teem)#3118                                                                                   |
 | [Creating custom poses (youtube)](https://www.youtube.com/watch?v=oye4bxczKxU)                                                            | by PinkyDude                                                                                                |
-|                                                                                                                                           |                                                                                                             |
+|  [CDPR: Redmod Part 1](https://www.youtube.com/watch?v=Rcf65OvEJTo\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=1) (youtube)           | What it is, what it does, how to use                                                                        |
+| [CDPR: Redmod Part 2 (youtube)](https://www.youtube.com/watch?v=aq\_4U5N-CP4\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=2)           | How to edit scripts (Redscript comparison)                                                                  |
+| [CDPR: Redmod Part 3 (youtube)](https://www.youtube.com/watch?v=m5IL\_TRwTew\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=3)           | How to install/replace animations                                                                           |
 
 ## Rigging and animations
 
