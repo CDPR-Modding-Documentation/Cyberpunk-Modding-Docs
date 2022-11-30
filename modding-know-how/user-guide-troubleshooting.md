@@ -144,6 +144,36 @@ The game should launch now — all files you deleted have been re-acquired.&#x20
 You can now re-enable your mods. Do it in chunks and check that the game keeps working so that you can narrow down where the problem is, in case it isn't gone for good.
 {% endhint %}
 
+## Finding the broken mod (log files)
+
+Open your Cyberpunk game folder and use the windows search to search for `.log`
+
+{% hint style="info" %}
+Make sure to include the dot: `.log`
+{% endhint %}
+
+<figure><img src="../.gitbook/assets/userguide_logs.png" alt=""><figcaption><p>You should see something like this</p></figcaption></figure>
+
+Now, delete all those files. Don't worry, they will be re-created on next launch.
+
+{% hint style="danger" %}
+Don't delete anything that isn't a text document ending in .log, this might break your game.
+{% endhint %}
+
+Start your game again. Now do whatever causes your problem to occur.
+
+Search the Cyberpunk directory for `.log` again.&#x20;
+
+{% hint style="info" %}
+Tip: Sort the files by size by clicking on the Windows Explorer column header.&#x20;
+{% endhint %}
+
+{% hint style="info" %}
+You can ignore all files that have a size of 0, as they will be empty.&#x20;
+{% endhint %}
+
+One of these files should contain an error message. You can use it to try and isolate your problem.
+
 ## Finding the broken mod (bisecting)
 
 First, go to your mod directory under
