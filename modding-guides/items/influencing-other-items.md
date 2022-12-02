@@ -31,6 +31,13 @@ Where **partsValues** lets you define the individual entity files that you'll lo
 Components need to be **unambiguously** identified by their name as defined in the .ent file. For that reason, it's good practice to have globally unique identifiers.&#x20;
 {% endhint %}
 
+{% hint style="warning" %}
+If you want to affect V's arms (for example, hiding clipping shoulders under a jacket), you might have to override the following components (the male equivalent will be named pma):
+
+`a0_001_pwa_base_hq__full` \
+`a0_001_pwa_base_hq__full8640`
+{% endhint %}
+
 ### ArchiveXL
 
 Normally, you can override only components from .ent files that you include via partsValues **in the same appearance**. ArchiveXL expands this by letting you manipulate **any** components that are loaded as part of the player.ent:
