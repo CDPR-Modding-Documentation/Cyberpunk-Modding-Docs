@@ -43,6 +43,10 @@ Example: Replacing the short-sleeved poser jacket with the monk shirt with the t
 
 Now comes the annoying part: we need to find out which spawn code corresponds to which meshMeshAppearance. The process is a little tedious.
 
+{% hint style="info" %}
+The wiki has a list with [mappings](../../../modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md). Feel free to expand it!
+{% endhint %}
+
 
 
 <figure><img src="https://i.imgur.com/MnUWU6O.png" alt=""><figcaption></figcaption></figure>
