@@ -21,12 +21,13 @@ description: This page holds a list of community guides all over the internet.
 
 ## Rigging and animations
 
-|                                                                                                                                                             |                             |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------- |
-| [Transferring and expanding skeletons](https://xbaebsae.jimdofree.com/tutorials/cp2077-transferring-and-expanding-skeletons-in-meshes/?preview\_sid=734631) | xbaebsae                    |
-| ****                                                                                                                                                        | tumblr, by Pinkydude        |
-| [Boneless MA to PWA Swap Tutorial](https://youtu.be/4stpA8BuLrk)                                                                                            | youtube video by Hineytroll |
-| [Rigging long hair for Cyberpunk](https://www.youtube.com/watch?v=g09ViwsOEFQ\&t=219s)                                                                      | youtube video by Raq#6517   |
+|                                                                                                                                                             |                               |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------- |
+| [Transferring and expanding skeletons](https://xbaebsae.jimdofree.com/tutorials/cp2077-transferring-and-expanding-skeletons-in-meshes/?preview\_sid=734631) | xbaebsae                      |
+| ****                                                                                                                                                        | tumblr, by Pinkydude          |
+| [Boneless MA to PWA Swap Tutorial](https://youtu.be/4stpA8BuLrk)                                                                                            | youtube video by Hineytroll   |
+| [Rigging long hair for Cyberpunk](https://www.youtube.com/watch?v=g09ViwsOEFQ\&t=219s)                                                                      | youtube video by Raq#6517     |
+| [Extracting Scenerid anims](https://docs.google.com/document/d/1AU8PwIW23mdu6nDXD9Hj7GMN13HdyRX4sqvp9PSuHs8/edit#heading=h.v1449r1mjrx9)                    | Tutorial by Deceptious & Zwei |
 
 ## AMM (Appearance Menu Mod)
 
@@ -75,6 +76,7 @@ description: This page holds a list of community guides all over the internet.
 | Tutorial                                                                                                                                                  |                                             |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
 | [Exporting to Blender](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/guides/modding-community/exporting-to-blender)                                     | Step-by-step guide for exporting to Blender |
+| [Exporting Rigs and Anims](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)                  | Adding the rigs to the models in Blender    |
 | [Exporting Streaming Sectors to Blender](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/guides/modding-community/exporting-streaming-sectors-to-blender) | How to export parts of Night City           |
 | [Modifying Textures with WKit 8.7](https://www.youtube.com/watch?v=agqu\_w88bZs)                                                                          | Youtube tutorial                            |
 | [Modding a normal map of V's head](https://docs.google.com/document/d/1sg7\_wQbQTagJG0SGcfTnxA2m3tiO-ghOHOHpmiuPv70/edit?usp=sharing)                     | Google Doc by nanarc                        |
