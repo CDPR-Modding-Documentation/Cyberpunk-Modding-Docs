@@ -11,9 +11,11 @@
 
 ### Step 1: Locate the right file
 
-| female | <pre><code>base\animations\ui\photomode\photomode_female_facial.anims</code></pre> |
-| ------ | ---------------------------------------------------------------------------------- |
-| male   | <pre><code>base\animations\ui\photomode\photomode_male_facial.anims</code></pre>   |
+| female | <pre><code>base\animations\ui\photomode\photomode_female_facial.anims
+</code></pre> |
+| ------ | ----------------------------------------------------------------------------------- |
+| male   | <pre><code>base\animations\ui\photomode\photomode_male_facial.anims
+</code></pre>   |
 
 ### Step 2: Replace the file with the one you want
 

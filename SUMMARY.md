@@ -63,6 +63,7 @@
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
   * [How to Remove an Animation (and Potentially Replace It)](modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
 * [Everything else](modding-guides/everything-else/README.md)
+  * [Scripting: Best practices / pitfalls](modding-guides/everything-else/scripting-best-practices-pitfalls.md)
   * [Custom Loading Screens](modding-guides/everything-else/custom-loading-screens.md)
   * [Customise CP77 info on GOG](modding-guides/everything-else/customise-cp77-info-on-gog.md)
 
