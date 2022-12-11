@@ -8,6 +8,8 @@
 
 * [Modding Cyberpunk 2077](modding-know-how/modding-cyberpunk-2077/README.md)
   * [Getting started: Tools and theory](modding/modding-cyberpunk-2077/frameworks.md)
+  * [Folder structure and files](modding-know-how/modding-cyberpunk-2077/folder-structure-and-files.md)
+  * [Analysing other mods](modding-know-how/modding-cyberpunk-2077/analysing-other-mods.md)
 * [Frameworks](modding-know-how/frameworks/README.md)
   * [AMM](modding-know-how/frameworks/amm.md)
   * [CET (Cyber Engine Tweaks)](https://wiki.redmodding.org/cyber-engine-tweaks/)
