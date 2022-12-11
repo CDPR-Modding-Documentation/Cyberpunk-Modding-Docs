@@ -28,6 +28,7 @@
   * [3DS MAX](modding-know-how/modding-tools/3ds-max.md)
   * [PixelRick's Cyberpunk Save Editor](modding-know-how/modding-tools/pixelricks-cyberpunk-save-editor.md)
   * [Noesis](modding-know-how/modding-tools/noesis.md)
+  * [Blender scripts and plugins](modding-know-how/modding-tools/blender-scripts-and-plugins.md)
 * [References, lists and overviews](modding-know-how/references-lists-and-overviews/README.md)
   * [Hair](modding-know-how/references-lists-and-overviews/hair.md)
   * [Equipment](modding-know-how/references-lists-and-overviews/equipment/README.md)
