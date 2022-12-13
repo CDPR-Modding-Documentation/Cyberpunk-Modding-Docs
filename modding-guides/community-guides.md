@@ -28,6 +28,7 @@ description: This page holds a list of community guides all over the internet.
 | [Boneless MA to PWA Swap Tutorial](https://youtu.be/4stpA8BuLrk)                                                                                            | youtube video by Hineytroll   |
 | [Rigging long hair for Cyberpunk](https://www.youtube.com/watch?v=g09ViwsOEFQ\&t=219s)                                                                      | youtube video by Raq#6517     |
 | [Extracting Scenerid anims](https://docs.google.com/document/d/1AU8PwIW23mdu6nDXD9Hj7GMN13HdyRX4sqvp9PSuHs8/edit#heading=h.v1449r1mjrx9)                    | Tutorial by Deceptious & Zwei |
+| [Transferring Compressed/Normal Animations Between Containers](https://docs.google.com/document/d/196hSZvn0WZhkix8qUoArfBVNKcvKck56Rtf3ENemy\_o/edit)       | Tutorial by Deceptious & Zwei |
 
 ## AMM (Appearance Menu Mod)
 
