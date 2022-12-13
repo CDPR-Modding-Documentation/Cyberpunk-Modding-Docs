@@ -55,19 +55,19 @@ description: This page holds a list of community guides all over the internet.
 
 ## Scripting and quests
 
-|                                                                                         |                      |
-| --------------------------------------------------------------------------------------- | -------------------- |
-| [Narrative Modding](https://gisellevazquez.github.io/narrativeMods/pages/Research.html) | Jato's research wiki |
-| [How to make a custom quest](https://cyberscript.gitbook.io/main/)                      | github, Cyberscript  |
-|                                                                                         |                      |
+|                                                                                                                     |                      |
+| ------------------------------------------------------------------------------------------------------------------- | -------------------- |
+| [Narrative Modding & Design](https://bioskop.notion.site/CP2077-Narrative-Modding-b47f789f992248e08241da1a983912c5) | Bioskop's research   |
+| [Game Quest ](https://cyberpunk-2077-quest-design.gitbook.io/cyberquest-2077-wiki/)                                 | Bioskop's Wiki (WIP) |
+|                                                                                                                     |                      |
 
 ## Sound
 
-|                                                                                                                                                                                             |                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------- |
-| [Creating voice effects](https://docs.google.com/document/d/1h\_far0MPnKtxnhuxUWLiQduqNw6dxgr2qSNB84dCkEQ/edit?usp=sharing) ([video](https://youtu.be/70cb4\_Sx7A0))                        | "Vocoding"     |
-| [Making own radio stations](https://www.nexusmods.com/cyberpunk2077/articles/206) ([guide](https://github.com/justarandomguyintheinternet/CP77\_radioExt#how-to-create-new-radio-stations)) | Guide on Nexus |
-|                                                                                                                                                                                             |                |
+|                                                                                                                                                                                             |                                   |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------- |
+| [Creating voice effects](https://docs.google.com/document/d/1h\_far0MPnKtxnhuxUWLiQduqNw6dxgr2qSNB84dCkEQ/edit?usp=sharing) ([video](https://youtu.be/70cb4\_Sx7A0))                        | How to Vocode voices for the game |
+| [Making own radio stations](https://www.nexusmods.com/cyberpunk2077/articles/206) ([guide](https://github.com/justarandomguyintheinternet/CP77\_radioExt#how-to-create-new-radio-stations)) | Guide on Nexus                    |
+|                                                                                                                                                                                             |                                   |
 
 
 
