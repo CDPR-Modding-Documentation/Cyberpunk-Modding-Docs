@@ -88,4 +88,8 @@ description: This page holds a list of community guides all over the internet.
 | --------------------------------------------------------------------------------------------------- | ---------------------------- |
 | [Resources and tutorials](https://drive.google.com/drive/folders/1WjLBVoGYsjkEBhpiwjg0iXGpAb4zeb1H) | Google Drive, by nanarc#1301 |
 |                                                                                                     |                              |
-|                                                                                                     |                              |
+
+|                                                                                     |                        |
+| ----------------------------------------------------------------------------------- | ---------------------- |
+| [Custom ads and loading screens](https://www.nexusmods.com/cyberpunk2077/mods/6756) | nexus, by omnishambles |
+|                                                                                     |                        |
