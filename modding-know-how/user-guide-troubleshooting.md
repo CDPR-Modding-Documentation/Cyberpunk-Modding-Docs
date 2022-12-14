@@ -214,7 +214,7 @@ If none of the troubleshooting steps above helped and your game won't start, you
 Rename or remove the following folders:
 
 ```
-/mod
+/mods
 /plugins
 /engine
 /r6
