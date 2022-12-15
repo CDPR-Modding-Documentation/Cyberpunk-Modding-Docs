@@ -52,7 +52,7 @@ description: This page holds a list of community guides all over the internet.
 | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | [Pose mods and reference screenshots](https://docs.google.com/spreadsheets/d/1rYMbIRKFAFb0ajFk9oyE-3ic6MShWLep5HdqOa\_CGIg/edit#gid=0) | by trala#5476 - ordered by animated actor                         |
 | [Hair colours overview](https://docs.google.com/document/d/1c8Wx42HyWvGL2RSwngQ\_82xoUrG\_aTHvY7MUDPYGYns/edit)                        | Google Doc with screenshots (Who made this? Would like to credit) |
-|                                                                                                                                        |                                                                   |
+| [Child poses](https://mega.nz/fm/3NFGmb5K)                                                                                             | animated, sorted by files                                         |
 
 ## Scripting and quests
 
