@@ -10,11 +10,39 @@ description: If your mods are causing trouble, here's what you can do
 This page contains troubleshooting information for end users (people who are not modders). You will find step-by-step guides what to do if your game isn't starting or if your mods aren't working as you expect them to.
 {% endhint %}
 
-## Your game isn't starting
+## Navigation
 
-What to do?
+{% hint style="danger" %}
+Before you start debugging, make sure that **all mods and dependencies** have the latest version, in particular [Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.0.8).&#x20;
+{% endhint %}
 
-### Step 1: Disable all your mods
+This section aims to give you a quick overview. If your exact problem isn't listed here, please look through the different sections below and try anything that looks promising.
+
+[Your game isn't starting](user-guide-troubleshooting.md#your-game-isnt-starting)
+
+[You're having crashes to desktop](user-guide-troubleshooting.md#your-game-isnt-starting-crashes-to-desktop)
+
+[Redscript Compilation Failed (Popup message)](user-guide-troubleshooting.md#redscript-compilation-failed)
+
+[You forgot your CET keybind](user-guide-troubleshooting.md#you-forgot-your-cet-keybind)
+
+[You have trouble with CET (Cyber Engine Tweaks)](user-guide-troubleshooting.md#step-3-remove-scripts-and-tweaks)
+
+[You installed a mod, but it's not doing anything](user-guide-troubleshooting.md#mod-s-arent-loading)
+
+A mod is causing problems, and you have no idea which [(1)](user-guide-troubleshooting.md#finding-the-broken-mod-bisecting) [(2)](user-guide-troubleshooting.md#finding-the-broken-mod-log-files)
+
+[You want to start with a clean install](user-guide-troubleshooting.md#the-nuclear-option-a-clean-install)
+
+####
+
+## Your game isn't starting / Crashes to Desktop
+
+{% hint style="info" %}
+Before following these steps, you might want to take a look at your [log files](user-guide-troubleshooting.md#finding-the-broken-mod-log-files). You can usually ignore **Warning**s, but maybe you'll stumble on an error message that helps you to narrow down the suspect.
+{% endhint %}
+
+### Step 1: Temporarily disable all your mods
 
 If you're running a mod manager (such as Vortex), **disable** them.&#x20;
 
@@ -32,13 +60,17 @@ Cyberpunk 2077\archive\pc\mod_
 Cyberpunk 2077\mods_
 ```
 
+{% hint style="info" %}
+The purpose of renaming them is that the game won't find them anymore, but you still have a back-up of the files inside. Feel free to achieve this goal however.
+{% endhint %}
+
+You can optionally create a new, empty folder with the same name.
+
 {% hint style="success" %}
-`Check if your game starts`
+Check if the problem is gone
 {% endhint %}
 
 ### Step 2: disable CET
-
-If your game still doesn't start, find the directory&#x20;
 
 ```
 Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks
@@ -51,19 +83,19 @@ If you'd rather delete it, make sure that you retain a copy of your `plugins` di
 {% endhint %}
 
 {% hint style="success" %}
-Check if your game starts
+Check if the problem is gone
 {% endhint %}
 
 ### Step 3: Remove scripts and tweaks
 
-First, remove the cache:&#x20;
+First, remove (or rename) the cache:&#x20;
 
 ```
  r6/cache/modded
 ```
 
 {% hint style="success" %}
-Check if your game starts
+Check if the problem is gone
 {% endhint %}
 
 If that didn't do the trick, find the following folders:
@@ -78,7 +110,7 @@ Cyberpunk 2077\r6\tools
 and rename them, you know the drill.
 
 {% hint style="success" %}
-Check if your game starts
+Check if the problem is gone
 {% endhint %}
 
 ### Step 4: Remove RedScript
@@ -184,19 +216,31 @@ One of these files should contain an error message. You can use it to try and is
 
 ## Finding the broken mod (bisecting)
 
+{% hint style="info" %}
+There are two directories with mods: \
+`Cyberpunk 2077\mods` holds REDMods\
+`Cyberpunk 2077\archive\pc\mod`  holds mods that predate the REDMod format.
+
+\
+The procedure below applies to both directories, but you should start with \\`archive\pc\mod.`
+{% endhint %}
+
 First, go to your mod directory under
 
 ```
 Cyberpunk 2077\archive\pc\mod
 ```
 
-and re-name the entire directory to mod\_.&#x20;
+and re-name the entire directory to mod\_. Then, create a new empty folder named `mod`.
 
 {% hint style="success" %}
-Start the game. If the problem isn't gone now, it's something more major — in that case, follow the steps [above](user-guide-troubleshooting.md#how-to-debug-if-your-game-isnt-starting).
+Start the game. If the problem isn't gone now, you have at least ruled out vanilla mods as a source of problems. Repeat the procedure with the RedMod directory `Cyberpunk 2077\mods`.
+
+\
+If you have renamed both directories and the problem isn't gone, you have a different problem. In that case, follow [these steps](user-guide-troubleshooting.md#your-game-isnt-starting).
 {% endhint %}
 
-If the problem is gone, create a new, empty folder "mod". Now, we need to roughly narrow down which mod has the error.&#x20;
+Now, we need to roughly narrow down which mod has the error.&#x20;
 
 Move over half of the mods from your backup folder `mod_`, then start the game.
 
@@ -206,6 +250,36 @@ You will now run into one of two scenarios:
 2. The error is still there: Move half of the files from your mod folder into your backup folder and start the game and check your problem.&#x20;
 
 Repeat this process until you have identified the problem child!
+
+## Mod(s) aren't loading/triggering
+
+{% hint style="warning" %}
+Make sure that all dependencies for your mod are both **installed** and **up-to-date**.&#x20;
+{% endhint %}
+
+#### A RedMod
+
+Check that you've enabled the feature (see [Deploying Mods and Starting Game](frameworks/redmod/#installation)). Does that solve it? If not, proceed to the section about [Log Files](user-guide-troubleshooting.md#finding-the-broken-mod-log-files) and try to find an error message here.
+
+#### CET
+
+You have installed Cyber Engine Tweaks, but it's not active / not letting you bind a key:&#x20;
+
+* Check that mods are [enabled](frameworks/redmod/#installation)
+* Check the install path: Cyber Engine Tweaks has to be installed under `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks`
+
+#### You forgot your CET keybind&#x20;
+
+Delete the file `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\bindings.json.` The game should let you bind a new key at the next startup.
+
+#### A CET script
+
+Find the CET log at `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\cyber_engine_tweaks.log` and check if it contains any errors. \
+If not, navigate to the CET folder and search for [log files](user-guide-troubleshooting.md#finding-the-broken-mod-log-files). (Do not change folders, and do not delete anything - just use the instructions below how to find the files.) &#x20;
+
+#### An ArchiveXL/TweakXL mod
+
+Go to `Cyberpunk 2077\red4ext` and check the [log files](user-guide-troubleshooting.md#finding-the-broken-mod-log-files). (Do not change folders, and do not delete anything - just use the instructions below how to find the files.) &#x20;
 
 ## The nuclear option: a clean install
 
