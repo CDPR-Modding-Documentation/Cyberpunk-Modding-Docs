@@ -26,7 +26,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
 
 [You forgot your CET keybind](user-guide-troubleshooting.md#you-forgot-your-cet-keybind)
 
-[You have trouble with CET (Cyber Engine Tweaks)](user-guide-troubleshooting.md#step-3-remove-scripts-and-tweaks)
+[You have trouble with CET (Cyber Engine Tweaks)](https://wiki.redmodding.org/cyber-engine-tweaks/getting-started/installing/troubleshooting)
 
 [You installed a mod, but it's not doing anything](user-guide-troubleshooting.md#mod-s-arent-loading)
 
