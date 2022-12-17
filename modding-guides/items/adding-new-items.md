@@ -14,7 +14,7 @@ This guide will walk you through **adding your own items** to Cyberpunk 2077, wh
 **It uses the following versions:**
 
 * Cyberpunk 2077 game version 1.6
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) 8.7.1-nightly.2022-11-04
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.7.1-nightly.2022-11-04
 * [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) 1.0.7
 * [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) 1.1.6
 * [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) 1.8.0
@@ -24,10 +24,8 @@ You should be able to find your way around WolvenKit, but I aim to keep this as 
 
 _The guide was created after reading_ [_this one_](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view) _and being left with a bunch of question marks. To get a deeper understanding, refer to the initial guide and follow the linked resources or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
 
-{% hint style="warning" %}
-This tutorial has been created with the bleeding-edge WolvenKit Nightly. I recommend that you grab **at least** [2022-11-02](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.7.1-nightly.2022-11-02), unless yours is more recent.
-
-In older versions, the folder structure for ArchiveXL items will not match the one assumed below, and not all files may copied to "packed".
+{% hint style="info" %}
+You can find a tool to troubleshoot your ArchiveXL mod [here](https://github.com/solaarTW/DeepAssetDiscovery/releases).
 {% endhint %}
 
 ## Get the files, create the structure
@@ -937,6 +935,10 @@ Now, it's time to test! Install the mod, then start Cyberpunk via start menu sho
 ⚠As of today (3rd of November 2022), starting Cyberpunk via WolvenKit will **not generate your atelier store**. You need to first install the mod, then start the game via start menu or GOG launcher.
 
 ## Troubleshooting
+
+{% hint style="info" %}
+There is a tool designed to help you with this process. You can find it [here](https://github.com/solaarTW/DeepAssetDiscovery/releases).
+{% endhint %}
 
 First of all, check the logs:&#x20;
 
