@@ -47,7 +47,7 @@
 * [Community guides](modding-guides/community-guides.md)
 * [Items](modding-guides/items/README.md)
   * [Editing existing items](modding-guides/items/editing-existing-items/README.md)
-    * [Recoloring and changing materials](modding-guides/items/editing-existing-items/recoloring-and-changing-materials.md)
+    * [Changing materials, colors and textures](modding-guides/items/editing-existing-items/changing-materials-colors-and-textures.md)
     * [Mesh editing](modding-guides/items/editing-existing-items/mesh-editing.md)
     * [Replace a player item with an NPC item](modding-guides/items/editing-existing-items/replace-a-player-item-with-an-npc-item.md)
   * [Influencing other items](modding-guides/items/influencing-other-items.md)

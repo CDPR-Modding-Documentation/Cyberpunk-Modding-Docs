@@ -734,7 +734,7 @@ You can leave `partsValues` alone - this just points at the file that loads the 
 
 ### Step 4: Add it to the .mesh
 
-This tutorial assumes you already know how to [recolour an item](editing-existing-items/recoloring-and-changing-materials.md). Quick reminder about the mlsetup:
+This tutorial assumes you already know how to [recolour an item](editing-existing-items/changing-materials-colors-and-textures.md). Quick reminder about the mlsetup:
 
 1. Export it to json
 2. edit the `mlsetup.json` with the [MLSetupBuilder](https://github.com/Neurolinked/MlsetupBuilder)

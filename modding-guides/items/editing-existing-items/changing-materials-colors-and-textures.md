@@ -2,7 +2,7 @@
 description: Changing how an item looks in-game
 ---
 
-# Recoloring and changing materials
+# Changing materials, colors and textures
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -72,7 +72,11 @@ You will (hopefully) see a material with three entries in `values` (order doesn'
 
 <figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
-### Exporting the .mlsetup
+{% hint style="info" %}
+Most materials in Cyberpunk use the `engine\materials\multilayered.mt` material and assign colours via an .mlsetup file. If you're used to textures, you are probably going to hate this. As somebody who has been where you are: **the mlsetup system is cool**. Genuinely. Give it a chance!
+{% endhint %}
+
+#### multilayered.mt exporting the .mlsetup
 
 We change the appearance by editing the **MultilayerSetup**:
 
@@ -91,6 +95,27 @@ Move your new json file in the same folder as the multilayer setup.&#x20;
 
 {% hint style="info" %}
 The json file will be named `ml_t2_002_ma_vest__puffy_bwstripes.mlsetup.json` (`originalFileName.originalExtension.json`)&#x20;
+{% endhint %}
+
+#### Other materials: Textured
+
+The most commonly used material for anything textured is `engine\materials\metal_base.remt`. Despite its name, this material isn't necessarily metallic.
+
+<figure><img src="../../../.gitbook/assets/texture_guide_metal_remt.png" alt=""><figcaption><p>Find the BaseColor texture, and add it to your project. Then export it to *.png via the WolvenKit exporter</p></figcaption></figure>
+
+{% hint style="info" %}
+The .xbm is a container around the texture. Export the xbm to png via WolvenKit.
+{% endhint %}
+
+{% hint style="warning" %}
+When re-importing textures, make sure that you use the correct `isGamma` setting:
+
+normals: **false**\
+diffuse/albedo: **true**\
+anything that is used in .inkatlas files: **true**
+
+****\
+****If your texture has brightness issues in-game, toggle around the isGamma flag during import.
 {% endhint %}
 
 ## Step 3: Editing the .mlsetup file
