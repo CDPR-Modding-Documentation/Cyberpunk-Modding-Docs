@@ -14,7 +14,7 @@ description: Put your item in place of a default game item. Supports variants.
 This tutorial will teach you how to switch a player mesh for an NPC garment and map its variants to the existing colours.\
 
 
-We'll assume that you know how to edit mesh appearances. If you don't, check the [corresponding tutorial](changing-materials-colors-and-textures.md).\
+We'll assume that you know how to edit mesh appearances. If you don't, check the [corresponding tutorial](recoloring-and-changing-materials.md).\
 
 
 ## Step 1: Replace the mesh
@@ -68,7 +68,7 @@ Rename all the variants in the source mesh with those from the target mesh. Then
 
 ## Step 3: Success!
 
-After you've found out which spawn code corresponds to which appearance, you can now [alter the appearance files](changing-materials-colors-and-textures.md).&#x20;
+After you've found out which spawn code corresponds to which appearance, you can now [alter the appearance files](recoloring-and-changing-materials.md).&#x20;
 
 Enjoy!
 
