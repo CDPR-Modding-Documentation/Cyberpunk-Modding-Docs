@@ -13,7 +13,7 @@ This page contains troubleshooting information for end users (people who are not
 ## Navigation
 
 {% hint style="danger" %}
-Before you start debugging, make sure that **all mods and dependencies** have the latest version, in particular [Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.0.8).&#x20;
+Before you start debugging, make sure that **all mods and dependencies** have the latest version, in particular [Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.0.8).
 {% endhint %}
 
 This section aims to give you a quick overview. If your exact problem isn't listed here, please look through the different sections below and try anything that looks promising.
@@ -33,6 +33,8 @@ This section aims to give you a quick overview. If your exact problem isn't list
 A mod is causing problems, and you have no idea which [(1)](user-guide-troubleshooting.md#finding-the-broken-mod-bisecting) [(2)](user-guide-troubleshooting.md#finding-the-broken-mod-log-files)
 
 [You want to start with a clean install](user-guide-troubleshooting.md#the-nuclear-option-a-clean-install)
+
+Redmod isn't doing anything: Install [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176)
 
 ####
 
