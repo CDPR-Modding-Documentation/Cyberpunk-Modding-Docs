@@ -26,11 +26,20 @@ Required: [WolvenKit CLI](https://github.com/WolvenKit/WolvenKit/releases) (not 
 
 Open the preferences via "File" -> "Preferences".&#x20;
 
-For wolvenkit-CLI executable, put the path to your `WolvenKit.CLI.exe` (version >=1.5.2)
+Set the following values:
+
+|                      |                                                                                                                    |
+| -------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Game archives folder | C:\Your\Path\To\Cyberpunk 2077\archive\pc\content                                                                  |
+| uncook folder        | D:\Your\Extraction\Folder                                                                                          |
+| Wolvenkit Depot Path | You can find this folder in your WolvenKit's settings as "Depot Path"                                              |
+| Wolvenkit-CLI.exe    | The executable file under the extracted [WolvenKit CLI](https://github.com/WolvenKit/WolvenKit/releases) directory |
 
 {% hint style="info" %}
-Starting with version 1.6.5, this enables the auto-export function, where MLSB will generate an \*.mlsetup file when you save an \*.mlsetup.json
+Starting with version 1.6.5, adding the WKit.CLI enables the auto-export function, where MLSB will generate an \*.mlsetup file when you save an \*.mlsetup.json
 {% endhint %}
+
+
 
 ### Library and preview
 
@@ -46,8 +55,12 @@ Open the menu "Build" and select first "Repository" to uncook the archives:
 
 <figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
+Click "**Uncook**". A file selector will open.&#x20;
+
+Navigate to the same path you set under "Game archives folder", and press OK.
+
 {% hint style="danger" %}
-This can take several hours!
+This process can take several hours!
 {% endhint %}
 
 After the process is complete, select "Microblends" to extract the microblends, normals, decals and layer masks.
