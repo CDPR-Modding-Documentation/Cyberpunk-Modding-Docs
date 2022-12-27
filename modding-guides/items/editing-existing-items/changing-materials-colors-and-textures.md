@@ -39,10 +39,14 @@ Add the item to your project and open it in WolvenKit.
 ## Step 2: Finding the correct appearance
 
 {% hint style="info" %}
-For a guide of how to trace your item's spawn code to the appearance, see [Spawn Codes](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app).
+For a guide of how to trace your item's spawn code to the appearance, see [Spawn Codes](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app). For an (admittedly rudimentary) overview, see [this list](../../../modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md#reinforced-puffer-vest-4-variants).
 {% endhint %}
 
-You will find the list with appearances at the very top of your mesh. We'll start by editing `bwstripes`, since we know that it is used by one of the variants :
+You will find the list with appearances at the very top of your mesh. Which appearance is used depends on the .app or .ent file, where it is defined as a [property of the component](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app):
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>An example of a component being loaded</p></figcaption></figure>
+
+We will change the appearance bwstripes, which is used by Vest\_17\_basic\_01:
 
 <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption><p>find material bwstripes and remember the name of the chunkMaterial</p></figcaption></figure>
 
