@@ -56,6 +56,7 @@
   * [Create custom poses for spawned NPCs](modding-guides/npcs/create-custom-poses-for-spawned-npcs.md)
   * [Custom bodyhair for NPCs](modding-guides/npcs/custom-bodyhair-for-npcs.md)
   * [Swap Johnny during the Alt's scene](modding-guides/npcs/swap-johnny-during-the-alts-scene.md)
+  * [Appearances: changing the looks](modding-guides/npcs/appearances-changing-the-looks.md)
 * [World Editing](modding-guides/world-editing/README.md)
   * [Adding Objects to the world](modding-guides/world-editing/adding-objects-to-the-world.md)
 * [Photo Mode](modding-guides/photo-mode/README.md)

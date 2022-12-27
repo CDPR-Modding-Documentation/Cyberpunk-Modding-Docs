@@ -26,7 +26,7 @@ description: Overview over different kinds of files and their purpose
 
 A 3d object, holding appearances, materials, and rigging.&#x20;
 
-For details about **appearances**, see [here](../../modding-guides/items/editing-existing-items/recoloring-and-changing-materials.md).
+For details about **appearances**, see [here](../../modding-guides/items/editing-existing-items/changing-materials-colors-and-textures.md).
 
 
 
