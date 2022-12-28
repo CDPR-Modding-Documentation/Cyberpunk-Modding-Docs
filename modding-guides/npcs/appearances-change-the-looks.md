@@ -2,7 +2,7 @@
 description: Changing an NPC's default appearances (and adding more via AMM)
 ---
 
-# Appearances: changing the looks
+# Appearances: change the looks
 
 **Created by @manavortex**\
 **Published December 27 2022**
@@ -15,6 +15,10 @@ This guide will walk you through **editing NPC appearances** for Cyberpunk 2077.
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.7.1-nightly.2022-11-04
 * (optional, if you want to add new experiences) [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) (versions < 2.0 work until they don't)
 
+{% hint style="info" %}
+Assumed skill level: You're able to read.
+{% endhint %}
+
 ## The .ent file
 
 The game's first point of contact is the .ent file. You can find it by searching WolvenKit like this:
@@ -26,10 +30,10 @@ The game's first point of contact is the .ent file. You can find it by searching
 If you come up blank, try around with variations. E.g., Johnny is "silverhand", Viktor is "ripperdoc".&#x20;
 
 {% hint style="success" %}
-You don't need to add this file to your project, unless you want to [add more appearances](appearances-changing-the-looks.md#adding-new-appearances).&#x20;
+You don't need to add the **.ent** file to your project, unless you want to [add more appearances](appearances-change-the-looks.md#adding-new-appearances).
 {% endhint %}
 
-Open it in WolvenKit. You will now see something like this:&#x20;
+&#x20;However, the file contains the path to an **.app** file. Find and add it to your project.
 
 <figure><img src="../../.gitbook/assets/app_modification_guide_ent_file.png" alt=""><figcaption><p>If you are using <a href="https://www.nexusmods.com/cyberpunk2077/mods/790">Appearance Menu Mod</a>, this list will look familiar.</p></figcaption></figure>
 
@@ -39,10 +43,6 @@ Major NPCs have their own .app files: \
 
 Others are not so lucky - e.g., Mamá Welles is lobbed in with the other valentino goons: \
 `base\characters\appearances\gang\gang__valentinos_wa.app`
-{% endhint %}
-
-{% hint style="success" %}
-**F**ind this file, and add it to your project.
 {% endhint %}
 
 ## The .app file
@@ -67,7 +67,7 @@ This is where the magic happens.
 
 ## Changing and removing components
 
-**Change** items by selecting a different appearance or a different mesh:
+**Change** items by selecting a [different appearance](../items/editing-existing-items/changing-materials-colors-and-textures.md) or a [different mesh](../items/editing-existing-items/replace-a-player-item-with-an-npc-item.md):
 
 <figure><img src="../../.gitbook/assets/app_modification_guide_change_mesh.png" alt=""><figcaption><p>Wake up, Johnny! … Follow the white rabbit, Johnny!</p></figcaption></figure>
 
@@ -75,11 +75,13 @@ This is where the magic happens.
 
 <figure><img src="../../.gitbook/assets/app_modification_guide_delete_ring.png" alt=""><figcaption><p>no more ring!</p></figcaption></figure>
 
-
-
 ### Animations: you want to avoid them
 
-Anything of the type `entAnimatedComponent` means that components are **animated**. That's mostly the case  for stuff that is influenced by gravity, such as coats, jackets, or long hair.&#x20;
+Anything of the type `entAnimatedComponent` means that components are **animated**. That's mostly the case for physics-enabled stuff influenced by gravity, such as coats, jackets, or long hair.&#x20;
+
+{% hint style="info" %}
+Physics gave us the atomic bomb. _(It also gave us computers, but this is besides the point right now.)_
+{% endhint %}
 
 Animations are usually unique to meshes on a by-pixel basis and do not react kindly to edits or swaps. (Try splitting the obi from Saburo's kimono into its own submesh if you don't believe me).&#x20;
 
@@ -169,7 +171,7 @@ Now, we have to hook up the new appearances.
 
 ### The .ent file
 
-Find the .ent file that you've identified in the [first step of this guide](appearances-changing-the-looks.md#the-.ent-file), and add it to your WolvenKit project. Open it, then duplicate the last item in the appearances array. Now, change the new entry to match your custom appearance:
+Find the .ent file that you've identified in the [first step of this guide](appearances-change-the-looks.md#the-.ent-file), and add it to your WolvenKit project. Open it, then duplicate the last item in the appearances array. Now, change the new entry to match your custom appearance:
 
 |                |                                 |
 | -------------- | ------------------------------- |
@@ -180,11 +182,11 @@ Find the .ent file that you've identified in the [first step of this guide](appe
 
 ### The .app file
 
-In the app file, duplicate one of the already existing appearances, and change the name of the new item to the one you specified above: \
+In the app file, duplicate one of the already existing appearances, and change the name of the new item to the one you specified in the .ent file:\
 
 
-<figure><img src="../../.gitbook/assets/app_modification_add_appearance_app.png" alt=""><figcaption><p>You can now change components around as <a href="appearances-changing-the-looks.md#changing-and-removing-components">specified above</a>!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/app_modification_add_appearance_app.png" alt=""><figcaption><p>You can now change components around as <a href="appearances-change-the-looks.md#changing-and-removing-components">specified above</a>!</p></figcaption></figure>
 
 {% hint style="success" %}
-Congratulations — that's it!&#x20;
+Congratulations — that's it! Install your mod and go testing!
 {% endhint %}
