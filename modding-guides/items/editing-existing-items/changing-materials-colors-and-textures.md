@@ -24,27 +24,21 @@ Which of these layers affects which part of your mesh will be determined in the 
 
 ## **Step 1: Finding your item**
 
-Before you can edit an item's appearance, you need to find the correct game file. As for how to do this, see [Spawn Codes](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials).&#x20;
+{% hint style="info" %}
+This tutorial assumes that you already know which mesh and appearance you want to change. If you don't know that, you need to [find the correct game file](replace-a-player-item-with-an-npc-item.md#summary). If you only have a cheat code, see [Spawn Codes](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app) instead.
+{% endhint %}
 
-This tutorial will use the female variant of the puffy vest (as I've already [mapped and documented it](../../../modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md#reinforced-puffer-vest-4-variants)):
+We will use the female variant of the puffy vest (as I've already [mapped and documented it](../../../modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md#reinforced-puffer-vest-4-variants)):
 
 ```
 base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.mesh
 ```
 
 {% hint style="success" %}
-Add the item to your project and open it in WolvenKit.
+Add the item to your project and open it in WolvenKit. You want the original to look up material names, even if you overwrite it with your own mesh.
 {% endhint %}
 
 ## Step 2: Finding the correct appearance
-
-{% hint style="info" %}
-For a guide of how to trace your item's spawn code to the appearance, see [Spawn Codes](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app). For an (admittedly rudimentary) overview, see [this list](../../../modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md#reinforced-puffer-vest-4-variants).
-{% endhint %}
-
-You will find the list with appearances at the very top of your mesh. Which appearance is used depends on the .app or .ent file, where it is defined as a [property of the component](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app):
-
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>An example of a component being loaded</p></figcaption></figure>
 
 We will change the appearance bwstripes, which is used by Vest\_17\_basic\_01:
 
@@ -55,10 +49,10 @@ We will change the appearance bwstripes, which is used by Vest\_17\_basic\_01:
 {% endhint %}
 
 {% hint style="info" %}
-default is the fallback appearance that'll be used if anything can't be resolved by name or index. This is the reason why most item swap mods give you only a single appearance - people didn't set up the [variants](replace-a-player-item-with-an-npc-item.md).
+`default` is the fallback appearance that'll be used if anything can't be resolved by name or index. This is the reason why most item swap mods give you only a single appearance - people didn't set up the [variants](replace-a-player-item-with-an-npc-item.md).
 {% endhint %}
 
-This vest has only one chunkMask, so there's only one material. Remember its name and find it here:
+This vest has only one chunkMask, so there's only one material. Remember its name and find it in the `localMaterialBuffer`:
 
 <figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>It's ml_t2_002_ma_vest__puffy_bwstripes</p></figcaption></figure>
 
