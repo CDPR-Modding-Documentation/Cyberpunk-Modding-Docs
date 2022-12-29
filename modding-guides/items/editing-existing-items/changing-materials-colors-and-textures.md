@@ -184,3 +184,18 @@ You can rename a material by changing the "name" property inside the CMeshMateri
 Don't forget to look through all the appearances and change the `chunkMaterial` names!
 {% endhint %}
 
+## Step 6 (optional): adding new materials
+
+To add a new material to a mesh, you need to create **two** entries. The first of those needs to be in the **materialEntries** array:
+
+<figure><img src="../../../.gitbook/assets/item_appearance_add_name_step_1.png" alt=""><figcaption><p>Edit the new material's index and name. This is crucial!</p></figcaption></figure>
+
+Now, add an entry in the localMaterialBuffer.
+
+{% hint style="info" %}
+If your mesh doesn#t have entries under `localMaterialBuffer`, use `preloadLocalMaterialInstances`  instead.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/editing_material_adding_entry (2).png" alt=""><figcaption><p>The new material will have the name you defined in the CMeshMaterialEntry in the previous step.</p></figcaption></figure>
+
+You can now use your new material just like the regular, old materials.
