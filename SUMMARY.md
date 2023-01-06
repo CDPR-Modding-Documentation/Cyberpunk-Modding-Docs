@@ -41,6 +41,7 @@
     * [Vehicles](modding-know-how/references-lists-and-overviews/files-for-modding/vehicles.md)
 * [3d Modelling](modding-know-how/3d-modelling/README.md)
   * [Exporting and importing meshes](modding-know-how/3d-modelling/exporting-and-importing-meshes.md)
+  * [Self-made normal maps](modding-know-how/3d-modelling/self-made-normal-maps.md)
 * [User guide: Troubleshooting](modding-know-how/user-guide-troubleshooting.md)
 
 ## Modding: Guides

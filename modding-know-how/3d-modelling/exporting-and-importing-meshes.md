@@ -66,7 +66,7 @@ Assuming you are exporting `t2_002_pwa_vest__puffy.mesh`, WolvenKit will do the 
 
 Path of mesh: `<yourModDir>\archive\source\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.mesh`
 
-Path of glb: `<yourModDir>\archive\raw\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.gdb`
+Path of gdb: `<yourModDir>\archive\raw\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.gdb`
 
 ### Noesis (\*.fbx)
 
