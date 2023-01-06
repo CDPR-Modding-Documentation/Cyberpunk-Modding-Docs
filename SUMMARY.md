@@ -39,6 +39,8 @@
     * [Places](modding-know-how/references-lists-and-overviews/files-for-modding/places.md)
     * [Weapons](modding-know-how/references-lists-and-overviews/files-for-modding/weapons.md)
     * [Vehicles](modding-know-how/references-lists-and-overviews/files-for-modding/vehicles.md)
+* [3d Modelling](modding-know-how/3d-modelling/README.md)
+  * [Exporting and importing meshes](modding-know-how/3d-modelling/exporting-and-importing-meshes.md)
 * [User guide: Troubleshooting](modding-know-how/user-guide-troubleshooting.md)
 
 ## Modding: Guides
@@ -48,7 +50,6 @@
 * [Items](modding-guides/items/README.md)
   * [Editing existing items](modding-guides/items/editing-existing-items/README.md)
     * [Changing materials, colors and textures](modding-guides/items/editing-existing-items/changing-materials-colors-and-textures.md)
-    * [Mesh editing](modding-guides/items/editing-existing-items/mesh-editing.md)
     * [Replace a player item with an NPC item](modding-guides/items/editing-existing-items/replace-a-player-item-with-an-npc-item.md)
   * [Influencing other items](modding-guides/items/influencing-other-items.md)
   * [Adding new items](modding-guides/items/adding-new-items.md)
