@@ -31,6 +31,7 @@
   * [Blender scripts and plugins](modding-know-how/modding-tools/blender-scripts-and-plugins.md)
 * [References, lists and overviews](modding-know-how/references-lists-and-overviews/README.md)
   * [Hair](modding-know-how/references-lists-and-overviews/hair.md)
+  * [Skin](modding-know-how/references-lists-and-overviews/skin.md)
   * [Equipment](modding-know-how/references-lists-and-overviews/equipment/README.md)
     * [Spawn Codes (BaseIDs/Hashes)](modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md)
     * [Variants and appearances](modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md)

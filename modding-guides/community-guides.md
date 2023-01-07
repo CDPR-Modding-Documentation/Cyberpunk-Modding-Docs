@@ -13,11 +13,10 @@ description: This page holds a list of community guides all over the internet.
 | [Custom loading screens](https://pinkydude.tumblr.com/post/651342448609656832/tutorial-custom-loading-screens-a-step-by-step)             | By PinkyDude on tumblr                                                                                      |
 | [Creating custom tattoos](https://www.nexusmods.com/cyberpunk2077/mods/1155/)                                                             | Guide on Nexus                                                                                              |
 | [Unique eye textures](https://docs.google.com/document/d/1Qm9X1RmEIOzeBR7zuFrkEp1Lj7kof8Ztq6VPyeHwseo/edit?usp=sharing)                   | Guide by Halvkyrie#4000                                                                                     |
-| [Creating normal maps](https://drive.google.com/file/d/11Z-SYF28nVpF\_ZbkIJ\_KHCetJK7EcT\_X/view)                                         | Guide by Тима (Teem)#3118                                                                                   |
-| [Creating custom poses (youtube)](https://www.youtube.com/watch?v=oye4bxczKxU)                                                            | by PinkyDude                                                                                                |
 |  [CDPR: Redmod Part 1](https://www.youtube.com/watch?v=Rcf65OvEJTo\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=1) (youtube)           | What it is, what it does, how to use                                                                        |
 | [CDPR: Redmod Part 2 (youtube)](https://www.youtube.com/watch?v=aq\_4U5N-CP4\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=2)           | How to edit scripts (Redscript comparison)                                                                  |
 | [CDPR: Redmod Part 3 (youtube)](https://www.youtube.com/watch?v=m5IL\_TRwTew\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=3)           | How to install/replace animations                                                                           |
+| [Creating custom microblends](https://docs.google.com/document/d/1oRjXHE08oDnaKwvgEOKxl0gZGkBADgSn2azCRwUeQLs/view)                       | Google Doc, Photoshop or [Photopea](https://www.photopea.com/)                                              |
 
 ## Rigging and animations
 
@@ -33,6 +32,7 @@ description: This page holds a list of community guides all over the internet.
 
 | [Custom Props Creation Kit](https://www.nexusmods.com/cyberpunk2077/mods/5979) | Not a guide, just a framework |
 | ------------------------------------------------------------------------------ | ----------------------------- |
+| [Creating custom poses (youtube)](https://www.youtube.com/watch?v=oye4bxczKxU) | by PinkyDude                  |
 
 ## Custom NPCs (NPVs)
 
@@ -49,6 +49,7 @@ description: This page holds a list of community guides all over the internet.
 | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | [Pose mods and reference screenshots](https://docs.google.com/spreadsheets/d/1rYMbIRKFAFb0ajFk9oyE-3ic6MShWLep5HdqOa\_CGIg/edit#gid=0) | by trala#5476 - ordered by animated actor                         |
 | [Hair colours overview](https://docs.google.com/document/d/1c8Wx42HyWvGL2RSwngQ\_82xoUrG\_aTHvY7MUDPYGYns/edit)                        | Google Doc with screenshots (Who made this? Would like to credit) |
+| [Skin Tone overview](../modding-know-how/references-lists-and-overviews/skin.md)                                                       | Overview section on this wiki                                     |
 
 ## Scripting and quests
 
