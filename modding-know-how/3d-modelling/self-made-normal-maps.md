@@ -124,7 +124,17 @@ The high poly mesh needs to be completely covered by the low poly one, like plas
 3. Switch into Edit Mode (tab)
 4. Select all vertices (ctrl+A)
 5. **Fatten** (Alt+S, adjust amount of fattening via mouse)
-6. Fix up whatever parts didn't fatten correctly by hand
+6. Fix up whatever parts didn't fatten correctly by hand.
+
+### If your mesh inflates asymmetrically
+
+1. Undo your action and select all vertices again.&#x20;
+2. Put the 3d cursor in the center of the selected vertices: \
+   `Right-Click -> Snap Vertices -> Cursor To Selected`
+3.  Set the Pivot Point to 3D cursor (Shortcut: `.` (dot), `Numpad 6`)
+
+    <figure><img src="https://cdn.shortpixel.ai/spai/w_1057+q_lossy+ret_img+to_webp/https://artisticrender.com/wp-content/uploads/2022/11/image-3.png" alt=""><figcaption><p>Set it to "3D Cursor"</p></figcaption></figure>
+4. Fatten again!
 
 ## Step 5: Baking
 
