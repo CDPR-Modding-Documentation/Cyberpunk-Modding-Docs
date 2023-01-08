@@ -26,7 +26,7 @@ If you want to replace meshes without editing them, check [this guide](../../mod
 | <p><a href="https://richwhitehouse.com/index.php?content=inc_projects.php">Noesis</a><br><a href="https://github.com/alphazolam/fmt_CP77mesh?msclkid=384152bfaa5611ecbad0234dbe6a5c45">Noesis Import/Export Plugin</a></p> | <p>>= 4.459<br>>= Sep 28, 2021</p> |
 | [WKit Blender AddOn](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)[ ](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)                                                                                      | >= 1.1.0                           |
 
-
+You can import and export meshes via WolvenKit **or** Noesis - both methods work.&#x20;
 
 {% hint style="danger" %}
 **Before you start to edit, a word of warning:**
@@ -74,6 +74,8 @@ Path of gdb: `<yourModDir>\archive\raw\base\characters\garment\player_equipment\
 The [Noesis Import/Export Plugin](https://github.com/alphazolam/fmt\_CP77mesh?msclkid=384152bfaa5611ecbad0234dbe6a5c45) is required for this.
 {% endhint %}
 
+Noesis is an **alternative** to exporting with WolvenKit. There are legitimate use cases for why you would want this. If you don't know them, you'll probably not want to use this.
+
 Find your mesh in Noesis. Right-click and select "Export".
 
 <figure><img src="../../.gitbook/assets/noesis_mesh_export.png" alt=""><figcaption></figcaption></figure>
@@ -97,6 +99,10 @@ For WolvenKit > 8.8 and < 8.9, make sure to delete MeshName.Material.json from t
 Simply export as fbx, Blender's standard settings are alright for Noesis.
 
 ## Importing to \*.mesh
+
+{% hint style="info" %}
+If you are following a guide with pre-made resources and it tells you to import via Noesis, you'll want to follow the advice, as the elements in the exported structure will have different names.
+{% endhint %}
 
 ### WolvenKit (\*.gdb)
 
@@ -123,6 +129,8 @@ WolvenKit refuses to import if the target mesh doesn't support all bones in the 
 {% hint style="danger" %}
 The [Noesis Import/Export Plugin](https://github.com/alphazolam/fmt\_CP77mesh?msclkid=384152bfaa5611ecbad0234dbe6a5c45) is required for this.
 {% endhint %}
+
+Noesis is an **alternative** to importing with WolvenKit.
 
 Find your fbx in Noesis. Right-click and select "Import".
 
