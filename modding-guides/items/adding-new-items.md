@@ -619,7 +619,7 @@ You can now spawn and equip your item by running the following command (as speci
 Game.AddToInventory("Items.my_shirt")  
 ```
 
-You should now see your item. If not, consult the section **Troubleshooting** below, or retrace your steps and make sure that everything works before proceeding to the step below.
+You should now see your item. If not, consult the section [**Troubleshooting**](adding-new-items.md#troubleshooting) below, or retrace your steps and make sure that everything works before proceeding to the step below.
 
 ## Adding an appearance (example: blackred)
 
@@ -953,7 +953,7 @@ Something went wrong with your json file:
 
 <figure><img src="https://camo.githubusercontent.com/6aebdc1d9a291c0bc2fbfc0b56006f87c3db452343ef4e938cfe33ca3bfa3768/68747470733a2f2f692e696d6775722e636f6d2f583562703644372e706e67" alt=""><figcaption></figcaption></figure>
 
-Check the following places:
+If there are no errors in any of the log files, check the following places:
 
 * `yourmodname.archive.xl`:
   * Does the key `localization - onscreens - en-us` exist?
