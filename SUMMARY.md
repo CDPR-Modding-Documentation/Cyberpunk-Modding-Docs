@@ -94,6 +94,7 @@
   * [Multilayered](developers/shaders/multilayered.md)
 * [Tweaks](developers/tweaks.md)
 * [File Formats](developers/file-formats/README.md)
+  * [Streaming Sectors](developers/file-formats/streaming-sectors.md)
 
 ## Help
 
