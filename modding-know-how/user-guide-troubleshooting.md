@@ -108,7 +108,7 @@ If that didn't do the trick, find the following folders:
 Cyberpunk 2077\red4ext
 Cyberpunk 2077\r6\scripts
 Cyberpunk 2077\r6\tweaks
-Cyberpunk 2077\r6\tools
+Cyberpunk 2077\engine\tools
 ```
 
 and rename them, you know the drill.
