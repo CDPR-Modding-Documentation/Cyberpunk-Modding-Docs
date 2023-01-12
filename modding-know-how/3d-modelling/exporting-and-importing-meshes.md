@@ -4,6 +4,10 @@ description: How to export and import meshes (Wolvenkit <=> Blender)
 
 # Exporting and importing meshes
 
+{% hint style="success" %}
+For a guide on exporting a character, see the [Wolvenkit wiki](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender).
+{% endhint %}
+
 ## Summary <a href="#summary" id="summary"></a>
 
 **Created by @manavortex**\
