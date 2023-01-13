@@ -44,6 +44,11 @@ Normally, you can override only components from .ent files that you include via 
 
 <figure><img src="../../.gitbook/assets/partsOverrides3.png" alt=""><figcaption><p>This is hiding a submesh of the default body, which isn't part of the referenced <code>pants_leggins.ent.</code><br><code></code>This is only possible because of ArchiveXL!</p></figcaption></figure>
 
+To delete an already existing reference, set the numeric value to the right of the depot path to 0: \
+
+
+<figure><img src="../../.gitbook/assets/archive_xl_remove_reference.png" alt=""><figcaption></figcaption></figure>
+
 ## VisualTags
 
 In the .app file, each appearance will contain an array by the name of `visualTags.tags`. These will let you hide parts of other meshes.

@@ -537,6 +537,10 @@ Since November 1st, 2022, WolvenKit can edit yaml files. With older versions, pl
 
 Create the first entry in `yourModName.yaml`, so that you can spawn it via `Game.AddToInventory('Items.my_shirt', 1)`. You can copy and paste the part below.
 
+{% hint style="info" %}
+For supported $base types, see [here](adding-new-items.md#yourmodname.yaml).
+{% endhint %}
+
 The total file content should be:
 
 ```
