@@ -11,11 +11,12 @@ description: Put your item in place of a default game item. Supports variants.
 
 ****
 
-This tutorial will teach you how to switch a player mesh for an NPC garment and map its variants to the existing colours.\
+This tutorial will teach you how to switch a player mesh for an NPC garment and map its variants to the existing colours.
 
+Other relevant know-how for this process:&#x20;
 
-We'll assume that you know how to edit mesh appearances. If you don't, check the [corresponding tutorial](changing-materials-colors-and-textures.md).\
-
+* [Finding an item's spawn code and mesh](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials)
+* [Editing mesh appearances](changing-materials-colors-and-textures.md)
 
 ## Step 1: Replace the mesh
 
@@ -41,10 +42,10 @@ Example: Replacing the short-sleeved poser jacket with the monk shirt with the t
 
 ## Step 2: Change the .mlsetups
 
-Now comes the annoying part: we need to find out which spawn code corresponds to which meshMeshAppearance. The process is a little tedious.
+Before we can edit the mlsetups, we need to find out which spawn code corresponds to which meshMeshAppearance. The process is pretty straightforward — it's documented [here](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials).
 
 {% hint style="info" %}
-The wiki has a list with [mappings](../../../modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md). Feel free to expand it!
+The wiki has a list with [mappings](../../../modding-know-how/references-lists-and-overviews/equipment/variants-and-appearances.md) for easy lookup. Feel free to add to it!
 {% endhint %}
 
 
