@@ -170,11 +170,28 @@ In Edit Mode, you can find a few commands in the Mesh -> Clean Up menu:
 * Split Non-Planar Faces
 * Split Concave Faces
 * Merge By Distance\
-  ⚠ If you select your whole mesh, this will merge the individual chunks. Make sure to do them one after another.
 
-If that doesn't solve your problem, you can use the [3d print tool](https://docs.blender.org/manual/en/latest/addons/mesh/3d\_print\_toolbox.html) to (hopefully) find out what is wrong with your mesh.
+
+{% hint style="warning" %}
+&#x20;If you select your whole mesh, **Merge By Distance** will merge the individual parts, obliterating the seams. To avoid that, make sure to do them one after another:\
+\- Select a vertex/edge/face in Edit Mode\
+\- hold down Ctrl Num+ to select everything connected\
+\- use Merge By Distance before proceeding to the next part of your mesh
+{% endhint %}
+
+#### It's still broken
+
+Your last option is the [3d print tool](https://docs.blender.org/manual/en/latest/addons/mesh/3d\_print\_toolbox.html) to (hopefully) find out what is wrong with your mesh.&#x20;
+
+Fortunately, the tool is free, easy-to-use and already included in your Blender.
 
 {% hint style="info" %}
-If you don't have a 3d print menu, you might need to enable the plugin in Blender's settings first.
+If you don't have a 3d print entry in the tools of your 3d viewport, you might need to enable the plugin in Blender's settings first.
 {% endhint %}
+
+<figure><img src="../../.gitbook/assets/blender 3d print tool.png" alt=""><figcaption><p>Use the 3d print tool in edit mode to directly fix your issues</p></figcaption></figure>
+
+* Zero Edges: Those are bad, fix them (click on them, then press X and just delete them)
+* Non-Flat Faces: Those are even worse, as they can make the game crash. You need to split them up until they are flat, or investigate the surrounding edges/vertices to see what's going wrong here.
+* Zero Faces: Only fix if you have <100 of them — the tool doesn't always identify them correctly (the mesh analysed above was `h0_000_pwa_c__basehead`, which is absolutely fine).&#x20;
 
