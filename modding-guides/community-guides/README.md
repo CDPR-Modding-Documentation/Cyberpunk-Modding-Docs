@@ -36,13 +36,7 @@ description: This page holds a list of community guides all over the internet.
 
 ## Custom NPCs (NPVs)
 
-|                                                                                                                                                                                                           |                                                                        |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| NoraLee's [NPV picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker)                                                                                                                           | A utility to speed up the process                                      |
-| [create an NPV](https://docs.google.com/document/d/1omTh5B8z7MsYxIO6xzOEBqpm17tKxCCQgWqEbeFQXc8/) (resources on [Google Drive](https://drive.google.com/drive/folders/1R-knopKMhHDZuokPKaTt0nIDArXcQdrb)) | How to manually swap V over an NPC, by **NoraLee** (Google Docs/Drive) |
-| [Create an NPV with WolvenKit](https://docs.google.com/document/d/1BYKf8e\_Z45am9mBH9aoHQONXkKrKTOEJRMr7NNuZuCY/edit?usp=sharing)                                                                         | Addition to NoraLee's guide by nx#3390                                 |
-| [customize an NPV](https://xbaebsae.jimdofree.com/tutorials/cp2077-more-npv-customisation/)                                                                                                               | tutorial by xbaebsae                                                   |
-| [Adding/editing appearances to Custom NPV/NPC on the custom framework in WolvenKit](https://youtu.be/f2VaiP1u\_jE)                                                                                        | YouTube video by Vesna \[CyberVesna/Vesn4\_]                           |
+Please see the corresponding [sub-page](npvs-v-as-npc-custom-npcs.md)
 
 ## References
 
@@ -50,7 +44,7 @@ description: This page holds a list of community guides all over the internet.
 | -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
 | [Pose mods and reference screenshots](https://docs.google.com/spreadsheets/d/1rYMbIRKFAFb0ajFk9oyE-3ic6MShWLep5HdqOa\_CGIg/edit#gid=0) | by trala#5476 - ordered by animated actor                         |
 | [Hair colours overview](https://docs.google.com/document/d/1c8Wx42HyWvGL2RSwngQ\_82xoUrG\_aTHvY7MUDPYGYns/edit)                        | Google Doc with screenshots (Who made this? Would like to credit) |
-| [Skin Tone overview](../modding-know-how/references-lists-and-overviews/skin.md)                                                       | Overview section on this wiki                                     |
+| [Skin Tone overview](../../modding-know-how/references-lists-and-overviews/skin.md)                                                    | Overview section on this wiki                                     |
 
 ## Scripting and quests
 

@@ -50,7 +50,8 @@
 ## Modding: Guides
 
 * [WolvenKit Guide Section](https://wiki.redmodding.org/wolvenkit/guides/modding-community)
-* [Community guides](modding-guides/community-guides.md)
+* [Community guides](modding-guides/community-guides/README.md)
+  * [NPVs (V as NPC) - custom NPCs](modding-guides/community-guides/npvs-v-as-npc-custom-npcs.md)
 * [Items](modding-guides/items/README.md)
   * [Editing existing items](modding-guides/items/editing-existing-items/README.md)
     * [Changing materials, colors and textures](modding-guides/items/editing-existing-items/changing-materials-colors-and-textures.md)

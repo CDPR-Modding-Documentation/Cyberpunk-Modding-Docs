@@ -4,6 +4,10 @@ description: Changing an NPC's default appearances (and adding more via AMM)
 
 # Appearances: change the looks
 
+{% hint style="info" %}
+If you want to create a custom NPC from scratch, look [here](../community-guides/npvs-v-as-npc-custom-npcs.md).
+{% endhint %}
+
 **Created by @manavortex**\
 **Published December 27 2022**
 
