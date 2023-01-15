@@ -1,3 +1,7 @@
+---
+description: When you can't import, or your imported mesh looks weird
+---
+
 # Troubleshooting your mesh edits
 
 ## Importing
@@ -5,6 +9,8 @@
 ### Bone: neutral\_bone not present in export Rig(s)/Import Mesh
 
 The neutral bone is created by the glb export plugin when there are vertex groups without a parent bone. WolvenKit will not let you import if there is a mismatch.
+
+To find which bones you're missing, you can use [this script](https://gist.github.com/manavortex/080d04065ee4c45aaad1e7c221db68c9), which will print their names to console. (Blender: Window -> Toggle System Console)
 
 {% hint style="info" %}
 Your armature in Blender needs to have a bone for every vertex group in the submesh. You then need to import over a .mesh file which also has all these bones.
