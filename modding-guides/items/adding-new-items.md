@@ -69,12 +69,14 @@ Now, add the following files to your project and move them to `tutorial\my_shirt
 1. `base\gameplay\items\equipment\underwear\player_underwear_item.ent`
 2. `base\gameplay\items\equipment\underwear\appearances\player_underwear_item_appearances.app`
 3. `base\characters\garment\player_equipment\torso\t1_080_pwa_tank__judy.ent`\
-   _(any file from this folder will do)_
+   _(any file from this folder will do)_\
+   __**Important**: check the hint below!
 4. your mesh (I'll use `base\characters\garment\gang_monk\torso\t2_135_jacket__monk_shirt\t2_135_wa_jacket__monk_shirt.mesh`)
 
-{% hint style="warning" %}
-For 3., get an entity file from the folder corresponding to the type of item that you want to edit. The files are sorted by equipment slot and you can find them under \
-`base\characters\garment\player_equipment\<yourbodypart>`
+{% hint style="danger" %}
+For 3., your entity file needs to correspond to your item's **body part**. If you put a shirt in an entity file for shoes, it will deform badly once you put it on.\
+\
+You can find the entity files in `base\characters\garment\player_equipment`, where they are sorted in subfolders by body part.
 {% endhint %}
 
 and the **operative** files (these go into the subfolder `tutorial\ops`):
@@ -950,6 +952,16 @@ First of all, check the logs:&#x20;
 * `red4ext/plugins/TweakXL/TweakXL.log`
 
 Second of all, make sure that you do not have capital letters in any of your path or file names - as of 1-1-6, they are not currently supported.
+
+### My item warps weirdly
+
+You have ignored the [hint box](adding-new-items.md#get-the-files-create-the-structure) when picking your `mesh_entity.ent:` Make sure that you're using an entity file that corresponds with the slot that you are trying to replace (e.g. if your item is a pair of shoes, you need an entity file from `base\characters\garment\player_equipment\feet`).
+
+{% hint style="info" %}
+**If you are here because of a link from a different guide:**&#x20;
+
+You can find out which entity file your item uses by right-clicking on your mesh and selecting "find files using this". Add the .ent file to the list and open it in WolvenKit. Then, [replace the contents](../npcs/appearances-change-the-looks.md#safely-adding-components) of the "components" array with those of an .ent file from the correct folder — don't forget to change the path to your mesh again!
+{% endhint %}
 
 ### My item shows empty text instead of name/description!
 

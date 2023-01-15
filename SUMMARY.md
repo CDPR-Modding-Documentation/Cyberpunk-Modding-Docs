@@ -45,6 +45,8 @@
   * [Exporting and importing meshes](modding-know-how/3d-modelling/exporting-and-importing-meshes.md)
   * [Exporting rigs and anims](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)
   * [Self-made normal maps](modding-know-how/3d-modelling/self-made-normal-maps.md)
+  * [Troubleshooting your mesh edits](modding-know-how/3d-modelling/troubleshooting-your-mesh-edits.md)
+  * [Garment Support: How does it work?](modding-know-how/3d-modelling/garment-support-how-does-it-work.md)
 * [User guide: Troubleshooting](modding-know-how/user-guide-troubleshooting.md)
 
 ## Modding: Guides

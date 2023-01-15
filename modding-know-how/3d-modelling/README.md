@@ -1,6 +1,7 @@
 ---
-description: Find knowledge on how to edit 3d models here
+description: Find knowledge on editing 3d models here
 ---
 
 # 3d Modelling
 
+Fioo
