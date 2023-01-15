@@ -144,6 +144,20 @@ Find your fbx in Noesis. Right-click and select "Import".
 You need to select a target mesh to import over.
 {% endhint %}
 
+## Differences between fbx and glb
+
+There are a few differences between Noesis and WolvenKit when it comes to exporting your meshes:
+
+<figure><img src="../../.gitbook/assets/import_noesis_glb_armature_differences.png" alt=""><figcaption><p>Note the differently named submeshes</p></figcaption></figure>
+
+|               | Noesis (fbx)        | WolvenKit (glb) |
+| ------------- | ------------------- | --------------- |
+| Armature      | Rotation W: 0       | Rotation W: 1   |
+|               | Rotation Z: -1      | Rotation Z: 0   |
+| Submesh names | submesh\_00\_LOD\_1 | submesh0        |
+
+You can easily convert between the two formats by hand!
+
 ## Troubleshooting
 
 For a list of troubleshooting steps, check the [corresponding wiki page](troubleshooting-your-mesh-edits.md).

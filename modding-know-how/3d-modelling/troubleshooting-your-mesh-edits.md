@@ -2,11 +2,47 @@
 
 ## Importing
 
-### Something with bones
+### Bone: neutral\_bone not present in export Rig(s)/Import Mesh
 
-WolvenKit will check your 3d object's **vertex groups** against the **bones** in the associated rig. If your mesh is missing bones, then you won't be able to import.
+The neutral bone is created by the glb export plugin when there are vertex groups without a parent bone. WolvenKit will not let you import if there is a mismatch.
 
-To resolve this, import over a different mesh that has all the bones, or look into [this tutoria](https://xbaebsae.jimdofree.com/tutorials/cp2077-transferring-and-expanding-skeletons-in-meshes/)l as for how to transfer bones from one armature to the other.
+{% hint style="info" %}
+Your armature in Blender needs to have a bone for every vertex group in the submesh. You then need to import over a .mesh file which also has all these bones.
+{% endhint %}
+
+#### Option 1: Fuck those bones
+
+You can [import the mesh with Noesis](exporting-and-importing-meshes.md#noesis-.fbx-2), which will not do any of these checks. For that, you need to import/export via .fbx.
+
+{% hint style="warning" %}
+Since noesis expects differently-named submeshes under the root armature, you'll want to export the mesh via noesis, join your changed meshes on those under Noesis\_Root, and import it again.\
+**Caution:** You'll have to rotate your armature in this case.
+{% endhint %}
+
+{% hint style="danger" %}
+While this will get your mesh into the game, the missing bones mean that parts of it won't move the way you expect it!
+{% endhint %}
+
+#### Option 2: The Netrunner suit
+
+The armature from the following mesh has a lot of bones and will often resolve most of your issues:
+
+```
+t0_005_pwa_body__t_bug.mesh
+t0_005_pma_body__t_bug.mesh
+```
+
+Try using the Netrunner body as a base for import. To have more than one submesh, you can simply duplicate the existing one and adjust the naming, e.g. `submesh_01_LOD_1`, `submesh_02_LOD_1`
+
+#### Option 3: Transferring bones
+
+It's time to play 3d puzzle and assemble bones from multiple sources. Unfortunately, there is no simple solution for this yet. You need to&#x20;
+
+* find the bones that your armature is missing in other meshes
+* [transfer them ](https://xbaebsae.jimdofree.com/tutorials/cp2077-transferring-and-expanding-skeletons-in-meshes/)into your import target mesh
+* export all the extra meshes into Blender&#x20;
+* [merge their rigs](https://github.com/Simarilius-uk/CP2077\_BlenderScripts/blob/main/Merge\_rigs.py), which you should do with the linked Python script
+* and finally reimport everything back into Cyberpunk.
 
 ### Everything else
 
