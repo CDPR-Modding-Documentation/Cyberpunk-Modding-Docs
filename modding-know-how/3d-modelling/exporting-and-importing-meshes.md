@@ -1,11 +1,11 @@
 ---
-description: How to export and import meshes (Wolvenkit <=> Blender)
+description: How to export and import meshes (WolvenKit <=> Blender)
 ---
 
 # Exporting and importing meshes
 
 {% hint style="success" %}
-For a guide on exporting a character, see the [Wolvenkit wiki](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender).
+For a guide on exporting a character, see the [WolvenKit wiki](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender).
 {% endhint %}
 
 ## Summary <a href="#summary" id="summary"></a>
@@ -26,7 +26,7 @@ If you want to replace meshes without editing them, check [this guide](../../mod
 | Tool                                                                                                                                                                                                                       | Tool version                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
 | [WolvenKit](https://github.com/WolvenKit/Wolvenkit/releases)                                                                                                                                                               | >= 8.7.0                           |
-| [Blender](https://www.blender.org/download/)                                                                                                                                                                               | >= 3.3 stable                      |
+| [Blender](https://www.blender.org/download/)                                                                                                                                                                               | >= 3.1 stable                      |
 | <p><a href="https://richwhitehouse.com/index.php?content=inc_projects.php">Noesis</a><br><a href="https://github.com/alphazolam/fmt_CP77mesh?msclkid=384152bfaa5611ecbad0234dbe6a5c45">Noesis Import/Export Plugin</a></p> | <p>>= 4.459<br>>= Sep 28, 2021</p> |
 | [WKit Blender AddOn](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)[ ](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)                                                                                      | >= 1.1.0                           |
 
@@ -40,7 +40,7 @@ It is easy to [break a mesh](exporting-and-importing-meshes.md#troubleshooting-i
 
 ## Exporting the mesh
 
-### WolvenKit (\*.gdb)
+### glTF Binary (\*.glb)
 
 WolvenKit <= [8.8](https://github.com/WolvenKit/WolvenKit/releases/tag/8.8.0): Use the Import/Export tool. It is pinned to the sidebar on the right.
 
@@ -70,9 +70,9 @@ Assuming you are exporting `t2_002_pwa_vest__puffy.mesh`, WolvenKit will do the 
 
 Path of mesh: `<yourModDir>\archive\source\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.mesh`
 
-Path of gdb: `<yourModDir>\archive\raw\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.gdb`
+Path of glb: `<yourModDir>\archive\raw\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.glb`
 
-### Noesis (\*.fbx)
+### Autodesk (\*.fbx)
 
 {% hint style="danger" %}
 The [Noesis Import/Export Plugin](https://github.com/alphazolam/fmt\_CP77mesh?msclkid=384152bfaa5611ecbad0234dbe6a5c45) is required for this.
@@ -86,7 +86,7 @@ Find your mesh in Noesis. Right-click and select "Export".
 
 ## Blender: Saving the mesh
 
-### for WolvenKit (\*.gdb)
+### glTF Binary  (\*.glb)
 
 <figure><img src="https://i.imgur.com/eauWYiF.png" alt=""><figcaption><p>Export settings: "Tangents" must be checked</p></figcaption></figure>
 
@@ -98,7 +98,7 @@ I recommend disabling materials, especially if you've wildly messed around with 
 For WolvenKit > 8.8 and < 8.9, make sure to delete MeshName.Material.json from the raw directory.
 {% endhint %}
 
-### Noesis (\*.fbx)
+### Autodesk (\*.fbx)
 
 Simply export as fbx, Blender's standard settings are alright for Noesis.
 
@@ -108,16 +108,16 @@ Simply export as fbx, Blender's standard settings are alright for Noesis.
 If you are following a guide with pre-made resources and it tells you to import via Noesis, you'll want to follow the advice, as the elements in the exported structure will have different names.
 {% endhint %}
 
-### WolvenKit (\*.gdb)
+### glTF Binary (\*.glb)
 
-You should have overwritten your previous gdb export. With WKit's Import/Export tool, you can now use the **import** tab and get it back in.
+You should have overwritten your previous glb export. With WKit's Import/Export tool, you can now use the **import** tab and get it back in.
 
 {% hint style="info" %}
-WolvenKit will map any \*.gdb file under `raw` to the mesh with the same name under `source`.
+WolvenKit will map any \*.glb file under `raw` to the mesh with the same name under `source`.
 
 Example:
 
-`<yourModDir>\archive\raw\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.gdb`&#x20;
+`<yourModDir>\archive\raw\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.glb`&#x20;
 
 will be imported over
 
@@ -125,10 +125,10 @@ will be imported over
 {% endhint %}
 
 {% hint style="warning" %}
-WolvenKit refuses to import if the target mesh doesn't support all bones in the gdb or if your mesh's topology became corrupted.
+WolvenKit refuses to import if the target mesh doesn't support all bones in the glb or if your mesh's topology became corrupted.
 {% endhint %}
 
-### Noesis (\*.fbx)
+### Autodesk (\*.fbx)
 
 {% hint style="danger" %}
 The [Noesis Import/Export Plugin](https://github.com/alphazolam/fmt\_CP77mesh?msclkid=384152bfaa5611ecbad0234dbe6a5c45) is required for this.
@@ -150,11 +150,11 @@ There are a few differences between Noesis and WolvenKit when it comes to export
 
 <figure><img src="../../.gitbook/assets/import_noesis_glb_armature_differences.png" alt=""><figcaption><p>Note the differently named submeshes</p></figcaption></figure>
 
-|               | Noesis (fbx)        | WolvenKit (glb) |
-| ------------- | ------------------- | --------------- |
-| Armature      | Rotation W: 0       | Rotation W: 1   |
-|               | Rotation Z: -1      | Rotation Z: 0   |
-| Submesh names | submesh\_00\_LOD\_1 | submesh0        |
+|               | Autodesk (fbx) | glTF Binary (glb)   |
+| ------------- | -------------- | ------------------- |
+| Armature      | Rotation W: 0  | Rotation W: 1       |
+|               | Rotation Z: -1 | Rotation Z: 0       |
+| Submesh names | submesh0       | submesh\_00\_LOD\_1 |
 
 You can easily convert between the two formats by hand!
 
