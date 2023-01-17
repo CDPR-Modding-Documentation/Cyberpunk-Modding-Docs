@@ -22,6 +22,10 @@ description: How to create normal maps (bumpmaps) with Blender
 If you don't have Photoshop, Photopea offers almost the same thing online for free.
 {% endhint %}
 
+{% hint style="info" %}
+For a free tool for faster normal baking, check out [xnormal](https://xnormal.net/).
+{% endhint %}
+
 ## Step 0: Preparing the viewport
 
 1. [Export your mesh](exporting-and-importing-meshes.md) from WolvenKit
