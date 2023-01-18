@@ -931,9 +931,11 @@ Move the atelier file from your download folder to WolvenKit's `resources` folde
 
 ```
 resources
-  - MyTutorialAtelierStore-atelier-store.reds         << new file
   - yourModName.archive.xl  
   - yourModName.yaml         
+  r6
+    tweaks
+      - MyTutorialAtelierStore-atelier-store.reds         << new file
 ```
 
 Now, it's time to test! Install the mod, then start Cyberpunk via start menu shortcut.
