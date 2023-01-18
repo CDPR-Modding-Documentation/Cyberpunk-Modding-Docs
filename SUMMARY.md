@@ -41,6 +41,7 @@
     * [Weapons](modding-know-how/references-lists-and-overviews/files-for-modding/weapons.md)
     * [Vehicles](modding-know-how/references-lists-and-overviews/files-for-modding/vehicles.md)
   * [Character Creator <=> ent/app](https://noraleedoes.neocities.org/npv/npv\_part\_picker)
+  * [Materials](modding-know-how/references-lists-and-overviews/materials.md)
 * [3d Modelling](modding-know-how/3d-modelling/README.md)
   * [Exporting and importing meshes](modding-know-how/3d-modelling/exporting-and-importing-meshes.md)
   * [Exporting rigs and anims](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)
