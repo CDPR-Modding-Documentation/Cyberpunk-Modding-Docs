@@ -79,7 +79,7 @@ This is where the magic happens.
 
 <figure><img src="../../.gitbook/assets/app_modification_guide_delete_ring.png" alt=""><figcaption><p>no more ring!</p></figcaption></figure>
 
-### Animations: you want to avoid them
+### Animations: if you can't avoid them, copy them as well!
 
 Anything of the type `entAnimatedComponent` means that components are **animated**. That's mostly the case for physics-enabled stuff influenced by gravity, such as coats, jackets, or long hair.&#x20;
 
@@ -88,6 +88,8 @@ Physics gave us the atomic bomb. _(It also gave us computers, but this is beside
 {% endhint %}
 
 Animations are usually unique to meshes on a by-pixel basis and do not react kindly to edits or swaps. (Try splitting the obi from Saburo's kimono into its own submesh if you don't believe me).&#x20;
+
+If you copy an animated component (e.g. Johnny's vest), then you need to copy the corresponding `entAnimatedComponent` as well, or the mesh won't move.
 
 <figure><img src="../../.gitbook/assets/app_modification_guide_physics.png" alt=""><figcaption><p>Any of these are an indicator that there is TROUBLE</p></figcaption></figure>
 
@@ -194,3 +196,11 @@ In the app file, duplicate one of the already existing appearances, and change t
 {% hint style="success" %}
 Congratulations — that's it! Install your mod and go testing!
 {% endhint %}
+
+## Troubleshooting
+
+### My new component won't move at all!
+
+You may have forgotten to copy the animation file. Look for an **entAnimatedComponent** inside the .app — they're usually called something like `xxx_dangle(s)` or `collar.`[ (See here)](appearances-change-the-looks.md#animations-if-you-cant-avoid-them-copy-them-as-well)
+
+For further troubleshooting steps, see [here](../../modding-know-how/3d-modelling/troubleshooting-your-mesh-edits.md).
