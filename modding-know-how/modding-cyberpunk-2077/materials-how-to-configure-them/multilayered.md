@@ -24,14 +24,14 @@ The multilayered shader is composed of three distinct parts:
    [**.mltemplate files**](multilayered.md#what-is-the-mltemplate)
 
 {% hint style="info" %}
-For editing mlsetup files, you'll want to use the [MlSetupBuilder](../../modding-know-how/modding-tools/mlsetup-builder.md) ([download](https://github.com/Neurolinked/MlsetupBuilder))
+For editing mlsetup files, you'll want to use the [MlSetupBuilder](../../modding-tools/mlsetup-builder.md) ([download](https://github.com/Neurolinked/MlsetupBuilder))
 {% endhint %}
 
 ## What is the mlmask?
 
 **MLMASK** files are the core element of the substance-style integration. These files contain an array of up to 20 textures which are used to control the blending between pre-defined surfaces called **mltemplates**. These mask textures are more-or-less 1:1 with substance-style layer masks.
 
-![Demonstration of how mlmask files are used to mask meshes. Each mask represents a separate surface.](../../.gitbook/assets/mlmask\_demo.gif)
+![Demonstration of how mlmask files are used to mask meshes. Each mask represents a separate surface.](../../../.gitbook/assets/mlmask\_demo.gif)
 
 As shown above, each mesh using the multilayer shader uses a unique **mlmask** file that is hand authored by CDPR artists. To take effect in game, each mask file is linked by the **mlsetup** file.
 
@@ -39,7 +39,7 @@ As shown above, each mesh using the multilayer shader uses a unique **mlmask** f
 
 **MLSETUP** files are fairly self-explanatory when considering the name, multilayer setup. These files correspond with an **mlmask** file and are responsible for setting up parameters for each layer from the mlmask. Each layer within an mlsetup contains information very similar to materials or shaders.
 
-![File structure of mlsetup viewed with WolvenKit](<../../.gitbook/assets/MLSETUP example.png>)
+![File structure of mlsetup viewed with WolvenKit](<../../../.gitbook/assets/MLSETUP example.png>)
 
 ### MLSETUP Definition
 
@@ -68,9 +68,9 @@ As shown above, each mesh using the multilayer shader uses a unique **mlmask** f
 
 **MLTEMPLATE** files are the _actual_ visible surfaces that appear on meshes using the **multilayered.mt** supershader. The multilayer templates include a wide variety of surfaces such as steel, iron, aluminum, plastic, nylon, linoleum, carpet, soil, grass, rubber, concreate, and everything else imaginable. Each template can use a unique color, normal, roughness, and metallic PBR texture. The mltemplate files are selected from within each layer definition of an **mlsetup** file. Meshes can blend up to 20 mltemplate surfaces into a single material by masking them with the **mlmask**.
 
-![File structure of mltemplate viewed with WolvenKit](<../../.gitbook/assets/MLTEMPLATE example.png>)
+![File structure of mltemplate viewed with WolvenKit](<../../../.gitbook/assets/MLTEMPLATE example.png>)
 
-![A sample preview of some materials created by mltemplate files](<../../.gitbook/assets/MLTEMPLATE previews.png>)
+![A sample preview of some materials created by mltemplate files](<../../../.gitbook/assets/MLTEMPLATE previews.png>)
 
 ## Technical Details
 

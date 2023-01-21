@@ -40,15 +40,15 @@ Instanced shaders for mesh materials
 
 ### MLMASK (multilayered mask)
 
-Mask component of the [**Multilayer supershader**](shaders/multilayered.md)****
+Mask component of the [**Multilayer supershader**](../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)****
 
 ### MLSETUP (multilayered setup)
 
-Material setup component of the [**Multilayer supershader**](shaders/multilayered.md)****
+Material setup component of the [**Multilayer supershader**](../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)****
 
 ### MLTEMPLATE (multilayered template)
 
-Pre-defined tiling surface component of the [**Multilayer supershader**](shaders/multilayered.md)****
+Pre-defined tiling surface component of the [**Multilayer supershader**](../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)****
 
 ### HP (hair profile)
 

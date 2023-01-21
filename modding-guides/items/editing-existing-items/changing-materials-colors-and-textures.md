@@ -17,9 +17,13 @@ It uses the following versions:
 * [MLSetupBuilder](../../../modding-know-how/modding-tools/mlsetup-builder.md): [1.6.5](https://github.com/Neurolinked/MlsetupBuilder) (older versions won't be compatible with WKit 8.7 and game version 1.6)
 
 {% hint style="info" %}
-In general, an item's appearance is determined by a [mlsetup](../../../developers/shaders/multilayered.md#what-is-the-mlsetup) file containing several material layers.&#x20;
+In general, an item's appearance is determined by a [mlsetup](../../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md#what-is-the-mlsetup) file containing several material layers.&#x20;
 
-Which of these layers affects which part of your mesh will be determined in the corresponding [mlmask](../../../developers/shaders/multilayered.md#what-is-the-mlmask) file.
+Which of these layers affects which part of your mesh will be determined in the corresponding [mlmask](../../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md#what-is-the-mlmask) file.
+{% endhint %}
+
+{% hint style="success" %}
+For an overview of base materials and example files, you can check [here](../../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md).
 {% endhint %}
 
 ## **Step 1: Finding your item**
@@ -74,7 +78,13 @@ You will (hopefully) see a material with three entries in `values` (order doesn'
 Most materials in Cyberpunk use the `engine\materials\multilayered.mt` material and assign colours via an .mlsetup file. If you're used to textures, you are probably going to hate this. As somebody who has been where you are: **the mlsetup system is cool**. Genuinely. Give it a chance!
 {% endhint %}
 
-#### multilayered.mt exporting the .mlsetup
+### multilayered material&#x20;
+
+{% hint style="info" %}
+If you would rather use a textured material, check [here](changing-materials-colors-and-textures.md#other-materials-textured).
+{% endhint %}
+
+#### Exporting the .mlsetup
 
 We change the appearance by editing the **MultilayerSetup**:
 
@@ -89,31 +99,8 @@ Move your new json file in the same folder as the multilayer setup.&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
 
-
-
 {% hint style="info" %}
 The json file will be named `ml_t2_002_ma_vest__puffy_bwstripes.mlsetup.json` (`originalFileName.originalExtension.json`)&#x20;
-{% endhint %}
-
-#### Other materials: Textured
-
-The most commonly used material for anything textured is `engine\materials\metal_base.remt`. Despite its name, this material isn't necessarily metallic.
-
-<figure><img src="../../../.gitbook/assets/texture_guide_metal_remt.png" alt=""><figcaption><p>Find the BaseColor texture, and add it to your project. Then export it to *.png via the WolvenKit exporter</p></figcaption></figure>
-
-{% hint style="info" %}
-The .xbm is a container around the texture. Export the xbm to png via WolvenKit.
-{% endhint %}
-
-{% hint style="warning" %}
-When re-importing textures, make sure that you use the correct `isGamma` setting:
-
-normals: **false**\
-diffuse/albedo: **true**\
-anything that is used in .inkatlas files: **true**
-
-****\
-****If your texture has brightness issues in-game, toggle around the isGamma flag during import.
 {% endhint %}
 
 ## Step 3: Editing the .mlsetup file

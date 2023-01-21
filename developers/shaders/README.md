@@ -26,6 +26,6 @@ The other approach which is just as, or perhaps more common is chaining several 
 [shader-docs.md](shader-docs.md)
 {% endcontent-ref %}
 
-{% content-ref url="multilayered.md" %}
-[multilayered.md](multilayered.md)
+{% content-ref url="../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md" %}
+[multilayered.md](../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)
 {% endcontent-ref %}
