@@ -28,16 +28,16 @@ For a free tool for faster normal baking, check out [xnormal](https://xnormal.ne
 
 ## Step 0: Preparing the viewport
 
-1. [Export your mesh](../exporting-and-importing-meshes.md) from WolvenKit
+1. [Export your mesh](exporting-and-importing-meshes.md) from WolvenKit
 2. Import it into Blender
 3. Select the object
 4. Pick a material:\
-   ![](../../../.gitbook/assets/normal\_maps\_assign\_material.png)
+   ![](../../.gitbook/assets/normal\_maps\_assign\_material.png)
 5. Switch to the "Shading" perspective and add an "Image Texture". Select your image by clicking the corresponding button:\
-   ![](../../../.gitbook/assets/normal\_maps\_shading\_1.png)
+   ![](../../.gitbook/assets/normal\_maps\_shading\_1.png)
 6. The viewport should already be set to "Solid". Click on the dropdown arrow next to the options and select "Texture" from the list.&#x20;
 
-<figure><img src="../../../.gitbook/assets/normal_maps_viewport_shading.png" alt=""><figcaption><p>You will now get the selected texture directly as an overlay.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/normal_maps_viewport_shading.png" alt=""><figcaption><p>You will now get the selected texture directly as an overlay.</p></figcaption></figure>
 
 ## Step 1: The Displacement Map
 
@@ -59,7 +59,7 @@ The displacement image should be saved in 32 bit image depth rather than the usu
 
 The Texture Paint perspective lets you draw directly on your mesh's surface:&#x20;
 
-<figure><img src="../../../.gitbook/assets/normal_maps_texture_paint.png" alt=""><figcaption><p>You will probably want to fix this up in Photoshop (Photopea).</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/normal_maps_texture_paint.png" alt=""><figcaption><p>You will probably want to fix this up in Photoshop (Photopea).</p></figcaption></figure>
 
 ### UV edit mode
 
@@ -67,10 +67,10 @@ To see how the mesh is projected on your image, you can check out the UV edit mo
 
 Switch to "Edit" (shortcut: Tab) and select all vertices (shortcut: ctrl+A). You will now see them projected on the texture:&#x20;
 
-<figure><img src="../../../.gitbook/assets/normal_maps_uv_editing.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/normal_maps_uv_editing.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Feel free to change the UV mapping. You can [export](../exporting-and-importing-meshes.md#wolvenkit-.gdb-1) this back into Cyberpunk!
+Feel free to change the UV mapping. You can [export](exporting-and-importing-meshes.md#wolvenkit-.gdb-1) this back into Cyberpunk!
 {% endhint %}
 
 ## Step 2: High Poly and Low Poly meshes
@@ -103,9 +103,9 @@ I create a duplicate of my entire armature, just to make certain that I don't ac
       _**Strength:** -0.002 (you can play around with this)_\
       _**Midlevel:** 0.000_
 6. For the "Displace" Modifier, create a new picture, then click on the two sliders to show this texture in the textures tab\
-   ![](../../../.gitbook/assets/normal\_maps\_modifiers.png)
+   ![](../../.gitbook/assets/normal\_maps\_modifiers.png)
 7. Load your blurred texture:\
-   ![](../../../.gitbook/assets/normal\_maps\_texture\_tab.png)
+   ![](../../.gitbook/assets/normal\_maps\_texture\_tab.png)
 
 {% hint style="success" %}
 If you hide your "Low Poly" mesh, the modifiers should now let you see creases on your high poly object! Exciting!!
@@ -121,7 +121,7 @@ Switch to the "Shading" perspective again. Add another image texture and create 
 
 **Remove the link to your material's normal input** - otherwise, it'll bake your normal map into your normal map, and the results won't be pretty.
 
-<figure><img src="../../../.gitbook/assets/normal_maps_shading_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/normal_maps_shading_2.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Prepare the low poly mesh
 
@@ -169,7 +169,7 @@ Find the "Render Properties" tab.
    8. **Margin / Size:** 16px (or whatever suits you)
 3. **Save. Your. File.**
 
-<figure><img src="../../../.gitbook/assets/normal_maps_final.png" alt=""><figcaption><p>Things are looking like this now? Great, then click "Bake"!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/normal_maps_final.png" alt=""><figcaption><p>Things are looking like this now? Great, then click "Bake"!</p></figcaption></figure>
 
 {% hint style="info" %}
 Baking takes time (several minutes) and most of your PC's free resources. This is normal.&#x20;
@@ -177,25 +177,29 @@ Baking takes time (several minutes) and most of your PC's free resources. This i
 
 If everything went well, the image editor on the bottom left will change and display your normal map.
 
-<figure><img src="../../../.gitbook/assets/normals_a_good_result (1).png" alt=""><figcaption><p>A normal map with no artifacts or distortions: this is the kind of result we want.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/normals_a_good_result (1).png" alt=""><figcaption><p>A normal map with no artifacts or distortions: this is the kind of result we want.</p></figcaption></figure>
 
 You can export the image via the hamburger menu in the image editor (bottom left panel of the screenshot).
 
 ## Troubleshooting
 
+{% hint style="info" %}
+This troubleshooting section is for the baking process — the one for normal map textures is [here.](self-made-normal-maps/troubleshooting-normal-maps.md)
+{% endhint %}
+
 ### My normal map has yellow stripes!
 
-Make sure to [remove the normal mapping](./#step-3-prepare-the-material) from your material.
+Make sure to [remove the normal mapping](self-made-normal-maps.md#step-3-prepare-the-material) from your material.
 
 ### My normal map has yellow spots!
 
-{% hint style="info" %}
+{% hint style="success" %}
 First of all, make sure that all your normals are pointing the right way. In the viewport editor, click the "Show Overlays" button and select "Geometry -> Face Orientation" near the bottomn. Blue means outside, red means inside.
 {% endhint %}
 
 The baking process works by capturing the rays of light that bounce between the high poly mesh and the low poly mesh. If you have artifacts, then some of those rays bounced off something else first, which makes them register as inverted. That's the reason why steep creases are a problem — a ray of light might get caught in there and be flipped around.&#x20;
 
-Check the [troubleshooting step for artifacts](./#my-normal-map-has-artifacts).
+Check the [troubleshooting step for artifacts](self-made-normal-maps.md#my-normal-map-has-artifacts).
 
 ### My normal map has artifacts!
 
@@ -206,5 +210,5 @@ Check the [troubleshooting step for artifacts](./#my-normal-map-has-artifacts).
 
 ### Blender complains about my meshes
 
-Restart [Step 4](./#step-4-prepare-the-low-poly-mesh) and make sure that you haven't deleted or altered any vertices, other than scaling/inflating the low poly mesh.
+Restart [Step 4](self-made-normal-maps.md#step-4-prepare-the-low-poly-mesh) and make sure that you haven't deleted or altered any vertices, other than scaling/inflating the low poly mesh.
 
