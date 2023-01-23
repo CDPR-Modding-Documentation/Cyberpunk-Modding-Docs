@@ -8,10 +8,18 @@ This wiki is under heavy construction! Do you see something missing, incorrect, 
 [modding-cyberpunk-2077](modding-know-how/modding-cyberpunk-2077/)
 {% endcontent-ref %}
 
+{% content-ref url="help/faq.md" %}
+[faq.md](help/faq.md)
+{% endcontent-ref %}
+
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)
 {% endcontent-ref %}
 
-{% content-ref url="help/faq.md" %}
-[faq.md](help/faq.md)
+{% content-ref url="modding-guides/community-guides/" %}
+[community-guides](modding-guides/community-guides/)
+{% endcontent-ref %}
+
+{% content-ref url="modding-know-how/references-lists-and-overviews/" %}
+[references-lists-and-overviews](modding-know-how/references-lists-and-overviews/)
 {% endcontent-ref %}
