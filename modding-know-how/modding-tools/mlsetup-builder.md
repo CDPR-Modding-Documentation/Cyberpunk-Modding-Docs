@@ -38,9 +38,15 @@ Set the following values:
 |                      |                                                                                                                    |
 | -------------------- | ------------------------------------------------------------------------------------------------------------------ |
 | Game archives folder | C:\Your\Path\To\Cyberpunk 2077\archive\pc\content                                                                  |
-| uncook folder        | D:\Your\Extraction\Folder                                                                                          |
+| uncook folder        | You can find this folder in your WolvenKit's settings as "Depot Path"                                              |
 | Wolvenkit Depot Path | You can find this folder in your WolvenKit's settings as "Depot Path"                                              |
 | Wolvenkit-CLI.exe    | The executable file under the extracted [WolvenKit CLI](https://github.com/WolvenKit/WolvenKit/releases) directory |
+
+{% hint style="danger" %}
+`Uncook Folder` and **Wolvenkit Depot Path** have to be the same folder!
+
+For MLSB versions <= 1.6.6, you need to use [WolvenKit.Console Version 1.5.2](https://github.com/WolvenKit/WolvenKit/releases/tag/8.4.3)
+{% endhint %}
 
 {% hint style="info" %}
 Starting with version 1.6.5, adding the WKit.CLI enables the auto-export function, where MLSB will generate an \*.mlsetup file when you save an \*.mlsetup.json
