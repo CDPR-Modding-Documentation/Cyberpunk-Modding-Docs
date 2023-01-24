@@ -22,7 +22,11 @@ MLSB can be downloaded from the releases section on GitHub, the latest release t
 MLSB lets you edit mlsetup files without doing this, but you'll have neither auto-generated mlsetup files, nor previews and material previews.
 {% endhint %}
 
+{% hint style="danger" %}
+Before you do this, you should have extracted a [partial depot](https://wiki.redmodding.org/wolvenkit/guides/modding-community/eli5-getting-started/create-depot#steps-partial-depot).
+
 Required: [WolvenKit CLI](https://github.com/WolvenKit/WolvenKit/releases) (not identical to normal WolvenKit)
+{% endhint %}
 
 Open the preferences via "File" -> "Preferences".&#x20;
 
