@@ -523,6 +523,8 @@ The second part is what you do every time you want to add a new text, such as na
 
 ### Edit the mesh\_entity.ent
 
+<figure><img src="../../.gitbook/assets/archive_xl_mesh_ent.png" alt=""><figcaption><p>Make very sure to grab the right kind of .ent file!</p></figcaption></figure>
+
 Find the first component of the type `entGarmentSkinnedMeshComponent`. Set the following values:
 
 ```
