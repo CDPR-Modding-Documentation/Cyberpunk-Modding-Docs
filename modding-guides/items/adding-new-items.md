@@ -77,6 +77,8 @@ Now, add the following files to your project and move them to `tutorial\my_shirt
 For 3., your entity file needs to correspond to your item's **body part**. If you put a shirt in an entity file for shoes, it will deform badly once you put it on.\
 \
 You can find the entity files in `base\characters\garment\player_equipment`, where they are sorted in subfolders by body part.
+
+**You also need to grab a player .ent file rather than an NPC one!**
 {% endhint %}
 
 and the **operative** files (these go into the subfolder `tutorial\ops`):
