@@ -965,6 +965,27 @@ You have ignored the [hint box](adding-new-items.md#get-the-files-create-the-str
 You can find out which entity file your item uses by right-clicking on your mesh and selecting "find files using this". Add the .ent file to the list and open it in WolvenKit. Then, [replace the contents](../npcs/appearances-change-the-looks.md#safely-adding-components) of the "components" array with those of an .ent file from the correct folder — don't forget to change the path to your mesh again!
 {% endhint %}
 
+### I spawn my item, but nothing happens!
+
+{% hint style="warning" %}
+Before you start digging into your file structure, check if there are any leftover yml files from earlier versions/deploys in your tweaks directory. Do a full text search in e.g. Notepad++ in any files in the folder with the name of the item you want to spawn.
+{% endhint %}
+
+If no additional yml files are messing things up, then the error is somewhere in the first part of the chain and relatively easy to fix:
+
+<figure><img src="https://camo.githubusercontent.com/f8ee9b6e640405d93e9d543b4ac488e7644a5976c74552a54d288ac9b81f182a/68747470733a2f2f692e696d6775722e636f6d2f517a4d6e7645762e706e67" alt=""><figcaption></figcaption></figure>
+
+Check the following places:
+
+* `yourmodname.archive.xl`:
+  * Is the indentation correct, as shown in the picture?
+  * Does the value for `entityName` have a corresponding entry in the factory (`my_cool_new_items.csv`)?
+  * Does it point at the correct rootentity(`tutorial\myshirt\rootentity.ent`), or did you rename or move it?
+  * Did you make any typos?
+* `rootentity.ent:`
+  * Is the spelling for the key you defined after `displayName` and `localizedDescription` identical to the one in the json file?
+  * Are you using any **suffixes**? Are you using the correct ones? Try creating a fall-back entry without any suffixes.
+
 ### My item shows empty text instead of name/description!
 
 Something went wrong with your json file:
@@ -985,22 +1006,7 @@ If there are no errors in any of the log files, check the following places:
   * Did you set the femaleVariant (default)?
   * Are you using quotation marks? If so, switch to singlequotes!
 
-### I spawn my item, but nothing happens!
 
-That's relatively easy to fix — the error is somewhere in the first part of the chain:
-
-<figure><img src="https://camo.githubusercontent.com/f8ee9b6e640405d93e9d543b4ac488e7644a5976c74552a54d288ac9b81f182a/68747470733a2f2f692e696d6775722e636f6d2f517a4d6e7645762e706e67" alt=""><figcaption></figcaption></figure>
-
-Check the following places:
-
-* `yourmodname.archive.xl`:
-  * Is the indentation correct, as shown in the picture?
-  * Does the value for `entityName` have a corresponding entry in the factory (`my_cool_new_items.csv`)?
-  * Does it point at the correct rootentity(`tutorial\myshirt\rootentity.ent`), or did you rename or move it?
-  * Did you make any typos?
-* `rootentity.ent:`
-  * Is the spelling for the key you defined after `displayName` and `localizedDescription` identical to the one in the json file?
-  * Are you using any **suffixes**? Are you using the correct ones? Try creating a fall-back entry without any suffixes.
 
 ### The item spawns, but…
 
