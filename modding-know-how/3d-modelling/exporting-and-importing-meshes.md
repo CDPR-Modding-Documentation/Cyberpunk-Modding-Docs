@@ -162,4 +162,6 @@ You can easily convert between the two formats by hand!
 
 ## Troubleshooting
 
+If your mesh won't export, try exporting it [without materials](exporting-and-importing-meshes.md#exporting-with-materials).&#x20;
+
 For a list of troubleshooting steps, check the [corresponding wiki page](troubleshooting-your-mesh-edits.md).
