@@ -53,7 +53,8 @@
     * [Troubleshooting normal maps](modding-know-how/3d-modelling/self-made-normal-maps/troubleshooting-normal-maps.md)
   * [Troubleshooting your mesh edits](modding-know-how/3d-modelling/troubleshooting-your-mesh-edits.md)
   * [Garment Support: How does it work?](modding-know-how/3d-modelling/garment-support-how-does-it-work.md)
-* [User guide: Troubleshooting](modding-know-how/user-guide-troubleshooting.md)
+* [User guide: Troubleshooting](modding-know-how/user-guide-troubleshooting/README.md)
+  * [User guide: enabling REDmods](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/frameworks/redmod/usage#deploying-mods-and-starting-the-game)
 
 ## Modding: Guides
 
