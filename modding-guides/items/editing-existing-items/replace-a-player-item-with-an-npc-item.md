@@ -18,6 +18,8 @@ Other relevant know-how for this process:&#x20;
 * [Finding an item's spawn code and mesh](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials)
 * [Editing mesh appearances](changing-materials-colors-and-textures.md)
 
+For a guide how to import meshes into Cyberpunk, check [here](../../../modding-know-how/3d-modelling/exporting-and-importing-meshes.md).
+
 ## Step 1: Replace the mesh
 
 Find the mesh that you want to use ("**target mesh**") and replace it with the one that you want to switch in ("**source mesh**").

@@ -48,6 +48,7 @@
 * [3d Modelling](modding-know-how/3d-modelling/README.md)
   * [Exporting and importing meshes](modding-know-how/3d-modelling/exporting-and-importing-meshes.md)
   * [Exporting rigs and anims](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)
+  * [Meshes and Armatures: Rigging](modding-know-how/3d-modelling/meshes-and-armatures-rigging.md)
   * [Self-made normal maps](modding-know-how/3d-modelling/self-made-normal-maps.md)
     * [Troubleshooting normal maps](modding-know-how/3d-modelling/self-made-normal-maps/troubleshooting-normal-maps.md)
   * [Troubleshooting your mesh edits](modding-know-how/3d-modelling/troubleshooting-your-mesh-edits.md)
