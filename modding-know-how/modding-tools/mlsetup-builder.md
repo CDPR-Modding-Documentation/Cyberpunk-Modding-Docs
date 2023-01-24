@@ -12,7 +12,7 @@ description: Editing item materials
 
 ## Download
 
-MLSB can be downloaded from the releases section on GitHub, the latest release this documentation refers to is the version 1.6.5
+MLSB can be downloaded from the releases section on GitHub, the latest release this documentation refers to is the version 1.6.6
 
 {% embed url="https://github.com/Neurolinked/MlsetupBuilder/releases/" %}
 
@@ -22,10 +22,13 @@ MLSB can be downloaded from the releases section on GitHub, the latest release t
 MLSB lets you edit mlsetup files without doing this, but you'll have neither auto-generated mlsetup files, nor previews and material previews.
 {% endhint %}
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 Before you do this, you should have extracted a [partial depot](https://wiki.redmodding.org/wolvenkit/guides/modding-community/eli5-getting-started/create-depot#steps-partial-depot).
+{% endhint %}
 
-Required: [WolvenKit CLI](https://github.com/WolvenKit/WolvenKit/releases) (not identical to normal WolvenKit)
+{% hint style="danger" %}
+This process requires [WolvenKit CLI](https://github.com/WolvenKit/WolvenKit/releases) (not identical to normal WolvenKit).\
+ATTENTION: For MLSB versions <= 1.6.6, you need to use [WolvenKit.Console Version 1.5.2](https://github.com/WolvenKit/WolvenKit/releases/tag/8.4.3)
 {% endhint %}
 
 Open the preferences via "File" -> "Preferences".&#x20;
