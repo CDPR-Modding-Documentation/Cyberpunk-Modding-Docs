@@ -40,7 +40,11 @@ Head to WolvenKit and search for the first part of the BaseID:
 
 <figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Search WolvenKit for the first part of the BaseID</p></figcaption></figure>
 
-You will find an **entity file** and an **appearance file**.&#x20;
+You will find at least one **entity file** and an **appearance file**.&#x20;
+
+{% hint style="warning" %}
+If you find multiple files, you need to open the correct one. You can identify those by the folder path: for player meshes, the name of the last folder will contain either `_pwa_` or `_pma_`, and the path will include either that or `player`.
+{% endhint %}
 
 ### The .app
 
