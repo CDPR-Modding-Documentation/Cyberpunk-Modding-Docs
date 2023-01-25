@@ -72,10 +72,12 @@ You will (hopefully) see a material with three entries in `values` (order doesn'
 | MultilayerMask  | `base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\ml_t2_002_ma_vest__puffy_default.mlmask`    |
 | GlobalNormal    | `base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\t2_002_ma_vest__puffy_n01.xbm`              |
 
-<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+For the purpose of this guide, all that matters is the mlsetup, which determines all the individual material assignments in this CMaterial. For an explanation of the shader, check [here](../../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md).
+
+<figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>This is the path to the mlsetup file. By editing this, you can change colours and surface materials.</p></figcaption></figure>
 
 {% hint style="info" %}
-Most materials in Cyberpunk use the `engine\materials\multilayered.mt` material and assign colours via an .mlsetup file. If you're used to textures, you are probably going to hate this. As somebody who has been where you are: **the mlsetup system is cool**. Genuinely. Give it a chance!
+Most materials in Cyberpunk use the `engine\materials\multilayered.mt` material and assign colours via an .mlsetup file. If you're used to textures, you are probably going to hate this. As somebody who has been where you are: **the mlsetup system is cool**. Genuinely. Give it a chance!&#x20;
 {% endhint %}
 
 ### multilayered material&#x20;
@@ -84,9 +86,13 @@ Most materials in Cyberpunk use the `engine\materials\multilayered.mt` material 
 If you would rather use a textured material, check [here](changing-materials-colors-and-textures.md#other-materials-textured).
 {% endhint %}
 
+A multilayered material consists of multiple layers of materials, projected on the mesh through the mlmask: white parts get affected, black parts are blocked out. (Again, for a full explanation, check [here](../../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)).&#x20;
+
 #### Exporting the .mlsetup
 
-We change the appearance by editing the **MultilayerSetup**:
+We're going to edit the mlsetup file and then import it back, causing a global change in the appearances of every item which uses this particular material file. (If you don't want that, see [Custompathing](changing-materials-colors-and-textures.md#step-4-optional-custompathing) below).
+
+We do that by editing the **MultilayerSetup**:
 
 1. Find the file and add it to your project.
 2. Right-click the file and select "Convert to JSON".
@@ -118,7 +124,7 @@ If you want to see which layers correspond to which part of the mesh, you can lo
 <figure><img src="https://i.imgur.com/nNmwlBD.png" alt=""><figcaption><p>Optional: Find your mesh in the library</p></figcaption></figure>
 
 {% hint style="info" %}
-This step requires the tool to be [set up correctly](../../../modding-know-how/modding-tools/mlsetup-builder.md), which is not part of this guide. Fortunately, it's also optional.
+This step requires the tool to be [set up correctly](../../../modding-know-how/modding-tools/mlsetup-builder.md), which is not part of this guide. Fortunately, it's also optional, as you can tweak values around without seeing the affected areas or material previews.
 {% endhint %}
 
 Change the colours and materials to whatever you want.
