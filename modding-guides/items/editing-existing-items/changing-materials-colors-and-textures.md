@@ -44,6 +44,10 @@ Add the item to your project and open it in WolvenKit. You want the original to 
 
 ## Step 2: Finding the correct appearance
 
+{% hint style="info" %}
+If you don't know which appearance you want to edit, check [here](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app).&#x20;
+{% endhint %}
+
 We will change the appearance bwstripes, which is used by Vest\_17\_basic\_01:
 
 <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption><p>find material bwstripes and remember the name of the chunkMaterial</p></figcaption></figure>
