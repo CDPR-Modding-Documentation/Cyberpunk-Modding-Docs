@@ -24,3 +24,6 @@ Vertex weights are assigned for every vertex group, and each vertex will move on
 To preview the deform in Blender, you can select the mesh's parent armature and enter the "Pose Mode". There, you can either apply an [exported animation](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims), or select individual bones and rotate/move them. The **Armature modifier** will morph your mesh according to the pose, letting you spot errors much faster than trying to debug them in-game.
 {% endhint %}
 
+{% hint style="info" %}
+You can see a video of the process [here](../../modding-guides/npcs/) (courtesy of Vesna).&#x20;
+{% endhint %}
