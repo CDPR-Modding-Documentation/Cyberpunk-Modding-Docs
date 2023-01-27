@@ -62,7 +62,7 @@ We will change the appearance bwstripes, which is used by Vest\_17\_basic\_01:
 
 This vest has only one chunkMask, so there's only one material. Remember its name and find it in the `localMaterialBuffer`:
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>It's ml_t2_002_ma_vest__puffy_bwstripes</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (3).png" alt=""><figcaption><p>It's ml_t2_002_ma_vest__puffy_bwstripes</p></figcaption></figure>
 
 {% hint style="warning" %}
 Most meshes have their materials under `localMaterialBuffer/materials`. However, some of them (especially those with physics) use `preloadLocalMaterialInstances` instead.
