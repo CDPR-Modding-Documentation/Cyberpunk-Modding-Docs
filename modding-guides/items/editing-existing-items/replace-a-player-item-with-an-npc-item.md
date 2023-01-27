@@ -20,6 +20,10 @@ Other relevant know-how for this process:&#x20;
 
 For a guide how to import meshes into Cyberpunk, check [here](../../../modding-know-how/3d-modelling/exporting-and-importing-meshes.md).
 
+{% hint style="danger" %}
+Make sure that you replace an item that you can actually spawn — not all items in V's folder are actually spawn-able.&#x20;
+{% endhint %}
+
 ## Step 1: Replace the mesh
 
 Find the mesh that you want to use ("**target mesh**") and replace it with the one that you want to switch in ("**source mesh**").

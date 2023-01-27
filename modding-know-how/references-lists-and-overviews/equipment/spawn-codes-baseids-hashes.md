@@ -14,7 +14,11 @@ A selection of lists for looking up item codes. Alternatively, you can browse th
 | [Google Sheet](https://docs.google.com/spreadsheets/d/1UeEA0ONMtF6CNl1Cutkb4DNJ\_JiabhstfwiaA94m0ds/edit)                                       | Google Sheets (August 2022), supports filtering |
 |                                                                                                                                                 |                                                 |
 
-
+{% hint style="danger" %}
+Player equipment only: \
+\
+Not all items that you find in the player folder are actually hooked up to spawn. If you can't [find an app file](spawn-codes-baseids-hashes.md#the-.app), you ran into one of those. &#x20;
+{% endhint %}
 
 ## From a BaseID to an item's materials
 
