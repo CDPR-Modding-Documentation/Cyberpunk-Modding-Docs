@@ -24,6 +24,10 @@ A white mlMask will apply the selected material to the whole surface of the mesh
 
 For textures, use `engine\materials\metal_base.remt`
 
+## Cyberspace Material
+
+Works exactly like multilayered, but uses `base\characters\common\cyberspace\silverhand_overlay_cyberspace_mml.mi` instead.
+
 ## Metal Materials
 
 |                                                                                |                                                                            |

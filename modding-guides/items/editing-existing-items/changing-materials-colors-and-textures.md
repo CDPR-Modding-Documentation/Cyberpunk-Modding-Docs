@@ -46,27 +46,27 @@ Add the item to your project and open it in WolvenKit. You want the original to 
 
 {% hint style="info" %}
 If you don't know which appearance you want to edit, check [here](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app).&#x20;
+
+`default` is the fallback appearance that'll be used if anything can't be resolved by name or index. This is the reason why most item swap mods give you only a single appearance - people didn't set up the [variants](replace-a-player-item-with-an-npc-item.md).
 {% endhint %}
 
-We will change the appearance bwstripes, which is used by Vest\_17\_basic\_01:
+We will change the appearance `bwstripes`, which is used by `Vest_17_basic_01`:
 
 <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption><p>find material bwstripes and remember the name of the chunkMaterial</p></figcaption></figure>
 
 {% hint style="info" %}
-`chunkMaterials` corresponds to the `chunkMasks` (submeshes).&#x20;
+`chunkMaterials` corresponds to the `chunkMasks`: For submesh\_00, the material at array position 0 will be used, for submesh\_01 the material at position 1, and so on.
 {% endhint %}
 
-{% hint style="info" %}
-`default` is the fallback appearance that'll be used if anything can't be resolved by name or index. This is the reason why most item swap mods give you only a single appearance - people didn't set up the [variants](replace-a-player-item-with-an-npc-item.md).
-{% endhint %}
+This vest has only one chunkMask, so there's only one material.&#x20;
 
-This vest has only one chunkMask, so there's only one material. Remember its name and find it in the `localMaterialBuffer`:
-
-<figure><img src="../../../.gitbook/assets/image (3) (3).png" alt=""><figcaption><p>It's ml_t2_002_ma_vest__puffy_bwstripes</p></figcaption></figure>
+Remember its name (`ml_t2_002_ma_vest__puffy_bwstripes`) and find the corresponding material definition:
 
 {% hint style="warning" %}
 Most meshes have their materials under `localMaterialBuffer/materials`. However, some of them (especially those with physics) use `preloadLocalMaterialInstances` instead.
 {% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image (3) (3).png" alt=""><figcaption><p>It's ml_t2_002_ma_vest__puffy_bwstripes</p></figcaption></figure>
 
 You will (hopefully) see a material with three entries in `values` (order doesn't matter):
 
@@ -86,11 +86,15 @@ Most materials in Cyberpunk use the `engine\materials\multilayered.mt` material 
 
 ### multilayered material&#x20;
 
-{% hint style="info" %}
+{% hint style="success" %}
 If you would rather use a textured material, check [here](changing-materials-colors-and-textures.md#other-materials-textured).
 {% endhint %}
 
 A multilayered material consists of multiple layers of materials, projected on the mesh through the mlmask: white parts get affected, black parts are blocked out. (Again, for a full explanation, check [here](../../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)).&#x20;
+
+{% hint style="info" %}
+You can turn any multilayered material into its cyberspace variant by changing the material from `engine\materials\multilayered.mt` to `base\characters\common\cyberspace\silverhand_overlay_cyberspace_mml.mi`
+{% endhint %}
 
 #### Exporting the .mlsetup
 
