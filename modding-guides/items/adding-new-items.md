@@ -519,7 +519,11 @@ The second part is what you do every time you want to add a new text, such as na
     2: true  
     ```
 
-ℹ The list `data` will get overwritten with the values from `compiledData`.
+{% hint style="info" %}
+&#x20;`data` will be overwritten with `compiledData`, so you can ignore it.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/archive_xl_factory_file.png" alt=""><figcaption><p>Factory file, loading your root entity</p></figcaption></figure>
 
 ### Edit the mesh\_entity.ent
 
