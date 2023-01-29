@@ -47,6 +47,7 @@
   * [Character Creator <=> ent/app](https://noraleedoes.neocities.org/npv/npv\_part\_picker)
 * [3d Modelling](modding-know-how/3d-modelling/README.md)
   * [Exporting and importing meshes](modding-know-how/3d-modelling/exporting-and-importing-meshes.md)
+  * [Mesh sculpting techniques](modding-know-how/3d-modelling/mesh-sculpting-techniques.md)
   * [Exporting rigs and anims](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)
   * [Meshes and Armatures: Rigging](modding-know-how/3d-modelling/meshes-and-armatures-rigging.md)
   * [Self-made normal maps](modding-know-how/3d-modelling/self-made-normal-maps.md)
