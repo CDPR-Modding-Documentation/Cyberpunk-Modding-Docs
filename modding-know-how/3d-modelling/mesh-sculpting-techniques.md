@@ -97,6 +97,8 @@ You now have a single mesh which you can sculpt at your heart's content.
 Once you're done, you can separate the meshes again. Switch to **Edit Mode**, then select something that belongs to the former submesh. From the menu, pick the following entry:\
 `Select -> Select Similar (Hotkey: Shift+G) -> Material`
 
+<figure><img src="../../.gitbook/assets/mesh_deform_select_split.png" alt=""><figcaption><p>Split your submesh by material</p></figcaption></figure>
+
 Then, split off the selection into its own submesh again: \
 `Right-Click -> Separate (Hotkey: P) -> Selection`
 
