@@ -2,7 +2,7 @@
 description: Skin tones, complexions, make-up
 ---
 
-# Skin
+# Cheat sheet: Face and skin
 
 ## Skin tones by index
 
@@ -28,6 +28,10 @@ List compiled by **wolv**
 For a list of freckles and make-up sorted by colour and skin type, see NoraLee's [NPV guide](https://docs.google.com/document/d/1clFJhpi7H5jk73vUQPnjIwjkuQV6VnYkKMoXt1eYMb0/edit#bookmark=id.lau0nfbbx4id).
 
 ## Lipstick
+
+{% hint style="info" %}
+For a mod fixing various mix-ups in the character creator, see [here](https://www.nexusmods.com/cyberpunk2077/mods/6788).
+{% endhint %}
 
 Lipstick colours and styles are sorted in (more or less) ascending order in the appearance list in the mesh.&#x20;
 
