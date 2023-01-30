@@ -81,6 +81,10 @@ For the purpose of this guide, all that matters is the mlsetup, which determines
 <figure><img src="../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>This is the path to the mlsetup file. By editing this, you can change colours and surface materials.</p></figcaption></figure>
 
 {% hint style="info" %}
+If you have your own mlsetup file, this is where you need to set tohe path. See [custompathing](changing-materials-colors-and-textures.md#step-4-optional-custompathing) for further details.
+{% endhint %}
+
+{% hint style="success" %}
 Most materials in Cyberpunk use the `engine\materials\multilayered.mt` material and assign colours via an .mlsetup file. If you're used to textures, you are probably going to hate this. As somebody who has been where you are: **the mlsetup system is cool**. Genuinely. Give it a chance!&#x20;
 {% endhint %}
 
