@@ -22,6 +22,12 @@ This guide will walk you through **adding your own items** to Cyberpunk 2077, wh
 **Assumed skill level:** \
 You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible.
 
+{% hint style="danger" %}
+**For experienced modders**
+
+I have repeatedly observed that newbies are fine with this guide, while people who know how to mod are not. Watch out for boxes like this one to avoid those pitfalls.
+{% endhint %}
+
 _The guide was created after reading_ [_this one_](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view) _and being left with a bunch of question marks. To get a deeper understanding, refer to the initial guide and follow the linked resources or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
 
 {% hint style="info" %}
@@ -98,7 +104,7 @@ Rename them as follows:
 | `clothing.csv`                          | `my_cool_new_items.csv`    |
 | `onscreens.json`                        | `translation_strings.json` |
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 ⚠ Do not edit those files outside of WolvenKit!\
 If you want to do that, you need to **export them to json first** (yes, even the json).
 {% endhint %}
@@ -375,11 +381,18 @@ components: [
 
 The name will be used in `appearance.app`'s materialOverride array (see below)
 
-{% hint style="info" %}
+{% hint style="success" %}
 ❓ **Why this file**
 
-You don't strictly need it, as you could define the components array in the individual appearances in the `appearance.app` \
-**However**, in the interest of not repeating ourselves, we bundle everything here. For example, if you re-name or move your mesh file, you'll have to touch one file, rather than 25 different appearances in an array!
+This is how Cyberpunk handles player meshes. While NPCs bundle all components in the .app, player items have this additional step.&#x20;
+
+In theory, you could leave out the mesh\_entity.ent and put the components directly into the .app. In praxis, this will break everything.&#x20;
+{% endhint %}
+
+{% hint style="warning" %}
+**For experienced modders**
+
+This file makes adding items different from chancing NPC appearances. If you have never done this before, make a single variant and get it to work.
 {% endhint %}
 
 #### appearance.app
@@ -414,6 +427,14 @@ appearances:
 
 `partsValues` will define what entity files to load (as a list of components), while `partsOverrides` tells the mesh which appearance to use.
 
+{% hint style="danger" %}
+**For experienced modders**
+
+The .app file's component array should be **empty:** this is not an NPC appearance.
+
+If you duplicate an appearance, you have to change only two fields: the appearance name, and `mesh_appearance` in the componentOverride to change the mesh appearance.
+{% endhint %}
+
 #### Mesh
 
 _You probably know this, but since I'm already writing a guide, I figured I might as well be thorough._
@@ -430,10 +451,14 @@ How _much_ a vertex moves will be determined via **vertex weights**, which you c
 
 ### Suffixes, and whether you need them
 
+{% hint style="danger" %}
+Start by doing a variant **without any suffixes**. (**For experienced modders:** Yes, this includes you! :))
+{% endhint %}
+
 Suffixes tell the game which appearance to load under certain circumstances. Which ones will be considered depends on `appearanceSuffixes: [ … ]` in the .yaml file.
 
 {% hint style="info" %}
-⚠Your item might inherit the suffix setup from the component you specify it as. In the example of `Items.GenericHeadClothing`, that will be
+Your item will inherit the suffix setup from the component you specify it as. In the example of `Items.GenericHeadClothing`, that will be
 
 ```
 appearanceSuffixes: [ itemsFactoryAppearanceSuffix.Gender, itemsFactoryAppearanceSuffix.Camera ]  
@@ -444,7 +469,11 @@ A mesh will first look for an appearance without any suffixes at all, and then a
 `my_shirt_`, will be loaded.\
 `my_shirt_&Female` will be ignored.
 
-ℹ**This can be the reason why your item is invisible!**! You can and should disable the suffixes if you don't need them.\
+{% hint style="warning" %}
+**This can be the reason why your item is invisible!**! You can and should disable the suffixes if you don't need them.
+{% endhint %}
+
+\
 To do so, add an empty array to the yaml entry:
 
 ```
@@ -597,7 +626,8 @@ This connects your entry `Items.my_shirt` from `yourModName.yaml` via `name` wit
 5. Find the array `partsOverrides`.
    1. Delete all entries.
    2. Create a new entry. Set the following value:\
-      `DepotPath`: `tutorial\my_shirt\mesh_entity.ent`
+      `DepotPath`: `tutorial\my_shirt\mesh_entity.ent`\
+      ``_This is the same entity as the one you just put into partsValues_
    3.  Select the array `componentsOverride` and create a new item. Set the following values:
 
        `componentName`: `my_shirt` (as specified in the `mesh_entity.ent`)
@@ -638,7 +668,9 @@ You should now see your item. If not, consult the section [**Troubleshooting**](
 ## Adding an appearance (example: blackred)
 
 {% hint style="warning" %}
-Before you add an appearance, make sure that your item is loading up correctly. If you have to debug, you will have to look through every appearance you made!
+Before you add an appearance, make sure that your item is loading up correctly and looking as expected. If you have to debug, you will have to look through every appearance you made!
+
+**For experienced modders**: This includes you! :)
 {% endhint %}
 
 To add an appearance, you will have to touch the following files:
