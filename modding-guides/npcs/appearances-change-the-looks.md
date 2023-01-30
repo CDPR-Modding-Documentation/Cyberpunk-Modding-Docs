@@ -203,4 +203,10 @@ Congratulations — that's it! Install your mod and go testing!
 
 You may have forgotten to copy the animation file. Look for an **entAnimatedComponent** inside the .app — they're usually called something like `xxx_dangle(s)` or `collar.`[ (See here)](appearances-change-the-looks.md#animations-if-you-cant-avoid-them-copy-them-as-well)
 
-For further troubleshooting steps, see [here](../../modding-know-how/3d-modelling/troubleshooting-your-mesh-edits.md).
+### I added an appearance, but a random one is showing when I select it
+
+That's what happens when the game can't find the appearance you picked. You're probably trying to add an AMM appearance. Check the spelling between your lua file with the appearance name, the mapping entry inside the .ent, and the appearance's name in the .app file.
+
+
+
+#### For further troubleshooting steps, see [here](../../modding-know-how/3d-modelling/troubleshooting-your-mesh-edits.md).
