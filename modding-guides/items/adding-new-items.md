@@ -403,6 +403,10 @@ Contains a list of appearances as mapped by [`rootentity.ent`](adding-new-items.
 You will touch this file every time you add a colour variant.
 {% endhint %}
 
+{% hint style="success" %}
+You will have to **create** the entries under componentOverrides and partsValues. _(Select the list, then press the "Add Item to Array" button on the panel to the right.)_
+{% endhint %}
+
 An entry will look as follows:
 
 ```
