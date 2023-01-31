@@ -193,6 +193,10 @@ Before WolvenKit Nightly 2022-11-01, `yourModName.yaml` will be located in the f
 
 ### Explanation: What do these files do?
 
+{% hint style="warning" %}
+This section contains an **explanation**. For the step-by-step guide how to edit them, proceed to the [next section](adding-new-items.md#setting-up-the-files).
+{% endhint %}
+
 
 
 <figure><img src="https://camo.githubusercontent.com/9b08162e4ed8a2c0738b1a028884a789d83e8518c18b0297c98a612aee6d9d14/68747470733a2f2f692e696d6775722e636f6d2f6936396b4453302e706e67" alt=""><figcaption><p>How the files connect to each other</p></figcaption></figure>
@@ -291,6 +295,8 @@ This file tells the game to load the [factory](adding-new-items.md#my\_cool\_new
 
 {% hint style="info" %}
 You need to touch it only once, unless you want to add new files.
+
+_Remember, the guide for setting up the files is_ [_below_](adding-new-items.md#setting-up-the-files)_._
 {% endhint %}
 
 As for the content, see the section "Setting up the files" below.
@@ -301,6 +307,8 @@ This is the **localization** file which tells the game which texts to display.
 
 {% hint style="info" %}
 You need to touch this file every time you add a new text string.
+
+_Remember, the guide for setting up the files is_ [_below_](adding-new-items.md#setting-up-the-files)_._
 {% endhint %}
 
 An entry will look like this:
@@ -324,6 +332,8 @@ This file defines which components should be loaded - that's why you should copy
 
 {% hint style="info" %}
 You need to touch this file every time you add a colour variant.
+
+_Remember, the guide for setting up the files is_ [_below_](adding-new-items.md#setting-up-the-files)_._
 {% endhint %}
 
 For our purposes, this is a glorified lookup map, translating between the key `appearanceName` in `yourModName.yaml`, a specified app file, and an appearance as specified in that file:
@@ -362,7 +372,9 @@ In that case, make very sure that each entry in your .yaml contains the followin
 For our purposes, this is just a collection of components.
 
 {% hint style="info" %}
-This file is on a once-per-mesh basis, and you have to touch it only once.sis.
+This file is on a once-per-mesh basis, and you have to touch it only once.
+
+_Remember, the guide for setting up the files is_ [_below_](adding-new-items.md#setting-up-the-files)_._
 {% endhint %}
 
 An entry looks like this:
@@ -400,11 +412,9 @@ This file makes adding items different from chancing NPC appearances. If you hav
 Contains a list of appearances as mapped by [`rootentity.ent`](adding-new-items.md#rootentity.ent). It will indicate which mesh to display by loading `mesh_entity.ent` , and overriding appearances.
 
 {% hint style="info" %}
-You will touch this file every time you add a colour variant.
-{% endhint %}
+You will touch this file every time you add a colour variant.&#x20;
 
-{% hint style="success" %}
-You will have to **create** the entries under componentOverrides and partsValues. _(Select the list, then press the "Add Item to Array" button on the panel to the right.)_
+_Remember, the guide for setting up the files is_ [_below_](adding-new-items.md#setting-up-the-files)_._
 {% endhint %}
 
 An entry will look as follows:
