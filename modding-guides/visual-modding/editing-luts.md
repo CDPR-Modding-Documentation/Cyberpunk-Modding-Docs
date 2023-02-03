@@ -18,7 +18,7 @@ There are many different types of color-grading-related LUTs, such as `.CUBE` fi
 
 Initially, Cyberpunk took an approach like many other games, and encoding the LUT as an unwrapped 3D texture:
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption><p>"3D" LUT texture from ReShade project.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (3).png" alt=""><figcaption><p>"3D" LUT texture from ReShade project.</p></figcaption></figure>
 
 Afterwards, Cyberpunk would repackage LUT textures with the blue and green channels inverted to get higher quality, as the human eye values green more than other colors and is more efficient to get all gradients laid on top of green instead of blue. <mark style="color:blue;"></mark> _**Here we can safely assume is where the switch to using true 3D textures was also made, but we will not show a 3D texture due to redundancy and inability to do so, so just assume from now on all textures are actually just a 3D cube.**_
 

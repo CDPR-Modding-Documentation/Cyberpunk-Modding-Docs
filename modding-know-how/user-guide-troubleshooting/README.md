@@ -20,6 +20,8 @@ Find a download-ready collection for Vortex [here](https://next.nexusmods.com/cy
 
 This section aims to give you a quick overview. If your exact problem isn't listed here, please look through the different sections below and try anything that looks promising.
 
+[Preventing the game from auto-updating](./#preventing-the-game-from-auto-updating)
+
 [Your game isn't starting](./#your-game-isnt-starting)
 
 [You're having crashes to desktop](./#your-game-isnt-starting-crashes-to-desktop)
@@ -41,6 +43,34 @@ Redmod isn't doing anything: Install [cybercmd](https://www.nexusmods.com/cyberp
 {% hint style="success" %}
 To enable REDmods, check [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/frameworks/redmod/usage#deploying-mods-and-starting-the-game).
 {% endhint %}
+
+##
+
+## Preventing the game from auto-updating
+
+### Steam
+
+If you have a Steam install and would like to have more control over the game autoupdates, this is how you do it:
+
+#### Step 1
+
+Find the `steamapps` folder, mine is `C:\Steam\steamapps` and locate this file:
+
+`appmanifest_1091500.acf`
+
+#### Step 2
+
+Set that file to read-only:
+
+&#x20;![](<../../.gitbook/assets/image (2).png>)&#x20;
+
+{% hint style="info" %}
+This will block future autoupdates. If you are ready to update, simply uncheck the Read-only checkbox and go thru the motions
+{% endhint %}
+
+
+
+``
 
 ## Your game isn't starting / Crashes to Desktop
 
