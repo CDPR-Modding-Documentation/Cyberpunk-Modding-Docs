@@ -321,15 +321,6 @@ If the error goes away at any point during this guide, abort.
 
 
 
-{% hint style="info" %}
-If your mods are corrupted, that means one of the following things:
-
-a) if you don't have `red4ext/logs/red4ext.log`, then RED4ext doesn't work, you have to update / fix RED4ext \
-b) if you have `red4ext/logs/red4ext.log`, then look inside, it will tell you which mods aren't compatible with the current game patch and may be the cause of this issue \
-c) you removed RED4ext mod, but your scripts aren't recompiled and still refer something from removed mod, you have to fix redscript \
-d) you're missing scripts cache file (only possible if you manually deleted it)
-{% endhint %}
-
 ### 1. Make sure that you have the latest versions
 
 {% hint style="danger" %}
@@ -374,6 +365,14 @@ This is the script dir for non-REDmods
 Delete _everything_ inside `r6/cache/modded/,` leave the empty dir.
 
 If the file `r6/cache/final.redscripts.bk` exists, delete `final.redscripts` and remove the .bk extension.
+
+{% hint style="success" %}
+Check if your game starts.
+{% endhint %}
+
+**If that did not work:**
+
+It's possible that `final.redscripts.bk` was corrupted as well. Delete `final.redscripts` again and verify your game files.
 
 {% hint style="success" %}
 Make sure your game starts up without error.
