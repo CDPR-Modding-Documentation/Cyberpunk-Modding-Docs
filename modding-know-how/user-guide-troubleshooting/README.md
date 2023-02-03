@@ -302,11 +302,33 @@ Rename or remove the following folders:
 /archive/pc/mod
 ```
 
+## Corrupted scripts
+
+If your game complains about corrupted scripts, that is for one of the following reasons:
+
+* if you don't have red4ext/logs/red4ext.log, then RED4ext doesn't work, you have to update / fix RED4ext&#x20;
+* if you have red4ext/logs/red4ext.log, then look inside, it will tell you which mods aren't compatible with the current game patch and may be the cause of this issue&#x20;
+* you removed a RED4ext mod, but your scripts aren't recompiled and still refer something from removed mod, you have to fix redscript&#x20;
+* you're missing scripts cache file (only possible if you manually delete it) it can't be anything else
+
+For further details, check [Redscript Compilation Failed](./#redscript-compilation-failed)
+
 ## Redscript Compilation Failed
 
 ![](../../.gitbook/assets/troubleshooting\_redscript\_compilation\_failed.png)
 
 If the error goes away at any point during this guide, abort.
+
+
+
+{% hint style="info" %}
+If your mods are corrupted, that means one of the following things:
+
+a) if you don't have `red4ext/logs/red4ext.log`, then RED4ext doesn't work, you have to update / fix RED4ext \
+b) if you have `red4ext/logs/red4ext.log`, then look inside, it will tell you which mods aren't compatible with the current game patch and may be the cause of this issue \
+c) you removed RED4ext mod, but your scripts aren't recompiled and still refer something from removed mod, you have to fix redscript \
+d) you're missing scripts cache file (only possible if you manually deleted it)
+{% endhint %}
 
 ### 1. Make sure that you have the latest versions
 
