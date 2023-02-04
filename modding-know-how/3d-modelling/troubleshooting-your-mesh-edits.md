@@ -6,6 +6,16 @@ description: When you can't import, or your imported mesh looks weird
 
 ## Importing
 
+### Tangents
+
+You get an error message like this:
+
+`Message: One or more Geometry in provided GLTF doesn't contain Tangents data. Tangents must be included within glTF files.`
+
+1. Check if your mesh is **triangulated**. If you aren't sure whether or not it is, go into edit mode, select everything, and go to Face -> Triangulate (Shortcut: Ctrl+T)
+2. If that doesn't change anything, make sure that you have the correct box checked upon export:\
+   ![](../../.gitbook/assets/3d\_troubleshooting\_export\_tangents.png)
+
 ### Bone: neutral\_bone not present in export Rig(s)/Import Mesh
 
 The neutral bone is created by the glb export plugin when there are vertex groups without a parent bone. WolvenKit will not let you import if there is a mismatch.
