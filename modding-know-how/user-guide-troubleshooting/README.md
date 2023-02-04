@@ -430,6 +430,12 @@ If everything else works and installing the mod by hand still breaks compilation
 After the missing files have been recovered, you will now have what amounts to a clean install!
 {% endhint %}
 
+{% hint style="warning" %}
+If your game still does not launch after you have completed these steps, it is not a problem with Cyberpunk 2077. Update your graphics card driver, install all Windows updates, and make sure that you have the most recent version(s) of .NET framework.&#x20;
+
+Doing this a second time won't change the results, unless you have made mistakes in the process.
+{% endhint %}
+
 ## Dealing with a broken mod
 
 You have followed all the steps and your game is launching, but you now have a mod on your hands that just doesn't work, and you want it to. What do you do now?
