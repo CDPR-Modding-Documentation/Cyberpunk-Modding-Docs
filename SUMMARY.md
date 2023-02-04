@@ -76,7 +76,7 @@
 * [World Editing](modding-guides/world-editing/README.md)
   * [Adding Objects to the world](modding-guides/world-editing/adding-objects-to-the-world.md)
 * [Photo Mode](modding-guides/photo-mode/README.md)
-  * [Custom Photo Mode Expressions](modding-guides/photo-mode/custom-photo-mode-expressions.md)
+  * [Custom Facial Expressions](modding-guides/photo-mode/custom-facial-expressions.md)
 * [Sound](modding-guides/sound.md)
 * [Quests](modding-guides/quest/README.md)
   * [How to Edit Voiceover and Subtitles In a Quest.](modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)

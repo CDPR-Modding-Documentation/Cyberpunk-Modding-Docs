@@ -9,35 +9,25 @@ base\animations\ui\photomode\photomode_female_facial.anims
 base\animations\ui\photomode\photomode_male_facial.anims
 ```
 
-| Expressions (in scroll order) | CNAME keys to activate them |
-| ----------------------------- | --------------------------- |
-| Neutral                       | facial\_neutral             |
-| Charm                         | facial\_charming            |
-| Fury                          | facial\_furious             |
-| Boredom                       | facial\_bored               |
-| Anger                         | facial\_pissed              |
-| Satisfaction                  | facial\_pleased             |
-| Disgust                       | facial\_disgusted           |
-| Happiness                     | facial\_happy               |
-| Fear                          | facial\_scared              |
-| Surprise                      | facial\_surprised           |
-| Sadness                       | facial\_sadness             |
-| Whistle                       | facial\_whistling           |
+| Index | Expressions  | CNAME keys to activate them |
+| ----- | ------------ | --------------------------- |
+| 1     | Neutral      | facial\_neutral             |
+| 2     | Charm        | facial\_charming            |
+| 3     | Fury         | facial\_furious             |
+| 4     | Boredom      | facial\_bored               |
+| 5     | Anger        | facial\_pissed              |
+| 6     | Satisfaction | facial\_pleased             |
+| 7     | Disgust      | facial\_disgusted           |
+| 8     | Happiness    | facial\_happy               |
+| 9     | Fear         | facial\_scared              |
+| 10    | Surprise     | facial\_surprised           |
+| 11    | Sadness      | facial\_sadness             |
+| 12    | Whistle      | facial\_whistling           |
 
-Expression references for individual NPC files:&#x20;
 
-[johnny\_\_facial\_idle\_poses](https://i.imgur.com/JW2ZW2r.jpg)
-
-[rogue\_facial\_idle\_poses](https://i.imgur.com/7apn9yx.jpg)
-
-[evelyn\_facial\_idle\_poses](https://i.imgur.com/HPd71Bb.jpg)
-
-[generic\_average\_female\_facial\_idle\_poses](https://i.imgur.com/ZxwSOxy.jpg)
-
-[panam\_facial\_idle\_poses](https://i.imgur.com/DuKRBYe.jpg)
 
 {% hint style="info" %}
-For a guide how to replace photo mode expressions, see [here](../../../modding-guides/photo-mode/custom-photo-mode-expressions.md).
+For a guide how to replace photo mode expressions, see [here](../../../modding-guides/photo-mode/custom-facial-expressions.md).
 {% endhint %}
 
 
@@ -71,3 +61,17 @@ The AMM expressions for **both body genders** use the following file and keys:
 | Dead          | idle\_\_dead\_\_male           |
 
 _Courtesy of Maximilium, Pinkydude and Vitum_
+
+__
+
+### Expression references for individual NPC files:&#x20;
+
+[johnny\_\_facial\_idle\_poses](https://i.imgur.com/JW2ZW2r.jpg)
+
+[rogue\_facial\_idle\_poses](https://i.imgur.com/7apn9yx.jpg)
+
+[evelyn\_facial\_idle\_poses](https://i.imgur.com/HPd71Bb.jpg)
+
+[generic\_average\_female\_facial\_idle\_poses](https://i.imgur.com/ZxwSOxy.jpg)
+
+[panam\_facial\_idle\_poses](https://i.imgur.com/DuKRBYe.jpg)
