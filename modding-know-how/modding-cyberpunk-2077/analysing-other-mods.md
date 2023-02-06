@@ -5,7 +5,7 @@
 
 This guide will walk you through **extracting archive files** from other modders.&#x20;
 
-### Required: [WolvenKit](https://github.com/WolvenKit/WolvenKit/releases) and WolvenKit.cli >= 8.8.0
+### Required: [WolvenKit](https://github.com/WolvenKit/WolvenKit/releases) and/or WolvenKit.cli >= 8.8.0
 
 {% hint style="warning" %}
 Please keep in mind that you are looking at somebody else's work. **Always credit** if you use anything from other peoples' mods!
