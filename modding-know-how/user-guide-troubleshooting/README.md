@@ -321,6 +321,27 @@ Go to `Cyberpunk 2077\red4ext` and check the [log files](./#finding-the-broken-m
 
 If none of the troubleshooting steps above helped and your game won't start, you'll want to reset it to a clean install. Fortunately, you don't have to redownload the entire game for that.&#x20;
 
+### Quick (download <4GB)
+
+{% hint style="danger" %}
+Unless you back them up, your mods will be **lost**. If you don't want that, make backups of the following folders:
+
+* archive/pc/mod (_manually installed mods_)
+* bin/x64/plugins/cyber\_engine\_tweaks (_CET settings and AMM_)
+{% endhint %}
+
+{% hint style="warning" %}
+Do **not** delete `archive/pc/content` unless you want to reinstall your **entire** game.
+{% endhint %}
+
+Inside the Cyberpunk 2077 install folder, delete every folder **but** `archive/pc/content`. Afterwards, verify your files.
+
+### Modular / minimal download (download <1GB)
+
+{% hint style="success" %}
+Will download < 1GB. The guide will leave you with a backup of all your mods and data.
+{% endhint %}
+
 Rename or remove the following folders:
 
 ```
