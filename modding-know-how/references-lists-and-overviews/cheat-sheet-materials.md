@@ -43,4 +43,4 @@ See [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#emissive-m
 | -------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
 | base\environment\decoration\furniture\kitchen\neokitsch\_fridge\textures\mi\_neokitsch\_fridge\_z\_emissive.mi | White emissive bright glow (from a fridge)                                           |
 | base\materials\screen\screen\_fluff\_blue.mi                                                                   | blue/pinkish oscillating glow (from the collar of the jacket V wears in the trailer) |
-|                                                                                                                |                                                                                      |
+| base\fx\_shaders\multilayer\_blackbody\_inject.mt                                                              | A glowing shader with mlmask and -setup                                              |
