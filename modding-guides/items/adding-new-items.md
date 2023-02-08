@@ -836,7 +836,7 @@ Game.AddToInventory('Items.my_shirt_blackred')
 Okay, now you've added something! But it doesn't have a preview icon yet - you'll have to add this manually. For this purpose, you'll have to edit an image.
 
 {% hint style="danger" %}
-You can not use Photoshop for the final step. Or rather, you can, but the transparency will be botched. I recommend [paint.net](https://www.getpaint.net/download.html), it's free.
+If you edit your image with photoshop, you need an **alpha channel** for the transparency. Otherwise, you can use [paint.net](https://www.getpaint.net/download.html), which is free.
 {% endhint %}
 
 Cyberpunk uses xbm as format for its textures. These textures are then **mapped** (divided into slices) by inkatlas files. The individual slots can then be used by the game for pretty much everything from UI elements to phone call icons — and image previews.
