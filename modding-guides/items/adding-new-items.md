@@ -42,6 +42,12 @@ You can find a tool to troubleshoot your ArchiveXL mod [here](https://github.com
 
 This part of the guide deals with setting up the files and putting them in the right place. After that, there'll be an explanation of what they do, and finally, a step-by-step guide of filling them with content.
 
+{% hint style="info" %}
+For an explanation of the file structure, see "[Explanation: What do these files do?](adding-new-items.md#explanation-what-do-these-files-do)".&#x20;
+
+Understanding is **not required** as long as you follow the guide to the letter.
+{% endhint %}
+
 We'll assume that your mod is named `my_shirt` and will live in the folder `archive\tutorial`:
 
 `tutorial\my_shirt`
@@ -49,7 +55,7 @@ We'll assume that your mod is named `my_shirt` and will live in the folder `arch
 Create a subfolder with the name of `ops` (for 'operations'). Here we'll put those files that organize how the items correspond to the appearances.
 
 {% hint style="danger" %}
-⚠⚠ Currently (November 2022), capital letters in path or file names are **not** supported! If somebody tells you otherwise, try it at own risk! ⚠⚠⚠
+⚠⚠ Currently (February 2023), capital letters in path or file names are **not** supported! If somebody tells you otherwise, try it at own risk! ⚠⚠⚠
 {% endhint %}
 
 You should end up with the following file structure:
@@ -62,8 +68,16 @@ archive
         - ops  
 ```
 
-{% hint style="info" %}
-It is good practice to have a folder for your modded stuff directly under `archive`. That way, `base` is reserved for the non-modded **base** game items.
+{% hint style="warning" %}
+It is good practice to have a folder for your modded stuff directly under `archive`. That way, `base` is reserved for the non-modded **base** game items. Most people have a folder with their username directly under `archive`:\
+\
+`archive`\
+&#x20; `- base`\
+&#x20; `- modderName`
+
+
+
+**Attention!** If you do that rather than sticking to myshirt, you will not be able to copy-paste paths from the tutorial. I recommend sticking to "myshirt" and [changing the structure](../everything-else/moving-and-renaming-in-existing-projects.md) as the final step when you are done with everything.
 {% endhint %}
 
 As for an explanation which file does what, see the [next section](adding-new-items.md#explanation-what-do-these-files-do).

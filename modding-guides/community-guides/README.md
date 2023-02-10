@@ -82,3 +82,7 @@ Please see the corresponding [sub-page](npvs-v-as-npc-custom-npcs.md)
 | ----------------------------------------------------------------------------------- | ---------------------- |
 | [Custom ads and loading screens](https://www.nexusmods.com/cyberpunk2077/mods/6756) | nexus, by omnishambles |
 |                                                                                     |                        |
+
+## Discord conversation references
+
+[CET dialogue popup](https://discord.com/channels/717692382849663036/807165519018459156/1024789918641311794)

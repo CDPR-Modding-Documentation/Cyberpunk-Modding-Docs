@@ -85,6 +85,7 @@
 * [Visual Modding](modding-guides/visual-modding/README.md)
   * [Editing LUTs](modding-guides/visual-modding/editing-luts.md)
 * [Everything else](modding-guides/everything-else/README.md)
+  * [Moving and renaming in existing projects](modding-guides/everything-else/moving-and-renaming-in-existing-projects.md)
   * [Scripting: Best practices / pitfalls](modding-guides/everything-else/scripting-best-practices-pitfalls.md)
   * [Custom Loading Screens](modding-guides/everything-else/custom-loading-screens.md)
   * [Customise CP77 info on GOG](modding-guides/everything-else/customise-cp77-info-on-gog.md)
