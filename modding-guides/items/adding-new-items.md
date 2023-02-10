@@ -628,16 +628,25 @@ This connects your entry `Items.my_shirt` from `yourModName.yaml` via `name` wit
 
 ### Edit the appearance.app
 
+{% hint style="warning" %}
+**For experienced modders**: You are used to editing the `components` array, and you can do it this way. However, the structure used in this guide **encapsulates** the components inside `mesh_entity.ent`.
+
+> _You monster, why would you do something like that???_
+
+Because that is how CDPR set up the player items, and there are definite advantages to the approach: imagine you have made 50 appearances, and then decide that your meshes need to go into another folder.&#x20;
+{% endhint %}
+
 1. Find the array `appearances` - nothing else here interests us at all.
 2. Delete all entries but `default`
 3. Expand the entry `default`
-4. Find the array `partsValues`.
+4. If your appearance contains `components`, delete them (see the box above)
+5. Find the array `partsValues`.
    1. Delete all entries.
    2.  Create a new entry. Set the following value:\
        `resource`: `tutorial\my_shirt\mesh_entity.ent`
 
        ℹ This file specifies which **components** to load.
-5. Find the array `partsOverrides`.
+6. Find the array `partsOverrides`.
    1. Delete all entries.
    2. Create a new entry. Set the following value:\
       `DepotPath`: `tutorial\my_shirt\mesh_entity.ent`\
