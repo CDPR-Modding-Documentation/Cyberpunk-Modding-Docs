@@ -62,7 +62,7 @@ The only thing you need to care about is the `components` array, where you can a
 <figure><img src="../../.gitbook/assets/app_modification_guide_app_file.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-The names of components need to (read: "should") be unique so you can [manipulate them outside of the .app file](../items/influencing-other-items.md#summary).
+The names of components need to (read: "should") be unique so you can [manipulate them outside of the .app file](../items-equipment/influencing-other-items.md#summary).
 
 CDPR's style of unique naming allows us to find components and their usage across the game files, which will come on handy when we're trying to add items.
 {% endhint %}
@@ -71,7 +71,7 @@ This is where the magic happens.
 
 ## Changing and removing components
 
-**Change** items by selecting a [different appearance](../items/editing-existing-items/changing-materials-colors-and-textures.md) or a [different mesh](../items/editing-existing-items/replace-a-player-item-with-an-npc-item.md):
+**Change** items by selecting a [different appearance](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) or a [different mesh](../items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md):
 
 <figure><img src="../../.gitbook/assets/app_modification_guide_change_mesh.png" alt=""><figcaption><p>Wake up, Johnny! … Follow the white rabbit, Johnny!</p></figcaption></figure>
 

@@ -62,12 +62,12 @@
 * [WolvenKit Guide Section](https://wiki.redmodding.org/wolvenkit/guides/modding-community)
 * [Community guides](modding-guides/community-guides/README.md)
   * [NPVs (V as NPC) - custom NPCs](modding-guides/community-guides/npvs-v-as-npc-custom-npcs.md)
-* [Items](modding-guides/items/README.md)
-  * [Editing existing items](modding-guides/items/editing-existing-items/README.md)
-    * [Changing materials, colors and textures](modding-guides/items/editing-existing-items/changing-materials-colors-and-textures.md)
-    * [Replace a player item with an NPC item](modding-guides/items/editing-existing-items/replace-a-player-item-with-an-npc-item.md)
-  * [Influencing other items](modding-guides/items/influencing-other-items.md)
-  * [Adding new items](modding-guides/items/adding-new-items.md)
+* [Items: Equipment](modding-guides/items-equipment/README.md)
+  * [Editing existing items](modding-guides/items-equipment/editing-existing-items/README.md)
+    * [Changing materials, colors and textures](modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)
+    * [Replace a player item with an NPC item](modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md)
+  * [Influencing other items](modding-guides/items-equipment/influencing-other-items.md)
+  * [Adding new items](modding-guides/items-equipment/adding-new-items.md)
 * [NPCs](modding-guides/npcs/README.md)
   * [Appearances: change the looks](modding-guides/npcs/appearances-change-the-looks.md)
   * [Custom poses for spawned NPCs](modding-guides/npcs/custom-poses-for-spawned-npcs.md)
@@ -89,6 +89,7 @@
   * [Scripting: Best practices / pitfalls](modding-guides/everything-else/scripting-best-practices-pitfalls.md)
   * [Custom Loading Screens](modding-guides/everything-else/custom-loading-screens.md)
   * [Customise CP77 info on GOG](modding-guides/everything-else/customise-cp77-info-on-gog.md)
+  * [Textured items and Cyberpunk materials](modding-guides/everything-else/textured-items-and-cyberpunk-materials.md)
 
 ## Developers
 

@@ -20,7 +20,7 @@ This guide will show you how to\
 Assumed skill level: You are able to read and comprehend instructions.
 
 {% hint style="info" %}
-If you want to replace meshes without editing them, check [this guide](../../modding-guides/items/editing-existing-items/replace-a-player-item-with-an-npc-item.md).
+If you want to replace meshes without editing them, check [this guide](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md).
 
 This guide assumes that you already know which mesh you want to edit. If you do not, check [here](../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials).
 {% endhint %}

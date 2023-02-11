@@ -113,7 +113,7 @@ Some meshes require an entAnimatedComponent along with the garment's component. 
 
 ### My mesh is completely warped
 
-If you have [added the item](../../modding-guides/items/adding-new-items.md) via [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl) or [swapped out an in-game item](../../modding-guides/items/editing-existing-items/replace-a-player-item-with-an-npc-item.md) with something that belongs in a different slot (e.g. a jacket on the head slot), you might have to fix the corresponding entity file.
+If you have [added the item](../../modding-guides/items-equipment/adding-new-items.md) via [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl) or [swapped out an in-game item](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md) with something that belongs in a different slot (e.g. a jacket on the head slot), you might have to fix the corresponding entity file.
 
 ### My mesh is string cheese/exploding vertices
 
