@@ -337,7 +337,7 @@ If you have more than four mesh files assigned to your entity's components, the 
 
 Open the lua file under `resources\bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Props\your_prop_pack.lua`.
 
-Set modder to your name and unique\_identifier to anything (it doesn't actually have to be unique). Now, adjust the first entry in the "props" list to point to your entity file:&#x20;
+Set modder to your name and unique\_identifier to anything, e.g. `your_name_your_props`. Now, adjust the first entry in the "props" list to point to your entity file:&#x20;
 
 ```lua
 return {  
