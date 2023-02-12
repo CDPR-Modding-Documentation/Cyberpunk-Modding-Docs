@@ -620,9 +620,13 @@ Items.my_shirt:
   appearanceSuffixes: []  
 ```
 
-In wKit:
+<figure><img src="https://camo.githubusercontent.com/44632206678c999644b87c80303294dcbce92cd94e01649d5c129a8f6d6d840d/68747470733a2f2f692e696d6775722e636f6d2f6f68496b41544b2e706e67" alt=""><figcaption><p>yourModName.yaml in Wolvenkit</p></figcaption></figure>
 
-[![](https://camo.githubusercontent.com/44632206678c999644b87c80303294dcbce92cd94e01649d5c129a8f6d6d840d/68747470733a2f2f692e696d6775722e636f6d2f6f68496b41544b2e706e67)](https://camo.githubusercontent.com/44632206678c999644b87c80303294dcbce92cd94e01649d5c129a8f6d6d840d/68747470733a2f2f692e696d6775722e636f6d2f6f68496b41544b2e706e67)
+{% hint style="info" %}
+**Start small!**
+
+You can go fully overboard here by adding parameters — items that scale to player level, [EquipmentEx compatibility](https://github.com/psiberx/cp2077-equipment-ex), etc. etc.  **However**, if this is your first ArchiveXL item, start with a **minimal** prototype. First, make it work, then, make it pretty.
+{% endhint %}
 
 ### Edit the rootentity.ent
 
