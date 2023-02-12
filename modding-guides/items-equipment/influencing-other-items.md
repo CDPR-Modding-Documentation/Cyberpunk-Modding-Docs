@@ -61,9 +61,9 @@ They can be used **additionally** to partsOverrides.
 
 <figure><img src="../../.gitbook/assets/visual_tags_preview.png" alt=""><figcaption></figcaption></figure>
 
-### Vanilla
+### ArchiveXL
 
-The following tags are available out of the box without installing additional mods.
+The following tags are used by the base game; however, to make use of them, you require [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl).&#x20;
 
 | Tag             | Effect                                                    |
 | --------------- | --------------------------------------------------------- |
@@ -81,9 +81,7 @@ The following tags are available out of the box without installing additional mo
 `hide_Genitals` will hide **only** the genitals, not the entire body submesh!
 {% endhint %}
 
-### ArchiveXL
-
-With [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl), you can additionally use the following [visual tags](https://github.com/psiberx/cp2077-archive-xl#adding-visual-tags):
+ArchiveXL additionally defines the following [visual tags](https://github.com/psiberx/cp2077-archive-xl#adding-visual-tags):
 
 | Tag           | Effect                |
 | ------------- | --------------------- |
@@ -95,6 +93,10 @@ With [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl), you can addition
 | `hide_Ankles` | Hides ankles.         |
 | `hide_Feet`   | Hides feet.           |
 | `hide_Legs`   | Hides the whole legs. |
+
+
+
+
 
 <div>
 
