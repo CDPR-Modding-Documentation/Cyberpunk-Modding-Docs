@@ -8,7 +8,17 @@ description: Various kinds of materials, and where to find them
 This page contains example materials that you can copy and change. If you don't know how to do that yet, check [here](../modding-cyberpunk-2077/materials-how-to-configure-them/).
 {% endhint %}
 
-## White MultilayerMask
+## Simple / Basic materials
+
+### PBR material
+
+You can find a material with Color (RGB), Roughness and Metalness under&#x20;
+
+```
+engine\materials\pbr_simple.mt
+```
+
+### White MultilayerMask
 
 You can find a mlmask with **three** white layers under the following path:
 
