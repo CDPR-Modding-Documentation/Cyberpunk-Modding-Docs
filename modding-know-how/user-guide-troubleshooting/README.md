@@ -74,6 +74,17 @@ This will block future autoupdates. If you are ready to update, simply uncheck t
 
 ## Your game isn't starting / Crashes to Desktop
 
+### Failed to initialize script data
+
+```
+Message: Failed to initialize scripts data!
+File: E:\R6.Release\dev\src\common\engine\src\baseEngineInit.cpp(1019)
+```
+
+Check your NVidia panel. If power saving options are enabled, turn them off.
+
+### Other problems
+
 {% hint style="info" %}
 Before following these steps, you might want to take a look at your [log files](./#finding-the-broken-mod-log-files). You can usually ignore **Warning**s, but maybe you'll stumble on an error message that helps you to narrow down the suspect.
 {% endhint %}
@@ -527,6 +538,6 @@ A tip for [nil access error in lua](../../modding-guides/everything-else/scripti
 
 If the error isn't in any script files, you will have to **unbundle the .archive**, load it in [WolvenKit](https://github.com/WolvenKit/Wolvenkit/releases), and get your hands dirty. We'll be seeing each other, choomba!
 
-##
+
 
 ##
