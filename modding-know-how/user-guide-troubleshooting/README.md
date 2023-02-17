@@ -22,7 +22,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
 
 [Preventing the game from auto-updating](./#preventing-the-game-from-auto-updating)
 
-[Your game isn't starting](./#your-game-isnt-starting)
+[Your game isn't starting](./#your-game-isnt-starting-crashes-to-desktop)
 
 [You're having crashes to desktop](./#your-game-isnt-starting-crashes-to-desktop)
 
@@ -30,9 +30,9 @@ This section aims to give you a quick overview. If your exact problem isn't list
 
 [You forgot your CET keybind](./#you-forgot-your-cet-keybind)
 
-[You have trouble with CET (Cyber Engine Tweaks)](https://wiki.redmodding.org/cyber-engine-tweaks/getting-started/installing/troubleshooting)
+[You have trouble with CET (Cyber Engine Tweaks)](./#cet)
 
-[You installed a mod, but it's not doing anything](./#mod-s-arent-loading)
+[You installed a mod, but it's not doing anything](./#mod-s-arent-loading-triggering)
 
 A mod is causing problems, and you have no idea which [(1)](./#finding-the-broken-mod-bisecting) [(2)](./#finding-the-broken-mod-log-files)
 
