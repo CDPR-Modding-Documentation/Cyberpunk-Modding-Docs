@@ -130,7 +130,9 @@ If you'd rather delete it, make sure that you retain a copy of your `plugins` di
 {% endhint %}
 
 {% hint style="success" %}
-Check if the problem is gone
+Check if the problem is gone.&#x20;
+
+If it is, put the folder back and apply the [bisection method](./#finding-the-broken-mod-bisecting) to `cyber_engine_tweaks\mods` and `cyber_engine_tweaks\scripts` until you have found the culprit.
 {% endhint %}
 
 ### Step 3: Remove scripts and tweaks
@@ -269,7 +271,7 @@ There are two directories with mods: \
 `Cyberpunk 2077\archive\pc\mod`  holds mods that predate the REDMod format.
 
 \
-The procedure below applies to both directories, but you should start with \\`archive\pc\mod.`
+The procedure below applies to both directories, but you should start with \\`archive\pc\mod.` If your problem is caused by a script, do the same with the CET folder.
 {% endhint %}
 
 First, go to your mod directory under
@@ -284,7 +286,7 @@ and re-name the entire directory to mod\_. Then, create a new empty folder named
 Start the game. If the problem isn't gone now, you have at least ruled out vanilla mods as a source of problems. Repeat the procedure with the RedMod directory `Cyberpunk 2077\mods`.
 
 \
-If you have renamed both directories and the problem isn't gone, you have a different problem. In that case, follow [these steps](./#your-game-isnt-starting).
+If you have renamed both directories and the problem isn't gone, you have a different problem. [Check your CET scripts](./#step-2-disable-cet) or follow [these steps](./#your-game-isnt-starting).
 {% endhint %}
 
 Now, we need to roughly narrow down which mod has the error.&#x20;
