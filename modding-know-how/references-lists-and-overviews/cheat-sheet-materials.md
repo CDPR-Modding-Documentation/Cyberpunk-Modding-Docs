@@ -53,9 +53,11 @@ Works exactly like multilayered, but uses `base\characters\common\cyberspace\sil
 
 See [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#emissive-material) how it works and how to configure it.
 
-| material                                                                                                    | description                                                                          |
-| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
-| `base\environment\decoration\furniture\kitchen\neokitsch_fridge\textures\mi_neokitsch_fridge_z_emissive.mi` | White emissive bright glow (from a fridge)                                           |
-| `base\materials\screen\screen_fluff_blue.mi`                                                                | blue/pinkish oscillating glow (from the collar of the jacket V wears in the trailer) |
-| `base\fx_shaders\multilayer_blackbody_inject.mt`                                                            | A glowing shader with mlmask and -setup                                              |
-| `base\fx\shaders\neon_tubes.mt`                                                                             | A glowing shader with color parameter                                                |
+| material                                                                                                    | description                                                                                                                                                        |
+| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `base\environment\decoration\furniture\kitchen\neokitsch_fridge\textures\mi_neokitsch_fridge_z_emissive.mi` | White emissive bright glow (from a fridge)                                                                                                                         |
+| `base\materials\screen\screen_fluff_blue.mi`                                                                | blue/pinkish oscillating glow (from the collar of the jacket V wears in the trailer)                                                                               |
+| `base\fx_shaders\multilayer_blackbody_inject.mt`                                                            | A glowing shader with mlmask and -setup                                                                                                                            |
+| `base\fx\shaders\neon_tubes.mt`                                                                             | A glowing shader with color parameter                                                                                                                              |
+| base\fx\shaders\signages.mt                                                                                 | The standard neon for advertising fonts in Night City. Comes in many colours, can be customized via textures and gradients. Check "city\_deco\_font" for examples. |
+
