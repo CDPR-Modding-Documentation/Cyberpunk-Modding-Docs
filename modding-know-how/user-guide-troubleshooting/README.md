@@ -235,10 +235,10 @@ You can now re-enable your mods. Do it in chunks and check that the game keeps w
 
 ## Finding the broken mod (log files)
 
-Open your Cyberpunk game folder and use the windows search to search for `.log`
+Open your Cyberpunk game folder and use the windows search to search for `*.log`
 
 {% hint style="info" %}
-Make sure to include the dot: `.log`
+Make sure to include the asterisk and the dot: \*`.log`
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/userguide_logs.png" alt=""><figcaption><p>You should see something like this</p></figcaption></figure>
@@ -251,7 +251,7 @@ Don't delete anything that isn't a text document ending in .log, this might brea
 
 Start your game again. Now do whatever causes your problem to occur.
 
-Search the Cyberpunk directory for `.log` again.&#x20;
+Search the Cyberpunk directory for `*.log` again.&#x20;
 
 {% hint style="info" %}
 Tip: Sort the files by size by clicking on the Windows Explorer column header.&#x20;
