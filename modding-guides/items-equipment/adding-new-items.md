@@ -664,7 +664,7 @@ Because that is how CDPR set up the player items, and there are definite advanta
        `resource`: `tutorial\my_shirt\mesh_entity.ent`
 
        ℹ This file specifies which **components** to load.
-6. Find the array `partsOverrides`.
+6. Find the array partsOverrides.
    1. Delete all entries.
    2. Create a new entry. Set the following value:\
       `DepotPath`: `tutorial\my_shirt\mesh_entity.ent`\
@@ -675,11 +675,27 @@ Because that is how CDPR set up the player items, and there are definite advanta
 
        `meshAppearance`: `default`
 
-       ℹ This will make sure that the component `my_shirt` will be displayed with its appearance `default`, as specified in the mesh.
+{% hint style="info" %}
+&#x20;This will make sure that the component `my_shirt` will be displayed with its meshAppearance `default` (in the .appearances array of the mesh)
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/archive_xl_component_overrides.png" alt=""><figcaption><p>An appearance override in action.</p></figcaption></figure>
 
 {% hint style="success" %}
 Regardless of whether or not this actually works, this is a great moment for a back-up!
 {% endhint %}
+
+#### Mesh appearances
+
+For ArchivXL >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.4.0-rc2), appearance overrides can understand the following variables for `meshAppearance`:
+
+|                |                                                                                                                                    |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `{gender}`     | m or w depending on V's body gender                                                                                                |
+| `{skin_color}` | [skin color appearance name](../../modding-know-how/references-lists-and-overviews/cheat-sheet-face-and-skin/#skin-tones-by-index) |
+| `{hair_color}` | [hair color appearance name](../../modding-know-how/references-lists-and-overviews/hair.md#name-in-files-by-index)                 |
+
+So depending on your PC's body gender and colouring, the meshAppearance `my_app_{gender}`**`{skin_color}`**`{hair_color}` could translate to `my_app_w__01_ca_pale__blue_red_ombre`.
 
 ## First start: Testing
 
