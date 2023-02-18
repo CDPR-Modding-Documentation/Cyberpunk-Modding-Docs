@@ -32,11 +32,12 @@ A white mlMask will apply the selected material to the whole surface of the mesh
 
 ## Textured Material
 
-|                                    |                                                                                                                                |
-| ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `engine\materials\metal_base.remt` | Cyberpunk's default textured (or emissive) material. Super versatile.                                                          |
-| `base\materials\mesh_decal.mt`     | For decals etc., supports alpha channel. Can optionally be made half-transparent (for tattoos etc.)                            |
-| `base\fx_shaders\holo_mask.mt`     | Special effect material that transforms a mesh into an hologram. Can use a custom texture for decal and is color controllable. |
+|                                                             |                                                                                                                                |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
+| `engine\materials\metal_base.remt`                          | Cyberpunk's default textured (or emissive) material. Super versatile.                                                          |
+| `base\materials\mesh_decal.mt`                              | For decals etc., supports alpha channel. Can optionally be made half-transparent (for tattoos etc.)                            |
+| `base\fx_shaders\holo_mask.mt`                              | Special effect material that transforms a mesh into an hologram. Can use a custom texture for decal and is color controllable. |
+| `base\surfaces\atlases\wood\wood_bare\wood_bare_01_pine.mi` | Basic wood texture, no masks                                                                                                   |
 
 ## Cyberspace Material
 
