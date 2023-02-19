@@ -68,10 +68,10 @@ See [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#emissive-m
 
 Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room_plastic_black.mi`
 
-|                |                                                                                            |
-| -------------- | ------------------------------------------------------------------------------------------ |
-| BaseColor      | `base\materials\placeholder\white.xbm`                                                     |
-| Normal         | optional: path to your normal map                                                          |
-| Roughness      | optional: path to your roughness map                                                       |
-| RoughnessBias  | 0.200000003                                                                                |
-| BaseColorScale | Colour as x/y/z values (converter [here](https://www.nixsensor.com/free-color-converter/)) |
+|                |                                                                                                                                    |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| BaseColor      | `base\materials\placeholder\white.xbm`                                                                                             |
+| Normal         | optional: path to your normal map                                                                                                  |
+| Roughness      | optional: path to your roughness map                                                                                               |
+| RoughnessBias  | 0.200000003                                                                                                                        |
+| BaseColorScale | Colour as x/y/z values (color picker blend file [here](https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks)) |
