@@ -45,10 +45,10 @@ Works exactly like multilayered, but uses `base\characters\common\cyberspace\sil
 
 ## Metal Materials
 
-|                                                                          |                                                                            |
-| ------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
-| `base\characters\main_npc\hanako\t0_001_wa_body__hanako_dec_straps.mesh` | Gold: Hanako's heatsinks (only one entry in preloadLocalMaterialInstances) |
-|                                                                          |                                                                            |
+|                                                                            |                                                                            |
+| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| `base\characters\main_npc\hanako\t0_001_wa_body__hanako_dec_straps.mesh`   | Gold: Hanako's heatsinks (only one entry in preloadLocalMaterialInstances) |
+| `base\environment\decoration\containers\cases\coffin\textures\m_z_gold.mi` | a shiny gold                                                               |
 
 ## Emissive Materials
 
@@ -62,3 +62,16 @@ See [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#emissive-m
 | `base\fx\shaders\neon_tubes.mt`                                                                             | A glowing shader with color parameter                                                                                                                              |
 | base\fx\shaders\signages.mt                                                                                 | The standard neon for advertising fonts in Night City. Comes in many colours, can be customized via textures and gradients. Check "city\_deco\_font" for examples. |
 
+## Other
+
+### Coloured Plastic
+
+Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room_plastic_black.mi`
+
+|                |                                                                                            |
+| -------------- | ------------------------------------------------------------------------------------------ |
+| BaseColor      | `base\materials\placeholder\white.xbm`                                                     |
+| Normal         | optional: path to your normal map                                                          |
+| Roughness      | optional: path to your roughness map                                                       |
+| RoughnessBias  | 0.200000003                                                                                |
+| BaseColorScale | Colour as x/y/z values (converter [here](https://www.nixsensor.com/free-color-converter/)) |
