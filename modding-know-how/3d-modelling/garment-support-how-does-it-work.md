@@ -5,7 +5,7 @@ description: What is Garment Support and how does it work?
 # Garment Support: How does it work?
 
 {% hint style="info" %}
-As of January 2023, we can't yet edit garment supports. If they're causing trouble for you, your only option is to delete the parameters from your mesh.
+As of January 2023, we can't yet edit garment supports. If they're causing trouble for you, your only option is to delete the parameters from your mesh. For detail, see [here](troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices).
 {% endhint %}
 
 _Credit goes to psiberx (_[_discord post_](https://discord.com/channels/717692382849663036/955663052903178270/1059406562277470240) _with initial explanation of the algorithm) and IslandDancer for providing screenshots and know-how_

@@ -1042,7 +1042,7 @@ Now, it's time to test! Install the mod, then start Cyberpunk via start menu sho
 ## Troubleshooting
 
 {% hint style="info" %}
-There is a tool designed to help you with this process. You can find it [here](https://github.com/solaarTW/DeepAssetDiscovery/releases).
+There is a tool designed to help you with the process of finding missing dependencies. You can find it [here](https://github.com/solaarTW/DeepAssetDiscovery/releases).
 {% endhint %}
 
 First of all, check the logs:&#x20;
@@ -1054,7 +1054,9 @@ Second of all, make sure that you do not have capital letters in any of your pat
 
 ### My item warps weirdly
 
-You have ignored the [hint box](adding-new-items.md#get-the-files-create-the-structure) when picking your `mesh_entity.ent:` Make sure that you're using an entity file that corresponds with the slot that you are trying to replace (e.g. if your item is a pair of shoes, you need an entity file from `base\characters\garment\player_equipment\feet`).
+... deforms incorrectly, or is a puddle on the floor?
+
+Most likely, you have ignored the [hint box](adding-new-items.md#get-the-files-create-the-structure) when picking your `mesh_entity.ent:` Make sure that you're using an entity file that corresponds with the slot that you are trying to replace (e.g. if your item is a pair of shoes, you need an entity file from `base\characters\garment\player_equipment\feet`).
 
 {% hint style="info" %}
 **If you are here because of a link from a different guide:**&#x20;
@@ -1180,6 +1182,10 @@ If yes: the appearance is resolved, but can't be displayed - ignore the yaml
 ℹIf the appearance is resolved, but not displayed (short glitch), the first thing you should do is to change the path in the `mesh_entity.ent` to one of the game's default meshes. This will rule out errors on your part. (_Yes, even if your mesh worked in another mod. No, I'm not speaking from experience, why do you ask?_)
 
 If the hint above doesn't solve it, proceed to troubleshoot in the same way as "My mesh has the wrong appearance!" above.
+
+### My garment tucks into/under other garments incorrectly
+
+That's due to [garment support](../../modding-know-how/3d-modelling/garment-support-how-does-it-work.md) - check the link to learn more.
 
 ### I can't find anything, kill me now
 
