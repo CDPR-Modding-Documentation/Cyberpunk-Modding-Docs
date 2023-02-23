@@ -525,7 +525,7 @@ For a more in-depth list, see [here](https://drive.google.com/file/d/1aQjb8MpimB
 &#x20;Unless otherwise specified, it'll be assumed that you edit these files in WolvenKit.
 {% endhint %}
 
-### Edit the .xl file (text editor)
+### Edit the .xl file (Wolvenkit or text editor)
 
 Put the following content:
 
@@ -539,9 +539,11 @@ localization:
 
 Save and close the file. You do not need to touch this again unless you want to add more files or change paths.
 
-### Edit translation\_strings.json (text editor)
+### Edit translation\_strings.json (Wolvenkit)
 
-Find the array `root`, then find the array `entries`. (After the optional step in the setup, it should contain only one entry.)\
+If you exported the file to json.json, you can also edit it in a text editor.
+
+Find the array `root`, then find the array `entries`. (After the optional step in the setup, it should contain only one entry. If it doesn't, delete all but one.)\
 Change it as follows:
 
 ```
