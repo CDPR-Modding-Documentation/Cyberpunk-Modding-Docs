@@ -724,6 +724,130 @@ Game.AddToInventory("Items.my_shirt")
 
 You should now see your item. If not, consult the section [**Troubleshooting**](adding-new-items.md#troubleshooting) below, or retrace your steps and make sure that everything works before proceeding to the step below.
 
+## Adding a Male Instance
+
+{% hint style="info" %}
+**This part is completely optional.**&#x20;
+
+If you're not keen on creating a _gender variant_, no worries at all! You can just skip ahead to the [<mark style="color:yellow;">next section</mark>](adding-new-items.md#adding-an-appearance-example-blackred) and keep on truckin' with the rest of the guide.
+{% endhint %}
+
+{% hint style="success" %}
+Also, this part is super easy to follow and even if you make a mistake, fixing it won't be a problem. But hey, you've put in a lot of work and made great progress, so why not take a sec and back up your project files? Better safe than sorry, right?&#x20;
+{% endhint %}
+
+Before we proceed with the tutorial, it's important to address a common issue you might have encountered while creating your mod.
+
+If you've tested the mod on a Male V, you might have noticed some weird glitches like mesh clipping or wonky shapes.
+
+You see, we've been using a mesh designed specifically for Female V, and that's why we've been running into some roadblocks. But don't worry, we're here to help you overcome this challenge!
+
+### Preparing the mesh file for the male variant&#x20;
+
+To fix this issue, we'll need a mesh that's compatible with Male V.&#x20;
+
+In the interest of keeping things simple, we've found just the mesh for you! It's called `t1_024_ma_tshirt__sweater.mesh` and it can be found in the `base\characters\garment\citizen_casual\torso\t1_024_tshirt__sweater` directory.
+
+{% hint style="warning" %}
+If you plan on using other meshes for your mod, ensure that it has `ma` or `pma` in its name.&#x20;
+
+Keep in mind that some `ma` meshes may still have clipping issues when paired with certain types of clothing, while `pma` meshes are specifically designed for V and don't have this problem.&#x20;
+
+If you decide to create your own mesh, be sure to fix any potential issues before using it in your mod. Check out our <mark style="color:yellow;"></mark> [<mark style="color:yellow;">3D modeling guide</mark>](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/3d-modelling) <mark style="color:yellow;"></mark> for helpful tips and resources.&#x20;
+
+Remember, a little extra effort in the beginning can save you a lot of headaches down the line!
+{% endhint %}
+
+Now, add the file to your project, move it to the `tutorial\my_shirt` folder and rename it from `t1_024_ma_tshirt__sweater.mesh` to `my_mesh_m.mesh`.&#x20;
+
+Next, follow the steps you used for the original `my_mesh.mesh` by removing any unnecessary entries and adjusting the indices.
+
+{% hint style="danger" %}
+To avoid any issues, it's crucial to pay close attention to this step and double-check that the correct materials are present in the `localMaterialBuffer` and `materialEntries`, and that the indices are adjusted correctly. ****&#x20;
+
+This will ensure that your mod works as intended without any glitches or errors. If you need a refresher, [<mark style="color:yellow;">click here</mark>](adding-new-items.md#optional-but-very-recommended-clean-out-obsolete-entries) to return to that section.
+{% endhint %}
+
+### Creating a .ent File for Your Custom Mesh
+
+It's time to set up the .ent file for our mesh. Don't worry, it's easy!&#x20;
+
+Start by making a copy of the `mesh_entity.ent` file that you previously created for the female version by duplicating it, and rename it to `mesh_entity_m.ent`.
+
+<figure><img src="../../.gitbook/assets/meshentitypreview.png" alt=""><figcaption><p><em>duplicating <strong>mesh_entity.ent</strong> and creating the new <strong>mesh_entity_m.ent</strong> for out new mesh</em></p></figcaption></figure>
+
+Inside the `mesh_entity_m.ent` file, find the first component of the type `entGarmentSkinnedMeshComponent`. Set the following values:
+
+{% code overflow="wrap" %}
+```
+mesh:   DepotPath:   tutorial\my_shirt\my_mesh_m.mesh      << path to your mesh  
+        Flags:       Default                              << leave this alone  
+name:   my_shirt_m    << this corresponds to the appearanceOverride in appearance.app  
+```
+{% endcode %}
+
+<figure><img src="../../.gitbook/assets/meshentity.png" alt=""><figcaption><p><em>All of the changes made to <strong>mesh_entity_m.ent</strong> file</em></p></figcaption></figure>
+
+### Edit the yourModName.yaml
+
+Inside the `yourModName.yaml` file set the `appearanceSuffixes` array to `itemsFactoryAppearanceSuffix.Gender`
+
+```
+Items.my_shirt:                         
+  $base: Items.GenericInnerChestClothing 
+  entityName: my_shirt                  
+  appearanceName: my_shirt_               
+  displayName: my_shirt_name            
+  localizedDescription: my_shirt_desc   
+  quality: Quality.Legendary             
+  appearanceSuffixes: [ itemsFactoryAppearanceSuffix.Gender ]
+```
+
+{% hint style="info" %}
+If you are unclear about why this step was taken, we recommend reviewing the [<mark style="color:yellow;">relevant section in the guide</mark>](adding-new-items.md#suffixes-and-whether-you-need-them) to get a better understanding.
+{% endhint %}
+
+### Edit the rootentity.ent
+
+1. Find the array `appearances`.
+2. Expand the first entry.
+   1. Append _\&Female_ to the name attribute. This will change the name from `my_shirt_` to `my_shirt_&Female`.
+3. Duplicate the first (and only) entry to create a new one.
+4. Expand the newly create entry
+   1. Set `name : my_shirt_&Male`.
+   2. Set `appearanceName : my_shirt_m`.
+
+<figure><img src="../../.gitbook/assets/rootentity.png" alt=""><figcaption><p><em>All of the changes made to <strong>rootentity.ent</strong> file</em></p></figcaption></figure>
+
+### Edit the appearance.app
+
+1. Find the array `appearances`
+2. Duplicate the first (and only) entry to create a new one
+3. Expand the newly created entry
+4. Set the `name` attribute to `my_shirt_m`
+5. Find the array `partsValues`
+   1. Set `resource : tutorial\myshirt\mesh_entity_m.ent`
+6. Find the array `partsOverrides`
+   1. Find the array componentOverrides
+      1. Set `componentName : my_shirt_m`
+   2. Set `partResources : tutorial\myshirt\mesh_entity_m.ent`
+
+<figure><img src="../../.gitbook/assets/appearance.png" alt=""><figcaption><p><em>All of the changes made to <strong>appearance.app</strong> file</em></p></figcaption></figure>
+
+### Testing the mod
+
+To test your mod, it's important to ensure that it works correctly for both male and female V. This means you'll need to have two separate save files, one for male V and one for female V, unless you're using a mod that allows you to quickly switch between them.
+
+Test your mod independently for both cases by loading the appropriate save file and checking that the mod is working as intended. To spawn and equip your item, use the command specified in your YAML file.
+
+```
+Game.AddToInventory("Items.my_shirt")
+```
+
+{% hint style="danger" %}
+Consider reviewing the guide to ensure that all steps have been followed correctly and that the values have been set appropriately. Ensure that the mesh is compatible with the male variant of V. If errors persist, review the <mark style="color:yellow;"></mark> [<mark style="color:yellow;">troubleshooting section</mark>](adding-new-items.md#troubleshooting) for further assistance.
+{% endhint %}
+
 ## Adding an appearance (example: blackred)
 
 {% hint style="warning" %}

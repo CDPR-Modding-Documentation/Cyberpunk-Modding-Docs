@@ -20,11 +20,21 @@ You get an error message like this:
 
 The neutral bone is created by the glb export plugin when there are vertex groups without a parent bone. WolvenKit will not let you import if there is a mismatch.
 
-To find which bones you're missing, you can use [this script](https://gist.github.com/manavortex/080d04065ee4c45aaad1e7c221db68c9), which will print their names to console. (Blender: Window -> Toggle System Console)
-
 {% hint style="info" %}
-Your armature in Blender needs to have a bone for every vertex group in the submesh. You then need to import over a .mesh file which also has all these bones.
+Your armature in Blender needs to have a bone for every vertex group in the submesh, and there must not be vertices with no vertex group assigned.&#x20;
+
+You then need to import over an [already-existing .mesh file](troubleshooting-your-mesh-edits.md#option-2-the-netrunner-suit) which supports all those bones.
 {% endhint %}
+
+The following two scripts help you finding and/or fixing the problem. Switch to the Blender Scripting perspective and create a new, blank text file. Then, toggle the Blender system console to see their output (Blender: Window -> Toggle System Console)
+
+**Missing bones**
+
+To find which bones you're missing, you can use [this script](https://gist.github.com/manavortex/080d04065ee4c45aaad1e7c221db68c9), which will print their names to console.&#x20;
+
+**Vertices without weights**
+
+You can use [this Python script](https://github.com/manavortex/code\_snippets/blob/master/py/blender/delete\_vertices\_without\_group.py) to either select or auto-delete vertices with no weight.
 
 #### Option 1: Fuck those bones
 
