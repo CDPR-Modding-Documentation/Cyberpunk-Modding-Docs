@@ -40,11 +40,11 @@ Please see the corresponding [sub-page](npvs-v-as-npc-custom-npcs.md)
 
 ## References
 
-|                                                                                                                                        |                                                                   |
-| -------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| [Pose mods and reference screenshots](https://docs.google.com/spreadsheets/d/1rYMbIRKFAFb0ajFk9oyE-3ic6MShWLep5HdqOa\_CGIg/edit#gid=0) | by trala#5476 - ordered by animated actor                         |
-| [Hair colours overview](https://docs.google.com/document/d/1c8Wx42HyWvGL2RSwngQ\_82xoUrG\_aTHvY7MUDPYGYns/edit)                        | Google Doc with screenshots (Who made this? Would like to credit) |
-| [Skin Tone overview](../../modding-know-how/references-lists-and-overviews/cheat-sheet-face-and-skin/)                                 | Overview section on this wiki                                     |
+|                                                                                                                                        |                                                                                                                                                                                                         |
+| -------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Pose mods and reference screenshots](https://docs.google.com/spreadsheets/d/1rYMbIRKFAFb0ajFk9oyE-3ic6MShWLep5HdqOa\_CGIg/edit#gid=0) | by trala#5476 - ordered by animated actor                                                                                                                                                               |
+| [Hair colours overview](https://docs.google.com/document/d/1c8Wx42HyWvGL2RSwngQ\_82xoUrG\_aTHvY7MUDPYGYns/edit)                        | by Halvkyrie#4000 - identifies the internal names of the hair colour swatches in character creator with picture references. Update required as of patch 1.6 due to the addition of 8 new hair profiles. |
+| [Skin Tone overview](../../modding-know-how/references-lists-and-overviews/cheat-sheet-face-and-skin/)                                 | Overview section on this wiki                                                                                                                                                                           |
 
 ## Scripting and quests
 
