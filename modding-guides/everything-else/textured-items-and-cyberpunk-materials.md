@@ -43,7 +43,7 @@ For 3d printing, usually not textured:
 * [MyMiniFactory](https://www.myminifactory.com/)
 * [Pinshape](https://pinshape.com/)
 
-You can also search Google for "`thing_I_want` free 3d model" or "`thing_I_want` free `<format>` file" (\<format> = STL, OBJ, FBX), or check [STLFinder](../../modding-know-how/3d-modelling/exporting-and-importing-meshes.md) or the pages on [this list](https://www.3printr.com/3dmodels/categories/free-models).
+You can also search Google for "`thing_I_want` free 3d model" or "`thing_I_want` free `<format>` file" (\<format> = STL, OBJ, FBX), or check [STLFinder](https://www.stlfinder.com/) or the pages on [this list](https://www.3printr.com/3dmodels/categories/free-models).
 
 ## AMM: Setting up the project
 
