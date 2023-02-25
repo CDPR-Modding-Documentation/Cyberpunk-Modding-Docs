@@ -23,10 +23,6 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 If you don't want to create an AMM prop pack, simply ignore those parts of the guide that are prefixed with **AMM:** and just use the rest of the knowledge.
 {% endhint %}
 
-{% hint style="success" %}
-If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
-{% endhint %}
-
 ## Where to find models
 
 You can find many free 3d models across the web.&#x20;
@@ -54,7 +50,7 @@ If you can't be bothered, find a prepared source folder [here](https://mega.nz/f
 The file has been uploaded on February 02 2023 and is confirmed working as of today.
 {% endhint %}
 
-2. Download Pinkydude's [AMM Custom Props Creation Kit](https://www.nexusmods.com/cyberpunk2077/mods/5979) and extract it somewhere on your harddrive. (You don't have to use it. If you're comfortable with Wolvenkit's file structure, you can use any given game files. But if that's the case, why are you [following this guide](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)? :D)
+2. Download Pinkydude's [AMM Custom Props Creation Kit](https://www.nexusmods.com/cyberpunk2077/mods/5979) and extract it somewhere on your harddrive.&#x20;
 3. Download [this baseball](https://mega.nz/file/vd0X3Yaa#tcakXF6\_t0k\_EouthuKcJSPL3o2nI6b\_zVWi528Kv5k). It's a re-pack of [AlexBes's](https://sketchfab.com/3d-models/worn-baseball-ball-fdf3de6ae225421ea78961b897b9608a) mesh that I have prepared for this tutorial.
 4. Prepare your Wolvenkit project: navigate to the folder on your hard drive and open "source". Then, make sure that you have the following folder structure:
 
@@ -99,10 +95,6 @@ Depending on your level of OCD, you might want to have an own subfolder for text
 #### Entity file
 
 The file where AMM looks up which meshes to load. As of AMM 2.0.2, you need one entity per variant, because you need to define mesh appearances in the entity file itself.
-
-{% hint style="info" %}
-Your component names need to be `amm_prop_slot1` .. `amm_prop_slot4`. If you use other names, or have more than 4 components, AMM will disable scaling.
-{% endhint %}
 
 #### sourcemesh\_diffusemap\_dm.mesh
 
@@ -190,26 +182,6 @@ LOD\_1 indicates the level of detail, whereas the submeshes need to be numbered 
 A mesh that I imported with 9 submeshes made the game crash with a likelihood of \~ 80% when I spawned or despawned it (scaling was fine). You might want to create two separate files if you have too many objects.
 {% endhint %}
 
-#### Splitting off submeshes (mildly advanced)
-
-{% hint style="info" %}
-Every submesh can have its own material assigned in the mesh, and can be hidden or displayed via chunkmask. This is how you assign Cyberpunk materials to parts of your imported asset.
-{% endhint %}
-
-I usually join everything into one object that'll have the same material in the game, unless I want to hide parts of it to make variants.
-
-But the opposite is also possible: You can split off parts from the original object, putting them into their own submeshes. I have done this in the [baseball example](https://mega.nz/file/vd0X3Yaa#tcakXF6\_t0k\_EouthuKcJSPL3o2nI6b\_zVWi528Kv5k): the seams will get a texture, and the rest of the mesh will be coloured with a cyberpunk material.
-
-You do that by changing into the edit mode, then selecting everything that you want to split off ("Select Linked" or "Select More" is your friend here),  and **splitting** it (P -> Split Selection).
-
-{% hint style="info" %}
-You can duplicate your selection first (Shift+D, ESC)
-{% endhint %}
-
-Now, switch back to Object mode and select your new mesh before going into Edit Mode again. Make sure to [**scale**](../../modding-know-how/3d-modelling/self-made-normal-maps.md#step-0-preparing-the-viewport) your new mesh so that it is slightly above the surface of the old one.
-
-Make sure to [correctly name your new submesh](textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh).
-
 #### Unparent
 
 Select everything (click the viewport and press A), then unparent the objects by pressing Alt+P. Select "Clear and Keep Transformation".
@@ -219,6 +191,18 @@ Select everything (click the viewport and press A), then unparent the objects by
 Since those are saved relatively and Wolvenkit will ignore them, your objects might end up larger or smaler than you expect them, or be in different places.&#x20;
 
 Select your objects in the viewport, then press Ctrl+A and choose "All Transforms".&#x20;
+
+#### Splitting off submeshes (mildly advanced)
+
+{% hint style="info" %}
+Every submesh can have its own material assigned in the mesh, and can be hidden or displayed via chunkmask.&#x20;
+{% endhint %}
+
+I usually join everything into one object that'll have the same material in the game, unless I want to hide parts of it to make variants.
+
+But the opposite is also possible: You can split off parts from the original object, putting them into their own submeshes. I have done this in the [baseball example](https://mega.nz/file/vd0X3Yaa#tcakXF6\_t0k\_EouthuKcJSPL3o2nI6b\_zVWi528Kv5k): the seams will get a texture, and the rest of the mesh will be coloured with a cyberpunk material.
+
+You do that by changing into the edit mode, then selecting everything that you want to split off ("Select Linked" or "Select More" is your friend here),  and **splitting** it (P -> Split Selection).
 
 #### Scale it
 

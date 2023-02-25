@@ -7,8 +7,7 @@ description: Overview of hair related things
 ## Summary <a href="#summary" id="summary"></a>
 
 **Created by @manavortex**\
-**Published November 04 2022**\
-**Updated February 3 2023**
+**Published November 04 2022**
 
 ## Name in files by index
 
@@ -23,14 +22,14 @@ List has been confirmed working before 1.6, but might need updating (especially 
 | 04 | hh\_089\_ma\_\_thompson          | hh\_028\_wa\_\_corpo\_bun        |
 | 05 | hh\_090\_wa\_\_alt               | hh\_075\_ma\_\_peralez           |
 | 06 | hh\_078\_wa\_\_evelyn            | hh\_036\_ma\_\_high\_tight       |
-| 07 | hh\_035\_ma\_\_mohawk\_tall      | hh\_059\_wa\_\_voodoo\_02        |
+| 07 | hh\_035\_ma\_\_mohawk\_tall      | hh\_034\_wa\_\_militech\_agent   |
 | 08 | hh\_036\_ma\_\_high\_tight       | hh\_030\_ma\_\_punk\_idol        |
 | 09 | hh\_082\_ma\_\_afro\_bun         | hh\_062\_ma\_\_slick\_back       |
 | 10 | hh\_079\_wa\_\_denny             | hh\_085\_ma\_\_takemura          |
 | 11 | hh\_091\_wa\_\_dakota            | hh\_037\_ma\_\_gungho            |
 | 12 | hh\_063\_wa\_messy\_bob          | hh\_039\_wa\_\_punk\_shaved      |
 | 13 | hh\_042\_wa\_\_topknots          | hh\_051\_wa\_\_judy              |
-| 14 | hh\_999\_ma\_\_buzz\_cap         | hh\_999\_ma\_\_buzz\_cap         |
+| 14 | hh\_151\_wa\_\_judy\_variation02 | hh\_999\_ma\_\_buzz\_cap         |
 | 15 | hh\_008\_ma\_\_demo              | hh\_025\_ma\_\_pompadour         |
 | 16 | hh\_011\_wa\_\_demo              | hh\_008\_ma\_\_demo              |
 | 17 | hh\_029\_wa\_\_misty             | hh\_011\_wa\_\_demo              |
@@ -50,62 +49,10 @@ List has been confirmed working before 1.6, but might need updating (especially 
 | 31 | hh\_118\_wa\_\_gillean           | hh\_082\_ma\_\_afro\_bun         |
 | 32 | hh\_115\_wa\_\_alanah            | hh\_089\_ma\_\_thompson          |
 | 33 | hh\_121\_wa\_\_t\_bug            | hh\_103\_ma\_\_maelstrom\_spikes |
-| 34 | hh\_151\_wa\_\_judy\_variation02 | hh\_120\_ma\_\_arasaka\_bun      |
-| 35 | hh\_006\_ma\_\_demo              | hh\_007\_ma\_\_demo              |
-| 36 | hh\_083\_wa\_\_ponytail\_01      | hh\_112\_ma\_\_kicinski          |
-| 37 | hh\_093\_mba\_\_sumo             | hh\_113\_ma\_\_iwinski           |
-| 38 | hh\_085\_ma\_\_takemura          | hh\_045\_ma\_\_short\_spiked     |
-| 39 | hh\_054\_wa\_\_rogue\_young      | hh\_094\_ma\_\_saul              |
-| 40 | hh\_049\_ma\_\_thiago            | hh\_049\_ma\_\_thiago            |
-| 41 | hh\_039\_wa\_\_punk\_shaved      | hh\_122\_ma\_\_roy               |
-| 42 | hh\_103\_ma\_\_maelstrom\_spikes | hh\_093\_mba\_\_sumo             |
-| 43 | hh\_106\_wa\_\_ponytails         | hh\_006\_ma\_\_demo              |
-| 44 | hh\_140\_ma\_\_short\_afro       | hh\_140\_ma\_\_short\_afro       |
-| 45 | hh\_141\_ma\_\_afro              | hh\_141\_ma\_\_afro              |
-| 46 | hh\_142\_wa\_\_afrohawk          | hh\_142\_wa\_\_afrohawk          |
-| 47 | hh\_143\_ma\_\_flat\_top         | hh\_143\_ma\_\_flat\_top         |
-| 48 | hh\_144\_wa\_\_afro\_braid\_bun  | hh\_144\_wa\_\_afro\_braid\_bun  |
-| 49 | hh\_146\_ma\_\_dread\_undercut   | hh\_146\_ma\_\_dread\_undercut   |
-| 50 | hh\_999\_ma\_\_buzz\_cap         | hh\_999\_ma\_\_buzz\_cap         |
-
-| Colour in CC | Name in Files              |
-| ------------ | -------------------------- |
-| 1            | 05\_brown\_liquorice       |
-| 2            | 01\_blonde\_platinum       |
-| 3            | 02\_red\_merlot            |
-| 4            | 03\_ginger\_copper         |
-| 5            | 04\_teal\_ombre            |
-| 6            | 06\_black\_carbon          |
-| 7            | 07\_blonde\_golden         |
-| 8            | 08\_blonde\_dishwater      |
-| 9            | 09\_blue\_sapphire         |
-| 10           | 10\_brown\_ombre           |
-| 11           | 11\_red\_apple             |
-| 12           | 12\_gray\_gunmetal         |
-| 13           | 13\_ginger\_strawberry     |
-| 14           | 14\_teal\_ash              |
-| 15           | 15\_pink\_magenta          |
-| 16           | 16\_pink\_rose             |
-| 17           | 17\_blue\_steel            |
-| 18           | 18\_blue\_red\_ombre       |
-| 19           | 19\_cold\_white            |
-| 20           | 20\_cyberpunk\_yellow      |
-| 21           | 21\_goblin\_green          |
-| 22           | 22\_liliac                 |
-| 23           | 23\_mermaid\_aquamarine    |
-| 24           | 24\_purple\_ombre          |
-| 25           | 25\_black\_salt\_n\_pepper |
-| 26           | 26\_green\_toxic           |
-| 27           | 27\_brown\_medium          |
-| 28           | 28\_blue\_sky              |
-| 29           | 29\_citrus\_yellow         |
-| 30           | 30\_dark\_purple           |
-| 31           | 31\_green\_orange          |
-| 32           | 32\_liliac\_ombre          |
-| 33           | 33\_phoenix\_fire          |
-| 34           | 34\_purple\_blonde         |
-| 35           | 35\_silver\_rose           |
-
-
+| 34 | hh\_999\_ma\_\_buzz\_cap         | hh\_120\_ma\_\_arasaka\_bun      |
+| 35 | hh\_151\_wa\_\_judy\_variation02 | hh\_007\_ma\_\_demo              |
+| 36 | hh\_006\_ma\_\_demo              | hh\_112\_ma\_\_kicinski          |
+| 37 | hh\_083\_wa\_\_ponytail\_01      | hh\_113\_ma\_\_iwinski           |
+| 39 | hh\_093\_mba\_\_sumo             | hh\_045\_ma\_\_short\_spiked     |
 
 \
