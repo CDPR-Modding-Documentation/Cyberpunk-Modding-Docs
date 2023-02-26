@@ -64,7 +64,19 @@ See [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#emissive-m
 
 ## Other
 
-### Coloured Plastic
+### Glass
+
+half-transparent black: `base\environment\decoration\electronics\devices\device_neokitsch\textures\device_neokitsch_glass_black.mi`
+
+### Recolour/tint
+
+|                        |                                                                                                               |
+| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
+| half-transparent glass | base\environment\decoration\electronics\devices\device\_neokitsch\textures\device\_neokitsch\_glass\_black.mi |
+| gradient               | base\environment\decoration\decals\mesh\_decal\_lines\textures\lines\_plain\_black.mi                         |
+| plastic                | see "[coloured plastic](cheat-sheet-materials.md#coloured-plastic)" below                                     |
+
+#### Coloured Plastic
 
 Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room_plastic_black.mi`
 
