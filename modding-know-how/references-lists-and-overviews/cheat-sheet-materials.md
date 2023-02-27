@@ -61,6 +61,7 @@ See [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#emissive-m
 | `base\fx_shaders\multilayer_blackbody_inject.mt`                                                            | A glowing shader with mlmask and -setup                                                                                                                            |
 | `base\fx\shaders\neon_tubes.mt`                                                                             | A glowing shader with color parameter                                                                                                                              |
 | base\fx\shaders\signages.mt                                                                                 | The standard neon for advertising fonts in Night City. Comes in many colours, can be customized via textures and gradients. Check "city\_deco\_font" for examples. |
+| base\fx\shaders\hologram\_two\_sided.mt                                                                     | half-transparent holo material, allows three colours to tint it                                                                                                    |
 
 ## Other
 
