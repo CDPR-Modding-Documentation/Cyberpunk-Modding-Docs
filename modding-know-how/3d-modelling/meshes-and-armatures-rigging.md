@@ -8,6 +8,8 @@ description: 'How everything is connected, or: why your edited mesh moves weirdl
 For a documentation of the import/export options in Wolvenkit, check [here](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/import-export/models#choosing-rigs-correctly).&#x20;
 
 For Simarillius's Blender script to merge several armatures, check [here](https://github.com/Simarilius-uk/CP2077\_BlenderScripts/blob/main/Merge\_rigs.py).
+
+For a youtube video how to transfer weights between rigs, see [here](https://www.youtube.com/watch?v=bR\_Vke\_\_voU).&#x20;
 {% endhint %}
 
 The connection between a mesh and a rig is made via **vertex groups**. Any number of vertices can be assigned to a group, which is then matched to a rig's bone via **name**.
