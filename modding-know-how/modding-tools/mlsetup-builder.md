@@ -42,10 +42,12 @@ Set the following values:
 | Wolvenkit Depot Path | You can find this folder in your WolvenKit's settings as "Depot Path"                                              |
 | Wolvenkit-CLI.exe    | The executable file under the extracted [WolvenKit CLI](https://github.com/WolvenKit/WolvenKit/releases) directory |
 
+
+
 {% hint style="danger" %}
 `Uncook Folder` and **Wolvenkit Depot Path** have to be the same folder!
 
-For MLSB versions <= 1.6.6, you need to use [WolvenKit.Console Version 1.5.2](https://github.com/WolvenKit/WolvenKit/releases/tag/8.4.3)
+For MLSB versions <= 1.6.6, you need to use [WolvenKit.Console Version 1.5.2](https://github.com/WolvenKit/WolvenKit/releases/tag/8.4.3) and restart after changing the settings.
 {% endhint %}
 
 {% hint style="info" %}
