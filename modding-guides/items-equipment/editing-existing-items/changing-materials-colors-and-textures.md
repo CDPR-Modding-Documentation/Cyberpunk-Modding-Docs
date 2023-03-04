@@ -100,6 +100,8 @@ A multilayered material consists of multiple layers of materials, projected on t
 You can turn any multilayered material into its cyberspace variant by changing the material from `engine\materials\multilayered.mt` to `base\characters\common\cyberspace\silverhand_overlay_cyberspace_mml.mi`
 {% endhint %}
 
+<figure><img src="../../../.gitbook/assets/multilayered.png" alt=""><figcaption></figcaption></figure>
+
 #### Exporting the .mlsetup
 
 We're going to edit the mlsetup file and then import it back, causing a global change in the appearances of every item which uses this particular material file. (If you don't want that, see [Custompathing](changing-materials-colors-and-textures.md#step-4-optional-custompathing) below).
