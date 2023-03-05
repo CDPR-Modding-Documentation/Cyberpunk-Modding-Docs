@@ -54,6 +54,9 @@
     * [Troubleshooting normal maps](modding-know-how/3d-modelling/self-made-normal-maps/troubleshooting-normal-maps.md)
   * [Troubleshooting your mesh edits](modding-know-how/3d-modelling/troubleshooting-your-mesh-edits.md)
   * [Garment Support: How does it work?](modding-know-how/3d-modelling/garment-support-how-does-it-work.md)
+* [Textures](modding-know-how/textures/README.md)
+  * [Images: Importing, editing, exporting](modding-know-how/textures/images-importing-editing-exporting.md)
+  * [Game icons: The inkatlas file](modding-know-how/textures/game-icons-the-inkatlas-file.md)
 * [User guide: Troubleshooting](modding-know-how/user-guide-troubleshooting/README.md)
   * [User guide: enabling REDmods](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/frameworks/redmod/usage#deploying-mods-and-starting-the-game)
 
@@ -85,6 +88,7 @@
 * [Visual Modding](modding-guides/visual-modding/README.md)
   * [Editing LUTs](modding-guides/visual-modding/editing-luts.md)
 * [Everything else](modding-guides/everything-else/README.md)
+  * [Custom in-game icons](modding-guides/everything-else/custom-in-game-icons.md)
   * [Moving and renaming in existing projects](modding-guides/everything-else/moving-and-renaming-in-existing-projects.md)
   * [Custom Loading Screens](modding-guides/everything-else/custom-loading-screens.md)
   * [Customise CP77 info on GOG](modding-guides/everything-else/customise-cp77-info-on-gog.md)
@@ -110,7 +114,7 @@
 * [File Formats](developers/file-formats/README.md)
   * [Streaming Sectors](developers/file-formats/streaming-sectors.md)
 * [Scripting](developers/scripting/README.md)
-  * [Best practices / pitfalls](developers/scripting/best-practices-pitfalls.md)
+  * [Best practices / pitfalls](modding-guides/everything-else/scripting-best-practices-pitfalls.md)
 
 ## Help
 

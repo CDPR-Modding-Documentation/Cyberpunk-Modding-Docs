@@ -1004,29 +1004,9 @@ Game.AddToInventory('Items.my_shirt_blackred')
 
 Okay, now you've added something! But it doesn't have a preview icon yet - you'll have to add this manually. For this purpose, you'll have to edit an image.
 
-{% hint style="danger" %}
-If you edit your image with photoshop, you need an **alpha channel** for the transparency. Otherwise, you can use [paint.net](https://www.getpaint.net/download.html), which is free.
-{% endhint %}
+For a guide how to do that, check [here](../everything-else/custom-in-game-icons.md).
 
-Cyberpunk uses xbm as format for its textures. These textures are then **mapped** (divided into slices) by inkatlas files. The individual slots can then be used by the game for pretty much everything from UI elements to phone call icons — and image previews.
-
-{% hint style="info" %}
-If you want to use the in-game previews, you can find them under `base\gameplay\gui\common\icons\items`
-{% endhint %}
-
-### Setting up the files
-
-First of all, [download](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas\_templates\_apart\_v1.zip/file) the template archive (kindly provided by Apart). This includes the following files:
-
-| Template                      | Size of slot image |
-| ----------------------------- | ------------------ |
-| 5\_outfits                    | 160x320 (x5)       |
-| 5\_weapons                    | 360x120 (x5)       |
-| 40\_items\_inkatlas\_template | 160x160 (x40)      |
-
-As for how to take image previews, refer to [this guide](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view), section "Making the icon". This guide assumes that you have a bunch of ready-made icons lying around.
-
-Select 40\_items\_inkatlas\_template and copy the **.inkatlas** and the **.xbm** `tutorial\ops`. I'll rename them to `preview_icons` , future me will be grateful:
+After following this guide, you should be left with a structure like this:&#x20;
 
 ```
 tutorial  
@@ -1036,24 +1016,6 @@ tutorial
       	- preview_icons.inkatlas       <<<  
       	- preview_icons.xbm            <<<  
 ```
-
-### Getting the preview in place
-
-Open `40_item_template.pdn` in [**paint.net**](https://www.getpaint.net/download.html) and put all your icons in. Hide the background layer once you're done, and save it as png under
-
-```
-<yourModDirectory>\raw\tutorial\ops\preview_icons.xbm  
-```
-
-{% hint style="info" %}
-You can also export `preview_icons.xbm` via WolvenKit, and the resulting `preview_icons.png` in paint.net!
-{% endhint %}
-
-Once you're done, import it back. Use the following settings:
-
-[![](https://camo.githubusercontent.com/6191ea85dce6cbf272694a464a89a9c8fdd1333fd9bce8436aec97684e729355/68747470733a2f2f692e696d6775722e636f6d2f486370743652332e706e67)](https://camo.githubusercontent.com/6191ea85dce6cbf272694a464a89a9c8fdd1333fd9bce8436aec97684e729355/68747470733a2f2f692e696d6775722e636f6d2f486370743652332e706e67)
-
-You can now open `preview_images.xbm` in WKit, it should have your items.
 
 ### Hooking up the inkatlas
 

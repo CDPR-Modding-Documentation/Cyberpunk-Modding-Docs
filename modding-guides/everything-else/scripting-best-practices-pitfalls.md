@@ -71,7 +71,7 @@ local string2 = "This is the same object!"
 
 The comparison between those two strings will be almost-instant.&#x20;
 
-This becomes a problem when comparing strings in a loop (see [Scopes](best-practices-pitfalls.md#scopes)):
+This becomes a problem when comparing strings in a loop (see [Scopes](scripting-best-practices-pitfalls.md#scopes)):
 
 ```
 for (_, mystring) in ipairs(mytable) do
