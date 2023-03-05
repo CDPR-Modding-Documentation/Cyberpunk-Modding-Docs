@@ -533,7 +533,7 @@ Open up that file in a text editor like [Notepad++](https://notepad-plus-plus.or
 Sometimes, such mistakes are trivial — a forgotten **,** or incorrect file encoding. Often, they are not.
 
 {% hint style="info" %}
-A tip for [nil access error in lua](../../modding-guides/everything-else/scripting-best-practices-pitfalls.md#fixing-preventing-nil-access)
+A tip for [nil access error in lua](../../developers/scripting/best-practices-pitfalls.md#fixing-preventing-nil-access)
 {% endhint %}
 
 #### Ascending from user to modder

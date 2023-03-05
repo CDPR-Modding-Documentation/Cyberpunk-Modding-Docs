@@ -2,9 +2,30 @@
 description: A collection of code-related knowledge
 ---
 
-# Scripting: Best practices / pitfalls
+# Best practices / pitfalls
 
 ## LUA
+
+### Gain performance: Early Return
+
+You're probably used to coding like this:
+
+<pre><code><strong>local function myMethod()
+</strong><strong>  if condition then 
+</strong><strong>    -- do a little dance, make a little love…
+</strong><strong>  end
+</strong><strong>end
+</strong></code></pre>
+
+In LUA, you can skim a few processing cycles by using the early return style:&#x20;
+
+<pre><code><strong>local function myMethod()
+</strong><strong>  if not condition then return end
+</strong><strong>  -- do a little dance, make a little love…
+</strong><strong>end
+</strong></code></pre>
+
+You can gain a **significant** amount of performance this way, especially when doing this in a loop.&#x20;
 
 ### Fixing/preventing nil access
 
@@ -29,6 +50,12 @@ myEverythingElse = <original object assignment> or {}
 While that won't solve any other problems, it will at least make the error go away.
 {% endhint %}
 
+### Switch in LUA: Lookup Tables
+
+Who doesn't know the problem? You want to know if your string is A, B, or C, but not D — and LUA doesn't have a switch statement.&#x20;
+
+Fortunately, there is a built-in and performant way to&#x20;
+
 ### Performance killers: strings
 
 String concatenation and comparison can be the difference between a brief stutter and a complete freeze or even crash to desktop. This is not a joke — see [here](https://www.lua.org/gems/sample.pdf) for more detail.
@@ -44,7 +71,7 @@ local string2 = "This is the same object!"
 
 The comparison between those two strings will be almost-instant.&#x20;
 
-This becomes a problem when comparing strings in a loop (see [Scopes](scripting-best-practices-pitfalls.md#scopes)):
+This becomes a problem when comparing strings in a loop (see [Scopes](best-practices-pitfalls.md#scopes)):
 
 ```
 for (_, mystring) in ipairs(mytable) do
