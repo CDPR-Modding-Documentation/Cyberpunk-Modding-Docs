@@ -31,12 +31,21 @@ Where **partsValues** lets you define the individual entity files that you'll lo
 Components need to be **unambiguously** identified by their name as defined in the .ent file. For that reason, it's good practice to have globally unique identifiers.&#x20;
 {% endhint %}
 
+#### Arms
+
 {% hint style="warning" %}
 If you want to affect V's arms (for example, hiding clipping shoulders under a jacket), you might have to override the following components (the male equivalent will be named pma):
-
-`a0_001_pwa_base_hq__full` \
-`a0_001_pwa_base_hq__full8640`
 {% endhint %}
+
+```
+a0_001_pwa_base_hq__full         // gorilla arms
+a0_001_pwa_base_hq__full8640     // gorilla arms
+left_arm                         // default arms
+right_arm                        // default arms
+a0_000_pwa_base__fists           // fists (fighting arms)
+```
+
+You can find the corresponding entity files in `base\characters\common\player_base_bodies > .ent`, the file names will start with `a0_.`
 
 ### ArchiveXL
 
