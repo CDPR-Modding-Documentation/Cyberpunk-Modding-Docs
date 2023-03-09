@@ -366,18 +366,28 @@ Rename or remove the following folders:
 /archive/pc/mod
 ```
 
+### Corrupted archives
+
+> Cyberpunk 2077 encountered an error caused by corrupted or missing archives and and will now be forced to close. Please verify...
+
+One of the .archive files in your folder is broken. To find out which one, try the [bisect](./#finding-the-broken-mod-bisecting) approach.
+
 ## Corrupted scripts
 
-If your game complains about corrupted scripts, that is for one of the following reasons:
+> Cyberpunk 2077 encountered an error caused by a corrupt or missing script file and will now be forced to close. Please verify...
+
+You have a problem with Red4ext. Try the following steps:
 
 * if you don't have red4ext/logs/red4ext.log, then RED4ext doesn't work, you have to update / fix RED4ext&#x20;
 * if you have red4ext/logs/red4ext.log, then look inside, it will tell you which mods aren't compatible with the current game patch and may be the cause of this issue&#x20;
 * you removed a RED4ext mod, but your scripts aren't recompiled and still refer something from removed mod, you have to fix redscript&#x20;
 * you're missing scripts cache file (only possible if you manually delete it) it can't be anything else
 
-For further details, check [Redscript Compilation Failed](./#redscript-compilation-failed)
+If that doesn't solve your problems or you run into an error with script files, check [Redscript Compilation Failed](./#redscript-compilation-failed).
 
 ## Redscript Compilation Failed
+
+> REDScript compilation failed. The game will start, but none of the scripts will take effect. This is caused by errors in...
 
 ![](../../.gitbook/assets/troubleshooting\_redscript\_compilation\_failed.png)
 
