@@ -144,7 +144,7 @@ You should only do this if you run into problems with your mods. By default, thi
 For problems that are related directly to Vortex, you can use [Nexus support](https://wiki.nexusmods.com/index.php/Category:Vortex) or join our [Discord](https://discord.gg/redmodding) and find (volunteer) help in the #vortex-support channel.
 
 {% hint style="info" %}
-Before your mods **deploy**, there is no need to consult the [general troubleshooting](../users-troubleshooting.md).
+Before your mods **deploy**, there is no need to consult the [general troubleshooting](../../modding-know-how/user-guide-troubleshooting/).
 {% endhint %}
 
 ### M[^1]anual install
@@ -186,6 +186,6 @@ As a rule of thumb: usually, but not always…
 
 If you have problems with Vortex, check the [corresponding section](./#5.-troubleshooting) of the guide.&#x20;
 
-For everything else, this wiki has a dedicated [troubleshooting page](../users-troubleshooting.md) that has solutions to many common problems. If that doesn't cut it, you're welcome to find us on [Discord](https://discord.gg/redmodding) in the #mod-troubleshooting channel (but your first answer will be a link to that guide).
+For everything else, this wiki has a dedicated [troubleshooting page](../../modding-know-how/user-guide-troubleshooting/) that has solutions to many common problems. If that doesn't cut it, you're welcome to find us on [Discord](https://discord.gg/redmodding) in the #mod-troubleshooting channel (but your first answer will be a link to that guide).
 
 [^1]: 

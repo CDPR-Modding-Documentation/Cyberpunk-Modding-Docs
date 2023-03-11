@@ -34,18 +34,37 @@ Components need to be **unambiguously** identified by their name as defined in t
 #### Arms
 
 {% hint style="warning" %}
-If you want to affect V's arms (for example, hiding clipping shoulders under a jacket), you might have to override the following components (the male equivalent will be named pma):
+If you want to affect V's arms (for example, hiding clipping shoulders under a jacket), you might have to override the following components:
+
+The male equivalent will have `pma` instead of `pwa`
 {% endhint %}
 
 ```
-a0_001_pwa_base_hq__full         // gorilla arms
-a0_001_pwa_base_hq__full8640     // gorilla arms
-left_arm                         // default arms
-right_arm                        // default arms
-a0_000_pwa_base__fists           // fists (fighting arms)
+a0_001_pwa_base_hq__full              // default arms
+a0_001_pwa_base_hq__full8640          
+left_arm                              
+right_arm                             
+a0_000_pwa_base__fists                // fists (fighting arms)
+a0_005_wa__strongarms_holstered_r     // gorilla arms (holstered)
+a0_005_wa__strongarms_holstered_l    
+a0_005_wa__strongarms_r               // gorilla arms
+a0_005_wa__strongarms_l
+a0_005_wa__strongarms_photo_mode_r    // gorilla arms (photo mode)
+a0_005_wa__strongarms_photo_mode_l
+a0_002_wa__monowire_whip_l_cableless  // monowire
+a0_002_wa__monowire_whip_r_cableless
 ```
 
 You can find the corresponding entity files in `base\characters\common\player_base_bodies > .ent`, the file names will start with `a0_.`
+
+#### Body
+
+The player base body component name is
+
+```
+t0_000_pwa_base__full
+t0_000_pma_base__full
+```
 
 ### ArchiveXL
 
