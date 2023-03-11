@@ -4,17 +4,24 @@
 * [Log in and edit](https://app.gitbook.com)
 * [Home](README.md)
 
+## Help
+
+* [❔ Users: Modding Cyberpunk 2077](help/users-modding-cyberpunk-2077/README.md)
+  * [Users: enabling REDmods](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/frameworks/redmod/usage#deploying-mods-and-starting-the-game)
+* [🆘 Users: Troubleshooting](help/users-troubleshooting.md)
+* [📖 Glossary](help/glossary.md)
+* [🗣 Join us on Discord!](https://discord.gg/redmodding)
+
 ## Modding: Know-how
 
-* [Modding Cyberpunk 2077](modding-know-how/modding-cyberpunk-2077/README.md)
-  * [Getting started: Tools and theory](modding/modding-cyberpunk-2077/frameworks.md)
+* [ℹ Creators: Modding Cyberpunk 2077](modding-know-how/modding-cyberpunk-2077/README.md)
   * [Folder structure and files](modding-know-how/modding-cyberpunk-2077/folder-structure-and-files.md)
   * [Analysing other mods](modding-know-how/modding-cyberpunk-2077/analysing-other-mods.md)
   * [Materials: How to configure them](modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/README.md)
     * [Multilayered](modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)
-* [Frameworks](modding-know-how/frameworks/README.md)
-  * [AMM](modding-know-how/frameworks/amm.md)
+* [⚒ Frameworks](modding-know-how/frameworks/README.md)
   * [CET (Cyber Engine Tweaks)](https://wiki.redmodding.org/cyber-engine-tweaks/)
+  * [AMM](modding-know-how/frameworks/amm.md)
   * [Red4ext](https://wiki.redmodding.org/red4ext/)
   * [REDmod](modding-know-how/frameworks/redmod/README.md)
     * [Usage](modding-know-how/frameworks/redmod/usage.md)
@@ -24,14 +31,14 @@
       * [Import](modding-know-how/frameworks/redmod/commands/import.md)
   * [Redscript](https://wiki.redmodding.org/redscript/)
   * [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/)
-* [Tools](modding-know-how/modding-tools/README.md)
+* [🛠 Tools](modding-know-how/modding-tools/README.md)
   * [MLSETUP Builder](modding-know-how/modding-tools/mlsetup-builder.md)
   * [010 Editor](modding-know-how/modding-tools/010-editor.md)
   * [3DS MAX](modding-know-how/modding-tools/3ds-max.md)
   * [PixelRick's Cyberpunk Save Editor](modding-know-how/modding-tools/pixelricks-cyberpunk-save-editor.md)
   * [Noesis](modding-know-how/modding-tools/noesis.md)
   * [Blender scripts and plugins](modding-know-how/modding-tools/blender-scripts-and-plugins.md)
-* [References, lists and overviews](modding-know-how/references-lists-and-overviews/README.md)
+* [📚 References, lists and overviews](modding-know-how/references-lists-and-overviews/README.md)
   * [Hair](modding-know-how/references-lists-and-overviews/hair.md)
   * [Cheat sheet: Face and skin](modding-know-how/references-lists-and-overviews/cheat-sheet-face-and-skin/README.md)
     * [Cheat Sheet: Facial Expressions](modding-know-how/references-lists-and-overviews/cheat-sheet-face-and-skin/cheat-sheet-facial-expressions.md)
@@ -57,12 +64,10 @@
 * [Textures](modding-know-how/textures/README.md)
   * [Images: Importing, editing, exporting](modding-know-how/textures/images-importing-editing-exporting.md)
   * [Game icons: The inkatlas file](modding-know-how/textures/game-icons-the-inkatlas-file.md)
-* [User guide: Troubleshooting](modding-know-how/user-guide-troubleshooting/README.md)
-  * [User guide: enabling REDmods](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/frameworks/redmod/usage#deploying-mods-and-starting-the-game)
 
 ## Modding: Guides
 
-* [WolvenKit Guide Section](https://wiki.redmodding.org/wolvenkit/guides/modding-community)
+* [🐺 WolvenKit Guide Section](https://wiki.redmodding.org/wolvenkit/guides/modding-community)
 * [Community guides](modding-guides/community-guides/README.md)
   * [NPVs (V as NPC) - custom NPCs](modding-guides/community-guides/npvs-v-as-npc-custom-npcs.md)
 * [Items: Equipment](modding-guides/items-equipment/README.md)
@@ -115,9 +120,3 @@
   * [Streaming Sectors](developers/file-formats/streaming-sectors.md)
 * [Scripting](developers/scripting/README.md)
   * [Best practices / pitfalls](modding-guides/everything-else/scripting-best-practices-pitfalls.md)
-
-## Help
-
-* [Community](help/community.md)
-* [FAQ](help/faq.md)
-* [Glossary](help/glossary.md)

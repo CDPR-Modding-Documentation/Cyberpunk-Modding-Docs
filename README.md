@@ -1,15 +1,21 @@
+---
+description: Welcome to the Cyberpunk 2077 modding wiki!
+---
+
 # Home
 
+This is the dedicated repository for modding guides, resources and know-how.&#x20;
+
 {% hint style="danger" %}
-This wiki is under heavy construction! Do you see something missing, incorrect, or want to add information of your own? This is a community project so please consider reaching out to us on Discord to get involved! We have a #wiki channel!
+This wiki is a community project! Do you want to improve or add anything? [Start editing ](https://app.gitbook.com/)right now, or reach out on [Discord](https://discord.gg/redmodding) and find us in the #wiki channel!
 {% endhint %}
 
 {% content-ref url="modding-know-how/modding-cyberpunk-2077/" %}
 [modding-cyberpunk-2077](modding-know-how/modding-cyberpunk-2077/)
 {% endcontent-ref %}
 
-{% content-ref url="help/faq.md" %}
-[faq.md](help/faq.md)
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
 {% endcontent-ref %}
 
 {% content-ref url="broken-reference" %}

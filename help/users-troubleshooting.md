@@ -2,7 +2,7 @@
 description: If your mods are causing trouble, here's what you can do
 ---
 
-# User guide: Troubleshooting
+# 🆘 Users: Troubleshooting
 
 {% hint style="info" %}
 This page contains troubleshooting information for end users (people who are not modders). You will find step-by-step guides what to do if your game isn't starting or if your mods aren't working as you expect them to.
@@ -20,23 +20,23 @@ Find a download-ready collection for Vortex [here](https://next.nexusmods.com/cy
 
 This section aims to give you a quick overview. If your exact problem isn't listed here, please look through the different sections below and try anything that looks promising.
 
-[Preventing the game from auto-updating](./#preventing-the-game-from-auto-updating)
+[Preventing the game from auto-updating](users-troubleshooting.md#preventing-the-game-from-auto-updating)
 
-[Your game isn't starting](./#your-game-isnt-starting-crashes-to-desktop)
+[Your game isn't starting](users-troubleshooting.md#your-game-isnt-starting-crashes-to-desktop)
 
-[You're having crashes to desktop](./#your-game-isnt-starting-crashes-to-desktop)
+[You're having crashes to desktop](users-troubleshooting.md#your-game-isnt-starting-crashes-to-desktop)
 
-[Redscript Compilation Failed (Popup message)](./#redscript-compilation-failed)
+[Redscript Compilation Failed (Popup message)](users-troubleshooting.md#redscript-compilation-failed)
 
-[You forgot your CET keybind](./#you-forgot-your-cet-keybind)
+[You forgot your CET keybind](users-troubleshooting.md#you-forgot-your-cet-keybind)
 
-[You have trouble with CET (Cyber Engine Tweaks)](./#cet)
+[You have trouble with CET (Cyber Engine Tweaks)](users-troubleshooting.md#cet)
 
-[You installed a mod, but it's not doing anything](./#mod-s-arent-loading-triggering)
+[You installed a mod, but it's not doing anything](users-troubleshooting.md#mod-s-arent-loading-triggering)
 
-A mod is causing problems, and you have no idea which [(1)](./#finding-the-broken-mod-bisecting) [(2)](./#finding-the-broken-mod-log-files)
+A mod is causing problems, and you have no idea which [(1)](users-troubleshooting.md#finding-the-broken-mod-bisecting) [(2)](users-troubleshooting.md#finding-the-broken-mod-log-files)
 
-[You want to start with a clean install](./#the-nuclear-option-a-clean-install)
+[You want to start with a clean install](users-troubleshooting.md#the-nuclear-option-a-clean-install)
 
 Redmod isn't doing anything: Install [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176)
 
@@ -62,7 +62,7 @@ Find the `steamapps` folder, mine is `C:\Steam\steamapps` and locate this file:
 
 Set that file to read-only:
 
-&#x20;![](<../../.gitbook/assets/image (2).png>)&#x20;
+&#x20;![](<../.gitbook/assets/image (2).png>)&#x20;
 
 {% hint style="info" %}
 This will block future autoupdates. If you are ready to update, simply uncheck the Read-only checkbox and go thru the motions
@@ -86,7 +86,7 @@ Check your NVidia panel. If power saving options are enabled, turn them off.
 ### Other problems
 
 {% hint style="info" %}
-Before following these steps, you might want to take a look at your [log files](./#finding-the-broken-mod-log-files). You can usually ignore **Warning**s, but maybe you'll stumble on an error message that helps you to narrow down the suspect.
+Before following these steps, you might want to take a look at your [log files](users-troubleshooting.md#finding-the-broken-mod-log-files). You can usually ignore **Warning**s, but maybe you'll stumble on an error message that helps you to narrow down the suspect.
 {% endhint %}
 
 ### Step 1: Temporarily disable all your mods
@@ -132,7 +132,7 @@ If you'd rather delete it, make sure that you retain a copy of your `plugins` di
 {% hint style="success" %}
 Check if the problem is gone.&#x20;
 
-If it is, put the folder back and apply the [bisection method](./#finding-the-broken-mod-bisecting) to `cyber_engine_tweaks\mods` and `cyber_engine_tweaks\scripts` until you have found the culprit.
+If it is, put the folder back and apply the [bisection method](users-troubleshooting.md#finding-the-broken-mod-bisecting) to `cyber_engine_tweaks\mods` and `cyber_engine_tweaks\scripts` until you have found the culprit.
 {% endhint %}
 
 ### Step 3: Remove scripts and tweaks
@@ -209,7 +209,7 @@ _Exact procedure as documented by @ArsenicTouch_
 
 Go to Games -> Installed, right-click on your game and select the following menu entry:
 
-![](<../../.gitbook/assets/image (2) (2).png>)
+![](<../.gitbook/assets/image (2) (2).png>)
 
 #### Steam
 
@@ -241,7 +241,7 @@ Open your Cyberpunk game folder and use the windows search to search for `*.log`
 Make sure to include the asterisk and the dot: \*`.log`
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/userguide_logs.png" alt=""><figcaption><p>You should see something like this</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/userguide_logs.png" alt=""><figcaption><p>You should see something like this</p></figcaption></figure>
 
 Now, delete all those files. Don't worry, they will be re-created on next launch.
 
@@ -286,7 +286,7 @@ and re-name the entire directory to mod\_. Then, create a new empty folder named
 Start the game. If the problem isn't gone now, you have at least ruled out vanilla mods as a source of problems. Repeat the procedure with the RedMod directory `Cyberpunk 2077\mods`.
 
 \
-If you have renamed both directories and the problem isn't gone, you have a different problem. [Check your CET scripts](./#step-2-disable-cet) or follow [these steps](./#your-game-isnt-starting).
+If you have renamed both directories and the problem isn't gone, you have a different problem. [Check your CET scripts](users-troubleshooting.md#step-2-disable-cet) or follow [these steps](users-troubleshooting.md#your-game-isnt-starting).
 {% endhint %}
 
 Now, we need to roughly narrow down which mod has the error.&#x20;
@@ -308,13 +308,13 @@ Make sure that all dependencies for your mod are both **installed** and **up-to-
 
 #### A RedMod
 
-Check that you've enabled the feature (see [Deploying Mods and Starting Game](../frameworks/redmod/#installation)). Does that solve it? If not, proceed to the section about [Log Files](./#finding-the-broken-mod-log-files) and try to find an error message here.
+Check that you've enabled the feature (see [Deploying Mods and Starting Game](../modding-know-how/frameworks/redmod/#installation)). Does that solve it? If not, proceed to the section about [Log Files](users-troubleshooting.md#finding-the-broken-mod-log-files) and try to find an error message here.
 
 #### CET
 
 You have installed Cyber Engine Tweaks, but it's not active / not letting you bind a key:&#x20;
 
-* Check that mods are [enabled](../frameworks/redmod/#installation)
+* Check that mods are [enabled](../modding-know-how/frameworks/redmod/#installation)
 * Check the install path: Cyber Engine Tweaks has to be installed under `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks`
 
 #### You forgot your CET keybind&#x20;
@@ -324,11 +324,11 @@ Delete the file `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\bindings.jso
 #### A CET script
 
 Find the CET log at `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\cyber_engine_tweaks.log` and check if it contains any errors. \
-If not, navigate to the CET folder and search for [log files](./#finding-the-broken-mod-log-files). (Do not change folders, and do not delete anything - just use the instructions below how to find the files.) &#x20;
+If not, navigate to the CET folder and search for [log files](users-troubleshooting.md#finding-the-broken-mod-log-files). (Do not change folders, and do not delete anything - just use the instructions below how to find the files.) &#x20;
 
 #### An ArchiveXL/TweakXL mod
 
-Go to `Cyberpunk 2077\red4ext` and check the [log files](./#finding-the-broken-mod-log-files). (Do not change folders, and do not delete anything - just use the instructions below how to find the files.) &#x20;
+Go to `Cyberpunk 2077\red4ext` and check the [log files](users-troubleshooting.md#finding-the-broken-mod-log-files). (Do not change folders, and do not delete anything - just use the instructions below how to find the files.) &#x20;
 
 ## The nuclear option: a clean install
 
@@ -370,7 +370,7 @@ Rename or remove the following folders:
 
 > Cyberpunk 2077 encountered an error caused by corrupted or missing archives and and will now be forced to close. Please verify...
 
-One of the .archive files in your folder is broken. To find out which one, try the [bisect](./#finding-the-broken-mod-bisecting) approach.
+One of the .archive files in your folder is broken. To find out which one, try the [bisect](users-troubleshooting.md#finding-the-broken-mod-bisecting) approach.
 
 ## Corrupted scripts
 
@@ -383,13 +383,13 @@ You have a problem with Red4ext. Try the following steps:
 * you removed a RED4ext mod, but your scripts aren't recompiled and still refer something from removed mod, you have to fix redscript&#x20;
 * you're missing scripts cache file (only possible if you manually delete it) it can't be anything else
 
-If that doesn't solve your problems or you run into an error with script files, check [Redscript Compilation Failed](./#redscript-compilation-failed).
+If that doesn't solve your problems or you run into an error with script files, check [Redscript Compilation Failed](users-troubleshooting.md#redscript-compilation-failed).
 
 ## Redscript Compilation Failed
 
 > REDScript compilation failed. The game will start, but none of the scripts will take effect. This is caused by errors in...
 
-![](../../.gitbook/assets/troubleshooting\_redscript\_compilation\_failed.png)
+![](../.gitbook/assets/troubleshooting\_redscript\_compilation\_failed.png)
 
 If the error goes away at any point during this guide, abort.
 
@@ -457,18 +457,18 @@ Make sure your game starts up without error.
 It's time to put your mods back and see if you can start the game. If you start with the most common ones (such as [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/)/[TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/)), you can find further help if you run into issues.
 
 {% hint style="danger" %}
-Do **not** add all mods at once. Install them in chunks and verify that your game starts correctly. (see "[Finding the broken mod (bisecting)](./#finding-the-broken-mod-bisecting)" for further intel).
+Do **not** add all mods at once. Install them in chunks and verify that your game starts correctly. (see "[Finding the broken mod (bisecting)](users-troubleshooting.md#finding-the-broken-mod-bisecting)" for further intel).
 {% endhint %}
 
 **Hopefully, your problem should be gone now.**&#x20;
 
-If it isn't, see "[Finding the broken mod (bisecting)](./#finding-the-broken-mod-bisecting)" as for how to identify the broken mod.&#x20;
+If it isn't, see "[Finding the broken mod (bisecting)](users-troubleshooting.md#finding-the-broken-mod-bisecting)" as for how to identify the broken mod.&#x20;
 
 #### If you are using a mod manager: Try installing it manually
 
 While mod managers are very reliable and get better with every new release, you should rule out that they are the cause of the problem by installing the mod from hand.
 
-If everything else works and installing the mod by hand still breaks compilation, then it is broken. See "[Dealing with a broken mod](./#dealing-with-a-broken-mod)" below. start your game client's file verification.&#x20;
+If everything else works and installing the mod by hand still breaks compilation, then it is broken. See "[Dealing with a broken mod](users-troubleshooting.md#dealing-with-a-broken-mod)" below. start your game client's file verification.&#x20;
 
 {% hint style="success" %}
 After the missing files have been recovered, you will now have what amounts to a clean install!
@@ -496,7 +496,7 @@ Repeat the process by installing the dependencies' dependencies, until you have 
 
 ### 2. Check the mod's description
 
-Often, the description contains detailed installation instructions, known incompatibilities and/or workarounds. Sometimes, mods worked on past versions of Cyberpunk, but the author stopped updating. In that case, proceed to [point 5](./#5.-hands-on-troubleshooting) of this list.
+Often, the description contains detailed installation instructions, known incompatibilities and/or workarounds. Sometimes, mods worked on past versions of Cyberpunk, but the author stopped updating. In that case, proceed to [point 5](users-troubleshooting.md#5.-hands-on-troubleshooting) of this list.
 
 {% hint style="danger" %}
 Before you get upset, please keep in mind that modders don't do this for a living (these are called "game developers" and they get paid for it). Somebody made this **in their spare time, for their own use,** and then decided to **share it with you for free**. Do you know the easiest way to avoid toxic users? It's **not publishing your mods**. No reward system, credit points or reputation will ever make up for online abuse.
@@ -530,9 +530,9 @@ At this point, you have exhausted all easily accessible solutions. If you still 
 This is the point where you might want to join a [modding discord](https://discord.gg/redmodding), because now you're entering the territory where other modders can actually help you.
 {% endhint %}
 
-#### [Check the log files](./#finding-the-broken-mod-log-files)
+#### [Check the log files](users-troubleshooting.md#finding-the-broken-mod-log-files)
 
-Usually, there will be a [log file](./#finding-the-broken-mod-log-files) that will point you towards the source of your problem. If there isn't (the game loads and the mod just fails silently), that means that the error is inside the archive and you have to become a modder.
+Usually, there will be a [log file](users-troubleshooting.md#finding-the-broken-mod-log-files) that will point you towards the source of your problem. If there isn't (the game loads and the mod just fails silently), that means that the error is inside the archive and you have to become a modder.
 
 #### Fixing scripts
 
@@ -543,7 +543,7 @@ Open up that file in a text editor like [Notepad++](https://notepad-plus-plus.or
 Sometimes, such mistakes are trivial — a forgotten **,** or incorrect file encoding. Often, they are not.
 
 {% hint style="info" %}
-A tip for [nil access error in lua](../../modding-guides/everything-else/scripting-best-practices-pitfalls.md#fixing-preventing-nil-access)
+A tip for [nil access error in lua](../modding-guides/everything-else/scripting-best-practices-pitfalls.md#fixing-preventing-nil-access)
 {% endhint %}
 
 #### Ascending from user to modder

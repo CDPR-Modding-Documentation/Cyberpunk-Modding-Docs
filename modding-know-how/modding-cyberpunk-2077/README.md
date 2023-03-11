@@ -1,24 +1,26 @@
 ---
-description: Welcome
+description: Making your own
 ---
 
-# Modding Cyberpunk 2077
+# ℹ Creators: Modding Cyberpunk 2077
 
-## Introduction
+{% hint style="info" %}
+This page contains instructions on **making** mods. If you want to install mods instead, check [here](../../help/users-modding-cyberpunk-2077/).&#x20;
+{% endhint %}
 
-**Cyberpunk 2077 supports modding natively.** Virtually all mods can be added to the game directory _without_ the need to overwrite base game files.&#x20;
+This section contains **general know-how** and theory.&#x20;
 
-## Installing Mods
+## Here, you can find
 
-### Archives
+* an overview on [existing frameworks](../frameworks/) and [tools](../modding-tools/)
+* information on [folder structure and file types](folder-structure-and-files.md) inside a mod
+* A guide on how to [analyse other mods](analysing-other-mods.md)
+* Information on [Cyberpunk materials](materials-how-to-configure-them/) and how to configure them
+* [Reference lists and cheat sheets](../references-lists-and-overviews/) to quickly look up files in the game paths
+* Information on [textures](../textures/) and [how the game uses them for UI elements](../textures/game-icons-the-inkatlas-file.md)
 
-The following directories are used by Cyberpunk 2077 to load user-generated archive files.
+If you are looking for guides to follow, check the **Modding: Guides** section.
 
-\
-**STEAM**\
-`C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\archive\pc\mod`
-
-**GOG**\
-****`C:\Program Files (x86)\GOG Galaxy\Games\Cyberpunk 2077\archive\pc\mod`
-
-### Framework-Based Mods
+{% content-ref url="broken-reference" %}
+[Broken link](broken-reference)
+{% endcontent-ref %}
