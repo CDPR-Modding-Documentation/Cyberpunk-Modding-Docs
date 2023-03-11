@@ -76,7 +76,7 @@ Please see the corresponding [sub-page](npvs-v-as-npc-custom-npcs.md)
 |                                                                                                     |                              |
 | --------------------------------------------------------------------------------------------------- | ---------------------------- |
 | [Resources and tutorials](https://drive.google.com/drive/folders/1WjLBVoGYsjkEBhpiwjg0iXGpAb4zeb1H) | Google Drive, by nanarc#1301 |
-|                                                                                                     |                              |
+| [Tutorials](https://xbaebsae.jimdofree.com/tutorials/)                                              | xbaebsae's website           |
 
 |                                                                                     |                        |
 | ----------------------------------------------------------------------------------- | ---------------------- |
