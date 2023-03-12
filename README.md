@@ -22,6 +22,8 @@ This wiki is a community project! Do you want to improve or add anything? [Start
 
 ## Making mods
 
+Download [Wolvenkit](https://github.com/WolvenKit/WolvenKit/releases) and get cracking!
+
 {% content-ref url="modding-know-how/modding-cyberpunk-2077/" %}
 [modding-cyberpunk-2077](modding-know-how/modding-cyberpunk-2077/)
 {% endcontent-ref %}
