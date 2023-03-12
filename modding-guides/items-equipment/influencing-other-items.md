@@ -21,7 +21,7 @@ This section assumes that you're loading appearance parts via [associated .ent f
 
 In the .app file, each appearance lets you define [PartsOverrides](adding-new-items.md#appearance.app), which — as the name implies — let you override the appearance of parts. An entry looks as follows:
 
-<figure><img src="../../.gitbook/assets/Screenshot 2022-11-14 at 09.35.06.png" alt=""><figcaption><p>Overwrite the component "<code>kimono</code>" and "<code>kimono_filler</code>", which are defined in the file "<code>kimono_meshentity.ent</code>"</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/parts_values_parts_overrides.png" alt=""><figcaption><p>Overwrite the component "<code>kimono</code>" and "<code>kimono_filler</code>", which are defined in the file "<code>kimono_meshentity.ent</code>"<br>This is the reason why Cyberpunk has all the player components stored in .ent files!</p></figcaption></figure>
 
 Where **partsValues** lets you define the individual entity files that you'll load, **partsOverrides** lets you assign properties which take precedence over those defined in the .ent file:
 
