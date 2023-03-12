@@ -6,10 +6,12 @@ description: A list of modding frameworks and links to their documentation
 
 ## What is a framework?
 
-While the game natively supports mods, this would have had us limited to replacing already existing items, but we wanted flying cars. So a bunch of brilliant people drilled deep into the code of Cyberpunk2077 and created a bunch of tools that let us do more.
+While the game natively supports mods, this would have had us limited to replacing already existing items, but we wanted flying cars. So a bunch of brilliant people drilled deep into the code of Cyberpunk 2077 and created a bunch of tools that let us do more.
+
+The most prominent example of a framework mod is the **Skyrim Script Extender** — fortunately, Cyberpunk 2077 is rather more stable.
 
 {% hint style="danger" %}
-Due to the fact that frameworks interact with the game's code on such a deep level, they are prone to **breaking** whenever CDPR&#x20;
+Since this kind of mod interacts with the game's code on such a fundamental level, they are prone to **breaking** whenever CDPR changes their API. This is the reason why game updates break mods — we recommend to [**turn off auto-update**](../../help/users-modding-cyberpunk-2077/users-preventing-auto-updates.md) and manually upgrading once the frameworks you need have been brought up-to-date.
 {% endhint %}
 
 ## Existing Frameworks <a href="#popular-frameworks" id="popular-frameworks"></a>

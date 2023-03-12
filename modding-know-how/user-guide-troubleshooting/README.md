@@ -13,14 +13,19 @@ This page contains troubleshooting information for end users (people who are not
 ## Navigation
 
 {% hint style="danger" %}
-Before you start debugging, make sure that **all mods and dependencies** have the latest version, in particular [Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.0.8).
+Before you start debugging, make sure that&#x20;
 
-Find a download-ready collection for Vortex [here](https://next.nexusmods.com/cyberpunk2077/collections/s1jcf8).
+* your graphics driver is up-to-date
+* you have the most recent version of [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.3-windows-x64-installer) installed
+*   **all mods and dependencies** have the latest version, in particular [Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.0.8).
+
+    \
+    Find a download-ready collection for Vortex [here](https://next.nexusmods.com/cyberpunk2077/collections/s1jcf8).
 {% endhint %}
 
 This section aims to give you a quick overview. If your exact problem isn't listed here, please look through the different sections below and try anything that looks promising.
 
-[Preventing the game from auto-updating](./#preventing-the-game-from-auto-updating)
+[There was a game update and now your mods aren't working](../../help/users-modding-cyberpunk-2077/users-preventing-auto-updates.md)
 
 [Your game isn't starting](./#your-game-isnt-starting-crashes-to-desktop)
 
@@ -46,31 +51,7 @@ To enable REDmods, check [here](https://wiki.redmodding.org/cyberpunk-2077-moddi
 
 ##
 
-## Preventing the game from auto-updating
-
-### Steam
-
-If you have a Steam install and would like to have more control over the game autoupdates, this is how you do it:
-
-#### Step 1
-
-Find the `steamapps` folder, mine is `C:\Steam\steamapps` and locate this file:
-
-`appmanifest_1091500.acf`
-
-#### Step 2
-
-Set that file to read-only:
-
-&#x20;![](<../../.gitbook/assets/image (2).png>)&#x20;
-
-{% hint style="info" %}
-This will block future autoupdates. If you are ready to update, simply uncheck the Read-only checkbox and go thru the motions
-{% endhint %}
-
-
-
-``
+##
 
 ## Your game isn't starting / Crashes to Desktop
 

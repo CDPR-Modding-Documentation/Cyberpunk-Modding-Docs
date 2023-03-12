@@ -11,10 +11,14 @@ This page contains instructions on **installing** mods. If you want to **create*
 ## How to install mods
 
 {% hint style="danger" %}
-**TL;DR:** When installing a mod, make sure to install **all** of its dependencies. You will find a list on the Nexus description tab under "Requirements".\
+**TL;DR:**&#x20;
+
+_The first thing you will be told on Discord is to read this guide, so you might as well do that before wasting everyone's time._
+
+When installing a mod, make sure to install **all** of its dependencies. You will find a list on the Nexus description tab under "Requirements".\
 If you do not do this, your mod will not work.
 
-The first thing you will be told on Discord is to read this guide, so you might as well do that before going there.
+You need to [enable REDmod](./#installing-and-activating-redmod). Without it, most of your mods will not work.
 {% endhint %}
 
 You mod **Cyberpunk 2077** by adding files to your **game directory**. There is no need to overwrite base game files, since the game natively supports modding.&#x20;
@@ -40,6 +44,10 @@ Regardless of your past experiences, the [Nexus mod manager](https://www.nexusmo
 ### Dependencies / Requiremends
 
 Although Cyberpunk natively supports modding, this out-of-the-box support is extremely limited. To allow modders greater freedom, a number of frameworks have been created to allow e.g. adding items, influencing the weather, or add flying cars.
+
+{% hint style="warning" %}
+Since this kind of mod interacts with the game's code on such a fundamental level, they are prone to **breaking** whenever CDPR changes their API. This is the reason why game updates break mods — we recommend to [**turn off auto-update**](users-preventing-auto-updates.md) and manually upgrading once the frameworks you need have been brought up-to-date.
+{% endhint %}
 
 {% hint style="danger" %}
 Unless they are marked as optional, you **have** to install the dependencies, and their dependencies as well.&#x20;
