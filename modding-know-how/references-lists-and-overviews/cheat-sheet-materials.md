@@ -79,7 +79,7 @@ half-transparent black: `base\environment\decoration\electronics\devices\device_
 
 #### Coloured Plastic
 
-Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room_plastic_black.mi`
+Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room\_plastic_black.mi`
 
 |                |                                                                                                                                    |
 | -------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
