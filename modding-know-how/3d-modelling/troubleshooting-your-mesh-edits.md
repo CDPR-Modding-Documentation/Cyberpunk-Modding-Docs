@@ -15,6 +15,9 @@ You get an error message like this:
 1. Check if your mesh is **triangulated**. If you aren't sure whether or not it is, go into edit mode, select everything, and go to Face -> Triangulate (Shortcut: Ctrl+T)
 2. If that doesn't change anything, make sure that you have the correct box checked upon export:\
    ![](../../.gitbook/assets/3d\_troubleshooting\_export\_tangents.png)
+3. If that's not the issue either, check that each of your submeshes has an UV map: \
+   ![](../../.gitbook/assets/mesh\_troubleshooting\_uv\_map.png)\
+   If not, you have to create one (and probably UV unwrap your mesh).
 
 ### Bone: neutral\_bone not present in export Rig(s)/Import Mesh
 
