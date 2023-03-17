@@ -37,6 +37,8 @@ This section aims to give you a quick overview. If your exact problem isn't list
 
 [You have trouble with CET (Cyber Engine Tweaks)](./#cet)
 
+[XML Document parsed with errors](./#xml-document-parsed-with-errors)
+
 [You installed a mod, but it's not doing anything](./#mod-s-arent-loading-triggering)
 
 A mod is causing problems, and you have no idea which [(1)](./#finding-the-broken-mod-bisecting) [(2)](./#finding-the-broken-mod-log-files)
@@ -347,7 +349,7 @@ Rename or remove the following folders:
 /archive/pc/mod
 ```
 
-### Corrupted archives
+## Corrupted archives
 
 > Cyberpunk 2077 encountered an error caused by corrupted or missing archives and and will now be forced to close. Please verify...
 
@@ -365,6 +367,14 @@ You have a problem with Red4ext. Try the following steps:
 * you're missing scripts cache file (only possible if you manually delete it) it can't be anything else
 
 If that doesn't solve your problems or you run into an error with script files, check [Redscript Compilation Failed](./#redscript-compilation-failed).
+
+## XML Document parsed with errors
+
+`XML document parsed with errors: C:\Path\toCyberpunk 2077\r6/config/inputUserMappings.xml`\
+`Error description: Error parsing element attribute`
+
+According to InputLoader's [documentation](https://www.nexusmods.com/cyberpunk2077/mods/4575), you can ignore this. Keep searching!\
+(You can also try reinstalling InputLoader and hope that the error goes away)
 
 ## Redscript Compilation Failed
 
