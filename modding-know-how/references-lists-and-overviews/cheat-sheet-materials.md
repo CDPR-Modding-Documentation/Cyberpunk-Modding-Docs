@@ -77,6 +77,24 @@ half-transparent black: `base\environment\decoration\electronics\devices\device_
 | gradient               | base\environment\decoration\decals\mesh\_decal\_lines\textures\lines\_plain\_black.mi                         |
 | plastic                | see "[coloured plastic](cheat-sheet-materials.md#coloured-plastic)" below                                     |
 
+####
+
+#### Screen
+
+A turned-off terminal screen. Tweak Roughness/Metalness for gloss.&#x20;
+
+`base\fx\shaders\parallaxscreen.mt`
+
+|                    |                                      |
+| ------------------ | ------------------------------------ |
+| ParalaxTexture     | base\materials\placeholder\black.xbm |
+| LayersSeparation   | 1                                    |
+| ScanlinesIntensity | 0                                    |
+| ScanlinesDensity   | 0                                    |
+| Emissive           | 0                                    |
+| Roughness          | 0.200000003                          |
+| Metalness          | 0                                    |
+
 #### Coloured Plastic
 
 Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room\_plastic_black.mi`
