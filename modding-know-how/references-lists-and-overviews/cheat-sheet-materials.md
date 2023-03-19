@@ -45,10 +45,9 @@ Works exactly like multilayered, but uses `base\characters\common\cyberspace\sil
 
 ## Metal Materials
 
-|                                                                            |                                                                            |
-| -------------------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| `base\characters\main_npc\hanako\t0_001_wa_body__hanako_dec_straps.mesh`   | Gold: Hanako's heatsinks (only one entry in preloadLocalMaterialInstances) |
-| `base\environment\decoration\containers\cases\coffin\textures\m_z_gold.mi` | a shiny gold                                                               |
+|                                                                            |                                 |
+| -------------------------------------------------------------------------- | ------------------------------- |
+| `base\environment\decoration\containers\cases\coffin\textures\m_z_gold.mi` | a shiny gold (metal\_base.remt) |
 
 ## Emissive Materials
 
