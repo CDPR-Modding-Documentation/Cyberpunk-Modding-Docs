@@ -120,6 +120,20 @@ If you don't have a 3d print entry in the tools of your 3d viewport, you might n
 
 ## In-Game
 
+### My mesh won't show up
+
+#### In Blender
+
+* make sure that you have exactly one UV map
+* check **Face Orientation** — most materials won't show backfaces (red). You can import submeshes with the suffix `_doubled` to make WolvenKit generate them for you, like it does with hair.&#x20;
+
+<figure><img src="../../.gitbook/assets/mesh_troubleshooting_checks.png" alt=""><figcaption></figcaption></figure>
+
+#### In Wolvenkit
+
+When saving your mesh, check the console for errors. In version >= 8.9.0, a basic material validation is taking place. \
+If you don't see any warnings, make sure that the resource paths in your mesh are correct and that you aren't loading invisible textures.
+
 ### My mesh won't move at all
 
 Some meshes require an entAnimatedComponent along with the garment's component. Check [here](../../modding-guides/npcs/appearances-change-the-looks.md#animations-if-you-cant-avoid-them-copy-them-as-well) for details.
