@@ -62,6 +62,8 @@
     * [Troubleshooting normal maps](modding-know-how/3d-modelling/self-made-normal-maps/troubleshooting-normal-maps.md)
   * [Troubleshooting your mesh edits](modding-know-how/3d-modelling/troubleshooting-your-mesh-edits.md)
   * [Garment Support: How does it work?](modding-know-how/3d-modelling/garment-support-how-does-it-work.md)
+  * [Dangle bones](modding-know-how/3d-modelling/dangle-bones/README.md)
+    * [Moving a Dangle Chain](modding-know-how/3d-modelling/dangle-bones/moving-a-dangle-chain.md)
 * [🖼 Textures](modding-know-how/textures/README.md)
   * [Images: Importing, editing, exporting](modding-know-how/textures/images-importing-editing-exporting.md)
   * [Game icons: The inkatlas file](modding-know-how/textures/game-icons-the-inkatlas-file.md)
