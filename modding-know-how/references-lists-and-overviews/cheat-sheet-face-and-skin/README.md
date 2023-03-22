@@ -48,8 +48,8 @@ Style order is Default - Glossy - Matte (no suffix, \_02_, \__03)
 Every complexion has its own associated texture file. These are sorted by body gender under
 
 ```
-base\characters\head\wa\h0_000_wa_c__basehead\textures\h0_000_wa_c__basehead_d0X.xbm
-base\characters\head\ma\h0_000_ma_c__basehead\textures\h0_000_ma_c__basehead_d0X.xbm
+base\characters\head\wa\h0_001_wa_c__basehead\textures\h0_000_wa_c__basehead_d0X.xbm
+base\characters\head\ma\h0_001_ma_c__basehead\textures\h0_000_ma_c__basehead_d0X.xbm
 ```
 
 The files are ending in `01..05`. Each complexion has its own appearance in the head mesh, e.g.:&#x20;
