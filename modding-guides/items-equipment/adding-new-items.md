@@ -188,7 +188,7 @@ Before WolvenKit Nightly 2022-11-01, `yourModName.yaml` will be located in the f
 5. Open the file `mesh_entity.ent`\
    Select `resolvedDependencies` and delete all the entries. (We don't need Judy's top anymore.)
 6. Make a back-up copy of your mesh, then open it.
-   1. Expand the list `materials`. Open the appearance `default` and check which material is linked in the `chunkMaterials` array.
+   1. Expand the first `appearances` at the top of the file. Open the appearance `default` and check which material is linked in the `chunkMaterials` array.
    2. Expand `localMaterialBuffer.materials` . Delete all entries that aren't used in `default`.\
       ℹ Some meshes don't have `localMaterialBuffer` — look for `preloadLocalMaterialInstances instead`
    3. Expand `materialEntries`. Delete all entries that you also removed from `localMaterialBuffer`.\
