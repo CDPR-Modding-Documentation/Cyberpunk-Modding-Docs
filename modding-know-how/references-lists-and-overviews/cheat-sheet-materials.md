@@ -30,7 +30,9 @@ base\characters\cyberware\player\a0_005__strongarms\entities\meshes\textures\whi
 A white mlMask will apply the selected material to the whole surface of the mesh.
 {% endhint %}
 
-## Textured Material
+## Textured Materials
+
+For further details, see [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#textured-material).
 
 |                                                             |                                                                                                                                |
 | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -62,39 +64,21 @@ See [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#emissive-m
 | base\fx\shaders\signages.mt                                                                                 | The standard neon for advertising fonts in Night City. Comes in many colours, can be customized via textures and gradients. Check "city\_deco\_font" for examples. |
 | base\fx\shaders\hologram\_two\_sided.mt                                                                     | half-transparent holo material, allows three colours to tint it                                                                                                    |
 
-## Other
+## Glass
 
-### Glass
+For more details on glass materials and instructions on how to configure them, see [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#glass).&#x20;
 
-half-transparent black: `base\environment\decoration\electronics\devices\device_neokitsch\textures\device_neokitsch_glass_black.mi`
+|                                                                            |                                                                   |
+| -------------------------------------------------------------------------- | ----------------------------------------------------------------- |
+| Basic glass, with warping properties, simple tint as color, simple opacity | `base\materials\glass_onesided.mt`                                |
+| Non-warping glass, destructible, tintable via colors                       | `base\vehicles\common\materials\glass_windshield_tinted_black.mi` |
+| Device screen glass                                                        | `base\fx\shaders\parallaxscreen.mt`                               |
 
-### Recolour/tint
+### Gradient recolor
 
-|                        |                                                                                                               |
-| ---------------------- | ------------------------------------------------------------------------------------------------------------- |
-| half-transparent glass | base\environment\decoration\electronics\devices\device\_neokitsch\textures\device\_neokitsch\_glass\_black.mi |
-| gradient               | base\environment\decoration\decals\mesh\_decal\_lines\textures\lines\_plain\_black.mi                         |
-| plastic                | see "[coloured plastic](cheat-sheet-materials.md#coloured-plastic)" below                                     |
+`base\environment\decoration\decals\mesh_decal_lines\textures\lines_plain_black.mi`
 
-####
-
-#### Screen
-
-A turned-off terminal screen. Tweak Roughness/Metalness for gloss.&#x20;
-
-`base\fx\shaders\parallaxscreen.mt`
-
-|                    |                                      |
-| ------------------ | ------------------------------------ |
-| ParalaxTexture     | base\materials\placeholder\black.xbm |
-| LayersSeparation   | 1                                    |
-| ScanlinesIntensity | 0                                    |
-| ScanlinesDensity   | 0                                    |
-| Emissive           | 0                                    |
-| Roughness          | 0.200000003                          |
-| Metalness          | 0                                    |
-
-#### Coloured Plastic
+### Coloured Plastic
 
 Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room\_plastic_black.mi`
 
@@ -105,3 +89,7 @@ Use `engine\materials\metal_base.remt`, the example below has been copied from `
 | Roughness      | optional: path to your roughness map                                                                                               |
 | RoughnessBias  | 0.200000003                                                                                                                        |
 | BaseColorScale | Colour as x/y/z values (color picker blend file [here](https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks)) |
+
+## Liquid
+
+Use `base\materials\fillable_fluid_vertex.mt` or see [here ](../modding-cyberpunk-2077/materials-how-to-configure-them/#liquid)for details.
