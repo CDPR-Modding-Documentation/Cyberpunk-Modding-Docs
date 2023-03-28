@@ -8,8 +8,8 @@ description: Frequently used tools for modding workflows
 
 ### WolvenKit
 
-{% content-ref url="https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/" %}
-[WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/)
+{% content-ref url="http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/" %}
+[WolvenKit](http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/)
 {% endcontent-ref %}
 
 ### Notepad++

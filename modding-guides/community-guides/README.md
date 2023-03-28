@@ -63,13 +63,13 @@ Please see the corresponding [sub-page](npvs-v-as-npc-custom-npcs.md)
 
 ## Know-how
 
-| Tutorial                                                                                                                                                  |                                             |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| [Exporting to Blender](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/guides/modding-community/exporting-to-blender)                                     | Step-by-step guide for exporting to Blender |
-| [Exporting Rigs and Anims](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)                  | Adding the rigs to the models in Blender    |
-| [Exporting Streaming Sectors to Blender](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/guides/modding-community/exporting-streaming-sectors-to-blender) | How to export parts of Night City           |
-| [Modifying Textures with WKit 8.7](https://www.youtube.com/watch?v=agqu\_w88bZs)                                                                          | Youtube tutorial                            |
-| [Modding a normal map of V's head](https://docs.google.com/document/d/1sg7\_wQbQTagJG0SGcfTnxA2m3tiO-ghOHOHpmiuPv70/edit?usp=sharing)                     | Google Doc by nanarc                        |
+| Tutorial                                                                                                                                                |                                             |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| [Exporting to Blender](http://localhost:5000/s/-MP\_ozZVx2gRZUPXkd4r/guides/modding-community/exporting-to-blender)                                     | Step-by-step guide for exporting to Blender |
+| [Exporting Rigs and Anims](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)                | Adding the rigs to the models in Blender    |
+| [Exporting Streaming Sectors to Blender](http://localhost:5000/s/-MP\_ozZVx2gRZUPXkd4r/guides/modding-community/exporting-streaming-sectors-to-blender) | How to export parts of Night City           |
+| [Modifying Textures with WKit 8.7](https://www.youtube.com/watch?v=agqu\_w88bZs)                                                                        | Youtube tutorial                            |
+| [Modding a normal map of V's head](https://docs.google.com/document/d/1sg7\_wQbQTagJG0SGcfTnxA2m3tiO-ghOHOHpmiuPv70/edit?usp=sharing)                   | Google Doc by nanarc                        |
 
 ## Collections
 

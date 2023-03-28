@@ -5,8 +5,16 @@ description: An overview and introduction
 # Materials: How to configure them
 
 {% hint style="info" %}
-If you just want a material instance or file to copy, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).
+If you just want a material instance or the right template to start, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).
 {% endhint %}
+
+## Checking material properties
+
+You can see a material's default properties by opening the `.(re)mt` file in WolvenKit and inspecting the parameters array. Any properties that you don't overwrite by adding them to your CMaterialInstance or .mi file will take the default properties specified in the file.
+
+<figure><img src="../../../.gitbook/assets/material_properties.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Multilayered Material
 
@@ -25,6 +33,10 @@ To set it up, use these keys for the "values" array of your material:
 ## Textured Material
 
 The most commonly used material for anything textured is `engine\materials\metal_base.remt`. Despite its name, this material isn't necessarily metallic.
+
+{% hint style="info" %}
+You can also use this material as **emissive**, for a documentation, see [below](./#emissive-material).&#x20;
+{% endhint %}
 
 To make your mesh load a texture, use the following `CKeyValuePair`s in your material's "values" array:
 
@@ -50,6 +62,14 @@ normals: **false**\
 diffuse/albedo: **true**\
 anything that is used in .inkatlas files: **true**
 {% endhint %}
+
+### Further properties
+
+
+
+|           |                                    |
+| --------- | ---------------------------------- |
+| LayerTile | Material scaling (zoom on surface) |
 
 ## Plastic
 

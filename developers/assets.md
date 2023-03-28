@@ -11,7 +11,7 @@ The following list contains file formats that are used to compose visual assets 
 {% hint style="info" %}
 The community-devloped tool **WolvenKit** can be used to browse game archives and extract game files.\
 \
-[Learn more](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/)
+[Learn more](http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/)
 {% endhint %}
 
 ### MESH

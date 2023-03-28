@@ -5,7 +5,11 @@ description: Various kinds of materials, and where to find them
 # Cheat sheet: Materials
 
 {% hint style="info" %}
-This page contains example materials that you can copy and change. If you don't know how to do that yet, check [here](../modding-cyberpunk-2077/materials-how-to-configure-them/).
+This page contains a brief overview of existing materials. **For a more in-depth explanation as well as downloadable example files, check** [**this page**](../modding-cyberpunk-2077/materials-how-to-configure-them/)**.**
+
+
+
+If you don't know how to edit material properties, check [here](../modding-cyberpunk-2077/materials-how-to-configure-them/).
 {% endhint %}
 
 ## Simple / Basic materials
