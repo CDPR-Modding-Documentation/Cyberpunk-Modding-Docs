@@ -20,7 +20,7 @@ Before you start debugging, make sure that&#x20;
 *   **all mods and dependencies** have the latest version, in particular [Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.0.8).
 
     \
-    Find a download-ready collection for Vortex [here](https://next.nexusmods.com/cyberpunk2077/collections/s1jcf8).
+    Find a download-ready collection for Vortex [here](https://next.nexusmods.com/cyberpunk2077/collections/r1flnc?tab=Mods).
 {% endhint %}
 
 This section aims to give you a quick overview. If your exact problem isn't listed here, please look through the different sections below and try anything that looks promising.
@@ -317,28 +317,41 @@ Go to `Cyberpunk 2077\red4ext` and check the [log files](./#finding-the-broken-m
 
 If none of the troubleshooting steps above helped and your game won't start, you'll want to reset it to a clean install. Fortunately, you don't have to redownload the entire game for that.&#x20;
 
-### Quick (download <4GB)
-
 {% hint style="danger" %}
 Unless you back them up, your mods will be **lost**. If you don't want that, make backups of the following folders:
 
-* archive/pc/mod (_manually installed mods_)
-* bin/x64/plugins/cyber\_engine\_tweaks (_CET settings and AMM_)
+* `/mods` (_manually installed redmods, unnecessary if you use Vortex_)
+* `/archive/pc/mod` (_manually installed mods, unnecessary if you use Vortex_)
+* `/bin/x64/plugins/cyber_engine_tweaks` (_CET settings and AMM_)
+* `/r6/scripts`
+* `/r6/tweaks`
+{% endhint %}
+
+### Quick (download <4GB)
+
+{% hint style="danger" %}
+Unless you [back up your mods and scripts](./#the-nuclear-option-a-clean-install), all your settings and manually installed mods will be lost.
 {% endhint %}
 
 {% hint style="warning" %}
 Do **not** delete `archive/pc/content` unless you want to reinstall your **entire** game.
 {% endhint %}
 
-Inside the Cyberpunk 2077 install folder, delete every folder **but** `archive/pc/content`. Afterwards, verify your files.
+Inside the Cyberpunk 2077 install folder, delete every folder **but** `archive/pc/content`.&#x20;
 
-### Modular / minimal download (download <1GB)
+Afterwards, verify your files.
 
-{% hint style="success" %}
-Will download < 1GB. The guide will leave you with a backup of all your mods and data.
+### Modular / minimal download (download <1GB
+
+{% hint style="danger" %}
+Unless you [back up your mods and scripts](./#the-nuclear-option-a-clean-install), all your settings and manually installed mods will be lost.
 {% endhint %}
 
-Rename or remove the following folders:
+{% hint style="success" %}
+Will download < 1GB.&#x20;
+{% endhint %}
+
+Rename or remove the following folders. If you do not have them, you don't need to do anything.
 
 ```
 /mods
@@ -348,6 +361,51 @@ Rename or remove the following folders:
 /red4ext
 /archive/pc/mod
 ```
+
+Afterwards, verify your files.
+
+### Starting from scratch
+
+You have completed either of the previous steps. Your game should start now. **If it does not**, you have a problem that is not related to Cyberpunk. Make sure to follow the hints in the red box [at the very beginning of this guide](./#navigation).
+
+Now it's time to **systematically** install mods. We'll start by installing the frameworks and making sure that the game starts up without any framework-dependent mods. Afterwards, you can add back all of your mods, and if the game stops working, find the offender via [bisect](./#finding-the-broken-mod-bisecting).&#x20;
+
+{% hint style="success" %}
+Don't worry about your savegames — those are fine, even if they won't load right now. We're just laying the foundation here that you can later build upon.
+{% endhint %}
+
+Let's go about it step-by-step.
+
+#### Installing the frameworks
+
+Check the [framework page](../frameworks/). For each of the frameworks, complete the following steps:
+
+* If you didn't have it in your previous install, skip it.
+* Install it (manually or via Vortex, your choice)
+* Install **all of its dependencies**
+* Optional: Start the game and load a savegame (you can also do this after installing all of them, but if you run into issues, that will make isolating the point of failure more difficult).
+* Optional (for CET): Start the game and make sure that it asks you to bind a key. If not, check the [corresponding section of this guide.](./#cet)
+
+Once you are done, start up your game and load a savegame. **This should work**.
+
+#### Troubleshooting the frameworks
+
+* If your game crashes when loading a save, try an older, un-modded save. If you do not have one, start a new game, save as soon as you can, and load that one instead. (Don't panic, your savegame is most likely fine)
+* If you add a framework and your game starts crashing before loading a save, you need to [check the log files](./#check-the-log-files) or peruse the rest of this guide and follow the steps there.
+
+{% hint style="warning" %}
+You **need** to complete this step before proceeding. There are no shortcuts to carry you past it, nothing you can install, no one to save you. Fortunately, this is not rocket science. Just be diligent, follow the steps, and consult the rest of this guide.
+{% endhint %}
+
+#### Adding back your mods
+
+Now it's time to restore your mods. If you have multiple folders backed up, put them back one by one – you can find a list [at the start of this section](./#the-nuclear-option-a-clean-install).&#x20;
+
+If you do not have multiple folders and instead used Vortex, head directly to the [bisecting](./#finding-the-broken-mod-bisecting) section and pretend you have just removed all your mods.
+
+{% hint style="danger" %}
+Do **not** add all mods at once. Install them in chunks and verify that your game starts correctly. (see "[Finding the broken mod (bisecting)](./#finding-the-broken-mod-bisecting)" for further intel).
+{% endhint %}
 
 ## Corrupted archives
 
@@ -443,33 +501,17 @@ It's possible that `final.redscripts.bk` was corrupted as well. Delete `final.re
 Make sure your game starts up without error.
 {% endhint %}
 
-### 4. Reinstall your mods
-
-It's time to put your mods back and see if you can start the game. If you start with the most common ones (such as [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/)/[TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/)), you can find further help if you run into issues.
-
-{% hint style="danger" %}
-Do **not** add all mods at once. Install them in chunks and verify that your game starts correctly. (see "[Finding the broken mod (bisecting)](./#finding-the-broken-mod-bisecting)" for further intel).
-{% endhint %}
-
-**Hopefully, your problem should be gone now.**&#x20;
-
-If it isn't, see "[Finding the broken mod (bisecting)](./#finding-the-broken-mod-bisecting)" as for how to identify the broken mod.&#x20;
-
-#### If you are using a mod manager: Try installing it manually
-
-While mod managers are very reliable and get better with every new release, you should rule out that they are the cause of the problem by installing the mod from hand.
-
-If everything else works and installing the mod by hand still breaks compilation, then it is broken. See "[Dealing with a broken mod](./#dealing-with-a-broken-mod)" below. start your game client's file verification.&#x20;
-
-{% hint style="success" %}
+{% hint style="info" %}
 After the missing files have been recovered, you will now have what amounts to a clean install!
 {% endhint %}
 
-{% hint style="warning" %}
-If your game still does not launch after you have completed these steps, it is not a problem with Cyberpunk 2077. Update your graphics card driver, install all Windows updates, and make sure that you have the most recent version(s) of .NET framework.&#x20;
+### 4. Reinstall your mods
 
-Doing this a second time won't change the results, unless you have made mistakes in the process.
-{% endhint %}
+**Hopefully, your problem should be gone now.**&#x20;
+
+It's time to put your mods back and see if you can start the game - see [Starting from Scratch](./#starting-from-scratch).
+
+
 
 ## Dealing with a broken mod
 
@@ -499,7 +541,13 @@ As a mod author, I can tell you that I will ignore assholes, but gladly spend an
 
 You're unlikely to be the first person to run into this problem. There is a good chance that the comment section on the download page has helpful information. Look for either a pinned post by the mod's author or a user discussion about your problem — these often contain a solution.
 
-### 4. Contact the mod's author
+### 4. If you are using a mod manager: Try installing it manually
+
+While mod managers are very reliable and get better with every new release, you should rule out that they are the cause of the problem by installing the mod from hand.
+
+If everything else works and installing the mod by hand still breaks compilation, then it is broken. See "[Dealing with a broken mod](./#dealing-with-a-broken-mod)" below. start your game client's file verification.&#x20;
+
+### 5. Contact the mod's author
 
 Describe your problem as clearly as you can, and add all useful data.&#x20;
 
@@ -510,7 +558,7 @@ Describe your problem as clearly as you can, and add all useful data.&#x20;
 **Good bug report (example 2)**: "Hi, when I try to equip Item \<item name and colour>, it doesn't show up and I only get glitches. I'm using Hyst's boob mod and \<specific version and variant> of your mod. I hope you can help me? Thank you for making this."
 
 {% hint style="danger" %}
-As per the last red box, do keep in mind that you're asking a **favour**. The modder doesn't have your problem, and if they do, they know exactly how to fix it.&#x20;
+As per the last red box, do keep in mind that you're asking a **favour**. The modder doesn't have your problem, and if they do, they know **exactly** how to fix it. The most time-efficient response for them is to ghost you, so any kind of response is either them being nice or them losing their temper about yet another entitled idiot who can't read. Don't be the entitled asshole who can't read.
 {% endhint %}
 
 ### 5. Hands-on troubleshooting
