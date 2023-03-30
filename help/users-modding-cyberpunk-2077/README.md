@@ -104,7 +104,7 @@ By default, Vortex will convert everything you download to a REDmod, as this is 
 #### 0. Download and login
 
 1. Download the mod manager from [Nexus](https://www.nexusmods.com/about/vortex/), then log in to your Nexus account.
-2. Set a Mod Staging folder (if it doesn't ask you, open Settings/Mods). **This is where Vortex stores its files**, so do not put it into the game directory.
+2. Set a Mod Staging folder (if it doesn't ask you, open Settings/Mods). **This is where Vortex stores its files**. It needs to be on the same drive as your game, but not the game directory itself.
 3. Add Cyberpunk 2077 — the executable is in the game directory under `/bin/x64/Cyberpunk2077.exe`
 
 #### 1. Install a mod
