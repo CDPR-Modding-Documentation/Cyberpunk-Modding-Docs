@@ -138,11 +138,43 @@ If you don't see any warnings, make sure that the resource paths in your mesh ar
 
 Some meshes require an entAnimatedComponent along with the garment's component. Check [here](../../modding-guides/npcs/appearances-change-the-looks.md#animations-if-you-cant-avoid-them-copy-them-as-well) for details.
 
+### Changes from Blender are missing in-game
+
+For example, you have moved something, but the change doesn't show in the game: this most often happens when you change things around in edit mode, since they are stored as object properties rather than applied immediately.
+
+1. Select the object in edit mode
+2. Press Ctrl+A
+3. Select "All Transforms" to apply all transformations.
+
+![](../../.gitbook/assets/mesh\_troubleshooting\_apply\_transforms.png)
+
+### My mesh is moving weirdly
+
+E.g. you've changed a shape, but now everything moves at an offset.&#x20;
+
+As stated in the [importing/exporting guide](exporting-and-importing-meshes.md), it is easy to fuck up the mesh's properties, and this is most likely what happened. The easiest way to "fix" this is to apply your shape deformation to the original object.
+
+#### Replacing the vertices
+
+1. Import the original object into Blender, without any of your changes. If you have to, reexport the working file from Wolvenkit.\
+   ![](../../.gitbook/assets/mesh\_troubleshooting\_reimport.png)
+2. In Object Mode, select all meshes under the reimported armature (the original ones).
+3. Switch to Edit Mode and select all vertices (Ctrl+A)
+4. Delete them (x, vertices, Return)
+5. Go back to edit mode
+6. For each of your edited objects:&#x20;
+   1. select the submesh that you edited (submesh\_00\_LOD\_1)
+   2. select the empty submesh from the reimported armature (submesh\_00\_LOD\_1.001)
+   3. Join the objects (Ctrl+J). This will fuse your edited mesh into the empty one, retaining all of the original's properties.
+7. You can now delete the empty armature and export the other one for re-import.
+
+<figure><img src="../../.gitbook/assets/mesh_troubleshooting_join_meshes_2.png" alt=""><figcaption><p>After joining the submeshes</p></figcaption></figure>
+
 ### My mesh is completely warped
 
 If you have [added the item](../../modding-guides/items-equipment/adding-new-items.md) via [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl) or [swapped out an in-game item](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md) with something that belongs in a different slot (e.g. a jacket on the head slot), you might have to fix the corresponding entity file.
 
-### My mesh is string cheese/exploding vertices
+### My mesh is string cheese/exploding vertices/a puddle on the floor
 
 #### GarmentSupports
 
