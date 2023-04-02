@@ -434,15 +434,26 @@ If that doesn't solve your problems or you run into an error with script files, 
 According to InputLoader's [documentation](https://www.nexusmods.com/cyberpunk2077/mods/4575), you can ignore this. Keep searching!\
 (You can also try reinstalling InputLoader and hope that the error goes away)
 
+## RED4ext: An exception occurred… permission denied
+
+```
+An exception occured while creating the logger: 
+rotating_file_sink: failed renaming C:\Path\to\Cyberpunk 2077\red4ext\logs\red4ext.log to C:\Path\to\Cyberpunk 2077\red4ext\logs\red4ext.1.log: permission denied
+
+D:\a\Red4ext\Red4ext\src\dll\Utils.cpp:75
+```
+
+An instance of Cyberpunk is already running. Close it.
+
 ## Redscript Compilation Failed
 
 > REDScript compilation failed. The game will start, but none of the scripts will take effect. This is caused by errors in...
 
 ![](../../.gitbook/assets/troubleshooting\_redscript\_compilation\_failed.png)
 
-If the error goes away at any point during this guide, abort.
-
-
+{% hint style="success" %}
+Follow the steps below (best in the order they are given). After each step, check if the error goes away. If it does, you can stop!
+{% endhint %}
 
 ### 1. Make sure that you have the latest versions
 
