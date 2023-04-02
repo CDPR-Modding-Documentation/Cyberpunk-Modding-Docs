@@ -14,7 +14,9 @@ You can see a material's default properties by opening the `.(re)mt` file in Wol
 
 <figure><img src="../../../.gitbook/assets/material_properties.png" alt=""><figcaption></figcaption></figure>
 
+## Roughness/Metalness
 
+<figure><img src="../../../.gitbook/assets/materials_roughness_metalness.png" alt=""><figcaption><p>A roughness/metalness preview. Yes, it's not a sphere. </p></figcaption></figure>
 
 ## Multilayered Material
 
