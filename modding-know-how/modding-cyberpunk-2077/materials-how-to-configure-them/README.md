@@ -69,9 +69,9 @@ anything that is used in .inkatlas files: **true**
 
 
 
-|           |                                    |
-| --------- | ---------------------------------- |
-| LayerTile | Material scaling (zoom on surface) |
+|           |                                                                         |
+| --------- | ----------------------------------------------------------------------- |
+| LayerTile | <p>Material scaling (zoom on surface)<br>> 1 zooms in, >1 zooms out</p> |
 
 ## Plastic
 
