@@ -9,7 +9,7 @@ description: Put your item in place of a default game item. Supports variants.
 **Created by @manavortex**\
 **Published November 05 2022**
 
-****
+
 
 This tutorial will teach you how to switch a player mesh for an NPC garment and map its variants to the existing colours.
 

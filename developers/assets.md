@@ -28,7 +28,7 @@ Parent file for most visual assets which is directly linked by the [**Tweak DB**
 
 ### APP (appearance)
 
-Sets up appearances for assets such as NPCs and vehicles referenced by [**entity files**](assets.md#ent-entity)****
+Sets up appearances for assets such as NPCs and vehicles referenced by [**entity files**](assets.md#ent-entity)
 
 ### MT (material template)
 
@@ -40,19 +40,19 @@ Instanced shaders for mesh materials
 
 ### MLMASK (multilayered mask)
 
-Mask component of the [**Multilayer supershader**](../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)****
+Mask component of the [**Multilayer supershader**](../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)
 
 ### MLSETUP (multilayered setup)
 
-Material setup component of the [**Multilayer supershader**](../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)****
+Material setup component of the [**Multilayer supershader**](../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)
 
 ### MLTEMPLATE (multilayered template)
 
-Pre-defined tiling surface component of the [**Multilayer supershader**](../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)****
+Pre-defined tiling surface component of the [**Multilayer supershader**](../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)
 
 ### HP (hair profile)
 
-Color ramp data to set colors for meshes using the hair [**shader**](shaders/)****
+Color ramp data to set colors for meshes using the hair [**shader**](shaders/)
 
 ## Visual Asset Graphs
 

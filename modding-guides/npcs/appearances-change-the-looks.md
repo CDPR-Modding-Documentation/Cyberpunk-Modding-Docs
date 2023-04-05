@@ -170,7 +170,7 @@ You can find the correct entity ID by looking at the character with AMM: \
 ![](../../.gitbook/assets/app\_modification\_ent\_id.png)
 
 {% hint style="info" %}
-If the NPC doesn't yet exist, you can create a custom entity. For an example file, check one of [these](https://www.nexusmods.com/cyberpunk2077/mods/6111/?tab=posts\&BH=0) __ [mods](https://www.nexusmods.com/cyberpunk2077/mods/6680)_._&#x20;
+If the NPC doesn't yet exist, you can create a custom entity. For an example file, check one of [these](https://www.nexusmods.com/cyberpunk2077/mods/6111/?tab=posts\&BH=0) [mods](https://www.nexusmods.com/cyberpunk2077/mods/6680)_._&#x20;
 {% endhint %}
 
 Now, we have to hook up the new appearances.

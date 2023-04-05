@@ -90,7 +90,7 @@ Now, add the following files to your project and move them to `tutorial\my_shirt
 2. `base\gameplay\items\equipment\underwear\appearances\player_underwear_item_appearances.app`
 3. `base\characters\garment\player_equipment\torso\t1_080_pwa_tank__judy.ent`\
    _(any file from this folder will do)_\
-   __**Important**: check the hint below!
+   **Important**: check the hint below!
 4. your mesh (I'll use `base\characters\garment\gang_monk\torso\t2_135_jacket__monk_shirt\t2_135_wa_jacket__monk_shirt.mesh`)
 
 {% hint style="danger" %}
@@ -670,7 +670,7 @@ Because that is how CDPR set up the player items, and there are definite advanta
    1. Delete all entries.
    2. Create a new entry. Set the following value:\
       `DepotPath`: `tutorial\my_shirt\mesh_entity.ent`\
-      ``_This is the same entity as the one you just put into partsValues_
+      _This is the same entity as the one you just put into partsValues_
    3.  Select the array `componentsOverride` and create a new item. Set the following values:
 
        `componentName`: `my_shirt` (as specified in the `mesh_entity.ent`)
@@ -753,7 +753,7 @@ If you plan on using other meshes for your mod, ensure that it has `ma` or `pma`
 
 Keep in mind that some `ma` meshes may still have clipping issues when paired with certain types of clothing, while `pma` meshes are specifically designed for V and don't have this problem.&#x20;
 
-If you decide to create your own mesh, be sure to fix any potential issues before using it in your mod. Check out our <mark style="color:yellow;"></mark> [<mark style="color:yellow;">3D modeling guide</mark>](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/3d-modelling) <mark style="color:yellow;"></mark> for helpful tips and resources.&#x20;
+If you decide to create your own mesh, be sure to fix any potential issues before using it in your mod. Check out our [<mark style="color:yellow;">3D modeling guide</mark>](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/3d-modelling) for helpful tips and resources.&#x20;
 
 Remember, a little extra effort in the beginning can save you a lot of headaches down the line!
 {% endhint %}
@@ -763,7 +763,7 @@ Now, add the file to your project, move it to the `tutorial\my_shirt` folder and
 Next, follow the steps you used for the original `my_mesh.mesh` by removing any unnecessary entries and adjusting the indices.
 
 {% hint style="danger" %}
-To avoid any issues, it's crucial to pay close attention to this step and double-check that the correct materials are present in the `localMaterialBuffer` and `materialEntries`, and that the indices are adjusted correctly. ****&#x20;
+To avoid any issues, it's crucial to pay close attention to this step and double-check that the correct materials are present in the `localMaterialBuffer` and `materialEntries`, and that the indices are adjusted correctly.&#x20;
 
 This will ensure that your mod works as intended without any glitches or errors. If you need a refresher, [<mark style="color:yellow;">click here</mark>](adding-new-items.md#optional-but-very-recommended-clean-out-obsolete-entries) to return to that section.
 {% endhint %}
@@ -845,7 +845,7 @@ Game.AddToInventory("Items.my_shirt")
 ```
 
 {% hint style="danger" %}
-Consider reviewing the guide to ensure that all steps have been followed correctly and that the values have been set appropriately. Ensure that the mesh is compatible with the male variant of V. If errors persist, review the <mark style="color:yellow;"></mark> [<mark style="color:yellow;">troubleshooting section</mark>](adding-new-items.md#troubleshooting) for further assistance.
+Consider reviewing the guide to ensure that all steps have been followed correctly and that the values have been set appropriately. Ensure that the mesh is compatible with the male variant of V. If errors persist, review the [<mark style="color:yellow;">troubleshooting section</mark>](adding-new-items.md#troubleshooting) for further assistance.
 {% endhint %}
 
 ## Adding an appearance (example: blackred)

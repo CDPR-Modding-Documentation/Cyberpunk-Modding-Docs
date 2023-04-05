@@ -32,7 +32,7 @@ Unless you changed the default settings, it will be installed to:
 `C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\`
 
 **GOG**\
-****`C:\Program Files (x86)\GOG Galaxy\Games\Cyberpunk 2077\`
+`C:\Program Files (x86)\GOG Galaxy\Games\Cyberpunk 2077\`
 {% endhint %}
 
 You can install mods by hand or by using [Vortex](https://www.nexusmods.com/about/vortex/).&#x20;

@@ -5,7 +5,7 @@
 **Created by @Pinkydude**\
 **Published Summer 2021**
 
-****
+
 
 Go in the two little lines with circle thingies, and go to “edit” / the second option.\
 Click on the “Media” tab and you’ll be able to put any pictures!
