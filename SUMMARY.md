@@ -19,6 +19,7 @@
   * [Folder structure and files](modding-know-how/modding-cyberpunk-2077/folder-structure-and-files.md)
   * [Analysing other mods](modding-know-how/modding-cyberpunk-2077/analysing-other-mods.md)
   * [Materials: How to configure them](modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/README.md)
+    * [Re-using materials: .mi](modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/re-using-materials-.mi.md)
     * [Multilayered](modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md)
 * [🐺 WolvenKit](http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/)
 * [⚒ Frameworks](modding-know-how/frameworks/README.md)
