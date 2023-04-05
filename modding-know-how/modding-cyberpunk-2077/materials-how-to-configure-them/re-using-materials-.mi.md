@@ -59,7 +59,7 @@ And if one of my items happens to have a custom normal map and/or texture, then 
 
 But we can take this approach even further! If you **don't** have any properties, your mesh doesn't even need materials! You can simply use the `externalMaterials` list instead. You do this by unticking the isLocal property in the materialEntries definition:
 
-<figure><img src="../../../.gitbook/assets/material_indices.png" alt=""><figcaption><p>material indices explained</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/material_indices.png" alt=""><figcaption><p>material entries and indices</p></figcaption></figure>
 
 ## Warning
 
