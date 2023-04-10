@@ -4,8 +4,12 @@ description: An overview and introduction
 
 # Materials: How to configure them
 
-{% hint style="info" %}
+{% hint style="success" %}
 If you just want a material instance or the right template to start, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).
+{% endhint %}
+
+{% hint style="info" %}
+For an explanation of how materials work in meshes, check [here](../meshes.md#materials).&#x20;
 {% endhint %}
 
 ## Checking material properties
@@ -97,7 +101,7 @@ For a list of such templates, check [here.](../../references-lists-and-overviews
 
 |               |                                                                                                                                                               |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Emissive      | <p>path to emissive texture, e.g. <code>engine\textures\editor\white.xbm</code><br><code></code>The texture works like an alpha mask.</p>                     |
+| Emissive      | <p>path to emissive texture, e.g. <code>engine\textures\editor\white.xbm</code><br>The texture works like an alpha mask.</p>                                  |
 | EmissiveEV    | float, e.g. `2.0`: emissive brightness. Brightness varies depending on your colour. Unless you want to actively blind people, you might want to stay below 4. |
 | EmissiveColor | Glow colour as RGB (copy from e.g. `mi_neokitsch_fridge_z_emissive.mi`)                                                                                       |
 

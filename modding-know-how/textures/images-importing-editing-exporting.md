@@ -5,7 +5,7 @@ description: How to edit images and preserve transparency
 # Images: Importing, editing, exporting
 
 {% hint style="info" %}
-For a guide how to import/export textures, see the [Wolvenkit Wiki](../frameworks/redmod/commands/). It is easiest to export a texture, then overwrite the output file, and import it again.
+For a guide how to import/export textures, see the [Wolvenkit Wiki](../core-mods-frameworks/redmod/commands/). It is easiest to export a texture, then overwrite the output file, and import it again.
 {% endhint %}
 
 ## Editing a texture

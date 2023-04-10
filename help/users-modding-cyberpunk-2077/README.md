@@ -89,8 +89,8 @@ This list is supposed to give you an overview of which files go where. It is **n
 
 If REDmod is not installed and activated, your mods will not load.&#x20;
 
-* For instructions on how to install, see [here](../../modding-know-how/frameworks/redmod/#installation).
-* For instructions on how to activate it, see [here for GOG](../../modding-know-how/frameworks/redmod/usage.md#gog-galaxy) and here for [Steam and Epic](../../modding-know-how/frameworks/redmod/usage.md#steam-and-epic).
+* For instructions on how to install, see [here](../../modding-know-how/core-mods-frameworks/redmod/#installation).
+* For instructions on how to activate it, see [here for GOG](../../modding-know-how/core-mods-frameworks/redmod/usage.md#gog-galaxy) and here for [Steam and Epic](../../modding-know-how/core-mods-frameworks/redmod/usage.md#steam-and-epic).
 
 REDmods are installed in `Cyberpunk 2077\mods`, where every mod has a subfolder with an `info.json`.
 

@@ -2,7 +2,11 @@
 description: A list of modding frameworks and links to their documentation
 ---
 
-# ⚒ Frameworks
+# ⚒ Core Mods / Frameworks
+
+{% hint style="info" %}
+You're probably used to the term **Core Mod** from other games. However, the technical term for these kinds of mod is a`framework`, which is what they're usually referred to by Cyberpunk modders.
+{% endhint %}
 
 ## What is a framework?
 
@@ -63,3 +67,7 @@ By interacting with REDEngine 4's database, it lets you view and alter informati
 ### Equipment-EX
 
 Equipment-EX ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/6945) | [GitHub](https://github.com/psiberx/cp2077-equipment-ex)) makes use of every single one of the frameworks mentioned above to overhaul CDPR's wardrobe system. Extending it from 6 slots to more than 30, it lets you save an unlimited number of outfits and supports modded items.
+
+### Codeware
+
+Codeware ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/7780) | [GitHub](https://github.com/psiberx/cp2077-codeware)) adds powerful script extensions, opening up possibilities that are otherwise locked inside Cyberpunk's file structure. For example, while you could always see [an NPC's appearances](../../modding-guides/npcs/appearances-change-the-looks.md) in Wolvenkit, it was not possible to access that information at runtime.
