@@ -4,10 +4,6 @@ description: How to export and import meshes (WolvenKit <=> Blender)
 
 # Exporting and importing meshes
 
-{% hint style="success" %}
-For a guide on exporting a character, see the [WolvenKit wiki](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender).
-{% endhint %}
-
 ## Summary <a href="#summary" id="summary"></a>
 
 **Created by @manavortex**\
@@ -23,6 +19,10 @@ Assumed skill level: You are able to read and comprehend instructions.
 If you want to replace meshes without editing them, check [this guide](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md).
 
 This guide assumes that you already know which mesh you want to edit. If you do not, check [here](../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials).
+
+See the Wolvenkit Wiki for guides on how to export [a character](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender) or [an animation](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims).
+
+You can find a collection of useful Python scripts for Blender on [Simarilius's github](https://github.com/Simarilius-uk/CP2077\_BlenderScripts/).
 {% endhint %}
 
 | Tool                                                                                                                                                                                                                       | Tool version                                              |
