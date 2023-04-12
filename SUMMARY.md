@@ -73,6 +73,7 @@
 * [🖼 Textures](modding-know-how/textures/README.md)
   * [Images: Importing, editing, exporting](modding-know-how/textures/images-importing-editing-exporting.md)
   * [Game icons: The inkatlas file](modding-know-how/textures/game-icons-the-inkatlas-file.md)
+  * [Custom MultilayerMasks](modding-know-how/textures/custom-multilayermasks.md)
 
 ## Modding: Guides
 
