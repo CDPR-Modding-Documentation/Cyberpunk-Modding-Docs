@@ -73,7 +73,7 @@ This will give you the following file structure:
 15. Rinse and repeat until all parts of your mesh that should have your material are white on the left-hand image.&#x20;
 16. Now for the annoying part: On the right side, make sure the mask is more or less smooth, as you will see this in-game.
 
-Now, save the image.
+Now, save the image: overwrite one of the layers from the mlmask that you have exported. If you run out of layers, you can just add them at the end.
 
 {% hint style="danger" %}
 The game assumes that layer 1 is white, so start exporting over layers >0
@@ -85,7 +85,7 @@ Do this as often as necessary.&#x20;
 
 ## Import the MultilayerMask
 
-Once you're done, open the masklisk and make sure that you have exactly as many entries as you have images in your folder. Then, in Wolvenkit, import the masklist via **Import Tool**.
+Once you're done, open the masklisk and make sure that you have exactly as many entries as you have images in your folder (adding or deleting them as needed). Then, in Wolvenkit, import the masklist via **Import Tool**.
 
 {% hint style="danger" %}
 All images in the multilayer mask need to have the same resolution. Otherwise, it will crash your game.
