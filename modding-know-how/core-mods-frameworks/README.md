@@ -15,7 +15,7 @@ While the game natively supports mods, this would have had us limited to replaci
 The most prominent example of a framework mod is the **Skyrim Script Extender** — fortunately, Cyberpunk 2077 is rather more stable.
 
 {% hint style="danger" %}
-Since this kind of mod interacts with the game's code on such a fundamental level, they are prone to **breaking** whenever CDPR changes their API. This is the reason why game updates break mods — we recommend to [**turn off auto-update**](../../help/users-modding-cyberpunk-2077/users-preventing-auto-updates.md) and manually upgrading once the frameworks you need have been brought up-to-date.
+Since this kind of mod interacts with the game's code on such a fundamental level, they are prone to **breaking** whenever CDPR changes their API. This is the reason why game updates break mods — we recommend to [**turn off auto-update**](../../help/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md) and manually upgrading once the frameworks you need have been brought up-to-date.
 {% endhint %}
 
 ## Existing Frameworks <a href="#popular-frameworks" id="popular-frameworks"></a>

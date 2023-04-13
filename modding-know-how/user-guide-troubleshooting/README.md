@@ -22,7 +22,7 @@ Before you start debugging, make sure that&#x20;
 
 This section aims to give you a quick overview. If your exact problem isn't listed here, please **look through the different sections** below and try anything that looks promising.
 
-[There was a game update and now your mods aren't working](../../help/users-modding-cyberpunk-2077/users-preventing-auto-updates.md)
+[There was a game update and now your mods aren't working](./#troubleshooting-after-an-update)
 
 [Your pirated version is broken](./#you-pirated-the-game)
 
@@ -58,7 +58,26 @@ To enable REDmods, check [here](https://wiki.redmodding.org/cyberpunk-2077-moddi
 
 
 
+## Troubleshooting after an update
 
+As long as you're living on earth, things fall down when you let go of them, and game updates break mods.&#x20;
+
+Given that you're currently browsing a troubleshooting guide, [updating your core frameworks](../core-mods-frameworks/) didn't fix the problem.
+
+### There are no framework updates!
+
+That's because the people maintaining them have a thing called `life`, which annoyingly gets in the way of modding. You can either [remove all mods](./#i-have-another-problem-that-isnt-on-this-list) and play vanilla until the updates arrive, or [downgrade your game](../../help/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md#downgrading).
+
+### I updated my frameworks, but the game is still crashing!
+
+You need to complete the following steps:&#x20;
+
+* Temporarily [remove all mods](./#i-have-another-problem-that-isnt-on-this-list)
+* One by one, [install all of the frameworks you need](./#starting-from-scratch)
+
+{% hint style="success" %}
+Make sure to follow the instructions carefully – they will prevent you from running into a bunch of other issues.&#x20;
+{% endhint %}
 
 ## Your game isn't starting / Crashes to Desktop
 
@@ -393,7 +412,7 @@ In any of the commands below, you need to substitute `C:/Path/to/Cyberpunk2077` 
 
 #### Via Windows Explorer
 
-Check [this guide](../../help/users-modding-cyberpunk-2077/users-preventing-auto-updates.md)
+Check [this guide](../../help/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
 
 ### Reboot your PC
 
@@ -503,6 +522,10 @@ It's time to put your mods back and see if you can start the game - see [Startin
 
 {% hint style="info" %}
 Before following these steps, you might want to take a look at your [log files](./#finding-the-broken-mod-log-files). You can usually ignore **Warning**s, but maybe you'll stumble on an error message that helps you to narrow down the suspect.
+{% endhint %}
+
+{% hint style="success" %}
+Instead of following these instructions, you can also [reinstall the game](./#the-nuclear-option-a-clean-install). Following the guide will save you a lot of downloading time and also make sure that there will be no leftover files that'll keep causing trouble.
 {% endhint %}
 
 ### Step 1: Temporarily disable all your mods
@@ -647,9 +670,11 @@ Go to Games -> Installed, right-click on your game and select the following menu
 3. Select "Manage"
 4. Click "Verify"
 
-### Launch the game
+### Step 6: Launch the game
 
-All files you deleted have been re-acquired. You should now be able to launch the game.
+All files you deleted have been re-acquired. If there are no left-over files from earlier modding attempts, You should now be able to launch the game.
+
+If you have reinstalled the game without following the guide (and without removing the correct files), go [here](./#i-have-another-problem-that-isnt-on-this-list) and make sure that none of those files are around.
 
 {% hint style="warning" %}
 If your game does not start now, then your problem exists outside of Cyberpunk.  In this case, you can&#x20;
@@ -658,6 +683,10 @@ If your game does not start now, then your problem exists outside of Cyberpunk. 
 \- [update the Windows stuff](./#navigation)\
 \- pray
 {% endhint %}
+
+### Step 7: Install the core frameworks
+
+Now that your un-modded game is starting, it's time to [install the core frameworks](./#starting-from-scratch). Do this **before** you enable your other mods, as they won't work without their dependencies and can only add problems at this stage.
 
 {% hint style="info" %}
 You can now re-enable your mods. Do it in chunks and check that the game keeps working so that you can narrow down where the problem is, in case it isn't gone for good.

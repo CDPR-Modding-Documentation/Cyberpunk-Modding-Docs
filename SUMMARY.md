@@ -7,7 +7,7 @@
 ## Help
 
 * [❔ Users: Modding Cyberpunk 2077](help/users-modding-cyberpunk-2077/README.md)
-  * [Users: Preventing auto-updates](help/users-modding-cyberpunk-2077/users-preventing-auto-updates.md)
+  * [Users: Downgrading / Preventing auto-updates](help/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
   * [Users: enabling REDmods](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/frameworks/redmod/usage#deploying-mods-and-starting-the-game)
 * [🆘 Users: Troubleshooting](modding-know-how/user-guide-troubleshooting/README.md)
 * [📖 Glossary](help/glossary.md)

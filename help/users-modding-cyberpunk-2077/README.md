@@ -46,7 +46,7 @@ Regardless of your past experiences, the [Nexus mod manager](https://www.nexusmo
 Although Cyberpunk natively supports modding, this out-of-the-box support is extremely limited. To allow modders greater freedom, a number of frameworks have been created to allow e.g. adding items, influencing the weather, or add flying cars.
 
 {% hint style="warning" %}
-Since this kind of mod interacts with the game's code on such a fundamental level, they are prone to **breaking** whenever CDPR changes their API. This is the reason why game updates break mods — we recommend to [**turn off auto-update**](users-preventing-auto-updates.md) and manually upgrading once the frameworks you need have been brought up-to-date.
+Since this kind of mod interacts with the game's code on such a fundamental level, they are prone to **breaking** whenever CDPR changes their API. This is the reason why game updates break mods — we recommend to [**turn off auto-update**](users-downgrading-preventing-auto-updates.md) and manually upgrading once the frameworks you need have been brought up-to-date.
 {% endhint %}
 
 {% hint style="danger" %}
