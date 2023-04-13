@@ -24,6 +24,8 @@ This section aims to give you a quick overview. If your exact problem isn't list
 
 [There was a game update and now your mods aren't working](./#troubleshooting-after-an-update)
 
+[Photomode screenshots are borked](./#photomode-screenshots-are-blank)
+
 [Your pirated version is broken](./#you-pirated-the-game)
 
 [Your game isn't starting](./#your-game-isnt-starting-crashes-to-desktop)
@@ -78,6 +80,10 @@ You need to complete the following steps:&#x20;
 {% hint style="success" %}
 Make sure to follow the instructions carefully – they will prevent you from running into a bunch of other issues.&#x20;
 {% endhint %}
+
+## Photomode screenshots are blank
+
+With 1.62, screenshots are now saved to `Documents\CDPR\Cyberpunk\Screenshots` , and the previous location will receive an empty file.
 
 ## Your game isn't starting / Crashes to Desktop
 
