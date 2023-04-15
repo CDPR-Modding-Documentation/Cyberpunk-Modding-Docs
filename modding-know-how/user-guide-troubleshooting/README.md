@@ -66,6 +66,10 @@ As long as you're living on earth, things fall down when you let go of them, and
 
 Given that you're currently browsing a troubleshooting guide, [updating your core frameworks](../core-mods-frameworks/) didn't fix the problem.
 
+{% hint style="warning" %}
+You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
+{% endhint %}
+
 ### There are no framework updates!
 
 That's because the people maintaining them have a thing called `life`, which annoyingly gets in the way of modding. You can either [remove all mods](./#i-have-another-problem-that-isnt-on-this-list) and play vanilla until the updates arrive, or [downgrade your game](../../help/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md#downgrading).
@@ -86,6 +90,10 @@ Make sure to follow the instructions carefully – they will prevent you from r
 With 1.62, screenshots are now saved to `Documents\CDPR\Cyberpunk\Screenshots` , and the previous location will receive an empty file.
 
 ## Your game isn't starting / Crashes to Desktop
+
+{% hint style="warning" %}
+You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
+{% endhint %}
 
 ### Failed to initialize script data
 
@@ -518,19 +526,39 @@ It's time to put your mods back and see if you can start the game - see [Startin
 
 ## I have another problem that isn't on this list
 
+{% hint style="warning" %}
+You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
+{% endhint %}
+
 {% hint style="info" %}
-Before following these steps, you might want to take a look at your [log files](./#finding-the-broken-mod-log-files). You can usually ignore **Warning**s, but maybe you'll stumble on an error message that helps you to narrow down the suspect.
+Before following these steps, you might want to take a look at your [log files](../../help/users-modding-cyberpunk-2077/finding-and-reading-log-files.md) — check the instructions for how to do that.
 {% endhint %}
 
 {% hint style="success" %}
-Instead of following these instructions, you can also [reinstall the game](./#the-nuclear-option-a-clean-install). Following the guide will save you a lot of downloading time and also make sure that there will be no leftover files that'll keep causing trouble.
+Instead of following these instructions, you can also [reinstall the game](./#the-nuclear-option-a-clean-install). Do yourself a favour and check the instructions, as you might be left with residual files otherwise.
 {% endhint %}
 
 ### Step 1: Temporarily disable all your mods
 
-If you're running a mod manager (such as Vortex), **disable** them.&#x20;
+#### Vortex
 
-Otherwise, find the following folders:
+Press the **purge** button — this will remove any and all installed mods.
+
+{% hint style="danger" %}
+Do **not** press deploy.&#x20;
+{% endhint %}
+
+#### If all your mods were managed via Vortex:
+
+Start Cyberpunk however you want, as long as it's not via Vortex. If it starts, go to [Remove RedScript](./#step-4-remove-redscript).
+
+#### If you had a mixed install:&#x20;
+
+Complete the instructions in the section [manual](./#manual) now.
+
+#### Manual
+
+Find the following folders:
 
 ```
 Cyberpunk 2077\archive\pc\mod
