@@ -118,37 +118,27 @@ You are, of course, welcome to peruse the troubleshooting guide. It might even h
 
 ## A mod is partially working
 
-If you have installed custom items or NPC appearances and the change&#x20;
+If your NPC appearance change doesn't show or your item replacer is added on top of the original item, you will want to install either [material override](https://www.nexusmods.com/cyberpunk2077/mods/5266) or [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/3051).&#x20;
 
-Finding the broken mod (log files)
+For an explanation, see [here](../modding-cyberpunk-2077/cyberpunk-file-structure-explained/appearance-.app-files.md#commoncookdata).
 
-Open your Cyberpunk game folder and use the windows search to search for `*.log`
+## Finding the broken mod (log files)
 
-{% hint style="info" %}
-Make sure to include the asterisk and the dot: \*`.log`
-{% endhint %}
+Step-by-step instructions on how to search, filter, and read log files are [here](../../help/users-modding-cyberpunk-2077/finding-and-reading-log-files.md):
 
-<figure><img src="../../.gitbook/assets/userguide_logs.png" alt=""><figcaption><p>You should see something like this</p></figcaption></figure>
+{% content-ref url="../../help/users-modding-cyberpunk-2077/finding-and-reading-log-files.md" %}
+[finding-and-reading-log-files.md](../../help/users-modding-cyberpunk-2077/finding-and-reading-log-files.md)
+{% endcontent-ref %}
 
-Now, delete all those files. Don't worry, they will be re-created on next launch.
+#### Summary / TL;DR:
 
-{% hint style="danger" %}
-Don't delete anything that isn't a text document ending in .log, this might break your game.
-{% endhint %}
-
-Start your game again. Now do whatever causes your problem to occur.
-
-Search the Cyberpunk directory for `*.log` again.&#x20;
-
-{% hint style="info" %}
-Tip: Sort the files by size by clicking on the Windows Explorer column header.&#x20;
-{% endhint %}
-
-{% hint style="info" %}
-You can ignore all files that have a size of 0, as they will be empty.&#x20;
-{% endhint %}
-
-One of these files should contain an error message. You can use it to try and isolate your problem.
+* Search the Cyberpunk root folder for `*.log`
+* Look through all these files for anything that says `error`
+* **If you can't find anything: you can now either**
+  * [Make sure that](./#step-1-temporarily-disable-all-your-mods) your game loads with only the core frameworks enabled (especially advised after **game updates/patches**)
+  * Try the [bisect](./#finding-the-broken-mod-bisecting) method
+* **If you have found something:** \
+  [Here](./#dealing-with-a-broken-mod) are instructions for how to troubleshoot the mod. It also includes when you should ask for help!
 
 ## Finding the broken mod (bisecting)
 
@@ -187,10 +177,6 @@ You will now run into one of two scenarios:
 
 Repeat this process until you have identified the problem child!
 
-## Mods are partially working
-
-If your NPC appearance change doesn't show or your item replacer is added on top of the original item, you will want to install [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/3051). For an explanation, see [here](../modding-cyberpunk-2077/cyberpunk-file-structure-explained/appearance-.app-files.md#commoncookdata).
-
 ## Mod(s) aren't loading/triggering
 
 {% hint style="warning" %}
@@ -198,6 +184,12 @@ Make sure that the [**requirements**](../../help/users-modding-cyberpunk-2077/#d
 {% endhint %}
 
 Cyberpunk mods have different **dependency chains**. If a required mod isn't working, then your mod won't be working either!
+
+{% hint style="info" %}
+Find a brief explanation of mod requirements at the example of Virtual Atelier [here](../../help/users-modding-cyberpunk-2077/requirements-explained.md). Knowing this will let you avoid or solve problems when modding **any** game, so it's definitely worth understanding.
+
+If you don't care and just want a solution, just keep reading.
+{% endhint %}
 
 ### A RedMod
 
