@@ -153,7 +153,11 @@ I've always found it easiest to join all meshes into a single one:
   ![](../../.gitbook/assets/separate\_by\_material.png)
 * **Optional**, but recommended: run the script again to get properly numbered submeshes.
 
-This will let us assign materials.
+This will let us assign one material per "section" of your mesh.
+
+{% hint style="info" %}
+Especially when exporting meshes from sketchfab, there are often duplicate materials. Feel free to fuse everything that you want to e.g. slap black plastic on.
+{% endhint %}
 
 #### Splitting off submeshes (mildly advanced)
 
@@ -318,156 +322,6 @@ Save the lua file, install your mod, and launch the game. Time to test!
 
 <figure><img src="https://i.imgur.com/GQ8fELd.png" alt=""><figcaption><p>Not a moon</p></figcaption></figure>
 
-## Troubleshooting
-
-This section will only cover troubleshooting steps for this guide. For general 3d model troubleshooting (including import errors), see [here](../../modding-know-how/3d-modelling/troubleshooting-your-mesh-edits.md).
-
-### My prop doesn't spawn and AMM won't target it!
-
-AMM can't find your .ent file. Check the paths in the lua.
-
-### My prop is invisible (but AMM targets it)!
-
-This can be one of the following issues:&#x20;
-
-* the path from .ent to .mesh is wrong
-* the mesh appearance in the .ent file can't be found (check spelling in both .ent and .mesh)
-* the mesh appearances's chunk materials can't be found (check spelling in the .mesh, both in the chunkMaterial assignments and the CMaterialInstance in `localMaterialBuffer.materials`)
-* Check your mesh's **face orientation** in Blender — inside-facing meshes are usually transparent.
-* Check your mesh's chunkmasks in the .ent file: maybe you have accidentally hidden a submesh?
-
-If that doesn't help as well, try assigning a default game material (search for anything ending in .mt and put the path in your material's `baseMaterial.DepotPath`).&#x20;
-
-* Try assigning a default game material by searching for&#x20;
-
-### My prop is all over the place / too big / too small
-
-Check the [scaling](textured-items-and-cyberpunk-materials.md#scale-it) in Blender and make sure that you have [applied transformations](textured-items-and-cyberpunk-materials.md#applying-transformations).
-
-### I don't have a normal map texture, but my import looks shit without one
-
-Use `engine\textures\editor\normal.xbm`
-
-### Some of my props are much "lighter" than others!
-
-These ones will have a blue normal map as opposed to a yellow one. Invert the blue normal texture before importing it..&#x20;
-
-## Importing a mesh
-
-### Optional: Download the prepared files
-
-Download [this archive](https://mega.nz/file/vd0X3Yaa#tcakXF6\_t0k\_EouthuKcJSPL3o2nI6b\_zVWi528Kv5k) - I have set it up for you. It contains both the original glb from sketchfab and the version I prepared for material splitting.
-
-### Step 1: Exporting
-
-{% hint style="success" %}
-The first step to importing a mesh is exporting a mesh.&#x20;
-{% endhint %}
-
-In Wolvenkit, open the Export Tool (Tools -> Export), and export everything in your folder: the mesh(es) you want to use and the textures.&#x20;
-
-{% hint style="info" %}
-You can only import 3d files by overwriting a .mesh.
-{% endhint %}
-
-### Step 3: Importing
-
-In Wolvenkit, open the Import Tool (Tools -> Import), and overwrite the files&#x20;
-
-**After you have exported the files from Wolvenkit**, overwrite them with the files you downloaded from sketchfab. They need to have the same names!
-
-The process won't be covered in detail here, as it already has [its own guide](../../modding-know-how/3d-modelling/exporting-and-importing-meshes.md), but it works just as exporting. There's also a [troubleshooting page](../../modding-know-how/3d-modelling/self-made-normal-maps/troubleshooting-normal-maps.md) if you're stuck.
-
-#### Wait, where did Step 2 go?
-
-{% hint style="success" %}
-Good! You've been paying attention! \
-\
-Step 2 is to prepare the downloaded 3d asset to work with Cyberpunk. Depending on your target file, this can be any level of difficult, but the steps below should be enough for most meshes.
-{% endhint %}
-
-### Step 2: Processing the downloaded mesh
-
-The files you download will have all sorts of structures. In the end, you want to end up with a flat hierarchy of object(s):
-
-```
-Scene Collection
-    ▽ submesh_00_LOD_1
-    ▽ submesh_01_LOD_1
-    ▽ submesh_02_LOD_1
-    ▽ submesh_03_LOD_1
-```
-
-LOD\_1 indicates the level of detail, whereas the submeshes need to be numbered explicitly (or Wolvenkit will number them for you, which you'll want to avoid).
-
-
-
-{% hint style="danger" %}
-A mesh that I imported with 9 submeshes made the game crash with a likelihood of \~ 80% when I spawned or despawned it (scaling was fine). You might want to create two separate files if you have too many objects.
-{% endhint %}
-
-
-
-#### Submeshes by material (simple)
-
-
-
-#### Splitting off submeshes (mildly advanced)
-
-{% hint style="info" %}
-Every submesh can have its own material assigned in the mesh, and can be hidden or displayed via chunkmask. This is how you assign Cyberpunk materials to parts of your imported asset.
-{% endhint %}
-
-I usually join everything into one object that'll have the same material in the game, unless I want to hide parts of it to make variants.
-
-But the opposite is also possible: You can split off parts from the original object, putting them into their own submeshes. I have done this in the [baseball example](https://mega.nz/file/vd0X3Yaa#tcakXF6\_t0k\_EouthuKcJSPL3o2nI6b\_zVWi528Kv5k): the seams will get a texture, and the rest of the mesh will be coloured with a cyberpunk material.
-
-You do that by changing into the edit mode, then selecting everything that you want to split off ("Select Linked" or "Select More" is your friend here),  and **splitting** it (P -> Split Selection).
-
-{% hint style="info" %}
-You can duplicate your selection first (Shift+D, ESC)
-{% endhint %}
-
-Now, switch back to Object mode and select your new mesh before going into Edit Mode again. Make sure to [**scale**](../../modding-know-how/3d-modelling/self-made-normal-maps.md#step-0-preparing-the-viewport) your new mesh so that it is slightly above the surface of the old one.
-
-Make sure to [correctly name your new submesh](textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh).
-
-#### Unparent
-
-Select everything (click the viewport and press A), then unparent the objects by pressing Alt+P. Select "Clear and Keep Transformation".
-
-#### Applying transformations
-
-Since those are saved relatively and Wolvenkit will ignore them, your objects might end up larger or smaler than you expect them, or be in different places.&#x20;
-
-Select your objects in the viewport, then press Ctrl+A and choose "All Transforms".&#x20;
-
-#### Scale it
-
-Scale your 3d object in Blender until it has the size you expect it to be in-game.&#x20;
-
-If you do this in the object mode, you need to [apply transformations](textured-items-and-cyberpunk-materials.md#applying-transformations) afterwards. Alternatively, you can scale the vertices in edit mode.
-
-{% hint style="info" %}
-If your mesh still scales weirdly in Wolvenkit / the game, you can create a new mesh in Blender, delete its vertices in edit mode, and then join your original object on top of it.
-{% endhint %}
-
-{% hint style="success" %}
-If you need a reference object, you can use this [lightsaber](https://mega.nz/file/aJkXxTaT#3hCUT\_qULkYu4VfL3QVXYE8NJ77sTPCftZiTPRs\_6a0) from my [props](https://www.nexusmods.com/cyberpunk2077/mods/7391).
-{% endhint %}
-
-#### Origin
-
-Keep in mind that your prop will rotate around the world origin, and position it accordingly.
-
-<figure><img src="../../.gitbook/assets/blender_point_of_origin.png" alt=""><figcaption><p>AMM will rotate your object around the point 0,0,0. </p></figcaption></figure>
-
-{% hint style="success" %}
-Once you are done, import the glb file over your original mesh (you can consult the [troubleshooting section ](textured-items-and-cyberpunk-materials.md#troubleshooting)below).
-
-Your import has been successful when the preview in Wolvenkit changes (you might have to select another file first).
-{% endhint %}
-
 ## Material assignments
 
 For an explanation how materials are assigned to a mesh, check[ this page](../../modding-know-how/modding-cyberpunk-2077/meshes.md#materials) - this guide will just tell you what to do.
@@ -557,13 +411,17 @@ If you rather want to make your own mlsetups, see [here](../items-equipment/edit
 
     <figure><img src="../../.gitbook/assets/textures_baseball_gold.png" alt=""><figcaption><p>Also not a moon</p></figcaption></figure>
 
-The possibilities are basically endless, so go and explore them already! For a nifty list with materials to get you started, check [here](../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md).
+The possibilities are basically endless, so go and explore them already! For a nifty list with materials to get you started, check [here](../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md).ing related to AMM, see [here](custom-props.md).&#x20;
 
 ## Troubleshooting
 
-This section will only cover troubleshooting steps for this guide. For general 3d model troubleshooting (including import errors), see [here](../../modding-know-how/3d-modelling/troubleshooting-your-mesh-edits.md). For anything related to AMM, see [here](custom-props.md).&#x20;
+This section will only cover troubleshooting steps for this guide. For general 3d model troubleshooting (including import errors), see [here](../../modding-know-how/3d-modelling/troubleshooting-your-mesh-edits.md).
 
-### My prop is invisible (but CET targets it)!
+### My prop doesn't spawn and AMM won't target it!
+
+AMM can't find your .ent file. Check the paths in the lua.
+
+### My prop is invisible (but AMM targets it)!
 
 This can be one of the following issues:&#x20;
 
@@ -575,7 +433,7 @@ This can be one of the following issues:&#x20;
 
 If that doesn't help as well, try assigning a default game material (search for anything ending in .mt and put the path in your material's `baseMaterial.DepotPath`).&#x20;
 
-* Try assigning a default game material - search Wolvenkit for e.g. `wood > .mi`
+* Try assigning a default game material by searching for&#x20;
 
 ### My prop is all over the place / too big / too small
 
@@ -587,4 +445,6 @@ Use `engine\textures\editor\normal.xbm`
 
 ### Some of my props are much "lighter" than others!
 
-These ones will have a blue normal map as opposed to a yellow one. Invert the blue normal texture before importing it.
+These ones will have a blue normal map as opposed to a yellow one. Invert the blue normal texture before importing it..&#x20;
+
+##
