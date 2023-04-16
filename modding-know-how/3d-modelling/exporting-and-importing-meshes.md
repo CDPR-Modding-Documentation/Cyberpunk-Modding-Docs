@@ -48,13 +48,14 @@ WolvenKit <= [8.8](https://github.com/WolvenKit/WolvenKit/releases/tag/8.8.0): U
 
 WolvenKit > 8.8: Use the Export tool. You can toggle it from the "Tools" menu on the top bar.
 
-{% hint style="success" %}
-Select your mesh in the Export Tool and click "Export/Process Selected".&#x20;
+1. Select your mesh in the Export Tool and click `Export/Process Selected`, or simply use `Export/Process All.`
+2. You now have`meshName.glb` in your WKit project's [`raw` directory.](exporting-and-importing-meshes.md#path-example)
 
-This will create `meshName.glb` in your WKit project's [`raw` directory.](exporting-and-importing-meshes.md#path-example)
-{% endhint %}
+<figure><img src="../../.gitbook/assets/textured_items_raw_files.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
 Wolvenkit > 8.8 will by default export with materials for the [Cyberpunk Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on).
+{% endhint %}
 
 #### Path example&#x20;
 
@@ -64,8 +65,6 @@ Path of mesh: `<yourModDir>\source\`**`archive`**`\base\characters\garment\playe
 
 Path of glb: `<yourModDir>\source\`**`raw`**`\base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.glb`
 
-
-
 ### Autodesk (\*.fbx)
 
 {% hint style="danger" %}
@@ -74,48 +73,35 @@ The [Noesis Import/Export Plugin](https://github.com/alphazolam/fmt\_CP77mesh?ms
 
 Noesis is an **alternative** to exporting with WolvenKit. There are legitimate use cases for why you would want this. If you don't know them, you'll probably not want to use this.
 
-Find your mesh in Noesis. Right-click and select "Export". Then, export with default settings.
+{% hint style="info" %}
+Wolvenkit has come a long way since the early days of Cyberpunk modding. 5000 years ago on the slopes of Mount Doom, mods were created with nothing but Noesis and hex editing. By now, you can almost always use Wolvenkit.
+{% endhint %}
+
+1. Find your mesh in the Noesis browser
+2. Right-click it and select "Export"
+3. Export with default settings:
 
 <figure><img src="../../.gitbook/assets/noesis_mesh_export.png" alt=""><figcaption></figcaption></figure>
 
 ## Blender: Saving the mesh
 
-### Explanation: \_doubled
-
-Normally, a mesh's **backfaces** are invisible/transparent - you aren't supposed to see a mesh from below, so it doesn't matter. But some, like hair and eyelashes, are different, and need to be doubled.
-
-When importing via Noesis, you need to do this by hand: duplicate all the vertices in the mesh, and flip the normals.\
-When importing via WolvenKit, it will automagically do that for you if a mesh name ends with **\_doubled**.&#x20;
-
-The suffix also indicates that Wolvenkit de-duplicated a mesh on export!
-
-<figure><img src="https://cdn.discordapp.com/attachments/1091077640854704270/1091295442060464138/image.png" alt=""><figcaption><p>Thanks to Na for the screenshot</p></figcaption></figure>
+{% hint style="info" %}
+Some meshes (such as eyelashes and hair) are two-sided. See [here](../modding-cyberpunk-2077/meshes.md#import-export-\_doubled) for details on how Wolvenkit handles that.
+{% endhint %}
 
 ### glTF Binary  (\*.glb)
+
+{% hint style="warning" %}
+If you have touched the topology, make sure to **triangulate** your mesh before exporting (Select all in Edit Mode, `Ctrl+T`)
+{% endhint %}
+
+{% hint style="info" %}
+You can use the [Cyberpunk Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) — it will take care of the necessary settings.
+{% endhint %}
 
 Make sure to check the box under Data > Mesh > Tangents, as Wolvenkit will not export without it.
 
 <figure><img src="https://i.imgur.com/eauWYiF.png" alt=""><figcaption><p>Export settings: "Tangents" must be checked</p></figcaption></figure>
-
-{% hint style="warning" %}
-For WolvenKit > 8.8 and < 8.9, make sure to delete MeshName.Material.json from the raw directory.
-{% endhint %}
-
-{% hint style="info" %}
-**Did you know?**&#x20;
-
-You can change the standard export settings by editing the plugin's `__init__.py`. To find the right path, view the plugin in Blender's `Preferences/Add-ons` menu.&#x20;
-{% endhint %}
-
-This is how you would set Tangents to auto-export in io\_scene\_gltf2 3.4.50:
-
-```python
-export_tangents: BoolProperty(
-        name='Tangents',
-        description='Export vertex tangents with meshes',
-        default=True
-    )
-```
 
 ### Autodesk (\*.fbx)
 
@@ -131,7 +117,7 @@ Alternatively, you can run [this script](https://github.com/manavortex/code\_sni
 
 ### glTF Binary (\*.glb)
 
-You should have **overwritten** your previous glb export. With WKit's Import/Export tool, you can now use the **`Import`** tool to get it back in.
+In Blender, you should have **overwritten** your previously exported glb. With WKit's Import/Export tool, you can now simply **`Import`** it back in.
 
 {% hint style="info" %}
 WolvenKit will map any \*.glb file under `raw` to the mesh with the same name under `source`.
@@ -157,13 +143,12 @@ The [Noesis Import/Export Plugin](https://github.com/alphazolam/fmt\_CP77mesh?ms
 
 Noesis is an **alternative** to importing with WolvenKit.
 
-Find your fbx in Noesis. Right-click and select "Import".
+* Find your fbx in the Noesis browser
+* Right-click it and select "Export"
+* Set the `Main output type` to `.mesh - CyberPunk 2077 mesh [PC]`
+* A dialogue asks you for a file to overwrite. Make sure that it has your mesh!
 
 <figure><img src="../../.gitbook/assets/noesis_mesh_import.png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="warning" %}
-You need to select a target mesh to import over.
-{% endhint %}
 
 ## Differences between fbx and glb
 
@@ -181,6 +166,6 @@ You can easily convert between the two formats by hand — or use [this script](
 
 ## Troubleshooting
 
-If your mesh won't export, try exporting it [without materials](exporting-and-importing-meshes.md#exporting-with-materials).&#x20;
+If your mesh won't export from Wolvenkit, try exporting it [without materials](exporting-and-importing-meshes.md#exporting-with-materials) by unchecking the box.&#x20;
 
 For a list of troubleshooting steps, check the [corresponding wiki page](troubleshooting-your-mesh-edits.md).

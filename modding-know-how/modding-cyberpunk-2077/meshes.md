@@ -74,3 +74,14 @@ For how to find out which properties a material has, check [here](materials-how-
 ### Material reference: [reusing materials](materials-how-to-configure-them/re-using-materials-.mi.md#maximally-lazy-external-materials)
 
 A relative path to an external material, usually encapsulated in a [.mi file](materials-how-to-configure-them/re-using-materials-.mi.md#.mi-files-to-the-rescue). Use this if you don't need to add extra properties.
+
+## Import/Export: \_doubled
+
+Normally, a mesh's **backfaces** are invisible/transparent - you aren't supposed to see a mesh from below, so it doesn't matter. But some, like hair and eyelashes, are different, and need to be doubled.
+
+When importing via Noesis, you need to do this by hand: duplicate all the vertices in the mesh, and flip the normals.\
+When importing via WolvenKit, it will automagically do that for you if a mesh name ends with **\_doubled**.&#x20;
+
+The suffix also indicates that Wolvenkit de-duplicated a mesh on export!
+
+<figure><img src="https://cdn.discordapp.com/attachments/1091077640854704270/1091295442060464138/image.png" alt=""><figcaption><p>Thanks to Na for the screenshot</p></figcaption></figure>
