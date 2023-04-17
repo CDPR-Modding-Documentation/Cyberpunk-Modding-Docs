@@ -143,19 +143,19 @@ Being on this list does not mean that a mod is "bad" or that you shouldn't use i
 
 #### [Let There Be Flight](https://www.nexusmods.com/cyberpunk2077/mods/5208)
 
-Adds flying cars to Cyberpunk. While this is awesome, it might break during updates.
+Adds flying cars to Cyberpunk. While this is awesome, it will **absolutely** break whenever CDPR changes anything, and requires updating.
 
 #### [Vehicle Combat](https://www.nexusmods.com/cyberpunk2077/mods/3815)
 
-Adds car chases and a bunch of related features. While CP2077 needs more car chases and explosions, occasionally this requires updating.
+Adds car chases and a bunch of related features. While CP2077 needs more car chases and explosions, this usually breaks and will require an update.
 
 #### [Mod Settings](https://www.nexusmods.com/cyberpunk2077/mods/4885)&#x20;
 
-Adds mod settings to the in-game menu – Redscript version.
+Adds mod settings to the in-game menu – Redscript version. This needs to be updated after **every** game patch.
 
 #### [Native Settings UI](https://www.nexusmods.com/cyberpunk2077/mods/3518)
 
-Adds mod settings to the in-game menu – CET version. The mod itself doesn't usually break, but it's dependent on [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107) being up-to-date.
+Adds mod settings to the in-game menu – CET version. The mod itself will be fine, but it's dependent on [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107) being up-to-date.
 
 ### spawn0
 
