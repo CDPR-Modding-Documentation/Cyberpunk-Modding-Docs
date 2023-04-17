@@ -105,6 +105,7 @@
 * [Visual Modding](modding-guides/visual-modding/README.md)
   * [Editing LUTs](modding-guides/visual-modding/editing-luts.md)
 * [Animations](modding-guides/animations/README.md)
+  * [AMM: Collab anims/poses](modding-guides/animations/amm-collab-anims-poses.md)
   * [Custom poses for spawned NPCs](modding-guides/animations/custom-poses-for-spawned-npcs.md)
 * [Everything else](modding-guides/everything-else/README.md)
   * [Custom in-game icons](modding-guides/everything-else/custom-in-game-icons.md)
