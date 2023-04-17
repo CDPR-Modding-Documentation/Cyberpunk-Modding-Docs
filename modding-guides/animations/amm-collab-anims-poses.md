@@ -29,8 +29,8 @@ This tutorial will use `animation` and `pose` interchangeably. An animation is s
 
 Create a new Wolvenkit project and download the prepared files from mana's mega, either
 
-* the [source folder](https://mega.nz/file/OYdXwZrY#6s8EEYN3mYJi7xTNljzIHFutxNB2V9QkECAt5HF2c3k) for a working project that you can use immediately
-* the [files](https://mega.nz/file/3Q1hiTjL#\_-6O\_9m3vk50Qkhfck\_vKQ2\_xI07BCvQVdem1es\_4tI) to set up your own structure and start from scratch
+* the [source folder](https://mega.nz/file/fI9jUCqS#OeYhXBcb9EOnnPdtMmF08P9F8ki9yNdQWcg71CKRZiA) for a working project that you can use immediately
+* the [files](https://mega.nz/file/fI9jUCqS#OeYhXBcb9EOnnPdtMmF08P9F8ki9yNdQWcg71CKRZiA) to set up your own structure and start from scratch
 
 The screenshots show the example project, but it's absolutely no problem if you set up everything on your own: the guide will tell you which path goes where.
 
