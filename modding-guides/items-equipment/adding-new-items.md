@@ -1125,7 +1125,7 @@ resources
 
 Now, it's time to test! Install the mod, then start Cyberpunk via start menu shortcut.
 
-⚠As of today (3rd of November 2022), starting Cyberpunk via WolvenKit will **not generate your atelier store**. You need to first install the mod, then start the game via start menu or GOG launcher.
+⚠ If starting Cyberpunk via WolvenKit does not generate your atelier store, install the mod and launch the game by regular means.
 
 ## Troubleshooting
 
