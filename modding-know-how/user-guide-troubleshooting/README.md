@@ -78,6 +78,7 @@ That's because the people maintaining them have a thing called `life`, which ann
 
 You need to complete the following steps:&#x20;
 
+* Temporarily disable any mod from the **script section** of [known problem children](./#finding-the-broken-mod-log-files)&#x20;
 * Temporarily [remove all mods](./#i-have-another-problem-that-isnt-on-this-list)
 * One by one, [install all of the frameworks you need](./#starting-from-scratch)
 
@@ -129,6 +130,40 @@ You are, of course, welcome to peruse the troubleshooting guide. It might even h
 If your NPC appearance change doesn't show or your item replacer is added on top of the original item, you will want to install either [material override](https://www.nexusmods.com/cyberpunk2077/mods/5266) or [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/3051).&#x20;
 
 For an explanation, see [here](../modding-cyberpunk-2077/cyberpunk-file-structure-explained/appearance-.app-files.md#commoncookdata).
+
+## Finding the broken mod: known problem children
+
+### Script mods
+
+Some mods go far beyond the ordinary, adding whole new features to the game (why no flying cars, CDPR?). Unfortunately, that means they're more prone to breaking than others. Here's a non-comprehensive list.
+
+{% hint style="warning" %}
+Being on this list does not mean that a mod is "bad" or that you shouldn't use it – they break much for the same reason as the frameworks do, and are fixed in the same way (the modder has to update).
+{% endhint %}
+
+#### [Let There Be Flight](https://www.nexusmods.com/cyberpunk2077/mods/5208)
+
+Adds flying cars to Cyberpunk. While this is awesome, it might break during updates.
+
+#### [Vehicle Combat](https://www.nexusmods.com/cyberpunk2077/mods/3815)
+
+Adds car chases and a bunch of related features. While CP2077 needs more car chases and explosions, occasionally this requires updating.
+
+#### [Mod Settings](https://www.nexusmods.com/cyberpunk2077/mods/4885)&#x20;
+
+Adds mod settings to the in-game menu – Redscript version.
+
+#### [Native Settings UI](https://www.nexusmods.com/cyberpunk2077/mods/3518)
+
+Adds mod settings to the in-game menu – CET version. The mod itself doesn't usually break, but it's dependent on [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107) being up-to-date.
+
+### spawn0
+
+Most famous for edits of the female body that defy gravity and wreak havoc on V's spinal disks, this modder has been around since the early days, and the same is true for their mods.&#x20;
+
+However, modding has come a long way since then, and spawn0 never followed. For that reason, their mods are known to have compatibility issues with pretty much everything in the general vicinity.&#x20;
+
+On the bright side, their mods won't crash your game and are downwards compatible until the dawn of time.
 
 ## Finding the broken mod (log files)
 
@@ -482,6 +517,10 @@ It is in `r6/log/redscript.log`. See if you have any ideas to resolve the error.
 If you rename or delete any directories, make sure to create a new, empty directory.
 {% endhint %}
 
+{% hint style="info" %}
+If you are here because Redscript is causing you trouble and the previous steps haven't been helping, check here.
+{% endhint %}
+
 #### Disable your mods
 
 Vortex: Disable them
@@ -509,6 +548,16 @@ Check if your game starts.
 **If that did not work:**
 
 It's possible that `final.redscripts.bk` was corrupted as well. Delete `final.redscripts` again and verify your game files.
+
+{% hint style="success" %}
+Make sure your game starts up without error.
+{% endhint %}
+
+**If that did not work:**
+
+* delete r6/cache
+* Make sure that both `r6/scripts` and `red4ext/plugins` are empty.&#x20;
+* verify game files
 
 {% hint style="success" %}
 Make sure your game starts up without error.
