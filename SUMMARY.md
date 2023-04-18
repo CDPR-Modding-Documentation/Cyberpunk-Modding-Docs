@@ -107,6 +107,7 @@
 * [Animations](modding-guides/animations/README.md)
   * [AMM: Collab anims/poses](modding-guides/animations/amm-collab-anims-poses.md)
   * [Custom poses for spawned NPCs](modding-guides/npcs/custom-poses-for-spawned-npcs.md)
+  * [Abusing workspots](modding-guides/animations/abusing-workspots.md)
 * [Everything else](modding-guides/everything-else/README.md)
   * [Custom in-game icons](modding-guides/everything-else/custom-in-game-icons.md)
   * [Moving and renaming in existing projects](modding-guides/everything-else/moving-and-renaming-in-existing-projects.md)
