@@ -236,7 +236,7 @@ If you don't care and just want a solution, just keep reading.
 
 ### A RedMod
 
-Check that you've enabled the feature (see [Deploying Mods and Starting Game](../core-mods-frameworks/redmod/#installation)). Does that solve it? If not, proceed to the section about [Log Files](./#finding-the-broken-mod-log-files) and try to find an error message here.
+Check that you've enabled the feature (see [Deploying Mods and Starting Game](../frameworks/redmod/#installation)). Does that solve it? If not, proceed to the section about [Log Files](./#finding-the-broken-mod-log-files) and try to find an error message here.
 
 ### CET
 
@@ -244,7 +244,7 @@ You have installed Cyber Engine Tweaks, but it's not active / not letting you bi
 
 * Is CET in the right place? It has to be installed under `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks`
 * Check if you have a log file in `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\gamelog.log`. If you don't, that means CET isn't even loading. If you do, it will contain error messages that'll hopefully help you out.
-* Check that mods are [enabled](../core-mods-frameworks/redmod/#installation)
+* Check that mods are [enabled](../frameworks/redmod/#installation)
 * Make sure that you have [Visual C Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed ([direct download](https://aka.ms/vs/17/release/vc\_redist.x64.exe) from Microsoft)
 
 ### A CET script

@@ -89,14 +89,18 @@ This list is supposed to give you an overview of which files go where. It is **n
 
 If REDmod is not installed and activated, your mods will not load.&#x20;
 
-* For instructions on how to install, see [here](../../modding-know-how/core-mods-frameworks/redmod/#installation).
-* For instructions on how to activate it, see [here for GOG](../../modding-know-how/core-mods-frameworks/redmod/usage.md#gog-galaxy) and here for [Steam and Epic](../../modding-know-how/core-mods-frameworks/redmod/usage.md#steam-and-epic).
+* For instructions on how to install, see [here](../../modding-know-how/frameworks/redmod/#installation).
+* For instructions on how to activate it, see [here for GOG](../../modding-know-how/frameworks/redmod/usage.md#gog-galaxy) and here for [Steam and Epic](../../modding-know-how/frameworks/redmod/usage.md#steam-and-epic).
 
 REDmods are installed in `Cyberpunk 2077\mods`, where every mod has a subfolder with an `info.json`.
 
+{% hint style="warning" %}
+Depending on your other mods, you might require [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176).
+{% endhint %}
+
 ## Installing Mods
 
-You can install mods via [Vortex](./#vortex) or [manually](./#manual-install). There are upsides and downsides to each of&#x20;
+You can install mods via [Vortex](./#vortex) or [manually](./#manual-install). There are upsides and downsides to each — however, **for beginners, we recommend usign Vortex**.
 
 ### Vortex
 
@@ -107,8 +111,8 @@ By default, Vortex will convert everything you download to a REDmod, as this is 
 #### 0. Download and login
 
 1. Download the mod manager from [Nexus](https://www.nexusmods.com/about/vortex/), then log in to your Nexus account.
-2. Set a Mod Staging folder (if it doesn't ask you, open Settings/Mods). **This is where Vortex stores its files**. It needs to be on the same drive as your game, but not the game directory itself.
-3. Add Cyberpunk 2077 — the executable is in the game directory under `/bin/x64/Cyberpunk2077.exe`
+2. Set a Mod Staging folder (if it doesn't ask you, open Settings/Mods). **This is where Vortex stores its files**, so do not put it into the game directory.
+3. Add Cyberpunk 2077: the executable is in the game directory under `/bin/x64/Cyberpunk2077.exe`
 
 #### 1. Install a mod
 

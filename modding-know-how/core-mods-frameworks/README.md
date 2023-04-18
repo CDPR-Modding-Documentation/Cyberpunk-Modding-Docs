@@ -26,7 +26,7 @@ Cyber Engine Tweaks ([Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/107)|
 
 Lots of mods and scripts run on top of CET, tweaking the game in various ways from changing the weather to adding a wardrobe system before CDPR added a wardrobe system.&#x20;
 
-The perhaps most prominent example is Appearance Menu Mod ([wiki](amm.md) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/790)), which turns Cyberpunk 2077 into The Sims: Capitalist Dystopia.
+The perhaps most prominent example is Appearance Menu Mod ([wiki](../frameworks/amm.md) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/790)), which turns Cyberpunk 2077 into The Sims: Capitalist Dystopia.
 
 {% content-ref url="http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/" %}
 [CET (English)](http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)

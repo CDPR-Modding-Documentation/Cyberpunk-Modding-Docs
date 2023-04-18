@@ -19,7 +19,7 @@ When sharing you mod, you would package the folder that is the name of the mod. 
 
 ### Subfolders
 
-Whether you are doing [Animation Modding](#animation-modding), [Script Modding](#script-modding), [TweakDB Modding](#tweakdb-modding), [Audio Modding](#audio-modding), or other mods (archive mods), you will need at least _one_ subfolder for the mod files to go into. This subfolder should be located on the same level as the `info.json` file, and be nested directly inside the folder with the mod name.
+Whether you are doing [Animation Modding](quick-guide.md#animation-modding), [Script Modding](quick-guide.md#script-modding), [TweakDB Modding](quick-guide.md#tweakdb-modding), [Audio Modding](quick-guide.md#audio-modding), or other mods (archive mods), you will need at least _one_ subfolder for the mod files to go into. This subfolder should be located on the same level as the `info.json` file, and be nested directly inside the folder with the mod name.
 
 ### info.json
 
@@ -35,14 +35,14 @@ For a REDmod to be recognized as such by the game engine, the primary requiremen
 ```
 
 In the above:
+
 * The `name` field is the mod's name and will generally be the same as the folder the `info.json` file sits in.
-* The `version` field is the mod's version. The version should generally use "Semantic  Versioning" 
+* The `version` field is the mod's version. The version should generally use "Semantic Versioning"
 * The `description` field is optional for _all_ mods, but it is generally suggested one should include it so other tools have something to display for a given mod.
-* The `customSounds` field is semi-optional. It _is_ required for [Audio Modding](#audio-modding).
+* The `customSounds` field is semi-optional. It _is_ required for [Audio Modding](quick-guide.md#audio-modding).
 
-> INFO - Semantic Versioning is a method of versioning where each number gives meaning for a release based on their position. It uses the format  `MAJOR.MINOR.PATCH` where a `MAJOR` release change is one which will break workflows, `MINOR` could break a workflow but is generally safe and might introduce deprecations, and a `PATCH` is a small non breaking change that all users on the same `MAJOR` and `MINOR` can update to without any issues.
+> INFO - Semantic Versioning is a method of versioning where each number gives meaning for a release based on their position. It uses the format `MAJOR.MINOR.PATCH` where a `MAJOR` release change is one which will break workflows, `MINOR` could break a workflow but is generally safe and might introduce deprecations, and a `PATCH` is a small non breaking change that all users on the same `MAJOR` and `MINOR` can update to without any issues.
 
- 
 ## Animation Modding
 
 ### Animation Modding - WolvenKit Integration
@@ -50,13 +50,13 @@ In the above:
 The REDmod animation import tool can be used as a Plugin in [WolvenKit](https://github.com/WolvenKit/Wolvenkit).
 
 * Add the `.re` animation file you wish to import to your **/Raw** folder in your mod project
-* Add the `.anims` animation set file from the game with the *Asset Browser*
+* Add the `.anims` animation set file from the game with the _Asset Browser_
 * Click View > Import/Export tool
-* In the Import/Export tool, navigate to *Import*: a list of all `.re` animation file in your **/Raw** folder will appear
+* In the Import/Export tool, navigate to _Import_: a list of all `.re` animation file in your **/Raw** folder will appear
 * Double click the entry to change the import options:
   * Select the `.anims` animation set file to import from the dropdown
-  * Select the *animation name* you wish to override from the dropdown
-* Click *process*
+  * Select the _animation name_ you wish to override from the dropdown
+* Click _process_
 
 > INFO - It is best to name `.re` animation correctly even if you replace an existing animation, because the imported animation will always have the filename of the `.re` file.
 
@@ -81,7 +81,7 @@ Optional parameters include specifying an existing animation name to rename insi
 To make a script mod in REDmod:
 
 1. make a new mod and create a new folder here: `<Cyberpunk 2077>/mods/MODNAME/scripts`
-2. copy the  `.script` file(s) you want to change from `<Cyberpunk 2077>/tools/redmod/scripts`:exclamation: *preserving the folder structure!*
+2. copy the `.script` file(s) you want to change from `<Cyberpunk 2077>/tools/redmod/scripts`:exclamation: _preserving the folder structure!_
 3. add an `info.json` file to `<Cyberpunk 2077>/mods/MODNAME/scripts` with some mod info
 
 ```json
@@ -93,14 +93,14 @@ To make a script mod in REDmod:
 }
 ```
 
-:white_check_mark:  Done. To test, launch the game with REDmod.
+:white\_check\_mark: Done. To test, launch the game with REDmod.
 
 ## TweakDB Modding
 
 To make a tweak mod in REDmod:
 
 1. make a new mod and create a new folder here: `<Cyberpunk 2077>/mods/MODNAME/tweaks`
-2. copy the `.tweak` file(s) you want to change from `<Cyberpunk 2077>/tools/redmod/tweaks` :exclamation: *preserving the folder structure*!
+2. copy the `.tweak` file(s) you want to change from `<Cyberpunk 2077>/tools/redmod/tweaks` :exclamation: _preserving the folder structure_!
 3. add a `info.json` file to `<Cyberpunk 2077>/mods/MODNAME/tweaks` with some mod info
 
 ```json
@@ -112,7 +112,7 @@ To make a tweak mod in REDmod:
 }
 ```
 
-:white_check_mark:  Done. To test, launch the game with REDmod.
+:white\_check\_mark: Done. To test, launch the game with REDmod.
 
 ## Audio Modding
 
@@ -121,17 +121,16 @@ To make a tweak mod in REDmod:
 The REDmod animation import tool can be used as a Plugin in [WolvenKit](https://github.com/WolvenKit/Wolvenkit).
 
 * Add the `.wav` sound files you wish to import to your **/customSounds** folder in your mod project
-* Click View > *Sound Modding tool*
+* Click View > _Sound Modding tool_
 * In the Sound Modding tool, choose which to mod from the list of game sound events
 * Adjust the parameters
-* Click *Save*
+* Click _Save_
 
 <figure><img src="../../../.gitbook/assets/WolvenKit_soundmodding.jpg" alt=""><figcaption></figcaption></figure>
 
 ### Audio Modding - Manually
 
-Place raw `.wav` audio files inside `<Cyberpunk 2077>/mods/<name>/customSounds`.
-Include a **info.json** file with your mod (`<Cyberpunk 2077>/mods/<name>/customSounds/info.json`) where you sepcify how to use your custom sounds.
+Place raw `.wav` audio files inside `<Cyberpunk 2077>/mods/<name>/customSounds`. Include a **info.json** file with your mod (`<Cyberpunk 2077>/mods/<name>/customSounds/info.json`) where you sepcify how to use your custom sounds.
 
 #### Example
 
@@ -163,13 +162,13 @@ Include a **info.json** file with your mod (`<Cyberpunk 2077>/mods/<name>/custom
 
 * **name** - the game audio event to override
 * **type** - the sound type. Options are:
-  * mod_skip: do not play this sound event
-  * mod_sfx_2d : will be played without any positions / attenuation
-  * mod_sfx_city : has a longer attenuation that is suitable for city sounds
-  * mod_sfx_low_occlusion : has a long attenuation that isn't occluded much e.g. a VO or quest sound that you don't want to be muffled
-  * mod_sfx_occlusion : medium attenuation with normal occlusion
-  * mod_sfx_radio : needs to be tuned to a broadcast channel (e.g. radio)
-  * mod_sfx_room : has a shorter attenuation suitable for something that can be heard across a room
-  * mod_sfx_street : has a medium attenuation, good for something to be heard down a street
+  * mod\_skip: do not play this sound event
+  * mod\_sfx\_2d : will be played without any positions / attenuation
+  * mod\_sfx\_city : has a longer attenuation that is suitable for city sounds
+  * mod\_sfx\_low\_occlusion : has a long attenuation that isn't occluded much e.g. a VO or quest sound that you don't want to be muffled
+  * mod\_sfx\_occlusion : medium attenuation with normal occlusion
+  * mod\_sfx\_radio : needs to be tuned to a broadcast channel (e.g. radio)
+  * mod\_sfx\_room : has a shorter attenuation suitable for something that can be heard across a room
+  * mod\_sfx\_street : has a medium attenuation, good for something to be heard down a street
 * **file** - the `.wav` file to use (inside `/customSounds`)
 * **gain** and **pitch**

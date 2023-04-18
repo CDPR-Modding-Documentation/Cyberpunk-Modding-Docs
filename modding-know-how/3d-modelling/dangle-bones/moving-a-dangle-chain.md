@@ -84,7 +84,7 @@ Open the .mesh in Wolvenkit and navigate to boneRigMatrices.&#x20;
 
 Next, open [https://matrixcalc.org/](https://matrixcalc.org/) and copy paste each of the entries of the bone matrix into the calculator. Then press inverse.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14) (2).png" alt=""><figcaption></figcaption></figure>
 
 Notice how the bottom row of the inverse matrix corresponds to the coordinates of the bone, which you can see in Blender.
 

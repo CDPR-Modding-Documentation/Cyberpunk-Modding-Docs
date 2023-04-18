@@ -1,4 +1,4 @@
-# Create custom poses for spawned NPCs
+# Custom poses for spawned NPCs
 
 ## Summary <a href="#summary" id="summary"></a>
 
