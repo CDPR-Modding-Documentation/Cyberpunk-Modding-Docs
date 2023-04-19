@@ -5,7 +5,7 @@ description: All the dirty detes on components as we discover them. WIP.
 # Components
 
 {% hint style="info" %}
-In general, your components should have a **globally unique name** so you can target them via [partsOverrides](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides). Feel free to ignore this, almost everyone else does as well, but it is the reason behind the convoluted names of CDPR's components.
+In general, your components should have a **globally unique name** so you can target them via [partsOverrides](../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides). Feel free to ignore this, almost everyone else does as well, but it is the reason behind the convoluted names of CDPR's components.
 {% endhint %}
 
 ## Equipment/Hair
@@ -16,7 +16,7 @@ Can be used interchangeably with `entSkinnedMeshComponent`.
 
 * Loads a mesh from a [depotPath](components.md#depotpath).&#x20;
 * Supports [chunkMask](components.md#chunkmask).
-* meshAppearance will select an appearance by name from the mesh's defined [appearances](../meshes.md#chunkmaterials).
+* meshAppearance will select an appearance by name from the mesh's defined [appearances](../3d-modelling/meshes.md#chunkmaterials).
 
 {% hint style="info" %}
 This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](components.md#entskinnedclothcomponent).
@@ -60,9 +60,9 @@ A list of component properties with explanations.
 
 #### chunkMask
 
-Only used for [meshes](../meshes.md): Determines which parts of a mesh will be displayed or hidden. Numeric indices correspond with the submeshes by index.
+Only used for [meshes](../3d-modelling/meshes.md): Determines which parts of a mesh will be displayed or hidden. Numeric indices correspond with the submeshes by index.
 
-<figure><img src="../../../.gitbook/assets/chunkmask.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/chunkmask.png" alt=""><figcaption></figcaption></figure>
 
 #### depotPath
 

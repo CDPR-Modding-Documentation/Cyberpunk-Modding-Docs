@@ -28,7 +28,7 @@ For a free tool for faster normal baking, check out [xnormal](https://xnormal.ne
 
 ## Step 0: Preparing the viewport
 
-1. [Export your mesh](exporting-and-importing-meshes.md) from WolvenKit
+1. [Export your mesh](exporting-and-importing-meshes/) from WolvenKit
 2. Import it into Blender
 3. Select the object
 4. Pick a material:\
@@ -70,7 +70,7 @@ Switch to "Edit" (shortcut: Tab) and select all vertices (shortcut: ctrl+A). You
 <figure><img src="../../.gitbook/assets/normal_maps_uv_editing.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Feel free to change the UV mapping. You can [export](exporting-and-importing-meshes.md#wolvenkit-.gdb-1) this back into Cyberpunk!
+Feel free to change the UV mapping. You can [export](exporting-and-importing-meshes/#wolvenkit-.gdb-1) this back into Cyberpunk!
 {% endhint %}
 
 ## Step 2: High Poly and Low Poly meshes

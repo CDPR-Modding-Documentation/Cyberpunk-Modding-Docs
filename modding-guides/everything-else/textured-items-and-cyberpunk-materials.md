@@ -19,12 +19,12 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 
 **Level of difficulty:** You know how to read.
 
-{% hint style="info" %}
-If you don't want to create an AMM prop pack, simply ignore those parts of the guide that are prefixed with **AMM:** and just use the rest of the knowledge.
-{% endhint %}
-
 {% hint style="success" %}
 If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
+{% endhint %}
+
+{% hint style="info" %}
+You can find explanation and documentation about materials [here](../../modding-know-how/materials/).&#x20;
 {% endhint %}
 
 ## Where to find models
@@ -87,7 +87,7 @@ This will create the following files under the project's `raw` section:
 Use `baseball_02_d.png`, as the other one doesn't have transparency.
 
 {% hint style="info" %}
-The import/export process has [its own guide](../../modding-know-how/3d-modelling/exporting-and-importing-meshes.md). There's also a [troubleshooting page](../../modding-know-how/3d-modelling/self-made-normal-maps/troubleshooting-normal-maps.md) if you're stuck.
+The import/export process has [its own guide](../../modding-know-how/3d-modelling/exporting-and-importing-meshes/). There's also a [troubleshooting page](../../modding-know-how/3d-modelling/self-made-normal-maps/troubleshooting-normal-maps.md) if you're stuck.
 {% endhint %}
 
 Now that all files are in place, open the Import Tool in Wolvenkit (Tools -> Import), and re-import the files. The Wolvenkit preview should show your new imported mesh.
@@ -225,9 +225,11 @@ You can check a material's properties by opening the file inside of Wolvenkit an
 
 ### Setting up our materials
 
+{% hint style="info" %}
+You can find explanation and documentation about materials [here](../../modding-know-how/materials/).&#x20;
+{% endhint %}
+
 #### Add a new material entry
-
-
 
 1. Select the entry "texture" inside the array `materialEntries`
 2. Duplicate it
@@ -324,7 +326,7 @@ Save the lua file, install your mod, and launch the game. Time to test!
 
 ## Material assignments
 
-For an explanation how materials are assigned to a mesh, check[ this page](../../modding-know-how/modding-cyberpunk-2077/meshes.md#materials) - this guide will just tell you what to do.
+For an explanation how materials are assigned to a mesh, check[ this page](../../modding-know-how/3d-modelling/meshes.md#materials) - this guide will just tell you what to do.
 
 {% hint style="info" %}
 You can copy entire materials between meshes: select one, right-click, and pick one of the "copy from…" entries.
@@ -372,7 +374,7 @@ You can name your materials whatever you like, as long as you stick to the follo
 
 #### Explanation:&#x20;
 
-MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](../../modding-know-how/modding-cyberpunk-2077/meshes.md#materials) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
+MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](../../modding-know-how/3d-modelling/meshes.md#materials) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../modding-know-how/materials/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
 
 {% hint style="success" %}
 Now, we [adjust the materials](textured-items-and-cyberpunk-materials.md#fixing-the-materials).
@@ -383,7 +385,7 @@ Now, we [adjust the materials](textured-items-and-cyberpunk-materials.md#fixing-
 Find the array `localMaterialBuffer/materials` and open it. It contains two materials. Wolvenkit will display the names corresponding to the [material entries](textured-items-and-cyberpunk-materials.md#material-entries) so you can see which is which.
 
 {% hint style="info" %}
-For an explanation of material parameters, see [this page](../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/).
+For an explanation of material parameters, see [this page](../../modding-know-how/materials/).
 {% endhint %}
 
 The first one, `mat_textured`, is the one that we will use for the seams. If you imported your textures by overwriting the original export, you shouldn't need to do anything here.&#x20;

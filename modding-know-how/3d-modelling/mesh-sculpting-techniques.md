@@ -12,7 +12,7 @@ description: Best Practices for actually changing meshes
 This guide will give you a number of techniques when it comes to editing meshes in Blender (displayed version: 3.4.1)
 
 Assumed skill level: \
-\- You have [exported a mesh and imported it into Blender](exporting-and-importing-meshes.md)\
+\- You have [exported a mesh and imported it into Blender](exporting-and-importing-meshes/)\
 \- You are able to read and comprehend instructions.
 
 ## Perquisite: Deleting shapekeys
@@ -72,7 +72,7 @@ Useful hotkeys:
 
 Unfortunately, there is currently no way to sculpt several meshes at the same time. However, there is a workaround: You can fuse all meshes together, then split them apart after you're done.
 
-Let's assume that we're sculpting Rogue's pants. For surface material assignment, the seams are an own submesh — the pants (submesh\_00) are coloured via [`multilayered`](../modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md) material, while the seams have a variation of `metal_base` with coloured stitches.
+Let's assume that we're sculpting Rogue's pants. For surface material assignment, the seams are an own submesh — the pants (submesh\_00) are coloured via [`multilayered`](../materials/multilayered.md) material, while the seams have a variation of `metal_base` with coloured stitches.
 
 We don't want to edit those separately, so we'll fuse them into one mesh, sculpt everything in one go, and then split them apart again.
 
@@ -103,7 +103,7 @@ Then, split off the selection into its own submesh again: \
 `Right-Click -> Separate (Hotkey: P) -> Selection`
 
 {% hint style="success" %}
-Make sure to restore the original mesh names before [exporting your mesh from Blender](exporting-and-importing-meshes.md#blender-saving-the-mesh).
+Make sure to restore the original mesh names before [exporting your mesh from Blender](exporting-and-importing-meshes/#blender-saving-the-mesh).
 {% endhint %}
 
 {% hint style="info" %}

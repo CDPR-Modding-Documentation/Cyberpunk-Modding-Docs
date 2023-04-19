@@ -25,7 +25,7 @@ Most of them are other mods.
 <figure><img src="https://i.imgur.com/pBMF2XN.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-[Do you want to know more?](../../modding-know-how/core-mods-frameworks/)
+[Do you want to know more?](../../modding-know-how/core-mods-explained/)
 {% endhint %}
 
 ## Level 1: The mod itself

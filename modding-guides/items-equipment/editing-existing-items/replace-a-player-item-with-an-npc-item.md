@@ -18,7 +18,7 @@ Other relevant know-how for this process:&#x20;
 * [Finding an item's spawn code and mesh](../../../modding-know-how/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials)
 * [Editing mesh appearances](changing-materials-colors-and-textures.md)
 
-For a guide how to import meshes into Cyberpunk, check [here](../../../modding-know-how/3d-modelling/exporting-and-importing-meshes.md).
+For a guide how to import meshes into Cyberpunk, check [here](../../../modding-know-how/3d-modelling/exporting-and-importing-meshes/).
 
 {% hint style="danger" %}
 Make sure that you replace an item that you can actually spawn — not all items in V's folder are actually spawn-able.&#x20;

@@ -9,7 +9,7 @@ description: How to create custom props to use with AMM or sector editing
 **Created by @manavortex**\
 **Published April 82023**
 
-This guide will teach you how to create a customizable by chaining an .ent, an .app, and a .mesh file with multiple appearances. Its focus is on the file structure and the relations between the files. If you want more hands-on tips what you can do with materials, check [here](textured-items-and-cyberpunk-materials.md) or [here](../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/).&#x20;
+This guide will teach you how to create a customizable by chaining an .ent, an .app, and a .mesh file with multiple appearances. Its focus is on the file structure and the relations between the files. If you want more hands-on tips what you can do with materials, check [here](textured-items-and-cyberpunk-materials.md) or [here](../../modding-know-how/materials/).&#x20;
 
 **It uses the following versions:**
 
@@ -123,7 +123,7 @@ If you stick to this naming convention and have your filenames end in `_d` or `_
 A pre-configured mesh for a textured material. Uses the following files in the subfolder `textures`:
 
 * `6_layers.mlsetup`: A [multilayer setup](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material) with colour properties
-* `6_layers.mlmask`: A [multilayer mask](../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md), determining which parts of the mesh are affected by which layer of the mlsetup. In this case, it just contains six blank layers.
+* `6_layers.mlmask`: A [multilayer mask](../../modding-know-how/materials/multilayered.md), determining which parts of the mesh are affected by which layer of the mlsetup. In this case, it just contains six blank layers.
 * `template_01_n.xbm`: A normal (bump) map, adding depth to the object.
 
 {% hint style="success" %}

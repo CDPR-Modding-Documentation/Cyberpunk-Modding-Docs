@@ -1,5 +1,5 @@
 ---
-description: Making your own
+description: Do-it-yourself!
 ---
 
 # ℹ Creators: Modding Cyberpunk 2077
@@ -12,14 +12,14 @@ This section contains **general know-how** and theory.&#x20;
 
 ## Here, you can find
 
-* an overview on [existing frameworks](../core-mods-frameworks/) and [tools](../modding-tools/)
-* information on [folder structure and file types](cyberpunk-file-structure-explained/) inside a mod
+* an overview on [existing frameworks](../core-mods-explained/) and [tools](../modding-tools/)
+* information on [folder structure and file types](../files-and-what-they-do/) inside a mod
 * A guide on how to [analyse other mods](analysing-other-mods.md)
-* Information on [Cyberpunk materials](materials-how-to-configure-them/) and how to configure them
+* Information [on Cyberpunk materials](../materials/) and how to configure them
 * [Reference lists and cheat sheets](../references-lists-and-overviews/) to quickly look up files in the game paths
 * Information on [textures](../textures/) and [how the game uses them for UI elements](../textures/game-icons-the-inkatlas-file.md)
 
-If you are looking for guides to follow, check the **Modding: Guides** section.
+If you are looking for guides to follow, check the **Modding: Guides** section:
 
 {% content-ref url="broken-reference" %}
 [Broken link](broken-reference)

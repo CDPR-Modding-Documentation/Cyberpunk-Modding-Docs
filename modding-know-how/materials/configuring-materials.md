@@ -1,26 +1,14 @@
----
-description: An overview and introduction
----
-
-# Materials: How to configure them
-
-{% hint style="success" %}
-If you just want a material instance or the right template to start, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).
-{% endhint %}
-
-{% hint style="info" %}
-For an explanation of how materials work in meshes, check [here](../meshes.md#materials).&#x20;
-{% endhint %}
+# Configuring materials
 
 ## Checking material properties
 
 You can see a material's default properties by opening the `.(re)mt` file in WolvenKit and inspecting the parameters array. Any properties that you don't overwrite by adding them to your CMaterialInstance or .mi file will take the default properties specified in the file.
 
-<figure><img src="../../../.gitbook/assets/material_properties.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/material_properties.png" alt=""><figcaption></figcaption></figure>
 
 ## Roughness/Metalness
 
-<figure><img src="../../../.gitbook/assets/materials_roughness_metalness.png" alt=""><figcaption><p>A roughness/metalness preview. Yes, it's not a sphere. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/materials_roughness_metalness.png" alt=""><figcaption><p>A roughness/metalness preview. Yes, it's not a sphere. </p></figcaption></figure>
 
 ## Multilayered Material
 
@@ -28,32 +16,32 @@ For a full documentation, check the corresponding [page](multilayered.md).&#x20;
 
 To set it up, use these keys for the "values" array of your material:
 
-|                 |                                                                                                                        |
-| --------------- | ---------------------------------------------------------------------------------------------------------------------- |
-| GlobalNormal    | path\to\normal.xbm                                                                                                     |
-| MultilayerMask  | path\to\mask.mlmask ([white file](../../references-lists-and-overviews/cheat-sheet-materials.md#white-multilayermask)) |
-| MultilayerSetup | path\to\material.mlsetup                                                                                               |
+|                 |                                                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| GlobalNormal    | path\to\normal.xbm                                                                                                  |
+| MultilayerMask  | path\to\mask.mlmask ([white file](../references-lists-and-overviews/cheat-sheet-materials.md#white-multilayermask)) |
+| MultilayerSetup | path\to\material.mlsetup                                                                                            |
 
-<figure><img src="../../../.gitbook/assets/material_docu_multilayered_example.png" alt=""><figcaption><p>an example multilayered material</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/material_docu_multilayered_example.png" alt=""><figcaption><p>an example multilayered material</p></figcaption></figure>
 
 ## Textured Material
 
 The most commonly used material for anything textured is `engine\materials\metal_base.remt`. Despite its name, this material isn't necessarily metallic.
 
 {% hint style="info" %}
-You can also use this material as **emissive**, for a documentation, see [below](./#emissive-material).&#x20;
+You can also use this material as **emissive**, for a documentation, see [below](configuring-materials.md#emissive-material).&#x20;
 {% endhint %}
 
 To make your mesh load a texture, use the following `CKeyValuePair`s in your material's "values" array:
 
-|           |                                                                                             |
-| --------- | ------------------------------------------------------------------------------------------- |
-| BaseColor | path to your texture.xbm (Diffuse/Albedo)                                                   |
-| Roughness | path to your roughnessMap.xbm (if you have one)                                             |
-| Metalness | path to your metalnessMap.xbm (if you have one)                                             |
-| Normal    | path to your normalMap.xbm ([if you have one](../../3d-modelling/self-made-normal-maps.md)) |
+|           |                                                                                          |
+| --------- | ---------------------------------------------------------------------------------------- |
+| BaseColor | path to your texture.xbm (Diffuse/Albedo)                                                |
+| Roughness | path to your roughnessMap.xbm (if you have one)                                          |
+| Metalness | path to your metalnessMap.xbm (if you have one)                                          |
+| Normal    | path to your normalMap.xbm ([if you have one](../3d-modelling/self-made-normal-maps.md)) |
 
-<figure><img src="../../../.gitbook/assets/textured material example.png" alt=""><figcaption><p>example use of metal_base.remt as a textured material</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/textured material example.png" alt=""><figcaption><p>example use of metal_base.remt as a textured material</p></figcaption></figure>
 
 {% hint style="info" %}
 The .xbm is a container around the texture. Export the xbm to png via WolvenKit.
@@ -97,7 +85,7 @@ You can find a ready-to-download template [here](https://mega.nz/file/nElTyD6Z#L
 
 You can make `engine\materials\metal_base.remt` glow by adding the correct parameters, or you can poke through the game files and search for `emissive > .mi` to find Cyberpunk material templates to learn from.&#x20;
 
-For a list of such templates, check [here.](../../references-lists-and-overviews/cheat-sheet-materials.md#emissive-materials)&#x20;
+For a list of such templates, check [here.](../references-lists-and-overviews/cheat-sheet-materials.md#emissive-materials)&#x20;
 
 |               |                                                                                                                                                               |
 | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -161,7 +149,7 @@ Cyberpunk has its own liquid shader(s) such as `base\materials\fillable_fluid_ve
 
 To control the offsets, you need to adjust the vectors FluidBoundingBoxMax and FluidBoundingBoxMin.
 
-It shares various properties (such as IOR, FresnelBias, BlurRadius) with the [glass shader](./#glass).
+It shares various properties (such as IOR, FresnelBias, BlurRadius) with the [glass shader](configuring-materials.md#glass).
 
 |                                                   |                                                                                                                                                                                                                                                                                                                          |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -172,4 +160,3 @@ It shares various properties (such as IOR, FresnelBias, BlurRadius) with the [gl
 
 
 Find a ready-to use (black) liquid .mi file [here](https://mega.nz/file/yVkkjRKS#ii5dB7P1OcwLk-VIBKiU9Ou31dloSO7k1hjEryAj9Ok).
-

@@ -16,9 +16,9 @@ This guide will show you how to\
 Assumed skill level: You are able to read and comprehend instructions.
 
 {% hint style="info" %}
-If you want to replace meshes without editing them, check [this guide](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md).
+If you want to replace meshes without editing them, check [this guide](../../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md).
 
-This guide assumes that you already know which mesh you want to edit. If you do not, check [here](../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials).
+This guide assumes that you already know which mesh you want to edit. If you do not, check [here](../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials).
 
 See the Wolvenkit Wiki for guides on how to export [a character](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender) or [an animation](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims).
 
@@ -37,7 +37,7 @@ You can import and export meshes via WolvenKit **or** Noesis - both methods work
 {% hint style="danger" %}
 **Before you start editing, a warning:**
 
-It is easy to [break a mesh](exporting-and-importing-meshes.md#troubleshooting-i-cant-import-my-mesh) beyond the point of repair. Make frequent back-ups, and continuously test if your altered mesh still imports and displays in WolvenKit, **especially when editing vertices!**
+It is easy to [break a mesh](./#troubleshooting-i-cant-import-my-mesh) beyond the point of repair. Make frequent back-ups, and continuously test if your altered mesh still imports and displays in WolvenKit, **especially when editing vertices!**
 {% endhint %}
 
 ## Exporting the mesh
@@ -49,9 +49,9 @@ WolvenKit <= [8.8](https://github.com/WolvenKit/WolvenKit/releases/tag/8.8.0): U
 WolvenKit > 8.8: Use the Export tool. You can toggle it from the "Tools" menu on the top bar.
 
 1. Select your mesh in the Export Tool and click `Export/Process Selected`, or simply use `Export/Process All.`
-2. You now have`meshName.glb` in your WKit project's [`raw` directory.](exporting-and-importing-meshes.md#path-example)
+2. You now have`meshName.glb` in your WKit project's [`raw` directory.](./#path-example)
 
-<figure><img src="../../.gitbook/assets/textured_items_raw_files.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/textured_items_raw_files.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Wolvenkit > 8.8 will by default export with materials for the [Cyberpunk Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on).
@@ -81,12 +81,12 @@ Wolvenkit has come a long way since the early days of Cyberpunk modding. 5000 ye
 2. Right-click it and select "Export"
 3. Export with default settings:
 
-<figure><img src="../../.gitbook/assets/noesis_mesh_export.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/noesis_mesh_export.png" alt=""><figcaption></figcaption></figure>
 
 ## Blender: Saving the mesh
 
 {% hint style="info" %}
-Some meshes (such as eyelashes and hair) are two-sided. See [here](../modding-cyberpunk-2077/meshes.md#import-export-\_doubled) for details on how Wolvenkit handles that.
+Some meshes (such as eyelashes and hair) are two-sided. See [here](../meshes.md#import-export-\_doubled) for details on how Wolvenkit handles that.
 {% endhint %}
 
 ### glTF Binary  (\*.glb)
@@ -132,7 +132,7 @@ will be imported over
 {% endhint %}
 
 {% hint style="warning" %}
-WolvenKit refuses to import if the target mesh doesn't support all bones in the glb or if your mesh's topology became corrupted. If that's the case, check the [troubleshooting page](self-made-normal-maps/troubleshooting-normal-maps.md).
+WolvenKit refuses to import if the target mesh doesn't support all bones in the glb or if your mesh's topology became corrupted. If that's the case, check the [troubleshooting page](../self-made-normal-maps/troubleshooting-normal-maps.md).
 {% endhint %}
 
 ### Autodesk (\*.fbx)
@@ -148,13 +148,13 @@ Noesis is an **alternative** to importing with WolvenKit.
 * Set the `Main output type` to `.mesh - CyberPunk 2077 mesh [PC]`
 * A dialogue asks you for a file to overwrite. Make sure that it has your mesh!
 
-<figure><img src="../../.gitbook/assets/noesis_mesh_import.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/noesis_mesh_import.png" alt=""><figcaption></figcaption></figure>
 
 ## Differences between fbx and glb
 
 There are a few differences between Noesis and WolvenKit when it comes to exporting your meshes:
 
-<figure><img src="../../.gitbook/assets/import_noesis_glb_armature_differences.png" alt=""><figcaption><p>Note the differently named submeshes</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/import_noesis_glb_armature_differences.png" alt=""><figcaption><p>Note the differently named submeshes</p></figcaption></figure>
 
 |               | Autodesk (fbx) | glTF Binary (glb)   |
 | ------------- | -------------- | ------------------- |
@@ -166,6 +166,6 @@ You can easily convert between the two formats by hand — or use [this script](
 
 ## Troubleshooting
 
-If your mesh won't export from Wolvenkit, try exporting it [without materials](exporting-and-importing-meshes.md#exporting-with-materials) by unchecking the box.&#x20;
+If your mesh won't export from Wolvenkit, try exporting it [without materials](./#exporting-with-materials) by unchecking the box.&#x20;
 
-For a list of troubleshooting steps, check the [corresponding wiki page](troubleshooting-your-mesh-edits.md).
+For a list of troubleshooting steps, check the [corresponding wiki page](../troubleshooting-your-mesh-edits.md).

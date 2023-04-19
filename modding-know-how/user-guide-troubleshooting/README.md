@@ -15,7 +15,7 @@ Before you start debugging, make sure that&#x20;
 * you have the most recent version of [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.3-windows-x64-installer) installed
 * you have [Visual C++ Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed ([direct download](https://aka.ms/vs/17/release/vc\_redist.x64.exe), Microsoft)
 * your **antivirus** is temporarily disabled (no, really)
-*   **all mods and dependencies** have the latest version, in particular the [core mods](../core-mods-frameworks/) ([Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.0.8)).
+*   **all mods and dependencies** have the latest version, in particular the [core mods](../core-mods-explained/) ([Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.0.8)).
 
     \
     Find a download-ready collection for Vortex [here](https://next.nexusmods.com/cyberpunk2077/collections/r1flnc?tab=Mods).
@@ -65,7 +65,7 @@ To enable REDmods, check [here](https://wiki.redmodding.org/cyberpunk-2077-moddi
 
 As long as you're living on earth, things fall down when you let go of them, and game updates break mods.&#x20;
 
-Given that you're currently browsing a troubleshooting guide, [updating your core frameworks](../core-mods-frameworks/) didn't fix the problem.
+Given that you're currently browsing a troubleshooting guide, [updating your core frameworks](../core-mods-explained/) didn't fix the problem.
 
 {% hint style="warning" %}
 You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
@@ -132,7 +132,7 @@ You are, of course, welcome to peruse the troubleshooting guide. It might even h
 
 If your NPC appearance change doesn't show or your item replacer is added on top of the original item, you will want to install either [material override](https://www.nexusmods.com/cyberpunk2077/mods/5266) or [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/3051).&#x20;
 
-For an explanation, see [here](../modding-cyberpunk-2077/cyberpunk-file-structure-explained/appearance-.app-files.md#commoncookdata).
+For an explanation, see [here](../files-and-what-they-do/appearance-.app-files.md#commoncookdata).
 
 ## Finding the broken mod: known problem children
 
@@ -246,7 +246,7 @@ If you don't care and just want a solution, just keep reading.
 
 ### A RedMod
 
-Check that you've enabled the feature (see [Deploying Mods and Starting Game](../frameworks/redmod/#installation)). Does that solve it? If not, proceed to the section about [Log Files](./#finding-the-broken-mod-log-files) and try to find an error message here.
+Check that you've enabled the feature (see [Deploying Mods and Starting Game](../core-mods-explained/redmod/#installation)). Does that solve it? If not, proceed to the section about [Log Files](./#finding-the-broken-mod-log-files) and try to find an error message here.
 
 ### CET
 
@@ -254,7 +254,7 @@ You have installed Cyber Engine Tweaks, but it's not active / not letting you bi
 
 * Is CET in the right place? It has to be installed under `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks`
 * Check if you have a log file in `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\gamelog.log`. If you don't, that means CET isn't even loading. If you do, it will contain error messages that'll hopefully help you out.
-* Check that mods are [enabled](../frameworks/redmod/#installation)
+* Check that mods are [enabled](../core-mods-explained/redmod/#installation)
 * Make sure that you have [Visual C Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed ([direct download](https://aka.ms/vs/17/release/vc\_redist.x64.exe) from Microsoft)
 
 ### A CET script
@@ -339,7 +339,7 @@ Let's go about it step-by-step.
 
 #### Installing the frameworks
 
-Check the [framework page](../core-mods-frameworks/). For each of the frameworks, complete the following steps:
+Check the [framework page](../core-mods-explained/). For each of the frameworks, complete the following steps:
 
 * If you didn't have it in your previous install, skip it.
 * Install it (manually or via Vortex, your choice)

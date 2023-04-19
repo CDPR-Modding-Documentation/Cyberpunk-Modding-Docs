@@ -8,7 +8,7 @@ description: Creating a custom inkatlas
 
 Okay, now you've added something! But it doesn't have a preview icon yet - you'll have to add this manually. For this purpose, you'll have to edit an image.
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 For a guide how to ensure image transparency, see [here](../../modding-know-how/textures/images-importing-editing-exporting.md).
 {% endhint %}
 

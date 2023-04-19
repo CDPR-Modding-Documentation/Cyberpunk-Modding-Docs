@@ -5,11 +5,11 @@ description: Various kinds of materials, and where to find them
 # Cheat sheet: Materials
 
 {% hint style="info" %}
-This page contains a brief overview of existing materials. **For a more in-depth explanation as well as downloadable example files, check** [**this page**](../modding-cyberpunk-2077/materials-how-to-configure-them/)**.**
+This page contains a brief overview of existing materials. **For a more in-depth explanation as well as downloadable example files, check** [**this page**](../materials/)**.**
 
 
 
-If you don't know how to edit material properties, check [here](../modding-cyberpunk-2077/materials-how-to-configure-them/).
+If you don't know how to edit material properties, check [here](../materials/).
 {% endhint %}
 
 ## Simple / Basic materials
@@ -36,7 +36,7 @@ A white mlMask will apply the selected material to the whole surface of the mesh
 
 ## Textured Materials
 
-For further details, see [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#textured-material).
+For further details, see [here](../materials/#textured-material).
 
 |                                                             |                                                                                                                                |
 | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -57,7 +57,7 @@ Works exactly like multilayered, but uses `base\characters\common\cyberspace\sil
 
 ## Emissive Materials
 
-See [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#emissive-material) how it works and how to configure it.
+See [here](../materials/#emissive-material) how it works and how to configure it.
 
 | material                                                                                                    | description                                                                                                                                                        |
 | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -70,7 +70,7 @@ See [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#emissive-m
 
 ## Glass
 
-For more details on glass materials and instructions on how to configure them, see [here](../modding-cyberpunk-2077/materials-how-to-configure-them/#glass).&#x20;
+For more details on glass materials and instructions on how to configure them, see [here](../materials/#glass).&#x20;
 
 |                                                                            |                                                                   |
 | -------------------------------------------------------------------------- | ----------------------------------------------------------------- |
@@ -96,4 +96,4 @@ Use `engine\materials\metal_base.remt`, the example below has been copied from `
 
 ## Liquid
 
-Use `base\materials\fillable_fluid_vertex.mt` or see [here ](../modding-cyberpunk-2077/materials-how-to-configure-them/#liquid)for details.
+Use `base\materials\fillable_fluid_vertex.mt` or see [here ](../materials/#liquid)for details.

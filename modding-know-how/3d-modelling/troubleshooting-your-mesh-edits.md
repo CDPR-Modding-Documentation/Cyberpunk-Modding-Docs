@@ -41,7 +41,7 @@ You can use [this Python script](https://github.com/manavortex/code\_snippets/bl
 
 #### Option 1: Fuck those bones
 
-You can [import the mesh with Noesis](exporting-and-importing-meshes.md#noesis-.fbx-2), which will not do any of these checks. For that, you need to import/export via .fbx.
+You can [import the mesh with Noesis](exporting-and-importing-meshes/#noesis-.fbx-2), which will not do any of these checks. For that, you need to import/export via .fbx.
 
 {% hint style="warning" %}
 Since noesis expects differently-named submeshes under the root armature, you'll want to export the mesh via noesis, join your changed meshes on those under Noesis\_Root, and import it again.\
@@ -152,7 +152,7 @@ For example, you have moved something, but the change doesn't show in the game: 
 
 E.g. you've changed a shape, but now everything moves at an offset.&#x20;
 
-As stated in the [importing/exporting guide](exporting-and-importing-meshes.md), it is easy to fuck up the mesh's properties, and this is most likely what happened. The easiest way to "fix" this is to apply your shape deformation to the original object.
+As stated in the [importing/exporting guide](exporting-and-importing-meshes/), it is easy to fuck up the mesh's properties, and this is most likely what happened. The easiest way to "fix" this is to apply your shape deformation to the original object.
 
 #### Replacing the vertices
 
