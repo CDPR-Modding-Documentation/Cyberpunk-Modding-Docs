@@ -14,6 +14,7 @@ Before you start debugging, make sure that&#x20;
 * your graphics driver is up-to-date
 * you have the most recent version of [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.3-windows-x64-installer) installed
 * you have [Visual C++ Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed ([direct download](https://aka.ms/vs/17/release/vc\_redist.x64.exe), Microsoft)
+* your **antivirus** is temporarily disabled (no, really)
 *   **all mods and dependencies** have the latest version, in particular the [core mods](../core-mods-frameworks/) ([Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.0.8)).
 
     \
@@ -68,6 +69,8 @@ Given that you're currently browsing a troubleshooting guide, [updating your cor
 
 {% hint style="warning" %}
 You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
+
+Likewise, you'll want to **turn off your antivirus** to rule it out as a problem source.
 {% endhint %}
 
 ### There are no framework updates!
@@ -132,6 +135,13 @@ If your NPC appearance change doesn't show or your item replacer is added on top
 For an explanation, see [here](../modding-cyberpunk-2077/cyberpunk-file-structure-explained/appearance-.app-files.md#commoncookdata).
 
 ## Finding the broken mod: known problem children
+
+### Stuff that isn't mods
+
+It doesn't **have** to be either of these. But if it is, you'll never find it with the rest of the list. Rule it out by deactivating them while you're debugging.
+
+* **Antivir**
+* **ReShade**
 
 ### Script mods
 
