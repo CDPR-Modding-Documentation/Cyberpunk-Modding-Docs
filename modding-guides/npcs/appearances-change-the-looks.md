@@ -17,7 +17,7 @@ This guide will walk you through **editing NPC appearances** for Cyberpunk 2077.
 
 * Cyberpunk 2077 game version >= 1.6
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.7.1-nightly.2022-11-04
-* (optional, if you want to add new experiences) [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) (versions < 2.0 work until they don't)
+* (only if you want to add new appearances) [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) >= 1.15
 
 {% hint style="info" %}
 Assumed skill level: You're able to read.
