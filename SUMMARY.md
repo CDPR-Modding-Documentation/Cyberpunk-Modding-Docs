@@ -108,6 +108,7 @@
   * [Editing LUTs](modding-guides/visual-modding/editing-luts.md)
 * [Animations](modding-guides/animations/README.md)
   * [AMM: Collab anims/poses](modding-guides/animations/amm-collab-anims-poses.md)
+  * [Retargeting Animations](modding-guides/animations/retargeting-animations.md)
   * [Custom poses for spawned NPCs](modding-guides/npcs/custom-poses-for-spawned-npcs.md)
   * [Abusing workspots](modding-guides/animations/abusing-workspots.md)
 * [Everything else](modding-guides/everything-else/README.md)

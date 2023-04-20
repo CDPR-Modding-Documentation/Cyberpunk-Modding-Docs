@@ -59,7 +59,7 @@ Open the apperance file. You will see a bunch of appearances:
 We only care for `_m` and `_w` right now, since they are using different meshes. \
 Open the array `components` and find the one holding the mesh:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>basic_01 is using "default" material (green)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (2).png" alt=""><figcaption><p>basic_01 is using "default" material (green)</p></figcaption></figure>
 
 We can see that the `basic_01` appearance is using the `default` material, and the `basic_02` appearance is using the `bbstripes` material:
 

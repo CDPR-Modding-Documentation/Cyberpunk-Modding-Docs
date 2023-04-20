@@ -181,7 +181,7 @@ Understood? No? That's fine. Just keep it unique. :D
 
 You can rename a material by changing the "name" property inside the `CMeshMaterialEntry` in the `materials` array:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Inside the appearances block, the material assignment to the individual submeshes happens by name, so don't forget to change the `chunkMaterial` names!

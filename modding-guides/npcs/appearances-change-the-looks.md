@@ -122,7 +122,7 @@ In that case, you need to browse the files for any occurances of the component y
    ![](../../.gitbook/assets/app\_modification\_copy\_component.png)
 5. Select "Copy Selection From Array/Buffer"
 6. Go back to your original .app file and select either the "components" array or any component inside it. Now right-click and select "Paste Selection From Array/Buffer".\
-   &#x20;![](../../.gitbook/assets/image.png)
+   &#x20;![](<../../.gitbook/assets/image (14).png>)
 7. If you haven't done that yet, delete the original component(s) and animations:\
    ![](../../.gitbook/assets/app\_modification\_delete\_original\_component.png)
 
