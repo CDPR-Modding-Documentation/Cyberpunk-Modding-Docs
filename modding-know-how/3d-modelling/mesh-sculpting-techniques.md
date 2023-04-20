@@ -72,7 +72,7 @@ Useful hotkeys:
 
 Unfortunately, there is currently no way to sculpt several meshes at the same time. However, there is a workaround: You can fuse all meshes together, then split them apart after you're done.
 
-Let's assume that we're sculpting Rogue's pants. For surface material assignment, the seams are an own submesh — the pants (submesh\_00) are coloured via [`multilayered`](../materials/multilayered.md) material, while the seams have a variation of `metal_base` with coloured stitches.
+Let's assume that we're sculpting Rogue's pants. For surface material assignment, the seams are an own submesh — the pants (submesh\_00) are coloured via [`multilayered`](../modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md) material, while the seams have a variation of `metal_base` with coloured stitches.
 
 We don't want to edit those separately, so we'll fuse them into one mesh, sculpt everything in one go, and then split them apart again.
 

@@ -18,7 +18,7 @@ This guide aims to teach you moving and deleting objects from the world.
 * [**WolvenKit 8.7**](https://github.com/WolvenKit/WolvenKit) **or higher**
 
 {% hint style="info" %}
-For more documentation on streaming sector files, see [here](../../modding-know-how/files-and-what-they-do/streaming-sectors-.streamingsector.md).
+For more documentation on streaming sector files, see [here](../../developers/file-formats/streaming-sectors.md).
 {% endhint %}
 
 ## Finding the required sector

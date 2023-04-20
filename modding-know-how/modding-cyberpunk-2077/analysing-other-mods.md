@@ -1,4 +1,4 @@
-# 🔍 Analysing other mods
+# Analysing other mods
 
 **Created by @manavortex**\
 **Published December 11 2022**
