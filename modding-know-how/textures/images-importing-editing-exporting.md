@@ -5,8 +5,15 @@ description: How to edit images and preserve transparency
 # Images: Importing, editing, exporting
 
 {% hint style="info" %}
-For a guide how to import/export textures, see the [Wolvenkit Wiki](../frameworks/redmod/commands/). It is easiest to export a texture, then overwrite the output file, and import it again.
+Rache Bartmoss once said: the first step to [importing a texture](images-importing-editing-exporting.md#importing-a-texture) is [exporting a texture](images-importing-editing-exporting.md#exporting-a-texture).
 {% endhint %}
+
+## Exporting a texture
+
+1. Add the texture you want to overwrite to your Wolvenkit project.
+   1. If necessary, move and rename it. You should stick to the game's naming convention.
+2. Find the Export Tool (Tools -> Export Tool) and export the texture.
+3. You can now find a png file in your project's `raw` folder.
 
 ## Editing a texture
 
@@ -38,10 +45,20 @@ In the layers palette, use your image as selection by ctrl+clicking on the layer
 
 <figure><img src="../../.gitbook/assets/select_all.png" alt=""><figcaption><p>Layer to selection</p></figcaption></figure>
 
-**With the alpha channel selected**, fill your selection with white to mark the transparent parts. +
+**With the alpha channel selected**, fill your selection with white to mark the transparent parts.&#x20;
 
 {% hint style="info" %}
 The fastest way to do that is to press **d**, **x**, **delete**
 {% endhint %}
 
-You can now save your image as a PNG with transparency.
+You can now save your image as a PNG with transparency. If you have exported a texture in the first section, you should overwrite that file.
+
+## Importing a texture
+
+* Find the Import Tool (Tools -> Import Tool) and select your texture.
+* If you have stuck to the game's naming convention, Wolvenkit will select the right preset for you. Otherwise, you need to select the right preset:&#x20;
+  * `TexG_Generic_Color` for a diffuse/albedo
+  * `TexG_Generic_Normal` for a normal map
+  * … etc
+* If your texture is upside-down, uncheck the box for `VFlip`.&#x20;
+* Click the "import" button. Your png will now be imported Into the xbm file.
