@@ -70,4 +70,18 @@ Sorry, choomba, you're fucked. No downgrading possible.
 
 ### Steam
 
-Steam also doesn't support downgrading, but you can try [this workaround](https://www.makeuseof.com/how-to-downgrade-steam-games/). If this doesn't work, see the downgrade instructions for [Epic](users-downgrading-preventing-auto-updates.md#epic-1).
+Steam doesn't directly support downgrading, but you can use steamdb to attempt to download a previous depot. Longer instructions can be found [in this MakeUseOf guide](https://www.makeuseof.com/how-to-downgrade-steam-games/), but the condensed version (courtesy of our lovely Discord community) goes as follows:\
+\
+First [turn autoupdate off for Steam](users-downgrading-preventing-auto-updates.md#preventing-the-game-from-auto-updating) _**now**_ so that you don't forget to do it later. We'll wait.\
+\
+The depot for the **current version 1.62-hotfix (3.0.71)** is `download_depot 1091500 1091501 6912231438248154766` (this is **version specific**. Please reach out to update the version if it's outdated.)
+
+1. Open Steam
+2. Press `Win+R`
+3. Type `steam://open/console` to get into the steamdb console
+4. In the console, enter this command exactly to start the download (it'll be the entire 60 GB so be prepared): `download_depot 1091500 1091501 6912231438248154766`&#x20;
+5. After the game finishes downloading, go to the installation location listed in the console, and copy either just the changed files (you can view the manifest for the new version) or the whole thing over your game directory to overwrite the new changes.
+
+This should leave you with the correct previous game version. You can right-click cyberpunk2077.exe to verify the versions in Properties > Details.
+
+You might still need to do a script cache reset or other cleanup before the game starts up nice, so head on over to [those instructions](../../modding-know-how/user-guide-troubleshooting/#troubleshooting-after-an-update) if need be.

@@ -16,8 +16,8 @@ This wiki is a community project! Do you want to improve or add anything? [Start
 [users-modding-cyberpunk-2077](help/users-modding-cyberpunk-2077/)
 {% endcontent-ref %}
 
-{% content-ref url="help/users-troubleshooting/" %}
-[users-troubleshooting](help/users-troubleshooting/)
+{% content-ref url="modding-know-how/user-guide-troubleshooting/" %}
+[user-guide-troubleshooting](modding-know-how/user-guide-troubleshooting/)
 {% endcontent-ref %}
 
 ## Making mods
