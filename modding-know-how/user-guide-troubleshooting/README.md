@@ -609,7 +609,7 @@ Do **not** press deploy.&#x20;
 
 #### If all your mods were managed via Vortex:
 
-Start Cyberpunk however you want, as long as it's not via Vortex. If it starts, go to [Remove RedScript](./#step-4-remove-redscript).
+Start Cyberpunk however you want, as long as it's not via Vortex. If it starts now, you're done here and can proceed with [bisecting](./#finding-the-broken-mod-bisecting) – otherwise, go to [Remove RedScript](./#step-4-remove-redscript).
 
 #### If you had a mixed install:&#x20;
 
