@@ -65,15 +65,15 @@ Errors look like this:
 
 An error in the log files almost always means that something exploded in a way that nobody has planned for.&#x20;
 
-* If the file is **directly** in `bin\x64\plugins\cyber_engine_tweaks`, that means CET is broken and you need to [troubleshoot it](../../modding-know-how/user-guide-troubleshooting/#dealing-with-a-broken-mod).&#x20;
+* If the file is **directly** in `bin\x64\plugins\cyber_engine_tweaks`, that means CET is broken and you need to [troubleshoot it](./#dealing-with-a-broken-mod).&#x20;
 * If the file is **in a subfolder** of `bin\x64\plugins\cyber_engine_tweaks`, you have found a broken mod, but CET mods won't break the game. In this case, treat it like a [warning](finding-and-reading-log-files.md#warning).
-* If the log is anywhere else, you have found [something to troubleshoot](../../modding-know-how/user-guide-troubleshooting/#dealing-with-a-broken-mod).
+* If the log is anywhere else, you have found [something to troubleshoot](./#dealing-with-a-broken-mod).
 
 ### Warning
 
 {% hint style="info" %}
 If the mod with the warnings is working, you can ignore them.\
-If the game is crashing or if you can't find any errors, you can try the [bisect method](../../modding-know-how/user-guide-troubleshooting/#finding-the-broken-mod-bisecting) or [troubleshoot it](../../modding-know-how/user-guide-troubleshooting/#dealing-with-a-broken-mod) and hope that you're lucky.
+If the game is crashing or if you can't find any errors, you can try the [bisect method](./#finding-the-broken-mod-bisecting) or [troubleshoot it](./#dealing-with-a-broken-mod) and hope that you're lucky.
 {% endhint %}
 
 If your warning isn't listed below, use your own best judgement.
@@ -87,4 +87,4 @@ If your warning isn't listed below, use your own best judgement.
 field with this name is already defined in the class, this will have no effect
 ```
 
-This **might** indicate that a Redscript mod is loaded twice. Search the Cyberpunk root folder the mod name and make sure that you have no duplicates. If you're uncertain about this, try the [bisect method](../../modding-know-how/user-guide-troubleshooting/#finding-the-broken-mod-bisecting) on your `r6` folder.
+This **might** indicate that a Redscript mod is loaded twice. Search the Cyberpunk root folder the mod name and make sure that you have no duplicates. If you're uncertain about this, try the [bisect method](./#finding-the-broken-mod-bisecting) on your `r6` folder.

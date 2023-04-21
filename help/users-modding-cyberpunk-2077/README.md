@@ -104,8 +104,21 @@ You can install mods via [Vortex](./#vortex) or [manually](./#manual-install). T
 
 ### Vortex
 
+#### What does Vortex do and should I use it?
+
+{% hint style="success" %}
+If you had terrible experiences with Vortex for other games, be assured: Cyberpunk integration is working extremely well. Maybe give it another chance?
+{% endhint %}
+
+Vortex is a **mod manager** which will automate almost everything that you can fuck up when installing by hand. You will be able to see at first glance if a mod has been updated, and you can uninstall/delete your mods without losing data.
+
+Once Vortex is [installed](./#0.-download-and-login), you can add mods directly from Nexus. The downloaded files will be kept inside the **staging** directory rather than in the game directory itself; you need to [**install**](./#1.-install-a-mod)**,** [**enable**](./#2.-enabling) and [**deploy**](./#3.-deploying) them if you want them to become active. Fortunately, this process is extremely simple.
+
 {% hint style="info" %}
-By default, Vortex will convert everything you download to a REDmod, as this is how it maintains load order. If you do not want this, see [here](./#4.-optional-deactivate-redmod-conversion).
+By default, Vortex will convert everything you download to a REDmod, as this is how it maintains load order.&#x20;
+
+* If you have no idea whether or not you want this, leave it alone.
+* If you have a good reason not to want this, see [here](./#4.-optional-deactivate-redmod-conversion).
 {% endhint %}
 
 #### 0. Download and login
@@ -124,7 +137,7 @@ If there isn't one, browse to the "Files" tab and look for the "Mod Manager Down
 
 <figure><img src="../../.gitbook/assets/installing-mods-vortex-2.png" alt=""><figcaption></figcaption></figure>
 
-If neither of these options are available, the mod author has chosen not to support Vortex. That does not mean that you have to install from hand: you can try to download the archive, then **drag and drop** it on the running Vortex client.
+If neither of these options are available, the mod author has chosen not to support Vortex. You can still try to download the archive, then **drag and drop** it on the running Vortex client.
 
 If that doesn't work, you have to install it [**by hand**](./#by-hand).
 
@@ -132,17 +145,18 @@ If that doesn't work, you have to install it [**by hand**](./#by-hand).
 
 By default, mods you install via Vortex will be **disabled**. To add them to Cyberpunk, you need to enable them.
 
-<figure><img src="../../.gitbook/assets/installing-vortex-enabling-mods.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/installing-vortex-enabling-mods.png" alt=""><figcaption><p>Although they're installed, Vortex will ignore all these mods until you tell it otherwise.</p></figcaption></figure>
 
 #### 3. Deploying
 
-Vortex keeps its files in the Staging folder that you configure in the settings.&#x20;
+{% hint style="warning" %}
+Instead of cluttering your game directory, Vortex keeps everything in its **staging** folder until you're good to go. Here's how you give it the go:
 
-{% hint style="info" %}
-If you launch Cyberpunk via Vortex, the mod manager will deploy automatically. Otherwise, you have to click this button:
+* launch the game via Vortex&#x20;
+* hit the **deploy** button.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/installing-vortex-deploy.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/vortex_deploy.png" alt=""><figcaption></figcaption></figure>
 
 Vortex will give you an error message if any of your mods couldn't be deployed successfully.&#x20;
 
@@ -159,7 +173,7 @@ You should only do this if you run into problems with your mods. By default, thi
 For problems that are related directly to Vortex, you can use [Nexus support](https://wiki.nexusmods.com/index.php/Category:Vortex) or join our [Discord](https://discord.gg/redmodding) and find (volunteer) help in the #vortex-support channel.
 
 {% hint style="info" %}
-Before your mods **deploy**, there is no need to consult the [general troubleshooting](../../modding-know-how/user-guide-troubleshooting/).
+Before your mods **deploy**, there is no need to consult the [general troubleshooting](../users-troubleshooting/).
 {% endhint %}
 
 ### M[^1]anual install
@@ -201,6 +215,6 @@ As a rule of thumb: usually, but not always…
 
 If you have problems with Vortex, check the [corresponding section](./#5.-troubleshooting) of the guide.&#x20;
 
-For everything else, this wiki has a dedicated [troubleshooting page](../../modding-know-how/user-guide-troubleshooting/) that has solutions to many common problems. If that doesn't cut it, you're welcome to find us on [Discord](https://discord.gg/redmodding) in the #mod-troubleshooting channel (but your first answer will be a link to that guide).
+For everything else, this wiki has a dedicated [troubleshooting page](../users-troubleshooting/) that has solutions to many common problems. If that doesn't cut it, you're welcome to find us on [Discord](https://discord.gg/redmodding) in the #mod-troubleshooting channel (but your first answer will be a link to that guide).
 
 [^1]: 

@@ -13,7 +13,7 @@ This guide will show you how to debug a dependency chain to troubleshoot a mod. 
 Difficulty: You know how to read, this wiki will teach you the rest.
 
 {% hint style="success" %}
-In the process of this guide, you will be told to check a certain mod's log file. If you don't know how to do that, check [this](finding-and-reading-log-files.md) page for a step-by-step guide.Technique: Reading log files
+In the process of this guide, you will be told to check a certain mod's log file. If you don't know how to do that, check [this](../users-troubleshooting/finding-and-reading-log-files.md) page for a step-by-step guide.Technique: Reading log files
 {% endhint %}
 
 ## Theory: What is a requirement?
@@ -40,7 +40,7 @@ You're trying to install a mod — and it's not working.
 For Atelier stores, there won't be individual log files. Skip [here](requirements-explained.md#level-2-the-requirements), starting with [VirtualAtelier ](https://www.nexusmods.com/cyberpunk2077/mods/2987)as a dependency.
 {% endhint %}
 
-Search for a matching log file in the Cyberpunk folder (either the mod's name or in the mod's folder). [Here](finding-and-reading-log-files.md) are instructions on how you do that.&#x20;
+Search for a matching log file in the Cyberpunk folder (either the mod's name or in the mod's folder). [Here](../users-troubleshooting/finding-and-reading-log-files.md) are instructions on how you do that.&#x20;
 
 \=> If you have found a log file, go [here](requirements-explained.md#a-log-file-exists).
 
@@ -56,13 +56,13 @@ This means that your mod is loaded, but never initialized. Go [here](requirement
 
 #### The file has errors
 
-The mod itself is broken. You can now go and [troubleshoot it](../../modding-know-how/user-guide-troubleshooting/#dealing-with-a-broken-mod).
+The mod itself is broken. You can now go and [troubleshoot it](../users-troubleshooting/#dealing-with-a-broken-mod).
 
 #### The file only has warnings
 
 Your mod is being loaded, so the dependencies are OK (if they aren't, the log file would tell you so).
 
-Warnings in the log file don't necessarily mean that something is outright broken. But since you're here and your mod isn't working, that is probably the case. Proceed with [troubleshooting](../../modding-know-how/user-guide-troubleshooting/#dealing-with-a-broken-mod).
+Warnings in the log file don't necessarily mean that something is outright broken. But since you're here and your mod isn't working, that is probably the case. Proceed with [troubleshooting](../users-troubleshooting/#dealing-with-a-broken-mod).
 
 ### You can't find a log file
 
