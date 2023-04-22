@@ -27,6 +27,8 @@ This section aims to give you a quick overview. If your exact problem isn't list
 
 [Photomode screenshots are borked](./#photomode-screenshots-are-blank)
 
+[Press \[none\] to continue](./#press-none-to-continue)
+
 [Your pirated version is broken](./#you-pirated-the-game)
 
 [Your game isn't starting](./#your-game-isnt-starting-crashes-to-desktop)
@@ -41,13 +43,11 @@ This section aims to give you a quick overview. If your exact problem isn't list
 
 [XML Document parsed with errors](./#xml-document-parsed-with-errors)
 
-[You installed a mod, but it's not doing anything](./#mod-s-arent-loading-triggering)
+[You installed a mod, but it's not doing anything](./#you-installed-a-mod-but-it-doesnt-do-anything)&#x20;
 
-A mod is causing problems, and you have no idea which [(1)](./#finding-the-broken-mod-bisecting) [(2)](./#finding-the-broken-mod-log-files)
+A mod is causing problems, and you have no idea which [(0)](./#finding-the-broken-mod-known-problem-children) [(1)](./#finding-the-broken-mod-bisecting) [(2)](./#finding-the-broken-mod-log-files)
 
 [You want to start with a clean install](./#the-nuclear-option-a-clean-install)
-
-Redmod isn't doing anything: Install [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176)
 
 [Something with files or ACCESS\_VIOLATION](./#something-something-files)
 
@@ -59,13 +59,16 @@ To enable REDmods, check [here](https://wiki.redmodding.org/cyberpunk-2077-moddi
 
 
 
-
-
 ## Troubleshooting after an update
 
 As long as you're living on earth, things fall down when you let go of them, and game updates break mods.&#x20;
 
-Given that you're currently browsing a troubleshooting guide, [updating your core frameworks](../core-mods-explained/) didn't fix the problem.
+Given that you're currently browsing a troubleshooting guide, [updating your core frameworks](../core-mods-explained/) didn't fix the problem. You can&#x20;
+
+* check a [list of known problem children](./#finding-the-broken-mod-known-problem-children) and disable them for now
+* [look around in this guide](./#navigation) or use your browser's search function (Ctrl+F and type)
+* [further troubleshoot](./#i-updated-my-frameworks-but-the-game-is-still-crashing) your installation
+*
 
 {% hint style="warning" %}
 You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
@@ -92,6 +95,10 @@ Make sure to follow the instructions carefully – they will prevent you from r
 ## Photomode screenshots are blank
 
 With 1.62, screenshots are now saved to `Documents\CDPR\Cyberpunk\Screenshots` , and the previous location will receive an empty file.
+
+## Press \[none] to continue
+
+That is due to [Input Loader](https://www.nexusmods.com/cyberpunk2077/mods/4575) requiring an update.
 
 ## Your game isn't starting / Crashes to Desktop
 
@@ -128,11 +135,23 @@ The second reason is that CDPR needs to earn money to pay people to make games f
 
 You are, of course, welcome to peruse the troubleshooting guide. It might even help you. But know that you are judged and we find you wanting.
 
-## A mod is partially working
+## You installed a mod, but it doesn't do anything
+
+{% hint style="info" %}
+If you have any folders inside of `/mods`, you need to install or update [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176). It is required to make Redmod play nice with Red4ext.
+{% endhint %}
+
+### A mod is partially working
 
 If your NPC appearance change doesn't show or your item replacer is added on top of the original item, you will want to install either [material override](https://www.nexusmods.com/cyberpunk2077/mods/5266) or [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/3051).&#x20;
 
 For an explanation, see [here](../files-and-what-they-do/appearance-.app-files.md#commoncookdata).
+
+### Only parts of my mods are working
+
+1. Check the [requirements](../../help/users-modding-cyberpunk-2077/requirements-explained.md) on the mod's nexus page and make sure that you have installed them all
+2. Make sure that all of your [core frameworks](./#step-7-install-the-core-frameworks) are starting up correctly (here's how you can [checking their log files](../core-mods-explained/#log-files-for-the-frameworks))
+3. Check the other log files in the game directory ([here's a guide how](../../help/users-modding-cyberpunk-2077/finding-and-reading-log-files.md))
 
 ## Finding the broken mod: known problem children
 
@@ -347,7 +366,13 @@ Check the [framework page](../core-mods-explained/). For each of the frameworks,
 * Optional: Start the game and load a savegame (you can also do this after installing all of them, but if you run into issues, that will make isolating the point of failure more difficult).
 * Optional (for CET): Start the game and make sure that it asks you to bind a key. If not, check the [corresponding section of this guide.](./#cet)
 
-Once you are done, start up your game and load a savegame. **This should work**.
+{% hint style="info" %}
+If you have any fodlers inside of `/mods`, you need to install or update [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176).
+{% endhint %}
+
+Once you are done, start up your game and load an un-modded save. If you don't have one or aren't sure, start a new game.
+
+**This should now work**. If it doesn't,&#x20;
 
 #### Troubleshooting the frameworks
 
