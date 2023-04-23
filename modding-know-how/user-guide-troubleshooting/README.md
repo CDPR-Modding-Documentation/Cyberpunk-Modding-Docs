@@ -582,7 +582,7 @@ Check if your game starts.
 
 **If that did not work:**
 
-It's possible that `final.redscripts.bk` was corrupted as well. Delete `final.redscripts` again and verify your game files.
+It's possible that `final.redscripts.bk` was corrupted as well. Delete the entire `cache` folder and verify your game files.
 
 {% hint style="success" %}
 Make sure your game starts up without error.
@@ -719,6 +719,10 @@ If it is, put them back one by one until you find the one that breaks it. If tha
 
 ### Step 4: Remove RedScript
 
+{% hint style="info" %}
+You can try [resetting RedScript](./#3.-reset-redscript) first, but at this point, you'll going to have to verify your files anyway.
+{% endhint %}
+
 **Delete** the following files and folders. You don't need a backup, as you can reinstall RedScript from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511). If any of them don't exist, that's okay — just means you don't have to delete them.
 
 ```
@@ -729,7 +733,7 @@ Cyberpunk 2077\bin\x64\winmm.dll
 Cyberpunk 2077\bin\x64\version.dll
 Cyberpunk 2077\engine\config
 Cyberpunk 2077\engine\tools
-Cyberpunk 2077\r6\cache\modded
+Cyberpunk 2077\r6\cache
 Cyberpunk 2077\r6\config
 Cyberpunk 2077\r6\inputs
 Cyberpunk 2077\V2077
@@ -748,7 +752,7 @@ rm ./bin/x64/version.dll
 rm ./engine/config
 rm ./engine/tools/*
 rm ./red4ext
-rm ./r6/cache/modded
+rm ./r6/cache
 rm ./r6/config
 rm ./r6/inputs
 rm ./V2077
