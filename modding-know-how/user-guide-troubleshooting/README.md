@@ -4,7 +4,11 @@ description: If your mods are causing trouble, here's what you can do
 
 # 🆘 Users: Troubleshooting
 
-This page contains troubleshooting information for end users (people who are not modders). You will find step-by-step guides what to do if your game isn't starting or if your mods aren't working as you expect them to.
+This page contains troubleshooting information for people who are **using** mods rather than making mods. You will find step-by-step guides, grouped by different problems.
+
+{% hint style="info" %}
+Did you know?  You can us your browser's search function (Ctrl+F) to quickly find your problem on the page – simply type a word from your error message.
+{% endhint %}
 
 ## Navigation
 
@@ -23,19 +27,21 @@ Before you start debugging, make sure that&#x20;
 
 This section aims to give you a quick overview. If your exact problem isn't listed here, please **look through the different sections** below and try anything that looks promising.
 
+I don't wanna debug, I just want mods!
+
 [There was a game update and now your mods aren't working](./#troubleshooting-after-an-update)
+
+[Your game isn't starting](./#your-game-isnt-starting-crashes-to-desktop) (but there wasn't a game update)
+
+[Redscript Compilation Failed (Popup message)](./#redscript-compilation-failed)
+
+[You're having crashes to desktop](./#your-game-isnt-starting-crashes-to-desktop) (but the game starts)&#x20;
 
 [Photomode screenshots are borked](./#photomode-screenshots-are-blank)
 
 [Press \[none\] to continue](./#press-none-to-continue)
 
 [Your pirated version is broken](./#you-pirated-the-game)
-
-[Your game isn't starting](./#your-game-isnt-starting-crashes-to-desktop)
-
-[You're having crashes to desktop](./#your-game-isnt-starting-crashes-to-desktop)
-
-[Redscript Compilation Failed (Popup message)](./#redscript-compilation-failed)
 
 [You forgot your CET keybind](./#you-forgot-your-cet-keybind)
 
@@ -68,7 +74,10 @@ Given that you're currently browsing a troubleshooting guide, [updating your cor
 * check a [list of known problem children](./#finding-the-broken-mod-known-problem-children) and disable them for now
 * [look around in this guide](./#navigation) or use your browser's search function (Ctrl+F and type)
 * [further troubleshoot](./#i-updated-my-frameworks-but-the-game-is-still-crashing) your installation
-*
+* Reset your installation:
+  * Fall back to a clean state ([precise](./#step-1-temporarily-disable-all-your-mods) | [fast](./#modular-minimal-download-download-less-than-1gb) | [very fast](./#quick-download-less-than-4gb))
+  * Enable all [core mods](./#starting-from-scratch) and make sure that the game starts
+  * Re-enable your other mods (check [bisect](./#finding-the-broken-mod-bisecting) for how to do it fastest)
 
 {% hint style="warning" %}
 You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
@@ -363,24 +372,21 @@ Check the [framework page](../core-mods-explained/). For each of the frameworks,
 * If you didn't have it in your previous install, skip it.
 * Install it (manually or via Vortex, your choice)
 * Install **all of its dependencies**
-* Optional: Start the game and load a savegame (you can also do this after installing all of them, but if you run into issues, that will make isolating the point of failure more difficult).
+* Start the game and load a savegame (you can also do this after installing all of them, but if you run into issues, that will make isolating the point of failure more difficult).
 * Optional (for CET): Start the game and make sure that it asks you to bind a key. If not, check the [corresponding section of this guide.](./#cet)
 
 {% hint style="info" %}
-If you have any fodlers inside of `/mods`, you need to install or update [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176).
+If you have any folders inside of `/mods`, you need to install or update [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176).
 {% endhint %}
 
-Once you are done, start up your game and load an un-modded save. If you don't have one or aren't sure, start a new game.
+Once you are done, start up your game and load a savegame. If you don't have one or aren't sure, start a new game.
 
-**This should now work**. If it doesn't,&#x20;
-
-#### Troubleshooting the frameworks
-
-* If your game crashes when loading a save, try an older, un-modded save. If you do not have one, start a new game, save as soon as you can, and load that one instead. (Don't panic, your savegame is most likely fine)
-* If you add a framework and your game starts crashing before loading a save, you need to [check the log files](./#check-the-log-files) or peruse the rest of this guide and follow the steps there.
+**This should now work**. If it doesn't, please see the next section ([troubleshooting the frameworks](./#troubleshooting-the-frameworks)).
 
 {% hint style="warning" %}
-You **need** to complete this step before proceeding. There are no shortcuts to carry you past it, nothing you can install, no one to save you. Fortunately, this is not rocket science. Just be diligent, follow the steps, and consult the rest of this guide.
+You **need** to complete this step before proceeding: if the core frameworks aren't working without mods, they won't work with mods – adding anything now will just make debugging more difficult.
+
+Fortunately, this is not rocket science. Be methodical,&#x20;
 {% endhint %}
 
 #### Adding back your mods
@@ -392,6 +398,14 @@ If you do not have multiple folders and instead used Vortex, head directly to th
 {% hint style="danger" %}
 Do **not** add all mods at once. Install them in chunks and verify that your game starts correctly. (see "[Finding the broken mod (bisecting)](./#finding-the-broken-mod-bisecting)" for further intel).
 {% endhint %}
+
+## Troubleshooting the frameworks
+
+You have updated everything and your install should be clean, but the game still crashes? Here's what you can do.
+
+* If the game crashes on startup although you have updated everything, that means you have leftover files from outdated frameworks. Make sure to scrub your install clean (you [don't need to reinstall](./#i-really-just-want-to-get-this-working-what-do-i-do), although [you can](./#the-nuclear-option-a-clean-install)).
+* If your game crashes when loading a save, try an older, un-modded save. If you do not have one, start a new game, save as soon as you can, and load that one instead. (Don't panic, your savegame is most likely fine)
+* If you add a framework and your game starts crashing **before** loading a save (or even on start-up), you need to debug this framework. You can [check the log files](./#check-the-log-files) or search for the exact error in this guide.
 
 ## Corrupted archives
 
@@ -434,13 +448,28 @@ Sometimes, the game instance doesn't shut down properly and is still running in 
 * Sort by Name and scroll to C
 * Check if you can see anything **Cyberpunk** in the list.
 * If yes, right-click on it and select **End Task**
-* Make sure that the folder doesn't contain read-only files. &#x20;
 
-### Make sure that all files in the game dir are writable
+### Reboot your PC
 
-Sometimes, files in your Cyberpunk game directory are set to read-only (this has been known to be caused by Steam or mo2 mod manager).&#x20;
+Always a good idea to do that from time to time – in this case, it could make the error go away.&#x20;
 
-You can fix it either via [system console](./#via-system-console) or via [Windows Explorer](./#via-windows-explorer).
+If it doesn't, check the next steps on the list.
+
+### Make sure that all files in the game directory are writable
+
+Sometimes, files in your Cyberpunk game directory are set to read-only.&#x20;
+
+#### **What kind of monster would do something like that???**
+
+We've had confirmed reports of the following culprits:&#x20;
+
+* Steam
+* mo2 mod manager
+* various flavours of antivirus
+
+{% hint style="info" %}
+You can fix this either via [Windows Explorer](./#via-windows-explorer) or via [system console](./#via-system-console), the results will be the same.
+{% endhint %}
 
 #### Via system console:
 
@@ -468,7 +497,7 @@ You can fix it via [system console](./#via-commandline) or via [Windows Explorer
 
 #### Via commandline
 
-{% hint style="info" %}
+{% hint style="warning" %}
 In any of the commands below, you need to substitute `C:/Path/to/Cyberpunk2077` with the path to your game directory.
 {% endhint %}
 
@@ -488,15 +517,15 @@ In any of the commands below, you need to substitute `C:/Path/to/Cyberpunk2077` 
 
 #### Via Windows Explorer
 
-Check [this guide](../../help/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
+We haven't included the full instructions here, but you can check [this guide](../../help/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md).
 
-### Reboot your PC
+### Reboot your PC again
 
 If none of these things has helped, reboot your computer.&#x20;
 
 #### The error should be gone now.
 
-If you still have problems, you will want to [check the log files](./#check-the-log-files) next.
+Not to say that your game will work now – but if you still have an error, it's hopefully a different one. Go back to the start of the guide and let's fix that one too!
 
 ## XML Document parsed with errors
 
@@ -609,6 +638,13 @@ After the missing files have been recovered, you will now have what amounts to a
 It's time to put your mods back and see if you can start the game - see [Starting from Scratch](./#starting-from-scratch).
 
 ## I have another problem that isn't on this list
+
+Here's the catch-all solution. After this, your game _will_ work (or the problem you have is not Cyberpunk related).
+
+1. (optional, as this might solve it): [Reset the Redscript cache](./#3.-reset-redscript).
+2. If your problem doesn't go away, follow the instructions [in the next section](./#i-really-just-want-to-get-this-working-what-do-i-do).
+
+## I really just want to get this working, what do I do?
 
 {% hint style="warning" %}
 You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
@@ -786,16 +822,14 @@ Go to Games -> Installed, right-click on your game and select the following menu
 
 ### Step 6: Launch the game
 
-All files you deleted have been re-acquired. If there are no left-over files from earlier modding attempts, You should now be able to launch the game.
-
-If you have reinstalled the game without following the guide (and without removing the correct files), go [here](./#i-have-another-problem-that-isnt-on-this-list) and make sure that none of those files are around.
+All files you deleted have been re-acquired. **If there are no left-over files from earlier modding attempts,** your game should work now.
 
 {% hint style="warning" %}
-If your game does not start now, then your problem exists outside of Cyberpunk.  In this case, you can&#x20;
+If it does not and you have exhausted the reset options as specified in this guide ([troubleshooting](./#i-really-just-want-to-get-this-working-what-do-i-do) and [nuclear](./#the-nuclear-option-a-clean-install) both) and your game **still** does not start, then your problem exists outside of Cyberpunk.  In this case, you can&#x20;
 
-\- check your [file permissions](./#something-something-files) (separately for [REDprelauncher.exe](./#steam-verify-file-integrity-loop))\
-\- [update the Windows stuff](./#navigation)\
-\- pray
+* check your [file permissions](./#something-something-files) (separately for [REDprelauncher.exe](./#steam-verify-file-integrity-loop))
+* [update the Windows stuff](./#navigation)
+* google your error message and try solutions at random
 {% endhint %}
 
 ### Step 7: Install the core frameworks
