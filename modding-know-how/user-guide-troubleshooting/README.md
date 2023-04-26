@@ -171,6 +171,10 @@ It doesn't **have** to be either of these. But if it is, you'll never find it wi
 * **Antivir**
 * **ReShade**
 
+### Frameworks / Core Mods
+
+These mods are not problem children – quite the opposite. But if they are outdated, either your game or your mods won't work. Make sure that you [have them all up-to-date](./#step-7-install-the-core-frameworks) with the most recent game version.
+
 ### Script mods
 
 Some mods go far beyond the ordinary, adding whole new features to the game (why no flying cars, CDPR?). Unfortunately, that means they're more prone to breaking than others. Here's a non-comprehensive list.
@@ -179,9 +183,13 @@ Some mods go far beyond the ordinary, adding whole new features to the game (why
 Being on this list does not mean that a mod is "bad" or that you shouldn't use it – they break much for the same reason as the frameworks do, and are fixed in the same way (the modder has to update).
 {% endhint %}
 
-#### [Let There Be Flight](https://www.nexusmods.com/cyberpunk2077/mods/5208)
+#### [Let There Be Flight](https://www.nexusmods.com/cyberpunk2077/mods/5208) &#x20;
 
 Adds flying cars to Cyberpunk. While this is awesome, it will **absolutely** break whenever CDPR changes anything, and requires updating.
+
+#### [In-World Navigation](https://www.nexusmods.com/cyberpunk2077/mods/4583)
+
+Displays in-world holographic arrows that direct you towards your quest objectives. Is very likely to break upon patches.
 
 #### [Vehicle Combat](https://www.nexusmods.com/cyberpunk2077/mods/3815)
 
