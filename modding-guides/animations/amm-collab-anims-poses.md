@@ -193,7 +193,7 @@ As of version 2.2, AMM doesn't know anything about the file structure. For that 
       },                   
       ["Big"] = {},                             -- any body gender: big folks, e.g. Jackie, River, Rhino…
       ["Child"] = {},                           -- any body gender: children
-      ["Fat"] = {},                             -- any body gender: fat tolks, e.g. Dexter
+      ["Fat"] = {},                             -- any body gender: fat folks, e.g. Dexter
       ["Man Massive"] = {},                     -- Smasher      
       ["Player Man"] = {},                      -- first person: male body gender V
       ["Player Woman"] = {},                    -- first person: female body gender V
