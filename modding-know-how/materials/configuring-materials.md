@@ -99,6 +99,10 @@ Find a ready-to-use glowing .mi file [here](https://mega.nz/file/jZdCzRzT#7IJD9d
 
 Cyberpunk's glass material, such as `base\materials\glass_onesided.mt`
 
+{% hint style="info" %}
+All glass materials can consider the vertex color attribute, which you can edit [directly in Blender](https://all3dp.com/2/blender-vertex-paint-simply-explained/).&#x20;
+{% endhint %}
+
 |                  |                                                                                                                           |
 | ---------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Opacity          | float, `0.0 - 1.0`: Controls glass transparency.                                                                          |
@@ -108,6 +112,7 @@ Cyberpunk's glass material, such as `base\materials\glass_onesided.mt`
 | Refraction Depth | float `0.0-10.0:` Control refraction amount here.                                                                         |
 | FresnelBias      | float, `0.0 - 2.0`: How much does the glass behave like a lens (that is, warp the picture behind it)?                     |
 | BlurRadius       | float, `0.0 - 1.0`: Blur amount when looking through the glass                                                            |
+| VertexColorTint  | float, `0.0 - 1.0`: Transparency of vertex colour tint                                                                    |
 
 Find a ready-to-use bottle glass .mi [here](https://mega.nz/file/XJshBTxT#OLiUH1UbZEBJG2izMX2egRxq7vVYzqjg9Tbj-7o2bYQ).&#x20;
 
