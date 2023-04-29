@@ -75,7 +75,7 @@ Likewise, you'll want to **turn off your antivirus** to rule it out as a problem
 
 ### There are no framework updates!
 
-That's because the people maintaining them have a thing called `life`, which annoyingly gets in the way of modding. You can either [remove all mods](./#i-have-another-problem-that-isnt-on-this-list) and play vanilla until the updates arrive, or [downgrade your game](../../help/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md#downgrading).
+You can either [remove all mods](./#i-have-another-problem-that-isnt-on-this-list) and play vanilla until the updates arrive, or [downgrade your game](../../help/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md#downgrading).
 
 ### I updated my frameworks, but the game is still crashing!
 
@@ -145,11 +145,11 @@ Before trying to implement any of the other solutions, configure the `REDprelaun
 
 <figure><img src="https://images.unsplash.com/photo-1627569015058-3f298889045f?ixlib=rb-4.0.3&#x26;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&#x26;auto=format&#x26;fit=crop&#x26;w=2670&#x26;q=80" alt=""><figcaption><p>Creative Commons, Credit: <a href="https://unsplash.com/photos/WV9yGVpEAz8">Tom Briskey</a></p></figcaption></figure>
 
-There's a chance of >95% that we have already found the source of your problems — **pirated copies just don't mod well**. That's the first reason why we won't help you, it's a waste of everyone's time.
+There's a chance of >95% that we have already found the source of your problems — **pirated copies just don't mod well**. That's the first reason why things won't work.
 
 The second reason is that CDPR needs to earn money to pay people to make games for us. If you can at all afford it, **please buy the game**. It's a good deal: how much are you willing to spend for a movie ticket? How long does a movie keep you entertained?
 
-You are, of course, welcome to peruse the troubleshooting guide. It might even help you. But know that you are judged.
+You are, of course, welcome to peruse the troubleshooting guide. It might even help you. But know that pirated copies will never be explicitly supported.
 
 ## Finding the broken mod: known problem children
 
@@ -157,7 +157,7 @@ You are, of course, welcome to peruse the troubleshooting guide. It might even h
 
 It doesn't **have** to be either of these. But if it is, you'll never find it with the rest of the list. Rule it out by deactivating them while you're debugging.
 
-* **Antivir**
+* **Antivirus**
 * **ReShade**
 
 ### Frameworks / Core Mods
@@ -902,7 +902,7 @@ Describe your problem as clearly as you can, and add all useful data.&#x20;
 **Good bug report (example 2)**: "Hi, when I try to equip Item \<item name and colour>, it doesn't show up and I only get glitches. I'm using Hyst's boob mod and \<specific version and variant> of your mod. I hope you can help me? Thank you for making this."
 
 {% hint style="danger" %}
-As per the last red box, do keep in mind that you're asking a **favour**. The modder doesn't have your problem, and if they do, they know **exactly** how to fix it. The most time-efficient response for them is to ghost you, so any kind of response is either them being nice or them losing their temper about yet another entitled idiot who can't read. Don't be the entitled asshole who can't read.
+As per the last red box, do keep in mind that you're asking a **favour**. The modder doesn't have your problem, and if they do, they know **exactly** how to fix it. The most time-efficient response for them is to ghost you, so any kind of response is either them being nice or getting mad when you or someone involved ignores visible information.
 {% endhint %}
 
 ### 5. Hands-on troubleshooting

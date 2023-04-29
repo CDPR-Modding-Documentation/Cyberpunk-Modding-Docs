@@ -13,9 +13,10 @@ This page contains instructions on **installing** mods. If you want to **create*
 {% hint style="danger" %}
 **TL;DR:**&#x20;
 
-_The first thing you will be told on Discord is to read this guide, so you might as well do that before wasting everyone's time._
+_The first thing you will be told on Discord is to read this guide._
 
-When installing a mod, make sure to install **all** of its dependencies. You will find a list on the Nexus description tab under "Requirements".\
+When installing a mod, make sure to install _all_ of its dependencies. You will find a list on the Nexus description tab under "Requirements".
+
 If you do not do this, your mod will not work.
 
 You need to [enable REDmod](./#installing-and-activating-redmod). Without it, most of your mods will not work.
@@ -100,7 +101,7 @@ Depending on your other mods, you might require [cybercmd](https://www.nexusmods
 
 ## Installing Mods
 
-You can install mods via [Vortex](./#vortex) or [manually](./#manual-install). There are upsides and downsides to each — however, **for beginners, we recommend usign Vortex**.
+You can install mods via [Vortex](./#vortex) or [manually](./#manual-install). There are upsides and downsides to each — however, **for beginners, we recommend using Vortex**.
 
 ### Vortex
 

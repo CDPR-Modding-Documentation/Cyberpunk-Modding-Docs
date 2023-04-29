@@ -10,8 +10,6 @@ description: >-
 
 This guide will show you how to debug a dependency chain to troubleshoot a mod. It'll use [VirtualAtelier](https://www.nexusmods.com/cyberpunk2077/mods/2987?tab=description) for an example, but the same principle applies to each and any mod.
 
-Difficulty: You know how to read, this wiki will teach you the rest.
-
 {% hint style="success" %}
 In the process of this guide, you will be told to check a certain mod's log file. If you don't know how to do that, check [this](finding-and-reading-log-files.md) page for a step-by-step guide.Technique: Reading log files
 {% endhint %}
