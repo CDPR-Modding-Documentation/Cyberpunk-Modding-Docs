@@ -161,7 +161,7 @@ As stated in the [importing/exporting guide](exporting-and-importing-meshes/), i
 2. In Object Mode, select all meshes under the reimported armature (the original ones).
 3. Switch to Edit Mode and select all vertices (Ctrl+A)
 4. Delete them (x, vertices, Return)
-5. Go back to edit mode
+5. Go back to Object mode
 6. For each of your edited objects:&#x20;
    1. select the submesh that you edited (submesh\_00\_LOD\_1)
    2. select the empty submesh from the reimported armature (submesh\_00\_LOD\_1.001)
