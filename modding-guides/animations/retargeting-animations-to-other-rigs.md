@@ -2,7 +2,7 @@
 description: How to retarget an animation from one rig to another!
 ---
 
-# Retargeting Animations
+# Retargeting Animations to other rigs
 
 Created by **PinkyDude 🦝 (**[Originally uploaded on a google doc](https://docs.google.com/document/d/1nHPQvkK6ijwb8iQ8y1X8CBG-wnNUCTYCjrdUCGMenW4/edit?usp=sharing))\
 **Published April 20 2023**
@@ -15,7 +15,7 @@ For this tutorial, you will need:
 * a recent version of [Blender](https://www.blender.org/)  (tutorial created using v. 3.3.0)
 * [xBaebsae’s Custom Poses M/F templates and Tutorial](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/)
 * the [Rokoko Studio live](https://github.com/Rokoko/rokoko-studio-live-blender) plugin for Blender
-* [HitmanHimself’s Blender import plugin](https://github.com/HitmanHimself/cp77research)
+* [ Wolvenkit Cyberpunk Blender import plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/)
 
 If you’re looking into retargeting animations, I’m assuming that you already have some basic modding knowledge; swapping animation, browsing the files with wKit (WolvenKit), packing a mod… So this won’t be covered in this tutorial!
 
@@ -30,7 +30,7 @@ I’ll be using Ruby’s Dance during the “Chippin’ In” quest.
 
 Export your desired .anim file using wKit’s export tool and open one of xBaeBsae’s custom pose templates; in my case I’ll use the Male one.
 
-Import the animation using HitmanHimself’s import plugin!
+Import the animation using the import plugin!
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 

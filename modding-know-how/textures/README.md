@@ -2,7 +2,7 @@
 description: What kinds of textures exist, and what do they do?
 ---
 
-# 🖼 Textures
+# Textures
 
 This page aims to give an overview on different kinds of textures and what the game is using them for.&#x20;
 

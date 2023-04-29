@@ -48,4 +48,6 @@ Most of them are pretty easy to guess/find but theres the odd curveball.
 | Regina Jones     | reggie.ent                                                                                 | service\_\_fixer\_wa.app                                                                   |
 | Padre            | padre.ent                                                                                  | sebastian\_perez.app                                                                       |
 | Ripperdocs       | <p>service__ripperdoc_ma.ent<br>service__ripperdoc_mb.ent<br>service__ripperdoc_wa.ent</p> | <p>service__ripperdoc_ma.app<br>service__ripperdoc_mb.app<br>service__ripperdoc_wa.app</p> |
+| Trauma Team      | corpo\_\_traumateam\_ma.ent                                                                | corpo\_\_traumateam\_ma.app                                                                |
+| Maxtac           | <p>corpo__max_tac_ma.ent<br>max_tac_mb.app<br>max_tac_wa.app</p>                           | <p>max_tac.app<br>max_tac_mb.app<br>max_tac_wa.app</p>                                     |
 
