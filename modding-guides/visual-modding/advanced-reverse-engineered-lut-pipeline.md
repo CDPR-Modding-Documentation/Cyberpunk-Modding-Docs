@@ -2,6 +2,8 @@
 description: >-
   An investigation and documentation of several methods of advanced LUT
   workflows.
+cover: ../../.gitbook/assets/pt_24.png
+coverY: -385
 ---
 
 # Advanced: Reverse-Engineered LUT pipeline
