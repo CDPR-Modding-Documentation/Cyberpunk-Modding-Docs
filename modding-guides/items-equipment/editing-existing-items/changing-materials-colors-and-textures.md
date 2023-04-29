@@ -149,7 +149,7 @@ TBD: Create/link to material description
 
 Save the file and overwrite the original `.mlsetup.json`:
 
-![](<../../../.gitbook/assets/image (11) (1).png>)
+![](<../../../.gitbook/assets/image (11) (1) (1).png>)
 
 If you have configured MLSB and had both files in the same folders, you will see a notification when the MlSetupBuilder has overwritten your original `*.mlsetup`. This takes a few seconds.
 

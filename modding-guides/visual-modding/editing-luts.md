@@ -6,6 +6,10 @@ coverY: 8
 
 # Editing LUTs
 
+{% hint style="warning" %}
+**This article is severely out of date.** Please tread lightly.
+{% endhint %}
+
 ## What is a LUT?
 
 The term LUT has its origins in mathematics, where a Look-Up Table would be able to shorten certain math operations by containing readily-calculated values for any input value, or an operation for an input value for a desired outcome. This shortcut was quite efficient and sped up many operations, and was normally designed as a matrix of different numbers and variables. Soon enough, this improvement in speed would be applied in many other fields, and eventually reached computer graphics and film production.

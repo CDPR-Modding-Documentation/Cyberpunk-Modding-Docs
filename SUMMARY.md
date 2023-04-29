@@ -107,6 +107,7 @@
   * [How to Remove an Animation (and Potentially Replace It)](modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
 * [Visual Modding](modding-guides/visual-modding/README.md)
   * [Editing LUTs](modding-guides/visual-modding/editing-luts.md)
+  * [Advanced: Reverse-Engineered LUT pipeline](modding-guides/visual-modding/advanced-reverse-engineered-lut-pipeline.md)
 * [Animations](modding-guides/animations/README.md)
   * [Importing animations](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/)
   * [AMM: Collab anims/poses](modding-guides/animations/amm-collab-anims-poses.md)
