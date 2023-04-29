@@ -6,7 +6,7 @@ description: All the dirty detes on appearance files
 
 ## Appearances
 
-The real meat of the file: a list of appearance definitions, loaded via [root entity](entity-.ent-files.md#root-entity).&#x20;
+The real meat of the file: a list of appearance definitions, loaded via [root entity](entity-.ent-files/#root-entity).&#x20;
 
 ### components
 
@@ -24,15 +24,15 @@ You can add components that will be included in every appearance to the root ent
 This only works for player equipment and weapons (April 2023)
 {% endhint %}
 
-Allows you to add one or more [component entities](entity-.ent-files.md#mesh-component-entity-simple-entity) into your appearance. They will be treated as if the components were part of the appearance's `components` array.
+Allows you to add one or more [component entities](entity-.ent-files/#mesh-component-entity-simple-entity) into your appearance. They will be treated as if the components were part of the appearance's `components` array.
 
-<figure><img src="../../../.gitbook/assets/partsvalues.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/partsvalues.png" alt=""><figcaption></figcaption></figure>
 
 ### partsOverrides
 
-Overrides component definitions via name. They can be defined in the appearance's own components array or loaded via [component entity](entity-.ent-files.md#mesh-component-entity-simple-entity).&#x20;
+Overrides component definitions via name. They can be defined in the appearance's own components array or loaded via [component entity](entity-.ent-files/#mesh-component-entity-simple-entity).&#x20;
 
-For usage instructions, see [here](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides).&#x20;
+For usage instructions, see [here](../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides).&#x20;
 
 ## commonCookData
 

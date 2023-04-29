@@ -16,10 +16,10 @@ This guide will explain how to influence meshes by directly in the .app file, ov
 ## PartsOverrides
 
 {% hint style="info" %}
-This section assumes that you're loading appearance parts via [associated .ent file](adding-new-items.md#mesh\_entity.ent) rather than including them as components.
+This section assumes that you're loading appearance parts via [associated .ent file](adding-new-items/#mesh\_entity.ent) rather than including them as components.
 {% endhint %}
 
-In the .app file, each appearance lets you define [PartsOverrides](adding-new-items.md#appearance.app), which — as the name implies — let you override the appearance of parts. An entry looks as follows:
+In the .app file, each appearance lets you define [PartsOverrides](adding-new-items/#appearance.app), which — as the name implies — let you override the appearance of parts. An entry looks as follows:
 
 <figure><img src="../../.gitbook/assets/parts_values_parts_overrides.png" alt=""><figcaption><p>Overwrite the component "<code>kimono</code>" and "<code>kimono_filler</code>", which are defined in the file "<code>kimono_meshentity.ent</code>"<br>This is the reason why Cyberpunk has all the player components stored in .ent files!</p></figcaption></figure>
 
@@ -30,6 +30,16 @@ Where **partsValues** lets you define the individual entity files that you'll lo
 {% hint style="info" %}
 Components need to be **unambiguously** identified by their name as defined in the .ent file. For that reason, it's good practice to have globally unique identifiers.&#x20;
 {% endhint %}
+
+Starting with version >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.4.0-rc2), ArchivXL can understand the following variables for `meshAppearance` in `appearanceOverrides`:
+
+|                |                                                                                                                                    |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `{gender}`     | m or w depending on V's body gender                                                                                                |
+| `{skin_color}` | [skin color appearance name](../../modding-know-how/references-lists-and-overviews/cheat-sheet-face-and-skin/#skin-tones-by-index) |
+| `{hair_color}` | [hair color appearance name](../../modding-know-how/references-lists-and-overviews/hair.md#name-in-files-by-index)                 |
+
+So depending on your PC's body gender and colouring, the meshAppearance `my_app_{gender}`**`{skin_color}_{`**`hair_color}` could translate to `my_app_w__01_ca_pale__blue_red_ombre`.
 
 #### Arms
 
@@ -66,11 +76,13 @@ t0_000_pwa_base__full
 t0_000_pma_base__full
 ```
 
+
+
 ### ArchiveXL
 
 Normally, you can override only components from .ent files that you include via partsValues **in the same appearance**. ArchiveXL expands this by letting you manipulate **any** components that are loaded as part of the player.ent:
 
-<figure><img src="../../.gitbook/assets/partsOverrides3.png" alt=""><figcaption><p>This is hiding a submesh of the default body, which isn't part of the referenced <code>pants_leggins.ent.</code><br><code></code>This is only possible because of ArchiveXL!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/partsOverrides3.png" alt=""><figcaption><p>This is hiding a submesh of the default body, which isn't part of the referenced <code>pants_leggins.ent.</code><br>This is only possible because of ArchiveXL!</p></figcaption></figure>
 
 To delete an already existing reference, set the numeric value to the right of the depot path to 0: \
 
