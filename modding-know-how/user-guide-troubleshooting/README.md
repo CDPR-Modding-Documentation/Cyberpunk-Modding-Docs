@@ -667,6 +667,17 @@ Here's the catch-all solution. After this, your game _will_ work (or the problem
 You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
 {% endhint %}
 
+### Is there a shortcut?
+
+**Yes!** This will automate steps 1-4 for you:
+
+1. Download [this script](https://github.com/manavortex/cyberpunk2077/blob/master/batch/cyberpunk2077\_disable\_all\_mods.bat) ([right-click -> save as](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/batch/cyberpunk2077\_disable\_all\_mods.bat)) from manavortex's github.
+2. Either:&#x20;
+   1. Move it to your Cyberpunk install folder and run it
+   2. Drag-and drop your Cyberpunk folder on the .bat file
+3. Follow the instructions and prompts
+4. You can now proceed to [Step 5](./#step-5-repair-game-files) and verify your game files, or you can proceed by hand.
+
 {% hint style="info" %}
 Before following these steps, you might want to take a look at your [log files](../../help/users-modding-cyberpunk-2077/finding-and-reading-log-files.md) — check the instructions for how to do that.
 {% endhint %}
