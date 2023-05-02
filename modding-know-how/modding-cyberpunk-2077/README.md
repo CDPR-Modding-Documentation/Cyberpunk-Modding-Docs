@@ -17,7 +17,7 @@ This section contains **general know-how** and theory.&#x20;
 * A guide on how to [analyse other mods](analysing-other-mods.md)
 * Information [on Cyberpunk materials](../materials/) and how to configure them
 * [Reference lists and cheat sheets](../references-lists-and-overviews/) to quickly look up files in the game paths
-* Information on [textures](../textures/) and [how the game uses them for UI elements](../textures/game-icons-the-inkatlas-file.md)
+* Information on [textures](../textures/) and [how the game uses them for UI elements](../files-and-what-they-do/game-icons-the-inkatlas-file.md)
 
 If you are looking for guides to follow, check the **Modding: Guides** section:
 

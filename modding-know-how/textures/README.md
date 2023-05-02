@@ -70,7 +70,7 @@ In the game files, these files will be named `<name>_m.xbm` (e.g. `base\envment\
 
 ### Atlas
 
-Used for in-game items and UI elements, these textures contain a collection of images. They are made available to the game via [**inkatlas**](game-icons-the-inkatlas-file.md) files.
+Used for in-game items and UI elements, these textures contain a collection of images. They are made available to the game via [**inkatlas**](../files-and-what-they-do/game-icons-the-inkatlas-file.md) files.
 
 #### Naming convention:
 
