@@ -671,7 +671,8 @@ You might want to **deactivate ReShade** before you start debugging. Especially 
 
 **Yes!** This will automate steps 1-4 for you:
 
-1. Download [this script](https://github.com/manavortex/cyberpunk2077/blob/master/batch/cyberpunk2077\_disable\_all\_mods.bat) ([right-click -> save as](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/batch/cyberpunk2077\_disable\_all\_mods.bat)) from manavortex's github.
+1. Download [this script](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/batch/cyberpunk2077\_disable\_all\_mods.bat) (**right-click -> save as**)\
+   _Link goes to the_ [_github repository_](https://github.com/manavortex/cyberpunk2077/blob/master/batch/cyberpunk2077\_disable\_all\_mods.bat) _of the person who wrote most of this guide_.
 2. Either:&#x20;
    1. Move it to your Cyberpunk install folder and run it
    2. Drag-and drop your Cyberpunk folder on the .bat file
