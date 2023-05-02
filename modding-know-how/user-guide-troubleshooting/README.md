@@ -35,6 +35,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
   * [Corrupted archives](./#corrupted-archives)
 * [You're having crashes to desktop](./#your-game-isnt-starting-crashes-to-desktop) (but the game starts)&#x20;
 * [Redscript Compilation Failed (Popup message)](./#redscript-compilation-failed)
+* [Corrupted or missing script files](./#corrupt-or-missing-script-files)
 * [Photomode screenshots are borked](./#photomode-screenshots-are-blank)
 * [Press \[none\] to continue](./#press-none-to-continue)
 * [You have trouble with CET (Cyber Engine Tweaks)](./#cet)
@@ -117,10 +118,12 @@ You have a problem with Red4ext. Try the following steps:
 
 * if you don't have red4ext/logs/red4ext.log, then RED4ext doesn't work, you have to update / fix RED4ext&#x20;
 * if you have red4ext/logs/red4ext.log, then look inside, it will tell you which mods aren't compatible with the current game patch and may be the cause of this issue&#x20;
-* you removed a RED4ext mod, but your scripts aren't recompiled and still refer something from removed mod, you have to fix redscript&#x20;
-* you're missing scripts cache file (only possible if you manually delete it) it can't be anything else
+* if that doesn't help, try [resetting redscript](./#3.-reset-redscript) (you will need to verify your game files).&#x20;
 
-If that doesn't solve your problems or you run into an error with script files, check [Redscript Compilation Failed](./#redscript-compilation-failed).
+If that doesn't solve your problem, you can&#x20;
+
+* [troubleshoot redscript directly](./#redscript-compilation-failed)
+* [temporarily disable all mods](./#step-1-temporarily-disable-all-your-mods) and reinstall the core frameworks
 
 ### Failed to initialize script data
 
@@ -318,7 +321,7 @@ Use [these instructions](./#check-the-log-files), but ignore the part where they
 
 ## The nuclear option: a clean install
 
-You have decided to start over from scratch over the modular approach of [disabling your mods](./#step-1-temporarily-disable-all-your-mods). The instructions below will help you completing that in minimal time.
+You have decided to start over from scratch instead of [disabling your mods](./#step-1-temporarily-disable-all-your-mods) (which will achieve the same, but save you a lot of downloading). The instructions below will help you completing that in minimal time.
 
 {% hint style="danger" %}
 Unless you back them up, your mods will be **lost**. If you don't want that, make backups of the following folders:
