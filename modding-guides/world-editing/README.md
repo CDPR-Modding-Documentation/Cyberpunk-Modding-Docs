@@ -21,6 +21,8 @@ This guide aims to teach you moving and deleting objects from the world.
 For more documentation on streaming sector files, see [here](../../developers/file-formats/streaming-sectors.md).
 
 For a list of interesting locations to modify, see [here](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-streaming-sectors-to-blender/interesting-sectors).&#x20;
+
+For a guide how to export streaming sectors to Blender, see [here](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-streaming-sectors-to-blender).&#x20;
 {% endhint %}
 
 ## Finding the required sector
