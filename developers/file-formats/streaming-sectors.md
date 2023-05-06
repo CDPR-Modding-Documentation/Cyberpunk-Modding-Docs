@@ -4,6 +4,12 @@ description: Some detail on the Streaming Sector files
 
 # Streaming Sectors: .streamingsector
 
+{% hint style="info" %}
+For a guide how to modify streaming sector files, see [here](../../modding-guides/world-editing/).
+
+For a list of interesting locations to modify, see [here](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-streaming-sectors-to-blender/interesting-sectors).&#x20;
+{% endhint %}
+
 StreamingSectors are the files that define the world in Cyberpunk, they tell the engine what goes where, and define everything from the meshes you see and how you can interact with them, to the locations of lights, sounds and fx. They call up the NPCs, they define the minimap.&#x20;
 
 The fundamental bits of the structure are 2 main lists, the nodes, and the nodeData. The nodes define the assets that make up the sector, and the nodeData tells the engine where to put them.  Theres a nodeRef list as well, which seem to be the link that quests use to tie in to triggers etc via the .scene files. Theres also some bits that define variants, that seem to be how sectors change after missions, not worked those out yet.
