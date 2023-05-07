@@ -80,8 +80,8 @@ For an explanation on .mi files, see [here](../materials/re-using-materials-.mi.
 
 This file holds world environment information and -properties. Due to its complexity, information is grouped on its sub-page.&#x20;
 
-{% content-ref url="../../developers/file-formats/streaming-sectors.md" %}
-[streaming-sectors.md](../../developers/file-formats/streaming-sectors.md)
+{% content-ref url="the-whole-world-.streamingsector.md" %}
+[the-whole-world-.streamingsector.md](the-whole-world-.streamingsector.md)
 {% endcontent-ref %}
 
 ## .xbm (Texture)

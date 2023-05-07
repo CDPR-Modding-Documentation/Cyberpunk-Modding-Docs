@@ -57,7 +57,7 @@
     * [.ent files: Suffixes](modding-know-how/files-and-what-they-do/entity-.ent-files/.ent-files-suffixes.md)
   * [Components](modding-know-how/files-and-what-they-do/components.md)
   * [Game icons: The inkatlas file](modding-know-how/files-and-what-they-do/game-icons-the-inkatlas-file.md)
-  * [Streaming Sectors: .streamingsector](developers/file-formats/streaming-sectors.md)
+  * [The whole world: .streamingsector](modding-know-how/files-and-what-they-do/the-whole-world-.streamingsector.md)
 * [🌐 3d Modelling](modding-know-how/3d-modelling/README.md)
   * [Meshes](modding-know-how/3d-modelling/meshes.md)
   * [Exporting and importing meshes](modding-know-how/3d-modelling/exporting-and-importing-meshes/README.md)
