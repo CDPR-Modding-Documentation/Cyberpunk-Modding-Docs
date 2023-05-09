@@ -104,6 +104,7 @@
   * [Adding Objects to the World](modding-guides/world-editing/adding-objects-to-the-world.md)
   * [Adding Locations and Structures with ArchiveXL](modding-guides/world-editing/adding-locations-and-structures-with-archivexl.md)
 * [Photo Mode](modding-guides/photo-mode/README.md)
+  * [ArchiveXL: adding Photo Mode Poses](modding-guides/photo-mode/archivexl-adding-photo-mode-poses.md)
   * [Custom Facial Expressions](modding-guides/photo-mode/custom-facial-expressions.md)
 * [Sound](modding-guides/sound.md)
 * [Quests](modding-guides/quest/README.md)

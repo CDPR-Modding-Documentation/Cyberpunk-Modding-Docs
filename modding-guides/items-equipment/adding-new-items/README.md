@@ -37,7 +37,7 @@ You can find a tool to troubleshoot your ArchiveXL mod [here](https://github.com
 ## Grab the example files
 
 * Create a new Wolvenkit project
-* Download the prepared files from [manavortex's mega](https://mega.nz/file/TYMQUa7b#60y1HLM-BYvS5Eb1uccpq1hq48UwY6VLN5FLHpO8HtI) and extract them to the root of your new project (overwriting the "source" folder
+* Download the prepared files from [manavortex's mega](https://mega.nz/file/TYMQUa7b#60y1HLM-BYvS5Eb1uccpq1hq48UwY6VLN5FLHpO8HtI) or [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8268) and extract them to the root of your new project (overwriting the "source" folder
 
 {% hint style="info" %}
 **If you would rather start from scratch:** Check the detailed instructions [here](adding-new-items-files-from-scratch.md).
