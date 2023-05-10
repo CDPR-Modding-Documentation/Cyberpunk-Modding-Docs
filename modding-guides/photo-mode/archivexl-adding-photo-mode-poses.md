@@ -119,6 +119,10 @@ I recommend doing search and replace on `netrunner_making_poses`, because it's u
 
 #### Define the pose entries
 
+{% hint style="danger" %}
+If one of your poses is called `idle_stand`, that will break a bunch of other mods. Please re-name it in both the .anims file and the .yaml before releasing.
+{% endhint %}
+
 Now comes a long list of entries. They'll look like this:
 
 <figure><img src="../../.gitbook/assets/archivexl_photomode_yaml_2.png" alt=""><figcaption></figcaption></figure>
