@@ -85,7 +85,7 @@
 
 * [WolvenKit Guide Section](https://wiki.redmodding.org/wolvenkit/guides/modding-community)
 * [Community guides](modding-guides/community-guides/README.md)
-  * [NPVs (V as NPC) - custom NPCs](modding-guides/community-guides/npvs-v-as-npc-custom-npcs.md)
+  * [external: NPVs (V as NPC) - custom NPCs](modding-guides/community-guides/external-npvs-v-as-npc-custom-npcs.md)
 * [Items: Equipment](modding-guides/items-equipment/README.md)
   * [Editing existing items](modding-guides/items-equipment/editing-existing-items/README.md)
     * [Changing materials, colors and textures](modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)
@@ -97,6 +97,9 @@
     * [Adding items: Preview images](modding-guides/items-equipment/adding-new-items/adding-items-preview-images.md)
     * [Adding items: Atelier integration](modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md)
 * [NPCs](modding-guides/npcs/README.md)
+  * [NPV - V as custom NPC](modding-guides/npcs/npv-v-as-custom-npc/README.md)
+    * [NPV: Preparing the head in Blender](modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md)
+    * [NPV: Creating a custom NPC](modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md)
   * [Appearances: change the looks](modding-guides/npcs/appearances-change-the-looks.md)
   * [Custom bodyhair for NPCs](modding-guides/npcs/custom-bodyhair-for-npcs.md)
   * [Swap Johnny during the Alt's scene](modding-guides/npcs/swap-johnny-during-the-alts-scene.md)

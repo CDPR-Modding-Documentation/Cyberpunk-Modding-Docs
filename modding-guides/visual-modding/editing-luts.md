@@ -48,7 +48,11 @@ You're looking for the latest release. It requires .NET 5.0 runtime (desktop run
 
 Create a new WolvenKit project and call it whatever you want.&#x20;
 
+<div align="center">
+
 <figure><img src="../../.gitbook/assets/create_project.png" alt=""><figcaption></figcaption></figure>
+
+</div>
 
 After that, import the file `base\weather\24h_basic\luts\cp2077_gen_lut_nge_v017.xbm` into your project.
 

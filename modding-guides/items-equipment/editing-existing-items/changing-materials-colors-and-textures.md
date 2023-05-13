@@ -52,7 +52,11 @@ If you don't know which appearance you want to edit, check [here](../../../moddi
 
 We will change the appearance `bwstripes`, which is used by `Vest_17_basic_01`:
 
+<div align="center">
+
 <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption><p>find material bwstripes and remember the name of the chunkMaterial</p></figcaption></figure>
+
+</div>
 
 {% hint style="info" %}
 `chunkMaterials` corresponds to the `chunkMasks`: For submesh\_00, the material at array position 0 will be used, for submesh\_01 the material at position 1, and so on.

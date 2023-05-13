@@ -37,7 +37,7 @@ description: This page holds a list of community guides all over the internet.
 
 ## Custom NPCs (NPVs)
 
-Please see the corresponding [sub-page](npvs-v-as-npc-custom-npcs.md)
+Please see the corresponding [sub-page](external-npvs-v-as-npc-custom-npcs.md)
 
 ## References
 

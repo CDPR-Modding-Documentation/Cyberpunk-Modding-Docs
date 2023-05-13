@@ -2,12 +2,12 @@
 description: A subpage dedicated to custom NPCs
 ---
 
-# NPVs (V as NPC) - custom NPCs
+# external: NPVs (V as NPC) - custom NPCs
 
 This page is dedicated to the process of creating custom NPCs via community guides and -resources.&#x20;
 
 {% hint style="info" %}
-Before starting the process, check out Resources and Utilities below. Many of the tedious parts are automated or at least supported by tools!
+For the wiki version of this guide, see [here](../npcs/npv-v-as-custom-npc/).
 {% endhint %}
 
 ## Guides
