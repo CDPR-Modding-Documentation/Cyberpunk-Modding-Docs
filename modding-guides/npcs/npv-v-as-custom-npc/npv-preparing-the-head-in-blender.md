@@ -132,6 +132,10 @@ If you've been previously afraid of scripting: This is a good place to stop! :))
 
 <figure><img src="../../../.gitbook/assets/npv_blender_01_apply_shapekeys.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+You don't need to select the eyebrows here, as those are "painted on" later via mesh appearance. The mesh only needs to have the right shape, which is what we're doing here.
+{% endhint %}
+
 9. After you've changed the values to those of your V, click the "play" button again. This will apply the morphs to your V's face:
 
 <figure><img src="../../../.gitbook/assets/npv_tutorial_before_after.png" alt=""><figcaption></figcaption></figure>

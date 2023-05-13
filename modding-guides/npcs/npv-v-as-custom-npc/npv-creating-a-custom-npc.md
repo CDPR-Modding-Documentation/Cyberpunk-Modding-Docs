@@ -126,6 +126,10 @@ It looks like this:
 
 <figure><img src="../../../.gitbook/assets/npv_app_structure.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+This is where you select your eyebrow appearance — open up the mesh file and expand the first list `appearances`. There you can see a bunch of colours and numbers. The numbers correspond with the character editor, and you can look the colours up [here](../../../modding-know-how/references-lists-and-overviews/hair.md).
+{% endhint %}
+
 Each of the prepared .app files has two appearances, `casual` and `business`. I tried hooking up all the components for you (might have forgotten some). In that case, you simply duplicate any of the entSkinnedMeshComponents and change `depotPath` and `apperance`:
 
 <figure><img src="../../../.gitbook/assets/npv_app_details.png" alt=""><figcaption></figcaption></figure>
