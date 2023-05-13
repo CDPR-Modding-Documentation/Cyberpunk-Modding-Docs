@@ -120,7 +120,7 @@ It's a utility file for exactly this process. It needs to go into the `head` fol
 
 5. Press the play button.
 6. The script will now import a bunch of armatures from the `morphtargets` folder. You will see them showing up in the topright corner (see the next screenshot under 7. for how it should look)
-7. Switch to the next script in the file, like this:
+7. Switch to the next script in the file, but **don't run it yet**:
 
 <figure><img src="../../../.gitbook/assets/npv_blender_00_import_2.png" alt=""><figcaption><p>select "01_apply_shapekeys.py" from the dropdown menu</p></figcaption></figure>
 
