@@ -129,3 +129,7 @@ Each of the prepared .app files has two appearances, `casual` and `business`. I 
 … and that's about it, go forth and create custom apperances!&#x20;
 
 You can [check this guide](../appearances-change-the-looks.md), or look through the .app files for other NPCs for ideas. If you need further details, I highly recommend checking out NoraLee's [much more detailed tutorial](https://docs.google.com/document/d/1clFJhpi7H5jk73vUQPnjIwjkuQV6VnYkKMoXt1eYMb0/edit), which will also give you all the context you could possibly need.
+
+{% hint style="danger" %}
+Please remember that **before sharing your NPV**, you **have** to change the paths! At the very least, rename the `tutorial` folders inside of `archive` and `resources` to your user name and then do a [fulltext search and replace in json](../../everything-else/moving-and-renaming-in-existing-projects.md).
+{% endhint %}

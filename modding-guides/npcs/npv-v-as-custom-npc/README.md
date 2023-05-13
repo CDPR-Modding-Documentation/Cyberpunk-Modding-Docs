@@ -76,4 +76,8 @@ Now it's time to do the actual work.&#x20;
 * If you want to create your V's head for Cyberpunk, read on [here](npv-preparing-the-head-in-blender.md)
 * If you already have a head mesh and just want to set up the file structure, read on [here](npv-preparing-the-head-in-blender.md)
 
+{% hint style="danger" %}
+Please remember that before sharing your NPV, you **have** to change the paths! At the very least, rename the `tutorial` folders inside of `archive` and `resources` to your user name and then do a [fulltext search and replace in json](../../everything-else/moving-and-renaming-in-existing-projects.md).
+{% endhint %}
+
 ##
