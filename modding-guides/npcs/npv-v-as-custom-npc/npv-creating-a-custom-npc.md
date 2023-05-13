@@ -30,6 +30,10 @@ This guide assumes that&#x20;
 It's not a problem if you use your own custom paths. You just need to keep that in mind when changing the provided .ent and .app file, as your paths will be different from those in the examples.
 {% endhint %}
 
+{% hint style="success" %}
+You can pack the Wolvenkit project and spawn Tutorial Man and Tutorial Woman via AMM to check out your progress.
+{% endhint %}
+
 ## The .lua file
 
 We're registering our NPC with AppearanceMenuMod via a .lua file, which needs to end up in AMM's `Custom Entities` folder. The full path in the Cyberpunk directory will be this:
@@ -132,4 +136,8 @@ You can [check this guide](../appearances-change-the-looks.md), or look through 
 
 {% hint style="danger" %}
 Please remember that **before sharing your NPV**, you **have** to change the paths! At the very least, rename the `tutorial` folders inside of `archive` and `resources` to your user name and then do a [fulltext search and replace in json](../../everything-else/moving-and-renaming-in-existing-projects.md).
+{% endhint %}
+
+{% hint style="success" %}
+Rmember, you can pack the Wolvenkit project and spawn Tutorial Man and Tutorial Woman via AMM to check out your progress.
 {% endhint %}

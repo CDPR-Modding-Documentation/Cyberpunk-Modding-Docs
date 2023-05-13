@@ -80,4 +80,8 @@ Now it's time to do the actual work.&#x20;
 Please remember that before sharing your NPV, you **have** to change the paths! At the very least, rename the `tutorial` folders inside of `archive` and `resources` to your user name and then do a [fulltext search and replace in json](../../everything-else/moving-and-renaming-in-existing-projects.md).
 {% endhint %}
 
+{% hint style="success" %}
+You can pack the Wolvenkit project and spawn Tutorial Man and Tutorial Woman via AMM to check out your progress.
+{% endhint %}
+
 ##
