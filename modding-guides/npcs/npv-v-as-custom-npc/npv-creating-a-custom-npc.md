@@ -134,7 +134,28 @@ Each of the prepared .app files has two appearances, `casual` and `business`. I 
 
 <figure><img src="../../../.gitbook/assets/npv_app_details.png" alt=""><figcaption></figcaption></figure>
 
-… and that's about it, go forth and create custom apperances!&#x20;
+### Customizing Cyberware
+
+When selecting a different cyberware than the preconfigured one, you **have** to set the appearance name, or the whole thing will show up in grey. The appearance names are usually identical to the cyberware (`cyberware_01`, `cyberware_02` etc.), but if you are uncertain, you can also open the mesh file and check the `appearances` list at the top.
+
+### Customizing piercings: Chunkmasks
+
+You have the full piercing file, but you're only using parts of it — you do that via chunkmasks. \
+Find the piercing component in your `.app` file:
+
+<figure><img src="../../../.gitbook/assets/npv_piercings_chunkmask_1.png" alt=""><figcaption><p>This is where you can turn off submeshes</p></figcaption></figure>
+
+#### How do I know which numbers to put?
+
+You can see that inside the .mesh file. Switch to the `Mesh Preview` tab and toggle the checkboxes on the right; those directly correspond to the boxes you need to uncheck in the `.app` file:
+
+<figure><img src="../../../.gitbook/assets/npv_piercings_chunkmask_2.png" alt=""><figcaption><p>Here we see the indices of these three submeshes: this is what we need to uncheck in the .app file</p></figcaption></figure>
+
+To hide those bits in the .app, we simply need to uncheck the corresponding boxes - check the previous screnshot!
+
+### And that's the gist of it!
+
+Go forth and create custom apperances!&#x20;
 
 You can [check this guide](../appearances-change-the-looks.md), or look through the .app files for other NPCs for ideas. If you need further details, I highly recommend checking out NoraLee's [much more detailed tutorial](https://docs.google.com/document/d/1clFJhpi7H5jk73vUQPnjIwjkuQV6VnYkKMoXt1eYMb0/edit), which will also give you all the context you could possibly need.
 

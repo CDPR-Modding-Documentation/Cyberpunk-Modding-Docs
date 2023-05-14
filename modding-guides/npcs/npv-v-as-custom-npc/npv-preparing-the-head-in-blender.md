@@ -7,7 +7,11 @@ description: 'Step 1: How to generate your V''s custom head mesh'
 **Created by @manavortex**\
 **Published May 13 2023**
 
-This page is a part of the [NPV guide](./). It will show you how to create your V's head in Blender.
+{% hint style="info" %}
+This page is a part of the [NPV guide](./). It will show you how to create your V's head in Blender.&#x20;
+
+You need the **prepared Wolvenkit project**, which is linked on the [main page](./#preparation).
+{% endhint %}
 
 ## Step 1: Getting head
 
@@ -52,6 +56,25 @@ Here's what the prefixes mean:
 | ht\_  | teeth                                                                                                                                   |
 | hx\_  | <p>applied on top of h0: </p><ul><li>cyberware</li><li>makeup</li><li>freckles</li><li>pimples</li><li>tattoos</li><li>scars </li></ul> |
 | l1\_  | ear ring (01-04)                                                                                                                        |
+
+### Finding the right piercing
+
+{% hint style="info" %}
+If your V isn't using any piercings, you can skip this step and go directly to [Deleting Files](npv-preparing-the-head-in-blender.md#deleting-files).
+{% endhint %}
+
+In the files, you will see four files for jewelry:&#x20;
+
+```
+tutorial\npv\your_female_character\head\i1_000_pwa_c__basehead_earring_01.mesh
+tutorial\npv\your_female_character\head\i1_000_pwa_c__basehead_earring_02.mesh
+tutorial\npv\your_female_character\head\i1_000_pwa_c__basehead_earring_03.mesh
+tutorial\npv\your_female_character\head\i1_000_pwa_c__basehead_earring_04.mesh
+```
+
+… none of which is your V's exact piercings. Instead, there are full sets of jewellery, most of which will be **hidden**.
+
+You have to look at the meshes and find the file that includs your set of piercings. We'll go about hiding the excess in one of the later steps.
 
 ### Deleting files
 

@@ -21,11 +21,11 @@ Easy, but not trivial: you don't need any prior knowledge, but the whole structu
 
 * Cyberpunk 2077 game version >= 1.6
 * [WolvenKit](https://github.com/WolvenKit/Wolvenkit/releases) >= 8.9.0
-* [Blender](https://www.blender.org/download/) 3.5.1&#x20;
+* [Blender](https://www.blender.org/download/) 3.5.1 (anything > 3 should work)
 * [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) >= 2.1
 
 {% hint style="info" %}
-For the community guides on the same topic together with many extra guides and resources, see [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/community-guides/npvs-v-as-npc-custom-npcs).&#x20;
+This tutorial should cover your basic needs, but there are many more guides and resources about NPV creation outside of this wiki. You can find them [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/community-guides/npvs-v-as-npc-custom-npcs).&#x20;
 {% endhint %}
 
 {% hint style="warning" %}
@@ -85,5 +85,3 @@ At any time during the guide, you can install the Wolvenkit project and spawn **
 {% endhint %}
 
 <figure><img src="https://64.media.tumblr.com/f9d975e408bb678ba2acddec9f76cbd8/c1517bdcdc3d9374-c8/s2048x3072/553431af3044de381134d1484df5b5b919049f42.pnj" alt=""><figcaption><p>You'll be editing these two</p></figcaption></figure>
-
-##
