@@ -81,7 +81,9 @@ Please remember that before sharing your NPV, you **have** to change the paths! 
 {% endhint %}
 
 {% hint style="success" %}
-You can pack the Wolvenkit project and spawn Tutorial Man and Tutorial Woman via AMM to check out your progress.
+At any time during the guide, you can install the Wolvenkit project and spawn **Tutorial Man** and **Tutorial Woman** via AMM to check out your progress.
 {% endhint %}
+
+<figure><img src="https://64.media.tumblr.com/f9d975e408bb678ba2acddec9f76cbd8/c1517bdcdc3d9374-c8/s2048x3072/553431af3044de381134d1484df5b5b919049f42.pnj" alt=""><figcaption><p>You'll be editing these two</p></figcaption></figure>
 
 ##
