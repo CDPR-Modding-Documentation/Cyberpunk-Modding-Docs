@@ -126,6 +126,12 @@ It looks like this:
 
 <figure><img src="../../../.gitbook/assets/npv_app_structure.png" alt=""><figcaption></figcaption></figure>
 
+### How do I know what to put?
+
+To find out which variants and appearances to use, I suggest that you use NoraLee's excellent [NPV Part Picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker). It will look like this:
+
+<figure><img src="../../../.gitbook/assets/npv_guide_part_picker_preview.png" alt=""><figcaption><p>Find it at <a href="https://noraleedoes.neocities.org/npv/npv_part_picker">https://noraleedoes.neocities.org/npv/npv_part_picker</a></p></figcaption></figure>
+
 {% hint style="info" %}
 This is where you select your eyebrow appearance — open up the mesh file and expand the first list `appearances`. There you can see a bunch of colours and numbers. The numbers correspond with the character editor, and you can look the colours up [here](../../../modding-know-how/references-lists-and-overviews/hair.md).
 {% endhint %}

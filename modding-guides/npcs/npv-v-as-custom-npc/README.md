@@ -17,6 +17,10 @@ This guide will show you how to do the following things:&#x20;
 
 Easy, but not trivial: you don't need any prior knowledge, but the whole structure is complex, and if you make mistakes, you will end up missing files.
 
+{% hint style="success" %}
+If you run into issues with this guide, the right place to ask for help is the [redmodding Discord server](https://discord.gg/redmodding).
+{% endhint %}
+
 **It uses the following versions:**
 
 * Cyberpunk 2077 game version >= 1.6

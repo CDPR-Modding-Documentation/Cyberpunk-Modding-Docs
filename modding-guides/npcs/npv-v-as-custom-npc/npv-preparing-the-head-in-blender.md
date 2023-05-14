@@ -29,6 +29,16 @@ True! That's because I included all options for any given V. After you have dele
 
 I have included all meshes and morphtargets from the game files. We'll now thin out the options.
 
+### The convenient option
+
+{% hint style="success" %}
+The best and most convenient tool for the job is [NoraLee's NPV picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker). It will give you a list of files that you need to keep.&#x20;
+
+The list will give you a number of **Source Mesh** entries like `h0_000_pwa_c__basehead.mesh`.&#x20;
+
+You need to keep these files inside the `head` folder and the `.morphtarget` file in the subfolder `morphtargets`. If you want to understand why, keep reading; otherwise, you can proceed to [Deleting Files](npv-preparing-the-head-in-blender.md#deleting-files).
+{% endhint %}
+
 ### What the actual fuck are all these files?
 
 {% hint style="info" %}
@@ -82,11 +92,11 @@ You have to look at the meshes and find the file that includs your set of pierci
 Number in file name <=> Number in character creator
 {% endhint %}
 
-Many of the files are **variants** and your V will be using **one or none of them.** That means you have a bunch of files to delete. The table below should give you some oversight.
+Many of the files are **variants** and your V will be using **one or none of them.** That means you have a bunch of files to delete. If you have chosen [the convenient option](npv-preparing-the-head-in-blender.md#the-convenient-option) above, you should already have a list of files that you need to keep. Otherwise, the table below should give you some oversight.
 
-You need to delete both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder.
+When deleting files that you aren't using, you need to renive both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder.
 
-Examples:
+The following table will show you examples on what to **keep** (as in, you **delete everything else**):
 
 | Body gender/variant    | Files not to delete from variants                                                                                                                                                                                                              |
 | ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -112,9 +122,11 @@ After deletions, both `head` and `head/morphtargets` should hold only the files 
 
 For a list, see the [table above](npv-preparing-the-head-in-blender.md#okay-and-all-those-numbers).
 
-| min number | 4                                  |
-| ---------- | ---------------------------------- |
-| max number | <p>13 (female)</p><p>14 (male)</p> |
+Once you're done, you should have this many files:
+
+| minimum number of files | 4                                  |
+| ----------------------- | ---------------------------------- |
+| maximum number of files | <p>13 (female)</p><p>14 (male)</p> |
 
 ## Step 2: Exporting head
 
