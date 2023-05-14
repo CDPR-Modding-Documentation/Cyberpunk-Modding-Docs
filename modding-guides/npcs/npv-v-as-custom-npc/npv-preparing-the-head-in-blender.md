@@ -197,6 +197,22 @@ Now it's time to get them back into Wolvenkit.
 2. Click "Import All"
 3. You're done!
 
-Now it's time to [hook up stuff for the game files](npv-creating-a-custom-npc.md).
+{% hint style="success" %}
+You can now start the game and look at your V's face to make sure that your head and eyes are showing up correctly . If it does, read on how to [hook up stuff for the game files](npv-creating-a-custom-npc.md). Otherwise, keep reading.
+{% endhint %}
+
+### Step 4: Troubleshooting
+
+Optimally, this process just runs with no hitches. However, during beta testing and troubleshooting, people ran into a few issues, so I'm listing them here.
+
+#### The piercings are in the wrong position!
+
+The problem went away after the person having it upgraded Blender to 3.5.&#x20;
+
+#### V was imported, but the textures are all wrong!
+
+This happens when the UV maps are flipped. 8.9 doesn't implement that feature yet, so you might have to use a [more recent version](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) of Wolvenkit — the Nightly from [2023-04-29](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-04-29) is currently stable.&#x20;
+
+Alternatively, you can use the last script in the file, which will attempt to flip the UV maps for you. It might have an offset, though.
 
 ##

@@ -24,7 +24,12 @@ If you run into issues with this guide, the right place to ask for help is the [
 **It uses the following versions:**
 
 * Cyberpunk 2077 game version >= 1.6
-* [WolvenKit](https://github.com/WolvenKit/Wolvenkit/releases) >= 8.9.0
+* [WolvenKit](https://github.com/WolvenKit/Wolvenkit/releases) >= 8.9.1 — the Nightly version from [2023-04-29](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-04-29) is stable.
+
+{% hint style="danger" %}
+You can not use the current release 8.9.0 for this! But the Nightly is perfectly OK :)&#x20;
+{% endhint %}
+
 * [Blender](https://www.blender.org/download/) 3.5.1 (anything > 3 should work)
 * [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) >= 2.1
 
@@ -39,6 +44,10 @@ This is the speedrun version. If you want extra details and context, **please ch
 {% endhint %}
 
 ## Preparation
+
+{% hint style="danger" %}
+At the time of writing this guide, the most recent Wolvenkit release is 8.9.0, which doesn't yet support the .morphtarget export! You will have to install a Nightly version, for example the one from [2023-04-29](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-04-29) (which is perfectly stable, the next release is just not quite ready yet).
+{% endhint %}
 
 I have prepared an example project ([mana's mega](https://mega.nz/file/aVETXTaB#gqKTnP\_lBNxe0b1w9b8TM5agENIIIAAxyLmMd8Kb6l8) | Nexus) for you again, but due to the complexity of V's head mesh, you have to do a little bit of prep work here.
 
