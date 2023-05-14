@@ -4,6 +4,10 @@ description: All the dirty detes on appearance files
 
 # Appearance: .app files
 
+{% hint style="success" %}
+If you want to modify an .app file to change an NPC's appearance, check [here](../../modding-guides/npcs/appearances-change-the-looks.md#the-.app-file)!
+{% endhint %}
+
 ## Appearances
 
 The real meat of the file: a list of appearance definitions, loaded via [root entity](entity-.ent-files/#root-entity).&#x20;

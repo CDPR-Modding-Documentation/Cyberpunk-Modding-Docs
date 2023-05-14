@@ -175,7 +175,7 @@ You don't need to select the eyebrows here, as those are "painted on" later via 
 
 <figure><img src="../../../.gitbook/assets/npv_tutorial_before_after.png" alt=""><figcaption></figcaption></figure>
 
-## Step 4: Importing head
+## Step 3: Importing head
 
 {% hint style="info" %}
 Start by deleting the morphtargets — we don't need them anymore.

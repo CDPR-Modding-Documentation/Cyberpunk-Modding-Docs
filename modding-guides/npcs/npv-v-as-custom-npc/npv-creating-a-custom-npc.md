@@ -159,6 +159,31 @@ You can see that inside the .mesh file. Switch to the `Mesh Preview` tab and tog
 
 To hide those bits in the .app, we simply need to uncheck the corresponding boxes - check the previous screnshot!
 
+## Hair
+
+This section will teach you how to find the necessary components to add the right hair to your NPV.
+
+
+
+1. Delete the current hair from the .app — there should be 2-3 components, their names will start with either `hair_` or `hh_0`
+2. Find the correct hair mesh. You have three options for this:
+   1. Looking it up on [our nifty list](../../../modding-know-how/references-lists-and-overviews/hair.md#name-in-files-by-index)
+   2. Using [NoraLee's NPV Part Picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker)&#x20;
+   3. Filtering the files and clicking through their previews: \
+      female: `base\characters\common\hair > wa_ > .mesh > !shadow`\
+      male: `base\characters\common\hair > ma_ > .mesh > !shadow`
+3. Enter the name of the hair mesh that you want to use into the Asset Browser's search bar (see next screenshot) and hit Return.
+4. Once you have found the correct mesh file, right-click it and select "Find Files Using This":
+
+<figure><img src="../../../.gitbook/assets/npv_finding_hair_files.png" alt=""><figcaption></figcaption></figure>
+
+4.  This will give you a list of files, which you can mostly ignore. The only thing we care about is the hair's `.ent` file:
+
+    <figure><img src="../../../.gitbook/assets/npv_hair_filtering.png" alt=""><figcaption><p>This is how you find the hair's .ent file</p></figcaption></figure>
+5.  Open the `.ent` file and expand the `components` array. You will find three components in there, which you can now copy over to your `.app`!
+
+    <figure><img src="../../../.gitbook/assets/npv_hair_ent_file.png" alt=""><figcaption><p>Copy these and move them over to your .app</p></figcaption></figure>
+
 ### And that's the gist of it!
 
 Go forth and create custom apperances!&#x20;
@@ -170,5 +195,5 @@ Please remember that **before sharing your NPV**, you **have** to change the pat
 {% endhint %}
 
 {% hint style="success" %}
-Rmember, you can pack the Wolvenkit project and spawn Tutorial Man and Tutorial Woman via AMM to check out your progress.
+Remember, you can pack the Wolvenkit project and spawn Tutorial Man and Tutorial Woman via AMM to check out your progress.
 {% endhint %}

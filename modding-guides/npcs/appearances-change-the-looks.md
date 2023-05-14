@@ -99,6 +99,10 @@ If you delete a physics-enabled component, you can safely delete the correspondi
 
 ## (Safely) adding components
 
+{% hint style="info" %}
+If you want to exchange an NPC's hair, check [here](npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair).
+{% endhint %}
+
 The obvious thing to do if you want to add a new item is to duplicate another component and then act as if it was just another change:
 
 <figure><img src="../../.gitbook/assets/app_modification_guide_add_component.png" alt=""><figcaption><p>This is usually safe, as long as you are sticking to <strong>entSkinnedMeshComponent</strong>s.</p></figcaption></figure>

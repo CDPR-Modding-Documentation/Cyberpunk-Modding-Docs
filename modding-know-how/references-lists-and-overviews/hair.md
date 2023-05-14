@@ -10,9 +10,13 @@ description: Overview of hair related things
 **Published November 04 2022**\
 **Updated February 3 2023**
 
+{% hint style="info" %}
+If you want to change an NPC's hair instead, you can check [this](../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair) or [this](../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components) guide.
+{% endhint %}
+
 ## Name in files by index
 
-{% hint style="info" %}
+{% hint style="warning" %}
 List has been confirmed working before 1.6, but might need updating (especially since new hair was added)
 {% endhint %}
 
