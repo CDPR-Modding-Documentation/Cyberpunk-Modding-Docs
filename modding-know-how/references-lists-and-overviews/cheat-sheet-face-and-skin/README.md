@@ -37,6 +37,8 @@ Lipstick colours and styles are sorted in (more or less) ascending order in the 
 
 Style order is Default - Glossy - Matte (no suffix, \_02_, \__03)
 
+Link: [Reference images on imgur](https://imgur.com/a/NlbCHYK)
+
 <figure><img src="https://i.imgur.com/P5NMggv.png" alt=""><figcaption></figcaption></figure>
 
 ## Eyeliner and kohl
