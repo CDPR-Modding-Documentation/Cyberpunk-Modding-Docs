@@ -29,9 +29,9 @@ This tutorial should cover your basic needs, but there are many more guides and 
 {% endhint %}
 
 {% hint style="warning" %}
-None of this would have been possible without **NoraLee**, who pioneered the process and taught me everything that I needed to know to set up these tools. This guide doesn't use any of her resources, but a lot of her knowledge. For her full guide with all edge-cases, bells, whistles and context, see her [Google Drive](https://drive.google.com/drive/folders/1R-knopKMhHDZuokPKaTt0nIDArXcQdrb).&#x20;
+None of this would have been possible without **NoraLee**, who pioneered the process and taught me everything that I needed to know to set up these tools. This guide doesn't use any of her resources, but a lot of their knowledge. For the full guide with all edge-cases, bells, whistles and context, see their [Google Drive](https://drive.google.com/drive/folders/1R-knopKMhHDZuokPKaTt0nIDArXcQdrb).&#x20;
 
-This is the speedrun version. If you want extra details and context, please check Nora's Google Doc.
+This is the speedrun version. If you want extra details and context, **please check Nora's Google Doc**.
 {% endhint %}
 
 ## Preparation
