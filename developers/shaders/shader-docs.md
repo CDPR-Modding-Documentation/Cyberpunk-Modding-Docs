@@ -129,8 +129,8 @@ base\materials\glass.mt
 | Opacity                   |                                                        Overall Opacity                                                        |
 | OpacityBackFace           |                                                      Opacity of back face                                                     |
 | TintFromVertexPaint       | Control how much vertex color will tint the glass color. If set to max value, vertex color will completely replace TintColor. |
-| FrontFacesReflectionPower |                                                               ?                                                               |
-| BackFacesReflectionPower  |                                                               ?                                                               |
+| FrontFacesReflectionPower |                                               How much front face reflect light                                               |
+| BackFacesReflectionPower  |                                                How much back face reflect light                                               |
 | IOR                       |                                                      Index of Refraction?                                                     |
 | RefractionDepth           |                                                               ?                                                               |
 | FresnelBias               |                                                               ?                                                               |
@@ -145,6 +145,10 @@ base\materials\glass.mt
 | BlurByRoughness           |                                                               ?                                                               |
 
 #### Note
+
+* There are a number of ways you can colorize your glass. GlassTint is the texture used to determine glass color. TintColor is procedural color. TintFromVertexPaint value determines how much vertex color affects the glass color. GlassTint seemingly has the highest priority, as in it will override other color parameters. Below is a test result from the process of making a glass wing.
+
+<figure><img src="../../.gitbook/assets/glass_color_guide.jpg" alt=""><figcaption><p>How glass color is affected by different parameters</p></figcaption></figure>
 
 * There are many different other glass shaders, this one is just the most basic that is used for small objects.
 
