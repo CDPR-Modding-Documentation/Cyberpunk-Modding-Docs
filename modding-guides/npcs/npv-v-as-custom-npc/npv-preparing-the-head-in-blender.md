@@ -201,7 +201,11 @@ Now it's time to get them back into Wolvenkit.
 You can now start the game and look at your V's face to make sure that your head and eyes are showing up correctly . If it does, read on how to [hook up stuff for the game files](npv-creating-a-custom-npc.md). Otherwise, keep reading.
 {% endhint %}
 
-### Step 4: Troubleshooting
+### Can I have that with textures?
+
+Yes, you absolutely can! Once you have imported them back into Wolvenkit, you can use the With Materials option and the Wolvenkit Blender Plugin to get a fully textured and shaded set.&#x20;
+
+## Step 4: Troubleshooting
 
 Optimally, this process just runs with no hitches. However, during beta testing and troubleshooting, people ran into a few issues, so I'm listing them here.
 
