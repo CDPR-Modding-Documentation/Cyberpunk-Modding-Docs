@@ -86,7 +86,7 @@ Wolvenkit has come a long way since the early days of Cyberpunk modding. 5000 ye
 ## Blender: Saving the mesh
 
 {% hint style="info" %}
-Some meshes (such as eyelashes and hair) are two-sided. See [here](../meshes.md#import-export-\_doubled) for details on how Wolvenkit handles that.
+Some meshes (such as eyelashes and hair) are two-sided. See [here](../models-and-meshes.md#import-export-\_doubled) for details on how Wolvenkit handles that.
 {% endhint %}
 
 ### glTF Binary  (\*.glb)

@@ -16,7 +16,7 @@ Can be used interchangeably with `entSkinnedMeshComponent`.
 
 * Loads a mesh from a [depotPath](components.md#depotpath).&#x20;
 * Supports [chunkMask](components.md#chunkmask).
-* meshAppearance will select an appearance by name from the mesh's defined [appearances](../3d-modelling/meshes.md#chunkmaterials).
+* meshAppearance will select an appearance by name from the mesh's defined [appearances](../3d-modelling/models-and-meshes.md#chunkmaterials).
 
 {% hint style="info" %}
 This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](components.md#entskinnedclothcomponent).
@@ -60,7 +60,7 @@ A list of component properties with explanations.
 
 #### chunkMask
 
-Only used for [meshes](../3d-modelling/meshes.md): Determines which parts of a mesh will be displayed or hidden. Numeric indices correspond with the submeshes by index.
+Only used for [meshes](../3d-modelling/models-and-meshes.md): Determines which parts of a mesh will be displayed or hidden. Numeric indices correspond with the submeshes by index.
 
 <figure><img src="../../.gitbook/assets/chunkmask.png" alt=""><figcaption></figcaption></figure>
 

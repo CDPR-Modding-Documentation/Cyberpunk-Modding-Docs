@@ -2,7 +2,11 @@
 description: Overview page on meshes
 ---
 
-# Meshes
+# Models and Meshes
+
+## Type Extension
+
+`.mesh`
 
 ## Definition&#x20;
 
@@ -10,12 +14,18 @@ description: Overview page on meshes
 
 * the 3d object (as a number of **submeshes**)
 * movement and deform information ([**rigging**](meshes-and-armatures-rigging.md) for the **rig**/**armature**, and **weights**)
-* [Materials](meshes.md#materials) (as in which part of the 3d object will look how)
+* [Materials](models-and-meshes.md#materials) (as in which part of the 3d object will look how)
+
+## Morphtargets
+
+{% hint style="info" %}
+Morphtargets are a special kind of mesh used for alternate and additional shapes beyond the static shape a `.mesh` can define. If your source is a `.morphtarget`, you need to primarily work with that rather than the `.mesh`. Read more in the [Morphtargets ](models-and-meshes.md#morphtargets)section.
+{% endhint %}
 
 ## Materials
 
 {% hint style="info" %}
-This page only contains mesh-specific information. Find more details on materials [here](meshes.md#materials).&#x20;
+This page only contains mesh-specific information. Find more details on materials [here](models-and-meshes.md#materials).&#x20;
 {% endhint %}
 
 This is how to determine which parts of the mesh have which material. For a :
@@ -34,11 +44,11 @@ Materials are defined in the array **`materialEntries`** inside your mesh:
 
 <figure><img src="../../.gitbook/assets/materials_materialentries_overview.png" alt=""><figcaption><p>For a detailed example, see <a href="../materials/re-using-materials-.mi.md#maximally-lazy-external-materials">re-using materials</a></p></figcaption></figure>
 
-| Property        | Description                                                                                                                                                                                                                                                                                                                                                                                                                            |
-| --------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| index           | **numerical index** of corresponding material in target list (as defined by `isLocalInstance`)                                                                                                                                                                                                                                                                                                                                         |
-| isLocalInstance | <p>Selects the material target list.<br><strong>True:</strong> <a href="meshes.md#materialinstance-the-local-material">local material</a> in <code>localMaterialBuffer.materials</code> or <code>preloadLocalMaterialInstances</code><br><strong>False:</strong> <a href="meshes.md#material-reference-a-material-somewhere-else">material reference</a> in<code>externalMaterials</code> or <code>preloadExternalMaterials</code></p> |
-| name            | **unique** name of material, used to select the material via `chunkMaterial`                                                                                                                                                                                                                                                                                                                                                           |
+| Property        | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| --------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| index           | **numerical index** of corresponding material in target list (as defined by `isLocalInstance`)                                                                                                                                                                                                                                                                                                                                                               |
+| isLocalInstance | <p>Selects the material target list.<br><strong>True:</strong> <a href="models-and-meshes.md#materialinstance-the-local-material">local material</a> in <code>localMaterialBuffer.materials</code> or <code>preloadLocalMaterialInstances</code><br><strong>False:</strong> <a href="models-and-meshes.md#material-reference-a-material-somewhere-else">material reference</a> in<code>externalMaterials</code> or <code>preloadExternalMaterials</code></p> |
+| name            | **unique** name of material, used to select the material via `chunkMaterial`                                                                                                                                                                                                                                                                                                                                                                                 |
 
 #### Preload… what?
 
@@ -63,7 +73,7 @@ You can't go wrong by using those. However, if you don't have any properties tha
 
 A material instance looks like this:
 
-<figure><img src="../../.gitbook/assets/material_docu_material_instance.png" alt=""><figcaption><p>baseMaterial picks the material (shader), while "values" contains <a href="meshes.md#checking-material-properties">properties</a> to adjust it.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/material_docu_material_instance.png" alt=""><figcaption><p>baseMaterial picks the material (shader), while "values" contains <a href="models-and-meshes.md#checking-material-properties">properties</a> to adjust it.</p></figcaption></figure>
 
 {% hint style="info" %}
 For an overview of materials that you might want to use for something, check [here](../references-lists-and-overviews/cheat-sheet-materials.md).&#x20;
