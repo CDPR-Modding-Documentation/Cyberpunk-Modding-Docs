@@ -160,8 +160,9 @@ If you want to create another prop, here's the fastest non-script way to go abou
     <figure><img src="../../.gitbook/assets/amm_customizable_props_replace_in_files.png" alt=""><figcaption><p>Make sure to check "<strong>Match case</strong>", or you will be unable to re-import the .ent file!</p></figcaption></figure>
 7. **Optional**: If you have changed the folder structure (e.g. moved your folder from the subfolder `stuff` to the subfolder `misc`), run another `Search and Replace in Files` (Ctrl+Shift+F) to adjust your file paths.
 8. In the project browser's raw section, right-click on the folder and select `Convert from json`. This will have updated the relationships between the files to your renamed files.
-9. Import your meshes and textures over the ones from the template, and delete the files / appearances that you don't need.&#x20;
-10. Add another entry to the props array in your `LUA` file:
+9. Delete the files / appearances that you don't need. Save and close the mesh file.
+10. Import your meshes and textures over the ones from the template. For a guide on how to do that, check [here](textured-items-and-cyberpunk-materials.md#importing-a-mesh).&#x20;
+11. Add another entry to the props array in your `LUA` file:
 
 ```
     {
@@ -179,6 +180,10 @@ If you want to create another prop, here's the fastest non-script way to go abou
 Now you can launch the game and check your prop. If everything went well, you should see something like this now:
 
 If not, it is time to hit up the [troubleshooting](custom-props.md#troubleshooting).
+
+{% hint style="info" %}
+If you want to learn more about materials, you can check out [this guide](textured-items-and-cyberpunk-materials.md) or browse the documentation section's [material pages](../../modding-know-how/materials/).
+{% endhint %}
 
 <figure><img src="https://i.imgur.com/GQ8fELd.png" alt=""><figcaption><p>Not a moon</p></figcaption></figure>
 

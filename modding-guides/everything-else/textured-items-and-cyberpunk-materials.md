@@ -131,7 +131,7 @@ The easiest way to get there is by running [this python script](https://raw.gith
 {% hint style="danger" %}
 A mesh that I imported with 9 **simultaneously visible** submeshes made the game crash with a likelihood of \~ 80% when I spawned or de-spawned it (scaling was fine). You might want to create two separate files if you have too many objects.
 
-Since it clearly works for e.g. the body mesh, make of this was you will.
+Since it clearly works for e.g. the body mesh, make of this what you will.
 {% endhint %}
 
 #### Submesh by material
