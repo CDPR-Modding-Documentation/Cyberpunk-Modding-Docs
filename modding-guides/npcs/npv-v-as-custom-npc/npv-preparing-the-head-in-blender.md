@@ -175,6 +175,10 @@ You don't need to select the eyebrows here, as those are "painted on" later via 
 
 <figure><img src="../../../.gitbook/assets/npv_tutorial_before_after.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="danger" %}
+Some shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of your shape is shaped subtly wrong, **undo** your changes (Ctrl+Z), add or subtrat 1 from the corresponding shape key, and run the script again.
+{% endhint %}
+
 ## Step 3: Importing head
 
 {% hint style="info" %}
