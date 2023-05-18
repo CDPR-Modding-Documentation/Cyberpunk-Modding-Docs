@@ -58,6 +58,7 @@
   * [3d objects: .mesh files](modding-know-how/files-and-what-they-do/3d-objects-.mesh-files.md)
   * [Components](modding-know-how/files-and-what-they-do/components.md)
   * [Game icons: The inkatlas file](modding-know-how/files-and-what-they-do/game-icons-the-inkatlas-file.md)
+  * [Textures: .xbm files](modding-know-how/files-and-what-they-do/textures-.xbm-files.md)
   * [The whole world: .streamingsector](modding-know-how/files-and-what-they-do/the-whole-world-.streamingsector.md)
 * [🌐 3d Modelling](modding-know-how/3d-modelling/README.md)
   * [Models and Meshes](modding-know-how/3d-modelling/models-and-meshes.md)
