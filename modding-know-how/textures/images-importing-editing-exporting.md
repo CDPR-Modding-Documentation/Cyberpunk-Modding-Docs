@@ -4,8 +4,12 @@ description: How to edit images and preserve transparency
 
 # Images: Importing, editing, exporting
 
-{% hint style="info" %}
+{% hint style="success" %}
 Rache Bartmoss once said: the first step to [importing a texture](images-importing-editing-exporting.md#importing-a-texture) is [exporting a texture](images-importing-editing-exporting.md#exporting-a-texture).
+{% endhint %}
+
+{% hint style="info" %}
+For documentation on the Wolvenkit Import/Export tool, see [here](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/import-export).
 {% endhint %}
 
 ## Exporting a texture
@@ -18,6 +22,11 @@ Rache Bartmoss once said: the first step to [importing a texture](images-importi
 ## Editing a texture
 
 Editing textures is straightforward: just change them in your image editor of choice. The only hitch for reimport is the **transparency**.
+
+{% hint style="info" %}
+Wolvenkit supports the .dds file format, but since that is more complex, we won't talk about it here and stick to the `.png` format. \
+_If you're using .dds files, you probably know what you're doing anyway :)_
+{% endhint %}
 
 ### Paint.NET
 
@@ -59,6 +68,7 @@ You can now save your image as a PNG with transparency. If you have exported a t
 * If you have stuck to the game's naming convention, Wolvenkit will select the right preset for you. Otherwise, you need to select the right preset:&#x20;
   * `TexG_Generic_Color` for a diffuse/albedo
   * `TexG_Generic_Normal` for a normal map
+  * `TexG_Generic_UI` for anything that you want to use in .inkatlas files
   * … etc
 * If your texture is upside-down, uncheck the box for `VFlip`.&#x20;
-* Click the "import" button. Your png will now be imported Into the xbm file.
+* Click the "import" button. Your `.png` will now be imported Into the `.xbm` file.

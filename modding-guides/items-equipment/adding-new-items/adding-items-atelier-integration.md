@@ -4,10 +4,10 @@ description: How to set up an atelier store for your mod
 
 # Adding items: Atelier integration
 
-This guide will detail how to add an Atelier store with your items. It is part of the [Adding new items](./) ArchiveXL tutorial, but you can use it .
+This guide will detail how to add an Atelier store with your items. It is part of the [Adding new items](./) ArchiveXL tutorial, but you can complete these steps independently.
 
 {% hint style="warning" %}
-You need to install the [VirtualAtelier](https://www.nexusmods.com/cyberpunk2077/mods/2987) mod for this. You also have to add it to your mod's requirements, or the store won't work.
+You need to install the [VirtualAtelier](https://www.nexusmods.com/cyberpunk2077/mods/2987) mod for this. You also have to add it to your mod's requirements, as the store won't work if users don't have it installed.
 {% endhint %}
 
 ## Generating an icon
@@ -21,7 +21,7 @@ atelier_icon_template.xbm                             << game texture
 virtual_atelier_png_to_xbm_import_settings.png        << image, also embedded here  
 ```
 
-Put the .inkatlas and .xbm into your project (if you're using the example project, they should go into the `ops` folder). Then, rename them to `atelier_icon`:
+Put the .inkatlas and .xbm into your project (if you're using the [example project](./#grab-the-example-files), they should go into the `ops` folder). Then, rename them to `atelier_icon`:
 
 ```
 tutorial
