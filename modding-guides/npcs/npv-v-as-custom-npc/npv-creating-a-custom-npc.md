@@ -155,7 +155,7 @@ Find the `piercing` or `cyberware` component in your `.app` file:
 
 #### How do I know which numbers to put?
 
-You can see that inside the .mesh file. Switch to the `Mesh Preview` tab and toggle the checkboxes on the right; those directly correspond to the boxes you need to uncheck in the `.app` file:
+You can see that inside the .mesh file (which you can see in the component's `depotPath`). Open it in Wolvenkit, then switch to the `Mesh Preview` tab and toggle the checkboxes on the right; those directly correspond to the boxes you need to uncheck in the `.app` file:
 
 <figure><img src="../../../.gitbook/assets/npv_piercings_chunkmask_2.png" alt=""><figcaption><p>Here we see the indices of these three submeshes: this is what we need to uncheck in the .app file</p></figcaption></figure>
 
