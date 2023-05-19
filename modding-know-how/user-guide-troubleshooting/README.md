@@ -110,7 +110,7 @@ WINEDLLOVERRIDES="winmm,version=n,b" %command% -modded
 Otherwise, search the #red4ext-support channel on the [modding discord](https://discord.gg/redmodding) for winmm for further pointers.
 
 {% hint style="info" %}
-We're looking for someone to document Linux-specific groubleshooting!
+We're looking for someone to document Linux-specific troubleshooting!
 {% endhint %}
 
 ## Your game isn't starting / Crashes to Desktop
@@ -881,7 +881,7 @@ If it does not and you have exhausted the reset options as specified in this gui
 
 ### Step 7: Install the core frameworks
 
-Now that your un-modded game is starting, it's time to [install the core frameworks](./#starting-from-scratch). Do this **before** you enable your other mods, as they won't work without their dependencies and can only add problems at this stage.
+Now that your un-modded game is starting, it's time to [install the core frameworks](./#a-fresh-install-starting-from-scratch). Do this **before** you enable your other mods, as they won't work without their dependencies and can only add problems at this stage.
 
 {% hint style="info" %}
 You can now re-enable your mods. Do it in chunks and check that the game keeps working so that you can narrow down where the problem is, in case it isn't gone for good.
