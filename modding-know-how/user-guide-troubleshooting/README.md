@@ -29,6 +29,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
 
 * [I don't wanna debug, I just want mods!](./#i-really-just-want-to-get-this-working-what-do-i-do)
 * [There was a game update and now your mods aren't working](./#troubleshooting-after-an-update)
+* You're on Linux
 * [Your game isn't starting](./#your-game-isnt-starting-crashes-to-desktop) / [crashing on startup](./#your-game-isnt-starting-crashes-to-desktop)
   * [It's pirated](./#you-pirated-the-game)
   * [Corrupt or missing script files](./#corrupt-or-missing-script-files)
@@ -97,6 +98,20 @@ With 1.62, screenshots are now saved to `Documents\CDPR\Cyberpunk\Screenshots` ,
 ## Press \[none] to continue
 
 That is due to [Input Loader](https://www.nexusmods.com/cyberpunk2077/mods/4575) requiring an update.
+
+## You're on Linux/Steam Deck
+
+Under Linux, you have to start the game with&#x20;
+
+```
+WINEDLLOVERRIDES="winmm,version=n,b" %command% -modded
+```
+
+Otherwise, search the #red4ext-support channel on the [modding discord](https://discord.gg/redmodding) for winmm for further pointers.
+
+{% hint style="info" %}
+We're looking for someone to document Linux-specific groubleshooting!
+{% endhint %}
 
 ## Your game isn't starting / Crashes to Desktop
 
