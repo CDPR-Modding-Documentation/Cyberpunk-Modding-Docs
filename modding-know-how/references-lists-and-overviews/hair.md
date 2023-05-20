@@ -14,6 +14,10 @@ description: Overview of hair related things
 If you want to change an NPC's hair instead, you can check [this](../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair) or [this](../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components) guide.
 {% endhint %}
 
+{% hint style="success" %}
+To look up hairstyles in more detail, you can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker).
+{% endhint %}
+
 ## Name in files by index
 
 {% hint style="warning" %}
@@ -72,6 +76,8 @@ List has been confirmed working before 1.6, but might need updating (especially 
 | 49 | hh\_146\_ma\_\_dread\_undercut   | hh\_146\_ma\_\_dread\_undercut   |
 | 50 | hh\_999\_ma\_\_buzz\_cap         | hh\_999\_ma\_\_buzz\_cap         |
 
+## Colour in files by index
+
 | Colour in CC | Name in Files              |
 | ------------ | -------------------------- |
 | 1            | 05\_brown\_liquorice       |
@@ -109,6 +115,24 @@ List has been confirmed working before 1.6, but might need updating (especially 
 | 33           | 33\_phoenix\_fire          |
 | 34           | 34\_purple\_blonde         |
 | 35           | 35\_silver\_rose           |
+
+## Hair .ent files
+
+Hairs and all their components are assigned and defined via [.ent files](../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity). You can find them here:
+
+```
+base\characters\head\player_base_heads\appearances\entity\hairs 
+```
+
+The last number in the file name matches the first number in the [.mesh file name](hair.md#name-in-files-by-index):
+
+<figure><img src="../../.gitbook/assets/cheatsheet_hair_entity_lookup.png" alt=""><figcaption></figcaption></figure>
+
+e.g., if you wanted to edit the entity file for female V's hair 28 `hh_083_wa__ponytail_01`, you could search for&#x20;
+
+```
+player_base_heads > hairs > hairs_083
+```
 
 
 

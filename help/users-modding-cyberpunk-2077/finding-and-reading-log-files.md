@@ -1,15 +1,39 @@
+---
+description: This page will tell you how to find the right log file for your problem.
+---
+
 # Finding and reading log files
+
+## A list of framework logfiles
+
+This section has a list of log files by framework. If you've arrived here from one of the troubleshooting channels on [Discord](https://discord.gg/redmodding), the file you're supposed to find is most likely in this list.
+
+If you aren't looking for a particular log file, please proceed to [the next section](finding-and-reading-log-files.md#finding-the-log-files).
+
+{% hint style="info" %}
+The paths below are given **relative** to your Cyberpunk 2077 install directory.
+{% endhint %}
+
+| Name of framework   | Path to log file                                              |
+| ------------------- | ------------------------------------------------------------- |
+| redscript           | `r6\logs\redscript_rCURRENT.log`                              |
+| red4ext             | `red4ext\logs\red4ext.log`                                    |
+| ArchiveXL           | `red4ext\plugins\ArchiveXL\ArchiveXL.log`                     |
+| TweakXL             | `red4ext\plugins\TweakXL\TweakXL.log`                         |
+| Cyber Engine Tweaks | `bin\x64\plugins\cyber_engine_tweaks\cyber_engine_tweaks.log` |
+
+
 
 ## Finding the log files
 
-1. Browse to your **Cyberpunk game folder** and use the windows search to search for `*.log.`
+Browse to your [**Cyberpunk game folder**](#user-content-fn-1)[^1] and use the windows search to search for `*.log.`
 
 {% hint style="warning" %}
 Make sure to include the asterisk and the dot: \*`.log`, as you will otherwise see files that you don't care about.
 {% endhint %}
 
 {% hint style="info" %}
-Make sure to run this **in the game's root folder**, unless you have already narrowed down the problem (e.g. if it's a CET mod, you can run this search in `bin\x64\plugins\cyber_engine_tweaks`).
+Make sure to run this [**in the game's root folder**](#user-content-fn-2)[^2], unless you have already narrowed down the problem (e.g. if it's a CET mod, you can run this search in `bin\x64\plugins\cyber_engine_tweaks`).
 {% endhint %}
 
 The list of results should look like this:
@@ -17,7 +41,7 @@ The list of results should look like this:
 <figure><img src="../../.gitbook/assets/userguide_logs.png" alt=""><figcaption><p>This will give you a long list of log files</p></figcaption></figure>
 
 {% hint style="info" %}
-You can sort this list by file size, name, or date modified by clicking on the corresponding header.
+You can sort this list by `file size`, `name`, or `date modified` by clicking on the corresponding header.
 {% endhint %}
 
 With a few exceptions, log files **have the name of their mod**. If they don't, check what folder they're in.
@@ -88,3 +112,7 @@ field with this name is already defined in the class, this will have no effect
 ```
 
 This **might** indicate that a Redscript mod is loaded twice. Search the Cyberpunk root folder the mod name and make sure that you have no duplicates. If you're uncertain about this, try the [bisect method](../../modding-know-how/user-guide-troubleshooting/#finding-the-broken-mod-bisecting) on your `r6` folder.
+
+[^1]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+[^2]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe

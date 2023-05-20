@@ -18,7 +18,6 @@ Before you start debugging, make sure that&#x20;
 * your graphics driver is up-to-date
 * you have the most recent version of [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.3-windows-x64-installer) installed
 * you have [Visual C++ Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed ([direct download](https://aka.ms/vs/17/release/vc\_redist.x64.exe), Microsoft)
-* your **antivirus** is temporarily disabled (no, really)
 *   **all mods and dependencies** have the latest version, in particular the [core mods](../core-mods-explained/) ([Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.0.8)).
 
     \
@@ -54,6 +53,14 @@ This section aims to give you a quick overview. If your exact problem isn't list
 {% hint style="success" %}
 To enable REDmods, check [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/frameworks/redmod/usage#deploying-mods-and-starting-the-game).
 {% endhint %}
+
+## A general classification of errors
+
+**If there is an error dialogue about scripts:** Start with red4ext and [redscript](./#3.-reset-redscript)
+
+**If it crashes without a dialogue or with a "game flatlined" dialogue**: Start with [Cyber Engine Tweaks](./#step-2-disable-cet)
+
+If it crashes when loading a savegame: Start [bisecting](./#finding-the-broken-mod-bisecting) your .archives (see the corresponding section for more intel).
 
 ## Troubleshooting after an update
 
@@ -119,6 +126,8 @@ We're looking for someone to document Linux-specific troubleshooting!
 You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
 {% endhint %}
 
+**If the game crashes without a dialogue or with a "game flatlined" dialogue**: Start troubleshooting [Cyber Engine Tweaks](./#step-2-disable-cet).
+
 ### Corrupted archives
 
 > Cyberpunk 2077 encountered an error caused by corrupted or missing archives and and will now be forced to close. Please verify...
@@ -151,7 +160,7 @@ Check your NVidia panel. If power saving options are enabled, turn them off.
 
 ### Steam: verify file integrity loop
 
-Before trying to implement any of the other solutions, configure the `REDprelauncher.exe` in the Cyberpunk root directory to always run as administrator.&#x20;
+Before trying to implement any of the other solutions, configure the `REDprelauncher.exe` in the [Cyberpunk root directory](#user-content-fn-1)[^1] to always run as administrator.&#x20;
 
 * Right-click on the file and select `Properties`
 * Switch to the `Compatibility` tab
@@ -228,7 +237,7 @@ Step-by-step instructions on how to search, filter, and read log files are [here
 
 #### Summary / TL;DR:
 
-* Search the Cyberpunk root folder for `*.log`
+* Search the [Cyberpunk root folder](#user-content-fn-2)[^2] for `*.log`
 * Look through all these files for anything that says `error`
 * **If you can't find anything: you can now either**
   * [Make sure that](./#step-1-temporarily-disable-all-your-mods) your game loads with only the core frameworks enabled (especially advised after **game updates/patches**)
@@ -238,44 +247,60 @@ Step-by-step instructions on how to search, filter, and read log files are [here
 
 ## Finding the broken mod (bisecting)
 
-{% hint style="info" %}
-There are two directories with mods: \
-`Cyberpunk 2077\mods` holds REDMods\
-`Cyberpunk 2077\archive\pc\mod`  holds mods that predate the REDMod format.
-
-\
-The procedure below applies to both directories, but you should start with \\`archive\pc\mod.` If your problem is caused by a script, do the same with the CET folder.
-{% endhint %}
-
-First, go to your mod directory under
-
-```
-Cyberpunk 2077\archive\pc\mod
-```
-
-and re-name the entire directory to mod\_. Then, create a new empty folder named `mod`.
+You have hundreds of mods, and one of them is broken. How do you find out which one it is without wasting the entire day?&#x20;
 
 {% hint style="success" %}
-Start the game. If the problem isn't gone now, you have at least ruled out vanilla mods as a source of problems. Repeat the procedure with the RedMod directory `Cyberpunk 2077\mods`.
-
-\
-If you have renamed both directories and the problem isn't gone, you have a different problem. [Check your CET scripts](./#step-2-disable-cet) or follow [these steps](./#your-game-isnt-starting).
+Don't worry! As long as you have less than 2048 mods, bisection lets you find the problem child with only 10 rounds. (Otherwise, it's 11)
 {% endhint %}
 
-Now, we need to roughly narrow down which mod has the error.&#x20;
+### Which kind of mod is it?
 
-Move over half of the mods from your backup folder `mod_`, then start the game.
+{% hint style="info" %}
+If you already know which folder contains the broken mod, [skip to the next section](./#go-bisect).
+{% endhint %}
 
-You will now run into one of two scenarios:
+To find out the **type** of broken mod, take each directory from the following list and complete the steps in the next paragraph after the table.
 
-1. The error is gone: swap out the content of your mod folder with the last chunk you moved to the backup folder. Validate that the error persists, go to 2.
-2. The error is still there: Move half of the files from your mod folder into your backup folder and start the game and check your problem.&#x20;
+The folders do not influence each other.&#x20;
 
-Repeat this process until you have identified the problem child!
+|                     |                                                          |
+| ------------------- | -------------------------------------------------------- |
+| \\`mods`            | Redmod directory: contains .archive mods (in subfolders) |
+| \\`archive\pc\mod`  | Legacy directory: contains .archive mods                 |
+| \\`bin\x64\plugins` | Cyber Engine Tweaks                                      |
+| `\r6\scripts`       | redscript mods                                           |
+| `\r6\tweaks`        | red4ext tweaks                                           |
+
+1. Rename the **game folder** (e.g. `/mods`) to a **backup folder** by appending an underscore (e.g. /`mods_`)
+2. To prevent errors, create a new empty game folder (e.g. `/mods`).
+3. Start the game. You will now run into one of these two scenarios:
+   * **Your problem is gone:** Jackpot. This is the correct folder for [the next section](./#go-bisect).
+   * **Your problem is still there**: This folder is innocent. Proceed with the next entry.\
+     If you want to make sure that there&#x20;
+
+{% hint style="info" %}
+If you have renamed all folders and the problem
+{% endhint %}
+
+### Go bisect
+
+Congratulations, you have found which folder causes the problem — you're more than halfway there. All that's left is to find the broken mod. Here's how:
+
+1. From your renamed folder `directory_`, move **half** of the mods over to the empty game folder `directory` so that they'll become active.
+2. Start the game. You will now run into one of two scenarios:
+   * **The error is gone:** The problematic mod is in your **backup folder**, but you now know which mods are okay.&#x20;
+     * If this is the first round: Go back to 1
+     * Otherwise: The broken mod was in the bunch that you moved out in the last round. When repeating step 1, you can ignore everything but the last bunch you moved.
+   * **The error is still there:** The problematic mod is your **game folder**.\
+     Move half of the mods out of the folder again. If this is not the first round, only do the last subset that you moved.
+
+Repeat this process until you've identified the mod that's crashing your game.
+
+{% embed url="https://youtu.be/c1BkM6NFfkI" %}
 
 ## Mod(s) aren't loading/triggering
 
-* If you have any folders inside of `/mods`, you need to install or update [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176). It is required to make Redmod play nice with Red4ext.
+* If you have any folders inside of [`/mods`](#user-content-fn-3)[^3], you need to install or update [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176). It is required to make Redmod play nice with Red4ext.
 * If you already have cybercmd installed and your mod is still not working, [check the next section](./#only-parts-of-my-mods-are-working).
 * If your NPC appearance change doesn't show or your item replacer is added on top of the original item, you will want to install either [material override](https://www.nexusmods.com/cyberpunk2077/mods/5266) or [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/3051). For an explanation why, see [here](../files-and-what-they-do/appearance-.app-files.md#commoncookdata).
 
@@ -304,13 +329,13 @@ Find a brief explanation of mod requirements [here](../../help/users-modding-cyb
 If you don't care and just want a solution, just keep reading.
 {% endhint %}
 
-#### Mod isn't working: a RedMod
+#### Mod isn't working: a RedMod[^4]
 
 Check that you've enabled the feature (see [Deploying Mods and Starting Game](../frameworks/redmod/#installation)).&#x20;
 
 If that doesn't fix it, proceed to the section about [Log Files](./#finding-the-broken-mod-log-files) and try to find an error message here.
 
-#### Mod isn't working: CET
+#### Mod isn't working: CET[^5]
 
 You have installed Cyber Engine Tweaks, but it's not active / not letting you bind a key:&#x20;
 
@@ -336,7 +361,11 @@ Use [these instructions](./#check-the-log-files), but ignore the part where they
 
 ## The nuclear option: a clean install
 
-You have decided to start over from scratch instead of [disabling your mods](./#step-1-temporarily-disable-all-your-mods) (which will achieve the same, but save you a lot of downloading). The instructions below will help you completing that in minimal time.
+{% hint style="success" %}
+This is the last resort and you do **not** need to do this. Following [these steps](./#is-there-a-shortcut) will achieve the same results and be much faster.
+{% endhint %}
+
+However, if you're still set on reinstalling, the instructions below will help you completing that in minimal time.
 
 {% hint style="danger" %}
 Unless you back them up, your mods will be **lost**. If you don't want that, make backups of the following folders:
@@ -391,7 +420,7 @@ Afterwards, verify your files.
 
 You have completed either of the previous steps. Your game should start now. **If it does not**, you have a problem that is not related to Cyberpunk. Make sure to follow the hints in the red box [at the very beginning of this guide](./#navigation).
 
-Now it's time to **systematically** install mods. We'll start by installing the frameworks and making sure that the game starts up without any framework-dependent mods. Afterwards, you can add back all of your mods, and if the game stops working, find the offender via [bisect](./#finding-the-broken-mod-bisecting).&#x20;
+Now it's time to **systematically** install mods. We'll start by [installing the frameworks](./#installing-the-frameworks) and making sure that the game starts up without any framework-dependent mods. Afterwards, you can add back all of your mods, and if the game stops working, find the offender via [bisect](./#finding-the-broken-mod-bisecting).&#x20;
 
 {% hint style="success" %}
 Don't worry about your savegames — those are fine, even if they won't load right now. We're just laying the foundation here that you can later build upon.
@@ -405,7 +434,7 @@ Check the [framework page](../core-mods-explained/). For each of the frameworks,
 
 * If you didn't have it in your previous install, skip it.
 * Install it (manually or via Vortex, your choice)
-* Install **all of its dependencies**
+* Install **all of its** [**dependencies**](../../help/users-modding-cyberpunk-2077/requirements-explained.md)
 * Start the game and load a savegame (you can also do this after installing all of them, but if you run into issues, that will make isolating the point of failure more difficult).
 * Optional (for CET): Start the game and make sure that it asks you to bind a key. If not, check the [corresponding section of this guide.](./#cet)
 
@@ -418,9 +447,9 @@ Once you are done, start up your game and load a savegame. If you don't have one
 **This should now work**. If it doesn't, please see the next section ([troubleshooting the frameworks](./#troubleshooting-the-frameworks)).
 
 {% hint style="warning" %}
-You **need** to complete this step before proceeding: if the core frameworks aren't working without mods, they won't work with mods – adding anything now will just make debugging more difficult.
+You **need** to complete this step before proceeding: if the core frameworks aren't working **without** mods, they won't work **with** mods – adding anything now will just make debugging more difficult.
 
-Fortunately, this is not rocket science. Be methodical,&#x20;
+Fortunately, this is not rocket science. Be methodical and install them one by one. If you need help, you can find us on [Discord](https://discord.gg/redmodding) (`#mod-troubleshooting`)
 {% endhint %}
 
 ### Adding (back) your mods
@@ -430,10 +459,18 @@ If you don't (yet) have any mods, you can head over to Nexus and start installin
 {% endhint %}
 
 {% hint style="warning" %}
-This section assumes that you have all required [core mods](./#frameworks-core-mods), your game is starting, and you can either load a savegame or start a new game without crashing.&#x20;
+This section assumes that&#x20;
 
-If you didn't make it that far, the steps below won't help you and will only obscure your problem. Please head [here](./#step-1-temporarily-disable-all-your-mods) first and complete the process. \
-If you can't do it, find us on [Discord](https://discord.gg/redmodding) in `#mod-troubleshooting!`&#x20;
+* you installed all required [core mods](./#frameworks-core-mods)
+* your game is starting
+* &#x20;you can (without crashing) do either of these things:
+  * load a savegame&#x20;
+  * start a new game
+
+If you didn't make it that far, the steps below won't help you and will only obscure your problem. Please head [here](./#step-1-temporarily-disable-all-your-mods) first and complete the process.&#x20;
+
+\
+If you need help, find us on [Discord](https://discord.gg/redmodding) in `#mod-troubleshooting!`&#x20;
 {% endhint %}
 
 #### If you're using Vortex
@@ -471,6 +508,10 @@ Your error goes something like this:&#x20;
 
 These are most likely caused by **permission errors** – Cyberpunk is trying to access a file, and for some reason, it can't. Do the following things:
 
+{% hint style="info" %}
+It is possible that your antivirus is causing this problem. Before you lose your mind, try temporarily disabling it.
+{% endhint %}
+
 ### Make sure that no previous game instance is running
 
 Sometimes, the game instance doesn't shut down properly and is still running in the background, althoguh you can't see a window. This problem goes away after rebooting.
@@ -489,7 +530,7 @@ If it doesn't, check the next steps on the list.
 
 ### Make sure that all files in the game directory are writable
 
-Sometimes, files in your Cyberpunk game directory are set to read-only.&#x20;
+Sometimes, files in your [Cyberpunk game directory](#user-content-fn-6)[^6] are set to read-only.&#x20;
 
 #### **What kind of monster would do something like that???**
 
@@ -509,9 +550,8 @@ You can fix this either via [Windows Explorer](./#via-windows-explorer) or via [
 * type `cmd` and press Return to open the command line
 *   run the following command (replace the path with your actual game dir):
 
-    ```
-    attrib -r "C:\Path\To\Cyberpunk\*.*" /s
-    ```
+    <pre><code>attrib -r "<a data-footnote-ref href="#user-content-fn-7">C:\Path\To\Cyberpunk</a>\*.*" /s
+    </code></pre>
 
 #### Via Windows Explorer:&#x20;
 
@@ -530,7 +570,7 @@ You can fix it via [system console](./#via-commandline) or via [Windows Explorer
 #### Via commandline
 
 {% hint style="warning" %}
-In any of the commands below, you need to substitute `C:/Path/to/Cyberpunk2077` with the path to your game directory.
+In any of the commands below, you need to substitute `C:/Path/to/Cyberpunk2077` with the path to your [game directory](#user-content-fn-8)[^8].
 {% endhint %}
 
 * Press Windows+R
@@ -584,6 +624,8 @@ An instance of Cyberpunk is already running. Close it.
 
 ## Redscript Compilation Failed
 
+You're running into the following error:
+
 ```log
 REDScript compilation failed. The game will start, but none of 
 the scripts will take effect. This is caused by errors in:
@@ -595,20 +637,31 @@ the scripts will take effect. This is caused by errors in:
 This workflow is geared at the exact error above. If you have a different one, you might want to [remove RedScript completely](./#step-4-remove-redscript) and reinstall it afterwards.
 {% endhint %}
 
+### 0. Make sure that you don't have multiple versions of [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780) installed
+
+In the past, Codeware wasn't a standalone mod, but was instead [**bundled**](#user-content-fn-9)[^9] inside of other mods. Since that is different now, the leftover versions can cause errors.
+
+1. Search your [Cyberpunk directory](#user-content-fn-10)[^10] for `Codeware`.&#x20;
+2. If you have exactly one folder, this is not your problem — proceed to [the next step](./#1.-make-sure-that-you-have-the-latest-versions).
+3. Delete everything you have found.
+4. Reinstall the latest version of [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780) from Nexus.
+5. Delete the folder `r6/cache`
+6. Verify your game
+
+The error&#x20;
+
 ### 1. Make sure that you have the latest versions
 
 {% hint style="danger" %}
-Actually check this. Do not rely on memory or common sense – if in doubt, re-download.&#x20;
+Actually check this. Do not rely on memory or common sense – if in doubt, re-download. ~~(This is totally not something that the guide's author learned the hard way)~~
 {% endhint %}
 
-1. Check [Redscript](https://github.com/jac3km4/redscript/releases/)
-2. Check [Cybercmd](https://github.com/jac3km4/cybercmd/releases)
+1. Check Redscript ([github](https://github.com/jac3km4/redscript/releases/) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511))
+2. Check cybercmd ([github ](https://github.com/jac3km4/cybercmd/releases)| [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/5176))
 
-{% hint style="info" %}
-These links go to github. This site is legit, it's where they are before being uploaded to Nexus.
-{% endhint %}
+#### Optional, but recommended:&#x20;
 
-Optional, but recommended: Check that you have the latest versions of all troublesome Redmods.
+Check that you have the latest versions of all troublesome Redmods.
 
 ### 2. Check redscript.log
 
@@ -630,11 +683,7 @@ Manual: Remove the contents of `r6/scripts/`.&#x20;
 You can zip the directory from the windows context menu, then delete its contents.
 {% endhint %}
 
-#### Revert changes in r6/cache
-
-{% hint style="info" %}
-This is the script dir for non-REDmods
-{% endhint %}
+#### Revert changes in r6/cache[^11]
 
 Delete _everything_ inside `r6/cache/modded/,` leave the empty dir.
 
@@ -662,10 +711,6 @@ Make sure your game starts up without error.
 Make sure your game starts up without error.
 {% endhint %}
 
-{% hint style="info" %}
-If this doesn't work:&#x20;
-{% endhint %}
-
 ### 4. Reinstall your mods
 
 **Hopefully, your problem should be gone now.**&#x20;
@@ -685,21 +730,28 @@ Here's the catch-all solution. After this, your game _will_ work (or the problem
 You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
 {% endhint %}
 
+**The bad news** is, at this point you have little choice but to reset your Cyberpunk install and re-mod it from scratch. **The good news** is that the process is really streamlined. If you don't run into any hitches, you're <30 minutes away from a working game.
+
+Now, how do we go about this?
+
 ### Is there a shortcut?
 
-**Yes!** This will automate steps 1-4 for you:
+**Yes!** There is a batch script that will automate steps 1-4 of the list below for you.
+
+If you don't want to download and run script files from the internet, you can go [here](./#step-1-temporarily-disable-all-your-mods) and complete the steps by hand. Otherwise:
 
 1. Download [this script](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/batch/cyberpunk2077\_disable\_all\_mods.bat) (**right-click -> save as**)\
    _Link goes to the_ [_github repository_](https://github.com/manavortex/cyberpunk2077/blob/master/batch/cyberpunk2077\_disable\_all\_mods.bat) _of the person who wrote most of this guide_.
-2. Either:&#x20;
-   1. Move it to your Cyberpunk install folder and run it
-   2. Drag-and drop your Cyberpunk folder on the .bat file
-3. Follow the instructions and prompts
-4. You can now proceed to [Step 5](./#step-5-repair-game-files) and verify your game files, or you can proceed by hand.
+2.  **Optional**: If you don't want the script to delete modded files for you (because you just want to disable mods), right-click on the file and select **Edit**, then find and delete line 6:
 
-{% hint style="info" %}
-Before following these steps, you might want to take a look at your [log files](../../help/users-modding-cyberpunk-2077/finding-and-reading-log-files.md) — check the instructions for how to do that.
-{% endhint %}
+    ```
+    set DELETE_FILES=1
+    ```
+3. Now, do either of the following things:&#x20;
+   1. Move it to your Cyberpunk install folder and double-click it
+   2. Drag-and drop your Cyberpunk folder on the file that you downloaded
+4. Follow the instructions and prompts,
+5. You can now proceed to [Step 5](./#step-5-repair-game-files) and verify your game files.
 
 {% hint style="success" %}
 Instead of following these instructions, you can also [reinstall the game](./#the-nuclear-option-a-clean-install). Do yourself a favour and check the instructions, as you might be left with residual files otherwise.
@@ -708,6 +760,8 @@ Instead of following these instructions, you can also [reinstall the game](./#th
 ### Step 1: Temporarily disable all your mods
 
 #### Vortex
+
+* Follow the instructions and prompts
 
 Press the **purge** button — this will remove any and all installed mods.
 
@@ -966,3 +1020,29 @@ If the error isn't in any script files, you will have to **unbundle the .archive
 
 
 ##
+
+[^1]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+[^2]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+[^3]: Directly under Cyberpunk 2077, this directory contains a number of folders with redmods.
+
+[^4]: It's installed in Cyberpunk 2077/mods
+
+[^5]: It's installed to bin\x64\plugins\cyber\_engine\_tweaks
+
+[^6]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+[^7]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+
+
+[^8]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+
+
+[^9]: as in, "a subfolder in the folder of"
+
+[^10]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+[^11]: The script directory for non-Redmods
