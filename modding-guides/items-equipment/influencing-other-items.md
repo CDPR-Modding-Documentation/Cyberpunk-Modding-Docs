@@ -123,16 +123,27 @@ The following tags are used by the base game; however, to make use of them, you 
 
 ArchiveXL additionally defines the following [visual tags](https://github.com/psiberx/cp2077-archive-xl#adding-visual-tags):
 
-| Tag           | Effect                |
-| ------------- | --------------------- |
-| `hide_Head`   | Hides head.           |
-| `hide_Torso`  | Hides torso.          |
-| `hide_Arms`   | Hides head.           |
-| `hide_Thighs` | Hides thighs.         |
-| `hide_Calves` | Hides calves.         |
-| `hide_Ankles` | Hides ankles.         |
-| `hide_Feet`   | Hides feet.           |
-| `hide_Legs`   | Hides the whole legs. |
+| Tag                 | submesh(es) | hides…                                  |
+| ------------------- | ----------- | --------------------------------------- |
+| `hide_Head`         |             | head.                                   |
+| `hide_Hair`         |             | hair                                    |
+| hide\_H1            |             | headwear                                |
+| `hide_Chest`        | 0           | chest                                   |
+| `hide_CollarBone`   | 1           | collarbone                              |
+| `hide_UpperAbdomen` | 2           | stomach region                          |
+| `hide_LowerAbdomen` | 3           | hips                                    |
+| `hide_Torso`        | 0, 1, 2, 3  | entire torso                            |
+| hide\_Genitals      | 3\*         | will hide genitals+underwear (NOT hips) |
+| `hide_T2`           |             | outer torso clothing                    |
+| `hide_T1`           |             | inner torso clothing                    |
+| `hide_Arms`         | 8, 9, 10    | arms and hands                          |
+| `hide_Thighs`       | 4           | thighs (upper legs)                     |
+| `hide_Calves`       | 5           | calves                                  |
+| `hide_Ankles`       | 6           | ankles                                  |
+| `hide_Feet`         | 7           | feet                                    |
+| `hide_Legs`         | 4, 5, 6, 7  | entire leg (including feet)             |
+| `hide_L1`           |             | Leg clothing                            |
+| `hide_S1`           |             | Shoes                                   |
 
 
 
@@ -140,11 +151,11 @@ ArchiveXL additionally defines the following [visual tags](https://github.com/ps
 
 <div>
 
-<figure><img src="../../.gitbook/assets/body-parts-male.png" alt=""><figcaption><p>male version - image by LadyLea</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_mV.png" alt=""><figcaption><p>male version - image by LadyLea</p></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/bodyparts_female.png" alt=""><figcaption><p>female version - image by LadyLea</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_fV.png" alt=""><figcaption><p>female version - image by LadyLea</p></figcaption></figure>
 
 </div>
 
