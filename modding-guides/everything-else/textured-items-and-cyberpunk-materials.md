@@ -24,6 +24,8 @@ If you only want to know how to apply Cyberpunk materials to parts of your mesh,
 {% endhint %}
 
 {% hint style="info" %}
+If you want to understand how material loading works, check the [mesh page](../../modding-know-how/files-and-what-they-do/3d-objects-.mesh-files.md).
+
 You can find explanation and documentation about materials [here](../../modding-know-how/materials/).&#x20;
 {% endhint %}
 
@@ -326,7 +328,7 @@ Save the lua file, install your mod, and launch the game. Time to test!
 
 ## Material assignments
 
-For an explanation how materials are assigned to a mesh, check[ this page](../../modding-know-how/3d-modelling/models-and-meshes.md#materials) - this guide will just tell you what to do.
+For an explanation how materials are assigned to a mesh, check[ this page](broken-reference) - this guide will just tell you what to do.
 
 {% hint style="info" %}
 You can copy entire materials between meshes: select one, right-click, and pick one of the "copy from…" entries.
@@ -374,7 +376,7 @@ You can name your materials whatever you like, as long as you stick to the follo
 
 #### Explanation:&#x20;
 
-MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](../../modding-know-how/3d-modelling/models-and-meshes.md#materials) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../modding-know-how/materials/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
+MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](broken-reference) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../modding-know-how/materials/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
 
 {% hint style="success" %}
 Now, we [adjust the materials](textured-items-and-cyberpunk-materials.md#fixing-the-materials).

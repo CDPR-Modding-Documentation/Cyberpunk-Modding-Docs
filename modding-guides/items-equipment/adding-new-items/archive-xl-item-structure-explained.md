@@ -224,12 +224,12 @@ For ArchivXL >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/releases/ta
 ### Mesh
 
 {% hint style="info" %}
-[Would you like to know more?](../../../modding-know-how/3d-modelling/models-and-meshes.md) The documentation for .mesh files lives on their own page!
+[Would you like to know more?](broken-reference) The documentation for .mesh files lives on their own page!
 {% endhint %}
 
-The mesh file maps **materials** to appearances. To find out how exactly it does that, find the [material section](../../../modding-know-how/3d-modelling/models-and-meshes.md#materials) on the mesh wiki page.&#x20;
+The mesh file maps **materials** to appearances. To find out how exactly it does that, find the [material section](broken-reference) on the mesh wiki page.&#x20;
 
-For our purposes it's enough to say that you can **define** your individual appearances here. For a guide on how to do that, check [here](../editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance) or the [mesh knowledge page](../../../modding-know-how/3d-modelling/models-and-meshes.md).
+For our purposes it's enough to say that you can **define** your individual appearances here. For a guide on how to do that, check [here](../editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance) or the [mesh knowledge page](broken-reference).
 
 <figure><img src="../../../.gitbook/assets/archive_xl_mesh_file.png" alt=""><figcaption></figcaption></figure>
 

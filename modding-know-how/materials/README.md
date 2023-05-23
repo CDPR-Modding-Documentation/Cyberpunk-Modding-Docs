@@ -9,21 +9,21 @@ This is the landing page for **materials** in Cyberpunk 2077. It contains a defi
 ## If you already know that:
 
 * To find material instances or -templates for direct edits, check [here](../references-lists-and-overviews/cheat-sheet-materials.md).
-* For a mesh-specific explanation, check [here](../3d-modelling/models-and-meshes.md#materials).&#x20;
+* For a mesh-specific explanation, check [here](broken-reference).&#x20;
 * For a list of properties and their explanation check [here](configuring-materials.md).
 
 ## Definition&#x20;
 
-**In the context of Cyberpunk**, a material is the thing that lets the shader define the surface properties of a [mesh](../3d-modelling/models-and-meshes.md).&#x20;
+**In the context of Cyberpunk**, a material is the thing that lets the shader define the surface properties of a [mesh](broken-reference).&#x20;
 
 {% hint style="info" %}
 Each part of a mesh (submesh) can have a different material assigned.&#x20;
 
-[Do you want  to know more?](../3d-modelling/models-and-meshes.md#materials)
+[Do you want  to know more?](broken-reference)
 {% endhint %}
 
 {% hint style="info" %}
-Materials can be defined [locally inside a mesh](../3d-modelling/models-and-meshes.md#materialinstance-the-local-material) or [loaded externally](../3d-modelling/models-and-meshes.md#material-reference-reusing-materials) from [material template files](re-using-materials-.mi.md).&#x20;
+Materials can be defined [locally inside a mesh](broken-reference) or [loaded externally](broken-reference) from [material template files](re-using-materials-.mi.md).&#x20;
 {% endhint %}
 
 {% hint style="success" %}

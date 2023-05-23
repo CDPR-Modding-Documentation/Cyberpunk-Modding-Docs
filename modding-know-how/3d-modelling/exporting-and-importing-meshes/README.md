@@ -70,7 +70,7 @@ Path of glb: `<yourModDir>\source\`**`raw`**`\base\characters\garment\player_equ
 ## Blender: Saving the mesh
 
 {% hint style="info" %}
-Some meshes (such as eyelashes and hair) are two-sided. See [here](../models-and-meshes.md#import-export-\_doubled) for details on how Wolvenkit handles that.
+Some meshes (such as eyelashes and hair) are two-sided. See [here](broken-reference) for details on how Wolvenkit handles that.
 {% endhint %}
 
 ### glTF Binary  (\*.glb)
@@ -114,6 +114,17 @@ will be imported over
 {% hint style="warning" %}
 WolvenKit refuses to import if the target mesh doesn't support all bones in the glb or if your mesh's topology became corrupted. If that's the case, check the [troubleshooting page](../self-made-normal-maps/troubleshooting-normal-maps.md).
 {% endhint %}
+
+## Import/Export: \_doubled
+
+Normally, a mesh's **backfaces** are invisible/transparent - you aren't supposed to see a mesh from below, so it doesn't matter. But some, like hair and eyelashes, are different, and need to be doubled.
+
+When importing via Noesis, you need to do this by hand: duplicate all the vertices in the mesh, and flip the normals.\
+When importing via WolvenKit, it will automagically do that for you if a mesh name ends with **\_doubled**.&#x20;
+
+The suffix also indicates that Wolvenkit de-duplicated a mesh on export!
+
+<figure><img src="https://cdn.discordapp.com/attachments/1091077640854704270/1091295442060464138/image.png" alt=""><figcaption><p>Thanks to Na for the screenshot</p></figcaption></figure>
 
 ## Troubleshooting
 

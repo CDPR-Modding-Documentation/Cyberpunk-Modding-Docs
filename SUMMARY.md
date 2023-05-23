@@ -61,7 +61,6 @@
   * [Textures: .xbm files](modding-know-how/files-and-what-they-do/textures-.xbm-files.md)
   * [The whole world: .streamingsector](modding-know-how/files-and-what-they-do/the-whole-world-.streamingsector.md)
 * [🌐 3d Modelling](modding-know-how/3d-modelling/README.md)
-  * [Models and Meshes](modding-know-how/3d-modelling/models-and-meshes.md)
   * [Morphtargets](modding-know-how/3d-modelling/morphtargets.md)
   * [Exporting and importing meshes](modding-know-how/3d-modelling/exporting-and-importing-meshes/README.md)
     * [Autodesk/FBX (Noesis)](modding-know-how/3d-modelling/exporting-and-importing-meshes/autodesk-fbx-noesis.md)
