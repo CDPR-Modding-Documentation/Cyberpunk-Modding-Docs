@@ -14,13 +14,7 @@ If you aren't looking for a particular log file, please proceed to [the next sec
 The paths below are given **relative** to your Cyberpunk 2077 install directory.
 {% endhint %}
 
-| Name of framework   | Path to log file                                              |
-| ------------------- | ------------------------------------------------------------- |
-| redscript           | `r6\logs\redscript_rCURRENT.log`                              |
-| red4ext             | `red4ext\logs\red4ext.log`                                    |
-| ArchiveXL           | `red4ext\plugins\ArchiveXL\ArchiveXL.log`                     |
-| TweakXL             | `red4ext\plugins\TweakXL\TweakXL.log`                         |
-| Cyber Engine Tweaks | `bin\x64\plugins\cyber_engine_tweaks\cyber_engine_tweaks.log` |
+<table><thead><tr><th width="294">Name of framework</th><th>Path to log file</th></tr></thead><tbody><tr><td>redscript</td><td><code>r6\logs\redscript_rCURRENT.log</code></td></tr><tr><td>red4ext</td><td><code>red4ext\logs\red4ext.log</code></td></tr><tr><td>ArchiveXL</td><td><code>red4ext\plugins\ArchiveXL\ArchiveXL.log</code></td></tr><tr><td>TweakXL</td><td><code>red4ext\plugins\TweakXL\TweakXL.log</code></td></tr><tr><td>Cyber Engine Tweaks</td><td><code>bin\x64\plugins\cyber_engine_tweaks\cyber_engine_tweaks.log</code></td></tr></tbody></table>
 
 
 

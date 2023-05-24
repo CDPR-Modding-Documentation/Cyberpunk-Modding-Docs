@@ -92,7 +92,7 @@ Notice how the bottom row of the inverse matrix corresponds to the coordinates o
 
 Next, copy the new Y coordinate from the bone you duplicated and moved.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (42) (1).png" alt=""><figcaption></figcaption></figure>
 
 After that, return to the calculator, and press 'Insert in B', and then replace the matrix entry corresponding to the Y position of the bone with the new coordinate.
 

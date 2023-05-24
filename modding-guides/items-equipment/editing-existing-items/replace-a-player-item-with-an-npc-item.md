@@ -62,9 +62,7 @@ The wiki has a list with [mappings](../../../modding-know-how/references-lists-a
 
 For example, the appearance "**black**" with the chunks pointing at **pasted\_ml\_t2\_135\_wa\_jacket\_\_monk\_shirt\_fancy** will look for:
 
-| yes | archive\base\characters\garment\gang\_monk\torso\t2\_135\_jacket\_\_monk\_shirt\textures\ml\_t2\_135\_wa\_jacket\_\_monk\_shirt\_fancy.mlsetup       |
-| --- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| no  | ~~base\characters\garment\player\_equipment\torso\t2\_084\_jacket\_\_short\_sleeves\textures\ml\_t2\_135\_wa\_jacket\_\_monk\_shirt\_fancy.mlsetup~~ |
+<table><thead><tr><th width="106">yes</th><th>archive\base\characters\garment\gang_monk\torso\t2_135_jacket__monk_shirt\textures\ml_t2_135_wa_jacket__monk_shirt_fancy.mlsetup</th></tr></thead><tbody><tr><td>no</td><td><del>base\characters\garment\player_equipment\torso\t2_084_jacket__short_sleeves\textures\ml_t2_135_wa_jacket__monk_shirt_fancy.mlsetup</del></td></tr></tbody></table>
 
 ~~_Don't ask me how the lookup/naming works, I have no idea. Just copy it from the source mesh._~~
 

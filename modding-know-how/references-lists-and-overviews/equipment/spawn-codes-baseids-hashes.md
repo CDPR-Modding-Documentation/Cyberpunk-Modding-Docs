@@ -54,7 +54,7 @@ If you find multiple files, you need to open the correct one. You can identify t
 
 Open the apperance file. You will see a bunch of appearances:
 
-<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26) (1).png" alt=""><figcaption></figcaption></figure>
 
 We only care for `_m` and `_w` right now, since they are using different meshes. \
 Open the array `components` and find the one holding the mesh:&#x20;

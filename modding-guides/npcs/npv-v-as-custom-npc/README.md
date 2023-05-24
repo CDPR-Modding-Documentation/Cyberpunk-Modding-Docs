@@ -77,10 +77,7 @@ As a rule of thumb, I'll document the process for an NPV with a female body gend
 1. Download the example project of files from mana's mega or Nexus and load up your Wolvenkits
 2. In **Windows Explorer**, find the prepared folders per body gender:
 
-| body gender | file path                            |
-| ----------- | ------------------------------------ |
-| female      | `tutorial\npv\your_female_character` |
-| male        | `tutorial\npv\your_male_character`   |
+<table><thead><tr><th width="179">body gender</th><th>file path</th></tr></thead><tbody><tr><td>female</td><td><code>tutorial\npv\your_female_character</code></td></tr><tr><td>male</td><td><code>tutorial\npv\your_male_character</code></td></tr></tbody></table>
 
 3. Delete the one you're not using (do one project per NPC. No, really, I mean it.)
 

@@ -105,17 +105,7 @@ They can be used **additionally** to partsOverrides.
 
 The following tags are used by the base game; however, to make use of them, you require [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl).&#x20;
 
-| Tag             | Effect                                                    |
-| --------------- | --------------------------------------------------------- |
-| `hide_H1`       | Hides item in the `Head` slot (_hats, caps, headbands_)   |
-| `hide_F1`       | Hides item in the `Eyes` slot (_sunglasses, face masks_)  |
-| `hide_T1`       | Hides item in the `Chest` slot (_shirts, tops_)           |
-| `hide_T2`       | Hides item in the `Torso` slot (_jackets, coats_)         |
-| `hide_L1`       | Hides item in the `Legs` slot (_pants, skirts_)           |
-| `hide_S1`       | Hides item in the `Feet` slot (_shoes_)                   |
-| `hide_T1part`   | Torso item: controls the partial suffix (`&Full`/`&Part`) |
-| `hide_Hair`     | Hides hair (_hair_)                                       |
-| `hide_Genitals` | Replaces genitals/underwear with blank mesh, angel style. |
+<table><thead><tr><th width="241">Tag</th><th width="517">Effect</th></tr></thead><tbody><tr><td><code>hide_H1</code></td><td>Hides item in the <code>Head</code> slot (<em>hats, caps, headbands</em>)</td></tr><tr><td><code>hide_F1</code></td><td>Hides item in the <code>Eyes</code> slot (<em>sunglasses, face masks</em>)</td></tr><tr><td><code>hide_T1</code></td><td>Hides item in the <code>Chest</code> slot (<em>shirts, tops</em>)</td></tr><tr><td><code>hide_T2</code></td><td>Hides item in the <code>Torso</code> slot (<em>jackets, coats</em>)</td></tr><tr><td><code>hide_L1</code></td><td>Hides item in the <code>Legs</code> slot (<em>pants, skirts</em>)</td></tr><tr><td><code>hide_S1</code></td><td>Hides item in the <code>Feet</code> slot (<em>shoes</em>)</td></tr><tr><td><code>hide_T1part</code></td><td>Torso item: controls the partial suffix (<code>&#x26;Full</code>/<code>&#x26;Part</code>)</td></tr><tr><td><code>hide_Hair</code></td><td>Hides hair (<em>hair</em>)</td></tr><tr><td><code>hide_Genitals</code></td><td>Replaces genitals/underwear with blank mesh, angel style.</td></tr></tbody></table>
 
 {% hint style="warning" %}
 `hide_Genitals` will hide **only** the genitals, not the entire body submesh!
@@ -123,22 +113,7 @@ The following tags are used by the base game; however, to make use of them, you 
 
 ArchiveXL additionally defines the following [visual tags](https://github.com/psiberx/cp2077-archive-xl#adding-visual-tags):
 
-| Tag                 | submesh(es) | hides…                      |
-| ------------------- | ----------- | --------------------------- |
-| `hide_Head`         |             | head.                       |
-| `hide_Chest`        | 0           | chest                       |
-| `hide_CollarBone`   | 1           | collarbone                  |
-| `hide_UpperAbdomen` | 2           | stomach region              |
-| `hide_LowerAbdomen` | 3           | hips                        |
-| `hide_Torso`        | 0, 1, 2, 3  | entire torso                |
-| `hide_Arms`         | 8, 9, 10    | arms and hands              |
-| `hide_Thighs`       | 4           | thighs (upper legs)         |
-| `hide_Calves`       | 5           | calves                      |
-| `hide_Ankles`       | 6           | ankles                      |
-| `hide_Feet`         | 7           | feet                        |
-| `hide_Legs`         | 4, 5, 6, 7  | entire leg (including feet) |
-| `hide_L1`           |             | Leg clothing                |
-| `hide_S1`           |             | Shoes                       |
+<table><thead><tr><th width="278.3333333333333">Tag</th><th width="132">submesh(es)</th><th>hides…</th></tr></thead><tbody><tr><td><code>hide_Head</code></td><td></td><td>head.</td></tr><tr><td><code>hide_Chest</code></td><td>0</td><td>chest</td></tr><tr><td><code>hide_CollarBone</code></td><td>1</td><td>collarbone</td></tr><tr><td><code>hide_UpperAbdomen</code></td><td>2</td><td>stomach region</td></tr><tr><td><code>hide_LowerAbdomen</code></td><td>3</td><td>hips</td></tr><tr><td><code>hide_Torso</code></td><td>0, 1, 2, 3</td><td>entire torso</td></tr><tr><td><code>hide_Arms</code></td><td>8, 9, 10</td><td>arms and hands</td></tr><tr><td><code>hide_Thighs</code></td><td>4</td><td>thighs (upper legs)</td></tr><tr><td><code>hide_Calves</code></td><td>5</td><td>calves</td></tr><tr><td><code>hide_Ankles</code></td><td>6</td><td>ankles</td></tr><tr><td><code>hide_Feet</code></td><td>7</td><td>feet</td></tr><tr><td><code>hide_Legs</code></td><td>4, 5, 6, 7</td><td>entire leg (including feet)</td></tr><tr><td><code>hide_L1</code></td><td></td><td>Leg clothing</td></tr><tr><td><code>hide_S1</code></td><td></td><td>Shoes</td></tr></tbody></table>
 
 
 

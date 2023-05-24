@@ -16,10 +16,7 @@ There is (almost) nothing here yet. Maybe you are the right person to fix this? 
 
 First person animations are used solely on the player character (V). There's one rig per body gender:
 
-| name of rig    | Path in game files |
-| -------------- | ------------------ |
-| player\_male   |                    |
-| player\_female |                    |
+<table><thead><tr><th width="226">name of rig</th><th>Path in game files</th></tr></thead><tbody><tr><td>player_male</td><td></td></tr><tr><td>player_female</td><td></td></tr></tbody></table>
 
 ## Third person
 
@@ -27,13 +24,5 @@ First person animations are used solely on the player character (V). There's one
 While most rigs are called `man_xxx`, they're also used by NPCs of the female body gender.
 {% endhint %}
 
-| Name of rig  | Used by                                                | Path in game files |
-| ------------ | ------------------------------------------------------ | ------------------ |
-| woman\_base  | female body gender, default body shape                 |                    |
-| man\_base    | male body gender, default body shape                   |                    |
-| man\_child   | children of any body gender                            |                    |
-| woman\_child | unused (?)                                             |                    |
-| man\_big     | any body gender: big folks, e.g. Jackie, River, Rhino… |                    |
-| man\_fat     | any body gender: fat folks, e.g. Dexter                |                    |
-| man\_massive | Smasher                                                |                    |
+<table><thead><tr><th width="230.33333333333331">Name of rig</th><th>Used by</th><th>Path in game files</th></tr></thead><tbody><tr><td>woman_base</td><td>female body gender, default body shape</td><td></td></tr><tr><td>man_base</td><td>male body gender, default body shape</td><td></td></tr><tr><td>man_child</td><td>children of any body gender </td><td></td></tr><tr><td>woman_child</td><td>unused (?)</td><td></td></tr><tr><td>man_big</td><td>any body gender: big folks, e.g. Jackie, River, Rhino…</td><td></td></tr><tr><td>man_fat</td><td>any body gender: fat folks, e.g. Dexter</td><td></td></tr><tr><td>man_massive</td><td>Smasher</td><td></td></tr></tbody></table>
 

@@ -6,20 +6,7 @@ description: Skin tones, complexions, make-up
 
 ## Skin tones by index
 
-|    |                               |
-| -- | ----------------------------- |
-| 1  | 01\_ca\_pale                  |
-| 2  | 01\_ca\_pale\_00\_warm\_ivory |
-| 3  | 02\_ca\_limestone             |
-| 4  | 02\_ca\_limestone\_00\_beige  |
-| 5  | 03\_ca\_senna                 |
-| 6  | 03\_ca\_senna\_00\_amber      |
-| 7  | 03\_ca\_senna\_01\_honey      |
-| 8  | 03\_ca\_senna\_02\_band       |
-| 9  | 04\_ca\_almond                |
-| 10 | 04\_ca\_almond\_00\_umber     |
-| 11 | 05\_bl\_espresso              |
-| 12 | 06\_bl\_dark                  |
+<table><thead><tr><th width="108"></th><th></th></tr></thead><tbody><tr><td>1</td><td>01_ca_pale</td></tr><tr><td>2</td><td>01_ca_pale_00_warm_ivory</td></tr><tr><td>3</td><td>02_ca_limestone</td></tr><tr><td>4</td><td>02_ca_limestone_00_beige</td></tr><tr><td>5</td><td>03_ca_senna</td></tr><tr><td>6</td><td>03_ca_senna_00_amber</td></tr><tr><td>7</td><td>03_ca_senna_01_honey</td></tr><tr><td>8</td><td>03_ca_senna_02_band</td></tr><tr><td>9</td><td>04_ca_almond</td></tr><tr><td>10</td><td>04_ca_almond_00_umber</td></tr><tr><td>11</td><td>05_bl_espresso</td></tr><tr><td>12</td><td>06_bl_dark</td></tr></tbody></table>
 
 List compiled by **wolv**
 

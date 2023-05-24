@@ -15,11 +15,7 @@ This guide will show you how to\
 
 Assumed skill level: You are able to read ;)
 
-| Tool                                                                                                                                  | Tool version                                              |
-| ------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------- |
-| [WolvenKit](https://github.com/WolvenKit/Wolvenkit/releases)                                                                          | >= 8.8.0 _(8.7.0 works, but has a slightly different UI)_ |
-| [Blender](https://www.blender.org/download/)                                                                                          | >= 3.1 stable                                             |
-| [WKit Blender AddOn](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)[ ](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) | >= 1.1.0                                                  |
+<table><thead><tr><th width="293">Tool</th><th>Tool version</th></tr></thead><tbody><tr><td><a href="https://github.com/WolvenKit/Wolvenkit/releases">WolvenKit</a></td><td>>= 8.8.0 <em>(8.7.0 works, but has a slightly different UI)</em></td></tr><tr><td><a href="https://www.blender.org/download/">Blender</a></td><td>>= 3.1 stable</td></tr><tr><td><a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on">WKit Blender AddOn</a><a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on"> </a></td><td>>= 1.1.0</td></tr></tbody></table>
 
 ### Wait, this isn't what I want!
 

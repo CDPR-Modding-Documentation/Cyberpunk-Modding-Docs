@@ -20,11 +20,9 @@ description: Guide to change expressions for photo mode and AMM
 
 ### Photo Mode
 
-| female rig | <pre><code>base\animations\ui\photomode\photomode_female_facial.anims
-</code></pre> |
-| ---------- | ----------------------------------------------------------------------------------- |
-| male rig   | <pre><code>base\animations\ui\photomode\photomode_male_facial.anims
-</code></pre>   |
+<table data-header-hidden><thead><tr><th width="148"></th><th></th></tr></thead><tbody><tr><td>female rig</td><td><pre><code>base\animations\ui\photomode\photomode_female_facial.anims
+</code></pre></td></tr><tr><td>male rig</td><td><pre><code>base\animations\ui\photomode\photomode_male_facial.anims
+</code></pre></td></tr></tbody></table>
 
 ### AMM
 

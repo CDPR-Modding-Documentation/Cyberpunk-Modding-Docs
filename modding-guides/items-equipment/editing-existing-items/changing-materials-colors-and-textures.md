@@ -74,11 +74,7 @@ Most meshes have their materials under `localMaterialBuffer/materials`. However,
 
 You will (hopefully) see a material with three entries in `values` (order doesn't matter):
 
-| Key             | Value (DepotPath)                                                                                                     |
-| --------------- | --------------------------------------------------------------------------------------------------------------------- |
-| MultilayerSetup | `base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\ml_t2_002_ma_vest__puffy_bwstripes.mlsetup` |
-| MultilayerMask  | `base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\ml_t2_002_ma_vest__puffy_default.mlmask`    |
-| GlobalNormal    | `base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\t2_002_ma_vest__puffy_n01.xbm`              |
+<table><thead><tr><th width="213">Key</th><th>Value (DepotPath)</th></tr></thead><tbody><tr><td>MultilayerSetup</td><td><code>base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\ml_t2_002_ma_vest__puffy_bwstripes.mlsetup</code></td></tr><tr><td>MultilayerMask</td><td><code>base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\ml_t2_002_ma_vest__puffy_default.mlmask</code></td></tr><tr><td>GlobalNormal</td><td><code>base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\t2_002_ma_vest__puffy_n01.xbm</code></td></tr></tbody></table>
 
 For the purpose of this guide, all that matters is the mlsetup, which determines all the individual material assignments in this CMaterial. For an explanation of the shader, check [here](../../../modding-know-how/modding-cyberpunk-2077/materials-how-to-configure-them/multilayered.md).
 

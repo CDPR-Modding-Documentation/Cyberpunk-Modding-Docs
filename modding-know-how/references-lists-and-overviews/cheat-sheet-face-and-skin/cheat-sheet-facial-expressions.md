@@ -9,20 +9,7 @@ base\animations\ui\photomode\photomode_female_facial.anims
 base\animations\ui\photomode\photomode_male_facial.anims
 ```
 
-| Index | Expressions  | CNAME keys to activate them |
-| ----- | ------------ | --------------------------- |
-| 1     | Neutral      | facial\_neutral             |
-| 2     | Charm        | facial\_charming            |
-| 3     | Fury         | facial\_furious             |
-| 4     | Boredom      | facial\_bored               |
-| 5     | Anger        | facial\_pissed              |
-| 6     | Satisfaction | facial\_pleased             |
-| 7     | Disgust      | facial\_disgusted           |
-| 8     | Happiness    | facial\_happy               |
-| 9     | Fear         | facial\_scared              |
-| 10    | Surprise     | facial\_surprised           |
-| 11    | Sadness      | facial\_sadness             |
-| 12    | Whistle      | facial\_whistling           |
+<table><thead><tr><th width="95.33333333333331">Index</th><th>Expressions </th><th>CNAME keys to activate them</th></tr></thead><tbody><tr><td>1</td><td>Neutral</td><td>facial_neutral</td></tr><tr><td>2</td><td>Charm</td><td>facial_charming</td></tr><tr><td>3</td><td>Fury</td><td>facial_furious</td></tr><tr><td>4</td><td>Boredom</td><td>facial_bored</td></tr><tr><td>5</td><td>Anger</td><td>facial_pissed</td></tr><tr><td>6</td><td>Satisfaction</td><td>facial_pleased</td></tr><tr><td>7</td><td>Disgust</td><td>facial_disgusted</td></tr><tr><td>8</td><td>Happiness</td><td>facial_happy</td></tr><tr><td>9</td><td>Fear</td><td>facial_scared</td></tr><tr><td>10</td><td>Surprise</td><td>facial_surprised</td></tr><tr><td>11</td><td>Sadness</td><td>facial_sadness</td></tr><tr><td>12</td><td>Whistle</td><td>facial_whistling</td></tr></tbody></table>
 
 
 

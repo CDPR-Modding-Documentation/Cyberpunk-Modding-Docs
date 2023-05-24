@@ -98,23 +98,17 @@ When deleting files that you aren't using, you need to renive both the `.mesh` f
 
 The following table will show you examples on what to **keep** (as in, you **delete everything else**):
 
-| Body gender/variant    | Files not to delete from variants                                                                                                                                                                                                              |
-| ---------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| female V, cyberware 03 | <pre><code><strong>tutorial\npv\your_female_character\head\hx_000_pwa_c__basehead_cyberware_03.mesh
+<table><thead><tr><th width="247">Body gender/variant</th><th>Files not to delete from variants</th></tr></thead><tbody><tr><td>female V, cyberware 03</td><td><pre><code><strong>tutorial\npv\your_female_character\head\hx_000_pwa_c__basehead_cyberware_03.mesh
 </strong>tutorial\npv\your_female_character\head\morphtargets\hx_000_pwa__morphs_cyberware_03.morphtarget
-</code></pre>                    |
-| male V, scars 01       | <pre><code>tutorial\npv\your_male_character\head\hx_000_pma_c__basehead_scars_01.mesh
+</code></pre></td></tr><tr><td>male V, scars 01</td><td><pre><code>tutorial\npv\your_male_character\head\hx_000_pma_c__basehead_scars_01.mesh
 tutorial\npv\your_male_character\head\morphtargets\hx_000_pma__morphs_scars_01.morphtarget
-</code></pre>                                                 |
-| male V, big beard      | <pre><code>tutorial\npv\your_male_character\head\hx_000_pma_c__basehead_scars_01.mesh
+</code></pre></td></tr><tr><td>male V, big beard</td><td><pre><code>tutorial\npv\your_male_character\head\hx_000_pma_c__basehead_scars_01.mesh
 tutorial\npv\your_male_character\head\hb_000_pma_c__basehead_big_beard.mesh
-</code></pre>                                                                |
-| female V, tattoo 09    | <pre><code>tutorial\npv\your_female_character\head\hx_000_pwa_c__basehead_tattoo_09.mesh
+</code></pre></td></tr><tr><td>female V, tattoo 09</td><td><pre><code>tutorial\npv\your_female_character\head\hx_000_pwa_c__basehead_tattoo_09.mesh
 tutorial\npv\your_female_character\head\morphtargets\hx_000_pwa__morphs_tattoo_09.morphtarget
-</code></pre>                                           |
-| male V, no earring     | <p>Files to delete (0* means "01 - 04"):</p><pre><code>tutorial\npv\your_male_character\head\i1_000_pma_c__basehead_earring_0*.mesh
+</code></pre></td></tr><tr><td>male V, no earring</td><td><p>Files to delete (0* means "01 - 04"):</p><pre><code>tutorial\npv\your_male_character\head\i1_000_pma_c__basehead_earring_0*.mesh
 tutorial\npv\your_male_character\head\morphtargets\i1_000_pma__morphs_earring_0*.morphtarget
-</code></pre> |
+</code></pre></td></tr></tbody></table>
 
 #### Expected result
 

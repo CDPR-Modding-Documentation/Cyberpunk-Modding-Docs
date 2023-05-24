@@ -43,26 +43,7 @@ As shown above, each mesh using the multilayer shader uses a unique **mlmask** f
 
 ### MLSETUP Definition
 
-| Property                 |                                       Description                                      |
-| ------------------------ | :------------------------------------------------------------------------------------: |
-| colorScale               | Sets a color from within the [mltemplate](multilayered.md#what-is-the-mltemplate) file |
-| material                 |            Path to [mltemplate](multilayered.md#what-is-the-mltemplate) file           |
-| matTile                  |                     Tiling multiplier for the main surface texture                     |
-| mbTile                   |                      Tiling multiplier for the microblend texture                      |
-| metalLevelsIn            |                                            ?                                           |
-| metalLevelsOut           |                             Clamps metalness output levels                             |
-| microblend               |                                Procedural detail texture                               |
-| microblendContrast       |                        Controls influence of microblend texture                        |
-| microblendNormalStrength |                      Multiplier for adjusting normalblend strength                     |
-| microblendOffsetU        |                          Shifts UV map for microblend texture                          |
-| microblendOffsetV        |                          Shifts UV map for microblend texture                          |
-| normalStrength           |                         Sets intensity of mltemplate normal map                        |
-| offsetU                  |                                 Moves UV in X direction                                |
-| offsetV                  |                                 Moves UV in Y direction                                |
-| opacity                  |                                   Sets layer opacity                                   |
-| overrides                |                                            ?                                           |
-| roughLevelsIn            |                                            ?                                           |
-| roughLevelsOut           |                             Clamps roughness output levels                             |
+<table><thead><tr><th width="282">Property</th><th align="center">Description</th></tr></thead><tbody><tr><td>colorScale</td><td align="center">Sets a color from within the <a href="multilayered.md#what-is-the-mltemplate">mltemplate</a> file</td></tr><tr><td>material</td><td align="center">Path to <a href="multilayered.md#what-is-the-mltemplate">mltemplate</a> file</td></tr><tr><td>matTile</td><td align="center">Tiling multiplier for the main surface texture</td></tr><tr><td>mbTile</td><td align="center">Tiling multiplier for the microblend texture</td></tr><tr><td>metalLevelsIn</td><td align="center">?</td></tr><tr><td>metalLevelsOut</td><td align="center">Clamps metalness output levels</td></tr><tr><td>microblend</td><td align="center">Procedural detail texture</td></tr><tr><td>microblendContrast</td><td align="center">Controls influence of microblend texture</td></tr><tr><td>microblendNormalStrength</td><td align="center">Multiplier for adjusting normalblend strength</td></tr><tr><td>microblendOffsetU</td><td align="center">Shifts UV map for microblend texture</td></tr><tr><td>microblendOffsetV</td><td align="center">Shifts UV map for microblend texture</td></tr><tr><td>normalStrength</td><td align="center">Sets intensity of mltemplate normal map</td></tr><tr><td>offsetU</td><td align="center">Moves UV in X direction</td></tr><tr><td>offsetV</td><td align="center">Moves UV in Y direction</td></tr><tr><td>opacity</td><td align="center">Sets layer opacity</td></tr><tr><td>overrides</td><td align="center">?</td></tr><tr><td>roughLevelsIn</td><td align="center">?</td></tr><tr><td>roughLevelsOut</td><td align="center">Clamps roughness output levels</td></tr></tbody></table>
 
 ## What is the mltemplate?
 
@@ -85,29 +66,8 @@ As shown above, each mesh using the multilayer shader uses a unique **mlmask** f
 
 ### `multilayered`
 
-| Texture Channels |    Red   |   Green  | Blue | Alpha |
-| ---------------- | :------: | :------: | :--: | :---: |
-| GlobalNormal     | Normal R | Normal G |   ?  |   ?   |
-| MaskAtlas        |     ?    |     ?    |   ?  |   ?   |
+<table><thead><tr><th width="192">Texture Channels</th><th width="139" align="center">Red</th><th width="134" align="center">Green</th><th width="146" align="center">Blue</th><th align="center">Alpha</th></tr></thead><tbody><tr><td>GlobalNormal</td><td align="center">Normal R</td><td align="center">Normal G</td><td align="center">?</td><td align="center">?</td></tr><tr><td>MaskAtlas</td><td align="center">?</td><td align="center">?</td><td align="center">?</td><td align="center">?</td></tr></tbody></table>
 
-| Name                             |                 Description                 |
-| -------------------------------- | :-----------------------------------------: |
-| MultilayerMask                   |                  See mlmask                 |
-| MultilayerSetup                  |                 See mlsetup                 |
-| GlobalNormalIntensity            | Sets visual intensity of normal map texture |
-| GlobalNormalUVScale              |                      ?                      |
-| GlobalNormalUVBias               |                      ?                      |
-| MaskAtlas                        |                      ?                      |
-| MaskTiles                        |                      ?                      |
-| Layers                           |                      ?                      |
-| LayersStartIndex                 |                      ?                      |
-| SurfaceTexAspectRatio            |   Sets number of mlmask layers to be used   |
-| MaskToTileScale                  |                      ?                      |
-| MaskTileSize                     |                      ?                      |
-| MaskAtlasDims                    |                      ?                      |
-| MaskBaseResolution               |                      ?                      |
-| SetupLayerMask                   |                      ?                      |
-| NormalsTextureDDXYMultiplier     |                      ?                      |
-| MicroblendsTextureDDXYMultiplier |                      ?                      |
+<table><thead><tr><th width="310">Name</th><th align="center">Description</th></tr></thead><tbody><tr><td>MultilayerMask</td><td align="center">See mlmask</td></tr><tr><td>MultilayerSetup</td><td align="center">See mlsetup</td></tr><tr><td>GlobalNormalIntensity</td><td align="center">Sets visual intensity of normal map texture</td></tr><tr><td>GlobalNormalUVScale</td><td align="center">?</td></tr><tr><td>GlobalNormalUVBias</td><td align="center">?</td></tr><tr><td>MaskAtlas</td><td align="center">?</td></tr><tr><td>MaskTiles</td><td align="center">?</td></tr><tr><td>Layers</td><td align="center">?</td></tr><tr><td>LayersStartIndex</td><td align="center">?</td></tr><tr><td>SurfaceTexAspectRatio</td><td align="center">Sets number of mlmask layers to be used</td></tr><tr><td>MaskToTileScale</td><td align="center">?</td></tr><tr><td>MaskTileSize</td><td align="center">?</td></tr><tr><td>MaskAtlasDims</td><td align="center">?</td></tr><tr><td>MaskBaseResolution</td><td align="center">?</td></tr><tr><td>SetupLayerMask</td><td align="center">?</td></tr><tr><td>NormalsTextureDDXYMultiplier</td><td align="center">?</td></tr><tr><td>MicroblendsTextureDDXYMultiplier</td><td align="center">?</td></tr></tbody></table>
 
 ##

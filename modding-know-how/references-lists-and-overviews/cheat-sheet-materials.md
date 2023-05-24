@@ -72,11 +72,7 @@ See [here](../materials/#emissive-material) how it works and how to configure it
 
 For more details on glass materials and instructions on how to configure them, see [here](../materials/#glass).&#x20;
 
-|                                                                            |                                                                   |
-| -------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| Basic glass, with warping properties, simple tint as color, simple opacity | `base\materials\glass_onesided.mt`                                |
-| Non-warping glass, destructible, tintable via colors                       | `base\vehicles\common\materials\glass_windshield_tinted_black.mi` |
-| Device screen glass                                                        | `base\fx\shaders\parallaxscreen.mt`                               |
+<table><thead><tr><th width="344"></th><th></th></tr></thead><tbody><tr><td>Basic glass, with warping properties, simple tint as color, simple opacity</td><td><code>base\materials\glass_onesided.mt</code></td></tr><tr><td>Non-warping glass, destructible, tintable via colors</td><td><code>base\vehicles\common\materials\glass_windshield_tinted_black.mi</code></td></tr><tr><td>Device screen glass </td><td><code>base\fx\shaders\parallaxscreen.mt</code></td></tr></tbody></table>
 
 ### Gradient recolor
 
@@ -86,13 +82,7 @@ For more details on glass materials and instructions on how to configure them, s
 
 Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room\_plastic_black.mi`
 
-|                |                                                                                                                                    |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| BaseColor      | `base\materials\placeholder\white.xbm`                                                                                             |
-| Normal         | optional: path to your normal map                                                                                                  |
-| Roughness      | optional: path to your roughness map                                                                                               |
-| RoughnessBias  | 0.200000003                                                                                                                        |
-| BaseColorScale | Colour as x/y/z values (color picker blend file [here](https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks)) |
+<table><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>BaseColor</td><td><code>base\materials\placeholder\white.xbm</code></td></tr><tr><td>Normal</td><td>optional: path to your normal map</td></tr><tr><td>Roughness</td><td>optional: path to your roughness map</td></tr><tr><td>RoughnessBias</td><td>0.200000003</td></tr><tr><td>BaseColorScale</td><td>Colour as x/y/z values (color picker blend file <a href="https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks">here</a>)</td></tr></tbody></table>
 
 ## Liquid
 

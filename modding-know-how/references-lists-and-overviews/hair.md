@@ -24,97 +24,11 @@ To look up hairstyles in more detail, you can use [NoraLee's NPV part picker](ht
 List has been confirmed working before 1.6, but might need updating (especially since new hair was added)
 {% endhint %}
 
-| 01 | hh\_033\_wa\_\_player            | hh\_145\_ma\_\_v\_short          |
-| -- | -------------------------------- | -------------------------------- |
-| 02 | hh\_059\_wa\_\_voodoo\_02        | hh\_053\_ma\_\_kerry\_eurodyne   |
-| 03 | hh\_034\_wa\_\_militech\_agent   | hh\_035\_ma\_\_mohawk\_tall      |
-| 04 | hh\_089\_ma\_\_thompson          | hh\_028\_wa\_\_corpo\_bun        |
-| 05 | hh\_090\_wa\_\_alt               | hh\_075\_ma\_\_peralez           |
-| 06 | hh\_078\_wa\_\_evelyn            | hh\_036\_ma\_\_high\_tight       |
-| 07 | hh\_035\_ma\_\_mohawk\_tall      | hh\_059\_wa\_\_voodoo\_02        |
-| 08 | hh\_036\_ma\_\_high\_tight       | hh\_030\_ma\_\_punk\_idol        |
-| 09 | hh\_082\_ma\_\_afro\_bun         | hh\_062\_ma\_\_slick\_back       |
-| 10 | hh\_079\_wa\_\_denny             | hh\_085\_ma\_\_takemura          |
-| 11 | hh\_091\_wa\_\_dakota            | hh\_037\_ma\_\_gungho            |
-| 12 | hh\_063\_wa\_messy\_bob          | hh\_039\_wa\_\_punk\_shaved      |
-| 13 | hh\_042\_wa\_\_topknots          | hh\_051\_wa\_\_judy              |
-| 14 | hh\_999\_ma\_\_buzz\_cap         | hh\_999\_ma\_\_buzz\_cap         |
-| 15 | hh\_008\_ma\_\_demo              | hh\_025\_ma\_\_pompadour         |
-| 16 | hh\_011\_wa\_\_demo              | hh\_008\_ma\_\_demo              |
-| 17 | hh\_029\_wa\_\_misty             | hh\_011\_wa\_\_demo              |
-| 18 | hh\_040\_wa\_\_pixie\_bob        | hh\_026\_ma\_\_rattail           |
-| 19 | hh\_041\_wa\_\_valentino         | Hh\_027\_ma\_\_scavenger         |
-| 20 | hh\_044\_wa\_\_classic           | hh\_031\_mb\_\_morgan\_blackhand |
-| 21 | hh\_045\_ma\_\_short\_spiked     | hh\_032\_ma\_\_ripper\_doc       |
-| 22 | hh\_051\_wa\_\_judy              | hh\_040\_wa\_\_pixie\_bob        |
-| 23 | hh\_060\_wa\_\_voodoo\_03        | hh\_047\_wa\_\_swirl\_pomp       |
-| 24 | hh\_064\_wa\_\_bob\_fringe       | hh\_048\_ma\_\_dual\_braids      |
-| 25 | hh\_068\_wba\_\_animals\_03      | hh\_058\_wa\_\_voodoo\_01        |
-| 26 | hh\_081\_wa\_\_buns\_02          | hh\_060\_wa\_\_voodoo\_03        |
-| 27 | hh\_083\_wa\_\_ponytail\_01      | hh\_061\_ma\_\_midlength\_wavy   |
-| 28 | hh\_083\_wa\_\_ponytail\_01      | hh\_065\_wa\_\_afro\_knots       |
-| 29 | hh\_077\_wa\_\_nomad\_02         | hh\_068\_wba\_\_animals\_03      |
-| 30 | hh\_088\_wa\_\_corpo\_bob        | hh\_073\_ma\_\_nomad\_01         |
-| 31 | hh\_118\_wa\_\_gillean           | hh\_082\_ma\_\_afro\_bun         |
-| 32 | hh\_115\_wa\_\_alanah            | hh\_089\_ma\_\_thompson          |
-| 33 | hh\_121\_wa\_\_t\_bug            | hh\_103\_ma\_\_maelstrom\_spikes |
-| 34 | hh\_151\_wa\_\_judy\_variation02 | hh\_120\_ma\_\_arasaka\_bun      |
-| 35 | hh\_006\_ma\_\_demo              | hh\_007\_ma\_\_demo              |
-| 36 | hh\_083\_wa\_\_ponytail\_01      | hh\_112\_ma\_\_kicinski          |
-| 37 | hh\_093\_mba\_\_sumo             | hh\_113\_ma\_\_iwinski           |
-| 38 | hh\_085\_ma\_\_takemura          | hh\_045\_ma\_\_short\_spiked     |
-| 39 | hh\_054\_wa\_\_rogue\_young      | hh\_094\_ma\_\_saul              |
-| 40 | hh\_049\_ma\_\_thiago            | hh\_049\_ma\_\_thiago            |
-| 41 | hh\_039\_wa\_\_punk\_shaved      | hh\_122\_ma\_\_roy               |
-| 42 | hh\_103\_ma\_\_maelstrom\_spikes | hh\_093\_mba\_\_sumo             |
-| 43 | hh\_106\_wa\_\_ponytails         | hh\_006\_ma\_\_demo              |
-| 44 | hh\_140\_ma\_\_short\_afro       | hh\_140\_ma\_\_short\_afro       |
-| 45 | hh\_141\_ma\_\_afro              | hh\_141\_ma\_\_afro              |
-| 46 | hh\_142\_wa\_\_afrohawk          | hh\_142\_wa\_\_afrohawk          |
-| 47 | hh\_143\_ma\_\_flat\_top         | hh\_143\_ma\_\_flat\_top         |
-| 48 | hh\_144\_wa\_\_afro\_braid\_bun  | hh\_144\_wa\_\_afro\_braid\_bun  |
-| 49 | hh\_146\_ma\_\_dread\_undercut   | hh\_146\_ma\_\_dread\_undercut   |
-| 50 | hh\_999\_ma\_\_buzz\_cap         | hh\_999\_ma\_\_buzz\_cap         |
+<table data-header-hidden><thead><tr><th width="104.33333333333331">#</th><th>femme frame</th><th>masc frame</th></tr></thead><tbody><tr><td>01</td><td>hh_033_wa__player</td><td>hh_145_ma__v_short</td></tr><tr><td>02</td><td>hh_059_wa__voodoo_02</td><td>hh_053_ma__kerry_eurodyne</td></tr><tr><td>03</td><td>hh_034_wa__militech_agent</td><td>hh_035_ma__mohawk_tall</td></tr><tr><td>04</td><td>hh_089_ma__thompson</td><td>hh_028_wa__corpo_bun</td></tr><tr><td>05</td><td>hh_090_wa__alt</td><td>hh_075_ma__peralez</td></tr><tr><td>06</td><td>hh_078_wa__evelyn</td><td>hh_036_ma__high_tight</td></tr><tr><td>07</td><td>hh_035_ma__mohawk_tall</td><td>hh_059_wa__voodoo_02</td></tr><tr><td>08</td><td>hh_036_ma__high_tight</td><td>hh_030_ma__punk_idol</td></tr><tr><td>09</td><td>hh_082_ma__afro_bun</td><td>hh_062_ma__slick_back</td></tr><tr><td>10</td><td>hh_079_wa__denny</td><td>hh_085_ma__takemura</td></tr><tr><td>11</td><td>hh_091_wa__dakota</td><td>hh_037_ma__gungho</td></tr><tr><td>12</td><td>hh_063_wa_messy_bob</td><td>hh_039_wa__punk_shaved</td></tr><tr><td>13</td><td>hh_042_wa__topknots</td><td>hh_051_wa__judy</td></tr><tr><td>14</td><td>hh_999_ma__buzz_cap</td><td>hh_999_ma__buzz_cap</td></tr><tr><td>15</td><td>hh_008_ma__demo</td><td>hh_025_ma__pompadour</td></tr><tr><td>16</td><td>hh_011_wa__demo</td><td>hh_008_ma__demo</td></tr><tr><td>17</td><td>hh_029_wa__misty</td><td>hh_011_wa__demo</td></tr><tr><td>18</td><td>hh_040_wa__pixie_bob</td><td>hh_026_ma__rattail</td></tr><tr><td>19</td><td>hh_041_wa__valentino</td><td>Hh_027_ma__scavenger</td></tr><tr><td>20</td><td>hh_044_wa__classic</td><td>hh_031_mb__morgan_blackhand</td></tr><tr><td>21</td><td>hh_045_ma__short_spiked</td><td>hh_032_ma__ripper_doc</td></tr><tr><td>22</td><td>hh_051_wa__judy</td><td>hh_040_wa__pixie_bob</td></tr><tr><td>23</td><td>hh_060_wa__voodoo_03</td><td>hh_047_wa__swirl_pomp</td></tr><tr><td>24</td><td>hh_064_wa__bob_fringe</td><td>hh_048_ma__dual_braids</td></tr><tr><td>25</td><td>hh_068_wba__animals_03</td><td>hh_058_wa__voodoo_01</td></tr><tr><td>26</td><td>hh_081_wa__buns_02</td><td>hh_060_wa__voodoo_03</td></tr><tr><td>27</td><td>hh_083_wa__ponytail_01</td><td>hh_061_ma__midlength_wavy</td></tr><tr><td>28</td><td>hh_083_wa__ponytail_01</td><td>hh_065_wa__afro_knots</td></tr><tr><td>29</td><td>hh_077_wa__nomad_02</td><td>hh_068_wba__animals_03</td></tr><tr><td>30</td><td>hh_088_wa__corpo_bob</td><td>hh_073_ma__nomad_01</td></tr><tr><td>31</td><td>hh_118_wa__gillean</td><td>hh_082_ma__afro_bun</td></tr><tr><td>32</td><td>hh_115_wa__alanah</td><td>hh_089_ma__thompson</td></tr><tr><td>33</td><td>hh_121_wa__t_bug</td><td>hh_103_ma__maelstrom_spikes</td></tr><tr><td>34</td><td>hh_151_wa__judy_variation02</td><td>hh_120_ma__arasaka_bun</td></tr><tr><td>35</td><td>hh_006_ma__demo</td><td>hh_007_ma__demo</td></tr><tr><td>36</td><td>hh_083_wa__ponytail_01</td><td>hh_112_ma__kicinski</td></tr><tr><td>37</td><td>hh_093_mba__sumo</td><td>hh_113_ma__iwinski</td></tr><tr><td>38</td><td>hh_085_ma__takemura</td><td>hh_045_ma__short_spiked</td></tr><tr><td>39</td><td>hh_054_wa__rogue_young</td><td>hh_094_ma__saul</td></tr><tr><td>40</td><td>hh_049_ma__thiago</td><td>hh_049_ma__thiago</td></tr><tr><td>41</td><td>hh_039_wa__punk_shaved</td><td>hh_122_ma__roy</td></tr><tr><td>42</td><td>hh_103_ma__maelstrom_spikes</td><td>hh_093_mba__sumo</td></tr><tr><td>43</td><td>hh_106_wa__ponytails</td><td>hh_006_ma__demo</td></tr><tr><td>44</td><td>hh_140_ma__short_afro</td><td>hh_140_ma__short_afro</td></tr><tr><td>45</td><td>hh_141_ma__afro</td><td>hh_141_ma__afro</td></tr><tr><td>46</td><td>hh_142_wa__afrohawk</td><td>hh_142_wa__afrohawk</td></tr><tr><td>47</td><td>hh_143_ma__flat_top</td><td>hh_143_ma__flat_top</td></tr><tr><td>48</td><td>hh_144_wa__afro_braid_bun</td><td>hh_144_wa__afro_braid_bun</td></tr><tr><td>49</td><td>hh_146_ma__dread_undercut</td><td>hh_146_ma__dread_undercut</td></tr><tr><td>50</td><td>hh_999_ma__buzz_cap</td><td>hh_999_ma__buzz_cap</td></tr></tbody></table>
 
 ## Colour in files by index
 
-| Colour in CC | Name in Files              |
-| ------------ | -------------------------- |
-| 1            | 05\_brown\_liquorice       |
-| 2            | 01\_blonde\_platinum       |
-| 3            | 02\_red\_merlot            |
-| 4            | 03\_ginger\_copper         |
-| 5            | 04\_teal\_ombre            |
-| 6            | 06\_black\_carbon          |
-| 7            | 07\_blonde\_golden         |
-| 8            | 08\_blonde\_dishwater      |
-| 9            | 09\_blue\_sapphire         |
-| 10           | 10\_brown\_ombre           |
-| 11           | 11\_red\_apple             |
-| 12           | 12\_gray\_gunmetal         |
-| 13           | 13\_ginger\_strawberry     |
-| 14           | 14\_teal\_ash              |
-| 15           | 15\_pink\_magenta          |
-| 16           | 16\_pink\_rose             |
-| 17           | 17\_blue\_steel            |
-| 18           | 18\_blue\_red\_ombre       |
-| 19           | 19\_cold\_white            |
-| 20           | 20\_cyberpunk\_yellow      |
-| 21           | 21\_goblin\_green          |
-| 22           | 22\_liliac                 |
-| 23           | 23\_mermaid\_aquamarine    |
-| 24           | 24\_purple\_ombre          |
-| 25           | 25\_black\_salt\_n\_pepper |
-| 26           | 26\_green\_toxic           |
-| 27           | 27\_brown\_medium          |
-| 28           | 28\_blue\_sky              |
-| 29           | 29\_citrus\_yellow         |
-| 30           | 30\_dark\_purple           |
-| 31           | 31\_green\_orange          |
-| 32           | 32\_liliac\_ombre          |
-| 33           | 33\_phoenix\_fire          |
-| 34           | 34\_purple\_blonde         |
-| 35           | 35\_silver\_rose           |
+<table><thead><tr><th width="150">Colour in CC</th><th>Name in Files</th></tr></thead><tbody><tr><td>1</td><td>05_brown_liquorice</td></tr><tr><td>2</td><td>01_blonde_platinum</td></tr><tr><td>3</td><td>02_red_merlot</td></tr><tr><td>4</td><td>03_ginger_copper</td></tr><tr><td>5</td><td>04_teal_ombre</td></tr><tr><td>6</td><td>06_black_carbon</td></tr><tr><td>7</td><td>07_blonde_golden</td></tr><tr><td>8</td><td>08_blonde_dishwater</td></tr><tr><td>9</td><td>09_blue_sapphire</td></tr><tr><td>10</td><td>10_brown_ombre</td></tr><tr><td>11</td><td>11_red_apple</td></tr><tr><td>12</td><td>12_gray_gunmetal</td></tr><tr><td>13</td><td>13_ginger_strawberry</td></tr><tr><td>14</td><td>14_teal_ash</td></tr><tr><td>15</td><td>15_pink_magenta</td></tr><tr><td>16</td><td>16_pink_rose</td></tr><tr><td>17</td><td>17_blue_steel</td></tr><tr><td>18</td><td>18_blue_red_ombre</td></tr><tr><td>19</td><td>19_cold_white</td></tr><tr><td>20</td><td>20_cyberpunk_yellow</td></tr><tr><td>21</td><td>21_goblin_green</td></tr><tr><td>22</td><td>22_liliac</td></tr><tr><td>23</td><td>23_mermaid_aquamarine</td></tr><tr><td>24</td><td>24_purple_ombre</td></tr><tr><td>25</td><td>25_black_salt_n_pepper</td></tr><tr><td>26</td><td>26_green_toxic</td></tr><tr><td>27</td><td>27_brown_medium</td></tr><tr><td>28</td><td>28_blue_sky</td></tr><tr><td>29</td><td>29_citrus_yellow</td></tr><tr><td>30</td><td>30_dark_purple</td></tr><tr><td>31</td><td>31_green_orange</td></tr><tr><td>32</td><td>32_liliac_ombre</td></tr><tr><td>33</td><td>33_phoenix_fire</td></tr><tr><td>34</td><td>34_purple_blonde</td></tr><tr><td>35</td><td>35_silver_rose</td></tr></tbody></table>
 
 ## Hair .ent files
 

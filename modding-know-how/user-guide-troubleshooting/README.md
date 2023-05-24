@@ -263,13 +263,7 @@ To find out the **type** of broken mod, take each directory from the following l
 
 The folders do not influence each other.&#x20;
 
-|                     |                                                          |
-| ------------------- | -------------------------------------------------------- |
-| \\`mods`            | Redmod directory: contains .archive mods (in subfolders) |
-| \\`archive\pc\mod`  | Legacy directory: contains .archive mods                 |
-| \\`bin\x64\plugins` | Cyber Engine Tweaks                                      |
-| `\r6\scripts`       | redscript mods                                           |
-| `\r6\tweaks`        | red4ext tweaks                                           |
+<table><thead><tr><th width="273"></th><th></th></tr></thead><tbody><tr><td>\<code>mods</code></td><td>Redmod directory: contains .archive mods (in subfolders)</td></tr><tr><td>\<code>archive\pc\mod</code></td><td>Legacy directory: contains .archive mods</td></tr><tr><td>\<code>bin\x64\plugins</code></td><td>Cyber Engine Tweaks</td></tr><tr><td><code>\r6\scripts</code></td><td>redscript mods</td></tr><tr><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr></tbody></table>
 
 1. Rename the **game folder** (e.g. `/mods`) to a **backup folder** by appending an underscore (e.g. /`mods_`)
 2. To prevent errors, create a new empty game folder (e.g. `/mods`).
