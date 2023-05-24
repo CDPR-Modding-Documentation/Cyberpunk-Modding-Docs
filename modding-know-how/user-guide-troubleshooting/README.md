@@ -28,7 +28,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
 
 * [I don't wanna debug, I just want mods!](./#i-really-just-want-to-get-this-working-what-do-i-do)
 * [There was a game update and now your mods aren't working](./#troubleshooting-after-an-update)
-* You're on Linux
+* [You're on Linux](./#youre-on-linux-steam-deck)
 * [Your game isn't starting](./#your-game-isnt-starting-crashes-to-desktop) / [crashing on startup](./#your-game-isnt-starting-crashes-to-desktop)
   * [It's pirated](./#you-pirated-the-game)
   * [Corrupt or missing script files](./#corrupt-or-missing-script-files)
