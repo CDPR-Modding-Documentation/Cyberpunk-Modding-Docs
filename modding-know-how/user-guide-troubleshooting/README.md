@@ -269,11 +269,10 @@ The folders do not influence each other.&#x20;
 2. To prevent errors, create a new empty game folder (e.g. `/mods`).
 3. Start the game. You will now run into one of these two scenarios:
    * **Your problem is gone:** Jackpot. This is the correct folder for [the next section](./#go-bisect).
-   * **Your problem is still there**: This folder is innocent. Proceed with the next entry.\
-     If you want to make sure that there&#x20;
+   * **Your problem is still there**: This folder is innocent. Proceed with the next entry.
 
 {% hint style="info" %}
-If you have renamed all folders and the problem
+You can put the innocent folders back if you want: due to the way mods are loading, there won't be side-effects.
 {% endhint %}
 
 ### Go bisect
