@@ -189,6 +189,10 @@ The file structure is different for REDmods and non-REDmods. Mod authors usually
 
 ### REDmod:
 
+{% hint style="info" %}
+If the downloaded archive contains an `info.json` and a folder named `archives`, you're dealing with a REDmod.
+{% endhint %}
+
 Extract the entire folder into `/mods/`. You should have `/mods/ModName` afterwards.
 
 <figure><img src="../../.gitbook/assets/installing-redmod-preview.png" alt=""><figcaption></figcaption></figure>
