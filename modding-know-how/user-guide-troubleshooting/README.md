@@ -156,7 +156,11 @@ Message: Failed to initialize scripts data!
 File: E:\R6.Release\dev\src\common\engine\src\baseEngineInit.cpp(1019)
 ```
 
-Check your NVidia panel. If power saving options are enabled, turn them off.
+Check your NVidia Control Panel panel. If power saving options are enabled, turn them off:
+
+<figure><img src="../../.gitbook/assets/nvidia_control_panel_power_saving.png" alt=""><figcaption></figcaption></figure>
+
+If you don't, check for other power config options in your operating system.
 
 ### Steam: verify file integrity loop
 
