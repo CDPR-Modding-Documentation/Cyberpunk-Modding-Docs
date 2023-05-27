@@ -54,7 +54,7 @@ Since both rigs are from CP77, the structures are the same and should share the 
 
 Make sure to have Auto Scale checked in and to use the Rest pose
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (4).png" alt=""><figcaption></figcaption></figure>
 
 You can now hit Retarget Animation and the template’s model should now be correctly posed!
 
