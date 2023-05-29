@@ -30,7 +30,7 @@ If you run into issues with this guide, the right place to ask for help is the [
 You can not use the current release 8.9.0 for this! But the Nightly is perfectly OK :)&#x20;
 {% endhint %}
 
-* [Blender](https://www.blender.org/download/) 3.5.1 (anything > 3 should work)
+* [Blender](https://www.blender.org/download/) 3.5.1 (anything >= 3.4 should work)
 * [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) >= 2.1
 
 {% hint style="info" %}
