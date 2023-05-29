@@ -44,7 +44,7 @@ Unlike the competition, Steam will not give you any control about auto-updating.
    1. Right-click on the file and select Properties
    2. At the bottom of the dialogue, check the Read-only box
 
-&#x20;![](<../../.gitbook/assets/image (2).png>)&#x20;
+&#x20;![](<../../.gitbook/assets/image (2) (4).png>)&#x20;
 
 {% hint style="info" %}
 As long as Steam can't write to this file, it can't update Cyberpunk. Once you are ready to update, simply uncheck the Read-only checkbox again.

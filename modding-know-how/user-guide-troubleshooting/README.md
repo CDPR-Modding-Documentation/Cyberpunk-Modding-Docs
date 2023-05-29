@@ -173,7 +173,11 @@ One of the .archive files in your folder is broken. To find out which one, try t
 
 <figure><img src="../../.gitbook/assets/troubleshooting_headers_startup_cockblock.png" alt=""><figcaption></figcaption></figure>
 
-There are various non-mod-related reasons why the game couldn't be starting. If you have followed these steps and they haven't gotten you anywhere, check the errors in this section.
+There are various non-mod-related reasons why the game couldn't be starting. If you have followed these steps and they haven't gotten you anywhere, check the errors in this section:
+
+* [Too many mods](./#too-many-mods)
+* [Message: Failed to initialize scripts data!](./#failed-to-initialize-script-data)
+* [Steam file verification loop](./#steam-verify-file-integrity-loop)
 
 Other than that, there are general troubleshooting steps, because **missing Windows stuff can make Cyberpunk go brr**. Make sure that&#x20;
 
@@ -184,6 +188,14 @@ Other than that, there are general troubleshooting steps, because **missing Wind
 Also, try starting the game **without Reshade** to rule it out as a source of crashes (this happened after the DLSS patch) and **temporarily disable your antivirus**.
 
 If none of that helps, find us on [Discord](https://discord.gg/redmodding) in #mod-troubleshooting.
+
+### Too many mods
+
+There is such a thing as too many mods which are making the game crash. This number seems pretty random, but generally doesn't start below \~460.&#x20;
+
+To fix this, you need to disable analysis in the settings:&#x20;
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Failed to initialize script data
 
