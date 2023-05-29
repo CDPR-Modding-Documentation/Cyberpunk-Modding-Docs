@@ -17,6 +17,7 @@ Can be used interchangeably with `entSkinnedMeshComponent`.
 * Loads a mesh from a [depotPath](components.md#depotpath).&#x20;
 * Supports [chunkMask](components.md#chunkmask).
 * meshAppearance will select an appearance by name from the mesh's defined [appearances](broken-reference).
+* Lets you enable and disable **shadows** with the properties `castShadows` and `castLocalShadows`
 
 {% hint style="info" %}
 This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](components.md#entskinnedclothcomponent).
