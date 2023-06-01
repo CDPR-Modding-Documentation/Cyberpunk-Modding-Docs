@@ -293,7 +293,7 @@ Good news: Mods are doing a far better job. \
 Bad news again: You have to find the right log file in the game directory.\
 Good news again: There's intel how (see below)
 
-psiberx's mod [ctdhelper](https://www.nexusmods.com/cyberpunk2077/mods/5205) will give you additional information. There is a chance that it shows you something helpful, most of the time it
+jackhumbert's mod [ctdhelper](https://www.nexusmods.com/cyberpunk2077/mods/5205) will give you additional information. There is a chance that it shows you something helpful, most of the time it
 {% endhint %}
 
 If you don't want to download and run script files from the internet, you can go [here](./#alternatively-by-hand) and complete the steps by hand. Otherwise:
