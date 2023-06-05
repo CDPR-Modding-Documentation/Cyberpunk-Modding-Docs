@@ -144,7 +144,7 @@ Now that we're done with the base structure, we can take a look at the game file
 
 This is how the files connect to each other. If your head explodes now, don't worry: it's not as complicated as it looks, and the item addition guide will walk you through step by step.
 
-<figure><img src="https://i.imgur.com/evVMjhn.png" alt=""><figcaption><p>File structure explained</p></figcaption></figure>
+<figure><img src="https://i.imgur.com/MD3nbAc.png" alt=""><figcaption></figcaption></figure>
 
 ### root\_entity.ent
 
@@ -237,5 +237,5 @@ For our purposes it's enough to say that you can **define** your individual appe
 
 This is how everything plays together:
 
-<figure><img src="https://i.imgur.com/i1QzZMP.png" alt=""><figcaption><p>Not so bad, is it?</p></figcaption></figure>
+<figure><img src="https://i.imgur.com/B08QMxc.png" alt=""><figcaption></figcaption></figure>
 
