@@ -21,19 +21,19 @@ If you decide to document a component, make a new entry on the main page, follow
 * entAnimationSetupExtensionComponent
 * entAnimGraphResourceContainer
 * entEffectAttachmentComponent
-* entExternalComponent
+* <details open><summary>entExternalComponent</summary>
   * entMorphTargetManagerComponent
 * entFacialCustomizationComponent
-* entIMoverComponent
+* <details open><summary>entIMoverComponent</summary>
   * gameRootTransformAnimatorComponent
   * moveComponent
-* entIPlacedComponent
+* <details open><summary>entIPlacedComponent</summary>
   * entAmbientSoundEmitterComponent
-  * entBaseCameraComponent
-    * entRenderToTextureCameraComponent
+  * <details open><summary>entBaseCameraComponent</summary>
+    * <details open><summary>entRenderToTextureCameraComponent</summary>
       * gameuiHolocallCameraComponent
     * entVirtualCameraComponent
-    * gameCameraComponent
+    * <details open><summary>gameCameraComponent</summary>
       * gameFPPCameraComponent
       * gameFreeCameraComponent
       * gameScreenshot360CameraComponent
@@ -44,11 +44,11 @@ If you decide to document a component, make a new entry on the main page, follow
     * gameWorldSpaceBlendCamera
   * [entColliderComponent](./#entcollidercomponent)
   * entDynamicActorRepellingComponent
-  * entISkinableComponent
+  * <details open><summary>entISkinableComponent</summary>
     * [entAnimatedComponent](./#entanimatedcomponent)
     * entCorpseComponent
     * entInstancedAnimationComponent
-  * entIVisualComponent
+  * <details open><summary>entIVisualComponent</summary>
     * cpConveyorComponent
     * entClothComponent
     * entDebug\_ShapeComponent
@@ -56,50 +56,50 @@ If you decide to document a component, make a new entry on the main page, follow
     * entEffectSpawnerComponent
     * entEnvProbeComponent
     * entFogVolumeComponent
-    * entISkinTargetComponent
+    * <details open><summary>entISkinTargetComponent</summary>
       * entMorphTargetSkinnedMeshComponent
       * [entSkinnedClothComponent](./#entskinnedclothcomponent)
-      * [entSkinnedMeshComponent](./#entskinnedmeshcomponent)
+      * <details open><summary>[entSkinnedMeshComponent](./#entskinnedmeshcomponent)</summary>
         * entCharacterCustomizationSkinnedMeshComponent
         * [entGarmentSkinnedMeshComponent](./#entgarmentskinnedmeshcomponent)
         * entPhysicalSkinnedMeshComponent
     * entLightBlockingComponent
     * entLightChannelComponent
-    * entLightComponent
+    * <details open><summary>entLightComponent</summary>
       * cpGameplayLightComponent
-      * gameLightComponent
+      * <details open><summary>gameLightComponent</summary>
         * vehicleLightComponent
-    * entMeshComponent
+    * <details open><summary>entMeshComponent</summary>
       * entDebug\_MeshComponent
       * entEditorMeshComponent
-      * entPhysicalMeshComponent
+      * <details open><summary>entPhysicalMeshComponent</summary>
         * entAppearanceProxyMeshComponent
         * entBakedDestructionComponent
       * HudMeshComponent
     * entParticlesComponent
     * entPhysicalDestructionComponent
     * entVectorFieldComponent
-    * entVirtualCameraViewComponent
+    * <details open><summary>entVirtualCameraViewComponent</summary>
       * ScriptableVirtualCameraViewComponent
     * gameBinkComponent
   * entMarketingAnimationComponent
-  * entPhysicalTriggerComponent
+  * <details open><summary>entPhysicalTriggerComponent</summary>
     * entPhysicalImpulseAreaComponent
     * entTriggerComponent
   * entPlaceholderComponent
   * entSimpleColliderComponent
-  * entSlotComponent
+  * <details open><summary>entSlotComponent</summary>
     * gameHitRepresentationComponent
     * gameOccupantSlotComponent
   * entSoundListenerComponent
   * entStaticOccluderMeshComponent
   * entTargetPointComponent
-  * entTransformComponent
+  * <details open><summary>entTransformComponent</summary>
     * entVisualOffsetTransformComponent
   * entTriggerActivatorComponent
   * gameaudioAcousticPortalComponent
   * gameAudioEmitterComponent
-  * gameaudioSoundComponentBase
+  * <details open><summary>gameaudioSoundComponentBase</summary>
     * gameaudioSoundComponent
     * gameaudioVehicleAudioComponent
     * gameWeaponAudioComponent
@@ -116,7 +116,7 @@ If you decide to document a component, make a new entry on the main page, follow
   * gamePingComponent
   * gameprojectileComponent
   * gameprojectileSpawnComponent
-  * gameStaticAreaShapeComponent
+  * <details open><summary>gameStaticAreaShapeComponent</summary>
     * gameStaticTriggerAreaComponent
   * [gameTargetingComponent](./#gametargetingcomponent)
   * gameTransformAnimatorComponent
@@ -125,14 +125,14 @@ If you decide to document a component, make a new entry on the main page, follow
   * senseSensorObjectComponent
   * senseVisibleObjectComponent
   * vehicleChassisComponent
-  * WidgetBaseComponent
-    * IWorldWidgetComponent
+  * <details open><summary>WidgetBaseComponent</summary>
+    * <details open><summary>IWorldWidgetComponent</summary>
       * AdvertisementWidgetComponent
       * StreetSignWidgetComponent
       * WorldWidgetComponent
-    * WidgetHudComponentInterface
+    * <details open><summary>WidgetHudComponentInterface</summary>
       * WidgetHudComponent
-    * WidgetMenuComponentInterface
+    * <details open><summary>WidgetMenuComponentInterface</summary>
       * WidgetMenuComponent
   * workWorkspotResourceComponent
 * entLocalizationStringComponent
@@ -145,43 +145,43 @@ If you decide to document a component, make a new entry on the main page, follow
 * gameAttachmentSlots
 * gameaudioMusicSyncComponent
 * gameBraindanceDissolveComponent
-* gameComponent
-  * AICAgent
+* <details open><summary>gameComponent</summary>
+  * <details open><summary>AICAgent</summary>
     * AIHumanComponent
     * AIVehicleAgent
-  * AITargetTrackerComponent
+  * <details open><summary>AITargetTrackerComponent</summary>
     * TargetTrackingExtension
   * cpTestComponent
   * ElevatorController
   * EntityStubComponent
   * gameAttitudeAgent
   * gameDeviceCameraControlComponent
-  * gameDeviceComponent
+  * <details open><summary>gameDeviceComponent</summary>
     * PSD\_Detector
     * PSD\_Master
-    * ScriptableDeviceComponent
+    * <details open><summary>ScriptableDeviceComponent</summary>
       * ActionsSequencerController
-      * ActivatedDeviceController
+      * <details open><summary>ActivatedDeviceController</summary>
         * BarbedWireController
       * ActivatedDeviceNPCController
       * AlarmLightController
       * AOEEffectorController
-      * ArcadeMachineController
+      * <details open><summary>ArcadeMachineController</summary>
         * PachinkoMachineController
-      * BaseAnimatedDeviceController
+      * <details open><summary>BaseAnimatedDeviceController</summary>
         * MainframeController
         * RetractableAdController
         * SlidingLadderController
       * BaseDestructibleController
-      * BasicDistractionDeviceController
-        * BlindingLightController
+      * <details open><summary>BasicDistractionDeviceController</summary>
+        * <details open><summary>BlindingLightController</summary>
           * ReflectorController
         * CleaningMachineController
         * ConfessionBoothController
-        * ExplosiveDeviceController
+        * <details open><summary>ExplosiveDeviceController</summary>
           * C4Controller
           * ExplosiveTriggerDeviceController
-          * SensorDeviceController
+          * <details open><summary>SensorDeviceController</summary>
             * SecurityTurretController
             * SurveillanceCameraController
         * FanController
@@ -195,12 +195,12 @@ If you decide to document a component, make a new entry on the main page, follow
       * DataTermController
       * DisplayGlassController
       * DisposalDeviceController
-      * DoorController
+      * <details open><summary>DoorController</summary>
         * MovableWallScreenController
         * WindowController
       * DoorProximityDetectorController
       * DropPointController
-      * ElectricLightController
+      * <details open><summary>ElectricLightController</summary>
         * GameplayLightController
       * ExitLightController
       * ForkliftController
@@ -216,17 +216,17 @@ If you decide to document a component, make a new entry on the main page, follow
       * JukeboxController
       * LadderController
       * LaserDetectorController
-      * LcdScreenController
+      * <details open><summary>LcdScreenController</summary>
         * ApartmentScreenController
-      * MasterController
+      * <details open><summary>MasterController</summary>
         * AccessPointController
         * ActivatorController
         * AOEAreaController
-        * BaseNetworkSystemController
+        * <details open><summary>BaseNetworkSystemController</summary>
           * DoorSystemController
-        * DestructibleMasterDeviceController
+        * <details open><summary>DestructibleMasterDeviceController</summary>
           * DestructibleMasterLightController
-        * DeviceSystemBaseController
+        * <details open><summary>DeviceSystemBaseController</summary>
           * PersonnelSystemController
           * SecuritySystemController
           * SurveillanceSystemController
@@ -244,16 +244,16 @@ If you decide to document a component, make a new entry on the main page, follow
         * SimpleSwitchController
         * SmartHouseController
         * SoundSystemController
-        * TerminalController
-          * ComputerController
+        * <details open><summary>TerminalController</summary>
+          * <details open><summary>ComputerController</summary>
             * SmartWindowController
           * ElevatorFloorTerminalController
         * TrafficIntersectionManagerController
         * VentilationAreaController
-      * MediaDeviceController
+      * <details open><summary>MediaDeviceController</summary>
         * HoloTableController
         * RadioController
-        * TVController
+        * <details open><summary>TVController</summary>
           * WallScreenController
       * MovableDeviceController
       * NcartTimetableController
@@ -268,14 +268,14 @@ If you decide to document a component, make a new entry on the main page, follow
       * StashController
       * StillageController
       * ToiletController
-      * TrafficLightController
+      * <details open><summary>TrafficLightController</summary>
         * CrossingLightController
         * TrafficZebraController
-      * VehicleComponent
+      * <details open><summary>VehicleComponent</summary>
         * AVComponent
         * CarComponent
         * MotorcycleComponent
-      * VendingMachineController
+      * <details open><summary>VendingMachineController</summary>
         * IceMachineController
       * VendingTerminalController
       * VentilationEffectorController
@@ -289,13 +289,13 @@ If you decide to document a component, make a new entry on the main page, follow
   * gameInventory
   * gameMasterDeviceComponent
   * [gameScanningComponent](./#gamescanningcomponent)
-  * gameScriptableComponent
+  * <details open><summary>gameScriptableComponent</summary>
     * AdamSmasherComponent
-    * AIRelatedComponents
-      * AICustomComponents
+    * <details open><summary>AIRelatedComponents</summary>
+      * <details open><summary>AICustomComponents</summary>
         * CentaurShieldController
-      * AIMandatoryComponents
-        * HitReactionComponent
+      * <details open><summary>AIMandatoryComponents</summary>
+        * <details open><summary>HitReactionComponent</summary>
           * HitReactionMechComponent
         * StatusEffectManagerComponent
       * AIPhaseStateEventHandlerComponent
@@ -319,7 +319,7 @@ If you decide to document a component, make a new entry on the main page, follow
     * FastTravelComponent
     * FollowSlotsComponent
     * FxResourceMapperComponent
-    * gameAINetStateComponent
+    * <details open><summary>gameAINetStateComponent</summary>
       * NPCStatesComponent
     * GameplayRoleComponent
     * InputDeviceController
@@ -349,7 +349,7 @@ If you decide to document a component, make a new entry on the main page, follow
     * VendorComponent
     * WeaponPositionComponent
     * WorkspotMapperComponent
-  * gameSquadMemberComponent
+  * <details open><summary>gameSquadMemberComponent</summary>
     * SquadMemberBaseComponent
   * gameStatsComponent
   * gameStatusEffectComponent
@@ -360,7 +360,7 @@ If you decide to document a component, make a new entry on the main page, follow
   * vehicleGarageComponent
   * vehiclePersistentData
 * gameComponentsStateSaveComponent
-* gameCrowdMemberComponent
+* <details open><summary>gameCrowdMemberComponent</summary>
   * CrowdMemberBaseComponent
 * [gameDismembermentComponent](./#gamedismembermentcomponent)
 * gameDoorComponent
@@ -369,17 +369,17 @@ If you decide to document a component, make a new entry on the main page, follow
 * gameHumanoidBody
 * gameImpostorComponent
 * gameinteractionsReactionComponent
-* gameITriggerDestructionComponent
+* <details open><summary>gameITriggerDestructionComponent</summary>
   * gameBodyTriggerDestructionComponent
   * gamePuppetTriggerDestructionComponent
 * gameLadderComponent
-* gamemountingMountableComponent
+* <details open><summary>gamemountingMountableComponent</summary>
   * gameMovingPlatformMountableComponent
   * gameObjectMountableComponent
   * gamePuppetMountableComponent
   * vehicleVehicleMountableComponent
 * gameMultiEcsManagerComponent
-* gameMuppetComponent
+* <details open><summary>gameMuppetComponent</summary>
   * gameMuppetBlackboardsComponent
   * gameMuppetInputStates
   * gameMuppetInventory
@@ -396,7 +396,7 @@ If you decide to document a component, make a new entry on the main page, follow
 * gamePhotoModeBackgroundViewComponent
 * gamePhysicalDestructionListenerComponent
 * gamePlayerCommandConsumerComponent
-* gamePlayerControlledComponent
+* <details open><summary>gamePlayerControlledComponent</summary>
   * gamestateMachineComponent
 * gamePlayerMappinComponent
 * gamePlayerTierComponent
@@ -407,20 +407,20 @@ If you decide to document a component, make a new entry on the main page, follow
 * gameTargetingLocalizedEffectComponent
 * gameTargetShootComponent
 * gameTPPRepresentationComponent
-* gameuiICharacterCustomizationComponent
+* <details open><summary>gameuiICharacterCustomizationComponent</summary>
   * gameuiCharacterCustomizationBrokenNoseController
   * gameuiCharacterCustomizationPersonalLinkController
-  * gameuiICharacterCustomizationBodyController
+  * <details open><summary>gameuiICharacterCustomizationBodyController</summary>
     * gameuiCharacterCustomizationBodyController
-  * gameuiICharacterCustomizationBodyPartsController
-    * gameuiCharacterCustomizationBodyPartsController
+  * <details open><summary>gameuiICharacterCustomizationBodyPartsController</summary>
+    * <details open><summary>gameuiCharacterCustomizationBodyPartsController</summary>
       * gameuiCharacterCustomizationFeetController
       * gameuiCharacterCustomizationGenitalsController
       * gameuiCharacterCustomizationHairstyleController
 * gameVisionActivatorComponent
 * gameWeakspotComponent
-* moveIMotionPlannerComponent
-  * moveMotionPlannerComponent
+* <details open><summary>moveIMotionPlannerComponent</summary>
+  * <details open><summary>moveMotionPlannerComponent</summary>
     * moveDroneMotionPlannerComponent
 * movePoliciesComponent
 * worldTrafficLightListenerComponent
