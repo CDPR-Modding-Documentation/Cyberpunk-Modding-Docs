@@ -9,7 +9,7 @@ This page contains information on .mesh files and their properties.
 * If you want to export or import mesh files, see [here](../3d-modelling/exporting-and-importing-meshes/).
 * If you want to learn how to edit a mesh's appearance, check [this guide.](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)
 * If you want to mess with a .mesh's materials, see [here](../../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md).
-* A mesh file's shadow is defined in via .[component](components.md#entgarmentskinnedmeshcomponent)
+* A mesh file's shadow is defined in via .[component](components/#entgarmentskinnedmeshcomponent)
 
 {% hint style="info" %}
 In the context of Cyberpunk, a mesh is the file that defines the topology[^1] and the materials[^2] of an object in the game world.

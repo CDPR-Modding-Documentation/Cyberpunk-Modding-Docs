@@ -1,11 +1,17 @@
 ---
-description: All the dirty detes on components as we discover them. WIP.
+description: This page contains documentation for the most common component types. WIP.
 ---
 
 # Components
 
+
+
 {% hint style="info" %}
-In general, your components should have a **globally unique name** so you can target them via [partsOverrides](../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides). Feel free to ignore this, almost everyone else does as well, but it is the reason behind the convoluted names of CDPR's components.
+[Comprehensive Components List](comprehensive-components-list.md) organized by hierarchy. Use for researching and documenting components.
+{% endhint %}
+
+{% hint style="info" %}
+In general, your components should have a **globally unique name** so you can target them via [partsOverrides](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides). Feel free to ignore this, almost everyone else does as well, but it is the reason behind the convoluted names of CDPR's components.
 {% endhint %}
 
 ## Equipment/Hair
@@ -14,22 +20,22 @@ In general, your components should have a **globally unique name** so you can ta
 
 Can be used interchangeably with `entSkinnedMeshComponent`.
 
-* Loads a mesh from a [depotPath](components.md#depotpath).&#x20;
-* Supports [chunkMask](components.md#chunkmask).
+* Loads a mesh from a [depotPath](./#depotpath).&#x20;
+* Supports [chunkMask](./#chunkmask).
 * meshAppearance will select an appearance by name from the mesh's defined [appearances](broken-reference).
 * Lets you enable and disable **shadows** with the properties `castShadows` and `castLocalShadows`
 
 {% hint style="info" %}
-This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](components.md#entskinnedclothcomponent).
+This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](./#entskinnedclothcomponent).
 {% endhint %}
 
 ### entSkinnedMeshComponent
 
-\=> [entGarmentSkinnedMeshComponent](components.md#entgarmentskinnedmeshcomponent)
+\=> [entGarmentSkinnedMeshComponent](./#entgarmentskinnedmeshcomponent)
 
 ### entSkinnedClothComponent
 
-Like [ent(Garment)SkinnedMeshComponent](components.md#entskinnedmeshcomponent), but with a `physicalMesh` and physics. Usually comes together with an [entAnimatedComponent](components.md#entanimatedcomponent) (they're usually named `collar` for clothes and `dangle` for hair and accessories).
+Like [ent(Garment)SkinnedMeshComponent](./#entskinnedmeshcomponent), but with a `physicalMesh` and physics. Usually comes together with an [entAnimatedComponent](./#entanimatedcomponent) (they're usually named `collar` for clothes and `dangle` for hair and accessories).
 
 ### entAnimatedComponent
 
@@ -63,7 +69,7 @@ A list of component properties with explanations.
 
 Only used for [meshes](broken-reference): Determines which parts of a mesh will be displayed or hidden. Numeric indices correspond with the submeshes by index.
 
-<figure><img src="../../.gitbook/assets/chunkmask.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/chunkmask.png" alt=""><figcaption></figcaption></figure>
 
 #### depotPath
 

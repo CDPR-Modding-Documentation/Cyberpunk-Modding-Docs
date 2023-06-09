@@ -42,8 +42,8 @@ From ArchiveXL item additions, this kind of file is usually called a **root enti
 
 Not a file type but an internal data structure and part of [.ent](./#.ent-entity) or [.app](./#.app-appearance-definition) files. Components are how the game adds anything to the in-game world, from pag3d data over player interaction prompts to explosion sounds.
 
-{% content-ref url="components.md" %}
-[components.md](components.md)
+{% content-ref url="components/" %}
+[components](components/)
 {% endcontent-ref %}
 
 ## .inkatlas (Texture mapping)

@@ -16,7 +16,7 @@ As of April 2023, this does **not** work for NPC appearances or custom props.
 
 ## Root entity
 
-The **entry point** for the game to display an [NPC](../../../modding-guides/npcs/appearances-change-the-looks.md#the-.ent-file) or [prop](../../../modding-guides/everything-else/custom-props.md). This kind of entity usually doesn't have [components](../components.md) by itself, but only points towards the [.app file](./#.app-appearance-definition) where they are defined.&#x20;
+The **entry point** for the game to display an [NPC](../../../modding-guides/npcs/appearances-change-the-looks.md#the-.ent-file) or [prop](../../../modding-guides/everything-else/custom-props.md). This kind of entity usually doesn't have [components](../components/) by itself, but only points towards the [.app file](./#.app-appearance-definition) where they are defined.&#x20;
 
 From ArchiveXL item additions, this kind of file is usually called a **root entity**.
 
