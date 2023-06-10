@@ -18,6 +18,7 @@ This guide will walk you through **adding your own items** to Cyberpunk 2077, wh
 * [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) 1.1.4
 * [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) 1.4.3
 * [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) 1.12.0
+* [Cyber Engine Tweaks ](https://www.nexusmods.com/cyberpunk2077/mods/107)(optional, for spawning items)
 
 **Assumed skill level:** \
 You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible.
@@ -55,35 +56,47 @@ Understanding is **not required** as long as you follow the guide to the letter.
 
 ![](../../../.gitbook/assets/archive\_xl\_adding\_items\_file\_structure.png)
 
-{% hint style="success" %}
-The example files are set up to load a shirt with two different appearances, which you can spawn directly:&#x20;
-
-`Game.AddToInventory("Items.my_custom_shirt_redwhite")`
-
-`Game.AddToInventory("Items.my_custom_shirt_redblack")`
-{% endhint %}
-
 ### Start the game
+
+{% hint style="info" %}
+**Wait, am I not supposed to do anything first??**
+
+Actually, no! This is how you later debug your custom items — by packing your project and checking that everything works in-game. So we're starting with a dry run here.
+{% endhint %}
 
 Press "Install and Launch" in WolvenKit. This will do the following things:
 
 1. Copy all supported file entries from `source` to their destination under `packed`, overwriting older files (but not removing files that you renamed!)
 2. Copy all files under `packed` into your game directory, again overwriting older files
 3. Launch the game.
+4.  Spawn one of the tutorial items via Cyber Engine Tweaks: \
+    `Game.AddToInventory("Items.my_custom_shirt_redwhite")`
 
-You should now see your item. If not, consult the section [**Troubleshooting**](./#troubleshooting) below, or retrace your steps and make sure that everything works before proceeding to the step below.
+    `Game.AddToInventory("Items.my_custom_shirt_redblack")`
+
+You should now see ~~your~~ the tutorial item. If not, consult the section [**Troubleshooting**](./#troubleshooting) below, or retrace your steps and make sure that everything works before proceeding to the step below.
 
 ## Great! You added items! Now what?
 
-You can now
+You've successfully pushed a button and everything worked, but so far, you haven't done anything. If you're okay with this, then you're done now.&#x20;
 
+{% hint style="success" %}
+To start changing the existing files, check the [Item Structure Explained](archive-xl-item-structure-explained.md) page for "Making Changes" headers.
+{% endhint %}
+
+Otherwise, you will want to complete one or more of the following steps:
+
+* add [something other](different-equipment-slots.md) than a torso item
+* Add more [appearances](./#adding-an-appearance-example-blackblue)&#x20;
+* Add [variants](./#adding-a-male-instance) for different genders or different camera modes
 * customize your [preview images](adding-items-preview-images.md)
 * [Add an atelier store](adding-items-atelier-integration.md)
-*
 
 ## Diagram
 
-This is how everything connects. Looks pretty scary, but you can find a step by step breakdown on the [corresponding wiki page](archive-xl-item-structure-explained.md).
+This is how everything connects. Looks pretty scary, but is actually simple: whenever you want to rename or repath[^1] something, make sure that you catch **both ends of the arrow**.
+
+You can find a breakdown-by-entry on the [corresponding wiki page](archive-xl-item-structure-explained.md).
 
 <figure><img src="https://i.imgur.com/i1QzZMP.png" alt=""><figcaption><p>Don't panic, we've got this.</p></figcaption></figure>
 
@@ -113,7 +126,7 @@ To add an appearance, you will have to touch the following files:
    4. Connecting those things
 
 {% hint style="info" %}
-For a diagram of how everything connects, go [here](archive-xl-item-structure-explained.md#the-final-result).
+For a diagram of how everything connects, go [here](archive-xl-item-structure-explained.md#the-final-result). To follow the&#x20;
 {% endhint %}
 
 ### Step 1: Register it in your \*.yaml
@@ -158,52 +171,11 @@ Items.my_custom_shirt_blueblack:
 
 ### Step 2: Add it to the rootentity.ent
 
-Expand the list `appearances` and **duplicate** your already working entry.
-
-Change the following fields:\
-`appearanceName` => everything before the & must match `appearanceName` in your \*.yaml\
-`name` => must match the name you're going to put in your `app.app`
-
-**Example**:
-
-old (copy):
-
-```
-	appearanceName: black_red_appearance_name
-	name: appearance_root_entity_black_red
-```
-
-new:
-
-```
-	appearanceName: black_blue_appearance_name
-	name: appearance_root_entity_black_blue
-```
-
-{% hint style="info" %}
-You do not need to change the `appearanceResource`.
-{% endhint %}
+Find the step-by-step guide in the [root entity section](archive-xl-item-structure-explained.md#root-entity-making-changes) on the "[Item structure explained](archive-xl-item-structure-explained.md)" page
 
 ### Step 3: Add it to my\_custom\_shirt.app
 
-1. Open the .app file and expand the list `appearances`.
-2. Duplicate an item and select the new one.
-3. Change its name to the one you just defined in the .yaml (`black_blue_appearance_name`)
-4. In the new appearance, find the array `partsOverrides` and expand it.
-5. Select the item inside.
-6. Find and expand the Array `appearanceAppearancePartOverrides` and expand it.
-7. Select the first item.
-8. Open the array `componentsOverride` and select the first item.
-9. Change the value of `meshAppearance` to the name of your new appearance in the mesh:
-
-```
-componentName: t1_tutorial_custom_shirt_4711   << no need to change this  
-mesh_appearance: mesh_black_blue                << corresponds to meshMeshAppearance.name in my_mesh.mesh  
-```
-
-{% hint style="info" %}
-You can leave `partsValues` alone - this just points at the file that loads the mesh, and you've already set it up above when setting up the file.
-{% endhint %}
+Find the step-by-step guide in the [appearance section](archive-xl-item-structure-explained.md#appearance-making-changes) on the "[Item structure explained](archive-xl-item-structure-explained.md)" page
 
 ### Step 4: Add it to the .mesh
 
@@ -213,32 +185,11 @@ This tutorial assumes you already know how to [recolour an item](../editing-exis
 2. edit the `mlsetup.json` with the [MLSetupBuilder](https://github.com/Neurolinked/MlsetupBuilder)
 3. Import it back
 
-Now we're adding the new appearances:
-
-1. Find the array `appearances` and open it.
-   1. Duplicate any `meshMeshAppearance`.
-   2. Change the name to the one you've defined in the `appearance.app` above (in this case: `mesh_black_blue`):
-   3. Select the array `chunkMaterials` and change the entries in the right-hand panel to the name of your new material (e.g. `black_blue`)
-2. Find the array `materials` and open it.
-   1. Duplicate the last entry. (Yes, use the last one, please, it's important for step 3).
-   2. Select the new last entry
-   3.  Set the following values:
-
-       ```
-       name:  mesh_black_blue           <<< as defined in step 1 and used by meshMeshAppearance in appearances[]  
-       index: <index of item in array>  
-       ```
-
-       If you duplicated the last material, you can just increase it by one.
-3. Find the array `localMaterialBuffer` and open it
-   1. Duplicate any entry with an mlsetup (You will see an entry `MultilayerSetup` under `values`)
-   2. Drag it to the last position of the array (that's important, because the materials entries match by numeric index)
-   3. Select the new item, open `values`, and select `MultilayerSetup`.
-   4. Set `baseMaterial/DepotPath` to the `.mlsetup` file that you want.,
+Find the step-by-step guide in the [mesh file section](archive-xl-item-structure-explained.md#mesh-making-changes) on the "[Item structure explained](archive-xl-item-structure-explained.md)" page
 
 ### Test it
 
-Now, log into the game and spawn the item variant. The name is in the yaml file, in this case
+Now, log into the game and spawn the item variant. The name is the header you defined in the yaml file, in this case
 
 ```
 Game.AddToInventory('Items.my_custom_shirt_blueblack')
@@ -368,6 +319,8 @@ Game.AddToInventory("Items.my_custom_shirt_redwhite")
 {% hint style="danger" %}
 Consider reviewing the guide to ensure that all steps have been followed correctly and that the values have been set appropriately. Ensure that the mesh is compatible with the male variant of V. If errors persist, review the [<mark style="color:yellow;">troubleshooting section</mark>](./#troubleshooting) for further assistance.
 {% endhint %}
+
+##
 
 ## Troubleshooting
 
@@ -528,3 +481,5 @@ By right-clicking on a tab title, you can move it to a new document group for ea
 
 \
 Good luck, soldier.
+
+[^1]: move it to a different location than the one it's currently in

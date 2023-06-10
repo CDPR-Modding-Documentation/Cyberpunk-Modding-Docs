@@ -1,4 +1,4 @@
-# Custom poses for spawned NPCs
+# Archived: Custom poses for spawned NPCs
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -25,7 +25,7 @@ What you’ll need :
 
 * The WolvenKIT console (CP77Tools)
 
-![](<../../.gitbook/assets/2 (2)>)
+![](<../../.gitbook/assets/2 (1) (1)>)
 
 I’ll assume you already know some basic modding\
 (extracting the files with the console or WKit etc)

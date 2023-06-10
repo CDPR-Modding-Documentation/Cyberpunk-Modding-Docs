@@ -98,6 +98,7 @@
   * [Influencing other items](modding-guides/items-equipment/influencing-other-items.md)
   * [Adding new items](modding-guides/items-equipment/adding-new-items/README.md)
     * [Adding new items: files from scratch](modding-guides/items-equipment/adding-new-items/adding-new-items-files-from-scratch.md)
+    * [Different equipment slots](modding-guides/items-equipment/adding-new-items/different-equipment-slots.md)
     * [Archive XL: Item structure explained](modding-guides/items-equipment/adding-new-items/archive-xl-item-structure-explained.md)
     * [Adding items: Preview images](modding-guides/items-equipment/adding-new-items/adding-items-preview-images.md)
     * [Adding items: Atelier integration](modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md)
