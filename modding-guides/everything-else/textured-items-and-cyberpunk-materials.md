@@ -21,6 +21,8 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 
 {% hint style="success" %}
 If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
+
+For a guide about changing materials, check [here.](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)&#x20;
 {% endhint %}
 
 {% hint style="info" %}
@@ -379,7 +381,9 @@ You can name your materials whatever you like, as long as you stick to the follo
 MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](broken-reference) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../modding-know-how/materials/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
 
 {% hint style="success" %}
-Now, we [adjust the materials](textured-items-and-cyberpunk-materials.md#fixing-the-materials).
+Now, we adjust the materials — we'll just change a few properties to show you how it works, and then you can go play.&#x20;
+
+For another guide on how to edit materials in detail, check [here.](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)&#x20;
 {% endhint %}
 
 ### Setting up the materials
@@ -387,7 +391,7 @@ Now, we [adjust the materials](textured-items-and-cyberpunk-materials.md#fixing-
 Find the array `localMaterialBuffer/materials` and open it. It contains two materials. Wolvenkit will display the names corresponding to the [material entries](textured-items-and-cyberpunk-materials.md#material-entries) so you can see which is which.
 
 {% hint style="info" %}
-For an explanation of material parameters, see [this page](../../modding-know-how/materials/).
+For an explanation of material parameters, see [this page](../../modding-know-how/materials/).&#x20;
 {% endhint %}
 
 The first one, `mat_textured`, is the one that we will use for the seams. If you imported your textures by overwriting the original export, you shouldn't need to do anything here.&#x20;
