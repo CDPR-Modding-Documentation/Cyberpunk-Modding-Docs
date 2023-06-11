@@ -2,16 +2,14 @@
 description: Hierarchy of WolvenKit.RED4.Types.entIComponent
 ---
 
-# Comprehensive components list
-
-
+# Component hierarchy list
 
 {% hint style="info" %}
 Full list of components, organized by hierarchy, useful for researching and documenting new components.
 {% endhint %}
 
 {% hint style="info" %}
-If you decide to document a component, make a new entry on the main page, followed by the discovered behavior and usage and link back to that in this list.
+If you decide to document a component, make a new expandable entry on on the [Documented Components](every-documented-component.md) page, followed by the discovered behavior and usage and link back to that in this list.
 {% endhint %}
 
 * AIObjectSelectionComponent
@@ -42,10 +40,10 @@ If you decide to document a component, make a new entry on the main page, follow
       * vehicleVehicleProxyBlendCamera
     * gamePhotoModeBackgroundCameraComponent
     * gameWorldSpaceBlendCamera
-  * [entColliderComponent](./#entcollidercomponent)
+  * [entColliderComponent](every-documented-component.md#entcollidercomponent)
   * entDynamicActorRepellingComponent
   * entISkinableComponent
-    * [entAnimatedComponent](./#entanimatedcomponent)
+    * [entAnimatedComponent](every-documented-component.md#entanimatedcomponent)
     * entCorpseComponent
     * entInstancedAnimationComponent
   * entIVisualComponent
@@ -58,10 +56,10 @@ If you decide to document a component, make a new entry on the main page, follow
     * entFogVolumeComponent
     * entISkinTargetComponent
       * entMorphTargetSkinnedMeshComponent
-      * [entSkinnedClothComponent](./#entskinnedclothcomponent)
-      * [entSkinnedMeshComponent](./#entskinnedmeshcomponent)
+      * [entSkinnedClothComponent](every-documented-component.md#entskinnedclothcomponent)
+      * [entSkinnedMeshComponent](every-documented-component.md#entskinnedmeshcomponent)
         * entCharacterCustomizationSkinnedMeshComponent
-        * [entGarmentSkinnedMeshComponent](./#entgarmentskinnedmeshcomponent)
+        * [entGarmentSkinnedMeshComponent](every-documented-component.md#entgarmentskinnedmeshcomponent)
         * entPhysicalSkinnedMeshComponent
     * entLightBlockingComponent
     * entLightChannelComponent
@@ -109,7 +107,7 @@ If you decide to document a component, make a new entry on the main page, follow
   * gameinfluenceComponent
   * gameinfluenceHeatAgentComponent
   * gameinfluenceObstacleComponent
-  * [gameinteractionsComponent](./#gameinteractioncomponent)
+  * [gameinteractionsComponent](every-documented-component.md#gameinteractionscomponent)
   * gamemappinsMappinComponent
   * gameMovingPlatform
   * gameNavmeshDetector
@@ -118,7 +116,7 @@ If you decide to document a component, make a new entry on the main page, follow
   * gameprojectileSpawnComponent
   * gameStaticAreaShapeComponent
     * gameStaticTriggerAreaComponent
-  * [gameTargetingComponent](./#gametargetingcomponent)
+  * [gameTargetingComponent](every-documented-component.md#gametargetingcomponent)
   * gameTransformAnimatorComponent
   * mpInteractionActivatorComponent
   * senseComponent
@@ -288,7 +286,7 @@ If you decide to document a component, make a new entry on the main page, follow
   * gameEntityStubComponent
   * gameInventory
   * gameMasterDeviceComponent
-  * [gameScanningComponent](./#gamescanningcomponent)
+  * [gameScanningComponent](every-documented-component.md#gamescanningcomponent)
   * gameScriptableComponent
     * AdamSmasherComponent
     * AIRelatedComponents
@@ -362,7 +360,7 @@ If you decide to document a component, make a new entry on the main page, follow
 * gameComponentsStateSaveComponent
 * gameCrowdMemberComponent
   * CrowdMemberBaseComponent
-* [gameDismembermentComponent](./#gamedismembermentcomponent)
+* [gameDismembermentComponent](every-documented-component.md#gamedismembermentcomponent)
 * gameDoorComponent
 * gameEthnicityComponent
 * gameFootstepComponent
