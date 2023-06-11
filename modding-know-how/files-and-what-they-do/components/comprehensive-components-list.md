@@ -2,14 +2,14 @@
 description: Hierarchy of WolvenKit.RED4.Types.entIComponent
 ---
 
-# Component hierarchy list
+# Comprehensive Component Hierarchy List
 
 {% hint style="info" %}
 Full list of components, organized by hierarchy, useful for researching and documenting new components.
 {% endhint %}
 
 {% hint style="info" %}
-If you decide to document a component, make a new expandable entry on on the [Documented Components](every-documented-component.md) page, followed by the discovered behavior and usage and link back to that in this list.
+If you decide to document a component, make a new expandable entry on on the [Documented Components](documented-components.md) page, followed by the discovered behavior and usage and link back to that in this list.
 {% endhint %}
 
 * AIObjectSelectionComponent
@@ -40,10 +40,10 @@ If you decide to document a component, make a new expandable entry on on the [Do
       * vehicleVehicleProxyBlendCamera
     * gamePhotoModeBackgroundCameraComponent
     * gameWorldSpaceBlendCamera
-  * [entColliderComponent](every-documented-component.md#entcollidercomponent)
+  * [entColliderComponent](documented-components.md#entcollidercomponent)
   * entDynamicActorRepellingComponent
   * entISkinableComponent
-    * [entAnimatedComponent](every-documented-component.md#entanimatedcomponent)
+    * [entAnimatedComponent](documented-components.md#entanimatedcomponent)
     * entCorpseComponent
     * entInstancedAnimationComponent
   * entIVisualComponent
@@ -56,10 +56,10 @@ If you decide to document a component, make a new expandable entry on on the [Do
     * entFogVolumeComponent
     * entISkinTargetComponent
       * entMorphTargetSkinnedMeshComponent
-      * [entSkinnedClothComponent](every-documented-component.md#entskinnedclothcomponent)
-      * [entSkinnedMeshComponent](every-documented-component.md#entskinnedmeshcomponent)
+      * [entSkinnedClothComponent](documented-components.md#entskinnedclothcomponent)
+      * [entSkinnedMeshComponent](documented-components.md#entskinnedmeshcomponent)
         * entCharacterCustomizationSkinnedMeshComponent
-        * [entGarmentSkinnedMeshComponent](every-documented-component.md#entgarmentskinnedmeshcomponent)
+        * [entGarmentSkinnedMeshComponent](documented-components.md#entgarmentskinnedmeshcomponent)
         * entPhysicalSkinnedMeshComponent
     * entLightBlockingComponent
     * entLightChannelComponent
@@ -107,7 +107,7 @@ If you decide to document a component, make a new expandable entry on on the [Do
   * gameinfluenceComponent
   * gameinfluenceHeatAgentComponent
   * gameinfluenceObstacleComponent
-  * [gameinteractionsComponent](every-documented-component.md#gameinteractionscomponent)
+  * [gameinteractionsComponent](documented-components.md#gameinteractionscomponent)
   * gamemappinsMappinComponent
   * gameMovingPlatform
   * gameNavmeshDetector
@@ -116,7 +116,7 @@ If you decide to document a component, make a new expandable entry on on the [Do
   * gameprojectileSpawnComponent
   * gameStaticAreaShapeComponent
     * gameStaticTriggerAreaComponent
-  * [gameTargetingComponent](every-documented-component.md#gametargetingcomponent)
+  * [gameTargetingComponent](documented-components.md#gametargetingcomponent)
   * gameTransformAnimatorComponent
   * mpInteractionActivatorComponent
   * senseComponent
@@ -286,7 +286,7 @@ If you decide to document a component, make a new expandable entry on on the [Do
   * gameEntityStubComponent
   * gameInventory
   * gameMasterDeviceComponent
-  * [gameScanningComponent](every-documented-component.md#gamescanningcomponent)
+  * [gameScanningComponent](documented-components.md#gamescanningcomponent)
   * gameScriptableComponent
     * AdamSmasherComponent
     * AIRelatedComponents
@@ -360,7 +360,7 @@ If you decide to document a component, make a new expandable entry on on the [Do
 * gameComponentsStateSaveComponent
 * gameCrowdMemberComponent
   * CrowdMemberBaseComponent
-* [gameDismembermentComponent](every-documented-component.md#gamedismembermentcomponent)
+* [gameDismembermentComponent](documented-components.md#gamedismembermentcomponent)
 * gameDoorComponent
 * gameEthnicityComponent
 * gameFootstepComponent

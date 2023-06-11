@@ -4,64 +4,24 @@ description: This page contains documentation for the most common component type
 
 # Components
 
-
+{% content-ref url="documented-components.md" %}
+[documented-components.md](documented-components.md)
+{% endcontent-ref %}
 
 {% hint style="info" %}
-[Comprehensive Components List](comprehensive-components-list.md) organized by hierarchy. Use for researching and documenting components.
+See the [Comprehensive Component Hierarchy List](comprehensive-components-list.md) for all possible components used in the game, organized by hierachy. Use for researching and documenting components.
 {% endhint %}
 
-{% hint style="info" %}
+Components are not a file type but an internal data structure and part of [.ent](./#.ent-entity) or [.app](./#.app-appearance-definition) files.&#x20;
+
+Components are how the game adds anything to the in-game world, from pag3d data over player interaction prompts to explosion sounds.\
+Entities and Appearances use **components** in order to slim down what data each game object has to carry, adding or removing them as needed.
+
+{% hint style="warning" %}
 In general, your components should have a **globally unique name** so you can target them via [partsOverrides](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides). Feel free to ignore this, almost everyone else does as well, but it is the reason behind the convoluted names of CDPR's components.
 {% endhint %}
 
-## Equipment/Hair
-
-### entGarmentSkinnedMeshComponent
-
-Can be used interchangeably with `entSkinnedMeshComponent`.
-
-* Loads a mesh from a [depotPath](./#depotpath).&#x20;
-* Supports [chunkMask](./#chunkmask).
-* meshAppearance will select an appearance by name from the mesh's defined [appearances](broken-reference).
-* Lets you enable and disable **shadows** with the properties `castShadows` and `castLocalShadows`
-
-{% hint style="info" %}
-This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](./#entskinnedclothcomponent).
-{% endhint %}
-
-### entSkinnedMeshComponent
-
-\=> [entGarmentSkinnedMeshComponent](./#entgarmentskinnedmeshcomponent)
-
-### entSkinnedClothComponent
-
-Like [ent(Garment)SkinnedMeshComponent](./#entskinnedmeshcomponent), but with a `physicalMesh` and physics. Usually comes together with an [entAnimatedComponent](./#entanimatedcomponent) (they're usually named `collar` for clothes and `dangle` for hair and accessories).
-
-### entAnimatedComponent
-
-Adds physics to garments and hair meshes.
-
-## NPCs
-
-### gameDismembermentComponent
-
-Defines dismemberment rules for NPCs. (TBD: ???)
-
-## Generic
-
-### gameInteractionComponent
-
-Adds interaction prompt to entity. (Shouldn't work without gameTargetingComponent, but this hasn't been double-checked.)
-
-### entColliderComponent
-
-### gameTargetingComponent
-
-Allows targeting via CET.&#x20;
-
-### gameScanningComponent
-
-## Properties
+## Component Properties
 
 A list of component properties with explanations.
 

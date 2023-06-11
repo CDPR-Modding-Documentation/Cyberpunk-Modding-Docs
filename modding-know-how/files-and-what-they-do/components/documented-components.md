@@ -1,4 +1,4 @@
-# Every Documented Component
+# Documented Components
 
 ## Equipment/Hair
 
@@ -10,12 +10,12 @@
 
 Can be used interchangeably with `entSkinnedMeshComponent`.
 
-* Loads a mesh from a [depotPath](every-documented-component.md#depotpath).&#x20;
-* Supports [chunkMask](every-documented-component.md#chunkmask).
+* Loads a mesh from a [depotPath](documented-components.md#depotpath).&#x20;
+* Supports [chunkMask](documented-components.md#chunkmask).
 * meshAppearance will select an appearance by name from the mesh's defined [appearances](broken-reference).
 * Lets you enable and disable **shadows** with the properties `castShadows` and `castLocalShadows`
 
-This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](every-documented-component.md#entskinnedclothcomponent).
+This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](documented-components.md#entskinnedclothcomponent).
 
 </details>
 
@@ -31,7 +31,7 @@ See below at [entGarmentSkinnedMeshComponent](./#entgarmentskinnedmeshcomponent)
 
 <summary>entSkinnedClothComponent</summary>
 
-Like [ent(Garment)SkinnedMeshComponent](every-documented-component.md#entskinnedmeshcomponent), but with a `physicalMesh` and physics. Usually comes together with an [entAnimatedComponent](every-documented-component.md#entanimatedcomponent) (they're usually named `collar` for clothes and `dangle` for hair and accessories).
+Like [ent(Garment)SkinnedMeshComponent](documented-components.md#entskinnedmeshcomponent), but with a `physicalMesh` and physics. Usually comes together with an [entAnimatedComponent](documented-components.md#entanimatedcomponent) (they're usually named `collar` for clothes and `dangle` for hair and accessories).
 
 </details>
 
