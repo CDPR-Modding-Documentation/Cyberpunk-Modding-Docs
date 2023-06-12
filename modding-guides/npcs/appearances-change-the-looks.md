@@ -6,6 +6,8 @@ description: Changing an NPC's default appearances (and adding more via AMM)
 
 {% hint style="info" %}
 If you want to create a custom NPC from scratch, look [here](../community-guides/external-npvs-v-as-npc-custom-npcs.md).
+
+You can find another guide about this linked on the [Community Guides](../community-guides/) page ([direct link)](https://docs.google.com/document/d/1uwfc1IGSuNUAkVeR7esI-7P\_gnzSc8pw0Pq24JEnI2I/edit)
 {% endhint %}
 
 **Created by @manavortex**\

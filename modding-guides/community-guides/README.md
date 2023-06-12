@@ -6,17 +6,26 @@ description: This page holds a list of community guides all over the internet.
 
 ## Modding guides
 
-| Legacy: [Introduction](https://docs.google.com/document/d/1pCd\_8ctcs\_ISczXkd29\_8NTJdX3PBjLvBbp3l6nMWXg/edit) (Google Docs, by **Halvkyrie**) | By now, this is outdated, but this document contains the first comprehensive introduction to CP2077 modding |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| [How to refit in Blender (video)](https://youtu.be/Vo-KrnzHmQI)                                                                                 | by BeautiDuwanger#1637                                                                                      |
-| [Custom hair colours](https://docs.google.com/document/d/1OYHJR1MvH0ambxWqTQTETkemY3Ko6Exknx2SaDz1Cd4/edit?usp=sharing)                         | Google Doc by Rosza#6193                                                                                    |
-| [Custom loading screens](https://pinkydude.tumblr.com/post/651342448609656832/tutorial-custom-loading-screens-a-step-by-step)                   | By PinkyDude on tumblr                                                                                      |
-| [Creating custom tattoos](https://www.nexusmods.com/cyberpunk2077/mods/1155/)                                                                   | Guide on Nexus                                                                                              |
-| [Unique eye textures](https://docs.google.com/document/d/1Qm9X1RmEIOzeBR7zuFrkEp1Lj7kof8Ztq6VPyeHwseo/edit?usp=sharing)                         | Guide by Halvkyrie#4000                                                                                     |
-|  [CDPR: Redmod Part 1](https://www.youtube.com/watch?v=Rcf65OvEJTo\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=1) (youtube)                 | What it is, what it does, how to use                                                                        |
-| [CDPR: Redmod Part 2 (youtube)](https://www.youtube.com/watch?v=aq\_4U5N-CP4\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=2)                 | How to edit scripts (Redscript comparison)                                                                  |
-| [CDPR: Redmod Part 3 (youtube)](https://www.youtube.com/watch?v=m5IL\_TRwTew\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=3)                 | How to install/replace animations                                                                           |
-| [Creating custom microblends](https://docs.google.com/document/d/1oRjXHE08oDnaKwvgEOKxl0gZGkBADgSn2azCRwUeQLs/view)                             | Google Doc, Photoshop or [Photopea](https://www.photopea.com/)                                              |
+| Legacy: [Introduction](https://docs.google.com/document/d/1pCd\_8ctcs\_ISczXkd29\_8NTJdX3PBjLvBbp3l6nMWXg/edit) (Google Docs, by **Halvkyrie**) | By now, this is outdated, but this document contains the first comprehensive introduction to CP2077 modding  |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| [How to refit in Blender (video)](https://youtu.be/Vo-KrnzHmQI)                                                                                 | by BeautiDuwanger#1637                                                                                       |
+| [Custom hair colours](https://docs.google.com/document/d/1OYHJR1MvH0ambxWqTQTETkemY3Ko6Exknx2SaDz1Cd4/edit?usp=sharing)                         | Google Doc by Rosza#6193                                                                                     |
+| [Custom loading screens](https://pinkydude.tumblr.com/post/651342448609656832/tutorial-custom-loading-screens-a-step-by-step)                   | By PinkyDude on tumblr                                                                                       |
+| [Creating custom tattoos](https://www.nexusmods.com/cyberpunk2077/mods/1155/)                                                                   | Guide on Nexus                                                                                               |
+| [Replacing vanilla tattoos](https://docs.google.com/document/d/18cTWSgzm0qlCnd0u4-FonRzS2hQXthgjNhjZil3wmAs/edit)                               | Google Doc link (who made this?)                                                                             |
+| [Unique eye textures](https://docs.google.com/document/d/1Qm9X1RmEIOzeBR7zuFrkEp1Lj7kof8Ztq6VPyeHwseo/edit?usp=sharing)                         | Guide by Halvkyrie#4000                                                                                      |
+|  [CDPR: Redmod Part 1](https://www.youtube.com/watch?v=Rcf65OvEJTo\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=1) (youtube)                 | What it is, what it does, how to use                                                                         |
+| [CDPR: Redmod Part 2 (youtube)](https://www.youtube.com/watch?v=aq\_4U5N-CP4\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=2)                 | How to edit scripts (Redscript comparison)                                                                   |
+| [CDPR: Redmod Part 3 (youtube)](https://www.youtube.com/watch?v=m5IL\_TRwTew\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=3)                 | How to install/replace animations                                                                            |
+| [Creating custom microblends](https://docs.google.com/document/d/1oRjXHE08oDnaKwvgEOKxl0gZGkBADgSn2azCRwUeQLs/view)                             | <p>Google Doc (who made this?)<br>Requires Photoshop or <a href="https://www.photopea.com/">Photopea</a></p> |
+| [Adding pride make-up to NPCs](https://docs.google.com/document/d/1P4x1447vbLYFb6r6HpTgrPvETMQ9wSeMfVz7\_04AGPU/edit)                           | Google Doc (who made this?)                                                                                  |
+
+## Clothing
+
+| [Adding decals to clothing meshes](https://docs.google.com/document/d/11P1Nt5VgDgpwGX0-uwYWjhvFxYmrlOHbEFrdQSRosk0/edit) | Google Doc link (who made this?) |
+| ------------------------------------------------------------------------------------------------------------------------ | -------------------------------- |
+| [Custom T-Shirt framework](https://drive.google.com/file/d/1qd1GG80ZEx2xCKLUGTXSCajGD7i94s7t/view)                       | Google Drive, by Halk            |
+| [Giving an NPC custom clothes](http://localhost:5000/s/-McniwB8YOK2HnJ7SYg\_/help/troubleshooting)                       | Google Doc (who made this?)      |
 
 ## Rigging and animations
 
@@ -28,6 +37,7 @@ description: This page holds a list of community guides all over the internet.
 | [Extracting Scenerid anims](https://docs.google.com/document/d/1AU8PwIW23mdu6nDXD9Hj7GMN13HdyRX4sqvp9PSuHs8/edit#heading=h.v1449r1mjrx9)                    | Tutorial by Deceptious & Zwei |
 | [Transferring Compressed/Normal Animations Between Containers](https://docs.google.com/document/d/196hSZvn0WZhkix8qUoArfBVNKcvKck56Rtf3ENemy\_o/edit)       | Tutorial by Deceptious & Zwei |
 | [Making custom poses and animations from scratch](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/)              | Tutorial by xbaebsae (Angy)   |
+| [Importing poses into the same container](https://docs.google.com/document/d/1e7NsVgWHH19mTNw60E3H3u7G3Rlw3dUVWzLUHGvBUwY/edit)                             | Google Doc (who made this?)   |
 
 ## AMM (Appearance Menu Mod)
 
