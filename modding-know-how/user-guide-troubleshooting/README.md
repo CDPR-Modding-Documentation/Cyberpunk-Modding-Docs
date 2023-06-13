@@ -45,6 +45,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
 * [Redscript Compilation Failed (Popup message)](./#redscript-compilation-failed)
 * [Photomode screenshots are borked](./#photomode-screenshots-are-blank)
 * [Press \[none\] to continue](./#press-none-to-continue)
+* You have audio issues
 * [You have trouble with CET (Cyber Engine Tweaks)](./#cet)
   * [You forgot your CET keybind](./#you-forgot-your-cet-keybind)
 * [XML Document parsed with errors](./#xml-document-parsed-with-errors)
@@ -195,7 +196,7 @@ There is such a thing as too many mods which are making the game crash. This num
 
 To fix this, you need to disable analysis in the settings:&#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Failed to initialize script data
 
@@ -354,6 +355,16 @@ Congratulations, you have found which folder causes the problem — you're more 
 Repeat this process until you've identified the mod that's crashing your game.
 
 {% embed url="https://youtu.be/c1BkM6NFfkI" %}
+
+## Audio problems
+
+If your CPU is too busy, the game will try to save resources by dropping audio, starting with dialogue audio. Disabling spatial audio from the main menu might help:
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### It's not connected to CPU load
+
+Missing footsteps had in the past been connected to a bug in Let [There Be Flight](./#let-there-be-flight), so it is worth debugging your script mods. However, if you're on the most recent version (check the github for previews), you might just have to [bisect](./#finding-the-broken-mod-bisecting) your mods at random.
 
 ## Mod(s) aren't loading/triggering
 

@@ -42,7 +42,7 @@ A base ID consists out of two parts. The first one (Vest\_17) determines the ite
 
 Head to WolvenKit and search for the first part of the BaseID:
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Search WolvenKit for the first part of the BaseID</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption><p>Search WolvenKit for the first part of the BaseID</p></figcaption></figure>
 
 You will find at least one **entity file** and an **appearance file**.&#x20;
 
