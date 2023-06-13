@@ -22,7 +22,7 @@ What you’ll need :\
 
 **🟨 WON’T WORK With AMM’s naked/shirtless custom appearances**
 
-![](<../../.gitbook/assets/2 (1) (2)>)
+![](<../../.gitbook/assets/2 (1)>)
 
 I’ll assume you already know some basic modding\
 (extracting the files with the console or WKit etc)

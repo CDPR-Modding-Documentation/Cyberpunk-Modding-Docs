@@ -32,11 +32,11 @@ Export your desired .anim file using wKit’s export tool and open one of xBaeBs
 
 Import the animation using the import plugin!
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (4).png" alt=""><figcaption></figcaption></figure>
 
 Select your freshly imported anim’s armature and go into the Dope Sheet’s Action Editor to select the animation you want to retarget.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 Go back to the Nonlinear Animation tab so you can check how long the animation is.
 
@@ -60,7 +60,7 @@ You can now hit Retarget Animation and the template’s model should now be corr
 
 Since you edited the Frame Range, you should be able to press play and see how the entire animation looks
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (4).png" alt=""><figcaption></figcaption></figure>
 
 and Voilà! You just retargeted an animation from WA to MA 🥳
 

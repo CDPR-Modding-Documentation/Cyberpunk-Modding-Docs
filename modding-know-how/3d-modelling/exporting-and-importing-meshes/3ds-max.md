@@ -21,7 +21,7 @@ description: 3ds Max Workflow for Cyberpunk 2077
 The plugin has some customization option if you open it in a text editor.\
 Recommended Settings are:
 
-![](<../../../.gitbook/assets/image (6) (1).png>)
+![](<../../../.gitbook/assets/image (6) (1) (1).png>)
 
 \
 \- Next place "CP77\_NOESIS\_CMD.ms" in "C:\Program Files\Autodesk\3ds Max 20XX\scripts"\

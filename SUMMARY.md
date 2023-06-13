@@ -7,8 +7,9 @@
 ## Help
 
 * [❔ Users: Modding Cyberpunk 2077](help/users-modding-cyberpunk-2077/README.md)
+  * [Getting Started](help/users-modding-cyberpunk-2077/getting-started/README.md)
+    * [Vortex Mod Manager](help/users-modding-cyberpunk-2077/getting-started/vortex-mod-manager.md)
   * [Users: Downgrading / Preventing auto-updates](help/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
-  * [Users: enabling REDmods](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/frameworks/redmod/usage#deploying-mods-and-starting-the-game)
   * [Requirements explained](help/users-modding-cyberpunk-2077/requirements-explained.md)
 * [🆘 Users: Troubleshooting](modding-know-how/user-guide-troubleshooting/README.md)
   * [Users: Troubleshooting after a game update](help/users-troubleshooting/users-troubleshooting-after-a-game-update.md)

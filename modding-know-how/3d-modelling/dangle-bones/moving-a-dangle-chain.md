@@ -43,7 +43,7 @@ Attached images show settings i used to export base\characters\garment\citizen\_
 
 <figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (44) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption><p>Isolated netwatch shirt dangle skeleton. The original dangle chain is selected. The spine column, and the duplicated and moved dangle chain are also visible.</p></figcaption></figure>
 

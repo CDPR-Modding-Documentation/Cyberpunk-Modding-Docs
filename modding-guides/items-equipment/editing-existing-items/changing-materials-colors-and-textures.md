@@ -131,7 +131,7 @@ Open up MlSetupBuilder and load your .mlsetup.json file.
 If you select WolvenKit's "Open in File Explorer" option, you can copy the path from the explorer's address bar and paste it into the MlSetupBuilder's address bar.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (2).png" alt=""><figcaption></figcaption></figure>
 
 If you want to see which layers correspond to which part of the mesh, you can load it from the library:
 

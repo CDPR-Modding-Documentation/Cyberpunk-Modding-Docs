@@ -196,7 +196,7 @@ There is such a thing as too many mods which are making the game crash. This num
 
 To fix this, you need to disable analysis in the settings:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption></figcaption></figure>
 
 ### Failed to initialize script data
 

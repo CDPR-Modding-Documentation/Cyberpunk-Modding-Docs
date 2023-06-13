@@ -5,7 +5,7 @@
 **Created by @Pinkydude**\
 **Published Summer 2021**
 
-![](<../../.gitbook/assets/0 (1) (1)>)
+![](<../../.gitbook/assets/0 (2)>)
 
 ![](<../../.gitbook/assets/1 (2)>)
 
