@@ -7,7 +7,7 @@ description: >-
 # Vortex Mod Manager
 
 {% hint style="danger" %}
-#### Windows 10 or higher is required to use Vortex mod manager. If you are not using Windows, see our [Manual Install](broken-reference) page.
+#### Windows 10 or higher is required to use Vortex mod manager. If you are not using Windows, see our Manual Install page.
 {% endhint %}
 
 Vortex is a multi-game mod manager developed for and by [NexusMods](https://www.nexusmods.com/), the website where most [Cyberpunk 2077 mods](https://www.nexusmods.com/cyberpunk2077) are hosted. Here you can download mods manually or with Vortex and keep track your download history.
@@ -40,7 +40,7 @@ If you run into issues with Vortex that aren't addressed in this guide, you can 
 If you can download it on your own, you can skip to the [Install](vortex-mod-manager.md#installation) or [Setup](vortex-mod-manager.md#setup) section of this guide.
 {% endhint %}
 
-1. Click [this link](https://www.nexusmods.com/site/mods/1), it will take you directoy to the download page
+1. Click [this link](https://www.nexusmods.com/site/mods/1), it will take you directly to the download page
 2. Select the "Manual Download" option on the first entry:
 
 <figure><img src="../../../.gitbook/assets/firefox_HMIJEbgEzE.png" alt=""><figcaption></figcaption></figure>
@@ -51,7 +51,7 @@ If you can download it on your own, you can skip to the [Install](vortex-mod-man
 4. Optional, depending on your browser: Select your download location for files that you don't want to keep
 5. Wait until the installer is downloaded
 6. Run the installer: either
-   * select the file from your download history (Ctrl+J for most browser)
+   * select the file from your download history (Ctrl+J for most browsers)
    * go to your download directory and double-clicking the file
 7. Proceed with the steps in the next section
 
@@ -78,7 +78,7 @@ If you are already logged in, proceed to the next section "[Adding Cyberpunk](vo
 1. If Vortex didn't open by itself, open it from the start menu.
 2. Log into Nexusmods by clicking on the red circle in the top right of your client
 
-<figure><img src="../../../.gitbook/assets/4 (1).png" alt=""><figcaption><p>The initial dashboard on launch</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption><p>The initial dashboard on launch</p></figcaption></figure>
 
 3. You will see either a browser window or an error message that Vortex couldn't open one – in this case, copy the URL in the box at the bottom and open the browser window yourself
 
@@ -144,12 +144,12 @@ In theory, you can configure Vortex so that you hit the download button on the w
 #### V2077 Settings
 
 {% hint style="warning" %}
-This setting controls the automatic redmod conversion. For an explanation of what that means, see [here](../#installing-and-activating-redmod).
+This setting controls the automatic REDmod conversion. For an explanation of what that means, see [here](../#installing-and-activating-redmod).
 {% endhint %}
 
 This only has one setting, but it's recommended to keep it toggled "on" unless otherwise directed specifically by install instructions on a mod.
 
-<figure><img src="../../../.gitbook/assets/Vortex_DiD3Y0Znnc.png" alt=""><figcaption><p>This option can also show up on the dashboard.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Vortex_DiD3Y0Znnc (1).png" alt=""><figcaption><p>This option can also show up on the dashboard.</p></figcaption></figure>
 
 #### Mods
 
@@ -181,7 +181,7 @@ Finally, we will return to our dashboard.&#x20;
 
 No matter what settings you chose in interface, you should still have a section labeled "Tools", where at this point you should at least see four things, the last of which will be disabled:
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
 
 It can be helpful here to toggle "Enable Toolbar" above it so that you can always see them wherever you are in Vortex.
 
@@ -244,7 +244,7 @@ Make sure to click save to keep your choices.
 Let's get a mod that'll change something. For this example, we've picked KS UV framework, which will change V's feet.
 
 {% hint style="info" %}
-Usually, you want to start at the description page to see the exact file that you need to download. For a detailed guide on the parts of a mod page and how to navigate Nexus, see our [Downloading Mods](broken-reference) section.&#x20;
+Usually, you want to start at the description page to see the exact file that you need to download. For a detailed guide on the parts of a mod page and how to navigate Nexus, see our Downloading Mods section.&#x20;
 {% endhint %}
 
 For now, you can simply go straight to the [Files](https://www.nexusmods.com/cyberpunk2077/mods/3783?tab=files) page of the KSUV mod.&#x20;
@@ -275,7 +275,7 @@ Let's install a mod without a mod manager download button and manage it in Vorte
 Mod authors sometimes disable mod manager integration for a variety of reasons. Usually, Vortex can handle these files just fine – if not, it will complain about it, and loudly so.
 {% endhint %}
 
-1. Click [this link](https://www.nexusmods.com/cyberpunk2077/mods/6072), which will take you straight to he files tab.&#x20;
+1. Click [this link](https://www.nexusmods.com/cyberpunk2077/mods/6072), which will take you straight to the files tab.&#x20;
 2. Select whichever one you like, like the "Arey", third option down.&#x20;
 3. Optional: Check what it looks like
    1. Click on the "images" tab (to the right of "files")
@@ -285,10 +285,10 @@ Mod authors sometimes disable mod manager integration for a variety of reasons. 
 <figure><img src="https://staticdelivery.nexusmods.com/mods/3333/images/6072/6072-1676040202-844716552.png" alt=""><figcaption><p>Arey hair by Wingdeer</p></figcaption></figure>
 
 4. Scroll down to the third option, `Arey Hair PHYSICS ENABLED`\
-   The file doesn't hav eany particular instruction.
+   The file doesn't have any particular instruction.
 5. Optional: view the file contents – they sometimes contain helpful information:
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>The naming convention tells us that it's a hair replacer from Wingdeer for the female body gender, changing hair 48, There's also a preview picture included.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>The naming convention tells us that it's a hair replacer from Wingdeer for the female body gender, changing hair 48, There's also a preview picture included.</p></figcaption></figure>
 
 6. Manually download the file – you know the drill by now.
 7. Return to the Vortex "mods" page. You have two ways to install the mod now:&#x20;
@@ -309,23 +309,7 @@ If your hair is two big buns--you did it! If it's just the normal single bun wit
 
 <figure><img src="../../../.gitbook/assets/Cyberpunk2077_pqEv0Cw6wV.jpg" alt=""><figcaption><p>Arey hair in place of hairstyle 48</p></figcaption></figure>
 
-Now you have experience in downloading both Vortex-managed downloads, and manual downloads, you can move on to the specifics of how to _use_ Vortex.
-
-
-
-### Installing, Enabling, and Deploying \[Section Under Construction]
-
-If you used the recommended settings, you should be able to download many mods without them installing. You can download as much as you want before installing, but for the stability of your game and most accurate diagnoses of any issues, you don't want to install more than a few at once at most. Ideally, you install one at a time, then load your game to verify there are no issues.
-
-To install a Vortex-downloaded mod, simply locate the blue button to the left of it. It will say "Never Installed" if you've never installed it, or "Uninstalled" if you've installed it before and uninstalled it. If you have recommended settings, installing the mod will auto-deploy and enable it. If you install the next mod before Vortex finishes it's REDmod deployment of the previous mod (the code window popup) this is where REDmod deployment errors are most common. The easiest way to resolve this, and try to correct a REDmod deployment error, is to select "REDmod deploy latest load order".
-
-<figure><img src="../../../.gitbook/assets/Vortex_QI5ijrMrnP.png" alt=""><figcaption><p>The REDmod deploy button enabled in the toolbar.</p></figcaption></figure>
-
-Before you can understand how to deploy, you must understand what it does. Cyberpunk 2077 is unique in that it has 2 methods of deployment--REDmod deployment, and the standard Vortex deployment. Both must be utilized together for properly installed mods.
-
-REDmod deployment is the second and final method of deployment. If you are not using Vortex, you must use the REDlauncher to enable REDmods, however Vortex can handle REDmod deployments without needing to open REDlauncher. This is the code window you see pop up when you install a mod with auto-enable and auto-deploy on.&#x20;
-
-What is happening here is that it is compiling a list of the mods for the game to access, and all of the scripts and tweaks contained within them. It also allows you to manage the load order of the mods it compiles, so you can control what mod wins when two mods want to touch the same file. You can view and change your load order in the "load order" tab of the sidebar. The "deploy mods" button in this toolbar is actually the REDmod Deploy Latest Load Order.
+Congratulations! You know how to use Vortex!
 
 
 

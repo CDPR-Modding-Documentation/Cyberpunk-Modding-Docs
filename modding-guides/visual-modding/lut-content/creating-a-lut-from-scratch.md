@@ -141,7 +141,7 @@ For the ACES method, you need to add another Color Space Transform node, with in
 
 For both ARRI methods, nearly the exact same steps are taken as the ACES method, but, instead of sRGB input color space and gamma, we use an input color space of Rec.709, but input gamma of Gamma 2.4. Keep the output color space at sRGB and output gamma at linear.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (4) (2).png" alt=""><figcaption><p>LogC4 after gamma correction.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (2) (2).png" alt=""><figcaption><p>LogC4 after gamma correction.</p></figcaption></figure>
 
 For the Resolve Color Managed method, simply change the output gamma in the color space transform to linear, but turn on Apply Forward OOTF.
 
@@ -191,6 +191,6 @@ Your LUT is now correctly set up. You can install and launch now!
 
  
 
-<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption><p>LogC4</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (1).png" alt=""><figcaption><p>LogC4</p></figcaption></figure>
 
 </div>
