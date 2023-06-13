@@ -34,7 +34,7 @@ The perhaps most prominent example is Appearance Menu Mod ([wiki](../frameworks/
 
 ### Redscript <a href="#redscript" id="redscript"></a>
 
-Redscript ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511) | [GitHub](https://github.com/jac3km4/redscript)) is an open-source programming language and toolset, natively working with Cyberpunk 2077's scripting runtime. With the help of .reds files under `r6/scripts`, it lets you modify and extend the user interface, change the combat balance, influence NPC behaviour, and much more.&#x20;
+Redscript ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511) | [GitHub](https://github.com/jac3km4/redscript)) is an open-source programming language and toolkit, natively working with Cyberpunk 2077's scripting runtime. With the help of .reds files under `r6/scripts`, it lets you modify and extend the user interface, change the combat balance, influence NPC behaviour, and much more.&#x20;
 
 {% content-ref url="http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/" %}
 [Redscript](http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg\_/)
@@ -45,7 +45,7 @@ Redscript ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511) | [GitHub]
 RED4ext ([Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/2380)| [GitHub](https://github.com/WopsS/RED4ext/releases)) is Cyberpunk 2077's equivalent to Skyrim Script Extender. It adds further scripting capability on top of what CDPR has so kindly provided, loading scripts from `/red4ext/plugins`.
 
 {% hint style="warning" %}
-To play nice with redmod, RED4ext requires [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176) to be installed.
+With Red4ext >= 1.13, you no longer need [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176). Make sure to **uninstall** it!
 {% endhint %}
 
 Aside from being required for many mods, it is a perquisite for other frameworks such as ArchiveXL, TweakXL, and Equipment-EX.
