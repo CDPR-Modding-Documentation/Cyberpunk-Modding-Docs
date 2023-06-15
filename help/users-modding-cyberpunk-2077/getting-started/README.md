@@ -66,7 +66,7 @@ Open GOG Galaxy, click on "Owned Games" in the left sidebar, and scroll until yo
 4. Optional: Create a desktop shortcut by ticking the first box "Create desktop shortcut"
 5. Optional, but recommended: Disable auto-updates by unchecking the second box "Keep this game up to date automatically"
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>How the window should look for recommended install.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>How the window should look for recommended install.</p></figcaption></figure>
 
 6. Press "Install"
 7. Wait until GOG has done it's thing, then proceed to the next section.
@@ -75,7 +75,7 @@ Open GOG Galaxy, click on "Owned Games" in the left sidebar, and scroll until yo
 
 Once the game has installed, we want to make it run with mods. Click the button to the right of the play button (formerly the install button) pictured below.
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>The Cyberpunk 2077 main page on GOG, with the sidebar open on the left</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>The Cyberpunk 2077 main page on GOG, with the sidebar open on the left</p></figcaption></figure>
 
 From there, select "Manage Installation" and then "Configure". A window will pop up where you can change your desired settings:
 
@@ -83,7 +83,7 @@ From there, select "Manage Installation" and then "Configure". A window will pop
 * Features (second tab): Enable mods
 * DLC (third tab): Select at least Cyberpunk 2077 REDMod
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>You may select any additional settings you like, but these are the minimum recommended options.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption><p>You may select any additional settings you like, but these are the minimum recommended options.</p></figcaption></figure>
 
 That's it, you are done with your install of the game! You can now move on to [installing Vortex](vortex-mod-manager.md).
 

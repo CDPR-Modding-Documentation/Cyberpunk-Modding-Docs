@@ -170,5 +170,6 @@ Place raw `.wav` audio files inside `<Cyberpunk 2077>/mods/<name>/customSounds`.
   * mod\_sfx\_radio : needs to be tuned to a broadcast channel (e.g. radio)
   * mod\_sfx\_room : has a shorter attenuation suitable for something that can be heard across a room
   * mod\_sfx\_street : has a medium attenuation, good for something to be heard down a street
+  * mod\_sfx\_ui: for menu and ui sound replacement
 * **file** - the `.wav` file to use (inside `/customSounds`)
 * **gain** and **pitch**
