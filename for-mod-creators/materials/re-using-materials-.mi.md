@@ -11,7 +11,7 @@ Put yourself in the shoes of a hypothetical modder.
 * You duplicate and re-duplicate the material for each of your variants, changing the properties that defines the colour
 * You wish that there was less copy-pasting involved
 
-<figure><img src="../../../.gitbook/assets/mi_files_materials_the_problem.png" alt=""><figcaption><p>You only change 2 of 6 properties, but you always have to copy all of them!!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mi_files_materials_the_problem.png" alt=""><figcaption><p>You only change 2 of 6 properties, but you always have to copy all of them!!</p></figcaption></figure>
 
 ## .mi files to the rescue
 
@@ -25,7 +25,7 @@ For a collection of example .mi files, check [manavortex's MEGA](https://mega.nz
 
 Instead of copy-pasting six properties, you now copy-paste only two.
 
-<figure><img src="../../../.gitbook/assets/mi_files_the_solution.png" alt=""><figcaption><p>Only add the properties that you want to change in relation to the .mi file</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mi_files_the_solution.png" alt=""><figcaption><p>Only add the properties that you want to change in relation to the .mi file</p></figcaption></figure>
 
 ## Making material templates
 
@@ -59,7 +59,7 @@ And if one of my items happens to have a custom normal map and/or texture, then 
 
 But we can take this approach even further! If you **don't** have any properties, your mesh doesn't even need materials! You can simply use the `externalMaterials` list instead. You do this by unticking the isLocal property in the materialEntries definition:
 
-<figure><img src="../../../.gitbook/assets/material_indices.png" alt=""><figcaption><p>material entries and indices</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/material_indices.png" alt=""><figcaption><p>material entries and indices</p></figcaption></figure>
 
 ## Warning
 

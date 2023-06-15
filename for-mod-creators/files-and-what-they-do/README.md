@@ -113,125 +113,125 @@ Cyberpunk normal maps are swizzled (a technique originally employed in DTX-5).&#
 
 ## W2RC File Format Table
 
-| Extension                |                 Description                | Fully Parsed |
-| ------------------------ | :----------------------------------------: | :----------: |
-| actionanimdb             |                  Animation                 |              |
-| acousticdata             |                    Audio                   |              |
-| aiarch                   |               Pathfinding/AI               |              |
-| animgraph                |               Animation graph              |              |
-| anims                    |               Animation data               |              |
-| app                      |       Mesh appearance configurations       |              |
-| archetypes               |                      ?                     |              |
-| areas                    |               Terrain related              |              |
-| audio\_metadata          |                      ?                     |              |
-| audiovehcurveset         |                      ?                     |              |
-| behavior                 |                      ?                     |              |
-| bikecurveset             |                      ?                     |              |
-| bk2                      |                 Bink video                 |              |
-| bnk                      |                 Bink video                 |              |
-| camcurveset              |             Camera curve preset            |              |
-| cfoliage                 |                      ?                     |              |
-| charcustpreset           |           Character editor preset          |              |
-| cminimap                 |                   Minimap                  |              |
-| community                |                Quest related               |              |
-| conversations            |              Cutscene related              |              |
-| cooked\_mlsetup          |                 See mlsetup                |              |
-| cooked\_anims            |                  See anims                 |              |
-| cookedapp                |                   See app                  |              |
-| credits                  |          Configuration for credits         |              |
-| cubemap                  |            6-sided cube texture            |              |
-| curveset                 |                      ?                     |              |
-| devices                  |                      ?                     |              |
-| dtex                     |                      ?                     |              |
-| effect                   |                      ?                     |              |
-| ent                      |                   Entity                   |              |
-| env                      |           Environment definition           |              |
-| envparam                 |                      ?                     |              |
-| envprobe                 |                      ?                     |              |
-| es                       |                      ?                     |              |
-| facialcustom             |                      ?                     |              |
-| facialsetup              |                      ?                     |              |
-| fb2tl                    |                      ?                     |              |
-| fnt                      |                    Font                    |              |
-| folbrush                 |                Foliage brush               |              |
-| foldest                  |        Destructible foliage element        |              |
-| fp                       |                      ?                     |              |
-| gamedef                  |        Game main configuration file        |              |
-| garmentlayerparams       |                      ?                     |              |
-| genericanimdb            |                      ?                     |              |
-| gidata                   |                      ?                     |              |
-| gradient                 |                      ?                     |              |
-| hitrepresentation        |                      ?                     |              |
-| hp                       |                Hair profile                |              |
-| ies                      |                      ?                     |              |
-| inkanim                  |                UI animation                |              |
-| inkatlas                 |              UI texture atlas              |              |
-| inkcharcustomization     |            UI character related            |              |
-| inkfontfamily            |                   UI font                  |              |
-| inkfullscreencomposition |                     UI                     |              |
-| inkgamesettings          |                 UI settings                |              |
-| inkhud                   |                     UI                     |              |
-| inklayers                |                     UI                     |              |
-| inkmenu                  |                     UI                     |              |
-| inkshapecollection       |                     UI                     |              |
-| inkstyle                 |                     UI                     |              |
-| inktypography            |                     UI                     |              |
-| inkwidget                |                     UI                     |              |
-| interaction              |                     UI                     |              |
-| journal                  |                 Quest info                 |              |
-| journaldesc              |                 Quest info                 |              |
-| lane\_connections        |                      ?                     |              |
-| lane\_polygons           |                      ?                     |              |
-| lane\_spots              |                      ?                     |              |
-| lights                   |                      ?                     |              |
-| lipmap                   |                      ?                     |              |
-| location                 |                      ?                     |              |
-| locopaths                |                      ?                     |              |
-| loot                     |                      ?                     |              |
-| mappins                  |                 Pins on map                |              |
-| mesh                     |                 Mesh/model                 |              |
-| mi                       |    Instanced external shaders/materials    |              |
-| mlmask                   |      Masks for multilayer supershader      |              |
-| mlsetup                  |    Setup file for multilayer supershader   |              |
-| mltemplate               |  Template file for multilayer supershader  |              |
-| morphtarget              |           Blend shapes/shape keys          |              |
-| mt                       |                 Base shader                |              |
-| navmesh                  |            AI navigation meshes            |              |
-| null\_areas              |                      ?                     |              |
-| opusinfo                 |                    Audio                   |              |
-| opuspak                  |                    Audio                   |              |
-| particle                 |                  Particles                 |              |
-| phys                     |            Nvidia PhysX related            |              |
-| physicalscene            |            Nvidia PhysX related            |              |
-| physmatlib               |            Nvidia PhysX related            |              |
-| poimappins               |                   Map pin                  |              |
-| psrep                    |                      ?                     |              |
-| quest                    |                    Quest                   |              |
-| questphase               |              Quest progression             |              |
-| regionset                |                      ?                     |              |
-| remt                     |  Similar to **mt**, difference is unclear  |              |
-| reslist                  |                Resource list               |              |
-| rig                      |         Rig/skeleton for animation         |              |
-| scene                    |                  Cutscene                  |              |
-| scenesversions           |             Cutscene versioning            |              |
-| smartobject              |                      ?                     |              |
-| smartobjects             |                      ?                     |              |
-| sp                       |                Skin profile                |              |
-| spatial\_representation  |                      ?                     |              |
-| streamingquerydata       |                   Terrain                  |              |
-| streamingsector          |                   Terrain                  |              |
-| streamingsector\_inplace |                   Terrain                  |              |
-| streamingworld           |                   Terrain                  |              |
-| terrainsetup             |                   Terrain                  |              |
-| texarray                 |              Multiple textures             |              |
-| traffic\_collisions      |                      ?                     |              |
-| traffic\_persistent      |                      ?                     |              |
-| voicetags                |                      ?                     |              |
-| w2mesh                   | Leftover **mesh** file with RED3 extension |              |
-| w2mi                     |  Leftover **mi** file with RED3 extension  |              |
-| workspot                 |                      ?                     |              |
-| xbm                      |                   Texture                  |              |
-| xcube                    |                   Texture                  |              |
+| Extension                                                                                                               |                 Description                | Fully Parsed |
+| ----------------------------------------------------------------------------------------------------------------------- | :----------------------------------------: | :----------: |
+| [actionanimdb](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/actionanimdb.txt)                         |                  Animation                 |              |
+| [acousticdata](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/acousticdata.txt)                         |                    Audio                   |              |
+| [aiarch](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/aiarch.txt)                                     |               Pathfinding/AI               |              |
+| [animgraph](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/animgraph.txt)                               |               Animation graph              |              |
+| [anims](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/anims.txt)                                       |               Animation data               |              |
+| [app](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/app.txt)                                           |       Mesh appearance configurations       |              |
+| [archetypes](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/archetypes.txt)                             |                      ?                     |              |
+| [areas](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/areas.txt)                                       |               Terrain related              |              |
+| [audio\_metadata](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/audio\_metadata.txt)                   |                      ?                     |              |
+| [audiovehcurveset](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/audiovehcurveset.txt)                 |                      ?                     |              |
+| [behavior](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/behavior.txt)                                 |                      ?                     |              |
+| [bikecurveset](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/bikecurveset.txt)                         |                      ?                     |              |
+| [bk2](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/bk2.txt)                                           |                 Bink video                 |              |
+| [bnk](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/bnk.txt)                                           |                 Bink video                 |              |
+| [camcurveset](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/camcurveset.txt)                           |             Camera curve preset            |              |
+| [cfoliage](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/cfoliage.txt)                                 |                      ?                     |              |
+| [charcustpreset](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/charcustpreset.txt)                     |           Character editor preset          |              |
+| [cminimap](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/cminimap.txt)                                 |                   Minimap                  |              |
+| [community](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/community.txt)                               |                Quest related               |              |
+| [conversations](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/conversations.txt)                       |              Cutscene related              |              |
+| [cooked\_mlsetup](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/cooked\_mlsetup.txt)                   |                 See mlsetup                |              |
+| [cooked\_anims](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/cookedanims.txt)                         |                  See anims                 |              |
+| [cookedapp](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/cookedapp.txt)                               |                   See app                  |              |
+| [credits](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/credits.txt)                                   |          Configuration for credits         |              |
+| [cubemap](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/cubemap.txt)                                   |            6-sided cube texture            |              |
+| [curveset](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/curveset.txt)                                 |                      ?                     |              |
+| [devices](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/devices.txt)                                   |                      ?                     |              |
+| [dtex](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/dtex.txt)                                         |                      ?                     |              |
+| [effect](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/effect.txt)                                     |                      ?                     |              |
+| [ent](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/ent.txt)                                           |                   Entity                   |              |
+| [env](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/env.txt)                                           |           Environment definition           |              |
+| [envparam](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/envparam.txt)                                 |                      ?                     |              |
+| [envprobe](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/envprobe.txt)                                 |                      ?                     |              |
+| [es](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/es.txt)                                             |                      ?                     |              |
+| [facialcustom](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/facialcustom.txt)                         |                      ?                     |              |
+| [facialsetup](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/facialsetup.txt)                           |                      ?                     |              |
+| [fb2tl](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/fb2tl.txt)                                       |                      ?                     |              |
+| [fnt](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/fnt.txt)                                           |                    Font                    |              |
+| [folbrush](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/folbrush.txt)                                 |                Foliage brush               |              |
+| [foldest](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/foldest.txt)                                   |        Destructible foliage element        |              |
+| [fp](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/fp.txt)                                             |                      ?                     |              |
+| [gamedef](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/gamedef.txt)                                   |        Game main configuration file        |              |
+| [garmentlayerparams](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/garmentlayerparams.txt)             |                      ?                     |              |
+| [genericanimdb](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/genericanimdb.txt)                       |                      ?                     |              |
+| [gidata](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/gidata.txt)                                     |                      ?                     |              |
+| [gradient](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/gradient.txt)                                 |                      ?                     |              |
+| [hitrepresentation](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/hitrepresentation.txt)               |                      ?                     |              |
+| [hp](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/hp.txt)                                             |                Hair profile                |              |
+| [ies](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/ies.txt)                                           |                      ?                     |              |
+| [inkanim](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inkanim.txt)                                   |                UI animation                |              |
+| [inkatlas](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inkatlas.txt)                                 |              UI texture atlas              |              |
+| [inkcharcustomization](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inkcharcustomization.txt)         |            UI character related            |              |
+| [inkfontfamily](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inkfontfamily.txt)                       |                   UI font                  |              |
+| [inkfullscreencomposition](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inkfullscreencomposition.txt) |                     UI                     |              |
+| [inkgamesettings](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inkgamesettings.txt)                   |                 UI settings                |              |
+| [inkhud](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inkhud.txt)                                     |                     UI                     |              |
+| [inklayers](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inklayers.txt)                               |                     UI                     |              |
+| [inkmenu](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inkmenu.txt)                                   |                     UI                     |              |
+| [inkshapecollection](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inkshapecollection.txt)             |                     UI                     |              |
+| [inkstyle](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inkstyle.txt)                                 |                     UI                     |              |
+| [inktypography](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inktypography.txt)                       |                     UI                     |              |
+| [inkwidget](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/inkwidget.txt)                               |                     UI                     |              |
+| [interaction](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/interaction.txt)                           |                     UI                     |              |
+| [journal](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/journal.txt)                                   |                 Quest info                 |              |
+| [journaldesc](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/journaldesc.txt)                           |                 Quest info                 |              |
+| [lane\_connections](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lane\_connections.txt)               |                      ?                     |              |
+| [lane\_polygons](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lane\_connections.txt)                  |                      ?                     |              |
+| [lane\_spots](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lane\_spots.txt)                           |                      ?                     |              |
+| [lights](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lights.txt)                                     |                      ?                     |              |
+| [lipmap](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lipmap.txt)                                     |                      ?                     |              |
+| [location](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/location.txt)                                 |                      ?                     |              |
+| [locopaths](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/locopaths.txt)                               |                      ?                     |              |
+| [loot](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/loot.txt)                                         |                      ?                     |              |
+| [mappins](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/mappins.txt)                                   |                 Pins on map                |              |
+| [mesh](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/mesh.txt)                                         |                 Mesh/model                 |              |
+| [mi](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/mi.txt)                                             |    Instanced external shaders/materials    |              |
+| [mlmask](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/mlmask.txt)                                     |      Masks for multilayer supershader      |              |
+| [mlsetup](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/mlmask.txt)                                    |    Setup file for multilayer supershader   |              |
+| [mltemplate](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/mltemplate.txt)                             |  Template file for multilayer supershader  |              |
+| [morphtarget](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/morphtarget.txt)                           |           Blend shapes/shape keys          |              |
+| [mt](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/mt.txt)                                             |                 Base shader                |              |
+| navmesh                                                                                                                 |            AI navigation meshes            |              |
+| [null\_areas](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/null\_areas.txt)                           |                      ?                     |              |
+| [opusinfo](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/opusinfo.txt)                                 |                    Audio                   |              |
+| [opuspak](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/opuspak.txt)                                   |                    Audio                   |              |
+| [particle](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/particle.txt)                                 |                  Particles                 |              |
+| [phys](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/phys.txt)                                         |            Nvidia PhysX related            |              |
+| [physicalscene](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/physicalscene.txt)                       |            Nvidia PhysX related            |              |
+| [physmatlib](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/physmatlib.txt)                             |            Nvidia PhysX related            |              |
+| [poimappins](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/poimappins.txt)                             |          Point of Interest Map pin         |              |
+| [psrep](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/psrep.txt)                                       |                      ?                     |              |
+| [quest](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/quest.txt)                                       |                    Quest                   |              |
+| [questphase](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/questphase.txt)                             |              Quest progression             |              |
+| regionset                                                                                                               |                      ?                     |              |
+| [remt](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/remt.txt)                                         |  Similar to **mt**, difference is unclear  |              |
+| [reslist](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/reslist.txt)                                   |                Resource list               |              |
+| [rig](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/rig.txt)                                           |         Rig/skeleton for animation         |              |
+| [scene](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/scene.txt)                                       |                  Cutscene                  |              |
+| [scenesversions](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/scenesversions.txt)                     |             Cutscene versioning            |              |
+| [smartobject](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/smartobject.txt)                           |                      ?                     |              |
+| [smartobjects](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/smartobjects.txt)                         |                      ?                     |              |
+| [sp](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/sp.txt)                                             |                Skin profile                |              |
+| [spatial\_representation](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/spatial\_representation.txt)   |                      ?                     |              |
+| [streamingquerydata](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/streamingquerydata.txt)             |                   Terrain                  |              |
+| [streamingsector](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/streamingsector.txt)                   |       The world in manageable pieces       |              |
+| [streamingsector\_inplace](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/streamingsector\_inplace.txt) |                   Terrain                  |              |
+| [streamingworld](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/streamingworld.txt)                     |            Links all the sectors           |              |
+| [terrainsetup](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/terrainsetup.txt)                         |                   Terrain                  |              |
+| [texarray](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/texarray.txt)                                 |              Multiple textures             |              |
+| [traffic\_collisions](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/traffic\_collisions.txt)           |                      ?                     |              |
+| [traffic\_persistent](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/traffic\_persistent.txt)           |                      ?                     |              |
+| [voicetags](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/voicetags.txt)                               |                      ?                     |              |
+| [w2mesh](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/w2mesh.txt)                                     | Leftover **mesh** file with RED3 extension |              |
+| [w2mi](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/w2mi.txt)                                         |  Leftover **mi** file with RED3 extension  |              |
+| [workspot](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/workspot.txt)                                 |                      ?                     |              |
+| [xbm](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/xbm.txt)                                           |                   Texture                  |              |
+| [xcube](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/xcube.txt)                                       |                   Texture                  |              |
 
 ## Generic Format
 
@@ -239,10 +239,10 @@ Cyberpunk normal maps are swizzled (a technique originally employed in DTX-5).&#
 
 ### Generic FIle Format Table
 
-| Extension | Description       |
-| --------- | ----------------- |
-| csv       | Standard CSV file |
-| wem       | Audio file        |
+| Extension                                                                     | Description       |
+| ----------------------------------------------------------------------------- | ----------------- |
+| [csv](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/csv.txt) | Standard CSV file |
+| [wem](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/wem.txt) | Audio file        |
 
 
 

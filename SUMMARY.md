@@ -13,13 +13,13 @@
 * [🆘 Troubleshooting](for-mod-users/user-guide-troubleshooting/README.md)
   * [Users: Troubleshooting after a game update](for-mod-users/user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md)
   * [Finding and reading log files](for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md)
-* [📖 Glossary](for-mod-users/glossary.md)
+* [Glossary](for-mod-users/glossary.md)
 
 ## For Mod Creators:
 
 * [ℹ Creating Mods](for-mod-creators/modding-cyberpunk-2077/README.md)
   * [Analysing other mods](for-mod-creators/modding-cyberpunk-2077/analysing-other-mods.md)
-* [🧬 Core Mods explained](for-mod-creators/core-mods-explained/README.md)
+* [⚒ Core Mods explained](for-mod-creators/core-mods-explained/README.md)
   * [CET (Cyber Engine Tweaks)](https://wiki.redmodding.org/cyber-engine-tweaks/)
   * [AMM](for-mod-creators/core-mods-explained/amm.md)
   * [Red4ext](https://wiki.redmodding.org/red4ext/)
@@ -30,7 +30,7 @@
       * [Deploy](for-mod-creators/core-mods-explained/redmod/commands/deploy.md)
       * [Import](for-mod-creators/core-mods-explained/redmod/commands/import.md)
   * [Redscript](https://wiki.redmodding.org/redscript/)
-* [🧰 Modding Tools](for-mod-creators/modding-tools/README.md)
+* [🛠 Modding Tools](for-mod-creators/modding-tools/README.md)
   * [WolvenKit](http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/)
   * [MLSETUP Builder](for-mod-creators/modding-tools/mlsetup-builder.md)
   * [010 Editor](for-mod-creators/modding-tools/010-editor.md)

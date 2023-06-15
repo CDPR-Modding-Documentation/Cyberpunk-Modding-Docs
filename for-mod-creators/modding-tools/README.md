@@ -2,7 +2,7 @@
 description: Frequently used tools for modding workflows
 ---
 
-# 🧰 Modding Tools
+# 🛠 Modding Tools
 
 ## Editors
 

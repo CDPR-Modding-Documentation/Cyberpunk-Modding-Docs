@@ -12,7 +12,7 @@ These are the part names used in filenames for .mesh and .ent files. Each header
 
 * `base`
 * `bumper_f`
-* `bumper_b`&#x20;
+* `bumper_b`
 * `hood`
 * `trunk`
 * `door_fl`
@@ -20,9 +20,8 @@ These are the part names used in filenames for .mesh and .ent files. Each header
 * `door_bl`
 * `door_br`
 * `fuelcap`
-* `fuelport`&#x20;
+* `fuelport`
 
 ### Wheel
 
 * `wheel`
-
