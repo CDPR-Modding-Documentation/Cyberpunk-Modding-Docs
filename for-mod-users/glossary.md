@@ -2,7 +2,7 @@
 description: List of words that need more context
 ---
 
-# Glossary
+# 📖 Glossary
 
 A comprehensive list of jargon you might see on this Wiki or around our community. This glossary is not alphabetical, so be sure to use your browser search function to find what you're looking for. (CTRL+F for most applications)
 

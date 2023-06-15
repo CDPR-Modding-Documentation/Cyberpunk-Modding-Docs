@@ -2,7 +2,7 @@
 description: Welcome to the Cyberpunk 2077 modding wiki!
 ---
 
-# Home
+# 🏠 Home
 
 This is the dedicated repository for modding guides, resources and know-how.&#x20;
 
@@ -28,12 +28,8 @@ Download [Wolvenkit](https://github.com/WolvenKit/WolvenKit/releases) and get cr
 [modding-cyberpunk-2077](for-mod-creators/modding-cyberpunk-2077/)
 {% endcontent-ref %}
 
-{% content-ref url="broken-reference" %}
-[Broken link](broken-reference)
-{% endcontent-ref %}
-
-{% content-ref url="for-mod-creators/modding-guides/community-guides/" %}
-[community-guides](for-mod-creators/modding-guides/community-guides/)
+{% content-ref url="for-mod-creators/modding-guides/" %}
+[modding-guides](for-mod-creators/modding-guides/)
 {% endcontent-ref %}
 
 {% content-ref url="for-mod-creators/references-lists-and-overviews/" %}
