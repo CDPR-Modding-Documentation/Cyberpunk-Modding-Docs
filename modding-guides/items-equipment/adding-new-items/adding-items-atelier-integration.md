@@ -71,7 +71,7 @@ resources
   - tutorial_my_custom_tshirt.archive.xl  
   - tutorial_my_custom_tshirt.yaml         
   r6
-    tweaks
+    scripts
       - MyTutorialAtelierStore-atelier-store.reds         << new file
 ```
 

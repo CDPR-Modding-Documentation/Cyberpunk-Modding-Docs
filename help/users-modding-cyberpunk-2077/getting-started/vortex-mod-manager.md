@@ -288,7 +288,7 @@ Mod authors sometimes disable mod manager integration for a variety of reasons. 
    The file doesn't have any particular instruction.
 5. Optional: view the file contents – they sometimes contain helpful information:
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>The naming convention tells us that it's a hair replacer from Wingdeer for the female body gender, changing hair 48, There's also a preview picture included.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption><p>The naming convention tells us that it's a hair replacer from Wingdeer for the female body gender, changing hair 48, There's also a preview picture included.</p></figcaption></figure>
 
 6. Manually download the file – you know the drill by now.
 7. Return to the Vortex "mods" page. You have two ways to install the mod now:&#x20;
