@@ -10,28 +10,16 @@ This is the dedicated repository for modding guides, resources and know-how.&#x2
 This wiki is a community project! Do you want to improve or add anything? [Start editing ](https://app.gitbook.com/)right now, or reach out on [Discord](https://discord.gg/redmodding) and find us in the #wiki channel!
 {% endhint %}
 
-## Using mods
+<div data-full-width="true">
 
-{% content-ref url="for-mod-users/users-modding-cyberpunk-2077/" %}
-[users-modding-cyberpunk-2077](for-mod-users/users-modding-cyberpunk-2077/)
-{% endcontent-ref %}
+<figure><img src=".gitbook/assets/Type=Down.png" alt=""><figcaption></figcaption></figure>
 
-{% content-ref url="for-mod-users/user-guide-troubleshooting/" %}
-[user-guide-troubleshooting](for-mod-users/user-guide-troubleshooting/)
-{% endcontent-ref %}
+</div>
 
-## Making mods
+<table data-card-size="large" data-column-title-hidden data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Modding Troubleshooting</td><td></td><td></td><td><a href=".gitbook/assets/using_mods.png">using_mods.png</a></td><td><a href="broken-reference">Broken link</a></td></tr><tr><td>Modders' Resources</td><td></td><td></td><td><a href=".gitbook/assets/making_mods.png">making_mods.png</a></td><td><a href="broken-reference">Broken link</a></td></tr></tbody></table>
 
-Download [Wolvenkit](https://github.com/WolvenKit/WolvenKit/releases) and get cracking!
+<div data-full-width="true">
 
-{% content-ref url="for-mod-creators/modding-cyberpunk-2077/" %}
-[modding-cyberpunk-2077](for-mod-creators/modding-cyberpunk-2077/)
-{% endcontent-ref %}
+<figure><img src=".gitbook/assets/Type=Up.png" alt=""><figcaption></figcaption></figure>
 
-{% content-ref url="for-mod-creators/modding-guides/" %}
-[modding-guides](for-mod-creators/modding-guides/)
-{% endcontent-ref %}
-
-{% content-ref url="for-mod-creators/references-lists-and-overviews/" %}
-[references-lists-and-overviews](for-mod-creators/references-lists-and-overviews/)
-{% endcontent-ref %}
+</div>

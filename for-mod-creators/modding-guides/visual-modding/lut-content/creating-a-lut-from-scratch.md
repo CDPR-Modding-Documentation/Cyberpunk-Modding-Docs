@@ -131,7 +131,7 @@ Instead of having an output color space of ARRI Wide Gamut 3, set the color spac
 
 This method creates a color cube that is very "unbiased"--it has fidelity in all directions, which, while creating a good representation of true color, can result in unnatural saturation. To account for this, the saturation compression gamut compression method can be selected.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption><p>The color cube after saturation compression.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (9) (2).png" alt=""><figcaption><p>The color cube after saturation compression.</p></figcaption></figure>
 
 After you have used your preferred method, you need to apply gamma correction. If you do not do this, you end up with incorrect gamma, which can mainly be seen on skin tones.&#x20;
 

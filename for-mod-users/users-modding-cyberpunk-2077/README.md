@@ -4,6 +4,10 @@ description: Modding your game, for users
 
 # ❔ Using Mods
 
+{% content-ref url="../user-guide-troubleshooting/" %}
+[user-guide-troubleshooting](../user-guide-troubleshooting/)
+{% endcontent-ref %}
+
 {% hint style="info" %}
 This page contains instructions on **installing** mods. If you want to **create** mods instead, check [here](../../for-mod-creators/modding-cyberpunk-2077/).
 {% endhint %}
