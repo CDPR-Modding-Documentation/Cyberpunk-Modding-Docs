@@ -360,7 +360,7 @@ Repeat this process until you've identified the mod that's crashing your game.
 
 If your CPU is too busy, the game will try to save resources by dropping audio, starting with dialogue audio. Disabling spatial audio from the main menu might help:
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
 
 ### It's not connected to CPU load
 
@@ -937,7 +937,7 @@ First, remove (or rename) the cache:&#x20;
 ```
 
 {% hint style="success" %}
-Check if the problem is gone
+Verify game files. Check if the problem is gone.
 {% endhint %}
 
 If that didn't do the trick, find the following folders:
