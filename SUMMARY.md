@@ -26,6 +26,7 @@
   * [REDmod](for-mod-creators/core-mods-explained/redmod/README.md)
     * [Usage](for-mod-creators/core-mods-explained/redmod/usage.md)
     * [Modding Guide](for-mod-creators/core-mods-explained/redmod/quick-guide.md)
+    * [Change logs](for-mod-creators/core-mods-explained/redmod/change-logs.md)
     * [Commands](for-mod-creators/core-mods-explained/redmod/commands/README.md)
       * [Deploy](for-mod-creators/core-mods-explained/redmod/commands/deploy.md)
       * [Import](for-mod-creators/core-mods-explained/redmod/commands/import.md)
