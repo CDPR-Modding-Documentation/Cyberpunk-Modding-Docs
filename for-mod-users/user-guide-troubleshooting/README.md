@@ -56,7 +56,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
   * Searching: [Log files](finding-and-reading-log-files.md)
 * [Something with files or ACCESS\_VIOLATION](./#something-something-files)
 * [This is a waste of time, I'm reinstalling](./#the-nuclear-option-a-clean-install)
-  * [Modding a clean install](./#starting-from-scratch)&#x20;
+  * [Modding a clean install ](./#a-fresh-install-starting-from-scratch)
 
 {% hint style="success" %}
 To enable REDmods, check [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/frameworks/redmod/usage#deploying-mods-and-starting-the-game).
