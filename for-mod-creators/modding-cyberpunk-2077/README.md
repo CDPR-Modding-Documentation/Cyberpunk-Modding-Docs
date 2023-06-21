@@ -8,7 +8,7 @@ description: Do-it-yourself!
 This page contains instructions on **making** mods. If you want to install mods instead, check [here](../../for-mod-users/users-modding-cyberpunk-2077/).&#x20;
 {% endhint %}
 
-This section contains **general know-how** and theory.&#x20;
+This section contains **general know-how** and theory. You can find our collection of guides under their own category [Modding Guides](../modding-guides/).
 
 ## Here, you can find
 

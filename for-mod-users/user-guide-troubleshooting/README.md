@@ -40,7 +40,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
   * [before the menu](./#crash-before-menu)
   * [when loading a save / starting a game](./#crash-on-loading-a-save)
   * [randomly during gameplay](./#crash-during-the-game)
-* [You're on Linux](./#youre-on-linux-steam-deck)
+* [You're on Linux](../users-modding-cyberpunk-2077/modding-on-linux.md)
 * [You have trouble with your pirated game](./#you-pirated-the-game)
 * [Redscript Compilation Failed (Popup message)](./#redscript-compilation-failed)
 * [Photomode screenshots are borked](./#photomode-screenshots-are-blank)
@@ -155,6 +155,7 @@ The first step whenever you run into this error is deleting the folder `r6/cache
 
 If that doesn't help, it's time for more detailed troubleshooting:
 
+* If you are on Linux, make sure to double-check the [launch options](../users-modding-cyberpunk-2077/modding-on-linux.md), as Steam sometimes resets these between updates
 * if you don't have red4ext/logs/red4ext.log, then RED4ext doesn't work, you have to update / fix RED4ext&#x20;
 * if you have red4ext/logs/red4ext.log, then look inside, it will tell you which mods aren't compatible with the current game patch and may be the cause of this issue&#x20;
 * if that doesn't help, try [resetting redscript](./#3.-reset-redscript) (you will need to verify your game files).&#x20;
@@ -803,20 +804,6 @@ With 1.62, screenshots are now saved to `Documents\CDPR\Cyberpunk\Screenshots` ,
 ## Press \[none] to continue
 
 That is due to [Input Loader](https://www.nexusmods.com/cyberpunk2077/mods/4575) requiring an update.
-
-## You're on Linux/Steam Deck
-
-Under Linux, you have to start the game with&#x20;
-
-```
-WINEDLLOVERRIDES="winmm,version=n,b" %command% -modded
-```
-
-Otherwise, search the #red4ext-support channel on the [modding discord](https://discord.gg/redmodding) for winmm for further pointers.
-
-{% hint style="info" %}
-We're looking for someone to document Linux-specific troubleshooting!
-{% endhint %}
 
 ## I have another problem that isn't on this list
 

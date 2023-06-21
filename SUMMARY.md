@@ -10,6 +10,7 @@
     * [Vortex Mod Manager](for-mod-users/users-modding-cyberpunk-2077/getting-started/vortex-mod-manager.md)
   * [Downgrading / Preventing auto-updates](for-mod-users/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
   * [Requirements explained](for-mod-users/users-modding-cyberpunk-2077/requirements-explained.md)
+  * [Modding on Linux](for-mod-users/users-modding-cyberpunk-2077/modding-on-linux.md)
 * [🆘 Troubleshooting](for-mod-users/user-guide-troubleshooting/README.md)
   * [Users: Troubleshooting after a game update](for-mod-users/user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md)
   * [Finding and reading log files](for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md)
