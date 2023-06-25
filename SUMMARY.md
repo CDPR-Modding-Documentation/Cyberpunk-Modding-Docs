@@ -1,7 +1,6 @@
 # Table of contents
 
 * [🏠 Home](README.md)
-  * [🗣 Join us on Discord!](https://discord.gg/redmodding)
 
 ## For Mod Users:
 
