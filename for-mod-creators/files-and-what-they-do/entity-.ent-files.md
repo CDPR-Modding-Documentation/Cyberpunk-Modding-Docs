@@ -1,20 +1,39 @@
 ---
-description: 'Suffixes: what they are (and whether you need them)'
+description: All the dirty detes on entity files
 ---
 
-# .ent files: Suffixes
+# Entity: .ent files
 
-## Summary
+## Mesh/Component entity (simple entity)
 
-This page explains how to&#x20;
+Used to define game entities and the most straightforward way of adding a [custom prop](../modding-guides/everything-else/custom-props.md) or [player clothing](../modding-guides/items-equipment/adding-new-items/) to the game.
 
-If you already know the theory and just want to pick the right combination, check "[which suffixes exist](.ent-files-suffixes.md#which-suffixes-exist)" below.
+<figure><img src="../../.gitbook/assets/mesh_entity.png" alt=""><figcaption></figcaption></figure>
+
+For **player equipment**, you can use entity files such as this one to **encapsulate** parts of your item. You load such .ent files via [partsValues](../modding-guides/items-equipment/adding-new-items/#mesh\_entity.ent), and they will be added to the corresponding appearance as if the components had been in the .app file itself.
+
+As of April 2023, this does **not** work for NPC appearances or custom props.
+
+## Root entity
+
+The **entry point** for the game to display an [NPC](../modding-guides/npcs/appearances-change-the-looks.md#the-.ent-file) or [prop](../modding-guides/everything-else/custom-props.md). This kind of entity usually doesn't have [components](components/) by itself, but only points towards the [.app file](entity-.ent-files.md#.app-appearance-definition) where they are defined.&#x20;
+
+From ArchiveXL item additions, this kind of file is usually called a **root entity**.
+
+<figure><img src="../../.gitbook/assets/root_entity.png" alt=""><figcaption></figcaption></figure>
+
+* An entity file can define multiple appearances, which can point to different .app files.&#x20;
+* For [creating props](../modding-guides/everything-else/custom-props.md), **root entities** are used as the defining key (one entity => one item, which can have multiple appearances)
+* Names support [suffixes](../modding-guides/items-equipment/adding-new-items/#suffixes-and-whether-you-need-them), allowing you to load different appearances based on body gender or camera mode. These are only used for player clothing. They look like `&FPP`
+* How you split your .app files is largely a matter of taste. At CDPR, they usually shove everything into one file.
+
+
 
 ## What are suffixes?
 
-In a [root\_entity file](./#root-entity), you can give the game a list of appearances and have them mapped to an [.app file](../../references-lists-and-overviews/vehicles/archive/.app-file-appearanceresource.md) by entry name. While that's pretty good already, have you ever wanted to be more specific — for example, "for a male character, use this appearance, but for a female use this other one?"
+In a [root\_entity file](entity-.ent-files.md#root-entity), you can give the game a list of appearances and have them mapped to an [.app file](../references-lists-and-overviews/vehicles/archive/.app-file-appearanceresource.md) by entry name. While that's pretty good already, have you ever wanted to be more specific — for example, "for a male character, use this appearance, but for a female use this other one?"
 
-This is where suffixes come in. You append them to an appearance's name in the [root\_entity](./#root-entity), and the game will pick the correct appearance (and the correct [app file](../../references-lists-and-overviews/vehicles/archive/.app-file-appearanceresource.md), and the correct [mesh](broken-reference)!) based on the best match.
+This is where suffixes come in. You append them to an appearance's name in the [root\_entity](entity-.ent-files.md#root-entity), and the game will pick the correct appearance (and the correct [app file](../references-lists-and-overviews/vehicles/archive/.app-file-appearanceresource.md), and the correct [mesh](broken-reference)!) based on the best match.
 
 
 

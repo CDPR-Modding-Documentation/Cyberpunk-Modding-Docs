@@ -108,7 +108,7 @@ Four **mappings** take place here:
 2. `appearanceName`: In the [root entity](archive-xl-item-structure-explained.md#rootentity.ent) specified in the factory, it will look for an appearance by this name.
 
 {% hint style="info" %}
-The appearance name will only be considered up to the first [suffix](archive-xl-item-structure-explained.md#suffixes-and-whether-you-need-them). If you want to know what those pesky & things are doing, read up the corresponding documentation.&#x20;
+The appearance name will only be considered up to the first [suffix](../../../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes). If you want to know what those pesky & things are doing, read up the corresponding documentation.&#x20;
 
 You don't need to know this unless you want to add variants for different genders or camera perspectives: we're avoiding them by putting`appearanceSuffixes: []`.
 {% endhint %}
@@ -121,7 +121,7 @@ You don't need to know this unless you want to add variants for different gender
 `$base` defines which slot the item will use. For the full documentation, see "[Different equipment slots](different-equipment-slots.md)".
 
 {% hint style="info" %}
-The inherited properties can cause problems (see "[**Suffixes, and whether you need them**](../../../files-and-what-they-do/entity-.ent-files/.ent-files-suffixes.md)" for more detail).&#x20;
+The inherited properties can cause problems (see "[**Suffixes, and whether you need them**](../../../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes)" for more detail).&#x20;
 
 You don't need to know this unless you want to add variants for different genders or camera perspectives: we're avoiding them by putting`appearanceSuffixes: []`.
 {% endhint %}
@@ -150,7 +150,7 @@ This is how the files connect to each other. If your head explodes now, don't wo
 ### root\_entity.ent
 
 {% hint style="info" %}
-[Would you like to know more?](../../../files-and-what-they-do/entity-.ent-files/#root-entity) Full documentation of the root\_entity is on its own page.
+[Would you like to know more?](../../../files-and-what-they-do/entity-.ent-files.md#root-entity) Full documentation of the root\_entity is on its own page.
 
 Understanding this is not necessary for the purpose of this guide.
 {% endhint %}
@@ -166,7 +166,7 @@ An entry looks like this:
 The root entity's `name` field is where you would put **suffixes** for different appearance variants.&#x20;
 
 {% hint style="warning" %}
-You don't need to know [what suffixes are](../../../files-and-what-they-do/entity-.ent-files/.ent-files-suffixes.md) unless you want to make variants for different genders or camera types. In fact, you will want to skip this until you have a confirmed and working mod!
+You don't need to know [what suffixes are](../../../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes) unless you want to make variants for different genders or camera types. In fact, you will want to skip this until you have a confirmed and working mod!
 
 To disable them, each entry in your [.yaml](archive-xl-item-structure-explained.md#the-control-file-yourmodname.yaml) contains the following line:\
 &#x20; `appearanceSuffixes: []`&#x20;
@@ -227,7 +227,7 @@ The component's `name` will be used in `appearance.app`'s materialOverride array
 {% hint style="info" %}
 **Would you like to know more?**&#x20;
 
-Full documentation of [mesh\_entity](../../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity)\
+Full documentation of [mesh\_entity](../../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity)\
 More intel on [components](../../../files-and-what-they-do/components/)
 
 Understanding this is not necessary for the purpose of this guide!

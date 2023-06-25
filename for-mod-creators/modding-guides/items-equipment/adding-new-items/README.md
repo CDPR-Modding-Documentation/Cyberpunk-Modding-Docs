@@ -276,7 +276,7 @@ Items.my_custom_shirt_redwhite:
 ```
 
 {% hint style="info" %}
-If you are unclear about why this step was taken, we recommend [reading up on suffixes](../../../files-and-what-they-do/entity-.ent-files/.ent-files-suffixes.md)!
+If you are unclear about why this step was taken, we recommend [reading up on suffixes](../../../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes)!
 {% endhint %}
 
 ### Edit the rootentity.ent
