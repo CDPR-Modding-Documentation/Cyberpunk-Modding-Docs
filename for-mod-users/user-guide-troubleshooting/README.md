@@ -801,6 +801,8 @@ Delete the file `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\bindings.jso
 
 With 1.62, screenshots are now saved to `Documents\CDPR\Cyberpunk\Screenshots` , and the previous location will receive an empty file.
 
+With 1.63, screenshots have now been moved _back_ to `\Pictures\Cyberpunk 2077`
+
 ## Press \[none] to continue
 
 That is due to [Input Loader](https://www.nexusmods.com/cyberpunk2077/mods/4575) requiring an update.
