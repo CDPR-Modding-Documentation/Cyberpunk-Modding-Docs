@@ -11,7 +11,7 @@ description: Overview of hair related things
 **Updated February 3 2023**
 
 {% hint style="info" %}
-If you want to change an NPC's hair instead, you can check [this](../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair) or [this](../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components) guide.
+If you want to change an NPC's hair instead, you can check [this](../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair) or [this](../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components) guide.
 {% endhint %}
 
 {% hint style="success" %}
@@ -32,7 +32,7 @@ List has been confirmed working before 1.6, but might need updating (especially 
 
 ## Hair .ent files
 
-Hairs and all their components are assigned and defined via [.ent files](../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity). You can find them here:
+Hairs and all their components are assigned and defined via [.ent files](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity). You can find them here:
 
 ```
 base\characters\head\player_base_heads\appearances\entity\hairs 
@@ -40,7 +40,7 @@ base\characters\head\player_base_heads\appearances\entity\hairs
 
 The last number in the file name matches the first number in the [.mesh file name](hair.md#name-in-files-by-index):
 
-<figure><img src="../../.gitbook/assets/cheatsheet_hair_entity_lookup.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cheatsheet_hair_entity_lookup.png" alt=""><figcaption></figcaption></figure>
 
 e.g., if you wanted to edit the entity file for female V's hair 28 `hh_083_wa__ponytail_01`, you could search for&#x20;
 

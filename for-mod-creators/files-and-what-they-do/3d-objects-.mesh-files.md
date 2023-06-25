@@ -77,7 +77,7 @@ A material instance looks like this:
 <figure><img src="../../.gitbook/assets/material_docu_material_instance.png" alt=""><figcaption><p>baseMaterial picks the material (shader), while "values" contains <a href="3d-objects-.mesh-files.md#checking-material-properties">properties</a> to adjust it.</p></figcaption></figure>
 
 {% hint style="info" %}
-For an overview of materials that you might want to use for something, check [here](../references-lists-and-overviews/cheat-sheet-materials.md).&#x20;
+For an overview of materials that you might want to use for something, check [here](../references-lists-and-overviews/materials/cheat-sheet-materials.md).&#x20;
 
 For how to find out which properties a material has, check [here](../materials/#checking-material-properties).
 {% endhint %}

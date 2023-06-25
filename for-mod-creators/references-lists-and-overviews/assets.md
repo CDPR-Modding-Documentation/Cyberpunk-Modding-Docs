@@ -1,4 +1,4 @@
-# Assets
+# Assets explained
 
 ## What is an asset?
 
@@ -52,7 +52,7 @@ Pre-defined tiling surface component of the [**Multilayer supershader**](../mate
 
 ### HP (hair profile)
 
-Color ramp data to set colors for meshes using the hair [**shader**](shaders/)
+Color ramp data to set colors for meshes using the hair [**shader**](materials/shaders.md)
 
 ## Visual Asset Graphs
 

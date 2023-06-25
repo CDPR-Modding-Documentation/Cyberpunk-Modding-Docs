@@ -12,7 +12,7 @@ Every visual asset in REDengine uses a specific shader, designated by REDengine 
 
 ## What are materials?
 
-Materials are a _specific_ instance of a [shader](./) file, to be used on a mesh or subset of meshes. Materials are contained inside **mi** (material instance) files or within mesh files themselves as a **CMaterialInstance** chunk. While internal material instance chunks can be handy to have inside the mesh, external mi files can be used for multiple meshes.\
+Materials are a _specific_ instance of a [shader](shaders.md) file, to be used on a mesh or subset of meshes. Materials are contained inside **mi** (material instance) files or within mesh files themselves as a **CMaterialInstance** chunk. While internal material instance chunks can be handy to have inside the mesh, external mi files can be used for multiple meshes.\
 \
 It's important to remember that materials are simply instances of shaders. The variables contained within the material only take effect when those same variables are present inside the base shader. For example, if **RoughnessTexture** is not present within the base shader adding this property to a material instance will have absolutely no effect.
 

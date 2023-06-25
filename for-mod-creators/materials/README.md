@@ -8,7 +8,7 @@ This is the landing page for **materials** in Cyberpunk 2077. It contains a defi
 
 ## If you already know that:
 
-* To find material instances or -templates for direct edits, check [here](../references-lists-and-overviews/cheat-sheet-materials.md).
+* To find material instances or -templates for direct edits, check [here](../references-lists-and-overviews/materials/cheat-sheet-materials.md).
 * For a mesh-specific explanation, check [here](broken-reference).&#x20;
 * For a list of properties and their explanation check [here](configuring-materials.md).
 

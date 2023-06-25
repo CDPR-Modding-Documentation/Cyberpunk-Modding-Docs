@@ -133,7 +133,7 @@ To find out which variants and appearances to use, I suggest that you use NoraLe
 <figure><img src="../../../../.gitbook/assets/npv_guide_part_picker_preview.png" alt=""><figcaption><p>Find it at <a href="https://noraleedoes.neocities.org/npv/npv_part_picker">https://noraleedoes.neocities.org/npv/npv_part_picker</a></p></figcaption></figure>
 
 {% hint style="info" %}
-This is where you select your eyebrow appearance — open up the mesh file and expand the first list `appearances`. There you can see a bunch of colours and numbers. The numbers correspond with the character editor, and you can look the colours up [here](../../../references-lists-and-overviews/hair.md).
+This is where you select your eyebrow appearance — open up the mesh file and expand the first list `appearances`. There you can see a bunch of colours and numbers. The numbers correspond with the character editor, and you can look the colours up [here](../../../references-lists-and-overviews/body/hair.md).
 {% endhint %}
 
 Each of the prepared .app files has two appearances, `casual` and `business`. I tried hooking up all the components for you (might have forgotten some). In that case, you simply duplicate any of the entSkinnedMeshComponents and change `depotPath` and `apperance`:
@@ -169,7 +169,7 @@ This section will teach you how to find the necessary components to add the righ
 
 1. Delete the current hair from the .app — there should be 2-3 components, their names will start with either `hair_` or `hh_0`
 2. Find the correct hair mesh. You have three options for this:
-   1. Looking it up on [our nifty list](../../../references-lists-and-overviews/hair.md#name-in-files-by-index)
+   1. Looking it up on [our nifty list](../../../references-lists-and-overviews/body/hair.md#name-in-files-by-index)
    2. Using [NoraLee's NPV Part Picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker)&#x20;
    3. Filtering the files and clicking through their previews: \
       female: `base\characters\common\hair > wa_ > .mesh > !shadow`\

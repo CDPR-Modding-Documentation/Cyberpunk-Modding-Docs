@@ -23,7 +23,7 @@ Which of these layers affects which part of your mesh will be determined in the 
 {% endhint %}
 
 {% hint style="success" %}
-For an overview of base materials and example files, you can check [here](../../../references-lists-and-overviews/cheat-sheet-materials.md).
+For an overview of base materials and example files, you can check [here](../../../references-lists-and-overviews/materials/cheat-sheet-materials.md).
 {% endhint %}
 
 ## **Step 1: Finding your item**
