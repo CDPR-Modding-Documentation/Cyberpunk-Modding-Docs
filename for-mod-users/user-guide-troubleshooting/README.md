@@ -832,18 +832,20 @@ Now, how do we go about this?
 
 If you don't want to download and run script files from the internet, you can go [here](./#step-1-temporarily-disable-all-your-mods) and complete the steps by hand. Otherwise:
 
-1. Download [this script](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/batch/cyberpunk2077\_disable\_all\_mods.bat) (**right-click -> save as**)\
-   _Link goes to the_ [_github repository_](https://github.com/manavortex/cyberpunk2077/blob/master/batch/cyberpunk2077\_disable\_all\_mods.bat) _of the person who wrote most of this guide_.
+1. Download the mod remover script by either
+   * downloading it from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8597/) and following the install instructions
+   * grabbing it from [github](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/batch/cyberpunk2077\_disable\_all\_mods.bat) (**right-click -> save as**) and moving it to your Cyberpunk dir\
+     _Link goes to the_ [_github repository_](https://github.com/manavortex/cyberpunk2077/blob/master/batch/cyberpunk2077\_disable\_all\_mods.bat) _of the person who wrote most of this guide_.
 2.  **Optional**: If you don't want the script to delete modded files for you (because you just want to disable mods), right-click on the file and select **Edit**, then find and delete line 6:
 
     ```
     set DELETE_FILES=1
     ```
-3. Now, do either of the following things:&#x20;
-   1. Move it to your Cyberpunk install folder and double-click it
-   2. Drag-and drop your Cyberpunk folder on the file that you downloaded
-4. Follow the instructions and prompts,
-5. You can now proceed to [Step 5](./#step-5-repair-game-files) and verify your game files.
+3. Make sure that the file is in your Cyberpunk directory. If you downloaded from Nexus, you should have a `cyberpunk2077_disable_all_mods.bat.`
+4. Double-click it
+5. Follow the instructions and prompts
+6. Verify your game files
+7. **Optional:** You can now proceed to [Step 5](./#step-5-repair-game-files) and start modding your game again.
 
 {% hint style="success" %}
 Instead of following these instructions, you can also [reinstall the game](./#the-nuclear-option-a-clean-install). Do yourself a favour and check the instructions, as you might be left with residual files otherwise.
