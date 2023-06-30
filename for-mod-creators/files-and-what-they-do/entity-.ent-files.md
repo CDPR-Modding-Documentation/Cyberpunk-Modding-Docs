@@ -35,7 +35,9 @@ In a [root\_entity file](entity-.ent-files.md#root-entity), you can give the gam
 
 This is where suffixes come in. You append them to an appearance's name in the [root\_entity](entity-.ent-files.md#root-entity), and the game will pick the correct appearance (and the correct [app file](../references-lists-and-overviews/vehicles/archive/.app-file-appearanceresource.md), and the correct [mesh](broken-reference)!) based on the best match.
 
-
+{% hint style="success" %}
+For a more detailed walkthrough on how to do that, check the ArchiveXL item addition guide.
+{% endhint %}
 
 If you are registering an item via ArchiveXL, you can define suffixes via  `appearanceSuffixes: [ … ]` in the .yaml file.
 
