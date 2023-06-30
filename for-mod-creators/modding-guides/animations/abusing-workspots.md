@@ -4,6 +4,10 @@ description: Or how to play an animation on an entity through clever gimmicks in
 
 # Abusing workspots
 
+{% hint style="warning" %}
+This is an advanced tutorial that necessite that you understand the basics of wolvenkit
+{% endhint %}
+
 ### Credits
 
 First of all, let's give credits to people out there:
@@ -29,7 +33,7 @@ The trick is actually to spawn an invisible device (`.ent`) right onto your enti
 
 So it happens that we need a `.ent` file whose `components` contains a `workWorkspotResourceComponent` which references a `.workspot` by `name` and `DepotPath`.
 
-In turn, `.workspot` file contains a list of `worksSequence`s containing `workAnimClip`s which are the animations to play with `idleName` and `animName`.
+In turn, `.workspot` file contains a list of `worksSequence`s containing `workAnimClip` which are the animations to play with `idleName` and `animName`.
 
 Of course the `.ent` must be made invisible and contain a set of specific properties, and this is where all hard work was already made by **Cyberscript** people.
 
@@ -40,15 +44,31 @@ Of course the `.ent` must be made invisible and contain a set of specific proper
 
 What I personally did was to reuse **Cyberscript** archive `.ent` stripped of `components` that I don't need, and `.workspot` with only the animations that I'm interested into.
 
-<figure><img src="../../../.gitbook/assets/CET+RED-workspot-analysis.png" alt=""><figcaption></figcaption></figure>
+To do the same, you will need to download the [Cyberscript Core Animation Archive](https://www.nexusmods.com/cyberpunk2077/mods/7691), install it in your mod folder so that Wolvenkit can find it, and locate the `workspot_anim.ent` file in the following directory structure:
 
-#### Redscript
+```
+cyberscript.archive/
+├─ base/
+│  ├─ cyberscript/
+│  │  ├─ entity/
+│  │  │  ├─ workspot_anim.ent
+```
 
-Once archive is ready, we need something able to spawn an entity in **Redscript** (once again if your preference goes to **Lua**, I'd recommend you to use **Cyberscript** directly).
+You can then use wolvenkit and your file explorer to move the `workspot_anim.ent` in the location of your choice inside your mod. Then you can strip it of every components that isn't a`workWorkspotResourceComponent` using wolvenkit.
+
+Then you will need to locate an interesting `.workspot`  file inside the `base/workspot` of the game and place it in the location of your choice inside the archive folder of the mod you are creating.
+
+<figure><img src="../../../.gitbook/assets/CET+RED-workspot-analysis (2).png" alt=""><figcaption><p>A theorical mod file structure</p></figcaption></figure>
+
+Redscript
+
+Once the previous files are ready, we need something able to spawn an entity in **Redscript** (once again if your preference goes to **Lua**, I'd recommend you to use **Cyberscript** directly).
 
 This is exactly what [Codeware](https://github.com/psiberx/cp2077-codeware) offers with `DynamicEntitySystem`: see ["Entities" in its wiki](https://github.com/psiberx/cp2077-codeware/wiki#entities)!
 
 Here's a short example which will get us going:
+
+(You will need to replace the paths to the `.ent` and `.workspot` files with the paths to your files )
 
 ```swift
 // minimal example
@@ -89,7 +109,7 @@ public func Smoke() -> Void {
 private cb func OnEntityUpdate(event: ref<DynamicEntityEvent>) {
 
     // make sure this is our .ent and it has spawned succesfully
-    if Equals(event.GetTag(), n"MyMod") && Equals(EnumInt(event.GetType()), EnumInt(DynamicEntityEventType.Spawned)) {
+    if Equals(event.GetEventType(),DynamicEntityEventType.Spawned){
 
         // retrieve our invisible device
         let device = GameInstance
@@ -141,9 +161,17 @@ private cb func OnEntityUpdate(event: ref<DynamicEntityEvent>) {
 }
 ```
 
-### Clearing misconceptions
+### Adding the script to your mod
 
-Actually the ones I personally had before:
+to add this script to your mod, you will need to create the following structure in the `ressources` folder of your mod:
+
+```
+r6/
+├─ scripts/
+│  ├─ your_script.reds
+```
+
+### Clearing misconceptions
 
 * `.ent` can be anything, not just a "living entity". it can be a cigarette, the act of smoking.. it can really be "whatever".
   * it contains `components` with e.g. `workspotMapper`, `entSlot`, etc
