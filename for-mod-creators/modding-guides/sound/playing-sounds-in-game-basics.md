@@ -13,7 +13,7 @@ This is a very basic tutorial so you don't need much knowledge to do it successf
 * Wolven kit
 * Any text editor capable of opening a big JSON file without crashing
 
-That about it
+That's about it.
 
 ## A quick introduction:
 
@@ -35,10 +35,11 @@ There are 3 documented ways to play sounds using scripting. Two are linked to th
 
 #### &#x20;The first way:
 
-<pre class="language-swift"><code class="lang-swift"> let evt: ref&#x3C;SoundPlayEvent> = new SoundPlayEvent();
- evt.soundName = n"ono_v_effort_short";
-<strong> player.QueueEvent(evt);
-</strong></code></pre>
+```swift
+let evt: ref<SoundPlayEvent> = new SoundPlayEvent();
+evt.soundName = n"ono_v_effort_short";
+player.QueueEvent(evt);
+```
 
 #### The second way:
 
@@ -58,13 +59,13 @@ If you try to run the script now it will most likely fail because you don't have
 
 So how to get the player?
 
-it's actually quite easy, once a save has been loaded, you can simply use:
+It's actually quite easy, once a save has been loaded, you can simply use:
 
 ```swift
 let player: wref<PlayerPuppet> = GetPlayer(GetGameInstance())
 ```
 
-You are not even obligated to get the player. You can use any `GameObject` capable of handling events in the event way and you can use any `GameObject` at all using the helper function as if it isn't valid it will use the game engine to play the sound (It will not be spatialized this way)
+You are not even obligated to get the player. You can use any `GameObject` capable of handling events in the event way and you can use any `GameObject` at all using the helper function. If it isn't valid, the `GameObject` method will use the game engine to play the sound. (It will not be spatialized this way)
 
 ## Playing any sounds that aren't V grunting:
 
@@ -87,35 +88,4 @@ sq027_sc_08_panam_pours_drink
 
 Use any of these IDs and experiment!
 
-There is a lot of them so use string search to find them more quickly. You can also search for them in the `events` array for easier search with tags.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+There is a lot of them so use string search to find them more quickly. You can also search for them in the `events` array for an easier search with tags.
