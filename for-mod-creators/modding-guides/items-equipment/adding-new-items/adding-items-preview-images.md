@@ -68,6 +68,8 @@ You can [export your mesh with all its materials](../../../3d-modelling/exportin
 
 ## Add it to the yaml
 
+### One for all
+
 The last three lines in the box below control the icon:
 
 * `atlasResourcePath`: relative path to your .inkatlas file
@@ -91,6 +93,32 @@ Items.my_custom_shirt_redwhite:
 Again, please note that indent is **crucial** here, as it determines the node structure. The first line needs to have an indent of 0, the lines from `$base` to `icon` need to have two spaces, and the lines `atlasResourcePath` and `atlasPartName` need to have four.
 {% endhint %}
 
-That's it! Time to test!
+### One per gender
+
+For this, delete the icon properties above and create UIIcon records. They need to follow this naming pattern:
+
+```
+UIIcon.clothing_ENTITYNAME_APPEARANCENAME_SUFFIXES_VISUALTAGS
+```
+
+{% hint style="info" %}
+`ENTITYNAME` and `APPEARANCENAME` correspond to the fields in your yaml file.
+{% endhint %}
+
+So you'd define a preview image like this:
+
+```
+UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_white_red_Female_:
+    $type: UIIcon
+    atlasResourcePath: tutorial\torso\my_custom_shirt\ops\preview_icons.inkatlas
+    atlasPartName: slot_01
+    
+UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_white_red_Male_:
+    $type: UIIcon
+    atlasResourcePath: tutorial\torso\my_custom_shirt\ops\preview_icons_pma.inkatlas
+    atlasPartName: slot_01
+```
+
+## That's it! Time to test!
 
 If you run into any issues with your texture's transparency, please [check the textures import/export guide!](../../../textures/images-importing-editing-exporting.md)
