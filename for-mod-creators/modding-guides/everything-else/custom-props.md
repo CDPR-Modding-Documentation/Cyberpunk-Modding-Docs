@@ -7,9 +7,11 @@ description: How to create custom props to use with AMM or sector editing
 ## Summary <a href="#summary" id="summary"></a>
 
 **Created by @manavortex**\
-**Published April 82023**
+**Published April 2023, updated July 2023**
 
-This guide will teach you how to create a customizable by chaining an .ent, an .app, and a .mesh file with multiple appearances. Its focus is on the file structure and the relations between the files. If you want more hands-on tips what you can do with materials, check [here](textured-items-and-cyberpunk-materials.md) or [here](../../materials/).&#x20;
+This guide will teach you how to create a customizable by chaining an .ent, an .app, and a .mesh file with multiple appearances.&#x20;
+
+Its focus is on the **file structure** and the **relations between the files**. If you want more hands-on tips what you can do with materials, check [here](textured-items-and-cyberpunk-materials.md) or [here](../../materials/).&#x20;
 
 **It uses the following versions:**
 
@@ -22,8 +24,10 @@ This guide will teach you how to create a customizable by chaining an .ent, an .
 
 ## Setting up the project
 
+This section will tell you how to get the files, then give you an [explanation](custom-props.md#explanation-what-did-you-just-download) of what they do and finally show you a [diagram](custom-props.md#diagram) on how they hang together.
+
 1. Create a project in Wolvenkit and give it a name. This will later be the name of your archive file.
-2. Download the AMM prop template from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8011) or from manavortex's [mega](https://mega.nz/file/LFk02RJS#Vnb5XnNayICKNEFVeAVM7\_LunydUFDNHyAiW6SR41g8), or download the complete [source folder](https://mega.nz/file/OYVBAByY#\_FYr6OpKYK3q5\_bcyKjtnljFv\_dwqyHkTNKL0zG84Pg) for Wolvenkit. It will have prepared files, which is faster than doing everything from scratch by yourself.
+2. Download the AMM prop template from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8011) or from manavortex's [mega](https://mega.nz/file/3Q1hiTjL#\_-6O\_9m3vk50Qkhfck\_vKQ2\_xI07BCvQVdem1es\_4tI), or download the complete [source folder](https://mega.nz/file/OYVBAByY#\_FYr6OpKYK3q5\_bcyKjtnljFv\_dwqyHkTNKL0zG84Pg) for Wolvenkit. It will have prepared files, which is faster than doing everything from scratch by yourself.
 3.  Prepare your Wolvenkit project and make sure that you have the following files:
 
     <figure><img src="../../../.gitbook/assets/amm_props_structure.png" alt=""><figcaption></figcaption></figure>
@@ -34,7 +38,13 @@ The first part of the structure is up to you, although for the sake of the tutor
 The second part (under "resources") is where AMM will look for custom props. You can't change it other than creating subfolders under "Custom Props".
 {% endhint %}
 
-### Explanation
+### Explanation: what did you just download?
+
+{% hint style="success" %}
+This section gives an explanation of the included files, explaining the difference in file structure between props with vs without variants.&#x20;
+
+If you don't want to know this, you can skip ahead to [Creating another prop](custom-props.md#creating-another-prop) to get crackin', or check the [diagram](custom-props.md#diagram) to see how the files connect.
+{% endhint %}
 
 #### LUA file
 
@@ -83,28 +93,44 @@ Without a `lua` file, AMM (as of version 2.1) won't be able to spawn your props.
 
 #### Entity file
 
-Where AMM looks up how to load a prop, as defined in your `LUA` file. Think of it as a dictionary between the appearance names as defined in the lua and the actual game files.
+Defined in your `LUA` file, this file holds the game entity that AMM spawns when you click the button. There are two ways of using entity files:&#x20;
 
-As you can see, it has a `components` array. We will make use of this by placing the `gameTargetingComponent` here, which will let AMM focus the prop via cursor.
+**Mesh entity (the legacy version)**
 
-As of AMM 2.1, props finally support appearance switching like NPCs! We do this by loading an .app file, which will hold different components per appearance:
+One entity file per variant. The props will not have appearances — AMM's prop browser has one entry per entity file (e.g. `cube_black`, `cube_white`, `cube_glowing`).&#x20;
 
-<figure><img src="../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>Root entity, pointing towards an .app file</p></figcaption></figure>
+{% hint style="info" %}
+**Fun fact:** The cluttered prop browser annoyed manavortex so much that she joined the AMM developer team, helped Max implement the alternative workflow described below the picture, and wrote this guide!&#x20;
 
-As a reminder, this is how the old variant used to look:
+It was bad!
+{% endhint %}
 
-<figure><img src="../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>Mesh/Component entity, loading something directly</p></figcaption></figure>
+You add props by putting meshes directly into the components array.&#x20;
+
+<figure><img src="../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>Mesh/Component entity, loading something directly. You can read more about the theory <a href="../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
+
+**Root entity**
+
+One entity file per prop, one entry in AMM's prop browser (e.g. `cube`). After spawning it, you can toggle its appearances (`white`, `black`, `glowing`) the same way you do it with NPCs.
+
+{% hint style="info" %}
+If you have [added clothing items](../items-equipment/adding-new-items/), then this will be familiar to you. If you haven't, please ignore the link and keep reading — this is the simpler version!
+{% endhint %}
+
+Instead of adding items directly via the components array, we link **appearances** to an .app file. The only component we keep in the root entity is the **targeting component** for the CET cursor: this way, it will be added to each appearance in the .app file.
+
+<figure><img src="../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>Root entity, pointing towards an .app file. You can read more about the theory <a href="../../files-and-what-they-do/entity-.ent-files.md#root-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
 #### Appearance file
 
-This file holds the specifics by defining a list of `appearances`. Inside each appearance, you can define any number of things to be loaded (components) and specify or override their behaviour.
+This file holds a list of `appearances`. Inside each `appearance`, you can define any number of things to be loaded (components) and specify or override their behaviour.
 
 {% hint style="info" %}
 We will only use `entPhysicalMeshComponent`s, and they must be named  `amm_prop_slot1` .. `amm_prop_slot4` if you want to enable scaling.
 {% endhint %}
 
 {% hint style="warning" %}
-If you have more than four mesh files assigned to your app's components, the prop will no longer be scaleable (as of AMM 2.1). You can get around this limitation by making meshes with more submeshes instead of individual files.
+If you have more than four mesh files assigned to your app's components, the prop will no longer be scaleable (as of AMM 2.1). You can get around this limitation by **making meshes with more submeshes** instead of having individual files.
 {% endhint %}
 
 #### template\_textured.mesh
@@ -118,13 +144,17 @@ A pre-configured mesh for a textured material. Uses the following files in the s
 If you stick to this naming convention and have your filenames end in `_d` or `_n`, Wolvenkit will recognize and identify the correct settings for image import.
 {% endhint %}
 
+You can learn more about textured materials [here](../../materials/#textured). This is not necessary for the purpose of this guide.
+
 #### template\_multilayered.mesh
 
-A pre-configured mesh for a textured material. Uses the following files in the subfolder `textures`:
+A pre-configured mesh for a multilayered material. Uses the following files in the subfolder `textures`:
 
 * `6_layers.mlsetup`: A [multilayer setup](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material) with colour properties
 * `6_layers.mlmask`: A [multilayer mask](../../materials/multilayered.md), determining which parts of the mesh are affected by which layer of the mlsetup. In this case, it just contains six blank layers.
 * `template_01_n.xbm`: A normal (bump) map, adding depth to the object.
+
+You can learn more about multilayered materials [here](../../materials/#multilayered). This is not necessary for the purpose of this guide.
 
 {% hint style="success" %}
 If you have downloaded the example Wolvenkit project, you can now install it and launch the game, seeing everything in action.
@@ -132,15 +162,15 @@ If you have downloaded the example Wolvenkit project, you can now install it and
 
 ### Diagram
 
-Here's how the files connect:
+Okay, now that we've gone through the theory, let's have a quick overview how everything hangs together:
 
-<figure><img src="../../../.gitbook/assets/ent_app_mesh_relationship.png" alt=""><figcaption><p>Looks scary, but is pretty straightforward. Follow the arrows through the files.</p></figcaption></figure>
+#### Without variants
 
-### Props without variants (the traditional way)
+<figure><img src="../../../.gitbook/assets/amm_custom_props__mesh_entity diagram.png" alt=""><figcaption><p>No app file, directly pulling in a mesh with defined appearance</p></figcaption></figure>
 
-Creating props without variants is even easier than doing it with the `.app`, as we can simply put the `components` directly into the `.ent` file and call it a day:
+#### With variants
 
-<figure><img src="../../../.gitbook/assets/amm_template_without_variants.png" alt=""><figcaption><p>This is the traditional (vanilla) way to do things, you're probably already familiar with it.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ent_app_mesh_relationship.png" alt=""><figcaption><p>The better option — not actually that much more complex, is it? :)</p></figcaption></figure>
 
 ## Creating another prop
 
@@ -179,13 +209,9 @@ If you want to create another prop, here's the fastest non-script way to go abou
 
 Now you can launch the game and check your prop. If everything went well, you should see something like this now:
 
-If not, it is time to hit up the [troubleshooting](custom-props.md#troubleshooting).
-
-{% hint style="info" %}
-If you want to learn more about materials, you can check out [this guide](textured-items-and-cyberpunk-materials.md) or browse the documentation section's [material pages](../../materials/).
-{% endhint %}
-
 <figure><img src="https://i.imgur.com/GQ8fELd.png" alt=""><figcaption><p>Not a moon</p></figcaption></figure>
+
+If not, it is time to hit up the [troubleshooting](custom-props.md#troubleshooting).
 
 ## Troubleshooting
 

@@ -10,7 +10,7 @@ description: 'Step 2: How to create a custom NPC'
 **Published May 13 2023**
 
 {% hint style="info" %}
-As much of the information here has been documented in [other guides](../appearances-change-the-looks.md), the information below will be kept initially brief. Might write more to a later point, but there is a lot of [documentation](../../../references-lists-and-overviews/vehicles/archive/.app-file-appearanceresource.md) already.
+As much of the information here has been documented in [other guides](../appearances-change-the-looks.md), the information below will be kept initially brief. Might write more to a later point, but there is a lot of [documentation](broken-reference) already.
 {% endhint %}
 
 This page is a part of the [NPV guide](./). It will show you how to use the [provided example project](./#preparation) to create a custom NPC for Cyberpunk 2077, whom you can then spawn with AppearanceMenuMod.
@@ -117,10 +117,10 @@ Let's look at the .app file now.
 ## The app file
 
 {% hint style="info" %}
-[Would you like to know more?](../../../references-lists-and-overviews/vehicles/archive/.app-file-appearanceresource.md)
+[Would you like to know more?](broken-reference)
 {% endhint %}
 
-This is where all of your NPC's components are defined — stuff like which rig they use, their facial expression set, the shadow they cast, but also their hair and equipment. For details, see the .app file's [overview page](../../../references-lists-and-overviews/vehicles/archive/.app-file-appearanceresource.md), for another guide on this, see [here](../appearances-change-the-looks.md).
+This is where all of your NPC's components are defined — stuff like which rig they use, their facial expression set, the shadow they cast, but also their hair and equipment. For details, see the .app file's [overview page](broken-reference), for another guide on this, see [here](../appearances-change-the-looks.md).
 
 It looks like this:
 

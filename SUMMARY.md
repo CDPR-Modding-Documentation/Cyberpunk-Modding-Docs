@@ -59,8 +59,6 @@
       * [Vehicle Record](for-mod-creators/references-lists-and-overviews/vehicles/tweakdb/vehicle-record.md)
       * [Vehicle Drive Model Data Record](for-mod-creators/references-lists-and-overviews/vehicles/tweakdb/vehicle-drive-model-data-record.md)
     * [Archive](for-mod-creators/references-lists-and-overviews/vehicles/archive/README.md)
-      * [.ent File (entEntityTemplate)](for-mod-creators/references-lists-and-overviews/vehicles/archive/.ent-file-ententitytemplate.md)
-      * [.app File (appearanceResource)](for-mod-creators/references-lists-and-overviews/vehicles/archive/.app-file-appearanceresource.md)
       * [Appearances Mappings](for-mod-creators/references-lists-and-overviews/vehicles/archive/appearances-mappings.md)
       * [Vehicle Filename Parsing](for-mod-creators/references-lists-and-overviews/vehicles/archive/vehicle-filename-parsing.md)
       * [Base Types Map](for-mod-creators/references-lists-and-overviews/vehicles/archive/base-types-map.md)
