@@ -325,6 +325,8 @@ Some mods install themselves to multiple directories, but **that doesn't matter*
 
 {% hint style="info" %}
 If you already know which folder contains the broken mod, [skip to the next section](./#go-bisect).
+
+You can find a video of the process [below](./#bisect-video-demonstration).
 {% endhint %}
 
 To find out the **type** of broken mod, take each directory from the following list and complete the steps in the next paragraph after the table.
@@ -354,6 +356,8 @@ Congratulations, you have found which folder causes the problem — you're more 
      Move half of the mods out of the folder again. If this is not the first round, only do the last subset that you moved.
 
 Repeat this process until you've identified the mod that's crashing your game.
+
+#### Bisect: Video demonstration
 
 {% embed url="https://youtu.be/c1BkM6NFfkI" %}
 
