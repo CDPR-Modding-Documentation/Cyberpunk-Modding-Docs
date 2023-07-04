@@ -54,9 +54,8 @@ The screenshot below shows **suggestions**. Name your files and folders whatever
 
 This file tells Cyberpunk to load your custom poses and will be in the same folder as the .archive file for your mod. It looks like this:
 
-```
-animations:
-  - entity: base\characters\entities\player\photo_mode\player_wa_photomode.ent
+<pre><code><strong>animations:
+</strong>  - entity: base\characters\entities\player\photo_mode\player_wa_photomode.ent
     set: tutorial\animations\netrunner_making_poses\pwa.anims
   - entity: base\characters\entities\player\photo_mode\player_ma_photomode.ent
     set: tutorial\animations\netrunner_making_poses\pma.anims
@@ -66,7 +65,7 @@ localization:
   onscreens:
     en-us: tutorial\animations\netrunner_making_poses\localization.json
 
-```
+</code></pre>
 
 You have to adjust the paths under `set` and `en-us` to your new changed folder structure.
 
@@ -138,19 +137,24 @@ You need to add one of those for every pose from your .anim file that you want t
 
 ### Telling photo mode about the poses
 
-
+You register your poses for photo mode by creating the following entry categories:
 
 ```
 photo_mode.character.malePoses
 photo_mode.character.johnnyPoses
 photo_mode.character.femalePoses
+photo_mode.character.quadrupedPoses
 ```
 
 An entry looks like this:
 
 <figure><img src="../../../.gitbook/assets/archivexl_photomode_yaml_3.png" alt=""><figcaption></figcaption></figure>
 
-The entries in the list must match the unique keys that you've defined in the second block, and you need one entry per pose. If you have different names for differently-gendered poses, you need to use the correct lists.
+The entries in the list **must** match the unique keys that you've defined in the second block, and you need one entry per pose. If you have different names for differently-gendered poses, you need to use the correct lists.
+
+{% hint style="info" %}
+`photo_mode.character.quadrupedPoses` enables Nibbles photo mode replacer support for AMM >= 2.2.4
+{% endhint %}
 
 ## The result
 
