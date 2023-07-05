@@ -9,7 +9,7 @@ description: Modding your game, for users
 {% endcontent-ref %}
 
 {% hint style="info" %}
-This page contains instructions on **installing** mods. If you want to **create** mods instead, check [here](../../for-mod-creators/modding-cyberpunk-2077/).
+This page contains instructions on **installing** mods. If you want to **create** mods instead, check [here](broken-reference).
 {% endhint %}
 
 ## How to install mods
