@@ -31,7 +31,7 @@ It's not a problem if you use your own custom paths. You just need to keep that 
 {% endhint %}
 
 {% hint style="success" %}
-You can pack the Wolvenkit project and spawn Tutorial Man and Tutorial Woman via AMM to check out your progress.
+At any time during the tutorial, you can **install** the Wolvenkit project (Wolvenkit has a button in the toolbar) and spawn **Tutorial Man** and **Tutorial Woman** via AMM to check out your progress.
 {% endhint %}
 
 ## The .lua file

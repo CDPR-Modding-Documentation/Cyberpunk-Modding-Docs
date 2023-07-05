@@ -18,7 +18,7 @@
 ## For Mod Creators:
 
 * [🗺 Modding Guides](for-mod-creators/modding-guides/README.md)
-  * [Analysing other mods](for-mod-creators/modding-guides/analysing-other-mods.md)
+  * [Analysing other mods](for-mod-creators/modding-cyberpunk-2077/analysing-other-mods.md)
   * [WolvenKit Guide Section](https://wiki.redmodding.org/wolvenkit/guides/modding-community)
   * [Community guides](for-mod-creators/modding-guides/community-guides/README.md)
     * [external: NPVs (V as NPC) - custom NPCs](for-mod-creators/modding-guides/community-guides/external-npvs-v-as-npc-custom-npcs.md)

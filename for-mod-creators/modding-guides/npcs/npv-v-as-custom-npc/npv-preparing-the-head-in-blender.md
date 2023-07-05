@@ -13,6 +13,8 @@ This page is a part of the [NPV guide](./). It will show you how to create your 
 You need the **prepared Wolvenkit project**, which is linked on the [main page](./#preparation).
 {% endhint %}
 
+In this section, we will be moving/deleting files. You can complete these steps in Wolvenkit or in the Windows File Explorer.
+
 ## Step 1: Getting head
 
 1. Open the `head` folder
@@ -124,9 +126,11 @@ Once you're done, you should have this many files:
 
 ## Step 2: Exporting head
 
+Now, we will export all .morphtarget files from Wolvenkit so that we can edit them **in Blender**. You will complete most of these steps in Blender, only the import/export happen in Wolvenkit.
+
 1.  Find the Export Tool (Tools -> Export)
 
-    1. Click into the empty row under "name" and write "`morphtarget`"
+    1. To filter, click into the empty row under "name" and write "`morphtarget`"
     2. Check the box in the header to select everything
     3. Click "Export Selected"
 
@@ -137,12 +141,8 @@ Once you're done, you should have this many files:
 
 
 2. Switch to your project's `raw` folder or Wolvenkit's `raw` perspective. You will find the entire file structure mirrored there.
-3. Navigate to the `head` folder again and find the file `head_import.blend` there.
-
-{% hint style="info" %}
-It's a utility file for exactly this process. It needs to go into the `head` folder, because it will automatically import and export the files for you.
-{% endhint %}
-
+3. In `head` folder, find the file `head_import.blend`. \
+   This file is a utility file which will automatically import and export the files for you. For that reason, it needs to be in a certain relative path.
 4. Open it in Blender. It will take you to the **scripting** perspective, where you'll see something like this:
 
 <figure><img src="../../../../.gitbook/assets/npv_blender_00_import.png" alt=""><figcaption><p>Looks scary, but you don't have to do anything here!</p></figcaption></figure>
@@ -170,7 +170,7 @@ You don't need to select the eyebrows here, as those are "painted on" later via 
 <figure><img src="../../../../.gitbook/assets/npv_tutorial_before_after.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-Some shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of your shape is shaped subtly wrong, **undo** your changes (Ctrl+Z), add or subtrat 1 from the corresponding shape key, and run the script again.
+Some shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of your shape is shaped subtly wrong or looks weird in the game, **undo** your changes (Ctrl+Z), add or subtract 1 from the corresponding shape key, and run the script again.
 {% endhint %}
 
 ## Step 3: Importing head
@@ -217,4 +217,8 @@ This happens when the UV maps are flipped. 8.9 doesn't implement that feature ye
 
 Alternatively, you can use the last script in the file, which will attempt to flip the UV maps for you. It might have an offset, though.
 
-##
+#### V was imported, but they're unsettlingly, subtly _wrong_
+
+If you had the example project lying around for a very long time, please try and redownload it ([Nexus link](https://www.nexusmods.com/cyberpunk2077/mods/8328)), as the first version had been using an NPC animationgraph for facial expressions.
+
+If that's not it, then you ran into the shapekey offset issue: ssome shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of your shape is shaped subtly wrong or looks weird in the game, add or subtract 1 from the corresponding shape key, and run the script again.
