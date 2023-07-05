@@ -13,6 +13,8 @@ description: PartsOverrides, visual tags, and how to use them
 
 This guide will explain how to influence meshes by directly in the .app file, overriding whatever is defined for the components in the .ent file which loads them.
 
+For even further customization options for wardrobe items, see [EquipmentEx](https://github.com/psiberx/cp2077-equipment-ex)'s readme.
+
 ## PartsOverrides
 
 {% hint style="info" %}
