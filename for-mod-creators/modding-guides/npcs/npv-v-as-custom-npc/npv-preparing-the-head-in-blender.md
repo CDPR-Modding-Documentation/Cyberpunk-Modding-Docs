@@ -10,7 +10,7 @@ description: 'Step 1: How to generate your V''s custom head mesh'
 {% hint style="info" %}
 This page is a part of the [NPV guide](./). It will show you how to create your V's head in Blender.&#x20;
 
-You need the **prepared Wolvenkit project**, which is linked on the [main page](./#preparation).
+You need the **prepared Wolvenkit project**, which is linked on the [main page](./#preparation), and [Blender](https://www.blender.org/download/). This has been tested with 3.5.1, but anything >= 3.4 should work.
 {% endhint %}
 
 In this section, we will be moving/deleting files. You can complete these steps in Wolvenkit or in the Windows File Explorer.
@@ -206,6 +206,10 @@ Yes, you absolutely can! Once you have imported them back into Wolvenkit, you ca
 ## Step 4: Troubleshooting
 
 Optimally, this process just runs with no hitches. However, during beta testing and troubleshooting, people ran into a few issues, so I'm listing them here.
+
+#### Blender import errors
+
+If you get an error within Blender, e.g. something like `AttributeError: 'NoneType' object has no attribute 'name'`, then something is wrong with your [Blender](https://www.blender.org/download/) install or you are using the wrong version. Reminder: This has been tested with 3.5.1, but anything >= 3.4 should work.&#x20;
 
 #### The piercings are in the wrong position!
 
