@@ -41,7 +41,7 @@ With a weapon, all that happens through **`visualTags`**.
 
 ### Define the visual tag in your .app file:
 
-**visualTags (violet)**: Must match the visualTags in your .ent file. If multiple entries match, one will be chosen at random.
+**visualTags (violet)**: Must match the visualTags in your `.yaml` file. If multiple entries match, one will be chosen at random.
 
 {% hint style="info" %}
 Unlike with an entity file, the appearance name doesn't matter. You can name all of them `foo`, and as long as you had the visual tags right, it still works (I would advise against it, though)
