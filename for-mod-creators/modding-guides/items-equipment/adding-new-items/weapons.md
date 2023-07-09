@@ -79,3 +79,24 @@ As the process of this is finicky and there can be all sorts of sudden unexpecte
 7. Now, finally, copy a working appearance from the .app file to your mesh entity (which you have linked in the app file's root as `baseEntity`). This will make your weapon show up in photo mode.
 
 If you wish to add a custom icon, follow the steps in the [corresponding guide](../../everything-else/custom-in-game-icons.md).
+
+
+
+## Adding custom player HUD icon
+
+
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-07-09 231525.jpg" alt=""><figcaption><p>Custom HUD created for the rebar club.</p></figcaption></figure>
+
+To add custom HUD icon:
+
+1. Add `base\gameplay\gui\widgets\ammo_counter\atlas_ammo_counter.inkatlas` and `base\gameplay\gui\widgets\ammo_counter\atlas_ammo_counter.xbm` to your project.
+2. Export `base\gameplay\gui\widgets\ammo_counter\atlas_ammo_counter.xbm` as PNG and create custom icon in chosen editing software. You can follow the same instructions as for creating custom inventory icon above.
+3. Import your PNG over the xbm with those settings:
+
+<figure><img src="../../../../.gitbook/assets/Screenshot 2023-07-09 232152.jpg" alt=""><figcaption><p>HUD Icon import settings.</p></figcaption></figure>
+
+4. Edit the inkatlas file as in icon creation guide.
+5. Add those in your yaml file. The `atlasResourcePath` should correspond to where your inkatlas file is located, `atlasPartName` should corespond to which slot was used in the inkatlas file for your custom icon, `$type` should be as on the screenshot.
+
+<figure><img src="../../../../.gitbook/assets/yamlhudiconweapon.png" alt=""><figcaption></figcaption></figure>
