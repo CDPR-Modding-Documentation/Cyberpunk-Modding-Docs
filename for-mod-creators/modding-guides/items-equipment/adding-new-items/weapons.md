@@ -77,3 +77,5 @@ As the process of this is finicky and there can be all sorts of sudden unexpecte
     Fix any issues that might arise. Don't forget that you can split off individual meshes for individual pieces, too.
 6. Once everything works, delete all other appearances, then duplicate and adjust the one you customized to show your color variants.
 7. Now, finally, copy a working appearance from the .app file to your mesh entity (which you have linked in the app file's root as `baseEntity`). This will make your weapon show up in photo mode.
+
+If you wish to add a custom icon, follow the steps in the [corresponding guide](../../everything-else/custom-in-game-icons.md).
