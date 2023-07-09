@@ -17,7 +17,7 @@ This guide assumes that you are at least somewhat familiar with ArchiveXL item a
 
 ## Selecting the base
 
-Start by finding the .app file of an original weapon of the type you want to make and adding it to your project. We will change that file, rather than assembling anything by hand.
+Start by finding the .app file of an original weapon of the type you want to make (Theres a list [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/equipment/weapons)) and adding it to your project. We will change that file, rather than assembling anything by hand.
 
 In the app file, you can also find the value for the yaml file's `$base` property:
 
