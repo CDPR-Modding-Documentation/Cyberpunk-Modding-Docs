@@ -23,6 +23,12 @@ In the app file, you can also find the value for the yaml file's `$base` propert
 
 <figure><img src="../../../../.gitbook/assets/archivexl_weapons_basetype.png" alt=""><figcaption></figcaption></figure>
 
+## Getting the mesh\_entity.ent
+
+You need the correct mesh entity to go with your appearance file. You can find them under `base\weapons`\ - search for the name of your weapon, or just navigate through the folders.&#x20;
+
+This file makes the weapon show up in photo mode. Instead of going into the PartsValues, it will be linked in the app file's root as `baseEntity` (there's a screenshot below). Leave it alone for now, it's easier to make the appearances working correctly in the .app file and then copying over an entire component array.
+
 ## Factory: .app instead of root\_entity
 
 Instead of a root entity file, you need to point your factory.csv directly to your iron's app file (the one from the section above).
@@ -54,17 +60,20 @@ Unlike with an entity file, the appearance name doesn't matter. You can name all
 As the process of this is finicky and there can be all sorts of sudden unexpected behaviour, here's the best way to go about this:
 
 1. Find the .app file of a suitable base weapon, add it to your project, and rename it. Don't change anything for now,  future you might need them for testing.
-2. Configure the yaml as described above
-3. Set up **one** (1) appearance for testing by assigning the correct visual tags. Do not delete the other appearances yet while you make sure that the one you selected
+2. Find the correct .ent file under `base\weapons`\ . The number of components should be the same as in any appearance's component array (red arrow on the screenshot above)
+3. Configure the yaml as described [above](weapons.md#define-the-field-in-the-yaml)
+4. Set up **one** (1) appearance for testing by assigning the correct visual tags. Do not delete the other appearances yet while you make sure that the one you selected
    1. shows up in inventory/photo mode
    2. shows up in first person
-4.  Change the path and appearance of any mesh components to those of your new mesh. Make sure that it
+5.  Change the path and appearance of any mesh components to those of your new mesh. Make sure that it
 
-    1. shows up in inventory/photo mode
-    2. shows up in first person
-    3. is in the right position where V's hands are concerned (~~at least as much as for the Tactician shotgun~~)
+    1. shows up in your inventory with your meshes
+    2. shows up in first person with your meshes
+    3. shows up in photo mode at all (it shouldn't be invisible, but will still have the default appearance)
     4. all parts are visible
-    5. the correct mesh appearance is displayed.
+    5. is in the right position where V's hands are concerned (~~at least as much as for the Tactician shotgun~~)
+    6. the correct mesh appearance is displayed.
 
     Fix any issues that might arise. Don't forget that you can split off individual meshes for individual pieces, too.
-5. Once everything works, delete all other appearances, then duplicate and adjust the one you customized to show your color variants.
+6. Once everything works, delete all other appearances, then duplicate and adjust the one you customized to show your color variants.
+7. Now, finally, copy a working appearance from the .app file to your mesh entity (which you have linked in the app file's root as `baseEntity`). This will make your weapon show up in photo mode.
