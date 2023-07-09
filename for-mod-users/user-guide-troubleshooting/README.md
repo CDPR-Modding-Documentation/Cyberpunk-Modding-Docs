@@ -382,6 +382,10 @@ Normally, a mod should **just work**, as long as all of their requirements are w
 * If materials aren't updating, you need to install [material override](https://www.nexusmods.com/cyberpunk2077/mods/5266) (why?)[^3]
 * If you already have all of that, [check the next section](./#only-parts-of-my-mods-are-working).
 
+{% hint style="info" %}
+If you've been using Mod Organizer 2 to install your mods, chances are high that it's been doing it incorrectly, at least for some of the more important mods. Save yourself the headache and manage your mods through [Vortex](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/getting-started/vortex-mod-manager) or manually. Or you can look into "Root Builder" and "Wabbajack." Those keywords might help you if you choose to stick with MO2. _Don't say we didn't warn you though!_
+{% endhint %}
+
 ### That wasn't it: Getting the mod to work
 
 If your mod is [cyber engine tweaks itself](./#mod-isnt-working-cet) or [a dependent mod](./#mod-isnt-working-a-cet-mod-or-script), you can check the sections below. Otherwise, follow the [general troubleshooting steps](./#mod-isnt-working-general-troubleshooting).
