@@ -21,7 +21,7 @@ Before you start debugging, make sure that&#x20;
 {% endhint %}
 
 {% hint style="warning" %}
-Before you start debugging, **update your mods** and make sure that **all dependencies** have the latest version, in particular the [core mods](../../for-mod-creators/core-mods-explained/) ([Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/tag/v1.0.8)).
+Before you start debugging, **update your mods** and make sure that **all dependencies** have the latest version, in particular the [core mods](../../for-mod-creators/core-mods-explained/) ([Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/)).
 
 If you are on RED4Ext >= 1.13, make sure to **uninstall** cybercmd!
 
