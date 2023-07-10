@@ -88,6 +88,8 @@ Now it's time to do the actual work.&#x20;
 
 {% hint style="danger" %}
 Please remember that before sharing your NPV, you **have** to change the paths! At the very least, rename the `tutorial` folders inside of `archive` and `resources` to your user name and then do a [fulltext search and replace in json](../../everything-else/moving-and-renaming-in-existing-projects.md).
+
+However, you might want to do that **after** [preparing the head in Blender](npv-preparing-the-head-in-blender.md), as you would otherwise have to move the utility script around.
 {% endhint %}
 
 {% hint style="success" %}

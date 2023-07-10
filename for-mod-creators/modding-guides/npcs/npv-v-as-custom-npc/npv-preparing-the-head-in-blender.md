@@ -143,6 +143,11 @@ Now, we will export all .morphtarget files from Wolvenkit so that we can edit th
 2. Switch to your project's `raw` folder or Wolvenkit's `raw` perspective. You will find the entire file structure mirrored there.
 3. In `head` folder, find the file `head_import.blend`. \
    This file is a utility file which will automatically import and export the files for you. For that reason, it needs to be in a certain relative path.
+
+{% hint style="info" %}
+If you have already changed your structure (by re-naming your folders), you need to make sure that `head_import.blend` is in the folder `head` right next to the folder `morphtargets.`
+{% endhint %}
+
 4. Open it in Blender. It will take you to the **scripting** perspective, where you'll see something like this:
 
 <figure><img src="../../../../.gitbook/assets/npv_blender_00_import.png" alt=""><figcaption><p>Looks scary, but you don't have to do anything here!</p></figcaption></figure>
