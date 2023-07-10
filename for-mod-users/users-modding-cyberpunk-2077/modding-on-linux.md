@@ -59,3 +59,5 @@ To configure the necessary parameters, you can use the app Protontricks, which y
    `WINEDLLOVERRIDES="winmm.dll,version=n,b" %command%`
 
 <figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption></figcaption></figure>
+
+If that didn't help you, you might be able to find the solution on the [CET wiki page](https://wiki.redmodding.org/cyber-engine-tweaks/getting-started/installing/untitled).
