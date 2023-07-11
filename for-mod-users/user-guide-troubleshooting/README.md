@@ -55,6 +55,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
   * Searching: [Bisect](./#finding-the-broken-mod-bisecting)
   * Searching: [Log files](finding-and-reading-log-files.md)
 * [Something with files or ACCESS\_VIOLATION](./#something-something-files)
+* Deleting user settings
 * [This is a waste of time, I'm reinstalling](./#the-nuclear-option-a-clean-install)
   * [Modding a clean install ](./#a-fresh-install-starting-from-scratch)
 
@@ -434,6 +435,20 @@ Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks
 
 
 
+## Deleting user settings
+
+{% hint style="info" %}
+You almost never need to do this.
+{% endhint %}
+
+However, if you want to remove anything that Cyberpunk might have stored on your disk, you need to find and delete the following folders (as per [CDPR's own troubleshooting guide](https://support.cdprojektred.com/en/cyberpunk/pc/sp-technical/issue/2233/how-do-i-clean-install-my-game):&#x20;
+
+* `%userprofile%\Saved Games\CD Projekt Red\Cyberpunk 2077`
+* `%userprofile%\AppData\Local\REDEngine`
+* `%userprofile%\AppData\Local\CD Projekt Red`
+
+You can quickly navigate to the folders by pasting the path into your Windows Explorer's path bar, or pressing Windows+R, pasting the path there, and&#x20;
+
 ## The nuclear option: a clean install
 
 <figure><img src="../../.gitbook/assets/troubleshooting_headers_nuclear.png" alt=""><figcaption></figcaption></figure>
@@ -494,6 +509,10 @@ Rename or remove the following folders. If you do not have them, you don't need 
 </code></pre>
 
 Afterwards, verify your files.
+
+### Nuke it from the orbit: The thorough version
+
+In case neither of these options is good enough for you, you can find a full reinstall guide on [CDPR's support page](https://support.cdprojektred.com/en/cyberpunk/pc/sp-technical/issue/2233/how-do-i-clean-install-my-game).
 
 ## A fresh install: Starting from scratch
 
