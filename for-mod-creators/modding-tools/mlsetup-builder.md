@@ -23,7 +23,10 @@ MLSB lets you edit mlsetup files without doing this, but you'll have neither aut
 {% endhint %}
 
 {% hint style="warning" %}
-Before you do this, you should have extracted a [partial depot](https://wiki.redmodding.org/wolvenkit/guides/modding-community/eli5-getting-started/create-depot#steps-partial-depot).
+Before you do this, you should have extracted a [partial depot](https://wiki.redmodding.org/wolvenkit/guides/modding-community/eli5-getting-started/create-depot#steps-partial-depot). You need to extract the following archives:
+
+* basegame\_4\_appearances
+*
 {% endhint %}
 
 {% hint style="danger" %}
