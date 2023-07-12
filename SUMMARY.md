@@ -125,6 +125,7 @@
     * [Custom bodyhair for NPCs](for-mod-creators/modding-guides/npcs/custom-bodyhair-for-npcs.md)
     * [Give genitals to NPCs](https://docs.google.com/document/d/1WEIw1Rdrs9qVuOQoCIgzbBSs7f\_TL4JkPaLJSrYDBF4/edit?usp=drive\_link)
     * [Swap Johnny during the Alt's scene](for-mod-creators/modding-guides/npcs/swap-johnny-during-the-alts-scene.md)
+  * [Vehicles](for-mod-creators/modding-guides/vehicles.md)
   * [World Editing](for-mod-creators/modding-guides/world-editing/README.md)
     * [Adding Objects to the World](for-mod-creators/modding-guides/world-editing/adding-objects-to-the-world.md)
     * [Adding Locations and Structures with ArchiveXL](for-mod-creators/modding-guides/world-editing/adding-locations-and-structures-with-archivexl.md)
