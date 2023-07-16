@@ -100,3 +100,23 @@ To add custom HUD icon:
 5. Add those in your yaml file. The `atlasResourcePath` should correspond to where your inkatlas file is located, `atlasPartName` should corespond to which slot was used in the inkatlas file for your custom icon, `$type` should be as on the screenshot.
 
 <figure><img src="../../../../.gitbook/assets/yamlhudiconweapon.png" alt=""><figcaption></figcaption></figure>
+
+## Exporting a mesh for new weapon
+
+
+
+When exporting an existing weapon mesh for your custom weapon make sure to uncheck LOD Filter.
+
+Put your custom mesh in both LODs.
+
+This is especially important in melee weapons, if your weapon is bigger than the existing one. If your custom, bigger mesh only exists in LOD 1 you will notice that in game there is a separate, invisible hit box that does not align with your new weapon.
+
+To note, even if you modify both LODs correctly, but your weapon is significantly bigger than the original one, you will notice that it is hitting where the original one would. This is due to the fact that the hit box does not expand automatically with the mesh being bigger.
+
+The hit box will not be a problem if your new weapon is roughly the same size as original.&#x20;
+
+I'm still trying to come up with a solution to the bigger weapons hit box problem. If you know anything or would like to brainstorm hmu on Discord @Mx\_OrcBoi.
+
+
+
+<figure><img src="../../../../.gitbook/assets/2023-07-12 12_00_41-Export Tool.png" alt=""><figcaption><p>Mesh export LOD Filter</p></figcaption></figure>

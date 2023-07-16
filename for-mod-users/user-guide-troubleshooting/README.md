@@ -379,7 +379,7 @@ Missing footsteps had in the past been connected to a bug in Let [There Be Fligh
 
 Normally, a mod should **just work**, as long as all of their requirements are working. If you aren't certain what that means, you can check [here](../users-modding-cyberpunk-2077/requirements-explained.md) for an explanation or follow the checklist below.
 
-* Make sure that you have [enabled mods](../users-modding-cyberpunk-2077/redmod/#installation) in your launcher.
+* Make sure that you have [enabled mods](../../for-mod-creators/core-mods-explained/redmod/#installation) in your launcher.
 * If items or hairs aren't changing, you need to install [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/8127) (why?)[^2]
 * If materials aren't updating, you need to install [material override](https://www.nexusmods.com/cyberpunk2077/mods/5266) (why?)[^3]
 * If you already have all of that, [check the next section](./#only-parts-of-my-mods-are-working).
@@ -399,7 +399,7 @@ If your mod is [cyber engine tweaks itself](./#mod-isnt-working-cet) or [a depen
 
 Here's what you can do:
 
-1. Check that you've enabled the feature (see [Deploying Mods and Starting Game](../users-modding-cyberpunk-2077/redmod/#installation)).&#x20;
+1. Check that you've enabled the feature (see [Deploying Mods and Starting Game](../../for-mod-creators/core-mods-explained/redmod/#installation)).&#x20;
 2. Check the [requirements](../users-modding-cyberpunk-2077/requirements-explained.md) on the mod's nexus page. Make sure that you have installed them all and that they are up-to-date.
 3. Make sure that all of your [core frameworks](./#step-7-install-the-core-frameworks) are up-to-date and starting up correctly (here's how you can [check their log files](finding-and-reading-log-files.md#a-list-of-framework-logfiles))
 4. Check the other log files in the game directory ([here's a guide how](finding-and-reading-log-files.md))
