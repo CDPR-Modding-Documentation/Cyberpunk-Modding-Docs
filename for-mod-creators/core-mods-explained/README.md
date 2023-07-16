@@ -28,16 +28,16 @@ Lots of mods and scripts run on top of CET, tweaking the game in various ways fr
 
 The perhaps most prominent example is Appearance Menu Mod ([wiki](amm.md) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/790)), which turns Cyberpunk 2077 into The Sims: Capitalist Dystopia.
 
-{% content-ref url="http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/" %}
-[CET (English)](http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)
+{% content-ref url="http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/" %}
+[CET (English)](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)
 {% endcontent-ref %}
 
 ### Redscript <a href="#redscript" id="redscript"></a>
 
 Redscript ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511) | [GitHub](https://github.com/jac3km4/redscript)) is an open-source programming language and toolkit, natively working with Cyberpunk 2077's scripting runtime. With the help of .reds files under `r6/scripts`, it lets you modify and extend the user interface, change the combat balance, influence NPC behaviour, and much more.&#x20;
 
-{% content-ref url="http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/" %}
-[Redscript](http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg\_/)
+{% content-ref url="http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/" %}
+[Redscript](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg\_/)
 {% endcontent-ref %}
 
 ### RED4ext <a href="#red4ext" id="red4ext"></a>
@@ -50,8 +50,8 @@ With Red4ext >= 1.13, you no longer need [cybercmd](https://www.nexusmods.com/cy
 
 Aside from being required for many mods, it is a perquisite for other frameworks such as ArchiveXL, TweakXL, and Equipment-EX.
 
-{% content-ref url="http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/" %}
-[RED4ext](http://localhost:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/)
+{% content-ref url="http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/" %}
+[RED4ext](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/)
 {% endcontent-ref %}
 
 ### ArchiveXL

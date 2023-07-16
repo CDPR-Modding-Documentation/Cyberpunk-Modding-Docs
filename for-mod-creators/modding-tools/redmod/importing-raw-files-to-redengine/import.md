@@ -1,13 +1,14 @@
-# Import
+---
+description: >-
+  redmod import -gameRoot=<depot> -inputPath=<file> -animset=<resource-path> 
+  [options]
+---
 
-`import` - Import/reimport animset animation
+# Importing Animations
 
 ## Synopsis
 
 ```md
-Usage:
-  redmod import -gameRoot=<depot> -inputPath=<file> -animset=<resource-path>  [options]
-
 Arguments:
   -gameRoot=<depot>
   -inputPath=<file>

@@ -1,14 +1,20 @@
 # Usage
 
-REDmod is a tool to stage installed mods to work with a modded game.
+REDmod is a command line tool developed by CDPR and Yigsoft which can be used to stage installed mods to work with a modded game.
 
-There are also various commands for modders to work with the game's assets.
+{% hint style="info" %}
+This section is for managing mods with Redmod. For creating mods, see [modding-guides](../../../for-mod-creators/modding-guides/ "mention")
+{% endhint %}
+
+## Why would I want this?
+
+REDmod **preloads** any mods on its list, loading them as if they were a part of the game's regular structure. This leads to a brief delay during startup (while it does that), but the loading times during gameplay will be much faster.
 
 ## Using Mods
 
-The game loads mods from this path: `<Cyberpunk 2077>/mods/<name>`.
+The game loads redmods from this path: `<Cyberpunk 2077>/mods/<name>`.
 
-> EXAMPLE: A simple archive mod `C:\Gog\Cyberpunk 2077\mods\modA\archives\mod_a.archive`.
+> EXAMPLE: A simple archive mod `C:\GoG\Cyberpunk 2077\mods\modA\archives\mod_a.archive`.
 
 You need to **deploy** your installed mods before playing a modded game.
 
@@ -20,7 +26,11 @@ You can handle deployment and load order with
 
 You need to **start a modded game** in order to load the deployed mods in game.
 
-> Legacy archive mods in `<Cyberpunk 2077>/archive/pc/mod` are still supported but their load order cannot be managed with REDmod.
+{% hint style="info" %}
+Legacy archive mods in `<Cyberpunk 2077>/archive/pc/mod` are still supported, but their load order cannot be managed with REDmod.
+
+These mods will load **before** any redmods.
+{% endhint %}
 
 ### Deploying Mods and Starting the Game
 

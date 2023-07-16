@@ -25,7 +25,7 @@ description: This page holds a list of community guides all over the internet.
 | [Adding decals to clothing meshes](https://docs.google.com/document/d/11P1Nt5VgDgpwGX0-uwYWjhvFxYmrlOHbEFrdQSRosk0/edit) | Google Doc link (who made this?) |
 | ------------------------------------------------------------------------------------------------------------------------ | -------------------------------- |
 | [Custom T-Shirt framework](https://drive.google.com/file/d/1qd1GG80ZEx2xCKLUGTXSCajGD7i94s7t/view)                       | Google Drive, by Halk            |
-| [Giving an NPC custom clothes](http://localhost:5000/s/-McniwB8YOK2HnJ7SYg\_/help/troubleshooting)                       | Google Doc (who made this?)      |
+| [Giving an NPC custom clothes](http://127.0.0.1:5000/s/-McniwB8YOK2HnJ7SYg\_/help/troubleshooting)                       | Google Doc (who made this?)      |
 
 ## Rigging and animations
 
@@ -72,9 +72,9 @@ Please see the corresponding [sub-page](external-npvs-v-as-npc-custom-npcs.md)
 
 | Tutorial                                                                                                                                                       |                                             |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| [Exporting to Blender](http://localhost:5000/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/exporting-to-blender)                                                   | Step-by-step guide for exporting to Blender |
+| [Exporting to Blender](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/exporting-to-blender)                                                   | Step-by-step guide for exporting to Blender |
 | [Exporting Rigs and Anims](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)                       | Adding the rigs to the models in Blender    |
-| [Exporting Streaming Sectors to Blender](http://localhost:5000/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/world-editing/exporting-streaming-sectors-to-blender) | How to export parts of Night City           |
+| [Exporting Streaming Sectors to Blender](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/world-editing/exporting-streaming-sectors-to-blender) | How to export parts of Night City           |
 | [Modifying Textures with WKit 8.7](https://www.youtube.com/watch?v=agqu\_w88bZs)                                                                               | Youtube tutorial                            |
 | [Modding a normal map of V's head](https://docs.google.com/document/d/1sg7\_wQbQTagJG0SGcfTnxA2m3tiO-ghOHOHpmiuPv70/edit?usp=sharing)                          | Google Doc by nanarc                        |
 

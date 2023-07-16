@@ -98,7 +98,7 @@ Loading a mod as REDmod means that Cyberpunk will precompile it and integrate it
 
 * For instructions on how to install, see [here](getting-started/).
 * For documentation on the Vortex installation toggle, see [here](getting-started/vortex-mod-manager.md#v2077-settings).
-* For instructions on how to activate it, see [here for GOG](getting-started/) and here for [Steam and Epic](../../for-mod-creators/core-mods-explained/redmod/usage.md#steam-and-epic).
+* For instructions on how to activate it, see [here for GOG](getting-started/) and here for [Steam and Epic](redmod/usage.md#steam-and-epic).
 
 REDmods are installed in `Cyberpunk 2077\mods`, where every mod has a subfolder with an `info.json`.
 
