@@ -296,7 +296,7 @@ You can leave `partsValues` alone - this just points at the file that loads the 
 Understanding this is not necessary for the purpose of this guide, but you might want to reference it once you run into trouble.
 {% endhint %}
 
-The mesh file maps **materials** to appearances. To find out how exactly it does that, find the [material section](broken-reference) on the mesh wiki page.&#x20;
+The mesh file maps **materials** to appearances. To find out how exactly it does that, find the [material section](../../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances) on the mesh wiki page.&#x20;
 
 For our purposes it's enough to say that you can **define** your individual appearances here.
 
