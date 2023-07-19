@@ -172,7 +172,7 @@ If you want to put up your own .mlsetup, rather than overwriting the original on
 <figure><img src="../../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-Keep your folder and file names unique! If you have two mods adding a file at the same location, the second one **will be unable to overwrite it** and will use the first mod's file. That is, unless your mods are in REDmod format, where it'll be the other way around.&#x20;
+Keep your folder and file names unique! If you have two mods adding a file at the same location, the second one **will be unable to overwrite it** and will use the first mod's file. That is, unless your mods are in REDmod format, which will be loaded even later and in order of their folder names.
 
 Understood? No? That's fine. Just keep it unique. :D
 {% endhint %}
