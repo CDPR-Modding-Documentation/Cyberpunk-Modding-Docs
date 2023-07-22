@@ -222,7 +222,7 @@ Your import has been successful when the preview in Wolvenkit changes (you might
 ## Material assignments
 
 {% hint style="info" %}
-For an overview of materials that you might want to use for something, check [here](../../references-lists-and-overviews/materials/cheat-sheet-materials.md).&#x20;
+For an overview of materials that you might want to use for something, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).&#x20;
 
 You can check a material's properties by opening the file inside of Wolvenkit and checking the last entry of the "parameters" array, or search for "files using this" and looking at how they're doing things.
 {% endhint %}
@@ -419,7 +419,7 @@ If you rather want to make your own mlsetups, see [here](../items-equipment/edit
 
     <figure><img src="../../../.gitbook/assets/textures_baseball_gold.png" alt=""><figcaption><p>Also not a moon</p></figcaption></figure>
 
-The possibilities are basically endless, so go and explore them already! For a nifty list with materials to get you started, check [here](../../references-lists-and-overviews/materials/cheat-sheet-materials.md).ing related to AMM, see [here](custom-props.md).&#x20;
+The possibilities are basically endless, so go and explore them already! For a nifty list with materials to get you started, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).ing related to AMM, see [here](custom-props.md).&#x20;
 
 ## Troubleshooting
 

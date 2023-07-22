@@ -52,7 +52,7 @@ Pre-defined tiling surface component of the [**Multilayer supershader**](../mate
 
 ### HP (hair profile)
 
-Color ramp data to set colors for meshes using the hair [**shader**](materials/shaders.md)
+Color ramp data to set colors for meshes using the hair [**shader**](../materials/shaders/)
 
 ## Visual Asset Graphs
 

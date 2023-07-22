@@ -2,28 +2,53 @@
 description: Overview and introduction
 ---
 
-# 🔮 Materials
+# 🔮 Materials and Shaders
 
 This is the landing page for **materials** in Cyberpunk 2077. It contains a definition and a rough overview.&#x20;
 
 ## If you already know that:
 
-* To find material instances or -templates for direct edits, check [here](../references-lists-and-overviews/materials/cheat-sheet-materials.md).
+* To find material instances or -templates for direct edits, check [here](../references-lists-and-overviews/cheat-sheet-materials.md).
 * For a mesh-specific explanation, check [here](broken-reference).&#x20;
 * For a list of properties and their explanation check [here](configuring-materials.md).
 
-## Definition&#x20;
+## Definition: Shader
 
-**In the context of Cyberpunk**, a material is the thing that lets the shader define the surface properties of a [mesh](broken-reference).&#x20;
+In its original state, a 3d object ([mesh](../files-and-what-they-do/3d-objects-.mesh-files.md)) is a collection of **vertices** (pixels). The space between those vertices is filled by **faces**, which form the 3d object's surface.&#x20;
+
+The shader is the thing that goes on top of the surface, rendering a **material** such as glass, skin, concrete, steel…
+
+{% hint style="info" %}
+Without a shader, objects would be invisible in the game, the surface simply being transparent. In Cyberpunk, a default shader will be assigned in such cases (such as debug\_coloring.mt).
+{% endhint %}
+
+In Cyberpunk 2077, REDEngine shaders are implemented as `.mt`/`.remt` files.&#x20;
+
+### How can I use shaders?
+
+If you have ever messed with an item's materials, then you already have.&#x20;
+
+To use a shader, you create a **Material Instance**, where you can configure the **parameters**. \
+Not every parameter of a shader can be configured: since skin always has subsurface scattering, it makes no sense to tweak this. But since skin color already varies dramatically if you don't throw exotic chrome into the mix, you can change them easily via tint.
+
+## Definition: Material&#x20;
+
+{% hint style="info" %}
+For details how materials are used on a mesh, see the [corresponding wiki page](../files-and-what-they-do/3d-objects-.mesh-files.md#material-assignment), or learn how materials can be [loaded externally](broken-reference) from [material template files](re-using-materials-.mi.md).&#x20;
+{% endhint %}
+
+**In the context of Cyberpunk**, a material is the thing that lets the shader define the surface properties of a [mesh](broken-reference). Typically, you create a local instance, which will then pull in a shader via `baseMaterial`.
+
+The property `baseMaterial` can point at a `.mt` / `.remt` file directly, or to an intermediary `.mi` file:
+
+<figure><img src="../../.gitbook/assets/materials_mt_and_mi.png" alt=""><figcaption></figcaption></figure>
+
+The .mi file&#x20;
 
 {% hint style="info" %}
 Each part of a mesh (submesh) can have a different material assigned.&#x20;
 
 [Do you want  to know more?](broken-reference)
-{% endhint %}
-
-{% hint style="info" %}
-Materials can be defined [locally inside a mesh](broken-reference) or [loaded externally](broken-reference) from [material template files](re-using-materials-.mi.md).&#x20;
 {% endhint %}
 
 {% hint style="success" %}

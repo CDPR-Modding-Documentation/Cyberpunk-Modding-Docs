@@ -32,20 +32,18 @@ I have repeatedly observed that newbies are fine with this guide, while people w
 _The guide was created after reading_ [_this one_](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view) _and being left with a bunch of question marks. To get a deeper understanding, refer to the initial guide and follow the linked resources or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
 
 {% hint style="info" %}
-You can find a tool to troubleshoot your ArchiveXL mod [here](https://github.com/solaarTW/DeepAssetDiscovery/releases).
+To troubleshoot your ArchiveXL mods, you can make use of the FileValidation in Wolvenkit >= 8.9.1. As of Jul 22nd that isn't yet released, but you can download a [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-07-21), as it's pretty stable).
 {% endhint %}
 
 ## Grab the example files
 
 * Create a new Wolvenkit project
-* Download the prepared files from [manavortex's mega](https://mega.nz/file/TYMQUa7b#60y1HLM-BYvS5Eb1uccpq1hq48UwY6VLN5FLHpO8HtI) or [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8268) and extract them to the root of your new project (overwriting the "source" folder
+* Download the prepared files from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8268) and extract them to the root of your new project (overwriting the "source" folder)
 
 {% hint style="info" %}
 **If you would rather start from scratch:** Check the detailed instructions [here](adding-new-items-files-from-scratch.md).
 
-For an explanation of the file structure, see the [item structure explained](archive-xl-item-structure-explained.md) subpage.
-
-Understanding is **not required** as long as you follow the guide to the letter.
+Understanding of the file structure is **not required** as long as you **follow the guide to the letter**, but if you want it anyway, see the [item structure explained](archive-xl-item-structure-explained.md) sub-page.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -54,7 +52,9 @@ Understanding is **not required** as long as you follow the guide to the letter.
 
 ### You should now have the following files:
 
-![](../../../../.gitbook/assets/archive\_xl\_adding\_items\_file\_structure.png)
+
+
+<figure><img src="../../../../.gitbook/assets/archive_xl_adding_items_file_structure.png" alt=""><figcaption><p>These files do not contain an Atelier store. If you want to add one, see <a href="../../everything-else/adding-items-atelier-integration.md">here</a>.</p></figcaption></figure>
 
 ### Start the game
 
@@ -89,14 +89,16 @@ Otherwise, you will want to complete one or more of the following steps:
 * add [something other](different-equipment-slots.md) than a torso item
 * Add more [appearances](./#adding-an-appearance-example-blackblue)&#x20;
 * Add [variants](./#adding-a-male-instance) for different genders or different camera modes
-* customize your [preview images](adding-items-preview-images.md)
-* [Add an atelier store](adding-items-atelier-integration.md)
+* customize your [preview images](../../custom-icons-and-ui/adding-items-preview-images/)
+* [Add an atelier store](../../everything-else/adding-items-atelier-integration.md)
 
 ## Diagram
 
 This is how everything connects. Looks pretty scary, but is actually simple: whenever you want to rename or repath[^1] something, make sure that you catch **both ends of the arrow**.
 
 You can find a breakdown-by-entry on the [corresponding wiki page](archive-xl-item-structure-explained.md).
+
+
 
 <figure><img src="https://i.imgur.com/i1QzZMP.png" alt=""><figcaption><p>Don't panic, we've got this.</p></figcaption></figure>
 
@@ -320,12 +322,11 @@ Game.AddToInventory("Items.my_custom_shirt_redwhite")
 Consider reviewing the guide to ensure that all steps have been followed correctly and that the values have been set appropriately. Ensure that the mesh is compatible with the male variant of V. If errors persist, review the [<mark style="color:yellow;">troubleshooting section</mark>](./#troubleshooting) for further assistance.
 {% endhint %}
 
-##
-
 ## Troubleshooting
 
 {% hint style="info" %}
-There is a tool designed to help you with the process of finding missing dependencies. You can find it [here](https://github.com/solaarTW/DeepAssetDiscovery/releases).
+The easiest way to spot what's wrong is to use Wolvenkit's new FileValidation feature, which will print warnings and errors to the log file for you, starting at version >= 8.9.1. \
+As of July 2023, you can download it from the [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) page (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-07-21), as it's pretty stable).
 {% endhint %}
 
 First of all, check the logs for errors including the name of your mod:&#x20;
@@ -333,7 +334,7 @@ First of all, check the logs for errors including the name of your mod:&#x20;
 * `red4ext/plugins/ArchiveXL/ArchiveXL.log`&#x20;
 * `red4ext/plugins/TweakXL/TweakXL.log`
 
-Second of all, make sure that you do not have capital letters in any of your path or file names - as of 1-1-6, they are not currently supported.
+Second of all, make sure that you do not have capital letters in any of your path or file names — Wolvenkit should automatically transform them to lowercase, but you should avoid them as a matter of principle.
 
 ### My item warps weirdly
 
@@ -347,13 +348,13 @@ Most likely, you have ignored the [hint box](./#get-the-files-create-the-structu
 You can find out which entity file your item uses by right-clicking on your mesh and selecting "find files using this". Add the .ent file to the list and open it in WolvenKit. Then, [replace the contents](../../npcs/appearances-change-the-looks.md#safely-adding-components) of the "components" array with those of an .ent file from the correct folder — don't forget to change the path to your mesh again!
 {% endhint %}
 
-### I spawn my item, but nothing happens!
+### I spawn my item, but it's not added to my inventory!
 
 {% hint style="warning" %}
-Before you start digging into your file structure, check if there are any leftover yml files from earlier versions/deploys in your tweaks directory. Do a full text search in e.g. Notepad++ in any files in the folder with the name of the item you want to spawn.
+Before you start digging into your file structure, check if there are any leftover yaml files from earlier versions/deploys in your tweaks directory. Do a full text search in e.g. Notepad++ in any files in the folder with the name of the item you want to spawn.
 {% endhint %}
 
-If no additional yml files are messing things up, then the error is somewhere in the first part of the chain and relatively easy to fix:
+If no additional yaml files are messing things up, then the error is somewhere in the first part of the chain and relatively easy to fix:
 
 <figure><img src="https://camo.githubusercontent.com/f8ee9b6e640405d93e9d543b4ac488e7644a5976c74552a54d288ac9b81f182a/68747470733a2f2f692e696d6775722e636f6d2f517a4d6e7645762e706e67" alt=""><figcaption></figcaption></figure>
 
@@ -361,12 +362,20 @@ Check the following places:
 
 * `yourmodname.archive.xl`:
   * Is the indentation correct, as shown in the picture?
-  * Does the value for `entityName` have a corresponding entry in the factory (my\_tshirt\_factory`.csv`)?
-  * Does it point at the correct rootentity(`tutorial\myshirt\rootentity.ent`), or did you rename or move it?
   * Did you make any typos?
+* my\_tshirt\_factory.csv:
+  * Is there an entry where the first value matches the `entityName` from the yaml (`my_tshirt` in the picture above)?
+    * Without leading or trailing spaces?
+  * Does the second value of that entry have the correct root entity path? \
+    (`tutorial\myshirt\rootentity.ent` in the picture above)\
+    _If you moved the `root_entity.ent`, you have to adjust this entry._
 * `rootentity.ent:`
-  * Is the spelling for the key you defined after `displayName` and `localizedDescription` identical to the one in the json file?
-  * Are you using any **suffixes**? Are you using the correct ones? Try creating a fall-back entry without any suffixes.
+  * Do you have an appearance matching your item by `name`?&#x20;
+    * Without leading or trailing spaces?
+  * Are you using any [**suffixes**](../../../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes)? Are you using the correct ones?&#x20;
+    * Try setting an empty suffix array in the .yaml, just to see if that works: \
+      `appearanceSuffixes: [  ]`
+    * Try creating a fall-back entry without any suffixes in the root\_entity.
 
 ### My item shows empty text instead of name/description!
 
@@ -387,8 +396,7 @@ If there are no errors in any of the log files, check the following places:
   * Is the spelling of the key defined in yaml's `displayName` and `localizedDescription` identical?
   * Did you set the femaleVariant (default)?
   * Are you using quotation marks? If so, switch to singlequotes!
-
-
+  * If the field for `primary_key` is not empty, then its value must be unique (probably on a per-file basis). Just number them.
 
 ### The item spawns, but…
 
@@ -407,13 +415,15 @@ That means the chain is working, but something isn't loaded correctly. That's go
 * `appearance.app`: Check the `partsValues` and `partsOverrides` entries. They need to point at the `mesh_entity.ent`, **not** at the mesh.
 * `mesh_entity.ent`: Does the `component` entry point to a valid mesh? Try it with a default mesh as detailed above.
 
-If that works, then the problem is your mesh.
+If the default mesh is displayed correctly, then we have narrowed down the problem.&#x20;
+
+If the default mesh is not displayed correctly, then there's an issue between the `root_entity` and your `.app` file, or in the `.app` file's internal logic.&#x20;
 
 ### Troubleshooting a mesh
 
-For more detailed error handling, check the sections below.
+For more detailed error handling, check the sections below, or check [this page](../../../3d-modelling/troubleshooting-your-mesh-edits.md).
 
-ℹ In the "Mesh Preview" tab of your mesh, you can "Generate Materials for Appearance". If the correct colours show up, you can at least rule out that the error is in the .\*mesh or the \*.mlsetup!
+ℹ In the "Mesh Preview" tab of your mesh, you can "Generate Materials for Appearance". If the correct colours show up, you can at least rule out that the error is in the .\*mesh or its material.
 
 * Make sure that you have the same number of entries in `materialEntries` and `localMaterialBuffer.materials` .
 * Go through the `CMaterialInstance`s in `localMaterialBuffer.materials`.
@@ -443,7 +453,7 @@ Check your mesh file:
 Either an appearance is incorrectly selected, or it is incorrectly resolved. Check the following places for copy-paste/duplication mistakes:
 
 **yourModName.yaml** - is the `appearanceName` correct, or did you forget to change it?\
-**rootentity.ent** - does the `name` corresponding to the field above point to the `appearanceName` with the right name?\
+**rootentity.ent** - does the `name` corresponding to the field above point to the `appearanceName` with the right name in the right appearance file?\
 **appearance.app** - does the appearance's `partOverride` set the correct appearance in the `componentsOverride`?
 
 Now, check the mesh file (close and re-open it to make everything refresh):
@@ -459,8 +469,15 @@ Finally, check the .mlsetup: does it actually use different colours, or is it ju
 Here we go. This is the big one, and it's Not Fun. The error can be anywhere between the yaml and the mesh. You can rule out one of the files with the following question:
 
 **Does the glitching stop after <10 seconds?**\
-If not: the appearance can't be resolved - ignore the mesh\
-If yes: the appearance is resolved, but can't be displayed - ignore the yaml
+If not: the appearance can't be resolved - ignore the `.mesh`\
+If yes: the appearance is resolved, but can't be displayed - ignore the `.yaml`
+
+{% hint style="info" %}
+The fastest way to find your error is Wolvenkit's FileValidation (in version >= 8.9.1). Save the `root_entity.ent`,  and the recursive valudation will check the whole chain for errors and print them to the log files for you.
+
+\
+As of July 2023, you can download the right version from the [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) page (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-07-21), as it's pretty stable).
+{% endhint %}
 
 ℹIf the appearance is resolved, but not displayed (short glitch), the first thing you should do is to change the path in the `mesh_entity.ent` to one of the game's default meshes. This will rule out errors on your part. (_Yes, even if your mesh worked in another mod. No, I'm not speaking from experience, why do you ask?_)
 

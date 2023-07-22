@@ -41,7 +41,7 @@ You can absolutely set up a shirt and then put `$base: Items.GenericHeadClothing
 However, before you start abusing the system that way, you might want to look into [EquipmentEx](different-equipment-slots.md#step-1.5-equipmentex).
 {% endhint %}
 
-### Step 1.5: EquipmentEx)
+### Step 1.5: EquipmentEx
 
 psiberx's mod EquipmentEx ([github](https://github.com/psiberx/cp2077-equipment-ex) | [nexus](https://www.nexusmods.com/cyberpunk2077/mods/6945)) adds a whole new wardrobe system, providing extra slots that CDPR forgot to include with the basegame. This feature requires the mod to be installed — without it, only the `$base` types from step 1 will be considered.
 

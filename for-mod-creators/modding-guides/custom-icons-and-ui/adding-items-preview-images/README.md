@@ -2,24 +2,32 @@
 description: How to add custom preview images by using a custom .inkatlas file
 ---
 
-# Adding items: Preview images
+# Your own preview icons
 
 ## Summary
 
-This part teaches you how to set up preview images for your newly-added ArchiveXL project.&#x20;
+This page is a sub-section of the guide on how to add ArchiveXL items. It teaches you how to set up preview images for your newly-added ArchiveXL project.&#x20;
 
 **Difficulty Level**: You know how to read and can edit images. (If you can't edit images, [there's a guide](../../../textures/images-importing-editing-exporting.md)!)
 
+{% hint style="info" %}
+If you want to do gendered preview icons, check [here](gendered-preview-icons.md).
+{% endhint %}
+
 ## The required files
 
-If you downloaded the example project, the preview is already hooked up. If you don't want to do that for some reason, you can just take one from the game:&#x20;
+If you downloaded the example project ([#getting-the-files](../../photo-mode/archivexl-adding-photo-mode-poses.md#getting-the-files "mention")), the preview is already hooked up.&#x20;
+
+### Go away with your examples, I'll do everything by hand!
+
+Okay, you do you. Here's how:
 
 1. search in Wolvenkit for `icons > .inkatlas`
 2. Pick one of CDPR's icon files (look inside first, you want the right format) and add it to your project
 3. Right-click on the file in the asset browser and select "`find used files`"
-4. Find the .xbm file and add it to your project as well
-5. Move both of these files to your custom folder, as you don't want to fuck up already-existing items
-6. Optionally: Re-name them, as the guide assumes that they're named `preview_icons.inkatlas` and `preview_icons.xbm`
+4. Find the `.xbm` file and add it to your project as well
+5. Move both of these files to your custom folder, as you don't want to overwrite game default icons
+6. Optionally: Re-name them. This guide assumes that they're named `preview_icons.inkatlas` and `preview_icons.xbm`
 
 You should now have a structure like this:&#x20;
 
@@ -42,17 +50,18 @@ You can [export your mesh with all its materials](../../../3d-modelling/exportin
 
 ### In-game
 
-* Make sure V isn't on the screenshots with [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790)'s `invisible V` toggle or [Invisible Character](https://www.nexusmods.com/cyberpunk2077/mods/6449)
+* Make sure V isn't on the screenshots with [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790)'s `invisible V` toggle, [Invisible Character](https://www.nexusmods.com/cyberpunk2077/mods/6449), or the [ArchiveXL Invisibility Cloak](https://www.nexusmods.com/cyberpunk2077/mods/8412)
 * Get an outfit manager like [Wardrobe](https://www.nexusmods.com/cyberpunk2077/mods/2176?tab=files\&file\_id=32757\&nmm=1) to create outfits where V is wearing nothing but the item
 * Optional: Use [AMM Photo Studio Props](https://www.nexusmods.com/cyberpunk2077/mods/7436) for backgrounds — it has black, white, or greenscreen
 
 ## Fixing up your texture
 
-1. Export the .xbm file via Tools -> Export Tool
+1. Export the original .xbm file via Tools -> Export Tool
 2. Find the resulting file under "raw"&#x20;
-3. Edit it to your heart's content
-4. Overwrite the png file with your edited one
-5. Import it back via Tools -> Import Tool
+3. Open it in your image editor
+4. Edit it to your heart's content
+5. Overwrite the png file with your edited one. [Mind the transparency](../../../textures/images-importing-editing-exporting.md#editing-a-texture)!
+6. [Import it back](../../../textures/images-importing-editing-exporting.md#importing-a-texture).
 
 ## Hooking up the inkatlas
 
@@ -68,12 +77,11 @@ You can [export your mesh with all its materials](../../../3d-modelling/exportin
 
 ## Add it to the yaml
 
-### One for all
+{% hint style="info" %}
+If you want to do gendered preview icons, check [here](gendered-preview-icons.md).
+{% endhint %}
 
-The last three lines in the box below control the icon:
-
-* `atlasResourcePath`: relative path to your .inkatlas file
-* `atlasPartName`: slot name in your .inkatlas file (which you can see in the `PartsMapping` tab)
+Check the code box below — the last three lines add a preview icon.
 
 ```
 Items.my_custom_shirt_redwhite:
@@ -89,35 +97,16 @@ Items.my_custom_shirt_redwhite:
     atlasPartName: slot_01
 ```
 
+Please refer to the [ArchiveXL guide](../../photo-mode/archivexl-adding-photo-mode-poses.md) for an explanation of the other properties, as this page will only hold information about preview icons.
+
+* `atlasResourcePath`: relative path to your .inkatlas file
+* `atlasPartName`: slot name in your .inkatlas file (which you can see in the `PartsMapping` tab)
+
 {% hint style="warning" %}
 Again, please note that indent is **crucial** here, as it determines the node structure. The first line needs to have an indent of 0, the lines from `$base` to `icon` need to have two spaces, and the lines `atlasResourcePath` and `atlasPartName` need to have four.
 {% endhint %}
 
-### One per gender
-
-For this, delete the icon properties above and create UIIcon records. They need to follow this naming pattern:
-
-```
-UIIcon.clothing_ENTITYNAME_APPEARANCENAME_SUFFIXES_VISUALTAGS
-```
-
-{% hint style="info" %}
-`ENTITYNAME` and `APPEARANCENAME` correspond to the fields in your yaml file.
-{% endhint %}
-
-So you'd define a preview image like this:
-
-```
-UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_white_red_Female_:
-    $type: UIIcon
-    atlasResourcePath: tutorial\torso\my_custom_shirt\ops\preview_icons.inkatlas
-    atlasPartName: slot_01
-    
-UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_white_red_Male_:
-    $type: UIIcon
-    atlasResourcePath: tutorial\torso\my_custom_shirt\ops\preview_icons_pma.inkatlas
-    atlasPartName: slot_01
-```
+*
 
 ## That's it! Time to test!
 

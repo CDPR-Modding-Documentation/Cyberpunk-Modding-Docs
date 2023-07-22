@@ -10,6 +10,6 @@ The .inkatlas is a map file that slices [**textures**](../textures/) into slots,
 
 ## Guides
 
-For a guide how to create custom icon previews, see [here](../modding-guides/items-equipment/adding-new-items/adding-items-preview-images.md).
+For a guide how to create custom icon previews, see [here](../modding-guides/custom-icons-and-ui/adding-items-preview-images/).
 
-For a guide how to create a custom Atelier icon, see [here](../modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md#generating-an-icon).
+For a guide how to create a custom Atelier icon, see [here](../modding-guides/everything-else/adding-items-atelier-integration.md#generating-an-icon).
