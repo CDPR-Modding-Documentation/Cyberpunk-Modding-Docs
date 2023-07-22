@@ -22,7 +22,7 @@ A mesh can have several **submeshes**, each of which has own material assignment
 ### Step 1: Appearances
 
 {% hint style="info" %}
-This page only contains mesh-specific information. Find more details on materials, check [here](3d-objects-.mesh-files.md#materials).&#x20;
+This page only contains mesh-specific information. Find more details on materials, the [corresponding section](../materials/).&#x20;
 {% endhint %}
 
 This is how to determine which parts of the mesh have which material:
@@ -41,9 +41,9 @@ Materials are defined in the array **`materialEntries`** inside your mesh:
 
 <figure><img src="../../.gitbook/assets/materials_materialentries_overview.png" alt=""><figcaption><p>For a detailed example, see <a href="../materials/re-using-materials-.mi.md#maximally-lazy-external-materials">re-using materials</a></p></figcaption></figure>
 
-
-
-If you do not, then the materials outside of `preload`… will appear as transparent the first 1-2 times you trigger your item's appearance.
+{% hint style="warning" %}
+While you can mix external and local materials, you can not mix preloaded and non-preloaded ones. For details, see [below](3d-objects-.mesh-files.md#preload...-what).
+{% endhint %}
 
 <table><thead><tr><th width="202">Property</th><th>Description</th></tr></thead><tbody><tr><td>index</td><td><strong>numerical index</strong> of corresponding material in target list (as defined by <code>isLocalInstance</code>)</td></tr><tr><td>isLocalInstance</td><td>Selects the material target list.<br><strong>True:</strong> <a href="3d-objects-.mesh-files.md#materialinstance-the-local-material">local material</a> in <code>localMaterialBuffer.materials</code> or <code>preloadLocalMaterialInstances</code><br><strong>False:</strong> <a href="3d-objects-.mesh-files.md#material-reference-a-material-somewhere-else">material reference</a> in<code>externalMaterials</code> or <code>preloadExternalMaterials</code><br><br>For more information on this, see the page for <a href="../materials/re-using-materials-.mi.md#maximally-lazy-external-materials">local/external materials</a>.</td></tr><tr><td>name</td><td><strong>unique</strong> name of material, used to select the material via <code>chunkMaterial</code></td></tr></tbody></table>
 
@@ -51,12 +51,14 @@ If you do not, then the materials outside of `preload`… will appear as transpa
 
 Many of CDPR's early meshes use `preloadLocalMaterialInstances` instead of `localMaterialBuffer.materials`. As far as we are concerned, you can use the two interchangeably, **but**:&#x20;
 
-If you are using **a mix of local and external materials**, you **must** use the corresponding list:
+If you are using **a mix of local and external materials**, you **must** use the corresponding lists:
 
 | local                           | external                   |
 | ------------------------------- | -------------------------- |
 | `localMaterialBuffer.materials` | `externalMaterials`        |
 | `preloadLocalMaterialInstances` | `preloadExternalMaterials` |
+
+&#x20;If you mix the two, the materials outside of `preload`… will appear as transparent the first 1-2 times you trigger your item's appearance.
 
 ### Step 3: Material definition
 
