@@ -100,6 +100,7 @@
 * [🔮 Materials and Shaders](for-mod-creators/materials/README.md)
   * [Shaders](for-mod-creators/materials/shaders/README.md)
     * [Shader Docs](for-mod-creators/materials/shaders/shader-docs.md)
+  * [Cyberpunk Hair Material](for-mod-creators/materials/cyberpunk-hair-material.md)
   * [Configuring materials](for-mod-creators/materials/configuring-materials.md)
   * [Re-using materials: .mi](for-mod-creators/materials/re-using-materials-.mi.md)
   * [Multilayered](for-mod-creators/materials/multilayered.md)

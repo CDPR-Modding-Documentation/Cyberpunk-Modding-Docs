@@ -18,7 +18,14 @@ If you want to change an NPC's hair instead, you can check [this](../../modding-
 To look up hairstyles in more detail, you can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker).
 {% endhint %}
 
-## Name in files by index
+## Name of meshes by index
+
+{% hint style="danger" %}
+These names correspond to the `mesh` files.&#x20;
+
+* To find a hair's .app file, search the correct mesh in Wolvenkit, then right-click on it and select "find files using this".&#x20;
+* To find a hair's root entity, repeat the same process with its .app file
+{% endhint %}
 
 {% hint style="warning" %}
 List has been confirmed working before 1.6, but might need updating (especially since new hair was added)
