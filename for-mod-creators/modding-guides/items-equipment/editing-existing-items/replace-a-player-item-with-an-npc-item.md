@@ -7,7 +7,8 @@ description: Put your item in place of a default game item. Supports variants.
 ### Summary <a href="#summary" id="summary"></a>
 
 **Created by @manavortex**\
-**Published November 05 2022**
+**Published November 05 2022**\
+**Updated July 26 2023**
 
 
 
@@ -21,63 +22,55 @@ Other relevant know-how for this process:&#x20;
 For a guide how to import meshes into Cyberpunk, check [here](../../../3d-modelling/exporting-and-importing-meshes/).
 
 {% hint style="danger" %}
-Make sure that you replace an item that you can actually spawn — not all items in V's folder are actually spawn-able.&#x20;
+Make sure that you replace an item that you can actually spawn — not all items in V's folder are actually spawn-able =>[spawn-codes-baseids-hashes.md](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention")&#x20;
 {% endhint %}
 
 ## Step 1: Replace the mesh
 
-Find the mesh that you want to use ("**target mesh**") and replace it with the one that you want to switch in ("**source mesh**").
+**Perquisite:** You need a Wolvenkit project.
+
+Find the mesh that you want to use ("the old mesh") and replace it with the one that you want to switch in ("the new mesh").
 
 {% hint style="info" %}
-Example: Replacing the short-sleeved poser jacket with the monk shirt with the tied-back sleeves.​
+Example: Replacing the short-sleeved poser jacket with the monk shirt with the tied-back sleeves.​ For the male variant, replace `_pwa_` with `_pma`\_ and `_wa_` with `_ma_`.
 {% endhint %}
 
-| target mesh | `base\characters\garment\player_equipment\torso\t2_084_jacket__short_sleeves\t2_084_pwa__short_sleeves.mesh`                |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------- |
-| source mesh | <p><code>base\characters\garment\gang_monk\torso\t2_135_jacket__monk_shirt\t2_135_wa_jacket__monk_shirt.mesh</code><br></p> |
+| the old mesh | `base\characters\garment\player_equipment\torso\t2_084_jacket__short_sleeves\t2_084_pwa__short_sleeves.mesh`                |
+| ------------ | --------------------------------------------------------------------------------------------------------------------------- |
+| the new mesh | <p><code>base\characters\garment\gang_monk\torso\t2_135_jacket__monk_shirt\t2_135_wa_jacket__monk_shirt.mesh</code><br></p> |
 
-1. Find both files and add them to your project.&#x20;
-2. Move the source mesh to the target mesh's folder.
-3. Rename the target mesh (e.g. "`t2_084_pwa__short_sleeves.mesh`" -> "`original.mesh`").&#x20;
-4. Rename the source mesh to the target mesh (e.g. "`t2_135_wa_jacket__monk_shirt.mesh`" -> "`t2_084_pwa__short_sleeves.mesh`")
-5. Open both meshes in WolvenKit
+1. Find both files in the Asset Browser and add them to your project.&#x20;
+2. Move the replacement mesh to the original mesh's folder.
+3. Rename the old mesh (e.g. "`t2_084_pwa__short_sleeves.mesh`" -> "`original.mesh`").&#x20;
+4. Rename the new mesh to **replace** the old mesh (e.g. "`t2_135_wa_jacket__monk_shirt.mesh`" -> "`t2_084_pwa__short_sleeves.mesh`")
+5. Open both meshes in WolvenKit by double-clicking them in the Project Explorer — we will now transfer the appearance names to enable **variants**.
 
-<figure><img src="https://i.imgur.com/CzSBCvS.png" alt=""><figcaption><p>Target (original) mesh and its variants</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/replacement_appearance_names.png" alt=""><figcaption><p>See Step 2 for more intel on this</p></figcaption></figure>
 
-<figure><img src="https://i.imgur.com/1sj58tA.png" alt=""><figcaption><p>Source (new) mesh and its variants</p></figcaption></figure>
+## Step 2: Enabling variants
 
-## Step 2: Change the .mlsetups
+The game looks up appearances in a mesh file **by name**. If none can be found, then game meshes will fall back to the `default` appearance, which is how the early replacers worked — every variant (base\_01, old\_01, rich\_01) would simply spawn the default appearance.&#x20;
 
-Before we can edit the mlsetups, we need to find out which spawn code corresponds to which meshMeshAppearance. The process is pretty straightforward — it's documented [here](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials).
+We can simply transfer the names from the old mesh to the new mesh by renaming the entries in the appearances array.&#x20;
 
 {% hint style="info" %}
-The wiki has a list with [mappings](../../../references-lists-and-overviews/equipment/variants-and-appearances.md) for easy lookup. Feel free to add to it!
+If there are more entries than variants available, or if you're just curious which spawn code corresponds to which appearance, go [here](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials) for a guide how to find out.
 {% endhint %}
 
+Now that we have done that, we can start recolouring.
 
+## Step 3 (optional): Find the .mlsetups
 
-<figure><img src="https://i.imgur.com/MnUWU6O.png" alt=""><figcaption></figcaption></figure>
+Each appearance in the appearances array has a list of chunkMask entries (one per submesh), which are assigned a material by name. For a more detailed explanation, you can check [this page](../../../files-and-what-they-do/3d-objects-.mesh-files.md#chunkmaterials), but all we care about right now is this lookup chain:
 
+<figure><img src="https://i.imgur.com/HK6Z0LA.png" alt=""><figcaption></figcaption></figure>
 
+## Step 4: Success!
 
-For example, the appearance "**black**" with the chunks pointing at **pasted\_ml\_t2\_135\_wa\_jacket\_\_monk\_shirt\_fancy** will look for:
+You can now save your mesh, then **install your mod** by clicking on the green arrow in Wolvenkit's toolbar. Once you have started up the game, the old item will now look like your new mesh — including its variants.
 
-<table><thead><tr><th width="106">yes</th><th>archive\base\characters\garment\gang_monk\torso\t2_135_jacket__monk_shirt\textures\ml_t2_135_wa_jacket__monk_shirt_fancy.mlsetup</th></tr></thead><tbody><tr><td>no</td><td><del>base\characters\garment\player_equipment\torso\t2_084_jacket__short_sleeves\textures\ml_t2_135_wa_jacket__monk_shirt_fancy.mlsetup</del></td></tr></tbody></table>
-
-~~_Don't ask me how the lookup/naming works, I have no idea. Just copy it from the source mesh._~~
-
-The **names** of the meshMeshAppearance need to be taken from the **target** mesh - when spawning an item, the game will look for the variant "black", since that's mapped to the corresponding item code.\
-The **values** in the chunkMaterials belong to the **source** mesh.&#x20;
-
-Rename all the variants in the source mesh with those from the target mesh. Then, make sure that you can tell them apart (e.g. by giving each variant an individual appearance or colouring the mlmasks. What worked for me was using primary colours on the mlmasks, and then using each of them fully or with plastic sleeves. Your mileage may vary.)
-
-## Step 3: Success!
-
-After you've found out which spawn code corresponds to which appearance, you can now [alter the appearance files](changing-materials-colors-and-textures.md).&#x20;
+{% hint style="info" %}
+For a guide on how to edit an .mlsetup file (or to change an item's appearance in general), see [here](changing-materials-colors-and-textures.md#exporting-the-.mlsetup).&#x20;
+{% endhint %}
 
 Enjoy!
-
-\
-
-
-Cyberpunk 2077 Modding
