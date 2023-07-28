@@ -24,7 +24,11 @@ This page is a part of the [Adding new items](./) guide and  deals with finding 
 <table><thead><tr><th width="316">File in modded dir</th><th>was originally copied from</th></tr></thead><tbody><tr><td><code>rootentity.ent</code></td><td><code>base\gameplay\items\equipment\underwear\player_underwear_item.ent</code></td></tr><tr><td><code>appearance.app</code></td><td><code>base\gameplay\items\equipment\underwear\appearances\player_underwear_item_appearances.app</code></td></tr><tr><td><code>mesh_entity.ent</code><br><code>⚠</code> Check the red hint box <code>⚠</code></td><td><code>base\characters\garment\player_equipment\torso\t1_080_pwa_tank__judy.ent</code></td></tr><tr><td><code>my_mesh.mesh</code></td><td><code>base\characters\garment\gang_monk\torso\t2_135_jacket__monk_shirt\t2_135_wa_jacket__monk_shirt.mesh</code></td></tr><tr><td></td><td></td></tr><tr><td><code>my_tshirt_factory.csv</code></td><td><code>base\gameplay\factories\items\clothing.csv</code></td></tr><tr><td><code>translation_strings.json</code></td><td><code>base\localization\en-us\onscreens\onscreens.json</code></td></tr><tr><td><code>preview_icons.inkatlas</code></td><td><code>base\gameplay\gui\common\icons\items\item_icons6.inkatlas</code></td></tr><tr><td><code>preview_icons.xbm</code></td><td><code>base\gameplay\gui\common\icons\items\item_icons6.xbm</code></td></tr><tr><td></td><td></td></tr><tr><td><code>tutorial_my_custom_tshirt.archive.xl</code></td><td>Wolvenkit -> New File -> ArchiveXL</td></tr><tr><td><code>tutorial_my_custom_tshirt.yaml</code></td><td>Wolvenkit -> New File -> TweakXL</td></tr></tbody></table>
 
 {% hint style="danger" %}
-For `mesh_entity.ent,` your entity file needs to correspond to your item's **body part**. If you put a shirt in an entity file for shoes, it will deform badly once you put it on. For further details, check [here](different-equipment-slots.md).
+For `mesh_entity.ent,` your entity file needs to correspond to your item's **body part**. If you put a shirt in an entity file for shoes, it will deform badly once you put it on.&#x20;
+
+If you rename your components, we recommend using CDPR's [naming prefixes](../../../3d-modelling/garment-support-how-does-it-work.md) for reasons of garmentSupport. You dont need to understand how this works, just name your component like `l1_myCustomPants` instead of `myCustomPants` and call it a day.
+
+For further details, check [here](different-equipment-slots.md).
 {% endhint %}
 
 {% hint style="success" %}

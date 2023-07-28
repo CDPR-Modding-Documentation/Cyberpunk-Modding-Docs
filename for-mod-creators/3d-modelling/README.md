@@ -8,6 +8,8 @@ Check the sub-pages for more detes, or check the section's sub-pages. For hands-
 
 * [importing meshes from external sources](../modding-guides/everything-else/custom-props.md)
 * [Material ssignment examples](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md)
+* [Troubleshooting your mesh edits](troubleshooting-your-mesh-edits.md)
+* [How do the clothes auto-morph?](garment-support-how-does-it-work.md)
 
 ## Relevant files
 

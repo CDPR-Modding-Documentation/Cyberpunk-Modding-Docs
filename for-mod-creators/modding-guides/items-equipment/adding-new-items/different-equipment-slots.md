@@ -11,6 +11,8 @@ description: How to determine the item type
 
 This page is a part of the [Adding new items](./) guide and contains the steps necessary to create different equipment types.
 
+For an overview of prefixes for the different component types, see here.
+
 ## Step 1: The .yaml
 
 You define the item slot in your .yaml file by specifying the **root entry type** via `$base:`
