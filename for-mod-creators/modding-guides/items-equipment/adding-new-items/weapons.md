@@ -41,11 +41,11 @@ An equipment item's lookup chain goes from the `appearanceName` in the yaml to t
 
 With a weapon, all that happens through **`visualTags`**.
 
-### Define the field in the yaml:
+### YAML: Define the field:
 
 <figure><img src="../../../../.gitbook/assets/archivexl_weapons_yaml.png" alt=""><figcaption></figcaption></figure>
 
-### Define the visual tag in your .app file:
+### .app file: Define the visual tag
 
 **visualTags (violet)**: Must match the visualTags in your `.yaml` file. If multiple entries match, one will be chosen at random.
 
@@ -57,47 +57,92 @@ Unlike with an entity file, the appearance name doesn't matter. You can name all
 
 ## Step by step
 
-As the process of this is finicky and there can be all sorts of sudden unexpected behaviour, here's the best way to go about this:
+As the process is finicky and there can be all sorts of sudden unexpected behaviour, here's the best way to go about this.
 
-1. Find the .app file of a suitable base weapon, add it to your project, and rename it. Don't change anything for now,  future you might need them for testing.
-2. Find the correct .ent file under `base\weapons`\ . The number of components should be the same as in any appearance's component array (red arrow on the screenshot above)
-3. Configure the yaml as described [above](weapons.md#define-the-field-in-the-yaml)
-4. Set up **one** (1) appearance for testing by assigning the correct visual tags. Do not delete the other appearances yet while you make sure that the one you selected
+The list links you to sections of the guide which tell you to change things. **Optimally, you do a dry run with one appearance to make sure that something shows up in the game at all, then start fine-tuning**, but you do you.
+
+Here's what's worked for me (@manavortex):
+
+1. Find the .app file of a suitable base weapon, add it to your project, and rename it. Don't change anything for now, future you might need the original data for troubleshooting later.
+2. Find the correct .ent file under `base\weapons`\  (it's linked in the .app's `baseEntity` field).
+
+{% hint style="info" %}
+Optimally, the number of components in the `.ent` file should be the same as in any appearance's `component` array (red arrow on the screenshot above).&#x20;
+
+If it's not, that **could** indicate that you have the wrong .app file. It could also mean nothing, but if you run into trouble in step 6, this might be why.
+{% endhint %}
+
+3. Configure the yaml [as described here](weapons.md#yaml-define-the-field)
+4. Set up **one** (1) appearance for testing by [assigning the correct visual tags](weapons.md#.app-file-define-the-visual-tag). \
+   _Do not delete the other appearances yet, future you might need them for troubleshooting._
+5. Start the game and make sure that you can spawn a custom weapon with the apppearance you picked and that it
    1. shows up in inventory/photo mode
    2. shows up in first person
-5.  Change the path and appearance of any mesh components to those of your new mesh. Make sure that it
 
+If that's not the case, check the [mesh entity](#user-content-fn-1)[^1] (see the blue box in step 2).&#x20;
+
+If that doesn't help, you may have taken the wrong .app file - go looking again.
+
+{% hint style="warning" %}
+You haven't changed anything at this point: the goal here is to make sure that your visual tags are correct and that you can spawn a weapon addition.&#x20;
+
+It's **crucial** that you make this work — anything you do after this point will add complexity and make troubleshooting more difficult, so this is where you shore up your bases.
+{% endhint %}
+
+6. **Optional:** You just added a weapon to the game that didn't exist before. Take a moment to bask in the success!
+7. Custompath your [mesh entity](#user-content-fn-2)[^2]:&#x20;
+   1. Create a copy of the file and move it to a custom folder
+   2. rename it
+   3. Change the `baseEntity` path in your .app file
+8. **Optional, but recommended**: Repeat step 5 and make sure that everything spawns
+9. Now it's time to actually **change things**. Open your appearance's **component array** and make sure that the **MeshComponents** load your custom stuff (anything that has a `depotPath` pointing to a .mesh file).
+10. After you've changed the paths, launch the game and make sure that your weapon
     1. shows up in your inventory with your meshes
     2. shows up in first person with your meshes
     3. shows up in photo mode at all (it shouldn't be invisible, but will still have the default appearance)
-    4. all parts are visible
-    5. is in the right position where V's hands are concerned (~~at least as much as for the Tactician shotgun~~)
-    6. the correct mesh appearance is displayed.
+    4. all parts and extra meshes are visible
+    5. is in the right position in regards to V's hands (~~at least as much as for the Tactician shotgun~~)
+    6. all parts and extra meshes show the correct appearances
 
-    Fix any issues that might arise. Don't forget that you can split off individual meshes for individual pieces, too.
-6. Once everything works, delete all other appearances, then duplicate and adjust the one you customized to show your color variants.
-7. Now, finally, copy a working appearance from the .app file to your mesh entity (which you have linked in the app file's root as `baseEntity`). This will make your weapon show up in photo mode.
+Fix any issues that might arise before you proceed.
+
+{% hint style="info" %}
+&#x20;This is why we kept the original appearances around: if you run into any issues here, you can compare your stuff with the original, un-changed game variants.&#x20;
+
+Don't forget that you can
+
+* split off meshes or submeshes for individual pieces (for chunkmask hiding or extra materials)
+* add more components (duplicate existing ones, or copy them from the mesh entity)
+{% endhint %}
+
+11. Once everything works, delete all the default appearances, then duplicate and adjust the one you customized to show your color variants.
+12. Now, finally, copy a working appearance from the .app file to your [mesh entity](#user-content-fn-3)[^3]. This will make your weapon show up in photo mode.
+13. Luanch
 
 If you wish to add a custom icon, follow the steps in the [corresponding guide](../../everything-else/custom-in-game-icons.md).
 
 ## Your own HUD icons
 
-To make your own HUD icons for the lower right corner&#x20;
+To make your own HUD icons for the lower right corner, check [here](../../custom-icons-and-ui/your-own-hud-icons.md).
 
 ## Exporting a mesh for new weapon
 
-When exporting an existing weapon mesh for your custom weapon make sure to uncheck LOD Filter.
+When exporting an existing weapon mesh for your custom weapon, make sure to **uncheck LOD Filter** — the lower LOD mesh is used for calculating the hitbox.
 
-Put your custom mesh in both LODs.
-
-This is especially important in melee weapons, if your weapon is bigger than the existing one. If your custom, bigger mesh only exists in LOD 1 you will notice that in game there is a separate, invisible hit box that does not align with your new weapon.
-
-To note, even if you modify both LODs correctly, but your weapon is significantly bigger than the original one, you will notice that it is hitting where the original one would. This is due to the fact that the hit box does not expand automatically with the mesh being bigger.
-
-The hit box will not be a problem if your new weapon is roughly the same size as original.&#x20;
-
-I'm still trying to come up with a solution to the bigger weapons hit box problem. If you know anything or would like to brainstorm hmu on Discord @Mx\_OrcBoi.
-
-
+{% hint style="info" %}
+This is especially important if you add a melee weapon of a different size than the original: if you only replace LOD 1, there will be a separate, invisible hit box that does not align with your new weapon.
+{% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/2023-07-12 12_00_41-Export Tool.png" alt=""><figcaption><p>Mesh export LOD Filter</p></figcaption></figure>
+
+In Blender, put your custom mesh in both LODs.
+
+{% hint style="info" %}
+If your weapon is significantly bigger than the original one, you'll notice that the hitbox won't auto-scale with your mesh. If you know how to solve this problem or want to brainstorm, hit up **`@Mx_OrcBoi`** on Discord!
+{% endhint %}
+
+[^1]: as linked in your .app's baseEntity field
+
+[^2]: baseEntity in your app file
+
+[^3]: baseEntity in your .app file - you've custompathed it in step 6
