@@ -62,7 +62,7 @@ For a hands-on guide and something to play around/experiment with, check [here](
 If you have modded other games, you're used to PBR materials with a bunch of textures like **diffuse**, **normal,** **metalness** etc.&#x20;
 
 {% hint style="success" %}
-To start with a textured material, see [here](configuring-materials.md#textured-material).
+To change a textured material, see [this guide](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance)
 {% endhint %}
 
 {% hint style="info" %}
@@ -74,5 +74,7 @@ Did you know? You can make Cyberpunk's default textured material glow.
 This is specific to Cyberpunk, and it is incredibly cool. If you're used to textured materials, you're probably going to hate it at first, but it has incredible versatility and re-usability.&#x20;
 
 {% hint style="success" %}
-To start with a multilayered material, see [here](configuring-materials.md#multilayered-material). To read up on how it works, see [here](./#multilayered).
+* What is a [multilayered material](multilayered.md) and how does it work?
+* [Changing the colours](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material)
+* [Changing the mask](../textures/custom-multilayermasks.md)
 {% endhint %}
