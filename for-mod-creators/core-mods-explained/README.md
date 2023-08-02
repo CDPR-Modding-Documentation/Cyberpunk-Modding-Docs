@@ -58,6 +58,8 @@ Aside from being required for many mods, it is a perquisite for other frameworks
 
 ArchiveXL ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/4198) | [GitHub](https://github.com/psiberx/cp2077-archive-xl/)) allows us to load custom resources into Cyberpunk 2077. Working under the hood, it is the essential tool to **add** rather than **replace**.
 
+For ArchiveXL-specific documentation, check the [corresponding sub-page.](archivexl.md)
+
 {% embed url="https://github.com/psiberx/cp2077-archive-xl" %}
 
 ### TweakXL  <a href="#tweakxl-+-archivexl" id="tweakxl-+-archivexl"></a>

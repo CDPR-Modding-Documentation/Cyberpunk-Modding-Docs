@@ -108,6 +108,7 @@
 * [👤 Animations](for-mod-creators/animations.md)
 * [⚒ Core Mods explained](for-mod-creators/core-mods-explained/README.md)
   * [CET (Cyber Engine Tweaks)](https://wiki.redmodding.org/cyber-engine-tweaks/)
+  * [ArchiveXL](for-mod-creators/core-mods-explained/archivexl.md)
   * [AMM](for-mod-creators/core-mods-explained/amm.md)
   * [Red4ext](https://wiki.redmodding.org/red4ext/)
   * [Redscript](https://wiki.redmodding.org/redscript/)
