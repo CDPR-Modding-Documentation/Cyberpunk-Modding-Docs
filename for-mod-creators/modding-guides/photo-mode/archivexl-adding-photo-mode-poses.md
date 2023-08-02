@@ -21,12 +21,14 @@ This guide will walk you through **adding poses** to Cyberpunk 2077's photo mode
 * [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) 1.4.5 (the first version supporting this feature)
 * [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) 1.12.0
 
-{% hint style="success" %}
 This guide assumes that you already have an .anims file with poses or animations. If you want to make your own, check [here](../animations/).
-{% endhint %}
 
 {% hint style="info" %}
 You do not need any pose mode extender like PMU or MPAF anymore, although the ArchiveXL feature is compatible wiith all of them.
+{% endhint %}
+
+{% hint style="success" %}
+Check out [this tool](https://wolv-photomode-tools.netlify.app/) by @wolv, it will generate yaml files for you
 {% endhint %}
 
 ## Getting the files
@@ -101,7 +103,13 @@ Optional: If you want your pose to move, you can set the duration in the .yaml a
 
 ### The .yaml file
 
-This file will go into `r6/tweaks/yourfolder` and appends the poses that you defined to the photo mode. Without this file, the animations will be in the entity, but the photo mode won't know about them. It has three sections:
+This file will go into `r6/tweaks/yourfolder` and appends the poses that you defined to the photo mode. Without this file, the animations will be in the entity, but the photo mode won't know about them.&#x20;
+
+{% hint style="success" %}
+You can use [this tool](https://wolv-photomode-tools.netlify.app/) by @wolv to autogenerate your .yaml. If you do that, then you can skip this entire section and check [the result](archivexl-adding-photo-mode-poses.md#the-result).
+{% endhint %}
+
+It has three sections:
 
 #### Adding the category
 
