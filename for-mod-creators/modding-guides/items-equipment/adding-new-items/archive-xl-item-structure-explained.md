@@ -136,6 +136,12 @@ If you want more than just the base properties, check the documentation for [Twe
 
 Now that we're done with the base structure, we can take a look at the game files. Like for any of the vanilla game items, we have four of them. This guide will only hold information that's directly relevant to adding item, but in the individual sections below, you will find links to more documentation about the files.
 
+{% hint style="success" %}
+With ArchiveXL >= 1.5, there is a **new way** of making these connections, saving most of the work of making many variants. You can still complete this guide and then see the documentation for dynamic loading [on its own page](../../../core-mods-explained/archivexl.md#dynamic-variants).
+
+If you want to do more than 5 variants (for both body genders and camera modes), that approach is strongly recommended. Since there isn't a detailed guide yet, you can find us on [Discord](https://discord.com/invite/redmodding) in the #archive-xl channel.
+{% endhint %}
+
 * [root\_entity.ent](archive-xl-item-structure-explained.md#root\_entity.ent)
 * appearance.app
 * mesh\_entity.ent

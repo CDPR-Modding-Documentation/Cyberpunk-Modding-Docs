@@ -98,7 +98,11 @@ This is how everything connects. Looks pretty scary, but is actually simple: whe
 
 You can find a breakdown-by-entry on the [corresponding wiki page](archive-xl-item-structure-explained.md).
 
+{% hint style="success" %}
+With ArchiveXL >= 1.5, there is a **new way** of making these connections, saving most of the work of making many variants. You can still complete this guide and then see the documentation for dynamic loading [on its own page](../../../core-mods-explained/archivexl.md#dynamic-variants).
 
+If you want to do more than 5 variants (for both body genders and camera modes), that approach is strongly recommended. Since there isn't a detailed guide yet, you can find us on [Discord](https://discord.com/invite/redmodding) in the #archive-xl channel.
+{% endhint %}
 
 <figure><img src="https://i.imgur.com/i1QzZMP.png" alt=""><figcaption><p>Don't panic, we've got this.</p></figcaption></figure>
 

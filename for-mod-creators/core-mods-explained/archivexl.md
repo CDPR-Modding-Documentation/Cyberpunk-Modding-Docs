@@ -29,9 +29,9 @@ When adding items, you will normally offer multiple [**mesh appearances**](../fi
 
 ### And what are suffixes?
 
-Sometimes, you want to load different meshes/appearances under different circumstances. Until ArchiveXL 1.5, the process was extremely tedious, but thanks to psiberx, the integration of [**suffixes**](../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes) has mostly stopped hurting (read up on [dynamic variants](archivexl.md#dynamic-variants) to learn how to do it).
+Sometimes, you want to load different meshes/appearances under different circumstances. Until ArchiveXL 1.5, the process was extremely tedious, but thanks to psiberx, [**suffixes**](../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes) have been replaced with **conditions** (read up on [dynamic variants](archivexl.md#dynamic-variants) to learn how to make use of that).&#x20;
 
-Here are some use cases:
+While the solution has changed (and improved), the problem remains:
 
 #### Body genders
 
