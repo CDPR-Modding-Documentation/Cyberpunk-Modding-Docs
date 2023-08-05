@@ -119,7 +119,7 @@ Don't forget that you can
 12. Now, finally, copy a working appearance from the .app file to your [mesh entity](#user-content-fn-3)[^3]. This will make your weapon show up in photo mode.
 13. Luanch
 
-If you wish to add a custom icon, follow the steps in the [corresponding guide](../../everything-else/custom-in-game-icons.md).
+If you wish to add a custom icon, follow the steps in the [corresponding guide](../../custom-icons-and-ui/custom-in-game-icons.md).
 
 ## Your own HUD icons
 

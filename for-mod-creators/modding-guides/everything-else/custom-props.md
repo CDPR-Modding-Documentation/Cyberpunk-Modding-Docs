@@ -11,6 +11,10 @@ description: How to create custom props to use with AMM or sector editing
 
 This guide will teach you how to create a customizable by chaining an .ent, an .app, and a .mesh file with multiple appearances.&#x20;
 
+{% hint style="info" %}
+For a guide on how to make meshes out of 2d textures, see [here](your-image-as-custom-mesh.md).
+{% endhint %}
+
 Its focus is on the **file structure** and the **relations between the files**. If you want more hands-on tips what you can do with materials, check [here](textured-items-and-cyberpunk-materials.md) or [here](../../materials/).&#x20;
 
 **It uses the following versions:**

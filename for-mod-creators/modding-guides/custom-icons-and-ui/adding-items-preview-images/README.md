@@ -19,11 +19,15 @@ If you want to have gendered preview icons, check [here](gendered-preview-icons.
 
 ## The required files
 
-If you downloaded the example project ([#getting-the-files](../../photo-mode/archivexl-adding-photo-mode-poses.md#getting-the-files "mention")), the preview is already hooked up.&#x20;
+If you downloaded the example project ([#getting-the-files](../../photo-mode/archivexl-adding-photo-mode-poses.md#getting-the-files "mention")), the preview is already hooked up. Otherwise, [download](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas\_templates\_apart\_v1.zip/file) the template archive (kindly provided by Apart).
 
 ### Go away with your examples, I'll do everything by hand!
 
 Okay, you do you. Here's how:
+
+<details>
+
+<summary>Finding the files by hand</summary>
 
 1. search in Wolvenkit for `icons > .inkatlas`
 2. Pick one of CDPR's icon files (look inside first, you want the right format) and add it to your project
@@ -31,6 +35,8 @@ Okay, you do you. Here's how:
 4. Find the `.xbm` file and add it to your project as well
 5. **Move** both of these files to your custom folder, as you don't want to overwrite game default icons
 6. Optionally: Re-name them. This guide assumes that they're named `preview_icons.inkatlas` and `preview_icons.xbm`
+
+</details>
 
 You should now have a structure like this:&#x20;
 
