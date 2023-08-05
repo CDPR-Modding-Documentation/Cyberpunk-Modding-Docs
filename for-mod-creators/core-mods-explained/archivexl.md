@@ -61,6 +61,14 @@ If you have ever tried to make ten colour variants of an item for two body gende
 You can find the technical (usage) documentation for dynamic variants on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki/Dynamic-Appearances).
 {% endhint %}
 
+{% hint style="danger" %}
+You **have** to use a mesh entity for dynamic variants, as components in the .app file will be **ignored**.
+{% endhint %}
+
+{% hint style="info" %}
+You no longer need suffixes in the .yaml. However, if you want to use suffixes for your switching, psiberx recommends doing that per **appearance name** in the .app file, so that you can still use chunk masks via component overrides.
+{% endhint %}
+
 Here's an overview of how the dynamic variants work. By comparison, [this](../modding-guides/items-equipment/adding-new-items/#diagram) is the old diagram. \
 Especially for multiple items, the new way is much faster.
 
