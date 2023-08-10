@@ -35,12 +35,13 @@ This section aims to give you a quick overview. If your exact problem isn't list
 * [I don't wanna debug, I just want mods!](./#i-really-just-want-to-get-this-working-what-do-i-do)
 * [There was a game update and now your mods aren't working](users-troubleshooting-after-a-game-update.md)
 * [Your game is crashing](./#your-game-is-crashing)
+  * [During a quest in a car chase](./#during-car-chases)
   * [it's not even starting](./#crash-on-startup)
     * [Corrupt or missing script files](./#corrupt-or-missing-script-files)
     * [Corrupted archives](./#corrupted-archives)
-  * [before the menu](./#crash-before-menu)
-  * [when loading a save / starting a game](./#crash-on-loading-a-save)
-  * [randomly during gameplay](./#crash-during-the-game)
+    * [before the menu](./#crash-before-menu)
+    * [when loading a save / starting a game](./#crash-on-loading-a-save)
+    * [randomly during gameplay](./#crash-during-the-game)
 * [Redscript Compilation Failed (Popup message)](./#redscript-compilation-failed)
 * [You're on Linux](../users-modding-cyberpunk-2077/modding-on-linux.md)
 * [You have trouble with your pirated game](./#you-pirated-the-game)
@@ -65,6 +66,10 @@ To enable REDmods, check [here](https://wiki.redmodding.org/cyberpunk-2077-moddi
 {% endhint %}
 
 ## Your game is crashing
+
+### During car chases
+
+If your game is crashing during certain car chase missions, try removing [Eye Exposure Adaption](https://www.nexusmods.com/cyberpunk2077/mods/2375).
 
 <figure><img src="../../.gitbook/assets/troubleshooting_headers_doesnt_even_start.png" alt=""><figcaption></figcaption></figure>
 
