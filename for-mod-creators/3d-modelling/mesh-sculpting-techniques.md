@@ -15,6 +15,10 @@ Assumed skill level: \
 \- You have [exported a mesh and imported it into Blender](exporting-and-importing-meshes/)\
 \- You are able to read and comprehend instructions.
 
+{% hint style="info" %}
+You can find video guides for refitting linked on the [community guides](../modding-guides/community-guides/) page
+{% endhint %}
+
 ## Prerequisite: Deleting shapekeys
 
 Before you start editing your mesh, you should delete its shapekeys. This is necessary for the Sculpt Mode to show your changes in real time, and you don't need them anymore after editing your mesh.
