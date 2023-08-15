@@ -12,7 +12,7 @@ description: Adding weapons
 Weapons work a little different from regular ArchiveXL items, starting right at the root entity. With the help of @**Apart** and **psiberx,** I was able to figure out the process and document it for you.
 
 {% hint style="info" %}
-This guide assumes that you are at least somewhat familiar with ArchiveXL item additions as per the "[Adding new Items](./)" guide. If you have no idea where to start, make sure that you set up a working shirt and then start making the changes below.
+This guide assumes that you are at least somewhat familiar with ArchiveXL item additions as per the "[Adding new Items](../)" guide. If you have no idea where to start, make sure that you set up a working shirt and then start making the changes below.
 {% endhint %}
 
 ## Selecting the base
@@ -21,7 +21,7 @@ Start by finding the .app file of an original weapon of the type you want to mak
 
 In the app file, you can also find the value for the yaml file's `$base` property:
 
-<figure><img src="../../../../.gitbook/assets/archivexl_weapons_basetype.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/archivexl_weapons_basetype.png" alt=""><figcaption></figcaption></figure>
 
 ## Getting the mesh\_entity.ent
 
@@ -33,7 +33,7 @@ This file makes the weapon show up in photo mode. Instead of going into the Part
 
 Instead of a root entity file, you need to point your factory.csv directly to your iron's app file (the one from the section above).
 
-<figure><img src="../../../../.gitbook/assets/archivexl_weapons_factory.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/archivexl_weapons_factory.png" alt=""><figcaption></figcaption></figure>
 
 ## Appearance selection
 
@@ -43,7 +43,7 @@ With a weapon, all that happens through **`visualTags`**.
 
 ### YAML: Define the field:
 
-<figure><img src="../../../../.gitbook/assets/archivexl_weapons_yaml.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/archivexl_weapons_yaml.png" alt=""><figcaption></figcaption></figure>
 
 ### .app file: Define the visual tag
 
@@ -53,7 +53,7 @@ With a weapon, all that happens through **`visualTags`**.
 Unlike with an entity file, the appearance name doesn't matter. You can name all of them `foo`, and as long as you had the visual tags right, it still works (I would advise against it, though)
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/archivexl_weapons_appfile.png" alt=""><figcaption><p><strong>visualTags (violet)</strong>: Must match the visualTags in your .ent file. If multiple entries match, one will be chosen at random.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/archivexl_weapons_appfile.png" alt=""><figcaption><p><strong>visualTags (violet)</strong>: Must match the visualTags in your .ent file. If multiple entries match, one will be chosen at random.</p></figcaption></figure>
 
 ## Step by step
 
@@ -72,8 +72,8 @@ Optimally, the number of components in the `.ent` file should be the same as in 
 If it's not, that **could** indicate that you have the wrong .app file. It could also mean nothing, but if you run into trouble in step 6, this might be why.
 {% endhint %}
 
-3. Configure the yaml [as described here](weapons.md#yaml-define-the-field)
-4. Set up **one** (1) appearance for testing by [assigning the correct visual tags](weapons.md#.app-file-define-the-visual-tag). \
+3. Configure the yaml [as described here](./#yaml-define-the-field)
+4. Set up **one** (1) appearance for testing by [assigning the correct visual tags](./#.app-file-define-the-visual-tag). \
    _Do not delete the other appearances yet, future you might need them for troubleshooting._
 5. Start the game and make sure that you can spawn a custom weapon with the apppearance you picked and that it
    1. shows up in inventory/photo mode
@@ -119,13 +119,17 @@ Don't forget that you can
 12. Now, finally, copy a working appearance from the .app file to your [mesh entity](#user-content-fn-3)[^3]. This will make your weapon show up in photo mode.
 13. Luanch
 
-If you wish to add a custom icon, follow the steps in the [corresponding guide](../../custom-icons-and-ui/custom-in-game-icons.md).
+If you wish to add a custom icon, follow the steps in the [corresponding guide](../../../custom-icons-and-ui/custom-in-game-icons.md).
 
 ## Your own HUD icons
 
-To make your own HUD icons for the lower right corner, check [here](../../custom-icons-and-ui/your-own-hud-icons.md).
+To make your own HUD icons for the lower right corner, check [here](../../../custom-icons-and-ui/your-own-hud-icons.md).
 
-## Exporting a mesh for new weapon
+## Custom throwing weapons
+
+You can set up throwing weapons just like a regular weapon, but the projectile (when you throw it) will default to . Check [here](throwing-weapons-projectiles.md) for how to have custom projectiles.
+
+## Editing weapon meshes
 
 When exporting an existing weapon mesh for your custom weapon, make sure to **uncheck LOD Filter** — the lower LOD mesh is used for calculating the hitbox.
 
@@ -133,7 +137,7 @@ When exporting an existing weapon mesh for your custom weapon, make sure to **un
 This is especially important if you add a melee weapon of a different size than the original: if you only replace LOD 1, there will be a separate, invisible hit box that does not align with your new weapon.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/2023-07-12 12_00_41-Export Tool.png" alt=""><figcaption><p>Mesh export LOD Filter</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/2023-07-12 12_00_41-Export Tool.png" alt=""><figcaption><p>Mesh export LOD Filter</p></figcaption></figure>
 
 In Blender, put your custom mesh in both LODs.
 
