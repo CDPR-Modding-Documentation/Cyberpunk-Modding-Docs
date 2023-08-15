@@ -8,6 +8,14 @@ description: How to get mods working on a SteamDeck
 
 This page tells you how to set the launch options for Steam under Linux. If you have trouble after an update and have exhausted [all the usual steps](../user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md), make sure to double-check them — sometimes, Steam helpfully deletes them for you to make sure that your game crashes on startup.
 
+## TL;DR
+
+You need to&#x20;
+
+* install d3dcompiler\_47
+* install vcrun2022
+* set your launch options to `WINEDLLOVERRIDES="winmm,version=n,b" %command% -modded`
+
 ## Setting the launch options by hand
 
 Under Linux, you have to start the game by setting the following launch options for Cyberpunk:
@@ -21,6 +29,10 @@ WINEDLLOVERRIDES="winmm,version=n,b" %command% -modded
 If you can't get it to work, follow the steps below to apply the launch options via Protontricks, or search the #red4ext-support channel on the [modding discord](https://discord.gg/redmodding) for `winmm` to find out what else you can do.
 
 ## Setting the launch options via Protontricks
+
+{% hint style="warning" %}
+Make sure&#x20;
+{% endhint %}
 
 {% hint style="info" %}
 If you don't want to read text, find a video documenting the process [here](https://youtu.be/CYKCOBaZpBU?t=110). Thanks to #Connor for providing the screenshots and transcription!
@@ -46,17 +58,19 @@ To configure the necessary parameters, you can use the app Protontricks, which y
 
 <figure><img src="../../.gitbook/assets/linux_modding_5.png" alt=""><figcaption></figcaption></figure>
 
-6. Switch to the libraries tab and open the drop down menu
+6. Add an override:\
+   Switch to the libraries tab and open the drop down menu
 
 <figure><img src="../../.gitbook/assets/linux_modding_6.png" alt=""><figcaption></figcaption></figure>
 
-7. Select "version":
+7. Select "version" and "Add"
 
 <figure><img src="../../.gitbook/assets/linux_modding_7.png" alt=""><figcaption></figcaption></figure>
 
-8. Apply via "OK". You're now done with Protontricks.
-9. Switch to steam and make sure that the launch options are set. They should look like this:\
-   `WINEDLLOVERRIDES="winmm.dll,version=n,b" %command%`
+8. Repeat the process for `d3dcompiler_47`
+9. Apply via "OK". You're now done with Protontricks.
+10. Switch to steam and make sure that the launch options are set. They should look like this:\
+    `WINEDLLOVERRIDES="winmm.dll,version=n,b" %command%`
 
 <figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption></figcaption></figure>
 
