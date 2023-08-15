@@ -6,6 +6,10 @@ description: >-
 
 # Getting Started
 
+{% hint style="success" %}
+If you already have the game installed and configured, you can proceed to the guide [how to install mods with Vortex](vortex-mod-manager.md).
+{% endhint %}
+
 #### Before you get started
 
 Make sure you have all the required programs to operate mods and their managers; these are separate from modding framework requirements, but just as important.
@@ -18,6 +22,10 @@ Make sure you have all the required programs to operate mods and their managers;
 This guide assumes that you have already bought Cyberpunk 2077 on the platform of your choice (Steam, GOG or EPIC).
 
 ## Installing the Game
+
+{% hint style="success" %}
+If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-gog)
+{% endhint %}
 
 In order to set up your game to be best suited for mods, you'll want to keep a few things in mind:
 
@@ -89,6 +97,10 @@ That's it, you are done with your install of the game! You can now move on to [i
 
 ### Installing Cyberpunk: Steam
 
+{% hint style="success" %}
+If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-steam)
+{% endhint %}
+
 To be done
 
 ### Configuring Cyberpunk: Steam
@@ -103,6 +115,10 @@ To be done
 That's it, you are done with your install of the game! You can now move on to [installing Vortex](vortex-mod-manager.md).
 
 ### Installing Cyberpunk: Epic
+
+{% hint style="success" %}
+If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-epic)
+{% endhint %}
 
 To be done
 

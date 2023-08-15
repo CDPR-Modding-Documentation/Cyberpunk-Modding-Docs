@@ -12,6 +12,13 @@ description: Modding your game, for users
 This page contains instructions on **installing** mods. If you want to **create** mods instead, check [here](broken-reference).
 {% endhint %}
 
+{% hint style="success" %}
+If this doesn't cover your needs, maybe check out our more detailed guides:
+
+* [Installing Cyberpunk](getting-started/)
+* [Installing mods via Vortex](getting-started/vortex-mod-manager.md)
+{% endhint %}
+
 ## How to install mods
 
 {% hint style="danger" %}
