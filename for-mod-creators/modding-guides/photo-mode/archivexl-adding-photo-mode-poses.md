@@ -13,6 +13,10 @@ This guide will walk you through **adding poses** to Cyberpunk 2077's photo mode
 
 **Difficulty:** You know how to read ;)&#x20;
 
+{% hint style="danger" %}
+This guide will teach you how to hook up an existing .anims file to the photo mode. If you don't have an .anims file, you can find a dummy file in the AMM [pose guide](../animations/amm-collab-anims-poses.md), or you can learn [how to make your own](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/).
+{% endhint %}
+
 **It uses the following versions:**
 
 * Cyberpunk 2077 game version 1.6.2 Hotfix
@@ -20,8 +24,6 @@ This guide will walk you through **adding poses** to Cyberpunk 2077's photo mode
 * [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) 1.1.4
 * [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) 1.4.5 (the first version supporting this feature)
 * [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) 1.12.0
-
-This guide assumes that you already have an .anims file with poses or animations. If you want to make your own, check [here](../animations/).
 
 {% hint style="info" %}
 You do not need any pose mode extender like PMU or MPAF anymore, although the ArchiveXL feature is compatible wiith all of them.
