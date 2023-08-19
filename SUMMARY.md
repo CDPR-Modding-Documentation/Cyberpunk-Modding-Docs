@@ -24,7 +24,7 @@
 
 * [Page 1](for-mod-creators/page-1.md)
 * [🛠 Modding Tools](for-mod-creators/modding-tools/README.md)
-  * [WolvenKit](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/)
+  * [WolvenKit](for-mod-creators/modding-tools/wolvenkit.md)
   * [MLSETUP Builder](for-mod-creators/modding-tools/mlsetup-builder.md)
   * [010 Editor](for-mod-creators/modding-tools/010-editor.md)
   * [PixelRick's Cyberpunk Save Editor](for-mod-creators/modding-tools/pixelricks-cyberpunk-save-editor.md)
