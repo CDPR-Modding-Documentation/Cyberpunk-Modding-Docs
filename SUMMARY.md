@@ -38,7 +38,6 @@
     * [Script Modding](for-mod-creators/modding-tools/redmod/script-modding.md)
     * [TweakDB Modding](for-mod-creators/modding-tools/redmod/tweakdb-modding.md)
     * [Audio Modding](for-mod-creators/modding-tools/redmod/audio-modding.md)
-    * [Page 2](for-mod-creators/modding-tools/redmod/page-2.md)
   * [Blender scripts and plugins](for-mod-creators/modding-tools/blender-scripts-and-plugins.md)
   * [Noesis](for-mod-creators/modding-tools/noesis.md)
 * [⚒ Core Mods explained](for-mod-creators/core-mods-explained/README.md)
