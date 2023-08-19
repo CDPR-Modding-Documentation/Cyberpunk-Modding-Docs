@@ -22,7 +22,6 @@
 
 ## For Mod Creators:
 
-* [Page 1](for-mod-creators/page-1.md)
 * [🛠 Modding Tools](for-mod-creators/modding-tools/README.md)
   * [WolvenKit](for-mod-creators/modding-tools/wolvenkit.md)
   * [MLSETUP Builder](for-mod-creators/modding-tools/mlsetup-builder.md)
