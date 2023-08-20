@@ -40,15 +40,15 @@ Instanced shaders for mesh materials
 
 ### MLMASK (multilayered mask)
 
-Mask component of the [**Multilayer supershader**](../materials/multilayered.md)
+Mask component of the [**Multilayer supershader**](../materials/multilayered/)
 
 ### MLSETUP (multilayered setup)
 
-Material setup component of the [**Multilayer supershader**](../materials/multilayered.md)
+Material setup component of the [**Multilayer supershader**](../materials/multilayered/)
 
 ### MLTEMPLATE (multilayered template)
 
-Pre-defined tiling surface component of the [**Multilayer supershader**](../materials/multilayered.md)
+Pre-defined tiling surface component of the [**Multilayer supershader**](../materials/multilayered/)
 
 ### HP (hair profile)
 

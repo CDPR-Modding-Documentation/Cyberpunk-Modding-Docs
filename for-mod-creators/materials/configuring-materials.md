@@ -12,7 +12,7 @@ You can see a material's default properties by opening the `.(re)mt` file in Wol
 
 ## Multilayered Material
 
-For a full documentation, check the corresponding [page](multilayered.md).&#x20;
+For a full documentation, check the corresponding [page](multilayered/).&#x20;
 
 To set it up, use these keys for the "values" array of your material:
 

@@ -74,7 +74,8 @@ Did you know? You can make Cyberpunk's default textured material glow.
 This is specific to Cyberpunk, and it is incredibly cool. If you're used to textured materials, you're probably going to hate it at first, but it has incredible versatility and re-usability.&#x20;
 
 {% hint style="success" %}
-* What is a [multilayered material](multilayered.md) and how does it work?
+* What is a [multilayered material](multilayered/) and how does it work?
+* What are these [properties](multilayered/multilayered-material-properties.md), how do I use them?
 * [Changing the colours](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material)
 * [Changing the mask](../textures/custom-multilayermasks.md)
 {% endhint %}

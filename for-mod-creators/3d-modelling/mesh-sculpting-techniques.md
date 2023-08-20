@@ -98,7 +98,7 @@ Cons:
 * Destructive editing
 * Can be a little time-consuming because you have to join, separate, and rename meshes every time you want to import it back to WolvenKit.
 
-Let's assume that we're sculpting Rogue's pants. For surface material assignment, the seams are an own submesh — the pants (submesh\_00) are coloured via [`multilayered`](../materials/multilayered.md) material, while the seams have a variation of `metal_base` with coloured stitches.
+Let's assume that we're sculpting Rogue's pants. For surface material assignment, the seams are an own submesh — the pants (submesh\_00) are coloured via [`multilayered`](../materials/multilayered/) material, while the seams have a variation of `metal_base` with coloured stitches.
 
 We don't want to edit those separately, so we'll fuse them into one mesh, sculpt everything in one go, and then split them apart again.
 

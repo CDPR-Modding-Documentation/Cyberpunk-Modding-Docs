@@ -5,10 +5,12 @@ description: Various kinds of materials, and where to find them
 # Cheat sheet: Materials
 
 {% hint style="info" %}
-This page contains a brief overview of existing materials. **For a more in-depth explanation as well as downloadable example files, check** [**this page**](../materials/)**.**
+This page contains a brief overview of existing materials. **For a more in-depth explanation as well as downloadable example files, check** [**this page**](../materials/)**.**\
 
 
+For an overview of Multilayered properties, check [here](../materials/multilayered/multilayered-material-properties.md).&#x20;
 
+\
 If you don't know how to edit material properties, check [here](../materials/).
 {% endhint %}
 

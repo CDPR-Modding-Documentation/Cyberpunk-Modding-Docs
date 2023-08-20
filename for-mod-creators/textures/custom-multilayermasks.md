@@ -14,8 +14,8 @@ This tutorial will teach you how to create your own MultilayerMask for an item a
 Difficulty: You know how to read.
 
 {% hint style="info" %}
-To find out what an MLMask does, see [here](../materials/multilayered.md#what-is-the-mlmask). \
-To learn about MLSetups, see [here](../materials/multilayered.md#what-is-the-mlsetup).
+To find out what an MLMask does, see [here](../materials/multilayered/#what-is-the-mlmask). \
+To learn about MLSetups, see [here](../materials/multilayered/#what-is-the-mlsetup).
 {% endhint %}
 
 ## Export the MultilayerMask
@@ -91,7 +91,7 @@ Once you're done, open the masklisk and make sure that you have exactly as many 
 All images in the multilayer mask need to have the same resolution. Otherwise, it will crash your game.
 {% endhint %}
 
-You can now assign your new Masklisk to your mesh and use it together with custom [MultilayerSetups](../materials/multilayered.md#what-is-the-mlsetup).&#x20;
+You can now assign your new Masklisk to your mesh and use it together with custom [MultilayerSetups](../materials/multilayered/#what-is-the-mlsetup).&#x20;
 
 <figure><img src="../../.gitbook/assets/mlsetup_before_after.png" alt=""><figcaption><p>before => after</p></figcaption></figure>
 

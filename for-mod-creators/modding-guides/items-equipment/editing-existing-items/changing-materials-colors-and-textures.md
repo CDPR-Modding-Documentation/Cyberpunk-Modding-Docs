@@ -17,9 +17,9 @@ It uses the following versions:
 * [MLSetupBuilder](../../../modding-tools/mlsetup-builder.md): [1.6.5](https://github.com/Neurolinked/MlsetupBuilder) (older versions won't be compatible with WKit 8.7 and game version 1.6)
 
 {% hint style="info" %}
-In general, an item's appearance is determined by a [mlsetup](../../../materials/multilayered.md#what-is-the-mlsetup) file containing several material layers.&#x20;
+In general, an item's appearance is determined by a [mlsetup](../../../materials/multilayered/#what-is-the-mlsetup) file containing several material layers.&#x20;
 
-Which of these layers affects which part of your mesh will be determined in the corresponding [mlmask](../../../materials/multilayered.md#what-is-the-mlmask) file.
+Which of these layers affects which part of your mesh will be determined in the corresponding [mlmask](../../../materials/multilayered/#what-is-the-mlmask) file.
 {% endhint %}
 
 {% hint style="success" %}
@@ -76,7 +76,7 @@ You will (hopefully) see a material with three entries in `values` (order doesn'
 
 <table><thead><tr><th width="213">Key</th><th>Value (DepotPath)</th></tr></thead><tbody><tr><td>MultilayerSetup</td><td><code>base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\ml_t2_002_ma_vest__puffy_bwstripes.mlsetup</code></td></tr><tr><td>MultilayerMask</td><td><code>base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\ml_t2_002_ma_vest__puffy_default.mlmask</code></td></tr><tr><td>GlobalNormal</td><td><code>base\characters\garment\citizen_casual\torso\t2_002_vest__puffy\textures\t2_002_ma_vest__puffy_n01.xbm</code></td></tr></tbody></table>
 
-For the purpose of this guide, all that matters is the mlsetup, which determines all the individual material assignments in this CMaterial. For an explanation of the shader, check [here](../../../materials/multilayered.md).
+For the purpose of this guide, all that matters is the mlsetup, which determines all the individual material assignments in this CMaterial. For an explanation of the shader, check [here](../../../materials/multilayered/).
 
 <figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>This is the path to the mlsetup file. By editing this, you can change colours and surface materials.</p></figcaption></figure>
 
@@ -94,7 +94,7 @@ Most materials in Cyberpunk use the `engine\materials\multilayered.mt` material 
 If you would rather use a textured material, check [here](changing-materials-colors-and-textures.md#other-materials-textured).
 {% endhint %}
 
-A multilayered material consists of multiple layers of materials, projected on the mesh through the mlmask: white parts get affected, black parts are blocked out. (Again, for a full explanation, check [here](../../../materials/multilayered.md)).&#x20;
+A multilayered material consists of multiple layers of materials, projected on the mesh through the mlmask: white parts get affected, black parts are blocked out. (Again, for a full explanation, check [here](../../../materials/multilayered/)).&#x20;
 
 {% hint style="info" %}
 You can turn any multilayered material into its cyberspace variant by changing the material from `engine\materials\multilayered.mt` to `base\characters\common\cyberspace\silverhand_overlay_cyberspace_mml.mi`
