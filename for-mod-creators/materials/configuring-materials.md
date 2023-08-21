@@ -32,6 +32,8 @@ The most commonly used material for anything textured is `engine\materials\metal
 You can also use this material as **emissive**, for a documentation, see [below](configuring-materials.md#emissive-material).&#x20;
 {% endhint %}
 
+The material can be transparent, you need to set the enableMask flag to True and make sure its not set to False anywhere higher in the material chain. Note this is not in the values, its just below the baseMaterial definition. When set the material will use the alpha channel of the BaseColor.&#x20;
+
 To make your mesh load a texture, use the following `CKeyValuePair`s in your material's "values" array:
 
 |           |                                                                                        |
