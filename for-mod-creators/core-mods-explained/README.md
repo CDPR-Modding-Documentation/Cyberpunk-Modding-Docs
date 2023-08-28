@@ -8,6 +8,21 @@ description: A list of modding frameworks and links to their documentation
 You're probably used to the term **Core Mod** from other games. However, the technical term for these kinds of mod is a`framework`, which is what they're usually referred to by Cyberpunk modders.
 {% endhint %}
 
+{% hint style="success" %}
+If you are trying to troubleshoot your core mods, you can run the [log file utility](../../for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md#finding-the-log-files).&#x20;
+{% endhint %}
+
+## TL;DR: What do I download?
+
+For an explanation of what the individual frameworks do, see below. \
+Entries in _italics_ are optional.
+
+[Redscript](https://www.nexusmods.com/cyberpunk2077/mods/1511)
+
+[Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)  – [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) – [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) – [_EquipmentEx_](https://www.nexusmods.com/cyberpunk2077/mods/6945) _–_ [_Codeware_](https://www.nexusmods.com/cyberpunk2077/mods/7780)
+
+[Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107)
+
 ## What is a framework?
 
 While the game natively supports mods, this would have had us limited to replacing already existing items, but we wanted flying cars. So a bunch of brilliant people drilled deep into the code of Cyberpunk 2077 and created a bunch of tools that let us do more.
@@ -20,55 +35,88 @@ Since this kind of mod interacts with the game's code on such a fundamental leve
 
 ## Existing Frameworks <a href="#popular-frameworks" id="popular-frameworks"></a>
 
-### Cyber Engine Tweaks (CET) <a href="#cyber-engine-tweaks" id="cyber-engine-tweaks"></a>
-
-Cyber Engine Tweaks ([Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/107)| [GitHub](https://github.com/yamashi/CyberEngineTweaks/releases)) does not only give you the game console to cheat items and change the weather, but also introduces a whole framework with **LUA** scripting support, letting modders interact with .&#x20;
-
-Lots of mods and scripts run on top of CET, tweaking the game in various ways from changing the weather to adding a wardrobe system before CDPR added a wardrobe system.&#x20;
-
-The perhaps most prominent example is Appearance Menu Mod ([wiki](amm.md) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/790)), which turns Cyberpunk 2077 into The Sims: Capitalist Dystopia.
-
-{% content-ref url="http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/" %}
-[CET (English)](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)
-{% endcontent-ref %}
+The first-level frameworks (CET, Redscript and Red4ext) allow access to the game's **functions and types**, which are known through reverse engineering. The second-level frameworks (e.g. ArchiveXL, TweakXL, Codeware, SystemEx) make use of these to offer further methods of interaction. For details, see below.
 
 ### Redscript <a href="#redscript" id="redscript"></a>
-
-Redscript ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511) | [GitHub](https://github.com/jac3km4/redscript)) is an open-source programming language and toolkit, natively working with Cyberpunk 2077's scripting runtime. With the help of .reds files under `r6/scripts`, it lets you modify and extend the user interface, change the combat balance, influence NPC behaviour, and much more.&#x20;
 
 {% content-ref url="http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/" %}
 [Redscript](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg\_/)
 {% endcontent-ref %}
 
-### RED4ext <a href="#red4ext" id="red4ext"></a>
+Redscript ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511) | [GitHub](https://github.com/jac3km4/redscript)) is an open-source programming language and toolkit, natively working with Cyberpunk 2077's **scripting runtime**. Essentially, it is extending the already-existing **Redmod scripting system** by including data from the decompiled game script blob `final.redscripts`.
 
-RED4ext ([Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/2380)| [GitHub](https://github.com/WopsS/RED4ext/releases)) is Cyberpunk 2077's equivalent to Skyrim Script Extender. It adds further scripting capability on top of what CDPR has so kindly provided, loading scripts from `/red4ext/plugins`.
+It allows additions and edits of the game's high-level logic and functions, **including additions through Red4ext**. The scripts are compiled into `r6/cache/modded` and are preloaded together with the rest of the game's cache.&#x20;
 
-{% hint style="warning" %}
-With Red4ext >= 1.13, you no longer need [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176). Make sure to **uninstall** it!
+Some examples for existing mod include, but are not limited to
+
+* changing combat balance
+* editing NPC behaviour
+* altering the interface&#x20;
+* adding or removing UI widgets
+
+### Cyber Engine Tweaks (CET) <a href="#cyber-engine-tweaks" id="cyber-engine-tweaks"></a>
+
+{% content-ref url="http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/" %}
+[CET (English)](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)
+{% endcontent-ref %}
+
+Cyber Engine Tweaks ([Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/107)| [GitHub](https://github.com/yamashi/CyberEngineTweaks/releases)) is a first-level framework with a LUA wrapper, which will let you access anything exposed via RTTI by RedScript and Red4ext. On top of that, it lets you **bind hotkeys** for custom functions and interact with the game's Tweak database at runtime.
+
+{% hint style="info" %}
+Additions made to the tweak database via CET are not persistent; you will need TweakXL for that.
 {% endhint %}
 
-Aside from being required for many mods, it is a perquisite for other frameworks such as ArchiveXL, TweakXL, and Equipment-EX.
+Lots of mods and scripts run on top of CET, tweaking the game in various ways from changing the weather to adding a wardrobe system before CDPR added a wardrobe system.&#x20;
+
+The perhaps most prominent example is Appearance Menu Mod ([wiki](amm.md) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/790)), which turns Cyberpunk 2077 into The Sims: Capitalist Dystopia.
+
+### RED4ext <a href="#red4ext" id="red4ext"></a>
 
 {% content-ref url="http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/" %}
 [RED4ext](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/)
 {% endcontent-ref %}
 
+RED4ext ([Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/2380)| [GitHub](https://github.com/WopsS/RED4ext/releases)) is Cyberpunk 2077's equivalent to Skyrim Script Extender. Aside from being required for many mods, it is a perquisite for other core dependencies such as ArchiveXL, TweakXL, and Equipment-EX.
+
+{% hint style="warning" %}
+With Red4ext >= 1.13, you no longer need [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176). Make sure to **uninstall** it!
+{% endhint %}
+
+Rather than being added to the game's cache for preloading, Red4ext reads and modifies the game's memory at runtime. This happens via RTTI, which is the game engine's original system for scripting and serialization.
+
+<details>
+
+<summary>Technical detes</summary>
+
+Red4ext and its plugins are written in C++. The framework itself has two components:&#x20;
+
+The **shared library** exposes types, functions and classes via RTTI to make them available in-game. This contains reverse-engineered information from `redscript.finals` as well as code defined by its plugins.&#x20;
+
+The **plugin loader** will activate `.dll` files from `red4ext/plugins` (such as ArchiveXL, TweakXL...). They can be considered standalone programs that are activated through Red4ext and unlock other areas of Cyberpunk's code. This contains essentials like
+
+* &#x20;game version checking
+* logging
+* hooking
+
+As a modder, you can only use types and functions that are **already registered** via RTTI.&#x20;
+
+</details>
+
 ### ArchiveXL
+
+{% embed url="https://github.com/psiberx/cp2077-archive-xl" %}
 
 ArchiveXL ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/4198) | [GitHub](https://github.com/psiberx/cp2077-archive-xl/)) allows us to load custom resources into Cyberpunk 2077. Working under the hood, it is the essential tool to **add** rather than **replace**.
 
 For ArchiveXL-specific documentation, check the [corresponding sub-page.](archivexl.md)
 
-{% embed url="https://github.com/psiberx/cp2077-archive-xl" %}
-
 ### TweakXL  <a href="#tweakxl-+-archivexl" id="tweakxl-+-archivexl"></a>
 
-TweakXL ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/4197) | [GitHub](https://github.com/psiberx/cp2077-tweak-xl)) is an extension of RED4ext to modify the **TweakDB** by writing script extensions in both YAML and RED format.&#x20;
-
-By interacting with REDEngine 4's database, it lets you view and alter information about game entities and behaviour in real time.
-
 {% embed url="https://github.com/psiberx/cp2077-tweak-xl" %}
+
+TweakXL ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/4197) | [GitHub](https://github.com/psiberx/cp2077-tweak-xl)) is an extension of RED4ext to modify the **TweakDB** by writing script extensions in both YAML and RED format. By loading files from `r6/tweaks`, it can alter predefined records in Cyberpunk's database, changing properties such as weapon damage or the number of hitpoints.&#x20;
+
+By interacting with REDEngine 4's database, it lets you view and alter information about game entities and behaviour in real time (accessible via Cyber Engine Tweak's `Tweak Browser` tab).
 
 ### Equipment-EX
 
@@ -76,7 +124,9 @@ Equipment-EX ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/6945) | [GitH
 
 ### Codeware
 
-Codeware ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/7780) | [GitHub](https://github.com/psiberx/cp2077-codeware)) adds powerful script extensions, opening up possibilities that are otherwise locked inside Cyberpunk's file structure. For example, while you could always see [an NPC's appearances](../modding-guides/npcs/appearances-change-the-looks.md) in Wolvenkit, it was not possible to access that information at runtime.
+Codeware ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/7780) | [GitHub](https://github.com/psiberx/cp2077-codeware)) is not strictly speaking a framework but a **library**, exposing Red4ext's extra functionality to redscript (keyword `@native`). By defining utility functions and -classes, the mod enforces best practices, reducing the likelihood of crashes.
+
+For example, while you could always see [an NPC's appearances](../modding-guides/npcs/appearances-change-the-looks.md) in Wolvenkit, it was not possible to access that information at runtime.
 
 ## Log files for the frameworks
 
