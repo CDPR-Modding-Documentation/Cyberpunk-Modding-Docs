@@ -11,7 +11,7 @@ This section has a list of log files by framework. If you've arrived here from o
 If you aren't looking for a particular log file, please proceed to [the next section](finding-and-reading-log-files.md#finding-the-log-files).
 
 {% hint style="info" %}
-The paths below are given **relative** to your Cyberpunk 2077 install directory.
+The paths below are given **relative** to your [**Cyberpunk 2077 install directory**](#user-content-fn-1)[^1]**.**
 {% endhint %}
 
 <table><thead><tr><th width="294">Name of framework</th><th>Path to log file</th></tr></thead><tbody><tr><td>redscript</td><td><code>r6\logs\redscript_rCURRENT.log</code></td></tr><tr><td>red4ext</td><td><code>red4ext\logs\red4ext.log</code></td></tr><tr><td>ArchiveXL</td><td><code>red4ext\plugins\ArchiveXL\ArchiveXL.log</code></td></tr><tr><td>TweakXL</td><td><code>red4ext\plugins\TweakXL\TweakXL.log</code></td></tr><tr><td>Cyber Engine Tweaks</td><td><code>bin\x64\plugins\cyber_engine_tweaks\cyber_engine_tweaks.log</code></td></tr></tbody></table>
@@ -25,20 +25,20 @@ If you don't want to download and run script files from the internet, you can go
 1. Download [this script](https://raw.githubusercontent.com/DoctorPresto/Cyberpunk-Helper-Scripts/main/FindAllErrors.bat) (**right-click -> save as**)\
    _Link goes to Presto's_ [_github repository_](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/FindAllErrors.bat)
 2. Now, do either of the following things:&#x20;
-   1. Move it to your Cyberpunk install folder and double-click it
-   2. Drag-and drop your Cyberpunk folder on the file that you downloaded
-3. The script will have created a folder `_LOGS` in your Cyberpunk directory, which contains a file listing all the things for you.
+   1. Move it to your [**Cyberpunk game folder**](#user-content-fn-2)[^2] and double-click it
+   2. Drag-and drop your [**Cyberpunk game folder**](#user-content-fn-3)[^3] on the file that you downloaded
+3. The script will have created a folder `_LOGS` in your [Cyberpunk directory](#user-content-fn-4)[^4]**,** where you will find a file with everything it has found..
 
 ### Alternatively: By hand
 
-Browse to your [**Cyberpunk game folder**](#user-content-fn-1)[^1] and use the windows search to search for `*.log.`
+Browse to your [**Cyberpunk game folder**](#user-content-fn-5)[^5] and use the windows search to search for `*.log.`
 
 {% hint style="warning" %}
 Make sure to include the asterisk and the dot: \*`.log`, as you will otherwise see files that you don't care about.
 {% endhint %}
 
 {% hint style="info" %}
-Make sure to run this [**in the game's root folder**](#user-content-fn-2)[^2], unless you have already narrowed down the problem (e.g. if it's a CET mod, you can run this search in `bin\x64\plugins\cyber_engine_tweaks`).
+Make sure to run this [**in the game's root folder**](#user-content-fn-6)[^6], unless you have already narrowed down the problem (e.g. if it's a CET mod, you can run this search in `bin\x64\plugins\cyber_engine_tweaks`).
 {% endhint %}
 
 The list of results should look like this:
@@ -121,3 +121,11 @@ This **might** indicate that a Redscript mod is loaded twice. Search the Cyberpu
 [^1]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
 
 [^2]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+[^3]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+[^4]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+[^5]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+[^6]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe

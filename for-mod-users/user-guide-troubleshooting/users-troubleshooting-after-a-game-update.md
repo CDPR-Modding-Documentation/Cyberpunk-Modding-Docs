@@ -47,14 +47,14 @@ If these instructions didn't help you, there probably are no updates yet and you
 
 Of course, you can always
 
-* Find help on [Discord ](https://discord.gg/redmodding)in #mod-troubleshooting
 * look around in the [troubleshooting guide](./) or use your browser's search function there (Ctrl+F and type)
 * check a [list of known problem children](./#finding-the-broken-mod-known-problem-children) and disable them for now
 * [further troubleshoot](./#game-doesnt-start-there-is-an-error-arbout-scripts) your installation
 * Reset your installation:
-  * Fall back to a clean state ([precise](./#is-there-a-shortcut) | [nuclear: fast](./#the-nuclear-option-a-clean-install) | [nuclear: very fast](./#modular-minimal-download-download-less-than-1gb))
+  * Fall back to a clean state ([via mod](https://www.nexusmods.com/cyberpunk2077/mods/8597/) | [precise](./#is-there-a-shortcut) | [nuclear: fast](./#the-nuclear-option-a-clean-install) | [nuclear: very fast](./#modular-minimal-download-download-less-than-1gb))
   * Enable all [core mods](users-troubleshooting-after-a-game-update.md#starting-from-scratch) and make sure that the game starts
   * Re-enable your other mods (check [bisect](users-troubleshooting-after-a-game-update.md#finding-the-broken-mod-bisecting) for how to do it fastest)
+* Find help on [Discord ](https://discord.gg/redmodding)in #mod-troubleshooting
 
 {% hint style="warning" %}
 You might want to **deactivate ReShade** before you start debugging. Especially after DLSS, it has been known to cause crashes.
