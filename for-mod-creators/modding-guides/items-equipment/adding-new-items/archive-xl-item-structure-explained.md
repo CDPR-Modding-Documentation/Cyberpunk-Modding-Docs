@@ -75,7 +75,7 @@ Items.my_custom_shirt_redwhite:
 
 The csv file is where ArchiveXL will find an entry with the yaml's `entityName` in the first field. It will then check the corresponding [root entity](archive-xl-item-structure-explained.md#root\_entity.ent) for an appearance with the name in `appearanceName.`
 
-<figure><img src="../../../../.gitbook/assets/archivexl_item_structure_factory_csv.png" alt=""><figcaption><p>When spawning an item, TweakXL knows which entity file to use by filtering <code>entityName</code> for a match in the first field</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/factory_csv_wHeaders.jpg" alt=""><figcaption><p>When spawning an item, TweakXL knows which entity file to use by filtering <code>entityName</code> for a match in the first field</p></figcaption></figure>
 
 #### Making changes
 
