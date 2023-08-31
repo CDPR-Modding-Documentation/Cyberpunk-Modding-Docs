@@ -6,7 +6,8 @@ description: We need guns, lots of guns.
 
 Weapons dont seem to have ent files that tie them together in quite the same way as most things they do however have app files that have the component lists, so who cares?&#x20;
 
-(Just to be difficult some rifles are referenced by a random file in the quests folder called empty\_entity.ent, and the katanas and knives seem to have ents)
+(Just to be difficult some rifles are referenced by a random file in the quests folder called empty\_entity.ent, and the katanas and knives seem to have ents) \
+If your wanting to import to Blender Sim created a bunch of dummy ent files to let you import things: [https://www.nexusmods.com/cyberpunk2077/mods/9077](https://www.nexusmods.com/cyberpunk2077/mods/9077)
 
 Generally speaking the files are in \base\weapons then organised by type and then name. But searching an app file then right clicking and find used files is faster than browsing, so here are the file names.
 
