@@ -35,6 +35,10 @@ _The guide was created after reading_ [_this one_](https://drive.google.com/file
 To troubleshoot your ArchiveXL mods, you can make use of the FileValidation in Wolvenkit >= 8.9.1. As of Jul 22nd that isn't yet released, but you can download a [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-07-21), as it's pretty stable).
 {% endhint %}
 
+{% hint style="success" %}
+There is a new way of connecting your files: [dynamic variants](../../../core-mods-explained/archivexl.md#dynamic-variants).  There is no detailed guide yet, but if you want to create lots of options, then you will definitely want to check out this approach, as it cuts down your file structure overhead by virtually eliminating the root entity and .app file.&#x20;
+{% endhint %}
+
 ## Grab the example files
 
 * Create a new Wolvenkit project
