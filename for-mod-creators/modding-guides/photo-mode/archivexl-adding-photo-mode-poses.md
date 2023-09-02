@@ -93,7 +93,9 @@ You can name this file whatever you want, just make sure that you change the pat
 
 ### The .anim file(s)
 
-You should know these files — after all, you made them. But just as a reminder, here's how they look:
+If you have created your own animations (as a [replacer](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/) or for [AMM](../animations/amm-collab-anims-poses.md)), then you are already familiar with this kind of file.  If not, it is time to appropriate one from the game files - pick any, since the process is just like with a replacer.
+
+Just as a reminder, here's how they look:
 
 <figure><img src="../../../.gitbook/assets/archivexl_photomode_anim.png" alt=""><figcaption></figcaption></figure>
 
