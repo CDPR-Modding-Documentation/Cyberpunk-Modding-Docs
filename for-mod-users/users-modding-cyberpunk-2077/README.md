@@ -47,7 +47,7 @@ Unless you changed the default settings, it will be installed to:
 `C:\Program Files (x86)\GOG Galaxy\Games\Cyberpunk 2077\`
 {% endhint %}
 
-You can install mods by hand or by using [Vortex](https://www.nexusmods.com/about/vortex/).&#x20;
+You can install mods by hand, by using [Vortex](https://www.nexusmods.com/about/vortex/), or by using Mod Organizer 2 with additional steps detailed [here.](https://github.com/JustThatKing/MO2077/blob/main/readme.md)
 
 {% hint style="info" %}
 Regardless of your past experiences, the [Nexus mod manager](https://www.nexusmods.com/about/vortex/) works reliably and well for modding Cyberpunk, as long as you do not install more than \~250 REDmods.
