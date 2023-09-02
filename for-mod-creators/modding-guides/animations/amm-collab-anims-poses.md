@@ -165,14 +165,18 @@ Open your .workspot file and expand the following nodes:&#x20;
   * rootEntry
     * list
 
-This list contains two `workSequences`. This data type is used for pose transitions and -definitions (e.g. an NPC standing up). For our purpose, we don't need any of the fancy stuff. Here's how they look:
+This list in the example file contains two `workSequences` (you need one per animation). This data type is used for pose transitions and -definitions (e.g. an NPC standing up). For our purpose, we don't need any of the fancy stuff.&#x20;
 
-<figure><img src="../../../.gitbook/assets/amm_custom_poses_workSequence.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/amm_custom_poses_workSequence.png" alt=""><figcaption><p>Here's how a workSequence looks. Note the duplicate ID property - and each of those has to be unique!</p></figcaption></figure>
+
+{% hint style="info" %}
+You need one workSequence for each of your animations!
+{% endhint %}
 
 1. Open the `workSequence` and expand both `id` and `list`.
 2. Expand the first list entry (`workAnimClip`) and its proprety `id`.
 3. Point it at the right animation: Change the `workAnimClip`'s property `animName` to the name of your animation (_green on screenshot_)
-4. Skip this for the two default entries.
+4. Adjust the IDs in the workSequence (you can skip this for the two entries from the template)
    1. Find the `workSequence`'s property `id` and add two to its numeric value (_orange on screenshot_)
    2. Find the `workAnimClip`'s property `id` and add two to its numeric value (_orange on screenshot_)
 5. **Optional, but recommended:** Set the `workSequence`'s property `idleAnim`  to the name of your appearance (_purple on screenshot_). This is purely for your convenience, as you can see which is which when scrolling through the list.
