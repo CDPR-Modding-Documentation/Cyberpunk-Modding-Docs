@@ -162,8 +162,8 @@ return {
   unique_identifier = "tutorial_johnny_appearances",
   entity_id = "0x5E611B16, 24",
   appearances = {
-    "cyberspace_glasses",
-    "fluffy_socks",
+    "silverhand_cyberspace_glasses",
+    "silverhand_fluffy_socks",
   },
 }
 ```
