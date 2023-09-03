@@ -165,7 +165,11 @@ Open your .workspot file and expand the following nodes:&#x20;
   * rootEntry
     * list
 
-This list in the example file contains two `workSequences` (you need one per animation). This data type is used for pose transitions and -definitions (e.g. an NPC standing up). For our purpose, we don't need any of the fancy stuff.&#x20;
+First, we're going to look at `workSequences.`This data type is used for pose transitions and -definitions (e.g. an NPC standing up). For our purpose, we don't need any of the fancy stuff.&#x20;
+
+While this list in the example file contains two `workSequences,` you're gonna need one per however many animations/poses you have. Duplicate to your hearts content.
+
+
 
 <figure><img src="../../../.gitbook/assets/amm_custom_poses_workSequence.png" alt=""><figcaption><p>Here's how a workSequence looks. Note the duplicate ID property - and each of those has to be unique!</p></figcaption></figure>
 
