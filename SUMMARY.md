@@ -156,7 +156,7 @@
     * [How to Edit Voiceover and Subtitles In a Quest.](for-mod-creators/modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
     * [How to Change Position and Rotation of an entMeshComponent](for-mod-creators/modding-guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
     * [How to Remove an Animation (and Potentially Replace It)](for-mod-creators/modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
-  * [Animations](for-mod-creators/modding-guides/animations/README.md)
+  * [Animations/Poses](for-mod-creators/modding-guides/animations/README.md)
     * [Importing animations](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/)
     * [AMM: Collab anims/poses](for-mod-creators/modding-guides/animations/amm-collab-anims-poses.md)
     * [Retargeting Animations to other Rigs](https://docs.google.com/document/d/1nHPQvkK6ijwb8iQ8y1X8CBG-wnNUCTYCjrdUCGMenW4/edit?usp=drive\_link)
