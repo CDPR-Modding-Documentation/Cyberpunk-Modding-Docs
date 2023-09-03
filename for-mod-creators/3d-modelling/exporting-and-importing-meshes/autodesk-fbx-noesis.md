@@ -49,6 +49,48 @@ Noesis is an **alternative** to importing with WolvenKit.
 
 <figure><img src="../../../.gitbook/assets/noesis_mesh_import.png" alt=""><figcaption></figcaption></figure>
 
+## Troubleshooting
+
+### Noesis Split Meshes
+
+<figure><img src="https://media.discordapp.net/attachments/1132368057742934159/1147979214096707664/image.png?width=508&#x26;height=389" alt=""><figcaption></figcaption></figure>
+
+Noesis-split meshes are essentially how Noesis copes with higher vertex counts. It will automatically divide up your submeshes into smaller parts, which is why Noesis will often display there being more meshes than intended.&#x20;
+
+
+
+<figure><img src="https://cdn.discordapp.com/attachments/1132368057742934159/1147978089553461320/image.png" alt=""><figcaption></figcaption></figure>
+
+This is caused by the vertex count being too high, and will often result in the applicable submeshes not converting with the rest of the mesh, resulting in those submeshes being non-existent in the .mesh file. The solution is to simply reduce the number of vertices in the given submesh with the goal being to get the count lower than 65,000 vertices on the given submesh.
+
+The best way to tell how many vertices a given mesh has is to open the "Viewport Overlays" drop-down menu and select "Statistics". This will allow for data on the meshes within the .blend. To narrow this down to a specific submesh, open edit mode with that submesh as active and "select all" (CTRL + A) and you will see the vertex count for that submesh.
+
+<figure><img src="https://cdn.discordapp.com/attachments/1132368057742934159/1147982161371217930/image.png" alt=""><figcaption></figcaption></figure>
+
+Once you know how many vertices you have, use either "Decimate Geometry" or "Merge By Distance" to simplify the topography of the mesh, or to merge two or more vertices that are a given distance apart from one another into one.
+
+Once this has been done, export from blender and try the conversion again.&#x20;
+
+If this doesn't quite do the trick, convert the fbx to fbx (just leave the output type set to fbx) and enter "-fbxmeshmerge" in the advanced options text box before clicking export. (It is recommended that you set an output location when doing this so as to avoid accidentally overwriting the original mesh)
+
+
+
+### Duplicate meshes detected
+
+
+
+<figure><img src="https://cdn.discordapp.com/attachments/1132368057742934159/1147985780564836502/image.png" alt=""><figcaption></figcaption></figure>
+
+This often accompanies the "Noesis-split meshes" warning. A common cause for this is the use of Blender's "duplication" feature. To solve it, follow the steps above for "Noesis-split meshes" then import the resulting mesh back in to blender, and you should see that you have several blank "Objects" that came in along with your mesh. Delete those, export back out of blender, convert the fbx to fbx, then import the result into blender and repeat if needed.&#x20;
+
+Following the deletion of these Objects, you may notice deformations in the submesh/submeshes, if this is the case, replace the armature (and update the armature modifier) with a new one and export again.
+
+
+
+<figure><img src="https://cdn.discordapp.com/attachments/1132368057742934159/1147987527563739186/image.png" alt=""><figcaption></figcaption></figure>
+
+
+
 ## Differences between fbx and glb
 
 There are a few differences between Noesis and WolvenKit when it comes to exporting your meshes:
