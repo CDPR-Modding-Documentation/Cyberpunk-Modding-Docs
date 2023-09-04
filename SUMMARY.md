@@ -108,6 +108,7 @@
   * [Configuring materials](for-mod-creators/materials/configuring-materials.md)
   * [Re-using materials: .mi](for-mod-creators/materials/re-using-materials-.mi.md)
   * [Multilayered](for-mod-creators/materials/multilayered/README.md)
+    * [Multilayered: Previews](for-mod-creators/materials/multilayered/multilayered-previews.md)
     * [Multilayered Material: Properties](for-mod-creators/materials/multilayered/multilayered-material-properties.md)
   * [Materials: troubleshooting](for-mod-creators/materials/materials-troubleshooting.md)
 * [👤 Animations](for-mod-creators/animations.md)
