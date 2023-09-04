@@ -113,6 +113,7 @@ Otherwise:
 
 * If the game never even starts, see [here](./#crash-on-startup)
 * If the game crashes before you make it to the menu, see [here](./#crash-before-menu).
+* If you can start a new game without crashing, see [here](./#corrupt-ish-saves).
 
 Most likely, you have an issue with an .archive mod. Here's what you can do:
 
@@ -120,6 +121,19 @@ Most likely, you have an issue with an .archive mod. Here's what you can do:
 2. Go to the [bisect](./#go-bisect) section and start with the first two entries on the list&#x20;
 
 If that doesn't solve your problem, or if the issue is save-game related, feel free to browse around some more.
+
+#### Corrupt(ish) saves
+
+{% hint style="info" %}
+You only need to read this if you can start a new game without mods, but crash on loading a previous save game. For any other problem, please see the corresponding section(s).
+{% endhint %}
+
+Some mods store data in save files. Removing those mods **may** (but doesn't have to) lead to your save game crashing until you install them again.&#x20;
+
+At the current time (09/2023, before PL), issues have been caused by:
+
+* [Stealthrunner](https://www.nexusmods.com/cyberpunk2077/mods/7616)
+* [Immersive Ripperdocs](https://www.nexusmods.com/cyberpunk2077/mods/7064?tab=posts) (see the pinned comment for uninstall instructions)
 
 ### Crash during the game
 
@@ -251,6 +265,10 @@ It doesn't **have** to be either of these. But if it is, you'll never find it wi
 
 * **Antivirus**
 * **ReShade**
+
+{% hint style="info" %}
+If you can start a new game without mods, but can't load an existing save, see[#corrupt-ish-saves](./#corrupt-ish-saves "mention").
+{% endhint %}
 
 ### Frameworks / Core Mods
 
