@@ -180,10 +180,10 @@ You need one workSequence for each of your animations!
 1. Open the `workSequence` and expand both `id` and `list`.
 2. Expand the first list entry (`workAnimClip`) and its proprety `id`.
 3. Point it at the right animation: Change the `workAnimClip`'s property `animName` to the name of your animation (_green on screenshot_)
-4. Adjust the IDs in the workSequence so that they are unique. (You can skip this for the two entries from the template - if you continue they pattern they establish, all id's will be incremented and unique.)
+4. Make sure the IDs in the workSequence are unique. (You can skip this for the two entries from the template - if you continue they pattern they establish, all id's will be incremented and unique.)
    1. Find the `workSequence`'s property `id` and increment its numeric value +1 from the previous `id` (_orange on screenshot_)
    2. Find the `workAnimClip`'s property `id` and increment its numeric value +1 from the previous `id` (_orange on screenshot_)
-5. To clarify - our first example `workSequence` had a property `id` of 2 and its `workAnimClip`'s propery `id` was 3. Our second example `workSequence` had a property `id` of 4 and its `workAnimClip` had a property `id` of 5. Therefore, your next `workSequence` should have a property `id` of 6 and its `workAnimClip`'s property `id` should be 7, and so on.
+5. To clarify - our first example `workSequence` had a property `id` of 2 and its `workAnimClip`'s propery `id` was 3. Our second example `workSequence` had a property `id` of 4 and its `workAnimClip` had a property `id` of 5. Therefore, your next `workSequence` should have a property `id` of 6 and its `workAnimClip`'s property `id` should be 7, and so on. **But good news!** WolvenKit's File Validation can fill in these numbers for you. Visit [this page](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/file-validation) for more information.
 6. **Optional, but recommended:** Set the `workSequence`'s property `idleAnim`  to the name of your appearance (_purple on screenshot_). This is purely for your convenience, as you can see which is which when scrolling through the list.
 
 {% hint style="danger" %}
