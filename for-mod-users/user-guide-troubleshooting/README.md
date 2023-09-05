@@ -400,6 +400,10 @@ Missing footsteps had in the past been connected to a bug in Let [There Be Fligh
 
 <figure><img src="../../.gitbook/assets/troubleshooting_headers_not_working.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+If the mod in question is Cyber Engine Tweaks (CET), check the corresponding subpage. If it's anything else, read on.
+{% endhint %}
+
 Normally, a mod should **just work**, as long as all of their requirements are working. If you aren't certain what that means, you can check [here](../users-modding-cyberpunk-2077/requirements-explained.md) for an explanation or follow the checklist below.
 
 * Make sure that you have [enabled mods](../../for-mod-creators/core-mods-explained/redmod/#installation) in your launcher.

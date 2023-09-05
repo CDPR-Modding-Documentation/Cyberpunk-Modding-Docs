@@ -83,7 +83,7 @@ Open GOG Galaxy, click on "Owned Games" in the left sidebar, and scroll until yo
 
 Once the game has installed, we want to make it run with mods. Click the button to the right of the play button (formerly the install button) pictured below.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>The Cyberpunk 2077 main page on GOG, with the sidebar open on the left</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>The Cyberpunk 2077 main page on GOG, with the sidebar open on the left</p></figcaption></figure>
 
 From there, select "Manage Installation" and then "Configure". A window will pop up where you can change your desired settings:
 
