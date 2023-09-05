@@ -85,14 +85,14 @@ return {
 
 Without a `lua` file, AMM (as of version 2.1) won't be able to spawn your props.&#x20;
 
-{% hint style="info" %}
-`name` is what you'll search for in AMM
+Here's what the lines do:
 
-`category` is for AMM sorting
 
-`distanceFromGround` is pretty self-explanatory (I like floating objects)
 
-`appearances` registers the variant names.
+<table data-header-hidden><thead><tr><th width="237"></th><th></th></tr></thead><tbody><tr><td><code>name</code></td><td>what you search for in AMM</td></tr><tr><td><code>category</code></td><td>what AMM sorty by (you can only reuse exisitng categories)</td></tr><tr><td><code>distanceFromGround</code></td><td>how far away from the ground should your prop be? (This moves the origin in Blender's 3d viewport)</td></tr><tr><td><code>appearances</code></td><td>If you're using a root entity, these are the appearance names to switch through and the entries in AMM's "appearance" dropdown / spawn tab</td></tr></tbody></table>
+
+{% hint style="success" %}
+When you edit the .lua, it's usually enough to `reload all mods` in CET.&#x20;
 {% endhint %}
 
 #### Entity file
@@ -223,8 +223,29 @@ This section will only cover troubleshooting steps for this guide. \
 For anything related to mesh imports, see [here](textured-items-and-cyberpunk-materials.md#troubleshooting). \
 For general 3d model troubleshooting (including import errors), see [here](../../3d-modelling/troubleshooting-your-mesh-edits.md).
 
-### My prop doesn't spawn and AMM won't target it!
+### My prop doesn't even list in AMM!
 
-AMM can't find your .ent file. Check the paths in the lua.
+The problem is in your .lua file. Use [this tool](https://www.tutorialspoint.com/execute\_lua\_online.php) to check the syntax and make sure that there are no errors - usually, it is missing/extra commas and/or missing/extra braces.&#x20;
 
-###
+If the syntax is okay and your prop still doesn't show up, double-check your category and make sure that it is one of the existing ones.
+
+### My prop won't spawn!
+
+#### ... and I can't target it!
+
+AMM can't find your .ent file. Make sure that your .lua points to the correct path in your archive (right-click -> copy relative path and paste it to your lua file.&#x20;
+
+{% hint style="info" %}
+Make sure that you don't delete any quotation marks or commas while you do that. If you're unsure, you can double-check [this step](custom-props.md#my-prop-doesnt-even-list-in-amm).
+{% endhint %}
+
+#### ... it all looks good, but there is no prop!
+
+Toy around with the **scaling**. Sometimes, your prop doesn't show because it's the size of Johnny's ego and hovers somewhere above your city block – or the opposite, it's microscopically tiny.  Don't be afraid to change it by the factor 10 or even 100 and see if that does anything.
+
+If that's not it and if you have a customizable prop (with a root entity), try adding an appearance `default` to the mesh. The game will fall back to that one if there are issues with your custom appearances.
+
+### My prop spawns, but something about it is weird!
+
+In general, your answer is probably in the guide on [textured-items-and-cyberpunk-materials.md](textured-items-and-cyberpunk-materials.md "mention"), section 2 ([processing the mesh](textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)) – check that guide's [troubleshooting section](textured-items-and-cyberpunk-materials.md#troubleshooting).
+
