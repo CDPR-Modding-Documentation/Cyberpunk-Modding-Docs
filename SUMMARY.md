@@ -9,7 +9,7 @@
     * [Vortex Mod Manager](for-mod-users/users-modding-cyberpunk-2077/getting-started/vortex-mod-manager.md)
   * [Downgrading / Preventing auto-updates](for-mod-users/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
   * [REDmod](for-mod-creators/core-mods-explained/redmod/README.md)
-    * [Usage](for-mod-users/users-modding-cyberpunk-2077/redmod/usage.md)
+    * [REDMod: Usage](for-mod-users/users-modding-cyberpunk-2077/redmod/usage.md)
     * [Commands](for-mod-creators/core-mods-explained/redmod/commands/README.md)
       * [Deploy](for-mod-creators/core-mods-explained/redmod/commands/deploy.md)
     * [Change logs](for-mod-creators/core-mods-explained/redmod/change-logs.md)

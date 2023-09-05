@@ -62,7 +62,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
   * [Modding a clean install ](./#a-fresh-install-starting-from-scratch)
 
 {% hint style="success" %}
-To enable REDmods, check [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/frameworks/redmod/usage#deploying-mods-and-starting-the-game).
+To enable REDmods, check [here](../users-modding-cyberpunk-2077/redmod/usage.md#activating-mods) (you need to [install REDMod](../../for-mod-creators/core-mods-explained/redmod/#installation) first)
 {% endhint %}
 
 ## Your game is crashing

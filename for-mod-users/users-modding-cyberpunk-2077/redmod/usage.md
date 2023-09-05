@@ -1,4 +1,4 @@
-# Usage
+# REDMod: Usage
 
 REDmod is a command line tool developed by CDPR and Yigsoft which can be used to stage installed mods to work with a modded game.
 
@@ -14,39 +14,40 @@ REDmod **preloads** any mods on its list, loading them as if they were a part of
 
 The game loads redmods from this path: `<Cyberpunk 2077>/mods/<name>`.
 
-> EXAMPLE: A simple archive mod `C:\GoG\Cyberpunk 2077\mods\modA\archives\mod_a.archive`.
+> EXAMPLE:\
+> RedMod: `C:\GoG\Cyberpunk 2077\mods\mods\archives\mod_a.archive`\
+> `Legacy: C:\GoG\Cyberpunk 2077\archive\PC\mod\mod_a.archive`
 
-You need to **deploy** your installed mods before playing a modded game.
+{% hint style="info" %}
+Legacy archive mods in `<Cyberpunk 2077>/archive/pc/mod` are still supported, but their load order cannot be managed with REDmod.
+
+Legacy mods will load **before** any redmods.
+{% endhint %}
+
+{% hint style="success" %}
+Before being able to play a modded game, you need to [**deploy**](usage.md#how-do-i-deploy) your installed mods.
+
+Then, you need to [activate mods](usage.md#activating-mods) before starting the game.
+{% endhint %}
+
+#### How do I deploy?
 
 You can handle deployment and load order with
 
 * the **REDlauncher** that comes with the game
 * **Vortex** Mod Manager from NexusMods
-* or use the REDmod WolvenKit integration and manage your mods easily from within the **WolvenKit Mod Manager**.
+* REDmod WolvenKit integration and manage your mods easily from within the **WolvenKit Mod Manager**
+* starting Cyberpunk with the parameter `-modded`
 
-You need to **start a modded game** in order to load the deployed mods in game.
+#### What is deployed?
 
-{% hint style="info" %}
-Legacy archive mods in `<Cyberpunk 2077>/archive/pc/mod` are still supported, but their load order cannot be managed with REDmod.
+|                                        |                                      |
+| -------------------------------------- | ------------------------------------ |
+| Scripts: Compiled into a script blob   | \<Cyberpunk 2077>/mods//scripts      |
+| Tweaks: Compiled into a modded tweakDB | \<Cyberpunk 2077>/mods//tweaks       |
+| Sound files                            | \<Cyberpunk 2077>/mods//customSounds |
 
-These mods will load **before** any redmods.
-{% endhint %}
-
-### Deploying Mods and Starting the Game
-
-REDmod can stage installed mods to work when the game starts with the `modded` flag:
-
-* scripts in `<Cyberpunk 2077>/mods/<name>/scripts` are compiled into a modded script blob
-* tweak files in `<Cyberpunk 2077>/mods/<name>/tweaks` are compiled into a modded tweakDB blob
-* sound files in `<Cyberpunk 2077>/mods/<name>/customSounds` are staged to load
-
-## Installing
-
-In order to utilize deployed mods with REDmod, you need to run the game in a specific _modded_ mode. You can do this by launching the game through WolvenKit or manually by specifying a command parameter.
-
-{% hint style="warning" %}
-Depending on your other mods, you might need to install [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176) as well.
-{% endhint %}
+## Activating mods
 
 ### **GOG Galaxy**
 
@@ -81,6 +82,8 @@ This will discard all changes **modB** made, since by default, REDmod and the ga
 However, you can specify a load order with REDmod, which the game will respect.
 
 ## Advanced Topics
+
+
 
 ### Deploying Mods - Manually
 
