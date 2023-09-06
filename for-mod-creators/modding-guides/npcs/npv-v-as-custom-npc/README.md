@@ -18,16 +18,16 @@ This guide will show you how to do the following things:&#x20;
 Easy, but not trivial: you don't need any prior knowledge, but the whole structure is complex, and if you make mistakes, you will end up missing files.
 
 {% hint style="success" %}
-If you run into issues with this guide, the right place to ask for help is the [redmodding Discord server](https://discord.gg/redmodding).
+If you run into issues with this guide, the right place to ask for help is `#mod-dev-chat` on the [redmodding Discord server](https://discord.gg/redmodding).&#x20;
 {% endhint %}
 
-**It uses the following versions:**
+**This guide uses the following versions:**
 
 * Cyberpunk 2077 game version >= 1.6
 * [WolvenKit](https://github.com/WolvenKit/Wolvenkit/releases) >= 8.9.1 — the Nightly version from [2023-09-06](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-09-05) is stable.
 
 {% hint style="danger" %}
-You can not use the current release 8.9.0 for this! But the Nightly is perfectly OK :)&#x20;
+You can **not** use the current (September 2023) release 8.9.0 for this! But the Nightly is perfectly OK :)&#x20;
 {% endhint %}
 
 * [Blender](https://www.blender.org/download/) 3.5.1 (the version this has been tested with, but anything >= 3.4 should work. If it doesn't, try updating, though.)
@@ -46,12 +46,16 @@ This is the speedrun version. If you want extra details and context, **please ch
 ## Preparation
 
 {% hint style="danger" %}
-At the time of writing this guide, the most recent Wolvenkit release is 8.9.0, which doesn't yet support the .morphtarget export! You will have to install a Nightly version, for example the one from [2023-04-29](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-04-29) (which is perfectly stable, the next release is just not quite ready yet).
+At the time of writing this guide, the most recent Wolvenkit release is 8.9.0, which doesn't yet support the .morphtarget export! You will have to install a Nightly version, for example the one from [2023-09-06](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-09-05) (which is perfectly stable, the next release is just not quite ready yet).
 {% endhint %}
 
-I have prepared an example project ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328) | [mana's mega](https://mega.nz/file/aVETXTaB#gqKTnP\_lBNxe0b1w9b8TM5agENIIIAAxyLmMd8Kb6l8)) for you again, but due to the complexity of V's head mesh, you have to do a little bit of prep work here.
+I have prepared an example project ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328)) for you again, but due to the complexity of V's head mesh, you have to do a little bit of prep work here.
 
 Don't worry, I'll walk you through it step by step.
+
+{% hint style="success" %}
+At any time during the guide, you can **install** the Wolvenkit project (Wolvenkit has a button in the toolbar) and spawn **Tutorial Man** and **Tutorial Woman** via AMM to check out your progress.
+{% endhint %}
 
 ### The character preset
 
