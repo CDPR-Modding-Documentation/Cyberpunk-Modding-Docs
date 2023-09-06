@@ -73,17 +73,43 @@ You can handle deployment and load order with
 
 ## Conflicts and Load Order
 
-Conflicts are handled on a per-file basis, but can be handled by specifying a specific _load order_.
+Conflicts are handled on a per-file basis, but can be handled by specifying a specific _load order_. The rules here are the opposite of e.g. Skyrim: **the first mod** to change a file wins.
 
-**Example:** **modA** contains a script file `C:\Gog\Cyberpunk 2077\mods\modA\scripts\cyberpunk\player\player.script`. **modB** contains a script file with the same name `C:\Gog\Cyberpunk 2077\mods\modB\scripts\cyberpunk\player\player.script`.
+**Example:**&#x20;
+
+**modA** contains a script file \
+`Cyberpunk 2077\mods\modA\scripts\cyberpunk\player\player.script`.\
+**modB** contains a script file with the same name:\
+`Cyberpunk 2077\mods\modB\scripts\cyberpunk\player\player.script`
 
 This will discard all changes **modB** made, since by default, REDmod and the game loads mods alphabetically (modA overrides changes in modB).
 
 However, you can specify a load order with REDmod, which the game will respect.
 
+## Troubleshooting
+
+If a REDmod is giving you trouble, you can force a redeploy by either of the following means:
+
+1. Either of
+   1. Delete the content of `r6/cache/modded` in your Cyberpunk directory\
+      or
+   2. Uninstall the mod
+   3. Start the game
+   4. As soon as it launches, close the game again
+   5. Reinstall the mod
+2. Now, restart the game. REDMod will rebuild the cache and hopefully fix your problem.&#x20;
+
+If that doesn't do it, you can consult the [troubleshooting guide](usage.md#troubleshooting) for advice.
+
 ## Advanced Topics
 
+### Deploying Mods - Automatically
 
+REDMod's redeploy is triggered on either of these changes:
+
+* **mods change**: You added or removed a mod
+* A mod's **version** changes: The version number in the `info.json` was changed.
+* A mod's **files** change: You added or removed archives
 
 ### Deploying Mods - Manually
 
