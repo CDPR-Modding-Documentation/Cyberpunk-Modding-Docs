@@ -24,13 +24,13 @@ If you run into issues with this guide, the right place to ask for help is the [
 **It uses the following versions:**
 
 * Cyberpunk 2077 game version >= 1.6
-* [WolvenKit](https://github.com/WolvenKit/Wolvenkit/releases) >= 8.9.1 — the Nightly version from [2023-04-29](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-04-29) is stable.
+* [WolvenKit](https://github.com/WolvenKit/Wolvenkit/releases) >= 8.9.1 — the Nightly version from [2023-09-06](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-09-05) is stable.
 
 {% hint style="danger" %}
 You can not use the current release 8.9.0 for this! But the Nightly is perfectly OK :)&#x20;
 {% endhint %}
 
-* [Blender](https://www.blender.org/download/) 3.5.1 (the version this has been tested with, but anything >= 3.4 should work)
+* [Blender](https://www.blender.org/download/) 3.5.1 (the version this has been tested with, but anything >= 3.4 should work. If it doesn't, try updating, though.)
 * [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) >= 2.1
 
 {% hint style="info" %}

@@ -17,7 +17,7 @@ In this section, we will be moving/deleting files. You can complete these steps 
 
 ## Step 1: Getting head
 
-1. Open the `head` folder
+1. Open the `head` folder in your project's `archive` section.
    1. **Optional:** Be confused and/or panic about why there are over 9000 files.&#x20;
 2. Look into the `head/morphtargets` folder
    1. **Optional:** Be confused and/or panic about why there are over 9000 files **again**.&#x20;
@@ -26,12 +26,12 @@ In this section, we will be moving/deleting files. You can complete these steps 
 {% hint style="info" %}
 **It's too many of them!**
 
-True! That's because I included all options for any given V. After you have deleted the ones that you won't be using, you should be left with a maximum of **7** files for female V and 8 files for male V.
+True! That's because I included **all** options for any given V. But don't worry: after you have deleted the ones that you won't be using, you should be left with a maximum of **7** files for female V and 8 files for male V.
 {% endhint %}
 
-I have included all meshes and morphtargets from the game files. We'll now thin out the options.
+I have included all meshes and morphtargets from the game files. We'll now thin out the options, deleting those parts that your NPV won't be using.
 
-### The convenient option
+### Deleting unused files: the convenient option
 
 {% hint style="success" %}
 The best and most convenient tool for the job is [NoraLee's NPV picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker). It will give you a list of files that you need to keep.&#x20;
@@ -49,9 +49,11 @@ If you don't care and just want to know what to delete, go [here](npv-preparing-
 
 #### Meshes vs Morphtargets
 
-We actually only care about the mesh, since that is the file we'll be loading. But because of the customization options, we also need the morphtargets, which will deform the meshes dynamically.&#x20;
+The `.mesh` files are the 3d files making up your NPV's head. I've taken them from the game files and prepared them for you (by making them use the player animations and -expressions).&#x20;
 
-For our NPV, we won't do anything dynamic. We will apply the morphtargets in Blender and then never use them again, but I have included them in the files **for the sake of transparency**.
+The `.morphtarget` files are the character creator options (a direct game export). You can safely overwrite them with the most recent version by searching Wolvenkit for the file name  – you need to put it into the correct folder, though, or it won't be picked up by the scripts.
+
+We only need the .morphtargets to generate the actual meshes by duplicating the character creator process.
 
 #### Okay, and all those numbers?
 
@@ -96,7 +98,7 @@ Number in file name <=> Number in character creator
 
 Many of the files are **variants** and your V will be using **one or none of them.** That means you have a bunch of files to delete. If you have chosen [the convenient option](npv-preparing-the-head-in-blender.md#the-convenient-option) above, you should already have a list of files that you need to keep. Otherwise, the table below should give you some oversight.
 
-When deleting files that you aren't using, you need to renive both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder.
+When deleting files that you aren't using, you need to remove both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder.
 
 The following table will show you examples on what to **keep** (as in, you **delete everything else**):
 
@@ -120,9 +122,9 @@ For a list, see the [table above](npv-preparing-the-head-in-blender.md#okay-and-
 
 Once you're done, you should have this many files:
 
-| minimum number of files | 4                                  |
-| ----------------------- | ---------------------------------- |
-| maximum number of files | <p>13 (female)</p><p>14 (male)</p> |
+| minimum number of files | 4                                                          |
+| ----------------------- | ---------------------------------------------------------- |
+| maximum number of files | <p>13 (female body gender)</p><p>14 (male body gender)</p> |
 
 ## Step 2: Exporting head
 
