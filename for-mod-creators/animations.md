@@ -6,7 +6,7 @@ description: Knowledge about animations in Cyberpunk, first and third person
 
 ## Summary
 
-This page contains t**heoretical knowledge** about animations and poses (static animations) in Cyberpunk 2077.  If you want to **make** poses (for photo mode or AMM) instead, see [here](modding-guides/animations/).
+This page contains t**heoretical knowledge** about animations and poses (static animations) in Cyberpunk 2077.  If you want to **make** poses (for [photo mode](modding-guides/photo-mode/archivexl-adding-photo-mode-poses.md) or [AMM](modding-guides/animations/amm-collab-anims-poses.md)) instead, see [Modding Guides](modding-guides/) -> [Animations](modding-guides/animations/).
 
 {% hint style="info" %}
 There is (almost) nothing here yet. Maybe you are the right person to fix this? This wiki is a collaborative effort, **please** get involved!
