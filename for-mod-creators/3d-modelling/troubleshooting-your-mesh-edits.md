@@ -176,6 +176,8 @@ If you have [added the item](../modding-guides/items-equipment/adding-new-items/
 
 ### My mesh is string cheese/exploding vertices/a puddle on the floor
 
+<figure><img src="../../.gitbook/assets/stringcheese1.png" alt=""><figcaption><p>Looks like we have guests from beyond the Blackwall</p></figcaption></figure>
+
 #### GarmentSupports
 
 {% hint style="info" %}
