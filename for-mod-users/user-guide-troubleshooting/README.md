@@ -237,6 +237,12 @@ If you don't, check for other power config options in your operating system.
 
 ### Steam: verify file integrity loop
 
+The error below is partial to Steam:
+
+```
+Cyberpunk 2077 encountered an error caused by corrupted or incomplete game data
+```
+
 Before trying to implement any of the other solutions, configure the `REDprelauncher.exe` in the [Cyberpunk root directory](#user-content-fn-1)[^1] to always run as administrator.&#x20;
 
 * Right-click on the file and select `Properties`
