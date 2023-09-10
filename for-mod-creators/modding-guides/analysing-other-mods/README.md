@@ -20,24 +20,26 @@ For a documentation on how to use Wolvenkit CLI, see [here](broken-reference). U
 
 ### Step 1: Switch to mod browser
 
-<figure><img src="../../../.gitbook/assets/browsing_mods_add_to_project.png" alt=""><figcaption><p>Add items to project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/view_mods_with_wkit.png" alt=""><figcaption><p>Switch to "Mod browser"</p></figcaption></figure>
 
 You can now add the content to your project just like you do it with game files:
 
-### Step 3: Add the files to your project
+### Step 2: Find the correct files
 
-If you want to know more, you can read up on [Wolvenkit's search](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).
+The folders in the mod browser correspond to the names of the .archive files you have installed.&#x20;
+
+E.g., To find all mesh files inside the [Netrunning Suits mod](broken-reference), search for:
 
 ```
 archive:ArchiveXL_Netrunner > .mesh
 ```
 
-To find all mesh files inside the [Netrunning Suits mod](broken-reference), search for:
+If you want to know more, you can read up on [Wolvenkit's search](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).
 
-The folders in the mod browser correspond to the names of the .archive files you have installed.&#x20;
+### Step 3: Add the files to your project
 
-### Step 2: Find the correct files
+<figure><img src="../../../.gitbook/assets/browsing_mods_add_to_project.png" alt=""><figcaption><p>Add items to project</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/view_mods_with_wkit.png" alt=""><figcaption><p>Switch to "Mod browser"</p></figcaption></figure>
 
-hat's it!
+
+That's it!

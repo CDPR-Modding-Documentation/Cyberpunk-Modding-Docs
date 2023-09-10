@@ -120,6 +120,7 @@
   * [Community guides](for-mod-creators/modding-guides/community-guides/README.md)
     * [external: NPVs (V as NPC) - custom NPCs](for-mod-creators/modding-guides/community-guides/external-npvs-v-as-npc-custom-npcs.md)
   * [Items: Equipment](for-mod-creators/modding-guides/items-equipment/README.md)
+    * [Recolours and Refits](for-mod-creators/modding-guides/items-equipment/recolours-and-refits.md)
     * [Editing existing items](for-mod-creators/modding-guides/items-equipment/editing-existing-items/README.md)
       * [Changing materials, colors and textures](for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)
       * [Replace a player item with an NPC item](for-mod-creators/modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md)
