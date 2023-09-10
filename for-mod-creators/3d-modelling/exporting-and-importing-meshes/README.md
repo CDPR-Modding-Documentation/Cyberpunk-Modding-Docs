@@ -46,8 +46,18 @@ WolvenKit <= [8.8](https://github.com/WolvenKit/WolvenKit/releases/tag/8.8.0): U
 
 WolvenKit > 8.8: Use the Export tool. You can toggle it from the "Tools" menu on the top bar.
 
-1. Select your mesh in the Export Tool and click `Export/Process Selected`, or simply use `Export/Process All.`
-2. You now have`meshName.glb` in your WKit project's [`raw` directory.](./#path-example)
+{% hint style="success" %}
+Select your mesh in the Export Tool and click `Export/Process Selected`, or simply use `Export/Process All.`
+{% endhint %}
+
+If the export fails, try unchecking the following properties in the export settings (you have to do this for each individual mesh)
+
+* Export Materials
+*   Export Garment Support
+
+    <figure><img src="../../../.gitbook/assets/export_uncheck_for_error.png" alt=""><figcaption><p>You have to do this for each mesh individually, or you can copy and paste the settings with the buttons</p></figcaption></figure>
+
+You should now have`meshName.glb` in your WKit project's [`raw` directory.](./#path-example)
 
 <figure><img src="../../../.gitbook/assets/textured_items_raw_files.png" alt=""><figcaption></figcaption></figure>
 

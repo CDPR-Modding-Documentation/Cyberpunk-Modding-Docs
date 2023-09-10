@@ -1,29 +1,12 @@
-# Analysing other mods
+---
+description: Unbundling mods with CLI
+---
 
-**Created by @manavortex**\
-**Published December 11 2022**
-
-This guide will walk you through **extracting archive files** from other modders.&#x20;
-
-### Required: [WolvenKit](https://github.com/WolvenKit/WolvenKit/releases) and/or WolvenKit.cli >= 8.8.0
+# Legacy: Analysing other mods with Wolvenkit Console
 
 {% hint style="warning" %}
-Please keep in mind that you are looking at somebody else's work. **Always credit** if you use anything from other peoples' mods!
+This technique is outdated as of 2023. If you don't have a very good reason why you need Wolvenkit console, then you should [stick to the GUI](./#step-1-switch-to-mod-browser).
 {% endhint %}
-
-
-
-{% hint style="danger" %}
-Some modders don't want their mods to be unbundled. Many of those don't mind if you do it for your own personal use, but you should seek permission and respect their decision.
-{% endhint %}
-
-## WolvenKit GUI
-
-<figure><img src="../../.gitbook/assets/view_mods_with_wkit.png" alt=""><figcaption><p>Switch to "Mod browser"</p></figcaption></figure>
-
-You can now add the content to your project just like you do it with game files:
-
-<figure><img src="../../.gitbook/assets/browsing_mods_add_to_project.png" alt=""><figcaption><p>Add items to project</p></figcaption></figure>
 
 ## wolvenkit.cli.exe
 
