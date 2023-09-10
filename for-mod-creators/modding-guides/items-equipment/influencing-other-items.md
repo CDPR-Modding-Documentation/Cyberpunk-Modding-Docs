@@ -46,12 +46,14 @@ So depending on your PC's body gender and colouring, the meshAppearance `my_app_
 #### Arms
 
 {% hint style="warning" %}
-If you want to affect V's arms (for example, hiding clipping shoulders under a jacket), you might have to override the following components:
+Due to cyberware, V has more arms than Shiva the Destroyer (although not at the same time). For a full list of component names, see [here](../../references-lists-and-overviews/body/#arms).
 
-The male equivalent will have `pma` instead of `pwa`
+The list below is a **summary**, but might not be up-to-date. Please refer to the linked page if you're missing anything.&#x20;
 {% endhint %}
 
 ```
+// The male equivalent will have pma instead of pwa
+
 a0_001_pwa_base_hq__full              // default arms
 a0_001_pwa_base_hq__full8640          
 left_arm                              
@@ -77,8 +79,6 @@ The player base body component name is
 t0_000_pwa_base__full
 t0_000_pma_base__full
 ```
-
-
 
 ### ArchiveXL
 
