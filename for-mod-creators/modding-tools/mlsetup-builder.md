@@ -135,7 +135,7 @@ That's it, you're done now and can use the [3d viewport](mlsetup-builder.md#abou
 
 ### Help, my Layer Config List says `object Object`
 
-You need to update the interface.js — download it [here](https://github.com/Neurolinked/MlsetupBuilder/blob/main/js/interface.js) from Neurolinked's github repository, then replace the file with the same name in MLSB's install directory, subfolder `resources\app`.&#x20;
+You need to both [install the most recent version](https://github.com/Neurolinked/MlsetupBuilder/releases/tags) and then update the interface.js — download it [here](https://github.com/Neurolinked/MlsetupBuilder/blob/main/js/interface.js) from Neurolinked's github repository, then replace the file with the same name in MLSB's install directory, subfolder `resources\app`.&#x20;
 
 If you have installed it as a Wolvenkit plugin, that directory will be `Cyberpunk 2077\tools\neurolinked\mlsetupbuilder`.
 
