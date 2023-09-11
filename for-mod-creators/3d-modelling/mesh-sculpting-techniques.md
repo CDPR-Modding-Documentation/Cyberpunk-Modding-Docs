@@ -2,7 +2,7 @@
 description: Best Practices for actually changing meshes
 ---
 
-# Mesh sculpting techniques
+# Refitting: Mesh sculpting techniques
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -16,6 +16,8 @@ Assumed skill level: \
 \- You are able to read and comprehend instructions.
 
 {% hint style="info" %}
+For a step-by-step refitting guide, check [here](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md).&#x20;
+
 You can find video guides for refitting linked on the [community guides](../modding-guides/community-guides/) page
 {% endhint %}
 
