@@ -11,7 +11,7 @@ description: The tool of your choice for editing multilayered materials
 {% embed url="https://github.com/Neurolinked/MlsetupBuilder/releases/" %}
 
 \
-There is a dedicated channel on the [Redmodding Discord](https://discord.com/channels/717692382849663036/1082772930892664943) and a thread on the [Cyberpunk 2077 Modding Discord Server](https://discord.com/channels/705931815109656596/939510887188947014), where you can find&#x20;
+There is a dedicated channel on the [Redmodding Discord](https://discord.com/channels/717692382849663036/1082772930892664943) and a thread on the [Cyberpunk 2077 Modding Discord Server](https://discord.com/channels/705931815109656596/939510887188947014), where you can find a chat history full of undocumented features as well as previews from the most recent development versions.
 
 ## Installation
 
