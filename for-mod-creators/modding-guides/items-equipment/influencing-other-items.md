@@ -93,13 +93,20 @@ To delete an already existing reference, set the numeric value to the right of t
 
 ## VisualTags
 
-In the .app file, each appearance will contain an array by the name of `visualTags.tags`. These will let you hide parts of other meshes.
+These can be used **in addition** to PartsOverrides and will let you influence your item even further. You can find an array named `visualTags.tags` in both the root entity and the .app file's `appearance`s.
 
 {% hint style="info" %}
 This mechanism is how e.g. your sunglasses disappear when you put on a helmet.
 {% endhint %}
 
-They can be used **additionally** to partsOverrides.
+{% hint style="warning" %}
+Visual tags in the root entity will get applied to every appearance in the app.&#x20;
+
+**However:**\
+Due to technical limitations, any visual tags that **hide** parts of the mesh **must** go into the .app file to take effect.
+{% endhint %}
+
+
 
 <figure><img src="../../../.gitbook/assets/visual_tags_preview.png" alt=""><figcaption></figcaption></figure>
 

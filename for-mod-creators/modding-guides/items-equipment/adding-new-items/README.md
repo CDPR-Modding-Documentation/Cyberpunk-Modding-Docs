@@ -32,7 +32,7 @@ I have repeatedly observed that newbies are fine with this guide, while people w
 _The guide was created after reading_ [_this one_](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view) _and being left with a bunch of question marks. To get a deeper understanding, refer to the initial guide and follow the linked resources or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
 
 {% hint style="info" %}
-To troubleshoot your ArchiveXL mods, you can make use of the FileValidation in Wolvenkit >= 8.9.1. As of Jul 22nd that isn't yet released, but you can download a [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-07-21), as it's pretty stable).
+To troubleshoot your ArchiveXL mods, you can make use of the FileValidation in Wolvenkit >= 8.9.1. As of Jul 22nd that isn't yet released, but you can download a [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-09-09), as it's pretty stable).
 {% endhint %}
 
 {% hint style="success" %}
@@ -334,7 +334,7 @@ Consider reviewing the guide to ensure that all steps have been followed correct
 
 {% hint style="info" %}
 The easiest way to spot what's wrong is to use Wolvenkit's new FileValidation feature, which will print warnings and errors to the log file for you, starting at version >= 8.9.1. \
-As of July 2023, you can download it from the [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) page (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-07-21), as it's pretty stable).
+As of September 2023, you can download it from the [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) page (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-09-09), as it's pretty stable).
 {% endhint %}
 
 First of all, check the logs for errors including the name of your mod:&#x20;
@@ -371,7 +371,7 @@ Check the following places:
 * `yourmodname.archive.xl`:
   * Is the indentation correct, as shown in the picture?
   * Did you make any typos?
-* my\_tshirt\_factory.csv:
+* `my_tshirt_factory.csv`:
   * Is there an entry where the first value matches the `entityName` from the yaml (`my_tshirt` in the picture above)?
     * Without leading or trailing spaces?
   * Does the second value of that entry have the correct root entity path? \
@@ -411,6 +411,10 @@ If there are no errors in any of the log files, check the following places:
 Congratulations, you've made it into the right half of the diagram! The error will be somewhere here:
 
 <figure><img src="https://camo.githubusercontent.com/621b7d370bdaaec42cf16a5a321512eaf0eaeb0decbe6ccc23865023802f98e7/68747470733a2f2f692e696d6775722e636f6d2f666c34306f465a2e706e67" alt=""><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+[File validation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) can help you catch the error.
+{% endhint %}
 
 {% hint style="info" %}
 If you set your `mesh_entity.ent` to point at a vanilla mesh, you can rule out your custom mesh and .mlsetup as a source of errors. Original game meshes will always have a working default appearance and will thus always be displayed!
@@ -494,6 +498,10 @@ If the hint above doesn't solve it, proceed to troubleshoot in the same way as "
 ### My garment tucks into/under other garments incorrectly
 
 That's due to [garment support](../../../3d-modelling/garment-support-how-does-it-work.md) - check the link to learn more.
+
+### Visual tags aren't working!
+
+If you are **hiding** components via visual tags, these tags have to go into the **appearance** file rather than the root entity.
 
 ### I can't find anything, kill me now
 
