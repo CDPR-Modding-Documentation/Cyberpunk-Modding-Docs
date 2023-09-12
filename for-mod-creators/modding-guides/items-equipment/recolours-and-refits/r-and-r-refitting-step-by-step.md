@@ -172,6 +172,10 @@ Do this until you have covered all skin that you don't want exposed. Now it's ti
 
 ## Step 7: Importing into Wolvenkit
 
+{% hint style="info" %}
+As of 8.9.1, Garment Support is still experimental. If your meshes look like string cheese or twitch all over the place, you can [delete the parameters](../../../3d-modelling/troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices-a-puddle-on-the-floor). That will destroy the automatic deform when you put a jacket on, but at least your mesh will work.
+{% endhint %}
+
 1. In the Import Tool, select the first file that you want to import, then check the `Import Garment Support` box.
 2. Do the same for the second mesh. (As of 09/09/2023, the emissive component doesn't have garment support, but eventually I will make this work)
 3. Import both glb files.
