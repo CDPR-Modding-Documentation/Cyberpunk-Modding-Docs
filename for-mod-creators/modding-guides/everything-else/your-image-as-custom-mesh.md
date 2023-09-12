@@ -201,3 +201,7 @@ Now, we register the materials:&#x20;
 In Wolvenkit's top bar, select `Install` and then boot up Cyberpunk. Let's hit up Jig Jig Street to look at our sign…
 
 <figure><img src="../../../.gitbook/assets/custom_neon_jigjigstreet.jpg" alt=""><figcaption></figcaption></figure>
+
+{% hint style="danger" %}
+Please remember that **before sharing your custom neon**, you **have** to change the paths, or you'll conflict with the next modder! You can find a full guide on the fastest way to do that [here](moving-and-renaming-in-existing-projects.md).
+{% endhint %}

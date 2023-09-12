@@ -195,7 +195,7 @@ You can [check this guide](../appearances-change-the-looks.md), or look through 
 For guides on how to export a whole animated character to Blender, you can check [here](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims).&#x20;
 
 {% hint style="danger" %}
-Please remember that **before sharing your NPV**, you **have** to change the paths! At the very least, rename the `tutorial` folders inside of `archive` and `resources` to your user name and then do a [fulltext search and replace in json](../../everything-else/moving-and-renaming-in-existing-projects.md).
+Please remember that **before sharing your NPV**, you **have** to change the paths! You can find a full guide on the fastest way to do that [here](../../everything-else/moving-and-renaming-in-existing-projects.md).
 {% endhint %}
 
 {% hint style="success" %}

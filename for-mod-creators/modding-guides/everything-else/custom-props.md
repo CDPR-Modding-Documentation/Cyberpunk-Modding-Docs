@@ -37,7 +37,7 @@ This section will tell you how to get the files, then give you an [explanation](
     <figure><img src="../../../.gitbook/assets/amm_props_structure.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-The first part of the structure is up to you, although for the sake of the tutorial you might want to stick to it and [change it at the end](moving-and-renaming-in-existing-projects.md). The section about [Creating another prop](custom-props.md#creating-another-prop) will tell you how to change file and folder names in all the files.
+The first part of the structure is up to you, although for the sake of the tutorial you might want to stick to it. There's a section later on [how to change your paths](custom-props.md#the-final-touches).
 
 The second part (under "resources") is where AMM will look for custom props. You can't change it other than creating subfolders under "Custom Props".
 {% endhint %}
@@ -216,6 +216,12 @@ Now you can launch the game and check your prop. If everything went well, you sh
 <figure><img src="https://i.imgur.com/GQ8fELd.png" alt=""><figcaption><p>Not a moon</p></figcaption></figure>
 
 If not, it is time to hit up the [troubleshooting](custom-props.md#troubleshooting).
+
+## The final touches
+
+Before you can share your custom props, you **have** to change the folder structure and file paths. Otherwise, two people overwrite `tutorial.lua`, and one of the mods stops working.
+
+You can find a step-by-step guide on the process [here](moving-and-renaming-in-existing-projects.md).
 
 ## Troubleshooting
 

@@ -326,9 +326,17 @@ Test your mod independently for both cases by loading the appropriate save file 
 Game.AddToInventory("Items.my_custom_shirt_redwhite")
 ```
 
-{% hint style="danger" %}
+{% hint style="success" %}
 Consider reviewing the guide to ensure that all steps have been followed correctly and that the values have been set appropriately. Ensure that the mesh is compatible with the male variant of V. If errors persist, review the [<mark style="color:yellow;">troubleshooting section</mark>](./#troubleshooting) for further assistance.
 {% endhint %}
+
+## The final touches
+
+&#x20;If everything is working: Congratulations! You have successfully made a mod!
+
+But before you can share it, you need to do one last thing, which is changing the file structure. Otherwise, everyone will overwrite the same tutorial files, and only one of those mods will work.
+
+You can find a full guide on how to do that [here](../../everything-else/moving-and-renaming-in-existing-projects.md).
 
 ## Troubleshooting
 
