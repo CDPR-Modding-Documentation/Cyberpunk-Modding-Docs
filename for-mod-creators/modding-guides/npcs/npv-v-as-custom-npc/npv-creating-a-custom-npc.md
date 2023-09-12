@@ -25,9 +25,7 @@ This guide assumes that&#x20;
     `tutorial\npv\your_male_character\head`
   * the meshes are named like their in-game equivalents, e.g. `h0_000_pwa_c__basehead.mesh`
 
-
-
-It's not a problem if you use your own custom paths. You just need to keep that in mind when changing the provided .ent and .app file, as your paths will be different from those in the examples.
+It's not a problem if you use your own custom paths, although it is easier to [change it at the end](../../everything-else/moving-and-renaming-in-existing-projects.md). If you decide to go for it, keep in mind that your paths are different and that you need to put different values into the provided .ent and .app file.
 {% endhint %}
 
 {% hint style="success" %}
