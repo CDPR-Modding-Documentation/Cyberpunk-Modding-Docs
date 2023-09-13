@@ -37,8 +37,8 @@ Check out [this tool](https://wolv-photomode-tools.netlify.app/) by @wolv, it wi
 
 Download either of these files:&#x20;
 
-* full Wolvenkit project ([mana's mega](https://mega.nz/file/eI1VHT4C#YCIqNPTQ9y1DZHLmfXg910b2hctIWY\_RCTJdLM\_\_BS4) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8287))
-* Wolvenkit source folder ([mana's mega](https://mega.nz/file/nBFxnQyQ#zSdyPMBGQhB-ApSb-H5GCckznapbLC0ZeNhVu0RP\_h4) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8287))
+* full Wolvenkit project ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8287))
+* Wolvenkit source folder ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8287))
 
 ## Setting up the files
 
@@ -67,6 +67,10 @@ This file tells Cyberpunk to load your custom poses and will be in the same fold
     set: tutorial\animations\netrunner_making_poses\pma.anims
   - entity: base\characters\entities\player\photo_mode\johnny_photomode.ent
     set: tutorial\animations\netrunner_making_poses\pma.anims    
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_woman_average.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_man_average.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
 localization:
   onscreens:
     en-us: tutorial\animations\netrunner_making_poses\localization.json
@@ -74,6 +78,11 @@ localization:
 </code></pre>
 
 You have to adjust the paths under `set` and `en-us` to your new changed folder structure.
+
+{% hint style="info" %}
+If you want to support more body types from the Nibbles Replacer, you can [switch to the Mod Browser](../analysing-other-mods/) and enter the following search query to find all the entities: \
+`base\characters\entities\photomode_replacer > .ent`
+{% endhint %}
 
 Here's what those things do:
 
