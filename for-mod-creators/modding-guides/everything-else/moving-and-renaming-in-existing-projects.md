@@ -74,6 +74,6 @@ Now that we have changed the paths, we need to get those changes back into our W
 
 ## Deleting leftover files
 
-If you have packed the tutorial project before renaming any folders, make sure to delete leftover files from your Cyberpunk game directory. It's easiest to search the root folder for `tutorial` and delete everything that looks like your old stuff — if it's from your project, the next install will put it back.
+If you have packed any tutorial projects before renaming files or folders, make sure to **delete leftover files** from your Cyberpunk 2077 directory. It's easiest to search the root folder for `tutorial` and delete everything that looks like your old stuff — if it's from your project, the next install will put it back.
 
 That's it! Have fun!

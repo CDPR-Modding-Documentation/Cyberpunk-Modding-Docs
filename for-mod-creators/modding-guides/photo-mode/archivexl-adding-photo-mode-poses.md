@@ -42,6 +42,8 @@ Download either of these files:&#x20;
 
 ## Setting up the files
 
+At any point during this guide, you can press the green `Install` button on Wolvenkit's toolbar to check the mod in Wolvenkit.
+
 ### Step 1: Rename the folders
 
 {% hint style="info" %}
@@ -168,10 +170,18 @@ The entries in the list **must** match the unique keys that you've defined in th
 `photo_mode.character.quadrupedPoses` enables Nibbles photo mode replacer support for AMM >= 2.2.4
 {% endhint %}
 
+## Finishing up
+
+Before you can share your pose pack, you need to **change the paths**. If you don't and the next modder **also** doesn't, then only one of your mods will work.
+
+You can find a full guide on changing the paths [here](../everything-else/moving-and-renaming-in-existing-projects.md).
+
+If you rename files or folders under resources, remember to delete the old control files from your game directory.
+
 ## The result
 
 {% hint style="info" %}
-You can install and launch the Wolvenkit project as you downloaded it — just remember to delete the files afterwards!
+At any point during this guide, you can press the green `Install` button on Wolvenkit's toolbar to check the mod in Wolvenkit.
 {% endhint %}
 
 <figure><img src="https://i.imgur.com/1nMpUSy.png" alt=""><figcaption><p>She has no idea what she's doing</p></figcaption></figure>
