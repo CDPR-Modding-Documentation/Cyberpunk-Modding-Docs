@@ -17,9 +17,9 @@ It uses the following versions:
 * [MLSetupBuilder](../../../modding-tools/mlsetup-builder.md): [1.6.5](https://github.com/Neurolinked/MlsetupBuilder) (older versions won't be compatible with WKit 8.7 and game version 1.6)
 
 {% hint style="info" %}
-In general, an item's appearance is determined by a [mlsetup](../../../materials/multilayered/#what-is-the-mlsetup) file containing several material layers.&#x20;
+Most items in Cyberpunk are not textured, but use a procedurally generated material consisting out of an [mlmask](../../../materials/multilayered/#what-is-the-mlmask) (a list of alpha masks) and an [mlsetup](../../../materials/multilayered/#what-is-the-mlsetup) (a list of material paths and -colours). There is a section on the exceptions below.
 
-Which of these layers affects which part of your mesh will be determined in the corresponding [mlmask](../../../materials/multilayered/#what-is-the-mlmask) file.
+If you want to learn how mesh material assignment works in general, you can check the [corresponding page](../../../files-and-what-they-do/3d-objects-.mesh-files.md#material-assignment).
 {% endhint %}
 
 {% hint style="success" %}
