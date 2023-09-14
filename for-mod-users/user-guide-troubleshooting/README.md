@@ -243,6 +243,13 @@ The error below is partial to Steam:
 Cyberpunk 2077 encountered an error caused by corrupted or incomplete game data
 ```
 
+There are two potential fixes:&#x20;
+
+* [Run as admin](./#run-as-admin)
+* [Run without antivirus](./#run-without-antivirus)
+
+#### Run as admin
+
 Before trying to implement any of the other solutions, configure the `REDprelauncher.exe` in the [Cyberpunk root directory](#user-content-fn-1)[^1] to always run as administrator.&#x20;
 
 * Right-click on the file and select `Properties`
@@ -250,6 +257,21 @@ Before trying to implement any of the other solutions, configure the `REDprelaun
 * Check the box `Run this program as an administrator`
 
 <figure><img src="../../.gitbook/assets/troubleshooting_redprelauncher_runas_admin.png" alt=""><figcaption></figcaption></figure>
+
+#### Run without antivirus
+
+The second reason might be that your antivirus fucks with your game files in a way that the game can't cope with.
+
+Try the following steps:
+
+* Turn off your antivirus and your firewall - anything that counts as "System Protection".
+  * Yes, that includes Windows Defender
+  * Yes, all of it. That includes your computer's bodyguard if it has one.
+* Now, start the game.
+* If the error persists, verify game files through your client (you won't catch any viruses doing that)
+* Start the game again
+
+If it works now, you need to find out how to keep your antivir away from your game directory. If it doesn't, then you can turn the stuff back on now.
 
 ## You pirated the game
 
