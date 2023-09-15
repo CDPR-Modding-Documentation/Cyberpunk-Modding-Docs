@@ -16,3 +16,9 @@ description: Collect preview pictures for multilayered materials here
 
 <figure><img src="../../../.gitbook/assets/multilayered_material_overview_silver.png" alt=""><figcaption></figcaption></figure>
 
+## Metals: rolled
+
+
+
+<figure><img src="../../../.gitbook/assets/multilayered_materials_rolled_metal.png" alt=""><figcaption></figcaption></figure>
+
