@@ -10,7 +10,7 @@ description: 'Step 2: How to create a custom NPC'
 **Published May 13 2023**
 
 {% hint style="info" %}
-As much of the information here has been documented in [other guides](../appearances-change-the-looks.md), the information below will be kept initially brief. Might write more to a later point, but there is a lot of [documentation](broken-reference) already.
+As much of the information here has been documented in [other guides](../appearances-change-the-looks.md), the information below will be kept initially brief. Might write more to a later point, but there is a lot of documentation already.
 {% endhint %}
 
 This page is a part of the [NPV guide](./). It will show you how to use the [provided example project](./#preparation) to create a custom NPC for Cyberpunk 2077, whom you can then spawn with AppearanceMenuMod.
@@ -31,6 +31,10 @@ It's not a problem if you use your own custom paths, although it is easier to [c
 {% hint style="success" %}
 At any time during the tutorial, you can **install** the Wolvenkit project (Wolvenkit has a button in the toolbar) and spawn **Tutorial Man** and **Tutorial Woman** via AMM to check out your progress.
 {% endhint %}
+
+## Skipping and skimming
+
+This guide contains as little fluff as possible. Extra information&#x20;
 
 ## The .lua file
 
@@ -85,7 +89,9 @@ return {
 
 It loads our [root entity](npv-creating-a-custom-npc.md#the-root-entity) from  `tutorial\npv\your_female_character\ops\your_female_character.ent`. That's the file which tells the game what to load.
 
-You can and should change this file — see the inline documentation for how to do that.
+{% hint style="success" %}
+You can and should change this file — see the inline documentation above for what to change.
+{% endhint %}
 
 ## The root entity
 
@@ -104,25 +110,43 @@ The root entity hooks up your .app file and the appearance names in the .lua fil
 
 <figure><img src="../../../../.gitbook/assets/npv_root_entity.png" alt=""><figcaption><p>Adjust entries as needed. If you want to </p></figcaption></figure>
 
+{% hint style="success" %}
 If you want to add more appearances:
 
 * duplicate an existing entry
 * change the last key `name` to match the one in your .lua
 * change the first key `appearanceName` to the one you want to put in your `.app`
+{% endhint %}
 
 Let's look at the .app file now.
 
 ## The app file
 
-{% hint style="info" %}
-[Would you like to know more?](broken-reference)
-{% endhint %}
+This section will tell you how to edit your NPV's appearance – their skin colour, chrome, piercings, tattoos. We will do this in the .app file.
 
-This is where all of your NPC's components are defined — stuff like which rig they use, their facial expression set, the shadow they cast, but also their hair and equipment. For details, see the .app file's [overview page](broken-reference), for another guide on this, see [here](../appearances-change-the-looks.md).
+This is where all of your NPC's appearances are defined (`appearanceDefinition`,  linked to the root entity via `name`). The appearanceDefinition's components **define** your NPV's properties, pulling in equipment, facial expressions, hair and skin.
+
+{% hint style="info" %}
+[Would you like to know more?](../../../files-and-what-they-do/appearance-.app-files.md)
+{% endhint %}
 
 It looks like this:
 
 <figure><img src="../../../../.gitbook/assets/npv_app_structure.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+The next section, [#how-do-i-know-what-to-put](npv-creating-a-custom-npc.md#how-do-i-know-what-to-put "mention"), will help you find the right appearance names.
+
+If you feel completely lost, you can read up on [how to change NPC appearances](../appearances-change-the-looks.md) – the concept is exactly the same.
+{% endhint %}
+
+{% hint style="success" %}
+If you want to add another appearance
+
+* duplicate an existing entry
+* change the key `name` to match the one in your root entity
+* change the components
+{% endhint %}
 
 ### How do I know what to put?
 
@@ -130,19 +154,28 @@ To find out which variants and appearances to use, I suggest that you use NoraLe
 
 <figure><img src="../../../../.gitbook/assets/npv_guide_part_picker_preview.png" alt=""><figcaption><p>Find it at <a href="https://noraleedoes.neocities.org/npv/npv_part_picker">https://noraleedoes.neocities.org/npv/npv_part_picker</a></p></figcaption></figure>
 
-{% hint style="info" %}
-This is where you select your eyebrow appearance — open up the mesh file and expand the first list `appearances`. There you can see a bunch of colours and numbers. The numbers correspond with the character editor, and you can look the colours up [here](../../../references-lists-and-overviews/body/hair.md).
+{% hint style="success" %}
+The NPV picker does this for you, but here's how to select your eyebrow appearance by hand:
+
+* &#x20;open up the mesh file and expand the first list `appearances`
+* see a bunch of entries with naming schemas like `colour_01`
+* the numbers correspond with the type of eyebrow in the character editor (look them up [here](../../../references-lists-and-overviews/body/hair.md))
+* Select the correct colour and appearance number
 {% endhint %}
 
-Each of the prepared .app files has two appearances, `casual` and `business`. I tried hooking up all the components for you (might have forgotten some). In that case, you simply duplicate any of the entSkinnedMeshComponents and change `depotPath` and `apperance`:
-
-<figure><img src="../../../../.gitbook/assets/npv_app_details.png" alt=""><figcaption></figcaption></figure>
-
 ### Customizing Cyberware
+
+{% hint style="info" %}
+If you skip this step, you will end up with invisible cyberware or the wrong colour/appearance.
+{% endhint %}
 
 When selecting a different cyberware than the preconfigured one, you **have** to set the appearance name, or the whole thing will show up in grey. The appearance names are usually identical to the cyberware (`cyberware_01`, `cyberware_02` etc.), but if you are uncertain, you can also open the mesh file and check the `appearances` list at the top.
 
 ### Customizing piercings and chrome: Chunkmasks
+
+{% hint style="info" %}
+If you skip this step, you will end up with the wrong or too many piercings and cyberware.
+{% endhint %}
 
 You have the full piercing or cyberware file, but you're only using parts of it — yet the game stubbornly shows you the whole mesh.&#x20;
 
@@ -161,9 +194,11 @@ To hide those bits in the .app, we simply need to uncheck the corresponding boxe
 
 ## Hair
 
-This section will teach you how to find the necessary components to add the right hair to your NPV.
+This section will teach you how to add another hair mesh to your NPV. We will first remove the default hair, then replace it with the one you want.
 
-
+{% hint style="info" %}
+To use modded hair, find the correct files [inside the mod](../../analysing-other-mods/) and add them to your project.
+{% endhint %}
 
 1. Delete the current hair from the .app — there should be 2-3 components, their names will start with either `hair_` or `hh_0`
 2. Find the correct hair mesh. You have three options for this:

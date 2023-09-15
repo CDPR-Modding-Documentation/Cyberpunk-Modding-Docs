@@ -76,7 +76,7 @@ Path of glb: `<yourModDir>\source\`**`raw`**`\base\characters\garment\player_equ
 ## Blender: Saving the mesh
 
 {% hint style="info" %}
-Some meshes (such as eyelashes and hair) are two-sided. See [here](broken-reference) for details on how Wolvenkit handles that.
+Some meshes (such as eyelashes and hair) are two-sided. See [here](./#import-export-\_doubled) for details on how Wolvenkit handles that.
 {% endhint %}
 
 ### glTF Binary  (\*.glb)
@@ -86,7 +86,7 @@ If you have touched the topology, make sure to **triangulate** your mesh before 
 {% endhint %}
 
 {% hint style="info" %}
-You can use the [Cyberpunk Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) — it will take care of the necessary settings.
+You can (and should) use the [Cyberpunk Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) — it will take care of the necessary settings.
 {% endhint %}
 
 Make sure to check the box under Data > Mesh > Tangents, as Wolvenkit will not export without it.
@@ -118,7 +118,7 @@ will be imported over
 {% endhint %}
 
 {% hint style="warning" %}
-WolvenKit refuses to import if the target mesh doesn't support all bones in the glb or if your mesh's topology became corrupted. If that's the case, check the [troubleshooting page](../../modding-guides/textures-and-luts/self-made-normal-maps/troubleshooting-normal-maps.md).
+WolvenKit refuses to import if the target mesh doesn't support all bones in the glb or if your mesh's topology became corrupted. If that's the case, check the [troubleshooting page](../self-made-normal-maps/troubleshooting-normal-maps.md).
 {% endhint %}
 
 ## Import/Export: \_doubled

@@ -39,13 +39,13 @@ You assign materials based on the "chunks" (the individual submeshes) inside a m
 
 Materials are defined in the array **`materialEntries`** inside your mesh:
 
-<figure><img src="../../.gitbook/assets/materials_materialentries_overview.png" alt=""><figcaption><p>For a detailed example, see <a href="re-using-materials-.mi.md#maximally-lazy-external-materials">re-using materials</a></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/materials_materialentries_overview.png" alt=""><figcaption><p>For a detailed example, see <a href="../materials/re-using-materials-.mi.md#maximally-lazy-external-materials">re-using materials</a></p></figcaption></figure>
 
 {% hint style="warning" %}
 While you can mix external and local materials, you can not mix preloaded and non-preloaded ones. For details, see [below](3d-objects-.mesh-files.md#preload...-what).
 {% endhint %}
 
-<table><thead><tr><th width="202">Property</th><th>Description</th></tr></thead><tbody><tr><td>index</td><td><strong>numerical index</strong> of corresponding material in target list (as defined by <code>isLocalInstance</code>)</td></tr><tr><td>isLocalInstance</td><td>Selects the material target list.<br><strong>True:</strong> <a href="3d-objects-.mesh-files.md#materialinstance-the-local-material">local material</a> in <code>localMaterialBuffer.materials</code> or <code>preloadLocalMaterialInstances</code><br><strong>False:</strong> <a href="3d-objects-.mesh-files.md#material-reference-a-material-somewhere-else">material reference</a> in<code>externalMaterials</code> or <code>preloadExternalMaterials</code><br><br>For more information on this, see the page for <a href="re-using-materials-.mi.md#maximally-lazy-external-materials">local/external materials</a>.</td></tr><tr><td>name</td><td><strong>unique</strong> name of material, used to select the material via <code>chunkMaterial</code></td></tr></tbody></table>
+<table><thead><tr><th width="202">Property</th><th>Description</th></tr></thead><tbody><tr><td>index</td><td><strong>numerical index</strong> of corresponding material in target list (as defined by <code>isLocalInstance</code>)</td></tr><tr><td>isLocalInstance</td><td>Selects the material target list.<br><strong>True:</strong> <a href="3d-objects-.mesh-files.md#materialinstance-the-local-material">local material</a> in <code>localMaterialBuffer.materials</code> or <code>preloadLocalMaterialInstances</code><br><strong>False:</strong> <a href="3d-objects-.mesh-files.md#material-reference-a-material-somewhere-else">material reference</a> in<code>externalMaterials</code> or <code>preloadExternalMaterials</code><br><br>For more information on this, see the page for <a href="../materials/re-using-materials-.mi.md#maximally-lazy-external-materials">local/external materials</a>.</td></tr><tr><td>name</td><td><strong>unique</strong> name of material, used to select the material via <code>chunkMaterial</code></td></tr></tbody></table>
 
 #### Preload… what?
 
@@ -62,7 +62,7 @@ If you are using **a mix of local and external materials**, you **must** use the
 
 ### Step 3: Material definition
 
-A material definition can be in a `CMaterialInstance` inside the mesh or in a [`.mi` file](re-using-materials-.mi.md) in the project. For local materials, Wolvenkit will display material names as defined in the `materialEntries`.
+A material definition can be in a `CMaterialInstance` inside the mesh or in a [`.mi` file](../materials/re-using-materials-.mi.md) in the project. For local materials, Wolvenkit will display material names as defined in the `materialEntries`.
 
 For more details on material definitions, [check here](../materials/).
 
@@ -71,7 +71,7 @@ For more details on material definitions, [check here](../materials/).
 The materials themselves are inside the array `localMaterialBuffer.materials` (or `preloadLocalMaterials` in case of older meshes).&#x20;
 
 {% hint style="success" %}
-You can't go wrong by using those. However, if you don't have any properties that are unique to your mesh or appearance (for example a custom normal map), you might consider [creating and using an external material instead](re-using-materials-.mi.md).
+You can't go wrong by using those. However, if you don't have any properties that are unique to your mesh or appearance (for example a custom normal map), you might consider [creating and using an external material instead](../materials/re-using-materials-.mi.md).
 {% endhint %}
 
 A material instance looks like this:
@@ -84,9 +84,9 @@ For an overview of materials that you might want to use for something, check [he
 For how to find out which properties a material has, check [here](../materials/#checking-material-properties).
 {% endhint %}
 
-### Material reference: [reusing materials](re-using-materials-.mi.md#maximally-lazy-external-materials)
+### Material reference: [reusing materials](../materials/re-using-materials-.mi.md#maximally-lazy-external-materials)
 
-A relative path to an external material, usually encapsulated in a [.mi file](re-using-materials-.mi.md#.mi-files-to-the-rescue). Use this if you don't need to add extra properties.
+A relative path to an external material, usually encapsulated in a [.mi file](../materials/re-using-materials-.mi.md#.mi-files-to-the-rescue). Use this if you don't need to add extra properties.
 
 [^1]: vertices, edges – everything that makes up the 3d object's surface information
 

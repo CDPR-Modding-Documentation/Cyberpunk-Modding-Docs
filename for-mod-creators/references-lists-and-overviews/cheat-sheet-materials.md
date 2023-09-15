@@ -14,7 +14,7 @@ For preview images of multilayered materials, check [here](../materials/multilay
 
 
 
-For theory about material templates, check [here](../files-and-what-they-do/re-using-materials-.mi.md).
+For theory about material templates, check [here](../materials/re-using-materials-.mi.md).
 
 \
 If you don't know how to edit material properties, check [here](../materials/).

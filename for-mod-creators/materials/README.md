@@ -14,7 +14,7 @@ Check the section's sub pages in the wiki's navigation tree for more detailed in
 
 * [cheat-sheet-materials.md](../references-lists-and-overviews/cheat-sheet-materials.md "mention") for direct edits
 * [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention")and their materials
-* [re-using-materials-.mi.md](../files-and-what-they-do/re-using-materials-.mi.md "mention") – material template files explained
+* [re-using-materials-.mi.md](re-using-materials-.mi.md "mention") – material template files explained
 
 #### Hands-on:
 
@@ -42,10 +42,10 @@ Not every parameter of a shader can be configured: since skin always has subsurf
 ## Definition: Material&#x20;
 
 {% hint style="info" %}
-For details how materials are used on a mesh, see the [corresponding wiki page](../files-and-what-they-do/3d-objects-.mesh-files.md#material-assignment), or learn how materials can be [loaded externally](broken-reference) from [material template files](../files-and-what-they-do/re-using-materials-.mi.md).&#x20;
+For details how materials are used on a mesh, see the [corresponding wiki page](../files-and-what-they-do/3d-objects-.mesh-files.md), or learn how materials can be [loaded externally](../files-and-what-they-do/3d-objects-.mesh-files.md#material-reference-reusing-materials) from [material template files](re-using-materials-.mi.md).&#x20;
 {% endhint %}
 
-**In the context of Cyberpunk**, a material is the thing that lets the shader define the surface properties of a [mesh](broken-reference). Typically, you create a local instance, which will then pull in a shader via `baseMaterial`.
+**In the context of Cyberpunk**, a material is the thing that lets the shader define the surface properties of a [mesh](../files-and-what-they-do/3d-objects-.mesh-files.md)[3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention"). Typically, you create a local instance, which will then pull in a shader via `baseMaterial`.
 
 The property `baseMaterial` can point at a `.mt` / `.remt` file directly, or to an intermediary `.mi` file:
 
@@ -56,7 +56,7 @@ The .mi file&#x20;
 {% hint style="info" %}
 Each part of a mesh (submesh) can have a different material assigned.&#x20;
 
-[Do you want  to know more?](broken-reference)
+[Do you want  to know more?](../files-and-what-they-do/3d-objects-.mesh-files.md#chunkmaterials)
 {% endhint %}
 
 {% hint style="success" %}
@@ -85,5 +85,5 @@ This is specific to Cyberpunk, and it is incredibly cool. If you're used to text
 * What is a [multilayered material](multilayered/) and how does it work?
 * What are these [properties](multilayered/multilayered-material-properties.md), how do I use them?
 * [Changing the colours](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material)
-* [Changing the mask](../modding-guides/textures-and-luts/custom-multilayermasks.md)
+* [Changing the mask](../textures/custom-multilayermasks.md)
 {% endhint %}

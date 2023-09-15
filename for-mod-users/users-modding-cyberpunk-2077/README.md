@@ -9,7 +9,7 @@ description: Modding your game, for users
 {% endcontent-ref %}
 
 {% hint style="info" %}
-This page contains instructions on **installing** mods. If you want to **create** mods instead, check [here](broken-reference).
+This page contains instructions on **installing** mods. If you want to **create** mods instead, check [here](../../for-mod-creators/modding-guides/).
 {% endhint %}
 
 {% hint style="success" %}

@@ -36,7 +36,7 @@ Common component properties explained. For a more detailed list, please see [Doc
 
 #### chunkMask
 
-Only used for [meshes](broken-reference): Determines which parts of a mesh will be displayed or hidden. Numeric indices correspond with the submeshes by index.
+Only used for meshes: Determines which parts of a mesh will be displayed or hidden. Numeric indices correspond with the submeshes by index.
 
 <figure><img src="../../../.gitbook/assets/chunkmask.png" alt=""><figcaption></figcaption></figure>
 

@@ -2,7 +2,7 @@
 description: >-
   An investigation and documentation of several methods of advanced LUT
   workflows.
-cover: ../../../../../.gitbook/assets/pt_24.png
+cover: ../../../../.gitbook/assets/pt_24.png
 coverY: -385
 ---
 
@@ -71,11 +71,11 @@ Below are 2 sample pictures captured with the method, we will be getting a grasp
 
 <div>
 
-<figure><img src="../../../../../.gitbook/assets/pt_18.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pt_18.png" alt=""><figcaption></figcaption></figure>
 
  
 
-<figure><img src="../../../../../.gitbook/assets/pt_19.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pt_19.png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -91,7 +91,7 @@ So, how do we put your grade into the game? Glad you asked. After you're done gr
 
 ## Generating a finished CUBE LUT
 
-<figure><img src="../../../../../.gitbook/assets/lut.png" alt=""><figcaption><p>A LUT texture from the ReShade project. This will be useful when we output our grade to the game.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/lut.png" alt=""><figcaption><p>A LUT texture from the ReShade project. This will be useful when we output our grade to the game.</p></figcaption></figure>
 
 It's now good to mention that Cyberpunk outputs data with an ARRI LogC3 encoding, but SRGB color space. ACES, on the other hand, expects ARRI LogC3 encoding but ARRI Wide Gamut 3 color space as well. At the end, Cyberpunk expects SRGB data with SRGB gamma too, so you need a TMO to handle this conversion from HDR data encoded in a Log curve to fit in SDR range, but decoded and then put into the display gamut and dynamic range.
 
@@ -119,7 +119,7 @@ After this is done, export using the NVIDIA Texture Tools plugin as a 32x4f DDS 
 
 Once you are done, put the texture into WolvenKit and import using these settings:
 
-<figure><img src="../../../../../.gitbook/assets/image (14) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (4).png" alt=""><figcaption></figcaption></figure>
 
 Afterwards, set the depth, height, and with properties to 32, then go to `renderTextureResource -> renderResourceBlobPC -> header -> sizeInfo` and set all of the properties there to 32 also. Don't forget to change the texture type to 3D in `textureInfo`!
 
@@ -131,18 +131,18 @@ There it is. Your tonemapped LUT from scratch.
 2. Normally I'd try to make the entire thing seem more accessible in general, but really, this is an extremely complex topic that would take some experts press their eyes in frustration. I know it happened to me a ton.
 3. If you're looking for pre-made examples, I have a few right here:
 
-{% file src="../../../../../.gitbook/assets/AWG3-ACES-GamutCompress.xbm" %}
+{% file src="../../../../.gitbook/assets/AWG3-ACES-GamutCompress.xbm" %}
 Gamut compressed LUT using AWG3 gamut conversion, looks a bit desaturated.
 {% endfile %}
 
-{% file src="../../../../../.gitbook/assets/AWG3-LogC.xbm" %}
+{% file src="../../../../.gitbook/assets/AWG3-LogC.xbm" %}
 A method which I didn't have the ability to go over in the entry, but gives surprisingly pleasant results in both AWG3 conversion and SRGB.
 {% endfile %}
 
-{% file src="../../../../../.gitbook/assets/SRGB-ACES-GamutCompress.xbm" %}
+{% file src="../../../../.gitbook/assets/SRGB-ACES-GamutCompress.xbm" %}
 Gamut compressed, ACES-tone mapped without AWG3 gamut conversion. Has clipping problems that are simply inherent to the incorrect color due to not using AWG3 conversion, but has a very unique look.
 {% endfile %}
 
-{% file src="../../../../../.gitbook/assets/SRGB-LogC.xbm" %}
+{% file src="../../../../.gitbook/assets/SRGB-LogC.xbm" %}
 A variant of the undocumented method that is similar to the ACES-tone mapped SRGB LUT but has less clipping.
 {% endfile %}

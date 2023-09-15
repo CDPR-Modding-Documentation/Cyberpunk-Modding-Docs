@@ -41,7 +41,7 @@ For help about editing textures, see the [textures-and-luts](../textures-and-lut
 
 For general troubleshooting and help with Wolvenkit's interface, see
 
-[images-importing-editing-exporting.md](../textures-and-luts/images-importing-editing-exporting.md "mention")
+[images-importing-editing-exporting.md](../../textures/images-importing-editing-exporting.md "mention")
 
 [exporting-and-importing-meshes](../../3d-modelling/exporting-and-importing-meshes/ "mention")
 

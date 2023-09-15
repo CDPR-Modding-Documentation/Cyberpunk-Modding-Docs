@@ -11,7 +11,7 @@ description: How to add custom preview images by using a custom .inkatlas file
 
 The guide below will teach you how to make preview icons. While it's a technically a subsection of the [ArchiveXL item additions guide](../../items-equipment/adding-new-items/), you can use the steps below to make any kind of preview item.
 
-**Difficulty Level**: You know how to read and can either edit images or make use of [the corresponding guide](../../textures-and-luts/images-importing-editing-exporting.md). It's easy!
+**Difficulty Level**: You know how to read and can either edit images or make use of [the corresponding guide](../../../textures/images-importing-editing-exporting.md). It's easy!
 
 {% hint style="info" %}
 If you want to have gendered preview icons, check [here](gendered-preview-icons.md).
@@ -69,8 +69,8 @@ You can [export your mesh with all its materials](../../../3d-modelling/exportin
 2. Find the resulting file under "raw"&#x20;
 3. Open it in your image editor
 4. Edit it to your heart's content
-5. Overwrite the png file with your edited one. [Mind the transparency](../../textures-and-luts/images-importing-editing-exporting.md#editing-a-texture)!
-6. [Import it back](../../textures-and-luts/images-importing-editing-exporting.md#importing-a-texture).
+5. Overwrite the png file with your edited one. [Mind the transparency](../../../textures/images-importing-editing-exporting.md#editing-a-texture)!
+6. [Import it back](../../../textures/images-importing-editing-exporting.md#importing-a-texture).
 
 ## Hooking up the inkatlas
 
@@ -125,4 +125,4 @@ Again, please note that indent is **crucial** here, as it determines the node st
 
 ## That's it! Time to test!
 
-If you run into any issues with your texture's transparency, please [check the textures import/export guide!](../../textures-and-luts/images-importing-editing-exporting.md)
+If you run into any issues with your texture's transparency, please [check the textures import/export guide!](../../../textures/images-importing-editing-exporting.md)

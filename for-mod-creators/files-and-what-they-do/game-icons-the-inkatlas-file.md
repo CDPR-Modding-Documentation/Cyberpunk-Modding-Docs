@@ -6,7 +6,7 @@ Apart has prepared a reference project with an import-ready inkatlas. You can do
 
 ## Summary
 
-The .inkatlas is a map file that slices [**textures**](../materials/textures.md) into slots, which are then used by the game for pretty much everything that is a picture - from your HUD to peoples' phone avatars to item preview icons in shops or custom atelier images.&#x20;
+The .inkatlas is a map file that slices [**textures**](../textures/) into slots, which are then used by the game for pretty much everything that is a picture - from your HUD to peoples' phone avatars to item preview icons in shops or custom atelier images.&#x20;
 
 ## Guides
 

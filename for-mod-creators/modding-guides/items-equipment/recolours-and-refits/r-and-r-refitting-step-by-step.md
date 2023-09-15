@@ -4,7 +4,7 @@ description: Step-by-step guide on refitting a mesh - for newbies!
 
 # R\&R: Refitting (step by step)
 
-This page is a subsection of the [Netrunning Suit guide](broken-reference). It will teach you how to do custom refits in Blender.
+This page is a subsection of the [Netrunning Suit guide](./). It will teach you how to do custom refits in Blender.
 
 **Assumed level of skill**: You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on Discord so that I can improve it.&#x20;
 

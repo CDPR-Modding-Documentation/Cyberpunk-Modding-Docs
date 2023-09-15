@@ -1,6 +1,6 @@
 # 🔍 Analysing other mods
 
-**Created by @manavortex**&#x20;
+l**Created by @manavortex**&#x20;
 
 **Published December 11 2022**
 
@@ -16,7 +16,7 @@ Please keep in mind that you are looking at somebody else's work. **Always credi
 Some modders don't want their mods to be unbundled. Most people don't mind if you do it for your own personal use, but you should seek permission and respect their decision.
 {% endhint %}
 
-For a documentation on how to use Wolvenkit CLI, see [here](broken-reference). Unless you have a very good reason to use the console, you probably don't want to.
+For a documentation on how to use Wolvenkit CLI, see [here](legacy-analysing-other-mods-with-wolvenkit-console.md). Unless you have a very good reason to use the console, you probably don't want to.
 
 ### Step 1: Switch to mod browser
 
@@ -28,7 +28,7 @@ You can now add the content to your project just like you do it with game files:
 
 The folders in the mod browser correspond to the names of the .archive files you have installed.&#x20;
 
-E.g., To find all mesh files inside the [Netrunning Suits mod](broken-reference), search for:
+E.g., To find all mesh files inside the [Netrunning Suits mod](../items-equipment/recolours-and-refits/), search for:
 
 ```
 archive:ArchiveXL_Netrunner > .mesh

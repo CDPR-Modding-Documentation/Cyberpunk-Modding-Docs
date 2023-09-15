@@ -16,7 +16,7 @@ This guide is a subsection of the [weapons](../items-equipment/adding-new-items/
 To add custom HUD icon:
 
 1. Add `base\gameplay\gui\widgets\ammo_counter\atlas_ammo_counter.inkatlas` and `base\gameplay\gui\widgets\ammo_counter\atlas_ammo_counter.xbm` to your project.
-2. [Export](../textures-and-luts/images-importing-editing-exporting.md) `base\gameplay\gui\widgets\ammo_counter\atlas_ammo_counter.xbm` as PNG and create a custom icon in chosen editing software. (You can refer to [creating custom inventory icons](adding-items-preview-images/) if you need further reference material).
+2. [Export](../../textures/images-importing-editing-exporting.md) `base\gameplay\gui\widgets\ammo_counter\atlas_ammo_counter.xbm` as PNG and create a custom icon in chosen editing software. (You can refer to [creating custom inventory icons](adding-items-preview-images/) if you need further reference material).
 3. [Import](../../3d-modelling/exporting-and-importing-meshes/) your PNG over the xbm with those settings:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-07-09 232152.jpg" alt=""><figcaption><p>HUD Icon import settings.</p></figcaption></figure>

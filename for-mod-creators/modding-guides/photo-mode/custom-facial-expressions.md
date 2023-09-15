@@ -4,17 +4,15 @@ description: Guide to change expressions for photo mode and AMM
 
 # Custom Facial Expressions
 
+## Summary <a href="#summary" id="summary"></a>
+
+**Created by @manavortex**\
+**Published ???**\
+**Updated: 15. 09. 2023**
+
 **This tutorial will teach you how to replace the default Photo mode or AMM expressions with those from an NPC.**&#x20;
 
-**Difficulty:** trivial if you know how to read
-
-## Contents
-
-* [Step 1: Locate the right file](broken-reference)
-* [Step 2: Replace the file with the one you want](broken-reference)
-* [Step 3: Pick the expressions you want](broken-reference)
-* [References](broken-reference)
-* [Troubleshooting](custom-facial-expressions.md#troubleshooting)
+**Difficulty:** You need to be able to read. If you run into trouble anyway, please hit us up on Discord so that we can improve this guide!
 
 ## Step 1: Locate the right file
 

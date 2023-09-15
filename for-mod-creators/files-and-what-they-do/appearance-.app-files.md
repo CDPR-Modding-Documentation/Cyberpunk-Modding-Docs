@@ -21,7 +21,7 @@ The real meat of the file: a list of appearance definitions, loaded via [root en
 
 A list of appearance definitions to be called from a [`root entity`](entity-.ent-files.md#root-entity)  file. The definitions are independent from each other (unless parentAppearance is used? Confirmation needed) and load meshes and effects via components.
 
-* `name`: the appearance's name that is listed in [its .ent file](broken-reference)
+* `name`: the appearance's name that is listed in [its .ent file](entity-.ent-files.md#root-entity)
 * `parentAppearance`: the appearance this one inherits information from
 * `proxyMesh`: the .mesh file loaded for rendering the vehicle at a distance (confirmation needed)
 * `resolvedDependencies`: pre-loaded resources. You will usually want to delete these if you're adding items from scratch.

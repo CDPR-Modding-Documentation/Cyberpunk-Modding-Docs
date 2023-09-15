@@ -2,7 +2,7 @@
 description: More detailed explanations for the guide "Adding new items"
 ---
 
-# Archive XL: Item structure explained
+# ℹ Archive XL: Item structure explained
 
 ## Summary
 
@@ -19,6 +19,10 @@ If you have come here from the main page because you want to change the existing
 * [app](archive-xl-item-structure-explained.md#appearance-making-changes)
 * [mesh](archive-xl-item-structure-explained.md#mesh-making-changes)
 * [.json](archive-xl-item-structure-explained.md#.json-making-changes) (translations)
+{% endhint %}
+
+{% hint style="info" %}
+Unless stated otherwise, any linked resources are optional and might not even be related to this exact guide.
 {% endhint %}
 
 ## Structural files: telling the game about your mod
@@ -296,13 +300,19 @@ You can leave `partsValues` alone - this just points at the file that loads the 
 
 ### Mesh
 
+The mesh file maps **materials** to appearances. To find out how exactly it does that, find the [material section](../../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances) on the mesh wiki page.&#x20;
+
 {% hint style="info" %}
-[Would you like to know more?](broken-reference) The documentation for .mesh files lives on their own page!
+**Would you like to know more?**&#x20;
+
+[3d-objects-.mesh-files.md](../../../files-and-what-they-do/3d-objects-.mesh-files.md "mention")
+
+\#appearan
+
+The documentation for .mesh files lives on their own page!
 
 Understanding this is not necessary for the purpose of this guide, but you might want to reference it once you run into trouble.
 {% endhint %}
-
-The mesh file maps **materials** to appearances. To find out how exactly it does that, find the [material section](../../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances) on the mesh wiki page.&#x20;
 
 For our purposes it's enough to say that you can **define** your individual appearances here.
 

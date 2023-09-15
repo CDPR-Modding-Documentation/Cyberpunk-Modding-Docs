@@ -6,7 +6,7 @@ description: Troubleshooting guide for materials.
 
 ## My material ignores transparency!
 
-If you have [done everything correctly](../modding-guides/textures-and-luts/images-importing-editing-exporting.md), then something in the mesh got borked. Easiest way to fix:&#x20;
+If you have [done everything correctly](../textures/images-importing-editing-exporting.md), then something in the mesh got borked. Easiest way to fix:&#x20;
 
 * Export your mesh
 * Re-name it to act as a backup
