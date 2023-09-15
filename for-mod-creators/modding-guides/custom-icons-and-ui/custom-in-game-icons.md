@@ -9,7 +9,7 @@ description: Creating a custom inkatlas
 Okay, now you've added something! But it doesn't have a preview icon yet - you'll have to add this manually. For this purpose, you'll have to edit an image.
 
 {% hint style="warning" %}
-For a guide how to ensure image transparency, see [here](../../textures/images-importing-editing-exporting.md).
+For a guide how to ensure image transparency, see [here](../textures-and-luts/images-importing-editing-exporting.md).
 {% endhint %}
 
 Cyberpunk uses xbm as format for its textures. These textures are then **mapped** (divided into slices) by inkatlas files. The individual slots can then be used by the game for pretty much everything from UI elements to phone call icons — and image previews.

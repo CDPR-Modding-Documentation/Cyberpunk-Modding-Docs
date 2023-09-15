@@ -6,11 +6,15 @@ description: What kinds of textures exist, and what do they do?
 
 This page aims to give an overview on different kinds of textures and what the game is using them for.&#x20;
 
-{% hint style="info" %}
+If you just want to make textures and don't care for the theory, you can find the guides under [Modding Guides -> Textures and LUTs](../modding-guides/textures-and-luts/)
+
+
+
+{% hint style="success" %}
 By default, all textures in Cyberpunk2077 are Y-flipped (upside down). WolvenKit will take care of that for you during import/export via the `VFlip` property.
 {% endhint %}
 
-If you just want to know how to import/export textures, see [here](images-importing-editing-exporting.md).&#x20;
+If you just want to know how to import/export textures, see [here](../modding-guides/textures-and-luts/images-importing-editing-exporting.md).&#x20;
 
 ## Types of files
 
@@ -35,7 +39,7 @@ Also known as "bump map", this texture is used to give a mesh depth and surface 
 In the game files, these files will be named `<name>_n.xbm` (e.g. `base\environment\decoration\food\packaged_food\textures\synthetic_snack_01_n.xbm`)
 
 {% hint style="info" %}
-For a guide how to make your own normal maps, see [here](../3d-modelling/self-made-normal-maps/).
+For a guide how to make your own normal maps, see [here](../modding-guides/textures-and-luts/self-made-normal-maps/).
 {% endhint %}
 
 ### Roughness
@@ -47,7 +51,7 @@ White => very rough
 Black => very smooth
 ```
 
-For an overview image, see [Roughness/Metalness overview](./#roughness-metalness-overview).
+For an overview image, see [Roughness/Metalness overview](textures.md#roughness-metalness-overview).
 
 #### Naming convention:
 
@@ -62,7 +66,7 @@ White => metal
 Black => not metal
 ```
 
-For an overview image, see [Roughness/Metalness overview](./#roughness-metalness-overview).
+For an overview image, see [Roughness/Metalness overview](textures.md#roughness-metalness-overview).
 
 #### Naming convention:
 

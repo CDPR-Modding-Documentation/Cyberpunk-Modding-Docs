@@ -1,4 +1,14 @@
-# Configuring materials
+---
+description: How materials work, and how you can configure them
+---
+
+# Material properties explained
+
+{% hint style="info" %}
+If you want to learn how material assignment works for the object, check [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention")
+
+For information on material templates, see [re-using-materials-.mi.md](../files-and-what-they-do/re-using-materials-.mi.md "mention")
+{% endhint %}
 
 ## Checking material properties
 
@@ -36,12 +46,12 @@ The material can be transparent, you need to set the enableMask flag to True and
 
 To make your mesh load a texture, use the following `CKeyValuePair`s in your material's "values" array:
 
-|           |                                                                                        |
-| --------- | -------------------------------------------------------------------------------------- |
-| BaseColor | path to your texture.xbm (Diffuse/Albedo)                                              |
-| Roughness | path to your roughnessMap.xbm (if you have one)                                        |
-| Metalness | path to your metalnessMap.xbm (if you have one)                                        |
-| Normal    | path to your normalMap.xbm ([if you have one](../3d-modelling/self-made-normal-maps/)) |
+|           |                                                                                                            |
+| --------- | ---------------------------------------------------------------------------------------------------------- |
+| BaseColor | path to your texture.xbm (Diffuse/Albedo)                                                                  |
+| Roughness | path to your roughnessMap.xbm (if you have one)                                                            |
+| Metalness | path to your metalnessMap.xbm (if you have one)                                                            |
+| Normal    | path to your normalMap.xbm ([if you have one](../modding-guides/textures-and-luts/self-made-normal-maps/)) |
 
 <figure><img src="../../.gitbook/assets/textured material example.png" alt=""><figcaption><p>example use of metal_base.remt as a textured material</p></figcaption></figure>
 

@@ -6,6 +6,8 @@ description: Irons, threads and everything else
 
 This section contains guides how to alter or overwrite already existing items (please see the page tree in the navigation menu on the left).
 
+If you want to look up [variants-and-appearances.md](../../../references-lists-and-overviews/equipment/variants-and-appearances.md "mention"), find the corresponding page in [references-lists-and-overviews](../../../references-lists-and-overviews/ "mention").
+
 {% content-ref url="changing-materials-colors-and-textures.md" %}
 [changing-materials-colors-and-textures.md](changing-materials-colors-and-textures.md)
 {% endcontent-ref %}

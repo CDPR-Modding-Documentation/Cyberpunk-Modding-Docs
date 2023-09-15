@@ -1,4 +1,4 @@
-# Photo Mode
+# 📸 Photo Mode
 
 This page collects guides on modding Cyberpunk's Photo Mode.&#x20;
 

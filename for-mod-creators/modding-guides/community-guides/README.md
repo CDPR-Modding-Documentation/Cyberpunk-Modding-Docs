@@ -2,7 +2,7 @@
 description: This page holds a list of community guides all over the internet.
 ---
 
-# Community guides
+# 🔗 Community guides
 
 ## Modding guides
 

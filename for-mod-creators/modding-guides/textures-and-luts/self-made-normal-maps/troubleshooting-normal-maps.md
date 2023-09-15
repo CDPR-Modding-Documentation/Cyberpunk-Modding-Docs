@@ -12,9 +12,9 @@ The texture has to be imported without the `isGamma` flag. Import **over** an al
 
 Cyberpunk actually considers the UV map's scaling when calculating the weight of the normal maps:
 
-<figure><img src="../../../.gitbook/assets/normal_maps_UV_scaling.png" alt=""><figcaption><p>the problem</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/normal_maps_UV_scaling.png" alt=""><figcaption><p>the problem</p></figcaption></figure>
 
 Since the neck part is scaled much larger than the chest, this will make the parts of the mesh visibly distinct.
 
-<figure><img src="../../../.gitbook/assets/normal_maps_UV_scaling_2.png" alt=""><figcaption><p>The solution</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/normal_maps_UV_scaling_2.png" alt=""><figcaption><p>The solution</p></figcaption></figure>
 

@@ -118,7 +118,7 @@ will be imported over
 {% endhint %}
 
 {% hint style="warning" %}
-WolvenKit refuses to import if the target mesh doesn't support all bones in the glb or if your mesh's topology became corrupted. If that's the case, check the [troubleshooting page](../self-made-normal-maps/troubleshooting-normal-maps.md).
+WolvenKit refuses to import if the target mesh doesn't support all bones in the glb or if your mesh's topology became corrupted. If that's the case, check the [troubleshooting page](../../modding-guides/textures-and-luts/self-made-normal-maps/troubleshooting-normal-maps.md).
 {% endhint %}
 
 ## Import/Export: \_doubled

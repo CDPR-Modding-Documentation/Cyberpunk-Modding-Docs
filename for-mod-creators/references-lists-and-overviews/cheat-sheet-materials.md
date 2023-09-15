@@ -12,6 +12,10 @@ For an overview of Multilayered properties, check [here](../materials/multilayer
 
 For preview images of multilayered materials, check [here](../materials/multilayered/multilayered-previews.md). (This page needs further data!)
 
+
+
+For theory about material templates, check [here](../files-and-what-they-do/re-using-materials-.mi.md).
+
 \
 If you don't know how to edit material properties, check [here](../materials/).
 {% endhint %}

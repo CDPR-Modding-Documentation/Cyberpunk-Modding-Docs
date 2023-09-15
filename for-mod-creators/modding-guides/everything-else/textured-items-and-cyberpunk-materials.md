@@ -91,7 +91,7 @@ This will create the following files under the project's `raw` section:
 Use `baseball_02_d.png`, as the other one doesn't have transparency.
 
 {% hint style="info" %}
-The import/export process has [its own guide](../../3d-modelling/exporting-and-importing-meshes/). There's also a [troubleshooting page](../../3d-modelling/self-made-normal-maps/troubleshooting-normal-maps.md) if you're stuck.
+The import/export process has [its own guide](../../3d-modelling/exporting-and-importing-meshes/). There's also a [troubleshooting page](../textures-and-luts/self-made-normal-maps/troubleshooting-normal-maps.md) if you're stuck.
 {% endhint %}
 
 Now that all files are in place, open the Import Tool in Wolvenkit (Tools -> Import), and re-import the files. The Wolvenkit preview should show your new imported mesh.
@@ -175,7 +175,7 @@ You do that by changing into the edit mode, then selecting everything that you w
 You can duplicate your selection first (Shift+D, ESC)
 {% endhint %}
 
-Now, switch back to Object mode and select your new mesh before going back to Edit Mode. Make sure to [**scale**](../../3d-modelling/self-made-normal-maps/#step-0-preparing-the-viewport) your new mesh, so that it is slightly above the surface of the old one - otherwise, you will have two things in the same place, which will look like shit.
+Now, switch back to Object mode and select your new mesh before going back to Edit Mode. Make sure to [**scale**](../textures-and-luts/self-made-normal-maps/#step-0-preparing-the-viewport) your new mesh, so that it is slightly above the surface of the old one - otherwise, you will have two things in the same place, which will look like shit.
 
 Make sure to [correctly name your new submesh](textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh), or run [the script](https://raw.githubusercontent.com/manavortex/code\_snippets/master/py/cyberpunk/util/prepare\_submeshes\_for\_export.py) again.
 
@@ -378,7 +378,7 @@ You can name your materials whatever you like, as long as you stick to the follo
 
 #### Explanation:&#x20;
 
-MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](broken-reference) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../materials/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
+MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](broken-reference) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../files-and-what-they-do/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
 
 {% hint style="success" %}
 Now, we adjust the materials — we'll just change a few properties to show you how it works, and then you can go play.&#x20;

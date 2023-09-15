@@ -1,4 +1,4 @@
-# Analysing other mods
+# 🔍 Analysing other mods
 
 **Created by @manavortex**&#x20;
 

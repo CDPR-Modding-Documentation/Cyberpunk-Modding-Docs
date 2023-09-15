@@ -4,7 +4,7 @@ description: >-
   mods but is still incomplete.
 ---
 
-# Sound
+# 🎺 Sound
 
 {% hint style="danger" %}
 Feel free to sign up and add your knowledge to the wiki. It doesn't matter if the guide is shitty or if your English is bad, the next person can always improve on your stuff – as long as there is any stuff!

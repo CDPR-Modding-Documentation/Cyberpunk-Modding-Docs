@@ -2,7 +2,7 @@
 description: This page will gather knowledge and guides about animations.
 ---
 
-# Animations
+# 🤹 Animations/Poses
 
 ## Summary
 

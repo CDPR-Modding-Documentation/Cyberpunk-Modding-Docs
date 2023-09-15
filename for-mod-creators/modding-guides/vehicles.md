@@ -1,4 +1,4 @@
-# Vehicles
+# 🚘 Vehicles
 
 {% hint style="info" %}
 This section collects information for vehicle modding. However, all we have as of now are two links.

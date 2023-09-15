@@ -2,7 +2,7 @@
 description: Adding weapons
 ---
 
-# Weapons
+# 🔫 Weapons
 
 ## Summary
 

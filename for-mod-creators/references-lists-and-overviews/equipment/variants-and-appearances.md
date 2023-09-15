@@ -112,7 +112,7 @@ File Path: `base\characters\garment\player_equipment\legs\l1_070_pants__loose`
 | Pants\_12\_rich\_02  | cotton\_purple\_gradient         |
 | Pants\_12\_rich\_03  | spandex\_gold\_green             |
 
-
+***
 
 ## Feet — Shoes
 

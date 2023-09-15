@@ -6,7 +6,7 @@ cover: ../../../../.gitbook/assets/ACES_2.png
 coverY: 29
 ---
 
-# Creating a LUT from scratch
+# 🌈 Creating a LUT from scratch
 
 {% hint style="danger" %}
 This method is for LDR. Little to none is known about HDR LUT creation, so please, do not expect anything on HDR LUTs.
@@ -105,7 +105,7 @@ Add a serial File LUT node and point to your downloaded file.&#x20;
 
 It may share a name with the LogC3 method, but is distinct from it as it uses a more recent revision of the color science compared to the LogC3 method, but we will need to change things before and after this step if you decide to use this method.
 
-Follow the same link described in the [#arri-logc3-method](creating-a-lut-from-scratch.md#arri-logc3-method "mention") section until you reach this part. Download the "ARRI LogC4 LUT Package".
+Follow the same link described in the [#arri-logc3-method](./#arri-logc3-method "mention") section until you reach this part. Download the "ARRI LogC4 LUT Package".
 
 <figure><img src="../../../../.gitbook/assets/image (21).png" alt=""><figcaption><p>The LogC4 LUTs we will use.</p></figcaption></figure>
 

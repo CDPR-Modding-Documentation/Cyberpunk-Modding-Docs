@@ -7,7 +7,9 @@ description: Welcome to the Cyberpunk 2077 modding wiki!
 This is the dedicated repository for modding guides, resources and know-how.&#x20;
 
 {% hint style="danger" %}
-This wiki is a community project! Do you want to improve or add anything? [Start editing ](https://app.gitbook.com/)right now, or reach out on [Discord](https://discord.gg/redmodding) and find us in the #wiki channel!
+This wiki is a community project! Do you want to improve or add anything? [Become an editor](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7) and start editing right now, or find us on [Discord](https://discord.gg/redmodding).
+
+Don't worry, we'll review everything - you can't mess anything up, and all contributions are welcome!
 {% endhint %}
 
 <div data-full-width="true">
