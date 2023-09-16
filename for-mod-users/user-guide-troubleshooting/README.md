@@ -142,6 +142,10 @@ If you are experiencing this issue with a mod that is not on this list, please c
 
 This section tells you how to deal with crashes during gameplay.
 
+#### When editing the inventory
+
+Kiroshi Crowd Scanner and Tooltip Fixer do not play together ([source](https://discord.com/channels/717692382849663036/788213273530335233/1152601434299301989), discord). Uninstall one of them.
+
 **If you can make it crash reliably**
 
 You're lucky, because it means that you can systematically troubleshoot. Go to the [bisect](./#finding-the-broken-mod-bisecting) section; start with .archive mods, but if that doesn't fix it, do the other folders as well.

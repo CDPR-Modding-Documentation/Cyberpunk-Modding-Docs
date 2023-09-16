@@ -54,6 +54,7 @@
     * [Cheat Sheet: Hair](for-mod-creators/references-lists-and-overviews/body/hair.md)
     * [Cheat sheet: Face and skin](for-mod-creators/references-lists-and-overviews/body/cheat-sheet-face-and-skin.md)
     * [Cheat Sheet: Facial Expressions](for-mod-creators/references-lists-and-overviews/body/cheat-sheet-facial-expressions.md)
+  * [Cheat sheet: Rigs and animations](for-mod-creators/references-lists-and-overviews/cheat-sheet-rigs-and-animations.md)
   * [Cheat sheet: Materials](for-mod-creators/references-lists-and-overviews/cheat-sheet-materials.md)
   * [Equipment](for-mod-creators/references-lists-and-overviews/equipment/README.md)
     * [Weapons](for-mod-creators/references-lists-and-overviews/equipment/weapons.md)

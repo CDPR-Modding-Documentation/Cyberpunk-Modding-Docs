@@ -6,23 +6,47 @@ description: Knowledge about animations in Cyberpunk, first and third person
 
 ## Summary
 
-This page contains t**heoretical knowledge** about animations and poses (static animations) in Cyberpunk 2077.  If you want to **make** poses (for [photo mode](modding-guides/photo-mode/archivexl-adding-photo-mode-poses.md) or [AMM](modding-guides/animations/amm-collab-anims-poses.md)) instead, see [Modding Guides](modding-guides/) -> [Animations](modding-guides/animations/).
+This page contains t**heoretical knowledge** about animations and poses (static animations) in Cyberpunk 2077. &#x20;
+
+If you want to look up what is where, please refer to the [Cheat Sheet](references-lists-and-overviews/cheat-sheet-rigs-and-animations.md).
+
+## What is an animation?
+
+An animation is a collection of **static poses** played as a sequence.
+
+If you want to **make** poses (replacer, [photo mode](modding-guides/photo-mode/archivexl-adding-photo-mode-poses.md) or [AMM](modding-guides/animations/amm-collab-anims-poses.md)) instead, see [Modding Guides](modding-guides/) -> [Animations](modding-guides/animations/).
+
+## What is a rig?
+
+Also called `armature` or `skeleton`, a rig is the thing that makes a character move.&#x20;
 
 {% hint style="info" %}
-There is (almost) nothing here yet. Maybe you are the right person to fix this? This wiki is a collaborative effort, **please** get involved!
+For a list of rigs by path, see the [cheat sheet](references-lists-and-overviews/cheat-sheet-rigs-and-animations.md#.rigs).
 {% endhint %}
 
-## First person
+## Animation sets
 
-First person animations are used solely on the player character (V). There's one rig per body gender:
+### Body
 
-<table><thead><tr><th width="226">name of rig</th><th>Path in game files</th></tr></thead><tbody><tr><td>player_male</td><td></td></tr><tr><td>player_female</td><td></td></tr></tbody></table>
+You can find body animation sets with the following [Wolvenkit search query](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
 
-## Third person
+```
+base\animations > locomotion > .anims
+```
 
-{% hint style="info" %}
-While most rigs are called `man_xxx`, they're also used by NPCs of the female body gender.
-{% endhint %}
+Which animation set a character uses is defined by `entAnimationSetupExtensionComponent`(s) in the root entity:
 
-<table><thead><tr><th width="230.33333333333331">Name of rig</th><th>Used by</th><th>Path in game files</th></tr></thead><tbody><tr><td>woman_base</td><td>female body gender, default body shape</td><td></td></tr><tr><td>man_base</td><td>male body gender, default body shape</td><td></td></tr><tr><td>man_child</td><td>children of any body gender </td><td></td></tr><tr><td>woman_child</td><td>unused (?)</td><td></td></tr><tr><td>man_big</td><td>any body gender: big folks, e.g. Jackie, River, Rhino…</td><td></td></tr><tr><td>man_fat</td><td>any body gender: fat folks, e.g. Dexter</td><td></td></tr><tr><td>man_massive</td><td>Smasher</td><td></td></tr></tbody></table>
+<figure><img src="../.gitbook/assets/animations_root_entity_ent_animation_setup_extension_component.png" alt=""><figcaption></figcaption></figure>
+
+### Face
+
+You can find facial animation sets with the following Wolvenkit search query:&#x20;
+
+```
+base\animations\facial > .anims
+```
+
+They are referenced from an entAnimationSetupExtensionComponent inside the .app file:
+
+![](../.gitbook/assets/animations\_app\_facial\_animsetup.png)
 
