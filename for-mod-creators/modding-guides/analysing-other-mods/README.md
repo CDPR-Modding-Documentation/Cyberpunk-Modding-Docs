@@ -1,15 +1,15 @@
 # 🔍 Analysing other mods
 
-l**Created by @manavortex**&#x20;
+**Created by @manavortex**&#x20;
 
 **Published December 11 2022**
 
-This guide will walk you through **extracting archive files** from other modders.
+This guide will walk you through **analysing or extracting archive files** from tutorial resources or other mods.
 
 #### Required: [WolvenKit](https://github.com/WolvenKit/WolvenKit/releases) <a href="#required-wolvenkit" id="required-wolvenkit"></a>
 
 {% hint style="warning" %}
-Please keep in mind that you are looking at somebody else's work. **Always credit** if you use anything from other peoples' mods!
+Please keep in mind that you are looking at somebody else's work. **Always credit** if you use anything from other peoples' mods, unless it's explicitly stated that you don't have to!
 {% endhint %}
 
 {% hint style="danger" %}

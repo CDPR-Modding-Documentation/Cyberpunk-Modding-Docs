@@ -19,6 +19,7 @@
   * [Users: Troubleshooting after a game update](for-mod-users/user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md)
   * [Users: Troubleshooting CET](for-mod-users/user-guide-troubleshooting/users-troubleshooting-cet.md)
   * [Finding and reading log files](for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md)
+  * [Broken mods: How to help](for-mod-users/user-guide-troubleshooting/broken-mods-how-to-help.md)
 * [Glossary](for-mod-users/glossary.md)
 
 ## For Mod Creators:

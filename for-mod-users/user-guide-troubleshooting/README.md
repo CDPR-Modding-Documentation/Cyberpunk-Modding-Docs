@@ -130,10 +130,13 @@ You only need to read this if you can start a new game without mods, but crash o
 
 Some mods store data in save files. Removing those mods **may** (but doesn't have to) lead to your save game crashing until you install them again.&#x20;
 
-At the current time (09/2023, before PL), issues have been caused by:
+At the current time (09/2023, before PL), that has been confirmed to affect those mods:
 
-* [Stealthrunner](https://www.nexusmods.com/cyberpunk2077/mods/7616)
 * [Immersive Ripperdocs](https://www.nexusmods.com/cyberpunk2077/mods/7064?tab=posts) (see the pinned comment for uninstall instructions)
+
+{% hint style="success" %}
+If you are experiencing this issue with a mod that is not on this list, please check [Broken mods: How to help](broken-mods-how-to-help.md)
+{% endhint %}
 
 ### Crash during the game
 
