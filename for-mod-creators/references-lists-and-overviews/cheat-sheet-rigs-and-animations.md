@@ -2,21 +2,7 @@
 
 ## .anims
 
-### Photo Mode
-
-You can find all photo mode animation sets in the following folder:
-
-```
-base\animations\ui\photomode\
-```
-
-You can find the following files there:
-
-
-
-<table><thead><tr><th width="133">Entity</th><th>Action</th><th>Idle</th><th>Face</th></tr></thead><tbody><tr><td>f!V</td><td>photomode__female__action.anims</td><td>photomode__female__idle.anims</td><td>photomode_female_facial.anims</td></tr><tr><td>m!V</td><td>photomode__male__action.anims</td><td>photomode__male__idle.anims</td><td>photomode_male_facial.anims</td></tr><tr><td>Johnny</td><td>-</td><td>photomode__johnny__idle.anims</td><td>photomode_johnny_facial.anims</td></tr></tbody></table>
-
-
+There is nothing here yet. For general documentation on how animations work, see [animations.md](../animations.md "mention")
 
 ## .rigs
 

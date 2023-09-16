@@ -19,7 +19,7 @@ If you want to have gendered preview icons, check [here](gendered-preview-icons.
 
 ## The required files
 
-If you downloaded the example project ([#getting-the-files](../../photo-mode/archivexl-adding-photo-mode-poses.md#getting-the-files "mention")), the preview is already hooked up. Otherwise, [download](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas\_templates\_apart\_v1.zip/file) the template archive (kindly provided by Apart).
+If you downloaded the example project ([#getting-the-files](../../animations/archivexl-adding-photo-mode-poses.md#getting-the-files "mention")), the preview is already hooked up. Otherwise, [download](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas\_templates\_apart\_v1.zip/file) the template archive (kindly provided by Apart).
 
 ### Go away with your examples, I'll do everything by hand!
 
@@ -114,7 +114,7 @@ Items.my_custom_shirt_redwhite:
     atlasPartName: slot_01
 ```
 
-Please refer to the [ArchiveXL guide](../../photo-mode/archivexl-adding-photo-mode-poses.md) for an explanation of the other properties, as this page will only hold information about preview icons.
+Please refer to the [ArchiveXL guide](../../animations/archivexl-adding-photo-mode-poses.md) for an explanation of the other properties, as this page will only hold information about preview icons.
 
 * `atlasResourcePath`: relative path to your .inkatlas file
 * `atlasPartName`: slot name in your .inkatlas file (which you can see in the `PartsMapping` tab)

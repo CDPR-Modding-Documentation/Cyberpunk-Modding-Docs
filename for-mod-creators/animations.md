@@ -14,7 +14,7 @@ If you want to look up what is where, please refer to the [Cheat Sheet](referenc
 
 An animation is a collection of **static poses** played as a sequence.
 
-If you want to **make** poses (replacer, [photo mode](modding-guides/photo-mode/archivexl-adding-photo-mode-poses.md) or [AMM](modding-guides/animations/amm-collab-anims-poses.md)) instead, see [Modding Guides](modding-guides/) -> [Animations](modding-guides/animations/).
+If you want to **make** poses (replacer, [photo mode](modding-guides/animations/archivexl-adding-photo-mode-poses.md) or [AMM](modding-guides/animations/amm-collab-anims-poses.md)) instead, see [Modding Guides](modding-guides/) -> [Animations](modding-guides/animations/).
 
 ## What is a rig?
 

@@ -20,9 +20,9 @@ This guide will teach you how to add custom animations to **AppearanceMenuMod**'
 **Difficulty level:** You're able to read ;) You don't even need to know your way around Wolvenkit for this one!
 
 {% hint style="danger" %}
-This guide will teach you how to hook up an existing .anims file to AMM. If you don't have one yet, you can learn [how to make your own](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/).
+This guide will teach you how to hook up an existing .anims file to AMM. If you don't have one yet, you can learn [how to make your own](poses-animations-make-your-own.md).
 
-To add poses to photo mode, check the [corresponding guide](../photo-mode/).
+To add poses to photo mode, check the [corresponding guide](broken-reference).
 {% endhint %}
 
 {% hint style="info" %}

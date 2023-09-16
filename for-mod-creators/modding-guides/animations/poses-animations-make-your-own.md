@@ -12,7 +12,7 @@ description: Make your own pose, then import it into photo mode
 {% hint style="info" %}
 This guide will teach you how to **create a custom pose** in Blender and import it into the game via **Wolvenkit**. Effectively, this will let you make a **photo mode replacer**.
 
-This is a **prerequisite** for pose sets for both [Photo Mode](../photo-mode/archivexl-adding-photo-mode-poses.md) and [Appearance Menu Mod](amm-collab-anims-poses.md).&#x20;
+This is a **prerequisite** for pose sets for both [Photo Mode](archivexl-adding-photo-mode-poses.md) and [Appearance Menu Mod](amm-collab-anims-poses.md).&#x20;
 
 Check the [animations.md](../../animations.md "mention")section for more general knowledge.
 {% endhint %}
@@ -129,7 +129,7 @@ You now need to create an animation that Wolvenkit can add into the existing fil
 
 <figure><img src="../../../.gitbook/assets/animations_blender_keyframes_2.png" alt=""><figcaption></figcaption></figure>
 
-4. Now, **rename** bot your NLA strip **and** your animation to **`idle_stand_01`**.  This will overwrite the "Tabula Rasa" animation.
+4. Now, **rename** both your NLA strip **and** your animation to **`idle_stand_01`**.  This will overwrite the "Tabula Rasa" animation. (Find a list of animations and their associated names [here](../../references-lists-and-overviews/cheat-sheet-photo-mode.md#idle).)
 
 #### This is important!
 
