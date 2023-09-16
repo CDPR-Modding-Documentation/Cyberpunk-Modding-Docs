@@ -170,6 +170,7 @@
     * [How to Remove an Animation (and Potentially Replace It)](for-mod-creators/modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
   * [🤹 Animations/Poses](for-mod-creators/modding-guides/animations/README.md)
     * [Importing animations](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/)
+    * [Poses/Animations: make your own](for-mod-creators/modding-guides/animations/poses-animations-make-your-own.md)
     * [AMM: Collab anims/poses](for-mod-creators/modding-guides/animations/amm-collab-anims-poses.md)
     * [Retargeting Animations to other Rigs](https://docs.google.com/document/d/1nHPQvkK6ijwb8iQ8y1X8CBG-wnNUCTYCjrdUCGMenW4/edit?usp=drive\_link)
     * [Archived: Custom poses for spawned NPCs](for-mod-creators/modding-guides/animations/archived-custom-poses-for-spawned-npcs.md)
