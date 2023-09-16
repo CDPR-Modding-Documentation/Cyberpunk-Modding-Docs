@@ -62,7 +62,14 @@ You **can not move** these .glb files. Wolvenkit needs them to stay where they a
 
 ### Download the template files
 
-Download the animation template(s) for your rig(s) from [Angy's Google Drive](https://drive.google.com/file/d/1kL04dQy9xmK\_yRsvsS4Sn83joPzrljAr/view), move/copy them somewhere, then open the one you want in Blender. I'll be using the one for female V because ~~the other one doesn't exist~~ I happen to have one of those.
+Download the animation template(s) for your rig(s):
+
+* for single characters: from [Angy's Google Drive](https://drive.google.com/file/d/1kL04dQy9xmK\_yRsvsS4Sn83joPzrljAr/view)&#x20;
+* for multiple characters: [Zwei's edit](https://drive.google.com/u/0/uc?id=1okbjLQE23f-eUvrM85v1MoiNTRtiO66w\&export=download) of Angy's templates
+
+Move/copy them somewhere, then open the one you want in Blender.&#x20;
+
+I'll be using Angy's template for female V, because ~~the other one doesn't exist~~ I happen to have one of those.
 
 ## Step 1: Posing the mannequin
 
