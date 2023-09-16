@@ -72,3 +72,9 @@ You can now save your image as a PNG with transparency. If you have exported a t
   * … etc
 * If your texture is upside-down, uncheck the box for `VFlip`.&#x20;
 * Click the "import" button. Your `.png` will now be imported Into the `.xbm` file.
+
+## Troubleshooting
+
+### My texture shows up completely black or completely white
+
+Change `Compression` to `TCM_None`, then reimport
