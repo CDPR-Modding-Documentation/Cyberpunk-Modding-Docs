@@ -62,7 +62,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
   * [Modding a clean install ](./#a-fresh-install-starting-from-scratch)
 
 {% hint style="success" %}
-To enable REDmods, check [here](../users-modding-cyberpunk-2077/redmod/usage.md#activating-mods) (you need to [install REDMod](../../for-mod-creators/core-mods-explained/redmod/#installation) first)
+To enable REDmods, check [#activating-mods](../users-modding-cyberpunk-2077/redmod/usage.md#activating-mods "mention") (you need to [install REDMod](../../for-mod-creators/core-mods-explained/redmod/#installation) first)
 {% endhint %}
 
 ## Your game is crashing
@@ -75,14 +75,14 @@ If your game is crashing during certain car chase missions, try removing [Eye Ex
 
 If you can't play because the game is crashing, this section will point you towards the right troubleshooting steps in the guide below.
 
-* If you're done with this shit and would rather reinstall, see [here](./#the-nuclear-option-a-clean-install)
+* If you're done with this shit and would rather reinstall, see [#the-nuclear-option-a-clean-install](./#the-nuclear-option-a-clean-install "mention")
 
 ### Crash on startup
 
 If you're trying to start your game, but it never even launches, this is the right section for you. Otherwise:
 
-* If the game crashes before you make it to the menu, see [here](./#crash-before-menu).
-* If the game crashes when you're trying to load a save, see [here](./#crash-on-loading-a-save).
+* If the game crashes before you make it to the menu, see [#crash-before-menu](./#crash-before-menu "mention")
+* If the game crashes when you're trying to load a save, see [#crash-on-loading-a-save](./#crash-on-loading-a-save "mention")
 
 #### Something about files or permissions
 
@@ -97,23 +97,23 @@ Your problem lies with either red4ext or redscript. Find the section "[Your game
 If you're starting the game, but never make it to the in-game menu, this is the right section for you. \
 Otherwise:
 
-* If the game never even starts, see [here](./#crash-on-startup)
-* If the game crashes when you're trying to load a save, see [here](./#crash-on-loading-a-save).
+* If the game never even starts, see [#crash-on-startup](./#crash-on-startup "mention")
+* If the game crashes when you're trying to load a save, see [#crash-on-loading-a-save](./#crash-on-loading-a-save "mention")
 
 Your problem most likely related to **Cyber Engine Tweaks**. To find out how to troubleshoot it, check the "[disable CET](./#step-2-disable-cet)" section.&#x20;
 
 ### Cyberpunk has flatlined
 
-See "[Crash before menu](./#crash-before-menu)"
+See [#crash-before-menu](./#crash-before-menu "mention")
 
 ### Crash on loading a save
 
 If you can make it to the menu but crash out when you're loading a save or starting a new game, this is the right section for you. \
 Otherwise:
 
-* If the game never even starts, see [here](./#crash-on-startup)
-* If the game crashes before you make it to the menu, see [here](./#crash-before-menu).
-* If you can start a new game without crashing, see [here](./#corrupt-ish-saves).
+* If the game never even starts, see [commands](../../for-mod-creators/core-mods-explained/redmod/commands/ "mention")
+* If the game crashes before you make it to the menu, see [#crash-before-menu](./#crash-before-menu "mention")
+* If you can start a new game without crashing, see [#corrupt-ish-saves](./#corrupt-ish-saves "mention")
 
 Most likely, you have an issue with an .archive mod. Here's what you can do:
 
@@ -358,7 +358,7 @@ Good news again: There's intel how (see below)
 jackhumbert's mod [ctdhelper](https://www.nexusmods.com/cyberpunk2077/mods/5205) will give you additional information. There is a chance that it shows you something helpful, most of the time it
 {% endhint %}
 
-If you don't want to download and run script files from the internet, you can go [here](./#alternatively-by-hand) and complete the steps by hand. Otherwise:
+If you don't want to download and run script files from the internet, you can go and [#step-1-temporarily-disable-all-your-mods](./#step-1-temporarily-disable-all-your-mods "mention") by hand. Otherwise:
 
 1. Download [this script](https://raw.githubusercontent.com/DoctorPresto/Cyberpunk-Helper-Scripts/main/FindAllErrors.bat) (**right-click -> save as**)\
    _Link goes to Presto's_ [_github repository_](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/FindAllErrors.bat)
@@ -445,7 +445,7 @@ Missing footsteps had in the past been connected to a bug in Let [There Be Fligh
 If the mod in question is Cyber Engine Tweaks (CET), check the corresponding subpage. If it's anything else, read on.
 {% endhint %}
 
-Normally, a mod should **just work**, as long as all of their requirements are working. If you aren't certain what that means, you can check [here](../users-modding-cyberpunk-2077/requirements-explained.md) for an explanation or follow the checklist below.
+Normally, a mod should **just work**, as long as all of their requirements are working. If you aren't certain what that means, you can check [requirements-explained.md](../users-modding-cyberpunk-2077/requirements-explained.md "mention") for detes, or just follow the checklist below.
 
 * Make sure that you have [enabled mods](../../for-mod-creators/core-mods-explained/redmod/#installation) in your launcher.
 * If items or hairs aren't changing, you need to install [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/8127) (why?)[^2]
@@ -640,7 +640,7 @@ This section assumes that&#x20;
   * load a savegame&#x20;
   * start a new game
 
-If you didn't make it that far, the steps below won't help you and will only obscure your problem. Please head [here](./#step-1-temporarily-disable-all-your-mods) first and complete the process.&#x20;
+If you didn't make it that far, the steps below won't help you and will only obscure your problem. Please head back to [#step-1-temporarily-disable-all-your-mods](./#step-1-temporarily-disable-all-your-mods "mention")and complete the process.&#x20;
 
 \
 If you need help, find us on [Discord](https://discord.gg/redmodding) in `#mod-troubleshooting!`&#x20;
