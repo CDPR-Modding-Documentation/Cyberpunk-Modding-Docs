@@ -23,7 +23,7 @@ The paths below are given **relative** to your [**Cyberpunk 2077 install directo
 If you don't want to download and run script files from the internet, you can go [here](finding-and-reading-log-files.md#alternatively-by-hand) and complete the steps by hand. Otherwise:
 
 1. Download [this script](https://raw.githubusercontent.com/DoctorPresto/Cyberpunk-Helper-Scripts/main/FindAllErrors.bat) (**right-click -> save as**)\
-   _Link goes to Presto's_ [_github repository_](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/FindAllErrors.bat)
+   _You can (but probably don't want to) look at the code on Presto's_ [_github repository_](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/FindAllErrors.bat)_._
 2. Now, do either of the following things:&#x20;
    1. Move it to your [**Cyberpunk game folder**](#user-content-fn-2)[^2] and double-click it
    2. Drag-and drop your [**Cyberpunk game folder**](#user-content-fn-3)[^3] on the file that you downloaded
