@@ -31,7 +31,9 @@ We all stand on the shoulders of giants: this process has first been documented 
 
 ### Skipping and skimming
 
-This guide will include the minimum amount of fluff and will **link** background information rather than giving it.
+This guide will include the minimum amount of fluff and will **link** background information rather than giving it. For that reason, you shouldn't skip or skim unless the section tells you that it's optional.
+
+<figure><img src="../../../.gitbook/assets/slow_down_kitten.jpg" alt=""><figcaption></figcaption></figure>
 
 Any links in the text will either
 
@@ -152,9 +154,10 @@ The names **must** be the same, and they **must** match the name in your .anim f
 
 5. Go back and read the warning box under step 4.
 6. Double-check the names. (Yes, this is **that** important)
-7. Now that you're sure that you have the correct names, switch the viewport back to **Object Mode** (the same way you switched to pose mode). Your armature should still be selected.\
+7. **Optional:** To add another pose, you can go back to Step 1, then rinse and repeat.
+8. Now that you're sure that you have the correct names, switch the viewport back to **Object Mode** (the same way you switched to pose mode). Your armature should still be selected.\
    _TODO: This step will be made **optional** when the Blender plugin update hits. Update guide when it does._
-8. From the File -> Export menu, select `Export Selection to GLB for Cyberpunk`
+9. From the File -> Export menu, select `Export Selection to GLB for Cyberpunk`
 
 <figure><img src="../../../.gitbook/assets/animations_blender_export_selection.png" alt=""><figcaption></figcaption></figure>
 
