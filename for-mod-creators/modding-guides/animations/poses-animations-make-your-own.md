@@ -10,7 +10,9 @@ description: Make your own pose, then import it into photo mode
 **Published September 2023**
 
 {% hint style="info" %}
-This guide will teach you how to **create a custom pose** in Blender and import it into the game via **Wolvenkit**. Effectively, this will let you make a **photo mode replacer**.
+This guide will teach you how to **create a custom pose** in Blender and import it into the game via **Wolvenkit**.&#x20;
+
+You will make a **photo mode replacer** - your custom pose(s) will **replace** to existing vanilla pose(s) provided by Photo Mode in the game.
 
 This is a **prerequisite** for pose sets for both [Photo Mode](archivexl-adding-photo-mode-poses.md) and [Appearance Menu Mod](amm-collab-anims-poses.md).&#x20;
 
@@ -31,7 +33,9 @@ We all stand on the shoulders of giants: this process has first been documented 
 
 ### Skipping and skimming
 
-This guide will include the minimum amount of fluff and will **link** background information rather than giving it. For that reason, you shouldn't skip or skim unless the section tells you that it's optional.
+This guide will include the minimum amount of fluff and will **link** background information rather than giving it.&#x20;
+
+For that reason, _**you shouldn't skip or skim**_ unless the section tells you that it's optional.
 
 <figure><img src="../../../.gitbook/assets/slow_down_kitten.jpg" alt=""><figcaption></figcaption></figure>
 
@@ -48,15 +52,21 @@ Follow them if  you want to learn more, or if you are unclear on how to complete
 
 To import your pose into Cyberpunk, you need a Wolvenkit project.&#x20;
 
-1. [Create one](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#creating-a-new-wolvenkit-mod-project), give it a name that you can identify later
-2. Now, [search](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for the correct photo mode file and add it to your project:
+1. [Create a project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#creating-a-new-wolvenkit-mod-project). Give it a name that you can identify later.
+2. Now, your project needs the photo mode .anims file appropriate for your pose(s). The table below shows your options.\
+   \
+   [Search](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for the correct photo mode file and add it to your project:
 
 | body gender | file                                                           |
 | ----------- | -------------------------------------------------------------- |
 | female      | base\animations\ui\photomode\photomode\_\_female\_\_idle.anims |
 | male        | base\animations\ui\photomode\photomode\_\_male\_\_idle.anims   |
 
-3. Export the file(s) via [Export Tool](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-location-tools). We will **overwrite** these glb(s) with our new pose, then use Wolvenkit to merge them into the existing .anims file.
+<figure><img src="../../../.gitbook/assets/add anims file to project.png" alt=""><figcaption><p>This is what adding your .anims to your project may look like</p></figcaption></figure>
+
+3. Export the file(s) to GLB via [Export Tool](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-location-tools). Default settings are fine.\
+   \
+   (We will **overwrite** these glb(s) with our new pose, then use Wolvenkit to merge them into the existing .anims file.)
 
 {% hint style="danger" %}
 You **can not move** these .glb files. Wolvenkit needs them to stay where they are so it can splice your new animation into the existing `.anims` file.
@@ -86,8 +96,11 @@ If the written instructions aren't clear enough for you, check the screenshots b
 
 <figure><img src="../../../.gitbook/assets/animations_tutorial_blender_viewport.png" alt=""><figcaption><p>Your viewport directly after opening the file.</p></figcaption></figure>
 
-3. Switch the viewport to `Pose Mode` in the dropdown menu at the topleft of the viewport. This will turn the armature red.
-4. Now, you need to **create your pose**. Before you do that, check the box below:
+3. Switch the viewport to `Pose Mode` in the dropdown menu at the topleft of the viewport, immediately below the "File" and "Edit" menus. This will turn the armature red.
+
+<figure><img src="../../../.gitbook/assets/pose mode.png" alt=""><figcaption><p>"Pose Mode" dropdown looks like this</p></figcaption></figure>
+
+3. Now, you need to **create your pose**. Before you do that, check the box below:
 
 <details>
 
@@ -111,7 +124,7 @@ If the written instructions aren't clear enough for you, check the screenshots b
 5. As of today (September 2023), we can only create poses and animations by **adjusting each bone by hand**. This is how:
    1. Select a bone by clicking on it (it will appear highlighted)
    2. Rotate the bone by either
-      * pressing `R` to enter roration mode, then moving the mouse to rotate the bone (read up on axis limitation in the expandable box above)\
+      * pressing `R` to enter rotation mode, then moving the mouse to rotate the bone (read up on axis limitation in the expandable box above)\
         **or**
       * selecting the `Rotate` tool from the toolbar on the left, then clicking and dragging along the coloured axes
    3. When you're done with this bone, position the next one.
@@ -126,7 +139,10 @@ You now need to create an animation that Wolvenkit can add into the existing fil
 
 1. In the panel at the bottom, click on `<No Action>` to select it.&#x20;
 2. In the Armature -> Animation Data panel, click on the **New** button.
-3. Now, we need to add keyframes, one for the **fallback position** and one for the **pose**.
+
+<figure><img src="../../../.gitbook/assets/armature to animation data.png" alt="" width="222"><figcaption><p>Armature -> Animation Data panel looks like this</p></figcaption></figure>
+
+1. Now, we need to add keyframes, one for the **fallback position** and one for the **pose**.
    1. Click into the main viewport next to the armature
    2. Press `I` to open the keyframe menu
    3. Press `W` to insert the whole character
@@ -138,7 +154,9 @@ You now need to create an animation that Wolvenkit can add into the existing fil
 
 <figure><img src="../../../.gitbook/assets/animations_blender_keyframes_2.png" alt=""><figcaption></figcaption></figure>
 
-4. Now, **rename** both your NLA strip **and** your animation to **`idle_stand_01`**.  This will overwrite the "Tabula Rasa" animation. (Find a list of animations and their associated names [here](../../references-lists-and-overviews/cheat-sheet-photo-mode.md#idle).)
+4. Now, **rename** both your NLA strip **and** your animation to **`idle_stand_01`**.  This will overwrite the "Tabula Rasa" animation. (Find a list of animations and their associated names [here](../../references-lists-and-overviews/cheat-sheet-photo-mode.md#idle).)\
+   \
+   If you aren't planning on replacing the in-game idle poses (i,e., Tabula Rasa), _it is still required that your NLA strip and your animation have the same name._
 
 #### This is important!
 
