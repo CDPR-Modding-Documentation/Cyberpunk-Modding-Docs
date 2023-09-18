@@ -395,15 +395,16 @@ If you already know which folder contains the broken mod, [skip to the next sect
 You can find a video of the process [below](./#bisect-video-demonstration).
 {% endhint %}
 
-To find out the **type** of broken mod, take each directory from the following list and complete the steps in the next paragraph after the table.
+To find out the **type** of broken mod, take each `Directory` from the following list and complete the steps in the next paragraph after the table.
 
 <table><thead><tr><th width="249">Kind of mod</th><th width="202">Directory</th><th>explanation</th></tr></thead><tbody><tr><td>.archive</td><td>\<code>mods</code></td><td>Redmod directory: contains .archive mods (in subfolders)</td></tr><tr><td>.archive</td><td>\<code>archive\pc\mod</code></td><td>Legacy directory: contains .archive mods</td></tr><tr><td>.lua (cyber engine tweaks)</td><td>\<code>bin\x64\plugins</code></td><td>Cyber Engine Tweaks</td></tr><tr><td>redscript</td><td><code>\r6\scripts</code></td><td>redscript mods</td></tr><tr><td>red4ext</td><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr></tbody></table>
 
-1. Rename the **game folder** (e.g. `/mods`) to a **backup folder** by appending an underscore (e.g. /`mods_`)
-2. To prevent errors, create a new empty game folder (e.g. `/mods`).
+1. Rename the **game folder** (e.g. `archive/pc/mod`) to a **backup folder** by appending an underscore (e.g. /`mod_`). \
+   _Only do this with the last subfolder in the path, the result should be `\archive\pc\mod_`, not `archive_\pc_\mod_\.`_
+2. To prevent errors, create a new empty game folder (e.g. `/archive/pc/mod).`
 3. Start the game. You will now run into one of these two scenarios:
    * **Your problem is gone:** Jackpot. This is the correct folder for [the next section](./#go-bisect).
-   * **Your problem is still there**: This folder is innocent. Proceed with the next entry.
+   * **Your problem is still there**: This folder is innocent. Proceed with the next entry from the table above.
 
 {% hint style="info" %}
 You can put the innocent folders back if you want: due to the way mods are loading, there won't be side-effects.
