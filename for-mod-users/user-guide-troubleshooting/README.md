@@ -399,12 +399,13 @@ To find out the **type** of broken mod, take each `Directory` from the following
 
 <table><thead><tr><th width="249">Kind of mod</th><th width="202">Directory</th><th>explanation</th></tr></thead><tbody><tr><td>.archive</td><td>\<code>mods</code></td><td>Redmod directory: contains .archive mods (in subfolders)</td></tr><tr><td>.archive</td><td>\<code>archive\pc\mod</code></td><td>Legacy directory: contains .archive mods</td></tr><tr><td>.lua (cyber engine tweaks)</td><td>\<code>bin\x64\plugins</code></td><td>Cyber Engine Tweaks</td></tr><tr><td>redscript</td><td><code>\r6\scripts</code></td><td>redscript mods</td></tr><tr><td>red4ext</td><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr></tbody></table>
 
-1. Rename the **game folder** (e.g. `archive/pc/mod`) to a **backup folder** by appending an underscore (e.g. /`mod_`). \
+1. Rename the game data folder ([**game folder**](#user-content-fn-2)[^2] for short – e.g. `archive/pc/mod`) to a [**backup folder**](#user-content-fn-3)[^3] by appending an underscore (e.g. /`mod_`). \
    _Only do this with the last subfolder in the path, the result should be `\archive\pc\mod_`, not `archive_\pc_\mod_\.`_
-2. To prevent errors, create a new empty game folder (e.g. `/archive/pc/mod).`
+2. The folder is now hidden from the game. Since it doesn't know, it will try to look inside anyway - create a new empty folder with the original name for that  (e.g. `/archive/pc/mod).`&#x20;
 3. Start the game. You will now run into one of these two scenarios:
-   * **Your problem is gone:** Jackpot. This is the correct folder for [the next section](./#go-bisect).
-   * **Your problem is still there**: This folder is innocent. Proceed with the next entry from the table above.
+   * **Your problem is gone:** Jackpot. This is the correct folder for [the next section](./#go-bisect): [#go-bisect](./#go-bisect "mention")\
+     Before you go there, you can restore all the other folders you moved, deleting the empty directories.
+   * **Your problem is still there**: This folder is innocent. Proceed with the next `directory` from the table above.
 
 {% hint style="info" %}
 You can put the innocent folders back if you want: due to the way mods are loading, there won't be side-effects.
@@ -412,17 +413,31 @@ You can put the innocent folders back if you want: due to the way mods are loadi
 
 ### Go bisect
 
-Congratulations, you have found which folder causes the problem — you're more than halfway there. All that's left is to find the broken mod. Here's how:
+Congratulations, you have found which folder causes the problem — you're more than halfway there. All that's left is to find the broken mod. Here's how.
 
-1. From your renamed folder `directory_`, move **half** of the mods over to the empty game folder `directory` so that they'll become active.
-2. Start the game. You will now run into one of two scenarios:
-   * **The error is gone:** The problematic mod is in your **backup folder**, but you now know which mods are okay.&#x20;
-     * If this is the first round: Go back to 1
-     * Otherwise: The broken mod was in the bunch that you moved out in the last round. When repeating step 1, you can ignore everything but the last bunch you moved.
-   * **The error is still there:** The problematic mod is your **game folder**.\
-     Move half of the mods out of the folder again. If this is not the first round, only do the last subset that you moved.
+{% hint style="info" %}
+The process is the same every time, no matter if you are moving files or folders.
+{% endhint %}
 
-Repeat this process until you've identified the mod that's crashing your game.
+{% hint style="info" %}
+If you don't vibe with text, there's a [#bisect-video-demonstration](./#bisect-video-demonstration "mention") below.
+{% endhint %}
+
+1. Switch on **half** of the mods from your [**backup folder**](#user-content-fn-4)[^4] by moving them back to the [**game folder**](#user-content-fn-5)[^5].
+2. Remember (roughly) which batch you moved (e.g. "everything after `E"` or "the first half")
+3. Start the game. You will now run into one of two scenarios:
+   * **The error is still there:** Progress! Go to Step 5.
+   * **The error is gone:** Progress too! Go to step 4
+4. **The error is gone:** You have identified which mods **aren't** the problem! Good! Do the following:
+   1. In your [**backup folder**](#user-content-fn-6)[^6], find the last batch of mods that you touched
+   2. **Half** of these go into the [**game folder**](#user-content-fn-7)[^7]
+   3. Go back to step 2 – you should now definitely see the problem again.
+5. **The error is still there:** You have narrowed it down, let's narrow it down further. \
+   Do the following:
+   1. In your [**game folder**](#user-content-fn-8)[^8]**,** find the last batch of mods that you touched
+   2. **Half** of these go back into the [**backup folder**](#user-content-fn-9)[^9]
+   3. Go back to step 2 for the next round – the problem might be there or not.
+6. Repeat this process until you know which mod is causing the crash. Then, you can either try to update it, or do a full uninstall
 
 #### Bisect: Video demonstration
 
@@ -449,8 +464,8 @@ If the mod in question is Cyber Engine Tweaks (CET), check the corresponding sub
 Normally, a mod should **just work**, as long as all of their requirements are working. If you aren't certain what that means, you can check [requirements-explained.md](../users-modding-cyberpunk-2077/requirements-explained.md "mention") for detes, or just follow the checklist below.
 
 * Make sure that you have [enabled mods](../../for-mod-creators/core-mods-explained/redmod/#installation) in your launcher.
-* If items or hairs aren't changing, you need to install [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/8127) (why?)[^2]
-* If materials aren't updating, you need to install [material override](https://www.nexusmods.com/cyberpunk2077/mods/5266) (why?)[^3]
+* If items or hairs aren't changing, you need to install [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/8127) (why?)[^10]
+* If materials aren't updating, you need to install [material override](https://www.nexusmods.com/cyberpunk2077/mods/5266) (why?)[^11]
 * If you already have all of that, [check the next section](./#only-parts-of-my-mods-are-working).
 
 {% hint style="info" %}
@@ -474,7 +489,7 @@ Here's what you can do:
 4. Check the other log files in the game directory ([here's a guide how](finding-and-reading-log-files.md))
 5. **Optional**: reach out to us on [Discord](https://discord.gg/redmodding) in #mod-troubleshooting
 
-#### Mod isn't working: CET[^4]
+#### Mod isn't working: CET[^12]
 
 You have installed Cyber Engine Tweaks, but it's not active / not letting you bind a key:&#x20;
 
@@ -532,11 +547,11 @@ This is the last resort and you do **not** need to do this — run [this script]
 {% hint style="danger" %}
 Unless you back them up, your mods will be **lost**. If you don't want that, make backups of the following folders:
 
-* [`/mods`](#user-content-fn-5)[^5]
-* [`/archive/pc/mod`](#user-content-fn-6)[^6]
-* [`/bin/x64/plugins/cyber_engine_tweaks`](#user-content-fn-7)[^7]
-* [`/r6/scripts`](#user-content-fn-8)[^8]
-* [`/r6/tweaks`](#user-content-fn-9)[^9]
+* [`/mods`](#user-content-fn-13)[^13]
+* [`/archive/pc/mod`](#user-content-fn-14)[^14]
+* [`/bin/x64/plugins/cyber_engine_tweaks`](#user-content-fn-15)[^15]
+* [`/r6/scripts`](#user-content-fn-16)[^16]
+* [`/r6/tweaks`](#user-content-fn-17)[^17]
 
 The [script](./#is-there-a-shortcut) linked above will do that for you.
 {% endhint %}
@@ -569,13 +584,13 @@ Will download < 1GB.&#x20;
 
 Rename or remove the following folders. If you do not have them, you don't need to do anything.
 
-<pre><code>/<a data-footnote-ref href="#user-content-fn-10">mods</a>
-/<a data-footnote-ref href="#user-content-fn-11">plugins</a>
-<a data-footnote-ref href="#user-content-fn-12">/engine</a>
+<pre><code>/<a data-footnote-ref href="#user-content-fn-18">mods</a>
+/<a data-footnote-ref href="#user-content-fn-19">plugins</a>
+<a data-footnote-ref href="#user-content-fn-20">/engine</a>
 /r6
-<a data-footnote-ref href="#user-content-fn-13">/red4ext</a>
-<a data-footnote-ref href="#user-content-fn-14">/archive/pc/mod</a>
-<a data-footnote-ref href="#user-content-fn-15">/bin/x64/plugins</a>
+<a data-footnote-ref href="#user-content-fn-21">/red4ext</a>
+<a data-footnote-ref href="#user-content-fn-22">/archive/pc/mod</a>
+<a data-footnote-ref href="#user-content-fn-23">/bin/x64/plugins</a>
 </code></pre>
 
 Afterwards, verify your files.
@@ -721,7 +736,7 @@ If it doesn't, check the next steps on the list.
 
 ### Make sure that all files in the game directory are writable
 
-Sometimes, files in your [Cyberpunk game directory](#user-content-fn-16)[^16] are set to read-only.&#x20;
+Sometimes, files in your [Cyberpunk game directory](#user-content-fn-24)[^24] are set to read-only.&#x20;
 
 #### **What kind of monster would do something like that???**
 
@@ -741,7 +756,7 @@ You can fix this either via [Windows Explorer](./#via-windows-explorer) or via [
 * type `cmd` and press Return to open the command line
 *   run the following command (replace the path with your actual game dir):
 
-    <pre><code>attrib -r "<a data-footnote-ref href="#user-content-fn-17">C:\Path\To\Cyberpunk</a>\*.*" /s
+    <pre><code>attrib -r "<a data-footnote-ref href="#user-content-fn-25">C:\Path\To\Cyberpunk</a>\*.*" /s
     </code></pre>
 
 #### Via Windows Explorer:&#x20;
@@ -761,7 +776,7 @@ You can fix it via [system console](./#via-commandline) or via [Windows Explorer
 #### Via commandline
 
 {% hint style="warning" %}
-In any of the commands below, you need to substitute `C:/Path/to/Cyberpunk2077` with the path to your [game directory](#user-content-fn-18)[^18].
+In any of the commands below, you need to substitute `C:/Path/to/Cyberpunk2077` with the path to your [game directory](#user-content-fn-26)[^26].
 {% endhint %}
 
 * Press Windows+R
@@ -811,9 +826,9 @@ This workflow is geared at the exact error above. If you have a different one, i
 
 ### 0. Make sure that you don't have multiple versions of [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780) installed
 
-In the past, Codeware wasn't a standalone mod, but was instead [**bundled**](#user-content-fn-19)[^19] inside of other mods. Since that is different now, the leftover versions can cause errors.
+In the past, Codeware wasn't a standalone mod, but was instead [**bundled**](#user-content-fn-27)[^27] inside of other mods. Since that is different now, the leftover versions can cause errors.
 
-1. Search your [Cyberpunk directory](#user-content-fn-20)[^20] for `Codeware`.&#x20;
+1. Search your [Cyberpunk directory](#user-content-fn-28)[^28] for `Codeware`.&#x20;
 2. If you have exactly one folder, this is not your problem — proceed to [the next step](./#1.-make-sure-that-you-have-the-latest-versions).
 3. Delete everything you have found.
 4. Reinstall the latest version of [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780) from Nexus.
@@ -862,11 +877,11 @@ You can zip the directory from the windows context menu, then delete its content
 
 #### Resetting the redscript cache
 
-* delete [`r6/cache`](#user-content-fn-21)[^21]
+* delete [`r6/cache`](#user-content-fn-29)[^29]
 * verify game files
 * create a new directory `r6/cache/modded` (this will prevent errors)
-* Make sure that `r6/scripts` [is empty](#user-content-fn-22)[^22]
-* Make sure that `red4ext/plugins` [is empty](#user-content-fn-23)[^23] (that the red4ext core frameworks aren't getting loaded)
+* Make sure that `r6/scripts` [is empty](#user-content-fn-30)[^30]
+* Make sure that `red4ext/plugins` [is empty](#user-content-fn-31)[^31] (that the red4ext core frameworks aren't getting loaded)
 
 {% hint style="success" %}
 Make sure your game starts up without error.
@@ -1216,50 +1231,66 @@ If the error isn't in any script files, you will have to **unbundle the .archive
 
 [^1]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
 
-[^2]: A mod that forces Cyberpunk to actually load the modded items instead of using the cache they had to put in for last-gen console support. For a technical explanation, check the wiki page about commonCookData.
+[^2]: `archive/pc/mod`
 
-[^3]: A mod that forces Cyberpunk to actually load the modded items instead of using the cache they had to put in for last-gen console support. For a technical explanation, check the wiki page about commonCookData.
+[^3]: e.g. _`\archive\pc\mod_`_
 
-[^4]: It's installed to bin\x64\plugins\cyber\_engine\_tweaks
+[^4]: e.g. _`\archive\pc\mod_`_
 
-[^5]: .archive mods in the redmod format
+[^5]: `archive/pc/mod`
 
-[^6]: .archive mods in the legacy format
+[^6]: e.g. _`\archive\pc\mod_`_
 
-[^7]: CET settings, radioExt files, Appearance Menu Mod settings _and user presets_
+[^7]: `archive/pc/mod`
 
-[^8]: Redscript directory
+[^8]: `archive/pc/mod`
 
-[^9]: TweakXL directory
+[^9]: e.g. _`\archive\pc\mod_`_
 
-[^10]: .archive mods in the redmod format
+[^10]: A mod that forces Cyberpunk to actually load the modded items instead of using the cache they had to put in for last-gen console support. For a technical explanation, check the wiki page about commonCookData.
 
-[^11]: an ancient plugin directory that hasn't been used for several game updates, but that can still cause trouble
+[^11]: A mod that forces Cyberpunk to actually load the modded items instead of using the cache they had to put in for last-gen console support. For a technical explanation, check the wiki page about commonCookData.
 
-[^12]: config and shader caches
+[^12]: It's installed to bin\x64\plugins\cyber\_engine\_tweaks
 
-[^13]: red4ext frameworks and associated data
+[^13]: .archive mods in the redmod format
 
-[^14]: .archive mods in the legacy format, not redmod
+[^14]: .archive mods in the legacy format
 
-[^15]: LUA plugins such as cyber engine tweaks
+[^15]: CET settings, radioExt files, Appearance Menu Mod settings _and user presets_
 
-[^16]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+[^16]: Redscript directory
 
-[^17]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+[^17]: TweakXL directory
+
+[^18]: .archive mods in the redmod format
+
+[^19]: an ancient plugin directory that hasn't been used for several game updates, but that can still cause trouble
+
+[^20]: config and shader caches
+
+[^21]: red4ext frameworks and associated data
+
+[^22]: .archive mods in the legacy format, not redmod
+
+[^23]: LUA plugins such as cyber engine tweaks
+
+[^24]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+[^25]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
 
 
 
-[^18]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+[^26]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
 
 
 
-[^19]: as in, "a subfolder in the folder of"
+[^27]: as in, "a subfolder in the folder of"
 
-[^20]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+[^28]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
 
-[^21]: The script directory for non-Redmods
+[^29]: The script directory for non-Redmods
 
-[^22]: If it isn't, rename the entire directory to scripts\_ and create a new empty folder in its place
+[^30]: If it isn't, rename the entire directory to scripts\_ and create a new empty folder in its place
 
-[^23]: If it isn't, rename the entire directory to plugins\_ and create a new empty folder in its place
+[^31]: If it isn't, rename the entire directory to plugins\_ and create a new empty folder in its place
