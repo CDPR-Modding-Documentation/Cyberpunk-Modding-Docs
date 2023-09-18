@@ -142,17 +142,18 @@ You now need to create an animation that Wolvenkit can add into the existing fil
 
 <figure><img src="../../../.gitbook/assets/armature to animation data.png" alt="" width="222"><figcaption><p>Armature -> Animation Data panel looks like this</p></figcaption></figure>
 
-1. Now, we need to add keyframes, one for the **fallback position** and one for the **pose**.
-   1. Click into the main viewport next to the armature
-   2. Press `I` to open the keyframe menu
-   3. Press `W` to insert the whole character
-   4. Press the right arrow to select the next keyframe
-   5. Press `I` and then `W` again
-   6. After you have done that, click on the `Push Down Action` button
+3. Now, we need to add keyframes, one for the **fallback position** and one for the **pose**.
+   1. Make sure that the keyframe selected in the animation timeline is 0 (see "Animation Timeline" screenshot below)
+   2. Click into the main viewport next to the armature
+   3. Press `I` to open the keyframe menu
+   4. Press `W` to insert the whole character
+   5. Press the right arrow to select the next keyframe
+   6. Press `I` and then `W` again
+   7. After you have done that, click on the `Push Down Action` button
 
 <figure><img src="../../../.gitbook/assets/animations_blender_keyframe_1.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/animations_blender_keyframes_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/animations_blender_keyframes_2.png" alt=""><figcaption><p>Animation timeline</p></figcaption></figure>
 
 4. Now, **rename** both your NLA strip **and** your animation to **`idle_stand_01`**.  This will overwrite the "Tabula Rasa" animation. (Find a list of animations and their associated names [here](../../references-lists-and-overviews/cheat-sheet-photo-mode.md#idle).)\
    \
