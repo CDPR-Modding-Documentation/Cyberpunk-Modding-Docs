@@ -186,7 +186,7 @@ If that doesn't help, it's time for more detailed troubleshooting:
 * If you are on Linux, make sure to double-check the [launch options](../users-modding-cyberpunk-2077/modding-on-linux.md), as Steam sometimes resets these between updates
 * if you don't have red4ext/logs/red4ext.log, then RED4ext doesn't work, you have to update / fix RED4ext&#x20;
 * if you have red4ext/logs/red4ext.log, then look inside, it will tell you which mods aren't compatible with the current game patch and may be the cause of this issue&#x20;
-* if that doesn't help, try [resetting redscript](./#3.-reset-redscript) (you will need to verify your game files).&#x20;
+* if that doesn't help, go to [#3.-reset-redscript](./#3.-reset-redscript "mention") in the corresponding section (you will need to verify your game files).&#x20;
 
 If that doesn't solve your problem, you can&#x20;
 
