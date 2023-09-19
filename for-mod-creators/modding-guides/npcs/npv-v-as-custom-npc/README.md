@@ -68,7 +68,7 @@ To create a face, we need to know the following numeric values from the characte
 * Jaw
 * Ears
 
-Find the mirror in V's apartment and note them down, or load a savegame in [Cybercat](https://www.nexusmods.com/cyberpunk2077/mods/718).
+Find the mirror in V's apartment and note them down.
 
 ### Setting up the files
 
