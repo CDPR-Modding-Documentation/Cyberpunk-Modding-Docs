@@ -78,7 +78,7 @@ Find the mirror in V's apartment and note them down.
 As a rule of thumb, I'll document the process for an NPV with a female body gender, because ~~as we all know, the other doesn't exist~~ I have one of those. In doubt, double-check paths.
 {% endhint %}
 
-1. Download the example project of files from mana's mega or Nexus and load up your Wolvenkits
+1. Download the example project of files from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328) and load up your Wolvenkits
 2. In **Windows Explorer**, find the prepared folders per body gender:
 
 <table><thead><tr><th width="179">body gender</th><th>file path</th></tr></thead><tbody><tr><td>female</td><td><code>tutorial\npv\your_female_character</code></td></tr><tr><td>male</td><td><code>tutorial\npv\your_male_character</code></td></tr></tbody></table>
