@@ -4,16 +4,26 @@ description: 'Step 1: How to generate your V''s custom head mesh'
 
 # NPV: Preparing the head in Blender
 
+## **Summary**
+
 **Created by @manavortex**\
 **Published May 13 2023**
 
-{% hint style="info" %}
 This page is a part of the [NPV guide](./). It will show you how to create your V's head in Blender.&#x20;
 
-You need the **prepared Wolvenkit project**, which is linked on the [main page](./#preparation), and [Blender](https://www.blender.org/download/). This has been tested with 3.5.1, but anything >= 3.4 should work.
-{% endhint %}
+### Prerequisites
+
+* [ ] You have downloaded the prepared Wolvenkit Project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328)
+* [ ] You have [Blender](https://www.blender.org/download/) installed \
+  _(confirmed working on 3.5.1 and 3.6, **should** work with >= 3.4)_
 
 In this section, we will be moving/deleting files. You can complete these steps in Wolvenkit or in the Windows File Explorer.
+
+{% hint style="warning" %}
+It's important that you leave the file structure **as it is**. Moving or renaming files will confuse Wolvenkit and break the example project.&#x20;
+
+The final section of [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention") tells you how to safely move files.
+{% endhint %}
 
 ## Step 1: Getting head
 
