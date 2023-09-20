@@ -4,6 +4,15 @@ description: Item spawn codes and how they link to appearances
 
 # Spawn Codes (BaseIDs/Hashes)
 
+## Previews
+
+| List                                                                                        | Description                                                   |
+| ------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| [Steam: garments](https://steamcommunity.com/sharedfiles/filedetails/?id=2328941813) (m!V)  | Spawn codes to in-game names, with many screenshots on masc V |
+| [cp2077.8713.su](https://cp2077.8713.su/) (f!V)                                             | Screenshots on femme V with spawn codes                       |
+| [Steam: Cyberware](https://steamcommunity.com/sharedfiles/filedetails/?id=2343787921)       |                                                               |
+| [Steam: Quickhacks](https://steamcommunity.com/sharedfiles/filedetails/?id=2350003795)      |                                                               |
+
 ## Lists
 
 A selection of lists for looking up item codes. Alternatively, you can browse through the game's files, or search e.g. the [fandom](https://cyberpunk.fandom.com/wiki/Cyberpunk\_2077\_Clothing) wiki.
