@@ -16,7 +16,7 @@ To see a minimal example in action, see the guide for [creating custom props](..
 
 ## Mesh/Component entity (simple entity)
 
-The minimal way of adding something (e.g. meshes) to the game. This entity can be directly spawned (e.g. [via AMM](../modding-guides/everything-else/custom-props.md#without-variants)) or referenced from within[ app files](appearance-.app-files.md).
+The minimal way of adding something (e.g. meshes) to the game. This entity can be directly spawned (e.g. [via AMM](../modding-guides/everything-else/custom-props.md#without-variants)) or referenced from within[ ](appearance-.app-files.md)[appearance-.app-files.md](appearance-.app-files.md "mention").
 
 <figure><img src="../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>This entity adds four physical mesh components, which will appear when it is spawned. It does not reference an .app file and does not have appearances.</p></figcaption></figure>
 

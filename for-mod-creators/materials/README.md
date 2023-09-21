@@ -45,7 +45,7 @@ Not every parameter of a shader can be configured: since skin always has subsurf
 For details how materials are used on a mesh, see the [corresponding wiki page](../files-and-what-they-do/3d-objects-.mesh-files.md), or learn how materials can be [loaded externally](../files-and-what-they-do/3d-objects-.mesh-files.md#material-reference-reusing-materials) from [material template files](re-using-materials-.mi.md).&#x20;
 {% endhint %}
 
-**In the context of Cyberpunk**, a material is the thing that lets the shader define the surface properties of a [mesh](../files-and-what-they-do/3d-objects-.mesh-files.md)[3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention"). Typically, you create a local instance, which will then pull in a shader via `baseMaterial`.
+**In the context of Cyberpunk**, a material is the thing that lets the shader define the surface properties of a [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention"). Typically, you create a local instance, which will then pull in a shader via `baseMaterial`.
 
 The property `baseMaterial` can point at a `.mt` / `.remt` file directly, or to an intermediary `.mi` file:
 

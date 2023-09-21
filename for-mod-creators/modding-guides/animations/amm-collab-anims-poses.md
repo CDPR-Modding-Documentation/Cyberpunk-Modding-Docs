@@ -22,7 +22,7 @@ This guide will teach you how to add custom animations to **AppearanceMenuMod**'
 {% hint style="danger" %}
 This guide will teach you how to hook up an existing .anims file to AMM. If you don't have one yet, you can learn [how to make your own](poses-animations-make-your-own.md).
 
-To add poses to photo mode, check the [corresponding guide](broken-reference).
+To add poses to photo mode, check [archivexl-adding-photo-mode-poses.md](archivexl-adding-photo-mode-poses.md "mention").
 {% endhint %}
 
 {% hint style="info" %}

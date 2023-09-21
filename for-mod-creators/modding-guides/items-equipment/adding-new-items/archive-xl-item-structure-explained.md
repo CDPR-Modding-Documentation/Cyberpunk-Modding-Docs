@@ -341,7 +341,7 @@ For our purposes it's enough to say that you can **define** your individual appe
    3. Select the new item, open `values`, and select `MultilayerSetup`.
    4. Set `baseMaterial/DepotPath` to the `.mlsetup` file that you want.
 
-&#x20;For further information and guides, check [here](../editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance) or the [mesh knowledge page](broken-reference).
+&#x20;For further information and guides, check [here](../editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance) or see [3d-objects-.mesh-files.md](../../../files-and-what-they-do/3d-objects-.mesh-files.md "mention").
 
 ## The final result
 
