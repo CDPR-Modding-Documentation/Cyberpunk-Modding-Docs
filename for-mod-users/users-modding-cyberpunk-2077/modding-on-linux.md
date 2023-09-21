@@ -58,19 +58,41 @@ To configure the necessary parameters, you can use the app Protontricks, which y
 
 <figure><img src="../../.gitbook/assets/linux_modding_5.png" alt=""><figcaption></figcaption></figure>
 
-6. Add an override:\
-   Switch to the libraries tab and open the drop down menu
+6. Add an override: Check `either` of the blocks below
 
-<figure><img src="../../.gitbook/assets/linux_modding_6.png" alt=""><figcaption></figcaption></figure>
+If you would rather do it via library, check the expandable block [below](modding-on-linux.md#via-library).
 
-7. Select "version" and "Add"
+<figure><img src="../../.gitbook/assets/protontricks_dll_1.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/linux_modding_7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/protontricks_dll_2.png" alt=""><figcaption></figcaption></figure>
 
-8. Repeat the process for `d3dcompiler_47`
-9. Apply via "OK". You're now done with Protontricks.
-10. Switch to steam and make sure that the launch options are set. They should look like this:\
-    `WINEDLLOVERRIDES="winmm.dll,version=n,b" %command%`
+<figure><img src="../../.gitbook/assets/protontricks_dll_3.png" alt=""><figcaption></figcaption></figure>
+
+<details>
+
+<summary>via Library</summary>
+
+\
+Switch to the libraries tab and open the drop down menu
+
+<img src="../../.gitbook/assets/linux_modding_6.png" alt="" data-size="original">
+
+Select "version" and "Add"
+
+<img src="../../.gitbook/assets/linux_modding_7.png" alt="" data-size="original">
+
+
+
+Repeat the process for `d3dcompiler_47`
+
+
+
+</details>
+
+Apply via "OK". You're now done with Protontricks.
+
+8. Switch to steam and make sure that the launch options are set. They should look like this:\
+   `WINEDLLOVERRIDES="winmm.dll,version=n,b" %command%`
 
 <figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption></figcaption></figure>
 
