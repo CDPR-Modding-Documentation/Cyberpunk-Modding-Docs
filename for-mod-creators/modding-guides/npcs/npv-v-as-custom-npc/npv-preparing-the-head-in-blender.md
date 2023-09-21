@@ -36,7 +36,7 @@ The final section of [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md
 {% hint style="info" %}
 **It's too many of them!**
 
-True! That's because I included **all** options for any given V. But don't worry: after you have deleted the ones that you won't be using, you should be left with a maximum of **7** files for female V and 8 files for male V.
+True! That's because I included **all** options for any given V. But don't worry: after you have deleted the ones that you won't be using, you should be left with a maximum of 13 files for female V and 14 files for male V.
 {% endhint %}
 
 I have included all meshes and morphtargets from the game files. We'll now thin out the options, deleting those parts that your NPV won't be using.
@@ -174,7 +174,7 @@ If you have already changed your structure (by re-naming your folders), you need
 If you've been previously afraid of scripting: This is a good place to stop! :))
 {% endhint %}
 
-8. Find line 32 and following in the script, and alter the values to those of your V (which you get from **the character preset**, see [here](npv-preparing-the-head-in-blender.md#the-character-preset) for further explanation).&#x20;
+8. Find line 26 and following in the script, and alter the values to those of your V (which you get from **the character preset**, see [here](npv-preparing-the-head-in-blender.md#the-character-preset) for further explanation).&#x20;
 
 <figure><img src="../../../../.gitbook/assets/npv_blender_01_apply_shapekeys.png" alt=""><figcaption></figcaption></figure>
 
