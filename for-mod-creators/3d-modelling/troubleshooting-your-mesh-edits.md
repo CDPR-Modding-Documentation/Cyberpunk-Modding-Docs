@@ -184,9 +184,13 @@ If you have [added the item](../modding-guides/items-equipment/adding-new-items/
 To check if it's this, equip **only** the edited item. If it breaks as soon as you put on another clothing item with [garment supports](garment-support-how-does-it-work.md#the-algorithm), then the solution below applies.
 {% endhint %}
 
-Delete GarmentSupport from the mesh:
-
-<figure><img src="../../.gitbook/assets/mesh_editing_parameters.png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../../.gitbook/assets/garment_support_broken.png" alt=""><figcaption></figcaption></figure>
+
+#### Option 1 (likely to work): Import your mesh with garment supports
+
+On the .glb import setting, check the "[Import Garment Support](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export/import-settings#import-garment-support)" box.&#x20;
+
+#### Option 2 (guaranteed to work): delete GarmentSupport from the mesh
+
+<figure><img src="../../.gitbook/assets/mesh_editing_parameters.png" alt=""><figcaption><p>This will break automatic shrinking when you put clothes over your item. But hey, if the alternative is a broken mess…</p></figcaption></figure>
 
