@@ -26,7 +26,7 @@ Welcome to the **equipment** section. Here, you can find guides on how to edit e
 
 ## Wait, that's not what I want!
 
-This section contains hands-on guide for **editing people**.&#x20;
+This section contains hands-on guide for **editing equipment**.&#x20;
 
 If you want specific information (where is...), check here:&#x20;
 
@@ -35,7 +35,7 @@ If you want specific information (where is...), check here:&#x20;
 * [spawn-codes-baseids-hashes.md](../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention")
 * [variants-and-appearances.md](../../references-lists-and-overviews/equipment/variants-and-appearances.md "mention")
 
-We also have a section on [3d-modelling](../../3d-modelling/ "mention"), where you can find specific knowledge on how to edit objects.
+We also have a section on [3d-modelling](../../3d-modelling/ "mention"), where you can find specific knowledge on how to edit objects. For a detailed step-by-step guide, see [r-and-r-refitting-step-by-step.md](recolours-and-refits/r-and-r-refitting-step-by-step.md "mention").
 
 For help about editing textures, see the [textures-and-luts](../textures-and-luts/ "mention") section.
 
