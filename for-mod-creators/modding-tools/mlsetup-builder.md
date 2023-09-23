@@ -73,6 +73,10 @@ Congratulations — you now have an `.mlsetup`! If you pack your mod and launch 
 
 This is where you can load models from the game for a direct preview which layer will affect which parts: simply click on the "Library" button.
 
+#### MLSB Library
+
+<figure><img src="../../.gitbook/assets/mlsb_library_tab.png" alt=""><figcaption></figcaption></figure>
+
 Here, you can either browse to your model directly, or use text search:
 
 <figure><img src="../../.gitbook/assets/mlsb_library.png" alt=""><figcaption></figcaption></figure>
