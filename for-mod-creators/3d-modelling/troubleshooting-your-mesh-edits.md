@@ -12,12 +12,24 @@ You get an error message like this:
 
 `Message: One or more Geometry in provided GLTF doesn't contain Tangents data. Tangents must be included within glTF files.`
 
+#### Use the Cyberpunk Blender IO Plugin to export
+
+Quick, easy, recommended: the plugin will tell you exactly what's broken and how to fix it. Download it [here](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases).
+
+Alternatively, you can check by hand:
+
+<details>
+
+<summary>Expand if you like to suffer</summary>
+
 1. Check if your mesh is **triangulated**. If you aren't sure whether or not it is, go into edit mode, select everything, and go to Face -> Triangulate (Shortcut: Ctrl+T)
-2. If that doesn't change anything, make sure that you have the correct box checked upon export:\
+2. Check your export settings and make sure that you have the correct box checked upon export:\
    ![](../../.gitbook/assets/3d\_troubleshooting\_export\_tangents.png)
-3. If that's not the issue either, check that each of your submeshes has an UV map: \
+3. If the error persists, check that each of your submeshes has an UV map: \
    ![](../../.gitbook/assets/mesh\_troubleshooting\_uv\_map.png)\
    If not, you have to create one (and probably UV unwrap your mesh).
+
+</details>
 
 ### Bone: neutral\_bone not present in export Rig(s)/Import Mesh
 
@@ -61,7 +73,14 @@ t0_005_pwa_body__t_bug.mesh
 t0_005_pma_body__t_bug.mesh
 ```
 
-Try using the Netrunner body as a base for import. To have more than one submesh, you can simply duplicate the existing one and adjust the naming, e.g. `submesh_01_LOD_1`, `submesh_02_LOD_1`
+Try using the Netrunner body as a base for import. You can use Wolvenkit's [Select Base Mesh](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export/import-settings#select-base-mesh) feature for this.
+
+{% hint style="info" %}
+To create more submeshes, you can either&#x20;
+
+* Try the [Preserve Submesh Order](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export/import-settings#preserve-submesh-order) import setting
+* create more submeshes with the correct naming in Blender, e.g. `submesh_01_LOD_1`, `submesh_02_LOD_1`
+{% endhint %}
 
 #### Option 3: Transferring bones
 
