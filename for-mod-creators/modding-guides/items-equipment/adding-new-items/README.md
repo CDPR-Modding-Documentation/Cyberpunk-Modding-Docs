@@ -181,7 +181,9 @@ Items.my_custom_shirt_blueblack:
 
 ### Step 2: Add it to the rootentity.ent
 
-Find the step-by-step guide in the [root entity section](archive-xl-item-structure-explained.md#root-entity-making-changes) on the "[Item structure explained](archive-xl-item-structure-explained.md)" page
+Find the step-by-step guide in the [root entity section](archive-xl-item-structure-explained.md#root-entity-making-changes) on the "[Item structure explained](archive-xl-item-structure-explained.md)" page.
+
+If you want to add a [dynamic appearance](../../../core-mods-explained/archivexl.md#dynamic-variants), make sure to add the `DynamicAppearance` tag here.
 
 ### Step 3: Add it to my\_custom\_shirt.app
 

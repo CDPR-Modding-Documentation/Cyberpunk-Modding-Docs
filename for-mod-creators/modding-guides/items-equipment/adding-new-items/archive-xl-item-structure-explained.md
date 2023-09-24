@@ -171,6 +171,14 @@ An entry looks like this:
 
 <figure><img src="../../../../.gitbook/assets/archivexl_item_structure_root_entity.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="success" %}
+If you don't know what this means, skip it and wait for the full step-by-step guide!
+
+For using [dynamic appearances](../../../core-mods-explained/archivexl.md#dynamic-variants), you only need one appearance here, which must match the field `appearanceName` in the `.yaml` up to the variant separator `!`\
+\
+Make sure to add the `DynamicAppearance` tag here.
+{% endhint %}
+
 #### Suffixes
 
 The root entity's `name` field is where you would put **suffixes** for different appearance variants.&#x20;
@@ -234,6 +242,13 @@ By bundling them in this file, we save ourselves a lot of copy-pasting inside th
 
 The component's `name` will be used in `appearance.app`'s materialOverride array (see [below](archive-xl-item-structure-explained.md#appearance-making-changes))
 
+{% hint style="success" %}
+If you don't know what this means, skip it and wait for the full step-by-step guide!
+
+If you're using [dynamic appearances](../../../core-mods-explained/archivexl.md#dynamic-variants), you can use **property interpolation** in paths. For example, \*`p{gender}a` will resolve to `pwa` or `pma`, based on V's body gender.\
+Read more about this on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki#property-interpolation).
+{% endhint %}
+
 {% hint style="info" %}
 **Would you like to know more?**&#x20;
 
@@ -272,6 +287,12 @@ For ArchivXL >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/releases/ta
 | `{gender}`     | m or w depending on V's body gender                                                                                         |
 | `{skin_color}` | [skin color appearance name](../../../references-lists-and-overviews/body/cheat-sheet-face-and-skin.md#skin-tones-by-index) |
 | `{hair_color}` | [hair color appearance name](../../../references-lists-and-overviews/body/hair.md#name-in-files-by-index)                   |
+
+{% hint style="success" %}
+If you don't know what this means, skip it and wait for the full step-by-step guide!
+
+For using [dynamic appearances](../../../core-mods-explained/archivexl.md#dynamic-variants), you only need one appearance here. In this case, **components** will be **ignored** — make sure to put them all into your mesh\_entity!
+{% endhint %}
 
 #### Appearance: Making changes
 
