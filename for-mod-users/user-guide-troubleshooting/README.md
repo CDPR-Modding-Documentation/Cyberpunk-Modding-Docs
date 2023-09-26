@@ -100,15 +100,20 @@ Otherwise:
 * If the game never even starts, see [#crash-on-startup](./#crash-on-startup "mention")
 * If the game crashes when you're trying to load a save, see [#crash-on-loading-a-save](./#crash-on-loading-a-save "mention")
 
-#### Redmod / Vortex on 2.0
+#### 2.0 / PL: Missing tweakdb.bin or inaccessible memory
 
-If the game complains about attempting to read inaccessible memory, it might be the new one.&#x20;
+```
+Cyberpunk 2077 encountered an error caused by a corrupted or missing TweakDB file and will now be forced to close
+```
+
+If you run into the error above, or if the game complains about attempting to read inaccessible memory, do this:&#x20;
 
 1. Go to your [Cyberpunk directory](#user-content-fn-1)[^1] and find the folder`r6\cache`.&#x20;
 2. Find the file`tweakDB.bin` and copy it (`Ctrl+C`)
 3. `In r6\cache`, browse to the folder `modded` (create it if it doesn't exist)&#x20;
 4. paste `tweakDB.bin` here (`Ctrl+V`)
 5. If asked to overwrite, select `Yes`
+6. If you have Phantom Liberty, repeat the process with `tweakdb_ep1.bin`
 
 #### If that doesn't fix it
 
