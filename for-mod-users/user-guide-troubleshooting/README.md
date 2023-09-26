@@ -585,8 +585,8 @@ The instructions below tell you which folders **not** to delete. Delete everythi
 
 1. Go to the Cyberpunk 2077 install directory
 2. Delete everything **except for** the folder `archive`
-3. Inside `archive`, delete everything but the folder `pc`
-4. Inside `pc`, delete everything but the folder `content`
+3. Inside `archive`, delete everything **but** the folders `pc`
+4. Inside `pc`, delete everything but the folders `content` and `ep1`
 5. Verify your files
 
 ### Modular / minimal download (download <1GB
