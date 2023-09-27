@@ -72,4 +72,4 @@ You no longer need suffixes in the .yaml. However, if you want to use suffixes f
 Here's an overview of how the dynamic variants work. By comparison, [this](../modding-guides/items-equipment/adding-new-items/#diagram) is the old diagram. \
 Especially for multiple items, the new way is much faster.
 
-<figure><img src="../../.gitbook/assets/archivexl_dynamic_appearances.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/archiveXL_substitution.png" alt=""><figcaption></figcaption></figure>

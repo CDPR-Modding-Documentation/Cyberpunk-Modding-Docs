@@ -6,7 +6,14 @@ description: Step-by-step guide on refitting a mesh - for newbies!
 
 This page is a subsection of the [Netrunning Suit guide](./). It will teach you how to do custom refits in Blender.
 
-**Assumed level of skill**: You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on Discord so that I can improve it.&#x20;
+#### **Assumed level of skill**:&#x20;
+
+You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on [Discord](https://discord.gg/redmodding) so that I can improve it.&#x20;
+
+#### **Time to complete:**&#x20;
+
+* < 1h for import, export and setup (< 5 min once you know how it works)
+* as long as you want on the actual editing&#x20;
 
 {% hint style="info" %}
 You don't **need** the [Wolvenkit Blender Add-on](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) for this, but it is really cool, and if you want to keep editing Cyberpunk stuff, you should definitely install it.
@@ -28,7 +35,7 @@ Check the Nexus page of the body mod you're using — there's a good chance that
 
 It might be easier and faster to simply export the base body.&#x20;
 
-1. Switch to the [Mod Browser](../../analysing-other-mods/#step-1-switch-to-mod-browser)
+1. Switch to the [Mod Browser](../../../modding-cyberpunk-2077/analysing-other-mods.md#step-1-switch-to-mod-browser)
 2. In the Wolvenkit search bar, find the base body mesh:
    * Female body gender: `base\characters\common\player_base_bodies\player_female_average\t0_000_pwa_base__full.mesh`
    * Male body gender: `base\characters\common\player_base_bodies\player_man_average\t0_000_pma_base__full.mesh`
@@ -180,9 +187,19 @@ As of 8.9.1, Garment Support is still experimental. If your meshes look like str
 2. Do the same for the second mesh. (As of 09/09/2023, the emissive component doesn't have garment support, but eventually I will make this work)
 3. Import both glb files.
 
-If everything went well, you can now see your reshaped meshes in Wolvenkit. If not, you can refer to the [Export/Import](../../../3d-modelling/exporting-and-importing-meshes/) guide.&#x20;
+## OK, what now?
 
-Should anything be wrong with your mesh, you can check the corresponding [troubleshooting guide](../../../3d-modelling/troubleshooting-your-mesh-edits.md).
+Time to test! Install and launch your Wolvenkit project:
+
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FUs6kZEwmFHhn8f8QCIKb%2Fwolvenkit_install_and_launch.png?alt=media&#x26;token=66c24ef4-0525-4476-80a2-aaf461f445ac" alt=""><figcaption></figcaption></figure>
+
+If you did everything right, your refit will now be active. If not, it's troubleshooting time.&#x20;
+
+* Check the [Export/Import](../../../3d-modelling/exporting-and-importing-meshes/) guide for step-by-step instructions
+* If anything is wrong with your mesh, head to [troubleshooting-your-mesh-edits.md](../../../3d-modelling/troubleshooting-your-mesh-edits.md "mention")
+* Check [r-and-r-troubleshooting.md](r-and-r-troubleshooting.md "mention") for tutorial-specific issues
+
+Otherwise:
 
 {% hint style="success" %}
 Happy modding, choomba!

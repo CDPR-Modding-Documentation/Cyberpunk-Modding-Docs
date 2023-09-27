@@ -14,7 +14,7 @@ This guide will walk you through **adding poses** to Cyberpunk 2077's photo mode
 **Difficulty:** You know how to read ;)&#x20;
 
 {% hint style="danger" %}
-This guide will teach you how to hook up an existing .anims file to the photo mode. If you don't have an .anims file, you can find a dummy file in the AMM [pose guide](../animations/amm-collab-anims-poses.md), or you can learn [how to make your own](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/).
+This guide will teach you how to hook up an existing .anims file to the photo mode. If you don't have an .anims file, you can find a dummy file in the AMM [pose guide](amm-collab-anims-poses.md), or you can learn [how to make your own](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/).
 {% endhint %}
 
 **It uses the following versions:**
@@ -80,7 +80,7 @@ localization:
 You have to adjust the paths under `set` and `en-us` to your new changed folder structure.
 
 {% hint style="info" %}
-If you want to support more body types from the Nibbles Replacer, you can [switch to the Mod Browser](../analysing-other-mods/) and enter the following search query to find all the entities: \
+If you want to support more body types from the Nibbles Replacer, you can [switch to the Mod Browser](../../modding-cyberpunk-2077/analysing-other-mods.md) and enter the following search query to find all the entities: \
 `base\characters\entities\photomode_replacer > .ent`
 {% endhint %}
 
@@ -104,7 +104,7 @@ You can name this file whatever you want, just make sure that you change the pat
 
 ### The .anim file(s)
 
-If you have created your own animations (as a [replacer](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/) or for [AMM](../animations/amm-collab-anims-poses.md)), then you are already familiar with this kind of file.  If not, it is time to appropriate one from the game files - pick any, since the process is just like with a replacer.
+If you have created your own animations (as a [replacer](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/) or for [AMM](amm-collab-anims-poses.md)), then you are already familiar with this kind of file.  If not, it is time to appropriate one from the game files - pick any, since the process is just like with a replacer.
 
 Just as a reminder, here's how they look:
 
