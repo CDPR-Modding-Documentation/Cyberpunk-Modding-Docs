@@ -11,6 +11,8 @@ If you are on **Linux/SteamDeck**, make sure to follow [this guide](../users-mod
 
 If your game is pirated, [go here](./#you-pirated-the-game).
 
+If you are experiencing crashes caused by CET try running Cyberpunk in [compatibility mode](https://www.online-tech-tips.com/computer-tips/run-older-programs-in-compatibility-mode-in-windows-11-10/)
+
 If you can't open your overlay, check [#reset-your-keybind](users-troubleshooting-cet.md#reset-your-keybind "mention")&#x20;
 
 If your CET just stopped working (without a game update) or if you've been sent here to do a clean install, see below how to [#reinstall-cet](users-troubleshooting-cet.md#reinstall-cet "mention")
