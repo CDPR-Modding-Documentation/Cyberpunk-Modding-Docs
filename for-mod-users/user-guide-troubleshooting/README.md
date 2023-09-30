@@ -153,55 +153,37 @@ At the current time (09/2023, before PL), that has been confirmed to affect thos
 
 <details>
 
-<summary>Uninstalling Immersive Rippers (2.0 compatible - not for Epic)</summary>
+<summary>Uninstalling Immersive Rippers </summary>
 
 `Error reason: Unhandled exception Expression: EXCEPTION_ACCESS_VIOLATION (0xC0000005) Message: The thread attempted to read inaccessible data at 0x10. File: <Unknown>(0)`
 
 1. Run [mod remover](https://www.nexusmods.com/cyberpunk2077/mods/8597?tab=description) (Usage instructions are on the modpage itself)
 2. Downgrade your game to [1.63\_hotfix\_1](../users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
-3. Install [immersive rippers](https://www.nexusmods.com/cyberpunk2077/mods/7064?tab=files\&file\_id=47612) and all of its dependencies and all of **their** dependencies
+3. Install [Immersive Rippers](https://www.nexusmods.com/cyberpunk2077/mods/7064?tab=files\&file\_id=47612) and all of its dependencies and all of **their** dependencies
 4. Load into your previously-crashing save&#x20;
 5. Move at least 100m away from the closest ripper&#x20;
-6. Copy the following commands:
-
-for 1.6
+6. Copy the following commands and run them in the CET-Console:
 
 ```
-﻿Game.SetDebugFact("bls_ina_se1_ripperdoc_01_default_on", 1);
-Game.SetDebugFact("cct_dtn_ripdoc_01_default_on", 1);
-Game.SetDebugFact("hey_spr_ripperdoc_01_default_on", 1);
-Game.SetDebugFact("pac_wwd_ripdoc_01_default_on", 1);
-Game.SetDebugFact("std_arr_ripperdoc_01_default_on", 1);
-Game.SetDebugFact("std_rcr_ripperdoc_01_default_on", 1);
-Game.SetDebugFact("wat_kab_ripperdoc_01_default_on", 1);
-Game.SetDebugFact("wat_kab_ripperdoc_03_default_on", 1);
-Game.SetDebugFact("wat_nid_ripperdoc_01_default_on", 1);
-Game.SetDebugFact("wbr_hil_ripdoc_01_default_on", 1);
-Game.SetDebugFact("wbr_jpn_ripdoc_01_default_on", 1);
-Game.SetDebugFact("wbr_jpn_ripdoc_02_default_on", 1);
+Game.SetDebugFact("bls_ina_se1_ripperdoc_01_default_on", 0)
+Game.SetDebugFact("cct_dtn_ripdoc_01_default_on", 0)
+Game.SetDebugFact("hey_spr_ripperdoc_01_default_on", 0)
+Game.SetDebugFact("pac_wwd_ripdoc_01_default_on", 0)
+Game.SetDebugFact("std_arr_ripperdoc_01_default_on", 0)
+Game.SetDebugFact("std_rcr_ripperdoc_01_default_on", 0)
+Game.SetDebugFact("wat_kab_ripperdoc_01_default_on", 0)
+Game.SetDebugFact("wat_kab_ripperdoc_03_default_on", 0)
+Game.SetDebugFact("wat_nid_ripperdoc_01_default_on", 0)
+Game.SetDebugFact("wbr_hil_ripdoc_01_default_on", 0)
+Game.SetDebugFact("wbr_jpn_ripdoc_01_default_on", 0)
+Game.SetDebugFact("wbr_jpn_ripdoc_02_default_on", 0)
 ```
 
-for 2.0
-
-```
-Game.GetQuestsSystem():SetFactStr("bls_ina_se1_ripperdoc_01_default_on", 0);
- Game.GetQuestsSystem():SetFactStr("cct_dtn_ripdoc_01_default_on", 0);
- Game.GetQuestsSystem():SetFactStr("hey_spr_ripperdoc_01_default_on", 0);
- Game.GetQuestsSystem():SetFactStr("pac_wwd_ripdoc_01_default_on", 0);
- Game.GetQuestsSystem():SetFactStr("std_arr_ripperdoc_01_default_on", 0);
- Game.GetQuestsSystem():SetFactStr("std_rcr_ripperdoc_01_default_on", 0);
- Game.GetQuestsSystem():SetFactStr("wat_kab_ripperdoc_01_default_on", 0);
- Game.GetQuestsSystem():SetFactStr("wat_kab_ripperdoc_03_default_on", 0);
- Game.GetQuestsSystem():SetFactStr("wat_nid_ripperdoc_01_default_on", 0);
- Game.GetQuestsSystem():SetFactStr("wbr_hil_ripdoc_01_default_on", 0);
- Game.GetQuestsSystem():SetFactStr("wbr_jpn_ripdoc_01_default_on", 0);
- Game.GetQuestsSystem():SetFactStr("wbr_jpn_ripdoc_02_default_on", 0)
-```
-
-7. Paste them into the CET console
-8. Save your game again and remove all mods used in version 1.63
-9. OPTIONAL: Load the save in vanilla 1.6, it should work there too.
-10. Download the newest version of Cyberpunk2077! The clean created save should work for vanilla and modded instances of the game.
+7. Save your game in a new slot and close it
+8. Remove Immersive Rippers .archive file("Cyberpunk 2077\archive\pc\mod\ImmersiveRippers.archive")
+9. Save your game again and remove all mods used in version 1.63
+10. OPTIONAL: Load the save in vanilla 1.63, it should work there too.
+11. Download the newest version of Cyberpunk2077! The clean created save should work for vanilla and modded instances of the game.
 
 </details>
 
