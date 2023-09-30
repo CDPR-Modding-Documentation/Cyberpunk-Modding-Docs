@@ -4,7 +4,7 @@ description: If your mods are causing trouble, here's what you can do
 
 # 🆘 Troubleshooting
 
-This page contains troubleshooting information for people who are **using** mods rather than making mods. You will find step-by-step guides, grouped by different problems.
+dThis page contains troubleshooting information for people who are **using** mods rather than making mods. You will find step-by-step guides, grouped by different problems.
 
 {% hint style="info" %}
 Did you know?  You can us your browser's search function (Ctrl+F) to quickly find your problem on the page – simply type a word from your error message.
@@ -139,7 +139,7 @@ Most likely, you have an issue with an .archive mod. Here's what you can do:
 
 If that doesn't solve your problem, or if the issue is save-game related, feel free to browse around some more.
 
-#### Corrupt(ish) saves
+### Corrupt(ish) saves
 
 {% hint style="info" %}
 You only need to read this if you can start a new game without mods, but crash on loading a previous save game. For any other problem, please see the corresponding section(s).
@@ -149,7 +149,53 @@ Some mods store data in save files. Removing those mods **may** (but doesn't hav
 
 At the current time (09/2023, before PL), that has been confirmed to affect those mods:
 
-* [Immersive Ripperdocs](https://www.nexusmods.com/cyberpunk2077/mods/7064?tab=posts) (see the pinned comment for uninstall instructions)
+* [Immersive Ripperdocs](https://www.nexusmods.com/cyberpunk2077/mods/7064?tab=posts) - see the expandable list below for uninstall instructions, or check the mod's pinned post on Nexus
+
+<details>
+
+<summary>Uninstalling Immersive Ripperdocs (2.0 compatible - not for Epic)</summary>
+
+1. `Error reason: Unhandled exception Expression: EXCEPTION_ACCESS_VIOLATION (0xC0000005) Message: The thread attempted to read inaccessible data at 0x10. File: <Unknown>(0)`
+   * run [mod remover](https://www.nexusmods.com/cyberpunk2077/mods/8597?tab=description) (Usage instructions are on the modpage itself)
+   * Downgrade your game to [1.63\_hotfix\_1](../users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
+   * install [immersive rippers](https://www.nexusmods.com/cyberpunk2077/mods/7064?tab=files\&file\_id=47612) and all of its dependencies and all of **their** dependencies
+   * load into your previously-crashing save&#x20;
+   * move at least 100m away from the closest ripper&#x20;
+   * Copy the following commands and&#x20;
+
+```
+Game.GetQuestsSystem():SetFactStr("bls_ina_se1_ripperdoc_01_default_on", 0);
+ Game.GetQuestsSystem():SetFactStr("cct_dtn_ripdoc_01_default_on", 0);
+ Game.GetQuestsSystem():SetFactStr("hey_spr_ripperdoc_01_default_on", 0);
+ Game.GetQuestsSystem():SetFactStr("pac_wwd_ripdoc_01_default_on", 0);
+ Game.GetQuestsSystem():SetFactStr("std_arr_ripperdoc_01_default_on", 0);
+ Game.GetQuestsSystem():SetFactStr("std_rcr_ripperdoc_01_default_on", 0);
+ Game.GetQuestsSystem():SetFactStr("wat_kab_ripperdoc_01_default_on", 0);
+ Game.GetQuestsSystem():SetFactStr("wat_kab_ripperdoc_03_default_on", 0);
+ Game.GetQuestsSystem():SetFactStr("wat_nid_ripperdoc_01_default_on", 0);
+ Game.GetQuestsSystem():SetFactStr("wbr_hil_ripdoc_01_default_on", 0);
+ Game.GetQuestsSystem():SetFactStr("wbr_jpn_ripdoc_01_default_on", 0);
+ Game.GetQuestsSystem():SetFactStr("wbr_jpn_ripdoc_02_default_on", 0))
+```
+
+
+
+1.
+
+
+
+1.  _\[_14:10_]_
+
+    * Save your game, and remove immersive rippers .archive file("Cyberpunk 2077\archive\pc\mod\ImmersiveRippers.archive")
+    * Load into your new save and execute following CTE-command(again formated as one-liner:
+
+    ﻿`Game.SetDebugFact("bls_ina_se1_ripperdoc_01_default_on", 1);Game.SetDebugFact("cct_dtn_ripdoc_01_default_on", 1);Game.SetDebugFact("hey_spr_ripperdoc_01_default_on", 1);Game.SetDebugFact("pac_wwd_ripdoc_01_default_on", 1);Game.SetDebugFact("std_arr_ripperdoc_01_default_on", 1);Game.SetDebugFact("std_rcr_ripperdoc_01_default_on", 1);Game.SetDebugFact("wat_kab_ripperdoc_01_default_on", 1);Game.SetDebugFact("wat_kab_ripperdoc_03_default_on", 1);Game.SetDebugFact("wat_nid_ripperdoc_01_default_on", 1);Game.SetDebugFact("wbr_hil_ripdoc_01_default_on", 1);Game.SetDebugFact("wbr_jpn_ripdoc_01_default_on", 1);Game.SetDebugFact("wbr_jpn_ripdoc_02_default_on", 1)`
+
+    * save your game again and remove all mods installed for the fix
+    * OPTIONAL: load the save in vanilla 1.6, it should work there too
+    * go back to 2.0, the save should work again vanilla and modded
+
+</details>
 
 {% hint style="success" %}
 If you are experiencing this issue with a mod that is not on this list, please check [Broken mods: How to help](broken-mods-how-to-help.md)
