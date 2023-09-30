@@ -1,17 +1,15 @@
 ---
-description: Information on how the body works
+description: Which body parts are where?
 ---
 
-# Body
+# Cheat Sheet: Body
 
-On this page, you can find information how the Cyberpunk player body is set up, along with its file paths. For more detailed information, check the corresponding sub-pages:
-
-* [Hair](hair.md)
-* [Face, skin, make-up](cheat-sheet-face-and-skin.md)
-* [Facial Expressions](cheat-sheet-facial-expressions.md)
+On this page, you can find information how the Cyberpunk player body is set up, along with its file paths.&#x20;
 
 {% hint style="info" %}
-You can find the [list of skin tones](cheat-sheet-face-and-skin.md#skin-tones-by-index) on the corresponding sub-page.
+You can find the list of skin tones, hair and facial expressions under [cheat-sheet-head](../cheat-sheet-head/ "mention")
+
+There is no dedicated guide as for how to create body mods yet, but the process is roughly the same as for creating [a-new-head-for-v.md](../../modding-guides/npcs/a-new-head-for-v.md "mention").
 {% endhint %}
 
 {% hint style="success" %}

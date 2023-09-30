@@ -7,14 +7,14 @@ description: Overview of working with morphtargets
 {% hint style="info" %}
 **COMPATIBILITY WARNING**\
 \
-Full `.morphtarget` editing is enabled in Wolvenkit **8.9.1-nightly** development builds. This content uses these new capabilities, and does not apply to previous workarounds.
+Full `.morphtarget` editing is enabled in Wolvenkit **>= 8.9.1**.&#x20;
 {% endhint %}
 
 ## Type Extension
 
 `.morphtarget`
 
-## Description
+## What is it?
 
 Morphtargets are a special kind of a mesh, or more accurately a `.mesh` is a more limited version of a mesh without the ability to define targets by itself (with a few exceptions.) A full model can consist of multiple `.mesh`es and `.morphtarget`s.
 
@@ -59,15 +59,10 @@ So, some uses are probably already obvious. But targets enable quite a bit of ex
 The main limitation currently is that we do not have a way to add activations, at least generally. You need to hook into a target name that the engine already uses.
 {% endhint %}
 
-## Working with Morphtargets
+## Editing Morphtargets
 
-{% hint style="info" %}
-_**`COMPATIBILITY WARNING`**_
-
-\
-`.morphtarget`s exported prior to the Wkit 8.9.1-nightly development versions contain incorrect data. It's possible that you'll encounter errors or strangeness with them on import or in-game.\
-\
-**For best results, you should start from a vanilla`.morphtarget` exported with Wkit 8.9.1-nightly or later.**
+{% hint style="warning" %}
+For best results, export an original game file and start from there, as exports from older Wolvenkit versions may not work.
 {% endhint %}
 
 {% hint style="info" %}

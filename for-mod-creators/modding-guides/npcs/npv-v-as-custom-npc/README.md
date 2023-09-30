@@ -15,7 +15,7 @@ This guide will show you how to do the following things:&#x20;
 
 #### Difficulty:
 
-Easy, but not trivial: you don't need any prior knowledge, but the whole structure is complex, and if you make mistakes, you will end up missing files.
+Easy, but not trivial: you don't need any prior knowledge, but the process is complex, and if you miss steps or deviate from the instructions, things will end up not working for you.
 
 {% hint style="success" %}
 If you run into issues with this guide, the right place to ask for help is `#mod-dev-chat` on the [redmodding Discord server](https://discord.gg/redmodding).&#x20;
@@ -30,11 +30,13 @@ If you run into issues with this guide, the right place to ask for help is `#mod
 You can **not** use the current (September 2023) release 8.9.0 for this! But the Nightly is perfectly OK :)&#x20;
 {% endhint %}
 
-* [Blender](https://www.blender.org/download/) 3.5.1 (the version this has been tested with, but anything >= 3.4 should work. If it doesn't, try updating, though.)
+* [Blender](https://www.blender.org/download/) 3.6 (anything >= 3.4 should work. If it doesn't, try updating, though.)
 * [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) >= 2.1
 
 {% hint style="info" %}
 This tutorial should cover your basic needs, but there are many more guides and resources about NPV creation outside of this wiki. You can find them [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/community-guides/npvs-v-as-npc-custom-npcs).&#x20;
+
+If you want to edit original V's files, you're (generally) in the right place. You can find extra information on [a-new-head-for-v.md](../a-new-head-for-v.md "mention").
 {% endhint %}
 
 {% hint style="warning" %}

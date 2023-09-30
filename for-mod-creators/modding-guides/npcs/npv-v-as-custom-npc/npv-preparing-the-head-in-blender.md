@@ -98,12 +98,16 @@ tutorial\npv\your_female_character\head\i1_000_pwa_c__basehead_earring_04.mesh
 
 … none of which is your V's exact piercings. Instead, there are full sets of jewellery, most of which will be **hidden**.
 
-You have to look at the meshes and find the file that includs your set of piercings. We'll go about hiding the excess in one of the later steps.
+You have to look at the meshes and find the file that includes your set of piercings. We'll go about hiding the excess in one of the later steps.
 
 ### Deleting files
 
 {% hint style="success" %}
 Number in file name <=> Number in character creator
+{% endhint %}
+
+{% hint style="info" %}
+Do not delete any files if you're [editing the player head](../a-new-head-for-v.md) (Ignore this hint if you don't)
 {% endhint %}
 
 Many of the files are **variants** and your V will be using **one or none of them.** That means you have a bunch of files to delete. If you have chosen [the convenient option](npv-preparing-the-head-in-blender.md#the-convenient-option) above, you should already have a list of files that you need to keep. Otherwise, the table below should give you some oversight.
@@ -193,7 +197,7 @@ Some shapekeys don't correspond 1:1 with their numbers in the character creator.
 ## Step 3: Importing head
 
 {% hint style="info" %}
-Start by deleting the morphtargets — we don't need them anymore.
+Unless you are editing original V, start by **deleting the morphtargets** from the template file — we don't need them anymore.
 
 Remove the entire folder, both from `raw` and `archive`. From now on, it's meshes only!
 {% endhint %}
@@ -243,3 +247,4 @@ Alternatively, you can use the last script in the file, which will attempt to fl
 If you had the example project lying around for a very long time, please try and redownload it ([Nexus link](https://www.nexusmods.com/cyberpunk2077/mods/8328)), as the first version had been using an NPC animationgraph for facial expressions.
 
 If that's not it, then you ran into the shapekey offset issue: ssome shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of your shape is shaped subtly wrong or looks weird in the game, add or subtract 1 from the corresponding shape key, and run the script again.
+

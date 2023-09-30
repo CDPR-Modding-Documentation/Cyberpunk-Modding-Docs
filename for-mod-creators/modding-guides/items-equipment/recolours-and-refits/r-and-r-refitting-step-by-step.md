@@ -39,7 +39,7 @@ It might be easier and faster to simply export the base body.&#x20;
 2. In the Wolvenkit search bar, find the base body mesh:
    * Female body gender: `base\characters\common\player_base_bodies\player_female_average\t0_000_pwa_base__full.mesh`
    * Male body gender: `base\characters\common\player_base_bodies\player_man_average\t0_000_pma_base__full.mesh`
-   * Anything else: Check [this list ](../../../references-lists-and-overviews/body/#player-base-body)or go hunting - here's the [Wolvenkit search documentation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files)!
+   * Anything else: Check [this list ](../../../references-lists-and-overviews/cheat-sheet-body/#player-base-body)or go hunting - here's the [Wolvenkit search documentation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files)!
 3. Check the preview to make sure that you're grabbing the right mesh, then add it to your project by double-clicking or via context menu.
 
 ### The suit

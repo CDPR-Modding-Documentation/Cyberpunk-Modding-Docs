@@ -35,18 +35,18 @@ Components need to be **unambiguously** identified by their name as defined in t
 
 Starting with version >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.4.0-rc2), ArchivXL can understand the following variables for `meshAppearance` in `appearanceOverrides`:
 
-|                |                                                                                                                          |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------ |
-| `{gender}`     | m or w depending on V's body gender                                                                                      |
-| `{skin_color}` | [skin color appearance name](../../references-lists-and-overviews/body/cheat-sheet-face-and-skin.md#skin-tones-by-index) |
-| `{hair_color}` | [hair color appearance name](../../references-lists-and-overviews/body/hair.md#name-in-files-by-index)                   |
+|                |                                                                                      |
+| -------------- | ------------------------------------------------------------------------------------ |
+| `{gender}`     | m or w depending on V's body gender                                                  |
+| `{skin_color}` | [cheat-sheet-head](../../references-lists-and-overviews/cheat-sheet-head/ "mention") |
+| `{hair_color}` | [hair.md](../../references-lists-and-overviews/cheat-sheet-head/hair.md "mention")   |
 
 So depending on your PC's body gender and colouring, the meshAppearance `my_app_{gender}`**`{skin_color}_{`**`hair_color}` could translate to `my_app_w__01_ca_pale__blue_red_ombre`.
 
 #### Arms
 
 {% hint style="warning" %}
-Due to cyberware, V has more arms than Shiva the Destroyer (although not at the same time). For a full list of component names, see [here](../../references-lists-and-overviews/body/#arms).
+Due to cyberware, V has more arms than Shiva the Destroyer (although not at the same time). For a full list of component names, see [here](../../references-lists-and-overviews/cheat-sheet-body/#arms).
 
 The list below is a **summary**, but might not be up-to-date. Please refer to the linked page if you're missing anything.&#x20;
 {% endhint %}
