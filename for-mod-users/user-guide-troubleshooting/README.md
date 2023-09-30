@@ -414,7 +414,7 @@ Most famous for edits of the female body that defy gravity and wreak havoc on V'
 
 However, modding has come a long way since then, and spawn0 never followed. For that reason, their mods are known to have compatibility issues with pretty much everything in the general vicinity.&#x20;
 
-On the bright side, their mods won't crash your game and are downwards compatible until the dawn of time.
+On the bright side, their mods ~~won't crash your game and~~ are downwards compatible until the dawn of time. With Phantom Liberty, sp0 mods have been known to cause crashes to desktop near the dam.
 
 ## Finding the broken mod (log files)
 
