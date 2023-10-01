@@ -205,6 +205,10 @@ You're lucky, because it means that you can systematically troubleshoot. Go to t
 
 **If you can't**
 
+Occasionally, crashes can be triggered by cross-platform saves. You can disable them in the main menu under Gameplay -> Miscellaneous&#x20;
+
+#### If that wasn't it
+
 … that puts you in the same boat as the rest of us: most veteran players live with occasional crashes, especially while tabbing out and back in under certain circumstances.
 
 That being said, if the crashes exceed what you're willing to live with, you'll have to find out a way to improve it, but your options are thin on the ground. Depending on how long it takes for the crash to occur, you might try
