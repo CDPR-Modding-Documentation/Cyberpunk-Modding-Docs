@@ -177,7 +177,7 @@ Do this until you have covered all skin that you don't want exposed. Now it's ti
 4. **Overwrite** the file you originally imported from (`pwa_emissive.glb`)
 5. Repeat the process with the other armature.
 
-## Step 7: Importing into Wolvenkit
+## Step 6: Importing into Wolvenkit
 
 {% hint style="info" %}
 As of 8.9.1, Garment Support is still experimental. If your meshes look like string cheese or twitch all over the place, you can [delete the parameters](../../../3d-modelling/troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices-a-puddle-on-the-floor). That will destroy the automatic deform when you put a jacket on, but at least your mesh will work.
@@ -204,3 +204,7 @@ Otherwise:
 {% hint style="success" %}
 Happy modding, choomba!
 {% endhint %}
+
+## Troubleshooting
+
+As of now, there are no problems limited to the scope of this guide. You can find the general troubleshooting for 3d edits and -imports under [troubleshooting-your-mesh-edits.md](../../../3d-modelling/troubleshooting-your-mesh-edits.md "mention").

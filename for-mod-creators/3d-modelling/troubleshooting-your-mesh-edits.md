@@ -6,6 +6,60 @@ description: When you can't import, or your imported mesh looks weird
 
 ## Importing
 
+### My import won't show up in-game!
+
+We need to troubleshoot your **import**.&#x20;
+
+#### Does the Wolvenkit preview update?
+
+Yes: The problem is somewhere else, the mesh import works fine.
+
+No: [#is-there-an-error-message-in-the-console](troubleshooting-your-mesh-edits.md#is-there-an-error-message-in-the-console "mention")
+
+#### Is there an error message in the console?
+
+Yes: Here's where your problem is. Make the error message go away by checking the rest of this guide.
+
+No: [#do-you-have-extra-shapekeys](troubleshooting-your-mesh-edits.md#do-you-have-extra-shapekeys "mention")
+
+#### Do you have extra shapekeys?
+
+In Blender, check your shapekey section. It should look like the green box (or be empty).&#x20;
+
+<figure><img src="../../.gitbook/assets/mesh_import_export_check_shapekeys.png" alt=""><figcaption></figcaption></figure>
+
+If it does not, you need to **apply** any extra shapekeys, because Wolvenkit will ignore them on reimport. Expand the box below to find out how.
+
+<details>
+
+<summary>Get the edit out of the shapekeys</summary>
+
+
+
+Do the following things:
+
+1.
+
+    <figure><img src="../../.gitbook/assets/mesh_import_export_fix_shapekeys.png" alt=""><figcaption></figcaption></figure>
+2. Duplicate your mesh: Select it in Object Mode, then press Shift+D
+3. Click the arrow under the `-` button next to the shapekey box
+4. Click `New Shape from Mix`
+5. Now, delete all the **other** shapekeys (select them and click `-`)
+6. Delete your new shapekey as well. That will **apply** it.
+7. In Object Mode, select the duplicate of your mesh (that still has all the shapekeys)
+8. Delete your extras. That will reset it to an un-refitted shape.
+9. Go to Edit Mode (hotkey: `tab`)
+10. Select all vertices (hotkey: `A`)
+11. Delete all vertices (hotkey: `X`)
+12. Go back to Object Mode (hotkey: `tab`)
+13. Select your shapekey-less refitted mesh
+14. Select your empty mesh
+15. Join them together (hotkey: `ctrl+J`)
+
+If everything went well, you should now have a mesh with Wolvenkit-compatible shapekeys!
+
+</details>
+
 ### Tangents
 
 You get an error message like this:
