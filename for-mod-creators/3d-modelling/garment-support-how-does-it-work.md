@@ -7,7 +7,7 @@ description: What is Garment Support and how does it work?
 {% hint style="info" %}
 If garment supports are causing trouble for you, your easiest option is to delete the parameters from your mesh. For detail, see [here](troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices).
 
-If you want to include garment supports, check [this](https://docs.google.com/document/d/10dXta2Vicm\_1iZeFy5U07\_PBCwxa1AhqFvVIMZnezPk/edit) guide by engres.
+To make use of garment support, **keep the component name prefixes**. If you change the mesh, make sure to [tick the box](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export/import-settings#import-garment-support).
 {% endhint %}
 
 _Credit goes to psiberx (_[_discord post_](https://discord.com/channels/717692382849663036/955663052903178270/1059406562277470240) _with initial explanation of the algorithm) and IslandDancer for providing screenshots and know-how_
@@ -24,7 +24,7 @@ This process is accomplished via 'parameters' on the mesh:
 
 Garment support will be applied based on garmentScore. For this, the **prefix** of the component name will be considered (components are named in your .app or .ent file's component array).
 
-For an explanation of how the algorithm calculates the score, [see the next section.](garment-support-how-does-it-work.md#the-algorithm)
+A high garment score means that the item is "on top", squishing anything worn "below". (See [#the-algorithm](garment-support-how-does-it-work.md#the-algorithm "mention") for details.)
 
 The prefixes are as follows:
 
@@ -39,6 +39,10 @@ The prefixes are as follows:
 <figure><img src="../../.gitbook/assets/garment_support_broken.png" alt=""><figcaption><p>Often, you can salvage things by deleting the parameters in WolvenKit</p></figcaption></figure>
 
 ## The algorithm
+
+{% hint style="info" %}
+TL;DR: High garment score means "on top", items below will get squished.
+{% endhint %}
 
 The game calculates the garment score by checking the prefix of component names, where the one with the lowest prefix is the innermost:
 

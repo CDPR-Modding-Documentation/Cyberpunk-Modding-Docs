@@ -343,8 +343,7 @@ You can find a full guide on how to do that [here](../../everything-else/moving-
 ## Troubleshooting
 
 {% hint style="info" %}
-The easiest way to spot what's wrong is to use Wolvenkit's new FileValidation feature, which will print warnings and errors to the log file for you, starting at version >= 8.9.1. \
-As of September 2023, you can download it from the [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) page (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-09-09), as it's pretty stable).
+The easiest way to spot what's wrong is to use Wolvenkit's new FileValidation feature, which will print warnings and errors to the log file for you, starting at version >= 8.9.1.&#x20;
 {% endhint %}
 
 First of all, check the logs for errors including the name of your mod:&#x20;
@@ -352,7 +351,9 @@ First of all, check the logs for errors including the name of your mod:&#x20;
 * `red4ext/plugins/ArchiveXL/ArchiveXL.log`&#x20;
 * `red4ext/plugins/TweakXL/TweakXL.log`
 
-Second of all, make sure that you do not have capital letters in any of your path or file names — Wolvenkit should automatically transform them to lowercase, but you should avoid them as a matter of principle.
+### ArchiveXL added clipping!
+
+You have read right past those warning boxes telling you about [component name prefixes](../../../3d-modelling/garment-support-how-does-it-work.md#component-prefixes). Make sure that you add them back.
 
 ### My item warps weirdly
 

@@ -16,7 +16,7 @@ This page is a part of the [Adding new items](./) guide and  deals with finding 
 * If you want to add preview items, check [this guide](../../custom-icons-and-ui/adding-items-preview-images/).
 
 {% hint style="info" %}
-**TL;DR**: If you can't be arsed doing this by yourself, find a template project with one working item (female rigged) [here](https://www.mediafire.com/file/ef5xcacwomldizg/my\_shirt.7z/file). (But in this case: Why are you reading this page?)
+**TL;DR**: If you can't be arsed doing this by yourself, find a template project with one working item (female rigged) [here](https://www.mediafire.com/file/ef5xcacwomldizg/my\_shirt.7z/file).
 {% endhint %}
 
 ## Overview:

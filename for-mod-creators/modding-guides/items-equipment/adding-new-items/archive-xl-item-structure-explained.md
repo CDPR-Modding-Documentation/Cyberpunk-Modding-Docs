@@ -19,6 +19,8 @@ If you have come here from the main page because you want to change the existing
 * [app](archive-xl-item-structure-explained.md#appearance-making-changes)
 * [mesh](archive-xl-item-structure-explained.md#mesh-making-changes)
 * [.json](archive-xl-item-structure-explained.md#.json-making-changes) (translations)
+
+You do not need to touch the [mesh entity](archive-xl-item-structure-explained.md#mesh\_entity.ent).
 {% endhint %}
 
 {% hint style="info" %}
@@ -230,24 +232,11 @@ You do not need to change the `appearanceResource`.
 This file replaces the `component` array inside the .app!
 {% endhint %}
 
-{% hint style="info" %}
+{% hint style="success" %}
 Check [here ](different-equipment-slots.md)for how to find the right mesh entity for each equipment slot.
 {% endhint %}
 
 This file holds a collection fo components that determine how our equipment item behaves and moves. Each kind of equipment has different types of components, which is why you need to pick the [right mesh entity file](different-equipment-slots.md#step-2-the-entity-file) for each equipment slot.&#x20;
-
-By bundling them in this file, we save ourselves a lot of copy-pasting inside the .app file. The only component we actually need to change is the one with "Mesh" in its name, typically `entGarmentSkinnedMeshComponent`:
-
-<figure><img src="../../../../.gitbook/assets/archivexl_item_structure_mesh_entity.png" alt=""><figcaption><p>The only component we actually need to change is the <code>entGarmentSkinnedMeshComponent</code></p></figcaption></figure>
-
-The component's `name` will be used in `appearance.app`'s materialOverride array (see [below](archive-xl-item-structure-explained.md#appearance-making-changes))
-
-{% hint style="success" %}
-If you don't know what this means, skip it and wait for the full step-by-step guide!
-
-If you're using [dynamic appearances](../../../core-mods-explained/archivexl.md#dynamic-variants), you can use **property interpolation** in paths. For example, \*`p{gender}a` will resolve to `pwa` or `pma`, based on V's body gender.\
-Read more about this on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki#property-interpolation).
-{% endhint %}
 
 {% hint style="info" %}
 **Would you like to know more?**&#x20;
@@ -256,6 +245,23 @@ Full documentation of [mesh\_entity](../../../files-and-what-they-do/entity-.ent
 More intel on [components](../../../files-and-what-they-do/components/)
 
 Understanding this is not necessary for the purpose of this guide!
+{% endhint %}
+
+By bundling them in this file, we save ourselves a lot of copy-pasting inside the .app file. The only component we actually need to change is the one with "Mesh" in its name, typically `entGarmentSkinnedMeshComponent`:
+
+<figure><img src="../../../../.gitbook/assets/archivexl_item_structure_mesh_entity.png" alt=""><figcaption><p>The only component we actually need to change is the <code>entGarmentSkinnedMeshComponent</code></p></figcaption></figure>
+
+The component's `name` will be used in `appearance.app`'s materialOverride array (see [below](archive-xl-item-structure-explained.md#appearance-making-changes))
+
+{% hint style="danger" %}
+When changing component names, you want to leave the [#component-prefixes](../../../3d-modelling/garment-support-how-does-it-work.md#component-prefixes "mention") (t1\_) in place — the game needs them to calculate collisions!
+{% endhint %}
+
+{% hint style="success" %}
+If the text in this box tells you nothing, just ignore it for now
+
+If you're using [dynamic appearances](../../../core-mods-explained/archivexl.md#dynamic-variants), you can use **property interpolation** in paths. For example, \*`p{gender}a` will resolve to `pwa` or `pma`, based on V's body gender.\
+Read more about this on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki#property-interpolation).
 {% endhint %}
 
 #### Mesh Entity: Making Changes

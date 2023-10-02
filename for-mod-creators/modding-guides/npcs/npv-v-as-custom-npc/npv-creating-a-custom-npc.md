@@ -124,6 +124,10 @@ Let's look at the .app file now.
 
 This section will tell you how to edit your NPV's appearance – their skin colour, chrome, piercings, tattoos. We will do this in the .app file.
 
+{% hint style="danger" %}
+When changing component names, you want to leave the [#component-prefixes](../../../3d-modelling/garment-support-how-does-it-work.md#component-prefixes "mention") (t1\_) in place — the game needs them to calculate collisions!
+{% endhint %}
+
 This is where all of your NPC's appearances are defined (`appearanceDefinition`,  linked to the root entity via `name`). The appearanceDefinition's components **define** your NPV's properties, pulling in equipment, facial expressions, hair and skin.
 
 {% hint style="info" %}
@@ -132,7 +136,7 @@ This is where all of your NPC's appearances are defined (`appearanceDefinition`,
 
 It looks like this:
 
-<figure><img src="../../../../.gitbook/assets/npv_app_structure.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/npv_app_structure..png" alt=""><figcaption><p>Before renaming </p></figcaption></figure>
 
 {% hint style="success" %}
 The next section, [#how-do-i-know-what-to-put](npv-creating-a-custom-npc.md#how-do-i-know-what-to-put "mention"), will help you find the right appearance names.
