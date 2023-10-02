@@ -26,6 +26,7 @@
 
 * [🛠 Modding Tools](for-mod-creators/modding-tools/README.md)
   * [WolvenKit](for-mod-creators/modding-tools/wolvenkit.md)
+  * [Savegame Editor: CyberCAT](for-mod-creators/modding-tools/savegame-editor-cybercat.md)
   * [MLSETUP Builder](for-mod-creators/modding-tools/mlsetup-builder.md)
   * [010 Editor](for-mod-creators/modding-tools/010-editor.md)
   * [PixelRick's Cyberpunk Save Editor](for-mod-creators/modding-tools/pixelricks-cyberpunk-save-editor.md)

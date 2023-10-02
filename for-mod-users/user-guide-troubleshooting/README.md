@@ -132,6 +132,12 @@ Otherwise:
 * If the game crashes before you make it to the menu, see [#crash-before-menu](./#crash-before-menu "mention")
 * If you can start a new game without crashing, see [#corrupt-ish-saves](./#corrupt-ish-saves "mention")
 
+#### If you broke it with the savegame editor
+
+Check [CyberCAT's troubleshooting section](../../for-mod-creators/modding-tools/savegame-editor-cybercat.md#troubleshooting) — in the meantime, revert to the backup.
+
+#### Otherwise
+
 Most likely, you have an issue with an .archive mod. Here's what you can do:
 
 1. To rule out that it's a save game problem (those are extremely rare), start a new game.
