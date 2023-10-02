@@ -29,7 +29,6 @@
   * [Savegame Editor: CyberCAT](for-mod-creators/modding-tools/savegame-editor-cybercat.md)
   * [MLSETUP Builder](for-mod-creators/modding-tools/mlsetup-builder.md)
   * [010 Editor](for-mod-creators/modding-tools/010-editor.md)
-  * [PixelRick's Cyberpunk Save Editor](for-mod-creators/modding-tools/pixelricks-cyberpunk-save-editor.md)
   * [REDmod](for-mod-creators/modding-tools/redmod/README.md)
     * [Exporting Resources to Raw Formats](for-mod-creators/modding-tools/redmod/exporting-resources-to-raw-formats/README.md)
       * [Exporting .mesh/.w2mesh](for-mod-creators/modding-tools/redmod/exporting-resources-to-raw-formats/exporting-.mesh-.w2mesh.md)

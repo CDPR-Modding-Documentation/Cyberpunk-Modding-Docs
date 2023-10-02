@@ -55,3 +55,9 @@ The open source tool we all know and love, which is getting better with every bu
 ### Photoshop
 
 {% embed url="https://www.adobe.com/products/photoshop.html" %}
+
+## Archived (legacy)
+
+These tools are no longer maintained/supported
+
+{% embed url="https://github.com/PixelRick/CyberpunkSaveEditor/releases" %}
