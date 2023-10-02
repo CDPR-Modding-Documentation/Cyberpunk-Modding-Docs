@@ -72,7 +72,16 @@ If you do not have these folders, then CET isn't installed correctly. Head to [#
 
 If everything looks okay in step 1, check if you have a file `cyber_engine_tweaks.log` inside the `cyber_engine_tweaks` folder from the previous screenshot.
 
-* If you **don't** have it, that means CET isn't starting up correctly. The fastest option in this case is to [#reinstall-cet](users-troubleshooting-cet.md#reinstall-cet "mention").
+#### You don't have a log file
+
+No log file means that CET isn't starting up.&#x20;
+
+* The easiest fix is to [#reinstall-cet](users-troubleshooting-cet.md#reinstall-cet "mention").
+* If you did that and it didn't help, check your **antivirus**. Most likely, it is protecting you from scary things like Cyber Engine Tweaks. Disable it.
+* If that didn't help either, update everything - Windows, your drivers, etc. You can find links and instructions in the red box on the [general troubleshooting page](./).
+
+#### You have a log file
+
 * If you **do** have it, you can open it and try to make sense of the error message. You can find more information on that [here](finding-and-reading-log-files.md#making-sense-of-them), or find help in the #cet-suppport channel on our [Discord](https://discord.gg/redmodding).
 
 ## Reinstall CET
@@ -82,7 +91,7 @@ If everything looks okay in step 1, check if you have a file `cyber_engine_tweak
    * rename `bin/x6/plugins` to `plugins_`\
      or
    * delete the file `bin/x6/plugins/cyber_engine_tweaks.asi`
-   * move the folder `bin/x6/plugins/cyber_engine_tweaks` out of plugins `(`e.g. your Desktop). Do not delete it yet.
+   * move the folder `bin/x6/plugins/cyber_engine_tweaks` out of `plugins` `(`e.g. your Desktop). Do not delete it yet.
 3. Download the most recent CET from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/107)
 4. Extract the downloaded archive to your [game directory](#user-content-fn-4)[^4] (the bin folder will merge with the one that is already there)
 5. Start the game: **CET should now ask you to bind a key.** If it doesn't:
