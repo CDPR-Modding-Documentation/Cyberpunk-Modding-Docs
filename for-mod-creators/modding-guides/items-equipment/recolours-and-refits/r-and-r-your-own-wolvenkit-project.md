@@ -203,11 +203,6 @@ To: `resources\manavortex`
 From: `Cyberpunk 2077\r6\scripts\manavortex`\
 To: `resources\r6\scripts\manavortex`
 
-#### ArchiveXL\_Netrunner\_variants\_atelier.reds
-
-From: `Cyberpunk 2077\r6\scripts\manavortex`\
-To: `resources\r6\scripts\manavortex`
-
 #### \_ArchiveXL\_Netrunner\_variants.archive.xl
 
 From:  either\
