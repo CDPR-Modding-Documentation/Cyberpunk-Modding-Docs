@@ -33,7 +33,11 @@ We will now launch MLSB and do the initial setup.
 
 ## Usage
 
-To make the most of MLSB's features, you will want to [configure](mlsetup-builder.md#configuration) it first. However, you can start using the tool right away. Here's how (or scroll down for the screenshot):
+{% hint style="info" %}
+To make the most of MLSB's features, you will want to [configure](mlsetup-builder.md#configuration) it first. However, you can start using the tool right away.&#x20;
+{% endhint %}
+
+Here's how (or scroll down for the screenshot):
 
 1. In the project explorer under Wolvenkit's `archive` folder, right-click on am mlsetup file\
    _This folder will only be visible in the "source" or "archive" tab of your project explorer_
@@ -128,13 +132,16 @@ Again, this step is optional, you can [use MLSB](mlsetup-builder.md#using-mlsb) 
 This process can take some time — if you have selected everything, it can be several hours on slow machines. (You should've listened during step 1, choomba ;))
 {% endhint %}
 
-5. When the process is complete, close the Depot Generator window
+5. When the process is complete, close the Depot Generator window.&#x20;
+6. Optional: if you can't see any changes, press `Ctrl+R` to relaod MLSB.
 
 ### Building the Microblend Depot
 
 1. Repeat Step 1 from [#extract-a-partial-depot](mlsetup-builder.md#extract-a-partial-depot "mention"), but select **Microblends** this time
 2. In the bottom left corner, hit "Start"
-3. Repeat Step 4.
+3. Wait.
+4. When the process is complete, close the Depot Generator window.&#x20;
+5. Optional: if you can't see any changes, press `Ctrl+R` to relaod MLSB.
 
 That's it, you're done now and can use the [3d viewport](mlsetup-builder.md#about-that-3d-viewport)!
 
