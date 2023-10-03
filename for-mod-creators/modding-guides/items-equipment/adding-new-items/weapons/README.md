@@ -145,6 +145,12 @@ In Blender, put your custom mesh in both LODs.
 If your weapon is significantly bigger than the original one, you'll notice that the hitbox won't auto-scale with your mesh. If you know how to solve this problem or want to brainstorm, hit up **`@Mx_OrcBoi`** on Discord!
 {% endhint %}
 
+## Troubleshooting
+
+### My weapon is fully invisible, no matter what I do!
+
+First of all, unequip and re-equip&#x20;
+
 [^1]: as linked in your .app's baseEntity field
 
 [^2]: baseEntity in your app file
