@@ -89,7 +89,7 @@ That's it! Happy recoloring!
 
 ## Configuration
 
-### Extract a partial depot
+### Connecting to Wolvenkit
 
 We're assuming that you have already configured Wolvenkit. If you haven't, please [do so now](https://wiki.redmodding.org/wolvenkit/modding-community/eli5-getting-started/configure-modding-tools#steps).
 
@@ -129,9 +129,12 @@ This process can take some time — if you have selected everything, it can be s
 {% endhint %}
 
 5. When the process is complete, close the Depot Generator window
-6. Select Build -> Microblends
-7. In the bottom left corner, hit "Start"
-8. Repeat Step 4.
+
+### Building the Microblend Depot
+
+1. Repeat Step 1 from [#extract-a-partial-depot](mlsetup-builder.md#extract-a-partial-depot "mention"), but select **Microblends** this time
+2. In the bottom left corner, hit "Start"
+3. Repeat Step 4.
 
 That's it, you're done now and can use the [3d viewport](mlsetup-builder.md#about-that-3d-viewport)!
 
