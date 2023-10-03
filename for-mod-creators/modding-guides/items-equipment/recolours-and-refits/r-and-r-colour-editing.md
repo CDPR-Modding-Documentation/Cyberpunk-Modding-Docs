@@ -53,6 +53,10 @@ Once you have done that, switch to your project browser's `raw` tab, right-click
 
 This will open MLSB with the correct file already loaded.
 
+{% hint style="info" %}
+Alternatively, you can also open MLSetupBuilder by hand, then press `Ctrl+I` or select `Import` from the menu.
+{% endhint %}
+
 {% hint style="warning" %}
 If your material list is saying \[object object], check the [MLSB troubleshooting page.](../../../modding-tools/mlsetup-builder.md#help-my-layer-config-list-says-object-object)
 {% endhint %}
