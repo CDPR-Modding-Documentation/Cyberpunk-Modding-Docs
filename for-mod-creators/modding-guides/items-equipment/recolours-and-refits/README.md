@@ -47,6 +47,10 @@ You can check find the standard permissions on a mod's Nexus page, `Description`
 
 ### Skipping and skimming
 
+#### TL;DR
+
+Do not skip or skim anything. Also, if you find a TL;DR block, this sums up all sections until the next header (in this case, until [#overview](./#overview "mention")).
+
 <figure><img src="../../../../.gitbook/assets/slow_down_kitten.jpg" alt=""><figcaption><p>Don't skim - think of the kitten!</p></figcaption></figure>
 
 I'm writing these guides with the minimal amount of fluff and no background information — that will be **linked**, but not **included,** which is the opposite approach from the rest of the internet and the [Lord of the Rings](https://www.reddit.com/r/lotrmemes/comments/om4sso/the\_books\_are\_just\_one\_very\_long\_food\_blog\_post/).&#x20;
