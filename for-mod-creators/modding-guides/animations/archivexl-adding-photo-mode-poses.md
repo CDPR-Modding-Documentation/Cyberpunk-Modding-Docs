@@ -63,7 +63,11 @@ This file tells Cyberpunk to load your custom poses and will be in the same fold
 <pre><code><strong>animations:
 </strong>  - entity: base\characters\entities\player\photo_mode\player_wa_photomode.ent
     set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep1.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
   - entity: base\characters\entities\player\photo_mode\player_ma_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_ma_photomode_ep1.ent
     set: tutorial\animations\netrunner_making_poses\pma.anims
   - entity: base\characters\entities\player\photo_mode\johnny_photomode.ent
     set: tutorial\animations\netrunner_making_poses\pma.anims    
