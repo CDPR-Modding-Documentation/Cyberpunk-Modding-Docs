@@ -11,7 +11,9 @@ If you are on **Linux/SteamDeck**, make sure to follow [this guide](../users-mod
 
 If your game is pirated, [go here](./#you-pirated-the-game).
 
-If you are experiencing crashes caused by CET try running Cyberpunk in [compatibility mode](https://www.online-tech-tips.com/computer-tips/run-older-programs-in-compatibility-mode-in-windows-11-10/)
+If you're experiencing microstutters, check here
+
+If you are experiencing crashes caused by CET, try running Cyberpunk in [compatibility mode](https://www.online-tech-tips.com/computer-tips/run-older-programs-in-compatibility-mode-in-windows-11-10/)
 
 If you can't open your overlay, check [#reset-your-keybind](users-troubleshooting-cet.md#reset-your-keybind "mention")&#x20;
 
@@ -19,6 +21,10 @@ If your CET just stopped working (without a game update) or if you've been sent 
 
 Otherwise, read on for the full troubleshooting instructions.
 {% endhint %}
+
+## General troubleshooting
+
+Before trying anything else, please make sure that your **Windows** and your **graphics driver** are up-to-date – this actually helps in around 50% of all cases. If you need instructions, you can find them in the red box under the general troubleshooting guide's [#navigation](./#navigation "mention") section.
 
 ## Step 0: Go to your install directory
 
@@ -86,6 +92,10 @@ No log file means that CET isn't starting up.&#x20;
 
 ## Reinstall CET
 
+{% hint style="info" %}
+Uninstalling (the full game or just the mod via Vortex) can leave files behind, which will fuck things up for you after a reinstall. This section tells you how to avoid that.
+{% endhint %}
+
 1. If you are using Vortex, turn it off (it will get angry otherwise)
 2. Complete either of the following steps:
    * rename `bin/x6/plugins` to `plugins_`\
@@ -121,6 +131,20 @@ Cick into the "Binding..." field.&#x20;
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 If that doesn't help, make sure to turn off all your **overlays** (Discord, Steam, Microsoft Game Bar, Random Useless Bloatware) or start Cyberpunk in the **Windowed Borderless** mode.
+
+## Microstutters and Performance
+
+If you're experiencing performance issues with CET, first make sure to [#reinstall-cet](users-troubleshooting-cet.md#reinstall-cet "mention") **as per the instructions** to rule out side effects from old files.
+
+If that doesn't make the problems go away, make sure to update Windows and your graphics driver as per the red box under Troubleshooting's [#navigation](./#navigation "mention") section.
+
+If that doesn't help, you can find us in `#cet-support` on the [REDmodding Discord](https://discord.gg/redmodding). Please note that people there will first suggest everything else from this guide, so you might as well get it out of the way first.
+
+## Crash to Desktop on Alt+Tab
+
+Make sure to update Windows and your graphics driver as per the red box under Troubleshooting's [#navigation](./#navigation "mention") section, as this is the **only chance** you have of getting rid of your crashes.
+
+This is a **known issue** with AMD cards, and it's not something the CET developers can fix. Everyone who **could** fix it is informed, but such things take time. If you're on an AMD card, you can try running your game in Windowed Borderless mode. Otherwise, you just have to live with the crashes.
 
 [^1]: The folder where you installed your game. Steam/Epic/GOG will take you there if you browse game files
 
