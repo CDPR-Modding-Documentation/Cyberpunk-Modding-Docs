@@ -86,7 +86,12 @@ Longer instructions can be found [in this MakeUseOf guide](https://www.makeuseof
 \
 First [turn autoupdate off for Steam](users-downgrading-preventing-auto-updates.md#preventing-the-game-from-auto-updating) _**now**_ so that you don't forget to do it later. We'll wait.\
 \
-The depot for the **current version 1.63** is `download_depot 1091500 1091501 3385393324409330817` (this is **version specific**. Please reach out to update the version if it's outdated.)
+Here are the version-specific commands that you need to run. If you can't find your version on the list, check [here](https://steamdb.info/depot/1091501/history/).
+
+* 2.0/Phantom Liberty: `download_depot 1091500 1`091501 7695458851217910405
+* 1.63: `download_depot 1091500 1091501 3385393324409330817`
+
+Now, we do the thing:
 
 1. Open Steam
 2. Press `Win+R`
