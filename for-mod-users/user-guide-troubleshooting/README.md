@@ -46,6 +46,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
 * [You're on Linux](../users-modding-cyberpunk-2077/modding-on-linux.md)
 * [You have trouble with your pirated game](./#you-pirated-the-game)
 * [Photomode screenshots are borked](./#photomode-screenshots-are-blank)
+* Your icons are gone: see [#resetting-the-redscript-cache](./#resetting-the-redscript-cache "mention")
 * [Press \[none\] to continue](./#press-none-to-continue)
 * [You have audio issues](./#audio-problems)
 * [You have trouble with CET (Cyber Engine Tweaks)](./#mod-isnt-working-cet)
