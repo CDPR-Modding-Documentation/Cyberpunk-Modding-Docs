@@ -13,6 +13,8 @@ This guide will show you how to\
 \- export meshes from the game for use in other projects\
 \- import those meshes back into WolvenKit
 
+It will **not** show you anything else. For other use cases like **exporting characters,** please check [#wait-this-isnt-what-i-want](./#wait-this-isnt-what-i-want "mention")
+
 Assumed skill level: You are able to read ;)
 
 <table><thead><tr><th width="293">Tool</th><th>Tool version</th></tr></thead><tbody><tr><td><a href="https://github.com/WolvenKit/Wolvenkit/releases">WolvenKit</a></td><td>>= 8.8.0 <em>(8.7.0 works, but has a slightly different UI)</em></td></tr><tr><td><a href="https://www.blender.org/download/">Blender</a></td><td>>= 3.1 stable</td></tr><tr><td><a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on">WKit Blender AddOn</a><a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on"> </a></td><td>>= 1.1.0</td></tr></tbody></table>
