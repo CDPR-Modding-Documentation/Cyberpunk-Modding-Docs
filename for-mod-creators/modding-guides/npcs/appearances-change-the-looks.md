@@ -15,6 +15,8 @@ You can find another guide about this linked on the [Community Guides](../commun
 
 This guide will walk you through **editing NPC appearances** for Cyberpunk 2077.
 
+If you want to create your own custom NPC, see [here](npv-v-as-custom-npc/).
+
 **It uses the following versions:**
 
 * Cyberpunk 2077 game version >= 1.6

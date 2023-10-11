@@ -2,7 +2,7 @@
 description: Overview of hair related things
 ---
 
-# Hair
+# Cheat Sheet: Hair
 
 ## Summary <a href="#summary" id="summary"></a>
 

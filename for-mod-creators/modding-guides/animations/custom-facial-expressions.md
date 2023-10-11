@@ -46,7 +46,7 @@ Find the file that you want to use and copy it over the original file.
 Although the file names are gendered, you can pick **any of them**.
 {% endhint %}
 
-&#x20;If you aren't sure which file you want to use, check the [references](../../references-lists-and-overviews/cheat-sheet-body/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files).&#x20;
+&#x20;If you aren't sure which file you want to use, check the [references](../../references-lists-and-overviews/body/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files).&#x20;
 
 _👉 If you are missing reference screenshots, feel free to create and upload them. The existing ones have been created the hard way._
 
@@ -64,10 +64,10 @@ base\animations\facial\male_average\interactive_scene\generic_average_male_facia
 
 ## Step 3: Pick the expressions you want
 
-Photo mode uses a total of 12 expressions by looking for [animation names](../../references-lists-and-overviews/cheat-sheet-body/cheat-sheet-facial-expressions.md#photo-mode) in the target file. You need to connect the selection picker with the NPC file you just copied.&#x20;
+Photo mode uses a total of 12 expressions by looking for [animation names](../../references-lists-and-overviews/body/cheat-sheet-facial-expressions.md#photo-mode) in the target file. You need to connect the selection picker with the NPC file you just copied.&#x20;
 
 {% hint style="success" %}
-Find their names [here](../../references-lists-and-overviews/cheat-sheet-body/cheat-sheet-facial-expressions.md).
+Find their names [here](../../references-lists-and-overviews/body/cheat-sheet-facial-expressions.md).
 
 **Important:** AMM and photo mode use different keys. Just make sure to pick the right table, and everything will be fine.
 {% endhint %}
@@ -76,7 +76,7 @@ Do this by opening the target file (which you replaced with the NPC of your choi
 
 Find the animation you want to use and change its name:
 
-<figure><img src="https://i.imgur.com/KYevLPa.png" alt=""><figcaption><p>Replace the original name with one from the <a href="../../references-lists-and-overviews/cheat-sheet-body/cheat-sheet-facial-expressions.md#photo-mode">list</a>. <br>If you don't know which ones you want to use, check out the <a href="../../references-lists-and-overviews/cheat-sheet-body/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files">references</a>.</p></figcaption></figure>
+<figure><img src="https://i.imgur.com/KYevLPa.png" alt=""><figcaption><p>Replace the original name with one from the <a href="../../references-lists-and-overviews/body/cheat-sheet-facial-expressions.md#photo-mode">list</a>. <br>If you don't know which ones you want to use, check out the <a href="../../references-lists-and-overviews/body/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files">references</a>.</p></figcaption></figure>
 
 Rinse and repeat the process until you're done.
 
@@ -87,7 +87,7 @@ Save the file, pack the project, and start the game - voila, you now have custom
 ## References
 
 {% hint style="info" %}
-You can find a list of screenshots with facial expression references [here](../../references-lists-and-overviews/cheat-sheet-body/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files).
+You can find a list of screenshots with facial expression references [here](../../references-lists-and-overviews/body/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files).
 {% endhint %}
 
 ## Troubleshooting
