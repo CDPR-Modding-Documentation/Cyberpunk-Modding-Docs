@@ -26,6 +26,10 @@ If you want to learn how mesh material assignment works in general, you can chec
 For an overview of base materials and example files, you can check [here](../../../references-lists-and-overviews/cheat-sheet-materials.md).
 {% endhint %}
 
+{% hint style="warning" %}
+If your changes do not become active, you will want to install [Material and Texture Override](https://www.nexusmods.com/cyberpunk2077/mods/5266) from Nexus.
+{% endhint %}
+
 ## **Step 1: Finding your item**
 
 {% hint style="info" %}
