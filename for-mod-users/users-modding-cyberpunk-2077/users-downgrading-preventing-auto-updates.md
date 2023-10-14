@@ -88,7 +88,8 @@ First [turn autoupdate off for Steam](users-downgrading-preventing-auto-updates.
 \
 Here are the version-specific commands that you need to run. If you can't find your version on the list, check [here](https://steamdb.info/depot/1091501/history/).
 
-* 2.0/Phantom Liberty: `download_depot 1091500 1`091501 7695458851217910405
+* 2.0 Base Game: `download_depot 1091500 1091501 7695458851217910405`
+* 2.0 Phantom Liberty: `download_depot 2138330 2138330 4702299018468121610`
 * 1.63: `download_depot 1091500 1091501 3385393324409330817`
 
 Now, we do the thing:
@@ -96,8 +97,9 @@ Now, we do the thing:
 1. Open Steam
 2. Press `Win+R`
 3. Type `steam://open/console` to get into the steamdb console
-4. In the console, enter this command exactly to start the download (it'll be the entire 60 GB so be prepared): `download_depot 1091500 1091501 3385393324409330817`&#x20;
+4. In the console, enter this command exactly to start the download (it'll be the entire 60 GB so be prepared): `download_depot 1091500 1091501 7695458851217910405`
 5. After the game finishes downloading, go to the installation location listed in the console, and copy either just the changed files (you can view the manifest for the new version) or the whole thing over your game directory to overwrite the new changes.
+6. If you have the Phantom Liberty DLC, you will need to do the steps 4 and 5 again for the DLC itself with the command: `download_depot 2138330 2138330 4702299018468121610`
 
 This should leave you with the correct previous game version. You can right-click cyberpunk2077.exe to verify the versions in Properties > Details.
 
