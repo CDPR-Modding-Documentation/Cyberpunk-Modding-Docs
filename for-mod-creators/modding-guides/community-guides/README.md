@@ -19,6 +19,7 @@ description: This page holds a list of community guides all over the internet.
 | [CDPR: Redmod Part 3 (youtube)](https://www.youtube.com/watch?v=m5IL\_TRwTew\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=3)                                                     | How to install/replace animations                                                                            |
 | [Creating custom microblends](https://docs.google.com/document/d/1oRjXHE08oDnaKwvgEOKxl0gZGkBADgSn2azCRwUeQLs/view)                                                                 | <p>Google Doc (who made this?)<br>Requires Photoshop or <a href="https://www.photopea.com/">Photopea</a></p> |
 | [Adding pride make-up to NPCs](https://docs.google.com/document/d/1P4x1447vbLYFb6r6HpTgrPvETMQ9wSeMfVz7\_04AGPU/edit)                                                               | Google Doc (who made this?)                                                                                  |
+| [CyberwareEx install and Customization](https://docs.google.com/document/d/16ZxDrPkgDOF\_TbmmWaAjOXry-Q3l2DL\_bPE-8aSz3Xs/edit?usp=sharing)                                         | Google Doc by supernova1672.                                                                                 |
 
 ## Clothing
 
