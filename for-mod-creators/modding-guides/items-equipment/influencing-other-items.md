@@ -39,7 +39,7 @@ Starting with version >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/re
 | -------------- | ------------------------------------------------------------------------------------ |
 | `{gender}`     | m or w depending on V's body gender                                                  |
 | `{skin_color}` | [cheat-sheet-head](../../references-lists-and-overviews/cheat-sheet-head/ "mention") |
-| `{hair_color}` | [hair.md](../../references-lists-and-overviews/cheat-sheet-head/hair.md "mention")   |
+| `{hair_color}` | [hair.md](../../references-lists-and-overviews/body/hair.md "mention")               |
 
 So depending on your PC's body gender and colouring, the meshAppearance `my_app_{gender}`**`{skin_color}_{`**`hair_color}` could translate to `my_app_w__01_ca_pale__blue_red_ombre`.
 

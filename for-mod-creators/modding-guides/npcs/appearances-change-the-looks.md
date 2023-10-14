@@ -75,7 +75,7 @@ This is where the magic happens.
 
 ## Changing and removing components
 
-**Change** items by selecting a [different appearance](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) or a [different mesh](../items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md):
+**Change** items by selecting a [different appearance](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) or a [different mesh](../items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/):
 
 <figure><img src="../../../.gitbook/assets/app_modification_guide_change_mesh.png" alt=""><figcaption><p>Wake up, Johnny! … Follow the white rabbit, Johnny!</p></figcaption></figure>
 

@@ -33,7 +33,7 @@ If your changes do not become active, you will want to install [Material and Tex
 ## **Step 1: Finding your item**
 
 {% hint style="info" %}
-This tutorial assumes that you already know which mesh and appearance you want to change. If you don't know that, you need to [find the correct game file](replace-a-player-item-with-an-npc-item.md#summary). If you only have a cheat code, see [Spawn Codes](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app) instead.
+This tutorial assumes that you already know which mesh and appearance you want to change. If you don't know that, you need to [find the correct game file](replace-a-player-item-with-an-npc-item/#summary). If you only have a cheat code, see [Spawn Codes](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app) instead.
 {% endhint %}
 
 We will use the female variant of the puffy vest (as I've already [mapped and documented it](../../../references-lists-and-overviews/equipment/variants-and-appearances.md#reinforced-puffer-vest-4-variants)):
@@ -51,7 +51,7 @@ Add the item to your project and open it in WolvenKit. You want the original to 
 {% hint style="info" %}
 If you don't know which appearance you want to edit, check [here](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app).&#x20;
 
-`default` is the fallback appearance that'll be used if anything can't be resolved by name or index. This is the reason why most item swap mods give you only a single appearance - people didn't set up the [variants](replace-a-player-item-with-an-npc-item.md).
+`default` is the fallback appearance that'll be used if anything can't be resolved by name or index. This is the reason why most item swap mods give you only a single appearance - people didn't set up the [variants](replace-a-player-item-with-an-npc-item/).
 {% endhint %}
 
 We will change the appearance `bwstripes`, which is used by `Vest_17_basic_01`:
