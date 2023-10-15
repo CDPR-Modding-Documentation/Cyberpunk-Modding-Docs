@@ -163,7 +163,7 @@ The NPV picker does this for you, but here's how to select your eyebrow appearan
 
 * &#x20;open up the mesh file and expand the first list `appearances`
 * see a bunch of entries with naming schemas like `colour_01`
-* the numbers correspond with the type of eyebrow in the character editor (look them up [here](../../../references-lists-and-overviews/body/hair.md))
+* the numbers correspond with the type of eyebrow in the character editor (look them up [here](../../../references-lists-and-overviews/cheat-sheet-head/hair.md))
 * Select the correct colour and appearance number
 {% endhint %}
 
@@ -206,7 +206,7 @@ To use modded hair, find the correct files [inside the mod](../../../modding-cyb
 
 1. Delete the current hair from the .app — there should be 2-3 components, their names will start with either `hair_` or `hh_0`
 2. Find the correct hair mesh. You have three options for this:
-   1. Looking it up on [our nifty list](../../../references-lists-and-overviews/body/hair.md#name-in-files-by-index)
+   1. Looking it up on [our nifty list](../../../references-lists-and-overviews/cheat-sheet-head/hair.md#name-in-files-by-index)
    2. Using [NoraLee's NPV Part Picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker)&#x20;
    3. Filtering the files and clicking through their previews: \
       female: `base\characters\common\hair > wa_ > .mesh > !shadow`\

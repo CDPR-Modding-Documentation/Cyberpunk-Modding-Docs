@@ -245,7 +245,7 @@ As stated in the [importing/exporting guide](exporting-and-importing-meshes/), i
 
 ### My mesh is completely warped
 
-If you have [added the item](../modding-guides/items-equipment/adding-new-items/) via [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl) or [swapped out an in-game item](../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/) with something that belongs in a different slot (e.g. a jacket on the head slot), you might have to fix the corresponding entity file.
+If you have [added the item](../modding-guides/items-equipment/adding-new-items/) via [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl) or [swapped out an in-game item](../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md) with something that belongs in a different slot (e.g. a jacket on the head slot), you might have to fix the corresponding entity file.
 
 ### My mesh is string cheese/exploding vertices/a puddle on the floor
 

@@ -16,13 +16,13 @@ This tutorial will teach you how to switch a player mesh for an NPC garment and 
 
 Other relevant know-how for this process:&#x20;
 
-* [Finding an item's spawn code and mesh](../../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials)
-* [Editing mesh appearances](../changing-materials-colors-and-textures.md)
+* [Finding an item's spawn code and mesh](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials)
+* [Editing mesh appearances](changing-materials-colors-and-textures.md)
 
-For a guide how to import meshes into Cyberpunk, check [here](../../../../3d-modelling/exporting-and-importing-meshes/).
+For a guide how to import meshes into Cyberpunk, check [here](../../../3d-modelling/exporting-and-importing-meshes/).
 
 {% hint style="danger" %}
-Make sure that you replace an item that you can actually spawn — not all items in V's folder are actually spawn-able =>[spawn-codes-baseids-hashes.md](../../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention")&#x20;
+Make sure that you replace an item that you can actually spawn — not all items in V's folder are actually spawn-able =>[spawn-codes-baseids-hashes.md](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention")&#x20;
 {% endhint %}
 
 ## Step 1: Replace the mesh
@@ -45,7 +45,7 @@ Example: Replacing the short-sleeved poser jacket with the monk shirt with the t
 4. Rename the new mesh to **replace** the old mesh (e.g. "`t2_135_wa_jacket__monk_shirt.mesh`" -> "`t2_084_pwa__short_sleeves.mesh`")
 5. Open both meshes in WolvenKit by double-clicking them in the Project Explorer — we will now transfer the appearance names to enable **variants**.
 
-<figure><img src="../../../../../.gitbook/assets/replacement_appearance_names.png" alt=""><figcaption><p>See Step 2 for more intel on this</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/replacement_appearance_names.png" alt=""><figcaption><p>See Step 2 for more intel on this</p></figcaption></figure>
 
 ## Step 2: Enabling variants
 
@@ -54,14 +54,14 @@ The game looks up appearances in a mesh file **by name**. If none can be found, 
 We can simply transfer the names from the old mesh to the new mesh by renaming the entries in the appearances array.&#x20;
 
 {% hint style="info" %}
-If there are more entries than variants available, or if you're just curious which spawn code corresponds to which appearance, go [here](../../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials) for a guide how to find out.
+If there are more entries than variants available, or if you're just curious which spawn code corresponds to which appearance, go [here](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials) for a guide how to find out.
 {% endhint %}
 
 Now that we have done that, we can start recolouring.
 
 ## Step 3 (optional): Find the .mlsetups
 
-Each appearance in the appearances array has a list of chunkMask entries (one per submesh), which are assigned a material by name. For a more detailed explanation, you can check [this page](../../../../files-and-what-they-do/3d-objects-.mesh-files.md#chunkmaterials), but all we care about right now is this lookup chain:
+Each appearance in the appearances array has a list of chunkMask entries (one per submesh), which are assigned a material by name. For a more detailed explanation, you can check [this page](../../../files-and-what-they-do/3d-objects-.mesh-files.md#chunkmaterials), but all we care about right now is this lookup chain:
 
 <figure><img src="https://i.imgur.com/HK6Z0LA.png" alt=""><figcaption></figcaption></figure>
 
@@ -70,7 +70,7 @@ Each appearance in the appearances array has a list of chunkMask entries (one pe
 You can now save your mesh, then **install your mod** by clicking on the green arrow in Wolvenkit's toolbar. Once you have started up the game, the old item will now look like your new mesh — including its variants.
 
 {% hint style="info" %}
-For a guide on how to edit an .mlsetup file (or to change an item's appearance in general), see [here](../changing-materials-colors-and-textures.md#exporting-the-.mlsetup).&#x20;
+For a guide on how to edit an .mlsetup file (or to change an item's appearance in general), see [here](changing-materials-colors-and-textures.md#exporting-the-.mlsetup).&#x20;
 {% endhint %}
 
 Enjoy!

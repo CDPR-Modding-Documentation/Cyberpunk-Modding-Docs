@@ -46,7 +46,6 @@ This section aims to give you a quick overview. If your exact problem isn't list
 * [You're on Linux](../users-modding-cyberpunk-2077/modding-on-linux.md)
 * [You have trouble with your pirated game](./#you-pirated-the-game)
 * [Photomode screenshots are borked](./#photomode-screenshots-are-blank)
-* Your icons are gone: see [#resetting-the-redscript-cache](./#resetting-the-redscript-cache "mention")
 * [Press \[none\] to continue](./#press-none-to-continue)
 * [You have audio issues](./#audio-problems)
 * [You have trouble with CET (Cyber Engine Tweaks)](./#mod-isnt-working-cet)
@@ -133,12 +132,6 @@ Otherwise:
 * If the game crashes before you make it to the menu, see [#crash-before-menu](./#crash-before-menu "mention")
 * If you can start a new game without crashing, see [#corrupt-ish-saves](./#corrupt-ish-saves "mention")
 
-#### If you broke it with the savegame editor
-
-Check [CyberCAT's troubleshooting section](../../for-mod-creators/modding-tools/savegame-editor-cybercat.md#troubleshooting) — in the meantime, revert to the backup.
-
-#### Otherwise
-
 Most likely, you have an issue with an .archive mod. Here's what you can do:
 
 1. To rule out that it's a save game problem (those are extremely rare), start a new game.
@@ -188,9 +181,27 @@ Game.SetDebugFact("wbr_jpn_ripdoc_02_default_on", 0)
 
 7. Save your game in a new slot and close it
 8. Remove Immersive Rippers .archive file("Cyberpunk 2077\archive\pc\mod\ImmersiveRippers.archive")
-9. Save your game again and remove all mods used in version 1.63
-10. OPTIONAL: Load the save in vanilla 1.63, it should work there too.
-11. Download the newest version of Cyberpunk2077! The clean created save should work for vanilla and modded instances of the game.
+9. Load into your new save and and run the following CET-Commands to restore the rippers' default behaviour:&#x20;
+
+```
+﻿Game.SetDebugFact("bls_ina_se1_ripperdoc_01_default_on", 1); 
+Game.SetDebugFact("cct_dtn_ripdoc_01_default_on", 1); 
+Game.SetDebugFact("hey_spr_ripperdoc_01_default_on", 1); 
+Game.SetDebugFact("pac_wwd_ripdoc_01_default_on", 1); 
+Game.SetDebugFact("std_arr_ripperdoc_01_default_on", 1); 
+Game.SetDebugFact("std_rcr_ripperdoc_01_default_on", 1); 
+Game.SetDebugFact("wat_kab_ripperdoc_01_default_on", 1); 
+Game.SetDebugFact("wat_kab_ripperdoc_03_default_on", 1); 
+Game.SetDebugFact("wat_nid_ripperdoc_01_default_on", 1); 
+Game.SetDebugFact("wbr_hil_ripdoc_01_default_on", 1); 
+Game.SetDebugFact("wbr_jpn_ripdoc_01_default_on", 1); 
+Game.SetDebugFact("wbr_jpn_ripdoc_02_default_on", 1);
+```
+
+10. Save your game again and remove all mods used in version 1.63
+11. OPTIONAL: Load the save in vanilla 1.63, it should work there too.
+12. Download the newest version of Cyberpunk2077! \
+    The clean created save should work for vanilla and modded instances of the game.
 
 </details>
 
@@ -211,10 +222,6 @@ Kiroshi Crowd Scanner and Tooltip Fixer do not play together ([source](https://d
 You're lucky, because it means that you can systematically troubleshoot. Go to the [bisect](./#finding-the-broken-mod-bisecting) section; start with .archive mods, but if that doesn't fix it, do the other folders as well.
 
 **If you can't**
-
-Occasionally, crashes can be triggered by cross-platform saves. You can disable them in the main menu under Gameplay -> Miscellaneous&#x20;
-
-#### If that wasn't it
 
 … that puts you in the same boat as the rest of us: most veteran players live with occasional crashes, especially while tabbing out and back in under certain circumstances.
 
