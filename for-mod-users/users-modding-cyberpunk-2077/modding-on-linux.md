@@ -97,15 +97,15 @@ Repeat the process for `d3dcompiler_47`
 
 Apply via "OK". You're now done with Protontricks.
 
-8. Switch to steam and make sure that the launch options are set. They should look like this:\
-   `WINEDLLOVERRIDES="winmm.dll,version=n,b" %command%`
+8. Switch to steam and make sure that the launch options are set.&#x20;
 
-{% hint style="info" %}
-If you have issues with additional core frameworks, you need to add them as well:
-
-`WINEDLLOVERRIDES="version.dll,winmm.dll,RED4ext.dll,ArchiveXL.dll,input_loader.dll,mod_settings.dll,TweakXL.dll=n,b,Codeware.dll=n,b"`
+{% hint style="warning" %}
+Please copy the most up-to-date command from the section[#set-the-launch-options-by-hand](modding-on-linux.md#set-the-launch-options-by-hand "mention"), then keep on reading here.
 {% endhint %}
+
+The result should be something like this (with the string that you copied from the start of the guide):\
+`WINEDLLOVERRIDES="winmm.dll,version=n,b" %command%`
 
 <figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption></figcaption></figure>
 
-If that didn't help you, you might be able to find the solution on the [CET wiki page](https://wiki.redmodding.org/cyber-engine-tweaks/getting-started/installing/untitled).
+If that didn't help you, check the [Cyber Engine Tweaks wiki](http://127.0.0.1:5000/s/-MP5jWcLZLbbbzO-\_ua1-887967055/getting-started/installing) for additional instructions, or find us on [Discord](https://discord.gg/redmodding) in `#mod-troubleshooting`.
