@@ -14,16 +14,20 @@ You need to&#x20;
 
 * install d3dcompiler\_47
 * install vcrun2022
-* set your launch options to `WINEDLLOVERRIDES="winmm,version=n,b" %command% -modded`
-* If you have trouble with core frameworks, add them to the launch options like so: \
-  `WINEDLLOVERRIDES="version.dll,winmm.dll,RED4ext.dll,ArchiveXL.dll,input_loader.dll,mod_settings.dll,TweakXL.dll=n,b,Codeware.dll=n,b"`
+* Adjust the Steam launch option as specified in [#set-the-launch-options-by-hand](modding-on-linux.md#set-the-launch-options-by-hand "mention")
 
-## Setting the launch options by hand
+## Set the launch options by hand
 
 Under Linux, you have to start the game by setting the following launch options for Cyberpunk:
 
 ```
 WINEDLLOVERRIDES="winmm,version=n,b" %command% -modded
+```
+
+or the longer version with core frameworks (adjust as needed):
+
+```
+WINEDLLOVERRIDES="version.dll,winmm.dll,RED4ext.dll,ArchiveXL.dll,TweakXL.dll=n,b,Codeware.dll=n,b" %command% -modded
 ```
 
 <figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption></figcaption></figure>
