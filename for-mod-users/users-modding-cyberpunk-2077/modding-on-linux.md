@@ -15,6 +15,8 @@ You need to&#x20;
 * install d3dcompiler\_47
 * install vcrun2022
 * set your launch options to `WINEDLLOVERRIDES="winmm,version=n,b" %command% -modded`
+* If you have trouble with core frameworks, add them to the launch options like so: \
+  `WINEDLLOVERRIDES="version.dll,winmm.dll,RED4ext.dll,ArchiveXL.dll,input_loader.dll,mod_settings.dll,TweakXL.dll=n,b,Codeware.dll=n,b"`
 
 ## Setting the launch options by hand
 
@@ -31,11 +33,11 @@ If you can't get it to work, follow the steps below to apply the launch options 
 ## Setting the launch options via Protontricks
 
 {% hint style="warning" %}
-Make sure&#x20;
+Make sure that you are on the most recent version of Protontricks.
 {% endhint %}
 
 {% hint style="info" %}
-If you don't want to read text, find a video documenting the process [here](https://youtu.be/CYKCOBaZpBU?t=110). Thanks to #Connor for providing the screenshots and transcription!
+If you don't want to read text, find a video documenting the process [here](https://youtu.be/CYKCOBaZpBU?t=110). Thanks to Connor for providing the screenshots and transcription!
 {% endhint %}
 
 To configure the necessary parameters, you can use the app Protontricks, which you can download through the built-in app browser "Discover":&#x20;
@@ -93,6 +95,12 @@ Apply via "OK". You're now done with Protontricks.
 
 8. Switch to steam and make sure that the launch options are set. They should look like this:\
    `WINEDLLOVERRIDES="winmm.dll,version=n,b" %command%`
+
+{% hint style="info" %}
+If you have issues with additional core frameworks, you need to add them as well:
+
+`WINEDLLOVERRIDES="version.dll,winmm.dll,RED4ext.dll,ArchiveXL.dll,input_loader.dll,mod_settings.dll,TweakXL.dll=n,b,Codeware.dll=n,b"`
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption></figcaption></figure>
 
