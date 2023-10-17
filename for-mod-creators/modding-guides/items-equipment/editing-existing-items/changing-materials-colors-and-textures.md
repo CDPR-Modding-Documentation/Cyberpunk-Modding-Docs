@@ -11,6 +11,10 @@ description: Changing how an item looks in-game
 
 This guide will teach you how to change an item's appearance by editing its MultilayerSetup (\*.mlsetup file), how to rename materials, and how add your own mlsetups (**custompathing**).
 
+{% hint style="success" %}
+For a step-by-step walkthrough for a recolour of the Netrunner suit, check [r-and-r-colour-editing.md](../recolours-and-refits/r-and-r-colour-editing.md "mention")
+{% endhint %}
+
 It uses the following versions:
 
 * WolvenKit: [8.7.1-nightly.2022-11-06](https://github.com/WolvenKit/WolvenKit/compare/8.7.1-nightly.2022-11-05...8.7.1-nightly.2022-11-06) (but anything > 8.7 will do)

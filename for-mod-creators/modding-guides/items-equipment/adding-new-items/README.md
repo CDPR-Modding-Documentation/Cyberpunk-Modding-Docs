@@ -11,9 +11,8 @@ description: No more replacers! Add your own gear with TweakXL and ArchiveXL
 
 This guide will walk you through **adding your own items** to Cyberpunk 2077, which can then be spawned via console.&#x20;
 
-**It uses the following versions:**
+**It uses the following versions** (yours should be **equal** or **higher**, the most recent stable release works fine)
 
-* Cyberpunk 2077 game version 1.6.2 Hotfix
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.9.0
 * [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) 1.1.4
 * [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) 1.4.3

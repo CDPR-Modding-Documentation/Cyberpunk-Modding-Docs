@@ -17,11 +17,12 @@ description: Item spawn codes and how they link to appearances
 
 A selection of lists for looking up item codes. Alternatively, you can browse through the game's files, or search e.g. the [fandom](https://cyberpunk.fandom.com/wiki/Cyberpunk\_2077\_Clothing) wiki.
 
-|                                                                                                                                                 |                                                 |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------- |
-| [Google Doc](https://docs.google.com/document/d/e/2PACX-1vRJaq1sHobpHjNxPzjtSHVltNUXU6g5uYUfjw9zgrfaC9MQzEmEXFsqDcYVJDWS5cdpGuixH\_A\_n2fN/pub) | A list with BaseIDs                             |
-| [Google Sheet](https://docs.google.com/spreadsheets/d/1UeEA0ONMtF6CNl1Cutkb4DNJ\_JiabhstfwiaA94m0ds/edit)                                       | Google Sheets (August 2022), supports filtering |
-|                                                                                                                                                 |                                                 |
+|                                                                                                                                                 |                                                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Excel Sheet](https://1drv.ms/x/s!ArM35g0UkWjvjcVPT-fhFPPCZUfDLw?e=BOxScl) (2.0 compatible)                                                     | <p>Excel sheet from <code>#cet-commands</code> on <a href="https://discord.gg/redmodding">Discord</a> with item codes. <br>Please note the <strong>tabs</strong> at the bottom.</p> |
+| [Google Doc](https://docs.google.com/document/d/e/2PACX-1vRJaq1sHobpHjNxPzjtSHVltNUXU6g5uYUfjw9zgrfaC9MQzEmEXFsqDcYVJDWS5cdpGuixH\_A\_n2fN/pub) | A list with BaseIDs                                                                                                                                                                 |
+| [Google Sheet](https://docs.google.com/spreadsheets/d/1UeEA0ONMtF6CNl1Cutkb4DNJ\_JiabhstfwiaA94m0ds/edit)                                       | Google Sheets (August 2022), supports filtering                                                                                                                                     |
+|                                                                                                                                                 |                                                                                                                                                                                     |
 
 {% hint style="danger" %}
 Player equipment only: \
