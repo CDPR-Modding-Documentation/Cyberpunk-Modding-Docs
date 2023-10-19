@@ -12,7 +12,7 @@ Check the section's sub pages in the wiki's navigation tree for more detailed in
 
 #### More intel and look-ups:
 
-* [cheat-sheet-materials.md](../references-lists-and-overviews/cheat-sheet-materials.md "mention") for direct edits
+* [cheat-sheet-materials.md](../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md "mention") for direct edits
 * [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention")and their materials
 * [re-using-materials-.mi.md](re-using-materials-.mi.md "mention") – material template files explained
 

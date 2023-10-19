@@ -27,7 +27,7 @@ If you want to learn how mesh material assignment works in general, you can chec
 {% endhint %}
 
 {% hint style="success" %}
-For an overview of base materials and example files, you can check [here](../../../references-lists-and-overviews/cheat-sheet-materials.md).
+For an overview of base materials and example files, you can check [here](../../../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md).
 {% endhint %}
 
 {% hint style="warning" %}

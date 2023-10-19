@@ -5,19 +5,19 @@ description: Various kinds of materials, and where to find them
 # Cheat sheet: Materials
 
 {% hint style="info" %}
-This page contains a brief overview of existing materials. **For a more in-depth explanation as well as downloadable example files, check** [**this page**](../materials/)**.**\
+This page contains a brief overview of existing materials. **For a more in-depth explanation as well as downloadable example files, check** [**this page**](../../for-mod-creators/materials/)**.**\
 
 
-For an overview of Multilayered properties, check [here](../materials/multilayered/multilayered-material-properties.md).
+For an overview of Multilayered properties, check [here](../../for-mod-creators/materials/multilayered/multilayered-material-properties.md).
 
-For preview images of multilayered materials, check [here](../materials/multilayered/multilayered-previews.md). (This page needs further data!)
+For preview images of multilayered materials, check [here](../../for-mod-creators/materials/multilayered/multilayered-previews.md). (This page needs further data!)
 
 
 
-For theory about material templates, check [here](../materials/re-using-materials-.mi.md).
+For theory about material templates, check [here](../../for-mod-creators/materials/re-using-materials-.mi.md).
 
 \
-If you don't know how to edit material properties, check [here](../materials/).
+If you don't know how to edit material properties, check [here](../../for-mod-creators/materials/).
 {% endhint %}
 
 ## Simple / Basic materials
@@ -44,7 +44,7 @@ A white mlMask will apply the selected material to the whole surface of the mesh
 
 ## Textured Materials
 
-For further details, see [here](../materials/#textured-material).
+For further details, see [here](../../for-mod-creators/materials/#textured-material).
 
 |                                                             |                                                                                                                                |
 | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -65,7 +65,7 @@ Works exactly like multilayered, but uses `base\characters\common\cyberspace\sil
 
 ## Emissive Materials
 
-See [here](../materials/#emissive-material) how it works and how to configure it.
+See [here](../../for-mod-creators/materials/#emissive-material) how it works and how to configure it.
 
 | material                                                                                                    | description                                                                                                                                                        |
 | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -78,7 +78,7 @@ See [here](../materials/#emissive-material) how it works and how to configure it
 
 ## Glass
 
-For more details on glass materials and instructions on how to configure them, see [here](../materials/#glass).&#x20;
+For more details on glass materials and instructions on how to configure them, see [here](../../for-mod-creators/materials/#glass).&#x20;
 
 <table><thead><tr><th width="344"></th><th></th></tr></thead><tbody><tr><td>Basic glass, with warping properties, simple tint as color, simple opacity</td><td><code>base\materials\glass_onesided.mt</code></td></tr><tr><td>Non-warping glass, destructible, tintable via colors</td><td><code>base\vehicles\common\materials\glass_windshield_tinted_black.mi</code></td></tr><tr><td>Device screen glass </td><td><code>base\fx\shaders\parallaxscreen.mt</code></td></tr></tbody></table>
 
@@ -90,8 +90,6 @@ For more details on glass materials and instructions on how to configure them, s
 
 Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room\_plastic_black.mi`
 
-<table><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>BaseColor</td><td><code>base\materials\placeholder\white.xbm</code></td></tr><tr><td>Normal</td><td>optional: path to your normal map</td></tr><tr><td>Roughness</td><td>optional: path to your roughness map</td></tr><tr><td>RoughnessBias</td><td>0.200000003</td></tr><tr><td>BaseColorScale</td><td>Colour as x/y/z values (color picker blend file <a href="https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks">here</a>)</td></tr></tbody></table>
+<table><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>BaseColor</td><td><code>base\materials\placeholder\white.xbm</code></td></tr><tr><td>Normal</td><td>optional: path to your normal map</td></tr><tr><td>Roughness</td><td>optional: path to your roughness map</td></tr><tr><td>RoughnessBias</td><td>0.200000003</td></tr><tr><td>BaseColorScale</td><td>Colour as x/y/z values (color picker blend file <a href="https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks">here</a></td></tr></tbody></table>
 
-## Liquid
-
-Use `base\materials\fillable_fluid_vertex.mt` or see [here ](../materials/#liquid)for details.
+Use `base\materials\fillable_fluid_vertex.mt` or see [here ](../../for-mod-creators/materials/#liquid)for details.

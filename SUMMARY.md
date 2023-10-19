@@ -56,7 +56,7 @@
     * [Cheat Sheet: Facial Expressions](for-mod-creators/references-lists-and-overviews/cheat-sheet-body/cheat-sheet-facial-expressions.md)
   * [Cheat sheet: Rigs and animations](for-mod-creators/references-lists-and-overviews/cheat-sheet-rigs-and-animations.md)
   * [Cheat Sheet: Photo Mode](for-mod-creators/references-lists-and-overviews/cheat-sheet-photo-mode.md)
-  * [Cheat sheet: Materials](for-mod-creators/references-lists-and-overviews/cheat-sheet-materials.md)
+  * [Cheat sheet: Materials](modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md)
   * [Equipment](for-mod-creators/references-lists-and-overviews/equipment/README.md)
     * [Weapons](for-mod-creators/references-lists-and-overviews/equipment/weapons.md)
     * [Spawn Codes (BaseIDs/Hashes)](for-mod-creators/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md)
