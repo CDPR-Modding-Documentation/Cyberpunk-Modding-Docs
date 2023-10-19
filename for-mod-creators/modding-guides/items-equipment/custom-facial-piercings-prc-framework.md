@@ -152,7 +152,7 @@ Next import it in wkit.
 
 
 
-<figure><img src="../../../.gitbook/assets/image18.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image18 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Creating the mod
 
