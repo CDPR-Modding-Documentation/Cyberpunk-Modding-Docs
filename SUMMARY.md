@@ -89,6 +89,7 @@
   * [Materials: troubleshooting](for-mod-creators/materials/materials-troubleshooting.md)
 * [📂 Game components explained](for-mod-creators/files-and-what-they-do/README.md)
   * [File Formats](for-mod-creators/files-and-what-they-do/file-formats.md)
+  * [Environment: .env and .envparam files](for-mod-creators/files-and-what-they-do/environment-.env-and-.envparam-files.md)
   * [Appearance: .app files](for-mod-creators/files-and-what-they-do/appearance-.app-files.md)
   * [Entity: .ent files](for-mod-creators/files-and-what-they-do/entity-.ent-files.md)
   * [3d objects: .mesh files](for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files.md)
