@@ -4,6 +4,12 @@ description: Changing NPC's info on scan and its archetype.
 
 # Change NPC's info and archetype - REDMod
 
+**Created by** [daemon2077](http://127.0.0.1:5000/u/XREbvwu6Q0e6vAu65AnL9ntMvAD3 "mention")\
+**Published October 19 2023**\
+**Game Version 2.01**
+
+
+
 This tutorial will show you how to change NPC's info when scanning them including archetype using REDMod. Only thing that you will need is REDMod dlc which is free and any IDE that is capable of editing .json, i prefer Visual Studio Code.You can get REDMod [here](https://www.cyberpunk.net/en/modding-support).
 
 ## Preparation
