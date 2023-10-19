@@ -38,14 +38,14 @@ Prerequisites:\
 3. Import the player mesh (File -> Import -> Cyberpunk GLTF)
 4. Import the NPC mesh
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot_2.png" alt=""><figcaption><p>Import mesh option</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot_2 (1).png" alt=""><figcaption><p>Import mesh option</p></figcaption></figure>
 
 ## Step 3: Editing meshes in Blender
 
 1. Delete or hide the NPC item's armature
 2. Delete the NPC item's armature modifier (or make sure that it points at the player item's armature)
 
-<figure><img src="../../../../../.gitbook/assets/Screenshot_3.png" alt=""><figcaption><p>Delete modfiers on all NPC's submeshes</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/Screenshot_3 (1).png" alt=""><figcaption><p>Delete modfiers on all NPC's submeshes</p></figcaption></figure>
 
 ### Step 3.1: Weight transfer
 
