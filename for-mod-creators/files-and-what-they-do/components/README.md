@@ -9,7 +9,7 @@ description: This page contains documentation for the most common component type
 {% endcontent-ref %}
 
 {% hint style="info" %}
-See the [Comprehensive Component Hierarchy List](comprehensive-components-list.md) for all possible components used in the game, organized by hierachy. Use for researching and documenting components.
+See the [Comprehensive Component Hierarchy List](../../../modding-know-how/files-and-what-they-do/components/comprehensive-components-list.md) for all possible components used in the game, organized by hierachy. Use for researching and documenting components.
 
 For a hands-on guide on how to safely change components in .app files, look [here](../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components).
 {% endhint %}

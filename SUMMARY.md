@@ -94,7 +94,7 @@
   * [Entity: .ent files](for-mod-creators/files-and-what-they-do/entity-.ent-files.md)
   * [3d objects: .mesh files](for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files.md)
   * [Components](for-mod-creators/files-and-what-they-do/components/README.md)
-    * [Comprehensive Component Hierarchy List](for-mod-creators/files-and-what-they-do/components/comprehensive-components-list.md)
+    * [Comprehensive Component Hierarchy List](modding-know-how/files-and-what-they-do/components/comprehensive-components-list.md)
     * [Documented Components](for-mod-creators/files-and-what-they-do/components/documented-components.md)
   * [Game icons: The inkatlas file](for-mod-creators/files-and-what-they-do/game-icons-the-inkatlas-file.md)
   * [Textures: .xbm files](for-mod-creators/files-and-what-they-do/textures-.xbm-files.md)
