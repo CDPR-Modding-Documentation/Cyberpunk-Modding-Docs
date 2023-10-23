@@ -45,6 +45,17 @@ On top of that, you can add **body mods** (mostly chest size, but occasionally f
 
 Sometimes, you need to hide parts of the item in first person. – for example helmets, since you don't want to have half a helmet floating in front of your face (unless you consider that immersive; most people don't).
 
+{% hint style="info" %}
+To hide an item in first person perspective, you can add the following tag to the root entity:
+
+`EmptyAppearance:FPP`
+
+or add an `&FPP` variant pointing at
+
+`base\characters\appearances\player\items\empty_appearance.app` \
+`default`
+{% endhint %}
+
 ## Tags
 
 Tags are a way to tell Cyberpunk that an item has certain properties and should behave in a certain way. Thanks to ArchiveXL's extended tag system, you can for example force flat feet for female V, or un-hide hair from a head item.
