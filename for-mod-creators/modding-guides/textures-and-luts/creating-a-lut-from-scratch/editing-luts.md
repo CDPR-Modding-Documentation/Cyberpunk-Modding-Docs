@@ -6,10 +6,6 @@ coverY: 8
 
 # Editing LUTs
 
-{% hint style="warning" %}
-**This article is severely out of date.** Please tread lightly.
-{% endhint %}
-
 ## What is a LUT?
 
 The term LUT has its origins in mathematics, where a Look-Up Table would be able to shorten certain math operations by containing readily-calculated values for any input value, or an operation for an input value for a desired outcome. This shortcut was quite efficient and sped up many operations, and was normally designed as a matrix of different numbers and variables. Soon enough, this improvement in speed would be applied in many other fields, and eventually reached computer graphics and film production.
@@ -22,7 +18,7 @@ There are many different types of color-grading-related LUTs, such as `.CUBE` fi
 
 Initially, Cyberpunk took an approach like many other games, and encoding the LUT as an unwrapped 3D texture:
 
-<figure><img src="../../../../.gitbook/assets/image (2) (3).png" alt=""><figcaption><p>"3D" LUT texture from ReShade project.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (3) (1).png" alt=""><figcaption><p>"3D" LUT texture from ReShade project.</p></figcaption></figure>
 
 Afterwards, Cyberpunk would repackage LUT textures with the blue and green channels inverted to get higher quality, as the human eye values green more than other colors and is more efficient to get all gradients laid on top of green instead of blue. _**Here we can safely assume is where the switch to using true 3D textures was also made, but we will not show a 3D texture due to redundancy and inability to do so, so just assume from now on all textures are actually just a 3D cube.**_
 
@@ -36,13 +32,7 @@ To get even more odd, Cyberpunk would then put the image tone mapping, the proce
 
 With all that backstory done--how do we start?!
 
-**You will obviously need WolvenKit, but we also require Adobe Photoshop CS4 and on, preferrable Photoshop CC, and also NVIDIA Texture Tools Exporter's Photoshop plugin.**
-
-All of these can be found with a quick Google search, but the last requirement is a bit strange. We need an _**old**_ version of CP77Tools. Pre-WolvenKit days. You can find it here:&#x20;
-
-{% embed url="https://github.com/WolvenKit/CP77Tools/releases" %}
-You're looking for the latest release. It requires .NET 5.0 runtime (desktop runtime preferred).
-{% endembed %}
+You'll need [WolvenKit](https://github.com/WolvenKit/Wolvenkit/releases), [NVIDIA Texture Tools Exporter + its Photoshop plugin](https://developer.nvidia.com/nvidia-texture-tools-exporter), and we also require Adobe Photoshop CS4 or later. Photoshop CC is preferred.
 
 ### **Okay, now we can get started!**
 
@@ -56,7 +46,7 @@ Create a new WolvenKit project and call it whatever you want.&#x20;
 
 After that, import the file `base\weather\24h_basic\luts\cp2077_gen_lut_nge_v017.xbm` into your project.
 
-<figure><img src="../../../../.gitbook/assets/Untitled-2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Untitled-2.png" alt=""><figcaption><p>(Double clicking the file also works)</p></figcaption></figure>
 
 Then open it, and change `depth` to `1`, `height` to `32`, and `width` to `1024`. After that, navigate to **`renderTextureResource/renderResourceBlobPC/header/sizeInfo`** and apply the same edits as before.
 
@@ -86,22 +76,52 @@ Save back your DDS using NVTT and apply these settings:
 
 **If you forgot to flip your image inside of Photoshop, turn on the Image Options - Flip Vertically option inside of NVTT.**
 
-<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1) (3).png" alt=""><figcaption></figcaption></figure>
 
-We finally come to the hardest part of the process--as if the rest was not. Importing our LUT back into an XBM!
+#### **Wolvenkit:**
 
-It's too much of a complex process to encapsulate in an image or two, so listen up:
+* Open the Wolvenkit project where you have the original LUT of the game in `.xbm`&#x20;
+* Take your newly made LUT and name it the same as the original LUT, so: `cp2077_gen_lut_nge_v017.dds`.
+* Move it to the folder where you exported the original LUT from the game in `.dds` format, and overwrite that one with yours.&#x20;
+* The folder in question is: `yourwolvenkitprojectname\source\raw\base\weather\24h_basic\luts`.&#x20;
+* You can also open the exact location from the 'Project explorer' in Wolvenkit. Under 'raw' folder dropdown you should see the exported `.dds` file. If you hover over it, it will show a yellow folder button that you can click to open its location.
 
-1. Extract the downloaded CP77Tools archive somewhere safe and open it up in PowerShell
-2. Copy the original XBM (`cp2077_gen_lut_nge_v017.xbm`) into the same place that your DDS file is.
-3. Inside of the PowerShell window, type `.\CP77Tools.exe rebuild -b -t --keep --unsaferaw -p` and then drag the folder your DDS and XBM files are in onto the console window. It should fill in the path after the `-p`.
-4. Hit enter, hopefully there are no errors.
+&#x20;![](<../../../../.gitbook/assets/image (6).png>)
 
-When your XBM file imports, overwrite the original XBM file in the project.
+* Now to import it, hover over 'Tools' at the top left in Wolvenkit, and select 'Import Tool'.
+* Select the LUT and make sure the import settings are correct
 
-Go back into the XBM and do the opposite of changng the depth, width, and height: setting them all back to 32. _Since we've already gone over this, you can just remind yourself how to do it by just doing the step where we stretched out our texture backwards._
 
-After you've done all that, go ahead and test out your LUT mod. I personally added a bit more contrast and saturation in Photoshop, but go ahead and be as creative as you like.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>(LUT Import Settings)</p></figcaption></figure>
+
+**Changing the settings back:**
+
+* When your LUT imports, double click on the `.xbm` file to open it in an editor.&#x20;
+* Then change: depth and width in both sections that we modified, back to the default of 32.&#x20;
+* Under `renderTextureResource>renderResourceBlobPC>Header>mipMapInfo>0>layout` change 'rowPitch' to '512'.
+
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>(rowPitch Settings)</p></figcaption></figure>
+
+* Under `renderTextureResource>renderResourceBlobPC>Header>textureInfo` change 'type' to 'TEXTYPE\_3D'.
+
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>(textureInfo Settings)</p></figcaption></figure>
+
+That's it, now either use 'Pack mod' to pack the mod and have .archive file in the Wolvenkit project folder, or 'Install Mod' to preview it in game!&#x20;
+
+This will replace the sdr LUT for the base game (Night City).&#x20;
+
+I**f you want the LUT to also apply to Dogtown, or HDR:** `cp2077_gen_lut_nge_hdr_v017` is HDR lut. `cp2077_gen_lut_ep1_sdr_v02b` and(?) `cp2077_gen_lut_ep1_sdr_v002`is Dogtown.&#x20;
+
+If you want to change these as well, before importing you have to have the paths for these LUTs correct, along with the names.&#x20;
+
+To achieve this with ease, I suggest exporting the LUTs you want replaced, as they will create paths and give you the names by default.
+
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>(LUTs I exported for replacement)</p></figcaption></figure>
+
+Then you can go over to their locations, copy your LUT `.dds` file, copy the name of the LUT you want to replace, delete the original and overwrite it with yours while making sure it retains the name from the original. Rinse and repeat. Process for importing and adjusting the settings afterwards will be the same as before.&#x20;
+
+
 
 ## Results!
 
