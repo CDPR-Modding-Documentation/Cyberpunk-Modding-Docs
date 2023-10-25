@@ -66,7 +66,9 @@ If V is naked, then you fucked up (deleted the , or the :). In that case, rememb
 
 <summary>Can I do this for every mod???</summary>
 
-Unfortunately not!
+Unfortunately not! The mod author has to enable this feature via [archivexl-dynamic-variants.md](../adding-new-items/archivexl-dynamic-variants.md "mention") and split/colorize their meshes accordingly.
+
+If a mod doesn't mention in the description that they support this feature, you can use the techniques under [r-and-r-colour-editing.md](r-and-r-colour-editing.md "mention") to make your own recolours anyway.
 
 </details>
 
