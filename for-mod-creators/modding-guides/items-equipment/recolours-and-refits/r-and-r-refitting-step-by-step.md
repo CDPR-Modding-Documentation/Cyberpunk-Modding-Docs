@@ -21,6 +21,8 @@ You don't **need** the [Wolvenkit Blender Add-on](https://github.com/WolvenKit/C
 
 ## Step 1: Adding the meshes to your project
 
+You're already supposed to have a project. If you don't, check [r-and-r-your-own-wolvenkit-project.md](r-and-r-your-own-wolvenkit-project.md "mention")
+
 ### The body
 
 First, you need the mesh of the body that you want to refit for. (Technically speaking, you could do without, so if you like suffering, go ahead and skip this step.)

@@ -109,10 +109,10 @@ The .archive that Wolvenkit packs for you will have the same name as your projec
    Select any folder outside of your game directory.
 4. `Project Name`:  The name of your project, and subsequently, the name of your .archive file.&#x20;
    * If you want to **overwrite**: Name it the same as the original mod's `.archive` (`_ArchiveXL_Netrunner_Variants`)
-   *   If you want to **patch**: It needs to come before the original in alphabetical/binary order. Pick one of the following:
+   *   If you want to **patch**: It needs to come before the original in [ascii sort order](https://theasciicode.com.ar/). Pick any of the following:
 
-       * `_ArchiveXL__Netrunner_Variants`
-       * `__ArchiveXL_Netrunner_Variants`
+       * `_ArchiveXL_Netrunner_0_Refit`
+       * `_ArchiveXL_NetrunnerVariants`
        * `_00_ArchiveXL_Netrunner_Variants`
 
        My personal preference is the first, as the .archive files will show up&#x20;
