@@ -4,7 +4,7 @@ Create a new project in **WolvenKit** (wKit).
 
 ### Create a new tweakXL `.yaml` file
 
-Create a new tweakXL file by going to “New File” in the top left of wkit, just next to the HOME button.
+Create a new tweakXL file by going to “**New File**” in the top left of **wkit**, just next to the **HOME** button.
 
 <figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
@@ -67,19 +67,23 @@ Note the 2 spaces, followed by a dash, followed by another space, then the `!ent
 
 ### Create a `.json` file
 
-Create a `.json` file in your project, the same as creating the .yaml. The option is about half way down the “**CR2W Files**” category. Name it the same as your vehicle.
+Create a `.json` file in your project, the same as creating the `.yaml`. The option is about half way down the “**CR2W Files**” category. Name it the same as your vehicle.
 
 Example: “`boe6_mini_cooper.json`”
 
-![](<../../../../.gitbook/assets/image (18).png>)\
+\
 
+
+<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 You’ll want to create your own project path at this point. With your mouse over the new `.json` file, on the right side hit the yellow “**open in explorer**” button to find the `.json` file in your file explorer, you should see just your `.json` file and a “`base`” folder. Create a new folder/path for your project files here. I created “`boe6/mini_cooper/`”. Now in **wkit**, move your `.json` into the new folder.
 
 
 
 Your project file structure should now be similar to this:\
-![](../../../../.gitbook/assets/image121.png)
+
+
+<figure><img src="../../../../.gitbook/assets/image121.png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -116,10 +120,10 @@ Now we'll customize the new entry. Expand the item options and complete it to th
 
 
 
-Create 2 more entries in the array by right clicking the first array entry we just created, and hit “d**uplicate item in array/buffer**” as shown:
+Create 2 more entries in the array by right clicking the first array entry we just created, and hit “d**uplicate item in array/buffer**” as shown:\
 
-![](<../../../../.gitbook/assets/image17 (1).png>)\
 
+<figure><img src="../../../../.gitbook/assets/image17 (1).png" alt=""><figcaption></figcaption></figure>
 
 Swap the 2nd and 3rd string values for your vehicle’s `year` and `description` text.
 
