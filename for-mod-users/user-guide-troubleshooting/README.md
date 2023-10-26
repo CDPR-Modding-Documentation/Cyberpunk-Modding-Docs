@@ -321,10 +321,11 @@ The error below is partial to Steam:
 Cyberpunk 2077 encountered an error caused by corrupted or incomplete game data
 ```
 
-There are two potential fixes:&#x20;
+There are three potential fixes:&#x20;
 
 * [Run as admin](./#run-as-admin)
 * [Run without antivirus](./#run-without-antivirus)
+* [Downclock your processor](https://www.reddit.com/r/cyberpunkgame/comments/16pluqw/comment/k2f1wwh/?utm\_source=share\&utm\_medium=web2x\&context=3) (via reddit, do so **at own risk**)
 
 #### Run as admin
 
