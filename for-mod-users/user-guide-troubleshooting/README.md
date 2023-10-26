@@ -325,6 +325,18 @@ There are three potential fixes:&#x20;
 
 * [Run as admin](./#run-as-admin)
 * [Run without antivirus](./#run-without-antivirus)
+
+Workaround suggested by CDPR:&#x20;
+
+* Set Power Limit (TJ max) for CPU to 150W
+* Reduce Long and Short Duration Package Power Limit to 150 W (Intel default is 253)
+* Set the maximum CPU Core Temperature to 98°
+* Reduce the P-Core ratio of the processor
+* Deactivate Turbo Boost of the CPU
+* Disable CPU Hyper-Threading
+
+Or check Reddit:
+
 * [Downclock your processor](https://www.reddit.com/r/cyberpunkgame/comments/16pluqw/comment/k2f1wwh/?utm\_source=share\&utm\_medium=web2x\&context=3) (via reddit, do so **at own risk**)
 
 #### Run as admin
