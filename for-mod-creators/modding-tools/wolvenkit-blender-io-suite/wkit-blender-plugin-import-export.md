@@ -28,7 +28,7 @@ Select File -> Import -> Cyberpunk GLTF
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FquFu8ZZ9IBOmWUNu4asO%2Fblender_plugin_import.png?alt=media&#x26;token=b0c0e03b-f2fe-4df4-9b92-d5dba61e4d90" alt=""><figcaption></figcaption></figure>
 
-In the Blender File picker, find your glb. By default, the textures will be saved as PNG already.
+In the Blender File view, find the glb you exported from Wolvenkit. By default, the textures will be saved to your material depot in PNG format already.
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FE5XwVbNoDUK2IE8R5sxq%2Fblender_plugin_import_mesh.png?alt=media&#x26;token=3f459cf4-644f-4db2-9832-853629a89494" alt=""><figcaption></figcaption></figure>
 
@@ -38,7 +38,7 @@ Select File -> Export -> Cyberpunk GLB
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_export_mesh.png" alt=""><figcaption></figcaption></figure>
 
-In the file picker, **overwrite** the glb you were editing (you need to [overwrite an existing file](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#import)).
+In the file picker, **overwrite** the glb you were editing (you need to [overwrite an existing file](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#import) to import back to Wolvenkit).
 
 For an explanation of the sidebar settings on the right, read on below the picture.
 
@@ -90,19 +90,23 @@ Will fix lighting
 
 Will read materials from `material.json` files, generating shaders in the process.
 
-#### Incluide Vehicle Collisions
+#### Include Vehicle Collisions
 
-Includes collision submeshes for vehicles (the various states of breaking that a vehicle has as it gets more damaged)
+This option imports a vehicle entities collision bodies for editing. The collision bodies give substance to the mesh and determine how the world responds to the vehicle - without proper collision bodies, your character, NPCs and anything else your vehicle bumps into would pass right through the mesh. Unless you're adding a new vehicle or significantly altering an existing one, you generally want to leave this box unchecked.
 
 ### Exporting from Blender
 
 Entity export is currently (1.5.0) not supported.
 
+To export edited collision bodies back to .phys.json, simply press the "export collisions" button in the Collision Tools Panel and use the File View to navigate to your original .phys.json.
+
+\*\* Currently only modifying existing .phys files is supported.
+
 ## Streaming Sectors
 
 ### Export from Wolvenkit
 
-To export streamingsectors, you have to use the corresponding redscript. The workflow is documented [here](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/world-editing/exporting-streaming-sectors-to-blender).&#x20;
+To export streamingsectors, you have to use the corresponding Wolvenscript. The workflow is documented [here](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/world-editing/exporting-streaming-sectors-to-blender).&#x20;
 
 ### Importing into Blender
 
@@ -110,10 +114,20 @@ After you have exported the streamingsector from Wolvenkit via script, switch to
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_import_sector.png" alt=""><figcaption></figcaption></figure>
 
-Navigate the file picker to your Wolvenkit project's root file, and select the `cdmodproj.` file:
+Navigate in the file view to your Wolvenkit project's root file, and select the .`cpmodproj` file:
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_import_sector_2.png" alt=""><figcaption></figcaption></figure>
 
 ### Exporting from Blender
 
 The export process is not part of the plugin yet (1.5.0); it is documented [here](https://wiki.redmodding.org/wolvenkit/modding-community/world-editing/exporting-streaming-sectors-to-blender#importing-back-into-cyberpunk).&#x20;
+
+
+
+### Exporting .HP files
+
+The Cyberpunk IO suite supports exporting custom .hp(hair profile) files. Simply edit the gradient information of a vanilla hair profile, select the hair mesh the material is connected to and press the "Export Hair Profile" button in the Material Exports panel. Your new .hp.json file will be automatically deposited into your mod project at \
+base\characters\common\hair\textures\hair\_profiles. You'll be able to identify the modified file by the prefix mod\_. You can name the material whatever you want within Blender and the .json will be named accordingly, but your material name must end with \_cards.
+
+To learn more about .hp files and their paramaters [check here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/materials/cyberpunk-hair-material)
+
