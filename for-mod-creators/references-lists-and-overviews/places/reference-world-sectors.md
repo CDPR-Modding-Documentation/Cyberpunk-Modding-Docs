@@ -27,6 +27,7 @@ Remember, you can use your browser's search function (`Ctrl+F`) on this page to 
 | quest\_2be595b225125038                                 | bathroom: walls                               |
 | quest\_5eb84e72f3942283                                 | stash: katana and pistol wall molds           |
 | quest\_e1ef450702659584                                 | wall and ceiling (bed?)                       |
+| quest\_1fbb2ceaeeaac973                                 | Trauma Drama trigger                          |
 
 ## NPC Homes
 
