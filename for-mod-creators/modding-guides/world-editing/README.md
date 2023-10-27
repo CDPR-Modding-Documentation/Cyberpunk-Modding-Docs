@@ -1,7 +1,5 @@
 ---
-description: >-
-  Step by step guide on how to move or delete a object from the world of
-  cyberpunk 2077.
+description: How to move or delete a object in the world of Cyberpunk 2077
 ---
 
 # 🌐 World Editing
@@ -11,18 +9,64 @@ description: >-
 **Created by @Krat0es**\
 **Published October 10 2022**
 
-This guide aims to teach you moving and deleting objects from the world.
+This guide aims to teach you moving and deleting objects from the world.&#x20;
 
-### Requirements
-
-* [**WolvenKit 8.7**](https://github.com/WolvenKit/WolvenKit) **or higher**
+{% hint style="warning" %}
+TODO: This functionality has since been added to ArchiveXL ([link to Discord post](https://discord.com/channels/717692382849663036/955663052903178270/1165050628419100743)). Someone needs to overhaul the tutorial and archive this one.
+{% endhint %}
 
 {% hint style="info" %}
 For more documentation on streaming sector files, see [here](../../files-and-what-they-do/the-whole-world-.streamingsector.md).
 
-For a list of interesting locations to modify, see [here](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-streaming-sectors-to-blender/interesting-sectors).&#x20;
+If you don't know which sector you want to edit, check [finding-world-sectors.md](../../references-lists-and-overviews/places/finding-world-sectors.md "mention"), or find it under [reference-world-sectors.md](../../references-lists-and-overviews/places/reference-world-sectors.md "mention")
 {% endhint %}
 
-## See Wolvenkit wiki
+### Requirements
 
-You can find the complete guide on how to modify streaming sectors in Blender in the [WolvenKit](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/ "mention") wiki under [Editing locations in Blender](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/world-editing/exporting-streaming-sectors-to-blender "mention").
+* the most recent Wolvenkit (stable | Nightly), at least [8.7](https://github.com/WolvenKit/WolvenKit)
+
+1. Add your sector file to the Wolvenkit project
+2. Open it by double-clicking
+3. Click on `Sector Preview` again
+4. Click into the preview to highlight an object. \
+   _This will print the object's node name and -index to the log._
+5. In the list on the right, find the object that you want to delete.\
+   _You can toggle the red checkmark(s) to show/hide objects in the preview_
+
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FTyswVnWzwLaPMkbSXGot%2F%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(1974).png?alt=media&#x26;token=d5433dd4-cee3-4180-88a5-0ef59e01ca1a" alt=""><figcaption><p>amazing</p></figcaption></figure>
+
+6. Go back to the **WorldStreamingSector** tab&#x20;
+7. Click on expand nodeData to find the object in the list. It is easiest to go by index, which should have been printed to the log when you selected the object in step 4.
+8. Expand the node and find `Position`, `Orientation` and `Scale`:
+
+
+
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FHdaUpLML1iVtiGFmgntx%2F%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(1972).png?alt=media&#x26;token=f7a18fcd-f3ad-4631-a052-b9b178e95509" alt=""><figcaption><p>nise</p></figcaption></figure>
+
+You can now
+
+* change the object's coordinates or scale
+* delete the object from the world by right-clicking the node and deleting it (see screenshot `deletus`)
+
+{% hint style="info" %}
+Remember to save the file after making changes!
+{% endhint %}
+
+
+
+<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FKFW2Z1x9SYGtZ2z4FVVo%2F%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(1973).png?alt=media&#x26;token=37bd0f6b-367e-4320-9502-04ad71e92a63" alt=""><figcaption><p><code>deletus</code></p></figcaption></figure>
+
+## Troubleshooting
+
+### My deleted object is low-resolution now!
+
+That means that it has a proxy mesh, which you **also** need to delete.&#x20;
+
+1. Search the game for your sector file's name without the last digit\
+   Example: \
+   You're editing `interior_-23_15_0_1`\
+   You're searching `interior_-23_15_0_`
+
+**`Note:`** when you delete a object and you see a low res mesh in its place in the game that means the object has a proxy assigned you will have to find the sector the proxy is in and delete the proxy mesh. `(you may do that following the same steps)`
+
+\

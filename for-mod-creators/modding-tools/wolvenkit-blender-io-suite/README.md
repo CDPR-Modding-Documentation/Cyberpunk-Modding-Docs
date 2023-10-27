@@ -24,35 +24,35 @@ As soon as you have a **mesh** or **armature** selected, the viewport toolbar (k
 
 ## Features
 
-{% hint style="info" %}
-There's nothing here yet. If you're annoyed by this, please [update the documentation](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7) and assign a merge request to [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention").
-{% endhint %}
-
 ### Animation Tools
 
-
+_To be done_
 
 ### Collision Tools
 
-
+_To be done_
 
 ### Mesh Tools
 
+#### Modelling
 
+Lets you transfer [vertex weights](../../3d-modelling/meshes-and-armatures-rigging.md) from one mesh to the other.
 
-### [AKL Autofitter](wkit-blender-plugin-akl-autofitter.md)
+#### [AKL Autofitter](wkit-blender-plugin-akl-autofitter.md)
 
 For documentation of the autofitter, see the [corresponding wiki page](wkit-blender-plugin-akl-autofitter.md).
 
-### Modelling
+#### Modifiers
+
+Lets you change the armature target (the skeleton that'll move and deform your mesh)
+
+#### Material Export
+
+Lets you export a hair profile. For documentation, see [#hair-profiles-.hp](wkit-blender-plugin-import-export.md#hair-profiles-.hp "mention")
 
 
 
-### Modifiers
 
 
-
-### Material Export
-
-
+####
 

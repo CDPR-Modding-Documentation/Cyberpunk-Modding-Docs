@@ -106,7 +106,7 @@ To export edited collision bodies back to .phys.json, simply press the "export c
 
 ### Export from Wolvenkit
 
-To export streamingsectors, you have to use the corresponding Wolvenscript. The workflow is documented [here](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/world-editing/exporting-streaming-sectors-to-blender).&#x20;
+To export streamingsectors, you have to use the corresponding Wolvenscript. The workflow is documented [here](../../modding-guides/world-editing/editing-locations-in-blender.md#exporting-streaming-sectors-to-blender).&#x20;
 
 ### Importing into Blender
 
@@ -120,14 +120,37 @@ Navigate in the file view to your Wolvenkit project's root file, and select the 
 
 ### Exporting from Blender
 
-The export process is not part of the plugin yet (1.5.0); it is documented [here](https://wiki.redmodding.org/wolvenkit/modding-community/world-editing/exporting-streaming-sectors-to-blender#importing-back-into-cyberpunk).&#x20;
+The export process is not part of the plugin yet (1.5.0); it is documented [here](../../modding-guides/world-editing/editing-locations-in-blender.md#importing-back-into-cyberpunk).&#x20;
 
 
 
-### Exporting .HP files
+## Hair profiles (.hp)
 
-The Cyberpunk IO suite supports exporting custom .hp(hair profile) files. Simply edit the gradient information of a vanilla hair profile, select the hair mesh the material is connected to and press the "Export Hair Profile" button in the Material Exports panel. Your new .hp.json file will be automatically deposited into your mod project at \
-base\characters\common\hair\textures\hair\_profiles. You'll be able to identify the modified file by the prefix mod\_. You can name the material whatever you want within Blender and the .json will be named accordingly, but your material name must end with \_cards.
+{% hint style="info" %}
+To learn more about .hp files and their paramaters, [check here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/materials/cyberpunk-hair-material)
+{% endhint %}
 
-To learn more about .hp files and their paramaters [check here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/materials/cyberpunk-hair-material)
+### Importing to Blender
+
+[Export ](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#exporting-mesh-files)a hair mesh with materials (the default setting), then[ import it](wkit-blender-plugin-import-export.md#importing-into-blender)
+
+### Editing the hair profile
+
+Select the imported hair and switch to Blender's **`Shading`**  perspective. Here, you can alter the gradients,
+
+<figure><img src="../../../.gitbook/assets/blender_plugin_hair_colour.png" alt=""><figcaption></figcaption></figure>
+
+### Exporting from Blender
+
+1. **Recommended:** make sure that your material name in Blender ends with `_cards`
+2. Make sure that your hair mesh is selected
+3. In the CP77 Modding panel, select `Export Hair Profile`&#x20;
+
+<figure><img src="../../../.gitbook/assets/blender_plugin_export_hp.png" alt=""><figcaption></figcaption></figure>
+
+Your new .hp.json file will be generated in the `raw` folder of Wolvenkit project that you imported the hair mesh from with the name of `mod_<material name in Blender>.hp.json`:
+
+<figure><img src="../../../.gitbook/assets/blender_plugin_hp_file.png" alt=""><figcaption></figcaption></figure>
+
+You can now [import it from json](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json).
 
