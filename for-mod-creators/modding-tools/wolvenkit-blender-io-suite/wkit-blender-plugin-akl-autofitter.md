@@ -4,10 +4,6 @@ description: How to use the auto refitter
 
 # WKit Blender Plugin: AKL Autofitter
 
-{% hint style="info" %}
-There's nothing here yet. If you're annoyed by this, please [update the documentation](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7) and assign a merge request to [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention").
-{% endhint %}
-
 The auto-refitter is a tool developed by [AllKnowingLion](http://127.0.0.1:5000/u/ntwa3K86ZPgEhR4Ds0rOU5qaKHm1 "mention") that automates the tedious process of refitting meshes for the various body mods.
 
 With a mesh selected, you can find it in the **Mesh Tools** section of the **CP77** panel. Use the dropdown to select a target body, then click the button to apply the changes:
