@@ -160,7 +160,7 @@
         * [Replace a player clothes with NPC garment that requires blender editing](for-mod-creators/modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/replace-a-player-clothes-with-npc-garment-that-requires-blender-editing.md)
     * [Influencing other items](for-mod-creators/modding-guides/items-equipment/influencing-other-items.md)
     * [Adding new items](for-mod-creators/modding-guides/items-equipment/adding-new-items/README.md)
-      * [ArchiveXL: Dynamic Variants](for-mod-creators/modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md)
+      * [ArchiveXL: Dynamic Appearances](for-mod-creators/modding-guides/items-equipment/adding-new-items/archivexl-dynamic-appearances.md)
       * [Adding new items: files from scratch](for-mod-creators/modding-guides/items-equipment/adding-new-items/adding-new-items-files-from-scratch.md)
       * [Different equipment slots](for-mod-creators/modding-guides/items-equipment/adding-new-items/different-equipment-slots.md)
       * [🔫 Weapons](for-mod-creators/modding-guides/items-equipment/adding-new-items/weapons/README.md)

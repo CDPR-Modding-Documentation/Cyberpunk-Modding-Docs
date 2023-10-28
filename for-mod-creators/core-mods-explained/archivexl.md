@@ -61,7 +61,7 @@ or add an `&FPP` variant pointing at
 Tags are a way to tell Cyberpunk that an item has certain properties and should behave in a certain way. Thanks to ArchiveXL's extended tag system, you can for example force flat feet for female V, or un-hide hair from a head item.
 
 {% hint style="success" %}
-You can find a list of tags in [ArchiveXL's](https://github.com/psiberx/cp2077-archive-xl/wiki/Dynamic-Appearances)[ readme](https://github.com/psiberx/cp2077-archive-xl#adding-visual-tags).
+You can find a list of tags in ArchiveXL's [wiki section](https://github.com/psiberx/cp2077-archive-xl/wiki#visual-tags) on github.
 {% endhint %}
 
 ## Dynamic variants
@@ -69,7 +69,7 @@ You can find a list of tags in [ArchiveXL's](https://github.com/psiberx/cp2077-a
 If you have ever tried to make ten colour variants of an item for two body genders with four different states of feet, then you're familiar with the struggle. Version 1.5.0 of ArchiveXL solves this problem by introducing dynamic variants, allowing you to define **rules** to hook up your yaml straight to the mesh entity. picking components and even appearances dynamically.&#x20;
 
 {% hint style="success" %}
-For a tutorial about this, check [archivexl-dynamic-variants.md](../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention")
+For a tutorial about this, check [archivexl-dynamic-appearances.md](../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-appearances.md "mention")
 
 You can find the technical (usage) documentation for dynamic variants on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki/Dynamic-Appearances).
 {% endhint %}

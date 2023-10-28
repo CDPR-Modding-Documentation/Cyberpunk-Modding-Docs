@@ -1,8 +1,8 @@
 ---
-description: How to add an item with ArchiveXL and dynamic variants
+description: An item addition with dynamic appearances, and what you can do for this
 ---
 
-# ArchiveXL: Dynamic Variants
+# ArchiveXL: Dynamic Appearances
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -31,7 +31,13 @@ This guide is work-in-progress.&#x20;
 
 TODO: Create example project, dump on Nexus
 
+## The yaml
 
+TODO
+
+## Property interpolation explained
+
+TODO
 
 ## The diagram
 
