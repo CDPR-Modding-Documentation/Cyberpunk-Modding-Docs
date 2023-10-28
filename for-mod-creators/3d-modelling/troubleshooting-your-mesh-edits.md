@@ -28,7 +28,7 @@ In Blender, check your shapekey section. It should look like the green box (or b
 
 <figure><img src="../../.gitbook/assets/mesh_import_export_check_shapekeys.png" alt=""><figcaption></figcaption></figure>
 
-If it does not, you need to **apply** any extra shapekeys, because Wolvenkit will ignore them on reimport. Expand the box below to find out how.
+If it does not, you need to **apply** any extra shapekeys, because Wolvenkit will ignore them on reimport. Expand the box below, or check [here](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md#modifier-cannot-be-applied-to-a-mesh-with-shapekeys) to find out how.
 
 <details>
 
@@ -47,7 +47,7 @@ Do the following things:
 5. Now, delete all the **other** shapekeys (select them and click `-`)
 6. Delete your new shapekey as well. That will **apply** it.
 7. In Object Mode, select the duplicate of your mesh (that still has all the shapekeys)
-8. Delete your extras. That will reset it to an un-refitted shape.
+8. Delete your additional shapekeys. That will reset it to an un-refitted shape. We want only the game ones here!
 9. Go to Edit Mode (hotkey: `tab`)
 10. Select all vertices (hotkey: `A`)
 11. Delete all vertices (hotkey: `X`)
