@@ -72,3 +72,7 @@ If you want to be super thorough, you can stick to the right gender&#x20;
 {% hint style="info" %}
 If you want to know more about components, check the [wiki page](../../../files-and-what-they-do/components/). This is completely unnecessary for the purpose of this guide!
 {% endhint %}
+
+## (Optional) Step 3: Hide it in First Person
+
+You can hide items most easily via [ArchiveXL tag](../../../core-mods-explained/archivexl.md#camera-modes). Check the linked page for how to do that.

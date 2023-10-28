@@ -14,7 +14,7 @@ ArchiveXL ([nexus](https://www.nexusmods.com/cyberpunk2077/mods/4198) | [github
 
 * [equipment](../modding-guides/items-equipment/adding-new-items/) and [weapons](../modding-guides/items-equipment/adding-new-items/weapons/)
 * [photo mode poses](../modding-guides/animations/archivexl-adding-photo-mode-poses.md)
-* world sectors
+* world sectors ([deletions](../modding-guides/world-editing/world-editing-deleting-objects.md) and additions)
 * custom lipsync maps
 
 This page will document how to **set item properties** via **tags & suffixes** (the vanilla way)**,** or via **dynamic switching** (new, cool, version >= 1.5).
@@ -69,7 +69,7 @@ You can find a list of tags in ArchiveXL's [wiki section](https://github.com/psi
 If you have ever tried to make ten colour variants of an item for two body genders with four different states of feet, then you're familiar with the struggle. Version 1.5.0 of ArchiveXL solves this problem by introducing dynamic variants, allowing you to define **rules** to hook up your yaml straight to the mesh entity. picking components and even appearances dynamically.&#x20;
 
 {% hint style="success" %}
-For a tutorial about this, check [archivexl-dynamic-appearances.md](../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-appearances.md "mention")
+For a tutorial about this, check [archivexl-dynamic-variants.md](../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention")
 
 You can find the technical (usage) documentation for dynamic variants on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki/Dynamic-Appearances).
 {% endhint %}
