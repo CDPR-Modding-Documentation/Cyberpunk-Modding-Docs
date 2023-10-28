@@ -82,3 +82,45 @@ An example for `t0_000_pma_base__full` (the default body component, torso+legs):
 -1970
 ```
 
+
+
+## Editing Garment Support Parameters In Blender
+
+_based on experimental research by revenantFun_
+
+In a given mesh, garment support is handled by two color attributes: `_GarmentSupportWeight and` `_GarmentSupportCap`. In Blender, these are found in the Data panel under Color Attributes. Each submesh in your mesh will have to have these two attributes plus a third attribute, `Col`, which will be plain black (empty) in almost all cases. All three of these color attributes must also be in the format `Face Corner > Byte Color` in order for the exporter to write them correctly.
+
+<figure><img src="../../.gitbook/assets/blender_garmentSupport_attributesPanel.png" alt=""><figcaption><p>Always make sure all three are Face Corner > Byte Color format before exporting. You can convert back and forth between formats with the down arrow button on the right.</p></figcaption></figure>
+
+These attributes are edited in `Vertex Paint` mode in the viewport.
+
+#### `_GarmentSupportWeight`
+
+`_GarmentSupportWeight`is the color attribute that affects how the mesh will behave when it is layered with other garments. The only two colors in use for these attributes in the vanilla files are pure red `(0,1,1)` and pure black `(0,0,0)`. If a garment has a very simple weighting, it will often be completely red; otherwise, it may be largely red towards the outer edges, with black towards the center of mass. Black appears to correspond to areas that will "crumple" more, or be more deformed when necessary, but you can experiment with this; if you're making a simple top, for example, a flat red layer will work perfectly fine. A flat black layer _may_ work, but will sometimes clip or deform more than you might want.
+
+<figure><img src="../../.gitbook/assets/blender_garmentSupport_GarmentSupportWeight.png" alt=""><figcaption><p>Two examples of correctly-formatted vanilla garment weights. If in doubt, just paint it red.</p></figcaption></figure>
+
+#### `_GarmentSupportCap`
+
+`_GarmentSupportCap` determines stopping points for the deformation effects of garment support. Like `_GarmentSupportWeight`, it is painted only with red and black. However, for your caps, you are only painting red those areas of the mesh that will either
+
+a) directly intersect with the body, such as the ends of sleeves, legs, the bottom of a shirt, the opening of a turtleneck, etc
+
+or
+
+b) sit right next to the skin, or next to some other garment layer that should _not_ be deformed or morphed, such as in the case of a tight-fitting shirt, or the lapels of an open jacket where it will visibly overlap a garment beneath.
+
+The function of the cap is to provide limits, so if nothing is painted on the cap attribute (e.g. it is left flat black) every part of your mesh will exert a clipping/tucking/etc force on things beneath it. This is fine for simple garments! If there are no particularly important stopping points on your mesh, such as a simple tank-top that doesn't have a solid mesh face closing off the bottom/top of the garment, your `_GarmentSupportCap` layer can be flat black. Otherwise, you need to paint red those parts which either cut straight through the body or butt right up against other items.
+
+<figure><img src="../../.gitbook/assets/blender_garmentSupport_GarmentSupportCap.png" alt=""><figcaption><p>The inside layer of this jacket is red because it will sit right next to either the body or to a tight-fitting shirt beneath. The ends of the sleeves are red where they will intersect with the arms. If it looks like a pair of Louboutins, you've painted it correctly.</p></figcaption></figure>
+
+If this step is skipped, you can have unexpected clipping, but nothing will break. If your mesh seems like it's being too aggressive when you layer it over other things, and leaving holes in whatever you're trying to layer under it, try painting more of the inside faces red.
+
+#### That seems like a lot of work? Can I make this less worse somehow?
+
+The simplest way to have functioning garment support for your custom item is a flat red `_GarmentSupportWeight` attribute, a flat black `_GarmentSupportCap` attribute, and a flat black `Col` attribute. Your mesh will export and, assuming you have the proper shapekeys, will morph in (more or less) the way you'd expect!
+
+{% hint style="info" %}
+**Every** submesh of your garment _must_ have these three attributes in order for garment support to function correctly - even submeshes that contain non-deformable things like accessories, buckles, chains, belts, etc.
+{% endhint %}
+
