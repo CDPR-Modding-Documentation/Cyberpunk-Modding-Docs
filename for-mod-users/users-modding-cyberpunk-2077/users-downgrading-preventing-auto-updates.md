@@ -38,7 +38,7 @@ Unlike the competition, Steam will not give you any control about auto-updating.
    1. Right-click on Cyberpunk 2077 in your Steam Library and select **`Properties`**
    2. On the side bar, click on **`Local Files`**
    3. Select **`Browse`**. This will take you to Cyberpunk's install directory, which is **inside** the folder we want (e.g. `C:\Steam\steamapps\common\Cyberpunk 2077`)
-   4. Navigate two levels up
+   4. Navigate two levels up (in windows explorer this is done by clicking the up arrow at the top left of the window, next to the file path, or by using the shortcut Alt + Up Arrow Key)
 2. Find the file `appmanifest_1091500.acf`
 3. Set the file to read-only:
    1. Right-click on the file and select Properties
