@@ -79,6 +79,8 @@ A material instance looks like this:
 <figure><img src="../../.gitbook/assets/material_docu_material_instance.png" alt=""><figcaption><p>baseMaterial picks the material (shader), while "values" contains <a href="3d-objects-.mesh-files.md#checking-material-properties">properties</a> to adjust it.</p></figcaption></figure>
 
 {% hint style="info" %}
+You can find a guide about [texture editing](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) and [adding custom textures](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-4-optional-custompathing) in the [modding-guides](../modding-guides/ "mention") section.
+
 For an overview of materials that you might want to use for something, check [here](../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md).&#x20;
 
 For how to find out which properties a material has, check [here](../materials/#checking-material-properties).

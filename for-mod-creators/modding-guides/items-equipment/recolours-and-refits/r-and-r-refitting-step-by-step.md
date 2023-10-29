@@ -16,7 +16,7 @@ You know how to read — if you can read and struggle with this guide, then it's
 * as long as you want on the actual editing&#x20;
 
 {% hint style="info" %}
-You don't **need** the [Wolvenkit Blender Add-on](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) for this, but it is really cool, and if you want to keep editing Cyberpunk stuff, you should definitely install it.
+It's highly recommended that you grab the [Wolvenkit Blender I](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)[O Suite](../../../modding-tools/wolvenkit-blender-io-suite/), since the latest release has an [auto-refitter](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md) for the most common body mods.
 {% endhint %}
 
 ## Step 1: Adding the meshes to your project
