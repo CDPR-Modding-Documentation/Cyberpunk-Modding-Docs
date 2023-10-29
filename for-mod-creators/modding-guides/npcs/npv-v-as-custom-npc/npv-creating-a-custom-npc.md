@@ -34,7 +34,9 @@ At any time during the tutorial, you can **install** the Wolvenkit project (Wolv
 
 ## Skipping and skimming
 
-This guide contains as little fluff as possible. Extra information&#x20;
+This guide contains as little fluff as possible. Extra information will be contained in the **links**, which will be annotated as clearly as possible with what you need to read and what's optional.
+
+If you're skimming in this guide, you **will** end up making mistakes. Read thoroughly. If at the end of a section you aren't where the guide says you're supposed to be, fall back and double-check your process. If you still have trouble, you can hit us up on [discord](https://discord.com/invite/redmodding) in the `#mod-development` channel.
 
 ## The .lua file
 

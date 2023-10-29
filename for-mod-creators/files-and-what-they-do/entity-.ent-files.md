@@ -32,6 +32,10 @@ This is good practice to avoid repetition, and also to make it easy on yourself 
 
 The **entry point** for the game to display an [NPC](../modding-guides/npcs/appearances-change-the-looks.md#the-.ent-file) or [prop](../modding-guides/everything-else/custom-props.md). This kind of entity only defines those [components](components/) that are shared among all appearances. Meshes are defined in the [app file](appearance-.app-files.md), where they can be assigned different properties (e.g. materials) per appearance.&#x20;
 
+{% hint style="warning" %}
+This file is how the game handles **item uniqueness**. For that reason, you should have one root entity per item. If you put multiple entries into the same file, then you can't wear them simultaneously (for e.g. EquipmentEx).
+{% endhint %}
+
 From ArchiveXL item additions, this kind of file is usually called a **root entity**.
 
 <figure><img src="../../.gitbook/assets/root_entity.png" alt=""><figcaption></figcaption></figure>

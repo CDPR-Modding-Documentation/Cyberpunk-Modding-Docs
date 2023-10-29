@@ -8,9 +8,13 @@ description: Adding stuff to the game, for the major-leagues
 
 Published in August 23 by [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
+{% hint style="success" %}
+As suggested by psiberx, the general usage documentation for ArchiveXL will be kept in this wiki for ease of use. You can find the [readme](https://github.com/psiberx/cp2077-archive-xl) on github or check the repository's [wiki section](https://github.com/psiberx/cp2077-archive-xl/wiki).
+{% endhint %}
+
 ## OK, so what is this?
 
-ArchiveXL ([nexus](https://www.nexusmods.com/cyberpunk2077/mods/4198) | [github](https://github.com/psiberx/cp2077-archive-xl/)) is one of the [core frameworks](./) of Cyberpunk 2077 modding. Together with TweakXL, It allows you to add things to the game, such as
+ArchiveXL ([nexus](https://www.nexusmods.com/cyberpunk2077/mods/4198) | [github](https://github.com/psiberx/cp2077-archive-xl/)) is one of the [core frameworks](./) of Cyberpunk 2077 modding. Together with **TweakXL**, It allows you to add things to the game, such as
 
 * [equipment](../modding-guides/items-equipment/adding-new-items/) and [weapons](../modding-guides/items-equipment/adding-new-items/weapons/)
 * [photo mode poses](../modding-guides/animations/archivexl-adding-photo-mode-poses.md)
@@ -37,6 +41,8 @@ While the solution has changed (and improved), the problem remains:
 
 There are two body genders with different proportions, and you can't make them wear the same shirt (at least not without clipping). To solve that, you can do what CDPR did and have one variant per rig.
 
+The suffix for the body is `Male` / `Female`, the ArchiveXL string substitution is `{gender}` and resolves to `m` or `w`.
+
 #### Body types
 
 On top of that, you can add **body mods** (mostly chest size, but occasionally full refits). Starting with 1.5, these will be [supported by ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/wiki/Dynamic-Appearances#conditions)! That means, no more compatibility archives, since AXL can simply load different meshes for you…
@@ -56,33 +62,109 @@ or add an `&FPP` variant pointing at
 `default`
 {% endhint %}
 
+#### Arm states
+
+The arm states represent the different cyberware. For example, since you can't hire the forearms for mantis blades, you can roll up the sleeves just for this. The definitions are:
+
+| Cyberware           | Suffix                |
+| ------------------- | --------------------- |
+| None                | `&BaseArms`           |
+| Mantis Blades       | `&MantisBlades`       |
+| Monowire            | `&Monowire`           |
+| Projectile Launcher | `&ProjectileLauncher` |
+
+#### Foot states
+
+To achieve gender equality in regard to foot states, you need to use [Toggleable Feet](https://www.nexusmods.com/cyberpunk2077/mods/7049).
+
+| Character | Footwear                      | Suffix       |
+| --------- | ----------------------------- | ------------ |
+| Female    | Unequipped                    | `&Flat`      |
+| Female    | Equipped without tags         | `&Lifted`    |
+| Female    | Equipped with `HighHeels` tag | `&HighHeels` |
+| Female    | Equipped with `FlatShoes` tag | `&FlatShoes` |
+| Male      | Any                           | (empty)      |
+
 ## Tags
 
 Tags are a way to tell Cyberpunk that an item has certain properties and should behave in a certain way. Thanks to ArchiveXL's extended tag system, you can for example force flat feet for female V, or un-hide hair from a head item.
 
-{% hint style="success" %}
-You can find a list of tags in ArchiveXL's [wiki section](https://github.com/psiberx/cp2077-archive-xl/wiki#visual-tags) on github.
+{% hint style="warning" %}
+Please keep in mind that you need to add those to the [.app file](../files-and-what-they-do/appearance-.app-files.md)'s **appearance definition** rather than the root or mesh entity.&#x20;
 {% endhint %}
 
-## Dynamic variants
+### Base game tags
+
+| Tag             | Effect                                                                      |
+| --------------- | --------------------------------------------------------------------------- |
+| `hide_H1`       | Hides an item in the `Head` slot.                                           |
+| `hide_F1`       | Hides an item in the `Eyes` slot.                                           |
+| `hide_T1`       | Hides an item in the `Chest` slot.                                          |
+| `hide_T2`       | Hides an item in the `Torso` slot.                                          |
+| `hide_L1`       | Hides an item in the `Legs` slot.                                           |
+| `hide_S1`       | Hides an item in the `Feet` slot.                                           |
+| `hide_T1part`   | Toggles the partial suffix (`&Full` →`&Part`) when applied to `Torso` item. |
+| `hide_Hair`     | Hides hair.                                                                 |
+| `hide_Genitals` | Hides genitals in uncensored mode and underware in censored mode.           |
+
+### Custom tags
+
+| Tag                 | Effect                                  |
+| ------------------- | --------------------------------------- |
+| `hide_Head`         | Hides head.                             |
+| `hide_Torso`        | Hides the whole torso.                  |
+| `hide_LowerAbdomen` | Hides lower abdomen.                    |
+| `hide_UpperAbdomen` | Hides upper abdomen.                    |
+| `hide_CollarBone`   | Hides collar bone area.                 |
+| `hide_Arms`         | Hides head.                             |
+| `hide_Thighs`       | Hides thighs.                           |
+| `hide_Calves`       | Hides calves.                           |
+| `hide_Ankles`       | Hides ankles.                           |
+| `hide_Feet`         | Hides feet.                             |
+| `hide_Legs`         | Hides the whole legs.                   |
+| `force_Hair`        | Forces visible hair for head items.     |
+| `force_FlatFeet`    | Forces flat feet for female characters. |
+
+## Dynamic appearances
 
 If you have ever tried to make ten colour variants of an item for two body genders with four different states of feet, then you're familiar with the struggle. Version 1.5.0 of ArchiveXL solves this problem by introducing dynamic variants, allowing you to define **rules** to hook up your yaml straight to the mesh entity. picking components and even appearances dynamically.&#x20;
 
 {% hint style="success" %}
 For a tutorial about this, check [archivexl-dynamic-variants.md](../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention")
-
-You can find the technical (usage) documentation for dynamic variants on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki/Dynamic-Appearances).
 {% endhint %}
 
-{% hint style="danger" %}
-You **have** to use a mesh entity for dynamic variants, as components in the .app file will be **ignored**.
-{% endhint %}
+### Substitutions
+
+Since 1.8.0, ArchiveXL supports substitutions for [#dynamic-appearances](archivexl.md#dynamic-appearances "mention") inside the mesh entity for the fields `name`, `depotPath` and `appearance`.
 
 {% hint style="info" %}
-You no longer need suffixes in the .yaml. However, if you want to use suffixes for your switching, psiberx recommends doing that per **appearance name** in the .app file, so that you can still use chunk masks via component overrides.
+Substitution will only become active if the property name starts with an asterisk (`*`).
 {% endhint %}
 
-Here's an overview of how the dynamic variants work. By comparison, [this](../modding-guides/items-equipment/adding-new-items/#diagram) is the old diagram. \
-Especially for multiple items, the new way is much faster.
+Any placeholders will be replaced with the correct value for your current state — at run-time!
 
-<figure><img src="../../.gitbook/assets/archiveXL_substitution.png" alt=""><figcaption></figcaption></figure>
+| Placeholder    | Substitution                                                    |
+| -------------- | --------------------------------------------------------------- |
+| `{camera}`     | `fpp` or `tpp`                                                  |
+| `{gender}`     | `m` or `w`                                                      |
+| `{body}`       | `base_body` or body mod name in snake case                      |
+| `{arms}`       | `base_arms`, `mantis_blades`, `monowire`, `projectile_launcher` |
+| `{feet}`       | `flat`, `lifted`, `high_heels`, `flat_shoes`                    |
+| `{sleeves}`    | `full`, `part`                                                  |
+| `{skin_color}` | skin color name from customization, e.g. `03_senna`             |
+| `{hair_color}` | hair color name from customization. e.g. `black_liquorice`      |
+
+### Conditional switching
+
+For dynamic appearances, you can conditionally switch out components or entire appearances **by name**. You can switch on any of the  known [#substitutions](archivexl.md#substitutions "mention").
+
+The order works as follows:
+
+<table><thead><tr><th width="332.3333333333333">Appearance/Component</th><th width="67" align="center">Priority</th><th>Description</th></tr></thead><tbody><tr><td><code>my_item!variant&#x26;camera=tpp</code></td><td align="center">1</td><td>Has the highest priority because it requires a specific variant and one state condition.</td></tr><tr><td><code>my_item!variant</code></td><td align="center">2</td><td>Has second priority because it requires a specific variant.</td></tr><tr><td><code>my_item&#x26;gender=w&#x26;camera=tpp</code></td><td align="center">3</td><td>Has third priority because it has two state conditions.</td></tr><tr><td><code>my_item&#x26;camera=tpp</code></td><td align="center">4</td><td>Has fourth priority because it has one state condition.</td></tr><tr><td><code>my_item</code></td><td align="center">5</td><td>Has the lowest priority and will be used when no other elements match the criteria.</td></tr></tbody></table>
+
+## Overview
+
+Here's an overview of how the dynamic variants work. By comparison, [this](../modding-guides/items-equipment/adding-new-items/#diagram) is the old diagram. \
+Especially for items with many appearances, the new way is **much** faster.
+
+<figure><img src="https://i.imgur.com/k1CWIMk.png" alt=""><figcaption></figcaption></figure>
