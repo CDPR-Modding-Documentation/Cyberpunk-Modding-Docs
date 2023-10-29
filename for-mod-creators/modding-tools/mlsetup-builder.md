@@ -39,10 +39,10 @@ To make the most of MLSB's features, you will want to [configure](mlsetup-builde
 
 Here's how (or scroll down for the screenshot):
 
-1. In the project explorer under Wolvenkit's `archive` folder, right-click on am mlsetup file\
-   _This folder will only be visible in the "source" or "archive" tab of your project explorer_
-2. Select "Convert to JSON"
-3. This will generate an `mlsetup.json` file in your project's `raw` folder.\
+1. In the project explorer under Wolvenkit's `archive` folder, right-click on am `mlsetup` file\
+   _This folder will only be visible in the "source" or "archive" tab of your_ [_project explorer_](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer)
+2. Select  "[Convert to JSON](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json)"
+3. This will generate an `mlsetup.json` file in your project's [`raw` folder](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer).\
    _This folder will only be visible in the "source" or "raw" tab of your project explorer_
 4. Right-click on the newly created `mlsetup.json` file&#x20;
 5. Select "Open in MLSetupBuilder"

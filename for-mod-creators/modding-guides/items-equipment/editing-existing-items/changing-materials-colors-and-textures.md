@@ -110,61 +110,50 @@ You can turn any multilayered material into its cyberspace variant by changing t
 
 <figure><img src="../../../../.gitbook/assets/multilayered.png" alt=""><figcaption></figcaption></figure>
 
-#### Exporting the .mlsetup
+### Exporting the .mlsetup
 
 We're going to edit the mlsetup file and then import it back, causing a global change in the appearances of every item which uses this particular material file. (If you don't want that, see [Custompathing](changing-materials-colors-and-textures.md#step-4-optional-custompathing) below).
 
-We do that by editing the **MultilayerSetup**:
+We do that by editing the **MultilayerSetup**. Check the MLSetupBuilder wiki page for how to do that.
 
-1. Find the file and add it to your project.
-2. Right-click the file and select "Convert to JSON".
-
-{% hint style="info" %}
-If you have set configured MLSB, you can make use of MlSetupBuilder's export feature, rather than doing it via WolvenKit:
-{% endhint %}
-
-Move your new json file in the same folder as the multilayer setup.&#x20;
-
-<figure><img src="../../../../.gitbook/assets/image (22) (1).png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="info" %}
-The json file will be named `ml_t2_002_ma_vest__puffy_bwstripes.mlsetup.json` (`originalFileName.originalExtension.json`)&#x20;
-{% endhint %}
+1. Find the file that you want to edit in the [Asset Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).&#x20;
+2. Add it to your Wolvenkit project.
+3. In the project explorer under Wolvenkit's `archive` folder, right-click on am `mlsetup` file\
+   _This folder will only be visible in the "source" or "archive" tab of your_ [_project explorer_](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer)
+4. Select "[Convert to JSON](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json)"
 
 ## Step 3: Editing the .mlsetup file
 
+{% hint style="info" %}
+If you don't have MLSetupBuilder installed, you need to [do that now](../../../modding-tools/mlsetup-builder.md#installation). If you don't know how to use it, please check [#using-mlsb](../../../modding-tools/mlsetup-builder.md#using-mlsb "mention")
+{% endhint %}
+
+1. Optional: If you don't see an `mlsetup.json` in your project, switch the [Project Explorer](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer) to `source` or `raw`.
+2. Right-click on the file and [open it in MLSetupBuilder](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#open-in-mlsetupbuilder).
+
+<details>
+
+<summary>Optional: by hand</summary>
+
 Open up MlSetupBuilder and load your .mlsetup.json file.
 
-{% hint style="info" %}
 If you select WolvenKit's "Open in File Explorer" option, you can copy the path from the explorer's address bar and paste it into the MlSetupBuilder's address bar.
-{% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (18) (2).png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/image (18) (2).png" alt="" data-size="original">
 
-If you want to see which layers correspond to which part of the mesh, you can load it from the library:
-
-<figure><img src="https://i.imgur.com/nNmwlBD.png" alt=""><figcaption><p>Optional: Find your mesh in the library</p></figcaption></figure>
-
-{% hint style="info" %}
-This step requires the tool to be [set up correctly](../../../modding-tools/mlsetup-builder.md), which is not part of this guide. Fortunately, it's also optional, as you can tweak values around without seeing the affected areas or material previews.
-{% endhint %}
-
-Change the colours and materials to whatever you want.
+</details>
 
 {% hint style="success" %}
-TBD: Create/link to material description
+For a documentation of multilayer properties, see [here](../../../materials/multilayered/multilayered-material-properties.md). For a list of reference images, check [multilayered-previews.md](../../../materials/multilayered/multilayered-previews.md "mention")
 {% endhint %}
 
-Save the file and overwrite the original `.mlsetup.json`:
-
-![](<../../../../.gitbook/assets/image (11) (1) (1).png>)
-
-If you have configured MLSB and had both files in the same folders, you will see a notification when the MlSetupBuilder has overwritten your original `*.mlsetup`. This takes a few seconds.
-
-Otherwise, you need to right-click on the json file under "raw" and select "import from JSON".
+3. [Draw the rest of the owl](https://knowyourmeme.com/memes/how-to-draw-an-owl) and [edit the mlsetup](../../../modding-tools/mlsetup-builder.md#using-mlsb).&#x20;
+4. Export the file, overwriting the original `.mlsetup.json`
+5. Switch back to Wolvenkit
+6. Right-click on the `.mlsetup.json` and [import it from json](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json).
 
 {% hint style="success" %}
-This is already working. You can pack the project and see it work!
+This is already working. You can pack the project and see it in action!
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
