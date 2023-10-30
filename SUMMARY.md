@@ -140,6 +140,7 @@
       * [NPV: Preparing the head in Blender](for-mod-creators/modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md)
       * [NPV: Creating a custom NPC](for-mod-creators/modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md)
       * [NPV: Cleanup and troubleshooting](for-mod-creators/modding-guides/npcs/npv-v-as-custom-npc/npv-cleanup-and-troubleshooting.md)
+      * [NPV: AMM Nibbles Replacer](for-mod-creators/modding-guides/npcs/npv-v-as-custom-npc/npv-amm-nibbles-replacer.md)
     * [A new head for V](for-mod-creators/modding-guides/npcs/a-new-head-for-v.md)
     * [Appearances: change the looks](for-mod-creators/modding-guides/npcs/appearances-change-the-looks.md)
     * [Custom bodyhair for NPCs](for-mod-creators/modding-guides/npcs/custom-bodyhair-for-npcs.md)
