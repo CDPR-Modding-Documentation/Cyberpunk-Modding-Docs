@@ -6,6 +6,8 @@ description: If you want to find a specific .streamingsector, here's how
 
 ## Finding a specific sector
 
+For technical stuff about sectors and the really manual way to look for things go [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/files-and-what-they-do/the-whole-world-.streamingsector). For less masochistic methods read on.
+
 ### Prerequisite: Getting the coordinates
 
 You need to grab the sector's coordinates from the game first. Go there, then open the CET console and type the following command:
