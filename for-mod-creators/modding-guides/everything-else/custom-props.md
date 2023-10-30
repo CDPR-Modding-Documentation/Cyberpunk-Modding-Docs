@@ -33,6 +33,13 @@ Its focus is on the **file structure** and the **relations between the files**. 
 
 This section will tell you how to get the files, then give you an [explanation](custom-props.md#explanation-what-did-you-just-download) of what they do and finally show you a [diagram](custom-props.md#diagram) on how they hang together.
 
+{% hint style="success" %}
+At any part during the process, you can [install the mod](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game to spawn the props with AMM. In the decor tab, search for
+
+`Tutorial item`\
+`Tutorial item (customizable)`
+{% endhint %}
+
 1. Create a project in Wolvenkit and give it a name. This will later be the name of your archive file.
 2. Download the AMM prop template from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8011) or from manavortex's [mega](https://mega.nz/file/3Q1hiTjL#\_-6O\_9m3vk50Qkhfck\_vKQ2\_xI07BCvQVdem1es\_4tI), or download the complete [source folder](https://mega.nz/file/OYVBAByY#\_FYr6OpKYK3q5\_bcyKjtnljFv\_dwqyHkTNKL0zG84Pg) for Wolvenkit. It will have prepared files, which is faster than doing everything from scratch by yourself.
 3.  Prepare your Wolvenkit project and make sure that you have the following files:
