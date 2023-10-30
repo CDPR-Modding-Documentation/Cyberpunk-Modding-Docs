@@ -24,15 +24,25 @@ For NPV projects >= v2.0.0 (30. October 2023), you can skip to [#the-photo-mode-
 
 For earlier versions, or if you have not been using the example project, you need to add the photo mode animations component.&#x20;
 
-For that, you can either use the original mod's resource, or simply lift the component from Johnny's photo mode app file:&#x20;
+Download Wkit Project - NPC App from the mod's [optional files](https://www.nexusmods.com/cyberpunk2077/mods/8125?tab=files).&#x20;
+
+<details>
+
+<summary>If you don't care about the expression pack</summary>
+
+you can also lift the component from Johnny's photo mode app file:&#x20;
 
 ```
 base\characters\appearances\main_npc\silverhand_photomode.app
 ```
 
+If you're doing that, then the component you need will be near the bottom of the appearance.
+
+</details>
+
 1. In the .app file, open the first appearance
 2. Open the `components` array
-3. Find the `entAnimationSetupExtensionComponent` with the name of `PhotomodeAnimations` (near the bottom for Johnny's default appearance)
+3. Find the `entAnimationSetupExtensionComponent` with the name of `PhotomodeAnimations`&#x20;
 4. Copy it to each appearance in your NPV's .app file.
 
 The facial animation setups should be correct for earlier versions of the NPV template, but make sure to double-check.
