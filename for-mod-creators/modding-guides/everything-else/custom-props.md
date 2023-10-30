@@ -116,16 +116,6 @@ You add props by putting meshes directly into the components array:&#x20;
 
 <figure><img src="../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>Mesh/Component entity, loading something directly. You can read more about the theory <a href="../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
-You can change what mesh is pulled in by the prop by clicking on a component and changing the following properties:
-
-* `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
-* `mesh -> meshAppearance`. Put something that [actually exists in your file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances), otherwise the first appearance from the list will be used as default.
-* `defaultAppearance`: As with meshAppearance. If you put an invalid value here, your prop will be invisible when it spawns.
-
-{% hint style="warning" %}
-If you use more than 4 components, your prop will no longer scale. This issue might go away in a future version of AMM, but for now (October 2023), it's a hard limit.
-{% endhint %}
-
 [**Root entity**](../../files-and-what-they-do/entity-.ent-files.md#root-entity)
 
 One entity file per prop, one entry in AMM's prop browser (e.g. `cube`). After spawning it, you can toggle its appearances (`white`, `black`, `glowing`) the same way you do it with NPCs.
@@ -188,6 +178,20 @@ Okay, now that we've gone through the theory, let's have a quick overview how ev
 #### With variants
 
 <figure><img src="../../../.gitbook/assets/ent_app_mesh_relationship.png" alt=""><figcaption><p>The better option — not actually that much more complex, is it? :)</p></figcaption></figure>
+
+## Using other meshes
+
+You can point the file at a different mesh by clicking on a **component** and changing its properties.
+
+The components will be inside the `components` array. For legacy props, you will find it in the [`mesh entity`](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity), for props with appearances, inside of the `.app` file's `appearances` definitions.
+
+* `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
+* `mesh -> meshAppearance`. Put something that [actually exists in your file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances), otherwise the first appearance from the list will be used as default.
+* `defaultAppearance`: (only in the .ent file) As with meshAppearance. If you put an invalid value here, your prop will be invisible when it spawns.
+
+{% hint style="warning" %}
+If you use more than 4 components, your prop will no longer scale. This issue might go away in a future version of AMM, but for now (October 2023), it's a hard limit.
+{% endhint %}
 
 ## Creating another prop
 
