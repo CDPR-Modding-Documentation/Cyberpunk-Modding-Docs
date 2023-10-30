@@ -24,6 +24,30 @@ For NPV projects >= v2.0.0 (30. October 2023), you can skip to [#the-photo-mode-
 
 For earlier versions, or if you have not been using the example project, you need to add the photo mode animations component.&#x20;
 
+For that, you can either use the original mod's resource, or simply lift the component from Johnny's photo mode app file:&#x20;
+
+```
+base\characters\appearances\main_npc\silverhand_photomode.app
+```
+
+1. In the .app file, open the first appearance
+2. Open the `components` array
+3. Find the `entAnimationSetupExtensionComponent` with the name of `PhotomodeAnimations` (near the bottom for Johnny's default appearance)
+4. Copy it to each appearance in your NPV's .app file.
+
+The facial animation setups should be correct for earlier versions of the NPV template, but make sure to double-check.
+
+1. In your .app file's appearance, find the component with the name `face_rig`.
+2. Make sure that the `depotPath` is of the `graph` is set to the correct `.animgraph` depending on your body gender:
+
+<pre><code><strong>/base\animations\facial\_facial_graphs\player_woman_photomode_sermo.animgraph   
+</strong>base\animations\facial\_facial_graphs\player_man_photomode_sermo.animgraph
+</code></pre>
+
+<figure><img src="../../../../.gitbook/assets/npv_photomode_replacer_animgraph.png" alt=""><figcaption></figcaption></figure>
+
+After adding the required component and changing the path, the photo mode replacer should work.
+
 ## Step 1: The photo mode .app file
 
 You enable the feature by overwriting the dummy .app file for your chosen NPV. Instead of looking up the path in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125?tab=description), we're lazy and overwrite the template file, which we find in the [Mod Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) by using the following [search query](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
