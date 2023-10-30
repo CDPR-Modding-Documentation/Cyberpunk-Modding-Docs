@@ -69,6 +69,18 @@ TL;DR:&#x20;
   * _optional: emissive submesh_
 * Click **Export** button
 
+<details>
+
+<summary>Export failed: Error while finding file</summary>
+
+If you failed to export because of error messages like this one:
+
+`Message: Error while finding the file: manavortex\torso\netrunning_suit\textures_netrunning_suit.mi`
+
+then you need to uncheck `Export With Materials` in the export tool's [settings panel](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export/export-settings#.mesh).
+
+</details>
+
 In Wolvenkit, switch to the `raw` folder (or scroll all the way down). Right-click on the glb file, and select "Open in File Explorer":
 
 <figure><img src="../../../../.gitbook/assets/netrunner_export_open_in_file_explorer.png" alt=""><figcaption></figcaption></figure>
