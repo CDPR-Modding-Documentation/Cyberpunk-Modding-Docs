@@ -4,6 +4,10 @@ description: Collect preview pictures for multilayered materials here
 
 # Multilayered: Previews
 
+{% hint style="info" %}
+You can use the [Material Preview AMM Prop](https://www.nexusmods.com/cyberpunk2077/mods/10515) to quickly compare multilayered materials.&#x20;
+{% endhint %}
+
 ## bronze\_roof\_tile\_bare
 
 ### roughness and colour
