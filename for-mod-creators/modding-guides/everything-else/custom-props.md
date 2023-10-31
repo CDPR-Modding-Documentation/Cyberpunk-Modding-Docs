@@ -204,23 +204,43 @@ Okay, now that we've gone through the theory, let's have a quick overview how ev
 
 ## Using other meshes
 
-You can point the file at a different mesh by clicking on a **component** and changing its properties.
+You can point the file at a different mesh by changing the depot path of the component. If you have no idea how to do that, read on!&#x20;
 
-The components will be inside the `components` array. For legacy props, you will find it in the [`mesh entity`](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity) (`tutorial\amm_props\template_no_variants\template_no_variants.ent`), for props with appearances, inside of the `.app` file's `appearances` definitions (`tutorial\amm_props\template\template.app`).
+### With variants
 
-To change the loaded mesh, you need to edit the following properties:
-
-* `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
-* `mesh -> meshAppearance`. Put something that [actually exists in your file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances), otherwise the first appearance from the list will be used as default.
-* `defaultAppearance`: (only in the .ent file) As with meshAppearance. If you put an invalid value here, your prop will be invisible when it spawns.
-
-<figure><img src="../../../.gitbook/assets/custom_props_change_mesh.png" alt=""><figcaption><p>For props without appearances: <code>template_no_variants.ent</code></p></figcaption></figure>
+1. Open the `appearance` file `tutorial\amm_props\template\template.app`
+2. Find the array `appearances` at the top of the file
+3. For each appearance, open the `components` array
+4. Click on the first component `amm_prop_slot1`.  In the panel to the right of the tree, change the following properties:
+   * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
+   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances), otherwise the first appearance from the list will be used as default.
 
 <figure><img src="../../../.gitbook/assets/cuzstom_props_change_mesh_2.png" alt=""><figcaption><p>For props with variants: <code>template.app</code></p></figcaption></figure>
 
-{% hint style="warning" %}
-If you use more than 4 components, your prop will no longer scale. This issue might go away in a future version of AMM, but for now (October 2023), it's a hard limit.
-{% endhint %}
+5. If you want to use more than one mesh, repeat the process for the other components. If you want to use more than 4, check [#why-only-4-components](custom-props.md#why-only-4-components "mention") below.
+6. Repeat the process for the other appearances.
+7. Save the file and start the game. If you've done everything right, you will now see your new mesh.
+
+### Without variants
+
+1. Open the  [`mesh entity`](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity) `tutorial\amm_props\template_no_variants\template_no_variants.ent`
+2. Find the `components` array and open it
+3. Click on the first component `amm_prop_slot1`.  In the panel to the right of the tree, change the following properties:
+   * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
+   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances), otherwise the first appearance from the list will be used as default.
+
+<figure><img src="../../../.gitbook/assets/custom_props_change_mesh.png" alt=""><figcaption><p>For props without appearances: <code>template_no_variants.ent</code></p></figcaption></figure>
+
+
+
+4. If you want to load more than one mesh, repeat the process for the other components. If you want to use more than four, read [#why-only-4-components](custom-props.md#why-only-4-components "mention")
+5. Finally, change the `defaultAppearance` to [a valid appearance in your .mesh file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances). If no appearance with this name can be found, the prop will be invisible when it spawns.
+
+### Why only 4 components?
+
+Currently (October 31 2023), AppearanceMenuMod can only **scale objects** by targeting their components by name. For that reason, yours have to be named as they are.
+
+If you use more than 4 components or change their name, then your prop will no longer scale.
 
 ## Creating another prop
 
@@ -231,8 +251,13 @@ This step is **optional**. If you just want to see how this works, you can pack 
 If you want to create another prop, here's the fastest non-script way to go about it (tried and tested by manavortex):
 
 1. In Windows Explorer, duplicate the `template` folder
-2. Rename the new folder (`template - Copy`) to the name of your prop (e.g. `baseball`)
-3. Rename all files inside of the folder: replace `template` with the name of your prop (e.g. `baseball`). Make sure that it is the same as the containing folder, or you'll have to clean up things by hand later.
+2. Rename the new folder (`template - Copy`) to the name of your prop (e.g. `baseball`).&#x20;
+
+{% hint style="danger" %}
+It's important that you stick to a schema here, because otherwise, the search and replace approach below will not work and you have to change all the paths by hand. Use the exact same value to replace `template` in both the folder and the file names!
+{% endhint %}
+
+3. Rename all files inside of the folder: replace `template` with the name of your prop (e.g. `baseball`).&#x20;
 4. Right-click on your folder and export the entire thing to json.
 5. Switch to the `raw` tab in Wolvenkit and open your json files in Notepad++
 6.  Via `Search and Replace in Files` (Ctrl+Shift+F), replace `template` with the name of your new prop and folder (e.g. `baseball`). Replace it in all files, **using Match case**:
