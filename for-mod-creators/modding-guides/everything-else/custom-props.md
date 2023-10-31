@@ -46,6 +46,11 @@ At any part during the process, you can [install the mod](http://127.0.0.1:5000/
 
     <figure><img src="../../../.gitbook/assets/amm_props_structure.png" alt=""><figcaption></figcaption></figure>
 
+
+4. Optional, but recommended: Start the game and spawn the props, as in the green hint box at [the beginning of this section](custom-props.md#setting-up-the-project).
+5. Optional, but very recommended: Read through the next section to understand what's going on here.
+6. If you're the more hands-on kind of learner, skip to [#using-other-meshes](custom-props.md#using-other-meshes "mention") or [#creating-another-prop](custom-props.md#creating-another-prop "mention") to fuck around and find out.
+
 {% hint style="info" %}
 The first part of the structure is up to you, although for the sake of the tutorial you might want to stick to it. There's a section later on [how to change your paths](custom-props.md#the-final-touches).
 
@@ -57,7 +62,7 @@ The second part (under "resources") is where AMM will look for custom props. You
 {% hint style="success" %}
 This section gives an explanation of the included files, explaining the difference in file structure between props with vs without variants.&#x20;
 
-If you don't want to know this, you can skip ahead to [Creating another prop](custom-props.md#creating-another-prop) to get crackin', or check the [diagram](custom-props.md#diagram) to see how the files connect.
+If you don't want to know this, you can skip ahead to [#using-other-meshes](custom-props.md#using-other-meshes "mention") or [#creating-another-prop](custom-props.md#creating-another-prop "mention") to get crackin', or check the [diagram](custom-props.md#diagram) to see how the files connect.
 {% endhint %}
 
 #### LUA file
@@ -113,6 +118,11 @@ Defined in your `LUA` file, this file holds the game entity that AMM spawns when
 
 One entity file per variant. The props will not have appearances — AMM's prop browser has one entry per entity file (e.g. `cube_black`, `cube_white`, `cube_glowing`).&#x20;
 
+Edit this kind of prop by opening the following file in Wolvenkit:
+
+<pre><code><strong>tutorial\amm_props\template_no_variants\template_no_variants.ent
+</strong></code></pre>
+
 {% hint style="info" %}
 **Fun fact:** The cluttered prop browser annoyed manavortex so much that she joined the AMM developer team, helped Max implement the alternative workflow described below the picture, and wrote this guide!&#x20;
 
@@ -121,7 +131,7 @@ It was bad!
 
 You add props by putting meshes directly into the components array:&#x20;
 
-<figure><img src="../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>Mesh/Component entity, loading something directly. You can read more about the theory <a href="../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>tutorial\amm_props\template_no_variants\template_no_variants.ent<br>Mesh/Component entity, loading something directly. You can read more about the theory <a href="../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
 [**Root entity**](../../files-and-what-they-do/entity-.ent-files.md#root-entity)
 
@@ -131,9 +141,15 @@ One entity file per prop, one entry in AMM's prop browser (e.g. `cube`). After s
 If you have [added clothing items](../items-equipment/adding-new-items/), then this will be familiar to you. If you haven't, please ignore the link and keep reading — this is the simpler version!
 {% endhint %}
 
+Edit this kind of prop by opening the following file in Wolvenkit:
+
+```
+tutorial\amm_props\template\template.ent
+```
+
 Instead of adding items directly via the components array, we link **appearances** to an [.app file](../../files-and-what-they-do/appearance-.app-files.md). The only component we keep in the [root entity](../../files-and-what-they-do/entity-.ent-files.md#root-entity) is the **targeting component** for the CET cursor: this way, it will be added to each appearance in the .app file.
 
-<figure><img src="../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>Root entity, pointing towards an .app file. You can read more about the theory <a href="../../files-and-what-they-do/entity-.ent-files.md#root-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>tutorial\amm_props\template\template.ent<br>Root entity, pointing towards an .app file. You can read more about the theory <a href="../../files-and-what-they-do/entity-.ent-files.md#root-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
 #### Appearance file
 
@@ -190,11 +206,17 @@ Okay, now that we've gone through the theory, let's have a quick overview how ev
 
 You can point the file at a different mesh by clicking on a **component** and changing its properties.
 
-The components will be inside the `components` array. For legacy props, you will find it in the [`mesh entity`](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity), for props with appearances, inside of the `.app` file's `appearances` definitions.
+The components will be inside the `components` array. For legacy props, you will find it in the [`mesh entity`](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity) (`tutorial\amm_props\template_no_variants\template_no_variants.ent`), for props with appearances, inside of the `.app` file's `appearances` definitions (`tutorial\amm_props\template\template.app`).
+
+To change the loaded mesh, you need to edit the following properties:
 
 * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
 * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances), otherwise the first appearance from the list will be used as default.
 * `defaultAppearance`: (only in the .ent file) As with meshAppearance. If you put an invalid value here, your prop will be invisible when it spawns.
+
+<figure><img src="../../../.gitbook/assets/custom_props_change_mesh.png" alt=""><figcaption><p>For props without appearances: <code>template_no_variants.ent</code></p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/cuzstom_props_change_mesh_2.png" alt=""><figcaption><p>For props with variants: <code>template.app</code></p></figcaption></figure>
 
 {% hint style="warning" %}
 If you use more than 4 components, your prop will no longer scale. This issue might go away in a future version of AMM, but for now (October 2023), it's a hard limit.
