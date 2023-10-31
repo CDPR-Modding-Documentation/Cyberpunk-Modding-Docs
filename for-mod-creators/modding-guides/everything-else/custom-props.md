@@ -248,13 +248,18 @@ If you use more than 4 components or change their name, then your prop will no l
 This step is **optional**. If you just want to see how this works, you can pack your project with Wolvenkit and search AMM for "tutorial item". However, assuming that you actually want to make cool things, you will be doing this a lot.
 {% endhint %}
 
-If you want to create another prop, here's the fastest non-script way to go about it (tried and tested by manavortex):
+If you want to create another prop, here's the fastest non-script way to go about it (tried and tested by manavortex).&#x20;
 
 1. In Windows Explorer, duplicate the `template` folder
 2. Rename the new folder (`template - Copy`) to the name of your prop (e.g. `baseball`).&#x20;
 
 {% hint style="danger" %}
-It's important that you stick to a schema here, because otherwise, the search and replace approach below will not work and you have to change all the paths by hand. Use the exact same value to replace `template` in both the folder and the file names!
+It's important that you stick to a schema here, because otherwise, the search and replace below will **not work** and you have to change all the paths by hand.&#x20;
+
+Use the **exact same value** to replace `template` in both the folder and the file names!
+
+Good: folder: baseball, file: baseball.ent\
+Bad: folder: baseball, file: my\_baseball.ent
 {% endhint %}
 
 3. Rename all files inside of the folder: replace `template` with the name of your prop (e.g. `baseball`).&#x20;
@@ -267,7 +272,8 @@ It's important that you stick to a schema here, because otherwise, the search an
 8. In the project browser's raw section, right-click on the folder and select `Convert from json`. This will have updated the relationships between the files to your renamed files.
 9. Delete the files / appearances that you don't need. Save and close the mesh file.
 10. Import your meshes and textures over the ones from the template. For a guide on how to do that, check [here](textured-items-and-cyberpunk-materials.md#importing-a-mesh).&#x20;
-11. Add another entry to the props array in your `LUA` file:
+11. To make sure that everything went okay, open your new root entity (`tutorial\\amm_props\\baseball\\baseball.ent`) in Wolvenkit and save it to trigger [file validation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). Check the Wolvenkit log window for errors. If you made no mistakes in the renaming process, there shouldn't be any.
+12. To register the prop with AMM, add another entry to the props array in your `LUA` file:
 
 ```
     {
@@ -282,7 +288,11 @@ It's important that you stick to a schema here, because otherwise, the search an
     }, 
 ```
 
-Now you can launch the game and check your prop. If everything went well, you should see something like this now:
+13. Save the LUA file.&#x20;
+14. Install and launch the game
+15. Spawn your new prop `Baseball (customizable)` with AMM.
+
+If everything went well, you should see something like this now:
 
 <figure><img src="https://i.imgur.com/GQ8fELd.png" alt=""><figcaption><p>Not a moon</p></figcaption></figure>
 
