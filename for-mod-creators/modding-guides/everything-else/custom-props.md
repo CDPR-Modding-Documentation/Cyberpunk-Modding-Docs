@@ -41,7 +41,7 @@ At any part during the process, you can [install the mod](http://127.0.0.1:5000/
 {% endhint %}
 
 1. Create a project in Wolvenkit and give it a name. This will later be the name of your archive file.
-2. Download the AMM prop template from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8011) or from manavortex's [mega](https://mega.nz/file/3Q1hiTjL#\_-6O\_9m3vk50Qkhfck\_vKQ2\_xI07BCvQVdem1es\_4tI), or download the complete [source folder](https://mega.nz/file/OYVBAByY#\_FYr6OpKYK3q5\_bcyKjtnljFv\_dwqyHkTNKL0zG84Pg) for Wolvenkit. It will have prepared files, which is faster than doing everything from scratch by yourself.
+2. Download the AMM prop template from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8011). Download **the complete source folder**, as it will have the files as depicted below.
 3.  Prepare your Wolvenkit project by merging the source folder you downloaded with the one from your project. By the end of it, you should have the following files:
 
     <figure><img src="../../../.gitbook/assets/amm_props_structure.png" alt=""><figcaption></figcaption></figure>
