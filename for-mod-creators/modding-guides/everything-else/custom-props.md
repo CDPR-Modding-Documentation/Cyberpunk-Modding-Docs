@@ -234,7 +234,8 @@ You can point the file at a different mesh by changing the depot path of the com
 
 
 4. If you want to load more than one mesh, repeat the process for the other components. If you want to use more than four, read [#why-only-4-components](custom-props.md#why-only-4-components "mention")
-5. Finally, change the `defaultAppearance` to [a valid appearance in your .mesh file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances). If no appearance with this name can be found, the prop will be invisible when it spawns.
+5. If you don't want to load more than one mesh, select `amm_prop_slot2` and delete the `depotPath`. Otherwise, you'll see your prop and a floating cube.
+6. Finally, change the `defaultAppearance` to [a valid appearance in your .mesh file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances). If no appearance with this name can be found, the prop will be invisible when it spawns.
 
 ### Why only 4 components?
 
