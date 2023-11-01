@@ -115,30 +115,5 @@ Due to technical limitations, any visual tags that **hide** parts of the mesh **
 The following tags are used by the base game; however, to make use of them, you require [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl).&#x20;
 
 {% hint style="info" %}
-For the most recent documentation of existing tags, see [ArchiveXL's readme](https://github.com/psiberx/cp2077-archive-xl/wiki#visual-tags), or see [#visual-tags-diagram](influencing-other-items.md#visual-tags-diagram "mention").
+With visual tags, you can force-show hair, hide an item in first person, or turn body parts on and off. Find the full list on the [archivexl.md](../../core-mods-explained/archivexl.md "mention") page under [#tags](../../core-mods-explained/archivexl.md#tags "mention").
 {% endhint %}
-
-<table><thead><tr><th width="241">Tag</th><th width="517">Effect</th></tr></thead><tbody><tr><td><code>hide_H1</code></td><td>Hides item in the <code>Head</code> slot (<em>hats, caps, headbands</em>)</td></tr><tr><td><code>hide_F1</code></td><td>Hides item in the <code>Eyes</code> slot (<em>sunglasses, face masks</em>)</td></tr><tr><td><code>hide_T1</code></td><td>Hides item in the <code>Chest</code> slot (<em>shirts, tops</em>)</td></tr><tr><td><code>hide_T2</code></td><td>Hides item in the <code>Torso</code> slot (<em>jackets, coats</em>)</td></tr><tr><td><code>hide_L1</code></td><td>Hides item in the <code>Legs</code> slot (<em>pants, skirts</em>)</td></tr><tr><td><code>hide_S1</code></td><td>Hides item in the <code>Feet</code> slot (<em>shoes</em>)</td></tr><tr><td><code>hide_T1part</code></td><td>Torso item: controls the partial suffix (<code>&#x26;Full</code>/<code>&#x26;Part</code>)</td></tr><tr><td><code>hide_Hair</code></td><td>Hides hair (<em>hair</em>)</td></tr><tr><td><code>hide_Genitals</code></td><td>Replaces genitals/underwear with blank mesh, angel style.</td></tr></tbody></table>
-
-{% hint style="warning" %}
-`hide_Genitals` will hide **only** the genitals, not the entire body submesh!
-{% endhint %}
-
-ArchiveXL additionally defines the following [visual tags](https://github.com/psiberx/cp2077-archive-xl#adding-visual-tags):
-
-<table><thead><tr><th width="278.3333333333333">Tag</th><th width="132">submesh(es)</th><th>hides…</th></tr></thead><tbody><tr><td><code>hide_Head</code></td><td></td><td>head.</td></tr><tr><td><code>hide_Chest</code></td><td>0</td><td>chest</td></tr><tr><td><code>hide_CollarBone</code></td><td>1</td><td>collarbone</td></tr><tr><td><code>hide_UpperAbdomen</code></td><td>2</td><td>stomach region</td></tr><tr><td><code>hide_LowerAbdomen</code></td><td>3</td><td>hips</td></tr><tr><td><code>hide_Torso</code></td><td>0, 1, 2, 3</td><td>entire torso</td></tr><tr><td><code>hide_Arms</code></td><td>8, 9, 10</td><td>arms and hands</td></tr><tr><td><code>hide_Thighs</code></td><td>4</td><td>thighs (upper legs)</td></tr><tr><td><code>hide_Calves</code></td><td>5</td><td>calves</td></tr><tr><td><code>hide_Ankles</code></td><td>6</td><td>ankles</td></tr><tr><td><code>hide_Feet</code></td><td>7</td><td>feet</td></tr><tr><td><code>hide_Legs</code></td><td>4, 5, 6, 7</td><td>entire leg (including feet)</td></tr><tr><td><code>hide_L1</code></td><td></td><td>Leg clothing</td></tr><tr><td><code>hide_S1</code></td><td></td><td>Shoes</td></tr></tbody></table>
-
-### Visual tags: diagram
-
-<div>
-
-<figure><img src="../../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_mV.png" alt=""><figcaption><p>male version - image by LadyLea</p></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_fV.png" alt=""><figcaption><p>female version - image by LadyLea</p></figcaption></figure>
-
-</div>
-
-
-

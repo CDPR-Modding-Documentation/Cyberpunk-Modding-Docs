@@ -125,6 +125,18 @@ Please keep in mind that you need to add those to the [.app file](../files-and-w
 | `force_Hair`        | Forces visible hair for head items.     |
 | `force_FlatFeet`    | Forces flat feet for female characters. |
 
+### Hiding body parts: diagram
+
+<div>
+
+<figure><img src="../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_mV.png" alt=""><figcaption><p>male version - image by LadyLea</p></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_fV.png" alt=""><figcaption><p>female version - image by LadyLea</p></figcaption></figure>
+
+</div>
+
 ## Dynamic appearances
 
 If you have ever tried to make ten colour variants of an item for two body genders with four different states of feet, then you're familiar with the struggle. Version 1.5.0 of ArchiveXL solves this problem by introducing dynamic variants, allowing you to define **rules** to hook up your yaml straight to the mesh entity. picking components and even appearances dynamically.&#x20;
