@@ -88,9 +88,7 @@ Instead of the dummy file, you will want to put **your own app file** there. You
 
 <summary>Can I move my file instead?</summary>
 
-Yes, you can do that — but if you share your NPV around, you might end up overwriting your friend's replacer entry. For that reason, the guide assumes that you're creating a copy.
-
-If you don't care (you egotist) or don't want to share your NPV, you can move your .app file — just don't forget adjusting the paths in your .ent!
+No, you can't do that, because the photo mode expressions are using a different graph for the facial setup. CDPR solved that by pulling in different entity files, but (for now) we can't do that, so we have to have duplicate files.
 
 </details>
 
@@ -111,11 +109,26 @@ For the sake of clarity, the NPV appearances are not named this way. Open the ph
 
 <summary>I don't want the numbers, can I keep my names?</summary>
 
-In theory, yes. In practice, you have to edit&#x20;
+In theory, yes. In practice, you'd have to edit both AMM and the Nibbles Replacer, so the answer is probably no.
 
 </details>
 
-## Step 4: Pack and test
+## Step 4: Changing the facialsetup graph
+
+1. For **each appearance** in your .app file, find the value for `facialSetup`'s `depotPath`:
+
+<figure><img src="../../../../.gitbook/assets/npv_photomode_change_face_rig.png" alt=""><figcaption></figcaption></figure>
+
+2. Change it to the correct value (depending on body gender):
+
+```
+base\animations\facial\_facial_graphs\player_woman_photomode_sermo.animgraph
+base\animations\facial\_facial_graphs\player_man_photomode_sermo.animgraph
+```
+
+3. Save the file. You now have phot mode expressions, but no more AMM expressions. Can only have one…
+
+## Step 5: Pack and test
 
 After you have changed the appearance names and saved the file, you can [install and launch](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your Wolvenkit project.&#x20;
 
