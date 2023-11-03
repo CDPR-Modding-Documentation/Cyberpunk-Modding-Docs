@@ -8,11 +8,11 @@ description: Documentation of properties, with screenshots if applicable
 
 ### colorScale
 
-Colour of the material.&#x20;
+Sets a color from within the [mltemplate](multilayered-material-properties.md#what-is-the-mltemplate) file. Hex codes corresponds to rows and columns in substance painter.
 
 ### material
 
-Depot path to the base material template from which the surface inherits its properties (lightbreaking, subsurface scattering…).&#x20;
+Depot path to the base material [mltemplate](multilayered-material-properties.md#what-is-the-mltemplate) from which the surface inherits its properties (lightbreaking, subsurface scattering…).&#x20;
 
 Example values:\
 `base\surfaces\materials\paint\car_paint\car_paint_metallic_01.mltemplate`\
@@ -20,7 +20,7 @@ Example values:\
 
 ### matTile
 
-**Scaling** of the material across the mesh. The higher the value, the smaller it is.
+**Scaling** (tiling multiplier) of the material across the mesh. The higher the value, the smaller it is.
 
 ### metalLevelsIn
 
@@ -28,7 +28,7 @@ TODO
 
 ### metalLevelsOut
 
-This value corresponds to a greyscale texture across the entire mesh.
+Clamps metalness output levels. This value corresponds to a (generated?) greyscale texture across the entire mesh.
 
 ### normalStrength
 
@@ -36,11 +36,11 @@ Applies or ignores the base mesh's normal map to this layer. This value can be g
 
 ### offsetU
 
-For logos: X-offset on the texture
+For logos: X-offset on the texture. Used for e.g. targeting a certain label.
 
 ### offsetV
 
-For logos: Y-offset on the texture
+For logos: Y-offset on the texture. Used for e.g. targeting a certain label.
 
 ### opacity
 
@@ -64,11 +64,13 @@ Like [#mattile](multilayered-material-properties.md#mattile "mention"), this det
 
 ### microblend
 
-Depot path to the base microblend. Contains a seamless pattern which will be projected on the surface. Think of an extra normal map that tiles across a layer.
+Depot path to the base microblend texture (xbm), a seamless pattern which will be projected on the surface. Think of an extra normal map that tiles across a layer.
 
 ### microblendContrast
 
 A crossfade between the layer mask and the microblend mask (the black parts of the microblend texture). If you set this to >=1, then the layer will be blocked out where the microblend texture is black.
+
+This requires the xbm's AlphaChannel (transparency) to be set up.
 
 ### microblendNormalStrength
 
@@ -76,9 +78,9 @@ Like [#normalstrength](multilayered-material-properties.md#normalstrength "menti
 
 ### microblendOffsetU
 
-X-offset for the microblend (not sure why you'd need this)
+X-offset for the microblend texture.&#x20;
 
 ### microblendOffsetV
 
-Y-offset for the microblend (not sure why you'd need this)
+Y-offset for the microblend texture
 

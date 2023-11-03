@@ -43,11 +43,11 @@ As shown above, each mesh using the multilayer shader uses a unique **mlmask** f
 
 **MLSETUP** files are fairly self-explanatory when considering the name, multilayer setup. These files correspond with an **mlmask** file and are responsible for setting up parameters for each layer from the mlmask. Each layer within an mlsetup contains information very similar to materials or shaders.
 
+{% hint style="info" %}
+For a definition of the properties, see [multilayered-material-properties.md](multilayered-material-properties.md "mention")
+{% endhint %}
+
 ![File structure of mlsetup viewed with WolvenKit](<../../../.gitbook/assets/MLSETUP example.png>)
-
-### MLSETUP Definition
-
-<table><thead><tr><th width="282">Property</th><th align="center">Description</th></tr></thead><tbody><tr><td>colorScale</td><td align="center">Sets a color from within the <a href="./#what-is-the-mltemplate">mltemplate</a> file</td></tr><tr><td>material</td><td align="center">Path to <a href="./#what-is-the-mltemplate">mltemplate</a> file</td></tr><tr><td>matTile</td><td align="center">Tiling multiplier for the main surface texture</td></tr><tr><td>mbTile</td><td align="center">Tiling multiplier for the microblend texture</td></tr><tr><td>metalLevelsIn</td><td align="center">?</td></tr><tr><td>metalLevelsOut</td><td align="center">Clamps metalness output levels</td></tr><tr><td>microblend</td><td align="center">Procedural detail texture</td></tr><tr><td>microblendContrast</td><td align="center">Controls influence of microblend texture</td></tr><tr><td>microblendNormalStrength</td><td align="center">Multiplier for adjusting normalblend strength</td></tr><tr><td>microblendOffsetU</td><td align="center">Shifts UV map for microblend texture</td></tr><tr><td>microblendOffsetV</td><td align="center">Shifts UV map for microblend texture</td></tr><tr><td>normalStrength</td><td align="center">Sets intensity of mltemplate normal map</td></tr><tr><td>offsetU</td><td align="center">Moves UV in X direction</td></tr><tr><td>offsetV</td><td align="center">Moves UV in Y direction</td></tr><tr><td>opacity</td><td align="center">Sets layer opacity</td></tr><tr><td>overrides</td><td align="center">?</td></tr><tr><td>roughLevelsIn</td><td align="center">?</td></tr><tr><td>roughLevelsOut</td><td align="center">Clamps roughness output levels</td></tr></tbody></table>
 
 ## What is the mltemplate?
 

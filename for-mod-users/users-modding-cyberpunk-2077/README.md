@@ -24,7 +24,7 @@ If this doesn't cover your needs, maybe check out our more detailed guides:
 {% hint style="danger" %}
 **TL;DR:**&#x20;
 
-_The first thing you will be told on Discord is to read this guide._
+_The first thing you will be told on Discord is to read this guide, so you might as well get it out of the way now._
 
 When installing a mod, make sure to install _all_ of its dependencies. You will find a list on the Nexus description tab under "Requirements".
 
