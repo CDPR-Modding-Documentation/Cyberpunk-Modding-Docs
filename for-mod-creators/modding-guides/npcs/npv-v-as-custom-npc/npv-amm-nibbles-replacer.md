@@ -45,19 +45,6 @@ If you're doing that, then the component you need will be near the bottom of the
 3. Find the `entAnimationSetupExtensionComponent` with the name of `PhotomodeAnimations`&#x20;
 4. Copy it to each appearance in your NPV's .app file.
 
-The facial animation setups should be correct for earlier versions of the NPV template, but make sure to double-check.
-
-1. In your .app file's appearance, find the component with the name `face_rig`.
-2. Make sure that the `depotPath` is of the `graph` is set to the correct `.animgraph` depending on your body gender:
-
-<pre><code><strong>/base\animations\facial\_facial_graphs\player_woman_photomode_sermo.animgraph   
-</strong>base\animations\facial\_facial_graphs\player_man_photomode_sermo.animgraph
-</code></pre>
-
-<figure><img src="../../../../.gitbook/assets/npv_photomode_replacer_animgraph.png" alt=""><figcaption></figcaption></figure>
-
-After adding the required component and changing the path, the photo mode replacer should work.
-
 ## Step 1: The photo mode .app file
 
 You enable the feature by overwriting the dummy .app file for your chosen NPV. Instead of looking up the path in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125?tab=description), we're lazy and overwrite the template file, which we find in the [Mod Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) by using the following [search query](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
@@ -115,18 +102,16 @@ In theory, yes. In practice, you'd have to edit both AMM and the Nibbles Replace
 
 ## Step 4: Changing the facialsetup graph
 
-1. For **each appearance** in your .app file, find the value for `facialSetup`'s `depotPath`:
+1. For each appearance definition in In your photomode .app file, find the component with the name `face_rig`.
+2. Make sure that the `depotPath` is of the `graph` is set to the correct `.animgraph` depending on your body gender:
 
-<figure><img src="../../../../.gitbook/assets/npv_photomode_change_face_rig.png" alt=""><figcaption></figcaption></figure>
+<pre><code><strong>/base\animations\facial\_facial_graphs\player_woman_photomode_sermo.animgraph   
+</strong>base\animations\facial\_facial_graphs\player_man_photomode_sermo.animgraph
+</code></pre>
 
-2. Change it to the correct value (depending on body gender):
+<figure><img src="../../../../.gitbook/assets/npv_photomode_replacer_animgraph.png" alt=""><figcaption></figcaption></figure>
 
-```
-base\animations\facial\_facial_graphs\player_woman_photomode_sermo.animgraph
-base\animations\facial\_facial_graphs\player_man_photomode_sermo.animgraph
-```
-
-3. Save the file. You now have phot mode expressions, but no more AMM expressions. Can only have one…
+3. Save the file. You now have photo mode expressions, but no more AMM expressions. Can only have one…
 
 ## Step 5: Pack and test
 
