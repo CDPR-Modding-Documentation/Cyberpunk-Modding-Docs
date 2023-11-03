@@ -1,5 +1,9 @@
 # Archive
 
+{% hint style="danger" %}
+This page is archived. Its contents are no longer relevant.
+{% endhint %}
+
 This section contains an overview of things that you might encounter while modding vehicles. For a full list of sub-pages, please check the link tree in the left-hand menu.&#x20;
 
 ### Appearances

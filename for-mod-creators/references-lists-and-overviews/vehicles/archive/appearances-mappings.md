@@ -1,11 +1,15 @@
-# Appearances Mappings
+# Archived: Appearances Mappings
+
+{% hint style="danger" %}
+This page is archived. Its contents are no longer relevant.
+{% endhint %}
 
 In `base\appearance_mappings.json`, entity types have their resources defined. The vehicle definition is below:
 
 | key                  | value                                                                        |
 | -------------------- | ---------------------------------------------------------------------------- |
 | name                 | Vehicle                                                                      |
-| baseTypesFile        | [base\vehicles\base\_types\_map.csv](base-types-map.md)                      |
+| baseTypesFile        | [base\vehicles\base\_types\_map.csv](broken-reference)                       |
 | baseTypePrefix       | baseType                                                                     |
 | categoriesFile       | base\vehicles\categories.csv                                                 |
 | partsFile            | [base\vehicles\parts.csv](parts-and-parts-categories.md)                     |

@@ -1,4 +1,8 @@
-# Parts & Parts Categories
+# Archived: Parts & Parts Categories
+
+{% hint style="danger" %}
+This page is archived. Its contents are no longer relevant.
+{% endhint %}
 
 These are the part names used in filenames for .mesh and .ent files. Each header is their category - `base` is used in both `Interior` & `Exterior`.
 

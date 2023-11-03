@@ -24,7 +24,7 @@ The community-devloped tool **WolvenKit** can be used to browse game archives an
 
 ### ENT (entity)
 
-Parent file for most visual assets which is directly linked by the [**Tweak DB**](tweaks.md#what-is-the-tweak-db)
+Parent file for most visual assets which is directly linked by the [**Tweak DB**](../files-and-what-they-do/tweaks.md#what-is-the-tweak-db)
 
 ### APP (appearance)
 
