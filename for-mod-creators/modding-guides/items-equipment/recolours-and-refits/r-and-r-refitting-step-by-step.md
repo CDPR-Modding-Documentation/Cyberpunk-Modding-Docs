@@ -123,7 +123,7 @@ You will now see a file picker.&#x20;
 You are currently in Object Mode, which will let you select whole objects.
 {% endhint %}
 
-5.  Change the colour of the body mesh to better see clipping (see the next screenshot for details):
+5.  **Optional, but recommended**: change the colour of the body mesh to better see clipping (see the next screenshot for details):
 
     1. Click on the body mesh, or find it in the Scene Collection under its armature parent, and select it there.
     2. Select the "Material Properties" tab in the right sidebar (a round red icon near the bottom at the list)
@@ -140,11 +140,13 @@ You are currently in Object Mode, which will let you select whole objects.
 
 ## Step 4: Refitting
 
-We will use the Proportional Editing mode here. If you don't vibe with that, you can read up [here](../../../3d-modelling/mesh-sculpting-techniques.md#sculpting) on other approaches for refitting, or refer to the [community guides](../../community-guides/) section.
+{% hint style="success" %}
+Starting in version 1.5.0, the [wolvenkit-blender-io-suite](../../../modding-tools/wolvenkit-blender-io-suite/ "mention") features an [auto-refitter](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md), which supports many custom bodies and will be expanded in the future.&#x20;
 
-{% hint style="info" %}
-Proportional editing will leave the garment supports intact, preventing the risk of [string cheese](../../../3d-modelling/troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices-a-puddle-on-the-floor).
+If you want to use the plugin instead of refitting by hand, make sure to select all meshes (Step 1 on the list below) before following the instructions under[wkit-blender-plugin-akl-autofitter.md](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md "mention").
 {% endhint %}
+
+We will use the Proportional Editing mode here, which leaves garment supports intact and prevents the risk of [string cheese](../../../3d-modelling/troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices-a-puddle-on-the-floor). If you don't vibe with that, you can read up [here](../../../3d-modelling/mesh-sculpting-techniques.md#sculpting) on other approaches for refitting, or refer to the [community guides](../../community-guides/) section.
 
 1. While still in `Object Mode`, expand both armatures (not the one with the body) and select all included meshes.
 2. Switch into Edit Mode by hitting Tab or selecting it from the dropdown at the topleft

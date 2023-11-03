@@ -11,6 +11,10 @@ description: Best Practices for actually changing meshes
 
 This guide will give you a number of techniques when it comes to editing meshes in Blender (displayed version: 3.4.1)
 
+{% hint style="success" %}
+Starting in version 1.5.0, the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention") features an [auto-refitter](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md), which supports many custom bodies and will be expanded in the future.&#x20;
+{% endhint %}
+
 Assumed skill level: \
 \- You have [exported a mesh and imported it into Blender](exporting-and-importing-meshes/)\
 \- You are able to read and comprehend instructions.
