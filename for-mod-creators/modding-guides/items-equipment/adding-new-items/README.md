@@ -20,7 +20,7 @@ This guide will walk you through **adding your own items** to Cyberpunk 2077, wh
 * [Cyber Engine Tweaks ](https://www.nexusmods.com/cyberpunk2077/mods/107)(optional, for spawning items)
 
 **Assumed skill level:** \
-You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible.
+You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible. This guide will **teach you the basic structure** - after you have done that, take a look at the guide for [dynamic appearances](archivexl-dynamic-variants.md) for how to easily make many colour variants.
 
 {% hint style="danger" %}
 **For experienced modders**

@@ -173,6 +173,12 @@ By editing the `$instances` block in the `.yaml`, you should be able to spawn 6 
 For a general explanation of the root entity, check [#root\_entity.ent](archive-xl-item-structure-explained.md#root\_entity.ent "mention"). This section will only cover the differences between a dynamic and a regular root entity.
 
 {% hint style="info" %}
+This is where you **enable** the feature by adding the following tag to the `visualTagsSchema` (the last entry in the file):
+{% endhint %}
+
+<figure><img src="../../../../.gitbook/assets/dynamic_variants_enable_feature.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
 For dynamic appearances, your `root_entity` file will contain **one entry**. Each item should have [its own root entity](../../../files-and-what-they-do/entity-.ent-files.md#root-entity).
 {% endhint %}
 

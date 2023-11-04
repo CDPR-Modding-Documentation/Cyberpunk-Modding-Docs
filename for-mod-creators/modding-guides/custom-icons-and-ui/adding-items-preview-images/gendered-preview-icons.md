@@ -34,7 +34,7 @@ UIIcon.clothing_ENTITYNAME_APPEARANCENAME_SUFFIXES_VISUALTAGS
 `ENTITYNAME,` `APPEARANCENAME`, `SUFFIXES` and `VISUALTAGS`above are placeholders for the corresponeding fields in your YAML.&#x20;
 
 {% hint style="info" %}
-You can look up the actual names of the created records in CET's Tweak Browser and simply copy them to your .yaml
+You can look up the actual names of the created records in **CET's Tweak Browser** and simply copy them to your .yaml
 {% endhint %}
 
 For example, if you have the following item:
