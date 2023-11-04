@@ -1,10 +1,10 @@
 ---
-description: Interesting locations
+description: Finding locations
 ---
 
 # Locations
 
-If your looking for places to edit, locations that have already had their sectors located can be found on the Wolvenkit wiki [here.](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-streaming-sectors-to-blender/interesting-sectors)
+If your looking for places to edit, locations that have already had their sectors located can be found [here](reference-world-sectors.md)[.](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-streaming-sectors-to-blender/interesting-sectors)
 
 The CET wiki has a list of interesting locations for teleport [here.](https://wiki.redmodding.org/cyber-engine-tweaks/teleportation-locations)
 
