@@ -75,4 +75,4 @@ If you want to know more about components, check the [wiki page](../../../files-
 
 ## (Optional) Step 3: Hide it in First Person
 
-You can hide items most easily via [ArchiveXL tag](../../../core-mods-explained/archivexl.md#camera-modes). Check the linked page for how to do that.
+You can hide items most easily via [ArchiveXL tag](../../../core-mods-explained/archivexl/#camera-modes). Check the linked page for how to do that.

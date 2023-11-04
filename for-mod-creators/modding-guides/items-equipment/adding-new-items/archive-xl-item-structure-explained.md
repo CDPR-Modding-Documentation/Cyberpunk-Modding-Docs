@@ -143,7 +143,7 @@ If you want more than just the base properties, check the documentation for [Twe
 Now that we're done with the base structure, we can take a look at the game files. Like for any of the vanilla game items, we have four of them. This guide will only hold information that's directly relevant to adding item, but in the individual sections below, you will find links to more documentation about the files.
 
 {% hint style="success" %}
-With ArchiveXL >= 1.5, there is a **new way** of making these connections, saving most of the work of making many variants. You can still complete this guide and then see the documentation for dynamic loading [on its own page](../../../core-mods-explained/archivexl.md#dynamic-variants).
+With ArchiveXL >= 1.5, there is a **new way** of making these connections, saving most of the work of making many variants. You can still complete this guide and then see the documentation for dynamic loading [on its own page](../../../core-mods-explained/archivexl/#dynamic-variants).
 
 If you want to do more than 5 variants (for both body genders and camera modes), that approach is strongly recommended. Since there isn't a detailed guide yet, you can find us on [Discord](https://discord.com/invite/redmodding) in the #archive-xl channel.
 {% endhint %}
@@ -176,7 +176,7 @@ An entry looks like this:
 {% hint style="success" %}
 If you don't know what this means, skip it and wait for the full step-by-step guide!
 
-For using [dynamic appearances](../../../core-mods-explained/archivexl.md#dynamic-variants), you only need one appearance here, which must match the field `appearanceName` in the `.yaml` up to the variant separator `!`\
+For using [dynamic appearances](../../../core-mods-explained/archivexl/#dynamic-variants), you only need one appearance here, which must match the field `appearanceName` in the `.yaml` up to the variant separator `!`\
 \
 Make sure to add the `DynamicAppearance` tag here.
 {% endhint %}
@@ -261,7 +261,7 @@ When changing component names, you want to leave the [#component-prefixes](../..
 {% hint style="success" %}
 If the text in this box tells you nothing, just ignore it for now
 
-If you're using [dynamic appearances](../../../core-mods-explained/archivexl.md#dynamic-variants), you can use **property interpolation** in paths. For example, \*`p{gender}a` will resolve to `pwa` or `pma`, based on V's body gender.\
+If you're using [dynamic appearances](../../../core-mods-explained/archivexl/#dynamic-variants), you can use **property interpolation** in paths. For example, \*`p{gender}a` will resolve to `pwa` or `pma`, based on V's body gender.\
 Read more about this on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki#property-interpolation).
 {% endhint %}
 
@@ -300,7 +300,7 @@ For ArchivXL >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/releases/ta
 {% hint style="success" %}
 If you don't know what this means, skip it and wait for the full step-by-step guide!
 
-For using [dynamic appearances](../../../core-mods-explained/archivexl.md#dynamic-variants), you only need one appearance here. In this case, **components** will be **ignored** — make sure to put them all into your mesh\_entity!
+For using [dynamic appearances](../../../core-mods-explained/archivexl/#dynamic-variants), you only need one appearance here. In this case, **components** will be **ignored** — make sure to put them all into your mesh\_entity!
 {% endhint %}
 
 #### Appearance: Making changes

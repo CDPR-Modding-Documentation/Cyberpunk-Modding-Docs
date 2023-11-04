@@ -115,5 +115,5 @@ Due to technical limitations, any visual tags that **hide** parts of the mesh **
 The following tags are used by the base game; however, to make use of them, you require [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl).&#x20;
 
 {% hint style="info" %}
-With visual tags, you can force-show hair, hide an item in first person, or turn body parts on and off. Find the full list on the [archivexl.md](../../core-mods-explained/archivexl.md "mention") page under [#tags](../../core-mods-explained/archivexl.md#tags "mention").
+With visual tags, you can force-show hair, hide an item in first person, or turn body parts on and off. Find the full list on the [archivexl](../../core-mods-explained/archivexl/ "mention") page under [#tags](../../core-mods-explained/archivexl/#tags "mention").
 {% endhint %}

@@ -35,7 +35,7 @@ To troubleshoot your ArchiveXL mods, you can make use of the FileValidation in W
 {% endhint %}
 
 {% hint style="success" %}
-There is a new way of connecting your files: [dynamic variants](../../../core-mods-explained/archivexl.md#dynamic-variants).  There is no detailed guide yet, but if you want to create lots of options, then you will definitely want to check out this approach, as it cuts down your file structure overhead by virtually eliminating the root entity and .app file.&#x20;
+There is a new way of connecting your files: [dynamic variants](../../../core-mods-explained/archivexl/#dynamic-variants).  There is no detailed guide yet, but if you want to create lots of options, then you will definitely want to check out this approach, as it cuts down your file structure overhead by virtually eliminating the root entity and .app file.&#x20;
 {% endhint %}
 
 ## Grab the example files
@@ -91,7 +91,7 @@ Otherwise, you will want to complete one or more of the following steps:
 
 * add [something other](different-equipment-slots.md) than a torso item
 * Add more [appearances](./#adding-an-appearance-example-blackblue)&#x20;
-* Add a[ male variant,](./#adding-a-male-instance) or check out [suffixes](../../../core-mods-explained/archivexl.md#variants-and-suffixes) to e.g. [hide the item in first person](../../../core-mods-explained/archivexl.md#camera-modes)
+* Add a[ male variant,](./#adding-a-male-instance) or check out [suffixes](../../../core-mods-explained/archivexl/#variants-and-suffixes) to e.g. [hide the item in first person](../../../core-mods-explained/archivexl/#camera-modes)
 * customize your [preview images](../../custom-icons-and-ui/adding-items-preview-images/)
 * [Add an atelier store](../../everything-else/adding-items-atelier-integration.md)
 
@@ -102,7 +102,7 @@ This is how everything connects. Looks pretty scary, but is actually simple: whe
 You can find a breakdown-by-entry on the [corresponding wiki page](archive-xl-item-structure-explained.md).
 
 {% hint style="success" %}
-With ArchiveXL >= 1.5, there is a **new way** of making these connections, saving most of the work of making many variants. You can still complete this guide and then see the documentation for dynamic loading [on its own page](../../../core-mods-explained/archivexl.md#dynamic-variants).
+With ArchiveXL >= 1.5, there is a **new way** of making these connections, saving most of the work of making many variants. You can still complete this guide and then see the documentation for dynamic loading [on its own page](../../../core-mods-explained/archivexl/#dynamic-variants).
 
 If you want to do more than 5 variants (for both body genders and camera modes), that approach is strongly recommended. Since there isn't a detailed guide yet, you can find us on [Discord](https://discord.com/invite/redmodding) in the #archive-xl channel.
 {% endhint %}
@@ -182,7 +182,7 @@ Items.my_custom_shirt_blueblack:
 
 Find the step-by-step guide in the [root entity section](archive-xl-item-structure-explained.md#root-entity-making-changes) on the "[Item structure explained](archive-xl-item-structure-explained.md)" page.
 
-If you want to add a [dynamic appearance](../../../core-mods-explained/archivexl.md#dynamic-variants), make sure to add the `DynamicAppearance` tag here.
+If you want to add a [dynamic appearance](../../../core-mods-explained/archivexl/#dynamic-variants), make sure to add the `DynamicAppearance` tag here.
 
 ### Step 3: Add it to my\_custom\_shirt.app
 

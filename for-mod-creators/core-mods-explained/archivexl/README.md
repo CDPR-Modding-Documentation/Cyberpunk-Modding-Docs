@@ -14,11 +14,11 @@ As suggested by psiberx, the general usage documentation for ArchiveXL will be k
 
 ## OK, so what is this?
 
-ArchiveXL ([nexus](https://www.nexusmods.com/cyberpunk2077/mods/4198) | [github](https://github.com/psiberx/cp2077-archive-xl/)) is one of the [core frameworks](./) of Cyberpunk 2077 modding. Together with **TweakXL**, It allows you to add things to the game, such as
+ArchiveXL ([nexus](https://www.nexusmods.com/cyberpunk2077/mods/4198) | [github](https://github.com/psiberx/cp2077-archive-xl/)) is one of the [core frameworks](../) of Cyberpunk 2077 modding. Together with **TweakXL**, It allows you to add things to the game, such as
 
-* [equipment](../modding-guides/items-equipment/adding-new-items/) and [weapons](../modding-guides/items-equipment/adding-new-items/weapons/)
-* [photo mode poses](../modding-guides/animations/archivexl-adding-photo-mode-poses.md)
-* world sectors ([deletions](../modding-guides/world-editing/world-editing-deleting-objects.md) and additions)
+* [equipment](../../modding-guides/items-equipment/adding-new-items/) and [weapons](../../modding-guides/items-equipment/adding-new-items/weapons/)
+* [photo mode poses](../../modding-guides/animations/archivexl-adding-photo-mode-poses.md)
+* world sectors ([deletions](../../modding-guides/world-editing/world-editing-deleting-objects.md) and additions)
 * custom lipsync maps
 
 This page will document how to **set item properties** via **tags & suffixes** (the vanilla way)**,** or via **dynamic switching** (new, cool, version >= 1.5).
@@ -29,11 +29,11 @@ Let's dive right in.
 
 ### What are variants, what do I need them for?
 
-When adding items, you will normally offer multiple [**mesh appearances**](../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances) (variants), for example, the same shirt in black, white, and red. This is what you're modding for, after all: making cool things.
+When adding items, you will normally offer multiple [**mesh appearances**](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances) (variants), for example, the same shirt in black, white, and red. This is what you're modding for, after all: making cool things.
 
 ### And what are suffixes?
 
-Sometimes, you want to load different meshes/appearances under different circumstances. Until ArchiveXL 1.5, the process was extremely tedious, but thanks to psiberx, [**suffixes**](../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes) have been replaced with **conditions** (read up on [dynamic variants](archivexl.md#dynamic-variants) to learn how to make use of that).&#x20;
+Sometimes, you want to load different meshes/appearances under different circumstances. Until ArchiveXL 1.5, the process was extremely tedious, but thanks to psiberx, [**suffixes**](../../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes) have been replaced with **conditions** (read up on [dynamic variants](./#dynamic-variants) to learn how to make use of that).&#x20;
 
 While the solution has changed (and improved), the problem remains:
 
@@ -45,7 +45,7 @@ The suffix for the body is `Male` / `Female`, the ArchiveXL string substitution 
 
 #### Body types
 
-On top of that, you can add **body mods** (mostly chest size, but occasionally full refits). Starting with 1.5, these will be [supported by ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/wiki/Dynamic-Appearances#conditions)! That means, no more compatibility archives, since AXL can simply load different meshes for you…
+ArchiveXL allows body modders to [register a custom body tag](archivexl-body-mods-and-refits.md), which can then be used for suffixes and for substitutions in dynamic variants. To learn more about this, check [archivexl-body-mods-and-refits.md](archivexl-body-mods-and-refits.md "mention").
 
 #### Camera modes
 
@@ -90,7 +90,7 @@ To achieve gender equality in regard to foot states, you need to use [Toggleable
 Tags are a way to tell Cyberpunk that an item has certain properties and should behave in a certain way. Thanks to ArchiveXL's extended tag system, you can for example force flat feet for female V, or un-hide hair from a head item.
 
 {% hint style="warning" %}
-Please keep in mind that you need to add those to the [.app file](../files-and-what-they-do/appearance-.app-files.md)'s **appearance definition** rather than the root or mesh entity.&#x20;
+Please keep in mind that you need to add those to the [.app file](../../files-and-what-they-do/appearance-.app-files.md)'s **appearance definition** rather than the root or mesh entity.&#x20;
 {% endhint %}
 
 ### Base game tags
@@ -129,11 +129,11 @@ Please keep in mind that you need to add those to the [.app file](../files-and-w
 
 <div>
 
-<figure><img src="../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_mV.png" alt=""><figcaption><p>male version - image by LadyLea</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_mV.png" alt=""><figcaption><p>male version - image by LadyLea</p></figcaption></figure>
 
  
 
-<figure><img src="../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_fV.png" alt=""><figcaption><p>female version - image by LadyLea</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_fV.png" alt=""><figcaption><p>female version - image by LadyLea</p></figcaption></figure>
 
 </div>
 
@@ -142,12 +142,12 @@ Please keep in mind that you need to add those to the [.app file](../files-and-w
 If you have ever tried to make ten colour variants of an item for two body genders with four different states of feet, then you're familiar with the struggle. Version 1.5.0 of ArchiveXL solves this problem by introducing dynamic variants, allowing you to define **rules** to hook up your yaml straight to the mesh entity. picking components and even appearances dynamically.&#x20;
 
 {% hint style="success" %}
-For a tutorial about this, check [archivexl-dynamic-variants.md](../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention")
+For a tutorial about this, check [archivexl-dynamic-variants.md](../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention")
 {% endhint %}
 
 ### Substitutions
 
-Since 1.8.0, ArchiveXL supports substitutions for [#dynamic-appearances](archivexl.md#dynamic-appearances "mention") inside the mesh entity for the fields `name`, `depotPath` and `appearance`.
+Since 1.8.0, ArchiveXL supports substitutions for [#dynamic-appearances](./#dynamic-appearances "mention") inside the mesh entity for the fields `name`, `depotPath` and `appearance`.
 
 {% hint style="info" %}
 Substitution will only become active if the property name starts with an asterisk (`*`).
@@ -168,7 +168,7 @@ Any placeholders will be replaced with the correct value for your current state 
 
 ### Conditional switching
 
-For dynamic appearances, you can conditionally switch out components or entire appearances **by name**. You can switch on any of the  known [#substitutions](archivexl.md#substitutions "mention").
+For dynamic appearances, you can conditionally switch out components or entire appearances **by name**. You can switch on any of the  known [#substitutions](./#substitutions "mention").
 
 The order works as follows:
 
@@ -176,7 +176,7 @@ The order works as follows:
 
 ## Overview
 
-Here's an overview of how the dynamic variants work. By comparison, [this](../modding-guides/items-equipment/adding-new-items/#diagram) is the old diagram. \
+Here's an overview of how the dynamic variants work. By comparison, [this](../../modding-guides/items-equipment/adding-new-items/#diagram) is the old diagram. \
 Especially for items with many appearances, the new way is **much** faster.
 
 <figure><img src="https://i.imgur.com/k1CWIMk.png" alt=""><figcaption></figcaption></figure>

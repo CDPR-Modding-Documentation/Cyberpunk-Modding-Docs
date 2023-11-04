@@ -57,7 +57,7 @@ Some examples for existing mod include, but are not limited to
 ### Cyber Engine Tweaks (CET) <a href="#cyber-engine-tweaks" id="cyber-engine-tweaks"></a>
 
 {% content-ref url="http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/" %}
-[CET (English)](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)
+[EN (English)](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)
 {% endcontent-ref %}
 
 Cyber Engine Tweaks ([Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/107)| [GitHub](https://github.com/yamashi/CyberEngineTweaks/releases)) is a first-level framework with a LUA wrapper, which will let you access anything exposed via RTTI by RedScript and Red4ext. On top of that, it lets you **bind hotkeys** for custom functions and interact with the game's Tweak database at runtime.
@@ -108,7 +108,7 @@ As a modder, you can only use types and functions that are **already registered*
 
 ArchiveXL ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/4198) | [GitHub](https://github.com/psiberx/cp2077-archive-xl/)) allows us to load custom resources into Cyberpunk 2077. Working under the hood, it is the essential tool to **add** rather than **replace**.
 
-For ArchiveXL-specific documentation, check the [corresponding sub-page.](archivexl.md)
+For ArchiveXL-specific documentation, check the [corresponding sub-page.](archivexl/)
 
 ### TweakXL  <a href="#tweakxl-+-archivexl" id="tweakxl-+-archivexl"></a>
 
