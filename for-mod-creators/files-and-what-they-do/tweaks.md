@@ -4,7 +4,7 @@
 
 We have the following **guides**:&#x20;
 
-&#x20;[changing-npcs-tweak-edit-redmod.md](../modding-guides/npcs/changing-npcs-tweak-edit-redmod.md "mention")
+&#x20;[change-npcs-info-and-archetype-redmod.md](../modding-guides/npcs/change-npcs-info-and-archetype-redmod.md "mention")
 
 ## What is the Tweak DB?
 

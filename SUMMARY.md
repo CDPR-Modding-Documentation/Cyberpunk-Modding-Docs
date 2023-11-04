@@ -145,7 +145,7 @@
     * [Give genitals to NPCs](https://docs.google.com/document/d/1WEIw1Rdrs9qVuOQoCIgzbBSs7f\_TL4JkPaLJSrYDBF4/edit?usp=drive\_link)
     * [Swap Johnny during the Alt's scene](for-mod-creators/modding-guides/npcs/swap-johnny-during-the-alts-scene.md)
     * [Custom facial piercings - PRC Framework](for-mod-creators/modding-guides/items-equipment/custom-facial-piercings-prc-framework.md)
-    * [Changing NPCs - Tweak edit (REDMod)](for-mod-creators/modding-guides/npcs/changing-npcs-tweak-edit-redmod.md)
+    * [Changing NPCs - Tweak edit (REDMod)](for-mod-creators/modding-guides/npcs/change-npcs-info-and-archetype-redmod.md)
   * [👕 Items: Equipment](for-mod-creators/modding-guides/items-equipment/README.md)
     * [Recolours and Refits](for-mod-creators/modding-guides/items-equipment/recolours-and-refits/README.md)
       * [R\&R: Your own Wolvenkit project](for-mod-creators/modding-guides/items-equipment/recolours-and-refits/r-and-r-your-own-wolvenkit-project.md)
