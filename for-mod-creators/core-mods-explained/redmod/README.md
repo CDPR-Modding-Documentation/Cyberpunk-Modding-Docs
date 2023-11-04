@@ -8,6 +8,8 @@ REDmod is a **modding framework** and a set of command line **tools** for moddin
 
 {% hint style="success" %}
 If you already have REDMod installed and just want to enable mods, check [here](../../../for-mod-users/users-modding-cyberpunk-2077/redmod/usage.md#activating-mods).
+
+You can find the log file under `tools\redmod\bin\REDmodLog.txt`.
 {% endhint %}
 
 ## Installation
