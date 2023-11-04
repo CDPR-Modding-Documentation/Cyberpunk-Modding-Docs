@@ -247,6 +247,14 @@ As stated in the [importing/exporting guide](exporting-and-importing-meshes/), i
 
 If you have [added the item](../modding-guides/items-equipment/adding-new-items/) via [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl) or [swapped out an in-game item](../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md) with something that belongs in a different slot (e.g. a jacket on the head slot), you might have to fix the corresponding entity file.
 
+### My shadow mesh is always visible
+
+Check the `renderMask` attribute inside `heder / renderChunkInfos / index`_._ For shadow  meshes, there shouldn't be anything but `MCF_RenderInShadows`.
+
+<figure><img src="../../.gitbook/assets/shadow_mesh.png" alt=""><figcaption></figcaption></figure>
+
+
+
 ### My mesh is string cheese/exploding vertices/a puddle on the floor
 
 <figure><img src="../../.gitbook/assets/stringcheese1.png" alt=""><figcaption><p>Looks like we have guests from beyond the Blackwall</p></figcaption></figure>
@@ -267,3 +275,8 @@ On the .glb import setting, check the "[Import Garment Support](http://127.0.0.1
 
 <figure><img src="../../.gitbook/assets/mesh_editing_parameters.png" alt=""><figcaption><p>This will break automatic shrinking when you put clothes over your item. But hey, if the alternative is a broken mess…</p></figcaption></figure>
 
+### My mesh ignores my texture edits!
+
+The textures are most likely embedded. Here's how you can force your material to pull in external textures instead:&#x20;
+
+<figure><img src="../../.gitbook/assets/mesh_embedded_texture.png" alt=""><figcaption><p>Thanks to Adahm for the screenshot</p></figcaption></figure>
