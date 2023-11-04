@@ -88,6 +88,8 @@ First [turn autoupdate off for Steam](users-downgrading-preventing-auto-updates.
 \
 Here are the version-specific commands that you need to run. If you can't find your version on the list, check [here](https://steamdb.info/depot/1091501/history/).
 
+* 2.01 Base Game: `download_depot 1091500 1091501 6970577188312667484`
+* 2.01 Phantom Liberty: `download_depot 2138330 2138330 1990018461669282288`
 * 2.0 Base Game: `download_depot 1091500 1091501 7695458851217910405`
 * 2.0 Phantom Liberty: `download_depot 2138330 2138330 4702299018468121610`
 * 1.63: `download_depot 1091500 1091501 3385393324409330817`
