@@ -379,7 +379,7 @@ If no additional yaml files are messing things up, then the error is somewhere i
 Check the following places:
 
 * `yourmodname.archive.xl`:
-  * Is the indentation correct, as shown in the picture?
+  * Is the indentation correct, as shown in the picture? You can use [yamllint](https://www.yamllint.com/) to check.
   * Did you make any typos?
 * `my_tshirt_factory.csv`:
   * Is there an entry where the first value matches the `entityName` from the yaml (`my_tshirt` in the picture above)?
@@ -388,12 +388,12 @@ Check the following places:
     (`tutorial\myshirt\rootentity.ent` in the picture above)\
     _If you moved the `root_entity.ent`, you have to adjust this entry._
 * `rootentity.ent:`
-  * Do you have an appearance matching your item by `name`?&#x20;
+  * Do you have an appearance with the `name` matching your item's `appearanceName` in the yaml?&#x20;
     * Without leading or trailing spaces?
   * Are you using any [**suffixes**](../../../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes)? Are you using the correct ones?&#x20;
     * Try setting an empty suffix array in the .yaml, just to see if that works: \
       `appearanceSuffixes: [  ]`
-    * Try creating a fall-back entry without any suffixes in the root\_entity.
+    * Try creating a fall-back entry without any suffixes in the `root_entity`.
 
 ### My item shows empty text instead of name/description!
 
@@ -405,20 +405,20 @@ If there are no errors in any of the log files, check the following places:
 
 * `yourmodname.archive.xl`:
   * Does the key `localization - onscreens - en-us` exist?
-  * Is the indentation correct, as shown in the picture?
+  * Is the indentation correct, as shown in the picture? You can use [yamllint](https://www.yamllint.com/) to check.
   * Does it point at the correct file (`tutorial\ops\translation_strings.json`), or did you rename or move it?
   * Did you make any typos?
 * `yourModName.yaml:`
-  * Is the spelling for the key you defined after `displayName` and `localizedDescription` identical to the one in the json file?
+  * Is the spelling for the key you defined after `displayName` and `localizedDescription` identical to the one in the `json` file?
 * `translation_strings.json`:
   * Is the spelling of the key defined in yaml's `displayName` and `localizedDescription` identical?
-  * Did you set the femaleVariant (default)?
-  * Are you using quotation marks? If so, switch to singlequotes!
-  * If the field for `primary_key` is not empty, then its value must be unique (probably on a per-file basis). Just number them.
+  * Did you set the `femaleVariant` (default)?
+  * Are you using quotation marks? If so, switch to single quotes!
+  * If the field for `primary_key` is not empty, then its value must be unique (probably on a per-file basis). Set it to 0.
 
 ### The item spawns, but…
 
-Congratulations, you've made it into the right half of the diagram! The error will be somewhere here:
+Congratulations, you've made it into the right half of the diagram, and can also make use of Wolvenkit's [file validation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) now! The error will be somewhere here:
 
 <figure><img src="https://camo.githubusercontent.com/621b7d370bdaaec42cf16a5a321512eaf0eaeb0decbe6ccc23865023802f98e7/68747470733a2f2f692e696d6775722e636f6d2f666c34306f465a2e706e67" alt=""><figcaption></figcaption></figure>
 
@@ -429,6 +429,10 @@ Congratulations, you've made it into the right half of the diagram! The error wi
 {% hint style="info" %}
 If you set your `mesh_entity.ent` to point at a vanilla mesh, you can rule out your custom mesh and .mlsetup as a source of errors. Original game meshes will always have a working default appearance and will thus always be displayed!
 {% endhint %}
+
+### It's invisible in photo mode!
+
+Try using other `equipment slots`, just to check. E.g., if your item is a face item (mask), set its `$base` in the yaml to e.g. `Items.GenericOuterChestClothing`
 
 ### The game crashes!
 
@@ -445,23 +449,39 @@ If the default mesh is not displayed correctly, then there's an issue between th
 
 For more detailed error handling, check the sections below, or check [this page](../../../3d-modelling/troubleshooting-your-mesh-edits.md).
 
-ℹ In the "Mesh Preview" tab of your mesh, you can "Generate Materials for Appearance". If the correct colours show up, you can at least rule out that the error is in the .\*mesh or its material.
+{% hint style="info" %}
+In the "Mesh Preview" tab of your mesh, you can "Generate Materials for Appearance". If the correct colours show up, you can at least rule out that the error is in the .\*mesh or its material.
+{% endhint %}
+
+The easiest way to troubleshoot your mesh is by using Wolvenkit's [file validation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) and keep an eye on the log view.
+
+<details>
+
+<summary>Manually checking</summary>
 
 * Make sure that you have the same number of entries in `materialEntries` and `localMaterialBuffer.materials` .
 * Go through the `CMaterialInstance`s in `localMaterialBuffer.materials`.
   * Make sure that the files you're loading exist.
   * Make sure that you don't load a mlmask under a key for an mlsetup or vice versa.
 
+</details>
+
 If none of that helps, I suggest
 
 * doing a gdb export
-* throwing away your mesh (don't close the WKit tab yet), falling back to the original one
+* throwing away your mesh (don't close the WKit tab yet), falling back to an original game item
 * doing a gdb import
 * replacing the arrays `appearances`, `localMaterialBuffer.materials` and `materialEntries` with those from your previous mesh.
 
 ### My mesh is black and shiny!
 
 Congratulations, this is about the easiest-to-resolve error that you could've had. Your mesh is loaded correctly, there is only a problem with the rendered **material**.
+
+The easiest way to troubleshoot your materials is by using Wolvenkit's [file validation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) and keep an eye on the log view.
+
+<details>
+
+<summary>Manually checking</summary>
 
 Check your mesh file:
 
@@ -470,25 +490,33 @@ Check your mesh file:
   * Make sure that the files you're loading exist.
   * Make sure that you don't load a mlmask under a key for an mlsetup or vice versa.
 
+</details>
+
 ### My mesh has the wrong appearance!
 
-Either an appearance is incorrectly selected, or it is incorrectly resolved. Check the following places for copy-paste/duplication mistakes:
+Either an appearance is incorrectly **selected** (app file), or it is incorrectly **resolved** (mesh file). Check the following places for copy-paste/duplication mistakes:
 
-**yourModName.yaml** - is the `appearanceName` correct, or did you forget to change it?\
-**rootentity.ent** - does the `name` corresponding to the field above point to the `appearanceName` with the right name in the right appearance file?\
+**yourModName.yaml** - is the `appearanceName` correct, or did you forget to change it?
+
+If you are not using [dynamic variants](archivexl-dynamic-variants.md), also check the following two files:\
+**rootentity.ent** - does the `name` corresponding to the field above point to the right `appearanceName` in the right .app file?\
 **appearance.app** - does the appearance's `partOverride` set the correct appearance in the `componentsOverride`?
 
-Now, check the mesh file (close and re-open it to make everything refresh):
+Now, check the **mesh file** (close and re-open it to make everything refresh):
 
-**appearance** - does it use the correctly named material?\
-**materialEntries** - is the index correct, or is it pointing at the index of the actually displayed material?\
-**localMaterialBuffer** - does the CMaterialInstance use the correct .mlsetup file?
+**appearance** - do the chunk entries point to the material that you want?\
+**materialEntries** - is the **index** correct, or is it pointing at a different material?\
+**localMaterialBuffer** - does the `CMaterialInstance` use the correct `.mlsetup` file?
 
-Finally, check the .mlsetup: does it actually use different colours, or is it just a duplicate?
+Finally, check the `.mlsetup` itself: does it actually use different colours, or is it just a duplicate?
 
 ### My mesh is invisible!
 
-Here we go. This is the big one, and it's Not Fun. The error can be anywhere between the yaml and the mesh. You can rule out one of the files with the following question:
+Here we go. This is the big one, and it's Not Fun. The error can be anywhere between the yaml and the mesh. You can rule out one of the files with the following questions:
+
+**Does file validation yell at you?**\
+If not: The error is between the yaml and the root entity. Check the `.yaml`, the `.xl`, and the `root entity` itself. The most common cause are incorrectly spelled `appearanceName`s.\
+If yes: Unless the errors are warnings, fix them first.
 
 **Does the glitching stop after <10 seconds?**\
 If not: the appearance can't be resolved - ignore the `.mesh`\
@@ -501,7 +529,9 @@ The fastest way to find your error is Wolvenkit's FileValidation (in version >= 
 As of July 2023, you can download the right version from the [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) page (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-07-21), as it's pretty stable).
 {% endhint %}
 
-ℹIf the appearance is resolved, but not displayed (short glitch), the first thing you should do is to change the path in the `mesh_entity.ent` to one of the game's default meshes. This will rule out errors on your part. (_Yes, even if your mesh worked in another mod. No, I'm not speaking from experience, why do you ask?_)
+{% hint style="info" %}
+If the appearance is resolved, but not displayed (short glitch), the first thing you should do is to change the path in the `mesh_entity.ent` to one of the game's default meshes. This will rule out errors on your part. (_Yes, even if your mesh worked in another mod. No, I'm not speaking from experience, why do you ask?_)
+{% endhint %}
 
 If the hint above doesn't solve it, proceed to troubleshoot in the same way as "My mesh has the wrong appearance!" above.
 
@@ -511,7 +541,7 @@ That's due to [garment support](../../../3d-modelling/garment-support-how-does-i
 
 ### Visual tags aren't working!
 
-If you are **hiding** components via visual tags, these tags have to go into the **appearance** file rather than the root entity.
+If you are **hiding** components via visual tags, these tags have to go into the `.app` file rather than the `root entity`. File validation should complain about this.
 
 ### I can't find anything, kill me now
 
