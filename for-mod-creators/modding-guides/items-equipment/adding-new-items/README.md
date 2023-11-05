@@ -434,6 +434,14 @@ If you set your `mesh_entity.ent` to point at a vanilla mesh, you can rule out y
 
 Try using other `equipment slots`, just to check. E.g., if your item is a face item (mask), set its `$base` in the yaml to e.g. `Items.GenericOuterChestClothing`
 
+### Parts of my mesh are invisible!
+
+You have an **incorrect material** assigned. Check your chunkMaterials in the mesh.
+
+### ArchiveXL ignores my dynamic variants!
+
+No, it does not. You have an incorrect material assigned. (And I'm totally not writing this after 3 hours of troubleshooting -.-)
+
 ### The game crashes!
 
 That means the chain is working, but something isn't loaded correctly. That's good! Check the following files:
