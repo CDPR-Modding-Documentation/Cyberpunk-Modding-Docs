@@ -1,20 +1,26 @@
 # TweakDB: Game database
 
-#### Wait, this is not what I want!
-
-We have the following **guides**:&#x20;
-
-&#x20;[change-npcs-info-and-archetype-redmod.md](../modding-guides/npcs/change-npcs-info-and-archetype-redmod.md "mention")
+This page contains information about the game's TweakDB. Here, you can learn what it is, how you can navigate it, and how you can edit it.
 
 ## What is the Tweak DB?
 
-Cyberpunk 2077 uses a single static database file, which registers and defines gameplay elements&#x20;
+Cyberpunk 2077 uses a single static database file, which registers and defines gameplay elements.&#x20;
 
-You can find it at the following path:\
-\
-[`Cyberpunk 2077`](#user-content-fn-1)[^1]`\r6\cache\tweakdb.bin`\
-\
+You can find it under [`Cyberpunk 2077`](#user-content-fn-1)[^1]`\r6\cache\tweakdb.bin`
+
+{% hint style="info" %}
+This file is not meant to be human-readable.&#x20;
+{% endhint %}
+
 To create a new gameplay item, mod developers must [add](../modding-guides/items-equipment/adding-new-items/) to the Tweak DB.
+
+## Browsing the TweakDB
+
+To inspect the TweakDB, you have three options:
+
+* reading the .tweaks files under [`Cyberpunk 2077`](#user-content-fn-2)[^2]`\tools\redmod\tweaks` with a text editor
+* using the [Wolvenkit Tweak Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser)
+* using the [CET TweakDB Editor](https://wiki.redmodding.org/cyber-engine-tweaks/console/usage-1) in the game.
 
 ## TweakDB entries
 
@@ -255,3 +261,5 @@ The following is a diagram which maps the relationship between game files for us
 ![](<../../.gitbook/assets/Cyberpunk 2077 TweakXL+ArchiveXL Pipeline.drawio.svg>)
 
 [^1]: Your game directory, where you installed Cyberpunk 2077. Steam/GOG/Epic will take you here if you browse the local files.
+
+[^2]: The directory where you installed the game
