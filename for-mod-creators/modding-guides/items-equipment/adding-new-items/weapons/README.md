@@ -64,7 +64,11 @@ The list links you to sections of the guide which tell you to change things. **O
 Here's what's worked for me (@manavortex):
 
 1. Find the .app file of a suitable base weapon, add it to your project, and rename it. Don't change anything for now, future you might need the original data for troubleshooting later.
-2. Find the correct .ent file under `base\weapons`\  (it's linked in the .app's `baseEntity` field).
+2. Find the correct .ent file. It might be linked in the .app's `baseEntity` field. If not, you can find it with the following Wolvenkit search query:&#x20;
+
+```
+base\weapons > entities > .ent
+```
 
 {% hint style="info" %}
 Optimally, the number of components in the `.ent` file should be the same as in any appearance's `component` array (red arrow on the screenshot above).&#x20;
@@ -75,7 +79,7 @@ If it's not, that **could** indicate that you have the wrong .app file. It could
 3. Configure the yaml [as described here](./#yaml-define-the-field)
 4. Set up **one** (1) appearance for testing by [assigning the correct visual tags](./#.app-file-define-the-visual-tag). \
    _Do not delete the other appearances yet, future you might need them for troubleshooting._
-5. Start the game and make sure that you can spawn a custom weapon with the apppearance you picked and that it
+5. Start the game and make sure that you can spawn a custom weapon with the appearance you picked and that it
    1. shows up in inventory/photo mode
    2. shows up in first person
 
@@ -149,7 +153,7 @@ If your weapon is significantly bigger than the original one, you'll notice that
 
 ### My weapon is fully invisible, no matter what I do!
 
-First of all, unequip and re-equip&#x20;
+First of all, unequip and re-equip the item. If that doesn't fix it, try **respawning** it.
 
 [^1]: as linked in your .app's baseEntity field
 
