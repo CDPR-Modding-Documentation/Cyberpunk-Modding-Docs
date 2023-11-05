@@ -191,6 +191,8 @@
       * [Add lights](for-mod-creators/modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/add-lights.md)
       * [Make the Proxymesh](for-mod-creators/modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/make-the-proxymesh.md)
       * [Rigging](for-mod-creators/modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/rigging.md)
+      * [Interaction collider .phys files](for-mod-creators/modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/interaction-collider-.phys-files.md)
+      * [Textures & Materials](for-mod-creators/modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/textures-and-materials.md)
     * [🪟 Windows & Doors opening + MountedWeapons clue](for-mod-creators/modding-guides/vehicles/windows-and-doors-opening-+-mountedweapons-clue.md)
   * [🌐 World Editing](for-mod-creators/modding-guides/world-editing/README.md)
     * [Editing locations in Blender](for-mod-creators/modding-guides/world-editing/editing-locations-in-blender.md)

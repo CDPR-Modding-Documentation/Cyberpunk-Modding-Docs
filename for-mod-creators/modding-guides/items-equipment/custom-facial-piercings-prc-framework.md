@@ -94,7 +94,7 @@ Now we need to either weight paint, or transfer weights if your new piercing is 
 
 You can see the current weights the mesh has in Weight Paint mode.
 
-<figure><img src="../../../.gitbook/assets/image8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image8 (1).png" alt=""><figcaption></figcaption></figure>
 
 I’ve selected the vanilla piercing here. By clicking different vertex groups you can see the colour of the mesh changes. This colour denotes how much influence each bone has on the mesh. Red is 100% and dark blue is 0%.
 

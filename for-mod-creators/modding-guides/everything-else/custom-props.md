@@ -263,8 +263,16 @@ Good: folder: baseball, file: baseball.ent\
 Bad: folder: baseball, file: my\_baseball.ent
 {% endhint %}
 
-3. Rename all files inside of the folder: replace `template` with the name of your prop (e.g. `baseball`).&#x20;
-4. Right-click on your folder and export the entire thing to json.
+3. Rename all files inside of the folder: replace `template` with the name of your prop (e.g. `baseball`). Not all files will have template in their names; just ignore the ones that don't.
+
+{% hint style="danger" %}
+Capitalization matters. If you use uppercase letters in folder names, the game will get confused, and Wolvenkit will secretly convert them back to lowercase before packing.
+
+Good: `baseball`\
+Bad:  `Baseball`
+{% endhint %}
+
+4. Back in Wolvenkit, right-click on your folder and [export the entire thing to json](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json).
 5. Switch to the `raw` tab in Wolvenkit and open your json files in Notepad++
 6.  Via `Search and Replace in Files` (Ctrl+Shift+F), replace `template` with the name of your new prop and folder (e.g. `baseball`). Replace it in all files, **using Match case**:
 
