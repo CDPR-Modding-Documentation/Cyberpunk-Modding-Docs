@@ -22,16 +22,16 @@ If this doesn't cover your needs, maybe check out our more detailed guides:
 ## How to install mods
 
 {% hint style="danger" %}
-**TL;DR:**&#x20;
+**TL;DR:** Your mods will not work unless you
 
-_The first thing you will be told on Discord is to read this guide, so you might as well get it out of the way now._
+* make sure all files end up in the right folders
+* make sure to install all [requirements](requirements-explained.md) (and their requirements)
+* [enable REDmod](./#installing-and-activating-redmod)
 
-When installing a mod, make sure to install _all_ of its dependencies. You will find a list on the Nexus description tab under "Requirements".
-
-If you do not do this, your mod will not work.
-
-You need to [enable REDmod](./#installing-and-activating-redmod). Without it, most of your mods will not work.
+When you fuck things up, hit up [#troubleshooting](./#troubleshooting "mention") or run [mod remover](https://www.nexusmods.com/cyberpunk2077/mods/8597/) and start over.
 {% endhint %}
+
+## How do I mod?
 
 You mod **Cyberpunk 2077** by adding files to your **game directory**. There is no need to overwrite base game files, since the game natively supports modding.&#x20;
 
