@@ -29,6 +29,8 @@ If this doesn't cover your needs, maybe check out our more detailed guides:
 * [enable REDmod](./#installing-and-activating-redmod)
 
 When you fuck things up, hit up [#troubleshooting](./#troubleshooting "mention") or run [mod remover](https://www.nexusmods.com/cyberpunk2077/mods/8597/) and start over.
+
+To see an [#overview-of-mod-folders](./#overview-of-mod-folders "mention"), scroll down.
 {% endhint %}
 
 ## How do I mod?
@@ -50,7 +52,9 @@ Unless you changed the default settings, it will be installed to:
 You can install mods by hand, by using [Vortex](https://www.nexusmods.com/about/vortex/), or by using Mod Organizer 2 with additional steps detailed [here.](https://github.com/JustThatKing/MO2077/blob/main/readme.md)
 
 {% hint style="info" %}
-Regardless of your past experiences, the [Nexus mod manager](https://www.nexusmods.com/about/vortex/) works reliably and well for modding Cyberpunk, as long as you do not install more than \~250 REDmods.
+Regardless of your past experiences, the&#x20;
+
+[Nexus mod manager](https://www.nexusmods.com/about/vortex/) works reliably and well for modding Cyberpunk, as long as you do not install more than \~250 REDmods.
 {% endhint %}
 
 ### Dependencies / Requiremends
@@ -77,13 +81,7 @@ TL;DR: you can ignore this.
 
 This list is supposed to give you an overview of which files go where. It is **not** a bucket list of things you have to install.
 
-| Folder path in your game dir | Description of folder                                                                                                                             |
-| ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `/archive/pc/mod`            | holds `.archive` files from non-REDmods                                                                                                           |
-| `/bin/x64/plugins`           | Cyber Engine Tweaks ([github](https://github.com/yamashi/CyberEngineTweaks/releases)) ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/107)) |
-| `/mods`                      | Directory for REDmods                                                                                                                             |
-| `/r6`                        | [redscript](https://www.nexusmods.com/cyberpunk2077/mods/1511) folder                                                                             |
-| `/red4ext`                   | [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380), ArchiveXL, TweakXL                                                                  |
+<table><thead><tr><th width="256">Directory</th><th>explanation</th></tr></thead><tbody><tr><td>\<code>mods</code></td><td>Redmod directory: contains .archive mods (in subfolders)</td></tr><tr><td>\<code>archive\pc\mod</code></td><td>Legacy directory: contains .archive mods and .xl files</td></tr><tr><td>\<code>bin\x64\plugins</code></td><td>plugins like Cyber Engine Tweaks</td></tr><tr><td><code>\r6\scripts</code></td><td>redscript mods</td></tr><tr><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr></tbody></table>
 
 ```markup
 - archive
@@ -110,7 +108,7 @@ Loading a mod as REDmod means that Cyberpunk will precompile it and integrate it
 REDmods are installed in `Cyberpunk 2077\mods`, where every mod has a subfolder with an `info.json`.
 
 {% hint style="warning" %}
-
+If the mod contains only files inside the folder `archives`, you can un-REDmod-ify it by moving all of those files to `archive/pc/mod`.
 {% endhint %}
 
 ## Installing Mods
@@ -131,7 +129,7 @@ You can inspect the file structure by simply opening the downloaded file, or by 
 
 The file structure is different for REDmods and non-REDmods. Mod authors usually tell you which file is which, though.&#x20;
 
-### REDmod:
+### REDmod
 
 {% hint style="info" %}
 If the downloaded archive contains an `info.json` and a folder named `archives`, you're dealing with a REDmod.
