@@ -16,7 +16,7 @@
   * [Modding on Linux](for-mod-users/users-modding-cyberpunk-2077/modding-on-linux.md)
 * [🆘 Troubleshooting](for-mod-users/user-guide-troubleshooting/README.md)
   * [Users: Troubleshooting after a game update](for-mod-users/user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md)
-  * [Users: troubleshooting requirements](for-mod-users/user-guide-troubleshooting/requirements-explained.md)
+  * [Users: troubleshooting requirements](for-mod-users/users-modding-cyberpunk-2077/requirements-explained.md)
   * [Users: Troubleshooting CET](https://wiki.redmodding.org/cyber-engine-tweaks/getting-started/installing/troubleshooting)
   * [Finding and reading log files](for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md)
   * [Broken mods: How to help](for-mod-users/user-guide-troubleshooting/broken-mods-how-to-help.md)

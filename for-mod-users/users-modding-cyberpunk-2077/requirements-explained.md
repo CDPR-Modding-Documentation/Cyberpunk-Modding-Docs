@@ -13,7 +13,7 @@ This page will give you an explanation of requirements ([#theory-what-is-a-requi
 The example will use [VirtualAtelier](https://www.nexusmods.com/cyberpunk2077/mods/2987?tab=description), but the same principle applies to each and any mod.
 
 {% hint style="success" %}
-In the process of this guide, you will be told to check a certain mod's log file. If you don't know how to do that, check [finding-and-reading-log-files.md](finding-and-reading-log-files.md "mention").
+In the process of this guide, you will be told to check a certain mod's log file. If you don't know how to do that, check [finding-and-reading-log-files.md](../user-guide-troubleshooting/finding-and-reading-log-files.md "mention").
 {% endhint %}
 
 ## Theory: What is a requirement?
@@ -66,7 +66,7 @@ If you aren't there yet, open your Cyberpunk 2077 **game folder** ("Browse local
 * if you're debugging an Atelier Store, start with [VirtualAtelier ](https://www.nexusmods.com/cyberpunk2077/mods/2987)as a dependency.
 {% endhint %}
 
-1. Use the Windows Search to find a matching log file (e.g. search for the mod's name - [here](finding-and-reading-log-files.md) are more instructions if you need them).&#x20;
+1. Use the Windows Search to find a matching log file (e.g. search for the mod's name - [here](../user-guide-troubleshooting/finding-and-reading-log-files.md) are more instructions if you need them).&#x20;
 2. If you have found a log file, read on under [#a-log-file-exists](requirements-explained.md#a-log-file-exists "mention")
 3. If you have not found one or if it contains no errors or warnings, go to [your-own-hud-icons.md](../../for-mod-creators/modding-guides/custom-icons-and-ui/your-own-hud-icons.md "mention")
 
@@ -80,13 +80,13 @@ This means that your mod is **loaded**, but never **initialized**. Go to [#there
 
 #### The file has errors
 
-Something is wrong with the mod itself. You can now go and [troubleshoot it](./#dealing-with-a-broken-mod).
+Something is wrong with the mod itself. You can now go and [troubleshoot it](../user-guide-troubleshooting/#dealing-with-a-broken-mod).
 
 #### The file only has warnings
 
 Your mod is being loaded, so the dependencies are OK (if they aren't, the log file would tell you so).
 
-Warnings in the log file don't necessarily mean that something is outright broken. But since you're here and your mod isn't working, that is probably the case. Proceed with [troubleshooting](./#dealing-with-a-broken-mod).
+Warnings in the log file don't necessarily mean that something is outright broken. But since you're here and your mod isn't working, that is probably the case. Proceed with [troubleshooting](../user-guide-troubleshooting/#dealing-with-a-broken-mod).
 
 ### There is no log file, or it's empty
 

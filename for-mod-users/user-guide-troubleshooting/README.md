@@ -51,7 +51,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
 * [You have trouble with CET (Cyber Engine Tweaks)](./#mod-isnt-working-cet)
   * [You forgot your CET keybind](./#you-forgot-your-cet-keybind)
 * [XML Document parsed with errors](./#xml-document-parsed-with-errors)
-* [You installed a mod, but it's not doing anything ](./#mod-s-arent-loading-triggering)
+* [You installed a mod, but it's not doing anything](./#mod-s-arent-loading-triggering)&#x20;
 * A mod is causing problems, and you have no idea which:
   * &#x20;[Known problem children](./#finding-the-broken-mod-known-problem-children)
   * Searching: [Bisect](./#finding-the-broken-mod-bisecting)
@@ -545,7 +545,7 @@ Missing footsteps had in the past been connected to a bug in Let [There Be Fligh
 If the mod in question is Cyber Engine Tweaks (CET), check the [corresponding troubleshooting page](https://wiki.redmodding.org/cyber-engine-tweaks/getting-started/installing/troubleshooting).
 {% endhint %}
 
-Normally, a mod should **just work**, as long as all of their requirements are working. If you aren't certain what that means, you can check [requirements-explained.md](requirements-explained.md "mention") for detes, or  follow the checklist below.
+Normally, a mod should **just work**, as long as all of their requirements are working. If you aren't certain what that means, you can check [requirements-explained.md](../users-modding-cyberpunk-2077/requirements-explained.md "mention") for detes, or  follow the checklist below (  [#getting-a-mod-to-work](./#getting-a-mod-to-work "mention")).
 
 * Make sure that you have [enabled mods](../../for-mod-creators/core-mods-explained/redmod/#installation) in your launcher.
 * If items or hairs aren't changing, you need to install [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/8127) (why?)[^11]
@@ -559,9 +559,9 @@ If you've been using Mod Organizer 2 to install your mods, chances are high that
 ### Getting a mod to work
 
 1. Check that you've **enabled mods** (see [Deploying Mods and Starting Game](../../for-mod-creators/core-mods-explained/redmod/#installation)).&#x20;
-2. Check the [requirements](requirements-explained.md) on the mod's nexus page. Make sure that you have installed them all and that they are up-to-date.
+2. Check the [requirements](../users-modding-cyberpunk-2077/requirements-explained.md) on the mod's nexus page. Make sure that you have installed them all and that they are up-to-date.
    * If the requirements list Cyber Engine Tweaks, check its log file under `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\cyber_engine_tweaks.log`
-   * For a more detailed guide, see [requirements-explained.md](requirements-explained.md "mention")
+   * For a more detailed guide, see [requirements-explained.md](../users-modding-cyberpunk-2077/requirements-explained.md "mention")
 3. Make sure that all of your [core frameworks](./#step-7-install-the-core-frameworks) are up-to-date and starting up correctly (here's how you can [check their log files](finding-and-reading-log-files.md#a-list-of-framework-logfiles))
 4. Check the other log files in the game directory ([here's a guide how](finding-and-reading-log-files.md))
 5. **Optional**: reach out to us on [Discord](https://discord.gg/redmodding) in #mod-troubleshooting
@@ -669,7 +669,7 @@ Check the [framework page](../../for-mod-creators/core-mods-explained/). For eac
 
 * If you didn't have it in your previous install, skip it.
 * Install it (manually or via Vortex, your choice)
-* Install **all of its** [**dependencies**](requirements-explained.md)
+* Install **all of its** [**dependencies**](../users-modding-cyberpunk-2077/requirements-explained.md)
 * Start the game and load a savegame (you can also do this after installing all of them, but if you run into issues, that will make isolating the point of failure more difficult).
 * Optional (for CET): Start the game and make sure that it asks you to bind a key. If not, check the [corresponding section of this guide.](./#cet)
 
@@ -690,7 +690,7 @@ Fortunately, this is not rocket science. Be methodical and install them one by o
 ### Adding (back) your mods
 
 {% hint style="success" %}
-If you don't (yet) have any mods, you can head over to Nexus and start installing. Make sure that you include all necessary [dependencies](requirements-explained.md)!
+If you don't (yet) have any mods, you can head over to Nexus and start installing. Make sure that you include all necessary [dependencies](../users-modding-cyberpunk-2077/requirements-explained.md)!
 {% endhint %}
 
 {% hint style="warning" %}

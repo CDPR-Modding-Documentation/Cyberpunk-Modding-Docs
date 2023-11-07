@@ -27,7 +27,7 @@ If you want to learn more about the frameworks, you can check the [core-mods-exp
 **TL;DR:** Your mods will not work unless you
 
 * make sure all files end up in the right folders
-* make sure to install all [requirements](../user-guide-troubleshooting/requirements-explained.md) (and their requirements)
+* make sure to install all [requirements](requirements-explained.md) (and their requirements)
 * [enable REDmod](./#installing-and-activating-redmod)
 
 When you fuck things up, hit up [#troubleshooting](./#troubleshooting "mention") or run [mod remover](https://www.nexusmods.com/cyberpunk2077/mods/8597/) and start over.
@@ -59,7 +59,7 @@ Regardless of your past experiences, the Nexus Mod Manager [Vortex](https://www.
 
 ### What are dependencies / requirements?
 
-For more detailed information, see [requirements-explained.md](../user-guide-troubleshooting/requirements-explained.md "mention").
+For more detailed information, see [requirements-explained.md](requirements-explained.md "mention").
 
 {% hint style="danger" %}
 TL;DR:&#x20;
