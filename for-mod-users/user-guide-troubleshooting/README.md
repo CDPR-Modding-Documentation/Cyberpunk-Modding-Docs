@@ -57,7 +57,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
   * Searching: [Bisect](./#finding-the-broken-mod-bisecting)
   * Searching: [Log files](finding-and-reading-log-files.md)
 * [Something with files or ACCESS\_VIOLATION](./#something-something-files)
-* Deleting user settings
+* [Deleting user settings](./#deleting-user-settings)
 * [This is a waste of time, I'm reinstalling](./#the-nuclear-option-a-clean-install)
   * [Modding a clean install ](./#a-fresh-install-starting-from-scratch)
 
