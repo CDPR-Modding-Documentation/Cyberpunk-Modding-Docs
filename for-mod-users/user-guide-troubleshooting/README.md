@@ -4,7 +4,7 @@ description: If your mods are causing trouble, here's what you can do
 
 # 🆘 Troubleshooting
 
-dThis page contains troubleshooting information for people who are **using** mods rather than making mods. You will find step-by-step guides, grouped by different problems.
+This page contains troubleshooting information for people who are **using** mods rather than making mods. You will find step-by-step guides, grouped by different problems.
 
 {% hint style="info" %}
 Did you know?  You can us your browser's search function (Ctrl+F) to quickly find your problem on the page – simply type a word from your error message.
@@ -73,7 +73,7 @@ If your game is crashing during certain car chase missions, try removing [Eye Ex
 
 <figure><img src="../../.gitbook/assets/troubleshooting_headers_doesnt_even_start.png" alt=""><figcaption></figcaption></figure>
 
-If you can't play because the game is crashing, this section will point you towards the right troubleshooting steps in the guide below.
+If you can't play because the game is crashing, this section will help you find the right troubleshooting steps in the rest of the guide.
 
 * If you're done with this shit and would rather reinstall, see [#the-nuclear-option-a-clean-install](./#the-nuclear-option-a-clean-install "mention")
 
@@ -542,10 +542,10 @@ Missing footsteps had in the past been connected to a bug in Let [There Be Fligh
 <figure><img src="../../.gitbook/assets/troubleshooting_headers_not_working.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-If the mod in question is Cyber Engine Tweaks (CET), check the corresponding subpage. If it's anything else, read on.
+If the mod in question is Cyber Engine Tweaks (CET), check the [corresponding troubleshooting page](https://wiki.redmodding.org/cyber-engine-tweaks/getting-started/installing/troubleshooting).
 {% endhint %}
 
-Normally, a mod should **just work**, as long as all of their requirements are working. If you aren't certain what that means, you can check [requirements-explained.md](../users-modding-cyberpunk-2077/requirements-explained.md "mention") for detes, or just follow the checklist below.
+Normally, a mod should **just work**, as long as all of their requirements are working. If you aren't certain what that means, you can check [requirements-explained.md](requirements-explained.md "mention") for detes, or  follow the checklist below.
 
 * Make sure that you have [enabled mods](../../for-mod-creators/core-mods-explained/redmod/#installation) in your launcher.
 * If items or hairs aren't changing, you need to install [cookedapps nulled](https://www.nexusmods.com/cyberpunk2077/mods/8127) (why?)[^11]
@@ -556,53 +556,15 @@ Normally, a mod should **just work**, as long as all of their requirements are w
 If you've been using Mod Organizer 2 to install your mods, chances are high that it's been doing it incorrectly, at least for some of the more important mods. You'll need to do additional steps detailed [here](https://github.com/JustThatKing/MO2077/blob/main/readme.md) in order to get MO2 working with Cyberpunk.
 {% endhint %}
 
-### That wasn't it: Getting the mod to work
+### Getting a mod to work
 
-If your mod is [cyber engine tweaks itself](./#mod-isnt-working-cet) or [a dependent mod](./#mod-isnt-working-a-cet-mod-or-script), you can check the sections below. Otherwise, follow the [general troubleshooting steps](./#mod-isnt-working-general-troubleshooting).
-
-* [Cyber Engine Tweaks (CET)](./#mod-isnt-working-cet)&#x20;
-  * [a CET mod or script](./#mod-isnt-working-a-cet-script)
-
-#### Mod isn't working: General troubleshooting
-
-Here's what you can do:
-
-1. Check that you've enabled the feature (see [Deploying Mods and Starting Game](../../for-mod-creators/core-mods-explained/redmod/#installation)).&#x20;
-2. Check the [requirements](../users-modding-cyberpunk-2077/requirements-explained.md) on the mod's nexus page. Make sure that you have installed them all and that they are up-to-date.
+1. Check that you've **enabled mods** (see [Deploying Mods and Starting Game](../../for-mod-creators/core-mods-explained/redmod/#installation)).&#x20;
+2. Check the [requirements](requirements-explained.md) on the mod's nexus page. Make sure that you have installed them all and that they are up-to-date.
+   * If the requirements list Cyber Engine Tweaks, check its log file under `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\cyber_engine_tweaks.log`
+   * For a more detailed guide, see [requirements-explained.md](requirements-explained.md "mention")
 3. Make sure that all of your [core frameworks](./#step-7-install-the-core-frameworks) are up-to-date and starting up correctly (here's how you can [check their log files](finding-and-reading-log-files.md#a-list-of-framework-logfiles))
 4. Check the other log files in the game directory ([here's a guide how](finding-and-reading-log-files.md))
 5. **Optional**: reach out to us on [Discord](https://discord.gg/redmodding) in #mod-troubleshooting
-
-#### Mod isn't working: CET[^13]
-
-You have installed Cyber Engine Tweaks, but it's not active / not letting you bind a key:&#x20;
-
-* [ ] Is CET in the right place? It has to be installed under&#x20;
-
-```
-Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks
-```
-
-* [ ] Is there a `gamelog.log` inside the directory? If not, move the folder out of `plugins` and reinstall from a fresh download.
-* [ ] Do you have [Visual C Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed? ([direct download](https://aka.ms/vs/17/release/vc\_redist.x64.exe) from Microsoft)
-
-#### Mod isn't working: a CET mod or script
-
-{% hint style="info" %}
-You will find all the files mentioned below under
-
-```
-Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks
-```
-{% endhint %}
-
-1. Find the  `cyber_engine_tweaks.log`.&#x20;
-2. Update everything that shows an error
-3. If any file paths are listed: Make sure that the directories exist and aren't [read-only](./#make-sure-that-all-files-in-the-game-directory-are-writable)
-4. Search the CET folder for log files [log files](finding-and-reading-log-files.md#alternatively-by-hand)
-5. Try to resolve any errors or reach out to us on [Discord](https://discord.gg/redmodding) in #mod-troubleshooting
-
-
 
 ## Deleting user settings
 
@@ -631,11 +593,11 @@ This is the last resort and you do **not** need to do this — run [this script]
 {% hint style="danger" %}
 Unless you back them up, your mods will be **lost**. If you don't want that, make backups of the following folders:
 
-* [`/mods`](#user-content-fn-14)[^14]
-* [`/archive/pc/mod`](#user-content-fn-15)[^15]
-* [`/bin/x64/plugins/cyber_engine_tweaks`](#user-content-fn-16)[^16]
-* [`/r6/scripts`](#user-content-fn-17)[^17]
-* [`/r6/tweaks`](#user-content-fn-18)[^18]
+* [`/mods`](#user-content-fn-13)[^13]
+* [`/archive/pc/mod`](#user-content-fn-14)[^14]
+* [`/bin/x64/plugins/cyber_engine_tweaks`](#user-content-fn-15)[^15]
+* [`/r6/scripts`](#user-content-fn-16)[^16]
+* [`/r6/tweaks`](#user-content-fn-17)[^17]
 
 The [script](./#is-there-a-shortcut) linked above will do that for you.
 {% endhint %}
@@ -668,13 +630,13 @@ Will download < 1GB.&#x20;
 
 Rename or remove the following folders. If you do not have them, you don't need to do anything.
 
-<pre><code>/<a data-footnote-ref href="#user-content-fn-19">mods</a>
-/<a data-footnote-ref href="#user-content-fn-20">plugins</a>
-<a data-footnote-ref href="#user-content-fn-21">/engine</a>
+<pre><code>/<a data-footnote-ref href="#user-content-fn-18">mods</a>
+/<a data-footnote-ref href="#user-content-fn-19">plugins</a>
+<a data-footnote-ref href="#user-content-fn-20">/engine</a>
 /r6
-<a data-footnote-ref href="#user-content-fn-22">/red4ext</a>
-<a data-footnote-ref href="#user-content-fn-23">/archive/pc/mod</a>
-<a data-footnote-ref href="#user-content-fn-24">/bin/x64/plugins</a>
+<a data-footnote-ref href="#user-content-fn-21">/red4ext</a>
+<a data-footnote-ref href="#user-content-fn-22">/archive/pc/mod</a>
+<a data-footnote-ref href="#user-content-fn-23">/bin/x64/plugins</a>
 </code></pre>
 
 Afterwards, verify your files.
@@ -707,7 +669,7 @@ Check the [framework page](../../for-mod-creators/core-mods-explained/). For eac
 
 * If you didn't have it in your previous install, skip it.
 * Install it (manually or via Vortex, your choice)
-* Install **all of its** [**dependencies**](../users-modding-cyberpunk-2077/requirements-explained.md)
+* Install **all of its** [**dependencies**](requirements-explained.md)
 * Start the game and load a savegame (you can also do this after installing all of them, but if you run into issues, that will make isolating the point of failure more difficult).
 * Optional (for CET): Start the game and make sure that it asks you to bind a key. If not, check the [corresponding section of this guide.](./#cet)
 
@@ -728,7 +690,7 @@ Fortunately, this is not rocket science. Be methodical and install them one by o
 ### Adding (back) your mods
 
 {% hint style="success" %}
-If you don't (yet) have any mods, you can head over to Nexus and start installing. Make sure that you include all necessary [dependencies](../users-modding-cyberpunk-2077/requirements-explained.md)!
+If you don't (yet) have any mods, you can head over to Nexus and start installing. Make sure that you include all necessary [dependencies](requirements-explained.md)!
 {% endhint %}
 
 {% hint style="warning" %}
@@ -820,7 +782,7 @@ If it doesn't, check the next steps on the list.
 
 ### Make sure that all files in the game directory are writable
 
-Sometimes, files in your [Cyberpunk game directory](#user-content-fn-25)[^25] are set to read-only.&#x20;
+Sometimes, files in your [Cyberpunk game directory](#user-content-fn-24)[^24] are set to read-only.&#x20;
 
 #### **What kind of monster would do something like that???**
 
@@ -840,7 +802,7 @@ You can fix this either via [Windows Explorer](./#via-windows-explorer) or via [
 * type `cmd` and press Return to open the command line
 *   run the following command (replace the path with your actual game dir):
 
-    <pre><code>attrib -r "<a data-footnote-ref href="#user-content-fn-26">C:\Path\To\Cyberpunk</a>\*.*" /s
+    <pre><code>attrib -r "<a data-footnote-ref href="#user-content-fn-25">C:\Path\To\Cyberpunk</a>\*.*" /s
     </code></pre>
 
 #### Via Windows Explorer:&#x20;
@@ -860,7 +822,7 @@ You can fix it via [system console](./#via-commandline) or via [Windows Explorer
 #### Via commandline
 
 {% hint style="warning" %}
-In any of the commands below, you need to substitute `C:/Path/to/Cyberpunk2077` with the path to your [game directory](#user-content-fn-27)[^27].
+In any of the commands below, you need to substitute `C:/Path/to/Cyberpunk2077` with the path to your [game directory](#user-content-fn-26)[^26].
 {% endhint %}
 
 * Press Windows+R
@@ -910,9 +872,9 @@ This workflow is geared at the exact error above. If you have a different one, i
 
 ### 0. Make sure that you don't have multiple versions of [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780) installed
 
-In the past, Codeware wasn't a standalone mod, but was instead [**bundled**](#user-content-fn-28)[^28] inside of other mods. Since that is different now, the leftover versions can cause errors.
+In the past, Codeware wasn't a standalone mod, but was instead [**bundled**](#user-content-fn-27)[^27] inside of other mods. Since that is different now, the leftover versions can cause errors.
 
-1. Search your [Cyberpunk directory](#user-content-fn-29)[^29] for `Codeware`.&#x20;
+1. Search your [Cyberpunk directory](#user-content-fn-28)[^28] for `Codeware`.&#x20;
 2. If you have exactly one folder, this is not your problem — proceed to [the next step](./#1.-make-sure-that-you-have-the-latest-versions).
 3. Delete everything you have found.
 4. Reinstall the latest version of [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780) from Nexus.
@@ -961,11 +923,11 @@ You can zip the directory from the windows context menu, then delete its content
 
 #### Resetting the redscript cache
 
-* delete [`r6/cache`](#user-content-fn-30)[^30]
+* delete [`r6/cache`](#user-content-fn-29)[^29]
 * verify game files
 * create a new directory `r6/cache/modded` (this will prevent errors)
-* Make sure that `r6/scripts` [is empty](#user-content-fn-31)[^31]
-* Make sure that `red4ext/plugins` [is empty](#user-content-fn-32)[^32] (that the red4ext core frameworks aren't getting loaded)
+* Make sure that `r6/scripts` [is empty](#user-content-fn-30)[^30]
+* Make sure that `red4ext/plugins` [is empty](#user-content-fn-31)[^31] (that the red4ext core frameworks aren't getting loaded)
 
 {% hint style="success" %}
 Make sure your game starts up without error.
@@ -1337,46 +1299,44 @@ If the error isn't in any script files, you will have to **unbundle the .archive
 
 [^12]: A mod that forces Cyberpunk to actually load the modded items instead of using the cache they had to put in for last-gen console support. For a technical explanation, check the wiki page about commonCookData.
 
-[^13]: It's installed to bin\x64\plugins\cyber\_engine\_tweaks
+[^13]: .archive mods in the redmod format
 
-[^14]: .archive mods in the redmod format
+[^14]: .archive mods in the legacy format
 
-[^15]: .archive mods in the legacy format
+[^15]: CET settings, radioExt files, Appearance Menu Mod settings _and user presets_
 
-[^16]: CET settings, radioExt files, Appearance Menu Mod settings _and user presets_
+[^16]: Redscript directory
 
-[^17]: Redscript directory
+[^17]: TweakXL directory
 
-[^18]: TweakXL directory
+[^18]: .archive mods in the redmod format
 
-[^19]: .archive mods in the redmod format
+[^19]: an ancient plugin directory that hasn't been used for several game updates, but that can still cause trouble
 
-[^20]: an ancient plugin directory that hasn't been used for several game updates, but that can still cause trouble
+[^20]: config and shader caches
 
-[^21]: config and shader caches
+[^21]: red4ext frameworks and associated data
 
-[^22]: red4ext frameworks and associated data
+[^22]: .archive mods in the legacy format, not redmod
 
-[^23]: .archive mods in the legacy format, not redmod
+[^23]: LUA plugins such as cyber engine tweaks
 
-[^24]: LUA plugins such as cyber engine tweaks
+[^24]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
 
 [^25]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+
+
 
 [^26]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
 
 
 
-[^27]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
+[^27]: as in, "a subfolder in the folder of"
 
+[^28]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
 
+[^29]: The script directory for non-Redmods
 
-[^28]: as in, "a subfolder in the folder of"
+[^30]: If it isn't, rename the entire directory to scripts\_ and create a new empty folder in its place
 
-[^29]: The directory where your game is installed. It's most likely called Cyberpunk 2077. Contains the folders archive, bin, engine… and the REDprelauncher.exe
-
-[^30]: The script directory for non-Redmods
-
-[^31]: If it isn't, rename the entire directory to scripts\_ and create a new empty folder in its place
-
-[^32]: If it isn't, rename the entire directory to plugins\_ and create a new empty folder in its place
+[^31]: If it isn't, rename the entire directory to plugins\_ and create a new empty folder in its place
