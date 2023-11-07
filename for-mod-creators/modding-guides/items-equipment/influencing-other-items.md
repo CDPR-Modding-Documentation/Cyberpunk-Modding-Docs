@@ -59,7 +59,7 @@ a0_001_pwa_base_hq__full8640
 left_arm                              
 right_arm                             
 a0_000_pwa_base__fists                // fists (fighting arms)
-a0_005_wa__strongarms_holstered_r     // gorilla arms (holstered)
+a0_005_wa__strongarms_holstered_r     // gorilla arms (holstered, inventory)
 a0_005_wa__strongarms_holstered_l    
 a0_005_wa__strongarms_r               // gorilla arms
 a0_005_wa__strongarms_l
