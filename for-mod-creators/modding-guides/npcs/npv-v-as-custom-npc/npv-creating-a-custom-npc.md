@@ -140,6 +140,10 @@ It looks like this:
 
 <figure><img src="../../../../.gitbook/assets/npv_app_structure..png" alt=""><figcaption><p>Before renaming </p></figcaption></figure>
 
+Whenever you save the file, the Wolvenkit console will show you the results of the [file validation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). These will point you towards mistakes in your paths.
+
+If you get a bunch of errors that complain about "mesh not found in project files" or "no depot path set, only hash given," that's no reason to panic – those errors come from files that you deleted, but which are still linked in the `.app`. If you deleted them by accident, restore them from the template project. Otherwise, you can (and should) delete the components.
+
 {% hint style="success" %}
 The next section, [#how-do-i-know-what-to-put](npv-creating-a-custom-npc.md#how-do-i-know-what-to-put "mention"), will help you find the right appearance names.
 
@@ -168,6 +172,8 @@ The NPV picker does this for you, but here's how to select your eyebrow appearan
 * the numbers correspond with the type of eyebrow in the character editor (look them up [here](../../../references-lists-and-overviews/cheat-sheet-head/hair.md))
 * Select the correct colour and appearance number
 {% endhint %}
+
+The values you found out will go into the **components** in your NPV's .app file.
 
 ### Customizing Cyberware
 
