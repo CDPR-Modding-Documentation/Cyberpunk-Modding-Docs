@@ -56,7 +56,9 @@ Go [here for PL](https://colab.research.google.com/github/Simarilius-uk/sectorSt
 
 #### When running from browser:
 
-Change the x, y and z coordinate to the coordinates that you found[ via CET](finding-world-sectors.md#prerequisite-getting-the-coordinates):thumbsup:
+Change the x, y and z coordinate to the coordinates that you found[ via CET](finding-world-sectors.md#prerequisite-getting-the-coordinates).&#x20;
+
+Scroll down after clicking the run button!
 
 
 
@@ -80,5 +82,5 @@ You'll find the coordinates in line 31. Change them to the coordinates that you 
 
 Now, run the script via Python. It'll give you a list of interior/exterior sector files together with the distance from your coordinates.
 
-The blocks at the bottom can be used to generate a streamingblock json file for just the results, which can be imported to wolvenkit to preview them as per Method 1. if running the script locally you will need to download the sectors.streamingblock file from the github and edit the templatepath variable to point at it.
+The blocks at the bottom (**scroll down!**) can be used to generate a streamingblock json file for just the results, which can be imported to wolvenkit to preview them as per Method 1. if running the script locally you will need to download the sectors.streamingblock file from the github and edit the templatepath variable to point at it.
 
