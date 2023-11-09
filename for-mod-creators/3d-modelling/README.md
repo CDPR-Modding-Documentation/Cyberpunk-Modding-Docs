@@ -13,7 +13,7 @@ Due to its complexity, we don't have a dedicated guide on Blender. However, if y
 * [Sculpting](mesh-sculpting-techniques.md)
 * [Proportional editing / Refitting](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md)
 * [Texture painting](../textures/custom-multilayermasks.md) and [normal map creation](self-made-normal-maps/)
-* [Splitting meshes](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)
+* [Adding submeshes](3d-editing-submeshes.md) or [Splitting meshes](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)
 
 For more hands-on advice, see the guide section, for example
 

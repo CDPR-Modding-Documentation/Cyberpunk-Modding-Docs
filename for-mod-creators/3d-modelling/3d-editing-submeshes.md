@@ -5,7 +5,7 @@ This page contains a theory part and a guide.
 The guide section of this page has been created in the context of [first-person-perspective-fixes.md](../modding-guides/items-equipment/first-person-perspective-fixes.md "mention"): [#editing-the-.mesh](../modding-guides/items-equipment/first-person-perspective-fixes.md#editing-the-.mesh "mention"). It will show you how to split a mesh into submeshes (or how to alternatively delete these parts of the mesh).
 
 {% hint style="info" %}
-If you run into problems, check [exporting-and-importing-meshes](exporting-and-importing-meshes/ "mention") for more information, or [troubleshooting-your-mesh-edits.md](troubleshooting-your-mesh-edits.md "mention")
+If you run into problems, check [exporting-and-importing-meshes](exporting-and-importing-meshes/ "mention") for more information, or [troubleshooting-your-mesh-edits.md](troubleshooting-your-mesh-edits.md "mention").
 {% endhint %}
 
 ## Theory: what are submeshes?
@@ -21,6 +21,10 @@ TODO: Explain how this works.&#x20;
 {% endhint %}
 
 ## Guide: Splitting off submeshes
+
+{% hint style="info" %}
+For more information on splitting meshes, you can [check this guide](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh).
+{% endhint %}
 
 ### Prerequisites
 

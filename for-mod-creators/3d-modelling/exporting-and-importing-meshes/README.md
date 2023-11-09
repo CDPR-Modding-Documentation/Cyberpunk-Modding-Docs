@@ -13,6 +13,10 @@ This guide will show you how to\
 \- export meshes from the game for use in other projects\
 \- import those meshes back into WolvenKit
 
+{% hint style="success" %}
+As of November 2023, the recommended workflow is using the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention"). Check its import/export documentation under [wkit-blender-plugin-import-export.md](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention").
+{% endhint %}
+
 It will **not** show you anything else. For other use cases like **exporting characters,** please check [#wait-this-isnt-what-i-want](./#wait-this-isnt-what-i-want "mention")
 
 Assumed skill level: You are able to read ;)
@@ -29,19 +33,17 @@ Would you rather…
 * [Replace meshes](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md) without editing them?
 * Export [a whole character](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender) or [an animated character](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)?
 
-{% hint style="info" %}
-You can find a collection of useful Python scripts for Blender on [Simarilius's github](https://github.com/Simarilius-uk/CP2077\_BlenderScripts/).
-{% endhint %}
+#### Legacy: Noesis
 
-You can import and export meshes via WolvenKit **or** [Noesis](autodesk-fbx-noesis.md) - both methods work.&#x20;
+In the dawn of modding, Wolvenkit just plain couldn't import or export .mesh files and you had to use [Noesis](autodesk-fbx-noesis.md). In 2023, you won't need that anymore. We're keeping the documentation for the sake of completeness and downward compatibility, but in general, **you don't need it anymore**.
+
+## Exporting the mesh
 
 {% hint style="danger" %}
 **Before you start editing, a warning:**
 
 It is easy to [break a mesh](./#troubleshooting-i-cant-import-my-mesh) beyond the point of repair. Make frequent back-ups, and continuously test if your altered mesh still imports and displays in WolvenKit, **especially when editing vertices!**
 {% endhint %}
-
-## Exporting the mesh
 
 ### glTF Binary (\*.glb)
 
