@@ -15,6 +15,8 @@ As much of the information here has been documented in [other guides](../appeara
 
 This page is a part of the [NPV guide](./). It will show you how to use the [provided example project](./#preparation) to create a custom NPC for Cyberpunk 2077, whom you can then spawn with AppearanceMenuMod.
 
+It will give you a brief overview over the control files and tell you how to pull in the right meshes (and appearances).
+
 {% hint style="info" %}
 This guide assumes that&#x20;
 
@@ -29,7 +31,7 @@ It's not a problem if you use your own custom paths, although it is easier to [c
 {% endhint %}
 
 {% hint style="success" %}
-At any time during the tutorial, you can **install** the Wolvenkit project (Wolvenkit has a button in the toolbar) and spawn **Tutorial Man** and **Tutorial Woman** via AMM to check out your progress.
+At any time during the tutorial, you can [**install** the Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch), launch into the game, open CET and spawn **Tutorial Man** and **Tutorial Woman** via AMM to check out your progress.
 {% endhint %}
 
 ## Skipping and skimming
@@ -37,6 +39,12 @@ At any time during the tutorial, you can **install** the Wolvenkit project (Wolv
 This guide contains as little fluff as possible. Extra information will be contained in the **links**, which will be annotated as clearly as possible with what you need to read and what's optional.
 
 If you're skimming in this guide, you **will** end up making mistakes. Read thoroughly. If at the end of a section you aren't where the guide says you're supposed to be, fall back and double-check your process. If you still have trouble, you can hit us up on [discord](https://discord.com/invite/redmodding) in the `#mod-development` channel.
+
+### How everything hangs together
+
+In the end, an NPV is just a custom prop with a god complex. For that reason, the [file structure](../../everything-else/custom-props.md#with-variants) is the same (it's just a lot more complex, because you have more than 4 components).
+
+If diagrams help you, then [click on the link](../../everything-else/custom-props.md#with-variants) to see one.
 
 ## The .lua file
 
