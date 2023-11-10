@@ -4,13 +4,18 @@
 
 There is nothing here yet. For general documentation on how animations work, see [animations.md](../animations.md "mention")
 
+| Anims description                 | Path in game files                         |
+| --------------------------------- | ------------------------------------------ |
+| Player female inventory animation | base\animations\ui\female\ui\_female.anims |
+| Player male inventory animation   | base\animations\ui\male\ui\_male.anims     |
+
 ## .rigs
 
 ### First person
 
 First person animations are used solely on the player character (V). There's one rig per body gender:
 
-<table><thead><tr><th width="226">name of rig</th><th>Path in game files</th></tr></thead><tbody><tr><td>player_male</td><td></td></tr><tr><td>player_female</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="226">name of rig</th><th>Path in game files</th></tr></thead><tbody><tr><td>player_male</td><td>base\characters\entities\player\deformations_rigs_ma\player_man_fpp_deformations.rig<br>(pulled from player_ma_fpp.ent)</td></tr><tr><td>player_female</td><td>base\characters\entities\player\deformations_rigs_wa\player_woman_base_deformations.rig<br>(pulled from player_wa_fpp.ent)</td></tr></tbody></table>
 
 ### Third person
 
