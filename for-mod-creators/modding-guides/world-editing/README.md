@@ -1,72 +1,52 @@
 ---
-description: How to move or delete a object in the world of Cyberpunk 2077
+description: Editing the world of Cyberpunk
 ---
 
 # 🌐 World Editing
 
-## Summary
+This page will give you an overview on how to edit the world of Cyberpunk 2077. &#x20;
 
-**Created by @Krat0es**\
-**Published October 10 2022**
+For its collection of **guides**, see the child pages in the wiki's navigation tree or click on "Next" at the foot of the page.
 
-This guide aims to teach you moving and deleting objects from the world.&#x20;
+* For a guide on how to find the correct streamingsector, see [places.md](../../references-lists-and-overviews/reference-world-sectors/places.md "mention")
+* For a list of ineresting sectors on this wiki, see [reference-world-sectors](../../references-lists-and-overviews/reference-world-sectors/ "mention")
 
-{% hint style="warning" %}
-TODO: This functionality has since been added to ArchiveXL ([link to Discord post](https://discord.com/channels/717692382849663036/955663052903178270/1165050628419100743)). Someone needs to overhaul the tutorial and archive this one.
-{% endhint %}
+## How to change the world?
 
-{% hint style="info" %}
-For more documentation on streaming sector files, see [here](../../files-and-what-they-do/the-whole-world-.streamingsector.md).
+Rather than blowing up Arasaka Tower or trying to become bomb, we're using [archivexl](../../core-mods-explained/archivexl/ "mention") to edit the contents of [.streamingsector](../../files-and-what-they-do/the-whole-world-.streamingsector.md) files.&#x20;
 
-If you don't know which sector you want to edit, check [places.md](../../references-lists-and-overviews/reference-world-sectors/places.md "mention"), or find it under [reference-world-sectors](../../references-lists-and-overviews/reference-world-sectors/ "mention")
-{% endhint %}
+### Why shouldn't we edit .streamingsector files?
 
-### Requirements
+### Exclusivity&#x20;
 
-* the most recent Wolvenkit (stable | Nightly), at least [8.7](https://github.com/WolvenKit/WolvenKit)
+In Cyberpunk modding, files can only be edited by **one mod at a time**, and that mod will be [the first to reach the file](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order). Once you have added a file to your .archive, nobody else can edit it.
 
-1. Add your sector file to the Wolvenkit project
-2. Open it by double-clicking
-3. Click on `Sector Preview` again
-4. Click into the preview to highlight an object. \
-   _This will print the object's node name and -index to the log._
-5. In the list on the right, find the object that you want to delete.\
-   _You can toggle the red checkmark(s) to show/hide objects in the preview_
+### Compatibility
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FTyswVnWzwLaPMkbSXGot%2F%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(1974).png?alt=media&#x26;token=d5433dd4-cee3-4180-88a5-0ef59e01ca1a" alt=""><figcaption><p>amazing</p></figcaption></figure>
+Sector files often change between game versions. Your edited sector file won't know and won't care, so it will overwrite the updated file nonetheless. (See for yourself - try a pre-2.0 version from one of [mana's Apartment Overhauls](https://www.nexusmods.com/users/1630319?tab=user+files) and watch everything explode).
 
-6. Go back to the **WorldStreamingSector** tab&#x20;
-7. Click on expand nodeData to find the object in the list. It is easiest to go by index, which should have been printed to the log when you selected the object in step 4.
-8. Expand the node and find `Position`, `Orientation` and `Scale`:
+ArchiveXL will modify sectors only if the **number of expected nodes** matches the number of total nodes in the sector. On top of that, for each node affected, a type has to be specified - so if CDPR sneakily switches out one of the nodes that you've been deleted for something else, AXL will notice and refuse to implement your sector modification.
 
+## So how do I actually do it?
 
+Create an `.xl` file in your [Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)'s resources folder. It has to contain the following structure:
 
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FHdaUpLML1iVtiGFmgntx%2F%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(1972).png?alt=media&#x26;token=f7a18fcd-f3ad-4631-a052-b9b178e95509" alt=""><figcaption><p>nise</p></figcaption></figure>
+```yaml
+streaming:
+  sectors:
+    # an array of sectors, there can be multiple entries
+    - path: your\path\from\red_hot_tools\ex_in_terior_99_99_0_0-streamingsector
+      expectedNodes: 999
+      nodeDeletions:
+        # an array of nodes, ordered by type
+        - index: 0
+          type: worldNodeType
+        - index: 1
+          type: worldOtherNodeType
+      # nodeAdditions:
+        # to do: this needs to be documented
+```
 
-You can now
+ArchiveXL will load that file from your game's mod folder and apply the modifications for you.
 
-* change the object's coordinates or scale
-* delete the object from the world by right-clicking the node and deleting it (see screenshot `deletus`)
-
-{% hint style="info" %}
-Remember to save the file after making changes!
-{% endhint %}
-
-
-
-<figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FKFW2Z1x9SYGtZ2z4FVVo%2F%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(1973).png?alt=media&#x26;token=37bd0f6b-367e-4320-9502-04ad71e92a63" alt=""><figcaption><p><code>deletus</code></p></figcaption></figure>
-
-## Troubleshooting
-
-### My deleted object is low-resolution now!
-
-That means that it has a proxy mesh, which you **also** need to delete.&#x20;
-
-1. Search the game for your sector file's name without the last digit\
-   Example: \
-   You're editing `interior_-23_15_0_1`\
-   You're searching `interior_-23_15_0_`
-
-**`Note:`** when you delete a object and you see a low res mesh in its place in the game that means the object has a proxy assigned you will have to find the sector the proxy is in and delete the proxy mesh. `(you may do that following the same steps)`
-
-\
+For more detailed information, see the nested guides, e.g. [world-editing-deleting-objects.md](world-editing-deleting-objects.md "mention")

@@ -11,7 +11,7 @@ description: How to remove items from the world with ArchiveXL
 
 This guide will show you how to remove items from the world via ArchiveXL.
 
-Difficulty: You know how to read
+Difficulty: You know how to read. Everything else&#x20;
 
 #### Requirements
 
@@ -19,16 +19,28 @@ Difficulty: You know how to read
 
 If you want to do it in Blender: [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention") >= 1.5.0
 
+Otherwise: [RedHotTools >= 0.5.2](https://github.com/psiberx/cp2077-red-hot-tools/releases)
+
 ## RedHotTools and ArchiveXL
 
-You need [RedHotTools >= 0.5.2](https://github.com/psiberx/cp2077-red-hot-tools/releases) and [ArchiveXL >= 1.5.0](https://www.nexusmods.com/cyberpunk2077/mods/4198) for this. You can see a screenshot at the end of the instructions.
+This section will walk you through the process of creating an .xl file to remove objects from the game world.&#x20;
+
+This guide will feature the **manual process**, which can get tedious if you want to remove at scale. There are two ways to automate the process:&#x20;
+
+* Wheeze's experimental removalThing ([link on Discord](https://discord.com/channels/717692382849663036/876881920326238248/1171608466436132995))
+* Generating the .xl file via Blender (see [#blender-and-archivexl](world-editing-deleting-objects.md#blender-and-archivexl "mention")
 
 Although you can also work directly in your `archive/pc/mod` directory, you should [create a Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can easily pack your mod for Nexus deployment.
 
 1. Find the node information in the **Inspect** tab of RedHotTools (see [places.md](../../references-lists-and-overviews/reference-world-sectors/places.md "mention")for a detailed guide)
-2. Create an `.xl` file in your Wolvenkit Project's  `resources` folder and name it after your world deletion (e.g. `delete_pacifica_fast_travel_terminal.xl`).&#x20;
+2. Create an `.xl` file in your Wolvenkit Project's  `resources` folder and name it after your world deletion (e.g. `delete_pacifica_fast_travel_terminal.xl`). &#x20;
    * You can edit this file in Wolvenkit or in a text editor like [Notepad++](https://notepad-plus-plus.org/downloads/)
-3. Paste the following contents:
+
+We'll fill in the information in Step 3, this is how it will look:
+
+<figure><img src="../../../.gitbook/assets/world_sector_node_removal.png" alt=""><figcaption><p>We'll fill in the information in Step 3, this is how it will look:</p></figcaption></figure>
+
+3. Paste the following code into your .xl file:
 
 ```yaml
 streaming:
@@ -47,8 +59,6 @@ streaming:
    3. For each node that you want to delete, add an entry under `nodeDeletions`:\
       `- index`  (the - is important): the node index (3., violet in the screenshot)\
       `type`: the type of the node (4., turquoise in the screenshot)
-
-<figure><img src="../../../.gitbook/assets/world_sector_node_removal.png" alt=""><figcaption></figcaption></figure>
 
 ### Testing
 

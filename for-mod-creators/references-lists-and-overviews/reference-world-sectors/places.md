@@ -1,5 +1,5 @@
 ---
-description: Finding locations
+description: How to find Cyberpunk locations in the files
 ---
 
 # Finding Locations
