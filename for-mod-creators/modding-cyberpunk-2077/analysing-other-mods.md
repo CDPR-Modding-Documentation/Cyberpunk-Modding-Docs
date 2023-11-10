@@ -1,6 +1,10 @@
+---
+description: How to open .archive files and take a look inside
+---
+
 # 🔍 Analysing other mods
 
-This guide will walk you through **analysing or extracting archive files** from tutorial resources or other mods.
+This guide will walk you through **analysing or extracting .archive files** from tutorial resources or other mods.
 
 ### Required: [WolvenKit](https://github.com/WolvenKit/WolvenKit/releases)
 
