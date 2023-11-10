@@ -18,7 +18,7 @@ TODO: This functionality has since been added to ArchiveXL ([link to Discord pos
 {% hint style="info" %}
 For more documentation on streaming sector files, see [here](../../files-and-what-they-do/the-whole-world-.streamingsector.md).
 
-If you don't know which sector you want to edit, check [finding-world-sectors.md](../../references-lists-and-overviews/places/finding-world-sectors.md "mention"), or find it under [reference-world-sectors.md](../../references-lists-and-overviews/places/reference-world-sectors.md "mention")
+If you don't know which sector you want to edit, check [places.md](../../references-lists-and-overviews/reference-world-sectors/places.md "mention"), or find it under [reference-world-sectors](../../references-lists-and-overviews/reference-world-sectors/ "mention")
 {% endhint %}
 
 ### Requirements

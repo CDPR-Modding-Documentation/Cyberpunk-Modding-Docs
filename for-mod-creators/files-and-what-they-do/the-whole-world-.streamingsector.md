@@ -5,11 +5,11 @@ description: Documentation on .streamingsector files
 # The whole world: .streamingsector
 
 {% hint style="info" %}
-If you want to know how to find a streaming sector, see [here](../references-lists-and-overviews/places/finding-world-sectors.md).
+If you want to know how to find a streaming sector, see [here](../references-lists-and-overviews/reference-world-sectors/places.md).
 
-For a list of interesting locations, see [here](../references-lists-and-overviews/places/reference-world-sectors.md).&#x20;
+For a list of interesting locations, see [here](../references-lists-and-overviews/reference-world-sectors/).&#x20;
 
-For a guide how to modify streaming sector files, see [here](../modding-guides/world-editing/).
+For guides how to modify streaming sector files, see [here](../modding-guides/world-editing/).
 {% endhint %}
 
 StreamingSectors are the files that define the world in Cyberpunk, they tell the engine what goes where, and define everything from the meshes you see and how you can interact with them, to the locations of lights, sounds and fx. They call up the NPCs, they define the minimap.&#x20;

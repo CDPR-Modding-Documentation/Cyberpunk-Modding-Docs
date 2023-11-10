@@ -25,7 +25,7 @@ This guide was initially written with game version 1.6 of Cyberpunk 2077.
 
 ## Exporting Streaming Sectors to Blender
 
-To export a location, you need to know its files — you can either pick them from [our list](../../references-lists-and-overviews/places/reference-world-sectors.md) or[ go and find them](../../references-lists-and-overviews/places/finding-world-sectors.md) (and add them to the list, please).
+To export a location, you need to know its files — you can either pick them from [our list](../../references-lists-and-overviews/reference-world-sectors/) or [go and find them](../../references-lists-and-overviews/reference-world-sectors/places.md) (and add them to the list, please).
 
 1. Add all sector files that you want to edit to your project by [finding them in the asset browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) and double-clicking them.
 2. Open the [script manager](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/script-manager)&#x20;

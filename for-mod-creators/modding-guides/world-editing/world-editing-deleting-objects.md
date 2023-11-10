@@ -15,11 +15,69 @@ Difficulty: You know how to read
 
 #### Requirements
 
-[wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention") >= 1.5.0
-
 [ArchiveXL ](https://www.nexusmods.com/cyberpunk2077/mods/4198)>= 1.8.0
 
-## Prerequisites: Deleting the objects
+If you want to do it in Blender: [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention") >= 1.5.0
+
+## RedHotTools and ArchiveXL
+
+You need [RedHotTools >= 0.5.2](https://github.com/psiberx/cp2077-red-hot-tools/releases) and [ArchiveXL >= 1.5.0](https://www.nexusmods.com/cyberpunk2077/mods/4198) for this. You can see a screenshot at the end of the instructions.
+
+Although you can also work directly in your `archive/pc/mod` directory, you should [create a Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can easily pack your mod for Nexus deployment.
+
+1. Find the node information in the **Inspect** tab of RedHotTools (see [places.md](../../references-lists-and-overviews/reference-world-sectors/places.md "mention")for a detailed guide)
+2. Create an `.xl` file in your Wolvenkit Project's  `resources` folder and name it after your world deletion (e.g. `delete_pacifica_fast_travel_terminal.xl`).&#x20;
+   * You can edit this file in Wolvenkit or in a text editor like [Notepad++](https://notepad-plus-plus.org/downloads/)
+3. Paste the following contents:
+
+```yaml
+streaming:
+  sectors:
+    - path: your\path\from\red_hot_tools\ex_in_terior_99_99_0_0-streamingsector
+      expectedNodes: 999
+      nodeDeletions:
+        # this is a comment
+        - index: 0
+          type: worldNodeType
+```
+
+4. Adjust the .xl file. **Mind the leading spaces!**&#x20;
+   1. for `path`, put the full path to your world sector as seen in RedHotTools (1., yellow on screenshot - `base\worlds\03_night_city_compiled\default\exterior_-35_-35_0_0.streamingsector`)
+   2. for `expectedNodes`, put the number of nodes in this sector (2., pink, 503 in the screenshot)
+   3. For each node that you want to delete, add an entry under `nodeDeletions`:\
+      `- index`  (the - is important): the node index (3., violet in the screenshot)\
+      `type`: the type of the node (4., turquoise in the screenshot)
+
+<figure><img src="../../../.gitbook/assets/world_sector_node_removal.png" alt=""><figcaption></figcaption></figure>
+
+### Testing
+
+1. Optional, but recommended: Run your XL file through [yamllint](https://www.yamllint.com/)
+2. Save the .xl file
+3. [Install your project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game.
+
+If everything worked, your object should now be gone.
+
+Otherwise, check the [#troubleshooting](world-editing-deleting-objects.md#troubleshooting "mention") section.
+
+### Packing your mod for Nexus
+
+If you have been a good bean and stuck to the instructions, you only need to [pack your Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#pack-mod) and can skip the rest of this section.
+
+If you have been working directly in your `archive/pc/mod` directory, do **not** right-click on your .xl file and pack it. You have to create the following folder structure and then pack the `archive` folder:
+
+```
+- archive
+  - pc
+    - mod
+      - your_mod_name.xl
+```
+
+If you don't do that, you will drown in comments from confused users who don't know how to install your mod.
+
+## Blender and ArchiveXL
+
+### Prerequisites: Deleting the objects
 
 1. Hit up [editing-locations-in-blender.md](editing-locations-in-blender.md "mention") and follow the instructions to import your sectors into Blender.
 2. **Optiona, but recommended**: Save the blend file. There's no real way to undo stuff right now other than deleting them from the list by hand, and re-importing is tedious. If you save the file, you can use File -> Revert to undo all your changes.
@@ -27,7 +85,7 @@ Difficulty: You know how to read
 
 Now it's time to get exporting.
 
-## Adjust the sector collections' properties
+### Adjust the sector collections' properties
 
 {% hint style="info" %}
 This step will be made obsolete in a future update of the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention") (currently 1.5.0). The guide will tell you at which point you can skip ahead if that's the case.
@@ -72,7 +130,7 @@ First, you need to find out the number of nodes in your sector. We will do that 
 7. The value of your new property will probably still be 1 until you click in the field - then it will be updated with the only value possible.
 8. Repeat this step for **every sector file**.
 
-## Generating an .xl file
+### Generating an .xl file
 
 1. Switch to Blender's `Scripting` perspective and create a new file.&#x20;
 2. Open [**this link**](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/python/export\_sector\_deletions\_to\_xl.py) (mana's github) and copy the contents into Blender's editor.
@@ -88,7 +146,7 @@ Running the script **will overwrite existing files**. That's not a problem, but 
 
 You now have an .xl file. If you put it into `archive/pc/mod`, the game should load it. Otherwise, check the [#troubleshooting](world-editing-deleting-objects.md#troubleshooting "mention") section of this guide.
 
-### Double-check the file!
+### Removing potential false positives
 
 This step is optional, but recommended, as the script might add nodes to the deletion list that you want to keep.&#x20;
 
@@ -108,7 +166,7 @@ This is also how you can edit other people's sector presets. Want to keep your c
 
 That's it! You changed the world - literally! Happy modding, choomba!
 
-## Packing a Wolvenkit project
+### Packing a Wolvenkit project
 
 {% hint style="danger" %}
 Do not pack the Wolvenkit project you used for Blender import - you don't need an .archive file
