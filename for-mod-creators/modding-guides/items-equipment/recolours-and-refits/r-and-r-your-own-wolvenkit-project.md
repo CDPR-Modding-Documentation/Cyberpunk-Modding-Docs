@@ -226,16 +226,27 @@ Add all those files to your project, then skip the rest of this page and go to [
 
 All material colour definitions are stored in `.mlsetup` files, which we'll be editing in [r-and-r-colour-editing.md](r-and-r-colour-editing.md "mention").
 
+{% hint style="info" %}
+If you want to edit a file that is not part of [High Fashion Netrunning Suits](https://www.nexusmods.com/cyberpunk2077/mods/9314), you need to find it first.&#x20;
+
+If it is part of a different mod, see [analysing-other-mods.md](../../../modding-cyberpunk-2077/analysing-other-mods.md "mention") and use **that** archive. You just need to adjust your search queries below.
+
+&#x20;If you want to modify base game items, you need to find their mesh (check [spawn-codes-baseids-hashes.md](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention")). Once you have that, you can use "find used files" from the Asset Browser's context menu to find all .mlsetups, or you open the mesh in Wolvenkit to follow the [material definition chain](../../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances).&#x20;
+{% endhint %}
+
 #### **TL;DR: via search browser query**
 
-```
-archive:ArchiveXL_Netrunner > .mlsetup > material > colour
+<pre><code><strong>find all .mlsetup files in the mod:
+</strong>archive:ArchiveXL_Netrunner > .mlsetup
 
+<strong>or more targeted:
+</strong><strong>archive:ArchiveXL_Netrunner > .mlsetup > material > colour
+</strong>
 e.g.
 archive:ArchiveXL_Netrunner > .mlsetup > snake > blue
 archive:ArchiveXL_Netrunner > .mlsetup > carbon > bronze
 archive:ArchiveXL_Netrunner > .mlsetup > carbon > white > bronze
-```
+</code></pre>
 
 <figure><img src="../../../../.gitbook/assets/netrunner_suit_add_textures.png" alt=""><figcaption></figcaption></figure>
 
