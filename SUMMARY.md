@@ -109,6 +109,7 @@
 * [🌐 3d Modelling](for-mod-creators/3d-modelling/README.md)
   * [Morphtargets](for-mod-creators/3d-modelling/morphtargets.md)
   * [Exporting and importing meshes](for-mod-creators/3d-modelling/exporting-and-importing-meshes/README.md)
+    * [Porting 3d objects to Cyberpunk](for-mod-creators/3d-modelling/exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md)
     * [Autodesk/FBX (Noesis)](for-mod-creators/3d-modelling/exporting-and-importing-meshes/autodesk-fbx-noesis.md)
     * [with 3DS MAX (archived)](for-mod-creators/3d-modelling/exporting-and-importing-meshes/3ds-max.md)
   * [Refitting: Mesh sculpting techniques](for-mod-creators/3d-modelling/mesh-sculpting-techniques.md)

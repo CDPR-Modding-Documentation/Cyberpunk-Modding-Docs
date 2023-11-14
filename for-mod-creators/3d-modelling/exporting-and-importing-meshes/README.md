@@ -13,7 +13,7 @@ This guide will show you how to\
 \- export meshes from the game for use in other projects\
 \- import those meshes back into WolvenKit
 
-{% hint style="success" %}
+{% hint style="danger" %}
 As of November 2023, the recommended workflow is using the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention"). Check its import/export documentation under [wkit-blender-plugin-import-export.md](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention").
 {% endhint %}
 

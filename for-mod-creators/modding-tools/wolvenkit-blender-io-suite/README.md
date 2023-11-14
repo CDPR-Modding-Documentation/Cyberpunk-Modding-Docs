@@ -34,7 +34,7 @@ _To be done_
 
 ### Mesh Tools
 
-#### Modelling
+#### Modelling: Transfer Vertex Weights
 
 Lets you transfer [vertex weights](../../3d-modelling/meshes-and-armatures-rigging.md) from one mesh to the other.
 

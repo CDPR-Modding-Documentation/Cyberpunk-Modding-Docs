@@ -105,13 +105,17 @@ The following two scripts help you finding and/or fixing the problem. Switch to 
 
 **Missing bones**
 
-To find which bones you're missing, you can use [this script](https://gist.github.com/manavortex/080d04065ee4c45aaad1e7c221db68c9), which will print their names to console.&#x20;
+**Optional:** To find which bones you're missing, you can use [this script](https://gist.github.com/manavortex/080d04065ee4c45aaad1e7c221db68c9), which will print their names to console. You can also skip this step and try the troubleshooting below.
 
 **Vertices without weights**
 
-You can use [this Python script](https://github.com/manavortex/code\_snippets/blob/master/py/blender/delete\_vertices\_without\_group.py) to either select or auto-delete vertices with no weight.
+You can use the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention")'s [#mesh-tools](../modding-tools/wolvenkit-blender-io-suite/#mesh-tools "mention") to `Group Ungroup Verts` — if you're lucky, that will solve the problem.&#x20;
 
-#### Option 1: Fuck those bones
+#### Option 1: Fuck those bones: Python
+
+You can find a [Python script on mana's github](https://github.com/manavortex/cyberpunk2077/blob/master/python/armature\_delete\_unused\_bones.py) that will drop unused bones and vertex groups. Run it in Blender's Scripting Perspective with your armature&#x20;
+
+#### Option 1: Fuck those bones: Noesis
 
 You can [import the mesh with Noesis](exporting-and-importing-meshes/#noesis-.fbx-2), which will not do any of these checks. For that, you need to import/export via .fbx.
 
@@ -237,17 +241,7 @@ As stated in the [importing/exporting guide](exporting-and-importing-meshes/), i
 
 1. Import the original object into Blender, without any of your changes. If you have to, reexport the working file from Wolvenkit.\
    ![](../../.gitbook/assets/mesh\_troubleshooting\_reimport.png)
-2. In Object Mode, select all meshes under the reimported armature (the original ones).
-3. Switch to Edit Mode and select all vertices (Ctrl+A)
-4. Delete them (x, vertices, Return)
-5. Go back to Object mode
-6. For each of your edited objects:&#x20;
-   1. select the submesh that you edited (submesh\_00\_LOD\_1)
-   2. select the empty submesh from the reimported armature (submesh\_00\_LOD\_1.001)
-   3. Join the objects (Ctrl+J). This will fuse your edited mesh into the empty one, retaining all of the original's properties.
-7. You can now delete the empty armature and export the other one for re-import.
-
-<figure><img src="../../.gitbook/assets/mesh_troubleshooting_join_meshes_2.png" alt=""><figcaption><p>After joining the submeshes</p></figcaption></figure>
+2. See [#strategy-2-replacing-the-vertices](exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md#strategy-2-replacing-the-vertices "mention") on the [porting-3d-objects-to-cyberpunk.md](exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md "mention") page
 
 ### My mesh is completely warped
 

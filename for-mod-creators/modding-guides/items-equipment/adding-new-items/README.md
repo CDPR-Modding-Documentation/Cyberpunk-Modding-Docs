@@ -89,11 +89,12 @@ To start changing the existing files, check the [Item Structure Explained](archi
 
 Otherwise, you will want to complete one or more of the following steps:
 
-* add [something other](different-equipment-slots.md) than a torso item
+* add [something other](different-equipment-slots.md) than a torso item (e.g. shoes or glasses)
 * Add more [appearances](./#adding-an-appearance-example-blackblue)&#x20;
 * Add a[ male variant,](./#adding-a-male-instance) or check out [suffixes](../../../core-mods-explained/archivexl/#variants-and-suffixes) to e.g. [hide the item in first person](../../../core-mods-explained/archivexl/#camera-modes)
 * customize your [preview images](../../custom-icons-and-ui/adding-items-preview-images/)
 * [Add an atelier store](../../everything-else/adding-items-atelier-integration.md)
+* [Porting meshes from other sources](../../../3d-modelling/exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md)
 
 ## Diagram
 

@@ -13,6 +13,15 @@ This page is a part of the [Adding new items](./) guide and contains the steps n
 
 For an overview of prefixes for the different component types, see here.
 
+{% hint style="info" %}
+TL;DR:
+
+* Change `equipmentSlot` in the yaml (for options, see Step 1)
+* Replace the `mesh_entity` (see Step 2)
+* Replace the `.mesh` (e.g., instead of a shirt, find in-game shoes)
+* Optional: [Port an external item](../../../3d-modelling/exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md)
+{% endhint %}
+
 ## Step 1: The .yaml
 
 You define the item slot in your .yaml file by specifying the **root entry type** via `$base:`
