@@ -4,6 +4,12 @@ description: When you can't import, or your imported mesh looks weird
 
 # Troubleshooting your mesh edits
 
+{% hint style="info" %}
+For a guide on exporting and importing meshes, check [wkit-blender-plugin-import-export.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention")
+
+If you don't know how to begin editing, check [mesh-sculpting-techniques.md](mesh-sculpting-techniques.md "mention") or [r-and-r-refitting-step-by-step.md](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention")
+{% endhint %}
+
 ## Importing
 
 ### My import won't show up in-game!
