@@ -38,6 +38,8 @@ Common component properties explained. For a more detailed list, please see [Doc
 
 Only used for meshes: Determines which parts of a mesh will be displayed or hidden. Numeric indices correspond with the submeshes by index.
 
+Set this to 0 to completely hide all parts of a mesh.
+
 <figure><img src="../../../.gitbook/assets/chunkmask.png" alt=""><figcaption></figcaption></figure>
 
 #### depotPath

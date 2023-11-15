@@ -81,11 +81,16 @@ This part of the guide will show you how to turn the entire item invisible. If y
 
 1. This fix starts in the `.yaml` file (which should live under your Wolvenkit project's `resources` folder in the subfolder `r6/tweaks`, perhaps in a subfolder).
    * If you are editing someone else's mod, you need to copy their `.yaml` to your project. If you don't know which file that is, check their Nexus mod files, as it will be part of the original .zip file.
+
+{% hint style="info" %}
+If you don't have a yaml because you're changing an in-game item for some reason, you need to start at [#fixing-the-root-entity](first-person-perspective-fixes.md#fixing-the-root-entity "mention"). If you [convert it to a dynamic appearance](adding-new-items/archivexl-dynamic-variants.md#the-root\_entity), you can stick to these parts in the rest of the guide.
+{% endhint %}
+
 2. Open the file in any text editor (recommended: [**Notepad++**](https://notepad-plus-plus.org/downloads/))
 3.  Helpful documentation on .yaml files resides [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items/archive-xl-item-structure-explained#the-control-file-yourmodname.yaml). Hopefully it looks something like this:
 
     <figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption><p>This is my example .yaml file with only <em>one</em> entry. Yours might have more.</p></figcaption></figure>
-4. Find the line `appearanceSuffixes`_._ If the mod is using dynamic appearances (there is something called $instances), you can skip this step.
+4. Find the line `appearanceSuffixes`_._ If the mod is using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention") (there is something called $instances), you can skip this step.
 5. If the line isn't there, add it. Use the same number of leading spaces as in the surrounding lines!
 6.  Add the line `itemsFactoryAppearanceSuffix.Camera` to the array. If you have something else in there, add a comma.
 
@@ -108,14 +113,24 @@ You now have two ways of hiding the item in first person:
 
 #### Hiding FPP via tag
 
+You can't do that if you're using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention").
+
 1. Find the array `tags` at the end of the list.
 2. In the panel on the right, click "add new item" (the yellow +) until you have an empt text field.
-3. In the text field, enter `EmptyAppearance:FPP`
+3. Unless you are using In the text field, enter `EmptyAppearance:FPP`
 4. That's it!
 
-#### Hiding FPP for dynamic variants
+#### Dynamic variant: Hiding FPP in the mesh\_entity
 
-TODO
+To hide components in the [#mesh-component-entity-simple-entity](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity "mention"), add suffixes to their names. You can add `&camera=tpp` to a component's name, or you can duplicate it and have two for different meshes (check [#problem-3-partial-hiding-justdraculathings](first-person-perspective-fixes.md#problem-3-partial-hiding-justdraculathings "mention") for details).
+
+<figure><img src="../../../.gitbook/assets/fixiing_fpp_dynamic_mesh_entity.png" alt=""><figcaption></figcaption></figure>
+
+#### Dynamic variant: Hiding FPP in the .app
+
+Add `&camera=tpp` to the appearance name(s). They will now no longer appear in First Person mode.
+
+<figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
 #### Hiding FPP via appearance definition
 
