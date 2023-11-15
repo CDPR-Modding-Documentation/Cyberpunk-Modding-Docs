@@ -77,7 +77,7 @@ If you failed to export because of error messages like this one:
 
 `Message: Error while finding the file: manavortex\torso\netrunning_suit\textures_netrunning_suit.mi`
 
-then you need to uncheck `Export With Materials` in the export tool's [settings panel](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export/export-settings#.mesh).
+then you need to uncheck `Export With Materials` in the export tool's [settings panel](broken-reference).
 
 </details>
 

@@ -10,17 +10,26 @@ Would you rather…
 
 Check the following sub-pages instead:
 
-[exporting-and-importing-meshes](../../3d-modelling/exporting-and-importing-meshes/ "mention") (Step-by-step)
-
 [Import/Export](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export "mention") (Wolvenkit wiki)
 
 [Blender Integration](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/blender-integration "mention")(Wolvenkit wiki)
+
+[exporting-and-importing-meshes](../../3d-modelling/exporting-and-importing-meshes/ "mention") (has additional information that might come in handy)
 
 ## Meshes
 
 ### Export from Wolvenkit
 
-Wolvenkit will [export a mesh with materials](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/blender-integration#how-do-i-use-the-blender-integration-features) by default. Simply use the [Import/Export tool](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#exporting-mesh-files).
+For **where** to export a mesh, see [Tools: Import/Export UI](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
+
+For **how** to export a mesh, see [Import/Export: Mesh (3d Model)](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
+
+{% hint style="info" %}
+If your mesh won't export from Wolvenkit, try unchecking the following box(es) in the export settings (by unchecking the boxes):&#x20;
+
+* [Export Materials](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials "mention")
+* [Export Garment Support (Experimental)](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-experimental "mention")
+{% endhint %}
 
 ### Importing into Blender
 
@@ -54,7 +63,11 @@ By default, the Wolvenkit Blender IO Suite will only export **selected meshes** 
 
 If you don't check either of these boxes, the plutin will export **all meshes and armatures** into the same .glb file. You usually do not want this.
 
+### Importing into Wolvenkit
 
+For **where** to import a mesh, see [Tools: Import/Export UI](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
+
+For **how** to import a mesh, see [Import/Export: Mesh (3d Model)](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
 
 ## Entities
 

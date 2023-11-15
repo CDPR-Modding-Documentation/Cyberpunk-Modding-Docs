@@ -110,7 +110,7 @@ There is no exact migration guide yet. Maybe you'd like to write one?
 * Learn about making more variants:[#adding-an-appearance](./#adding-an-appearance "mention")\
   Create [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention")
 * Create [adding-items-atelier-integration.md](../../everything-else/adding-items-atelier-integration.md "mention")
-* Learn about [porting-3d-objects-to-cyberpunk.md](../../../3d-modelling/exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md "mention")
+* Learn about [porting-3d-objects-to-cyberpunk.md](../../../3d-modelling/porting-3d-objects-to-cyberpunk.md "mention")
 
 ## Diagram
 

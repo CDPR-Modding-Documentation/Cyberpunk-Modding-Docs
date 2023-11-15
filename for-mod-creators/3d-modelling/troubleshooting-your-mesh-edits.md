@@ -137,12 +137,12 @@ t0_005_pwa_body__t_bug.mesh
 t0_005_pma_body__t_bug.mesh
 ```
 
-Try using the Netrunner body as a base for import. You can use Wolvenkit's [Select Base Mesh](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export/import-settings#select-base-mesh) feature for this.
+Try using the Netrunner body as a base for import. You can use Wolvenkit's [Select Base Mesh](broken-reference) feature for this.
 
 {% hint style="info" %}
 To create more submeshes, you can either&#x20;
 
-* Try the [Preserve Submesh Order](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export/import-settings#preserve-submesh-order) import setting
+* Try the [Preserve Submesh Order](broken-reference) import setting
 * create more submeshes with the correct naming in Blender, e.g. `submesh_01_LOD_1`, `submesh_02_LOD_1`
 {% endhint %}
 
@@ -241,7 +241,7 @@ As stated in the [importing/exporting guide](exporting-and-importing-meshes/), i
 
 1. Import the original object into Blender, without any of your changes. If you have to, reexport the working file from Wolvenkit.\
    ![](../../.gitbook/assets/mesh\_troubleshooting\_reimport.png)
-2. See [#strategy-2-replacing-the-vertices](exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md#strategy-2-replacing-the-vertices "mention") on the [porting-3d-objects-to-cyberpunk.md](exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md "mention") page
+2. See [#strategy-2-replacing-the-vertices](porting-3d-objects-to-cyberpunk.md#strategy-2-replacing-the-vertices "mention") on the [porting-3d-objects-to-cyberpunk.md](porting-3d-objects-to-cyberpunk.md "mention") page
 
 ### My mesh is completely warped
 
@@ -269,7 +269,7 @@ To check if it's this, equip **only** the edited item. If it breaks as soon as y
 
 #### Option 1 (likely to work): Import your mesh with garment supports
 
-On the .glb import setting, check the "[Import Garment Support](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export/import-settings#import-garment-support)" box.&#x20;
+On the .glb import setting, check the "[Import Garment Support](broken-reference)" box.&#x20;
 
 #### Option 2 (guaranteed to work): delete GarmentSupport from the mesh
 

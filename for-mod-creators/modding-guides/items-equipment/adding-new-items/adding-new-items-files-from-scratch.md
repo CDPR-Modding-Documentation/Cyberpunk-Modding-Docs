@@ -14,7 +14,7 @@ This page is a part of the [Adding new items](./) guide and  deals with finding 
 * For an explanation of the file structure, see [archive-xl-item-structure-explained.md](archive-xl-item-structure-explained.md "mention").
 * If you want to add an atelier store, see [adding-items-atelier-integration.md](../../everything-else/adding-items-atelier-integration.md "mention").
 * If you want to add preview items, check [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention").
-* If you want to port a mesh from a different game to Cyberpunk, check [porting-3d-objects-to-cyberpunk.md](../../../3d-modelling/exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md "mention")
+* If you want to port a mesh from a different game to Cyberpunk, check [porting-3d-objects-to-cyberpunk.md](../../../3d-modelling/porting-3d-objects-to-cyberpunk.md "mention")
 
 {% hint style="info" %}
 **TL;DR**: If you can't be arsed doing this by yourself, find a template project with one working item (female rigged) [here](https://www.mediafire.com/file/ef5xcacwomldizg/my\_shirt.7z/file).

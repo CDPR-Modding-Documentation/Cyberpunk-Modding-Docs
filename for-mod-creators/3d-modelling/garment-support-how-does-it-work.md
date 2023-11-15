@@ -7,7 +7,7 @@ description: What is Garment Support and how does it work?
 {% hint style="info" %}
 If garment supports are causing trouble for you, your easiest option is to delete the parameters from your mesh. For detail, see [here](troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices).
 
-To make use of garment support, **keep the component name prefixes**. If you change the mesh, make sure to [tick the box](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export/import-settings#import-garment-support).
+To make use of garment support, **keep the component name prefixes**. If you change the mesh, make sure to [tick the box](broken-reference).
 {% endhint %}
 
 _Credit goes to psiberx (_[_discord post_](https://discord.com/channels/717692382849663036/955663052903178270/1059406562277470240) _with initial explanation of the algorithm) and IslandDancer for providing screenshots and know-how_

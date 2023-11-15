@@ -2,7 +2,7 @@
 description: How to export and import meshes (WolvenKit <=> Blender)
 ---
 
-# Exporting and importing meshes
+# Archived: Exporting and importing meshes
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -12,6 +12,8 @@ description: How to export and import meshes (WolvenKit <=> Blender)
 This guide will show you how to\
 \- export meshes from the game for use in other projects\
 \- import those meshes back into WolvenKit
+
+<figure><img src="../../../.gitbook/assets/warning_outdated_info.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 As of November 2023, the recommended workflow is using the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention"). Check its import/export documentation under [wkit-blender-plugin-import-export.md](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention").
@@ -40,6 +42,10 @@ In the dawn of modding, Wolvenkit just plain couldn't import or export .mesh fil
 ## Exporting the mesh
 
 {% hint style="danger" %}
+This page is archived. Please scroll to the top for links to more recent information.
+{% endhint %}
+
+{% hint style="warning" %}
 **Before you start editing, a warning:**
 
 It is easy to [break a mesh](./#troubleshooting-i-cant-import-my-mesh) beyond the point of repair. Make frequent back-ups, and continuously test if your altered mesh still imports and displays in WolvenKit, **especially when editing vertices!**
@@ -47,13 +53,7 @@ It is easy to [break a mesh](./#troubleshooting-i-cant-import-my-mesh) beyond th
 
 ### glTF Binary (\*.glb)
 
-WolvenKit <= [8.8](https://github.com/WolvenKit/WolvenKit/releases/tag/8.8.0): Use the [Import/Export tool](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/import-export). It is pinned to the sidebar on the right.
-
-WolvenKit > 8.8: Use the Export tool. You can toggle it from the "Tools" menu on the top bar.
-
-{% hint style="success" %}
-Select your mesh in the Export Tool and click `Export/Process Selected`, or simply use `Export/Process All.`
-{% endhint %}
+Select your mesh in Wolvenkit: [Tools: Import/Export UI](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention") and click `Export/Process Selected`, or simply use `Export/Process All.`
 
 If the export fails, try unchecking the following properties in the export settings (you have to do this for each individual mesh)
 
@@ -67,7 +67,7 @@ You should now have`meshName.glb` in your WKit project's [`raw` directory.](./#p
 <figure><img src="../../../.gitbook/assets/textured_items_raw_files.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Wolvenkit > 8.8 will by default export with materials for the [Cyberpunk Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on).
+Wolvenkit > 8.8 will by default export with materials for the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention").
 {% endhint %}
 
 #### Path example&#x20;
@@ -86,19 +86,27 @@ Some meshes (such as eyelashes and hair) are two-sided. See [here](./#import-exp
 
 ### glTF Binary  (\*.glb)
 
-{% hint style="warning" %}
-If you have touched the topology, make sure to **triangulate** your mesh before exporting (Select all in Edit Mode, `Ctrl+T`)
-{% endhint %}
+Please follow the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention")'s instructions for[#exporting-from-blender](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender "mention").&#x20;
 
-{% hint style="info" %}
-You can (and should) use the [Cyberpunk Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) — it will take care of the necessary settings.
-{% endhint %}
+For historical reasons, the box below holds the minimum steps to export via the vanilla Blender plugin. You shouldn't want to do that.
+
+<details>
+
+<summary>Exporting via vanilla Blender Plugin</summary>
+
+If you have touched the topology, make sure to **triangulate** your mesh before exporting (Select all in Edit Mode, `Ctrl+T`)
 
 Make sure to check the box under Data > Mesh > Tangents, as Wolvenkit will not export without it.
 
-<figure><img src="https://i.imgur.com/eauWYiF.png" alt=""><figcaption><p>Export settings: "Tangents" must be checked</p></figcaption></figure>
+<img src="https://i.imgur.com/eauWYiF.png" alt="Export settings: &#x22;Tangents&#x22; must be checked" data-size="original">
+
+</details>
 
 ## Importing to \*.mesh
+
+{% hint style="danger" %}
+This page is archived. Please scroll to the top for links to more recent information.
+{% endhint %}
 
 {% hint style="info" %}
 If you are following a guide with pre-made resources and it tells you to [import via Noesis,](autodesk-fbx-noesis.md) you'll want to follow the advice, as the elements in the exported structure will have different names.
