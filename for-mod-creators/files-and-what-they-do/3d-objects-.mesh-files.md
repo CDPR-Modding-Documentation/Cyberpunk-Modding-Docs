@@ -6,16 +6,35 @@ description: Documentation on .mesh files and their properties.
 
 This page contains information on .mesh files and their properties.
 
-* If you want to export or import mesh files, see [here](../3d-modelling/exporting-and-importing-meshes/).
-* If you want to learn how to edit a mesh's appearance, check [this guide.](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)
-* If you want to mess with a .mesh's materials, see [here](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md).
-* A mesh file's shadow is defined in via .[component](components/#entgarmentskinnedmeshcomponent)
+* If you want to export or import mesh files, see [exporting-and-importing-meshes](../3d-modelling/exporting-and-importing-meshes/ "mention")
+* If you want to learn how to edit a mesh's appearance, check [changing-materials-colors-and-textures.md](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
+* If you want to play around with mesh materials, see [textured-items-and-cyberpunk-materials.md](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention")
 
 {% hint style="info" %}
 In the context of Cyberpunk, a mesh is the file that defines the topology[^1] and the materials[^2] of an object in the game world.
 
 A mesh can have several **submeshes**, each of which has own material assignments.
 {% endhint %}
+
+## How the mesh is loaded
+
+Meshes are loaded in .app files ( [#components](appearance-.app-files.md#components "mention") ) or .ent files ( [#mesh-component-entity-simple-entity](entity-.ent-files.md#mesh-component-entity-simple-entity "mention")) via [components](components/ "mention"), e.g.[#entgarmentskinnedmeshcomponent](components/documented-components.md#entgarmentskinnedmeshcomponent "mention").&#x20;
+
+### Shadows
+
+There are two ways of adding shadows to  meshes:&#x20;
+
+#### Component property
+
+To make a mesh cast a real-time shadow, set the component's property `castShadows` to `Always`.
+
+{% hint style="warning" %}
+Depending on your geometry, this can impact performance.
+{% endhint %}
+
+#### Shadow mesh
+
+Many meshes have dedicated shadow meshes, which have a much lower level of detail and will be hidden by default. You can open any clothing item's mesh entity to see this in action.
 
 ## Material assignment
 

@@ -2,7 +2,7 @@
 
 ## .anims
 
-There is nothing here yet. For general documentation on how animations work, see [animations.md](../animations.md "mention")
+For general documentation on how animations work, see [animations.md](../animations.md "mention")
 
 | Anims description                 | Path in game files                         |
 | --------------------------------- | ------------------------------------------ |

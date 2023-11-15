@@ -7,13 +7,13 @@ description: Which body parts are where?
 On this page, you can find information how the Cyberpunk player body is set up, along with its file paths.&#x20;
 
 {% hint style="info" %}
-You can find the list of skin tones, hair and facial expressions under [cheat-sheet-head](../cheat-sheet-head/ "mention")
+You can find the list of skin tones, hair and facial expressions under [cheat-sheet-head](cheat-sheet-head/ "mention")
 
-There is no dedicated guide as for how to create body mods yet, but the process is roughly the same as for creating [a-new-head-for-v.md](../../modding-guides/npcs/a-new-head-for-v.md "mention").
+There is no dedicated guide as for how to create body mods yet, but the process is roughly the same as for creating [a-new-head-for-v.md](../modding-guides/npcs/a-new-head-for-v.md "mention").
 {% endhint %}
 
 {% hint style="success" %}
-While you can use this information to show/hide parts of the player body via chunkmasks, you might consider using [ArchiveXL tags](../../modding-guides/items-equipment/influencing-other-items.md#visualtags) instead.
+While you can use this information to show/hide parts of the player body via chunkmasks, you might consider using [ArchiveXL tags](../modding-guides/items-equipment/influencing-other-items.md#visualtags) instead.
 {% endhint %}
 
 Many of the mesh files are pulled in via **morphtargets**. If you want to create a body mod, you need to edit both.
@@ -32,7 +32,7 @@ These meshes cover up seams at arms and shoulders, where the mesh edges might sh
 
 The player base heads (and scars, tattoos, cyberware) are defined in .app files in the folder `base\characters\head\player_base_heads\appearances\head`
 
-For a guide on how to actually use those things, check the [NPV guide](../../modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md#step-1-getting-head).
+For a guide on how to actually use those things, check the [NPV guide](../modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md#step-1-getting-head).
 
 ### Male body gender
 

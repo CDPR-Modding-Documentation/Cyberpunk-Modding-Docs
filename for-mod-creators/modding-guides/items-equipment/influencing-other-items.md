@@ -46,7 +46,7 @@ So depending on your PC's body gender and colouring, the meshAppearance `my_app_
 #### Arms
 
 {% hint style="warning" %}
-Due to cyberware, V has more arms than Shiva the Destroyer (although not at the same time). For a full list of component names, see [here](../../references-lists-and-overviews/cheat-sheet-body/#arms).
+Due to cyberware, V has more arms than Shiva the Destroyer (although not at the same time). For a full list of component names, see [here](../../references-lists-and-overviews/cheat-sheet-body.md#arms).
 
 The list below is a **summary**, but might not be up-to-date. Please refer to the linked page if you're missing anything.&#x20;
 {% endhint %}

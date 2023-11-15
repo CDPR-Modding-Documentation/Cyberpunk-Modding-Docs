@@ -14,7 +14,7 @@ This guide is a rough draft. Unlike my other guides, it has not been excessively
 {% endhint %}
 
 {% hint style="info" %}
-If you want to edit other files for V, you may be able to find their paths in [cheat-sheet-body](../../references-lists-and-overviews/cheat-sheet-body/ "mention") or one of the surrounding pages.
+If you want to edit other files for V, you may be able to find their paths in [cheat-sheet-body.md](../../references-lists-and-overviews/cheat-sheet-body.md "mention") or one of the surrounding pages.
 {% endhint %}
 
 ## Step 0: Prerequisites

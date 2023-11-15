@@ -1,8 +1,8 @@
 ---
-description: The substance style super shader
+description: 'Substance Designer 2077: How it works and why it''s actually super'
 ---
 
-# Multilayered
+# Multilayered: Cyberpunk's supershader
 
 ## About
 

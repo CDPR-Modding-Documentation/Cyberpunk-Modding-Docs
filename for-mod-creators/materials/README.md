@@ -10,11 +10,17 @@ This is the landing page for **materials** in Cyberpunk 2077. It contains a defi
 Check the section's sub pages in the wiki's navigation tree for more detailed information about the different kinds of materials. Additional material-related information can be found here:
 {% endhint %}
 
-#### More intel and look-ups:
+#### General information
 
-* [cheat-sheet-materials.md](../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md "mention") for direct edits
-* [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention")and their materials
-* [re-using-materials-.mi.md](re-using-materials-.mi.md "mention") – material template files explained
+* Handy list of references: [cheat-sheet-materials.md](../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md "mention")
+* Re-using materials as templates: [re-using-materials-.mi.md](re-using-materials-.mi.md "mention")
+* How it works in the example: [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention")
+
+#### Multilayered
+
+* General information: [multilayered](multilayered/ "mention")
+* Properties and definition: [multilayered-material-properties.md](multilayered/multilayered-material-properties.md "mention")
+* Preview images: [multilayered-previews.md](multilayered/multilayered-previews.md "mention")
 
 #### Hands-on:
 
@@ -22,7 +28,7 @@ Check the section's sub pages in the wiki's navigation tree for more detailed in
 
 ## Definition: Shader
 
-In its original state, a 3d object ([mesh](../files-and-what-they-do/3d-objects-.mesh-files.md)) is a collection of **vertices** (pixels). The space between those vertices is filled by **faces**, which form the 3d object's surface.&#x20;
+In its original state, a [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention") is a collection of **vertices** (pixels). The space between those vertices is filled by **faces**, which form the 3d object's surface.&#x20;
 
 The shader is the thing that goes on top of the surface, rendering a **material** such as glass, skin, concrete, steel…
 
@@ -42,7 +48,7 @@ Not every parameter of a shader can be configured: since skin always has subsurf
 ## Definition: Material&#x20;
 
 {% hint style="info" %}
-For details how materials are used on a mesh, see the [corresponding wiki page](../files-and-what-they-do/3d-objects-.mesh-files.md), or learn how materials can be [loaded externally](../files-and-what-they-do/3d-objects-.mesh-files.md#material-reference-reusing-materials) from [material template files](re-using-materials-.mi.md).&#x20;
+For details how materials are used on a mesh, see the [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention"), or learn how materials can be defined in a mesh via [#materialinstance-the-local-material](../files-and-what-they-do/3d-objects-.mesh-files.md#materialinstance-the-local-material "mention") or loaded externally from&#x20;
 {% endhint %}
 
 **In the context of Cyberpunk**, a material is the thing that lets the shader define the surface properties of a [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention"). Typically, you create a local instance, which will then pull in a shader via `baseMaterial`.
@@ -51,16 +57,16 @@ The property `baseMaterial` can point at a `.mt` / `.remt` file directly, or to 
 
 <figure><img src="../../.gitbook/assets/materials_mt_and_mi.png" alt=""><figcaption></figcaption></figure>
 
-The .mi file&#x20;
+### The .mi file&#x20;
 
 {% hint style="info" %}
 Each part of a mesh (submesh) can have a different material assigned.&#x20;
 
-[Do you want  to know more?](../files-and-what-they-do/3d-objects-.mesh-files.md#chunkmaterials)
+Do you want to know more?  ( =>[#chunkmaterials](../files-and-what-they-do/3d-objects-.mesh-files.md#chunkmaterials "mention"))
 {% endhint %}
 
 {% hint style="success" %}
-For a hands-on guide and something to play around/experiment with, check [here](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md).
+For a hands-on guide and something to play around/experiment with, check [textured-items-and-cyberpunk-materials.md](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention").
 {% endhint %}
 
 ## What kinds of material exist?
@@ -70,7 +76,7 @@ For a hands-on guide and something to play around/experiment with, check [here](
 If you have modded other games, you're used to PBR materials with a bunch of textures like **diffuse**, **normal,** **metalness** etc.&#x20;
 
 {% hint style="success" %}
-To change a textured material, see [this guide](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance)
+To change a textured material, see [changing-materials-colors-and-textures.md](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") -> [#step-2-finding-the-correct-appearance](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance "mention")
 {% endhint %}
 
 {% hint style="info" %}
@@ -82,7 +88,7 @@ Did you know? You can make Cyberpunk's default textured material glow.
 This is specific to Cyberpunk, and it is incredibly cool. If you're used to textured materials, you're probably going to hate it at first, but it has incredible versatility and re-usability.&#x20;
 
 {% hint style="success" %}
-* What is a [multilayered material](multilayered/) and how does it work?
+* What is a multilayered material and how does [multilayered](multilayered/ "mention") work?
 * What are these [properties](multilayered/multilayered-material-properties.md), how do I use them?
 * [Changing the colours](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material)
 * [Changing the mask](../textures/custom-multilayermasks.md)

@@ -5,20 +5,24 @@ description: Various kinds of materials, and where to find them
 # Cheat sheet: Materials
 
 {% hint style="info" %}
-This page contains a brief overview of existing materials. **For a more in-depth explanation as well as downloadable example files, check** [**this page**](../../for-mod-creators/materials/)**.**\
-
-
-For an overview of Multilayered properties, check [here](../../for-mod-creators/materials/multilayered/multilayered-material-properties.md).
-
-For preview images of multilayered materials, check [here](../../for-mod-creators/materials/multilayered/multilayered-previews.md). (This page needs further data!)
-
-
-
-For theory about material templates, check [here](../../for-mod-creators/materials/re-using-materials-.mi.md).
-
-\
-If you don't know how to edit material properties, check [here](../../for-mod-creators/materials/).
+This page contains a brief overview of existing materials. More information is on the following pages:&#x20;
 {% endhint %}
+
+#### General information
+
+* How it works in the abstract: [materials](../../for-mod-creators/materials/ "mention")
+* Re-using materials as templates: [re-using-materials-.mi.md](../../for-mod-creators/materials/re-using-materials-.mi.md "mention")
+* How it works in the example: [3d-objects-.mesh-files.md](../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files.md "mention")
+
+#### Multilayered
+
+* General information: [multilayered](../../for-mod-creators/materials/multilayered/ "mention")
+* Properties and definition: [multilayered-material-properties.md](../../for-mod-creators/materials/multilayered/multilayered-material-properties.md "mention")
+* Preview images: [multilayered-previews.md](../../for-mod-creators/materials/multilayered/multilayered-previews.md "mention")
+
+#### Hands-on:
+
+* [changing-materials-colors-and-textures.md](../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") (guide)
 
 ## Simple / Basic materials
 
