@@ -11,9 +11,10 @@ description: How to set up the folder structure from scratch
 
 This page is a part of the [Adding new items](./) guide and  deals with finding the correct files for [an ArchiveXL item addition](./).&#x20;
 
-* For an explanation of the file structure, see the [corresponding wiki page](archive-xl-item-structure-explained.md).&#x20;
+* For an explanation of the file structure, see [archive-xl-item-structure-explained.md](archive-xl-item-structure-explained.md "mention").
 * If you want to add an atelier store, see [adding-items-atelier-integration.md](../../everything-else/adding-items-atelier-integration.md "mention").
-* If you want to add preview items, check [this guide](../../custom-icons-and-ui/adding-items-preview-images/).
+* If you want to add preview items, check [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention").
+* If you want to port a mesh from a different game to Cyberpunk, check [porting-3d-objects-to-cyberpunk.md](../../../3d-modelling/exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md "mention")
 
 {% hint style="info" %}
 **TL;DR**: If you can't be arsed doing this by yourself, find a template project with one working item (female rigged) [here](https://www.mediafire.com/file/ef5xcacwomldizg/my\_shirt.7z/file).
@@ -26,7 +27,7 @@ This page is a part of the [Adding new items](./) guide and  deals with finding 
 {% hint style="danger" %}
 For `mesh_entity.ent,` your entity file needs to correspond to your item's **body part**. If you put a shirt in an entity file for shoes, it will deform badly once you put it on.&#x20;
 
-If you rename your components, we recommend using CDPR's [naming prefixes](../../../3d-modelling/garment-support-how-does-it-work.md) for reasons of garmentSupport. You dont need to understand how this works, just name your component like `l1_myCustomPants` instead of `myCustomPants` and call it a day.
+If you rename your components, we recommend using CDPR's [naming prefixes](../../../3d-modelling/garment-support-how-does-it-work.md) for reasons of garmentSupport. You don't need to understand how this works, just name your component like `l1_myCustomPants` instead of `myCustomPants` and call it a day.
 
 For further details, check [here](different-equipment-slots.md).
 {% endhint %}

@@ -11,16 +11,22 @@ description: No more replacers! Add your own gear with TweakXL and ArchiveXL
 
 This guide will walk you through **adding your own items** to Cyberpunk 2077, which can then be spawned via console.&#x20;
 
-**It uses the following versions** (yours should be **equal** or **higher**, the most recent stable release works fine)
+**It has been verified with the following versions** (yours should be **equal** or **higher**)
 
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.9.0
-* [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) 1.1.4
-* [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) 1.4.3
-* [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) 1.12.0
-* [Cyber Engine Tweaks ](https://www.nexusmods.com/cyberpunk2077/mods/107)(optional, for spawning items)
+
+
+| Tool                                                                                         | latest version tested | oldest version tested |
+| -------------------------------------------------------------------------------------------- | --------------------- | --------------------- |
+| [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases)                | 8.11.1                | 8.9.0                 |
+| [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197)                                 | 1.5.2                 | 1.1.4                 |
+| [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198)                               | 1.8.1                 | 1.4.3                 |
+| [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)                                 | 1.18.0                | 1.12.0                |
+| [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107) (for spawning items) | 1.28.1                | 1.28.1                |
 
 **Assumed skill level:** \
-You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible. This guide will **teach you the basic structure** - after you have done that, take a look at the guide for [dynamic appearances](archivexl-dynamic-variants.md) for how to easily make many colour variants.
+You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible.&#x20;
+
+This guide will **teach you the basic structure** - after you have done that, take a look at the guide for [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") for how to easily make many colour variants.
 
 {% hint style="danger" %}
 **For experienced modders**
@@ -31,11 +37,11 @@ I have repeatedly observed that newbies are fine with this guide, while people w
 _The guide was created after reading_ [_this one_](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view) _and being left with a bunch of question marks. To get a deeper understanding, refer to the initial guide and follow the linked resources or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
 
 {% hint style="info" %}
-To troubleshoot your ArchiveXL mods, you can make use of the FileValidation in Wolvenkit >= 8.9.1. As of Jul 22nd that isn't yet released, but you can download a [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-09-09), as it's pretty stable).
+To troubleshoot your ArchiveXL mods, you can use [WolvenKit](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/ "mention")'s [File Validation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention"). It's not fully supporting
 {% endhint %}
 
 {% hint style="success" %}
-There is a new way of connecting your files: [dynamic variants](../../../core-mods-explained/archivexl/#dynamic-variants).  There is no detailed guide yet, but if you want to create lots of options, then you will definitely want to check out this approach, as it cuts down your file structure overhead by virtually eliminating the root entity and .app file.&#x20;
+There is a new way of connecting your files:  [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention").  If you want to create lots of options, this is what you want to do.
 {% endhint %}
 
 ## Grab the example files
@@ -67,34 +73,44 @@ Understanding of the file structure is **not required** as long as you **follow 
 Actually, no! This is how you later debug your custom items — by packing your project and checking that everything works in-game. So we're starting with a dry run here.
 {% endhint %}
 
-Press "Install and Launch" in WolvenKit. This will do the following things:
+Press [Install and launch](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch "mention") in WolvenKit. This will do the following things:
 
-1. Copy all supported file entries from `source` to their destination under `packed`, overwriting older files (but not removing files that you renamed!)
-2. Copy all files under `packed` into your game directory, again overwriting older files
-3. Launch the game.
-4.  Spawn one of the tutorial items via Cyber Engine Tweaks: \
+1. Wipe the folder `packed`
+2. Copy all supported file entries from `source` to their destination under `packed`
+3. Copy all files under `packed` into your game directory (it will overwrite without prompting)
+
+Now, you can
+
+1. Launch the game.
+2.  Spawn one of the tutorial items via Cyber Engine Tweaks: \
     `Game.AddToInventory("Items.my_custom_shirt_redwhite")`
 
     `Game.AddToInventory("Items.my_custom_shirt_redblack")`
 
-You should now see ~~your~~ the tutorial item. If not, consult the section [**Troubleshooting**](./#troubleshooting) below, or retrace your steps and make sure that everything works before proceeding to the step below.
+You should now see ~~your~~ the tutorial item. If not, consult the section [#troubleshooting](./#troubleshooting "mention") below, or retrace your steps and make sure that everything works before proceeding to the step below.
 
 ## Great! You added items! Now what?
 
 You've successfully pushed a button and everything worked, but so far, you haven't done anything. If you're okay with this, then you're done now.&#x20;
 
 {% hint style="success" %}
-To start changing the existing files, check the [Item Structure Explained](archive-xl-item-structure-explained.md) page for "Making Changes" headers.
+To start changing the existing files, check the [archive-xl-item-structure-explained.md](archive-xl-item-structure-explained.md "mention") page for "**`Making Changes`**" headers.
 {% endhint %}
 
 Otherwise, you will want to complete one or more of the following steps:
 
-* add [something other](different-equipment-slots.md) than a torso item (e.g. shoes or glasses)
-* Add more [appearances](./#adding-an-appearance-example-blackblue)&#x20;
-* Add a[ male variant,](./#adding-a-male-instance) or check out [suffixes](../../../core-mods-explained/archivexl/#variants-and-suffixes) to e.g. [hide the item in first person](../../../core-mods-explained/archivexl/#camera-modes)
-* customize your [preview images](../../custom-icons-and-ui/adding-items-preview-images/)
-* [Add an atelier store](../../everything-else/adding-items-atelier-integration.md)
-* [Porting meshes from other sources](../../../3d-modelling/exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md)
+{% hint style="info" %}
+If you want to create more appearances or use variants (e.g. for different body genders or camera prefixes), you want to check out [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention"). Do yourself a favour!
+
+There is no exact migration guide yet. Maybe you'd like to write one?
+{% endhint %}
+
+* change the mod to use [different-equipment-slots.md](different-equipment-slots.md "mention") (e.g. shoes or glasses)
+* Learn about [#variants-and-suffixes](../../../core-mods-explained/archivexl/#variants-and-suffixes "mention")for e.g. [#adding-a-male-instance](./#adding-a-male-instance "mention") or [#hiding-body-parts-diagram](../../../core-mods-explained/archivexl/#hiding-body-parts-diagram "mention")
+* Learn about making more variants:[#adding-an-appearance](./#adding-an-appearance "mention")\
+  Create [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention")
+* Create [adding-items-atelier-integration.md](../../everything-else/adding-items-atelier-integration.md "mention")
+* Learn about [porting-3d-objects-to-cyberpunk.md](../../../3d-modelling/exporting-and-importing-meshes/porting-3d-objects-to-cyberpunk.md "mention")
 
 ## Diagram
 
@@ -112,7 +128,7 @@ If you want to do more than 5 variants (for both body genders and camera modes),
 
 
 
-## Adding an appearance (example: blackblue)
+## Adding an appearance
 
 {% hint style="warning" %}
 Before you add an appearance, make sure that your item is loading up correctly and looking as expected. If you have to debug, you will have to look through every appearance you made!
@@ -341,6 +357,8 @@ But before you can share it, you need to do one last thing, which is changing th
 You can find a full guide on how to do that [here](../../everything-else/moving-and-renaming-in-existing-projects.md).
 
 ## Troubleshooting
+
+Before starting to troubleshoot, make sure that you have all the **requirements** installed — [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380), [ArchiveXL](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/core-mods-explained/archivexl?q=visual+tags) and [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197).
 
 {% hint style="info" %}
 The easiest way to spot what's wrong is to use Wolvenkit's new FileValidation feature, which will print warnings and errors to the log file for you, starting at version >= 8.9.1.&#x20;

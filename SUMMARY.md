@@ -217,4 +217,5 @@
     * [Customise CP77 info on GOG](for-mod-creators/modding-guides/everything-else/customise-cp77-info-on-gog.md)
     * [Textured items and Cyberpunk materials](for-mod-creators/modding-guides/everything-else/textured-items-and-cyberpunk-materials.md)
     * [Custom props](for-mod-creators/modding-guides/everything-else/custom-props.md)
+    * [Custompathing assets](for-mod-creators/modding-guides/everything-else/custompathing-assets.md)
     * [Your own Atelier Store](for-mod-creators/modding-guides/everything-else/adding-items-atelier-integration.md)

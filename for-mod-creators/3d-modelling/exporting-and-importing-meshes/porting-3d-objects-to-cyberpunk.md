@@ -44,7 +44,7 @@ If you are [creating props](../../modding-guides/everything-else/custom-props.md
 Do not take equipment item or weapon meshes — those include a bunch of extra data that you don't need (the [armature](../meshes-and-armatures-rigging.md)). You don't need it, and it can have side effects.
 {% endhint %}
 
-As this guide will focus on equipment items, you can skip most of it. You only need to make sure that&#x20;
+As this guide will focus on equipment items, you can skip Step 3 and 4 completely.
 
 ### Equipment items
 
@@ -152,6 +152,10 @@ Clean up any residual modifiers and transforms (we don't want them):
 
 ### Strategy 1: Replacing the 3d data
 
+{% hint style="info" %}
+If you are doing this, you can skip[#strategy-2-parenting-the-meshes](porting-3d-objects-to-cyberpunk.md#strategy-2-parenting-the-meshes "mention").
+{% endhint %}
+
 We start by deleting the original's vertex data.
 
 1. In [Object Mode](#user-content-fn-2)[^2], select all of the original meshes.
@@ -180,6 +184,10 @@ If you need more submeshes, simply duplicate an existing one (Hotkey: `Ctrl+D`, 
 That's it. All your meshes are parented to the armature now.
 
 ### Strategy 2: Parenting the meshes
+
+{% hint style="info" %}
+If you are doing this, you can skip [#strategy-1-replacing-the-3d-data](porting-3d-objects-to-cyberpunk.md#strategy-1-replacing-the-3d-data "mention").
+{% endhint %}
 
 We can simply parent the meshes to our existing armature:
 
