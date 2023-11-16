@@ -200,7 +200,7 @@ For dynamic variants, components in the .app file will be **ignored**. You have 
 
 #### Conditional switching: picking appearances by name
 
-You can define appearances for different circumstances by using [#conditional-switching](../../../core-mods-explained/archivexl/#conditional-switching "mention") for the appearance names. This will let you influence the mesh entity even further by e.g. hiding parts of the mesh via [chunkmask](../../../files-and-what-they-do/appearance-.app-files.md#partsoverrides). And the best part is: you don't even need to touch your root entity.
+You can define appearances for different circumstances by using [#conditional-switching](../../../core-mods-explained/archivexl/#conditional-switching "mention") for the appearance names. This will let you influence the mesh entity even further by e.g. hiding parts of the mesh via [#chunkmask](../../../files-and-what-they-do/components/#chunkmask "mention"). And the best part is: you don't even need to touch your root entity.
 
 In the context of our example project, this means that you can define a first person appearance by calling it `app_file_dynamic_appearance&camera=fpp`.&#x20;
 
