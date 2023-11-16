@@ -46,7 +46,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
 * [You're on Linux](../users-modding-cyberpunk-2077/modding-on-linux.md)
 * [You have trouble with your pirated game](./#you-pirated-the-game)
 * [Photomode screenshots are borked](./#photomode-screenshots-are-blank)
-* [Press \[none\] to continue](./#press-none-to-continue)
+* [Press \[none\] to continue / can't skip loading screen](./#press-none-to-continue-cant-skip-loading-screen)
 * [You have audio issues](./#audio-problems)
 * [You have trouble with CET (Cyber Engine Tweaks)](./#mod-isnt-working-cet)
   * [You forgot your CET keybind](./#you-forgot-your-cet-keybind)
@@ -961,7 +961,7 @@ With 1.62, screenshots are now saved to `Documents\CDPR\Cyberpunk\Screenshots` ,
 
 With 1.63, screenshots have now been moved _back_ to `\Pictures\Cyberpunk 2077`
 
-## Press \[none] to continue
+## Press \[none] to continue / can't skip loading screen
 
 That is due to [Input Loader](https://www.nexusmods.com/cyberpunk2077/mods/4575) requiring an update.
 
