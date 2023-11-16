@@ -1,12 +1,18 @@
+---
+description: First steps into find quest archives.
+---
+
 # ❕ Quests
 
-Apartments are good for learning as they have a questphase side (_which is what the whole game is made of basically_) and a scene file side, which has the choices, animations, buff from sleeping, timeskip from sleeping, audio in the shower.
+Missions or quests are organized into separate files that contain nodes or references to other "files" called Questphases and Scenes.
 
-<mark style="background-color:orange;">**.questphases**</mark> are basically just graphs, with maybe a couple of #noderefs for loading prefabs for the phase and they connect everything up with handlerefs to handle ID's in their socket setups.
+Apartments provide a good learning opportunity because they consist of a questphase side, which forms the core of the entire game, and a scene file side, which includes choices, animations, buffs obtained from sleeping, timeskips resulting from sleeping, or audio in the shower.
+
+**Questphases** can be thought of as graphs that may contain a few #noderefs, which are used to load prefabs for the phase. The questphases are connected together using handlerefs, which handle IDs in their socket setups.
 
 ## Visualize .questphase files
 
-In order to visualize the quest on wolvenkit we need to localize a Questphase file which contains quests progression:
+In order to visualize the quest on wolvenkit we need to find or locate a Questphase file that represents the progression of quests:
 
 The following graph is a visualization of the Questphase file:
 
@@ -18,9 +24,9 @@ The following graph is a visualization of the Questphase file:
 
 ### To visualize Questphase in Wolvenkit we need to:&#x20;
 
-* Localize a .questphase file.&#x20;
-* &#x20;Add it to the project or open without adding to the project (image A)
-* When you visualize the .questphase you'll see first a "resource" window with all the questphase dependencies/archives and info. (Image B)
+* Identify and locate a .questphase file on the Asset browser.&#x20;
+* Click on "Add it to the project" or "open without adding to the project" (image A)
+* When you open the .questphase file you'll see first a "resource" window with all the questphase dependencies/archives and info. (Image B)
 * Switch to Graph editor on the tabs (image C)
 
 
