@@ -2,6 +2,8 @@
 
 Apartments are good for learning as they have a questphase side (_which is what the whole game is made of basically_) and a scene file side, which has the choices, animations, buff from sleeping, timeskip from sleeping, audio in the shower.
 
+<mark style="background-color:orange;">**.questphases**</mark> are basically just graphs, with maybe a couple of #noderefs for loading prefabs for the phase and they connect everything up with handlerefs to handle ID's in their socket setups.
+
 ## Visualize .questphase files
 
 In order to visualize the quest on wolvenkit we need to localize a Questphase file which contains quests progression:
