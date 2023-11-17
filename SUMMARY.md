@@ -180,6 +180,7 @@
       * [📂 Archived](for-mod-creators/modding-guides/visual-modding/archived/README.md)
         * [Advanced: Reverse-Engineered LUT pipeline](for-mod-creators/modding-guides/visual-modding/archived/advanced-reverse-engineered-lut-pipeline.md)
   * [🔧 TweakXL: Changing game records](for-mod-creators/modding-guides/tweakxl-changing-game-records/README.md)
+    * [Changing vendor inventory](for-mod-creators/modding-guides/tweakxl-changing-game-records/changing-vendor-inventory.md)
     * [Changing NPCs - Tweak edit (REDMod)](for-mod-creators/modding-guides/tweakxl-changing-game-records/changing-npcs-tweak-edit-redmod.md)
   * [✨ Custom icons and UI](for-mod-creators/modding-guides/custom-icons-and-ui/README.md)
     * [Inkwidgets: a custom interface](for-mod-creators/modding-guides/custom-icons-and-ui/inkwidgets-a-custom-interface.md)
