@@ -88,6 +88,8 @@ There are still some node types in the sector file not being processed currently
 
 ## Importing back into Cyberpunk
 
+<figure><img src="../../../.gitbook/assets/warning_outdated_info.png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="danger" %}
 With ArchiveXL >= 1.8.0, this process is **outdated**. Check the other guides in this section for how to generate .xl files to add, edit or [delete ](world-editing-deleting-objects.md)objects in sectors.
 {% endhint %}

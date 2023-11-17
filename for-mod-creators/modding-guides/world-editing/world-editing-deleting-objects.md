@@ -38,7 +38,7 @@ Although you can also work directly in your `archive/pc/mod` directory, you shou
 
 We'll fill in the information in Step 3, this is how it will look:
 
-<figure><img src="../../../.gitbook/assets/world_sector_node_removal.png" alt=""><figcaption><p>We'll fill in the information in Step 3, this is how it will look:</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/world_sector_node_removal.png" alt=""><figcaption><p>We'll fill in the information in Step 3, this is how it will look. <br>The bottom half of the screenshot is a text editor, you will NOT see this in Cyberpunk!</p></figcaption></figure>
 
 3. Paste the following code into your .xl file:
 
