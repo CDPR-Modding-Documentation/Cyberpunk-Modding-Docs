@@ -155,6 +155,30 @@ If your weapon is significantly bigger than the original one, you'll notice that
 
 First of all, unequip and re-equip the item. If that doesn't fix it, try **respawning** it.
 
+### My iconic melee weapon ignores its localizedDescription!
+
+That is due to a base game change (bug?): iconic weapons don't show fluff texts anymore (huge thanks to [@RMKSoundSystem on Discord](https://discord.com/channels/717692382849663036/953004282142163014/1174741877120061531) for learning that).&#x20;
+
+To make it work again, you need to either
+
+#### add a blueprint:
+
+Add the following line to your .yaml:
+
+```yaml
+  blueprint: Items.Iconic_Melee_Blueprint
+```
+
+#### change the base type
+
+Set $base like this:
+
+```yaml
+  $base: Items.IconicWeaponModBase
+```
+
+
+
 [^1]: as linked in your .app's baseEntity field
 
 [^2]: baseEntity in your app file
