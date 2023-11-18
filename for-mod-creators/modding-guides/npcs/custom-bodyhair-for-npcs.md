@@ -2,6 +2,10 @@
 
 ## Summary <a href="#summary" id="summary"></a>
 
+{% hint style="info" %}
+If you want to create custom **hair colours**, check [#creating-your-own-hair-colours](../../materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") and follow the links from there.
+{% endhint %}
+
 **Created by @Pinkydude**\
 **Published Summer 2021**
 

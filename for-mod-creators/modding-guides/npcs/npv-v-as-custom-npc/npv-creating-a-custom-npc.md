@@ -15,7 +15,7 @@ As much of the information here has been documented in [other guides](../appeara
 
 This page is a part of the [NPV guide](./). It will show you how to use the [provided example project](./#preparation) to create a custom NPC for Cyberpunk 2077, whom you can then spawn with AppearanceMenuMod.
 
-It will give you a brief overview over the control files and tell you how to pull in the right meshes (and appearances).
+It will give you a brief overview over the control files and tell you how to pull in the right meshes (and appearances). If you're just here for custom hair colours, check  [#creating-your-own-hair-colours](../../../materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") instead.
 
 {% hint style="info" %}
 This guide assumes that&#x20;
@@ -155,7 +155,9 @@ If you get a bunch of errors that complain about "mesh not found in project file
 {% hint style="success" %}
 The next section, [#how-do-i-know-what-to-put](npv-creating-a-custom-npc.md#how-do-i-know-what-to-put "mention"), will help you find the right appearance names.
 
-If you feel completely lost, you can read up on [how to change NPC appearances](../appearances-change-the-looks.md) – the concept is exactly the same.
+If you feel completely lost, you can read up on [how to change NPC appearances](../appearances-change-the-looks.md) – the concept is exactly the same.&#x20;
+
+Also, [File Validation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
 {% endhint %}
 
 {% hint style="success" %}

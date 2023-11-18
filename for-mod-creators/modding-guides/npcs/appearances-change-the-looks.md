@@ -5,9 +5,9 @@ description: Changing an NPC's default appearances (and adding more via AMM)
 # Appearances: change the looks
 
 {% hint style="info" %}
-If you want to create a custom NPC from scratch, look [here](../community-guides/external-npvs-v-as-npc-custom-npcs.md).
+If you want to create a custom NPC from scratch, look [here](../community-guides/external-npvs-v-as-npc-custom-npcs.md) or under [external-npvs-v-as-npc-custom-npcs.md](../community-guides/external-npvs-v-as-npc-custom-npcs.md "mention").&#x20;
 
-You can find another guide about this linked on the [Community Guides](../community-guides/) page ([direct link)](https://docs.google.com/document/d/1uwfc1IGSuNUAkVeR7esI-7P\_gnzSc8pw0Pq24JEnI2I/edit)
+If you want to create custom hair colours, check [#creating-your-own-hair-colours](../../materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") and follow the links from there.
 {% endhint %}
 
 **Created by @manavortex**\

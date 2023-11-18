@@ -46,13 +46,11 @@ For documentation of the autofitter, see the [corresponding wiki page](wkit-blen
 
 Lets you change the armature target (the skeleton that'll move and deform your mesh)
 
-#### Material Export
+#### Material Export: Hair
 
 Lets you export a hair profile. For documentation, see [#hair-profiles-.hp](wkit-blender-plugin-import-export.md#hair-profiles-.hp "mention")
 
-
-
-
+Check [#creating-your-own-hair-colours](../../materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") if that's what you want to do.
 
 ####
 
