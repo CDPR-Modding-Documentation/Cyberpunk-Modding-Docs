@@ -5,7 +5,9 @@ description: What is Garment Support and how does it work?
 # Garment Support: How does it work?
 
 {% hint style="info" %}
-If garment supports are causing trouble for you, your easiest option is to delete the parameters from your mesh. For detail, see [here](troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices).
+If garment supports are causing trouble for you, you have two options:\
+[#option-1-likely-to-work-import-your-mesh-with-garment-supports](troubleshooting-your-mesh-edits.md#option-1-likely-to-work-import-your-mesh-with-garment-supports "mention")\
+[#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh](troubleshooting-your-mesh-edits.md#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh "mention")
 
 To make use of garment support, **keep the component name prefixes**. If you change the mesh, make sure to [tick the box](broken-reference).
 {% endhint %}
