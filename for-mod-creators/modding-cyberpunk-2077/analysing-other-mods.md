@@ -24,9 +24,13 @@ If you want to **edit** files, you need a [Wolvenkit Project](http://127.0.0.1:5
 
 ### Step 1: Switch to mod browser
 
+Once you have [installed the mod](../../for-mod-users/users-modding-cyberpunk-2077/) or added it to your [extra mod directory](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/settings#additional-mod-directory), you can use Wolvenkit's [Mod Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser "mention")to browse it:
+
 <figure><img src="../../.gitbook/assets/view_mods_with_wkit.png" alt=""><figcaption><p>Switch to "Mod browser"</p></figcaption></figure>
 
-You can now add the content to your project just like you do it with game files:
+You can now add the content to your project like regular game files.&#x20;
+
+If you can't (because everything is scrambled), check [#troubleshooting](analysing-other-mods.md#troubleshooting "mention").
 
 ### Step 2: Find the correct files
 
@@ -56,6 +60,20 @@ Select the file that you want to add by checking the box. Then right-click on it
 
 <figure><img src="../../.gitbook/assets/browsing_mods_add_to_project.png" alt=""><figcaption><p>Add items to project</p></figcaption></figure>
 
-
-
 That's it! You now have the file in your mod project and can start editing.
+
+## Troubleshooting
+
+### I can't add anything to my project!
+
+Make sure that you actually have a Wolvenkit project opened (you will see the project name in the top-right corner next to the close button). Can't add files to a project if there's no project!
+
+### Everything is scrambled / there are a bunch of .bin files
+
+You have found a mod that is not compatible with the current hashing algorithm. Long (and sad) story short, from time to time that needs an update, and then anything packed with a different version of the algorithm won't resolve anymore.
+
+You can try opening the `.archive` with Wolvenkit [8.9](https://github.com/WolvenKit/WolvenKit/releases/tag/8.9.0) or [8.7](https://github.com/WolvenKit/WolvenKit/releases/tag/8.7.0) - anything older will be incompatible with game versions >= 1.6.&#x20;
+
+#### Didn't work
+
+Some authors don't want other people to look at their files and deliberately corrupt their archives to prevent Wolvenkit from reading them. The game is a lot more robust than WKit, so these mods usually work, although side effects can't be ruled out. If none of this works, you can still look at the files and their properties in the [File Editor](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor "mention") and try to guess what's what. Other than that, you're out of luck, though.
