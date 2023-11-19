@@ -58,7 +58,7 @@ Alternatively, you can also open MLSetupBuilder by hand, then press `Ctrl+I` or 
 {% endhint %}
 
 {% hint style="warning" %}
-If your material list is saying \[object object], check the [MLSB troubleshooting page.](../../../modding-tools/mlsetup-builder.md#help-my-layer-config-list-says-object-object)
+If your material list is saying \[object object], check the [MLSB troubleshooting page.](../../../modding-tools/mlsetup-builder/#help-my-layer-config-list-says-object-object)
 {% endhint %}
 
 ## (Optional) Step 2: Preview and Layer Masks
@@ -69,7 +69,7 @@ If you don't care for this, you can skip to [#step-3-recolouring](r-and-r-colour
 
 #### Enable preview
 
-1. Switch to MLSetupBuilder's [Library tab](../../../modding-tools/mlsetup-builder.md#mlsb-library).
+1. Switch to MLSetupBuilder's [Library tab](../../../modding-tools/mlsetup-builder/#mlsb-library).
 2. Check if the .mlsetup that you want to edit is in a subfolder `layer_mask_2`
    * No: Search for `t0_005_pwa_body__t_bug`
    * Yes: Search for `t0_001_wa_body__t_bug`

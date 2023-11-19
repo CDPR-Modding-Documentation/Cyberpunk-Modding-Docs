@@ -96,7 +96,7 @@ If you have done both, you can skip it and proceed with [creating a Wolvenkit pr
 3.  Make a decision if you want to use these features **independently of the Netrunner suit**:
 
     <figure><img src="../../../../.gitbook/assets/MLSB_UI_preview.png" alt=""><figcaption></figcaption></figure>
-4. **Yes:** you need to **configure** [**MLSetupBuilder**](../../../modding-tools/mlsetup-builder.md#configuration). Follow the steps on the linked list until you have a full depot, then proceed with [#netrunner-suit-preview](./#netrunner-suit-preview "mention")
+4. **Yes:** you need to **configure** [**MLSetupBuilder**](../../../modding-tools/mlsetup-builder/#configuration). Follow the steps on the linked list until you have a full depot, then proceed with [#netrunner-suit-preview](./#netrunner-suit-preview "mention")
    * If you can't set up a depot in MLSB (because computer go brr), you might want to hit up the [Redmodding Discord](https://discord.gg/9wPeb4es) to find help with your problem, or file an issue on github ([Wolvenkit](https://github.com/WolvenKit/WolvenKit/releases/) | [MLSB](https://github.com/Neurolinked/MlsetupBuilder)). You can still use the [#netrunner-suit-preview](./#netrunner-suit-preview "mention").
 5. **No:** You have to options now. Please pick one.
    * Partial preview: I've prepared a bunch of files for you. [#netrunner-suit-preview](./#netrunner-suit-preview "mention") will show you where to put them.

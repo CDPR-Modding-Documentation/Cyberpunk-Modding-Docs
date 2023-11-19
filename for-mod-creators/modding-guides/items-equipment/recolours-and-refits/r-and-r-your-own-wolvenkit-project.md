@@ -33,7 +33,7 @@ You can check find the standard permissions on a mod's Nexus page, `Description`
 The links in the check list go to more detailed guides. For the exact things you have to do if you can't check the boxes, see  the previous section of the guide ->[Broken link](broken-reference "mention"),
 
 * [ ] You have [Wolvenkit installed](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download) and configured
-* [ ] You have [MLSetupBuilder installed](../../../modding-tools/mlsetup-builder.md#installation) and [configured](./#netrunner-suit-preview)
+* [ ] You have [MLSetupBuilder installed](../../../modding-tools/mlsetup-builder/#installation) and [configured](./#netrunner-suit-preview)
 * [ ] You have [installed the mod](./#install-the-mod)
 
 ## Why do I want a Wolvenkit project?

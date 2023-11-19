@@ -17,7 +17,7 @@ There is a dedicated channel on the [Redmodding Discord](https://discord.com/cha
 
 For integration with Wolvenkit, install MLSB as a plugin:&#x20;
 
-<figure><img src="../../.gitbook/assets/installing_MLSB.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/installing_MLSB.png" alt=""><figcaption></figcaption></figure>
 
 1. Click on "Home" in Wolvenkit's title bar
 2. Select "Plugins" in the left sidebar
@@ -36,7 +36,7 @@ We will now launch MLSB and do the initial setup.
 ## Usage
 
 {% hint style="info" %}
-To make the most of MLSB's features, you will want to [configure](mlsetup-builder.md#configuration) it first. However, you can start using the tool right away.&#x20;
+To make the most of MLSB's features, you will want to [configure](./#configuration) it first. However, you can start using the tool right away.&#x20;
 {% endhint %}
 
 Here's how (or scroll down for the screenshot):
@@ -49,17 +49,17 @@ Here's how (or scroll down for the screenshot):
 4. Right-click on the newly created `mlsetup.json` file&#x20;
 5. Select "Open in MLSetupBuilder"
 
-<figure><img src="../../.gitbook/assets/mlsb_exporting_file.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_exporting_file.png" alt=""><figcaption></figcaption></figure>
 
 ### Using MLSB
 
 As of Version 1.6.7, this is what you will see now:
 
-<figure><img src="../../.gitbook/assets/MLSB_ui.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MLSB_ui.png" alt=""><figcaption></figcaption></figure>
 
 Start by importing the file from the preview. That will populate the Layer Config box with the MLSetup that you just loaded.
 
-The preview was hiding an empty 3d viewport. To [use that](mlsetup-builder.md#about-that-3d-viewport), you will need to [configure](mlsetup-builder.md#configuration) MLSB first, but you can already click through the individual layers and assign [material properties](../materials/multilayered/multilayered-material-properties.md) (such as roughness, normal strength, base material and colour) from the "Material Properties" panel.&#x20;
+The preview was hiding an empty 3d viewport. To [use that](./#about-that-3d-viewport), you will need to [configure](./#configuration) MLSB first, but you can already click through the individual layers and assign [material properties](../../materials/multilayered/multilayered-material-properties.md) (such as roughness, normal strength, base material and colour) from the "Material Properties" panel.&#x20;
 
 {% hint style="info" %}
 Don't forget to hit "Apply" after you have changed a material.
@@ -81,15 +81,15 @@ This is where you can load models from the game for a direct preview which layer
 
 #### MLSB Library
 
-<figure><img src="../../.gitbook/assets/mlsb_library_tab.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_library_tab.png" alt=""><figcaption></figcaption></figure>
 
 Here, you can either browse to your model directly, or use text search:
 
-<figure><img src="../../.gitbook/assets/mlsb_library.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_library.png" alt=""><figcaption></figcaption></figure>
 
 After selecting a model, you can close the library browser again. Now selecting a layer will show you directly which parts of the mesh it corresponds to.
 
-<figure><img src="../../.gitbook/assets/mlsb_ui.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_ui.png" alt=""><figcaption></figcaption></figure>
 
 That's it! Happy recoloring!
 
@@ -117,15 +117,15 @@ We're assuming that you have already configured Wolvenkit. If you haven't, pleas
 
 ### Building the depot
 
-Again, this step is optional, you can [use MLSB](mlsetup-builder.md#using-mlsb) straight away.&#x20;
+Again, this step is optional, you can [use MLSB](./#using-mlsb) straight away.&#x20;
 
 1. Open the menu "Build" and select "Repository" to uncook the archives:
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 2. Select the following settings (if you want to uncook everything, this step can take several hours, so we'll only do the essentials for now)
 
-<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 3. Click "**Uncook**".&#x20;
 4. Wait. Do not interact with the program in any way until the process has finished - especially interacting with the console might just freeze up the entire windows cmd process. This is not MLSB's fault, but due to a Windows standard implementation.
@@ -139,13 +139,13 @@ This process can take some time — if you have selected everything, it can be s
 
 ### Building the Microblend Depot
 
-1. Repeat Step 1 from [#extract-a-partial-depot](mlsetup-builder.md#extract-a-partial-depot "mention"), but select **Microblends** this time
+1. Repeat Step 1 from [#extract-a-partial-depot](./#extract-a-partial-depot "mention"), but select **Microblends** this time
 2. In the bottom left corner, hit "Start"
 3. Wait.
 4. When the process is complete, close the Depot Generator window.&#x20;
 5. Optional: if you can't see any changes, press `Ctrl+R` to relaod MLSB.
 
-That's it, you're done now and can use the [3d viewport](mlsetup-builder.md#about-that-3d-viewport)!
+That's it, you're done now and can use the [3d viewport](./#about-that-3d-viewport)!
 
 ## Troubleshooting
 

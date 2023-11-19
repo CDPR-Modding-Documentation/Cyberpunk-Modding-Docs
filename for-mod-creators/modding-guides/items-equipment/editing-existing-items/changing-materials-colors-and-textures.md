@@ -18,7 +18,7 @@ For a step-by-step walkthrough for a recolour of the Netrunner suit, check [r-an
 It uses the following versions:
 
 * WolvenKit: [8.7.1-nightly.2022-11-06](https://github.com/WolvenKit/WolvenKit/compare/8.7.1-nightly.2022-11-05...8.7.1-nightly.2022-11-06) (but anything > 8.7 will do)
-* [MLSetupBuilder](../../../modding-tools/mlsetup-builder.md): [1.6.5](https://github.com/Neurolinked/MlsetupBuilder) (older versions won't be compatible with WKit 8.7 and game version 1.6)
+* [MLSetupBuilder](../../../modding-tools/mlsetup-builder/): [1.6.5](https://github.com/Neurolinked/MlsetupBuilder) (older versions won't be compatible with WKit 8.7 and game version 1.6)
 
 {% hint style="info" %}
 Most items in Cyberpunk are not textured, but use a procedurally generated material consisting out of an [mlmask](../../../materials/multilayered/#what-is-the-mlmask) (a list of alpha masks) and an [mlsetup](../../../materials/multilayered/#what-is-the-mlsetup) (a list of material paths and -colours). There is a section on the exceptions below.
@@ -125,7 +125,7 @@ We do that by editing the **MultilayerSetup**. Check the MLSetupBuilder wiki pag
 ## Step 3: Editing the .mlsetup file
 
 {% hint style="info" %}
-If you don't have MLSetupBuilder installed, you need to [do that now](../../../modding-tools/mlsetup-builder.md#installation). If you don't know how to use it, please check [#using-mlsb](../../../modding-tools/mlsetup-builder.md#using-mlsb "mention")
+If you don't have MLSetupBuilder installed, you need to [do that now](../../../modding-tools/mlsetup-builder/#installation). If you don't know how to use it, please check [#using-mlsb](../../../modding-tools/mlsetup-builder/#using-mlsb "mention")
 {% endhint %}
 
 1. Optional: If you don't see an `mlsetup.json` in your project, switch the [Project Explorer](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer) to `source` or `raw`.
@@ -147,7 +147,7 @@ If you select WolvenKit's "Open in File Explorer" option, you can copy the path 
 For a documentation of multilayer properties, see [here](../../../materials/multilayered/multilayered-material-properties.md). For a list of reference images, check [multilayered-previews.md](../../../materials/multilayered/multilayered-previews.md "mention")
 {% endhint %}
 
-3. [Draw the rest of the owl](https://knowyourmeme.com/memes/how-to-draw-an-owl) and [edit the mlsetup](../../../modding-tools/mlsetup-builder.md#using-mlsb).&#x20;
+3. [Draw the rest of the owl](https://knowyourmeme.com/memes/how-to-draw-an-owl) and [edit the mlsetup](../../../modding-tools/mlsetup-builder/#using-mlsb).&#x20;
 4. Export the file, overwriting the original `.mlsetup.json`
 5. Switch back to Wolvenkit
 6. Right-click on the `.mlsetup.json` and [import it from json](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json).

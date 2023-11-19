@@ -28,7 +28,7 @@ The multilayered shader is composed of three distinct parts:
    [**.mltemplate files**](./#what-is-the-mltemplate)
 
 {% hint style="info" %}
-For editing mlsetup files, you'll want to use the [MlSetupBuilder](../../modding-tools/mlsetup-builder.md) ([download](https://github.com/Neurolinked/MlsetupBuilder))
+For editing mlsetup files, you'll want to use the [MlSetupBuilder](../../modding-tools/mlsetup-builder/) ([download](https://github.com/Neurolinked/MlsetupBuilder))
 {% endhint %}
 
 ## What is the mlmask?

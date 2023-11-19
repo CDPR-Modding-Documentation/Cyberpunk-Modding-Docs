@@ -34,11 +34,11 @@ File paths are [how Wolvenkit knows](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd
 
 ## MLSetupBuilder
 
-You can find tool-specific troubleshooting on [MLSB's wiki page](../../../modding-tools/mlsetup-builder.md#troubleshooting).
+You can find tool-specific troubleshooting on [MLSB's wiki page](../../../modding-tools/mlsetup-builder/#troubleshooting).
 
 ### I can't build a depot
 
-That's okay, you can still [complete the guide without a full depot](./#netrunner-suit-preview), or you can check [MLSetupBuilder's wiki page](../../../modding-tools/mlsetup-builder.md#extract-a-partial-depot) for more instructions.
+That's okay, you can still [complete the guide without a full depot](./#netrunner-suit-preview), or you can check [MLSetupBuilder's wiki page](../../../modding-tools/mlsetup-builder/#extract-a-partial-depot) for more instructions.
 
 
 
