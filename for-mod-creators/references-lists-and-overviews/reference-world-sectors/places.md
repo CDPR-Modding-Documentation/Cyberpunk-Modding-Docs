@@ -14,7 +14,9 @@ There are several overviews of interesting locations:
 
 ## Getting an item's world sector
 
-1. Install [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/) >= 0.5.2. You need both the plugin and the extra zip for CET.
+1.  Install [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/) >= 0.5.2. You need both the plugin and the extra zip for CET.
+
+    <figure><img src="../../../.gitbook/assets/red_hot_tools_download.png" alt=""><figcaption></figcaption></figure>
 2. Extract them directly into your Cyberpunk game directory and start the game.
 3. Head to the location that you want to edit.
 4. Look at the item
