@@ -45,7 +45,7 @@
     * [REDmod: Tweaks](for-mod-creators/modding-tools/redmod/redmod-tweaks.md)
     * [Audio Modding](for-mod-creators/modding-tools/redmod/audio-modding.md)
   * [RedHotTools](for-mod-creators/modding-tools/redhottools.md)
-  * [Blender scripts and plugins](for-mod-creators/modding-tools/blender-scripts-and-plugins.md)
+  * [Tools, scripts and plugins](for-mod-creators/modding-tools/blender-scripts-and-plugins.md)
   * [Noesis](for-mod-creators/modding-tools/noesis.md)
 * [⚒ Core Mods explained](for-mod-creators/core-mods-explained/README.md)
   * [CET (Cyber Engine Tweaks)](https://wiki.redmodding.org/cyber-engine-tweaks/)
