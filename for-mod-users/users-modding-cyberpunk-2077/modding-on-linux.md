@@ -4,6 +4,12 @@ description: How to get mods working on a SteamDeck
 
 # Modding on Linux
 
+
+
+{% hint style="info" %}
+Find a guide how to optimize CP for SteamDeck on [r/SteamDeck](https://www.reddit.com/r/SteamDeck/s/d6qimkY7lL)
+{% endhint %}
+
 ## Summary
 
 This page tells you how to set the launch options for Steam under Linux. If you have trouble after an update and have exhausted [all the usual steps](../user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md), make sure to double-check them — sometimes, Steam helpfully deletes them for you to make sure that your game crashes on startup.
