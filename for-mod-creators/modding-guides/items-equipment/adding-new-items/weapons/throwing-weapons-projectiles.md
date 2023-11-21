@@ -14,7 +14,7 @@ This page is a sub-page of [Adding Weapons](./) and tells you how to create a cu
 To create a custom throwing weapon, check the parent guide and use knife as a base type.
 
 {% hint style="info" %}
-Everything but the yaml works exactly like adding regular items (with a [root](../../../../files-and-what-they-do/entity-.ent-files.md#root-entity) or [mesh entity](../../../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity), an [.app file](../../../../files-and-what-they-do/appearance-.app-files.md#appearances) and your weapon's mesh). This example will use a root entity.
+Everything but the yaml works exactly like adding regular items (with a [root](../../../../files-and-what-they-do/entity-.ent-files/#root-entity) or [mesh entity](../../../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity), an [.app file](../../../../files-and-what-they-do/appearance-.app-files.md#appearances) and your weapon's mesh). This example will use a root entity.
 {% endhint %}
 
 {% hint style="success" %}
@@ -60,7 +60,7 @@ There are two kinds of .ent files: the ones that support multiple appearances, a
 
 Pick the right kind of entity for your weapon:
 
-#### [Root entity](../../../../files-and-what-they-do/entity-.ent-files.md#root-entity)
+#### [Root entity](../../../../files-and-what-they-do/entity-.ent-files/#root-entity)
 
 Use e.g. this entity file if you want to use multiple appearances:
 
@@ -68,7 +68,7 @@ Use e.g. this entity file if you want to use multiple appearances:
 base\gameplay\projectiles\knife\tanto_projectile.ent
 ```
 
-#### [Mesh entity](../../../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity)
+#### [Mesh entity](../../../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity)
 
 Use e.g. this entity file if a single appearance is enough for you:
 

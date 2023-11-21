@@ -113,7 +113,7 @@ tutorial\npv\your_male_character\ops\your_male_character.ent
 ```
 
 {% hint style="info" %}
-[Would you like to know more?](../../../files-and-what-they-do/entity-.ent-files.md#root-entity)
+[Would you like to know more?](../../../files-and-what-they-do/entity-.ent-files/#root-entity)
 {% endhint %}
 
 The root entity hooks up your .app file and the appearance names in the .lua file, and that's about everything there is to say about it. Here's how it looks:

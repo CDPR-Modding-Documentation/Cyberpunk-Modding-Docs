@@ -18,7 +18,7 @@ A mesh can have several **submeshes**, each of which has own material assignment
 
 ## How the mesh is loaded
 
-Meshes are loaded in .app files ( [#components](appearance-.app-files.md#components "mention") ) or .ent files ( [#mesh-component-entity-simple-entity](entity-.ent-files.md#mesh-component-entity-simple-entity "mention")) via [components](components/ "mention"), e.g.[#entgarmentskinnedmeshcomponent](components/documented-components.md#entgarmentskinnedmeshcomponent "mention").&#x20;
+Meshes are loaded in .app files ( [#components](appearance-.app-files.md#components "mention") ) or .ent files ( [#mesh-component-entity-simple-entity](entity-.ent-files/#mesh-component-entity-simple-entity "mention")) via [components](components/ "mention"), e.g.[#entgarmentskinnedmeshcomponent](components/documented-components.md#entgarmentskinnedmeshcomponent "mention").&#x20;
 
 ### Shadows
 

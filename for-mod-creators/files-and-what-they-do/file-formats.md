@@ -34,8 +34,8 @@ From ArchiveXL item additions, this kind of file is usually called a **root enti
 
 **For player items**, an .ent file can serve as a **wrapper**, splitting components out of the .app file by putting them in their own file.
 
-{% content-ref url="entity-.ent-files.md" %}
-[entity-.ent-files.md](entity-.ent-files.md)
+{% content-ref url="entity-.ent-files/" %}
+[entity-.ent-files](entity-.ent-files/)
 {% endcontent-ref %}
 
 ## Components

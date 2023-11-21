@@ -34,7 +34,7 @@ When adding items, you will normally offer multiple [**mesh appearances**](../..
 
 ### And what are suffixes?
 
-Sometimes, you want to load different meshes/appearances under different circumstances. Until ArchiveXL 1.5, the process was extremely tedious, but thanks to psiberx, [**suffixes**](../../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes) have been replaced with **conditions** (read up on [dynamic variants](./#dynamic-variants) to learn how to make use of that).&#x20;
+Sometimes, you want to load different meshes/appearances under different circumstances. Until ArchiveXL 1.5, the process was extremely tedious, but thanks to psiberx, [**suffixes**](../../files-and-what-they-do/entity-.ent-files/#what-are-suffixes) have been replaced with **conditions** (read up on [dynamic variants](./#dynamic-variants) to learn how to make use of that).&#x20;
 
 While the solution has changed (and improved), the problems remain:
 

@@ -49,7 +49,7 @@ This is probably the most common problem I've seen, and is also thankfully the e
 
 ### Solution
 
-1.  Open up the [mesh entity](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity) (`.ent`) file for the item you need to fix:
+1.  Open up the [mesh entity](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) (`.ent`) file for the item you need to fix:
 
     <figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption><p>There are no appearances in a mesh entity file!</p></figcaption></figure>
 2.  Expand the `components` array, then find any `component`s with `Mesh` in their types, and check if they require fixing. In my example project, it's both the jacket and the sleeves.&#x20;
@@ -105,7 +105,7 @@ For dynamic appearances (if the yaml has a key called `$instances`), complete st
 {% endhint %}
 
 1. Switch back to Wolvenkit.
-2. Open the [root entity (.ent)](../../files-and-what-they-do/entity-.ent-files.md#root-entity) file (it should have an array called `appearances`)
+2. Open the [root entity (.ent)](../../files-and-what-they-do/entity-.ent-files/#root-entity) file (it should have an array called `appearances`)
 
 <figure><img src="../../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
@@ -122,7 +122,7 @@ You can't do that if you're using [archivexl-dynamic-variants.md](adding-new-ite
 
 #### Dynamic variant: Hiding FPP in the mesh\_entity
 
-To hide components in the [#mesh-component-entity-simple-entity](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity "mention"), add suffixes to their names. You can add `&camera=tpp` to a component's name, or you can duplicate it and have two for different meshes (check [#problem-3-partial-hiding-justdraculathings](first-person-perspective-fixes.md#problem-3-partial-hiding-justdraculathings "mention") for details).
+To hide components in the [#mesh-component-entity-simple-entity](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity "mention"), add suffixes to their names. You can add `&camera=tpp` to a component's name, or you can duplicate it and have two for different meshes (check [#problem-3-partial-hiding-justdraculathings](first-person-perspective-fixes.md#problem-3-partial-hiding-justdraculathings "mention") for details).
 
 <figure><img src="../../../.gitbook/assets/fixiing_fpp_dynamic_mesh_entity.png" alt=""><figcaption></figcaption></figure>
 

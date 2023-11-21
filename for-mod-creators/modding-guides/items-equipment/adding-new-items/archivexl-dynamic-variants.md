@@ -179,7 +179,7 @@ This is where you **enable** the feature by adding the following tag to the `vis
 <figure><img src="../../../../.gitbook/assets/dynamic_variants_enable_feature.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-For dynamic appearances, your `root_entity` file will contain **one entry**. Each item should have [its own root entity](../../../files-and-what-they-do/entity-.ent-files.md#root-entity).
+For dynamic appearances, your `root_entity` file will contain **one entry**. Each item should have [its own root entity](../../../files-and-what-they-do/entity-.ent-files/#root-entity).
 {% endhint %}
 
 The appearance name in the root entity corresponds to the `appearanceName` property in the `.yaml` without the variant:

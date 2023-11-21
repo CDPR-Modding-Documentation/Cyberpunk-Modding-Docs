@@ -10,7 +10,7 @@ If you want to modify an .app file to change an NPC's appearance, check [here](.
 
 ## Appearances
 
-The real meat of the file: a list of appearance definitions, loaded via [root entity](entity-.ent-files.md#root-entity).&#x20;
+The real meat of the file: a list of appearance definitions, loaded via [root entity](entity-.ent-files/#root-entity).&#x20;
 
 ### appearanceResource
 
@@ -19,9 +19,9 @@ The real meat of the file: a list of appearance definitions, loaded via [root en
 
 ### appearanceDefinition
 
-A list of appearance definitions to be called from a [`root entity`](entity-.ent-files.md#root-entity)  file. The definitions are independent from each other (unless parentAppearance is used? Confirmation needed) and load meshes and effects via components.
+A list of appearance definitions to be called from a [`root entity`](entity-.ent-files/#root-entity)  file. The definitions are independent from each other (unless parentAppearance is used? Confirmation needed) and load meshes and effects via components.
 
-* `name`: the appearance's name that is listed in [its .ent file](entity-.ent-files.md#root-entity)
+* `name`: the appearance's name that is listed in [its .ent file](entity-.ent-files/#root-entity)
 * `parentAppearance`: the appearance this one inherits information from
 * `proxyMesh`: the .mesh file loaded for rendering the vehicle at a distance (confirmation needed)
 * `resolvedDependencies`: pre-loaded resources. You will usually want to delete these if you're adding items from scratch.
@@ -33,7 +33,7 @@ A list of components that are part of your current appearance. There are various
 
 
 {% hint style="info" %}
-Components that you add in the [`root entity`](entity-.ent-files.md#root-entity) will be shared among all appearances in the .app.&#x20;
+Components that you add in the [`root entity`](entity-.ent-files/#root-entity) will be shared among all appearances in the .app.&#x20;
 {% endhint %}
 
 #### partsValues
@@ -42,13 +42,13 @@ Components that you add in the [`root entity`](entity-.ent-files.md#root-entity)
 This only works for player equipment and weapons (April 2023)
 {% endhint %}
 
-Allows you to add one or more [component entities](entity-.ent-files.md#mesh-component-entity-simple-entity) into your appearance. They will be treated as if the components were part of the appearance's `components` array.
+Allows you to add one or more [component entities](entity-.ent-files/#mesh-component-entity-simple-entity) into your appearance. They will be treated as if the components were part of the appearance's `components` array.
 
 <figure><img src="../../.gitbook/assets/partsvalues.png" alt=""><figcaption></figcaption></figure>
 
 #### partsOverrides
 
-Overrides component definitions via name. They can be defined in the appearance's own components array or loaded via [component entity](entity-.ent-files.md#mesh-component-entity-simple-entity).&#x20;
+Overrides component definitions via name. They can be defined in the appearance's own components array or loaded via [component entity](entity-.ent-files/#mesh-component-entity-simple-entity).&#x20;
 
 For usage instructions, see [here](../modding-guides/items-equipment/influencing-other-items.md#partsoverrides).&#x20;
 

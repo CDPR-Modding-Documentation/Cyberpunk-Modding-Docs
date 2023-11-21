@@ -24,7 +24,7 @@ player:
   bodyTypes: [ NewBody ]  # this will be converted to snake case: new_body
 ```
 
-3. Add a visual tag with the same name to your [`root_entity`](../../files-and-what-they-do/entity-.ent-files.md#root-entity) or every `appearanceDefinition` in the [`.app` file](../../files-and-what-they-do/appearance-.app-files.md#appearancedefinition)
+3. Add a visual tag with the same name to your [`root_entity`](../../files-and-what-they-do/entity-.ent-files/#root-entity) or every `appearanceDefinition` in the [`.app` file](../../files-and-what-they-do/appearance-.app-files.md#appearancedefinition)
 4. After packing your project, [check if the body tag registers](archivexl-body-mods-and-refits.md#checking-the-current-body-mod) by running the CET command. If yes, you're good to go!
 
 ## Clothing mods: Making use of the tags
@@ -54,7 +54,7 @@ If you're sticking to the classical approach, you need to add the following line
     - !append itemsFactoryAppearanceSuffix.BodyType
 ```
 
-Now, you can use the suffixes in your [root entity](../../files-and-what-they-do/entity-.ent-files.md#root-entity) just like camera states or body genders:
+Now, you can use the suffixes in your [root entity](../../files-and-what-they-do/entity-.ent-files/#root-entity) just like camera states or body genders:
 
 ```
 appearanceName: my_custom_shirt&FPP&NewBody

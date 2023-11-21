@@ -11,8 +11,8 @@ description: How to create custom props to use with AMM or sector editing
 
 This guide will teach you how to create AMM props in two variants:&#x20;
 
-* the "vanilla" way by using a [mesh entity](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity) with a [.mesh](../../files-and-what-they-do/3d-objects-.mesh-files.md) file with only one appearance
-* customizable by chaining a [`root entity`](../../files-and-what-they-do/entity-.ent-files.md#root-entity), an [`.app`](../../files-and-what-they-do/appearance-.app-files.md), and a [`.mesh`](../../files-and-what-they-do/3d-objects-.mesh-files.md) file with multiple appearances.&#x20;
+* the "vanilla" way by using a [mesh entity](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) with a [.mesh](../../files-and-what-they-do/3d-objects-.mesh-files.md) file with only one appearance
+* customizable by chaining a [`root entity`](../../files-and-what-they-do/entity-.ent-files/#root-entity), an [`.app`](../../files-and-what-they-do/appearance-.app-files.md), and a [`.mesh`](../../files-and-what-they-do/3d-objects-.mesh-files.md) file with multiple appearances.&#x20;
 
 {% hint style="info" %}
 For a guide on how to make meshes out of 2d textures, see [here](your-image-as-custom-mesh.md).
@@ -114,7 +114,7 @@ When you edit the .lua, it's usually enough to `reload all mods` in CET.&#x20;
 
 Defined in your `LUA` file, this file holds the game entity that AMM spawns when you click the button. There are two ways of using entity files:&#x20;
 
-[**Mesh entity**](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity) **(the legacy version)**
+[**Mesh entity**](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) **(the legacy version)**
 
 One entity file per variant. The props will not have appearances — AMM's prop browser has one entry per entity file (e.g. `cube_black`, `cube_white`, `cube_glowing`).&#x20;
 
@@ -131,9 +131,9 @@ It was bad!
 
 You add props by putting meshes directly into the components array:&#x20;
 
-<figure><img src="../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>tutorial\amm_props\template_no_variants\template_no_variants.ent<br>Mesh/Component entity, loading something directly. You can read more about the theory <a href="../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>tutorial\amm_props\template_no_variants\template_no_variants.ent<br>Mesh/Component entity, loading something directly. You can read more about the theory <a href="../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
-[**Root entity**](../../files-and-what-they-do/entity-.ent-files.md#root-entity)
+[**Root entity**](../../files-and-what-they-do/entity-.ent-files/#root-entity)
 
 One entity file per prop, one entry in AMM's prop browser (e.g. `cube`). After spawning it, you can toggle its appearances (`white`, `black`, `glowing`) the same way you do it with NPCs.
 
@@ -147,9 +147,9 @@ Edit this kind of prop by opening the following file in Wolvenkit:
 tutorial\amm_props\template\template.ent
 ```
 
-Instead of adding items directly via the components array, we link **appearances** to an [.app file](../../files-and-what-they-do/appearance-.app-files.md). The only component we keep in the [root entity](../../files-and-what-they-do/entity-.ent-files.md#root-entity) is the **targeting component** for the CET cursor: this way, it will be added to each appearance in the .app file.
+Instead of adding items directly via the components array, we link **appearances** to an [.app file](../../files-and-what-they-do/appearance-.app-files.md). The only component we keep in the [root entity](../../files-and-what-they-do/entity-.ent-files/#root-entity) is the **targeting component** for the CET cursor: this way, it will be added to each appearance in the .app file.
 
-<figure><img src="../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>tutorial\amm_props\template\template.ent<br>Root entity, pointing towards an .app file. You can read more about the theory <a href="../../files-and-what-they-do/entity-.ent-files.md#root-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>tutorial\amm_props\template\template.ent<br>Root entity, pointing towards an .app file. You can read more about the theory <a href="../../files-and-what-they-do/entity-.ent-files/#root-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
 #### Appearance file
 
@@ -223,7 +223,7 @@ You can point the file at a different mesh by changing the depot path of the com
 
 ### Without variants
 
-1. Open the  [`mesh entity`](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity) `tutorial\amm_props\template_no_variants\template_no_variants.ent`
+1. Open the  [`mesh entity`](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) `tutorial\amm_props\template_no_variants\template_no_variants.ent`
 2. Find the `components` array and open it
 3. Click on the first component `amm_prop_slot1`.  In the panel to the right of the tree, change the following properties:
    * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)

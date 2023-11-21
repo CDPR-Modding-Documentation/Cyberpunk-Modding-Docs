@@ -16,7 +16,7 @@ If you don't care for the theory, skip directly to [#how-do-i-start-using-tags-f
 
 Filtering will only consider an item's name, but not its visual appearance:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Tags visualization with badges, the one selected in the datas will be like <strong>base,man,massive,head</strong></p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_tags_guide_1" alt=""><figcaption><p>Tags visualization with badges, the one selected in the datas will be like <strong>base,man,massive,head</strong></p></figcaption></figure>
 
 Tags are displayed to the right, but are written text-like in the Database. Every keyword is divided from the other with a <mark style="color:yellow;">**space**</mark>. As the caption says, the selected line tags is written like : **base man massive head**
 
@@ -33,19 +33,19 @@ The most important rule is that every model starts with :&#x20;
 
 In the **Models Library** panel, click on the <mark style="color:yellow;">tags filter</mark> button in the header of the table
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Collapsible interface of the tags filter</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_tags_guide_2" alt=""><figcaption><p>Collapsible interface of the tags filter</p></figcaption></figure>
 
 #### Example
 
 Let's say we wanna search only in the models of the **Phantom Liberty** expansion for <mark style="color:yellow;">**man**</mark> models.\
 We will add a first condition specifying in the options that our tags _Starts with_ the word `PL`
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>filtering Phantom Liberty only models</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_tags_guide_3" alt=""><figcaption><p>filtering Phantom Liberty only models</p></figcaption></figure>
 
 Then we can click on **Add Condition** and specify that the tags need to _Contains_ the word  `man` with a <mark style="color:yellow;">**space**</mark>** before** the word `man`\
 The space is NEEDED since the also the keyword <mark style="color:yellow;">**woman**</mark> contain the word <mark style="color:yellow;">**man**</mark>
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>The search will look like this</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_tags_guide_4" alt=""><figcaption><p>The search will look like this</p></figcaption></figure>
 
 You will see that for every condition you add, the datas will be filtered in realtime.\
 You can remove and add tags filtering condition as you like.\
@@ -91,10 +91,10 @@ Details about the keyworks:
 
 ### A more complex example
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>We're searching models in vanilla cyberpunk for fat man that are related to the legs</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_tags_guide_5" alt=""><figcaption><p>We're searching models in vanilla cyberpunk for fat man that are related to the legs</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>As you can see we got 9 models out of 44.300 for our search</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_tags_guide_6" alt=""><figcaption><p>As you can see we got 9 models out of 44.300 for our search</p></figcaption></figure>
 
 Tag filtering ca be combined with the default path search to display only legs models related in this case to <mark style="color:yellow;">**jeans**</mark>
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_tags_guide_7" alt=""><figcaption></figcaption></figure>

@@ -39,7 +39,7 @@ List has been confirmed working before 1.6, but might need updating (especially 
 
 ## Hair .ent files
 
-Hairs and all their components are assigned and defined via [.ent files](../../files-and-what-they-do/entity-.ent-files.md#mesh-component-entity-simple-entity). You can find them here:
+Hairs and all their components are assigned and defined via [.ent files](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity). You can find them here:
 
 ```
 base\characters\head\player_base_heads\appearances\entity\hairs 

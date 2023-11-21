@@ -12,7 +12,7 @@ Without it, the game has no way to tell male and female items apart.
 ```
 
 {% hint style="info" %}
-If you want to know more about this, you can read up here: [#what-are-suffixes](../../../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes "mention")
+If you want to know more about this, you can read up here: [#what-are-suffixes](../../../files-and-what-they-do/entity-.ent-files/#what-are-suffixes "mention")
 
 If you don't have a gendered item yet, see the original ArchiveXL guide, section "[adding a male instance](../../items-equipment/adding-new-items/#adding-a-male-instance)".
 {% endhint %}

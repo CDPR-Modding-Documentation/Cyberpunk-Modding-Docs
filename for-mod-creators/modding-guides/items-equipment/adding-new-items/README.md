@@ -304,7 +304,7 @@ Items.my_custom_shirt_redwhite:
 ```
 
 {% hint style="info" %}
-If you are unclear about why this step was taken, we recommend [reading up on suffixes](../../../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes)!
+If you are unclear about why this step was taken, we recommend [reading up on suffixes](../../../files-and-what-they-do/entity-.ent-files/#what-are-suffixes)!
 {% endhint %}
 
 ### Edit the rootentity.ent
@@ -409,7 +409,7 @@ Check the following places:
 * `rootentity.ent:`
   * Do you have an appearance with the `name` matching your item's `appearanceName` in the yaml?&#x20;
     * Without leading or trailing spaces?
-  * Are you using any [**suffixes**](../../../files-and-what-they-do/entity-.ent-files.md#what-are-suffixes)? Are you using the correct ones?&#x20;
+  * Are you using any [**suffixes**](../../../files-and-what-they-do/entity-.ent-files/#what-are-suffixes)? Are you using the correct ones?&#x20;
     * Try setting an empty suffix array in the .yaml, just to see if that works: \
       `appearanceSuffixes: [  ]`
     * Try creating a fall-back entry without any suffixes in the `root_entity`.

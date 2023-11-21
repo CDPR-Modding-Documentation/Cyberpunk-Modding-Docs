@@ -12,7 +12,7 @@ For the documentation on .app files (appearance definitions), see [here](../../.
 
 ### Entity Files
 
-For the documentation on .ent files, see [here](../../../files-and-what-they-do/entity-.ent-files.md).&#x20;
+For the documentation on .ent files, see [here](../../../files-and-what-they-do/entity-.ent-files/).&#x20;
 
 An example entry for a vehicle entEntityTemplate from a vehicle's .ent file looks like this:&#x20;
 
