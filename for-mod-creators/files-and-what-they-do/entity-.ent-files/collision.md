@@ -12,3 +12,4 @@ Colliders are added via .phys files. For cars, those get added by the chassis co
 
 <figure><img src="../../../.gitbook/assets/collision_component" alt=""><figcaption></figcaption></figure>
 
+For more information on car collision, see [interaction-collider-.phys-files.md](../../modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/interaction-collider-.phys-files.md "mention")
