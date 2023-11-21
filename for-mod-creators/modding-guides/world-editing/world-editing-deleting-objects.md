@@ -11,7 +11,7 @@ description: How to remove items from the world with ArchiveXL
 
 This guide will show you how to remove items from the world via ArchiveXL.
 
-Difficulty: You know how to read. Everything else&#x20;
+Difficulty: You know how to read. Everything else will hopefully become clear !
 
 #### Requirements
 
@@ -31,6 +31,14 @@ This guide will feature the **manual process**, which can get tedious if you wan
 * Generating the .xl file via Blender (see [#blender-and-archivexl](world-editing-deleting-objects.md#blender-and-archivexl "mention")
 
 Although you can also work directly in your `archive/pc/mod` directory, you should [create a Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can easily pack your mod for Nexus deployment.
+
+## Video guide
+
+Visual learners, celebrate: OUiJIXOU made a video guide for this!&#x20;
+
+But don't worry, if videos are not for you, neither are they for me. You can just scroll on and find the text guide!
+
+{% embed url="https://www.youtube.com/watch?v=M-plF8qnB-U" %}
 
 1. Find the node information in the **Inspect** tab of RedHotTools (see [places.md](../../references-lists-and-overviews/reference-world-sectors/places.md "mention")for a detailed guide)
 2. Create an `.xl` file in your Wolvenkit Project's  `resources` folder and name it after your world deletion (e.g. `delete_pacifica_fast_travel_terminal.xl`). &#x20;
