@@ -14,47 +14,49 @@ This page will explain to you what Load Order is and how it works, then tell you
 ## TL;DR
 
 You're not supposed to manage load order conflicts outside of `.archive` mods and REDmods. If you ever feel the need to do that, a modder fucked up.
+An exception to this are **Tweak mods**, as the tweakDB is also a database of static values, conflicts can happen (e.g. two mods both edit the weapon stats of the Masamune).
 
 * For REDmods, see [#conflicts-and-load-order](redmod/usage.md#conflicts-and-load-order "mention")
 * For .archive mods, use Fuzzo's **Archive Conflict Checker Tool** ([Nexus link](https://www.nexusmods.com/cyberpunk2077/mods/11126)).
+* There currently is no tool to check tweak conflicts
 
 ## What is Load Order?
 
 Unless two mods are changing the same file, you don't need to bother about this at all. Unfortunately, the moment you're using frameworks or anything body modding related, you _will_ run into this scenario.&#x20;
 
-In Cyberpunk, whatever `.archive` modifies a file **first** will win – unlike e.g. Skyrim, where mods overwrite each other.
+In Cyberpunk, conflicts inside `.archive` mods are one per-file basis, whatever mod modifies a file **first** will win – unlike e.g. Skyrim, where esps may overwrite each other.
 
 #### Example
 
-There are two mods who change boob size
+There are two mods that change boob size (and both mods modify the same file, e.g. a rig or mesh):
 
 ```
 i_know_nothing_about_back_problems.archive
 realistic_boobs_DDDDDDDDD_cup.archive
 ```
 
-Since **i\_know\_nothing\_about\_back\_problems** will load first, **realistic\_boobs\_DDDDDDDDD\_cup** does nothing.
+Since **i\_know\_nothing\_about\_back\_problems** will load first, the conflicting file inside **realistic\_boobs\_DDDDDDDDD\_cup** does nothing.
 
 ## How are mods ordered?
 
-The game loads mods in the following order
+The game loads mods in the following order (higher wins):
 
 ### 1. Legacy mods
 
-Anything in `Cyberpunk 2077/archive/pc/mod`
+All .archive files in `Cyberpunk 2077/archive/pc/mod` in alphabetical order (see below).
 
-If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file. The file may contain archive names, one mod archive name in each line. Example:
+> Note: If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file. The file may contain archive names, one mod archive name in each line. Example:
 
 ```
 modb.archive
 moda.archive
 ```
 
-This means the game will load `modb` before `moda`, even though the filenames have not changed.
+This means the game will load `modb` before `moda`, even though the filenames are not in alphabetical order. This allows for conflict management without renaming the physical files.
 
 ### 2. REDmods
 
-Anything in `Cyberpunk 2077/mods`. All REDmod archives are loaded strictly after all archive files found inside `/archive/pc/mod`.&#x20;
+Anything in `Cyberpunk 2077/mods`. All REDmod archives are loaded strictly after all archive files found inside `/archive/pc/mod`.
 
 ### Load order: ASCII sort
 
