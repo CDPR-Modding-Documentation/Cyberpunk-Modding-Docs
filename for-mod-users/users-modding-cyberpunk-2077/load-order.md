@@ -43,9 +43,18 @@ The game loads mods in the following order
 
 Anything in `Cyberpunk 2077/archive/pc/mod`
 
+If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file. The file may contain archive names, one mod archive name in each line. Example:
+
+```
+modb.archive
+moda.archive
+```
+
+This means the game will load `modb` before `moda`, even though the filenames have not changed.
+
 ### 2. REDmods
 
-Anything in `Cyberpunk 2077/mods`
+Anything in `Cyberpunk 2077/mods`. All REDmod archives are loaded strictly after all archive files found inside `/archive/pc/mod`.&#x20;
 
 ### Load order: ASCII sort
 
