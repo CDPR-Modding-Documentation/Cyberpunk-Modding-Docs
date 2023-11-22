@@ -14,6 +14,7 @@
       * [Deploy](for-mod-creators/core-mods-explained/redmod/commands/deploy.md)
     * [Change logs](for-mod-creators/core-mods-explained/redmod/change-logs.md)
   * [Modding on Linux](for-mod-users/users-modding-cyberpunk-2077/modding-on-linux.md)
+  * [Load Order](for-mod-users/users-modding-cyberpunk-2077/load-order.md)
 * [🆘 Troubleshooting](for-mod-users/user-guide-troubleshooting/README.md)
   * [Users: Troubleshooting after a game update](for-mod-users/user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md)
   * [Users: troubleshooting requirements](for-mod-users/users-modding-cyberpunk-2077/requirements-explained.md)
