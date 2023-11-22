@@ -4,6 +4,10 @@ description: Dump of the quest id info and names
 
 # Reference: Quest Ids
 
+The list below has the quests by type, with name, for the full journal data that should help identify quests by name, objectives, descriptions download the json below.
+
+{% file src="../../.gitbook/assets/journal-quest-data (1).json" %}
+
 ### Main Quests
 
 \[MainQuest] ep1/quests/main\_quest/q300\_phantom\_liberty = Phantom Liberty \
