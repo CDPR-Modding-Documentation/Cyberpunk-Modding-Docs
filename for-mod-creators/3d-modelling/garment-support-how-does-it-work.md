@@ -10,6 +10,8 @@ If garment supports are causing trouble for you, you have two options:\
 [#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh](troubleshooting-your-mesh-edits.md#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh "mention")
 
 To make use of garment support, **keep the component name prefixes**. If you change the mesh, make sure to [tick the box](broken-reference).
+
+For a (slightly dated, but working) step by step guide for adding garment support, see [here](https://docs.google.com/document/d/10dXta2Vicm\_1iZeFy5U07\_PBCwxa1AhqFvVIMZnezPk/edit).
 {% endhint %}
 
 _Credit goes to psiberx (_[_discord post_](https://discord.com/channels/717692382849663036/955663052903178270/1059406562277470240) _with initial explanation of the algorithm) and IslandDancer for providing screenshots and know-how_
