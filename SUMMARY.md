@@ -81,6 +81,7 @@
     * [Cheat Sheat Vehicles: TweakDB](for-mod-creators/references-lists-and-overviews/vehicles/tweakdb.md)
   * [Reference: World Sectors](for-mod-creators/references-lists-and-overviews/reference-world-sectors/README.md)
     * [Finding Locations](for-mod-creators/references-lists-and-overviews/reference-world-sectors/places.md)
+    * [Reference: .streamingsector node types](for-mod-creators/references-lists-and-overviews/reference-world-sectors/reference-.streamingsector-node-types.md)
   * [Reference: Quest Ids](for-mod-creators/references-lists-and-overviews/reference-quest-ids.md)
   * [Character Creator <=> ent/app](https://noraleedoes.neocities.org/npv/npv\_part\_picker)
   * [Scripting](for-mod-creators/references-lists-and-overviews/scripting/README.md)
