@@ -14,7 +14,7 @@ Your mod will be one or multiple `.yaml` files under `r6/tweaks`. If you want to
 
 Courtesy of Neurolinked and psiberx. For more context, [read up on Discord](https://discord.com/channels/717692382849663036/953004282142163014/1175019512509235260).
 
-Create the following tweak file:
+Create the following tweak file (a yaml in `r6/tweaks/your_optional_subfolder`:
 
 <pre class="language-yaml"><code class="lang-yaml"><strong>Vendors.pac_wwd_melee_01:                 # your vendor's tweak ID
 </strong>  itemStock:                              # their inventory
