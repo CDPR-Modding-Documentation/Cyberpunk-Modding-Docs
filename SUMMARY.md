@@ -190,6 +190,7 @@
   * [✨ Custom icons and UI](for-mod-creators/modding-guides/custom-icons-and-ui/README.md)
     * [Inkwidgets: a custom interface](for-mod-creators/modding-guides/custom-icons-and-ui/inkwidgets-a-custom-interface.md)
     * [Your own HUD icons](for-mod-creators/modding-guides/custom-icons-and-ui/your-own-hud-icons.md)
+    * [Menu editing](for-mod-creators/modding-guides/custom-icons-and-ui/menu-editing.md)
     * [Your own preview icons](for-mod-creators/modding-guides/custom-icons-and-ui/adding-items-preview-images/README.md)
       * [Gendered preview icons](for-mod-creators/modding-guides/custom-icons-and-ui/adding-items-preview-images/gendered-preview-icons.md)
     * [Custom in-game icons](for-mod-creators/modding-guides/custom-icons-and-ui/custom-in-game-icons.md)
