@@ -43,6 +43,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
     * [when loading a save / starting a game](./#crash-on-loading-a-save)
     * [randomly during gameplay](./#crash-during-the-game)
 * [Redscript Compilation Failed (Popup message)](./#redscript-compilation-failed)
+* [Your quests are broken or you get LocKey# messages](./#your-quests-are-not-working-you-get-lockey-messages)
 * [You're on Linux](../users-modding-cyberpunk-2077/modding-on-linux.md)
 * [You have trouble with your pirated game](./#you-pirated-the-game)
 * [Photomode screenshots are borked](./#photomode-screenshots-are-blank)
@@ -851,7 +852,51 @@ If none of these things has helped, reboot your computer.&#x20;
 
 Not to say that your game will work now – but if you still have an error, it's hopefully a different one. Go back to the start of the guide and let's fix that one too!
 
+## Your quests are not working / You get LocKey# messages
 
+This section tells you how to deal with&#x20;
+
+* quests that are not starting&#x20;
+* broken text messages&#x20;
+* broken journal entries
+
+### Quests not starting although you meet all prerequisites
+
+When two mods hook into the same quest to do their thing, this can break the quest.
+
+#### Known problem children:
+
+* Phone Messages Overhaul
+* Judy/Panam Romance Messages Extended
+
+{% hint style="info" %}
+These mods can not be used together. PIck either of the entries below!
+{% endhint %}
+
+If it wasn't that, check any other mod that hooks into basegame quests, such as romance mods or "quest fixes".&#x20;
+
+{% hint style="warning" %}
+You can't 'fix' a quest by changing quest facts. Setting a quest fact after you've passed the sequence where it is checked will do nothing — worst case is you will brick your save.
+{% endhint %}
+
+### Shards, text messages or journal quest just say `LocKey#`
+
+#### If you are playing in a language other than English
+
+This can be caused by mods not including translation files for your language. Check if there is a translated version, or change the game language to English.
+
+#### If you are playing in English
+
+Most likely caused by a mod conflict: two mods are trying to change the same text archive or journal entry. You can use the [Archive Conflict Checker Tool](https://www.nexusmods.com/cyberpunk2077/mods/11126) to find conflicting mods, or check the list below.
+
+#### Known problem children:
+
+* Phone Messages Overhaul (you can resolve this by setting this mod to [load first](../users-modding-cyberpunk-2077/load-order.md))&#x20;
+* Hot Fuzz
+* Biosculpted Exotics
+* Database Fixes
+
+If none of the mods have suggestions about load order, swap them around and see if it fixes the issue.
 
 ## Redscript Compilation Failed
 
