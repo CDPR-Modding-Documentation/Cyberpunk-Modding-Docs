@@ -18,14 +18,14 @@ PRC Framework was created by **eagul**, he also taught me how to do them, so I'm
 
 **Required:**&#x20;
 
-Blender 3.5
+Blender >= 3.5
 
-Wkit 8.9.1-Nightly
+Wkit >= 8.9.1-Nightly
 
 \
 
 
-**Level:** If you can read and follow instructions you should be ok.
+**Level:** If you can read and follow instructions, you should be ok.
 
 
 
@@ -45,7 +45,7 @@ I would suggest trying to create one in an existing location first, so you famil
    [https://www.nexusmods.com/cyberpunk2077/mods/8590\
    ](https://www.nexusmods.com/cyberpunk2077/mods/8590)[https://www.nexusmods.com/cyberpunk2077/mods/7179\
    ](https://www.nexusmods.com/cyberpunk2077/mods/7179)
-2. In wkit import the below to your project depending on which V you want to create the piercings for:
+2. In wkit, import the below to your project depending on which V you want to create the piercings for:
 
 <figure><img src="../../../.gitbook/assets/image25.png" alt=""><figcaption><p>Files for mV</p></figcaption></figure>
 
@@ -213,6 +213,39 @@ If you ever need to re-export your mesh again for editing you’ll have to chang
 
 Now install your mod and enjoy.
 
-<figure><img src="../../../.gitbook/assets/image26 (1).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image26 (2).jpg" alt=""><figcaption></figcaption></figure>
+
+
+
+
 
 \
+Textures are showing weirdly on my custom piercing meshes!
+----------------------------------------------------------
+
+
+
+While selecting textured piercing colout it shows weirdly, something like this:
+
+<figure><img src="../../../.gitbook/assets/custom_weird_mat.png" alt=""><figcaption><p>Wood texture doesn't cover the whole mesh.</p></figcaption></figure>
+
+
+
+This is because piercing materials have a mask designed for vanilla piercings in their .mlmask file, your custom piercing uses the same material so that you're able to use colour picker in character creator.
+
+<figure><img src="../../../.gitbook/assets/custom_weird_mat_example.png" alt=""><figcaption><p>Mask in piercing2 material .mlmask file.</p></figcaption></figure>
+
+
+
+To fix this, download modified materials from my google drive here: [http://bit.ly/MxOrcBoipiercingmat](http://bit.ly/MxOrcBoipiercingmat)
+
+Unzip them into your project to ../yourmodname/source/archive folder:
+
+<figure><img src="../../../.gitbook/assets/custom_weird_mat_fixed_wkit.png" alt=""><figcaption><p>Put files from the zip file into your archive folder.</p></figcaption></figure>
+
+
+
+Now install your mod. The textures should show properly now.
+
+<figure><img src="../../../.gitbook/assets/custom_weird_mat_fixed.png" alt=""><figcaption><p>Textures are ok now.</p></figcaption></figure>
+
