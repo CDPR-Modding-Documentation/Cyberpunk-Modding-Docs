@@ -6,6 +6,8 @@ description: How to find Cyberpunk locations in the files
 
 This page will show you **how to find** locations and sectors. If you already know them, check [world-editing](../../modding-guides/world-editing/ "mention")for guides on how to modify them.
 
+For a list of existing node types and information about them, see [reference-.streamingsector-node-types.md](reference-.streamingsector-node-types.md "mention")
+
 ## Existing lists
 
 There are several overviews of interesting locations:
