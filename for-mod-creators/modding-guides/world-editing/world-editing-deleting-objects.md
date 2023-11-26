@@ -34,11 +34,17 @@ Although you can also work directly in your `archive/pc/mod` directory, you shou
 
 ## Video guide
 
-Visual learners, celebrate: OUiJIXOU made a video guide for this!&#x20;
+Visual learners, celebrate: OUiJIXOU and Proxima Dust made video guides for this!&#x20;
 
 But don't worry, if videos are not for you, neither are they for me. You can just scroll on and find the text guide!
 
 {% embed url="https://www.youtube.com/watch?v=M-plF8qnB-U" %}
+Thanks to OUiJIXOU!
+{% endembed %}
+
+{% embed url="https://youtu.be/r2g7cR4-j0E" %}
+thanks to ProximaDust!
+{% endembed %}
 
 1. Find the node information in the **Inspect** tab of RedHotTools (see [places.md](../../references-lists-and-overviews/reference-world-sectors/places.md "mention")for a detailed guide)
 2. Create an `.xl` file in your Wolvenkit Project's  `resources` folder and name it after your world deletion (e.g. `delete_pacifica_fast_travel_terminal.xl`). &#x20;
