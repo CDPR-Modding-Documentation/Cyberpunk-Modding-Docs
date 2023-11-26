@@ -10,6 +10,8 @@ If you want to know how to find a streaming sector, see [here](../references-lis
 For a list of interesting locations, see [here](../references-lists-and-overviews/reference-world-sectors/).&#x20;
 
 For guides how to modify streaming sector files, see [here](../modding-guides/world-editing/).
+
+For a (partial) list of node types and what they are, see [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/reference-world-sectors/reference-.streamingsector-node-types).
 {% endhint %}
 
 StreamingSectors are the files that define the world in Cyberpunk, they tell the engine what goes where, and define everything from the meshes you see and how you can interact with them, to the locations of lights, sounds and fx. They call up the NPCs, they define the minimap.&#x20;
