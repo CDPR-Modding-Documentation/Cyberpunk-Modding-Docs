@@ -418,6 +418,10 @@ Adds car chases and a bunch of related features. While CP2077 needs more car cha
 
 Adds mod settings to the in-game menu – Redscript version. This needs to be updated after **every** game patch.
 
+#### [CTD Helper](https://www.nexusmods.com/cyberpunk2077/mods/5205)&#x20;
+
+Replaces the default crash logs with actual usable logs instead. This needs to be updated after **every** game patch.
+
 #### [Native Settings UI](https://www.nexusmods.com/cyberpunk2077/mods/3518)
 
 Adds mod settings to the in-game menu – CET version. The mod itself will be fine, but it's dependent on [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107) being up-to-date.
@@ -440,7 +444,7 @@ Good news: Mods are doing a far better job. \
 Bad news again: You have to find the right log file in the game directory.\
 Good news again: There's intel how (see below)
 
-jackhumbert's mod [ctdhelper](https://www.nexusmods.com/cyberpunk2077/mods/5205) will give you additional information. There is a chance that it shows you something helpful, most of the time it
+jackhumbert's mod [ctdhelper](https://www.nexusmods.com/cyberpunk2077/mods/5205) will give you additional information. There is a chance that it shows you something helpful. Make sure the ctdhelper is updated before using it, though.
 {% endhint %}
 
 If you don't want to download and run script files from the internet, you can go and [#step-1-temporarily-disable-all-your-mods](./#step-1-temporarily-disable-all-your-mods "mention") by hand. Otherwise:
