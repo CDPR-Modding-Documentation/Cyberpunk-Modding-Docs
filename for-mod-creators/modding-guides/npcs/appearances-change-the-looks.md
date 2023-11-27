@@ -15,8 +15,6 @@ If you want to create custom hair colours, check [#creating-your-own-hair-colour
 
 This guide will walk you through **editing NPC appearances** for Cyberpunk 2077.
 
-If you want to create your own custom NPC, see [here](npv-v-as-custom-npc/).
-
 **It uses the following versions:**
 
 * Cyberpunk 2077 game version >= 1.6
@@ -26,6 +24,12 @@ If you want to create your own custom NPC, see [here](npv-v-as-custom-npc/).
 {% hint style="info" %}
 Assumed skill level: You're able to read.
 {% endhint %}
+
+## Wait, this isn't what I want!
+
+* If you want to add custom NPCs to Cyberpunk 2077 with AMM, check [amm-custom-npcs](amm-custom-npcs/ "mention")
+* If you want to add AMM appearances to existing NPCs, check [amm-custom-npc-appearances.md](amm-custom-npcs/amm-custom-npc-appearances.md "mention")
+* If you want to add V as an NPC, check [npv-v-as-custom-npc](npv-v-as-custom-npc/ "mention")
 
 ## The .ent file
 

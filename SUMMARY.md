@@ -143,6 +143,8 @@
   * [🔗 Community guides](for-mod-creators/modding-guides/community-guides/README.md)
     * [external: NPVs (V as NPC) - custom NPCs](for-mod-creators/modding-guides/community-guides/external-npvs-v-as-npc-custom-npcs.md)
   * [👤 NPCs & V](for-mod-creators/modding-guides/npcs/README.md)
+    * [AMM: Custom NPCs](for-mod-creators/modding-guides/npcs/amm-custom-npcs/README.md)
+      * [AMM: Custom NPC appearances](for-mod-creators/modding-guides/npcs/amm-custom-npcs/amm-custom-npc-appearances.md)
     * [NPV - V as custom NPC](for-mod-creators/modding-guides/npcs/npv-v-as-custom-npc/README.md)
       * [NPV: Preparing the head in Blender](for-mod-creators/modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md)
       * [NPV: Creating a custom NPC](for-mod-creators/modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md)
