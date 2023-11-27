@@ -93,6 +93,19 @@ After selecting a model, you can close the library browser again. Now selecting 
 
 That's it! Happy recoloring!
 
+### Other Tools inside MLSB
+
+<figure><img src="../../../.gitbook/assets/additionalTool (1).png" alt=""><figcaption><p>List of tools inside MLSB</p></figcaption></figure>
+
+Inside MLSB there are some other tools, the most important one is the Material Composer.
+
+<figure><img src="../../../.gitbook/assets/materialComposer.png" alt=""><figcaption><p>Material Composer window</p></figcaption></figure>
+
+From this window you can import and export <mark style="color:yellow;">.Material.json</mark> files ( these files are exported by <mark style="color:red;">Wolvenkit</mark> with the <mark style="color:red;">WithMaterial</mark> option). You can edit the materials parameters, adding material or removing them from the material file.\
+Material templates found in the .Material.json file can be put in the Library and then used later for another edit of materials of a completely different mesh.\
+You can duplicate entries just changing the name of the material and putting them in the buffer again (that's what i did to have 10 different material colors that comes for the glass material of the <mark style="color:yellow;">Kendachi Monokatana</mark> mod).\
+Material Composer will also display all the material parameters that comes with the material template (materials baked by the CDPR system have their parameters hidden if they were left as default before the baking of the release).
+
 ## Configuration
 
 ### Connecting to Wolvenkit
