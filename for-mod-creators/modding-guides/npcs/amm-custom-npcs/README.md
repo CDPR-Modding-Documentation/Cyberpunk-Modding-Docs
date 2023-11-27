@@ -7,7 +7,7 @@ description: How to customize NPCs with AMM
 **Summary**
 
 **Created by @manavortex**\
-**Published Nov 13 2023**
+**Published Nov 27 2023**
 
 This guide will show you how to create fully custom NPCs for AMM.&#x20;
 
