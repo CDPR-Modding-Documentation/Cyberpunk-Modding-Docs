@@ -85,3 +85,14 @@ If you want to know more about components, check the [wiki page](../../../files-
 ## (Optional) Step 3: Hide it in First Person
 
 You can hide items most easily via [ArchiveXL tag](../../../core-mods-explained/archivexl/#camera-modes). Check the linked page for how to do that.
+
+## Setting footwear sounds
+
+If you don't want your new boots to sound as if V was barefoot, add one of the following tags to the [#root-entity](../../../files-and-what-they-do/entity-.ent-files/#root-entity "mention"):&#x20;
+
+```
+Boots
+Heels
+Sneakers
+Stilettos
+```
