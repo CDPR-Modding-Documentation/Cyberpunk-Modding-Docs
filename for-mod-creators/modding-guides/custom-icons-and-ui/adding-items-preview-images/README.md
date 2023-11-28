@@ -30,7 +30,7 @@ Okay, you do you. Here's how:
 <summary>Finding the files by hand</summary>
 
 1. search in Wolvenkit for `icons > .inkatlas`
-2. Pick one of CDPR's icon files (look inside first, you want the right format) and add it to your project
+2. Pick one of CDPR's icon files (look inside first, you want the right kind of icon — weapons have different icons than equipment) and add it to your project
 3. Right-click on the file in the asset browser and select "`find used files`"
 4. Find the `.xbm` file and add it to your project as well
 5. **Move** both of these files to your custom folder, as you don't want to overwrite game default icons
