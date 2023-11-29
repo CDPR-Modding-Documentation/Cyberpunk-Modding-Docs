@@ -74,6 +74,8 @@ The arm states represent the different cyberware. For example, since you can't h
 | Monowire            | `&Monowire`           |
 | Projectile Launcher | `&ProjectileLauncher` |
 
+If the arm states aren't working as expected, check if the table above is outdated by comparing the names with the [source code](https://github.com/psiberx/cp2077-archive-xl/blob/027aab7139689ee8d14163682ab6d506fbccea2a/src/App/Extensions/PuppetState/System.cpp#L72).
+
 #### Foot states
 
 To achieve gender equality in regard to foot states, you need to use [Toggleable Feet](https://www.nexusmods.com/cyberpunk2077/mods/7049).
@@ -85,6 +87,8 @@ To achieve gender equality in regard to foot states, you need to use [Toggleable
 | Female    | Equipped with `HighHeels` tag | `&HighHeels` |
 | Female    | Equipped with `FlatShoes` tag | `&FlatShoes` |
 | Male      | Any                           | (empty)      |
+
+If the foot states aren't working as expected, check if the table above is outdated by comparing the names with the [source code](https://github.com/psiberx/cp2077-archive-xl/blob/027aab7139689ee8d14163682ab6d506fbccea2a/src/App/Extensions/PuppetState/System.cpp#L89).
 
 ## Tags
 
@@ -155,6 +159,8 @@ Substitution will only become active if the property name starts with an asteris
 {% endhint %}
 
 Any placeholders will be replaced with the correct value for your current state — at run-time!
+
+If any of the placeholders aren't working the way you expect them, check if the table below is outdated by referring [directly to the source](https://github.com/psiberx/cp2077-archive-xl/blob/027aab7139689ee8d14163682ab6d506fbccea2a/src/App/Extensions/GarmentOverride/Dynamic.cpp#L29).
 
 | Placeholder    | Substitution                                                    |
 | -------------- | --------------------------------------------------------------- |
