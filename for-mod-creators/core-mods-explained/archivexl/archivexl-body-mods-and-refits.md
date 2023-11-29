@@ -24,7 +24,11 @@ player:
   bodyTypes: [ NewBody ]  # this will be converted to snake case: new_body
 ```
 
-3. Add a visual tag with the same name to your [`root_entity`](../../files-and-what-they-do/entity-.ent-files/#root-entity) or every `appearanceDefinition` in the [`.app` file](../../files-and-what-they-do/appearance-.app-files.md#appearancedefinition)
+3. In any of the files you modded, check your `components`.&#x20;
+   1. Does any of them have a type that's called something with `morphtargetComponent`? \
+      If yes, add a **tag** with the exact name of your body in this component's tag array (for our example, `NewBody`)
+   2. If not, then add a new component (of any type) and give it the following name: \
+      `Body:NewBody`
 4. After packing your project, [check if the body tag registers](archivexl-body-mods-and-refits.md#checking-the-current-body-mod) by running the CET command. If yes, you're good to go!
 
 ## Clothing mods: Making use of the tags
