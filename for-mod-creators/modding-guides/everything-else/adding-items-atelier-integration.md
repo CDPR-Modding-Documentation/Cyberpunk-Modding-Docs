@@ -72,13 +72,16 @@ In the downloaded file, check that `atlasResource` has forward slashes `/` inste
 
 ### Placing the atelier file
 
-Move the atelier file from your download folder to WolvenKit's `resources` folder:
+In your project's `resources` folder, create a subdirectory r6/scripts (if it doesn't exist already), and move the atelier file that you downloaded into there:
 
 ```
 resources
   - tutorial_my_custom_tshirt.archive.xl  
-  - tutorial_my_custom_tshirt.yaml         
-  - MyTutorialAtelierStore-atelier-store.reds         << new file
+  - r6
+    - tweaks
+      - tutorial_my_custom_tshirt.yaml         
+    - scripts
+      - MyTutorialAtelierStore-atelier-store.reds         << new file
 ```
 
 Now, it's time to test! Install the mod and start Cyberpunk.
