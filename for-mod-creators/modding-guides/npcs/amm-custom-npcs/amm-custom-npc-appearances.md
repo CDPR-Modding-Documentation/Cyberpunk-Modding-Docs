@@ -12,7 +12,7 @@ For that reason, it's recommended that you stick to [.](./ "mention"). This guid
 
 ## The .lua file
 
-In your project's [Resources](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources "mention") directory, create the following folder structure:
+In your project's [Resources](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources "mention") directory, create the following folder structure:
 
 ```
 - bin

@@ -28,7 +28,7 @@ For a list of rigs by path, see the [cheat sheet](references-lists-and-overviews
 
 ### Body
 
-You can find body animation sets with the following [Wolvenkit search query](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
+You can find body animation sets with the following [Wolvenkit search query](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
 
 ```
 base\animations > locomotion > .anims

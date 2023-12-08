@@ -13,7 +13,7 @@ This guide will cover a sub-case of [.](./ "mention")via ArchiveXL. Dynamic vari
 
 **It uses the following versions** (yours should be **equal** or **higher**, the most recent stable release works fine)
 
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.11.0 (you should have it [installed and onfigured](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download))
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.11.0 (you should have it [installed and onfigured](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download))
 * [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) >= 1.4.4 (the most recent version)
 * [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) >= 1.5.0 (the most recent version)
 * [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) >= 1.17.0 (the most recent version)
@@ -65,7 +65,7 @@ For that reason, _**you shouldn't skip or skim**_ unless the section tells you t
 
 This guide assumes that you have access to the prepared example project, so go and grab it.
 
-1. Create a [Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
+1. Create a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
 2. Find the [**template project**](https://www.nexusmods.com/cyberpunk2077/mods/10516) on **Nexus**.&#x20;
 3. Download it and extract the files to your project's root folder, so that the `source` directory merges with the existing one.
 
@@ -115,7 +115,7 @@ The example above will generate three item entries by **substituting** `${proper
     - { base_color: black, ribbons: blue, icon: 03 } # Items.my_custom_shirt_dynamic_black_blue
 </code></pre>
 
-If you [install and launch](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your project, you can immediately spawn them in Cyberpunk via Cyber Engine Tweaks:
+If you [install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your project, you can immediately spawn them in Cyberpunk via Cyber Engine Tweaks:
 
 ```
 Game.AddToInventory("Items.my_custom_shirt_dynamic_white_red") 

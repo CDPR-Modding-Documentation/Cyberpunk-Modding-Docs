@@ -32,7 +32,7 @@ You can check find the standard permissions on a mod's Nexus page, `Description`
 
 The links in the check list go to more detailed guides. For the exact things you have to do if you can't check the boxes, see  the previous section of the guide ->[Broken link](broken-reference "mention"),
 
-* [ ] You have [Wolvenkit installed](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download) and configured
+* [ ] You have [Wolvenkit installed](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download) and configured
 * [ ] You have [MLSetupBuilder installed](../../../modding-tools/mlsetup-builder/#installation) and [configured](./#netrunner-suit-preview)
 * [ ] You have [installed the mod](./#install-the-mod)
 
@@ -40,7 +40,7 @@ The links in the check list go to more detailed guides. For the exact things you
 
 To edit an appearance, you need to **make a mod**, and for that, you need a Wolvenkit project.&#x20;
 
-As soon as you have changed the first file, you can [install your mod](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and check if it is working.&#x20;
+As soon as you have changed the first file, you can [install your mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and check if it is working.&#x20;
 
 There are two ways you can go about the process: do either a **full repack** of my mod, or **create a compatibility archive**. This section will explain the differences, the [next one](r-and-r-your-own-wolvenkit-project.md#creating-your-wolvenkit-project) will walk you through the process of setting things up for either of those options.
 
@@ -167,7 +167,7 @@ For the general documentation on adding files to your project, see [here](../../
 <figure><img src="../../../../.gitbook/assets/wolvenkit_assetbrowser.png" alt=""><figcaption></figcaption></figure>
 
 2. Find `_ArchiveXL_Netrunner_Variants`, then click on it. It will be near the bottom of the list, together with your other mods starting with `_`
-3. You can now **browse the archive**, or use [Wolvenkit's search bar](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) (next to the big red toggle button) to find files inside the archive by searching for `archive:ArchiveXL_Netrunner`.
+3. You can now **browse the archive**, or use [Wolvenkit's search bar](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) (next to the big red toggle button) to find files inside the archive by searching for `archive:ArchiveXL_Netrunner`.
 4. Once you have found the correct items (for [recolour](r-and-r-your-own-wolvenkit-project.md#selected-files-recolour) or [refit](r-and-r-your-own-wolvenkit-project.md#selected-files-refit)), this is how you add them to the project:
 
 <figure><img src="../../../../.gitbook/assets/wolvenkit_add_files_to_folder.png" alt=""><figcaption></figcaption></figure>

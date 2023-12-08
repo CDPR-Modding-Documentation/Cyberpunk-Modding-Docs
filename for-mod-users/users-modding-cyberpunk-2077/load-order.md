@@ -6,15 +6,14 @@ description: How does load order work in Cyberpunk?
 
 ## Summary
 
-Written by [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Written by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 Published on Nov 22, 2023
 
 This page will explain to you what Load Order is and how it works, then tell you how to influence it.
 
 ## TL;DR
 
-You're not supposed to manage load order conflicts outside of `.archive` mods and REDmods. If you ever feel the need to do that, a modder fucked up.
-An exception to this are **Tweak mods**, as the tweakDB is also a database of static values, conflicts can happen (e.g. two mods both edit the weapon stats of the Masamune).
+You're not supposed to manage load order conflicts outside of `.archive` mods and REDmods. If you ever feel the need to do that, a modder fucked up. An exception to this are **Tweak mods**, as the tweakDB is also a database of static values, conflicts can happen (e.g. two mods both edit the weapon stats of the Masamune).
 
 * For REDmods, see [#conflicts-and-load-order](redmod/usage.md#conflicts-and-load-order "mention")
 * For .archive mods, use Fuzzo's **Archive Conflict Checker Tool** ([Nexus link](https://www.nexusmods.com/cyberpunk2077/mods/11126)).
@@ -22,7 +21,7 @@ An exception to this are **Tweak mods**, as the tweakDB is also a database of st
 
 ## What is Load Order?
 
-Unless two mods are changing the same file, you don't need to bother about this at all. Unfortunately, the moment you're using frameworks or anything body modding related, you _will_ run into this scenario.&#x20;
+Unless two mods are changing the same file, you don't need to bother about this at all. Unfortunately, the moment you're using frameworks or anything body modding related, you _will_ run into this scenario.
 
 In Cyberpunk, conflicts inside `.archive` mods are one per-file basis, whatever mod modifies a file **first** will win – unlike e.g. Skyrim, where esps may overwrite each other.
 
@@ -68,11 +67,11 @@ This is ASCII ordering:
 
 #### Example
 
-| Mod name       | Pos | why               |
-| -------------- | --- | ----------------- |
-| MyMod.archive  | 2   | M comes before m  |
-| myMod.archive  | 3   |                   |
-| !myMod.archive | 1   | ! comes before A  |
+| Mod name       | Pos | why              |
+| -------------- | --- | ---------------- |
+| MyMod.archive  | 2   | M comes before m |
+| myMod.archive  | 3   |                  |
+| !myMod.archive | 1   | ! comes before A |
 
 ## How to use this?
 

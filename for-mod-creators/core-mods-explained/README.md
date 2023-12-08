@@ -39,8 +39,8 @@ The first-level frameworks (CET, Redscript and Red4ext) allow access to the game
 
 ### Redscript <a href="#redscript" id="redscript"></a>
 
-{% content-ref url="http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/" %}
-[Redscript](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg\_/)
+{% content-ref url="https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/" %}
+[Redscript](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg\_/)
 {% endcontent-ref %}
 
 Redscript ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511) | [GitHub](https://github.com/jac3km4/redscript)) is an open-source programming language and toolkit, natively working with Cyberpunk 2077's **scripting runtime**. Essentially, it is extending the already-existing **Redmod scripting system** by including data from the decompiled game script blob `final.redscripts`.
@@ -56,8 +56,8 @@ Some examples for existing mod include, but are not limited to
 
 ### Cyber Engine Tweaks (CET) <a href="#cyber-engine-tweaks" id="cyber-engine-tweaks"></a>
 
-{% content-ref url="http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/" %}
-[EN (English)](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)
+{% content-ref url="https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/" %}
+[EN (English)](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)
 {% endcontent-ref %}
 
 Cyber Engine Tweaks ([Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/107)| [GitHub](https://github.com/yamashi/CyberEngineTweaks/releases)) is a first-level framework with a LUA wrapper, which will let you access anything exposed via RTTI by RedScript and Red4ext. On top of that, it lets you **bind hotkeys** for custom functions and interact with the game's Tweak database at runtime.
@@ -72,8 +72,8 @@ The perhaps most prominent example is Appearance Menu Mod ([wiki](amm.md) | [Nex
 
 ### RED4ext <a href="#red4ext" id="red4ext"></a>
 
-{% content-ref url="http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/" %}
-[RED4ext](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/)
+{% content-ref url="https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/" %}
+[RED4ext](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/)
 {% endcontent-ref %}
 
 RED4ext ([Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/2380)| [GitHub](https://github.com/WopsS/RED4ext/releases)) is Cyberpunk 2077's equivalent to Skyrim Script Extender. Aside from being required for many mods, it is a perquisite for other core dependencies such as ArchiveXL, TweakXL, and Equipment-EX.

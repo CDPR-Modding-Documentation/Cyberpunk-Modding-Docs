@@ -19,12 +19,12 @@ Some modders don't want their mods to be unbundled. Most people don't mind if yo
 For a documentation on how to use Wolvenkit CLI, see [here](../modding-guides/analysing-other-mods/legacy-analysing-other-mods-with-wolvenkit-console.md). Unless you have a very good reason to use the console, you probably don't want to.
 
 {% hint style="success" %}
-If you want to **edit** files, you need a [Wolvenkit Project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects). If you don't know how to make one, you can check [r-and-r-your-own-wolvenkit-project.md](../modding-guides/items-equipment/recolours-and-refits/r-and-r-your-own-wolvenkit-project.md "mention")
+If you want to **edit** files, you need a [Wolvenkit Project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects). If you don't know how to make one, you can check [r-and-r-your-own-wolvenkit-project.md](../modding-guides/items-equipment/recolours-and-refits/r-and-r-your-own-wolvenkit-project.md "mention")
 {% endhint %}
 
 ### Step 1: Switch to mod browser
 
-Once you have [installed the mod](../../for-mod-users/users-modding-cyberpunk-2077/) or added it to your [extra mod directory](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/settings#additional-mod-directory), you can use Wolvenkit's [Mod Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser "mention")to browse it:
+Once you have [installed the mod](../../for-mod-users/users-modding-cyberpunk-2077/) or added it to your [extra mod directory](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/settings#additional-mod-directory), you can use Wolvenkit's [Mod Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser "mention")to browse it:
 
 <figure><img src="../../.gitbook/assets/view_mods_with_wkit.png" alt=""><figcaption><p>Switch to "Mod browser"</p></figcaption></figure>
 
@@ -35,7 +35,7 @@ If you can't (because everything is scrambled), check [#troubleshooting](analysi
 ### Step 2: Find the correct files
 
 {% hint style="info" %}
-You can check [Wolvenkit Search: Finding files](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files "mention") for how to find and filter everything.
+You can check [Wolvenkit Search: Finding files](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files "mention") for how to find and filter everything.
 {% endhint %}
 
 The folders in the mod browser correspond to the names of the .archive files you have installed.&#x20;
@@ -52,7 +52,7 @@ If you want all mesh files from the [Custom T-Shirt Mod](../modding-guides/items
 archive:my_tshirt > .mesh
 ```
 
-f you want to know more, you can read up on [Wolvenkit's search](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).
+f you want to know more, you can read up on [Wolvenkit's search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).
 
 ### Step 3: Add the files to your project
 
@@ -76,4 +76,4 @@ You can try opening the `.archive` with Wolvenkit [8.9](https://github.com/Wolve
 
 #### Didn't work
 
-Some authors don't want other people to look at their files and deliberately corrupt their archives to prevent Wolvenkit from reading them. The game is a lot more robust than WKit, so these mods usually work, although side effects can't be ruled out. If none of this works, you can still look at the files and their properties in the [File Editor](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor "mention") and try to guess what's what. Other than that, you're out of luck, though.
+Some authors don't want other people to look at their files and deliberately corrupt their archives to prevent Wolvenkit from reading them. The game is a lot more robust than WKit, so these mods usually work, although side effects can't be ruled out. If none of this works, you can still look at the files and their properties in the [File Editor](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor "mention") and try to guess what's what. Other than that, you're out of luck, though.

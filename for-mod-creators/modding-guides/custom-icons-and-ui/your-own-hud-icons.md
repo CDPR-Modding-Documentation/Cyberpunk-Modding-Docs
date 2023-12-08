@@ -2,7 +2,7 @@
 
 ## Summary
 
-**Created by** [MxOrcBoi](http://127.0.0.1:5000/u/YRvTJDa38nMHXIZUnmSdbzZv4lw2 "mention")\
+**Created by** [MxOrcBoi](https://app.gitbook.com/u/YRvTJDa38nMHXIZUnmSdbzZv4lw2 "mention")\
 **Published July 15. 2023**
 
 This guide is a subsection of the [weapons](../items-equipment/adding-new-items/weapons/ "mention") ArchiveXL guide and details the process of adding a HUD icon. The same principle applies for other parts of the UI.

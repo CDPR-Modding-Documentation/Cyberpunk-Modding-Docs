@@ -19,7 +19,7 @@ Rather than blowing up Arasaka Tower or trying to become bomb, we're using [arch
 
 ### Exclusivity&#x20;
 
-In Cyberpunk modding, files can only be edited by **one mod at a time**, and that mod will be [the first to reach the file](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order). Once you have added a file to your .archive, nobody else can edit it.
+In Cyberpunk modding, files can only be edited by **one mod at a time**, and that mod will be [the first to reach the file](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order). Once you have added a file to your .archive, nobody else can edit it.
 
 ### Compatibility
 
@@ -29,7 +29,7 @@ ArchiveXL will modify sectors only if the **number of expected nodes** matches t
 
 ## So how do I actually do it?
 
-Create an `.xl` file in your [Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)'s resources folder. It has to contain the following structure:
+Create an `.xl` file in your [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)'s resources folder. It has to contain the following structure:
 
 ```yaml
 streaming:

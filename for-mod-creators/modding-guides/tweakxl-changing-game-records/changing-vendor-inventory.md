@@ -8,7 +8,7 @@ description: How to manipulate vendor inventories
 
 ## How to do this:
 
-Your mod will be one or multiple `.yaml` files under `r6/tweaks`. If you want to release your mod on Nexus, we recommend using [WolvenKit Projects](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects "mention") and creating the files under the [Resources](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#resources "mention") folder.
+Your mod will be one or multiple `.yaml` files under `r6/tweaks`. If you want to release your mod on Nexus, we recommend using [WolvenKit Projects](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects "mention") and creating the files under the [Resources](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#resources "mention") folder.
 
 ## Adding items to vendors
 

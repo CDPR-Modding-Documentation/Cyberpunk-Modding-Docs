@@ -26,7 +26,7 @@ You can check [exporting-and-importing-meshes](../../../3d-modelling/exporting-a
 
 #### Have you moved any files?&#x20;
 
-File paths are [how Wolvenkit knows](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure) which files belong together. If you have moved files, do this:
+File paths are [how Wolvenkit knows](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure) which files belong together. If you have moved files, do this:
 
 1. Export the target file again&#x20;
 2. Overwrite the exported file in your project's `raw` folder with your changes

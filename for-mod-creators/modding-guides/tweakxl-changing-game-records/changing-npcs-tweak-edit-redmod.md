@@ -4,7 +4,7 @@ description: Changing NPC's info on scan and its archetype.
 
 # Changing NPCs - Tweak edit (REDMod)
 
-**Created by** [daemon2077](http://127.0.0.1:5000/u/XREbvwu6Q0e6vAu65AnL9ntMvAD3 "mention")\
+**Created by** [daemon2077](https://app.gitbook.com/u/XREbvwu6Q0e6vAu65AnL9ntMvAD3 "mention")\
 **Published October 19 2023**\
 **Game Version 2.01**
 
@@ -162,7 +162,7 @@ Panam : aldecaldos_grunt2_sniper2_sor22_wa_elite
 
 We will take a look at some of the properties.
 
-<table><thead><tr><th width="212.33333333333331">property name</th><th>value in Panam's template</th><th>explanation</th></tr></thead><tbody><tr><td><code>fullDisplayName</code></td><td><a href="http://127.0.0.1:5000/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/lockey-browser">LocKey#34413</a></td><td>Which text is displayed in scan tab?</td></tr><tr><td>displayName</td><td><a href="http://127.0.0.1:5000/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/lockey-browser">LocKey#34412</a></td><td>Which text is displayed in dialogues and choices?</td></tr><tr><td>archetypeData</td><td><code>ArchetypeData.SniperT2</code></td><td>base template (how she fights)</td></tr></tbody></table>
+<table><thead><tr><th width="212.33333333333331">property name</th><th>value in Panam's template</th><th>explanation</th></tr></thead><tbody><tr><td><code>fullDisplayName</code></td><td><a href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/lockey-browser">LocKey#34413</a></td><td>Which text is displayed in scan tab?</td></tr><tr><td>displayName</td><td><a href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/lockey-browser">LocKey#34412</a></td><td>Which text is displayed in dialogues and choices?</td></tr><tr><td>archetypeData</td><td><code>ArchetypeData.SniperT2</code></td><td>base template (how she fights)</td></tr></tbody></table>
 
 ### Changing an NPC's faction
 

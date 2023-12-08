@@ -15,13 +15,13 @@ This guide will explain how to influence meshes by directly in the .app file, ov
 
 For even further customization options for wardrobe items, see [EquipmentEx](https://github.com/psiberx/cp2077-equipment-ex)'s readme.
 
-## PartsOverrides
+## PartsOverrides: Hiding chunks
 
 {% hint style="info" %}
-This section assumes that you're loading appearance parts via [associated .ent file](adding-new-items/#mesh\_entity.ent) rather than including them as components.
+You can not use PartsOverrides on components defined in the same .app file. Either use components from other files, or load them via [associated .ent file](adding-new-items/#mesh\_entity.ent).
 {% endhint %}
 
-In the .app file, each appearance lets you define [PartsOverrides](adding-new-items/#appearance.app), which — as the name implies — let you override the appearance of parts. An entry looks as follows:
+In the .app file, each appearance lets you define [PartsOverrides](adding-new-items/#appearance.app), which — as the name implies — let you hide chunks of previously existing components. An entry looks as follows:
 
 <figure><img src="../../../.gitbook/assets/parts_values_parts_overrides.png" alt=""><figcaption><p>Overwrite the component "<code>kimono</code>" and "<code>kimono_filler</code>", which are defined in the file "<code>kimono_meshentity.ent</code>"<br>This is the reason why Cyberpunk has all the player components stored in .ent files!</p></figcaption></figure>
 
@@ -91,9 +91,9 @@ To delete an already existing reference, set the numeric value to the right of t
 
 <figure><img src="../../../.gitbook/assets/archive_xl_remove_reference.png" alt=""><figcaption></figcaption></figure>
 
-## VisualTags
+## VisualTags: GarmentSupport
 
-These can be used **in addition** to PartsOverrides and will let you influence your item even further. You can find an array named `visualTags.tags` in both the root entity and the .app file's `appearance`s.
+These can be used **in addition** to PartsOverrides and will let you influence your item even further. To learn more about [garment-support-how-does-it-work.md](../../3d-modelling/garment-support-how-does-it-work.md "mention"), read [#the-algorithm](../../3d-modelling/garment-support-how-does-it-work.md#the-algorithm "mention").
 
 {% hint style="info" %}
 This mechanism is how e.g. your sunglasses disappear when you put on a helmet.
@@ -103,7 +103,7 @@ This mechanism is how e.g. your sunglasses disappear when you put on a helmet.
 Visual tags in the root entity will get applied to every appearance in the app.&#x20;
 
 **However:**\
-Due to technical limitations, any visual tags that **hide** parts of the mesh **must** go into the .app file to take effect.
+Due to technical limitations, any visual tags that **hide** parts of the mesh **must** go into the .app file to take effect. [File Validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will warn you about this.
 {% endhint %}
 
 
@@ -115,5 +115,9 @@ Due to technical limitations, any visual tags that **hide** parts of the mesh **
 The following tags are used by the base game; however, to make use of them, you require [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl).&#x20;
 
 {% hint style="info" %}
-With visual tags, you can force-show hair, hide an item in first person, or turn body parts on and off. Find the full list on the [archivexl](../../core-mods-explained/archivexl/ "mention") page under [#tags](../../core-mods-explained/archivexl/#tags "mention").
+With visual tags, you can force-show hair, hide an item in first person, or turn body parts on and off. Find the full list under [archivexl-tags.md](../../core-mods-explained/archivexl/archivexl-tags.md "mention")
 {% endhint %}
+
+## Custom tags: un-hiding chunks
+
+If you want to un-hide chunks rather than hiding them, you need to define a custom tag via ArchiveXL. See [#adding-custom-tags](../../core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags "mention") for details.

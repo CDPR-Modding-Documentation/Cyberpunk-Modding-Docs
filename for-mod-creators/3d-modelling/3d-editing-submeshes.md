@@ -123,7 +123,7 @@ After your mesh is edited to your satisfaction:
 2. The meshes should still be selected.
 3. Hit File → Export → Cyberpunk GLB
 4. Overwrite the .glb file that you imported, so that you can import it with Wolvenkit. \
-   _If you are considering to do something else instead:_ [_read this first_](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure)
+   _If you are considering to do something else instead:_ [_read this first_](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure)
 
 <figure><img src="../../.gitbook/assets/first_person_fixes_2.png" alt=""><figcaption></figcaption></figure>
 

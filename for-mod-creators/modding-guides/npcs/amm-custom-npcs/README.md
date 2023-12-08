@@ -33,7 +33,7 @@ We will be creating a new character, which we can spawn **in addition to** the r
 
 ## Step 0: Setting up
 
-1. Create a [Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name that you can remember
+1. Create a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name that you can remember
 2. Download the example project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/11268/)
 3. Extract the downloaded zip file into your project's root directory (the `source` folders should merge).
 4. You should now see the following files:
@@ -59,9 +59,9 @@ Alright, here's how you go about making changes:
 
 Read this section if you want to take the example project and mod a different NPC than Mamá Welles. Otherwise, you can check out [#adding-more-appearances](./#adding-more-appearances "mention") below.
 
-1. Find the NPC's `.app` or `.ent` file by using the [Wolvenkit Search](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).
-2. If you've found an `.app`, use "[find files using this](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this)" to find the correct `.ent`
-3. [Add them both to your project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects)
+1. Find the NPC's `.app` or `.ent` file by using the [Wolvenkit Search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).
+2. If you've found an `.app`, use "[find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this)" to find the correct `.ent`
+3. [Add them both to your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects)
 4. Replace the .ent and the .app in your project with the NPC's original files
 5. Adjust the .lua:&#x20;
    1. `entity_info` => `path` **must** point at your `.ent` file
@@ -78,7 +78,7 @@ Read this section if you want to take the example project and mod a different NP
 3. Optional, but recommended: Delete all appearances that you don't want, but keep one for the next step.
 4. Create a new appearance:
    1. Select an existing item
-   2. Right-click and select "[Duplicate item in Array/Buffer](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
+   2. Right-click and select "[Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
    3. In the new entry, change the following fields:
       1. `name`: must match the name that you just registered in the `.lua`
       2. `appearanceName`: must match the name that you are going to use in the .app file in step 3.3
@@ -86,7 +86,7 @@ Read this section if you want to take the example project and mod a different NP
 6. Optional, but recommended: Delete all appearances that you don't want, but keep one for the next step.
 7. Create a new appearance:
    1. Select an existing appearance
-   2. Right-click and select "[Duplicate item in Array/Buffer](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
+   2. Right-click and select "[Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
    3. Change the appearance's `name` to the value you used in step 2.3.2
 
 Now it's time to adjust the components. This guide won't go into detail about this — see [appearances-change-the-looks.md](../appearances-change-the-looks.md "mention") for more intel on the process.

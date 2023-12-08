@@ -4,7 +4,7 @@ description: Common Problems and How to Fix Them
 
 # First Person Perspective Fixes
 
-**Created by** [FronkenZeepa](http://127.0.0.1:5000/u/pj9Ccv6IrMVhmNUW9HVbn6CYZ2B2 "mention")
+**Created by** [FronkenZeepa](https://app.gitbook.com/u/pj9Ccv6IrMVhmNUW9HVbn6CYZ2B2 "mention")
 
 **Published on October 08 2023**
 
@@ -20,7 +20,7 @@ This guide assumes that you have an already working in-game item, and at least a
 * [Exporting and importing meshes](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/3d-modelling/exporting-and-importing-meshes)
 
 {% hint style="warning" %}
-To implement anything in this guide, you will need [a Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) with the mod's files. You already have that if you're fixing your own mod (hopefully). If not, check out this guide on how to [analyze other mods!](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/analysing-other-mods)
+To implement anything in this guide, you will need [a Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) with the mod's files. You already have that if you're fixing your own mod (hopefully). If not, check out this guide on how to [analyze other mods!](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/analysing-other-mods)
 {% endhint %}
 
 ### Index
@@ -32,7 +32,7 @@ To implement anything in this guide, you will need [a Wolvenkit project](http://
 {% hint style="warning" %}
 **If you are modifying someone else's mod**:
 
-If you are changing someone else's mod, the easiest thing is to [name your Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order) the same as the mod's `.archive` file and add all the files from the original mod. You can do that by switching to the [Mod Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) and [searching](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `archive:name_of_file`&#x20;
+If you are changing someone else's mod, the easiest thing is to [name your Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order) the same as the mod's `.archive` file and add all the files from the original mod. You can do that by switching to the [Mod Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) and [searching](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `archive:name_of_file`&#x20;
 
 For more information on this, read [here](recolours-and-refits/r-and-r-your-own-wolvenkit-project.md#a-full-repack).
 {% endhint %}
@@ -260,7 +260,7 @@ TODO: This needs a screenshot
 For the next step, we need to export our .mesh file and edit it. You can use any 3d editing program, but this guide will use  [Blender 3.6](https://www.blender.org/download/)  and the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention").&#x20;
 
 1. Optional, but recommended: If you don't have the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention") installed, do that now.
-2. In Wolvenkit, find the [Export Tool](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export)
+2. In Wolvenkit, find the [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export)
 3. Export your \_fpp .mesh file.
    * If the export throws an error, uncheck the Export Materials option in the settings panel (you don't need it)
 4. You now have a `.glb` file in your project's `raw` folder. You can find it like this:
@@ -270,7 +270,7 @@ For the next step, we need to export our .mesh file and edit it. You can use any
 
 Now, hit up the [3d-editing-submeshes.md](../../3d-modelling/3d-editing-submeshes.md "mention") page and edit your mesh.&#x20;
 
-When you are done, use the [Wolvenkit Import Tool](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool) to import back the .glb file.&#x20;
+When you are done, use the [Wolvenkit Import Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool) to import back the .glb file.&#x20;
 
 <figure><img src="../../../.gitbook/assets/first_person_fixes_1.png" alt=""><figcaption></figcaption></figure>
 
@@ -278,6 +278,6 @@ When you are done, use the [Wolvenkit Import Tool](http://127.0.0.1:5000/s/-MP\_
 If you stuck to the guide, you shouldn't run into any errors. If you do, check the [troubleshooting-your-mesh-edits.md](../../3d-modelling/troubleshooting-your-mesh-edits.md "mention") page, or reach out to us on [Discord](https://discord.gg/redmodding) in `#mod-dev-chat.`
 {% endhint %}
 
-5. [Install and launch](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) the project
+5. [Install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) the project
 6. ???
 7. Profit

@@ -8,7 +8,7 @@ This page will give you information on how to get a 3d object into Cyberpunk.
 
 #### Summary
 
-written by [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), published on Oct. 14 2023
+written by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), published on Oct. 14 2023
 
 ## Wait, that's not what I want!
 
@@ -28,11 +28,11 @@ Wolvenkit >= 8.11.1
 
 Blender >= 3.6 (or 4)
 
-A [Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can pack your mod
+A [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can pack your mod
 
 ## Step 0: Finding the right base mesh
 
-To bring 3d data into Cyberpunk, Wolvenkit needs a .mesh file to import into. [Read here why](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure).&#x20;
+To bring 3d data into Cyberpunk, Wolvenkit needs a .mesh file to import into. [Read here why](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure).&#x20;
 
 For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item.md](../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md "mention"), creating [custom-props.md](../modding-guides/everything-else/custom-props.md "mention") or [adding-new-items](../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
 
@@ -64,7 +64,7 @@ The default fallback mesh that people use in this case is the [Netrunner Suit](t
 
 </details>
 
-You can use the [Wolvenkit search](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) in the [Asset Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) to find meshes.
+You can use the [Wolvenkit search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) in the [Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) to find meshes.
 
 #### The right slot
 
@@ -97,18 +97,18 @@ For torso items, you can add `t1` for inner torso items (tight-fitting) or `t2` 
 
 ### Export from Wolvenkit
 
-For **where** to export a mesh, see [Tools: Import/Export UI](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
+For **where** to export a mesh, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
 
-For **how** to export a mesh, see [Import/Export: Mesh (3d Model)](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
+For **how** to export a mesh, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
 
 {% hint style="info" %}
 If your mesh won't export from Wolvenkit, try unchecking the following box(es) in the export settings (by unchecking the boxes):&#x20;
 
-* [Export Materials](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials "mention")
-* [Export Garment Support (Experimental)](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-experimental "mention")
+* [Export Materials](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials "mention")
+* [Export Garment Support (Experimental)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-experimental "mention")
 {% endhint %}
 
-Once you are done, you can find the exported glb in your project's raw folder (see [Project Explorer Tabs](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#project-explorer-tabs "mention") or[File Structure: the raw folder](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure-the-raw-folder "mention") for details).
+Once you are done, you can find the exported glb in your project's raw folder (see [Project Explorer Tabs](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#project-explorer-tabs "mention") or[File Structure: the raw folder](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure-the-raw-folder "mention") for details).
 
 ## Step 2: Importing your mesh into Blender
 
@@ -251,7 +251,7 @@ See the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite
 
 ## Step 6: Importing into Wolvenkit
 
-See the [WolvenKit](http://127.0.0.1:5000/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/ "mention") wiki about [Importing mesh files](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#importing-mesh-files "mention")
+See the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/ "mention") wiki about [Importing mesh files](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#importing-mesh-files "mention")
 
 ## Step 7: Success!
 

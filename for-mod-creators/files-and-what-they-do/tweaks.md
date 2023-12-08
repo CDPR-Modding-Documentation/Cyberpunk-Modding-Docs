@@ -19,7 +19,7 @@ To create a new gameplay item, mod developers must [add](../modding-guides/items
 To inspect the TweakDB, you have three options:
 
 * reading the .tweaks files under [`Cyberpunk 2077`](#user-content-fn-2)[^2]`\tools\redmod\tweaks` with a text editor
-* using the [Wolvenkit Tweak Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser)
+* using the [Wolvenkit Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser)
 * using the [CET TweakDB Editor](https://wiki.redmodding.org/cyber-engine-tweaks/console/usage-1) in the game.
 
 ## TweakDB entries
@@ -30,7 +30,7 @@ You can see existing entries by browsing the .tweak under `Cyberpunk 2077tools\r
 
 ### Data type: Record
 
-A record is a **collection** of key-value pairs. Its nature is defined by the property **$type**. You can browse existing records in Wolvenkit's [Tweak Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser), or use CET's Tweak Editor to look at the values in-game.
+A record is a **collection** of key-value pairs. Its nature is defined by the property **$type**. You can browse existing records in Wolvenkit's [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser), or use CET's Tweak Editor to look at the values in-game.
 
 <details>
 

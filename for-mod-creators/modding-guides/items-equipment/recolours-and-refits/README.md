@@ -17,7 +17,7 @@ This will guide you to the process of making your own custom edit of my [Netrunn
 
 #### **Assumed level of skill**:&#x20;
 
-You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on the [Redmodding Discord](https://discord.gg/redmodding) so that I can improve it.&#x20;
+You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on the [Redmodding Discord](https://discord.gg/redmodding) so that I can improve it.&#x20;
 
 {% hint style="info" %}
 The steps in this guide teach you how to recolour or refit almost every item in Cyberpunk. Keep reading!
@@ -91,8 +91,8 @@ You will also be told how to download and extract the files for the [#netrunner-
 
 If you have done both, you can skip it and proceed with [creating a Wolvenkit project](r-and-r-your-own-wolvenkit-project.md).
 
-1. [Download and install Wolvenkit](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download): You need Wolvenkit on your computer, and you need to be able to start it. Follow the steps in the linked guide until you can open the program.
-2. Follow the steps under [Configure Wolvenkit](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/eli5-getting-started/configure-modding-tools#steps) until you reach `Configure MLSetupBuilder`.
+1. [Download and install Wolvenkit](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download): You need Wolvenkit on your computer, and you need to be able to start it. Follow the steps in the linked guide until you can open the program.
+2. Follow the steps under [Configure Wolvenkit](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/eli5-getting-started/configure-modding-tools#steps) until you reach `Configure MLSetupBuilder`.
 3.  Make a decision if you want to use these features **independently of the Netrunner suit**:
 
     <figure><img src="../../../../.gitbook/assets/MLSB_UI_preview.png" alt=""><figcaption></figcaption></figure>

@@ -24,11 +24,11 @@ Prerequisites:\
 
 **Prerequisite:** you have the mesh that you want to fix already in your project. For this tutorial, we'll want Maman Brigitte's jacket: `t2_001_wa_jacket__maman_brigitte.mesh`
 
-1. Use the [Wolvenkit Search](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to find a player mesh of roughly the same size/length/cut. For this tutorial, we'll use River's coat: \
+1. Use the [Wolvenkit Search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to find a player mesh of roughly the same size/length/cut. For this tutorial, we'll use River's coat: \
    `t2_087_pwa_jacket__river_short`
    * For female body gender, search for `_pwa_`
    * For male body gender, search for `_pma_`
-2. Add it to [the Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
+2. Add it to [the Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
 3. [Export](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/3d-modelling/exporting-and-importing-meshes) both meshes
 
 ## **Step 2: Import Meshes in Blender**
@@ -100,7 +100,7 @@ Make sure that you select Object Mode while adding modifiers.\
 4. Import the player item's mesh via Import Tool
 5. Optional: copy the NPC's appearances, materials and material definitions to the player mesh
 6. Optional: rename the appearances to match those in the original player item
-7. [Install your mod](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and test it!
+7. [Install your mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and test it!
 
 Sometimes you will need to do a bit more of editing but that is not a topic for this tutorial.
 

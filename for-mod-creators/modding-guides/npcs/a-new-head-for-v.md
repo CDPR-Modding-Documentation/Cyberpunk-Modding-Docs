@@ -19,7 +19,7 @@ If you want to edit other files for V, you may be able to find their paths in [c
 
 ## Step 0: Prerequisites
 
-* You have [a Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
+* You have [a Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
 * You have downloaded [the NPV example files](https://www.nexusmods.com/cyberpunk2077/mods/8328) from Nexus, as you will need the .blend file from there
 
 ## Step 1: Preparing the files

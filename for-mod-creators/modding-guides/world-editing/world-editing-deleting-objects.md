@@ -30,7 +30,7 @@ This guide will feature the **manual process**, which can get tedious if you wan
 * Wheeze's experimental removalThing ([link on Discord](https://discord.com/channels/717692382849663036/876881920326238248/1171608466436132995))
 * Generating the .xl file via Blender (see [#blender-and-archivexl](world-editing-deleting-objects.md#blender-and-archivexl "mention")
 
-Although you can also work directly in your `archive/pc/mod` directory, you should [create a Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can easily pack your mod for Nexus deployment.
+Although you can also work directly in your `archive/pc/mod` directory, you should [create a Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can easily pack your mod for Nexus deployment.
 
 ## Video guide
 
@@ -78,7 +78,7 @@ streaming:
 
 1. Optional, but recommended: Run your XL file through [yamllint](https://www.yamllint.com/)
 2. Save the .xl file
-3. [Install your project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game.
+3. [Install your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game.
 
 If everything worked, your object should now be gone.
 
@@ -86,7 +86,7 @@ Otherwise, check the [#troubleshooting](world-editing-deleting-objects.md#troubl
 
 ### Packing your mod for Nexus
 
-If you have been a good bean and stuck to the instructions, you only need to [pack your Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#pack-mod) and can skip the rest of this section.
+If you have been a good bean and stuck to the instructions, you only need to [pack your Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#pack-mod) and can skip the rest of this section.
 
 If you have been working directly in your `archive/pc/mod` directory, do **not** right-click on your .xl file and pack it. You have to create the following folder structure and then pack the `archive` folder:
 

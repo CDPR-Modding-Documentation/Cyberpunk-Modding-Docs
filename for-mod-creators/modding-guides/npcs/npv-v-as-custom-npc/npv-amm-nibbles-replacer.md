@@ -47,7 +47,7 @@ If you're doing that, then the component you need will be near the bottom of the
 
 ## Step 1: The photo mode .app file
 
-You enable the feature by overwriting the dummy .app file for your chosen NPV. Instead of looking up the path in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125?tab=description), we're lazy and overwrite the template file, which we find in the [Mod Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) by using the following [search query](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
+You enable the feature by overwriting the dummy .app file for your chosen NPV. Instead of looking up the path in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125?tab=description), we're lazy and overwrite the template file, which we find in the [Mod Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) by using the following [search query](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
 
 ```
 base\characters\appearances > npv
@@ -59,7 +59,7 @@ If you don't find those files, your [AMM Nibbles Replacer](https://www.nexusmods
 
 <figure><img src="../../../../.gitbook/assets/npv_replacer_overwrite_app.png" alt=""><figcaption></figcaption></figure>
 
-Find the file that you want to use, and [add it to your project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
+Find the file that you want to use, and [add it to your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
 
 {% hint style="warning" %}
 If a file name shows up more than once, you already have an NPV with photo mode replacer support installed. In that case, you'll want to pick the other file — there are two for each body type.&#x20;
@@ -115,7 +115,7 @@ In theory, yes. In practice, you'd have to edit both AMM and the Nibbles Replace
 
 ## Step 5: Pack and test
 
-After you have changed the appearance names and saved the file, you can [install and launch](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your Wolvenkit project.&#x20;
+After you have changed the appearance names and saved the file, you can [install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your Wolvenkit project.&#x20;
 
 Before entering photo mode, select the correct replacer in AMM:&#x20;
 

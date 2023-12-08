@@ -6,7 +6,7 @@ description: Adding stuff to the game, for the major-leagues
 
 ## Summary
 
-Published in August 23 by [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Published in August 23 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 {% hint style="success" %}
 As suggested by psiberx, the general usage documentation for ArchiveXL will be kept in this wiki for ease of use. You can find the [readme](https://github.com/psiberx/cp2077-archive-xl) on github or check the repository's [wiki section](https://github.com/psiberx/cp2077-archive-xl/wiki).
@@ -92,55 +92,7 @@ If the foot states aren't working as expected, check if the table above is outda
 
 ## Tags
 
-Tags are a way to tell Cyberpunk that an item has certain properties and should behave in a certain way. Thanks to ArchiveXL's extended tag system, you can for example force flat feet for female V, or un-hide hair from a head item.
-
-{% hint style="warning" %}
-Please keep in mind that you need to add those to the [.app file](../../files-and-what-they-do/appearance-.app-files.md)'s **appearance definition** rather than the root or mesh entity.&#x20;
-{% endhint %}
-
-### Base game tags
-
-| Tag             | Effect                                                                      |
-| --------------- | --------------------------------------------------------------------------- |
-| `hide_H1`       | Hides an item in the `Head` slot.                                           |
-| `hide_F1`       | Hides an item in the `Eyes` slot.                                           |
-| `hide_T1`       | Hides an item in the `Chest` slot.                                          |
-| `hide_T2`       | Hides an item in the `Torso` slot.                                          |
-| `hide_L1`       | Hides an item in the `Legs` slot.                                           |
-| `hide_S1`       | Hides an item in the `Feet` slot.                                           |
-| `hide_T1part`   | Toggles the partial suffix (`&Full` →`&Part`) when applied to `Torso` item. |
-| `hide_Hair`     | Hides hair.                                                                 |
-| `hide_Genitals` | Hides genitals in uncensored mode and underware in censored mode.           |
-
-### Custom tags
-
-| Tag                 | Effect                                  |
-| ------------------- | --------------------------------------- |
-| `hide_Head`         | Hides head.                             |
-| `hide_Torso`        | Hides the whole torso.                  |
-| `hide_LowerAbdomen` | Hides lower abdomen.                    |
-| `hide_UpperAbdomen` | Hides upper abdomen.                    |
-| `hide_CollarBone`   | Hides collar bone area.                 |
-| `hide_Arms`         | Hides head.                             |
-| `hide_Thighs`       | Hides thighs.                           |
-| `hide_Calves`       | Hides calves.                           |
-| `hide_Ankles`       | Hides ankles.                           |
-| `hide_Feet`         | Hides feet.                             |
-| `hide_Legs`         | Hides the whole legs.                   |
-| `force_Hair`        | Forces visible hair for head items.     |
-| `force_FlatFeet`    | Forces flat feet for female characters. |
-
-### Hiding body parts: diagram
-
-<div>
-
-<figure><img src="../../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_mV.png" alt=""><figcaption><p>male version - image by LadyLea</p></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_fV.png" alt=""><figcaption><p>female version - image by LadyLea</p></figcaption></figure>
-
-</div>
+Tags are a way to add extra information to entities or individual appearances. They are defined on their own sub-page: [archivexl-tags.md](archivexl-tags.md "mention")
 
 ## Dynamic appearances
 

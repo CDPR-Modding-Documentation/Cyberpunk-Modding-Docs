@@ -8,7 +8,7 @@ This page is a subsection of the [Netrunning Suit guide](./). It will teach you 
 
 #### **Assumed level of skill**:&#x20;
 
-You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on [Discord](https://discord.gg/redmodding) so that I can improve it.&#x20;
+You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on [Discord](https://discord.gg/redmodding) so that I can improve it.&#x20;
 
 #### **Time to complete:**&#x20;
 
@@ -41,7 +41,7 @@ It might be easier and faster to simply export the base body.&#x20;
 2. In the Wolvenkit search bar, find the base body mesh:
    * Female body gender: `base\characters\common\player_base_bodies\player_female_average\t0_000_pwa_base__full.mesh`
    * Male body gender: `base\characters\common\player_base_bodies\player_man_average\t0_000_pma_base__full.mesh`
-   * Anything else: Check [this list ](../../../references-lists-and-overviews/cheat-sheet-body.md#player-base-body)or go hunting - here's the [Wolvenkit search documentation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files)!
+   * Anything else: Check [this list ](../../../references-lists-and-overviews/cheat-sheet-body.md#player-base-body)or go hunting - here's the [Wolvenkit search documentation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files)!
 3. Check the preview to make sure that you're grabbing the right mesh, then add it to your project by double-clicking or via context menu.
 
 ### The suit

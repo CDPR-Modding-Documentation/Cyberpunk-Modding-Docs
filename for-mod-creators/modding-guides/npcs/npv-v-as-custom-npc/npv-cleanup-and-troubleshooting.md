@@ -27,7 +27,7 @@ Read [#why-are-we-doing-this](npv-cleanup-and-troubleshooting.md#why-are-we-doin
 ## I'm getting errors in Wolvenkit!
 
 {% hint style="info" %}
-You can check the [Troubleshooting](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/troubleshooting "mention")page on the Wolvenkit wiki.
+You can check the [Troubleshooting](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/troubleshooting "mention")page on the Wolvenkit wiki.
 {% endhint %}
 
 #### It installs, but doesn't launch

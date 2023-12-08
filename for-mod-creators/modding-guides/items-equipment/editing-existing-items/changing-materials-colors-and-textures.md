@@ -116,11 +116,11 @@ We're going to edit the mlsetup file and then import it back, causing a global c
 
 We do that by editing the **MultilayerSetup**. Check the MLSetupBuilder wiki page for how to do that.
 
-1. Find the file that you want to edit in the [Asset Browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).&#x20;
+1. Find the file that you want to edit in the [Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).&#x20;
 2. Add it to your Wolvenkit project.
 3. In the project explorer under Wolvenkit's `archive` folder, right-click on am `mlsetup` file\
-   _This folder will only be visible in the "source" or "archive" tab of your_ [_project explorer_](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer)
-4. Select "[Convert to JSON](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json)"
+   _This folder will only be visible in the "source" or "archive" tab of your_ [_project explorer_](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer)
+4. Select "[Convert to JSON](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json)"
 
 ## Step 3: Editing the .mlsetup file
 
@@ -128,8 +128,8 @@ We do that by editing the **MultilayerSetup**. Check the MLSetupBuilder wiki pag
 If you don't have MLSetupBuilder installed, you need to [do that now](../../../modding-tools/mlsetup-builder/#installation). If you don't know how to use it, please check [#using-mlsb](../../../modding-tools/mlsetup-builder/#using-mlsb "mention")
 {% endhint %}
 
-1. Optional: If you don't see an `mlsetup.json` in your project, switch the [Project Explorer](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer) to `source` or `raw`.
-2. Right-click on the file and [open it in MLSetupBuilder](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#open-in-mlsetupbuilder).
+1. Optional: If you don't see an `mlsetup.json` in your project, switch the [Project Explorer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer) to `source` or `raw`.
+2. Right-click on the file and [open it in MLSetupBuilder](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#open-in-mlsetupbuilder).
 
 <details>
 
@@ -150,7 +150,7 @@ For a documentation of multilayer properties, see [here](../../../materials/mult
 3. [Draw the rest of the owl](https://knowyourmeme.com/memes/how-to-draw-an-owl) and [edit the mlsetup](../../../modding-tools/mlsetup-builder/#using-mlsb).&#x20;
 4. Export the file, overwriting the original `.mlsetup.json`
 5. Switch back to Wolvenkit
-6. Right-click on the `.mlsetup.json` and [import it from json](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json).
+6. Right-click on the `.mlsetup.json` and [import it from json](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json).
 
 {% hint style="success" %}
 This is already working. You can pack the project and see it in action!

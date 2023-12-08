@@ -53,7 +53,7 @@ It is easy to [break a mesh](./#troubleshooting-i-cant-import-my-mesh) beyond th
 
 ### glTF Binary (\*.glb)
 
-Select your mesh in Wolvenkit: [Tools: Import/Export UI](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention") and click `Export/Process Selected`, or simply use `Export/Process All.`
+Select your mesh in Wolvenkit: [Tools: Import/Export UI](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention") and click `Export/Process Selected`, or simply use `Export/Process All.`
 
 If the export fails, try unchecking the following properties in the export settings (you have to do this for each individual mesh)
 

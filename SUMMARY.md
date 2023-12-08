@@ -51,6 +51,7 @@
 * [⚒ Core Mods explained](for-mod-creators/core-mods-explained/README.md)
   * [CET (Cyber Engine Tweaks)](https://wiki.redmodding.org/cyber-engine-tweaks/)
   * [ArchiveXL](for-mod-creators/core-mods-explained/archivexl/README.md)
+    * [ArchiveXL: Tags](for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md)
     * [ArchiveXL: body mods and refits](for-mod-creators/core-mods-explained/archivexl/archivexl-body-mods-and-refits.md)
   * [TweakXL](for-mod-creators/core-mods-explained/tweakxl.md)
   * [AMM](for-mod-creators/core-mods-explained/amm.md)

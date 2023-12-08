@@ -52,10 +52,10 @@ Follow them if  you want to learn more, or if you are unclear on how to complete
 
 To import your pose into Cyberpunk, you need a Wolvenkit project.&#x20;
 
-1. [Create a project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#creating-a-new-wolvenkit-mod-project). Give it a name that you can identify later.
+1. [Create a project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#creating-a-new-wolvenkit-mod-project). Give it a name that you can identify later.
 2. Now, your project needs the photo mode .anims file appropriate for your pose(s). The table below shows your options.\
    \
-   [Search](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for the correct photo mode file and add it to your project:
+   [Search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for the correct photo mode file and add it to your project:
 
 | body gender | file                                                           |
 | ----------- | -------------------------------------------------------------- |
@@ -64,7 +64,7 @@ To import your pose into Cyberpunk, you need a Wolvenkit project.&#x20;
 
 <figure><img src="../../../.gitbook/assets/add anims file to project.png" alt=""><figcaption><p>This is what adding your .anims to your project may look like</p></figcaption></figure>
 
-3. Export the file(s) to GLB via [Export Tool](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-location-tools). Default settings are fine.\
+3. Export the file(s) to GLB via [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-location-tools). Default settings are fine.\
    \
    (We will **overwrite** these glb(s) with our new pose, then use Wolvenkit to merge them into the existing .anims file.)
 
@@ -189,7 +189,7 @@ Now it's time to import the file back into Wolvenkit.
 
 ## Step 3: Importing and testing
 
-1. Switch back to Wolvenkit and open the [Import Tool](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-location-tools).
+1. Switch back to Wolvenkit and open the [Import Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-location-tools).
 2. Click on `photomode__female__idle.glb` to select it and open the import settings panel.
 3. In the panel on the right, change `Target File Format` to Anims:
 

@@ -137,7 +137,7 @@ You can assign one material per submesh. To split off a part of the mesh,&#x20;
 
 Time to pull up Wolvenkit.
 
-Assuming you have Wolvenkit [installed](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download), you can now [create a new project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#creating-a-new-wolvenkit-mod-project). Let's find ourselves an in-game neon sign to replace by searching in the Asset Browser for `neon > .mesh` and scrolling through the entries until we find one that we like.
+Assuming you have Wolvenkit [installed](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download), you can now [create a new project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#creating-a-new-wolvenkit-mod-project). Let's find ourselves an in-game neon sign to replace by searching in the Asset Browser for `neon > .mesh` and scrolling through the entries until we find one that we like.
 
 {% hint style="info" %}
 You can obviously use any kind of mesh or material here!

@@ -34,7 +34,7 @@ Its focus is on the **file structure** and the **relations between the files**. 
 This section will tell you how to get the files, then give you an [explanation](custom-props.md#explanation-what-did-you-just-download) of what they do and finally show you a [diagram](custom-props.md#diagram) on how they hang together.
 
 {% hint style="success" %}
-At any part during the process, you can [install the mod](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game to spawn the props with AMM. In the decor tab, search for
+At any part during the process, you can [install the mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game to spawn the props with AMM. In the decor tab, search for
 
 `Tutorial item`\
 `Tutorial item (customizable)`
@@ -272,7 +272,7 @@ Good: `baseball`\
 Bad:  `Baseball`
 {% endhint %}
 
-4. Back in Wolvenkit, right-click on your folder and [export the entire thing to json](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json).
+4. Back in Wolvenkit, right-click on your folder and [export the entire thing to json](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json).
 5. Switch to the `raw` tab in Wolvenkit and open your json files in Notepad++
 6.  Via `Search and Replace in Files` (Ctrl+Shift+F), replace `template` with the name of your new prop and folder (e.g. `baseball`). Replace it in all files, **using Match case**:
 
@@ -281,7 +281,7 @@ Bad:  `Baseball`
 8. In the project browser's raw section, right-click on the folder and select `Convert from json`. This will have updated the relationships between the files to your renamed files.
 9. Delete the files / appearances that you don't need. Save and close the mesh file.
 10. Import your meshes and textures over the ones from the template. For a guide on how to do that, check [here](textured-items-and-cyberpunk-materials.md#importing-a-mesh).&#x20;
-11. To make sure that everything went okay, open your new root entity (`tutorial\\amm_props\\baseball\\baseball.ent`) in Wolvenkit and save it to trigger [file validation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). Check the Wolvenkit log window for errors. If you made no mistakes in the renaming process, there shouldn't be any.
+11. To make sure that everything went okay, open your new root entity (`tutorial\\amm_props\\baseball\\baseball.ent`) in Wolvenkit and save it to trigger [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). Check the Wolvenkit log window for errors. If you made no mistakes in the renaming process, there shouldn't be any.
 12. To register the prop with AMM, add another entry to the props array in your `LUA` file:
 
 ```

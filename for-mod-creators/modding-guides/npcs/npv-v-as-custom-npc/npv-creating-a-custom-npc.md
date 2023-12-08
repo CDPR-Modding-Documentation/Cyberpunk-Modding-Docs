@@ -31,7 +31,7 @@ It's not a problem if you use your own custom paths, although it is easier to [c
 {% endhint %}
 
 {% hint style="success" %}
-At any time during the tutorial, you can [**install** the Wolvenkit project](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch), launch into the game, open CET and spawn **Tutorial Man** and **Tutorial Woman** via AMM to check out your progress.
+At any time during the tutorial, you can [**install** the Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch), launch into the game, open CET and spawn **Tutorial Man** and **Tutorial Woman** via AMM to check out your progress.
 {% endhint %}
 
 ## Skipping and skimming
@@ -148,7 +148,7 @@ It looks like this:
 
 <figure><img src="../../../../.gitbook/assets/npv_app_structure..png" alt=""><figcaption><p>Before renaming </p></figcaption></figure>
 
-Whenever you save the file, the Wolvenkit console will show you the results of the [file validation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). These will point you towards mistakes in your paths.
+Whenever you save the file, the Wolvenkit console will show you the results of the [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). These will point you towards mistakes in your paths.
 
 If you get a bunch of errors that complain about "mesh not found in project files" or "no depot path set, only hash given," that's no reason to panic – those errors come from files that you deleted, but which are still linked in the `.app`. If you deleted them by accident, restore them from the template project. Otherwise, you can (and should) delete the components.
 
@@ -157,7 +157,7 @@ The next section, [#how-do-i-know-what-to-put](npv-creating-a-custom-npc.md#how-
 
 If you feel completely lost, you can read up on [how to change NPC appearances](../appearances-change-the-looks.md) – the concept is exactly the same.&#x20;
 
-Also, [File Validation](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
+Also, [File Validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
 {% endhint %}
 
 {% hint style="success" %}

@@ -7,9 +7,9 @@ description: Exporting locations to Blender
 ## Summary
 
 **Created by @Simarilius** \
-**Updated 19 March 2023 \~** [Simarilius](http://127.0.0.1:5000/u/G2MqNkfgTlQ1R3G4B5s6WefLjdy2 "mention")\
-**Updated 7 May 2023 \~** [manavortex](http://127.0.0.1:5000/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Script updated 1 June 2023 \~** [Simarilius](http://127.0.0.1:5000/u/G2MqNkfgTlQ1R3G4B5s6WefLjdy2 "mention")
+**Updated 19 March 2023 \~** [Simarilius](https://app.gitbook.com/u/G2MqNkfgTlQ1R3G4B5s6WefLjdy2 "mention")\
+**Updated 7 May 2023 \~** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Script updated 1 June 2023 \~** [Simarilius](https://app.gitbook.com/u/G2MqNkfgTlQ1R3G4B5s6WefLjdy2 "mention")
 
 The original exporter was based on some posts by **@123321** in the Discord _#mapeditor_ channel back in May, so all credit to him for working it out in the first place.
 
@@ -27,8 +27,8 @@ This guide was initially written with game version 1.6 of Cyberpunk 2077.
 
 To export a location, you need to know its files — you can either pick them from [our list](../../references-lists-and-overviews/reference-world-sectors/) or [go and find them](../../references-lists-and-overviews/reference-world-sectors/places.md) (and add them to the list, please).
 
-1. Add all sector files that you want to edit to your project by [finding them in the asset browser](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) and double-clicking them.
-2. Open the [script manager](http://127.0.0.1:5000/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/script-manager)&#x20;
+1. Add all sector files that you want to edit to your project by [finding them in the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) and double-clicking them.
+2. Open the [script manager](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/script-manager)&#x20;
 3. Open `Export_Sector.wscript` by double-clicking on the file name
    * You may get a pop-up: "Trying to open a system file. Should a local copy be created?"\
      If so, click **Yes**.
