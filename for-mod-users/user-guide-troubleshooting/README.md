@@ -85,13 +85,17 @@ If you're trying to start your game, but it never even launches, this is the rig
 * If the game crashes before you make it to the menu, see [#crash-before-menu](./#crash-before-menu "mention")
 * If the game crashes when you're trying to load a save, see [#crash-on-loading-a-save](./#crash-on-loading-a-save "mention")
 
+#### Cyberpunk has flatlined
+
+Check the section [#cyberpunk-has-flatlined](./#cyberpunk-has-flatlined "mention") below.
+
 #### Something about files or permissions
 
 If you think that your error is file-related, you can check the section "[Something something files](./#something-something-files)" or use your browser's search function (`Ctrl+F`) to search this page for your error.
 
 #### Some other error
 
-Your problem lies with either red4ext or redscript. Find the section "[Your game isn't starting](./#your-game-isnt-starting)" below and follow the steps for your error message.
+Your problem lies with either red4ext or redscript. You can find what to do under [#redscript-red4ext](./#redscript-red4ext "mention")
 
 ### Crash before menu
 
@@ -233,37 +237,41 @@ That being said, if the crashes exceed what you're willing to live with, you'll 
 
 Best of luck!
 
+## Corrupt or missing script files
+
+> Cyberpunk 2077 encountered an error caused by a corrupt or missing script file and will now be forced to close. Please verify...
+
+You have an error with [#redscript-red4ext](./#redscript-red4ext "mention"). Please see the next section.
+
 ## redscript / RED4ext
 
 <figure><img src="../../.gitbook/assets/troubleshooting_headers_redscript_red4ext.png" alt=""><figcaption></figcaption></figure>
 
-When your game doesn't even start up, either of these frameworks isn't working properly. Below, you can find a list of the most common error messages with steps to resolve them.
-
-### Corrupt or missing script files
-
-> Cyberpunk 2077 encountered an error caused by a corrupt or missing script file and will now be forced to close. Please verify...
-
-You have a problem with Red4ext.&#x20;
-
-{% hint style="warning" %}
-If you are using RED4ext >= 1.13, uninstall cybercmd if you have it — it's no longer necessary and can cause false positives.
-{% endhint %}
+When your game doesn't even start up, either of these frameworks isn't working properly.&#x20;
 
 {% hint style="info" %}
-The first step whenever you run into this error is deleting the folder `r6/cache` and verifying your game files.
+The first step whenever you run into this error is deleting the folder `r6/cache` and verifying your game files. If that doesn't help, keep reading.
 {% endhint %}
 
-If that doesn't help, it's time for more detailed troubleshooting:
+Below, you can find a list of the most common error messages with steps to resolve them.
+
+{% hint style="warning" %}
+If you are using RED4ext, uninstall cybercmd.
+{% endhint %}
+
+If you're sure that you don't have cybercmd, it's time for more detailed troubleshooting:
 
 * If you are on Linux, make sure to double-check the [launch options](../users-modding-cyberpunk-2077/modding-on-linux.md), as Steam sometimes resets these between updates
-* if you don't have red4ext/logs/red4ext.log, then RED4ext doesn't work, you have to update / fix RED4ext&#x20;
-* if you have red4ext/logs/red4ext.log, then look inside, it will tell you which mods aren't compatible with the current game patch and may be the cause of this issue&#x20;
+* Find the folder `Cyberpunk 2077/red4ext/log` and check for a file named `red4ext.log`.\
+  Does it exist?
+  * No: RED4Ext is not installed correctly. Make sure that you fix this before troubleshooting further.
+  * Yes:  look inside, it will tell you which mods aren't compatible with the current game patch and may be the cause of this issue&#x20;
 * if that doesn't help, go to [#3.-reset-redscript](./#3.-reset-redscript "mention") in the corresponding section (you will need to verify your game files).&#x20;
 
 If that doesn't solve your problem, you can&#x20;
 
-* [troubleshoot redscript directly](./#0.-make-sure-that-you-dont-have-multiple-versions-of-codeware-installed)
-* [temporarily disable all mods](./#step-1-temporarily-disable-all-your-mods) and reinstall the core frameworks
+* [troubleshoot](./#0.-make-sure-that-you-dont-have-multiple-versions-of-codeware-installed) or [reset](./#3.-reset-redscript) redscript
+* the faster variant: [temporarily disable all mods](./#step-1-temporarily-disable-all-your-mods) and reinstall the core frameworks
 
 ### Corrupted archives
 
