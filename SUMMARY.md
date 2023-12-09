@@ -111,6 +111,7 @@
   * [Textures: .xbm files](for-mod-creators/files-and-what-they-do/textures-.xbm-files.md)
   * [Re-using materials: .mi](for-mod-creators/materials/re-using-materials-.mi.md)
   * [The whole world: .streamingsector](for-mod-creators/files-and-what-they-do/the-whole-world-.streamingsector.md)
+  * [Quests: facts and files](for-mod-creators/files-and-what-they-do/quests-facts-and-files.md)
   * [TweakDB: Game database](for-mod-creators/files-and-what-they-do/tweaks.md)
 * [🌐 3d Modelling](for-mod-creators/3d-modelling/README.md)
   * [Importing and Exporting Meshes](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export#meshes)
