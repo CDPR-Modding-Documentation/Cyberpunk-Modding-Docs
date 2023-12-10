@@ -43,6 +43,10 @@ In the Blender File view, find the glb you exported from Wolvenkit. By default, 
 
 ### Exporting from Blender
 
+{% hint style="danger" %}
+You must first **select** all meshes that you want to export. The plugin will automatically add their parent armature.
+{% endhint %}
+
 Select File -> Export -> Cyberpunk GLB
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_export_mesh.png" alt=""><figcaption></figcaption></figure>
@@ -77,7 +81,12 @@ You can use Wolvenkit's [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUP
 
 ### Importing into Blender
 
-The process of importing animations into Blender is the same as it is with meshes - check the [#animations](wkit-blender-plugin-import-export.md#animations "mention") checkbox in the side panel.
+The process of importing animations into Blender is the same as it is with meshes.
+
+### Exporting from Blender
+
+1. Select your armature
+2. Follow the process for [#meshes](wkit-blender-plugin-import-export.md#meshes "mention"), but check the [#animations](wkit-blender-plugin-import-export.md#animations "mention") checkbox in the side panel.
 
 ### Importing into Wolvenkit
 

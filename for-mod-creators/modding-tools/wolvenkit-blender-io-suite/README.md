@@ -26,11 +26,21 @@ As soon as you have a **mesh** or **armature** selected, the viewport toolbar (k
 
 ### Animation Tools
 
-_To be done_
+In this panel, you can find
+
+* shortcuts for playing, renaming and deleting existing animations
+* shortcuts to add new actions and insert keyframes
+
+… all outside of Blender's animation tab.
 
 ### Collision Tools
 
-_To be done_
+The collision tools and -generator can
+
+* generate of convex colliders with the exact shape of your mesh\
+  _The number of vertices to sample should be set to match the number set in the .phys file in order to ensure successful export_
+* generate box and capsule colliders with either user specified sizing or sized automatically to match the selected mesh
+* export edited collision bodies back to .phys \*\*\*currently requires a wolvenkit converted .phys.json file
 
 ### Mesh Tools
 
@@ -51,6 +61,12 @@ Lets you change the armature target (the skeleton that'll move and deform your m
 Lets you export a hair profile. For documentation, see [#hair-profiles-.hp](wkit-blender-plugin-import-export.md#hair-profiles-.hp "mention")
 
 Check [#creating-your-own-hair-colours](../../materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") if that's what you want to do.
+
+#### UV Checker
+
+With the press of a button, you can switch out the currently active material&#x20;
+
+If the currently selected mesh is currently using the UV checker, the button will change to easily allow you to restore the original material and remove the UV checker from your meshes material slots
 
 ####
 
