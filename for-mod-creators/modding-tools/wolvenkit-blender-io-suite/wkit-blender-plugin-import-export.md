@@ -69,6 +69,22 @@ For **where** to import a mesh, see [Tools: Import/Export UI](https://app.gitboo
 
 For **how** to import a mesh, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
 
+## Animations
+
+### Export from Wolvenkit
+
+You can use Wolvenkit's [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool "mention") to export .anims to .glb. The default setting is fine.
+
+### Importing into Blender
+
+The process of importing animations into Blender is the same as it is with meshes - check the [#animations](wkit-blender-plugin-import-export.md#animations "mention") checkbox in the side panel.
+
+### Importing into Wolvenkit
+
+For **where** to import an .anim, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
+
+For **how** to import an .anim, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention") and change the [Target File Format](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#target-file-format "mention")to `Anims`.
+
 ## Entities
 
 ### Export from Wolvenkit
