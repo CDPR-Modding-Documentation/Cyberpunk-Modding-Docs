@@ -45,6 +45,10 @@ With a weapon, all that happens through **`visualTags`**.
 
 <figure><img src="../../../../../.gitbook/assets/archivexl_weapons_yaml.png" alt=""><figcaption></figcaption></figure>
 
+Native weapons often use one shared `VisualTags` to reference multiple `appearanceName` and randomize the result. If you want to use a specific native appearance present in a `VisualTags` native group, you can use `appearanceName` to specify which. E.g:\
+`visualTags: [ Neon ]`\
+`appearanceName: neon2`
+
 ### .app file: Define the visual tag
 
 **visualTags (violet)**: Must match the visualTags in your `.yaml` file. If multiple entries match, one will be chosen at random.
