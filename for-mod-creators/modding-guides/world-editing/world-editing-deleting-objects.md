@@ -7,7 +7,8 @@ description: How to remove items from the world with ArchiveXL
 ## Summary
 
 **Created by @manavortex** \
-**Published in October 2023**
+**Published in October 2023**\
+**Last (documented) update: December 2023**
 
 This guide will show you how to remove items from the world via ArchiveXL.
 
@@ -199,6 +200,34 @@ Do not pack the Wolvenkit project you used for Blender import - you don't need a
 To add the .xl file to a Wolvenkit project, simply put it into the `source/resources` folder and pack. Your mod will include only text files and be really tiny - ArchiveXL does all the heavy lifting.
 
 If your zip for Nexus contains an .archive file, you've done something wrong here!
+
+## Converting older node removals
+
+You can convert node removal scripts from ArchiveXL 1.8 format to 1.9 format by running [this Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/world\_sector\_stuff/convert\_sector\_edits\_to\_AXL\_1.9.py) on the file.
+
+You need:&#x20;
+
+* a Wolvenkit project with the sectors exported to .json
+* an .xl file
+
+Change the following lines in the script:
+
+```python
+# the wolvenkit project with your sector json files
+wolvenkit_project="F:\\CyberpunkFiles\\world_editing\\apartment_glen_cleaned_up"
+
+# the file that you want to convert
+original_file="C:\\Games\\Cyberpunk 2077\\archive\\pc\\mod\\apartment_glen_cleaned_up.archive.xl"
+
+# the file that you want to write to
+output_file="C:\\Games\\Cyberpunk 2077\\archive\\pc\\mod\\apartment_glen_cleaned_up.converted.archive.xl"
+```
+
+While you can write directly to your output file, you really should not.
+
+{% hint style="info" %}
+After running the conversion script, search your new .xl file for `INVALID_NODE` to filter out any entries that could not be resolved.
+{% endhint %}
 
 ## Troubleshooting
 
