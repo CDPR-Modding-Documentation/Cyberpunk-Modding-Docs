@@ -224,13 +224,19 @@ You can now start the game and look at your V's face to make sure that your head
 
 Yes, you absolutely can! Once you have imported them back into Wolvenkit, you can use the With Materials option and the Wolvenkit Blender Plugin to get a fully textured and shaded set.&#x20;
 
-## Step 4: Troubleshooting
+## Step 4 (optional): Troubleshooting
 
 Optimally, this process just runs with no hitches. However, during beta testing and troubleshooting, people ran into a few issues, so I'm listing them here.
 
-#### Blender import errors
+### Blender script errors
 
-If you get an error within Blender, e.g. something like `AttributeError: 'NoneType' object has no attribute 'name'`, then something is wrong with your [Blender](https://www.blender.org/download/) install or you are using the wrong version. Reminder: This has been tested with 3.5.1, but anything >= 3.4 should work.&#x20;
+You can check if Blender has run into errors by opening the **Blender console window** - from the menu, select Window -> Toggle System Console.&#x20;
+
+As of December 2023, **any** script errors have been because the person encountering them has been using the wrong [Blender](https://www.blender.org/download/) version. You can see which version is currently running either [via UI](https://blenderartists.org/t/what-blender-version-am-i-using/1327264) or by checking the path in the system console window's title:&#x20;
+
+<figure><img src="../../../../.gitbook/assets/npv_blender_version.png" alt=""><figcaption><p>This is using Blender 2.93, which is definitely not compatible.</p></figcaption></figure>
+
+The files have been tested with 3.5.1, but anything >= 3.4 should work.&#x20;
 
 #### The piercings are in the wrong position!
 
