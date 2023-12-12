@@ -1023,6 +1023,10 @@ With 1.63, screenshots have now been moved _back_ to `\Pictures\Cyberpunk 2077`
 
 That is due to [Input Loader](https://www.nexusmods.com/cyberpunk2077/mods/4575) requiring an update.
 
+## I'm not getting a metro ticket!
+
+If you have passed the start of Act 2 and you aren't getting a text with a metro ticket because of an outdated mod, there is nothing you can do. Even removing the mod won't fix it. Remove the mod, then play from an earlier save.
+
 ## \[Kerry/Judy/Panam/River] isn't talking to me!
 
 This is a new one with 2.1 — a reciprocal effect of CDPR's romance interactions with previous romance or phone message overhauls.  The bad news is that the broken state is baked into your savegame and you can't get rid of it by removing your mods. The good news is that modders are already on top of the problem, and simply **updating** should fix your issue.
@@ -1039,8 +1043,10 @@ You can try running the following command (which has solved the issue for some p
 
 Switch "judy" for the affected NPC's name. Then, save and reload.&#x20;
 
+Alternatively, you can use [this mod](https://www.nexusmods.com/cyberpunk2077/mods/4508) for Judy (which is supposed to have helped as well).
+
 {% hint style="info" %}
-If that didn't solve your problem, double-check your mod list and check the Nexus pages and -comments of everything that looks as if it interacted with romance partners or phone messages.
+If that didn't solve your problem, there is a good chance that you're stuck. You can check the Nexus pages and -comments of everything that looks as if it interacted with romance partners or phone messages, but there is a good chance that you missed the point where the interactions should trigger. Check [#im-not-getting-a-metro-ticket](./#im-not-getting-a-metro-ticket "mention") for details.
 {% endhint %}
 
 ## I have another problem that isn't on this list
