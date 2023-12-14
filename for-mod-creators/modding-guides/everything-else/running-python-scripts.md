@@ -62,19 +62,17 @@ Now it is time to run it. Keep reading!
 ## Step 2: Run the script
 
 1. Open a command window again (Hotkey: Windows+R, type `cmd`, press enter)
-2. Navigate the console to the location where you have saved your script. For your download folder, that would be:
+2. Type `python "` (`python`, space, quotation mark)
+3. Drag-and-drop the script you downloaded on the console window
+4. Type another quotation mark and hit enter
 
-```batch
-cd "%USERPROFILE%\Downloads"
-```
+<figure><img src="../../../.gitbook/assets/run_python_script.png" alt=""><figcaption></figcaption></figure>
 
-3. Run the script:
+{% hint style="info" %}
+The quotation marks will prevent error with spaces in path names. Leave them away at own risk :)
+{% endhint %}
 
-```batch
-python merge_amm_presets.py
-```
-
-That's it - the script will now run and do things.
+That's it - the script will now run and do things
 
 ## Troubleshooting
 
