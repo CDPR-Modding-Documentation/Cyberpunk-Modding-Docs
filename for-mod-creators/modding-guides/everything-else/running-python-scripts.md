@@ -48,7 +48,7 @@ The link in this guide is an example script in case you don't have one. If you d
 
 1. Go to mana's github repo and grab the [.py script to merge AMM presets](https://github.com/manavortex/cyberpunk2077/blob/master/python/merge\_amm\_presets.py): &#x20;
 
-<figure><img src="../../../.gitbook/assets/save_python_file.png" alt=""><figcaption><p>Yes, github is scary, this is scary code. Don't worry, I gotchu.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/download_from_github.png" alt=""><figcaption><p>Yes, github is scary, this is scary code. Don't worry, I gotchu.</p></figcaption></figure>
 
 2. Download the file by clicking the corresponding button. Save it somewhere where you can find it easily.
 3. Open the script with a text editor of your choice (we recommend [Notepad++](https://notepad-plus-plus.org/downloads/) under Windows)
