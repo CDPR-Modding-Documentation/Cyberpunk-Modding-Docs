@@ -88,3 +88,15 @@ good = "C:\\Games\\Cyberpunk 2077"
 ```
 
 If it's not that, you can use a [Python syntax checker](https://extendsclass.com/python-tester.html), or ask ChatGPT (I'm not kidding). Good luck!
+
+### No module named…
+
+If you are running into this error in **Blender**, it should be enough to run the program as admin.
+
+Otherwise, you are missing a **Python module**, and need to install it. You can do that by running the following code from your Windows cmd:
+
+```
+pip install <your_module_name>
+```
+
+If that does not work, google for something like `pip install module your_module_name windows`.&#x20;
