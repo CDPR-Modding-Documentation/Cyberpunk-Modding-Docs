@@ -55,7 +55,9 @@ The link in this guide is an example script in case you don't have one. If you d
 4. Check the top of the file for anything that needs to be adjusted:
    1. Ignore the lines starting with `import`
    2. Read the lines starting with `#`. They are **comments** and will tell you what to put.
-5. Once you have everything set up, it is time to run the script. Keep reading!
+5. Once you have everything set up, save the script.
+
+Now it is time to run it. Keep reading!
 
 ## Step 2: Run the script
 
