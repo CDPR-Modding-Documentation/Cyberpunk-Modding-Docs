@@ -1049,6 +1049,16 @@ Alternatively, you can use [this mod](https://www.nexusmods.com/cyberpunk2077/mo
 If that didn't solve your problem, there is a good chance that you're stuck. You can check the Nexus pages and -comments of everything that looks as if it interacted with romance partners or phone messages, but there is a good chance that you missed the point where the interactions should trigger. Check [#im-not-getting-a-metro-ticket](./#im-not-getting-a-metro-ticket "mention") for details.
 {% endhint %}
 
+## I'm naked!
+
+Here's how to fix your sudden indecent exposure.
+
+1. Go to the vanilla wardrobe in your apartment
+2. Create an outfit (anything will do)
+3. Equip the outfit
+4. Un-equip the outfit
+5. Save and reload
+
 ## I have another problem that isn't on this list
 
 Here's the catch-all solution. After this, your game _will_ work (or the problem you have is not Cyberpunk related).
