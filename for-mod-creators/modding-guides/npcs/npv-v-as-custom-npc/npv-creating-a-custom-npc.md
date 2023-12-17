@@ -100,7 +100,7 @@ return {
 It loads our [root entity](npv-creating-a-custom-npc.md#the-root-entity) from  `tutorial\npv\your_female_character\ops\your_female_character.ent`. That's the file which tells the game what to load.
 
 {% hint style="success" %}
-You can and should change this file — see the inline documentation above for what to change.
+You can and should change this file — see the inline documentation above for what to change. To do that, you can use a text editor such as [Notepad++](https://notepad-plus-plus.org/downloads/).
 {% endhint %}
 
 ## The root entity

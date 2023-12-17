@@ -9,7 +9,7 @@ description: 'Step 1: How to generate your V''s custom head mesh'
 **Created by @manavortex**\
 **Published May 13 2023**
 
-This page is a part of the [NPV guide](./). It will show you how to create your V's head in Blender.&#x20;
+This page is a part of the [NPV guide](./). It will show you how to create your V's head in Blender. If you want to load your head back into Cyberpunk, note that you aren't changing anything in the files itself — that will come in [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention"). If you want a 3d model, you probably know what you're doing; in that case, make sure to run the script and get the shape right, then go wild.
 
 ### Prerequisites
 
