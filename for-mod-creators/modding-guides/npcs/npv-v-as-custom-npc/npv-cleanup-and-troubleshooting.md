@@ -24,6 +24,18 @@ You need to **re-name the template folders**. Unless you want to make more NPVs,
 
 Read [#why-are-we-doing-this](npv-cleanup-and-troubleshooting.md#why-are-we-doing-this "mention") in the [#re-path-your-folder](npv-cleanup-and-troubleshooting.md#re-path-your-folder "mention") section: make sure to disable all other NPVs.
 
+## My NPV loads, but I'm getting a random appearance!
+
+That happens when you're loading an appearance that the game doesn't know about — the problem is between your .lua file and your root entity. The names must match exactly, and must contain not typos or leading/trailing spaces.
+
+<figure><img src="../../../../.gitbook/assets/npv_troubleshooting_lua_ent.png" alt=""><figcaption></figcaption></figure>
+
+If that was not it, double-check the `path` in your lua file and make sure that it points to the correct .ent file, and not to a backup or backup project.&#x20;
+
+{% hint style="info" %}
+This particular problem is **always** between those two files. Other mistakes will have other effects.
+{% endhint %}
+
 ## I'm getting errors in Wolvenkit!
 
 {% hint style="info" %}
