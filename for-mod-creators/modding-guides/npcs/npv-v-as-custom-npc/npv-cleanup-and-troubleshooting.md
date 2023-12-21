@@ -40,11 +40,9 @@ The error is with your `.lua` file – either it's not in the correct folder, or
 
 #### If you can select the NPV in AMM
 
-The error is between your `.lua` and your `.ent`. Most likely, the path to the .ent file is not correct.&#x20;
+If you click on the button, but nothing happens, that means that the game can't find your `.ent` file. The error is between your `.lua` and your `.ent`.&#x20;
 
-### Another NPV is showing!
-
-This is the reason for the [#re-path-your-folder](npv-cleanup-and-troubleshooting.md#re-path-your-folder "mention") section in this guide. If you want more information, read  [#why-are-we-doing-this](npv-cleanup-and-troubleshooting.md#why-are-we-doing-this "mention"). Otherwise, you can temporarily remove all other NPVs or make sure to complete the re-pathing.
+Most likely, the path to the .ent file is not correct. If it is, make sure that it has **no upper-case characters**.&#x20;
 
 ### My NPV loads, but I'm getting a random appearance!
 
@@ -57,6 +55,10 @@ If that was not it, double-check the `path` in your lua file and make sure that 
 {% hint style="info" %}
 This particular problem is **always** between those two files. Other mistakes will have other effects.
 {% endhint %}
+
+### Another NPV is showing!
+
+This is the reason for the [#re-path-your-folder](npv-cleanup-and-troubleshooting.md#re-path-your-folder "mention") section in this guide. If you want more information, read  [#why-are-we-doing-this](npv-cleanup-and-troubleshooting.md#why-are-we-doing-this "mention"). Otherwise, you can temporarily remove all other NPVs or make sure to complete the re-pathing.
 
 ### I'm getting errors in Wolvenkit!
 
