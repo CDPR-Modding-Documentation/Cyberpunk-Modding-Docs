@@ -20,11 +20,33 @@ That's why you'll have to re-path your folder. If you don't, you will ruin someo
 
 You need to **re-name the template folders**. Unless you want to make more NPVs, it will be enough to re-name `tutorial` to `your_username`. Find a full guide to the process under [moving-and-renaming-in-existing-projects.md](../../everything-else/moving-and-renaming-in-existing-projects.md "mention").
 
-## My NPV doesn't show!
+## Troubleshooting
 
-Read [#why-are-we-doing-this](npv-cleanup-and-troubleshooting.md#why-are-we-doing-this "mention") in the [#re-path-your-folder](npv-cleanup-and-troubleshooting.md#re-path-your-folder "mention") section: make sure to disable all other NPVs.
+### My NPV breaks AMM!
 
-## My NPV loads, but I'm getting a random appearance!
+That's how you know that you have syntax errors in your NPV's `.lua` file. Copy the contents of the file into a [lua validator](https://www.tutorialspoint.com/execute\_lua\_online.php), then run the code and make sure to fix all errors.&#x20;
+
+{% hint style="info" %}
+It's usually missing quotation marks or commas. The tool above will give you a line number. Compare the line with the working template and fix the differences.
+
+If you feel stuck, you can ask ChatGPT – just tell it that you're trying to fix LUA code, or it won't know the syntax.
+{% endhint %}
+
+### My NPV doesn't spawn!
+
+#### You can't select them in AMM
+
+The error is with your `.lua` file – either it's not in the correct folder, or AMM fails to load it.
+
+#### If you can select the NPV in AMM
+
+The error is between your `.lua` and your `.ent`. Most likely, the path to the .ent file is not correct.&#x20;
+
+### Another NPV is showing!
+
+This is the reason for the [#re-path-your-folder](npv-cleanup-and-troubleshooting.md#re-path-your-folder "mention") section in this guide. If you want more information, read  [#why-are-we-doing-this](npv-cleanup-and-troubleshooting.md#why-are-we-doing-this "mention"). Otherwise, you can temporarily remove all other NPVs or make sure to complete the re-pathing.
+
+### My NPV loads, but I'm getting a random appearance!
 
 That happens when you're loading an appearance that the game doesn't know about — the problem is between your .lua file and your root entity. The names must match exactly, and must contain not typos or leading/trailing spaces.
 
@@ -36,7 +58,7 @@ If that was not it, double-check the `path` in your lua file and make sure that 
 This particular problem is **always** between those two files. Other mistakes will have other effects.
 {% endhint %}
 
-## I'm getting errors in Wolvenkit!
+### I'm getting errors in Wolvenkit!
 
 {% hint style="info" %}
 You can check the [Troubleshooting](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/troubleshooting "mention")page on the Wolvenkit wiki.
