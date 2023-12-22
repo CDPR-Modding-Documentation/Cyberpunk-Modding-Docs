@@ -61,12 +61,16 @@ The main limitation currently is that we do not have a way to add activations, a
 
 ## Editing Morphtargets
 
+{% hint style="info" %}
+**This Section is Incomplete**
+{% endhint %}
+
 {% hint style="warning" %}
 For best results, export an original game file and start from there, as exports from older Wolvenkit versions may not work.
 {% endhint %}
 
 {% hint style="info" %}
-**This Section is Incomplete**
+For a collection of morphtarget resources for eye overlays, find [NoraLee's Nexus resource](https://www.nexusmods.com/cyberpunk2077/mods/11698).
 {% endhint %}
 
 One thing deserves highlighting right up front: whenever you are doing _3D work_ on a model that has a  `.morphtarget`, **you work with the `.morphtarget`, not the`.mesh`**. The `.mesh` is only used for things the target doesn't include, like appearance definitions.\
