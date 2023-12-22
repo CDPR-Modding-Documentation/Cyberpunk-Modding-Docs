@@ -15,8 +15,8 @@ REDmod **preloads** any mods on its list, loading them as if they were a part of
 The game loads redmods from this path: `<Cyberpunk 2077>/mods/<name>`.
 
 > EXAMPLE:\
-> RedMod: `C:\GoG\Cyberpunk 2077\mods\mods\archives\mod_a.archive`\
-> `Legacy: C:\GoG\Cyberpunk 2077\archive\PC\mod\mod_a.archive`
+> REDMod: `C:\GoG\Cyberpunk 2077\mods\<name>\archives\<name>.archive`\
+> `Legacy: C:\GoG\Cyberpunk 2077\archive\PC\mod\<name>.archive`
 
 {% hint style="info" %}
 Legacy archive mods in `<Cyberpunk 2077>/archive/pc/mod` are still supported, but their load order cannot be managed with REDmod.
