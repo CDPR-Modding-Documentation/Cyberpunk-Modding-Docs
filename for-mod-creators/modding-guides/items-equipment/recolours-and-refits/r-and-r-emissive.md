@@ -75,7 +75,7 @@ If a mod doesn't mention in the description that they support this feature, you 
 ## Changing the presets
 
 {% hint style="info" %}
-I won't document this step-by-step (yet), since it's pretty self-explanatory once you have the right file open.&#x20;
+This section assumes that you can use Wolvenkit. If you have no idea about that yet, please check the first part of this guide: [r-and-r-your-own-wolvenkit-project.md](r-and-r-your-own-wolvenkit-project.md "mention").
 {% endhint %}
 
 All the emissive materials live in .mi files. Inside the archive, they're bundled in this folder:
@@ -85,13 +85,13 @@ All the emissive materials live in .mi files. Inside the archive, they're bundle
 
 Each file will be named `emissive_VARIANT`, (`VARIANT` being the colour as listed in the table above). E.g., the file for the regular green emissive will be called `emissive_green.mi`
 
-See [#step-0-extracting-the-right-file](r-and-r-colour-editing.md#step-0-extracting-the-right-file "mention") on [r-and-r-colour-editing.md](r-and-r-colour-editing.md "mention") for how to extract the file.&#x20;
+See [#add-files-from-the-mod-to-your-project](r-and-r-your-own-wolvenkit-project.md#add-files-from-the-mod-to-your-project "mention") on [r-and-r-colour-editing.md](r-and-r-colour-editing.md "mention") for how to extract the file.&#x20;
 
-Open the file in Wolvenkit and check the `values`. You'll see something like this:
+Open the file in Wolvenkit and check the `values` array. You'll see something like this:
 
 <figure><img src="../../../../.gitbook/assets/netrunner_suits_emissive_properties.png" alt=""><figcaption></figcaption></figure>
 
-You can change the values in the panel on the right — feel free to experiment. You can make a copy first in case you break something, but even then, you can still install the original mod again and re-extract the file.
+You can make changes in the panel on the right — feel free to experiment. You can make a copy first in case you break something, but even then, you can still install the original mod again and re-extract the file.
 
 {% hint style="info" %}
 All emissive files use one of two templates:
@@ -105,12 +105,10 @@ If you are missing any properties, open the template and copy them from there.
 
 ## OK, what now?
 
-Time to test! Install and launch your Wolvenkit project:
+If you're satisfied with your colour, it's time to test! Save your file, then [install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your Wolvenkit project:
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FUs6kZEwmFHhn8f8QCIKb%2Fwolvenkit_install_and_launch.png?alt=media&#x26;token=66c24ef4-0525-4476-80a2-aaf461f445ac" alt=""><figcaption></figcaption></figure>
 
-If you did everything right, your recolour will now be active.&#x20;
-
-Otherwise, check [r-and-r-troubleshooting.md](r-and-r-troubleshooting.md "mention").
+If you did everything right, your recolour will now be active. Otherwise, check [r-and-r-troubleshooting.md](r-and-r-troubleshooting.md "mention").
 
 [^1]: To read up on dynamic appearances, check [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/core-mods-explained/archivexl#dynamic-variants). They're amazing, but far out of scope for this guide.

@@ -16,6 +16,14 @@ This page is a part of the [Recolours and Refit guide](broken-reference) and wil
 * \~30 minutes for the tutorial
 * once you know how it works: < 5 minutes to create a project and add the correct files from a mod
 
+### Skipping and skimming
+
+his guide contains the minimal amount of fluff and will **link** background information rather than giving it. Any links will tell you what you're supposed to read.
+
+For that reason, _**you shouldn't skip or skim**_ unless the section tells you that it's optional.
+
+<figure><img src="../../../../.gitbook/assets/slow_down_kitten.jpg" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
 The principles you learn here are universal. Once you have understood how this works, you can recolour and refit **any Cyberpunk item**.
 {% endhint %}
@@ -30,7 +38,7 @@ You can check find the standard permissions on a mod's Nexus page, `Description`
 
 ### Prerequisites
 
-The links in the check list go to more detailed guides. For the exact things you have to do if you can't check the boxes, see  the previous section of the guide ->[Broken link](broken-reference "mention"),
+The checklist below will make sure that you're ready to go for the tutorial. The links in the description will tell you how to complete each step if you can't do it on your own yet.
 
 * [ ] You have [Wolvenkit installed](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download) and configured
 * [ ] You have [MLSetupBuilder installed](../../../modding-tools/mlsetup-builder/#installation) and [configured](./#netrunner-suit-preview)
