@@ -78,7 +78,7 @@ If the arm states aren't working as expected, check if the table above is outdat
 
 #### Foot states
 
-To achieve gender equality in regard to foot states, you need to use [Toggleable Feet](https://www.nexusmods.com/cyberpunk2077/mods/7049). The substitution key for dynamic appearances is `legs_state`.
+To achieve gender equality in regard to foot states, you need to use [Toggleable Feet](https://www.nexusmods.com/cyberpunk2077/mods/7049). The substitution key for dynamic appearances is `feet`.
 
 <table><thead><tr><th width="187.33333333333331">Character</th><th>Footwear</th><th width="176">Suffix/Tag</th><th>Substitution</th></tr></thead><tbody><tr><td>Female</td><td>Unequipped</td><td><code>&#x26;Flat</code></td><td>flat</td></tr><tr><td>Female</td><td>Equipped (default)</td><td><code>&#x26;Lifted</code></td><td>lifted</td></tr><tr><td>Female</td><td>Equipped with <code>HighHeels</code> tag</td><td><code>&#x26;HighHeels</code></td><td>high_heels</td></tr><tr><td>Female</td><td>Equipped with <code>FlatShoes</code> tag</td><td><code>&#x26;FlatShoes</code></td><td>flat_shoes</td></tr><tr><td>Male</td><td>Any</td><td>(empty)</td><td></td></tr></tbody></table>
 
