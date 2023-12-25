@@ -1,5 +1,5 @@
 ---
-description: How to change the Netrunner suit's glowey bits
+description: How to change the Netrunner suit's glowey bits with ArchiveXL Dynamic Variants
 ---
 
 # R\&R: Emissive
@@ -15,42 +15,57 @@ The second section will show you how to [change the existing presets](r-and-r-em
 * \~ 30 min **tops** for the tutorial
 * once you know how it works:&#x20;
   * < 1 minute for .yaml edits
-  *   < 5 minutes for material edits
-
-
+  * < 5 minutes for material edits
 
 ## Switching existing colours
 
-Since ArchiveXL's [Dynamic Appearances](#user-content-fn-1)[^1] feature is **that** cool, you can switch the emissive material simply by changing the property in the .yaml file. You can choose from the following emissive colours:
+Since ArchiveXL's [Dynamic Appearances](#user-content-fn-1)[^1] feature is **that** cool, you can switch the emissive material simply by changing the property in the .yaml file.&#x20;
 
-| Static            | Animated                  |
-| ----------------- | ------------------------- |
-| blue              | glitch\_blue              |
-| green             | glitch\_green             |
-| orange            | glitch\_orange            |
-| pink              | glitch\_pink              |
-| violet            | glitch\_violet            |
-| turquoise         | glitch\_turquoise         |
-| red               | glitch\_red               |
-| white             | glitch\_white             |
-| yellow            | glitch\_yellow            |
-| gold (warm white) | glitch\_gold (warm white) |
-| black             | glitch\_greenblue         |
-|                   | glitch\_darkblue          |
-|                   | glitch\_matrix            |
-| off               | glitch\_redblack          |
+{% hint style="info" %}
+This guide gives detailed instructions for how to change the [High Fashion Netrunner Suit](https://www.nexusmods.com/cyberpunk2077/mods/9314), but the same principle applies for **all** items with dynamic appearances.&#x20;
 
-To change the emissive of an existing suit, you only need to change a single thing in the yaml file. Find it in your game directory:
+Most mod authors put the list of available appearances as a comment into the .yaml file — the line will be starting with a `#`.
+{% endhint %}
+
+For the Netrunner suit, you can choose from the following emissive colours:
+
+| Static              | Animated                    |
+| ------------------- | --------------------------- |
+| blue                | glitch\_blue                |
+| green               | glitch\_green               |
+| orange              | glitch\_orange              |
+| pink                | glitch\_pink                |
+| violet              | glitch\_violet              |
+| turquoise           | glitch\_turquoise           |
+| red                 | glitch\_red                 |
+| white               | glitch\_white               |
+| yellow              | glitch\_yellow              |
+| gold _(warm white)_ | glitch\_gold _(warm white)_ |
+| black               | glitch\_greenblue           |
+|                     | glitch\_darkblue            |
+|                     | glitch\_matrix              |
+| off                 | glitch\_redblack            |
+
+To change the emissive of an existing suit, you only need to change a text file. Find it in your game directory:
 
 ```
 Cyberpunk 2077\r6\tweaks\manavortex\_ArchiveXL_Netrunner_variants.yaml
 ```
 
-Open it in a text editor, and find the list `$instances` near the top of the file. It will look like this:
+Open it in a text editor such as [Notepad++](https://notepad-plus-plus.org/downloads/), and find the list `$instances` near the top of the file. It will look like this:
 
-<figure><img src="../../../../.gitbook/assets/netrunner_suits_emissive.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/netrunner_suits_emissive.png" alt=""><figcaption><p>For other mods, you will have to edit a different file and different values. Just give it a try, if it doesn't work, you can still put the original file back.</p></figcaption></figure>
 
-Change the current entry against one from the list above. Make sure that you don't delete the comma or the colon, the amount of spaces only matters at the **beginning** of a line (other than for my personal OCD).
+Change the current entry against one from the list above.&#x20;
+
+{% hint style="warning" %}
+After your edit, make sure of the following things:
+
+* There is still a comma (`,`) after the text you changed
+* There is still a colon (`:`) in front of the text you changed
+* The line you changed still has the same number of leading spaces (indent). \
+  _Only spaces at the beginning matter, anything else is just looking pretty._
+{% endhint %}
 
 Save the file and start the game.&#x20;
 

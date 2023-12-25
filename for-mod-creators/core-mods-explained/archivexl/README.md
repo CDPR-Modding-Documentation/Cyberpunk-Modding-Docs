@@ -100,6 +100,8 @@ If you have ever tried to make ten colour variants of an item for two body gende
 
 {% hint style="success" %}
 For a tutorial about this, check [archivexl-dynamic-variants.md](../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention")
+
+If you are a mod user and want to dynamically recolour an item, check the [recolours-and-refits](../../modding-guides/items-equipment/recolours-and-refits/ "mention") guide -> sub-page Emissive -> [#switching-existing-colours](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-emissive.md#switching-existing-colours "mention")
 {% endhint %}
 
 ### Substitutions
