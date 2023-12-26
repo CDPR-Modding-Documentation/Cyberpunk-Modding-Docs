@@ -153,6 +153,7 @@
       * [NPV: Cleanup and troubleshooting](for-mod-creators/modding-guides/npcs/npv-v-as-custom-npc/npv-cleanup-and-troubleshooting.md)
       * [NPV: AMM Nibbles Replacer](for-mod-creators/modding-guides/npcs/npv-v-as-custom-npc/npv-amm-nibbles-replacer.md)
     * [A new head for V](for-mod-creators/modding-guides/npcs/a-new-head-for-v.md)
+    * [Altering Appearances within Wolvenkit - Full Workflow](for-mod-creators/modding-guides/npcs/altering-appearances-within-wolvenkit-full-workflow.md)
     * [Appearances: change the looks](for-mod-creators/modding-guides/npcs/appearances-change-the-looks.md)
     * [Custom bodyhair for NPCs](for-mod-creators/modding-guides/npcs/custom-bodyhair-for-npcs.md)
     * [Give genitals to NPCs](https://docs.google.com/document/d/1WEIw1Rdrs9qVuOQoCIgzbBSs7f\_TL4JkPaLJSrYDBF4/edit?usp=drive\_link)
