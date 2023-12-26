@@ -67,5 +67,3 @@ Your items won't need an icon record anymore, the assignment now happens by magi
 
 ## Does this work with dynamic variants?
 
-It does - you can add as many suffixes to dynamic records as you need to generate your items, as dynamic variants will completely ignore them.&#x20;
-
