@@ -181,7 +181,9 @@ Set $base like this:
   $base: Items.IconicWeaponModBase
 ```
 
+### My weapon is spawning as the original weapon/my mesh edit isn't reflecting!
 
+Make sure all the items under "resolvedDependencies" are deleted in your appearances, especially if they are using "Soft" or "Embedded" flags. The game might load vanilla meshes instead of your own meshes.&#x20;
 
 [^1]: as linked in your .app's baseEntity field
 
