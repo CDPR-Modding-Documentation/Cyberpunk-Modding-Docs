@@ -57,7 +57,7 @@ We'll be editing the default appearance in this guide. But the principle is the 
 As you can see, there are quite a lot to sort through. Don't worry though, most of these things you won't have to mess with anyway.
 
 {% hint style="info" %}
-A quick tip: most of these components are prefaced by something like t0 or l1. Here's what that means: t=torso (t0 is usually the body mesh, t1 is usually clothes), l=legs, h=hair, s=shoe.
+A quick tip: most of these components are prefaced by something like t0 or l1. Here's what that means: t=torso (t0 is usually the body mesh, t1 is usually clothes), l=legs, h=head, s=shoe.
 {% endhint %}
 
 Since we want to modify the body mesh and his shirt, here are the components we'll want to modify: "t0\_001\_ma\_body\_\_ripper\_doc6245" (body mesh) and "t1\_001\_ma\_full\_\_ripper\_doc1487" (shirt). We'll start with the body mesh.
