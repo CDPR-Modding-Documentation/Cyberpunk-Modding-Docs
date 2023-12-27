@@ -152,7 +152,7 @@ To add an appearance, you will have to touch the following files:
    4. Connecting those things
 
 {% hint style="info" %}
-For a diagram of how everything connects, go [here](archive-xl-item-structure-explained.md#the-final-result). To follow the&#x20;
+For a diagram of how everything connects, go [here](archive-xl-item-structure-explained.md#the-final-result).&#x20;
 {% endhint %}
 
 ### Step 1: Register it in your \*.yaml
