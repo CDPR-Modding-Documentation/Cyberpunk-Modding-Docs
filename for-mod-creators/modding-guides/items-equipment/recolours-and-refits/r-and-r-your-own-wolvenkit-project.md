@@ -41,22 +41,28 @@ You can check find the standard permissions on a mod's Nexus page, `Description`
 The checklist below will make sure that you're ready to go for the tutorial. The links in the description will tell you how to complete each step if you can't do it on your own yet.
 
 * [ ] You have [Wolvenkit installed](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download) and configured
-* [ ] You have [MLSetupBuilder installed](../../../modding-tools/mlsetup-builder/#installation) and [configured](./#netrunner-suit-preview)
 * [ ] You have [installed the mod](./#install-the-mod)
+* [ ] For **recoloring**: you have [MLSetupBuilder installed](../../../modding-tools/mlsetup-builder/#installation) and [configured](./#netrunner-suit-preview)
 
 ## Why do I want a Wolvenkit project?
 
-To edit an appearance, you need to **make a mod**, and for that, you need a Wolvenkit project.&#x20;
+To edit an appearance, you need to **make a mod**. For that, you need a Wolvenkit project.
 
-As soon as you have changed the first file, you can [install your mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and check if it is working.&#x20;
+{% hint style="info" %}
+Normally, you get an example project to download — but you already have all the necessary files, since you downloaded them from Nexus.&#x20;
+
+This guide will teach you how to change stuff without the original creator's help. It's easy!
+
+Once you have a Wolvenkit project, you can [install your mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and see any changes you made become active right away.
+{% endhint %}
 
 There are two ways you can go about the process: do either a **full repack** of my mod, or **create a compatibility archive**. This section will explain the differences, the [next one](r-and-r-your-own-wolvenkit-project.md#creating-your-wolvenkit-project) will walk you through the process of setting things up for either of those options.
 
-|                                                                                           | Full Repack                             | Compatibility Archive                  |
-| ----------------------------------------------------------------------------------------- | --------------------------------------- | -------------------------------------- |
-| Needs original mod?                                                                       | no, is a full replacement               | yes                                    |
-| Can update original mod?                                                                  | no, and doing so will nuke your changes | yes                                    |
-| Needs[ load order](../../../../for-mod-users/users-modding-cyberpunk-2077/load-order.md)? | No, replaces original mod               | yes, needs to load before original mod |
+|                                                                                           | Full Repack                            | Compatibility Archive                  |
+| ----------------------------------------------------------------------------------------- | -------------------------------------- | -------------------------------------- |
+| Needs original mod?                                                                       | no, is a full replacement              | yes                                    |
+| Can update original mod?                                                                  | no — doing that will nuke your changes | yes                                    |
+| Needs[ load order](../../../../for-mod-users/users-modding-cyberpunk-2077/load-order.md)? | No, replaces original mod              | yes, needs to load before original mod |
 
 {% hint style="success" %}
 Once you've made your decision, you can proceed to the next section and [create your Wolvenkit project](r-and-r-your-own-wolvenkit-project.md#creating-your-wolvenkit-project). If you aren't certain yet, you can keep reading to find the pros and cons listed more clearly.
@@ -98,9 +104,9 @@ I do this with mods where I only want to change little things, e.g. removing a s
 * You have to keep the original installed
 * Only works together with the original
 * Updates on the original mod **might** necessitate an update on your part
-* Your mod has to load **before** the original, so you need to fix load order. (This guide will tell you how)
+* Your mod has to load **before** the original, so you need to fix [load order](../../../../for-mod-users/users-modding-cyberpunk-2077/load-order.md). (This guide will tell you how)
 
-This is where you pick any of those options.
+This is where you **decide** for one of those options.
 
 ## Creating your Wolvenkit project
 
