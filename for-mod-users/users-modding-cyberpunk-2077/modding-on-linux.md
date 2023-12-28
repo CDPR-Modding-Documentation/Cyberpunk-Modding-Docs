@@ -21,7 +21,7 @@ You need to&#x20;
 * Install `d3dcompiler_47`
 * Install `vcrun2022`
 * Adjust the Steam launch option to be:\
-  `WINEDLLOVERRIDES="winmm.dll,version=n,b" %command%`
+  `WINEDLLOVERRIDES="winmm,version=n,b" %command%`
 
 If you can't get it to work, follow the steps below to apply the launch options via Protontricks, or search the `#red4ext-support` channel on the [modding discord](https://discord.gg/redmodding) to find out what else you can do.
 
@@ -70,7 +70,7 @@ Apply via "OK". You may receive an error below or similar. If you do, click "Yes
 ## Launch Options
 
 Switch to steam and make sure that the launch options are set as below:\
-`WINEDLLOVERRIDES="winmm.dll,version=n,b" %command%`
+`WINEDLLOVERRIDES="winmm,version=n,b" %command%`
 
 <figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption><p>Setting Launch Options in Steam</p></figcaption></figure>
 
