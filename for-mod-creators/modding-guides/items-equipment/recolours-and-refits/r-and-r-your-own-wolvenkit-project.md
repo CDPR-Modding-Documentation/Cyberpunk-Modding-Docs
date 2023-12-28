@@ -18,7 +18,7 @@ This page is a part of the [Recolours and Refit guide](broken-reference) and wil
 
 ### Skipping and skimming
 
-his guide contains the minimal amount of fluff and will **link** background information rather than giving it. Any links will tell you what you're supposed to read.
+his guide contains the minimal amount of fluff and will **link** background information rather than giving it. Any links will tell you which parts you're supposed to read — if they don't, you're free to ignore them.
 
 For that reason, _**you shouldn't skip or skim**_ unless the section tells you that it's optional.
 
