@@ -67,7 +67,7 @@ Your items won't need an icon record anymore, the assignment now happens by magi
 
 ## Does this work with dynamic variants?
 
-It does! All you need to do is to define an anchor for your $instances, like this:
+It does! All you need to do is to add the appearanceSuffix `Gender` and define an anchor for your `$instances`, like this:
 
 ```yaml
 Items.my_custom_shirt_$(color):
@@ -75,10 +75,13 @@ Items.my_custom_shirt_$(color):
     - { color: white_red, icon: icon_01 }
     - { color: black_red, icon: icon_02 }
   entityName: my_custom_shirt_factory_name
-  appearanceName: appearance_root_entity_$(color)
+  appearanceName: appearance_root_entity_!$(color)
+  appearanceSuffixes: [ itemsFactoryAppearanceSuffix.Gender ]
 ```
 
-Then, you can define your preview images:
+ArchiveXL will ignore suffixes for dynamic variants, but they need to be present in the yaml file for the icons to work.
+
+Then, you can define your preview images (remember to strip away the ! and + from the variants):
 
 <pre class="language-yaml"><code class="lang-yaml"><strong># UIIcon.clothing_      &#x3C;entityName>        _     &#x3C;appearanceName>           _&#x3C;suffix>_
 </strong><strong>UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_$(color)_Female_:
