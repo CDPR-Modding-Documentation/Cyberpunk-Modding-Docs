@@ -67,3 +67,31 @@ Your items won't need an icon record anymore, the assignment now happens by magi
 
 ## Does this work with dynamic variants?
 
+It does! All you need to do is to define an anchor for your $instances, like this:
+
+```yaml
+Items.my_custom_shirt_$(color):
+  $instances: &my_custom_shirt_instances
+    - { color: white_red, icon: icon_01 }
+    - { color: black_red, icon: icon_02 }
+  entityName: my_custom_shirt_factory_name
+  appearanceName: appearance_root_entity_$(color)
+```
+
+Then, you can define your preview images:
+
+<pre class="language-yaml"><code class="lang-yaml"><strong># UIIcon.clothing_      &#x3C;entityName>        _     &#x3C;appearanceName>           _&#x3C;suffix>_
+</strong><strong>UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_$(color)_Female_:
+</strong>    $type: UIIcon
+    $instances: *my_custom_shirt_instances
+    atlasResourcePath: tutorial\torso\my_custom_shirt\ops\preview_icons_pwa.inkatlas
+    atlasPartName: $(icon)
+    
+UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_$(color)_Male_:
+    $type: UIIcon
+    $instances: *my_custom_shirt_instances
+    atlasResourcePath: tutorial\torso\my_custom_shirt\ops\preview_icons_pma.inkatlas
+    atlasPartName: $(icon)
+</code></pre>
+
+The rest just works (tm)
