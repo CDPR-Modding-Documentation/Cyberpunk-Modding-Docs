@@ -52,11 +52,11 @@ As soon as you have changed the first file, you can [install your mod](https://a
 
 There are two ways you can go about the process: do either a **full repack** of my mod, or **create a compatibility archive**. This section will explain the differences, the [next one](r-and-r-your-own-wolvenkit-project.md#creating-your-wolvenkit-project) will walk you through the process of setting things up for either of those options.
 
-|                          | Full Repack                             | Compatibility Archive                  |
-| ------------------------ | --------------------------------------- | -------------------------------------- |
-| Needs original mod?      | no, is a full replacement               | yes                                    |
-| Can update original mod? | no, and doing so will nuke your changes | yes                                    |
-| Needs load order?        | No, replaces original mod               | yes, needs to load before original mod |
+|                                                                                           | Full Repack                             | Compatibility Archive                  |
+| ----------------------------------------------------------------------------------------- | --------------------------------------- | -------------------------------------- |
+| Needs original mod?                                                                       | no, is a full replacement               | yes                                    |
+| Can update original mod?                                                                  | no, and doing so will nuke your changes | yes                                    |
+| Needs[ load order](../../../../for-mod-users/users-modding-cyberpunk-2077/load-order.md)? | No, replaces original mod               | yes, needs to load before original mod |
 
 {% hint style="success" %}
 Once you've made your decision, you can proceed to the next section and [create your Wolvenkit project](r-and-r-your-own-wolvenkit-project.md#creating-your-wolvenkit-project). If you aren't certain yet, you can keep reading to find the pros and cons listed more clearly.
@@ -117,13 +117,13 @@ The .archive that Wolvenkit packs for you will have the same name as your projec
    Select any folder outside of your game directory.
 4. `Project Name`:  The name of your project, and subsequently, the name of your .archive file.&#x20;
    * If you want to **overwrite**: Name it the same as the original mod's `.archive` (`_ArchiveXL_Netrunner_Variants`)
-   *   If you want to **patch**: It needs to come before the original in [ascii sort order](https://theasciicode.com.ar/). Pick any of the following:
+   *   If you want to **patch**: To maintain [load-order.md](../../../../for-mod-users/users-modding-cyberpunk-2077/load-order.md "mention"), your project needs to come before the original in [ascii sort order](https://theasciicode.com.ar/). Pick any of the following:
 
-       * `_ArchiveXL_Netrunner_0_Refit`
-       * `_ArchiveXL_NetrunnerVariants`
        * `_00_ArchiveXL_Netrunner_Variants`
+       * `_ArchiveXL_00_Netrunner_Refit`
+       * `_ArchiveXL_Netrunner_00_Variants`
 
-       My personal preference is the first, as the .archive files will show up&#x20;
+       My personal preference is 2 and 3, as that will put the files next to the original mod.
 
 <details>
 
