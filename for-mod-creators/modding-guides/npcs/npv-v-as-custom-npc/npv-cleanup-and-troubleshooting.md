@@ -44,6 +44,12 @@ If you click on the button, but nothing happens, that means that the game can't 
 
 Most likely, the path to the .ent file is not correct. If it is, make sure that it has **no upper-case characters**.&#x20;
 
+### Clothes are floating!
+
+For each of the mesh components that aren't moving, expand it and find the `skinning` entry. Make sure that the `bindName` points at `root`:
+
+<figure><img src="../../../../.gitbook/assets/npv_skinning_root.png" alt=""><figcaption></figcaption></figure>
+
 ### My NPV loads, but I'm getting a random appearance!
 
 That happens when you're loading an appearance that the game doesn't know about — the problem is between your .lua file and your root entity. The names must match exactly, and must contain not typos or leading/trailing spaces.
