@@ -216,6 +216,12 @@ Congratulations — that's it! Install your mod and go testing!
 
 You may have forgotten to copy the animation file. Look for an **entAnimatedComponent** inside the .app — they're usually called something like `xxx_dangle(s)` or `collar.`[ (See here)](appearances-change-the-looks.md#animations-if-you-cant-avoid-them-copy-them-as-well)
 
+If it's a clothing item not moving, check the skinning array for the component and make sure the `bindName` is set to `root`. If you swapped out a component for something else, you also might need to update its matching entry in `AppearanceVisualController -> appearanceDependency`. But don't do that unless necessary.
+
+
+
+<figure><img src="../../../.gitbook/assets/npv_skinning_root.png" alt=""><figcaption></figcaption></figure>
+
 ### I added an appearance, but a random one is showing when I select it
 
 That's what happens when the game can't find the appearance you picked. You're probably trying to add an AMM appearance. Check the spelling between your lua file with the appearance name, the mapping entry inside the .ent, and the appearance's name in the .app file.
