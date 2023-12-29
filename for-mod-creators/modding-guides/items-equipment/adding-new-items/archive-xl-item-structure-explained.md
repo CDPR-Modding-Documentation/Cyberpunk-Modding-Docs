@@ -255,7 +255,7 @@ By bundling them in this file, we save ourselves a lot of copy-pasting inside th
 The component's `name` will be used in `appearance.app`'s materialOverride array (see [below](archive-xl-item-structure-explained.md#appearance-making-changes))
 
 {% hint style="danger" %}
-When changing component names, you want to leave the [#component-prefixes](../../../3d-modelling/garment-support-how-does-it-work.md#component-prefixes "mention") (t1\_) in place — the game needs them to calculate collisions!
+When changing component names, you want to leave the [#component-prefixes](../../../3d-modelling/garment-support-how-does-it-work/#component-prefixes "mention") (t1\_) in place — the game needs them to calculate collisions!
 {% endhint %}
 
 {% hint style="success" %}

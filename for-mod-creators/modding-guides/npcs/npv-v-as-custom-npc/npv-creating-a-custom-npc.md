@@ -135,7 +135,7 @@ Let's look at the .app file now.
 This section will tell you how to edit your NPV's appearance – their skin colour, chrome, piercings, tattoos. We will do this in the .app file.
 
 {% hint style="danger" %}
-When changing component names, you want to leave the [#component-prefixes](../../../3d-modelling/garment-support-how-does-it-work.md#component-prefixes "mention") (t1\_) in place — the game needs them to calculate collisions!
+When changing component names, you want to leave the [#component-prefixes](../../../3d-modelling/garment-support-how-does-it-work/#component-prefixes "mention") (t1\_) in place — the game needs them to calculate collisions!
 {% endhint %}
 
 This is where all of your NPC's appearances are defined (`appearanceDefinition`,  linked to the root entity via `name`). The appearanceDefinition's components **define** your NPV's properties, pulling in equipment, facial expressions, hair and skin.
@@ -234,12 +234,19 @@ To use modded hair, find the correct files [inside the mod](../../../modding-cyb
 
 <figure><img src="../../../../.gitbook/assets/npv_finding_hair_files.png" alt=""><figcaption></figcaption></figure>
 
-4.  This will give you a list of files, which you can mostly ignore. The only thing we care about is the hair's `.ent` file:
+4. This will give you a list of files, which you can mostly ignore. \
+   The only thing we care about is the hair's control file, which is usually an `.ent` file:
 
-    <figure><img src="../../../../.gitbook/assets/npv_hair_filtering.png" alt=""><figcaption><p>This is how you find the hair's .ent file</p></figcaption></figure>
-5.  Open the `.ent` file and expand the `components` array. You will find three components in there, which you can now copy over to your `.app`!
+<figure><img src="../../../../.gitbook/assets/npv_hair_filtering.png" alt=""><figcaption><p>This is how you find the hair's .ent file</p></figcaption></figure>
 
-    <figure><img src="../../../../.gitbook/assets/npv_hair_ent_file.png" alt=""><figcaption><p>Copy these and move them over to your .app</p></figcaption></figure>
+{% hint style="info" %}
+Some hair mods don't use an .ent file. In this case, the components will be inside the .app file's appearances, similar to NPC apps. You can copy the entire `components` array of the appearance that you want to use.\
+If there are multiple files, check which one uses the **most** components per appearance.
+{% endhint %}
+
+5. Open the `.ent` file and expand the `components` array. You will find three components in there, which you can now copy over to your `.app`!
+
+<figure><img src="../../../../.gitbook/assets/npv_hair_ent_file.png" alt=""><figcaption><p>Copy these and move them over to your .app</p></figcaption></figure>
 
 ### And that's the gist of it!
 

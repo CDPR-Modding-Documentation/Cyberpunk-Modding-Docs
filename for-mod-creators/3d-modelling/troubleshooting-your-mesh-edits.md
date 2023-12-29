@@ -262,7 +262,7 @@ Check the `renderMask` attribute inside `heder / renderChunkInfos / index`_._ Fo
 #### GarmentSupports
 
 {% hint style="info" %}
-To check if it's this, equip **only** the edited item. If it breaks as soon as you put on another clothing item with [garment supports](garment-support-how-does-it-work.md#the-algorithm), then the solution below applies.
+To check if it's this, equip **only** the edited item. If it breaks as soon as you put on another clothing item with [garment supports](garment-support-how-does-it-work/#the-algorithm), then the solution below applies.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/garment_support_broken.png" alt=""><figcaption></figcaption></figure>

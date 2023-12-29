@@ -20,7 +20,7 @@ For more hands-on advice, see the guide section, for example
 * [importing meshes from external sources](../modding-guides/everything-else/custom-props.md)
 * [Material assignment examples](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md)
 * [Troubleshooting your mesh edits](troubleshooting-your-mesh-edits.md)
-* [How do the clothes auto-morph?](garment-support-how-does-it-work.md)
+* [How do the clothes auto-morph?](garment-support-how-does-it-work/)
 
 ## Relevant files
 

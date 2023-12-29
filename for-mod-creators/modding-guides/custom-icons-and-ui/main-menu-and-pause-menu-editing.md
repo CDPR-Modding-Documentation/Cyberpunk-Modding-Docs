@@ -38,13 +38,13 @@ This guide is valid for both files (main menu and pause menu)
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 From here move to the new open window were we are going to start editing our menu and you should see something like this:
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
 
 #### Button Size:
 

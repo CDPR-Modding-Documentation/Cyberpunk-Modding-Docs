@@ -29,8 +29,8 @@ In general, these should be **globally unique** so you can target them via [part
 
 ### Body and clothing component prefixes
 
-Body component prefixes affect how the game calculates [garment support](../../3d-modelling/garment-support-how-does-it-work.md) and you're strongly encouraged to stick to those naming conventions to make use of it. \
-Please see the [corresponding wiki page](../../3d-modelling/garment-support-how-does-it-work.md#component-prefixes) for a list.
+Body component prefixes affect how the game calculates [garment support](../../3d-modelling/garment-support-how-does-it-work/) and you're strongly encouraged to stick to those naming conventions to make use of it. \
+Please see the [corresponding wiki page](../../3d-modelling/garment-support-how-does-it-work/#component-prefixes) for a list.
 
 ## Component Properties
 

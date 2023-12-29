@@ -27,7 +27,7 @@ This page is a part of the [Adding new items](./) guide and  deals with finding 
 {% hint style="danger" %}
 For `mesh_entity.ent,` your entity file needs to correspond to your item's **body part**. If you put a shirt in an entity file for shoes, it will deform badly once you put it on.&#x20;
 
-If you rename your components, we recommend using CDPR's [naming prefixes](../../../3d-modelling/garment-support-how-does-it-work.md) for reasons of garmentSupport. You don't need to understand how this works, just name your component like `l1_myCustomPants` instead of `myCustomPants` and call it a day.
+If you rename your components, we recommend using CDPR's [naming prefixes](../../../3d-modelling/garment-support-how-does-it-work/) for reasons of garmentSupport. You don't need to understand how this works, just name your component like `l1_myCustomPants` instead of `myCustomPants` and call it a day.
 
 For further details, check [here](different-equipment-slots.md).
 {% endhint %}

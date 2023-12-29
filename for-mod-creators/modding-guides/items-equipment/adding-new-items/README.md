@@ -371,7 +371,7 @@ First of all, check the logs for errors including the name of your mod:&#x20;
 
 ### ArchiveXL added clipping!
 
-You have read right past those warning boxes telling you about [component name prefixes](../../../3d-modelling/garment-support-how-does-it-work.md#component-prefixes). Make sure that you add them back.
+You have read right past those warning boxes telling you about [component name prefixes](../../../3d-modelling/garment-support-how-does-it-work/#component-prefixes). Make sure that you add them back.
 
 ### My item warps weirdly
 
@@ -564,7 +564,7 @@ If the hint above doesn't solve it, proceed to troubleshoot in the same way as "
 
 ### My garment tucks into/under other garments incorrectly
 
-That's due to [garment support](../../../3d-modelling/garment-support-how-does-it-work.md) - check the link to learn more.
+That's due to [garment support](../../../3d-modelling/garment-support-how-does-it-work/) - check the link to learn more.
 
 ### Visual tags aren't working!
 

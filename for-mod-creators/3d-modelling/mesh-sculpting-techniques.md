@@ -139,7 +139,7 @@ Make sure to restore the original mesh names before [exporting your mesh from Bl
 {% endhint %}
 
 {% hint style="info" %}
-After importing back into WolvenKit, remember to [delete the GarmentSupport](garment-support-how-does-it-work.md) parameters from your mesh, as they will now [produce string cheese](troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices).
+After importing back into WolvenKit, remember to [delete the GarmentSupport](garment-support-how-does-it-work/) parameters from your mesh, as they will now [produce string cheese](troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices).
 {% endhint %}
 
 ### Lattice Modifier Method

@@ -96,7 +96,7 @@ Fundamentally the 3D workflow goes like this in Blender (use the blender cp2077 
 
 ## Working with GarmentSupports
 
-See the [GarmentSupport](garment-support-how-does-it-work.md) section for more info.
+See the [GarmentSupport](garment-support-how-does-it-work/) section for more info.
 
 ## Working with Vehicle Damage Deforms
 

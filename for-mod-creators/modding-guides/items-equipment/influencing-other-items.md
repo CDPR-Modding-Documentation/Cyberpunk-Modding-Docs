@@ -93,7 +93,7 @@ To delete an already existing reference, set the numeric value to the right of t
 
 ## VisualTags: GarmentSupport
 
-These can be used **in addition** to PartsOverrides and will let you influence your item even further. To learn more about [garment-support-how-does-it-work.md](../../3d-modelling/garment-support-how-does-it-work.md "mention"), read [#the-algorithm](../../3d-modelling/garment-support-how-does-it-work.md#the-algorithm "mention").
+These can be used **in addition** to PartsOverrides and will let you influence your item even further. To learn more about [garment-support-how-does-it-work](../../3d-modelling/garment-support-how-does-it-work/ "mention"), read [#the-algorithm](../../3d-modelling/garment-support-how-does-it-work/#the-algorithm "mention").
 
 {% hint style="info" %}
 This mechanism is how e.g. your sunglasses disappear when you put on a helmet.
