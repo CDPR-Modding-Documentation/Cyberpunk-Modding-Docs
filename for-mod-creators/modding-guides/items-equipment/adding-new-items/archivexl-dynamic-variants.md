@@ -149,6 +149,8 @@ The icon name in the record is also generated for each entry. They are all using
 
 The only important thing here is that the naming follows your inkatlas file's slot definitions.
 
+If you want to make gendered icons, please check [gendered-preview-icons.md](../../custom-icons-and-ui/adding-items-preview-images/gendered-preview-icons.md "mention") -> [#does-this-work-with-dynamic-variants](../../custom-icons-and-ui/adding-items-preview-images/gendered-preview-icons.md#does-this-work-with-dynamic-variants "mention")
+
 #### Exercise 1: Create more records
 
 With clever hook-ups in the mesh entity, you can set up your items so that they can be changed **with a simple `.yaml` edit** — that means, the user can switch out the ribbon colour without ever starting Wolvenkit!&#x20;
@@ -173,10 +175,10 @@ By editing the `$instances` block in the `.yaml`, you should be able to spawn 6 
 For a general explanation of the root entity, check [#root\_entity.ent](archive-xl-item-structure-explained.md#root\_entity.ent "mention"). This section will only cover the differences between a dynamic and a regular root entity.
 
 {% hint style="info" %}
-This is where you **enable** the feature by adding the following tag to the `visualTagsSchema` (the last entry in the file):
+This is where you **enable** the feature by adding the tag **`DynamicAppearance`** to the `visualTagsSchema` (the last entry in the file):
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/dynamic_variants_enable_feature.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/dynamic_variants_enable_feature.png" alt=""><figcaption><p>It's <strong><code>DynamicAppearance</code>, without S.</strong></p></figcaption></figure>
 
 {% hint style="warning" %}
 For dynamic appearances, your `root_entity` file will contain **one entry**. Each item should have [its own root entity](../../../files-and-what-they-do/entity-.ent-files/#root-entity).
