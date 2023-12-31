@@ -8,6 +8,7 @@ description: Item spawn codes and how they link to appearances
 
 | List                                                                                        | Description                                                   |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
+| [2.1: github (Chief Sosa)](https://khaganmv.github.io/)                                     | all items, on mascV, with CET spawn codes                     |
 | [Steam: garments](https://steamcommunity.com/sharedfiles/filedetails/?id=2328941813) (m!V)  | Spawn codes to in-game names, with many screenshots on masc V |
 | [cp2077.8713.su](https://cp2077.8713.su/) (f!V)                                             | Screenshots on femme V with spawn codes                       |
 | [Steam: Cyberware](https://steamcommunity.com/sharedfiles/filedetails/?id=2343787921)       |                                                               |
