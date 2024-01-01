@@ -75,10 +75,20 @@ See [here](../../for-mod-creators/materials/#emissive-material) how it works and
 | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | `base\environment\decoration\furniture\kitchen\neokitsch_fridge\textures\mi_neokitsch_fridge_z_emissive.mi` | White emissive bright glow (from a fridge)                                                                                                                         |
 | `base\materials\screen\screen_fluff_blue.mi`                                                                | blue/pinkish oscillating glow (from the collar of the jacket V wears in the trailer)                                                                               |
-| `base\fx_shaders\multilayer_blackbody_inject.mt`                                                            | A glowing shader with mlmask and -setup                                                                                                                            |
 | `base\fx\shaders\neon_tubes.mt`                                                                             | A glowing shader with color parameter                                                                                                                              |
-| base\fx\shaders\signages.mt                                                                                 | The standard neon for advertising fonts in Night City. Comes in many colours, can be customized via textures and gradients. Check "city\_deco\_font" for examples. |
-| base\fx\shaders\hologram\_two\_sided.mt                                                                     | half-transparent holo material, allows three colours to tint it                                                                                                    |
+| `base\fx\shaders\signages.mt`                                                                               | The standard neon for advertising fonts in Night City. Comes in many colours, can be customized via textures and gradients. Check "city\_deco\_font" for examples. |
+| `base\fx\shaders\hologram_two_sided.mt`                                                                     | half-transparent holo material, allows three colours to tint it                                                                                                    |
+
+### Blackbody Shaders
+
+Blackbody shaders are used heat. Their colour can be adjusted via the `temperature` parameter.
+
+| material                                         | description                             |
+| ------------------------------------------------ | --------------------------------------- |
+| `base\fx\shaders\metal_base_blackbody.mt`        |                                         |
+| `base\fx\shaders\blackbodyradiation.mt`          |                                         |
+| `base\fx_shaders\multilayer_blackbody_inject.mt` | A glowing shader with mlmask and -setup |
+| `base\fx\shaders\blackbody_simple.mt`            |                                         |
 
 ## Glass
 
