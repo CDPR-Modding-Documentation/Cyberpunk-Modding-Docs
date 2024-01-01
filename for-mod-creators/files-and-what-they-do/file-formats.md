@@ -203,7 +203,7 @@ Cyberpunk normal maps are swizzled (a technique originally employed in DTX-5).&#
 | [particle](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/particle.txt)                                 |                  Particles                 |              |
 | [phys](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/phys.txt)                                         |            Nvidia PhysX related            |              |
 | [physicalscene](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/physicalscene.txt)                       |            Nvidia PhysX related            |              |
-| [physmatlib](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/physmatlib.txt)                             |            Nvidia PhysX related            |              |
+| [physmatlib](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/physmatlib.txt)                             |        Physics Material Definitions        |              |
 | [poimappins](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/poimappins.txt)                             |          Point of Interest Map pin         |              |
 | [psrep](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/psrep.txt)                                       |                      ?                     |              |
 | [quest](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/quest.txt)                                       |                    Quest                   |              |
