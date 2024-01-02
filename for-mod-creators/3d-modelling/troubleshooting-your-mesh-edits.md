@@ -146,12 +146,14 @@ To create more submeshes, you can either&#x20;
 * create more submeshes with the correct naming in Blender, e.g. `submesh_01_LOD_1`, `submesh_02_LOD_1`
 {% endhint %}
 
+If you end up with missing bones,&#x20;
+
 #### Option 3: Transferring bones
 
 It's time to play 3d puzzle and assemble bones from multiple sources. Unfortunately, there is no simple solution for this yet. You need to&#x20;
 
 * find the bones that your armature is missing in other meshes
-* [transfer them ](https://xbaebsae.jimdofree.com/tutorials/cp2077-transferring-and-expanding-skeletons-in-meshes/)into your import target mesh
+* transfer them into your import target mesh (guide on [xbae's page](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-transferring-and-expanding-skeletons-in-meshes/))
 * export all the extra meshes into Blender&#x20;
 * [merge their rigs](https://github.com/Simarilius-uk/CP2077\_BlenderScripts/blob/main/Merge\_rigs.py), which you should do with the linked Python script
 * and finally reimport everything back into Cyberpunk.
