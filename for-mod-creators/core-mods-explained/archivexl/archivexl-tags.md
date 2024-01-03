@@ -29,7 +29,7 @@ Please keep in mind that you need to add those to the [.app file](../../files-an
 | `hide_LowerAbdomen` | Hides lower abdomen.                    |
 | `hide_UpperAbdomen` | Hides upper abdomen.                    |
 | `hide_CollarBone`   | Hides collar bone area.                 |
-| `hide_Arms`         | Hides head.                             |
+| `hide_Arms`         | Hides arms.                             |
 | `hide_Thighs`       | Hides thighs.                           |
 | `hide_Calves`       | Hides calves.                           |
 | `hide_Ankles`       | Hides ankles.                           |
