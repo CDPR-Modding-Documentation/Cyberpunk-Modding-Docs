@@ -26,12 +26,6 @@ This guide assumes that&#x20;
     `tutorial\npv\your_female_character\head` \
     `tutorial\npv\your_male_character\head`
   * the meshes are named like their in-game equivalents, e.g. `h0_000_pwa_c__basehead.mesh`
-
-It's not a problem if you use your own custom paths, although it is easier to [change it at the end](../../everything-else/moving-and-renaming-in-existing-projects.md). If you decide to go for it, keep in mind that your paths are different and that you need to put different values into the provided .ent and .app file.
-{% endhint %}
-
-{% hint style="success" %}
-At any time during the tutorial, you can [**install** the Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch), launch into the game, open CET and spawn **Tutorial Man** and **Tutorial Woman** via AMM to check out your progress.
 {% endhint %}
 
 ## Skipping and skimming
@@ -40,7 +34,11 @@ This guide contains as little fluff as possible. Extra information will be conta
 
 If you're skimming in this guide, you **will** end up making mistakes. Read thoroughly. If at the end of a section you aren't where the guide says you're supposed to be, fall back and double-check your process. If you still have trouble, you can hit us up on [discord](https://discord.com/invite/redmodding) in the `#mod-development` channel.
 
-### How everything hangs together
+{% hint style="success" %}
+Remember that at any time, you can check your progress by [spawning your custom character](./#check-if-it-works).
+{% endhint %}
+
+## How everything hangs together
 
 In the end, an NPV is just a custom prop with a god complex. For that reason, the [file structure](../../everything-else/custom-props.md#with-variants) is the same (it's just a lot more complex, because you have more than 4 components).
 

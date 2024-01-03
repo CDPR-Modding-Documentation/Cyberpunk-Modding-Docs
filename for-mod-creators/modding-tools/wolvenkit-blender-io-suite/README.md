@@ -26,27 +26,39 @@ As soon as you have a **mesh** or **armature** selected, the viewport toolbar (k
 
 ### Animation Tools
 
-In this panel, you can find
+If you have a **visible armature** selected, you will see the Animation Tools. Here, you can find
 
 * shortcuts for playing, renaming and deleting existing animations
 * shortcuts to add new actions and insert keyframes
 
 … all outside of Blender's animation tab.
 
-### Collision Tools
-
-The collision tools and -generator can
-
-* generate of convex colliders with the exact shape of your mesh\
-  _The number of vertices to sample should be set to match the number set in the .phys file in order to ensure successful export_
-* generate box and capsule colliders with either user specified sizing or sized automatically to match the selected mesh
-* export edited collision bodies back to .phys \*\*\*currently requires a wolvenkit converted .phys.json file
-
 ### Mesh Tools
 
-#### Modelling: Transfer Vertex Weights
+#### Transfer Vertex Weights
 
-Lets you transfer [vertex weights](../../3d-modelling/meshes-and-armatures-rigging.md) from one mesh to the other.
+Lets you transfer [vertex weights](../../3d-modelling/meshes-and-armatures-rigging.md) from one collection to the other:
+
+<figure><img src="../../../.gitbook/assets/wkit_io_suite_transfer_weights.png" alt=""><figcaption><p>Transfer weights with the click of a button!</p></figcaption></figure>
+
+<details>
+
+<summary>Alternatively: By hand</summary>
+
+You can only do this on a mesh-by-mesh basis, so you have to do all meshes in sequence.
+
+To check out the more detailed process with a Transfer Weight modifier, check out the [custom-facial-piercings-prc-framework.md](../../modding-guides/items-equipment/custom-facial-piercings-prc-framework.md "mention") page, section [#weight-painting](../../modding-guides/items-equipment/custom-facial-piercings-prc-framework.md#weight-painting "mention")
+
+1. Select the mesh with weights
+2. Select the mesh that you want your weights transferred to
+3. Press `Ctrl+L` and select `Transfer Mesh Data`
+4. In the popup at the bottom left of your viewport, change the following properties:
+
+#### ![](../../../.gitbook/assets/wkit\_io\_suite\_transfer\_weights\_by\_hand.png)
+
+5. Click anywhere else. You're done!
+
+</details>
 
 #### [AKL Autofitter](wkit-blender-plugin-akl-autofitter.md)
 
@@ -60,13 +72,21 @@ Lets you change the armature target (the skeleton that'll move and deform your m
 
 Lets you export a hair profile. For documentation, see [#hair-profiles-.hp](wkit-blender-plugin-import-export.md#hair-profiles-.hp "mention")
 
-Check [#creating-your-own-hair-colours](../../materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") if that's what you want to do.
+{% hint style="info" %}
+You can find a guide about [#creating-your-own-hair-colours](../../materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") at the link.
+{% endhint %}
 
 #### UV Checker
 
-With the press of a button, you can switch out the currently active material&#x20;
+With the press of a button, you can switch out the currently active material to a coloured and numbered grid for easier UV mapping.
 
-If the currently selected mesh is currently using the UV checker, the button will change to easily allow you to restore the original material and remove the UV checker from your meshes material slots
+If the UV checker is currently assigned, pushing the button again will restore the original material.
 
-####
+### Collision Tools
 
+The collision tools and -generator can
+
+* generate of convex colliders with the exact shape of your mesh\
+  _The number of vertices to sample should be set to match the number set in the .phys file in order to ensure successful export_
+* generate box and capsule colliders with either user specified sizing or sized automatically to match the selected mesh
+* export edited collision bodies back to .phys \*\*\*currently requires a wolvenkit converted .phys.json file

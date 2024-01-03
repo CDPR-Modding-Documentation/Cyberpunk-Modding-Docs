@@ -17,8 +17,8 @@ For a step-by-step walkthrough for a recolour of the Netrunner suit, check [r-an
 
 It uses the following versions:
 
-* WolvenKit: [8.7.1-nightly.2022-11-06](https://github.com/WolvenKit/WolvenKit/compare/8.7.1-nightly.2022-11-05...8.7.1-nightly.2022-11-06) (but anything > 8.7 will do)
-* [MLSetupBuilder](../../../modding-tools/mlsetup-builder/): [1.6.5](https://github.com/Neurolinked/MlsetupBuilder) (older versions won't be compatible with WKit 8.7 and game version 1.6)
+* WolvenKit >= 8.11 ([Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) | [Stable](https://github.com/WolvenKit/Wolvenkit/releases))
+* [MLSetupBuilder](../../../modding-tools/mlsetup-builder/) >= 1.6.7 (get the [latest release](https://github.com/Neurolinked/MlsetupBuilder/releases/))
 
 {% hint style="info" %}
 Most items in Cyberpunk are not textured, but use a procedurally generated material consisting out of an [mlmask](../../../materials/multilayered/#what-is-the-mlmask) (a list of alpha masks) and an [mlsetup](../../../materials/multilayered/#what-is-the-mlsetup) (a list of material paths and -colours). There is a section on the exceptions below.

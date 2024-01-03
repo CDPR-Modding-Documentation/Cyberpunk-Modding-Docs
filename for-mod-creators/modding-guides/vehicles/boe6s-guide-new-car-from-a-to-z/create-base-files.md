@@ -1,8 +1,18 @@
-# Create base files
+# Boe6's vehicles: Create base files
 
-Create a new project in **WolvenKit** (wKit).
+#### Summary
+
+This page will show you how to create the base files that will tell your game about the new car.
+
+* [ ] [Create a new project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project) in **WolvenKit** (wKit).
 
 ### Create a new tweakXL `.yaml` file
+
+{% hint style="info" %}
+This file contains the [tweak ](../../tweakxl-changing-game-records/)which will register your car with the game's database.
+
+After creation, you can find it in your Wolvenkit project's [resources](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources) tab.
+{% endhint %}
 
 Create a new tweakXL file by going to “**New File**” in the top left of **wkit**, just next to the **HOME** button.
 
@@ -67,12 +77,13 @@ Note the 2 spaces, followed by a dash, followed by another space, then the `!ent
 
 ### Create a `.json` file
 
-Create a `.json` file in your project, the same as creating the `.yaml`. The option is about half way down the “**CR2W Files**” category. Name it the same as your vehicle.
+{% hint style="info" %}
+This file contains the translation strings, such as your car's name and description.
 
-Example: “`boe6_mini_cooper.json`”
+After creation, you can find it in your Wolvenkit project's [Archive](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#archive "mention") tab.
+{% endhint %}
 
-\
-
+Create a `.json` file in your project, the same as creating the `.yaml`. The option is about half way down the “**CR2W Files**” category. Name it the same as your vehicle (e.g. “`boe6_mini_cooper.json`”)
 
 <figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
@@ -218,7 +229,11 @@ Save, **Install and Launch**, test that it still works.
 
 ### Add the `.app` file
 
-Add the `.app` file to your project. Find it by navigating to the `appearanceResource` in your main appearance, which links to a `.app` file. Hit the yellow “**Add File to Mod**” button.
+{% hint style="info" %}
+This file contains your car's **components** for the individual appearances. You can read up about [appearance-.app-files.md](../../../files-and-what-they-do/appearance-.app-files.md "mention") at the link.
+{% endhint %}
+
+Add the `.app` file to your project. Find it by navigating to the `appearanceResource` in your main appearance, which links to an `.app` file. Hit the yellow “**Add File to Mod**” button.
 
 You’ll want to clean the appearances from this file as well. In the `.ent` file, note the `appearanceName` value. Then look at the `.app` file for the matching item in the list. That is the appearance we want to keep. The other appearances can be deleted as you did with the `.ent` file.
 
@@ -248,8 +263,6 @@ Example:
 Update your `.ent` file so the `appearanceResource` value matches the new file name & path.
 
 Install & Test.
-
-
 
 
 

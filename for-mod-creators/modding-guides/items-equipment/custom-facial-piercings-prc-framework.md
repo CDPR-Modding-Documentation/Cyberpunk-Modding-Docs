@@ -88,9 +88,11 @@ For easier selection merge head mesh vertices by distance. To do this, select th
 
 ## Weight painting
 
+{% hint style="info" %}
+You can do this much more comfortably with the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention")'s [#transfer-vertex-weights](../../modding-tools/wolvenkit-blender-io-suite/#transfer-vertex-weights "mention") button.
+{% endhint %}
 
-
-Now we need to either weight paint, or transfer weights if your new piercing is in the same position as vanilla one. Mine is, so I will go over transferring weights.
+Now we need to either weight paint, or **transfer weights** if your new piercing is in the same position as vanilla one. Mine is, so I will go over transferring weights.
 
 You can see the current weights the mesh has in Weight Paint mode.
 

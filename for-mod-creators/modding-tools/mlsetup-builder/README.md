@@ -4,14 +4,21 @@ description: The tool of your choice for editing multilayered materials
 
 # MLSETUP Builder
 
+### Summary
+
+This page will teach you how to download and configure **MLSetupBuilder**, the tool of choice to edit multilayered materials in Cyberpunk.&#x20;
+
+You can learn more about [multilayered](../../materials/multilayered/ "mention") at the link — at the top of the page, you will find links to several hands-on guides.
+
+At the bottom of the page, you will find [#video-guides](./#video-guides "mention"). Keep in mind that they are outdated.
+
 ## Introduction: What is MLSB?
 
 **MLSetupBuilder** (commonly referred to as "MLSB") is a Cyberpunk 2077 modding tool to comfortably edit MLSetup files, developed and maintained by Neurolinked.
 
 {% embed url="https://github.com/Neurolinked/MlsetupBuilder/releases/" %}
 
-\
-There is a dedicated channel on the [Redmodding Discord](https://discord.com/channels/717692382849663036/1082772930892664943) and a thread on the [Cyberpunk 2077 Modding Discord Server](https://discord.com/channels/705931815109656596/939510887188947014), where you can find a chat history full of undocumented features as well as previews from the most recent development versions.
+There is a dedicated channel on the [Redmodding Discord](https://discord.com/channels/717692382849663036/1082772930892664943) and a thread on the [Cyberpunk 2077 Modding Discord Server](https://discord.com/channels/705931815109656596/939510887188947014), where you can find a chat history full of (yet) undocumented features, along with previews and videos of the most recent development versions.
 
 ## Installation
 
@@ -177,6 +184,10 @@ If not, you haven't left your fingers off MLSB and need to start over. Click "Un
 If that doesn't help either, it's worth trying Wolvenkit Console's latest [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases).&#x20;
 
 ## Video Guides
+
+{% hint style="danger" %}
+Please keep in mind that these guides are seriously outdated. If things don't look as expected, check this guide, which is much more up-to-date, or find help on Discord (link in [#introduction-what-is-mlsb](./#introduction-what-is-mlsb "mention"))
+{% endhint %}
 
 {% embed url="https://www.youtube.com/watch?v=uCOHjMPvpgc" %}
 Credits to EzioMavericks for the video

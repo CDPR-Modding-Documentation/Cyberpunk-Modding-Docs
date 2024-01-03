@@ -1,4 +1,8 @@
-# Textures & Materials
+# Boe6's vehicles: Textures & Materials
+
+{% hint style="info" %}
+By default, cars use the [multilayered shader](../../../materials/multilayered/). You can find guides about editing multilayered material linked at the top of the documenation page.
+{% endhint %}
 
 ### `.mlmask` , .`mlmaskset` & `.masklist`
 

@@ -2,11 +2,15 @@
 
 ## Head file paths
 
-If you want to [edit the player's head](../../modding-guides/npcs/a-new-head-for-v.md), you need [meshes](../../files-and-what-they-do/3d-objects-.mesh-files.md) and [morphtargets](../../3d-modelling/morphtargets.md). If you want to make a custom NPC, you can check [this guide](../../modding-guides/npcs/npv-v-as-custom-npc/).
+If you want to [edit the player's head](../../modding-guides/npcs/a-new-head-for-v.md), you need [meshes](../../files-and-what-they-do/3d-objects-.mesh-files.md) and [morphtargets](../../3d-modelling/morphtargets.md).&#x20;
+
+If you want to make a custom NPC, you can check [this guide](../../modding-guides/npcs/npv-v-as-custom-npc/).
 
 <table data-header-hidden><thead><tr><th width="166.33333333333331">Body gender</th><th width="166">file extension</th><th>file path</th></tr></thead><tbody><tr><td>female</td><td><code>.mesh</code></td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\</code></td></tr><tr><td>female</td><td><code>.morphtarget</code></td><td><code>base\characters\head\player_base_heads\player_female_average</code></td></tr><tr><td>male</td><td><code>.mesh</code></td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pwa_c__basehead\</code></td></tr><tr><td>male</td><td><code>.morphtarget</code></td><td><code>base\characters\head\player_base_heads\player_man_average</code></td></tr></tbody></table>
 
-Here, you can also find tattoos and cyberware.
+{% hint style="info" %}
+The folders contain the entire player head. You will need between&#x20;
+{% endhint %}
 
 ## Skin tones by index
 

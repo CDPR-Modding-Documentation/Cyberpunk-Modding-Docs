@@ -4,7 +4,11 @@ description: >-
   routes to take for lights, depending on how you would like them to look.
 ---
 
-# Add lights
+# Boe6's vehicles: Add lights
+
+{% hint style="info" %}
+Lights are using **emissive** (glowing) and **glass** materials. For more documentation about that, you can check [configuring-materials.md](../../../materials/configuring-materials.md "mention").
+{% endhint %}
 
 Many lights, such as the headlights on the porsche, are reflective lights, with headlight lenses. These lenses require lots of lighting settings, such as `IOR`, `RefractionDepth`, `FresnelBias`, and more. \
 Example:

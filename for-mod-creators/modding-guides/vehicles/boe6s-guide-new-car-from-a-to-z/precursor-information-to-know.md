@@ -1,4 +1,4 @@
-# Precursor information to know
+# Boe6's vehicles: What you need to know
 
 ### Some familiarity with WolvenKit is required.&#x20;
 
@@ -42,7 +42,7 @@ I go into as much detail as I can, but try to be familiar with the project explo
 
 * Must have support for `.tga` files
 * Must have support for alpha channels
-* Photoshop, [Krita](https://krita.org/), [Paint.net](https://getpaint.net/), and [Gimp](https://gimp.org/) are good options
+* Photoshop ([Photopea](https://www.photopea.com/)), [Krita](https://krita.org/), [Paint.net](https://getpaint.net/), and [Gimp](https://gimp.org/) are good options
 
 ### Some Python familiarity
 

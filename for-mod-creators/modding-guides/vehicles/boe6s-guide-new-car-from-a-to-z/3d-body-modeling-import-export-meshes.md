@@ -1,14 +1,12 @@
-# 3D Body modeling - Import/export meshes
+# Boe6's vehicles: Import/export meshes
 
-
-
-{% hint style="info" %}
+{% hint style="danger" %}
 To import vehicles models from **Wolvenkit** into **Blender**, use [**THIS GUIDE**](https://wiki.redmodding.org/wolvenkit/modding-community/exporting-to-blender/exporting-vehicles) .
 
 This update method allows for import all components and rigs together as one model. I recommend following it before continuing with this guide, as it has more valuable information.
 {% endhint %}
 
-Add the proxy mesh to the project.
+## Add the proxy mesh to the project.
 
 To add our models for the different parts, we’ll be looking mostly in the `.app` file, under our main appearance.
 

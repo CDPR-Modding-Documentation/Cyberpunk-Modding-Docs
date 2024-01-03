@@ -13,7 +13,14 @@ While the multilayered supershader is very common, there are hundreds of other n
 {% endhint %}
 
 {% hint style="success" %}
-For a list of shader properties in multilayered.mt, see [here](multilayered-material-properties.md).
+For a list of shader properties in multilayered.mt, see [multilayered-material-properties.md](multilayered-material-properties.md "mention")
+
+This wiki contains multiple guides about editing multilayered materials, such as:
+
+* For editing .mlmask files: [custom-multilayermasks.md](../../textures/custom-multilayermasks.md "mention")
+* For editing .mlsetup files:&#x20;
+  * [changing-materials-colors-and-textures.md](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") ->[#multilayered-material](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material "mention")
+  * [recolours-and-refits](../../modding-guides/items-equipment/recolours-and-refits/ "mention") -> [r-and-r-colour-editing.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-colour-editing.md "mention")
 {% endhint %}
 
 ## Composition
@@ -43,8 +50,12 @@ As shown above, each mesh using the multilayer shader uses a unique **mlmask** f
 
 **MLSETUP** files are fairly self-explanatory when considering the name, multilayer setup. These files correspond with an **mlmask** file and are responsible for setting up parameters for each layer from the mlmask. Each layer within an mlsetup contains information very similar to materials or shaders.
 
+To edit .mlsetup files, it's recommended that you use the [mlsetup-builder](../../modding-tools/mlsetup-builder/ "mention") software.
+
 {% hint style="info" %}
-For a definition of the properties, see [multilayered-material-properties.md](multilayered-material-properties.md "mention")
+For a definition of the properties, see [multilayered-material-properties.md](multilayered-material-properties.md "mention").
+
+For a guide on how to edit one, check [r-and-r-colour-editing.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-colour-editing.md "mention").
 {% endhint %}
 
 ![File structure of mlsetup viewed with WolvenKit](<../../../.gitbook/assets/MLSETUP example.png>)

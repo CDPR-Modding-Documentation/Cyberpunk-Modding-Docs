@@ -6,8 +6,8 @@ description: 'Step 1: How to generate your V''s custom head mesh'
 
 ## **Summary**
 
-**Created by @manavortex**\
-**Published May 13 2023**
+**Published by @manavortex, May 13 2023**\
+**Last documented update: Jan 04 2024**
 
 This page is a part of the [NPV guide](./). It will show you how to create your V's head in Blender. If you want to load your head back into Cyberpunk, note that you aren't changing anything in the files itself — that will come in [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention"). If you want a 3d model, you probably know what you're doing; in that case, make sure to run the script and get the shape right, then go wild.
 
@@ -15,7 +15,7 @@ This page is a part of the [NPV guide](./). It will show you how to create your 
 
 * [ ] You have downloaded the prepared Wolvenkit Project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328)
 * [ ] You have [Blender](https://www.blender.org/download/) installed \
-  _(confirmed working on 3.5.1 and 3.6, **should** work with >= 3.4)_
+  _(confirmed working on 3.5.1, 3.6 and 4.0)_
 
 In this section, we will be moving/deleting files. You can complete these steps in Wolvenkit or in the Windows File Explorer.
 
@@ -96,7 +96,7 @@ tutorial\npv\your_female_character\head\i1_000_pwa_c__basehead_earring_03.mesh
 tutorial\npv\your_female_character\head\i1_000_pwa_c__basehead_earring_04.mesh
 ```
 
-… none of which is your V's exact piercings. Instead, there are full sets of jewellery, most of which will be **hidden**.
+… none of which is your V's exact piercings. Instead, there are full sets of jewelry, most of which will be **hidden**.
 
 You have to look at the meshes and find the file that includes your set of piercings. We'll go about hiding the excess in one of the later steps.
 
@@ -110,9 +110,12 @@ Number in file name <=> Number in character creator
 Do not delete any files if you're [editing the player head](../a-new-head-for-v.md) (Ignore this hint if you don't)
 {% endhint %}
 
-Many of the files are **variants** and your V will be using **one or none of them.** That means you have a bunch of files to delete. If you have chosen [the convenient option](npv-preparing-the-head-in-blender.md#the-convenient-option) above, you should already have a list of files that you need to keep. Otherwise, the table below should give you some oversight.
+Many of the files are **variants** and your V will be using **one or none of them.** That means you have a bunch of files to delete.&#x20;
 
-When deleting files that you aren't using, you need to remove both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder.
+* If you have chosen [the convenient option](npv-preparing-the-head-in-blender.md#the-convenient-option), you should already have a list of files that you need to keep.&#x20;
+* Otherwise, you need to refer to [#what-the-actual-fuck-are-all-these-files](npv-preparing-the-head-in-blender.md#what-the-actual-fuck-are-all-these-files "mention") and use the table below for some oversight.
+
+When deleting files that you aren't using, you need to remove both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder, both in the [archive](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#archive) and the [raw](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw) section.
 
 The following table will show you examples on what to **keep** (as in, you **delete everything else**):
 
@@ -194,6 +197,10 @@ You don't need to select the eyebrows here, as those are "painted on" later via 
 Some shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of your shape is shaped subtly wrong or looks weird in the game, **undo** your changes (Ctrl+Z), add or subtract 1 from the corresponding shape key, and run the script again.
 {% endhint %}
 
+#### Can I have that with textures?
+
+Yes, you absolutely can! Once you have imported everything back into Wolvenkit, you can re-export the `.mesh` files and use the [Wolvenkit Blender IO suite](../../../modding-tools/wolvenkit-blender-io-suite/) to import them with materials.
+
 ## Step 3: Importing head
 
 {% hint style="info" %}
@@ -213,18 +220,17 @@ This will overwrite already existing files, leaving you with a set of import-rea
 Now it's time to get them back into Wolvenkit.
 
 1. Find the Import Tool (Tools -> Import Tool)
-2. Click "Import All"
+2. Click "Import All". You shouldn't see any errors.
 3. You're done!
 
-{% hint style="success" %}
-You can now start the game and look at your V's face to make sure that your head and eyes are showing up correctly . If it does, read on how to [hook up stuff for the game files](npv-creating-a-custom-npc.md). Otherwise, keep reading.
-{% endhint %}
+## Step 4: Make sure that it works
 
-### Can I have that with textures?
+Spawn your NPV and check that they look like they should.&#x20;
 
-Yes, you absolutely can! Once you have imported them back into Wolvenkit, you can use the With Materials option and the Wolvenkit Blender Plugin to get a fully textured and shaded set.&#x20;
+* If they do, proceed with [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention")
+* If they don't, check [#step-5-optional-troubleshooting](npv-preparing-the-head-in-blender.md#step-5-optional-troubleshooting "mention")
 
-## Step 4 (optional): Troubleshooting
+## Step 5 (optional): Troubleshooting
 
 Optimally, this process just runs with no hitches. However, during beta testing and troubleshooting, people ran into a few issues, so I'm listing them here.
 
@@ -236,21 +242,15 @@ As of December 2023, **any** script errors have been because the person encounte
 
 <figure><img src="../../../../.gitbook/assets/npv_blender_version.png" alt=""><figcaption><p>This is using Blender 2.93, which is definitely not compatible.</p></figcaption></figure>
 
-The files have been tested with 3.5.1, but anything >= 3.4 should work.&#x20;
+The files have been tested with 3.5.1, 3.6 and 4.0, but anything >= 3.4 should work.&#x20;
 
-#### The piercings are in the wrong position!
+### The piercings are in the wrong position!
 
 The problem went away after the person having it upgraded Blender to 3.5.&#x20;
 
-#### V was imported, but the textures are all wrong!
-
-This happens when the UV maps are flipped. 8.9 doesn't implement that feature yet, so you might have to use a [more recent version](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) of Wolvenkit — the Nightly from [2023-04-29](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-04-29) is currently stable.&#x20;
-
-Alternatively, you can use the last script in the file, which will attempt to flip the UV maps for you. It might have an offset, though.
-
-#### V was imported, but they're unsettlingly, subtly _wrong_
+### V was imported, but they're unsettlingly, subtly _wrong_
 
 If you had the example project lying around for a very long time, please try and redownload it ([Nexus link](https://www.nexusmods.com/cyberpunk2077/mods/8328)), as the first version had been using an NPC animationgraph for facial expressions.
 
-If that's not it, then you ran into the shapekey offset issue: ssome shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of your shape is shaped subtly wrong or looks weird in the game, add or subtract 1 from the corresponding shape key, and run the script again.
+If that's not it, then you ran into the shapekey offset issue: some shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of your shape is shaped wrong or looks weird in the game, **add or subtract 1** from the corresponding shape key, and run the script again.
 

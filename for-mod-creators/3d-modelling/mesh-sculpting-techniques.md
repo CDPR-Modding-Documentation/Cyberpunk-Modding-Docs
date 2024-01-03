@@ -13,6 +13,8 @@ This guide will give you a number of techniques when it comes to editing meshes 
 
 {% hint style="success" %}
 Starting in version 1.5.0, the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention") features an [auto-refitter](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md), which supports many custom bodies and will be expanded in the future.&#x20;
+
+For information on weight painting, check [meshes-and-armatures-rigging.md](meshes-and-armatures-rigging.md "mention")
 {% endhint %}
 
 Assumed skill level: \
@@ -25,7 +27,19 @@ For a step-by-step refitting guide, check [here](../modding-guides/items-equipme
 You can find video guides for refitting linked on the [community guides](../modding-guides/community-guides/) page
 {% endhint %}
 
-## Prerequisite: Deleting shapekeys
+## Proportional editing
+
+{% hint style="danger" %}
+You can find the documentation about this under [r-and-r-refitting-step-by-step.md](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") -> [#step-4-refitting](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md#step-4-refitting "mention").
+
+This is the **recommended method**, as it is **easiest**, **fastest**, and has the least chance of wreaking havoc with things that you don't want to fix.&#x20;
+
+This page documents other techniques so you've heard about them. If you're new about this, do **not** read on here.
+{% endhint %}
+
+## Sculpting
+
+### Prerequisite: Deleting shapekeys
 
 Before you start editing your mesh, you should delete its shapekeys. This is necessary for the Sculpt Mode to show your changes in real time, and you don't need them anymore after editing your mesh.
 
@@ -35,9 +49,9 @@ Before you start editing your mesh, you should delete its shapekeys. This is nec
 Some people have been told to delete the Armature modifier before sculpting. **That's not necessary**!
 {% endhint %}
 
-## Sculpting
+### Sculpting the mesh
 
-The obvious approach is to change your mesh by moving vertices. However, this will take **a very long time** and probably be frustrating. A faster way is to use Blender's Sculpt Mode.
+The obvious approach is to change your mesh by moving vertices. This process is covered in the [r\&r refitting guide](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md#step-4-refitting).
 
 {% hint style="info" %}
 The downside of the sculpt mode is that it can edit **only the selected mesh**. \
