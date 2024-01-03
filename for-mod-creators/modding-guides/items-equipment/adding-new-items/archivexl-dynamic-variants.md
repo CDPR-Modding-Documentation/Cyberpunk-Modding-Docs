@@ -87,17 +87,17 @@ This file contains the biggest part of the dynamic magic.&#x20;
 
 This is your dynamic project's yaml file, minus any properties that aren't influenced by the dynamic appearances:
 
-<pre class="language-yaml"><code class="lang-yaml"><strong>Items.my_custom_shirt_dynamic_${base_color}_${ribbons}:
+<pre class="language-yaml"><code class="lang-yaml"><strong>Items.my_custom_shirt_dynamic_$(base_color)_$(ribbons):
 </strong>  $base: Items.GenericInnerChestClothing
   $instances:
     - { base_color: white, ribbons: red,  icon: 01 }
     - { base_color: black, ribbons: red,  icon: 02 }
     - { base_color: black, ribbons: blue, icon: 03 }
-  appearanceName: root_entity_dynamic_appearance_!${base_color}+${ribbons}
-  displayName: my_custom_shirt_dynamic_i18n_${base_color}_${ribbons}
+  appearanceName: root_entity_dynamic_appearance_!$(base_color)+$(ribbons)
+  displayName: my_custom_shirt_dynamic_i18n_$(base_color)_$(ribbons)
   icon:
     atlasResourcePath: tutorial\torso\my_custom_shirt_dynamic_variants\ops\preview_icons.inkatlas
-    atlasPartName: slot_${icon}
+    atlasPartName: slot_$(icon)
 </code></pre>
 
 This section will explain how that works - except for the appearanceName, you will find that in [#the-root\_entity](archivexl-dynamic-variants.md#the-root\_entity "mention").
@@ -106,14 +106,15 @@ This section will explain how that works - except for the appearanceName, you wi
 
 TweakXL will generate one record per entry in `$instances`, according to the rules that you're using in the item name. This happens via **property interpolation**.
 
-The example above will generate three item entries by **substituting** `${property_name}` with the value of the property from the entry. If that isn't clear enough, check the example and the resulting item codes at the end of the line.
+The example above will generate three item entries by **substituting** `$(property_name)` with the value of the property from the entry. If that isn't clear enough, check the example and the resulting item codes at the end of the line.
 
-<pre class="language-yaml"><code class="lang-yaml"><strong>Items.my_custom_shirt_dynamic_${base_color}_${ribbons}:
-</strong>  $instances:
+```yaml
+tems.my_custom_shirt_dynamic_$(base_color)_$(ribbons):
+  $instances:
     - { base_color: white, ribbons: red,  icon: 01 } # Items.my_custom_shirt_dynamic_white_red
     - { base_color: black, ribbons: red,  icon: 02 } # Items.my_custom_shirt_dynamic_black_red
     - { base_color: black, ribbons: blue, icon: 03 } # Items.my_custom_shirt_dynamic_black_blue
-</code></pre>
+```
 
 If you [install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your project, you can immediately spawn them in Cyberpunk via Cyber Engine Tweaks:
 
