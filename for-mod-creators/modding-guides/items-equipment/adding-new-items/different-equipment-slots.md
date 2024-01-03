@@ -24,28 +24,35 @@ TL;DR:
 
 ## Step 1: The .yaml
 
-You define the item slot in your .yaml file by specifying the **root entry type** via `$base:`
+You define the item slot in your .yaml file by specifying the **root entry type** via a `$base` record. Base records come in many different types, some include intrinsic modifiers that add slight stat improvements to items, or add special sound to items. A complete page with clothing items, their intrinsic modifier, and their baseids can be found on the official Cyberpunk 2077 wiki's article for clothing [here](https://cyberpunk.fandom.com/wiki/Cyberpunk\_2077\_Clothing).
 
 ```yaml
-Items.my_custom_shirt:                      << name of your item (the spawn code)
-  $base: Items.GenericInnerChestClothing
-  
-Items.MyHelmet:
-  $base: Items.GenericHeadClothing
+Items.My_Custom_Shirt:                      << name of your item (the spawn code)
+  $base: Items.Shirt
+Items.My_Custom_Helmet:
+  $base: Items.Helmet
+# For items that should hide hair, use records with the "Hair" suffix.
+Items.My_Custom_HelmetWithHair:
+  $base: Items.HelmetHair
+# For items that should have an intrinsic modifier, e.g. Armor
+Items.My_Custom_HelmetWithArmor:
+  $base: Items.Helmet_Intrinsic
+# For feet items that use heels (clicky sound)
+Items.MyCustom_Heels:
+  $base: Items.FormalShoes
 ```
 
-You can use the following types:
+You can use the following base types:
 
-| Base record                          |                                                                          |
-| ------------------------------------ | ------------------------------------------------------------------------ |
-| Head slot                            | `Items.GenericHeadClothing`                                              |
-| Head slot (glasses slot)             | <p><code>Items.Glasses</code><br><code>Items.Visor</code></p>            |
-| Head slot (mask)                     | `Items.GenericFaceClothing`                                              |
-| Torso (inner, t-shirt)               | `Items.GenericInnerChestClothing`                                        |
-| Torso (outer, jacket)                | `Items.GenericOuterChestClothing`                                        |
-| Legs                                 | <p><code>Items.GenericLegClothing</code><br><code>Items.Skirt</code></p> |
-| Shoes                                | `Items.GenericFootClothing`                                              |
-| Outfit (full body, e.g. diving suit) | `Items.Outfit`                                                           |
+| Slot        | Records                                                                                                                                                                                                                                                                                                                                 |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Head        | <p>Helmet,</p><p>HelmetHair,</p><p>Helmet_Intrinsic,<br>HelmetHair_Intrinsic,</p><p>Helmet_EP1_Intrinsic_Armor,</p><p>Helmet_EP1_Intrinsic_Runner,</p><p>Helmet_EP1_Intrinsic_ExplosionDmg,</p><p>Helmet_EP1_Intrinsic_Zoom,</p><p>Hat,</p><p>Cap,</p><p>Scarf,</p><p>ScarfHair,</p><p>Balaclava,</p><p>Balaclava_Intrinsic</p>         |
+| Face        | <p>Glasses, <br>Mask, <br>Mask_Intrinsic,<br>Visor,</p><p>Visor_Intrinsic_QH,</p><p>Visor_Intrinsic_Zoom,<br>Tech,<br>Tech_Intrinsic_Zoom</p>                                                                                                                                                                                           |
+| Outer Torso | <p>Coat,<br>Coat_Intrinsic,<br>Dress,<br>FormalJacket,<br>FormalJacket_Intrinsic,<br>Jacket,<br>Jacket_Intrinsic_Armor,<br>Jumpsuit,<br>Jumpsuit_Intrinsic,</p><p>LooseShirt,<br>Vest,<br>Vest_Intrinsic_Armor,<br>Vest_Intrinsic_Reload,<br>Vest_EP1_Intrinsic_Armor,<br>Vest_EP1_Intrinsic_Grenade,<br>Vest_EP1_Intrinsic_Inhaler</p> |
+| Inner Torso | <p>FormalShirt,</p><p>Shirt,<br>TankTop,</p><p>TightJumpsuit,<br>TightJumpsuit_Intrinsic,</p><p>TShirt,<br>Undershirt,<br>Undershirt_Intrinsic</p>                                                                                                                                                                                      |
+| Legs        | <p>FormalPants,<br>Pants<br>Pants_Intrinsic_Armor,<br>Pants_Intrinsic_Carry,</p><p>Shorts,<br>Skirt</p>                                                                                                                                                                                                                                 |
+| Feet        | <p>Boots,<br>Boots_Intrinsic,<br>CasualShoes,<br>FormalShoes</p>                                                                                                                                                                                                                                                                        |
+| Special     | <p>Outfit,<br>Outfit_EP1</p>                                                                                                                                                                                                                                                                                                            |
 
 {% hint style="info" %}
 You can absolutely set up a shirt and then put `$base: Items.GenericHeadClothing` - V is the only person I know of who can wear their undies on their head without impairing their functionality.\
