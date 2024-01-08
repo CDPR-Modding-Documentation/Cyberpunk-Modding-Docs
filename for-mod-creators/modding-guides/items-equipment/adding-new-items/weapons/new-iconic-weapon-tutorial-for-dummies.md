@@ -79,11 +79,13 @@ Open the overridden tweak file in a code editor of your choice (such as Notepad+
 
 ## Step 6: Understand the Fields in the .yaml File
 
-The .yaml file may seem complex at first glance, but here's a breakdown of key fields in another weapon tweak (`Items.Preset_Sidewinder_Default`) : (Thanks to BuffMcMuff)
+The .yaml file may seem complex at first glance, but here's a breakdown of key fields in another weapon tweak (`Items.Preset_Sidewinder_Default`) : (Thanks to BuffMcMuff)\
+\
+Note : For first time modders, understanding all this in one go will be difficult, so keep these explanations handy and revisit them as and when required)
 
 <pre class="language-yaml"><code class="lang-yaml"><strong>Items.Preset_Sidewinder_Default: # item "code" for your weapon. use this when giving item.
-</strong>  $type: gamedataWeaponItem_Record # the type of record.
-  ammo: Ammo.RifleAmmo # ammo type used
+</strong>  $type: gamedataWeaponItem_Record # the type of record. (records need to be defined with either a $type or a $base)
+  ammo: Ammo.RifleAmmo # ammo type used (Fun Fact: Dex's Gun has ammo type - Items.Money)
   baseEmptyReloadTime: 1.54999995 # base reload time when mag empty NOTE: DO NOT EDIT RELOAD SPEED HERE see statModifierGroups: Items.Base_Sidewinder_Handling_Stats
   baseReloadTime: 1.54999995 # base reload time when mag is not empty NOTE: DO NOT EDIT RELOAD SPEED HERE see statModifierGroups: Items.Base_Sidewinder_Handling_Stats
   damageType: DamageTypes.Physical # damage type
@@ -298,5 +300,79 @@ rate(cycle time), mag size, smart range
 
 </code></pre>
 
-Each field in the .yaml file represents a specific attribute or behavior of the weapon. It's crucial to understand these fields to effectively customize your iconic weapon.
+## Step 7: Making a New Weapon
 
+Making a new weapon is fairly simple. Change the Item ID a the very first line to "Items.Hand\_Of\_Midas" and save your file.
+
+{% code lineNumbers="true" %}
+```yaml
+Items.Preset_Unity_Default: -> Remove this
+Items.Hand_Of_Midas: -> Add this
+```
+{% endcode %}
+
+That's it, you've created a new weapon now. This weapon will look & behave exactly like the Unity handgun, but trust me, it's new. To test it out, boot up your game and load any save.
+
+<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
+
+Now open up the CET Console (Insert how to link here) and type in the command below and hit Enter.
+
+```
+ Game.AddToInventory("Items.Hand_Of_Midas",1)
+```
+
+<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Your newly created weapon is now in game.</p></figcaption></figure>
+
+You can now see your newly created weapon in your inventory. But, there is no way to tell it apart from the Unity handgun. We'll get to fixing that, but first some clean up. Open up your WolvenKit & rename your overriden tweak file to "hand\_of\_midas.yaml". We will store all the edits that need to be done to our new weapon in this file.
+
+## Step 8: Making a New Weapon feel New
+
+Let's change something that will differentiate our weapon from the default Unity. To do this, open your renamed tweak file & find the "crosshair" tag. Then replace it as shown below, and save your file.
+
+```yaml
+  crosshair: Crosshairs.Simple -> remove this
+  crosshair: Crosshairs.Tech_Round -> add this
+```
+
+Now hot reload your game (Insert how to link here) or close it, then click install in WolvenKit & relaunch your game (From here on, this will be referred to as hot reload). Spawn in both the Unity & Hand of Midas using the CET console.
+
+```
+Game.AddToInventory("Items.Hand_Of_Midas",1)
+Game.AddToInventory("Items.Preset_Unity_Default",1)
+```
+
+<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Default Unity crosshair</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Hand of Midas crosshair</p></figcaption></figure>
+
+You should now be able to see that both the Unity & Hand Of Midas, although otherwise identical, now have different crosshairs. But how did we figure out the crosshair ID "Crosshairs.Tech\_Round" ? By searching for "Crosshairs." in the Tweak Browser. Most things we find inside the weapon tweak will be searchabled within the Tweak Browser, and some within the Asset Browser.
+
+<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
+
+Editing the Tweak will allow us to modify all of our gun's behaviors, and I encourage you to play around with these.
+
+## Step 9: Using $base instead of $type
+
+We now have a big tweak file for Hand of Midas with only 1 field that we are truly changing, which is the crosshair. There is no need to write so much redundant code for small changes, in fact, it's best practice not to.
+
+```yaml
+Items.Hand_Of_Midas:
+  $base: Items.Preset_Unity_Default
+  Just the properties we want to edit ...
+
+OR
+
+Items.Hand_Of_Midas:
+  $type: gamedataWeaponItem_Record
+  All the other properties ...
+```
+
+As shown above, when using $type to define a tweak, we need to add all the required properties for the type, but when using $base to define one, we only need to add the properties we are changing, the rest are taken from the parent.
+
+Now go ahead and change it so we use a base & only define the crosshair, your tweak should now look like this -
+
+```yaml
+Items.Hand_Of_Midas:
+  $base: Items.Preset_Unity_Default
+  crosshair: Crosshairs.Tech_Round
+```

@@ -44,15 +44,15 @@ The first step in this process is going to be locating the .app file. Most main 
 
 For us, we'll be wanting to locate victor\_vektor.app, which is in the main\_npc folder I listed earlier. Once we add this file to our project and open it, we will see an array named "appearances".
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 All of the different appearances for Victor are located in this array. Upon expanding it, we see that he only has three.
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 We'll be editing the default appearance in this guide. But the principle is the same. Next we will open the default appearance and then open the "components" array. This is where all of the components for that appearance are stored. Clothes, body meshes, hair meshes, etc.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 As you can see, there are quite a lot to sort through. Don't worry though, most of these things you won't have to mess with anyway.
 
@@ -66,15 +66,15 @@ Since we want to modify the body mesh and his shirt, here are the components we'
 
 To modify the body mesh, we'll export it to Blender. First, add the mesh file to your project. The mesh file can be found and added by expanding the component and clicking the yellow arrow next to the mesh file.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, we want to export the file out of Wolvenkit to enable us to edit the mesh in Blender, since right now, the file is in a format Blender can't read. To export the file, go to your toolbar on the top, click on "Tools" and then "Export Manager". Once that's open, you'll want to check the box next to your body mesh and click "Export Selected".
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Now, your file can be read and modified by Blender. Open up Blender (make sure you have the CP Add-On installed), and once you have a fresh project open (delete everything, camera and light included), click on "File>Import>Cyberpunk GLTF". Locate your project folder, then find your mesh file in "raw". It'll probably be somewhere like "Ripperdoc\_Tutorial\source\raw\base\characters\main\_npc\ripper\_doc". Import it.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
 
 If all went well, you should see a blank body mesh in your viewport.
 
