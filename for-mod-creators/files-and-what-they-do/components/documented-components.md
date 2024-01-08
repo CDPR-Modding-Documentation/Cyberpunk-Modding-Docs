@@ -1,7 +1,7 @@
 # Documented Components
 
 {% hint style="info" %}
-See the [Comprehensive Component Hierarchy List](../../../modding-know-how/files-and-what-they-do/components/comprehensive-components-list.md) for all possible components used in the game, organized by hierachy. Use for researching and documenting components.
+See the [Comprehensive Component Hierarchy List](comprehensive-components-list.md) for all possible components used in the game, organized by hierachy. Use for researching and documenting components.
 
 For a json dump of all existing components and their properties, check [DrPresto's github repository.](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lists/entComponent\_types.json)
 

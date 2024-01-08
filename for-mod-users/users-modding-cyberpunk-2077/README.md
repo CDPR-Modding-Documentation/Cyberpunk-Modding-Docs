@@ -27,7 +27,7 @@ If you want to learn more about the frameworks, you can check the [core-mods-exp
 **TL;DR:** Your mods will not work unless you
 
 * make sure all files end up in the right folders
-* make sure to install all [requirements](requirements-explained.md) (and their requirements)
+* make sure to install all [requirements](../user-guide-troubleshooting/requirements-explained.md) (and their requirements)
 * [enable REDmod](./#installing-and-activating-redmod)
 
 When you fuck things up, hit up [#troubleshooting](./#troubleshooting "mention") or run [mod remover](https://www.nexusmods.com/cyberpunk2077/mods/8597/) and start over.
@@ -59,7 +59,7 @@ Regardless of your past experiences, the Nexus Mod Manager [Vortex](https://www.
 
 ### What are dependencies / requirements?
 
-For more detailed information, see [requirements-explained.md](requirements-explained.md "mention").
+For more detailed information, see [requirements-explained.md](../user-guide-troubleshooting/requirements-explained.md "mention").
 
 {% hint style="danger" %}
 TL;DR:&#x20;
@@ -87,7 +87,7 @@ This list is supposed to give you an overview of which files go where. It is **n
 
 To learn more about the individual frameworks, check [core-mods-explained](../../for-mod-creators/core-mods-explained/ "mention")
 
-<table><thead><tr><th width="256">Directory</th><th>explanation</th></tr></thead><tbody><tr><td>\<code>mods</code></td><td><a data-mention href="../../for-mod-creators/core-mods-explained/redmod/">redmod</a> directory: contains .archive mods (in subfolders)</td></tr><tr><td>\<code>archive\pc\mod</code></td><td>Legacy directory: contains .archive mods and .xl files</td></tr><tr><td>\<code>bin\x64\plugins</code></td><td>Plugins like Cyber Engine Tweaks</td></tr><tr><td><code>\r6\scripts</code></td><td>Redscript mods (<strong>not</strong> the same as REDmod)</td></tr><tr><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr></tbody></table>
+<table><thead><tr><th width="256">Directory</th><th>explanation</th></tr></thead><tbody><tr><td>\<code>mods</code></td><td><a data-mention href="redmod/">redmod</a> directory: contains .archive mods (in subfolders)</td></tr><tr><td>\<code>archive\pc\mod</code></td><td>Legacy directory: contains .archive mods and .xl files</td></tr><tr><td>\<code>bin\x64\plugins</code></td><td>Plugins like Cyber Engine Tweaks</td></tr><tr><td><code>\r6\scripts</code></td><td>Redscript mods (<strong>not</strong> the same as REDmod)</td></tr><tr><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr></tbody></table>
 
 ```markup
 - archive

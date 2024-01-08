@@ -32,7 +32,7 @@ Would you rather…
 * Import/Export to fbx [with Noesis](autodesk-fbx-noesis.md)?
 * Use the [Wolvenkit Blender Plugin](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md)?
 * Read more about [Wolvenkit's Import/Export tool](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/import-export/export-settings)?
-* [Replace meshes](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md) without editing them?
+* [Replace meshes](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/) without editing them?
 * Export [a whole character](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender) or [an animated character](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)?
 
 #### Legacy: Noesis
@@ -131,7 +131,7 @@ will be imported over
 {% endhint %}
 
 {% hint style="warning" %}
-WolvenKit refuses to import if the target mesh doesn't support all bones in the glb or if your mesh's topology became corrupted. If that's the case, check the [troubleshooting page](../self-made-normal-maps/troubleshooting-normal-maps.md).
+WolvenKit refuses to import if the target mesh doesn't support all bones in the glb or if your mesh's topology became corrupted. If that's the case, check the [troubleshooting page](../../modding-guides/textures-and-luts/self-made-normal-maps/troubleshooting-normal-maps.md).
 {% endhint %}
 
 ## Import/Export: \_doubled

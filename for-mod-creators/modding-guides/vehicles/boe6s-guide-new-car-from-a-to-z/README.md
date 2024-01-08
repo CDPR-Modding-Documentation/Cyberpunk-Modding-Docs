@@ -37,3 +37,6 @@ This guide may not cover all 2.0 changes. Most everything should be correct, let
 {% endhint %}
 
 \
+For the visual learners among us, you can find a youtube video series by boe6 here:
+
+{% embed url="https://www.youtube.com/watch?v=TaXzS4IREq0" %}

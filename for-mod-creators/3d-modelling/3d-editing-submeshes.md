@@ -13,7 +13,7 @@ If you run into problems, check [exporting-and-importing-meshes](exporting-and-i
 {% hint style="danger" %}
 TODO: Explain how this works.&#x20;
 
-* Link to chunkmask section on [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention") page (and back). If there isn't one, create it.
+* Link to chunkmask section on [3d-objects-.mesh-files](../files-and-what-they-do/3d-objects-.mesh-files/ "mention") page (and back). If there isn't one, create it.
 * Link to PartsOverrides: chunkmask section on [appearance-.app-files.md](../files-and-what-they-do/appearance-.app-files.md "mention") page (and back). If there isn't one, create it.
 * Other pages that might need linking:
   * [adding-new-items](../modding-guides/items-equipment/adding-new-items/ "mention")

@@ -147,9 +147,7 @@ In theory, you can configure Vortex so that you hit the download button on the w
 This setting controls the automatic REDmod conversion. For an explanation of what that means, see [here](../#installing-and-activating-redmod).
 {% endhint %}
 
-This only has one setting, but it's recommended to keep it toggled "on" unless otherwise directed specifically by install instructions on a mod.
-
-<figure><img src="../../../.gitbook/assets/Vortex_DiD3Y0Znnc.png" alt=""><figcaption><p>This option can also show up on the dashboard.</p></figcaption></figure>
+This only has one setting: automatic REDmod conversions. The only benefit of this settings is that you can control your archive load order completely. It is only recommended to turn this on if you have conflicting REDmod archives. If you do not have any REDmods installed (or have no known conflicts), you do not need to touch this.
 
 #### Mods
 
@@ -181,7 +179,7 @@ Finally, we will return to our dashboard.&#x20;
 
 No matter what settings you chose in interface, you should still have a section labeled "Tools", where at this point you should at least see four things, the last of which will be disabled:
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (116).png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
 
 It can be helpful here to toggle "Enable Toolbar" above it so that you can always see them wherever you are in Vortex.
 
@@ -288,7 +286,7 @@ Mod authors sometimes disable mod manager integration for a variety of reasons. 
    The file doesn't have any particular instruction.
 5. Optional: view the file contents – they sometimes contain helpful information:
 
-<figure><img src="../../../.gitbook/assets/image (1) (5).png" alt=""><figcaption><p>The naming convention tells us that it's a hair replacer from Wingdeer for the female body gender, changing hair 48, There's also a preview picture included.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (123).png" alt=""><figcaption><p>The naming convention tells us that it's a hair replacer from Wingdeer for the female body gender, changing hair 48, There's also a preview picture included.</p></figcaption></figure>
 
 6. Manually download the file – you know the drill by now.
 7. Return to the Vortex "mods" page. You have two ways to install the mod now:&#x20;

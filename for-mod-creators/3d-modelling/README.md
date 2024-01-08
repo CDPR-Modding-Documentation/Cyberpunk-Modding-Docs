@@ -12,15 +12,15 @@ Due to its complexity, we don't have a dedicated guide on Blender. However, if y
 
 * [Sculpting](mesh-sculpting-techniques.md)
 * [Proportional editing / Refitting](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md)
-* [Texture painting](../textures/custom-multilayermasks.md) and [normal map creation](self-made-normal-maps/)
+* [Texture painting](../modding-guides/textures-and-luts/custom-multilayermasks.md) and [normal map creation](../modding-guides/textures-and-luts/self-made-normal-maps/)
 * [Adding submeshes](3d-editing-submeshes.md) or [Splitting meshes](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)
 
 For more hands-on advice, see the guide section, for example
 
-* [importing meshes from external sources](../modding-guides/everything-else/custom-props.md)
+* [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention"): Importing/exporting [#meshes](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention")
 * [Material assignment examples](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md)
-* [Troubleshooting your mesh edits](troubleshooting-your-mesh-edits.md)
-* [How do the clothes auto-morph?](garment-support-how-does-it-work/)
+* [troubleshooting-your-mesh-edits.md](troubleshooting-your-mesh-edits.md "mention")
+* [garment-support-how-does-it-work](garment-support-how-does-it-work/ "mention") or [files-and-what-they-do](../files-and-what-they-do/ "mention")
 
 ## Relevant files
 
@@ -29,7 +29,7 @@ For more hands-on advice, see the guide section, for example
 A mesh defines the shape and surface of any in-game object.&#x20;
 
 {% hint style="info" %}
-For more information on .mesh files and how they work, see [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention")
+For more information on .mesh files and how they work, see [3d-objects-.mesh-files](../files-and-what-they-do/3d-objects-.mesh-files/ "mention")
 
 For more informations on **materials** and mesh appearances, see [materials](../materials/ "mention")
 {% endhint %}

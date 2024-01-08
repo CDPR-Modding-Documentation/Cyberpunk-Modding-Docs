@@ -69,17 +69,7 @@ We only need the .morphtargets to generate the actual meshes by duplicating the 
 
 The different variants in the character creator correspond to the different meshes. For example, if you select cyberware 3 in the character creator, the mesh that will get loaded is `cyberware_03`. Not so difficult, is it?
 
-Here's what the prefixes mean:
-
-|       |                                                                                                                                         |
-| ----- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| h0\_  | head (with ears)                                                                                                                        |
-| hb\_  | male V only: beard                                                                                                                      |
-| heb\_ | eyebrows                                                                                                                                |
-| he\_  | eyes                                                                                                                                    |
-| ht\_  | teeth                                                                                                                                   |
-| hx\_  | <p>applied on top of h0: </p><ul><li>cyberware</li><li>makeup</li><li>freckles</li><li>pimples</li><li>tattoos</li><li>scars </li></ul> |
-| l1\_  | ear ring (01-04)                                                                                                                        |
+To learn what the prefixes mean, check [#head-file-prefixes](../../../references-lists-and-overviews/cheat-sheet-head/#head-file-prefixes "mention").
 
 ### Finding the right piercing
 
@@ -107,7 +97,7 @@ Number in file name <=> Number in character creator
 {% endhint %}
 
 {% hint style="info" %}
-Do not delete any files if you're [editing the player head](../a-new-head-for-v.md) (Ignore this hint if you don't)
+Do not delete any files if you're [editing the player head](../a-new-head-for-v.md) (Ignore this hint if you aren't).
 {% endhint %}
 
 Many of the files are **variants** and your V will be using **one or none of them.** That means you have a bunch of files to delete.&#x20;

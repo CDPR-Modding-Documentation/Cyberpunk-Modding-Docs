@@ -5,7 +5,7 @@ description: Unbundling mods with CLI
 # Legacy: Analysing other mods with Wolvenkit Console
 
 {% hint style="warning" %}
-This technique is outdated as of 2023. If you don't have a very good reason why you need Wolvenkit console, then you should [stick to the GUI](../../modding-cyberpunk-2077/analysing-other-mods.md#step-1-switch-to-mod-browser).
+This technique is outdated as of 2023. If you don't have a very good reason why you need Wolvenkit console, then you should [stick to the GUI](./#step-1-switch-to-mod-browser).
 {% endhint %}
 
 ## wolvenkit.cli.exe

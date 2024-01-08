@@ -356,6 +356,12 @@ But before you can share it, you need to do one last thing, which is changing th
 
 You can find a full guide on how to do that [here](../../everything-else/moving-and-renaming-in-existing-projects.md).
 
+{% hint style="success" %}
+That's it! If everything works, you're done!
+{% endhint %}
+
+
+
 ## Troubleshooting
 
 Before starting to troubleshoot, make sure that you have all the **requirements** installed — [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380), [ArchiveXL](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/core-mods-explained/archivexl?q=visual+tags) and [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197).
@@ -393,7 +399,7 @@ Before you start digging into your file structure, check if there are any leftov
 
 If no additional yaml files are messing things up, then the error is somewhere in the first part of the chain and relatively easy to fix:
 
-<figure><img src="https://camo.githubusercontent.com/f8ee9b6e640405d93e9d543b4ac488e7644a5976c74552a54d288ac9b81f182a/68747470733a2f2f692e696d6775722e636f6d2f517a4d6e7645762e706e67" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/archivexl_files_01.png" alt=""><figcaption></figcaption></figure>
 
 Check the following places:
 
@@ -418,7 +424,7 @@ Check the following places:
 
 Something went wrong with your json file:
 
-<figure><img src="https://camo.githubusercontent.com/6aebdc1d9a291c0bc2fbfc0b56006f87c3db452343ef4e938cfe33ca3bfa3768/68747470733a2f2f692e696d6775722e636f6d2f583562703644372e706e67" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/archiveXL_json_file.png" alt=""><figcaption></figcaption></figure>
 
 If there are no errors in any of the log files, check the following places:
 
@@ -439,7 +445,7 @@ If there are no errors in any of the log files, check the following places:
 
 Congratulations, you've made it into the right half of the diagram, and can also make use of Wolvenkit's [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) now! The error will be somewhere here:
 
-<figure><img src="https://camo.githubusercontent.com/621b7d370bdaaec42cf16a5a321512eaf0eaeb0decbe6ccc23865023802f98e7/68747470733a2f2f692e696d6775722e636f6d2f666c34306f465a2e706e67" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/archivexl_files_gamefiles_full.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 [File validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) can help you catch the error.
@@ -448,6 +454,43 @@ Congratulations, you've made it into the right half of the diagram, and can also
 {% hint style="info" %}
 If you set your `mesh_entity.ent` to point at a vanilla mesh, you can rule out your custom mesh and .mlsetup as a source of errors. Original game meshes will always have a working default appearance and will thus always be displayed!
 {% endhint %}
+
+### Nothing happens when I equip it!
+
+There is a short glitch (or maybe not), but the previous item is still visible, and nothing happens. Or, for head items, V is bald all of a sudden because their hair is gone.
+
+#### Narrow it down
+
+Let's check if the game finds your root entity. For that, we'll do two things (don't forget to un-do them later):
+
+1. Change the base type&#x20;
+2. Add a tag to the root entity
+
+Helmets are hiding hair by default, unless you tell them not to. We'll make use of that by changing your item's `$base` in the `.yaml`:
+
+```yaml
+$base: Items.GenericHeadClothing
+```
+
+In your `root entity`, open `visualTagsSchema` -> `visualTags` -> `tags` (create any entries that are missing) and add the following CName:
+
+```yaml
+force_Hair
+```
+
+You can now start the game and equip your item again.
+
+#### V has hair
+
+Your root entity is working, and the error is somewhere here:
+
+<figure><img src="../../../../.gitbook/assets/archivexl_files_controlfiles_2.png" alt=""><figcaption></figcaption></figure>
+
+#### V is bald
+
+Your root entity is not recognized and the error is somewhere here:
+
+<figure><img src="../../../../.gitbook/assets/archivexl_files_gamefiles_full.png" alt=""><figcaption></figcaption></figure>
 
 ### It's invisible in photo mode!
 

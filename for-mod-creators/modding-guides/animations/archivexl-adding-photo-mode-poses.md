@@ -84,7 +84,7 @@ localization:
 You have to adjust the paths under `set` and `en-us` to your new changed folder structure.
 
 {% hint style="info" %}
-If you want to support more body types from the Nibbles Replacer, you can [switch to the Mod Browser](../../modding-cyberpunk-2077/analysing-other-mods.md) and enter the following search query to find all the entities: \
+If you want to support more body types from the Nibbles Replacer, you can [switch to the Mod Browser](../analysing-other-mods/) and enter the following search query to find all the entities: \
 `base\characters\entities\photomode_replacer > .ent`
 {% endhint %}
 

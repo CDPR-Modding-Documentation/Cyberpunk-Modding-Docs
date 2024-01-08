@@ -217,7 +217,7 @@ To hide those bits in the .app, we simply need to uncheck the corresponding boxe
 This section will teach you how to add another hair mesh to your NPV. We will first remove the default hair, then replace it with the one you want.
 
 {% hint style="info" %}
-To use modded hair, find the correct files [inside the mod](../../../modding-cyberpunk-2077/analysing-other-mods.md) and add them to your project.
+To use modded hair, find the correct files [inside the mod](../../analysing-other-mods/) and add them to your project.
 {% endhint %}
 
 1. Delete the current hair from the .app — there should be 2-3 components, their names will start with either `hair_` or `hh_0`

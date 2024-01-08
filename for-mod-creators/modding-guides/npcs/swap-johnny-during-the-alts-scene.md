@@ -5,9 +5,9 @@
 **Created by @Pinkydude**\
 **Published Summer 2021**
 
-![](<../../../.gitbook/assets/0 (3)>)
+![](<../../../.gitbook/assets/0 (1)>)
 
-![](<../../../.gitbook/assets/1 (3)>)
+![](<../../../.gitbook/assets/1 (1)>)
 
 What you’ll need :\
 
@@ -18,7 +18,7 @@ What you’ll need :\
 * [My Netrunner suit Remover mod](https://www.nexusmods.com/cyberpunk2077/mods/2628)
 * [AMM](https://www.nexusmods.com/cyberpunk2077/mods/790?tab=description)
 
-![](<../../../.gitbook/assets/2 (4)>)
+![](../../../.gitbook/assets/2)
 
 First off, grab my FixSwap and Removers mods and drop them in your Mod Folder
 
@@ -32,14 +32,14 @@ The spawned Johnny will be **invisible,** you’ll need to scan his feet shadow 
 
 ![](<../../../.gitbook/assets/4 (1)>)
 
-![](../../../.gitbook/assets/5)
+![](<../../../.gitbook/assets/5 (3)>)
 
 Make a quick save and reload it
 
-![](<../../../.gitbook/assets/6 (1)>)
+![](<../../../.gitbook/assets/6 (3)>)
 
 Make sure to **despawn** your V/Johnny before entering the room!
 
 There will be small a moment, when Alt takes off Johnny’s glasses, where your V will turn invisible ; That’s ok, they’ll pop right back when the mirror scene start!
 
-![](<../../../.gitbook/assets/7 (1)>)
+![](<../../../.gitbook/assets/7 (3)>)

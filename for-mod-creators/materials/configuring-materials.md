@@ -5,9 +5,9 @@ description: How materials work, and how you can configure them
 # Material properties explained
 
 {% hint style="info" %}
-If you want to learn how material assignment works for the object, check [3d-objects-.mesh-files.md](../files-and-what-they-do/3d-objects-.mesh-files.md "mention")
+If you want to learn how material assignment works for the object, check [3d-objects-.mesh-files](../files-and-what-they-do/3d-objects-.mesh-files/ "mention")
 
-For information on material templates, see [re-using-materials-.mi.md](re-using-materials-.mi.md "mention")
+For information on material templates, see [re-using-materials-.mi.md](../files-and-what-they-do/re-using-materials-.mi.md "mention")
 {% endhint %}
 
 ## Checking material properties
@@ -26,11 +26,11 @@ For a full documentation, check the corresponding [page](multilayered/).&#x20;
 
 To set it up, use these keys for the "values" array of your material:
 
-|                 |                                                                                                                                         |
-| --------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
-| GlobalNormal    | path\to\normal.xbm                                                                                                                      |
-| MultilayerMask  | path\to\mask.mlmask ([white file](../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md#white-multilayermask)) |
-| MultilayerSetup | path\to\material.mlsetup                                                                                                                |
+|                 |                                                                                                                     |
+| --------------- | ------------------------------------------------------------------------------------------------------------------- |
+| GlobalNormal    | path\to\normal.xbm                                                                                                  |
+| MultilayerMask  | path\to\mask.mlmask ([white file](../references-lists-and-overviews/cheat-sheet-materials.md#white-multilayermask)) |
+| MultilayerSetup | path\to\material.mlsetup                                                                                            |
 
 <figure><img src="../../.gitbook/assets/material_docu_multilayered_example.png" alt=""><figcaption><p>an example multilayered material</p></figcaption></figure>
 
@@ -46,12 +46,12 @@ The material can be transparent, you need to set the enableMask flag to True and
 
 To make your mesh load a texture, use the following `CKeyValuePair`s in your material's "values" array:
 
-|           |                                                                                        |
-| --------- | -------------------------------------------------------------------------------------- |
-| BaseColor | path to your texture.xbm (Diffuse/Albedo)                                              |
-| Roughness | path to your roughnessMap.xbm (if you have one)                                        |
-| Metalness | path to your metalnessMap.xbm (if you have one)                                        |
-| Normal    | path to your normalMap.xbm ([if you have one](../3d-modelling/self-made-normal-maps/)) |
+|           |                                                                                                            |
+| --------- | ---------------------------------------------------------------------------------------------------------- |
+| BaseColor | path to your texture.xbm (Diffuse/Albedo)                                                                  |
+| Roughness | path to your roughnessMap.xbm (if you have one)                                                            |
+| Metalness | path to your metalnessMap.xbm (if you have one)                                                            |
+| Normal    | path to your normalMap.xbm ([if you have one](../modding-guides/textures-and-luts/self-made-normal-maps/)) |
 
 <figure><img src="../../.gitbook/assets/textured material example.png" alt=""><figcaption><p>example use of metal_base.remt as a textured material</p></figcaption></figure>
 
@@ -91,7 +91,7 @@ You can find a ready-to-download template [here](https://mega.nz/file/nElTyD6Z#L
 
 You can make `engine\materials\metal_base.remt` glow by adding the correct parameters, or you can poke through the game files and search for `emissive > .mi` to find Cyberpunk material templates to learn from.&#x20;
 
-For a list of such templates, check [here.](../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md#emissive-materials)&#x20;
+For a list of such templates, check [here.](../references-lists-and-overviews/cheat-sheet-materials.md#emissive-materials)&#x20;
 
 <table><thead><tr><th width="254"></th><th></th></tr></thead><tbody><tr><td>Emissive</td><td>path to emissive texture, e.g. <code>engine\textures\editor\white.xbm</code><br>The texture works like an alpha mask.</td></tr><tr><td>EmissiveEV</td><td>float, e.g. <code>2.0</code>: emissive brightness. Brightness varies depending on your colour. Unless you want to actively blind people, you might want to stay below 4.</td></tr><tr><td>EmissiveColor</td><td>Glow colour as RGB (copy from e.g. <code>mi_neokitsch_fridge_z_emissive.mi</code>)</td></tr></tbody></table>
 

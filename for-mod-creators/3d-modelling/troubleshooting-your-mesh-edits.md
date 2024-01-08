@@ -247,7 +247,7 @@ As stated in the [importing/exporting guide](exporting-and-importing-meshes/), i
 
 ### My mesh is completely warped
 
-If you have [added the item](../modding-guides/items-equipment/adding-new-items/) via [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl) or [swapped out an in-game item](../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md) with something that belongs in a different slot (e.g. a jacket on the head slot), you might have to fix the corresponding entity file.
+If you have [added the item](../modding-guides/items-equipment/adding-new-items/) via [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl) or [swapped out an in-game item](../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/) with something that belongs in a different slot (e.g. a jacket on the head slot), you might have to fix the corresponding entity file.
 
 ### My shadow mesh is always visible
 
@@ -255,13 +255,19 @@ Check the `renderMask` attribute inside `heder / renderChunkInfos / index`_._ Fo
 
 <figure><img src="../../.gitbook/assets/shadow_mesh.png" alt=""><figcaption></figcaption></figure>
 
+### My mesh ignores my texture edits!
 
+The textures are most likely embedded. Here's how you can force your material to pull in external textures instead:&#x20;
+
+<figure><img src="../../.gitbook/assets/mesh_embedded_texture.png" alt=""><figcaption><p>Thanks to Adahm for the screenshot</p></figcaption></figure>
+
+## Garment Support
 
 ### My mesh is string cheese/exploding vertices/a puddle on the floor
 
-<figure><img src="../../.gitbook/assets/stringcheese1.png" alt=""><figcaption><p>Looks like we have guests from beyond the Blackwall</p></figcaption></figure>
+This section will tell you how to delete garment support. If you don't want that (you shouldn't! It's cool!), check the **next section**.
 
-#### GarmentSupports
+<figure><img src="../../.gitbook/assets/stringcheese1.png" alt=""><figcaption><p>Looks like we have guests from beyond the Blackwall</p></figcaption></figure>
 
 {% hint style="info" %}
 To check if it's this, equip **only** the edited item. If it breaks as soon as you put on another clothing item with [garment supports](garment-support-how-does-it-work/#the-algorithm), then the solution below applies.
@@ -277,8 +283,18 @@ On the .glb import setting, check the "[Import Garment Support](broken-reference
 
 <figure><img src="../../.gitbook/assets/mesh_editing_parameters.png" alt=""><figcaption><p>This will break automatic shrinking when you put clothes over your item. But hey, if the alternative is a broken mess…</p></figcaption></figure>
 
-### My mesh ignores my texture edits!
+### I'm doing everything right, but garment support still explodes!
 
-The textures are most likely embedded. Here's how you can force your material to pull in external textures instead:&#x20;
+#### Component IDs
 
-<figure><img src="../../.gitbook/assets/mesh_embedded_texture.png" alt=""><figcaption><p>Thanks to Adahm for the screenshot</p></figcaption></figure>
+Check the component's **id** in the mesh `.ent` or `.app` appearance's `components` array:
+
+<figure><img src="../../.gitbook/assets/mesh_troubleshooting_component_ID.png" alt=""><figcaption></figcaption></figure>
+
+If any given ID is equipped twice, it can break garment support in the way you're observing.
+
+As of January 03 2023, we don't know how these are generated and can't tech the problem away in Wolvenkit. Your only choice here is to manually randomize your ID in a text editor by switching out single digits. Remember that the resulting ID needs to be an even number!
+
+#### Import settings
+
+Make sure to [import your mesh](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support) with garment support enabled. If that doesn't do the trick, you can try [re-creating](garment-support-how-does-it-work/garment-support-from-scratch.md) the garment support shapekeys in Blender.

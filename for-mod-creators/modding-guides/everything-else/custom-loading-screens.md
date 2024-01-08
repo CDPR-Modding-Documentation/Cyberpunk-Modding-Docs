@@ -5,7 +5,7 @@
 **Created by @Pinkydude**\
 **Published Summer 2021**
 
-![](<../../../.gitbook/assets/0 (2)>)
+![](<../../../.gitbook/assets/0 (4)>)
 
 ![](<../../../.gitbook/assets/1 (2)>)
 
@@ -16,31 +16,31 @@ What you’ll need :\
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit/releases) or the extracted game files
 * Photoshop / Art program
 
-![](../../../.gitbook/assets/2)
+![](<../../../.gitbook/assets/2 (3)>)
 
 I’ll assume you already know some basic modding\
 (extracting the files with the console or WKit etc)
 
 First of you’ll need to create your mod folder, it should look like this
 
-![](../../../.gitbook/assets/3)
+![](<../../../.gitbook/assets/3 (1)>)
 
 This is where the Loading screen image are stocked, so go in that exact same folder in your Game Extracts!
 
-![](<../../../.gitbook/assets/4 (3)>)
+![](../../../.gitbook/assets/4)
 
 Depending on the resolution you’re using, you’ll have to edit either the **4k** files or the **4k\_1080p** files
 
 I personally need the 4k files ; There is **13 loading screens** in total, and you’ll need the .tga .dds and .xbm files for each one, meaning **39 files** in total in your mod folder
 
-![](<../../../.gitbook/assets/5 (3)>)
+![](<../../../.gitbook/assets/5 (1)>)
 
 Now open Photoshop, and edit the .tga files with your screenshots!
 
 You’ll notice that the loading pics are vertically swapped;\
 **be sure to also vertically swap your pics so that it’ll look normal in game**
 
-![](<../../../.gitbook/assets/6 (3)>)
+![](<../../../.gitbook/assets/6 (1)>)
 
 ![](<../../../.gitbook/assets/7 (2)>)
 
@@ -52,7 +52,7 @@ We now open Noesis, and navigate to our mod folder
 
 You’ll need to Right Click on your .tga files and select Export, and change the **Main Output Type to .xbm**
 
-![](<../../../.gitbook/assets/9 (1)>)
+![](../../../.gitbook/assets/9)
 
 Click export, you should see a pop up window; simply click OK
 

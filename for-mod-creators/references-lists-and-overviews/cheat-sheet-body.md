@@ -4,19 +4,25 @@ description: Which body parts are where?
 
 # Cheat Sheet: Body
 
-On this page, you can find information how the Cyberpunk player body is set up, along with its file paths.&#x20;
+#### Summary
 
-{% hint style="info" %}
+Last documented edit: January 06 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page lists various properties of the player body. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.  Any links will lead you to additional context.
+
 You can find the list of skin tones, hair and facial expressions under [cheat-sheet-head](cheat-sheet-head/ "mention")
 
-There is no dedicated guide as for how to create body mods yet, but the process is roughly the same as for creating [a-new-head-for-v.md](../modding-guides/npcs/a-new-head-for-v.md "mention").
-{% endhint %}
+### Wait, this isn't what I'm looking for!
+
+IWhen editing body mods, you need to edit both the mesh and the morphtarget.&#x20;
+
+There is no dedicated guide yet, but you can refer to [a-new-head-for-v.md](../modding-guides/npcs/a-new-head-for-v.md "mention").
 
 {% hint style="success" %}
 While you can use this information to show/hide parts of the player body via chunkmasks, you might consider using [ArchiveXL tags](../modding-guides/items-equipment/influencing-other-items.md#visualtags) instead.
 {% endhint %}
 
-Many of the mesh files are pulled in via **morphtargets**. If you want to create a body mod, you need to edit both.
+***
 
 ## Player Base Body
 
@@ -30,17 +36,28 @@ These meshes cover up seams at arms and shoulders, where the mesh edges might sh
 
 ## Head
 
-The player base heads (and scars, tattoos, cyberware) are defined in .app files in the folder `base\characters\head\player_base_heads\appearances\head`
+Find this information under [cheat-sheet-head](cheat-sheet-head/ "mention").
 
-For a guide on how to actually use those things, check the [NPV guide](../modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md#step-1-getting-head).
+## Skin definitions
 
-### Male body gender
+{% hint style="info" %}
+For a list of [#skin-tones-by-index](cheat-sheet-head/#skin-tones-by-index "mention"), see [cheat-sheet-head](cheat-sheet-head/ "mention")
+{% endhint %}
 
-<table><thead><tr><th width="155.33333333333331"></th><th>path</th><th>component name</th></tr></thead><tbody><tr><td>eyes</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\he_000_pma_c__basehead.mesh</code></td><td>he_000_pma__basehead</td></tr><tr><td>teeth</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\ht_000_pma_c__basehead.mesh</code></td><td>ht_000_pma__basehead</td></tr><tr><td>eyebrows</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\heb_000_pma_c__basehead.mesh</code></td><td>heb_000_pma__basehead_morph</td></tr><tr><td>pimples</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\hx_000_pma_c__basehead_pimples_01.mesh</code></td><td>hx_000_pma__morphs_pimples_01</td></tr><tr><td>freckles</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\hx_000_pma_c__basehead_makeup_freckles_01.mesh</code></td><td>hx_000_pma__morphs_makeup_freckles_01</td></tr></tbody></table>
+Skin materials are defined in the individual body files. For their paths, see [#player-base-body](cheat-sheet-body.md#player-base-body "mention").
 
-### Female body gender
+You can find the [definitions](../files-and-what-they-do/3d-objects-.mesh-files/#step-3-material-definition) in the localMaterialBuffer. Each material overrides the following properties locally:
 
-<table><thead><tr><th width="155.33333333333331"></th><th>path</th><th>component name</th></tr></thead><tbody><tr><td>eyes</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\he_000_pwa_c__basehead.mesh</code></td><td>he_000_pwa__basehead</td></tr><tr><td>teeth</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\ht_000_pwa_c__basehead.mesh</code></td><td>ht_000_pwa__basehead</td></tr><tr><td>eyebrows</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\heb_000_pwa_c__basehead.mesh</code></td><td>heb_000_pwa__basehead_morph</td></tr><tr><td>pimples</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\hx_000_pwa_c__basehead_pimples_01.mesh</code></td><td>hx_000_pwa__morphs_pimples_01</td></tr><tr><td>freckles</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\hx_000_pwa_c__basehead_makeup_freckles_01.mesh</code></td><td>hx_000_pwa__morphs_makeup_freckles_01</td></tr></tbody></table>
+* Normal (bump/height map)
+* Albedo (diffuse/complexion)
+
+All other properties are pulled from a [.mi file](../files-and-what-they-do/re-using-materials-.mi.md) in the following folder:
+
+<table><thead><tr><th width="251"></th><th></th></tr></thead><tbody><tr><td>female body gender</td><td><code>base\characters\common\skin\character_mat_instance\female\body\</code></td></tr><tr><td>male body gender</td><td><code>base\characters\common\skin\character_mat_instance\male\body\</code></td></tr></tbody></table>
+
+### Body: material instances
+
+The names of the body's material instance files are identical to those used by the player head. Find them under [#head-material-instances](cheat-sheet-head/#head-material-instances "mention").
 
 ## Arms
 
@@ -50,9 +67,9 @@ The player base body does not come with arms attached — this makes it easier t
 Arms are using different meshes for the first person perspective. You can usually find them near the regular meshes in a subfolder with the name `fpp`.
 {% endhint %}
 
-You can look up the component names and their properties in the .ent files per body gender in these folders:
+You can look up the component names and their properties in the .ent files per body gender in these folders (the file names will start with `a0_`):
 
-<table><thead><tr><th width="155.33333333333331"></th><th>path</th><th></th></tr></thead><tbody><tr><td>Default (female)</td><td><code>base\characters\common\player_base_bodies\player_female_average\arms_hq</code><br></td><td><pre><code><strong>a0_001_pwa_base_hq__full  
+<table><thead><tr><th width="155.33333333333331"></th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Default (female)</td><td><code>base\characters\common\player_base_bodies\player_female_average\arms_hq</code><br></td><td><pre><code><strong>a0_001_pwa_base_hq__full  
 </strong>a0_001_pwa_base_hq__full 
 left_arm    
 right_arm  
@@ -83,4 +100,3 @@ a0_002_wa__monowire_whip_r_cableless
 </code></pre></td></tr><tr><td>Monowire (male)</td><td><code>base\characters\cyberware\player\a0_002__monowire_whip\entities\a0_002_ma__monowire_whip.ent</code></td><td><pre><code>a0_002_ma__monowire_whip_l_cableless
 a0_002_ma__monowire_whip_r_cableless
 </code></pre></td></tr></tbody></table>
-

@@ -10,7 +10,7 @@ This wiki page contains documentation about xbm files and their properties.
 
 Would you rather…
 
-* [Edit, import, or export](../textures/images-importing-editing-exporting.md) textures?
+* [Edit, import, or export](../modding-guides/textures-and-luts/images-importing-editing-exporting.md) textures?
 * Learn about [textured materials](../materials/#textured)?
 * Use [a textured material](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md#material-assignments) on your mesh?
 

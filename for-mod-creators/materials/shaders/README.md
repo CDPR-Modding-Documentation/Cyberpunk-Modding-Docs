@@ -6,10 +6,10 @@ description: RED4 shaders (mt)
 
 ## What are shaders?
 
-Every visual asset in REDengine uses a specific **shader**, designated by REDengine as MT (.mt) files. Even meshes "without a shader" are in-fact using a debug shader such as debug\_coloring.mt. Shaders are the most basic expression of a surface, ranging from glass, skin, concrete, and steel. Each shader contains a combination of constant hidden-variables, and exposed variables for artists to tweak. For example, all skin exhibits some similar properties such as subsurface scattering so there is no reason to expose this; artists cannot use the skin shader without subsurface scattering. However skin color can vary dramatically, so these parameters are exposed to the artists using textures or color parameters. Artists are able to create "instances" of shaders called [**Material Instances**](../re-using-materials-.mi.md)**,** which contain localized variations of the textures and properties exposed by the base shader.
+Every visual asset in REDengine uses a specific **shader**, designated by REDengine as MT (.mt) files. Even meshes "without a shader" are in-fact using a debug shader such as debug\_coloring.mt. Shaders are the most basic expression of a surface, ranging from glass, skin, concrete, and steel. Each shader contains a combination of constant hidden-variables, and exposed variables for artists to tweak. For example, all skin exhibits some similar properties such as subsurface scattering so there is no reason to expose this; artists cannot use the skin shader without subsurface scattering. However skin color can vary dramatically, so these parameters are exposed to the artists using textures or color parameters. Artists are able to create "instances" of shaders called [**Material Instances**](../../files-and-what-they-do/re-using-materials-.mi.md)**,** which contain localized variations of the textures and properties exposed by the base shader.
 
 {% hint style="info" %}
-For an overview of the most common shaders and their use cases, see [cheat-sheet-materials.md](../../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md "mention")
+For an overview of the most common shaders and their use cases, see [cheat-sheet-materials.md](../../references-lists-and-overviews/cheat-sheet-materials.md "mention")
 {% endhint %}
 
 ## What are materials?

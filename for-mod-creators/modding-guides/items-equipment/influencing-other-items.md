@@ -46,28 +46,8 @@ So depending on your PC's body gender and colouring, the meshAppearance `my_app_
 #### Arms
 
 {% hint style="warning" %}
-Due to cyberware, V has more arms than Shiva the Destroyer (although not at the same time). For a full list of component names, see [here](../../references-lists-and-overviews/cheat-sheet-body.md#arms).
-
-The list below is a **summary**, but might not be up-to-date. Please refer to the linked page if you're missing anything.&#x20;
+Due to cyberware, V has more arms than Shiva the Destroyer (although not at the same time). Find the component names on [cheat-sheet-body.md](../../references-lists-and-overviews/cheat-sheet-body.md "mention") -> [#arms](../../references-lists-and-overviews/cheat-sheet-body.md#arms "mention")
 {% endhint %}
-
-```
-// The male equivalent will have pma instead of pwa
-
-a0_001_pwa_base_hq__full              // default arms
-a0_001_pwa_base_hq__full8640          
-left_arm                              
-right_arm                             
-a0_000_pwa_base__fists                // fists (fighting arms)
-a0_005_wa__strongarms_holstered_r     // gorilla arms (holstered, inventory)
-a0_005_wa__strongarms_holstered_l    
-a0_005_wa__strongarms_r               // gorilla arms
-a0_005_wa__strongarms_l
-a0_005_wa__strongarms_photo_mode_r    // gorilla arms (photo mode)
-a0_005_wa__strongarms_photo_mode_l
-a0_002_wa__monowire_whip_l_cableless  // monowire
-a0_002_wa__monowire_whip_r_cableless
-```
 
 You can find the corresponding entity files in `base\characters\common\player_base_bodies > .ent`, the file names will start with `a0_.`
 

@@ -42,6 +42,32 @@ Now, create your icon. The process is the same as for "[preview images](../custo
 
 ### Creating the atelier file
 
+<details>
+
+<summary>Example store file (if you don't want to use the generator)</summary>
+
+```
+@addMethod(gameuiInGameMenuGameController)
+protected cb func RegisterYOURNAMESStore(event: ref<VirtualShopRegistration>) -> Bool {
+  event.AddStore(
+    n"YOURNAME",
+    "Your Store Name",
+    [            
+      "Items.my_custom_shirt_redwhite",  	
+      "Items.my_custom_shirt_redblack"
+	],
+	[ 1	],
+    r"tutorial/torso/my_custom_shirt/ops/atelier_icon.inkatlas",
+    n"slot_01",
+	[ "Legendary" ]
+  );
+}
+```
+
+
+
+</details>
+
 1. Visit [this](https://jovial-shockley-612ec8.netlify.app/) website and fill out the information:
 
 | Field                                                      | Content                                                                          |
@@ -59,7 +85,9 @@ In `atlasResource`, you have to replace all `\` with `/`
 Your atelier store will cause script errors if you don't.
 {% endhint %}
 
-<table><thead><tr><th width="231">Field</th><th>Content</th></tr></thead><tbody><tr><td>TweakDBID</td><td><p>as defined in your yaml, e.g.</p><p><code>Items.my_custom_shirt_redwhite</code></p></td></tr><tr><td>Price</td><td>Whatever price you want, 0 means that it's free</td></tr><tr><td>Quality</td><td>Are we settling for anything but legendary here?</td></tr></tbody></table>
+Here's an explanation for the fields below. Rather than filling them by hand, you should use [this](https://jovial-shockley-612ec8.netlify.app/) website to generate your store files.
+
+<table><thead><tr><th width="231">Field</th><th>Content</th></tr></thead><tbody><tr><td>TweakDBID</td><td><p>as defined in your yaml, e.g.</p><p><code>Items.my_custom_shirt_redwhite</code></p></td></tr><tr><td>Price</td><td>Whatever price you want, 0 means that it's free</td></tr><tr><td>Quality</td><td>Are we settling for anything but legendary here?<br>Allowed values are: <br>- <code>"IconicItem"</code><br>- <code>"Legendary"</code> (LegendaryPlus, LegendaryPlusPlus)<br>- <code>"Epic"</code> (EpicPlus)<br>- <code>"Rare"</code> (RarePlus)<br>- <code>"Uncommon"</code> (UncommonPlus)<br>- <code>"Common"</code> (CommonPlus)</td></tr></tbody></table>
 
 ​ Ignore "Icon path" and "description", we have these in the item itself.
 

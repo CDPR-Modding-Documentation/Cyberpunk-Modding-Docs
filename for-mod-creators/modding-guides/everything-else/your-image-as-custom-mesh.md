@@ -163,7 +163,7 @@ In Wolvenkit, use the Import Tool to import `sex_shop_neon_sign_b.glb`. The prev
 ## Assigning Materials
 
 {% hint style="info" %}
-I'll give the TL;DR version, you should be able to follow along. If not, feel free to read up on [how materials work in meshes](../../files-and-what-they-do/3d-objects-.mesh-files.md#material-assignment) or find us on [Discord](https://discord.gg/redmodding)!
+I'll give the TL;DR version, you should be able to follow along. If not, feel free to read up on [how materials work in meshes](../../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment) or find us on [Discord](https://discord.gg/redmodding)!
 {% endhint %}
 
 Open `sex_shop_neon_sign_b.mesh` in Wolvenkit and open the appearance `on` (as this is the one they're using on Jig Jig Street).&#x20;

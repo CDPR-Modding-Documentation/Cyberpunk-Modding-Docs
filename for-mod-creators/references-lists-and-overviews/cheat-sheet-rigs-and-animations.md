@@ -1,4 +1,22 @@
+---
+description: Where rigs and animations are stored
+---
+
 # Cheat sheet: Rigs and animations
+
+#### Summary
+
+Last documented update: 06. Jan 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page lists file paths and properties for various rigs and animations. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.&#x20;
+
+Any links will lead you to additional context.
+
+### Wait, this isn't what I'm looking for!
+
+If you want to make animations, check [animations](../modding-guides/animations/ "mention") and the guides under the page.
+
+***
 
 ## .anims
 

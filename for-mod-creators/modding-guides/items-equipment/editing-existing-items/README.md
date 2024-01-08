@@ -12,6 +12,7 @@ If you want to look up [variants-and-appearances.md](../../../references-lists-a
 [changing-materials-colors-and-textures.md](changing-materials-colors-and-textures.md)
 {% endcontent-ref %}
 
-{% content-ref url="replace-a-player-item-with-an-npc-item.md" %}
-[replace-a-player-item-with-an-npc-item.md](replace-a-player-item-with-an-npc-item.md)
+{% content-ref url="replace-a-player-item-with-an-npc-item/" %}
+[replace-a-player-item-with-an-npc-item](replace-a-player-item-with-an-npc-item/)
 {% endcontent-ref %}
+

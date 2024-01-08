@@ -330,12 +330,12 @@ You can leave `partsValues` alone - this just points at the file that loads the 
 
 ### Mesh
 
-The mesh file maps **materials** to appearances. To find out how exactly it does that, find the [material section](../../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances) on the mesh wiki page.&#x20;
+The mesh file maps **materials** to appearances. To find out how exactly it does that, find the [material section](../../../files-and-what-they-do/3d-objects-.mesh-files/#step-1-appearances) on the mesh wiki page.&#x20;
 
 {% hint style="info" %}
 **Would you like to know more?**&#x20;
 
-[3d-objects-.mesh-files.md](../../../files-and-what-they-do/3d-objects-.mesh-files.md "mention")
+[3d-objects-.mesh-files](../../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")
 
 \#appearan
 
@@ -371,7 +371,7 @@ For our purposes it's enough to say that you can **define** your individual appe
    3. Select the new item, open `values`, and select `MultilayerSetup`.
    4. Set `baseMaterial/DepotPath` to the `.mlsetup` file that you want.
 
-&#x20;For further information and guides, check [here](../editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance) or see [3d-objects-.mesh-files.md](../../../files-and-what-they-do/3d-objects-.mesh-files.md "mention").
+&#x20;For further information and guides, check [here](../editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance) or see [3d-objects-.mesh-files](../../../files-and-what-they-do/3d-objects-.mesh-files/ "mention").
 
 ## The final result
 

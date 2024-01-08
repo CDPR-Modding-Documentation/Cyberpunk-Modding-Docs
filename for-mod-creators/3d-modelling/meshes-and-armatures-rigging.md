@@ -9,7 +9,7 @@ For a documentation of the import/export options in Wolvenkit, check [here](http
 
 For Simarillius's Blender script to merge several armatures, check [here](https://github.com/Simarilius-uk/CP2077\_BlenderScripts/blob/main/Merge\_rigs.py).
 
-Guides on how to transfer weights between rigs: [blender plugin](../modding-tools/wolvenkit-blender-io-suite/#transfer-vertex-weights), [youtube video](https://www.youtube.com/watch?v=bR\_Vke\_\_voU), [wiki page](../modding-guides/items-equipment/custom-facial-piercings-prc-framework.md#weight-painting)&#x20;
+Guides on how to transfer weights between rigs: [blender plugin](../modding-tools/wolvenkit-blender-io-suite/#transfer-vertex-weights), [youtube video](https://www.youtube.com/watch?v=bR\_Vke\_\_voU), [wiki page](../modding-guides/npcs/custom-facial-piercings-prc-framework.md#weight-painting)&#x20;
 {% endhint %}
 
 The connection between a mesh and a rig is made via **vertex groups**. Any number of vertices can be assigned to a group, which is then matched to a rig's bone via **name**.

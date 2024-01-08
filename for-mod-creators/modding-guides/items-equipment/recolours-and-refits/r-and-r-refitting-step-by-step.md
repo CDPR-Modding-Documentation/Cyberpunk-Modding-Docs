@@ -37,7 +37,7 @@ Check the Nexus page of the body mod you're using — there's a good chance that
 
 It might be easier and faster to simply export the base body.&#x20;
 
-1. Switch to the [Mod Browser](../../../modding-cyberpunk-2077/analysing-other-mods.md#step-1-switch-to-mod-browser)
+1. Switch to the [Mod Browser](../../analysing-other-mods/#step-1-switch-to-mod-browser)
 2. In the Wolvenkit search bar, find the base body mesh:
    * Female body gender: `base\characters\common\player_base_bodies\player_female_average\t0_000_pwa_base__full.mesh`
    * Male body gender: `base\characters\common\player_base_bodies\player_man_average\t0_000_pma_base__full.mesh`

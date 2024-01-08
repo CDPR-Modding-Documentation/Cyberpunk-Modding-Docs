@@ -14,7 +14,7 @@ A comprehensive list of jargon you might see on this Wiki or around our communit
 ## Modding Tools
 
 * <mark style="color:red;">**Official Modkit for The Witcher 3 (WCC)**</mark>: An official CDPR command-line tool for modding The Witcher 3. Legacy WolvenKit makes extensive use of the Modkit. If you want to mod the Witcher, you're in the wrong wiki, choom!
-* <mark style="color:red;">**REDmod**</mark>: An [official CDPR command-line tool](../for-mod-creators/core-mods-explained/redmod/) for [modding Cyberpunk 2077](../for-mod-creators/modding-tools/redmod/).&#x20;
+* <mark style="color:red;">**REDmod**</mark>: An [official CDPR command-line tool](users-modding-cyberpunk-2077/redmod/) for [modding Cyberpunk 2077](../for-mod-creators/modding-tools/redmod/).&#x20;
 * <mark style="color:red;">**WolvenKit**</mark>: The unofficial [community modding toolkit](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/readme).&#x20;
 * <mark style="color:red;">**WolvenKit CLI**</mark>: The [command line interface version](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-cli) of WolvenKit. (Formerly CP77 Tools)
 * <mark style="color:red;">**CP77 Tools**</mark>: The original Cyberpunk 2077 modding Command Line Tools. (Renamed and moved to WolvenKit CLI)

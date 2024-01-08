@@ -60,6 +60,8 @@ return {
 	
 ```
 
-The rest of the process is pretty much like the other guide. Knowing what I know today, I probably would have created a custom entity for him in the first place, but since I chose to go down this road, I'm doomed to provide compatibility patches for the rest of eternity.&#x20;
+The rest of the process is pretty much like [the other guide](./#adding-more-appearances).&#x20;
 
-Ah, well. There are worse fates.
+_Knowing what I know today, I probably would have created a custom entity for Takemura-san in the first place, but since I chose to go down this road, I'm doomed to provide compatibility patches for the rest of eternity._&#x20;
+
+_Ah, well. There are worse fates._

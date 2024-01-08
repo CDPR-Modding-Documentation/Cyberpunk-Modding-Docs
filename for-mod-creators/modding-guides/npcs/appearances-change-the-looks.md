@@ -4,14 +4,10 @@ description: Changing an NPC's default appearances (and adding more via AMM)
 
 # Appearances: change the looks
 
-{% hint style="info" %}
-If you want to create a custom NPC from scratch, look [here](../community-guides/external-npvs-v-as-npc-custom-npcs.md) or under [external-npvs-v-as-npc-custom-npcs.md](../community-guides/external-npvs-v-as-npc-custom-npcs.md "mention").&#x20;
+#### **Summary**
 
-If you want to create custom hair colours, check [#creating-your-own-hair-colours](../../materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") and follow the links from there.
-{% endhint %}
-
-**Created by @manavortex**\
-**Published December 27 2022**
+**Published** December 27 2022 by @manavortex \
+**Last documented update:** January 06 2024 by @manavortex
 
 This guide will walk you through **editing NPC appearances** for Cyberpunk 2077.
 
@@ -21,57 +17,58 @@ This guide will walk you through **editing NPC appearances** for Cyberpunk 2077.
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.7.1-nightly.2022-11-04
 * (only if you want to add new appearances) [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) >= 1.15
 
-{% hint style="info" %}
-Assumed skill level: You're able to read.
-{% endhint %}
-
 ## Wait, this isn't what I want!
 
+* For an overview of NPC files, check [people.md](../../references-lists-and-overviews/people.md "mention")
 * If you want to add custom NPCs to Cyberpunk 2077 with AMM, check [amm-custom-npcs](amm-custom-npcs/ "mention")
 * If you want to add AMM appearances to existing NPCs, check [amm-custom-npc-appearances.md](amm-custom-npcs/amm-custom-npc-appearances.md "mention")
 * If you want to add V as an NPC, check [npv-v-as-custom-npc](npv-v-as-custom-npc/ "mention")
 * If you want a more basic guide that goes into more detail for the basic stuff (including Blender), see [altering-appearances-within-wolvenkit-full-workflow.md](altering-appearances-within-wolvenkit-full-workflow.md "mention")
+* If you're after hair colours, check [#creating-your-own-hair-colours](../../materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") and follow the links from there.
 
-## The .ent file
+***
 
-The game's first point of contact is the .ent file. You can find it by searching WolvenKit like this:
+## Prerequisites
 
-```
-<npcName>*.ent
-```
+* [ ] You have [a Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
+* [ ] You know how to read
 
-If you come up blank, try around with variations. E.g., Johnny is "silverhand", Viktor is "ripperdoc".&#x20;
+Links will give you additional context. If you can complete the guide without them, feel free to ignore them.
 
-{% hint style="success" %}
-You don't need to add the **.ent** file to your project, unless you want to [add more appearances](appearances-change-the-looks.md#adding-new-appearances).
-{% endhint %}
+## Finding the right files
 
-&#x20;However, the file contains the path to an **.app** file. Find and add it to your project.
+This section will show you how to find an NPC's [.app file](../../files-and-what-they-do/appearance-.app-files.md), which you will add to your project. We do this by finding the NPC's [.ent file](../../files-and-what-they-do/entity-.ent-files/#root-entity), since it will be linked in there.
 
-<figure><img src="../../../.gitbook/assets/app_modification_guide_ent_file.png" alt=""><figcaption><p>If you are using <a href="https://www.nexusmods.com/cyberpunk2077/mods/790">Appearance Menu Mod</a>, this list will look familiar.</p></figcaption></figure>
+### The .ent file
+
+The NPC's [root entity file](../../files-and-what-they-do/entity-.ent-files/#root-entity) is the entry point for the game. It defines an NPC's appearances, linking them to the actual definitions inside the corresponding [.app file](appearances-change-the-looks.md#the-.app-file).&#x20;
 
 {% hint style="info" %}
-Major NPCs have their own .app files: \
-`base\characters\appearances\main_npc\`.&#x20;
-
-Others are not so lucky - e.g., Mamá Welles is lobbed in with the other valentino goons: \
-`base\characters\appearances\gang\gang__valentinos_wa.app`
+You don't need to add this file to your project (and if you do it by accident, you should delete it later). For details, see [amm-custom-npc-appearances.md](amm-custom-npcs/amm-custom-npc-appearances.md "mention").
 {% endhint %}
+
+You can try finding your NPC's .ent file on [people.md](../../references-lists-and-overviews/people.md "mention"). If you can't find your entry, the page has information how you can search for it — **please add it to the page**, this wiki is a community project!
+
+Point your [Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) to the file you have found. We want to find the .app file and add it to our project. You can right-click on the .ent file and select [Find used files](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-used-files), or you look up the path in the .ent file:
+
+<figure><img src="../../../.gitbook/assets/app_modification_guide_ent_file (1).png" alt=""><figcaption><p>If you are using <a href="https://www.nexusmods.com/cyberpunk2077/mods/790">Appearance Menu Mod</a>, this list will look familiar.</p></figcaption></figure>
 
 ## The .app file
 
-The array **appearances** will contain a list with every appearance that's defined for this NPC, matching the key **appearanceName** in the .ent file.&#x20;
+Now that you have found the .app file, let's [add it to your Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects) and look inside.
+
+The array **appearances** will contain a list with every appearance that's defined for this NPC, matching the key `appearanceName` in the .ent file.&#x20;
 
 {% hint style="info" %}
 Not all of these have been "published" (as in "hooked up to .ent files"). For an example of this, check `base\characters\appearances\citizen\citizen__children_mc.app`
 {% endhint %}
 
-The only thing you need to care about is the `components` array, where you can add, remove, or modify parts of an NPC's appearance:
+The only thing you need to care about is the `components` array (learn more about these [here](../../files-and-what-they-do/components/)). This is where you add, remove, or modify parts of an NPC's appearance:
 
-<figure><img src="../../../.gitbook/assets/app_modification_guide_app_file.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/app_modification_guide_app_file.png" alt=""><figcaption><p>Removing Johnny's head won't make him shut up. Try it out, say "Arasaka".</p></figcaption></figure>
 
 {% hint style="info" %}
-The names of components need to (read: "should") be unique so you can [manipulate them outside of the .app file](../items-equipment/influencing-other-items.md#summary).
+The names of components **should** be unique so you can [manipulate them outside of the .app file](../items-equipment/influencing-other-items.md#summary). You should generalls tick to CDPR's naming scheme, including the prefixes ([why is this important?](../../3d-modelling/garment-support-how-does-it-work/#component-prefixes)).&#x20;
 
 CDPR's style of unique naming allows us to find components and their usage across the game files, which will come on handy when we're trying to add items.
 {% endhint %}
@@ -80,13 +77,57 @@ This is where the magic happens.
 
 ## Changing and removing components
 
-**Change** items by selecting a [different appearance](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) or a [different mesh](../items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md):
+**Change** items by selecting a [different appearance](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) or a [different mesh](../items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/):
 
 <figure><img src="../../../.gitbook/assets/app_modification_guide_change_mesh.png" alt=""><figcaption><p>Wake up, Johnny! … Follow the white rabbit, Johnny!</p></figcaption></figure>
 
-**Remove** items by deleting their entries from the list:
+**Remove** items by deleting their entries from the list or by setting their [chunkMasks to `0`](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes):
 
 <figure><img src="../../../.gitbook/assets/app_modification_guide_delete_ring.png" alt=""><figcaption><p>no more ring!</p></figcaption></figure>
+
+## (Safely) adding components
+
+{% hint style="info" %}
+For a detailed guide on adding hair, check [npv-creating-a-custom-npc.md](npv-v-as-custom-npc/npv-creating-a-custom-npc.md "mention") - [#hair](npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair "mention")
+{% endhint %}
+
+If you want to add a new item, first **duplicate an existing one**. After that, you can pretend that it is just another change:
+
+<figure><img src="../../../.gitbook/assets/app_modification_guide_add_component.png" alt=""><figcaption><p>This is usually safe, as long as you are sticking to <strong>entSkinnedMeshComponent</strong>s.</p></figcaption></figure>
+
+And this might work.
+
+Or it might end up leaving them standing in an exploded pixel cloud. In case of **animated components**, editing them will almost certainly break them (see [#animations-if-you-cant-avoid-them-copy-them-as-well](appearances-change-the-looks.md#animations-if-you-cant-avoid-them-copy-them-as-well "mention"))
+
+{% hint style="danger" %}
+Anything of the type `entGarmentSkinnedMeshComponent` is prone to breaking unless you copy everything it needs.
+{% endhint %}
+
+Let's do it…
+
+### Step by step: Putting Johnny in Scorpion's vest
+
+You need to find the thing you want to add in the files, check where it is defined, and then copy all of its components.
+
+1. Search for the mesh name of the vest that you want to use (e.g. `ma_vest__high_collar*.mesh`)
+2. Select the mesh, then "[find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this)": \
+   &#x20;![](../../../.gitbook/assets/app\_modification\_find\_mesh.png)
+3. If you find an .ent file called `_pwa_` or `_pma_`, that's a player mesh entity, which contains only the components you need — jackpot, use that one. Otherwise, find any .app file that sounds promising - for example Scorpion's.  \
+   ![](../../../.gitbook/assets/app\_modification\_find\_component.png)\
+   [Open it without adding](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#open-without-adding-to-project) it to the project (you don't need the file).&#x20;
+4. Find and select the components in the other NPC's appearance list:\
+   ![](../../../.gitbook/assets/app\_modification\_copy\_component.png)
+5. Select "[Copy Selection From Array/Buffer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#copy-selection-from-array-buffer)"
+6. Go back to your original .app file and select either the root of the `components` array, or any component inside the array. Now right-click and select "[Paste Selection From Array/Buffer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#copy-selection-from-array-buffer)".\
+   &#x20;![](../../../.gitbook/assets/paste\_selection\_to\_buffer.png)
+7.  If you haven't done that yet, [delete](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#delete-selection-from-array-buffer) the original component(s) and its animations/dangles. Skipping this step will give Johnny two vests, and he's not the type to do that.\
+
+
+    <figure><img src="../../../.gitbook/assets/app_modification_delete_original_component.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="success" %}
+Save the .app file, [install your mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch), and go testing!
+{% endhint %}
 
 ### Animations: if you can't avoid them, copy them as well!
 
@@ -106,109 +147,9 @@ If you copy an animated component (e.g. Johnny's vest), then you need to copy th
 If you delete a physics-enabled component, you can safely delete the corresponding AnimatedComponent.&#x20;
 {% endhint %}
 
-## (Safely) adding components
-
-{% hint style="info" %}
-If you want to exchange an NPC's hair, check [here](npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair).
-{% endhint %}
-
-The obvious thing to do if you want to add a new item is to duplicate another component and then act as if it was just another change:
-
-<figure><img src="../../../.gitbook/assets/app_modification_guide_add_component.png" alt=""><figcaption><p>This is usually safe, as long as you are sticking to <strong>entSkinnedMeshComponent</strong>s.</p></figcaption></figure>
-
-And this might work. Or it might end up leaving them standing in an exploded pixel cloud. In case of animated components, editing them will almost certainly break them.
-
-{% hint style="danger" %}
-Anything of the type `entGarmentSkinnedMeshComponent` will not take kindly to manipulation.
-{% endhint %}
-
-In that case, you need to browse the files for any occurances of the component you want to add and copy the relevant components. For example, if you want to put Johnny into a different kind of vest, this is how you'd go about it:&#x20;
-
-1. Search for the mesh name of the vest that you want to use (e.g. `ma_vest__high_collar*.mesh`)
-2. Select the mesh, then "find files using this": \
-   &#x20;![](../../../.gitbook/assets/app\_modification\_find\_mesh.png)\
-   If you run into an error, make sure that you have the "Wolvenkit Resources" plugin installed!I
-3. Find an .app file that looks promising - for example Scorpion's: \
-   ![](../../../.gitbook/assets/app\_modification\_find\_component.png)\
-   Open it without adding it to the project (you don't need the file).&#x20;
-4. Find and select the components in the other NPC's appearance list:\
-   ![](../../../.gitbook/assets/app\_modification\_copy\_component.png)
-5. Select "Copy Selection From Array/Buffer"
-6. Go back to your original .app file and select either the "components" array or any component inside it. Now right-click and select "Paste Selection From Array/Buffer".\
-   &#x20;![](../../../.gitbook/assets/paste\_selection\_to\_buffer.png)
-7. If you haven't done that yet, delete the original component(s) and animations:\
-   ![](../../../.gitbook/assets/app\_modification\_delete\_original\_component.png)
-
-{% hint style="success" %}
-Save the .app file, pack your mod, and go testing!
-{% endhint %}
-
 ## Adding new appearances
 
-{% hint style="warning" %}
-This part of the guide requires [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790)
-{% endhint %}
-
-Adding a new appearance to AMM requires you to register it in three files:&#x20;
-
-1. the .lua
-2. the .ent
-3. the .app
-
-If you are using HotReload, don't forget to "reload all mods" to make AMM pick up the changes in the script.
-
-### The .lua file
-
-To tell AMM about your new appearances and make them available, you have to create a LUA file in the following folder: `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Appearances`. Let's call it `AMM_JohnnyTutorial.lua`.
-
-Give it the following content:&#x20;
-
-```lua
-return {
-  modder = "tutorial",
-  unique_identifier = "tutorial_johnny_appearances",
-  entity_id = "0x5E611B16, 24",
-  appearances = {
-    "silverhand_cyberspace_glasses",
-    "silverhand_fluffy_socks",
-  },
-}
-```
-
-{% hint style="danger" %}
-The entity\_id is unique for each NPC and tells AMM which file to load.
-{% endhint %}
-
-You can find the correct entity ID by looking at the character with AMM: \
-![](../../../.gitbook/assets/app\_modification\_ent\_id.png)
-
-{% hint style="info" %}
-If the NPC doesn't yet exist, you can create a custom entity. For an example file, check one of [these](https://www.nexusmods.com/cyberpunk2077/mods/6111/?tab=posts\&BH=0) [mods](https://www.nexusmods.com/cyberpunk2077/mods/6680)_._&#x20;
-{% endhint %}
-
-Now, we have to hook up the new appearances.
-
-### The .ent file
-
-Find the .ent file that you've identified in the [first step of this guide](appearances-change-the-looks.md#the-.ent-file), and add it to your WolvenKit project. Open it, then duplicate the last item in the appearances array. Now, change the new entry to match your custom appearance:
-
-|                |                                 |
-| -------------- | ------------------------------- |
-| appearanceName | cyberspace\_glasses             |
-| name           | silverhand\_cyberspace\_glasses |
-
-<figure><img src="../../../.gitbook/assets/app_modification_add_appearance_ent (2).png" alt=""><figcaption><p>leave the rest alone, unless you know what you're doing</p></figcaption></figure>
-
-### The .app file
-
-In the app file, duplicate one of the already existing appearances, and change the name of the new item to the one you specified in the .ent file:\
-
-
-<figure><img src="../../../.gitbook/assets/app_modification_add_appearance_app.png" alt=""><figcaption><p>You can now change components around as <a href="appearances-change-the-looks.md#changing-and-removing-components">specified above</a>!</p></figcaption></figure>
-
-{% hint style="success" %}
-Congratulations — that's it! Install your mod and go testing!
-{% endhint %}
+Adding new appearances to an existing NPC requires you to overwrite that NPC's .ent file (see [amm-custom-npc-appearances.md](amm-custom-npcs/amm-custom-npc-appearances.md "mention")). For that matter, it's recommended that you create a new entity instead. You can find a guide for this under [amm-custom-npcs](amm-custom-npcs/ "mention").
 
 ## Troubleshooting
 

@@ -141,11 +141,11 @@ Again, this step is optional, you can [use MLSB](./#using-mlsb) straight away.&#
 
 1. Open the menu "Build" and select "Repository" to uncook the archives:
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption></figcaption></figure>
 
 2. Select the following settings (if you want to uncook everything, this step can take several hours, so we'll only do the essentials for now)
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption></figcaption></figure>
 
 3. Click "**Uncook**".&#x20;
 4. Wait. Do not interact with the program in any way until the process has finished - especially interacting with the console might just freeze up the entire windows cmd process. This is not MLSB's fault, but due to a Windows standard implementation.

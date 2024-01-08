@@ -4,7 +4,19 @@ description: Photo Mode Cheat Sgeet
 
 # Cheat Sheet: Photo Mode
 
-This page acts as a look-up table for photo mode. For theoretical knowledge, check the [animations.md](../animations.md "mention")section, for more hands-on advice on creating own photo mode stuff, see [animations](../modding-guides/animations/ "mention") in the Modding Guides section.
+#### Summary
+
+Last documented update: 06. Jan 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page acts as a look-up table for photo mode. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for. Any links will lead you to additional context.
+
+### Wait, this isn't what I'm looking for!
+
+For theoretical knowledge, check the [animations.md](../animations.md "mention")section
+
+For creating own photo mode poses, see [animations](../modding-guides/animations/ "mention") in the Modding Guides section.
+
+***
 
 ### .anims
 

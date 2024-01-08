@@ -23,11 +23,11 @@ It uses the following versions:
 {% hint style="info" %}
 Most items in Cyberpunk are not textured, but use a procedurally generated material consisting out of an [mlmask](../../../materials/multilayered/#what-is-the-mlmask) (a list of alpha masks) and an [mlsetup](../../../materials/multilayered/#what-is-the-mlsetup) (a list of material paths and -colours). There is a section on the exceptions below.
 
-If you want to learn how mesh material assignment works in general, you can check the [corresponding page](../../../files-and-what-they-do/3d-objects-.mesh-files.md#material-assignment).
+If you want to learn how mesh material assignment works in general, you can check the [corresponding page](../../../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment).
 {% endhint %}
 
 {% hint style="success" %}
-For an overview of base materials and example files, you can check [here](../../../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md).
+For an overview of base materials and example files, you can check [here](../../../references-lists-and-overviews/cheat-sheet-materials.md).
 {% endhint %}
 
 {% hint style="warning" %}
@@ -37,7 +37,7 @@ If your changes do not become active, you will want to install [Material and Tex
 ## **Step 1: Finding your item**
 
 {% hint style="info" %}
-This tutorial assumes that you already know which mesh and appearance you want to change. If you don't know that, you need to [find the correct game file](replace-a-player-item-with-an-npc-item.md#summary). If you only have a cheat code, see [Spawn Codes](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app) instead.
+This tutorial assumes that you already know which mesh and appearance you want to change. If you don't know that, you need to [find the correct game file](replace-a-player-item-with-an-npc-item/#summary). If you only have a cheat code, see [Spawn Codes](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app) instead.
 {% endhint %}
 
 We will use the female variant of the puffy vest (as I've already [mapped and documented it](../../../references-lists-and-overviews/equipment/variants-and-appearances.md#reinforced-puffer-vest-4-variants)):
@@ -55,14 +55,14 @@ Add the item to your project and open it in WolvenKit. You want the original to 
 {% hint style="info" %}
 If you don't know which appearance you want to edit, check [here](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#the-.app).&#x20;
 
-`default` is the fallback appearance that'll be used if anything can't be resolved by name or index. This is the reason why most item swap mods give you only a single appearance - people didn't set up the [variants](replace-a-player-item-with-an-npc-item.md).
+`default` is the fallback appearance that'll be used if anything can't be resolved by name or index. This is the reason why most item swap mods give you only a single appearance - people didn't set up the [variants](replace-a-player-item-with-an-npc-item/).
 {% endhint %}
 
 We will change the appearance `bwstripes`, which is used by `Vest_17_basic_01`:
 
 <div align="center">
 
-<figure><img src="../../../../.gitbook/assets/image (25).png" alt=""><figcaption><p>find material bwstripes and remember the name of the chunkMaterial</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (54).png" alt=""><figcaption><p>find material bwstripes and remember the name of the chunkMaterial</p></figcaption></figure>
 
 </div>
 
@@ -78,7 +78,7 @@ Remember its name (`ml_t2_002_ma_vest__puffy_bwstripes`) and find the correspond
 Most meshes have their materials under `localMaterialBuffer/materials`. However, some of them (especially those with physics) use `preloadLocalMaterialInstances` instead.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (3) (3).png" alt=""><figcaption><p>It's ml_t2_002_ma_vest__puffy_bwstripes</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (125).png" alt=""><figcaption><p>It's ml_t2_002_ma_vest__puffy_bwstripes</p></figcaption></figure>
 
 You will (hopefully) see a material with three entries in `values` (order doesn't matter):
 
@@ -86,7 +86,7 @@ You will (hopefully) see a material with three entries in `values` (order doesn'
 
 For the purpose of this guide, all that matters is the mlsetup, which determines all the individual material assignments in this CMaterial. For an explanation of the shader, check [here](../../../materials/multilayered/).
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>This is the path to the mlsetup file. By editing this, you can change colours and surface materials.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (121).png" alt=""><figcaption><p>This is the path to the mlsetup file. By editing this, you can change colours and surface materials.</p></figcaption></figure>
 
 {% hint style="info" %}
 If you have your own mlsetup file, this is where you need to set tohe path. See [custompathing](changing-materials-colors-and-textures.md#step-4-optional-custompathing) for further details.
@@ -139,7 +139,7 @@ Open up MlSetupBuilder and load your .mlsetup.json file.
 
 If you select WolvenKit's "Open in File Explorer" option, you can copy the path from the explorer's address bar and paste it into the MlSetupBuilder's address bar.
 
-<img src="../../../../.gitbook/assets/image (18) (2).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (128).png" alt="" data-size="original">
 
 </details>
 
@@ -156,7 +156,7 @@ For a documentation of multilayer properties, see [here](../../../materials/mult
 This is already working. You can pack the project and see it in action!
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (57).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Since you haven't changed anything in the mesh itself, you can (and should) delete it from your mod. Only keep it if you want to do the steps below.
@@ -166,7 +166,7 @@ Since you haven't changed anything in the mesh itself, you can (and should) dele
 
 If you want to put up your own .mlsetup, rather than overwriting the original one, you can do that. All you have to do is changing the DepotPaths to the relative path of your mlsetup.
 
-<figure><img src="../../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Keep your folder and file names unique! If you have two mods adding a file at the same location, the second one **will be unable to overwrite it** and will use the first mod's file. That is, unless your mods are in REDmod format, which will be loaded even later and in order of their folder names.
@@ -178,7 +178,7 @@ Understood? No? That's fine. Just keep it unique. :D
 
 You can rename a material by changing the "name" property inside the `CMeshMaterialEntry` in the `materials` array:&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (4) (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Inside the appearances block, the material assignment to the individual submeshes happens by name, so don't forget to change the `chunkMaterial` names!

@@ -14,6 +14,6 @@ Click on the “Media” tab and you’ll be able to put any pictures!
 Mind the resolution, and put something smaller than the ones recommended\
 (it doesn’t work if it’s exactly 660x930px)
 
-![](<../../../.gitbook/assets/0 (4)>)
+![](<../../../.gitbook/assets/0 (3)>)
 
-![](../../../.gitbook/assets/1) ![](<../../../.gitbook/assets/2 (3)>)
+![](<../../../.gitbook/assets/1 (3)>) ![](<../../../.gitbook/assets/2 (2)>)

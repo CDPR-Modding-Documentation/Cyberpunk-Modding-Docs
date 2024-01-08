@@ -227,3 +227,6 @@ Now let's look at what we just did and check the diagram. You'll see that the co
 
 And that's it! With this and the [original guide](../../../core-mods-explained/archivexl/), you should hopefully be able to add items to your heart's content!
 
+## Troubleshooting
+
+Please see the original guide's [#troubleshooting](./#troubleshooting "mention")section.

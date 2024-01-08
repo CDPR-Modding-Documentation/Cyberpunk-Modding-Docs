@@ -171,7 +171,7 @@ The section&#x20;
    [#selected-files-refit](r-and-r-your-own-wolvenkit-project.md#selected-files-refit "mention")
 
 {% hint style="info" %}
-For the general documentation on adding files to your project, see [here](../../../modding-cyberpunk-2077/analysing-other-mods.md#step-1-switch-to-mod-browser).&#x20;
+For the general documentation on adding files to your project, see [here](../../analysing-other-mods/#step-1-switch-to-mod-browser).&#x20;
 {% endhint %}
 
 ### How to export files
@@ -243,9 +243,9 @@ All material colour definitions are stored in `.mlsetup` files, which we'll be e
 {% hint style="info" %}
 If you want to edit a file that is not part of [High Fashion Netrunning Suits](https://www.nexusmods.com/cyberpunk2077/mods/9314), you need to find it first.&#x20;
 
-If it is part of a different mod, see [analysing-other-mods.md](../../../modding-cyberpunk-2077/analysing-other-mods.md "mention") and use **that** archive. You just need to adjust your search queries below.
+If it is part of a different mod, see [analysing-other-mods](../../analysing-other-mods/ "mention") and use **that** archive. You just need to adjust your search queries below.
 
-&#x20;If you want to modify base game items, you need to find their mesh (check [spawn-codes-baseids-hashes.md](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention")). Once you have that, you can use "find used files" from the Asset Browser's context menu to find all .mlsetups, or you open the mesh in Wolvenkit to follow the [material definition chain](../../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances).&#x20;
+&#x20;If you want to modify base game items, you need to find their mesh (check [spawn-codes-baseids-hashes.md](../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention")). Once you have that, you can use "find used files" from the Asset Browser's context menu to find all .mlsetups, or you open the mesh in Wolvenkit to follow the [material definition chain](../../../files-and-what-they-do/3d-objects-.mesh-files/#step-1-appearances).&#x20;
 {% endhint %}
 
 #### **TL;DR: via search browser query**

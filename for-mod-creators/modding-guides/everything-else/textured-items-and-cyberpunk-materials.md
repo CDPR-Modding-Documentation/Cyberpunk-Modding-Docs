@@ -26,7 +26,7 @@ For a guide about changing materials, check [here.](../items-equipment/editing-e
 {% endhint %}
 
 {% hint style="info" %}
-If you want to understand how material loading works, check the [mesh page](../../files-and-what-they-do/3d-objects-.mesh-files.md).
+If you want to understand how material loading works, check the [mesh page](../../files-and-what-they-do/3d-objects-.mesh-files/).
 
 You can find explanation and documentation about materials [here](../../materials/).&#x20;
 {% endhint %}
@@ -91,7 +91,7 @@ This will create the following files under the project's `raw` section:
 Use `baseball_02_d.png`, as the other one doesn't have transparency.
 
 {% hint style="info" %}
-The import/export process has [its own guide](../../3d-modelling/exporting-and-importing-meshes/). There's also a [troubleshooting page](../../3d-modelling/self-made-normal-maps/troubleshooting-normal-maps.md) if you're stuck.
+The import/export process has [its own guide](../../3d-modelling/exporting-and-importing-meshes/). There's also a [troubleshooting page](../textures-and-luts/self-made-normal-maps/troubleshooting-normal-maps.md) if you're stuck.
 {% endhint %}
 
 Now that all files are in place, open the Import Tool in Wolvenkit (Tools -> Import), and re-import the files. The Wolvenkit preview should show your new imported mesh.
@@ -122,7 +122,8 @@ Scene Collection
     ▽ submesh_03_LOD_1
 ```
 
-LOD\_1 indicates the level of detail, whereas the submeshes need to be numbered explicitly (or Wolvenkit will number them for you, which messes up the material assignments. You'll want to avoid this).
+* LOD\_1 indicates the level of detail
+* The submesh numbers are important for [material assignment](../../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment) in Wolvenkit.
 
 {% hint style="success" %}
 The easiest way to get there is by running [this python script](https://raw.githubusercontent.com/manavortex/code\_snippets/master/py/cyberpunk/util/prepare\_submeshes\_for\_export.py) (source: manavortex's github) in Blender after import:\
@@ -135,7 +136,7 @@ The easiest way to get there is by running [this python script](https://raw.gith
 {% hint style="danger" %}
 A mesh that I imported with 9 **simultaneously visible** submeshes made the game crash with a likelihood of \~ 80% when I spawned or de-spawned it (scaling was fine). You might want to create two separate files if you have too many objects.
 
-Since it clearly works for e.g. the body mesh, make of this what you will.
+Since it clearly works for e.g. the body mesh with ten submeshes, make of this what you will.
 {% endhint %}
 
 #### Submesh by material
@@ -175,7 +176,7 @@ You do that by changing into the edit mode, then selecting everything that you w
 You can duplicate your selection first (Shift+D, ESC)
 {% endhint %}
 
-Now, switch back to Object mode and select your new mesh before going back to Edit Mode. Make sure to [**scale**](../../3d-modelling/self-made-normal-maps/#step-0-preparing-the-viewport) your new mesh, so that it is slightly above the surface of the old one - otherwise, you will have two things in the same place, which will look like shit.
+Now, switch back to Object mode and select your new mesh before going back to Edit Mode. Make sure to [**scale**](../textures-and-luts/self-made-normal-maps/#step-0-preparing-the-viewport) your new mesh, so that it is slightly above the surface of the old one - otherwise, you will have two things in the same place, which will look like shit.
 
 Make sure to [correctly name your new submesh](textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh), or run [the script](https://raw.githubusercontent.com/manavortex/code\_snippets/master/py/cyberpunk/util/prepare\_submeshes\_for\_export.py) again.
 
@@ -222,7 +223,7 @@ Your import has been successful when the preview in Wolvenkit changes (you might
 ## Material assignments
 
 {% hint style="info" %}
-For an overview of materials that you might want to use for something, check [here](../../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md).&#x20;
+For an overview of materials that you might want to use for something, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).&#x20;
 
 You can check a material's properties by opening the file inside of Wolvenkit and checking the last entry of the "parameters" array, or search for "files using this" and looking at how they're doing things.
 {% endhint %}
@@ -330,7 +331,7 @@ Save the lua file, install your mod, and launch the game. Time to test!
 
 ## Material assignments
 
-For an explanation how materials are assigned to a mesh, check [this page](../../files-and-what-they-do/3d-objects-.mesh-files.md#material-assignment) - this guide will just tell you what to do.
+For an explanation how materials are assigned to a mesh, check [this page](../../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment) - this guide will just tell you what to do.
 
 {% hint style="info" %}
 You can copy entire materials between meshes: select one, right-click, and pick one of the "copy from…" entries.
@@ -378,7 +379,7 @@ You can name your materials whatever you like, as long as you stick to the follo
 
 #### Explanation:&#x20;
 
-MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](../../files-and-what-they-do/3d-objects-.mesh-files.md#chunkmaterials) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../materials/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
+MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](../../files-and-what-they-do/3d-objects-.mesh-files/#chunkmaterials) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../files-and-what-they-do/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
 
 {% hint style="success" %}
 Now, we adjust the materials — we'll just change a few properties to show you how it works, and then you can go play.&#x20;
@@ -419,7 +420,7 @@ If you rather want to make your own mlsetups, see [here](../items-equipment/edit
 
     <figure><img src="../../../.gitbook/assets/textures_baseball_gold.png" alt=""><figcaption><p>Also not a moon</p></figcaption></figure>
 
-The possibilities are basically endless, so go and explore them already! For a nifty list with materials to get you started, check [here](../../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md).\
+The possibilities are basically endless, so go and explore them already! For a nifty list with materials to get you started, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).\
 For a guide on creating AMM props, see [here](custom-props.md).&#x20;
 
 ## Troubleshooting

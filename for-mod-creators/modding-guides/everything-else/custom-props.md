@@ -11,8 +11,8 @@ description: How to create custom props to use with AMM or sector editing
 
 This guide will teach you how to create AMM props in two variants:&#x20;
 
-* the "vanilla" way by using a [mesh entity](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) with a [.mesh](../../files-and-what-they-do/3d-objects-.mesh-files.md) file with only one appearance
-* customizable by chaining a [`root entity`](../../files-and-what-they-do/entity-.ent-files/#root-entity), an [`.app`](../../files-and-what-they-do/appearance-.app-files.md), and a [`.mesh`](../../files-and-what-they-do/3d-objects-.mesh-files.md) file with multiple appearances.&#x20;
+* the "vanilla" way by using a [mesh entity](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) with a [.mesh](../../files-and-what-they-do/3d-objects-.mesh-files/) file with only one appearance
+* customizable by chaining a [`root entity`](../../files-and-what-they-do/entity-.ent-files/#root-entity), an [`.app`](../../files-and-what-they-do/appearance-.app-files.md), and a [`.mesh`](../../files-and-what-they-do/3d-objects-.mesh-files/) file with multiple appearances.&#x20;
 
 {% hint style="info" %}
 For a guide on how to make meshes out of 2d textures, see [here](your-image-as-custom-mesh.md).
@@ -165,7 +165,7 @@ If you have more than four mesh files assigned to your app's components, the pro
 
 #### template\_textured.mesh
 
-A pre-configured [mesh](../../files-and-what-they-do/3d-objects-.mesh-files.md) for a textured material. Uses the following files in the subfolder `textures`:
+A pre-configured [mesh](../../files-and-what-they-do/3d-objects-.mesh-files/) for a textured material. Uses the following files in the subfolder `textures`:
 
 * `template_01_d.xbm`: A diffuse (albedo) map, colouring the mesh
 * `template_01_n.xbm`: A normal (bump) map, adding depth to the object.
@@ -178,7 +178,7 @@ You can learn more about textured materials [here](../../materials/#textured). T
 
 #### template\_multilayered.mesh
 
-A pre-configured [mesh](../../files-and-what-they-do/3d-objects-.mesh-files.md) for a multilayered material. Uses the following files in the subfolder `textures`:
+A pre-configured [mesh](../../files-and-what-they-do/3d-objects-.mesh-files/) for a multilayered material. Uses the following files in the subfolder `textures`:
 
 * `6_layers.mlsetup`: A [multilayer setup](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material) with colour properties
 * `6_layers.mlmask`: A [multilayer mask](../../materials/multilayered/), determining which parts of the mesh are affected by which layer of the mlsetup. In this case, it just contains six blank layers.
@@ -213,7 +213,7 @@ You can point the file at a different mesh by changing the depot path of the com
 3. For each appearance, open the `components` array
 4. Click on the first component `amm_prop_slot1`.  In the panel to the right of the tree, change the following properties:
    * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
-   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances), otherwise the first appearance from the list will be used as default.
+   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../files-and-what-they-do/3d-objects-.mesh-files/#step-1-appearances), otherwise the first appearance from the list will be used as default.
 
 <figure><img src="../../../.gitbook/assets/cuzstom_props_change_mesh_2.png" alt=""><figcaption><p>For props with variants: <code>template.app</code></p></figcaption></figure>
 
@@ -227,7 +227,7 @@ You can point the file at a different mesh by changing the depot path of the com
 2. Find the `components` array and open it
 3. Click on the first component `amm_prop_slot1`.  In the panel to the right of the tree, change the following properties:
    * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
-   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances), otherwise the first appearance from the list will be used as default.
+   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../files-and-what-they-do/3d-objects-.mesh-files/#step-1-appearances), otherwise the first appearance from the list will be used as default.
 
 <figure><img src="../../../.gitbook/assets/custom_props_change_mesh.png" alt=""><figcaption><p>For props without appearances: <code>template_no_variants.ent</code></p></figcaption></figure>
 
@@ -235,7 +235,7 @@ You can point the file at a different mesh by changing the depot path of the com
 
 4. If you want to load more than one mesh, repeat the process for the other components. If you want to use more than four, read [#why-only-4-components](custom-props.md#why-only-4-components "mention")
 5. If you don't want to load more than one mesh, select `amm_prop_slot2` and delete the `depotPath`. Otherwise, you'll see your prop and a floating cube.
-6. Finally, change the `defaultAppearance` to [a valid appearance in your .mesh file](../../files-and-what-they-do/3d-objects-.mesh-files.md#step-1-appearances). If no appearance with this name can be found, the prop will be invisible when it spawns.
+6. Finally, change the `defaultAppearance` to [a valid appearance in your .mesh file](../../files-and-what-they-do/3d-objects-.mesh-files/#step-1-appearances). If no appearance with this name can be found, the prop will be invisible when it spawns.
 
 ### Why only 4 components?
 

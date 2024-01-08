@@ -34,7 +34,7 @@ A [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-
 
 To bring 3d data into Cyberpunk, Wolvenkit needs a .mesh file to import into. [Read here why](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure).&#x20;
 
-For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item.md](../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item.md "mention"), creating [custom-props.md](../modding-guides/everything-else/custom-props.md "mention") or [adding-new-items](../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
+For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item](../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/ "mention"), creating [custom-props.md](../modding-guides/everything-else/custom-props.md "mention") or [adding-new-items](../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
 
 ### Static items
 

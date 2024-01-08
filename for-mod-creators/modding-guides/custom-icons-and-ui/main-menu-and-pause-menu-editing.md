@@ -4,7 +4,7 @@ description: How to edit the in-game Main Menu and Pause Menu
 
 # Main Menu and Pause Menu editing
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (176).png" alt=""><figcaption></figcaption></figure>
 
 ## File paths
 
@@ -38,19 +38,19 @@ This guide is valid for both files (main menu and pause menu)
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 From here move to the new open window were we are going to start editing our menu and you should see something like this:
 
-<figure><img src="../../../.gitbook/assets/image (1) (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
 
 #### Button Size:
 
 Follow this exact file structure and here you can change the button size:
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-24 232341.png" alt=""><figcaption></figcaption></figure>
 
@@ -62,7 +62,7 @@ Change the values to Negative side to make the buttons smaller or to Positive to
 
 Same rule apply as Button Size and the path for it can be fond here:
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-24 232317.png" alt=""><figcaption></figcaption></figure>
 
@@ -74,7 +74,7 @@ Again, change the values to Negative side to make the spacing smaller or to Posi
 
 Same rule apply as the other two and the path for it can be found here:
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-24 232300.png" alt=""><figcaption></figcaption></figure>
 
@@ -86,7 +86,7 @@ Here change the values to negative ones (except Right value - Changing that will
 
 Same rule apply as the others and the path for it can be found here:
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (175).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-11-25 160303.png" alt=""><figcaption></figcaption></figure>
 

@@ -64,7 +64,7 @@ A material definition for a shader. You can assign those to **CMaterialInstance*
 
 {% hint style="info" %}
 For further detes on materials, see [here](../materials/). \
-For an explanation on .mi files, see [here](../materials/re-using-materials-.mi.md).
+For an explanation on .mi files, see [here](re-using-materials-.mi.md).
 {% endhint %}
 
 ### Relevant properties:&#x20;
@@ -94,7 +94,7 @@ If you stick to the game's naming schema, Wolvenkit will auto-detect the right i
 
 ### Normal maps
 
-Can be either blue or yellow (inverted), both exists. For a guide how to make your own, see [here](../3d-modelling/self-made-normal-maps/).&#x20;
+Can be either blue or yellow (inverted), both exists. For a guide how to make your own, see [here](../modding-guides/textures-and-luts/self-made-normal-maps/).&#x20;
 
 Cyberpunk normal maps are swizzled (a technique originally employed in DTX-5).&#x20;
 

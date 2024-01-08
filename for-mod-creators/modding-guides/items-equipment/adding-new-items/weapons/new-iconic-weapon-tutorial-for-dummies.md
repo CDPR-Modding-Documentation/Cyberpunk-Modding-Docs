@@ -1,0 +1,302 @@
+---
+description: >-
+  We'll be looking at making a feature complete new Iconic weapon called the
+  'hand of midas' along with two unique iconic attachments for it. Each will
+  have a unique special ability & custom skin
+cover: ../../../../../.gitbook/assets/merchants_of_death_ultrawide.png
+coverY: 46
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
+---
+
+# ☠ New Iconic Weapon : Tutorial for Dummies
+
+{% hint style="danger" %}
+This article is a stub and is not done yet! It's still missing the following sections:&#x20;
+
+* Tweak changes for a weapon
+* Creating a unique weapon skin
+* Adding iconic mods
+* Creating custom attachments
+{% endhint %}
+
+## Prerequisites
+
+Before beginning, ensure you have the following software installed and properly set up:
+
+1. **WolvenKit (8.12+)** - [Installed & Setup](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download)
+2. **MLSB (MultiLayerSetupBuilder 1.6.7+)** - [Installed & Setup](../../../../modding-tools/mlsetup-builder/#installation)
+3. **A text editor:** [Notepad++](https://notepad-plus-plus.org/downloads/) or, if you want to get fancy, [Visual Studio Code](https://app.gitbook.com/s/-McniwB8YOK2HnJ7SYg\_/getting-started)
+4. **Cyberpunk 2077** - 😑
+5. Core mods: [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198), [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197), [Red4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
+6. Optional: [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/)
+
+## Step 1: Create a New Project in WolvenKit
+
+Start by opening WolvenKit and create a new project. This will be the base for your new iconic weapon mod.
+
+<figure><img src="../../../../../.gitbook/assets/image (179).png" alt=""><figcaption><p>Create a new WolvenKit project as shown here</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/image (180).png" alt=""><figcaption><p>A clean project should look like this (as of Wolvenkit 8.12, your interface may look different)</p></figcaption></figure>
+
+## Step 2: Choose the Base Weapon
+
+Decide on the weapon you want to base your new iconic weapon on. For this tutorial, we will use the gun 'Unity' as our base. The item ID for Unity is `Items.Preset_Unity_Default`.
+
+{% hint style="info" %}
+For a list of all weapon entities, check [weapons.md](../../../../references-lists-and-overviews/equipment/weapons.md "mention")&#x20;
+
+You can find a list of all in-game items [here](https://onedrive.live.com/view.aspx?resid=EF6891140DE637B3%21221903\&authkey=!AE\_n4RTzwmVHwy8).
+{% endhint %}
+
+<figure><img src="../../../../../.gitbook/assets/image (182).png" alt=""><figcaption><p>Open Tweak Browser &#x26; search "Items.Preset_Unity_Default"</p></figcaption></figure>
+
+## Step 3: Create a TweakXL Override
+
+To understand how the base gun works, open the tweak browser in WolvenKit and search for `Items.Preset_Unity_Default`.
+
+After locating the Unity gun in the tweak browser, right-click on the item and select "Add TweakXL Override". This allows you to modify and customize the weapon’s attributes to create your new iconic weapon.
+
+<figure><img src="../../../../../.gitbook/assets/image (185).png" alt=""><figcaption><p>Red arrow = Tweak Name, where you can override it. Blue Box= Details about selected tweak. White arrow = Overridden (New) Tweak </p></figcaption></figure>
+
+## Step 5: Open the Overridden Tweak in a Code Editor
+
+Open the overridden tweak file in a code editor of your choice (such as Notepad++ or VS Code). You will be presented with a `.yaml` file containing numerous fields.
+
+<figure><img src="../../../../../.gitbook/assets/image (186).png" alt=""><figcaption><p>"Items.Preset_Unity_Default" tweak opened in VS Code</p></figcaption></figure>
+
+## Step 6: Understand the Fields in the .yaml File
+
+The .yaml file may seem complex at first glance, but here's a breakdown of key fields in another weapon tweak (`Items.Preset_Sidewinder_Default`) : (Thanks to BuffMcMuff)
+
+<pre class="language-yaml"><code class="lang-yaml"><strong>Items.Preset_Sidewinder_Default: # item "code" for your weapon. use this when giving item.
+</strong>  $type: gamedataWeaponItem_Record # the type of record.
+  ammo: Ammo.RifleAmmo # ammo type used
+  baseEmptyReloadTime: 1.54999995 # base reload time when mag empty NOTE: DO NOT EDIT RELOAD SPEED HERE see statModifierGroups: Items.Base_Sidewinder_Handling_Stats
+  baseReloadTime: 1.54999995 # base reload time when mag is not empty NOTE: DO NOT EDIT RELOAD SPEED HERE see statModifierGroups: Items.Base_Sidewinder_Handling_Stats
+  damageType: DamageTypes.Physical # damage type
+  effectiveRangeFalloffCurve: StandardFalloff # damage fall of curve
+  evolution: WeaponEvolution.Smart # what type of weapon none, power, tech and smart for ranged weps
+  forcedMinHitReaction: -1 # TODO
+  fxPackage: WeaponFxPackage.SmartRifle # visual effects used for bullets. trail, bullet hole, impact, etc
+  fxPackageQuickMelee: WeaponFxPackage.QuickMeleeFxPackage # TODO
+  hudIcon: HUDWeaponIcons.Sidewinder # hud icon used
+  IsIKEnabled: False # are inverse kinematics enabled.
+  manufacturer: WeaponManufacturer.Corporation # weapon manufacturer type. not sure if used ingame.
+  primaryTriggerMode: TriggerMode.FullAuto # trigger mode when hip firing and aiming if secondaryTriggerMode is not set.
+  projectileEaseOutCurveName: ProjectileEaseOut # TODO
+  rangedAttacks: Attacks.SmartBulletLowPackage # what type of bullet to fire. explosive, smart, projectile, standard hitscan, etc
+  triggerEffectName: te_wea_aim_mid # TODO
+  uninterruptibleEmptyReloadStart: 0.5 # point after which reload cannot be cancelled by other animations such as running. with empty mag
+  uninterruptibleReloadStart: 0.5 # point after which reload cannot be cancelled by other animations such as running. with non empty mag
+  useForcedTBHZOffset: False # Time before hit offset? used by npc
+  UseShootVFXOnlyOnFirstShot: False # if bullet vfx is used again when firing in non semi-auto
+  animFeatureName: WeaponData # TODO
+  animName: ui_garment_pose # TODO
+  animSetResource: '' # TODO
+  appearanceResourceName: Preset_Sidewinder_Default # used to set .app file used by weapon
+  audioName: wea_set_sidewinder # used to set weapon sounds not related to reloading and and first equip anim.
+  blueprint: Items.Base_Smart_AR_SMG_LMG_NoAttachments_Blueprint # "blueprint" used to create the gun. different versions for guns with no barrel or scope attachments. also generic ones for iconics
+  crosshair: Crosshairs.SmartGun # what crosshairs to use
+  deprecated: False # TODO. used with items from before v2.0?
+  dropObject: defaultItemDrop # TODO
+  enableNpcRPGData: True # if npc should use npcRPGData found below
+  entityName: weapon_root # TODO
+  equipArea: EquipmentArea.Weapon # equip area. see equipment.EX
+  friendlyName: w_rifle_assault_nokota_sidewinder # used to set player arm animations in first person see player_ma_fpp.ent and player_wa_fpp.ent. reload and first equip sounds are set in .anims files also. see weapon anim files beginning with pwa_ and pma_
+  garmentOffset: 0 # TODO
+  icon: UIIcon.ItemIcon # Used when setting inventory icon
+  iconPath: '' # Used when setting inventory icon
+  isCached: False # TODO
+  isCoreCW: False # TODO
+  isCustomizable: False # TODO
+  isGarment: False # TODO
+  isPart: False # this is set to true in weapon parts such as scopes
+  isSingleInstance: False # TODO
+  itemCategory: ItemCategory.Weapon # item category used for inventory
+  itemSecondaryAction: ItemAction.Equip # second action shown when looking at weapon on the ground for example.
+  itemType: ItemType.Wea_Rifle # what type of item. used in inventory and perks i think? maybe affects animations?
+  localizedName: '' # TODO
+  mass: 20 # weight of weapon.
+  minigameInstance: minigame_v2.DefaultItemMinigame # TODO
+  npcRPGData: Items.Base_Sidewinder_inline1 # stats used when the weapon is equipped by an NPC
+  parentAttachmentType: ParentAttachmentType.Slot # used for weapon attachments such as scopes and muzzles
+  powerLevelDeterminedByParent: False # TODO. not used since 2.0?
+  quality: Quality.Random # default quality for weapon. CET ignores Quality.Random and always gives normal. Other quality settings work fine in CET and random works normally when found normally ingame.
+  qualityRestrictedByParent: False # TODO
+  replicateWhenNotActive: False # TODO
+  stateMachineName: Weapon # used by game logic.
+  upgradeCostMult: 1 # TODO
+  useHeadgearGarmentAggregator: False # TODO. probably not used by weapons?
+  useNewSpawnMethod: False # TODO
+  usesVariants: False # TODO
+  savable: False # TODO
+  attacks: # used to set different types of projectiles that can be shot by the gun. not used in 2.0?
+    - Attacks.Bullet_GameEffect
+       ...
+    - Attacks.ChimeraPowerMod_ExplosiveBulletEffect
+  gameplayDescription: LocKey#92674 # used to set the description when inspecting weapon.
+  ikOffset: {x: 0, y: 0, z: 0}
+  shootingPatternPackages: [] # used by npc
+  triggerModes: # trigger modes available to weapon. should have primary and secondary trigger modes here also
+    - TriggerMode.FullAuto
+  animationParameters: [] # TODO
+  appearanceSuffixes: [] # TODO
+  appearanceSuffixesOwnerOverride: [] # TODO
+  attachmentSlots: [] # TODO. used by attachments such as scopes and muzzles
+  buyPrice: # price multipliers used when buying weapon.
+    - Price.BaseWeaponPrice
+    - Price.ItemQualityMultiplier
+    - Price.PlusTierMultiplier
+    - Price.BrokenItemPriceMult
+    - Price.IconicMultiplier
+    - Price.BuyPrice_StreetCred_Discount
+    - Price.AssaultRifleMultiplier
+    - Price.SmartWeapon
+  cameraForward: {x: 0, y: 0, z: 0} # TODO
+  cameraUp: {x: 0, y: 0, z: 0} # TODO
+  connections: [] # TODO
+  displayName: LocKey#3599 # name of weapon
+  equipAreas: [] # TODO
+  equipPrereqs: [] # TODO. used by game logic packages(GLP)?
+  gameplayRestrictions: # restrict weapon usage in certain situations.
+    - GameplayRestriction.VehicleCombatNoInterruptions
+  hairSkinnedMeshComponents: []
+  localizedDescription: LocKey#3600 # white text description when hovering over an item.
+  OnAttach: # used to apply effects to player and weapon whean equipping weapon. stamina regen speed, stagger when shooting, etc
+    - Items.Base_Assault_Rifle_inline0
+    - EquipmentGLP.MediumStaminaRegen
+    - EquipmentGLP.LightStaminaDelay
+    - Items.SmartWeaponTargetsPriorityQueues
+  OnEquip: [] # TODO
+  OnLooted: [] # TODO
+  parts: [] # TODO
+  placementSlots: # slots in Which this item can be placed in. see equipmentEX?
+    - AttachmentSlots.WeaponRight
+    - AttachmentSlots.WeaponLeft
+    - AttachmentSlots.ItemSlotSniperRifle
+    - AttachmentSlots.ItemSlotSMG
+    - AttachmentSlots.ItemSlotTechRifle
+    - AttachmentSlots.ItemSlotHandgunLeftJackie
+    - AttachmentSlots.ItemSlotHandgunRightJackie
+    - AttachmentSlots.ItemSlotGenericMelee
+    - AttachmentSlots.ItemSlotHammer
+    - AttachmentSlots.ItemSlotKatana
+    - AttachmentSlots.ItemSlotKnifeRight
+    - AttachmentSlots.ItemSlotKnifeLeft
+    - AttachmentSlots.ItemSlotGenericRanged
+    - AttachmentSlots.ItemSlotHandgunRight
+    - AttachmentSlots.ItemSlotHandgunLeft
+    - AttachmentSlots.ItemSlotTechRifle
+    - AttachmentSlots.ItemSlotSMG
+  previewBBoxOverride: []
+  requiredSlots: []
+  sellPrice:
+    - Price.BaseWeaponPrice
+    - Price.ItemQualityMultiplier
+    - Price.PlusTierMultiplier
+    - Price.WeaponSellMultiplier
+    - Price.BrokenItemPriceMult
+    - Price.IconicMultiplier
+    - Price.AssaultRifleMultiplier
+    - Price.SmartWeapon
+  slotPartList: # what models to load when weapon has attachments and when it has mag inserted(or not)
+    - Items.Base_Sidewinder_inline2
+    - Items.Base_Sidewinder_inline4
+    - Items.Base_Sidewinder_inline6
+    - Items.Base_Sidewinder_inline8
+  slotPartListPreset: # same as above but specific to the preset of the weapon, also used to set attachment and mod slots
+    - Items.Preset_Sidewinder_Default_inline0
+      …
+    - Items.Preset_Sidewinder_Default_inline5
+  tags: # tags signalling the game about weapon being smart, melee, ranged, etc....
+    - Weapon
+    - RangedWeapon
+    - inventoryDoubleSlot
+    - Preload
+    - Weapon
+    - Rifle Assault
+    - Smart
+    - SmartWeapon
+    - Preload
+    - Weapon
+    - Rifle Assault
+  variants: []
+  visualTags: # visual tags used to set what look to use from the app file set in appearanceResoureName
+    - Default
+  effectors: []
+  objectActions:
+    - ItemAction.Drop
+    - ItemAction.Disassemble
+    - ItemAction.WeaponDisassemble
+  statModifierGroups: # this section is for actually modifying weapon stats
+    - Items.Base_Smart_Stats
+    - Items.Base_Smart_Assault_Rifle_No_Sway_Stats
+    - Items.Base_Assault_Rifle_RPG_Stats
+    - Items.Base_Assault_Rifle_Misc_Stats
+    - Items.Base_PlayerState_Spread_Stats
+    - Items.Base_Weapon_Damage_Type_Min_Max
+    - Items.Base_Weapon_Damage_Type_Physical
+    - Items.QualityRandomization
+    - Items.ItemPlusRandomizer_MaxQuality
+    - Items.ItemPlusRandomizer_Below_MaxQuality
+    - Items.WeaponModsWeights_On_Tier2Plus
+    - Items.WeaponModsWeights_On_Tier3Plus
+    - Items.WeaponModsWeights_On_Tier4Plus
+    - Items.WeaponModsWeights_On_Tier5Plus
+    - Items.WeaponModsWeights_On_Tier5PlusPlus
+    - Items.Base_Smart_Assault_Rifle_Mult_Stats
+    - Items.Base_Sidewinder_Technical_Stats # used to set: bullet amount fired, projectiles fired per bullet, smart weapon accuracy, fire 
+rate(cycle time), mag size, smart range
+    - Items.Base_Sidewinder_Handling_Stats # used to set: reload speed, weapon zoom, speed of first equip anim.
+    - Items.Base_Sidewinder_Recoil_Stats # used to set: recoil stats
+    - Items.Base_Sidewinder_SmartGun_Stats # used to set: smartgun accuracy, projectile stats(speed), lock on stats
+    - Items.Base_Sidewinder_SmartGun_SmartLink_Stats # used to set: smartlink requirement and how stats in Base_Sidewinder_SmartGun_Stats are affected by link
+    - Items.Base_Sidewinder_SmartGun_Projectile_Stats # used to set: projectile miss conditions and other stuff like spirals
+    - Items.Base_Sidewinder_Spread_Stats
+    - Items.Base_Sidewinder_Flags # unknown
+    - Items.Base_Sidewinder_Aim_Stats
+    - Items.Base_Sidewinder_Constant_Stats # more spread stats, firepower, effective range
+    - Items.Base_Sidewinder_Damage_Stats # used to set: DPS
+  statModifiers: # this section is primarily used to set stuff intrinsic to all weapons
+    - Items.Base_Weapon_inline0
+<strong>      …
+</strong>    - Items.Base_Weapon_inline149
+  statPools: [] # used to set stat pools like tech weapon charge and overheating
+  weakspots: [] # TODO
+  position: {x: '0,000500000024', y: 0, z: '0,0900000036'}
+  price: Items.Base_Sidewinder_inline0
+  weaponVignetteRadius: 0.648199975
+  weaponEdgesSharpness: 0.495799989
+  weaponFarPlane_aim: 23.7000008
+  weaponFarPlane: 29.5
+  weaponEdgesSharpness_aim: 0.495799989
+  weaponVignetteCircular_aim: 0.174500003
+  offset: -0.100000001
+  safeActionDuration: 2
+  weaponVignetteIntensity_aim: 0.135700002
+  weaponNearPlane_aim: 12.4700003
+  weaponVignetteRadius_aim: 0.681400001
+  weaponNearPlane: 8.31000042
+  weaponVignetteIntensity: 0.135700002
+  weaponBlurIntensity_aim: 1
+  weaponVignetteCircular: 0
+  weaponBlurIntensity: 1
+  hide_nametag: True
+
+</code></pre>
+
+Each field in the .yaml file represents a specific attribute or behavior of the weapon. It's crucial to understand these fields to effectively customize your iconic weapon.
+

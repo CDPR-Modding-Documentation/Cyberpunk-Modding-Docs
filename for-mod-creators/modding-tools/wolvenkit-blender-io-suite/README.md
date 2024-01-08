@@ -47,7 +47,7 @@ Lets you transfer [vertex weights](../../3d-modelling/meshes-and-armatures-riggi
 
 You can only do this on a mesh-by-mesh basis, so you have to do all meshes in sequence.
 
-To check out the more detailed process with a Transfer Weight modifier, check out the [custom-facial-piercings-prc-framework.md](../../modding-guides/items-equipment/custom-facial-piercings-prc-framework.md "mention") page, section [#weight-painting](../../modding-guides/items-equipment/custom-facial-piercings-prc-framework.md#weight-painting "mention")
+To check out the more detailed process with a Transfer Weight modifier, check out the [custom-facial-piercings-prc-framework.md](../../modding-guides/npcs/custom-facial-piercings-prc-framework.md "mention") page, section [#weight-painting](../../modding-guides/npcs/custom-facial-piercings-prc-framework.md#weight-painting "mention")
 
 1. Select the mesh with weights
 2. Select the mesh that you want your weights transferred to
