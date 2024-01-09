@@ -15,13 +15,15 @@ This guide will explain how to influence meshes by directly in the .app file, ov
 
 For even further customization options for wardrobe items, see [EquipmentEx](https://github.com/psiberx/cp2077-equipment-ex)'s readme.
 
-## PartsOverrides: Hiding chunks
+## PartsOverrides: Changing other meshes
+
+To learn how to hide things via PartsOverrides, check [#chunkmasks-partially-hiding-meshes](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
 
 {% hint style="info" %}
-You can not use PartsOverrides on components defined in the same .app file. Either use components from other files, or load them via [associated .ent file](adding-new-items/#mesh\_entity.ent).
+You can't use PartsOverrides on components defined in the same .app file. Either use components from other files, or load them [#mesh-component-entity-simple-entity](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity "mention")
 {% endhint %}
 
-In the .app file, each appearance lets you define [PartsOverrides](adding-new-items/#appearance.app), which — as the name implies — let you hide chunks of previously existing components. An entry looks as follows:
+In the .app file, each appearance lets you define [#partsoverrides](../../files-and-what-they-do/appearance-.app-files.md#partsoverrides "mention"), which — as the name implies — let you **override** previously defined components. An entry looks as follows:
 
 <figure><img src="../../../.gitbook/assets/parts_values_parts_overrides.png" alt=""><figcaption><p>Overwrite the component "<code>kimono</code>" and "<code>kimono_filler</code>", which are defined in the file "<code>kimono_meshentity.ent</code>"<br>This is the reason why Cyberpunk has all the player components stored in .ent files!</p></figcaption></figure>
 

@@ -106,9 +106,9 @@ There is no exact migration guide yet. Maybe you'd like to write one?
 {% endhint %}
 
 * change the mod to use [different-equipment-slots.md](different-equipment-slots.md "mention") (e.g. shoes or glasses)
-* Learn about [#variants-and-suffixes](../../../core-mods-explained/archivexl/#variants-and-suffixes "mention")for e.g. [#adding-a-male-instance](./#adding-a-male-instance "mention") or [#hiding-body-parts-diagram](../../../core-mods-explained/archivexl/#hiding-body-parts-diagram "mention")
-* Learn about making more variants:[#adding-an-appearance](./#adding-an-appearance "mention")\
-  Create [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention")
+* Learn about [#variants-and-suffixes](../../../core-mods-explained/archivexl/#variants-and-suffixes "mention")for e.g. [#adding-a-male-instance](./#adding-a-male-instance "mention") or check the [#hiding-body-parts-diagram](../../../core-mods-explained/archivexl/archivexl-tags.md#hiding-body-parts-diagram "mention")
+* Learn about making more variants:[#adding-an-appearance](./#adding-an-appearance "mention")
+* Create [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention")
 * Create [adding-items-atelier-integration.md](../../everything-else/adding-items-atelier-integration.md "mention")
 * Learn about [porting-3d-objects-to-cyberpunk.md](../../../3d-modelling/porting-3d-objects-to-cyberpunk.md "mention")
 

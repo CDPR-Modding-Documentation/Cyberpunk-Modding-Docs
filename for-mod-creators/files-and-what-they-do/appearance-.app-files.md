@@ -50,7 +50,7 @@ Allows you to add one or more [component entities](entity-.ent-files/#mesh-compo
 
 Overrides component definitions via name. They can be defined in the appearance's own components array or loaded via [component entity](entity-.ent-files/#mesh-component-entity-simple-entity).&#x20;
 
-For usage instructions, see [here](../modding-guides/items-equipment/influencing-other-items.md#partsoverrides).&#x20;
+You can use them to change the appearance or visibility of components outside of the current .app file (for usage instructions, see [#partsoverrides-changing-other-meshes](../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-changing-other-meshes "mention")).&#x20;
 
 ## commonCookData
 

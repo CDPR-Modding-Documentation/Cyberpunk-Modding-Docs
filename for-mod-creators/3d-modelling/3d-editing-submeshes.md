@@ -5,20 +5,14 @@ This page contains a theory part and a guide.
 The guide section of this page has been created in the context of [first-person-perspective-fixes.md](../modding-guides/items-equipment/first-person-perspective-fixes.md "mention"): [#editing-the-.mesh](../modding-guides/items-equipment/first-person-perspective-fixes.md#editing-the-.mesh "mention"). It will show you how to split a mesh into submeshes (or how to alternatively delete these parts of the mesh).
 
 {% hint style="info" %}
-If you run into problems, check [exporting-and-importing-meshes](exporting-and-importing-meshes/ "mention") for more information, or [troubleshooting-your-mesh-edits.md](troubleshooting-your-mesh-edits.md "mention").
+If you run into problems, check [troubleshooting-your-mesh-edits.md](troubleshooting-your-mesh-edits.md "mention"), or consult the .
 {% endhint %}
 
-## Theory: what are submeshes?
+## What are submeshes?
 
-{% hint style="danger" %}
-TODO: Explain how this works.&#x20;
+For more information about this see [submeshes-materials-and-chunks.md](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention") and the section [#submeshes-in-blender](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#submeshes-in-blender "mention")
 
-* Link to chunkmask section on [3d-objects-.mesh-files](../files-and-what-they-do/3d-objects-.mesh-files/ "mention") page (and back). If there isn't one, create it.
-* Link to PartsOverrides: chunkmask section on [appearance-.app-files.md](../files-and-what-they-do/appearance-.app-files.md "mention") page (and back). If there isn't one, create it.
-* Other pages that might need linking:
-  * [adding-new-items](../modding-guides/items-equipment/adding-new-items/ "mention")
-  * [influencing-other-items.md](../modding-guides/items-equipment/influencing-other-items.md "mention")
-{% endhint %}
+To learn how you can use them for appearance management, check [#chunkmasks-partially-hiding-meshes](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
 
 ## Guide: Splitting off submeshes
 

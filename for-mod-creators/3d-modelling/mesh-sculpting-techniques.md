@@ -6,10 +6,10 @@ description: Best Practices for actually changing meshes
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created by @manavortex | Edited by Na**\
-**Published January 29 2023**
+**Published January 29 2023 by @manavortex | Edited by Na**\
+**Last documented edit: January 09 2024 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will give you a number of techniques when it comes to editing meshes in Blender (displayed version: 3.4.1)
+This guide will give you a number of techniques when it comes to editing meshes in Blender. The screenshots have been taken using version 3.4.1.
 
 {% hint style="success" %}
 Starting in version 1.5.0, the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention") features an [auto-refitter](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md), which supports many custom bodies and will be expanded in the future.&#x20;
@@ -17,15 +17,13 @@ Starting in version 1.5.0, the [wolvenkit-blender-io-suite](../modding-tools/wol
 For information on weight painting, check [meshes-and-armatures-rigging.md](meshes-and-armatures-rigging.md "mention")
 {% endhint %}
 
-Assumed skill level: \
+#### Assumed skill level:&#x20;
+
+This guide is aimed at more intermediate refitting needs. For a step-by-step refitting guide, check [here](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md).&#x20;
+
+**Prerequisites:**\
 \- You have [exported a mesh and imported it into Blender](exporting-and-importing-meshes/)\
 \- You are able to read and comprehend instructions.
-
-{% hint style="info" %}
-For a step-by-step refitting guide, check [here](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md).&#x20;
-
-You can find video guides for refitting linked on the [community guides](../modding-guides/community-guides/) page
-{% endhint %}
 
 ## Proportional editing
 

@@ -65,6 +65,10 @@ You want red and blue glowing tubes on the example helmet.
 
 ## Chunkmasks: partially hiding meshes
 
+{% hint style="info" %}
+To hide parts of the body, you can also use ArchiveXL tags. See [#hiding-body-parts-diagram](../../core-mods-explained/archivexl/archivexl-tags.md#hiding-body-parts-diagram "mention") and the corresponding wiki page for more information.
+{% endhint %}
+
 Imagine you want to hide the helmet's glowing parts (because you are being stealthy). You could just define another appearance where the glowing tubes are turned off — but you would have to add one for every variant you make. `arasaka_hellokitty_glow` and `arasaka_hellokitty_noglow`, the same for Militech, NightCorps and NCPD… ain't nobody got time for this.
 
 That's why CDPR came up with **chunkmasks**.
@@ -78,3 +82,5 @@ The numbers in the dropdown correspond to the submeshes: unchecking an entry wil
 {% hint style="warning" %}
 You can only use chunkMasks to **hide** submeshes. If you want to conditionally **show** them, you have to use custom ArchiveXL tags (see [archivexl-tags.md](../../core-mods-explained/archivexl/archivexl-tags.md "mention") -> [#adding-custom-tags](../../core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags "mention"))
 {% endhint %}
+
+To learn about hiding other items with chunkmasks, check out [#partsoverrides-hiding-chunks](../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-hiding-chunks "mention")
