@@ -2,6 +2,8 @@
 
 This page contains information about the game's TweakDB. Here, you can learn what it is, how you can navigate it, and how you can edit it.
 
+For a more hands-on guide on creating a new weapon, check [new-iconic-weapon-tutorial-for-dummies.md](../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
+
 ## What is the Tweak DB?
 
 Cyberpunk 2077 uses a single static database file, which registers and defines gameplay elements.&#x20;
