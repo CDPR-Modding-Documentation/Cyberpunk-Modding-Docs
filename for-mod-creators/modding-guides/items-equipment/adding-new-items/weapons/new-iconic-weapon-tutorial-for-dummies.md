@@ -1,8 +1,8 @@
 ---
 description: >-
-  We'll be looking at making a feature complete new Iconic weapon called the
-  'hand of midas' along with two unique iconic attachments for it. Each will
-  have a unique special ability & custom skin
+  We're creating a fully-featured new Iconic weapon, 'Hand of Midas', complete
+  with two distinctive Iconic attachments, each boasting a unique special
+  ability and custom skin.
 cover: ../../../../../.gitbook/assets/merchants_of_death_ultrawide.png
 coverY: 46
 layout:
@@ -323,7 +323,7 @@ To test it out, boot up your game and load any save.
 
 Now open up the CET [Console](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/console "mention"):
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
 
 Type in the command below and hit Enter.
 
@@ -331,7 +331,7 @@ Type in the command below and hit Enter.
  Game.AddToInventory("Items.Hand_Of_Midas",1)
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Your newly created weapon is now in game.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Your newly created weapon is now in game.</p></figcaption></figure>
 
 You can now see your newly created weapon in your inventory.&#x20;
 
@@ -435,7 +435,7 @@ This connects the displayName property of your item with a **locaization key**, 
 If you want to take a look at these lists, use WolvenKit's [LocKey browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/lockey-browser) or [search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `onscreens.json`.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>LocKey Browser search for <code>LocKey#49794</code></p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>LocKey Browser search for <code>LocKey#49794</code></p></figcaption></figure>
 
 ### So we edit onscreens.json?
 
@@ -443,7 +443,7 @@ Good thinking, but no. In Cyberpunk, only **one** mod can edit any given file. T
 
 Place a dedicated [`en-us.json`](https://mega.nz/file/3uB2CL5L#Y18wD4pGo1L7Y699GNvy6UaKVb8BqkjDP-FeYi9VcQM) file in your `midas_collection`\\`localization` folder.  This is where we'll add our own translation entries – after that, we only need to tell ArchiveXL about the file and lean back.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Red arrow = localization json added correctly. Green arrow = add new element in the json. Yellow arrow = key fields in new entry</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Red arrow = localization json added correctly. Green arrow = add new element in the json. Yellow arrow = key fields in new entry</p></figcaption></figure>
 
 ### Setting up a localizationKey
 
@@ -518,7 +518,7 @@ For the first time we're dealing with an array inside a tweak. An array can hold
 \
 The actual entry value `Quality.IconicItem` makes the weapon Iconic. It'll give it the fancy Iconic background in inventory, give a special dialogue box when disassembling it & make it have all the implied functions of an Iconic weapon. Install your mod and test this out.
 
-<figure><img src="../../../../../.gitbook/assets/image.png" alt=""><figcaption><p>Setting "Quality.IconicItem" will give it a special background in the inventory &#x26; also specify that the item is Iconic.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Setting "Quality.IconicItem" will give it a special background in the inventory &#x26; also specify that the item is Iconic.</p></figcaption></figure>
 
 Technically, you've already made a new Iconic weapon & I should call quits on this tutorial, but it's never as easy as that, is it? Give yourself a pat on the back & onto the next step.
 
@@ -528,7 +528,7 @@ Let's talk theme, the gun is called Hand Of Midas, and it would be fitting to ha
 \
 Dex's gun `Items.Preset_Liberty_Dex` already has a nice metallic sound to it, so let's use the sound files from this gun. To do this, find the gun in Tweak Browser and look for the property `audioName`.&#x20;
 
-<figure><img src="../../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p><code>audioName</code> for <code>Items.Preset_Liberty_Dex</code></p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p><code>audioName</code> for <code>Items.Preset_Liberty_Dex</code></p></figcaption></figure>
 
 Now add this value to your weapon tweak as shown below.
 
@@ -546,22 +546,26 @@ Items.Hand_Of_Midas:
 
 Install your mod and test it out, Hand Of Midas now sounds metallic like we intended it to.
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>An explanation for how audio works internally, should you decide to go the RedMod route.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>An explanation for how audio works internally, should you decide to go the RedMod route.</p></figcaption></figure>
 
-## Step 9: **The Fine Art of Firepower - Stat Adjustment**
+## Step 9: **Weapon Design 101 - Conceptualization of your Iconic (Optional)**
 
-Before you even start finessing with stats, it's important to think of what you want your weapon to be & how you want it to feel. This is a very important step in the creative process, and without it, you'll end up making a gun with 0 recoil and 5000 DPS which whilst overpowered, is no fun to use.\
-\
-For the Hand of Midas, I have conceptualized a gun that's Preem, Sassy, the kind that demands you be a sharpshooter. A gun like this does high damage, but that is not where you should start. I highly recommend looking at and designing the downsides of your weapon before you start work on the good stuff. \
-\
-Here's what we're gonna do to make the gun worse than the default Unity -
+When conceptualizing the 'Hand of Midas', the focus isn't solely on creating a weapon with high damage output. It's essential to consider the overall feel and identity of the weapon. Avoiding the trap of an overpowered but uninteresting gun, the 'Hand of Midas' is envisioned to be a unique piece with its own character - ideal for players who relish precision and skill.
 
-1. Increased recoil (When you are a sharpshooter, tough handling shouldn't be a problem)
-2. Smaller magazine size & Increased reload time (You're gonna need less bullets to kill, so make sure that each bullet needs to hit)
+**Designing the Weapon's Characteristics**
 
-These downsides don't just make the gun more balanced, they actually end up making it feel stronger. Increased recoil tells the user the gun pack's a punch & Longer reloads show off the gun reload animation for longer, which feels premium.\
-\
-To do this, we again need to tinker with the `statModifiers` & `statModifierGroups` in your weapon tweak. Open up the tweak for `Items.Preset_Unity_Default` and navigate to
+The design approach for 'Hand of Midas' revolves around balancing strengths with intentional limitations. Here's how we achieve this:
+
+1. **Increased Recoil**: This adds a layer of complexity and skill. High recoil means each shot requires careful consideration, appealing to players who enjoy a challenge and the satisfaction of mastering a weapon.
+2. **Smaller Magazine Size & Increased Reload Time**: These features ensure that every bullet counts. A smaller magazine encourages accuracy over spray-and-pray tactics, and a longer reload time not only adds a strategic layer to combat but also allows players to appreciate the weapon's aesthetics and animations longer.
+
+In summary, these design choices don't just balance the weapon; they enhance its identity. The increased recoil and reload times are not mere hindrances; they contribute to making the 'Hand of Midas' feel powerful and rewarding for those who can wield it effectively.&#x20;
+
+TODO - to be continued by destinybu
+
+## Step 10: Be a stat wizard
+
+To change the stats discussed in the step above, we again need to tinker with the `statModifiers` & `statModifierGroups` in your weapon tweak. Open up the tweak for `Items.Preset_Unity_Default` and navigate till you find the two arrays.
 
 ```yaml
 statModifiers:
@@ -578,3 +582,124 @@ statModifierGroups:
     ...
 ```
 
+These arrays don't directly contain the stats, but have inline objects, which in turn will contain the actual stats. I recommend browsing to each of these stats in the Tweak Browser to find out what each one does.
+
+Refer discovered stats here - TODO - add stats wiki page once approved.
+
+To change the gun's recoil, we'll add a new `statModifierGroup` tweak as shown below (to the weapon's tweak file or a new tweak file) -
+
+```yaml
+# Recoil related stats for Hand of Midas
+StatGroups.Hand_Of_Midas_Recoil_Stats:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 2
+    modifierType: Multiplier
+    statType: BaseStats.RecoilTime # time taken by gun to reach the recoil distance
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier
+    statType: BaseStats.RecoilKickMin # minimum sway on camera/gun on shooting
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier
+    statType: BaseStats.RecoilKickMax # maximum sway on camera/gun on shooting
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier
+    statType: BaseStats.RecoilRecoveryTime # time taken to return to normal position after recoil
+```
+
+Now add this stat group to your weapon's tweak.
+
+```yaml
+# Hand of Midas weapon tweak
+Items.Hand_Of_Midas:
+  $base: Items.Preset_Unity_Default # $base makes it so all the properties are taken from the specified tweak (in this case, "Items.Preset_Unity_Default") and the properties specified in this tweak overwrite the parent.
+  crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
+  displayName: LocKey#MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: LocKey#MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
+    - !append-once Quality.IconicItem # makes the weapon iconic
+  audioName: wea_set_liberty_dex # sets the sounds of Dex's gun - Plan B
+  statModifierGroups: # stats for a weapon also, but grouped (generally by category)
+    - !append-once StatGroups.Hand_Of_Midas_Recoil_Stats -> add this
+```
+
+Install your mod, launch the game and test your changes. You should see that the gun's recoil is increased, but doesn't feel overwhelming.
+
+<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Yellow box = Unity recoil pattern. Red box = Hand of Midas recoil pattern</p></figcaption></figure>
+
+You now know how to change your weapon's behavior. Play around & discover other stats and modify your gun to make it feel unique. Note that stats can be added individually to `statModifiers` or in groups to `statModifierGroups` .
+
+After a bit of tinkering, this is what my weapon tweak now looks like -
+
+```yaml
+# Hand of Midas weapon tweak
+Items.Hand_Of_Midas:
+  $base: Items.Preset_Unity_Default # $base makes it so all the properties are taken from the specified tweak (in this case, "Items.Preset_Unity_Default") and the properties specified in this tweak overwrite the parent.
+  crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
+  displayName: LocKey#MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: LocKey#MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
+    - !append-once Quality.IconicItem # makes the weapon iconic
+  audioName: wea_set_liberty_dex # sets the sounds of Dex's gun - Plan B
+  statModifierGroups: # stats for a weapon also, but grouped (generally by category)
+    - !append-once StatGroups.Hand_Of_Midas_Recoil_Stats
+    - !append-once StatGroups.Hand_Of_Midas_Technical_Stats
+    - !append-once StatGroups.Hand_Of_Midas_Handling_Stats
+    - !remove Items.Base_Unity_Technical_Stats
+
+# Magazine capacity for Hand of Midas
+StatGroups.Hand_Of_Midas_Technical_Stats:
+  $base: Items.Base_Unity_Technical_Stats
+  statModifiers:
+  - !append-once 
+    $type: gamedataConstantStatModifier_Record
+    value: 5
+    modifierType: Additive
+    statType: BaseStats.MagazineCapacityBase # sets the magazine capacity
+  - !remove Items.Base_Unity_Technical_Stats_inline2 # remove stat setting the magazine capacity
+
+# Reload/Zoom related stats for Hand of Midas
+StatGroups.Hand_Of_Midas_Handling_Stats:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 0.25
+    modifierType: Additive
+    statType: BaseStats.ReloadTimeBase # reload time when magazine is not empty
+  - $type: gamedataConstantStatModifier_Record
+    value: 0.25
+    modifierType: Additive
+    statType: BaseStats.EmptyReloadTime # reload time when magazine is empty
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier
+    statType: BaseStats.ZoomLevel # zoom level of a weapon
+
+
+# Recoil related stats for Hand of Midas
+StatGroups.Hand_Of_Midas_Recoil_Stats:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 2
+    modifierType: Multiplier
+    statType: BaseStats.RecoilTime # time taken by gun to reach the recoil distance
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier
+    statType: BaseStats.RecoilKickMin # minimum sway on camera/gun on shooting
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier
+    statType: BaseStats.RecoilKickMax # maximum sway on camera/gun on shooting
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier
+    statType: BaseStats.RecoilRecoveryTime # time taken to return to normal position after recoil
+```
+
+TODO - update above tweak once all stats are changed - destinybu
