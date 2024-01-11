@@ -375,7 +375,7 @@ If you have the REDmod DLC installed, you can use a text editor like Notepad++ t
 
 #### Method 2: The [Wolvenkit Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser)
 
-By searching for "Crosshairs." in the Tweak Browser. Most things we find inside the weapon tweak will be searchabled within the Tweak Browser, and some within the Asset Browser.
+By searching for "Crosshairs." in the Tweak Browser. Most things we find inside the weapon tweak will be searchable within the Tweak Browser, and some within the Asset Browser.
 
 <figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
 
@@ -501,22 +501,27 @@ After completing these steps, install your mod and launch the game. Your new wea
 
 ## Step 7: Make it Iconic
 
-Now we'll make this fancy iron of ours Iconic. We'll start with a small change to our tweak.
+To elevate the 'Hand of Midas' to its iconic status, we need to implement a couple of key changes in the tweak. These modifications will not only add unique features to the weapon but also protect its iconic integrity.
 
 ```yaml
 # Hand of Midas weapon tweak
 Items.Hand_Of_Midas:
   $base: Items.Preset_Unity_Default # $base makes it so all the properties are taken from the specified tweak (in this case, "Items.Preset_Unity_Default") and the properties specified in this tweak overwrite the parent.
   crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
-  displayName: LocKey#MC_gun_name # name of the gun (will be fetched from "LocKey#HOM_gun_name" secondary key in "en-us.json")
-  localizedDescription: LocKey#MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
-  statModifiers: -> add this
-  - !append-once Quality.IconicItem -> add this
+  tags:
+    - !append-once IconicWeapon # prevent the gun from being dissassembled
+  displayName: MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
+    - !append-once Quality.IconicItem # makes the weapon iconic
+  statModifierGroups: # stats for a weapon also, but grouped (generally by category)
 ```
 
-For the first time we're dealing with an array inside a tweak. An array can hold multiple items, and in this case, `statModifiers` will hold all the stats for your gun from recoil to damage. Thing is, `statModifiers` is already defined by our `$base: Items.Preset_Unity_Default` and we don't want to override it, we only want to add another entry to it whilst keeping the rest intact. So we use `!append-once` followed by the entry we want to add, which is `Quality.IconicItem`. Read more about how array operations work in [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks#array-operations).\
-\
-The actual entry value `Quality.IconicItem` makes the weapon Iconic. It'll give it the fancy Iconic background in inventory, give a special dialogue box when disassembling it & make it have all the implied functions of an Iconic weapon. Install your mod and test this out.
+For the first time we're dealing with an array inside a tweak. An array can hold multiple items, and in this case, `statModifiers` will hold all the stats for your gun from recoil to damage. Thing is, `statModifiers` is already defined by our `$base: Items.Preset_Unity_Default` and we don't want to override it, we only want to add another entry to it whilst keeping the rest intact. So we use `!append-once` followed by the entry we want to add, which is `Quality.IconicItem`. Read more about how array operations work in [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks#array-operations).
+
+`Quality.IconicItem` makes the weapon Iconic. It'll give it the fancy Iconic background in inventory, give a special dialogue box when disassembling it & make it have all the implied functions of an Iconic weapon. The `IconicWeapon` tag ensures the weapon cannot be disassembled. The addition of `Items.IconicQualityRandomization` to `statModifierGroups` is also important, but I donot understand why yet. -> TODO - Understand what this does and explain.
+
+Once these modifications are in place, install your mod and enjoy the newfound Iconic status of the 'Hand of Midas' in the game.
 
 <figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Setting "Quality.IconicItem" will give it a special background in the inventory &#x26; also specify that the item is Iconic.</p></figcaption></figure>
 
@@ -537,11 +542,15 @@ Now add this value to your weapon tweak as shown below.
 Items.Hand_Of_Midas:
   $base: Items.Preset_Unity_Default # $base makes it so all the properties are taken from the specified tweak (in this case, "Items.Preset_Unity_Default") and the properties specified in this tweak overwrite the parent.
   crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
-  displayName: LocKey#HOM_gun_name # name of the gun (will be fetched from "LocKey#HOM_gun_name" secondary key in "en-us.json")
-  localizedDescription: LocKey#HOM_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  tags:
+    - !append-once IconicWeapon # prevent the gun from being dissassembled
+  displayName: MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
   statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
-  - !append-once Quality.IconicItem # makes the weapon iconic
-  audioName: wea_set_liberty_dex # sets the sounds of Dex's gun - Plan B
+    - !append-once Quality.IconicItem # makes the weapon iconic
+  audioName: wea_set_liberty_dex -> add this
+  statModifierGroups: # stats for a weapon also, but grouped (generally by category)
+    - !append-once Items.IconicQualityRandomization
 ```
 
 Install your mod and test it out, Hand Of Midas now sounds metallic like we intended it to.
@@ -618,12 +627,15 @@ Now add this stat group to your weapon's tweak.
 Items.Hand_Of_Midas:
   $base: Items.Preset_Unity_Default # $base makes it so all the properties are taken from the specified tweak (in this case, "Items.Preset_Unity_Default") and the properties specified in this tweak overwrite the parent.
   crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
-  displayName: LocKey#MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
-  localizedDescription: LocKey#MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  tags:
+    - !append-once IconicWeapon # prevent the gun from being dissassembled
+  displayName: MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
   statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
     - !append-once Quality.IconicItem # makes the weapon iconic
   audioName: wea_set_liberty_dex # sets the sounds of Dex's gun - Plan B
   statModifierGroups: # stats for a weapon also, but grouped (generally by category)
+    - !append-once Items.IconicQualityRandomization
     - !append-once StatGroups.Hand_Of_Midas_Recoil_Stats -> add this
 ```
 
@@ -640,12 +652,15 @@ After a bit of tinkering, this is what my weapon tweak now looks like -
 Items.Hand_Of_Midas:
   $base: Items.Preset_Unity_Default # $base makes it so all the properties are taken from the specified tweak (in this case, "Items.Preset_Unity_Default") and the properties specified in this tweak overwrite the parent.
   crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
-  displayName: LocKey#MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
-  localizedDescription: LocKey#MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  tags:
+    - !append-once IconicWeapon # prevent the gun from being dissassembled
+  displayName: MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
   statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
     - !append-once Quality.IconicItem # makes the weapon iconic
   audioName: wea_set_liberty_dex # sets the sounds of Dex's gun - Plan B
   statModifierGroups: # stats for a weapon also, but grouped (generally by category)
+    - !append-once Items.IconicQualityRandomization
     - !append-once StatGroups.Hand_Of_Midas_Recoil_Stats
     - !append-once StatGroups.Hand_Of_Midas_Technical_Stats
     - !append-once StatGroups.Hand_Of_Midas_Handling_Stats
