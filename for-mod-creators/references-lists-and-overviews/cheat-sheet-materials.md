@@ -89,6 +89,12 @@ See [here](../materials/#emissive-material) how it works and how to configure it
 | `base\fx\shaders\signages.mt`                                                                               | The standard neon for advertising fonts in Night City. Comes in many colours, can be customized via textures and gradients. Check "city\_deco\_font" for examples. |
 | `base\fx\shaders\hologram_two_sided.mt`                                                                     | half-transparent holo material, allows three colours to tint it                                                                                                    |
 
+### Holo Shaders
+
+| material                       | description                                                                                                   |
+| ------------------------------ | ------------------------------------------------------------------------------------------------------------- |
+| `base\fx_shaders\holo_mask.mt` | Holo mask material (check [this mod](https://www.nexusmods.com/cyberpunk2077/mods/12170) to see it in action) |
+
 ### Blackbody Shaders
 
 Blackbody shaders are used heat. Their colour can be adjusted via the `temperature` parameter.
