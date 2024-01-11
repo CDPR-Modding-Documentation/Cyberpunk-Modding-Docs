@@ -16,7 +16,7 @@ Requirements
 
 Resources
 
-* [Example mod project, including template .XL file, .streamingsector and .streamingblock](https://mega.nz/file/TJYyEJIB#a6iCYOoweB3jRO0EmdcI\_6p4dTf\_nyD4bCCW7DpC\_VE) - this adds a low poly house exterior mesh to the center of the glass dome in corpo plaza (near the giant holo fish)
+* [Example mod project, including template .XL file, .streamingsector and .streamingblock](https://mega.nz/file/LUFX1RhC#UWw91FcCmWa8bcBJYBGoDVgueYXp93zLLq3MjeCgQ9c) - this adds a low poly house exterior mesh to the center of the glass dome in corpo plaza (near the giant holo fish)
 
 ### Adding a custom location to a new streaming sector and merging it with the game world
 
