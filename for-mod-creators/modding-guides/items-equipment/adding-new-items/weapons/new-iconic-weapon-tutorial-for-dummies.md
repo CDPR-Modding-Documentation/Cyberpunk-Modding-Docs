@@ -519,7 +519,7 @@ Items.Hand_Of_Midas:
 
 For the first time we're dealing with an array inside a tweak. An array can hold multiple items, and in this case, `statModifiers` will hold all the stats for your gun from recoil to damage. Thing is, `statModifiers` is already defined by our `$base: Items.Preset_Unity_Default` and we don't want to override it, we only want to add another entry to it whilst keeping the rest intact. So we use `!append-once` followed by the entry we want to add, which is `Quality.IconicItem`. Read more about how array operations work in [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks#array-operations).
 
-`Quality.IconicItem` makes the weapon Iconic. It'll give it the fancy Iconic background in inventory, give a special dialogue box when disassembling it & make it have all the implied functions of an Iconic weapon. The `IconicWeapon` tag ensures the weapon cannot be disassembled. The addition of `Items.IconicQualityRandomization` to `statModifierGroups` is also important, but I donot understand why yet. -> TODO - Understand what this does and explain.
+`Quality.IconicItem` makes the weapon Iconic. It'll give it the fancy Iconic background in inventory, give a special dialogue box when disassembling it & make it have all the implied functions of an Iconic weapon. The `IconicWeapon` tag ensures the weapon cannot be disassembled. The addition of `Items.IconicQualityRandomization` to `statModifierGroups` is also important, and will ensure Iconic weapons have the right quality and upgrade as they should. Exactly what it does is somewhat of a mystery, so let me know if you find out.
 
 Once these modifications are in place, install your mod and enjoy the newfound Iconic status of the 'Hand of Midas' in the game.
 
@@ -570,7 +570,12 @@ The design approach for 'Hand of Midas' revolves around balancing strengths with
 
 In summary, these design choices don't just balance the weapon; they enhance its identity. The increased recoil and reload times are not mere hindrances; they contribute to making the 'Hand of Midas' feel powerful and rewarding for those who can wield it effectively.&#x20;
 
-TODO - to be continued by destinybu
+**Building on Strengths**
+
+Once the limitations are set, focus on the weapon's strengths to complement its defined character.
+
+1. **Increased Headshot Damage & Crit Chance**: This change rewards accuracy and skill, making the weapon ideal for players who excel in precision shooting.
+2. **Increased Zoom on ADS & Extended Effective Range**: Enhances the weapon's utility in long-range combat, aligning with its identity as a sharpshooter's choice.
 
 ## Step 10: Be a stat wizard
 
@@ -653,18 +658,51 @@ Items.Hand_Of_Midas:
   $base: Items.Preset_Unity_Default # $base makes it so all the properties are taken from the specified tweak (in this case, "Items.Preset_Unity_Default") and the properties specified in this tweak overwrite the parent.
   crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
   tags:
-    - !append-once IconicWeapon # prevent the gun from being dissassembled
+  - !append-once IconicWeapon # prevent the gun from being dissassembled
   displayName: MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
   localizedDescription: MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
   statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
-    - !append-once Quality.IconicItem # makes the weapon iconic
+  - !append-once Quality.IconicItem # makes the weapon iconic
   audioName: wea_set_liberty_dex # sets the sounds of Dex's gun - Plan B
   statModifierGroups: # stats for a weapon also, but grouped (generally by category)
-    - !append-once Items.IconicQualityRandomization
-    - !append-once StatGroups.Hand_Of_Midas_Recoil_Stats
-    - !append-once StatGroups.Hand_Of_Midas_Technical_Stats
-    - !append-once StatGroups.Hand_Of_Midas_Handling_Stats
-    - !remove Items.Base_Unity_Technical_Stats
+  - !append-once Items.IconicQualityRandomization
+  - !append-once StatGroups.Hand_Of_Midas_Recoil_Stats
+  - !append-once StatGroups.Hand_Of_Midas_Technical_Stats
+  - !append-once StatGroups.Hand_Of_Midas_Handling_Stats
+  - !append-once StatGroups.Hand_Of_Midas_Aim_Stats
+  - !append-once StatGroups.Hand_Of_Midas_Range_Stats
+  - !append-once StatGroups.Hand_Of_Midas_Damage_Stats
+  - !remove Items.Base_Unity_Technical_Stats
+
+# Damage stats for Hand of Midas 
+StatGroups.Hand_Of_Midas_Damage_Stats:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+  - $type: ConstantStatModifier
+    modifierType: Additive
+    statType: BaseStats.HeadshotDamageMultiplier # damage multiplier for headshots
+    value: 0.5
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.1
+    modifierType: Multiplier
+    statType: BaseStats.DPS # weapon DPS
+  - $type: gamedataConstantStatModifier_Record
+    value: 0.25
+    modifierType: Multiplier
+    statType: BaseStats.HeadshotCritChance # crit change on headshots
+
+# Range stats for Hand of Midas 
+StatGroups.Hand_Of_Midas_Range_Stats:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier 
+    statType: BaseStats.EffectiveRange # range beyond which damage drop off begins
+  - $type: gamedataConstantStatModifier_Record
+    value: 5
+    modifierType: Multiplier
+    statType: BaseStats.MaximumRange # range beyond which bullet will despawn
 
 # Magazine capacity for Hand of Midas
 StatGroups.Hand_Of_Midas_Technical_Stats:
@@ -677,7 +715,7 @@ StatGroups.Hand_Of_Midas_Technical_Stats:
     statType: BaseStats.MagazineCapacityBase # sets the magazine capacity
   - !remove Items.Base_Unity_Technical_Stats_inline2 # remove stat setting the magazine capacity
 
-# Reload/Zoom related stats for Hand of Midas
+# Reload related stats for Hand of Midas
 StatGroups.Hand_Of_Midas_Handling_Stats:
   $type: gamedataStatModifierGroup_Record
   statModifiers:
@@ -689,11 +727,19 @@ StatGroups.Hand_Of_Midas_Handling_Stats:
     value: 0.25
     modifierType: Additive
     statType: BaseStats.EmptyReloadTime # reload time when magazine is empty
+
+# Aim/Zoom related stats for Hand of Midas
+StatGroups.Hand_Of_Midas_Aim_Stats:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
   - $type: gamedataConstantStatModifier_Record
     value: 1.5
     modifierType: Multiplier
     statType: BaseStats.ZoomLevel # zoom level of a weapon
-
+  - $type: gamedataConstantStatModifier_Record
+    value: -5
+    modifierType: Additive
+    statType: BaseStats.AimFOV # FOV when aiming (Illusion of zoom)
 
 # Recoil related stats for Hand of Midas
 StatGroups.Hand_Of_Midas_Recoil_Stats:
@@ -717,4 +763,17 @@ StatGroups.Hand_Of_Midas_Recoil_Stats:
     statType: BaseStats.RecoilRecoveryTime # time taken to return to normal position after recoil
 ```
 
-TODO - update above tweak once all stats are changed - destinybu
+## Step 11: Troubleshooting (Refer this when stuck)
+
+You've created/modified a tweak but it doesn't show effect in game, what next?
+
+* Open the CET Console in game search for your Tweak in the in game Tweak Browser. If your tweak doesn't show, there's a validation error in the tweak.
+* Validate your .yaml tweaks [here ](https://www.yamllint.com/)to check for errors.
+* Open `Cyberpunk 2077\red4ext\plugins\TweakXL\TweakXL.log` and look for any error messages towards the end, this can help when TweakXL has issues loading a tweak.
+*   Check for other mods with same Tweak/Archive names.&#x20;
+
+    Tweak Folder - `Cyberpunk 2077\r6\tweaks`
+
+    Archive Folder - `Cyberpunk 2077\archive\pc\mod`
+* Look at WolvenKit logs located towards the bottom. Yellow or Red text means there's warnings/errors in your file that need addressing.
+
