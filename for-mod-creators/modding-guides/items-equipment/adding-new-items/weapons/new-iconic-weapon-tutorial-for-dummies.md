@@ -96,60 +96,60 @@ Here's a breakdown of key fields in a different weapon (`Items.Preset_Sidewinder
   damageType: DamageTypes.Physical # damage type
   effectiveRangeFalloffCurve: StandardFalloff # damage fall of curve
   evolution: WeaponEvolution.Smart # what type of weapon none, power, tech and smart for ranged weps
-  forcedMinHitReaction: -1 # TODO
+  forcedMinHitReaction: -1
   fxPackage: WeaponFxPackage.SmartRifle # visual effects used for bullets. trail, bullet hole, impact, etc
-  fxPackageQuickMelee: WeaponFxPackage.QuickMeleeFxPackage # TODO
+  fxPackageQuickMelee: WeaponFxPackage.QuickMeleeFxPackage
   hudIcon: HUDWeaponIcons.Sidewinder # hud icon used
   IsIKEnabled: False # are inverse kinematics enabled.
   manufacturer: WeaponManufacturer.Corporation # weapon manufacturer type. not sure if used ingame.
   primaryTriggerMode: TriggerMode.FullAuto # trigger mode when hip firing and aiming if secondaryTriggerMode is not set.
-  projectileEaseOutCurveName: ProjectileEaseOut # TODO
+  projectileEaseOutCurveName: ProjectileEaseOut
   rangedAttacks: Attacks.SmartBulletLowPackage # what type of bullet to fire. explosive, smart, projectile, standard hitscan, etc
-  triggerEffectName: te_wea_aim_mid # TODO
+  triggerEffectName: te_wea_aim_mid
   uninterruptibleEmptyReloadStart: 0.5 # point after which reload cannot be cancelled by other animations such as running. with empty mag
   uninterruptibleReloadStart: 0.5 # point after which reload cannot be cancelled by other animations such as running. with non empty mag
   useForcedTBHZOffset: False # Time before hit offset? used by npc
   UseShootVFXOnlyOnFirstShot: False # if bullet vfx is used again when firing in non semi-auto
-  animFeatureName: WeaponData # TODO
-  animName: ui_garment_pose # TODO
-  animSetResource: '' # TODO
+  animFeatureName: WeaponData
+  animName: ui_garment_pose
+  animSetResource: ''
   appearanceResourceName: Preset_Sidewinder_Default # used to set .app file used by weapon
   audioName: wea_set_sidewinder # used to set weapon sounds not related to reloading and and first equip anim.
   blueprint: Items.Base_Smart_AR_SMG_LMG_NoAttachments_Blueprint # "blueprint" used to create the gun. different versions for guns with no barrel or scope attachments. also generic ones for iconics
   crosshair: Crosshairs.SmartGun # what crosshairs to use
   deprecated: False # TODO. used with items from before v2.0?
-  dropObject: defaultItemDrop # TODO
+  dropObject: defaultItemDrop
   enableNpcRPGData: True # if npc should use npcRPGData found below
-  entityName: weapon_root # TODO
+  entityName: weapon_root
   equipArea: EquipmentArea.Weapon # equip area. see equipment.EX
   friendlyName: w_rifle_assault_nokota_sidewinder # used to set player arm animations in first person see player_ma_fpp.ent and player_wa_fpp.ent. reload and first equip sounds are set in .anims files also. see weapon anim files beginning with pwa_ and pma_
-  garmentOffset: 0 # TODO
+  garmentOffset: 0
   icon: UIIcon.ItemIcon # Used when setting inventory icon
   iconPath: '' # Used when setting inventory icon
-  isCached: False # TODO
-  isCoreCW: False # TODO
-  isCustomizable: False # TODO
-  isGarment: False # TODO
+  isCached: False
+  isCoreCW: False
+  isCustomizable: False
+  isGarment: False
   isPart: False # this is set to true in weapon parts such as scopes
-  isSingleInstance: False # TODO
+  isSingleInstance: False
   itemCategory: ItemCategory.Weapon # item category used for inventory
   itemSecondaryAction: ItemAction.Equip # second action shown when looking at weapon on the ground for example.
   itemType: ItemType.Wea_Rifle # what type of item. used in inventory and perks i think? maybe affects animations?
-  localizedName: '' # TODO
+  localizedName: '' 
   mass: 20 # weight of weapon.
-  minigameInstance: minigame_v2.DefaultItemMinigame # TODO
+  minigameInstance: minigame_v2.DefaultItemMinigame
   npcRPGData: Items.Base_Sidewinder_inline1 # stats used when the weapon is equipped by an NPC
   parentAttachmentType: ParentAttachmentType.Slot # used for weapon attachments such as scopes and muzzles
   powerLevelDeterminedByParent: False # TODO. not used since 2.0?
   quality: Quality.Random # default quality for weapon. CET ignores Quality.Random and always gives normal. Other quality settings work fine in CET and random works normally when found normally ingame.
-  qualityRestrictedByParent: False # TODO
-  replicateWhenNotActive: False # TODO
+  qualityRestrictedByParent: False
+  replicateWhenNotActive: False
   stateMachineName: Weapon # used by game logic.
-  upgradeCostMult: 1 # TODO
+  upgradeCostMult: 1
   useHeadgearGarmentAggregator: False # TODO. probably not used by weapons?
-  useNewSpawnMethod: False # TODO
-  usesVariants: False # TODO
-  savable: False # TODO
+  useNewSpawnMethod: False
+  usesVariants: False
+  savable: False
   attacks: # used to set different types of projectiles that can be shot by the gun. not used in 2.0?
     - Attacks.Bullet_GameEffect
        ...
@@ -159,9 +159,9 @@ Here's a breakdown of key fields in a different weapon (`Items.Preset_Sidewinder
   shootingPatternPackages: [] # used by npc
   triggerModes: # trigger modes available to weapon. should have primary and secondary trigger modes here also
     - TriggerMode.FullAuto
-  animationParameters: [] # TODO
-  appearanceSuffixes: [] # TODO
-  appearanceSuffixesOwnerOverride: [] # TODO
+  animationParameters: []
+  appearanceSuffixes: [] 
+  appearanceSuffixesOwnerOverride: []
   attachmentSlots: [] # TODO. used by attachments such as scopes and muzzles
   buyPrice: # price multipliers used when buying weapon.
     - Price.BaseWeaponPrice
@@ -172,11 +172,11 @@ Here's a breakdown of key fields in a different weapon (`Items.Preset_Sidewinder
     - Price.BuyPrice_StreetCred_Discount
     - Price.AssaultRifleMultiplier
     - Price.SmartWeapon
-  cameraForward: {x: 0, y: 0, z: 0} # TODO
-  cameraUp: {x: 0, y: 0, z: 0} # TODO
-  connections: [] # TODO
+  cameraForward: {x: 0, y: 0, z: 0}
+  cameraUp: {x: 0, y: 0, z: 0}
+  connections: []
   displayName: LocKey#3599 # name of weapon
-  equipAreas: [] # TODO
+  equipAreas: []
   equipPrereqs: [] # TODO. used by game logic packages(GLP)?
   gameplayRestrictions: # restrict weapon usage in certain situations.
     - GameplayRestriction.VehicleCombatNoInterruptions
@@ -187,9 +187,9 @@ Here's a breakdown of key fields in a different weapon (`Items.Preset_Sidewinder
     - EquipmentGLP.MediumStaminaRegen
     - EquipmentGLP.LightStaminaDelay
     - Items.SmartWeaponTargetsPriorityQueues
-  OnEquip: [] # TODO
-  OnLooted: [] # TODO
-  parts: [] # TODO
+  OnEquip: [] 
+  OnLooted: [] 
+  parts: []
   placementSlots: # slots in Which this item can be placed in. see equipmentEX?
     - AttachmentSlots.WeaponRight
     - AttachmentSlots.WeaponLeft
@@ -282,7 +282,7 @@ rate(cycle time), mag size, smart range
 <strong>      …
 </strong>    - Items.Base_Weapon_inline149
   statPools: [] # used to set stat pools like tech weapon charge and overheating
-  weakspots: [] # TODO
+  weakspots: []
   position: {x: '0,000500000024', y: 0, z: '0,0900000036'}
   price: Items.Base_Sidewinder_inline0
   weaponVignetteRadius: 0.648199975
@@ -596,9 +596,7 @@ statModifierGroups:
     ...
 ```
 
-These arrays don't directly contain the stats, but have inline objects, which in turn will contain the actual stats. I recommend browsing to each of these stats in the Tweak Browser to find out what each one does.
-
-Refer discovered stats here - TODO - add stats wiki page once approved.
+These arrays don't directly contain the stats, but have inline objects, which in turn will contain the actual stats. I recommend browsing to each of these stats in the Tweak Browser to find out what each one does. You can also read about [Base Stats](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/equipment/weapons/cheat-sheet-weapon-basestats) and what they do here.
 
 To change the gun's recoil, we'll add a new `statModifierGroup` tweak as shown below (to the weapon's tweak file or a new tweak file) -
 
