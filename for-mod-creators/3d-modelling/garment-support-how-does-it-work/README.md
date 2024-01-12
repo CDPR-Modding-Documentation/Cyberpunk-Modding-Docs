@@ -20,7 +20,7 @@ If you want to **use** garment support in an existing mod, you only need to use 
 
 #### Troubleshooting garment support
 
-If your garment support isn't working as expected, you can export and import your mesh:[#option-1-likely-to-work-import-your-mesh-with-garment-supports](../troubleshooting-your-mesh-edits.md#option-1-likely-to-work-import-your-mesh-with-garment-supports "mention") - you only have to [tick the box](broken-reference).
+If your garment support isn't working as expected, you can export and import your mesh:[#option-1-likely-to-work-import-your-mesh-with-garment-supports](../troubleshooting-your-mesh-edits.md#option-1-likely-to-work-import-your-mesh-with-garment-supports "mention") - you only have to [tick the box](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/import-export/models#import-settings).
 
 If you're fed up with this shit and just want your item to stop cosplaying as exploding pixel cloud, you can use [#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh](../troubleshooting-your-mesh-edits.md#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh "mention") (not advised)
 
