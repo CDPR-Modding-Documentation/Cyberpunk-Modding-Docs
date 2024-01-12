@@ -6,6 +6,14 @@ description: Doing a custom recolor of the Netrunning suit
 
 This page is a subsection of the [Netrunning Suit guide](./). It will teach you how to recolour Cyberpunk items via MLSetupBuilder.
 
+#### Other resources
+
+None of this is required for completing this guide, but if you're curious, you can poke around the wiki and learn a lot more about materials! Just follow the links and get lost... :)
+
+* Another guide: [changing-materials-colors-and-textures.md](../editing-existing-items/changing-materials-colors-and-textures.md "mention")
+* Theory: [multilayered](../../../materials/multilayered/ "mention")
+* Theory: [configuring-materials.md](../../../materials/configuring-materials.md "mention")&#x20;
+
 #### **Assumed level of skill**:&#x20;
 
 You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on the [redModding Discord](https://discord.gg/redmodding) so that I can improve it.&#x20;

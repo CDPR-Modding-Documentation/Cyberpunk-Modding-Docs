@@ -13,6 +13,8 @@ This guide will teach you how to change an item's appearance by editing its Mult
 
 {% hint style="success" %}
 For a step-by-step walkthrough for a recolour of the Netrunner suit, check [r-and-r-colour-editing.md](../recolours-and-refits/r-and-r-colour-editing.md "mention")
+
+If you want to edit emissive (glowing) material, check [r-and-r-emissive.md](../recolours-and-refits/r-and-r-emissive.md "mention") -> [#changing-the-presets](../recolours-and-refits/r-and-r-emissive.md#changing-the-presets "mention")
 {% endhint %}
 
 It uses the following versions:
