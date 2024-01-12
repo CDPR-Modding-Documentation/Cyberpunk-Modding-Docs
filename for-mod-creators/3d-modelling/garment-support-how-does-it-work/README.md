@@ -4,19 +4,27 @@ description: What is Garment Support and how does it work?
 
 # Garment Support: How does it work?
 
-{% hint style="info" %}
-If garment supports are causing trouble for you, you have two options:\
-[#option-1-likely-to-work-import-your-mesh-with-garment-supports](../troubleshooting-your-mesh-edits.md#option-1-likely-to-work-import-your-mesh-with-garment-supports "mention")\
-[#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh](../troubleshooting-your-mesh-edits.md#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh "mention")
+## Summary
 
-If you don't have garment support, or want to fix clipping, see&#x20;
+This page will teach you how garmentSupport works – the system that Cyberpunk2077 uses to tuck pants into boots and shirts under jackets. It contains theory, which you don't need to understand to use the system.
 
-To make use of garment support, **keep the component name prefixes**. If you change the mesh, make sure to [tick the box](broken-reference).
+_Credit goes to psiberx (_[_discord post_](https://discord.com/channels/717692382849663036/955663052903178270/1059406562277470240) _with initial explanation of the algorithm), island dancer for providing screenshots and know-how, and Auska for making morphtarget/garmentSupport import able in Wolvenkit._
 
-For a (slightly dated, but working) step by step guide for adding garment support, see [here](https://docs.google.com/document/d/10dXta2Vicm\_1iZeFy5U07\_PBCwxa1AhqFvVIMZnezPk/edit).
-{% endhint %}
+### Wait, that's not what I want!
 
-_Credit goes to psiberx (_[_discord post_](https://discord.com/channels/717692382849663036/955663052903178270/1059406562277470240) _with initial explanation of the algorithm) and IslandDancer for providing screenshots and know-how_
+#### Using garment support
+
+If you want to **create** garment support, check [garment-support-from-scratch.md](garment-support-from-scratch.md "mention")
+
+If you want to **use** garment support in an existing mod, you only need to use [#component-prefixes](./#component-prefixes "mention")
+
+#### Troubleshooting garment support
+
+If your garment support isn't working as expected, you can export and import your mesh:[#option-1-likely-to-work-import-your-mesh-with-garment-supports](../troubleshooting-your-mesh-edits.md#option-1-likely-to-work-import-your-mesh-with-garment-supports "mention") - you only have to [tick the box](broken-reference).
+
+If you're fed up with this shit and just want your item to stop cosplaying as exploding pixel cloud, you can use [#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh](../troubleshooting-your-mesh-edits.md#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh "mention") (not advised)
+
+## What is garment support?
 
 The engine morphs garments to avoid clipping — for example, if you equip a pair of boots and V's jeans no longer cover the shoes, but get tucked under.
 
