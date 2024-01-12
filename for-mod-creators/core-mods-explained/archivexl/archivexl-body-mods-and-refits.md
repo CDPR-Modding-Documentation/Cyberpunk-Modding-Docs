@@ -14,22 +14,37 @@ print(Game.GetScriptableSystemsContainer():Get("PuppetStateSystem"):GetBodyTypeS
 
 ## Body modders: Adding support
 
-1. Create an .xl configuration file:&#x20;
-   1. Create an .xl file in your Wolvenkit Project's resources folder
-   2. Optional, but recommended: Give it the same name as your Wolvenkit project
-2. Put the following file content:
+### Adding an .xl configuration file
+
+1. Create an .xl file in your Wolvenkit Project's resources folder
+2. Optional, but recommended: Give it the same name as your Wolvenkit project
+3. Put the following file content:
 
 ```yaml
 player:
   bodyTypes: [ NewBody ]  # this will be converted to snake case: new_body
 ```
 
-3. In any of the files you modded, check your `components`.&#x20;
-   1. Does any of them have a type that's called something with `morphtargetComponent`? \
-      If yes, add a **tag** with the exact name of your body in this component's tag array (for our example, `NewBody`)
-   2. If not, then add a new component (of any type) and give it the following name: \
-      `Body:NewBody`
-4. After packing your project, [check if the body tag registers](archivexl-body-mods-and-refits.md#checking-the-current-body-mod) by running the CET command. If yes, you're good to go!
+### Register the body mod in the .archive
+
+In any of the files you modded, check your `components`:
+
+#### Does any of them have a type that's called something with `morphtargetComponent`?&#x20;
+
+**Yes:** \
+Add a **tag** with the exact name of your body in this component's tag array (for our example, `NewBody`)
+
+**No:**\
+Add a new component (of any type) and give it the following name: \
+`Body:NewBody`
+
+After packing your project, [check if the body tag registers](archivexl-body-mods-and-refits.md#checking-the-current-body-mod) by running the CET command.&#x20;
+
+If yes, you're good to go!
+
+If not and you have used a **component**, you can check if the component is added to the playerPuppet by checking [RedHotTools](../../modding-tools/redhottools.md):
+
+<figure><img src="../../../.gitbook/assets/AXL_body_checking_component.png" alt=""><figcaption></figcaption></figure>
 
 ## Clothing mods: Making use of the tags
 
