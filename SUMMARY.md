@@ -221,6 +221,7 @@
     * [Editing locations in Blender](for-mod-creators/modding-guides/world-editing/editing-locations-in-blender.md)
     * [Adding Objects to the World](for-mod-creators/modding-guides/world-editing/adding-objects-to-the-world.md)
     * [Adding Locations and Structures with ArchiveXL](for-mod-creators/modding-guides/world-editing/adding-locations-and-structures-with-archivexl.md)
+    * [Custom advertisements](for-mod-creators/modding-guides/world-editing/custom-advertisements.md)
     * [Archived: World editing via file edit](for-mod-creators/modding-guides/world-editing/archived-world-editing-via-file-edit.md)
   * [🎺 Sound](for-mod-creators/modding-guides/sound/README.md)
     * [Playing Sounds in-game : Basics](for-mod-creators/modding-guides/sound/playing-sounds-in-game-basics.md)
