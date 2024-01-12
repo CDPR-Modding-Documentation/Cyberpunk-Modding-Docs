@@ -6,6 +6,10 @@ description: How to use the auto refitter
 
 The auto-refitter is a tool developed by [AllKnowingLion](https://app.gitbook.com/u/ntwa3K86ZPgEhR4Ds0rOU5qaKHm1 "mention") that automates the tedious process of refitting meshes for the various body mods.
 
+If you need a tutorial for manual refitting, check [r-and-r-refitting-step-by-step.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") or follow the links from there.
+
+## How to auto-refit
+
 With a mesh selected, you can find it in the **Mesh Tools** section of the **CP77** panel. Use the dropdown to select a target body, then click the button to apply the changes:
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_autorefitter.png" alt=""><figcaption></figcaption></figure>
