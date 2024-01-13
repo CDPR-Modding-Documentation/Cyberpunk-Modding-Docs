@@ -4,7 +4,7 @@ description: How to change item stats with TweakXL
 
 # 🔧 TweakXL: Changing game records
 
-Changing item stats happens by making changes via **TweakXL** or **REDmod** in the [tweaks.md](../../files-and-what-they-do/tweaks.md "mention").
+Changing item stats happens by making changes via **TweakXL** or **REDmod** in the [tweaks](../../files-and-what-they-do/tweaks/ "mention").
 
 {% hint style="info" %}
 You can find more information about this on the [TweakXL github's wiki page](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks).

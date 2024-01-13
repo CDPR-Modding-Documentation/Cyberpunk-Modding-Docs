@@ -24,10 +24,9 @@ layout:
 # ☠ New Iconic Weapon : Tutorial for Dummies
 
 {% hint style="danger" %}
-This article is a stub and is not done yet! It's still missing the following sections:&#x20;
+This article is not done yet! It's still missing the following sections:&#x20;
 
 * Creating a unique weapon skin
-* Adding iconic mods
 * Creating custom attachments
 {% endhint %}
 
@@ -41,6 +40,8 @@ Before beginning, ensure you have the following software installed and properly 
 4. **Cyberpunk 2077** - 😑
 5. Core mods: [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198), [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197), [Red4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
 6. Optional: [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/), [RedMod](../../../../../for-mod-users/users-modding-cyberpunk-2077/redmod/)
+
+If you are stuck, refer to the [#troubleshooting-check-this-when-youre-stuck](new-iconic-weapon-tutorial-for-dummies.md#troubleshooting-check-this-when-youre-stuck "mention") at the end of the page.
 
 ## Step 1: Create a New Project in WolvenKit
 
@@ -67,7 +68,7 @@ After locating the Unity gun in the tweak browser, right-click on the item and s
 <figure><img src="../../../../../.gitbook/assets/image (185).png" alt=""><figcaption><p>Red arrow = Tweak Name, where you can override it. Blue Box= Details about selected tweak. White arrow = Overridden (New) Tweak </p></figcaption></figure>
 
 {% hint style="info" %}
-To read more about Tweak modding, check [tweaks.md](../../../../files-and-what-they-do/tweaks.md "mention"). This isn't necessary for understanding this guide!
+To read more about Tweak modding, check [tweaks](../../../../files-and-what-they-do/tweaks/ "mention"). This isn't necessary for understanding this guide!
 {% endhint %}
 
 ## Step 3: Editing and understanding your new tweak
@@ -813,21 +814,7 @@ StatGroups.Hand_Of_Midas_Recoil_Stats:
 
 </details>
 
-## Step 11: Troubleshooting (Refer this when stuck)
-
-You've created/modified a tweak but it doesn't show effect in game, what next?
-
-* Open the CET Console in game search for your Tweak in the [Tweak Browser](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/usage-1). If your tweak doesn't show, there's a validation error in the tweak.
-* Validate your .yaml tweaks [here ](https://www.yamllint.com/)to check for errors.
-* Open `Cyberpunk 2077\red4ext\plugins\TweakXL\TweakXL.log` and look for any error messages towards the end, this can help when TweakXL has issues loading a tweak.
-*   Check for other mods with same Tweak/Archive names.&#x20;
-
-    Tweak Folder - `Cyberpunk 2077\r6\tweaks`
-
-    Archive Folder - `Cyberpunk 2077\archive\pc\mod`
-* Look at WolvenKit logs located towards the bottom. Yellow or Red text means there's warnings/errors in your file that need addressing.
-
-## Step 12: Finishing up the Tweak
+## Step 11: Finishing up the Tweak
 
 There are a lot of values to play around with in a tweak file. You are often better off leaving most of them alone. These are some properties you probably should look at when designing a gun.
 
@@ -863,114 +850,27 @@ There are a lot of values to play around with in a tweak file. You are often bet
       statType: BaseStats.Price
     ```
 
-## Step 13: Making an Iconic Mod (Special Ability)
+## Step 12: Making an Iconic Mod (Special Ability)
 
 The main thing that makes an iconic weapon so special is its iconic mod. These are like any other weapon mod, but hidden from the UI. Before you start hacking up your own, it is very important you have a look at the existing Iconic Mods in game.&#x20;
 
-For now, let's look at `Items.Preset_Lexington_Wilson` (also known as "Dying Night").
+For now, let's look at `Items.Preset_Lexington_Wilson` (also known as "Dying Night").&#x20;
 
+{% hint style="info" %}
+A big part of tweak modding is exploration — poking through tweaks until you find just the right thing to copy or change, or looking for something specific in hundreds of files.&#x20;
+{% endhint %}
 
+### Wilson's iconic iron
 
-```yaml
-Cyberpunk 2077\tools\redmod
-```
+{% hint style="info" %}
+The example (together with instructions on finding your way around the TweakDB) has moved to [browsing-the-tweak-database.md](../../../../files-and-what-they-do/tweaks/browsing-the-tweak-database.md "mention") -> [#example-browsing-.tweak-files](../../../../files-and-what-they-do/tweaks/browsing-the-tweak-database.md#example-browsing-.tweak-files "mention")
+{% endhint %}
 
-with a text editor.
+&#x20;We'll end up with `WilsonWeaponModAbility`, which defines the abilities and stats that we care about.
 
-#### Finding your way along
+<details>
 
-There are many ways to find text within the Redmod directories
-
-1. [Notepad++](https://notepad-plus-plus.org/downloads/) (Edit -> Find in Files, Hotkey: `Ctrl+F`)
-2.  Command Line search: You can find any string within a file with the commands mentioned below. Open command prompt in the redmod folder and then run them.
-
-    ```
-    findstr /S /M "KEYWORD" *.”FILENAME”
-    OR
-    findstr /S /M "KEYWORD" *.*
-    /S = search in all subfolder  /M = show file name only
-    ```
-3. [Agent Ransack](https://www.mythicsoft.com/agentransack/): A robust free program with an UI that works just like the command line search
-4. IntelliJ/Other IDEs: Open the Redmod folder as a project in any IDE. (Easiest to use)
-
-I'll be using IntelliJ for showcasing how to read Redmod tweaks. Now use `Ctrl + Shift + F` to open up the search dialog box and search for `Preset_Lexington_Wilson`\
-
-
-Open up `preset_base_lexington.tweak` as shown by the red arrow above and search for`Preset_Lexington_Wilson`  (hotkey: `Ctrl+F`).
-
-```
-tweaks/base/gameplay/static_data/database/items/weapons/ranged/handguns/lexington/preset_base_lexington.tweak
-```
-
-<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p><code>Preset_Lexington_Wilson</code> Tweak but in .tweak format.</p></figcaption></figure>
-
-This is the same tweak you'd find in the Tweak Browser, but it's much easier to read and understand due to the lack of Inline properties & it's code like structure. Look at this tweak for a bit and you should be able to find&#x20;
-
-```
-{
-    slot = "AttachmentSlots.IconicWeaponModLegendary";
-    itemPartPreset = "Items.WilsonWeaponMod";
-}
-```
-
-`Items.WilsonWeaponMod` is the iconic mod used by this weapon. Now search for `WilsonWeaponMod` in Intellij (Ctrl+Shift+F). This will lead you to a file called `iconic_mods.tweak` which should have `WilsonWeaponModAbility` and a bunch of statModifiers. These stat modifiers are similar to the ones we found in the weapon tweak and aren't of interest to us.
-
-```
-WilsonWeaponMod : IconicWeaponModBase
-{
-    OnAttach = 
-    [
-       "Items.WilsonWeaponModAbility"
-    ];
-    statModifiers += 
-    [
-       {
-          statType = "BaseStats.ReloadTimeBonus";
-          modifierType = "Additive";
-          value = -0.1f;
-       } : ConstantStatModifier, 
-       {
-          statType = "BaseStats.RecoilKickMin";
-          modifierType = "Multiplier";
-          value = 0.8f;
-       } : ConstantStatModifier, 
-       {
-          statType = "BaseStats.RecoilKickMax";
-          modifierType = "Multiplier";
-          value = 0.8f;
-       } : ConstantStatModifier, 
-       {
-          statType = "BaseStats.SpreadDefaultX";
-          modifierType = "Multiplier";
-          value = 0.66f;
-       } : ConstantStatModifier, 
-       {
-          statType = "BaseStats.SpreadMaxX";
-          modifierType = "Multiplier";
-          value = 0.66f;
-       } : ConstantStatModifier, 
-       {
-          statType = "BaseStats.HitDismembermentFactor";
-          modifierType = "Multiplier";
-          value = 3f;
-       } : ConstantStatModifier, 
-       {
-          statType = "BaseStats.HitWoundsFactor";
-          modifierType = "Multiplier";
-          value = 3.f;
-       } : ConstantStatModifier, 
-       {
-          statType = "BaseStats.EffectiveRange";
-          modifierType = "Multiplier";
-          value = 0.75;
-       } : ConstantStatModifier
-    ];
-    buyPrice = [];
-    sellPrice = [];
-}
-```
-
-&#x20;Now search for `WilsonWeaponModAbility` . This should lead you to a file called `mods_abilities.tweak` , where you can look for our ability.
+<summary><code>mods_abilities.tweak</code></summary>
 
 ```
 WilsonWeaponModAbility : IconicWeaponModAbilityBase
@@ -995,39 +895,93 @@ WilsonWeaponModAbility : IconicWeaponModAbilityBase
 }
 ```
 
-You'll find that the ability has an array called effectors. An effector is what I like to call a `conditional-do` popularly know as an `if-condition` . This means that it's core it checks if a condition or a group of conditions are met, and if they are, it does something.
 
-In this case, we have -
 
-1. MultiplyDamageWithVelocity Effector : \
-   Condition - Prereqs.ProcessHitTriggered - Does the bullet hit anything?\
-   Effect - MultiplyDamageWithVelocity - Increases the guns damage with 25% if the Player velocity is greater than 10.
-2. MultiplyDamage Effector :\
-   Condition - Perks.IsHitQuickMelee - Is the attack a Quick Melee attack?\
-   Effect - MultiplyDamageWithVelocity - Increase damage by 50%
+</details>
 
-Now we understand how the Iconic mod for Dying Night works. Let's quickly look at the same record in Tweak Browser. Search for `WilsonWeaponModAbility`&#x20;
+For an explanation of what these do, please see [types-of-tweak-records.md](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md "mention") -> [#effector](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md#effector "mention")
+
+#### MultiplyDamageWithVelocity Effector
+
+**Condition:** Prereqs.ProcessHitTriggered - Does the bullet hit anything? \
+**Effect:** MultiplyDamageWithVelocity - Increases the guns damage with 25% if the Player velocity is greater than 10.&#x20;
+
+#### MultiplyDamage Effector&#x20;
+
+**Condition:** Perks.IsHitQuickMelee - Is the attack a Quick Melee attack? \
+**Effect:** MultiplyDamageWithVelocity - Increase damage by 50%
+
+### Adding an iconic mod
+
+We have found an iconic mod in the [#mods\_abilities.tweak](new-iconic-weapon-tutorial-for-dummies.md#mods\_abilities.tweak "mention") for Wilson's gun, so now let's see that we apply this to the Hand of Midas.
+
+Since our weapon demands perfection, we'll punish the player for not hitting headshots & reward them for hitting headshots. And because we want to make it hurt, we'll use HP reduction & Healing rewards.
+
+{% hint style="info" %}
+You can add the tweaks below to your weapon's file or create a new tweak file.
+{% endhint %}
+
+#### Defining the ability
+
+In this section, we first define our special ability `Cranial_Cashback`:
 
 ```yaml
-Items.WilsonWeaponModAbility:
-  $type: gamedataGameplayLogicPackage_Record
-  stackable: False
-  UIData: Items.WilsonWeaponModAbility_inline0
-  animationWrapperOverrides: []
-  effectors:
-    - Items.WilsonWeaponModAbility_inline1
-    - Items.WilsonWeaponModAbility_inline2
-  items: []
-  statPools: []
-  stats: []
+# Hand of Midas Iconic mod ability
+Abilities.Cranial_Cashback:
+  $base: Items.IconicWeaponModAbilityBase
+  # effectors:
+  # - !append-once Effectors.Punish_Miss
+  # - !append-once Effectors.Heal_On_Headshot
+  UIData:
+      $type: GameplayLogicPackageUIData
+      localizedDescription: MC_gun_iconic_description # iconic description shown in yellow text when hovering over a weapon
 ```
 
-I hope it is clear now how reading the Redmod tweak is much easier than reading inlines that keep on nesting. Let's design our own Iconic Mod now. Since our weapon demands perfection, we'll punish the player for not hitting headshots & reward them for hitting headshots. This punishment/reward will come in the form of HP reduction & Healing rewards.
+The ability contains
 
-Start by adding tweaks shown below to your weapons tweak file or a new tweak file. In here, we define our Iconic mod called `Mods.Cranial_Cashback_Mod` which houses our special ability `Abilities.Cranial_Cashback`. Our ability in turn contains two effectors which we are yet to implement. It also contains a `localizedDescription` which is the description for our iconic ability which will also be taken from the en-us.json file we made earlier. Make sure you update the json to have the correct secondaryKey and femaleVariant fields. This description is shown in yellow when hovering over the gun in inventory.\
-\
-Add the mod to your gun by adding an entry to `slotPartListPreset` in your weapons tweak. Install your mod to verify what we've done so far works. If your gun shows the yellow iconic description on hover, you're good to go. \
-(Note : You may have to respawn your weapon for some changes to take effect)
+* two [effectors](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md#effector), which we are yet to implement
+* the description for our iconic ability as a `localizedDescription`&#x20;
+
+Let's start by registering the description.&#x20;
+
+1. Open the `.json` file that you've created when [#setting-up-a-localizationkey](new-iconic-weapon-tutorial-for-dummies.md#setting-up-a-localizationkey "mention")
+2. Add another entry (you can duplicate an existing entry)
+3. Set the `secondaryKey` to the value in your tweak file,  `MC_gun_iconic_description`
+4. Set `femaleVariant` to your text — this will be showin on the tooltip in yellow.
+5. . Make sure that it has the correct secondary key , and enter your fluff text as `femaleVariant`.
+
+#### Defining the mod
+
+Now that we have an ability, we need to register it as a mod:
+
+```yaml
+# Hand of Midas Iconic mod
+Mods.Cranial_Cashback_Mod:
+  $base: Items.IconicWeaponModBase
+  OnAttach: 
+    - Abilities.Cranial_Cashback
+```
+
+#### Adding the mod to the weapon
+
+Now we can finally add the mod to the weapon by adding it to the `slotPartListPreset`:
+
+```yaml
+# Hand of Midas weapon tweak
+Items.Hand_Of_Midas:
+  # your other properties - cut out for readability
+  slotPartListPreset: # attachments & mods 
+  - !append-once
+    $type: SlotItemPartPreset
+    itemPartPreset: Items.Cranial_Cashback_Mod # iconic mod
+    slot: AttachmentSlots.IconicWeaponModLegendary 
+```
+
+Everything hangs together now, let's see if it works.
+
+<details>
+
+<summary>The full tweak</summary>
 
 ```yaml
 # Hand of Midas weapon tweak
@@ -1043,7 +997,7 @@ Items.Hand_Of_Midas:
 Mods.Cranial_Cashback_Mod:
   $base: Items.IconicWeaponModBase
   OnAttach: 
-  - Abilities.Cranial_Cashback
+    - Abilities.Cranial_Cashback
 
 # Hand of Midas Iconic mod ability
 Abilities.Cranial_Cashback:
@@ -1053,133 +1007,167 @@ Abilities.Cranial_Cashback:
   # - !append-once Effectors.Heal_On_Headshot
   UIData:
       $type: GameplayLogicPackageUIData
-      localizedDescription: LocKey#MC_gun_iconic_description # iconic description shown in yellow text when hovering over a weapon
+      localizedDescription: MC_gun_iconic_description # iconic description shown in yellow text when hovering over a weapon
 ```
+
+
+
+</details>
+
+#### Go test
+
+Install your mod — if your gun shows the yellow iconic description on hover, you're good to go. \
+If not, you may have to respawn it via CET.
 
 <figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Iconic description is visible when hovering over gun</p></figcaption></figure>
 
-Now comes the difficult part, we'll be designing our two effectors. One to punish the player when they miss, and the other to reward them for headshots.&#x20;
+### Designing effectors
 
-1.  Heal on headshot\
-    Every time the player hits a headshot we'll heal him for 80 HP. How do we go about acheiving this? Let's start by finding effectors that may already do something similar, open up your tweak browser and look for effectors, admittedly, there's a lot of them. I found this effector that modifies stat pools.&#x20;
+Now that we have [#the-full-tweak](new-iconic-weapon-tutorial-for-dummies.md#the-full-tweak "mention"), we'll fill in the two [effectors](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md#effector), one to punish the player for missing, and the other to reward them for headshots.
 
-    ```yaml
-    Items.MemoryReplenishmentEffector:
-      $type: gamedataModifyStatPoolValueEffector_Record
-      setValue: False
-      usePercent: True
-      effectorClassName: ModifyStatPoolValueEffector
-      prereqRecord: Items.MemoryReplenishmentEffector_inline0
-      removeAfterActionCall: False
-      removeAfterPrereqCheck: False
-      statPoolUpdates:
-      - Items.MemoryReplenishmentEffector_inline4
-      statModifierGroups: []
-    ```
+#### Heal on headshot
 
-    The health of the player is also a stat pool called `BaseStatPools.Health` so we can use this as a starting point. We can heal the player by making a change in the `statPoolUpdates` as shown below.
+We'll heal for 80 HP every time the player pops somebody else's skull with the Hand of Midas. How do we do that?
 
-    ```yaml
-    Effectors.Heal_On_Headshot:
-      $type: gamedataModifyStatPoolValueEffector_Record
-      setValue: False
-      usePercent: True
-      effectorClassName: ModifyStatPoolValueEffector
-      prereqRecord: Items.MemoryReplenishmentEffector_inline0
-      removeAfterActionCall: False
-      removeAfterPrereqCheck: False
-      statPoolUpdates: 
-      - $type: StatPoolUpdate
-        statPoolType: BaseStatPools.Health
-        statPoolValue: 80
-      statModifierGroups: []
-    ```
+Let's do what Edison did — we find something to be inspired by. A search for `effector` in the [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention") finds an awful lot of entries, so I've picked an example for us — a Netrunner item that restores memory:
 
-    But the prerequisite currently is `Items.MemoryReplenishmentEffector_inline0` which doesn't sound like it will check for headshots. Whilst there are some PreReqs that exist that already check for headshots, we'll write our own referring to `Prereqs.HitTriggeredPrereq`, so you know how to make one.
+```yaml
+Items.MemoryReplenishmentEffector:
+  $type: gamedataModifyStatPoolValueEffector_Record
+  setValue: False
+  usePercent: True
+  effectorClassName: ModifyStatPoolValueEffector
+  prereqRecord: Items.MemoryReplenishmentEffector_inline0
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  statPoolUpdates:
+  - Items.MemoryReplenishmentEffector_inline4
+  statModifierGroups: []
+```
 
-    <pre class="language-yaml"><code class="lang-yaml"><strong># Prereq to check if headshot &#x26; target is alive and hit with a ranged weapon
-    </strong>Prereqs.Is_Target_Alive_And_Headshot:
-      $type: gamedataHitPrereq_Record
-      callbackType: HitTriggered
-      ignoreSelfInflictedPressureWave: True
-      isSynchronous: True
-      pipelineStage: Process
-      pipelineType: Damage
-      prereqClassName: HitTriggeredPrereq
-      conditions:
-      - Perks.IsHitTargetAlive_inline2 # hit target is alive (health != 0)
-      - Perks.HitIsBodyPartHead_inline0 # headshot condition
-      - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
-      - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
-      processMiss: False # process shots that hit npcs only
+The player's health is also a statPool item, it's called `BaseStatPools.Health`. We can copy this example and change it to meet our needs (for the final result, see [#the-final-effector](new-iconic-weapon-tutorial-for-dummies.md#the-final-effector "mention")):&#x20;
 
-    # Condition to check if attack type is ranged
-    Conditions.Is_Attack_Ranged:
-      $type: gamedataHitPrereqCondition_Record
-      invert: False
-      onlyOncePerShot: True
-      type: Prereqs.AttackType
-      attackType: Ranged
+```yaml
+Effectors.Heal_On_Headshot:
+  $type: gamedataModifyStatPoolValueEffector_Record
+  setValue: False
+  usePercent: True
+  effectorClassName: ModifyStatPoolValueEffector
+  prereqRecord: Items.MemoryReplenishmentEffector_inline0
+  removeAfterActionCall: False
+  removeAfterPrereqCheck: False
+  statPoolUpdates: 
+  - $type: StatPoolUpdate
+    statPoolType: BaseStatPools.Health
+    statPoolValue: 80
+  statModifierGroups: []
+```
 
-    # Condition to check if weapon type is ranged
-    Conditions.Is_Weapon_Ranged:
-      $type: gamedataHitPrereqCondition_Record
-      invert: False
-      onlyOncePerShot: True
-      type: Prereqs.WeaponType
-      weaponType: Ranged
-    </code></pre>
+However, the prerequisite for this effector is `Items.MemoryReplenishmentEffector_inline0`, which doesn't sound helpful.&#x20;
 
-    Conditions are at the heart of a prerequisite and here we have four. \
-    1\. Perks.IsHitTargetAlive\_inline2 -> We don't want headshots on deadbodies to heal the player\
-    2\. Perks.HitIsBodyPartHead\_inline0 -> Actual condition to check for headshots\
-    3\. Conditions.Is\_Attack\_Ranged -> (Custom) We don't want quick melee attacks to heal\
-    4\. Conditions.Is\_Weapon\_Ranged -> (Custom) We don't want grenades to be counted for this check.\
-    Now let's change our effector to use this prerequisite.
+We could now try to find an existing preReq that checks for headshots, but we can also write our own.
 
-    ```yaml
-    # Effector to heal player if they hit a headshot
-    Effectors.Heal_On_Headshot:
-      $type: ModifyStatPoolValueEffector
-      prereqRecord: Prereqs.Is_Target_Alive_And_Headshot
-      usePercent: False
-      statPoolUpdates: 
-      - $type: StatPoolUpdate
-        statPoolType: BaseStatPools.Health
-        statPoolValue: 80
-    ```
+#### Creating a custom prereq
 
-    We've done a lot here, and there may be a few questions if your head like where'd I find the correct prerequisites & conditions. Exploration is key here, a big part of modding is going through hundreds of records till you find yourself just the right thing. Uncomment the effector in your weapon tweak and test your mod. You should now be healing every time you hit headshots.
-2.  Punish misses\
-    Instead of punishing the player for just missing headshots, we can make our job easier by just removing the HP every time they shoot, and compensating for the reduction in HP when hitting headshots by increasing our heal. Here's how we can do that -
+<pre class="language-yaml"><code class="lang-yaml"><strong># Prereq to check if headshot &#x26; target is alive and hit with a ranged weapon
+</strong>Prereqs.Is_Target_Alive_And_Headshot:
+  $type: gamedataHitPrereq_Record
+  callbackType: HitTriggered
+  ignoreSelfInflictedPressureWave: True
+  isSynchronous: True
+  pipelineStage: Process
+  pipelineType: Damage
+  prereqClassName: HitTriggeredPrereq # how to refer to it later - Prereqs.HitTriggeredPrereq
+  conditions:
+  - Perks.IsHitTargetAlive_inline2 # hit target is alive (health != 0)
+  - Perks.HitIsBodyPartHead_inline0 # headshot condition
+  - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
+  - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
+  processMiss: False # process shots that hit npcs only
+</code></pre>
 
-    ```yaml
-    # Effector to inflict damage on player when they shoot
-    Effectors.Punish_Miss:
-      $type: ModifyStatPoolValueEffector
-      prereqRecord: Prereqs.Has_Player_Shot
-      usePercent: False
-      statPoolUpdates: 
-      - $type: StatPoolUpdate
-        statPoolType: BaseStatPools.Health
-        statPoolValue: -20
+Now we have a custom preqrequisite, but  we still have to **fine-tune** and **link it**:
 
-    # Prereq to check if the player has shot (bug - currently detects if a player has hit anything, not if shot)
-    Prereqs.Has_Player_Shot:
-      $type: gamedataHitPrereq_Record
-      callbackType: HitTriggered
-      ignoreSelfInflictedPressureWave: True
-      isSynchronous: True
-      pipelineStage: PreProcess
-      pipelineType: All
-      prereqClassName: HitOrMissTriggeredPrereq
-      processMiss: True # process shots that miss npcs
-      conditions:
-      - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
-      - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
-    ```
+#### Creating a custom condition
 
-We've done a lot so far, so I'll leave all our changes here -
+{% hint style="info" %}
+For more information on this, check [types-of-tweak-records.md](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md "mention") ->[#condition](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md#condition "mention")
+{% endhint %}
+
+```yaml
+# Condition to check if attack type is ranged
+Conditions.Is_Attack_Ranged:
+  $type: gamedataHitPrereqCondition_Record
+  invert: False
+  onlyOncePerShot: True
+  type: Prereqs.AttackType
+  attackType: Ranged
+
+# Condition to check if weapon type is ranged
+Conditions.Is_Weapon_Ranged:
+  $type: gamedataHitPrereqCondition_Record
+  invert: False
+  onlyOncePerShot: True
+  type: Prereqs.WeaponType
+  weaponType: Ranged
+```
+
+Conditions are at the heart of a prerequisite, and here we have four.&#x20;
+
+1. `Perks.IsHitTargetAlive_inline2` -> We don't want headshots on deadbodies to heal the player
+2. `Perks.HitIsBodyPartHead_inline0` -> Actual condition to check for headshots
+3. `Conditions.Is_Attack_Ranged` -> (Custom) We don't want quick melee attacks to heal
+4. `Conditions.Is_Weapon_Ranged` -> (Custom) We don't want grenades to be counted for this check.
+
+#### The final effector
+
+Now let's change our effector to use this prerequisite.
+
+```yaml
+# Effector to heal player if they hit a headshot
+Effectors.Heal_On_Headshot:
+  $type: ModifyStatPoolValueEffector
+  prereqRecord: Prereqs.Is_Target_Alive_And_Headshot
+  usePercent: False
+  statPoolUpdates: 
+  - $type: StatPoolUpdate
+    statPoolType: BaseStatPools.Health
+    statPoolValue: 80
+```
+
+Instead of punishing the player for just missing headshots, we can make our job easier by removing the HP every time they shoot, and compensating for the reduction in HP when hitting headshots by increasing our heal. Here's how we can do that:
+
+```yaml
+# Effector to inflict damage on player when they shoot
+Effectors.Punish_Miss:
+  $type: ModifyStatPoolValueEffector
+  prereqRecord: Prereqs.Has_Player_Shot
+  usePercent: False
+  statPoolUpdates: 
+  - $type: StatPoolUpdate
+    statPoolType: BaseStatPools.Health
+    statPoolValue: -20
+
+# Prereq to check if the player has shot (bug - currently detects if a player has hit anything, not if shot)
+Prereqs.Has_Player_Shot:
+  $type: gamedataHitPrereq_Record
+  callbackType: HitTriggered
+  ignoreSelfInflictedPressureWave: True
+  isSynchronous: True
+  pipelineStage: PreProcess
+  pipelineType: All
+  prereqClassName: HitOrMissTriggeredPrereq
+  processMiss: True # process shots that miss npcs
+  conditions:
+  - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
+  - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
+```
+
+We've done a lot so far, so I'll leave all our changes here:
+
+<details>
+
+<summary>The full tweak file</summary>
 
 ```yaml
 # Hand of Midas weapon tweak
@@ -1400,10 +1388,38 @@ Conditions.Is_Weapon_Ranged:
   weaponType: Ranged
 ```
 
+
+
+</details>
+
+#### Test it!
+
+Uncomment the effector in your weapon tweak and test your mod. You should now be healing every time you hit headshots.
+
+What did we do here?
+
+## Summary: The iconic weapon in action
+
 Here's a demo for how iconic weapon should behave.
 
 <figure><img src="../../../../../.gitbook/assets/Untitled video - Made with Clipchamp.gif" alt=""><figcaption><p>Heal on headshot demo</p></figcaption></figure>
 
 <figure><img src="../../../../../.gitbook/assets/Untitled video - Made with Clipchamp (1).gif" alt=""><figcaption><p>Damage player on miss demo</p></figcaption></figure>
 
-You are now a certified weapon modder. Pat your self on the back twice, you've done it.
+zYou are now a certified weapon modder. Pat your self on the back twice, you've done it.
+
+
+
+## Troubleshooting (Check this when you're stuck)
+
+You've created/modified a tweak but it doesn't show effect in game, what next?
+
+* Open the CET Console in game search for your Tweak in the [Tweak Browser](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/usage-1). If your tweak doesn't show, there's a validation error in the tweak.
+* Validate your .yaml tweaks [here ](https://www.yamllint.com/)to check for errors.
+* Open `Cyberpunk 2077\red4ext\plugins\TweakXL\TweakXL.log` and look for any error messages towards the end, this can help when TweakXL has issues loading a tweak.
+*   Check for other mods with same Tweak/Archive names.&#x20;
+
+    Tweak Folder - `Cyberpunk 2077\r6\tweaks`
+
+    Archive Folder - `Cyberpunk 2077\archive\pc\mod`
+* Look at WolvenKit logs located towards the bottom. Yellow or Red text means there's warnings/errors in your file that need addressing.

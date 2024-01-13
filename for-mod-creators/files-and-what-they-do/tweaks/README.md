@@ -2,7 +2,10 @@
 
 This page contains information about the game's TweakDB. Here, you can learn what it is, how you can navigate it, and how you can edit it.
 
-For a more hands-on guide on creating a new weapon, check [new-iconic-weapon-tutorial-for-dummies.md](../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
+If you would rather look at guides instead, check the following links, or use the wiki's search function:
+
+* How to change an NPC's record with Redscript: [tweakxl-changing-game-records](../../modding-guides/tweakxl-changing-game-records/ "mention")
+* Weapon properties and their explanations: The second half of [new-iconic-weapon-tutorial-for-dummies.md](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
 
 ## What is the Tweak DB?
 
@@ -14,19 +17,15 @@ You can find it under [`Cyberpunk 2077`](#user-content-fn-1)[^1]`\r6\cache\tweak
 This file is not meant to be human-readable.&#x20;
 {% endhint %}
 
-To create a new gameplay item, mod developers must [add](../modding-guides/items-equipment/adding-new-items/) to the Tweak DB.
+To create a new gameplay item, mod developers must [add](../../modding-guides/items-equipment/adding-new-items/) to the Tweak DB.
 
 ## Browsing the TweakDB
 
-To inspect the TweakDB, you have three options:
-
-* reading the .tweaks files under [`Cyberpunk 2077`](#user-content-fn-2)[^2]`\tools\redmod\tweaks` with a text editor
-* using the [Wolvenkit Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser)
-* using the [CET TweakDB Editor](https://wiki.redmodding.org/cyber-engine-tweaks/console/usage-1) in the game.
+See the child page [#browsing-the-tweakdb](./#browsing-the-tweakdb "mention")
 
 ## TweakDB entries
 
-TweakDB is only a huge list of [records](tweaks.md#data-type-record) - entries defining everything that you can interact with in the game, from NPCs over weapons to (perhaps most familiar to most) [clothing items](../modding-guides/items-equipment/adding-new-items/).
+TweakDB is only a huge list of [records](./#data-type-record) - entries defining everything that you can interact with in the game, from NPCs over weapons to (perhaps most familiar to most) [clothing items](../../modding-guides/items-equipment/adding-new-items/).
 
 You can see existing entries by browsing the .tweak under `Cyberpunk 2077tools\redmod\tweaks` (use a text editor such as [Notepad++](https://notepad-plus-plus.org/downloads/)).
 
@@ -240,7 +239,7 @@ Character.Jackie:
 
 ### Data type: Flat
 
-A flat is a key-value pair used by [records](tweaks.md#data-type-record).
+A flat is a key-value pair used by [records](./#data-type-record).
 
 ```yaml
 characterType: NPCType.Human
@@ -253,15 +252,13 @@ In this case, the syntax indicates an enum.
 
 You can change in-game items by **modifying their properties** in the TweakDB. You have the following tools to do this:
 
-* Via tweak file: [tweakxl.md](../core-mods-explained/tweakxl.md "mention")
+* Via tweak file: [tweakxl.md](../../core-mods-explained/tweakxl.md "mention")
 * Via script: [Cyber Engine Tweaks](https://wiki.redmodding.org/cyber-engine-tweaks/) / redscript / Cyberpunk's official REDmod
 
 ## Player Garments/Equipment Graph
 
 The following is a diagram which maps the relationship between game files for use with TweakXL and Archive XL:
 
-![](<../../.gitbook/assets/Cyberpunk 2077 TweakXL+ArchiveXL Pipeline.drawio.svg>)
+![](<../../../.gitbook/assets/Cyberpunk 2077 TweakXL+ArchiveXL Pipeline.drawio.svg>)
 
 [^1]: Your game directory, where you installed Cyberpunk 2077. Steam/GOG/Epic will take you here if you browse the local files.
-
-[^2]: The directory where you installed the game
