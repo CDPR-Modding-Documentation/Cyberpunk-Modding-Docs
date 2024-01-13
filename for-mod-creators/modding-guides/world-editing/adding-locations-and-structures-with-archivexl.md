@@ -27,15 +27,13 @@ Resources
 
     * This will open a window which allows you to browse to the export folder of Object Spawner. this will be something like <mark style="color:blue;">`Cyberpunk  2077\bin\x64\plugins\cyber_engine_tweaks\mods\entSpawner\export`</mark> You will find a JSON file named after the main group you created and exported in this folder folder&#x20;
     * Select that file and Wolvenkit will create the necessary nodes, in the streaming sector, adding them to the location you selected.&#x20;
-    * Delete the node which was included as an example and rename the file to something unique for your mod.
+    * Delete the node which was included as an example and update the index of your node to 0 if it is not already.
+    * Rename the file to something unique for your mod.
     * Open the new\_mod.streamingblock file in the project
     * Under the "descriptors" tab, edit the 1st entry so that the depot path points to your .streamingsector file
     *
 
         <figure><img src="../../../.gitbook/assets/streaming block.png" alt=""><figcaption></figcaption></figure>
-
-
-
     * Now you need to set the streaming box for your new sector.  The easiest way to figure this out is to just take the coordinates from a central object in your mod (you can find these in your .streamingsector file on each node) and add 300 units to each number for the max, subtract 300 for the min. This will need to be adjusted based on how far away you want your objects to be visible in the world.
     * rename this streamingblock file to something unique to your mod
     * Now all that's left is to edit the .xl file included in the resources section of the example so that it points to your streamingblock file. All you need to do is replace "mod\new\_mod.streamingblock" with the relative path to your streamingblock.&#x20;
