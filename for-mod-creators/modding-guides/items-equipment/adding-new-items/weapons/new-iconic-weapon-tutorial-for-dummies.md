@@ -1,8 +1,8 @@
 ---
 description: >-
-  We're creating a fully-featured new Iconic weapon, 'Hand of Midas', complete
-  with two distinctive Iconic attachments, each boasting a unique special
-  ability and custom skin.
+  We'll be making a fully featured new Iconic weapon in this guide, which is
+  designed for first-timers and goes into details into every aspect about weapon
+  modding. (not appearances)
 cover: ../../../../../.gitbook/assets/merchants_of_death_ultrawide.png
 coverY: 46
 layout:
@@ -22,13 +22,6 @@ layout:
 ---
 
 # ☠ New Iconic Weapon : Tutorial for Dummies
-
-{% hint style="danger" %}
-This article is not done yet! It's still missing the following sections:&#x20;
-
-* Creating a unique weapon skin
-* Creating custom attachments
-{% endhint %}
 
 ## Prerequisites
 
@@ -597,7 +590,7 @@ Install your mod and test it out, Hand Of Midas now sounds metallic like we inte
 
 So now let's make it completely overpowered and take all fun out of using it!
 
-Joking. Let's talk abouthow we can avoid that trap.&#x20;
+Joking. Let's talk about how we can avoid that trap.&#x20;
 
 The 'Hand of Midas' is envisioned to be a unique piece with its own character - ideal for players who relish precision and skill. So we need strengths **and** limitations to give it a clear identity. \
 Here's how we achieve this:
@@ -909,7 +902,7 @@ For an explanation of what these do, please see [types-of-tweak-records.md](../.
 #### MultiplyDamage Effector&#x20;
 
 **Condition:** Perks.IsHitQuickMelee - Is the attack a Quick Melee attack? \
-**Effect:** MultiplyDamageWithVelocity - Increase damage by 50%
+**Effect:** MultiplyDamage - Increase damage by 50%
 
 ### Adding an iconic mod
 
@@ -1396,8 +1389,6 @@ Conditions.Is_Weapon_Ranged:
 
 Uncomment the effector in your weapon tweak and test your mod. You should now be healing every time you hit headshots.
 
-What did we do here?
-
 ## Summary: The iconic weapon in action
 
 Here's a demo for how iconic weapon should behave.
@@ -1406,9 +1397,9 @@ Here's a demo for how iconic weapon should behave.
 
 <figure><img src="../../../../../.gitbook/assets/Untitled video - Made with Clipchamp (1).gif" alt=""><figcaption><p>Damage player on miss demo</p></figcaption></figure>
 
-zYou are now a certified weapon modder. Pat your self on the back twice, you've done it.
-
-
+You are now a certified weapon modder. Pat your self on the back twice, you've done it. \
+\
+A special request from me (@DestinyBu). If you found this guide helpful, go ahead and document your own findings on the Wiki and maybe ping me if you ever get around to finishing your Mod. A big thanks to [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")for (inspiring) forcing me to do this.
 
 ## Troubleshooting (Check this when you're stuck)
 
