@@ -76,6 +76,8 @@ For a hands-on guide and something to play around/experiment with, check [textur
 
 If you have modded other games, you're used to PBR materials with a bunch of textures like **diffuse**, **normal,** **metalness** etc.&#x20;
 
+See [cheat-sheet-materials.md](../references-lists-and-overviews/cheat-sheet-materials.md "mention") -> [#pbr-material](../references-lists-and-overviews/cheat-sheet-materials.md#pbr-material "mention") for a list.
+
 {% hint style="success" %}
 To change a textured material, see [changing-materials-colors-and-textures.md](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") -> [#step-2-finding-the-correct-appearance](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance "mention")
 {% endhint %}
@@ -94,3 +96,11 @@ This is specific to Cyberpunk, and it is incredibly cool. If you're used to text
 * [Changing the colours](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material)
 * [Changing the mask](../modding-guides/textures-and-luts/custom-multilayermasks.md)
 {% endhint %}
+
+### Decal
+
+A decal material is applied to a decal (sub)mesh, which is located on the surface of another mesh like a sticker.&#x20;
+
+### Emissive
+
+There are various kinds of emissive materials. See [cheat-sheet-materials.md](../references-lists-and-overviews/cheat-sheet-materials.md "mention") -> [#emissive-materials](../references-lists-and-overviews/cheat-sheet-materials.md#emissive-materials "mention") for a list.

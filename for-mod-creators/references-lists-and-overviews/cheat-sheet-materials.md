@@ -77,6 +77,13 @@ Works exactly like multilayered, but uses `base\characters\common\cyberspace\sil
 | -------------------------------------------------------------------------- | ------------------------------- |
 | `base\environment\decoration\containers\cases\coffin\textures\m_z_gold.mi` | a shiny gold (metal\_base.remt) |
 
+## Decal materials
+
+|                                                             |                                                                                                                                     |
+| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| `base\materials\mesh_decal_gradientmap_recolor_emissive.mt` | no animations support. Supports recolouring (via color picker), emissive (EV) and gradientMaps as well as transparency via masking. |
+| `base\materials\mesh_decal_emissive.mt`                     | animation support. Supports emissive (via EV), recolouring (numeric), and tiling.                                                   |
+
 ## Emissive Materials
 
 See [here](../materials/#emissive-material) how it works and how to configure it.

@@ -139,6 +139,8 @@ It shares various properties (such as IOR, FresnelBias, BlurRadius) with the [gl
 
 <table><thead><tr><th width="291"></th><th></th></tr></thead><tbody><tr><td>TintColor</td><td>liquid's color as RGB (copy from e.g. <code>mi_neokitsch_fridge_z_emissive.mi</code>). </td></tr><tr><td>FillAmount</td><td>float, e.g.<code>0.0</code>: Probably works in combination with the bounding box. You'll have to experiment.</td></tr><tr><td>FluidBoundingBoxMin<br>FluidBoundingBoxMax</td><td>Vectors (X, Y, Z, W) controlling the maximum distance from the container's walls. Each value is a float (decimal) speficying the axis in question - you'll simply have to play around with them (you can ignore W). <br><br>For a bottle material I've used <br>Max: 0.03, 0.03, 0.155<br>Min: -0.03, -0.03, 0.09</td></tr></tbody></table>
 
-
-
 Find a ready-to use (black) liquid .mi file [here](https://mega.nz/file/yVkkjRKS#ii5dB7P1OcwLk-VIBKiU9Ou31dloSO7k1hjEryAj9Ok).
+
+## Transparency properties
+
+<table><thead><tr><th width="291"></th><th></th></tr></thead><tbody><tr><td>MaskTexture</td><td>A black and white file as mask for transparency</td></tr></tbody></table>
