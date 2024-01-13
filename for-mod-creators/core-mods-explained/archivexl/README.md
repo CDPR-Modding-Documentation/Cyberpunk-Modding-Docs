@@ -20,6 +20,7 @@ ArchiveXL ([nexus](https://www.nexusmods.com/cyberpunk2077/mods/4198) | [github
 * [photo mode poses](../../modding-guides/animations/archivexl-adding-photo-mode-poses.md)
 * world sectors ([deletions](../../modding-guides/world-editing/world-editing-deleting-objects.md) and additions)
 * custom lipsync maps
+* Translations (check [#how-does-the-game-assign-display-names](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#how-does-the-game-assign-display-names "mention")for a guide)
 * If you want to look up garment appearance slots: The princess is in another castle. Check [different-equipment-slots.md](../../modding-guides/items-equipment/adding-new-items/different-equipment-slots.md "mention") instead.
 
 This page will document how to **set item properties** via **tags & suffixes** (the vanilla way)**,** or via **dynamic switching** (new, cool, version >= 1.5).

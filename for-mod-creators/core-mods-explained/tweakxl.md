@@ -25,3 +25,5 @@ For more information on Tweak Modding, see the [wiki on github.](https://github.
 
 The guide on how to create mods with TweakXL, see [tweakxl-changing-game-records](../modding-guides/tweakxl-changing-game-records/ "mention")
 
+For a detailed guide with many explanations of properties, check the second half of[new-iconic-weapon-tutorial-for-dummies.md](../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
+

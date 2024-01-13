@@ -40,7 +40,7 @@ Before beginning, ensure you have the following software installed and properly 
 3. **A text editor:** [Notepad++](https://notepad-plus-plus.org/downloads/) or, if you want to get fancy, [Visual Studio Code](https://app.gitbook.com/s/-McniwB8YOK2HnJ7SYg\_/getting-started)
 4. **Cyberpunk 2077** - 😑
 5. Core mods: [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198), [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197), [Red4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
-6. Optional: [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/)
+6. Optional: [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/), [RedMod](../../../../../for-mod-users/users-modding-cyberpunk-2077/redmod/)
 
 ## Step 1: Create a New Project in WolvenKit
 
@@ -84,7 +84,9 @@ For first time modders, understanding all this in one go will be difficult. You 
 
 The .yaml file may seem complex at first glance, but the actual structure is extremely simple. Your weapon has properties – those stand on the left side of the `:`, such as `ammo`. The properties have different values, and those stand on the right side of the `:`, such as `Ammo.RifleAmmo`.
 
-#### An annotated example
+<details>
+
+<summary>An annotated example</summary>
 
 Here's a breakdown of key fields in a different weapon (`Items.Preset_Sidewinder_Default`) : (Thanks to BuffMcMuff)
 
@@ -304,6 +306,10 @@ rate(cycle time), mag size, smart range
   hide_nametag: True
 </code></pre>
 
+
+
+</details>
+
 ## Step 4: Making a new weapon
 
 ### 4.1: New weapon, same as the old weapon
@@ -323,7 +329,7 @@ To test it out, boot up your game and load any save.
 
 Now open up the CET [Console](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/console "mention"):
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
 
 Type in the command below and hit Enter.
 
@@ -331,7 +337,7 @@ Type in the command below and hit Enter.
  Game.AddToInventory("Items.Hand_Of_Midas",1)
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Your newly created weapon is now in game.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Your newly created weapon is now in game.</p></figcaption></figure>
 
 You can now see your newly created weapon in your inventory.&#x20;
 
@@ -359,9 +365,9 @@ Game.AddToInventory("Items.Hand_Of_Midas",1)
 Game.AddToInventory("Items.Preset_Unity_Default",1)
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Default Unity crosshair</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Default Unity crosshair</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Hand of Midas crosshair</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>Hand of Midas crosshair</p></figcaption></figure>
 
 You should now be able to see that both the Unity & Hand Of Midas, although otherwise identical, now have different crosshairs.&#x20;
 
@@ -377,7 +383,7 @@ If you have the REDmod DLC installed, you can use a text editor like Notepad++ t
 
 By searching for "Crosshairs." in the Tweak Browser. Most things we find inside the weapon tweak will be searchable within the Tweak Browser, and some within the Asset Browser.
 
-<figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
 
 Editing the Tweak will allow us to modify all of our gun's behaviors, and I encourage you to play around with these.
 
@@ -423,7 +429,7 @@ What good is a new gun without a new name? We need to tell our game about these.
 2. Create a new folder named after your mod, for example `midas_collection`
 3. Within this folder, make a subfolder named `localization`
 
-<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>mod name folder &#x26; localization folder</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>mod name folder &#x26; localization folder</p></figcaption></figure>
 
 ### How does the game assign display names?&#x20;
 
@@ -435,7 +441,7 @@ This connects the displayName property of your item with a **locaization key**, 
 If you want to take a look at these lists, use WolvenKit's [LocKey browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/lockey-browser) or [search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `onscreens.json`.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>LocKey Browser search for <code>LocKey#49794</code></p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>LocKey Browser search for <code>LocKey#49794</code></p></figcaption></figure>
 
 ### So we edit onscreens.json?
 
@@ -443,7 +449,7 @@ Good thinking, but no. In Cyberpunk, only **one** mod can edit any given file. T
 
 Place a dedicated [`en-us.json`](https://mega.nz/file/3uB2CL5L#Y18wD4pGo1L7Y699GNvy6UaKVb8BqkjDP-FeYi9VcQM) file in your `midas_collection`\\`localization` folder.  This is where we'll add our own translation entries – after that, we only need to tell ArchiveXL about the file and lean back.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Red arrow = localization json added correctly. Green arrow = add new element in the json. Yellow arrow = key fields in new entry</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>Red arrow = localization json added correctly. Green arrow = add new element in the json. Yellow arrow = key fields in new entry</p></figcaption></figure>
 
 ### Setting up a localizationKey
 
@@ -497,43 +503,72 @@ These lines set the display name and the description of your weapon using the ke
 
 After completing these steps, install your mod and launch the game. Your new weapon, "Hand Of Midas", should now appear with its unique name and description, fully integrated into Cyberpunk 2077's multi-language environment.
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Name &#x26; Description of the gun are now taken from "en-us.json" that we've created</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>Name &#x26; Description of the gun are now taken from "en-us.json" that we've created</p></figcaption></figure>
 
 ## Step 7: Make it Iconic
 
-To elevate the 'Hand of Midas' to its iconic status, we need to implement a couple of key changes in the tweak. These modifications will not only add unique features to the weapon but also protect its iconic integrity.
+To elevate the 'Hand of Midas' to its iconic status, we need to modify the `.yaml` again, where we set all of the gun's unique features:
 
 ```yaml
 # Hand of Midas weapon tweak
 Items.Hand_Of_Midas:
   $base: Items.Preset_Unity_Default # $base makes it so all the properties are taken from the specified tweak (in this case, "Items.Preset_Unity_Default") and the properties specified in this tweak overwrite the parent.
   crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
-  tags:
-    - !append-once IconicWeapon # prevent the gun from being dissassembled
   displayName: MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
   localizedDescription: MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  tags:
+    - !append-once IconicWeapon # prevent the gun from being dissassembled
   statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
     - !append-once Quality.IconicItem # makes the weapon iconic
   statModifierGroups: # stats for a weapon also, but grouped (generally by category)
+    - !append-once Items.IconicQualityRandomization
 ```
 
-For the first time we're dealing with an array inside a tweak. An array can hold multiple items, and in this case, `statModifiers` will hold all the stats for your gun from recoil to damage. Thing is, `statModifiers` is already defined by our `$base: Items.Preset_Unity_Default` and we don't want to override it, we only want to add another entry to it whilst keeping the rest intact. So we use `!append-once` followed by the entry we want to add, which is `Quality.IconicItem`. Read more about how array operations work in [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks#array-operations).
+The new things you're seeing are `arrays`, which is a technical term — you can think of them as lists, since they can hold multiple items.
 
-`Quality.IconicItem` makes the weapon Iconic. It'll give it the fancy Iconic background in inventory, give a special dialogue box when disassembling it & make it have all the implied functions of an Iconic weapon. The `IconicWeapon` tag ensures the weapon cannot be disassembled. The addition of `Items.IconicQualityRandomization` to `statModifierGroups` is also important, and will ensure Iconic weapons have the right quality and upgrade as they should. Exactly what it does is somewhat of a mystery, so let me know if you find out.
+{% hint style="info" %}
+You can read more about how array operations work in [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks#array-operations).
+{% endhint %}
+
+`statModifiers` will hold all the stats for your gun. from recoil to damage. Since the `$base: Items.Preset_Unity_Default` already defines `statModifiers`,  and we'd like to keep those. \
+So we're adding an entry to the list, using`!append-once` followed by the new entry `Quality.IconicItem`.&#x20;
+
+This makes the weapon iconic, which means:
+
+* it has a fancy golden background
+* there's a dialogue box when you disassemble it
+
+To prevent it from being disassembled, we also add `IconicWeapon` to its `tags` array.&#x20;
+
+#### Upgrade compatibility
+
+We make sure that the weapon updates correctly by setting the&#x20;
+
+<pre class="language-yaml"><code class="lang-yaml"><strong>statModifierGroups: # stats for a weapon also, but grouped (generally by category)
+</strong>    - !append-once Items.IconicQualityRandomization
+</code></pre>
+
+What exactly it does is somewhat of a mystery, so let me know if you find out.
+
+#### Go test
 
 Once these modifications are in place, install your mod and enjoy the newfound Iconic status of the 'Hand of Midas' in the game.
 
-<figure><img src="../../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Setting "Quality.IconicItem" will give it a special background in the inventory &#x26; also specify that the item is Iconic.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Setting "Quality.IconicItem" will give it a special background in the inventory &#x26; also specify that the item is Iconic.</p></figcaption></figure>
 
 Technically, you've already made a new Iconic weapon & I should call quits on this tutorial, but it's never as easy as that, is it? Give yourself a pat on the back & onto the next step.
 
 ## Step 8: Audio - Gun Go Boom
 
-Let's talk theme, the gun is called Hand Of Midas, and it would be fitting to have the gun sounds be more metallic, gold-ish. How do we achieve this? We could add custom sounds using RedMod, but that can lead to unwanted conflicts due to how RedMod works. So let's look for guns that already have a sound like that.\
-\
-Dex's gun `Items.Preset_Liberty_Dex` already has a nice metallic sound to it, so let's use the sound files from this gun. To do this, find the gun in Tweak Browser and look for the property `audioName`.&#x20;
+Let's talk theme.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p><code>audioName</code> for <code>Items.Preset_Liberty_Dex</code></p></figcaption></figure>
+The gun is called Hand Of Midas, so it would be fitting to have the gun sounds be more… gold-ish, right? How do we achieve this?&#x20;
+
+We could add custom sounds using RedMod, but due to how that works, we could end up with conflicts that we don't want to bother with. So let's look for guns that already have a sound like that.\
+\
+Dex's gun `Items.Preset_Liberty_Dex` already has a nice metallic ring to it, so let's just steal its sound effect. To do this, find the gun in Tweak Browser and look for the property `audioName`.&#x20;
+
+<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p><code>audioName</code> for <code>Items.Preset_Liberty_Dex</code></p></figcaption></figure>
 
 Now add this value to your weapon tweak as shown below.
 
@@ -555,20 +590,21 @@ Items.Hand_Of_Midas:
 
 Install your mod and test it out, Hand Of Midas now sounds metallic like we intended it to.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>An explanation for how audio works internally, should you decide to go the RedMod route.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>An explanation for how audio works internally, should you decide to go the RedMod route.</p></figcaption></figure>
 
 ## Step 9: **Weapon Design 101 - Conceptualization of your Iconic (Optional)**
 
-When conceptualizing the 'Hand of Midas', the focus isn't solely on creating a weapon with high damage output. It's essential to consider the overall feel and identity of the weapon. Avoiding the trap of an overpowered but uninteresting gun, the 'Hand of Midas' is envisioned to be a unique piece with its own character - ideal for players who relish precision and skill.
+So now let's make it completely overpowered and take all fun out of using it!
 
-**Designing the Weapon's Characteristics**
+Joking. Let's talk abouthow we can avoid that trap.&#x20;
 
-The design approach for 'Hand of Midas' revolves around balancing strengths with intentional limitations. Here's how we achieve this:
+The 'Hand of Midas' is envisioned to be a unique piece with its own character - ideal for players who relish precision and skill. So we need strengths **and** limitations to give it a clear identity. \
+Here's how we achieve this:
 
 1. **Increased Recoil**: This adds a layer of complexity and skill. High recoil means each shot requires careful consideration, appealing to players who enjoy a challenge and the satisfaction of mastering a weapon.
-2. **Smaller Magazine Size & Increased Reload Time**: These features ensure that every bullet counts. A smaller magazine encourages accuracy over spray-and-pray tactics, and a longer reload time not only adds a strategic layer to combat but also allows players to appreciate the weapon's aesthetics and animations longer.
+2. **Smaller Magazine Size & Increased Reload Time**: Every bullet counts. A smaller magazine encourages accuracy over spray-and-pray, and a longer reload time not only adds a strategic layer to combat but also gives players time to appreciate the weapon's aesthetics.
 
-In summary, these design choices don't just balance the weapon; they enhance its identity. The increased recoil and reload times are not mere hindrances; they contribute to making the 'Hand of Midas' feel powerful and rewarding for those who can wield it effectively.&#x20;
+In summary, these design choices don't just balance the weapon; they enhance its identity. The "flaws" don't destroy the gun — instead, they contribute to making the 'Hand of Midas' feel powerful and rewarding for those who can wield it effectively.&#x20;
 
 **Building on Strengths**
 
@@ -598,7 +634,11 @@ statModifierGroups:
 
 These arrays don't directly contain the stats, but have inline objects, which in turn will contain the actual stats. I recommend browsing to each of these stats in the Tweak Browser to find out what each one does. You can also read about [Base Stats](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/equipment/weapons/cheat-sheet-weapon-basestats) and what they do here.
 
-To change the gun's recoil, we'll add a new `statModifierGroup` tweak as shown below (to the weapon's tweak file or a new tweak file) -
+{% hint style="info" %}
+You can add the code below to a new tweak (`.yaml`) file, or add it to your weapon's file.
+{% endhint %}
+
+To change the gun's recoil, we'll add a new `statModifierGroup` tweak as shown below
 
 ```yaml
 # Recoil related stats for Hand of Midas
@@ -623,7 +663,7 @@ StatGroups.Hand_Of_Midas_Recoil_Stats:
     statType: BaseStats.RecoilRecoveryTime # time taken to return to normal position after recoil
 ```
 
-Now add this stat group to your weapon's tweak.
+Now add this stat group to your weapon's tweak (see the last line).
 
 ```yaml
 # Hand of Midas weapon tweak
@@ -644,11 +684,19 @@ Items.Hand_Of_Midas:
 
 Install your mod, launch the game and test your changes. You should see that the gun's recoil is increased, but doesn't feel overwhelming.
 
-<figure><img src="../../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Yellow box = Unity recoil pattern. Red box = Hand of Midas recoil pattern</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Yellow box = Unity recoil pattern. Red box = Hand of Midas recoil pattern</p></figcaption></figure>
 
-You now know how to change your weapon's behavior. Play around & discover other stats and modify your gun to make it feel unique. Note that stats can be added individually to `statModifiers` or in groups to `statModifierGroups` .
+You now know how to change your weapon's behavior. Play around & discover other stats and modify your gun to make it feel unique.&#x20;
 
-After a bit of tinkering, this is what my weapon tweak now looks like -
+{% hint style="info" %}
+Stats can be added individually to `statModifiers` or in groups to `statModifierGroups` .
+{% endhint %}
+
+After a bit of tinkering, this is what my weapon tweak now looks like (expand the box below):
+
+<details>
+
+<summary>See the full thing</summary>
 
 ```yaml
 # Hand of Midas weapon tweak
@@ -761,11 +809,15 @@ StatGroups.Hand_Of_Midas_Recoil_Stats:
     statType: BaseStats.RecoilRecoveryTime # time taken to return to normal position after recoil
 ```
 
+
+
+</details>
+
 ## Step 11: Troubleshooting (Refer this when stuck)
 
 You've created/modified a tweak but it doesn't show effect in game, what next?
 
-* Open the CET Console in game search for your Tweak in the in game Tweak Browser. If your tweak doesn't show, there's a validation error in the tweak.
+* Open the CET Console in game search for your Tweak in the [Tweak Browser](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/usage-1). If your tweak doesn't show, there's a validation error in the tweak.
 * Validate your .yaml tweaks [here ](https://www.yamllint.com/)to check for errors.
 * Open `Cyberpunk 2077\red4ext\plugins\TweakXL\TweakXL.log` and look for any error messages towards the end, this can help when TweakXL has issues loading a tweak.
 *   Check for other mods with same Tweak/Archive names.&#x20;
@@ -775,3 +827,583 @@ You've created/modified a tweak but it doesn't show effect in game, what next?
     Archive Folder - `Cyberpunk 2077\archive\pc\mod`
 * Look at WolvenKit logs located towards the bottom. Yellow or Red text means there's warnings/errors in your file that need addressing.
 
+## Step 12: Finishing up the Tweak
+
+There are a lot of values to play around with in a tweak file. You are often better off leaving most of them alone. These are some properties you probably should look at when designing a gun.
+
+1.  Blueprint
+
+    ```yaml
+    blueprint: Items.Iconic_Ranged_Weapon_Blueprint # blueprint decides what kind of attachments/mods are allowed on a weapon
+    ```
+2.  Item Quality
+
+    ```yaml
+    Items.Hand_Of_Midas:
+      ...  
+      quality: Quality.Rare # minimum item quality
+    ```
+3.  Buy & Sell Price
+
+    ```yaml
+    Items.Hand_Of_Midas:
+      ...
+      buyPrice: # multipliers to decide the buy price of the gun
+      - Price.Hand_Of_Midas
+      - Price.BuyPrice_StreetCred_Discount
+      sellPrice: # multipliers to decide the sell price of the gun
+      - Price.Hand_Of_Midas
+      - Price.WeaponSellMultiplier
+
+    # Static price for Hand of Midas
+    Price.Hand_Of_Midas:
+      $type: gamedataConstantStatModifier_Record
+      value: 100000
+      modifierType: Additive
+      statType: BaseStats.Price
+    ```
+
+## Step 13: Making an Iconic Mod (Special Ability)
+
+The main thing that makes an iconic weapon so special is its iconic mod. These are like any other weapon mod, but hidden from the UI. Before you start hacking up your own, it is very important you have a look at the existing Iconic Mods in game.&#x20;
+
+For now, let's look at `Items.Preset_Lexington_Wilson` (also known as "Dying Night").
+
+
+
+```yaml
+Cyberpunk 2077\tools\redmod
+```
+
+with a text editor.
+
+#### Finding your way along
+
+There are many ways to find text within the Redmod directories
+
+1. [Notepad++](https://notepad-plus-plus.org/downloads/) (Edit -> Find in Files, Hotkey: `Ctrl+F`)
+2.  Command Line search: You can find any string within a file with the commands mentioned below. Open command prompt in the redmod folder and then run them.
+
+    ```
+    findstr /S /M "KEYWORD" *.”FILENAME”
+    OR
+    findstr /S /M "KEYWORD" *.*
+    /S = search in all subfolder  /M = show file name only
+    ```
+3. [Agent Ransack](https://www.mythicsoft.com/agentransack/): A robust free program with an UI that works just like the command line search
+4. IntelliJ/Other IDEs: Open the Redmod folder as a project in any IDE. (Easiest to use)
+
+I'll be using IntelliJ for showcasing how to read Redmod tweaks. Now use `Ctrl + Shift + F` to open up the search dialog box and search for `Preset_Lexington_Wilson`\
+
+
+Open up `preset_base_lexington.tweak` as shown by the red arrow above and search for`Preset_Lexington_Wilson`  (hotkey: `Ctrl+F`).
+
+```
+tweaks/base/gameplay/static_data/database/items/weapons/ranged/handguns/lexington/preset_base_lexington.tweak
+```
+
+<figure><img src="../../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p><code>Preset_Lexington_Wilson</code> Tweak but in .tweak format.</p></figcaption></figure>
+
+This is the same tweak you'd find in the Tweak Browser, but it's much easier to read and understand due to the lack of Inline properties & it's code like structure. Look at this tweak for a bit and you should be able to find&#x20;
+
+```
+{
+    slot = "AttachmentSlots.IconicWeaponModLegendary";
+    itemPartPreset = "Items.WilsonWeaponMod";
+}
+```
+
+`Items.WilsonWeaponMod` is the iconic mod used by this weapon. Now search for `WilsonWeaponMod` in Intellij (Ctrl+Shift+F). This will lead you to a file called `iconic_mods.tweak` which should have `WilsonWeaponModAbility` and a bunch of statModifiers. These stat modifiers are similar to the ones we found in the weapon tweak and aren't of interest to us.
+
+```
+WilsonWeaponMod : IconicWeaponModBase
+{
+    OnAttach = 
+    [
+       "Items.WilsonWeaponModAbility"
+    ];
+    statModifiers += 
+    [
+       {
+          statType = "BaseStats.ReloadTimeBonus";
+          modifierType = "Additive";
+          value = -0.1f;
+       } : ConstantStatModifier, 
+       {
+          statType = "BaseStats.RecoilKickMin";
+          modifierType = "Multiplier";
+          value = 0.8f;
+       } : ConstantStatModifier, 
+       {
+          statType = "BaseStats.RecoilKickMax";
+          modifierType = "Multiplier";
+          value = 0.8f;
+       } : ConstantStatModifier, 
+       {
+          statType = "BaseStats.SpreadDefaultX";
+          modifierType = "Multiplier";
+          value = 0.66f;
+       } : ConstantStatModifier, 
+       {
+          statType = "BaseStats.SpreadMaxX";
+          modifierType = "Multiplier";
+          value = 0.66f;
+       } : ConstantStatModifier, 
+       {
+          statType = "BaseStats.HitDismembermentFactor";
+          modifierType = "Multiplier";
+          value = 3f;
+       } : ConstantStatModifier, 
+       {
+          statType = "BaseStats.HitWoundsFactor";
+          modifierType = "Multiplier";
+          value = 3.f;
+       } : ConstantStatModifier, 
+       {
+          statType = "BaseStats.EffectiveRange";
+          modifierType = "Multiplier";
+          value = 0.75;
+       } : ConstantStatModifier
+    ];
+    buyPrice = [];
+    sellPrice = [];
+}
+```
+
+&#x20;Now search for `WilsonWeaponModAbility` . This should lead you to a file called `mods_abilities.tweak` , where you can look for our ability.
+
+```
+WilsonWeaponModAbility : IconicWeaponModAbilityBase
+{
+    UIData = 
+    {
+       iconPath = "ability_offensive";
+       localizedDescription = "LocKey#50743";
+    };
+    effectors = 
+    [
+       {
+          prereqRecord = "Prereqs.ProcessHitTriggered";
+          percentMult = 0.25f;
+          unitThreshold = 10f;
+       } : MultiplyDamageWithVelocity, 
+       {
+          prereqRecord = "Perks.IsHitQuickMelee";
+          value = 1.5f;
+       } : MultiplyDamage
+    ];
+}
+```
+
+You'll find that the ability has an array called effectors. An effector is what I like to call a `conditional-do` popularly know as an `if-condition` . This means that it's core it checks if a condition or a group of conditions are met, and if they are, it does something.
+
+In this case, we have -
+
+1. MultiplyDamageWithVelocity Effector : \
+   Condition - Prereqs.ProcessHitTriggered - Does the bullet hit anything?\
+   Effect - MultiplyDamageWithVelocity - Increases the guns damage with 25% if the Player velocity is greater than 10.
+2. MultiplyDamage Effector :\
+   Condition - Perks.IsHitQuickMelee - Is the attack a Quick Melee attack?\
+   Effect - MultiplyDamageWithVelocity - Increase damage by 50%
+
+Now we understand how the Iconic mod for Dying Night works. Let's quickly look at the same record in Tweak Browser. Search for `WilsonWeaponModAbility`&#x20;
+
+```yaml
+Items.WilsonWeaponModAbility:
+  $type: gamedataGameplayLogicPackage_Record
+  stackable: False
+  UIData: Items.WilsonWeaponModAbility_inline0
+  animationWrapperOverrides: []
+  effectors:
+    - Items.WilsonWeaponModAbility_inline1
+    - Items.WilsonWeaponModAbility_inline2
+  items: []
+  statPools: []
+  stats: []
+```
+
+I hope it is clear now how reading the Redmod tweak is much easier than reading inlines that keep on nesting. Let's design our own Iconic Mod now. Since our weapon demands perfection, we'll punish the player for not hitting headshots & reward them for hitting headshots. This punishment/reward will come in the form of HP reduction & Healing rewards.
+
+Start by adding tweaks shown below to your weapons tweak file or a new tweak file. In here, we define our Iconic mod called `Mods.Cranial_Cashback_Mod` which houses our special ability `Abilities.Cranial_Cashback`. Our ability in turn contains two effectors which we are yet to implement. It also contains a `localizedDescription` which is the description for our iconic ability which will also be taken from the en-us.json file we made earlier. Make sure you update the json to have the correct secondaryKey and femaleVariant fields. This description is shown in yellow when hovering over the gun in inventory.\
+\
+Add the mod to your gun by adding an entry to `slotPartListPreset` in your weapons tweak. Install your mod to verify what we've done so far works. If your gun shows the yellow iconic description on hover, you're good to go. \
+(Note : You may have to respawn your weapon for some changes to take effect)
+
+```yaml
+# Hand of Midas weapon tweak
+Items.Hand_Of_Midas:
+  ...
+  slotPartListPreset: # attachments & mods 
+  - !append-once
+    $type: SlotItemPartPreset
+    itemPartPreset: Items.Cranial_Cashback_Mod # iconic mod
+    slot: AttachmentSlots.IconicWeaponModLegendary 
+
+# Hand of Midas Iconic mod
+Mods.Cranial_Cashback_Mod:
+  $base: Items.IconicWeaponModBase
+  OnAttach: 
+  - Abilities.Cranial_Cashback
+
+# Hand of Midas Iconic mod ability
+Abilities.Cranial_Cashback:
+  $base: Items.IconicWeaponModAbilityBase
+  # effectors:
+  # - !append-once Effectors.Punish_Miss
+  # - !append-once Effectors.Heal_On_Headshot
+  UIData:
+      $type: GameplayLogicPackageUIData
+      localizedDescription: LocKey#MC_gun_iconic_description # iconic description shown in yellow text when hovering over a weapon
+```
+
+<figure><img src="../../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Iconic description is visible when hovering over gun</p></figcaption></figure>
+
+Now comes the difficult part, we'll be designing our two effectors. One to punish the player when they miss, and the other to reward them for headshots.&#x20;
+
+1.  Heal on headshot\
+    Every time the player hits a headshot we'll heal him for 80 HP. How do we go about acheiving this? Let's start by finding effectors that may already do something similar, open up your tweak browser and look for effectors, admittedly, there's a lot of them. I found this effector that modifies stat pools.&#x20;
+
+    ```yaml
+    Items.MemoryReplenishmentEffector:
+      $type: gamedataModifyStatPoolValueEffector_Record
+      setValue: False
+      usePercent: True
+      effectorClassName: ModifyStatPoolValueEffector
+      prereqRecord: Items.MemoryReplenishmentEffector_inline0
+      removeAfterActionCall: False
+      removeAfterPrereqCheck: False
+      statPoolUpdates:
+      - Items.MemoryReplenishmentEffector_inline4
+      statModifierGroups: []
+    ```
+
+    The health of the player is also a stat pool called `BaseStatPools.Health` so we can use this as a starting point. We can heal the player by making a change in the `statPoolUpdates` as shown below.
+
+    ```yaml
+    Effectors.Heal_On_Headshot:
+      $type: gamedataModifyStatPoolValueEffector_Record
+      setValue: False
+      usePercent: True
+      effectorClassName: ModifyStatPoolValueEffector
+      prereqRecord: Items.MemoryReplenishmentEffector_inline0
+      removeAfterActionCall: False
+      removeAfterPrereqCheck: False
+      statPoolUpdates: 
+      - $type: StatPoolUpdate
+        statPoolType: BaseStatPools.Health
+        statPoolValue: 80
+      statModifierGroups: []
+    ```
+
+    But the prerequisite currently is `Items.MemoryReplenishmentEffector_inline0` which doesn't sound like it will check for headshots. Whilst there are some PreReqs that exist that already check for headshots, we'll write our own referring to `Prereqs.HitTriggeredPrereq`, so you know how to make one.
+
+    <pre class="language-yaml"><code class="lang-yaml"><strong># Prereq to check if headshot &#x26; target is alive and hit with a ranged weapon
+    </strong>Prereqs.Is_Target_Alive_And_Headshot:
+      $type: gamedataHitPrereq_Record
+      callbackType: HitTriggered
+      ignoreSelfInflictedPressureWave: True
+      isSynchronous: True
+      pipelineStage: Process
+      pipelineType: Damage
+      prereqClassName: HitTriggeredPrereq
+      conditions:
+      - Perks.IsHitTargetAlive_inline2 # hit target is alive (health != 0)
+      - Perks.HitIsBodyPartHead_inline0 # headshot condition
+      - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
+      - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
+      processMiss: False # process shots that hit npcs only
+
+    # Condition to check if attack type is ranged
+    Conditions.Is_Attack_Ranged:
+      $type: gamedataHitPrereqCondition_Record
+      invert: False
+      onlyOncePerShot: True
+      type: Prereqs.AttackType
+      attackType: Ranged
+
+    # Condition to check if weapon type is ranged
+    Conditions.Is_Weapon_Ranged:
+      $type: gamedataHitPrereqCondition_Record
+      invert: False
+      onlyOncePerShot: True
+      type: Prereqs.WeaponType
+      weaponType: Ranged
+    </code></pre>
+
+    Conditions are at the heart of a prerequisite and here we have four. \
+    1\. Perks.IsHitTargetAlive\_inline2 -> We don't want headshots on deadbodies to heal the player\
+    2\. Perks.HitIsBodyPartHead\_inline0 -> Actual condition to check for headshots\
+    3\. Conditions.Is\_Attack\_Ranged -> (Custom) We don't want quick melee attacks to heal\
+    4\. Conditions.Is\_Weapon\_Ranged -> (Custom) We don't want grenades to be counted for this check.\
+    Now let's change our effector to use this prerequisite.
+
+    ```yaml
+    # Effector to heal player if they hit a headshot
+    Effectors.Heal_On_Headshot:
+      $type: ModifyStatPoolValueEffector
+      prereqRecord: Prereqs.Is_Target_Alive_And_Headshot
+      usePercent: False
+      statPoolUpdates: 
+      - $type: StatPoolUpdate
+        statPoolType: BaseStatPools.Health
+        statPoolValue: 80
+    ```
+
+    We've done a lot here, and there may be a few questions if your head like where'd I find the correct prerequisites & conditions. Exploration is key here, a big part of modding is going through hundreds of records till you find yourself just the right thing. Uncomment the effector in your weapon tweak and test your mod. You should now be healing every time you hit headshots.
+2.  Punish misses\
+    Instead of punishing the player for just missing headshots, we can make our job easier by just removing the HP every time they shoot, and compensating for the reduction in HP when hitting headshots by increasing our heal. Here's how we can do that -
+
+    ```yaml
+    # Effector to inflict damage on player when they shoot
+    Effectors.Punish_Miss:
+      $type: ModifyStatPoolValueEffector
+      prereqRecord: Prereqs.Has_Player_Shot
+      usePercent: False
+      statPoolUpdates: 
+      - $type: StatPoolUpdate
+        statPoolType: BaseStatPools.Health
+        statPoolValue: -20
+
+    # Prereq to check if the player has shot (bug - currently detects if a player has hit anything, not if shot)
+    Prereqs.Has_Player_Shot:
+      $type: gamedataHitPrereq_Record
+      callbackType: HitTriggered
+      ignoreSelfInflictedPressureWave: True
+      isSynchronous: True
+      pipelineStage: PreProcess
+      pipelineType: All
+      prereqClassName: HitOrMissTriggeredPrereq
+      processMiss: True # process shots that miss npcs
+      conditions:
+      - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
+      - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
+    ```
+
+We've done a lot so far, so I'll leave all our changes here -
+
+```yaml
+# Hand of Midas weapon tweak
+Items.Hand_Of_Midas:
+  $base: Items.Preset_Unity_Default # $base makes it so all the properties are taken from the specified tweak (in this case, "Items.Preset_Unity_Default") and the properties specified in this tweak overwrite the parent.
+  crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
+  tags:
+  - !append-once IconicWeapon # prevent the gun from being dissassembled
+  displayName: MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
+  - !append-once Quality.IconicItem # makes the weapon iconic
+  audioName: wea_set_liberty_dex # sets the sounds of Dex's gun - Plan B
+  statModifierGroups: # stats for a weapon also, but grouped (generally by category)
+  - !append-once Items.IconicQualityRandomization
+  - !append-once StatGroups.Hand_Of_Midas_Recoil_Stats
+  - !append-once StatGroups.Hand_Of_Midas_Technical_Stats
+  - !append-once StatGroups.Hand_Of_Midas_Handling_Stats
+  - !append-once StatGroups.Hand_Of_Midas_Aim_Stats
+  - !append-once StatGroups.Hand_Of_Midas_Range_Stats
+  - !append-once StatGroups.Hand_Of_Midas_Damage_Stats
+  - !remove Items.Base_Unity_Technical_Stats
+  buyPrice: # multipliers to decide the buy price of the gun
+  - Price.Hand_Of_Midas
+  - Price.BuyPrice_StreetCred_Discount
+  sellPrice: # multipliers to decide the sell price of the gun
+  - Price.Hand_Of_Midas
+  - Price.WeaponSellMultiplier
+  blueprint: Items.Iconic_Ranged_Weapon_Blueprint # blueprint decides what kind of attachments/mods are allowed on a weapon
+  quality: Quality.Rare
+  slotPartListPreset: # attachments & mods 
+  - !append-once
+    $type: SlotItemPartPreset
+    itemPartPreset: Mods.Cranial_Cashback_Mod # iconic mod
+    slot: AttachmentSlots.IconicWeaponModLegendary 
+
+# Static price for Hand of Midas
+Price.Hand_Of_Midas:
+  $type: gamedataConstantStatModifier_Record
+  value: 100000
+  modifierType: Additive
+  statType: BaseStats.Price
+
+# Damage stats for Hand of Midas 
+StatGroups.Hand_Of_Midas_Damage_Stats:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+  - $type: ConstantStatModifier
+    modifierType: Additive
+    statType: BaseStats.HeadshotDamageMultiplier # damage multiplier for headshots
+    value: 0.5
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.1
+    modifierType: Multiplier
+    statType: BaseStats.DPS # weapon DPS
+  - $type: gamedataConstantStatModifier_Record
+    value: 0.25
+    modifierType: Multiplier
+    statType: BaseStats.HeadshotCritChance # crit change on headshots
+
+# Range stats for Hand of Midas 
+StatGroups.Hand_Of_Midas_Range_Stats:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier 
+    statType: BaseStats.EffectiveRange # range beyond which damage drop off begins
+  - $type: gamedataConstantStatModifier_Record
+    value: 5
+    modifierType: Multiplier
+    statType: BaseStats.MaximumRange # range beyond which bullet will despawn
+
+# Magazine capacity for Hand of Midas
+StatGroups.Hand_Of_Midas_Technical_Stats:
+  $base: Items.Base_Unity_Technical_Stats
+  statModifiers:
+  - !append-once 
+    $type: gamedataConstantStatModifier_Record
+    value: 5
+    modifierType: Additive
+    statType: BaseStats.MagazineCapacityBase # sets the magazine capacity
+  - !remove Items.Base_Unity_Technical_Stats_inline2 # remove stat setting the magazine capacity
+
+# Reload related stats for Hand of Midas
+StatGroups.Hand_Of_Midas_Handling_Stats:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 0.25
+    modifierType: Additive
+    statType: BaseStats.ReloadTimeBase # reload time when magazine is not empty
+  - $type: gamedataConstantStatModifier_Record
+    value: 0.25
+    modifierType: Additive
+    statType: BaseStats.EmptyReloadTime # reload time when magazine is empty
+
+# Aim/Zoom related stats for Hand of Midas
+StatGroups.Hand_Of_Midas_Aim_Stats:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier
+    statType: BaseStats.ZoomLevel # zoom level of a weapon
+  - $type: gamedataConstantStatModifier_Record
+    value: -5
+    modifierType: Additive
+    statType: BaseStats.AimFOV # FOV when aiming (Illusion of zoom)
+
+# Recoil related stats for Hand of Midas
+StatGroups.Hand_Of_Midas_Recoil_Stats:
+  $type: gamedataStatModifierGroup_Record
+  statModifiers:
+  - $type: gamedataConstantStatModifier_Record
+    value: 2
+    modifierType: Multiplier
+    statType: BaseStats.RecoilTime # time taken by gun to reach the recoil distance
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier
+    statType: BaseStats.RecoilKickMin # minimum sway on camera/gun on shooting
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier
+    statType: BaseStats.RecoilKickMax # maximum sway on camera/gun on shooting
+  - $type: gamedataConstantStatModifier_Record
+    value: 1.5
+    modifierType: Multiplier
+    statType: BaseStats.RecoilRecoveryTime # time taken to return to normal position after recoil
+
+# Hand of Midas Iconic mod
+Mods.Cranial_Cashback_Mod:
+  $base: Items.IconicWeaponModBase
+  OnAttach: 
+  - Abilities.Cranial_Cashback
+
+# Hand of Midas Iconic mod ability
+Abilities.Cranial_Cashback:
+  $base: Items.IconicWeaponModAbilityBase
+  effectors:
+  - !append-once Effectors.Heal_On_Headshot
+  - !append-once Effectors.Punish_Miss
+  UIData:
+    $type: GameplayLogicPackageUIData
+    localizedDescription: LocKey#MC_gun_iconic_description # iconic description shown in yellow text when hovering over a weapon
+
+# -------------------------------------------------------------------------------------------------------------------------
+
+# Effector to inflict damage on player when they shoot
+Effectors.Punish_Miss:
+  $type: ModifyStatPoolValueEffector
+  prereqRecord: Prereqs.Has_Player_Shot
+  usePercent: False
+  statPoolUpdates: 
+  - $type: StatPoolUpdate
+    statPoolType: BaseStatPools.Health
+    statPoolValue: -20
+
+# Effector to heal player if they hit a headshot
+Effectors.Heal_On_Headshot:
+  $type: ModifyStatPoolValueEffector
+  prereqRecord: Prereqs.Is_Target_Alive_And_Headshot
+  usePercent: False
+  statPoolUpdates: 
+  - $type: StatPoolUpdate
+    statPoolType: BaseStatPools.Health
+    statPoolValue: 80
+
+# -------------------------------------------------------------------------------------------------------------------------
+
+# Prereq to check if the player has shot (bug - currently detects if a player has hit anything, not if shot)
+Prereqs.Has_Player_Shot:
+  $type: gamedataHitPrereq_Record
+  callbackType: HitTriggered
+  ignoreSelfInflictedPressureWave: True
+  isSynchronous: True
+  pipelineStage: PreProcess
+  pipelineType: All
+  prereqClassName: HitOrMissTriggeredPrereq
+  processMiss: True # process shots that miss npcs
+  conditions:
+  - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
+  - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
+
+# Prereq to check if headshot & target is alive and hit with a ranged weapon
+Prereqs.Is_Target_Alive_And_Headshot:
+  $type: gamedataHitPrereq_Record
+  callbackType: HitTriggered
+  ignoreSelfInflictedPressureWave: True
+  isSynchronous: True
+  pipelineStage: Process
+  pipelineType: Damage
+  prereqClassName: HitTriggeredPrereq
+  conditions:
+  - Perks.IsHitTargetAlive_inline2 # hit target is alive (health != 0)
+  - Perks.HitIsBodyPartHead_inline0 # headshot condition
+  - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
+  - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
+  processMiss: False # process shots that hit npcs only
+
+# -------------------------------------------------------------------------------------------------------------------------
+
+# Condition to check if attack type is ranged
+Conditions.Is_Attack_Ranged:
+  $type: gamedataHitPrereqCondition_Record
+  invert: False
+  onlyOncePerShot: True
+  type: Prereqs.AttackType
+  attackType: Ranged
+
+# Condition to check if weapon type is ranged
+Conditions.Is_Weapon_Ranged:
+  $type: gamedataHitPrereqCondition_Record
+  invert: False
+  onlyOncePerShot: True
+  type: Prereqs.WeaponType
+  weaponType: Ranged
+```
+
+Here's a demo for how iconic weapon should behave.
+
+<figure><img src="../../../../../.gitbook/assets/Untitled video - Made with Clipchamp.gif" alt=""><figcaption><p>Heal on headshot demo</p></figcaption></figure>
+
+<figure><img src="../../../../../.gitbook/assets/Untitled video - Made with Clipchamp (1).gif" alt=""><figcaption><p>Damage player on miss demo</p></figcaption></figure>
+
+You are now a certified weapon modder. Pat your self on the back twice, you've done it.
