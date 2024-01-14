@@ -101,7 +101,7 @@ Most materials in Cyberpunk use the `engine\materials\multilayered.mt` material 
 ### multilayered material&#x20;
 
 {% hint style="success" %}
-If you would rather use a textured material, check [here](../../../materials/configuring-materials.md#textured-material).
+If you would rather use a textured material, check [here](../../../materials/configuring-materials/#textured-material).
 {% endhint %}
 
 A multilayered material consists of multiple layers of materials, projected on the mesh through the mlmask: white parts get affected, black parts are blocked out. (Again, for a full explanation, check [here](../../../materials/multilayered/)).&#x20;

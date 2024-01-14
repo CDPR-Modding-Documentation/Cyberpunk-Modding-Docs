@@ -14,7 +14,9 @@ A .mi file **encapsulates** a material in a **reusable** template file, which yo
 
 It is possible to use multiple .mi files in a row. For an example of this, check the player's [skin materials](../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index).
 
-<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Daisy_chain.JPG/1200px-Daisy_chain.JPG" alt=""><figcaption><p>The technical term for doing this is "daisy chaining". (Image: Wikimedia commons)</p></figcaption></figure>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Daisy_chain.JPG/1200px-Daisy_chain.JPG" alt=""><figcaption><p>The technical term for doing this is "daisy chaining". (Image: Wikimedia commons). Caution: Cyclic dependencies <em>will</em> crash your game!</p></figcaption></figure>
+
+For more information of this, you can look at [shaders](../materials/shaders/ "mention") -> [#the-daisy-chain](../materials/shaders/#the-daisy-chain "mention")
 
 ## Why do I need this?
 

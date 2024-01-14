@@ -15,7 +15,7 @@ As much of the information here has been documented in [other guides](../appeara
 
 This page is a part of the [NPV guide](./). It will show you how to use the [provided example project](./#preparation) to create a custom NPC for Cyberpunk 2077, whom you can then spawn with AppearanceMenuMod.
 
-It will give you a brief overview over the control files and tell you how to pull in the right meshes (and appearances). If you're just here for custom hair colours, check  [#creating-your-own-hair-colours](../../../materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") instead.
+It will give you a brief overview over the control files and tell you how to pull in the right meshes (and appearances). If you're just here for custom hair colours, check  [#creating-your-own-hair-colours](../../../materials/configuring-materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") instead.
 
 {% hint style="info" %}
 This guide assumes that&#x20;

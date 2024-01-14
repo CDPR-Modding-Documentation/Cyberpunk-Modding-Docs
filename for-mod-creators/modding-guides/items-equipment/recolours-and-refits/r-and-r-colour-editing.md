@@ -12,7 +12,7 @@ None of this is required for completing this guide, but if you're curious, you c
 
 * Another guide: [changing-materials-colors-and-textures.md](../editing-existing-items/changing-materials-colors-and-textures.md "mention")
 * Theory: [multilayered](../../../materials/multilayered/ "mention")
-* Theory: [configuring-materials.md](../../../materials/configuring-materials.md "mention")&#x20;
+* Theory: [configuring-materials](../../../materials/configuring-materials/ "mention")&#x20;
 
 #### **Assumed level of skill**:&#x20;
 

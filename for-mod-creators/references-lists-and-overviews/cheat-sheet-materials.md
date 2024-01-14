@@ -67,9 +67,18 @@ For further details, see [here](../materials/#textured-material).
 | `base\fx_shaders\holo_mask.mt`                              | Special effect material that transforms a mesh into an hologram. Can use a custom texture for decal and is color controllable. |
 | `base\surfaces\atlases\wood\wood_bare\wood_bare_01_pine.mi` | Basic wood texture, no masks                                                                                                   |
 
-## Cyberspace Material
+## Cyberspace Materials
 
-Works exactly like multilayered, but uses `base\characters\common\cyberspace\silverhand_overlay_cyberspace_mml.mi` instead.
+{% hint style="info" %}
+[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `cyberspace|blackwall > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+{% endhint %}
+
+|                                                                          |                                                                                                                                                                                               |
+| ------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `base\characters\common\cyberspace\silverhand_overlay_cyberspace_mml.mi` | A multilayered material for cyberspace appearances. You can use this as base material to get the Johnny effect.                                                                               |
+| `base\fx_shaders\blackwall_blendable_metal_base.mt`                      | [metal\_base](cheat-sheet-materials.md#textured-materials), but with that fancy blackwall effect that we all know and love. There are blackwall variants of most shaders, check the hint box. |
+
+
 
 ## Metal Materials
 
@@ -79,12 +88,22 @@ Works exactly like multilayered, but uses `base\characters\common\cyberspace\sil
 
 ## Decal materials
 
-|                                                             |                                                                                                                                     |
-| ----------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `base\materials\mesh_decal_gradientmap_recolor_emissive.mt` | no animations support. Supports recolouring (via color picker), emissive (EV) and gradientMaps as well as transparency via masking. |
-| `base\materials\mesh_decal_emissive.mt`                     | animation support. Supports emissive (via EV), recolouring (numeric), and tiling.                                                   |
+{% hint style="info" %}
+[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `decal > .mt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+{% endhint %}
+
+|                                                             |                                                                                                                                                                                             |
+| ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `base\materials\mesh_decal_gradientmap_recolor_emissive.mt` | no animation support. Supports recolouring (via color picker), emissive (EV) and gradientMaps as well as transparency via masking.                                                          |
+| `base\materials\mesh_decal_emissive.mt`                     | animation support. Supports emissive (via EV), recolouring (numeric), and tiling.                                                                                                           |
+| `base\materials\decal_tintable.mt`                          | no animation support, no emissive, but Diffuse, Normal, Roughness and Metalness, and allows different color assignments for R, G and B channels of `TintMaskTexture`. Not used by anything. |
+| `base\materials\mesh_decal_multitinted.mt`                  | unfortunately not used by anything, but supports up to 10 tints! If anyone finds out how the `TintMaskTexture` needs to look, please document!                                              |
 
 ## Emissive Materials
+
+{% hint style="info" %}
+[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `emissive > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+{% endhint %}
 
 See [here](../materials/#emissive-material) how it works and how to configure it.
 
@@ -104,16 +123,24 @@ See [here](../materials/#emissive-material) how it works and how to configure it
 
 ### Blackbody Shaders
 
-Blackbody shaders are used heat. Their colour can be adjusted via the `temperature` parameter.
+{% hint style="info" %}
+[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `blackbody > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+{% endhint %}
 
-| material                                         | description                             |
-| ------------------------------------------------ | --------------------------------------- |
-| `base\fx\shaders\metal_base_blackbody.mt`        |                                         |
-| `base\fx\shaders\blackbodyradiation.mt`          |                                         |
-| `base\fx_shaders\multilayer_blackbody_inject.mt` | A glowing shader with mlmask and -setup |
-| `base\fx\shaders\blackbody_simple.mt`            |                                         |
+Blackbody shaders are used for **heat**. Their colour can be adjusted via the `temperature` parameter.
+
+| material                                         | description                                                         |
+| ------------------------------------------------ | ------------------------------------------------------------------- |
+| `base\fx\shaders\metal_base_blackbody.mt`        | A PBR temperature shader. Configured with numeric values.           |
+| `base\fx\shaders\blackbodyradiation.mt`          | A temperature shader with smoke effects                             |
+| `base\fx_shaders\multilayer_blackbody_inject.mt` | A temperature shader with mlmask and -setup                         |
+| `base\fx\shaders\blackbody_simple.mt`            | A temperature shader with a texture and a numeric temperature value |
 
 ## Glass
+
+{% hint style="info" %}
+[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `glass > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+{% endhint %}
 
 For more details on glass materials and instructions on how to configure them, see [here](../materials/#glass).&#x20;
 

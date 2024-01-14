@@ -2,17 +2,18 @@
 
 #### Summary
 
-Last documented edit: January 06 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit**: January 14 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page lists various properties of the player head. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.&#x20;
 
-Any links will lead you to additional context.
+{% hint style="info" %}
+You can find much additional information about the player head under [npv-preparing-the-head-in-blender.md](../../modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention")&#x20;
+{% endhint %}
 
 ### Wait, this isn't what I'm looking for!
 
-If you want to [edit the player's head](../../modding-guides/npcs/a-new-head-for-v.md), you need [meshes](../../files-and-what-they-do/3d-objects-.mesh-files/) and [morphtargets](../../3d-modelling/morphtargets.md).&#x20;
-
-If you want to make a custom NPC, check [npv-v-as-custom-npc](../../modding-guides/npcs/npv-v-as-custom-npc/ "mention"). The subsection [npv-preparing-the-head-in-blender.md](../../modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention") contains much additional information about the player head.
+* If you want to [edit the player's head](../../modding-guides/npcs/a-new-head-for-v.md), you need [meshes](../../files-and-what-they-do/3d-objects-.mesh-files/) and [morphtargets](../../3d-modelling/morphtargets.md).&#x20;
+* If you want to make a custom NPC, check [npv-v-as-custom-npc](../../modding-guides/npcs/npv-v-as-custom-npc/ "mention")
 
 ***
 
@@ -67,7 +68,7 @@ Skin materials are defined in the base head file:&#x20;
 
 <table><thead><tr><th width="251"></th><th></th></tr></thead><tbody><tr><td>female body gender</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\h0_000_pwa_c__basehead.mesh</code></td></tr><tr><td>male body gender</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\h0_000_pma_c__basehead.mesh</code></td></tr></tbody></table>
 
-You can find the [definitions](../../files-and-what-they-do/3d-objects-.mesh-files/#step-3-material-definition) in the localMaterialBuffer. Each material overrides the following properties locally:
+You can find the [definitions](../../files-and-what-they-do/3d-objects-.mesh-files/#step-3-material-definition) in the localMaterialBuffer. Each material overrides the following [properties](../../materials/configuring-materials/#checking-material-properties) locally:
 
 * Normal (bump/height map)
 * Albedo (diffuse/complexion)
@@ -106,5 +107,7 @@ Link: [Reference images on imgur](https://imgur.com/a/NlbCHYK)
 
 ## Eyeliner and kohl
 
-**to be done**
+{% hint style="info" %}
+To be done. Are you bored (and potentially have OCD)? Please get in touch via Discord!
+{% endhint %}
 

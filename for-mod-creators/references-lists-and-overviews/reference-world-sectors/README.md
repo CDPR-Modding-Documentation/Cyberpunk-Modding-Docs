@@ -4,7 +4,13 @@ description: A list of interesting locations and their sector files
 
 # Reference: World Sectors
 
-Other existing resources:
+#### Summary
+
+**Last documented edit:** Jan 14 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page lists interesting world sectors. If you want to learn how to edit them instead, check [world-editing](../../modding-guides/world-editing/ "mention") in the Modding Guides section.
+
+#### Other existing resources:
 
 <table><thead><tr><th width="290"></th><th></th></tr></thead><tbody><tr><td><a href="https://wiki.redmodding.org/cyber-engine-tweaks/teleportation-locations">CET wiki</a></td><td>List of interesting locations for teleporting</td></tr><tr><td><a href="https://discord.com/invite/47jV2rNdgn">AMM DIscord</a></td><td>An entire channel dedicated to locations</td></tr></tbody></table>
 

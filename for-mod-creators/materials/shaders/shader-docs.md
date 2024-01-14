@@ -1,5 +1,7 @@
 # Shader Docs
 
+This section gives you an **overview** of shaders and their properties. For a detailed explanation, see [configuring-materials](../configuring-materials/ "mention").
+
 ## Understanding and leveraging RED4 shaders
 
 We do not have official documentation from CDPR about how shaders are used by artists. Thus any 2d/3d artist is looking at hundreds of black-box shaders with unknown usage. This is extremely demotivating for anyone looking to bring new assets to life with REDengine. The following list of tables is an attempt to make life easier for artists by using the community to document commonly used shaders.

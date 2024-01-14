@@ -6,24 +6,21 @@ description: Overview of hair related things
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created by @manavortex**\
-**Published November 04 2022**\
-**Updated February 3 2023**
+**Published:** November 04 2022 by @manavortex\
+**Last documented update:** January 14 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-{% hint style="info" %}
-If you want to change an NPC's hair instead, you can check [this](../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair) or [this](../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components) guide.
-{% endhint %}
+This page will give you an overview for working with Cyberpunk's hair material.&#x20;
 
-{% hint style="success" %}
-To look up hairstyles in more detail, you can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker).
-{% endhint %}
+* For a more detailed explanation of the hair shader, see [cyberpunk-hair-material.md](../../materials/configuring-materials/cyberpunk-hair-material.md "mention")
+* If you want to change an NPC's hair instead, you can check [this](../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair) or [this](../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components) guide.
+* To look up hairstyles in more detail, you can use [NoraLee's excellent NPV part picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker)
 
 ## Name of meshes by index
 
 {% hint style="danger" %}
 These names correspond to the `mesh` files.&#x20;
 
-* To find a hair's .app file, search the correct mesh in Wolvenkit, then right-click on it and select "find files using this".&#x20;
+* To find a hair's .app file, [search ](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files)the correct mesh in Wolvenkit, then right-click on it and select "find files using this".&#x20;
 * To find a hair's root entity, repeat the same process with its .app file
 {% endhint %}
 
@@ -39,7 +36,7 @@ List has been confirmed working before 1.6, but might need updating (especially 
 
 ## Hair .ent files
 
-Hairs and all their components are assigned and defined via [.ent files](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity). You can find them here:
+Hairs and all their components are assigned and defined via [.ent files](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity). You can find them in the following folder:
 
 ```
 base\characters\head\player_base_heads\appearances\entity\hairs 
