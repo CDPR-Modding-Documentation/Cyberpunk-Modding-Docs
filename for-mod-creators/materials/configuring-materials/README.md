@@ -51,7 +51,7 @@ The interesting bit is on the right side of the arrow in the picture above, sinc
 
 ## Transparency
 
-Whether or not a material can be transparent depends on the shader, e.g. `metal_base.remt` supports this via the `EnableMask` property (see [#shared-properties](./#shared-properties "mention")).
+Whether or not a material can be transparent depends on the shader. Transparency can be switched on/off via the `EnableMask` property, or clamped via `AlphaThreshold` (see [#shared-properties](./#shared-properties "mention")).
 
 ## Glow / Light
 
@@ -71,7 +71,7 @@ Properties with texture paths can end in Texture, e.g. `BaseColorTexture` instea
 As this is a horrible mess, it is easiest to [look up the properties in the shader](./#checking-material-properties) if you're not certain.
 {% endhint %}
 
-<table><thead><tr><th width="236">Property name(s)</th><th>Explanation</th></tr></thead><tbody><tr><td>LayerTile<br>LayerScale</td><td>Material scaling (zoom on surface)<br>> 1 zooms in, >1 zooms out</td></tr><tr><td>Roughness<br>Rough</td><td>Whether a surface is rough or smooth. <strong>White</strong>: full, <strong>Black</strong>: none</td></tr><tr><td>Metalness<br>Metallic</td><td>Whether a surface is metallic or not. White: full, Black: none</td></tr><tr><td>Normal<br>GlobalNormal</td><td>A material's <a href="../../modding-guides/textures-and-luts/self-made-normal-maps/">bump map</a>. Yellow normal maps are called <em>swizzled</em>.</td></tr><tr><td>BaseColor<br>Diffuse<br>Albedo</td><td>A material's base colour value. This is usually a colour.</td></tr><tr><td>EnableMask</td><td>Should the material enable masking? (will use the diffuse texture's alpha channel)</td></tr><tr><td>Mask</td><td>A mask (transparency) texture that works like a layer mask in Photoshop.</td></tr></tbody></table>
+<table><thead><tr><th width="236">Property name(s)</th><th>Explanation</th></tr></thead><tbody><tr><td>LayerTile<br>LayerScale</td><td>Material scaling (zoom on surface)<br>> 1 zooms in, >1 zooms out</td></tr><tr><td>Roughness<br>Rough</td><td>Whether a surface is rough or smooth. <strong>White</strong>: full, <strong>Black</strong>: none</td></tr><tr><td>Metalness<br>Metallic</td><td>Whether a surface is metallic or not. White: full, Black: none</td></tr><tr><td>Normal<br>GlobalNormal</td><td>A material's <a href="../../modding-guides/textures-and-luts/self-made-normal-maps/">bump map</a>. Yellow normal maps are called <em>swizzled</em>.</td></tr><tr><td>BaseColor<br>Diffuse<br>Albedo</td><td>A material's base colour value. This is usually a colour.</td></tr><tr><td>AlphaThreshold</td><td>Clamps transparency. (TODO: how exactly?)</td></tr><tr><td>EnableMask</td><td>Should the material enable masking? (will use the diffuse texture's alpha channel)</td></tr><tr><td>Mask</td><td>A mask (transparency) texture that works like a layer mask in Photoshop.</td></tr></tbody></table>
 
 ## Roughness/Metalness
 
