@@ -114,6 +114,7 @@ See [here](../materials/#emissive-material) how it works and how to configure it
 | `base\fx\shaders\neon_tubes.mt`                                                                             | A glowing shader with color parameter                                                                                                                              |
 | `base\fx\shaders\signages.mt`                                                                               | The standard neon for advertising fonts in Night City. Comes in many colours, can be customized via textures and gradients. Check "city\_deco\_font" for examples. |
 | `base\fx\shaders\hologram_two_sided.mt`                                                                     | half-transparent holo material, allows three colours to tint it                                                                                                    |
+| `base\vehicles\standard\v_standard3_militech_hellhound\entities\meshes\textures\max_tac_stripe_01.mi`       | Use it with any texture for a cool rotating glow shader (it's fun)                                                                                                 |
 
 ### Holo Shaders
 
