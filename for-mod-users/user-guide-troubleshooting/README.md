@@ -16,9 +16,10 @@ Did you know?  You can us your browser's search function (Ctrl+F) to quickly fin
 Before you start debugging, make sure that&#x20;
 
 * your **graphics driver** is up-to-date
-* your [**Windows**](https://support.microsoft.com/en-us/windows/get-the-latest-windows-update-7d20e88c-0568-483a-37bc-c3885390d212) is up-to-date (no, _really_)
+* your [**Windows**](https://support.microsoft.com/en-us/windows/get-the-latest-windows-update-7d20e88c-0568-483a-37bc-c3885390d212) is up-to-date (no, _really_) and that you are at least on Windows 10
 * you have the most recent version of [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.3-windows-x64-installer) installed
 * you have [Visual C++ Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed ([direct download](https://aka.ms/vs/17/release/vc\_redist.x64.exe), Microsoft)
+* your game is running from an SSD (Solid State Disk) rather than a HDD
 {% endhint %}
 
 {% hint style="warning" %}
