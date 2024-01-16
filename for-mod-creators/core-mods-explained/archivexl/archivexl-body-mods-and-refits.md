@@ -38,6 +38,14 @@ Add a **tag** with the exact name of your body in this component's tag array (fo
 Add a new component (of any type) and give it the following name: \
 `Body:NewBody`
 
+{% hint style="warning" %}
+If you edit the leg component for female V, you must change both the regular and the flat feet component:\
+`base\characters\common\player_base_bodies\appearances\l0_000_base__full.app`\
+`base\characters\common\player_base_bodies\appearances\l0_000_base__cs_flat.app`
+{% endhint %}
+
+#### Test
+
 After packing your project, [check if the body tag registers](archivexl-body-mods-and-refits.md#checking-the-current-body-mod) by running the CET command.&#x20;
 
 If yes, you're good to go!
