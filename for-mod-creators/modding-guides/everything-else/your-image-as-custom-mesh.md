@@ -6,20 +6,22 @@ description: Guide to creating neon signs from 2d textures
 
 ## **Summary**
 
-**Created by @manavortex**\
-**Published August 2023**
+**Published August 2023 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update**: Jan 17 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-#### **This guide uses the following tools and versions:**
+This guide will take you through the steps of **replacing** one of Cyberpunk's neon signs with a custom mesh.&#x20;
 
+### Wait, that's not what I want!
 
+* To learn how material assignment works, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention") and its sub-page [submeshes-materials-and-chunks.md](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention")
+* To learn more on how materials in general work,  read [materials](../../materials/ "mention")&#x20;
+* For a guide on changing an existing mesh, read [changing-materials-colors-and-textures.md](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
 
-<table><thead><tr><th width="199"></th><th></th></tr></thead><tbody><tr><td><a href="https://inkscape.org/release/inkscape-1.3/">Inkscape</a> 1.3</td><td>Converting your picture into an svg which you can then import into Blender to create a mesh</td></tr><tr><td><a href="https://www.blender.org/download/releases/3-6/">Blender</a> 3.6</td><td>Converting your SVG to a 3d object that you can import into Cyberpunk. You also need the <a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases">WKit Plugin</a>.</td></tr><tr><td><a href="https://github.com/WolvenKit/Wolvenkit/releases">Wolvenkit</a> (recent)</td><td>converting your mesh to an in-game-item</td></tr></tbody></table>
+## Prerequisites
 
+You need the following software:
 
-
-{% hint style="info" %}
-This guide will take you through the steps of replacing one of Cyberpunk's neon signs with a custom mesh. If you want to add custom props to the game, you can check out the corresponding [AMM guide](custom-props.md) after you're done with this one!
-{% endhint %}
+<table><thead><tr><th width="199">Software</th><th>What's it for?</th></tr></thead><tbody><tr><td><a href="https://inkscape.org/release/inkscape-1.3/">Inkscape</a> 1.3</td><td>Converting your picture into an svg which you can then import into Blender to create a mesh</td></tr><tr><td><a href="https://github.com/WolvenKit/Wolvenkit/releases">Wolvenkit</a> (recent)</td><td>converting your mesh to an in-game-item</td></tr><tr><td><a href="https://www.blender.org/download/releases/3-6/">Blender</a> 3.6</td><td>Converting your SVG to a 3d object that you can import into Cyberpunk. </td></tr><tr><td><a data-mention href="../../modding-tools/wolvenkit-blender-io-suite/">wolvenkit-blender-io-suite</a></td><td>Exporting from Blender to Cyberpunk </td></tr></tbody></table>
 
 ## Step 0: Make or find an image
 
@@ -27,10 +29,8 @@ Start with an image. We're aiming for our own neon sign here, and we'll aassign 
 
 <figure><img src="../../../.gitbook/assets/pacman.png" alt=""><figcaption></figcaption></figure>
 
-
-
-{% hint style="info" %}
-Make sure that your image is as clean as possible.&#x20;
+{% hint style="danger" %}
+Make sure that your image is as clean as possible. I can't stress this enough – any rough or fuzzy edges will result in extra geometry, making the cleanup in Blender much harder.
 {% endhint %}
 
 ## Step 1: Convert to SVG
@@ -146,19 +146,19 @@ You can obviously use any kind of mesh or material here!
 I'll be replacing `base\environment\decoration\advertising\signage\sex_shop_neon_sign\sex_shop_neon_sign_b.mesh`, the heart-shaped ad banner.&#x20;
 
 1. Decide on a mesh and add it to your project.
-2. [Export the mesh](../../3d-modelling/exporting-and-importing-meshes/)
-3. In the project explorer, right-click on the exported file (`sex_shop_neon_sign_b.glb`) and open it in the Windows Explorer. We will now overwrite this file in Blender.
+2. [Export the mesh from Wolvenkit](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit)
+3. In the project explorer, right-click on the exported file (`sex_shop_neon_sign_b.glb`) and select **Show in Windows Explorer**, because we will now overwrite this file in Blender.
 
 ## Exporting
 
 In Blender,
 
 1. select all the meshes that you want included (in Object Mode)
-2. use the [Cyberpunk Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) to overwrite the file from the previous step.&#x20;
+2. use the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention")to [export into](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender) the file from the previous step.&#x20;
 
 <figure><img src="../../../.gitbook/assets/custom_neon_export.png" alt=""><figcaption></figcaption></figure>
 
-In Wolvenkit, use the Import Tool to import `sex_shop_neon_sign_b.glb`. The preview in the `File Information` panel should update.
+In Wolvenkit, use the [Import Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools#import-tool "mention") to import `sex_shop_neon_sign_b.glb`. The preview in the `File Information` panel should update.
 
 ## Assigning Materials
 
@@ -170,22 +170,28 @@ Open `sex_shop_neon_sign_b.mesh` in Wolvenkit and open the appearance `on` (as t
 
 ### ChunkMaterials
 
-At the very top of the mesh, we'll need to change the chunk masks as follows:
+{% hint style="info" %}
+To learn more about this, check [submeshes-materials-and-chunks.md](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"). This is not necessary for completing this guide.
+{% endhint %}
+
+At the very top of the mesh, we'll need to change the `chunkMaterials` as follows:
 
 <figure><img src="../../../.gitbook/assets/custom_neon_chunkmasks.png" alt=""><figcaption></figcaption></figure>
 
 ### MaterialEntries
 
-Now, we register the materials:&#x20;
+Now, we **define** the materials:&#x20;
 
 1. Find the array `materialEntries`&#x20;
 2. Add four new entries (or duplicate one four times, or…)
-3. Name them according to the entries in the ChunkMaterials step
-4. Make sure that their indices match the array positions
+3. Name each item according to the entries in the previous step
+4. Make sure that their **`index`** property is unique and corresponds to their array position.
+
+<figure><img src="../../../.gitbook/assets/custom_neon_add_materials.png" alt=""><figcaption><p>The left side of this screenshot</p></figcaption></figure>
 
 ### LocalMaterials
 
-… and finally, we actually add the materials.
+… and finally, we actually **add the materials**.
 
 1. Find and expand the array `localMaterialBuffer` and its child `materials`
 2. Copy the second entry, `sex_shop_neon_sign_emissive_red_on` via right-click menu
@@ -194,14 +200,30 @@ Now, we register the materials:&#x20;
 5. In the new material entries, find the property `ColorOneStart` and change it in the side panel.&#x20;
 6. Repeat for each material, then save the mesh.
 
-<figure><img src="../../../.gitbook/assets/custom_neon_add_materials.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/custom_neon_add_materials.png" alt=""><figcaption><p>The right side of this screenshot</p></figcaption></figure>
 
-## Let's pack the project!
+## Testing!
 
-In Wolvenkit's top bar, select `Install` and then boot up Cyberpunk. Let's hit up Jig Jig Street to look at our sign…
+In Wolvenkit's top bar, select [`Install`](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install) and then boot up Cyberpunk.&#x20;
+
+Let's hit up Jig Jig Street to look at our sign…
 
 <figure><img src="../../../.gitbook/assets/custom_neon_jigjigstreet.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-Please remember that **before sharing your custom neon**, you **have** to change the paths, or you'll conflict with the next modder! You can find a full guide on the fastest way to do that [here](moving-and-renaming-in-existing-projects.md).
+Please remember that you are currently replacing all heart neon signs in the entire game! Before sharing your custom neon, consider making [custom-props.md](custom-props.md "mention")!
 {% endhint %}
+
+Congratulations! If everything works, you just made a mod!&#x20;
+
+## Troubleshooting
+
+There is really very little that can go wrong here if you closely follow this guide.
+
+### Something is wrong with my 3d object!
+
+If you can't export your mesh from Blender or import it into Wolvenkit, make a cube (right-click into the viewport, **`Add`**, select `Cube`.  Before you get hung up on this step and burn out, let's add a few cubes to the game to give you a success. After that, you can hit us up on [Discord](https://discord.gg/redmodding) in the `#textures-and-models` so we can fix your mesh.
+
+### Something else is wrong!
+
+Check the [troubleshooting-your-mesh-edits.md](../../3d-modelling/troubleshooting-your-mesh-edits.md "mention") pages or find us on [discord](https://discord.gg/redmodding). :)
