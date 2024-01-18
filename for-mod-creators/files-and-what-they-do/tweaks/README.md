@@ -21,7 +21,7 @@ To create a new gameplay item, mod developers must [add](../../modding-guides/it
 
 ## Browsing the TweakDB
 
-See the child page [#browsing-the-tweakdb](./#browsing-the-tweakdb "mention")
+See the child page [browsing-the-tweak-database.md](browsing-the-tweak-database.md "mention")
 
 ## TweakDB entries
 
