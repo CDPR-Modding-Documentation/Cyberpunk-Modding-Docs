@@ -55,7 +55,7 @@ I go into as much detail as I can, but try to be familiar with the project explo
 Install these to your game before starting:
 
 * [Virtual Car Dealer](https://www.nexusmods.com/cyberpunk2077/mods/4454)
-* [TweakXL](https://github.com/psiberx/cp2077-tweak-xl)
+* [TweakXL](https://github.com/psiberx/cp2077-tweak-xl) (required, without it you won't be able to load Vehicle tweak at all)
 * [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198)
 * [Material and Texture override](https://www.nexusmods.com/cyberpunk2077/mods/5266) (unknown if required after 2077 version 2.0+)
 

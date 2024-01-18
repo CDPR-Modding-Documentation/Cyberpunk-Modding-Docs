@@ -6,6 +6,10 @@ This page will show you how to create the base files that will tell your game ab
 
 * [ ] [Create a new project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project) in **WolvenKit** (wKit).
 
+{% hint style="info" %}
+Make sure you installed TweakXL.
+{% endhint %}
+
 ### Create a new tweakXL `.yaml` file
 
 {% hint style="info" %}
