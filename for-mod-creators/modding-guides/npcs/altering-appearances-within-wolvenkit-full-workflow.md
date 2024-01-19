@@ -44,7 +44,7 @@ The first step in this process is going to be locating the .app file. Most main 
 
 For us, we'll be wanting to locate victor\_vektor.app, which is in the main\_npc folder I listed earlier. Once we add this file to our project and open it, we will see an array named "appearances".
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 All of the different appearances for Victor are located in this array. Upon expanding it, we see that he only has three.
 
