@@ -2,7 +2,7 @@
 description: No more replacers! Add your own gear with TweakXL and ArchiveXL
 ---
 
-# Adding new items
+# ItemAdditions: Making new items
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -17,7 +17,7 @@ This guide will walk you through **adding your own items** to Cyberpunk 2077, wh
 
 | Tool                                                                                         | latest version tested | oldest version tested |
 | -------------------------------------------------------------------------------------------- | --------------------- | --------------------- |
-| [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases)                | 8.11.1                | 8.9.0                 |
+| [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases)                | 8.12.1                | 8.9.0                 |
 | [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197)                                 | 1.5.2                 | 1.1.4                 |
 | [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198)                               | 1.8.1                 | 1.4.3                 |
 | [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)                                 | 1.18.0                | 1.12.0                |

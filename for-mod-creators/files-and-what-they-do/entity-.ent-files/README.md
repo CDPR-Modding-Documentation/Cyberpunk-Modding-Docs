@@ -47,6 +47,10 @@ From ArchiveXL item additions, this kind of file is usually called a **root enti
 
 ## What are suffixes?
 
+{% hint style="info" %}
+For more information on this (and for a better way of implementing this), check [archivexl-suffixes-and-substitutions.md](../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention")
+{% endhint %}
+
 In a [root\_entity file](./#root-entity), you can give the game a list of appearances and have them mapped to an [.app file](broken-reference) by entry name. While that's pretty good already, have you ever wanted to be more specific — for example, "for a male character, use this appearance, but for a female use this other one?"
 
 This is where suffixes come in. You append them to an appearance's name in the [root\_entity](./#root-entity), and the game will pick the correct appearance (and the correct[ app file](../appearance-.app-files.md), and the correct mesh!) based on the best match.
@@ -82,29 +86,5 @@ appearanceSuffixes: []
 ## Which suffixes exist?
 
 {% hint style="info" %}
-For a full list, see For a more in-depth list, check (TODO: Psi's github?)
+For a full list, check [#which-suffixes-exist](../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#which-suffixes-exist "mention")
 {% endhint %}
-
-For clothing items, the following suffixes are relevant:
-
-<table><thead><tr><th width="421">Suffix</th><th>Explanation</th></tr></thead><tbody><tr><td><code>itemsFactoryAppearanceSuffix.Gender</code></td><td>This item is gendered<br>When resolving the appearance name via <code>rootentity.ent</code>, the game will look for <code>appearanceName&#x26;Female</code> and <code>appearanceName&#x26;Male</code>.</td></tr><tr><td><code>itemsFactoryAppearanceSuffix.Camera</code></td><td>This item has special rules for first and third person camera<br>When resolving the appearance name via <code>rootentity.ent</code>, the game will look for <code>appearanceName&#x26;FPP</code> and <code>appearanceName&#x26;TPP</code>.</td></tr><tr><td><code>itemsFactoryAppearanceSuffix.Partial</code></td><td>If the current item has <code>hide_T1part</code> part and slot <code>OuterChest</code> is not hidden, will search <code>rootentity.ent</code> for<code>&#x26;Full</code> or <code>&#x26;Part</code></td></tr><tr><td><code>itemsFactoryAppearanceSuffix.HairType</code></td><td>Defines how your item will look if a certain hair type is loaded (e.g., hide the back half of a bandana for long hair).<br>When resolving the appearance name via <code>rootentity.ent</code>, the game will look for <code>&#x26;Short</code>, <code>&#x26;Long</code>, <code>&#x26;Dreads</code>, <code>&#x26;Buzz</code>, <code>&#x26;Bald</code></td></tr></tbody></table>
-
-
-
-### Suffix load order
-
-1. the base appearance (with no suffix)
-2. the most specific suffix collection it can find
-
-#### Example:&#x20;
-
-V has a female body gender and you're in photo mode (third person camera). Your base appearance is called `appearance_`.
-
-| full appearance name                                                                                                                    |                                                                      |
-| --------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
-| `appearance_`                                                                                                                           | Found first, then ignored because a more specific appearance exists. |
-| <p><code>appearance_&#x26;Male</code><br><code>appearance_&#x26;Male&#x26;FPP</code><br><code>appearance_&#x26;Male&#x26;TPP</code></p> | Ignored: V's body gender isn't male                                  |
-| `appearance_&Female`                                                                                                                    | ignored: a better match exists                                       |
-| `appearance_&Female&FPP`                                                                                                                | ignored: you are not in first person camera                          |
-| `appearance_&Female&TPP`                                                                                                                | best match! The game will use this one!                              |
-
