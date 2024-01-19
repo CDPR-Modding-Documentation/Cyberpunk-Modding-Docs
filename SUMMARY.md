@@ -120,6 +120,7 @@
   * [Textures: .xbm files](for-mod-creators/files-and-what-they-do/textures-.xbm-files.md)
   * [Re-using materials: .mi](for-mod-creators/files-and-what-they-do/re-using-materials-.mi.md)
   * [The whole world: .streamingsector](for-mod-creators/files-and-what-they-do/the-whole-world-.streamingsector.md)
+  * [Occluders, light, and light blocking](for-mod-creators/files-and-what-they-do/occluders-light-and-light-blocking.md)
   * [Quests: facts and files](for-mod-creators/files-and-what-they-do/quests-facts-and-files.md)
   * [TweakDB: Game database](for-mod-creators/files-and-what-they-do/tweaks/README.md)
     * [Browsing the tweak database](for-mod-creators/files-and-what-they-do/tweaks/browsing-the-tweak-database.md)
