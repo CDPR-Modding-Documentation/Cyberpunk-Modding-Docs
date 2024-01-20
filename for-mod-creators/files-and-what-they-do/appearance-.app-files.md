@@ -52,6 +52,14 @@ Overrides component definitions via name. They can be defined in the appearance'
 
 You can use them to change the appearance or visibility of components outside of the current .app file (for usage instructions, see [#partsoverrides-changing-other-meshes](../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-changing-other-meshes "mention")).&#x20;
 
+{% hint style="warning" %}
+You can't un-hide something via partsOverrides — you'll have to use [custom tags](../core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags) for this.
+{% endhint %}
+
+{% hint style="info" %}
+If you leave the `depotPath` empty, then the component override will be handled by ArchiveXL. For example, the base game isn't smart enough to omit an empty or unchanged mesh appearance name, overwriting your dynamic variants if you use them together with partsOverrides.
+{% endhint %}
+
 ## commonCookData
 
 To save a few processing cycles, CDPR doesn't evaluate .apps on load, but instead keeps a pre-cooked cache under `base\cookedappearances`. CommonCookData is the lookup path for such a file. As long as the file in question exists and isn't empty, your changes might not register, or components that you removed will still be displayed.

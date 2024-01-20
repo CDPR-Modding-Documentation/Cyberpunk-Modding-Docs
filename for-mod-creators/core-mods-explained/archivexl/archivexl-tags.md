@@ -52,13 +52,15 @@ Please keep in mind that you need to add those to the [.app file](../../files-an
 
 ## Adding custom tags
 
-If you want to add custom tags, you can do that **in your `.xl` file**. This is how you can for example un-hide hidden components:
+If you want to add custom tags, you can do that **in your `.xl` file**. This is how you can for example un-hide hidden components, or hide components without making use of [partsOverrides](../../files-and-what-they-do/appearance-.app-files.md#partsoverrides):
 
 ```
 overrides:
   tags:
     my_custom_unhiding_tag:
       my_hidden_component_name: {show: [0, 1, 2, 3]}
+    my_HideSeamfix:
+      t0_000_pma_base__full_seamfix: {hide: [0, 1, 2, 3]}
 ```
 
 Simply add the tag to your appearance's tags array near the bottom of the individual entries.
