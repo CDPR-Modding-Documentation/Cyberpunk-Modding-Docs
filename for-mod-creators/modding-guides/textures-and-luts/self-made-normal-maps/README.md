@@ -10,13 +10,22 @@ description: How to create normal maps (bumpmaps) with Blender
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Published** January 06 2023 by @manavortex&#x20;
+**Published** January 06 2023 by @manavortex \
+**Last documented update:** January 20 2024 by @manavortex&#x20;
 
-**Last documented update:** January 06 2024 by @manavortex&#x20;
+This guide will teach you how to create a custom normal map.
+
+### Wait, this isn't what I want!
+
+* For a guide on Cyberpunk materials in Blender, see [cyberpunk-shaders-in-blender.md](../../../materials/cyberpunk-shaders-in-blender.md "mention")
+* If you want to create a `.mlmask` instead, see [custom-multilayermasks.md](../custom-multilayermasks.md "mention")
+* Otherwise, you can use the wiki's search function — it uses an LLM and is actually quite useful.
+
+## Prerequisites
 
 |                     |                                                                                                                                                                                                                          |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Version             | [Blender](https://www.blender.org/download/)>= 3.3 (working on 4.0)                                                                                                                                                      |
+| Version             | [Blender](https://www.blender.org/download/)>= 3.6 (working on 4.0)                                                                                                                                                      |
 | Assumed skill level | <ul><li>You know what a <a href="https://en.wikipedia.org/wiki/Normal_mapping">normal map</a> is</li><li>You're able to draw stick figures</li><li>You are not afraid of Blender</li><li>You know how to read.</li></ul> |
 
 {% hint style="info" %}
@@ -26,6 +35,8 @@ If you don't have Photoshop, [Photopea](https://www.photopea.com/) offers almost
 {% hint style="info" %}
 For a free tool for faster normal baking, check out [xnormal](https://xnormal.net/).
 {% endhint %}
+
+
 
 ## Step 0: Preparing the viewport
 

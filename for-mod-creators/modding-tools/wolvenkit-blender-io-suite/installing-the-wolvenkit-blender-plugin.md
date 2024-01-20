@@ -14,16 +14,33 @@ If you never installed a previous version of the plugin, you can go straight to 
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_uninstall.png" alt=""><figcaption></figcaption></figure>
 
-2. Click the `Remove` button
-   * **OR** find the folder specified by the `File` attribute on your disk and delete it. It'll usually be something like&#x20;
-3. Close and re-open Blender
+Complete either of the options below:
+
+#### Click the  `Remove` button
+
+The build-in Blender way. Should work. If it doesn't check the second option
+
+#### Delete the files on your disk
+
+Check the plugin's `file` entry. It will usually be something like this:
+
+```
+%APPDATA%\Blender Foundation\Blender\4.0\scripts\addons\i_scene_cp77_gltf
+```
+
+Navigate there with your Windows Explorer (Hotkey: `Windows+R`, paste the path above after changing your Blender version), and delete everything — either the entire folder, or all files inside.
+
+{% hint style="success" %}
+Optional: Close and re-open Blender
+{% endhint %}
 
 ## Step 1: Install the plugin
 
 Download the latest version of the plugin from **github:**&#x20;
 
-1. On the [releases](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) page, scroll all the way down to the **Assets** section
-2. Download the zip file with the plugin:
+1. On the [releases](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) page, find the most recent release
+2. Scroll past the change notes to the **Assets** section
+3. Download the zip file with the plugin:
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_download.png" alt=""><figcaption><p>Do not download anything called "Source code", unless you know what you're doing</p></figcaption></figure>
 
@@ -35,6 +52,10 @@ Download the latest version of the plugin from **github:**&#x20;
 5. Click the "Install" button and select the zip file you downloaded in step 2
 
 ## Step 2: Enable the plugin
+
+{% hint style="info" %}
+You only need to do this if you never installed the plugin before.
+{% endhint %}
 
 After you have successfully installed the plugin, you can now use the search bar to find it:
 
