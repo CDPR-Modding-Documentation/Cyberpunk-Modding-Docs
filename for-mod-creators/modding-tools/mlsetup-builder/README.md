@@ -6,11 +6,22 @@ description: The tool of your choice for editing multilayered materials
 
 ### Summary
 
+**Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Jan 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
 This page will teach you how to download and configure **MLSetupBuilder**, the tool of choice to edit multilayered materials in Cyberpunk.&#x20;
 
-You can learn more about [multilayered](../../materials/multilayered/ "mention") at the link — at the top of the page, you will find links to several hands-on guides.
-
 At the bottom of the page, you will find [#video-guides](./#video-guides "mention"). Keep in mind that they are outdated.
+
+{% hint style="info" %}
+MLSB 1.6.7 does **not** include a full material preview. The 3d view will only show you which parts of a mesh are affected by your material. If you want to preview a material in colour, you'll have to do this in Blender — use the [wolvenkit-blender-io-suite](../wolvenkit-blender-io-suite/ "mention")'s [mesh import](../wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes).
+{% endhint %}
+
+### Wait, that's not what I want!
+
+* To learn more about [multilayered](../../materials/multilayered/ "mention"), check the link
+* To create your own mlmask, check [custom-multilayermasks.md](../../modding-guides/textures-and-luts/custom-multilayermasks.md "mention")
+* To create your own normal map, check [self-made-normal-maps](../../modding-guides/textures-and-luts/self-made-normal-maps/ "mention")
 
 ## Introduction: What is MLSB?
 

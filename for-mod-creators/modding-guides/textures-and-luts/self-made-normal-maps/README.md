@@ -4,10 +4,6 @@ description: How to create normal maps (bumpmaps) with Blender
 
 # Self-made normal maps
 
-### Other guides about this:&#x20;
-
-[Google Doc](https://drive.google.com/file/d/11Z-SYF28nVpF\_ZbkIJ\_KHCetJK7EcT\_X/view) by Тима (Teem)#3118&#x20;
-
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published** January 06 2023 by @manavortex \
@@ -17,6 +13,7 @@ This guide will teach you how to create a custom normal map.
 
 ### Wait, this isn't what I want!
 
+* For a different guide about this, check this [Google Doc](https://drive.google.com/file/d/11Z-SYF28nVpF\_ZbkIJ\_KHCetJK7EcT\_X/view) by Тима (Teem)#3118&#x20;
 * For a guide on Cyberpunk materials in Blender, see [cyberpunk-shaders-in-blender.md](../../../materials/cyberpunk-shaders-in-blender.md "mention")
 * If you want to create a `.mlmask` instead, see [custom-multilayermasks.md](../custom-multilayermasks.md "mention")
 * Otherwise, you can use the wiki's search function — it uses an LLM and is actually quite useful.
@@ -162,6 +159,10 @@ The high poly mesh needs to be **completely covered** by the low poly one, like 
 
 ## Step 5: Baking
 
+{% hint style="info" %}
+If you're unable to shake a normal map from this process, you might have to resort to Photoshop. (If you don't have it, [photopea.com](https://www.photopea.com/) offers almost the same features for free).
+{% endhint %}
+
 Switch back to Object Mode.
 
 {% hint style="danger" %}
@@ -198,6 +199,23 @@ If everything went well, the image editor on the bottom left will change and dis
 <figure><img src="../../../../.gitbook/assets/normals_a_good_result (1).png" alt=""><figcaption><p>A normal map with no artifacts or distortions: this is the kind of result we want.</p></figcaption></figure>
 
 You can export the image via the hamburger menu in the image editor (bottom left panel of the screenshot).
+
+## Step 6: No baking, only photoshop
+
+{% hint style="info" %}
+If you don't have Photoshop, [photopea.com](https://www.photopea.com/) offers almost the same features for free.
+{% endhint %}
+
+So your baking process failed horribly and you're frustrated. Fair, I've been there — 3d edits are finicky. Let's do it in photoshop instead.
+
+1. Load your black and white image into the photo editor of your choice (Photoshop or Photopea).
+2. From the menu, select Filter -> 3d -> Normal Map (Generate Normal Map) in Photoshop)
+3. Photoshop: Click "OK" on the popup (about the 3d features being outdated)
+4. Tweak the parameters until you have a normal map — you want it to be as sharp as possible without artifacts/tearing! Some blur might be necessary.
+5. Click "OK" to apply the changes.
+6. Congratulations, you now have a normal map.
+
+<figure><img src="../../../../.gitbook/assets/custom_normal_map_photoshop.png" alt=""><figcaption></figcaption></figure>
 
 ## Troubleshooting
 
