@@ -40,6 +40,10 @@ To change the assigned material, complete the following steps:
 by Simarilius, thank you <3&#x20;
 {% endembed %}
 
+{% embed url="https://www.youtube.com/watch?v=NjkdYzLZ7WQ" %}
+by island dancer, thank you <3
+{% endembed %}
+
 ## Troubleshooting: I can't import my materials!
 
 Please see the [wkit-blender-plugin-troubleshooting.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-troubleshooting.md "mention") page.
