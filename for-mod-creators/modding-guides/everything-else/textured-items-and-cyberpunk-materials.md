@@ -6,30 +6,24 @@ description: Importing textured items (and creating an AMM prop set in the proce
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created by @manavortex**\
-**Published February 11 2023**
+**Published: February 11 2023 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update**: January 21 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will walk you through **importing 3d objects** into Cyberpunk 2077, which can then be spawned via [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790).&#x20;
 
 **It uses the following versions:**
 
-* Cyberpunk 2077 game version 1.6.1 (DLSS)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.8.1
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases), most recent for your game version (stable | nightly), guide was made using 8.8.1)&#x20;
 * [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) (version 2.0.2, but pretty much any version will do)
 
 **Level of difficulty:** You know how to read.
 
-{% hint style="success" %}
-If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
+### Wait, that's not what I want!
 
-For a guide about changing materials, check [here.](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)&#x20;
-{% endhint %}
-
-{% hint style="info" %}
-If you want to understand how material loading works, check the [mesh page](../../files-and-what-they-do/3d-objects-.mesh-files/).
-
-You can find explanation and documentation about materials [here](../../materials/).&#x20;
-{% endhint %}
+* If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
+* For a guide about changing materials, check [changing-materials-colors-and-textures.md](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
+* If you want to understand material assignment, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")-> [#material-assignment](../../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment "mention")
+* You can find explanation and documentation about materials [here](../../materials/).&#x20;
 
 ## Where to find models
 
@@ -74,7 +68,7 @@ Delete obsolete files (Windows Explorer or WKit):
 The first step to importing a mesh is exporting a mesh, since the import needs to overwrite already-existing files.
 {% endhint %}
 
-In Wolvenkit, open the Export Tool (Tools -> Export), and export everything in your folder: the mesh(es) you want to use and the textures.
+In Wolvenkit, open the [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export) (Tools -> Export), and export everything in your folder: the mesh(es) you want to use and the textures.
 
 This will create the following files under the project's `raw` section:
 
@@ -82,11 +76,13 @@ This will create the following files under the project's `raw` section:
 
 ### Step 3: Importing
 
-**Optional:** Download [this archive](https://mega.nz/file/vd0X3Yaa#tcakXF6\_t0k\_EouthuKcJSPL3o2nI6b\_zVWi528Kv5k) - I have prepared it for import. It contains both the original glb from sketchfab and the version I prepared for import:
+1. **Optional:** Download [this archive](https://mega.nz/file/vd0X3Yaa#tcakXF6\_t0k\_EouthuKcJSPL3o2nI6b\_zVWi528Kv5k) - I have prepared it for import. \
+   It contains both the original glb from sketchfab and the version I prepared for import:
 
 <figure><img src="../../../.gitbook/assets/2023-04-08 17_24_44-tutorial_baseball_for_import - (Admin) FreeCommander XE.png" alt=""><figcaption><p>File content as archive, April 8 2023</p></figcaption></figure>
 
-**After you have exported the files from Wolvenkit**, use the Windows Explorer to overwrite them with the files that you want to bring into the game. They need to have the same names!
+2. Use the Windows Explorer to copy these .glb files and textures into the same folder as the ones you exported in the previous step.
+3. Replace the files from your export with the files from your download. The names need to be exactly the same.&#x20;
 
 Use `baseball_02_d.png`, as the other one doesn't have transparency.
 
@@ -94,7 +90,8 @@ Use `baseball_02_d.png`, as the other one doesn't have transparency.
 The import/export process has [its own guide](../../3d-modelling/exporting-and-importing-meshes/). There's also a [troubleshooting page](../textures-and-luts/self-made-normal-maps/troubleshooting-normal-maps.md) if you're stuck.
 {% endhint %}
 
-Now that all files are in place, open the Import Tool in Wolvenkit (Tools -> Import), and re-import the files. The Wolvenkit preview should show your new imported mesh.
+4. Now that all files are in place, open the [Import Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export) in Wolvenkit (Tools -> Import), and re-import the files. The Wolvenkit preview should show your new imported mesh.
+5. optional: You can now [install the mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and spawn the prop.
 
 The next step is to [assign materials](textured-items-and-cyberpunk-materials.md#material-assignments) to the object.
 
