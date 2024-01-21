@@ -29,8 +29,9 @@ To change the assigned material, complete the following steps:
 3. Select all vertices (hotkey: `A`)
 4. In the list on the material tab, select the appearance that you want to display
 5. Under the list, click "Apply"
+6. Be sure to select "Material Preview" as the Viewport Shading Method (see the screenshot below)
 
-<figure><img src="../../.gitbook/assets/blender_select_material.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/blender_select_material_new.png" alt=""><figcaption></figcaption></figure>
 
 ## Blender: Baking Cyberpunk Shaders
 
