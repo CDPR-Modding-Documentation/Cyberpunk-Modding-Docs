@@ -219,6 +219,13 @@ If you don't have a 3d print entry in the tools of your 3d viewport, you might n
 When saving your mesh, check the console for errors. In version >= 8.9.0, a basic material validation is taking place. \
 If you don't see any warnings, make sure that the resource paths in your mesh are correct and that you aren't loading invisible textures.
 
+### Parts of my mesh are missing
+
+Do they show up in the Wolvenkit preview?
+
+* No: you probably forgot to select them when [exporting from Blender](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender). Make sure that you get them all into Wolvenkit.
+* Yes: There's either an issue with your [material assignments](../materials/materials-troubleshooting.md) or with your [chunkmasks](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md). Refer to the corresponding guides to learn how you can debug this.
+
 ### My mesh won't move at all
 
 Some meshes require an entAnimatedComponent along with the garment's component. Check [here](../modding-guides/npcs/appearances-change-the-looks.md#animations-if-you-cant-avoid-them-copy-them-as-well) for details.

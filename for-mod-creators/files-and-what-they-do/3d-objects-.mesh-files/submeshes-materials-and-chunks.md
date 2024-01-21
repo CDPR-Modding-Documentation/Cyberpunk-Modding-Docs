@@ -84,3 +84,25 @@ You can only use chunkMasks to **hide** submeshes. If you want to conditionally 
 {% endhint %}
 
 To learn about hiding other items with chunkmasks, check out [#partsoverrides-hiding-chunks](../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-hiding-chunks "mention")
+
+## How to see chunkmasks in-game?
+
+You have two options, [ACM ](#user-content-fn-1)[^1]\(for NPCs, including V) and RedHotTools.
+
+### ACM
+
+{% hint style="info" %}
+You can download [Appearance Creator Mod](https://www.nexusmods.com/cyberpunk2077/mods/10795) on Nexus. It requires [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780), [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107), and all of their requirements.
+{% endhint %}
+
+With ACM installed, make sure that the target is under the cursor in the middle of the screen (you can use photo mode to look at V). Then, find the correct mesh/component in the UI and click on the correct button:
+
+<figure><img src="../../../.gitbook/assets/appearance_creator_mod.png" alt=""><figcaption><p>Finding a component's chunkmask with Appearance Creator Mod</p></figcaption></figure>
+
+### RedHotTools
+
+Find [redhottools](../../modding-tools/redhottools/ "mention") -> [#installation-guide](../../modding-tools/redhottools/#installation-guide "mention") for instructions on how to install this.&#x20;
+
+See [#inspecting-chunkmasks](../../modding-tools/redhottools/#inspecting-chunkmasks "mention") for a guide.
+
+[^1]: AppearanceCreatorMod, an AMM addon

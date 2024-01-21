@@ -4,13 +4,25 @@ description: psiberx's RedHotTools - a powerful utility for better mod developme
 
 # RedHotTools
 
-You can download RedHotTools on [psiberx's github](https://github.com/psiberx/cp2077-red-hot-tools/releases). Integrated with Cyber Engine Tweaks, Wolvenkit and VisualStudioCode, it offers the following features:
+## Installation guide
 
-## Hot Reload
+You can download RedHotTools on [psiberx's github](https://github.com/psiberx/cp2077-red-hot-tools/releases):
+
+<figure><img src="../../../.gitbook/assets/install_redhottools.png" alt=""><figcaption></figcaption></figure>
+
+To install it, extract both downloaded files directly into your Cyberpunk 2077 game directory.
+
+## What does it do?
+
+Integrated with Cyber Engine Tweaks, Wolvenkit and VisualStudioCode, it offers the following features:
+
+### Hot Reload
 
 RHT can reload archives, scripts and tweaks for you at runtime without having to restart the game.
 
-## Script checking
+For documentation on how to do this, check [rht-hot-reload.md](rht-hot-reload.md "mention")
+
+### Script checking
 
 * See scripts validation and binding errors
 * Prevent game from starting if scripts compilation fails
@@ -40,3 +52,21 @@ Reverse search of world nodes and spawned entities
 
 
 <figure><img src="https://cdn.discordapp.com/attachments/786226527360254014/1172328369162035250/rht-052-4.png?ex=655feae0&#x26;is=654d75e0&#x26;hm=0999916c58eb3825dc2165be42577413ce6853f744227d18ae235e9eeb1610ab&#x26;" alt=""><figcaption></figcaption></figure>
+
+## Inspecting chunkmasks
+
+RedHotTools lets you look up chunk masking of existing items at runtime.
+
+{% hint style="info" %}
+You can inspect chunkmasks of player or NPC equipment via AppearanceCreatorMod; check [submeshes-materials-and-chunks.md](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention") -> [#acm](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#acm "mention") for details.
+{% endhint %}
+
+### Components
+
+For player or NPC clothing, you can use the Watch tab. Find the component in the corresponding puppet's component array:
+
+<figure><img src="../../../.gitbook/assets/red_hot_tools_inspect_chunkmasks.png" alt=""><figcaption></figcaption></figure>
+
+### Entities
+
+TBD

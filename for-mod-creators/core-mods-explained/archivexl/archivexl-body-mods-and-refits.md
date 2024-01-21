@@ -50,7 +50,7 @@ After packing your project, [check if the body tag registers](archivexl-body-mod
 
 If yes, you're good to go!
 
-If not and you have used a **component**, you can check if the component is added to the playerPuppet by checking [RedHotTools](../../modding-tools/redhottools.md):
+If not and you have used a **component**, you can check if the component is added to the playerPuppet by checking [RedHotTools](../../modding-tools/redhottools/):
 
 <figure><img src="../../../.gitbook/assets/AXL_body_checking_component.png" alt=""><figcaption></figcaption></figure>
 

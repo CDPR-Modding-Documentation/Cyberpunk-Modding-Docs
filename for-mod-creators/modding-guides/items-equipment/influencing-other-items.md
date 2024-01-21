@@ -6,14 +6,22 @@ description: PartsOverrides, visual tags, and how to use them
 
 ### Summary <a href="#summary" id="summary"></a>
 
-**Created by @manavortex**\
-**Published November 12 2022**
+**Published:** November 12 2022 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** January 21 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page will teach you how your clothing can influence other clothing items, for example hiding the sleeves under a jacket. You have to do this manually for every item that you want to affect, a much better way to address the problem is the game's [Garment Support](../../3d-modelling/garment-support-how-does-it-work/) system.&#x20;
 
 ## Requirement: ArchiveXL >= 1.1.6
 
 This guide will explain how to influence meshes by directly in the .app file, overriding whatever is defined for the components in the .ent file which loads them.
 
 For even further customization options for wardrobe items, see [EquipmentEx](https://github.com/psiberx/cp2077-equipment-ex)'s readme.
+
+## GarmentSupport: Layering your item on top
+
+Cyberpunk 2077 uses a clever system to layer clothes on top of each other while minimizing clipping. It's called GarmentSupport, and as of 2024, it's almost completely functional.&#x20;
+
+To use it with your clothing item, you need to change the component names to use the right prefixes. Check the [#component-prefixes](../../3d-modelling/garment-support-how-does-it-work/#component-prefixes "mention") section on [garment-support-how-does-it-work](../../3d-modelling/garment-support-how-does-it-work/ "mention") for details.
 
 ## PartsOverrides: Changing other meshes
 

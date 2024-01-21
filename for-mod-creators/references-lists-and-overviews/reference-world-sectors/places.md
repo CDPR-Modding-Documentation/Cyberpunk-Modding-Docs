@@ -23,7 +23,7 @@ There are several overviews of interesting locations:
 3. Head to the location that you want to edit.
 4. Look at the item
 5. Open the CET overlay
-6. Open RedHotTool's [#inspect](../../modding-tools/redhottools.md#inspect "mention") or [#scan](../../modding-tools/redhottools.md#scan "mention") tab and see the sector information:
+6. Open RedHotTool's [#inspect](../../modding-tools/redhottools/#inspect "mention") or [#scan](../../modding-tools/redhottools/#scan "mention") tab and see the sector information:
 
 <figure><img src="../../../.gitbook/assets/world_sector_node_removal.png" alt=""><figcaption></figcaption></figure>
 
