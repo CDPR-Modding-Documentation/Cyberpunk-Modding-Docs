@@ -52,12 +52,14 @@ After you added it, **turn off the Mod Browser option**; otherwise, you won't be
 
 * Open the [.ent file](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) and look for the mesh component in its components array.
   * If the selected entity is from **allmeshes** (starts with `base\meshes\` ), then there is probably only 1 <mark style="color:orange;">entPhysicalMeshComponent</mark> called _custom\_mesh_
-  * If not, it means your entity is from the vanilla game, in this case, you will have to add the proper mesh component yourself (it can be <mark style="color:orange;">entPhysicalMeshComponent</mark>, <mark style="color:orange;">entMeshComponent</mark>, or any other component including Mesh in its type)
+  * If not, it means your entity is from the vanilla game; in this case, search for the component that has Mesh in its type (<mark style="color:orange;">entPhysicalMeshComponent</mark>, <mark style="color:orange;">entMeshComponent</mark>, etc...)
 * In the mesh, click on the blue arrow to open the mesh in a new tab (_we don't need to add the file_)
 
 <figure><img src="../../../.gitbook/assets/world_editing__embedded_collision__open_mesh.png" alt=""><figcaption></figcaption></figure>
 
 * Decisive moment: Open parameters and look for a <mark style="color:orange;">meshMeshParamPhysics</mark>
+
+<figure><img src="../../../.gitbook/assets/world_editing__embedded_collision__mesh_physics.png" alt=""><figcaption></figcaption></figure>
 
 Have you found it ? Amazing ! It means the mesh has a native collision that we can toggle on. :thumbsup: [Let's do this now.](enable-embedded-collisions.md#activate-the-mesh-collision)
 

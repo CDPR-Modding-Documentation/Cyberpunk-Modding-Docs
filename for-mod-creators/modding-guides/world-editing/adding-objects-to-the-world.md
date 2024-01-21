@@ -25,14 +25,14 @@ This guide aims to teach you adding objects to the world.
 * Install Object Spawner
 * Start the game, load a save, navigate to the location you'd like to build and press your CET hotkey. Object Spawner will open along side CET and any other CET mods you have installed
 * Go to the "Spawn New" tab of Object Spawner and search for the objects you'd like to spawn - simply click on the name to spawn it.
-*
 
-    <figure><img src="../../../.gitbook/assets/object spawner.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/object spawner.png" alt=""><figcaption></figcaption></figure>
+
 * Use the tools in the "Spawned" tab to move and position your objects. It is a good practice to give each object a unique and recognizable label. Try to proceed slowly and always keep in mind that you may want to move/change or otherwise edit these components later on so a few extra moments to keep them organized and labelled can save you a lot of frustration later on.&#x20;
 
 <figure><img src="../../../.gitbook/assets/object spawner spawned tab.png" alt=""><figcaption></figcaption></figure>
 
-**Note: depending on the object spawned, it may or may not have baked in collisions. Keep this in mind and don't worry - there are a number of ways to either add collisions or fake them depending on the context.**
+**Note: depending on the object spawned, it may or may not have baked in collisions. Keep this in mind and don't worry - there are a number of ways to either add collisions, fake them,** [**or enable them**](enable-embedded-collisions.md) **depending on the context.**
 
 * Add your objects to a group - if creating a building or other complicated structure, you should also create subgroups for each of your exterior walls and other major components.&#x20;
 * after placing the objects, save the group incase you want to change something later on and then use Object Spawner's export function to create a .JSON file which you can use to add these objects permanently to the world.
