@@ -14,16 +14,19 @@ This guide will teach you how to create AMM props in two variants:&#x20;
 * the "vanilla" way by using a [mesh entity](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) with a [.mesh](../../files-and-what-they-do/3d-objects-.mesh-files/) file with only one appearance
 * customizable by chaining a [`root entity`](../../files-and-what-they-do/entity-.ent-files/#root-entity), an [`.app`](../../files-and-what-they-do/appearance-.app-files.md), and a [`.mesh`](../../files-and-what-they-do/3d-objects-.mesh-files/) file with multiple appearances.&#x20;
 
-{% hint style="info" %}
-For a guide on how to make meshes out of 2d textures, see [here](your-image-as-custom-mesh.md).
-{% endhint %}
+Its focus is on the **file structure** and the **relations between the files**.&#x20;
 
-Its focus is on the **file structure** and the **relations between the files**. If you want more hands-on tips what you can do with materials, check [here](textured-items-and-cyberpunk-materials.md) or [here](../../materials/).&#x20;
+### Wait, this isn't what I want!
 
-**It uses the following versions:**
+* If you want to play around with materials and an existing prop, check [textured-items-and-cyberpunk-materials.md](textured-items-and-cyberpunk-materials.md "mention")
+* If you want to enable collisions, see [enable-embedded-collisions.md](../world-editing/enable-embedded-collisions.md "mention")
+* If you want to make meshes out of 2d textures, see [your-image-as-custom-mesh.md](your-image-as-custom-mesh.md "mention")
+* … or use the wiki's AI-assisted search function, or simply poke around
 
-* Cyberpunk 2077 game version 1.6.1 (DLSS)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.8.1
+## **Requirements:**
+
+* Cyberpunk 2077 game version&#x20;
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.12 for 2.1,  8.8.1 for 1.6.1 (DLSS)&#x20;
 * [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) (>= version 2.1, anything earlier won't have customizable appearances)
 * Optional, but recommended if you want to create multiple props: [Notepad++](https://notepad-plus-plus.org/downloads/)
 
@@ -40,11 +43,16 @@ At any part during the process, you can [install the mod](https://app.gitbook.co
 `Tutorial item (customizable)`
 {% endhint %}
 
-1. Create a project in Wolvenkit and give it a name. This will later be the name of your archive file.
+1. Create a [project in Wolvenkit](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name. This will later be the name of your archive file.
 2. Download the AMM prop template from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8011). Download **the complete source folder**, as it will have the files as depicted below.
-3.  Prepare your Wolvenkit project by merging the source folder you downloaded with the one from your project. By the end of it, you should have the following files:
+3. Prepare your Wolvenkit project by merging the source folder you downloaded with the one from your project. By the end of it, you should have the following files:
 
-    <figure><img src="../../../.gitbook/assets/amm_props_structure.png" alt=""><figcaption></figcaption></figure>
+{% hint style="warning" %}
+If you want to move or rename anything, please do it as specified in [moving-and-renaming-in-existing-projects.md](moving-and-renaming-in-existing-projects.md "mention"). Doing anything else will **break the mod**.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/amm_props_structure.png" alt=""><figcaption><p>For an overview of how these files hang together, theck the <a data-mention href="custom-props.md#diagram">#diagram</a> section of this guide.</p></figcaption></figure>
+
 
 
 4. Optional, but recommended: Start the game and spawn the props, as in the green hint box at [the beginning of this section](custom-props.md#setting-up-the-project).
@@ -101,8 +109,6 @@ return {
 Without a `lua` file, AMM (as of version 2.1) won't be able to spawn your props.&#x20;
 
 Here's what the lines do:
-
-
 
 <table data-header-hidden><thead><tr><th width="237"></th><th></th></tr></thead><tbody><tr><td><code>name</code></td><td>what you search for in AMM</td></tr><tr><td><code>category</code></td><td>what AMM sorty by (you can only reuse exisitng categories)</td></tr><tr><td><code>distanceFromGround</code></td><td>how far away from the ground should your prop be? (This moves the origin in Blender's 3d viewport)</td></tr><tr><td><code>appearances</code></td><td>If you're using a root entity, these are the appearance names to switch through and the entries in AMM's "appearance" dropdown / spawn tab</td></tr></tbody></table>
 
@@ -204,7 +210,7 @@ Okay, now that we've gone through the theory, let's have a quick overview how ev
 
 ## Using other meshes
 
-You can point the file at a different mesh by changing the depot path of the component. If you have no idea how to do that, read on!&#x20;
+You can point the prop at a different mesh by changing the depot path of the **component**. If you have no idea how to do that, read on!&#x20;
 
 ### With variants
 
