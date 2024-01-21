@@ -52,6 +52,26 @@ e.g., if you wanted to edit the entity file for female V's hair 28 `hh_083_wa__p
 player_base_heads > hairs > hairs_083
 ```
 
+## Beards
 
+Beards are only used by mascV. Their entity files can be found in this folder:&#x20;
 
-\
+```
+base\characters\head\player_base_heads\appearances\entity\facial_hairs\
+```
+
+Any .app files are stored under
+
+```
+base\characters\head\player_base_heads\appearances\facial_hairs\
+```
+
+Beard morphtargets and the meshes they pull in can be found in the player's basehead folder:
+
+```
+base\characters\head\player_base_heads\player_man_average
+```
+
+### Beard component names
+
+Any beard uses the same two components, `beard` and `beard_shadow_01`.&#x20;
