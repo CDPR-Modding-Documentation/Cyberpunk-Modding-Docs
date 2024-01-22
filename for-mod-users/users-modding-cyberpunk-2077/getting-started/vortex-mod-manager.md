@@ -156,7 +156,10 @@ This section controls Vortex file storage. It's mostly a matter of personal pref
 #### Mods: Staging
 
 {% hint style="danger" %}
-This folder MUST be on the same drive as your Cyberpunk.exe, or the deploy might fail.
+This folder
+
+* **must** be on the same drive as your game installation, or deploy will fail
+* &#x20;**must not** be your game install directory
 {% endhint %}
 
 Where Vortex keeps its mods, ready to deploy them into the Cyberpunk game directory.&#x20;
