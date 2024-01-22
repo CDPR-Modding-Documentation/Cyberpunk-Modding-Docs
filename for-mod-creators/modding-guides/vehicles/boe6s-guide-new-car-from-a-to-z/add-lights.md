@@ -52,6 +52,8 @@ Example:
 
 <figure><img src="../../../../.gitbook/assets/image3 (1).png" alt=""><figcaption></figcaption></figure>
 
+Note: Headlights also require Vertex Paint; coloring them to black should be appropriate for most situations
+
 For lights like brakes, you need to edit the vertex paint in **blender**. Select the light emitting object in **blender** and change into **Vertex Paint** mode. \
 Example:
 
