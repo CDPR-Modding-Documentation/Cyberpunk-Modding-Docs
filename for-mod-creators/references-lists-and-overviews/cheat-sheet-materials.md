@@ -67,6 +67,16 @@ For further details, see [here](../materials/#textured-material).
 | `base\fx_shaders\holo_mask.mt`                              | Special effect material that transforms a mesh into an hologram. Can use a custom texture for decal and is color controllable. |
 | `base\surfaces\atlases\wood\wood_bare\wood_bare_01_pine.mi` | Basic wood texture, no masks                                                                                                   |
 
+### Plastic (solid, coloured)
+
+Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room\_plastic_black.mi`
+
+<table><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>BaseColor</td><td><code>base\materials\placeholder\white.xbm</code></td></tr><tr><td>Normal</td><td>optional: path to your normal map</td></tr><tr><td>Roughness</td><td>optional: path to your roughness map</td></tr><tr><td>RoughnessBias</td><td>0.200000003</td></tr><tr><td>BaseColorScale</td><td>Colour as x/y/z values (color picker blend file <a href="https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks">here</a></td></tr></tbody></table>
+
+### Gradient recolor
+
+`base\environment\decoration\decals\mesh_decal_lines\textures\lines_plain_black.mi`
+
 ## Cyberspace Materials
 
 {% hint style="info" %}
@@ -137,7 +147,9 @@ Blackbody shaders are used for **heat**. Their colour can be adjusted via the `t
 | `base\fx_shaders\multilayer_blackbody_inject.mt` | A temperature shader with mlmask and -setup                         |
 | `base\fx\shaders\blackbody_simple.mt`            | A temperature shader with a texture and a numeric temperature value |
 
-## Glass
+## Transparent
+
+### Glass
 
 {% hint style="info" %}
 [Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `glass > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
@@ -147,14 +159,10 @@ For more details on glass materials and instructions on how to configure them, s
 
 <table><thead><tr><th width="344"></th><th></th></tr></thead><tbody><tr><td>Basic glass, with warping properties, simple tint as color, simple opacity</td><td><code>base\materials\glass_onesided.mt</code></td></tr><tr><td>Non-warping glass, destructible, tintable via colors</td><td><code>base\vehicles\common\materials\glass_windshield_tinted_black.mi</code></td></tr><tr><td>Device screen glass </td><td><code>base\fx\shaders\parallaxscreen.mt</code></td></tr></tbody></table>
 
-### Gradient recolor
+### Plastic (see-through)
 
-`base\environment\decoration\decals\mesh_decal_lines\textures\lines_plain_black.mi`
+<table><thead><tr><th width="344"></th><th></th></tr></thead><tbody><tr><td>tbd</td><td>take from Hanako's dress (search Wolvenkit for <code>t2 > hanako > dress > .mesh</code>)</td></tr></tbody></table>
 
-### Coloured Plastic
+## Liquid materials
 
-Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room\_plastic_black.mi`
-
-<table><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>BaseColor</td><td><code>base\materials\placeholder\white.xbm</code></td></tr><tr><td>Normal</td><td>optional: path to your normal map</td></tr><tr><td>Roughness</td><td>optional: path to your roughness map</td></tr><tr><td>RoughnessBias</td><td>0.200000003</td></tr><tr><td>BaseColorScale</td><td>Colour as x/y/z values (color picker blend file <a href="https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks">here</a></td></tr></tbody></table>
-
-Use `base\materials\fillable_fluid_vertex.mt` or see [here ](../materials/#liquid)for details.
+Use `base\materials\fillable_fluid_vertex.mt` to fill vessels, or see [here ](../materials/#liquid)for details.
