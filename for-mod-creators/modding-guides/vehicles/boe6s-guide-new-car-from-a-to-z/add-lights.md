@@ -69,3 +69,66 @@ Example:
 <figure><img src="../../../../.gitbook/assets/image68.png" alt=""><figcaption></figcaption></figure>
 
 Brake lights should now be fully working.
+
+
+
+### Change headlight colors
+
+Headlight colors are controlled in your vehicle's tweak file. You need to add this entry to your main `Vehicle` record:
+
+```
+headlightColor:
+  - 0
+  - 0
+  - 255
+  - 255
+```
+
+The values are RGBA respectively so the above changes the headlight color to blue
+
+Adjusting the tweak file from the previous section, here's how it should all look like:
+
+```
+UIIcon.Mini_Logo:
+    $type: UIIcon_Record
+    atlasPartName: porsche
+    atlasResourcePath: base\gameplay\gui\common\icons\weapons_manufacturers.inkatlas
+
+Vehicle.Mini:
+    $type: VehicleManufacturer_Record
+    enumName: Mini_Logo
+
+Vehicle.boe6_mini_cooper_data:
+    $type: VehiculeUIData
+    productionYear: 2003
+    info: LocKey#boe6_mini_cooper_info
+
+UIIcon.boe6_mini_cooper_icon:
+    $type: UIIcon_Record
+    atlasResourcePath: base\gameplay\gui\common\icons\weapons_manufacturers.inkatlas
+    atlasPartName: porsche_911turbo_basic_johnny
+
+Vehicle.boe6_mini_cooper_red:
+    $base: Vehicle.v_sport2_porsche_911turbo
+    appearanceName: boe6_mini_cooper_red
+    displayName: boe6_mini_cooper_name
+    player_audio_resource: v_car_mizutani_shion_nomad
+    entityTemplatePath: boe6\mini_cooper\boe6_mini_cooper_basic.ent
+    manufacturer: Vehicle.Mini
+    icon: UIIcon.boe6_mini_cooper_icon
+    vehicleUIData: Vehicle.boe6_mini_cooper_data
+    headlightColor:
+      - 0
+      - 0
+      - 255
+      - 255
+
+Vehicle.boe6_dominus_purchasable.dealerPrice: 55000
+Vehicle.boe6_dominus_purchasable.dealerCred: 10
+
+#Vehicle.boe6_dominus_purchasable.dealerAtlasPatch: "boe6_mini_cooper_cardealer.inkatlas"
+#Vehicle.boe6_dominus_purchasable.dealerPartName: "1"
+
+Vehicle.vehicle_list.list:
+  - !append Vehicle.boe6_mini_cooper
+```
