@@ -7,7 +7,7 @@ description: If your mods are causing trouble, here's what you can do
 This page contains[^1] troubleshooting[^2] information for people who are **using** mods rather than making mods. You will find step-by-step guides, grouped by different problems.
 
 {% hint style="info" %}
-Did you know?  You can us your browser's search function (Ctrl+F) to quickly find your problem on the page – simply type a word from your error message.
+Did you know?  You can use your browser's search function (Ctrl+F) to quickly find your problem on the page – simply type a word from your error message.
 {% endhint %}
 
 ## Navigation
