@@ -106,7 +106,23 @@ In a given mesh, garment support is handled by two color attributes: `_GarmentSu
 
 <figure><img src="../../../.gitbook/assets/blender_garmentSupport_attributesPanel.png" alt=""><figcaption><p>Always make sure all three are Face Corner > Byte Color format before exporting. You can convert back and forth between formats with the down arrow button on the right.</p></figcaption></figure>
 
-These attributes are edited in `Vertex Paint` mode in the viewport.
+If you are working with a mesh that already has garment support - such as when editing vanilla items - your initial parameters will look a little different. This is because the above parameters are your "working" state; Blender turns these into a different format on export. If you pop open a vanilla mesh in Blender for the first time, you're actually looking at a "finalized" state for garment support, and your color attributes will look like this:
+
+<figure><img src="../../../.gitbook/assets/blender_garmentSupport_attributes1.png" alt=""><figcaption><p>Note that there are two extra attributes compared to the first image shown! You don't want these.</p></figcaption></figure>
+
+This is normal and expected, but it's also not the right state for you to start playing around with. Simply remove the top two attributes (the two Vertex Color attributes labelled in all caps) by clicking each one and then clicking the small 'minus' button on the right hand side. Then rename the bottom two attributes by adding an underscore to the front of their label.
+
+<figure><img src="../../../.gitbook/assets/blender_garmentSupport_attributes2.png" alt=""><figcaption><p>Repeat for every submesh in your mesh, until they all match the required format.</p></figcaption></figure>
+
+This will make them match the appropriate format that the export function will expect. It's crucial to repeat this process for every submesh in your garment, or your attributes will not get written correctly on export and nothing will behave the way you expect or want it to.
+
+If all you're doing is trying to preserve existing garment support before doing some light editing or refits on vanilla garments, you can stop right here! You can get to work and, when you're ready to export, the initial functionality will be preserved.
+
+If you're making a brand new item and making your garment support from scratch, however, you'll need to keep reading to find out how these parameters should look.
+
+### Painting Your Parameters
+
+Garment support color attributes are edited in `Vertex Paint` mode in the viewport.
 
 #### `_GarmentSupportWeight`
 
@@ -130,9 +146,9 @@ The function of the cap is to provide limits, so if nothing is painted on the ca
 
 If this step is skipped, you can have unexpected clipping, but nothing will break. If your mesh seems like it's being too aggressive when you layer it over other things, and leaving holes in whatever you're trying to layer under it, try painting more of the inside faces red.
 
-#### That seems like a lot of work? Can I make this less worse somehow?
+### That all seems like a lot of work? Can I make this less worse somehow?
 
-The simplest way to have functioning garment support for your custom item is a flat red `_GarmentSupportWeight` attribute, a flat black `_GarmentSupportCap` attribute, and a flat black `Col` attribute. Your mesh will export and, assuming you have the proper shapekeys, will morph in (more or less) the way you'd expect!
+The simplest way to add functioning garment support to your custom item is to have a flat red `_GarmentSupportWeight` attribute, a flat black `_GarmentSupportCap` attribute, and a flat black `Col` attribute. Your mesh will export and, assuming you have the proper shapekeys, will morph in (more or less) the way you'd expect! The next page will outline this process step-by-step.
 
 {% hint style="info" %}
 **Every** submesh of your garment _must_ have these three attributes in order for garment support to function correctly - even submeshes that contain non-deformable things like accessories, buckles, chains, belts, etc.
