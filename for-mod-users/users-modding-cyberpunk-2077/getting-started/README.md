@@ -1,14 +1,19 @@
 ---
 description: >-
   Install the core requirements for Cyberpunk2077 modding, decide how to manage
-  your mods, and set up the mod manager
+  your mods, and set up a mod manager
 ---
 
 # Getting Started
 
-{% hint style="success" %}
-If you already have the game installed and configured, you can proceed to the guide [how to install mods with Vortex](vortex-mod-manager.md).
-{% endhint %}
+## Summary
+
+While it is possible to  install mods by hand (and many modders do in fact exactly that), we recommend using a mod manager.&#x20;
+
+This guide will walk you through installing and configuring your game. If you have already done that, you can configure the mod manager of your choice:
+
+* How to install mods with[vortex-mod-manager.md](vortex-mod-manager.md "mention")
+* How to configure [mo2-mod-organizer-2.md](mo2-mod-organizer-2.md "mention")
 
 #### Before you get started
 

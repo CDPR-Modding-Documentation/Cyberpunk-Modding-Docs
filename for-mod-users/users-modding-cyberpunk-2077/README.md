@@ -8,17 +8,25 @@ description: Modding your game, for users
 [user-guide-troubleshooting](../user-guide-troubleshooting/)
 {% endcontent-ref %}
 
-{% hint style="info" %}
-This page contains instructions on **installing** mods. If you want to **create** mods instead, check [here](../../for-mod-creators/modding-guides/).
-{% endhint %}
+## Summary
 
-{% hint style="success" %}
-If this doesn't cover your needs, maybe check out our more detailed guides:
+**Published:** ?? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Jan 23 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-* [Installing Cyberpunk](getting-started/)
-* [Installing mods via Vortex](getting-started/vortex-mod-manager.md)
+This page will teach you how to **manually install** mods.&#x20;
 
-If you want to learn more about the frameworks, you can check the [core-mods-explained](../../for-mod-creators/core-mods-explained/ "mention") page.
+* If you want to create mods instead, check the [modding-guides](../../for-mod-creators/modding-guides/ "mention") section
+* If you need help installing Cyberpunk, check [getting-started](getting-started/ "mention")
+* If your modded install is acting up, please check [user-guide-troubleshooting](../user-guide-troubleshooting/ "mention")
+
+{% hint style="danger" %}
+We strongly recommend using a mod manager. You have the following options:
+
+[vortex-mod-manager.md](getting-started/vortex-mod-manager.md "mention") (Nexus Mod Manager)
+
+[mo2-mod-organizer-2.md](getting-started/mo2-mod-organizer-2.md "mention") (known from e.g. Skyrim and Fallout)
+
+It is possible to mod your game fully manually (and in fact, many modders do exactly that), but you have to understand the stuff on this page. Mod managers will save you from that effort.
 {% endhint %}
 
 ## How to install mods
