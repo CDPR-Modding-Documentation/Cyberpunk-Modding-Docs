@@ -11,8 +11,12 @@ description: If it's not working as expected
 
 This page contains troubleshooting options for the [.](./ "mention"). If you can't solve your problem with these steps, feel free to reach out on [Discord](http://discord.gg/redmodding) in the `#blender-add-on` channelhi
 
-{% hint style="info" %}
+{% hint style="warning" %}
 The first thing people on Discord will tell you is to read this page, so you might as well get it out of the way.
+{% endhint %}
+
+{% hint style="info" %}
+Blender errors will show up in the system console window (View -> Toggle System Console).
 {% endhint %}
 
 ## General Troubleshooting
@@ -35,7 +39,19 @@ You can see the exact Blender version in the lower right corner of the program:
 <figure><img src="../../../.gitbook/assets/blender_plugin_check_version.png" alt=""><figcaption></figcaption></figure>
 
 5. Check on [**github**](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) that this is the last available version of the plugin.&#x20;
-6. If it's not, you need to update. [Uninstall ](installing-the-wolvenkit-blender-plugin.md#step-0-uninstall-the-old-version)the old version, then [install](installing-the-wolvenkit-blender-plugin.md#step-1-install-the-plugin) the most recent plugin.
+6. If it's not, you need to update. [Uninstall ](installing-the-wolvenkit-blender-plugin.md#step-0-uninstall-the-old-version)the old version, then [install](installing-the-wolvenkit-blender-plugin.md#step-1-install-the-plugin) the most recent plugin
+
+{% hint style="info" %}
+You need to restart Blender after updating the plugin!
+{% endhint %}
+
+### Check the console output
+
+See if Blender encountered any errors by checking the **console output**. From the menu, select `View` -> `Toggle System Console`.
+
+{% hint style="success" %}
+Our technical experts will want to see this.
+{% endhint %}
 
 ## Failed to import materials
 
