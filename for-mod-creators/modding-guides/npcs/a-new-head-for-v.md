@@ -42,49 +42,6 @@ source\raw\tutorial\npv\your_female_character\head
 These steps will become obsolete after the 2.0 update of the NPV example files, but aren't obsolete yet.
 
 7. Open the `.blend` file in Blender. You should now see the script `00_import_files.py`
-8. Replate its content with the code from the collapsible box below:
-
-<details>
-
-<summary>The code</summary>
-
-```python
-import os
-import bpy
-import re
-
-# path of your blend file
-filepath = bpy.data.filepath
-directory = os.path.dirname(filepath)
-
-morphtargetDirectoryFile = os.path.join(directory, "morphtargets")
-
-if not any(filename.endswith(".morphtarget.glb") for filename in os.listdir(morphtargetDirectoryFile)):
-    parentFolder = os.path.dirname(directory)
-    if any(filename.endswith(".morphtarget.glb") for filename in os.listdir(parentFolder)):
-        morphtargetDirectoryFile = parentFolder
-        
-targetPath = ''
-
-
-for root, dirs, files in os.walk(morphtargetDirectoryFile):
-    files = [ file for file in files if file.endswith( ('.glb') ) ]
-    for file in files: # loops through directories and files
-        pot2 = os.path.join(root,file)
-        armatureName = file.replace('.morphtarget.glb', '').replace('__morphs_default', '__morphs').replace('__morphs', '_c__basehead')  
-        print("\nimporting = ", file)        
-        imported_object = bpy.ops.import_scene.gltf(filepath=pot2, loglevel=0)
-        selectedObject = bpy.context.scene.objects.get("Armature")
-        selectedObject.name = armatureName
-        print("imported to ", armatureName)
-        
-
-bpy.ops.object.select_all(action='DESELECT')
-```
-
-
-
-</details>
 
 You're good to go and can proceed to step 2.
 
