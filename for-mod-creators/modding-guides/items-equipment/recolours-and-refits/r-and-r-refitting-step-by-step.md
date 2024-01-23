@@ -200,7 +200,7 @@ As of 8.9.1, Garment Support is still experimental. If your meshes look like str
 {% endhint %}
 
 1. In the Import Tool, select the first file that you want to import, then check the `Import Garment Support` box.
-2. Do the same for the second mesh. (As of 09/09/2023, the emissive component doesn't have garment support, but eventually I will make this work)
+2. Do the same for the second mesh and the emissive components.
 3. Import both glb files.
 
 ## OK, what now?
