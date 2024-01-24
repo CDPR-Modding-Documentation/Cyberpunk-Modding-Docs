@@ -69,12 +69,12 @@ Arms are using different meshes for the first person perspective. You can usuall
 
 You can look up the component names and their properties in the .ent files per body gender in these folders (the file names will start with `a0_`):
 
-<table><thead><tr><th width="155.33333333333331"></th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Default (female)</td><td><code>base\characters\common\player_base_bodies\player_female_average\arms_hq</code><br></td><td><pre><code><strong>a0_001_pwa_base_hq__full  
+<table><thead><tr><th width="155.33333333333331"></th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Default (female)</td><td><code>base\characters\common\player_base_bodies\player_female_average\arms_hq</code><br><br><code>arms_full</code> is only used by character creator!</td><td><pre><code><strong>a0_001_pwa_base_hq__full  
 </strong>a0_001_pwa_base_hq__full 
 left_arm    
 right_arm  
 a0_000_pwa_base__fists                                                         
-</code></pre></td></tr><tr><td>Default (male)</td><td><code>base\characters\common\player_base_bodies\player_man_average\arms_hq</code></td><td><pre><code><strong>a0_001_pma_base_hq__full  
+</code></pre></td></tr><tr><td>Default (male)</td><td><p><code>base\characters\common\player_base_bodies\player_man_average\arms_hq</code></p><p><br><code>arms_full</code> is only used by character creator!</p></td><td><pre><code><strong>a0_001_pma_base_hq__full  
 </strong>a0_001_pma_base_hq__full 
 left_arm    
 right_arm  
@@ -100,3 +100,57 @@ a0_002_wa__monowire_whip_r_cableless
 </code></pre></td></tr><tr><td>Monowire (male)</td><td><code>base\characters\cyberware\player\a0_002__monowire_whip\entities\a0_002_ma__monowire_whip.ent</code></td><td><pre><code>a0_002_ma__monowire_whip_l_cableless
 a0_002_ma__monowire_whip_r_cableless
 </code></pre></td></tr></tbody></table>
+
+## Making Body mods
+
+If you want to make a body mod, you need to modify the following files. \
+Please do clothing modders a favour either fit your body to vanilla proportions, or register a tag for [archivexl-body-mods-and-refits.md](../core-mods-explained/archivexl/archivexl-body-mods-and-refits.md "mention") right away!
+
+### Female body gender
+
+#### **Head:**&#x20;
+
+`base\characters\head\player_base_heads\player_female_average\h0_000_pwa__morphs.morphtarget` \
+\
+`base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\h0_000_pwa_c__basehead.mesh`
+
+#### &#x20;**TPP Body:**&#x20;
+
+`base\characters\common\player_base_bodies\player_female_average\t0_000_pwa_base__full.morphtarget` \
+`base\characters\common\player_base_bodies\player_female_average\t0_000_pwa_base__full.mesh` \
+`base\characters\common\player_base_bodies\player_female_average\l0_000_pwa_base__cs_flat.mesh`
+
+#### &#x20;**TPP Arms:**&#x20;
+
+`base\characters\common\player_base_bodies\player_female_average\arms_hq\a0_000_pwa_base_hq__full.mesh`  (only used in character creation)\
+`base\characters\common\player_base_bodies\player_female_average\arms_hq\a0_000_pwa_base_hq__l.mesh` \
+`base\characters\common\player_base_bodies\player_female_average\arms_hq\a0_000_pwa_base_hq__r.mesh`
+
+#### &#x20;**FPP Head + Body + Arms:**&#x20;
+
+`base\characters\common\player_base_bodies\player_female_average\fpp\n0_000_pwa_fpp__neck.mesh` `base\characters\common\player_base_bodies\player_female_average\fpp\t0_000_pwa_fpp__torso.mesh` `base\characters\common\player_base_bodies\player_female_average\fpp\a0_000_pwa_fpp__full_l.mesh` `base\characters\common\player_base_bodies\player_female_average\fpp\a0_000_pwa_fpp__full_r.mesh` `base\characters\common\player_base_bodies\player_female_average\fpp\l0_000_pwa_fpp__cs_flat.mesh`
+
+### Male body gender
+
+#### **Head:**&#x20;
+
+`base\characters\head\player_base_heads\player_man_average\h0_000_pwa__morphs.morphtarget` \
+`base\characters\head\player_base_heads\player_man_average\h0_000_pwa_c__basehead\h0_000_pwa_c__basehead.mesh`
+
+#### &#x20;**TPP Body:**&#x20;
+
+`base\characters\common\player_base_bodies\player_man_average\t0_000_pma_base__full.mesh`&#x20;
+
+#### &#x20;**TPP Arms:**&#x20;
+
+`base\characters\common\player_base_bodies\player_man_average\arms_hq\a0_000_pma_base_hq__full.mesh` (only used in character creation)\
+`base\characters\common\player_base_bodies\player_man_average\arms_hq\a0_000_pma_base_hq__l.mesh` \
+`base\characters\common\player_base_bodies\player_man_average\arms_hq\a0_000_pma_base_hq__r.mesh`
+
+#### &#x20;**FPP Head + Body + Arms:**&#x20;
+
+`base\characters\common\player_base_bodies\player_man_average\fpp\n0_000_pma_fpp__neck.mesh` \
+`base\characters\common\player_base_bodies\player_man_average\fpp\t0_000_pma_fpp__torso.mesh` `base\characters\common\player_base_bodies\player_man_average\fpp\a0_000_pma_fpp__full_l.mesh` \
+`base\characters\common\player_base_bodies\player_man_average\fpp\a0_000_pma_fpp__full_r.mesh` \
+
+
