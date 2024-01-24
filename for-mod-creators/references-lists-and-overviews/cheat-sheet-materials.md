@@ -147,6 +147,18 @@ Blackbody shaders are used for **heat**. Their colour can be adjusted via the `t
 | `base\fx_shaders\multilayer_blackbody_inject.mt` | A temperature shader with mlmask and -setup                         |
 | `base\fx\shaders\blackbody_simple.mt`            | A temperature shader with a texture and a numeric temperature value |
 
+### FX Shaders
+
+{% hint style="info" %}
+[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `fx > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+{% endhint %}
+
+FX shaders are animated effect shaders.
+
+| material                                | description                                               |
+| --------------------------------------- | --------------------------------------------------------- |
+| `base\fx\shaders\metal_base_glitter.mt` | A PBR temperature shader. Configured with numeric values. |
+
 ## Transparent
 
 ### Glass

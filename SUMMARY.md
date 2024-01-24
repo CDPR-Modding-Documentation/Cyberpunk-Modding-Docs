@@ -103,6 +103,7 @@
     * [Multilayered Material Properties](for-mod-creators/materials/configuring-materials/multilayered-material-properties.md)
     * [Textured material properties](for-mod-creators/materials/configuring-materials/textured-material-properties.md)
     * [Liquid material properties](for-mod-creators/materials/configuring-materials/liquid-material-properties.md)
+    * [FX Material Properties](for-mod-creators/materials/configuring-materials/fx-material-properties.md)
   * [Multilayered: Cyberpunk's supershader](for-mod-creators/materials/multilayered/README.md)
     * [Multilayered: Previews](for-mod-creators/materials/multilayered/multilayered-previews.md)
     * [Multilayered Material: Properties](for-mod-creators/materials/multilayered/multilayered-material-properties.md)
