@@ -173,7 +173,7 @@ For more details on glass materials and instructions on how to configure them, s
 
 ### Plastic (see-through)
 
-<table><thead><tr><th width="344"></th><th></th></tr></thead><tbody><tr><td>tbd</td><td>take from Hanako's dress (search Wolvenkit for <code>t2 > hanako > dress > .mesh</code>)</td></tr></tbody></table>
+<table><thead><tr><th width="344"></th><th></th></tr></thead><tbody><tr><td>base\materials\glass_onesided.mt</td><td>take from Hanako's dress, <code>localMaterialBuffer.materials.transparent</code> <code>base\characters\main_npc\hanako\t1_001_wa_dress__hanako.mesh</code></td></tr></tbody></table>
 
 ## Liquid materials
 
