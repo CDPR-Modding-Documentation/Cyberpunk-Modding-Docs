@@ -36,6 +36,12 @@ For an overview of base materials and example files, you can check [here](../../
 If your changes do not become active, you will want to install [Material and Texture Override](https://www.nexusmods.com/cyberpunk2077/mods/5266) from Nexus.
 {% endhint %}
 
+## Video guide
+
+Please keep in mind that video guides might be outdated, as they are much more difficult to update than a wiki page. Refer to the written guide below if you run into any troubles!
+
+{% embed url="https://youtu.be/HLwjKM8YDlA?si=U6aHXud4BRu8rLqi" %}
+
 ## **Step 1: Finding your item**
 
 {% hint style="info" %}
