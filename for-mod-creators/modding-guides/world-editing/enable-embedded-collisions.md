@@ -7,7 +7,7 @@ description: Activate an existing collisions in a mesh
 ## Summary
 
 **Published: January 20, 2024 by** [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")\
-**Last documented update: January 20, 2024 by** [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")
+**Last documented update: January 25, 2024 by** [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")
 
 This guide shows you how to enable an object's **embedded collision** for entities without (items that you can walk through).&#x20;
 
@@ -69,13 +69,13 @@ Have you found it ? Amazing ! It means the mesh has a native collision that we c
 It means that there is no collision with it. But other solutions exist for you:
 
 * You can create your own collision through Blender (no modding ressource is available at this time)
-* You can fake the collision by using another small entity which already has collision embedded, and hide the small entity inside your item (this technique is a work-around that does not already fit or give satisfaction, but most of the time it does the job)
+* You can fake the collision by using another small entity which already has collision embedded, and hide the small entity inside your item (this technique is a work-around, that does not always fit or give satisfaction, but most of the time it does the job)
 * You can try to find another similar item that has embedded collisions (and go back to the first step of this page)
 {% endhint %}
 
 ## Activate mesh collisions
 
-Turning it on is pretty simple; we only have 3 things to change, all in the .ent file previously added:
+Turning it on is pretty simple; we only have 2 things to change, all in the .ent file previously added:
 
 * Update the `filterData` and change the values like in the screenshot. Those values determine which entities can collide with, and how to simulate the collision.&#x20;
 
@@ -85,17 +85,25 @@ Turning it on is pretty simple; we only have 3 things to change, all in the .ent
 This information is not well-researched as of Jan 2024 - if you know anything more about this, please get in touch via [Discord](http://discord.gg/redmodding) or update the wiki!
 {% endhint %}
 
-* Change the `navigationImpact` setting to `Blocking`. (Other values exist such as limiting movement to crouch only; they haven't been documented, but you may have fun with them.)
+* Change the `navigationImpact` setting to `Blocking`. (Other values exist; they haven't been documented, but you may have fun with them.)
 
 <figure><img src="../../../.gitbook/assets/world_editing__embedded_collision__navigation_impact.png" alt=""><figcaption></figcaption></figure>
 
 * **Optional**_:_ depending on the item, you may want to enable (or not) lighting-based shadows. You can do so by setting these 3 properties to `Always`.&#x20;
 
-{% hint style="warning" %}
-If you encounter an issue with collisions not working, and you haven't set them on, try to do so. Shadows _might_ be a requirement.
-{% endhint %}
-
 <figure><img src="../../../.gitbook/assets/world_editing__embedded_collision__shadows.png" alt=""><figcaption></figcaption></figure>
+
+<details>
+
+<summary>Lighting-based shadows comparison</summary>
+
+Here is the difference between the values `Always` and `Never`
+
+<img src="../../../.gitbook/assets/world_editing__embedded_collision__shadows_comparison.png" alt="" data-size="original">
+
+**Note:** As you can see, `Never` values will prevent the mesh from casting shadows in the surrounding environment, but your mesh will still handle local shadows cast on itself.
+
+</details>
 
 {% hint style="info" %}
 I strongly suggest you to change the .ent name and folder to [a custom one](../everything-else/moving-and-renaming-in-existing-projects.md), so it doesn't interfere with the rest of the game.
