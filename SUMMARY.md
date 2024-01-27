@@ -5,6 +5,7 @@
 ## For Mod Users:
 
 * [❔ Using Mods](for-mod-users/users-modding-cyberpunk-2077/README.md)
+  * [The Cyberpunk 2077 Game Directory](for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md)
   * [Getting Started](for-mod-users/users-modding-cyberpunk-2077/getting-started/README.md)
     * [MO2 (Mod Organizer 2)](for-mod-users/users-modding-cyberpunk-2077/getting-started/mo2-mod-organizer-2.md)
     * [Vortex Mod Manager](for-mod-users/users-modding-cyberpunk-2077/getting-started/vortex-mod-manager.md)
