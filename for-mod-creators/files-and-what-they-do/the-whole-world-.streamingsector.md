@@ -4,6 +4,8 @@ description: Documentation on .streamingsector files
 
 # The whole world: .streamingsector
 
+**Last documented update: January 27, 2024 by** [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")
+
 {% hint style="info" %}
 If you want to know how to find a streaming sector, see [here](../references-lists-and-overviews/reference-world-sectors/places.md).
 
@@ -79,3 +81,62 @@ _No, I don't know how you round down 2\*16 to 31 either._
 {% endhint %}
 
 Some locations are partially defined in **quest sectors**, where parts of the location are locked away behind story triggers (for example half of V's apartment, as a lot of decoration will only be shown after completing quests). The exact process isn't fully understood as of May 2023.
+
+
+
+***
+
+## Block and sector's variants
+
+A steamingsector can split its nodes into ranges called variants. A variant is used to display/enable an amount of nodes in a specific situation (like during or after a quest). All sectors and their variants need to be declared somewhere; this place is the streamingblock.
+
+We will see how they are declared and how they are linked together.
+
+### Streamingblock
+
+The game contains only 3 streamingblocks that gather more than 26300 sectors.\
+We will focus on the main one and take a look at the first sector inside (`exterior_-18_3_-12_0`).
+
+{% hint style="info" %}
+When creating a mod with sectors, you will need to create your own block that will list your new sectors.
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/world_streamingsector__block (1).png" alt=""><figcaption></figcaption></figure>
+
+This sector has 10 variants, in this case, each one is related to a quest state.
+
+`numNodeRanges` indicate the number of node ranges the sector contains; it always corresponds to the number of variant + sector's default range (so here 10 variants + 1 default).
+
+
+
+When opening a variant definition, we can find the range index (to find the right range inside the sector file). `rangeIndex` cannot be 0, 0 is used as sector's default range.
+
+Variant's name is only used to identify the variant within the streamingblock.
+
+`enableDyDefault` is self-explanatory; it indicates whether it should be enabled by default.
+
+<figure><img src="../../.gitbook/assets/world_streamingsector__block_variant.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+The link between quests and sectors' variants is not well-researched as of Jan 2024 - if you know anything more about this, please get in touch via [Discord](http://discord.gg/redmodding) or update the wiki!
+{% endhint %}
+
+### Sector variants and ranges
+
+The sector file uses 2 arrays to define ranges: `variantIndices` and `variantNodes`.
+
+`variantNodes` contains as many empty arrays as variants (in this case, 10).
+
+`variantIndices` contains as many values as ranges needed (10 variants + 1 default range)
+
+<figure><img src="../../.gitbook/assets/world_streamingsector__sector_indices.png" alt=""><figcaption></figcaption></figure>
+
+A **variant indice** indicates the range starting nodeData index. This range goes from the index specified to the start of the following range. If we look at variant indice #7, the range starts at node index 14 (included) and ends at node index 46 (excluded).
+
+A sector always has a **default range** (variant indice 0); this default range indicates which nodes must always be visible/enable, whatever are the variants state. In our example, the default range goes from 0 to 1, so only the first node is always enabled.
+
+### Global overview
+
+Here is an overview of files relations:
+
+<figure><img src="../../.gitbook/assets/world_streamingsector__resume.png" alt=""><figcaption></figcaption></figure>
