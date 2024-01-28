@@ -44,6 +44,15 @@ If you edit the leg component for female V, you must change both the regular and
 `base\characters\common\player_base_bodies\appearances\l0_000_base__cs_flat.app`
 {% endhint %}
 
+#### The following .app files have been confirmed working:
+
+```
+base\characters\common\player_base_bodies\appearances\l0_000_base__cs_flat.app
+base\characters\common\player_base_bodies\appearances\l0_000_base__full.app
+base\characters\common\player_base_bodies\appearances\l0_000_base_fpp__cs_flat.app
+base\characters\common\player_base_bodies\appearances\l0_000_base_fpp__full.app 
+```
+
 #### Test
 
 After packing your project, [check if the body tag registers](archivexl-body-mods-and-refits.md#checking-the-current-body-mod) by running the CET command.&#x20;
