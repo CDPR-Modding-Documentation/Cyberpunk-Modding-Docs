@@ -4,13 +4,17 @@ description: How to read the game's tweak database
 
 # Browsing the tweak database
 
-#### Summary
+### Summary
 
 **Published:** Jan 13 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented edit:** Jan 13 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page tells you how to **browse** the TweakDB. \
 If you don't know what that is, you might want to read [.](./ "mention") first.
+
+{% hint style="info" %}
+If you're looking for all tweak database entries of the type XYZ, you might be lucky to find a list under [cheat-sheet-tweak-ids](../../references-lists-and-overviews/cheat-sheet-tweak-ids/ "mention"). If there isn't one, please **make one** once you have found what you're looking for!
+{% endhint %}
 
 ## Introduction
 
@@ -80,6 +84,16 @@ These folders contain a bunch of `.tweak` files, which you can open with a text 
    This is the most comfortable. Simply open the tweak folder and use the built-in search (hotkey for VSCode: `Ctrl+Shift+F`) to find your way along the files.
 3. [Agent Ransack](https://www.mythicsoft.com/agentransack/) (free)\
    A command line search interface
+
+### Searching .tweak files with powershell
+
+If you're just looking for occurrences of a certain string (e.g. all vendors), you can run the following powershell script from the tweaks directory:
+
+```powershell
+Get-ChildItem -Recurse -Filter *.tweak | ForEach-Object {
+    Get-Content $_.FullName | Select-String 'vendorID = "Vendors.'  | Get-Unique  | Out-File -Append -FilePath "Output.txt"
+}
+```
 
 ### Example: browsing .tweak files
 

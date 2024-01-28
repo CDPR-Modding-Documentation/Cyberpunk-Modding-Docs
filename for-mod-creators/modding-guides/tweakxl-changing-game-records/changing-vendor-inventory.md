@@ -4,7 +4,14 @@ description: How to manipulate vendor inventories
 
 # Changing vendor inventory
 
+### Summary
 
+**Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Jan 28 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+{% hint style="info" %}
+To find a list of all vendor IDs, check [cheat-sheet-vendor-ids.md](../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-vendor-ids.md "mention")
+{% endhint %}
 
 ## How to do this:
 

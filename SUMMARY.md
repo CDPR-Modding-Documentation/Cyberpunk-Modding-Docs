@@ -91,6 +91,8 @@
     * [Reference: .streamingsector node types](for-mod-creators/references-lists-and-overviews/reference-world-sectors/reference-.streamingsector-node-types.md)
   * [Reference: Quest Ids](for-mod-creators/references-lists-and-overviews/reference-quest-ids.md)
   * [Character Creator <=> ent/app](https://noraleedoes.neocities.org/npv/npv\_part\_picker)
+  * [Cheat Sheet: Tweak IDs](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/README.md)
+    * [Cheat Sheet: Vendor IDs](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-vendor-ids.md)
   * [Scripting](for-mod-creators/references-lists-and-overviews/scripting/README.md)
     * [Best practices / pitfalls](for-mod-creators/references-lists-and-overviews/scripting/scripting-best-practices-pitfalls.md)
 * [🔮 Textures, Materials and Shaders](for-mod-creators/materials/README.md)
