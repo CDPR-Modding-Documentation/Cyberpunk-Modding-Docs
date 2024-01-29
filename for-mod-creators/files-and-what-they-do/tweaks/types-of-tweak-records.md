@@ -9,6 +9,8 @@ description: Which kinds of tweak records exist? How are they defined? What do t
 
 {% hint style="danger" %}
 This page is a work in progress, as the tweak database is huge and barely-documented. If you have any information that needs to be in here, **please don't hesitate** to sign up as an editor and start contributing!
+
+If you just want a quick overview of a certain type of tweak, you can check [cheat-sheet-tweak-ids](../../references-lists-and-overviews/cheat-sheet-tweak-ids/ "mention") instead.
 {% endhint %}
 
 ## Summary
@@ -102,3 +104,24 @@ For more information on this, check the [new-iconic-weapon-tutorial-for-dummies.
 
 <table><thead><tr><th width="327">Effector name</th><th>Effector explanation</th></tr></thead><tbody><tr><td><code>ProcessHitTriggered</code></td><td>Does the bullet hit anything?</td></tr><tr><td><code>IsHitQuickMelee</code> </td><td>is the current attack a quick melee attack?</td></tr></tbody></table>
 
+##
+
+## Item modifiers
+
+### StatModifier
+
+This type of record adds a quality to an item, modifying its stats.
+
+#### Qualities
+
+Set an item's quality via [statModifier](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#step-7-make-it-iconic)
+
+<table><thead><tr><th width="327">Effector name</th><th></th></tr></thead><tbody><tr><td>Quality.IconicItem</td><td></td></tr><tr><td></td><td></td></tr></tbody></table>
+
+#### BaseStats
+
+These entries will start with BaseStats., e.g. `BaseStats.ReloadTimeBonus`.
+
+Unless specified otherwise, these are numeric (multipliers/additions).
+
+<table><thead><tr><th width="327">Effector name</th><th></th></tr></thead><tbody><tr><td>ReloadTimeBonus</td><td></td></tr><tr><td>RecoilKickMin</td><td></td></tr><tr><td>RecoilKickMax</td><td></td></tr><tr><td>SpreadDefaultX</td><td></td></tr><tr><td>SpreadMaxX</td><td></td></tr><tr><td>HitDismembermentFactor</td><td></td></tr><tr><td>HitWoundsFactor</td><td></td></tr><tr><td>EffectiveRange</td><td></td></tr></tbody></table>

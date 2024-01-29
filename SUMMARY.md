@@ -191,6 +191,7 @@
     * [Editing existing items](for-mod-creators/modding-guides/items-equipment/editing-existing-items/README.md)
       * [Adding decals](for-mod-creators/modding-guides/items-equipment/editing-existing-items/adding-decals.md)
       * [Changing materials, colors and textures](for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)
+      * [Adding stats and modifiers](for-mod-creators/modding-guides/items-equipment/editing-existing-items/adding-stats-and-modifiers.md)
       * [Replace a player item with an NPC item](for-mod-creators/modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/README.md)
         * [Replace a player clothes with NPC garment that requires blender editing](for-mod-creators/modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/replace-a-player-clothes-with-npc-garment-that-requires-blender-editing.md)
     * [Influencing other items](for-mod-creators/modding-guides/items-equipment/influencing-other-items.md)
