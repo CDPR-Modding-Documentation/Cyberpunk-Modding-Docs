@@ -14,6 +14,8 @@ This page contains information on .mesh files and their properties.
 In the context of Cyberpunk, a mesh is the file that defines the topology[^1] and the materials[^2] of an object in the game world.
 
 A mesh can have several **submeshes**, each of which has own material assignments.
+
+Mesh files for inanimate objects also tend to contain extensive physics parameters governing their physical weight and general behavior.
 {% endhint %}
 
 ## How the mesh is loaded
