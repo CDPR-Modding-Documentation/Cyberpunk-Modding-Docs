@@ -54,7 +54,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
   * [You forgot your CET keybind](./#you-forgot-your-cet-keybind)
 * [XML Document parsed with errors](./#xml-document-parsed-with-errors)
 * [You're naked](./#im-naked)
-* Your eyes are black
+* [Your eyes are black](./#v-has-black-eyes)
 * [You installed a mod, but it's not doing anything](./#mod-s-arent-loading-triggering)&#x20;
 * A mod is causing problems, and you have no idea which:
   * &#x20;[Known problem children](./#finding-the-broken-mod-known-problem-children)
@@ -1064,7 +1064,7 @@ Here's how to fix your sudden indecent exposure.
 
 ### V has black eyes!
 
-You most likely have an outdated version of [Kala's Unique Eyes](https://www.nexusmods.com/cyberpunk2077/mods/1937) installed.&#x20;
+You have an **outdated** or **two different** versions of [Kala's Unique Eyes](https://www.nexusmods.com/cyberpunk2077/mods/1937) installed.&#x20;
 
 Make sure to uninstall all your eye mods, then open your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md)[ ](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md)and use the Windows Search for e.g. `kala`. Make sure to delete all leftover files!
 
