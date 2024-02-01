@@ -4,15 +4,20 @@ description: Creating a custom inkatlas
 
 # Custom in-game icons
 
+## Tools needed:&#x20;
+
+[Wolvenkit ⇗](https://wiki.redmodding.org/wolvenkit/getting-started/download)\
+[Paint.net ⇗](https://www.getpaint.net/download.html)
+
 ## Preview images
 
 Okay, now you've added something! But it doesn't have a preview icon yet - you'll have to add this manually. For this purpose, you'll have to edit an image.
 
 {% hint style="warning" %}
-For a guide how to ensure image transparency, see [here](../textures-and-luts/images-importing-editing-exporting.md).
+For a guide how to ensure image transparency, see [here](../textures-and-luts/images-importing-editing-exporting.md) ⇗.
 {% endhint %}
 
-Cyberpunk uses xbm as format for its textures. These textures are then **mapped** (divided into slices) by inkatlas files. The individual slots can then be used by the game for pretty much everything from UI elements to phone call icons — and image previews.
+Cyberpunk uses **xbm** as format for its textures. These textures are then **mapped** (divided into slices) by **inkatlas** files. The individual slots can then  use these individual slices for various purposes, such as UI elements like phone call icons and image previews.
 
 {% hint style="info" %}
 If you want to use the in-game previews, you can find them under `base\gameplay\gui\common\icons\items`
@@ -20,7 +25,11 @@ If you want to use the in-game previews, you can find them under `base\gameplay\
 
 ### Setting up the files
 
-First of all, [download](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas\_templates\_apart\_v1.zip/file) the template archive (kindly provided by Apart). This includes the following files:
+Download the template archive:\
+\
+[**Template Download ⇗**\
+](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas\_templates\_apart\_v1.zip/file)\
+This includes the following files:
 
 | Template                      | Size of slot image |
 | ----------------------------- | ------------------ |
@@ -28,11 +37,21 @@ First of all, [download](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas
 | 5\_weapons                    | 360x120 (x5)       |
 | 40\_items\_inkatlas\_template | 160x160 (x40)      |
 
-This guide assumes that you have a bunch of ready-made icons lying around - if you don't and have no idea where to start, you can check [this](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view)[ link](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view), section "Making the icon".
+<figure><img src="../../../.gitbook/assets/image (190).png" alt=""><figcaption><p>The template provided contains these folders</p></figcaption></figure>
 
-Select 40\_items\_inkatlas\_template and copy the **.inkatlas** and the **.xbm** to a folder of your choice inside your Wolvenkit project( this guide will be using `tutorial\ops`).&#x20;
+**Template Credits: Apart**
 
-I'm renaming both of them to `preview_icons` so that future me won't be confused about this:
+{% hint style="info" %}
+This guide assumes you already have a collection of pre-made icons. If you don't and are unsure where to begin, you can refer to [The item addition guide ⇗](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view), specifically the "Making the icon" section for guidance.
+{% endhint %}
+
+
+
+From the template file, choose "<mark style="background-color:blue;">40\_items\_inkatlas\_template</mark>" and paste both the **.inkatlas** and **.xbm** files into a folder of your preference within your Wolvenkit project.&#x20;
+
+In this guide, we'll use the `tutorial\ops` folder as an example.\
+\
+We are renaming both files to `preview_icons` to avoid confusion in the future:
 
 <pre><code><strong>YourWolvenkitProject
 </strong><strong>  source
@@ -43,15 +62,15 @@ I'm renaming both of them to `preview_icons` so that future me won't be confused
       	  - preview_icons.xbm      
 </code></pre>
 
-1. Export `preview_icons.xbm` via the Export tool — we'll overwrite the resulting file to reimport it.
-2. Open  `40_item_template.pdn` in [**paint.net**](https://www.getpaint.net/download.html) and put all your icons in.
+1. Export `preview_icons.xbm` via the **Export tool.**
+2. Open  `40_item_template.pdn` (Provided on the template archive) in [**paint.net**](https://www.getpaint.net/download.html) and put all your icons in.
 3. Once you're done, hide the background layer and overwrite the file you've created in Step 1:
 
 ```
 <yourModDirectory>\raw\tutorial\ops\preview_icons.png
 ```
 
-4. Import the file. Make sure that IsGamma is turned off, everything else should already be OK:&#x20;
+4. Import the file using the **Import Tool.** Make sure that "IsGamma" under the Import tool options is turned **off**, everything else should already be OK:&#x20;
 
 <figure><img src="https://camo.githubusercontent.com/6191ea85dce6cbf272694a464a89a9c8fdd1333fd9bce8436aec97684e729355/68747470733a2f2f692e696d6775722e636f6d2f486370743652332e706e67" alt=""><figcaption></figcaption></figure>
 
