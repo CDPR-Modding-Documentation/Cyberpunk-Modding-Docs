@@ -90,9 +90,23 @@ These folders contain a bunch of `.tweak` files, which you can open with a text 
 If you're just looking for occurrences of a certain string (e.g. all vendors), you can run the following powershell script from the tweaks directory:
 
 ```powershell
+# Which file should your findings be written to?
+$outfile = "Output.txt"
+
+# adjust this too - what you're looking for. Treated as regular expression
+$searchString = '"BaseStats\.'
+
+Clear-Content -Path $outfile
+
+$UniqueFindList = [Collections.Generic.HashSet[string]]::new( [StringComparer]::InvariantCultureIgnoreCase )
+
 Get-ChildItem -Recurse -Filter *.tweak | ForEach-Object {
-    Get-Content $_.FullName | Select-String 'vendorID = "Vendors.'  | Get-Unique  | Out-File -Append -FilePath "Output.txt"
-}
+	Get-Content $_.FullName | Select-String "$searchString" | ForEach-Object {
+		$_.Line.Trim() -replace '^[^"]+"' -replace '^"' -replace '";?$' -replace '",.*$'
+	} | Where-Object { $UniqueFindList.Add($_) }
+} | Sort-Object | Out-File -FilePath "$outfile"
+
+
 ```
 
 ### Example: browsing .tweak files

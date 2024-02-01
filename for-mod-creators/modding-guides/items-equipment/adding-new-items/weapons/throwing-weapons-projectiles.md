@@ -39,7 +39,7 @@ Items.my_knife:
   projectileTemplateName: my_new_weapon_projectile_name
   useProjectileAppearance: true
   attacks: 
-    - !append KnifeAttacks.KunaiKnifeThrowAttackProjectile
+    - !append KnifeAttacks.MyKnifeThrowAttackProjectile
 ```
 
 If your weapon wasn't throwable before, it is now — but the projectile is still invisible. Time to change that.
@@ -97,7 +97,9 @@ From now on, your projectile will no longer be invisible. If it is, try setting 
 
 ## Step 3: the .app
 
+{% hint style="info" %}
 If you're using a mesh entity (with an empty `appearances` array), you can **skip this step**.
+{% endhint %}
 
 1. Expand the `appearances` array
 2. Select any of the appearances
@@ -109,7 +111,7 @@ If you're using a mesh entity (with an empty `appearances` array), you can **ski
 ## Step 4: The right mesh
 
 {% hint style="info" %}
-If you are using a mesh entity (without an `.app` file), that's where you will find the `component`s.  Skip step 1 on the list below, then change the paths for any components pointing to other `.mesh` files.
+If you are using a mesh entity (without an `.app` file), that's where you will find the `component`s.  Skip step 1 on the list below.
 {% endhint %}
 
 1. Open your `.app` file . For each of the `appearance`s, do the following:
