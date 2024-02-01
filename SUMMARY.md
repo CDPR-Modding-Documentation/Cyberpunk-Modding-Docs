@@ -247,6 +247,7 @@
   * [🎺 Sound](for-mod-creators/modding-guides/sound/README.md)
     * [Playing Sounds in-game : Basics](for-mod-creators/modding-guides/sound/playing-sounds-in-game-basics.md)
   * [❕ Quests](for-mod-creators/modding-guides/quest/README.md)
+    * [Visualize Quest files](for-mod-creators/modding-guides/quest/visualize-quest-files.md)
     * [How to Edit Voiceover and Subtitles In a Quest.](for-mod-creators/modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
     * [How to Change Position and Rotation of an entMeshComponent](for-mod-creators/modding-guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
     * [How to Remove an Animation (and Potentially Replace It)](for-mod-creators/modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
