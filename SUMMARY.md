@@ -135,6 +135,7 @@
     * [Browsing the tweak database](for-mod-creators/files-and-what-they-do/tweaks/browsing-the-tweak-database.md)
     * [Types of tweak records](for-mod-creators/files-and-what-they-do/tweaks/types-of-tweak-records.md)
   * [Dependency resolution](for-mod-creators/files-and-what-they-do/dependency-resolution.md)
+  * [Behaviors: .behavior files](for-mod-creators/files-and-what-they-do/behaviors-.behavior-files.md)
 * [🌐 3d Modelling](for-mod-creators/3d-modelling/README.md)
   * [Importing and Exporting Meshes](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export#meshes)
   * [Morphtargets](for-mod-creators/3d-modelling/morphtargets.md)
