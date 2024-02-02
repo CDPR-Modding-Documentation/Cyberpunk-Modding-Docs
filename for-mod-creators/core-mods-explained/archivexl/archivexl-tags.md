@@ -40,6 +40,12 @@ Please keep in mind that you need to add those to the [.app file](../../files-an
 
 ### Hiding body parts: diagram
 
+
+
+{% hint style="info" %}
+To hide whole items under certain conditions, check the EmptyAppearance tag. You'll find more details under [archivexl-suffixes-and-substitutions.md](archivexl-suffixes-and-substitutions.md "mention") -> [#camera-modes](archivexl-suffixes-and-substitutions.md#camera-modes "mention")
+{% endhint %}
+
 <div>
 
 <figure><img src="../../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_mV.png" alt=""><figcaption><p>male version - image by LadyLea</p></figcaption></figure>
