@@ -70,8 +70,28 @@ We are renaming both files to `preview_icons` to avoid confusion in the future:
 <yourModDirectory>\raw\tutorial\ops\preview_icons.png
 ```
 
-4. Import the file using the **Import Tool.** Make sure that "IsGamma" under the Import tool options is turned **off**, everything else should already be OK:&#x20;
+4. Import the file using the **Import Tool.** Make sure that "IsGamma" under the Import tool options is turned **off**, everything else should already be OK.\
+   You can now open `preview_images.xbm` in Wolvenkit and see your new, edited items.
+5. Link the **xbm** file to the **inkatlas:** copy the relative path (right click on the file -> "copy relative path") and paste it on the texture slot on the **inkatlas** (image A)
+6.
 
-<figure><img src="https://camo.githubusercontent.com/6191ea85dce6cbf272694a464a89a9c8fdd1333fd9bce8436aec97684e729355/68747470733a2f2f692e696d6775722e636f6d2f486370743652332e706e67" alt=""><figcaption></figcaption></figure>
+    <div align="left" data-full-width="true">
 
-You can now open `preview_images.xbm` in Wolvenkit and see your new, edited items.
+    <figure><img src="../../../.gitbook/assets/image (191).png" alt=""><figcaption><p>Image A</p></figcaption></figure>
+
+    </div>
+7. _<mark style="color:red;">(Optional)</mark>_ If you want to connect the **inkatlas** with your item, refer to the [ArchiveXL **⇗** ](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/custom-icons-and-ui/adding-items-preview-images)guide for detailed instructions. \
+   \
+   In the YAML file created for your item, include the path in the "icon" section (Image B).\
+
+
+```
+  icon:
+    atlasResourcePath: base\40_item_template.inkatlas
+    atlasPartName: slot_01
+```
+
+
+
+<figure><img src="../../../.gitbook/assets/image (192).png" alt=""><figcaption><p>Image B (Optional)</p></figcaption></figure>
+
