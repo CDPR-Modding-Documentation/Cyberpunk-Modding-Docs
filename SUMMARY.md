@@ -184,7 +184,7 @@
     * [Swap Johnny during the Alt's scene](for-mod-creators/modding-guides/npcs/swap-johnny-during-the-alts-scene.md)
     * [Custom facial piercings - PRC Framework](for-mod-creators/modding-guides/npcs/custom-facial-piercings-prc-framework.md)
     * [Custom Tattoos](for-mod-creators/modding-guides/npcs/custom-tattoos/README.md)
-      * [Converting between tattoo frameworks](for-mod-creators/modding-guides/npcs/custom-tattoos/converting-between-tattoo-frameworks.md)
+      * [Converting between texture frameworks](for-mod-creators/modding-guides/npcs/custom-tattoos/converting-between-tattoo-frameworks.md)
       * [Merging existing tattoos](for-mod-creators/modding-guides/npcs/custom-tattoos/merging-existing-tattoos.md)
   * [👕 Items: Equipment](for-mod-creators/modding-guides/items-equipment/README.md)
     * [Recolours and Refits](for-mod-creators/modding-guides/items-equipment/recolours-and-refits/README.md)
