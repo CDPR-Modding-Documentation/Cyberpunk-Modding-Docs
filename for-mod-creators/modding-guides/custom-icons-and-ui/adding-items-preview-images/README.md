@@ -76,13 +76,14 @@ You can [export your mesh with all its materials](../../../3d-modelling/exportin
 
 1. Open the file in WolvenKit.
 2. Open the list `slots`.
-3.  For the first two `inkTextureSlot` items, set the value for `DepotPath` to the relative path of your xbm (`tutorial\torso\my_custom_shirt\ops\preview_icons.xbm`):\
+3. For the first two `inkTextureSlot` items, set the value for `DepotPath` to the relative path of your xbm (`tutorial\torso\my_custom_shirt\ops\preview_icons.xbm`):
 
+<figure><img src="../../../../.gitbook/assets/inkatlas_slot_names.png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="https://camo.githubusercontent.com/de75d2fe693670acc81643404a2692f00e035694a7ea9f5a5a01949c87162c0e/68747470733a2f2f692e696d6775722e636f6d2f655953666c46472e706e67" alt=""><figcaption></figcaption></figure>
 4. Save the file. If it doesn't update, close and re-open it.
-5. You now have a tab "PartMapping". You can see which texture corresponds to which slot by selecting it in the other tab and checking the `partsValue`:\
-   [![](https://camo.githubusercontent.com/ebb4bfd08e046d42e7af459b4037371907951856ccbe8eafaabd7610955bd46b/68747470733a2f2f692e696d6775722e636f6d2f5370494d4f306c2e706e67)](https://camo.githubusercontent.com/ebb4bfd08e046d42e7af459b4037371907951856ccbe8eafaabd7610955bd46b/68747470733a2f2f692e696d6775722e636f6d2f5370494d4f306c2e706e67)
+5. You now have a tab "PartMapping". You can see which texture corresponds to which slot by selecting it in the other tab and checking the `partsName`, which corresponds to the entry in the slot's  `parts` array:
+
+<figure><img src="../../../../.gitbook/assets/inkatlas_icon_to_slot_assignment.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 Congratulations! You now have a preview icon!
