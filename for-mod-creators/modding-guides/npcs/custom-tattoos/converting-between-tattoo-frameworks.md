@@ -25,9 +25,20 @@ The initial [body and tattoo framework](https://www.nexusmods.com/cyberpunk2077/
 
 #### Supported body mods
 
-* Lush/SoLush
-* Atlas
-* Solo
+* (F) Lush/SoLush
+* (F) Solo
+* (F) Solo Small
+* (F) Solo Ultimate
+* (F) Project Valentine
+* (F) Nanarc's Flat Chest Body
+* (F) Vanilla Plus
+* (F) Songbird Body
+* (F) Songbird Body 2.0
+* (F) Ultra High Poly Body (UHPB)
+* (F) Vanilla High Feet (Alternate UV Framework base body file)
+* (M) Adonis
+* (M) Atlas
+* (M) Pinkydude's "Better Feet" Body
 
 #### Tattoo files
 
@@ -41,7 +52,13 @@ The tattoo files for KSUV are separated by body gender.
 
 #### Supported body mods
 
-* ?
+* (F) Hyst Enhanced Big Breasts (EBB)
+* (F) Hyst Realistic Booty (RB)
+* (F) Hyst Enhanced Big Breasts + Realistic Booty (EBBRB)
+* (F) Hyst Enhanced Big Breasts: Push (EBBP)
+* (F) Hyst Enhanced Big Breasts + Realistic Booty: Push (EBBRBP)
+* (F) Hyst Enhanced Vanilla Body (EVB)
+* (F) Vanilla HD (Big and Small Breasts)
 
 #### Tattoo Files
 
@@ -53,11 +70,18 @@ The [UV layout](../../../materials/uv-mapping-texturing-a-3d-object.md) of the t
 
 
 
-| KS UV                                       | VTK                                         |
-| ------------------------------------------- | ------------------------------------------- |
-| Arms on same texture as the rest            | Arms on different texture                   |
-| Separate body overlays for each body gender | Same body overlays for each body gender (?) |
-|                                             |                                             |
+| KS UV                                                    | VTK                                         |
+| -------------------------------------------------------- | ------------------------------------------- |
+| Arms on same texture as the rest for basic version       | Arms on different texture                   |
+| Add-on version for further arm texture layout options    | Requires Unique arms by Halvkyrie           |
+| Unique Normals map for base version                      | Same body overlays for each body gender (?) |
+| Unique normals maps for arms with Add-on version         | Emissive (glow) overlay
+| Separate body overlays for each body gender              | Alternate Texture for foot submeshes
+| Emissive (glow) overlay                                  | 
+| Unique Normals map for base version                      |
+| Cyberarms built in to base version                       |
+| Unique Skintone .mi (Material instance) files            |
+| Unique Eyebrows                                          |
 
 (TODO: post screenshots with outlines)
 
