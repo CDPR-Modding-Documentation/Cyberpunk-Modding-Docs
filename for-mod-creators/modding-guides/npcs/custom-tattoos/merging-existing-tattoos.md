@@ -70,3 +70,22 @@ Make sure to check the [linked guide ](../../textures-and-luts/images-importing-
 3. Check the textures in the Image Preview to make sure that they look OK. [Troubleshoot](../../textures-and-luts/images-importing-editing-exporting.md) them if not.
 
 Now it's time to [install your new mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game. Click and hold the green play button on Wolvenkit's toolbar, select "Install and Play", and look at your new tattoo in action.
+
+## **List of the differents type of overlays names :**
+
+{% hint style="info" %}
+The body file of KS\_UV contain the Torso, Back, Legs and Arms parts\
+The body file of VTK contain Torso, Back and Legs parts
+{% endhint %}
+
+| Framework | Overlay name                               | gender/body part              |
+| --------- | ------------------------------------------ | ----------------------------- |
+| KS\_UV    | fullbody\_overlay\_d01                     | female  body (see note below) |
+|           | ma\_fullbody\_overlay\_d01                 | male  body                    |
+|           | wa\_head\_overlay\_d01 female head overlay | female head                   |
+|           | ma\_head\_overlay\_d01                     | male head                     |
+|           |                                            |                               |
+| VTK       | v\_overlay                                 | female body (see note below)  |
+|           | 11597681951245522818                       | female head                   |
+|           | femme\_arm\_left\_01\_overlay              | female left arm               |
+|           | femme\_arm\_right\_01\_overlay             | female right arm              |
