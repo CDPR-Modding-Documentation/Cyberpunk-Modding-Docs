@@ -45,13 +45,21 @@ The tattoo files for KSUV are separated by body gender.
 
 #### Tattoo Files
 
-The tattoo files for VTK are not separated by body gender.
-
-<table><thead><tr><th width="216">body part</th><th>relative file path</th></tr></thead><tbody><tr><td>arms</td><td><code>base\characters\player\femme\body\arms\textures\femme_arm_left_01_overlay.xbm</code><br><code>base\characters\player\femme\body\arms\textures\femme_arm_right_01_overlay.xbm</code></td></tr><tr><td>body</td><td><code>base\v_textures\body\v_overlay.xbm</code><br><code>base\v_textures\body\v_glow.xbm</code></td></tr><tr><td>head</td><td>??</td></tr></tbody></table>
+<table><thead><tr><th width="216">body part</th><th>relative file path</th></tr></thead><tbody><tr><td>femme arms</td><td><code>base\characters\player\femme\body\arms\textures\femme_arm_left_01_overlay.xbm</code><br><code>base\characters\player\femme\body\arms\textures\femme_arm_right_01_overlay.xbm</code></td></tr><tr><td>femme head</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures\h0_001_pwa_c__basehead_overlay.xbm</code></td></tr><tr><td>body (both?)</td><td><code>base\v_textures\body\v_overlay.xbm</code><br><code>base\v_textures\body\v_glow.xbm</code></td></tr><tr><td>masc arms</td><td>??</td></tr><tr><td>masc head</td><td>??</td></tr></tbody></table>
 
 ### What's the difference?
 
-The [UV layout](../../../materials/uv-mapping-texturing-a-3d-object.md) of the textures is different. (TODO: post examples)
+The [UV layout](../../../materials/uv-mapping-texturing-a-3d-object.md) of the textures is different:&#x20;
+
+
+
+| KS UV                                       | VTK                                         |
+| ------------------------------------------- | ------------------------------------------- |
+| Arms on same texture as the rest            | Arms on different texture                   |
+| Separate body overlays for each body gender | Same body overlays for each body gender (?) |
+|                                             |                                             |
+
+(TODO: post screenshots with outlines)
 
 
 
