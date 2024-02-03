@@ -11,10 +11,20 @@ description: How to merge two or more existing tattoos
 
 This guide will teach you how to merge multiple tattoos into one. It will not cover the process of[converting-between-tattoo-frameworks.md](converting-between-tattoo-frameworks.md "mention").
 
+#### Level of difficulty
+
+**The ability to read**: mandatory, because I'm not gonna lie — this is gonna be difficult otherwise.\
+**Knowing how to edit images**: recommended, because this guide will not cover it. If you don't know it, the relevant section will tell you what to Google, though.
+
+#### Expected time to complete
+
+<1h for total noobs, <10 minutes if you know what you're doing
+
 ## Prerequisites
 
 * [ ] You have [Wolvenkit installed](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download)
-* [ ] You have all tattoo mods that you want to merge installed to your Cyberpunk dir
+* [ ] You have all tattoo mods that you want to merge installed (even though only one of them will be active)
+* [ ] All your tattoo mods are for the same framework (if not, check the guide about [converting-between-tattoo-frameworks.md](converting-between-tattoo-frameworks.md "mention") and do that first)
 
 ## Step 0: Create a Wolvenkit Project
 
