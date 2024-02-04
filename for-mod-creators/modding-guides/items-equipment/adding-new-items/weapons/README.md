@@ -2,7 +2,7 @@
 description: Adding weapons
 ---
 
-# 🔫 Weapons
+# 🔫 ItemAdditions: Weapons
 
 ## Summary
 
@@ -132,6 +132,17 @@ If you wish to add a custom icon, follow the steps in the [corresponding guide](
 ## Your own HUD icons
 
 To make your own HUD icons for the lower right corner, check [here](../../../custom-icons-and-ui/your-own-hud-icons.md).
+
+## Weapon Audio
+
+You can change which weapon audio preset your custom iron uses by changing the following property in the `.yaml` (see a list under [cheat-sheet-weapon-audio.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-audio.md "mention")):
+
+<pre class="language-yaml"><code class="lang-yaml"><strong># for guns etc
+</strong>weaponAudio: wea_set_achilles
+
+# for melee weapons
+audioWeaponConfiguration: audio_melee_metadata_katana
+</code></pre>
 
 ## Custom throwing weapons
 
