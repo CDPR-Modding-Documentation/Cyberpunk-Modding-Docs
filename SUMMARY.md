@@ -249,6 +249,7 @@
     * [Enable embedded collisions](for-mod-creators/modding-guides/world-editing/enable-embedded-collisions.md)
     * [Custom advertisements](for-mod-creators/modding-guides/world-editing/custom-advertisements.md)
     * [Archived: World editing via file edit](for-mod-creators/modding-guides/world-editing/archived-world-editing-via-file-edit.md)
+    * [Custom advertisements](for-mod-creators/modding-guides/world-editing/custom-advertisements-1.md)
   * [🎺 Sound](for-mod-creators/modding-guides/sound/README.md)
     * [Playing Sounds in-game : Basics](for-mod-creators/modding-guides/sound/playing-sounds-in-game-basics.md)
   * [❕ Quests](for-mod-creators/modding-guides/quest/README.md)
