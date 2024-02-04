@@ -1,6 +1,6 @@
 ---
 description: >-
-  Once, there was only one framework and everyone modded in harmony. But
+  Once, there was only one framework and everyone modded in harmony, but then
   everything changed when the fire nation attacked.
 ---
 
@@ -15,9 +15,9 @@ description: >-
 This page is only a stub and needs expanding (someone should write the actual guide)
 {% endhint %}
 
-## Which tattoo frameworks exist?
+## Which texture frameworks exist?
 
-As of February 2024, there are two tattoo frameworks (and if the heavens are kind, there won't be any more):
+As of February 2024, there are two texture frameworks (and if the heavens are kind, there won't be any more):
 
 ### [The UV Framework](https://www.nexusmods.com/cyberpunk2077/mods/3783)&#x20;
 
@@ -44,9 +44,9 @@ Also known as "UV" or "KS UV", this was the initial [body and tattoo framework](
 
 #### Texture files
 
-The tattoo files for UV are separated by body gender.
+The texture files for UV are separated by body gender.
 
-<table><thead><tr><th width="216">gender and body part</th><th>relative file path</th></tr></thead><tbody><tr><td>femme arms</td><td>None separate from body texture yet</td></tr><tr><td>femme body</td><td><p>Skins:</p><p><code>base\4k\common\body\wa\textures\d02_naked.xbm</code></p><p><code>base\4k\common\body\wa\textures\n02_naked.xbm</code></p><p><code>base\4k\common\body\wa\textures\wa_base_rm02.xbm</code></p><p></p><p>Tattoos:</p><p><code>base\4k\common\overlays\fullbody_overlay_d01.xbm</code><br><code>base\4k\common\overlays\glow_overlay_d01.xbm</code></p></td></tr><tr><td>femme head</td><td><p>Skins:</p><p><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures\h0_000_pwa_c__basehead_d01.xbm</code></p><p><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures\h0_001_pwa_c__basehead_n01.xbm</code></p><p></p><p>Tattoo:</p><p><code>base\4k\common\overlays\wa_head_overlay_d01.xbm</code><br><code>base\4k\common\overlays\wa_head_glow_d01.xbm</code></p></td></tr><tr><td>masc arms</td><td>None separate from body texture yet</td></tr><tr><td>masc body</td><td><p>Skins:</p><p><code>base\4k\common\body\ma\textures\d03_naked.xbm</code><br><code>base\4k\common\body\ma\textures\n03_naked.xbm</code></p><p><code>base\4k\common\body\ma\textures\ma_base_rm03.xbm</code></p><p></p><p>Tattoos:</p><p><code>base\4k\common\overlays\ma_fullbody_overlay_d01.xbm</code><br><code>base\4k\common\overlays\ma_glow_overlay_d01.xbm</code></p></td></tr><tr><td>masc head</td><td><p>Skins:</p><p><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\textures\h0_000_pma_c__basehead_d01.xbm</code></p><p><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\textures\h0_000_pma_c__basehead_n01.xbm</code></p><p></p><p>Tattoos:</p><p><code>base\4k\common\overlays\wa_head_overlay_d01.xbm</code><br><code>base\4k\common\overlays\wa_head_glow_d01.xbm</code></p></td></tr><tr><td>Material Instances (masc &#x26; femme)</td><td><code>base\characters\common\skin\player_mat_instance</code></td></tr></tbody></table>
+<table><thead><tr><th width="216">gender and body part</th><th>relative file path</th></tr></thead><tbody><tr><td>femme arms</td><td>None separate from body texture yet</td></tr><tr><td>femme body</td><td><p>Skins:</p><p><code>base\4k\common\body\wa\textures\d02_naked.xbm</code></p><p><code>base\4k\common\body\wa\textures\n02_naked.xbm</code></p><p><code>base\4k\common\body\wa\textures\wa_base_rm02.xbm</code></p><p></p><p>Tattoos:</p><p><code>base\4k\common\overlays\fullbody_overlay_d01.xbm</code><br><code>base\4k\common\overlays\glow_overlay_d01.xbm</code></p></td></tr><tr><td>femme head</td><td><p>Skins:</p><p><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures\h0_000_pwa_c__basehead_d01.xbm</code></p><p><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures\h0_001_pwa_c__basehead_n01.xbm</code></p><p></p><p>Tattoo:</p><p><code>base\4k\common\overlays\wa_head_overlay_d01.xbm</code><br><code>base\4k\common\overlays\wa_head_glow_d01.xbm</code></p></td></tr><tr><td>masc arms</td><td>None separate from body texture yet</td></tr><tr><td>masc body</td><td><p>Skins:</p><p><code>base\4k\common\body\ma\textures\d03_naked.xbm</code><br><code>base\4k\common\body\ma\textures\n03_naked.xbm</code></p><p><code>base\4k\common\body\ma\textures\ma_base_rm03.xbm</code></p><p></p><p>Tattoos:</p><p><code>base\4k\common\overlays\ma_fullbody_overlay_d01.xbm</code><br><code>base\4k\common\overlays\ma_glow_overlay_d01.xbm</code></p></td></tr><tr><td>masc head</td><td><p>Skins:</p><p><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\textures\h0_000_pma_c__basehead_d01.xbm</code></p><p><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\textures\h0_000_pma_c__basehead_n01.xbm</code></p><p></p><p>Tattoos:</p><p><code>base\4k\common\overlays\wa_head_overlay_d01.xbm</code><br><code>base\4k\common\overlays\wa_head_glow_d01.xbm</code></p></td></tr><tr><td>Skintones/Material instances (masc &#x26; femme)</td><td><code>base\characters\common\skin\player_mat_instance</code></td></tr></tbody></table>
 
 ### [V Texture Kit](https://www.nexusmods.com/cyberpunk2077/mods/7054)
 
@@ -57,18 +57,18 @@ The tattoo files for UV are separated by body gender.
 * (F) Hyst [Enhanced Big Breasts](https://www.nexusmods.com/cyberpunk2077/mods/4654) (EBB)
 * (F) Hyst [Realistic Booty](https://www.nexusmods.com/cyberpunk2077/mods/4420) (RB)
 * (F) Hyst Enhanced Big Breasts + Realistic Booty (EBBRB)
-* (F) [Hyst Enhanced Big Breasts: Push](https://www.nexusmods.com/cyberpunk2077/mods/9083) (EBBP)
+* (F) Hyst[ Enhanced Big Breasts: Push](https://www.nexusmods.com/cyberpunk2077/mods/9083) (EBBP)
 * (F) Hyst Enhanced Big Breasts + Realistic Booty: Push (EBBRBP)
 * (F) Hyst [Enhanced Vanilla Body](https://www.nexusmods.com/cyberpunk2077/mods/11489) (EVB)
 * (F) [Vanilla HD](https://www.nexusmods.com/cyberpunk2077/mods/7482) (Big and Small Breasts)
 
 #### Tattoo Files
 
-<table><thead><tr><th width="216">body part</th><th>relative file path</th></tr></thead><tbody><tr><td>femme arms</td><td><code>base\characters\player\femme\body\arms\textures\femme_arm_left_01_overlay.xbm</code><br><code>base\characters\player\femme\body\arms\textures\femme_arm_right_01_overlay.xbm</code></td></tr><tr><td>femme head</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures\h0_001_pwa_c__basehead_overlay.xbm</code></td></tr><tr><td>body (both?)</td><td><code>base\v_textures\body\v_overlay.xbm</code><br><code>base\v_textures\body\v_glow.xbm</code></td></tr><tr><td>masc arms</td><td>??</td></tr><tr><td>masc head</td><td>??</td></tr></tbody></table>
+<table><thead><tr><th width="216">body part</th><th>relative file path</th></tr></thead><tbody><tr><td>femme arms</td><td><code>base\characters\player\femme\body\arms\textures\femme_arm_left_01_overlay.xbm</code><br><code>base\characters\player\femme\body\arms\textures\femme_arm_right_01_overlay.xbm</code></td></tr><tr><td>femme head</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures\h0_001_pwa_c__basehead_overlay.xbm</code></td></tr><tr><td>femme body</td><td><code>base\v_textures\body\v_overlay.xbm</code><br><code>base\v_textures\body\v_glow.xbm</code></td></tr><tr><td>masc arms</td><td>??</td></tr><tr><td>masc head</td><td>??</td></tr><tr><td>masc body</td><td>??</td></tr></tbody></table>
 
 ### What's the difference?
 
-The [UV layout](../../../materials/uv-mapping-texturing-a-3d-object.md) of the textures is different:
+Primarily, the basic difference is the [UV layout](../../../materials/uv-mapping-texturing-a-3d-object.md) of the body/arm textures between the base version of the UV Framework, and VTK. Beyond that other features include:
 
 | KS UV                                                 | VTK                                                                                             |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
