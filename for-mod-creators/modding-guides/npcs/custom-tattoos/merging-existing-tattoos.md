@@ -56,8 +56,9 @@ You can find a detailed guide on how to do this under [analysing-other-mods](../
 
 1. Use Wolvenkit's [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) to export all the files to `.png`
 2. Open the file in the image editing software of your choice (if you don't have one, use [photopea.com](https://www.photopea.com/))
-3. Merge the textures. If you don't know how, you can google "how to merge layers in `<software of your choice>`" and find guides by the dozen.
-4. [Export the textures](../../textures-and-luts/images-importing-editing-exporting.md), overwriting the files from your last export in your Wolvenkit project's `raw` directory.
+3. Make sure to use the same `resolution` for all the tattoos, otherwise the tattoos will be placed incorrectly, they will either be too big or too small compared to other tattoos, usually `4096x4096`  is the most used resolution.
+4. Merge the textures. If you don't know how, you can google "how to merge layers in `<software of your choice>`" and find guides by the dozen.
+5. [Export the textures](../../textures-and-luts/images-importing-editing-exporting.md), overwriting the files from your last export in your Wolvenkit project's `raw` directory.
 
 {% hint style="warning" %}
 Make sure to check the [linked guide ](../../textures-and-luts/images-importing-editing-exporting.md)for how to enable transparency!
@@ -71,6 +72,10 @@ Make sure to check the [linked guide ](../../textures-and-luts/images-importing-
 
 Now it's time to [install your new mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game. Click and hold the green play button on Wolvenkit's toolbar, select "Install and Play", and look at your new tattoo in action.
 
+{% hint style="info" %}
+After installing your new tattoo mod, remember to delete the original files in your mod folder, otherwise it will cause conflict between the different tattoo mods.
+{% endhint %}
+
 ## **List of the differents type of overlays names :**
 
 {% hint style="info" %}
@@ -80,12 +85,12 @@ The body file of VTK contain Torso, Back and Legs parts
 
 | Framework | Overlay name                               | gender/body part              |
 | --------- | ------------------------------------------ | ----------------------------- |
-| KS\_UV    | fullbody\_overlay\_d01                     | female  body (see note below) |
+| KS\_UV    | fullbody\_overlay\_d01                     | female  body (see note above) |
 |           | ma\_fullbody\_overlay\_d01                 | male  body                    |
 |           | wa\_head\_overlay\_d01 female head overlay | female head                   |
 |           | ma\_head\_overlay\_d01                     | male head                     |
 |           |                                            |                               |
-| VTK       | v\_overlay                                 | female body (see note below)  |
+| VTK       | v\_overlay                                 | female body (see note above)  |
 |           | 11597681951245522818                       | female head                   |
 |           | femme\_arm\_left\_01\_overlay              | female left arm               |
 |           | femme\_arm\_right\_01\_overlay             | female right arm              |
