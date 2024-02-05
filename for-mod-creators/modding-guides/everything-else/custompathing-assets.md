@@ -19,11 +19,11 @@ You need a [Wolvenkit Project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/w
 
 Find the original file at `base\weapons\firearms\handgun\constitutional_liberty\entities\meshes\w_handgun__constitutional_liberty__base1_01.mesh` and [add it to your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 In the [project explorer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer), right click > copy > paste wherever you want it. Change the file name and you're done, it's that simple. Now you can export the file, change whatever you want, and re-import it.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Just remember to change the reference to the mesh or file you want to change.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Just remember to change the reference to the mesh or file you want to change.</p></figcaption></figure>
 
 ## Custompathing stuff in game files
 

@@ -179,7 +179,7 @@ Your LUT is now correctly set up. You can install and launch now!
 
 <div>
 
-<figure><img src="../../../../.gitbook/assets/1.png" alt=""><figcaption><p>Vanilla</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/1 (1).png" alt=""><figcaption><p>Vanilla</p></figcaption></figure>
 
  
 
@@ -187,10 +187,10 @@ Your LUT is now correctly set up. You can install and launch now!
 
  
 
-<figure><img src="../../../../.gitbook/assets/3.png" alt=""><figcaption><p>ACES</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/3 (1).png" alt=""><figcaption><p>ACES</p></figcaption></figure>
 
  
 
-<figure><img src="../../../../.gitbook/assets/4 (1).png" alt=""><figcaption><p>LogC4</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/4 (1) (1).png" alt=""><figcaption><p>LogC4</p></figcaption></figure>
 
 </div>

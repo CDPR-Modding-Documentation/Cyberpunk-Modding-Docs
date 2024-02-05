@@ -129,7 +129,7 @@ You will find it in the following path:
 tweaks/base/gameplay/static_data/database/items/weapons/ranged/handguns/lexington/preset_base_lexington.tweak
 ```
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption><p><code>Preset_Lexington_Wilson</code>, but in .tweak format.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p><code>Preset_Lexington_Wilson</code>, but in .tweak format.</p></figcaption></figure>
 
 This is the same tweak you'd find in the [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser), but it's much easier to read and understand.
 
