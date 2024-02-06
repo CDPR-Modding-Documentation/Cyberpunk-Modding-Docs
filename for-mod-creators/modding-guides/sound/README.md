@@ -21,3 +21,5 @@ Feel free to sign up and add your knowledge to the wiki. It doesn't matter if th
 There are a couple of pages about sounds on Roms1383s wiki for his Addicted Mod:
 
 [https://cyb3rpsych0s1s.github.io/4ddicted/cheatsheet/sounds.html](https://cyb3rpsych0s1s.github.io/4ddicted/cheatsheet/sounds.html) [https://cyb3rpsych0s1s.github.io/4ddicted/travelog/2023-03-31.html](https://cyb3rpsych0s1s.github.io/4ddicted/travelog/2023-03-31.html)
+
+Bioskop's comprehensive guide to vocoding - [Google Docs](https://docs.google.com/document/d/1h\_far0MPnKtxnhuxUWLiQduqNw6dxgr2qSNB84dCkEQ/edit#heading=h.amjq0j2yglxw)

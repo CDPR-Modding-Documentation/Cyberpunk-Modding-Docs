@@ -73,6 +73,7 @@ Please see the corresponding [sub-page](external-npvs-v-as-npc-custom-npcs.md)
 | [Creating voice effects](https://docs.google.com/document/d/1h\_far0MPnKtxnhuxUWLiQduqNw6dxgr2qSNB84dCkEQ/edit?usp=sharing) ([video](https://youtu.be/70cb4\_Sx7A0))                        | How to Vocode voices for the game |
 | [Making own radio stations](https://www.nexusmods.com/cyberpunk2077/articles/206) ([guide](https://github.com/justarandomguyintheinternet/CP77\_radioExt#how-to-create-new-radio-stations)) | Guide on Nexus                    |
 | [Making own radio stations (guide)](https://github.com/justarandomguyintheinternet/CP77\_radioExt#how-to-create-new-radio-stations)                                                         | Guide on github                   |
+| [Bioskop's comprehensive guide to vocoding](https://docs.google.com/document/d/1h\_far0MPnKtxnhuxUWLiQduqNw6dxgr2qSNB84dCkEQ/edit#heading=h.amjq0j2yglxw)                                   | Google Doc                        |
 
 ## Know-how
 
