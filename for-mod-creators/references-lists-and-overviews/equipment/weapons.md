@@ -2,7 +2,21 @@
 description: We need guns, lots of guns.
 ---
 
-# Weapons
+# Cheat sheet: Weapons
+
+## Summary
+
+Last documented edit: Feb 07 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page lists weapon .ent files by associated iron for your convenience.
+
+#### Wait, this is not what I want!
+
+* For a guide on adding custom weapons, check [weapons](../../modding-guides/items-equipment/adding-new-items/weapons/ "mention") or [new-iconic-weapon-tutorial-for-dummies.md](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
+* For an overview of weapon properties, check [cheat-sheet-weapon-basestats.md](../cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats.md "mention")
+* For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](../cheat-sheet-tweak-ids/cheat-sheet-weapon-audio.md "mention")
+
+## Weapons
 
 Weapons dont seem to have ent files that tie them together in quite the same way as most things they do however have app files that have the component lists, so who cares?&#x20;
 

@@ -6,16 +6,24 @@ description: Adding weapons
 
 ## Summary
 
-**Created by @manavortex**\
-**Published July 08. 2023**
+&#x20;**Published: July 08. 2023 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+&#x20;**Last documented update: Feb 07 2024 by @manavortex**
 
-Weapons work a little different from regular ArchiveXL items, starting right at the root entity. With the help of @**Apart** and **psiberx,** I was able to figure out the process and document it for you.
+This guide will teach you how to change the ArchiveXL item addition process to make it work for a weapon.
 
-{% hint style="info" %}
-This guide assumes that you are at least somewhat familiar with ArchiveXL item additions as per the "[Adding new Items](../)" guide. If you have no idea where to start, make sure that you set up a working shirt and then start making the changes below.
-{% endhint %}
+#### Wait, this is not what I want!
+
+* For a much more detailed step-by-step guide, check [new-iconic-weapon-tutorial-for-dummies.md](new-iconic-weapon-tutorial-for-dummies.md "mention")
+* For an overview of weapon properties, check [cheat-sheet-weapon-basestats.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats.md "mention")
+* For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-audio.md "mention")
+
+## **Prerequisites**
+
+* [ ] You are familiar with ArchiveXL item additions as per the "[Adding new Items](../)" guide
 
 ## Selecting the base
+
+Weapons work a little different from regular ArchiveXL items, starting right at the root entity. With the help of @**Apart** and **psiberx,** I was able to figure out the process and document it for you.
 
 Start by finding the .app file of an original weapon of the type you want to make (Theres a list [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/equipment/weapons)) and adding it to your project. We will change that file, rather than assembling anything by hand.
 

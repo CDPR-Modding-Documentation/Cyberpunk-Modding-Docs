@@ -1,8 +1,5 @@
 ---
-description: >-
-  We'll be making a fully featured new Iconic weapon in this guide, which is
-  designed for first-timers and goes into details into every aspect about weapon
-  modding. (not appearances)
+description: Tutorial for gonks
 cover: ../../../../../.gitbook/assets/merchants_of_death_ultrawide.png
 coverY: 46
 layout:
@@ -21,7 +18,20 @@ layout:
     visible: true
 ---
 
-# ☠ New Iconic Weapon : Tutorial for Dummies
+# ☠ New Iconic Weapon: Step by Step
+
+## Summary
+
+Published: December 2023 by destinybu\
+Last documented edit: Feb 07 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+We'll be making a fully featured new Iconic weapon in this guide, which is designed for first-timers and goes into details into every aspect about weapon modding. (not appearances)
+
+#### Wait, this is not what I want!
+
+* You can find another guide about this topic under [.](./ "mention")
+* For an overview of weapon properties, check [cheat-sheet-weapon-basestats.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats.md "mention")
+* For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-audio.md "mention")
 
 ## Prerequisites
 
@@ -608,6 +618,10 @@ Once the limitations are set, focus on the weapon's strengths to complement its 
 2. **Increased Zoom on ADS & Extended Effective Range**: Enhances the weapon's utility in long-range combat, aligning with its identity as a sharpshooter's choice.
 
 ## Step 10: Be a stat wizard
+
+{% hint style="info" %}
+You can find an overview of existing weapon stats under [cheat-sheet-weapon-basestats.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats.md "mention")
+{% endhint %}
 
 To change the stats discussed in the step above, we again need to tinker with the `statModifiers` & `statModifierGroups` in your weapon tweak. Open up the tweak for `Items.Preset_Unity_Default` and navigate till you find the two arrays.
 
