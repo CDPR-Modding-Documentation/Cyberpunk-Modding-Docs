@@ -205,6 +205,10 @@ If all went well, entering photo mode will show your new pose.
 
 ## Troubleshooting
 
+### My pose is twitching!
+
+Make sure that your pose has **at least two keyframes** by going back to [#step-2-creating-the-animation](poses-animations-make-your-own.md#step-2-creating-the-animation "mention") and not skimming this time.&#x20;
+
 ### My pose doesn't import!
 
 {% hint style="info" %}

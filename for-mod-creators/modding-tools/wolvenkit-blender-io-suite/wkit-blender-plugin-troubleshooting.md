@@ -9,7 +9,7 @@ description: If it's not working as expected
 **Published:** Jan 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** Jan 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page contains troubleshooting options for the [..](../ "mention"). If you can't solve your problem with these steps, feel free to reach out on [Discord](http://discord.gg/redmodding) in the `#blender-add-on` channelhi
+This page contains troubleshooting options for the [.](./ "mention"). If you can't solve your problem with these steps, feel free to reach out on [Discord](http://discord.gg/redmodding) in the `#blender-add-on` channelhi
 
 {% hint style="warning" %}
 The first thing people on Discord will tell you is to read this page, so you might as well get it out of the way.
@@ -27,7 +27,7 @@ The plugin requires **at least** 3.6, if not 4.
 
 You can see the exact Blender version in the lower right corner of the program:
 
-<figure><img src="../../../../.gitbook/assets/blender_version.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/blender_version.png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Make sure that you are on the latest plugin version
 
@@ -36,10 +36,10 @@ You can see the exact Blender version in the lower right corner of the program:
 3. In the filter field at the top right of the list, search for `cyberpunk`
 4. Expand the entry and find the `Version` field
 
-<figure><img src="../../../../.gitbook/assets/blender_plugin_check_version.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/blender_plugin_check_version.png" alt=""><figcaption></figcaption></figure>
 
 5. Check on [**github**](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) that this is the last available version of the plugin.&#x20;
-6. If it's not, you need to update. [Uninstall ](../installing-the-wolvenkit-blender-plugin.md#step-0-uninstall-the-old-version)the old version, then [install](../installing-the-wolvenkit-blender-plugin.md#step-1-install-the-plugin) the most recent plugin
+6. If it's not, you need to update. [Uninstall ](installing-the-wolvenkit-blender-plugin.md#step-0-uninstall-the-old-version)the old version, then [install](installing-the-wolvenkit-blender-plugin.md#step-1-install-the-plugin) the most recent plugin
 
 {% hint style="info" %}
 You need to restart Blender after updating the plugin!
@@ -56,7 +56,7 @@ Our technical experts will want to see this.
 ## Failed to import materials
 
 {% hint style="info" %}
-Please complete the steps in [#general-troubleshooting](./#general-troubleshooting "mention") first!
+Please complete the steps in [#general-troubleshooting](wkit-blender-plugin-troubleshooting.md#general-troubleshooting "mention") first!
 {% endhint %}
 
 ### Make sure that your Wolvenkit is up-to-date

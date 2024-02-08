@@ -47,4 +47,4 @@ by island dancer, thank you <3
 
 ## Troubleshooting: I can't import my materials!
 
-Please see the [wkit-blender-plugin-troubleshooting](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-troubleshooting/ "mention") page.
+Please see the [wkit-blender-plugin-troubleshooting.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-troubleshooting.md "mention") page.
