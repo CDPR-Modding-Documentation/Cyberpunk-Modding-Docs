@@ -30,8 +30,10 @@ Future versions of the plugin will make this process much easier. For now:
 </div>
 
 5. Select the mesh **without shapekeys** (the one you changed by applying the modifier)
-6. Select the mesh **with shapekeys** (the one with the original shape)
-7. Switch to the Data tab, select the first shapekey in the list, and transfer it:
+6. Switch to the Data tab and create a modifyer by hitting the + button
+7. Name your new shapekey `Basis`. This is how it's supposed to look when no shapekeys are active.
+8. Select the mesh **with shapekeys** (the one with the original shape)
+9. Switch to the Data tab, select the second shapekey in the list, and transfer it:
 
 <div align="left">
 
@@ -39,8 +41,16 @@ Future versions of the plugin will make this process much easier. For now:
 
 </div>
 
-8. Repeat the process with all other shapekeys
-9. You can now delete the original mesh.
+10. Repeat the process with all other shapekeys
+11. You can now delete the original mesh.
+
+#### It shrinks too far!
+
+OK, that's a bit nasty, because it means you'll have to either **merge** the shapekeys, or create [garment-support-from-scratch.md](../../3d-modelling/garment-support-how-does-it-work/garment-support-from-scratch.md "mention") (which is easier than it sounds like).&#x20;
+
+If you want to merge, select the shapekey that you want to change, and set its value as high as you can without clipping. Then, select the "New Shape from Mix" entry in the dropdown menu (see the screenshot above).&#x20;
+
+You can now delete your original shapekey and rename the newly-created one (which will be called "Key 2" or something like that) to the original's name.
 
 ## The body I want is not supported!
 
