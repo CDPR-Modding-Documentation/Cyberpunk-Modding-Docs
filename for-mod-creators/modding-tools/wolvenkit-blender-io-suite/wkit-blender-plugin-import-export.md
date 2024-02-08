@@ -61,9 +61,9 @@ For an explanation of the sidebar settings on the right, read on below the pictu
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_export_mesh_2.png" alt=""><figcaption></figcaption></figure>
 
-#### Animations
+#### Animations (checkbox)
 
-Check this box if you are exporting a .glb file with animation data (it will be [imported into an .anim](../../modding-guides/animations/poses-animations-make-your-own.md#step-3-importing-and-testing))
+Do not check this box if you are exporting a .glb file without animation data (it is for [exporting animations](wkit-blender-plugin-import-export.md#exporting-from-blender-1))
 
 #### Limit to Selected Meshes
 

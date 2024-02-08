@@ -13,7 +13,7 @@ This guide will teach you how to execute Python scripts under Windows.&#x20;
 This guide is for running files outside of **Blender**. If you want to run a Python script in Blender, you need to switch your viewport to the scripting perspective.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/blender_scripting_perspective.png" alt=""><figcaption><p>To run Python in Blender, go here and stop reading.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/blender_scripting_perspective (1).png" alt=""><figcaption><p>To run Python in Blender, go here and stop reading.</p></figcaption></figure>
 
 ## Step 0: Getting Python
 

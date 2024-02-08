@@ -207,6 +207,14 @@ If all went well, entering photo mode will show your new pose.
 
 ### My pose doesn't import!
 
+{% hint style="info" %}
+If you get an error message like this, please read the [#no-extra-data](poses-animations-make-your-own.md#no-extra-data "mention") section at the end of the file:
+
+```
+animation `anim_name` has no extra data, can't import!
+```
+{% endhint %}
+
 I have no idea how to tell you this, choomba, other than stressing thrice that it's important and putting a big red box, but the NLA strip and the animation **must** have the same name. Go back to "[this is important](poses-animations-make-your-own.md#this-is-important)" and double-check. The animation might have trailing numbers, e.g. be called `photomode__female__idle.001`, that will already do it.
 
 ### Very funny, but it wasn't that
@@ -228,5 +236,49 @@ We're reaching the end of the rope here. Go back and [check the animation names]
 2. In your old Blend file, repeat 1-4 of the [previous step](poses-animations-make-your-own.md#very-funny-but-it-wasnt-that)
 3. In your new Blend file, repeat 5+6 of the [previous step](poses-animations-make-your-own.md#very-funny-but-it-wasnt-that)
 
+### No extra data
 
+If Wolvenkit's console tells you something like this:
 
+```
+animation `anim_name` has no extra data, can't import!
+```
+
+1. To make sure that the `.glb` file that you want to **import into** is okay, do a fresh [Wolvenkit export](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) of your `.anim`
+2. Now, let's add the missing data by [running the following script](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-troubleshooting/blender-running-python-scripts.md) in your .blend file:
+
+<details>
+
+<summary>Add extra data to blend file</summary>
+
+```python
+import bpy
+
+for obj in bpy.context.selected_objects:
+    if not obj or obj.type != 'ARMATURE':
+        print('you need to select an armature')
+            
+
+    if not obj.animation_data:
+        print('no animations found')
+        
+        
+    else:
+        for action in bpy.data.actions:
+            action["schema"] ={"type": "wkit.cp2077.gltf.anims","version": 3}
+            action["animationType"] = 'Normal'
+            action["frameClamping"] = False
+            action["frameClampingStartFrame"] = -1
+            action["frameClampingEndFrame"] = -1
+            action["numExtraJoints"] = 0
+            action["numeExtraTracks"] = 0
+            action["constTrackKeys"] = []
+            action["trackKeys"] = []
+            action["fallbackFrameIndices"] = []
+            action["optimizationHints"] = { "preferSIMD": False, "maxRotationCompression": 1}
+```
+
+</details>
+
+3. Use the Wolvenkit Blender IO suite to [export as animation](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-wolvenkit)
+4. Import the .glb file into Wolvenkit again.
