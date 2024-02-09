@@ -28,3 +28,21 @@ This enables the AMM light panel in the target tools.
 {% hint style="warning" %}
 Not all light components actually support colour and intensity changes. Candlelight, for example, does not.
 {% endhint %}
+
+## Placing your light components
+
+Your lights will be anywhere relative to your prop. How can you position them relative to the actual object?
+
+1. Add an Empty in Blender (Viewport, Hotkey: `Shift+A` -> Empty -> Plain Axes)
+2. Move the empty to the position where you want your light to be
+3. Switch to the Object tab and see its location transform:
+
+<figure><img src="../../../../.gitbook/assets/blender_placing_light_components.png" alt=""><figcaption></figcaption></figure>
+
+4. In Wolvenkit, find the `localTransform` property inside your light component
+5. Copy the values from the "Transform" field in Blender into the `Position` input fields (without the `m`)
+6. Save and see your effect changing positions!
+
+{% hint style="info" %}
+If your light doesn't seem to be in the right spot, try multiplying the value for z with -1
+{% endhint %}

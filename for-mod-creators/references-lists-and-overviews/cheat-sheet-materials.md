@@ -141,12 +141,12 @@ See [emissive-material-properties.md](../materials/configuring-materials/emissiv
 
 Blackbody shaders are used for **heat**. Their colour can be adjusted via the `temperature` parameter.
 
-| material                                         | description                                                         |
-| ------------------------------------------------ | ------------------------------------------------------------------- |
-| `base\fx\shaders\metal_base_blackbody.mt`        | A PBR temperature shader. Configured with numeric values.           |
-| `base\fx\shaders\blackbodyradiation.mt`          | A temperature shader with smoke effects                             |
-| `base\fx_shaders\multilayer_blackbody_inject.mt` | A temperature shader with mlmask and -setup                         |
-| `base\fx\shaders\blackbody_simple.mt`            | A temperature shader with a texture and a numeric temperature value |
+| material                                         | description                                                                                                       |
+| ------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| `base\fx\shaders\metal_base_blackbody.mt`        | A PBR temperature shader for numeric values, can be used in e.g glowing coal (find files using this for examples) |
+| `base\fx\shaders\blackbodyradiation.mt`          | A temperature shader with smoke effects                                                                           |
+| `base\fx_shaders\multilayer_blackbody_inject.mt` | A temperature shader with mlmask and -setup                                                                       |
+| `base\fx\shaders\blackbody_simple.mt`            | A temperature shader with a texture and a numeric temperature value                                               |
 
 ### FX Shaders
 
@@ -156,9 +156,12 @@ Blackbody shaders are used for **heat**. Their colour can be adjusted via the `t
 
 FX shaders are animated effect shaders.
 
-| material                                | description                                               |
-| --------------------------------------- | --------------------------------------------------------- |
-| `base\fx\shaders\metal_base_glitter.mt` | A PBR temperature shader. Configured with numeric values. |
+| material                                  | description                                                                                                                  |
+| ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `base\fx\shaders\metal_base_glitter.mt`   | A PBR temperature shader. Configured with numeric values.                                                                    |
+| `base\fx\shaders\metal_base_blackbody.mt` | A blackbody shader for e.g. glowing coal. Copy from `base\environment\decoration\misc\foliage\burnt_wood\burnt_wood_ab.mesh` |
+
+Something else to dig into: `emitters/particleDrawer/meshes`
 
 ## Transparent
 
