@@ -19,7 +19,7 @@ As of today (Jan 20 2024), you need a collision-enabled mesh for this. We can cr
 
 ### Wait, this is not what I want!
 
-* If you want to create [custom-props.md](../everything-else/custom-props.md "mention") for AMM, check the corresponding guide. Note that this mechanism applies for them as well!
+* If you want to create [custom-props](../everything-else/custom-props/ "mention") for AMM, check the corresponding guide. Note that this mechanism applies for them as well!
 
 ## Requirements
 

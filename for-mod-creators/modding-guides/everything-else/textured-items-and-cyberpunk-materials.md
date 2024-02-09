@@ -45,9 +45,9 @@ You can also search Google for "`thing_I_want` free 3d model" or "`thing_I_want`
 
 ## Setting up the project
 
-This section is already covered in the guide for [custom props](custom-props.md#setting-up-the-project), using the source folder variant, or directly download [this archive](https://mega.nz/file/GUsSwSxY#Ast7L44g\_YimuKrcbwNCLvYL\_DworhpEQsaH05RNGJw) and extract it into your Wolvenkit project.
+This section is already covered in the guide for [custom props](custom-props/#setting-up-the-project), using the source folder variant, or directly download [this archive](https://mega.nz/file/GUsSwSxY#Ast7L44g\_YimuKrcbwNCLvYL\_DworhpEQsaH05RNGJw) and extract it into your Wolvenkit project.
 
-Optional: Complete the [creating another prop](custom-props.md#creating-another-prop) section from the custom props guide, or alter one of the two existing template items.&#x20;
+Optional: Complete the [creating another prop](custom-props/#creating-another-prop) section from the custom props guide, or alter one of the two existing template items.&#x20;
 
 {% hint style="success" %}
 This guide will assume that you are editing `template_no_variants.mesh`, as our focus is on mesh import and material assignment. You can delete the folder `amm_props\template`, since we won't need it.
@@ -418,7 +418,7 @@ If you rather want to make your own mlsetups, see [here](../items-equipment/edit
     <figure><img src="../../../.gitbook/assets/textures_baseball_gold.png" alt=""><figcaption><p>Also not a moon</p></figcaption></figure>
 
 The possibilities are basically endless, so go and explore them already! For a nifty list with materials to get you started, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).\
-For a guide on creating AMM props, see [here](custom-props.md).&#x20;
+For a guide on creating AMM props, see [here](custom-props/).&#x20;
 
 ## Troubleshooting
 

@@ -21,7 +21,7 @@ This guide will show you how to create fully custom NPCs for AMM.&#x20;
 
 ## Wait, that's not what I want!
 
-* If you want to create [custom-props.md](../../everything-else/custom-props.md "mention") instead, check the link.
+* If you want to create [custom-props](../../everything-else/custom-props/ "mention") instead, check the link.
 * If you want to add new appearances to already existing NPCs, check [amm-custom-npc-appearances.md](amm-custom-npc-appearances.md "mention")
 * If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/ "mention"). (It's a more advanced version of this workflow)
 

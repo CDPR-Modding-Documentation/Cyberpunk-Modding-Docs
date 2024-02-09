@@ -40,9 +40,9 @@ Remember that at any time, you can check your progress by [spawning your custom 
 
 ## How everything hangs together
 
-In the end, an NPV is just a custom prop with a god complex. For that reason, the [file structure](../../everything-else/custom-props.md#with-variants) is the same (it's just a lot more complex, because you have more than 4 components).
+In the end, an NPV is just a custom prop with a god complex. For that reason, the [file structure](../../everything-else/custom-props/#with-variants) is the same (it's just a lot more complex, because you have more than 4 components).
 
-If diagrams help you, then [click on the link](../../everything-else/custom-props.md#with-variants) to see one.
+If diagrams help you, then [click on the link](../../everything-else/custom-props/#with-variants) to see one.
 
 ## The .lua file
 

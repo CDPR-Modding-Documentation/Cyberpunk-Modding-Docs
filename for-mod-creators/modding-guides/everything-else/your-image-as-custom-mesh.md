@@ -211,7 +211,7 @@ Let's hit up Jig Jig Street to look at our sign…
 <figure><img src="../../../.gitbook/assets/custom_neon_jigjigstreet.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-Please remember that you are currently replacing all heart neon signs in the entire game! Before sharing your custom neon, consider making [custom-props.md](custom-props.md "mention")!
+Please remember that you are currently replacing all heart neon signs in the entire game! Before sharing your custom neon, consider making [custom-props](custom-props/ "mention")!
 {% endhint %}
 
 Congratulations! If everything works, you just made a mod!&#x20;

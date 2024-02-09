@@ -16,7 +16,7 @@ You can find other relevant guides scattered across this wiki, for example
 
 [adding-new-items](../modding-guides/items-equipment/adding-new-items/ "mention")
 
-[custom-props.md](../modding-guides/everything-else/custom-props.md "mention")
+[custom-props](../modding-guides/everything-else/custom-props/ "mention")
 
 [textured-items-and-cyberpunk-materials.md](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention")
 
@@ -34,11 +34,11 @@ A [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-
 
 To bring 3d data into Cyberpunk, Wolvenkit needs a .mesh file to import into. [Read here why](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure).&#x20;
 
-For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item](../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/ "mention"), creating [custom-props.md](../modding-guides/everything-else/custom-props.md "mention") or [adding-new-items](../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
+For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item](../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/ "mention"), creating [custom-props](../modding-guides/everything-else/custom-props/ "mention") or [adding-new-items](../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
 
 ### Static items
 
-If you are [creating props](../modding-guides/everything-else/custom-props.md), you use a mesh from the template project or grab any static mesh from the game.&#x20;
+If you are [creating props](../modding-guides/everything-else/custom-props/), you use a mesh from the template project or grab any static mesh from the game.&#x20;
 
 {% hint style="warning" %}
 Do not take equipment item or weapon meshes — those include a bunch of extra data that you don't need (the [armature](meshes-and-armatures-rigging.md)). You don't need it, and it can have side effects.
