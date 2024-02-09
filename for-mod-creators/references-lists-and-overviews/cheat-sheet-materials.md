@@ -130,7 +130,7 @@ See [emissive-material-properties.md](../materials/configuring-materials/emissiv
 
 | material                       | description                                                                                                                   |
 | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| `base\fx\shaders\hologram.mt`  | Holo material ([example .mi](../../\_example\_mods\_and\_templates/material\_templates/holo/hologram\_material\_template.mi)) |
+| `base\fx_shaders\hologram.mt`  | Holo material ([example .mi](../../\_example\_mods\_and\_templates/material\_templates/holo/hologram\_material\_template.mi)) |
 | `base\fx_shaders\holo_mask.mt` | Holo mask material                                                                                                            |
 
 ### Blackbody Shaders
