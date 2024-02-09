@@ -2,7 +2,7 @@
 description: How to manipulate vendor inventories
 ---
 
-# Changing vendor inventory
+# 💰 Changing vendor inventory
 
 ### Summary
 

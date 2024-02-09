@@ -77,7 +77,7 @@ As of Version 1.6.7, this is what you will see now:
 
 Start by importing the file from the preview. That will populate the Layer Config box with the MLSetup that you just loaded.
 
-The preview was hiding an empty 3d viewport. To [use that](./#about-that-3d-viewport), you will need to [configure](./#configuration) MLSB first, but you can already click through the individual layers and assign [material properties](../../materials/multilayered/multilayered-material-properties.md) (such as roughness, normal strength, base material and colour) from the "Material Properties" panel.&#x20;
+The preview was hiding an empty 3d viewport. To [use that](./#about-that-3d-viewport), you will need to [configure](./#configuration) MLSB first, but you can already click through the individual layers and assign [material properties](../../materials/configuring-materials/multilayered-material-properties-1.md) (such as roughness, normal strength, base material and colour) from the "Material Properties" panel.&#x20;
 
 {% hint style="info" %}
 Don't forget to hit "Apply" after you have changed a material.

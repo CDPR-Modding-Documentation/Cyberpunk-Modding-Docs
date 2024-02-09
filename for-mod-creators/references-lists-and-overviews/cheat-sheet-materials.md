@@ -25,7 +25,7 @@ This page contains a brief overview of existing materials. Use the Table of Cont
 #### Multilayered
 
 * General information: [multilayered](../materials/multilayered/ "mention")
-* Properties and definition: [multilayered-material-properties.md](../materials/multilayered/multilayered-material-properties.md "mention")
+* Properties and definition: [multilayered-material-properties-1.md](../materials/configuring-materials/multilayered-material-properties-1.md "mention")
 * Preview images: [multilayered-previews.md](../materials/multilayered/multilayered-previews.md "mention")
 
 #### Hands-on:
@@ -58,7 +58,7 @@ A white mlMask will apply the selected material to the whole surface of the mesh
 
 ## Textured Materials
 
-For further details, see [here](../materials/#textured-material).
+For further details, see [textured-material-properties.md](../materials/configuring-materials/textured-material-properties.md "mention")
 
 |                                                             |                                                                                                                                |
 | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
@@ -71,7 +71,7 @@ For further details, see [here](../materials/#textured-material).
 
 Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room\_plastic_black.mi`
 
-<table><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>BaseColor</td><td><code>base\materials\placeholder\white.xbm</code></td></tr><tr><td>Normal</td><td>optional: path to your normal map</td></tr><tr><td>Roughness</td><td>optional: path to your roughness map</td></tr><tr><td>RoughnessBias</td><td>0.200000003</td></tr><tr><td>BaseColorScale</td><td>Colour as x/y/z values (color picker blend file <a href="https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks">here</a></td></tr></tbody></table>
+<table><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>BaseColor</td><td><code>base\materials\placeholder\white.xbm</code></td></tr><tr><td>Normal</td><td>optional: path to your normal map</td></tr><tr><td>Roughness</td><td>optional: path to your roughness map</td></tr><tr><td>RoughnessBias</td><td>0.200000003</td></tr><tr><td>BaseColorScale</td><td>Colour as x/y/z values (color picker blend file <a href="https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks">here</a>)</td></tr></tbody></table>
 
 ### Gradient recolor
 
@@ -90,7 +90,7 @@ Use `engine\materials\metal_base.remt`, the example below has been copied from `
 
 
 
-## Metal Materials
+### Metal Materials
 
 |                                                                            |                                 |
 | -------------------------------------------------------------------------- | ------------------------------- |
@@ -115,7 +115,7 @@ Use `engine\materials\metal_base.remt`, the example below has been copied from `
 [Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `emissive > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
 {% endhint %}
 
-See [here](../materials/#emissive-material) how it works and how to configure it.
+See [emissive-material-properties.md](../materials/configuring-materials/emissive-material-properties.md "mention")for how it works and how to configure it.
 
 | material                                                                                                    | description                                                                                                                                                        |
 | ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -128,9 +128,10 @@ See [here](../materials/#emissive-material) how it works and how to configure it
 
 ### Holo Shaders
 
-| material                       | description                                                                                                   |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------- |
-| `base\fx_shaders\holo_mask.mt` | Holo mask material (check [this mod](https://www.nexusmods.com/cyberpunk2077/mods/12170) to see it in action) |
+| material                       | description                                                                                                                   |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
+| `base\fx\shaders\hologram.mt`  | Holo material ([example .mi](../../\_example\_mods\_and\_templates/material\_templates/holo/hologram\_material\_template.mi)) |
+| `base\fx_shaders\holo_mask.mt` | Holo mask material                                                                                                            |
 
 ### Blackbody Shaders
 

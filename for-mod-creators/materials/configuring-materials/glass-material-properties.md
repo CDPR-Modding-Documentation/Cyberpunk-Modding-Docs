@@ -1,4 +1,4 @@
-# Glass material properties
+# Transparent material properties
 
 ## Summary
 
@@ -41,3 +41,16 @@ Find a ready-to use glass .mi file [here](https://mega.nz/file/3UkRgJRJ#o8uHKkr1
 <table><thead><tr><th width="226"></th><th></th></tr></thead><tbody><tr><td>ParalaxTexture</td><td>Texture that your screen should display, e.g. <code>base\materials\placeholder\black.xbm</code></td></tr><tr><td>LayersSeparation</td><td>1</td></tr><tr><td>ScanlinesIntensity</td><td>0</td></tr><tr><td>ScanlinesDensity</td><td>0</td></tr><tr><td>Emissive</td><td>0</td></tr><tr><td>Roughness</td><td>0.200000003</td></tr><tr><td>Metalness</td><td>0</td></tr></tbody></table>
 
 Find a ready-to-use example of a turned-off screen [here](https://mega.nz/file/mMsWlDja#QlZ-jsSHuIJ-E8jYmXRbzrk5wstsDOJXTK3pe7XP89I).
+
+
+
+## Example materials
+
+### Transparent plastic
+
+<figure><img src="../../../.gitbook/assets/material_examples_transparent_plastic.png" alt="" width="359"><figcaption><p>You can tweak the parameters to your heart's content</p></figcaption></figure>
+
+Download the [.mi file](../../../\_example\_mods\_and\_templates/material\_templates/transparent/transparent\_plastic\_or\_glass.mi) here&#x20;
+
+<table><thead><tr><th width="317">Parameter name</th><th>Value</th></tr></thead><tbody><tr><td>baseMaterial</td><td><code>base\materials\glass_onesided.mt</code></td></tr><tr><td>TintColor</td><td>white (220, 220, 220, 0)</td></tr><tr><td>IOR</td><td>0.100000001</td></tr><tr><td>NormalStrength</td><td>5.74905014</td></tr><tr><td>Roughness</td><td>base\materials\placeholder\black.xbm</td></tr><tr><td>GlassRoughnessBias</td><td>0</td></tr><tr><td>BlurRadius</td><td>1</td></tr></tbody></table>
+

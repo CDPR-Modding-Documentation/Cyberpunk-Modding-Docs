@@ -8,11 +8,11 @@ description: Documentation of properties, with screenshots if applicable
 
 ### colorScale
 
-Sets a color from within the [mltemplate](multilayered-material-properties.md#what-is-the-mltemplate) file. Hex codes corresponds to rows and columns in substance painter.
+Sets a color from within the [mltemplate](multilayered-material-properties-1.md#what-is-the-mltemplate) file. Hex codes corresponds to rows and columns in substance painter.
 
 ### material
 
-Depot path to the base material [mltemplate](multilayered-material-properties.md#what-is-the-mltemplate) from which the surface inherits its properties (lightbreaking, subsurface scattering…).&#x20;
+Depot path to the base material [mltemplate](multilayered-material-properties-1.md#what-is-the-mltemplate) from which the surface inherits its properties (lightbreaking, subsurface scattering…).&#x20;
 
 Example values:\
 `base\surfaces\materials\paint\car_paint\car_paint_metallic_01.mltemplate`\
@@ -24,11 +24,11 @@ Example values:\
 
 ### metalLevelsIn
 
-TODO
+Clamps metalness **input** levels. This value corresponds to a (generated?) greyscale texture across the entire mesh.
 
 ### metalLevelsOut
 
-Clamps metalness output levels. This value corresponds to a (generated?) greyscale texture across the entire mesh.
+Clamps metalness **output** levels. This value corresponds to a (generated?) greyscale texture across the entire mesh.
 
 ### normalStrength
 
@@ -60,7 +60,7 @@ Determines the roughness of a material
 
 ### mbTile
 
-Like [#mattile](multilayered-material-properties.md#mattile "mention"), this determines the scaling of the microblend. The higher the value, the smaller it is.
+Like [#mattile](multilayered-material-properties-1.md#mattile "mention"), this determines the scaling of the microblend. The higher the value, the smaller it is.
 
 ### microblend
 
@@ -74,7 +74,7 @@ This requires the xbm's AlphaChannel (transparency) to be set up.
 
 ### microblendNormalStrength
 
-Like [#normalstrength](multilayered-material-properties.md#normalstrength "mention") for the microblend.
+Like [#normalstrength](multilayered-material-properties-1.md#normalstrength "mention") for the microblend.
 
 ### microblendOffsetU
 

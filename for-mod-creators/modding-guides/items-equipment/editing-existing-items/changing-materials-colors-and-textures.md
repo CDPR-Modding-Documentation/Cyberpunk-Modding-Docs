@@ -152,7 +152,7 @@ If you select WolvenKit's "Open in File Explorer" option, you can copy the path 
 </details>
 
 {% hint style="success" %}
-For a documentation of multilayer properties, see [here](../../../materials/multilayered/multilayered-material-properties.md). For a list of reference images, check [multilayered-previews.md](../../../materials/multilayered/multilayered-previews.md "mention")
+For a documentation of multilayer properties, see [here](../../../materials/configuring-materials/multilayered-material-properties-1.md). For a list of reference images, check [multilayered-previews.md](../../../materials/multilayered/multilayered-previews.md "mention")
 {% endhint %}
 
 3. [Draw the rest of the owl](https://knowyourmeme.com/memes/how-to-draw-an-owl) and [edit the mlsetup](../../../modding-tools/mlsetup-builder/#using-mlsb).&#x20;
