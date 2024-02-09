@@ -4,13 +4,35 @@ description: How to change item stats with TweakXL
 
 # 🔧 TweakXL: Changing game records
 
+#### Summary
+
+Last documented edit: Feb 09 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+
+
 Changing item stats happens by making changes via **TweakXL** or **REDmod** in the [tweaks](../../files-and-what-they-do/tweaks/ "mention").
 
 {% hint style="info" %}
 You can find more information about this on the [TweakXL github's wiki page](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks).
 {% endhint %}
 
-## Existing guides:&#x20;
+## Guides about this:
+
+{% content-ref url="../items-equipment/editing-existing-items/adding-stats-and-modifiers.md" %}
+[adding-stats-and-modifiers.md](../items-equipment/editing-existing-items/adding-stats-and-modifiers.md)
+{% endcontent-ref %}
+
+{% content-ref url="changing-vendor-inventory.md" %}
+[changing-vendor-inventory.md](changing-vendor-inventory.md)
+{% endcontent-ref %}
+
+{% content-ref url="changing-npcs-tweak-edit-redmod.md" %}
+[changing-npcs-tweak-edit-redmod.md](changing-npcs-tweak-edit-redmod.md)
+{% endcontent-ref %}
+
+{% content-ref url="../items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md" %}
+[new-iconic-weapon-tutorial-for-dummies.md](../items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md)
+{% endcontent-ref %}
 
 ## How to edit tweaks?
 

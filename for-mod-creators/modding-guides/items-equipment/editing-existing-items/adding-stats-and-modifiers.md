@@ -34,3 +34,7 @@ That's it. When you start the game now, the item's quality will be iconic.
 ## What the fuck did I just do?
 
 You created a tweak edit.
+
+## Removing properties
+
+If you want to **safely delete** a record property, set its value to **None**.&#x20;

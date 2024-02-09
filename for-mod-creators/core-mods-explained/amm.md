@@ -2,7 +2,7 @@
 description: Appearance Menu Mod
 ---
 
-# AMM
+# 📽 AMM
 
 Appearance Menu Mod has its own documentation at…
 

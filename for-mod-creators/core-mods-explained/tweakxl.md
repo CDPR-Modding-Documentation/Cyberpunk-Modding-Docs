@@ -18,7 +18,7 @@ layout:
     visible: true
 ---
 
-# TweakXL
+# ▶ TweakXL
 
 ## What is TweakXL?
 
@@ -41,7 +41,8 @@ No matter the file extension, the file `contents` must be `.yaml` or `.json`&#x2
 * Explanation of the database: [tweaks](../files-and-what-they-do/tweaks/ "mention")
 * Additional information: TweakXL [wiki on github.](https://github.com/psiberx/cp2077-tweak-xl/wiki/TweakDB)
 
-Praxis
+### Praxis
 
-* How to change an NPC's record with Redscript: [tweakxl-changing-game-records](../modding-guides/tweakxl-changing-game-records/ "mention")
-* Weapon properties and their explanations: The second half of [new-iconic-weapon-tutorial-for-dummies.md](../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
+{% content-ref url="../modding-guides/tweakxl-changing-game-records/" %}
+[tweakxl-changing-game-records](../modding-guides/tweakxl-changing-game-records/)
+{% endcontent-ref %}
