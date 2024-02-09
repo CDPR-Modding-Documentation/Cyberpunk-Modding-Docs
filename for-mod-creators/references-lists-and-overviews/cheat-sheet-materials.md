@@ -64,7 +64,7 @@ For further details, see [textured-material-properties.md](../materials/configur
 | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
 | `engine\materials\metal_base.remt`                          | Cyberpunk's default textured (or emissive) material. Super versatile.                                                          |
 | `base\materials\mesh_decal.mt`                              | For decals etc., supports alpha channel. Can optionally be made half-transparent (for tattoos etc.)                            |
-| `base\fx_shaders\holo_mask.mt`                              | Special effect material that transforms a mesh into an hologram. Can use a custom texture for decal and is color controllable. |
+| `base\fx\_shaders\holo_mask.mt`                             | Special effect material that transforms a mesh into an hologram. Can use a custom texture for decal and is color controllable. |
 | `base\surfaces\atlases\wood\wood_bare\wood_bare_01_pine.mi` | Basic wood texture, no masks                                                                                                   |
 
 ### Plastic (solid, coloured)
@@ -128,10 +128,12 @@ See [emissive-material-properties.md](../materials/configuring-materials/emissiv
 
 ### Holo Shaders
 
-| material                       | description                                                                                                                   |
-| ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------- |
-| `base\fx_shaders\hologram.mt`  | Holo material ([example .mi](../../\_example\_mods\_and\_templates/material\_templates/holo/hologram\_material\_template.mi)) |
-| `base\fx_shaders\holo_mask.mt` | Holo mask material                                                                                                            |
+
+
+| material                        | description                                                                                                                   |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `base\fx\_shaders\hologram.mt`  | Holo material ([example .mi](../../\_example\_mods\_and\_templates/material\_templates/holo/hologram\_material\_template.mi)) |
+| `base\fx\_shaders\holo_mask.mt` | Holo mask material                                                                                                            |
 
 ### Blackbody Shaders
 
