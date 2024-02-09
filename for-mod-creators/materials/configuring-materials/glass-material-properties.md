@@ -10,6 +10,10 @@ This page documents glass shaders and their properties.&#x20;
 * For an **overview** of glass shaders, see [cheat-sheet-materials.md](../../references-lists-and-overviews/cheat-sheet-materials.md "mention")-> [#glass](../../references-lists-and-overviews/cheat-sheet-materials.md#glass "mention")
 * For an **explanation** of material properties and further links, see [.](./ "mention")
 
+{% hint style="danger" %}
+To turn on material transparency, the `EnableMask` property must be set to `True`!
+{% endhint %}
+
 ## Glass
 
 Cyberpunk's glass material, such as `base\materials\glass_onesided.mt`
