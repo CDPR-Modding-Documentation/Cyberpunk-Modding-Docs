@@ -4,8 +4,8 @@ description: This page contains documentation for the most common component type
 
 # Components
 
-{% content-ref url="documented-components.md" %}
-[documented-components.md](documented-components.md)
+{% content-ref url="documented-components/" %}
+[documented-components](documented-components/)
 {% endcontent-ref %}
 
 {% hint style="info" %}
@@ -34,7 +34,7 @@ Please see the [corresponding wiki page](../../3d-modelling/garment-support-how-
 
 ## Component Properties
 
-Common component properties explained. For a more detailed list, please see [Documented Components](documented-components.md).
+Common component properties explained. For a more detailed list, please see [Documented Components](documented-components/).
 
 #### chunkMask
 

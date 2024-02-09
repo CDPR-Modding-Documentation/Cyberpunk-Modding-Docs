@@ -7,11 +7,11 @@ description: Hierarchy of WolvenKit.RED4.Types.entIComponent
 {% hint style="info" %}
 Full list of components, organized by hierarchy, useful for researching and documenting new components. For a json dump of all existing components and their properties, check [DrPresto's github repository.](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lists/entComponent\_types.json)
 
-For a hands-on guide on how to safely change components in .app files, look [here](../../../for-mod-creators/modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components).
+For a hands-on guide on how to safely change components in .app files, look [here](../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components).
 {% endhint %}
 
 {% hint style="info" %}
-If you decide to document a component, make a new expandable entry on on the [Documented Components](../../../for-mod-creators/files-and-what-they-do/components/documented-components.md) page, followed by the discovered behavior and usage and link back to that in this list.
+If you decide to document a component, make a new expandable entry on on the [Documented Components](documented-components/) page, followed by the discovered behavior and usage and link back to that in this list.
 {% endhint %}
 
 * AIObjectSelectionComponent
@@ -42,10 +42,10 @@ If you decide to document a component, make a new expandable entry on on the [Do
       * vehicleVehicleProxyBlendCamera
     * gamePhotoModeBackgroundCameraComponent
     * gameWorldSpaceBlendCamera
-  * [entColliderComponent](../../../for-mod-creators/files-and-what-they-do/components/documented-components.md#entcollidercomponent)
+  * [entColliderComponent](documented-components/#entcollidercomponent)
   * entDynamicActorRepellingComponent
   * entISkinableComponent
-    * [entAnimatedComponent](../../../for-mod-creators/files-and-what-they-do/components/documented-components.md#entanimatedcomponent)
+    * [entAnimatedComponent](documented-components/#entanimatedcomponent)
     * entCorpseComponent
     * entInstancedAnimationComponent
   * entIVisualComponent
@@ -58,10 +58,10 @@ If you decide to document a component, make a new expandable entry on on the [Do
     * entFogVolumeComponent
     * entISkinTargetComponent
       * entMorphTargetSkinnedMeshComponent
-      * [entSkinnedClothComponent](../../../for-mod-creators/files-and-what-they-do/components/documented-components.md#entskinnedclothcomponent)
-      * [entSkinnedMeshComponent](../../../for-mod-creators/files-and-what-they-do/components/documented-components.md#entskinnedmeshcomponent)
+      * [entSkinnedClothComponent](documented-components/#entskinnedclothcomponent)
+      * [entSkinnedMeshComponent](documented-components/#entskinnedmeshcomponent)
         * entCharacterCustomizationSkinnedMeshComponent
-        * [entGarmentSkinnedMeshComponent](../../../for-mod-creators/files-and-what-they-do/components/documented-components.md#entgarmentskinnedmeshcomponent)
+        * [entGarmentSkinnedMeshComponent](documented-components/#entgarmentskinnedmeshcomponent)
         * entPhysicalSkinnedMeshComponent
     * entLightBlockingComponent
     * entLightChannelComponent
@@ -109,7 +109,7 @@ If you decide to document a component, make a new expandable entry on on the [Do
   * gameinfluenceComponent
   * gameinfluenceHeatAgentComponent
   * gameinfluenceObstacleComponent
-  * [gameinteractionsComponent](../../../for-mod-creators/files-and-what-they-do/components/documented-components.md#gameinteractionscomponent)
+  * [gameinteractionsComponent](documented-components/#gameinteractionscomponent)
   * gamemappinsMappinComponent
   * gameMovingPlatform
   * gameNavmeshDetector
@@ -118,7 +118,7 @@ If you decide to document a component, make a new expandable entry on on the [Do
   * gameprojectileSpawnComponent
   * gameStaticAreaShapeComponent
     * gameStaticTriggerAreaComponent
-  * [gameTargetingComponent](../../../for-mod-creators/files-and-what-they-do/components/documented-components.md#gametargetingcomponent)
+  * [gameTargetingComponent](documented-components/#gametargetingcomponent)
   * gameTransformAnimatorComponent
   * mpInteractionActivatorComponent
   * senseComponent
@@ -288,7 +288,7 @@ If you decide to document a component, make a new expandable entry on on the [Do
   * gameEntityStubComponent
   * gameInventory
   * gameMasterDeviceComponent
-  * [gameScanningComponent](../../../for-mod-creators/files-and-what-they-do/components/documented-components.md#gamescanningcomponent)
+  * [gameScanningComponent](documented-components/#gamescanningcomponent)
   * gameScriptableComponent
     * AdamSmasherComponent
     * AIRelatedComponents
@@ -362,7 +362,7 @@ If you decide to document a component, make a new expandable entry on on the [Do
 * gameComponentsStateSaveComponent
 * gameCrowdMemberComponent
   * CrowdMemberBaseComponent
-* [gameDismembermentComponent](../../../for-mod-creators/files-and-what-they-do/components/documented-components.md#gamedismembermentcomponent)
+* [gameDismembermentComponent](documented-components/#gamedismembermentcomponent)
 * gameDoorComponent
 * gameEthnicityComponent
 * gameFootstepComponent
