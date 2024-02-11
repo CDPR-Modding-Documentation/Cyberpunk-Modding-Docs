@@ -118,5 +118,12 @@ That's it, your mesh has now garment support. Rinse and repeat the process with 
 
 
 
+## Troubleshooting
 
+### My garment support isn't working!
 
+You still need to use [component name prefixes](./#component-prefixes) for garmentSupport to become active. If that wasn't it, check your shapekey names for typos or trailing spaces.
+
+### My garment support is clipping into the body!
+
+Try re-doing the shrinkwrap, but with a higher offset instead. Try something like 0.002 or so, whatever works for you.
