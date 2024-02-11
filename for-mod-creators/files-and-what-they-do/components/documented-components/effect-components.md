@@ -27,6 +27,13 @@ Usually called `fx_slots`, this component allows you to place your effects in th
 
 <figure><img src="../../../../.gitbook/assets/entSlotComponent.png" alt=""><figcaption></figcaption></figure>
 
+If you want the position of your effects to follow the movement of parts of the object you can set the _`boneName`_ an existing bone of your object\
+
+
+<figure><img src="../../../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
+
+In this case the `relativePosition` will be relative to the bone's position
+
 ### entEffectSpawnerComponent
 
 Usually called `fx_whateverTheEffectIs`, this component **defines** and **registers** effects which can then be placed via slots.&#x20;
