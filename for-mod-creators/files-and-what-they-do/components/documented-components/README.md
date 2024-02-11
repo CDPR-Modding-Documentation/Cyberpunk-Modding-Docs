@@ -55,6 +55,10 @@ Adds physics to garments and hair meshes.
 
 Please see [effect-components.md](effect-components.md "mention") for details
 
+#### entEffectSpawnerComponent
+
+#### entSlotComponent
+
 ## NPCs
 
 <details>

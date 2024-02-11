@@ -7,13 +7,13 @@ description: EntSlotComponent and EntEffectSpawnerComponent
 ## Summary
 
 Published: Feb 09 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Last documented edit: Feb 09 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented edit: Feb 11 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will tell you how effect components work and how they interact with each other.
 
 ### Wait, that's not what I want!
 
-For an overview on existing effects, check [fx-material-properties.md](../../../materials/configuring-materials/fx-material-properties.md "mention")
+For an overview on existing effect materials, check [fx-material-properties.md](../../../materials/configuring-materials/fx-material-properties.md "mention")
 
 For a guide on how to use effects, check [amm-light-components.md](../../../modding-guides/everything-else/custom-props/amm-light-components.md "mention")
 
@@ -56,4 +56,8 @@ In the `entEffectSpawnerComponent`, add:&#x20;
 In the `entSlotComponent`, add:
 
 1. a new entry in `slots` with the name that you created in Step 1
+
+## Placing effect components
+
+Please check [amm-light-components.md](../../../modding-guides/everything-else/custom-props/amm-light-components.md "mention") -> [#placing-your-light-components](../../../modding-guides/everything-else/custom-props/amm-light-components.md#placing-your-light-components "mention") for a detailed guide!
 

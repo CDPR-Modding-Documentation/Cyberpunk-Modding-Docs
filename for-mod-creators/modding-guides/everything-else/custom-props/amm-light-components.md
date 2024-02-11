@@ -7,7 +7,7 @@ description: How to add light components with AMM
 ## Summary
 
 Published: Feb 09 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Last documented edit: Feb 09 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented edit: Feb 11 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will show you how to add a light component to AMM props.
 
@@ -43,9 +43,15 @@ Your lights will be anywhere relative to your prop. How can you position them re
 
 <figure><img src="../../../../.gitbook/assets/blender_placing_light_components.png" alt=""><figcaption></figcaption></figure>
 
-4. In Wolvenkit, find the `localTransform` property inside your light component
-5. Copy the values from the "Transform" field in Blender into the `Position` input fields (without the `m`)
-6. Save and see your effect changing positions!
+Now that you have the **relative position**, switch back to Wolvenkit: we need to add it to our `entSlotComponent`.
+
+1. Open the `slots` array and select your first `entSlot`
+2. Find the `relativePosition` property in the box on the right
+3. Copy the values from the "Transform" field in Blender (Screenshot above) to the corresponding fields under `relativePosition` (screenshot below)
+
+<figure><img src="../../../../.gitbook/assets/entSlotComponent (1).png" alt=""><figcaption><p>WolvenKit should cut off the <code>m</code> automatically.</p></figcaption></figure>
+
+4. Save and see your effect changing positions!
 
 {% hint style="info" %}
 If your light doesn't seem to be in the right spot, try multiplying the value for z with -1
