@@ -85,6 +85,18 @@ That leaves a much smaller group, which again splits in two halves: those who ha
 
 So you're looking for a competent person who is good at explaining things and doesn't hate making guides. That's not very many people, and most of them have other things to do besides writing wiki pages (making mods, developing tools, slaving away for a corporation to earn a living wage, you name it). Sure, if you wait long enough, someone will probably get around to it, but... chances are that it's someone just like you.
 
+### OK, I'm sold! I'll edit as soon as...
+
+With all due respect, DO IT NOW!&#x20;
+
+Because "as soon as" never comes.&#x20;
+
+You'll be killed by a dropping anvil. Or you will be replaced by bodystealers from the dark side of the moon, who never intended to edit. Or while double-checking your facts, you'll notice another rabbit hole that you want to go down first. Or you'll forget about it. Or real life will get in the way.
+
+Get that information out of your head and into a change request. If you never finish up on it, somebody else will — but at least your knowledge doesn't die with you.
+
+Good luck, soldier!
+
 ## How to edit
 
 Before you can edit, you need to sign up to Gitbook (no way around it). It's integrated with github, so you can use that or your google log-in.&#x20;
