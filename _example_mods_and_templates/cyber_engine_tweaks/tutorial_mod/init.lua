@@ -1,10 +1,11 @@
 tutorial_mod = {
-	description = "just manas custom tweaks, nothing to see here, move along",
+	description = "just a tutorial mod",
 	rootPath = "tutorial_mod",
 	showUI = false
 }
 
--- this mod is up-to-date with Cyberpunk 2.1.1
+lights_on = nil
+lights_off = nil
 
 function tutorial_mod:new()
 	
@@ -84,4 +85,6 @@ function tutorial_mod:new()
 	return tutorial_mod
 end
 
+
 return tutorial_mod:new()
+
