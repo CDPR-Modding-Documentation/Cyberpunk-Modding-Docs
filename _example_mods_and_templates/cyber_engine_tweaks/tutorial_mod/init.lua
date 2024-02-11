@@ -4,8 +4,7 @@ tutorial_mod = {
 	showUI = false
 }
 
-lights_on = nil
-lights_off = nil
+-- this mod is up-to-date with Cyberpunk 2.1.1
 
 function tutorial_mod:new()
 	
