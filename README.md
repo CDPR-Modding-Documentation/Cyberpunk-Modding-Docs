@@ -12,6 +12,8 @@ This wiki is a community project! Do you want to improve or add anything? [Becom
 Don't worry, we'll review everything - you can't mess anything up, and all contributions are welcome!
 {% endhint %}
 
+## If you're browsing this in github: Please head to [gitbook](https://wiki.redmodding.org/cyberpunk-2077-modding/) instead!
+
 <div data-full-width="true">
 
 <figure><img src=".gitbook/assets/Type=Down.png" alt=""><figcaption></figcaption></figure>
