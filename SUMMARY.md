@@ -53,6 +53,7 @@
     * [RHT: Hot Reload](for-mod-creators/modding-tools/redhottools/rht-hot-reload.md)
   * [Tools, scripts and plugins](for-mod-creators/modding-tools/blender-scripts-and-plugins.md)
   * [Noesis](for-mod-creators/modding-tools/noesis.md)
+  * [The wiki](for-mod-creators/modding-tools/the-wiki.md)
 * [⚒ Core Mods explained](for-mod-creators/core-mods-explained/README.md)
   * [💻 CET (Cyber Engine Tweaks)](https://wiki.redmodding.org/cyber-engine-tweaks/)
   * [💹 ArchiveXL](for-mod-creators/core-mods-explained/archivexl/README.md)
