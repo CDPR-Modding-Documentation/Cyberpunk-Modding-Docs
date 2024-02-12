@@ -934,7 +934,7 @@ In this section, we first define our special ability `Cranial_Cashback`:
 
 ```yaml
 # Hand of Midas Iconic mod ability
-Abilities.Cranial_Cashback:
+Items.Cranial_Cashback:
   $base: Items.IconicWeaponModAbilityBase
   # effectors:
   # - !append-once Effectors.Punish_Miss
@@ -963,10 +963,10 @@ Now that we have an ability, we need to register it as a mod:
 
 ```yaml
 # Hand of Midas Iconic mod
-Mods.Cranial_Cashback_Mod:
+Items.Cranial_Cashback_Mod:
   $base: Items.IconicWeaponModBase
   OnAttach: 
-    - Abilities.Cranial_Cashback
+    - Items.Cranial_Cashback
 ```
 
 #### Adding the mod to the weapon
@@ -1001,20 +1001,20 @@ Items.Hand_Of_Midas:
     slot: AttachmentSlots.IconicWeaponModLegendary 
 
 # Hand of Midas Iconic mod
-Mods.Cranial_Cashback_Mod:
+Items.Cranial_Cashback_Mod:
   $base: Items.IconicWeaponModBase
   OnAttach: 
-    - Abilities.Cranial_Cashback
+    - Items.Cranial_Cashback
 
 # Hand of Midas Iconic mod ability
-Abilities.Cranial_Cashback:
+Items.Cranial_Cashback:
   $base: Items.IconicWeaponModAbilityBase
   # effectors:
   # - !append-once Effectors.Punish_Miss
   # - !append-once Effectors.Heal_On_Headshot
   UIData:
       $type: GameplayLogicPackageUIData
-      localizedDescription: MC_gun_iconic_description # iconic description shown in yellow text when hovering over a weapon
+      localizedDescription: LocKey#MC_gun_iconic_description # iconic description shown in yellow text when hovering over a weapon
 ```
 
 
@@ -1088,8 +1088,8 @@ We could now try to find an existing preReq that checks for headshots, but we ca
   conditions:
   - Perks.IsHitTargetAlive_inline2 # hit target is alive (health != 0)
   - Perks.HitIsBodyPartHead_inline0 # headshot condition
-  - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
-  - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
+  - Prereqs.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
+  - Prereqs.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
   processMiss: False # process shots that hit npcs only
 </code></pre>
 
@@ -1103,7 +1103,7 @@ For more information on this, check [types-of-tweak-records.md](../../../../file
 
 ```yaml
 # Condition to check if attack type is ranged
-Conditions.Is_Attack_Ranged:
+Prereqs.Is_Attack_Ranged:
   $type: gamedataHitPrereqCondition_Record
   invert: False
   onlyOncePerShot: True
@@ -1111,7 +1111,7 @@ Conditions.Is_Attack_Ranged:
   attackType: Ranged
 
 # Condition to check if weapon type is ranged
-Conditions.Is_Weapon_Ranged:
+Prereqs.Is_Weapon_Ranged:
   $type: gamedataHitPrereqCondition_Record
   invert: False
   onlyOncePerShot: True
@@ -1123,8 +1123,8 @@ Conditions are at the heart of a prerequisite, and here we have four.&#x20;
 
 1. `Perks.IsHitTargetAlive_inline2` -> We don't want headshots on deadbodies to heal the player
 2. `Perks.HitIsBodyPartHead_inline0` -> Actual condition to check for headshots
-3. `Conditions.Is_Attack_Ranged` -> (Custom) We don't want quick melee attacks to heal
-4. `Conditions.Is_Weapon_Ranged` -> (Custom) We don't want grenades to be counted for this check.
+3. `Prereqs.Is_Attack_Ranged` -> (Custom) We don't want quick melee attacks to heal
+4. `Prereqs.Is_Weapon_Ranged` -> (Custom) We don't want grenades to be counted for this check.
 
 #### The final effector
 
@@ -1166,8 +1166,8 @@ Prereqs.Has_Player_Shot:
   prereqClassName: HitOrMissTriggeredPrereq
   processMiss: True # process shots that miss npcs
   conditions:
-  - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
-  - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
+  - Prereqs.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
+  - Prereqs.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
 ```
 
 We've done a lot so far, so I'll leave all our changes here:
@@ -1183,8 +1183,8 @@ Items.Hand_Of_Midas:
   crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
   tags:
   - !append-once IconicWeapon # prevent the gun from being dissassembled
-  displayName: MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
-  localizedDescription: MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  displayName: LocKey#MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: LocKey#MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
   statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
   - !append-once Quality.IconicItem # makes the weapon iconic
   audioName: wea_set_liberty_dex # sets the sounds of Dex's gun - Plan B
@@ -1208,7 +1208,7 @@ Items.Hand_Of_Midas:
   slotPartListPreset: # attachments & mods 
   - !append-once
     $type: SlotItemPartPreset
-    itemPartPreset: Mods.Cranial_Cashback_Mod # iconic mod
+    itemPartPreset: Items.Cranial_Cashback_Mod # iconic mod
     slot: AttachmentSlots.IconicWeaponModLegendary 
 
 # Static price for Hand of Midas
@@ -1307,13 +1307,13 @@ StatGroups.Hand_Of_Midas_Recoil_Stats:
     statType: BaseStats.RecoilRecoveryTime # time taken to return to normal position after recoil
 
 # Hand of Midas Iconic mod
-Mods.Cranial_Cashback_Mod:
+Items.Cranial_Cashback_Mod:
   $base: Items.IconicWeaponModBase
   OnAttach: 
-  - Abilities.Cranial_Cashback
+  - Items.Cranial_Cashback
 
 # Hand of Midas Iconic mod ability
-Abilities.Cranial_Cashback:
+Items.Cranial_Cashback:
   $base: Items.IconicWeaponModAbilityBase
   effectors:
   - !append-once Effectors.Heal_On_Headshot
@@ -1357,8 +1357,8 @@ Prereqs.Has_Player_Shot:
   prereqClassName: HitOrMissTriggeredPrereq
   processMiss: True # process shots that miss npcs
   conditions:
-  - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
-  - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
+  - Prereqs.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
+  - Prereqs.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
 
 # Prereq to check if headshot & target is alive and hit with a ranged weapon
 Prereqs.Is_Target_Alive_And_Headshot:
@@ -1372,14 +1372,14 @@ Prereqs.Is_Target_Alive_And_Headshot:
   conditions:
   - Perks.IsHitTargetAlive_inline2 # hit target is alive (health != 0)
   - Perks.HitIsBodyPartHead_inline0 # headshot condition
-  - Conditions.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
-  - Conditions.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
+  - Prereqs.Is_Attack_Ranged # condition to check if it's the bullet hitting the target and not a quick melee
+  - Prereqs.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
   processMiss: False # process shots that hit npcs only
 
 # -------------------------------------------------------------------------------------------------------------------------
 
 # Condition to check if attack type is ranged
-Conditions.Is_Attack_Ranged:
+Prereqs.Is_Attack_Ranged:
   $type: gamedataHitPrereqCondition_Record
   invert: False
   onlyOncePerShot: True
@@ -1387,7 +1387,7 @@ Conditions.Is_Attack_Ranged:
   attackType: Ranged
 
 # Condition to check if weapon type is ranged
-Conditions.Is_Weapon_Ranged:
+Prereqs.Is_Weapon_Ranged:
   $type: gamedataHitPrereqCondition_Record
   invert: False
   onlyOncePerShot: True
