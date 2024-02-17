@@ -44,7 +44,9 @@ If you edit the leg component for female V, you must change both the regular and
 `base\characters\common\player_base_bodies\appearances\l0_000_base__cs_flat.app`
 {% endhint %}
 
-#### The following .app files have been confirmed working:
+#### If you can't make it work
+
+The files below have been confirmed to work — make the changes stated above to each of them:
 
 ```
 base\characters\common\player_base_bodies\appearances\l0_000_base__cs_flat.app
