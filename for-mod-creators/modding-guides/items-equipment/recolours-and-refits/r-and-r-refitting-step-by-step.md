@@ -136,8 +136,6 @@ You are currently in Object Mode, which will let you select whole objects.
 
     <figure><img src="../../../../.gitbook/assets/netrunners_refitting_colour_body.png" alt=""><figcaption></figcaption></figure>
 
-
-
 ## Step 4: Refitting
 
 {% hint style="success" %}
@@ -223,4 +221,10 @@ Happy modding, choomba!
 
 ## Troubleshooting
 
-As of now, there are no problems limited to the scope of this guide. You can find the general troubleshooting for 3d edits and -imports under [troubleshooting-your-mesh-edits.md](../../../3d-modelling/troubleshooting-your-mesh-edits.md "mention").
+You can find the general troubleshooting for 3d edits and -imports under [troubleshooting-your-mesh-edits.md](../../../3d-modelling/troubleshooting-your-mesh-edits.md "mention").
+
+### My mesh refuses to show any colours!
+
+Make sure that you switch the Viewport in Blender to **Viewport Shading** (the third globe in the topright corner)
+
+<figure><img src="../../../../.gitbook/assets/blender_viewport_shading.png" alt=""><figcaption></figcaption></figure>
