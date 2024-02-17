@@ -48,7 +48,7 @@ Due to the complexity of V's head mesh, you have to do a little bit of prep work
 
 Don't worry, I'll walk you through it step by step.
 
-To create a face, we need to know your character's values:&#x20;
+To create a face, we need to know your character's values. For that, you need to have [AppearanceChangeUnlocker](https://www.nexusmods.com/cyberpunk2077/mods/3850) installed, or you won't see them:
 
 * Eyes
 * Eyebrows
