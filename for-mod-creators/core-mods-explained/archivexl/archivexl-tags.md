@@ -102,7 +102,11 @@ Only works with a foot item as `$base` in the `.yaml`: use this if you're making
 
 ## Adding custom tags
 
-If you want to add custom tags, you can do that **in your `.xl` file.**
+Custom tags let you set [component chunk masks](../../files-and-what-they-do/components/#chunkmask) from the .xl file without the need of touching either .app or .ent file.
+
+{% hint style="danger" %}
+For this, it is mandatory that you have unique component names. If you include your modder name, it's unlikely that anyone will overwrite them by accident.
+{% endhint %}
 
 ### **Why would I need this?** [partsOverrides](../../files-and-what-they-do/appearance-.app-files.md#partsoverrides) **exists!**
 
@@ -113,7 +117,9 @@ Not convinced? Pity, but if you find a new use case for those things, do [edit i
 
 ### **Example**
 
-This is how you can un-hide hidden components:
+#### Registering the tag
+
+Add custom tags **in your `.xl` file** (not in your `.yaml`!)
 
 ```
 overrides:
@@ -123,6 +129,8 @@ overrides:
     my_HideSeamfix:
       t0_000_pma_base__full_seamfix: {hide: [0, 1, 2, 3]}
 ```
+
+#### Connecting the tag with the item
 
 Simply add the tag to your appearance's tags array near the bottom of the individual entries.
 
