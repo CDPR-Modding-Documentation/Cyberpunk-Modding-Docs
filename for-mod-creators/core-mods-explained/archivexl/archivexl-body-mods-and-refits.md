@@ -98,3 +98,19 @@ Now, you can use the suffixes in your [root entity](../../files-and-what-they-do
 appearanceName: my_custom_shirt&FPP&NewBody
 ```
 
+## Supporting mods
+
+The following body mods support dynamic body switching.
+
+{% hint style="info" %}
+If you know something that should be on the list, please edit [the-wiki.md](../../modding-tools/the-wiki.md "mention")!
+{% endhint %}
+
+| Mod                                                                                  | Tag name | substitution value |
+| ------------------------------------------------------------------------------------ | -------- | ------------------ |
+| [KS Lion's  Body](https://www.nexusmods.com/cyberpunk2077/mods/4901)                 | Lush     | `&body=lush`       |
+| [Hyst's Big Butt](https://www.nexusmods.com/cyberpunk2077/mods/4420)                 | RB       | `&body=ebb`        |
+| [Hyst's Big Boobs](https://www.nexusmods.com/cyberpunk2077/mods/4654)                | EBB      | `&body=rb`         |
+| [Hyst's Big Push Up Boobs](https://www.nexusmods.com/cyberpunk2077/mods/9083)        | EBBP     | `&body=ebbp`       |
+| [Hyst's Big Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/4654)         | EBBRB    | `&body=ebbrb`      |
+| [Hyst's Big Push Up Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/9083) | EBBPRB   | `&body=ebbprb`     |
