@@ -248,7 +248,7 @@ If Wolvenkit's console tells you something like this:
 animation `anim_name` has no extra data, can't import!
 ```
 
-1. To make sure that the `.glb` file that you want to **import into** is okay, do a fresh [Wolvenkit export](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) of your `.anim`
+1. To make sure that the `.glb` file that you want to **import into** is okay, do a fresh [Wolvenkit export](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) of your `.anim` with a Wolvenkit version from after February 10 2024 (>8.13 should be ok)
 2. Now, let's add the missing data by [running the following script](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-troubleshooting/blender-running-python-scripts.md) in your .blend file:
 
 <details>
