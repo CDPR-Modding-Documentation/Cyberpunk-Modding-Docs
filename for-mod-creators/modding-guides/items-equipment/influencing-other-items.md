@@ -39,27 +39,21 @@ Where **partsValues** lets you define the individual entity files that you'll lo
 
 <figure><img src="../../../.gitbook/assets/partsOverrides2.png" alt=""><figcaption><p>componentsOverride > .ent file</p></figcaption></figure>
 
-{% hint style="info" %}
+{% hint style="warning" %}
 Components need to be **unambiguously** identified by their name as defined in the .ent file. For that reason, it's good practice to have globally unique identifiers.&#x20;
 {% endhint %}
 
-Starting with version >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.4.0-rc2), ArchivXL can understand the following variables for `meshAppearance` in `appearanceOverrides`:
-
-|                |                                                                                      |
-| -------------- | ------------------------------------------------------------------------------------ |
-| `{gender}`     | m or w depending on V's body gender                                                  |
-| `{skin_color}` | [cheat-sheet-head](../../references-lists-and-overviews/cheat-sheet-head/ "mention") |
-| `{hair_color}` | [hair.md](../../references-lists-and-overviews/cheat-sheet-head/hair.md "mention")   |
-
-So depending on your PC's body gender and colouring, the meshAppearance `my_app_{gender}`**`{skin_color}_{`**`hair_color}` could translate to `my_app_w__01_ca_pale__blue_red_ombre`.
+{% hint style="info" %}
+You can make use of [archivexl-suffixes-and-substitutions.md](../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") for your components.
+{% endhint %}
 
 #### Arms
 
 {% hint style="warning" %}
-Due to cyberware, V has more arms than Shiva the Destroyer (although not at the same time). Find the component names on [cheat-sheet-body.md](../../references-lists-and-overviews/cheat-sheet-body.md "mention") -> [#arms](../../references-lists-and-overviews/cheat-sheet-body.md#arms "mention")
+Due to cyberware, V has more arms than Shiva the Destroyer (although not at the same time). Arms are why we can't have nice things.
 {% endhint %}
 
-You can find the corresponding entity files in `base\characters\common\player_base_bodies > .ent`, the file names will start with `a0_.`
+You can find arm component names on [cheat-sheet-body.md](../../references-lists-and-overviews/cheat-sheet-body.md "mention") -> [#arms](../../references-lists-and-overviews/cheat-sheet-body.md#arms "mention"). Alternatively, you can browse the corresponding entity files in the [Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) by [searching for](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) `base\characters\common\player_base_bodies > .ent`, the file names will start with `a0_.`
 
 #### Body
 

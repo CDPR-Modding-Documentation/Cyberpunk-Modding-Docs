@@ -2,7 +2,7 @@
 description: An item addition with dynamic appearances, and what you can do for this
 ---
 
-# ArchiveXL: Dynamic Appearances
+# ItemAdditions: Dynamic Appearances
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -205,7 +205,9 @@ For dynamic variants, components in the .app file will be **ignored**. You have 
 
 You can define appearances for different circumstances by using [#conditional-switching](../../../core-mods-explained/archivexl/#conditional-switching "mention") for the appearance names. This will let you influence the mesh entity even further by e.g. hiding parts of the mesh via [#chunkmask](../../../files-and-what-they-do/components/#chunkmask "mention"). And the best part is: you don't even need to touch your root entity.
 
-In the context of our example project, this means that you can define a first person appearance by calling it `app_file_dynamic_appearance&camera=fpp`.&#x20;
+In the context of our example project, this means that you can define your appearances like this:
+
+<table><thead><tr><th width="450">Appearance name</th><th>Explanation</th></tr></thead><tbody><tr><td><code>app_file_dynamic_appearance</code></td><td>Your regular appearance. Is displayed when none of the conditional ones apply.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;camera=fpp</code></td><td>This becomes active whenever you are in first person perspective. You'll usually want this to<a href="../first-person-perspective-fixes.md#problem-2-its-in-your-face-juststormtrooperthings"> remove the mesh from your face</a> via <a href="../../../files-and-what-they-do/appearance-.app-files.md#partsoverrides">partsOverrides</a>.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;gender=male</code></td><td>You shouldn't do this — instead, use <a href="../../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#which-substitutions-exist">substitutions</a> in the mesh file path.</td></tr></tbody></table>
 
 ### The mesh\_entity
 

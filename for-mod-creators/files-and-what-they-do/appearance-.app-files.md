@@ -57,10 +57,16 @@ You can't un-hide something via partsOverrides — you'll have to use [custom ta
 {% endhint %}
 
 {% hint style="info" %}
-If you leave the `depotPath` empty, then the component override will be handled by ArchiveXL. For example, the base game isn't smart enough to omit an empty or unchanged mesh appearance name, overwriting your dynamic variants if you use them together with partsOverrides.
+If you leave the `depotPath` empty, then the component override will be handled by ArchiveXL. You should probably do this, which is why [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) will tell you about it.
+
+For example, the base game isn't smart enough to omit an empty or unchanged mesh appearance name, overwriting your dynamic variants.
 {% endhint %}
 
 ## commonCookData
+
+{% hint style="info" %}
+This has been removed with 2.1 — the information below is preserved for historical reasons.
+{% endhint %}
 
 To save a few processing cycles, CDPR doesn't evaluate .apps on load, but instead keeps a pre-cooked cache under `base\cookedappearances`. CommonCookData is the lookup path for such a file. As long as the file in question exists and isn't empty, your changes might not register, or components that you removed will still be displayed.
 

@@ -4,9 +4,8 @@ description: Common Problems and How to Fix Them
 
 # First Person Perspective Fixes
 
-**Created by** [FronkenZeepa](https://app.gitbook.com/u/pj9Ccv6IrMVhmNUW9HVbn6CYZ2B2 "mention")
-
-**Published on October 08 2023**
+**Published:** October 08 2023 by [FronkenZeepa](https://app.gitbook.com/u/pj9Ccv6IrMVhmNUW9HVbn6CYZ2B2 "mention")\
+**Last documented update:** February 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 In this guide, I will do my best to address the most common first person issues I've seen, and how to fix them.&#x20;
 
@@ -209,27 +208,28 @@ If there is only one submesh, you need to edit it in Blender to split off or del
 
 ### Chunk Masks
 
+{% hint style="info" %}
+You can learn more about chunk masks under [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention") -> [submeshes-materials-and-chunks.md](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"). This is not necessary for the purpose of this guide.
+{% endhint %}
+
 1. Switch back to the appearance (.app) file&#x20;
 2. Expand your first person appearance.
 3. Expand the `partsOverrides` array. If it's empty, click on the array itself, then in the right pane, click create item in array.
-4.  Expand the `partsValues` array and copy the `appearanceAppearancePart` value over to the `partResource` entry under `partsOverrides`, as shown in the example image.
-
-    <figure><img src="../../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
-5. Select `componentsOverrides` by clicking on it.&#x20;
-6. In the right panel, click on the yellow + to create a new item in array.&#x20;
-7. Open up the mesh entity (.ent) file and expand the `components` array.&#x20;
-8.  Find the component that needs its parts hidden and copy the name. In my example, the component is `examplejacket1_fur`_._
+4. Select `componentsOverrides` by clicking on it.&#x20;
+5. In the right panel, click on the yellow + to create a new item in array.&#x20;
+6. Open up the mesh entity (.ent) file and expand the `components` array.&#x20;
+7.  Find the component that needs its parts hidden and copy the name. In my example, the component is `examplejacket1_fur`_._
 
     <figure><img src="../../../.gitbook/assets/image (160).png" alt=""><figcaption></figcaption></figure>
-9.  Back to the appearance (.app) file. Paste the component's name from the mesh entity into the _`componentName`_ field.
+8.  Back to the appearance (.app) file. Paste the component's name from the mesh entity into the _`componentName`_ field.
 
     <figure><img src="../../../.gitbook/assets/image (161).png" alt=""><figcaption></figcaption></figure>
-10. Click on `chunkMask` and uncheck the submeshes that you want to hide. (You found out which ones that were in [#finding-the-right-submesh](first-person-perspective-fixes.md#finding-the-right-submesh "mention") - In my example it was submesh 01)
+9. Click on `chunkMask` and uncheck the submeshes that you want to hide. (You found out which ones that were in [#finding-the-right-submesh](first-person-perspective-fixes.md#finding-the-right-submesh "mention") - In my example it was submesh 01)
 
 <figure><img src="../../../.gitbook/assets/image (162).png" alt=""><figcaption></figcaption></figure>
 
-11. Optional: If you need to hide more parts or affect more components/meshes, rinse and repeat.
-12. Save the appearance (.app) file and install the mod to test. If all went well, there should no longer be parts clipping into view.
+10. **Optional**: If you need to hide more parts or affect more components/meshes, rinse and repeat.
+11. Save the appearance (.app) file and install the mod to test. If all went well, there should no longer be parts clipping into view.
 
 <figure><img src="../../../.gitbook/assets/image (163).png" alt=""><figcaption><p>Results may vary depending on the item, but this is much better, no?</p></figcaption></figure>
 
@@ -242,12 +242,12 @@ The clean way to do this is to split the original mesh into submeshes, which you
 To show a different item (one with the clipping bits removed) in first person perspective, we need to create a second .mesh file that we can display. This guide will show you how.
 
 1. Duplicate the `.mesh` file that's clipping in first person. For my example. I'm using the jacket mesh
-2. Change its name to end in \_fpp (or do whatever you want, but this guide assumes...)
+2. Change its name to end in \_fpp to indicate that this is a mesh for the **first person perspective** (or do whatever you want, but this guide assumes...)
 
 <figure><img src="../../../.gitbook/assets/first_person_copy_mesh.png" alt=""><figcaption></figcaption></figure>
 
 3. In the `.app` file, open your first person appearance.&#x20;
-4. Add a `partsOverride` by following the steps under [#chunk-masks](first-person-perspective-fixes.md#chunk-masks "mention") (skip step 10)
+4. Add a `partsOverride` by following the steps under [#chunk-masks](first-person-perspective-fixes.md#chunk-masks "mention") (skip step 9)
 5. Change the depotPath to your new \_fpp mesh file.&#x20;
 6. Save and close the .app – it is now pointing at  your .fpp mesh.
 

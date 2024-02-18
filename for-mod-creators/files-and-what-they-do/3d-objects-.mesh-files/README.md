@@ -4,19 +4,27 @@ description: Documentation on .mesh files and their properties.
 
 # 3d objects: .mesh files
 
+## Summary
+
+**Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** Feb 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
 This page contains information on .mesh files and their properties.
 
-* If you want to export or import mesh files, see [exporting-and-importing-meshes](../../3d-modelling/exporting-and-importing-meshes/ "mention")
-* If you want to learn how to edit a mesh's appearance, check [changing-materials-colors-and-textures.md](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
-* If you want to play around with mesh materials, see [textured-items-and-cyberpunk-materials.md](../../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention")
+### Wait, that's not what I want!
 
-{% hint style="info" %}
+* See [wkit-blender-plugin-import-export.md](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention") for a guide on export/import
+* To edit a mesh's appearance, check [changing-materials-colors-and-textures.md](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
+* To learn about mesh materials, see [textured-items-and-cyberpunk-materials.md](../../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention")
+* To hide parts of a mesh under different circumstances, check [first-person-perspective-fixes.md](../../modding-guides/items-equipment/first-person-perspective-fixes.md "mention")
+
+## What's a mesh?
+
 In the context of Cyberpunk, a mesh is the file that defines the topology[^1] and the materials[^2] of an object in the game world.
 
-A mesh can have several **submeshes**, each of which has own material assignments.
+A mesh can have several **submeshes**, each of which has own material assignments. You can learn more about this on the sub-page for [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention").
 
 Mesh files for inanimate objects also tend to contain extensive physics parameters governing their physical weight and general behavior.
-{% endhint %}
 
 ## How the mesh is loaded
 
@@ -24,11 +32,11 @@ Meshes are loaded via [components](../components/ "mention") (e.g. [#entgarments
 
 For more information on this, please check [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention") -> [#chunkmasks-partially-hiding-meshes](submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
 
-### Shadows
+## Shadows
 
 There are two ways of adding shadows to  meshes:&#x20;
 
-#### Component property
+### Component property
 
 To make a mesh cast a real-time shadow, set the component's property `castShadows` to `Always`.
 
@@ -36,7 +44,7 @@ To make a mesh cast a real-time shadow, set the component's property `castShadow
 Depending on your geometry, this can impact performance.
 {% endhint %}
 
-#### Shadow mesh
+### Shadow mesh
 
 Many meshes have dedicated shadow meshes, which have a much lower level of detail and will be hidden by default. You can open any clothing item's mesh entity to see this in action.
 
@@ -46,7 +54,11 @@ You can see which submesh is which in the `Mesh Preview` tab after opening the m
 
 <figure><img src="../../../.gitbook/assets/mesh_preview_tab.png" alt=""><figcaption></figcaption></figure>
 
-With the boxes on the left, you can toggle submeshes on and off.
+With the boxes on the left, you can toggle submeshes on and off.&#x20;
+
+{% hint style="info" %}
+Submesh numbers correspond directly to a component's [#chunkmask](../components/#chunkmask "mention") property. For technical reasons, the chunkmask dropdown supports up to 64 entries — just ignore the missing numbers.
+{% endhint %}
 
 ## Material assignment
 

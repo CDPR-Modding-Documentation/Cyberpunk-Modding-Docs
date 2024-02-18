@@ -7,7 +7,7 @@ description: How suffixes and substitutions work
 #### Summary
 
 **Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jan 19 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Feb 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will teach you about conditional appearance switching in Cyberpunk and give you an overview of existing suffixes and substitutions.
 
@@ -21,6 +21,7 @@ psiberx has found ways to make this less painful. This page documents these ways
 
 * For a hands-on guide to [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention"), check the corresponding pages under [modding-guides](../../modding-guides/ "mention").&#x20;
 * Dynamic appearances have their own guide (see [archivexl-dynamic-variants.md](../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention"))
+* There is an own page for [influencing-other-items.md](../../modding-guides/items-equipment/influencing-other-items.md "mention")
 
 ## Why are suffixes?
 
@@ -154,16 +155,16 @@ If any of the placeholders aren't working the way you expect them, check if the 
 Substitution will only become active if the property name starts with an asterisk (`*`).
 {% endhint %}
 
-| Placeholder    | Substitution                                                    |
-| -------------- | --------------------------------------------------------------- |
-| `{camera}`     | `fpp` or `tpp`                                                  |
-| `{gender}`     | `m` or `w`                                                      |
-| `{body}`       | `base_body` or body mod name in snake case                      |
-| `{arms}`       | `base_arms`, `mantis_blades`, `monowire`, `projectile_launcher` |
-| `{feet}`       | `flat`, `lifted`, `high_heels`, `flat_shoes` (empty for mascV!) |
-| `{sleeves}`    | `full`, `part`                                                  |
-| `{skin_color}` | skin color name from customization, e.g. `03_senna`             |
-| `{hair_color}` | hair color name from customization. e.g. `black_liquorice`      |
+| Placeholder    | Substitution                                                                                                                                         |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `{camera}`     | `fpp` or `tpp`                                                                                                                                       |
+| `{gender}`     | `m` or `w`                                                                                                                                           |
+| `{body}`       | `base_body` or body mod name in snake case                                                                                                           |
+| `{arms}`       | `base_arms`, `mantis_blades`, `monowire`, `projectile_launcher`                                                                                      |
+| `{feet}`       | `flat`, `lifted`, `high_heels`, `flat_shoes` (empty for mascV!)                                                                                      |
+| `{sleeves}`    | `full`, `part`                                                                                                                                       |
+| `{skin_color}` | [skin color name](../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) from customization, e.g. `03_senna`                    |
+| `{hair_color}` | [hair color name](../../references-lists-and-overviews/cheat-sheet-head/hair.md#colour-in-files-by-index) from customization. e.g. `black_liquorice` |
 
 
 

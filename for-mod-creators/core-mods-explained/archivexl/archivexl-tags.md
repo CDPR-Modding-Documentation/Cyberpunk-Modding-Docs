@@ -1,9 +1,31 @@
 # ArchiveXL: Tags
 
-Tags are a way to tell Cyberpunk that an item has certain properties and should behave in a certain way. Thanks to ArchiveXL's extended tag system, you can for example force flat feet for female V, or un-hide hair from a head item.
+## Summary
+
+**Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Feb 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page will tell you about **tags** and how they can be used to influence item behaviour. It also teaches you how [#adding-custom-tags](archivexl-tags.md#adding-custom-tags "mention") can help you conditionally un-hide items.
+
+### Wait, this is not what I want!
+
+* Tags are used for calculating Garment Support score, see  [garment-support-how-does-it-work](../../3d-modelling/garment-support-how-does-it-work/ "mention")
+* There is an own page for [influencing-other-items.md](../../modding-guides/items-equipment/influencing-other-items.md "mention")
+
+## What do tags do?
+
+Tags are a way to tell Cyberpunk that an item has certain properties and should behave in a certain way. This makes the game apply properties to your items, which can then be utilized by the game and ArchiveXL to
+
+* hiding V's junk to stop it from clipping through tight pants (`hide_Genitals`)
+* forcing female V's feet to be flat (`force_FlatFeet`)
+* showing hair while wearing a head item (`force_Hair`)
 
 {% hint style="warning" %}
 Please keep in mind that you need to add those to the [.app file](../../files-and-what-they-do/appearance-.app-files.md)'s **appearance definition** rather than the root or mesh entity.&#x20;
+{% endhint %}
+
+{% hint style="danger" %}
+Tags are case-sensitive!
 {% endhint %}
 
 ### Base game tags
@@ -22,28 +44,28 @@ Please keep in mind that you need to add those to the [.app file](../../files-an
 
 ### ArchiveXL tags
 
-| Tag                 | Effect                                  |
-| ------------------- | --------------------------------------- |
-| `hide_Head`         | Hides head.                             |
-| `hide_Torso`        | Hides the whole torso.                  |
-| `hide_LowerAbdomen` | Hides lower abdomen.                    |
-| `hide_UpperAbdomen` | Hides upper abdomen.                    |
-| `hide_CollarBone`   | Hides collar bone area.                 |
-| `hide_Arms`         | Hides arms.                             |
-| `hide_Thighs`       | Hides thighs.                           |
-| `hide_Calves`       | Hides calves.                           |
-| `hide_Ankles`       | Hides ankles.                           |
-| `hide_Feet`         | Hides feet.                             |
-| `hide_Legs`         | Hides the whole legs.                   |
-| `force_Hair`        | Forces visible hair for head items.     |
-| `force_FlatFeet`    | Forces flat feet for female characters. |
+| Tag                 | Effect                                 |
+| ------------------- | -------------------------------------- |
+| `hide_Head`         | Hides head.                            |
+| `hide_Torso`        | Hides the whole torso.                 |
+| `hide_LowerAbdomen` | Hides lower abdomen.                   |
+| `hide_UpperAbdomen` | Hides upper abdomen.                   |
+| `hide_CollarBone`   | Hides collar bone area.                |
+| `hide_Arms`         | Hides arms.                            |
+| `hide_Thighs`       | Hides thighs.                          |
+| `hide_Calves`       | Hides calves.                          |
+| `hide_Ankles`       | Hides ankles.                          |
+| `hide_Feet`         | Hides feet.                            |
+| `hide:legs`         | Hides the entire legs (including feet) |
+
+{% hint style="info" %}
+Check the [#root-entity-tags](archivexl-tags.md#root-entity-tags "mention") section below for more tags
+{% endhint %}
 
 ### Hiding body parts: diagram
 
-
-
-{% hint style="info" %}
-To hide whole items under certain conditions, check the EmptyAppearance tag. You'll find more details under [archivexl-suffixes-and-substitutions.md](archivexl-suffixes-and-substitutions.md "mention") -> [#camera-modes](archivexl-suffixes-and-substitutions.md#camera-modes "mention")
+{% hint style="warning" %}
+The diagrams below are somewhat outdated. Especially the arms information is not accurate. ([Arms are terrible and we hates them, precious](../../modding-guides/items-equipment/influencing-other-items.md#arms).)
 {% endhint %}
 
 <div>
@@ -56,9 +78,42 @@ To hide whole items under certain conditions, check the EmptyAppearance tag. You
 
 </div>
 
+## Root entity tags
+
+There are a few tags that have to be added to the root entity rather than the .app file. Here's a list:
+
+#### EmptyAppearance
+
+This will hide an item under certain conditions. Add the following tag to the root entity:
+
+`EmptyAppearance:FPP`
+
+You have the following other options to achieve the same end:
+
+<table data-header-hidden><thead><tr><th width="209"></th><th></th><th></th></tr></thead><tbody><tr><td>Root entity appearance<br>(does not need dynamic variants)</td><td><code>name</code>: <code>my_appearance&#x26;FPP</code></td><td>.app path: <code>base\characters\appearances\player\items\empty_appearance.app</code><br><code>default</code></td></tr><tr><td>.app <a href="../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md#conditional-switching-picking-appearances-by-name">conditional appearance</a>: change default appearance name</td><td><code>name</code>: <code>my_appearance&#x26;camera=tpp</code></td><td>ArchiveXL will automatically add empty appearances for anything you have not defined</td></tr><tr><td>.app <a href="../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md#conditional-switching-picking-appearances-by-name">conditional appearance</a>: add empty appearance yourself</td><td><code>name</code>: <code>my_appearance&#x26;camera=fpp</code></td><td>no partsValues, no components.<br>Do not do this - use the line above this one instead!</td></tr></tbody></table>
+
+#### `force_Hair`
+
+By default, head items turn hair invisible. By adding this tag to the root entity, you can override this process.
+
+#### `force_FlatFeet`
+
+Only works with a foot item as `$base` in the `.yaml`: use this if you're making flat shoes and don't want female V's feet to look as if she was wearing heels.
+
 ## Adding custom tags
 
-If you want to add custom tags, you can do that **in your `.xl` file**. This is how you can for example un-hide hidden components, or hide components without making use of [partsOverrides](../../files-and-what-they-do/appearance-.app-files.md#partsoverrides):
+If you want to add custom tags, you can do that **in your `.xl` file.**
+
+### **Why would I need this?** [partsOverrides](../../files-and-what-they-do/appearance-.app-files.md#partsoverrides) **exists!**
+
+1. PartsOverrides can't un-hide components for you. It can only hide them. If you want to load a different mesh (for example, a de-formed hakama when wearing a kimono or haori), then you're flat out of luck.
+2. By being clever about your submeshes, you can offer different versions of your mesh (cropped! No arms! No legs), and users only need to install an .xl file! No need to have different meshes or even different .archive files.
+
+Not convinced? Pity, but if you find a new use case for those things, do [edit it in](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7)!
+
+### **Example**
+
+This is how you can un-hide hidden components:
 
 ```
 overrides:
