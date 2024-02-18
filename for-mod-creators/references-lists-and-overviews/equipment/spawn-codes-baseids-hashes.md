@@ -4,7 +4,31 @@ description: Item spawn codes and how they link to appearances
 
 # Spawn Codes (BaseIDs/Hashes)
 
-## Previews
+## What's a BaseID?
+
+Each item is **uniquely identified** by this string[^1]. You can use it to spawn items via [Cyber Engine Tweaks](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/console#console-ui) with the following command:&#x20;
+
+```
+Game.AddToInventory("Items.money", 5000)
+```
+
+`Items.money` is the baseID for eddies, and the 5000 will stuff 5 grand into your pocket.
+
+## Lists of Base IDs
+
+{% hint style="info" %}
+You can usually find any BaseID on the [fandom](https://cyberpunk.fandom.com/wiki/Cyberpunk\_2077\_Clothing) wiki. Search for a game item, then expand the section "technical details" in the box to the right.
+{% endhint %}
+
+A selection of lists for looking up item codes. Alternatively, you can browse through the game's files, or search the web.
+
+|                                                                                                                                                 |                                                                                                                                                                                     |
+| ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Excel Sheet](https://1drv.ms/x/s!ArM35g0UkWjvjcVPT-fhFPPCZUfDLw?e=BOxScl) (2.0 compatible)                                                     | <p>Excel sheet from <code>#cet-commands</code> on <a href="https://discord.gg/redmodding">Discord</a> with item codes. <br>Please note the <strong>tabs</strong> at the bottom.</p> |
+| [Google Doc](https://docs.google.com/document/d/e/2PACX-1vRJaq1sHobpHjNxPzjtSHVltNUXU6g5uYUfjw9zgrfaC9MQzEmEXFsqDcYVJDWS5cdpGuixH\_A\_n2fN/pub) | A list with BaseIDs                                                                                                                                                                 |
+| [Google Sheet](https://docs.google.com/spreadsheets/d/1UeEA0ONMtF6CNl1Cutkb4DNJ\_JiabhstfwiaA94m0ds/edit)                                       | Google Sheets (August 2022), supports filtering                                                                                                                                     |
+
+## Item Previews (pretty pictures!)
 
 | List                                                                                        | Description                                                   |
 | ------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -13,23 +37,6 @@ description: Item spawn codes and how they link to appearances
 | [cp2077.8713.su](https://cp2077.8713.su/) (f!V)                                             | Screenshots on femme V with spawn codes                       |
 | [Steam: Cyberware](https://steamcommunity.com/sharedfiles/filedetails/?id=2343787921)       |                                                               |
 | [Steam: Quickhacks](https://steamcommunity.com/sharedfiles/filedetails/?id=2350003795)      |                                                               |
-
-## Lists
-
-A selection of lists for looking up item codes. Alternatively, you can browse through the game's files, or search e.g. the [fandom](https://cyberpunk.fandom.com/wiki/Cyberpunk\_2077\_Clothing) wiki.
-
-|                                                                                                                                                 |                                                                                                                                                                                     |
-| ----------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [Excel Sheet](https://1drv.ms/x/s!ArM35g0UkWjvjcVPT-fhFPPCZUfDLw?e=BOxScl) (2.0 compatible)                                                     | <p>Excel sheet from <code>#cet-commands</code> on <a href="https://discord.gg/redmodding">Discord</a> with item codes. <br>Please note the <strong>tabs</strong> at the bottom.</p> |
-| [Google Doc](https://docs.google.com/document/d/e/2PACX-1vRJaq1sHobpHjNxPzjtSHVltNUXU6g5uYUfjw9zgrfaC9MQzEmEXFsqDcYVJDWS5cdpGuixH\_A\_n2fN/pub) | A list with BaseIDs                                                                                                                                                                 |
-| [Google Sheet](https://docs.google.com/spreadsheets/d/1UeEA0ONMtF6CNl1Cutkb4DNJ\_JiabhstfwiaA94m0ds/edit)                                       | Google Sheets (August 2022), supports filtering                                                                                                                                     |
-|                                                                                                                                                 |                                                                                                                                                                                     |
-
-{% hint style="danger" %}
-Player equipment only: \
-\
-Not all items that you find in the player folder are actually hooked up to spawn. If you can't [find an app file](spawn-codes-baseids-hashes.md#the-.app), you ran into one of those. &#x20;
-{% endhint %}
 
 ## From a BaseID to an item's materials
 
@@ -91,4 +98,8 @@ To find your way through the mesh, check the guide for [recoloring items](../../
 
 
 
+
+
+
+[^1]: Netrunner-ese for "text"
 
