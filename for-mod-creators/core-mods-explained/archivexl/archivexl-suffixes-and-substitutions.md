@@ -31,6 +31,10 @@ Since 1.5, psiberx has made it possible to use **conditionals** via [dynamic app
 
 But while the solution has changed (and improved), the problems remain and require handling.
 
+### Conditional hiding
+
+To conditionally hide items or parts of items, check [influencing-other-items.md](../../modding-guides/items-equipment/influencing-other-items.md "mention") or [archivexl-tags.md](archivexl-tags.md "mention") (especially the section about [#root-entity-tags](archivexl-tags.md#root-entity-tags "mention"))
+
 ### Body genders
 
 There are two body genders with different proportions, and you can't make them wear the same shirt (at least not without clipping). To solve that, you can do what CDPR did and have one variant per rig.
@@ -53,16 +57,10 @@ print(Game.GetScriptableSystemsContainer():Get("PuppetStateSystem"):GetBodyTypeS
 
 Sometimes, you need to hide parts of the item in first person. – for example helmets, since you don't want to have half a helmet floating in front of your face (unless you consider that immersive; most people don't).
 
-{% hint style="info" %}
-To hide an item in first person perspective, you can add the following tag to the root entity:
-
-`EmptyAppearance:FPP`
-
-or add an `&FPP` variant pointing at
-
-`base\characters\appearances\player\items\empty_appearance.app` \
-`default`
-{% endhint %}
+| Camera mode              | FPP    | substitution |
+| ------------------------ | ------ | ------------ |
+| First Person Perspective | \&FPP  | `fpp`        |
+| Third Person Perspective | `&TPP` | `tpp`        |
 
 ### Arm states
 
