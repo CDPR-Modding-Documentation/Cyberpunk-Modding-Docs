@@ -169,7 +169,7 @@
     * [Poses/Animations: make your own](for-mod-creators/modding-guides/animations/poses-animations-make-your-own.md)
     * [AMM: Collab anims/poses](for-mod-creators/modding-guides/animations/amm-collab-anims-poses.md)
     * [Archived: Custom poses for spawned NPCs](for-mod-creators/modding-guides/animations/archived-custom-poses-for-spawned-npcs.md)
-    * [Abusing workspots](for-mod-creators/modding-guides/animations/abusing-workspots.md)
+    * [Play animations with workspots](for-mod-creators/modding-guides/animations/abusing-workspots.md)
     * [ArchiveXL: adding Photo Mode Poses](for-mod-creators/modding-guides/animations/archivexl-adding-photo-mode-poses.md)
     * [Photo Mode / AMM: Other Facial Expressions](for-mod-creators/modding-guides/animations/custom-facial-expressions.md)
     * [Retargeting Animations to other Rigs](https://docs.google.com/document/d/1nHPQvkK6ijwb8iQ8y1X8CBG-wnNUCTYCjrdUCGMenW4/edit?usp=drive\_link)

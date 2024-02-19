@@ -1,8 +1,10 @@
 ---
-description: Or how to play an animation on an entity through clever gimmicks in Redscript.
+description: >-
+  Learn how to play an animation on an entity through clever gimmicks in
+  Redscript.
 ---
 
-# Abusing workspots
+# Play animations with workspots
 
 {% hint style="warning" %}
 This is an advanced tutorial that requires you to understand the basics of wolvenkit
