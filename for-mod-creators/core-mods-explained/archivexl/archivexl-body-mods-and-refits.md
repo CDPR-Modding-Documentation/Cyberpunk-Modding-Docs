@@ -114,3 +114,4 @@ If you know something that should be on the list, please edit [the-wiki.md](../.
 | [Hyst's Big Push Up Boobs](https://www.nexusmods.com/cyberpunk2077/mods/9083)        | EBBP     | `&body=ebbp`       |
 | [Hyst's Big Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/4654)         | EBBRB    | `&body=ebbrb`      |
 | [Hyst's Big Push Up Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/9083) | EBBPRB   | `&body=ebbprb`     |
+| [Gymfiend](https://www.nexusmods.com/cyberpunk2077/mods/6423)                        | Gymfiend | `&body=gymfiend`   |
