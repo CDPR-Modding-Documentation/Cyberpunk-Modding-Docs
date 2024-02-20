@@ -109,7 +109,7 @@
     * [Hair Material Properties](for-mod-creators/materials/configuring-materials/cyberpunk-hair-material.md)
     * [Emissive Material Properties](for-mod-creators/materials/configuring-materials/emissive-material-properties.md)
     * [Multilayered Material Properties](for-mod-creators/materials/configuring-materials/multilayered-material-properties.md)
-    * [Textured material properties](for-mod-creators/materials/configuring-materials/textured-material-properties.md)
+    * [Textured (PBR) material properties](for-mod-creators/materials/configuring-materials/textured-material-properties.md)
     * [Liquid material properties](for-mod-creators/materials/configuring-materials/liquid-material-properties.md)
     * [FX Material Properties](for-mod-creators/materials/configuring-materials/fx-material-properties.md)
     * [Multilayered Material: Properties](for-mod-creators/materials/configuring-materials/multilayered-material-properties-1.md)

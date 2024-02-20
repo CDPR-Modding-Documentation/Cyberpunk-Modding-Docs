@@ -185,3 +185,17 @@ For more details on glass materials and instructions on how to configure them, s
 ## Liquid materials
 
 Use `base\materials\fillable_fluid_vertex.mt` to fill vessels, or see [here ](../materials/#liquid)for details.
+
+## Other materials
+
+Cyberpunk 2077 uses materials cleverly, and often you can save a lot of work by simply re-using something CDPR has already defined
+
+### Zipper
+
+You can find a ready-to-use zipper material by copying `dec_zipper` from `base\characters\garment\player_equipment\torso\t1_057_tankbra\t1_057_pwa_tankbra.mesh`
+
+### Stitches
+
+Find a ready-to use stitches material by copying `dec_stitches` from `base\characters\garment\player_equipment\torso\t1_057_tankbra\t1_057_pwa_tankbra.mesh`
+
+This material uses `metal_base.remt` and can be recoloured via `BaseColorScale` attribute (color picker blend file [here](https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks))

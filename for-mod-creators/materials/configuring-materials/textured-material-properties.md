@@ -2,12 +2,12 @@
 description: Properties of textured (PBR) materials
 ---
 
-# Textured material properties
+# Textured (PBR) material properties
 
 ## Summary
 
 **Created:** Jan 14 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jan 14 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Feb 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page documents textured (PBR) shaders and their properties.&#x20;
 
