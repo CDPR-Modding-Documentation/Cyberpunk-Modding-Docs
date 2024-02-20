@@ -80,7 +80,7 @@ The diagrams below are somewhat outdated. Especially the arms information is not
 
 ## Root entity tags
 
-There are a few tags that have to be added to the root entity rather than the .app file. Here's a list:
+There are a few tags that can be added to the root entity **or** in the .app file. Here's a list:
 
 #### EmptyAppearance
 
@@ -99,6 +99,10 @@ By default, head items turn hair invisible. By adding this tag to the root entit
 #### `force_FlatFeet`
 
 Only works with a foot item as `$base` in the `.yaml`: use this if you're making flat shoes and don't want female V's feet to look as if she was wearing heels.
+
+{% hint style="warning" %}
+This tag will turn feet invisible for mascV unless the user has switch feet installed. You want to apply this to a conditional appearance in the .app file (`&gender=m`)
+{% endhint %}
 
 ## Adding custom tags
 
