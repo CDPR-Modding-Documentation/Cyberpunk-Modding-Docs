@@ -28,7 +28,7 @@ This section will walk you through the process of creating an .xl file to remove
 
 This guide will feature the **manual process**, which can get tedious if you want to remove at scale. There are two ways to automate the process:&#x20;
 
-* Wheeze's experimental removalThing ([link on Discord](https://discord.com/channels/717692382849663036/876881920326238248/1171608466436132995))
+* Wheeze's experimental removalThing ([link on Discord](https://discord.com/channels/717692382849663036/876881920326238248/1204190629874237440))
 * Generating the .xl file via Blender (see [#blender-and-archivexl](world-editing-deleting-objects.md#blender-and-archivexl "mention")
 
 Although you can also work directly in your `archive/pc/mod` directory, you should [create a Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can easily pack your mod for Nexus deployment.
