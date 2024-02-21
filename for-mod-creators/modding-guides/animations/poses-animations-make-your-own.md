@@ -284,5 +284,19 @@ for obj in bpy.context.selected_objects:
 
 </details>
 
-3. Use the Wolvenkit Blender IO suite to [export as animation](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-wolvenkit)
+3. Use the Wolvenkit Blender IO suite to [export as animation](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-wolvenkit). You need the most recent version – if that one doesn't do it, you can download an intermediary release from the [REDModding Discord.](https://discord.com/channels/717692382849663036/813768799358156880/1208937266865639435)
 4. Import the .glb file into Wolvenkit again.
+
+### Noesis Layer: Invalid Joint
+
+When trying to import into Wolvenkit, you get an error message like this:
+
+{% code overflow="wrap" %}
+```
+$fst_root.001|Noesis Frames|Noesis Layer: Invalid Joint Transform, joint Armature not present in the associated rig 
+```
+{% endcode %}
+
+That is because there is ancient data in the template which Wolvenkit doesn't know how to handle. Delete everything called "Noesis" from the list of animations below:
+
+<figure><img src="../../../.gitbook/assets/animation_poses_delete_noesis.png" alt=""><figcaption></figcaption></figure>
