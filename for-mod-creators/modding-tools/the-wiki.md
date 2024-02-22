@@ -11,7 +11,7 @@ Last documented edit: Feb 11 2024 by [manavortex](https://app.gitbook.com/u/NfZB
 
 This page gives you some intel on how the wiki works and why you should start contributing.&#x20;
 
-To skip the pep talk, you can jump directly to [#how-to-edit](the-wiki.md#how-to-edit "mention") or [#editor-sign-up-links](the-wiki.md#editor-sign-up-links "mention")
+To skip the pep talk, you can jump directly to [#how-to-edit](the-wiki.md#how-to-edit "mention") or [**sign up here**](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7) (github/Google account required)
 
 ## Why you should edit the wiki
 
@@ -130,12 +130,3 @@ When you're done editing, you can request a review. The button is on the toprigh
 <figure><img src="../../.gitbook/assets/wiki_request_revieww.png" alt=""><figcaption></figcaption></figure>
 
 ... and that's it. After requesting a review, you don't have to do anything — your MR either gets merged directly, or the reviewer may change some things around (usually scatter some links), or they'll get back on you to clear things up.
-
-## Editor sign-up links
-
-* [Cyberpunk 2077 Modding](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7)
-* [Wolvenkit](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7)
-* Cyber Engine Tweaks: [English ](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7)| [Chinese](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7)
-* [Redscript](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7)
-* [Red4ext](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7)
-
