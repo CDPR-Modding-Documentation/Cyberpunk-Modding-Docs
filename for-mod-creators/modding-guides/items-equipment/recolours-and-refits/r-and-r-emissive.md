@@ -27,6 +27,11 @@ This guide gives detailed instructions for how to change the [High Fashion Netru
 Most mod authors put the list of available appearances as a comment into the .yaml file — the line will be starting with a `#`.
 {% endhint %}
 
+{% embed url="https://www.youtube.com/watch?v=qDMW1V5SrTQ" %}
+Youtube video of a yaml edit (no sound)\
+Written guide below
+{% endembed %}
+
 For the Netrunner suit, you can choose from the following emissive colours:
 
 | Static              | Animated                    |
