@@ -300,3 +300,9 @@ $fst_root.001|Noesis Frames|Noesis Layer: Invalid Joint Transform, joint Armatur
 That is because there is ancient data in the template which Wolvenkit doesn't know how to handle. Delete everything called "Noesis" from the list of animations below:
 
 <figure><img src="../../../.gitbook/assets/animation_poses_delete_noesis.png" alt=""><figcaption></figcaption></figure>
+
+### My pose is twitching!
+
+In each `animAnimSetEntry`, change the property `animation` -> `animBuffer` -> `numTracks` to 0
+
+<figure><img src="../../../.gitbook/assets/animations_fix_twitching.png" alt=""><figcaption></figcaption></figure>
