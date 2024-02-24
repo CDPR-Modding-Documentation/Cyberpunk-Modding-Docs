@@ -25,7 +25,7 @@ You need to&#x20;
 
 If you can't get it to work, follow the steps below to apply the launch options via Protontricks, or search the `#red4ext-support` channel on the [modding discord](https://discord.gg/redmodding) to find out what else you can do.
 
-## Setting Up Protontricks
+## Protontricks: Setting up
 
 {% hint style="warning" %}
 Make sure that you are on the most recent version of Protontricks. This guide will follow how to perform these steps on a SteamDeck, but other KDE-based distros should be similar. Other Linux distros will need to go to their respective app stores to download Protontricks.
@@ -67,7 +67,7 @@ Apply via "OK". You may receive an error below or similar. If you do, click "Yes
 
 <figure><img src="../../.gitbook/assets/vc_run.png" alt=""><figcaption><p>Example Installation Warning</p></figcaption></figure>
 
-## Launch Options
+## Steam: Launch Options
 
 Switch to steam and make sure that the launch options are set as below:\
 `WINEDLLOVERRIDES="winmm,version=n,b" %command%`
@@ -75,3 +75,25 @@ Switch to steam and make sure that the launch options are set as below:\
 <figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption><p>Setting Launch Options in Steam</p></figcaption></figure>
 
 If this still doesn't work, check the [Cyber Engine Tweaks wiki](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/getting-started/installing) for additional instructions, or find us on [Discord](https://discord.gg/redmodding) in `#mod-troubleshooting`.
+
+## Lutris: setting up
+
+Taken from [CET's github](https://github.com/maximegmd/CyberEngineTweaks/issues/821)
+
+1. Open Lutris
+2. Right click on the game > `Settings` > `Runner options`
+3. While newer versions of Lutris can use Proton, it is advised you use Wine-GE instead. Make sure you're using at least `lutris-GE-Proton8-1`
+
+<figure><img src="../../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
+
+4. Scroll down to **DLL overrides**, click on **Add** to add a key. Add the following keys:
+
+<figure><img src="../../.gitbook/assets/image (201).png" alt=""><figcaption></figcaption></figure>
+
+## GOG: Launch Options
+
+You can find the launch options for GOG in the game's config menu under `Manage Installation` -> `Configure...`
+
+<figure><img src="../../.gitbook/assets/gog_set_launch_args.png" alt=""><figcaption></figcaption></figure>
+
+As under Steam, you have to add `WINEDLLOVERRIDES="winmm,version=n,b" %command%`
