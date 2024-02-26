@@ -55,7 +55,9 @@ You have two options on taking preview pictures. Both are relatively tedious, si
 
 ### Blender
 
-You can [export your mesh with all its materials](../../../3d-modelling/exporting-and-importing-meshes/#gltf-binary-.glb) to Blender and take your preview pictures there.
+You [can export your mesh with all its materials](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit) to Blender and take your preview pictures there:
+
+<figure><img src="../../../../.gitbook/assets/blender_export_transparent.jpeg" alt=""><figcaption></figcaption></figure>
 
 ### In-game
 
