@@ -4,15 +4,15 @@ description: Various kinds of materials, and where to find them
 
 # Cheat sheet: Materials
 
-{% hint style="info" %}
-&#x20;More information is on the following pages:&#x20;
-{% endhint %}
-
 #### Summary
 
 Last documented update: 06. Jan 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page contains a brief overview of existing materials. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for. Any links will lead you to additional context.
+
+{% hint style="success" %}
+&#x20;More and detailed information can be found under [configuring-materials](../materials/configuring-materials/ "mention") and its nested pages!
+{% endhint %}
 
 ### Wait, this isn't what I'm looking for!
 
@@ -38,11 +38,10 @@ This page contains a brief overview of existing materials. Use the Table of Cont
 
 ### PBR material
 
-You can find a material with Color (RGB), Roughness and Metalness under&#x20;
+The default PBR material used in Cyberpunk 2077 is `metal_base.remt`
 
-```
-engine\materials\pbr_simple.mt
-```
+If this overfulfills your needs, you can also try out `engine\materials\pbr_simple.mt`\
+, which has only color (RGB), Roughness, and Metalness.
 
 ### White MultilayerMask
 
@@ -62,7 +61,7 @@ For further details, see [textured-material-properties.md](../materials/configur
 
 |                                                             |                                                                                                                                |
 | ----------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| `engine\materials\metal_base.remt`                          | Cyberpunk's default textured (or emissive) material. Super versatile.                                                          |
+| `engine\materials\metal_base.remt`                          | Cyberpunk's default textured (or emissive) material. Super versatile, supports glow and transparency                           |
 | `base\materials\mesh_decal.mt`                              | For decals etc., supports alpha channel. Can optionally be made half-transparent (for tattoos etc.)                            |
 | `base\fx\_shaders\holo_mask.mt`                             | Special effect material that transforms a mesh into an hologram. Can use a custom texture for decal and is color controllable. |
 | `base\surfaces\atlases\wood\wood_bare\wood_bare_01_pine.mi` | Basic wood texture, no masks                                                                                                   |
@@ -129,12 +128,10 @@ See [emissive-material-properties.md](../materials/configuring-materials/emissiv
 
 ### Holo Shaders
 
-
-
 | material                        | description                                                                                                                   |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
 | `base\fx\_shaders\hologram.mt`  | Holo material ([example .mi](../../\_example\_mods\_and\_templates/material\_templates/holo/hologram\_material\_template.mi)) |
-| `base\fx\_shaders\holo_mask.mt` | Holo mask material                                                                                                            |
+| `base\fx\_shaders\holo_mask.mt` | Special effect material that transforms a mesh into a hologram. Can use a custom texture for decal and is color controllable. |
 
 ### Blackbody Shaders
 
