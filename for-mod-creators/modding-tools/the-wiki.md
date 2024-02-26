@@ -105,7 +105,11 @@ As of today (February 2024), I've never received a single spam mail from them.
 
 ### Change requests&#x20;
 
-You can't edit the wiki without a change request. You can check [gitbook's official documentation](https://docs.gitbook.com/content-editor/editor/change-requests) for this, or read the TL;DR below:
+You can't edit the wiki without a change request. You can create one by clicking the Edit button in the upper right corner:
+
+<figure><img src="../../.gitbook/assets/gitbook_edit_view.png" alt=""><figcaption></figcaption></figure>
+
+If you want to know more, you can check [gitbook's official documentation](https://docs.gitbook.com/content-editor/editor/change-requests) for this, or read the TL;DR below:
 
 {% hint style="warning" %}
 When creating a new change request, please give it a title **immediately** (see the screenshot under [#browsing-existing-change-requests](the-wiki.md#browsing-existing-change-requests "mention") as for why)
