@@ -52,7 +52,7 @@ Let's start by creating the scar's bumpmap. Open `pma__basehead_scars_n01.png` (
 
 The image should look like this :&#x20;
 
-![](../../../../.gitbook/assets/1.png)
+![](<../../../../.gitbook/assets/1 (1).png>)
 
 _The vanilla size are 1024x1024, I have upscaled mine to 4096x4096, but that's personal taste._
 
@@ -60,7 +60,7 @@ _The vanilla size are 1024x1024, I have upscaled mine to 4096x4096, but that's p
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -70,12 +70,12 @@ _The vanilla size are 1024x1024, I have upscaled mine to 4096x4096, but that's p
 By creating a new layer, you will preserve the original edit and can toggle your changes on and off in the layers palette.
 {% endhint %}
 
-![](../../../../.gitbook/assets/3.png)\
+![](<../../../../.gitbook/assets/3 (1).png>)\
 
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/4.png" alt="" width="354"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/4 (2).png" alt="" width="354"><figcaption></figcaption></figure>
 
 </div>
 
@@ -141,7 +141,7 @@ To remedy this problem, create a new project and obtain the 4 file types as seen
 {% tab title="Nose texture cut" %}
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="371"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (162).png" alt="" width="371"><figcaption></figcaption></figure>
 
 </div>
 {% endtab %}
@@ -149,7 +149,7 @@ To remedy this problem, create a new project and obtain the 4 file types as seen
 {% tab title="Strange square shadow" %}
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt="" width="315"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (164).png" alt="" width="315"><figcaption></figcaption></figure>
 
 </div>
 {% endtab %}

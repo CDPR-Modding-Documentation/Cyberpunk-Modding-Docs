@@ -20,12 +20,12 @@ After creation, you can find it in your Wolvenkit project's [resources](https://
 
 Create a new tweakXL file by going to “**New File**” in the top left of **wkit**, just next to the **HOME** button.
 
-<figure><img src="../../../../.gitbook/assets/image (132).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
 Select **TweakDB** and **TweakXL file**. Name it something specific to your mod.\
 example: “`boe6_mini_cooper.yaml`”
 
-<figure><img src="../../../../.gitbook/assets/image (133).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
 Open the `.yaml` file in your favorite text editor. I used **notepad++**.
 
@@ -89,7 +89,7 @@ After creation, you can find it in your Wolvenkit project's [Archive](https://ap
 
 Create a `.json` file in your project, the same as creating the `.yaml`. The option is about half way down the “**CR2W Files**” category. Name it the same as your vehicle (e.g. “`boe6_mini_cooper.json`”)
 
-<figure><img src="../../../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (114).png" alt=""><figcaption></figcaption></figure>
 
 You’ll want to create your own project path at this point. With your mouse over the new `.json` file, on the right side hit the yellow “**open in explorer**” button to find the `.json` file in your file explorer, you should see just your `.json` file and a “`base`” folder. Create a new folder/path for your project files here. I created “`boe6/mini_cooper/`”. Now in **wkit**, move your `.json` into the new folder.
 
@@ -234,7 +234,7 @@ Save, **Install and Launch**, test that it still works.
 ### Add the `.app` file
 
 {% hint style="info" %}
-This file contains your car's **components** for the individual appearances. You can read up about [appearance-.app-files.md](../../../files-and-what-they-do/appearance-.app-files.md "mention") at the link.
+This file contains your car's **components** for the individual appearances. You can read up about [appearance-.app-files](../../../files-and-what-they-do/appearance-.app-files/ "mention") at the link.
 {% endhint %}
 
 Add the `.app` file to your project. Find it by navigating to the `appearanceResource` in your main appearance, which links to an `.app` file. Hit the yellow “**Add File to Mod**” button.

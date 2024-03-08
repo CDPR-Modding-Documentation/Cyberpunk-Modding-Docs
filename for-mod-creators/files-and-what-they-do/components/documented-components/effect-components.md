@@ -30,7 +30,7 @@ Usually called `fx_slots`, this component allows you to place your effects in th
 If you want the position of your effects to follow the movement of parts of the object you can set the _`boneName`_ an existing bone of your object\
 
 
-<figure><img src="../../../../.gitbook/assets/image (198).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (230).png" alt=""><figcaption></figcaption></figure>
 
 In this case the `relativePosition` will be relative to the bone's position
 

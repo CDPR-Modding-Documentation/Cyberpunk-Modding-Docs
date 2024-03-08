@@ -8,20 +8,32 @@ For a json dump of all existing components and their properties, check [DrPresto
 For a hands-on guide on how to safely change components in .app files, look [here](../../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components).
 {% endhint %}
 
-## Equipment/Hair
+## Mesh components: Equipment/Hair
+
+{% hint style="warning" %}
+Your favourite kind of mesh component is the [#entgarmentskinnedmeshcomponent](./#entgarmentskinnedmeshcomponent "mention"), as it does not have any physics properties that can crash the game.&#x20;
+
+The [#entskinnedclothcomponent](./#entskinnedclothcomponent "mention")'s physics properties can be responsible for crashes if you edit the linked mesh.
+{% endhint %}
+
+### Shared properties of mesh components
+
+
+
+| [depotPath](./#depotpath)              | Loads a [.mesh](../../3d-objects-.mesh-files/)                                                                                                |
+| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| [chunkMask](./#chunkmask)              | Defines visibility of individual submeshes                                                                                                    |
+| meshAppearance                         | Selects an entry from the mesh's [appearances](../../3d-objects-.mesh-files/#step-1-appearances) array                                        |
+| <p>castShadows<br>castLocalShadows</p> | Enables/disables [real-time shadows](../../3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md#generated-shadows-component-properties) |
+| forceLODLevel                          | Force [level-of-detail-lod.md](../../3d-objects-.mesh-files/level-of-detail-lod.md "mention")                                                 |
+
+### Documented mesh component types
 
 <details>
 
 <summary>entGarmentSkinnedMeshComponent</summary>
 
-
-
 Can be used interchangeably with `entSkinnedMeshComponent`.
-
-* Loads a mesh from a [depotPath](./#depotpath).&#x20;
-* Supports [chunkMask](./#chunkmask).
-* meshAppearance will select an appearance by name from the mesh's defined [appearances](broken-reference).
-* Lets you enable and disable **shadows** with the properties `castShadows` and `castLocalShadows`
 
 This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](./#entskinnedclothcomponent).
 
@@ -31,7 +43,7 @@ This is the good kind of mesh component, the one that will work without trouble,
 
 <summary>entSkinnedMeshComponent</summary>
 
-See below at [entGarmentSkinnedMeshComponent](../#entgarmentskinnedmeshcomponent)
+See [entGarmentSkinnedMeshComponent](../#entgarmentskinnedmeshcomponent)
 
 </details>
 
@@ -39,7 +51,11 @@ See below at [entGarmentSkinnedMeshComponent](../#entgarmentskinnedmeshcomponent
 
 <summary>entSkinnedClothComponent</summary>
 
-Like [ent(Garment)SkinnedMeshComponent](./#entskinnedmeshcomponent), but with a `physicalMesh` and physics. Usually comes together with an [entAnimatedComponent](./#entanimatedcomponent) (they're usually named `collar` for clothes and `dangle` for hair and accessories).
+Like [ent(Garment)SkinnedMeshComponent](./#entskinnedmeshcomponent), but with a `physicalMesh` and physics.&#x20;
+
+Usually comes together with an [entAnimatedComponent](./#entanimatedcomponent) (they're usually named `collar` for clothes and `dangle` for hair and accessories).
+
+The physics will cause crashes if you alter the mesh file (yes, even if it's just a refit). As an alternative, you can use a regular mesh component together with [#entanimatedcomponent](./#entanimatedcomponent "mention").
 
 </details>
 
@@ -47,7 +63,15 @@ Like [ent(Garment)SkinnedMeshComponent](./#entskinnedmeshcomponent), but with a 
 
 <summary>entAnimatedComponent</summary>
 
-Adds physics to garments and hair meshes.
+Adds physics to garments and hair meshes. This is the "safe" way of doing it, opposed to [#entskinnedclothcomponent](./#entskinnedclothcomponent "mention"), which can cause crashes.
+
+</details>
+
+<details>
+
+<summary>entMeshComponent</summary>
+
+Used for components on low levels of details such as [proxies](../../3d-objects-.mesh-files/level-of-detail-lod.md#proxy-meshes) and [shadow meshes](../../3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md).
 
 </details>
 

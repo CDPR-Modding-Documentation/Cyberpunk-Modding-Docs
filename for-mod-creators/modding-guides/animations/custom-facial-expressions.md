@@ -6,15 +6,24 @@ description: Guide to change expressions for photo mode and AMM
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created by @manavortex**\
-**Published ???**\
-**Updated: 15. 09. 2023**
+**Published: ??? by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update: Mar 08 2024 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-**This tutorial will teach you how to replace the default Photo mode or AMM expressions with those from an NPC.**&#x20;
+This tutorial will teach you how to replace **facial expressions** for Photo Mode or AMM with those of an NPC.&#x20;
 
-**Difficulty:** You need to be able to read. If you run into trouble anyway, please hit us up on Discord so that we can improve this guide!
+**Difficulty:** You need to be able to read. If you run into trouble anyway, please hit us up [on Discord](https://discord.gg/redmodding) so that we can improve this guide!
+
+### Wait, this is not what I want!
+
+* If you want to look at **reference expressions**, check [here](../../references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files).
+* If you want to import your own facial expressions, then currently (Mar 08 2024) you're somewhat out of luck, because the toolchain doesn't fully support you yet and we don't have a guide. Reach out [on Discord](https://discord.gg/redmodding) and help us to get this show on the road!&#x20;
+* If you want to make custom **poses** for anything that is not the face, check [poses-animations-make-your-own.md](poses-animations-make-your-own.md "mention")
 
 ## Step 1: Locate the right file
+
+{% hint style="info" %}
+This will be called the **target file** in the rest of this guide
+{% endhint %}
 
 ### Photo Mode
 
@@ -24,17 +33,13 @@ description: Guide to change expressions for photo mode and AMM
 
 ### AMM
 
-Both genders will use
+Both body genders genders are using the same file:
 
 `base\animations\facial\male_average\interactive_scene\generic_average_male_facial_idle.anims`
 
-{% hint style="info" %}
-This will be called the **target file** in the rest of this guide
-{% endhint %}
-
 ## Step 2: Replace the target file with the one you want
 
-NPC animation files have the extension `.anims` and reside in the folder `base\animations\facial`. You can find the ones for facial expressions by searching in WolvenKit for
+NPC animation files have the extension `.anims` and reside in the folder `base\animations\facial`. You can find the ones for facial expressions by [searching in WolvenKit](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files) for
 
 ```
 base\animations\facial\ *.anims
@@ -48,46 +53,55 @@ Although the file names are gendered, you can pick **any of them**.
 
 &#x20;If you aren't sure which file you want to use, check the [references](../../references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files).&#x20;
 
-_👉 If you are missing reference screenshots, feel free to create and upload them. The existing ones have been created the hard way._
+_👉 If you are missing reference screenshots, feel free to create and upload them and_ [_update the wiki_](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7)_._
 
-```
-Example:
+<details>
+
+<summary>Example</summary>
 
 To put Rogue's facial expressions on a male V, you copy
-base\animations\facial\main_characters\rogue\rogue_facial_idle_poses.anims
-over the target file at 
-base\animations\ui\photomode\photomode_male_facial.anims
 
-To use her expressions in AMM, overwrite
+```
+base\animations\facial\main_characters\rogue\rogue_facial_idle_poses.anims
+```
+
+over your target file.
+
+For photo mode:
+
+```
+base\animations\ui\photomode\photomode_male_facial.anims
+```
+
+For AMM:
+
+```
 base\animations\facial\male_average\interactive_scene\generic_average_male_facial_idle.anims
 ```
 
+</details>
+
 ## Step 3: Pick the expressions you want
 
-Photo mode uses a total of 12 expressions by looking for [animation names](../../references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md#photo-mode) in the target file. You need to connect the selection picker with the NPC file you just copied.&#x20;
+You now need to make the expressions from your new file selectable by AMM/Photo mode. This happens via [animation names](../../references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md#photo-mode) in the target file.&#x20;
 
 {% hint style="success" %}
-Find their names [here](../../references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md).
+Find the correct names [here](../../references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md).
 
 **Important:** AMM and photo mode use different keys. Just make sure to pick the right table, and everything will be fine.
 {% endhint %}
 
-Do this by opening the target file (which you replaced with the NPC of your choice) in WolvenKit.&#x20;
-
-Find the animation you want to use and change its name:
+1. Open the target file (which you replaced with the NPC of your choice) in WolvenKit.&#x20;
+2. Find the animation you want to use and change its name:
 
 <figure><img src="https://i.imgur.com/KYevLPa.png" alt=""><figcaption><p>Replace the original name with one from the <a href="../../references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md#photo-mode">list</a>. <br>If you don't know which ones you want to use, check out the <a href="../../references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files">references</a>.</p></figcaption></figure>
 
-Rinse and repeat the process until you're done.
+3. Rinse and repeat the process with all animation names
+4. Save the file
+5. [Install the project and start the game](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch)
 
 {% hint style="success" %}
-Save the file, pack the project, and start the game - voila, you now have custom expressions.
-{% endhint %}
-
-## References
-
-{% hint style="info" %}
-You can find a list of screenshots with facial expression references [here](../../references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files).
+Voila, you now have custom expressions.
 {% endhint %}
 
 ## Troubleshooting

@@ -26,20 +26,32 @@ As soon as you have a **mesh** or **armature** selected, the viewport toolbar (k
 
 ### Animation Tools
 
-If you have a **visible armature** selected, you will see the Animation Tools. Here, you can find
+In the **animation tools**, you can find
 
 * shortcuts for playing, renaming and deleting existing animations
 * shortcuts to add new actions and insert keyframes
 
-… all outside of Blender's animation tab.
+You can load one of Cyberpunk's default armatures at any time:
+
+<figure><img src="../../../.gitbook/assets/wkit_blender_io_suite_anims_load_selected_rig.png" alt=""><figcaption></figcaption></figure>
+
+If you import an .anims file, selecting **any armature** will give you the option to play any existing animation:
+
+<figure><img src="../../../.gitbook/assets/wkit_blender_io_suite_play_anims.png" alt=""><figcaption></figcaption></figure>
 
 ### Mesh Tools
 
 #### Transfer Vertex Weights
 
-Lets you transfer [vertex weights](../../3d-modelling/meshes-and-armatures-rigging.md) from one collection to the other:
+Lets you transfer [vertex weights](../../3d-modelling/meshes-and-armatures-rigging.md) from one collection to the other (please read the info box below):
 
 <figure><img src="../../../.gitbook/assets/wkit_io_suite_transfer_weights.png" alt=""><figcaption><p>Transfer weights with the click of a button!</p></figcaption></figure>
+
+{% hint style="info" %}
+The plugin will transfer weights by submesh name. If your target armature has more submeshes than your source armature, simply create duplicates and rename them accordingly.
+{% endhint %}
+
+
 
 <details>
 

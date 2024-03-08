@@ -41,21 +41,21 @@ However, if the .mesh contains bones that are not present in the .rig, you will 
 You need to find a second (or even more) .rig file, so all the bones that are present in the mesh have a counterpart in the .rig. You then need to also add the meshes that correspond to the new .rigs and then export. \
 Attached images show settings i used to export base\characters\garment\citizen\_formal\torso\t1\_072\_shirt\_\_netwatch\t1\_072\_ma\_shirt\_\_netwatch\_dangle.mesh with rig, which i used for long hair dangles.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (84).png" alt=""><figcaption><p>Isolated netwatch shirt dangle skeleton. The original dangle chain is selected. The spine column, and the duplicated and moved dangle chain are also visible.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption><p>Isolated netwatch shirt dangle skeleton. The original dangle chain is selected. The spine column, and the duplicated and moved dangle chain are also visible.</p></figcaption></figure>
 
 ## Editing the .rig
 
 Open the .rig file in Wolvenkit. Under boneNames you can find which index corresponds to which bone. Expand boneTransforms. Locate the bones you want to move. Moving a bone in a chain will also move every bone that's parented to it (located lower than it in the chain). In the case of the image above, moving the bone selected in yellow, also moved the entire chain. In this case i moved bone 8 (selected in yellow) by 0.283076668 on the Y axis.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (101).png" alt=""><figcaption><p>Original </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption><p>Original </p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (105).png" alt=""><figcaption><p>Edited</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption><p>Edited</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (67).png" alt=""><figcaption><p>Result</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (51).png" alt=""><figcaption><p>Result</p></figcaption></figure>
 
 ## Animgraph edit
 
@@ -64,11 +64,11 @@ As you can see, the skeleton exploded. This is (to my understanding) caused by c
 \
 Here i set the value to 0, the animations work fine, but a correctly set value might reduce clipping in some poses.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (95).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../.gitbook/assets/image (83).png" alt=""><figcaption><p>Result</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (67).png" alt=""><figcaption><p>Result</p></figcaption></figure>
 
 Notice how editing the bone positions in the .rig also deformed/moved the mesh in-game. At least it's dangling nicely now, and it no longer explodes :copium:
 
@@ -80,33 +80,33 @@ In this case, I'm editing bones 79-83. The goal is to move each of them by -0.28
 \
 Open the .mesh in Wolvenkit and navigate to boneRigMatrices.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (55).png" alt=""><figcaption><p>Not edited bone matrix of bone 79.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption><p>Not edited bone matrix of bone 79.</p></figcaption></figure>
 
 Next, open [https://matrixcalc.org/](https://matrixcalc.org/) and copy paste each of the entries of the bone matrix into the calculator. Then press inverse.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
 
 Notice how the bottom row of the inverse matrix corresponds to the coordinates of the bone, which you can see in Blender.
 
-<figure><img src="../../../.gitbook/assets/image (99).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
 Next, copy the new Y coordinate from the bone you duplicated and moved.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
 After that, return to the calculator, and press 'Insert in B', and then replace the matrix entry corresponding to the Y position of the bone with the new coordinate.
 
-<figure><img src="../../../.gitbook/assets/image (47).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
 Then, press 'inverse'
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Next, press the 3 small lines below the output, click on Show LaTeX, and copy the top row entries back into wolvenkit.
 
-<figure><img src="../../../.gitbook/assets/image (59).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (43).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (51).png" alt=""><figcaption><p>Finished bone matrix edit in Wolvenkit</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption><p>Finished bone matrix edit in Wolvenkit</p></figcaption></figure>
 
 And now repeat all of those steps for each of your bones... enjoy...\
 After that, you should be finished!

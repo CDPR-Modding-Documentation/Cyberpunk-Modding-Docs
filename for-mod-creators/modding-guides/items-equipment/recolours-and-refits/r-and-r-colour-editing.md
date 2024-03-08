@@ -134,7 +134,7 @@ For details on how to handle those, check [#custom-material-paths](r-and-r-colou
 1. Click through the **layer list** on the left (1).
 2. The `Material` value (2) changes based on your layer selection, as will the available options
 3. Change the colour by clicking on it in the Color Picker (3)
-4. Click "Apply Edits"  (4)
+4. Click "Apply Edits", Hotkey: `Ctrl+Shift+A`  (4)
 
 <figure><img src="../../../../.gitbook/assets/netrunner_guide_mlsb_interface.png" alt=""><figcaption></figcaption></figure>
 

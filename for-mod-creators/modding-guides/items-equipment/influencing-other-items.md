@@ -31,7 +31,7 @@ To learn how to hide things via PartsOverrides, check [#chunkmasks-partially-hid
 You can't use PartsOverrides on components defined in the same .app file. Either use components from other files, or load them [#mesh-component-entity-simple-entity](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity "mention")
 {% endhint %}
 
-In the .app file, each appearance lets you define [#partsoverrides](../../files-and-what-they-do/appearance-.app-files.md#partsoverrides "mention"), which — as the name implies — let you **override** previously defined components. An entry looks as follows:
+In the .app file, each appearance lets you define [#partsoverrides](../../files-and-what-they-do/appearance-.app-files/#partsoverrides "mention"), which — as the name implies — let you **override** previously defined components. An entry looks as follows:
 
 <figure><img src="../../../.gitbook/assets/parts_values_parts_overrides.png" alt=""><figcaption><p>Overwrite the component "<code>kimono</code>" and "<code>kimono_filler</code>", which are defined in the file "<code>kimono_meshentity.ent</code>"<br>This is the reason why Cyberpunk has all the player components stored in .ent files!</p></figcaption></figure>
 

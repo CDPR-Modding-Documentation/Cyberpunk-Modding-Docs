@@ -18,7 +18,7 @@ layout:
     visible: true
 ---
 
-# ☠ New Iconic Weapon: Step by Step
+# ☠️ New Iconic Weapon: Step by Step
 
 ## Summary
 
@@ -50,13 +50,13 @@ If you are stuck, refer to the [#troubleshooting-check-this-when-youre-stuck](ne
 
 Start by opening WolvenKit and create a new project. This will be the base for your new iconic weapon mod.
 
-<figure><img src="../../../../../.gitbook/assets/image (179).png" alt=""><figcaption><p>Create a new WolvenKit project as shown here</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (211).png" alt=""><figcaption><p>Create a new WolvenKit project as shown here</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (180).png" alt=""><figcaption><p>A clean project should look like this (as of Wolvenkit 8.12, your interface may look different)</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (212).png" alt=""><figcaption><p>A clean project should look like this (as of Wolvenkit 8.12, your interface may look different)</p></figcaption></figure>
 
 ## Step 2: Choose the weapon and create an override
 
-Decide on the weapon you want to modify to make a new new iconic.&#x20;
+Decide on the weapon you want to modify to make a new new iconic.
 
 {% hint style="info" %}
 For this tutorial, we will use the gun 'Unity' as our base (`Items.Preset_Unity_Default).` If you want to use a different weapon, you can refer to [spawn-codes-baseids-hashes.md](../../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention") or find a list of all in-game items [here](https://onedrive.live.com/view.aspx?resid=EF6891140DE637B3%21221903\&authkey=!AE\_n4RTzwmVHwy8).
@@ -64,11 +64,11 @@ For this tutorial, we will use the gun 'Unity' as our base (`Items.Preset_Unity_
 
 To understand how the base gun works, open the [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention") in WolvenKit and search for `Items.Preset_Unity_Default`.
 
-<figure><img src="../../../../../.gitbook/assets/image (182).png" alt=""><figcaption><p>Open the <a data-mention href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser">Tweak Browser</a> &#x26; search "Items.Preset_Unity_Default"</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (214).png" alt=""><figcaption><p>Open the <a data-mention href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser">Tweak Browser</a> &#x26; search "Items.Preset_Unity_Default"</p></figcaption></figure>
 
 After locating the Unity gun in the tweak browser, right-click on the item and select "Add TweakXL Override". This allows you to modify and customize the weapon’s attributes to create your new iconic weapon.
 
-<figure><img src="../../../../../.gitbook/assets/image (185).png" alt=""><figcaption><p>Red arrow = Tweak Name, where you can override it. Blue Box= Details about selected tweak. White arrow = Overridden (New) Tweak </p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (217).png" alt=""><figcaption><p>Red arrow = Tweak Name, where you can override it. Blue Box= Details about selected tweak. White arrow = Overridden (New) Tweak</p></figcaption></figure>
 
 {% hint style="info" %}
 To read more about Tweak modding, check [tweaks](../../../../files-and-what-they-do/tweaks/ "mention"). This isn't necessary for understanding this guide!
@@ -78,7 +78,7 @@ To read more about Tweak modding, check [tweaks](../../../../files-and-what-they
 
 Open the overridden tweak file in a code editor of your choice (such as [Notepad++](https://notepad-plus-plus.org/downloads/) or VS Code). You will be presented with a `.yaml` file containing roughly a million fields.
 
-<figure><img src="../../../../../.gitbook/assets/image (186).png" alt=""><figcaption><p>"Items.Preset_Unity_Default" tweak opened in VS Code</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (218).png" alt=""><figcaption><p>"Items.Preset_Unity_Default" tweak opened in VS Code</p></figcaption></figure>
 
 ### How does it work?
 
@@ -310,8 +310,6 @@ rate(cycle time), mag size, smart range
   hide_nametag: True
 </code></pre>
 
-
-
 </details>
 
 ## Step 4: Making a new weapon
@@ -327,13 +325,13 @@ Items.Hand_Of_Midas: -> Add this
 ```
 {% endcode %}
 
-That's it, you've created a new weapon now. This weapon will look & behave exactly like the Unity handgun, but trust me, it's new.&#x20;
+That's it, you've created a new weapon now. This weapon will look & behave exactly like the Unity handgun, but trust me, it's new.
 
 To test it out, boot up your game and load any save.
 
 Now open up the CET [Console](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/console "mention"):
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (188).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
 
 Type in the command below and hit Enter.
 
@@ -341,17 +339,17 @@ Type in the command below and hit Enter.
  Game.AddToInventory("Items.Hand_Of_Midas",1)
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Your newly created weapon is now in game.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (190).png" alt=""><figcaption><p>Your newly created weapon is now in game.</p></figcaption></figure>
 
-You can now see your newly created weapon in your inventory.&#x20;
+You can now see your newly created weapon in your inventory.
 
-Unfortunately, there is no way to tell it apart from the Unity handgun.&#x20;
+Unfortunately, there is no way to tell it apart from the Unity handgun.
 
 We'll get to fixing that, but first, a little cleanup: open up your WolvenKit & rename your overridden tweak file to "hand\_of\_midas.yaml". We will store all the edits that need to be done to our new weapon in this file.
 
 ### 4.2: Changing the carbon copy
 
-Let's change something that will differentiate our weapon from the default Unity.&#x20;
+Let's change something that will differentiate our weapon from the default Unity.
 
 To do this, open your renamed tweak file & find the `crosshair` tag (hotkey: `Ctrl+F`). Replace it as shown below, and save your file.
 
@@ -360,7 +358,7 @@ To do this, open your renamed tweak file & find the `crosshair` tag (hotkey: `Ct
   crosshair: Crosshairs.Tech_Round -> add this
 ```
 
-Now hot reload your game (Insert how to link here) or close it, reinstall your mod in WolvenKit & relaunch your game (From here on, this will be referred to as hot reload).&#x20;
+Now hot reload your game (Insert how to link here) or close it, reinstall your mod in WolvenKit & relaunch your game (From here on, this will be referred to as hot reload).
 
 Spawn in both the Unity & Hand of Midas using the CET console:
 
@@ -369,15 +367,15 @@ Game.AddToInventory("Items.Hand_Of_Midas",1)
 Game.AddToInventory("Items.Preset_Unity_Default",1)
 ```
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption><p>Default Unity crosshair</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (191).png" alt=""><figcaption><p>Default Unity crosshair</p></figcaption></figure>
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>Hand of Midas crosshair</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (192).png" alt=""><figcaption><p>Hand of Midas crosshair</p></figcaption></figure>
 
-You should now be able to see that both the Unity & Hand Of Midas, although otherwise identical, now have different crosshairs.&#x20;
+You should now be able to see that both the Unity & Hand Of Midas, although otherwise identical, now have different crosshairs.
 
-### How did we figure out the crosshair ID?&#x20;
+### How did we figure out the crosshair ID?
 
-How do we know that it's called "Crosshairs.Tech\_Round" ?&#x20;
+How do we know that it's called "Crosshairs.Tech\_Round" ?
 
 #### Method 1: The REDmod DLC
 
@@ -387,7 +385,7 @@ If you have the REDmod DLC installed, you can use a text editor like Notepad++ t
 
 By searching for "Crosshairs." in the Tweak Browser. Most things we find inside the weapon tweak will be searchable within the Tweak Browser, and some within the Asset Browser.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (187).png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
 
 Editing the Tweak will allow us to modify all of our gun's behaviors, and I encourage you to play around with these.
 
@@ -433,11 +431,11 @@ What good is a new gun without a new name? We need to tell our game about these.
 2. Create a new folder named after your mod, for example `midas_collection`
 3. Within this folder, make a subfolder named `localization`
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption><p>mod name folder &#x26; localization folder</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (182).png" alt=""><figcaption><p>mod name folder &#x26; localization folder</p></figcaption></figure>
 
-### How does the game assign display names?&#x20;
+### How does the game assign display names?
 
-In your full tweak file, search for the field called `displayName`. You'll likely encounter something like `displayName: LocKey#49794`.&#x20;
+In your full tweak file, search for the field called `displayName`. You'll likely encounter something like `displayName: LocKey#49794`.
 
 This connects the displayName property of your item with a **locaization key**, which is the mechanism that the game uses to support multiple languages. Think of the `LocKey` of a list entry, with different lists being used for different languages.
 
@@ -445,15 +443,15 @@ This connects the displayName property of your item with a **locaization key**, 
 If you want to take a look at these lists, use WolvenKit's [LocKey browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/lockey-browser) or [search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `onscreens.json`.
 {% endhint %}
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>LocKey Browser search for <code>LocKey#49794</code></p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (183).png" alt=""><figcaption><p>LocKey Browser search for <code>LocKey#49794</code></p></figcaption></figure>
 
 ### So we edit onscreens.json?
 
 Good thinking, but no. In Cyberpunk, only **one** mod can edit any given file. That is why [archivexl](../../../../core-mods-explained/archivexl/ "mention") exists, and we'll use it to create a new translation entry for us.
 
-Place a dedicated [`en-us.json`](https://mega.nz/file/3uB2CL5L#Y18wD4pGo1L7Y699GNvy6UaKVb8BqkjDP-FeYi9VcQM) file in your `midas_collection`\\`localization` folder.  This is where we'll add our own translation entries – after that, we only need to tell ArchiveXL about the file and lean back.
+Place a dedicated [`en-us.json`](https://mega.nz/file/3uB2CL5L#Y18wD4pGo1L7Y699GNvy6UaKVb8BqkjDP-FeYi9VcQM) file in your `midas_collection`\\`localization` folder. This is where we'll add our own translation entries – after that, we only need to tell ArchiveXL about the file and lean back.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Red arrow = localization json added correctly. Green arrow = add new element in the json. Yellow arrow = key fields in new entry</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (185).png" alt=""><figcaption><p>Red arrow = localization json added correctly. Green arrow = add new element in the json. Yellow arrow = key fields in new entry</p></figcaption></figure>
 
 ### Setting up a localizationKey
 
@@ -462,7 +460,7 @@ Open the file in Wolvenkit and create a new entry in `localizationPersistenceOnS
 <table><thead><tr><th width="207">Property name</th><th width="173">your value</th><th>explanation</th></tr></thead><tbody><tr><td><code>femaleVariant</code></td><td>Hand Of Midas</td><td>the default translationse</td></tr><tr><td><code>maleVariant</code></td><td></td><td>only set this if you want to show a different translation when your item is equipped by a person of the male body gender</td></tr><tr><td><code>primaryKey</code></td><td>0</td><td>The <em>actual</em> entry in the translation list, make sure to set this to 0 so that it's autogenerated</td></tr><tr><td><code>secondaryKey</code></td><td><code>MC_gun_name</code></td><td>The key used in tweak files to identify this translation string</td></tr></tbody></table>
 
 {% hint style="warning" %}
-`secondaryKey`s must be **globally unique**, or they will overwrite each other.&#x20;
+`secondaryKey`s must be **globally unique**, or they will overwrite each other.
 {% endhint %}
 
 Create another entry with the secondaryKey of `MC_gun_description` and write a little fluff text for the description.
@@ -481,13 +479,13 @@ localization:
     en-us: midas_collection\localization\en-us.json
 ```
 
-Rename this file to `midas_collection.archive.xl`.&#x20;
+Rename this file to `midas_collection.archive.xl`.
 
 {% hint style="info" %}
 Wolvenkit will move the .xl file to the same directory as your mod's .archive file, where ArchiveXL will see and process it.
 {% endhint %}
 
-Next, revisit your "hand\_of\_midas" tweak file to establish the weapon's name and description in the game.&#x20;
+Next, revisit your "hand\_of\_midas" tweak file to establish the weapon's name and description in the game.
 
 Add the following lines under the existing properties:
 
@@ -507,7 +505,7 @@ These lines set the display name and the description of your weapon using the ke
 
 After completing these steps, install your mod and launch the game. Your new weapon, "Hand Of Midas", should now appear with its unique name and description, fully integrated into Cyberpunk 2077's multi-language environment.
 
-<figure><img src="../../../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption><p>Name &#x26; Description of the gun are now taken from "en-us.json" that we've created</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (186).png" alt=""><figcaption><p>Name &#x26; Description of the gun are now taken from "en-us.json" that we've created</p></figcaption></figure>
 
 ## Step 7: Make it Iconic
 
@@ -534,19 +532,19 @@ The new things you're seeing are `arrays`, which is a technical term — you can
 You can read more about how array operations work in [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks#array-operations).
 {% endhint %}
 
-`statModifiers` will hold all the stats for your gun. from recoil to damage. Since the `$base: Items.Preset_Unity_Default` already defines `statModifiers`,  and we'd like to keep those. \
-So we're adding an entry to the list, using`!append-once` followed by the new entry `Quality.IconicItem`.&#x20;
+`statModifiers` will hold all the stats for your gun. from recoil to damage. Since the `$base: Items.Preset_Unity_Default` already defines `statModifiers`, and we'd like to keep those.\
+So we're adding an entry to the list, using`!append-once` followed by the new entry `Quality.IconicItem`.
 
 This makes the weapon iconic, which means:
 
 * it has a fancy golden background
 * there's a dialogue box when you disassemble it
 
-To prevent it from being disassembled, we also add `IconicWeapon` to its `tags` array.&#x20;
+To prevent it from being disassembled, we also add `IconicWeapon` to its `tags` array.
 
 #### Upgrade compatibility
 
-We make sure that the weapon updates correctly by setting the&#x20;
+We make sure that the weapon updates correctly by setting the
 
 <pre class="language-yaml"><code class="lang-yaml"><strong>statModifierGroups: # stats for a weapon also, but grouped (generally by category)
 </strong>    - !append-once Items.IconicQualityRandomization
@@ -558,7 +556,7 @@ What exactly it does is somewhat of a mystery, so let me know if you find out.
 
 Once these modifications are in place, install your mod and enjoy the newfound Iconic status of the 'Hand of Midas' in the game.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>Setting "Quality.IconicItem" will give it a special background in the inventory &#x26; also specify that the item is Iconic.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (178).png" alt=""><figcaption><p>Setting "Quality.IconicItem" will give it a special background in the inventory &#x26; also specify that the item is Iconic.</p></figcaption></figure>
 
 Technically, you've already made a new Iconic weapon & I should call quits on this tutorial, but it's never as easy as that, is it? Give yourself a pat on the back & onto the next step.
 
@@ -566,13 +564,13 @@ Technically, you've already made a new Iconic weapon & I should call quits on th
 
 Let's talk theme.
 
-The gun is called Hand Of Midas, so it would be fitting to have the gun sounds be more… gold-ish, right? How do we achieve this?&#x20;
+The gun is called Hand Of Midas, so it would be fitting to have the gun sounds be more… gold-ish, right? How do we achieve this?
 
 We could add custom sounds using RedMod, but due to how that works, we could end up with conflicts that we don't want to bother with. So let's look for guns that already have a sound like that.\
 \
-Dex's gun `Items.Preset_Liberty_Dex` already has a nice metallic ring to it, so let's just steal its sound effect. To do this, find the gun in Tweak Browser and look for the property `audioName`.&#x20;
+Dex's gun `Items.Preset_Liberty_Dex` already has a nice metallic ring to it, so let's just steal its sound effect. To do this, find the gun in Tweak Browser and look for the property `audioName`.
 
-<figure><img src="../../../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p><code>audioName</code> for <code>Items.Preset_Liberty_Dex</code></p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (179).png" alt=""><figcaption><p><code>audioName</code> for <code>Items.Preset_Liberty_Dex</code></p></figcaption></figure>
 
 Now add this value to your weapon tweak as shown below.
 
@@ -594,21 +592,21 @@ Items.Hand_Of_Midas:
 
 Install your mod and test it out, Hand Of Midas now sounds metallic like we intended it to.
 
-<figure><img src="../../../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>An explanation for how audio works internally, should you decide to go the RedMod route.</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (181).png" alt=""><figcaption><p>An explanation for how audio works internally, should you decide to go the RedMod route.</p></figcaption></figure>
 
 ## Step 9: **Weapon Design 101 - Conceptualization of your Iconic (Optional)**
 
 So now let's make it completely overpowered and take all fun out of using it!
 
-Joking. Let's talk about how we can avoid that trap.&#x20;
+Joking. Let's talk about how we can avoid that trap.
 
-The 'Hand of Midas' is envisioned to be a unique piece with its own character - ideal for players who relish precision and skill. So we need strengths **and** limitations to give it a clear identity. \
+The 'Hand of Midas' is envisioned to be a unique piece with its own character - ideal for players who relish precision and skill. So we need strengths **and** limitations to give it a clear identity.\
 Here's how we achieve this:
 
 1. **Increased Recoil**: This adds a layer of complexity and skill. High recoil means each shot requires careful consideration, appealing to players who enjoy a challenge and the satisfaction of mastering a weapon.
 2. **Smaller Magazine Size & Increased Reload Time**: Every bullet counts. A smaller magazine encourages accuracy over spray-and-pray, and a longer reload time not only adds a strategic layer to combat but also gives players time to appreciate the weapon's aesthetics.
 
-In summary, these design choices don't just balance the weapon; they enhance its identity. The "flaws" don't destroy the gun — instead, they contribute to making the 'Hand of Midas' feel powerful and rewarding for those who can wield it effectively.&#x20;
+In summary, these design choices don't just balance the weapon; they enhance its identity. The "flaws" don't destroy the gun — instead, they contribute to making the 'Hand of Midas' feel powerful and rewarding for those who can wield it effectively.
 
 **Building on Strengths**
 
@@ -692,9 +690,9 @@ Items.Hand_Of_Midas:
 
 Install your mod, launch the game and test your changes. You should see that the gun's recoil is increased, but doesn't feel overwhelming.
 
-<figure><img src="../../../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption><p>Yellow box = Unity recoil pattern. Red box = Hand of Midas recoil pattern</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (177).png" alt=""><figcaption><p>Yellow box = Unity recoil pattern. Red box = Hand of Midas recoil pattern</p></figcaption></figure>
 
-You now know how to change your weapon's behavior. Play around & discover other stats and modify your gun to make it feel unique.&#x20;
+You now know how to change your weapon's behavior. Play around & discover other stats and modify your gun to make it feel unique.
 
 {% hint style="info" %}
 Stats can be added individually to `statModifiers` or in groups to `statModifierGroups` .
@@ -817,8 +815,6 @@ StatGroups.Hand_Of_Midas_Recoil_Stats:
     statType: BaseStats.RecoilRecoveryTime # time taken to return to normal position after recoil
 ```
 
-
-
 </details>
 
 ## Step 11: Finishing up the Tweak
@@ -859,12 +855,12 @@ There are a lot of values to play around with in a tweak file. You are often bet
 
 ## Step 12: Making an Iconic Mod (Special Ability)
 
-The main thing that makes an iconic weapon so special is its iconic mod. These are like any other weapon mod, but hidden from the UI. Before you start hacking up your own, it is very important you have a look at the existing Iconic Mods in game.&#x20;
+The main thing that makes an iconic weapon so special is its iconic mod. These are like any other weapon mod, but hidden from the UI. Before you start hacking up your own, it is very important you have a look at the existing Iconic Mods in game.
 
-For now, let's look at `Items.Preset_Lexington_Wilson` (also known as "Dying Night").&#x20;
+For now, let's look at `Items.Preset_Lexington_Wilson` (also known as "Dying Night").
 
 {% hint style="info" %}
-A big part of tweak modding is exploration — poking through tweaks until you find just the right thing to copy or change, or looking for something specific in hundreds of files.&#x20;
+A big part of tweak modding is exploration — poking through tweaks until you find just the right thing to copy or change, or looking for something specific in hundreds of files.
 {% endhint %}
 
 ### Wilson's iconic iron
@@ -873,7 +869,7 @@ A big part of tweak modding is exploration — poking through tweaks until you f
 The example (together with instructions on finding your way around the TweakDB) has moved to [browsing-the-tweak-database.md](../../../../files-and-what-they-do/tweaks/browsing-the-tweak-database.md "mention") -> [#example-browsing-.tweak-files](../../../../files-and-what-they-do/tweaks/browsing-the-tweak-database.md#example-browsing-.tweak-files "mention")
 {% endhint %}
 
-&#x20;We'll end up with `WilsonWeaponModAbility`, which defines the abilities and stats that we care about.
+We'll end up with `WilsonWeaponModAbility`, which defines the abilities and stats that we care about.
 
 <details>
 
@@ -902,20 +898,18 @@ WilsonWeaponModAbility : IconicWeaponModAbilityBase
 }
 ```
 
-
-
 </details>
 
 For an explanation of what these do, please see [types-of-tweak-records.md](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md "mention") -> [#effector](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md#effector "mention")
 
 #### MultiplyDamageWithVelocity Effector
 
-**Condition:** Prereqs.ProcessHitTriggered - Does the bullet hit anything? \
-**Effect:** MultiplyDamageWithVelocity - Increases the guns damage with 25% if the Player velocity is greater than 10.&#x20;
+**Condition:** Prereqs.ProcessHitTriggered - Does the bullet hit anything?\
+**Effect:** MultiplyDamageWithVelocity - Increases the guns damage with 25% if the Player velocity is greater than 10.
 
-#### MultiplyDamage Effector&#x20;
+#### MultiplyDamage Effector
 
-**Condition:** Perks.IsHitQuickMelee - Is the attack a Quick Melee attack? \
+**Condition:** Perks.IsHitQuickMelee - Is the attack a Quick Melee attack?\
 **Effect:** MultiplyDamage - Increase damage by 50%
 
 ### Adding an iconic mod
@@ -947,13 +941,13 @@ Items.Cranial_Cashback:
 The ability contains
 
 * two [effectors](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md#effector), which we are yet to implement
-* the description for our iconic ability as a `localizedDescription`&#x20;
+* the description for our iconic ability as a `localizedDescription`
 
-Let's start by registering the description.&#x20;
+Let's start by registering the description.
 
 1. Open the `.json` file that you've created when [#setting-up-a-localizationkey](new-iconic-weapon-tutorial-for-dummies.md#setting-up-a-localizationkey "mention")
 2. Add another entry (you can duplicate an existing entry)
-3. Set the `secondaryKey` to the value in your tweak file,  `MC_gun_iconic_description`
+3. Set the `secondaryKey` to the value in your tweak file, `MC_gun_iconic_description`
 4. Set `femaleVariant` to your text — this will be showin on the tooltip in yellow.
 5. . Make sure that it has the correct secondary key , and enter your fluff text as `femaleVariant`.
 
@@ -1017,16 +1011,14 @@ Items.Cranial_Cashback:
       localizedDescription: LocKey#MC_gun_iconic_description # iconic description shown in yellow text when hovering over a weapon
 ```
 
-
-
 </details>
 
 #### Go test
 
-Install your mod — if your gun shows the yellow iconic description on hover, you're good to go. \
+Install your mod — if your gun shows the yellow iconic description on hover, you're good to go.\
 If not, you may have to respawn it via CET.
 
-<figure><img src="../../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Iconic description is visible when hovering over gun</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/image (174).png" alt=""><figcaption><p>Iconic description is visible when hovering over gun</p></figcaption></figure>
 
 ### Designing effectors
 
@@ -1052,7 +1044,7 @@ Items.MemoryReplenishmentEffector:
   statModifierGroups: []
 ```
 
-The player's health is also a statPool item, it's called `BaseStatPools.Health`. We can copy this example and change it to meet our needs (for the final result, see [#the-final-effector](new-iconic-weapon-tutorial-for-dummies.md#the-final-effector "mention")):&#x20;
+The player's health is also a statPool item, it's called `BaseStatPools.Health`. We can copy this example and change it to meet our needs (for the final result, see [#the-final-effector](new-iconic-weapon-tutorial-for-dummies.md#the-final-effector "mention")):
 
 ```yaml
 Effectors.Heal_On_Headshot:
@@ -1070,7 +1062,7 @@ Effectors.Heal_On_Headshot:
   statModifierGroups: []
 ```
 
-However, the prerequisite for this effector is `Items.MemoryReplenishmentEffector_inline0`, which doesn't sound helpful.&#x20;
+However, the prerequisite for this effector is `Items.MemoryReplenishmentEffector_inline0`, which doesn't sound helpful.
 
 We could now try to find an existing preReq that checks for headshots, but we can also write our own.
 
@@ -1093,7 +1085,7 @@ We could now try to find an existing preReq that checks for headshots, but we ca
   processMiss: False # process shots that hit npcs only
 </code></pre>
 
-Now we have a custom preqrequisite, but  we still have to **fine-tune** and **link it**:
+Now we have a custom preqrequisite, but we still have to **fine-tune** and **link it**:
 
 #### Creating a custom condition
 
@@ -1119,7 +1111,7 @@ Prereqs.Is_Weapon_Ranged:
   weaponType: Ranged
 ```
 
-Conditions are at the heart of a prerequisite, and here we have four.&#x20;
+Conditions are at the heart of a prerequisite, and here we have four.
 
 1. `Perks.IsHitTargetAlive_inline2` -> We don't want headshots on deadbodies to heal the player
 2. `Perks.HitIsBodyPartHead_inline0` -> Actual condition to check for headshots
@@ -1395,8 +1387,6 @@ Prereqs.Is_Weapon_Ranged:
   weaponType: Ranged
 ```
 
-
-
 </details>
 
 #### Test it!
@@ -1411,7 +1401,7 @@ Here's a demo for how iconic weapon should behave.
 
 <figure><img src="../../../../../.gitbook/assets/Untitled video - Made with Clipchamp (1).gif" alt=""><figcaption><p>Damage player on miss demo</p></figcaption></figure>
 
-You are now a certified weapon modder. Pat your self on the back twice, you've done it. \
+You are now a certified weapon modder. Pat your self on the back twice, you've done it.\
 \
 A special request from me (@DestinyBu). If you found this guide helpful, go ahead and document your own findings on the Wiki and maybe ping me if you ever get around to finishing your Mod. A big thanks to [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")for (inspiring) forcing me to do this.
 
@@ -1422,7 +1412,7 @@ You've created/modified a tweak but it doesn't show effect in game, what next?
 * Open the CET Console in game search for your Tweak in the [Tweak Browser](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/usage-1). If your tweak doesn't show, there's a validation error in the tweak.
 * Validate your .yaml tweaks [here ](https://www.yamllint.com/)to check for errors.
 * Open `Cyberpunk 2077\red4ext\plugins\TweakXL\TweakXL.log` and look for any error messages towards the end, this can help when TweakXL has issues loading a tweak.
-*   Check for other mods with same Tweak/Archive names.&#x20;
+*   Check for other mods with same Tweak/Archive names.
 
     Tweak Folder - `Cyberpunk 2077\r6\tweaks`
 

@@ -15,7 +15,7 @@ This page will show you how to run Python scripts in Blender. It's not strictly 
 
 To run scripts, you need to switch to the scripting perspective. Click the corresponding entry on the perspective toolbar at the very top:&#x20;
 
-<figure><img src="../../../../.gitbook/assets/blender_scripting_perspective.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/blender_scripting_perspective (1).png" alt=""><figcaption></figcaption></figure>
 
 The script panel looks like this:
 

@@ -22,7 +22,7 @@ Dangle bones are a 'chain' of linked bones which are used by the game engine to 
 \
 The image below depicts how a dangle skeleton looks. The .animgraph will move the dangle bone chains, which are connected to the mesh using weights, which will then in turn animate the mesh.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption><p>Modern_bob mesh with it's dangle skeleton</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption><p>Modern_bob mesh with it's dangle skeleton</p></figcaption></figure>
 
 ## Transfering a skeleton and weights
 
@@ -51,4 +51,4 @@ Included is an image of what i mean by the leverage effect. I used a handy littl
 \
 Green circle includes the true location of the dangle bone chain. Meshes in the yellow circle are rigged to the same bones as those in the green circle. Bone 3 is invisible. Upon moving bone 3 to the right (by editing the .rig), bone/mesh 1 rotated slightly, making mesh 2 do a huge leap. If you were to load a hair mesh in the same location as indicated by the yellow circle, you would end up with horrible stretching and deformations, even without exxagerating the effect by moving bone 3.
 
-<figure><img src="../../../.gitbook/assets/image (107).png" alt=""><figcaption><p>Sorry for my terrible drawing skills and cursed image.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption><p>Sorry for my terrible drawing skills and cursed image.</p></figcaption></figure>

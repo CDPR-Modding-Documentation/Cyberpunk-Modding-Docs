@@ -2,7 +2,7 @@
 description: A list of modding frameworks and libraries, and links to their documentation
 ---
 
-# ⚒ Core Mods explained
+# ⚒️ Core Mods explained
 
 {% hint style="info" %}
 In the context of Cyberpunk modding, the core mods are often interchangeable called "(core) frameworks".&#x20;
@@ -18,9 +18,11 @@ For an explanation of what the individual core mods do, see below.&#x20;
 
 [Redscript](https://www.nexusmods.com/cyberpunk2077/mods/1511)
 
+[RED4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)&#x20;
+
 [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107)
 
-[RED4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)  – [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) – [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) – [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780) – [Equipment-EX](https://www.nexusmods.com/cyberpunk2077/mods/6945)
+[ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) – [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) – [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780) – [Equipment-EX](https://www.nexusmods.com/cyberpunk2077/mods/6945)
 
 ## What is a core mod?
 
@@ -56,8 +58,10 @@ Some examples for existing mod include, but are not limited to
 ### Cyber Engine Tweaks (CET) <a href="#cyber-engine-tweaks" id="cyber-engine-tweaks"></a>
 
 {% content-ref url="https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/" %}
-[EN (English)](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)
+[Cyber Engine Tweaks (EN - English)](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)
 {% endcontent-ref %}
+
+**Requires RED4ext.**
 
 Cyber Engine Tweaks ([Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/107)| [GitHub](https://github.com/yamashi/CyberEngineTweaks/releases)) is a framework with a LUA wrapper, which will let you access anything exposed via RTTI, i.e. all scripted and native types and functions, including those added using redscript and RED4ext. On top of that, it lets you **bind hotkeys** for custom functions and interact with the game's TweakDB database at runtime.
 
@@ -95,7 +99,7 @@ ArchiveXL ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/4198) | [GitHub]
 
 For ArchiveXL specific documentation, check the [corresponding sub-page.](archivexl/)
 
-### TweakXL  <a href="#tweakxl-+-archivexl" id="tweakxl-+-archivexl"></a>
+### TweakXL  <a href="#tweakxl--archivexl" id="tweakxl--archivexl"></a>
 
 {% embed url="https://github.com/psiberx/cp2077-tweak-xl" %}
 
@@ -120,6 +124,12 @@ Codeware ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/7780) | [GitHub](
 ### Equipment-EX
 
 Equipment-EX ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/6945) | [GitHub](https://github.com/psiberx/cp2077-equipment-ex)) makes use of every single one of the frameworks mentioned above to overhaul CDPR's wardrobe system. Extending it from 6 slots to more than 30, it lets you save an unlimited number of outfits and supports modded items.
+
+### RedFileSystem
+
+Requires RED4ext.
+
+RedFileSystem ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/13378) | [GitHub](https://github.com/rayshader/cp2077-red-filesystem)) is a library for redscript and Cyber Engine Tweaks mods. It exposes functions to read / write with the file system. It supports UTF8 text and Json formats. Modders can create, read and write files within game's directory. It can be useful to store custom data, for example in a mod's directory.
 
 ## Log files for core mods
 

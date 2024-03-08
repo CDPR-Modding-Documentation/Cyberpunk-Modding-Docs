@@ -2,7 +2,7 @@
 description: >-
   Start to finish guide to add a standalone vehicle, in steps that are as
   specific as I can be.
-cover: ../../../../.gitbook/assets/image18.png
+cover: ../../../../.gitbook/assets/image18 (1).png
 coverY: 0
 layout:
   cover:

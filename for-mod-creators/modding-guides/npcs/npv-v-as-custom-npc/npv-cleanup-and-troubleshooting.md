@@ -4,6 +4,11 @@ description: I'm done, what's next?
 
 # NPV: Cleanup and troubleshooting
 
+## Summary
+
+**Published**: May 13 2023 by @manavortex\
+**Last documented edit**: Mar 02 2023 by @manavortex
+
 ## Re-path your folder
 
 <details>
@@ -43,6 +48,10 @@ The error is with your `.lua` file – either it's not in the correct folder, or
 If you click on the button, but nothing happens, that means that the game can't find your `.ent` file. The error is between your `.lua` and your `.ent`.&#x20;
 
 Most likely, the path to the .ent file is not correct. If it is, make sure that it has **no upper-case characters**.&#x20;
+
+### My NPV turns into someone else if I walk away from them!
+
+That is due to **appearance proxies**, which are how the game saves performance. If you're using the most recent [NPV template project](https://www.nexusmods.com/cyberpunk2077/mods/8328?tab=files\&file\_id=45042), you shouldn't have any, but if you set up your files from scratch, you'll have to [disable the proxy appearance](../../../files-and-what-they-do/appearance-.app-files/proxy-appearances.md#i-hate-it-how-do-i-kill-it).
 
 ### Clothes are floating!
 

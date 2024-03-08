@@ -28,7 +28,7 @@ Mesh files for inanimate objects also tend to contain extensive physics paramete
 
 ## How the mesh is loaded
 
-Meshes are loaded via [components](../components/ "mention") (e.g. [#entgarmentskinnedmeshcomponent](../components/documented-components/#entgarmentskinnedmeshcomponent "mention")).  Components are defined either in [mesh entity](../entity-.ent-files/#mesh-component-entity-simple-entity) files or in an [.app file](../appearance-.app-files.md), where each [appearance](../appearance-.app-files.md#appearances) has its own [components](../appearance-.app-files.md#components) array.
+Meshes are loaded via [components](../components/ "mention") (e.g. [#entgarmentskinnedmeshcomponent](../components/documented-components/#entgarmentskinnedmeshcomponent "mention")).  Components are defined either in [mesh entity](../entity-.ent-files/#mesh-component-entity-simple-entity) files or in an [.app file](../appearance-.app-files/), where each [appearance](../appearance-.app-files/#appearances) has its own [components](../appearance-.app-files/#components) array.
 
 For more information on this, please check [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention") -> [#chunkmasks-partially-hiding-meshes](submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
 

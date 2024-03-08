@@ -6,7 +6,7 @@ description: How to remove items from the world with ArchiveXL
 
 ## Summary
 
-**Created by @manavortex** \
+**Created by @manavortex**\
 **Published in October 2023**\
 **Last (documented) update: December 2023**
 
@@ -24,9 +24,9 @@ Otherwise: [RedHotTools >= 0.5.2](https://github.com/psiberx/cp2077-red-hot-tool
 
 ## RedHotTools and ArchiveXL
 
-This section will walk you through the process of creating an .xl file to remove objects from the game world.&#x20;
+This section will walk you through the process of creating an .xl file to remove objects from the game world.
 
-This guide will feature the **manual process**, which can get tedious if you want to remove at scale. There are two ways to automate the process:&#x20;
+This guide will feature the **manual process**, which can get tedious if you want to remove at scale. There are two ways to automate the process:
 
 * Wheeze's experimental removalThing ([link on Discord](https://discord.com/channels/717692382849663036/876881920326238248/1204190629874237440))
 * Generating the .xl file via Blender (see [#blender-and-archivexl](world-editing-deleting-objects.md#blender-and-archivexl "mention")
@@ -35,12 +35,10 @@ Although you can also work directly in your `archive/pc/mod` directory, you shou
 
 ## Video guide
 
-Visual learners, celebrate: OUiJIXOU and Proxima Dust made video guides for this!&#x20;
+Visual learners, celebrate: OUiJIXOU and Proxima Dust made video guides for this!
 
-But don't worry, if videos are not for you, neither are they for me. You can just scroll on and find the text guide!
-
-{% embed url="https://www.youtube.com/watch?v=M-plF8qnB-U" %}
-Thanks to OUiJIXOU!
+{% embed url="https://www.youtube.com/watch?v=80K0K3WymUU" %}
+by ouijxou
 {% endembed %}
 
 {% embed url="https://youtu.be/r2g7cR4-j0E" %}
@@ -48,12 +46,12 @@ thanks to ProximaDust!
 {% endembed %}
 
 1. Find the node information in the **Inspect** tab of RedHotTools (see [places.md](../../references-lists-and-overviews/reference-world-sectors/places.md "mention")for a detailed guide)
-2. Create an `.xl` file in your Wolvenkit Project's  `resources` folder and name it after your world deletion (e.g. `delete_pacifica_fast_travel_terminal.xl`). &#x20;
+2. Create an `.xl` file in your Wolvenkit Project's `resources` folder and name it after your world deletion (e.g. `delete_pacifica_fast_travel_terminal.xl`).
    * You can edit this file in Wolvenkit or in a text editor like [Notepad++](https://notepad-plus-plus.org/downloads/)
 
 We'll fill in the information in Step 3, this is how it will look:
 
-<figure><img src="../../../.gitbook/assets/world_sector_node_removal.png" alt=""><figcaption><p>We'll fill in the information in Step 3, this is how it will look. <br>The bottom half of the screenshot is a text editor, you will NOT see this in Cyberpunk!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/world_sector_node_removal.png" alt=""><figcaption><p>We'll fill in the information in Step 3, this is how it will look.<br>The bottom half of the screenshot is a text editor, you will NOT see this in Cyberpunk!</p></figcaption></figure>
 
 3. Paste the following code into your .xl file:
 
@@ -68,11 +66,11 @@ streaming:
           type: worldNodeType
 ```
 
-4. Adjust the .xl file. **Mind the leading spaces!**&#x20;
+4. Adjust the .xl file. **Mind the leading spaces!**
    1. for `path`, put the full path to your world sector as seen in RedHotTools (1., yellow on screenshot - `base\worlds\03_night_city_compiled\default\exterior_-35_-35_0_0.streamingsector`)
    2. for `expectedNodes`, put the number of nodes in this sector (2., pink, 503 in the screenshot)
    3. For each node that you want to delete, add an entry under `nodeDeletions`:\
-      `- index`  (the - is important): the node index (3., violet in the screenshot)\
+      `- index` (the - is important): the node index (3., violet in the screenshot)\
       `type`: the type of the node (4., turquoise in the screenshot)
 
 ### Testing
@@ -106,7 +104,7 @@ If you don't do that, you will drown in comments from confused users who don't k
 
 1. Hit up [editing-locations-in-blender.md](editing-locations-in-blender.md "mention") and follow the instructions to import your sectors into Blender.
 2. **Optiona, but recommended**: Save the blend file. There's no real way to undo stuff right now other than deleting them from the list by hand, and re-importing is tedious. If you save the file, you can use File -> Revert to undo all your changes.
-3. **Select** and **delete** the objects that you want to get rid of.&#x20;
+3. **Select** and **delete** the objects that you want to get rid of.
 
 Now it's time to get exporting.
 
@@ -120,7 +118,7 @@ This step will be made obsolete in a future update of the [wolvenkit-blender-io-
 
 <summary>Why do we need this?</summary>
 
-ArchiveXL deletes nodes from the sector files **by numeric index** - it doesn't know if `node #123` is a rotten banana peel or Adam Smasher. Checking the number of nodes is a security feature; if your mod is trying to alter a sector with a different number of items than the one you are expecting, it will **break**.&#x20;
+ArchiveXL deletes nodes from the sector files **by numeric index** - it doesn't know if `node #123` is a rotten banana peel or Adam Smasher. Checking the number of nodes is a security feature; if your mod is trying to alter a sector with a different number of items than the one you are expecting, it will **break**.
 
 </details>
 
@@ -128,8 +126,8 @@ ArchiveXL deletes nodes from the sector files **by numeric index** - it doesn't 
 
 <figure><img src="../../../.gitbook/assets/editing_locations_selecting_sector.png" alt=""><figcaption></figcaption></figure>
 
-2.  Below the viewport in the right side panel, switch to the `Collections` tab and expand the `Custom Properties` header. You need a property with the name of `expectedNodes` (green box). \
-    If you have one, you can proceed to [#generating-an-.xl-file](world-editing-deleting-objects.md#generating-an-.xl-file "mention"). \
+2.  Below the viewport in the right side panel, switch to the `Collections` tab and expand the `Custom Properties` header. You need a property with the name of `expectedNodes` (green box).\
+    If you have one, you can proceed to [#generating-an-.xl-file](world-editing-deleting-objects.md#generating-an-.xl-file "mention").\
     If you don't have one, keep reading.
 
     <figure><img src="../../../.gitbook/assets/editing_locations_expected_nodes.png" alt=""><figcaption></figcaption></figure>
@@ -147,8 +145,7 @@ First, you need to find out the number of nodes in your sector. We will do that 
    `Property Name` shoudld be `expectedNodes`\
    `Default Value`, `Min`, and `Max` should be the number of nodes from your sector file.\
    \
-   After you have made those changes, click **OK**.\
-
+   After you have made those changes, click **OK**.\\
 
 <figure><img src="../../../.gitbook/assets/editing_locations_edit_properties.png" alt=""><figcaption></figcaption></figure>
 
@@ -157,7 +154,7 @@ First, you need to find out the number of nodes in your sector. We will do that 
 
 ### Generating an .xl file
 
-1. Switch to Blender's `Scripting` perspective and create a new file.&#x20;
+1. Switch to Blender's `Scripting` perspective and create a new file.
 2. Open [**this link**](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/python/export\_sector\_deletions\_to\_xl.py) (mana's github) and copy the contents into Blender's editor.
 3. Edit the value of `output_filename` — it has to be a valid path (and can even be your Cyberpunk mod directory).
 
@@ -173,16 +170,16 @@ You now have an .xl file. If you put it into `archive/pc/mod`, the game should l
 
 ### Removing potential false positives
 
-This step is optional, but recommended, as the script might add nodes to the deletion list that you want to keep.&#x20;
+This step is optional, but recommended, as the script might add nodes to the deletion list that you want to keep.
 
 {% hint style="success" %}
 This is also how you can edit other people's sector presets. Want to keep your candles? Search for "candle" and remove them from the deletion list!
 {% endhint %}
 
-1. Open the generated .xl file in a text editor such as [**Notepad++**](https://notepad-plus-plus.org/downloads/).&#x20;
-2. Search for `worldEntityNode` \
+1. Open the generated .xl file in a text editor such as [**Notepad++**](https://notepad-plus-plus.org/downloads/).
+2. Search for `worldEntityNode`\
    _Keyboard shortcuts to find all in document in Notepad++: `Ctrl+F` - `Alt+D`_
-3. Check the comment on top of a block to find out what it is.&#x20;
+3. Check the comment on top of a block to find out what it is.
 4. If you want to keep something, remove the entire block from the .xl file (see screenshot).
 
 <figure><img src="../../../.gitbook/assets/editing_locations_deleting_nodes_xl_file.png" alt=""><figcaption></figcaption></figure>
@@ -205,7 +202,7 @@ If your zip for Nexus contains an .archive file, you've done something wrong her
 
 You can convert node removal scripts from ArchiveXL 1.8 format to 1.9 format by running [this Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/world\_sector\_stuff/convert\_sector\_edits\_to\_AXL\_1.9.py) on the file.
 
-You need:&#x20;
+You need:
 
 * a Wolvenkit project with the sectors exported to .json
 * an .xl file
@@ -231,9 +228,9 @@ After running the conversion script, search your new .xl file for `INVALID_NODE`
 
 ## Troubleshooting
 
-### &#x20;My edits aren't showing up!
+### My edits aren't showing up!
 
-Check the ArchiveXL log (you can find it in `Cyberpunk 2077\red4ext\plugins\ArchiveXL\ArchiveXL.log`).  For every block in your .xl file, you should see an entry like this:
+Check the ArchiveXL log (you can find it in `Cyberpunk 2077\red4ext\plugins\ArchiveXL\ArchiveXL.log`). For every block in your .xl file, you should see an entry like this:
 
 ```
 [info] |Streaming| Patching "base\worlds\03_night_city\_compiled\default\quest_2467054678ccf8f6.streamingsector"...
@@ -241,7 +238,7 @@ Check the ArchiveXL log (you can find it in `Cyberpunk 2077\red4ext\plugins\Arch
 
 #### If you don't see those entries:
 
-* Make sure that your file&#x20;
+* Make sure that your file
   * has the extension `.xl`
   * is located in `archive/pc/mod` or loaded as part of a REDmod (why are you doing this to yourself? You're testing. Put it in `archive/pc/mod`!)
 * Check if the syntax is valid by running it through [**yamllint**](https://www.yamllint.com/)

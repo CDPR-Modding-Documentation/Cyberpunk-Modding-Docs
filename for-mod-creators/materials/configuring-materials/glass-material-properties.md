@@ -58,3 +58,10 @@ Download the [.mi file](../../../\_example\_mods\_and\_templates/material\_templ
 
 <table><thead><tr><th width="317">Parameter name</th><th>Value</th></tr></thead><tbody><tr><td>baseMaterial</td><td><code>base\materials\glass_onesided.mt</code></td></tr><tr><td>TintColor</td><td>white (220, 220, 220, 0)</td></tr><tr><td>IOR</td><td>0.100000001</td></tr><tr><td>NormalStrength</td><td>5.74905014</td></tr><tr><td>Roughness</td><td>base\materials\placeholder\black.xbm</td></tr><tr><td>GlassRoughnessBias</td><td>0</td></tr><tr><td>BlurRadius</td><td>1</td></tr></tbody></table>
 
+### See-through cloth
+
+{% hint style="info" %}
+You can see the material in action on mana's [Barong Tagalog](https://www.nexusmods.com/cyberpunk2077/mods/13447) mod, or download the .mi file from the [resource repository](../../../\_example\_mods\_and\_templates/material\_templates/transparent/transparent\_cloth.mi)
+{% endhint %}
+
+<table><thead><tr><th width="211">Property</th><th width="217">Value</th><th></th></tr></thead><tbody><tr><td>baseMaterial</td><td><code>base\materials\glass_onesided.mt</code></td><td></td></tr><tr><td>enableMask </td><td>true</td><td></td></tr><tr><td>TintColor</td><td>RGB</td><td>colours the material</td></tr><tr><td>IOR</td><td>0.300000012</td><td>Index of refraction</td></tr><tr><td>Opacity</td><td>1</td><td>the material's transparency will be determined by the mask texture</td></tr><tr><td>NormalStrength</td><td>2.74905014</td><td></td></tr><tr><td>MaskTexture</td><td>texture (black/white)</td><td>black parts of the mask will not be affected by this material</td></tr><tr><td>Roughness</td><td>texture (black/white)</td><td>use <code>base\materials\placeholder\white.xbm</code> for maximum roughness</td></tr><tr><td>Normal</td><td>texture (normal map)</td><td><code>path\to\your\normal_n01.xbm</code></td></tr><tr><td>GlassRoughnessBias</td><td>0</td><td>???</td></tr><tr><td>MaskOpacity</td><td>0.629999995</td><td>0 - 1, controls glass opacity</td></tr><tr><td>BlurRadius</td><td>0</td><td>will blur the things behind the glass</td></tr></tbody></table>

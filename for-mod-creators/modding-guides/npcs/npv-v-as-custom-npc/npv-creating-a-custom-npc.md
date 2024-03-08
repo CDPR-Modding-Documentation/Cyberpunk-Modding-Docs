@@ -6,39 +6,38 @@ description: 'Step 2: How to create a custom NPC'
 
 ## Summary
 
-**Created by @manavortex**\
-**Published May 13 2023**
-
-{% hint style="info" %}
-As much of the information here has been documented in [other guides](../appearances-change-the-looks.md), the information below will be kept initially brief. Might write more to a later point, but there is a lot of documentation already.
-{% endhint %}
+**Published**: May 13 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page is a part of the [NPV guide](./). It will show you how to use the [provided example project](./#preparation) to create a custom NPC for Cyberpunk 2077, whom you can then spawn with AppearanceMenuMod.
 
 It will give you a brief overview over the control files and tell you how to pull in the right meshes (and appearances). If you're just here for custom hair colours, check  [#creating-your-own-hair-colours](../../../materials/configuring-materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") instead.
 
-{% hint style="info" %}
+### Prerequisites
+
 This guide assumes that&#x20;
 
 * you already have a head mesh (see [this section](npv-preparing-the-head-in-blender.md) otherwise)
-* that you're using a set of default paths (if not, read the last paragraph of this box)
+* that you're using a set of default paths (if not, you will have to adjust)
   * the corresponding files are in either of these folders\
     `tutorial\npv\your_female_character\head` \
     `tutorial\npv\your_male_character\head`
-  * the meshes are named like their in-game equivalents, e.g. `h0_000_pwa_c__basehead.mesh`
-{% endhint %}
+  * the meshes are named like their in-game equivalents, e.g. `h0_000_pwa_c__basehead.mesh` (if not, you will have to adjust)
 
 ## Skipping and skimming
 
-This guide contains as little fluff as possible. Extra information will be contained in the **links**, which will be annotated as clearly as possible with what you need to read and what's optional.
+This guide contains as little fluff as possible, and since much of it has been covered in other guides, extra information will be contained in the **links**. These will be annotated as clearly as possible with what you need to read and what's optional.
 
-If you're skimming in this guide, you **will** end up making mistakes. Read thoroughly. If at the end of a section you aren't where the guide says you're supposed to be, fall back and double-check your process. If you still have trouble, you can hit us up on [discord](https://discord.com/invite/redmodding) in the `#mod-development` channel.
+If you're skimming in this guide, you **will** end up making mistakes. **Read thoroughly**. If at the end of a section you aren't where the guide says you're supposed to be, fall back and double-check your process. If you still have trouble, you can hit us up on [discord](https://discord.com/invite/redmodding) in the `#mod-development` channel.
 
 {% hint style="success" %}
 Remember that at any time, you can check your progress by [spawning your custom character](./#check-if-it-works).
 {% endhint %}
 
 ## How everything hangs together
+
+{% hint style="info" %}
+This section will explain what the template files do and how they hang together. If you like suffering, you can rely on the "fuck around and find out" approach, but I recommend at least reading through it.
+{% endhint %}
 
 In the end, an NPV is just a custom prop with a god complex. For that reason, the [file structure](../../everything-else/custom-props/#with-variants) is the same (it's just a lot more complex, because you have more than 4 components).
 
@@ -56,7 +55,7 @@ I have prepared two example files in the Wolvenkit's project's `resources`. Dele
 
 `tutorial_custom_male_character.lua`
 
-### The file structure
+### The file content
 
 This is the file content for the female example:
 
@@ -111,7 +110,7 @@ tutorial\npv\your_male_character\ops\your_male_character.ent
 ```
 
 {% hint style="info" %}
-[Would you like to know more?](../../../files-and-what-they-do/entity-.ent-files/#root-entity)
+[Would you like to know more?](../../../files-and-what-they-do/entity-.ent-files/#root-entity) (You don't need any of this information to finish the guide.)
 {% endhint %}
 
 The root entity hooks up your .app file and the appearance names in the .lua file, and that's about everything there is to say about it. Here's how it looks:
@@ -139,7 +138,7 @@ When changing component names, you want to leave the [#component-prefixes](../..
 This is where all of your NPC's appearances are defined (`appearanceDefinition`,  linked to the root entity via `name`). The appearanceDefinition's components **define** your NPV's properties, pulling in equipment, facial expressions, hair and skin.
 
 {% hint style="info" %}
-[Would you like to know more?](../../../files-and-what-they-do/appearance-.app-files.md)
+[Would you like to know more?](../../../files-and-what-they-do/appearance-.app-files/) (You don't need any of this information to finish the guide.)
 {% endhint %}
 
 It looks like this:
@@ -183,6 +182,10 @@ The NPV picker does this for you, but here's how to select your eyebrow appearan
 
 The values you found out will go into the **components** in your NPV's .app file.
 
+{% hint style="info" %}
+Sometimes, the NPV picker gives you a number for [`chunkMask`](../../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes). You can paste that directly into the box in your component's properties. (Check the link to see an example of how it looks like)
+{% endhint %}
+
 ### Customizing Cyberware
 
 {% hint style="info" %}
@@ -191,10 +194,15 @@ If you skip this step, you will end up with invisible cyberware or the wrong col
 
 When selecting a different cyberware than the preconfigured one, you **have** to set the appearance name, or the whole thing will show up in grey. The appearance names are usually identical to the cyberware (`cyberware_01`, `cyberware_02` etc.), but if you are uncertain, you can also open the mesh file and check the `appearances` list at the top.
 
+{% hint style="info" %}
+Wolvenkit's [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) triggers when you save a file, and it will help you to spot mistakes.
+{% endhint %}
+
 ### Customizing piercings and chrome: Chunkmasks
 
 {% hint style="info" %}
-If you skip this step, you will end up with the wrong or too many piercings and cyberware.
+If you skip this step, you will end up with the wrong or too many piercings and cyberware.\
+To learn more about chunkmasks, check [this wiki page](../../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md) (if you can do it with the information below, you don't need to)
 {% endhint %}
 
 You have the full piercing or cyberware file, but you're only using parts of it — yet the game stubbornly shows you the whole mesh.&#x20;
@@ -206,7 +214,7 @@ Find the `piercing` or `cyberware` component in your `.app` file:
 
 #### How do I know which numbers to put?
 
-You can see that inside the .mesh file (which you can see in the component's `depotPath`). Open it in Wolvenkit, then switch to the `Mesh Preview` tab and toggle the checkboxes on the right; those directly correspond to the boxes you need to uncheck in the `.app` file:
+You can see that inside the .mesh file (which you can see in the component's `depotPath`). Open it in Wolvenkit, then switch to the [Mesh Preview](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor/preview#mesh-preview) tab and toggle the checkboxes on the right; those directly correspond to the boxes you need to uncheck in the `.app` file:
 
 <figure><img src="../../../../.gitbook/assets/npv_piercings_chunkmask_2.png" alt=""><figcaption><p>Here we see the indices of these three submeshes: this is what we need to uncheck in the .app file</p></figcaption></figure>
 

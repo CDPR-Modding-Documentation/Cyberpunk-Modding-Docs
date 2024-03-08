@@ -21,7 +21,7 @@ Tags are a way to tell Cyberpunk that an item has certain properties and should 
 * showing hair while wearing a head item (`force_Hair`)
 
 {% hint style="warning" %}
-Please keep in mind that you need to add those to the [.app file](../../files-and-what-they-do/appearance-.app-files.md)'s **appearance definition** rather than the root or mesh entity.&#x20;
+Please keep in mind that you need to add those to the [.app file](../../files-and-what-they-do/appearance-.app-files/)'s **appearance definition** rather than the root or mesh entity.&#x20;
 {% endhint %}
 
 {% hint style="danger" %}
@@ -112,7 +112,7 @@ Custom tags let you set [component chunk masks](../../files-and-what-they-do/com
 For this, it is mandatory that you have unique component names. If you include your modder name, it's unlikely that anyone will overwrite them by accident.
 {% endhint %}
 
-### **Why would I need this?** [partsOverrides](../../files-and-what-they-do/appearance-.app-files.md#partsoverrides) **exists!**
+### **Why would I need this?** [partsOverrides](../../files-and-what-they-do/appearance-.app-files/#partsoverrides) **exists!**
 
 1. PartsOverrides can't un-hide components for you. It can only hide them. If you want to load a different mesh (for example, a de-formed hakama when wearing a kimono or haori), then you're flat out of luck.
 2. By being clever about your submeshes, you can offer different versions of your mesh (cropped! No arms! No legs), and users only need to install an .xl file! No need to have different meshes or even different .archive files.

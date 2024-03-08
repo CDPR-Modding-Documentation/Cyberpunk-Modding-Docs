@@ -96,7 +96,7 @@ Now we need to either weight paint, or **transfer weights** if your new piercing
 
 You can see the current weights the mesh has in Weight Paint mode.
 
-<figure><img src="../../../.gitbook/assets/image8 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image8.png" alt=""><figcaption></figcaption></figure>
 
 I’ve selected the vanilla piercing here. By clicking different vertex groups you can see the colour of the mesh changes. This colour denotes how much influence each bone has on the mesh. Red is 100% and dark blue is 0%.
 
@@ -154,7 +154,7 @@ Next import it in wkit.
 
 
 
-<figure><img src="../../../.gitbook/assets/image18 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image18.png" alt=""><figcaption></figcaption></figure>
 
 ## Creating the mod
 
@@ -162,7 +162,7 @@ Next import it in wkit.
 
 1. Add to project a morphtarget from PRC or create folder structure manually. They need to be named exactly like this, do not create a custom folder.
 
-<figure><img src="../../../.gitbook/assets/image14.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image14 (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image22.png" alt=""><figcaption></figcaption></figure>
 

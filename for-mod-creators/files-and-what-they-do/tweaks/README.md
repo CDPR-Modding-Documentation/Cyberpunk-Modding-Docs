@@ -1,7 +1,5 @@
 # TweakDB: Game database
 
-This page contains information about the game's TweakDB. Here, you can learn what it is, how you can navigate it, and how you can edit it.
-
 If you would rather look at guides instead, check the following links, or use the wiki's search function:
 
 * How to change an NPC's record with Redscript: [tweakxl-changing-game-records](../../modding-guides/tweakxl-changing-game-records/ "mention")
@@ -248,17 +246,23 @@ characterType: NPCType.Human
 `characterType` is the **name** of the property, wheras `NPCType.Human` is the assigned **value**. \
 In this case, the syntax indicates an enum.
 
-## Modifying the Tweak DB
-
-You can change in-game items by **modifying their properties** in the TweakDB. You have the following tools to do this:
+The Tweak DB can be interacted with using Cyberpunk's official **REDmod**, or numerous community solutions such as **TweakXL**, **CET**, and **redscript**.
 
 * Via tweak file: [tweakxl.md](../../core-mods-explained/tweakxl.md "mention")
 * Via script: [Cyber Engine Tweaks](https://wiki.redmodding.org/cyber-engine-tweaks/) / redscript / Cyberpunk's official REDmod
+
+
+
+{% hint style="info" %}
+For an explanation of the TweakDB, see [Broken link](broken-reference "mention")
+{% endhint %}
 
 ## Player Garments/Equipment Graph
 
 The following is a diagram which maps the relationship between game files for use with TweakXL and Archive XL:
 
 ![](<../../../.gitbook/assets/Cyberpunk 2077 TweakXL+ArchiveXL Pipeline.drawio.svg>)
+
+
 
 [^1]: Your game directory, where you installed Cyberpunk 2077. Steam/GOG/Epic will take you here if you browse the local files.

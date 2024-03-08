@@ -73,7 +73,7 @@ Imagine you want to hide the helmet's glowing parts (because you are being steal
 
 That's why CDPR came up with **chunkmasks**.
 
-The mesh is loaded via [**component**](../components/) in an [.ent](../entity-.ent-files/#mesh-component-entity-simple-entity) or [.app](../appearance-.app-files.md#components) file. Here, you will find the `chunkMask` attribute, which looks like this:
+The mesh is loaded via [**component**](../components/) in an [.ent](../entity-.ent-files/#mesh-component-entity-simple-entity) or [.app](../appearance-.app-files/#components) file. Here, you will find the `chunkMask` attribute, which looks like this:
 
 <figure><img src="../../../.gitbook/assets/chunkmask.png" alt=""><figcaption><p>Set this to 0 to completely hide all parts of a mesh.</p></figcaption></figure>
 

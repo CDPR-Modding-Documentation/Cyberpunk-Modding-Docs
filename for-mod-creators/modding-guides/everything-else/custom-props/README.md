@@ -12,7 +12,7 @@ description: How to create custom props to use with AMM or sector editing
 This guide will teach you how to create AMM props in two variants:&#x20;
 
 * the "vanilla" way by using a [mesh entity](../../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) with a [.mesh](../../../files-and-what-they-do/3d-objects-.mesh-files/) file with only one appearance
-* customizable by chaining a [`root entity`](../../../files-and-what-they-do/entity-.ent-files/#root-entity), an [`.app`](../../../files-and-what-they-do/appearance-.app-files.md), and a [`.mesh`](../../../files-and-what-they-do/3d-objects-.mesh-files/) file with multiple appearances.&#x20;
+* customizable by chaining a [`root entity`](../../../files-and-what-they-do/entity-.ent-files/#root-entity), an [`.app`](../../../files-and-what-they-do/appearance-.app-files/), and a [`.mesh`](../../../files-and-what-they-do/3d-objects-.mesh-files/) file with multiple appearances.&#x20;
 
 Its focus is on the **file structure** and the **relations between the files**.&#x20;
 
@@ -153,13 +153,13 @@ Edit this kind of prop by opening the following file in Wolvenkit:
 tutorial\amm_props\template\template.ent
 ```
 
-Instead of adding items directly via the components array, we link **appearances** to an [.app file](../../../files-and-what-they-do/appearance-.app-files.md). The only component we keep in the [root entity](../../../files-and-what-they-do/entity-.ent-files/#root-entity) is the **targeting component** for the CET cursor: this way, it will be added to each appearance in the .app file.
+Instead of adding items directly via the components array, we link **appearances** to an [.app file](../../../files-and-what-they-do/appearance-.app-files/). The only component we keep in the [root entity](../../../files-and-what-they-do/entity-.ent-files/#root-entity) is the **targeting component** for the CET cursor: this way, it will be added to each appearance in the .app file.
 
 <figure><img src="../../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>tutorial\amm_props\template\template.ent<br>Root entity, pointing towards an .app file. You can read more about the theory <a href="../../../files-and-what-they-do/entity-.ent-files/#root-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
 #### Appearance file
 
-[This file](../../../files-and-what-they-do/appearance-.app-files.md) holds a list of `appearances`. Inside each `appearance`, you can define any number of things to be loaded (components) and specify or override their behaviour.
+[This file](../../../files-and-what-they-do/appearance-.app-files/) holds a list of `appearances`. Inside each `appearance`, you can define any number of things to be loaded (components) and specify or override their behaviour.
 
 {% hint style="info" %}
 We will only use `entPhysicalMeshComponent`s, and they must be named  `amm_prop_slot1` .. `amm_prop_slot4` if you want to enable scaling.

@@ -1,7 +1,3 @@
----
-description: Where to add new vehicles via TweakDB
----
-
 # Cheat Sheat Vehicles: TweakDB
 
 For more information about TweakDB modding, follow the links under [tweakxl.md](../../core-mods-explained/tweakxl.md "mention").

@@ -177,7 +177,15 @@ For more details on glass materials and instructions on how to configure them, s
 
 ### Plastic (see-through)
 
+For a full documentation of this material, check [glass-material-properties.md](../materials/configuring-materials/glass-material-properties.md "mention") -> [#transparent-plastic](../materials/configuring-materials/glass-material-properties.md#transparent-plastic "mention")
+
 <table><thead><tr><th width="344"></th><th></th></tr></thead><tbody><tr><td>base\materials\glass_onesided.mt</td><td>take from Hanako's dress, <code>localMaterialBuffer.materials.transparent</code> <code>base\characters\main_npc\hanako\t1_001_wa_dress__hanako.mesh</code></td></tr></tbody></table>
+
+### See-through cloth
+
+For a full documentation of this material, check [glass-material-properties.md](../materials/configuring-materials/glass-material-properties.md "mention") -> [#see-through-cloth](../materials/configuring-materials/glass-material-properties.md#see-through-cloth "mention")
+
+<table><thead><tr><th width="344"></th><th></th></tr></thead><tbody><tr><td>base\materials\glass_onesided.mt</td><td>take from mana's <a href="https://www.nexusmods.com/cyberpunk2077/mods/13447">Barong Tagalog</a> mod,  <code>manavortex\clothing\torso\barong_tagalog\meshes\pma__barong__base_body.mesh</code> or <a href="../../_example_mods_and_templates/material_templates/transparent/transparent_cloth.mi">download the .mi file</a></td></tr></tbody></table>
 
 ## Liquid materials
 

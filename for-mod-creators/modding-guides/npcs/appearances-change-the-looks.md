@@ -37,7 +37,7 @@ Links will give you additional context. If you can complete the guide without th
 
 ## Finding the right files
 
-This section will show you how to find an NPC's [.app file](../../files-and-what-they-do/appearance-.app-files.md), which you will add to your project. We do this by finding the NPC's [.ent file](../../files-and-what-they-do/entity-.ent-files/#root-entity), since it will be linked in there.
+This section will show you how to find an NPC's [.app file](../../files-and-what-they-do/appearance-.app-files/), which you will add to your project. We do this by finding the NPC's [.ent file](../../files-and-what-they-do/entity-.ent-files/#root-entity), since it will be linked in there.
 
 ### The .ent file
 

@@ -46,7 +46,7 @@ The prefixes are as follows:
 
 
 
-<table><thead><tr><th width="130"></th><th></th></tr></thead><tbody><tr><td><p>h0_</p><p>t0_</p><p>s0_</p><p>l0_<br>...</p></td><td>Any component with a 0 in its prefix will be treated like a body mesh (no deform/squishing)</td></tr><tr><td>h1_</td><td>Head inner (mask, sunglasses)</td></tr><tr><td>h2_</td><td>Head outer (helmet, bandana)</td></tr><tr><td>t1_</td><td>Torso inner (shirts)</td></tr><tr><td>t2_</td><td>Torso outer (jackets, coats...)</td></tr><tr><td>s1_</td><td>Shoes</td></tr><tr><td>l1_</td><td>legs (pants that aren't leggins)</td></tr></tbody></table>
+<table><thead><tr><th width="130"></th><th></th></tr></thead><tbody><tr><td><p>h0_</p><p>t0_</p><p>s0_</p><p>l0_<br>...</p></td><td>Any component with a 0 in its prefix will be treated like a body mesh (no deform/squishing of <strong>any</strong> meshes with x0_ prefixes across .ent files)</td></tr><tr><td>h1_</td><td>Head inner (mask, sunglasses)</td></tr><tr><td>h2_</td><td>Head outer (helmet, bandana)</td></tr><tr><td>t1_</td><td>Torso inner (shirts)</td></tr><tr><td>t2_</td><td>Torso outer (jackets, coats...)</td></tr><tr><td>s1_</td><td>Shoes</td></tr><tr><td>l1_</td><td>legs (pants that aren't leggins)</td></tr></tbody></table>
 
 ## How it looks if it's broken
 
@@ -58,6 +58,10 @@ The prefixes are as follows:
 
 {% hint style="info" %}
 TL;DR: High garment score means "on top", items below will get squished.
+{% endhint %}
+
+{% hint style="warning" %}
+Components with the same prefix in the same .ent file will not squish each other, e.g. `l1_stockings` and l1\_pants will not deform each other, but they will deform `s1_socks`
 {% endhint %}
 
 The game calculates the garment score by checking the prefix of component names, where the one with the lowest prefix is the innermost:

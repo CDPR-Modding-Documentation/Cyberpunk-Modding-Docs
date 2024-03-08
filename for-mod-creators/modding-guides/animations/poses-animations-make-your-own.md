@@ -6,26 +6,20 @@ description: Make your own pose, then import it into photo mode
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created by @manavortex**\
-**Published September 2023**
+**Published:** September 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last Documented Update:** Mar 04 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-{% hint style="info" %}
 This guide will teach you how to **create a custom pose** in Blender and import it into the game via **Wolvenkit**.&#x20;
 
-You will make a **photo mode replacer** - your custom pose(s) will **replace** to existing vanilla pose(s) provided by Photo Mode in the game.
+Since this guide is about creating and imported custom poses, we will make a **photo mode replacer**. To convert it to a standalone pose pack, follow the guide for either  [Photo Mode](archivexl-adding-photo-mode-poses.md) or [Appearance Menu Mod](amm-collab-anims-poses.md).&#x20;
 
-This is a **prerequisite** for pose sets for both [Photo Mode](archivexl-adding-photo-mode-poses.md) and [Appearance Menu Mod](amm-collab-anims-poses.md).&#x20;
-
-Check the [animations.md](../../animations.md "mention")section for more general knowledge.
+{% hint style="warning" %}
+If you have never done this before, don't do both at once. Or... do whatever, but it might result in unnecessary frustration.
 {% endhint %}
 
-#### **It has been tested with the following software versions. Install these or newer.**&#x20;
+### **Wait, this is not what I want!**
 
-|                                                                                                                                                      |                                                             |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- |
-| Wolvenkit ([stable](https://github.com/WolvenKit/Wolvenkit/releases) \| [nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases)) | >= 8.9.1                                                    |
-| [Blender](https://www.blender.org/download/)                                                                                                         | [3.6.2 LTS](https://www.blender.org/download/releases/3-6/) |
-| [Cyberpunk Blender Add-On](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)                                                                    | 1.3.0 (Jun 20)                                              |
+* For more general knowledge, check the [animations.md](../../animations.md "mention")section.
 
 {% hint style="warning" %}
 We all stand on the shoulders of giants: this process has first been documented by [xbaebsae | Angy](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/), who also provided the [original animation templates](https://drive.google.com/file/d/1kL04dQy9xmK\_yRsvsS4Sn83joPzrljAr/view). Thank you!
@@ -45,6 +39,16 @@ Any links in the text will either
 * lead to step-by-step instructions for any given process
 
 Follow them if  you want to learn more, or if you are unclear on how to complete the current step, then come back here.
+
+## Prerequisites
+
+You will need the following software (install at least this version or higher):
+
+|                                                                                                                                                      |          |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| Wolvenkit ([stable](https://github.com/WolvenKit/Wolvenkit/releases) \| [nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases)) | >= 8.13  |
+| [Blender](https://www.blender.org/download/)                                                                                                         | >= 4.0   |
+| [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention")                                                              | >= 1.5.3 |
 
 ## Step 0: Preparations
 
@@ -207,17 +211,28 @@ If all went well, entering photo mode will show your new pose.
 
 ### My pose is twitching!
 
-Make sure that your pose has **at least two keyframes** by going back to [#step-2-creating-the-animation](poses-animations-make-your-own.md#step-2-creating-the-animation "mention") and not skimming this time.&#x20;
+1. Open your `.anims` file in Wolvenkit&#x20;
+2. expand the `animations` array at the top of the file
+3. For each `animAnimSetEntry`, change the property `animation` -> `animBuffer` -> `numTracks` to 2
 
-### My pose doesn't import!
+<figure><img src="../../../.gitbook/assets/animations_fix_twitching.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-If you get an error message like this, please read the [#no-extra-data](poses-animations-make-your-own.md#no-extra-data "mention") section at the end of the file:
+4. If that doesn't work, change the numTracks to `0`
+5. If that still doesn't work, make sure that your pose has **at least two keyframes** by going back to [#step-2-creating-the-animation](poses-animations-make-your-own.md#step-2-creating-the-animation "mention") and not skimming this time.&#x20;
+
+### Can't import: No extra data
+
+If Wolvenkit's console tells you something like this:
 
 ```
 animation `anim_name` has no extra data, can't import!
 ```
-{% endhint %}
+
+1. To make sure that the `.glb` file that you want to **import into** is okay, do a fresh [Wolvenkit export](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) of your `.anim` with a Wolvenkit version from after February 10 2024 (>8.13 should be ok)
+2. Use the Wolvenkit Blender IO suite [**1.5.3**](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/v1.5.3) **or greater** to [export as animation](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-wolvenkit). If the error does not go away, update the plugin.
+3. Import the .glb file into Wolvenkit again.
+
+### My pose doesn't import!
 
 I have no idea how to tell you this, choomba, other than stressing thrice that it's important and putting a big red box, but the NLA strip and the animation **must** have the same name. Go back to "[this is important](poses-animations-make-your-own.md#this-is-important)" and double-check. The animation might have trailing numbers, e.g. be called `photomode__female__idle.001`, that will already do it.
 
@@ -240,53 +255,6 @@ We're reaching the end of the rope here. Go back and [check the animation names]
 2. In your old Blend file, repeat 1-4 of the [previous step](poses-animations-make-your-own.md#very-funny-but-it-wasnt-that)
 3. In your new Blend file, repeat 5+6 of the [previous step](poses-animations-make-your-own.md#very-funny-but-it-wasnt-that)
 
-### No extra data
-
-If Wolvenkit's console tells you something like this:
-
-```
-animation `anim_name` has no extra data, can't import!
-```
-
-1. To make sure that the `.glb` file that you want to **import into** is okay, do a fresh [Wolvenkit export](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) of your `.anim` with a Wolvenkit version from after February 10 2024 (>8.13 should be ok)
-2. Now, let's add the missing data by [running the following script](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-troubleshooting/blender-running-python-scripts.md) in your .blend file:
-
-<details>
-
-<summary>Add extra data to blend file</summary>
-
-```python
-import bpy
-
-for obj in bpy.context.selected_objects:
-    if not obj or obj.type != 'ARMATURE':
-        print('you need to select an armature')
-            
-
-    if not obj.animation_data:
-        print('no animations found')
-        
-        
-    else:
-        for action in bpy.data.actions:
-            action["schema"] ={"type": "wkit.cp2077.gltf.anims","version": 3}
-            action["animationType"] = 'Normal'
-            action["frameClamping"] = False
-            action["frameClampingStartFrame"] = -1
-            action["frameClampingEndFrame"] = -1
-            action["numExtraJoints"] = 0
-            action["numeExtraTracks"] = 0
-            action["constTrackKeys"] = []
-            action["trackKeys"] = []
-            action["fallbackFrameIndices"] = []
-            action["optimizationHints"] = { "preferSIMD": False, "maxRotationCompression": 1}
-```
-
-</details>
-
-3. Use the Wolvenkit Blender IO suite to [export as animation](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-wolvenkit). You need the most recent version – if that one doesn't do it, you can download an intermediary release from the [REDModding Discord.](https://discord.com/channels/717692382849663036/813768799358156880/1208937266865639435)
-4. Import the .glb file into Wolvenkit again.
-
 ### Noesis Layer: Invalid Joint
 
 When trying to import into Wolvenkit, you get an error message like this:
@@ -297,12 +265,6 @@ $fst_root.001|Noesis Frames|Noesis Layer: Invalid Joint Transform, joint Armatur
 ```
 {% endcode %}
 
-That is because there is ancient data in the template which Wolvenkit doesn't know how to handle. Delete everything called "Noesis" from the list of animations below:
+That is because there is ancient data in the template, which Wolvenkit doesn't know how to handle. Delete everything called "Noesis" from the list of animations below:
 
 <figure><img src="../../../.gitbook/assets/animation_poses_delete_noesis.png" alt=""><figcaption></figcaption></figure>
-
-### My pose is twitching!
-
-In each `animAnimSetEntry`, change the property `animation` -> `animBuffer` -> `numTracks` to 0
-
-<figure><img src="../../../.gitbook/assets/animations_fix_twitching.png" alt=""><figcaption></figcaption></figure>

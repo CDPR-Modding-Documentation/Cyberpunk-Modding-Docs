@@ -20,7 +20,7 @@ This page contains the theory of how to connect meshes (3d objects) with texture
 
 This is the technical term for the process of mapping a flat texture on your three-dimensional object. The most hands-on example for this is Christmas chocolate:&#x20;
 
-<figure><img src="../../.gitbook/assets/adding_decals_15_definition.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/uv_mapping_chocolate.png" alt=""><figcaption></figcaption></figure>
 
 Regardless of that, **you can not eat it**.
 

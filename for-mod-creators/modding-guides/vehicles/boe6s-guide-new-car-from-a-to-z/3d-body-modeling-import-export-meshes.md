@@ -119,7 +119,7 @@ May be more or less of different components. Depends on source model.
 
 Join objects by selecting multiple, and using **Object > Join**:
 
-<figure><img src="../../../../.gitbook/assets/image14 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image14.png" alt=""><figcaption></figcaption></figure>
 
 I recommend creating “collections” or folders in blender, one for each component. Split and join the files as necessary to organize them together. Feel free to add more categories and you see fit. Keep it categorized in a way that works for you. I start by separating body and body trim, and keeping car badges or small details separate until I decide how to add them to my model.
 

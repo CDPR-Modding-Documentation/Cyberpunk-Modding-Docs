@@ -28,7 +28,7 @@ Represents a dependency where the [reference holder](#user-content-fn-3)[^3] is 
 
 
 
-<figure><img src="../../.gitbook/assets/image (178).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (210).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 

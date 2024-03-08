@@ -8,16 +8,15 @@ description: Put your item in place of a default game item. Supports variants.
 
 **Created by @manavortex**\
 **Published November 05 2022**\
-**Updated July 26 2023**
+**Updated Feb 28 2024**
 
 
 
 This tutorial will teach you how to switch a player mesh for an NPC garment and map its variants to the existing colours.
 
-Other relevant know-how for this process:&#x20;
+Other relevant know-how for this process (you don't need to read them if you already know which item you want to replace):&#x20;
 
 * [Finding an item's spawn code and mesh](../../../../references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials)
-* [Editing mesh appearances](../changing-materials-colors-and-textures.md)
 
 For a guide how to import meshes into Cyberpunk, check [here](../../../../3d-modelling/exporting-and-importing-meshes/).
 
@@ -61,7 +60,13 @@ Now that we have done that, we can start recolouring.
 
 ## Step 3 (optional): Find the .mlsetups
 
-Each appearance in the appearances array has a list of chunkMask entries (one per submesh), which are assigned a material by name. For a more detailed explanation, you can check [this page](../../../../files-and-what-they-do/3d-objects-.mesh-files/#chunkmaterials), but all we care about right now is this lookup chain:
+Each appearance in the appearances array has a list of chunkMask entries (one per submesh), which are assigned a material by name.
+
+{% hint style="info" %}
+For a full guide on [Editing mesh appearances](../changing-materials-colors-and-textures.md), follow the link (you don't have to).
+{% endhint %}
+
+&#x20;For a more detailed explanation, you can check [this page](../../../../files-and-what-they-do/3d-objects-.mesh-files/#chunkmaterials), but all we care about right now is this lookup chain:
 
 <figure><img src="https://i.imgur.com/HK6Z0LA.png" alt=""><figcaption></figcaption></figure>
 

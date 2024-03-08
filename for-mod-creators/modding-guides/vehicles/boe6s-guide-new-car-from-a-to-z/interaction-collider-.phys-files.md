@@ -4,7 +4,7 @@ description: >-
   This controls how it hits/collides with walls, players, etc.
 ---
 
-# Interaction collider .phys files
+# Boe6's vehicles: Interaction collider .phys files
 
 Add the `.phys` file to your project, rename, and move the file as appropriate. It is linked through the `.ent` file. \
 Path:
@@ -28,7 +28,7 @@ In **Blender**, open the “**Scripting**” workspace:\
 
 At the top of the text editor that just openned, use the folder icon to find the importing `.py` file we just downloaded.
 
-<figure><img src="../../../../.gitbook/assets/image8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image8 (1).png" alt=""><figcaption></figcaption></figure>
 
 This should open the `.py` file into the text editor. It should look like this:
 

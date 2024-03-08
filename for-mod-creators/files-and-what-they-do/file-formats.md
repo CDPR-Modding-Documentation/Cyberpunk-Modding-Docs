@@ -16,8 +16,8 @@ For an exhaustive list, see the [W2RC File Format Table.](file-formats.md#w2rc-f
 
 This file contains a list of appearances with their associated **components**. To load them, you require a [root entity](file-formats.md#root-entity) .ent. The .app files also contain extensive parameters for wounds and dismemberment, determining which meshes to use for different types of garment an NPC might be wearing, and even the physics behavior of these meshes.
 
-{% content-ref url="appearance-.app-files.md" %}
-[appearance-.app-files.md](appearance-.app-files.md)
+{% content-ref url="appearance-.app-files/" %}
+[appearance-.app-files](appearance-.app-files/)
 {% endcontent-ref %}
 
 Holds a list of components.

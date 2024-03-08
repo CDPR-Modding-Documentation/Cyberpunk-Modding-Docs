@@ -92,6 +92,14 @@ If you're trying to start your game, but it never even launches, this is the rig
 
 Check the section [#cyberpunk-has-flatlined](./#cyberpunk-has-flatlined "mention") below.
 
+#### ValidateScripts.cpp:42
+
+Empty your cache, check the info box under[#redscript-red4ext](./#redscript-red4ext "mention").
+
+#### Red4ext.SDK: Failed to resolve address for hash 0x1817231d
+
+You need to **update the game** and RED4ext
+
 #### Something about files or permissions
 
 If you think that your error is file-related, you can check the section "[Something something files](./#something-something-files)" or use your browser's search function (`Ctrl+F`) to search this page for your error.
@@ -309,7 +317,7 @@ There is such a thing as too many mods which are making the game crash. This num
 
 To fix this, you need to disable analysis in the settings:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (127).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (111).png" alt=""><figcaption></figcaption></figure>
 
 ### Failed to initialize script data
 
@@ -548,7 +556,7 @@ If you don't vibe with text, there's a [#bisect-video-demonstration](./#bisect-v
 
 If your CPU is too busy, the game will try to save resources by dropping audio, starting with dialogue audio. Disabling spatial audio from the main menu might help:
 
-<figure><img src="../../.gitbook/assets/image (130).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption></figcaption></figure>
 
 ### It's not connected to CPU load
 
@@ -1260,7 +1268,7 @@ _Exact procedure as documented by @ArsenicTouch_
 
 Go to Games -> Installed, right-click on your game and select the following menu entry:
 
-![](<../../.gitbook/assets/image (32).png>)
+![](<../../.gitbook/assets/image (16).png>)
 
 #### Steam
 
