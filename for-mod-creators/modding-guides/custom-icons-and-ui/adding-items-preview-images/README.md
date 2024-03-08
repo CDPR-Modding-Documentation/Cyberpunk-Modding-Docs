@@ -103,7 +103,7 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 
 #### Creating The Actual Icon
 
-Open [this]("../../../../.gitbook/assets/item_icons.psd") `.psd` and import the Smart Objects of your icons into it. The `.psd` is based on the `preview_icons.xbm` found in [manavortex](https://www.nexusmods.com/cyberpunk2077/users/1630319)'s [Archive XL item additions and guide](https://www.nexusmods.com/cyberpunk2077/mods/8268) and can be easily used with projects based on the tutorial. With all layers selected in Photoshop, transform them so that the longest side is 158px. Align each item to the centre of each grey square.
+Open [this](/.gitbook/assets/item_icons.psd) `.psd` and import the Smart Objects of your icons into it. The `.psd` is based on the `preview_icons.xbm` found in [manavortex](https://www.nexusmods.com/cyberpunk2077/users/1630319)'s [Archive XL item additions and guide](https://www.nexusmods.com/cyberpunk2077/mods/8268) and can be easily used with projects based on the tutorial. With all layers selected in Photoshop, transform them so that the longest side is 158px. Align each item to the centre of each grey square.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_09_align_icons.png" alt=""><figcaption></figcaption></figure>
 
