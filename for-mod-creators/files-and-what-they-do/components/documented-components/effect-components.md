@@ -7,7 +7,7 @@ description: EntSlotComponent and EntEffectSpawnerComponent
 ## Summary
 
 Published: Feb 09 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Last documented edit: Feb 11 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented edit: Mar 4 2024 by [86maylin](https://app.gitbook.com/u/LhwshjuFJ4QwCwG11Ze4zIVyGqM2 "mention")
 
 This page will tell you how effect components work and how they interact with each other.
 
@@ -63,6 +63,16 @@ In the `entEffectSpawnerComponent`, add:&#x20;
 In the `entSlotComponent`, add:
 
 1. a new entry in `slots` with the name that you created in Step 1
+
+### **autoSpawnTag**
+
+If you are making effects into equipment, having the same autoSpawnTag will make it so equipping one will despawn the other one.&#x20;
+
+### eventRUID
+
+eventRUID in the ent component must be the same as the effect particles ruid, and ideally should be unique across everything. You can right click on a RUID field and choose "Generate new CRUID" to generate a semi-random new CRUID and then copy it across so they match.&#x20;
+
+<figure><img src="../../../../.gitbook/assets/image (275).png" alt=""><figcaption><p>Red square: autoSpawnTag, Yellow square: eventRUID</p></figcaption></figure>
 
 ## Placing effect components
 
