@@ -19,7 +19,9 @@ If you want to have gendered preview icons, check [here](gendered-preview-icons.
 
 ## The required files
 
-If you downloaded the example project ([#getting-the-files](../../animations/archivexl-adding-photo-mode-poses.md#getting-the-files "mention")), the preview is already hooked up. Otherwise, [download](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas\_templates\_apart\_v1.zip/file) the template archive (kindly provided by Apart).
+If you downloaded the example project ([#getting-the-files](../../animations/archivexl-adding-photo-mode-poses.md#getting-the-files "mention")), the preview is already hooked up. Otherwise,[ download ](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/\_resources\_and\_assets/icons)the template archive for your kind of template (kindly provided by Apart).
+
+
 
 ### Go away with your examples, I'll do everything by hand!
 
@@ -38,7 +40,7 @@ Okay, you do you. Here's how:
 
 </details>
 
-You should now have a structure like this:&#x20;
+You should now have a structure like this:
 
 ```
 tutorial  
@@ -60,64 +62,106 @@ You [can export your mesh with all its materials](../../../modding-tools/wolvenk
 <figure><img src="../../../../.gitbook/assets/blender_export_transparent.jpeg" alt=""><figcaption></figcaption></figure>
 
 ### In-game
-Start by installing either [Invisible V](https://www.nexusmods.com/cyberpunk2077/mods/8412) by [manavortex](https://www.nexusmods.com/cyberpunk2077/users/1630319) or the [Invisibility Cap and Shoes](https://www.nexusmods.com/cyberpunk2077/mods/8643?tab=files) by [PinkyDude](https://www.nexusmods.com/cyberpunk2077/users/20892624). Start the game and equip the invisibility garment in the wardrobe as well as the item you want to create icons for. In [Equipment-EX](https://www.nexusmods.com/cyberpunk2077/mods/6945), save outfits for all colour variations of your outfit. 
+
+{% hint style="info" %}
+This part of the guide is a bit longer, since it tells you how to get decent-quality preview pictures. If you don't care for that (you should, but we all hate it), you can skip ahead to [#hooking-up-the-inkatlas](./#hooking-up-the-inkatlas "mention").
+{% endhint %}
+
+#### Prerequisites
+
+You need either  [Invisible V](https://www.nexusmods.com/cyberpunk2077/mods/8412) by [manavortex](https://www.nexusmods.com/cyberpunk2077/users/1630319) or the [Invisibility Cap and Shoes](https://www.nexusmods.com/cyberpunk2077/mods/8643?tab=files) by [PinkyDude](https://www.nexusmods.com/cyberpunk2077/users/20892624)
+
+1. Start the game&#x20;
+2. Equip the invisibility garment and the item you want to create icons for.&#x20;
+   1. To switch through appearances on-the-fly, you can use [AppearanceCreatorMod](https://www.nexusmods.com/cyberpunk2077/mods/10795) while V is in the center of the camera.
+   2. Alternatively, you can save outfits for all colour variations of your outfit In [Equipment-EX](https://www.nexusmods.com/cyberpunk2077/mods/6945):
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_02_eexoutfits.png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_01_photo_booth.png" alt=""><figcaption></figcaption></figure>
+
+#### Optional: Finding a good spot
+
+If you can't be bothered, you can simply teleport to the window of Saburo's office:&#x20;
+
+```
+Game.GetTeleportationFacility():Teleport(GetPlayer(), ToVector4{x=-1349.5053710938, y=138.80358886719, z=545.84600830078, w=1}, ToEulerAngles{roll=0, pitch=0, yaw=0})
+```
+
+Make sure to have some decent lighting on your item.
+
+<details>
+
+<summary>See the long version</summary>
 
 Enter Photo Mode and build a black photo booth around V that looks like the one in the screenshot above using [AMM](https://www.nexusmods.com/cyberpunk2077/mods/790). The [AMM Props - PhotoStudio](https://www.nexusmods.com/cyberpunk2077/mods/7436) are very useful for this. Save your photo booth as an AMM preset to create similar looking icons across all your mods. It's also very useful to make sure the angle of the camera in relation to V remains similar across all your icons. Exit photo mode and look at the lower edge of your photo booth. Align the edge with the bottom of your screen, to ensure V is positioned parallel to the photo booth (this will make more sense later). Enter photo mode again and rotate V to about +15 in the Pose tab.
 
 Add some area lights to the scene. The goal is to highlight the shape of the item. So aim for deep shadows, lots of contrast, and prominent contours. In the screenshot below, there are four lights: two from each side behind the item as rim lights, one at a roughly 45° angle in front and above the item as key light, and one of very low intensity directly in front of the camera to fill in shadows.
 
-<figure><img src="../../../../.gitbook/assets/icon_tutorial_03_lights.png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/icon_tutorial_01_photo_booth.png" alt="" data-size="original">
+
+
+
+</details>
 
 {% hint style="info" %}
 Sometimes, it can be helpful to disable RTX to create icons. The screenshot of item on the left in the image below was taken using Path Tracing and DLSS, the one on the right using rasterised lighting without DLSS:
 
-<figure><img src="../../../../.gitbook/assets/icon_tutorial_04_rtx-shadows.png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/icon_tutorial_04_rtx-shadows.png" alt="" data-size="original">
 
-- If your item is a jacket, the shadows on the inside can look broken with RTX.
-- If your item is jewellery made from glossy metal, you might get *unwanted* reflections with RTX.
-- If your item features fine textures, you might want to disable RTX, so that you can also disable DLSS/FSR without burning up your graphics card.
-- If your item is a piece of clothing made from glossy material, you might *want* RTX reflections.
+* If your item is a jacket, the shadows on the inside can look broken with RTX.
+* If your item is jewellery made from glossy metal, you might get _unwanted_ reflections with RTX.
+* If your item features fine textures, you might want to disable RTX, so that you can also disable DLSS/FSR without burning up your graphics card.
+* If your item is a piece of clothing made from glossy material, you might _want_ RTX reflections.
 {% endhint %}
 
-To actually take the screenshot, position the Photo Mode camera so that it is rougly parallel to the bottom edge of your photo booth. If you did the same thing in First Person Perspective as instructed above, V should now be exactly at an angle of +15 to the Photo Mode camera. Set the Field of View to about 30 to prevent distortion when taking a closeup. Move the camera so that the item fills the entirety of your screen without cutting off a part of it. Enable [DepthAlpha.fx](https://github.com/luluco250/FXShaders/tree/master) in [ReShade](https://reshade.me/) (make sure to [set up the depth buffer properly](https://github.com/martymcmodding/ReShade-Guide/wiki/The-Depth-Buffer#verifying-the-depth-buffer-is-set-up-correctly)). Check `Colorize Transparency` and adjust the `Range` until your item is the only visible object in the scene.
+#### Taking the screenshots
+
+1. To actually take the screenshot, position the Photo Mode camera so that it is rougly parallel to the bottom edge of your photo booth.&#x20;
+2. Set the Field of View to about 30 to prevent distortion when taking a closeup.&#x20;
+3. Move the camera so that the item fills the entirety of your screen without cutting off a part of it.&#x20;
+4. Optional (requires ReShade): Enable [DepthAlpha.fx](https://github.com/luluco250/FXShaders/tree/master) in [ReShade](https://reshade.me/) (make sure to [set up the depth buffer properly](https://github.com/martymcmodding/ReShade-Guide/wiki/The-Depth-Buffer#verifying-the-depth-buffer-is-set-up-correctly)). Check `Colorize Transparency` and adjust the `Range` until your item is the only visible object in the scene.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_05_depthalpha.png" alt=""><figcaption></figcaption></figure>
 
-Disable `Colorize Transparency` and take the screenshot using ReShade (**not** the built-in Photo Mode). Switch to the pose tab and cycle through all appearances of your item and take a screenshot of each one (make sure you haven't skipped any!).
+5. Optional (requires ReShade): Disable `Colorize Transparency` and take the screenshot using ReShade (**not** the built-in Photo Mode).&#x20;
+6. Switch to the pose tab and cycle through all appearances of your item and take a screenshot of each one (make sure you haven't skipped any!).
+
+{% hint style="info" %}
+You can use [AppearanceCreatorMod](https://www.nexusmods.com/cyberpunk2077/mods/10795) to switch appearances without changing the tab!
+{% endhint %}
 
 ### Photoshop
 
 #### Mask Out Your Item
 
-Open the first of your screenshots in Photoshop and drop all other screenshots of the item onto the one you've just opened. Select the newly created Smart Objects, right click them and select "Rasterize Layers". Select the first layer and hide all other layers. Go to "Layer" in the menubar at the top of your screen on the left and select "Layer Mask" → "From Transparency". Create a new colour fill layer and choose a colour that contrasts with your item. Double click the layer mask on your first layer in the layers window to enter Select and Mask mode. Make sure your View Mode is set to "On Layers". Play around with the "Global Refinements" until the outline of your item looks smooth. 
+Open the first of your screenshots in Photoshop and drop all other screenshots of the item onto the one you've just opened. Select the newly created Smart Objects, right click them and select "Rasterize Layers". Select the first layer and hide all other layers. Go to "Layer" in the menubar at the top of your screen on the left and select "Layer Mask" → "From Transparency". Create a new colour fill layer and choose a colour that contrasts with your item. Double click the layer mask on your first layer in the layers window to enter Select and Mask mode. Make sure your View Mode is set to "On Layers". Play around with the "Global Refinements" until the outline of your item looks smooth.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_06_mask_select_comparison.png" alt=""><figcaption></figcaption></figure>
 
 Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite well usually. Highly depends on how intricate your item is. Duplicate the Layer Mask onto your other layers. From here on out, you can play around with a bunch of Adjustment Layers with Clipping Masks for each of your layers/appearances. I recommend some Levels Adjustments to set proper black and white points, as well as Black & White Adjustment Layers for items that are black, grey, silver or white and so on. Once you're done with that, select each layer and its Adjustment Layers, right click them, and select "Convert to Smart Object". Give each layer a meaningful name and save your image as a `.psd`.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_07_adjustment_layers.png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_08_smart_objects.png" alt=""><figcaption></figcaption></figure>
 
 #### Creating The Actual Icon
 
-Open [this](/.gitbook/assets/item_icons.psd) `.psd` and import the Smart Objects of your icons into it. The `.psd` is based on the `preview_icons.xbm` found in [manavortex](https://www.nexusmods.com/cyberpunk2077/users/1630319)'s [Archive XL item additions and guide](https://www.nexusmods.com/cyberpunk2077/mods/8268) and can be easily used with projects based on the tutorial. With all layers selected in Photoshop, transform them so that the longest side is 158px. Align each item to the centre of each grey square.
+Open [this](../../../../.gitbook/assets/item\_icons.psd) `.psd` and import the Smart Objects of your icons into it. The `.psd` is based on the `preview_icons.xbm` found in [manavortex](https://www.nexusmods.com/cyberpunk2077/users/1630319)'s [Archive XL item additions and guide](https://www.nexusmods.com/cyberpunk2077/mods/8268) and can be easily used with projects based on the tutorial. With all layers selected in Photoshop, transform them so that the longest side is 158px. Align each item to the centre of each grey square.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_09_align_icons.png" alt=""><figcaption></figcaption></figure>
 
 Select all of your items, duplicate them and merge the layers. Go to "Layer" in the menubar at the top of your screen on the left and select "Layer Mask" → "From Transparency". Move the newly created Layer Mask to the white Colour Fill Layer (`alpha mask white`). Delete the layer of the merged items. Merge both the white and black Colour Fill Layers. Select the entire canvas `CTRL + A` and copy your selection `CTRL + C`. Switch over to the Channels tab in the layers window (alternatively, in the menubar at the top of your screen select "Window" → "Channels"). Select "Alpha 1" and hit `CTRL + V`. Your image now has an alpha layer.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_10_layer_mask.png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_11_alpha_mask.png" alt=""><figcaption></figcaption></figure>
 
 Select the RGB channel again, go back to the Layers window and select the layer named `slot_01`. Change its fill colour to something similar to the outside of your item. Repeat this for all other items.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_12_backgrounds.png" alt=""><figcaption></figcaption></figure>
 
-Now save the image as a `.tga` in the raw folder of your WolvenKit project. Import the `.tga` into your WolvenKit project with the `TEXG_Generic_UI` `TextureGroup` setting and make sure that `PremultiplyAlpha` is enabled. 
-
+Now save the image as a `.tga` in the raw folder of your WolvenKit project. Import the `.tga` into your WolvenKit project with the `TEXG_Generic_UI` `TextureGroup` setting and make sure that `PremultiplyAlpha` is enabled.
 
 ## Hooking up the inkatlas
 
@@ -128,9 +172,10 @@ Now save the image as a `.tga` in the raw folder of your WolvenKit project. Impo
 <figure><img src="../../../../.gitbook/assets/inkatlas_slot_names.png" alt=""><figcaption></figcaption></figure>
 
 4. Save the file. If it doesn't update, close and re-open it.
-5. You now have a tab "PartMapping". You can see which texture corresponds to which slot by selecting it in the other tab and checking the `partsName`, which corresponds to the entry in the slot's  `parts` array:
+5. You now have a tab "PartMapping". You can see which texture corresponds to which slot by selecting it in the other tab and checking the `partsName`, which corresponds to the entry in the slot's `parts` array:
 
 <figure><img src="../../../../.gitbook/assets/inkatlas_icon_to_slot_assignment.png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_14_inkatlas_thumbs.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
@@ -141,7 +186,7 @@ Congratulations! You now have preview icons!
 
 ## Using it
 
-You can now hook up your preview icon(s) to whatever mod you are making.&#x20;
+You can now hook up your preview icon(s) to whatever mod you are making.
 
 {% hint style="info" %}
 If you want to use gendered preview icons, check [here](gendered-preview-icons.md). In this case, you do **not** add an icon record to your item.
