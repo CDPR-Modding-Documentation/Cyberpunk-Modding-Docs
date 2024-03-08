@@ -71,6 +71,7 @@ Add some area lights to the scene. The goal is to highlight the shape of the ite
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_03_lights.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
 Sometimes, it can be helpful to disable RTX to create icons. The screenshot of item on the left in the image below was taken using Path Tracing and DLSS, the one on the right using rasterised lighting without DLSS:
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_04_rtx-shadows.png" alt=""><figcaption></figcaption></figure>
@@ -79,6 +80,7 @@ Sometimes, it can be helpful to disable RTX to create icons. The screenshot of i
 - If your item is jewellery made from glossy metal, you might get *unwanted* reflections with RTX.
 - If your item features fine textures, you might want to disable RTX, so that you can also disable DLSS/FSR without burning up your graphics card.
 - If your item is a piece of clothing made from glossy material, you might *want* RTX reflections.
+{% endhint %}
 
 To actually take the screenshot, position the Photo Mode camera so that it is rougly parallel to the bottom edge of your photo booth. If you did the same thing in First Person Perspective as instructed above, V should now be exactly at an angle of +15 to the Photo Mode camera. Set the Field of View to about 30 to prevent distortion when taking a closeup. Move the camera so that the item fills the entirety of your screen without cutting off a part of it. Enable [DepthAlpha.fx](https://github.com/luluco250/FXShaders/tree/master) in [ReShade](https://reshade.me/) (make sure to [set up the depth buffer properly](https://github.com/martymcmodding/ReShade-Guide/wiki/The-Depth-Buffer#verifying-the-depth-buffer-is-set-up-correctly)). Check `Colorize Transparency` and adjust the `Range` until your item is the only visible object in the scene.
 
@@ -101,7 +103,7 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 
 #### Creating The Actual Icon
 
-Open [this]("../../../../.gitbook/assets/item_icons.psd) `.psd` and import the Smart Objects of your icons into it. The `.psd` is based on the `preview_icons.xbm` found in [manavortex](https://www.nexusmods.com/cyberpunk2077/users/1630319)'s [Archive XL item additions and guide](https://www.nexusmods.com/cyberpunk2077/mods/8268) and can be easily used with projects based on the tutorial. With all layers selected in Photoshop, transform them so that the longest side is 158px. Align each item to the centre of each grey square.
+Open [this]("../../../../.gitbook/assets/item_icons.psd") `.psd` and import the Smart Objects of your icons into it. The `.psd` is based on the `preview_icons.xbm` found in [manavortex](https://www.nexusmods.com/cyberpunk2077/users/1630319)'s [Archive XL item additions and guide](https://www.nexusmods.com/cyberpunk2077/mods/8268) and can be easily used with projects based on the tutorial. With all layers selected in Photoshop, transform them so that the longest side is 158px. Align each item to the centre of each grey square.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_09_align_icons.png" alt=""><figcaption></figcaption></figure>
 
