@@ -158,7 +158,7 @@ For a documentation of multilayer properties, see [here](../../../materials/conf
 3. [Draw the rest of the owl](https://knowyourmeme.com/memes/how-to-draw-an-owl) and [edit the mlsetup](../../../modding-tools/mlsetup-builder/#using-mlsb).&#x20;
 4. Export the file, overwriting the original `.mlsetup.json`
 5. Switch back to Wolvenkit
-6. Right-click on the `.mlsetup.json` and [import it from json](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json).
+6. Right-click on the `.mlsetup.json` and [import it from json](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json).
 
 {% hint style="success" %}
 This is already working. You can pack the project and see it in action!
