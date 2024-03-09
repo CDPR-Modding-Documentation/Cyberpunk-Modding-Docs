@@ -65,19 +65,13 @@ You [can export your mesh with all its materials](../../../modding-tools/wolvenk
 This part of the guide is a bit longer, since it tells you how to get decent-quality preview pictures. If you don't care for that (you should, but we all hate it), you can skip ahead to [#hooking-up-the-inkatlas](./#hooking-up-the-inkatlas "mention").
 {% endhint %}
 
-
-
 ### Overview of the Process
 
-The idea is to combine mods that make V invisible and a ReShade filter called DepthAlpha.fx to create in-game screenshots of your item where the _background is transparent_. This means you don't have to spend a lot of time painstakingly removing the background manually in Photoshop. The screenshots taken with DepthAlpha.fx only need a little bit of cleanup ([and a proper Alpha Mask](./#creating-the-actual-icon "mention")), but can be basically directly imported into the `.xbm` file containing your icons.
+The idea is to combine mods that make V invisible and a ReShade filter called DepthAlpha.fx to create in-game screenshots of your item where the _background is transparent_. This means you don't have to spend a lot of time painstakingly removing the background manually in Photoshop. The screenshots taken with DepthAlpha.fx only need a little bit of cleanup ([#creating-the-actual-icon](./#creating-the-actual-icon "mention")), but can be basically directly imported into the `.xbm` file containing your icons.
 
 {% hint style="info" %}
-
 Using ReShade is, of course, entirely optional, but teaching how to mask out objects in Photoshop is outside the scope of this tutorial.
-
 {% endhint %}
-
-
 
 #### Prerequisites
 
@@ -93,15 +87,13 @@ Using ReShade is, of course, entirely optional, but teaching how to mask out obj
 
 [AppearanceCreatorMod](https://www.nexusmods.com/cyberpunk2077/mods/10795) or [Equipment-EX](https://www.nexusmods.com/cyberpunk2077/mods/6945)
 
-
-
 ### The Process
 
 **Preparation:**
 
-Start the game&#x20;
+Start the game
 
-1. Equip the invisibility garment and the item you want to create icons for.&#x20;
+1. Equip the invisibility garment and the item you want to create icons for.
    1. To switch through appearances on-the-fly, you can use [AppearanceCreatorMod](https://www.nexusmods.com/cyberpunk2077/mods/10795) while V is in the center of the camera.
    2. Alternatively, you can save outfits for all colour variations of your outfit In [Equipment-EX](https://www.nexusmods.com/cyberpunk2077/mods/6945):
 
@@ -110,37 +102,29 @@ Start the game&#x20;
 **Lighting:**
 
 {% hint style="info" %}
-
 **Optional:** Finding a good spot
 
-If you can't be bothered, you can simply teleport to the window of Saburo's office:&#x20;
+If you can't be bothered, you can simply teleport to the window of Saburo's office:
 
 ```
 Game.GetTeleportationFacility():Teleport(GetPlayer(), ToVector4{x=-1349.5053710938, y=138.80358886719, z=545.84600830078, w=1}, ToEulerAngles{roll=0, pitch=0, yaw=0})
 ```
 
 Make sure to have some decent lighting on your item.
-
 {% endhint %}
 
 <details>
 
 <summary>See the long version</summary>
 
-![](../../../../.gitbook/assets/icon_tutorial_01_photo_booth.png)
+<img src="../../../../.gitbook/assets/icon_tutorial_01_photo_booth.png" alt="" data-size="original">
 
 1. Enter Photo Mode and build a black photo booth around V that looks like the one in the screenshot above using [AMM](https://www.nexusmods.com/cyberpunk2077/mods/790). The [AMM Props - PhotoStudio](https://www.nexusmods.com/cyberpunk2077/mods/7436) are very useful for this.
-
 2. Save your photo booth as an AMM preset to create similar looking icons across all your mods.
-
 3. It's also very useful to make sure the angle of the camera in relation to V remains similar across all your icons:
-   
    1. Exit photo mode and look at the lower edge of your photo booth.
-   
    2. Align the edge with the bottom of your screen, to ensure V is positioned parallel to the photo booth (this will make more sense later).
-   
    3. Enter photo mode again and rotate V to about +15 in the Pose tab.
-
 4. Add some area lights to the scene. The goal is to highlight the shape of the item. So aim for deep shadows, lots of contrast, and prominent contours. In the screenshot below, there are four lights: two from each side behind the item as rim lights, one at a roughly 45° angle in front and above the item as key light, and one of very low intensity directly in front of the camera to fill in shadows.
 
 <img src="../../../../.gitbook/assets/icon_tutorial_01_photo_booth.png" alt="" data-size="original">
@@ -156,24 +140,22 @@ Sometimes, it can be helpful to disable RTX to create icons. The screenshot of i
 * If your item is jewellery made from glossy metal, you might get _unwanted_ reflections with RTX.
 * If your item features fine textures, you might want to disable RTX, so that you can also disable DLSS/FSR without burning up your graphics card.
 * If your item is a piece of clothing made from glossy material, you might _want_ RTX reflections.
-  {% endhint %}
+{% endhint %}
 
 #### Taking the screenshots
 
-1. To actually take the screenshot, position the Photo Mode camera so that it is rougly parallel to the bottom edge of your photo booth.&#x20;
-2. Set the Field of View to about 30 to prevent distortion when taking a closeup.&#x20;
-3. Move the camera so that the item fills the entirety of your screen without cutting off a part of it.&#x20;
+1. To actually take the screenshot, position the Photo Mode camera so that it is rougly parallel to the bottom edge of your photo booth.
+2. Set the Field of View to about 30 to prevent distortion when taking a closeup.
+3. Move the camera so that the item fills the entirety of your screen without cutting off a part of it.
 
 {% hint style="info" %}
-
 **If you're using ReShade:**
 
-    3.1 Enable DepthAlpha.fx in ReShade. Check `Colorize Transparency` and adjust the `Range` until your item is the only visible object in the scene.
+&#x20;   3.1 Enable DepthAlpha.fx in ReShade. Check `Colorize Transparency` and adjust the `Range` until your item is the only visible object in the scene.
 
-<figure><img src="../../../../.gitbook/assets/icon_tutorial_05_depthalpha.png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/icon_tutorial_05_depthalpha.png" alt="" data-size="original">
 
-    3.2 Disable `Colorize Transparency` and take the screenshot using ReShade (**not** the built-in Photo Mode).&#x20;
-
+&#x20;   3.2 Disable `Colorize Transparency` and take the screenshot using ReShade (**not** the built-in Photo Mode).
 {% endhint %}
 
 4. Switch to the pose tab and cycle through all appearances of your item and take a screenshot of each one (make sure you haven't skipped any!).
@@ -187,33 +169,22 @@ You can use [AppearanceCreatorMod](https://www.nexusmods.com/cyberpunk2077/mods/
 #### Fixing Jaggy Edges Left By DepthAlpha.fx
 
 1. Open the first of your screenshots in Photoshop and drop all other screenshots of the item onto the one you've just opened.
-
 2. Select the newly created Smart Objects, right click them and select "Rasterize Layers".
-
 3. Select the first layer and hide all other layers.
-
 4. Go to "Layer" in the menubar at the top of your screen on the left and select "Layer Mask" → "From Transparency".
-
 5. Create a new colour fill layer and choose a colour that contrasts with your item.
-
 6. Double click the layer mask on your first layer in the layers window to enter Select and Mask mode.
-
 7. Make sure your View Mode is set to "On Layers" and play around with the "Global Refinements" until the outline of your item looks smooth.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_06_mask_select_comparison.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-
 Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite well usually. Highly depends on how intricate your item is.
-
 {% endhint %}
 
 8. Duplicate the Layer Mask onto your other layers.
-
 9. From here on out, you can play around with a bunch of Adjustment Layers with Clipping Masks for each of your layers/appearances. I recommend some Levels Adjustments to set proper black and white points, as well as Black & White Adjustment Layers for items that are black, grey, silver or white and so on.
-
 10. Once you're done with that, select each layer and its Adjustment Layers, right click them, and select "Convert to Smart Object".
-
 11. Give each layer a meaningful name and save your image as a `.psd`.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_07_adjustment_layers.png" alt=""><figcaption></figcaption></figure>
@@ -223,25 +194,17 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 #### Creating The Actual Icon
 
 1. Open [this](../../../../.gitbook/assets/item\_icons.psd) `.psd` and import the Smart Objects of your icons into it. The `.psd` is based on the `preview_icons.xbm` found in [manavortex](https://www.nexusmods.com/cyberpunk2077/users/1630319)'s [Archive XL item additions and guide](https://www.nexusmods.com/cyberpunk2077/mods/8268) and can be easily used with projects based on the [guide](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items).
-
 2. With all layers selected in Photoshop, transform them so that the longest side is 158px.
-
 3. Align each item to the centre of each grey square.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_09_align_icons.png" alt=""><figcaption></figcaption></figure>
 
 4. Select all of your items, duplicate them and merge the layers.
-
 5. Go to "Layer" in the menubar at the top of your screen on the left and select "Layer Mask" → "From Transparency".
-
 6. Move the newly created Layer Mask to the white Colour Fill Layer (`alpha mask white`).
-
 7. Delete the layer of the merged items.
-
 8. Merge both the white and black Colour Fill Layers.
-
 9. Select the entire canvas `CTRL + A` and copy your selection `CTRL + C`.
-
 10. Switch over to the Channels tab in the layers window (alternatively, in the menubar at the top of your screen select "Window" → "Channels"). Select `Alpha 1` and hit `CTRL + V`. Your image now has an alpha layer.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_10_layer_mask.png" alt=""><figcaption></figcaption></figure>
@@ -249,13 +212,11 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_11_alpha_mask.png" alt=""><figcaption></figcaption></figure>
 
 11. Select the RGB channel again, go back to the Layers window and select the layer named `slot_01`.
-
 12. Change its fill colour to something similar to the outside of your item. Repeat this for all other items. This ensures that your in-game icon doesn't have white, frayed edges.
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_12_backgrounds.png" alt=""><figcaption></figcaption></figure>
 
-13. Now save the image as a `.tga` in the raw folder of your WolvenKit project. It needs to be a `.tga` for Photoshop to include the Alpha Layer. Without an Alpha Layer, transparency won't work correctly in-game. 
-
+13. Now save the image as a `.tga` in the raw folder of your WolvenKit project. It needs to be a `.tga` for Photoshop to include the Alpha Layer. Without an Alpha Layer, transparency won't work correctly in-game.
 14. Import the `.tga` into your WolvenKit project with the `TEXG_Generic_UI` `TextureGroup` setting and make sure that `PremultiplyAlpha` is enabled.
 
 ## Hooking up the inkatlas

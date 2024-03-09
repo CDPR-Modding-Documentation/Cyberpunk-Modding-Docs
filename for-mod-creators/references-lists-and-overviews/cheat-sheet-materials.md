@@ -191,6 +191,23 @@ For a full documentation of this material, check [glass-material-properties.md](
 
 Use `base\materials\fillable_fluid_vertex.mt` to fill vessels, or see [here ](../materials/#liquid)for details.
 
+## Reflective/Mirror-ish materials
+
+Mirrors are generally a [farce](https://knowyourmeme.com/photos/2270291-alignment-charts) but here are your options:
+
+* `metal_base.remt` with roughness set to black and metalness set to white. Quick in-game example here: `base\environment\decoration\furniture\bathroom\mirror\mirror_a.mesh`
+* `base\vehicles\common\materials\glass_tech_reflective.mi`: this may seem a little better depending on your use case (for eg car side mirrors). Since the base material is just `base\materials\glass.mt` - you'll need to place a black planar mesh behind the mirror mesh so that it isn't see through and adjust the `TintColor` + `GlassSpecularColor` to a light-ish grey&#x20;
+
+Reflections in both the above cases are going to be [cubemaps ](https://en.wikipedia.org/wiki/Cube\_mapping)in non-RT graphic modes so they will not be high res or even accurate most of the time (you won't see NPCs for example)
+
+With ray tracing, the reflection will look better and accurate
+
+Below example image use `glass_tech_reflective.mi`
+
+| Non-ray traced cubemap reflection    | Ray traced reflections                     |
+| ------------------------------------ | ------------------------------------------ |
+| ![](../../.gitbook/assets/image.png) | ![](<../../.gitbook/assets/image (1).png>) |
+
 ## Other materials
 
 Cyberpunk 2077 uses materials cleverly, and often you can save a lot of work by simply re-using something CDPR has already defined
