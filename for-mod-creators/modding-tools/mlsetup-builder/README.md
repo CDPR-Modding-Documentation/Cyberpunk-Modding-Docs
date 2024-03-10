@@ -180,6 +180,12 @@ That's it, you're done now and can use the [3d viewport](./#about-that-3d-viewpo
 
 ## Troubleshooting
 
+### Generic troubleshooting
+
+Close MLSB, then open `%APPSETTINGS%\Mlsetupbuilder\config.json` in a text editor and decrement the version by one (e.g. `1.6.8` => `1.6.7`). This will force MLSB to re-check its settings.
+
+Alternatively, you can also delete the file and reconfigure.
+
 ### Help, my Layer Config List says `object Object`
 
 You need to [install the most recent version](https://github.com/Neurolinked/MlsetupBuilder/tags). If that doesn't make the error go away and your most recent version is something with 1.6.7, update the interface.js — download it [here ](https://github.com/Neurolinked/MlsetupBuilder/releases/tag/v1.6.7-final)from Neurolinked's github repository, then replace the file with the same name in MLSB's install directory, subfolder `resources\app\js`.&#x20;
