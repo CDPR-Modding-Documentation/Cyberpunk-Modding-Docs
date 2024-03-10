@@ -114,7 +114,7 @@ There is no exact migration guide yet. Maybe you'd like to write one?
 
 ## Diagram
 
-This is how everything connects. Looks pretty scary, but is actually simple: whenever you want to rename or repath[^1] something, make sure that you catch **both ends of the arrow**.
+This is how everything connects. Looks pretty scary, but is actually simple: whenever you want to rename or repath[^1] something, make sure that you catch **both ends of the connecting lines**.
 
 You can find a breakdown-by-entry on the [corresponding wiki page](archive-xl-item-structure-explained.md).
 
@@ -399,7 +399,7 @@ Before you start digging into your file structure, check if there are any leftov
 
 If no additional yaml files are messing things up, then the error is somewhere in the first part of the chain and relatively easy to fix:
 
-<figure><img src="../../../../.gitbook/assets/archivexl_files_01.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_troubleshooting_01_loading_files.jpg" alt=""><figcaption></figcaption></figure>
 
 Check the following places:
 
@@ -424,7 +424,7 @@ Check the following places:
 
 Something went wrong with your json file:
 
-<figure><img src="../../../../.gitbook/assets/archiveXL_json_file.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_troubleshooting_02_json.jpg" alt=""><figcaption></figcaption></figure>
 
 If there are no errors in any of the log files, check the following places:
 
@@ -443,9 +443,9 @@ If there are no errors in any of the log files, check the following places:
 
 ### The item spawns, but…
 
-Congratulations, you've made it into the right half of the diagram, and can also make use of Wolvenkit's [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) now! The error will be somewhere here:
+Congratulations, you've made it into the lower left part of the diagram, and can also make use of Wolvenkit's [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) now! The error will be somewhere here:
 
-<figure><img src="../../../../.gitbook/assets/archivexl_files_gamefiles_full.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_troubleshooting_03_spawned_item_05_v_is_bald.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 [File validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) can help you catch the error.
@@ -484,13 +484,13 @@ You can now start the game and equip your item again.
 
 Your root entity is working, and the error is somewhere here:
 
-<figure><img src="../../../../.gitbook/assets/archivexl_files_controlfiles_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_troubleshooting_04_v_has_hair.jpg" alt=""><figcaption></figcaption></figure>
 
 #### V is bald
 
 Your root entity is not recognized and the error is somewhere here:
 
-<figure><img src="../../../../.gitbook/assets/archivexl_files_gamefiles_full.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_troubleshooting_03_spawned_item_05_v_is_bald.jpg" alt=""><figcaption></figcaption></figure>
 
 ### It's invisible in photo mode!
 
