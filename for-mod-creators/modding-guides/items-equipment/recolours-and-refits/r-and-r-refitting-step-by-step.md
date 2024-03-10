@@ -148,7 +148,7 @@ We will use the Proportional Editing mode here, which leaves garment supports in
 
 1. While still in `Object Mode`, expand both armatures (not the one with the body) and select all included meshes.
 2. Switch into Edit Mode by hitting Tab or selecting it from the dropdown at the topleft
-3. Turn on "Proportional Editing" by checking the round button at the top of the viewport
+3. Turn on "Proportional Editing" by checking the round button at the top of the viewport and select a low Proportional Size like 0.1m at the bottom of the drop-down menu next to it.
 
 <figure><img src="../../../../.gitbook/assets/netrunner_refit_proportional_editing_1.png" alt=""><figcaption></figcaption></figure>
 
