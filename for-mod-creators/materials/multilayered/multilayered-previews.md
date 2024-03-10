@@ -40,3 +40,8 @@ ToDo: These need to be grouped (one picture per type), and then they need to be 
 
 <figure><img src="../../../.gitbook/assets/multilayered_materials_rolled_metal.png" alt=""><figcaption></figcaption></figure>
 
+## Plastic
+
+### Plastic Tech HQ
+
+<figure><img src="../../../.gitbook/assets/plastic_tech_rough_out.png" alt=""><figcaption></figcaption></figure>
