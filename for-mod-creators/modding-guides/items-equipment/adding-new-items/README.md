@@ -143,8 +143,8 @@ If you would rather have a step-by-step guide for a gendered variant, see [the n
 To add an appearance, you will have to touch the following files:
 
 1. \***.yaml**: Adding an entry
-2. **appearance.app**: Adding a mapping between rootentity and mesh's appearance
-3. **rootentity.ent**: Adding a mapping between yaml's appearance and app's appearance
+2. **appearance.app**: Adding a mapping between root_entity and mesh's appearance
+3. **root_entity.ent**: Adding a mapping between yaml's appearance and app's appearance
 4. \*_.mesh_:
    1. Adding a MeshMaterialEntry
    2. Adding a MaterialInstance
@@ -160,7 +160,7 @@ For a diagram of how everything connects, go [here](archive-xl-item-structure-ex
 1. Duplicate the entire appearance block for an already working item.\
    ⚠Mind the indent!
 2. Change the first line to a unique name like `Items.my_custom_shirt_blueblack`
-3. Set the new appearance name for the `rootentity.ent`\
+3. Set the new appearance name for the `root_entity.ent`\
    `appearanceName: appearance_root_entity_black_blue`
 4.  For lookups in your translation file (`translation_strings.json`): Change the values of `displayName` and `localizedDescription` to the corresponding **secondary keys** in the json file.\
     This is optional.
@@ -195,7 +195,7 @@ Items.my_custom_shirt_blueblack:
   appearanceSuffixes: []
 ```
 
-### Step 2: Add it to the rootentity.ent
+### Step 2: Add it to the root_entity.ent
 
 Find the step-by-step guide in the [root entity section](archive-xl-item-structure-explained.md#root-entity-making-changes) on the "[Item structure explained](archive-xl-item-structure-explained.md)" page.
 
@@ -307,7 +307,7 @@ Items.my_custom_shirt_redwhite:
 If you are unclear about why this step was taken, we recommend [reading up on suffixes](../../../files-and-what-they-do/entity-.ent-files/#what-are-suffixes)!
 {% endhint %}
 
-### Edit the rootentity.ent
+### Edit the root_entity.ent
 
 1. Find the array `appearances`.
 2. Expand the first entry.
@@ -317,7 +317,7 @@ If you are unclear about why this step was taken, we recommend [reading up on su
    1. Set `name : appearance_root_entity_white_red&Male`.
    2. Set `appearanceName : my_shirt_m`.
 
-<figure><img src="../../../../.gitbook/assets/rootentity.png" alt=""><figcaption><p><em>All of the changes made to <strong>rootentity.ent</strong> file</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p><em>All of the changes made to <strong>root_entity.ent</strong> file</em></p></figcaption></figure>
 
 ### Edit the appearance.app
 
@@ -410,9 +410,9 @@ Check the following places:
   * Is there an entry where the first value matches the `entityName` from the yaml (`my_tshirt` in the picture above)?
     * Without leading or trailing spaces?
   * Does the second value of that entry have the correct root entity path? \
-    (`tutorial\myshirt\rootentity.ent` in the picture above)\
+    (`tutorial\myshirt\root_entity.ent` in the picture above)\
     _If you moved the `root_entity.ent`, you have to adjust this entry._
-* `rootentity.ent:`
+* `root_entity.ent:`
   * Do you have an appearance with the `name` matching your item's `appearanceName` in the yaml?&#x20;
     * Without leading or trailing spaces?
   * Are you using any [**suffixes**](../../../files-and-what-they-do/entity-.ent-files/#what-are-suffixes)? Are you using the correct ones?&#x20;
@@ -569,7 +569,7 @@ Either an appearance is incorrectly **selected** (app file), or it is incorrectl
 **yourModName.yaml** - is the `appearanceName` correct, or did you forget to change it?
 
 If you are not using [dynamic variants](archivexl-dynamic-variants.md), also check the following two files:\
-**rootentity.ent** - does the `name` corresponding to the field above point to the right `appearanceName` in the right .app file?\
+**root_entity.ent** - does the `name` corresponding to the field above point to the right `appearanceName` in the right .app file?\
 **appearance.app** - does the appearance's `partOverride` set the correct appearance in the `componentsOverride`?
 
 Now, check the **mesh file** (close and re-open it to make everything refresh):
