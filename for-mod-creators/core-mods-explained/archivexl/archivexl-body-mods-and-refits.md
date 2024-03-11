@@ -108,7 +108,8 @@ If you know something that should be on the list, please edit [the-wiki.md](../.
 
 | Mod                                                                                  | Tag name | substitution value |
 | ------------------------------------------------------------------------------------ | -------- | ------------------ |
-| [KS Lion's  Body](https://www.nexusmods.com/cyberpunk2077/mods/4901)                 | Lush     | `&body=lush`       |
+| [KS Lion's Lush Body](https://www.nexusmods.com/cyberpunk2077/mods/4901)             | Lush     | `&body=lush`       |
+| [KS Lion's SoLush Body](https://www.nexusmods.com/cyberpunk2077/mods/8392)           | Lush     | `&body=lush`       |
 | [KS Solo Ultimate](https://www.nexusmods.com/cyberpunk2077/mods/6944)                | Ult      | `&body=ult`        |
 | [Hyst's Big Butt](https://www.nexusmods.com/cyberpunk2077/mods/4420)                 | RB       | `&body=ebb`        |
 | [Hyst's Big Boobs](https://www.nexusmods.com/cyberpunk2077/mods/4654)                | EBB      | `&body=rb`         |
