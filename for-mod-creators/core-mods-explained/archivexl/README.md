@@ -59,4 +59,4 @@ You can find more detail about this on the sub-page [archivexl-suffixes-and-subs
 Here's an overview of how the dynamic variants work. By comparison, [this](../../modding-guides/items-equipment/adding-new-items/#diagram) is the old diagram. \
 Especially for items with many appearances, the new way is **much** faster.
 
-<figure><img src="https://i.imgur.com/k1CWIMk.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/axl_dynamic_overview.jpg" alt=""><figcaption></figcaption></figure>
