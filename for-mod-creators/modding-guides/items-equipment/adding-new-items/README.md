@@ -124,7 +124,7 @@ With ArchiveXL >= 1.5, there is a **new way** of making these connections, savin
 If you want to do more than 5 variants (for both body genders and camera modes), that approach is strongly recommended. Since there isn't a detailed guide yet, you can find us on [Discord](https://discord.com/invite/redmodding) in the #archive-xl channel.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/axl_loading_paths.jpg" alt=""><figcaption><p>Don't panic, we've got this.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_full_overview.jpg" alt=""><figcaption><p>Don't panic, we've got this.</p></figcaption></figure>
 
 
 
