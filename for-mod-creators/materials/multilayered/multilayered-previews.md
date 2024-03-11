@@ -4,8 +4,11 @@ description: Collect preview pictures for multilayered materials here
 
 # Multilayered: Previews
 
+## 3D Rendered Previews
+@jato on the [Cyberpunk 2077 Modding Community Discord server](https://discord.gg/Epkq79kd96) has created 3D rendered previews as `.jpeg` files of all the `.mlsetups` in the game. Original post can be found [here](https://discord.com/channels/717692382849663036/1021790625265369218). A `.zip` is also [hosted](../../../.gitbook/assets/MLTEMPLATE_previews.zip) on this Wiki.
+
 {% hint style="info" %}
-You can use the [Material Preview AMM Prop](https://www.nexusmods.com/cyberpunk2077/mods/10515) to quickly compare multilayered materials.&#x20;
+More accurate previews rendered in-game (as seen below) can be created with the [Material Preview AMM Prop](https://www.nexusmods.com/cyberpunk2077/mods/10515).&#x20;
 {% endhint %}
 
 ## Assorted Misc
