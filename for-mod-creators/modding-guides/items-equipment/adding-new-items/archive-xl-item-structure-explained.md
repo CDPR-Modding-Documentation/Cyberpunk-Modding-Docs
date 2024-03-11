@@ -31,12 +31,12 @@ Unless stated otherwise, any linked resources are optional and might not even be
 
 We need **four** files to tell the game about our new items:&#x20;
 
-1. the .xl file, which tells ArchiveXL which files to register
-2. the .json file with the translations
-3. the factory.csv, telling the game about your custom files
-4. the yaml, which tells TweakXL about your item's properties
+1. the .yaml, which tells TweakXL about your item's properties
+2. the .xl file, which tells ArchiveXL which files to register
+3. the .csv, telling the game about your custom files
+4. the .json file with the translations
 
-<figure><img src="../../../../.gitbook/assets/archivexl_files_01.png" alt=""><figcaption><p>The file structure as used in the <a href="./">Adding New Items</a> guide. Some information has been omitted for brevity.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_troubleshooting_01_loading_files.jpg" alt=""><figcaption><p>The file structure as used in the <a href="./">Adding New Items</a> guide. Some information has been omitted for brevity.</p></figcaption></figure>
 
 ### The .xl file
 
@@ -157,7 +157,7 @@ If you want to do more than 5 variants (for both body genders and camera modes),
 
 This is how the files connect to each other. If your head explodes now, don't worry: it's not as complicated as it looks, and the item addition guide will walk you through step by step.
 
-<figure><img src="https://i.imgur.com/MD3nbAc.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_game_files.jpg" alt=""><figcaption></figcaption></figure>
 
 ### root\_entity.ent
 
@@ -377,5 +377,5 @@ For our purposes it's enough to say that you can **define** your individual appe
 
 This is how everything plays together:
 
-<figure><img src="https://i.imgur.com/B08QMxc.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_full_overview.jpg" alt=""><figcaption></figcaption></figure>
 

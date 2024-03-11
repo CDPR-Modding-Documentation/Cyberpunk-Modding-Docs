@@ -225,7 +225,7 @@ Check [#the-diagram](archivexl-dynamic-variants.md#the-diagram "mention")'s bott
 
 Now let's look at what we just did and check the diagram. You'll see that the control files are almost identical to the[ vanilla variants](archive-xl-item-structure-explained.md#the-final-result), but that the rest of the files has gotten a lot more manageable:
 
-<figure><img src="https://i.imgur.com/k1CWIMk.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_dynamic_overview.jpg" alt=""><figcaption></figcaption></figure>
 
 And that's it! With this and the [original guide](../../../core-mods-explained/archivexl/), you should hopefully be able to add items to your heart's content!
 

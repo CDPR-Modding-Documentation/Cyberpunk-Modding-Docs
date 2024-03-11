@@ -114,7 +114,7 @@ There is no exact migration guide yet. Maybe you'd like to write one?
 
 ## Diagram
 
-This is how everything connects. Looks pretty scary, but is actually simple: whenever you want to rename or repath[^1] something, make sure that you catch **both ends of the arrow**.
+This is how everything connects. Looks pretty scary, but is actually simple: whenever you want to rename or repath[^1] something, make sure that you catch **both ends of the connecting lines**.
 
 You can find a breakdown-by-entry on the [corresponding wiki page](archive-xl-item-structure-explained.md).
 
@@ -124,7 +124,7 @@ With ArchiveXL >= 1.5, there is a **new way** of making these connections, savin
 If you want to do more than 5 variants (for both body genders and camera modes), that approach is strongly recommended. Since there isn't a detailed guide yet, you can find us on [Discord](https://discord.com/invite/redmodding) in the #archive-xl channel.
 {% endhint %}
 
-<figure><img src="https://i.imgur.com/i1QzZMP.png" alt=""><figcaption><p>Don't panic, we've got this.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_full_overview.jpg" alt=""><figcaption><p>Don't panic, we've got this.</p></figcaption></figure>
 
 
 
@@ -143,8 +143,8 @@ If you would rather have a step-by-step guide for a gendered variant, see [the n
 To add an appearance, you will have to touch the following files:
 
 1. \***.yaml**: Adding an entry
-2. **appearance.app**: Adding a mapping between rootentity and mesh's appearance
-3. **rootentity.ent**: Adding a mapping between yaml's appearance and app's appearance
+2. **appearance.app**: Adding a mapping between root_entity and mesh's appearance
+3. **root_entity.ent**: Adding a mapping between yaml's appearance and app's appearance
 4. \*_.mesh_:
    1. Adding a MeshMaterialEntry
    2. Adding a MaterialInstance
@@ -160,7 +160,7 @@ For a diagram of how everything connects, go [here](archive-xl-item-structure-ex
 1. Duplicate the entire appearance block for an already working item.\
    ⚠Mind the indent!
 2. Change the first line to a unique name like `Items.my_custom_shirt_blueblack`
-3. Set the new appearance name for the `rootentity.ent`\
+3. Set the new appearance name for the `root_entity.ent`\
    `appearanceName: appearance_root_entity_black_blue`
 4.  For lookups in your translation file (`translation_strings.json`): Change the values of `displayName` and `localizedDescription` to the corresponding **secondary keys** in the json file.\
     This is optional.
@@ -195,7 +195,7 @@ Items.my_custom_shirt_blueblack:
   appearanceSuffixes: []
 ```
 
-### Step 2: Add it to the rootentity.ent
+### Step 2: Add it to the root_entity.ent
 
 Find the step-by-step guide in the [root entity section](archive-xl-item-structure-explained.md#root-entity-making-changes) on the "[Item structure explained](archive-xl-item-structure-explained.md)" page.
 
@@ -307,7 +307,7 @@ Items.my_custom_shirt_redwhite:
 If you are unclear about why this step was taken, we recommend [reading up on suffixes](../../../files-and-what-they-do/entity-.ent-files/#what-are-suffixes)!
 {% endhint %}
 
-### Edit the rootentity.ent
+### Edit the root_entity.ent
 
 1. Find the array `appearances`.
 2. Expand the first entry.
@@ -317,7 +317,7 @@ If you are unclear about why this step was taken, we recommend [reading up on su
    1. Set `name : appearance_root_entity_white_red&Male`.
    2. Set `appearanceName : my_shirt_m`.
 
-<figure><img src="../../../../.gitbook/assets/rootentity.png" alt=""><figcaption><p><em>All of the changes made to <strong>rootentity.ent</strong> file</em></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p><em>All of the changes made to <strong>root_entity.ent</strong> file</em></p></figcaption></figure>
 
 ### Edit the appearance.app
 
@@ -399,7 +399,7 @@ Before you start digging into your file structure, check if there are any leftov
 
 If no additional yaml files are messing things up, then the error is somewhere in the first part of the chain and relatively easy to fix:
 
-<figure><img src="../../../../.gitbook/assets/archivexl_files_01.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_troubleshooting_01_loading_files.jpg" alt=""><figcaption></figcaption></figure>
 
 Check the following places:
 
@@ -410,9 +410,9 @@ Check the following places:
   * Is there an entry where the first value matches the `entityName` from the yaml (`my_tshirt` in the picture above)?
     * Without leading or trailing spaces?
   * Does the second value of that entry have the correct root entity path? \
-    (`tutorial\myshirt\rootentity.ent` in the picture above)\
+    (`tutorial\myshirt\root_entity.ent` in the picture above)\
     _If you moved the `root_entity.ent`, you have to adjust this entry._
-* `rootentity.ent:`
+* `root_entity.ent:`
   * Do you have an appearance with the `name` matching your item's `appearanceName` in the yaml?&#x20;
     * Without leading or trailing spaces?
   * Are you using any [**suffixes**](../../../files-and-what-they-do/entity-.ent-files/#what-are-suffixes)? Are you using the correct ones?&#x20;
@@ -424,7 +424,7 @@ Check the following places:
 
 Something went wrong with your json file:
 
-<figure><img src="../../../../.gitbook/assets/archiveXL_json_file.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_troubleshooting_02_json.jpg" alt=""><figcaption></figcaption></figure>
 
 If there are no errors in any of the log files, check the following places:
 
@@ -443,9 +443,9 @@ If there are no errors in any of the log files, check the following places:
 
 ### The item spawns, but…
 
-Congratulations, you've made it into the right half of the diagram, and can also make use of Wolvenkit's [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) now! The error will be somewhere here:
+Congratulations, you've made it into the lower left part of the diagram, and can also make use of Wolvenkit's [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) now! The error will be somewhere here:
 
-<figure><img src="../../../../.gitbook/assets/archivexl_files_gamefiles_full.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_troubleshooting_03_spawned_item_05_v_is_bald.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 [File validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) can help you catch the error.
@@ -484,13 +484,13 @@ You can now start the game and equip your item again.
 
 Your root entity is working, and the error is somewhere here:
 
-<figure><img src="../../../../.gitbook/assets/archivexl_files_controlfiles_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_troubleshooting_04_v_has_hair.jpg" alt=""><figcaption></figcaption></figure>
 
 #### V is bald
 
 Your root entity is not recognized and the error is somewhere here:
 
-<figure><img src="../../../../.gitbook/assets/archivexl_files_gamefiles_full.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_troubleshooting_03_spawned_item_05_v_is_bald.jpg" alt=""><figcaption></figcaption></figure>
 
 ### It's invisible in photo mode!
 
@@ -569,7 +569,7 @@ Either an appearance is incorrectly **selected** (app file), or it is incorrectl
 **yourModName.yaml** - is the `appearanceName` correct, or did you forget to change it?
 
 If you are not using [dynamic variants](archivexl-dynamic-variants.md), also check the following two files:\
-**rootentity.ent** - does the `name` corresponding to the field above point to the right `appearanceName` in the right .app file?\
+**root_entity.ent** - does the `name` corresponding to the field above point to the right `appearanceName` in the right .app file?\
 **appearance.app** - does the appearance's `partOverride` set the correct appearance in the `componentsOverride`?
 
 Now, check the **mesh file** (close and re-open it to make everything refresh):
