@@ -202,11 +202,11 @@ Okay, now that we've gone through the theory, let's have a quick overview how ev
 
 #### Without variants
 
-<figure><img src="../../../../.gitbook/assets/amm_custom_props__mesh_entity diagram.png" alt=""><figcaption><p>No app file, directly pulling in a mesh with defined appearance</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/amm_prop_no_variants.jpg" alt=""><figcaption><p>No app file, directly pulling in a mesh with defined appearance</p></figcaption></figure>
 
 #### With variants
 
-<figure><img src="../../../../.gitbook/assets/ent_app_mesh_relationship.png" alt=""><figcaption><p>The better option — not actually that much more complex, is it? :)</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/amm_props_with_variants.jpg" alt=""><figcaption><p>The better option — not actually that much more complex, is it? :)</p></figcaption></figure>
 
 ## Using other meshes
 

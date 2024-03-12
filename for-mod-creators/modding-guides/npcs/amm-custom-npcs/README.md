@@ -67,7 +67,7 @@ Read this section if you want to take the example project and mod a different NP
    1. `entity_info` => `path` **must** point at your `.ent` file
    2. The list `appearances` I won't repeat it here — this section will only tell you how to change things.  hold entries corresponding to the `name` field in your .ent. This is how AMM populates the dropdown and activates the right appearance:
 
-<figure><img src="../../../../.gitbook/assets/amm_custom_npc_lua_to_ent.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/amm_custom_npc_appearance.jpg" alt=""><figcaption></figcaption></figure>
 
 6. Optional, but recommended: before you start custompathing, change your folder structure. Since this will **break your mod**, can check [#finishing-and-cleaning-up](./#finishing-and-cleaning-up "mention") for how to go about that.
 
