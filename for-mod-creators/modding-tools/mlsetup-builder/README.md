@@ -115,6 +115,12 @@ There are 3 important functions to note:
 
 <figure><img src="../../../.gitbook/assets/image_2024-03-12_182402209.png" alt=""><figcaption><p>WARNING symbol tells you that any have not been applied</p></figcaption></figure>
 
+### Layers
+
+Each and every layer is attached to its own Multilayer layer when converted from .json to .mlsetup. When adding new layers, ensure designating intended functions for each layer as part of the larger Multilayer inside WolvenKit.
+
+<figure><img src="../../../.gitbook/assets/image_2024-03-12_183823291.png" alt=""><figcaption><p>Viewing example of the .mlsetup inside of WKit</p></figcaption></figure>
+
 ### About That 3d Viewport
 
 This is where you can load models from the game for a direct preview which layer will affect which parts: simply click on the "Library" button.
