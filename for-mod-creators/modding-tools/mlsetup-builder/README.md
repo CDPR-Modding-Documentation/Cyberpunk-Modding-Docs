@@ -93,6 +93,28 @@ Once you're done:
 
 Congratulations — you now have an `.mlsetup`! If you pack your mod and launch the game, you should now see your changes.
 
+### Functions
+
+There are 3 important functions to note:
+
+1. Materials: this manages the tiles, opacity, offset, and roughness of the texture.&#x20;
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-03-12 180851.png" alt=""><figcaption></figcaption></figure>
+
+2. Color: this manages color and luminosity of the texture.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-03-12 180915.png" alt=""><figcaption></figcaption></figure>
+
+2. µblend: this manages the pattern and acts as a secondary, tiled normal map. Additionally, the `contrast` value can be used to block out parts of the layer to create patterns.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-03-12 180957.png" alt=""><figcaption></figcaption></figure>
+
+**Note**
+
+&#x20;  After any/all edits, ensure to Apply edits to save progress and complete changes to any/all functions (Hotkey: `Ctrl+Shift+A`)
+
+<figure><img src="../../../.gitbook/assets/image_2024-03-12_182402209.png" alt=""><figcaption><p>WARNING symbol tells you that any have not been applied</p></figcaption></figure>
+
 ### About That 3d Viewport
 
 This is where you can load models from the game for a direct preview which layer will affect which parts: simply click on the "Library" button.
