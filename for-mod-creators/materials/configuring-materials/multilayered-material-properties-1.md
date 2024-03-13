@@ -58,6 +58,10 @@ Determines the roughness of a material
 
 ## Microblend properties
 
+{% hint style="danger" %}
+You can only use microblends if this layer's mask is not fully white.
+{% endhint %}
+
 ### mbTile
 
 Like [#mattile](multilayered-material-properties-1.md#mattile "mention"), this determines the scaling of the microblend. The higher the value, the smaller it is.

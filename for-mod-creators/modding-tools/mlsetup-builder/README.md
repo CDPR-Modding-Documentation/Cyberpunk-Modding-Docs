@@ -107,11 +107,17 @@ There are 3 important functions to note:
 
 2. µblend: this manages the pattern and acts as a secondary, tiled normal map. Additionally, the `contrast` value can be used to block out parts of the layer to create patterns.
 
+{% hint style="danger" %}
+You can only use microblends if this layer's mask is not fully white.
+{% endhint %}
+
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-03-12 180957.png" alt=""><figcaption></figcaption></figure>
 
 **Note**
 
-&#x20;  After any/all edits, ensure to Apply edits to save progress and complete changes to any/all functions (Hotkey: `Ctrl+Shift+A`)
+{% hint style="info" %}
+After any edits, make sure to **Apply** edits to save progress and complete changes to any/all functions (Hotkey: `Ctrl+Shift+A`)
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image_2024-03-12_182402209.png" alt=""><figcaption><p>WARNING symbol tells you that any have not been applied</p></figcaption></figure>
 
