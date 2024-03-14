@@ -9,12 +9,12 @@ description: How to create custom props to use with AMM or sector editing
 **Created by @manavortex**\
 **Published April 2023, updated July 2023**
 
-This guide will teach you how to create AMM props in two variants:&#x20;
+This guide will teach you how to create AMM props in two variants:
 
-* the "vanilla" way by using a [mesh entity](../../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) with a [.mesh](../../../files-and-what-they-do/3d-objects-.mesh-files/) file with only one appearance
-* customizable by chaining a [`root entity`](../../../files-and-what-they-do/entity-.ent-files/#root-entity), an [`.app`](../../../files-and-what-they-do/appearance-.app-files/), and a [`.mesh`](../../../files-and-what-they-do/3d-objects-.mesh-files/) file with multiple appearances.&#x20;
+* the "vanilla" way by using a [mesh entity](../../../files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) with a [.mesh](../../../files-and-what-they-do/3d-objects-.mesh-files) file with only one appearance
+* customizable by chaining a [`root entity`](../../../files-and-what-they-do/entity-.ent-files#root-entity), an [`.app`](../../../files-and-what-they-do/appearance-.app-files), and a [`.mesh`](../../../files-and-what-they-do/3d-objects-.mesh-files) file with multiple appearances.
 
-Its focus is on the **file structure** and the **relations between the files**.&#x20;
+Its focus is on the **file structure** and the **relations between the files**.
 
 ### Wait, this isn't what I want!
 
@@ -23,10 +23,28 @@ Its focus is on the **file structure** and the **relations between the files**.&
 * If you want to make meshes out of 2d textures, see [your-image-as-custom-mesh.md](../your-image-as-custom-mesh.md "mention")
 * … or use the wiki's AI-assisted search function, or simply poke around
 
+## Where to find models
+
+You can find many free 3d models across the web.&#x20;
+
+For game design or rendering, usually textured:
+
+* &#x20;[sketchfab](https://sketchfab.com)
+* [Turbosquid](https://turbosquid.com)
+* [CGTrader](https://cgtrader.com)
+
+For 3d printing, usually not textured:
+
+* [thingyverse](https://www.thingiverse.com/)
+* [MyMiniFactory](https://www.myminifactory.com/)
+* [Pinshape](https://pinshape.com/)
+
+You can also search Google for "`thing_I_want` free 3d model" or "`thing_I_want` free `<format>` file" (\<format> = STL, OBJ, FBX), or check [STLFinder](https://www.stlfinder.com/) or the pages on [this list](https://www.3printr.com/3dmodels/categories/free-models).
+
 ## **Requirements:**
 
-* Cyberpunk 2077 game version&#x20;
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.12 for 2.1,  8.8.1 for 1.6.1 (DLSS)&#x20;
+* Cyberpunk 2077 game version
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.12 for 2.1, 8.8.1 for 1.6.1 (DLSS)
 * [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) (>= version 2.1, anything earlier won't have customizable appearances)
 * Optional, but recommended if you want to create multiple props: [Notepad++](https://notepad-plus-plus.org/downloads/)
 
@@ -53,8 +71,6 @@ If you want to move or rename anything, please do it as specified in [moving-and
 
 <figure><img src="../../../../.gitbook/assets/amm_props_structure.png" alt=""><figcaption><p>For an overview of how these files hang together, theck the <a data-mention href="./#diagram">#diagram</a> section of this guide.</p></figcaption></figure>
 
-
-
 4. Optional, but recommended: Start the game and spawn the props, as in the green hint box at [the beginning of this section](./#setting-up-the-project).
 5. Optional, but very recommended: Read through the next section to understand what's going on here.
 6. If you're the more hands-on kind of learner, skip to [#using-other-meshes](./#using-other-meshes "mention") or [#creating-another-prop](./#creating-another-prop "mention") to fuck around and find out.
@@ -68,7 +84,7 @@ The second part (under "resources") is where AMM will look for custom props. You
 ### Explanation: what did you just download?
 
 {% hint style="success" %}
-This section gives an explanation of the included files, explaining the difference in file structure between props with vs without variants.&#x20;
+This section gives an explanation of the included files, explaining the difference in file structure between props with vs without variants.
 
 If you don't want to know this, you can skip ahead to [#using-other-meshes](./#using-other-meshes "mention") or [#creating-another-prop](./#creating-another-prop "mention") to get crackin', or check the [diagram](./#diagram) to see how the files connect.
 {% endhint %}
@@ -106,23 +122,23 @@ return {
 }
 ```
 
-Without a `lua` file, AMM (as of version 2.1) won't be able to spawn your props.&#x20;
+Without a `lua` file, AMM (as of version 2.1) won't be able to spawn your props.
 
 Here's what the lines do:
 
 <table data-header-hidden><thead><tr><th width="237"></th><th></th></tr></thead><tbody><tr><td><code>name</code></td><td>what you search for in AMM</td></tr><tr><td><code>category</code></td><td>what AMM sorty by (you can only reuse exisitng categories)</td></tr><tr><td><code>distanceFromGround</code></td><td>how far away from the ground should your prop be? (This moves the origin in Blender's 3d viewport)</td></tr><tr><td><code>appearances</code></td><td>If you're using a root entity, these are the appearance names to switch through and the entries in AMM's "appearance" dropdown / spawn tab</td></tr></tbody></table>
 
 {% hint style="success" %}
-When you edit the .lua, it's usually enough to `reload all mods` in CET.&#x20;
+When you edit the .lua, it's usually enough to `reload all mods` in CET.
 {% endhint %}
 
 #### Entity file
 
-Defined in your `LUA` file, this file holds the game entity that AMM spawns when you click the button. There are two ways of using entity files:&#x20;
+Defined in your `LUA` file, this file holds the game entity that AMM spawns when you click the button. There are two ways of using entity files:
 
-[**Mesh entity**](../../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) **(the legacy version)**
+[**Mesh entity**](../../../files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) **(the legacy version)**
 
-One entity file per variant. The props will not have appearances — AMM's prop browser has one entry per entity file (e.g. `cube_black`, `cube_white`, `cube_glowing`).&#x20;
+One entity file per variant. The props will not have appearances — AMM's prop browser has one entry per entity file (e.g. `cube_black`, `cube_white`, `cube_glowing`).
 
 Edit this kind of prop by opening the following file in Wolvenkit:
 
@@ -130,16 +146,16 @@ Edit this kind of prop by opening the following file in Wolvenkit:
 </strong></code></pre>
 
 {% hint style="info" %}
-**Fun fact:** The cluttered prop browser annoyed manavortex so much that she joined the AMM developer team, helped Max implement the alternative workflow described below the picture, and wrote this guide!&#x20;
+**Fun fact:** The cluttered prop browser annoyed manavortex so much that she joined the AMM developer team, helped Max implement the alternative workflow described below the picture, and wrote this guide!
 
 It was bad!
 {% endhint %}
 
-You add props by putting meshes directly into the components array:&#x20;
+You add props by putting meshes directly into the components array:
 
-<figure><img src="../../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>tutorial\amm_props\template_no_variants\template_no_variants.ent<br>Mesh/Component entity, loading something directly. You can read more about the theory <a href="../../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>tutorial\amm_props\template_no_variants\template_no_variants.ent<br>Mesh/Component entity, loading something directly. You can read more about the theory <a href="../../../files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
-[**Root entity**](../../../files-and-what-they-do/entity-.ent-files/#root-entity)
+[**Root entity**](../../../files-and-what-they-do/entity-.ent-files#root-entity)
 
 One entity file per prop, one entry in AMM's prop browser (e.g. `cube`). After spawning it, you can toggle its appearances (`white`, `black`, `glowing`) the same way you do it with NPCs.
 
@@ -153,16 +169,16 @@ Edit this kind of prop by opening the following file in Wolvenkit:
 tutorial\amm_props\template\template.ent
 ```
 
-Instead of adding items directly via the components array, we link **appearances** to an [.app file](../../../files-and-what-they-do/appearance-.app-files/). The only component we keep in the [root entity](../../../files-and-what-they-do/entity-.ent-files/#root-entity) is the **targeting component** for the CET cursor: this way, it will be added to each appearance in the .app file.
+Instead of adding items directly via the components array, we link **appearances** to an [.app file](../../../files-and-what-they-do/appearance-.app-files). The only component we keep in the [root entity](../../../files-and-what-they-do/entity-.ent-files#root-entity) is the **targeting component** for the CET cursor: this way, it will be added to each appearance in the .app file.
 
-<figure><img src="../../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>tutorial\amm_props\template\template.ent<br>Root entity, pointing towards an .app file. You can read more about the theory <a href="../../../files-and-what-they-do/entity-.ent-files/#root-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>tutorial\amm_props\template\template.ent<br>Root entity, pointing towards an .app file. You can read more about the theory <a href="../../../files-and-what-they-do/entity-.ent-files#root-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
 #### Appearance file
 
-[This file](../../../files-and-what-they-do/appearance-.app-files/) holds a list of `appearances`. Inside each `appearance`, you can define any number of things to be loaded (components) and specify or override their behaviour.
+[This file](../../../files-and-what-they-do/appearance-.app-files) holds a list of `appearances`. Inside each `appearance`, you can define any number of things to be loaded (components) and specify or override their behaviour.
 
 {% hint style="info" %}
-We will only use `entPhysicalMeshComponent`s, and they must be named  `amm_prop_slot1` .. `amm_prop_slot4` if you want to enable scaling.
+We will only use `entPhysicalMeshComponent`s, and they must be named `amm_prop_slot1` .. `amm_prop_slot4` if you want to enable scaling.
 {% endhint %}
 
 {% hint style="warning" %}
@@ -171,7 +187,7 @@ If you have more than four mesh files assigned to your app's components, the pro
 
 #### template\_textured.mesh
 
-A pre-configured [mesh](../../../files-and-what-they-do/3d-objects-.mesh-files/) for a textured material. Uses the following files in the subfolder `textures`:
+A pre-configured [mesh](../../../files-and-what-they-do/3d-objects-.mesh-files) for a textured material. Uses the following files in the subfolder `textures`:
 
 * `template_01_d.xbm`: A diffuse (albedo) map, colouring the mesh
 * `template_01_n.xbm`: A normal (bump) map, adding depth to the object.
@@ -184,7 +200,7 @@ You can learn more about textured materials [here](../../../materials/#textured)
 
 #### template\_multilayered.mesh
 
-A pre-configured [mesh](../../../files-and-what-they-do/3d-objects-.mesh-files/) for a multilayered material. Uses the following files in the subfolder `textures`:
+A pre-configured [mesh](../../../files-and-what-they-do/3d-objects-.mesh-files) for a multilayered material. Uses the following files in the subfolder `textures`:
 
 * `6_layers.mlsetup`: A [multilayer setup](../../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material) with colour properties
 * `6_layers.mlmask`: A [multilayer mask](../../../materials/multilayered/), determining which parts of the mesh are affected by which layer of the mlsetup. In this case, it just contains six blank layers.
@@ -210,16 +226,16 @@ Okay, now that we've gone through the theory, let's have a quick overview how ev
 
 ## Using other meshes
 
-You can point the prop at a different mesh by changing the depot path of the **component**. If you have no idea how to do that, read on!&#x20;
+You can point the prop at a different mesh by changing the depot path of the **component**. If you have no idea how to do that, read on!
 
 ### With variants
 
 1. Open the `appearance` file `tutorial\amm_props\template\template.app`
 2. Find the array `appearances` at the top of the file
 3. For each appearance, open the `components` array
-4. Click on the first component `amm_prop_slot1`.  In the panel to the right of the tree, change the following properties:
+4. Click on the first component `amm_prop_slot1`. In the panel to the right of the tree, change the following properties:
    * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
-   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../../files-and-what-they-do/3d-objects-.mesh-files/#step-1-appearances), otherwise the first appearance from the list will be used as default.
+   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../../files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances), otherwise the first appearance from the list will be used as default.
 
 <figure><img src="../../../../.gitbook/assets/cuzstom_props_change_mesh_2.png" alt=""><figcaption><p>For props with variants: <code>template.app</code></p></figcaption></figure>
 
@@ -229,19 +245,17 @@ You can point the prop at a different mesh by changing the depot path of the **c
 
 ### Without variants
 
-1. Open the  [`mesh entity`](../../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) `tutorial\amm_props\template_no_variants\template_no_variants.ent`
+1. Open the [`mesh entity`](../../../files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) `tutorial\amm_props\template_no_variants\template_no_variants.ent`
 2. Find the `components` array and open it
-3. Click on the first component `amm_prop_slot1`.  In the panel to the right of the tree, change the following properties:
+3. Click on the first component `amm_prop_slot1`. In the panel to the right of the tree, change the following properties:
    * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
-   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../../files-and-what-they-do/3d-objects-.mesh-files/#step-1-appearances), otherwise the first appearance from the list will be used as default.
+   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../../files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances), otherwise the first appearance from the list will be used as default.
 
 <figure><img src="../../../../.gitbook/assets/custom_props_change_mesh.png" alt=""><figcaption><p>For props without appearances: <code>template_no_variants.ent</code></p></figcaption></figure>
 
-
-
 4. If you want to load more than one mesh, repeat the process for the other components. If you want to use more than four, read [#why-only-4-components](./#why-only-4-components "mention")
 5. If you don't want to load more than one mesh, select `amm_prop_slot2` and delete the `depotPath`. Otherwise, you'll see your prop and a floating cube.
-6. Finally, change the `defaultAppearance` to [a valid appearance in your .mesh file](../../../files-and-what-they-do/3d-objects-.mesh-files/#step-1-appearances). If no appearance with this name can be found, the prop will be invisible when it spawns.
+6. Finally, change the `defaultAppearance` to [a valid appearance in your .mesh file](../../../files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances). If no appearance with this name can be found, the prop will be invisible when it spawns.
 
 ### Why only 4 components?
 
@@ -255,13 +269,13 @@ If you use more than 4 components or change their name, then your prop will no l
 This step is **optional**. If you just want to see how this works, you can pack your project with Wolvenkit and search AMM for "tutorial item". However, assuming that you actually want to make cool things, you will be doing this a lot.
 {% endhint %}
 
-If you want to create another prop, here's the fastest non-script way to go about it (tried and tested by manavortex).&#x20;
+If you want to create another prop, here's the fastest non-script way to go about it (tried and tested by manavortex).
 
 1. In Windows Explorer, duplicate the `template` folder
-2. Rename the new folder (`template - Copy`) to the name of your prop (e.g. `baseball`).&#x20;
+2. Rename the new folder (`template - Copy`) to the name of your prop (e.g. `baseball`).
 
 {% hint style="danger" %}
-It's important that you stick to a schema here, because otherwise, the search and replace below will **not work** and you have to change all the paths by hand.&#x20;
+It's important that you stick to a schema here, because otherwise, the search and replace below will **not work** and you have to change all the paths by hand.
 
 Use the **exact same value** to replace `template` in both the folder and the file names!
 
@@ -275,7 +289,7 @@ Bad: folder: baseball, file: my\_baseball.ent
 Capitalization matters. If you use uppercase letters in folder names, the game will get confused, and Wolvenkit will secretly convert them back to lowercase before packing.
 
 Good: `baseball`\
-Bad:  `Baseball`
+Bad: `Baseball`
 {% endhint %}
 
 4. Back in Wolvenkit, right-click on your folder and [export the entire thing to json](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json).
@@ -286,7 +300,7 @@ Bad:  `Baseball`
 7. **Optional**: If you have changed the folder structure (e.g. moved your folder from the subfolder `stuff` to the subfolder `misc`), run another `Search and Replace in Files` (Ctrl+Shift+F) to adjust your file paths.
 8. In the project browser's raw section, right-click on the folder and select `Convert from json`. This will have updated the relationships between the files to your renamed files.
 9. Delete the files / appearances that you don't need. Save and close the mesh file.
-10. Import your meshes and textures over the ones from the template. For a guide on how to do that, check [here](../textured-items-and-cyberpunk-materials.md#importing-a-mesh).&#x20;
+10. Import your meshes and textures over the ones from the template. For a guide on how to do that, check [here](../textured-items-and-cyberpunk-materials.md#importing-a-mesh).
 11. To make sure that everything went okay, open your new root entity (`tutorial\\amm_props\\baseball\\baseball.ent`) in Wolvenkit and save it to trigger [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). Check the Wolvenkit log window for errors. If you made no mistakes in the renaming process, there shouldn't be any.
 12. To register the prop with AMM, add another entry to the props array in your `LUA` file:
 
@@ -303,7 +317,7 @@ Bad:  `Baseball`
     }, 
 ```
 
-13. Save the LUA file.&#x20;
+13. Save the LUA file.
 14. Install and launch the game
 15. Spawn your new prop `Baseball (customizable)` with AMM.
 
@@ -321,13 +335,13 @@ You can find a step-by-step guide on the process [here](../moving-and-renaming-i
 
 ## Troubleshooting
 
-This section will only cover troubleshooting steps for this guide. \
-For anything related to mesh imports, see [here](../textured-items-and-cyberpunk-materials.md#troubleshooting). \
+This section will only cover troubleshooting steps for this guide.\
+For anything related to mesh imports, see [here](../textured-items-and-cyberpunk-materials.md#troubleshooting).\
 For general 3d model troubleshooting (including import errors), see [here](../../../3d-modelling/troubleshooting-your-mesh-edits.md).
 
 ### My prop doesn't even list in AMM!
 
-The problem is in your .lua file. Use [this tool](https://www.tutorialspoint.com/execute\_lua\_online.php) to check the syntax and make sure that there are no errors - usually, it is missing/extra commas and/or missing/extra braces.&#x20;
+The problem is in your .lua file. Use [this tool](https://www.tutorialspoint.com/execute\_lua\_online.php) to check the syntax and make sure that there are no errors - usually, it is missing/extra commas and/or missing/extra braces.
 
 If the syntax is okay and your prop still doesn't show up, double-check your category and make sure that it is one of the existing ones.
 
@@ -335,7 +349,7 @@ If the syntax is okay and your prop still doesn't show up, double-check your cat
 
 #### ... and I can't target it!
 
-AMM can't find your .ent file. Make sure that your .lua points to the correct path in your archive (right-click -> copy relative path and paste it to your lua file.&#x20;
+AMM can't find your .ent file. Make sure that your .lua points to the correct path in your archive (right-click -> copy relative path and paste it to your lua file.
 
 {% hint style="info" %}
 Make sure that you don't delete any quotation marks or commas while you do that. If you're unsure, you can double-check [this step](./#my-prop-doesnt-even-list-in-amm).
@@ -343,11 +357,10 @@ Make sure that you don't delete any quotation marks or commas while you do that.
 
 #### ... it all looks good, but there is no prop!
 
-Toy around with the **scaling**. Sometimes, your prop doesn't show because it's the size of Johnny's ego and hovers somewhere above your city block – or the opposite, it's microscopically tiny.  Don't be afraid to change it by the factor 10 or even 100 and see if that does anything.
+Toy around with the **scaling**. Sometimes, your prop doesn't show because it's the size of Johnny's ego and hovers somewhere above your city block – or the opposite, it's microscopically tiny. Don't be afraid to change it by the factor 10 or even 100 and see if that does anything.
 
 If that's not it and if you have a customizable prop (with a root entity), try adding an appearance `default` to the mesh. The game will fall back to that one if there are issues with your custom appearances.
 
 ### My prop spawns, but something about it is weird!
 
 In general, your answer is probably in the guide on [textured-items-and-cyberpunk-materials.md](../textured-items-and-cyberpunk-materials.md "mention"), section 2 ([processing the mesh](../textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)) – check that guide's [troubleshooting section](../textured-items-and-cyberpunk-materials.md#troubleshooting).
-

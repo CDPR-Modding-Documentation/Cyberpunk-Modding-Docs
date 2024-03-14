@@ -7,7 +7,7 @@ description: Importing textured items (and creating an AMM prop set in the proce
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published: February 11 2023 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: January 21 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update**: Mar 14 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will walk you through **importing 3d objects** into Cyberpunk 2077, which can then be spawned via [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790).&#x20;
 
@@ -20,28 +20,12 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 
 ### Wait, that's not what I want!
 
+* For a more detailed guide about prop creation, check [custom-props](custom-props/ "mention")
+* Or maybe you wonder  [#where-to-find-models](custom-props/#where-to-find-models "mention")
 * If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
 * For a guide about changing materials, check [changing-materials-colors-and-textures.md](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
 * If you want to understand material assignment, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")-> [#material-assignment](../../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment "mention")
 * You can find explanation and documentation about materials [here](../../materials/).&#x20;
-
-## Where to find models
-
-You can find many free 3d models across the web.&#x20;
-
-For game design or rendering, usually textured:
-
-* &#x20;[sketchfab](https://sketchfab.com)
-* [Turbosquid](https://turbosquid.com)
-* [CGTrader](https://cgtrader.com)
-
-For 3d printing, usually not textured:
-
-* [thingyverse](https://www.thingiverse.com/)
-* [MyMiniFactory](https://www.myminifactory.com/)
-* [Pinshape](https://pinshape.com/)
-
-You can also search Google for "`thing_I_want` free 3d model" or "`thing_I_want` free `<format>` file" (\<format> = STL, OBJ, FBX), or check [STLFinder](https://www.stlfinder.com/) or the pages on [this list](https://www.3printr.com/3dmodels/categories/free-models).
 
 ## Setting up the project
 
