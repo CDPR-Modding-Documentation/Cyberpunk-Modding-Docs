@@ -106,6 +106,10 @@ The following body mods support dynamic body switching.
 If you know something that should be on the list, please edit [the-wiki.md](../../modding-tools/the-wiki.md "mention")!
 {% endhint %}
 
+{% hint style="warning" %}
+As of 16-Mar-2024 Gymfiend body does not work and returns `BaseBody` in CET.
+{% endhint %}
+
 | Mod                                                                                  | Tag name | substitution value |
 | ------------------------------------------------------------------------------------ | -------- | ------------------ |
 | [KS Lion's Lush Body](https://www.nexusmods.com/cyberpunk2077/mods/4901)             | Lush     | `&body=lush`       |
@@ -116,4 +120,4 @@ If you know something that should be on the list, please edit [the-wiki.md](../.
 | [Hyst's Big Push Up Boobs](https://www.nexusmods.com/cyberpunk2077/mods/9083)        | EBBP     | `&body=ebbp`       |
 | [Hyst's Big Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/4654)         | EBBRB    | `&body=ebbrb`      |
 | [Hyst's Big Push Up Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/9083) | EBBPRB   | `&body=ebbprb`     |
-| [Gymfiend](https://www.nexusmods.com/cyberpunk2077/mods/6423)                        | Gymfiend | `&body=gymfiend`   |
+| ~~[Gymfiend](https://www.nexusmods.com/cyberpunk2077/mods/6423)~~                    | Gymfiend | `&body=gymfiend`   |
