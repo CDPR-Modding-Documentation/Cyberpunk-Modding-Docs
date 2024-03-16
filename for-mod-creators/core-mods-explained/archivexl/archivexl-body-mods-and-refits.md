@@ -107,7 +107,7 @@ If you know something that should be on the list, please edit [the-wiki.md](../.
 {% endhint %}
 
 {% hint style="warning" %}
-As of 16-Mar-2024 Gymfiend body does not work and returns `BaseBody` in CET.
+Nim's More Body Meshes replaces the same files for Masc V and is incompatible with dynamic body switching. If the Gymfiend body does not switch as expected, check for this conflict!
 {% endhint %}
 
 | Mod                                                                                  | Tag name | substitution value |
@@ -120,4 +120,4 @@ As of 16-Mar-2024 Gymfiend body does not work and returns `BaseBody` in CET.
 | [Hyst's Big Push Up Boobs](https://www.nexusmods.com/cyberpunk2077/mods/9083)        | EBBP     | `&body=ebbp`       |
 | [Hyst's Big Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/4654)         | EBBRB    | `&body=ebbrb`      |
 | [Hyst's Big Push Up Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/9083) | EBBPRB   | `&body=ebbprb`     |
-| ~~[Gymfiend](https://www.nexusmods.com/cyberpunk2077/mods/6423)~~                    | Gymfiend | `&body=gymfiend`   |
+| [Gymfiend](https://www.nexusmods.com/cyberpunk2077/mods/6423)                        | Gymfiend | `&body=gymfiend`   |
