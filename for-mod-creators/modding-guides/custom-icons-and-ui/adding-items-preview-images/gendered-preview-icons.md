@@ -19,6 +19,18 @@ If you want to know more about this, you can read up here: [#what-are-suffixes](
 If you don't have a gendered item yet, see the original ArchiveXL guide, section "[adding a male instance](../../items-equipment/adding-new-items/#adding-a-male-instance)".
 {% endhint %}
 
+## The shortcut
+
+Type the following command into your CET browser:
+
+{% code overflow="wrap" %}
+```
+print(gameuiIconsNameResolver.GetIconsNameResolver():TranslateItemToIconName("Items.your_item_name_with_variant", false).value) 
+```
+{% endcode %}
+
+That won't help you if you want to path items in bulk, but it'll help you to spot mistakes. For the rest, please keep reading.
+
 ## How to do it
 
 By adding an `icon` property to your item's yaml, you're setting the `UIIcon` property of your record. The generated records will be the same for all genders, variants and tags.
