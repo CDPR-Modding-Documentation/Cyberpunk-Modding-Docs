@@ -110,3 +110,68 @@ UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_$(color)_Mal
 </code></pre>
 
 The rest just works (tm)
+
+## More Complex Examples
+
+### Multiple Variants
+
+Given an item with multiple variants:
+
+<pre class="language-yaml"><code class="lang-yaml"><strong>Items.my_custom_shirt_$(color):
+</strong>  $instances: &#x26;my_custom_shirt_instances
+    - { color: white, highlight: red, icon: icon_01 }
+    - { color: black, highlight: red, icon: icon_02 }
+  entityName: my_custom_shirt_factory_name
+  appearanceName: appearance_root_entity_!$(color)+$(highlight)
+  appearanceSuffixes: [ itemsFactoryAppearanceSuffix.Gender ]
+</code></pre>
+
+The icon definition would then look like:
+
+```yaml
+# UIIcon.clothing_      <entityName>        _     <appearanceName>           _<suffix>_
+UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_$(color)$(highlight)_Female_:
+    $type: UIIcon
+    $instances: *my_custom_shirt_instances
+    atlasResourcePath: tutorial\torso\my_custom_shirt\ops\preview_icons_pwa.inkatlas
+    atlasPartName: $(icon)
+    
+UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_$(color)$(highlight)_Male_:
+    $type: UIIcon
+    $instances: *my_custom_shirt_instances
+    atlasResourcePath: tutorial\torso\my_custom_shirt\ops\preview_icons_pma.inkatlas
+    atlasPartName: $(icon)
+```
+
+### Mixing Static and Dynamic Variants
+
+You can also use static variants - the same rules apply, even if the result looks strange.
+
+Given an item with a mixture of static and dynamic variants:
+
+```yaml
+Items.my_custom_shirt_$(color):
+  $instances: &my_custom_shirt_instances
+    - { color: white, icon: icon_01 }
+    - { color: black, icon: icon_02 }
+  entityName: my_custom_shirt_factory_name
+  appearanceName: appearance_root_entity_!$(color)+red
+  appearanceSuffixes: [ itemsFactoryAppearanceSuffix.Gender ]
+```
+
+The icon definition would then look like:
+
+```yaml
+# UIIcon.clothing_      <entityName>        _     <appearanceName>           _<suffix>_
+UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_$(color)red_Female_:
+    $type: UIIcon
+    $instances: *my_custom_shirt_instances
+    atlasResourcePath: tutorial\torso\my_custom_shirt\ops\preview_icons_pwa.inkatlas
+    atlasPartName: $(icon)
+    
+UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_$(color)red_Male_:
+    $type: UIIcon
+    $instances: *my_custom_shirt_instances
+    atlasResourcePath: tutorial\torso\my_custom_shirt\ops\preview_icons_pma.inkatlas
+    atlasPartName: $(icon)
+```
