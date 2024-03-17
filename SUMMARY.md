@@ -273,6 +273,7 @@
     * [How to Change Position and Rotation of an entMeshComponent](for-mod-creators/modding-guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
     * [How to Remove an Animation (and Potentially Replace It)](for-mod-creators/modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
   * [🛍️ Everything else](for-mod-creators/modding-guides/everything-else/README.md)
+    * [Basic Hairstyle Replacement Tutorial](for-mod-creators/modding-guides/everything-else/basic-hairstyle-replacement-tutorial.md)
     * [Your image as custom mesh](for-mod-creators/modding-guides/everything-else/your-image-as-custom-mesh.md)
     * [f!V and her gremlin feet](for-mod-creators/modding-guides/everything-else/f-v-and-her-gremlin-feet.md)
     * [Moving and renaming in existing projects](for-mod-creators/modding-guides/everything-else/moving-and-renaming-in-existing-projects.md)
