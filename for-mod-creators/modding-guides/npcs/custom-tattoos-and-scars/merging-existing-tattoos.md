@@ -26,6 +26,10 @@ This guide will teach you how to merge multiple tattoos into one. It will not co
 * [ ] You have all tattoo mods that you want to merge installed (even though only one of them will be active)
 * [ ] All your tattoo mods are for the same framework (if not, check the guide about [converting-between-tattoo-frameworks.md](converting-between-tattoo-frameworks.md "mention") and do that first)
 
+{% hint style="info" %}
+**To see which files you need to edit, check this** [overlay-list.md](overlay-list.md "mention")
+{% endhint %}
+
 ## Step 0: Create a Wolvenkit Project
 
 Depending on the supported framework, you need to name your project like this:&#x20;
@@ -76,21 +80,5 @@ Now it's time to [install your new mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZ
 After installing your new tattoo mod, remember to delete the original files in your mod folder, otherwise it will cause conflict between the different tattoo mods.
 {% endhint %}
 
-## **List of the differents type of overlays names :**
+##
 
-{% hint style="info" %}
-The body file of KS\_UV contain the Torso, Back, Legs and Arms parts\
-The body file of VTK contain Torso, Back and Legs parts
-{% endhint %}
-
-| Framework | Overlay name                               | gender/body part              |
-| --------- | ------------------------------------------ | ----------------------------- |
-| KS\_UV    | fullbody\_overlay\_d01                     | female  body (see note above) |
-|           | ma\_fullbody\_overlay\_d01                 | male  body                    |
-|           | wa\_head\_overlay\_d01 female head overlay | female head                   |
-|           | ma\_head\_overlay\_d01                     | male head                     |
-|           |                                            |                               |
-| VTK       | v\_overlay                                 | female body (see note above)  |
-|           | 11597681951245522818                       | female head                   |
-|           | femme\_arm\_left\_01\_overlay              | female left arm               |
-|           | femme\_arm\_right\_01\_overlay             | female right arm              |

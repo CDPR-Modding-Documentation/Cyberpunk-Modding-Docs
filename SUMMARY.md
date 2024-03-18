@@ -197,7 +197,7 @@
     * [Custom facial piercings - PRC Framework](for-mod-creators/modding-guides/npcs/custom-facial-piercings-prc-framework.md)
     * [Custom Tattoos & Scars](for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/README.md)
       * [Overlay list](for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/overlay-list.md)
-      * [How to create overlay tattoo](for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/how-to-create-overlay-tattoo.md)
+      * [How to create an overlay tattoo](for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/how-to-create-an-overlay-tattoo.md)
       * [Merging existing tattoos](for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/merging-existing-tattoos.md)
       * [How to create modded body scars](for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/creating-modded-body-scars.md)
       * [How to do replacer vanilla scars](for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/creating-replacer-vanilla-scars.md)
