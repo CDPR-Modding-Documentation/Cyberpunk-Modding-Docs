@@ -29,13 +29,13 @@ player:
 
 In any of the files you modded, check your `components`:
 
-#### Does any of them have a type that's called something with `morphtargetComponent`?&#x20;
+#### Does any of them have a type that's called something with `morphtargetComponent`?
 
-**Yes:** \
+**Yes:**\
 Add a **tag** with the exact name of your body in this component's tag array (for our example, `NewBody`)
 
 **No:**\
-Add a new component (of any type) and give it the following name: \
+Add a new component (of any type) and give it the following name:\
 `Body:NewBody`
 
 {% hint style="warning" %}
@@ -55,9 +55,18 @@ base\characters\common\player_base_bodies\appearances\l0_000_base_fpp__cs_flat.a
 base\characters\common\player_base_bodies\appearances\l0_000_base_fpp__full.app 
 ```
 
-#### Test
+#### The following .app files are used to register Body Tags for Male V:&#x20;
 
-After packing your project, [check if the body tag registers](archivexl-body-mods-and-refits.md#checking-the-current-body-mod) by running the CET command.&#x20;
+```
+base\characters\common\player_base_bodies\appearances\t0_000_base__full.app
+base\characters\common\player_base_bodies\appearances\t0_000_base__full_censored.app
+base\characters\common\player_base_bodies\appearances\t0_000_fpp__full.app
+base\characters\common\player_base_bodies\appearances\t0_000_fpp__full_censored.app
+```
+
+Test
+
+After packing your project, [check if the body tag registers](archivexl-body-mods-and-refits.md#checking-the-current-body-mod) by running the CET command.
 
 If yes, you're good to go!
 
@@ -92,7 +101,7 @@ If you're sticking to the classical approach, you need to add the following line
     - !append itemsFactoryAppearanceSuffix.BodyType
 ```
 
-Now, you can use the suffixes in your [root entity](../../files-and-what-they-do/entity-.ent-files/#root-entity) just like camera states or body genders:
+Now, you can use the suffixes in your [root entity](../../files-and-what-they-do/entity-.ent-files#root-entity) just like camera states or body genders:
 
 ```
 appearanceName: my_custom_shirt&FPP&NewBody
@@ -107,7 +116,9 @@ If you know something that should be on the list, please edit [the-wiki.md](../.
 {% endhint %}
 
 {% hint style="warning" %}
-Nim's More Body Meshes replaces the same files for Masc V and is incompatible with dynamic body switching. If the Gymfiend body does not switch as expected, check for this conflict!
+As of 18th March 2024, [Nim's More Body Meshes](https://www.nexusmods.com/cyberpunk2077/mods/3890?tab=description) is compatible again with Gymfiend Body Mod.            &#x20;
+
+Use only one main archive! \[[#\_nim\_more\_body\_meshes\_Gymfiend\_patch.archive](https://www.nexusmods.com/cyberpunk2077/mods/3890?tab=files\&file\_id=72036)]
 {% endhint %}
 
 | Mod                                                                                  | Tag name | substitution value |
