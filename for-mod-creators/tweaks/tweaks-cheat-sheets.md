@@ -4,6 +4,12 @@ description: 'Some of the documented Tweaks and their explanation:'
 
 # Tweaks "cheat sheets"
 
+**Created:** Mar 18 2024&#x20;
+
+**Last documented update:** Mar 18 2024&#x20;
+
+***
+
 {% hint style="warning" %}
 This page is under construction
 {% endhint %}
@@ -29,6 +35,8 @@ This page is under construction
 #### <mark style="background-color:red;">Vendors ID's</mark>
 
 {% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-vendor-ids" %}
+
+
 
 
 

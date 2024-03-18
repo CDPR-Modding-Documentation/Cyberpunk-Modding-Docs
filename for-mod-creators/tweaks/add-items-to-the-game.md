@@ -4,6 +4,12 @@ description: Start adding your custom items to the game without replacing
 
 # Add Items to the game
 
+**Created:** Mar 18 2024&#x20;
+
+**Last documented update:** Mar 18 2024&#x20;
+
+***
+
 {% hint style="info" %}
 The majority of the guides within this category will provide detailed specifications for the respective topics they cover. Additionally, many guides may include helpful examples and valuable insights related to the broader concept of the Tweak.
 {% endhint %}

@@ -4,6 +4,12 @@ description: Modifying existing items using Tweaks
 
 # Change existing items
 
+**Created:** Mar 18 2024&#x20;
+
+**Last documented update:** Mar 18 2024&#x20;
+
+***
+
 The following guides are designed for modifying existing items using Tweaks, whether it's adding modifiers, behaviors, or other changes. For instructions on creating a new item from scratch using Tweaks, please refer to the specific guide dedicated to that process. ➜ [Add Items to the game](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/tweaks/add-items-to-the-game)
 
 {% hint style="warning" %}
