@@ -201,7 +201,7 @@
       * [Creating replacer vanilla scars](for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/creating-replacer-vanilla-scars.md)
       * [Converting between texture frameworks](for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks.md)
       * [Merging existing tattoos](for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/merging-existing-tattoos.md)
-    * [Basic Hairstyle Replacement Tutorial](for-mod-creators/modding-guides/npcs/basic-hairstyle-replacement-tutorial.md)
+    * [Basic Hairstyle Replacement Tutorial](for-mod-creators/modding-guides/everything-else/basic-hairstyle-replacement-tutorial.md)
   * [👕 Items: Equipment](for-mod-creators/modding-guides/items-equipment/README.md)
     * [Recolours and Refits](for-mod-creators/modding-guides/items-equipment/recolours-and-refits/README.md)
       * [R\&R: Your own Wolvenkit project](for-mod-creators/modding-guides/items-equipment/recolours-and-refits/r-and-r-your-own-wolvenkit-project.md)

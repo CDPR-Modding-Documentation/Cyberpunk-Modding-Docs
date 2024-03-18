@@ -1,5 +1,7 @@
 ---
-description: How to add custom hair for V
+description: >-
+  This is athe guide for you if you would like to add custom hairstyles into the
+  game.
 ---
 
 # Basic Hairstyle Replacement Tutorial
@@ -176,7 +178,7 @@ I want to use `cards`, not `cards_top`. I can manually change every instance of 
 
 Now you can install the mod and see how it looks in the game!
 
-![](broken-reference)
+![](https://lh7-us.googleusercontent.com/CR7uiAZIR9pf-JYAvHp4wUvTp756PfSfZTEQc0Af22Cy3RzyHYgL84SXDeKSwYuPsZA2EnFiQ1MUq0ISJPEfyQwp2\_uUqMtr5fTpDTqJrp4x6yElcP-RJX3Q4\_XOaX6uxjh-6qaboAlWi8OO4FA2Ix0)
 
 _Oof. The color looks about right, but…_
 
