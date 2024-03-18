@@ -1,23 +1,29 @@
 ---
-description: >-
-  This is athe guide for you if you would like to add custom hairstyles into the
-  game.
+description: How to add custom hair for V
 ---
 
 # Basic Hairstyle Replacement Tutorial
 
-By D.I.S.C.O\
+**Published:** 17.03. 2024 by D.I.S.C.O\
+Last documented update: 18. 03. by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
+This guide will teach you how to&#x20;
 
-Requirements:
+* port a hair mesh from a different game to Cyberpunk
+* add physics ("dangle bones") to parts of it&#x20;
+* use the UUH4V framework to avoid conflict with NPCS
 
-\-Blender
+### Wait, this is not what I want!
 
-\-Wolvenkit
+* For an overview of existing hair files and -colours, check [hair.md](../../references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
+* For a more detailed guide on hair physics, check [dangle-bones](../../3d-modelling/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../3d-modelling/dangle-bones/moving-a-dangle-chain.md "mention")
 
-\-[UUH4V Framework](https://www.nexusmods.com/cyberpunk2077/mods/7181) (To avoid conflicts with spawned NPCs)
+## Requirements
 
-
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.13.0 (you should have it [installed and onfigured](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download))
+* [Blender](https://www.blender.org/download/releases/4-0/) >= 4.0
+* the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention") (most recent version)
+* [UUH4V Framework](https://www.nexusmods.com/cyberpunk2077/mods/7181) (To avoid conflicts with spawned NPCs)
 
 ## Introduction
 
@@ -58,9 +64,11 @@ You first need to understand the files you need for hair to work in CP2077. Ther
 ![](https://lh7-us.googleusercontent.com/VHjAZsEyg3F9jANWC0pOL0WQymSHMJrOMZZ6DQ4odapLefFfhmR\_vBjzSWsBb5rTSABMFj8q99StXSEcyiLQGPW4HkntooIloG-E1pQBUib126EWMIQ6jpEVmJKdVpKPDoc24L4cOhwzwPIbV9ojEdk)\
 
 
-
-
 ## The Physics
+
+{% hint style="info" %}
+For more detes about physics, check [dangle-bones](../../3d-modelling/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../3d-modelling/dangle-bones/moving-a-dangle-chain.md "mention"). This is not necessary for the scope of this guide!
+{% endhint %}
 
 \-Remember when I said “like a helmet”? That also means your hair will not have any physics. Some short hair won’t have physics to wave around to begin with, but if you want your bangs and ponytails to wave when you open the character editor, get ready for some trial and error.
 
@@ -70,13 +78,11 @@ You first need to understand the files you need for hair to work in CP2077. Ther
 
 ![](https://lh7-us.googleusercontent.com/D4X5fA3Cqo8gA62Mbdgo8RxNQfj8O8hlUjLcXwBYJNSH4Ncq\_fq9YdKAIFyhl2ccangVJfjy\_uv1UZeCYYO9d-nfZ37sUw41AODfguuCYeQdHxT2CbBOEU8B0uCiqqhUMvzglPkjn8E6KQD1xNM1Lik)
 
-\-Search for a vanilla hairstyle from the game that resembles your physics part the most, and export them with Wolvenkit. Here is a list of all the default hairstyles in game and their file name, credit to this [Reddit](https://www.reddit.com/r/cyberpunkgame/comments/t4nsi9/my\_written\_guide\_on\_how\_to\_make\_hairstyles\_in/) post.
+Search for a vanilla hairstyle from the game that resembles your physics part the most, and export them with Wolvenkit.&#x20;
 
-![](https://lh7-us.googleusercontent.com/RI9Ee\_FGHg0wskRK3SlVVpxbU5WuK7H0o0FDip15fb59vaJq8EfHmLshv5BoN-arccmH1kF7oYlp1fZL9jR6xWXb33NQDWol\_1v44AFx7pOmTXzmbqn5syIkHVSTDMw60YH0PlAtQn8qtF1hz-iGHYo)
-
-![](https://lh7-us.googleusercontent.com/mdAHWojzo5xwy3ThQ4wv3RrxCY7eHCcbAcxJ2CAP1lmDqB77t3SBJe2saznl3n9bVS3eI-qtY4pOzu-NezU7r16hE9aD3vg-Iqe7xqsTPNU2YycCC6965KK3pR7FAmeWof9Ei3CMr22ENEyeetGLjHI)
-
-![](https://lh7-us.googleusercontent.com/0tiS-prN0EA1uBKiNMIWbxlV7kHUtD-fuanc-n0ro2IP2-wsOEkyqI18sjtFPB3oYcmZswjTxLhKhy-CB58iWlTAS1pkUUX1ZmvKBCPs049uqBvLtm2rDWZML0jsQT2SoT6VNAY6Kwx13c2IJXmxDNc)
+{% hint style="info" %}
+You can find overviews of all existing hair styles under [hair.md](../../references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
+{% endhint %}
 
 What you want to look for is how much the vanilla hairstyle overlaps with your mod hairstyle. The closer their shape resembles, the better. In this case, I find hairstyle 05 to be the most suitable, so I export that mesh, as well as their rig and animgraph.
 

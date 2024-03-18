@@ -61,12 +61,14 @@ For that reason, _**you shouldn't skip or skim**_ unless the section tells you t
 
 <figure><img src="../../../../.gitbook/assets/slow_down_kitten.jpg" alt=""><figcaption></figcaption></figure>
 
+That being said, make sure to check the section
+
 ## Step 0: Download the example project
 
 This guide assumes that you have access to the prepared example project, so go and grab it.
 
 1. Create a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
-2. Find the [**template project**](https://www.nexusmods.com/cyberpunk2077/mods/10516) on **Nexus**.&#x20;
+2. Find the [**template project**](https://www.nexusmods.com/cyberpunk2077/mods/10516) on **Nexus**.
 3. Download it and extract the files to your project's root folder, so that the `source` directory merges with the existing one.
 
 ## Step 1: Understanding the process
@@ -82,7 +84,7 @@ Depending on how you learn best, you can also fuck around and try to understand 
 For a general explanation of what the yaml file does, check [#the-control-file-yourmodname.yaml](archive-xl-item-structure-explained.md#the-control-file-yourmodname.yaml "mention"). This section will only cover the differences between a dynamic and a regular yaml.
 
 {% hint style="info" %}
-This file contains the biggest part of the dynamic magic.&#x20;
+This file contains the biggest part of the dynamic magic.
 {% endhint %}
 
 This is your dynamic project's yaml file, minus any properties that aren't influenced by the dynamic appearances:
@@ -154,7 +156,7 @@ If you want to make gendered icons, please check [gendered-preview-icons.md](../
 
 #### Exercise 1: Create more records
 
-With clever hook-ups in the mesh entity, you can set up your items so that they can be changed **with a simple `.yaml` edit** — that means, the user can switch out the ribbon colour without ever starting Wolvenkit!&#x20;
+With clever hook-ups in the mesh entity, you can set up your items so that they can be changed **with a simple `.yaml` edit** — that means, the user can switch out the ribbon colour without ever starting Wolvenkit!
 
 We'll use that here to enable "hidden" appearances.
 
@@ -182,7 +184,7 @@ This is where you **enable** the feature by adding the tag **`DynamicAppearance`
 <figure><img src="../../../../.gitbook/assets/dynamic_variants_enable_feature.png" alt=""><figcaption><p>It's <strong><code>DynamicAppearance</code>, without S.</strong></p></figcaption></figure>
 
 {% hint style="warning" %}
-For dynamic appearances, your `root_entity` file will contain **one entry**. Each item should have [its own root entity](../../../files-and-what-they-do/entity-.ent-files/#root-entity).
+For dynamic appearances, your `root_entity` file will contain **one entry**. Each item should have [its own root entity](../../../files-and-what-they-do/entity-.ent-files#root-entity).
 {% endhint %}
 
 The appearance name in the root entity corresponds to the `appearanceName` property in the `.yaml` without the variant:
@@ -207,7 +209,7 @@ You can define appearances for different circumstances by using [#conditional-sw
 
 In the context of our example project, this means that you can define your appearances like this:
 
-<table><thead><tr><th width="450">Appearance name</th><th>Explanation</th></tr></thead><tbody><tr><td><code>app_file_dynamic_appearance</code></td><td>Your regular appearance. Is displayed when none of the conditional ones apply.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;camera=fpp</code></td><td>This becomes active whenever you are in first person perspective. You'll usually want this to<a href="../first-person-perspective-fixes.md#problem-2-its-in-your-face-juststormtrooperthings"> remove the mesh from your face</a> via <a href="../../../files-and-what-they-do/appearance-.app-files/#partsoverrides">partsOverrides</a>.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;gender=male</code></td><td>You shouldn't do this — instead, use <a href="../../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#which-substitutions-exist">substitutions</a> in the mesh file path.</td></tr></tbody></table>
+<table><thead><tr><th width="450">Appearance name</th><th>Explanation</th></tr></thead><tbody><tr><td><code>app_file_dynamic_appearance</code></td><td>Your regular appearance. Is displayed when none of the conditional ones apply.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;camera=fpp</code></td><td>This becomes active whenever you are in first person perspective. You'll usually want this to<a href="../first-person-perspective-fixes.md#problem-2-its-in-your-face-juststormtrooperthings"> remove the mesh from your face</a> via <a href="../../../files-and-what-they-do/appearance-.app-files#partsoverrides">partsOverrides</a>.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;gender=male</code></td><td>You shouldn't do this — instead, use <a href="../../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#which-substitutions-exist">substitutions</a> in the mesh file path.</td></tr></tbody></table>
 
 ### The mesh\_entity
 
@@ -228,6 +230,12 @@ Now let's look at what we just did and check the diagram. You'll see that the co
 <figure><img src="../../../../.gitbook/assets/axl_dynamic_overview.jpg" alt=""><figcaption></figcaption></figure>
 
 And that's it! With this and the [original guide](../../../core-mods-explained/archivexl/), you should hopefully be able to add items to your heart's content!
+
+## Tools and utilities
+
+### Generating display names
+
+I have written a [Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/archive\_xl\_dynamic\_variants/generate\_translation\_strings.py) to auto-generate display names, you can find it on my github. If you don't know how to use this, check [running-python-scripts.md](../../everything-else/running-python-scripts.md "mention").
 
 ## Troubleshooting
 

@@ -6,6 +6,13 @@ description: How to set up an atelier store for your mod
 
 This guide will detail how to add an Atelier store with your items. It is part of the [Adding new items](../items-equipment/adding-new-items/) ArchiveXL tutorial, but you can complete these steps independently.
 
+### Wait, this is not what I want!
+
+* Find a guide on [adding-items-preview-images](../custom-icons-and-ui/adding-items-preview-images/ "mention")&#x20;
+* Learn more about [game-icons-the-inkatlas-file.md](../../files-and-what-they-do/game-icons-the-inkatlas-file.md "mention")
+
+## Requirements
+
 {% hint style="warning" %}
 You need to install the [VirtualAtelier](https://www.nexusmods.com/cyberpunk2077/mods/2987) mod for this.&#x20;
 

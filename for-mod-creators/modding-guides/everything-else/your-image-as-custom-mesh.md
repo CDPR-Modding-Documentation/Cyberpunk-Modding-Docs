@@ -7,9 +7,11 @@ description: Guide to creating neon signs from 2d textures
 ## **Summary**
 
 **Published August 2023 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: Jan 17 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update**: March 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will take you through the steps of **replacing** one of Cyberpunk's neon signs with a custom mesh.&#x20;
+
+If you want, you can then turn your replacers into new [custom-props](custom-props/ "mention") for AMM!
 
 ### Wait, that's not what I want!
 
@@ -215,6 +217,10 @@ Please remember that you are currently replacing all heart neon signs in the ent
 {% endhint %}
 
 Congratulations! If everything works, you just made a mod!&#x20;
+
+## I don't want a replacer!
+
+That's A-OK, but exceeds the scope of this guide. Fortunately, you can just head over to [custom-props](custom-props/ "mention") and proceed from there.
 
 ## Troubleshooting
 

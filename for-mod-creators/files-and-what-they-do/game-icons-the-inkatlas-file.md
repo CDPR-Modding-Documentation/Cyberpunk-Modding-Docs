@@ -4,15 +4,16 @@
 Apart has prepared a reference project with an import-ready inkatlas. You can download it [here](https://mega.nz/file/vUUDEQxS#w66XKJ7acIsnXuJcOBEwPPDcm4GFtSa06MzZccAaX8Y).
 {% endhint %}
 
-## Guides
+This page explains the `.inkatlas` file and its logic.
 
-For a guide how to create custom icon previews, see [here](../modding-guides/custom-icons-and-ui/adding-items-preview-images/).
+## Wait, this is not what I want!
 
-For a guide how to create a custom Atelier icon, see [here](../modding-guides/everything-else/adding-items-atelier-integration.md#generating-an-icon).
-
-{% hint style="info" %}
-You can find a useful tool for making custom inkatlas files on [deadlymustard's github](https://github.com/deadlymustard/inkatlas-utils).
-{% endhint %}
+* Learn how to make [adding-items-preview-images](../modding-guides/custom-icons-and-ui/adding-items-preview-images/ "mention")&#x20;
+* Make a [custom Atelier icon](../modding-guides/everything-else/adding-items-atelier-integration.md#generating-an-icon)
+* Find templates (by [Apart](https://app.gitbook.com/u/M4VsHKJyn3PakV5tOmAF87H61wh2 "mention")) in the wiki github's [file section](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/\_resources\_and\_assets/icons)
+* Make your own inkatlas with Python: find the script on [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate\_inkatlas.py). \
+  Check [running-python-scripts.md](../modding-guides/everything-else/running-python-scripts.md "mention") if you don't know how to use this.
+* Make your own inkatlas with Photoshop CC (Adobe Creative Suite required): find the plugin on [deadlymustard's github](https://github.com/deadlymustard/inkatlas-utils)
 
 ## Summary
 

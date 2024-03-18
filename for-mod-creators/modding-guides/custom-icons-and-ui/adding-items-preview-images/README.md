@@ -2,20 +2,28 @@
 description: How to add custom preview images by using a custom .inkatlas file
 ---
 
-# Your own preview icons
+# Your own inventory preview icons
 
 ## Summary
 
-**Created by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") and [yellingintothevoid](https://www.nexusmods.com/users/127630298)\
-**Updated March 09. 2024**
+**Uploaded:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") \
+**Last documented update:** Mar **18 2024 by** [yellingintothevoid](https://www.nexusmods.com/users/127630298)
+
+This guide will teach you how to make custom inventory preview icons.
+
+{% hint style="info" %}
+Technically, this guide is a subsection of the [ArchiveXL item additions guide](../../items-equipment/adding-new-items/), but you can use it to make any kind of preview item.
+{% endhint %}
 
 The guide below will teach you how to make preview icons. While it's a technically a subsection of the [ArchiveXL item additions guide](../../items-equipment/adding-new-items/), you can use the steps below to make any kind of preview item.
 
-**Difficulty Level**: You know how to read and can either edit images or make use of [the corresponding guide](../../textures-and-luts/images-importing-editing-exporting.md). While the process is easy, it also is, unfortunately, quite involved!
+**Difficulty Level**: You know how to read and can either edit images or make use of [the corresponding guide](../../textures-and-luts/images-importing-editing-exporting.md). While the process is easy, it also is, unfortunately, quite tedious!
 
-{% hint style="info" %}
-If you want to have gendered preview icons, check [here](gendered-preview-icons.md).
-{% endhint %}
+### Wait, this is not what I want!
+
+* If you want to have gendered preview icons, check [here](gendered-preview-icons.md).
+* For a script to generate inkatlas files, check [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate\_inkatlas.py)
+* To learn more about the files involved, check  [game-icons-the-inkatlas-file.md](../../../files-and-what-they-do/game-icons-the-inkatlas-file.md "mention")
 
 ## The required files
 

@@ -6,11 +6,17 @@ description: 'Step 2: How to create a custom NPC'
 
 ## Summary
 
-**Published**: May 13 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published**: May 13 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update**: Mar 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page is a part of the [NPV guide](./). It will show you how to use the [provided example project](./#preparation) to create a custom NPC for Cyberpunk 2077, whom you can then spawn with AppearanceMenuMod.
 
-It will give you a brief overview over the control files and tell you how to pull in the right meshes (and appearances). If you're just here for custom hair colours, check  [#creating-your-own-hair-colours](../../../materials/configuring-materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") instead.
+It will give you a brief overview over the control files and tell you how to pull in the right meshes (and appearances).&#x20;
+
+### Wait, this isn't what I want!
+
+* How about [#creating-your-own-hair-colours](../../../materials/configuring-materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention")?
+* Find a more detailed guide about adding components to NPC app files under [appearances-change-the-looks.md](../appearances-change-the-looks.md "mention"). This may help you if you get stuck!
 
 ### Prerequisites
 
@@ -128,6 +134,10 @@ If you want to add more appearances:
 Let's look at the .app file now.
 
 ## The app file
+
+{% hint style="info" %}
+You can find a more detailed guide about adding stuff to .app files under [appearances-change-the-looks.md](../appearances-change-the-looks.md "mention"). It's optional, unless you're really stuck.
+{% endhint %}
 
 This section will tell you how to edit your NPV's appearance – their skin colour, chrome, piercings, tattoos. We will do this in the .app file.
 

@@ -5,13 +5,26 @@ description: How to run scripts in Python (and merge AMM deco presets)
 # Running Python Scripts
 
 **Summary**\
-**Published by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")**, 14. 12. 2023**
+**Published: Dec 14 2023 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update: Mar 18 2024 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will teach you how to execute Python scripts under Windows.&#x20;
 
-{% hint style="danger" %}
-This guide is for running files outside of **Blender**. If you want to run a Python script in Blender, you need to switch your viewport to the scripting perspective.
-{% endhint %}
+<details>
+
+<summary>Where do I get Python scripts?</summary>
+
+* The Magnificent Doctor Presto's [messy github repository](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/)
+* manavortex's [messy github repository](https://github.com/manavortex/cyberpunk2077/blob/master/python)
+* Simarilius's [messy github repository](https://github.com/Simarilius-uk/CP2077\_BlenderScripts/) (for Blender)
+
+</details>
+
+## Running Python scripts in Blender
+
+This guide is for running files outside of **Blender**.&#x20;
+
+If you want to run a Python script in Blender, you need to switch your viewport to the scripting perspective and click "play". Now go away, your princess is in another castle!
 
 <figure><img src="../../../.gitbook/assets/blender_scripting_perspective.png" alt=""><figcaption><p>To run Python in Blender, go here and stop reading.</p></figcaption></figure>
 

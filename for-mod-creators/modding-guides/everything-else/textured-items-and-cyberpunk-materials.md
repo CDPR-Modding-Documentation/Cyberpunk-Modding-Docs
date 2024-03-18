@@ -7,25 +7,26 @@ description: Importing textured items (and creating an AMM prop set in the proce
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published: February 11 2023 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: Mar 14 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update**: Mar 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will walk you through **importing 3d objects** into Cyberpunk 2077, which can then be spawned via [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790).&#x20;
 
-**It uses the following versions:**
-
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases), most recent for your game version (stable | nightly), guide was made using 8.8.1)&#x20;
-* [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) (version 2.0.2, but pretty much any version will do)
-
 **Level of difficulty:** You know how to read.
 
-### Wait, that's not what I want!
+### Wait, this is not what I want!
 
+* You can learn more about materials under [materials](../../materials/ "mention")
+* Find a look-up list of cool materials under [cheat-sheet-materials.md](../../references-lists-and-overviews/cheat-sheet-materials.md "mention")
 * For a more detailed guide about prop creation, check [custom-props](custom-props/ "mention")
 * Or maybe you wonder  [#where-to-find-models](custom-props/#where-to-find-models "mention")
 * If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
 * For a guide about changing materials, check [changing-materials-colors-and-textures.md](../items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
 * If you want to understand material assignment, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")-> [#material-assignment](../../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment "mention")
-* You can find explanation and documentation about materials [here](../../materials/).&#x20;
+
+## **Requirements**
+
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases), most recent for your game version ([stable](https://github.com/WolvenKit/Wolvenkit/releases) | [nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases)), guide was made using 8.8.1)&#x20;
+* [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) (> 2.0.2)
 
 ## Setting up the project
 
