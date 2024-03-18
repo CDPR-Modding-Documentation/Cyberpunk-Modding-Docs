@@ -288,7 +288,6 @@
   * [TweakDB: Game database](for-mod-creators/tweaks/tweaks/README.md)
     * [Browsing the tweak database](for-mod-creators/tweaks/tweaks/browsing-the-tweak-database.md)
     * [Types of tweak records](for-mod-creators/tweaks/tweaks/types-of-tweak-records.md)
-  * [Add Items to the game](for-mod-creators/tweaks/add-items-to-the-game.md)
   * [Change existing items](for-mod-creators/tweaks/change-existing-items.md)
+  * [Add Items to the game](for-mod-creators/tweaks/add-items-to-the-game.md)
   * [Tweaks "cheat sheets"](for-mod-creators/tweaks/tweaks-cheat-sheets.md)
-  * [NPC's tweaks](for-mod-creators/tweaks/npcs-tweaks.md)

@@ -1,3 +1,7 @@
+---
+description: Start adding your custom items to the game without replacing
+---
+
 # Add Items to the game
 
 {% hint style="info" %}
@@ -18,39 +22,63 @@ There are different guides to add items to the game, depending on the kind of mo
 
 ### Equipment  & Inventory
 
-#### <mark style="background-color:red;">Adding new Equipment:</mark>
+#### <mark style="background-color:red;">Adding new Equipment:</mark>&#x20;
 
 {% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items" %}
 
-#### <mark style="background-color:red;">Adding a new Weapon:</mark>
+{% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/tweakxl-changing-game-records/changing-vendor-inventory" %}
+
+#### <mark style="background-color:red;">Adding a new Weapon:</mark>&#x20;
 
 {% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items/weapons" %}
 
-#### <mark style="background-color:red;">Create a new Car</mark>
+#### <mark style="background-color:red;">Create a new Car</mark>&#x20;
 
 {% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/create-base-files" %}
 
+#### <mark style="background-color:red;">Vehicles base structure</mark>&#x20;
+
+{% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/vehicles/vehicle-record" %}
+
+{% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/vehicles/tweakdb" %}
+
+***
+
 ### HUD - GUI&#x20;
 
-#### <mark style="background-color:red;">Your own Hud Icons</mark>
+#### <mark style="background-color:red;">Your own Hud Icons</mark>&#x20;
 
 {% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/custom-icons-and-ui/your-own-hud-icons" %}
 
-#### <mark style="background-color:red;">Your own inventory Icons</mark>
+#### <mark style="background-color:red;">Your own inventory Icons</mark>&#x20;
 
 {% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/custom-icons-and-ui/adding-items-preview-images" %}
 
-#### <mark style="background-color:red;">Custom in-game Icons</mark>
+#### <mark style="background-color:red;">Custom in-game Icons</mark>&#x20;
 
 {% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/custom-icons-and-ui/custom-in-game-icons" %}
 
+#### <mark style="background-color:red;">Game Icons: link your custom icon to your item</mark>&#x20;
+
+{% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/files-and-what-they-do/game-icons-the-inkatlas-file#inkatlas-slot-names" %}
+
+***
+
 ### Other resources&#x20;
 
-#### <mark style="background-color:red;">Your own Atelier Store (Virtual Atelier Frameweork)</mark>
+#### <mark style="background-color:red;">Your own Atelier Store (Virtual Atelier Framework)</mark>&#x20;
 
 {% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/everything-else/adding-items-atelier-integration" %}
 
+#### <mark style="background-color:red;">Making a tweak for REDmod</mark>&#x20;
 
+{% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/redmod/redmod-tweaks" %}
+
+#### <mark style="background-color:red;">Change game records: base guide and links</mark>&#x20;
+
+{% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/tweakxl-changing-game-records" %}
+
+***
 
 
 
