@@ -10,7 +10,7 @@ Last documented edit: Feb 09 2024 by [manavortex](https://app.gitbook.com/u/NfZB
 
 
 
-Changing item stats happens by making changes via **TweakXL** or **REDmod** in the [tweaks](../../files-and-what-they-do/tweaks/ "mention").
+Changing item stats happens by making changes via **TweakXL** or **REDmod** in the [tweaks](../../tweaks/tweaks/ "mention").
 
 {% hint style="info" %}
 You can find more information about this on the [TweakXL github's wiki page](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks).

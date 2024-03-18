@@ -18,13 +18,13 @@ layout:
     visible: true
 ---
 
-# ▶ TweakXL
+# ▶️ TweakXL
 
 ## What is TweakXL?
 
 For a detailed guide with many explanations of properties, check the second half of[new-iconic-weapon-tutorial-for-dummies.md](../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
 
-TweakXL ([nexus](https://www.nexusmods.com/cyberpunk2077/mods/4197) | [github](https://github.com/psiberx/cp2077-tweak-xl)) is a mod by psiberx. It lets you alter Cyberpunk's [Tweak Database](../files-and-what-they-do/tweaks/), changing properties of NPCs and items or even adding new entries.
+TweakXL ([nexus](https://www.nexusmods.com/cyberpunk2077/mods/4197) | [github](https://github.com/psiberx/cp2077-tweak-xl)) is a mod by psiberx. It lets you alter Cyberpunk's [Tweak Database](../tweaks/tweaks/), changing properties of NPCs and items or even adding new entries.
 
 ## How do I use it?
 
@@ -38,7 +38,7 @@ No matter the file extension, the file `contents` must be `.yaml` or `.json`&#x2
 
 ### Theory
 
-* Explanation of the database: [tweaks](../files-and-what-they-do/tweaks/ "mention")
+* Explanation of the database: [tweaks](../tweaks/tweaks/ "mention")
 * Additional information: TweakXL [wiki on github.](https://github.com/psiberx/cp2077-tweak-xl/wiki/TweakDB)
 
 ### Praxis

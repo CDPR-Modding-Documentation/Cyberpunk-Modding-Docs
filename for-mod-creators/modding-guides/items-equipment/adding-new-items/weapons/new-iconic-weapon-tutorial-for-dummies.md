@@ -71,7 +71,7 @@ After locating the Unity gun in the tweak browser, right-click on the item and s
 <figure><img src="../../../../../.gitbook/assets/image (217).png" alt=""><figcaption><p>Red arrow = Tweak Name, where you can override it. Blue Box= Details about selected tweak. White arrow = Overridden (New) Tweak</p></figcaption></figure>
 
 {% hint style="info" %}
-To read more about Tweak modding, check [tweaks](../../../../files-and-what-they-do/tweaks/ "mention"). This isn't necessary for understanding this guide!
+To read more about Tweak modding, check [tweaks](../../../../tweaks/tweaks/ "mention"). This isn't necessary for understanding this guide!
 {% endhint %}
 
 ## Step 3: Editing and understanding your new tweak
@@ -866,7 +866,7 @@ A big part of tweak modding is exploration — poking through tweaks until you f
 ### Wilson's iconic iron
 
 {% hint style="info" %}
-The example (together with instructions on finding your way around the TweakDB) has moved to [browsing-the-tweak-database.md](../../../../files-and-what-they-do/tweaks/browsing-the-tweak-database.md "mention") -> [#example-browsing-.tweak-files](../../../../files-and-what-they-do/tweaks/browsing-the-tweak-database.md#example-browsing-.tweak-files "mention")
+The example (together with instructions on finding your way around the TweakDB) has moved to [browsing-the-tweak-database.md](../../../../tweaks/tweaks/browsing-the-tweak-database.md "mention") -> [#example-browsing-.tweak-files](../../../../tweaks/tweaks/browsing-the-tweak-database.md#example-browsing-.tweak-files "mention")
 {% endhint %}
 
 We'll end up with `WilsonWeaponModAbility`, which defines the abilities and stats that we care about.
@@ -900,7 +900,7 @@ WilsonWeaponModAbility : IconicWeaponModAbilityBase
 
 </details>
 
-For an explanation of what these do, please see [types-of-tweak-records.md](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md "mention") -> [#effector](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md#effector "mention")
+For an explanation of what these do, please see [types-of-tweak-records.md](../../../../tweaks/tweaks/types-of-tweak-records.md "mention") -> [#effector](../../../../tweaks/tweaks/types-of-tweak-records.md#effector "mention")
 
 #### MultiplyDamageWithVelocity Effector
 
@@ -940,7 +940,7 @@ Items.Cranial_Cashback:
 
 The ability contains
 
-* two [effectors](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md#effector), which we are yet to implement
+* two [effectors](../../../../tweaks/tweaks/types-of-tweak-records.md#effector), which we are yet to implement
 * the description for our iconic ability as a `localizedDescription`
 
 Let's start by registering the description.
@@ -1022,7 +1022,7 @@ If not, you may have to respawn it via CET.
 
 ### Designing effectors
 
-Now that we have [#the-full-tweak](new-iconic-weapon-tutorial-for-dummies.md#the-full-tweak "mention"), we'll fill in the two [effectors](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md#effector), one to punish the player for missing, and the other to reward them for headshots.
+Now that we have [#the-full-tweak](new-iconic-weapon-tutorial-for-dummies.md#the-full-tweak "mention"), we'll fill in the two [effectors](../../../../tweaks/tweaks/types-of-tweak-records.md#effector), one to punish the player for missing, and the other to reward them for headshots.
 
 #### Heal on headshot
 
@@ -1090,7 +1090,7 @@ Now we have a custom preqrequisite, but we still have to **fine-tune** and **lin
 #### Creating a custom condition
 
 {% hint style="info" %}
-For more information on this, check [types-of-tweak-records.md](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md "mention") ->[#condition](../../../../files-and-what-they-do/tweaks/types-of-tweak-records.md#condition "mention")
+For more information on this, check [types-of-tweak-records.md](../../../../tweaks/tweaks/types-of-tweak-records.md "mention") ->[#condition](../../../../tweaks/tweaks/types-of-tweak-records.md#condition "mention")
 {% endhint %}
 
 ```yaml

@@ -10,7 +10,7 @@ description: Changing NPC's info on scan and its archetype.
 
 This tutorial will show you how to use REDmod to edit an NPC's TweakDB record, changing their info when scanning them with your Kiroshis. In this tutorial we will edit Panam
 
-If you want to learn more about the Tweak database, check [tweaks](../../files-and-what-they-do/tweaks/ "mention").
+If you want to learn more about the Tweak database, check [tweaks](../../tweaks/tweaks/ "mention").
 
 ## Prerequisites
 
