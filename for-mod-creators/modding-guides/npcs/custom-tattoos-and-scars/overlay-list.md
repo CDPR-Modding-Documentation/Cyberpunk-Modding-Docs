@@ -18,17 +18,17 @@ The body file of KS\_UV contain the Torso, Back, Legs and Arms parts\
 The body file of VTK contain Torso, Back and Legs parts
 {% endhint %}
 
-| Framework | Overlay name                               | gender/body part              |
-| --------- | ------------------------------------------ | ----------------------------- |
-| KS\_UV    | fullbody\_overlay\_d01                     | female  body (see note above) |
-|           | ma\_fullbody\_overlay\_d01                 | male  body (see note above)   |
-|           | wa\_head\_overlay\_d01 female head overlay | female head                   |
-|           | ma\_head\_overlay\_d01                     | male head                     |
-|           |                                            |                               |
-| VTK       | v\_overlay                                 | female body (see note above)  |
-|           | 11597681951245522818                       | female head                   |
-|           | femme\_arm\_left\_01\_overlay              | female left arm               |
-|           | femme\_arm\_right\_01\_overlay             | female right arm              |
+| Framework | Overlay name                   | gender/body part              |
+| --------- | ------------------------------ | ----------------------------- |
+| KS\_UV    | fullbody\_overlay\_d01         | female  body (see note above) |
+|           | ma\_fullbody\_overlay\_d01     | male  body (see note above)   |
+|           | wa\_head\_overlay\_d01         | female head                   |
+|           | ma\_head\_overlay\_d01         | male head                     |
+|           |                                |                               |
+| VTK       | v\_overlay                     | female body (see note above)  |
+|           | 11597681951245522818           | female head                   |
+|           | femme\_arm\_left\_01\_overlay  | female left arm               |
+|           | femme\_arm\_right\_01\_overlay | female right arm              |
 
 ### KS\_UV path :&#x20;
 
