@@ -15,6 +15,10 @@ To skip the pep talk, you can jump directly to [#how-to-edit](the-wiki.md#how-to
 
 ## Why you should edit the wiki
 
+{% hint style="info" %}
+If you're already convinced, you can skip straight ahead to [#how-to-edit](the-wiki.md#how-to-edit "mention") or [#requesting-reviews](the-wiki.md#requesting-reviews "mention")
+{% endhint %}
+
 Wikis are the most open source thing since the invention of democracy, because everyone can edit them (that includes you!). They gather and share knowledge, facilitating all kinds of beautiful change — like the library of Alexandria before it was DDOSed by fire.
 
 In terms of our wiki, that means:
@@ -27,13 +31,17 @@ In terms of our wiki, that means:
   _Published: Feb 11 2024 by_ [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
   _If you make any progress on this, please contact_ [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") _on Discord_
 
-Unfortunately, most people don't edit the wiki.
+**Unfortunately, most people don't edit the wiki.**
 
-Of course there are plenty of good reasons, so let's go over them one by one.
+Of course there are plenty of good reasons, so let's go over them one by one (open the box)
 
 {% hint style="success" %}
 You will never be bullied for sharing knowledge or skills on this wiki. If you ever feel as if you are, please get in touch with the mods on the [Wolvenkit Discord](http://discord.gg/redmodding), and we'll clear up the misunderstanding — because communication is hard and everyone here has the same goals.
 {% endhint %}
+
+<details>
+
+<summary>Reasons Not To Edit The Wiki</summary>
 
 ### But I don't know how!
 
@@ -53,9 +61,7 @@ That being said, if you really feel uncomfortable publishing anything in "bad En
 
 No problem at all, just pop an info box at the top of your wiki page or section:
 
-{% hint style="warning" %}
 This stuff is **not verified**! If you can confirm it (or find out how it really works), please update this page or get in touch with (you) via (however)!
-{% endhint %}
 
 ... and then go ahead. Remember, wikis are collaborative! Once you've put a foundation, others can pitch in and improve.
 
@@ -65,13 +71,13 @@ Imagine the following situation:&#x20;
 
 In a world without wikis, you want to edit the colour of a car. After a bracing journey, you make it to the Discord server, where you find the `textures-and-materials` channel and ask. Someone cheerfully tells you:
 
-> Cyberpunk doesn't use textured materials, so you'll have to edit a multilayered file. For that, you're gonna want MLSetupBuilder, it's linked all over the place, there's also a channel somewhere under tools, or was it a thread? I dunno!&#x20;
->
-> \<they ping the tool's creator, who is not responding — presumably AFK>&#x20;
->
-> Ah, nvm. Just use the search function, you'll find people talking about this!
->
-> \<you use the search function. There are thousands of hits.>
+Cyberpunk doesn't use textured materials, so you'll have to edit a multilayered file. For that, you're gonna want MLSetupBuilder, it's linked all over the place, there's also a channel somewhere under tools, or was it a thread? I dunno!&#x20;
+
+\<they ping the tool's creator, who is not responding — presumably AFK>&#x20;
+
+Ah, nvm. Just use the search function, you'll find people talking about this!
+
+\<you use the search function. There are thousands of hits.>
 
 That is why even a shitty wiki page is better than none. At the very least, it's a point to collect information and links.&#x20;
 
@@ -97,27 +103,45 @@ Get that information out of your head and into a change request. If you never fi
 
 Good luck, soldier!
 
+</details>
+
+***
+
 ## How to edit
 
 Before you can edit, you need to sign up to Gitbook (no way around it). It's integrated with github, so you can use that or your google log-in.&#x20;
 
-As of today (February 2024), I've never received a single spam mail from them.
+As of today (March 2024), I've never received a single spam mail from them.
 
 ### Change requests&#x20;
 
-You can't edit the wiki without a change request. You can create one by clicking the Edit button in the upper right corner:
+You can't edit without a **change request** (which is a snapshot of the wiki as-it-is that you can fuck around with to your heart's content).&#x20;
 
-<figure><img src="../../.gitbook/assets/gitbook_edit_view.png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Until you complete the steps under [#requesting-reviews](the-wiki.md#requesting-reviews "mention") and a wiki admin merges your changes, nothing of what you do will go live, so you can safely break everything.
+{% endhint %}
 
-If you want to know more, you can check [gitbook's official documentation](https://docs.gitbook.com/content-editor/editor/change-requests) for this, or read the TL;DR below:
+Your edits will be **saved** in your change request, so that you (or somebody else) can resume editing later. See&#x20;
+
+#### Creating a new change request
 
 {% hint style="warning" %}
 When creating a new change request, please give it a title **immediately** (see the screenshot under [#browsing-existing-change-requests](the-wiki.md#browsing-existing-change-requests "mention") as for why)
 {% endhint %}
 
+You can create one by clicking the Edit button in the upper right corner:
+
+<figure><img src="../../.gitbook/assets/gitbook_edit_view.png" alt=""><figcaption></figcaption></figure>
+
+If you want to know more, you can check [gitbook's official documentation](https://docs.gitbook.com/content-editor/editor/change-requests) for this, or read the TL;DR below:
+
 #### Browsing existing change requests
 
-The link on the left side opens a side bar panel where you can browse existing change requests:
+In the top left of your&#x20;
+
+<figure><img src="../../.gitbook/assets/change_requests_browsing_1.png" alt=""><figcaption></figcaption></figure>
+
+Clicking on "Change Requests" to the left opens a side bar panel where you can browse existing change requests:
 
 <figure><img src="../../.gitbook/assets/wiki_editing_change_request_list.png" alt=""><figcaption><p>Who created a change request doesn't matter much - everyone can edit them</p></figcaption></figure>
 
