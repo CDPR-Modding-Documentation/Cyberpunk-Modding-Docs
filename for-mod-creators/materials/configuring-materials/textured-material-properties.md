@@ -18,6 +18,8 @@ The most commonly used material for anything textured is `engine\materials\metal
 
 {% hint style="info" %}
 To use this material as **emissive** (light), check [emissive-material-properties.md](emissive-material-properties.md "mention")&#x20;
+
+You can change the colour of a texture on-the-fly by using the `BaseColor` property  (color picker blend file [here](https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks))
 {% endhint %}
 
 The material can be transparent by setting `enableMask` to `True` (and make sure its not overriden in the [material chain](../shaders/#the-daisy-chain)). When set, the material will use the `alpha` channel of the BaseColor.&#x20;
