@@ -12,6 +12,7 @@ This page lists weapon .ent files by associated iron for your convenience.
 
 #### Wait, this is not what I want!
 
+* Do you want to complete your stash? [Check Reddit](https://www.reddit.com/r/cyberpunkgame/comments/16vlul2/list\_of\_all\_of\_vs\_stash\_wall\_weapons\_in\_20/)!
 * For a guide on adding custom weapons, check [weapons](../../modding-guides/items-equipment/adding-new-items/weapons/ "mention") or [new-iconic-weapon-tutorial-for-dummies.md](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
 * For an overview of weapon properties, check [cheat-sheet-weapon-basestats.md](../cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats.md "mention")
 * For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](../cheat-sheet-tweak-ids/cheat-sheet-weapon-audio.md "mention")
