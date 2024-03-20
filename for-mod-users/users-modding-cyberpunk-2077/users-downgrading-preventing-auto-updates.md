@@ -90,6 +90,8 @@ First [turn autoupdate off for Steam](users-downgrading-preventing-auto-updates.
 \
 Here are the version-specific commands that you need to run. If you can't find your version on the list, check [here](https://steamdb.info/depot/1091501/history/) (Base Game) and [here](https://steamdb.info/depot/2138330/history/) (Phantom Liberty), and find the new Manifest ID tag.
 
+* 2.12 Base Game: `download_depot 1091500 1091501 3935102684525872303`
+* 2.12 Phantom Liberty: `download_depot 2138330 2138330 5094071097429923087`
 * 2.11 Base Game: `download_depot 1091500 1091501 415651277559119937`
 * 2.11 Phantom Liberty: `download_depot 2138330 2138330 1247263585971652529`
 * 2.10 Base Game: `download_depot 1091500 1091501 2238892413801664242`
