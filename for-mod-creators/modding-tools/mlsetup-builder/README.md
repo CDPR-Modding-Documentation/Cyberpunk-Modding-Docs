@@ -216,7 +216,7 @@ That's it, you're done now and can use the [3d viewport](./#about-that-3d-viewpo
 
 ### Generic troubleshooting
 
-Close MLSB, then open `%APPSETTINGS%\Mlsetupbuilder\config.json` in a text editor and decrement the version by one (e.g. `1.6.8` => `1.6.7`). This will force MLSB to re-check its settings.
+Close MLSB, then open `%APPDATA%\Mlsetupbuilder\config.json` in a text editor and decrement the version by one (e.g. `1.6.8` => `1.6.7`). This will force MLSB to re-check its settings.
 
 Alternatively, you can also delete the file and reconfigure.
 
