@@ -6,6 +6,10 @@ description: >-
 
 # 🎺 Sound
 
+{% hint style="info" %}
+You can find more information on the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/ "mention") wiki under [Audio files](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-cli/usage/video-and-audio-files-cli#audio-files "mention")&#x20;
+{% endhint %}
+
 {% hint style="danger" %}
 Feel free to sign up and add your knowledge to the wiki. It doesn't matter if the guide is shitty or if your English is bad, the next person can always improve on your stuff – as long as there is any stuff!
 {% endhint %}

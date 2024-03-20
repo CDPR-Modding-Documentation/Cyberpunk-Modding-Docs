@@ -284,6 +284,7 @@
     * [Running Python Scripts](for-mod-creators/modding-guides/everything-else/running-python-scripts.md)
     * [Custompathing assets](for-mod-creators/modding-guides/everything-else/custompathing-assets.md)
     * [Your own Atelier Store](for-mod-creators/modding-guides/everything-else/adding-items-atelier-integration.md)
+    * [How to translate a Mod](for-mod-creators/modding-guides/everything-else/how-to-translate-a-mod.md)
 * [🪝 Tweaks](for-mod-creators/tweaks/README.md)
   * [TweakDB: Game database](for-mod-creators/tweaks/tweaks/README.md)
     * [Browsing the tweak database](for-mod-creators/tweaks/tweaks/browsing-the-tweak-database.md)
