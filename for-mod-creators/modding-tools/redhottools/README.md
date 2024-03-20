@@ -35,23 +35,23 @@ With the RHT overlay for Cyber Engine Tweaks, you can inspect game objects at ru
 
 Here, you can inspect world nodes and their properties:
 
-<figure><img src="https://cdn.discordapp.com/attachments/786226527360254014/1172328367899562004/rht-052-1.png?ex=655feadf&#x26;is=654d75df&#x26;hm=d68979b1a9c5e44354b69a5e2cddf021baac810d517feba0cce54a5272f4f176&#x26;" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/rht_inspect_tab.png" alt=""><figcaption></figcaption></figure>
 
 ### Scan
 
-Here, you can scan for any nodes under the cursor:
+Here, you can scan for any nodes around you:
 
+<figure><img src="../../../.gitbook/assets/rht_scan_tab.png" alt=""><figcaption></figcaption></figure>
 
+If you expand the node properties, you can simply hide them at run-time, or use the integration with [Removal Editor](https://github.com/justarandomguyintheinternet/CP77\_removalEditor) to create permanent presets:
 
-<figure><img src="https://cdn.discordapp.com/attachments/786226527360254014/1172328368834891796/rht-052-3.png?ex=655feadf&#x26;is=654d75df&#x26;hm=06f9dea38eacec11fabc84590640ca6d523c7e1acbdde3b3d3d8401909fe64a0&#x26;" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/rht_toggle_node.png" alt=""><figcaption></figcaption></figure>
 
 ### Lookup
 
 Reverse search of world nodes and spawned entities
 
-
-
-<figure><img src="https://cdn.discordapp.com/attachments/786226527360254014/1172328369162035250/rht-052-4.png?ex=655feae0&#x26;is=654d75e0&#x26;hm=0999916c58eb3825dc2165be42577413ce6853f744227d18ae235e9eeb1610ab&#x26;" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/rht_lookup_tab.png" alt=""><figcaption></figcaption></figure>
 
 ## Inspecting chunkmasks
 
