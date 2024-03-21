@@ -175,6 +175,7 @@
     * [Photo Mode / AMM: Other Facial Expressions](for-mod-creators/modding-guides/animations/custom-facial-expressions.md)
     * [Retargeting Animations to other Rigs](https://docs.google.com/document/d/1nHPQvkK6ijwb8iQ8y1X8CBG-wnNUCTYCjrdUCGMenW4/edit?usp=drive\_link)
     * [Removing Foot Snap IK from Poses/Animations](for-mod-creators/modding-guides/animations/removing-foot-snap-ik-from-poses-animations.md)
+    * [Scaling Poses/Animations](for-mod-creators/modding-guides/animations/scaling-poses-animations.md)
   * [🔗 Community guides](for-mod-creators/modding-guides/community-guides/README.md)
     * [external: NPVs (V as NPC) - custom NPCs](for-mod-creators/modding-guides/community-guides/external-npvs-v-as-npc-custom-npcs.md)
   * [👤 NPCs & V](for-mod-creators/modding-guides/npcs/README.md)
