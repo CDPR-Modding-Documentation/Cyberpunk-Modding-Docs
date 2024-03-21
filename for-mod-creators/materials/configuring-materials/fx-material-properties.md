@@ -23,3 +23,8 @@ This shader glimmers
 `base\fx\_shaders\hologram.mt`
 
 Holo material ([example .mi](../../../\_example\_mods\_and\_templates/material\_templates/holo/hologram\_material\_template.mi))
+
+## oda\_helm
+
+`base\fx_shaders\oda_helm.mt`
+

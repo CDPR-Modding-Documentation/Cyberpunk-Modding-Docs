@@ -160,6 +160,7 @@ FX shaders are animated effect shaders.
 | ----------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | `base\fx\shaders\metal_base_glitter.mt`   | A PBR temperature shader. Configured with numeric values.                                                                    |
 | `base\fx\shaders\metal_base_blackbody.mt` | A blackbody shader for e.g. glowing coal. Copy from `base\environment\decoration\misc\foliage\burnt_wood\burnt_wood_ab.mesh` |
+| `base\fx_shaders\oda_helm.mt`             | Oda's helmet shader. Colour is assigned via the lightComponent in the helmet's .ent file                                     |
 
 Something else to dig into: `emitters/particleDrawer/meshes`
 
