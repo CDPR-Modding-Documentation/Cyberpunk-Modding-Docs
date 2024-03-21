@@ -269,6 +269,12 @@ See the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2
 
 … or maybe not. Maybe you should try [troubleshooting-your-mesh-edits.md](troubleshooting-your-mesh-edits.md "mention") now.
 
+If everything worked, here are a few more guides that you might want to look into:
+
+* [r-and-r-refitting-step-by-step.md](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") will teach you how to refit for a certain body mod
+* [adding-new-items](../modding-guides/items-equipment/adding-new-items/ "mention") will walk you through the steps of adding your mesh as a new piece of equipment
+* [textured-items-and-cyberpunk-materials.md](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention") will tell you more about Cyberpunk's material system
+
 [^1]: Level of Detail
 
 [^2]: You can see the mode in the topleft corner of the viewport.
