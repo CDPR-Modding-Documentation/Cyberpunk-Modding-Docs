@@ -104,8 +104,8 @@ For **how** to export a mesh, see [Import/Export: Mesh (3d Model)](https://app.g
 {% hint style="info" %}
 If your mesh won't export from Wolvenkit, try unchecking the following box(es) in the export settings (by unchecking the boxes):&#x20;
 
-* [Export Materials](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials "mention")
-* [Export Garment Support (Experimental)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-experimental "mention")
+* [export-materials](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials "mention")
+* [export-garment-support-experimental](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-experimental "mention")
 {% endhint %}
 
 Once you are done, you can find the exported glb in your project's raw folder (see [Project Explorer Tabs](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#project-explorer-tabs "mention") or[File Structure: the raw folder](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure-the-raw-folder "mention") for details).
@@ -216,11 +216,19 @@ We can simply parent the meshes to our existing armature:
 
 ## Step 4: Weight Transfer
 
+Start by **deleting all vertex groups** from your new mesh, as we will now replace these and don't want anything funky to stick around to destroy our re-import:
+
+<figure><img src="../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
+
+You now need to transfer the weights from your original game mesh. If you deleted or overwrote the armature's original meshes during [#step-3-parenting-the-mesh-es](porting-3d-objects-to-cyberpunk.md#step-3-parenting-the-mesh-es "mention"), you can simply import it again for a second copy.
+
 {% hint style="info" %}
-If you deleted or overwrote the armature's original meshes during [#step-3-parenting-the-mesh-es](porting-3d-objects-to-cyberpunk.md#step-3-parenting-the-mesh-es "mention"), you can simply import it again for a second copy.
+The [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention") has a function to[ do this for you](../modding-tools/wolvenkit-blender-io-suite/#modelling). For the sake of completeness, the box below contains the full manual process, but we recommend using the plugin's Mesh Tool panel to do this.
 {% endhint %}
 
-The [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention") has a function to[ do this for you](../modding-tools/wolvenkit-blender-io-suite/#modelling). If that doesn't, here's how to do it by hand:
+<details>
+
+<summary>Transferring weights by hand</summary>
 
 1. Select your mesh
 2. Select the original mesh
@@ -231,9 +239,13 @@ The [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "m
    * **Vertex Mapping:** Nearest Face Interpolated
    * **Source Layers Selection:** All Layers
 
-<figure><img src="../../.gitbook/assets/porting_transfer_vertex_weights.png" alt=""><figcaption></figcaption></figure>
+<img src="../../.gitbook/assets/porting_transfer_vertex_weights.png" alt="" data-size="original">
 
 6. Repeat that process for all of your meshes.&#x20;
+
+</details>
+
+
 
 ### Step 4.5: Weight Painting
 
