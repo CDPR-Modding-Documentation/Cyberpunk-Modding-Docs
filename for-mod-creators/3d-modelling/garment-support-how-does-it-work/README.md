@@ -18,13 +18,7 @@ If you want to **create** garment support, check [garment-support-from-scratch.m
 
 If you want to **use** garment support in an existing mod, you only need to use [#component-prefixes](./#component-prefixes "mention")
 
-#### Troubleshooting garment support
-
-If your garment support isn't working as expected, you can&#x20;
-
-Option 1 (advised): re-create [garment-support-from-scratch.md](garment-support-from-scratch.md "mention") in Blender. Then, import it again — as of 2.13, you don't even have to [tick the box](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/import-export/models#import-settings) anymore.
-
-If you're fed up with this shit and just want your item to stop cosplaying as exploding pixel cloud, you can use [#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh](../troubleshooting-your-mesh-edits.md#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh "mention") (not advised)
+#### [#troubleshooting-garment-support](./#troubleshooting-garment-support "mention")
 
 ## What is garment support?
 
@@ -160,3 +154,24 @@ The simplest way to add functioning garment support to your custom item is to ha
 **Every** submesh of your garment _must_ have these three attributes in order for garment support to function correctly - even submeshes that contain non-deformable things like accessories, buckles, chains, belts, etc.
 {% endhint %}
 
+## Troubleshooting Garment Support
+
+### My garment support doesn't work with other items!
+
+It's not doing that to spite you. Most likely, you have a non-unique component ID, and the game can't tell the two items apart. Here's how to resolve that:
+
+<figure><img src="../../../.gitbook/assets/unique_cruids.png" alt=""><figcaption><p>The CRUID editor is available in Wolvenkit 8.14+ - you can go grab the <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a>, too </p></figcaption></figure>
+
+### Importing with Garment Support
+
+Make sure that your mesh has the [Import Garment Support](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") property checked (this should be default by now).
+
+If that doesn't work, you still have the option to re-create [garment-support-from-scratch.md](garment-support-from-scratch.md "mention") in Blender
+
+### Yeeting Garment Support
+
+If you're fed up with this shit and just want your item to stop cosplaying as exploding pixel cloud, you can use [#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh](../troubleshooting-your-mesh-edits.md#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh "mention").
+
+{% hint style="danger" %}
+This wil prevent your garment from shrinking under other, "larger" garments, and practically guarantee that it clips.
+{% endhint %}
