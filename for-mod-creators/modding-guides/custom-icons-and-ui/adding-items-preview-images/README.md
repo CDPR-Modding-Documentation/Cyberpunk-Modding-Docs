@@ -235,8 +235,8 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 
 <figure><img src="../../../../.gitbook/assets/inkatlas_slot_names.png" alt=""><figcaption></figcaption></figure>
 
-4. Save the file. If it doesn't update, close and re-open it.
-5. You now have a tab "PartMapping". You can see which texture corresponds to which slot by selecting it in the other tab and checking the `partsName`, which corresponds to the entry in the slot's `parts` array:
+4. Save the file. If it doesn't update, reload it (Hotkey: `Ctrl+R`)
+5. You now have a tab "PartMapping", where you can see which texture corresponds to which slot: select it on the left and check the `partsName`, which corresponds to the entry in the slot's `parts` array:
 
 <figure><img src="../../../../.gitbook/assets/inkatlas_icon_to_slot_assignment.png" alt=""><figcaption></figcaption></figure>
 

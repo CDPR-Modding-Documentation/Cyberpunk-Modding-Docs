@@ -15,20 +15,46 @@ We're taking this Liberty handgun mesh (I think it used to belong to some Dexter
 
 You need a [Wolvenkit Project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects). But if you're reading this, you probably have one already.
 
-## Custompathing game files
+<details>
 
-Find the original file at `base\weapons\firearms\handgun\constitutional_liberty\entities\meshes\w_handgun__constitutional_liberty__base1_01.mesh` and [add it to your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
+<summary>Step 1: Getting a file to custompath</summary>
 
-<figure><img src="../../../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
+You can either download a template file (for example, from the [wiki's repository](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/\_resources\_and\_assets/icons)), or simply find a game file and and [add it to your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
 
-In the [project explorer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer), right click > copy > paste wherever you want it. Change the file name and you're done, it's that simple. Now you can export the file, change whatever you want, and re-import it.&#x20;
+Once you have the file, you can move it wherever you want it, either in the Windows Explorer or in Wolvenkit's [project explorer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer):
 
-<figure><img src="../../../.gitbook/assets/image (168).png" alt=""><figcaption><p>Just remember to change the reference to the mesh or file you want to change.</p></figcaption></figure>
+<img src="../../../.gitbook/assets/image (168).png" alt="Just remember to change the reference to the mesh or file you want to change." data-size="original">
 
-## Custompathing stuff in game files
+Once you're done, we can proceed to the next section.
 
-{% hint style="danger" %}
-This section should teach you how to use e.g. custom .mlsetups in mesh files, or custom meshes in .app files. It doesn't exist yet. Maybe you want to [sign up](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7) and write it?
+</details>
+
+## Custompathing (in) game files
+
+You have added a game file to your project, or you have downloaded a template file, and now want to change the references.&#x20;
+
+If your file type isn't included in the lists of examples, you need to look through the file, or use Wolvenkit's [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation)
+
+### .mesh
+
+{% hint style="info" %}
+For more information about .this, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")
 {% endhint %}
+
+Find your `CMaterialInstance` in either `localMaterialBuffer.materials` or `preloadLocalMaterials`, then change any depot paths in the properties:
+
+<figure><img src="../../../.gitbook/assets/custompathing_mesh.png" alt=""><figcaption></figcaption></figure>
+
+### .inkatlas
+
+{% hint style="info" %}
+For more information about this, check [game-icons-the-inkatlas-file.md](../../files-and-what-they-do/game-icons-the-inkatlas-file.md "mention")
+{% endhint %}
+
+For modded files, you only need slot 0 - 1 and 2 can be blank.
+
+The `texture` property is optional.
+
+<figure><img src="../../../.gitbook/assets/custompathing_inkatlas.png" alt=""><figcaption></figcaption></figure>
 
 ## Until next time, chooms!

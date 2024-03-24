@@ -2,22 +2,46 @@
 
 ## Summary
 
-**Created by** [MxOrcBoi](https://app.gitbook.com/u/YRvTJDa38nMHXIZUnmSdbzZv4lw2 "mention")\
-**Published July 15. 2023**
+**Published:** July 15. 2023 by [MxOrcBoi](https://app.gitbook.com/u/YRvTJDa38nMHXIZUnmSdbzZv4lw2 "mention")\
+**Last documented edit:** Mar 24 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide is a subsection of the [weapons](../items-equipment/adding-new-items/weapons/ "mention") ArchiveXL guide and details the process of adding a HUD icon. The same principle applies for other parts of the UI.
+This guide tells you how to add a custom HUD icon for a weapon.  It is a subsection of the [weapons](../items-equipment/adding-new-items/weapons/ "mention") guide, but since the same principle applies for all parts of the UI, it can be used standalone.
 
-## Adding custom player HUD icon
-
-
+## The final result
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-07-09 231525.jpg" alt=""><figcaption><p>Custom HUD created for the rebar club.</p></figcaption></figure>
 
-To add custom HUD icon:
+## Step 1: Setting up the files
 
-1. Add `base\gameplay\gui\widgets\ammo_counter\atlas_ammo_counter.inkatlas` and `base\gameplay\gui\widgets\ammo_counter\atlas_ammo_counter.xbm` to your project.
-2. [Export](../textures-and-luts/images-importing-editing-exporting.md) `base\gameplay\gui\widgets\ammo_counter\atlas_ammo_counter.xbm` as PNG and create a custom icon in chosen editing software. (You can refer to [creating custom inventory icons](adding-items-preview-images/) if you need further reference material).
-3. [Import](../../3d-modelling/exporting-and-importing-meshes/) your PNG over the xbm with those settings:
+We need an [.inkatlas](../../files-and-what-they-do/game-icons-the-inkatlas-file.md) file and a [texture](../../files-and-what-they-do/textures-.xbm-files.md).&#x20;
+
+1. Download the correct template from the wiki's [github repository](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/\_resources\_and\_assets/icons). For a hudicon, that's [weapons\_hudicon.zip](../../../\_resources\_and\_assets/icons/weapon\_hudicon.zip)
+2. Extract both files to a fitting subfolder in your Wolvenkit project.
+
+Now we need to [custompath](../everything-else/custompathing-assets.md#inkatlas) those files:
+
+1. Open your `.inkatlas` file
+2. Open the `slots` array
+3. Click on each slot and set the value to your texture's relative path
+
+<figure><img src="../../../.gitbook/assets/custompathing_inkatlas.png" alt=""><figcaption></figcaption></figure>
+
+#### **Optional: re-name your slot**
+
+If you're cool with your slot's name being `your_custom_hudicon`, you can change its name:
+
+1. Expand the first slot (the one with the number 0)
+2. Expand its list of parts
+3. Select the first entry `your_custom_hudicon` and change its name to whatever you want to use in the yaml
+
+## **Editing the texture**
+
+[Export](../textures-and-luts/images-importing-editing-exporting.md) your .xbm (texture) via Wolvenkit, then edit the resulting .png in chosen your image editor of choice.
+
+* For more info on texture editing (and transparency!), check [images-importing-editing-exporting.md](../textures-and-luts/images-importing-editing-exporting.md "mention")
+* For a (far) more detailed guide, check [creating custom inventory icons](adding-items-preview-images/)
+
+**Once you are done,** [Import](../../3d-modelling/exporting-and-importing-meshes/) your PNG over the xbm with those settings:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2023-07-09 232152.jpg" alt=""><figcaption><p>HUD Icon import settings.</p></figcaption></figure>
 

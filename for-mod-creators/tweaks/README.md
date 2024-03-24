@@ -6,14 +6,23 @@ description: >-
 
 # 🪝 Tweaks
 
-**Created:** Mar 18 2024&#x20;
+## **Summary**
 
-**Last documented update:** Mar 18 2024&#x20;
+**Created:** Mar 18 2024 by @Bioskop\
+**Last documented update:** Mar 24 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This is the landing page for the Tweaks section of the wiki. It doesn't contain any information on its own, but you can explore its subcategories in the menu bar or use the links at the bottom of the page to browse them.
+
+### Tweak modding guides
+
+
+
+
 
 ***
 
 {% hint style="info" %}
-If you're looking for detailed guides, simply explore the subcategories within this category.
+If you're looking for guides, simply explore the subcategories within this category.
 {% endhint %}
 
 ## TweakDB&#x20;
