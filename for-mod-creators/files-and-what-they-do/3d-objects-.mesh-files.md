@@ -4,27 +4,39 @@ description: Documentation on .mesh files and their properties.
 
 # 3d objects: .mesh files
 
-This page contains information on .mesh files and their properties.
+## Summary
 
-* If you want to export or import mesh files, see [exporting-and-importing-meshes](../3d-modelling/exporting-and-importing-meshes/ "mention")
-* If you want to learn how to edit a mesh's appearance, check [changing-materials-colors-and-textures.md](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
-* If you want to play around with mesh materials, see [textured-items-and-cyberpunk-materials.md](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention")
+**Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** March 24 2024 by [yellingintothevoid](https://www.nexusmods.com/users/127630298?tab=user+files)
 
-{% hint style="info" %}
+This page contains information on `.mesh` files and their properties.
+
+### Wait, that's not what I want!
+
+* See [wkit-blender-plugin-import-export.md](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention") for a guide on export/import
+* To edit a mesh's appearance, check [changing-materials-colors-and-textures.md](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
+* To learn about mesh materials, see [textured-items-and-cyberpunk-materials.md](../../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention")
+* To hide parts of a mesh under different circumstances, check [first-person-perspective-fixes.md](../../modding-guides/items-equipment/first-person-perspective-fixes.md "mention")
+
+## What's a mesh?
+
 In the context of Cyberpunk, a mesh is the file that defines the topology[^1] and the materials[^2] of an object in the game world.
 
-A mesh can have several **submeshes**, each of which has own material assignments.
-{% endhint %}
+A mesh can have several **submeshes**, each of which has own material assignments. You can learn more about this on the sub-page for [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention").
+
+Mesh files for inanimate objects also tend to contain extensive physics parameters governing their physical weight and general behavior.
 
 ## How the mesh is loaded
 
-Meshes are loaded in .app files ( [#components](appearance-.app-files.md#components "mention") ) or .ent files ( [#mesh-component-entity-simple-entity](entity-.ent-files/#mesh-component-entity-simple-entity "mention")) via [components](components/ "mention"), e.g.[#entgarmentskinnedmeshcomponent](components/documented-components.md#entgarmentskinnedmeshcomponent "mention").&#x20;
+Meshes are loaded via [components](../components/ "mention") (e.g. [#entgarmentskinnedmeshcomponent](../components/documented-components/#entgarmentskinnedmeshcomponent "mention")).  Components are defined either in [mesh entity](../entity-.ent-files/#mesh-component-entity-simple-entity) files or in an [.app file](../appearance-.app-files/), where each [appearance](../appearance-.app-files/#appearances) has its own [components](../appearance-.app-files/#components) array.
 
-### Shadows
+For more information on this, please check [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention") -> [#chunkmasks-partially-hiding-meshes](submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
+
+## Shadows
 
 There are two ways of adding shadows to  meshes:&#x20;
 
-#### Component property
+### Component property
 
 To make a mesh cast a real-time shadow, set the component's property `castShadows` to `Always`.
 
@@ -32,82 +44,54 @@ To make a mesh cast a real-time shadow, set the component's property `castShadow
 Depending on your geometry, this can impact performance.
 {% endhint %}
 
-#### Shadow mesh
+### Shadow mesh
 
 Many meshes have dedicated shadow meshes, which have a much lower level of detail and will be hidden by default. You can open any clothing item's mesh entity to see this in action.
 
+## Mesh Preview
+
+You can see which submesh is which in the `Mesh Preview` tab after opening the mesh file:
+
+<figure><img src="../../../.gitbook/assets/mesh_preview_tab.png" alt=""><figcaption></figcaption></figure>
+
+With the boxes on the left, you can toggle submeshes on and off.&#x20;
+
+{% hint style="info" %}
+Submesh numbers correspond directly to a component's [#chunkmask](../components/#chunkmask "mention") property. For technical reasons, the chunkmask dropdown supports up to 64 entries — just ignore the missing numbers.
+{% endhint %}
+
 ## Material assignment
 
-### Step 1: Appearances
+This section describes how materials are assigned inside each mesh. To learn more about submeshes and chunkmasks, check [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention").
 
-{% hint style="info" %}
-This page only contains mesh-specific information. Find more details on materials, the [corresponding section](../materials/).&#x20;
-{% endhint %}
+This page only contains mesh-specific information. Find more details on materials under [materials](../../materials/ "mention").
 
-This is how to determine which parts of the mesh have which material:
+### Appearances
 
-<figure><img src="../../.gitbook/assets/materials_explanation.png" alt=""><figcaption><p>Example: A mesh with two materials, one of them a local instance, one of them an external .mi file</p></figcaption></figure>
+The way a 3D object looks in-game is defined by `appearances` within the `.mesh` file. These appearances are split up by the submeshes of said 3D object (explained above). Each submesh gets assigned a `chunkMaterial` with an arbitrary name. This arbitrary name in turn is defined in the `materialEntries` within the `.mesh` file. All `materialEntries` contain a property called `isLocalInstance` which decides which buffer the actual material is loaded from. If `isLocalInstance` is set to `True`, the material index points to `localMaterialBuffer` or `preloadLocalMaterialInstances`. If it is set to `False`, the material index points to `externalMaterials` or `preloadExternalMaterials`. To simplify, here's a little chart:
 
-### ChunkMaterials
-
-You assign materials based on the "chunks" (the individual submeshes) inside a mesh. Open the mesh file in Wolvenkit and open the "appearances" array, then make sure that each of your submeshes has an entry inside the array.
-
-<figure><img src="../../.gitbook/assets/mesh_material_appearance.png" alt=""><figcaption><p>You may have to create additional entries in "chunkMaterials": Either duplicate an existing entry from the right-click menu, or select the array and use the yellow (+) in the side panel.</p></figcaption></figure>
-
-### Material definition
-
-Materials are defined in the array **`materialEntries`** inside your mesh:
-
-<figure><img src="../../.gitbook/assets/materials_materialentries_overview.png" alt=""><figcaption><p>For a detailed example, see <a href="../materials/re-using-materials-.mi.md#maximally-lazy-external-materials">re-using materials</a></p></figcaption></figure>
-
-{% hint style="warning" %}
-While you can mix external and local materials, you can not mix preloaded and non-preloaded ones. For details, see [below](3d-objects-.mesh-files.md#preload...-what).
-{% endhint %}
-
-<table><thead><tr><th width="202">Property</th><th>Description</th></tr></thead><tbody><tr><td>index</td><td><strong>numerical index</strong> of corresponding material in target list (as defined by <code>isLocalInstance</code>)</td></tr><tr><td>isLocalInstance</td><td>Selects the material target list.<br><strong>True:</strong> <a href="3d-objects-.mesh-files.md#materialinstance-the-local-material">local material</a> in <code>localMaterialBuffer.materials</code> or <code>preloadLocalMaterialInstances</code><br><strong>False:</strong> <a href="3d-objects-.mesh-files.md#material-reference-a-material-somewhere-else">material reference</a> in<code>externalMaterials</code> or <code>preloadExternalMaterials</code><br><br>For more information on this, see the page for <a href="../materials/re-using-materials-.mi.md#maximally-lazy-external-materials">local/external materials</a>.</td></tr><tr><td>name</td><td><strong>unique</strong> name of material, used to select the material via <code>chunkMaterial</code></td></tr></tbody></table>
-
-#### Preload… what?
-
-Many of CDPR's early meshes use `preloadLocalMaterialInstances` instead of `localMaterialBuffer.materials`. As far as we are concerned, you can use the two interchangeably, **but**:&#x20;
-
-If you are using **a mix of local and external materials**, you **must** use the corresponding lists:
-
-| local                           | external                   |
-| ------------------------------- | -------------------------- |
-| `localMaterialBuffer.materials` | `externalMaterials`        |
+| `isLocalInstance: True` | `isLocalInstance: False` |
+| --- | --- |
+| `localMaterialBuffer` | `externalMaterials` |
 | `preloadLocalMaterialInstances` | `preloadExternalMaterials` |
 
-&#x20;If you mix the two, the materials outside of `preload`… will appear as transparent the first 1-2 times you trigger your item's appearance.
+`localMaterialBuffer` and `preloadLocalMaterialInstances` are used interchangeably and everything explained about the `localMaterialBuffer` also applies to `preloadLocalMaterialInstances`. More on `externalMaterials` later.
 
-### Step 3: Material definition
+The `localMaterialBuffer`contains the actual make up, the recipe if you will, of the material itself. `materials` within the `localMaterialBuffer` can either be textured materials, or multilayered materials. A textured material is a standard PBR shader that uses `engine\materials\metal_base.remt` as `baseMaterial`. Multilayered materials expand on PBR shaders by layering them. Multilayered materials use `engine\materials\multilayered.mt` as `baseMaterial` and contain a `GlobalNormal`, a `MultilayerMask`, and a `MultilayerSetup`. How these work exactly can be found in [this tutorial](../materials/multilayered).
 
-A material definition can be in a `CMaterialInstance` inside the mesh or in a [`.mi` file](../materials/re-using-materials-.mi.md) in the project. For local materials, Wolvenkit will display material names as defined in the `materialEntries`.
+Next to `localMaterialBuffer` there are also `externalMaterials`. These forgo storing properties on how the material is rendered inside the `.mesh` by storing them in a `.mi` file. This is a neat shortcut if you want to prevent having to adjust the same properties across lots of `appearances`. However, mixing local and external materials means you have to pay close attention to which material buffer you are using. See the chart above for reference. More info on `.mi` files and how the shortcut works exactly can be found [here](../re-using-materials-.mi.md#.mi-files-to-the-rescue).
 
-For more details on material definitions, [check here](../materials/).
+All of this sounds very complicated in theory but becomes much, much clearer once seen in action:
 
-### MaterialInstance: The local material
-
-The materials themselves are inside the array `localMaterialBuffer.materials` (or `preloadLocalMaterials` in case of older meshes).&#x20;
-
-{% hint style="success" %}
-You can't go wrong by using those. However, if you don't have any properties that are unique to your mesh or appearance (for example a custom normal map), you might consider [creating and using an external material instead](../materials/re-using-materials-.mi.md).
-{% endhint %}
-
-A material instance looks like this:
-
-<figure><img src="../../.gitbook/assets/material_docu_material_instance.png" alt=""><figcaption><p>baseMaterial picks the material (shader), while "values" contains <a href="3d-objects-.mesh-files.md#checking-material-properties">properties</a> to adjust it.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/meshes_material_diagram.jpg" alt=""><figcaption><p>
 
 {% hint style="info" %}
-You can find a guide about [texture editing](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) and [adding custom textures](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-4-optional-custompathing) in the [modding-guides](../modding-guides/ "mention") section.
+You can find a guide about [texture editing](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) and [adding custom textures](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-4-optional-custompathing) in the [modding-guides](../../modding-guides/ "mention") section.
 
-For an overview of materials that you might want to use for something, check [here](../../modding-know-how/references-lists-and-overviews/cheat-sheet-materials.md).&#x20;
+For an overview of materials that you might want to use for something, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).&#x20;
 
-For how to find out which properties a material has, check [here](../materials/#checking-material-properties).
+For how to find out which properties a material has, check [here](../../materials/#checking-material-properties).
 {% endhint %}
-
-### Material reference: [reusing materials](../materials/re-using-materials-.mi.md#maximally-lazy-external-materials)
-
-A relative path to an external material, usually encapsulated in a [.mi file](../materials/re-using-materials-.mi.md#.mi-files-to-the-rescue). Use this if you don't need to add extra properties.
 
 [^1]: vertices, edges – everything that makes up the 3d object's surface information
 
