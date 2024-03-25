@@ -90,7 +90,9 @@ What you want to look for is how much the vanilla hairstyle overlaps with your m
 
 ![](https://lh7-us.googleusercontent.com/d8utrGKyBwy64gsA1o78gG\_xGLqXZMAcaB8hsmMpTu0YnuerbPWzK6g51wy6DgvWHyTl\_cVOzkuuLXqsUHjy1iI3MPKv2lDKLXflsuxIQFdHDzlPLFd7CKSsGhTJlUiq0m\_Lm8sDq6IcvIR78cJigyY)
 
-If you want your hair to have physics, be sure to export the `.animgraph` and `.rig`. They are the physic components for the hair.
+If you want your hair to have physics, be sure to include the `.animgraph` and `.rig` into the project. They are the physic components for the hair.
+
+I've done this enough time to have some experience regarding which mesh should I use for weight transfer. For Front and Right Bang, use components from `hh_081_wa__buns_02`, for Left Bangs, use `hh_040_wa__pixie_bob` , for hair on shoulder, use `hh_118_wa__gillean` or `hh_115_wa__alanah`, for ponytails use `hh_083_wa__ponytail_01`.
 
 \-Import the mesh into the game and transfer the weights from vanilla mesh to your mesh. Watch this [video](https://youtu.be/bR\_Vke\_\_voU?si=UWTVLX6\_eWCfR8Uh) if you don’t know how to transfer weights.
 
@@ -138,7 +140,7 @@ This is how your UV should ideally look like. Everything is where the alpha will
 
 ![](https://lh7-us.googleusercontent.com/mCiabspnfeyj-RuZMMWQfDHQPdY16m1Q3d0DvA7D9oQQwFItpW0RDml7Hma7iuBaZLvY5aK5d-8uYfYSjqRBeF0S5dwvKGbswI\_JMClEvoUbifbRR2HicRaPgFB5bmGY3VeF74xvVyGke\_gOXPQ1heE)
 
-You can preview how your hair will look in Blender by creating a material and importing all the textures mentioned above.
+You can preview how your hair will look in Blender by creating a material and importing all the textures mentioned above. This part is optional, but it's nice to check for gaps before you export.
 
 \-Create a material and assign it on your mesh before opening the Shading tab.
 
@@ -178,13 +180,13 @@ I want to use `cards`, not `cards_top`. I can manually change every instance of 
 
 Now you can install the mod and see how it looks in the game!
 
-![](https://lh7-us.googleusercontent.com/CR7uiAZIR9pf-JYAvHp4wUvTp756PfSfZTEQc0Af22Cy3RzyHYgL84SXDeKSwYuPsZA2EnFiQ1MUq0ISJPEfyQwp2\_uUqMtr5fTpDTqJrp4x6yElcP-RJX3Q4\_XOaX6uxjh-6qaboAlWi8OO4FA2Ix0)
+<figure><img src="../../../.gitbook/assets/Picture1.png" alt=""><figcaption><p>You call that thing hair?</p></figcaption></figure>
 
 _Oof. The color looks about right, but…_
 
 If you’re wondering why the hair is warping weirdly like that, it’s because of the physics. It is important to understand that the method taught in this tutorial is the easiest and fastest method, but also the most unreliable. Advanced modders can weight paint and edit rigs by themselves instead of relying on vanilla hair weights, but I know neither of those so I can’t teach you how. If you can’t get your hair physics to look right, it’s perfectly fine to leave it static instead. A good looking hairstyle is better than a glitchy wavy mess like this.
 
-![](https://lh7-us.googleusercontent.com/095pvtVHngs\_cIVacrvSG5x-znzss7i0VYUkrMjlpw8xd6uE-gr\_gXxvA9i3fUOvhYpeisBVXztUD1ltWWcra3nCVu5nWL0-eeR9X5ZDnEz-HJPVsvW-YwjHMkdF7EhBafTxWkS1-9IbbnQN9uV3jJ0)
+<figure><img src="../../../.gitbook/assets/Picture2.png" alt=""><figcaption><p>Static, but no weird morphing.</p></figcaption></figure>
 
 _Static hair mesh, but no weird morphing._
 
@@ -200,6 +202,6 @@ The hat’s texture is the same as any other item in the game. You can use Multi
 
 _**Tadaa! A simple hairstyle replacement with a fancy hat.**_
 
-![](https://lh7-us.googleusercontent.com/FPdKWkuzNM7U2I-gGx548LP1aFy2NoG-bPPR7SOsmwKGoS-HaHbDgeGBXXpb6NHLohfuJ8WKTTeuqJttPFG1Bej468QxUZ1GbeY5Rul8fMFYB44bhz0pSHKmLrXBj7FPPTqw4\_GfdVTjuhXm4PvWlFQ)
+<figure><img src="../../../.gitbook/assets/Picture3.png" alt=""><figcaption><p>A complete hairstyle replacement, just like what I wanted.</p></figcaption></figure>
 
 \
