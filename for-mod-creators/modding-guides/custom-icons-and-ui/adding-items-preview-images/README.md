@@ -135,7 +135,7 @@ Make sure to have some decent lighting on your item.
    3. Enter photo mode again and rotate V to about +15 in the Pose tab.
 4. Add some area lights to the scene. The goal is to highlight the shape of the item. So aim for deep shadows, lots of contrast, and prominent contours. In the screenshot below, there are four lights: two from each side behind the item as rim lights, one at a roughly 45° angle in front and above the item as key light, and one of very low intensity directly in front of the camera to fill in shadows.
 
-<img src="../../../../.gitbook/assets/icon_tutorial_01_photo_booth.png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/icon_tutorial_03_lights.png" alt="" data-size="original">
 
 </details>
 
