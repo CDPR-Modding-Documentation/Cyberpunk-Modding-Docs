@@ -207,25 +207,9 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_09_align_icons.png" alt=""><figcaption></figcaption></figure>
 
-4. Select all of your items, duplicate them and merge the layers.
-5. Go to "Layer" in the menubar at the top of your screen on the left and select "Layer Mask" → "From Transparency".
-6. Move the newly created Layer Mask to the white Colour Fill Layer (`alpha mask white`).
-7. Delete the layer of the merged items.
-8. Merge both the white and black Colour Fill Layers.
-9. Select the entire canvas `CTRL + A` and copy your selection `CTRL + C`.
-10. Switch over to the Channels tab in the layers window (alternatively, in the menubar at the top of your screen select "Window" → "Channels"). Select `Alpha 1` and hit `CTRL + V`. Your image now has an alpha layer.
-
-<figure><img src="../../../../.gitbook/assets/icon_tutorial_10_layer_mask.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../../.gitbook/assets/icon_tutorial_11_alpha_mask.png" alt=""><figcaption></figcaption></figure>
-
-11. Select the RGB channel again, go back to the Layers window and select the layer named `slot_01`.
-12. Change its fill colour to something similar to the outside of your item. Repeat this for all other items. This ensures that your in-game icon doesn't have white, frayed edges.
-
-<figure><img src="../../../../.gitbook/assets/icon_tutorial_12_backgrounds.png" alt=""><figcaption></figcaption></figure>
-
-13. Now save the image as a `.tga` in the raw folder of your WolvenKit project. It needs to be a `.tga` for Photoshop to include the Alpha Layer. Without an Alpha Layer, transparency won't work correctly in-game.
-14. Import the `.tga` into your WolvenKit project with the `TEXG_Generic_UI` `TextureGroup` setting and make sure that `PremultiplyAlpha` is enabled.
+4. Hide all other layers except your icons.
+5. Now save the image as a `.png` in the raw folder of your WolvenKit project.
+6. Import the `.png` into your WolvenKit project with the `TEXG_Generic_UI` `TextureGroup` setting and make sure that `PremultiplyAlpha` is enabled.
 
 ## Hooking up the inkatlas
 
