@@ -207,8 +207,9 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 
 <figure><img src="../../../../.gitbook/assets/icon_tutorial_09_align_icons.png" alt=""><figcaption></figcaption></figure>
 
-4. Now save the image as a `.png` in the raw folder of your WolvenKit project.
-5. Import the `.png` into your WolvenKit project with the `TEXG_Generic_UI` `TextureGroup` setting and make sure that `PremultiplyAlpha` is enabled.
+4. Hide all other layers except your icons.
+5. Now save the image as a `.png` in the raw folder of your WolvenKit project.
+6. Import the `.png` into your WolvenKit project with the `TEXG_Generic_UI` `TextureGroup` setting and make sure that `PremultiplyAlpha` is enabled.
 
 ## Hooking up the inkatlas
 
