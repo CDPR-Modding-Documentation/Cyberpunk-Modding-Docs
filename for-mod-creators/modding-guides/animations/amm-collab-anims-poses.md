@@ -19,22 +19,25 @@ This guide will teach you how to add custom animations to **AppearanceMenuMod**'
 
 **Difficulty level:** You're able to read ;) You don't even need to know your way around Wolvenkit for this one!
 
-{% hint style="danger" %}
-This guide will teach you how to hook up an existing .anims file to AMM. If you don't have one yet, you can learn [how to make your own](poses-animations-make-your-own.md).
+### Wait, this is not what I want!
 
 To add poses to photo mode, check [archivexl-adding-photo-mode-poses.md](archivexl-adding-photo-mode-poses.md "mention").
-{% endhint %}
 
 {% hint style="info" %}
 This tutorial will use `animation` and `pose` interchangeably. An animation is simply a pose that moves.
 {% endhint %}
 
-## Getting started
+## Prerequisites
 
-Create a new Wolvenkit project and download the prepared files from mana's mega, either
+1. You have an `.anims` file, either a game file or one that you have [made yourself](poses-animations-make-your-own.md)
+2. You have a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
+3. You have a text editor like [Notepad++](https://notepad-plus-plus.org/downloads/)
+4. You have **one** of the following things:
+   1. The **Easy AMM Poses** tool ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/13904) | [Github](https://github.com/stndn0/Easy-AMM-Poses))
+   2. The template project ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8107))
+   3. **Not recommended:** A different template project or game files that you want to adjust. _If you don't know what you're doing yet, this may lead to frustration_
 
-* the [source folder](https://mega.nz/file/fI9jUCqS#OeYhXBcb9EOnnPdtMmF08P9F8ki9yNdQWcg71CKRZiA) for a working project that you can use immediately
-* the [files](https://mega.nz/file/fI9jUCqS#OeYhXBcb9EOnnPdtMmF08P9F8ki9yNdQWcg71CKRZiA) to set up your own structure and start from scratch
+## Overview
 
 The screenshots show the example project, but it's absolutely no problem if you set up everything on your own: the guide will tell you which path goes where.
 
@@ -47,6 +50,16 @@ If you have downloaded the example Wolvenkit project, you can start it (the "Ins
 \- Find the `Netrunner making AMM mods` category and select one of the poses\
 \- Your NPC should now move!
 {% endhint %}
+
+### Easy AMM poses
+
+Instead of following the process below, you can use the [Easy AMM poses ](https://www.nexusmods.com/cyberpunk2077/mods/13904)generator, which will walk you through the process.&#x20;
+
+The pose generator will generate the entire structure out of your `.anim` file and your user input. You can then follow the steps under [#connecting-the-files](amm-collab-anims-poses.md#connecting-the-files "mention") to move your files around.
+
+Visual learners rejoice: There is a video!
+
+{% embed url="https://www.youtube.com/watch?v=u4dW-kUs184" %}
 
 ## Connecting the files
 
@@ -62,9 +75,9 @@ Your file structure **must not** contain spaces, capital letters, or any funky c
 
 ### File structure: The .lua
 
-1. Rename `your_optional_subfolder` to something you want to group by, e.g. your username. You can also remove it, we only need the file
+1. Any lua poses for AMM must be inside `Custom Poses`,  but you can rename `your_optional_subfolder` to whatever you want (or even delete it).
 2. Rename `amm_tutorial.lua` to something that identifies your pose pack, e.g. `netrunner_coding`
-3. Open the file in a text editor. Let's look at the entries (we'll ignore anims for now and look at it in the second part about customizing animations):
+3. Open the file in your text editor. Let's look at the first half of the entries (we'll check the second half later):
 
 ```lua
 return {
@@ -87,10 +100,14 @@ return {
 
 4. Change `modder` to your name so people know who made this.
 5. Change `category` to the name of your pose pack. This will be used for AMM to sort your poses into categories, which people will use to browse, so don't go overboard.
-6. Change `entity_path`: Right-click on your .ent file in WKit and select `Copy relative Path` and paste it into the lua. \
-   Don't forget the duplicate `\`.&#x20;
+6. Change `entity_path`: Right-click on your .ent file in WKit and select `Copy relative Path` and paste it into the lua.&#x20;
+7. Replace all `\` in your entity path with `\\`. **This is critical and your mod will not work if you don't!**
 
 ### File structure: The .ent
+
+{% hint style="info" %}
+Entity files tell the game what to load. You can learn more about them [here](../../files-and-what-they-do/entity-.ent-files/) if you are curious, but you don't have to.
+{% endhint %}
 
 Open the `components` array, find the component with the name of `amm_workspot_collab`, and set the depotPath of workspotResource to the relative path of your [`.workspot`](amm-collab-anims-poses.md#file-structure-the-.workspot) file.
 
