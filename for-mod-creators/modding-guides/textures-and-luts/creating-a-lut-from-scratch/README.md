@@ -103,7 +103,7 @@ It may share a name with the LogC3 method, but is distinct from it as it uses a 
 
 Follow the same link described in the [#arri-logc3-method](./#arri-logc3-method "mention") section until you reach this part. Download the "ARRI LogC4 LUT Package".
 
-<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>The LogC4 LUTs we will use.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>The LogC4 LUTs we will use.</p></figcaption></figure>
 
 Once you have downloaded it, extract the Rec.709 Gamma 2.4 65-point .CUBE file from the zip file. Add a serial node after the Color Space Transform called File LUT and point the LUT file to your extracted .CUBE file.
 

@@ -233,27 +233,35 @@ You can learn more about chunk masks under [3d-objects-.mesh-files](../../files-
 
 <figure><img src="../../../.gitbook/assets/image (143).png" alt=""><figcaption><p>Results may vary depending on the item, but this is much better, no?</p></figcaption></figure>
 
-### Creating a second .mesh
+### Creating a second mesh
 
 {% hint style="info" %}
 The clean way to do this is to split the original mesh into submeshes, which you can then hide via chunkmasks. If you want to do that, skip straight to [#editing-the-.mesh](first-person-perspective-fixes.md#editing-the-.mesh "mention")
 {% endhint %}
 
-To show a different item (one with the clipping bits removed) in first person perspective, we need to create a second .mesh file that we can display. This guide will show you how.
+To show a different item (one with the clipping bits removed) in first person perspective, we need to create a second .mesh file and a corresponding meshentity .ent that we can display. This guide will show you how.
 
-1. Duplicate the `.mesh` file that's clipping in first person. For my example. I'm using the jacket mesh
-2. Change its name to end in \_fpp to indicate that this is a mesh for the **first person perspective** (or do whatever you want, but this guide assumes...)
+1. Duplicate the `.mesh` file that's clipping in first person. For my example, I'm using the jacket mesh
+2. Duplicate the meshentity `.ent` file that belongs to the `.mesh` file.
+3. Change their names to end in \_fpp to indicate that this is a mesh for the **first person perspective** (or do whatever you want, but this guide assumes...)
+4.
 
-<figure><img src="../../../.gitbook/assets/first_person_copy_mesh.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/files.png" alt=""><figcaption></figcaption></figure>
+5. In the `.app` file, open your first person appearance.&#x20;
+6. Add a `partsOverride` by following the steps under [#chunk-masks](first-person-perspective-fixes.md#chunk-masks "mention") (skip step 9)
+7. Change the depotPath to your new \_fpp meshentity file.&#x20;
+8.
 
-3. In the `.app` file, open your first person appearance.&#x20;
-4. Add a `partsOverride` by following the steps under [#chunk-masks](first-person-perspective-fixes.md#chunk-masks "mention") (skip step 9)
-5. Change the depotPath to your new \_fpp mesh file.&#x20;
-6. Save and close the .app – it is now pointing at  your .fpp mesh.
+    <figure><img src="../../../.gitbook/assets/app.png" alt=""><figcaption></figcaption></figure>
+9. Save and close the .app – it is now pointing at  your new \_fpp meshentity.
+10. In the \_fpp meshentity file, open the components array&#x20;
+11. Select the component with Mesh in its name, open it and change the depotPath for the mesh to your new \_fpp mesh file.
+12.
 
-{% hint style="info" %}
-TODO: This needs a screenshot
-{% endhint %}
+    <figure><img src="../../../.gitbook/assets/ent.png" alt=""><figcaption></figcaption></figure>
+
+
+13. Save and close the .ent - it is now pointing at your \_fpp mesh.
 
 ### Editing the .mesh
 

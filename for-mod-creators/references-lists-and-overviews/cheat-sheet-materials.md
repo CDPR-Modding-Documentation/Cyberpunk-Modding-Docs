@@ -205,9 +205,9 @@ With ray tracing, the reflection will look better and accurate
 
 Below example image use `glass_tech_reflective.mi`
 
-| Non-ray traced cubemap reflection          | Ray traced reflections                         |
-| ------------------------------------------ | ---------------------------------------------- |
-| ![](<../../.gitbook/assets/image (5).png>) | ![](<../../.gitbook/assets/image (1) (1).png>) |
+| Non-ray traced cubemap reflection    | Ray traced reflections                     |
+| ------------------------------------ | ------------------------------------------ |
+| ![](../../.gitbook/assets/image.png) | ![](<../../.gitbook/assets/image (1).png>) |
 
 ## Other materials
 
