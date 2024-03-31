@@ -79,6 +79,8 @@ As a rule of thumb, I'll document the process for an NPV with a female body gend
 5. Delete the one you're not using (do one Wolvenkit project per NPC. No, really, I mean it.)
 6. In **Wolvenkit**'s [resource tab](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources), delete the `.lua` file for the body gender that you don't want to use.
 
+<figure><img src="../../../../.gitbook/assets/2 delete lua not using.png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="danger" %}
 This tutorial assumes that you will rename and re-path your files **at the very end**, because the prepared files rely on a certain file structure. We'll get to it!
 {% endhint %}
