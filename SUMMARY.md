@@ -266,6 +266,7 @@
     * [🪟 Windows & Doors opening + MountedWeapons clue](for-mod-creators/modding-guides/vehicles/windows-and-doors-opening-+-mountedweapons-clue.md)
     * [🌈 CrystalCoat™](for-mod-creators/modding-guides/vehicles/crystalcoat-tm.md)
     * [Problems and Resolution](for-mod-creators/modding-guides/vehicles/problems-and-resolution/README.md)
+      * [vehicle taillight](for-mod-creators/modding-guides/vehicles/problems-and-resolution/vehicle-taillight.md)
       * [Hand position on steering wheel](for-mod-creators/modding-guides/vehicles/problems-and-resolution/hand-position-on-steering-wheel.md)
   * [🌐 World Editing](for-mod-creators/modding-guides/world-editing/README.md)
     * [World Editing: deleting objects](for-mod-creators/modding-guides/world-editing/world-editing-deleting-objects.md)
