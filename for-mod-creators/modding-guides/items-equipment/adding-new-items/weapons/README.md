@@ -14,7 +14,7 @@ This guide will teach you how to change the ArchiveXL item addition process to m
 #### Wait, this is not what I want!
 
 * For a much more detailed step-by-step guide, check [new-iconic-weapon-tutorial-for-dummies.md](new-iconic-weapon-tutorial-for-dummies.md "mention")
-* For an overview of weapon properties, check [cheat-sheet-weapon-basestats.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats.md "mention")
+* For an overview of weapon properties, check [cheat-sheet-weapon-basestats](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats/ "mention")
 * For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-audio.md "mention")
 
 ## **Prerequisites**

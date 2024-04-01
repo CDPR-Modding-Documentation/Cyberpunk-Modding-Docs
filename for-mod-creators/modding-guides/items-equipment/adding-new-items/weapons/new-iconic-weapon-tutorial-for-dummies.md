@@ -30,7 +30,7 @@ We'll be making a fully featured new Iconic weapon in this guide, which is desig
 #### Wait, this is not what I want!
 
 * You can find another guide about this topic under [.](./ "mention")
-* For an overview of weapon properties, check [cheat-sheet-weapon-basestats.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats.md "mention")
+* For an overview of weapon properties, check [cheat-sheet-weapon-basestats](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats/ "mention")
 * For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-audio.md "mention")
 
 ## Prerequisites
@@ -618,7 +618,7 @@ Once the limitations are set, focus on the weapon's strengths to complement its 
 ## Step 10: Be a stat wizard
 
 {% hint style="info" %}
-You can find an overview of existing weapon stats under [cheat-sheet-weapon-basestats.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats.md "mention")
+You can find an overview of existing weapon stats under [cheat-sheet-weapon-basestats](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats/ "mention")
 {% endhint %}
 
 To change the stats discussed in the step above, we again need to tinker with the `statModifiers` & `statModifierGroups` in your weapon tweak. Open up the tweak for `Items.Preset_Unity_Default` and navigate till you find the two arrays.
