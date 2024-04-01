@@ -94,7 +94,7 @@
   * [Reference: Quest Ids](for-mod-creators/references-lists-and-overviews/reference-quest-ids.md)
   * [Character Creator <=> ent/app](https://noraleedoes.neocities.org/npv/npv\_part\_picker)
   * [Cheat Sheet: Tweaks](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/README.md)
-    * [Cheat Sheet: Weapon BaseStats](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats/README.md)
+    * [Cheat Sheet: Weapon BaseStats](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats.md)
       * [Iconic effects by weapon](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats/iconic-effects-by-weapon.md)
     * [Cheat Sheet: Base Stats](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-base-stats.md)
     * [Cheat Sheet: Weapon Audio](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-audio.md)

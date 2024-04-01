@@ -14,7 +14,7 @@ This page will teach you how to download and configure **MLSetupBuilder**, the t
 At the bottom of the page, you will find [#video-guides](./#video-guides "mention"). Keep in mind that they are outdated.
 
 {% hint style="info" %}
-MLSB 1.6.7 does **not** include a full material preview. The 3d view will only show you which parts of a mesh are affected by your material. If you want to preview a material in colour, you'll have to do this in Blender — use the [wolvenkit-blender-io-suite](../wolvenkit-blender-io-suite/ "mention")'s [mesh import](../wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes).
+MLSB 1.6.7 <mark style="color:red;">does</mark> <mark style="color:red;"></mark><mark style="color:red;">**not**</mark> <mark style="color:red;"></mark><mark style="color:red;">include a full material preview</mark>. The 3d view will only show you which parts of a mesh are affected by your material. If you want to preview a material in colour, you'll have to do this in Blender — use the [wolvenkit-blender-io-suite](../wolvenkit-blender-io-suite/ "mention")'s [mesh import](../wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes).
 {% endhint %}
 
 ### Wait, that's not what I want!
@@ -171,12 +171,15 @@ We're assuming that you have already configured Wolvenkit. If you haven't, pleas
 4. Select "File -> Preferences"
 5. Apply the following settings:
 
-|                      |                                                                                                                  |
-| -------------------- | ---------------------------------------------------------------------------------------------------------------- |
-| Game archives folder | `C:\Your\Path\To\Cyberpunk 2077\archive\pc\content`                                                              |
-| uncook folder        | You can find this folder in your WolvenKit's settings as "Depot Path" (you've seen it in the window from Step 1) |
-| Wolvenkit Depot Path | You can find this folder in your WolvenKit's settings as "Depot Path" (you've seen it in the window from Step 1) |
-| Wolvenkit-CLI.exe    | The executable of Wolvenkit Console from Step 2                                                                  |
+
+
+|                      |                                                                                                                                                                                                          |
+| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Game folder v1.6.7   | `C:\Your\Path\To\Cyberpunk 2077\archive\pc\content`                                                                                                                                                      |
+| Game folder v1.6.8   | `C:\Your\Path\To\Cyberpunk 2077`                                                                                                                                                                         |
+| uncook folder        | You can find this folder in your WolvenKit's settings as "Depot Path" (you've seen it in the window from Step 1)                                                                                         |
+| Wolvenkit Depot Path | You can find this folder in your WolvenKit's settings as "Depot Path" (you've seen it in the window from Step 1)                                                                                         |
+| Wolvenkit-CLI.exe    | The executable of Wolvenkit Console from Step 2, You can download the last compatible and tested CLI from inside MLSB going in the menu <mark style="color:yellow;">Help > Download Wolvenkit.CLI</mark> |
 
 6. Press Ctrl+R to reload MLSB and make sure that the settings are applied.
 
