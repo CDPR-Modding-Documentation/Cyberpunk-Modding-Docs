@@ -14,7 +14,7 @@ This page will teach you how to download and configure **MLSetupBuilder**, the t
 At the bottom of the page, you will find [#video-guides](./#video-guides "mention"). Keep in mind that they are outdated.
 
 {% hint style="info" %}
-MLSB 1.6.7 <mark style="color:red;">does</mark> <mark style="color:red;"></mark><mark style="color:red;">**not**</mark> <mark style="color:red;"></mark><mark style="color:red;">include a full material preview</mark>. The 3d view will only show you which parts of a mesh are affected by your material. If you want to preview a material in colour, you'll have to do this in Blender — use the [wolvenkit-blender-io-suite](../wolvenkit-blender-io-suite/ "mention")'s [mesh import](../wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes).
+MLSB <= 1.6.8 <mark style="color:red;">does</mark> <mark style="color:red;"></mark><mark style="color:red;">**not**</mark> <mark style="color:red;"></mark><mark style="color:red;">include a full material preview</mark>. The 3d view will only show you which parts of a mesh are affected by your material. If you want to preview a material in colour, you'll have to do this in Blender — use the [wolvenkit-blender-io-suite](../wolvenkit-blender-io-suite/ "mention")'s [mesh import](../wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes).
 {% endhint %}
 
 ### Wait, that's not what I want!
@@ -193,7 +193,7 @@ Again, this step is optional, you can [use MLSB](./#using-mlsb) straight away.&#
 
 2. Select the following settings (if you want to uncook everything, this step can take several hours, so we'll only do the essentials for now)
 
-<figure><img src="../../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/New MLSB.PNG" alt=""><figcaption></figcaption></figure>
 
 3. Click "**Uncook**".&#x20;
 4. Wait. Do not interact with the program in any way until the process has finished - especially interacting with the console might just freeze up the entire windows cmd process. This is not MLSB's fault, but due to a Windows standard implementation.
