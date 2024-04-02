@@ -295,6 +295,7 @@
     * [Custom props](for-mod-creators/modding-guides/everything-else/custom-props/README.md)
       * [AMM light components](for-mod-creators/modding-guides/everything-else/custom-props/amm-light-components.md)
     * [Running Python Scripts](for-mod-creators/modding-guides/everything-else/running-python-scripts.md)
+    * [Breach Screen - Replacer](for-mod-creators/modding-guides/everything-else/breach-screen-replacer.md)
     * [Custompathing assets](for-mod-creators/modding-guides/everything-else/custompathing-assets.md)
     * [Your own Atelier Store](for-mod-creators/modding-guides/everything-else/adding-items-atelier-integration.md)
     * [How to translate a Mod](for-mod-creators/modding-guides/everything-else/how-to-translate-a-mod.md)
