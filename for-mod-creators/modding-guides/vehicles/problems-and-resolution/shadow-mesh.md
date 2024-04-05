@@ -33,17 +33,17 @@ The shadow mesh is This is the mesh required for the vehicle to create shadows i
 
 _**Shadow mesh**_
 
-<figure><img src="../../../../.gitbook/assets/image (299).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 _**Original mesh**_
 
-<figure><img src="../../../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
 
 
 _**If the following problems occur**_
 
-<figure><img src="../../../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
 If you made a shadow mesh and put it in
 
@@ -55,6 +55,6 @@ In the "\~shadow.mesh" file
 
 renderResourceBlob -> header -> renderChunkInfos -> rendChunk -> render Mask
 
-<figure><img src="../../../../.gitbook/assets/image (302).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
 Turn off options except "MCF\_RenderInShadows"

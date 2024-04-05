@@ -103,7 +103,7 @@ It may share a name with the LogC3 method, but is distinct from it as it uses a 
 
 Follow the same link described in the [#arri-logc3-method](./#arri-logc3-method "mention") section until you reach this part. Download the "ARRI LogC4 LUT Package".
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>The LogC4 LUTs we will use.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>The LogC4 LUTs we will use.</p></figcaption></figure>
 
 Once you have downloaded it, extract the Rec.709 Gamma 2.4 65-point .CUBE file from the zip file. Add a serial node after the Color Space Transform called File LUT and point the LUT file to your extracted .CUBE file.
 
@@ -133,7 +133,7 @@ After you have used your preferred method, you need to apply gamma correction. I
 
 For the ACES method, you need to add another Color Space Transform node, with input color space and gamma of sRGB, with the output color space of sRGB but output gamma of linear.
 
-<figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>ACES method after gamma correction.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>ACES method after gamma correction.</p></figcaption></figure>
 
 For both ARRI methods, nearly the exact same steps are taken as the ACES method, but, instead of sRGB input color space and gamma, we use an input color space of Rec.709, but input gamma of Gamma 2.4. Keep the output color space at sRGB and output gamma at linear.&#x20;
 
