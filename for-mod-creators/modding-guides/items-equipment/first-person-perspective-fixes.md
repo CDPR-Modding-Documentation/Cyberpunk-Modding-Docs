@@ -42,7 +42,7 @@ If you're creating a fix for someone else's asset, why not drop them the final f
 
 ## Problem #1: Your sleeves render _behind_ your arms
 
-<figure><img src="../../../.gitbook/assets/image (123).png" alt=""><figcaption><p>(This can also present itself as rendering behind the body when you look down, for shirts, pants, shoes, etc.)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (123) (1).png" alt=""><figcaption><p>(This can also present itself as rendering behind the body when you look down, for shirts, pants, shoes, etc.)</p></figcaption></figure>
 
 This is probably the most common problem I've seen, and is also thankfully the easiest to fix.
 
