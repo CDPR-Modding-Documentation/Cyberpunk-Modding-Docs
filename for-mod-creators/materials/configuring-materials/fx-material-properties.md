@@ -4,6 +4,8 @@ description: Animated materials and their properties
 
 # FX Material Properties
 
+For a list of effect materials, check [cheat-sheet-materials.md](../../references-lists-and-overviews/cheat-sheet-materials.md "mention") -> [#fx-shaders](../../references-lists-and-overviews/cheat-sheet-materials.md#fx-shaders "mention")
+
 ## metal\_base\_glitter
 
 This shader glimmers
@@ -28,3 +30,6 @@ Holo material ([example .mi](../../../\_example\_mods\_and\_templates/material\_
 
 `base\fx_shaders\oda_helm.mt`
 
+## Lightning
+
+You can find a mesh-as-effect as component inside `base\characters\cyberware\player\a0_003__mantisblade\appearances\a0_003_wa__mantisblades_edge.app`
