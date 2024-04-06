@@ -12,7 +12,7 @@ This page gives an explanation and overview about material properties. For more 
 
 * If you want to see a list of materials grouped by class, check [cheat-sheet-materials.md](../../references-lists-and-overviews/cheat-sheet-materials.md "mention")
 * If you want to learn how material assignment works on the object, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")
-* If you want to understand material templates, please check [re-using-materials-.mi.md](../../files-and-what-they-do/re-using-materials-.mi.md "mention")
+* If you want to understand material templates, please check [re-using-materials-.mi.md](../../files-and-what-they-do/materials/re-using-materials-.mi.md "mention")
 * The [modding-guides](../../modding-guides/ "mention") section has multiple guides on editing materials, e.g. [changing-materials-colors-and-textures.md](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") or [textured-items-and-cyberpunk-materials.md](../../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention")
 
 ## Material properties

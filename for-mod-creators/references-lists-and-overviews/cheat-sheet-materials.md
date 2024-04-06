@@ -19,7 +19,7 @@ This page contains a brief overview of existing materials. Use the Table of Cont
 #### General information
 
 * How it works in the abstract: [materials](../materials/ "mention")
-* Re-using materials as templates: [re-using-materials-.mi.md](../files-and-what-they-do/re-using-materials-.mi.md "mention")
+* Re-using materials as templates: [re-using-materials-.mi.md](../files-and-what-they-do/materials/re-using-materials-.mi.md "mention")
 * How it works in the example: [3d-objects-.mesh-files](../files-and-what-they-do/3d-objects-.mesh-files/ "mention")
 
 #### Multilayered

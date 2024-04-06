@@ -73,13 +73,13 @@ You can find the [definitions](../../files-and-what-they-do/3d-objects-.mesh-fil
 * Normal (bump/height map)
 * Albedo (diffuse/complexion)
 
-All other properties are pulled from a [.mi file](../../files-and-what-they-do/re-using-materials-.mi.md) in the following folder:
+All other properties are pulled from a [.mi file](../../files-and-what-they-do/materials/re-using-materials-.mi.md) in the following folder:
 
 <table><thead><tr><th width="251"></th><th></th></tr></thead><tbody><tr><td>female body gender</td><td><code>base\characters\common\skin\character_mat_instance\female\head\</code></td></tr><tr><td>male body gender</td><td><code>base\characters\common\skin\character_mat_instance\male\head\</code></td></tr></tbody></table>
 
 ### Head: material instances
 
-This section only lists [.mi files](../../files-and-what-they-do/re-using-materials-.mi.md) used by the player head.&#x20;
+This section only lists [.mi files](../../files-and-what-they-do/materials/re-using-materials-.mi.md) used by the player head.&#x20;
 
 {% hint style="warning" %}
 About half of these files are shared by NPCs. Editing or replacing these will affect all of Night City!

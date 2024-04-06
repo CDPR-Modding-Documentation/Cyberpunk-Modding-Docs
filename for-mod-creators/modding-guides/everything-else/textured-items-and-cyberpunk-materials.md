@@ -361,7 +361,7 @@ You can name your materials whatever you like, as long as you stick to the follo
 
 #### Explanation:&#x20;
 
-MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](../../files-and-what-they-do/3d-objects-.mesh-files/#chunkmaterials) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../files-and-what-they-do/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
+MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](../../files-and-what-they-do/3d-objects-.mesh-files/#chunkmaterials) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../files-and-what-they-do/materials/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
 
 {% hint style="success" %}
 Now, we adjust the materials — we'll just change a few properties to show you how it works, and then you can go play.&#x20;

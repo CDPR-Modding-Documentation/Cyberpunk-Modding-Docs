@@ -24,7 +24,7 @@ This guide will walk you through **editing NPC appearances** for Cyberpunk 2077.
 * If you want to add AMM appearances to existing NPCs, check [amm-custom-npc-appearances.md](amm-custom-npcs/amm-custom-npc-appearances.md "mention")
 * If you want to add V as an NPC, check [npv-v-as-custom-npc](npv-v-as-custom-npc/ "mention")
 * If you want a more basic guide that goes into more detail for the basic stuff (including Blender), see [altering-appearances-within-wolvenkit-full-workflow.md](altering-appearances-within-wolvenkit-full-workflow.md "mention")
-* If you're after hair colours, check [#creating-your-own-hair-colours](../../materials/configuring-materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention") and follow the links from there.
+* If you're after hair colours, check [Broken link](broken-reference "mention") and follow the links from there.
 
 ***
 

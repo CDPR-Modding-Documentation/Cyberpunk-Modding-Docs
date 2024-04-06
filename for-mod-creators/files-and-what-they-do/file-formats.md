@@ -68,7 +68,7 @@ A material definition for a shader. You can assign those to **CMaterialInstance*
 
 {% hint style="info" %}
 For further detes on materials, see [here](../materials/). \
-For an explanation on .mi files, see [here](re-using-materials-.mi.md).
+For an explanation on .mi files, see [here](materials/re-using-materials-.mi.md).
 {% endhint %}
 
 ### Relevant properties:&#x20;

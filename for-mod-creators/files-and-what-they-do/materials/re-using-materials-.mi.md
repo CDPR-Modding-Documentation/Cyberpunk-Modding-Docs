@@ -10,13 +10,13 @@ description: Material Instances and external materials
 
 ## What is a material instance?
 
-A .mi file **encapsulates** a material in a **reusable** template file, which you can use a .mi file as `base material` in a [material definition](3d-objects-.mesh-files/#step-3-material-definition).&#x20;
+A .mi file **encapsulates** a material in a **reusable** template file, which you can use a .mi file as `base material` in a [material definition](../3d-objects-.mesh-files/#step-3-material-definition).&#x20;
 
-It is possible to use multiple .mi files in a row. For an example of this, check the player's [skin materials](../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index).
+It is possible to use multiple .mi files in a row. For an example of this, check the player's [skin materials](../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index).
 
 <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Daisy_chain.JPG/1200px-Daisy_chain.JPG" alt=""><figcaption><p>The technical term for doing this is "daisy chaining". (Image: Wikimedia commons). Caution: Cyclic dependencies <em>will</em> crash your game!</p></figcaption></figure>
 
-For more information of this, you can look at [shaders](../materials/shaders/ "mention") -> [#the-daisy-chain](../materials/shaders/#the-daisy-chain "mention")
+For more information of this, you can look at [shaders](../../materials/shaders/ "mention") -> [#the-daisy-chain](../../materials/shaders/#the-daisy-chain "mention")
 
 ## Why do I need this?
 
@@ -27,7 +27,7 @@ Put yourself in the shoes of a hypothetical modder.
 * You duplicate and re-duplicate the material for each of your variants, changing the properties that defines the colour
 * You wish that there was less copy-pasting involved
 
-<figure><img src="../../.gitbook/assets/mi_files_materials_the_problem.png" alt=""><figcaption><p>You only change 2 of 6 properties, but you always have to copy all of them!!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mi_files_materials_the_problem.png" alt=""><figcaption><p>You only change 2 of 6 properties, but you always have to copy all of them!!</p></figcaption></figure>
 
 ### .mi files to the rescue
 
@@ -41,7 +41,7 @@ For a collection of example .mi files, check [manavortex's MEGA](https://mega.nz
 
 Instead of copy-pasting six properties, you now copy-paste only two.
 
-<figure><img src="../../.gitbook/assets/mi_files_the_solution.png" alt=""><figcaption><p>Only add the properties that you want to change in relation to the .mi file</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mi_files_the_solution.png" alt=""><figcaption><p>Only add the properties that you want to change in relation to the .mi file</p></figcaption></figure>
 
 ## Making material templates
 
@@ -75,7 +75,7 @@ And if one of my items happens to have a custom normal map and/or texture, then 
 
 But we can take this approach even further! If you **don't** have any properties, your mesh doesn't even need materials! You can simply use the `externalMaterials` list instead. You do this by unticking the isLocal property in the materialEntries definition:
 
-<figure><img src="../../.gitbook/assets/material_indices.png" alt=""><figcaption><p>material entries and indices</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/material_indices.png" alt=""><figcaption><p>material entries and indices</p></figcaption></figure>
 
 ## Warning
 

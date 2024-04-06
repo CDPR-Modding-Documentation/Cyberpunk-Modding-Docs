@@ -51,7 +51,7 @@ You can find the [definitions](../files-and-what-they-do/3d-objects-.mesh-files/
 * Normal (bump/height map)
 * Albedo (diffuse/complexion)
 
-All other properties are pulled from a [.mi file](../files-and-what-they-do/re-using-materials-.mi.md) in the following folder:
+All other properties are pulled from a [.mi file](../files-and-what-they-do/materials/re-using-materials-.mi.md) in the following folder:
 
 <table><thead><tr><th width="251"></th><th></th></tr></thead><tbody><tr><td>female body gender</td><td><code>base\characters\common\skin\character_mat_instance\female\body\</code></td></tr><tr><td>male body gender</td><td><code>base\characters\common\skin\character_mat_instance\male\body\</code></td></tr></tbody></table>
 

@@ -15,7 +15,7 @@ It will give you a brief overview over the control files and tell you how to pul
 
 ### Wait, this isn't what I want!
 
-* How about [#creating-your-own-hair-colours](../../../materials/configuring-materials/cyberpunk-hair-material.md#creating-your-own-hair-colours "mention")?
+* How about [Broken link](broken-reference "mention")?
 * Find a more detailed guide about adding components to NPC app files under [appearances-change-the-looks.md](../appearances-change-the-looks.md "mention"). This may help you if you get stuck!
 
 ### Prerequisites
