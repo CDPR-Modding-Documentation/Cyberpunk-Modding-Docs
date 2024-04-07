@@ -19,6 +19,7 @@ If you have never done this before, don't do both at once. Or... do whatever, bu
 
 ### **Wait, this is not what I want!**
 
+* For an overview of all poses in photo mode, check [cheat-sheet-photo-mode.md](../../references-lists-and-overviews/cheat-sheet-photo-mode.md "mention")
 * For more general knowledge, check the [animations.md](../../animations.md "mention")section.
 
 {% hint style="warning" %}
