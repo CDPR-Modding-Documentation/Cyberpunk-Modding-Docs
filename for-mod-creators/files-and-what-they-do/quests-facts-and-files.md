@@ -2,34 +2,43 @@
 description: Theory on the quest system
 ---
 
-# Quests: facts and files
+# Quests Facts
 
 #### Summary
 
 **Written by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Published: 09. 12. 2032**
+**Published: 09. 12. 2023**
+
+**Updated: 07. 04. 2024 by Deceptious**
 
 {% hint style="info" %}
 This is the theory page. If you want more hands-on advice, check the [quest](../modding-guides/quest/ "mention") section under [modding-guides](../modding-guides/ "mention").
 {% endhint %}
 
-## How does the quest system work?
-
-While you are moving through the world of Cyberpunk, the game will track your progress in your save game. This is done via [quest facts](quests-facts-and-files.md#what-are-quest-facts).&#x20;
-
-## Which files are associated?
-
-Quest facts are defined in `.quest` or `.questphase` files. and accessed in `.scene` files or [directly in the code](https://codeberg.org/adamsmasher/cyberpunk).
-
 ## What are quest facts?
 
-Quest facts are chosen by the quest creator. There is no naming convention or common structure that we have been able to identify.
+Quest facts are just a value (signed integer) and a name (string).
+
+Quest facts are chosen by the developer/designer/modder.
+
+While you are moving through the world of Cyberpunk, the game will track your progress in your save game via these quest facts and their values.
+
+## How do quest facts work?
+
+Quest facts do not exist until they are explicitly set. Until they are set they are assumed to be 0.
+
+Any/all quest facts can be 'read' at any point. They can then be tested against a set value [<, <=, ==, >=, >] and this test can form a Pause or Condition.
+[If they havent been set/defined yet they will return as 0.]
+
+There is no strict naming convention, but typically quest related facts start with the quest code [Ex: mq055_... sq027_...]
+
+  Facts that are used in a similar way will also have a similar naming sceme [Ex: radio_on, tv_on; judy_default_on, panam_default_on]
 
 {% hint style="danger" %}
 Editing quest facts **might** solve your immediate problem, but will almost always cause additional problems much later in the game, which are impossible to predict. E.g., while you can fix the missing phone call right now, this might break an elevator during the final quest. (I am not making this up)
 {% endhint %}
 
-Cyberpunk is **stateful** - this means that your quest facts will only be checked at certain points in the game.  For an example, check the box below.
+Cyberpunk's quest facts don't actually **do** anything, they simply store a value that can be checked later - it is this later check, and logic that is set to follow, that actually **does** something.  For an example, check the box below.
 
 <details>
 
@@ -45,8 +54,12 @@ One would naively assume that we can unlock the extra dialogue by changing the q
 
 </details>
 
+## Which files are associated?
+
+Quest facts are most often set and used in `.questphase` (and `.quest`) and `.scene` files. They can also be manipluated in scripts [Ex: Changing cyberware at a Ripperdoc sets certain facts] and also [directly in the code](https://codeberg.org/adamsmasher/cyberpunk).
+
 ### Which quest facts influence each other?
 
-Due to the [stateful nature of the game](quests-facts-and-files.md#what-are-quest-facts), potentially **all of them**. As of December 2023, there exists no good way to keep track of them.
+None of them, they are independent entities. However they can, in some are cases, be compared to each other [<, <=, ==, >=, >]
 
 For a json dump of facts grouped by .quest, .questphase and .scene, follow this [Discord Link](https://discord.com/channels/717692382849663036/803201431657250857/1182394517551321180).
