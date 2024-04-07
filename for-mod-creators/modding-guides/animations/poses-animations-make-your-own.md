@@ -186,7 +186,7 @@ The names **must** be the same, and they **must** match the name in your .anim f
 <figure><img src="../../../.gitbook/assets/animations_blender_export_selection.png" alt=""><figcaption></figcaption></figure>
 
 8. This will open a file picker. Do the following things:
-   * Check the `As Photomode Pose` box on the right
+   * Check the `Animations` box on the right
    * Navigate the to the path of the file you exported in the [previous step](poses-animations-make-your-own.md#your-wolvenkit-project) and click on it to overwrite it
 9. When you're done, hit "Export for Cyberpunk".
 
