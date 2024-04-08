@@ -2,18 +2,16 @@
 description: No more replacers! Add your own gear with TweakXL and ArchiveXL
 ---
 
-# ItemAdditions: Making new items
+# Adding new items
 
 ## Summary <a href="#summary" id="summary"></a>
 
 **Created by @manavortex**\
 **Published November 04 2022**
 
-This guide will walk you through **adding your own items** to Cyberpunk 2077, which can then be spawned via console.&#x20;
+This guide will walk you through **adding your own items** to Cyberpunk 2077, which can then be spawned via console.
 
 **It has been verified with the following versions** (yours should be **equal** or **higher**)
-
-
 
 | Tool                                                                                         | latest version tested | oldest version tested |
 | -------------------------------------------------------------------------------------------- | --------------------- | --------------------- |
@@ -23,8 +21,8 @@ This guide will walk you through **adding your own items** to Cyberpunk 2077, wh
 | [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)                                 | 1.18.0                | 1.12.0                |
 | [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107) (for spawning items) | 1.28.1                | 1.28.1                |
 
-**Assumed skill level:** \
-You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible.&#x20;
+**Assumed skill level:**\
+You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible.
 
 This guide will **teach you the basic structure** - after you have done that, take a look at the guide for [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") for how to easily make many colour variants.
 
@@ -41,7 +39,7 @@ To troubleshoot your ArchiveXL mods, you can use [WolvenKit](https://app.gitbook
 {% endhint %}
 
 {% hint style="success" %}
-There is a new way of connecting your files:  [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention").  If you want to create lots of options, this is what you want to do.
+There is a new way of connecting your files: [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention"). If you want to create lots of options, this is what you want to do.
 {% endhint %}
 
 ## Grab the example files
@@ -60,8 +58,6 @@ Understanding of the file structure is **not required** as long as you **follow 
 {% endhint %}
 
 ### You should now have the following files:
-
-
 
 <figure><img src="../../../../.gitbook/assets/archive_xl_adding_items_file_structure.png" alt=""><figcaption><p>These files do not contain an Atelier store. If you want to add one, see <a href="../../everything-else/adding-items-atelier-integration.md">here</a>.</p></figcaption></figure>
 
@@ -82,7 +78,7 @@ Press [Install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolve
 Now, you can
 
 1. Launch the game.
-2.  Spawn one of the tutorial items via Cyber Engine Tweaks: \
+2.  Spawn one of the tutorial items via Cyber Engine Tweaks:\
     `Game.AddToInventory("Items.my_custom_shirt_redwhite")`
 
     `Game.AddToInventory("Items.my_custom_shirt_redblack")`
@@ -91,7 +87,7 @@ You should now see ~~your~~ the tutorial item. If not, consult the section [#tro
 
 ## Great! You added items! Now what?
 
-You've successfully pushed a button and everything worked, but so far, you haven't done anything. If you're okay with this, then you're done now.&#x20;
+You've successfully pushed a button and everything worked, but so far, you haven't done anything. If you're okay with this, then you're done now.
 
 {% hint style="success" %}
 To start changing the existing files, check the [archive-xl-item-structure-explained.md](archive-xl-item-structure-explained.md "mention") page for "**`Making Changes`**" headers.
@@ -126,8 +122,6 @@ If you want to do more than 5 variants (for both body genders and camera modes),
 
 <figure><img src="../../../../.gitbook/assets/axl_full_overview.jpg" alt=""><figcaption><p>Don't panic, we've got this.</p></figcaption></figure>
 
-
-
 ## Adding an appearance
 
 {% hint style="warning" %}
@@ -143,8 +137,8 @@ If you would rather have a step-by-step guide for a gendered variant, see [the n
 To add an appearance, you will have to touch the following files:
 
 1. \***.yaml**: Adding an entry
-2. **appearance.app**: Adding a mapping between root_entity and mesh's appearance
-3. **root_entity.ent**: Adding a mapping between yaml's appearance and app's appearance
+2. **appearance.app**: Adding a mapping between root\_entity and mesh's appearance
+3. **root\_entity.ent**: Adding a mapping between yaml's appearance and app's appearance
 4. \*_.mesh_:
    1. Adding a MeshMaterialEntry
    2. Adding a MaterialInstance
@@ -152,7 +146,7 @@ To add an appearance, you will have to touch the following files:
    4. Connecting those things
 
 {% hint style="info" %}
-For a diagram of how everything connects, go [here](archive-xl-item-structure-explained.md#the-final-result).&#x20;
+For a diagram of how everything connects, go [here](archive-xl-item-structure-explained.md#the-final-result).
 {% endhint %}
 
 ### Step 1: Register it in your \*.yaml
@@ -172,8 +166,6 @@ For a diagram of how everything connects, go [here](archive-xl-item-structure-ex
 
     ℹIf you make any mistakes here, the worst that happens is an empty string.
 5.  Now, add a new entrie to your .json file:
-
-
 
     ```
     localizationPersistenceOnScreenEntry - []   
@@ -195,7 +187,7 @@ Items.my_custom_shirt_blueblack:
   appearanceSuffixes: []
 ```
 
-### Step 2: Add it to the root_entity.ent
+### Step 2: Add it to the root\_entity.ent
 
 Find the step-by-step guide in the [root entity section](archive-xl-item-structure-explained.md#root-entity-making-changes) on the "[Item structure explained](archive-xl-item-structure-explained.md)" page.
 
@@ -223,14 +215,14 @@ Now, log into the game and spawn the item variant. The name is the header you de
 Game.AddToInventory('Items.my_custom_shirt_blueblack')
 ```
 
-## Adding a Male Instance
-
-{% hint style="danger" %}
-This part of the tutorial isn't fully up-to-date with the overhauled file structure yet, so keep that in mind when studying the screenshots.
+{% hint style="success" %}
+If it works, this is an excellent moment to take a backup! If not, check [#troubleshooting](./#troubleshooting "mention") at the end of the page, fix your problem, and make a backup after.
 {% endhint %}
 
-{% hint style="success" %}
-Also, this part is super easy to follow and even if you make a mistake, fixing it won't be a problem. But hey, you've put in a lot of work and made great progress, so why not take a sec and back up your project files? Better safe than sorry, right?&#x20;
+## Adding a Male Instance
+
+{% hint style="warning" %}
+This is  a great opportunity to switch over to the [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") tutorial. The tutorial below will still result in a working item, but the new technique is **much more flexible** and will also result in less work.
 {% endhint %}
 
 Before we proceed with the tutorial, it's important to address a common issue you might have encountered while creating your mod.
@@ -239,35 +231,39 @@ If you've tested the mod on a Male V, you might have noticed some weird glitches
 
 You see, we've been using a mesh designed specifically for Female V, and that's why we've been running into some roadblocks. But don't worry, we're here to help you overcome this challenge!
 
-### Preparing the mesh file for the male variant&#x20;
+{% hint style="danger" %}
+Screenshots in this part of the mod may be outdated.&#x20;
+{% endhint %}
 
-To fix this issue, we'll need a mesh that's compatible with Male V.&#x20;
+### Preparing the mesh file for the male variant
+
+To fix this issue, we'll need a mesh that's compatible with Male V.
 
 In the interest of keeping things simple, we've found just the mesh for you! It's called `t1_024_ma_tshirt__sweater.mesh` and it can be found in the `base\characters\garment\citizen_casual\torso\t1_024_tshirt__sweater` directory.
 
 {% hint style="warning" %}
-If you plan on using other meshes for your mod, ensure that it has `ma` or `pma` in its name.&#x20;
+If you plan on using other meshes for your mod, ensure that it has `ma` or `pma` in its name.
 
-Keep in mind that some `ma` meshes may still have clipping issues when paired with certain types of clothing, while `pma` meshes are specifically designed for V and don't have this problem.&#x20;
+Keep in mind that some `ma` meshes may still have clipping issues when paired with certain types of clothing, while `pma` meshes are specifically designed for V and don't have this problem.
 
-If you decide to create your own mesh, be sure to fix any potential issues before using it in your mod. Check out our [<mark style="color:yellow;">3D modeling guide</mark>](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/3d-modelling) for helpful tips and resources.&#x20;
+If you decide to create your own mesh, be sure to fix any potential issues before using it in your mod. Check out our [<mark style="color:yellow;">3D modeling guide</mark>](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/3d-modelling) for helpful tips and resources.
 
 Remember, a little extra effort in the beginning can save you a lot of headaches down the line!
 {% endhint %}
 
-Now, add the file to your project, move it to the `tutorial\torso\my_custom_shirt\` folder and rename it from `t1_024_ma_tshirt__sweater.mesh` to `my_mesh_m.mesh`.&#x20;
+Now, add the file to your project, move it to the `tutorial\torso\my_custom_shirt\` folder and rename it from `t1_024_ma_tshirt__sweater.mesh` to `my_mesh_m.mesh`.
 
 Next, follow the steps you used for the original `my_mesh.mesh` by removing any unnecessary entries and adjusting the indices.
 
 {% hint style="danger" %}
-To avoid any issues, it's crucial to pay close attention to this step and double-check that the correct materials are present in the `localMaterialBuffer` and `materialEntries`, and that the indices are adjusted correctly.&#x20;
+To avoid any issues, it's crucial to pay close attention to this step and double-check that the correct materials are present in the `localMaterialBuffer` and `materialEntries`, and that the indices are adjusted correctly.
 
 This will ensure that your mod works as intended without any glitches or errors. If you need a refresher, [<mark style="color:yellow;">click here</mark>](./#optional-but-very-recommended-clean-out-obsolete-entries) to return to that section.
 {% endhint %}
 
 ### Creating a .ent File for Your Custom Mesh
 
-It's time to set up the .ent file for our mesh. Don't worry, it's easy!&#x20;
+It's time to set up the .ent file for our mesh. Don't worry, it's easy!
 
 Start by making a copy of the `mesh_entity.ent` file that you previously created for the female version by duplicating it, and rename it to `mesh_entity_m.ent`.
 
@@ -304,10 +300,10 @@ Items.my_custom_shirt_redwhite:
 ```
 
 {% hint style="info" %}
-If you are unclear about why this step was taken, we recommend [reading up on suffixes](../../../files-and-what-they-do/entity-.ent-files/#what-are-suffixes)!
+If you are unclear about why this step was taken, we recommend [reading up on suffixes](../../../files-and-what-they-do/entity-.ent-files#what-are-suffixes)!
 {% endhint %}
 
-### Edit the root_entity.ent
+### Edit the root\_entity.ent
 
 1. Find the array `appearances`.
 2. Expand the first entry.
@@ -350,7 +346,7 @@ Consider reviewing the guide to ensure that all steps have been followed correct
 
 ## The final touches
 
-&#x20;If everything is working: Congratulations! You have successfully made a mod!
+If everything is working: Congratulations! You have successfully made a mod!
 
 But before you can share it, you need to do one last thing, which is changing the file structure. Otherwise, everyone will overwrite the same tutorial files, and only one of those mods will work.
 
@@ -360,19 +356,17 @@ You can find a full guide on how to do that [here](../../everything-else/moving-
 That's it! If everything works, you're done!
 {% endhint %}
 
-
-
 ## Troubleshooting
 
 Before starting to troubleshoot, make sure that you have all the **requirements** installed — [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380), [ArchiveXL](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/core-mods-explained/archivexl?q=visual+tags) and [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197).
 
 {% hint style="info" %}
-The easiest way to spot what's wrong is to use Wolvenkit's new FileValidation feature, which will print warnings and errors to the log file for you, starting at version >= 8.9.1.&#x20;
+The easiest way to spot what's wrong is to use Wolvenkit's new FileValidation feature, which will print warnings and errors to the log file for you, starting at version >= 8.9.1.
 {% endhint %}
 
-First of all, check the logs for errors including the name of your mod:&#x20;
+First of all, check the logs for errors including the name of your mod:
 
-* `red4ext/plugins/ArchiveXL/ArchiveXL.log`&#x20;
+* `red4ext/plugins/ArchiveXL/ArchiveXL.log`
 * `red4ext/plugins/TweakXL/TweakXL.log`
 
 ### ArchiveXL added clipping!
@@ -386,7 +380,7 @@ You have read right past those warning boxes telling you about [component name p
 Most likely, you have ignored the [hint box](./#get-the-files-create-the-structure) when picking your `mesh_entity.ent:` Make sure that you're using an entity file that corresponds with the slot that you are trying to replace (e.g. if your item is a pair of shoes, you need an entity file from `base\characters\garment\player_equipment\feet`).
 
 {% hint style="info" %}
-**If you are here because of a link from a different guide:**&#x20;
+**If you are here because of a link from a different guide:**
 
 You can find out which entity file your item uses by right-clicking on your mesh and selecting "find files using this". Add the .ent file to the list and open it in WolvenKit. Then, [replace the contents](../../npcs/appearances-change-the-looks.md#safely-adding-components) of the "components" array with those of an .ent file from the correct folder — don't forget to change the path to your mesh again!
 {% endhint %}
@@ -409,15 +403,15 @@ Check the following places:
 * `my_tshirt_factory.csv`:
   * Is there an entry where the first value matches the `entityName` from the yaml (`my_tshirt` in the picture above)?
     * Without leading or trailing spaces?
-  * Does the second value of that entry have the correct root entity path? \
+  * Does the second value of that entry have the correct root entity path?\
     (`tutorial\myshirt\root_entity.ent` in the picture above)\
     _If you moved the `root_entity.ent`, you have to adjust this entry._
 * `root_entity.ent:`
-  * Do you have an appearance with the `name` matching your item's `appearanceName` in the yaml?&#x20;
+  * Do you have an appearance with the `name` matching your item's `appearanceName` in the yaml?
     * Without leading or trailing spaces?
-  * Are you using any [**suffixes**](../../../files-and-what-they-do/entity-.ent-files/#what-are-suffixes)? Are you using the correct ones?&#x20;
-    * Try setting an empty suffix array in the .yaml, just to see if that works: \
-      `appearanceSuffixes: [  ]`
+  * Are you using any [**suffixes**](../../../files-and-what-they-do/entity-.ent-files#what-are-suffixes)? Are you using the correct ones?
+    * Try setting an empty suffix array in the .yaml, just to see if that works:\
+      `appearanceSuffixes: [ ]`
     * Try creating a fall-back entry without any suffixes in the `root_entity`.
 
 ### My item shows empty text instead of name/description!
@@ -463,7 +457,7 @@ There is a short glitch (or maybe not), but the previous item is still visible, 
 
 Let's check if the game finds your root entity. For that, we'll do two things (don't forget to un-do them later):
 
-1. Change the base type&#x20;
+1. Change the base type
 2. Add a tag to the root entity
 
 Helmets are hiding hair by default, unless you tell them not to. We'll make use of that by changing your item's `$base` in the `.yaml`:
@@ -511,9 +505,9 @@ That means the chain is working, but something isn't loaded correctly. That's go
 * `appearance.app`: Check the `partsValues` and `partsOverrides` entries. They need to point at the `mesh_entity.ent`, **not** at the mesh.
 * `mesh_entity.ent`: Does the `component` entry point to a valid mesh? Try it with a default mesh as detailed above.
 
-If the default mesh is displayed correctly, then we have narrowed down the problem.&#x20;
+If the default mesh is displayed correctly, then we have narrowed down the problem.
 
-If the default mesh is not displayed correctly, then there's an issue between the `root_entity` and your `.app` file, or in the `.app` file's internal logic.&#x20;
+If the default mesh is not displayed correctly, then there's an issue between the `root_entity` and your `.app` file, or in the `.app` file's internal logic.
 
 ### Troubleshooting a mesh
 
@@ -569,7 +563,7 @@ Either an appearance is incorrectly **selected** (app file), or it is incorrectl
 **yourModName.yaml** - is the `appearanceName` correct, or did you forget to change it?
 
 If you are not using [dynamic variants](archivexl-dynamic-variants.md), also check the following two files:\
-**root_entity.ent** - does the `name` corresponding to the field above point to the right `appearanceName` in the right .app file?\
+**root\_entity.ent** - does the `name` corresponding to the field above point to the right `appearanceName` in the right .app file?\
 **appearance.app** - does the appearance's `partOverride` set the correct appearance in the `componentsOverride`?
 
 Now, check the **mesh file** (close and re-open it to make everything refresh):
@@ -593,7 +587,7 @@ If not: the appearance can't be resolved - ignore the `.mesh`\
 If yes: the appearance is resolved, but can't be displayed - ignore the `.yaml`
 
 {% hint style="info" %}
-The fastest way to find your error is Wolvenkit's FileValidation (in version >= 8.9.1). Save the `root_entity.ent`,  and the recursive valudation will check the whole chain for errors and print them to the log files for you.
+The fastest way to find your error is Wolvenkit's FileValidation (in version >= 8.9.1). Save the `root_entity.ent`, and the recursive valudation will check the whole chain for errors and print them to the log files for you.
 
 \
 As of July 2023, you can download the right version from the [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/) page (for example [this one](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/tag/8.9.1-nightly.2023-07-21), as it's pretty stable).
