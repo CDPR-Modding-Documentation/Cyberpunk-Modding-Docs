@@ -11,9 +11,9 @@ description: Modding your game, for users
 ## Summary
 
 **Published:** ?? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jan 23 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Jan 23 2024, by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page will teach you how to **manually install** mods.&#x20;
+This page will teach you how to **install mods manually.**&#x20;
 
 * If you want to create mods instead, check the [modding-guides](../../for-mod-creators/modding-guides/ "mention") section
 * If you need help installing Cyberpunk, check [getting-started](getting-started/ "mention")
