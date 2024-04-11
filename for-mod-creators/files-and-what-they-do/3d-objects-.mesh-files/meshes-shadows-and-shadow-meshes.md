@@ -13,8 +13,8 @@ This page explains how meshes are casting shadows.&#x20;
 
 ### Wait, this is not what I want!
 
-* To learn about submeshes and material assignments, check [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention")
-* To learn more about [level-of-detail-lod.md](level-of-detail-lod.md "mention"), check the corresponding wiki page.
+* Find information about shadows in the environment under [environment-shadows.md](../the-whole-world-.streamingsector/environment-shadows.md "mention")
+* To learn more about [level-of-detail-lod.md](../level-of-detail-lod.md "mention"), check the corresponding wiki page.
 
 ## How to cast shadows
 
@@ -38,7 +38,7 @@ You activate real-time shadows by checking the following properties in your [mes
 
 ### Proxy shadows: Shadow mesh
 
-The proxy shadow, by contrast, will use an **invisible mesh** to cast a shadow (the `shadow mesh`). It has a lower [Level of Detail](level-of-detail-lod.md) than the original and often features a simplified geometry or even a [proxy mesh](level-of-detail-lod.md#proxy-meshes).
+The proxy shadow, by contrast, will use an **invisible mesh** to cast a shadow (the `shadow mesh`). It has a lower [Level of Detail](../level-of-detail-lod.md) than the original and often features a simplified geometry or even a [proxy mesh](../level-of-detail-lod.md#proxy-meshes).
 
 Due to the less complex geometry, a shadow mesh is much less prone to raytracing glitches, and it will be much eaiser on performance.
 

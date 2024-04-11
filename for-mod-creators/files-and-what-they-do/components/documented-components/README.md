@@ -25,7 +25,7 @@ The [#entskinnedclothcomponent](./#entskinnedclothcomponent "mention")'s physics
 | [chunkMask](./#chunkmask)              | Defines visibility of individual submeshes                                                                                                    |
 | meshAppearance                         | Selects an entry from the mesh's [appearances](../../3d-objects-.mesh-files/#step-1-appearances) array                                        |
 | <p>castShadows<br>castLocalShadows</p> | Enables/disables [real-time shadows](../../3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md#generated-shadows-component-properties) |
-| forceLODLevel                          | Force [level-of-detail-lod.md](../../3d-objects-.mesh-files/level-of-detail-lod.md "mention")                                                 |
+| forceLODLevel                          | Force [level-of-detail-lod.md](../../level-of-detail-lod.md "mention")                                                                        |
 
 ### Documented mesh component types
 
@@ -71,7 +71,7 @@ Adds physics to garments and hair meshes. This is the "safe" way of doing it, op
 
 <summary>entMeshComponent</summary>
 
-Used for components on low levels of details such as [proxies](../../3d-objects-.mesh-files/level-of-detail-lod.md#proxy-meshes) and [shadow meshes](../../3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md).
+Used for components on low levels of details such as [proxies](../../level-of-detail-lod.md#proxy-meshes) and [shadow meshes](../../3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md).
 
 </details>
 

@@ -44,7 +44,7 @@ KS\_UV project name should be `005_modname`
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image.png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt="" width="188"><figcaption></figcaption></figure>
 
 </div>
 
@@ -52,7 +52,7 @@ KS\_UV project name should be `005_modname`
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 

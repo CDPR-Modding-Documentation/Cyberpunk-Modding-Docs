@@ -35,7 +35,7 @@ This means that all features of the DDS format are included, and they are nearly
 Any CR2W file includes a section telling the engine how to read it, the **header**. Most of the file encodes texture data, but the header for textures includes:
 
 * size
-* mipmapping (lower-resolution versions of the same texture for [LOD](../3d-objects-.mesh-files/level-of-detail-lod.md) and streaming)
+* mipmapping (lower-resolution versions of the same texture for [LOD](../level-of-detail-lod.md) and streaming)
 * texture format
 * dimensions (e.g. if your texture data is 1024x1024, but the header says it's 512x512, then the engine will resize it)
 

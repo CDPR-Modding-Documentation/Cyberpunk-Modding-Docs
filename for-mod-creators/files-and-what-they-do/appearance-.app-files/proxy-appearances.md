@@ -13,7 +13,7 @@ This page explains what **Level of Detail** is and how it works.
 
 ### Wait, this is not what I want!
 
-* To learn about [level-of-detail-lod.md](../3d-objects-.mesh-files/level-of-detail-lod.md "mention"), check the corresponding wiki page.
+* To learn about [level-of-detail-lod.md](../level-of-detail-lod.md "mention"), check the corresponding wiki page.
 
 ## What is a proxy appearance?
 

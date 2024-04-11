@@ -7,11 +7,11 @@ description: Documentation on .streamingsector files
 **Last documented update: January 27, 2024 by** [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")
 
 {% hint style="info" %}
-If you want to know how to find a streaming sector, see [here](../references-lists-and-overviews/reference-world-sectors/places.md).
+If you want to know how to find a streaming sector, see [here](../../references-lists-and-overviews/reference-world-sectors/places.md).
 
-For a list of interesting locations, see [here](../references-lists-and-overviews/reference-world-sectors/).&#x20;
+For a list of interesting locations, see [here](../../references-lists-and-overviews/reference-world-sectors/).&#x20;
 
-For guides how to modify streaming sector files, see [here](../modding-guides/world-editing/).
+For guides how to modify streaming sector files, see [here](../../modding-guides/world-editing/).
 
 For a (partial) list of node types and what they are, see [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/reference-world-sectors/reference-.streamingsector-node-types).
 {% endhint %}
@@ -101,7 +101,7 @@ We will focus on the main one and take a look at the first sector inside (`exter
 When creating a mod with sectors, you will need to create your own block that will list your new sectors.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/world_streamingsector__block (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/world_streamingsector__block (1).png" alt=""><figcaption></figcaption></figure>
 
 This sector has 10 variants, in this case, each one is related to a quest state.
 
@@ -115,7 +115,7 @@ Variant's name is only used to identify the variant within the streamingblock.
 
 `enableDyDefault` is self-explanatory; it indicates whether it should be enabled by default.
 
-<figure><img src="../../.gitbook/assets/world_streamingsector__block_variant.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/world_streamingsector__block_variant.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The link between quests and sectors' variants is not well-researched as of Jan 2024 - if you know anything more about this, please get in touch via [Discord](http://discord.gg/redmodding) or update the wiki!
@@ -129,7 +129,7 @@ The sector file uses 2 arrays to define ranges: `variantIndices` and `variantNod
 
 `variantIndices` contains as many values as ranges needed (10 variants + 1 default range)
 
-<figure><img src="../../.gitbook/assets/world_streamingsector__sector_indices.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/world_streamingsector__sector_indices.png" alt=""><figcaption></figcaption></figure>
 
 A **variant indice** indicates the range starting nodeData index. This range goes from the index specified to the start of the following range. If we look at variant indice #7, the range starts at node index 14 (included) and ends at node index 46 (excluded).
 
@@ -139,4 +139,4 @@ A sector always has a **default range** (variant indice 0); this default range i
 
 Here is an overview of files relations:
 
-<figure><img src="../../.gitbook/assets/world_streamingsector__resume.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/world_streamingsector__resume.png" alt=""><figcaption></figcaption></figure>

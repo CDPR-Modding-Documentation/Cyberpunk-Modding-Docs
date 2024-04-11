@@ -13,7 +13,7 @@ For its collection of **guides**, see the child pages in the wiki's navigation t
 
 ## How to change the world?
 
-Rather than blowing up Arasaka Tower or trying to become bomb, we're using [archivexl](../../core-mods-explained/archivexl/ "mention") to edit the contents of [.streamingsector](../../files-and-what-they-do/the-whole-world-.streamingsector.md) files.&#x20;
+Rather than blowing up Arasaka Tower or trying to become bomb, we're using [archivexl](../../core-mods-explained/archivexl/ "mention") to edit the contents of [.streamingsector](../../files-and-what-they-do/the-whole-world-.streamingsector/) files.&#x20;
 
 ### Why shouldn't we edit .streamingsector files?
 
