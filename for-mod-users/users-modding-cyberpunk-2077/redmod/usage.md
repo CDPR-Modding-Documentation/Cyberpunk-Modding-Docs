@@ -8,7 +8,13 @@ This section is for managing mods with Redmod. For creating mods, see [modding-g
 
 ## Why would I want this?
 
-REDmod **preloads** any mods on its list, loading them as if they were a part of the game's regular structure. This leads to a brief delay during startup (while it does that), but the loading times during gameplay will be much faster.
+REDmod **preloads** any mods on its list, loading them as if they were a part of the game's regular structure. Preloading requires the game to be started via launcher (or Vortex) and will add a short delay, but the loading times during gameplay will be much faster.
+
+#### Why is that not the default?
+
+* Compatibility: Not all mods can be easily converted. Some outright break in the process.
+* Especially modders don't like the extra delay during startup
+* While the mods are precompiled, a console window will be visible. This scares many users.
 
 ## Using Mods
 
