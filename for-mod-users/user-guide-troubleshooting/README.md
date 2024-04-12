@@ -100,6 +100,10 @@ Empty your cache, check the info box under[#redscript-red4ext](./#redscript-red4
 
 You need to **update the game** and RED4ext
 
+#### Red4ext: A dynamic link library (DLL) initialization routine failed
+
+You need to install the **VisualC Redistributables**. Check the red box under [#navigation](./#navigation "mention") for a download link.
+
 #### Something about files or permissions
 
 If you think that your error is file-related, you can check the section "[Something something files](./#something-something-files)" or use your browser's search function (`Ctrl+F`) to search this page for your error.
