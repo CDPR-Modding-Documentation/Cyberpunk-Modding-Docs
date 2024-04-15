@@ -14,8 +14,8 @@ This guide will teach you how to change the ArchiveXL item addition process to m
 #### Wait, this is not what I want!
 
 * For a much more detailed step-by-step guide, check [new-iconic-weapon-tutorial-for-dummies.md](new-iconic-weapon-tutorial-for-dummies.md "mention")
-* For an overview of weapon properties, check [cheat-sheet-weapon-basestats.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-basestats.md "mention")
-* For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-audio.md "mention")
+* For an overview of weapon properties, check [cheat-sheet-weapon-basestats.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/weapons/cheat-sheet-weapon-basestats.md "mention")
+* For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/weapons/cheat-sheet-weapon-audio.md "mention")
 
 ## **Prerequisites**
 
@@ -143,7 +143,7 @@ To make your own HUD icons for the lower right corner, check [here](../../../cus
 
 ## Weapon Audio
 
-You can change which weapon audio preset your custom iron uses by changing the following property in the `.yaml` (see a list under [cheat-sheet-weapon-audio.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-weapon-audio.md "mention")):
+You can change which weapon audio preset your custom iron uses by changing the following property in the `.yaml` (see a list under [cheat-sheet-weapon-audio.md](../../../../references-lists-and-overviews/cheat-sheet-tweak-ids/weapons/cheat-sheet-weapon-audio.md "mention")):
 
 <pre class="language-yaml"><code class="lang-yaml"><strong># for guns etc
 </strong>weaponAudio: wea_set_achilles
