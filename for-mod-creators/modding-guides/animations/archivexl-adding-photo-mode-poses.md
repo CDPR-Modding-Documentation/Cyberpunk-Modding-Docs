@@ -193,7 +193,7 @@ POSE_WEAPON_FISTS
 <figure><img src="https://i.imgur.com/QHdVuNb.png" alt=""><figcaption><p>I'm using KNIFE as example</p></figcaption></figure>
 
 In the case of weapons, V will either spawn the default weapon from PhotoMode or use whatever weapon has in hand while entering PhotoMode.
-The position of the prop is defined by `WeaponRight` bone.
+The position of the prop is defined by `WeaponRight`/ `WeaponLeft` bone.
 
 ### Telling photo mode about the poses
 
