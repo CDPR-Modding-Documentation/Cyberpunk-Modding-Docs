@@ -186,7 +186,6 @@ POSE_PHONE
 POSE_CIGARETTE
 POSE_POPCORN
 ```
-I'm using KNIFE as example 
 <figure><img src="https://i.imgur.com/QHdVuNb.png" alt=""><figcaption><p>I'm using KNIFE as example</p></figcaption></figure>
 
 In the case of weapons, V will either spawn the default weapon from PhotoMode or use whatever weapon has in hand while entering PhotoMode.
