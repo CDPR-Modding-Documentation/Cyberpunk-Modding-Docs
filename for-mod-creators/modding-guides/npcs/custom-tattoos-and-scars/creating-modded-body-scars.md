@@ -2,7 +2,7 @@
 description: This guide will teach you how to create scars on modded body KS_UV and VTK
 ---
 
-# Creating modded body scars
+# How to create modded body scars
 
 ## **Summary**
 
@@ -34,17 +34,19 @@ _<mark style="color:red;">**If you want to know how to make scars, I advise you 
 
 1. Create a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name&#x20;
 
-For the Body :&#x20;
+**For the Body :**&#x20;
 
 For both Framework, the name should be something like that : `000_modname`
 
-For the Head :
+**For the Head :**
 
 KS\_UV project name should be `005_modname`
 
-VTK project name should be in two separate files, one with the skin `00_modname` and the other with the bumpmap in it `z_modname`.
+VTK project name should be `#00_modname`  The # is really important
 
-<mark style="color:red;">Do not put the two files together or the bumpmap won't work.</mark>
+
+
+
 
 2. To create modded body scars , you need the following files
 
