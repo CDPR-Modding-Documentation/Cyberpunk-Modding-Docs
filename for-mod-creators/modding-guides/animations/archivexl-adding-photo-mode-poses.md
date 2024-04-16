@@ -185,6 +185,10 @@ POSE_WEAPON_ONEHANDED
 POSE_PHONE
 POSE_CIGARETTE
 POSE_POPCORN
+POSE_GUITAR
+POSE_MICROPHONE_RIGHT
+POSE_MICROPHONE_LEFT
+POSE_WEAPON_FISTS
 ```
 <figure><img src="https://i.imgur.com/QHdVuNb.png" alt=""><figcaption><p>I'm using KNIFE as example</p></figcaption></figure>
 
