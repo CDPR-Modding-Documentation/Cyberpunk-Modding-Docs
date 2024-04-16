@@ -162,6 +162,36 @@ You need to add one of those for every pose from your .anim file that you want t
 `category`: This must match the category in the first block.\
 `displayName`: What'll show up in photo mode
 
+#### Spawning props with the pose [OPTIONAL]
+
+It is possible to have certain props spawned automatically. **However, this feature works only for Player V.**
+
+To define what type of props you want to spawn you need to edit `acceptedWeaponConfig:` entry with one of the following tags:
+```
+POSE_WEAPON_ASSAULTRIFLE
+POSE_WEAPON_HANDGUN
+POSE_WEAPON_LMG
+POSE_WEAPON_PRECISIONRIFLE
+POSE_WEAPON_REVOLVER
+POSE_WEAPON_SHOTGUN
+POSE_WEAPON_SHOTGUNDUAL
+POSE_WEAPON_SMG
+POSE_WEAPON_SNIPERRIFLE
+POSE_WEAPON_HAMMER
+POSE_WEAPON_HMG
+POSE_WEAPON_KATANA
+POSE_WEAPON_KNIFE
+POSE_WEAPON_ONEHANDED
+POSE_PHONE
+POSE_CIGARETTE
+POSE_POPCORN
+```
+I'm using KNIFE as example 
+<figure><img src="https://i.imgur.com/QHdVuNb.png" alt=""><figcaption><p>I'm using KNIFE as example</p></figcaption></figure>
+
+In the case of weapons, V will either spawn the default weapon from PhotoMode or use whatever weapon has in hand while entering PhotoMode.
+The position of the prop is defined by `WeaponRight` bone.
+
 ### Telling photo mode about the poses
 
 You register your poses for photo mode by creating the following entry categories:
@@ -200,3 +230,5 @@ At any point during this guide, you can press the green `Install` button on Wolv
 <figure><img src="https://i.imgur.com/1nMpUSy.png" alt=""><figcaption><p>She has no idea what she's doing</p></figcaption></figure>
 
 <figure><img src="https://i.imgur.com/eakqwZu.png" alt=""><figcaption><p>Fortunately, you can hire specialists</p></figcaption></figure>
+
+<figure><img src="https://i.imgur.com/hiSBpNJ.png" alt=""><figcaption><p>Example of prop spawned with the pose after defining it in yaml</p></figcaption></figure>
