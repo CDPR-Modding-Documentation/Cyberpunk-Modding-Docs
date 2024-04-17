@@ -72,7 +72,7 @@ An `appearance` is the entry point into a mesh.
 
 This is how to determine which parts of the mesh have which material:
 
-<figure><img src="../../../.gitbook/assets/materials_explanation.png" alt=""><figcaption><p>Example: A mesh with two materials, one of them a local instance, one of them an external .mi file</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/meshes_appearances.jpg" alt=""><figcaption><p>Example: A mesh with two materials, one of them a local instance, one of them an external .mi file</p></figcaption></figure>
 
 ### ChunkMaterials
 
