@@ -4,17 +4,17 @@ description: How to import and export with the Wolvenkit Blender plugin
 
 # WKit Blender Plugin: Import/Export
 
+{% hint style="warning" %}
+You can only export files which are part of a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects).
+{% endhint %}
+
 ### Wait, this is not what I want!
 
-Would you rather…
+You can find additional information here:&#x20;
 
-Check the following sub-pages instead:
-
-[Import/Export](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export "mention") (Wolvenkit wiki)
-
-[Blender Integration](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/blender-integration "mention")(Wolvenkit wiki)
-
-[exporting-and-importing-meshes](../../3d-modelling/exporting-and-importing-meshes/ "mention") (has additional information that might come in handy)
+* [Import/Export](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export "mention") (Wolvenkit wiki)
+* [Blender Integration](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/blender-integration "mention")(Wolvenkit wiki)
+* [exporting-and-importing-meshes](../../3d-modelling/exporting-and-importing-meshes/ "mention") (has additional information that might come in handy)
 
 ## Meshes
 
@@ -25,10 +25,10 @@ For **where** to export a mesh, see [Tools: Import/Export UI](https://app.gitboo
 For **how** to export a mesh, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
 
 {% hint style="info" %}
-If your mesh won't export from Wolvenkit, try unchecking the following box(es) in the export settings (by unchecking the boxes):&#x20;
+If your mesh won't export from Wolvenkit, try unchecking the following box(es) in the export settings:&#x20;
 
-* [Export Materials](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials "mention")
-* [Export Garment Support (Experimental)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-experimental "mention")
+* [export-materials](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials "mention")
+* [export-garment-support-experimental](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-experimental "mention")
 {% endhint %}
 
 ### Importing into Blender
