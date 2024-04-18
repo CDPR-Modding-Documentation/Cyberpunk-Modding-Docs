@@ -35,36 +35,66 @@ You first need to understand the files you need for hair to work in CP2077. Ther
 
 ## The Mesh
 
-\-Begin by importing the player’s head. This will allow you to adjust your mesh more accurately and to avoid clipping.
+### Adding the head
 
-**Path for MascV head:**
+Begin by importing the player’s head. This will allow you to adjust your mesh more accurately and to avoid clipping.
 
-`base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\h0_000_pma_c__basehead.mesh`
+1. Use the [Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) to [find](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) the correct mesh and [add it to your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
 
-**Path for FemV head:**
+<table><thead><tr><th width="151">body gender</th><th>mesh path</th></tr></thead><tbody><tr><td>m</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\h0_000_pma_c__basehead.mesh</code></td></tr><tr><td>w</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\h0_000_pwa_c__basehead.mesh</code></td></tr></tbody></table>
 
-`base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\h0_000_pwa_c__basehead.mesh`
+2. [Export the mesh](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit) from Wolvenkit
+3. [Import the mesh](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender) into Blender
 
 <img src="https://lh7-us.googleusercontent.com/c7r1m8lnmv4ZQKUBMP80hb1KfXuB3zkouaU8KxfVHCI-b_8Zxo8MHAvo7E2ATDEowIPsLtpPCkpAEdpWJ8ybDIqe-adatU5HQpqkOpYJ8dt0I9gLaJHYmMBbV6H_9CBuOQHshWPlxMjJHyUFBre4IFw" alt="" data-size="original">![](https://lh7-us.googleusercontent.com/2Ezimo8M6XC82ieS8jtJlYi\_rHTaWqBRsqIb3ARPUM3cQoakKTJ84gWpu9Xn3TU0MLVDNiBnvC-kQYmaBCsOAnR2ELH0fi4SH7MCLvvohUyvszhnYOy8UG4AOHMBBQ95folmwBov8PZ\_OUFQbcY-Ig8)
 
-\-Import your hairstyle mesh. I’m using Festive Hunter’s hairstyle from Nier Reincarnation for this tutorial. I choose this hairstyle because I can also show you what to do when your want to add ornaments on your hair as well.
+### Adjusting the hair
+
+1. Import your hairstyle mesh. \
+   This tutorial is using the Festive Hunter’s hairstyle from Nier Reincarnation, since a future version of this tutorial will also cover the addition of ornaments to your hair
 
 ![](https://lh7-us.googleusercontent.com/DqWvm3pd9kU2DRY7KRYVfStxPWIJegTPAICZKHHqCi8esvj1uv1h\_OdfaQ9FKdeTmP\_aOw\_Ns2-hDdsZq9EozTwT9iIA6oqnIYB5XdDW36HilS4G5XkFGpca2yrf2OjDWR0rPAPdkkgB8axunJ83hcc)
 
-\-Delete all the bones, modifier and materials in the mesh when you import them into Blender. You don’t need them.
+2. The modded hair will come with its own armature (bones), modifiers and materials. Delete all those, since you don't need them:&#x20;
+   * Bones: The "armature" object in the Outliner (top right panel)
+   * Vertex groups: In the "data" tab (green triangle) under object properties (bottom right panel)
+   * Modifiers: In the "modifiers" tab (orange wrench)
 
 ![](https://lh7-us.googleusercontent.com/JAbjv0YPH9jhurCT0c6cdY1RSdaysWRtDgF8nn7tHlW3NSnT1-Dsym0kcoyqvIW7VUPXYGhF5puJpX1kmVJpJlZelb84ZnAIi19gptlwyboU9wIljiNApPSzqyPBR-J41Dd\_-uCG4n8NzgFvXJoSEGc) ![](https://lh7-us.googleusercontent.com/J\_WTA1Z0eJz5V1eQLbt\_-aX4oarj2\_GUQ1Woz-1F4mxmwZ2XZd1z3D2wDiTp51zvm2NWMzJZURqaSm8xhRsleG8jbrdanTxTTQruQJ5nkgLvSoZitwr7bWtQieC6exMujoqIQ1KvwEJvwEM04uJI5nE)
 
 ![](https://lh7-us.googleusercontent.com/SG7\_PIkHi6MyWwUNKNxLGZmnmtTTfflsUl4zsdiR-VaJSbxMY7h\_-9pN-75hO8jf88PatAAz7hySLYTQkF0YF3TyCFq66zQxwO1mQZPolEwQDGKAy5bp-ExMc1BUnbYGfIiAg2mXrAWXnaOARY6VVCM)
 
-\-Refit the hairstyle to fit V’s head. Be sure to check around the edges of the hairstyle to avoid clippings with the head.
+3. Reposition and refit the hairstyle to fit V's head.&#x20;
+
+{% hint style="info" %}
+Be sure to check around the edges of the hairstyle to avoid clippings with the head.
+{% endhint %}
 
 ![](https://lh7-us.googleusercontent.com/mDl79Ew7f3Ar01mCtvZzePe-LOy8EpHaNsPuPmCry3H91XKvOAhqlu39fbn6PTVzylXcBvhEc4Soa51MyjGIrsm8YrWi34Btr1pBr8sQQ06t2d8sin3Un6DNtZbLjFLHxBoGOL3X6DG8mZH0diITHdo)
 
-\-Okay, here’s where it starts to get a little tricky. Unlike clothes, most head meshes only have one bone. Head. You can take the easy route, by going into edit mode, highlight all the vertices, assign them the vertex group Head. Do that and you’re done with the Mesh section of this tutorial. You can use this mesh in the game, and it will stay on your character’s head like a helmet. If your hair has any ornaments such as hairpin or ribbons, you can just do this submesh straight away.
+### Rigging the hair
 
-![](https://lh7-us.googleusercontent.com/VHjAZsEyg3F9jANWC0pOL0WQymSHMJrOMZZ6DQ4odapLefFfhmR\_vBjzSWsBb5rTSABMFj8q99StXSEcyiLQGPW4HkntooIloG-E1pQBUib126EWMIQ6jpEVmJKdVpKPDoc24L4cOhwzwPIbV9ojEdk)\
+Unlike clothes, most head meshes only have one bone: `Head`. More complex designs and physics will involve more bones, but we'll stick to the easy version for now.
 
+1. Select your hair
+2. Switch to Edit mode (Hotkey: `Tab`)
+3. Select all vertices (Hotkey: `A`)
+4. In the `Data` tab of the Properties panel (green triangle), create the `Head` entry (see screenshot below)
+5. Click on `Assign`&#x20;
+
+
+
+<figure><img src="https://lh7-us.googleusercontent.com/VHjAZsEyg3F9jANWC0pOL0WQymSHMJrOMZZ6DQ4odapLefFfhmR_vBjzSWsBb5rTSABMFj8q99StXSEcyiLQGPW4HkntooIloG-E1pQBUib126EWMIQ6jpEVmJKdVpKPDoc24L4cOhwzwPIbV9ojEdk" alt=""><figcaption></figcaption></figure>
+
+If you were to add this mesh in-game, it would stay on your character's head like a helmet.
+
+### Submeshes and materials
+
+{% hint style="info" %}
+This will blow the scale of this guide and you can ignore it for now. Once you're done with your hair, come back here and look at the links below if your hair mesh includes ornaments.
+{% endhint %}
+
+You can check the [#splitting-off-submeshes-mildly-advanced](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced "mention") guide, or read up on material assignment in Wolvenkit under [submeshes-materials-and-chunks.md](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention").
 
 ## The Physics
 
@@ -72,13 +102,22 @@ You first need to understand the files you need for hair to work in CP2077. Ther
 For more detes about physics, check [dangle-bones](../../3d-modelling/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../3d-modelling/dangle-bones/moving-a-dangle-chain.md "mention"). This is not necessary for the scope of this guide!
 {% endhint %}
 
-\-Remember when I said “like a helmet”? That also means your hair will not have any physics. Some short hair won’t have physics to wave around to begin with, but if you want your bangs and ponytails to wave when you open the character editor, get ready for some trial and error.
+Remember when I said “like a helmet”? That also means your hair will not have any physics. Some short hair won’t have physics to wave around to begin with, but if you want your bangs and ponytails to wave when you open the character editor, get ready for some trial and error.
 
 ![](https://lh7-us.googleusercontent.com/\_7-443kbkdIYG\_1BZX0og\_7x-32DXiAJtyPcLcrkYAt9Vzx8mKOWw5VzvnAMChVY5yMJ-OdMPxefhv9DbIxYikfNYhKd6wPa2WaM-TaDavmIiQwfJ3dRHyyjqu3RV5JSa7Woq9QOEUEiXsdqDM8MQ6E)
 
-\-First of all, understand which part of your hair you want to have physics first, and separate them into a submesh. Repeat the previous step on the submeshes that you don’t want to move. In this case, only the bangs have any space for physics, so I separated it into a submesh.
+1. First of all, understand which part of your hair you want to have physics first, and separate them into a submesh:
+   1. In edit mode, select the part that you want to split off (You can use "Select Linked", Hotkey `Ctrl+L`, to speed this up)
+   2. Once you're content with your selection, `separate` the selection into a new submesh (Hotkey: `P` -> `S`)
+2. Repeat the previous step on the submeshes that you don’t want to move. In this case, only the bangs will move:
 
 ![](https://lh7-us.googleusercontent.com/D4X5fA3Cqo8gA62Mbdgo8RxNQfj8O8hlUjLcXwBYJNSH4Ncq\_fq9YdKAIFyhl2ccangVJfjy\_uv1UZeCYYO9d-nfZ37sUw41AODfguuCYeQdHxT2CbBOEU8B0uCiqqhUMvzglPkjn8E6KQD1xNM1Lik)
+
+### Finding vanilla hair to replace
+
+{% hint style="info" %}
+You always have to do this, even if you want to add your hair via ArchiveXL as a wig.
+{% endhint %}
 
 Search for a vanilla hairstyle from the game that resembles your physics part the most, and export them with Wolvenkit.&#x20;
 
