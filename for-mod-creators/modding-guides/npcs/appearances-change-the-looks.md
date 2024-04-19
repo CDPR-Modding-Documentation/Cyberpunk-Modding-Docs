@@ -68,7 +68,7 @@ The only thing you need to care about is the `components` array (learn more abou
 <figure><img src="../../../.gitbook/assets/app_modification_guide_app_file.png" alt=""><figcaption><p>Removing Johnny's head won't make him shut up. Try it out, say "Arasaka".</p></figcaption></figure>
 
 {% hint style="info" %}
-The names of components **should** be unique so you can [manipulate them outside of the .app file](../items-equipment/influencing-other-items.md#summary). You should generalls tick to CDPR's naming scheme, including the prefixes ([why is this important?](../../3d-modelling/garment-support-how-does-it-work/#component-prefixes)).&#x20;
+The names of components **should** be unique so you can [manipulate them outside of the .app file](../items-equipment/influencing-other-items.md#summary). You should generally stick to CDPR's naming scheme, including the prefixes ([why is this important?](../../3d-modelling/garment-support-how-does-it-work/#component-prefixes)).&#x20;
 
 CDPR's style of unique naming allows us to find components and their usage across the game files, which will come on handy when we're trying to add items.
 {% endhint %}
