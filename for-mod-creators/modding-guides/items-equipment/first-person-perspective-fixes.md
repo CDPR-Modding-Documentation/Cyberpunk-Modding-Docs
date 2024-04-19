@@ -50,7 +50,7 @@ This is probably the most common problem I've seen, and is also thankfully the e
 
 1.  Open up the [mesh entity](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) (`.ent`) file for the item you need to fix:
 
-    <figure><img src="../../../.gitbook/assets/image (124).png" alt=""><figcaption><p>There are no appearances in a mesh entity file!</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (124) (1).png" alt=""><figcaption><p>There are no appearances in a mesh entity file!</p></figcaption></figure>
 2.  Expand the `components` array, then find any `component`s with `Mesh` in their types, and check if they require fixing. In my example project, it's both the jacket and the sleeves.&#x20;
 
     <figure><img src="../../../.gitbook/assets/image (125).png" alt=""><figcaption><p>You might have to hunt around to find the right component, depending on how many there are.</p></figcaption></figure>

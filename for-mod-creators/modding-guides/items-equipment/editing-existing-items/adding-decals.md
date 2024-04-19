@@ -179,6 +179,10 @@ With your new submesh selected in Object Mode, switch to the Shading perspective
 
 ## Step 5: UV projection
 
+{% hint style="info" %}
+For more information on this, check [uv-mapping-texturing-a-3d-object.md](../../../materials/uv-mapping-texturing-a-3d-object.md "mention") (but the page will only send you back here).
+{% endhint %}
+
 Our decal is now showing our new material. Make sure that it has exactly one UV map by checking the `Data` tab:
 
 <figure><img src="../../../../.gitbook/assets/uv_mapping_blender_data_tab.png" alt=""><figcaption><p>If there is more than one, delete all but the first (starting at the bottom)</p></figcaption></figure>
