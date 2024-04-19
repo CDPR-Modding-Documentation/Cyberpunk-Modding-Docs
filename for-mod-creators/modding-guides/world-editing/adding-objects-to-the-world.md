@@ -35,7 +35,7 @@ This guide aims to teach you adding objects to the world.
 **Note: depending on the object spawned, it may or may not have baked in collisions. Keep this in mind and don't worry - there are a number of ways to either add collisions, fake them,** [**or enable them**](enable-embedded-collisions.md) **depending on the context.**
 
 * Add your objects to a group - if creating a building or other complicated structure, you should also create subgroups for each of your exterior walls and other major components.&#x20;
-* after placing the objects, save the group incase you want to change something later on and then use Object Spawner's export function to create a .JSON file which you can use to add these objects permanently to the world.
+* after placing the objects, save the group incase you want to change something later on. You can use Object Spawner's export function to create a .JSON file which you can use to add these objects permanently to the world. (The Export button can be enabled in Object Spawner's 'Settings' tab)
 
 <figure><img src="../../../.gitbook/assets/save then export entspawner.png" alt=""><figcaption></figcaption></figure>
 
