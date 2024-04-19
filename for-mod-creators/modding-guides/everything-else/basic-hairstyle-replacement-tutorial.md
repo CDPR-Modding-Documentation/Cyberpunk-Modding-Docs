@@ -20,6 +20,10 @@ This guide will teach you how to&#x20;
 * For an overview of existing hair files and -colours, check [hair.md](../../references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
 * For a more detailed guide on hair physics, check [dangle-bones](../../3d-modelling/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../3d-modelling/dangle-bones/moving-a-dangle-chain.md "mention")
 
+You can find a video tutorial by eagul on youtube:
+
+{% embed url="https://www.youtube.com/watch?feature=youtu.be&v=twTf7p3beDA" %}
+
 ## Requirements
 
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.13.0 (you should have it [installed and onfigured](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download))
