@@ -78,6 +78,10 @@ You have vertex groups in your mesh that don't have a corresponding bone in the 
 
 The armature (rig, skeleton) is the thing that makes your mesh move in-game.&#x20;
 
+If your mesh isn't supposed to move, check [#amm-props-you-dont-need-an-armature](wkit-blender-plugin-error-messages.md#amm-props-you-dont-need-an-armature "mention")
+
+If your mesh is supposed to move with the body, check [#equipment-you-need-an-armature](wkit-blender-plugin-error-messages.md#equipment-you-need-an-armature "mention")
+
 ### AMM props: You don't need an armature
 
 It's enough to check the "Export as Static Prop" box during export, and the error will go away.
