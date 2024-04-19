@@ -23,7 +23,7 @@ Blender errors will show up in the system console window (View -> Toggle System 
 
 ### 1. Make sure that you are on the correct Blender version
 
-The plugin requires **at least** 3.6, if not 4.
+As of [1.5.5.1](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/1.5.5.1), the plugin requires **>= 4.0.2**
 
 You can see the exact Blender version in the lower right corner of the program:
 
@@ -81,4 +81,3 @@ If you aren't sure how old your depot is or if you have one at all, it might be 
 {% hint style="success" %}
 After regenerating your depot, make sure to re-export your .mesh with materials!
 {% endhint %}
-

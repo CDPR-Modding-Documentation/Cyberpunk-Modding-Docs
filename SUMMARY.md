@@ -33,6 +33,7 @@
     * [Installing the Wolvenkit Blender Plugin](for-mod-creators/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin.md)
     * [WKit Blender Plugin: Import/Export](for-mod-creators/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md)
     * [WKit Blender Plugin: AKL Autofitter](for-mod-creators/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md)
+    * [WKit Blender Plugin: Error messages](for-mod-creators/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-error-messages.md)
     * [WKit Blender Plugin: Troubleshooting](for-mod-creators/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-troubleshooting/README.md)
       * [Blender: Running Python Scripts](for-mod-creators/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-troubleshooting/blender-running-python-scripts.md)
   * [Savegame Editor: CyberCAT](for-mod-creators/modding-tools/savegame-editor-cybercat.md)
