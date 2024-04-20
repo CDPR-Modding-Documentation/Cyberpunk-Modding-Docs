@@ -231,6 +231,10 @@ Spawn your NPV and check that they look like they should.&#x20;
 
 Optimally, this process just runs with no hitches. However, during beta testing and troubleshooting, people ran into a few issues, so I'm listing them here.
 
+### Blender won't export
+
+You **need** to use the [wolvenkit-blender-io-suite](../../../modding-tools/wolvenkit-blender-io-suite/ "mention") for export. Make sure that it is installed and up-to-date.
+
 ### Blender script errors
 
 You can check if Blender has run into errors by opening the **Blender console window** - from the menu, select Window -> Toggle System Console.&#x20;
@@ -239,11 +243,11 @@ As of December 2023, **any** script errors have been because the person encounte
 
 <figure><img src="../../../../.gitbook/assets/npv_blender_version.png" alt=""><figcaption><p>This is using Blender 2.93, which is definitely not compatible.</p></figcaption></figure>
 
-The files have been tested with 3.5.1, 3.6 and 4.0, but anything >= 3.4 should work.&#x20;
+As of plugin version 1.5.5.1, you should have at least 4.0 installed.
 
 ### The piercings are in the wrong position!
 
-The problem went away after the person having it upgraded Blender to 3.5.&#x20;
+The problem went away after the person having it upgraded Blender.&#x20;
 
 ### V was imported, but they're unsettlingly, subtly _wrong_
 
