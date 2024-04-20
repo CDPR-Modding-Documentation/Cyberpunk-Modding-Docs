@@ -4,15 +4,15 @@ description: How materials work, and how you can configure them
 
 # Material properties
 
-#### Summary
+## Summary
 
-**Last documented update:** Jan 14 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Apr 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page gives an explanation and overview about material properties. For more detailed explanation of a specific kind of material, please check the nested pages in the wiki's file tree, or check the "next" link at the bottom of the page.
 
 * If you want to see a list of materials grouped by class, check [cheat-sheet-materials.md](../../references-lists-and-overviews/cheat-sheet-materials.md "mention")
-* If you want to learn how material assignment works on the object, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")
-* If you want to understand material templates, please check [re-using-materials-.mi.md](../../files-and-what-they-do/materials/re-using-materials-.mi.md "mention")
+* If you want to learn how material assignments work on the object, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")
+* If you want to understand reusable material templates, please check [re-using-materials-.mi.md](../../files-and-what-they-do/materials/re-using-materials-.mi.md "mention")
 * The [modding-guides](../../modding-guides/ "mention") section has multiple guides on editing materials, e.g. [changing-materials-colors-and-textures.md](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") or [textured-items-and-cyberpunk-materials.md](../../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention")
 
 ## Material properties
@@ -48,7 +48,7 @@ Here, you can also see what value a shader template will use if you don't give i
 
 The interesting bit is on the right side of the arrow in the picture above, since it specifies the type of parameter:
 
-<table><thead><tr><th width="265">Type: CMaterialParameter…</th><th width="137">CKeyValue</th><th>explanation</th></tr></thead><tbody><tr><td><code>Vector</code></td><td>Vector4</td><td>A vector with X, Y, Z, W (coordinates and space). This is also used for colour values.</td></tr><tr><td><code>Texture</code></td><td>RRef:Texture</td><td>A texture (.xbm) via DepotPath</td></tr><tr><td><code>Color</code></td><td>Color</td><td>A color (RGB/color picker)</td></tr><tr><td><code>MultilayerMask</code></td><td>RRef:MultilayerMask</td><td>a <a href="../multilayered/#what-is-the-mlmask">multilayerMask</a> (<code>.mlmask</code>) via depotPath</td></tr><tr><td><code>MultilayerSetup</code></td><td>RRef:MultilayerSetup</td><td>a <a href="../multilayered/#what-is-the-mlsetup">multilayerSetup</a> (<code>.mlsetup</code>) via depotPath</td></tr><tr><td><code>Scalar</code></td><td>CFloat/CDouble</td><td>a numeric value with decimals. Float has 7 decimals, Double has 15</td></tr><tr><td><code>TextureArray</code></td><td>???</td><td>a texarray via depotPath</td></tr><tr><td><code>StructBuffer</code></td><td>???</td><td></td></tr><tr><td><a data-footnote-ref href="#user-content-fn-1"><code>HairProfile</code></a></td><td>RRef:<code>.hp</code></td><td>A hair profile (<a href="../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#hair-profiles-.hp">.hp</a>) via depotPath</td></tr></tbody></table>
+<table><thead><tr><th width="261">Type: CMaterialParameter…</th><th width="137">CKeyValue</th><th>explanation</th></tr></thead><tbody><tr><td><code>Vector</code></td><td>Vector4</td><td>A vector with X, Y, Z, W (coordinates and space). This is also used for colour values (Wolvenkit usually supports those).</td></tr><tr><td><code>Texture</code></td><td>RRef:Texture</td><td>A texture (.xbm) via DepotPath</td></tr><tr><td><code>Color</code></td><td>Color</td><td>A color (RGB/color picker)</td></tr><tr><td><code>MultilayerMask</code></td><td>RRef:MultilayerMask</td><td>a <a href="../multilayered/#what-is-the-mlmask">multilayerMask</a> (<code>.mlmask</code>) via depotPath</td></tr><tr><td><code>MultilayerSetup</code></td><td>RRef:MultilayerSetup</td><td>a <a href="../multilayered/#what-is-the-mlsetup">multilayerSetup</a> (<code>.mlsetup</code>) via depotPath</td></tr><tr><td><code>Scalar</code></td><td>CFloat/CDouble</td><td>a numeric value with decimals. Float has 7 decimals, Double has 15</td></tr><tr><td><code>TextureArray</code></td><td>???</td><td>a texarray via depotPath</td></tr><tr><td><code>StructBuffer</code></td><td>???</td><td></td></tr><tr><td><a data-footnote-ref href="#user-content-fn-1"><code>HairProfile</code></a></td><td>RRef:<code>.hp</code></td><td>A hair profile (<a href="../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#hair-profiles-.hp">.hp</a>) via depotPath</td></tr></tbody></table>
 
 ## Transparency
 
@@ -56,7 +56,8 @@ Whether or not a material can be transparent depends on the shader. Transparency
 
 ## Glow / Light
 
-Whether or not a material emits light depends on the shader, e.g. `metal_base.remt` supports this via the `Emissive` texture property. For a documentation of this, see [emissive-material-properties.md](emissive-material-properties.md "mention").
+Whether or not a material emits light depends on the shader, e.g. `metal_base.remt` supports this via the `Emissive` texture property. \
+For a documentation of this, see [emissive-material-properties.md](emissive-material-properties.md "mention").
 
 ## Shared properties
 
@@ -72,7 +73,7 @@ Properties with texture paths can end in Texture, e.g. `BaseColorTexture` instea
 As this is a horrible mess, it is easiest to [look up the properties in the shader](./#checking-material-properties) if you're not certain.
 {% endhint %}
 
-<table><thead><tr><th width="236">Property name(s)</th><th>Explanation</th></tr></thead><tbody><tr><td>LayerTile<br>LayerScale</td><td>Material scaling (zoom on surface)<br>> 1 zooms in, >1 zooms out</td></tr><tr><td>Roughness<br>Rough</td><td>Whether a surface is rough or smooth. <strong>White</strong>: full, <strong>Black</strong>: none</td></tr><tr><td>Metalness<br>Metallic</td><td>Whether a surface is metallic or not. White: full, Black: none</td></tr><tr><td>Normal<br>GlobalNormal</td><td>A material's <a href="../../modding-guides/textures-and-luts/self-made-normal-maps/">bump map</a>. Yellow normal maps are called <em>swizzled</em>.</td></tr><tr><td>BaseColor<br>Diffuse<br>Albedo</td><td>A material's base colour value. This is usually a colour, but it can also be a vector4. In that case, use <a href="https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks">this</a> color picker blend file</td></tr><tr><td>AlphaThreshold</td><td>Clamps transparency. (TODO: how exactly?)</td></tr><tr><td>EnableMask</td><td>Should the material enable masking? (will use the diffuse texture's alpha channel)</td></tr><tr><td>Mask</td><td>A mask (transparency) texture that works like a layer mask in Photoshop.</td></tr></tbody></table>
+<table><thead><tr><th width="236">Property name(s)</th><th>Explanation</th></tr></thead><tbody><tr><td>LayerTile<br>LayerScale</td><td>Material scaling (zoom on surface)<br>> 1 zooms in, >1 zooms out</td></tr><tr><td>Roughness<br>Rough</td><td>Whether a surface is rough or smooth. <strong>White</strong>: full, <strong>Black</strong>: none</td></tr><tr><td>Metalness<br>Metallic</td><td>Whether a surface is metallic or not. <strong>White</strong>: full, <strong>Black</strong>: none</td></tr><tr><td>Normal<br>GlobalNormal</td><td>A material's <a href="../../modding-guides/textures-and-luts/self-made-normal-maps/">bump map</a>. Yellow normal maps are called <em>swizzled</em>.</td></tr><tr><td>BaseColor<br>Diffuse<br>Albedo</td><td>A material's base colour value. This is usually a colour, but it can also be a vector4. Wolvenkit usually supports this, but if you don't see a colour picker, please <a href="https://github.com/WolvenKit/WolvenKit/issues">write a ticket</a> (and use the <a href="../../../_resources_and_assets/blender/xyz_color_picker_for_cyberpunk.zip">color picker .blend</a>)</td></tr><tr><td>AlphaThreshold</td><td>Clamps transparency. (TODO: how exactly?)</td></tr><tr><td>EnableMask</td><td>Should the material enable masking? (will use the diffuse texture's alpha channel)</td></tr><tr><td>Mask</td><td>A mask (transparency) texture (like a layer mask in Photoshop)</td></tr></tbody></table>
 
 ## Roughness/Metalness
 
