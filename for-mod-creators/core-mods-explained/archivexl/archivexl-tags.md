@@ -44,19 +44,19 @@ Tags are case-sensitive!
 
 ### ArchiveXL tags
 
-| Tag                 | Effect                                 |
-| ------------------- | -------------------------------------- |
-| `hide_Head`         | Hides head.                            |
-| `hide_Torso`        | Hides the whole torso.                 |
-| `hide_LowerAbdomen` | Hides lower abdomen.                   |
-| `hide_UpperAbdomen` | Hides upper abdomen.                   |
-| `hide_CollarBone`   | Hides collar bone area.                |
-| `hide_Arms`         | Hides arms.                            |
-| `hide_Thighs`       | Hides thighs.                          |
-| `hide_Calves`       | Hides calves.                          |
-| `hide_Ankles`       | Hides ankles.                          |
-| `hide_Feet`         | Hides feet.                            |
-| `hide:legs`         | Hides the entire legs (including feet) |
+| Tag                 | Effect                                                                                                                                                                                                                             |
+| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `hide_Head`         | Hides head.                                                                                                                                                                                                                        |
+| `hide_Torso`        | Hides the whole torso.                                                                                                                                                                                                             |
+| `hide_LowerAbdomen` | Hides lower abdomen.                                                                                                                                                                                                               |
+| `hide_UpperAbdomen` | Hides upper abdomen.                                                                                                                                                                                                               |
+| `hide_CollarBone`   | Hides collar bone area.                                                                                                                                                                                                            |
+| `hide_Arms`         | Hides the whole arms, including hands. (There's [no easy way to partially hide arms](../../references-lists-and-overviews/cheat-sheet-body.md#arms), you would have to [create custom tags](archivexl-tags.md#adding-custom-tags)) |
+| `hide_Thighs`       | Hides thighs.                                                                                                                                                                                                                      |
+| `hide_Calves`       | Hides calves.                                                                                                                                                                                                                      |
+| `hide_Ankles`       | Hides ankles.                                                                                                                                                                                                                      |
+| `hide_Feet`         | Hides feet.                                                                                                                                                                                                                        |
+| `hide:legs`         | Hides the entire legs (including feet)                                                                                                                                                                                             |
 
 {% hint style="info" %}
 Check the [#root-entity-tags](archivexl-tags.md#root-entity-tags "mention") section below for more tags

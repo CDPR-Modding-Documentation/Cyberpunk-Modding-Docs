@@ -65,6 +65,8 @@ The player base body does not come with arms attached — this makes it easier t
 
 {% hint style="info" %}
 Arms are using different meshes for the first person perspective. You can usually find them near the regular meshes in a subfolder with the name `fpp`.
+
+There's no easy way to hide arms. For more information, check [#archivexl-tags](../core-mods-explained/archivexl/archivexl-tags.md#archivexl-tags "mention")
 {% endhint %}
 
 You can look up the component names and their properties in the .ent files per body gender in these folders (the file names will start with `a0_`):
