@@ -200,28 +200,52 @@ Since the appearance in the .app is called `app_file_dynamic_appearance` for cla
 For a general explanation of the .app file, check [#appearance.app](archive-xl-item-structure-explained.md#appearance.app "mention"). This section will only cover the differences between a dynamic and a regular .app file.
 
 {% hint style="danger" %}
-For dynamic variants, components in the .app file will be **ignored**. You have to use a mesh entity.
+For dynamic variants, components in the .app file will be **ignored**. You **have** to use a mesh entity.
 {% endhint %}
 
-#### Conditional switching: picking appearances by name
+#### .app file: Conditional switching
 
-You can define appearances for different circumstances by using [#conditional-switching](../../../core-mods-explained/archivexl/#conditional-switching "mention") for the appearance names. This will let you influence the mesh entity even further by e.g. hiding parts of the mesh via [#chunkmask](../../../files-and-what-they-do/components/#chunkmask "mention"). And the best part is: you don't even need to touch your root entity.
+You can define appearances for different circumstances by changing the appearance names. This will let you influence the mesh entity even further by e.g. hiding parts of the mesh via [#chunkmask](../../../files-and-what-they-do/components/#chunkmask "mention"). And the best part is: you don't even need to touch your root entity.
 
-In the context of our example project, this means that you can define your appearances like this:
+In the context of our example project, this means that you can define your **appearances** like this:
 
-<table><thead><tr><th width="450">Appearance name</th><th>Explanation</th></tr></thead><tbody><tr><td><code>app_file_dynamic_appearance</code></td><td>Your regular appearance. Is displayed when none of the conditional ones apply.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;camera=fpp</code></td><td>This becomes active whenever you are in first person perspective. You'll usually want this to<a href="../first-person-perspective-fixes.md#problem-2-its-in-your-face-juststormtrooperthings"> remove the mesh from your face</a> via <a href="../../../files-and-what-they-do/appearance-.app-files#partsoverrides">partsOverrides</a>.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;gender=male</code></td><td>You shouldn't do this — instead, use <a href="../../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#which-substitutions-exist">substitutions</a> in the mesh file path.</td></tr></tbody></table>
+<table><thead><tr><th width="450">Appearance name</th><th>Explanation</th></tr></thead><tbody><tr><td><code>app_file_dynamic_appearance</code></td><td>Your regular appearance. Is displayed when none of the conditional ones apply.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;camera=tpp</code></td><td>This is only active in third person perspective. The item will be completely invisible in first person.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;camera=fpp</code></td><td>This becomes active whenever you are in first person perspective. You'll usually want this to<a href="../first-person-perspective-fixes.md#problem-2-its-in-your-face-juststormtrooperthings"> remove the mesh from your face</a> via <a href="../../../files-and-what-they-do/appearance-.app-files#partsoverrides">partsOverrides</a>.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;gender=male</code></td><td>You shouldn't do this — instead, use <a data-mention href="archivexl-dynamic-variants.md#substitutions">#substitutions</a> in the mesh file path.</td></tr></tbody></table>
 
 ### The mesh\_entity
 
 For a general explanation of the mesh entity, check [#mesh\_entity.ent](archive-xl-item-structure-explained.md#mesh\_entity.ent "mention"). This section will only cover the differences between a dynamic and a regular mesh entity.
 
 {% hint style="info" %}
-Unless you are using conditional switching in the .app file already, this file is where all of the magic happens.
+Unless you are using [#app-file-conditional-switching](archivexl-dynamic-variants.md#app-file-conditional-switching "mention"), this is where the magic happens.
 {% endhint %}
 
-Like appearance definition names, components in the mesh entity support [#conditional-switching](../../../core-mods-explained/archivexl/#conditional-switching "mention"). On top of that, they also support [#substitutions](../../../core-mods-explained/archivexl/#substitutions "mention")!
+Like appearance definition names, components in the mesh entity support  [#ent-file-conditional-switching](archivexl-dynamic-variants.md#ent-file-conditional-switching "mention"). On top of that, they also support [#substitutions](archivexl-dynamic-variants.md#substitutions "mention").
 
 Check [#the-diagram](archivexl-dynamic-variants.md#the-diagram "mention")'s bottom left corner for a demonstration of both, or read up the [ArchiveXL documentation](../../../core-mods-explained/archivexl/#dynamic-appearances) on how they work.
+
+#### Substitutions
+
+In your mesh entity, you can use **substitutions** in path names to load different meshes. This is better than [#ent-file-conditional-switching](archivexl-dynamic-variants.md#ent-file-conditional-switching "mention") because it won't create extra components.
+
+To enable substitution, your depot path must begin with an asterisk `*`. Each substitution needs to be enclosed in braces, e.g. `{gender}`.
+
+For a list, check [#which-substitutions-exist](../../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#which-substitutions-exist "mention")
+
+<figure><img src="../../../../.gitbook/assets/dynamic_variants_substitution.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+[File validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) can help you spot errors in your paths.
+{% endhint %}
+
+#### .ent file: conditional switching
+
+{% hint style="warning" %}
+ArchiveXL will create **all** components, hiding those that aren't matched by your current conditions. If possible, use [#substitutions](archivexl-dynamic-variants.md#substitutions "mention") instead.
+{% endhint %}
+
+Just like in the .app file, you can apply conditional switching to component names. It works exactly like [#app-file-conditional-switching](archivexl-dynamic-variants.md#app-file-conditional-switching "mention"):
+
+<figure><img src="../../../../.gitbook/assets/dynamic_variants_conditional_switching.png" alt=""><figcaption></figcaption></figure>
 
 ## The diagram
 

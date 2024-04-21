@@ -89,18 +89,19 @@ If you don't have a yaml because you're changing an in-game item for some reason
 3.  Helpful documentation on .yaml files resides [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items/archive-xl-item-structure-explained#the-control-file-yourmodname.yaml). Hopefully it looks something like this:
 
     <figure><img src="../../../.gitbook/assets/image (130).png" alt=""><figcaption><p>This is my example .yaml file with only <em>one</em> entry. Yours might have more.</p></figcaption></figure>
-4. Find the line `appearanceSuffixes`_._ If the mod is using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention") (there is something called $instances), you can skip this step.
-5. If the line isn't there, add it. Use the same number of leading spaces as in the surrounding lines!
-6.  Add the line `itemsFactoryAppearanceSuffix.Camera` to the array. If you have something else in there, add a comma.
+4. Check if there is something called `$instances`. If yes, the mod is using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention") and you are done here — go to either #fixing
+5. Find the line `appearanceSuffixes`_._ If the mod is using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention") (there is something called $instances), you can skip this step.
+6. If the line isn't there, add it. Use the same number of leading spaces as in the surrounding lines!
+7.  Add the line `itemsFactoryAppearanceSuffix.Camera` to the array. If you have something else in there, add a comma.
 
     <figure><img src="../../../.gitbook/assets/image (131).png" alt=""><figcaption><p>If there's already another entry, add a comma and a space, <em>then</em> add <code>itemsFactoryAppearanceSuffix.Camera</code>.</p></figcaption></figure>
-7. Repeat this process for any other items in the `.yaml` that you need to fix.&#x20;
-8. Save and close the file.
+8. Repeat this process for any other items in the `.yaml` that you need to fix.&#x20;
+9. Save and close the file.
 
-### Fixing the root entity
+### Legacy variants: hiding FPP
 
 {% hint style="info" %}
-For dynamic appearances (if the yaml has a key called `$instances`), complete step 1 below and then go to [#hiding-fpp-for-dynamic-variants](first-person-perspective-fixes.md#hiding-fpp-for-dynamic-variants "mention").
+For dynamic appearances (if the yaml has a key called `$instances`), go to [#dynamic-variants-hiding-fpp](first-person-perspective-fixes.md#dynamic-variants-hiding-fpp "mention")
 {% endhint %}
 
 1. Switch back to Wolvenkit.
@@ -112,24 +113,13 @@ You now have two ways of hiding the item in first person:
 
 #### Hiding FPP via tag
 
-You can't do that if you're using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention").
+{% hint style="warning" %}
+This will not work with [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention")!
+{% endhint %}
 
 1. Find the array `tags` at the end of the list.
 2. In the panel on the right, click "add new item" (the yellow +) until you have an empt text field.
 3. Unless you are using In the text field, enter `EmptyAppearance:FPP`
-4. That's it!
-
-#### Dynamic variant: Hiding FPP in the mesh\_entity
-
-To hide components in the [#mesh-component-entity-simple-entity](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity "mention"), add suffixes to their names. You can add `&camera=tpp` to a component's name, or you can duplicate it and have two for different meshes (check [#problem-3-partial-hiding-justdraculathings](first-person-perspective-fixes.md#problem-3-partial-hiding-justdraculathings "mention") for details).
-
-<figure><img src="../../../.gitbook/assets/fixiing_fpp_dynamic_mesh_entity.png" alt=""><figcaption></figcaption></figure>
-
-#### Dynamic variant: Hiding FPP in the .app
-
-Add `&camera=tpp` to the appearance name(s). They will now no longer appear in First Person mode.
-
-<figure><img src="../../../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
 
 #### Hiding FPP via appearance definition
 
@@ -146,10 +136,40 @@ Add `&camera=tpp` to the appearance name(s). They will now no longer appear in F
 
     <figure><img src="../../../.gitbook/assets/first_person_appearance_suffixes.png" alt=""><figcaption><p>Should look like this now.</p></figcaption></figure>
 
+### Dynamic variants: Hiding FPP
 
-3.  Save and close the file. Repeat the whole process for any other items that need to be obliterated in first person. Install and test. If all went well, no more obstructed vision!
+{% hint style="info" %}
+For legacy appearances (if the yaml does not have a key called `$instances`), go to [#legacy-variants-hiding-fpp](first-person-perspective-fixes.md#legacy-variants-hiding-fpp "mention")
+{% endhint %}
 
-    <figure><img src="../../../.gitbook/assets/image (135).png" alt=""><figcaption><p>I can see clearly now!</p></figcaption></figure>
+1. Switch back to Wolvenkit.
+2. Pick **one of the two** options below (we recommend[#hiding-fpp-in-the-.app](first-person-perspective-fixes.md#hiding-fpp-in-the-.app "mention"))
+
+#### Hiding FPP in the .app
+
+1. Open the [.app file](../../files-and-what-they-do/appearance-.app-files/) in Wolvenkit
+2. Open the `appearances` array
+3. Select each appearance and add `&camera=tpp` to the name.
+
+<figure><img src="../../../.gitbook/assets/image (144).png" alt=""><figcaption></figcaption></figure>
+
+#### Hiding FPP in the mesh\_entity
+
+1. Open the [#mesh-component-entity-simple-entity](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity "mention") in Wolvenkit
+2. Open the `components` array
+3. Select each component with `Mesh` in its type and add `&camera=tpp` to the name
+
+<figure><img src="../../../.gitbook/assets/fixiing_fpp_dynamic_mesh_entity.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+Alternatively, you can duplicate the component and have two for different meshes. This will be covered in [#problem-3-partial-hiding-justdraculathings](first-person-perspective-fixes.md#problem-3-partial-hiding-justdraculathings "mention")
+{% endhint %}
+
+### Testing
+
+Save and close the file. Repeat the whole process for any other items that need to be obliterated in first person. Install and test. If all went well, no more obstructed vision!
+
+<figure><img src="../../../.gitbook/assets/image (135).png" alt=""><figcaption><p>I can see clearly now!</p></figcaption></figure>
 
 ## Problem #3: Partial hiding (#justDraculaThings)
 
