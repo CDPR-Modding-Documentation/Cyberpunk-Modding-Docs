@@ -43,7 +43,7 @@ The final section of [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md
 {% hint style="info" %}
 **It's too many of them!**
 
-True! That's because I included **all** options for any given V. But don't worry: after you have deleted the ones that you won't be using, you should be left with a maximum of 13 files for female V and 14 files for male V.
+True! That's because I included **all** options for any given V. But don't worry: after you have deleted the ones that you won't be using, you should be left with a maximum of 13 `.morphtarget` files for female V and 14 files for male V.&#x20;
 {% endhint %}
 
 I have included all meshes and morphtargets from the game files. We'll now thin out the options, deleting those parts that your NPV won't be using.
