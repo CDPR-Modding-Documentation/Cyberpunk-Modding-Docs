@@ -24,10 +24,9 @@ If you run into issues with this guide, the right place to ask for help is `#mod
 **This guide uses the following versions:**
 
 * Cyberpunk 2077 game version >= 1.6
-* Wolvenkit:&#x20;
-  * for game versions < 2.0, use [8.10.0](https://github.com/WolvenKit/WolvenKit/releases/tag/8.10.0)
-  * for game versions >= 2.0 / Phantom Liberty, use >= 8.11 ([Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) | [Stable](https://github.com/WolvenKit/Wolvenkit/releases))
-* [Blender](https://www.blender.org/download/) 4.0 or 3.6
+* Wolvenkit >= 8.12 ([Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) | [Stable](https://github.com/WolvenKit/Wolvenkit/releases))
+* [Blender](https://www.blender.org/download/) 4.1&#x20;
+  * [wolvenkit-blender-io-suite](../../../modding-tools/wolvenkit-blender-io-suite/ "mention") >= [1.5.5.2](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/)
 * [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) >= 2.1
 
 {% hint style="info" %}

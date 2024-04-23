@@ -236,6 +236,8 @@ This section will teach you how to add another hair mesh to your NPV. We will fi
 
 {% hint style="info" %}
 To use modded hair, find the correct files [inside the mod](../../analysing-other-mods/) and add them to your project.
+
+If you want to look up in-game hairs, check [hair.md](../../../references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
 {% endhint %}
 
 1. Delete the current hair from the .app — there should be 2-3 components, their names will start with either `hair_` or `hh_0`
@@ -263,6 +265,14 @@ If there are multiple files, check which one uses the **most** components per ap
 5. Open the `.ent` file and expand the `components` array. You will find three components in there, which you can now copy over to your `.app`!
 
 <figure><img src="../../../../.gitbook/assets/npv_hair_ent_file.png" alt=""><figcaption><p>Copy these and move them over to your .app</p></figcaption></figure>
+
+## The body
+
+As of version 2.2.0, the body mesh and arms are included for easier replacing.&#x20;
+
+The process is the same as what you did with the hair: find the files in the mod, add them to your project, move them to your NPVs folder and customize them to your liking.
+
+You can find more information at [cheat-sheet-body.md](../../../references-lists-and-overviews/cheat-sheet-body.md "mention") (which also contains the tattoo paths).
 
 ### And that's the gist of it!
 

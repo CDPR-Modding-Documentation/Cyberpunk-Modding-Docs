@@ -34,6 +34,16 @@ These meshes cover up seams at arms and shoulders, where the mesh edges might sh
 
 <table data-header-hidden><thead><tr><th width="214"></th><th width="316"></th><th>Component</th></tr></thead><tbody><tr><td>male body</td><td><code>base\characters\common\player_base_bodies\player_man_average\t0_000_pma_base__full_seamfix.mesh</code></td><td><code>t0_000_pma_base__full_seamfix</code></td></tr><tr><td>female body</td><td><code>base\characters\common\player_base_bodies\player_female_average\t0_000_pwa_base__full_seamfix.mesh</code></td><td><code>t0_000_pwa_base__full_seamfix</code></td></tr></tbody></table>
 
+## Body tattoos
+
+### Female body gender
+
+<table><thead><tr><th width="494"></th><th>Component</th></tr></thead><tbody><tr><td><code>base\characters\common\player_base_bodies\player_female_average\tattoos\tx_000_pwa_base__full_tattoo_01.mesh</code></td><td><code>tx_000_pwa_base__full_tattoo_01</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_female_average\tattoos\tx_000_pwa_base__full_tattoo_02.mesh</code></td><td><code>tx_000_pwa_base__full_tattoo_02</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_female_average\tattoos\tx_000_pwa_base__full_tattoo_03.mesh</code></td><td><code>tx_000_pwa_base__full_tattoo_03</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_female_average\tattoos\tx_000_pwa_base__full_tattoo_04.mesh</code></td><td><code>tx_000_pwa_base__full_tattoo_04</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_female_average\tattoos\tx_000_pwa_base__full_tattoo_05.mesh</code></td><td><code>tx_000_pwa_base__full_tattoo_05</code></td></tr></tbody></table>
+
+### Male body gender
+
+<table><thead><tr><th width="494"></th><th>Component</th></tr></thead><tbody><tr><td><code>base\characters\common\player_base_bodies\player_man_average\tattoos\tx_000_pma_base__full_tattoo_01.mesh</code></td><td><code>tx_000_pma_base__full_tattoo_01</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_man_average\tattoos\tx_000_pma_base__full_tattoo_02.mesh</code></td><td><code>tx_000_pma_base__full_tattoo_02</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_man_average\tattoos\tx_000_pma_base__full_tattoo_03.mesh</code></td><td><code>tx_000_pma_base__full_tattoo_03</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_man_average\tattoos\tx_000_pma_base__full_tattoo_04.mesh</code></td><td><code>tx_000_pma_base__full_tattoo_04</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_man_average\tattoos\tx_000_pma_base__full_tattoo_05.mesh</code></td><td><code>tx_000_pma_base__full_tattoo_05</code></td></tr></tbody></table>
+
 ## Head
 
 Find this information under [cheat-sheet-head](cheat-sheet-head/ "mention").
