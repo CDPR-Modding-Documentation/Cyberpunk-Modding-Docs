@@ -76,7 +76,8 @@ WINEDLLOVERRIDES="winmm,version=n,b" %command%
 ```
 
 {% hint style="danger" %}
-The parameters below are case sensitive. If you set them wrong, **this will not work**. You can copy-paste the text from the box above.
+The command is case sensitive. If you set it wrong, **this will not work**. \
+You can copy-paste the text from the box above.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption><p>Setting Launch Options in Steam</p></figcaption></figure>
@@ -103,4 +104,13 @@ You can find the launch options for GOG in the game's config menu under `Manage 
 
 <figure><img src="../../.gitbook/assets/gog_set_launch_args.png" alt=""><figcaption></figcaption></figure>
 
-As under Steam, you have to add `WINEDLLOVERRIDES="winmm,version=n,b" %command%`
+As under Steam, you have to add the following:
+
+```
+WINEDLLOVERRIDES="winmm,version=n,b" %command%
+```
+
+{% hint style="danger" %}
+The command is case sensitive. If you set it wrong, **this will not work**. \
+You can copy-paste the text from the box above.
+{% endhint %}
