@@ -131,8 +131,8 @@ Every submesh can have its own material assigned in the mesh, and can be hidden 
 
 I've always found it easiest to join all meshes into a single one:
 
-* In **Object Mode**, select all meshes but one
-* Select the last mesh (hold `Shift`)
+* In **Object Mode**, select all meshes but one (Hotkey: `A` , then `Ctrl+`click a mesh to deselect it)
+* Select the last mesh (hold `Shift` or `Ctrl`)
 * Press `Ctrl+J` to merge everything into that last mesh
 * Switch to Edit Mode
 * Select everything (Shortcut: `A`)
