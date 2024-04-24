@@ -132,11 +132,11 @@ Every submesh can have its own material assigned in the mesh, and can be hidden 
 I've always found it easiest to join all meshes into a single one:
 
 * In **Object Mode**, select all meshes but one
-* Select the last mesh
-* Press Ctrl+J to merge everything into that last mesh
+* Select the last mesh (hold `Shift`)
+* Press `Ctrl+J` to merge everything into that last mesh
 * Switch to Edit Mode
-* Select everything (Shortcut: A)
-* Separate (Shortcut: P) and select "By Material"\
+* Select everything (Shortcut: `A`)
+* Separate (Shortcut: `P`) and select "By Material"\
   ![](../../../.gitbook/assets/separate\_by\_material.png)
 * **Optional**, but recommended: run the script again to get properly numbered submeshes.
 
@@ -155,7 +155,7 @@ But the opposite is also possible: You can split off parts from the original obj
 You do that by changing into the edit mode, then selecting everything that you want to split off ("Select Linked" or "Select More" is your friend here),  and **splitting** it (P -> Split Selection).
 
 {% hint style="info" %}
-You can duplicate your selection first (Shift+D, ESC)
+You can duplicate your selection first (`Shift+D`, `ESC`)
 {% endhint %}
 
 Now, switch back to Object mode and select your new mesh before going back to Edit Mode. Make sure to [**scale**](../textures-and-luts/self-made-normal-maps/#step-0-preparing-the-viewport) your new mesh, so that it is slightly above the surface of the old one - otherwise, you will have two things in the same place, which will look like shit.
@@ -174,7 +174,7 @@ Select everything (click the viewport and press A), then unparent the objects by
 
 Since those are saved relatively and Wolvenkit will ignore them, your objects might end up larger or smaler than you expect them, or be in different places.&#x20;
 
-Select your objects in the viewport, then press Ctrl+A and choose "All Transforms".&#x20;
+Select your objects in the viewport, then press `Ctrl+A` and choose "All Transforms".&#x20;
 
 #### Scale it
 
