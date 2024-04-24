@@ -69,8 +69,15 @@ Apply via "OK". You may receive an error below or similar. If you do, click "Yes
 
 ## Steam: Launch Options
 
-Switch to steam and make sure that the launch options are set as below:\
-`WINEDLLOVERRIDES="winmm,version=n,b" %command%`
+Switch to steam and make sure that the launch options are set as below:
+
+```
+WINEDLLOVERRIDES="winmm,version=n,b" %command%
+```
+
+{% hint style="danger" %}
+The parameters below are case sensitive. If you set them wrong, **this will not work**. You can copy-paste the text from the box above.
+{% endhint %}
 
 <figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption><p>Setting Launch Options in Steam</p></figcaption></figure>
 
