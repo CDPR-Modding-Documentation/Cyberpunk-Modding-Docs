@@ -144,10 +144,11 @@ In theory, you can configure Vortex so that you hit the download button on the w
 #### V2077 Settings
 
 {% hint style="warning" %}
-This setting controls the automatic REDmod conversion. For an explanation of what that means, see [here](../#installing-and-activating-redmod).
+This setting controls the automatic REDmod conversion. In general, **you do not want this**.\
+For an explanation of what that means, see [#mod-format-redmod-or-vanilla](../#mod-format-redmod-or-vanilla "mention")
 {% endhint %}
 
-This only has one setting: automatic REDmod conversions. The only benefit of this settings is that you can control your archive load order completely. It is only recommended to turn this on if you have conflicting REDmod archives. If you do not have any REDmods installed (or have no known conflicts), you do not need to touch this.
+This only has one setting: automatic REDmod conversions. You will want to turn it off.
 
 #### Mods
 

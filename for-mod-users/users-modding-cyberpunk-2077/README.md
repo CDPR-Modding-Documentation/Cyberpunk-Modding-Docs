@@ -11,7 +11,7 @@ description: Modding your game, for users
 ## Summary
 
 **Published:** ?? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jan 23 2024, by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** April 27 2024, by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will teach you how to **install mods manually.**&#x20;
 
@@ -20,21 +20,23 @@ This page will teach you how to **install mods manually.**&#x20;
 * If your modded install is acting up, please check [user-guide-troubleshooting](../user-guide-troubleshooting/ "mention")
 
 {% hint style="danger" %}
-We strongly recommend using a mod manager. You have the following options:
+We strongly recommend using a mod manager. You have the following options (the links go to wiki pages with more information):
 
 [vortex-mod-manager.md](getting-started/vortex-mod-manager.md "mention") (Nexus Mod Manager)
 
 [mo2-mod-organizer-2.md](getting-started/mo2-mod-organizer-2.md "mention") (known from e.g. Skyrim and Fallout)
 
-It is possible to mod your game fully manually (and in fact, many modders do exactly that), but you have to understand the stuff on this page. Mod managers will save you from that effort.
+It is possible to mod your game fully manually (and in fact, many modders do exactly that), but you have to understand the stuff on this page.&#x20;
+
+Mod managers will save you from that effort.
 {% endhint %}
 
 ## How to install mods
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 **TL;DR:** Your mods will not work unless you
 
-* make sure all files end up in the right folders
+* put all files into the right folders
 * make sure to install all [requirements](../user-guide-troubleshooting/requirements-explained.md) (and their requirements)
 * [enable REDmod](./#installing-and-activating-redmod)
 
@@ -45,7 +47,7 @@ To see an [#overview-of-mod-folders](./#overview-of-mod-folders "mention"), scro
 
 ## How do I mod?
 
-You mod **Cyberpunk 2077** by adding files to your **game directory**. There is no need to overwrite base game files, since the game natively supports modding.&#x20;
+You mod **Cyberpunk 2077** by adding files to your [**game directory**](the-cyberpunk-2077-game-directory.md). The game natively supports modding, and the core mods will&#x20;
 
 {% hint style="success" %}
 The **game directory** is the toplevel folder of your game install.&#x20;
@@ -57,9 +59,13 @@ Unless you changed the default settings, it will be installed to:
 
 **GOG**\
 `C:\Program Files (x86)\GOG Galaxy\Games\Cyberpunk 2077\`
+
+**Epic**
+
+`C:\Program Files\Epic Games\Cyberpunk 2077\`
 {% endhint %}
 
-You can install mods by hand, by using [Vortex](https://www.nexusmods.com/about/vortex/), or by using Mod Organizer 2 with additional steps detailed [here.](https://github.com/JustThatKing/MO2077/blob/main/readme.md)
+You can install mods by using [Vortex](https://www.nexusmods.com/about/vortex/)/[Mod Organizer 2](getting-started/mo2-mod-organizer-2.md), or by hand[.](https://github.com/JustThatKing/MO2077/blob/main/readme.md)
 
 {% hint style="info" %}
 Regardless of your past experiences, the Nexus Mod Manager [Vortex](https://www.nexusmods.com/about/vortex/) works reliably and well for modding Cyberpunk.
@@ -95,7 +101,7 @@ This list is supposed to give you an overview of which files go where. It is **n
 
 To learn more about the individual frameworks, check [core-mods-explained](../../for-mod-creators/core-mods-explained/ "mention")
 
-<table><thead><tr><th width="256">Directory</th><th>explanation</th></tr></thead><tbody><tr><td>\<code>mods</code></td><td><a data-mention href="redmod/">redmod</a> directory: contains .archive mods (in subfolders)</td></tr><tr><td>\<code>archive\pc\mod</code></td><td>Legacy directory: contains .archive mods and .xl files</td></tr><tr><td>\<code>bin\x64\plugins</code></td><td>Plugins like Cyber Engine Tweaks</td></tr><tr><td><code>\r6\scripts</code></td><td>Redscript mods (<strong>not</strong> the same as REDmod)</td></tr><tr><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr></tbody></table>
+<table><thead><tr><th width="256">Directory</th><th>explanation</th></tr></thead><tbody><tr><td>\<code>mods</code></td><td><a data-mention href="redmod/">redmod</a> directory: contains .archive mods (in subfolders)</td></tr><tr><td>\<code>archive\pc\mod</code></td><td>Default mod directory: contains .archive mods and .xl files in <code>legacy</code> (non-REDmod) format. Most of your mods should be here.</td></tr><tr><td>\<code>bin\x64\plugins</code></td><td>Plugins like Cyber Engine Tweaks</td></tr><tr><td><code>\r6\scripts</code></td><td>Redscript mods (<strong>not</strong> the same as REDmod)</td></tr><tr><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr><tr><td>\<code>archive\pc\patch</code></td><td>Mod directory from before 1.3. Use <code>\archive\pc\mod</code> instead.</td></tr></tbody></table>
 
 ```markup
 - archive
@@ -106,7 +112,7 @@ To learn more about the individual frameworks, check [core-mods-explained](../..
     - plugins      << Cyber Engine Tweaks goes here
 - mods             << REDmods go here
 - r6               << redscript folder
-- tools            << Folder for modders. Also, REDmod DLC lives here.
+- tools            << REDmod DLC lives here — only needed for making mods.
 ```
 
 ## Installing and activating REDmod
@@ -147,16 +153,44 @@ The file structure is different for REDmods and non-REDmods. Mod authors usually
 
 ### Mod format: REDmod or vanilla?
 
-As a rule of thumb, a REDmod is **a different way of packaging the files**, which will cause it to be loaded into the games by a different mechanism. Here is how you can tell the two apart:
+{% hint style="danger" %}
+If in doubt, install the non-REDmod (`"legacy"`) format. To learn why, check [#whats-the-difference](./#whats-the-difference "mention") below the table.
+{% endhint %}
+
+&#x20;Here is how you can tell the two apart:
 
 | REDmod                                                                                                                    | Vanilla mod (packed correctly)                                                                                                                                                                                  |
 | ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p></p><p><img src="../../.gitbook/assets/installing-redmod-preview.png" alt="" data-size="original"></p>                 | <p></p><p><img src="../../.gitbook/assets/installing-gift-wrapping.png" alt="" data-size="original"></p>                                                                                                        |
 | is in a folder named after the mod                                                                                        | might be inside an extra folder                                                                                                                                                                                 |
-| has an `info.json`                                                                                                        | —                                                                                                                                                                                                               |
+| has an `info.json`                                                                                                        | does **not** have an `info.json`                                                                                                                                                                                |
 | has a subfolder `archives` or `tweaks` at the top level                                                                   | <p>contains any of the folders<br>- <code>archive</code><br>- <code>bin</code><br>- <code>r6</code><br>with files nested under them</p>                                                                         |
 | Is packed with one level of nesting (`info.json` is in top level folder)                                                  | Has multiple levels of nesting                                                                                                                                                                                  |
 | <p><strong>Manual install instructions:</strong> <br>Extract the folder ModName into <code>Cyberpunk 2077/mods</code></p> | <p><strong>Manual install instructions:</strong> <br>Merge the folders <code>archive</code>, <code>bin</code>, <code>r6</code> into the folders with the same names directly in <code>Cyberpunk 2077</code></p> |
+
+#### What's the difference?
+
+All REDmods mods will be **preloaded** by `redMod.exe` before the game starts up. After a short delay, the mods will then be loaded as if they were part of the game itself — you're saving the startup delay on every savegame load.
+
+On top of this, Vortex will let you define load order for REDmods. To support compatibility, it offers you automatic conversion.
+
+<details>
+
+<summary>That sounds awesome, why isn't it everywhere?!</summary>
+
+**Compatibility issues**
+
+REDmod was CDPR's attempt to standardize mod loading, but there were various compatibility issues with it, and it never quite took off. As of today (April 2024), the project is pretty much dead in the water.
+
+**Load order**
+
+REDmods are loaded after everything else, so that format is simply not an option for e.g. body mods.&#x20;
+
+**Vortex autoconvert**
+
+In theory, Vortex can automatically convert legacy mods to REDmod. In practice, that didn't help with any of the compatibility issues mentioned before, and caused some of them.
+
+</details>
 
 ### Mod format: a collection of loose files
 
@@ -164,18 +198,18 @@ Some mods (especially older ones) are just a loose collection of files without a
 
 <figure><img src="../../.gitbook/assets/installing-other.png" alt=""><figcaption></figcaption></figure>
 
-In this case, it's up to you and the **mod's install instructions** to put the files into the right game folders.&#x20;
+{% hint style="info" %}
+To find out how to install, you have to read the **mod's install instructions**.&#x20;
+{% endhint %}
 
-As a rule of thumb: unless specified otherwise,&#x20;
+#### Mod folders by file extension
 
-* `archive` files go into `/archive/pc/mod/`
-* `.xl` files go into `/archive/pc/mod/`
-* `.reds` files go into `/r6/scripts/`
-* `.tweak` or `.yaml` files go into `/r6/tweaks/`
-* .`lua` files go into a subfolder of `/bin/x64/plugins/cyber_engine_tweaks/`
+As a rule of thumb, here's which files go where:
+
+<table><thead><tr><th width="200"></th><th></th></tr></thead><tbody><tr><td>.<code>archive</code> </td><td><code>/archive/pc/mod/</code></td></tr><tr><td><code>.xl</code><br><code>.archive.xl</code></td><td><code>/archive/pc/mod/</code></td></tr><tr><td><code>.reds</code></td><td><code>/r6/scripts/</code></td></tr><tr><td><code>.tweak</code><br><code>.yaml</code></td><td><code>/r6/tweaks/</code></td></tr><tr><td><code>.lua</code></td><td>a subfolder of <code>/bin/x64/plugins/cyber_engine_tweaks/</code></td></tr><tr><td><code>.ini</code></td><td><code>engine/config/platform/pc</code></td></tr></tbody></table>
 
 ## Troubleshooting
 
 If you have problems with Vortex, check the [corresponding section](getting-started/vortex-mod-manager.md) of the guide.&#x20;
 
-For everything else, this wiki has a dedicated [troubleshooting page](../user-guide-troubleshooting/) with step-by-step instructions for pretty much every common problem. If that doesn't cut it, you're welcome to find us on [Discord](https://discord.gg/redmodding) in the #mod-troubleshooting channel (but your first answer will be a link to that guide).
+For everything else, this wiki has a dedicated [troubleshooting page](../user-guide-troubleshooting/) with step-by-step instructions for pretty much every common problem. If that doesn't cut it, you're welcome to find us on [Discord](https://discord.gg/redmodding) in the **#mod-troubleshooting** channel (but your first answer will be a link to that guide).
