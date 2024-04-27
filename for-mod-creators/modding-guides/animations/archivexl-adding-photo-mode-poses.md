@@ -11,7 +11,7 @@ description: How to hook up custom photo mode poses with ArchiveXL
 
 This guide will walk you through **adding poses** to Cyberpunk 2077's photo mode with **ArchiveXL**.
 
-**Difficulty:** You know how to read ;)&#x20;
+**Difficulty:** You know how to read ;)
 
 {% hint style="danger" %}
 This guide will teach you how to hook up an existing .anims file to the photo mode. If you don't have an .anims file, you can find a dummy file in the AMM [pose guide](amm-collab-anims-poses.md), or you can learn [how to make your own](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/).
@@ -35,7 +35,7 @@ Check out [this tool](https://wolv-photomode-tools.netlify.app/) by @wolv, it wi
 
 ## Getting the files
 
-Download either of these files:&#x20;
+Download either of these files:
 
 * full Wolvenkit project ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8287))
 * Wolvenkit source folder ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8287))
@@ -60,7 +60,7 @@ The screenshot below shows **suggestions**. Name your files and folders whatever
 
 This file tells Cyberpunk to load your custom poses and will be in the same folder as the .archive file for your mod. It looks like this:
 
-<pre><code><strong>animations:
+<pre class="language-yaml"><code class="lang-yaml"><strong>animations:
 </strong>  - entity: base\characters\entities\player\photo_mode\player_wa_photomode.ent
     set: tutorial\animations\netrunner_making_poses\pwa.anims
   - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep1.ent
@@ -84,7 +84,7 @@ localization:
 You have to adjust the paths under `set` and `en-us` to your new changed folder structure.
 
 {% hint style="info" %}
-If you want to support more body types from the Nibbles Replacer, you can [switch to the Mod Browser](../analysing-other-mods/) and enter the following search query to find all the entities: \
+If you want to support more body types from the Nibbles Replacer, you can [switch to the Mod Browser](../analysing-other-mods/) and enter the following search query to find all the entities:\
 `base\characters\entities\photomode_replacer > .ent`
 {% endhint %}
 
@@ -101,20 +101,20 @@ Here's what those things do:
 You can name this file whatever you want, just make sure that you change the path and name in the .xl file.
 {% endhint %}
 
-* Change the yellow box `UI-Photomode-tutorial-netrunner-making-poses` to something unique to your mod.&#x20;
+* Change the yellow box `UI-Photomode-tutorial-netrunner-making-poses` to something unique to your mod.
 * The green text is the name that will show up in photo mode — the female variant is the default.
 
 <figure><img src="../../../.gitbook/assets/archivexl_photomode_json.png" alt=""><figcaption></figcaption></figure>
 
 ### The .anim file(s)
 
-If you have created your own animations (as a [replacer](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/) or for [AMM](amm-collab-anims-poses.md)), then you are already familiar with this kind of file.  If not, it is time to appropriate one from the game files - pick any, since the process is just like with a replacer.
+If you have created your own animations (as a [replacer](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/) or for [AMM](amm-collab-anims-poses.md)), then you are already familiar with this kind of file. If not, it is time to appropriate one from the game files - pick any, since the process is just like with a replacer.
 
 Just as a reminder, here's how they look:
 
 <figure><img src="../../../.gitbook/assets/archivexl_photomode_anim.png" alt=""><figcaption></figcaption></figure>
 
-You will need the green text in your [.yaml file](archivexl-adding-photo-mode-poses.md#the-.yaml-file).&#x20;
+You will need the green text in your [.yaml file](archivexl-adding-photo-mode-poses.md#the-.yaml-file).
 
 {% hint style="info" %}
 Optional: If you want your pose to move, you can set the duration in the .yaml as well!
@@ -122,7 +122,7 @@ Optional: If you want your pose to move, you can set the duration in the .yaml a
 
 ### The .yaml file
 
-This file will go into `r6/tweaks/yourfolder` and appends the poses that you defined to the photo mode. Without this file, the animations will be in the entity, but the photo mode won't know about them.&#x20;
+This file will go into `r6/tweaks/yourfolder` and appends the poses that you defined to the photo mode. Without this file, the animations will be in the entity, but the photo mode won't know about them.
 
 {% hint style="success" %}
 You can use [this tool](https://wolv-photomode-tools.netlify.app/) by @wolv to autogenerate your .yaml. If you do that, then you can skip this entire section and check [the result](archivexl-adding-photo-mode-poses.md#the-result).
@@ -132,7 +132,7 @@ It has three sections:
 
 #### Adding the category
 
-The first block will introduce your new category to the photo mode.&#x20;
+The first block will introduce your new category to the photo mode.
 
 {% hint style="info" %}
 I recommend doing search and replace on `netrunner_making_poses`, because it's used a bunch of times.
@@ -157,49 +157,35 @@ Now comes a long list of entries. They'll look like this:
 You need to add one of those for every pose from your .anim file that you want to show up in photo mode.
 {% endhint %}
 
-`PhotoModePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon`: This is the unique key to assign your pose to your pose set. You'll need it in the third block. \
+`PhotoModePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon`: This is the unique key to assign your pose to your pose set. You'll need it in the third block.\
 `animationName`: This must match the animation name in your [.anim file](archivexl-adding-photo-mode-poses.md#the-.anim-file-s) (the green box).\
 `category`: This must match the category in the first block.\
 `displayName`: What'll show up in photo mode
 
-#### Spawning props with the pose [OPTIONAL]
+#### Spawning props with the pose \[OPTIONAL]
 
 It is possible to have certain props spawned automatically. **However, this feature works only for Player V.**
 
-To define what type of props you want to spawn you need to edit `acceptedWeaponConfig:` entry with one of the following tags:
-```
-POSE_WEAPON_ASSAULTRIFLE
-POSE_WEAPON_HANDGUN
-POSE_WEAPON_LMG
-POSE_WEAPON_PRECISIONRIFLE
-POSE_WEAPON_REVOLVER
-POSE_WEAPON_SHOTGUN
-POSE_WEAPON_SHOTGUNDUAL
-POSE_WEAPON_SMG
-POSE_WEAPON_SNIPERRIFLE
-POSE_WEAPON_HAMMER
-POSE_WEAPON_HMG
-POSE_WEAPON_KATANA
-POSE_WEAPON_KNIFE
-POSE_WEAPON_ONEHANDED
-POSE_PHONE
-POSE_CIGARETTE
-POSE_POPCORN
-POSE_GUITAR
-POSE_MICROPHONE_RIGHT
-POSE_MICROPHONE_LEFT
-POSE_WEAPON_FISTS
-```
+<figure><img src="https://i.imgur.com/hiSBpNJ.png" alt="" width="375"><figcaption><p>Example of prop spawned with the pose after defining it in yaml</p></figcaption></figure>
+
+To define what type of props you want to spawn you need to edit `acceptedWeaponConfig:` entry . Find a list of the potential entries under [cheat-sheet-poses-acceptedweaponconfig.md](../../references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations/cheat-sheet-poses-acceptedweaponconfig.md "mention")
+
 <figure><img src="https://i.imgur.com/QHdVuNb.png" alt=""><figcaption><p>I'm using KNIFE as example</p></figcaption></figure>
 
-In the case of weapons, V will either spawn the default weapon from PhotoMode or use whatever weapon has in hand while entering PhotoMode.
-The position of the prop is defined by `WeaponRight`/ `WeaponLeft` bone.
+In the case of weapons, V will either spawn the default weapon from PhotoMode or use whatever weapon has in hand while entering PhotoMode. The position of the prop is defined by `WeaponRight`/ `WeaponLeft` bone.
+
+#### Pose conditions \[Optional]
+
+You can limit the availability of poses by setting a `poseStateConfig`.  For example, the following entry in your yaml will cause the pose to be unavailable unless V is swimming forwards:
+
+<pre class="language-yaml"><code class="lang-yaml"><strong>  poseStateConfig: POSE_STATE_SWIMMING_MOVING
+</strong></code></pre>
 
 ### Telling photo mode about the poses
 
 You register your poses for photo mode by creating the following entry categories:
 
-```
+```yaml
 photo_mode.character.malePoses
 photo_mode.character.johnnyPoses
 photo_mode.character.femalePoses
@@ -233,5 +219,3 @@ At any point during this guide, you can press the green `Install` button on Wolv
 <figure><img src="https://i.imgur.com/1nMpUSy.png" alt=""><figcaption><p>She has no idea what she's doing</p></figcaption></figure>
 
 <figure><img src="https://i.imgur.com/eakqwZu.png" alt=""><figcaption><p>Fortunately, you can hire specialists</p></figcaption></figure>
-
-<figure><img src="https://i.imgur.com/hiSBpNJ.png" alt=""><figcaption><p>Example of prop spawned with the pose after defining it in yaml</p></figcaption></figure>
