@@ -89,8 +89,8 @@ If you don't have a yaml because you're changing an in-game item for some reason
 3.  Helpful documentation on .yaml files resides [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items/archive-xl-item-structure-explained#the-control-file-yourmodname.yaml). Hopefully it looks something like this:
 
     <figure><img src="../../../.gitbook/assets/image (130).png" alt=""><figcaption><p>This is my example .yaml file with only <em>one</em> entry. Yours might have more.</p></figcaption></figure>
-4. Check if there is something called `$instances`. If yes, the mod is using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention") and you are done here — go to either #fixing
-5. Find the line `appearanceSuffixes`_._ If the mod is using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention") (there is something called $instances), you can skip this step.
+4. Check if there is something called `$instances`. If yes, the mod is using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention") and you are done here — go to [#dynamic-variants-hiding-fpp](first-person-perspective-fixes.md#dynamic-variants-hiding-fpp "mention")
+5. Find the line `appearanceSuffixes`_. **Again,**_ If the mod is using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention") (there is something called $instances), you can skip this step.
 6. If the line isn't there, add it. Use the same number of leading spaces as in the surrounding lines!
 7.  Add the line `itemsFactoryAppearanceSuffix.Camera` to the array. If you have something else in there, add a comma.
 
