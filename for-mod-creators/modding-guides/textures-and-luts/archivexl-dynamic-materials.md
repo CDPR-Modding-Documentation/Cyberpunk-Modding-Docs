@@ -68,3 +68,7 @@ Since that one won't change, we can leave the `MultilayerMask` alone. For the Mu
 <figure><img src="../../../.gitbook/assets/image (300).png" alt=""><figcaption></figcaption></figure>
 
 ... and the rest just works.
+
+{% hint style="success" %}
+You can use dynamic interpolation in pretty much everything — base material paths or material properties. Just remember to set your Flags to `Soft`, or it will fail.
+{% endhint %}
