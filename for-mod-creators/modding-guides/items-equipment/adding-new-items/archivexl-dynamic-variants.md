@@ -11,6 +11,8 @@ description: An item addition with dynamic appearances, and what you can do for 
 
 This guide will cover a sub-case of [.](./ "mention")via ArchiveXL. Dynamic variants are both **easier** and **more flexible**. Unless you don't need different appearances, you will want to default to this approach.
 
+Since 1.13, there is now support for [archivexl-dynamic-materials.md](../../textures-and-luts/archivexl-dynamic-materials.md "mention"). Unless you're a beginner, check it out, this is awesome!
+
 **It uses the following versions** (yours should be **equal** or **higher**, the most recent stable release works fine)
 
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.11.0 (you should have it [installed and onfigured](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download))

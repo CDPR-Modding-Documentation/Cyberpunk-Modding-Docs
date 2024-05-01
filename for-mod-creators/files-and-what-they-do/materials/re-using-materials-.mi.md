@@ -6,11 +6,15 @@ description: Material Instances and external materials
 
 #### Summary
 
-**Last documented update:** Jan 06 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** May 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+{% hint style="info" %}
+As of May 2024, you can also use [archivexl-dynamic-materials.md](../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention"), which is a more flexible implementation of the same basegame mechanic. However, you may want to understand this, because CDPR are using it a lot.
+{% endhint %}
 
 ## What is a material instance?
 
-A .mi file **encapsulates** a material in a **reusable** template file, which you can use a .mi file as `base material` in a [material definition](../3d-objects-.mesh-files/#step-3-material-definition).&#x20;
+A .mi file **encapsulates** a material in a **reusable** template file, which you can use a .mi file as `base material` in a [material definition](../3d-objects-.mesh-files#step-3-material-definition).
 
 It is possible to use multiple .mi files in a row. For an example of this, check the player's [skin materials](../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index).
 
@@ -22,7 +26,7 @@ For more information of this, you can look at [shaders](../../materials/shaders/
 
 Put yourself in the shoes of a hypothetical modder.
 
-* You are creating a mod that offers multiple versions of the same item (e.g. toy props or hair)&#x20;
+* You are creating a mod that offers multiple versions of the same item (e.g. toy props or hair)
 * You have created a base material
 * You duplicate and re-duplicate the material for each of your variants, changing the properties that defines the colour
 * You wish that there was less copy-pasting involved
@@ -31,7 +35,7 @@ Put yourself in the shoes of a hypothetical modder.
 
 ### .mi files to the rescue
 
-Take any of them from the game, move them to your custom directory, and group all the properties that you keep copy-pasting into the .mi.&#x20;
+Take any of them from the game, move them to your custom directory, and group all the properties that you keep copy-pasting into the .mi.
 
 Then, in your material, you can now use your .mi file as `baseMaterial`, and only change the properties that are actually different!
 
@@ -69,8 +73,6 @@ If I decide that my plastic is too shiny, I can edit `_plastic_base.mi` instead 
 
 And if one of my items happens to have a custom normal map and/or texture, then I just add them in the `values` array of my material and call it a day.
 
-
-
 ## Maximally lazy: external materials
 
 But we can take this approach even further! If you **don't** have any properties, your mesh doesn't even need materials! You can simply use the `externalMaterials` list instead. You do this by unticking the isLocal property in the materialEntries definition:
@@ -79,11 +81,10 @@ But we can take this approach even further! If you **don't** have any properties
 
 ## Warning
 
-You can of course mix and match local and external materials! Just make sure that the materialEntries indices are pointing at the correct material.&#x20;
+You can of course mix and match local and external materials! Just make sure that the materialEntries indices are pointing at the correct material.
 
 However:
 
 {% hint style="danger" %}
 If you are using `preloadLocalMaterials`, you need to use `preloadExternalMaterials` instead of `externalMaterials.`
 {% endhint %}
-

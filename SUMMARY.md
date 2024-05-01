@@ -249,6 +249,7 @@
   * [🌈 Textures and LUTs](for-mod-creators/modding-guides/textures-and-luts/README.md)
     * [Textures: Importing, editing, exporting](for-mod-creators/modding-guides/textures-and-luts/images-importing-editing-exporting.md)
     * [Textures: Custom MultilayerMask](for-mod-creators/modding-guides/textures-and-luts/custom-multilayermasks.md)
+    * [ArchiveXL: dynamic materials](for-mod-creators/modding-guides/textures-and-luts/archivexl-dynamic-materials.md)
     * [Self-made normal maps](for-mod-creators/modding-guides/textures-and-luts/self-made-normal-maps/README.md)
       * [Troubleshooting normal maps](for-mod-creators/modding-guides/textures-and-luts/self-made-normal-maps/troubleshooting-normal-maps.md)
     * [🌈 Creating a LUT from scratch](for-mod-creators/modding-guides/textures-and-luts/creating-a-lut-from-scratch/README.md)

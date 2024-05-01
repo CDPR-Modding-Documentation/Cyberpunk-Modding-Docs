@@ -7,7 +7,7 @@ description: Documentation on .mesh files and their properties.
 ## Summary
 
 **Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit:** Feb 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit:** May 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page contains information on .mesh files and their properties.
 
@@ -17,6 +17,7 @@ This page contains information on .mesh files and their properties.
 * To edit a mesh's appearance, check [changing-materials-colors-and-textures.md](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
 * To learn about mesh materials, see [textured-items-and-cyberpunk-materials.md](../../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention")
 * To hide parts of a mesh under different circumstances, check [first-person-perspective-fixes.md](../../modding-guides/items-equipment/first-person-perspective-fixes.md "mention")
+* To stop copy-pasting so much, check [archivexl-dynamic-materials.md](../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention")
 
 ## What's a mesh?
 
@@ -28,13 +29,13 @@ Mesh files for inanimate objects also tend to contain extensive physics paramete
 
 ## How the mesh is loaded
 
-Meshes are loaded via [components](../components/ "mention") (e.g. [#entgarmentskinnedmeshcomponent](../components/documented-components/#entgarmentskinnedmeshcomponent "mention")).  Components are defined either in [mesh entity](../entity-.ent-files/#mesh-component-entity-simple-entity) files or in an [.app file](../appearance-.app-files/), where each [appearance](../appearance-.app-files/#appearances) has its own [components](../appearance-.app-files/#components) array.
+Meshes are loaded via [components](../components/ "mention") (e.g. [#entgarmentskinnedmeshcomponent](../components/documented-components/#entgarmentskinnedmeshcomponent "mention")). Components are defined either in [mesh entity](../entity-.ent-files#mesh-component-entity-simple-entity) files or in an [.app file](../appearance-.app-files), where each [appearance](../appearance-.app-files#appearances) has its own [components](../appearance-.app-files#components) array.
 
 For more information on this, please check [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention") -> [#chunkmasks-partially-hiding-meshes](submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
 
 ## Shadows
 
-There are two ways of adding shadows to  meshes:&#x20;
+There are two ways of adding shadows to meshes:
 
 ### Component property
 
@@ -54,7 +55,7 @@ You can see which submesh is which in the `Mesh Preview` tab after opening the m
 
 <figure><img src="../../../.gitbook/assets/mesh_preview_tab.png" alt=""><figcaption></figcaption></figure>
 
-With the boxes on the left, you can toggle submeshes on and off.&#x20;
+With the boxes on the left, you can toggle submeshes on and off.
 
 {% hint style="info" %}
 Submesh numbers correspond directly to a component's [#chunkmask](../components/#chunkmask "mention") property. For technical reasons, the chunkmask dropdown supports up to 64 entries — just ignore the missing numbers.
@@ -70,11 +71,31 @@ This page only contains mesh-specific information. Find more details on material
 
 An `appearance` is the entry point into a mesh.
 
-This is how to determine which parts of the mesh have which material:
+One `appearance` has a number of `chunkMaterials`, which tell Cyberpunk how they are supposed to look:
+
+<figure><img src="../../../.gitbook/assets/mesh_file_material_1.png" alt=""><figcaption></figcaption></figure>
+
+Wolvenkit will follow these entries to materialEntries, where they are **defined**:
+
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+
+The **`index`** property in materialEntries will finally point at the material's instance, where you can find its properties. Depending on `isLocalInstance`, that can be one of several places — find a list in [#step-3-material-definition](./#step-3-material-definition "mention").
+
+#### TL;DR
+
+{% hint style="success" %}
+Summary:&#x20;
+
+1. **Assign** material for submesh in appearance -> chunkMaterials
+2. **Register** the material by **name** in `materialEntries`
+3. **Define** the material in either `localMaterialInstances.materials` or `externalMaterials`
+{% endhint %}
+
+Here's an overview:
 
 <figure><img src="../../../.gitbook/assets/meshes_appearances.jpg" alt=""><figcaption><p>Example: A mesh with two materials, one of them a local instance, one of them an external .mi file</p></figcaption></figure>
 
-### ChunkMaterials
+#### ChunkMaterials
 
 {% hint style="info" %}
 You can find more information on this under [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention").
@@ -84,7 +105,7 @@ You assign materials based on the "chunks" (the individual submeshes) inside a m
 
 <figure><img src="../../../.gitbook/assets/mesh_material_appearance.png" alt=""><figcaption><p>You may have to create additional entries in "chunkMaterials": Either duplicate an existing entry from the right-click menu, or select the array and use the yellow (+) in the side panel.</p></figcaption></figure>
 
-### Material entry
+### Step 2: Material registry
 
 Materials are **registered** in the array **`materialEntries`** inside your mesh:
 
@@ -98,7 +119,7 @@ While you can mix external and local materials, you can not mix preloaded and no
 
 #### Preload… what?
 
-Many of CDPR's early meshes use `preloadLocalMaterialInstances` instead of `localMaterialBuffer.materials`. As far as we are concerned, you can use the two interchangeably, **but**:&#x20;
+Many of CDPR's early meshes use `preloadLocalMaterialInstances` instead of `localMaterialBuffer.materials`. As far as we are concerned, you can use the two interchangeably, **but**:
 
 If you are using **a mix of local and external materials**, you **must** use the corresponding lists:
 
@@ -107,7 +128,7 @@ If you are using **a mix of local and external materials**, you **must** use the
 | `localMaterialBuffer.materials` | `externalMaterials`        |
 | `preloadLocalMaterialInstances` | `preloadExternalMaterials` |
 
-&#x20;If you mix the two, the materials outside of `preload`… will appear as transparent the first 1-2 times you trigger your item's appearance.
+If you mix the two, the materials outside of `preload`… will appear as transparent the first 1-2 times you trigger your item's appearance.
 
 ### Step 3: Material definition
 
@@ -117,7 +138,7 @@ For more details on material instances, check [materials](../../materials/ "ment
 
 ### MaterialInstance: The local material
 
-The materials themselves are inside the array `localMaterialBuffer.materials` (or `preloadLocalMaterials` in case of older meshes).&#x20;
+The materials themselves are inside the array `localMaterialBuffer.materials` (or `preloadLocalMaterials` in case of older meshes).
 
 {% hint style="success" %}
 You can't go wrong by using those. However, if you don't have any properties that are unique to your mesh or appearance (for example a custom normal map), you might consider [creating and using an external material instead](../materials/re-using-materials-.mi.md).
@@ -130,7 +151,7 @@ A material instance looks like this:
 {% hint style="info" %}
 You can find a guide about [texture editing](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) and [adding custom textures](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-4-optional-custompathing) in the [modding-guides](../../modding-guides/ "mention") section.
 
-For an overview of materials that you might want to use for something, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).&#x20;
+For an overview of materials that you might want to use for something, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).
 
 For how to find out which properties a material has, check [here](../../materials/#checking-material-properties).
 {% endhint %}
