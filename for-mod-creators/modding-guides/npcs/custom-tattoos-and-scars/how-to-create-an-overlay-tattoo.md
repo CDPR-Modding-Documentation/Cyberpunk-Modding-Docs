@@ -19,7 +19,7 @@ description: This guide will teach you how to create tattoo on modded body, KS_U
 
 
 <5 minutes to set up everything\
-5 minutes - s long as it takes you to create a tattoo that you like\
+5 minutes - as long as it takes you to create a tattoo that you like\
 <5 minutes for the import/install
 
 ## Prerequisites
@@ -39,7 +39,7 @@ KS\_UV project name should be `005_modname`
 2. To create overlay tattoo , you need the following files [overlay-list.md](overlay-list.md "mention") , select the body part you want to edit.
 3. Add the files to your project by double-clicking on them
 4. Open a new project in photoshop, clip studio paint,  [photopea.com](https://www.photopea.com/) or another editing software
-5. Set the heigh and widht to 4096x4096 or in the quality that you want 1024, 2048 or 4096
+5. Set the height and width to 4096x4096 or in the quality that you want 1024, 2048 or 4096
 6. Grab the skin map of your choice, create a new layer and then do your tattoo :&#x20;
 
 <div align="left">
@@ -56,7 +56,7 @@ KS\_UV project name should be `005_modname`
 
 </div>
 
-8. Now your project should look like this : Your tattoo and no background
+8. Now your project should look like this: Your tattoo and no background
 
 <div align="left">
 
