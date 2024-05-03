@@ -4,6 +4,10 @@ description: 'Substance Designer 2077: How it works and why it''s actually super
 
 # Multilayered: Cyberpunk's supershader
 
+## Why can't they use textures?
+
+Everyone asks this question in the beginning, but you're only a single epiphany away from a change of mind. The multilayered shader can pack up to 20 layers of texture into a single file! Read on to find out how it works.
+
 ## About
 
 A significant portion of assets for Cyberpunk 2077 leverage the complex multilayered.mt supershader. The supershader has several different component files which are used to create masks to blend procedural textures without baking them. You can read more about this technique in [this documentation](https://magazine.substance3d.com/cyberpunk-2077-a-world-full-of-substance/) by CDPR Technical Art Director Krzysztof Krzyścin.
@@ -42,7 +46,7 @@ For editing mlsetup files, you'll want to use the [MlSetupBuilder](../../modding
 
 **MLMASK** files are the core element of the substance-style integration. These files contain an array of up to 20 textures which are used to control the blending between pre-defined surfaces called **mltemplates**. These mask textures are more-or-less 1:1 with substance-style layer masks.
 
-![Demonstration of how mlmask files are used to mask meshes. Each mask represents a separate surface.](../../../.gitbook/assets/mlmask\_demo.gif)
+![Demonstration of how mlmask files are used to mask meshes. Each mask will apply to a separate material layer.](../../../.gitbook/assets/mlmask\_demo.gif)
 
 As shown above, each mesh using the multilayer shader uses a unique **mlmask** file that is hand authored by CDPR artists. To take effect in game, each mask file is linked by the **mlsetup** file.
 
