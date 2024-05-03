@@ -840,6 +840,10 @@ You can fix this either via [Windows Explorer](./#via-windows-explorer) or via [
 * Select **Properties** (the last entry in the drop-down menu)
 * Uncheck the "Read-only" box:
 
+{% hint style="info" %}
+After unchecking and applying changes, the box will jump back to maybe-checked. That's because Windows can't tell if the folder contains read-only files. However, since you just made sure that it doesn't, you can ignore this.
+{% endhint %}
+
 <figure><img src="https://i.stack.imgur.com/ZR59I.jpg" alt=""><figcaption></figcaption></figure>
 
 ### File Ownership
