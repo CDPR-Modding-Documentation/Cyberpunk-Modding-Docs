@@ -15,15 +15,9 @@ This is the landing page for the Tweaks section of the wiki. It doesn't contain 
 
 ### Tweak modding guides
 
-
-
-
+Check [#tweak-modding-guides](./#tweak-modding-guides "mention") for a collection of guides on this topic
 
 ***
-
-{% hint style="info" %}
-If you're looking for guides, simply explore the subcategories within this category.
-{% endhint %}
 
 ## TweakDB&#x20;
 

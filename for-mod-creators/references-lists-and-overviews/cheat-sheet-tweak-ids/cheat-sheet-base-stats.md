@@ -4,7 +4,15 @@ description: Tweak base stats
 
 # Cheat Sheet: Base Stats
 
+### Summary
 
+**Last documented update:** May 4 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page will show you a list of all base stats, so you don't need to search the tweak database yourself.
+
+For a list of **weapon stats** and explanations of what they do, check [cheat-sheet-weapon-basestats.md](weapons/cheat-sheet-weapon-basestats.md "mention").
+
+## Base Stats
 
 ```
 BaseStats.Acceleration
