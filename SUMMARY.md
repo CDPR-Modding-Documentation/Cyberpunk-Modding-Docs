@@ -106,6 +106,7 @@
       * [Cheat Sheet Poses: poseStateConfig](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations/cheat-sheet-poses-posestateconfig.md)
     * [Cheat Sheet: Base Stats](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-base-stats.md)
     * [Cheat Sheet: Vendor IDs](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-vendor-ids.md)
+    * [Cheat Sheet: Prereqs](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-prereqs.md)
     * [Cheat Sheet: Attachment Slots](for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-attachment-slots.md)
   * [Scripting](for-mod-creators/references-lists-and-overviews/scripting/README.md)
     * [Best practices / pitfalls](for-mod-creators/references-lists-and-overviews/scripting/scripting-best-practices-pitfalls.md)
