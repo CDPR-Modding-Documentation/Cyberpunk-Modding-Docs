@@ -31,7 +31,7 @@ For this tutorial, you need:
 * [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases)
 * [RED4ext](https://github.com/WopsS/RED4ext/releases)
 * [This bible in your bookmarks](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks)
-* a bookmark for [yamllint](https://www.yamllint.com/) (you can check your files for errors)
+* A bookmark for [YAMLlint](https://www.yamllint.com/) (you can check your YAML files for indentation errors)
 * Patience, _lots of patience_. Please, read this guide completely and **re-read** if needed.
 
 After downloading and installing all the requirements (and yes, **SAVE** that bookmark, trust me), let's start with the basics.
@@ -66,9 +66,9 @@ Using double space will guarantee your file will keep the same structure everywh
 
 ### Records
 
-Think of records as **unique containers** grouping multiple properties — which can be other records, or [#flats](how-to-yaml-tweak-modding-basics.md#flats "mention").
+Think of records as **unique containers** grouping multiple properties — which can be **other records**, or [#flats](how-to-yaml-tweak-modding-basics.md#flats "mention").&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (301).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (301).png" alt=""><figcaption><p>Don't worry, it gets easier to understand over time.</p></figcaption></figure>
 
 {% hint style="danger" %}
 Record names **must** be unique!
@@ -174,7 +174,9 @@ MyBigRecord:
      statType: BaseStats.ExampleBaseStat2
 ```
 
-In this example, `MyBigRecord_inline0` will have a completely different value depending on the update. In update 2.1 the value**`1`** and related to `BaseStats.ExampleBaseStat1`, but then in update 2.2 the value will be **`8`** and related to `BaseStats.ExampleBaseStat3`.&#x20;
+In this example, `MyBigRecord_inline0` will have a completely different value depending on the update.&#x20;
+
+In update 2.1 the value**`1`** and related to `BaseStats.ExampleBaseStat1`, but then in update 2.2 the value will be **`8`** and related to `BaseStats.ExampleBaseStat3`.&#x20;
 
 If you used `MyBigRecord_inline0` in your item code, your item would stop working as intended. It doesn't matter that popular modders do this, **DON'T USE INLINES AS BASE FOR YOUR RECORDS**.&#x20;
 
@@ -205,14 +207,16 @@ You can find more about this under [types-of-tweak-records.md](../../tweaks/twea
 On its own, a tweak does nothing — the engine makes use of the records via **scripts**.&#x20;
 
 {% hint style="info" %}
-Think of a script as the **instruction**, and a tweak as the **definition**. That way, a script doesn't actually need to understand what it's doing, and all the logic is neatly encapsulated (take 500g of `Items.Flour`).
+Think of a script as the **instruction**, and a tweak as the **definition**. That way, a script doesn't actually need to understand what it's doing, and all the logic is neatly encapsulated. \
+\
+For example: Take 500g (_the **instruction**)_ of `Items.Flour` (_the **definition**_).
 {% endhint %}
 
 In this tutorial we will use [**Wolvenkit Tweak Browser**](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/tweak-browser). There are many ways of [browsing-the-tweak-database.md](../../tweaks/tweaks/browsing-the-tweak-database.md "mention"), but you can save them for later, when you are more advanced (or feeling bold).
 
 ***
 
-## How to make a tweak mod
+## How to make a research for your YAML Tweak mod
 
 Having clarified some very basic concepts, let's start this guide:
 
@@ -222,7 +226,7 @@ Let's say you want to do a new item that have the Thrusters mechanics from Rogue
 
 What's the best approach to this? Using those Thrusters boots logic in your item.
 
-Unfortunately. most items don't share the same internal name as the name you can see in the description. The best way I've found to deal with this, is going to the community Cyberpunk wiki and looking for your specific item, in this case, [those cool Boots](https://cyberpunk.fandom.com/wiki/Retrothrusters\_\(from\_Rogue\)).
+Unfortunately, most items don't share the same internal name as the name you can see in the description. The best way I've found to deal with this, is going to the community Cyberpunk wiki and looking for your specific item, in this case, [those cool Boots](https://cyberpunk.fandom.com/wiki/Retrothrusters\_\(from\_Rogue\)).
 
 Internally, that item is called `q115_thrusters`. Now that we know that, we can search the item in **Wolvenkit Tweak Broswe**r.
 
@@ -240,7 +244,7 @@ Open the Tweak Browser tab and pin it. It should look like this:
 
 <figure><img src="../../../.gitbook/assets/1 InitialTweakBrowser.png" alt=""><figcaption><p>I love Wolvenkit, and you should too.</p></figcaption></figure>
 
-Paste `q115_thrusters` into the search bar and click on `Filters...` and activate `Show inline records`. This should look like this:
+Paste `q115_thrusters` into the search bar and click on `Filter...` and activate `Show inline records`. This should look like this:
 
 <figure><img src="../../../.gitbook/assets/2 ItemSearch.png" alt=""><figcaption><p>Look at those beautiful records.</p></figcaption></figure>
 
@@ -281,7 +285,7 @@ ALWAYS FIND A WORKING EXAMPLE IN THE BASE GAME IF YOU ARE NEW ON THIS AND IF YOU
 _**Trust me.**_
 {% endhint %}
 
-Now, the importance of VSCode in this tutorial. VSCode has an incredibly powerful and useful highlighting system for text by just doing `DOUBLE CLICK` on **ANY WORD**. With this system, you'll understand how things are nested on ANY item you find. Look at this example:
+Now, the importance of VSCode in this tutorial. VSCode has an incredibly powerful and useful highlighting system for text by just doing `double click` on **ANY WORD**. With this system, you'll understand how things are nested on ANY item you find. Look at this example:
 
 <figure><img src="../../../.gitbook/assets/9 (2).png" alt=""><figcaption><p>I love VSCode, look at this beauty.</p></figcaption></figure>
 
