@@ -13,9 +13,11 @@ This page is a work in progress, as the tweak database is huge and barely-docume
 If you just want a quick overview of a certain type of tweak, you can check [cheat-sheet-tweak-ids](../../references-lists-and-overviews/cheat-sheet-tweak-ids/ "mention") instead.
 {% endhint %}
 
+If you want to learn how to **make** tweaks instead, check [how-to-yaml-tweak-modding-basics.md](../../modding-guides/tweakxl-changing-game-records/how-to-yaml-tweak-modding-basics.md "mention")
+
 ## Summary
 
-This page lists types of tweak records with their properties and lists of occurrances in the wild. They are grouped by **type**, and&#x20;
+This page lists types of tweak records with their properties and lists of occurrences in the wild. They are grouped by **type**.
 
 Please keep entries in the following format (you can copy e.g. [#effector](types-of-tweak-records.md#effector "mention") below):
 
@@ -97,14 +99,10 @@ For more information on this, check the [new-iconic-weapon-tutorial-for-dummies.
 The prerequisite for e.g. an [#effector](types-of-tweak-records.md#effector "mention").&#x20;
 
 {% hint style="info" %}
+You can find a full list under [cheat-sheet-prereqs.md](../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-prereqs.md "mention")
+
 For more information on this, check the [new-iconic-weapon-tutorial-for-dummies.md](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention") guide ([#creating-a-custom-prereq](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#creating-a-custom-prereq "mention"))
 {% endhint %}
-
-#### Existing prereqs
-
-<table><thead><tr><th width="327">Effector name</th><th>Effector explanation</th></tr></thead><tbody><tr><td><code>ProcessHitTriggered</code></td><td>Does the bullet hit anything?</td></tr><tr><td><code>IsHitQuickMelee</code> </td><td>is the current attack a quick melee attack?</td></tr></tbody></table>
-
-##
 
 ## Item modifiers
 
@@ -114,9 +112,27 @@ This type of record adds a quality to an item, modifying its stats.
 
 #### Qualities
 
-Set an item's quality via [statModifier](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#step-7-make-it-iconic)
+Set an item's quality via [statModifier](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#step-7-make-it-iconic). To
 
-<table><thead><tr><th width="327">Effector name</th><th></th></tr></thead><tbody><tr><td>Quality.IconicItem</td><td></td></tr><tr><td></td><td></td></tr></tbody></table>
+```
+Quality.Random
+```
+
+Qualities in descending order:
+
+```
+Quality.IconicItem
+Quality.LegendaryPlus
+Quality.Legendary
+Quality.EpicPlus
+Quality.Epic
+Quality.RarePlus
+Quality.Rare
+Quality.UncommonPlus
+Quality.Uncommon
+Quality.CommonPlus
+Quality.Common
+```
 
 #### BaseStats
 
@@ -124,4 +140,4 @@ These entries will start with BaseStats., e.g. `BaseStats.ReloadTimeBonus`.
 
 Unless specified otherwise, these are numeric (multipliers/additions).
 
-<table><thead><tr><th width="327">Effector name</th><th></th></tr></thead><tbody><tr><td>ReloadTimeBonus</td><td></td></tr><tr><td>RecoilKickMin</td><td></td></tr><tr><td>RecoilKickMax</td><td></td></tr><tr><td>SpreadDefaultX</td><td></td></tr><tr><td>SpreadMaxX</td><td></td></tr><tr><td>HitDismembermentFactor</td><td></td></tr><tr><td>HitWoundsFactor</td><td></td></tr><tr><td>EffectiveRange</td><td></td></tr></tbody></table>
+You can find a full list under [cheat-sheet-base-stats.md](../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-base-stats.md "mention"), and a list of weapon stats with explanations under [cheat-sheet-weapon-basestats.md](../../references-lists-and-overviews/cheat-sheet-tweak-ids/weapons/cheat-sheet-weapon-basestats.md "mention")

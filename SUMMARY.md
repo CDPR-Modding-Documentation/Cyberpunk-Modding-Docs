@@ -260,6 +260,7 @@
         * [Advanced: Reverse-Engineered LUT pipeline](for-mod-creators/modding-guides/textures-and-luts/creating-a-lut-from-scratch/archived/advanced-reverse-engineered-lut-pipeline.md)
     * [Making Custom Microblends](for-mod-creators/modding-guides/textures-and-luts/making-custom-microblends.md)
   * [🔧 TweakXL: Changing game records](for-mod-creators/modding-guides/tweakxl-changing-game-records/README.md)
+    * [How to YAML: Tweak modding basics](for-mod-creators/modding-guides/tweakxl-changing-game-records/how-to-yaml-tweak-modding-basics.md)
     * [💰 Changing vendor inventory](for-mod-creators/modding-guides/tweakxl-changing-game-records/changing-vendor-inventory.md)
     * [👪 Changing NPCs - Tweak edit (REDMod)](for-mod-creators/modding-guides/tweakxl-changing-game-records/changing-npcs-tweak-edit-redmod.md)
     * [Adding stats and modifiers](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/editing-existing-items/adding-stats-and-modifiers)

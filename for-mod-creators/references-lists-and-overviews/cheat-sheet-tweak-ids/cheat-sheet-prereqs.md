@@ -9,7 +9,7 @@ Prereqs.AlwaysTruePrereq
 ## Prereqs: Full list
 
 {% hint style="warning" %}
-TODO: At some point, this list should be converted into a table
+TODO: At some point, this list should be converted into a table [#prereqs-table](cheat-sheet-prereqs.md#prereqs-table "mention")
 {% endhint %}
 
 ```
@@ -214,3 +214,6 @@ Prereqs.WhistleActionPrereqOutOfCombat
 
 ```
 
+## Prereqs: Table
+
+<table><thead><tr><th width="327">Effector name</th><th>Effector explanation</th></tr></thead><tbody><tr><td><code>ProcessHitTriggered</code></td><td>Does the bullet hit anything?</td></tr><tr><td><code>IsHitQuickMelee</code> </td><td>is the current attack a quick melee attack?</td></tr></tbody></table>
