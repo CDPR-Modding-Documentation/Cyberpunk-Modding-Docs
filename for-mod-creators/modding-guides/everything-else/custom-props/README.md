@@ -6,8 +6,8 @@ description: How to create custom props to use with AMM or sector editing
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created by @manavortex**\
-**Published April 2023, updated July 2023**
+**Published:** April 2023 by **@manavortex**\
+**Last documented update:** May 07 2024 by **@manavortex**
 
 This guide will teach you how to create AMM props in two variants:
 
@@ -25,21 +25,27 @@ Its focus is on the **file structure** and the **relations between the files**.
 
 ## Where to find models
 
-You can find many free 3d models across the web.&#x20;
+Many websites host free stuff; you can find the largest archives below. Browse [this list](https://www.3printr.com/3dmodels/categories/free-models) for a more comprehensive collection, or use the following queries in your search engine of choice:
+
+```
+thing_I_want free 3d model
+thing_I_want free fbx file
+```
 
 For game design or rendering, usually textured:
 
 * &#x20;[sketchfab](https://sketchfab.com)
 * [Turbosquid](https://turbosquid.com)
 * [CGTrader](https://cgtrader.com)
+* [Renderosity](https://www.renderosity.com/freestuff)
+* [daz3d](https://www.daz3d.com/free-3d-models)
+* [STLFinder](https://www.stlfinder.com/)
 
 For 3d printing, usually not textured:
 
 * [thingyverse](https://www.thingiverse.com/)
 * [MyMiniFactory](https://www.myminifactory.com/)
 * [Pinshape](https://pinshape.com/)
-
-You can also search Google for "`thing_I_want` free 3d model" or "`thing_I_want` free `<format>` file" (\<format> = STL, OBJ, FBX), or check [STLFinder](https://www.stlfinder.com/) or the pages on [this list](https://www.3printr.com/3dmodels/categories/free-models).
 
 ## **Requirements:**
 
