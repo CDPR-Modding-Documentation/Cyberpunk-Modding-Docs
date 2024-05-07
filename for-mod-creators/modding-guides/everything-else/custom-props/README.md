@@ -34,12 +34,13 @@ thing_I_want free fbx file
 
 For game design or rendering, usually textured:
 
-* &#x20;[sketchfab](https://sketchfab.com)
-* [Turbosquid](https://turbosquid.com)
+* [Sketchfab](https://sketchfab.com)
+* [TurboSquid](https://www.turbosquid.com/) (there's a drop-down menu on the left-hand side where you can select to search for free models!)
 * [CGTrader](https://cgtrader.com)
 * [Renderosity](https://www.renderosity.com/freestuff)
-* [daz3d](https://www.daz3d.com/free-3d-models)
-* [STLFinder](https://www.stlfinder.com/)
+* [Daz3D](https://www.daz3d.com/free-3d-models)
+* [ArtStation](https://www.artstation.com/marketplace/game-dev?section=free\&page=4)
+* [RenderHub](https://www.renderhub.com/free-3d-models)
 
 For 3d printing, usually not textured:
 
