@@ -150,10 +150,10 @@ You now need to create an animation that Wolvenkit can add into the existing fil
 3. Now, we need to add keyframes, one for the **fallback position** and one for the **pose**.
    1. Make sure that the keyframe selected in the animation timeline is 0 (see "Animation Timeline" screenshot below)
    2. Click into the main viewport next to the armature
-   3. Press `I` to open the keyframe menu
-   4. Press `W` to insert the whole character
+   3. Open the Keyframe menu (Pose -> Animation -> Insert Keyframe, Hotkey: `I)`
+   4. Select `Whole Character` (Hotkey: `W).` The menu will close now.&#x20;
    5. Press the right arrow to select the next keyframe
-   6. Press `I` and then `W` again
+   6. Repeat the steps 3 and 4
    7. After you have done that, click on the `Push Down Action` button
 
 <figure><img src="../../../.gitbook/assets/animations_blender_keyframe_1.png" alt=""><figcaption></figcaption></figure>
