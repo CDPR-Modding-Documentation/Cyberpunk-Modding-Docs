@@ -119,7 +119,7 @@ This will not work with [archivexl-dynamic-variants.md](adding-new-items/archive
 
 1. Find the array `tags` at the end of the list.
 2. In the panel on the right, click "add new item" (the yellow +) until you have an empt text field.
-3. Unless you are using In the text field, enter `EmptyAppearance:FPP`
+3. In the text field, enter `EmptyAppearance:FPP`
 
 #### Hiding FPP via appearance definition
 
