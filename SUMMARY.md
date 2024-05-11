@@ -160,6 +160,7 @@
   * [Effects and particles](for-mod-creators/files-and-what-they-do/effects-explained.md)
   * [Videos: .bk2](for-mod-creators/files-and-what-they-do/videos-.bk2.md)
 * [🌐 3d Modelling](for-mod-creators/3d-modelling/README.md)
+  * [Blender: Getting Started](for-mod-creators/3d-modelling/blender-getting-started.md)
   * [Importing and Exporting Meshes](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export#meshes)
   * [Morphtargets](for-mod-creators/3d-modelling/morphtargets.md)
   * [Refitting: Mesh sculpting techniques](for-mod-creators/3d-modelling/mesh-sculpting-techniques.md)

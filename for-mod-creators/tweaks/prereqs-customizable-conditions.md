@@ -39,4 +39,4 @@ Kindly note that there's not (always) an(y) indicator whether the Prereq comes w
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-05-08 204905.png" alt=""><figcaption><p>adamsmasher's - IPrereq</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/Screenshot 2024-05-08 233913.png" alt=""><figcaption><p>adamsmasher's - PrereqState</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/screenshot_by_roms.png" alt=""><figcaption><p>adamsmasher's - PrereqState</p></figcaption></figure>
