@@ -224,6 +224,12 @@ Now it's time to get them back into Wolvenkit.
 2. Click "Import All". You shouldn't see any errors.
 3. You're done!
 
+{% hint style="success" %}
+At this point of the guide, you should see your NPV's head in Wolvenkit (re-select the mesh to refresh the preview).&#x20;
+{% endhint %}
+
+If the head mesh has **not changed**, you ran into a problem — check the Log View and/or make sure that you completed all steps in the right order. Especially **changing any paths** will break things.
+
 ## Step 4: Make sure that it works
 
 Spawn your NPV and check that they look like they should.&#x20;
