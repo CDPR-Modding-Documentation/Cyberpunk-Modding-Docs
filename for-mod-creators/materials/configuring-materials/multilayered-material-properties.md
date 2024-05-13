@@ -14,6 +14,10 @@ This page documents multilayered shader properties.&#x20;
 * For an **overview** of glass shaders, see [cheat-sheet-materials.md](../../references-lists-and-overviews/cheat-sheet-materials.md "mention")-> [#multilayered](../../references-lists-and-overviews/cheat-sheet-materials.md#multilayered "mention")
 * For an **explanation** of material properties and further links, see [.](./ "mention")
 
+{% hint style="warning" %}
+If a layer with a greyscale mask is invisible, set MicroblendContrast in the `.mlsetup` to 1!
+{% endhint %}
+
 ## Multilayered Material
 
 For a full documentation, check the corresponding [page](../multilayered/).&#x20;
