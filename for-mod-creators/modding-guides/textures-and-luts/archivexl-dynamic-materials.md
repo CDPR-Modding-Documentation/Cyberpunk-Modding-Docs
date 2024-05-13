@@ -24,13 +24,14 @@ Because it's even lazier: For a mesh with 15 appearances, you need...
 
 
 
-|                       | legacy | dynamic materials                   |
-| --------------------- | ------ | ----------------------------------- |
-| Appearances           | 15     | 15                                  |
-| mlmask files          | 1      | 1                                   |
-| mlsetup fil,es        | 15     | 15                                  |
-| #`materialEntries`    | 15     | <mark style="color:green;">1</mark> |
-| #`CMaterialInstances` | 15     | <mark style="color:green;">1</mark> |
+|                         | legacy | dynamic materials                   |
+| ----------------------- | ------ | ----------------------------------- |
+| Appearances             | 15     | 15                                  |
+| mlmask files            | 1      | 1                                   |
+| mlsetup fil,es          | 15     | 15                                  |
+| #`materialEntries`      | 15     | <mark style="color:green;">1</mark> |
+| #`CMaterialInstances`   | 15     | <mark style="color:green;">1</mark> |
+| #`chunkMaterials` lists | 15     | <mark style="color:green;">1</mark> |
 
 ## The problem
 
@@ -72,3 +73,17 @@ Since that one won't change, we can leave the `MultilayerMask` alone. For the Mu
 {% hint style="success" %}
 You can use dynamic interpolation in pretty much everything — base material paths or material properties. Just remember to set your Flags to `Soft`, or it will fail.
 {% endhint %}
+
+## Step 3: Appearance expansion
+
+But wait, there's more. After using dynamic materials, we've been able to reduce the number of material entries and instances, but there is still a lot of repetition between the appearances - if you've followed this guide so far, each of your appearances has a `chunkMaterials` list that looks the same as all the others except for the different material name. It would be great if we could get rid of that repetition, and we can, with Appearance Expansion.
+
+And it's very simple to do. You simply assign empty `chunkMaterials` lists to all your appearances except the first one, and ArchiveXL will automatically use the first appearance as a template and generate the `chunkMaterials` list by substituting the appearance name:
+
+<div align="left">
+
+<figure><img src="../../../.gitbook/assets/archiveXL_appearance_expansion.png" alt=""><figcaption></figcaption></figure>
+
+</div>
+
+Now, you only have to maintain one chunk list, and the rest of your appearances are simplified down to a single name and nothing else.
