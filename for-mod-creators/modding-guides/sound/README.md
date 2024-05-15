@@ -16,7 +16,7 @@ Feel free to sign up and add your knowledge to the wiki. It doesn't matter if th
 
 ## How are sounds stored
 
-Cyberpunk uses Wwise audio system, which uses mostly proprietary ("secret", non-opensource) formats. But thanks to the community we have the tools to dig into them. But first, you have to find the file. Checkout my [sound explorer tool](https://cp-sfx.zhincore.eu) that will help you find sounds and their location in the game.  Cyberpunk stores sounds primarily in two ways, let's go over them.
+Cyberpunk uses Wwise audio system, which uses mostly proprietary ("secret", non-opensource) formats. But thanks to the community we have the tools to dig into them. But first, you have to find the file. Checkout the [CyberSoundDB](https://sounddb.redmodding.org/) (or the [guide about it](finding-an-audio-file.md)) that will help you find sounds and their location in the game. Cyberpunk stores sounds primarily in two ways, let's go over them.
 
 ### WEM files
 
@@ -36,11 +36,11 @@ The aforementioned .bnk files are primarily for other purpose that storing audio
 
 The process of playing a sound when something happens goes something like this: The game sends an _event_ to Wwise, those are described in `eventmetadata.json` file in the game's archives. Those events are connected to a tree of nodes describe in `.bnk` files, this may include random selection of next node, layering, volume modification, switching between the next nodes according to a condition, etc. at the end is a node that points to an audio file (or a plugin) and that sound is played. Or multiple sounds are played at once, according to the previous nodes.
 
-This happens every time V has to grunt, when a weapon shoots, car starts, crashes, or when you enter a building and ominous music starts to play, that went through bnks, too! This does not seem to happen for most voice-overs (apart for exceptions, for example I think the [Konpeki Plaza alarm](https://cp-sfx.zhincore.eu/subtitles/1674949184319180800) uses [CDPR's Voice Broadcast plugin](https://cp-sfx.zhincore.eu/sfx/413736901)).
+This happens every time V has to grunt, when a weapon shoots, car starts, crashes, or when you enter a building and ominous music starts to play, that went through bnks, too! This does not seem to happen for most voice-overs (apart for exceptions, for example I think the [Konpeki Plaza alarm](https://sounddb.redmodding.org/subtitles/1674949184319180800) (voice-over) uses [CDPR's Voice Broadcast plugin](https://sounddb.redmodding.org/sfx/413736901) (SFX)).
 
 ## How are voice-overs connected to subtitles
 
-Every subtitle in the game has a String ID (which is a really long number) that is universal between languages. What `.wem` audio file belongs to which String ID is mapped inside files starting with `voiceover` and ending in `.json`. Some of them are for holocall voice-overs, some for when the character has a helmet on. Then there is more `.json` files in the `subtitles` folders that contain the subtitles for each String ID... and by more I mean few thousands. So, again, it is easier to search those using my [sound explorer tool](https://cp-sfx.zhincore.eu/subtitles).
+Every subtitle in the game has a String ID (which is a really long number) that is universal between languages. What `.wem` audio file belongs to which String ID is mapped inside files starting with `voiceover` and ending in `.json`. Some of them are for holocall voice-overs, some for when the character has a helmet on. Then there is more `.json` files in the `subtitles` folders that contain the subtitles for each String ID... and by more I mean few thousands. So, again, it is easier to search those using [the SoundDB](https://sounddb.redmodding.org).
 
 ## Guides:
 
