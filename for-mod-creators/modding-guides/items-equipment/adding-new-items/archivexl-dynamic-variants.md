@@ -15,7 +15,7 @@ Since 1.13, there is now support for [archivexl-dynamic-materials.md](../../text
 
 **It uses the following versions** (yours should be **equal** or **higher**, the most recent stable release works fine)
 
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.11.0 (you should have it [installed and onfigured](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download))
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.11.0 (you should have it [installed and configured](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download))
 * [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) >= 1.4.4 (the most recent version)
 * [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) >= 1.5.0 (the most recent version)
 * [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) >= 1.17.0 (the most recent version)
