@@ -1,6 +1,10 @@
+---
+description: How to use MO2 - it's that simple
+---
+
 # MO2 (Mod Organizer 2)
 
-MO2 ([Mod Organizer 2](https://modorganizer2.com/)) is a free mod manager widely used in modding Bethesda games like Skyrim or Fallout. It supports Cyberpunk and is easy to use.
+MO2 (**Mod Organizer 2**, [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) | [github](https://github.com/ModOrganizer2/modorganizer/releases)) is a free mod manager widely used in modding Bethesda games like Skyrim or Fallout. It supports Cyberpunk and is easy to use.
 
 {% hint style="warning" %}
 Please ask on their Discord server if you need help with MO2 in general.
