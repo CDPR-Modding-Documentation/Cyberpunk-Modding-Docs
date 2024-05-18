@@ -9,7 +9,13 @@ description: Put all your things in one spot, then use them as a template
 **Published:** May 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** May 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will teach you how to achieve the ultimate **definition deduplication** via **resource patching**, using mesh materials as an example.&#x20;
+{% hint style="danger" %}
+The example below uses **mesh materials** as an example, but these aren't even the tip of the iceberg. By using this technique, we can re-work everything, from CDPR's messed-up material paths up to the character creator.&#x20;
+
+Until the more comprehensive knowledge drops, this guide will be a placeholder.
+{% endhint %}
+
+This page will eventually explain **resource patching**. For now, you can find a guide here on how to use it on a single isolated use case, which will already come in handy for clothing modders!
 
 {% hint style="success" %}
 For the most efficient way to define multiple materials, check out [archivexl-dynamic-materials.md](../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention")!
