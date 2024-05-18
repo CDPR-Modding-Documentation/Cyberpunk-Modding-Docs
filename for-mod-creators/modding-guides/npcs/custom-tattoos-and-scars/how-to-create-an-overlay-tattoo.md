@@ -36,7 +36,7 @@ VTK project name should be `00_modname`
 
 KS\_UV project name should be `005_modname`
 
-2. To create overlay tattoo , you need the following files [overlay-list.md](overlay-list.md "mention") , select the body part you want to edit.
+2. To create overlay tattoo , you need the following files [overlay-list.md](converting-between-tattoo-frameworks/overlay-list.md "mention") , select the body part you want to edit.
 3. Add the files to your project by double-clicking on them
 4. Open a new project in photoshop, clip studio paint,  [photopea.com](https://www.photopea.com/) or another editing software
 5. Set the height and width to 4096x4096 or in the quality that you want 1024, 2048 or 4096

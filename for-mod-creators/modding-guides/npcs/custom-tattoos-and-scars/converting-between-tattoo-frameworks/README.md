@@ -4,16 +4,14 @@ description: >-
   everything changed when the fire nation attacked.
 ---
 
-# Converting between texture frameworks
+# Texture frameworks whomst?
 
 #### Summary
 
 **Published**: Feb 03 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit**: Feb 03 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit**: May 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-{% hint style="info" %}
-This page is only a stub and needs expanding (someone should write the actual guide)
-{% endhint %}
+This page tells you which texture frameworks exist, which bodies they support, and what the difference between them is.
 
 ## Which texture frameworks exist?
 
@@ -68,7 +66,7 @@ The texture files for UV are separated by body gender.
 
 ### What's the difference?
 
-Primarily, the basic difference is the [UV layout](../../../materials/uv-mapping-texturing-a-3d-object.md) of the body/arm textures between the base version of the UV Framework, and VTK. Beyond that other features include:
+Primarily, the basic difference is the [UV layout](../../../../materials/uv-mapping-texturing-a-3d-object.md) of the body/arm textures between the base version of the UV Framework, and VTK. Beyond that other features include:
 
 | KS UV                                                 | VTK                                                                                             |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------- |

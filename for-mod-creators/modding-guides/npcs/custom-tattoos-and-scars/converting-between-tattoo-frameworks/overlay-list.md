@@ -1,8 +1,12 @@
 ---
-description: You can find here a list of overlays names from KS_UV and VTK bodies mods
+description: You can find here a list of overlays names for the KS_UV and VTK frameworks.
 ---
 
-# Overlay list
+# Overlay textures by framework
+
+{% hint style="info" %}
+Confused about the difference? Check [.](./ "mention")
+{% endhint %}
 
 Depending on the supported framework, you need to name your WolvenKit project like this:
 
@@ -11,7 +15,7 @@ Depending on the supported framework, you need to name your WolvenKit project li
 | KS\_UV    | 004    | 004\_my\_tattoo |
 | VTK       | 00     | 00\_my\_tattoo  |
 
-## **List of the differents type of overlays names :**&#x20;
+## **Supported overlays**&#x20;
 
 {% hint style="info" %}
 The body file of KS\_UV contain the Torso, Back, Legs and Arms parts\
