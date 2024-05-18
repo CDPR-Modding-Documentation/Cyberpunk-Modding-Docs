@@ -47,9 +47,8 @@ You can patch pretty much everything! Give it a try via `.xl` file.&#x20;
 
 Some things are scattered across multiple files — for example, there are different player entities for first and third person. Fortunately, ArchiveXL solves this problem in the cradle by defining patchable scopes. You can find examples on the github repository:
 
-* the [player ent](https://github.com/psiberx/cp2077-archive-xl/blob/a10cc78a42da5b3ad0f6aafe94ca4f546626c122/data/PlayerBaseScope.xl)
-* [player hairs](https://github.com/psiberx/cp2077-archive-xl/blob/a10cc78a42da5b3ad0f6aafe94ca4f546626c122/data/PlayerCustomizationHairFix.xl)
-* [player appearances](https://github.com/psiberx/cp2077-archive-xl/blob/a10cc78a42da5b3ad0f6aafe94ca4f546626c122/data/PlayerCustomizationScope.xl)
+* the [player ent](https://github.com/psiberx/cp2077-archive-xl/blob/main/data/PlayerBaseScope.xl)
+* [player customization (e.g. appearances)](https://github.com/psiberx/cp2077-archive-xl/blob/main/data/PlayerCustomizationScope.xl)
 
 Use them like this:
 

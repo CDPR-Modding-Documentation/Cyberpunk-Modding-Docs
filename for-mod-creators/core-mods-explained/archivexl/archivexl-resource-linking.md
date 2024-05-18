@@ -5,13 +5,15 @@
 **Published:** May 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** May 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will teach you how to avoid duplicate meshes for dynamic substitution by creating links.
+Starting with version 1.14, ArchiveXL allows you to create **resource symlinks**. This guide will teach you how to avoid duplicate meshes for dynamic substitution that way.
 
 If you want to avoid duplicate material definitions, check [archivexl-resource-patching.md](archivexl-resource-patching.md "mention").
 
 ## Why do I need this?
 
 While [archivexl-body-mods-and-refits](archivexl-body-mods-and-refits/ "mention") has solved one problem, it introduced a new one. If you want to use the preferred approach of **meth path substitution**, then you'll end up with a million duplicate files.
+
+
 
 <figure><img src="../../../.gitbook/assets/image (309).png" alt="" width="184"><figcaption></figcaption></figure>
 
