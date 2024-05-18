@@ -116,7 +116,7 @@ a0_002_ma__monowire_whip_r_cableless
 ## Making Body mods
 
 If you want to make a body mod, you need to modify the following files. \
-Please do clothing modders a favour either fit your body to vanilla proportions, or register a tag for [archivexl-body-mods-and-refits.md](../core-mods-explained/archivexl/archivexl-body-mods-and-refits.md "mention") right away!
+Please do clothing modders a favour either fit your body to vanilla proportions, or register a tag for [archivexl-body-mods-and-refits](../core-mods-explained/archivexl/archivexl-body-mods-and-refits/ "mention") right away!
 
 ### Female body gender
 

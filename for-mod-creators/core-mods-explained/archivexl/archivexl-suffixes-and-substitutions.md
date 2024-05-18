@@ -43,7 +43,7 @@ The suffix for the body is `Male` / `Female`, the ArchiveXL string substitution 
 
 ### Body types
 
-ArchiveXL allows body modders to [register a custom body tag](archivexl-body-mods-and-refits.md), which can then be used for suffixes and for substitutions in dynamic variants. To learn more about this, check [archivexl-body-mods-and-refits.md](archivexl-body-mods-and-refits.md "mention").
+ArchiveXL allows body modders to [register a custom body tag](archivexl-body-mods-and-refits/), which can then be used for suffixes and for substitutions in dynamic variants. To learn more about this, check [archivexl-body-mods-and-refits](archivexl-body-mods-and-refits/ "mention").
 
 {% hint style="info" %}
 You can check the current foot state by running the following command from CET:
