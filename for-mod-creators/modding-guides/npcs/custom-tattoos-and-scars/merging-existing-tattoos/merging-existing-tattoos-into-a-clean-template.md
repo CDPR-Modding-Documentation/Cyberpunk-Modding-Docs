@@ -11,7 +11,7 @@ description: >-
 **Published**: 18 May 2024 by YoursTrulyBilly\
 **Last documented edit**: 18 May 2024 by YoursTrulyBilly
 
-This is an **optional sub-page** for the [.](./ "mention") guide. Only follow the steps here if you want to merge into a clean template — otherwise, you can go on!
+This is an **optional sub-page** for the [merging-existing-tattoos.md](../merging-existing-tattoos.md "mention") guide. Only follow the steps here if you want to merge into a clean template — otherwise, you can go on!
 
 ### Adding the target file
 
