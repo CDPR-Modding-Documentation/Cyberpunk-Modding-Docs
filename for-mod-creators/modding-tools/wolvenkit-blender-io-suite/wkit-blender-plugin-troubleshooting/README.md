@@ -25,9 +25,13 @@ Blender errors will show up in the system console window (View -> Toggle System 
 
 ## General Troubleshooting
 
+### 0. Steam
+
+If you installed Blender via Steam, stay on the **stable stream** and make sure to keep Blender up-to-date.
+
 ### 1. Make sure that you are on the correct Blender version
 
-As of [1.5.5.1](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/1.5.5.1), the plugin **supports 4.1.0** and requires **>= 4.0.2**
+As of [1.5.5.1](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/1.5.5.1), the plugin **supports 4.1.0** and requires **>= 4.0.2.** This information might be outdated by the time you read it.
 
 You can see the exact Blender version in the lower right corner of the program:
 
