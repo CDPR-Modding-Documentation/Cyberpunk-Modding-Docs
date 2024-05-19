@@ -5,7 +5,7 @@ description: Preserved for posterity - do not use this
 # Archived: Registering the body tag
 
 {% hint style="danger" %}
-With ArchiveXL 1.4, this information is outdated. It will be preserved for posterity, but you should use the current method under [.](./ "mention") instead.
+With ArchiveXL 1.14, this information is outdated. It will be preserved for posterity, but you should use the current method under [.](./ "mention") instead.
 {% endhint %}
 
 In any of the files you modded, check your `components`:

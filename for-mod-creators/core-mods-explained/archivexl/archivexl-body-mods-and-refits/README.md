@@ -20,6 +20,12 @@ Run the following code snippet in CET to see which body is currently installed:
 print(Game.GetScriptableSystemsContainer():Get("PuppetStateSystem"):GetBodyTypeSuffix(ItemID.new(), GetPlayer(), nil))
 ```
 
+{% hint style="info" %}
+**NOTE**
+
+The past method of adding the components to each individual appearance [does still work](archived-registering-the-body-tag.md). However, you'll want to use the new method (for version >= 1.14), since it is both more robust and less tedious.
+{% endhint %}
+
 ## Body modders: Adding support
 
 {% hint style="success" %}
