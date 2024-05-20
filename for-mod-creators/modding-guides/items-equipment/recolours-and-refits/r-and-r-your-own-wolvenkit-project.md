@@ -5,7 +5,7 @@
 **Created by @manavortex**\
 **Published September 30 2023**
 
-This page is a part of the [Recolours and Refit guide](broken-reference) and will walk you through the process of creating your own Wolvenkit project. Here, we will:
+This page is a part of the [.](./ "mention") guide and will walk you through the process of creating your own Wolvenkit project. Here, we will:
 
 * create our project
 * solve load order via **project name**

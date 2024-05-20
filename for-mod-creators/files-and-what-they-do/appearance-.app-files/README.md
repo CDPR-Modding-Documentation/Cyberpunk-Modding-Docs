@@ -16,7 +16,7 @@ The real meat of the file: a list of appearance definitions, loaded via [root en
 
 ### appearanceResource
 
-* `baseEntityType`: name that exists in the [Base Types Map](broken-reference) and mapped to the correct .ent file
+* `baseEntityType`: name that exists in the base type map and mapped to the correct .ent file
 * `commonCookData`: the .cookedapp file that stores a copy of the data for faster loading
 
 ### appearanceDefinition

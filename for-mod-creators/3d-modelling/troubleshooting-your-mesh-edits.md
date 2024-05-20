@@ -137,12 +137,12 @@ t0_005_pwa_body__t_bug.mesh
 t0_005_pma_body__t_bug.mesh
 ```
 
-Try using the Netrunner body as a base for import. You can use Wolvenkit's [Select Base Mesh](broken-reference) feature for this.
+Try using the Netrunner body as a base for import. You can use Wolvenkit's [Select base mesh](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#select-base-mesh "mention") feature for this.
 
 {% hint style="info" %}
 To create more submeshes, you can either&#x20;
 
-* Try the [Preserve Submesh Order](broken-reference) import setting
+* Try the [Preserve Submesh Order ](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#preserve-submesh-order "mention")import setting
 * create more submeshes with the correct naming in Blender, e.g. `submesh_01_LOD_1`, `submesh_02_LOD_1`
 {% endhint %}
 
@@ -284,7 +284,7 @@ To check if it's this, equip **only** the edited item. If it breaks as soon as y
 
 #### Option 1 (likely to work): Import your mesh with garment supports
 
-On the .glb import setting, check the "[Import Garment Support](broken-reference)" box.&#x20;
+On the .glb import setting, check the [Import Garment Support](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") box.&#x20;
 
 #### Option 2 (guaranteed to work): delete GarmentSupport from the mesh
 

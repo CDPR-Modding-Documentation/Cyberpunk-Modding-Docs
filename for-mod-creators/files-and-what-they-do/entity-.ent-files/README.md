@@ -51,7 +51,7 @@ From ArchiveXL item additions, this kind of file is usually called a **root enti
 For more information on this (and for a better way of implementing this), check [archivexl-suffixes-and-substitutions.md](../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention")
 {% endhint %}
 
-In a [root\_entity file](./#root-entity), you can give the game a list of appearances and have them mapped to an [.app file](broken-reference) by entry name. While that's pretty good already, have you ever wanted to be more specific — for example, "for a male character, use this appearance, but for a female use this other one?"
+In a [root\_entity file](./#root-entity), you can give the game a list of appearances and have them mapped to an [appearance-.app-files](../appearance-.app-files/ "mention") by entry name. While that's pretty good already, have you ever wanted to be more specific — for example, "for a male character, use this appearance, but for a female use this other one?"
 
 This is where suffixes come in. You append them to an appearance's name in the [root\_entity](./#root-entity), and the game will pick the correct appearance (and the correct[ app file](../appearance-.app-files/), and the correct mesh!) based on the best match.
 

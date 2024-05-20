@@ -6,10 +6,10 @@ description: The troubleshooting section for the Recolours & Refits guide
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created by @manavortex**\
-**Published September 30 2023**
+**Published:** September 30 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** May 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page is a part of the [Recolours and Refit guide](broken-reference). It will&#x20;
+This page is a part of the [.](./ "mention") guide. It will tell you how to deal with the most common problems **specific to this guide**. There will be links to other troubleshooting guides in the text.
 
 {% hint style="info" %}
 The troubleshooting steps below will be expanded as people follow this guide and run into problems. If you encounter anything not on the list,&#x20;
@@ -39,8 +39,6 @@ You can find tool-specific troubleshooting on [MLSB's wiki page](../../../moddin
 ### I can't build a depot
 
 That's okay, you can still [complete the guide without a full depot](./#netrunner-suit-preview), or you can check [MLSetupBuilder's wiki page](../../../modding-tools/mlsetup-builder/#extract-a-partial-depot) for more instructions.
-
-
 
 ## Refitting
 

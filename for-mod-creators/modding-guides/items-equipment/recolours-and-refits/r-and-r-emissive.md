@@ -4,7 +4,7 @@ description: How to change the Netrunner suit's glowey bits with ArchiveXL Dynam
 
 # R\&R: Emissive
 
-This page is a part of the [Recolours and Refit guide](broken-reference) and will tell you how to change the suits' emissive materials.&#x20;
+This page is a part of the [.](./ "mention") guide and will tell you how to change the suits' emissive materials.&#x20;
 
 [The first section](r-and-r-emissive.md#switching-existing-colours) will show you how to swap between existing colours in the .yaml file.
 

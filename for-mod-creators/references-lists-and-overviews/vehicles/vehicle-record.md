@@ -6,7 +6,7 @@ description: The TweakDB default vehicle record
 
 This is the main vehicle record in TweakDB, referenced from `VehicleObject` in the game, that references all the other vehicle-related records. Below is the .tweak vehicle template (that's also in the TweakDB) that you can customize for creating your own vehicle. The name `Vehicle.vehicle_template` near the top will need to be customized to your vehicle name.
 
-[`entityTemplatePath`](broken-reference) is an important field here, because this is the file that ties our record to the resource files needed for rendering.
+`entityTemplatePath` is an important field here, because this is the file that ties our record to the resource files needed for rendering.
 
 {% code title="Vehicle.vehicle_template.tweak" %}
 ```yaml
