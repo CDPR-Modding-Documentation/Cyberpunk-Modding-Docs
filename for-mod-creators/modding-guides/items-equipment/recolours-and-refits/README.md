@@ -43,7 +43,7 @@ You can check find the standard permissions on a mod's Nexus page, `Description`
 
 ### Tools and versions used
 
-<table data-header-hidden><thead><tr><th width="216">Name of program</th><th>version and download</th><th>What is it and why do I need it?</th></tr></thead><tbody><tr><td>Wolvenkit (short: WKit)</td><td>>= 8.9.1 (<a href="https://github.com/WolvenKit/WolvenKit/releases/">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/">nightly</a>)</td><td><strong>The</strong> Cyberpunk modding tool — this lets you browse files and pack your custom mod.</td></tr><tr><td>For recolours: MLSetupBuilder (short: MLSB)</td><td>>= 1.6.7 (most recent — see the <a href="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/mlsetup-builder">wiki</a>)</td><td>A plugin for Wolvenkit, installed from inside Wolvenkit. You need this to make recolours.</td></tr><tr><td>For refits: Blender</td><td><a href="https://www.blender.org/download/releases/3-6/">3.6</a></td><td>A fully-blown 3d editing software (free and open source). You only need this if you want to do <strong>refits</strong>.</td></tr><tr><td>For refits: Cyberpunk Blender IO suite</td><td><a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/1.4.0rc1">1.4.0</a></td><td>Optional, but recommended: the Blender plugin for integration with Wolvenkit</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="216">Name of program</th><th>version and download</th><th>What is it and why do I need it?</th></tr></thead><tbody><tr><td>Wolvenkit (short: WKit)</td><td>the latest stable (<a href="https://github.com/WolvenKit/WolvenKit/releases/">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/">nightly</a>)</td><td><strong>The</strong> Cyberpunk modding tool — this lets you browse files and pack your custom mod.</td></tr><tr><td>For recolours: MLSetupBuilder (short: MLSB)</td><td>the most recent, but at least <strong>1.6.7</strong> (see the <a href="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/mlsetup-builder">wiki</a> for help)</td><td>A plugin for Wolvenkit, installed from inside Wolvenkit. <em>You need this to make recolours.</em></td></tr><tr><td><strong>For refits:</strong> Blender</td><td>>= <a href="https://www.blender.org/download/releases/">4.1</a></td><td><em>You only need this if you want to do <strong>refits</strong>.</em><br>A fully-blown 3d editing software (free and open source). </td></tr><tr><td><strong>For refits:</strong> Cyberpunk Blender IO suite</td><td>>= <a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases">1.5.5.2</a></td><td><em>You only need this if you want to do <strong>refits</strong>.</em><br>The Blender plugin for integration with Wolvenkit</td></tr></tbody></table>
 
 ### Skipping and skimming
 
@@ -63,7 +63,7 @@ The bright side of this approach is that you **don't need to understand what you
 
 #### Links
 
-You will find two kinds of links. It's usually clearly annotated which is which.1
+You will find two kinds of links. It's usually clearly annotated which is which.
 
 The first will help you **do something**, leading to other guides on this wiki. They usually link the specific section that you need to complete. Please be thorough here as well, as the rules above apply.
 
@@ -81,7 +81,11 @@ This guide will walk you through the following steps
    * If you already have MLSB working, please read [#netrunner-suit-preview](./#netrunner-suit-preview "mention")!
 2. Creating a [Wolvenkit project](r-and-r-your-own-wolvenkit-project.md) with the right files
 3. [Editing a colour variant](r-and-r-colour-editing.md) of your choice in MLSB
-4. [Refitting the Netrunner suit](broken-reference) to a different body
+4. [Refitting](r-and-r-refitting-step-by-step.md) the Netrunner suit to a different body
+
+{% hint style="success" %}
+Step 4 will require you to use Blender. Don't worry, there are screenshots and instructions for everything!
+{% endhint %}
 
 ## R\&R Step 0: Setup
 
@@ -109,7 +113,7 @@ In this step, we'll enable custom previews by downloading the files I've prepare
 {% hint style="info" %}
 The Netrunner suit uses custom multilayer masks. To get an accurate preview in MLSetupBuilder, you **need** to complete this section. &#x20;
 
-You can make recolours blindly by just tweaking the colour values without knowing which parts of the mesh they affect, so you can skip this step and [#install-the-mod](./#install-the-mod "mention"),
+You can make recolours blindly by just tweaking the colour values. If that's okay for you, skip ahead to[#install-the-mod](./#install-the-mod "mention").
 {% endhint %}
 
 #### MLSB's Uncook Folder
@@ -134,9 +138,9 @@ This is where MLSB (and Wolvenkit) store the files they extracted.&#x20;
 ## Install the mod
 
 {% hint style="info" %}
-The tutorial assumes that the mod is installed **manually** rather than via Vortex. If you have already done that, no sweat — it means that a few files might be in different places, and all this is annotated.&#x20;
+The tutorial assumes that the mod is installed **manually** rather than via Vortex. If you have already done that, no sweat — it means that a few files might be in different places. There will be extra instructions for you.
 
-If you don't want the extra complication, simply deactivate the mod in Vortex and follow the steps below.
+If you don't want to keep it simple, just **deactivate** the mod in Vortex and follow the steps below.
 {% endhint %}
 
 #### TL;DR
@@ -150,17 +154,23 @@ Extract the downloaded archive directly into your [Cyberpunk 2077 directory](#us
 
 <figure><img src="../../../../.gitbook/assets/netrunner_variants_manual_install.png" alt=""><figcaption><p>This shows the <a href="https://www.7-zip.org/download.html">7zip</a> interface. If you're using a different program, this won't look the same, but the general steps are the same.</p></figcaption></figure>
 
-3. These files need to go directly into your [Cyberpunk 2077 directory](#user-content-fn-2)[^2], where they will merge with the existing folders. \
-   This is the same directory that contains `REDprelauncher.exe`.
-4. **Extract** or **copy** them to that folder. If you're asked to overwrite existing files, click `Yes`.\
-   I can't tell you exactly how to do that, because each program works slightly differently. I'll include instructions for 7zip, just in case:
-   1. Make sure that either nothing or everything is selected
-   2. Click the `Extract` button in the taskbar (it looks like a blue minus)
-   3. Find the `Copy To` field and do either of these things:
-      1. Paste the path to your [Cyberpunk 2077 directory](#user-content-fn-3)[^3] into the field&#x20;
-      2. Click the `…`  button next to the field, navigate to your [Cyberpunk 2077 directory](#user-content-fn-4)[^4] and click OK
-   4. Click OK
-   5. If you get a `Confirm File Replace` popup, click `Yes to All`.
+3. These files need to go directly into your [Cyberpunk 2077 game directory](../../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md), where they will merge with the existing folders. (Check the link if you're not sure how to find it)
+4. **Extract** or **copy** them to that folder. If you're asked to overwrite existing files, click `Yes`.
+
+<details>
+
+<summary>Step-By-Step: Extract with 7zip</summary>
+
+1. In the 7zip window, select either everything or nothing
+2. Click the `Extract` button in the taskbar (it looks like a blue minus)
+3. Find the `Copy To` field and do either of these things:
+   1. Paste the path to your [Cyberpunk 2077 directory](#user-content-fn-2)[^2] into the field&#x20;
+   2. Click the `…`  button next to the field, navigate to your [Cyberpunk 2077 directory](#user-content-fn-3)[^3] and click OK
+4. Click OK
+5. If you get a `Confirm File Replace` popup, click `Yes to All`.
+
+</details>
+
 5. **Optional, but recommended**: Launch the game and make sure that the mod works:
    * Equip a suit in the Atelier Store's preview\
      OR
@@ -183,8 +193,4 @@ Now that you're all set up, we'll [create a Wolvenkit project](r-and-r-your-own-
 
 
 [^3]: The folder where you installed the game. Your client (Steam, Epic, GOG) can take you there.
-
-
-
-[^4]: The folder where you installed the game. Your client (Steam, Epic, GOG) can take you there.
 

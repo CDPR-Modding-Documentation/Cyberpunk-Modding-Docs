@@ -4,16 +4,21 @@ description: How to import and export with the Wolvenkit Blender plugin
 
 # WKit Blender Plugin: Import/Export
 
+## Summary
+
+This page lists step-by-step instructions for the export and import of game files.&#x20;
+
 {% hint style="warning" %}
 You can only export files which are part of a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects).
 {% endhint %}
 
-### Wait, this is not what I want!
+The **Wolvenkit** parts of the workflow will link you to the [red wiki](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/), where you can find screenshots and (hopefully) up-to-date descriptions.
 
-You can find additional information here:&#x20;
+### Wait, this is not what I want!
 
 * [Import/Export](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export "mention") (Wolvenkit wiki)
 * [Blender Integration](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/blender-integration "mention")(Wolvenkit wiki)
+* If this is your first time using Blender, check [blender-getting-started.md](../../3d-modelling/blender-getting-started.md "mention")
 * [exporting-and-importing-meshes](../../3d-modelling/exporting-and-importing-meshes/ "mention") (has additional information that might come in handy)
 
 ## Meshes

@@ -9,13 +9,18 @@ description: Best Practices for actually changing meshes
 **Published January 29 2023 by @manavortex | Edited by Na**\
 **Last documented edit: January 09 2024 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will give you a number of techniques when it comes to editing meshes in Blender. The screenshots have been taken using version 3.4.1.
+This guide will give you a number of mesh sculpting techniques when it comes to editing meshes in Blender.&#x20;
 
-{% hint style="success" %}
-Starting in version 1.5.0, the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention") features an [auto-refitter](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md), which supports many custom bodies and will be expanded in the future.&#x20;
-
-For information on weight painting, check [meshes-and-armatures-rigging.md](meshes-and-armatures-rigging.md "mention")
+{% hint style="danger" %}
+Do not use mesh sculpting if you can get away with proportional editing! \
+You can find the step-by-step documentation about this under [r-and-r-refitting-step-by-step.md](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") -> [#step-4-refitting](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md#step-4-refitting "mention").
 {% endhint %}
+
+### Wait, this is not what I want!
+
+* If this is your first time in Blender and you are lost, check [blender-getting-started.md](blender-getting-started.md "mention")
+* Before doing this by hand, check the [wkit-blender-plugin-akl-autofitter.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md "mention")
+* For information on weight painting, check [meshes-and-armatures-rigging.md](meshes-and-armatures-rigging.md "mention")
 
 #### Assumed skill level:&#x20;
 
@@ -28,7 +33,7 @@ This guide is aimed at more intermediate refitting needs. For a step-by-step ref
 ## Proportional editing
 
 {% hint style="danger" %}
-You can find the documentation about this under [r-and-r-refitting-step-by-step.md](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") -> [#step-4-refitting](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md#step-4-refitting "mention").
+You can find the step-by-step documentation about this under [r-and-r-refitting-step-by-step.md](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") -> [#step-4-refitting](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md#step-4-refitting "mention").
 
 This is the **recommended method**, as it is **easiest**, **fastest**, and has the least chance of wreaking havoc with things that you don't want to fix.&#x20;
 

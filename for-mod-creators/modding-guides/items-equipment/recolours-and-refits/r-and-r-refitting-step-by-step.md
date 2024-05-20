@@ -6,6 +6,10 @@ description: Step-by-step guide on refitting a mesh - for newbies!
 
 This page is a subsection of the [Netrunning Suit guide](./). It will teach you how to do custom refits in Blender.
 
+{% hint style="success" %}
+If you're totally new and totally lost in Blender, you can read [blender-getting-started.md](../../../3d-modelling/blender-getting-started.md "mention"). This is not necessary for the purpose of this guide!
+{% endhint %}
+
 #### **Assumed level of skill**:&#x20;
 
 You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on [Discord](https://discord.gg/redmodding) so that I can improve it.&#x20;
@@ -16,7 +20,7 @@ You know how to read — if you can read and struggle with this guide, then it's
 * as long as you want on the actual editing&#x20;
 
 {% hint style="info" %}
-It's highly recommended that you grab the [Wolvenkit Blender I](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)[O Suite](../../../modding-tools/wolvenkit-blender-io-suite/), since the latest release has an [auto-refitter](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md) for the most common body mods.
+You need to install the [Wolvenkit Blender I](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)[O Suite](../../../modding-tools/wolvenkit-blender-io-suite/) to ensure compatibility with Cyberpunk. You can check out the [auto-refitter](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md), which might render all of this obsolete.
 {% endhint %}
 
 ## Step 1: Adding the meshes to your project

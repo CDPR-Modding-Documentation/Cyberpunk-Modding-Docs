@@ -4,13 +4,26 @@ description: How the Wolvenkit Blender plugin works
 
 # Wolvenkit Blender IO Suite
 
-You can find specific instructions for [installing-the-wolvenkit-blender-plugin.md](installing-the-wolvenkit-blender-plugin.md "mention") on the corresponding wiki page.
+## Summary
 
-For the plugin's original readme, check [github](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/).
+This is the landing page for the Wolvenkit Blender plugin. Here, you can find [#usage](./#usage "mention") instructions, as well as an overview of its features:
+
+* [#animation-tools](./#animation-tools "mention")
+* [#mesh-tools](./#mesh-tools "mention")
+* [#akl-autofitter](./#akl-autofitter "mention")
+* [#collision-tools](./#collision-tools "mention")
+
+### Wait, this is not what I want!
+
+* If this is your first time using Blender, you can check out [blender-getting-started.md](../../3d-modelling/blender-getting-started.md "mention")
+* Under [installing-the-wolvenkit-blender-plugin.md](installing-the-wolvenkit-blender-plugin.md "mention"), you can find a detailed install guide
+* For detailed usage instructions, check [wkit-blender-plugin-import-export.md](wkit-blender-plugin-import-export.md "mention")
+* The plug-in's source code and original readme are on [github](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/)
+* If you run into issues using the plugin, you can check [wkit-blender-plugin-troubleshooting](wkit-blender-plugin-troubleshooting/ "mention")
 
 ## Compatibility
 
-<table><thead><tr><th width="313.3333333333333">Game version</th><th width="155">Plugin version</th><th>Wolvenkit version</th></tr></thead><tbody><tr><td>2.0.0 or higher</td><td>latest (at least <a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/1.5.0">1.5.0</a>)</td><td>>= 8.11.0 (<a href="https://github.com/WolvenKit/WolvenKit/releases/tag/8.11.0">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td></tr><tr><td>up to 1.6.3_hotfix1 (but before 2.0)</td><td>&#x3C;= </td><td><a href="https://github.com/WolvenKit/WolvenKit/releases/tag/8.10.0">8.10.0</a></td></tr></tbody></table>
+<table><thead><tr><th width="313.3333333333333">Game version</th><th width="155">Plugin version</th><th>Wolvenkit version</th></tr></thead><tbody><tr><td>2.0.0 or higher</td><td>latest (at least <a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/1.5.0">1.5.0</a>)</td><td>>= 8.11.0 (<a href="https://github.com/WolvenKit/WolvenKit/releases/tag/8.11.0">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td></tr><tr><td>up to 1.6.3_hotfix1 (but before 2.0)</td><td>&#x3C; 1.5.0</td><td><a href="https://github.com/WolvenKit/WolvenKit/releases/tag/8.10.0">8.10.0</a></td></tr></tbody></table>
 
 {% hint style="success" %}
 The plugin is developed on [Blender 3.6](https://www.blender.org/download/releases/3-6/) and [Blender 4.0](https://www.blender.org/download/releases/4-0/). For maximum compatibility, install the same version.
@@ -50,8 +63,6 @@ Lets you transfer [vertex weights](../../3d-modelling/meshes-and-armatures-riggi
 {% hint style="info" %}
 The plugin will transfer weights by submesh name. If your target armature has more submeshes than your source armature, simply create duplicates and rename them accordingly.
 {% endhint %}
-
-
 
 <details>
 

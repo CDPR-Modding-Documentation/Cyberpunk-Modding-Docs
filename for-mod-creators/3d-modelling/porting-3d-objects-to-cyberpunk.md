@@ -4,13 +4,14 @@ description: How to replace an in-game item with your custom mesh
 
 # Porting 3d objects to Cyberpunk
 
+## Summary
+
+Published: Oct. 14 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Last documented Update: Mar. 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
 This page will give you information on how to get a 3d object into Cyberpunk.
 
-#### Summary
-
-written by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), published on Oct. 14 2023
-
-## Wait, that's not what I want!
+### Wait, that's not what I want!
 
 You can find other relevant guides scattered across this wiki, for example
 
@@ -22,13 +23,10 @@ You can find other relevant guides scattered across this wiki, for example
 
 ## Prerequisites
 
-Wolvenkit >= 8.11.1
-
-[wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention")>= 1.5.0
-
-Blender >= 3.6 (or 4)
-
-A [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can pack your mod
+* **Wolvenkit:** The latest version the latest stable ([stable](https://github.com/WolvenKit/WolvenKit/releases/) | [nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/))
+* [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention")(>= [1.5.5.2](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) for Wolvenkit 8.14)
+* Blender (>= [4.1](https://www.blender.org/download/releases/) for Wolvenkit 8.14)
+* A [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can pack your mod
 
 ## Step 0: Finding the right base mesh
 
