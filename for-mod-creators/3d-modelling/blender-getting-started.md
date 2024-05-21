@@ -1,5 +1,5 @@
 ---
-description: Things I wish I had known before I jumped into the Blender
+description: Things I wish I had known before I jumped into Blender
 ---
 
 # Blender: Getting Started
@@ -102,7 +102,7 @@ This is especially handy in combination with Snap Selection:
 
 <figure><img src="../../.gitbook/assets/blender_snap_selection.png" alt=""><figcaption><p>Snap Selection - move things around via 3d cursor!</p></figcaption></figure>
 
-## The Object Mode
+## Object Mode
 
 Object mode is where you select stuff that you want to edit.
 
@@ -110,7 +110,7 @@ Object mode is where you select stuff that you want to edit.
 If you move anything in Object Mode, you need to Apply Transforms (Object -> Apply -> All Transforms), or Cyberpunk will ignore your changes.
 {% endhint %}
 
-## The Edit Mode
+## Edit Mode
 
 Edit mode is where you actually **edit** the mesh.
 
@@ -166,13 +166,33 @@ With the shortcuts `1`, `2` and `3`, you can switch the Selection Mode between [
 
 With the shortcut `Ctrl+L`, Blender will select everything up to a certain boundary. By default, this boundary is the same piece of 3d geometry, but in the bottom left corner of the viewport, you can pick the delimiter:
 
+
+
 <figure><img src="../../.gitbook/assets/blender_select_linked.png" alt="" width="213"><figcaption></figcaption></figure>
 
 See [#seams-and-sharps](blender-getting-started.md#seams-and-sharps "mention") how to make use of this!
 
+
+
+Select Loops
+
+Hold `Alt` and left click to instantly select an entire loop of edges, faces, ors vertices. this works in all selection modes but does not work well with triangulated meshes or very complex geometry. works great for boundry loops
+
+
+
+Select Boundry loops
+
+Select all or part of a mesh then navigate to :
+
+<figure><img src="../../.gitbook/assets/Screenshot 2024-05-20 111519.png" alt=""><figcaption></figcaption></figure>
+
+this will instantly select all boundry loops for the given selection, great for marking seams
+
+
+
 #### **Select shortest path**
 
-Only works in Edge Selection Mode (Hotkey: 2). Select at least one edge, then `Ctrl+click` on **any other edge** to select the shortest path between them.&#x20;
+Works in Edge, Vertex, or Face Selection Mode. Select at least one element, then `Ctrl+click` on **any other element** to select the shortest path of edges, vertices, or faces between them.&#x20;
 
 {% hint style="info" %}
 Double-check that the shortest path is actually the path you want. If it's not, **un-do** (Hotkey: `Ctrl+Z`) and shift-click on an edge closer to your selection.
