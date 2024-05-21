@@ -46,6 +46,21 @@ Before beginning, ensure you have the following software installed and properly 
 
 If you are stuck, refer to the [#troubleshooting-check-this-when-youre-stuck](new-iconic-weapon-tutorial-for-dummies.md#troubleshooting-check-this-when-youre-stuck "mention") at the end of the page.
 
+## Iconic Weapons in a nutshell
+
+Each Iconic weapon is a variant of a base weapon, with an hidden (from the player) mod. \
+This "hidden" mod contains a statModifiers array (to list all the stat changes this Iconic will have from the base weapon) and an OnAttach array. \
+The OnAttach array is where you'll want a GameplayLogicPackage to go. You may or may not need to define conditional effectors in there, but if you want your weapon to have the customary Iconic yellow description then be aware that there is where it's written (in the UIData of the GameplayLogicPackage).
+
+<figure><img src="../../../../../.gitbook/assets/iconicstruct.png" alt=""><figcaption><p>$base: Items.IconicWeaponModAbilityBase == $type: GameplayLogicPackage</p></figcaption></figure>
+
+## Step 0: Understanding the structure
+
+The rest of this guide will hold your hand through a deep dive, step-by-step, of your first custom Iconic made from zero. If you get lost through it, or if you'd rather find your own flow, you'll be well served by returning to the code of an Iconic weapon already in the game (as you'll be building up from there regardless and it's solid footing).
+
+**RedMod tweak files are much more legible than a "TweakXL override" from WolvenKit for this**, as each step there inherits redundant stuff passively and won't clutter your screen. Plus you'll see inlines content directly without having to track down flats.\
+Just use something to search the insides of the files for the definitions (VS can, or some free tools like [Agent Ransack](https://www.mythicsoft.com/agentransack/))
+
 ## Step 1: Create a New Project in WolvenKit
 
 Start by opening WolvenKit and create a new project. This will be the base for your new iconic weapon mod.
