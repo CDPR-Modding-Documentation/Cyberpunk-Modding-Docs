@@ -56,7 +56,7 @@ The OnAttach array is where you'll want a GameplayLogicPackage to go. You may or
 
 ## Step 0: Understanding the structure
 
-The rest of this guide will hold your hand through a deep dive, step-by-step, of your first custom Iconic made from zero. If you get lost through it, or if you'd rather find your own flow, you'll be well served by returning to the code of an Iconic weapon already in the game (as you'll be building up from there regardless and it's solid footing).
+The rest of this guide will hold your hand through a deep dive, step-by-step, of your first custom Iconic made from zero. If you get lost through it, or if you'd rather find your own flow, you'll be well served by returning to check the code of an Iconic weapon already in the game (as you'll be building up from a base weapon in the same way, and it's solid footing).
 
 **RedMod tweak files are much more legible than a "TweakXL override" from WolvenKit for this**, as each step there inherits redundant stuff passively and won't clutter your screen. Plus you'll see inlines content directly without having to track down flats.\
 Just use something to search the insides of the files for the definitions (VS can, or some free tools like [Agent Ransack](https://www.mythicsoft.com/agentransack/))
@@ -515,6 +515,13 @@ Items.Hand_Of_Midas:
 {% hint style="info" %}
 Instead of `displayName: MC_gun_name`, you can also write `displayName: LocKey#MC_gun_name`. However, TweakXL will do this for you!
 {% endhint %}
+
+{% hint style="warning" %}
+This `localizedDescription:` is **not** the yellow text you see on the weapon, but the red-colored description that is shown in the Inspect screen. \
+The text that is shown (as yellow-colored) on the weapon is instead defined in the `UIData` of the Iconic Mod (at Step 12)
+{% endhint %}
+
+
 
 These lines set the display name and the description of your weapon using the keys defined in your localization file. The **values** on the right side of the `:` must match the `secondaryKey` values from your `en-us.json` file and be **globally unique**.
 
