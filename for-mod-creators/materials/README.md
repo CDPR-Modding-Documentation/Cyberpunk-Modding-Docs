@@ -101,6 +101,8 @@ This is specific to Cyberpunk, and it is incredibly cool. If you're used to text
 
 A decal material is applied to a decal (sub)mesh, which is located on the surface of another mesh like a sticker.&#x20;
 
+Check out our guide on [adding-decals.md](../modding-guides/items-equipment/editing-existing-items/adding-decals.md "mention") for further explanation and detail.
+
 ### Emissive
 
 There are various kinds of emissive materials. See [cheat-sheet-materials.md](../references-lists-and-overviews/cheat-sheet-materials.md "mention") -> [#emissive-materials](../references-lists-and-overviews/cheat-sheet-materials.md#emissive-materials "mention") for a list.

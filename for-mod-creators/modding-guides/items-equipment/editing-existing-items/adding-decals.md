@@ -7,9 +7,15 @@ description: How to add decals to existing items
 ## Summary
 
 **Published:** Jan 21 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jan 21 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Mar 21 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will teach you how to add decals to existing items.&#x20;
+
+{% hint style="info" %}
+You can find a [#video](adding-decals.md#video "mention") at the end of the guide (courtesy of Island Dancer).
+
+Any **links** in the guide will lead to extra information and are **not required** to complete it.
+{% endhint %}
 
 It will walk you through the following:
 
@@ -17,10 +23,6 @@ It will walk you through the following:
 
 1. Adding it to the [mesh entity](../../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity)
 2. Setting up the material
-
-{% hint style="info" %}
-Any **links** will lead to extra information and are **not required** to complete this guide.
-{% endhint %}
 
 ### Wait, this is not what I want!
 
@@ -311,4 +313,10 @@ See [troubleshooting-your-mesh-edits.md](../../../3d-modelling/troubleshooting-y
 ### Issues with the material
 
 See [materials-troubleshooting.md](../../../materials/materials-troubleshooting.md "mention")
+
+
+
+## Video
+
+{% embed url="https://www.youtube.com/watch?v=wWVGVo_X8ss" %}
 
