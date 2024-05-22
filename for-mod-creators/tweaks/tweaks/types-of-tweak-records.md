@@ -4,20 +4,22 @@ description: Which kinds of tweak records exist? How are they defined? What do t
 
 # Types of tweak records
 
+## Summary
+
 **Created:** Jan 13 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** Jan 13 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
+This page lists types of tweak records with their properties and lists of occurrences in the wild. They are grouped by **type**. If this wiki has more information, there will be a link at the start of the block.
+
 {% hint style="danger" %}
-This page is a work in progress, as the tweak database is huge and barely-documented. If you have any information that needs to be in here, **please don't hesitate** to sign up as an editor and start contributing!
+This is a work in progress, as the tweak database is huge and barely-documented. If you have any information that needs to be in here, **please don't hesitate** to sign up as an editor and start contributing!
 
 If you just want a quick overview of a certain type of tweak, you can check [cheat-sheet-tweak-ids](../../references-lists-and-overviews/cheat-sheet-tweak-ids/ "mention") instead.
 {% endhint %}
 
 If you want to learn how to **make** tweaks instead, check [how-to-yaml-tweak-modding-basics.md](../../modding-guides/tweakxl-changing-game-records/how-to-yaml-tweak-modding-basics.md "mention")
 
-## Summary
-
-This page lists types of tweak records with their properties and lists of occurrences in the wild. They are grouped by **type**.
+## Adding content
 
 Please keep entries in the following format (you can copy e.g. [#effector](types-of-tweak-records.md#effector "mention") below):
 

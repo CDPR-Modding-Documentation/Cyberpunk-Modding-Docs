@@ -184,6 +184,7 @@
   * [TweakDB: Game database](for-mod-creators/tweaks/tweaks/README.md)
     * [Browsing the tweak database](for-mod-creators/tweaks/tweaks/browsing-the-tweak-database.md)
     * [Types of tweak records](for-mod-creators/tweaks/tweaks/types-of-tweak-records.md)
+  * [Tweak Inline Records](for-mod-creators/tweaks/tweak-inline-records.md)
   * [Prereqs: customizable conditions](for-mod-creators/tweaks/prereqs-customizable-conditions.md)
   * [Tweaks: Lists and references](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids)
   * [Tweak modding: Guides](for-mod-creators/tweaks/tweak-modding-guides.md)
