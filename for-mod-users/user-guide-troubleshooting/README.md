@@ -71,9 +71,9 @@ To enable REDmods, check [#activating-mods](../users-modding-cyberpunk-2077/redm
 
 ## Your game is crashing
 
-#### Randomly, and you have an Intel i9
+### Randomly, and you have an Intel i7 or i9
 
-If you have an Intel i9, check [this forum post](https://forums.cdprojektred.com/index.php?threads/possible-reasons-for-crashing-on-intel-i7-i9-z790-motherboard-set-ups.11129974/)
+Check [this forum post](https://forums.cdprojektred.com/index.php?threads/possible-reasons-for-crashing-on-intel-i7-i9-z790-motherboard-set-ups.11129974/). If that doesn't help, read on.
 
 ### During car chases
 
