@@ -16,7 +16,7 @@ What distinguishes the interior and exterior of the vehicle is the "\_cutout" me
 
 "_cutout" can be found in "RDTDataViewMode -> appearances -> components_" within ".app"
 
-<figure><img src="../../../../.gitbook/assets/image (302).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (302) (1).png" alt=""><figcaption></figcaption></figure>
 
 Make a mesh to fit the vehicle and replace it
 

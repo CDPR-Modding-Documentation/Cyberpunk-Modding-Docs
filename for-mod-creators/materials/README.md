@@ -106,3 +106,15 @@ Check out our guide on [adding-decals.md](../modding-guides/items-equipment/edit
 ### Emissive
 
 There are various kinds of emissive materials. See [cheat-sheet-materials.md](../references-lists-and-overviews/cheat-sheet-materials.md "mention") -> [#emissive-materials](../references-lists-and-overviews/cheat-sheet-materials.md#emissive-materials "mention") for a list.
+
+
+
+## Material wireframes
+
+You can make materials display as wireframes of their geometry by changing the following property in their .mt.
+
+{% hint style="danger" %}
+Please do not overwrite original .mt files, as this will effect everything in the entire game. Always create your own local copy!
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>

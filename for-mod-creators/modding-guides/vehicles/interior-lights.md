@@ -8,7 +8,7 @@ To make interior lights work, you first need to create the light boundary/shape 
 
 For eg in the porsche 911 .ent:
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (302).png" alt=""><figcaption></figcaption></figure>
 
 To create this shape, first we need to create a "cutout" of the interior mesh. Load your car's interior in a Blender project and join them all into a single mesh
 
