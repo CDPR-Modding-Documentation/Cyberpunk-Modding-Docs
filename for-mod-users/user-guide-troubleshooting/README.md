@@ -233,6 +233,10 @@ If you are experiencing this issue with a mod that is not on this list, please c
 
 This section tells you how to deal with crashes during gameplay.
 
+{% hint style="info" %}
+If you have an Intel i9, check [this forum post](https://forums.cdprojektred.com/index.php?threads/possible-reasons-for-crashing-on-intel-i7-i9-z790-motherboard-set-ups.11129974/)
+{% endhint %}
+
 #### When editing the inventory
 
 Kiroshi Crowd Scanner and Tooltip Fixer do not play together ([source](https://discord.com/channels/717692382849663036/788213273530335233/1152601434299301989), discord). Uninstall one of them.
