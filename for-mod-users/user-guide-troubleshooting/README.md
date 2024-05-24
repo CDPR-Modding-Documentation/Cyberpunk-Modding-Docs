@@ -71,6 +71,10 @@ To enable REDmods, check [#activating-mods](../users-modding-cyberpunk-2077/redm
 
 ## Your game is crashing
 
+#### Randomly, and you have an Intel i9
+
+If you have an Intel i9, check [this forum post](https://forums.cdprojektred.com/index.php?threads/possible-reasons-for-crashing-on-intel-i7-i9-z790-motherboard-set-ups.11129974/)
+
 ### During car chases
 
 If your game is crashing during certain car chase missions, try removing [Eye Exposure Adaption](https://www.nexusmods.com/cyberpunk2077/mods/2375).
@@ -232,10 +236,6 @@ If you are experiencing this issue with a mod that is not on this list, please c
 ### Crash during the game
 
 This section tells you how to deal with crashes during gameplay.
-
-{% hint style="info" %}
-If you have an Intel i9, check [this forum post](https://forums.cdprojektred.com/index.php?threads/possible-reasons-for-crashing-on-intel-i7-i9-z790-motherboard-set-ups.11129974/)
-{% endhint %}
 
 #### When editing the inventory
 
