@@ -326,4 +326,4 @@
     * [Breach Screen - Replacer](for-mod-creators/modding-guides/everything-else/breach-screen-replacer.md)
     * [Custompathing assets](for-mod-creators/modding-guides/everything-else/custompathing-assets.md)
     * [Your own Atelier Store](for-mod-creators/modding-guides/everything-else/adding-items-atelier-integration.md)
-    * [How to translate a Mod](for-mod-creators/modding-guides/everything-else/how-to-translate-a-mod.md)
+    * [How to Translate a Mod](for-mod-creators/modding-guides/everything-else/how-to-translate-a-mod.md)
