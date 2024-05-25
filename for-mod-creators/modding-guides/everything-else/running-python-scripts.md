@@ -20,6 +20,14 @@ This guide will teach you how to execute Python scripts under Windows.&#x20;
 
 </details>
 
+<details>
+
+<summary>A list of potentially useful scripts</summary>
+
+[For a folder of .mlsetup.jsons, turn layer opacity to 0 for any layer using certain microblends](https://github.com/manavortex/cyberpunk2077/blob/master/python/materials/clean\_up\_scratch\_layers.py)
+
+</details>
+
 ## Running Python scripts in Blender
 
 This guide is for running files outside of **Blender**.&#x20;
