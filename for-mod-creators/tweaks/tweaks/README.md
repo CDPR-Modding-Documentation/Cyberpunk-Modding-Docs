@@ -1,9 +1,17 @@
 # TweakDB: Game database
 
-If you would rather look at guides instead, check the following links, or use the wiki's search function:
+## Summary
 
-* How to change an NPC's record with Redscript: [tweakxl-changing-game-records](../../modding-guides/tweakxl-changing-game-records/ "mention")
-* Weapon properties and their explanations: The second half of [new-iconic-weapon-tutorial-for-dummies.md](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
+Created: ??\
+Last documented update: Mar 26 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page will tell you what the game's weak database is, and how you can use it to change or create game items.&#x20;
+
+### Wait, that's not what I want!
+
+* For the beginners' guide, check [how-to-yaml-tweak-modding-basics.md](../../modding-guides/tweakxl-changing-game-records/how-to-yaml-tweak-modding-basics.md "mention")
+* For another example, see How to change an NPC's record with Redscript: [tweakxl-changing-game-records](../../modding-guides/tweakxl-changing-game-records/ "mention")
+* Or check the second half of [new-iconic-weapon-tutorial-for-dummies.md](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention") for explanations of weapon properties
 
 ## What is the Tweak DB?
 
