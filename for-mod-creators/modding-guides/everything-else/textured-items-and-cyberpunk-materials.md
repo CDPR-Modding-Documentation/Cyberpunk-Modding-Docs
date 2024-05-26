@@ -91,7 +91,9 @@ Step 2 is to prepare the downloaded 3d asset to work with Cyberpunk. Depending o
 ### Step 2: Processing the downloaded mesh
 
 {% hint style="info" %}
-All of these steps will be taking place in Blender.
+All of these steps will be taking place in Blender.&#x20;
+
+If this is your first time and you're lost, check out [blender-getting-started](../../3d-modelling/blender-getting-started/ "mention")
 {% endhint %}
 
 The files you download will have all sorts of structures. In the end, you want to end up with a flat hierarchy of object(s):
@@ -104,7 +106,7 @@ Scene Collection
     ▽ submesh_03_LOD_1
 ```
 
-* LOD\_1 indicates the level of detail
+* LOD\_1 indicates the [level of detail](../../files-and-what-they-do/level-of-detail-lod.md). You only care for LOD\_1.
 * The submesh numbers are important for [material assignment](../../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment) in Wolvenkit.
 
 {% hint style="success" %}

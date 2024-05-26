@@ -15,11 +15,11 @@ This is the landing page for the Wolvenkit Blender plugin. Here, you can find [#
 
 ### Wait, this is not what I want!
 
-* If this is your first time using Blender, you can check out [blender-getting-started.md](../../3d-modelling/blender-getting-started.md "mention")
+* If this is your first time using Blender, you can check out [blender-getting-started](../../3d-modelling/blender-getting-started/ "mention")
 * Under [installing-the-wolvenkit-blender-plugin.md](installing-the-wolvenkit-blender-plugin.md "mention"), you can find a detailed install guide
 * For detailed usage instructions, check [wkit-blender-plugin-import-export.md](wkit-blender-plugin-import-export.md "mention")
 * The plug-in's source code and original readme are on [github](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/)
-* If you run into issues using the plugin, you can check [wkit-blender-plugin-troubleshooting](wkit-blender-plugin-troubleshooting/ "mention")
+* If you run into issues using the plugin, you can check [wkit-blender-plugin-troubleshooting.md](wkit-blender-plugin-troubleshooting.md "mention")
 
 ## Compatibility
 

@@ -3,9 +3,13 @@
 #### Summary
 
 **Published:** Jan 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jan 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Mar 26 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will teach you how to get Cyberpunk materials into Blender (and how to bake them into textures).&#x20;
+
+### Wait, this is not what I want!
+
+* If this is your first time in Blender, check out [blender-getting-started](../3d-modelling/blender-getting-started/ "mention")
 
 ## How to get Cyberpunk Shaders into Blender?
 
@@ -47,4 +51,4 @@ by island dancer, thank you <3
 
 ## Troubleshooting: I can't import my materials!
 
-Please see the [wkit-blender-plugin-troubleshooting](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-troubleshooting/ "mention") page.
+Please see the [wkit-blender-plugin-troubleshooting.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-troubleshooting.md "mention") page.

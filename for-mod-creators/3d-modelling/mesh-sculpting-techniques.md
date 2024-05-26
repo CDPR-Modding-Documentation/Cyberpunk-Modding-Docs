@@ -18,7 +18,7 @@ You can find the step-by-step documentation about this under [r-and-r-refitting-
 
 ### Wait, this is not what I want!
 
-* If this is your first time in Blender and you are lost, check [blender-getting-started.md](blender-getting-started.md "mention")
+* If this is your first time in Blender and you are lost, check [blender-getting-started](blender-getting-started/ "mention")
 * Before doing this by hand, check the [wkit-blender-plugin-akl-autofitter.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md "mention")
 * For information on weight painting, check [meshes-and-armatures-rigging.md](meshes-and-armatures-rigging.md "mention")
 

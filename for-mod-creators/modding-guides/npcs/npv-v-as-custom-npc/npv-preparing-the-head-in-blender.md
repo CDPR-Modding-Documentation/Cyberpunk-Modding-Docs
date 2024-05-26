@@ -62,11 +62,9 @@ The list will give you a number of **Source Mesh** entries like `h0_000_pwa_c__b
 You need to keep these files inside the `head` folder and the `.morphtarget` file in the subfolder `morphtargets`. If you want to understand why, keep reading; otherwise, you can proceed to [Deleting Files](npv-preparing-the-head-in-blender.md#deleting-files).
 {% endhint %}
 
-### What the actual fuck are all these files?
+<details>
 
-{% hint style="info" %}
-If you don't care and just want to know what to delete, go [here](npv-preparing-the-head-in-blender.md#deleting-files).
-{% endhint %}
+<summary>What the actual fuck are all those files?</summary>
 
 #### Meshes vs Morphtargets
 
@@ -81,6 +79,8 @@ We only need the .morphtargets to generate the actual meshes by duplicating the 
 The different variants in the character creator correspond to the different meshes. For example, if you select cyberware 3 in the character creator, the mesh that will get loaded is `cyberware_03`. Not so difficult, is it?
 
 To learn what the prefixes mean, check [#head-file-prefixes](../../../references-lists-and-overviews/cheat-sheet-head/#head-file-prefixes "mention").
+
+</details>
 
 ### Finding the right piercing
 
@@ -99,7 +99,7 @@ tutorial\npv\your_female_character\head\i1_000_pwa_c__basehead_earring_04.mesh
 
 … none of which is your V's exact piercings. Instead, there are full sets of jewelry, most of which will be **hidden**.
 
-You have to look at the meshes and find the file that includes your set of piercings. We'll go about hiding the excess in one of the later steps.
+You have to look at the meshes and find the file that **includes your set of piercings**. We will delete the ones you don't need later.
 
 ### Deleting files
 
@@ -114,9 +114,11 @@ Do not delete any files if you're [editing the player head](../a-new-head-for-v.
 Many of the files are **variants** and your V will be using **one or none of them.** That means you have a bunch of files to delete.&#x20;
 
 * If you have chosen [the convenient option](npv-preparing-the-head-in-blender.md#the-convenient-option), you should already have a list of files that you need to keep.&#x20;
-* Otherwise, you need to refer to [#what-the-actual-fuck-are-all-these-files](npv-preparing-the-head-in-blender.md#what-the-actual-fuck-are-all-these-files "mention") and use the table below for some oversight.
+* Otherwise, you need to refer to [#what-the-actual-fuck-are-all-those-files](npv-preparing-the-head-in-blender.md#what-the-actual-fuck-are-all-those-files "mention") and use the table below for some oversight.
 
-When deleting files that you aren't using, you need to remove both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder, both in the [archive](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#archive) and the [raw](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw) section.
+{% hint style="warning" %}
+When deleting files that you aren't using, make sure to remove both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder, both in the [archive](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#archive) and the [raw](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw) section.
+{% endhint %}
 
 The following table will show you examples on what to **keep** (as in, you **delete everything else**):
 
@@ -138,15 +140,21 @@ After deletions, both `head` and `head/morphtargets` should hold only the files 
 
 For a list, see the [table above](npv-preparing-the-head-in-blender.md#okay-and-all-those-numbers).
 
-Once you're done, you should have this many files:
+Once you're done, you should have between 4 and 13/14 files:
 
-| minimum number of files | 4                                                          |
-| ----------------------- | ---------------------------------------------------------- |
-| maximum number of files | <p>13 (female body gender)</p><p>14 (male body gender)</p> |
+<table data-header-hidden><thead><tr><th width="281"></th><th></th></tr></thead><tbody><tr><td>minimum number of files</td><td>4</td></tr><tr><td>maximum number of files</td><td><p>13 (female body gender)</p><p>14 (male body gender)</p></td></tr></tbody></table>
 
 ## Step 2: Exporting head
 
-Now, we will export all .morphtarget files from Wolvenkit so that we can edit them **in Blender**. You will complete most of these steps in Blender, only the import/export happen in Wolvenkit.
+Now, we will export all `.morphtarget` files from Wolvenkit so that we can edit them **in Blender**.&#x20;
+
+{% hint style="success" %}
+You will complete most of these steps in Blender, only the import/export happen in Wolvenkit.
+{% endhint %}
+
+{% hint style="info" %}
+If you run into any **errors**, check [#step-5-optional-troubleshooting](npv-preparing-the-head-in-blender.md#step-5-optional-troubleshooting "mention")
+{% endhint %}
 
 1.  Find the Export Tool (Tools -> Export)
 
@@ -157,12 +165,9 @@ Now, we will export all .morphtarget files from Wolvenkit so that we can edit th
 
 
     <figure><img src="../../../../.gitbook/assets/npv_export_files.png" alt=""><figcaption><p>Export all your morphtargets. Mesh files will be auto-generated for you.</p></figcaption></figure>
-
-
-
 2. Switch to your project's `raw` folder or Wolvenkit's `raw` perspective. You will find the entire file structure mirrored there.
 3. In `head` folder, find the file `head_import.blend`. \
-   This file is a utility file which will automatically import and export the files for you. For that reason, it needs to be in a certain relative path.
+   This file is a **utility file** which will automatically import and export the files for you. For that reason, it needs to be in a certain relative path.
 
 {% hint style="info" %}
 If you have already changed your structure (by re-naming your folders), you need to make sure that `head_import.blend` is in the folder `head` right next to the folder `morphtargets.`
@@ -172,7 +177,7 @@ If you have already changed your structure (by re-naming your folders), you need
 
 <figure><img src="../../../../.gitbook/assets/npv_blender_00_import.png" alt=""><figcaption><p>Looks scary, but you don't have to do anything here!</p></figcaption></figure>
 
-5. Press the play button.
+5. Press the **play ▶️▶**button.
 6. The script will now import a bunch of armatures from the `morphtargets` folder. You will see them showing up in the topright corner (see the next screenshot under 7. for how it should look)
 7. Switch to the next script in the file, but **don't run it yet**:
 

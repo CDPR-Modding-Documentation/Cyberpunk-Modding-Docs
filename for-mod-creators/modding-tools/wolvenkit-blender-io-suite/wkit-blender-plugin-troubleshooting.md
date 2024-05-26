@@ -7,9 +7,13 @@ description: If it's not working as expected
 #### Summary
 
 **Published:** Jan 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jan 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Apr 19 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page contains troubleshooting options for the [.](./ "mention"). If you can't solve your problem with these steps, feel free to reach out on [Discord](http://discord.gg/redmodding) in the `#blender-add-on` channelhi
+This page contains troubleshooting options for the [.](./ "mention").&#x20;
+
+If the plugin gives you error messages on export, please check [wkit-blender-plugin-error-messages.md](wkit-blender-plugin-error-messages.md "mention") instead.
+
+If you can't solve your problem with these steps, feel free to reach out on [Discord](http://discord.gg/redmodding) in the `#blender-add-on` channel.
 
 {% hint style="warning" %}
 The first thing people on Discord will tell you is to read this page, so you might as well get it out of the way.
@@ -21,9 +25,13 @@ Blender errors will show up in the system console window (View -> Toggle System 
 
 ## General Troubleshooting
 
+### 0. Steam
+
+If you installed Blender via Steam, stay on the **stable stream** and make sure to keep Blender up-to-date.
+
 ### 1. Make sure that you are on the correct Blender version
 
-The plugin requires **at least** 3.6, if not 4.
+As of [1.5.5.1](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/1.5.5.1), the plugin **supports 4.1.0** and requires **>= 4.0.2.** This information might be outdated by the time you read it.
 
 You can see the exact Blender version in the lower right corner of the program:
 
@@ -50,7 +58,7 @@ You need to restart Blender after updating the plugin!
 See if Blender encountered any errors by checking the **console output**. From the menu, select `View` -> `Toggle System Console`.
 
 {% hint style="success" %}
-Our technical experts will want to see this.
+Our technical experts will want to see this. If you can't make sense of it via Google or ChatGPT, hit up the `#blender-add-on` channel on [Discord](http://discord.gg/redmodding).
 {% endhint %}
 
 ## Failed to import materials
@@ -62,6 +70,8 @@ Please complete the steps in [#general-troubleshooting](wkit-blender-plugin-trou
 ### Make sure that your Wolvenkit is up-to-date
 
 You need the [latest stable release](https://github.com/WolvenKit/Wolvenkit/releases) ([install guide](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download#downloading-wolvenkit)).
+
+If that doesn't help, you can also give the [Nightly version](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) a try.
 
 {% hint style="success" %}
 After updating Wolvenkit, make sure to re-export your .mesh with materials!
@@ -81,4 +91,3 @@ If you aren't sure how old your depot is or if you have one at all, it might be 
 {% hint style="success" %}
 After regenerating your depot, make sure to re-export your .mesh with materials!
 {% endhint %}
-

@@ -7,7 +7,7 @@ description: Step-by-step guide on refitting a mesh - for newbies!
 This page is a subsection of the [Netrunning Suit guide](./). It will teach you how to do custom refits in Blender.
 
 {% hint style="success" %}
-If you're totally new and totally lost in Blender, you can read [blender-getting-started.md](../../../3d-modelling/blender-getting-started.md "mention"). This is not necessary for the purpose of this guide!
+If you're totally new and totally lost in Blender, you can read [blender-getting-started](../../../3d-modelling/blender-getting-started/ "mention"). This is not necessary for the purpose of this guide!
 {% endhint %}
 
 #### **Assumed level of skill**:&#x20;

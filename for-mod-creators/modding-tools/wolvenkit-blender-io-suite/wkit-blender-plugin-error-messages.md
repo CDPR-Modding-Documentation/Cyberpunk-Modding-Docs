@@ -70,7 +70,7 @@ Triangulation means that faces must have exactly three corners.
 
 ## Vertex groups not assigned to a bone
 
-You have vertex groups in your mesh that don't have a corresponding bone in the armature. [Run the following Python script](wkit-blender-plugin-troubleshooting/blender-running-python-scripts.md) to delete them:
+You have vertex groups in your mesh that don't have a corresponding bone in the armature. [Run the following Python script](../../3d-modelling/blender-getting-started/blender-running-python-scripts.md) to delete them:
 
 {% embed url="https://github.com/manavortex/cyberpunk2077/blob/master/python/armature_cleanup/remove_invalid_vertex_groups.py" %}
 

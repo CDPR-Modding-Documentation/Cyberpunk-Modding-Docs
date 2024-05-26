@@ -117,4 +117,4 @@ You can make materials display as wireframes of their geometry by changing the f
 Please do not overwrite original .mt files, as this will effect everything in the entire game. Always create your own local copy!
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/materials_shaders_wireframe.png" alt=""><figcaption></figcaption></figure>
