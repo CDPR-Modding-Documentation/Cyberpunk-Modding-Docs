@@ -57,7 +57,8 @@ This section aims to give you a quick overview. If your exact problem isn't list
 * [Your eyes are black](./#v-has-black-eyes)
 * [You installed a mod, but it's not doing anything](./#mod-s-arent-loading-triggering)&#x20;
 * A mod is causing problems, and you have no idea which:
-  * &#x20;[Known problem children](./#finding-the-broken-mod-known-problem-children)
+  * [Known problem children](./#finding-the-broken-mod-known-problem-children)
+  * [Well-known outdated mods](./#well-known-outdated-mods)
   * Searching: [Bisect](./#finding-the-broken-mod-bisecting)
   * Searching: [Log files](finding-and-reading-log-files.md)
 * [Something with files or ACCESS\_VIOLATION](./#something-something-files)
@@ -430,10 +431,6 @@ Some mods go far beyond the ordinary, adding whole new features to the game (why
 Being on this list does not mean that a mod is "bad" or that you shouldn't use it – they break much for the same reason as the frameworks do, and are fixed in the same way (the modder has to update). Until that happens, you will have to **disable** them.
 {% endhint %}
 
-#### [Let There Be Flight](https://www.nexusmods.com/cyberpunk2077/mods/5208) &#x20;
-
-Adds flying cars to Cyberpunk. While this is awesome, it will **absolutely** break whenever CDPR changes anything, and requires updating.
-
 #### [In-World Navigation](https://www.nexusmods.com/cyberpunk2077/mods/4583)
 
 Displays in-world holographic arrows that direct you towards your quest objectives. Is very likely to break upon patches.
@@ -446,13 +443,38 @@ Adds car chases and a bunch of related features. While CP2077 needs more car cha
 
 Adds mod settings to the in-game menu – Redscript version. This needs to be updated after **every** game patch.
 
-#### [CTD Helper](https://www.nexusmods.com/cyberpunk2077/mods/5205)&#x20;
-
-Replaces the default crash logs with actual usable logs instead. This needs to be updated after **every** game patch.
-
 #### [Native Settings UI](https://www.nexusmods.com/cyberpunk2077/mods/3518)
 
 Adds mod settings to the in-game menu – CET version. The mod itself will be fine, but it's dependent on [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107) being up-to-date.
+
+### Well-known outdated mods
+
+The below mods will no longer work on versions beyond 2.0/2.1 and in some cases can completely break your save. If you have any of these, _remove them_.
+
+[Let There Be Flight](https://www.nexusmods.com/cyberpunk2077/mods/5208) &#x20;
+
+Adds flying cars to Cyberpunk. While this is awesome, it will **absolutely** break whenever CDPR changes anything, and requires updating. It has been broken for a long time as of patch 2.02 and later and will not work.
+
+#### [CTD Helper](https://www.nexusmods.com/cyberpunk2077/mods/5205)&#x20;
+
+Replaces the default crash logs with actual usable logs instead. This needs to be updated after **every** game patch. It has been broken for a long time as of patch 2.02 and later and will not work.
+
+#### [Respector](https://www.nexusmods.com/cyberpunk2077/mods/1263)
+
+Effectively an in-game save editor that can give you a lot of items and even create a new game plus method. This mod has stopped working since 2.0 and while it will be updated in the future, in the mean time mods like [Simple Menu (CET)](https://www.nexusmods.com/cyberpunk2077/mods/818) and [Pseudo New Game Plus](https://www.nexusmods.com/cyberpunk2077/mods/5144) can be used.
+
+#### [NPCs Gone Wild](https://www.nexusmods.com/cyberpunk2077/mods/1436) (NSFW)
+
+Makes multiple NPCs nude. In all versions since 2.0, this causes missing characters, missing body parts, exploding limbs, and other issues. Do not use the mod, there is a [Naked NPCs collection ](https://next.nexusmods.com/cyberpunk2077/collections/sao1yq)by modder marnhorn that does the same thing and will work on current game versions.
+
+#### <mark style="color:blue;">**Phone Messages Overhaul**</mark>** (PMO) and **<mark style="color:blue;">**8ug8ear Romance**</mark>** (standalone)**
+
+These mods change the game journal that controls all quests to add more romance options. This method only works on the patch it's made for and therefore they will not work on version 2.1 and later.\
+Other mods that do the same thing, but in a compatible way, are [Panam Romance Enhanced](https://www.nexusmods.com/cyberpunk2077/mods/4626) and Judy Romance Enhanced, which use ArchiveXL (the safe method).
+
+#### [Biosculpted Exotics](https://www.nexusmods.com/cyberpunk2077/mods/9797)
+
+This mod adds furry, animal-like NPCs to the game and optionally replaces main characters. While lore accurate to a point, the mod is made in the same way as PMO and therefore breaks quests in 2.1 and later.
 
 ### spawn0
 
