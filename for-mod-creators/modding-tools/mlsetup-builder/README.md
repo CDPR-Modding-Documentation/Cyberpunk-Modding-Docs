@@ -51,6 +51,10 @@ We will now launch MLSB and do the initial setup.
 3. Start `MlsetupBuilder.exe`
 4. **Optional:** You can pin that file to your start menu or create a shortcut if you want to launch MLSB directly.
 
+{% hint style="warning" %}
+For MLSetupBuilder&#x20;
+{% endhint %}
+
 ## Usage
 
 {% hint style="info" %}
@@ -164,12 +168,17 @@ Material Composer will also display all the material parameters that comes with 
 
 We're assuming that you have already configured Wolvenkit. If you haven't, please [do so now](https://wiki.redmodding.org/wolvenkit/modding-community/eli5-getting-started/configure-modding-tools#steps).
 
-1. In Wolvenkit, extract a [partial depot](https://wiki.redmodding.org/wolvenkit/guides/modding-community/eli5-getting-started/create-depot#steps-partial-depot) (**Generate Materials)**. \
-   Note that this window shows you the Depot Path for Step 5.
-2. While it is doing that (it may take a few minutes), download [WolvenKit Console ](https://github.com/WolvenKit/WolvenKit/releases)and extract it to a folder of your choice.
-3. Now, switch to MLSetupBuilder.
-4. Select "File -> Preferences"
-5. Apply the following settings:
+#### Requirements: Getting the CLI
+
+In MLSetupBuilder **1.6.7**, select the menu Help -> download Wolvenkit.CLI and extract the linked version:
+
+<figure><img src="../../../.gitbook/assets/image (311).png" alt=""><figcaption><p>MLSB 1.7</p></figcaption></figure>
+
+In MLSB >= 1.6.8, download the most recent version of [WolvenKit Console ](https://github.com/WolvenKit/WolvenKit/releases)and extract it to a folder of your choice.
+
+1. Now, switch to MLSetupBuilder.
+2. Select "File -> Preferences"
+3. Apply the following settings:
 
 
 
@@ -222,6 +231,10 @@ That's it, you're done now and can use the [3d viewport](./#about-that-3d-viewpo
 Close MLSB, then open `%APPDATA%\Mlsetupbuilder\config.json` in a text editor and decrement the version by one (e.g. `1.6.8` => `1.6.7`). This will force MLSB to re-check its settings.
 
 Alternatively, you can also delete the file and reconfigure.
+
+### Generating microblends: \[ 0: Error ] - Please fill in an output path
+
+For MLSB <= 1.6.7, you have to use the exact CLI version you find under `Help` -> `Download Wolvenkit.CLI`
 
 ### Help, my Layer Config List says `object Object`
 
