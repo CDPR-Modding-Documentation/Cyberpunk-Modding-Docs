@@ -16,9 +16,20 @@ You should generally wait with updating to the latest game version until all mod
 
 ## Preventing the game from auto-updating
 
-### GOG
+### GOG Galaxy
 
-In GOG, this is a global setting — you can only disable auto-update for all of your games.
+In GOG Galaxy, this can be done as a global setting — you disable auto-update for all of your games — or as a per-game option for some games like Cyberpunk 2077.
+
+#### Only disable updates for CP2077
+
+Open the GOG Galaxy page for Cyberpunk 2077 and click the <img src="../../.gitbook/assets/image.png" alt="manage icon" data-size="line">manage icon next to the big play button, then `Manage installation` and `Configure...`\
+Disable the `Automatically update to the newest version` checkbox. Optionally, select the game patch you want to play on here.\
+\
+
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+#### Globally disable updates
 
 Open the settings and select the entry `Game features` in the sidebar, then uncheck the box for `Auto-update games`.
 
