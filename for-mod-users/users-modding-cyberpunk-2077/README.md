@@ -10,8 +10,8 @@ description: Modding your game, for users
 
 ## Summary
 
-**Published:** ?? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** April 27 2024, by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** Jun 15, 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** May 29 2024, by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will teach you how to **install mods manually.**&#x20;
 
@@ -47,7 +47,7 @@ To see an [#overview-of-mod-folders](./#overview-of-mod-folders "mention"), scro
 
 ## How do I mod?
 
-You mod **Cyberpunk 2077** by adding files to your [**game directory**](the-cyberpunk-2077-game-directory.md). The game natively supports modding, and the core mods will&#x20;
+You mod **Cyberpunk 2077** by adding files to your [**game directory**](the-cyberpunk-2077-game-directory.md). The game natively supports modding, and the core mods will take care of everything else.
 
 {% hint style="success" %}
 The **game directory** is the toplevel folder of your game install.&#x20;
@@ -85,7 +85,7 @@ Some requirements have requirements of their own. Make sure to check.
 
 <figure><img src="../../.gitbook/assets/mod-requirements.png" alt=""><figcaption></figcaption></figure>
 
-Although Cyberpunk natively supports modding, this out-of-the-box support is limited in what it lets modders do. To allow greater freedom, a number of **frameworks** have been created to allow e.g. adding items, influencing the weather, or add flying cars.
+Although Cyberpunk natively supports modding, this out-of-the-box support is limited. To allow greater freedom, a number of **core mods** have been created to allow e.g. adding items, influencing the weather, or add flying cars.
 
 {% hint style="warning" %}
 Since this kind of mod interacts with the game's executable (`.exe`), they will break every time CDPR updates. This is the reason why game updates break mods — we recommend to [**turn off auto-update**](users-downgrading-preventing-auto-updates.md) and manually upgrading once the frameworks you need have been brought up-to-date. To learn more about this, check [core-mods-explained](../../for-mod-creators/core-mods-explained/ "mention").
@@ -94,14 +94,14 @@ Since this kind of mod interacts with the game's executable (`.exe`), they will 
 ### Overview of mod folders
 
 {% hint style="info" %}
-TL;DR: you can ignore this unless you want to understand how things work.
+TL;DR: you can ignore this unless you want to understand how things work, or want to install mods manually.
 {% endhint %}
 
 This list is supposed to give you an overview of which files go where. It is **not** a bucket list of things you have to install.
 
 To learn more about the individual frameworks, check [core-mods-explained](../../for-mod-creators/core-mods-explained/ "mention")
 
-<table><thead><tr><th width="256">Directory</th><th>explanation</th></tr></thead><tbody><tr><td>\<code>mods</code></td><td><a data-mention href="redmod/">redmod</a> directory: contains .archive mods (in subfolders)</td></tr><tr><td>\<code>archive\pc\mod</code></td><td>Default mod directory: contains .archive mods and .xl files in <code>legacy</code> (non-REDmod) format. Most of your mods should be here.</td></tr><tr><td>\<code>bin\x64\plugins</code></td><td>Plugins like Cyber Engine Tweaks</td></tr><tr><td><code>\r6\scripts</code></td><td>Redscript mods (<strong>not</strong> the same as REDmod)</td></tr><tr><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr><tr><td>\<code>archive\pc\patch</code></td><td>Mod directory from before 1.3. Use <code>\archive\pc\mod</code> instead.</td></tr></tbody></table>
+<table><thead><tr><th width="256">Directory</th><th>explanation</th></tr></thead><tbody><tr><td>\<code>mods</code></td><td><a data-mention href="redmod/">redmod</a> directory: contains .archive mods (in subfolders). <br>Contains only a .stub file if empty.</td></tr><tr><td>\<code>archive\pc\mod</code></td><td>Default mod directory: contains .archive mods and .xl files in <code>legacy</code> (non-REDmod) format. Most of your mods should be here.</td></tr><tr><td>\<code>bin\x64\plugins</code></td><td>Plugins like <a href="https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/"><strong>Cyber Engine Tweaks</strong></a> and RadioExt</td></tr><tr><td><code>\r6\scripts</code></td><td>Redscript mods (<strong>not</strong> the same as REDmod)</td></tr><tr><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr><tr><td>\<code>archive\pc\patch</code></td><td>Mod directory from before 1.3. Use <code>\archive\pc\mod</code> instead.</td></tr></tbody></table>
 
 ```markup
 - archive
@@ -112,12 +112,18 @@ To learn more about the individual frameworks, check [core-mods-explained](../..
     - plugins      << Cyber Engine Tweaks goes here
 - mods             << REDmods go here
 - r6               << redscript folder
+  - scripts        << redscript mods (not the same as REDmod)
+  - tweaks         << RED4ext tweaks (TweakXL / ArchiveXL)
 - tools            << REDmod DLC lives here — only needed for making mods.
 ```
 
 ## Installing and activating REDmod
 
 If REDmod is not installed and activated, your mods in `/mods` will not load.&#x20;
+
+{% hint style="info" %}
+REDmod never took off and most people stick to the legacy format. If your `/mods` folder is empty, you don't need this. For more information, see [#whats-the-difference](./#whats-the-difference "mention") below.
+{% endhint %}
 
 Loading a mod as REDmod means that Cyberpunk will precompile it to optimize load times — integrating it into the game's other files by adding it to the files under `r6/cache`.&#x20;
 
@@ -159,14 +165,14 @@ If in doubt, install the non-REDmod (`"legacy"`) format. To learn why, check [#w
 
 &#x20;Here is how you can tell the two apart:
 
-| REDmod                                                                                                                    | Vanilla mod (packed correctly)                                                                                                                                                                                  |
-| ------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p></p><p><img src="../../.gitbook/assets/installing-redmod-preview.png" alt="" data-size="original"></p>                 | <p></p><p><img src="../../.gitbook/assets/installing-gift-wrapping.png" alt="" data-size="original"></p>                                                                                                        |
-| is in a folder named after the mod                                                                                        | might be inside an extra folder                                                                                                                                                                                 |
-| has an `info.json`                                                                                                        | does **not** have an `info.json`                                                                                                                                                                                |
-| has a subfolder `archives` or `tweaks` at the top level                                                                   | <p>contains any of the folders<br>- <code>archive</code><br>- <code>bin</code><br>- <code>r6</code><br>with files nested under them</p>                                                                         |
-| Is packed with one level of nesting (`info.json` is in top level folder)                                                  | Has multiple levels of nesting                                                                                                                                                                                  |
-| <p><strong>Manual install instructions:</strong> <br>Extract the folder ModName into <code>Cyberpunk 2077/mods</code></p> | <p><strong>Manual install instructions:</strong> <br>Merge the folders <code>archive</code>, <code>bin</code>, <code>r6</code> into the folders with the same names directly in <code>Cyberpunk 2077</code></p> |
+| REDmod                                                                                                                    | Vanilla mod (packed correctly)                                                                                                                                                                                                                                                                                               |
+| ------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p></p><p><img src="../../.gitbook/assets/installing-redmod-preview.png" alt="" data-size="original"></p>                 | <p></p><p><img src="../../.gitbook/assets/installing-gift-wrapping.png" alt="" data-size="original"></p>                                                                                                                                                                                                                     |
+| is in a folder named after the mod                                                                                        | might be inside an extra folder                                                                                                                                                                                                                                                                                              |
+| has an `info.json`                                                                                                        | does **not** have an `info.json`                                                                                                                                                                                                                                                                                             |
+| has a subfolder `archives` or `tweaks` at the top level                                                                   | <p>contains any of the folders<br>- <code>archive</code><br>- <code>bin</code><br>- <code>r6</code><br>with files nested under them</p>                                                                                                                                                                                      |
+| Is packed with one level of nesting (`info.json` is in top level folder)                                                  | Has multiple levels of nesting                                                                                                                                                                                                                                                                                               |
+| <p><strong>Manual install instructions:</strong> <br>Extract the folder ModName into <code>Cyberpunk 2077/mods</code></p> | <p><strong>Manual install instructions:</strong> <br><strong>T</strong>he folders <code>archive</code>, <code>bin</code>, <code>r6</code> from the download must merge with the same folders in your <a href="the-cyberpunk-2077-game-directory.md">game directory</a> (do <strong>not</strong> put the bin in the bin).</p> |
 
 #### What's the difference?
 
@@ -204,7 +210,7 @@ To find out how to install, you have to read the **mod's install instructions**.
 
 #### Mod folders by file extension
 
-As a rule of thumb, here's which files go where:
+As a rule of thumb, here's which files go where (unless the mod's instructions tell you otherwise):
 
 <table><thead><tr><th width="200"></th><th></th></tr></thead><tbody><tr><td>.<code>archive</code> </td><td><code>/archive/pc/mod/</code></td></tr><tr><td><code>.xl</code><br><code>.archive.xl</code></td><td><code>/archive/pc/mod/</code></td></tr><tr><td><code>.reds</code></td><td><code>/r6/scripts/</code></td></tr><tr><td><code>.tweak</code><br><code>.yaml</code></td><td><code>/r6/tweaks/</code></td></tr><tr><td><code>.lua</code></td><td>a subfolder of <code>/bin/x64/plugins/cyber_engine_tweaks/</code></td></tr><tr><td><code>.ini</code></td><td><code>engine/config/platform/pc</code></td></tr></tbody></table>
 
