@@ -18,6 +18,10 @@ This guide is part of the guide for creating an [.](./ "mention"). It will teach
 You can find the original instructions in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125) under **Creating an NPC+/NPV Replacer** inside the spoiler tags.
 {% endhint %}
 
+{% hint style="warning" %}
+If you experience floating clothes, try **switching appearances**. Often, that resolves the issue. If not, you can check [appearances-change-the-looks.md](../appearances-change-the-looks.md "mention") for how to copy the correct components.
+{% endhint %}
+
 ## Compatibility: NPV < 2.0.0
 
 For NPV projects >= v2.0.0 (30. October 2023), you can skip to [#the-photo-mode-.app-file](npv-amm-nibbles-replacer.md#the-photo-mode-.app-file "mention").
