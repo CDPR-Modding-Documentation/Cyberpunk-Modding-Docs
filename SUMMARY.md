@@ -73,6 +73,7 @@
     * [Cheat Sheet: Hair](for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md)
     * [Cheat Sheet: Facial Expressions](for-mod-creators/references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md)
   * [Cheat Sheet: Body](for-mod-creators/references-lists-and-overviews/cheat-sheet-body.md)
+  * [Cheat Sheet: Arms](for-mod-creators/references-lists-and-overviews/cheat-sheet-arms.md)
   * [Cheat sheet: Rigs and animations](for-mod-creators/references-lists-and-overviews/cheat-sheet-rigs-and-animations.md)
   * [Cheat Sheet: Photo Mode](for-mod-creators/references-lists-and-overviews/cheat-sheet-photo-mode.md)
   * [Cheat sheet: Materials](for-mod-creators/references-lists-and-overviews/cheat-sheet-materials.md)

@@ -1,0 +1,224 @@
+---
+description: Arms are why we can't have nice things.
+---
+
+# Cheat Sheet: Arms
+
+The player base body does not come with arms attached — this made it easier for the developers to switch out the different kinds of cyber arms. It makes everything harder for you.
+
+## Default Arms
+
+You can look up the component names and their properties in the .ent files per body gender in these folders (the file names will start with `a0_`).
+
+### Female
+
+{% hint style="info" %}
+Female arms are using different meshes for the first person perspective. You will find this is a common theme.
+{% endhint %}
+
+| Type         | Folder or .ent files                                                                                                                                         | Component names                                                                   |
+| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
+| First Person | `base\characters\common\player_base_bodies\player_female_average\fpp`                                                                                        | <pre><code>left_arm    
+right_arm  
+</code></pre>                                 |
+| Third Person | <p><code>base\characters\common\player_base_bodies\player_female_average\arms_hq</code><br><br><code>arms_full</code> is only used by character creator!</p> | <pre><code>a0_001_pwa_base_hq__full  
+a0_001_pwa_base_hq__full8640 
+</code></pre> |
+
+### Male
+
+| Folder or .ent files                                                                                                                                         | Component names                                                                        |
+| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
+| <p><code>base\characters\common\player_base_bodies\player_man_average\arms_hq</code></p><p><br><code>arms_full</code> is only used by character creator!</p> | <pre><code>a0_000_ma_base__full_ag_hq1491
+a0_000_ma_base__full_ag_hq6168
+</code></pre> |
+
+## Cyber Arms
+
+{% hint style="info" %}
+Cyber arms are complex, with active and inactive states, and in the case of the female body, separate entities and meshes for the inactive state in First and Third Person Perspectives.&#x20;
+
+They also have separate Rigs and Animations, which are not included here to avoid complete information overload.
+
+To add insult to injury, if you dig into the actual meshes in use, you will find some cases of `wa` meshes being used by `ma` components and vice versa. But there's a [mod](https://www.nexusmods.com/cyberpunk2077/mods/4393) for that.
+{% endhint %}
+
+## Monowire Arms
+
+### Female
+
+Note that the same component name is used for all arm states, even when declared in different .ent files.
+
+<table><thead><tr><th width="155.33333333333331">Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Active</td><td><code>base\characters\cyberware\player\a0_002__monowire_whip\entities\a0_002_wa__monowire_whip.ent</code></td><td><pre><code><strong>a0_002_wa__monowire_whip_l_cableless
+</strong>a0_002_wa__monowire_whip_r_cableless
+</code></pre></td></tr><tr><td>Inactive FPP</td><td><code>base\characters\cyberware\player\a0_002_wa__monowire_whip_holstered.ent</code></td><td><pre><code><strong>a0_002_wa__monowire_whip_l_cableless
+</strong>a0_002_wa__monowire_whip_r_cableless
+</code></pre></td></tr><tr><td>Inactive TPP</td><td><code>base\characters\cyberware\player\a0_002_wa__monowire_whip_tpp.ent</code></td><td><pre><code><strong>a0_002_wa__monowire_whip_l_cableless
+</strong>a0_002_wa__monowire_whip_r_cableless
+</code></pre></td></tr></tbody></table>
+
+### Male
+
+Note that it is _not_ a typo on this page that the inactive component names use `wa` instead of `ma`. That's just how it is.
+
+<table><thead><tr><th width="155.33333333333331">Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Active</td><td><code>base\characters\cyberware\player\a0_002__monowire_whip\entities\a0_002_ma__monowire_whip.ent</code></td><td><pre><code>a0_002_ma__monowire_whip_l_cableless
+a0_002_ma__monowire_whip_r_cableless
+</code></pre></td></tr><tr><td>Inactive</td><td><code>base\characters\cyberware\player\a0_002_ma__monowire_whip_holstered.ent</code></td><td><pre><code><strong>a0_002_wa__monowire_whip_l_cableless
+</strong>a0_002_wa__monowire_whip_r_cableless
+</code></pre></td></tr></tbody></table>
+
+## Mantis Blade Arms
+
+This is the first cyberarm type where we see the arm split across multiple .ent files.
+
+### Female
+
+<table><thead><tr><th width="155.33333333333331">Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Active</td><td><pre><code>base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_wa__mantisblades_cyber.ent
+base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_wa__mantisblades.ent
+base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_wa__mantisblades_edge.ent
+base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_wa__mantisblades_nails.ent
+</code></pre></td><td><pre><code>a0_003_wa__mantisblade_left
+a0_003_wa__mantisblade_upperarm_left
+a0_003_wa__mantisblade_left_blade
+a0_003_wa__mantisblade_left_mechanisms
+a0_003_wa__mantisblade_left_mechanisms6263
+a0_003_wa__mantisblade_nails_l
+a0_003_wa__mantisblade_right
+a0_003_wa__mantisblade_upperarm_right
+a0_003_wa__mantisblade_right_mechanisms
+a0_003_wa__mantisblade_right_mechanisms2035
+a0_003_wa__mantisblade_right_blade
+a0_003_wa__mantisblade_nails_r
+</code></pre></td></tr><tr><td>Inactive FPP</td><td><code>base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_wa__mantisblade_holstered.ent</code></td><td><pre><code>a0_003_wa__mantisblade_holstered_left
+a0_003_wa__mantisblade_holstered_upperarm_left
+a0_003_wa__mantisblade_holstered_right
+a0_003_wa__mantisblade_holstered_upperarm_right
+</code></pre></td></tr><tr><td>Inactive TPP</td><td><code>base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_wa__mantisblade_photomode.ent</code></td><td><pre><code>a0_003_wa__mantisblade_photomode_left2804
+a0_003_wa__mantisblade_photomode_upperarm_left
+a0_003_wa__mantisblade_photomode_right
+a0_003_wa__mantisblade_photomode_upperarm_right
+</code></pre></td></tr></tbody></table>
+
+### Male
+
+<table><thead><tr><th width="155.33333333333331">Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Active</td><td><pre><code>base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_ma__mantisblades_cyber.ent
+base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_ma__mantisblades.ent
+base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_ma__mantisblades_edge.ent
+base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_ma__mantisblades_nails.ent
+</code></pre></td><td><pre><code>a0_003_ma__mantisblade_left
+a0_003_ma__mantisblade_upperarm_left
+a0_003_ma__mantisblade_left_blade
+a0_003_ma__mantisblade_left_mechanisms
+a0_003_ma__mantisblade_nails_l
+a0_003_ma__mantisblade_right
+a0_003_ma__mantisblade_upperarm_right
+a0_003_ma__mantisblade_right_blade
+a0_003_ma__mantisblade_right_mechanisms
+a0_003_ma__mantisblade_nails_r
+</code></pre></td></tr><tr><td>Inactive</td><td><code>base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_ma__mantisblade_holstered.ent</code></td><td><pre><code>a0_003_ma__mantisblade_holstered_left6562
+a0_003_ma__mantisblade_holstered_upperarm_left
+a0_003_ma__mantisblade_holstered_right
+a0_003_ma__mantisblade_holstered_upperarm_right
+</code></pre></td></tr></tbody></table>
+
+## Gorilla Arms
+
+### Female
+
+<table><thead><tr><th width="155.33333333333331">Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Active</td><td><pre><code>base\characters\cyberware\player\a0_005__strongarms\a0_005_wa__strongarms.ent
+base\characters\cyberware\player\a0_005__strongarms\entities\a0_005_ma__strongarms_knuckles.ent
+base\characters\cyberware\player\a0_005__strongarms\a0_005_wa__strongarms_cyber.ent
+</code></pre></td><td><pre><code>a0_005_wa__strongarms_l
+a0_005_wa__strongarms_int_l
+a0_005_wa__strongarms_cyberware_l
+a0_005_wa__strongarms_r
+a0_005_wa__strongarms_int_r
+a0_005_wa__strongarms_cyberware_r
+</code></pre></td></tr><tr><td>Inactive FPP</td><td><code>base\characters\cyberware\player\a0_005_wa__strongarms_holstered.ent</code></td><td><pre><code>a0_005_wa__strongarms_holstered_l
+a0_005_wa__strongarms_holstered_cyberware_l
+a0_005_wa__strongarms_holstered_r
+a0_005_wa__strongarms_holstered_cyberware_r
+</code></pre></td></tr><tr><td>Inactive TPP</td><td><code>base\characters\cyberware\player\a0_005_wa__strongarms_photo_mode.ent</code></td><td><pre><code>a0_005_wa__strongarms_photo_mode_l
+a0_005_wa__strongarms_photo_mode_cyberware_l
+a0_005_wa__strongarms_photo_mode_r
+a0_005_wa__strongarms_photo_mode_cyberware_r
+</code></pre></td></tr></tbody></table>
+
+### Male
+
+<table><thead><tr><th width="155.33333333333331">Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Active</td><td><pre><code>base\characters\cyberware\player\a0_005__strongarms\a0_005_ma__strongarms.ent
+base\characters\cyberware\player\a0_005__strongarms\entities\a0_005_ma__strongarms_knuckles.ent
+base\characters\cyberware\player\a0_005__strongarms\a0_005_ma__strongarms_cyber.ent
+</code></pre></td><td><pre><code>a0_005_ma__strongarms_l
+a0_005_ma__strongarms_int_l
+a0_005_ma__strongarms_cyberware_l
+a0_005_ma__strongarms_r
+a0_005_ma__strongarms_int_r
+a0_005_ma__strongarms_cyberware_r
+</code></pre></td></tr><tr><td>Inactive</td><td><code>base\characters\cyberware\player\a0_005_ma__strongarms_holstered.ent</code></td><td><pre><code>a0_005_ma__strongarms_holstered_l
+a0_005_ma__strongarms_holstered_cyberware_l
+a0_005_ma__strongarms_holstered_r
+a0_005_ma__strongarms_holstered_cyberware_r
+</code></pre></td></tr></tbody></table>
+
+## Launcher Arms
+
+The Launcher is asymmetric and only present in the left arm. The right arm component just re-uses the default mesh.
+
+### Female
+
+<table><thead><tr><th width="155.33333333333331">Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Active</td><td><pre><code>base\characters\cyberware\player\a0_006__launcher\entities\a0_006_wa__launcher.ent
+base\characters\cyberware\player\a0_006__launcher\entities\a0_006_wa__launcher_nails.ent
+base\characters\cyberware\player\a0_006__launcher\entities\a0_006_wa__launcher_mechanisms.ent
+base\characters\cyberware\player\a0_006__launcher\entities\a0_006_wa__launcher_cyber.ent
+base\characters\cyberware\player\a0_006__launcher\entities\a0_006_wa__launcher_ammo_fire.ent
+base\characters\cyberware\player\a0_006__launcher\entities\a0_006_wa__launcher_fragment_fire.ent
+</code></pre></td><td><pre><code>a0_006_wa__launcher_upperarm
+a0_006_wa__launcher_shells8722
+a0_006_wa__launcher_mechanisms
+a0_006_wa__launcher_muscles
+a0_006_wa__launcher_nails_l
+a0_006_wa__launcher_fragment_fire6227
+a0_006_wa__launcher_ammo_fire2326
+a0_006_wa__launcher_holstered_right
+a0_006_wa__launcher_nails_r
+</code></pre></td></tr><tr><td>Inactive FPP</td><td><code>base\characters\cyberware\player\a0_006__launcher\entities\a0_006_wa__launcher_holstered.ent</code></td><td><pre><code>a0_006_wa__launcher_holstered4156
+a0_006_wa__launcher_holstered_upperarm
+a0_006_wa__launcher_holstered_right
+</code></pre></td></tr><tr><td>Inactive TPP</td><td><code>base\characters\cyberware\player\a0_006__launcher\entities\a0_006_wa__launcher_holstered_photo_mode.ent</code></td><td><pre><code>a0_006_wa__launcher_holstered_photo_mode8630
+a0_006_wa__launcher_upperarm_photo_mode
+a0_006_wa__launcher_holstered_photo_mode_right
+</code></pre></td></tr></tbody></table>
+
+### Male
+
+<table><thead><tr><th width="155.33333333333331">Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Active</td><td><pre><code>base\characters\cyberware\player\a0_006__launcher\entities\a0_006_ma__launcher.ent
+base\characters\cyberware\player\a0_006__launcher\entities\a0_006_ma__launcher_nails.ent
+base\characters\cyberware\player\a0_006__launcher\entities\a0_006_ma__launcher_mechanisms.ent
+base\characters\cyberware\player\a0_006__launcher\entities\a0_006_ma__launcher_cyber.ent
+base\characters\cyberware\player\a0_006__launcher\entities\a0_006_ma__launcher_ammo.ent
+base\characters\cyberware\player\a0_006__launcher\entities\a0_006_ma__launcher_fragment.ent
+</code></pre></td><td><pre><code>a0_006_ma__launcher_upperarm
+a0_006_ma__launcher_shells1525
+a0_006_ma__launcher_mechanisms
+a0_006_ma__launcher_muscles
+a0_006_ma__launcher_nails_l
+a0_006_ma__launcher_fragment_fire4806
+a0_006_ma__launcher_ammo_fire2714
+a0_006_ma__launcher_upperarm_right
+a0_006_ma__launcher_nails_r
+</code></pre></td></tr><tr><td>Inactive</td><td><code>base\characters\cyberware\player\a0_006__launcher\entities\a0_006_ma__launcher_holstered.ent</code></td><td><pre><code>a0_006_ma__launcher_holstered1283
+a0_006_ma__launcher_holstered_upperarm
+a0_005_ma__strongarms_holstered_r
+</code></pre></td></tr></tbody></table>
+
+## Hiding Arms
+
+{% hint style="info" %}
+There's no easy way to hide arms except by getting rid of everything -  The ArchiveXL `hide_arms` tag actually hides everything with an `a0_` prefix. For more information, check [#archivexl-tags](../core-mods-explained/archivexl/archivexl-tags.md#archivexl-tags "mention")
+
+If you want to selectively hide arm meshes or sub-meshes you will need to become familiar with all the contents of this page, and the chances that you can do anything elegantly are slim.&#x20;
+
+Remember: Arms are why we can't have nice things.
+{% endhint %}
+

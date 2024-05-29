@@ -12,9 +12,11 @@ This page lists various properties of the player body. Use the Table of Contents
 
 You can find the list of skin tones, hair and facial expressions under [cheat-sheet-head](cheat-sheet-head/ "mention")
 
+The details on arms can be found under [cheat-sheet-arms.md](cheat-sheet-arms.md "mention")
+
 ### Wait, this isn't what I'm looking for!
 
-IWhen editing body mods, you need to edit both the mesh and the morphtarget.&#x20;
+When editing body mods, you need to edit both the mesh and the morphtarget.&#x20;
 
 There is no dedicated guide yet, but you can refer to [a-new-head-for-v.md](../modding-guides/npcs/a-new-head-for-v.md "mention").
 
@@ -68,50 +70,6 @@ All other properties are pulled from a [.mi file](../files-and-what-they-do/mate
 ### Body: material instances
 
 The names of the body's material instance files are identical to those used by the player head. Find them under [#head-material-instances](cheat-sheet-head/#head-material-instances "mention").
-
-## Arms
-
-The player base body does not come with arms attached — this makes it easier to switch out the different kinds of cyberarms.
-
-{% hint style="info" %}
-Arms are using different meshes for the first person perspective. You can usually find them near the regular meshes in a subfolder with the name `fpp`.
-
-There's no easy way to hide arms. For more information, check [#archivexl-tags](../core-mods-explained/archivexl/archivexl-tags.md#archivexl-tags "mention")
-{% endhint %}
-
-You can look up the component names and their properties in the .ent files per body gender in these folders (the file names will start with `a0_`):
-
-<table><thead><tr><th width="155.33333333333331"></th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>Default (female)</td><td><code>base\characters\common\player_base_bodies\player_female_average\arms_hq</code><br><br><code>arms_full</code> is only used by character creator!</td><td><pre><code><strong>a0_001_pwa_base_hq__full  
-</strong>a0_001_pwa_base_hq__full 
-left_arm    
-right_arm  
-a0_000_pwa_base__fists                                                         
-</code></pre></td></tr><tr><td>Default (male)</td><td><p><code>base\characters\common\player_base_bodies\player_man_average\arms_hq</code></p><p><br><code>arms_full</code> is only used by character creator!</p></td><td><pre><code><strong>a0_001_pma_base_hq__full  
-</strong>a0_001_pma_base_hq__full 
-left_arm    
-right_arm  
-a0_000_pma_base__fists  
-</code></pre></td></tr><tr><td>Mantis Blades (female)</td><td><code>base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_wa__mantisblades.ent</code></td><td><pre><code>a0_003_wa__mantisblade_upperarm_left
-a0_003_wa__mantisblade_upperarm_right
-</code></pre></td></tr><tr><td>Mantis Blades (male)</td><td><code>base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_ma__mantisblades.ent</code></td><td><pre><code>a0_003_ma__mantisblade_upperarm_left
-a0_003_ma__mantisblade_upperarm_right
-</code></pre></td></tr><tr><td>Gorilla Arms (female)</td><td><code>base\characters\cyberware\player\a0_005__strongarms\entities\a0_005_wa__strongarms.ent</code></td><td><pre><code>a0_005_wa__strongarms_holstered_r
-a0_005_wa__strongarms_holstered_l
-a0_005_wa__strongarms_l
-a0_005_wa__strongarms_r
-a0_005_wa__strongarms_photo_mode_r
-a0_005_wa__strongarms_photo_mode_l
-</code></pre></td></tr><tr><td>Gorilla Arms (male)</td><td><code>base\characters\cyberware\player\a0_005__strongarms\entities\a0_005_ma__strongarms.ent</code></td><td><pre><code>a0_005_ma__strongarms_holstered_r
-a0_005_ma__strongarms_holstered_l
-a0_005_ma__strongarms_l
-a0_005_ma__strongarms_r
-a0_005_ma__strongarms_photo_mode_r
-a0_005_ma__strongarms_photo_mode_l
-</code></pre></td></tr><tr><td>Rocket Launcher</td><td><code>base\characters\cyberware\player\a0_006__launcher</code></td><td></td></tr><tr><td>Monowire (female)</td><td><code>base\characters\cyberware\player\a0_002__monowire_whip\entities\a0_002_wa__monowire_whip.ent</code></td><td><pre><code>a0_002_wa__monowire_whip_l_cableless
-a0_002_wa__monowire_whip_r_cableless
-</code></pre></td></tr><tr><td>Monowire (male)</td><td><code>base\characters\cyberware\player\a0_002__monowire_whip\entities\a0_002_ma__monowire_whip.ent</code></td><td><pre><code>a0_002_ma__monowire_whip_l_cableless
-a0_002_ma__monowire_whip_r_cableless
-</code></pre></td></tr></tbody></table>
 
 ## Making Body mods
 
