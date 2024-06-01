@@ -47,8 +47,7 @@ This method of layering materials unfortunately drastically reduces the effect o
 5. In the µblends Parameters box, you can mess around with its size (`Tiles`, higher number means smaller texture—it gets tiled more often across the same surface area), opacity (`contrast`) and intensity (`normals`, can be higher than `1`).
    
    
-
-![image](.\mltemplate_to_n_xbm.png)
+<figure><img src="mltemplate_to_n_xbm.png" alt=""></figure>
 
 <figure><img src="Cyberpunk2077 2024-05-29 00-25-22.png" alt=""><figcaption><p>using cotton_twill_clean_01_30_n.xbm as a microblend</p></figcaption></figure>
 
