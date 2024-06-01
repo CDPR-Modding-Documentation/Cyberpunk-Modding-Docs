@@ -28,10 +28,10 @@ The default `.mlmask` found inside your `.mesh` might already contain the layers
 
 For a specific example, we'll try to get yellow to look nice as I find yellow to be one of the more finicky colours to get to look "correct" within Cyberpunks shader. Here, I'm using `velvet_clean_01_30` with `rgb(77%,22%,8%)` as the base and `latex_neon_01_30` with `rgb(100%,100%,0%)` on top of it. By itself,`velvet_clean_01_30` lacks saturation and its selection of yellows is very limited. `latex_neon_01_30` on the other hand includes a pretty decent shade of yellow, but also lacks saturation—even though the name implies the opposite. I find that Cyberpunks shader often renders yellows to be more green than I'd expect them to be. Which is why I'm using an orange base layer.
 
-| `velvet_cean_01_30` by itself                     | `latex_neon_01_30` by itself                      | together                                          |
-|:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|
-| ![image](.\Cyberpunk2077 2024-05-29 00-26-27.png) | ![image](.\Cyberpunk2077 2024-05-29 00-27-02.png) | ![image](.\Cyberpunk2077 2024-05-29 00-27-54.png) |
 
+| `velvet_cean_01_30` by itself | `latex_neon_01_30` by itself | together |
+|:-------------------------------------------------:|:-------------------------------------------------:|:-------------------------------------------------:|
+| <figure><img src="Cyberpunk2077 2024-05-29 00-26-27.png" alt=""></figure> | <figure><img src="Cyberpunk2077 2024-05-29 00-27-02.png" alt=""></figure> | <figure><img src="Cyberpunk2077 2024-05-29 00-27-54.png" alt=""></figure> |
 ### The Texture
 
 This method of layering materials unfortunately drastically reduces the effect of the `normals` of each material. I don't know why that is, but materials lack texture when layering them. A workaround is to mis-appropriate a materials `normals` as a `microblend` for another material.
@@ -50,7 +50,7 @@ This method of layering materials unfortunately drastically reduces the effect o
 
 ![image](.\mltemplate_to_n_xbm.png)
 
-<figure><img src="Cyberpunk2077 2024-05-29 00-25-22.png" alt=""><figcaption><p>using `cotton_twill_clean_01_30_n.xbm` as a `microblend`</p></figcaption></figure>
+<figure><img src="Cyberpunk2077 2024-05-29 00-25-22.png" alt=""><figcaption><p>using cotton_twill_clean_01_30_n.xbm as a microblend</p></figcaption></figure>
 
 ### The Shininess
 
@@ -60,17 +60,19 @@ If you want your material to be matte, pick a value where the two values are rou
 
 | `velvet_cean_01_30` @ `0.502,0.498`        | `velvet_cean_01_30` @ `0.1569,0.8431`        |
 |:------------------------------------------:|:--------------------------------------------:|
-| ![image](.\velvet_clean_01_30_502_498.png) | ![image](.\velvet_clean_01_30_1569_8431.png) |
+| <figure><img src="velvet_clean_01_30_502_498.png" alt=""></figure> | <figure><img src="velvet_clean_01_30_1569_8431.png" alt=""></figure> |
+
 
 If you want your material to be very shiny, pick a value where the first number is low, and the second is zero.
 
-<figure><img src="velvet_clean_01_30_1373_0.png" alt=""><figcaption><p>`velvet_clean_01_30` with Roughness Out set to `0.1373,0.0`</p></figcaption></figure>
+<figure><img src="velvet_clean_01_30_1373_0.png" alt=""><figcaption><p>velvet_clean_01_30 with Roughness Out set to 0.1373,0.0</p></figcaption></figure>
+
 
 Confusingly, the opposite might be true, as well. In the following example, `0.6667,0.3333` is shinier than `0.3333,0.6667`. It's quite illustrative of the interaction between the two values because they're the exact opposites.
 
 | `velvet_clean_01_30` @ `0.6667,0.3333`       | `velvet_clean_01_30` @ `0.3333,0.6667`       |
 |:--------------------------------------------:|:--------------------------------------------:|
-| ![image](.\velvet_clean_01_30_6667_3333.png) | ![image](.\velvet_clean_01_30_3333_6667.png) |
+| <figure><img src="velvet_clean_01_30_6667_3333.png" alt=""></figure> | <figure><img src="velvet_clean_01_30_3333_6667.png" alt=""></figure> |
 
 ### The Outro
 
