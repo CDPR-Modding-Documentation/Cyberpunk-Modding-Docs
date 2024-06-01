@@ -35,7 +35,7 @@ A big part of tweak modding is exploration — poking through tweaks until you f
 You can do this **directly in your game**. Changes will not persist if you restart, and sometimes you may have to reload for them to become active, but this is the fastest and most comfortable way to fuck around and find out.
 
 {% hint style="info" %}
-For documentation of the [TweakDB Editor](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/usage-1 "mention"), please refer to the [Cyber Engine Tweaks (EN - English)](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/ "mention") wiki.
+For documentation of the [TweakDB Editor](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/usage-1 "mention"), please refer to the [Cyber Engine Tweaks](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/ "mention") wiki.
 {% endhint %}
 
 ## The Wolvenkit Tweak Browser
@@ -129,7 +129,7 @@ You will find it in the following path:
 tweaks/base/gameplay/static_data/database/items/weapons/ranged/handguns/lexington/preset_base_lexington.tweak
 ```
 
-<figure><img src="../../../.gitbook/assets/image (173).png" alt=""><figcaption><p><code>Preset_Lexington_Wilson</code>, but in .tweak format.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (189).png" alt=""><figcaption><p><code>Preset_Lexington_Wilson</code>, but in .tweak format.</p></figcaption></figure>
 
 This is the same tweak you'd find in the [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser), but it's much easier to read and understand.
 

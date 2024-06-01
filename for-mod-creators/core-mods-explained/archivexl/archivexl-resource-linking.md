@@ -15,7 +15,7 @@ While [archivexl-body-mods-and-refits](archivexl-body-mods-and-refits/ "mention"
 
 
 
-<figure><img src="../../../.gitbook/assets/image (309).png" alt="" width="184"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (332).png" alt="" width="184"><figcaption></figcaption></figure>
 
 While [archivexl-resource-patching.md](archivexl-resource-patching.md "mention") will let you keep your materials in one spot, why would the **chest size** be relevant for a pair of socks?&#x20;
 

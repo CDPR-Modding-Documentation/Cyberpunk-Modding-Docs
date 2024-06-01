@@ -2,7 +2,7 @@
 description: Create scars by replacing vanilla one
 ---
 
-# Creating replacer vanilla scars
+# How to do replacer vanilla scars
 
 ## **Summary**
 
@@ -60,7 +60,7 @@ _The vanilla size are 1024x1024, I have upscaled mine to 4096x4096, but that's p
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (226).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -141,7 +141,7 @@ To remedy this problem, create a new project and obtain the 4 file types as seen
 {% tab title="Nose texture cut" %}
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (162).png" alt="" width="371"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (178).png" alt="" width="371"><figcaption></figcaption></figure>
 
 </div>
 {% endtab %}
@@ -149,7 +149,7 @@ To remedy this problem, create a new project and obtain the 4 file types as seen
 {% tab title="Strange square shadow" %}
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (164).png" alt="" width="315"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (180).png" alt="" width="315"><figcaption></figcaption></figure>
 
 </div>
 {% endtab %}

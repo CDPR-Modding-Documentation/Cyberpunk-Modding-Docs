@@ -92,11 +92,11 @@ Taken from [CET's github](https://github.com/maximegmd/CyberEngineTweaks/issues/
 2. Right click on the game > `Settings` > `Runner options`
 3. While newer versions of Lutris can use Proton, it is advised you use Wine-GE instead. Make sure you're using at least `lutris-GE-Proton8-1`
 
-<figure><img src="../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
 
 4. Scroll down to **DLL overrides**, click on **Add** to add a key. Add the following keys:
 
-<figure><img src="../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
 
 ## GOG: Launch Options
 

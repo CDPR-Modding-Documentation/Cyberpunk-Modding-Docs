@@ -38,7 +38,7 @@ I'm gonna do the scar on the normal map (bumpmap) first.
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (251).png" alt="" width="124"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (236).png" alt="" width="124"><figcaption></figcaption></figure>
 
 </div>
 
@@ -46,7 +46,7 @@ I'm gonna do the scar on the normal map (bumpmap) first.
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -60,7 +60,7 @@ Do the base of your scar :&#x20;
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (252).png" alt="" width="346"><figcaption><p>A simple line</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (237).png" alt="" width="346"><figcaption><p>A simple line</p></figcaption></figure>
 
 </div>
 
@@ -68,7 +68,7 @@ Then pimp it , you can erase or add some pieces to your scar with your brush
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (254).png" alt="" width="296"><figcaption><p>I have cut and add new parts on the scar to give a more random look</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (239).png" alt="" width="296"><figcaption><p>I have cut and add new parts on the scar to give a more random look</p></figcaption></figure>
 
 </div>
 
@@ -76,11 +76,11 @@ Now copy paste your scar and change the color to GREEN, place the layer below th
 
 {% tabs %}
 {% tab title="1" %}
-<figure><img src="../../../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Zoom" %}
-<figure><img src="../../../../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -88,13 +88,13 @@ Now copy paste your scar on the skin textures
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (259).png" alt="" width="177"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (244).png" alt="" width="177"><figcaption></figcaption></figure>
 
 </div>
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (260).png" alt="" width="283"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (245).png" alt="" width="283"><figcaption></figcaption></figure>
 
 </div>
 
@@ -102,13 +102,13 @@ Use the Pipette tools and take the skin color, use the "Lock Transparent Pixels"
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (263).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (248).png" alt="" width="336"><figcaption></figcaption></figure>
 
 </div>
 
@@ -120,15 +120,15 @@ In-game appearance
 
 {% tabs %}
 {% tab title="1" %}
-<figure><img src="../../../../.gitbook/assets/image (264).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="2" %}
-<figure><img src="../../../../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="3" %}
-<figure><img src="../../../../.gitbook/assets/image (266).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -144,7 +144,7 @@ Do your base with the RED color
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (267).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (252).png" alt="" width="375"><figcaption></figcaption></figure>
 
 </div>
 
@@ -152,7 +152,7 @@ Surround the RED base with a GREEN outline&#x20;
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (268).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (253).png" alt="" width="375"><figcaption></figcaption></figure>
 
 </div>
 
@@ -160,7 +160,7 @@ The skin map scar appearance
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (269).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (254).png" alt="" width="375"><figcaption></figcaption></figure>
 
 </div>
 
@@ -168,11 +168,11 @@ In-game appearance
 
 {% tabs %}
 {% tab title="1" %}
-<figure><img src="../../../../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="2" %}
-<figure><img src="../../../../.gitbook/assets/image (272).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -186,23 +186,23 @@ Do the base
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (235).png" alt="" width="300"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (220).png" alt="" width="300"><figcaption></figcaption></figure>
 
 </div>
 
 Add the GREEN under the RED as always
 
-&#x20;![](<../../../../.gitbook/assets/image (236).png>)
+&#x20;![](<../../../../.gitbook/assets/image (221).png>)
 
 Then I add a new layer of RED and GREEN
 
-![](<../../../../.gitbook/assets/image (237).png>)
+![](<../../../../.gitbook/assets/image (222).png>)
 
 I then use a blur spray brush like this, I paint randomly on my scar and around it
 
-&#x20;![](<../../../../.gitbook/assets/image (238).png>)
+&#x20;![](<../../../../.gitbook/assets/image (223).png>)
 
-![](<../../../../.gitbook/assets/image (239).png>)
+![](<../../../../.gitbook/assets/image (224).png>)
 
 I reduce some layers' opacity at my conveniance and then I go to the skin map
 
@@ -210,7 +210,7 @@ Here is what my scar looks like when colored.
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (242).png" alt="" width="366"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (227).png" alt="" width="366"><figcaption></figcaption></figure>
 
 </div>
 
@@ -218,7 +218,7 @@ I will add some extra textures on it, only on the skin map, not the bumpmap.
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (245).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (230).png" alt="" width="375"><figcaption></figcaption></figure>
 
 </div>
 
@@ -226,18 +226,18 @@ In-game appearance
 
 {% tabs %}
 {% tab title="1" %}
-<figure><img src="../../../../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="2" %}
-<figure><img src="../../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="On the leg" %}
-<figure><img src="../../../../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="On the leg" %}
-<figure><img src="../../../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}

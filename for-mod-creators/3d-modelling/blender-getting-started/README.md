@@ -146,7 +146,7 @@ For example, press `G` -> `Z` to move your selection up and down. Press Z again 
 
 By pressing `.`, you can change the current `Pivot Point:`
 
-<figure><img src="../../../.gitbook/assets/image (310).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (333).png" alt="" width="375"><figcaption></figcaption></figure>
 
 This is the **origin** for your transforms:
 

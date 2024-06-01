@@ -44,7 +44,7 @@ KS\_UV project name should be `005_modname`
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (1) (3).png" alt="" width="188"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (199).png" alt="" width="188"><figcaption></figcaption></figure>
 
 </div>
 
@@ -52,7 +52,7 @@ KS\_UV project name should be `005_modname`
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (1) (3) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -60,18 +60,18 @@ KS\_UV project name should be `005_modname`
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (2) (4).png" alt="" width="357"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (201).png" alt="" width="357"><figcaption></figcaption></figure>
 
 </div>
 
 9. Save your project as a .PNG files
 10. Return to WolvenKit and Open the texture preview window by clicking the blue checkbox
 
-    <figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
 
 Right click on it and click on the "Replace Texture" and choose your textures files
 
-![](<../../../../.gitbook/assets/image (4).png>)![](<../../../../.gitbook/assets/image (5).png>)
+![](<../../../../.gitbook/assets/image (203).png>)![](<../../../../.gitbook/assets/image (204).png>)
 
 When it's done, export the file, then import and Install.
 

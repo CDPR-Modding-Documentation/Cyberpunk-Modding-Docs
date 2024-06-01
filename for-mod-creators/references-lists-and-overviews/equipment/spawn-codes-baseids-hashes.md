@@ -60,7 +60,7 @@ A base ID consists out of two parts. The first one (Vest\_17) determines the ite
 
 Head to WolvenKit and search for the first part of the BaseID:
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption><p>Search WolvenKit for the first part of the BaseID</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption><p>Search WolvenKit for the first part of the BaseID</p></figcaption></figure>
 
 You will find at least one **entity file** and an **appearance file**.&#x20;
 
@@ -78,16 +78,16 @@ To learn more about this, you can check [appearance-.app-files](../../files-and-
 
 You will see a bunch of appearances:
 
-<figure><img src="../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 We only care for `_m` and `_w` right now, since they are using different meshes. \
 Open the array `components` and find the one holding the mesh:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (101).png" alt=""><figcaption><p>basic_01 is using "default" material (green)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (51).png" alt=""><figcaption><p>basic_01 is using "default" material (green)</p></figcaption></figure>
 
 We can see that the `basic_01` appearance is using the `default` material, and the `basic_02` appearance is using the `bbstripes` material:
 
-<figure><img src="../../../.gitbook/assets/image (52).png" alt=""><figcaption><p>base_02 is using "bbstripes" material</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (95).png" alt=""><figcaption><p>base_02 is using "bbstripes" material</p></figcaption></figure>
 
 
 

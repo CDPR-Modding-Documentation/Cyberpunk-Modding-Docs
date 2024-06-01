@@ -59,7 +59,7 @@ I would suggest trying to create one in an existing location first, so you famil
 
 <figure><img src="../../../.gitbook/assets/image12.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image1 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image1.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image9.png" alt=""><figcaption></figcaption></figure>
 
@@ -162,7 +162,7 @@ Next import it in wkit.
 
 1. Add to project a morphtarget from PRC or create folder structure manually. They need to be named exactly like this, do not create a custom folder.
 
-<figure><img src="../../../.gitbook/assets/image14 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image14.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image22.png" alt=""><figcaption></figcaption></figure>
 
