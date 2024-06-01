@@ -6,26 +6,61 @@ description: An item addition with dynamic appearances, and what you can do for 
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created by @manavortex**\
-**Published: 29 Oct. 2023**
+**Published:** 29 Oct. 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Last documented update: Jun 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will cover a sub-case of [.](./ "mention")via ArchiveXL. Dynamic variants are both **easier** and **more flexible**. Unless you don't need different appearances, you will want to default to this approach.
+This guide will cover a sub-case of [.](./ "mention")via ArchiveXL (added in 1.13). Dynamic variants are both **easier** and **more flexible**. Unless you don't need different appearances, you will want to default to this approach.
 
-Since 1.13, there is now support for [archivexl-dynamic-materials.md](../../textures-and-luts/archivexl-dynamic-materials.md "mention"). Unless you're a beginner, check it out, this is awesome!
+### Wait, this is not what I want!
 
-**It uses the following versions** (yours should be **equal** or **higher**, the most recent stable release works fine)
+* If you are an absolute beginner who has never done this before, check out [.](./ "mention"). The guide will tell you when to switch over.
+* You can find the technical documentation for dynamic variants on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki/Dynamic-Appearances).
+* If you want to create an Atelier store, see [adding-items-atelier-integration.md](../../everything-else/adding-items-atelier-integration.md "mention")
+* To quickly generate instances with up to two keys, check out [W's generator](https://codepen.io/Wandering-Aldecaldo/full/BaeKRyp) (Codepen.IO)
+
+### Prerequisites
+
+You need **at least** the following tools and versions (get the most recent):
 
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.11.0 (you should have it [installed and configured](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download))
-* [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) >= 1.4.4 (the most recent version)
-* [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) >= 1.5.0 (the most recent version)
-* [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) >= 1.17.0 (the most recent version)
+* [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) >= 1.4.4
+* [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) >= 1.5.0
+* [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) >= 1.17.0
 * [Cyber Engine Tweaks ](https://www.nexusmods.com/cyberpunk2077/mods/107)(for spawning items)
 
-{% hint style="success" %}
-You can find the technical documentation for dynamic variants on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki/Dynamic-Appearances).
-{% endhint %}
+<details>
 
-## Enabling dynamic appearances
+<summary>TL;DR</summary>
+
+In your `root_entity`:
+
+1. Add the `DynamicAppearance` tag
+2. Delete all but one entry from the appearances array.&#x20;
+   1. Name it like your `entityName` in the yaml
+   2. Leave the `appearanceName` blank
+
+In your `.app`:
+
+1. Delete all but one entry from the appearances array
+2. Name it like your `entityName` in the yaml
+3. Delete all components
+4. Point it to your `mesh_entity`
+
+In your `mesh_entity`:
+
+1. To enable substitution in mesh depot paths, make sure they start with `*`
+2. Put all attributes that ArchiveXL should [switch out](../../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md) in the paths in `{}`
+
+e.g
+
+`meshes/t2_pwa_base_body_jacket.mesh`\
+`meshes/t2_pwa_ebbwtfbbq_jacket.mesh`
+
+after:
+
+`*meshes/t2_pwa_{body}_jacket.mesh`
+
+</details>
 
 You define an appearance as dynamic by adding the `DynamicAppearance` tag to the visual tags in its root entity.
 

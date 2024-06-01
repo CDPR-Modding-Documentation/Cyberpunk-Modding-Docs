@@ -10,6 +10,7 @@ This guide will detail how to add an Atelier store with your items. It is part o
 
 * Find a guide on [adding-items-preview-images](../custom-icons-and-ui/adding-items-preview-images/ "mention")&#x20;
 * Learn more about [game-icons-the-inkatlas-file.md](../../files-and-what-they-do/game-icons-the-inkatlas-file.md "mention")
+* If you are using [archivexl-dynamic-variants.md](../items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention"), you can use [W's generator](https://codepen.io/Wandering-Aldecaldo/full/jOoWemp) to quickly create spawn codes and Atelier entries
 
 ## Requirements
 
