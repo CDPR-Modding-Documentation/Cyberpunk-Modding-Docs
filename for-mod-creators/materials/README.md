@@ -26,6 +26,7 @@ Check the section's sub pages in the wiki's navigation tree for more detailed in
 
 * [changing-materials-colors-and-textures.md](../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") (guide)
 * [self-made-normal-maps](../modding-guides/textures-and-luts/self-made-normal-maps/ "mention")
+* [How to make pretty colours](multilayered/blending-materials/README.md "mention")
 
 ## Definition: Shader
 
