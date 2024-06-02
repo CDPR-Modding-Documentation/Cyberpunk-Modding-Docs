@@ -18,7 +18,7 @@ Download and install _RAD Video Tools_ (no special assistance with this as its s
 
 * Open _RAD Video Tools_ and browse your _video file_ that that will replace the _Breach Screen_
 
-<figure><img src="../../../.gitbook/assets/image (297).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
 
 * Select the video file and click _Bink it!_
 
@@ -46,7 +46,7 @@ base\movies\fullscreen\e3_2020_loading\
 
 * Add that file to your Project and your project should look like this
 
-<figure><img src="../../../.gitbook/assets/image (295).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
 
 * Select _splash\_logo.bk2_ and Open in Explorer (now you have the location where you are going to put the new video file that will replace the original one)
 * Copy your own converted video in this location and replace the original one

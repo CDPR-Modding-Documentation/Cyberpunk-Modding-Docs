@@ -68,7 +68,7 @@ Using double space will guarantee your file will keep the same structure everywh
 
 Think of records as **unique containers** grouping multiple properties — which can be **other records**, or [#flats](how-to-yaml-tweak-modding-basics.md#flats "mention").&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (301).png" alt=""><figcaption><p>Don't worry, it gets easier to understand over time.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (323).png" alt=""><figcaption><p>Don't worry, it gets easier to understand over time.</p></figcaption></figure>
 
 {% hint style="danger" %}
 Record names **must** be unique!

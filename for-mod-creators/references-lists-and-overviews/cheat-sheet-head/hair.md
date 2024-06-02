@@ -11,7 +11,7 @@ description: Overview of hair related things
 
 This page will give you an overview for working with Cyberpunk's hair material.&#x20;
 
-* For a guide on how to add hair to Cyberpunk, check [basic-hairstyle-replacement-tutorial.md](../../modding-guides/everything-else/basic-hairstyle-replacement-tutorial.md "mention")
+* For a guide on how to add hair to Cyberpunk, check [basic-hairstyle-replacement-tutorial.md](../../modding-guides/npcs/basic-hairstyle-replacement-tutorial.md "mention")
 * For a more detailed explanation of the hair shader, see [Broken link](broken-reference "mention")
 * If you want to change an NPC's hair instead, you can check [this](../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair) or [this](../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components) guide.
 * To look up hairstyles in more detail, you can use [NoraLee's excellent NPV part picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker)

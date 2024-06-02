@@ -140,7 +140,7 @@ Then right-click on the `en-us.json.json` file from the `raw` folder and choose 
 
 Finally we need to edit the roof mesh file to add the new black appearance into it and to create the corresponding material. Open the file and duplicate one of the existing appearances. Then name it `black` and rename its chunk to `black`.
 
-<figure><img src="../../../../.gitbook/assets/image (315).png" alt=""><figcaption><p>Create the black appearance</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (340).png" alt=""><figcaption><p>Create the black appearance</p></figcaption></figure>
 
 Now into the `materialEntries` array duplicate the last item and name it `black`. In the `localMaterialBuffer > materials` array right-click on the `glossy` entry and choose `Copy From Array/Buffer`. Then right-click on the array and choose `Paste Into Array/Buffer` in order to append it to the end.
 
@@ -156,7 +156,7 @@ Now duplicate the `glossy.mlsetup` file and name it `black.mlsetup`. Then assign
 
 We are going to use only the first layer and turn all the other ones invisible by setting their opacity to 0. By chance the glossy paint layer #0 is already configured properly. Simply export the file using `File > Mlsetup > Export` and erase the JSON file. Then import it back into mlsetup in WolvenKit.
 
-<figure><img src="../../../../.gitbook/assets/image (316).png" alt=""><figcaption><p>Disable all layers except the first one</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (341).png" alt=""><figcaption><p>Disable all layers except the first one</p></figcaption></figure>
 
 You can use either `painted.mlmask` or the original mlmask file of the vehicle for this material because both files use the layer 0. In any case we will ignore the other layers because their opacity is null. We only need a mlmask that uses the layer 0, and this layer is used by all mlmask files because the layer 0 is the base layer.
 

@@ -172,7 +172,7 @@ We're assuming that you have already configured Wolvenkit. If you haven't, pleas
 
 In MLSetupBuilder **1.6.7**, select the menu Help -> download Wolvenkit.CLI and extract the linked version:
 
-<figure><img src="../../../.gitbook/assets/image (311).png" alt=""><figcaption><p>MLSB 1.7</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (336).png" alt=""><figcaption><p>MLSB 1.7</p></figcaption></figure>
 
 In MLSB >= 1.6.8, download the most recent version of [WolvenKit Console ](https://github.com/WolvenKit/WolvenKit/releases)and extract it to a folder of your choice.
 
@@ -198,7 +198,7 @@ Again, this step is optional, you can [use MLSB](./#using-mlsb) straight away.&#
 
 1. Open the menu "Build" and select "Repository" to uncook the archives:
 
-<figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 2. Select the following settings (if you want to uncook everything, this step can take several hours, so we'll only do the essentials for now)
 

@@ -79,7 +79,7 @@ To see how the mesh is projected on your image, you can check out the UV edit mo
 
 Switch to "Edit" (shortcut: Tab) and select all vertices (shortcut: ctrl+A). You will now see them projected on the texture:&#x20;
 
-<figure><img src="../../../../.gitbook/assets/normal_maps_uv_editing.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/normal_maps_uv_editing (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Feel free to change the UV mapping. You can [export](../../../3d-modelling/exporting-and-importing-meshes/#wolvenkit-.gdb-1) this back into Cyberpunk!
@@ -188,7 +188,7 @@ Find the "Render Properties" tab.
    8. **Margin / Size:** 16px (or whatever suits you)
 3. **Save. Your. File.**
 
-<figure><img src="../../../../.gitbook/assets/normal_maps_final.png" alt=""><figcaption><p>Things are looking like this now? Great, then click "Bake"!</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/normal_maps_final (1).png" alt=""><figcaption><p>Things are looking like this now? Great, then click "Bake"!</p></figcaption></figure>
 
 {% hint style="info" %}
 Baking takes time (several minutes) and most of your PC's free resources. This is normal.&#x20;
