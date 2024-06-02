@@ -5,9 +5,9 @@ description: How to add appearances to existing NPCs (via AMM)
 # AMM: Custom NPC appearances
 
 {% hint style="warning" %}
-Adding new appearances to an existing NPC requires you to **overwrite** that NPC's `.ent` file (As of November 2023, it is not possible to merge entity files).&#x20;
+This guide has not yet been updated to use [archivexl-resource-patching.md](../../../core-mods-explained/archivexl/archivexl-resource-patching.md "mention"). As such, you will probably end up overwriting an existing NPC's file, breaking compatibility.
 
-For that reason, it's recommended that you stick to [.](./ "mention"). This guide will only give you a very rough overview.
+Until the guide updates, you should stick to [.](./ "mention"). This guide will only tell you how to target the right (vanilla) NPC file, since the rest of the process is the same.
 {% endhint %}
 
 ## The .lua file
@@ -31,7 +31,7 @@ The most important thing here is the `entity_id` - this is what tells AMM about 
 
 As an example, look at the lua file I made for [Takemura's custom appearances](https://www.nexusmods.com/cyberpunk2077/mods/6111/) way back when:
 
-```
+```lua
 return {
   -- Your beautiful name :)
   modder = "manavortex",
@@ -51,7 +51,7 @@ return {
 	"goro_takemura_finale_white_shirt",
 	"goro_takemura_saburo_bodyguard_shirt",
 	
-        "goro_takemura_kimono_pants", 
+	"goro_takemura_kimono_pants", 
 	"goro_takemura_kimono_hakama",
 	"goro_takemura_haori_pants",
 	"goro_takemura_haori_hakama",
@@ -60,7 +60,7 @@ return {
 	
 ```
 
-The rest of the process is pretty much like [the other guide](./#adding-more-appearances).&#x20;
+The rest of the process is documented in [the other guide](./#adding-more-appearances).&#x20;
 
 _Knowing what I know today, I probably would have created a custom entity for Takemura-san in the first place, but since I chose to go down this road, I'm doomed to provide compatibility patches for the rest of eternity._&#x20;
 
