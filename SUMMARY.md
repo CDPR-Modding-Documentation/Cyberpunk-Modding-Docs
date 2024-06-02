@@ -128,6 +128,7 @@
     * [Hair and skin material properties](for-mod-creators/materials/configuring-materials/hair-and-skin-material-properties.md)
   * [Multilayered: Cyberpunk's supershader](for-mod-creators/materials/multilayered/README.md)
     * [Multilayered: Previews](for-mod-creators/materials/multilayered/multilayered-previews.md)
+    * [Blending materials for more gooder colours](for-mod-creators/materials/multilayered/blending-materials-for-more-gooder-colours.md)
   * [Materials: troubleshooting](for-mod-creators/materials/materials-troubleshooting.md)
   * [Cyberpunk Shaders in Blender](for-mod-creators/materials/cyberpunk-shaders-in-blender.md)
   * [UV Mapping: texturing a 3d object](for-mod-creators/materials/uv-mapping-texturing-a-3d-object.md)
