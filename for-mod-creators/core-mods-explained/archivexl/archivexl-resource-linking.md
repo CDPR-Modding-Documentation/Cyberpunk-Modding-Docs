@@ -11,7 +11,7 @@ If you want to avoid duplicate material definitions, check [archivexl-resource-p
 
 ## Why do I need this?
 
-While [archivexl-body-mods-and-refits](archivexl-body-mods-and-refits/ "mention") has solved one problem, it introduced a new one. If you want to use the preferred approach of **meth path substitution**, then you'll end up with a million duplicate files.
+While [archivexl-body-mods-and-refits](archivexl-body-mods-and-refits/ "mention") has solved one problem, it introduced a new one. If you want to use the preferred approach of **mesh path substitution**, then you'll end up with a million duplicate files.
 
 
 
