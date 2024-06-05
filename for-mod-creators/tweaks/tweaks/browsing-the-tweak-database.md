@@ -74,7 +74,7 @@ You need the [REDmod DLC](../../../for-mod-users/users-modding-cyberpunk-2077/re
 
 In your game directory  [`Cyberpunk 2077`](#user-content-fn-2)[^2], find the subfolder `tools\redmod\tweaks` ("**tweak folder**"):
 
-<figure><img src="../../../.gitbook/assets/browsing_tweak_files.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/browsing_tweak_files.png" alt=""><figcaption><p>If these folders are missing, make sure that you have a valid REDmod <a data-mention href="../../../for-mod-users/users-modding-cyberpunk-2077/redmod/#installation">#installation</a></p></figcaption></figure>
 
 These folders contain a bunch of `.tweak` files, which you can open with a text editor of your choice. If you don't have one yet, here are your options:
 

@@ -271,6 +271,8 @@ The following is a diagram which maps the relationship between game files for us
 
 ![](<../../../.gitbook/assets/Cyberpunk 2077 TweakXL+ArchiveXL Pipeline.drawio.svg>)
 
+## Enough theory, how do I modify the Tweak DB?
 
+Check the tutorials linked under [#wait-thats-not-what-i-want](./#wait-thats-not-what-i-want "mention")
 
 [^1]: Your game directory, where you installed Cyberpunk 2077. Steam/GOG/Epic will take you here if you browse the local files.
