@@ -40,7 +40,7 @@ For documentation of the [TweakDB Editor](https://app.gitbook.com/s/-MP5jWcLZLbb
 
 ## The Wolvenkit Tweak Browser
 
-The easiest way to create tweaks is to use the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/ "mention") [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention"). This will generate tweak files for you which contain the current record's properties, whether they're directly defined or inherited from other records.
+The easiest way to create tweaks is to use the Wolvenkit [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention"). This will generate tweak files for you which contain the current record's properties, whether they're directly defined or inherited from other records.
 
 {% hint style="info" %}
 For an example on how to do this, check [#step-2-choose-the-weapon-and-create-an-override](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#step-2-choose-the-weapon-and-create-an-override "mention") from the [new-iconic-weapon-tutorial-for-dummies.md](../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention") guide.
