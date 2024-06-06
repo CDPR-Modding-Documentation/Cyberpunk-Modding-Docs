@@ -14,7 +14,7 @@ To create this shape, first we need to create a "cutout" of the interior mesh. L
 
 Then you can create a cutout mesh by overlaying an Icosphere over your car's interior mesh and then using a Shrinkwrap modifier as shown:
 
-![Image](https://media.discordapp.net/attachments/786891742829215745/1219642099314458776/image.png?ex=663b8138\&is=663a2fb8\&hm=1d910d0fa8b5072964494a417e4f0caa9a95e74d46f606960c00c58767c3426f&=\&format=webp\&quality=lossless\&width=1178\&height=636)
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>(Credit to Similarius for sharing this method)</p></figcaption></figure>
 
 
 
