@@ -70,7 +70,7 @@ For further details, see [textured-material-properties.md](../materials/configur
 
 Use `engine\materials\metal_base.remt`, the example below has been copied from `base\environment\architecture\watson\japan_town\building\hotel\motel_notell\room\_plastic_black.mi`
 
-<table><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>BaseColor</td><td><code>base\materials\placeholder\white.xbm</code></td></tr><tr><td>Normal</td><td>optional: path to your normal map</td></tr><tr><td>Roughness</td><td>optional: path to your roughness map</td></tr><tr><td>RoughnessBias</td><td>0.200000003</td></tr><tr><td>BaseColorScale</td><td>Colour as x/y/z values (color picker blend file <a href="https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks">here</a>)</td></tr></tbody></table>
+<table><thead><tr><th width="232"></th><th></th></tr></thead><tbody><tr><td>BaseColor</td><td><code>base\materials\placeholder\white.xbm</code></td></tr><tr><td>Normal</td><td>optional: path to your normal map</td></tr><tr><td>Roughness</td><td>optional: path to your roughness map</td></tr><tr><td>RoughnessBias</td><td>0.200000003</td></tr><tr><td>BaseColorScale</td><td>Colour as Vector (Wolvenkit shows a color picker)</td></tr></tbody></table>
 
 ### Gradient recolor
 
@@ -222,4 +222,4 @@ You can find a ready-to-use zipper material by copying `dec_zipper` from `base\c
 
 Find a ready-to use stitches material by copying `dec_stitches` from `base\characters\garment\player_equipment\torso\t1_057_tankbra\t1_057_pwa_tankbra.mesh`
 
-This material uses `metal_base.remt` and can be recoloured via `BaseColorScale` attribute (color picker blend file [here](https://mega.nz/file/uE902LDQ#YmrHs0oAQBQqaFPjvYGazxI5s2LUlqzuNG14jU8Vgks))
+This material uses `metal_base.remt` and can be recoloured via `BaseColorScale` vector attribute (Wolvenkit will show a color picker)
