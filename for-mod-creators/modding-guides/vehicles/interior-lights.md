@@ -16,7 +16,9 @@ Then you can create a cutout mesh by overlaying an Icosphere over your car's int
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>(Credit to Similarius for sharing this method)</p></figcaption></figure>
 
-
+{% hint style="warning" %}
+Ensure the final cutout isn't high poly. Realistically, you don't need more than a few hundred vertices at maximum. High poly cutout may cause game crashes
+{% endhint %}
 
 Once you have your cutout mesh, use this script to generate the indices and vertices for wolvenkit: [https://gist.github.com/misterchedda/aa730fab5bc0aa0f1bd905f617c84e6d](https://gist.github.com/misterchedda/aa730fab5bc0aa0f1bd905f617c84e6d)
 
