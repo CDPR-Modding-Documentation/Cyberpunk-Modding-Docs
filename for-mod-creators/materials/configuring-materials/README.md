@@ -77,6 +77,8 @@ As this is a horrible mess, it is easiest to [look up the properties in the shad
 
 ## Roughness/Metalness
 
+<figure><img src="../../../.gitbook/assets/roughness_metalness.png" alt=""><figcaption></figcaption></figure>
+
 <figure><img src="../../../.gitbook/assets/materials_roughness_metalness.png" alt=""><figcaption><p>A roughness/metalness preview. Yes, it's not a sphere. </p></figcaption></figure>
 
 [^1]: 
