@@ -25,6 +25,12 @@ right_arm
 a0_001_pwa_base_hq__full8640 
 </code></pre> |
 
+{% hint style="info" %}
+An in app example how to include Component Names and hiding them via chunkmask (unticking the meshes to hide them)
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/Example of an app - arm component - chunkmasking.png" alt=""><figcaption></figcaption></figure>
+
 ### Male
 
 | Folder or .ent files                                                                                                                                         | Component names                                                                        |

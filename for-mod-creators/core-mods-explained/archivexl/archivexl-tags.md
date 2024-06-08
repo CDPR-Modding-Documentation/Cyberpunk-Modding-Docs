@@ -14,7 +14,7 @@ This page will tell you about **tags** and how they can be used to influence ite
 
 ## What do tags do?
 
-Tags are a way to tell Cyberpunk that an item has certain properties and should behave in a certain way. This makes the game apply properties to your items, which can then be utilized by the game and ArchiveXL to
+[Tags](https://github.com/psiberx/cp2077-archive-xl/wiki#visual-tags) are a way to tell Cyberpunk that an item has certain properties and should behave in a certain way. This makes the game apply properties to your items, which can then be utilized by the game and ArchiveXL to
 
 * hiding V's junk to stop it from clipping through tight pants (`hide_Genitals`)
 * forcing female V's feet to be flat (`force_FlatFeet`)
@@ -40,43 +40,54 @@ Tags are case-sensitive!
 | `hide_S1`       | Hides an item in the `Feet` slot.                                           |
 | `hide_T1part`   | Toggles the partial suffix (`&Full` →`&Part`) when applied to `Torso` item. |
 | `hide_Hair`     | Hides hair.                                                                 |
-| `hide_Genitals` | Hides genitals in uncensored mode and underware in censored mode.           |
+| `hide_Genitals` | Hides genitals in uncensored mode and underwear in censored mode.           |
 
 ### ArchiveXL tags
 
-| Tag                 | Effect                                                                                                                                                                                                                             |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `hide_Head`         | Hides head.                                                                                                                                                                                                                        |
-| `hide_Torso`        | Hides the whole torso.                                                                                                                                                                                                             |
-| `hide_LowerAbdomen` | Hides lower abdomen.                                                                                                                                                                                                               |
-| `hide_UpperAbdomen` | Hides upper abdomen.                                                                                                                                                                                                               |
-| `hide_CollarBone`   | Hides collar bone area.                                                                                                                                                                                                            |
-| `hide_Arms`         | Hides the whole arms, including hands. (There's [no easy way to partially hide arms](../../references-lists-and-overviews/cheat-sheet-body.md#arms), you would have to [create custom tags](archivexl-tags.md#adding-custom-tags)) |
-| `hide_Thighs`       | Hides thighs.                                                                                                                                                                                                                      |
-| `hide_Calves`       | Hides calves.                                                                                                                                                                                                                      |
-| `hide_Ankles`       | Hides ankles.                                                                                                                                                                                                                      |
-| `hide_Feet`         | Hides feet.                                                                                                                                                                                                                        |
-| `hide:legs`         | Hides the entire legs (including feet)                                                                                                                                                                                             |
+| Tag                 | Effect                                                                                                                                                                                                                                                                    |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `hide_Head`         | Hides head.                                                                                                                                                                                                                                                               |
+| `hide_Torso`        | Hides the whole torso.                                                                                                                                                                                                                                                    |
+| `hide_LowerAbdomen` | Hides lower abdomen.                                                                                                                                                                                                                                                      |
+| `hide_UpperAbdomen` | Hides upper abdomen.                                                                                                                                                                                                                                                      |
+| `hide_CollarBone`   | Hides collar bone area.                                                                                                                                                                                                                                                   |
+| `hide_Arms`         | <p>Hides all of default arms submeshes. Cyberarms cannot hidden with this tag<strong>*</strong>          </p><p>(<strong>*</strong><a href="../../modding-guides/items-equipment/influencing-other-items.md#arms">Arms are terrible and we hates them, precious</a>.)</p> |
+| `hide_Thighs`       | Hides thighs.                                                                                                                                                                                                                                                             |
+| `hide_Calves`       | Hides calves.                                                                                                                                                                                                                                                             |
+| `hide_Ankles`       | Hides ankles.                                                                                                                                                                                                                                                             |
+| `hide_Feet`         | Hides feet.                                                                                                                                                                                                                                                               |
+| `hide_Legs`         | Hides the entire legs (including feet)                                                                                                                                                                                                                                    |
 
 {% hint style="info" %}
-Check the [#root-entity-tags](archivexl-tags.md#root-entity-tags "mention") section below for more tags
+* Check the [#foot-states](archivexl-suffixes-and-substitutions.md#foot-states "mention") section for more tags concerning [Toggleable Feet](https://www.nexusmods.com/cyberpunk2077/mods/7049).
+* Check the [#root-entity-tags](archivexl-tags.md#root-entity-tags "mention") section below for more tags.
 {% endhint %}
 
-### Hiding body parts: diagram
-
-{% hint style="warning" %}
-The diagrams below are somewhat outdated. Especially the arms information is not accurate. ([Arms are terrible and we hates them, precious](../../modding-guides/items-equipment/influencing-other-items.md#arms).)
-{% endhint %}
+### Base Game Tags and ArchiveXL Tags -  Visual Guides
 
 <div>
 
-<figure><img src="../../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_mV.png" alt=""><figcaption><p>male version - image by LadyLea</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - MaleBody - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Male Body - By LadyLea </p></figcaption></figure>
 
  
 
-<figure><img src="../../../.gitbook/assets/archiveXl_bodyparts_cheatsheet_ref_ladylea_fV.png" alt=""><figcaption><p>female version - image by LadyLea</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - Female Body - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Female Body - By LadyLea </p></figcaption></figure>
 
 </div>
+
+<div>
+
+<figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags - Arms - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Default Arms - By LadyLea </p></figcaption></figure>
+
+ 
+
+<figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - Head - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Head - By LadyLea </p></figcaption></figure>
+
+</div>
+
+{% hint style="warning" %}
+Tags to partially hide default arms and cyberarms are not available, however, you can make use of [Chunkmasks](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks#chunkmasks-partially-hiding-meshes) with the aid of this [component list for Arms and Cyberarms](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/cheat-sheet-arms) OR you can create your own [Custom Tags](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/core-mods-explained/archivexl/archivexl-tags#adding-custom-tags).
+{% endhint %}
 
 ## Root entity tags
 
@@ -109,7 +120,7 @@ Only works with a foot item as `$base` in the `.yaml`: use this if you're making
 This tag will turn feet invisible for mascV unless the user has switch feet installed. You want to apply this to a conditional appearance in the .app file (`&gender=m`)
 {% endhint %}
 
-## Adding custom tags
+## Adding Custom tags
 
 Custom tags let you set [component chunk masks](../../files-and-what-they-do/components/#chunkmask) from the .xl file without the need of touching either .app or .ent file.
 
