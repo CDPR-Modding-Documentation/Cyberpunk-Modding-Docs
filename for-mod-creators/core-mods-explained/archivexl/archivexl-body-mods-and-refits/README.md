@@ -173,14 +173,15 @@ As of 18th March 2024, [Nim's More Body Meshes](https://www.nexusmods.com/cyberp
 Use only one main archive! \[[#\_nim\_more\_body\_meshes\_Gymfiend\_patch.archive](https://www.nexusmods.com/cyberpunk2077/mods/3890?tab=files\&file\_id=72036)]
 {% endhint %}
 
-| Mod                                                                                  | Tag name | substitution value |
-| ------------------------------------------------------------------------------------ | -------- | ------------------ |
-| [KS Lion's Lush Body](https://www.nexusmods.com/cyberpunk2077/mods/4901)             | Lush     | `&body=lush`       |
-| [KS Lion's SoLush Body](https://www.nexusmods.com/cyberpunk2077/mods/8392)           | Lush     | `&body=lush`       |
-| [KS Solo Ultimate](https://www.nexusmods.com/cyberpunk2077/mods/6944)                | Ult      | `&body=ult`        |
-| [Hyst's Big Butt](https://www.nexusmods.com/cyberpunk2077/mods/4420)                 | RB       | `&body=rb`         |
-| [Hyst's Big Boobs](https://www.nexusmods.com/cyberpunk2077/mods/4654)                | EBB      | `&body=ebb`        |
-| [Hyst's Big Push Up Boobs](https://www.nexusmods.com/cyberpunk2077/mods/9083)        | EBBP     | `&body=ebbp`       |
-| [Hyst's Big Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/4654)         | EBBRB    | `&body=ebbrb`      |
-| [Hyst's Big Push Up Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/9083) | EBBPRB   | `&body=ebbprb`     |
-| [Gymfiend](https://www.nexusmods.com/cyberpunk2077/mods/6423)                        | Gymfiend | `&body=gymfiend`   |
+| Mod                                                                                         | Tag name | substitution value |
+| ------------------------------------------------------------------------------------------- | -------- | ------------------ |
+| [KS Lion's Lush Body](https://www.nexusmods.com/cyberpunk2077/mods/4901)                    | Lush     | `&body=lush`       |
+| [KS Lion's SoLush Body](https://www.nexusmods.com/cyberpunk2077/mods/8392)                  | Lush     | `&body=lush`       |
+| [KS Solo Ultimate](https://www.nexusmods.com/cyberpunk2077/mods/6944)                       | Ult      | `&body=ult`        |
+| [Hyst's Angel Body Mod](https://www.nexusmods.com/cyberpunk2077/mods/14896?tab=description) | Angel    | `&body=angel`      |
+| [Hyst's Big Butt](https://www.nexusmods.com/cyberpunk2077/mods/4420)                        | RB       | `&body=rb`         |
+| [Hyst's Big Boobs](https://www.nexusmods.com/cyberpunk2077/mods/4654)                       | EBB      | `&body=ebb`        |
+| [Hyst's Big Push Up Boobs](https://www.nexusmods.com/cyberpunk2077/mods/9083)               | EBBP     | `&body=ebbp`       |
+| [Hyst's Big Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/4654)                | EBBRB    | `&body=ebbrb`      |
+| [Hyst's Big Push Up Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/9083)        | EBBPRB   | `&body=ebbprb`     |
+| [Gymfiend](https://www.nexusmods.com/cyberpunk2077/mods/6423)                               | Gymfiend | `&body=gymfiend`   |
