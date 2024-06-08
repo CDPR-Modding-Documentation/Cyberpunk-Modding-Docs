@@ -26,7 +26,7 @@ a0_001_pwa_base_hq__full8640
 </code></pre> |
 
 {% hint style="info" %}
-An in app example how to include Component Names and hiding them via chunkmask (unticking the meshes to hide them)
+An in app example how to include Component Names and hiding them via chunkmask (untick the submesh numbers to hide the mesh).
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/Example of an app - arm component - chunkmasking.png" alt=""><figcaption></figcaption></figure>
