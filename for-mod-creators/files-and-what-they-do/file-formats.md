@@ -80,12 +80,28 @@ For an explanation on .mi files, see [here](materials/re-using-materials-.mi.md)
 
 <figure><img src="../../.gitbook/assets/materials_eye_gradient_mi.png" alt=""><figcaption></figcaption></figure>
 
+## .opusinfo/.opuspak (audio)
+
+OpusPaks are collections of opus audio files, they are described by the `sfx_container.opusinfo` file. For more info see the Audio Files page:
+
+{% content-ref url="audio-files.md" %}
+[audio-files.md](audio-files.md)
+{% endcontent-ref %}
+
 ## .streamingsector (world data)
 
 This file holds world environment information and -properties. Due to its complexity, information is grouped on its sub-page.&#x20;
 
 {% content-ref url="the-whole-world-.streamingsector/" %}
 [the-whole-world-.streamingsector](the-whole-world-.streamingsector/)
+{% endcontent-ref %}
+
+## .wem (audio)
+
+A Wwise audio file, usually containing a **voice-over** or **music**. You can find more info on the Audio files page:
+
+{% content-ref url="audio-files.md" %}
+[audio-files.md](audio-files.md)
 {% endcontent-ref %}
 
 ## .xbm (Texture)

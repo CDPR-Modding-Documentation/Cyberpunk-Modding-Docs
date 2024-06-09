@@ -14,7 +14,7 @@ To create this shape, first we need to create a "cutout" of the interior mesh. L
 
 Then you can create a cutout mesh by overlaying an Icosphere over your car's interior mesh and then using a Shrinkwrap modifier as shown:
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>(Credit to Similarius for sharing this method)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>(Credit to Similarius for sharing this method)</p></figcaption></figure>
 
 {% hint style="warning" %}
 Ensure the final cutout isn't high poly. Realistically, you don't need more than a few hundred vertices at maximum. High poly cutout may cause game crashes

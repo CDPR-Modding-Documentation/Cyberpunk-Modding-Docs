@@ -1,14 +1,23 @@
+---
+description: Small guide on how to find the in-game sound you're searching for.
+---
+
 # Finding an audio file
 
-This guide explains how to use [CyberSoundDB](https://sounddb.redmodding.org). It is an open source web tool made by Zhincore (@zhincore on [the Discord](https://discord.gg/Epkq79kd96)).
+## Summary
 
-## Finding a sound effect
+**Published:** ??? **by** Xotak\
+**Overhauled:** June 8, 2024 **by** Zhincore
+
+This guide explains how to use [CyberSoundDB](https://sounddb.redmodding.org), an open source web tool made by Zhincore (@zhincore on [the Discord](https://discord.gg/Epkq79kd96)).
+
+## Finding a sound effect or music
 
 In the [sound effects section of the website](https://sounddb.redmodding.org/sfx) you can search for sounds by events, tags or sound hash or using the filtering options. Once you find what you're searching for, open the detail window by clicking on the list item, there you can find where the files is located.
 
-For `.opuspak` sounds you need to use a tool like [SoundFX Search and Replace](https://www.nexusmods.com/cyberpunk2077/mods/11075) to extract/replace it. Use the sound's hash to find it.
+Sounds inside `.opuspak` can be extracted using [WolvenKit's Export tool](replacing-sounds-effects.md#exporting-sfx).
 
-For sounds in a "Separate .wem file", you can usually find the file in WolvenKit Asset Browser, again, by the sound's hash.
+Sounds in a "Separate .wem file" can be simply found in [WolvenKit Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/video-and-audio) by the sound's hash.
 
 If the sound is marked a virtual or nonexistent, you're out of luck for now and must find other way. Perhaps your wanted sound is a voice-over and you can find it using the section described bellow.
 
