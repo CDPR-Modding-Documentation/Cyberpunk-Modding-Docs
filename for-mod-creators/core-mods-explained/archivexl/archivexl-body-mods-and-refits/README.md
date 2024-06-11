@@ -164,7 +164,7 @@ appearanceName: my_custom_shirt&FPP&NewBody
 The following body mods support dynamic body switching.
 
 {% hint style="info" %}
-If you know something that should be on the list, please edit [the-wiki.md](../../../modding-tools/the-wiki.md "mention")!
+If you know something that should be on the list, please edit [the-wiki.md](../../../../the-wiki.md "mention")!
 {% endhint %}
 
 {% hint style="warning" %}

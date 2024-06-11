@@ -2,7 +2,7 @@
 description: How to contribute to the thing you're currently reading (please do)!
 ---
 
-# The wiki
+# The Wiki
 
 ## Summary
 
@@ -24,9 +24,9 @@ Wikis are the most open source thing since the invention of democracy, because e
 In terms of our wiki, that means:
 
 * **Everyone** can learn how to make mods for Cyberpunk 2077\
-  _You don't know shit about Netrunning? Doesn't matter,_ [_here's how you can make a t-shirt_](../modding-guides/items-equipment/adding-new-items/)_!_
+  _You don't know shit about Netrunning? Doesn't matter,_ [_here's how you can make a t-shirt_](for-mod-creators/modding-guides/items-equipment/adding-new-items/)_!_
 * We don't have to research stuff all over\
-  [_Here's what we have about glowing materials_](../materials/configuring-materials/emissive-material-properties.md)_. Want more than that? Here's where you can start digging..._
+  [_Here's what we have about glowing materials_](for-mod-creators/materials/configuring-materials/emissive-material-properties.md)_. Want more than that? Here's where you can start digging..._
 * You can easily find people who can help you\
   _Published: Feb 11 2024 by_ [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
   _If you make any progress on this, please contact_ [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") _on Discord_
@@ -131,7 +131,7 @@ When creating a new change request, please give it a title **immediately** (see 
 
 You can create one by clicking the Edit button in the upper right corner:
 
-<figure><img src="../../.gitbook/assets/gitbook_edit_view.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/gitbook_edit_view.png" alt=""><figcaption></figcaption></figure>
 
 If you want to know more, you can check [gitbook's official documentation](https://docs.gitbook.com/content-editor/editor/change-requests) for this, or read the TL;DR below:
 
@@ -139,22 +139,22 @@ If you want to know more, you can check [gitbook's official documentation](https
 
 In the top left of your&#x20;
 
-<figure><img src="../../.gitbook/assets/change_requests_browsing_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/change_requests_browsing_1.png" alt=""><figcaption></figcaption></figure>
 
 Clicking on "Change Requests" to the left opens a side bar panel where you can browse existing change requests:
 
-<figure><img src="../../.gitbook/assets/wiki_editing_change_request_list.png" alt=""><figcaption><p>Who created a change request doesn't matter much - everyone can edit them</p></figcaption></figure>
+<figure><img src=".gitbook/assets/wiki_editing_change_request_list.png" alt=""><figcaption><p>Who created a change request doesn't matter much - everyone can edit them</p></figcaption></figure>
 
 #### Creating new change requests
 
 Click the "Edit" button to create a new change request:
 
-<figure><img src="../../.gitbook/assets/wiki_change_request_new.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/wiki_change_request_new.png" alt=""><figcaption></figcaption></figure>
 
 ### Requesting reviews
 
 When you're done editing, you can request a review. The button is on the topright where the Edit button used to be:
 
-<figure><img src="../../.gitbook/assets/wiki_request_revieww.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/wiki_request_revieww.png" alt=""><figcaption></figcaption></figure>
 
 ... and that's it. After requesting a review, you don't have to do anything — your MR either gets merged directly, or the reviewer may change some things around (usually scatter some links), or they'll get back on you to clear things up.
