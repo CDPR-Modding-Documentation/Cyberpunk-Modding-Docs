@@ -42,14 +42,24 @@ A comprehensive list of jargon you might see on this Wiki or around our communit
 
 ## Mods
 
-<mark style="color:red;">**CET**</mark>: One of Cyberpunk's core mods, [Cyber Engine Tweaks](https://wiki.redmodding.org/cyber-engine-tweaks/).&#x20;
+_**Core Mods**_
 
-<mark style="color:red;">**Red4Ext**</mark>: One of Cyberpunk's core mods, the [RED script extender](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MjhIjZ0BBsL6SCohtnf/) (not to confuse with [Redscript](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg\_/)).&#x20;
+[<mark style="color:red;">**CET**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/107): Cyber Engine Tweaks, a [core scripting framework](https://wiki.redmodding.org/cyber-engine-tweaks) utilized by the majority of mods.
 
-<mark style="color:red;">**SomethingXL**</mark>, e.g. [ArchiveXL](../for-mod-creators/core-mods-explained/archivexl/), [TweakXL](../for-mod-creators/core-mods-explained/tweakxl.md):  One of Cyberpunk's core mods (by modder psiberx). Requires <mark style="color:red;">**Red4Ext**</mark>.&#x20;
+[<mark style="color:red;">**Red4Ext**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/2380): a core [script extender](https://docs.red4ext.com/), which allows modders to add new features, modify the game behavior, add new scripting functions or call existing ones in your own plugins.
 
-<mark style="color:red;">**SomethingEx**</mark>, e.g. CyberwareEx, EquiipmentEx:  An extender of Cyberpunk's core functionality (usually by modder psiberx).&#x20;
+[<mark style="color:red;">**Redscript**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/1511):  is a core [script compiler](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg\_/) that can be integrated with the game and used to add/replace game scripts.
 
-<mark style="color:red;">**AMM**</mark>: [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790). Advertised as a mod "for virtual photography", but that's like calling an orbital laser a toaster. Requires <mark style="color:red;">**CET**</mark>.
+[<mark style="color:red;">**Archive XL**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/4198):  [a modding tool that allows you to load custom resources](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/core-mods-explained/archivexl) without touching original game files, thus allowing multiple mods to expand same resources without conflicts. Requires <mark style="color:red;">**Red4Ext**</mark>.&#x20;
 
-<mark style="color:red;">**EBBWTFBBQ**</mark>: Probably a body mod. Seriously, who can even keep track?
+[<mark style="color:red;">**Tweak XL**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/4197):  [a modding tool and a framework](https://www.nexusmods.com/cyberpunk2077/mods/4197) to create mods that modify TweakDB, a proprietary database of REDengine 4, containing essential information about game entities and behavior. Requires <mark style="color:red;">**Red4Ext**</mark>.&#x20;
+
+[<mark style="color:red;">**Codeware**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/7780): is a library and framework for creating redscript and Cyber Engine Tweaks mods. Requires <mark style="color:red;">**Red4Ext**</mark>.&#x20;
+
+_**Other optional mods that greatly enhance user experience**_
+
+[<mark style="color:red;">**EquipmentEx**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/6945):  [an extender of Cyberpunk's core functionality](https://github.com/psiberx/cp2077-equipment-ex) in regards to clothes transmog system
+
+[<mark style="color:red;">**Cyberware-EX**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/9429): an extender of Cyberpunk's core functionality in regards to cyberware slot expansions system
+
+<mark style="color:red;">**AMM**</mark>: [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) is your ultimate Photo Mode helper that allows you to use tools to move NPCs and V around, pose them and further expand your photography portfolio with [AMM Add-on - Nibbles to NPCs 2.0](https://www.nexusmods.com/cyberpunk2077/mods/8125); change the time of day or even teleport to a curated list of locations. Unleash your creativity by changing NPCs looks - now with extended features by using [Appearance Creator Mod](https://www.nexusmods.com/cyberpunk2077/mods/10795) - decorate with endless props, and so much more awaits! Requires <mark style="color:red;">**CET**</mark> and <mark style="color:red;">**Codeware**</mark>.
