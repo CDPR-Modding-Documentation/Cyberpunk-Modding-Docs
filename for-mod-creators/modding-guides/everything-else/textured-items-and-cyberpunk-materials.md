@@ -15,6 +15,7 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 
 ### Wait, this is not what I want!
 
+* Check [porting-3d-objects-to-cyberpunk.md](../../3d-modelling/porting-3d-objects-to-cyberpunk.md "mention") for an import guide, but don't forget to come back here once you're done!
 * You can learn more about materials under [materials](../../materials/ "mention")
 * Find a look-up list of cool materials under [cheat-sheet-materials.md](../../references-lists-and-overviews/cheat-sheet-materials.md "mention")
 * For a more detailed guide about prop creation, check [custom-props](custom-props/ "mention")
@@ -49,9 +50,11 @@ Delete obsolete files (Windows Explorer or WKit):
 
 ### Step 1: Exporting
 
-{% hint style="success" %}
-The first step to importing a mesh is exporting a mesh, since the import needs to overwrite already-existing files.
-{% endhint %}
+> The first step to importing a mesh is exporting a mesh
+>
+> [_Rache Bartmoss, ca. 2024_](#user-content-fn-1)[^1]
+
+We can't create .mesh files from scratch, so we'll **overwrite** an existing file. Here's how:
 
 In Wolvenkit, open the [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export) (Tools -> Export), and export everything in your folder: the mesh(es) you want to use and the textures.
 
@@ -442,3 +445,5 @@ Use `engine\textures\editor\normal.xbm`
 These ones will have a blue normal map as opposed to a yellow one. Invert the blue normal texture before importing it..&#x20;
 
 ##
+
+[^1]: What? He never said that. Did he? Who can keep track?

@@ -271,7 +271,7 @@ If everything worked, here are a few more guides that you might want to look int
 
 * [r-and-r-refitting-step-by-step.md](../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") will teach you how to refit for a certain body mod
 * [adding-new-items](../modding-guides/items-equipment/adding-new-items/ "mention") will walk you through the steps of adding your mesh as a new piece of equipment
-* [textured-items-and-cyberpunk-materials.md](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention") will tell you more about Cyberpunk's material system
+* [textured-items-and-cyberpunk-materials.md](../modding-guides/everything-else/textured-items-and-cyberpunk-materials.md "mention") will tell you how materials work, and how you can use them to texture your item
 
 [^1]: Level of Detail
 
