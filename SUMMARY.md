@@ -2,7 +2,7 @@
 
 * [🏠 Home](README.md)
 * [The Wiki](the-wiki.md)
-* [Glossary](glossary.md)
+* [Glossary](for-mod-users/glossary.md)
 
 ## For Mod Users:
 

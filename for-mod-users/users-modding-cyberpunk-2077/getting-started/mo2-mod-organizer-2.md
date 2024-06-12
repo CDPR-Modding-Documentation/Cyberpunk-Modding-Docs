@@ -15,7 +15,7 @@ If you want to improve the guide, you are [very welcome](https://app.gitbook.com
 ### Installing mods
 
 * Install MO2
-* Install CET and Red4ext manually (or with rootbuilder). These mods are script extenders and must be in the roor game folder.
+* Install CET and Red4ext manually (or with rootbuilder). These mods are script extenders and must be in the root game folder.
 * Install the rest of the mods simply with the Nexus "install with manager" button
 * Always launch the game through MO2
 
