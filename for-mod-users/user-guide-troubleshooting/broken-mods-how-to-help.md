@@ -52,7 +52,7 @@ If you can **reliably reproduce** the problem (that's Netrunner speech for "it h
 
 ### For a core framework
 
-If your problem child isn't one of [these mods](../../for-mod-creators/core-mods-explained/), you don't need to read this.
+If your problem child isn't one of [these mods](../../for-mod-creators-theory/core-mods-explained/), you don't need to read this.
 
 The core frameworks are generally **extremely stable**. That's not to say that they don't have bugs, but such bugs are generally found and fixed quickly.&#x20;
 
@@ -131,7 +131,7 @@ Find your individual save game folder (e.g. `AutoSave-0`) and [create a zip](htt
 
 ### Crash report
 
-**When:** If the problem child is one of the [core frameworks](../../for-mod-creators/core-mods-explained/).
+**When:** If the problem child is one of the [core frameworks](../../for-mod-creators-theory/core-mods-explained/).
 
 {% hint style="info" %}
 These mods are the foundation that everything else builds on, and the people who develop and maintain them are incredibly competent. Please don't waste their time — make **very sure** that you have [isolated](broken-mods-how-to-help.md#step-1-isolate) the problem. You don't call your internet provider before checking your network cable and restarting your router!

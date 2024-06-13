@@ -4,11 +4,13 @@ description: This page will tell you how to find the right log file for your pro
 
 # Finding and reading log files
 
-## A list of framework logfiles
+## Summary
 
 This section has a list of log files by framework. If you've arrived here from one of the troubleshooting channels on [Discord](https://discord.gg/redmodding), the file you're supposed to find is most likely in this list.
 
 If you aren't looking for a particular log file, please proceed to [the next section](finding-and-reading-log-files.md#finding-the-log-files).
+
+## A list of framework logfiles
 
 {% hint style="info" %}
 The paths below are given **relative** to your [**Cyberpunk 2077 install directory**](#user-content-fn-1)[^1]**.**

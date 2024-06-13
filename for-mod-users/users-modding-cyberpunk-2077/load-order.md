@@ -2,12 +2,11 @@
 description: How does load order work in Cyberpunk?
 ---
 
-# Load Order
+# Archive files Load Order
 
 ## Summary
 
-Written by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Published on Nov 22, 2023
+**Written & Published**: Nov 22, 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will explain to you what Load Order is and how it works, then tell you how to influence it.
 
@@ -89,4 +88,4 @@ You will forget the warning above and re-learn this the hard way.
 
 If you are creating a **compatibility mod** (something that modifies the files of another installed mod), then yours needs to load **first**.
 
-For example, if you want to do a custom recolour of the mod [`_ArchiveXL_Netrunner_Variants.archive`](../../for-mod-creators/modding-guides/items-equipment/recolours-and-refits/), then your Wolvenkit project could be named `_00_ArchiveXL_Netrunner_Variants`, or `_ArchiveXL_Netrunner_00_Recolour`.
+For example, if you want to do a custom recolour of the mod [`_ArchiveXL_Netrunner_Variants.archive`](../../modding-guides/items-equipment/recolours-and-refits/), then your Wolvenkit project could be named `_00_ArchiveXL_Netrunner_Variants`, or `_ArchiveXL_Netrunner_00_Recolour`.

@@ -1,9 +1,11 @@
 # REDMod: Usage
 
+## Summary
+
 REDmod is a command line tool developed by CDPR and Yigsoft which can be used to stage installed mods to work with a modded game.
 
 {% hint style="info" %}
-This section is for managing mods with Redmod. For creating mods, see [modding-guides](../../../for-mod-creators/modding-guides/ "mention")
+This section is for managing mods with Redmod. For creating mods, see [Broken link](broken-reference "mention")
 {% endhint %}
 
 ## Why would I want this?

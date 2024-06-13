@@ -7,7 +7,7 @@ description: Only update once all frameworks are stable!
 
 
 {% hint style="info" %}
-Things fall down when you let go of them, and mods break whenever a game updates. That is due to [framework compatibility](../../for-mod-creators/core-mods-explained/).&#x20;
+Things fall down when you let go of them, and mods break whenever a game updates. That is due to [framework compatibility](../../for-mod-creators-theory/core-mods-explained/).&#x20;
 
 **Always make sure that your framework mods are up-to-date.**
 

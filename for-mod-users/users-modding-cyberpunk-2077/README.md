@@ -15,7 +15,7 @@ description: Modding your game, for users
 
 This page will teach you how to **install mods manually.**&#x20;
 
-* If you want to create mods instead, check the [modding-guides](../../for-mod-creators/modding-guides/ "mention") section
+* If you want to create mods instead, check the [Broken link](broken-reference "mention") section
 * If you need help installing Cyberpunk, check [getting-started](getting-started/ "mention")
 * If your modded install is acting up, please check [user-guide-troubleshooting](../user-guide-troubleshooting/ "mention")
 
@@ -88,7 +88,7 @@ Some requirements have requirements of their own. Make sure to check.
 Although Cyberpunk natively supports modding, this out-of-the-box support is limited. To allow greater freedom, a number of **core mods** have been created to allow e.g. adding items, influencing the weather, or add flying cars.
 
 {% hint style="warning" %}
-Since this kind of mod interacts with the game's executable (`.exe`), they will break every time CDPR updates. This is the reason why game updates break mods — we recommend to [**turn off auto-update**](users-downgrading-preventing-auto-updates.md) and manually upgrading once the frameworks you need have been brought up-to-date. To learn more about this, check [core-mods-explained](../../for-mod-creators/core-mods-explained/ "mention").
+Since this kind of mod interacts with the game's executable (`.exe`), they will break every time CDPR updates. This is the reason why game updates break mods — we recommend to [**turn off auto-update**](users-downgrading-preventing-auto-updates.md) and manually upgrading once the frameworks you need have been brought up-to-date. To learn more about this, check [core-mods-explained](../../for-mod-creators-theory/core-mods-explained/ "mention").
 {% endhint %}
 
 ### Overview of mod folders
@@ -99,7 +99,7 @@ TL;DR: you can ignore this unless you want to understand how things work, or wan
 
 This list is supposed to give you an overview of which files go where. It is **not** a bucket list of things you have to install.
 
-To learn more about the individual frameworks, check [core-mods-explained](../../for-mod-creators/core-mods-explained/ "mention")
+To learn more about the individual frameworks, check [core-mods-explained](../../for-mod-creators-theory/core-mods-explained/ "mention")
 
 <table><thead><tr><th width="256">Directory</th><th>explanation</th></tr></thead><tbody><tr><td>\<code>mods</code></td><td><a data-mention href="redmod/">redmod</a> directory: contains .archive mods (in subfolders). <br>Contains only a .stub file if empty.</td></tr><tr><td>\<code>archive\pc\mod</code></td><td>Default mod directory: contains .archive mods and .xl files in <code>legacy</code> (non-REDmod) format. Most of your mods should be here.</td></tr><tr><td>\<code>bin\x64\plugins</code></td><td>Plugins like <a href="https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/"><strong>Cyber Engine Tweaks</strong></a> and RadioExt</td></tr><tr><td><code>\r6\scripts</code></td><td>Redscript mods (<strong>not</strong> the same as REDmod)</td></tr><tr><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr><tr><td>\<code>archive\pc\patch</code></td><td>Mod directory from before 1.3. Use <code>\archive\pc\mod</code> instead.</td></tr></tbody></table>
 

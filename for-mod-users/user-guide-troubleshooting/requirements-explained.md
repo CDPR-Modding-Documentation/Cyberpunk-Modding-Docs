@@ -25,7 +25,7 @@ Most of them are other mods.
 <figure><img src="https://i.imgur.com/pBMF2XN.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-[Do you want to know more (about the core mods and what they do)?](../../for-mod-creators/core-mods-explained/)
+[Do you want to know more (about the core mods and what they do)?](../../for-mod-creators-theory/core-mods-explained/)
 {% endhint %}
 
 ### Can't I download a mod and be done with it?
@@ -68,7 +68,7 @@ If you aren't there yet, open your Cyberpunk 2077 **game folder** ("Browse local
 
 1. Use the Windows Search to find a matching log file (e.g. search for the mod's name - [here](finding-and-reading-log-files.md) are more instructions if you need them).&#x20;
 2. If you have found a log file, read on under [#a-log-file-exists](requirements-explained.md#a-log-file-exists "mention")
-3. If you have not found one or if it contains no errors or warnings, go to [your-own-hud-icons.md](../../for-mod-creators/modding-guides/custom-icons-and-ui/your-own-hud-icons.md "mention")
+3. If you have not found one or if it contains no errors or warnings, go to [your-own-hud-icons.md](../../modding-guides/custom-icons-and-ui/your-own-hud-icons.md "mention")
 
 ### A log file exists
 

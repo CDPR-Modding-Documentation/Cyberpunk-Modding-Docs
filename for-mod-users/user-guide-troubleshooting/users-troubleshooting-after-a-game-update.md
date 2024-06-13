@@ -16,7 +16,7 @@ If you are on Linux and have exhausted these options, make sure to double-check 
 
 ## What can I do?
 
-The first step is to update your core frameworks. Check every mod on [this page](../../for-mod-creators/core-mods-explained/) — make sure that you have a version from **after the update**.
+The first step is to update your core frameworks. Check every mod on [this page](../../for-mod-creators-theory/core-mods-explained/) — make sure that you have a version from **after the update**.
 
 ### There are no framework updates!
 

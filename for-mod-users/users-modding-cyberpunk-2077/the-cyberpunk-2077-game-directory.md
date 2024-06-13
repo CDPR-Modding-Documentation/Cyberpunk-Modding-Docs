@@ -4,7 +4,7 @@ description: What is your game directory, where can you find it?
 
 # The Cyberpunk 2077 Game Directory
 
-Summary
+## Summary
 
 **Published:** Jan 27 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** Jan 27 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")

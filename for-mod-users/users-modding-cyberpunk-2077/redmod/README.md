@@ -4,10 +4,12 @@ description: https://www.cyberpunk.net/en/modding-support
 
 # REDmod
 
+## Summary
+
 REDmod is a **modding framework** and a set of command line **tools** for modding _Cyberpunk 2077_ that allow you to compile script and tweak source files and allow for sound and animation modding.
 
 {% hint style="success" %}
-If you already have REDMod installed and just want to enable mods, check [here](../../../for-mod-users/users-modding-cyberpunk-2077/redmod/usage.md#activating-mods).
+If you already have REDMod installed and just want to enable mods, check [here](usage.md#activating-mods).
 
 You can find the log file under `tools\redmod\bin\REDmodLog.txt`.
 {% endhint %}

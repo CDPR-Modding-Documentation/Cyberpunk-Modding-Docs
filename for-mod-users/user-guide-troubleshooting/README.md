@@ -4,6 +4,8 @@ description: If your mods are causing trouble, here's what you can do
 
 # 🆘 Troubleshooting
 
+## Summary
+
 This page contains[^1] troubleshooting[^2] information for people who are **using** mods rather than making mods. You will find step-by-step guides, grouped by different problems.
 
 {% hint style="info" %}
@@ -23,7 +25,7 @@ Before you start debugging, make sure that&#x20;
 {% endhint %}
 
 {% hint style="warning" %}
-Before you start debugging, **update your mods** and make sure that **all dependencies** have the latest version, in particular the [core mods](../../for-mod-creators/core-mods-explained/) ([Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/)).
+Before you start debugging, **update your mods** and make sure that **all dependencies** have the latest version, in particular the [core mods](../../for-mod-creators-theory/core-mods-explained/) ([Redscript](https://github.com/jac3km4/redscript/releases/), [Red4ext](https://github.com/WopsS/RED4ext/releases), [Cyber Engine Tweaks](https://github.com/yamashi/CyberEngineTweaks/releases), [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases/) and [TweakXL](https://github.com/psiberx/cp2077-tweak-xl/releases/)).
 
 If you are on RED4Ext >= 1.13, make sure to **uninstall** cybercmd!
 
@@ -720,7 +722,7 @@ Let's go about it step-by-step.
 This step will tell you how to set up your Cyberpunk install with the necessary dependencies so that you can start modding.
 {% endhint %}
 
-Check the [framework page](../../for-mod-creators/core-mods-explained/). For each of the frameworks, complete the following steps:
+Check the [framework page](../../for-mod-creators-theory/core-mods-explained/). For each of the frameworks, complete the following steps:
 
 * If you didn't have it in your previous install, skip it.
 * Install it (manually or via Vortex, your choice)
@@ -1409,7 +1411,7 @@ Open up that file in a text editor like [Notepad++](https://notepad-plus-plus.or
 Sometimes, such mistakes are trivial — a forgotten **,** or incorrect file encoding. Often, they are not.
 
 {% hint style="info" %}
-A tip for [nil access error in lua](../../for-mod-creators/references-lists-and-overviews/scripting/scripting-best-practices-pitfalls.md#fixing-preventing-nil-access)
+A tip for [nil access error in lua](../../for-mod-creators-theory/references-lists-and-overviews/scripting/scripting-best-practices-pitfalls.md#fixing-preventing-nil-access)
 {% endhint %}
 
 #### Ascending from user to modder
