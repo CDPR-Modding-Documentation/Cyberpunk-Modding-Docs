@@ -17,9 +17,9 @@ This page tells you which texture frameworks exist, which bodies they support, a
 
 As of February 2024, there are two texture frameworks (and if the heavens are kind, there won't be any more):
 
-### [The Unique V Framework](https://www.nexusmods.com/cyberpunk2077/mods/3783)&#x20;
+### [The Unique V Texture Framework](https://www.nexusmods.com/cyberpunk2077/mods/3783)&#x20;
 
-Also known as "UV" or "KS UV", this was the initial [body and tattoo framework](https://www.nexusmods.com/cyberpunk2077/mods/3783) from early 2022, created by [Zosoab70](https://next.nexusmods.com/profile/zosoab70/mods) and [AllKnowingLion](https://next.nexusmods.com/profile/AllKnowingLion/mods), and released by their team account, "[KnowSo](https://next.nexusmods.com/profile/KnowSo/mods?gameId=3333)".                                  Download [**UV Modders Resource**](https://www.nexusmods.com/cyberpunk2077/mods/3783?tab=files) under Miscellaneous files
+Also known as "UV" or "KS UV", this was the initial [body and tattoo framework](https://www.nexusmods.com/cyberpunk2077/mods/3783) from early 2022, created by [Zosoab70](https://next.nexusmods.com/profile/zosoab70/mods) and [AllKnowingLion](https://next.nexusmods.com/profile/AllKnowingLion/mods), and released by their team account, "[KnowSo](https://next.nexusmods.com/profile/KnowSo/mods?gameId=3333)".                                  Download [**UV Modders Resource**](https://www.nexusmods.com/cyberpunk2077/mods/3783?tab=files) under Miscellaneous files.
 
 #### Supported body mods:
 
@@ -71,21 +71,21 @@ The texture files for UV are separated by body gender.
 
 Primarily, the basic difference is the [UV layout](../../../../materials/uv-mapping-texturing-a-3d-object.md) of the body/arm textures between the base version of the UV Framework, and VTK. Beyond that other features include:
 
-| KS UV                                                 | VTK                                                                                             |
-| ----------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
-| Unique body and head textures                         | Unique body and head textures                                                                   |
-| Arms on same texture as the rest for basic version    | Arms on different texture                                                                       |
-| Add-on version for further arm texture layout options | Requires/utilizes [Unique Arms](https://www.nexusmods.com/cyberpunk2077/mods/2644) by Halvkyrie |
-| Unique normals map for base version                   | Unique normals map                                                                              |
-| Secondary body normals map                            | Alternate texture for foot submeshes                                                            |
-| Secondary head normals map                            | Same body overlays for each body gender (?)                                                     |
-| Unique head roughness map                             | Emissive (glow) overlay                                                                         |
-| Unique normals maps for arms with Add-on version      |                                                                                                 |
-| Separate body overlays for each body gender           |                                                                                                 |
-| Emissive (glow) overlay                               |                                                                                                 |
-| Unique tint-color mask                                |                                                                                                 |
-| Cyberarms built in to base version                    |                                                                                                 |
-| Unique Skintone .mi (Material instance) files         |                                                                                                 |
-| Unique Eyebrows                                       |                                                                                                 |
+| KS UV                                                                   | VTK                                                                                             |
+| ----------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Unique body and head textures                                           | Unique body and head textures                                                                   |
+| Arms on same texture as the rest for basic version                      | Arms on different texture                                                                       |
+| Add-on version for further arm texture layout options                   | Requires/utilizes [Unique Arms](https://www.nexusmods.com/cyberpunk2077/mods/2644) by Halvkyrie |
+| Unique normals map for base version                                     | Unique normals map                                                                              |
+| Secondary body normals map                                              | Alternate texture for foot submeshes                                                            |
+| Secondary head normals map                                              | Same body overlays for each body gender (?)                                                     |
+| Unique head roughness map                                               | Emissive (glow) overlay                                                                         |
+| Unique normals maps for arms with Add-on version                        |                                                                                                 |
+| Separate body overlays for each body gender                             |                                                                                                 |
+| Separate Emissive (glow) overlays for both body and head of each gender |                                                                                                 |
+| Unique tint-color mask for each gender                                  |                                                                                                 |
+| Cyberarms built in to base version                                      |                                                                                                 |
+| Unique Skintone .mi (Material instance) files                           |                                                                                                 |
+| Unique Eyebrows (Secondary download file)                               |                                                                                                 |
 
 (TODO: post screenshots with outlines)
