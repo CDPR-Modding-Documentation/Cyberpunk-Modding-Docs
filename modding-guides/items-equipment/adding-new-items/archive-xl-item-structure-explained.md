@@ -291,11 +291,11 @@ An entry will look as follows:
 
 For ArchivXL >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.4.0-rc2), appearance overrides can understand the following variables for `meshAppearance`:
 
-|                |                                                                                                                                     |
-| -------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| `{gender}`     | m or w depending on V's body gender                                                                                                 |
-| `{skin_color}` | [skin color appearance name](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) |
-| `{hair_color}` | [hair color appearance name](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md)              |
+|                |                                                                                                                              |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| `{gender}`     | m or w depending on V's body gender                                                                                          |
+| `{skin_color}` | [skin color appearance name](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) |
+| `{hair_color}` | [hair color appearance name](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md)              |
 
 {% hint style="success" %}
 If you don't know what this means, skip it and wait for the full step-by-step guide!

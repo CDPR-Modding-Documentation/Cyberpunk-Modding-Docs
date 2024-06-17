@@ -17,7 +17,7 @@ This guide will teach you how to&#x20;
 
 ### Wait, this is not what I want!
 
-* For an overview of existing hair files and -colours, check [hair.md](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
+* For an overview of existing hair files and -colours, check [hair.md](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
 * For a more detailed guide on hair physics, check [dangle-bones](../../for-mod-creators-theory/3d-modelling/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../for-mod-creators-theory/3d-modelling/dangle-bones/moving-a-dangle-chain.md "mention")
 
 You can find a video tutorial by eagul on youtube:
@@ -124,7 +124,7 @@ You always have to do this, even if you want to add your hair via ArchiveXL as a
 Search for a vanilla hairstyle from the game that resembles your physics part the most, and export them with Wolvenkit.&#x20;
 
 {% hint style="info" %}
-You can find overviews of all existing hair styles under [hair.md](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
+You can find overviews of all existing hair styles under [hair.md](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
 {% endhint %}
 
 What you want to look for is how much the vanilla hairstyle overlaps with your mod hairstyle. The closer their shape resembles, the better. In this case, I find hairstyle 05 to be the most suitable, so I export that mesh, as well as their rig and animgraph.

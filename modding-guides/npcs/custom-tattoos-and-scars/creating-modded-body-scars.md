@@ -7,9 +7,7 @@ description: This guide will teach you how to create scars on modded body KS_UV 
 ## **Summary**
 
 **Published**: Feb 29 2024 by Yggnire, initial guide by Yggnire\
-**Last documented edit**: Feb 29 2024 by Yggnire
-
-
+**Last documented edit**: June 15 2024 by LadyLea
 
 ### Level of difficulty
 
@@ -44,13 +42,7 @@ KS\_UV project name should be `005_modname`
 
 VTK project name should be `#00_modname`  The # is really important
 
-
-
-
-
 2. To create modded body scars , you need the following files
-
-
 
 | Framework                                           | Files name                       | gender/body part           |
 | --------------------------------------------------- | -------------------------------- | -------------------------- |
@@ -84,11 +76,13 @@ You can find them by navigating the [Wolvenkit Asset Browser](https://app.gitboo
 
 <mark style="color:red;">VTK Body Path :</mark>
 
-`base\v_textures\body`
+`base\v_textures\body` (female & male)
 
 <mark style="color:red;">VTK Arms Path :</mark>&#x20;
 
-`base\characters\player\femme\body\arms\textures`
+`base\characters\player\femme\body\arms\textures` (female)
+
+`base\characters\player\masculine\body\arms\textures` (male)
 
 <mark style="color:red;">VANILLA (for KS\_UV) Head Path :</mark>&#x20;
 

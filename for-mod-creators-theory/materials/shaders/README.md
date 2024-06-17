@@ -20,7 +20,7 @@ It's important to remember that materials are simply instances of shaders. The v
 
 ### The Daisy Chain
 
-Meshes rarely use shaders directly, but instead rely on any number of [.mi files](../../files-and-what-they-do/materials/re-using-materials-.mi.md) (check the player's [skin materials](../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) for an example, or check [re-using-materials-.mi.md](../../files-and-what-they-do/materials/re-using-materials-.mi.md "mention") ->[#why-do-i-need-this](../../files-and-what-they-do/materials/re-using-materials-.mi.md#why-do-i-need-this "mention")).&#x20;
+Meshes rarely use shaders directly, but instead rely on any number of [.mi files](../../files-and-what-they-do/materials/re-using-materials-.mi.md) (check the player's [skin materials](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) for an example, or check [re-using-materials-.mi.md](../../files-and-what-they-do/materials/re-using-materials-.mi.md "mention") ->[#why-do-i-need-this](../../files-and-what-they-do/materials/re-using-materials-.mi.md#why-do-i-need-this "mention")).&#x20;
 
 {% hint style="success" %}
 If the [**baseMaterial** path](../../files-and-what-they-do/3d-objects-.mesh-files/#materialinstance-the-local-material) ends in .mi, you're looking at a daisy chain.

@@ -13,8 +13,8 @@ This page gives an explanation of properties for the hair and skin shaders.&#x20
 
 ### Wait, that's not what I want!
 
-* You can look up different hairstyles and -colours under [hair.md](../../references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
-* You can look up information about skin under [cheat-sheet-body.md](../../references-lists-and-overviews/cheat-sheet-body.md "mention") and [cheat-sheet-head](../../references-lists-and-overviews/cheat-sheet-head/ "mention")
+* You can look up different hairstyles and -colours under [hair.md](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
+* You can look up information about skin under [cheat-sheet-body.md](../../references-lists-and-overviews/cheat-sheet-body.md "mention") and [cheat-sheet-head](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/ "mention")
 * Or you can learn more about [custom-tattoos-and-scars](../../../modding-guides/npcs/custom-tattoos-and-scars/ "mention")
 * Or you can learn how to make a [custom hair profile](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#hair-profiles-.hp) with the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention")
 

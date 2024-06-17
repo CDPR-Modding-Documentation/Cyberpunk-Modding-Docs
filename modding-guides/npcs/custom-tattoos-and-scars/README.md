@@ -7,7 +7,7 @@ description: How to make custom skin textures, tattoos textures, and scars textu
 ## Summary
 
 **Published**: Feb 03 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit**: Feb 22 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit**: June 14 2024 by LadyLea
 
 This page collects information on making custom skins, tattoos and scars for V and NPCs.
 

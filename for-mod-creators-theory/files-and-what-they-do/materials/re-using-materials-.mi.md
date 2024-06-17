@@ -16,7 +16,7 @@ As of May 2024, you can also use [archivexl-dynamic-materials.md](../../../moddi
 
 A .mi file **encapsulates** a material in a **reusable** template file, which you can use a .mi file as `base material` in a [material definition](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-3-material-definition).
 
-It is possible to use multiple .mi files in a row. For an example of this, check the player's [skin materials](../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index).
+It is possible to use multiple .mi files in a row. For an example of this, check the player's [skin materials](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index).
 
 <figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Daisy_chain.JPG/1200px-Daisy_chain.JPG" alt=""><figcaption><p>The technical term for doing this is "daisy chaining". (Image: Wikimedia commons). Caution: Cyclic dependencies <em>will</em> crash your game!</p></figcaption></figure>
 
