@@ -6,7 +6,7 @@ description: >-
 
 # Custompathing assets
 
-**Published: January 16 2024  by @madmaximusjb**
+**Published: January 16 2024 by @madmaximusjb and** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will teach you how to set game assets as new files. Don't worry, it's really simple!\
 We're taking this Liberty handgun mesh (I think it used to belong to some Dexter guy\`?) and make our own copy of the file.
