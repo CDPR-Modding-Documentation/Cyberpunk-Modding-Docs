@@ -110,7 +110,7 @@ Now, you must go back to Wolvenkit to import the mesh. Even though you exported 
 Cool! You've just edited your first body mesh! Now we can change the shirt to account for our changes.
 
 {% hint style="info" %}
-Keep in mind that instead of modifying the mesh in the game files, you could have made a copy of the mesh, modified that, and pointed the .app file to use that mesh. The same thing applies for the clothes.
+Keep in mind that instead of modifying the mesh in the game files, you could have made a copy of the mesh, modified that, and pointed the .app file to use that mesh. The same thing applies for the clothes. Find out how to custompath assets here: [Custompathing](../items-equipment/custompathing-assets.md)
 {% endhint %}
 
 ## Modifying the Clothes
