@@ -153,7 +153,7 @@ Extract the downloaded archive directly into your [Cyberpunk 2077 directory](#us
 
 <figure><img src="../../../.gitbook/assets/netrunner_variants_manual_install.png" alt=""><figcaption><p>This shows the <a href="https://www.7-zip.org/download.html">7zip</a> interface. If you're using a different program, this won't look the same, but the general steps are the same.</p></figcaption></figure>
 
-3. These files need to go directly into your [Cyberpunk 2077 game directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md), where they will merge with the existing folders. (Check the link if you're not sure how to find it)
+3. These files need to go directly into your [Cyberpunk 2077 game directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/), where they will merge with the existing folders. (Check the link if you're not sure how to find it)
 4. **Extract** or **copy** them to that folder. If you're asked to overwrite existing files, click `Yes`.
 
 <details>

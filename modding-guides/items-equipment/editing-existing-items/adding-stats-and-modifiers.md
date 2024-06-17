@@ -15,7 +15,7 @@ It will point you towards further reading material in case you want to dig deepe
 
 ## How to mod it
 
-Find [the-cyberpunk-2077-game-directory.md](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md "mention"). Then, create the following **text document** (you can name it what you want):
+Find [the-cyberpunk-2077-game-directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/ "mention"). Then, create the following **text document** (you can name it what you want):
 
 ```
 r6/tweaks/my_improved_item.yaml

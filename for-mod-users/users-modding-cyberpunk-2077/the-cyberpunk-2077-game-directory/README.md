@@ -34,7 +34,7 @@ You browse through this using the Windows Explorer.
 
 Click on the picture below to zoom in!
 
-<img src="../../.gitbook/assets/cyberpunk_dir_windows_explorer.png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/cyberpunk_dir_windows_explorer.png" alt="" data-size="original">
 
 
 
@@ -53,7 +53,7 @@ You can open a Windows Explorer in the game folder like this:
 3. Copy and paste the game path from the table above into the text box
 4. Press `Enter` or click `OK`
 
-<figure><img src="../../.gitbook/assets/game_folder_open_explorer.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/game_folder_open_explorer.png" alt=""><figcaption></figcaption></figure>
 
 ### It's not there!
 
@@ -63,19 +63,19 @@ If you don't know your game directory, you can find it in your client:
 
 Right-click on the game in your library, then select `Manage` -> `Browse local files`
 
-<figure><img src="../../.gitbook/assets/cyberpunk_game_directory_steam.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cyberpunk_game_directory_steam.png" alt=""><figcaption></figcaption></figure>
 
 #### GOG
 
 With the game selected in your library, click on the `More` button, then on `Manage Installation` and `Show folder…`
 
-<figure><img src="../../.gitbook/assets/cyberpunk_dir_gog_show_files.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cyberpunk_dir_gog_show_files.png" alt=""><figcaption></figcaption></figure>
 
 #### Epic
 
 Right-click on your game in the list and select `Manage`. Then, click on the folder icon:
 
-<figure><img src="../../.gitbook/assets/cyberpunk_game_directory_epic.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/cyberpunk_game_directory_epic.png" alt=""><figcaption></figcaption></figure>
 
 ## Deleting residual files with Windows Search
 
@@ -83,7 +83,7 @@ Once the Cyberpunk folder is open in your Windows Explorer, you can use the `Win
 
 For example, if you have trouble with atelier and have decided to do a clean reinstall, you can search for `atelier`:
 
-<figure><img src="../../.gitbook/assets/using_windows_search.png" alt=""><figcaption><p>This will also find most of your atelier stores. If you use Vortex, that's no problem - otherwise, you may want to backup before you delete.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/using_windows_search.png" alt=""><figcaption><p>This will also find most of your atelier stores. If you use Vortex, that's no problem - otherwise, you may want to backup before you delete.</p></figcaption></figure>
 
 You're seeing the atelier install folder (good) and a bunch of atelier stores (bad, these are innocent). \
 You can either double-click on the `virtual-atelier-full` folder (first item) to navigate there, or use any of the following options.
@@ -92,7 +92,7 @@ You can either double-click on the `virtual-atelier-full` folder (first item) to
 
 If you right-click on a folder or file, you will see a menu entry "open folder/file location". This will open a new Windows Explorer window in the folder **containing** the item you selected, letting you browse and delete.
 
-<figure><img src="../../.gitbook/assets/windows_search_open_folder.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/windows_search_open_folder.png" alt=""><figcaption></figcaption></figure>
 
 ### Deleting from the search results
 

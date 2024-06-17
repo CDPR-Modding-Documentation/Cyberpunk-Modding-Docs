@@ -31,4 +31,4 @@ Apply the effects to an item like this:
 
 ## Testing
 
-To test the applied effects, you can use [AngeVil's script](https://app.gitbook.com/s/-McniwB8YOK2HnJ7SYg\_/references-and-examples/weapons#weapon-damage-debugging). Simply copy the code into a new file inside of [Cyberpunk 2077](../../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md)`/r6/scripts/`, e.g. `debug_damage_types.reds`. After starting up the game and hitting people with your weapon, you can see the log output via CET.
+To test the applied effects, you can use [AngeVil's script](https://app.gitbook.com/s/-McniwB8YOK2HnJ7SYg\_/references-and-examples/weapons#weapon-damage-debugging). Simply copy the code into a new file inside of [Cyberpunk 2077](../../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/)`/r6/scripts/`, e.g. `debug_damage_types.reds`. After starting up the game and hitting people with your weapon, you can see the log output via CET.

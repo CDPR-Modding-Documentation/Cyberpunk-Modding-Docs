@@ -135,7 +135,7 @@ Cyberpunk 2077 encountered an error caused by a corrupted or missing TweakDB fil
 
 If you run into the error above, or if the game complains about attempting to read inaccessible memory, do this:&#x20;
 
-1. Go to your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md) and find the folder`r6\cache`.&#x20;
+1. Go to your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/) and find the folder`r6\cache`.&#x20;
 2. Find the file`tweakDB.bin` and copy it (`Ctrl+C`)
 3. `In r6\cache`, browse to the folder `modded` (create it if it doesn't exist)&#x20;
 4. paste `tweakDB.bin` here (`Ctrl+V`)
@@ -506,7 +506,7 @@ If you don't want to download and run script files from the internet, you can go
 2. Now, do either of the following things:&#x20;
    1. Move it to your Cyberpunk install folder and double-click it
    2. Drag-and drop your Cyberpunk folder on the file that you downloaded
-3. After running, the script will have created a folder `_LOGS` in your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md), which contains a file listing all the log files for you.
+3. After running, the script will have created a folder `_LOGS` in your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/), which contains a file listing all the log files for you.
 
 The list will give you useful information along with a list of files to check. Once you've found the broken mod, you can go [here](./#dealing-with-a-broken-mod) for instructions on how to troubleshoot further – they also tell you when you should ask for help!
 
@@ -979,7 +979,7 @@ This workflow is geared at the exact error above. If you have a different one, i
 
 In the past, Codeware wasn't a standalone mod, but was instead [**bundled**](#user-content-fn-29)[^29] inside of other mods. Since that is different now, the leftover versions can cause errors.
 
-1. Search your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md) for `Codeware`.&#x20;
+1. Search your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/) for `Codeware`.&#x20;
 2. If you have exactly one folder, this is not your problem — proceed to [the next step](./#1.-make-sure-that-you-have-the-latest-versions).
 3. Delete everything you have found.
 4. Reinstall the latest version of [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780) from Nexus.
@@ -1110,7 +1110,7 @@ Here's how to fix your sudden indecent exposure.
 
 You have an **outdated** or **two different** versions of [Kala's Unique Eyes](https://www.nexusmods.com/cyberpunk2077/mods/1937) installed.&#x20;
 
-Make sure to uninstall all your eye mods, then open your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md)[ ](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md)and use the Windows Search for e.g. `kala`. Make sure to delete all leftover files!
+Make sure to uninstall all your eye mods, then open your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/)[ ](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/)and use the Windows Search for e.g. `kala`. Make sure to delete all leftover files!
 
 ## I have another problem that isn't on this list
 
@@ -1139,14 +1139,14 @@ If you don't want to download and run script files from the internet, you can go
 
 1. Download the mod remover script by either
    * downloading it from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8597/) and following the install instructions
-   * grabbing it from [github](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/batch/cyberpunk2077\_disable\_all\_mods.bat) (**right-click -> save as**) and moving it to your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md)\
+   * grabbing it from [github](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/batch/cyberpunk2077\_disable\_all\_mods.bat) (**right-click -> save as**) and moving it to your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/)\
      _Link goes to the_ [_github repository_](https://github.com/manavortex/cyberpunk2077/blob/master/batch/cyberpunk2077\_disable\_all\_mods.bat) _of the person who wrote most of this guide_.
 2.  **Optional**: If you don't want the script to delete modded files for you (because you just want to disable mods), right-click on the file and select **Edit**, then find and delete line 6:
 
     ```
     set DELETE_FILES=1
     ```
-3. Make sure that the file is in your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory.md). If you downloaded from Nexus, you should have a `cyberpunk2077_disable_all_mods.bat.`
+3. Make sure that the file is in your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/). If you downloaded from Nexus, you should have a `cyberpunk2077_disable_all_mods.bat.`
 4. Double-click it
 5. Follow the instructions and prompts
 6. Verify your game files
