@@ -12,7 +12,7 @@ To add our models for the different parts, we’ll be looking mostly in the `.ap
 
 Open the “`AppearanceVisualController`” in the appearance’s item list. It should be the last item in the list. Then select the “`meshProxy`” value.
 
-<figure><img src="../../../../.gitbook/assets/image54.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image54.png" alt=""><figcaption></figcaption></figure>
 
 Go ahead and add this mesh to the project by clicking the yellow arrow.
 
@@ -26,7 +26,7 @@ Example:
 
 <div data-full-width="true">
 
-<figure><img src="../../../../.gitbook/assets/image5 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image5 (1).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -36,7 +36,7 @@ Your proxy mesh should now load in blender.&#x20;
 
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image60.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image60.png" alt=""><figcaption></figcaption></figure>
 
 You can now import your source 3d models for your vehicle.&#x20;
 
@@ -44,7 +44,7 @@ The proxy mesh will initially be positioned offset from other vanilla meshes. Th
 
 Example showing the offset:
 
-<figure><img src="../../../../.gitbook/assets/image129.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image129.png" alt=""><figcaption></figcaption></figure>
 
 To get the exact offset, open the `.rig` file located at this path in the `.ent` file:
 
@@ -53,11 +53,11 @@ To get the exact offset, open the `.rig` file located at this path in the `.ent`
 Open the `boneNames` list and look for the index (number to the left) of “`Base`”, in this case 2:\
 
 
-<figure><img src="../../../../.gitbook/assets/image128.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image128.png" alt=""><figcaption></figcaption></figure>
 
 Then close `boneNames` and open `boneTransforms`. Open the same index value as “`Base`” and look at the translation values:
 
-<figure><img src="../../../../.gitbook/assets/image78.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image78.png" alt=""><figcaption></figcaption></figure>
 
 (Values that are set at “`_.___E-17`” are in scientific notation, and if the `E` number is negative as they are here, the number is close to 0)
 
@@ -65,11 +65,11 @@ Then close `boneNames` and open `boneTransforms`. Open the same index value as �
 
 Look at the `Z` value and noticee how it is `0.4399999` in the example. (\~0.44) This is the number we will translate the proxy mesh by. Return to blender and select the proxymesh object. Translate it by the same value just found in the `.rig` file by using the `Transform Location` values in the `Object Properties` menu: (positive to negative)
 
-<figure><img src="../../../../.gitbook/assets/image115.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image115.png" alt=""><figcaption></figcaption></figure>
 
 Repeat the translation for all objects in the proxymesh collection:
 
-<figure><img src="../../../../.gitbook/assets/image98.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image98.png" alt=""><figcaption></figcaption></figure>
 
 The proxy mesh can be used as a reference in blender for scale. Note the porsche is especially convenient, as it has real-world dimensions available online. If you don’t know your source car’s size, (length, wheelbase, width) You can compare in-game between it and the Porsche, then convert those numbers as appropriate.
 
@@ -85,7 +85,13 @@ Fix positioning with the **move**, **rotate**, and **scale tools**. “**Numpad 
 
 Example with both rendered:
 
-<figure><img src="../../../../.gitbook/assets/image39.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image39.png" alt=""><figcaption></figcaption></figure>
+
+**Apply all transformations to all objects in blender.** This is required after any blender changes, if you skip this before exporting from Blender into WolvenKit, any positioning changes will not be saved.&#x20;
+
+{% hint style="info" %}
+Always Remember to apply all after modifying something in Blender.
+{% endhint %}
 
 Disable visibility on the proxy mesh for now, but leave it in the project as we’ll need it later.
 
@@ -117,19 +123,25 @@ Here’s a quick reference for the major groupings to look for:
 May be more or less of different components. Depends on source model.
 {% endhint %}
 
+Make a backup of your blender project often while editing. I suggest keeping multiple copies as you work with your model. While splitting/joining objects you might not realize certain components need to be different until later on in the mod project, and an older project file will be very helpful.
+
+I recommend creating “collections” or folders in blender, one for each component. Split and join the files as necessary to organize them together.
+
+Example of Collection/Folder/Object structure in Blender:
+
+<figure><img src="../../../.gitbook/assets/Capture1.PNG" alt=""><figcaption></figcaption></figure>
+
+For each component in the vehicle, you’ll want a separate collection to organize meshes together. Each mesh will need a separate object in Blender for each material layer.
+
+Here are the major mesh groupings you will want in your project:
+
+<figure><img src="../../../.gitbook/assets/image (382).png" alt=""><figcaption><p>(courtesy of Carryhan)</p></figcaption></figure>
+
+Split and join objects as needed to organize the Blender project structure.
+
 Join objects by selecting multiple, and using **Object > Join**:
 
-<figure><img src="../../../../.gitbook/assets/image14 (1).png" alt=""><figcaption></figcaption></figure>
-
-I recommend creating “collections” or folders in blender, one for each component. Split and join the files as necessary to organize them together. Feel free to add more categories and you see fit. Keep it categorized in a way that works for you. I start by separating body and body trim, and keeping car badges or small details separate until I decide how to add them to my model.
-
-Example of blender object structure:
-
-<figure><img src="../../../../.gitbook/assets/image102.png" alt=""><figcaption></figcaption></figure>
-
-Apply all transformations to all objects in blender.
-
-Make a backup of your blender project. I suggest keeping multiple copies as you work with your model. While splitting/joining objects you might not realize certain components need to be different until later on in the mod project, and an older project file will be very helpful.
+<figure><img src="../../../.gitbook/assets/image14 (1).png" alt=""><figcaption></figcaption></figure>
 
 Now we’ll import our first mesh into Cyberpunk.
 
@@ -137,7 +149,7 @@ In **wkit**, open the `.app` file and navigate to the default appearance. Open t
 
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image77.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image77.png" alt=""><figcaption></figcaption></figure>
 
 Use the **export tool** as we did with the proxy mesh to convert it to a `.glb` file.&#x20;
 
@@ -151,7 +163,7 @@ Make sure your body mesh is less than `65,635 vertices`. If any `.glb` file has 
 
 You can check the face count in the top left of your blender window:
 
-<figure><img src="../../../../.gitbook/assets/image154.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image154.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 This number counts all visible objects in blender. Turning off an object’s visibility removes it from the count
@@ -163,19 +175,19 @@ Use the **decimate** modifier (or other methods) to reduce the face count if nee
 
 Example adding decimate modifier:
 
-<figure><img src="../../../../.gitbook/assets/image84.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image84.png" alt=""><figcaption></figcaption></figure>
 
 For simplicity, we’ll join all the parts of the body into one object for exporting. We can split them as submeshes later, when we want to indicate separate materials within a mesh.
 
 With the body object selected, go to **File > Export > Export Selection to GLB for Cyberpunk**:
 
-<figure><img src="../../../../.gitbook/assets/image99.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image99.png" alt=""><figcaption></figcaption></figure>
 
 Save it to a new folder for your project’s `.glb` files.
 
 Copy the `.glb` file into the folder with the original exported body mesh.
 
-<figure><img src="../../../../.gitbook/assets/image116.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image116.png" alt=""><figcaption></figcaption></figure>
 
 Copy the original file’s name, delete it, and rename your new part with the old file’s name.
 
@@ -184,7 +196,7 @@ Open the import tool in wkit, find the correct body `.glb` and import it into th
 Select the updated `.mesh` file in the **Project Explorer**, and it will open in the **File Information** window. It should show your new mesh. \
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image29 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image29 (1).png" alt=""><figcaption></figcaption></figure>
 
 Rename your new `.mesh` file to a project-specific name, and move it to a custom folder. \
 Example:
@@ -199,7 +211,7 @@ Update your .app file with the path to the new body file. You’ll need to updat
 Test the mod in-game. It should look very wrong since we only replaced one mesh. \
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image176.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image176.png" alt=""><figcaption></figcaption></figure>
 
 Next, make all other visible components invisible while we’re modeling.
 
@@ -209,7 +221,7 @@ Easiest way to mark components as invisible is to break the `entVisualController
 
 I do this by renaming the file with an added “`-disabled`” in the name. This breaks the file path, and notes that it is disabled for reference later. example:
 
-<figure><img src="../../../../.gitbook/assets/image1 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image1 (2).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 **TheSpliffz** said : _" Not sure if this is due to 2.0 but only adding '`-disabled`' to the meshes name in the `EntVisualControllerComponent` doesn't seem to work._
@@ -219,18 +231,18 @@ _Adding '`-disabled`' to "`RDTDataViewModel > appearances > 0 > components > ent
 
 You will receive warning in the log when saving the .mesh if you use this method, be aware:
 
-<figure><img src="../../../../.gitbook/assets/image183.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image183.png" alt=""><figcaption></figcaption></figure>
 
 Save and test in-game. The renamed component should now not render in-game. Note that this only removes the visual mesh. The interactions still exist. \
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image90.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image90.png" alt=""><figcaption></figcaption></figure>
 
 Continue to change components until all except the modded body and wheels remain. Start with the major parts, bumpers, doors, etc. Test in-game frequently. Only disable parts that render in-game.
 
 Once you have disabled all the other components, you can see your model clearly and notice any initial problems. Expect the textures to be broken. Opposite sides may not render as we still need to add an interior. Example:
 
-<figure><img src="../../../../.gitbook/assets/image101.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image101.png" alt=""><figcaption></figcaption></figure>
 
 Some model issues may show themselves at this point. Check out the [“Fixing Body Glitches”](https://docs.google.com/document/d/1a5Xvviw\_GQxcvbxEwc3GoboaNk0igxlhiyS7ux34sIs/edit#heading=h.ftp5gbi7im8z) section of this document below.
 
@@ -256,7 +268,7 @@ Save and test.
 To add a new component instead of replacing a default one, you can duplicate the `entVisualControllerDependency` of the most similar component by right-clicking and selecting “`Duplicate Item in Array/Buffer`”. \
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image144.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image144.png" alt=""><figcaption></figcaption></figure>
 
 Edit the new component’s “`componentName`”, here I use “`body_02`”, as it is for exterior trim bodywork.
 
@@ -268,6 +280,6 @@ Example:
 Duplicate the `entPhysicalMeshComponent` of the part you are copying. Rename it with the “`name`” value to the one you used earlier, (`body_02`). Set the “`mesh`” value to the same mesh path. \
 Example:
 
-<figure><img src="../../../../.gitbook/assets/image82.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image82.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image30.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image30.png" alt=""><figcaption></figcaption></figure>
