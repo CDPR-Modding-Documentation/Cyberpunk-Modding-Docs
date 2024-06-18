@@ -186,3 +186,4 @@ Use only one main archive! \[[#\_nim\_more\_body\_meshes\_Gymfiend\_patch.archiv
 | [Hyst's Big Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/4654)                | EBBRB    | `&body=ebbrb`      |
 | [Hyst's Big Push Up Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/9083)        | EBBPRB   | `&body=ebbprb`     |
 | [Gymfiend](https://www.nexusmods.com/cyberpunk2077/mods/6423)                               | Gymfiend | `&body=gymfiend`   |
+| [Na's Flat Chest](https://www.nexusmods.com/cyberpunk2077/mods/6883)                        | Flat     | `&body=flat`       |
