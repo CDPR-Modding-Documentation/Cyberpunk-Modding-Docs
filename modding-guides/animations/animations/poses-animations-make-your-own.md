@@ -7,7 +7,7 @@ description: Make your own pose, then import it into photo mode
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published:** September 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last Documented Update:** Mar 04 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last Documented Update: June** 19 2024 by LadyLea
 
 This guide will teach you how to **create a custom pose** in Blender and import it into the game via **Wolvenkit**.&#x20;
 
@@ -23,7 +23,11 @@ If you have never done this before, don't do both at once. Or... do whatever, bu
 * For more general knowledge, check the [..](../ "mention")section.
 
 {% hint style="warning" %}
-We all stand on the shoulders of giants: this process has first been documented by [xbaebsae | Angy](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/), who also provided the [original animation templates](https://drive.google.com/file/d/1kL04dQy9xmK\_yRsvsS4Sn83joPzrljAr/view). Thank you!
+We all stand on the shoulders of giants: this process has first been documented&#x20;
+
+by [xbaebsae | Angy](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/), who also provided the [original animation templates](https://drive.google.com/file/d/1kL04dQy9xmK\_yRsvsS4Sn83joPzrljAr/view).&#x20;
+
+Thank you!
 {% endhint %}
 
 ### Skipping and skimming
@@ -81,12 +85,10 @@ You **can not move** these .glb files. Wolvenkit needs them to stay where they a
 
 Download the animation template(s) for your rig(s):
 
-* for single characters: from [Angy's Google Drive](https://drive.google.com/file/d/1kL04dQy9xmK\_yRsvsS4Sn83joPzrljAr/view)&#x20;
-* for multiple characters: [Zwei's edit](https://drive.google.com/u/0/uc?id=1okbjLQE23f-eUvrM85v1MoiNTRtiO66w\&export=download) of Angy's templates
+* for [single characters](https://drive.google.com/file/d/1kL04dQy9xmK\_yRsvsS4Sn83joPzrljAr/view): from Angy's Google Drive or check [Easy IK based Posing](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-ik-based-posing/)
+* for [multiple characters](https://drive.google.com/file/d/1KPMGrlNa-CEgsOi4YSIEn3g7U-DNC\_pP/view): Zwei's edit of Angy's templates
 
 Move/copy them somewhere, then open the one you want in Blender.&#x20;
-
-I'll be using Angy's template for female V, because ~~the other one doesn't exist~~ I happen to have one of those.
 
 ## Step 1: Posing the mannequin
 
