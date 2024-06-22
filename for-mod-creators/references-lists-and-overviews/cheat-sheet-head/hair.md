@@ -7,12 +7,12 @@ description: Overview of hair related things
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published**: November 04 2022 by @manavortex\
-**Last documented update**: January 14 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update**: June 22 2024 by LadyLea
 
 This page will give you an overview for working with Cyberpunk's hair material.&#x20;
 
 * For a guide on how to add hair to Cyberpunk, check [basic-hairstyle-replacement-tutorial.md](../../../modding-guides/npcs/basic-hairstyle-replacement-tutorial.md "mention")
-* For a more detailed explanation of the hair shader, see [Broken link](broken-reference "mention")
+* For a more detailed explanation of the hair shader, see [hair-and-skin-material-properties.md](../../../for-mod-creators-theory/materials/configuring-materials/hair-and-skin-material-properties.md "mention")
 * If you want to change an NPC's hair instead, you can check [this](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair) or [this](../../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components) guide.
 * To look up hairstyles in more detail, you can use [NoraLee's excellent NPV part picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker)
 
@@ -40,6 +40,10 @@ List has been confirmed working before 1.6, but might need updating (especially 
 ## Colour in files by index
 
 <table><thead><tr><th width="150">Colour in CC</th><th>Name in Files</th></tr></thead><tbody><tr><td>1</td><td>05_brown_liquorice</td></tr><tr><td>2</td><td>01_blonde_platinum</td></tr><tr><td>3</td><td>02_red_merlot</td></tr><tr><td>4</td><td>03_ginger_copper</td></tr><tr><td>5</td><td>04_teal_ombre</td></tr><tr><td>6</td><td>06_black_carbon</td></tr><tr><td>7</td><td>07_blonde_golden</td></tr><tr><td>8</td><td>08_blonde_dishwater</td></tr><tr><td>9</td><td>09_blue_sapphire</td></tr><tr><td>10</td><td>10_brown_ombre</td></tr><tr><td>11</td><td>11_red_apple</td></tr><tr><td>12</td><td>12_gray_gunmetal</td></tr><tr><td>13</td><td>13_ginger_strawberry</td></tr><tr><td>14</td><td>14_teal_ash</td></tr><tr><td>15</td><td>15_pink_magenta</td></tr><tr><td>16</td><td>16_pink_rose</td></tr><tr><td>17</td><td>17_blue_steel</td></tr><tr><td>18</td><td>18_blue_red_ombre</td></tr><tr><td>19</td><td>19_cold_white</td></tr><tr><td>20</td><td>20_cyberpunk_yellow</td></tr><tr><td>21</td><td>21_goblin_green</td></tr><tr><td>22</td><td>22_liliac</td></tr><tr><td>23</td><td>23_mermaid_aquamarine</td></tr><tr><td>24</td><td>24_purple_ombre</td></tr><tr><td>25</td><td>25_black_salt_n_pepper</td></tr><tr><td>26</td><td>26_green_toxic</td></tr><tr><td>27</td><td>27_brown_medium</td></tr><tr><td>28</td><td>28_blue_sky</td></tr><tr><td>29</td><td>29_citrus_yellow</td></tr><tr><td>30</td><td>30_dark_purple</td></tr><tr><td>31</td><td>31_green_orange</td></tr><tr><td>32</td><td>32_liliac_ombre</td></tr><tr><td>33</td><td>33_phoenix_fire</td></tr><tr><td>34</td><td>34_purple_blonde</td></tr><tr><td>35</td><td>35_silver_rose</td></tr></tbody></table>
+
+## Hair Colour - Visual Guide
+
+<figure><img src="../../../.gitbook/assets/HAIR COLOR - VISUAL GUIDE - BY LL.png" alt=""><figcaption><p>Hair Colours in CC - Visual Guide by LadyLea</p></figcaption></figure>
 
 ## Hair .ent files
 
