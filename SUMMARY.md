@@ -204,6 +204,7 @@
   * [Prereqs: customizable conditions](for-mod-creators-theory/tweaks/prereqs-customizable-conditions.md)
   * [Tweaks: Lists and references](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids)
   * [Tweak modding: Guides](for-mod-creators-theory/tweaks/tweak-modding-guides.md)
+  * [Creating Cyberware using TweakXL](for-mod-creators-theory/tweaks/creating-cyberware-using-tweakxl.md)
 
 ## Modding Guides
 
@@ -260,7 +261,7 @@
   * [Moving and renaming in existing projects](modding-guides/items-equipment/moving-and-renaming-in-existing-projects.md)
   * [Custompathing assets](modding-guides/items-equipment/custompathing-assets.md)
   * [First Person Perspective Fixes](modding-guides/items-equipment/first-person-perspective-fixes.md)
-  * [FPP Fixes: Easy Refitting Gloves for femV FPP Appearance - Guide by xbaebsae ](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-refitting-gloves-for-fpp-appearance/)
+  * [FPP Fixes: Easy Refitting Gloves for femV FPP Appearance - Guide by xbaebsae](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-refitting-gloves-for-fpp-appearance/)
   * [RIG-Swapping Garment for other body frames - Guide by PinkyDude](https://docs.google.com/document/d/1-hTJJ6eKrA\_kjcRI5hKwiGt4xbzuLhuLZk\_tTthb0Ao/edit?usp=drive\_link)
   * [Bulge Detector: Dynamic Bulge for trans-inclusive items - Guide by PinkyDude](https://docs.google.com/document/d/19OfktBQEUfsX62zgtGUv2Pm\_OYrfL02HYhz82wip2qo/edit#heading=h.kvak42tu0v94)
 * [🌈 Textures, LUTs and Materials](modding-guides/textures-and-luts/README.md)
