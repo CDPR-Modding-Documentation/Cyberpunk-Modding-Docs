@@ -1060,6 +1060,11 @@ According to InputLoader's [documentation](https://www.nexusmods.com/cyberpunk20
 
 Delete the file `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\bindings.json.` The game should let you bind a new key at the next startup.
 
+{% hint style="info" %}
+You can find more troubleshooting help for Cyber Engine Tweaks in the [corresponding wiki](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/getting-started/installing/troubleshooting): \
+[Cyber Engine Tweaks](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/ "mention") -> [Troubleshooting](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/getting-started/installing/troubleshooting "mention")
+{% endhint %}
+
 ## Photomode screenshots are blank
 
 With 1.62, screenshots are now saved to `Documents\CDPR\Cyberpunk\Screenshots` , and the previous location will receive an empty file.
