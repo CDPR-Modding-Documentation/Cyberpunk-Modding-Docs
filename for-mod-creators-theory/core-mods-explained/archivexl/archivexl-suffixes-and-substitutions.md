@@ -19,13 +19,17 @@ psiberx has found ways to make this less painful. This page documents these ways
 
 ### Wait, that's not what I want!
 
-* For a hands-on guide to [adding-new-items](../../../modding-guides/items-equipment/adding-new-items/ "mention"), check the corresponding pages under [Broken link](broken-reference "mention").&#x20;
+* For a hands-on guide to [adding-new-items](../../../modding-guides/items-equipment/adding-new-items/ "mention"), check the corresponding pages in the Modding Guides section
 * Dynamic appearances have their own guide (see [archivexl-dynamic-variants.md](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention"))
 * There is an own page for [influencing-other-items.md](../../../modding-guides/items-equipment/influencing-other-items.md "mention")
 
 ## Why are suffixes?
 
 Sometimes, you want to load different meshes/appearances under different circumstances. Before ArchiveXL 1.5, the only way to do that were suffixes — registering them in the `.yaml`, then adding one appearance for each variation in the root entity (so for 2 suffixes, you'd have 4 entries, for 3 suffixes, you'd have 8…).&#x20;
+
+{% hint style="warning" %}
+Suffixes are **outdated**! Do yourself a favour and use [dynamic appearances](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md)!
+{% endhint %}
 
 Since 1.5, psiberx has made it possible to use **conditionals** via [dynamic appearances](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md), which require a lot less of an overhead. (Personally, I've gone from 96 entries in the root entity down to 9!)
 
@@ -57,21 +61,18 @@ print(Game.GetScriptableSystemsContainer():Get("PuppetStateSystem"):GetBodyTypeS
 
 Sometimes, you need to hide parts of the item in first person. – for example helmets, since you don't want to have half a helmet floating in front of your face (unless you consider that immersive; most people don't).
 
-| Camera mode              | FPP    | substitution |
-| ------------------------ | ------ | ------------ |
-| First Person Perspective | `&FPP` | `fpp`        |
-| Third Person Perspective | `&TPP` | `tpp`        |
+<table><thead><tr><th>Camera mode</th><th width="116">Suffix</th><th>Substitution</th><th>Condition</th></tr></thead><tbody><tr><td>First Person Perspective</td><td><code>&#x26;FPP</code></td><td><code>fpp</code></td><td><code>&#x26;camera=fpp</code></td></tr><tr><td>Third Person Perspective</td><td><code>&#x26;TPP</code></td><td><code>tpp</code></td><td><code>&#x26;camera=tpp</code></td></tr></tbody></table>
 
 ### Arm states
 
 The arm states represent the different cyberware. For example, since you can't hire the forearms for mantis blades, you can roll up the sleeves just for this. The definitions are:
 
-| Cyberware           | Suffix                |                       |
-| ------------------- | --------------------- | --------------------- |
-| None                | `&BaseArms`           | `base_arms`           |
-| Mantis Blades       | `&MantisBlades`       | `mantis_blades`       |
-| Monowire            | `&Monowire`           | `monowire`            |
-| Projectile Launcher | `&ProjectileLauncher` | `projectile_launcher` |
+| Cyberware           | Suffix                | Substitution          | Conditional                 |
+| ------------------- | --------------------- | --------------------- | --------------------------- |
+| None                | `&BaseArms`           | `base_arms`           | `&arms=base_arms`           |
+| Mantis Blades       | `&MantisBlades`       | `mantis_blades`       | `&arms=mantis_blades`       |
+| Monowire            | `&Monowire`           | `monowire`            | `&arms=monowire`            |
+| Projectile Launcher | `&ProjectileLauncher` | `projectile_launcher` | `&arms=projectile_launcher` |
 
 If the arm states aren't working as expected, check if the table above is outdated by comparing the names with the [source code](https://github.com/psiberx/cp2077-archive-xl/blob/027aab7139689ee8d14163682ab6d506fbccea2a/src/App/Extensions/PuppetState/System.cpp#L72).
 
@@ -87,7 +88,11 @@ print(Game.GetScriptableSystemsContainer():Get("PuppetStateSystem"):GetArmsState
 
 To achieve gender equality in regard to foot states, you need to use [Toggleable Feet](https://www.nexusmods.com/cyberpunk2077/mods/7049). The substitution key for dynamic appearances is `feet`.
 
-<table><thead><tr><th width="187.33333333333331">Character</th><th>Footwear</th><th width="176">Suffix/Tag</th><th>Substitution: feet=</th></tr></thead><tbody><tr><td>Female</td><td>Unequipped</td><td><code>&#x26;Flat</code></td><td><code>flat</code></td></tr><tr><td>Female</td><td>Equipped (default)</td><td><code>&#x26;Lifted</code></td><td><code>lifted</code></td></tr><tr><td>Female</td><td>Equipped with <code>HighHeels</code> tag</td><td><code>&#x26;HighHeels</code></td><td><code>high_heels</code></td></tr><tr><td>Female</td><td>Equipped with <code>FlatShoes</code> tag</td><td><code>&#x26;FlatShoes</code></td><td><code>flat_shoes</code></td></tr><tr><td>Male</td><td>Any</td><td>(empty)</td><td></td></tr></tbody></table>
+{% hint style="warning" %}
+Feet states for male-rigged V are not supported by the base game. You need to install either a body mod, or [Toggleable Feet](https://www.nexusmods.com/cyberpunk2077/mods/7049).
+{% endhint %}
+
+<table><thead><tr><th width="141.33333333333331">Character</th><th>Footwear</th><th width="176">Suffix/Tag</th><th>Substitution: </th><th>Condition</th></tr></thead><tbody><tr><td>Female</td><td>Unequipped</td><td><code>&#x26;Flat</code></td><td><code>flat</code></td><td>&#x26;feet=flat</td></tr><tr><td>Female</td><td>Equipped (default)</td><td><code>&#x26;Lifted</code></td><td><code>lifted</code></td><td>&#x26;feet=lifted</td></tr><tr><td>Female</td><td>Equipped with <code>HighHeels</code> tag</td><td><code>&#x26;HighHeels</code></td><td><code>high_heels</code></td><td>&#x26;feet=high_heels</td></tr><tr><td>Female</td><td>Equipped with <code>FlatShoes</code> tag</td><td><code>&#x26;FlatShoes</code></td><td><code>flat_shoes</code></td><td>&#x26;feet=flat_shoes</td></tr><tr><td>Male</td><td>Any</td><td>(empty)</td><td></td><td></td></tr></tbody></table>
 
 If the foot states aren't working as expected, check if the table above is outdated by comparing the names with the [source code](https://github.com/psiberx/cp2077-archive-xl/blob/027aab7139689ee8d14163682ab6d506fbccea2a/src/App/Extensions/PuppetState/System.cpp#L89).
 
@@ -102,7 +107,7 @@ print(Game.GetScriptableSystemsContainer():Get("PuppetStateSystem"):GetFeetState
 ## Which suffixes exist?
 
 {% hint style="warning" %}
-For ArchiveXL [dynamic item additions](./#dynamic-appearances), you don't need to bother with suffixes at all – they will have&#x20;
+Do yourself a favour and don't use suffixes! They are outdated - use [dynamic item additions](./#dynamic-appearances) instead.
 {% endhint %}
 
 <table><thead><tr><th width="325">Suffix</th><th>Explanation</th></tr></thead><tbody><tr><td><code>itemsFactoryAppearanceSuffix.Gender</code></td><td>This item is gendered<br>When resolving the appearance name via <code>rootentity.ent</code>, the game will look for <code>appearanceName&#x26;Female</code> and <code>appearanceName&#x26;Male</code>.</td></tr><tr><td><code>itemsFactoryAppearanceSuffix.Camera</code></td><td>This item has special rules for first and third person camera<br>When resolving the appearance name via <code>rootentity.ent</code>, the game will look for <code>appearanceName&#x26;FPP</code> and <code>appearanceName&#x26;TPP</code>.</td></tr><tr><td><code>itemsFactoryAppearanceSuffix.Partial</code></td><td>If the current item has <code>hide_T1part</code> part and slot <code>OuterChest</code> is not hidden, will search <code>rootentity.ent</code> for<code>&#x26;Full</code> or <code>&#x26;Part</code></td></tr><tr><td><code>itemsFactoryAppearanceSuffix.HairType</code></td><td>Defines how your item will look if a certain hair type is loaded (e.g., hide the back half of a bandana for long hair).<br>When resolving the appearance name via <code>rootentity.ent</code>, the game will look for <code>&#x26;Short</code>, <code>&#x26;Long</code>, <code>&#x26;Dreads</code>, <code>&#x26;Buzz</code>, <code>&#x26;Bald</code></td></tr></tbody></table>
