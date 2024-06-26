@@ -8,8 +8,10 @@ description: >-
 
 ## Summary
 
-**Published**: Feb 03 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit**: June 25 2024 by AllKnowingLion
+**Published**: Feb 03 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+**Overhaul of information & addition of reference pictures**: June 16 2024 by LadyLea\
+**Last documented edit**: June 26 2024 by LadyLea
 
 {% hint style="warning" %}
 It is highly recommended to fully read the official description pages of the following Texture Frameworks and the respective Body Mods on Nexus Mods - as further information can be found and also to keep track of any updates.
@@ -65,7 +67,7 @@ Unique Arms utilizes the following texture UV Layouts for Arms:
 
 #### Texture Paths
 
-<table><thead><tr><th width="197">Gender &#x26; Body part</th><th>Relative file path</th></tr></thead><tbody><tr><td>Femme arms</td><td><p><strong>Left Arm/Cyberarms Skin Textures</strong></p><p><code>base\characters\player\femme\body\arms\textures\femme_arm_left_01_diffuse.xbm</code></p><p></p><p><strong>Right Arm/Cyberarms Skin Textures</strong></p><p><code>base\characters\player\femme\body\arms\textures\femme_arm_right_01_diffuse.xbm</code></p></td></tr><tr><td></td><td></td></tr><tr><td>Masc arms</td><td><em>Not currently available</em></td></tr></tbody></table>
+<table><thead><tr><th width="197">Gender &#x26; Body part</th><th>Relative file path</th></tr></thead><tbody><tr><td>Femme arms</td><td><p><strong>Left Arm/Cyberarms Skin Textures</strong></p><p><code>base\characters\player\femme\body\arms\textures\femme_arm_left_01_diffuse.xbm</code></p><p></p><p><strong>Right Arm/Cyberarms Skin Textures</strong></p><p><code>base\characters\player\femme\body\arms\textures\femme_arm_right_01_diffuse.xbm</code></p></td></tr></tbody></table>
 
 ### [The Unique V Texture Framework](https://www.nexusmods.com/cyberpunk2077/mods/3783?tab=description)
 
@@ -192,8 +194,8 @@ The texture files for VTK are separated by body gender.                         
 
 Primarily, the basic difference is the [UV layout](../../../../../for-mod-creators-theory/materials/uv-mapping-texturing-a-3d-object.md) of the body/arm textures between the base version of the UV Framework, and VTK. Beyond that other features include:
 
-<table><thead><tr><th width="383">UV Framework</th><th>VTK</th></tr></thead><tbody><tr><td><p> </p><p>Separate download from body mods</p><p></p></td><td>Included in body mod files</td></tr><tr><td>Arms and body share textures in base version</td><td>Arms on separate texture, same as original vanilla arms</td></tr><tr><td>Cyberarms built into base version</td><td>Supports mods made for<a href="https://www.nexusmods.com/cyberpunk2077/mods/2644"> Unique Arms</a> by <a href="https://next.nexusmods.com/profile/Halvkyrie/about-me?gameId=3333">Halvkyrie</a> <em>(Unique Arms is not required)</em></td></tr><tr><td>Unique diffuse (d), normals (n), detail normals (nd), roughness (rm), tintcolormask</td><td> Unique diffuse (d), normals (n), detail normals (nd), roughness (rm)</td></tr><tr><td><br>4k textures (Cyberpink - Kwek x Fireapple) built in to framework<br><br>Optional file for 8k body+arm texture (Bedellia x Ava Skin) <br></td><td>Hq textures built in to framework</td></tr><tr><td>Separate body overlays for each body gender</td><td>Separate body overlays for each body gender</td></tr><tr><td>Upscaled micro-detailing for body and head</td><td>Alternate Texture layout for foot submeshes</td></tr><tr><td>Emissive (glow) overlay</td><td>Emissive (glow) overlay</td></tr><tr><td>Secondary files for Hq arm textures and normals maps</td><td>Cyberarms separate, can be included if modder chooses to (Hyst's bodies have them included)</td></tr><tr><td>Unique Skintone .mi (Material instance) files</td><td></td></tr><tr><td>Unique Eyebrows (Optional file)</td><td></td></tr><tr><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="383">UV Framework</th><th>VTK</th></tr></thead><tbody><tr><td><p> </p><p>Separate download from body mods and for framework files</p><p></p></td><td>Framework is open source and can be included with any body mod, no extra download needed</td></tr><tr><td><p>Arms and body share textures in base version</p><p></p></td><td>Arms on different texture same as original vanilla arms</td></tr><tr><td>Secondary files for HQ arm textures and normals maps</td><td></td></tr><tr><td></td><td>Supports mods made for<a href="https://www.nexusmods.com/cyberpunk2077/mods/2644"> Unique Arms</a> by <a href="https://next.nexusmods.com/profile/Halvkyrie/about-me?gameId=3333">Halvkyrie</a> <em>(Unique Arms is not required)</em></td></tr><tr><td>Unique diffuse (d), normals (n), detail normals (nd), roughness (rm), tintcolormask</td><td>Full set of HD textures included: diffuse (d), normals (n), detail normals (nd), roughness (rm) and tintcolormask.</td></tr><tr><td><br>4k textures (Cyberpink - Kwek x Fireapple) built in to framework<br><br>Optional file for 8k body+arm texture (Bedellia x Ava Skin) <br></td><td>HD textures built into the framework and included in the Body Mods archive file</td></tr><tr><td>Separate body overlays for each body gender</td><td>Separate body overlays for each body gender</td></tr><tr><td><p></p><p></p></td><td>Alternate Texture layout for foot submeshes</td></tr><tr><td>Upscaled micro-detailing for body and head</td><td></td></tr><tr><td>Emissive (glow) overlay</td><td>Emissive (glow) overlay</td></tr><tr><td>Cyberarms built in to base version</td><td>Cyberarms separate, can be included if modder chooses to (Hyst's bodies have them included)</td></tr><tr><td>Unique Skintone .mi (Material instance) files</td><td></td></tr><tr><td>Unique Eyebrows (Optional file)</td><td></td></tr></tbody></table>
 
 _An example of the UV Layout differences in-game_:
 
-<figure><img src="../../../../../.gitbook/assets/VTK-GYMFIEND - KS-UV FULL BODY LAYOUT - DIFFERENCES - BY LL.jpeg" alt=""><figcaption><p>Arm-Body UV Layouts textures [VTK] vs KS-UV FullBody UV Layouts textures</p></figcaption></figure>
+<figure><img src="../../../../../.gitbook/assets/VTK-GYMFIEND - KS-UV FULL BODY LAYOUT - DIFFERENCES - BY LL.jpeg" alt=""><figcaption><p>Arm-Body UV Layouts textures [VTK] vs KS-UV FullBody Base-UV Layouts textures</p></figcaption></figure>
