@@ -20,6 +20,12 @@ description: How do effects work? How do I mod them?
 This page is a stub, but this wiki is a community project! Please [sign up](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7) and [start editing](#user-content-fn-1)[^1], we'd love to have you!
 {% endhint %}
 
+## Effect registry
+
+All effect files are registered in `static_effects.csv`.  Since that file can only be edited once, you have to merge your own .es files by script.
+
+For instructions on how to do that, check [Scripting Cyberpunk](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/fwsaoju1TBAUvMpI6NIw/ "mention") -> [Effects](https://app.gitbook.com/s/fwsaoju1TBAUvMpI6NIw/how-do-i/effects "mention")
+
 ## Effect duration
 
 An effect's **duration** is defined in the .effects file:
