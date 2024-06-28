@@ -157,6 +157,7 @@
   * [Effects and particles](for-mod-creators-theory/files-and-what-they-do/effects-explained.md)
   * [Videos: .bk2](for-mod-creators-theory/files-and-what-they-do/videos-.bk2.md)
   * [Audio files](for-mod-creators-theory/files-and-what-they-do/audio-files.md)
+  * [Animations: .anims](for-mod-creators-theory/files-and-what-they-do/animations-.anims.md)
 * [🌐 3d Modelling](for-mod-creators-theory/3d-modelling/README.md)
   * [Blender: Getting Started](for-mod-creators-theory/3d-modelling/blender-getting-started/README.md)
     * [Blender: Running Python Scripts](for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md)
