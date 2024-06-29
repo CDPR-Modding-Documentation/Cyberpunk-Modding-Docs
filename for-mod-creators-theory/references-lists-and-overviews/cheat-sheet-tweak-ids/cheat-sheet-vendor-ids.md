@@ -7,29 +7,20 @@ description: All vendor IDs
 ### Summary
 
 **Created:** Jan 28 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jan 28 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Jun 29 2024 by FacelessV1
 
 This list is up-to-date as of patch 2.1
 
 ## Vendor IDs
 
-```
-Vendors.BlackMarketer_HUB
-Vendors.Chinese_Food
-Vendors.Clothes
-Vendors.Drinks
-Vendors.Grilled_Food
-Vendors.Kiosk
-Vendors.Market
-Vendors.Packed_Food
-Vendors.Tech_Junk
-Vendors.bls_ina_se1_clothingshop_01
+<pre><code><strong>[BADLANDS VENDORS]
+</strong>Vendors.bls_ina_se1_clothingshop_01
 Vendors.bls_ina_se1_foodshop_01
 Vendors.bls_ina_se1_foodshop_02
-Vendors.bls_ina_se1_foodshop_03
 Vendors.bls_ina_se1_gunsmith_01a
 Vendors.bls_ina_se1_gunsmith_02
 Vendors.bls_ina_se1_junkshop_01
+Vendors.bls_ina_se1_junkshop_02
 Vendors.bls_ina_se1_medicstore_01
 Vendors.bls_ina_se1_ripperdoc_01
 Vendors.bls_ina_se1_ripperdoc_02
@@ -37,7 +28,9 @@ Vendors.bls_ina_se5_foodshop_01
 Vendors.bls_ina_se5_gunsmith_01
 Vendors.bls_ina_se5_junkshop_01
 Vendors.bls_ina_se5_melee_01
-Vendors.cct_cpz_cloth_02
+
+<strong>[CITY CENTER VENDORS]
+</strong>Vendors.cct_cpz_cloth_02
 Vendors.cct_cpz_food_01
 Vendors.cct_cpz_food_02
 Vendors.cct_cpz_medic_01
@@ -47,6 +40,9 @@ Vendors.cct_dtn_food_02
 Vendors.cct_dtn_guns_01
 Vendors.cct_dtn_medic_01
 Vendors.cct_dtn_ripdoc_01
+
+[DOGTOWN VENDORS]
+Vendors.BlackMarketer_HUB
 Vendors.cz_con_clothingshop_001
 Vendors.cz_con_foodshop_01
 Vendors.cz_con_gunsmith_01
@@ -60,18 +56,12 @@ Vendors.cz_monument_ripperdoc_farida
 Vendors.cz_stadium_clothing_001
 Vendors.cz_stadium_food_01
 Vendors.cz_stadium_food_02
-Vendors.cz_stadium_food_03
-Vendors.cz_stadium_gunsmith_01
-Vendors.cz_stadium_junk_01_marcin_i
-Vendors.cz_stadium_junk_01_michal_k
-Vendors.cz_stadium_medic_01
-Vendors.cz_stadium_netrunner_01
-Vendors.cz_stadium_ripperdoc_01
+
+[HEYWOOD VENDORS]
 Vendors.hey_gle_foodshop_01
 Vendors.hey_gle_foodshop_02
 Vendors.hey_gle_gunsmith_01
 Vendors.hey_gle_junkshop_01
-Vendors.hey_rey_foodshop_01
 Vendors.hey_rey_foodshop_01
 Vendors.hey_rey_foodshop_02
 Vendors.hey_rey_foodshop_03
@@ -85,18 +75,19 @@ Vendors.hey_spr_gunsmith_01
 Vendors.hey_spr_junkshop_01
 Vendors.hey_spr_medicstore_01
 Vendors.hey_spr_ripperdoc_01
-Vendors.mq303_shank
-Vendors.nw4_spaceport_medic_01
+
+[PACIFICA VENDORS]
 Vendors.pac_cvi_clothingshop_01
 Vendors.pac_cvi_foodshop_01
 Vendors.pac_cvi_medicstore_01
 Vendors.pac_cvi_techstore_01
+Vendors.pac_wwd_clothingshop_01
+Vendors.pac_wwd_cyberware_store_01
 Vendors.pac_wwd_gunsmith_01
 Vendors.pac_wwd_melee_01
 Vendors.pac_wwd_ripperdoc_01
-Vendors.q105_dollhouse_bar_barkeeper
-Vendors.q302_Ronald_EP1
-Vendors.q303_casino_cashier_EP1
+
+[SANTO DOMINGO VENDORS]
 Vendors.std_arr_clothingshop_01
 Vendors.std_arr_foodshop_01
 Vendors.std_arr_foodshop_02
@@ -108,14 +99,11 @@ Vendors.std_arr_melee_01
 Vendors.std_arr_ripperdoc_01
 Vendors.std_arr_techstore_01
 Vendors.std_rcr_clothingshop_01
+Vendors.std_rcr_cyberware_store_01
 Vendors.std_rcr_foodshop_01
 Vendors.std_rcr_gunsmith_01
-Vendors.std_rcr_medicstore_01
-Vendors.std_rcr_ripperdoc_01
-Vendors.std_rcr_techstore_01
-Vendors.sts_ep1_01_odel
-Vendors.sts_ep1_06_drug_dealer
-Vendors.sts_ep1_10_bill_hotdog
+
+[WATSON]
 Vendors.wat_awf_foodstore_01
 Vendors.wat_kab_clothingshop_01
 Vendors.wat_kab_foodshop_01
@@ -128,7 +116,6 @@ Vendors.wat_kab_junkshop_01
 Vendors.wat_kab_medicstore_01
 Vendors.wat_kab_netrunner_01
 Vendors.wat_kab_ripperdoc_01
-Vendors.wat_kab_ripperdoc_02
 Vendors.wat_kab_ripperdoc_02
 Vendors.wat_kab_ripperdoc_03
 Vendors.wat_kab_techstore_01
@@ -149,20 +136,10 @@ Vendors.wat_nid_gunsmith_01
 Vendors.wat_nid_medicstore_01
 Vendors.wat_nid_medicstore_02
 Vendors.wat_nid_ripperdoc_01
-Vendors.wbr_hil_clothingshop_01
-Vendors.wbr_hil_foodshop_01
-Vendors.wbr_hil_foodshop_02
-Vendors.wbr_hil_ripdoc_01
-Vendors.wbr_jpn_clothingshop_01
-Vendors.wbr_jpn_clothingshop_02
-Vendors.wbr_jpn_foodshop_01
-Vendors.wbr_jpn_foodshop_02
-Vendors.wbr_jpn_foodshop_03
-Vendors.wbr_jpn_foodshop_04
-Vendors.wbr_jpn_foodshop_05
-Vendors.wbr_jpn_gunsmith_01
+
+<strong>[WESTBROOK VENDORS]
+</strong>Vendors.wbr_jpn_gunsmith_01
 Vendors.wbr_jpn_jig_bar_01
-Vendors.wbr_jpn_junkshop_01
 Vendors.wbr_jpn_junkshop_01
 Vendors.wbr_jpn_junkshop_02
 Vendors.wbr_jpn_junkshop_03
@@ -172,10 +149,7 @@ Vendors.wbr_jpn_medicstore_03
 Vendors.wbr_jpn_melee_01
 Vendors.wbr_jpn_netrunner_01
 Vendors.wbr_jpn_netrunner_02
-Vendors.wbr_jpn_netrunner_02
 Vendors.wbr_jpn_ripperdoc_01
 Vendors.wbr_jpn_ripperdoc_02
 Vendors.wbr_jpn_techstore_01
-Vendors.wbr_nok_medic_01
-
-```
+</code></pre>
