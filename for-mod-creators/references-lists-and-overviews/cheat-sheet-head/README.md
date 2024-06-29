@@ -75,7 +75,7 @@ You can find the [definitions](../../../for-mod-creators-theory/files-and-what-t
 
 All other properties are pulled from a [.mi file](../../../for-mod-creators-theory/files-and-what-they-do/materials/re-using-materials-.mi.md) in the following folder:
 
-<table><thead><tr><th width="251"></th><th></th></tr></thead><tbody><tr><td>female body gender</td><td><code>base\characters\common\skin\character_mat_instance\female\head\</code></td></tr><tr><td>male body gender</td><td><code>base\characters\common\skin\character_mat_instance\male\head\</code></td></tr></tbody></table>
+<table><thead><tr><th width="212"></th><th></th></tr></thead><tbody><tr><td>female body gender</td><td><code>base\characters\common\skin\character_mat_instance\female\head\</code></td></tr><tr><td>male body gender</td><td><code>base\characters\common\skin\character_mat_instance\male\head\</code></td></tr></tbody></table>
 
 ### Head: material instances
 
@@ -104,6 +104,40 @@ Style order is Default - Glossy - Matte (no suffix, \_02_, \__03)
 Link: [Reference images on imgur](https://imgur.com/a/NlbCHYK)
 
 <figure><img src="https://i.imgur.com/P5NMggv.png" alt=""><figcaption></figcaption></figure>
+
+## Eyebrows
+
+Every eyebrow option has an associated texture file, normal map, and alpha map.
+
+These files can be found in the following folder:&#x20;
+
+```
+base/characters/common/character_customisation_items/eyebrows/textures/
+```
+
+Provided below is a table with the eyebrows and their associated texture files.
+
+| Eyebrow | Diffuse Texture      |
+| ------- | -------------------- |
+| 01      | heb\_\_base\_d01.xbm |
+| 02      | heb\_\_base\_d02.xbm |
+| 03      | heb\_\_base\_d03.xbm |
+| 04      | heb\_\_base\_d04.xbm |
+| 05      | heb\_\_base\_d05.xbm |
+| 06      | heb\_\_base\_d06.xbm |
+| 07      | heb\_\_base\_d07.xbm |
+| 08      | heb\_\_base\_d08.xbm |
+
+| Eyebrow | Alpha mask                |
+| ------- | ------------------------- |
+| 01      | heb\_wa\_\_base\_ds01.xbm |
+| 02      | heb\_wa\_\_base\_ds02.xbm |
+| 03      | heb\_wa\_\_base\_ds03.xbm |
+| 04      | heb\_wa\_\_base\_ds04.xbm |
+| 05      | heb\_wa\_\_base\_ds05.xbm |
+| 06      | heb\_wa\_\_base\_ds06.xbm |
+| 07      | heb\_wa\_\_base\_ds07.xbm |
+| 08      | heb\_wa\_\_base\_ds08.xbm |
 
 ## Eyeliner and kohl
 
