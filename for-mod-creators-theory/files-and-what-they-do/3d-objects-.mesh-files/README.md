@@ -14,7 +14,7 @@ This page contains information on .mesh files and their properties.
 ### Wait, that's not what I want!
 
 * See [wkit-blender-plugin-import-export.md](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention") for a guide on export/import
-* To edit a mesh's appearance, check [changing-materials-colors-and-textures.md](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
+* To edit a mesh's appearance, check [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
 * To learn about mesh materials, see [textured-items-and-cyberpunk-materials.md](../../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md "mention")
 * To hide parts of a mesh under different circumstances, check [first-person-perspective-fixes.md](../../../modding-guides/items-equipment/first-person-perspective-fixes.md "mention")
 * To stop copy-pasting so much, check [archivexl-dynamic-materials.md](../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention")
@@ -149,7 +149,7 @@ A material instance looks like this:
 <figure><img src="../../../.gitbook/assets/material_docu_material_instance.png" alt=""><figcaption><p>baseMaterial picks the material (shader), while "values" contains <a href="./#checking-material-properties">properties</a> to adjust it.</p></figcaption></figure>
 
 {% hint style="info" %}
-You can find a guide about [texture editing](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) and [adding custom textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-4-optional-custompathing) in the [Broken link](broken-reference "mention") section.
+You can find a guide about [texture editing](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/) and [adding custom textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/#step-4-optional-custompathing) in the [Broken link](broken-reference "mention") section.
 
 For an overview of materials that you might want to use for something, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).
 

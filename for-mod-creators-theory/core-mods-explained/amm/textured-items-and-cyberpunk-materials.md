@@ -21,7 +21,7 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 * For a more detailed guide about prop creation, check [custom-props](custom-props/ "mention")
 * Or maybe you wonder  [#where-to-find-models](custom-props/#where-to-find-models "mention")
 * If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
-* For a guide about changing materials, check [changing-materials-colors-and-textures.md](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
+* For a guide about changing materials, check [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
 * If you want to understand material assignment, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")-> [#material-assignment](../../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment "mention")
 
 ## **Requirements**
@@ -260,7 +260,7 @@ Let's update paths and values. Still inside of `localMaterialBuffer.materials`, 
 |          | MultilayerMask       | delete it                                                                                                 |
 |          | MultilayerSetup      | `base\characters\garment\gang_nomad\legs\l1_021_pants__cargo_computer\textures\leather_red_basic.mlsetup` |
 
-For the leather texture, I've just picked a random mlsetup from the game files (which I found by searching Wolvenkit for `leather > .mlsetup`). If you want to make your own mlsetups, see [here](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#exporting-the-.mlsetup).
+For the leather texture, I've just picked a random mlsetup from the game files (which I found by searching Wolvenkit for `leather > .mlsetup`). If you want to make your own mlsetups, see [here](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/#exporting-the-.mlsetup).
 
 {% hint style="success" %}
 Save the mesh. You can check the "Mesh Preview" tab if the materials show up. If the mesh turns invisible, you'll want to double-check your paths, though!
@@ -371,7 +371,7 @@ MaterialEntries are a **lookup map** between the material names in the chunkMate
 {% hint style="success" %}
 Now, we adjust the materials — we'll just change a few properties to show you how it works, and then you can go play.&#x20;
 
-For another guide on how to edit materials in detail, check [here.](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)&#x20;
+For another guide on how to edit materials in detail, check [here.](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/)&#x20;
 {% endhint %}
 
 ### Setting up the materials
@@ -388,7 +388,7 @@ Instead, we will change the second material, `mat_ingame`.
 
 #### Re-using an mlsetup
 
-If you rather want to make your own mlsetups, see [here](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#exporting-the-.mlsetup).
+If you rather want to make your own mlsetups, see [here](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/#exporting-the-.mlsetup).
 
 * Select `mat_ingame`
 * Expand the material and its `values` array

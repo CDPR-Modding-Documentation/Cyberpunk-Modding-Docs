@@ -209,7 +209,7 @@ You can learn more about textured materials [here](../../../materials/#textured)
 
 A pre-configured [mesh](../../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) for a multilayered material. Uses the following files in the subfolder `textures`:
 
-* `6_layers.mlsetup`: A [multilayer setup](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material) with colour properties
+* `6_layers.mlsetup`: A [multilayer setup](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/#multilayered-material) with colour properties
 * `6_layers.mlmask`: A [multilayer mask](../../../materials/multilayered/), determining which parts of the mesh are affected by which layer of the mlsetup. In this case, it just contains six blank layers.
 * `template_01_n.xbm`: A normal (bump) map, adding depth to the object.
 

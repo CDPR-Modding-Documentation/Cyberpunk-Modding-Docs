@@ -8,7 +8,7 @@ description: For the purpose of recoloring or exchanging items
 
 **Created & Published**: November 5 2022 **by @manavortex**
 
-This page is a look-up for [recolouring ](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md)or [replacing](../../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/) items. For an overview of existing items, see [here](./).
+This page is a look-up for [recolouring ](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/)or [replacing](../../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/) items. For an overview of existing items, see [here](./).
 
 As for how to find this information when it's not on the page, check [this guide](spawn-codes-baseids-hashes.md#the-.app).
 

@@ -60,7 +60,7 @@ Now that we have done that, we can start recolouring.
 Each appearance in the appearances array has a list of chunkMask entries (one per submesh), which are assigned a material by name.
 
 {% hint style="info" %}
-For a full guide on [Editing mesh appearances](../changing-materials-colors-and-textures.md), follow the link (you don't have to).
+For a full guide on [Editing mesh appearances](../changing-materials-colors-and-textures/), follow the link (you don't have to).
 {% endhint %}
 
 &#x20;For a more detailed explanation, you can check [this page](../../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#chunkmaterials), but all we care about right now is this lookup chain:
@@ -72,7 +72,7 @@ For a full guide on [Editing mesh appearances](../changing-materials-colors-and-
 You can now save your mesh, then **install your mod** by clicking on the green arrow in Wolvenkit's toolbar. Once you have started up the game, the old item will now look like your new mesh — including its variants.
 
 {% hint style="info" %}
-For a guide on how to edit an .mlsetup file (or to change an item's appearance in general), see [here](../changing-materials-colors-and-textures.md#exporting-the-.mlsetup).&#x20;
+For a guide on how to edit an .mlsetup file (or to change an item's appearance in general), see [here](../changing-materials-colors-and-textures/#exporting-the-.mlsetup).&#x20;
 {% endhint %}
 
 Enjoy!

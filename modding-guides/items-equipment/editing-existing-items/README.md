@@ -12,8 +12,8 @@ If you want to look up [variants-and-appearances.md](../../../for-mod-creators-t
 [adding-decals.md](adding-decals.md)
 {% endcontent-ref %}
 
-{% content-ref url="changing-materials-colors-and-textures.md" %}
-[changing-materials-colors-and-textures.md](changing-materials-colors-and-textures.md)
+{% content-ref url="changing-materials-colors-and-textures/" %}
+[changing-materials-colors-and-textures](changing-materials-colors-and-textures/)
 {% endcontent-ref %}
 
 {% content-ref url="replace-a-player-item-with-an-npc-item/" %}
