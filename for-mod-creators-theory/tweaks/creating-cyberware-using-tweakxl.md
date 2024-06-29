@@ -1,11 +1,14 @@
 # Creating Cyberware using TweakXL
 
 * Created by: [saltypigloaf](mailto:saltypigloaf@gmail.com) (2024-06-22)
-* Last updated by: [saltypigloaf](mailto:saltypigloaf@gmail.com) (2024-06-27)
+* Last updated by: [saltypigloaf](mailto:saltypigloaf@gmail.com) (2024-06-28)
 
-_Note: this list is not exhaustive and should be expanded as needed.  Additional details about Arms implants Item Records, Sandevistan & Berserk OS Item Records, StatShards, and armor calculations are in-progress._
+{% hint style="info" %}
+_Note: this list is not exhaustive and should be expanded as needed:_
 
-
+* _Needs additional information about Arms Item Records_
+* _Needs information about Sandevistan & Berserk OS Item Records_
+{% endhint %}
 
 ## <mark style="color:orange;">Item Record Attributes</mark>
 
@@ -266,7 +269,7 @@ Items.YourCustomCyberware:
       opSymbol: '*'
       refObject: Player
       refStat: BaseStats.Intelligence
-      value: 0.0500000007 # used in the UI, not applied to any gamplay calc
+      value: 0.0500000007 # used in the UI, not applied to any gameplay calc
       modifierType: Additive
       statType: BaseStats.AttunementHelper
 ```
@@ -356,6 +359,121 @@ In your license to chrome record, include:
 ```yaml
 tags:
   - SkipActivityLog
+```
+
+
+
+## <mark style="color:orange;">Armor Bonuses</mark>
+
+***
+
+Static bonuses to Armor are calculated by 4 records, all of which evaluate the item's tier and apply the bonus accordingly.
+
+1. A standard record used by all cyberware for a particular slot.  All 4 vanilla records are identical with the exception of the name, so there is no practical limit on applying an armor bonus to any cyberware regardless of its type.  The existing records are:
+   * `Items.AdvancedCardiovascularSystemModule_inline0`
+   * `Items.AdvancedIntegumentarySystemModule_inline0`
+   * `Items.AdvancedMusculoskeletalSystemModule_inline0`
+   * `Items.AdvancedNervousSystemModule_inline0`
+2. A record to establish the base (Common) bonus applied
+3. A record to establish the bonus applied at each full tier (Common, Uncommon, etc)
+4. A record to establish the bonus applied at each half-tier (CommonPlus, UncommonPlus, etc)
+
+#### <mark style="color:green;">Code Sample: Adding Armor Bonus calculations to your cyberware</mark>
+
+<pre class="language-yaml"><code class="lang-yaml">Items.AdvancedMusculoskeletalSystemModule_inline0: # standard record
+  $type: gamedataCombinedStatModifier_Record
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.Armor
+  value: 1
+  modifierType: Additive
+  statType: BaseStats.Protection
+  
+Items.SampleArmorBase:
+  $type: gamedataConstantStatModifier_Record
+  value: 18 # starting value for Common
+  modifierType: Additive
+  statType: BaseStats.Armor
+
+Items.SampleArmorIncrease:
+  $type: gamedataCombinedStatModifier_Record
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.Quality
+  value: 9 # added at every new tier (uncommon, rare, etc)
+  modifierType: Additive
+  statType: BaseStats.Armor
+
+Items.SampleArmorIncreasePlus:
+  $type: gamedataCombinedStatModifier_Record
+  opSymbol: '*'
+  refObject: Self
+  refStat: BaseStats.IsItemPlus
+  value: 4 # added for LegenaryPlus and PlusPlus
+  modifierType: Additive
+  statType: BaseStats.Armor
+<strong>
+</strong><strong>Items.SampleCyberwareCommon:
+</strong>  statModifiers:
+    - !append Items.AdvancedMusculoskeletalSystemModule_inline0
+    - !append Items.SampleArmorBase
+    - !append Items.SampleArmorIncrease
+    - !append Items.SampleArmorIncreasePlus
+</code></pre>
+
+#### <mark style="color:green;">Notes:</mark>
+
+The code sample above will result in the following values:
+
+1. &#x20;<mark style="color:green;">Common</mark>: 18 (base)
+2. <mark style="color:green;">CommonPlus</mark>: 22 (base + plus)
+3. <mark style="color:green;">Uncommon</mark>: 27 (base + increase \* tiers added)
+4. <mark style="color:green;">UncommonPlus</mark>: 31 (base + plus + increase \* tiers added)
+5. <mark style="color:green;">Rare</mark>: 36 (base + increase \* tiers added)
+6. <mark style="color:green;">RarePlus</mark>: 40 (base + plus + increase \* tiers added)
+7. <mark style="color:green;">Epic</mark>: 45 (base + increase \* tiers added)
+8. <mark style="color:green;">EpicPlus</mark>: 49 (base + plus + increase \* tiers added)
+9. <mark style="color:green;">Legendary</mark>: 54 (base + increase \* tiers added)
+10. <mark style="color:green;">LegendaryPlus</mark>: 58 (base + plus + increase \* tiers added)
+11. <mark style="color:green;">LegendaryPlusPlus</mark>: 62 (base + plus \* 2 + increase \* tiers added)
+
+The armor bonus is always calculated starting from Common even if your custom cyberware only has records for higher tiers; if your base cyberware item start at Epic, the armor bonus will still be 45.
+
+
+
+## <mark style="color:orange;">Stats Shards</mark>
+
+***
+
+Any piece of cyberware that will receive random bonus stats requires a StatsShard record to do so.  Much of the StatsShard record is ignored, so a simple base record can be used for virtually any piece of cyberware.&#x20;
+
+Much if the information in the sample is the same, generally dealing with randomizing stat bonuses during upgrades.  Key to your custom cyberware are the last 5 records in statModifiers as they control the initial stats when aquiring the cyberware item.
+
+Typically, these stats include 3 direct bonuses and 2 modifying bonuses.  Keep in mind that including more direct bonuses means that your cyberware will be found with extra stats, but they will be lost when upgrading.
+
+#### <mark style="color:green;">Code Sample: Adding a StatShard record to your cyberware</mark>
+
+```yaml
+Items.SampleCyberwareStatShard:
+  $base: Items.AnyStatShardRecordYouWant
+  statModifierGroups:
+    - ModifierGroups.CyberwareModifierBoosts # Always the same
+    - ModifierGroups.TransferCyberwareModifiersToItem # Always the same
+  statModifiers: 
+    - Items.CyberwareStatsShardStatic_inline0 # Always the same
+    - Items.CyberwareStatsShardStatic_inline1 # Always the same
+    - Items.CyberwareStatsShardStatic_inline2 # Always the same
+    - Items.CyberwareStatsShardStatic_inline3 # Always the same
+    - Modifiers.BonusQuickHackDamage # direct bonus 1
+    - Modifiers.RamOnKill # direct bonus 2
+    - Modifiers.RamOnKillQualityToggle # modifying bonus 1
+    - Modifiers.DamageOverTimePercentBonus # direct bonus 3
+    - Modifiers.DamageOverTimePercentBonusToggle # modifying bonus 2
+    
+Items.SampleCyberwareCommon:
+  $type: gamedataSlotItemPartPreset_Record
+  itemPartPreset: Items.AflotasIntegrationStatsShard
+  slot: AttachmentSlots.StatsShardSlot
 ```
 
 
