@@ -33,13 +33,11 @@ I have repeatedly observed that newbies are fine with this guide, while people w
 
 _The guide was created after reading_ [_this one_](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view) _and being left with a bunch of question marks. To get a deeper understanding, refer to the initial guide and follow the linked resources or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
 
-{% hint style="info" %}
-To troubleshoot your ArchiveXL mods, you can use [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/ "mention")'s [File Validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention"). It's not fully supporting
-{% endhint %}
+### Wait, that's not what I want!
 
-{% hint style="success" %}
-There is a new way of connecting your files: [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention"). If you want to create lots of options, this is what you want to do.
-{% endhint %}
+* To troubleshoot your ArchiveXL mods, you can use [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/ "mention")'s [File Validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention").
+* If you want to convert a mod to dynamic appearances, check the [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention")
+* If you want to use dynamic appearances out of the box, check [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") (this is the preferred approach as soon as you're creating different options).
 
 ## Grab the example files
 
@@ -221,7 +219,7 @@ If it works, this is an excellent moment to take a backup! If not, check [#troub
 ## Adding a Male Instance
 
 {% hint style="warning" %}
-This is  a great opportunity to switch over to the [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") tutorial. The tutorial below will still result in a working item, but the new technique is **much more flexible** and will also result in less work.
+This is  a great opportunity to switch over to the [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") approach. For a step-by-step guide on how to convert your mod, check[archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention").
 {% endhint %}
 
 Before we proceed with the tutorial, it's important to address a common issue you might have encountered while creating your mod.

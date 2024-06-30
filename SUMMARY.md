@@ -104,6 +104,7 @@
     * [Best practices / pitfalls](for-mod-creators-theory/references-lists-and-overviews/scripting/scripting-best-practices-pitfalls.md)
 * [⚒️ Core Mods explained](for-mod-creators-theory/core-mods-explained/README.md)
   * [💹 ArchiveXL](for-mod-creators-theory/core-mods-explained/archivexl/README.md)
+    * [ArchiveXL: Dynamic conversion guide](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md)
     * [ArchiveXL: Suffixes and Substitutions](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md)
     * [ArchiveXL: Tags](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md)
     * [ArchiveXL: body mods and refits](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/README.md)

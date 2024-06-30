@@ -89,7 +89,7 @@ To achieve gender equality in regard to foot states, you need to use [Toggleable
 Feet states for male-rigged V are not supported by the base game. You need to install either a body mod, or [Toggleable Feet](https://www.nexusmods.com/cyberpunk2077/mods/7049).
 {% endhint %}
 
-<table><thead><tr><th width="141.33333333333331">Character</th><th>Footwear</th><th width="176">Suffix/Tag</th><th>Substitution: </th><th>Condition</th></tr></thead><tbody><tr><td>Female</td><td>Unequipped</td><td><code>&#x26;Flat</code></td><td><code>flat</code></td><td>&#x26;feet=flat</td></tr><tr><td>Female</td><td>Equipped (default)</td><td><code>&#x26;Lifted</code></td><td><code>lifted</code></td><td>&#x26;feet=lifted</td></tr><tr><td>Female</td><td>Equipped with <code>HighHeels</code> tag</td><td><code>&#x26;HighHeels</code></td><td><code>high_heels</code></td><td>&#x26;feet=high_heels</td></tr><tr><td>Female</td><td>Equipped with <code>FlatShoes</code> tag</td><td><code>&#x26;FlatShoes</code></td><td><code>flat_shoes</code></td><td>&#x26;feet=flat_shoes</td></tr><tr><td>Male</td><td>Any</td><td>(empty)</td><td></td><td></td></tr></tbody></table>
+<table><thead><tr><th width="141.33333333333331">Character</th><th>Footwear</th><th width="176">Suffix/Tag</th><th>Substitution</th><th>Condition</th></tr></thead><tbody><tr><td>Female</td><td>Unequipped</td><td><code>&#x26;Flat</code></td><td><code>flat</code></td><td><code>&#x26;feet=flat</code></td></tr><tr><td>Female</td><td>Equipped (default)</td><td><code>&#x26;Lifted</code></td><td><code>lifted</code></td><td><code>&#x26;feet=lifted</code></td></tr><tr><td>Female</td><td>Equipped with <code>HighHeels</code> tag</td><td><code>&#x26;HighHeels</code></td><td><code>high_heels</code></td><td><code>&#x26;feet=high_heels</code></td></tr><tr><td>Female</td><td>Equipped with <code>FlatShoes</code> tag</td><td><code>&#x26;FlatShoes</code></td><td><code>flat_shoes</code></td><td><code>&#x26;feet=flat_shoes</code></td></tr><tr><td>Male</td><td>Any</td><td>(empty)</td><td></td><td></td></tr></tbody></table>
 
 If the foot states aren't working as expected, check if the table above is outdated by comparing the names with the [source code](https://github.com/psiberx/cp2077-archive-xl/blob/027aab7139689ee8d14163682ab6d506fbccea2a/src/App/Extensions/PuppetState/System.cpp#L89).
 
@@ -101,11 +101,53 @@ print(Game.GetScriptableSystemsContainer():Get("PuppetStateSystem"):GetFeetState
 ```
 {% endhint %}
 
+## Conditions
+
+Conditions are a feature of **dynamic appearances** . They can be used in two places:
+
+#### In your .app file
+
+Inside your `.app` file for `appearanceAppearanceDefinition.name`:&#x20;
+
+<figure><img src="../../../.gitbook/assets/archivexl_conditions.png" alt=""><figcaption></figcaption></figure>
+
+This lets you to select a different appearance based on body gender, camera state... (see the tables above).&#x20;
+
+By using conditional appearances, you can still make use of `partsOverrides` to use [chunkmask hiding](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md).
+
+{% hint style="info" %}
+For a hands-on example, see [archivexl-dynamic-conversion-guide.md](archivexl-dynamic-conversion-guide.md "mention") -> [#step-2-the-.app](archivexl-dynamic-conversion-guide.md#step-2-the-.app "mention")
+{% endhint %}
+
+#### In your mesh\_entity.ent file
+
+Inside your `mesh_entity.ent` for `component.name`:
+
+<figure><img src="../../../.gitbook/assets/archivexl_conversion_conditional_components.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+For a hands-on example, see [archivexl-dynamic-conversion-guide.md](archivexl-dynamic-conversion-guide.md "mention") -> [#method-1-conditional-components](archivexl-dynamic-conversion-guide.md#method-1-conditional-components "mention")
+{% endhint %}
+
+## Substitutions
+
+Substitutions are a feature of **dynamic appearances** . They can only be used inside your `mesh_entity.ent`.
+
+Substitutions allow ArchiveXL to **load a different mesh** based on different circumstances.
+
+<figure><img src="../../../.gitbook/assets/archivexl_conversion_path_substitution.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+For a hands-on example, see [archivexl-dynamic-conversion-guide.md](archivexl-dynamic-conversion-guide.md "mention") -> [#method-2-component-substitution](archivexl-dynamic-conversion-guide.md#method-2-component-substitution "mention")
+{% endhint %}
+
 ## Which suffixes exist?
 
 {% hint style="warning" %}
 Do yourself a favour and don't use suffixes! They are outdated - use [dynamic item additions](./#dynamic-appearances) instead.
 {% endhint %}
+
+For a list of active suffixes, check the tables above.
 
 <table><thead><tr><th width="325">Suffix</th><th>Explanation</th></tr></thead><tbody><tr><td><code>itemsFactoryAppearanceSuffix.Gender</code></td><td>This item is gendered<br>When resolving the appearance name via <code>rootentity.ent</code>, the game will look for <code>appearanceName&#x26;Female</code> and <code>appearanceName&#x26;Male</code>.</td></tr><tr><td><code>itemsFactoryAppearanceSuffix.Camera</code></td><td>This item has special rules for first and third person camera<br>When resolving the appearance name via <code>rootentity.ent</code>, the game will look for <code>appearanceName&#x26;FPP</code> and <code>appearanceName&#x26;TPP</code>.</td></tr><tr><td><code>itemsFactoryAppearanceSuffix.Partial</code></td><td>If the current item has <code>hide_T1part</code> part and slot <code>OuterChest</code> is not hidden, will search <code>rootentity.ent</code> for<code>&#x26;Full</code> or <code>&#x26;Part</code></td></tr><tr><td><code>itemsFactoryAppearanceSuffix.HairType</code></td><td>Defines how your item will look if a certain hair type is loaded (e.g., hide the back half of a bandana for long hair).<br>When resolving the appearance name via <code>rootentity.ent</code>, the game will look for <code>&#x26;Short</code>, <code>&#x26;Long</code>, <code>&#x26;Dreads</code>, <code>&#x26;Buzz</code>, <code>&#x26;Bald</code></td></tr></tbody></table>
 
