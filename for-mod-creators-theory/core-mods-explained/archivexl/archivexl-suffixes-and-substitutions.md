@@ -22,6 +22,7 @@ psiberx has found ways to make this less painful. This page documents these ways
 * For a hands-on guide to [adding-new-items](../../../modding-guides/items-equipment/adding-new-items/ "mention"), check the corresponding pages in the Modding Guides section
 * Dynamic appearances have their own guide (see [archivexl-dynamic-variants.md](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention"))
 * There is an own page for [influencing-other-items.md](../../../modding-guides/items-equipment/influencing-other-items.md "mention")
+* To conditionally hide items or parts of items, check [influencing-other-items.md](../../../modding-guides/items-equipment/influencing-other-items.md "mention") or [archivexl-tags.md](archivexl-tags.md "mention") (especially the section about [#root-entity-tags](archivexl-tags.md#root-entity-tags "mention"))
 
 ## Why are suffixes?
 
@@ -34,10 +35,6 @@ Suffixes are **outdated**! Do yourself a favour and use [dynamic appearances](..
 Since 1.5, psiberx has made it possible to use **conditionals** via [dynamic appearances](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md), which require a lot less of an overhead. (Personally, I've gone from 96 entries in the root entity down to 9!)
 
 But while the solution has changed (and improved), the problems remain and require handling.
-
-### Conditional hiding
-
-To conditionally hide items or parts of items, check [influencing-other-items.md](../../../modding-guides/items-equipment/influencing-other-items.md "mention") or [archivexl-tags.md](archivexl-tags.md "mention") (especially the section about [#root-entity-tags](archivexl-tags.md#root-entity-tags "mention"))
 
 ### Body genders
 
