@@ -7,7 +7,7 @@ description: An item addition with dynamic appearances, and what you can do for 
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published:** 29 Oct. 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: Jun 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update**: Jul 05 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will cover a sub-case of [.](./ "mention")via ArchiveXL (added in 1.13). Dynamic variants are both **easier** and **more flexible**. Unless you don't need different appearances, you will want to default to this approach.
 

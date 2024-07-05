@@ -6,7 +6,8 @@ description: No more replacers! Add your own gear with TweakXL and ArchiveXL
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created & Published**: November 04 2022 **by @manavortex**
+**Created & Published**: November 04 2022 **by @manavortex**\
+**Last documented Update:** July 05 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will walk you through **adding your own items** to Cyberpunk 2077, which can then be spawned via console.
 
@@ -23,7 +24,7 @@ This guide will walk you through **adding your own items** to Cyberpunk 2077, wh
 **Assumed skill level:**\
 You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible.
 
-This guide will **teach you the basic structure** - after you have done that, take a look at the guide for [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") for how to easily make many colour variants.
+This guide will **give you a working mod** with a **very basic structure**. In the section [#great-you-added-items-now-what](./#great-you-added-items-now-what "mention"), you're guided through various processes that will help you to understand how things connect, and teach you how to use ArchiveXL to add your own items.
 
 {% hint style="danger" %}
 **For experienced modders**
@@ -31,7 +32,8 @@ This guide will **teach you the basic structure** - after you have done that, ta
 I have repeatedly observed that newbies are fine with this guide, while people who know how to mod are not. Watch out for **boxes like this one** to avoid those pitfalls.
 {% endhint %}
 
-_The guide was created after reading_ [_this one_](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view) _and being left with a bunch of question marks. To get a deeper understanding, refer to the initial guide and follow the linked resources or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
+_The guide was created after reading_ [_this one_](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view) _and being left with a bunch of question marks. This guide is horribly outdated and I'm only citing it here because it got me started into the rabbit hole._\
+_To get a deeper understanding of the process, you can follow the linked resources, or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
 
 ### Wait, that's not what I want!
 
@@ -39,7 +41,7 @@ _The guide was created after reading_ [_this one_](https://drive.google.com/file
 * If you want to convert a mod to dynamic appearances, check the [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention")
 * If you want to use dynamic appearances out of the box, check [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") (this is the preferred approach as soon as you're creating different options).
 
-## Grab the example files
+## Step 0: Grab the example files
 
 * Create a new Wolvenkit project
 * Download the prepared files from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8268) and extract them to the root of your new project (overwriting the "source" folder)
@@ -63,7 +65,9 @@ Understanding of the file structure is **not required** as long as you **follow 
 {% hint style="info" %}
 **Wait, am I not supposed to do anything first??**
 
-Actually, no! This is how you later debug your custom items — by packing your project and checking that everything works in-game. So we're starting with a dry run here.
+Actually, no! This is how you later debug your custom items — by packing your project and checking that everything works in-game.&#x20;
+
+We're starting with a dry run to get you familiar with the process.
 {% endhint %}
 
 Press [Install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch "mention") in WolvenKit. This will do the following things:
@@ -75,28 +79,30 @@ Press [Install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolve
 Now, you can
 
 1. Launch the game.
-2.  Spawn one of the tutorial items via Cyber Engine Tweaks:\
+2.  Spawn one of the tutorial items via Cyber Engine Tweaks and equip it:\
     `Game.AddToInventory("Items.my_custom_shirt_redwhite")`
 
     `Game.AddToInventory("Items.my_custom_shirt_redblack")`
 
-You should now see ~~your~~ the tutorial item. If not, consult the section [#troubleshooting](./#troubleshooting "mention") below, or retrace your steps and make sure that everything works before proceeding to the step below.
+You should now see ~~your~~ the tutorial item. If not, consult the section [#troubleshooting](./#troubleshooting "mention") below, or retrace your steps and make sure all mods are installed correctly before continuing with [#great-you-added-items-now-what](./#great-you-added-items-now-what "mention")
 
 ## Great! You added items! Now what?
 
-You've successfully pushed a button and everything worked, but so far, you haven't done anything. If you're okay with this, then you're done now.
+You've successfully pushed a button and everything worked, but so far, you haven't done anything.&#x20;
 
-{% hint style="success" %}
-To start changing the existing files, check the [archive-xl-item-structure-explained.md](archive-xl-item-structure-explained.md "mention") page for "**`Making Changes`**" headers.
+If you're okay with this, then you're done now. Otherwise, you'll want to keep reading.
+
+{% hint style="warning" %}
+**If you want to have many colours or both body genders:**
+
+Do yourself a favour and use [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention").&#x20;
+
+You might have been given the Easy Item Additions tool, or you might be familiar with older tutorials. Please believe me: even doing this by hand is less effort than filling out all the fields.
+
+To familiarize yourself with the process, you can follow the [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention") and convert the example project.
 {% endhint %}
 
 Otherwise, you will want to complete one or more of the following steps:
-
-{% hint style="info" %}
-If you want to create more appearances or use variants (e.g. for different body genders or camera prefixes), you want to check out [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention"). Do yourself a favour!
-
-There is no exact migration guide yet. Maybe you'd like to write one?
-{% endhint %}
 
 * change the mod to use [different-equipment-slots.md](different-equipment-slots.md "mention") (e.g. shoes or glasses)
 * Learn about [#variants-and-suffixes](../../../for-mod-creators-theory/core-mods-explained/archivexl/#variants-and-suffixes "mention")for e.g. [#adding-a-male-instance](./#adding-a-male-instance "mention") or check the [#hiding-body-parts-diagram](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md#hiding-body-parts-diagram "mention")
@@ -104,6 +110,10 @@ There is no exact migration guide yet. Maybe you'd like to write one?
 * Create [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention")
 * Create [adding-items-atelier-integration.md](adding-items-atelier-integration.md "mention")
 * Learn about [porting-3d-objects-to-cyberpunk.md](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk.md "mention")
+
+{% hint style="success" %}
+To start changing the existing files, check the [archive-xl-item-structure-explained.md](archive-xl-item-structure-explained.md "mention") page for "**`Making Changes`**" headers.
+{% endhint %}
 
 ## Diagram
 
@@ -219,27 +229,31 @@ If it works, this is an excellent moment to take a backup! If not, check [#troub
 ## Adding a Male Instance
 
 {% hint style="warning" %}
-This is  a great opportunity to switch over to the [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") approach. For a step-by-step guide on how to convert your mod, check[archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention").
+This is  a great opportunity to switch over to the [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") approach.&#x20;
+
+For a step-by-step guide on how to convert your mod, check[archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention").
 {% endhint %}
 
-Before we proceed with the tutorial, it's important to address a common issue you might have encountered while creating your mod.
+If an item is rigged for the female body gender, it will look wonky if worn by a male-rigged V. (But we have a snarky tooltip, so that's OK!)
 
-If you've tested the mod on a Male V, you might have noticed some weird glitches like mesh clipping or wonky shapes.
-
-You see, we've been using a mesh designed specifically for Female V, and that's why we've been running into some roadblocks. But don't worry, we're here to help you overcome this challenge!
+This section of the guide will teach you how to fix that, adding versions for both body genders.
 
 {% hint style="danger" %}
 Screenshots in this part of the mod may be outdated.&#x20;
 {% endhint %}
 
-### Preparing the mesh file for the male variant
+### Finding the mesh file for the male variant
+
+{% hint style="info" %}
+To keep things simple, we'll be using a different mesh here, rather than walking you through the whole refitting and conversion process. If you want to do that, you can check out&#x20;
+{% endhint %}
 
 To fix this issue, we'll need a mesh that's compatible with Male V.
 
 In the interest of keeping things simple, we've found just the mesh for you! It's called `t1_024_ma_tshirt__sweater.mesh` and it can be found in the `base\characters\garment\citizen_casual\torso\t1_024_tshirt__sweater` directory.
 
 {% hint style="warning" %}
-If you plan on using other meshes for your mod, ensure that it has `ma` or `pma` in its name.
+If you plan on using other meshes for your mod, ensure that they have \_`ma_` or `_pma_` in their name.
 
 Keep in mind that some `ma` meshes may still have clipping issues when paired with certain types of clothing, while `pma` meshes are specifically designed for V and don't have this problem.
 

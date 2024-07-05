@@ -78,7 +78,7 @@ If you are already logged in, proceed to the next section "[Adding Cyberpunk](vo
 1. If Vortex didn't open by itself, open it from the start menu.
 2. Log into Nexusmods by clicking on the red circle in the top right of your client
 
-<figure><img src="../../../.gitbook/assets/4 (1).png" alt=""><figcaption><p>The initial dashboard on launch</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (1) (1).png" alt=""><figcaption><p>The initial dashboard on launch</p></figcaption></figure>
 
 3. You will see either a browser window or an error message that Vortex couldn't open one – in this case, copy the URL in the box at the bottom and open the browser window yourself
 
@@ -87,11 +87,11 @@ If you are already logged in, proceed to the next section "[Adding Cyberpunk](vo
 4. Optional: log into nexusmods (if you aren’t)
 5. Allow Vortex to access your Nexus account by clicking "Authorize":
 
-<figure><img src="../../../.gitbook/assets/9.png" alt=""><figcaption><p>Allow Vortex to authorise your account</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/9 (1).png" alt=""><figcaption><p>Allow Vortex to authorise your account</p></figcaption></figure>
 
 6. Click "Log in to Vortex":
 
-<figure><img src="../../../.gitbook/assets/10.png" alt=""><figcaption><p>Log into Vortex and close the page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/10 (1).png" alt=""><figcaption><p>Log into Vortex and close the page</p></figcaption></figure>
 
 7. Instead of the red icon, you should now see your profile picture and username from nexusmods.
 

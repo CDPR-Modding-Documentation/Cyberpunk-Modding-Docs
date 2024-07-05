@@ -2,7 +2,7 @@
 description: >-
   A description of a streamlined, refined, accessible, and relatively easy
   system for creating Cyberpunk 2077 LUT mods from scratch.
-cover: ../../../../.gitbook/assets/ACES_2.png
+cover: ../../../.gitbook/assets/ACES_2.png
 coverY: 29
 ---
 
@@ -35,7 +35,7 @@ You can check out nullfractal's [github template](https://github.com/nullfrctl/R
 
 {% tabs %}
 {% tab title="NVIDIA Texture Tools Exporter" %}
-You can't download the NVIDIA texture tools from the [official website](https://developer.nvidia.com/nvidia-texture-tools-exporter) without an **NVIDIA account** that participates in the **developer program**. We've put a backup of the executable on the wiki's [github repository](../../../../\_resources\_and\_assets/tools/NVIDIA\_Texture\_Tools\_2023.2.0.zip) — you need to decide which is the lesser evil, yet another account or downloading a random .exe from the internet.
+You can't download the NVIDIA texture tools from the [official website](https://developer.nvidia.com/nvidia-texture-tools-exporter) without an **NVIDIA account** that participates in the **developer program**. We've put a backup of the executable on the wiki's [github repository](../../../\_resources\_and\_assets/tools/NVIDIA\_Texture\_Tools\_2023.2.0.zip) — you need to decide which is the lesser evil, yet another account or downloading a random .exe from the internet.
 {% endtab %}
 
 {% tab title="DaVinci Resolve" %}
@@ -59,7 +59,7 @@ The essential tool for all Cyberpunk modding. Nightly is preferred (and what thi
 
 Create a new project in WolvenKit and import the file `base\weather\24h_basic\luts\cp2077_gen_lut_nge_v017.xbm` and export to a DDS, then rename it, removing the `xbm` file extension. You should have a dummy name with a file path containing that same file in the "raw" folder. You can delete the file in there, we only need the folder set up correctly.
 
-<figure><img src="../../../../.gitbook/assets/image (42).png" alt=""><figcaption><p>How the Project Explorer should look like right now.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (42).png" alt=""><figcaption><p>How the Project Explorer should look like right now.</p></figcaption></figure>
 
 ### DaVinci Resolve
 
@@ -69,11 +69,11 @@ If you have issues getting Resolve to run for the first time, uninstall the pane
 
 Create a Resolve project, and head straight over to the Fusion tab, without importing any media. Add a LUT Cube Creator node, change the type to vertical and size to 32, 48, or 64. Remember this number, as you will use it later. Select for the generated Media Out node to output to both sides of the preview by enabling both of the circles below it. On one of the sides, select Views>3D Histogram. You should now have a LUT cube present. If you'd like more accuracy, right click and go to 3D Histogram and select solid with 1:1 sampling.
 
-<figure><img src="../../../../.gitbook/assets/image (105).png" alt=""><figcaption><p>An example to show the current workspace should look like.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (105).png" alt=""><figcaption><p>An example to show the current workspace should look like.</p></figcaption></figure>
 
 Right after the LUT Cube Creator node, add a Color Space Transform node, and matching the fact that tools expect ARRI Wide Gamut 3 with ARRI LogC3 data, but the game outputs sRGB with ARRI LogC3 gamma, we need to go from sRGB color space with ARRI LogC3 gamma to an output color space of ARRI Wide Gamut 3 with output gamma of ARRI LogC3
 
-<figure><img src="../../../../.gitbook/assets/image (56).png" alt=""><figcaption><p>Settings for the Color Space Transform node.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (56).png" alt=""><figcaption><p>Settings for the Color Space Transform node.</p></figcaption></figure>
 
 After this, we need to go from this LogC3 data to sRGB, which is what our display expects.
 
@@ -83,7 +83,7 @@ This is the method used by the original game to go from the input LogC3 to sRGB 
 
 Add an ACES Transform node after the Color Space Transform node. Set the input transform to ARRI LogC3 with an output transform of sRGB and use ACES reference gamut compression.
 
-<figure><img src="../../../../.gitbook/assets/image (41).png" alt=""><figcaption><p>How the workspace should look like after using the ACES method.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (41).png" alt=""><figcaption><p>How the workspace should look like after using the ACES method.</p></figcaption></figure>
 
 #### ARRI LogC3 method
 
@@ -95,7 +95,7 @@ In the link above, select LogC wide gamut as the source format and destination f
 
 Add a serial File LUT node and point to your downloaded file.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (91).png" alt=""><figcaption><p>The workspace after following the directions for the LogC3 method.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (91).png" alt=""><figcaption><p>The workspace after following the directions for the LogC3 method.</p></figcaption></figure>
 
 #### ARRI LogC4 method
 
@@ -103,7 +103,7 @@ It may share a name with the LogC3 method, but is distinct from it as it uses a 
 
 Follow the same link described in the [#arri-logc3-method](./#arri-logc3-method "mention") section until you reach this part. Download the "ARRI LogC4 LUT Package".
 
-<figure><img src="../../../../.gitbook/assets/image (71).png" alt=""><figcaption><p>The LogC4 LUTs we will use.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (71).png" alt=""><figcaption><p>The LogC4 LUTs we will use.</p></figcaption></figure>
 
 Once you have downloaded it, extract the Rec.709 Gamma 2.4 65-point .CUBE file from the zip file. Add a serial node after the Color Space Transform called File LUT and point the LUT file to your extracted .CUBE file.
 
@@ -113,7 +113,7 @@ You can mess with the Tone Mapping Method, but just select None as a good option
 
 We need to change an option afterward that will be described later for both the LogC3/4 methods.
 
-<figure><img src="../../../../.gitbook/assets/image (33).png" alt=""><figcaption><p>How your workspace should look like, including the CST settings.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption><p>How your workspace should look like, including the CST settings.</p></figcaption></figure>
 
 #### Resolve Color Managed method
 
@@ -123,25 +123,25 @@ For this method to work, we just need to change the settings in the Color Space 
 
 Instead of having an output color space of ARRI Wide Gamut 3, set the color space to sRGB and gamma to sRGB as well. Then, change the tone mapping method to DaVinci, or some other method if you know what they mean.
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Your workspace after this method. It's easy and minimal, but has very low contrast.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption><p>Your workspace after this method. It's easy and minimal, but has very low contrast.</p></figcaption></figure>
 
 This method creates a color cube that is very "unbiased"--it has fidelity in all directions, which, while creating a good representation of true color, can result in unnatural saturation. To account for this, the saturation compression gamut compression method can be selected.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>The color cube after saturation compression.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>The color cube after saturation compression.</p></figcaption></figure>
 
 After you have used your preferred method, you need to apply gamma correction. If you do not do this, you end up with incorrect gamma, which can mainly be seen on skin tones.&#x20;
 
 For the ACES method, you need to add another Color Space Transform node, with input color space and gamma of sRGB, with the output color space of sRGB but output gamma of linear.
 
-<figure><img src="../../../../.gitbook/assets/image (72).png" alt=""><figcaption><p>ACES method after gamma correction.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (72).png" alt=""><figcaption><p>ACES method after gamma correction.</p></figcaption></figure>
 
 For both ARRI methods, nearly the exact same steps are taken as the ACES method, but, instead of sRGB input color space and gamma, we use an input color space of Rec.709, but input gamma of Gamma 2.4. Keep the output color space at sRGB and output gamma at linear.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (65).png" alt=""><figcaption><p>LogC4 after gamma correction.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (65).png" alt=""><figcaption><p>LogC4 after gamma correction.</p></figcaption></figure>
 
 For the Resolve Color Managed method, simply change the output gamma in the color space transform to linear, but turn on Apply Forward OOTF.
 
-<figure><img src="../../../../.gitbook/assets/image (35).png" alt=""><figcaption><p>Gamma corrected RCM method.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (35).png" alt=""><figcaption><p>Gamma corrected RCM method.</p></figcaption></figure>
 
 This is the final stage. We now just need to output to an image, and use the right format. To do this, use a Resolve FX Transform>Transform node (not any other transform node) and switch on "Flip Vertical" to correctly output.
 
@@ -153,7 +153,7 @@ Drag on your exported file onto the NVTT window and tick off "Generate Mipmaps" 
 
 Turn on "Extract From Atlas" and set "Depth of Volume" to the exact size of your LUT that you set up when first creating it. To verify you got it right, you should see a Z slider on the top right of the NVTT interface. Drag it and see if there is any vertical shift in the texture. If there is not, you got it right.
 
-<figure><img src="../../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>NVTT correctly set up with the RCM (Resolve Color Managed) LUT in it.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption><p>NVTT correctly set up with the RCM (Resolve Color Managed) LUT in it.</p></figcaption></figure>
 
 Save as a DDS file (only DDS) and put it in the folder that was generated after you exported the XBM file at the start of the article.&#x20;
 
@@ -161,11 +161,11 @@ Save as a DDS file (only DDS) and put it in the folder that was generated after 
 
 You should now see it in the import tool in WolvenKit. Change its TextureGroup property to `TEXG_Generic_LUT`, turn off IsGamma, VFlip, GenerateMipMaps, IsStreamable, and PremultiplyAlpha. Set compression to `TCM_None`. If your file doesn't have RawFormat as `TRF_HDRFloat`, then something in the DDS importing went wrong, and you need to re-set the format as 32x4f in NVTT.
 
-<figure><img src="../../../../.gitbook/assets/image (37).png" alt=""><figcaption><p>Settings set up correctly.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (37).png" alt=""><figcaption><p>Settings set up correctly.</p></figcaption></figure>
 
 Import the DDS. We need to tell the file it is actually a 3D texture in the header (even if the 3D data is already there), so go to `renderTextureResource>renderResourceBlobPC>header>textureInfo>type` and change it from `TEXTYPE_2D` to `TEXTYPE_3D`.
 
-<figure><img src="../../../../.gitbook/assets/image (84).png" alt=""><figcaption><p>Changing the texture type.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (84).png" alt=""><figcaption><p>Changing the texture type.</p></figcaption></figure>
 
 Make a copy of the XBM file and rename it to `cp2077_gen_lut_nge_v017`. Our dummy file there is for being able to quickly copy the filename, so, select your LUT XBM, C-c, C-v, select the dummy file, F2, C-c, select your LUT copy XBM, F2, C-v.
 
@@ -175,18 +175,18 @@ Your LUT is now correctly set up. You can install and launch now!
 
 <div>
 
-<figure><img src="../../../../.gitbook/assets/1.png" alt=""><figcaption><p>Vanilla</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/1 (1).png" alt=""><figcaption><p>Vanilla</p></figcaption></figure>
 
  
 
-<figure><img src="../../../../.gitbook/assets/2.png" alt=""><figcaption><p>RCM</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (1).png" alt=""><figcaption><p>RCM</p></figcaption></figure>
 
  
 
-<figure><img src="../../../../.gitbook/assets/3.png" alt=""><figcaption><p>ACES</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (1).png" alt=""><figcaption><p>ACES</p></figcaption></figure>
 
  
 
-<figure><img src="../../../../.gitbook/assets/4.png" alt=""><figcaption><p>LogC4</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (1).png" alt=""><figcaption><p>LogC4</p></figcaption></figure>
 
 </div>

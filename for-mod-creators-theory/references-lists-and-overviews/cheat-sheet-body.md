@@ -46,6 +46,16 @@ These meshes cover up seams at arms and shoulders, where the mesh edges might sh
 
 <table><thead><tr><th width="494"></th><th>Component</th></tr></thead><tbody><tr><td><code>base\characters\common\player_base_bodies\player_man_average\tattoos\tx_000_pma_base__full_tattoo_01.mesh</code></td><td><code>tx_000_pma_base__full_tattoo_01</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_man_average\tattoos\tx_000_pma_base__full_tattoo_02.mesh</code></td><td><code>tx_000_pma_base__full_tattoo_02</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_man_average\tattoos\tx_000_pma_base__full_tattoo_03.mesh</code></td><td><code>tx_000_pma_base__full_tattoo_03</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_man_average\tattoos\tx_000_pma_base__full_tattoo_04.mesh</code></td><td><code>tx_000_pma_base__full_tattoo_04</code></td></tr><tr><td><code>base\characters\common\player_base_bodies\player_man_average\tattoos\tx_000_pma_base__full_tattoo_05.mesh</code></td><td><code>tx_000_pma_base__full_tattoo_05</code></td></tr></tbody></table>
 
+## NPC bodies
+
+You can find NPC bodies in the following folder:
+
+```
+base\characters\common\base_bodies
+```
+
+<table><thead><tr><th width="187">NPC</th><th>file path</th><th>explanation</th></tr></thead><tbody><tr><td>man base</td><td><code>base\characters\common\base_bodies\man_average\t0_000_ma_base__full.mesh</code></td><td>average body type, male body gender</td></tr><tr><td>man big</td><td><code>base\characters\common\base_bodies\man_big\t0_000_mb_base__full_hql.mesh</code></td><td>Sumo body type</td></tr><tr><td>man child</td><td><code>base\characters\common\base_bodies\man_child\t0_000_mc_base__full.mesh</code></td><td>Used for all children, regardless of body gender</td></tr><tr><td>man fat</td><td><code>base\characters\common\base_bodies\man_fat\t0_000_mf_base__full.mesh</code></td><td>fat citizens</td></tr><tr><td>man massive</td><td><code>base\characters\common\base_bodies\man_massive\t0_000_mm_base__full_head.mesh</code></td><td>Used for Sasquatch and Adam Smasher's 2020 appearance</td></tr><tr><td>woman average</td><td><code>base\characters\common\base_bodies\woman_average\t0_000_wa_base__full_hq.mesh</code></td><td>average body type, female body gender.<br>Boob and foot submeshes included.</td></tr><tr><td>woman small</td><td><code>base\characters\common\base_bodies\woman_small\t0_000_ws_base__full.mesh</code></td><td>???</td></tr></tbody></table>
+
 ## Head
 
 Find this information under [cheat-sheet-head](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/ "mention").

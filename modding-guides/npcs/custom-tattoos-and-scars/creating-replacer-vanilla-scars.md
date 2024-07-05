@@ -52,7 +52,7 @@ Let's start by creating the scar's bumpmap. Open `pma__basehead_scars_n01.png` (
 
 The image should look like this :&#x20;
 
-![](<../../../../.gitbook/assets/1 (1).png>)
+![](<../../../.gitbook/assets/1 (1) (1).png>)
 
 _The vanilla size are 1024x1024, I have upscaled mine to 4096x4096, but that's personal taste._
 
@@ -60,7 +60,7 @@ _The vanilla size are 1024x1024, I have upscaled mine to 4096x4096, but that's p
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (292).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -70,12 +70,12 @@ _The vanilla size are 1024x1024, I have upscaled mine to 4096x4096, but that's p
 By creating a new layer, you will preserve the original edit and can toggle your changes on and off in the layers palette.
 {% endhint %}
 
-![](<../../../../.gitbook/assets/3 (1).png>)\
+![](<../../../.gitbook/assets/3 (1) (1).png>)\
 
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/4 (2).png" alt="" width="354"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (2).png" alt="" width="354"><figcaption></figcaption></figure>
 
 </div>
 
@@ -85,20 +85,20 @@ By creating a new layer, you will preserve the original edit and can toggle your
 The scar replaced spans the entire face, so this is the best scar to replace. To see which parts are affected, you can drag the \_d texture on your mesh and turn its opacity to 50%:
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/5.png" alt=""><figcaption><p>Toggle the layer off again when you're done editing it</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/5 (1).png" alt=""><figcaption><p>Toggle the layer off again when you're done editing it</p></figcaption></figure>
 
 4. To create your scar, take a basic **red** color, and draw your scar on the new layer you created in Step 2.
 5. Copy the entire layer (Hotkey: `Ctrl+A`, `Ctrl+C`)
 6. In the Layers Palette, select the _**red**_ channel and paste your scar. The image will now be black and white.
 
-![](<../../../../.gitbook/assets/6 (1).png>)
+![](<../../../.gitbook/assets/6 (1) (1).png>)
 
 7. In the Layers Palette, select all three channels (or RGB) to see colours again.
 8. Now you need to turn your image green. There are various ways to do that, for example Image -> Adjustments -> Hue/Saturation.
 9. Copy the green scar and paste it into the _**green**_ channel.
 10. Use `CTRL + T` to select it and shifted the scar a few pixels to the right (you can use the arrow keys). It should now look like this:
 
-<figure><img src="../../../../.gitbook/assets/7.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/7 (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Editing the roughness map
 
@@ -109,7 +109,7 @@ The scar replaced spans the entire face, so this is the best scar to replace. To
 4. The pasted scar should automatically be black and white. If not, change that via the Edit -> Image -> Greyscale option.
 5. Invert the image (Hotkey: `Ctrl+I`) so that it looks like the picture below:
 
-<figure><img src="../../../../.gitbook/assets/8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/8 (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Now change the contrast of the formerly red channel so that the scar is black (Image -> Adjustments -> Brightness/Contrast).
 7. Repeat the process with the green channel from the normal map.&#x20;
@@ -141,7 +141,7 @@ To remedy this problem, create a new project and obtain the 4 file types as seen
 {% tab title="Nose texture cut" %}
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (178).png" alt="" width="371"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (178).png" alt="" width="371"><figcaption></figcaption></figure>
 
 </div>
 {% endtab %}
@@ -149,7 +149,7 @@ To remedy this problem, create a new project and obtain the 4 file types as seen
 {% tab title="Strange square shadow" %}
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (180).png" alt="" width="315"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (180).png" alt="" width="315"><figcaption></figcaption></figure>
 
 </div>
 {% endtab %}
