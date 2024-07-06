@@ -106,9 +106,9 @@ _Don’t mind his missing body parts, I didn’t bother fixing his body mesh and
 
 ![](../../.gitbook/assets/12.png)
 
-Same-gender refits are relatively easy (MA to MB, WA to WB…) because, as said earlier, the rig structure are the same and share the same names, so a simple -meshbones parameter does the work of repositioning it during export over the original mesh.
+Same-gender refits are relatively easy (MA to MB, WA to WB…) because, as said earlier, the rig structure are the same and share the same names.
 
-For cross-gender refits (WA to MA, MA to WA) you can’t use the -meshbones parameter during export, the rigs are different and you will have to export your refitted garment over a same-gendered vanilla garment, to then transfer the mesh render data (mlsetup, mlmask, normal map…) in WolvenKit from the original Mesh to the refitted one!
+For cross-gender refits (WA to MA, MA to WA) the rigs are different and you will have to export your refitted garment over a same-gendered vanilla garment, to then transfer the mesh render data (mlsetup, mlmask, normal map…) in WolvenKit from the original Mesh to the refitted one!
 
 Hopefully this is easy enough to follow 🤲
 
