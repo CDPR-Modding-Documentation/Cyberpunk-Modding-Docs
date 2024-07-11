@@ -262,6 +262,7 @@
     * [🔫 ItemAdditions: Weapons](modding-guides/items-equipment/adding-new-items/weapons/README.md)
       * [☠️ New Iconic Weapon: Step by Step](modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md)
       * [Throwing weapons: projectiles](modding-guides/items-equipment/adding-new-items/weapons/throwing-weapons-projectiles.md)
+      * [Weapons: Attachments and Scopes](modding-guides/items-equipment/adding-new-items/weapons/weapons-attachments-and-scopes.md)
   * [Moving and renaming in existing projects](modding-guides/items-equipment/moving-and-renaming-in-existing-projects.md)
   * [Custompathing assets](modding-guides/items-equipment/custompathing-assets.md)
   * [RIG Swapping Garments - other body conversion](modding-guides/items-equipment/rig-swapping-garments-other-body-conversion.md)
