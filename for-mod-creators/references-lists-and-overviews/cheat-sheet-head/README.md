@@ -2,8 +2,6 @@
 
 ## Summary
 
-**Last documented edit**: January 14 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
-
 This page lists various properties of the player head. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.&#x20;
 
 {% hint style="info" %}
@@ -141,7 +139,5 @@ Provided below is a table with the eyebrows and their associated texture files.
 
 ## Eyeliner and kohl
 
-{% hint style="info" %}
-To be done. Are you bored (and potentially have OCD)? Please get in touch via Discord!
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/done.png" alt=""><figcaption></figcaption></figure>
 
