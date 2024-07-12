@@ -357,3 +357,4 @@
   * [Custom Loading Screens](modding-guides/everything-else/custom-loading-screens.md)
   * [Breach Screen - Replacer](modding-guides/everything-else/breach-screen-replacer.md)
   * [Customise CP77 info on GOG](modding-guides/everything-else/customise-cp77-info-on-gog.md)
+  * [Effects modding](modding-guides/everything-else/effects-modding.md)

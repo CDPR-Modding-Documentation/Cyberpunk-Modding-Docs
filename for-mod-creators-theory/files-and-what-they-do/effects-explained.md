@@ -11,6 +11,7 @@ description: How do effects work? How do I mod them?
 
 ### Wait, this is not what I want!
 
+* See [effects-modding.md](../../modding-guides/everything-else/effects-modding.md "mention") for a hands-on list of changing effects in Cyberpunk
 * See [effect-components.md](components/documented-components/effect-components.md "mention") for effect explanations by component
 * See [fx-material-properties.md](../materials/configuring-materials/fx-material-properties.md "mention") for animated _materials_
 * While explosions are definitely effects, lights are something else => [lights-explained.md](lights-explained.md "mention")
@@ -39,34 +40,6 @@ You can find a particle's lifetime for the individual entries in the `modules` a
 These are probably (?) overwritten by effect durations?
 
 <figure><img src="../../.gitbook/assets/particle_durations.png" alt=""><figcaption></figcaption></figure>
-
-## To select and identify effect files used in different ways
-
-As we progress through the game, we encounter many effects, such as those seen in Cyberspace. Since I don't yet know everything, I'll show you the process of creating a mod.
-
-Firstly, we choose the effect we want to import. I found an effect I want to use for overclocking during the Somewhat Damaged quest, and the quest code is Q305\_bunker. Navigate to the asset browser and search for related items, focusing on extracting the effect files.
-
-<figure><img src="../../.gitbook/assets/image (383).png" alt=""><figcaption><p>fxLibrary.lua</p></figcaption></figure>
-
-To confirm if this effect is what I'm looking for, I need the [FX player](https://www.nexusmods.com/cyberpunk2077/mods/8194) mod. Based on the Cyberpunk installation folder, go to bin\x64\plugins\cyber\_engine\_tweaks\mods\FxPlayer\modules and confirm that fxLibrary.lua operates in the same format. Copy the file path of the desired effect to play these files in-game using CET (Cyber Engine Tweaks).
-
-<figure><img src="../../.gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>
-
-
-
-## How to see effect file worked
-
-Firstly, we choose the effect we want to import. I found an effect I want to use for overclocking during the "Somewhat Damaged" quest, and the quest code is Q305\_bunker. Navigate to the asset browser and search for related items, focusing on extracting the effect files.
-
-{% hint style="info" %}
-TODO: This could use an image
-{% endhint %}
-
-To confirm if this effect is what I'm looking for, I need the [FX player](https://www.nexusmods.com/cyberpunk2077/mods/8194) mod. Based on the Cyberpunk installation folder, go to bin\x64\plugins\cyber\_engine\_tweaks\mods\FxPlayer\modules and confirm that fxLibrary.lua operates in the same format. Copy the file path of the desired effect to play these files in-game using CET (Cyber Engine Tweaks).
-
-{% hint style="info" %}
-TODO: This could use an image
-{% endhint %}
 
 [^1]: Don't worry, you can't break anything. Each change has to be reviewed by an admin before it is merged back.
 
