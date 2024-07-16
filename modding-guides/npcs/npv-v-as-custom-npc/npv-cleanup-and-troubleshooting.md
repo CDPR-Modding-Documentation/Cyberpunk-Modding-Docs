@@ -59,6 +59,20 @@ For each of the mesh components that aren't moving, expand it and find the `skin
 
 <figure><img src="../../../.gitbook/assets/npv_skinning_root.png" alt=""><figcaption></figcaption></figure>
 
+### My feet are wrong for the shoes!
+
+You need to **manually enable** the correct foot mesh.
+
+Hide [chunks](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md) 5-7 of the base body (original component name is `t0_000_pXa_base__full`):
+
+<figure><img src="../../../.gitbook/assets/npv_hide_feet.png" alt=""><figcaption></figcaption></figure>
+
+Add an extra component and point the `depotPath` to the mesh for the correct feet. This is either `l0_000_pXa_base__cs_flat` or `l0_000_pXa_base__cs_heels`.
+
+{% hint style="info" %}
+If you don't have these meshes (they should be included in the sample project), you can extract them from the [Toggleable Feet mod](https://www.nexusmods.com/cyberpunk2077/mods/7049).
+{% endhint %}
+
 ### My NPV loads, but I'm getting a random appearance!
 
 That happens when you're loading an appearance that the game doesn't know about — the problem is between your .lua file and your root entity. The names must match exactly, and must contain not typos or leading/trailing spaces.
