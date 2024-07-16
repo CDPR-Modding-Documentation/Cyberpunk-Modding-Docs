@@ -13,7 +13,9 @@ This guide will teach you how to use a textured (PBR) material in Cyberpunk. It 
 
 ## Prerequisite
 
-You have a CMaterialInstance that can use your textured material. If you don't have one yet, follow the steps under [.](./ "mention").
+You have a `CMaterialInstance` that can use your textured material.&#x20;
+
+If you don't have one yet, follow the steps under [.](./ "mention"), or skip to [#finding-example-material-configurations](using-a-textured-material.md#finding-example-material-configurations "mention") and copy the entire material.
 
 ## The PBR material
 
@@ -49,3 +51,5 @@ Right-click on the entry, and select "find files using this". That will get you 
 With what you now know, you can dig through their material instances and find example parameters.
 
 <figure><img src="../../../../.gitbook/assets/find_files_using_this.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../../.gitbook/assets/pbr_example_parameters.png" alt=""><figcaption></figcaption></figure>
