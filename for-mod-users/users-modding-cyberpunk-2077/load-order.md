@@ -43,7 +43,9 @@ The game loads mods in the following order (higher wins):
 
 All .archive files in `Cyberpunk 2077/archive/pc/mod` in alphabetical order (see below).
 
-> Note: If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file. The file may contain archive names, one mod archive name in each line. Example:
+{% hint style="warning" %}
+Note: If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file. The file may contain archive names, one mod archive name in each line. Example:
+{% endhint %}
 
 ```
 modb.archive

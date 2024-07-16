@@ -40,6 +40,7 @@ You can specify a specific load order with the **-mod** parameter
 *   **`-mod=<modA dirname> [<modB dirname> ...]`**
 
     stage only the mods in the given **directory** names (without the leading `mods\),` in left to right load order precedence. You must escape any spaces by enclosing the argument in double quotes (for example `Mod With Space` should be given as `-mod="Mod With Space"`.)
+* **`-modlist=<filename>`**
 *   **`-?|-h|--help`**
 
     Prints out a description of how to use the command.
@@ -52,3 +53,6 @@ You can specify a specific load order with the **-mod** parameter
 *   **`redmod deploy -root="C:\Gog\Cyberpunk 2077" -mod=modB modA modC`**
 
     Stages only the three mods `C:\Gog\Cyberpunk 2077\mods\modA\`, `C:\Gog\Cyberpunk 2077\mods\modB\` and `C:\Gog\Cyberpunk 2077\mods\modC\` for loading. In this case, `modB` will override both `modA` and `mod`C, and `modA` will override `modC` (in case any of them modify the same asset paths.)
+*   **`redmod deploy -root="C:\Gog\Cyberpunk 2077" -modlist="loadorder.txt"`**
+
+    Same as above, but will load the mods from the file loadorder.txt instead.
