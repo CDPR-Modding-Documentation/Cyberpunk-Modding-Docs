@@ -16,13 +16,14 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 ### Wait, this is not what I want!
 
 * Check [porting-3d-objects-to-cyberpunk.md](../../3d-modelling/porting-3d-objects-to-cyberpunk.md "mention") for an import guide, but don't forget to come back here once you're done!
-* You can learn more about materials under [materials](../../materials/ "mention")
+* You can learn more about materials under [materials](../../materials/ "mention").&#x20;
+  * If you want to understand material assignment, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")-> [#material-assignment](../../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment "mention")
+  * If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
+  * For a guide about changing materials, check [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
+    * If you just want to use a textured material, check [using-a-textured-material.md](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention")
 * Find a look-up list of cool materials under [cheat-sheet-materials.md](../../references-lists-and-overviews/cheat-sheet-materials.md "mention")
 * For a more detailed guide about prop creation, check [custom-props](custom-props/ "mention")
 * Or maybe you wonder  [#where-to-find-models](custom-props/#where-to-find-models "mention")
-* If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
-* For a guide about changing materials, check [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
-* If you want to understand material assignment, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")-> [#material-assignment](../../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment "mention")
 
 ## **Requirements**
 

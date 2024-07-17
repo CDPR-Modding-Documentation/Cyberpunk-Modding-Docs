@@ -8,6 +8,8 @@ description: Material Instances and external materials
 
 **Published**: ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")        **Last documented update**: May 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
+This guide will teach you how .mi files work
+
 {% hint style="info" %}
 As of May 2024, you can also use [archivexl-dynamic-materials.md](../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention"), which is a more flexible implementation of the same basegame mechanic. However, you may want to understand this, because CDPR are using it a lot.
 {% endhint %}

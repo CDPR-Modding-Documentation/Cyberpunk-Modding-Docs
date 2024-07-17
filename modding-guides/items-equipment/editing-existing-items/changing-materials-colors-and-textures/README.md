@@ -17,6 +17,8 @@ This guide will teach you how to edit an item's material, changing its appearanc
 * If you want to edit emissive (glowing) material, check [r-and-r-emissive.md](../../recolours-and-refits/r-and-r-emissive.md "mention") -> [#changing-the-presets](../../recolours-and-refits/r-and-r-emissive.md#changing-the-presets "mention")
 * For an overview of base materials and example files, you can check [here](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md).
 * If you want to learn how mesh material assignment works in general, you can check the [corresponding page](../../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#material-assignment).
+* For details on changing materials, check [.](./ "mention").
+  * If you just want to use a textured material, check [using-a-textured-material.md](using-a-textured-material.md "mention")
 * You can find a video guide on [youtube](https://youtu.be/HLwjKM8YDlA) (It's also embedded below)
 
 ## Prerequisites
