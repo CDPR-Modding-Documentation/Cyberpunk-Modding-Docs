@@ -13,7 +13,7 @@ This page gives an explanation and overview about material properties. For more 
 * If you want to see a list of materials grouped by class, check [cheat-sheet-materials.md](../../references-lists-and-overviews/cheat-sheet-materials.md "mention")
 * If you want to learn how material assignments work on the object, check [3d-objects-.mesh-files](../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")
 * If you want to understand reusable material templates, please check [re-using-materials-.mi.md](../../files-and-what-they-do/materials/re-using-materials-.mi.md "mention")
-* The [Broken link](broken-reference "mention") section has multiple guides on editing materials, e.g. [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention") or [textured-items-and-cyberpunk-materials.md](../../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md "mention")
+* The [Broken link](broken-reference "mention") section has multiple guides on editing materials, e.g. [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention") or [textured-items-and-cyberpunk-materials.md](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
 
 ## Material properties
 

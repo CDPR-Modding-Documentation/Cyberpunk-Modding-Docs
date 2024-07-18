@@ -16,7 +16,7 @@ Would you rather…
 
 * [Edit, import, or export](../../../modding-guides/textures-and-luts/images-importing-editing-exporting.md) textures?
 * Learn about [textured materials](../../materials/#textured)?
-* Use [a textured material](../../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md#material-assignments) on your mesh?
+* Use [a textured material](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#material-assignments) on your mesh?
 
 ## Texture files
 

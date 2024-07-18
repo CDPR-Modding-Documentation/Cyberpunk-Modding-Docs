@@ -16,7 +16,7 @@ This page contains information on .mesh files and their properties.
 * See [wkit-blender-plugin-import-export.md](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention") for a guide on export/import
 * To edit a mesh's appearance, check [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
   * If you just want to use a textured material, check [using-a-textured-material.md](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention")
-* To learn about mesh materials, see [textured-items-and-cyberpunk-materials.md](../../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md "mention")
+* To learn about mesh materials, see [textured-items-and-cyberpunk-materials.md](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
 * To hide parts of a mesh under different circumstances, check [first-person-perspective-fixes.md](../../../modding-guides/items-equipment/first-person-perspective-fixes.md "mention")
 * To stop copy-pasting so much, check [archivexl-dynamic-materials.md](../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention")
 

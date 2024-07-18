@@ -40,9 +40,13 @@ You can change tweaks with&#x20;
 * Cyber Engine Tweaks (see Scissor's tutorial ([Google Doc](https://docs.google.com/document/d/1pPN\_RiluE-4PwGWOxdEVOegfBEaEsd5APHndr82FdPo/edit)))
 * &#x20;TweakXL (see [changing-vendor-inventory.md](changing-vendor-inventory.md "mention"))
 
+{% hint style="info" %}
+If possible, you should stick to TweakXL for editing tweaks.
+{% endhint %}
+
 <details>
 
-<summary>OK, but what's the pros and cons for each?</summary>
+<summary>Why? What's the pros and cons for each?</summary>
 
 [psiberx says](https://discord.com/channels/717692382849663036/953004282142163014/1177462646937763850):&#x20;
 
@@ -54,7 +58,7 @@ it's mostly preference but there are real advantages of TweakXL:
 * easier to work with arrays
 * can create new stats
 
-REDMod can do the same, but doesn't offer you hot reload features.
+REDMod can do the same, but doesn't offer you [hot reload](../../../modding-tools/redhottools/rht-hot-reload.md) features.
 
 </details>
 

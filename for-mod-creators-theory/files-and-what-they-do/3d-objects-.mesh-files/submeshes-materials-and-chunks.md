@@ -56,7 +56,7 @@ You can create more submeshes by splitting off parts of a mesh, and incrementing
 
 You want red and blue glowing tubes on the example helmet.
 
-1. [Split](../../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced) parts of `submesh_04_LOD_1` into `submesh_04_LOD_1.001`
+1. [Split](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced) parts of `submesh_04_LOD_1` into `submesh_04_LOD_1.001`
 2. Re-name `submesh_04_LOD_1.001` to `submesh_05_LOD_1`
 3. [Export](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender) the new geometry and import it into Wolvenkit
 4. Your mesh will now have **six** submeshes instead of its previous **five**

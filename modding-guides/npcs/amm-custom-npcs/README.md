@@ -13,9 +13,9 @@ This guide will show you how to create fully custom NPCs for AMM.
 
 ### Wait, that's not what I want!
 
-* If you want to create [custom-props](../custom-props/ "mention") instead, check the link.
+* If you want to create [custom-props](../../everything-else/custom-props/ "mention") instead, check the link.
 * If you want to add new appearances to already existing NPCs, check [amm-custom-npc-appearances.md](amm-custom-npc-appearances.md "mention")
-* If you want to add V as an NPC, check [npv-v-as-custom-npc](../../../../modding-guides/npcs/npv-v-as-custom-npc/ "mention"). (It's a more advanced version of this workflow)
+* If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/ "mention"). (It's a more advanced version of this workflow)
 
 ### OK, let's go
 
@@ -42,7 +42,7 @@ You need **at least** the following versions and mods (newer is fine):
 3. Extract the downloaded zip file into your project's root directory (the `source` folders should merge).
 4. You should now see the following files:
 
-<figure><img src="../../../../.gitbook/assets/custom_npc_files.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/custom_npc_files.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 1: The files
 
@@ -50,9 +50,9 @@ Any links in this section will go to the NPV guide, which is a more complex vers
 
 The archive contains
 
-* [#the-.lua-file](../../../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-.lua-file "mention")to tell AMM about our files
-* [#the-root-entity](../../../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-root-entity "mention"), which is where we register our appearances with the game (it's a copy of `base\quest\tertiary_characters\mama_welles.ent`)
-* [#the-app-file](../../../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-app-file "mention"), which actually contains the appearances (it's a copy of `base\characters\appearances\gang\gang__valentinos_wa.app`)
+* [#the-.lua-file](../npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-.lua-file "mention")to tell AMM about our files
+* [#the-root-entity](../npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-root-entity "mention"), which is where we register our appearances with the game (it's a copy of `base\quest\tertiary_characters\mama_welles.ent`)
+* [#the-app-file](../npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-app-file "mention"), which actually contains the appearances (it's a copy of `base\characters\appearances\gang\gang__valentinos_wa.app`)
 * … and a bunch of custom meshes for the `mama_welles_comfy` appearance.
 
 When you're making your own NPC, you should make sure to take the root entity from a compatible character — what animation template and which set of facial expressions they use. If you don't know what that means, just look at Takemura-san and Viktor when they walk.
@@ -71,7 +71,7 @@ Read this section if you want to take the example project and mod a different NP
    1. `entity_info` => `path` **must** point at your `.ent` file
    2. The list `appearances` I won't repeat it here — this section will only tell you how to change things. hold entries corresponding to the `name` field in your .ent. This is how AMM populates the dropdown and activates the right appearance:
 
-<figure><img src="../../../../.gitbook/assets/amm_custom_npc_appearance.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/amm_custom_npc_appearance.jpg" alt=""><figcaption></figcaption></figure>
 
 6. Optional, but recommended: before you start custompathing, change your folder structure. Since this will **break your mod**, can check [#finishing-and-cleaning-up](./#finishing-and-cleaning-up "mention") for how to go about that.
 
@@ -101,7 +101,7 @@ In the `.lua` file, add an appearance to the `appearances` array to register it 
    2. Right-click and select "[Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
    3. Change the appearance's `name` to the value you used in step 2.3.2
 
-Now it's time to adjust the components. This guide won't go into detail about this — see [appearances-change-the-looks.md](../../../../modding-guides/npcs/appearances-change-the-looks.md "mention") for more intel on the process.
+Now it's time to adjust the components. This guide won't go into detail about this — see [appearances-change-the-looks.md](../appearances-change-the-looks.md "mention") for more intel on the process.
 
 ## Finishing and cleaning up
 
@@ -109,4 +109,4 @@ If everything is working: Congratulations! You have successfully made a mod!
 
 But before you can share it, you need to do one last thing, which is changing the file structure. Otherwise, everyone will overwrite the same tutorial files, and only one of those mods will work.
 
-You can find a full guide on how to do that [here](../../../../modding-guides/items-equipment/moving-and-renaming-in-existing-projects.md).
+You can find a full guide on how to do that [here](../../items-equipment/moving-and-renaming-in-existing-projects.md).

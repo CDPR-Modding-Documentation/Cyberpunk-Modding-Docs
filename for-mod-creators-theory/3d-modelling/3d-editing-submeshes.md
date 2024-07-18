@@ -17,7 +17,7 @@ To learn how you can use them for appearance management, check [#chunkmasks-part
 ## Guide: Splitting off submeshes
 
 {% hint style="info" %}
-For more information on splitting meshes, you can [check this guide](../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh).
+For more information on splitting meshes, you can [check this guide](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh).
 {% endhint %}
 
 ### Prerequisites

@@ -39,8 +39,8 @@ Adding items is a somewhat involved process. Regardless of what you want to do, 
 
 ## HUD - UI
 
-* [#your-own-hud-icons](tweak-modding-guides.md#your-own-hud-icons "mention")
-* [#your-own-inventory-icons](tweak-modding-guides.md#your-own-inventory-icons "mention")
+* [your-own-hud-icons.md](../../modding-guides/custom-icons-and-ui/your-own-hud-icons.md "mention")
+* [adding-items-preview-images](../../modding-guides/custom-icons-and-ui/adding-items-preview-images/ "mention")
 * [custom-in-game-icons.md](../../modding-guides/custom-icons-and-ui/custom-in-game-icons.md "mention")
 * Linking icons and in-game items: [game-icons-the-inkatlas-file.md](../files-and-what-they-do/game-icons-the-inkatlas-file.md "mention")
 

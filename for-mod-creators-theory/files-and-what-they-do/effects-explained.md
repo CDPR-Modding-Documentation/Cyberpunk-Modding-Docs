@@ -15,7 +15,7 @@ description: How do effects work? How do I mod them?
 * See [effect-components.md](components/documented-components/effect-components.md "mention") for effect explanations by component
 * See [fx-material-properties.md](../materials/configuring-materials/fx-material-properties.md "mention") for animated _materials_
 * While explosions are definitely effects, lights are something else => [lights-explained.md](lights-explained.md "mention")
-* To **position** effects, see [amm-light-components.md](../core-mods-explained/amm/custom-props/amm-light-components.md "mention") -> [#placing-your-light-components](../core-mods-explained/amm/custom-props/amm-light-components.md#placing-your-light-components "mention")
+* To **position** effects, see [amm-light-components.md](../../modding-guides/everything-else/custom-props/amm-light-components.md "mention") -> [#placing-your-light-components](../../modding-guides/everything-else/custom-props/amm-light-components.md#placing-your-light-components "mention")
 
 {% hint style="info" %}
 This page is a stub, but this wiki is a community project! Please [sign up](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7) and [start editing](#user-content-fn-1)[^1], we'd love to have you!

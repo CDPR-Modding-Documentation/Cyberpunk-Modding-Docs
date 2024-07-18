@@ -11,7 +11,7 @@
 * See [effect-components.md](../../for-mod-creators-theory/files-and-what-they-do/components/documented-components/effect-components.md "mention") for effect explanations by component
 * See [fx-material-properties.md](../../for-mod-creators-theory/materials/configuring-materials/fx-material-properties.md "mention") for animated _materials_
 * While explosions are definitely effects, lights are something else => [lights-explained.md](../../for-mod-creators-theory/files-and-what-they-do/lights-explained.md "mention")
-* To **position** effects, see [amm-light-components.md](../../for-mod-creators-theory/core-mods-explained/amm/custom-props/amm-light-components.md "mention") -> [#placing-your-light-components](../../for-mod-creators-theory/core-mods-explained/amm/custom-props/amm-light-components.md#placing-your-light-components "mention")
+* To **position** effects, see [amm-light-components.md](custom-props/amm-light-components.md "mention") -> [#placing-your-light-components](custom-props/amm-light-components.md#placing-your-light-components "mention")
 
 ## Recommended mods
 

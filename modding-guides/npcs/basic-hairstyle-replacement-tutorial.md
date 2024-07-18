@@ -96,7 +96,7 @@ If you were to add this mesh in-game, it would stay on your character's head lik
 This will blow the scale of this guide and you can ignore it for now. Once you're done with your hair, come back here and look at the links below if your hair mesh includes ornaments.
 {% endhint %}
 
-You can check the [#splitting-off-submeshes-mildly-advanced](../../for-mod-creators-theory/core-mods-explained/amm/textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced "mention") guide, or read up on material assignment in Wolvenkit under [submeshes-materials-and-chunks.md](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention").
+You can check the [#splitting-off-submeshes-mildly-advanced](../textures-and-luts/textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced "mention") guide, or read up on material assignment in Wolvenkit under [submeshes-materials-and-chunks.md](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention").
 
 ## The Physics
 

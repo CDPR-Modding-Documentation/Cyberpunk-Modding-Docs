@@ -11,7 +11,7 @@ description: Guide to creating neon signs from 2d textures
 
 This guide will take you through the steps of **replacing** one of Cyberpunk's neon signs with a custom mesh.&#x20;
 
-If you want, you can then turn your replacers into new [custom-props](../core-mods-explained/amm/custom-props/ "mention") for AMM!
+If you want, you can then turn your replacers into new [custom-props](../../modding-guides/everything-else/custom-props/ "mention") for AMM!
 
 ### Wait, that's not what I want!
 
@@ -213,14 +213,14 @@ Let's hit up Jig Jig Street to look at our sign…
 <figure><img src="../../.gitbook/assets/custom_neon_jigjigstreet.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-Please remember that you are currently replacing all heart neon signs in the entire game! Before sharing your custom neon, consider making [custom-props](../core-mods-explained/amm/custom-props/ "mention")!
+Please remember that you are currently replacing all heart neon signs in the entire game! Before sharing your custom neon, consider making [custom-props](../../modding-guides/everything-else/custom-props/ "mention")!
 {% endhint %}
 
 Congratulations! If everything works, you just made a mod!&#x20;
 
 ## I don't want a replacer!
 
-That's A-OK, but exceeds the scope of this guide. Fortunately, you can just head over to [custom-props](../core-mods-explained/amm/custom-props/ "mention") and proceed from there.
+That's A-OK, but exceeds the scope of this guide. Fortunately, you can just head over to [custom-props](../../modding-guides/everything-else/custom-props/ "mention") and proceed from there.
 
 ## Troubleshooting
 

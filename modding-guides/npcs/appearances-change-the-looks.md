@@ -20,8 +20,8 @@ This guide will walk you through **editing NPC appearances** for Cyberpunk 2077.
 ## Wait, this isn't what I want!
 
 * For an overview of NPC files, check [people.md](../../for-mod-creators-theory/references-lists-and-overviews/people.md "mention")
-* If you want to add custom NPCs to Cyberpunk 2077 with AMM, check [amm-custom-npcs](../../for-mod-creators-theory/core-mods-explained/amm/amm-custom-npcs/ "mention")
-* If you want to add AMM appearances to existing NPCs, check [amm-custom-npc-appearances.md](../../for-mod-creators-theory/core-mods-explained/amm/amm-custom-npcs/amm-custom-npc-appearances.md "mention")
+* If you want to add custom NPCs to Cyberpunk 2077 with AMM, check [amm-custom-npcs](amm-custom-npcs/ "mention")
+* If you want to add AMM appearances to existing NPCs, check [amm-custom-npc-appearances.md](amm-custom-npcs/amm-custom-npc-appearances.md "mention")
 * If you want to add V as an NPC, check [npv-v-as-custom-npc](npv-v-as-custom-npc/ "mention")
 * If you want a more basic guide that goes into more detail for the basic stuff (including Blender), see [altering-appearances-within-wolvenkit-full-workflow.md](altering-appearances-within-wolvenkit-full-workflow.md "mention")
 * If you're after hair colours, check [Broken link](broken-reference "mention") and follow the links from there.
@@ -44,7 +44,7 @@ This section will show you how to find an NPC's [.app file](../../for-mod-creato
 The NPC's [root entity file](../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#root-entity) is the entry point for the game. It defines an NPC's appearances, linking them to the actual definitions inside the corresponding [.app file](appearances-change-the-looks.md#the-.app-file).&#x20;
 
 {% hint style="info" %}
-You don't need to add this file to your project (and if you do it by accident, you should delete it later). For details, see [amm-custom-npc-appearances.md](../../for-mod-creators-theory/core-mods-explained/amm/amm-custom-npcs/amm-custom-npc-appearances.md "mention").
+You don't need to add this file to your project (and if you do it by accident, you should delete it later). For details, see [amm-custom-npc-appearances.md](amm-custom-npcs/amm-custom-npc-appearances.md "mention").
 {% endhint %}
 
 You can try finding your NPC's .ent file on [people.md](../../for-mod-creators-theory/references-lists-and-overviews/people.md "mention"). If you can't find your entry, the page has information how you can search for it — **please add it to the page**, this wiki is a community project!
@@ -149,7 +149,7 @@ If you delete a physics-enabled component, you can safely delete the correspondi
 
 ## Adding new appearances
 
-Adding new appearances to an existing NPC requires you to overwrite that NPC's .ent file (see [amm-custom-npc-appearances.md](../../for-mod-creators-theory/core-mods-explained/amm/amm-custom-npcs/amm-custom-npc-appearances.md "mention")). For that matter, it's recommended that you create a new entity instead. You can find a guide for this under [amm-custom-npcs](../../for-mod-creators-theory/core-mods-explained/amm/amm-custom-npcs/ "mention").
+Adding new appearances to an existing NPC requires you to overwrite that NPC's .ent file (see [amm-custom-npc-appearances.md](amm-custom-npcs/amm-custom-npc-appearances.md "mention")). For that matter, it's recommended that you create a new entity instead. You can find a guide for this under [amm-custom-npcs](amm-custom-npcs/ "mention").
 
 ## Troubleshooting
 

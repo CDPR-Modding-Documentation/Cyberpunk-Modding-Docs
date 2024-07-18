@@ -50,7 +50,7 @@ In the Blender File view, find the glb you exported from Wolvenkit. By default, 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FE5XwVbNoDUK2IE8R5sxq%2Fblender_plugin_import_mesh.png?alt=media&#x26;token=3f459cf4-644f-4db2-9832-853629a89494" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-For a rough guide on finding your way around Blender, check [blender-getting-started](../../3d-modelling/blender-getting-started/ "mention"),[cyberpunk-shaders-in-blender.md](../../materials/cyberpunk-shaders-in-blender.md "mention") or [#step-2-processing-the-downloaded-mesh](../../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh "mention")
+For a rough guide on finding your way around Blender, check [blender-getting-started](../../3d-modelling/blender-getting-started/ "mention"),[cyberpunk-shaders-in-blender.md](../../materials/cyberpunk-shaders-in-blender.md "mention") or [#step-2-processing-the-downloaded-mesh](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh "mention")
 {% endhint %}
 
 ### Exporting from Blender

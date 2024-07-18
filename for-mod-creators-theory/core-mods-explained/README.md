@@ -71,7 +71,7 @@ Changes made via CET's Tweak Browser are not persistent, because the TweakDB get
 
 Lots of mods and scripts run on top of CET, tweaking the game in various ways from changing the weather to adding a wardrobe system before CDPR added one.&#x20;
 
-The perhaps most prominent example is Appearance Menu Mod ([wiki](amm/) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/790)), which turns Cyberpunk 2077 into The Sims: Capitalist Dystopia.
+The perhaps most prominent example is Appearance Menu Mod ([wiki](amm.md) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/790)), which turns Cyberpunk 2077 into The Sims: Capitalist Dystopia.
 
 ### RED4ext <a href="#red4ext" id="red4ext"></a>
 

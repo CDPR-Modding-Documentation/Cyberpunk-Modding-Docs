@@ -18,7 +18,7 @@ Don't forget: To quickly find somebody's entry, you can use your browser's searc
 
 To change NPC appearances, see [appearances-change-the-looks.md](../../modding-guides/npcs/appearances-change-the-looks.md "mention")
 
-To create custom NPCs, see [amm-custom-npcs](../core-mods-explained/amm/amm-custom-npcs/ "mention")
+To create custom NPCs, see [amm-custom-npcs](../../modding-guides/npcs/amm-custom-npcs/ "mention")
 
 To create V as an NPC, see [npv-v-as-custom-npc](../../modding-guides/npcs/npv-v-as-custom-npc/ "mention")
 

@@ -13,12 +13,12 @@ Due to its complexity, we don't have a dedicated guide on Blender. However, if y
 * [Sculpting](mesh-sculpting-techniques.md)
 * [Proportional editing / Refitting](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md)
 * [Texture painting](../../modding-guides/textures-and-luts/custom-multilayermasks.md) and [normal map creation](../../modding-guides/textures-and-luts/self-made-normal-maps/)
-* [Adding submeshes](3d-editing-submeshes.md) or [Splitting meshes](../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)
+* [Adding submeshes](3d-editing-submeshes.md) or [Splitting meshes](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)
 
 For more hands-on advice, see the guide section, for example
 
 * [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention"): Importing/exporting [#meshes](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention")
-* [Material assignment examples](../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md)
+* [Material assignment examples](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md)
 * [troubleshooting-your-mesh-edits.md](troubleshooting-your-mesh-edits.md "mention")
 * [garment-support-how-does-it-work](garment-support-how-does-it-work/ "mention") or [files-and-what-they-do](../files-and-what-they-do/ "mention")
 

@@ -15,7 +15,7 @@ This is the landing page for the Tweaks section of the wiki. It doesn't contain 
 
 ### Tweak modding guides
 
-Check [#tweak-modding-guides](./#tweak-modding-guides "mention") for a collection of guides on this topic
+Check [tweak-modding-guides.md](tweak-modding-guides.md "mention") for a collection of guides on this topic
 
 ***
 

@@ -13,7 +13,7 @@ This page gives you an overview about lights at a glance.&#x20;
 
 ### Wait, this isn't what I want!
 
-For a guide how to add lights to AMM props, check [amm-light-components.md](../core-mods-explained/amm/custom-props/amm-light-components.md "mention")
+For a guide how to add lights to AMM props, check [amm-light-components.md](../../modding-guides/everything-else/custom-props/amm-light-components.md "mention")
 
 For an overview and explanation of lights, check [lights-explained.md](../files-and-what-they-do/lights-explained.md "mention") (currently WIP)
 

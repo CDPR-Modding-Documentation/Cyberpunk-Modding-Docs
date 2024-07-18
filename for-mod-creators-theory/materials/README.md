@@ -68,7 +68,7 @@ Do you want to know more? ( =>[3d-objects-.mesh-files](../../for-mod-creators/fi
 {% endhint %}
 
 {% hint style="success" %}
-For a hands-on guide and something to play around/experiment with, check [textured-items-and-cyberpunk-materials.md](../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md "mention").
+For a hands-on guide and something to play around/experiment with, check [textured-items-and-cyberpunk-materials.md](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention").
 {% endhint %}
 
 ## What kinds of material exist?

@@ -17,9 +17,9 @@ You can find other relevant guides scattered across this wiki, for example
 
 [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention")
 
-[custom-props](../core-mods-explained/amm/custom-props/ "mention")
+[custom-props](../../modding-guides/everything-else/custom-props/ "mention")
 
-[textured-items-and-cyberpunk-materials.md](../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md "mention")
+[textured-items-and-cyberpunk-materials.md](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
 
 ## Prerequisites
 
@@ -32,11 +32,11 @@ You can find other relevant guides scattered across this wiki, for example
 
 To bring 3d data into Cyberpunk, Wolvenkit needs a .mesh file to import into. [Read here why](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure).&#x20;
 
-For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/ "mention"), creating [custom-props](../core-mods-explained/amm/custom-props/ "mention") or [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
+For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/ "mention"), creating [custom-props](../../modding-guides/everything-else/custom-props/ "mention") or [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
 
 ### Static items
 
-If you are [creating props](../core-mods-explained/amm/custom-props/), you use a mesh from the template project or grab any static mesh from the game.&#x20;
+If you are [creating props](../../modding-guides/everything-else/custom-props/), you use a mesh from the template project or grab any static mesh from the game.&#x20;
 
 {% hint style="warning" %}
 Do not take equipment item or weapon meshes — those include a bunch of extra data that you don't need (the [armature](meshes-and-armatures-rigging.md)). You don't need it, and it can have side effects.
@@ -118,7 +118,7 @@ The mesh count in Blender corresponds to the submesh/chunk count in Wolvenkit. I
 
 If you don't know what that means, ignore the information for now - but few meshes use more than five. The current maximum is the player base body with a total count of ten submeshes per LOD[^1], so to be on the safe side, we need to stay below that.
 
-If you want to get fancy, check out [Step 2](../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh) in the guide about ported items and Cyberpunk materials. Otherwise:
+If you want to get fancy, check out [Step 2](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh) in the guide about ported items and Cyberpunk materials. Otherwise:
 
 1. Select all meshes but one by shift-clicking them in the Outliner at the topright of your viewport
 
@@ -271,7 +271,7 @@ If everything worked, here are a few more guides that you might want to look int
 
 * [r-and-r-refitting-step-by-step.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") will teach you how to refit for a certain body mod
 * [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention") will walk you through the steps of adding your mesh as a new piece of equipment
-* [textured-items-and-cyberpunk-materials.md](../core-mods-explained/amm/textured-items-and-cyberpunk-materials.md "mention") will tell you how materials work, and how you can use them to texture your item
+* [textured-items-and-cyberpunk-materials.md](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention") will tell you how materials work, and how you can use them to texture your item
 
 [^1]: Level of Detail
 

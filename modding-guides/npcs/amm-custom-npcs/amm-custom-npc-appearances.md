@@ -5,7 +5,7 @@ description: How to add appearances to existing NPCs (via AMM)
 # AMM: Custom NPC appearances
 
 {% hint style="warning" %}
-This guide has not yet been updated to use [archivexl-resource-patching.md](../../../core-mods-explained/archivexl/archivexl-resource-patching.md "mention"). As such, you will probably end up overwriting an existing NPC's file, breaking compatibility.
+This guide has not yet been updated to use [archivexl-resource-patching.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching.md "mention"). As such, you will probably end up overwriting an existing NPC's file, breaking compatibility.
 
 Until the guide updates, you should stick to [.](./ "mention"). This guide will only tell you how to target the right (vanilla) NPC file, since the rest of the process is the same.
 {% endhint %}
