@@ -34,6 +34,20 @@ Note : the _MountedWeapons_ mode can only work if the vehicle has all the weapon
 (I will probably try to add more info about weapons if I have time to explore this)
 {% endhint %}
 
+Mounted weapons' locations are determined by the .ent file of the vehicle, and generally are identical to the base car .ent being used for the custom mesh. This can result in misplacement of the weapon _emitters_ - the parts which actually shoot a bullet/missile - and requires some work to change. In WolvenKit, open the .ent file directly. In the file editor, expand `RDTDataViewModel\components\vehicle_slots\slots` and scroll down, looking for the following entries, usually at the end:
+
+* `VehiclePowerWeaponLeftSlotA`
+* `VehiclePowerWeaponRightSlotA`
+* `VehiclePowerWeaponLeftSlotB`
+* `VehiclePowerWeaponRightSlotB`
+* `VehiclePowerWeaponLeftSlotC`
+* `VehiclePowerWeaponRightSlotC`
+* `VehicleMissileLauncherA`
+* `VehicleMissileLauncherB`
+* `VehicleMissileLauncherC`
+
+In these records, slots can be assigned to specific bones in the rig, or have their position and rotation adjusted.
+
 ###
 
 ### Finding the string
