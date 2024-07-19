@@ -197,7 +197,7 @@ Click on the three dots next to "Launch Game with REDmods Enabled" and set it as
 
 ## Use
 
-You're almost to the mod page, but first, you need to _get_ some mods. Let's start by installing the [core framework collection](https://next.nexusmods.com/cyberpunk2077/collections/r1flnc), which contains everything that other mods require.
+You're almost to the mod page, but first, you need to _get_ some mods. Let's start by installing the [core framework collection](https://next.nexusmods.com/cyberpunk2077/collections/gm8o1p), which contains everything that other mods require.
 
 1. Click on "Collections" in the sidebar
 2. Select "Discover more collections."&#x20;
@@ -225,7 +225,14 @@ Before you play your game, check the bell in the top right corner next to your p
 
 <figure><img src="../../../.gitbook/assets/Vortex_2aNCohYP9o.png" alt=""><figcaption><p>Notifications are ordered with most recent at the top--which means there was a successful REDmod deployment notification AFTER the failure, so the failure can be safely dismissed.</p></figcaption></figure>
 
-At this point, assuming your notifications are all green or blue, you can safely play your game. However, you won't notice many changes, as the framework mods aren't doing much on their own...
+At this point, assuming your notifications are all green or blue, you can go on to the next step: updating your just installed mods.&#x20;
+
+### Updating your mods
+
+The collection you just installed might not have the latest versions of all mods, so let's make sure you have those. Click the Check for updates button in the orange Vortex toolbar, and it will begin checking each mod for updates. If it finds any, download these by clicking the little cloud icon with an arrow in it next to the name. To make it easier to find updates, you can set the Version filter to update available.\
+![check for updates](<../../../.gitbook/assets/image (385).png>) <img src="../../../.gitbook/assets/image (386).png" alt="version filter" data-size="original">
+
+After you have updated everything, hit the Deploy Mods button in the orange toolbar. You can now safely play your game. However, you won't notice many changes, as the framework mods aren't doing much on their own...
 
 ### Starting up the game
 
