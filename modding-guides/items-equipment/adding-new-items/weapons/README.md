@@ -39,6 +39,10 @@ This file makes the weapon show up in photo mode. Instead of going into the Part
 
 ## Factory: .app instead of root\_entity
 
+{% hint style="warning" %}
+For guns with a **receiver**, you have to edit **two** `.app` files instead of just one. The name of the extra file will contain `_rcv`.
+{% endhint %}
+
 Instead of a root entity file, you need to point your factory.csv directly to your iron's app file (the one from the section above).
 
 <figure><img src="../../../../.gitbook/assets/archivexl_weapons_factory.png" alt=""><figcaption></figcaption></figure>
