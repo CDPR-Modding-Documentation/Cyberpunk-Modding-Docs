@@ -10,7 +10,7 @@ description: >-
 
 **Created:** July 21 2024 by **@eagul**
 
-This guide will show you how to&#x20;
+This guide will show you how to create your own hair in Blender from scratch.
 
 ## **Prerequisites:**
 
