@@ -198,7 +198,7 @@ Again, this step is optional, you can [use MLSB](./#using-mlsb) straight away.&#
 
 1. Open the menu "Build" and select "Repository" to uncook the archives:
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. Select the following settings (if you want to uncook everything, this step can take several hours, so we'll only do the essentials for now)
 

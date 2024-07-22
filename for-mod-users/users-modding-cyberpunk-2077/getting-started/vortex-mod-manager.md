@@ -183,7 +183,7 @@ Finally, we will return to our dashboard.&#x20;
 
 No matter what settings you chose in interface, you should still have a section labeled "Tools", where at this point you should at least see four things, the last of which will be disabled:
 
-<figure><img src="../../../.gitbook/assets/image (50).png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (50) (1).png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
 
 It can be helpful here to toggle "Enable Toolbar" above it so that you can always see them wherever you are in Vortex.
 
@@ -297,7 +297,7 @@ Mod authors sometimes disable mod manager integration for a variety of reasons. 
    The file doesn't have any particular instruction.
 5. Optional: view the file contents – they sometimes contain helpful information:
 
-<figure><img src="../../../.gitbook/assets/image (57).png" alt=""><figcaption><p>The naming convention tells us that it's a hair replacer from Wingdeer for the female body gender, changing hair 48, There's also a preview picture included.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (57) (1).png" alt=""><figcaption><p>The naming convention tells us that it's a hair replacer from Wingdeer for the female body gender, changing hair 48, There's also a preview picture included.</p></figcaption></figure>
 
 6. Manually download the file – you know the drill by now.
 7. Return to the Vortex "mods" page. You have two ways to install the mod now:&#x20;

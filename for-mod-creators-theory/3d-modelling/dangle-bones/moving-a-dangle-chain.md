@@ -43,7 +43,7 @@ Attached images show settings i used to export base\characters\garment\citizen\_
 
 <figure><img src="../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption><p>Isolated netwatch shirt dangle skeleton. The original dangle chain is selected. The spine column, and the duplicated and moved dangle chain are also visible.</p></figcaption></figure>
 
@@ -51,9 +51,9 @@ Attached images show settings i used to export base\characters\garment\citizen\_
 
 Open the .rig file in Wolvenkit. Under boneNames you can find which index corresponds to which bone. Expand boneTransforms. Locate the bones you want to move. Moving a bone in a chain will also move every bone that's parented to it (located lower than it in the chain). In the case of the image above, moving the bone selected in yellow, also moved the entire chain. In this case i moved bone 8 (selected in yellow) by 0.283076668 on the Y axis.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (36).png" alt=""><figcaption><p>Original </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (36) (1).png" alt=""><figcaption><p>Original </p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (39).png" alt=""><figcaption><p>Edited</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (39) (1).png" alt=""><figcaption><p>Edited</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (94).png" alt=""><figcaption><p>Result</p></figcaption></figure>
 
@@ -64,11 +64,11 @@ As you can see, the skeleton exploded. This is (to my understanding) caused by c
 \
 Here i set the value to 0, the animations work fine, but a correctly set value might reduce clipping in some poses.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (31) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Result</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>Result</p></figcaption></figure>
 
 Notice how editing the bone positions in the .rig also deformed/moved the mesh in-game. At least it's dangling nicely now, and it no longer explodes :copium:
 
@@ -80,23 +80,23 @@ In this case, I'm editing bones 79-83. The goal is to move each of them by -0.28
 \
 Open the .mesh in Wolvenkit and navigate to boneRigMatrices.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Not edited bone matrix of bone 79.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>Not edited bone matrix of bone 79.</p></figcaption></figure>
 
 Next, open [https://matrixcalc.org/](https://matrixcalc.org/) and copy paste each of the entries of the bone matrix into the calculator. Then press inverse.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (52) (1).png" alt=""><figcaption></figcaption></figure>
 
 Notice how the bottom row of the inverse matrix corresponds to the coordinates of the bone, which you can see in Blender.
 
-<figure><img src="../../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (34) (1).png" alt=""><figcaption></figcaption></figure>
 
 Next, copy the new Y coordinate from the bone you duplicated and moved.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (63) (1).png" alt=""><figcaption></figcaption></figure>
 
 After that, return to the calculator, and press 'Insert in B', and then replace the matrix entry corresponding to the Y position of the bone with the new coordinate.
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, press 'inverse'
 
@@ -106,7 +106,7 @@ Next, press the 3 small lines below the output, click on Show LaTeX, and copy th
 
 <figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>Finished bone matrix edit in Wolvenkit</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Finished bone matrix edit in Wolvenkit</p></figcaption></figure>
 
 And now repeat all of those steps for each of your bones... enjoy...\
 After that, you should be finished!

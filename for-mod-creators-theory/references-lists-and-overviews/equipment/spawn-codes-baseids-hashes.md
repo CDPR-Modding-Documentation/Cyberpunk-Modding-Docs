@@ -66,7 +66,7 @@ Usually, the base ID consists of two parts: the item name, and the item's appear
 1. Inside the .app file, open the `appearances` array
 2. You will see something like this:
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Ignore camera mode and open the appearance that you want (`basic_02_w`)
 4. Open the `components` array and find the component that has `mesh` in its name:

@@ -170,6 +170,7 @@
   * [Exporting rigs and anims](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims)
   * [Dangle bones](for-mod-creators-theory/3d-modelling/dangle-bones/README.md)
     * [Moving a Dangle Chain](for-mod-creators-theory/3d-modelling/dangle-bones/moving-a-dangle-chain.md)
+  * [Hair modeling beginner tutorial](for-mod-creators-theory/3d-modelling/hair-modeling-beginner-tutorial.md)
   * [Your image as custom mesh](for-mod-creators-theory/3d-modelling/your-image-as-custom-mesh.md)
   * [Archived: Exporting and importing meshes](for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/README.md)
     * [Autodesk/FBX (Noesis)](for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/autodesk-fbx-noesis.md)

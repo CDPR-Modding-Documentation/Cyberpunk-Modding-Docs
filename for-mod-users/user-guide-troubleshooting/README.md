@@ -328,7 +328,7 @@ There is such a thing as too many mods which are making the game crash. This num
 
 To fix this, you need to disable analysis in the settings:&#x20;
 
-<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Failed to initialize script data
 
@@ -588,7 +588,7 @@ If you don't vibe with text, there's a [#bisect-video-demonstration](./#bisect-v
 
 If your CPU is too busy, the game will try to save resources by dropping audio, starting with dialogue audio. Disabling spatial audio from the main menu might help:
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (20) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### It's not connected to CPU load
 

@@ -34,7 +34,7 @@ Recommended Settings are:
 \
 Run the MaxScript from Scripting > Run Script...
 
-![](<../../../.gitbook/assets/image (30).png>)
+![](<../../../.gitbook/assets/image (30) (1).png>)
 
 Click on "Import to Scene" and select the .mesh file you want to edit. Your custom settings in "fmt\_CP77mesh.py" will effect the imported mesh.\
 \
@@ -45,7 +45,7 @@ FBX Settings for **Import**:
 \
 MaxScript Settings for **Export:**
 
-![](<../../../.gitbook/assets/image (48).png>)\\
+![](<../../../.gitbook/assets/image (48) (1).png>)\\
 
 FBX Settings for **Export:**
 

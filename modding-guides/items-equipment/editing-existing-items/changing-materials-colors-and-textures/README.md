@@ -171,7 +171,7 @@ This is already working. You can pack the project and see it in action!
 If it doesn't work, you need to install [Material and Texture Override](https://www.nexusmods.com/cyberpunk2077/mods/5266) from Nexus.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Being done
 
@@ -188,7 +188,7 @@ Instead of changing an in-game file, you can also replace it with your own.
 2. Copy the new relative path (right-click), and update your mesh:\
 
 
-<figure><img src="../../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (68) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Keep your folder and file names unique! If you have two mods adding a file at the same location, the second one **will be unable to overwrite it** and will use the first mod's file. That is, unless your mods are in REDmod format, which will be loaded even later and in order of their folder names.
