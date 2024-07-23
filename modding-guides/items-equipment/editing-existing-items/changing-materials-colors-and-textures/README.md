@@ -212,6 +212,10 @@ To add a new material to a mesh, you can simply right-click on the `materials` a
 
 <figure><img src="../../../../.gitbook/assets/changing_material_add_new_material.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+Consider converting your mod to use [archivexl-patching-appearances.md](../archivexl-patching-appearances.md "mention")for much better compatibility and smaller mod size!
+{% endhint %}
+
 <details>
 
 <summary>By hand</summary>

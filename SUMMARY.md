@@ -247,6 +247,7 @@
     * [Adding decals](modding-guides/items-equipment/editing-existing-items/adding-decals.md)
     * [Changing materials, colors and textures](modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/README.md)
       * [Using a textured material](modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md)
+    * [ArchiveXL: Patching appearances](modding-guides/items-equipment/editing-existing-items/archivexl-patching-appearances.md)
     * [Adding stats, modifiers, and mod slots](modding-guides/items-equipment/editing-existing-items/adding-stats-and-modifiers.md)
     * [Replace a player item with an NPC item](modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/README.md)
       * [Replace a player clothes with NPC garment that requires blender editing](modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/replace-a-player-clothes-with-npc-garment-that-requires-blender-editing.md)

@@ -27,7 +27,7 @@ Recommended Settings are:
 \- Next place "CP77\_NOESIS\_CMD.ms" in "C:\Program Files\Autodesk\3ds Max 20XX\scripts"\
 \- Open "CP77\_NOESIS\_CMD.ms" in a text editor and set your Noesis.exe path.
 
-![](<../../../.gitbook/assets/image (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (1) (1) (1) (1).png>)
 
 ## **In 3ds Max:**
 

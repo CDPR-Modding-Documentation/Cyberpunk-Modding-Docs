@@ -37,7 +37,7 @@ Using any modeling method you like, create a so called grid surface. This should
 **Core concept:** Keep the poly count low. The less 'control points' you have, the easier it is to control the object. \
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption><p>A correct grid surface</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>A correct grid surface</p></figcaption></figure>
 
 <details>
 
@@ -52,9 +52,9 @@ I model by simply extruding edges, and some sculpt mode mixed in.\
 Loop Tools addon is good for cleanup ('relax').\
 \
 Set Viewport display to 'Wire'. You can change the opacity in viewport overlays menu, and assign random colors in shading menu. \
-![](<../../.gitbook/assets/image (1).png>)![](<../../.gitbook/assets/image (2).png>)
+![](<../../.gitbook/assets/image (1) (1).png>)![](<../../.gitbook/assets/image (2) (1).png>)
 
-<img src="../../.gitbook/assets/image (3).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (3) (1).png" alt="" data-size="original">
 
 You can set 'Mean Vertex Crease to 1 on specific edge loops, if you want them to remain sharp while using a subdiv modifier.\
 ![](<../../.gitbook/assets/image (10).png>)
@@ -81,11 +81,11 @@ Why not just use a ton of lower density textures? It is certainly an option, but
 \
 Open the HT panel (N), expand the Hair System, Sub-Systems and Deformers menus.
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 Press CTRL + Shift + H, then Transfer Hair system to Empty Curve. The hair object will now be a curves object parented to the grid surface.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Change viewport display settings if you like</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>Change viewport display settings if you like</p></figcaption></figure>
 
 Add the following deformers:\
 \- Align tilt to source surface\

@@ -300,6 +300,10 @@ Now that our chunk knows which material it's supposed to look up, we need to pro
 
 [Install your mod and start the game](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch). If you have done everything right, then your mesh should now have a decal!
 
+{% hint style="info" %}
+Consider converting your mod to use [archivexl-patching-appearances.md](archivexl-patching-appearances.md "mention")for much better compatibility and smaller mod size!
+{% endhint %}
+
 ## Troubleshooting
 
 ### Issues with your texture
