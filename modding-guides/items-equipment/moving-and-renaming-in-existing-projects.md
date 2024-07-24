@@ -52,7 +52,7 @@ If you already know what to do, you can skip forward to [Importing Back](moving-
 Make sure that you are using the same kind of slashes. If the old path has double backslashes, the new path must have them as well.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/search_and_replace_find_in_files.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/search_and_replace_find_in_files.png" alt=""><figcaption></figcaption></figure>
 
 ### We goin' in
 
@@ -66,11 +66,11 @@ You know what to replace now. For every type of entry, do the following:
    5. For `Replace with` put the name of your new folder. Make sure that you have double backslashes!
    6. Click on `Replace in Files`
 
-<figure><img src="../../../.gitbook/assets/search_and_replace_in_files.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/search_and_replace_in_files.png" alt=""><figcaption></figcaption></figure>
 
 ## Importing back
 
-Now that we have changed the paths, we need to get those changes back into our Wolvenkit project. In the project's `raw` view, right-click on the toplevel folder and select "Import from JSON" (however it is named, there's just one item that will let you import your json files)
+Now that we have changed the paths, we need to get those changes back into our Wolvenkit project. In the project's `raw` view, right-click on the toplevel folder and select "[Convert from JSON](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json)" (however it is named, there's just one item that will let you import your json files)
 
 ## Deleting leftover files
 
