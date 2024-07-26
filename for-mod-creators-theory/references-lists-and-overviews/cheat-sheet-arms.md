@@ -121,7 +121,7 @@ a0_003_ma__mantisblade_upperarm_right
 a0_003_ma__mantisblade_right_blade
 a0_003_ma__mantisblade_right_mechanisms
 a0_003_ma__mantisblade_nails_r
-</code></pre></td></tr><tr><td>Inactive</td><td><code>base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_ma__mantisblade_holstered.ent</code></td><td><pre><code>a0_003_ma__mantisblade_holstered_left6562
+</code></pre></td></tr><tr><td>Inactive <br>FPP and TPP</td><td><code>base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_ma__mantisblade_holstered.ent</code></td><td><pre><code>a0_003_ma__mantisblade_holstered_left6562
 a0_003_ma__mantisblade_holstered_upperarm_left
 a0_003_ma__mantisblade_holstered_right
 a0_003_ma__mantisblade_holstered_upperarm_right
