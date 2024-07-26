@@ -25,7 +25,7 @@ Concepts discussed here can be applied to many other areas in the game. See the 
 
 For resource patching you only ship what you've made. Open your .ent/.mesh/.app files and delete appearances and materials that were there from vanilla. Keep your custom ones, **make sure your appearances have a unique name**!
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>You can select multiple items in a list and then right-click and then Delete Selection.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption><p>You can select multiple items in a list and then right-click and then Delete Selection.</p></figcaption></figure>
 
 {% hint style="info" %}
 When deleting materials, the names might get messy. That's because mats get names from the `materialEntries`array, try to remember what materials are yours and don't forget to delete vanilla entries too. Also **update the index of materialEntries if needed**! (counting begins from 0)
@@ -39,7 +39,7 @@ You should make a special folder for your mod, outside of the vanilla structures
 
 <div align="center" data-full-width="false">
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Example folder structure of my mod.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Example folder structure of my mod.</p></figcaption></figure>
 
 </div>
 
@@ -53,7 +53,7 @@ For finding the old paths easier, feel free to just copy your files to their new
 
 Create an `.archive.xl` file in your `resources` folder if you haven't already (reuse it if you have one). It should be named `your_mod_name.archive.xl` (best if you match it with your project name so the normal .archive is named the same).
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>My .archive.xl file.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>My .archive.xl file.</p></figcaption></figure>
 
 Open the file in your favorite text editor and add the following lines:&#x20;
 

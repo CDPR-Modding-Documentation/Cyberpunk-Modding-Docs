@@ -96,7 +96,7 @@ Next, copy the new Y coordinate from the bone you duplicated and moved.&#x20;
 
 After that, return to the calculator, and press 'Insert in B', and then replace the matrix entry corresponding to the Y position of the bone with the new coordinate.
 
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Then, press 'inverse'
 
@@ -106,7 +106,7 @@ Next, press the 3 small lines below the output, click on Show LaTeX, and copy th
 
 <figure><img src="../../../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption><p>Finished bone matrix edit in Wolvenkit</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption><p>Finished bone matrix edit in Wolvenkit</p></figcaption></figure>
 
 And now repeat all of those steps for each of your bones... enjoy...\
 After that, you should be finished!

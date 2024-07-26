@@ -123,11 +123,11 @@ For this method to work, we just need to change the settings in the Color Space 
 
 Instead of having an output color space of ARRI Wide Gamut 3, set the color space to sRGB and gamma to sRGB as well. Then, change the tone mapping method to DaVinci, or some other method if you know what they mean.
 
-<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption><p>Your workspace after this method. It's easy and minimal, but has very low contrast.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1) (1).png" alt=""><figcaption><p>Your workspace after this method. It's easy and minimal, but has very low contrast.</p></figcaption></figure>
 
 This method creates a color cube that is very "unbiased"--it has fidelity in all directions, which, while creating a good representation of true color, can result in unnatural saturation. To account for this, the saturation compression gamut compression method can be selected.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption><p>The color cube after saturation compression.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption><p>The color cube after saturation compression.</p></figcaption></figure>
 
 After you have used your preferred method, you need to apply gamma correction. If you do not do this, you end up with incorrect gamma, which can mainly be seen on skin tones.&#x20;
 
