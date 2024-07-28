@@ -34,7 +34,7 @@ _If you're using .dds files, you probably know what you're doing anyway :)_
 
 
 
-<figure><img src="../../../.gitbook/assets/save_image_paint_dot_net.png" alt=""><figcaption><p>Use 32-Bit to get the highest available image quality.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/save_image_paint_dot_net.png" alt=""><figcaption><p>Use 32-Bit to get the highest available image quality.</p></figcaption></figure>
 
 ### Adobe Photoshop
 
@@ -42,7 +42,7 @@ To export with transparency in Photoshop, you need an **alpha channel**. Fortuna
 
 Find the Channels palette at the bottom right of your Workspace and add a new channel:
 
-<figure><img src="../../../.gitbook/assets/textures_create_alpha_channel.png" alt=""><figcaption><p>You now have an alpha channel.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/textures_create_alpha_channel.png" alt=""><figcaption><p>You now have an alpha channel.</p></figcaption></figure>
 
 Your image will turn black now, because the selected alpha channel will not have transparency yet.
 
@@ -52,7 +52,7 @@ To get your image back, select "RGB" on the Channels palette — but we'll stay 
 
 In the layers palette, use your image as selection by ctrl+clicking on the layer's icon:
 
-<figure><img src="../../../.gitbook/assets/select_all.png" alt=""><figcaption><p>Layer to selection</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/select_all.png" alt=""><figcaption><p>Layer to selection</p></figcaption></figure>
 
 **With the alpha channel selected**, fill your selection with white to mark the transparent parts.&#x20;
 
@@ -78,3 +78,30 @@ You can now save your image as a PNG with transparency. If you have exported a t
 ### My texture shows up completely black or completely white
 
 Change `Compression` to `TCM_None`, then reimport
+
+
+
+### "Must have dimensions in powers of 2"
+
+Your texture must be a **square**, and its size must be a **power of two** (512x512, 1024x1024, and so on). \
+If you want to know more about the theory behind this, you can read [this external tutorial](https://www.katsbits.com/site/make-better-textures-correct-size-and-power-of-two/). Otherwise: just make it a square!
+
+### All images must be the same size
+
+If you are importing a `.masklist`, all images for the resulting `.mlmask` must be **the same size**. Cyberpunk will crash otherwise.
+
+### Invalid color space
+
+Some textures need to be in a certain colour space (theory on [wikipedia](https://en.wikipedia.org/wiki/Color\_space)). For certain types of textures, the game requires certain colour spaces. Here's a list:&#x20;
+
+<table><thead><tr><th width="240">File type</th><th>required colour space</th></tr></thead><tbody><tr><td>.mlmask / .masklist</td><td>Black and White / Non-Color</td></tr></tbody></table>
+
+{% hint style="info" %}
+If you don't know how to achieve that, google something like \
+`<name of your editor> color space <color space>`\
+e.g. `Photoshop color space black and white`
+{% endhint %}
+
+#### Didn't help!
+
+Maybe your `.mlmask` has gotten corrupted or is simply incompatible. Replace it with any mlmask from the game files and try a reimport.
