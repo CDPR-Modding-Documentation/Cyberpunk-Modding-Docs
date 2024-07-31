@@ -34,4 +34,4 @@ If you see this, and you want to get rid of Foot Snap IK for this pose, simply r
 
 <figure><img src="../../../.gitbook/assets/afbeelding (1).png" alt=""><figcaption></figcaption></figure>
 
-**IMPORTANT**: after doing this, the pose would in my case sometimes completely break, causing the character to explode into a huge graphical glitch of floating triangles in-game. The solution that worked for me was to, after going through the process above, simply re-import the `.glb` file from Blender into WolvenKit again (_exactly the same file that you have already imported once_), as per the other tutorials such as [Poses/Animations: make your own](poses-animations-make-your-own.md).
+**IMPORTANT**: after doing this, the pose would in my case sometimes completely break, causing the character to explode into a huge graphical glitch of floating triangles in-game. The solution that worked for me was to, after going through the process above, simply re-import the `.glb` file from Blender into WolvenKit again (_exactly the same file that you have already imported once_), as per the other tutorials such as [Poses/Animations: make your own](poses-animations-make-your-own/).

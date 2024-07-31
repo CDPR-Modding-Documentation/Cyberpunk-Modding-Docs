@@ -16,7 +16,7 @@ For individual guides, please check the sub-pages in the navigation tree or use 
 For a video on how to edit poses with Redmod, see [here](https://www.youtube.com/watch?v=m5IL\_TRwTew\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=3) (official video guides).
 {% endhint %}
 
-[poses-animations-make-your-own.md](poses-animations-make-your-own.md "mention")&#x20;
+[poses-animations-make-your-own](poses-animations-make-your-own/ "mention")&#x20;
 
 This guide will teach you how to make your own static poses in Blender and import them into an existing .anim file.
 

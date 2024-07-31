@@ -13,7 +13,7 @@ This guide will walk you through **adding poses** to Cyberpunk 2077's photo mode
 **Difficulty:** You know how to read ;)
 
 {% hint style="danger" %}
-This guide will teach you how to hook up an existing .anims file to the photo mode. If you don't have an .anims file, you can find a dummy file in the AMM [pose guide](amm-collab-anims-poses.md), or you can learn [how to make your own](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/).
+This guide will teach you how to hook up an existing .anims file to the photo mode. If you don't have an .anims file, you can find a dummy file in the AMM [pose guide](amm-collab-anims-poses.md), or you can learn how to [make your own](poses-animations-make-your-own/).
 {% endhint %}
 
 **It uses the following versions:**

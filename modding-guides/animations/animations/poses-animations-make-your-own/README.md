@@ -11,7 +11,7 @@ description: Make your own pose, then import it into photo mode
 
 This guide will teach you how to **create a custom pose** in Blender and import it into the game via **Wolvenkit**.&#x20;
 
-Since this guide is about creating and imported custom poses, we will make a **photo mode replacer**. To convert it to a standalone pose pack, follow the guide for either  [Photo Mode](archivexl-adding-photo-mode-poses.md) or [Appearance Menu Mod](amm-collab-anims-poses.md).&#x20;
+Since this guide is about creating and imported custom poses, we will make a **photo mode replacer**. To convert it to a standalone pose pack, follow the guide for either  [Photo Mode](../archivexl-adding-photo-mode-poses.md) or [Appearance Menu Mod](../amm-collab-anims-poses.md).&#x20;
 
 {% hint style="warning" %}
 If you have never done this before, don't do both at once. Or... do whatever, but it might result in unnecessary frustration.
@@ -19,13 +19,12 @@ If you have never done this before, don't do both at once. Or... do whatever, bu
 
 ### **Wait, this is not what I want!**
 
-* For an overview of all poses in photo mode, check [cheat-sheet-photo-mode.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-photo-mode.md "mention")
-* For more general knowledge, check the [..](../ "mention")section.
+* For an overview of all poses in photo mode, check [cheat-sheet-photo-mode.md](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-photo-mode.md "mention")
+* For more general knowledge, check the [..](../../ "mention")section.
 
 {% hint style="warning" %}
-We all stand on the shoulders of giants: this process has first been documented&#x20;
-
-by [xbaebsae | Angy](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/), who also provided the [original animation templates](https://drive.google.com/file/d/1kL04dQy9xmK\_yRsvsS4Sn83joPzrljAr/view).&#x20;
+We all stand on the shoulders of giants: this process has first been documented \
+by [xbaebsae | Angy](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/), who also provided the [original animation templates](https://drive.google.com/file/d/1kL04dQy9xmK\_yRsvsS4Sn83joPzrljAr/view). You can find a link to their version of the guide in the menu on the left.&#x20;
 
 Thank you!
 {% endhint %}
@@ -36,7 +35,7 @@ This guide will include the minimum amount of fluff and will **link** background
 
 For that reason, _**you shouldn't skip or skim**_ unless the section tells you that it's optional.
 
-<figure><img src="../../../.gitbook/assets/slow_down_kitten.jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/slow_down_kitten.jpg" alt=""><figcaption></figcaption></figure>
 
 Any links in the text will either
 
@@ -53,7 +52,7 @@ You will need the following software (install at least this version or higher):
 | ---------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
 | Wolvenkit ([stable](https://github.com/WolvenKit/Wolvenkit/releases) \| [nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases)) | >= 8.13  |
 | [Blender](https://www.blender.org/download/)                                                                                                         | >= 4.0   |
-| [wolvenkit-blender-io-suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention")                                   | >= 1.5.3 |
+| [wolvenkit-blender-io-suite](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention")                                | >= 1.5.3 |
 
 ## Step 0: Preparations
 
@@ -71,7 +70,7 @@ To import your pose into Cyberpunk, you need a Wolvenkit project.&#x20;
 | female      | base\animations\ui\photomode\photomode\_\_female\_\_idle.anims |
 | male        | base\animations\ui\photomode\photomode\_\_male\_\_idle.anims   |
 
-<figure><img src="../../../.gitbook/assets/add anims file to project.png" alt=""><figcaption><p>This is what adding your .anims to your project may look like</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/add anims file to project.png" alt=""><figcaption><p>This is what adding your .anims to your project may look like</p></figcaption></figure>
 
 3. Export the file(s) to GLB via [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-location-tools). Default settings are fine.\
    \
@@ -101,11 +100,11 @@ If the written instructions aren't clear enough for you, check the screenshots b
 1. Open up the file
 2. Select the armature by clicking on one of the bones in the viewport (the red circle on the screenshot below). They will be highlighted if you did it right.
 
-<figure><img src="../../../.gitbook/assets/animations_tutorial_blender_viewport.png" alt=""><figcaption><p>Your viewport directly after opening the file.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/animations_tutorial_blender_viewport.png" alt=""><figcaption><p>Your viewport directly after opening the file.</p></figcaption></figure>
 
 3. Switch the viewport to `Pose Mode` in the dropdown menu at the topleft of the viewport, immediately below the "File" and "Edit" menus. This will turn the armature red.
 
-<figure><img src="../../../.gitbook/assets/pose mode.png" alt=""><figcaption><p>"Pose Mode" dropdown looks like this</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/pose mode.png" alt=""><figcaption><p>"Pose Mode" dropdown looks like this</p></figcaption></figure>
 
 3. Now, you need to **create your pose**. Before you do that, check the box below:
 
@@ -136,7 +135,7 @@ If the written instructions aren't clear enough for you, check the screenshots b
       * selecting the `Rotate` tool from the toolbar on the left, then clicking and dragging along the coloured axes
    3. When you're done with this bone, position the next one.
 
-<figure><img src="../../../.gitbook/assets/animations_blender_rotate_bone.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/animations_blender_rotate_bone.png" alt=""><figcaption></figcaption></figure>
 
 6. Now, [draw the rest of the owl](https://knowyourmeme.com/memes/how-to-draw-an-owl), then proceed to the next section.
 
@@ -147,7 +146,7 @@ You now need to create an animation that Wolvenkit can add into the existing fil
 1. In the panel at the bottom, click on `<No Action>` to select it.&#x20;
 2. In the Armature -> Animation Data panel, click on the **New** button.
 
-<figure><img src="../../../.gitbook/assets/armature to animation data.png" alt="" width="222"><figcaption><p>Armature -> Animation Data panel looks like this</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/armature to animation data.png" alt="" width="222"><figcaption><p>Armature -> Animation Data panel looks like this</p></figcaption></figure>
 
 3. Now, we need to add keyframes, one for the **fallback position** and one for the **pose**.
    1. Make sure that the keyframe selected in the animation timeline is 0 (see "Animation Timeline" screenshot below)
@@ -158,11 +157,11 @@ You now need to create an animation that Wolvenkit can add into the existing fil
    6. Repeat the steps 3 and 4
    7. After you have done that, click on the `Push Down Action` button
 
-<figure><img src="../../../.gitbook/assets/animations_blender_keyframe_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/animations_blender_keyframe_1.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/animations_blender_keyframes_2.png" alt=""><figcaption><p>Animation timeline</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/animations_blender_keyframes_2.png" alt=""><figcaption><p>Animation timeline</p></figcaption></figure>
 
-4. Now, **rename** both your NLA strip **and** your animation to **`idle_stand_01`**.  This will overwrite the "Tabula Rasa" animation. (Find a list of animations and their associated names [here](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-photo-mode.md#idle).)\
+4. Now, **rename** both your NLA strip **and** your animation to **`idle_stand_01`**.  This will overwrite the "Tabula Rasa" animation. (Find a list of animations and their associated names [here](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-photo-mode.md#idle).)\
    \
    If you aren't planning on replacing the in-game idle poses (i,e., Tabula Rasa), _it is still required that your NLA strip and your animation have the same name._
 
@@ -174,9 +173,9 @@ This step is **crucial**. If you don't do this, then Wolvenkit won't import your
 The names **must** be the same, and they **must** match the name in your .anim file.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/animations_blender_name_anims.png" alt=""><figcaption><p>Before</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/animations_blender_name_anims.png" alt=""><figcaption><p>Before</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/animations_blender_name_anims_2.png" alt=""><figcaption><p>After</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/animations_blender_name_anims_2.png" alt=""><figcaption><p>After</p></figcaption></figure>
 
 5. Go back and read the warning box under step 4.
 6. Double-check the names. (Yes, this is **that** important)
@@ -185,11 +184,11 @@ The names **must** be the same, and they **must** match the name in your .anim f
    _TODO: This step will be made **optional** when the Blender plugin update hits. Update guide when it does._
 9. From the File -> Export menu, select `Export Selection to GLB for Cyberpunk`
 
-<figure><img src="../../../.gitbook/assets/animations_blender_export_selection.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/animations_blender_export_selection.png" alt=""><figcaption></figcaption></figure>
 
 8. This will open a file picker. Do the following things:
    * Check the `Animations` box on the right
-   * Navigate the to the path of the file you exported in the [previous step](poses-animations-make-your-own.md#your-wolvenkit-project) and click on it to overwrite it
+   * Navigate the to the path of the file you exported in the [previous step](./#your-wolvenkit-project) and click on it to overwrite it
 9. When you're done, hit "Export for Cyberpunk".
 
 Now it's time to import the file back into Wolvenkit.
@@ -200,7 +199,7 @@ Now it's time to import the file back into Wolvenkit.
 2. Click on `photomode__female__idle.glb` to select it and open the import settings panel.
 3. In the panel on the right, change `Target File Format` to Anims:
 
-<figure><img src="../../../.gitbook/assets/animations_blender_wolvenkit_import.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/animations_blender_wolvenkit_import.png" alt=""><figcaption></figcaption></figure>
 
 4. Hit the **Import Selected** button.
 
@@ -218,10 +217,10 @@ If all went well, entering photo mode will show your new pose.
 2. expand the `animations` array at the top of the file
 3. For each `animAnimSetEntry`, change the property `animation` -> `animBuffer` -> `numTracks` to 2
 
-<figure><img src="../../../.gitbook/assets/animations_fix_twitching.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/animations_fix_twitching.png" alt=""><figcaption></figcaption></figure>
 
 4. If that doesn't work, change the numTracks to `0`
-5. If that still doesn't work, make sure that your pose has **at least two keyframes** by going back to [#step-2-creating-the-animation](poses-animations-make-your-own.md#step-2-creating-the-animation "mention") and not skimming this time.&#x20;
+5. If that still doesn't work, make sure that your pose has **at least two keyframes** by going back to [#step-2-creating-the-animation](./#step-2-creating-the-animation "mention") and not skimming this time.&#x20;
 
 ### Can't import: No extra data
 
@@ -232,12 +231,12 @@ animation `anim_name` has no extra data, can't import!
 ```
 
 1. To make sure that the `.glb` file that you want to **import into** is okay, do a fresh [Wolvenkit export](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) of your `.anim` with a Wolvenkit version from after February 10 2024 (>8.13 should be ok)
-2. Use the Wolvenkit Blender IO suite [**1.5.3**](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/v1.5.3) **or greater** to [export as animation](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-wolvenkit). If the error does not go away, update the plugin.
+2. Use the Wolvenkit Blender IO suite [**1.5.3**](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/v1.5.3) **or greater** to [export as animation](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-wolvenkit). If the error does not go away, update the plugin.
 3. Import the .glb file into Wolvenkit again.
 
 ### My pose doesn't import!
 
-I have no idea how to tell you this, choomba, other than stressing thrice that it's important and putting a big red box, but the NLA strip and the animation **must** have the same name. Go back to "[this is important](poses-animations-make-your-own.md#this-is-important)" and double-check. The animation might have trailing numbers, e.g. be called `photomode__female__idle.001`, that will already do it.
+I have no idea how to tell you this, choomba, other than stressing thrice that it's important and putting a big red box, but the NLA strip and the animation **must** have the same name. Go back to "[this is important](./#this-is-important)" and double-check. The animation might have trailing numbers, e.g. be called `photomode__female__idle.001`, that will already do it.
 
 ### Very funny, but it wasn't that
 
@@ -247,16 +246,16 @@ If you're really 100% sure, then you might have a broken NLA strip. That happens
 2. Switch into Pose Mode
 3. Press `A` to select all bones
 4. Press `Ctrl+C` to copy their positions
-5. Create a new NLA strip by repeating [Step 2](poses-animations-make-your-own.md#step-2-creating-the-animation) — but instead of posing the armature, you can simply press `Ctrl+V` to paste the bone positions from your previous animation.
-6. Export the new NLA strip, then [import it via Wolvenkit](poses-animations-make-your-own.md#step-3-importing-and-testing). This should work now.
+5. Create a new NLA strip by repeating [Step 2](./#step-2-creating-the-animation) — but instead of posing the armature, you can simply press `Ctrl+V` to paste the bone positions from your previous animation.
+6. Export the new NLA strip, then [import it via Wolvenkit](./#step-3-importing-and-testing). This should work now.
 
 ### Nope, still borked
 
-We're reaching the end of the rope here. Go back and [check the animation names](poses-animations-make-your-own.md#this-is-important). If that wasn't it,
+We're reaching the end of the rope here. Go back and [check the animation names](./#this-is-important). If that wasn't it,
 
 1. create a new copy of the .blend file you downloaded (but keep yours open)
-2. In your old Blend file, repeat 1-4 of the [previous step](poses-animations-make-your-own.md#very-funny-but-it-wasnt-that)
-3. In your new Blend file, repeat 5+6 of the [previous step](poses-animations-make-your-own.md#very-funny-but-it-wasnt-that)
+2. In your old Blend file, repeat 1-4 of the [previous step](./#very-funny-but-it-wasnt-that)
+3. In your new Blend file, repeat 5+6 of the [previous step](./#very-funny-but-it-wasnt-that)
 
 ### Noesis Layer: Invalid Joint
 
@@ -270,4 +269,4 @@ $fst_root.001|Noesis Frames|Noesis Layer: Invalid Joint Transform, joint Armatur
 
 That is because there is ancient data in the template, which Wolvenkit doesn't know how to handle. Delete everything called "Noesis" from the list of animations below:
 
-<figure><img src="../../../.gitbook/assets/animation_poses_delete_noesis.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/animation_poses_delete_noesis.png" alt=""><figcaption></figcaption></figure>

@@ -29,7 +29,7 @@ This tutorial will use `animation` and `pose` interchangeably. An animation is s
 
 ## Prerequisites
 
-1. You have an `.anims` file, either a game file or one that you have [made yourself](poses-animations-make-your-own.md)
+1. You have an `.anims` file, either a game file or one that you have [made yourself](poses-animations-make-your-own/)
 2. You have a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
 3. You have a text editor like [Notepad++](https://notepad-plus-plus.org/downloads/)
 4. You have **one** of the following things:
