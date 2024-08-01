@@ -37,7 +37,7 @@ Using any modeling method you like, create a so called grid surface. This should
 **Core concept:** Keep the poly count low. The less 'control points' you have, the easier it is to control the object. \
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption><p>A correct grid surface</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>A correct grid surface</p></figcaption></figure>
 
 <details>
 
@@ -52,9 +52,9 @@ I model by simply extruding edges, and some sculpt mode mixed in.\
 Loop Tools addon is good for cleanup ('relax').\
 \
 Set Viewport display to 'Wire'. You can change the opacity in viewport overlays menu, and assign random colors in shading menu. \
-![](<../../.gitbook/assets/image (1) (1) (1).png>)![](<../../.gitbook/assets/image (2) (1) (1).png>)
+![](<../../.gitbook/assets/image (1) (1) (1) (2).png>)![](<../../.gitbook/assets/image (2) (1) (1) (2).png>)
 
-<img src="../../.gitbook/assets/image (3) (1) (1).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (3) (1) (1) (2).png" alt="" data-size="original">
 
 You can set 'Mean Vertex Crease to 1 on specific edge loops, if you want them to remain sharp while using a subdiv modifier.\
 ![](<../../.gitbook/assets/image (10).png>)
@@ -81,11 +81,11 @@ Why not just use a ton of lower density textures? It is certainly an option, but
 \
 Open the HT panel (N), expand the Hair System, Sub-Systems and Deformers menus.
 
-<figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Press CTRL + Shift + H, then Transfer Hair system to Empty Curve. The hair object will now be a curves object parented to the grid surface.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>Change viewport display settings if you like</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (6) (1) (1) (2).png" alt=""><figcaption><p>Change viewport display settings if you like</p></figcaption></figure>
 
 Add the following deformers:\
 \- Align tilt to source surface\
@@ -97,15 +97,15 @@ Additionally, set the desired profile width in the Profile tab.
 
 <summary>Deformer settings and tips</summary>
 
-![](<../../.gitbook/assets/image (7) (1).png>)
+![](<../../.gitbook/assets/image (7) (1) (2).png>)
 
 Increase subdivision steps to 4. This affects the 'virtual' curve's subdivision, but it will not affect the final poly count. If you need more points near the roots, use the Slide Points deformer. Change Uniform factor to change the distribution of curves across the sharp edge.
 
-<img src="../../.gitbook/assets/image (8) (1).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (8) (1) (2).png" alt="" data-size="original">
 
 An incredibly usefull deformer. Aligns the tilt of the curve to the source surface. Enable twist fix if the curve is twisting in unexpected ways.
 
-![](<../../.gitbook/assets/image (9).png>)
+![](<../../.gitbook/assets/image (9) (2).png>)
 
 Mirror deformer will create a symmetric copy around the origin of the object, unless a different target is specified. For now, the symmetry is perfect (which is not desired), but that will be fixed later.\
 The order of deformers matters. They work from top to bottom, just like modifiers. You can think of them as such.&#x20;

@@ -13,7 +13,7 @@ Make sure you installed TweakXL.
 ### Create a new tweakXL `.yaml` file
 
 {% hint style="info" %}
-This file contains the [tweak ](../../../for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/)which will register your car with the game's database.
+This file contains the [tweak ](../../../for-mod-creators/modding-guides/tweakxl-changing-game-records/)which will register your car with the game's database.
 
 After creation, you can find it in your Wolvenkit project's [resources](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources) tab.
 {% endhint %}

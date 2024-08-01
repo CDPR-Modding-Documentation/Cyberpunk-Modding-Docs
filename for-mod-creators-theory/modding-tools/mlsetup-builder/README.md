@@ -172,7 +172,7 @@ We're assuming that you have already configured Wolvenkit. If you haven't, pleas
 
 In MLSetupBuilder **1.6.7**, select the menu Help -> download Wolvenkit.CLI and extract the linked version:
 
-<figure><img src="../../../.gitbook/assets/image (336).png" alt=""><figcaption><p>MLSB 1.7</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (336) (1).png" alt=""><figcaption><p>MLSB 1.7</p></figcaption></figure>
 
 In MLSB >= 1.6.8, download the most recent version of [WolvenKit Console ](https://github.com/WolvenKit/WolvenKit/releases)and extract it to a folder of your choice.
 

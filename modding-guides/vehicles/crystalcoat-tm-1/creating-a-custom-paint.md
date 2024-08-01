@@ -1,5 +1,5 @@
 ---
-cover: ../../../../.gitbook/assets/page7.jpg
+cover: ../../../.gitbook/assets/page7.jpg
 coverY: 0
 ---
 
@@ -232,17 +232,17 @@ ColorCode = 3eaf77_null
 µBlends offset V = 0
 ```
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_kWuwUxYNH63lFvnuojX4_image.webp" alt="" width="375"><figcaption><p>MLSB metallic paint definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_kWuwUxYNH63lFvnuojX4_image.webp" alt="" width="375"><figcaption><p>MLSB metallic paint definition</p></figcaption></figure>
 
 #### Create a new material into your mesh files
 
 Add a new mesh appearance in the `appearances` array with name `metallic` containing a single chunk named `metallic` too.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_XbkgVzznlr2uxXvLwc2K_image.webp" alt=""><figcaption><p>Add a new metallic appearance</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_XbkgVzznlr2uxXvLwc2K_image.webp" alt=""><figcaption><p>Add a new metallic appearance</p></figcaption></figure>
 
 Now you need to update the mesh file for each of your `*_painted_custom` components and add a new `metallic` material into them.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_cKZ7E3u2knEMjtgyVvpB_image.webp" alt=""><figcaption><p>Add a new metallic material</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_cKZ7E3u2knEMjtgyVvpB_image.webp" alt=""><figcaption><p>Add a new metallic material</p></figcaption></figure>
 
 To do this duplicate the last entry of the `materialEntries` array and name it `metallic` then right-click on the array and choose `Recalculate child index properties`.
 
@@ -260,11 +260,11 @@ For each parameter you need to set its name and its value. Then you will be able
 
 Otherwise you need to copy the parameters into the existing material you have previously duplicated.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_XIjegWfH5oaFPIPYOjLu_image.webp" alt=""><figcaption><p>Metallic material parameters</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_XIjegWfH5oaFPIPYOjLu_image.webp" alt=""><figcaption><p>Metallic material parameters</p></figcaption></figure>
 
 Now lets see the result.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_LTRS3b2aElDhMgMFuGlB_image.png" alt=""><figcaption><p>CrystalCoat using a metallic paint</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_LTRS3b2aElDhMgMFuGlB_image.png" alt=""><figcaption><p>CrystalCoat using a metallic paint</p></figcaption></figure>
 
 > Nice ! But I can see some stairs in the paint on the back doors !
 
@@ -288,17 +288,17 @@ In the case of the Mahir Supron the side stripes are created by the layer 2 so w
 
 The layer 0 is already a full white image so there is no need to change it. Either find another layer that is already full black or create one with an image editor software using the same image size. Then duplicate this file for all the other layers except layer 2 and reuse their name.
 
-<figure><img src="../../../../.gitbook/assets/image (342).png" alt=""><figcaption><p>Layers for the painted.mlmask</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (342) (1).png" alt=""><figcaption><p>Layers for the painted.mlmask</p></figcaption></figure>
 
 Then import the layers back into the mlmask file using the `Tools > Import Tool`.
 
 Then affect your new mlmask file to all the painted components in the `metallic` material in the field `MultilayerMask`.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_YcPMicvH0w3s0k7llHOc_image.webp" alt=""><figcaption><p>Affect the new mlmask to all the painted components</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_YcPMicvH0w3s0k7llHOc_image.webp" alt=""><figcaption><p>Affect the new mlmask to all the painted components</p></figcaption></figure>
 
 Then test the mod and see if the problem is solved.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_cQwZd9pFL5lguO5RP80w_image.webp" alt=""><figcaption><p>All painted parts are now fixed</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_cQwZd9pFL5lguO5RP80w_image.webp" alt=""><figcaption><p>All painted parts are now fixed</p></figcaption></figure>
 
 Now all of our painted components are fixed. This metallic paint is beautiful !
 
@@ -376,7 +376,7 @@ ColorCode = 3eaf77_null
 µBlends offset V = 0
 </code></pre>
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_jTVI3Y3qWzz3n4fRlE6y_image.webp" alt="" width="375"><figcaption><p>MLSB glossy paint definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_jTVI3Y3qWzz3n4fRlE6y_image.webp" alt="" width="375"><figcaption><p>MLSB glossy paint definition</p></figcaption></figure>
 
 Then save the file and import it back into WolvenKit.
 
@@ -388,6 +388,6 @@ Finally assign the new `glossy.mlsetup` file into this material. Keep all the pa
 
 All you have to do now is to install the mod and select the new paint aspect in the mod settings !
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_qD3n9sEVQyfDl83jcbeT_image.png" alt=""><figcaption><p>CrystalCoat using a glossy paint</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_qD3n9sEVQyfDl83jcbeT_image.png" alt=""><figcaption><p>CrystalCoat using a glossy paint</p></figcaption></figure>
 
 > Wonderful ! I can't believe it ! Well do you think that I could add other _premios_ stuff to this vehicle ?

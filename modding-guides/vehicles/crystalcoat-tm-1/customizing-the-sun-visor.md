@@ -1,5 +1,5 @@
 ---
-cover: ../../../../.gitbook/assets/page9.jpg
+cover: ../../../.gitbook/assets/page9.jpg
 coverY: 0
 ---
 
@@ -13,7 +13,7 @@ Duplicate the `body_01_roof_custom` component and rename it to `body_01_sunvisor
 
 Export the new mesh file and the `body_01` mesh file. Open the `body_01` mesh file into Blender and submesh the component. Export the new submesh alone into the sun visor mesh file. Finally export all the other submeshes into the base mesh file. Finally import both files back into WolvenKit.
 
-<figure><img src="../../../../.gitbook/assets/image (339).png" alt=""><figcaption><p>Submesh the sun visor</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (339) (1).png" alt=""><figcaption><p>Submesh the sun visor</p></figcaption></figure>
 
 Open the new mesh file and remove all appearances except `standard` and `black`. Remove the corresponding materials from `localMaterialBuffer > materials` and `materialEntries` arrays. When you are done, right-click on the `materialEntries` array and refresh the index by choosing `Recalculate child index properties`.
 
@@ -126,6 +126,6 @@ To do this modify the `Utils.CustomizeMesh` method. In the first `switch` block 
 
 Now you can test your mod and see that the sun visor can be customized for both CrystalCoat states.
 
-<figure><img src="../../../../.gitbook/assets/photomode_23052024_152644.png" alt=""><figcaption><p>Customizable sun visor using the black appearance</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/photomode_23052024_152644.png" alt=""><figcaption><p>Customizable sun visor using the black appearance</p></figcaption></figure>
 
 > My vehicle is so fancy now ! But wait ! Those wheels feel very cheap !

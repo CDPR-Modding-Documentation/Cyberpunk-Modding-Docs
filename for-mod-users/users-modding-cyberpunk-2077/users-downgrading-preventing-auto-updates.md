@@ -22,12 +22,12 @@ In GOG Galaxy, this can be done as a global setting — you disable auto-update 
 
 #### Only disable updates for CP2077
 
-Open the GOG Galaxy page for Cyberpunk 2077 and click the <img src="../../.gitbook/assets/image (334).png" alt="manage icon" data-size="line">manage icon next to the big play button, then `Manage installation` and `Configure...`\
+Open the GOG Galaxy page for Cyberpunk 2077 and click the <img src="../../.gitbook/assets/image (334) (1).png" alt="manage icon" data-size="line">manage icon next to the big play button, then `Manage installation` and `Configure...`\
 Disable the `Automatically update to the newest version` checkbox. Optionally, select the game patch you want to play on here.\
 \
 
 
-<figure><img src="../../.gitbook/assets/image (335).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (335) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Globally disable updates
 

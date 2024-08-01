@@ -30,7 +30,7 @@ This page contains a brief overview of existing materials. Use the Table of Cont
 
 #### Hands-on:
 
-* [changing-materials-colors-and-textures](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention") (guide)
+* [changing-materials-colors-and-textures.md](../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") (guide)
 * [using-a-textured-material.md](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention") (guide)
 
 ***

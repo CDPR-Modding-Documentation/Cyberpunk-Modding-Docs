@@ -15,7 +15,7 @@ It will point you towards further reading material in case you want to dig deepe
 
 ## How to mod it
 
-Find [the-cyberpunk-2077-game-directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/ "mention"). Then, create the following **text document** (you can name it what you want):
+Find [the-cyberpunk-2077-game-directory](../../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/ "mention"). Then, create the following **text document** (you can name it what you want):
 
 ```
 r6/tweaks/my_improved_item.yaml
@@ -48,12 +48,8 @@ You might not want to actually do it.
 
 ## Adding attachment slots
 
-To add **attachment slots** to an item, simply [pick one from the list](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-attachment-slots.md) and append it to your item's `slotPartList`.
+To add **attachment slots** to an item, you would need to change its **blueprint** property by either using other blueprints or create a new one using this guide&#x20;
 
-The example below might have all sorts of unintended side effects, as David's jacket is not a cyberdeck:
-
-```yaml
-Items.MQ049_martinez_jacket:
-  slotPartList:
-    - !append AttachmentSlots.CyberdeckProgram8
-```
+{% content-ref url="../../../../for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/creating-custom-blueprints.md" %}
+[creating-custom-blueprints.md](../../../../for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/creating-custom-blueprints.md)
+{% endcontent-ref %}

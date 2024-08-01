@@ -13,12 +13,12 @@ This guide will teach you how to edit an item's material, changing its appearanc
 
 ### Wait, this is not what I want!
 
-* For a step-by-step walkthrough for a recolour of the Netrunner suit, check [r-and-r-colour-editing.md](../../recolours-and-refits/r-and-r-colour-editing.md "mention")
-* If you want to edit emissive (glowing) material, check [r-and-r-emissive.md](../../recolours-and-refits/r-and-r-emissive.md "mention") -> [#changing-the-presets](../../recolours-and-refits/r-and-r-emissive.md#changing-the-presets "mention")
+* For a step-by-step walkthrough for a recolour of the Netrunner suit, check [r-and-r-colour-editing.md](../../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-colour-editing.md "mention")
+* If you want to edit emissive (glowing) material, check [r-and-r-emissive.md](../../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-emissive.md "mention") -> [#changing-the-presets](../../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-emissive.md#changing-the-presets "mention")
 * For an overview of base materials and example files, you can check [here](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md).
 * If you want to learn how mesh material assignment works in general, you can check the [corresponding page](../../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#material-assignment).
-* For details on changing materials, check [.](./ "mention").
-  * If you just want to use a textured material, check [using-a-textured-material.md](using-a-textured-material.md "mention")
+* For details on changing materials, check [changing-materials-colors-and-textures.md](changing-materials-colors-and-textures.md "mention").
+  * If you just want to use a textured material, check [using-a-textured-material.md](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention")
 * You can find a video guide on [youtube](https://youtu.be/HLwjKM8YDlA) (It's also embedded below)
 
 ## Prerequisites
@@ -98,7 +98,7 @@ Inside the array, find your material by name:
 {% hint style="warning" %}
 If you see `multilayered.mt` as the `baseMaterial`, you have to edit this with [MLSetupBuilder](../../../../for-mod-creators-theory/modding-tools/mlsetup-builder/). Fortunately, it's not very difficult.
 
-If you'd rather use a textured material, see the [using-a-textured-material.md](using-a-textured-material.md "mention") sub-page.
+If you'd rather use a textured material, see the [using-a-textured-material.md](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention") sub-page.
 {% endhint %}
 
 {% hint style="info" %}
@@ -119,8 +119,8 @@ In this guide, we'll focus on editing the MultilayerSetup.&#x20;
 
 * For a detailed explanation of those properties, see [multilayered-material-properties.md](../../../../for-mod-creators-theory/materials/configuring-materials/multilayered-material-properties.md "mention")
 * If you want an explanation of the Multilayered shader, check [here](../../../../for-mod-creators-theory/materials/multilayered/).
-* To learn more about MultilayerMasks (or how to make your own), check [custom-multilayermasks.md](../../../textures-and-luts/custom-multilayermasks.md "mention")
-* For more intel on normal maps, check [self-made-normal-maps](../../../textures-and-luts/self-made-normal-maps/ "mention")
+* To learn more about MultilayerMasks (or how to make your own), check [custom-multilayermasks.md](../../../../modding-guides/textures-and-luts/custom-multilayermasks.md "mention")
+* For more intel on normal maps, check [self-made-normal-maps](../../../../modding-guides/textures-and-luts/self-made-normal-maps/ "mention")
 
 </details>
 
@@ -213,7 +213,7 @@ To add a new material to a mesh, you can simply right-click on the `materials` a
 <figure><img src="../../../../.gitbook/assets/changing_material_add_new_material.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Consider converting your mod to use [archivexl-patching-appearances.md](../archivexl-patching-appearances.md "mention")for much better compatibility and smaller mod size!
+Consider converting your mod to use [archivexl-patching-appearances.md](../../../../modding-guides/items-equipment/editing-existing-items/archivexl-patching-appearances.md "mention")for much better compatibility and smaller mod size!
 {% endhint %}
 
 <details>

@@ -82,7 +82,7 @@ Usually, the base ID consists of two parts: the item name, and the item's appear
 Now that you've found your mesh, you can **edit** it.&#x20;
 
 * To use it for the base of a new in-game item, check the [adding-new-items](../../../modding-guides/items-equipment/adding-new-items/ "mention") guide
-* To change its materials, check the [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention") guide
+* To change its materials, check the [changing-materials-colors-and-textures.md](../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") guide
 
 ## Alternative methods of finding an item
 
