@@ -3,7 +3,7 @@
 ## Summary
 
 **Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** June 13 2024 by LadyLea
+**Last documented update:** August 2 2024 by LadyLea
 
 This page will tell you about **tags** and how they can be used to influence item behaviour. It also teaches you how [#adding-custom-tags](archivexl-tags.md#adding-custom-tags "mention") can help you conditionally un-hide items.
 
@@ -74,11 +74,11 @@ Tags are case-sensitive!
 
 <div>
 
-<figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags - Arms - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Default Arms - By LadyLea </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/HIDE TAGS - FORCE TAGS - ARMS BY LL.png" alt="" width="375"><figcaption><p>Visual Guide - Tags - Default Arms - By LadyLea </p></figcaption></figure>
 
  
 
-<figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - Head - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Head - By LadyLea </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - Head - By LadyLea.png" alt="" width="375"><figcaption><p>Visual Guide - Tags - Head - By LadyLea </p></figcaption></figure>
 
 </div>
 
