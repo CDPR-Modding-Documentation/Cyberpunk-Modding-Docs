@@ -33,12 +33,12 @@ The final section of [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md
 ## Step 1: Getting head
 
 1. Open the `head` folder in your project's `archive` section.
-   1. **Optional:** Be confused and/or panic about why there are over 9000 files.list
+   1. **Optional:** Be confused and/or panic about why there are [over 9000](#user-content-fn-1)[^1] files.list
    2.
 
        <figure><img src="../../../.gitbook/assets/3 head folder.png" alt=""><figcaption></figcaption></figure>
 2. Look into the `head/morphtargets` folder
-   1. **Optional:** Be confused and/or panic about why there are over 9000 files **again**.&#x20;
+   1. **Optional:** Be confused and/or panic about why there are [over 9000](#user-content-fn-2)[^2] files **again**.&#x20;
    2.
 
        <figure><img src="../../../.gitbook/assets/4 scroll down to find morphtargets folder.png" alt=""><figcaption></figcaption></figure>
@@ -231,6 +231,8 @@ Now it's time to get them back into Wolvenkit.
 
 {% hint style="success" %}
 At this point of the guide, you should see your NPV's head in Wolvenkit (re-select the mesh to refresh the preview).&#x20;
+
+If everything works, you're done with Blender (unless you want to get fancy).
 {% endhint %}
 
 If the head mesh has **not changed**, you ran into a problem — check the Log View and/or make sure that you completed all steps in the right order. Especially **changing any paths** will break things.
@@ -269,4 +271,10 @@ The problem went away after the person having it upgraded Blender.&#x20;
 If you had the example project lying around for a very long time, please try and redownload it ([Nexus link](https://www.nexusmods.com/cyberpunk2077/mods/8328)), as the first version had been using an NPC animationgraph for facial expressions.
 
 If that's not it, then you ran into the shapekey offset issue: some shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of your shape is shaped wrong or looks weird in the game, **add or subtract 1** from the corresponding shape key, and run the script again.
+
+
+
+[^1]: not literally
+
+[^2]: not literally
 

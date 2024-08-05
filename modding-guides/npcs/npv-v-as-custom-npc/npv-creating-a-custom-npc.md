@@ -192,8 +192,14 @@ The NPV picker does this for you, but here's how to select your eyebrow appearan
 
 The values you found out will go into the **components** in your NPV's .app file.
 
+#### The NPV picker gives me a chunkMask...?
+
+This property is used for **hiding** parts of a mesh. If the part picker gives you this number, simply paste it into the corresponding box in your component:
+
+<figure><img src="../../../.gitbook/assets/chunkmask.png" alt=""><figcaption></figcaption></figure>
+
 {% hint style="info" %}
-Sometimes, the NPV picker gives you a number for [`chunkMask`](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes). You can paste that directly into the box in your component's properties. (Check the link to see an example of how it looks like)
+You can learn more about this under [submeshes-materials-and-chunks.md](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"), but this is not necessary for the tutorial.
 {% endhint %}
 
 ### Customizing Cyberware
