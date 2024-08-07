@@ -2,11 +2,20 @@
 description: Using Redmod to create mods.
 ---
 
-# REDmod
+# REDmod for mod devs
 
-{% hint style="info" %}
-if you're looking for how to use REDmod to install and manage mods as a user, click [here](../../../modding-guides/world-editing/adding-locations-and-structures-with-archivexl.md)
-{% endhint %}
+## Summary
+
+**Last documented edit:** Sep 07 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page tells you how to use REDmod for **mod creation**.
+
+### Wait, that's not what I want!
+
+* If you want to know what REDmod does, check [here](../../../for-mod-users/users-modding-cyberpunk-2077/redmod/#if-i-use-it-what-do-i-gain)
+* If you're a mod user, check the [redmod](../../../for-mod-users/users-modding-cyberpunk-2077/redmod/ "mention") page in the Mod Users section
+
+## What is REDmod? (Developer version)
 
 REDmod is a command line tool developed by CDPR and Yigsoft, which allows us to interact with game files in a variety of ways.
 
