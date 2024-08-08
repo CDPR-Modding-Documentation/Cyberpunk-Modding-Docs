@@ -8,6 +8,10 @@ description: You can find here a list of overlays names for the KS_UV and VTK fr
 Confused about the difference? Check [converting-between-tattoo-frameworks](../../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/ "mention")
 {% endhint %}
 
+{% hint style="success" %}
+You already have the body mod installed, so you can simply get the files from your [Mod Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) by using the [Wolvenkit Search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).&#x20;
+{% endhint %}
+
 Depending on the supported framework, you need to name your WolvenKit project like this:
 
 | Framework | Prefix | Example name    |
