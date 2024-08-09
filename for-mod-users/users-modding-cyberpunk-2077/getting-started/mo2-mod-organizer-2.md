@@ -19,7 +19,7 @@ Please ask on their [Discord server](https://discord.com/invite/ewUVAqyrQX) if y
 ### Installing CET and Red4Ext
 
 {% hint style="warning" %}
-With MO2 >= 2.5.2, RootBuilder no longer supports CET or Red4Ext – force laod them.
+With MO2 >= 2.5.2, RootBuilder no longer supports CET or Red4Ext – force load them instead (see below).
 {% endhint %}
 
 The .dll files for CET and Red4Ext have to be **force loaded** or **installed manually**.
