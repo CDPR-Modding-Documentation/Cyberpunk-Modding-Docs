@@ -3,7 +3,7 @@
 ## Summary
 
 **Published:** ?? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** June 12 2024 by AllKnowingLion\
+**Last documented update:** August 8 2024 by AllKnowingLion\
 **Minimum required ArchiveXL version:** 1.5
 
 This page explains how to enable **body mod support** in ArchiveXL:
@@ -29,7 +29,7 @@ The past method of adding the components to each individual appearance [does sti
 ## Body modders: Adding support
 
 {% hint style="success" %}
-Starting with version **1.14**, you can use [archivexl-resource-patching.md](../archivexl-resource-patching.md "mention") to inject your tags into the existing files!&#x20;
+Starting with version **1.14**, you can use [archivexl-resource-patching.md](../archivexl-resource-patching.md "mention") to inject your tags into the existing files!
 
 You can download the [template from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/14793), or create one yourself.
 {% endhint %}
@@ -47,17 +47,17 @@ You can download the [template from Nexus](https://www.nexusmods.com/cyberpunk20
 
 ### 2. Patch the player entity files
 
-We'll make use of [archivexl-resource-patching.md](../archivexl-resource-patching.md "mention") for this.&#x20;
+We'll make use of [archivexl-resource-patching.md](../archivexl-resource-patching.md "mention") for this.
 
 #### Set up the patch .ent
 
-If you downloaded the template project, a patch .ent will already be included.&#x20;
+If you downloaded the template project, a patch .ent will already be included.
 
 <details>
 
 <summary>Create your own patch .ent</summary>
 
-1. In Wolvenkit, select File -> New File&#x20;
+1. In Wolvenkit, select File -> New File
 2. Scroll down the menu until you find the one with the extension `.ent` (should be EntEntityTemplate)
 3. Add a new, blank EntEntityTemplate to your project
 4. Give it a good name and move it somewhere
@@ -114,7 +114,7 @@ print(GetPlayer():FindComponentByName("Body:NewBody"))
 
 <figure><img src="../../../../.gitbook/assets/AXL_body_checking_component.png" alt=""><figcaption></figcaption></figure>
 
-If that still doesn't work, consider using the [template from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/14793), which has been tried and tested on May 18 2024 with ArchiveXL&#x20;
+If that still doesn't work, consider using the [template from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/14793), which has been tried and tested on May 18 2024 with ArchiveXL
 
 ## Clothing mods: Making use of the tags
 
@@ -168,7 +168,7 @@ If you know something that should be on the list, please edit [the-wiki.md](../.
 {% endhint %}
 
 {% hint style="warning" %}
-As of 18th March 2024, [Nim's More Body Meshes](https://www.nexusmods.com/cyberpunk2077/mods/3890?tab=description) is compatible again with Gymfiend Body Mod.            &#x20;
+As of 18th March 2024, [Nim's More Body Meshes](https://www.nexusmods.com/cyberpunk2077/mods/3890?tab=description) is compatible again with Gymfiend Body Mod.
 
 Use only one main archive! \[[#\_nim\_more\_body\_meshes\_Gymfiend\_patch.archive](https://www.nexusmods.com/cyberpunk2077/mods/3890?tab=files\&file\_id=72036)]
 {% endhint %}
@@ -178,6 +178,7 @@ Use only one main archive! \[[#\_nim\_more\_body\_meshes\_Gymfiend\_patch.archiv
 | [KS Lion's Lush Body](https://www.nexusmods.com/cyberpunk2077/mods/4901)                    | Lush     | `&body=lush`       |
 | [KS Lion's SoLush Body](https://www.nexusmods.com/cyberpunk2077/mods/8392)                  | Lush     | `&body=lush`       |
 | [KS Solo Ultimate](https://www.nexusmods.com/cyberpunk2077/mods/6944)                       | Ult      | `&body=ult`        |
+| [KS Solo 2.0](https://www.nexusmods.com/cyberpunk2077/mods/15869)                           | Solo\_OG | `&body=solo_og`    |
 | [KS Songbird 2.0](https://www.nexusmods.com/cyberpunk2077/mods/12898)                       | Song2    | `&body=song2`      |
 | [Hyst's Angel Body Mod](https://www.nexusmods.com/cyberpunk2077/mods/14896?tab=description) | Angel    | `&body=angel`      |
 | [Hyst's Big Butt](https://www.nexusmods.com/cyberpunk2077/mods/4420)                        | RB       | `&body=rb`         |
