@@ -6,17 +6,38 @@ description: How to use MO2 - it's that simple
 
 MO2 (**Mod Organizer 2**, [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) | [github](https://github.com/ModOrganizer2/modorganizer/releases)) is a free mod manager widely used in modding Bethesda games like Skyrim or Fallout. It supports Cyberpunk and is easy to use.
 
-{% hint style="warning" %}
-Please ask on their Discord server if you need help with MO2 in general.
+Using MO2 leaves your base game directory untouched, and you can easily install and uninstall mods, update old mods or use profiles.
 
-If you want to improve the guide, you are [very welcome](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7)!
+{% hint style="warning" %}
+Please ask on their [Discord server](https://discord.com/invite/ewUVAqyrQX) if you need help with MO2 beyond the scope of this guide.
 {% endhint %}
 
 ### Installing mods
 
-* Install MO2
-* Install CET and Red4ext manually (or with rootbuilder). These mods are script extenders and must be in the root game folder.
+* Install MO2 by downloading from  [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) (yes, Skyrim Nexus) or [github](https://github.com/ModOrganizer2/modorganizer/releases).
+
+### Installing CET and Red4Ext
+
+{% hint style="warning" %}
+With MO2 >= 2.5.2, RootBuilder no longer supports CET or Red4Ext – force laod them.
+{% endhint %}
+
+The .dll files for CET and Red4Ext have to be **force loaded** or **installed manually**.
+
+1. Select Cyberpunk from your list of games
+2. Click on `Edit` to open the `Modify Executables` window
+3. Check the box next to `Force load libraries (*)`
+4. Click on `Configure Libraries`
+5. Add the following files:&#x20;
+   1. `bin/x64/plugins/version.dll` (for Cyber Engine Tweaks)
+   2. `bin/x64/winmm.dll` (for Red4Ext)
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+## Install the rest of your mods
+
 * Install the rest of the mods simply with the Nexus "install with manager" button
 * Always launch the game through MO2
 
-That's all. Using MO2 leaves your base game directory untouched, and you can easily install and uninstall mods, update old mods or use profiles.
+That's all.&#x20;
+
