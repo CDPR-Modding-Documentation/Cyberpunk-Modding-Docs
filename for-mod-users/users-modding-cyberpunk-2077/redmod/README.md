@@ -6,19 +6,25 @@ description: https://www.cyberpunk.net/en/modding-support
 
 ## Summary
 
-**Last documented update:** Sep 07 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit:** Sep 08 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page will tell you what REDMod is and how to install it.
+This page will tell you the following things:
+
+* [#what-is-redmod-and-what-does-it-do](./#what-is-redmod-and-what-does-it-do "mention")
+* [#how-to-install-redmod](./#how-to-install-redmod "mention")
 
 ### Wait, that's not what I want!
 
 * If you just want to turn it on, check [here](usage.md#activating-mods).
-* If you're looking for the log, check [`Cyberpunk 2077`](../the-cyberpunk-2077-game-directory/)`\ tools\redmod\bin\REDmodLog.txt`
+* If you're looking for the log, go to your [Cyberpunk 2077 game directory](../the-cyberpunk-2077-game-directory/) and find it under\
+  `tools\redmod\bin\REDmodLog.txt`
 * If you are a mod developer, check [redmod](../../../for-mod-creators-theory/modding-tools/redmod/ "mention")
 
-### I just want to know which to use!
+{% hint style="info" %}
+**I just want to know which to use!**
 
-Unless absolutely necessary, you don't want to use REDmod. It never took off, and most people stuck to the legacy format.
+Unless the mod author says otherwise, do **not** use REDmod.
+{% endhint %}
 
 ## What is REDmod, and what does it do?
 
@@ -30,19 +36,18 @@ But REDmods come **second** in [load order](../load-order.md). The easiest way t
 
 REDmod is a **modding framework** with a set of command line **tools** to **precompile** mods before launch.&#x20;
 
-During game launch, the modded content will be **added** to the game's overall code. Your in-game **loading screens** will be much **faster**.
+**If you don't speak Netrunner:** \
+During game launch, the modded content will be **added** to the game's regular file. Your in-game **loading screens** will be much **faster**.
 
 ### When do I need it?
 
 {% hint style="info" %}
-Unless the Nexus page **explicitly tells you** that it's REDmod only, assume that you don't.&#x20;
+Unless the Nexus page **explicitly tells you** that it's REDmod only (or you are **making** a mod), assume that you don't.&#x20;
 {% endhint %}
 
-As of September 2024, the only thing we can't do without REDmod is **adding new sounds** (replacing existing sounds is fine).&#x20;
+As of September 2024, the only thing we can't do without REDmod is **adding new sounds** (replacing existing sounds is fine). The [Audioware](https://www.nexusmods.com/cyberpunk2077/mods/12001) mod attempts to mitigate that.
 
-The [Audioware](https://www.nexusmods.com/cyberpunk2077/mods/12001) mod attempts to mitigate that,
-
-## Installation
+## How to install REDmod
 
 REDmod is shipped as free DLC with the game. You need to add it inside the platform store (GOG, Steam, Epic). You can click the link below, or find more detailed instructions further down on the page.
 
