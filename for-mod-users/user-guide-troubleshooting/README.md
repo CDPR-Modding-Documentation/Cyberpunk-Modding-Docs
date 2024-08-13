@@ -53,6 +53,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
 * [Press \[none\] to continue / can't skip loading screen](./#press-none-to-continue-cant-skip-loading-screen)
 * [You have audio issues](./#audio-problems)
 * [You have trouble with CET (Cyber Engine Tweaks)](./#mod-isnt-working-cet)
+  * [CET is not starting](./#cet-isnt-starting)
   * [You forgot your CET keybind](./#you-forgot-your-cet-keybind)
 * [XML Document parsed with errors](./#xml-document-parsed-with-errors)
 * [You're naked](./#im-naked)
@@ -1055,6 +1056,11 @@ According to InputLoader's [documentation](https://www.nexusmods.com/cyberpunk20
 (You can also try reinstalling InputLoader and hope that the error goes away)
 
 <figure><img src="../../.gitbook/assets/troubleshooting_headers_everything_else.png" alt=""><figcaption></figcaption></figure>
+
+## CET isn't starting
+
+CET needs **at least** VisualC 14.40.33810.0 . You can download it from the official Microsoft website \
+([direct link](https://aka.ms/vs/17/release/vc\_redist.x64.exe))
 
 ## You forgot your CET keybind&#x20;
 
