@@ -52,7 +52,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
 * [Photomode screenshots are borked](./#photomode-screenshots-are-blank)
 * [Press \[none\] to continue / can't skip loading screen](./#press-none-to-continue-cant-skip-loading-screen)
 * [You have audio issues](./#audio-problems)
-* [You have trouble with CET (Cyber Engine Tweaks)](./#mod-isnt-working-cet)
+* [You have trouble with CET (Cyber Engine Tweaks)](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/getting-started/installing/troubleshooting)
   * [CET is not starting](./#cet-isnt-starting)
   * [You forgot your CET keybind](./#you-forgot-your-cet-keybind)
 * [XML Document parsed with errors](./#xml-document-parsed-with-errors)
