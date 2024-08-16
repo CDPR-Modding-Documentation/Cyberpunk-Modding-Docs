@@ -4,27 +4,34 @@ description: How to merge two or more existing tattoos
 
 # Merging existing tattoos
 
-#### Summary
+## Summary
 
 **Published**: Feb 03 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), initial guide by Yggnire\
 **Last documented edit**: 18 May 2024 by YoursTrulyBilly
 
-This guide will teach you how to merge multiple tattoos into one. It will not cover the process of[converting-between-tattoo-frameworks](../../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/ "mention").
+This guide will teach you how to merge multiple tattoos into one.&#x20;
 
-For this example, we'll be merging two **VTK** tattoos from [Belly Tattoos Pack](https://www.nexusmods.com/cyberpunk2077/mods/9246) and [Low Back Tattoo Pack](https://www.nexusmods.com/cyberpunk2077/mods/14557) by [Yggnire](https://www.nexusmods.com/cyberpunk2077/users/54960262), specifically these two files.&#x20;
+For this example, we'll be merging two **VTK** tattoos from [Belly Tattoos Pack](https://www.nexusmods.com/cyberpunk2077/mods/9246) and [Low Back Tattoo Pack](https://www.nexusmods.com/cyberpunk2077/mods/14557) by [Yggnire](https://www.nexusmods.com/cyberpunk2077/users/54960262)
 
-<figure><img src="../../../../.gitbook/assets/Screenshot 2024-05-18 150531.png" alt=""><figcaption></figcaption></figure>
+### Wait, this is not what I want!
+
+* If you are looking for the body layouts, check [converting-between-tattoo-frameworks](../../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/ "mention") -> [#texture-layouts](../../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/#texture-layouts "mention")
+* For a more detailed guide with illustrated steps, check [how-to-create-an-overlay-tattoo.md](../how-to-create-an-overlay-tattoo.md "mention"). You can use that guide for reference.
+* If you want additional information, check [converting-between-tattoo-frameworks](../../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/ "mention").
 
 ### Level of difficulty: Easy
 
 The guide is extremely detailed and has screenshots for each step!
 
-#### Required previous knowledge:
+#### Requirements:
 
 * **The ability to read**: mandatory, because I'm not gonna lie — this is gonna be difficult otherwise.
 * **Knowing how to edit images**: recommended, because this guide will not cover it. If you don't know it, the relevant section will tell you what to Google, though
+* The following two tattoo mods (kindly provided by [Yggnire](https://www.nexusmods.com/cyberpunk2077/users/54960262)):
 
-#### Expected time to complete:
+<figure><img src="../../../../.gitbook/assets/Screenshot 2024-05-18 150531.png" alt=""><figcaption></figcaption></figure>
+
+### Expected time to complete:
 
 <1h for total noobs, <15 minutes if you know what you're doing.
 
@@ -32,7 +39,7 @@ The guide is extremely detailed and has screenshots for each step!
 
 * [ ] You have [Wolvenkit installed](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download).
 * [ ] You have all tattoo mods that you want to merge installed in `Cyberpunk 2077\archive\pc\mod`
-* [ ] All your tattoo mods are for the same framework (if not, check the guide about [converting-between-tattoo-frameworks](../../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/ "mention") and do that first).
+* [ ] All your tattoo mods are for the same framework (if not, check the guide about [how-to-create-an-overlay-tattoo.md](../how-to-create-an-overlay-tattoo.md "mention")).
 
 {% hint style="info" %}
 To see which files you need to edit, check this: [overlay-list.md](../converting-between-tattoo-frameworks/overlay-list.md "mention").

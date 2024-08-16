@@ -13,4 +13,5 @@ This page collects information on making custom skins, tattoos and scars for V a
 
 Please check the nested pages in the Wiki's browser for more information, or click the "Next" button at the bottom of the page.
 
-If you want to [sign up and edit it](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7), you are more than welcome!
+If you want to [sign up and edit](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7), you are more than welcome!
+

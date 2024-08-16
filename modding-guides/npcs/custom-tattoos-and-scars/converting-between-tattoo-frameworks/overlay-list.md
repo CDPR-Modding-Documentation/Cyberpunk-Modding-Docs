@@ -26,21 +26,7 @@ The body file of KS\_UV contain the Torso, Back, Legs and Arms parts\
 The body file of VTK contain Torso, Back and Legs parts
 {% endhint %}
 
-| Framework | Overlay name                         | gender/body part              |
-| --------- | ------------------------------------ | ----------------------------- |
-| KS\_UV    | fullbody\_overlay\_d01               | female  body (see note above) |
-|           | ma\_fullbody\_overlay\_d01           | male  body (see note above)   |
-|           | wa\_head\_overlay\_d01               | female head                   |
-|           | ma\_head\_overlay\_d01               | male head                     |
-|           |                                      |                               |
-| VTK Femme | v\_overlay                           | female body (see note above)  |
-|           | femme\_arm\_left\_01\_overlay        | female left arm               |
-|           | femme\_arm\_right\_01\_overlay       | female right arm              |
-|           | h0\_001\_pwa\_c\_\_basehead\_overlay | female head                   |
-|           |                                      |                               |
-| VTK Male  | v\_masc\_overlay                     | male body (see note above)    |
-|           | masculine\_arm\_left\_01\_overlay    | male left arm                 |
-|           | masculine\_arm\_right\_01\_overlay   | male right arm                |
+<table><thead><tr><th width="159">Framework</th><th>Overlay name</th><th>gender/body part</th></tr></thead><tbody><tr><td>KS_UV</td><td>fullbody_overlay_d01 </td><td>female  body (see note above)</td></tr><tr><td></td><td>ma_fullbody_overlay_d01 </td><td>male  body (see note above)</td></tr><tr><td></td><td>wa_head_overlay_d01 </td><td>female head </td></tr><tr><td></td><td>ma_head_overlay_d01 </td><td>male head </td></tr><tr><td></td><td></td><td></td></tr><tr><td>VTK Femme</td><td>v_overlay</td><td>female body (see note above)</td></tr><tr><td></td><td>femme_arm_left_01_overlay</td><td>female left arm </td></tr><tr><td></td><td>femme_arm_right_01_overlay</td><td>female right arm </td></tr><tr><td></td><td>h0_001_pwa_c__basehead_overlay</td><td>female head </td></tr><tr><td></td><td></td><td></td></tr><tr><td>VTK Masc</td><td>v_masc_overlay</td><td>male body (see note above)</td></tr><tr><td></td><td>masculine_arm_left_01_overlay</td><td>male left arm </td></tr><tr><td></td><td>masculine_arm_right_01_overlay</td><td>male right arm </td></tr></tbody></table>
 
 ### KS-UV  Femme path:&#x20;
 
