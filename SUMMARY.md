@@ -337,6 +337,7 @@
     * [Shadow mesh](modding-guides/vehicles/problems-and-resolution/shadow-mesh.md)
     * [vehicle taillight](modding-guides/vehicles/problems-and-resolution/vehicle-taillight.md)
     * [Hand position on steering wheel](modding-guides/vehicles/problems-and-resolution/hand-position-on-steering-wheel.md)
+  * [Chassis Modifications](modding-guides/vehicles/chassis-modifications.md)
 * [🌐 World Editing](modding-guides/world-editing/README.md)
   * [World Editing: deleting objects](modding-guides/world-editing/world-editing-deleting-objects.md)
   * [Editing locations in Blender](modding-guides/world-editing/editing-locations-in-blender.md)
