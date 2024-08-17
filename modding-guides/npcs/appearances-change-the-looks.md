@@ -9,7 +9,9 @@ description: Changing an NPC's default appearances (and adding more via AMM)
 **Published** December 27 2022 by @manavortex \
 **Last documented update:** January 06 2024 by @manavortex
 
-This guide will walk you through **editing NPC appearances** for Cyberpunk 2077.
+This guide will walk you through **editing NPC appearances** for Cyberpunk 2077.&#x20;
+
+You can find a more detailed guide under [altering-appearances-within-wolvenkit-full-workflow.md](altering-appearances-within-wolvenkit-full-workflow.md "mention")
 
 **It uses the following versions:**
 

@@ -6,32 +6,31 @@ description: >-
 
 # Altering Appearances within Wolvenkit - Full Workflow
 
-**Created & Published**: December 26 2023 by **@madmaximusjb**
+## **Summary**
 
-<details>
+**Created**: December 26 2023 by **@madmaximusjb**  \
+**Last documented edit:** August 17 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-<summary>This guide relies heavily on a few other resources, take a look here:</summary>
+This guide will edit Viktor's body and clothing: he's an ex-boxer, he should be more muscular!&#x20;
 
-[Appearances: change the looks](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/npcs/appearances-change-the-looks#wait-this-isnt-what-i-want)\
-[Creating a Mod](https://wiki.redmodding.org/wolvenkit/getting-started/creating-a-mod)\
-[Exporting Characters to Blender](https://wiki.redmodding.org/wolvenkit/modding-community/exporting-to-blender)\
-[Refit Clothes Easily](https://youtu.be/RK3AAfOHh40?si=2LWG72v\_aVHjhr2b)
+In the process, you'll learn the following things:
 
-</details>
+* Locating an NPC's files
+* Editing a body in Blender
+* refitting a clothing item in Blender
 
-**For this guide, I'm using versions:**
+[Creating a Mod](https://wiki.redmodding.org/wolvenkit/getting-started/creating-a-mod) in Wolvenkit will not be covered by this guide.
 
-Wolvenkit -> 8.11.2 Nightly
+### Wait, that's not what I want!
 
-Blender -> 3.6
+* If you just want the quick and dirty version, check [appearances-change-the-looks.md](appearances-change-the-looks.md "mention")
+* Or maybe you only care about [Exporting Characters to Blender](https://wiki.redmodding.org/wolvenkit/modding-community/exporting-to-blender)
 
-Cyberpunk Blender Add-On -> 1.5.2
+## Required tools
 
-### Requirements
-
-* Blender
-* Wolvenkit
-* Blender Add-On
+* The [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention")
+* Blender (the version that is compatible with the plugin)
+* Wolvenkit [stable](https://github.com/WolvenKit/Wolvenkit/releases) | [nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) ([Which one do you need?](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download#which-version-do-i-want))
 
 ***
 
@@ -39,9 +38,51 @@ Hey choombas! Today we're going to be going over the entire workflow of modifyin
 
 ## Locating the .app File
 
-The first step in this process is going to be locating the .app file. Most main characters have their .app file located in the folder "base\characters\appearances\main\_npc," but if you're modifying a side character or a character that you can't find the .app file for, you should look for their .ent file, which will point you in the direction of their .app file. Most .ent files are located at "base\characters\entities".
+The .app file lists the NPC's **components**, so everything that the game will add to them. This section will tell you how to find either the `.app` file directly, or an `.ent` file that leads to it.
 
-For us, we'll be wanting to locate victor\_vektor.app, which is in the main\_npc folder I listed earlier. Once we add this file to our project and open it, we will see an array named "appearances".
+### By .ent file
+
+Entity files are using the `.app` files, so you can find them from there. For instructions on how to find them, just keep reaidng.
+
+<figure><img src="../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
+
+#### Wiki
+
+Under [people.md](../../for-mod-creators-theory/references-lists-and-overviews/people.md "mention"), you can find a bunch of paths. If you're lucky, then your character is on that list.
+
+#### From the entity folder
+
+Almost all entity files are in the following folder:
+
+```
+base\characters\entities
+```
+
+#### Via Wolvenkit Search
+
+Type something like `character > .ent` in the Wolvenkit Search Bar and scroll a lot, or click on [this link](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to learn more
+
+### By folder
+
+Most main characters have their .app files here:
+
+```
+base\characters\appearances\main_npc
+```
+
+### Via Wolvenkit Search
+
+Type something like `character > .app` in the Wolvenkit Search Bar and scroll a lot, or click on [this link](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to learn more
+
+## Understanding the .app file
+
+{% hint style="info" %}
+You can read more about this under [appearance-.app-files](../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files/ "mention"), but you don't have to.
+{% endhint %}
+
+For us, we'll be wanting to locate victor\_vektor.app, which is in the main\_npc folder I listed earlier.&#x20;
+
+Once we add this file to our project and open it, we will see an array named "appearances".
 
 <figure><img src="../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
 
@@ -49,35 +90,64 @@ All of the different appearances for Victor are located in this array. Upon expa
 
 <figure><img src="../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 
-We'll be editing the default appearance in this guide. But the principle is the same. Next we will open the default appearance and then open the "components" array. This is where all of the components for that appearance are stored. Clothes, body meshes, hair meshes, etc.&#x20;
+{% hint style="info" %}
+We'll edit the **default appearance** in this guide, but the process is the same for all of them, or even [creating new appearances](amm-custom-npcs/).
+{% endhint %}
+
+Open the default appearance and then the `Components` array. This is where all of the components for that appearance are stored: clothes, body meshes, hair meshes, etc.&#x20;
 
 <figure><img src="../../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
 
-As you can see, there are quite a lot to sort through. Don't worry though, most of these things you won't have to mess with anyway.
+As you can see, there are quite a lot to sort through. Don't worry, most of these things you won't have to mess with anyway.
 
 {% hint style="info" %}
-A quick tip: most of these components are prefaced by something like t0 or l1. Here's what that means: t=torso (t0 is usually the body mesh, t1 is usually clothes), l=legs, h=head, s=shoe.
+A quick tip: most of these components are prefaced by something like t0 or l1. Here's what that means: t=torso (t0 is usually the body mesh, t1 is usually clothes), l=legs, h=head, s=shoe.\
+For more information, read [here](../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/#component-prefixes) — you don't have to.
 {% endhint %}
 
-Since we want to modify the body mesh and his shirt, here are the components we'll want to modify: "t0\_001\_ma\_body\_\_ripper\_doc6245" (body mesh) and "t1\_001\_ma\_full\_\_ripper\_doc1487" (shirt). We'll start with the body mesh.
+Here are the components for body and shirt: "t0\_001\_ma\_body\_\_ripper\_doc6245" (body mesh) and "t1\_001\_ma\_full\_\_ripper\_doc1487" (shirt).&#x20;
+
+We'll start with the body mesh.
 
 ## Modifying the Body Mesh
 
-To modify the body mesh, we'll export it to Blender. First, add the mesh file to your project. The mesh file can be found and added by expanding the component and clicking the yellow arrow next to the mesh file.
+To modify the body mesh, we'll export it to Blender.&#x20;
 
-<figure><img src="../../.gitbook/assets/image (142).png" alt=""><figcaption></figcaption></figure>
+First, add the mesh file to your project by clicking on the yellow arrow next to the mesh file's path:&#x20;
 
-Next, we want to export the file out of Wolvenkit to enable us to edit the mesh in Blender, since right now, the file is in a format Blender can't read. To export the file, go to your toolbar on the top, click on "Tools" and then "Export Manager". Once that's open, you'll want to check the box next to your body mesh and click "Export Selected".
+<figure><img src="../../.gitbook/assets/image (142).png" alt=""><figcaption><p>Alternatively, you can also copy the path, put it into the search bar, and add it by double-clicking.</p></figcaption></figure>
+
+Next, we want to export the file out of Wolvenkit to enable us to edit the mesh in Blender, since right now, the file is in a format Blender can't read.
+
+### Exporting the body mesh
+
+{% hint style="info" %}
+You can find step-by-step instructions under the plugin's [import/export page ](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes)
+{% endhint %}
+
+To export the .mesh into something that Blender can read, find the [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-workflow-documentation).&#x20;
+
+Once that's open, check the box next to your body mesh and click "Export Selected".
 
 <figure><img src="../../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
 
-Now, your file can be read and modified by Blender. Open up Blender (make sure you have the CP Add-On installed), and once you have a fresh project open (delete everything, camera and light included), click on "File>Import>Cyberpunk GLTF". Locate your project folder, then find your mesh file in "raw". It'll probably be somewhere like "Ripperdoc\_Tutorial\source\raw\base\characters\main\_npc\ripper\_doc". Import it.
+### Importing it into Blender
+
+{% hint style="warning" %}
+You need to have the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") installed for this!
+{% endhint %}
+
+Open up Blender, delete everything from the default project, and click on "File>Import>Cyberpunk GLTF".&#x20;
+
+Locate your project folder, then find your mesh file in your project's [raw section](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw). It'll probably be somewhere like "Ripperdoc\_Tutorial\source\raw\base\characters\main\_npc\ripper\_doc".&#x20;
+
+Import it.
 
 <figure><img src="../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
 
 If all went well, you should see a blank body mesh in your viewport.
 
-<figure><img src="../../.gitbook/assets/image (166).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (166).png" alt=""><figcaption><p>Who'd have thought? Vik is a ken doll. As a ripperdoc, he probably keeps his junk in the trunk.</p></figcaption></figure>
 
 To edit this mesh, there are two ways to do it. You can use edit mode to edit specific vertices, or use sculpt mode if you prefer. We're going to use edit mode. Make sure you have your mesh selected, and enter edit.&#x20;
 
@@ -114,6 +184,10 @@ Keep in mind that instead of modifying the mesh in the game files, you could hav
 {% endhint %}
 
 ## Modifying the Clothes
+
+{% hint style="info" %}
+For more intel about clothes refitting, check [Refit Clothes Easily](https://youtu.be/RK3AAfOHh40?si=2LWG72v\_aVHjhr2b)
+{% endhint %}
 
 The first thing we want to do is find the piece of clothing that we want to edit within the .app file. For us, that's "t1\_001\_ma\_full\_\_ripper\_doc1487". Let's export it using the same process as with the body mesh (remember to add it to your project before trying to export it).
 
