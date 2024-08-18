@@ -52,9 +52,7 @@ Example:
 
 <figure><img src="../../../.gitbook/assets/image3 (1).png" alt=""><figcaption></figcaption></figure>
 
-Note: Headlights also require Vertex Paint; coloring them to black should be appropriate for most situations
-
-For lights like brakes, you need to edit the vertex paint in **blender**. Select the light emitting object in **blender** and change into **Vertex Paint** mode. \
+For lights like brakes, headlights, or reverse lights - you need to edit the vertex paint in **Blender**. Select the light emitting object in **blender** and switch to "**Vertex Paint"** mode. \
 Example:
 
 <figure><img src="../../../.gitbook/assets/image72.png" alt=""><figcaption></figcaption></figure>
@@ -63,12 +61,20 @@ Set the color to one that enables the brake behavior, for brakes this is red in 
 
 <figure><img src="../../../.gitbook/assets/image166.png" alt=""><figcaption></figcaption></figure>
 
+You must use these specific hex colors for lights to be activated properly:
+
+* Headlights: `#7C0101`&#x20;
+* Taillights: `#e7010`
+* Reverse lights: `#cb0000`
+
+
+
 Use the **Draw tool** in **Vertex Paint** mode to draw on the color to the entire part. \
 Example:
 
 <figure><img src="../../../.gitbook/assets/image68.png" alt=""><figcaption></figcaption></figure>
 
-Brake lights should now be fully working.
+Lights should now be fully working.
 
 
 
