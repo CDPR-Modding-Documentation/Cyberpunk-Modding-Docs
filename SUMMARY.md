@@ -40,6 +40,8 @@
   * [MLSETUP Builder](for-mod-creators-theory/modding-tools/mlsetup-builder/README.md)
     * [The MLSB library search](for-mod-creators-theory/modding-tools/mlsetup-builder/the-mlsb-library-search.md)
   * [RedHotTools](for-mod-creators-theory/modding-tools/redhottools/README.md)
+    * [RHT: The world inspector](for-mod-creators-theory/modding-tools/redhottools/rht-the-world-inspector.md)
+    * [RHT: Ink Inspector](for-mod-creators-theory/modding-tools/redhottools/rht-ink-inspector.md)
     * [RHT: Hot Reload](for-mod-creators-theory/modding-tools/redhottools/rht-hot-reload.md)
   * [REDmod for mod devs](for-mod-creators-theory/modding-tools/redmod/README.md)
     * [Exporting Resources to Raw Formats](for-mod-creators-theory/modding-tools/redmod/exporting-resources-to-raw-formats/README.md)

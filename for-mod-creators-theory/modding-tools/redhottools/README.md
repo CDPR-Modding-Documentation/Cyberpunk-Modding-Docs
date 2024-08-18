@@ -4,69 +4,45 @@ description: psiberx's RedHotTools - a powerful utility for better mod developme
 
 # RedHotTools
 
+## Summary
+
+**Created:** Jun 13 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** Aug 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page will give you an overview about psiberx's mod **RedHotTools**, give you an [#installation-guide](./#installation-guide "mention"), and link you to more detailed documentation on the sub-pages.
+
+## What does it do?
+
+Integrated with Cyber Engine Tweaks, Wolvenkit and VisualStudio Code, RHT offers an invaluable toolikit for mod developers:
+
+<figure><img src="../../../.gitbook/assets/rht_settings.png" alt=""><figcaption></figcaption></figure>
+
+### World Inspector
+
+This CET widget lets you inspect the world around you, as well as the player and their equipment. Read more about it under [rht-the-world-inspector.md](rht-the-world-inspector.md "mention")
+
+### Ink inspector
+
+This CEt widget lets you inspect the game's interface. Read more about it under [rht-ink-inspector.md](rht-ink-inspector.md "mention")
+
+### Hot Reload
+
+This feature allows reloading mod files without restarting the game. You can use the CET widget to trigger it at any time, or rely on the integration with WolvenKit.
+
+For more information, read [rht-hot-reload.md](rht-hot-reload.md "mention")
+
+#### Script checking
+
+This feature is enabled automatically
+
+* See scripts validation and binding errors
+* Prevent game from starting if scripts compilation fails
+
 ## Installation guide
 
 You can download RedHotTools on [psiberx's github](https://github.com/psiberx/cp2077-red-hot-tools/releases):
 
 <figure><img src="../../../.gitbook/assets/install_redhottools.png" alt=""><figcaption></figcaption></figure>
 
-To install it, extract both downloaded files directly into your Cyberpunk 2077 game directory.
+To install it, extract both downloaded files **directly** into your [Cyberpunk 2077 game directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/).
 
-## What does it do?
-
-Integrated with Cyber Engine Tweaks, Wolvenkit and VisualStudioCode, it offers the following features:
-
-### Hot Reload
-
-RHT can reload archives, scripts and tweaks for you at runtime without having to restart the game.
-
-For documentation on how to do this, check [rht-hot-reload.md](rht-hot-reload.md "mention")
-
-### Script checking
-
-* See scripts validation and binding errors
-* Prevent game from starting if scripts compilation fails
-
-## Game object inspection
-
-With the RHT overlay for Cyber Engine Tweaks, you can inspect game objects at runtime:
-
-### Inspect
-
-Here, you can inspect world nodes and their properties:
-
-<figure><img src="../../../.gitbook/assets/rht_inspect_tab.png" alt=""><figcaption></figcaption></figure>
-
-### Scan
-
-Here, you can scan for any nodes around you:
-
-<figure><img src="../../../.gitbook/assets/rht_scan_tab.png" alt=""><figcaption></figcaption></figure>
-
-If you expand the node properties, you can simply hide them at run-time, or use the integration with [Removal Editor](https://github.com/justarandomguyintheinternet/CP77\_removalEditor) to create permanent presets:
-
-<figure><img src="../../../.gitbook/assets/rht_toggle_node.png" alt=""><figcaption></figcaption></figure>
-
-### Lookup
-
-Reverse search of world nodes and spawned entities
-
-<figure><img src="../../../.gitbook/assets/rht_lookup_tab.png" alt=""><figcaption></figcaption></figure>
-
-## Inspecting chunkmasks
-
-RedHotTools lets you look up chunk masking of existing items at runtime.
-
-{% hint style="info" %}
-You can inspect chunkmasks of player or NPC equipment via AppearanceCreatorMod; check [submeshes-materials-and-chunks.md](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention") -> [#acm](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#acm "mention") for details.
-{% endhint %}
-
-### Components
-
-For player or NPC clothing, you can use the Watch tab. Find the component in the corresponding puppet's component array:
-
-<figure><img src="../../../.gitbook/assets/red_hot_tools_inspect_chunkmasks.png" alt=""><figcaption></figcaption></figure>
-
-### Entities
-
-TBD
