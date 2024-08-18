@@ -58,19 +58,25 @@ To be done
 
 ### Archives
 
-Here, you can manually trigger a reload. This should never be necessary.
+Here, you can manually trigger a reload.&#x20;
+
+_Wolvenkit should do this for you — if not, please_ [_write a ticket_](https://github.com/WolvenKit/Wolvenkit/issues)_!_
 
 <figure><img src="../../../.gitbook/assets/rht_hot_reload__archives.png" alt=""><figcaption></figcaption></figure>
 
 ### Scripts
 
-Here, you can manually trigger a reload. This should never be necessary.
+Here, you can manually trigger a reload.&#x20;
+
+_You can do this via by running "Hot Reload Scripts" from Visual Studio Code_
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ### Tweaks
 
-Here, you can manually trigger a reload. This should never be necessary.
+Here, you can manually trigger a reload.&#x20;
+
+_You can do this via by running "Hot Reload Scripts" from Visual Studio Code_
 
 <figure><img src="../../../.gitbook/assets/rht_hot_reload__tweaks.png" alt=""><figcaption></figcaption></figure>
 
