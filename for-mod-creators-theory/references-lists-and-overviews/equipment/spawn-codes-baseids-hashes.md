@@ -50,12 +50,16 @@ Usually, the base ID consists of two parts: the item name, and the item's appear
 
 ### Step 2: Finding the .app file
 
+{% hint style="info" %}
+If you can't find any files with the method below, scroll to [#alternative-methods-of-finding-an-item](spawn-codes-baseids-hashes.md#alternative-methods-of-finding-an-item "mention") at the bottom of this guide before proceeding.
+{% endhint %}
+
 1. Open WolvenKit and use the Asset Browser to search for the item's app file:\
    `vest_17 > .app`
 
 <figure><img src="../../../.gitbook/assets/spawn_codes_finding_app.png" alt=""><figcaption><p>Search WolvenKit for the first part of the BaseID</p></figcaption></figure>
 
-2. You will find the item's .app file, where its appearances are defined. \
+2. You should now have at least one .app file, where the item's appearances are defined..\
    _To learn more about this, check_ [appearance-.app-files](../../files-and-what-they-do/appearance-.app-files/ "mention")_. This is not necessary for this guide._
    * If you have more than one file, hover over them to view their file paths, and pick the one that's inside a `player` folder.&#x20;
    * If you can't find any files, check [#alternative-methods-of-finding-an-item](spawn-codes-baseids-hashes.md#alternative-methods-of-finding-an-item "mention") below.
@@ -88,10 +92,6 @@ Now that you've found your mesh, you can **edit** it.&#x20;
 
 Some items don't obey [#the-naming-scheme](spawn-codes-baseids-hashes.md#the-naming-scheme "mention"), for example `Q005_Johnny_Pants`. So how can you find these kinds of items?
 
-### The Wolvenkit Search
-
-Depending on what you are looking for, you can check [Wolvenkit Search: Finding files](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files "mention") and dig directly for the mesh file. This might be tedious, but you'll also discover a lot of things on the way, so it's definitely worth a try!
-
 ### The Tweak Browser
 
 1. Find and open the [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser) and wait for it to initialize. \
@@ -105,6 +105,10 @@ Depending on what you are looking for, you can check [Wolvenkit Search: Finding 
 
 5. The appearance name will be something like `l1_pants_16_q005_johnny_`. Does this look familiar?
 6. Time to proceed with [#step-2-finding-the-.app-file](spawn-codes-baseids-hashes.md#step-2-finding-the-.app-file "mention")
+
+### The Wolvenkit Search
+
+Depending on what you are looking for, you can check [Wolvenkit Search: Finding files](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files "mention") and dig directly for the mesh file. This might be tedious, but you'll also discover a lot of things on the way, so it's definitely worth a try!
 
 
 
