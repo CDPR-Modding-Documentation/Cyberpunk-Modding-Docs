@@ -51,7 +51,11 @@ Please keep in mind that video guides might be outdated, as they are much more d
 
 **Estimated time: \~5 minutes for total noobs**, unless you get side-tracked badly
 
+{% hint style="warning" %}
 This process is detailed under [spawn-codes-baseids-hashes.md](../../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention") -> [#step-by-step](../../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#step-by-step "mention").&#x20;
+
+Make sure to follow it so you're editing the correct material!
+{% endhint %}
 
 1. Find the item's **mesh file path** and **appearance**. You should end up with something like this:
    * `base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.mesh`
@@ -63,7 +67,7 @@ This process is detailed under [spawn-codes-baseids-hashes.md](../../../../for-m
 
 {% hint style="info" %}
 To learn how appearances and materials connect, you can read [3d-objects-.mesh-files](../../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/ "mention"). \
-This is not necessary for the purpose of this guide.
+This is not necessary for this guide.
 {% endhint %}
 
 1. Open your mesh file in Wolvenkit by double-clicking it.&#x20;
