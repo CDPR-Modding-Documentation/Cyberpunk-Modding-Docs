@@ -57,11 +57,30 @@ This process is detailed under [spawn-codes-baseids-hashes.md](../../../../for-m
 Make sure to follow it so you're editing the correct material!
 {% endhint %}
 
-1. Find the item's **mesh file path** and **appearance**. You should end up with something like this:
-   * `base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.mesh`
-   * `bwstripes`
-2. Find your mesh in the Asset Browser
-3. Add it to your Wolvenkit Project (double-click or right-click -> Add to Project)
+### Find the item's **mesh file path** and **appearance** in the .app file:
+
+<figure><img src="../../../../.gitbook/assets/material_textures_mlsetup_guide_app_file.png" alt=""><figcaption><p>This file picks the mesh appearance</p></figcaption></figure>
+
+#### mesh.DepotPath:
+
+One per body gender (m/w), this is shared by all appearances (`basic_01`, `basic_02`, `rich_01`, `rich_02`). For the female vest, it's&#x20;
+
+`base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.mesh`
+
+#### meshAppearance:
+
+This picks the **appearance** from the mesh file, which you'll need for the next step. Here's how they connect:
+
+<table data-header-hidden><thead><tr><th width="188"></th><th></th></tr></thead><tbody><tr><td>basic_01</td><td>default</td></tr><tr><td>basic_02</td><td>bbstripes</td></tr><tr><td>rich_01</td><td>gbstripes</td></tr><tr><td>rich_02</td><td>pwstripes</td></tr></tbody></table>
+
+{% hint style="warning" %}
+Again, you can look these up in the .app file!
+{% endhint %}
+
+### Add the mesh to your project
+
+1. Find the file from mesh.DepotPath in your [Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser).&#x20;
+2. Add it to your Wolvenkit Project (double-click or right-click -> Add to Project)
 
 ## Step 1: Finding the correct material name
 
@@ -83,7 +102,13 @@ This is not necessary for this guide.
 
 <summary>Wait, I don't know which material I'm supposed to edit!</summary>
 
-If you don't know which submesh is the right one, click on "Mesh Preview" next to the red CMesh button, directly above the editor. This will take you to the preview tab, where you can switch chunks off and on by checking the corresponding box.
+To find the right appearance:
+
+Go back to [#step-0-finding-the-.mesh-and-the-appearance](changing-materials-colors-and-textures.md#step-0-finding-the-.mesh-and-the-appearance "mention") and look it up in the .app file
+
+**To find the right submesh:**
+
+Click on the "Mesh Preview" tab directly above the editor. Here, you can toggle submeshes on and off to see which is which.
 
 </details>
 
