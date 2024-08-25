@@ -4,7 +4,7 @@ description: >-
   your mods, and set up a mod manager
 ---
 
-# Getting Started
+# Getting Started: Installing Cyberpunk
 
 ## Summary
 
@@ -12,24 +12,23 @@ While it is possible to  install mods by hand (and many modders do in fact exact
 
 This guide will walk you through installing and configuring your game. If you have already done that, you can configure the mod manager of your choice:
 
-* How to install mods with[vortex-mod-manager.md](vortex-mod-manager.md "mention")
+* How to install mods with [vortex-mod-manager.md](vortex-mod-manager.md "mention")
 * How to configure [mo2-mod-organizer-2.md](mo2-mod-organizer-2.md "mention")
 
-#### Before you get started
+## Prerequisites
 
-Make sure you have all the required programs to operate mods and their managers; these are separate from modding framework requirements, but just as important.
-
-* [Visual C Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)&#x20;
-* [.NET 6.0+](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
-* [The latest graphics driver for your GPU](https://www.wikihow.com/Update-Your-Graphics-Driver)
-* If you are on Windows, [Windows 10 or above](https://www.wikihow.com/Install-Windows-10) and the latest [Windows Update](https://www.wikihow.com/Update-Windows)
-
-This guide assumes that you have already bought Cyberpunk 2077 on the platform of your choice (Steam, GOG or EPIC).
+* You have [**bought** Cyberpunk 2077](#user-content-fn-1)[^1] on the platform of your choice (Steam, GOG or EPIC)
+* You have the following things:
+  * [Visual C Redistributable 2022](https://aka.ms/vs/17/release/vc\_redist.x64.exe)
+  * [.NET 6.0+](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
+* You have updated the following things:
+  * [Your graphics card](https://www.wikihow.com/Update-Your-Graphics-Driver) driver
+  * The latest [Windows Update](https://www.wikihow.com/Update-Windows) for your operating system (checkout [modding-on-linux.md](../modding-on-linux.md "mention") if that's what you're doing)
 
 ## Installing the Game
 
 {% hint style="success" %}
-If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-gog)
+If you already have the game installed, you can skip this section and proceed with #configur
 {% endhint %}
 
 In order to set up your game to be best suited for mods, you'll want to keep a few things in mind:
@@ -84,6 +83,24 @@ Open GOG Galaxy, click on "Owned Games" in the left sidebar, and scroll until yo
 6. Press "Install"
 7. Wait until GOG has done it's thing, then proceed to the next section.
 
+### Installing Cyberpunk: Steam
+
+{% hint style="success" %}
+If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-steam)
+{% endhint %}
+
+To be done
+
+### Installing Cyberpunk: Epic
+
+{% hint style="success" %}
+If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-epic)
+{% endhint %}
+
+To be done
+
+## Configuring the game
+
 ### Configuring Cyberpunk: GOG
 
 Once the game has installed, we want to make it run with mods. Click the button to the right of the play button (formerly the install button) pictured below.
@@ -100,17 +117,7 @@ From there, select "Manage Installation" and then "Configure". A window will pop
 
 That's it, you are done with your install of the game! You can now move on to [installing Vortex](vortex-mod-manager.md).
 
-### Installing Cyberpunk: Steam
-
-{% hint style="success" %}
-If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-steam)
-{% endhint %}
-
-To be done
-
 ### Configuring Cyberpunk: Steam
-
-To be done
 
 * Navigate to _Cyberpunk 2077_
 * Click **Play**
@@ -118,14 +125,6 @@ To be done
 * Click **Play** (Do not skip this)
 
 That's it, you are done with your install of the game! You can now move on to [installing Vortex](vortex-mod-manager.md).
-
-### Installing Cyberpunk: Epic
-
-{% hint style="success" %}
-If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-epic)
-{% endhint %}
-
-To be done
 
 ### Configuring Cyberpunk: Epic
 
@@ -139,3 +138,12 @@ To be done
 That's it, you are done with your install of the game! You can now move on to [installing Vortex](vortex-mod-manager.md).
 
 You may now move on to mod manager and mod installation.
+
+## Starting to mod
+
+You now have the following options:
+
+* If you feel insecure about modding, follow the extremely detailed guide under [vortex-mod-manager.md](vortex-mod-manager.md "mention")
+* Otherwise, you can head to [..](../ "mention") and start reading on how to do this
+
+[^1]: .Pirated copies generally do not mod well.

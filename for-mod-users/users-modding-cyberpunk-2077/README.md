@@ -11,34 +11,34 @@ description: Modding your game, for users
 ## Summary
 
 **Published:** Jun 15, 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** May 29 2024, by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Aug 25 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page will teach you how to **install mods manually.**&#x20;
-
-* If you want to create mods instead, check the [Broken link](broken-reference "mention") section
-* If you need help installing Cyberpunk, check [getting-started](getting-started/ "mention")
-* If your modded install is acting up, please check [user-guide-troubleshooting](../user-guide-troubleshooting/ "mention")
+This page will give you a brief introduction of **how** mods work and how to install them by hand.
 
 {% hint style="danger" %}
-We strongly recommend using a mod manager. You have the following options (the links go to wiki pages with more information):
+We **strongly recommend** using a mod manager, as manual modding is only recommended for **advanced users**.
 
-[vortex-mod-manager.md](getting-started/vortex-mod-manager.md "mention") (Nexus Mod Manager)
+Here are your options (wiki links):
 
-[mo2-mod-organizer-2.md](getting-started/mo2-mod-organizer-2.md "mention") (known from e.g. Skyrim and Fallout)
-
-It is possible to mod your game fully manually (and in fact, many modders do exactly that), but you have to understand the stuff on this page.&#x20;
-
-Mod managers will save you from that effort.
+* [vortex-mod-manager.md](getting-started/vortex-mod-manager.md "mention")&#x20;
+* [mo2-mod-organizer-2.md](getting-started/mo2-mod-organizer-2.md "mention")&#x20;
 {% endhint %}
+
+### Wait, this is not what I want!
+
+* If you want to create mods instead, check [getting-started-making-mods.md](../../modding-guides/getting-started-making-mods.md "mention")
+* If you need help installing Cyberpunk, check [getting-started](getting-started/ "mention")
+* If your modded install is acting up, please check [user-guide-troubleshooting](../user-guide-troubleshooting/ "mention")
 
 ## How to install mods
 
 {% hint style="warning" %}
 **TL;DR:** Your mods will not work unless you
 
-* put all files into the right folders
-* make sure to install all [requirements](../user-guide-troubleshooting/requirements-explained.md) (and their requirements)
+* put all files **exactly** into the right place
+* make sure to install all [requirements](../user-guide-troubleshooting/requirements-explained.md) (and **their** requirements)
 * [enable REDmod](./#installing-and-activating-redmod)
+* If you are on Linux/Steam Deck: follow [this guide](modding-on-linux.md) to the letter
 
 When you fuck things up, hit up [#troubleshooting](./#troubleshooting "mention") or run [mod remover](https://www.nexusmods.com/cyberpunk2077/mods/8597/) and start over.
 
@@ -48,22 +48,6 @@ To see an [#overview-of-mod-folders](./#overview-of-mod-folders "mention"), scro
 ## How do I mod?
 
 You mod **Cyberpunk 2077** by adding files to your [**game directory**](the-cyberpunk-2077-game-directory/). The game natively supports modding, and the core mods will take care of everything else.
-
-{% hint style="success" %}
-The **game directory** is the toplevel folder of your game install.&#x20;
-
-Unless you changed the default settings, it will be installed to:
-
-**STEAM**\
-`C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077\`
-
-**GOG**\
-`C:\Program Files (x86)\GOG Galaxy\Games\Cyberpunk 2077\`
-
-**Epic**
-
-`C:\Program Files\Epic Games\Cyberpunk 2077\`
-{% endhint %}
 
 You can install mods by using [Vortex](https://www.nexusmods.com/about/vortex/)/[Mod Organizer 2](getting-started/mo2-mod-organizer-2.md), or by hand[.](https://github.com/JustThatKing/MO2077/blob/main/readme.md)
 
@@ -78,17 +62,26 @@ For more detailed information, see [requirements-explained.md](../user-guide-tro
 {% hint style="danger" %}
 TL;DR:&#x20;
 
-Unless a requirement is marked as optional, **your mod will not work** until you install all of them.&#x20;
+Unless a requirement is marked as optional, **your mod will not work** if it is not installed.
 
 Some requirements have requirements of their own. Make sure to check.
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/mod-requirements.png" alt=""><figcaption></figcaption></figure>
 
-Although Cyberpunk natively supports modding, this out-of-the-box support is limited. To allow greater freedom, a number of **core mods** have been created to allow e.g. adding items, influencing the weather, or add flying cars.
+## The core mods
+
+{% hint style="info" %}
+To learn more about this, check [core-mods-explained](../../for-mod-creators-theory/core-mods-explained/ "mention").
+{% endhint %}
+
+Cyberpunk 2077 offers limited out-of-the-box support via REDmod. To allow greater freedom, a number of **core mods** have been created — without them, we couldn't add items, influence the weather, or have flying cars.
 
 {% hint style="warning" %}
-Since this kind of mod interacts with the game's executable (`.exe`), they will break every time CDPR updates. This is the reason why game updates break mods — we recommend to [**turn off auto-update**](users-downgrading-preventing-auto-updates.md) and manually upgrading once the frameworks you need have been brought up-to-date. To learn more about this, check [core-mods-explained](../../for-mod-creators-theory/core-mods-explained/ "mention").
+Since this kind of mod interacts with the game's executable (`.exe`), they will break every time CDPR updates.&#x20;
+
+This is the reason why game updates break mods — we recommend to [**turn off auto-update**](users-downgrading-preventing-auto-updates.md) and only update your game once it's safe. \
+After each patch, you can find a post on our [Discord](https://discord.com/channels/717692382849663036/787431377809178624) that is kept up-to-date as the modders update their tools.
 {% endhint %}
 
 ### Overview of mod folders
@@ -141,7 +134,7 @@ If the mod contains only files inside the folder `archives`, you can un-REDmod-i
 
 ## Installing Mods
 
-You can install mods via [Vortex](getting-started/vortex-mod-manager.md) or [manually](./#manual-install). There are upsides and downsides to each — however, **for beginners,** [**we recommend using Vortex**](getting-started/vortex-mod-manager.md).
+You can install mods via mod manager ([Vortex](getting-started/vortex-mod-manager.md), [mo2](getting-started/mo2-mod-organizer-2.md)) or [manually](./#manual-install). There are upsides and downsides to each — however, **for beginners,** [**we recommend using Vortex**](getting-started/vortex-mod-manager.md).
 
 {% hint style="success" %}
 If you had terrible experiences with Vortex for other games, be assured: Cyberpunk integration is working extremely well. Maybe give it another chance?
@@ -165,14 +158,14 @@ If in doubt, install the non-REDmod (`"legacy"`) format. To learn why, check [#w
 
 &#x20;Here is how you can tell the two apart:
 
-| REDmod                                                                                                                    | Vanilla mod (packed correctly)                                                                                                                                                                                                                                                                                             |
-| ------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <p></p><p><img src="../../.gitbook/assets/installing-redmod-preview.png" alt="" data-size="original"></p>                 | <p></p><p><img src="../../.gitbook/assets/installing-gift-wrapping.png" alt="" data-size="original"></p>                                                                                                                                                                                                                   |
-| is in a folder named after the mod                                                                                        | might be inside an extra folder                                                                                                                                                                                                                                                                                            |
-| has an `info.json`                                                                                                        | does **not** have an `info.json`                                                                                                                                                                                                                                                                                           |
-| has a subfolder `archives` or `tweaks` at the top level                                                                   | <p>contains any of the folders<br>- <code>archive</code><br>- <code>bin</code><br>- <code>r6</code><br>with files nested under them</p>                                                                                                                                                                                    |
-| Is packed with one level of nesting (`info.json` is in top level folder)                                                  | Has multiple levels of nesting                                                                                                                                                                                                                                                                                             |
-| <p><strong>Manual install instructions:</strong> <br>Extract the folder ModName into <code>Cyberpunk 2077/mods</code></p> | <p><strong>Manual install instructions:</strong> <br><strong>T</strong>he folders <code>archive</code>, <code>bin</code>, <code>r6</code> from the download must merge with the same folders in your <a href="the-cyberpunk-2077-game-directory/">game directory</a> (do <strong>not</strong> put the bin in the bin).</p> |
+| REDmod                                                                                                                    | Vanilla mod (packed correctly)                                                                                                                                                                                                                                                                                                              |
+| ------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p></p><p><img src="../../.gitbook/assets/installing-redmod-preview.png" alt="" data-size="original"></p>                 | <p></p><p><img src="../../.gitbook/assets/installing-gift-wrapping.png" alt="" data-size="original"></p>                                                                                                                                                                                                                                    |
+| is in a folder named after the mod                                                                                        | may be in an extra folder if packed incorrectly                                                                                                                                                                                                                                                                                             |
+| has an `info.json`                                                                                                        | does **not** have an `info.json`                                                                                                                                                                                                                                                                                                            |
+| <p>contains a folder with any of</p><p>- <code>archives</code> </p><p>- <code>tweaks</code> </p>                          | <p>contains any of the folders<br>- <code>archive</code><br>- <code>bin</code><br>- <code>r6</code><br>with files nested under them</p>                                                                                                                                                                                                     |
+| Is packed with **one** level of nesting (`info.json` is in top level folder)                                              | Has multiple levels of nesting                                                                                                                                                                                                                                                                                                              |
+| <p><strong>Manual install instructions:</strong> <br>Extract the folder ModName into <code>Cyberpunk 2077/mods</code></p> | <p><strong>Manual install instructions:</strong> <br><strong>T</strong>he folders <code>archive</code>, <code>bin</code>, <code>r6</code> from the download must <strong>merge</strong> with the same folders in your <a href="the-cyberpunk-2077-game-directory/">game directory</a> (do <strong>not</strong> put the bin in the bin).</p> |
 
 #### What's the difference?
 
@@ -205,7 +198,7 @@ Some mods (especially older ones) are just a loose collection of files without a
 <figure><img src="../../.gitbook/assets/installing-other.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-To find out how to install, you have to read the **mod's install instructions**.&#x20;
+To find out how to install, you have to read the **mod's install instructions**. You can read the next section for a general overview of which files go where, but that is not guaranteed to work.
 {% endhint %}
 
 #### Mod folders by file extension

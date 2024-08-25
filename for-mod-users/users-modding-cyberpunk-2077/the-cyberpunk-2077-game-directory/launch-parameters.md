@@ -7,13 +7,17 @@ description: Launch parameters for Cyberpunk2077.exe (and what they do)
 ## Summary
 
 Created: Jun 17 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), based on research by [**emoose**](https://www.nexusmods.com/cyberpunk2077/mods/193)\
-Last documented update: Jun 17 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented update: Aug 25 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page lists all known launch parameters for the `Cyberpunk2077.exe`&#x20;
 
 {% hint style="danger" %}
 Just because the executable accepts these parameters doesn't mean that they do anything or were ever intended to.
 {% endhint %}
+
+### Wait, this is not what I want!
+
+* If you are trying to get your modded steam deck to work, check [modding-on-linux.md](../modding-on-linux.md "mention")
 
 ## Parameters
 
