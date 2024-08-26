@@ -39,9 +39,9 @@ It will walk you through the following:
 
 This guide assumes that you have an existing Wolvenkit project with your item and just want to add the decal mesh. If you don't have one, you can grab the template project from [archivexl-dynamic-variants.md](../adding-new-items/archivexl-dynamic-variants.md "mention").
 
-You should have an .xbm texture inside your Wolvenkit project for your decal, and a .png export of the decal that we'll use in Blender. If you don't have a texture, you can&#x20;
+Inside your Wolvenkit project, you need an .xbm texture for your decal, and its .png export that we'll use for Blender. If you don't have a texture yet, you can&#x20;
 
-1. copy any .xbm
+1. add any .xbm to your project (and put it in a custom path)
 2. [export it to png](../../textures-and-luts/images-importing-editing-exporting.md#exporting-a-texture)
 3. Replace this png with your decal
 4. [import the png](../../textures-and-luts/images-importing-editing-exporting.md#importing-a-texture) again (`premultiplyAlpha` must be checked)
