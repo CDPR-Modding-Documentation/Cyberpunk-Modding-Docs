@@ -32,7 +32,7 @@ The .dll files for CET and Red4Ext have to be **force loaded** or **installed ma
    1. `bin/x64/plugins/version.dll` (for Cyber Engine Tweaks)
    2. `bin/x64/winmm.dll` (for Red4Ext)
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Install the rest of your mods
 

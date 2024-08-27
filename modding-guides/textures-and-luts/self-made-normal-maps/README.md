@@ -255,12 +255,12 @@ This is a workaround and won't solve the problem. If you know how to fix this fo
 {% endhint %}
 
 Here is an example of the issue :\
-![](<../../../.gitbook/assets/image (9).png>)
+![](<../../../.gitbook/assets/image (9) (1).png>)
 
 Open the UV of your 3D model and select the vertices that are outside on the left of your UV
 
 \
-![](<../../../.gitbook/assets/image (1) (1).png>)\
+![](<../../../.gitbook/assets/image (1) (1) (1).png>)\
 
 
 <figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p><br>Press P and then click on Selection</p></figcaption></figure>

@@ -57,7 +57,7 @@ Set Viewport display to 'Wire'. You can change the opacity in viewport overlays 
 <img src="../../.gitbook/assets/image (3) (1) (1) (2).png" alt="" data-size="original">
 
 You can set 'Mean Vertex Crease to 1 on specific edge loops, if you want them to remain sharp while using a subdiv modifier.\
-![](<../../.gitbook/assets/image (10).png>)
+![](<../../.gitbook/assets/image (10) (1).png>)
 
 </details>
 
@@ -70,7 +70,7 @@ You can set 'Mean Vertex Crease to 1 on specific edge loops, if you want them to
 When building hair card meshes, you want bottom layers to be opaque, and surface layers to be progressively more transparent. The bottom layers will prevent the scalp from shining through, while the covering layers will provide a volumetric effect, and hide the sharp contours of high-alpha bottom layers.\
 \
 Here is an example of a hair texture. Notice multiple strands, which become more and more transparent the further to the right they are. \
-![](<../../.gitbook/assets/image (11).png>)
+![](<../../.gitbook/assets/image (11) (1).png>)
 
 There are multiple textures with similar density, this will introduce a bit of diversity and randomness. Hair tool is able to randomly distribute select UV boxes to a selection of cards, using UV tools which will be described later.
 
@@ -112,7 +112,7 @@ The order of deformers matters. They work from top to bottom, just like modifier
 
 </details>
 
-<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
 
 ## Step 1.3: Adding volume to the first layer
 
@@ -144,26 +144,26 @@ Add the following deformers:\
 
 <summary>Deformer settings and tips</summary>
 
-![](<../../.gitbook/assets/image (15).png>)
+![](<../../.gitbook/assets/image (15) (1).png>)
 
 The duplicate deformer will multiply each filtered curve, and distribute the children in a set radius. \
 Make sure to enable Even Thickness to prevent children clipping through eachother if generated on an angled surface.\
 \
 Distribution Shape value is 0 by default. A value closer to 1 will pull the generated curves closer to the parent, and a negative value will push them away toward the circumference of the radius. Here, a value of 0.2 resulted in nice layering toward the tips.
 
-![](<../../.gitbook/assets/image (17).png>)
+![](<../../.gitbook/assets/image (17) (1).png>)
 
 A duplicate deformer is often paired with a Clump deformer. This pulls the duplicated children toward their parent.
 
-![](<../../.gitbook/assets/image (18).png>)
+![](<../../.gitbook/assets/image (18) (1).png>)
 
 Attach to surface deformer will pull the roots of the curves toward the source surface. Make sure to personalize the input values on this deformer, they can vary significantly for each hairstyle. You want to avoid creating patches of clipping, as shown here:
 
-![](<../../.gitbook/assets/image (19).png>)![](<../../.gitbook/assets/image (20).png>)
+![](<../../.gitbook/assets/image (19) (1).png>)![](<../../.gitbook/assets/image (20) (1).png>)
 
 </details>
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (21) (1).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
 
 ## Step 1.4: Breaking up the perfection
 
@@ -179,10 +179,10 @@ Add the following deformers:\
 
 The Add Tilt deformer with a randomize input mask is capable of... you guessed it... adding... a random tilt... to individual strands...\
 Press the downward arrow right of the tilt value to randomize said value.\
-![](<../../.gitbook/assets/image (22).png>)
+![](<../../.gitbook/assets/image (22) (1).png>)
 
 For this hair, I will be using a fairly low random tilt, to have a straight, and neat hair look. For messier hairstyles, or more outside layers, a higher tilt value can be beneficial.\
-![](<../../.gitbook/assets/image (23).png>)
+![](<../../.gitbook/assets/image (23) (1).png>)
 
 You can mess with the flip seed to achieve a better result for specific strands, if needed.\
 \
@@ -192,7 +192,7 @@ Adding some random tilt can also help greatly when hair like this is viewed from
 
 The Noise Deform deformer is incredibly usefull for introducing some randomness to the curves.
 
-![](<../../.gitbook/assets/image (24).png>)
+![](<../../.gitbook/assets/image (24) (1).png>)
 
 
 
@@ -200,7 +200,7 @@ Both the random Tilt and Noise Deform deformers should be **below** the mirror d
 
 </details>
 
-<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25) (1).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
 
 ## Step 1.5: A quick preview
 
@@ -215,21 +215,21 @@ If you plan to use a custom shader or textures, read on.
 
 In the Profile menu, you can find 2 input fields, one for the material, one for UV Data.
 
-![](<../../.gitbook/assets/image (26).png>)\
+![](<../../.gitbook/assets/image (26) (1).png>)\
 
 
 When selecting a custom shader, this happens:
 
-![](<../../.gitbook/assets/image (27).png>)\
+![](<../../.gitbook/assets/image (27) (1).png>)\
 
 
 To fix this issue, copy the HTool\_UV node from the HT default material, and plug it into the image nodes in your custom shader.
 
-![](<../../.gitbook/assets/image (28).png>)
+![](<../../.gitbook/assets/image (28) (1).png>)
 
 Now, your UV's will most likely be completely messed up. To fix this, navigate to UV Editing workspace.
 
-![](<../../.gitbook/assets/image (29).png>)
+![](<../../.gitbook/assets/image (29) (1).png>)
 
 Press the Hair UV button in the top-right corner of the UV editor and follow the instructions to set up new UV boxes for your hair.
 

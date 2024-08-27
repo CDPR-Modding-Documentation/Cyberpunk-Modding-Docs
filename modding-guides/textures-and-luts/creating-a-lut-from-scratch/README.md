@@ -153,7 +153,7 @@ Drag on your exported file onto the NVTT window and tick off "Generate Mipmaps" 
 
 Turn on "Extract From Atlas" and set "Depth of Volume" to the exact size of your LUT that you set up when first creating it. To verify you got it right, you should see a Z slider on the top right of the NVTT interface. Drag it and see if there is any vertical shift in the texture. If there is not, you got it right.
 
-<figure><img src="../../../.gitbook/assets/image (28) (1).png" alt=""><figcaption><p>NVTT correctly set up with the RCM (Resolve Color Managed) LUT in it.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (28) (1) (1).png" alt=""><figcaption><p>NVTT correctly set up with the RCM (Resolve Color Managed) LUT in it.</p></figcaption></figure>
 
 Save as a DDS file (only DDS) and put it in the folder that was generated after you exported the XBM file at the start of the article.&#x20;
 

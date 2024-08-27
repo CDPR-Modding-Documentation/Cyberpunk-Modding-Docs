@@ -43,7 +43,7 @@ Attached images show settings i used to export base\characters\garment\citizen\_
 
 <figure><img src="../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (89).png" alt=""><figcaption><p>Isolated netwatch shirt dangle skeleton. The original dangle chain is selected. The spine column, and the duplicated and moved dangle chain are also visible.</p></figcaption></figure>
 
@@ -68,7 +68,7 @@ Here i set the value to 0, the animations work fine, but a correctly set value m
 
 
 
-<figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>Result</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (18) (1) (1).png" alt=""><figcaption><p>Result</p></figcaption></figure>
 
 Notice how editing the bone positions in the .rig also deformed/moved the mesh in-game. At least it's dangling nicely now, and it no longer explodes :copium:
 
@@ -80,7 +80,7 @@ In this case, I'm editing bones 79-83. The goal is to move each of them by -0.28
 \
 Open the .mesh in Wolvenkit and navigate to boneRigMatrices.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption><p>Not edited bone matrix of bone 79.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption><p>Not edited bone matrix of bone 79.</p></figcaption></figure>
 
 Next, open [https://matrixcalc.org/](https://matrixcalc.org/) and copy paste each of the entries of the bone matrix into the calculator. Then press inverse.&#x20;
 

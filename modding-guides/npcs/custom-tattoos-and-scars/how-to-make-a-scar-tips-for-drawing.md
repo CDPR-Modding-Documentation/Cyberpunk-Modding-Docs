@@ -38,7 +38,7 @@ I'm gonna do the scar on the normal map (bumpmap) first.
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (236).png" alt="" width="124"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (236).png" alt="" width="124"><figcaption></figcaption></figure>
 
 </div>
 
@@ -46,11 +46,11 @@ I'm gonna do the scar on the normal map (bumpmap) first.
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (235).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
-## Natural scar :&#x20;
+## Handmade scar :&#x20;
 
 I use a wet watercolors brush for the natural scar
 
@@ -60,7 +60,7 @@ Do the base of your scar :&#x20;
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (237).png" alt="" width="346"><figcaption><p>A simple line</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (237).png" alt="" width="346"><figcaption><p>A simple line</p></figcaption></figure>
 
 </div>
 
@@ -68,7 +68,7 @@ Then pimp it , you can erase or add some pieces to your scar with your brush
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (239).png" alt="" width="296"><figcaption><p>I have cut and add new parts on the scar to give a more random look</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (239).png" alt="" width="296"><figcaption><p>I have cut and add new parts on the scar to give a more random look</p></figcaption></figure>
 
 </div>
 
@@ -76,11 +76,11 @@ Now copy paste your scar and change the color to GREEN, place the layer below th
 
 {% tabs %}
 {% tab title="1" %}
-<figure><img src="../../../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Zoom" %}
-<figure><img src="../../../../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (243).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -88,13 +88,13 @@ Now copy paste your scar on the skin textures
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (244).png" alt="" width="177"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (244).png" alt="" width="177"><figcaption></figcaption></figure>
 
 </div>
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (245).png" alt="" width="283"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (245).png" alt="" width="283"><figcaption></figcaption></figure>
 
 </div>
 
@@ -102,13 +102,13 @@ Use the Pipette tools and take the skin color, use the "Lock Transparent Pixels"
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (248).png" alt="" width="336"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (248).png" alt="" width="336"><figcaption></figcaption></figure>
 
 </div>
 
@@ -120,15 +120,15 @@ In-game appearance
 
 {% tabs %}
 {% tab title="1" %}
-<figure><img src="../../../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (249).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="2" %}
-<figure><img src="../../../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="3" %}
-<figure><img src="../../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -136,108 +136,160 @@ In-game appearance
 
 
 
-## Cyberware scar :&#x20;
+## Baked Normal map scar
 
-I use a hard brush for the cyberware scar
+In this part of the tuto I will show you a different way to do a scars (with better in-game results)
 
-Do your base with the RED color
-
-<div align="left">
-
-<figure><img src="../../../../.gitbook/assets/image (252).png" alt="" width="375"><figcaption></figcaption></figure>
-
-</div>
-
-Surround the RED base with a GREEN outline&#x20;
+To begin you will need the diffuse map :&#x20;
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (253).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image.png" alt="" width="188"><figcaption></figcaption></figure>
 
 </div>
 
-The skin map scar appearance
+Draw your scar : I know this is not a simple scar if I have done this one, it's to show you what we can do with baked normal map.
 
 <div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (254).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="" width="375"><figcaption></figcaption></figure>
 
 </div>
 
-In-game appearance
+Save your scar as a .PNG.
+
+It's time for the baking part, you will need a bump map converter, I use [CrazyBump](https://www.youtube.com/watch?v=x\_5suERXhRw\&list=PLKC44ub7XfxmFwTiVLIvgcahWheRXiFGO) which is the best in my opinion I will teach you how to convert your diffuse map with Crazy Bump.
+
+Download it and when you are in , click on "Open photograph from file".&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Choose your png file of the diffuse map.
+
+<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+
+Choose a shape, personally I will pick the right one
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+Make those sliders slide the way you want and then "save normals to file"
+
+<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+Now you will need to go on WolvenKit, replace with "Replace Texture" your normal map with the new one you just baked.
+
+
 
 {% tabs %}
-{% tab title="1" %}
-<figure><img src="../../../../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
+{% tab title="Replace" %}
+<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
-{% tab title="2" %}
-<figure><img src="../../../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
+{% tab title="Result" %}
+<figure><img src="../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
-## Burn Scar :
+The image should turn green, if not, go in the "import tab" and select "TEXG\_Multilayer\_Normal"&#x20;
+
+<mark style="color:red;">**OR**</mark>  "TEXG\_Generic\_Normal" and import it, it should fix the problem.
+
+<figure><img src="../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+You can now "Save" the image&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+
+You can now open the saved file with your drawing software, and select the scar.
+
+<figure><img src="../../../.gitbook/assets/image (14).png" alt="" width="356"><figcaption></figcaption></figure>
+
+Copy and paste it on the normal map of the game
 
 
 
-I use a wet watercolor brush to make the Burn scar.
+{% tabs %}
+{% tab title="Copy paste" %}
+<figure><img src="../../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
 
-Do the base
+{% tab title="Rough Edges" %}
+<figure><img src="../../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
 
-<div align="left">
+{% tab title="Smoothen Edges" %}
+<figure><img src="../../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+{% endtabs %}
 
-<figure><img src="../../../../.gitbook/assets/image (220).png" alt="" width="300"><figcaption></figcaption></figure>
+You can see that the copy paste isn't smooth and have created rough edges, you will have to erase them with a smooth brushe.
 
-</div>
+When you are done with this part, you can save your file as a .PNG, keep it for later.
 
-Add the GREEN under the RED as always
 
-&#x20;![](<../../../../.gitbook/assets/image (221).png>)
 
-Then I add a new layer of RED and GREEN
+Now that the diffuse and the normal map are done , there remains one map to do, the roughness map.
 
-![](<../../../../.gitbook/assets/image (222).png>)
+**`Note that the roughness map is not really necessary for creating the scar BUT it brings more realism to it.`**
 
-I then use a blur spray brush like this, I paint randomly on my scar and around it
 
-&#x20;![](<../../../../.gitbook/assets/image (223).png>)
 
-![](<../../../../.gitbook/assets/image (224).png>)
+With a normal map, you can give differents textures just by changing the colors you are using see the examples :&#x20;
 
-I reduce some layers' opacity at my conveniance and then I go to the skin map
 
-Here is what my scar looks like when colored.
 
-<div align="left">
+{% tabs %}
+{% tab title="Colors" %}
+<figure><img src="../../../.gitbook/assets/image (18).png" alt=""><figcaption><p>Blue : Water <br>Yellow/green : Gold/Steel<br>Red/Purple : Matte </p></figcaption></figure>
+{% endtab %}
 
-<figure><img src="../../../../.gitbook/assets/image (227).png" alt="" width="366"><figcaption></figcaption></figure>
+{% tab title="In-game (with nothing below) " %}
+<figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
 
-</div>
+{% tab title="In-game (with a red dot below)" %}
+<figure><img src="../../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+{% endtabs %}
 
-I will add some extra textures on it, only on the skin map, not the bumpmap.
 
-<div align="left">
 
-<figure><img src="../../../../.gitbook/assets/image (230).png" alt="" width="375"><figcaption></figcaption></figure>
+You will have to copy the scar made on the diffuse map and paste it on the roughness map.
 
-</div>
+<figure><img src="../../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-In-game appearance
+Now you have to change the colors to make them match with their elements
+
+
+
+{% tabs %}
+{% tab title="My result" %}
+<figure><img src="../../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+
+{% tab title="Explanation" %}
+<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+{% endtab %}
+{% endtabs %}
+
+You can now replace all the textures by your textures in Wkit. Export and Import and then see the result in-game.
+
+
 
 {% tabs %}
 {% tab title="1" %}
-<figure><img src="../../../../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="2" %}
-<figure><img src="../../../../.gitbook/assets/image (232).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
-{% tab title="On the leg" %}
-<figure><img src="../../../../.gitbook/assets/image (233).png" alt=""><figcaption></figcaption></figure>
+{% tab title="3" %}
+<figure><img src="../../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
-{% tab title="On the leg" %}
-<figure><img src="../../../../.gitbook/assets/image (234).png" alt=""><figcaption></figcaption></figure>
+{% tab title="4" %}
+<figure><img src="../../../.gitbook/assets/image (28).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}

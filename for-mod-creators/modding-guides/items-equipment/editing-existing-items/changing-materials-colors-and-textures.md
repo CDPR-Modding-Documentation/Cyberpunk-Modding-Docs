@@ -200,7 +200,7 @@ This is already working. You can pack the project and see it in action!
 If it doesn't work, you need to install [Material and Texture Override](https://www.nexusmods.com/cyberpunk2077/mods/5266) from Nexus.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (14) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (14) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Being done
 

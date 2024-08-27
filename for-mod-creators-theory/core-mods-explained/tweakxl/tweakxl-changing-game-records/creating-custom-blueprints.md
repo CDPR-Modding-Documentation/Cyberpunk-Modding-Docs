@@ -330,4 +330,4 @@ Items.Mod:
 
 And now its done all of our power assault rifles now have 4 mod slots
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>
