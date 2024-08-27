@@ -271,6 +271,7 @@
   * [RIG Swapping Garments - other body conversion](modding-guides/items-equipment/rig-swapping-garments-other-body-conversion.md)
   * [First Person Perspective Fixes](modding-guides/items-equipment/first-person-perspective-fixes.md)
   * [FPP Fixes: Easy Refitting Gloves for femV FPP Appearance - Guide by xbaebsae](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-refitting-gloves-for-fpp-appearance/)
+  * [Transferring Dangle Bones - Guide by PinkyDude](https://docs.google.com/document/d/1t6dx-3WeOsK3dsz6TwsRUpPJxznp3ShBNaN1PcRoLpE/edit#heading=h.kvak42tu0v94)
   * [Bulge Detector: Dynamic Bulge for trans-inclusive items - Guide by PinkyDude](https://docs.google.com/document/d/19OfktBQEUfsX62zgtGUv2Pm\_OYrfL02HYhz82wip2qo/edit#heading=h.kvak42tu0v94)
   * [Flat Chest Detector: Dynamic Binder - Guide by PinkyDude](https://docs.google.com/document/d/1C3H\_UldaYEAuz8t5P06xf7HjfChjF8VNfTOtybDylgE/edit?usp=sharing)
 * [🌈 Textures, LUTs and Materials](modding-guides/textures-and-luts/README.md)
