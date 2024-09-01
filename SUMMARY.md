@@ -59,6 +59,7 @@
   * [Savegame Editor: CyberCAT](for-mod-creators-theory/modding-tools/savegame-editor-cybercat.md)
 * [📚 References, lists and overviews](for-mod-creators-theory/references-lists-and-overviews/README.md)
   * [Assets explained](for-mod-creators-theory/references-lists-and-overviews/assets.md)
+  * [Cheat Sheet: Character Creator](for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-character-creator.md)
   * [Cheat Sheet: Head](for-mod-creators/references-lists-and-overviews/cheat-sheet-head/README.md)
     * [Cheat Sheet: Hair](for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md)
     * [Cheat Sheet: Facial Expressions](for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md)

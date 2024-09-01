@@ -5,13 +5,14 @@
 This page lists various properties of the player head. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.&#x20;
 
 {% hint style="info" %}
-You can find much additional information about the player head under [npv-preparing-the-head-in-blender.md](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention")&#x20;
+Check [cheat-sheet-character-creator.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-character-creator.md "mention") for color values and appearances
 {% endhint %}
 
 ### Wait, this isn't what I'm looking for!
 
 * If you want to [edit the player's head](../../../modding-guides/npcs/a-new-head-for-v.md), you need [meshes](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/) and [morphtargets](../../../for-mod-creators-theory/3d-modelling/morphtargets.md).&#x20;
 * If you want to make a custom NPC, check [npv-v-as-custom-npc](../../../modding-guides/npcs/npv-v-as-custom-npc/ "mention")
+* You can find much additional information about the player head under [npv-preparing-the-head-in-blender.md](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention")&#x20;
 
 ***
 
@@ -34,12 +35,6 @@ The folders contain the entire player head. The minimum amount of meshes rendere
 | ht\_  | teeth                                                                                                                                   |
 | hx\_  | <p>applied on top of h0: </p><ul><li>cyberware</li><li>makeup</li><li>freckles</li><li>pimples</li><li>tattoos</li><li>scars </li></ul> |
 | l1\_  | ear ring (01-04)                                                                                                                        |
-
-## Skin tones by index
-
-<table><thead><tr><th width="85"></th><th></th></tr></thead><tbody><tr><td>1</td><td>01_ca_pale</td></tr><tr><td>2</td><td>01_ca_pale_00_warm_ivory</td></tr><tr><td>3</td><td>02_ca_limestone</td></tr><tr><td>4</td><td>02_ca_limestone_00_beige</td></tr><tr><td>5</td><td>03_ca_senna</td></tr><tr><td>6</td><td>03_ca_senna_00_amber</td></tr><tr><td>7</td><td>03_ca_senna_01_honey</td></tr><tr><td>8</td><td>03_ca_senna_02_band</td></tr><tr><td>9</td><td>04_ca_almond</td></tr><tr><td>10</td><td>04_ca_almond_00_umber</td></tr><tr><td>11</td><td>05_bl_espresso</td></tr><tr><td>12</td><td>06_bl_dark</td></tr></tbody></table>
-
-List compiled by **wolv**
 
 ## Complexions
 
@@ -77,7 +72,7 @@ All other properties are pulled from a [.mi file](../../../for-mod-creators-theo
 
 ### Head: material instances
 
-This section only lists [.mi files](../../../for-mod-creators-theory/files-and-what-they-do/materials/re-using-materials-.mi.md) used by the player head.&#x20;
+This section only lists [.mi files](../../../for-mod-creators-theory/files-and-what-they-do/materials/re-using-materials-.mi.md) used by the player head. To see which skin is which, check [cheat-sheet-character-creator.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-character-creator.md "mention") -> [#skin-tones](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-character-creator.md#skin-tones "mention")
 
 {% hint style="warning" %}
 About half of these files are shared by NPCs. Editing or replacing these will affect all of Night City!
@@ -89,23 +84,9 @@ About half of these files are shared by NPCs. Editing or replacing these will af
 
 For a list of freckles and make-up sorted by colour and skin type, see NoraLee's [NPV guide](https://docs.google.com/document/d/1clFJhpi7H5jk73vUQPnjIwjkuQV6VnYkKMoXt1eYMb0/edit#bookmark=id.lau0nfbbx4id).
 
-## Lipstick
-
-{% hint style="info" %}
-For a mod fixing various mix-ups in the character creator, see [here](https://www.nexusmods.com/cyberpunk2077/mods/6788).
-{% endhint %}
-
-Lipstick colours and styles are sorted in (more or less) ascending order in the appearance list in the mesh.&#x20;
-
-Style order is Default - Glossy - Matte (no suffix, \_02_, \__03)
-
-Link: [Reference images on imgur](https://imgur.com/a/NlbCHYK)
-
-<figure><img src="https://i.imgur.com/P5NMggv.png" alt=""><figcaption></figcaption></figure>
-
 ## Eyebrows
 
-Every eyebrow option has an associated texture file, normal map, and alpha map.
+Ev~~e~~ry eyebrow option has an associated texture file, normal map, and alpha map.
 
 These files can be found in the following folder:&#x20;
 
@@ -136,10 +117,6 @@ Provided below is a table with the eyebrows and their associated texture files.
 | 06      | heb\_wa\_\_base\_ds06.xbm |
 | 07      | heb\_wa\_\_base\_ds07.xbm |
 | 08      | heb\_wa\_\_base\_ds08.xbm |
-
-## Eyeliner and kohl
-
-<figure><img src="../../../.gitbook/assets/done.png" alt=""><figcaption></figcaption></figure>
 
 ## E3/Marketing Assets
 
