@@ -47,15 +47,11 @@ You can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/np
 See [cheat-sheet-head](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/ "mention")-> [#head-material-instances](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/#head-material-instances "mention") for the corresponding files
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/character_creator_skin_tones.jpg" alt=""><figcaption><p>Keep reading for a textual list</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/character_creator_skin_tones.jpg" alt=""><figcaption><p>Keep reading for a textual list (compiled by <strong>wolv)</strong></p></figcaption></figure>
 
 **Bold** options are unique to V and not shared with NPCs
 
 <table><thead><tr><th width="85"></th><th></th><th width="83"></th><th></th></tr></thead><tbody><tr><td>1</td><td>01_ca_pale</td><td>7</td><td><strong>03_ca_senna_01_honey</strong></td></tr><tr><td>2</td><td><strong>01_ca_pale_00_warm_ivory</strong></td><td>8</td><td><strong>03_ca_senna_02_band</strong></td></tr><tr><td>3</td><td>02_ca_limestone</td><td>9</td><td>04_ca_almond</td></tr><tr><td>4</td><td><strong>02_ca_limestone_00_beige</strong></td><td>10</td><td><strong>04_ca_almond_00_umber</strong></td></tr><tr><td>5</td><td>03_ca_senna</td><td>11</td><td>05_bl_espresso</td></tr><tr><td>6</td><td><strong>03_ca_senna_00_amber</strong></td><td>12</td><td>06_bl_dark</td></tr></tbody></table>
-
-List compiled by **wolv**
-
-
 
 ## Lip Makeup
 
@@ -70,6 +66,10 @@ Style order is Default - Glossy - Matte (no suffix, \_02_, \__03)
 Link: [Reference images on imgur](https://imgur.com/a/NlbCHYK)
 
 <figure><img src="https://i.imgur.com/P5NMggv.png" alt=""><figcaption></figcaption></figure>
+
+## Lip Makeup Color
+
+<figure><img src="../../.gitbook/assets/character_creator_lip_makeup_color.png" alt=""><figcaption></figcaption></figure>
 
 ## Eye Make-up
 
@@ -95,15 +95,11 @@ to be done
 
 ## Cheek Makeup Color
 
-to be done
-
-## Lip Makeup Color
-
-to be done
+<figure><img src="../../.gitbook/assets/character_creator_cheek_makeup_color.png" alt=""><figcaption></figcaption></figure>
 
 ## Blemish Color
 
-to be done
+<figure><img src="../../.gitbook/assets/character_creator_blemish_color.png" alt=""><figcaption></figcaption></figure>
 
 ## Nail Color
 
@@ -113,4 +109,4 @@ to be done
 
 ## Piercing Color
 
-to be done
+<figure><img src="../../.gitbook/assets/character_crrator_piercing_color.png" alt=""><figcaption></figcaption></figure>
