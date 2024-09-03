@@ -195,9 +195,17 @@ Click on the three dots next to "Launch Game with REDmods Enabled" and set it as
 
 "REDmod Deploy Latest Load Order" is also incredibly useful if your mods are acting up: Just using the "deploy" button on the main management page can fail – by using this button, you can debug your REDmod deployment.
 
-## Use
+## Installing mods
 
-You're almost to the mod page, but first, you need to _get_ some mods. Let's start by installing the [core framework collection](https://next.nexusmods.com/cyberpunk2077/collections/gm8o1p), which contains everything that other mods require.
+This section will teach you how to install mods. Keep reading!
+
+### Installing collections
+
+You're almost to the mod page, but first, you need to _get_ some mods. We'll now show you how to install a collection.
+
+{% hint style="danger" %}
+You can browse different mod collections [on Nexus,](https://next.nexusmods.com/cyberpunk2077/collections) but caution: collections can be **outdated** or **abandoned**. To make sure that a collection works with the current game version, check its comments - if they are full of complaining people, it doesn't.
+{% endhint %}
 
 1. Click on "Collections" in the sidebar
 2. Select "Discover more collections."&#x20;
@@ -247,6 +255,19 @@ Since this is your first time launching the game with mods, you should see a pro
 Make sure to click save to keep your choices.
 
 <figure><img src="../../../.gitbook/assets/Cyberpunk2077_D4HpeyOrll.png" alt=""><figcaption><p>CET overlay on the main menu screen on the Settings option.</p></figcaption></figure>
+
+## Installing the core mods
+
+The following mods are **requirements** for many other Cyberpunk mods. We recommend that you install their latest version and keep them up-to-date, since you will run into them sooner or later, and the developers always (September 2025) keep them up-to-date.
+
+* [RED4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
+* [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198)
+* [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197)
+* [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780)
+* [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107)
+* [redscript](https://www.nexusmods.com/cyberpunk2077/mods/1511)
+
+For more information on the core mods, check [core-mods-explained](../../../for-mod-creators-theory/core-mods-explained/ "mention") (you don't need to know that for this guide). For each of these mods, follow the next section: [#downloading-a-mod-with-mod-manager-download-enabled](vortex-mod-manager.md#downloading-a-mod-with-mod-manager-download-enabled "mention")
 
 ### Downloading a mod with Mod Manager Download enabled
 
