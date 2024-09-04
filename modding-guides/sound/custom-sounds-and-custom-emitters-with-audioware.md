@@ -68,7 +68,7 @@ sfx:
   Android_Malfunction_5:
     file: Electric_Zap.wav
     settings:
-      volume: 1.0
+      volume: 1.5
 ```
 
 The version line is required, and should be set to **1.0.0**. And we have a sound effects (**sfx**) section that lists the sounds we'll be using. We're specifying that they should be played at **1.0** (100%) volume, **0.5** (50%) volume, or **1.5** (150%) volume, depending on the sound. Everything is named very simply and everything is indented properly (spaces, not tabs; 2 per indent).
@@ -114,19 +114,17 @@ protected cb func OnHit(evt: ref<gameHitEvent>) -> Bool {
 
 Did you notice the problem above?—Suppose an android is repeatedly hit, such as by a high fire-rate weapon?—Our resulting sound effects will immediately overlap one another and sound cacophonous. We need to alleviate that.
 
-We'll do this using one of Redscript's greatest assets to audio modding: a callback. Our callback will take three variables: the **npc** (the android), the **audioware** system, and the **entity ID** (which we could re-retrieve from the npc, but won't bother, since we had it and checked it already). We'll also be creating a field, to hold the **Delay ID** of the callback, which we'll update, per callback. Here's all that:
+We'll do this using one of Redscript's greatest assets to audio modding: a callback. Our callback will take two variables: the **audioware** system and the android's **entityID**. We'll also be creating a field, to hold the **DelayID** of the callback, which we'll update, per callback. Here's all that:
 
 ```
 @addField(NPCPuppet)
 public static let lastAndroidHitSfxDelayID: DelayID;
 
 public class AndroidHitSfxDelayCallback extends DelayCallback {
-	let npc: ref<NPCPuppet>;
 	let audioware: ref<AudioSystemExt>;
 	let entityID: EntityID;
 	public func Call() -> Void {
 		this.audioware.PlayOnEmitter(StringToName("Android_Malfunction_" + RandRange(1, 6)), this.entityID, n"");
-		this.npc.lastAndroidHitSfxDelayID = new DelayID();
 	}
 }
 ```
@@ -148,10 +146,9 @@ protected cb func OnHit(evt: ref<gameHitEvent>) -> Bool {
 				let ds: ref<DelaySystem> = GameInstance.GetDelaySystem(game);
 				if IsDefined(ds) {
 					let callback: ref<AndroidHitSfxDelayCallback> = new AndroidHitSfxDelayCallback();
-					callback.npc		= this;
 					callback.audioware	= audioware;
 					callback.entityID	= entityID;
-					this.lastAndroidHitSfxDelayID = ds.DelayCallback(callback, this.lastAndroidHitSfxDelayID == new DelayID() ? 0.0 : 1.5 + ds.GetRemainingDelayTime(this.lastAndroidHitSfxDelayID));
+					this.lastAndroidHitSfxDelayID = ds.DelayCallback(callback, this.lastAndroidHitSfxDelayID == new DelayID() ? 0.0 : 0.75 + MaxF(0.0, ds.GetRemainingDelayTime(this.lastAndroidHitSfxDelayID)));
 				};
 			};
 		};
@@ -160,7 +157,9 @@ protected cb func OnHit(evt: ref<gameHitEvent>) -> Bool {
 }
 ```
 
-Not terribly different; not terribly difficult. You'll notice we're incrementing the callback's delay by **1.5** (seconds), each subsequent hit, while there's a callback ongoing—you can put any number there instead, based on factors of your choosing (such as what your sound effects sound like together, or their average lengths). For our purposes, we want our androids to sound like they're experiencing awful electronic destruction, but not _too much_, so 1.5 will do fine.
+Not terribly different; not terribly difficult. You'll notice we're incrementing the callback's delay by **0.75** (seconds), each subsequent hit, while there's a callback ongoing—you can substitute any number there instead, based on factors of your choosing (such as what your sound effects sound like together, or their average lengths). For our purposes, we want our androids to sound like they're experiencing awful electronic destruction, but not _too much_, so this amount will do fine.
+
+It's also worth noting here that you can _and should_ use 0.0 for a next-frame callback instead of DelayCallbackNextFrame(), which we do here when an android is hit for the first time.
 
 Finally, let's have a look at the complete script:
 
@@ -174,12 +173,10 @@ import Audioware.*
 public static let lastAndroidHitSfxDelayID: DelayID;
 
 public class AndroidHitSfxDelayCallback extends DelayCallback {
-	let npc: ref<NPCPuppet>;
 	let audioware: ref<AudioSystemExt>;
 	let entityID: EntityID;
 	public func Call() -> Void {
 		this.audioware.PlayOnEmitter(StringToName("Android_Malfunction_" + RandRange(1, 6)), this.entityID, n"");
-		this.npc.lastAndroidHitSfxDelayID = new DelayID();
 	}
 }
 
@@ -197,17 +194,19 @@ protected cb func OnHit(evt: ref<gameHitEvent>) -> Bool {
 				let ds: ref<DelaySystem> = GameInstance.GetDelaySystem(game);
 				if IsDefined(ds) {
 					let callback: ref<AndroidHitSfxDelayCallback> = new AndroidHitSfxDelayCallback();
-					callback.npc		= this;
 					callback.audioware	= audioware;
 					callback.entityID	= entityID;
-					this.lastAndroidHitSfxDelayID = ds.DelayCallback(callback, this.lastAndroidHitSfxDelayID == new DelayID() ? 0.0 : 1.5 + ds.GetRemainingDelayTime(this.lastAndroidHitSfxDelayID));
+					this.lastAndroidHitSfxDelayID = ds.DelayCallback(callback, this.lastAndroidHitSfxDelayID == new DelayID() ? 0.0 : 0.75 + MaxF(0.0, ds.GetRemainingDelayTime(this.lastAndroidHitSfxDelayID)));
 				};
 			};
 		};
 	};
 	return wrappedMethod(evt);
 }
+
 ```
+
+You can find the mod's complete files [here](https://www.nexusmods.com/cyberpunk2077/mods/16505), and play with it yourself, if you'd like.
 
 And that's all there is to it, really, but again: you should familiarize yourself with the [Audioware Wiki](https://cyb3rpsych0s1s.github.io/audioware), and play around with the many options and settings made available to you.
 
