@@ -355,6 +355,7 @@
   * [Replacing sounds effects](modding-guides/sound/replacing-sounds-effects.md)
   * [Modding Events Metadata](modding-guides/sound/audio-modding-basics.md)
   * [Playing Sounds in-game: Basics](modding-guides/sound/playing-sounds-in-game-basics.md)
+  * [Custom Sounds & Custom Emitters with Audioware](modding-guides/sound/custom-sounds-and-custom-emitters-with-audioware.md)
 * [❕ Quests](modding-guides/quest/README.md)
   * [Visualize Quest files](modding-guides/quest/visualize-quest-files.md)
   * [How to Edit Voiceover and Subtitles In a Quest.](modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
