@@ -84,6 +84,7 @@
       * [Archived: Parts & Parts Categories](for-mod-creators-theory/references-lists-and-overviews/vehicles/archive/parts-and-parts-categories.md)
     * [Cheat Sheat Vehicles: TweakDB](for-mod-creators-theory/references-lists-and-overviews/vehicles/tweakdb.md)
   * [Reference: World Sectors](for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/README.md)
+    * [Reference: MinimapDataNodes](for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/reference-minimapdatanodes.md)
     * [Finding Locations](for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/places.md)
     * [Reference: .streamingsector node types](for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/reference-.streamingsector-node-types.md)
   * [Cheat Sheet: Lights](for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-lights.md)
