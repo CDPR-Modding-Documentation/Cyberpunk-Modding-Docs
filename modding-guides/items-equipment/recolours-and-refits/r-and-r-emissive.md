@@ -59,7 +59,7 @@ Cyberpunk 2077\r6\tweaks\manavortex\_ArchiveXL_Netrunner_variants.yaml
 
 Open it in a text editor such as [Notepad++](https://notepad-plus-plus.org/downloads/), and find the list `$instances` near the top of the file. It will look like this:
 
-<figure><img src="../../../../.gitbook/assets/netrunner_suits_emissive.png" alt=""><figcaption><p>For other mods, you will have to edit a different file and different values. Just give it a try, if it doesn't work, you can still put the original file back.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/netrunner_suits_emissive.png" alt=""><figcaption><p>For other mods, you will have to edit a different file and different values. Just give it a try, if it doesn't work, you can still put the original file back.</p></figcaption></figure>
 
 Change the current entry against one from the list above.&#x20;
 
@@ -86,7 +86,7 @@ If V is naked, then you fucked up (deleted the , or the :). In that case, rememb
 
 <summary>Can I do this for every mod???</summary>
 
-Unfortunately not! The mod author has to enable this feature via [archivexl-dynamic-variants.md](../adding-new-items/archivexl-dynamic-variants.md "mention") and split/colorize their meshes accordingly.
+Unfortunately not! The mod author has to enable this feature via [archivexl-dynamic-variants](../adding-new-items/archivexl-dynamic-variants/ "mention") and split/colorize their meshes accordingly.
 
 If a mod doesn't mention in the description that they support this feature, you can use the techniques under [r-and-r-colour-editing.md](r-and-r-colour-editing.md "mention") to make your own recolours anyway.
 
@@ -109,7 +109,7 @@ See [#add-files-from-the-mod-to-your-project](r-and-r-your-own-wolvenkit-project
 
 Open the file in Wolvenkit and check the `values` array. You'll see something like this:
 
-<figure><img src="../../../../.gitbook/assets/netrunner_suits_emissive_properties.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/netrunner_suits_emissive_properties.png" alt=""><figcaption></figcaption></figure>
 
 You can make changes in the panel on the right — feel free to experiment. You can make a copy first in case you break something, but even then, you can still install the original mod again and re-extract the file.
 

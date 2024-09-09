@@ -39,7 +39,7 @@ _To get a deeper understanding of the process, you can follow the linked resourc
 
 * To troubleshoot your ArchiveXL mods, you can use [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/ "mention")'s [File Validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention").
 * If you want to convert a mod to dynamic appearances, check the [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention")
-* If you want to use dynamic appearances out of the box, check [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") (this is the preferred approach as soon as you're creating different options).
+* If you want to use dynamic appearances out of the box, check [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention") (this is the preferred approach as soon as you're creating different options).
 
 ## Step 0: Grab the example files
 
@@ -95,7 +95,7 @@ If you're okay with this, then you're done now. Otherwise, you'll want to keep r
 {% hint style="warning" %}
 **If you want to have many colours or both body genders:**
 
-Do yourself a favour and use [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention").&#x20;
+Do yourself a favour and use [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention").&#x20;
 
 You might have been given the Easy Item Additions tool, or you might be familiar with older tutorials. Please believe me: even doing this by hand is less effort than filling out all the fields.
 
@@ -229,7 +229,7 @@ If it works, this is an excellent moment to take a backup! If not, check [#troub
 ## Adding a Male Instance
 
 {% hint style="warning" %}
-This is  a great opportunity to switch over to the [archivexl-dynamic-variants.md](archivexl-dynamic-variants.md "mention") approach.&#x20;
+This is  a great opportunity to switch over to the [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention") approach.&#x20;
 
 For a step-by-step guide on how to convert your mod, check[archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention").
 {% endhint %}
@@ -573,7 +573,7 @@ Either an appearance is incorrectly **selected** (app file), or it is incorrectl
 
 **yourModName.yaml** - is the `appearanceName` correct, or did you forget to change it?
 
-If you are not using [dynamic variants](archivexl-dynamic-variants.md), also check the following two files:\
+If you are not using [dynamic variants](archivexl-dynamic-variants/), also check the following two files:\
 **root\_entity.ent** - does the `name` corresponding to the field above point to the right `appearanceName` in the right .app file?\
 **appearance.app** - does the appearance's `partOverride` set the correct appearance in the `componentsOverride`?
 

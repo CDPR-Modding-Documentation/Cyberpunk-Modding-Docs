@@ -100,7 +100,7 @@ The first line of each block **must not** have spaces, the blocks below must hav
 Making mistakes here might break your entire mod, so if in doubt, run your edited file through an [online yaml validator](https://jsonformatter.org/yaml-validator).
 {% endhint %}
 
-This file controls the adding of items to the game. Unless you are using [dynamic appearances](archivexl-dynamic-variants.md#the-yaml), an entry looks like this:
+This file controls the adding of items to the game. Unless you are using [dynamic appearances](archivexl-dynamic-variants/#the-yaml), an entry looks like this:
 
 <figure><img src="../../../.gitbook/assets/archive_xl_the_yaml_file.png" alt=""><figcaption></figcaption></figure>
 
@@ -116,7 +116,7 @@ Four **mappings** take place here:
 {% hint style="info" %}
 The appearance name will only be considered up to the first [suffix](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes). If you want to know what those pesky & things are doing, read up the corresponding documentation.
 
-You don't need to know this unless you **aren't** using [dynamic appearances](archivexl-dynamic-variants.md) and want to add variants for different genders or camera perspectives. We're making them go away by putting`appearanceSuffixes: []`.
+You don't need to know this unless you **aren't** using [dynamic appearances](archivexl-dynamic-variants/) and want to add variants for different genders or camera perspectives. We're making them go away by putting`appearanceSuffixes: []`.
 {% endhint %}
 
 3. `displayName`/`localizedDescription` : In the `translation_strings.json`, find an array where the value for \[3] (the last entry) is identical to this key. Then, check which gender V has, and display either `femaleVariant` or `maleVariant`.
@@ -183,7 +183,7 @@ Make sure to add the `DynamicAppearance` tag here.
 
 #### Suffixes
 
-Unless you are using [dynamic appearances](archivexl-dynamic-variants.md#the-root\_entity), the root entity's `name` field is where you would put **suffixes** for different appearance variants.
+Unless you are using [dynamic appearances](archivexl-dynamic-variants/#the-root\_entity), the root entity's `name` field is where you would put **suffixes** for different appearance variants.
 
 {% hint style="warning" %}
 You don't need to know [what suffixes are](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes) unless you want to make variants for different genders or camera types. In fact, you will want to skip this until you have a confirmed and working mod!
@@ -242,7 +242,7 @@ This file holds a collection of components that determine how our equipment item
 **Would you like to know more?**
 
 Full documentation of [mesh\_entity](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity)\
-The mesh entity for [dynamic appearances](archivexl-dynamic-variants.md#the-mesh\_entity)\
+The mesh entity for [dynamic appearances](archivexl-dynamic-variants/#the-mesh\_entity)\
 More intel on [components](../../../for-mod-creators-theory/files-and-what-they-do/components/)
 
 Understanding this is not necessary for the purpose of this guide!
@@ -275,7 +275,7 @@ Otherwise, you only need to touch this file if you move the .mesh file.
 
 Contains a list of appearances as mapped by [`rootentity.ent`](archive-xl-item-structure-explained.md#rootentity.ent). Each of the appearances will load `mesh_entity.ent` via `partsValues.`
 
-If you're not using [dynamic appearances](archivexl-dynamic-variants.md#the-.app), you specify the components' appearances and chunkMasks in the `partsOverrides`.
+If you're not using [dynamic appearances](archivexl-dynamic-variants/#the-.app), you specify the components' appearances and chunkMasks in the `partsOverrides`.
 
 {% hint style="danger" %}
 **For experienced modders**

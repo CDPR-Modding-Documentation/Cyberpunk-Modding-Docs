@@ -82,15 +82,15 @@ This part of the guide will show you how to turn the entire item invisible. If y
    * If you are editing someone else's mod, you need to copy their `.yaml` to your project. If you don't know which file that is, check their Nexus mod files, as it will be part of the original .zip file.
 
 {% hint style="info" %}
-If you don't have a yaml because you're changing an in-game item for some reason, you need to start at [#fixing-the-root-entity](first-person-perspective-fixes.md#fixing-the-root-entity "mention"). If you [convert it to a dynamic appearance](adding-new-items/archivexl-dynamic-variants.md#the-root\_entity), you can stick to these parts in the rest of the guide.
+If you don't have a yaml because you're changing an in-game item for some reason, you need to start at [#fixing-the-root-entity](first-person-perspective-fixes.md#fixing-the-root-entity "mention"). If you [convert it to a dynamic appearance](adding-new-items/archivexl-dynamic-variants/#the-root\_entity), you can stick to these parts in the rest of the guide.
 {% endhint %}
 
 2. Open the file in any text editor (recommended: [**Notepad++**](https://notepad-plus-plus.org/downloads/))
 3.  Helpful documentation on .yaml files resides [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items/archive-xl-item-structure-explained#the-control-file-yourmodname.yaml). Hopefully it looks something like this:
 
     <figure><img src="../../.gitbook/assets/image (274).png" alt=""><figcaption><p>This is my example .yaml file with only <em>one</em> entry. Yours might have more.</p></figcaption></figure>
-4. Check if there is something called `$instances`. If yes, the mod is using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention") and you are done here — go to [#dynamic-variants-hiding-fpp](first-person-perspective-fixes.md#dynamic-variants-hiding-fpp "mention")
-5. Find the line `appearanceSuffixes`_. **Again,**_ If the mod is using [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention") (there is something called $instances), you can skip this step.
+4. Check if there is something called `$instances`. If yes, the mod is using [archivexl-dynamic-variants](adding-new-items/archivexl-dynamic-variants/ "mention") and you are done here — go to [#dynamic-variants-hiding-fpp](first-person-perspective-fixes.md#dynamic-variants-hiding-fpp "mention")
+5. Find the line `appearanceSuffixes`_. **Again,**_ If the mod is using [archivexl-dynamic-variants](adding-new-items/archivexl-dynamic-variants/ "mention") (there is something called $instances), you can skip this step.
 6. If the line isn't there, add it. Use the same number of leading spaces as in the surrounding lines!
 7.  Add the line `itemsFactoryAppearanceSuffix.Camera` to the array. If you have something else in there, add a comma.
 
@@ -114,7 +114,7 @@ You now have two ways of hiding the item in first person:
 #### Hiding FPP via tag
 
 {% hint style="warning" %}
-This will not work with [archivexl-dynamic-variants.md](adding-new-items/archivexl-dynamic-variants.md "mention")!
+This will not work with [archivexl-dynamic-variants](adding-new-items/archivexl-dynamic-variants/ "mention")!
 {% endhint %}
 
 1. Find the array `tags` at the end of the list.

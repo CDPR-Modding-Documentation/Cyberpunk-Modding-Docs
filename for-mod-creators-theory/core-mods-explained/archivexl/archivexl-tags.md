@@ -94,7 +94,7 @@ There are a few tags that can be added to the root entity **or** in the .app fil
 
 {% hint style="warning" %}
 This only works for legacy ArchiveXL projects. \
-If you're using [archivexl-dynamic-variants.md](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention"), please use [conditional appearances](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md#conditional-switching-picking-appearances-by-name) in your .app file.
+If you're using [archivexl-dynamic-variants](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/ "mention"), please use [conditional appearances](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/#conditional-switching-picking-appearances-by-name) in your .app file.
 {% endhint %}
 
 This will hide an item under certain conditions. Add the following tag to the root entity:
@@ -103,7 +103,7 @@ This will hide an item under certain conditions. Add the following tag to the ro
 
 You have the following other options to achieve the same end:
 
-<table data-header-hidden><thead><tr><th width="209"></th><th></th><th></th></tr></thead><tbody><tr><td>Root entity appearance<br>(<strong>without</strong> dynamic variants)</td><td><code>name</code>: <code>my_appearance&#x26;FPP</code></td><td>.app path: <code>base\characters\appearances\player\items\empty_appearance.app</code><br><code>default</code></td></tr><tr><td>.app <a href="../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md#conditional-switching-picking-appearances-by-name">conditional appearance</a>: change default appearance name</td><td><code>name</code>: <code>my_appearance&#x26;camera=tpp</code></td><td>ArchiveXL will automatically add empty appearances for anything you have not defined</td></tr><tr><td>.app <a href="../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md#conditional-switching-picking-appearances-by-name">conditional appearance</a>: add empty appearance yourself</td><td><code>name</code>: <code>my_appearance&#x26;camera=fpp</code></td><td>no partsValues, no components.<br>Do not do this - use the line above this one instead!</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="209"></th><th></th><th></th></tr></thead><tbody><tr><td>Root entity appearance<br>(<strong>without</strong> dynamic variants)</td><td><code>name</code>: <code>my_appearance&#x26;FPP</code></td><td>.app path: <code>base\characters\appearances\player\items\empty_appearance.app</code><br><code>default</code></td></tr><tr><td>.app <a href="../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/#conditional-switching-picking-appearances-by-name">conditional appearance</a>: change default appearance name</td><td><code>name</code>: <code>my_appearance&#x26;camera=tpp</code></td><td>ArchiveXL will automatically add empty appearances for anything you have not defined</td></tr><tr><td>.app <a href="../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/#conditional-switching-picking-appearances-by-name">conditional appearance</a>: add empty appearance yourself</td><td><code>name</code>: <code>my_appearance&#x26;camera=fpp</code></td><td>no partsValues, no components.<br>Do not do this - use the line above this one instead!</td></tr></tbody></table>
 
 **`force_Hair`**
 

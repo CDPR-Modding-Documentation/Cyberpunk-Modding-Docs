@@ -20,7 +20,7 @@ psiberx has found ways to make this less painful. This page documents these ways
 ### Wait, that's not what I want!
 
 * For a hands-on guide to [adding-new-items](../../../modding-guides/items-equipment/adding-new-items/ "mention"), check the corresponding pages in the Modding Guides section
-* Dynamic appearances have their own guide (see [archivexl-dynamic-variants.md](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention"))
+* Dynamic appearances have their own guide (see [archivexl-dynamic-variants](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/ "mention"))
 * There is an own page for [influencing-other-items.md](../../../modding-guides/items-equipment/influencing-other-items.md "mention")
 * To conditionally hide items or parts of items, check [influencing-other-items.md](../../../modding-guides/items-equipment/influencing-other-items.md "mention") or [archivexl-tags.md](archivexl-tags.md "mention") (especially the section about [#root-entity-tags](archivexl-tags.md#root-entity-tags "mention"))
 
@@ -29,10 +29,10 @@ psiberx has found ways to make this less painful. This page documents these ways
 Sometimes, you want to load different meshes/appearances under different circumstances. Before ArchiveXL 1.5, the only way to do that were suffixes — registering them in the `.yaml`, then adding one appearance for each variation in the root entity (so for 2 suffixes, you'd have 4 entries, for 3 suffixes, you'd have 8…).&#x20;
 
 {% hint style="warning" %}
-Suffixes are **outdated**! Do yourself a favour and use [dynamic appearances](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md)!
+Suffixes are **outdated**! Do yourself a favour and use [dynamic appearances](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/)!
 {% endhint %}
 
-Since 1.5, psiberx has made it possible to use **conditionals** via [dynamic appearances](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md), which require a lot less of an overhead. (Personally, I've gone from 96 entries in the root entity down to 9!)
+Since 1.5, psiberx has made it possible to use **conditionals** via [dynamic appearances](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/), which require a lot less of an overhead. (Personally, I've gone from 96 entries in the root entity down to 9!)
 
 But while the solution has changed (and improved), the problems remain and require handling.
 
@@ -184,7 +184,7 @@ Since 1.8.0, ArchiveXL supports substitutions for [#dynamic-appearances](./#dyna
 * in the `.app` appearances for the field `name`
 
 {% hint style="success" %}
-For a tutorial about this, check [archivexl-dynamic-variants.md](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants.md "mention")
+For a tutorial about this, check [archivexl-dynamic-variants](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/ "mention")
 
 If you are a mod user and want to dynamically recolour an item, check the [recolours-and-refits](../../../modding-guides/items-equipment/recolours-and-refits/ "mention") guide -> sub-page Emissive -> [#switching-existing-colours](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-emissive.md#switching-existing-colours "mention")
 {% endhint %}
