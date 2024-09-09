@@ -2,7 +2,7 @@
 description: Preserved for posterity - do not use this
 ---
 
-# Archived: Registering the body tag
+# Archived: Registering the Body Tag - app. Version
 
 {% hint style="danger" %}
 With ArchiveXL 1.14, this information is outdated. It will be preserved for posterity, but you should use the current method under [.](./ "mention") instead.
@@ -37,6 +37,10 @@ base\characters\common\player_base_bodies\appearances\l0_000_base_fpp__full.app
 ```
 
 #### The following .app files are used to register Body Tags for Male V:
+
+{% hint style="warning" %}
+The list of files below is known to be incomplete. At the very least it will not cover Male V as they appear in a mirror. Even more so than for Female V, please use the currently recommended patching based method.
+{% endhint %}
 
 ```
 base\characters\common\player_base_bodies\appearances\t0_000_base__full.app
