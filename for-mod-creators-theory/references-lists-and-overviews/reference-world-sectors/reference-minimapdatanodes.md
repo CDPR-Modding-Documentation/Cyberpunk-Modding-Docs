@@ -6,7 +6,7 @@ description: >-
 
 # Reference: MinimapDataNodes
 
-Certain exterior streamining sectors contain a list of coordinates that can be converted/quantized into vector shapes and displayed on the minimap. Currently, very little is known about them at time of writing and finding them was difficult. MinimapDataNodes are generally linked with .cminimap files, which are internally embedded into their streamingsector excluding a few that can be found in:\
+Certain exterior streaming sectors contain a list of coordinates that can be converted/quantized into vector shapes and displayed on the minimap. Currently, very little is known about them at time of writing and finding them was difficult. MinimapDataNodes are generally linked with .cminimap files, which are internally embedded into their streamingsector excluding a few that can be found in:\
 \
 base\worlds\03\_night\_city\sectors\_generated\minimap\resources\\
 
