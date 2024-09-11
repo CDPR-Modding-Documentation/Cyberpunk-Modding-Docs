@@ -22,13 +22,14 @@ The paths below are given **relative** to your [**Cyberpunk 2077 install directo
 
 If you don't want to download and run script files from the internet, you can go [here](finding-and-reading-log-files.md#alternatively-by-hand) and complete the steps by hand. Otherwise:
 
-1. Go to DocPresto's [github repository](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/FindAllErrors.bat) and download the .bat script you find there:
+1. Go to DocPresto's [github repository](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/FindAllErrors.bat) and click the download button:
 
-<figure><img src="../../.gitbook/assets/download_from_github.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/download_from_github.png" alt=""><figcaption><p>You can download any file from github like that</p></figcaption></figure>
 
-2. Move it to your [**Cyberpunk game folder**](#user-content-fn-2)[^2]&#x20;
-3. Double-click it
-4. The script will show you two options.&#x20;
+2. This will download a .bat script (it should be called `findAllErrors.bat` or similar)
+3. Move it to your [**Cyberpunk game folder**](#user-content-fn-2)[^2]&#x20;
+4. Double-click it
+5. The script will show you two options.&#x20;
    1. **Option 1 (recommended):** Delete all old log files
       1. Type 1 and press Enter. The script will delete all old log files for you.
       2. Wait until the game has started (the script will do that as well)
