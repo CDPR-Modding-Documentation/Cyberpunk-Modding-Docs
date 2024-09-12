@@ -3,11 +3,7 @@ description: How to use MO2 - it's that simple
 ---
 
 # MO2 (Mod Organizer 2)
-
-{% hint style="warning" %}
-With the release of <mark style="color:orange;">**Update 2.12**</mark> for **Cyberpunk 2077** and **Mod Organizer **<mark style="color:orange;">**2.5**</mark>, the installation process has been modified. To ensure everything works smoothly, please review the updated instructions below and adjust your installation procedures accordingly
-{% endhint %}
-
+ 
 MO2 (**Mod Organizer 2**, [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) | [Github](https://github.com/ModOrganizer2/modorganizer/releases)) is a free, widely-used mod manager, especially popular for Bethesda games like Skyrim or Fallout. It fully supports **Cyberpunk 2077** and is praised for its ease of use.&#x20;
 
 Using MO2 keeps your base game directory untouched and allows for easy mod installation, uninstallation, and updating. Additionally, you can create different profiles for mod configurations.
@@ -35,26 +31,13 @@ If you need further help with MO2 beyond this guide, feel free to ask for assist
 ### Installing CET and Red4Ext (the Script extenders)
 
 {% hint style="warning" %}
-CET and Red4Ext have to be either **installed manually or force loaded** (see picture below for details).
+CET and Red4Ext have to be either **installed manually or with toot builder**
 {% endhint %}
 
-#### **Option A: Manually Install CET and RED4ext**
+#### Manually Install CET and RED4ext**
 
 1. Download **Cyber Engine Tweaks (CET)** and **RED4ext** from Nexus Mods manually
 2. Install them by extracting their files to the game folder.
-
-#### Option B: Force-load **CET and RED4ext**
-
-1. **Download** **Cyber Engine Tweaks (CET)** and **RED4ext** via the "Mod Manager Download" button.
-2. **In MO2, click "Modify Executables"**
-   * Click on **Edit** to open the **Modify Executables** window.
-   * Check the box next to **Force Load Libraries**.
-3. **Click "Configure Libraries"**
-   * Click **Configure Libraries** and add the following files:
-     * `bin/x64/plugins/version.dll` (for **Cyber Engine Tweaks**)
-     * `bin/x64/winmm.dll` (for **RED4ext**)
-
-***
 
 ### **Installing Mods from Nexus** <a href="#installing-mods-from-nexus" id="installing-mods-from-nexus"></a>
 
@@ -83,16 +66,6 @@ If you have mods from external sources:
    * Steam will still track your playtime and achievements.
 2. **Run the Game**:
    * After setting up all your desired mods, click **Run** in MO2 to launch Cyberpunk 2077.
-
-### Screenshots
-
-To force-load **CET** and **RED4ext** libraries directly through MO2:
-
-<div align="center">
-
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>How to force load CET and Red4Ext on MO2</p></figcaption></figure>
-
-</div>
 
 ### Tips and Best Practices
 
