@@ -643,7 +643,7 @@ You can quickly navigate to the folders by pasting the path into your Windows Ex
 <figure><img src="../../.gitbook/assets/troubleshooting_headers_nuclear.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-This is the last resort and you do **not** need to do this — run [this script](./#is-there-a-shortcut) for the same result in less time. However, if you're still set on reinstalling, the instructions below will help you completing that in minimal time.
+This is the last resort and you do **not** need to do this — run [Mod Remover](https://www.nexusmods.com/cyberpunk2077/mods/8597/) for the same result in less time. However, if you're still set on reinstalling, the instructions below will help you completing that in minimal time.
 {% endhint %}
 
 ### Back it up, baby!

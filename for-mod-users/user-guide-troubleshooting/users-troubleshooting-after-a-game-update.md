@@ -22,7 +22,7 @@ The first step is to update your core frameworks. Check every mod on [this page]
 
 You're too fast, choomba: modders haven't gotten around to updating the frameworks yet. That leaves you with two options:
 
-* [remove all mods](users-troubleshooting-after-a-game-update.md#i-have-another-problem-that-isnt-on-this-list) and play vanilla until the updates arrive
+* [remove all mods](./#the-nuclear-option-a-clean-install) and play vanilla until the updates arrive
 * [downgrade your game](../users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md#downgrading)
 
 ### I updated my frameworks, but the game is still crashing!
