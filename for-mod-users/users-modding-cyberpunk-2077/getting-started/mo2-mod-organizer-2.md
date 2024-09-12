@@ -96,7 +96,6 @@ To force-load **CET** and **RED4ext** libraries directly through MO2:
 
 ### Tips and Best Practices
 
-* To manage or track changes, consider using [https://gist.github.com](https://gist.github.com/) as an alternative to Pastebin. It supports Markdown rendering and tracks change history.
 * Stay up to date with the latest versions of both **MO2** and the mods for the best experience and compatibility.
 
 &#x20;
