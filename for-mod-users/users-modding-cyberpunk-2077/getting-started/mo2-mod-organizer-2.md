@@ -45,14 +45,14 @@ CET and Red4Ext have to be either **installed manually or force loaded** (see pi
 
 #### Option B: Force-load **CET and RED4ext**
 
-1. **Download** **Cyber Engine Tweaks (CET)** and **RED4ext** via the "Mod Manager Download" button.
-2. **In MO2, click "Modify Executables"**
+1. Download **Cyber Engine Tweaks (CET)** and **RED4ext** via the "Mod Manager Download" button and install as instructed below.
+2. Download and install the [rootbuilder](https://kezyma.github.io/?p=rootbuilder#intall-col) plugin.
+3. **In MO2, click "Modify Executables"**
    * Click on **Edit** to open the **Modify Executables** window.
    * Check the box next to **Force Load Libraries**.
-3. **Click "Configure Libraries"**
    * Click **Configure Libraries** and add the following files:
-     * `bin/x64/plugins/version.dll` (for **Cyber Engine Tweaks**)
-     * `bin/x64/winmm.dll` (for **RED4ext**)
+     * `%MODS%/CyberEngineTweaks/root/bin/x64/plugins/version.dll` (for **Cyber Engine Tweaks**)
+     * `%MODS%/RED4ext/root/bin/x64/winmm.dll` (for **RED4ext**)
 
 ***
 
