@@ -101,26 +101,26 @@ First [turn autoupdate off for Steam](users-downgrading-preventing-auto-updates.
 \
 Here are the version-specific commands that you need to run. If you can't find your version on the list, check [here](https://steamdb.info/depot/1091501/history/) (Base Game) and [here](https://steamdb.info/depot/2138330/history/) (Phantom Liberty), and find the new Manifest ID tag.
 
-* 2.12 Base Game: `download_depot 1091500 1091501 3935102684525872303`
-* 2.12 Phantom Liberty: `download_depot 2138330 2138330 5094071097429923087`
-* 2.11 Base Game: `download_depot 1091500 1091501 415651277559119937`
-* 2.11 Phantom Liberty: `download_depot 2138330 2138330 1247263585971652529`
-* 2.10 Base Game: `download_depot 1091500 1091501 2238892413801664242`
-* 2.10 Phantom Liberty: `download_depot 2138330 2138330 8336407654663849967`
-* 2.02 Base Game: `download_depot 1091500 1091501 4882158097132343077`
-* 2.02 Phantom Liberty: `download_depot 2138330 2138330 255755420818251691`
-* 2.0 Base Game: `download_depot 1091500 1091501 7695458851217910405`
-* 2.0 Phantom Liberty: `download_depot 2138330 2138330 4702299018468121610`
-* 1.63: `download_depot 1091500 1091501 3385393324409330817`
+**Patch 2.12a:**
+
+* Base Game: `download_depot 1091500 1091501 3807385820978085162`
+* Phantom Liberty: `download_depot 2138330 2138330 5094071097429923087`
+* REDmod: `download_depot 1091500 2060310 1800196103221542454`
+
+**Patch 2.12:**
+
+* Base Game: `download_depot 1091500 1091501 3935102684525872303`
+* Phantom Liberty: `download_depot 2138330 2138330 5094071097429923087`
+* REDmod: `download_depot 1091500 2060310 2707809465866605439`
 
 Now, we do the thing:
 
 1. Open Steam
 2. Press `Win+R`
 3. Type `steam://open/console` to get into the steamdb console
-4. In the console, enter this command exactly to start the download (it'll be the entire 60 GB so be prepared): `download_depot 1091500 1091501 7695458851217910405`
+4. In the console, enter this command exactly to start the download (it'll be the entire 60 GB so be prepared): `download_depot 1091500 1091501 3807385820978085162`
 5. After the game finishes downloading, go to the installation location listed in the console, and copy either just the changed files (you can view the manifest for the new version) or the whole thing over your game directory to overwrite the new changes.
-6. If you have the Phantom Liberty DLC, you will need to do the steps 4 and 5 again for the DLC itself with the command: `download_depot 2138330 2138330 4702299018468121610`
+6. If you have the Phantom Liberty DLC, you will need to do the steps 4 and 5 again for the DLC itself with the command: `download_depot 2138330 2138330 5094071097429923087`
 
 This should leave you with the correct previous game version. You can right-click cyberpunk2077.exe to verify the versions in Properties > Details.
 
