@@ -16,11 +16,19 @@ We do not have official documentation from CDPR about how shaders are used by ar
 
 ## Shaders
 
-### `skin`
+### skin
+
+The skin material is a versatile PBR (textured) shader.
 
 ```
 base/materials/skin.mt
 ```
+
+You can learn more about the skin shader under [configuring-materials](../configuring-materials/ "mention")-> [hair-and-skin-material-properties.md](../configuring-materials/hair-and-skin-material-properties.md "mention").
+
+{% hint style="info" %}
+While it is possible to use the skin shader for things that are not skin, you should consider using [metal\_base](../configuring-materials/textured-material-properties.md) instead.
+{% endhint %}
 
 | Texture            |       Red       |      Green      |            Blue            | Alpha |
 | ------------------ | :-------------: | :-------------: | :------------------------: | :---: |
@@ -108,9 +116,13 @@ base/materials/mesh_decal.mt
 
 ### glass
 
+There are many different other glass shaders. This is the most basic one, used for small objects:&#x20;
+
 ```
 base\materials\glass.mt
 ```
+
+To see different glass materials and their configurations, check [configuring-materials](../configuring-materials/ "mention") -> [glass-material-properties.md](../configuring-materials/glass-material-properties.md "mention").
 
 | Texture     |    Red    |   Green   |    Blue   | Alpha |
 | ----------- | :-------: | :-------: | :-------: | :---: |
@@ -145,14 +157,6 @@ base\materials\glass.mt
 | MaskRoughnessBias         |                                                               ?                                                               |
 | BlurRadius                |                                                               ?                                                               |
 | BlurByRoughness           |                                                               ?                                                               |
-
-#### Note
-
-* There are a number of ways you can colorize your glass. GlassTint is the texture used to determine glass color. TintColor is procedural color. TintFromVertexPaint value determines how much vertex color affects the glass color. GlassTint seemingly has the highest priority, as in it will override other color parameters. Below is a test result from the process of making a glass wing.
-
-<figure><img src="../../../.gitbook/assets/glass_color_guide.jpg" alt=""><figcaption><p>How glass color is affected by different parameters</p></figcaption></figure>
-
-* There are many different other glass shaders, this one is just the most basic that is used for small objects.
 
 ### television\_ad
 

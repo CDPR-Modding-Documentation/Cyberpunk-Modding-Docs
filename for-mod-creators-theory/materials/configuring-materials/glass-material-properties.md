@@ -46,6 +46,12 @@ Find a ready-to use glass .mi file [here](https://mega.nz/file/3UkRgJRJ#o8uHKkr1
 
 Find a ready-to-use example of a turned-off screen [here](https://mega.nz/file/mMsWlDja#QlZ-jsSHuIJ-E8jYmXRbzrk5wstsDOJXTK3pe7XP89I).
 
+### Note: tinting glass
+
+* There are a number of ways you can colorize your glass. GlassTint is the texture used to determine glass color. TintColor is procedural color. TintFromVertexPaint value determines how much vertex color affects the glass color. GlassTint seemingly has the highest priority, as in it will override other color parameters. Below is a test result from the process of making a glass wing.
+
+<figure><img src="../../../.gitbook/assets/glass_color_guide.jpg" alt=""><figcaption><p>How glass color is affected by different parameters</p></figcaption></figure>
+
 
 
 ## Example materials
