@@ -6,7 +6,7 @@ description: List of words that need more context
 
 ## Summary
 
-**Published**: ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")                                                                                                                             **Last documented edit**: June 13 2024 by LadyLea
+**Published**: ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")                                                                                                                             **Last documented edit**: September 14 2024 by Silverlags
 
 A comprehensive list of jargon you might see on this Wiki or around our community. This glossary is not alphabetical, so be sure to use your browser search function to find what you're looking for. (CTRL+F for most applications)
 
@@ -22,6 +22,8 @@ A comprehensive list of jargon you might see on this Wiki or around our communit
 * <mark style="color:red;">**WolvenKit**</mark>: The unofficial [community modding toolkit](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/readme).&#x20;
 * <mark style="color:red;">**WolvenKit CLI**</mark>: The [command line interface version](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-cli) of WolvenKit. (Formerly CP77 Tools)
 * <mark style="color:red;">**CP77 Tools**</mark>: The original Cyberpunk 2077 modding Command Line Tools. (Renamed and moved to WolvenKit CLI)
+* <mark style="color:red;">**Noesis**</mark>: (obsolete) A 3d viewer with plugin support for Cyberpunk 2077's file extensions. While Noesis can import and export 3D models, animations, and images, you should use Wolvenkit instead.
+* <mark style="color:red;">**010 Editor**</mark>:  (obsolete) A hex-editing software that can be paired with a custom template to parse REDengine resource files and access its content. You can use Wolvenkit instead.
 
 ## WolvenKit
 
