@@ -131,6 +131,22 @@ WINEDLLOVERRIDES="winmm,version=n,b" %command%
 The command is case sensitive. Copy-paste the text from the box above to make sure.
 {% endhint %}
 
+### Heroic: Launch Options
+
+While at your library right click Cyberpunk then navigate to `Settings` -> `ADVANCED` and scroll down to `Environment Variables` &#x20;
+
+Now set a new variable name `WINEDLLOVERRIDES` with a value of `winmm,version=n,b`
+
+<figure><img src="../../.gitbook/assets/image (389).png" alt=""><figcaption><p>Don't forget to click the + button for the changes to save.</p></figcaption></figure>
+
+{% hint style="danger" %}
+Variable Name and Value are both case sensitive, Copy-paste for certainty.
+{% endhint %}
+
+{% hint style="info" %}
+Anything that includes **`=`** and doesn't start with **`-`** goes to Environment Variables, while things starting with**`-`**usually go under Game Arguments, for example**`-skipStartScreen`**
+{% endhint %}
+
 ## Troubleshooting
 
 ### This is not working!
