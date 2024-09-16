@@ -17,8 +17,8 @@ This guide will teach you how to&#x20;
 
 ### Wait, this is not what I want!
 
-* For an overview of existing hair files and -colours, check [hair.md](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
-* For a more detailed guide on hair physics, check [dangle-bones](../../for-mod-creators-theory/3d-modelling/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../for-mod-creators-theory/3d-modelling/dangle-bones/moving-a-dangle-chain.md "mention")
+* For an overview of existing hair files and -colours, check [hair.md](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
+* For a more detailed guide on hair physics, check [dangle-bones](../../../for-mod-creators-theory/3d-modelling/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../../for-mod-creators-theory/3d-modelling/dangle-bones/moving-a-dangle-chain.md "mention")
 
 You can find a video tutorial by eagul on youtube:
 
@@ -28,7 +28,7 @@ You can find a video tutorial by eagul on youtube:
 
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.13.0 (you should have it [installed and onfigured](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download))
 * [Blender](https://www.blender.org/download/releases/4-0/) >= 4.0
-* the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") (most recent version)
+* the [wolvenkit-blender-io-suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") (most recent version)
 * [UUH4V Framework](https://www.nexusmods.com/cyberpunk2077/mods/7181) (To avoid conflicts with spawned NPCs)
 
 ## Introduction
@@ -45,8 +45,8 @@ Begin by importing the player’s head. This will allow you to adjust your mesh 
 
 <table><thead><tr><th width="151">body gender</th><th>mesh path</th></tr></thead><tbody><tr><td>m</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\h0_000_pma_c__basehead.mesh</code></td></tr><tr><td>w</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\h0_000_pwa_c__basehead.mesh</code></td></tr></tbody></table>
 
-2. [Export the mesh](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit) from Wolvenkit
-3. [Import the mesh](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender) into Blender
+2. [Export the mesh](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit) from Wolvenkit
+3. [Import the mesh](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender) into Blender
 
 <img src="https://lh7-us.googleusercontent.com/c7r1m8lnmv4ZQKUBMP80hb1KfXuB3zkouaU8KxfVHCI-b_8Zxo8MHAvo7E2ATDEowIPsLtpPCkpAEdpWJ8ybDIqe-adatU5HQpqkOpYJ8dt0I9gLaJHYmMBbV6H_9CBuOQHshWPlxMjJHyUFBre4IFw" alt="" data-size="original">![](https://lh7-us.googleusercontent.com/2Ezimo8M6XC82ieS8jtJlYi\_rHTaWqBRsqIb3ARPUM3cQoakKTJ84gWpu9Xn3TU0MLVDNiBnvC-kQYmaBCsOAnR2ELH0fi4SH7MCLvvohUyvszhnYOy8UG4AOHMBBQ95folmwBov8PZ\_OUFQbcY-Ig8)
 
@@ -96,12 +96,12 @@ If you were to add this mesh in-game, it would stay on your character's head lik
 This will blow the scale of this guide and you can ignore it for now. Once you're done with your hair, come back here and look at the links below if your hair mesh includes ornaments.
 {% endhint %}
 
-You can check the [#splitting-off-submeshes-mildly-advanced](../textures-and-luts/textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced "mention") guide, or read up on material assignment in Wolvenkit under [submeshes-materials-and-chunks.md](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention").
+You can check the [#splitting-off-submeshes-mildly-advanced](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced "mention") guide, or read up on material assignment in Wolvenkit under [submeshes-materials-and-chunks.md](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention").
 
 ## The Physics
 
 {% hint style="info" %}
-For more detes about physics, check [dangle-bones](../../for-mod-creators-theory/3d-modelling/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../for-mod-creators-theory/3d-modelling/dangle-bones/moving-a-dangle-chain.md "mention"). This is not necessary for the scope of this guide!
+For more detes about physics, check [dangle-bones](../../../for-mod-creators-theory/3d-modelling/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../../for-mod-creators-theory/3d-modelling/dangle-bones/moving-a-dangle-chain.md "mention"). This is not necessary for the scope of this guide!
 {% endhint %}
 
 Remember when I said “like a helmet”? That also means your hair will not have any physics. Some short hair won’t have physics to wave around to begin with, but if you want your bangs and ponytails to wave when you open the character editor, get ready for some trial and error.
@@ -124,7 +124,7 @@ You always have to do this, even if you want to add your hair via ArchiveXL as a
 Search for a vanilla hairstyle from the game that resembles your physics part the most, and export them with Wolvenkit.&#x20;
 
 {% hint style="info" %}
-You can find overviews of all existing hair styles under [hair.md](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
+You can find overviews of all existing hair styles under [hair.md](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
 {% endhint %}
 
 What you want to look for is how much the vanilla hairstyle overlaps with your mod hairstyle. The closer their shape resembles, the better. In this case, I find hairstyle 05 to be the most suitable, so I export that mesh, as well as their rig and animgraph.
@@ -221,13 +221,13 @@ I want to use `cards`, not `cards_top`. I can manually change every instance of 
 
 Now you can install the mod and see how it looks in the game!
 
-<figure><img src="../../.gitbook/assets/Picture1.png" alt=""><figcaption><p>You call that thing hair?</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Picture1.png" alt=""><figcaption><p>You call that thing hair?</p></figcaption></figure>
 
 _Oof. The color looks about right, but…_
 
 If you’re wondering why the hair is warping weirdly like that, it’s because of the physics. It is important to understand that the method taught in this tutorial is the easiest and fastest method, but also the most unreliable. Advanced modders can weight paint and edit rigs by themselves instead of relying on vanilla hair weights, but I know neither of those so I can’t teach you how. If you can’t get your hair physics to look right, it’s perfectly fine to leave it static instead. A good looking hairstyle is better than a glitchy wavy mess like this.
 
-<figure><img src="../../.gitbook/assets/Picture2.png" alt=""><figcaption><p>Static, but no weird morphing.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Picture2.png" alt=""><figcaption><p>Static, but no weird morphing.</p></figcaption></figure>
 
 _Static hair mesh, but no weird morphing._
 
@@ -243,6 +243,6 @@ The hat’s texture is the same as any other item in the game. You can use Multi
 
 _**Tadaa! A simple hairstyle replacement with a fancy hat.**_
 
-<figure><img src="../../.gitbook/assets/Picture3.png" alt=""><figcaption><p>A complete hairstyle replacement, just like what I wanted.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Picture3.png" alt=""><figcaption><p>A complete hairstyle replacement, just like what I wanted.</p></figcaption></figure>
 
 \

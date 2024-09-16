@@ -175,7 +175,10 @@ The export process is not part of the plugin yet (1.5.0); it is documented [here
 ## Hair profiles (.hp)
 
 {% hint style="info" %}
-To learn more about .hp files and their paramaters, [check here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/materials/cyberpunk-hair-material)
+To learn more about .hp files and their parameters, see&#x20;
+
+* [hair-profiles-.hp.md](../../files-and-what-they-do/materials/hair-profiles-.hp.md "mention")
+* [hair-and-skin-material-properties.md](../../materials/configuring-materials/hair-and-skin-material-properties.md "mention") -> [#hair-material](../../materials/configuring-materials/hair-and-skin-material-properties.md#hair-material "mention")
 {% endhint %}
 
 ### Importing to Blender

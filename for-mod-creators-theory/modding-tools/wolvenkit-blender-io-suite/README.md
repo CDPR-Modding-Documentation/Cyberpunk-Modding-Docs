@@ -15,6 +15,7 @@ This is the landing page for the Wolvenkit Blender plugin. Here, you can find [#
 * [#mesh-tools](./#mesh-tools "mention")
 * [#akl-autofitter](./#akl-autofitter "mention")
 * [#collision-tools](./#collision-tools "mention")
+* [#hair-profiles-.hp](wkit-blender-plugin-import-export.md#hair-profiles-.hp "mention")
 
 ### Wait, this is not what I want!
 
