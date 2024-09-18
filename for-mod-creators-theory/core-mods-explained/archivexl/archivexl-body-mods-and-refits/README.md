@@ -3,7 +3,7 @@
 ## Summary
 
 **Published:** ?? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** August 8 2024 by AllKnowingLion\
+**Last documented update:** September 17 2024 by AllKnowingLion\
 **Minimum required ArchiveXL version:** 1.5
 
 This page explains how to enable **body mod support** in ArchiveXL:
@@ -179,6 +179,7 @@ Use only one main archive! \[[#\_nim\_more\_body\_meshes\_Gymfiend\_patch.archiv
 | [KS Lion's SoLush Body](https://www.nexusmods.com/cyberpunk2077/mods/8392)                  | Lush     | `&body=lush`       |
 | [KS Solo Ultimate](https://www.nexusmods.com/cyberpunk2077/mods/6944)                       | Ult      | `&body=ult`        |
 | [KS Solo 2.0](https://www.nexusmods.com/cyberpunk2077/mods/15869)                           | Solo\_OG | `&body=solo_og`    |
+| [Solo Arms (v1.8.1)](https://www.nexusmods.com/cyberpunk2077/mods/7148)                     | SoloArms | `&body=soloarms`   |
 | [KS Songbird 2.0](https://www.nexusmods.com/cyberpunk2077/mods/12898)                       | Song2    | `&body=song2`      |
 | [Hyst's Angel Body Mod](https://www.nexusmods.com/cyberpunk2077/mods/14896?tab=description) | Angel    | `&body=angel`      |
 | [Hyst's Big Butt](https://www.nexusmods.com/cyberpunk2077/mods/4420)                        | RB       | `&body=rb`         |
@@ -187,4 +188,5 @@ Use only one main archive! \[[#\_nim\_more\_body\_meshes\_Gymfiend\_patch.archiv
 | [Hyst's Big Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/4654)                | EBBRB    | `&body=ebbrb`      |
 | [Hyst's Big Push Up Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/9083)        | EBBPRB   | `&body=ebbprb`     |
 | [Gymfiend](https://www.nexusmods.com/cyberpunk2077/mods/6423)                               | Gymfiend | `&body=gymfiend`   |
+| [Adonis](https://www.nexusmods.com/cyberpunk2077/mods/4968)                                 | Adonis   | `&body=adonis`     |
 | [Na's Flat Chest](https://www.nexusmods.com/cyberpunk2077/mods/6883)                        | Flat     | `&body=flat`       |
