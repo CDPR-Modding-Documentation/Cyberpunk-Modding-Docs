@@ -15,8 +15,8 @@ It will give you a brief overview over the control files and tell you how to pul
 
 ### Wait, this isn't what I want!
 
-* How about [Broken link](broken-reference "mention")?
-* Find a more detailed guide about adding components to NPC app files under [appearances-change-the-looks.md](../appearances-change-the-looks.md "mention"). This may help you if you get stuck!
+* How about [amm-custom-npcs](../amm-custom-npcs/ "mention")?
+* Find a more detailed guide about adding components to NPC app files under [appearances-change-the-looks](../appearances-change-the-looks/ "mention"). This may help you if you get stuck!
 
 ### Prerequisites
 
@@ -32,6 +32,8 @@ This guide assumes that&#x20;
 ## Skipping and skimming
 
 This guide contains as little fluff as possible, and since much of it has been covered in other guides, extra information will be contained in the **links**. These will be annotated as clearly as possible with what you need to read and what's optional.
+
+<figure><img src="../../../.gitbook/assets/slow_down_kitten.jpg" alt=""><figcaption></figcaption></figure>
 
 If you're skimming in this guide, you **will** end up making mistakes. **Read thoroughly**. If at the end of a section you aren't where the guide says you're supposed to be, fall back and double-check your process. If you still have trouble, you can hit us up on [discord](https://discord.com/invite/redmodding) in the `#mod-development` channel.
 
@@ -136,7 +138,7 @@ Let's look at the .app file now.
 ## The app file
 
 {% hint style="info" %}
-You can find a more detailed guide about adding stuff to .app files under [appearances-change-the-looks.md](../appearances-change-the-looks.md "mention"). It's optional, unless you're really stuck.
+You can find a more detailed guide about adding stuff to .app files under [appearances-change-the-looks](../appearances-change-the-looks/ "mention"). It's optional, unless you're really stuck.
 {% endhint %}
 
 This section will tell you how to edit your NPV's appearance – their skin colour, chrome, piercings, tattoos. We will do this in the .app file.
@@ -162,7 +164,7 @@ If you get a bunch of errors that complain about "mesh not found in project file
 {% hint style="success" %}
 The next section, [#how-do-i-know-what-to-put](npv-creating-a-custom-npc.md#how-do-i-know-what-to-put "mention"), will help you find the right appearance names.
 
-If you feel completely lost, you can read up on [how to change NPC appearances](../appearances-change-the-looks.md) – the concept is exactly the same.&#x20;
+If you feel completely lost, you can read up on [how to change NPC appearances](../appearances-change-the-looks/) – the concept is exactly the same.&#x20;
 
 Also, [File Validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
 {% endhint %}
@@ -284,7 +286,7 @@ You can find more information at [cheat-sheet-body.md](../../../for-mod-creators
 
 Go forth and create custom apperances!&#x20;
 
-You can [check this guide](../appearances-change-the-looks.md), or look through the .app files for other NPCs for ideas. If you need further details, I highly recommend checking out NoraLee's [much more detailed tutorial](https://docs.google.com/document/d/1clFJhpi7H5jk73vUQPnjIwjkuQV6VnYkKMoXt1eYMb0/edit), which will also give you all the context you could possibly need.
+You can [check this guide](../appearances-change-the-looks/), or look through the .app files for other NPCs for ideas. If you need further details, I highly recommend checking out NoraLee's [much more detailed tutorial](https://docs.google.com/document/d/1clFJhpi7H5jk73vUQPnjIwjkuQV6VnYkKMoXt1eYMb0/edit), which will also give you all the context you could possibly need.
 
 For guides on how to export a whole animated character to Blender, you can check [here](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims).&#x20;
 

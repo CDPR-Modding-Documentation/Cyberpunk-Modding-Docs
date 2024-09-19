@@ -13,7 +13,7 @@ See the [Comprehensive Component Hierarchy List](comprehensive-components-list.m
 
 For a json dump of all existing components and their properties, check [DrPresto's github repository.](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lists/entComponent\_types.json)
 
-For a hands-on guide on how to safely change components in .app files, look [here](../../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components).
+For a hands-on guide on how to safely change components in .app files, look [here](../../../modding-guides/npcs/appearances-change-the-looks/#safely-adding-components).
 {% endhint %}
 
 Components are not a file type but an internal data structure and part of [.ent](./#.ent-entity) or [.app](./#.app-appearance-definition) files.&#x20;

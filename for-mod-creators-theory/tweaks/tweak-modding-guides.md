@@ -9,7 +9,7 @@ description: Start adding your custom items to the game without replacing
 **Created:** Mar 18 2024 by Bioskop\
 **Last documented update:** Mar 24 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page links to those guides on our wiki that involve tweak editing. For a collection of all dedicated Tweak guides, please check [Broken link](broken-reference "mention") -> [tweakxl-changing-game-records](../../for-mod-creators/modding-guides/tweakxl-changing-game-records/ "mention")
+This page links to those guides on our wiki that involve tweak editing. For a collection of all dedicated Tweak guides, please check [tweakxl-changing-game-records](../../for-mod-creators/modding-guides/tweakxl-changing-game-records/ "mention")
 
 ***
 

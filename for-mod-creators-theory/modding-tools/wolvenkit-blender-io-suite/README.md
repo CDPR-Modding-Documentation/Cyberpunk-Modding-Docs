@@ -100,7 +100,7 @@ Lets you change the armature target (the skeleton that'll move and deform your m
 Lets you export a hair profile. For documentation, see [#hair-profiles-.hp](wkit-blender-plugin-import-export.md#hair-profiles-.hp "mention")
 
 {% hint style="info" %}
-You can find a guide about [Broken link](broken-reference "mention") at the link.
+You can find a guide about [hair-modeling-beginner-tutorial.md](../../3d-modelling/hair-modeling-beginner-tutorial.md "mention") at the link.
 {% endhint %}
 
 #### UV Checker

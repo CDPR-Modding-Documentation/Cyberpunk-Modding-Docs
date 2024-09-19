@@ -7,7 +7,7 @@ description: Hierarchy of WolvenKit.RED4.Types.entIComponent
 {% hint style="info" %}
 Full list of components, organized by hierarchy, useful for researching and documenting new components. For a json dump of all existing components and their properties, check [DrPresto's github repository.](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lists/entComponent\_types.json)
 
-For a hands-on guide on how to safely change components in .app files, look [here](../../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components).
+For a hands-on guide on how to safely change components in .app files, look [here](../../../modding-guides/npcs/appearances-change-the-looks/#safely-adding-components).
 {% endhint %}
 
 {% hint style="info" %}

@@ -30,7 +30,7 @@ For the wiki version of this guide, see [here](../npcs/npv-v-as-custom-npc/).
 ## Other relevant guides on this wiki
 
 * [How to find items in the game files](../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#from-a-baseid-to-an-items-materials)
-* [Changing NPC appearances](../npcs/appearances-change-the-looks.md): How to swap out components in an .app file&#x20;
+* [Changing NPC appearances](../npcs/appearances-change-the-looks/): How to swap out components in an .app file&#x20;
 
 ## Other information
 

@@ -261,7 +261,7 @@ The Tweak DB can be interacted with using Cyberpunk's official **REDmod**, or nu
 
 
 {% hint style="info" %}
-For an explanation of the TweakDB, see [Broken link](broken-reference "mention")
+For an explanation of the TweakDB, browse this section, or check [TweakXL's github documentation](https://github.com/psiberx/cp2077-tweak-xl/wiki/TweakDB).
 {% endhint %}
 
 ## Player Garments/Equipment Graph

@@ -393,7 +393,7 @@ Most likely, you have ignored the [hint box](./#get-the-files-create-the-structu
 {% hint style="info" %}
 **If you are here because of a link from a different guide:**
 
-You can find out which entity file your item uses by right-clicking on your mesh and selecting "find files using this". Add the .ent file to the list and open it in WolvenKit. Then, [replace the contents](../../npcs/appearances-change-the-looks.md#safely-adding-components) of the "components" array with those of an .ent file from the correct folder — don't forget to change the path to your mesh again!
+You can find out which entity file your item uses by right-clicking on your mesh and selecting "find files using this". Add the .ent file to the list and open it in WolvenKit. Then, [replace the contents](../../npcs/appearances-change-the-looks/#safely-adding-components) of the "components" array with those of an .ent file from the correct folder — don't forget to change the path to your mesh again!
 {% endhint %}
 
 ### I spawn my item, but it's not added to my inventory!

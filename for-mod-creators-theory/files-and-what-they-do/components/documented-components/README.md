@@ -5,7 +5,7 @@ See the [Comprehensive Component Hierarchy List](../comprehensive-components-lis
 
 For a json dump of all existing components and their properties, check [DrPresto's github repository.](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lists/entComponent\_types.json)
 
-For a hands-on guide on how to safely change components in .app files, look [here](../../../../modding-guides/npcs/appearances-change-the-looks.md#safely-adding-components).
+For a hands-on guide on how to safely change components in .app files, look [here](../../../../modding-guides/npcs/appearances-change-the-looks/#safely-adding-components).
 {% endhint %}
 
 ## Mesh components: Equipment/Hair

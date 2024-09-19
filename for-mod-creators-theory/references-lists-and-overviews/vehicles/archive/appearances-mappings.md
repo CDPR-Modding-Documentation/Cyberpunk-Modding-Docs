@@ -9,7 +9,7 @@ In `base\appearance_mappings.json`, entity types have their resources defined. T
 | key                  | value                                                                        |
 | -------------------- | ---------------------------------------------------------------------------- |
 | name                 | Vehicle                                                                      |
-| baseTypesFile        | [base\vehicles\base\_types\_map.csv](broken-reference)                       |
+| baseTypesFile        | base\vehicles\base\_types\_map.csv                                           |
 | baseTypePrefix       | baseType                                                                     |
 | categoriesFile       | base\vehicles\categories.csv                                                 |
 | partsFile            | [base\vehicles\parts.csv](parts-and-parts-categories.md)                     |

@@ -19,7 +19,7 @@ You can find the original instructions in the [mod description](https://www.nexu
 {% endhint %}
 
 {% hint style="warning" %}
-If you experience floating clothes, try **switching appearances**. Often, that resolves the issue. If not, you can check [appearances-change-the-looks.md](../appearances-change-the-looks.md "mention") for how to copy the correct components.
+If you experience floating clothes, try **switching appearances**. Often, that resolves the issue. If not, you can check [appearances-change-the-looks](../appearances-change-the-looks/ "mention") for how to copy the correct components.
 {% endhint %}
 
 ## Compatibility: NPV < 2.0.0
@@ -61,7 +61,7 @@ base\characters\appearances > npv
 If you don't find those files, your [AMM Nibbles Replacer](https://www.nexusmods.com/cyberpunk2077/mods/8125) isn't installed correctly. You'll want to fix this before proceeding.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/npv_replacer_overwrite_app.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/npv_replacer_overwrite_app.png" alt=""><figcaption></figcaption></figure>
 
 Find the file that you want to use, and [add it to your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
 
@@ -113,7 +113,7 @@ In theory, yes. In practice, you'd have to edit both AMM and the Nibbles Replace
 </strong>base\animations\facial\_facial_graphs\player_man_photomode_sermo.animgraph
 </code></pre>
 
-<figure><img src="../../../../.gitbook/assets/npv_photomode_replacer_animgraph.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/npv_photomode_replacer_animgraph.png" alt=""><figcaption></figcaption></figure>
 
 3. Save the file. You now have photo mode expressions, but no more AMM expressions. Can only have one…
 

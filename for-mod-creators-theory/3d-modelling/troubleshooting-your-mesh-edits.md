@@ -228,7 +228,7 @@ Do they show up in the Wolvenkit preview?
 
 ### My mesh won't move at all
 
-Some meshes require an entAnimatedComponent along with the garment's component. Check [here](../../modding-guides/npcs/appearances-change-the-looks.md#animations-if-you-cant-avoid-them-copy-them-as-well) for details.
+Some meshes require an entAnimatedComponent along with the garment's component. Check [here](../../modding-guides/npcs/appearances-change-the-looks/#animations-if-you-cant-avoid-them-copy-them-as-well) for details.
 
 ### Changes from Blender are missing in-game
 

@@ -16,7 +16,7 @@ Don't forget: To quickly find somebody's entry, you can use your browser's searc
 
 ### Wait, this isn't what I'm looking for!
 
-To change NPC appearances, see [appearances-change-the-looks.md](../../modding-guides/npcs/appearances-change-the-looks.md "mention")
+To change NPC appearances, see [appearances-change-the-looks](../../modding-guides/npcs/appearances-change-the-looks/ "mention")
 
 To create custom NPCs, see [amm-custom-npcs](../../modding-guides/npcs/amm-custom-npcs/ "mention")
 

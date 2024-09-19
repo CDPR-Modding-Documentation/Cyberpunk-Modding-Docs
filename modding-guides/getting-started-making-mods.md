@@ -103,7 +103,7 @@ You can check out the [npcs](npcs/ "mention") section. If you feel lost or need 
 Otherwise, you can take a look at these guides:
 
 1. [amm-custom-npcs](npcs/amm-custom-npcs/ "mention")
-2. [appearances-change-the-looks.md](npcs/appearances-change-the-looks.md "mention")
+2. [appearances-change-the-looks](npcs/appearances-change-the-looks/ "mention")
 
 ## Synopsis
 

@@ -7,7 +7,7 @@ description: Documentation on .mesh files and their properties.
 ## Summary
 
 **Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit:** May 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit:** Sep 19 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page contains information on .mesh files and their properties.
 
@@ -78,7 +78,7 @@ One `appearance` has a number of `chunkMaterials`, which tell Cyberpunk how they
 
 Wolvenkit will follow these entries to materialEntries, where they are **defined**:
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/materials_materialentries_overview.png" alt=""><figcaption></figcaption></figure>
 
 The **`index`** property in materialEntries will finally point at the material's instance, where you can find its properties. Depending on `isLocalInstance`, that can be one of several places — find a list in [#step-3-material-definition](./#step-3-material-definition "mention").
 
@@ -150,9 +150,9 @@ A material instance looks like this:
 <figure><img src="../../../.gitbook/assets/material_docu_material_instance.png" alt=""><figcaption><p>baseMaterial picks the material (shader), while "values" contains <a href="./#checking-material-properties">properties</a> to adjust it.</p></figcaption></figure>
 
 {% hint style="info" %}
-You can find a guide about [texture editing](../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) and [adding custom textures](../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-4-optional-custompathing) in the [Broken link](broken-reference "mention") section.
+You can find a guide about [texture editing](../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md) and [adding custom textures](../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-4-optional-custompathing) in the **Modding Guides** section.
 
-For an overview of materials that you might want to use for something, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).
+For an overview of existing materials, check [here](../../references-lists-and-overviews/cheat-sheet-materials.md).
 
 For how to find out which properties a material has, check [here](../../materials/#checking-material-properties).
 {% endhint %}

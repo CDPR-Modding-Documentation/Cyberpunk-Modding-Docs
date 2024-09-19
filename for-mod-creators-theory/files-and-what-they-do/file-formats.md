@@ -29,7 +29,7 @@ Holds a list of components.
 [As of Phantom Liberty, there are duplicates of many .ent files in the filebase. Whenever you come across a duplicate, pick the one that has "ep1" in its name.](#user-content-fn-1)[^1]
 {% endhint %}
 
-The **entry point** for the game to display an [NPC](../../modding-guides/npcs/appearances-change-the-looks.md#the-.ent-file) or [prop](../../modding-guides/everything-else/custom-props/). It is a collection of components that the entity is comprised of, determining their parameters or referencing the files that have said parameters. For instance, NPC .ent files have over a hundred components each, such as entAnimatedComponent (references the correct .anims, .animgraph and .rig files), entTemplateAppearance (references all .app files that are applicable to the entity) and entEffectSpawner (references all .effect files for decals or particles that the entity can spawn). Many of these components have configurable parameters, and the .ent file itself has many under the "entity" section. Many of these parameters, however, are merely the initial state of the entity and are modified in gameplay (such as the boolean isRagdolling).
+The **entry point** for the game to display an [NPC](../../modding-guides/npcs/appearances-change-the-looks/#the-.ent-file) or [prop](../../modding-guides/everything-else/custom-props/). It is a collection of components that the entity is comprised of, determining their parameters or referencing the files that have said parameters. For instance, NPC .ent files have over a hundred components each, such as entAnimatedComponent (references the correct .anims, .animgraph and .rig files), entTemplateAppearance (references all .app files that are applicable to the entity) and entEffectSpawner (references all .effect files for decals or particles that the entity can spawn). Many of these components have configurable parameters, and the .ent file itself has many under the "entity" section. Many of these parameters, however, are merely the initial state of the entity and are modified in gameplay (such as the boolean isRagdolling).
 
 From ArchiveXL item additions, this kind of file is usually called a **root entity**.
 
@@ -53,7 +53,7 @@ Not a file type but an internal data structure and part of [.ent](file-formats.m
 
 ## .mesh (3d object)
 
-A 3d object, holding [appearances](../../modding-guides/npcs/appearances-change-the-looks.md), [materials](../materials/), and [rigging](../3d-modelling/meshes-and-armatures-rigging.md). Meshes for inanimate objects also tend to contain the physics parameters of these objects, whereas NPC meshes tend to contain some garment parameters.
+A 3d object, holding [appearances](../../modding-guides/npcs/appearances-change-the-looks/), [materials](../materials/), and [rigging](../3d-modelling/meshes-and-armatures-rigging.md). Meshes for inanimate objects also tend to contain the physics parameters of these objects, whereas NPC meshes tend to contain some garment parameters.
 
 A mesh can have several **submeshes**, which can be displayed or hidden via [chunkmasks](../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides).&#x20;
 

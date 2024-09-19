@@ -5,7 +5,7 @@ description: All the dirty detes on appearance files
 # Appearance: .app files
 
 {% hint style="success" %}
-If you want to modify an .app file to change an NPC's appearance, check [here](../../../modding-guides/npcs/appearances-change-the-looks.md#the-.app-file)!
+If you want to modify an .app file to change an NPC's appearance, check [here](../../../modding-guides/npcs/appearances-change-the-looks/#the-.app-file)!
 
 To learn how to influence items inside appearances, check [#partsoverrides-changing-other-meshes](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-changing-other-meshes "mention")
 {% endhint %}

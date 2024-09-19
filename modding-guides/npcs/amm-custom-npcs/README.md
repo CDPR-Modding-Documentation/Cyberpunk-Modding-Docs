@@ -101,7 +101,7 @@ In the `.lua` file, add an appearance to the `appearances` array to register it 
    2. Right-click and select "[Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
    3. Change the appearance's `name` to the value you used in step 2.3.2
 
-Now it's time to adjust the components. This guide won't go into detail about this — see [appearances-change-the-looks.md](../appearances-change-the-looks.md "mention") for more intel on the process.
+Now it's time to adjust the components. This guide won't go into detail about this — see [appearances-change-the-looks](../appearances-change-the-looks/ "mention") for more intel on the process.
 
 ## Finishing and cleaning up
 
