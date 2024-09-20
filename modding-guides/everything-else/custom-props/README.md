@@ -7,11 +7,11 @@ description: How to create custom props to use with AMM or sector editing
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published:** April 2023 by **@manavortex**\
-**Last documented update:** May 07 2024 by **@manavortex**
+**Last documented update:** Sep 20 2024 by **@manavortex**
 
 This guide will teach you how to create AMM props in two variants:
 
-* the "vanilla" way by using a [mesh entity](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) with a [.mesh](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with only one appearance
+* the old way by using a [mesh entity](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) with a [.mesh](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with only one appearance
 * customizable by chaining a [`root entity`](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity), an [`.app`](../../../for-mod-creators/files-and-what-they-do/appearance-.app-files), and a [`.mesh`](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with multiple appearances.
 
 Its focus is on the **file structure** and the **relations between the files**.
@@ -70,7 +70,7 @@ At any part during the process, you can [install the mod](https://app.gitbook.co
 
 1. Create a [project in Wolvenkit](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name. This will later be the name of your archive file.
 2. Download the AMM prop template from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8011). Download **the complete source folder**, as it will have the files as depicted below.
-3. Prepare your Wolvenkit project by merging the source folder you downloaded with the one from your project. By the end of it, you should have the following files:
+3. Prepare your Wolvenkit project by [merging the source folder](#user-content-fn-1)[^1] you downloaded with the one from your project. By the end of it, you should have the following files:
 
 {% hint style="warning" %}
 If you want to move or rename anything, please do it as specified in [moving-and-renaming-in-existing-projects.md](../../items-equipment/moving-and-renaming-in-existing-projects.md "mention"). Doing anything else will **break the mod**.
@@ -129,7 +129,7 @@ return {
 }
 ```
 
-Without a `lua` file, AMM (as of version 2.1) won't be able to spawn your props.
+Without a `lua` file, AMM won't know about your props, and thus can't spawn them.
 
 Here's what the lines do:
 
@@ -141,9 +141,15 @@ When you edit the .lua, it's usually enough to `reload all mods` in CET.
 
 #### Entity file
 
-Defined in your `LUA` file, this file holds the game entity that AMM spawns when you click the button. There are two ways of using entity files:
+Defined in your `LUA` file, this file holds the **game entity** that AMM spawns when you click the button. There are two ways of using entity files:
 
-[**Mesh entity**](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) **(the legacy version)**
+#### [**Mesh entity**](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) **(the legacy version)**
+
+{% hint style="info" %}
+**Fun fact:** The cluttered prop browser annoyed manavortex so much that she helped Max implement the [alternative workflow](./#root-entity) described below the picture, and wrote this guide!
+
+It was **that** bad!
+{% endhint %}
 
 One entity file per variant. The props will not have appearances — AMM's prop browser has one entry per entity file (e.g. `cube_black`, `cube_white`, `cube_glowing`).
 
@@ -152,17 +158,11 @@ Edit this kind of prop by opening the following file in Wolvenkit:
 <pre><code><strong>tutorial\amm_props\template_no_variants\template_no_variants.ent
 </strong></code></pre>
 
-{% hint style="info" %}
-**Fun fact:** The cluttered prop browser annoyed manavortex so much that she joined the AMM developer team, helped Max implement the alternative workflow described below the picture, and wrote this guide!
-
-It was bad!
-{% endhint %}
-
 You add props by putting meshes directly into the components array:
 
 <figure><img src="../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>tutorial\amm_props\template_no_variants\template_no_variants.ent<br>Mesh/Component entity, loading something directly. You can read more about the theory <a href="../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
-[**Root entity**](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity)
+#### [**Root entity**](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity)
 
 One entity file per prop, one entry in AMM's prop browser (e.g. `cube`). After spawning it, you can toggle its appearances (`white`, `black`, `glowing`) the same way you do it with NPCs.
 
@@ -371,3 +371,5 @@ If that's not it and if you have a customizable prop (with a root entity), try a
 ### My prop spawns, but something about it is weird!
 
 In general, your answer is probably in the guide on [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention"), section 2 ([processing the mesh](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)) – check that guide's [troubleshooting section](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#troubleshooting).
+
+[^1]: Use the Windows Explorer to move the downloaded source folder on top of the Wolvenkit project's source folder.
