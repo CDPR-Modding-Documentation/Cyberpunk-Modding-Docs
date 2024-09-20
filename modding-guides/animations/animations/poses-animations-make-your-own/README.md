@@ -182,14 +182,15 @@ The names **must** be the same, and they **must** match the name in your .anim f
 7. **Optional:** To add another pose, you can go back to Step 1, then rinse and repeat.
 8. Now that you're sure that you have the correct names, switch the viewport back to **Object Mode** (the same way you switched to pose mode). Your armature should still be selected.\
    _TODO: This step will be made **optional** when the Blender plugin update hits. Update guide when it does._
-9. From the File -> Export menu, select `Export Selection to GLB for Cyberpunk`
 
-<figure><img src="../../../../.gitbook/assets/animations_blender_export_selection.png" alt=""><figcaption></figcaption></figure>
+### **Exporting**
 
-8. This will open a file picker. Do the following things:
+Use the Wolvenkit Blender Plugin to [export your animation](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender-1) as a .glb file. If the instructions below don't match, check [wkit-blender-plugin-import-export.md](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#animations](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#animations "mention") for the up-to-date workflow.
+
+1. This will open a file picker. Do the following things:
    * Check the `Animations` box on the right
    * Navigate the to the path of the file you exported in the [previous step](./#your-wolvenkit-project) and click on it to overwrite it
-9. When you're done, hit "Export for Cyberpunk".
+2. When you're done, hit "Export for Cyberpunk".
 
 Now it's time to import the file back into Wolvenkit.
 
