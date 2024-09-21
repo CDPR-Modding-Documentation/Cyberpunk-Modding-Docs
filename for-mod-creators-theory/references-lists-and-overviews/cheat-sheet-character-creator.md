@@ -75,6 +75,10 @@ Link: [Reference images on imgur](https://imgur.com/a/NlbCHYK)
 
 <figure><img src="../../.gitbook/assets/done.png" alt=""><figcaption></figcaption></figure>
 
+## Eye Make-Up Color
+
+<figure><img src="../../.gitbook/assets/character_creator_eye_makeup.png" alt=""><figcaption></figcaption></figure>
+
 ## Hairstyle
 
 <figure><img src="https://lh7-us.googleusercontent.com/RI9Ee_FGHg0wskRK3SlVVpxbU5WuK7H0o0FDip15fb59vaJq8EfHmLshv5BoN-arccmH1kF7oYlp1fZL9jR6xWXb33NQDWol_1v44AFx7pOmTXzmbqn5syIkHVSTDMw60YH0PlAtQn8qtF1hz-iGHYo" alt="" width="563"><figcaption><p>credit to this <a href="https://www.reddit.com/r/cyberpunkgame/comments/t4nsi9/my_written_guide_on_how_to_make_hairstyles_in/">Reddit</a> post.</p></figcaption></figure>
