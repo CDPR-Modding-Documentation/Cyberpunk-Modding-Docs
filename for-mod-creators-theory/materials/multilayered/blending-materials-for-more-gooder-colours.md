@@ -29,7 +29,7 @@ For a specific example, we'll try to get yellow to look nice as I find yellow to
 
 ## The Texture
 
-This method of layering materials unfortunately drastically reduces the effect of the `normals` of each material. I don't know why that is, but materials lack texture when layering them. A workaround is to mis-appropriate a materials `normals` as a `microblend` for another material.
+This method of layering materials unfortunately drastically reduces the effect of the `normals` of each material. `normals` become "filled in" the more of them you stack. A workaround is to mis-appropriate a materials `normals` as a `microblend` for another material.
 
 1. Copy the path of the `.mltemplate` of a material whose texture you want to use from MLSB.
 2. Paste the path into WolvenKits Asset Browser and hit `Enter` to search.
@@ -44,6 +44,25 @@ This method of layering materials unfortunately drastically reduces the effect o
 </div>
 
 <figure><img src="../../../.gitbook/assets/Cyberpunk2077 2024-05-29 00-25-22.png" alt=""><figcaption><p>cotton_twill_clean_01_30_n.xbm in-game</p></figcaption></figure>
+
+`normals` of `µblends` can also be inverted by setting their intensity to a negative number. this will, for example, turn a relief from pointing outwards to pointing inwards. This is sometimes necessary when using the `normals` from an `mltemplate` as a `µblend`, but creative choice takes precendence, of course.
+
+| µblend normals at 1.0                                            | µblend normals at -1.0                                           |
+| ---------------------------------------------------------------- | ---------------------------------------------------------------- |
+| ![](../../../.gitbook/assets/normal\_positive.png)               | ![](../../../.gitbook/assets/normal\_negative.png)               |
+| ![](<../../../.gitbook/assets/Screenshot 2024-09-22 154016.png>) | ![](<../../../.gitbook/assets/Screenshot 2024-09-22 154006.png>) |
+
+## The Opacity
+
+Cyberpunk allows layers in your `mlsetup` to exceed `Opacity 1.0`. What this does is amplify your current layer. This is very useful for camouflage materials such as `denim_camo_01_30`. This material looks faint and lacks saturation by default. This can be mitigated by setting the `Opacity` to `3.0`. For `denim_camo_01_30` I'd also recommend using olive green as the base colour for your camo layer in the `mlsetup`.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2024-09-22 150310.png" alt=""><figcaption><p>denim_camo_01_30 at Opacity 3 to enhance colour and pattern. Normals set to undefined. Texture intensity is controlled via µblend.</p></figcaption></figure>
+
+| ↓ Green base, opacity 3.0                          | ↓ Green base, opacity 1.0                          |
+| -------------------------------------------------- | -------------------------------------------------- |
+| ![](../../../.gitbook/assets/camo\_green\_3-0.png) | ![](../../../.gitbook/assets/camo\_green\_1-0.png) |
+| ↓ Grey base, opacity 3.0                           | ↓ Grey base, opacity 1.0                           |
+| ![](../../../.gitbook/assets/camo\_grey\_3-0.png)  | ![](../../../.gitbook/assets/camo\_grey\_1-0.png)  |
 
 ## The Shininess
 
@@ -64,6 +83,16 @@ Confusingly, the opposite might be true, as well. In the following example, `0.6
 |                velvet\_clean\_01\_30 @ 0.6667,0.3333                |                velvet\_clean\_01\_30 @ 0.3333,0.6667                |
 | :-----------------------------------------------------------------: | :-----------------------------------------------------------------: |
 | ![](../../../.gitbook/assets/velvet\_clean\_01\_30\_6667\_3333.png) | ![](../../../.gitbook/assets/velvet\_clean\_01\_30\_3333\_6667.png) |
+
+## The Versatility
+
+Most of my `mlsetups` bascially exclusively contain layers of `velvet_clean_01_30` or a similar cloth material with different `µblends`. Exceptions are `latex_neon_01_30` for anything yellow as described above, and any metals. Although you can colourise those with an additional layer of `velvet_clean_01_30`.
+
+| Item                                                                  | MLSB Screenshot                                                  |
+| --------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| ![](<../../../.gitbook/assets/Cyberpunk2077 2024-09-22 15-15-34.png>) | ![](<../../../.gitbook/assets/Screenshot 2024-09-22 145959.png>) |
+| ![](<../../../.gitbook/assets/Cyberpunk2077 2024-09-22 15-17-32.png>) | ![](<../../../.gitbook/assets/Screenshot 2024-09-22 150153.png>) |
+| ![](<../../../.gitbook/assets/Cyberpunk2077 2024-09-22 15-44-40.png>) | ![](<../../../.gitbook/assets/Screenshot 2024-09-22 161255.png>) |
 
 ## The Outro
 
