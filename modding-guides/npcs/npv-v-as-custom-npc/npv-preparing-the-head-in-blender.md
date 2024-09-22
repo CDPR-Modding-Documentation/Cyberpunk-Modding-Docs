@@ -20,7 +20,7 @@ If you want a 3d model, you probably know what you're doing; in that case, make 
 * [ ] You have downloaded the prepared Wolvenkit Project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328)
 * [ ] You have [Blender](https://www.blender.org/download/) installed \
   _(confirmed working on 3.5.1, 3.6 and 4.0)_
-* [ ] You have the Wolvenkit Blender Plugin (you won't be able to export otherwise). Check [installing-the-wolvenkit-blender-plugin.md](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin.md "mention") if you don't.
+* [ ] You have the Wolvenkit Blender Plugin (you won't be able to export otherwise). Check [installing-the-wolvenkit-blender-plugin](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/ "mention") if you don't.
 
 In this section, we will be moving/deleting files. You can complete these steps in Wolvenkit or in the Windows File Explorer.
 

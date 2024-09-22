@@ -4,15 +4,20 @@ description: Install guide
 
 # Installing the Wolvenkit Blender Plugin
 
+## Summary
+
+**Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** 22.09.2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
 ## Step 0: Uninstall the old version
 
 {% hint style="info" %}
-If you never installed a previous version of the plugin, you can go straight to [#step-1-install-the-plugin](installing-the-wolvenkit-blender-plugin.md#step-1-install-the-plugin "mention")
+If you never installed a previous version of the plugin, you can go straight to [#step-1-install-the-plugin](./#step-1-install-the-plugin "mention")
 {% endhint %}
 
 1. Open the Blender Preferences (Toolbar: `Edit` -> `Preferences`) and select the `AddOns` tab
 
-<figure><img src="../../../.gitbook/assets/blender_plugin_uninstall.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/blender_plugin_uninstall.png" alt=""><figcaption></figcaption></figure>
 
 Complete either of the options below:
 
@@ -36,18 +41,22 @@ Optional: Close and re-open Blender
 
 ## Step 1: Install the plugin
 
-Download the latest version of the plugin from **github:**&#x20;
+{% hint style="info" %}
+If you want to install the current development version of the plugin, read [installing-from-github-source.md](installing-from-github-source.md "mention").&#x20;
+{% endhint %}
+
+Download the latest release of the plugin from **github:**&#x20;
 
 1. On the [releases](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) page, find the most recent release
 2. Scroll past the change notes to the **Assets** section
 3. Download the zip file with the plugin:
 
-<figure><img src="../../../.gitbook/assets/blender_plugin_download.png" alt=""><figcaption><p>Do not download anything called "Source code", unless you know what you're doing</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/blender_plugin_download.png" alt=""><figcaption><p>Do not download anything called "Source code", unless you know what you're doing</p></figcaption></figure>
 
 3. Start Blender
 4. Open the Blender Preferences (Toolbar: `Edit` -> `Preferences`) and select the `AddOns` tab
 
-<figure><img src="../../../.gitbook/assets/blender_plugin_install.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/blender_plugin_install.png" alt=""><figcaption></figcaption></figure>
 
 5. Click the "Install" button and select the zip file you downloaded in step 2
 
@@ -59,7 +68,7 @@ You only need to do this if you never installed the plugin before.
 
 After you have successfully installed the plugin, you can now use the search bar to find it:
 
-<figure><img src="../../../.gitbook/assets/blender_plugin_enable.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/blender_plugin_enable.png" alt=""><figcaption></figcaption></figure>
 
 Make sure the box is checked and restart Blender.
 

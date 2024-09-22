@@ -47,7 +47,7 @@ You can see the exact Blender version in the lower right corner of the program:
 <figure><img src="../../../.gitbook/assets/blender_plugin_check_version.png" alt=""><figcaption></figcaption></figure>
 
 5. Check on [**github**](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) that this is the last available version of the plugin.&#x20;
-6. If it's not, you need to update. [Uninstall ](installing-the-wolvenkit-blender-plugin.md#step-0-uninstall-the-old-version)the old version, then [install](installing-the-wolvenkit-blender-plugin.md#step-1-install-the-plugin) the most recent plugin
+6. If it's not, you need to update. [Uninstall ](installing-the-wolvenkit-blender-plugin/#step-0-uninstall-the-old-version)the old version, then [install](installing-the-wolvenkit-blender-plugin/#step-1-install-the-plugin) the most recent plugin
 
 {% hint style="info" %}
 You need to restart Blender after updating the plugin!
