@@ -251,9 +251,9 @@ The [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "m
 Nobody likes weight painting.
 {% endhint %}
 
-This is where you pray that you don't have to do this (and I pray that nobody will have to actually write this section), because weight painting sucks. you can find some general information on [meshes-and-armatures-rigging.md](meshes-and-armatures-rigging.md "mention").
+This is what you need to do if your mesh moves unevenly or if parts of it are clipping through the body although things are fitting correctly. Pray that you don't have to do it, because it sucks.
 
-This is what you need to do if your mesh moves unevenly or if parts of it are clipping through the body although things are fitting correctly.
+If you're unfortunate, you can find a guide on [weight-painting-for-gonks.md](weight-painting-for-gonks.md "mention")!
 
 ## Step 5: Exporting from Blender
 

@@ -182,6 +182,7 @@
   * [Archived: Exporting and importing meshes](for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/README.md)
     * [Autodesk/FBX (Noesis)](for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/autodesk-fbx-noesis.md)
     * [with 3DS MAX (archived)](for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/3ds-max.md)
+  * [Weight Painting for Gonks](for-mod-creators-theory/3d-modelling/weight-painting-for-gonks.md)
 * [🔮 Textures, Materials and Shaders](for-mod-creators-theory/materials/README.md)
   * [🖼️ Textures](for-mod-creators/materials/textures.md)
   * [Shaders](for-mod-creators-theory/materials/shaders/README.md)
