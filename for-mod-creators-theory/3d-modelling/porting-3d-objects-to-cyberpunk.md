@@ -230,18 +230,19 @@ The [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "m
 
 <summary>Transferring weights by hand</summary>
 
-1. Select your mesh
-2. Select the original mesh
+1. Select the original mesh
+2. Select your mesh
 3. Select "Link Mesh Data" (Hotkey: Ctrl+L)
 4. Select "Transfer Mesh Data" (second from the bottom)
 5. Open the little popup at the bottom left of your viewport. Select the following options:
-   * **Data Type:** Vertex Group(s)
-   * **Vertex Mapping:** Nearest Face Interpolated
-   * **Source Layers Selection:** All Layers
+   1. **Data Type:** Vertex Group(s)
+   2. **Vertex Mapping:** Nearest Face Interpolated
+   3. **Source Layers Selection:** By Name
+6. Repeat that process for all of your meshes.&#x20;
 
 <img src="../../.gitbook/assets/porting_transfer_vertex_weights.png" alt="" data-size="original">
 
-6. Repeat that process for all of your meshes.&#x20;
+
 
 </details>
 
