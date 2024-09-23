@@ -58,6 +58,8 @@ You will delete fewer meshes if you read all of the sections below before starti
 
 Items move because they are tied to the armature's bones. For that to work, the armature you're working needs to **have** those bones in the first place. Most shoe meshes won't include head bones, which means that they won't work for sunglasses.
 
+Every piece of equipment needs its own armature, or it will just vaguely float around V's position.
+
 The default fallback mesh that people use in this case is the [Netrunner Suit](troubleshooting-your-mesh-edits.md#option-2-the-netrunner-suit).
 
 </details>
@@ -97,24 +99,24 @@ For torso items, you can add `t1` for inner torso items (tight-fitting) or `t2` 
 
 For **where** to export a mesh, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
 
-For **how** to export a mesh, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
+For **how** to export a mesh, see  [wkit-blender-plugin-import-export.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention") -> [#export-from-wolvenkit](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit "mention")
 
 {% hint style="info" %}
 If your mesh won't export from Wolvenkit, try unchecking the following box(es) in the export settings (by unchecking the boxes):&#x20;
 
-* [export-materials](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials "mention")
-* [export-garment-support-experimental](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-experimental "mention")
+* [Export Materials (default)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials-default "mention")
+* [Export Garment Support (default)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-default "mention")
 {% endhint %}
 
 Once you are done, you can find the exported glb in your project's raw folder (see [Project Explorer Tabs](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#project-explorer-tabs "mention") or[File Structure: the raw folder](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure-the-raw-folder "mention") for details).
 
 ## Step 2: Importing your mesh into Blender
 
-This part won't be documented here. If you don't have an entry in your import menu, hit up Google - get that thing into Blender somehow.
+For **how** to import a mesh into Blender see  [wkit-blender-plugin-import-export.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention") -> [#importing-into-blender](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender "mention")
 
 ### Step 2.5: getting a grip on the submesh count
 
-The mesh count in Blender corresponds to the submesh/chunk count in Wolvenkit. In Cyberpunk, we have one submesh per material that we want to use.&#x20;
+The **mesh count** in Blender corresponds to the [**submesh/chunk** ](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md)count in Wolvenkit. In Cyberpunk, we have one submesh per material that we want to use.&#x20;
 
 If you don't know what that means, ignore the information for now - but few meshes use more than five. The current maximum is the player base body with a total count of ten submeshes per LOD[^1], so to be on the safe side, we need to stay below that.
 
@@ -144,7 +146,7 @@ There are two strategies that you can use. Personally, I use [#strategy-1-replac
 
 ### Preparation
 
-By the end of your section, you should have something like this:
+By the end of this section, you should have something like this:
 
 <figure><img src="../../.gitbook/assets/porting_clothing_cleared_up.png" alt=""><figcaption><p>Read on to find out how to get there</p></figcaption></figure>
 
