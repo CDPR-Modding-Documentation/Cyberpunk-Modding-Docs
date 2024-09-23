@@ -12,9 +12,13 @@ description: How to create custom props to use with AMM or sector editing
 This guide will teach you how to create AMM props in two variants:
 
 * the old way by using a [mesh entity](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) with a [.mesh](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with only one appearance
-* customizable by chaining a [`root entity`](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity), an [`.app`](../../../for-mod-creators/files-and-what-they-do/appearance-.app-files), and a [`.mesh`](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with multiple appearances.
+* customizable by chaining a [`root entity`](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity), an [`.app`](../../../for-mod-creators/files-and-what-they-do/appearance-.app-files), and a [`.mesh`](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with multiple appearances
 
 Its focus is on the **file structure** and the **relations between the files**.
+
+{% hint style="danger" %}
+If this is the first prop you make and you're not familiar with the import/export process yet, follow [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention") for a step-by-step guide, then come back here to create your own structure.
+{% endhint %}
 
 ### Wait, this isn't what I want!
 
