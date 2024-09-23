@@ -232,7 +232,7 @@ The [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "m
 
 1. Select the original mesh
 2. Select your mesh
-3. Select "Link Mesh Data" (Hotkey: Ctrl+L)
+3. Select "Object -> Link Mesh Data" (Hotkey: Ctrl+L) _alternatively: the Weight Transfer menu in the Weight Painting perspective_
 4. Select "Transfer Mesh Data" (second from the bottom)
 5. Open the little popup at the bottom left of your viewport. Select the following options:
    1. **Data Type:** Vertex Group(s)
