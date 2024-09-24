@@ -26,7 +26,7 @@ The only thing that **requires** REDmod format are custom audio file additions (
 {% endhint %}
 
 {% hint style="info" %}
-You can **convert** REDmods to the legacy format by putting any files into the [correct subfolders](../). Further conversion is not necessary.
+You can **convert** REDmods to the legacy format by putting any files into the [correct subfolders](../). `.script` files need to be converted to `.reds`, but TweakXL can simply read REDMod tweaks.
 {% endhint %}
 
 ## Using Mods
