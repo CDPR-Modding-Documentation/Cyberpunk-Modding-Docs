@@ -86,7 +86,7 @@ You can switch between the most commonly used modes, **Object** and **Edit,** wi
 
 Here's what they do:
 
-<table><thead><tr><th width="201"></th><th></th></tr></thead><tbody><tr><td>Object Mode</td><td>This is where you switch the active 3d object. The other modes only work on the current selection.<br>Read <a data-mention href="./#the-object-mode">#the-object-mode</a> below for more detes.</td></tr><tr><td>Edit Mode</td><td>Lets you alter the objects 3d data by moving pixels around. Read <a data-mention href="./#the-edit-mode">#the-edit-mode</a>below for more detes.</td></tr><tr><td>Pose Mode</td><td>Only available when you have an <strong>armature</strong> (rig, skeleton) selected. This is where you <a href="../../../modding-guides/animations/animations/poses-animations-make-your-own/">make poses</a>.</td></tr><tr><td>Sculpt Mode</td><td><strong>You usually don't need this!</strong><br>Sculpt the mesh as if it's clay. Requires you to <strong>delete shapekeys</strong>, and leads to bad topologies. Proportional Editing is much better.<br><em>See =></em> <a data-mention href="../mesh-sculpting-techniques.md">mesh-sculpting-techniques.md</a><em>.</em></td></tr><tr><td>Vertex Paint</td><td>Lets you create Vertex Paint Data. You only need this for <a href="../garment-support-how-does-it-work/#painting-your-parameters">custom garment support</a> (so as a beginner, stay away from it)</td></tr><tr><td>Weight Paint</td><td>Weights determine how an object moves with the armature. Everyone hates it, but you can usually get around weight painting by simply <a href="../porting-3d-objects-to-cyberpunk.md#step-4-weight-transfer">stealing weights</a> from an in-game item.</td></tr><tr><td>Texture Paint</td><td>"We have <a href="https://www.adobe.com/products/substance3d/apps/painter.html">Adobe Substance Painter</a> at home!" It's free, it's 3d, but using it sucks. Before switching to Substance Painter, I painted in photoshop and used it just for positioning/rough guidelines.</td></tr></tbody></table>
+<table><thead><tr><th width="201"></th><th></th></tr></thead><tbody><tr><td>Object Mode</td><td>This is where you switch the active 3d object. The other modes only work on the current selection.<br>Read <a data-mention href="./#object-mode">#object-mode</a> below for more detes.</td></tr><tr><td>Edit Mode</td><td>Lets you alter the objects 3d data by moving pixels around. Read <a data-mention href="./#edit-mode">#edit-mode</a> below for more detes.</td></tr><tr><td>Pose Mode</td><td>Only available when you have an <strong>armature</strong> (rig, skeleton) selected. This is where you <a href="../../../modding-guides/animations/animations/poses-animations-make-your-own/">make poses</a>.</td></tr><tr><td>Sculpt Mode</td><td><strong>You usually don't need this!</strong><br>Sculpt the mesh as if it's clay. Requires you to <strong>delete shapekeys</strong>, and leads to bad topologies. Proportional Editing is much better.<br><em>See =></em> <a data-mention href="../mesh-sculpting-techniques.md">mesh-sculpting-techniques.md</a><em>.</em></td></tr><tr><td>Vertex Paint</td><td>Lets you create Vertex Paint Data. You only need this for <a href="../garment-support-how-does-it-work/#painting-your-parameters">custom garment support</a> (so as a beginner, stay away from it)</td></tr><tr><td>Weight Paint</td><td>Weights determine how an object moves with the armature. Everyone hates it, but you can usually get around weight painting by simply <a href="../porting-3d-objects-to-cyberpunk.md#step-4-weight-transfer">stealing weights</a> from an in-game item.</td></tr><tr><td>Texture Paint</td><td>"We have <a href="https://www.adobe.com/products/substance3d/apps/painter.html">Adobe Substance Painter</a> at home!" It's free, it's 3d, but using it sucks. Before switching to Substance Painter, I painted in photoshop and used it just for positioning/rough guidelines.</td></tr></tbody></table>
 
 ### Keyboard Shortcuts (global)
 
@@ -172,23 +172,21 @@ With the shortcut `Ctrl+L`, Blender will select everything up to a certain bound
 
 See [#seams-and-sharps](./#seams-and-sharps "mention") how to make use of this!
 
+#### Select Loops
 
+Hold `Alt` and left click to instantly select an entire loop of vertices, edges, or faces.&#x20;
 
-Select Loops
+{% hint style="info" %}
+This doesn't work well with geometries that are **complex** or **triangulated** (Cyberpunk meshes are usually at least one of these things). You can [un-triangulate](https://blender.stackexchange.com/questions/13727/how-do-you-un-triangulate-a-mesh) a mesh for easier loop selection (hotkey: `Alt+J`), then re-triangulate it again before exporting (Hotkey: `Ctrl+T`)
+{% endhint %}
 
-Hold `Alt` and left click to instantly select an entire loop of edges, faces, ors vertices. this works in all selection modes but does not work well with triangulated meshes or very complex geometry. works great for boundry loops
-
-
-
-Select Boundry loops
+#### Select Boundary loops
 
 Select all or part of a mesh then navigate to :
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-05-20 111519.png" alt=""><figcaption></figcaption></figure>
 
-this will instantly select all boundry loops for the given selection, great for marking seams
-
-
+this will instantly select all boundary loops for the given selection, great for marking seams
 
 #### **Select shortest path**
 
@@ -204,8 +202,13 @@ In Edge Selection Mode (Hotkey: `2`), you can (un)mark **edges** as **seams** or
 
 <figure><img src="../../../.gitbook/assets/blender_ui_guide_3_seams_and_sharps.png" alt=""><figcaption><p>Seams are orange, Sharps are blue</p></figcaption></figure>
 
-A **seam** (orange line in the viewport) is where the UV map will be split. A [full explanation on UV mapping](../../materials/uv-mapping-texturing-a-3d-object.md) blows the scope of this guide, but you can read on if you're curious.\
+A **seam** (orange line in the viewport) is where the UV map will be split.&#x20;
+
+{% hint style="info" %}
+A [full explanation on UV mapping](../../materials/uv-mapping-texturing-a-3d-object.md) blows the scope of this guide, but you can read on if you're curious.
+
 **Unless you're UV unwrapping**, those won't do anything, and you can use them as selection delimiters to your heart's content!
+{% endhint %}
 
 A sharp (blue line in the viewport) **will cause a sharp crease/fold** in the material. This translates to Cyberpunk, so it's neat to highlight your edges!
 
