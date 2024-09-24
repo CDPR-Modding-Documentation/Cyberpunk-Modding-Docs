@@ -44,7 +44,7 @@ Since this kind of mod interacts with the game on such a fundamental level, they
 
 Redscript ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511) | [GitHub](https://github.com/jac3km4/redscript)) is an open-source programming language and toolkit (currently includes a compiler, a decompiler and a disassembler), natively working with Cyberpunk 2077's **scripting runtime**.&#x20;
 
-The scripts are compiled into a binary format recognizable by the game engine. The final blob includes original game scripts with all changes from the mods, and replaces original `r6/cache/final.redscripts` or `r6/cache/modded/final.redscripts`.
+The scripts are compiled into a binary format recognizable by the game engine. The final blob includes original game scripts with all changes from the mods, and creates `r6/cache/final.redscripts.modded`
 
 Redscript supports importing native types and functions registered by mods based on RED4ext.SDK, allowing modders to extend scripting runtime functionality.
 
