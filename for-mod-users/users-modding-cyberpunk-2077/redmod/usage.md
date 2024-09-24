@@ -4,32 +4,43 @@
 
 REDmod is a command line tool developed by CDPR and Yigsoft which can be used to stage installed mods to work with a modded game.
 
-{% hint style="info" %}
-This section is for managing mods with Redmod. For creating mods, see the **Modding Guides** section in the wiki's navigation tree to the left.
-{% endhint %}
+### Wait, this is not what I want!
 
-## Why would I want this?
+This section is for managing mods with REDmod.
+
+* For install instructions, check [..](../ "mention")
+* For creating mods, see the **Modding Guides** section in the wiki's navigation tree to the left.
+
+## What does REDmod do for me?
 
 REDmod **preloads** any mods on its list, loading them as if they were a part of the game's regular structure. Preloading requires the game to be started via launcher (or Vortex) and will add a short delay, but the loading times during gameplay will be much faster.
 
-#### Why is that not the default?
+### That sounds awesome, why is that not the default?
 
 * Compatibility: Not all mods can be easily converted. Some outright break in the process.
 * Especially modders don't like the extra delay during startup
 * While the mods are precompiled, a console window will be visible. This scares many users.
 
-## Using Mods
-
-The game loads redmods from this path: `<Cyberpunk 2077>/mods/<name>`.
-
-> EXAMPLE:\
-> REDMod: `C:\GoG\Cyberpunk 2077\mods\<name>\archives\<name>.archive`\
-> `Legacy: C:\GoG\Cyberpunk 2077\archive\PC\mod\<name>.archive`
+{% hint style="info" %}
+The only thing that **requires** REDmod format are custom audio file additions (or use the [Audioware](https://www.nexusmods.com/cyberpunk2077/mods/12001) mod from Nexus).
+{% endhint %}
 
 {% hint style="info" %}
-Legacy archive mods in `<Cyberpunk 2077>/archive/pc/mod` are still supported, but their load order cannot be managed with REDmod.
+You can **convert** REDmods to the legacy format by putting any files into the [correct subfolders](../). Further conversion is not necessary.
+{% endhint %}
 
-Legacy mods will load **before** any redmods.
+## Using Mods
+
+The game loads REDmods from this path: `<`[`Cyberpunk 2077`](../the-cyberpunk-2077-game-directory/)`>/mods/<name>`.
+
+> EXAMPLE:\
+> REDMod: `C:\GoG\`[`Cyberpunk 2077`](../the-cyberpunk-2077-game-directory/)`\mods\<name>\archives\<name>.archive`\
+> Legacy:    `C:\GoG\`[`Cyberpunk 2077`](../the-cyberpunk-2077-game-directory/)`\archive\PC\mod\<name>.archive`
+
+{% hint style="info" %}
+Legacy archive mods in [`<Cyberpunk 2077>`](../the-cyberpunk-2077-game-directory/)`/archive/pc/mod` are still supported, but their load order cannot be managed with REDmod.
+
+Legacy mods will load **before** any REDmods.
 {% endhint %}
 
 {% hint style="success" %}
@@ -49,11 +60,11 @@ You can handle deployment and load order with
 
 #### What is deployed?
 
-|                                        |                                      |
-| -------------------------------------- | ------------------------------------ |
-| Scripts: Compiled into a script blob   | \<Cyberpunk 2077>/mods//scripts      |
-| Tweaks: Compiled into a modded tweakDB | \<Cyberpunk 2077>/mods//tweaks       |
-| Sound files                            | \<Cyberpunk 2077>/mods//customSounds |
+|                                        |                                                                               |
+| -------------------------------------- | ----------------------------------------------------------------------------- |
+| Scripts: Compiled into a script blob   | [\<Cyberpunk 2077>](../the-cyberpunk-2077-game-directory/)/mods//scripts      |
+| Tweaks: Compiled into a modded tweakDB | [\<Cyberpunk 2077>](../the-cyberpunk-2077-game-directory/)/mods//tweaks       |
+| Sound files                            | [\<Cyberpunk 2077>](../the-cyberpunk-2077-game-directory/)/mods//customSounds |
 
 ## Activating mods
 
@@ -99,13 +110,13 @@ However, you can specify a load order with REDmod, which the game will respect.
 If a REDmod is giving you trouble, you can force a redeploy by either of the following means:
 
 1. Either of
-   1. Delete the content of `r6/cache/modded` in your Cyberpunk directory\
-      or
-   2. Uninstall the mod
-   3. Start the game
-   4. As soon as it launches, close the game again
-   5. Reinstall the mod
-2. Now, restart the game. REDMod will rebuild the cache and hopefully fix your problem.&#x20;
+   1. Delete the content of `r6/cache/modded` in your Cyberpunk directory
+2. or
+   1. Uninstall the mod
+   2. Start the game
+   3. As soon as it launches, close the game again
+   4. Reinstall the mod
+3. Now, restart the game. REDMod will rebuild the cache and hopefully fix your problem.&#x20;
 
 If that doesn't do it, you can consult the [troubleshooting guide](usage.md#troubleshooting) for advice.
 

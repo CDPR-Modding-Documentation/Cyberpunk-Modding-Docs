@@ -15,6 +15,8 @@ This guide will walk you through installing and configuring your game. If you ha
 * How to install mods with [vortex-mod-manager.md](vortex-mod-manager.md "mention")
 * How to configure [mo2-mod-organizer-2.md](mo2-mod-organizer-2.md "mention")
 
+To learn about how to install mods at all, check [..](../ "mention")
+
 ## Prerequisites
 
 * You have [**bought** Cyberpunk 2077](#user-content-fn-1)[^1] on the platform of your choice (Steam, GOG or EPIC)
