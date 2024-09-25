@@ -88,6 +88,10 @@ You should now see ~~your~~ the tutorial item. If not, consult the section [#tro
 
 ## Great! You added items! Now what?
 
+{% hint style="danger" %}
+Before you can publish your mod, you **must** complete the steps at [#the-final-touches](./#the-final-touches "mention").
+{% endhint %}
+
 You've successfully pushed a button and everything worked, but so far, you haven't done anything.&#x20;
 
 If you're okay with this, then you're done now. Otherwise, you'll want to keep reading.
