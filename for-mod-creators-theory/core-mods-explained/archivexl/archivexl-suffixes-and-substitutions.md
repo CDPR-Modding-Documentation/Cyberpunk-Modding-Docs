@@ -197,16 +197,16 @@ If any of the placeholders aren't working the way you expect them, check if the 
 Substitution will only become active if the property name starts with an asterisk (`*`).
 {% endhint %}
 
-| Placeholder    | Substitution                                                                                                                                                             |
-| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `{camera}`     | `fpp` or `tpp`                                                                                                                                                           |
-| `{gender}`     | `m` or `w`                                                                                                                                                               |
-| `{body}`       | `base_body` or body mod name in snake case                                                                                                                               |
-| `{arms}`       | `base_arms`, `mantis_blades`, `monowire`, `projectile_launcher`                                                                                                          |
-| `{feet}`       | `flat`, `lifted`, `high_heels`, `flat_shoes` (empty for mascV!)                                                                                                          |
-| `{sleeves}`    | `full`, `part`                                                                                                                                                           |
-| `{skin_color}` | [skin color name](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) from customization, e.g. `03_senna`                    |
-| `{hair_color}` | [hair color name](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md#colour-in-files-by-index) from customization. e.g. `black_liquorice` |
+| Placeholder    | Substitution                                                                                                                                         |
+| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `{camera}`     | `fpp` or `tpp`                                                                                                                                       |
+| `{gender}`     | `m` or `w`                                                                                                                                           |
+| `{body}`       | `base_body` or body mod name in snake case                                                                                                           |
+| `{arms}`       | `base_arms`, `mantis_blades`, `monowire`, `projectile_launcher`                                                                                      |
+| `{feet}`       | `flat`, `lifted`, `high_heels`, `flat_shoes` (empty for mascV!)                                                                                      |
+| `{sleeves}`    | `full`, `part`                                                                                                                                       |
+| `{skin_color}` | [skin color name](../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) from customization, e.g. `03_senna`                    |
+| `{hair_color}` | [hair color name](../../references-lists-and-overviews/cheat-sheet-head/hair.md#colour-in-files-by-index) from customization. e.g. `black_liquorice` |
 
 
 

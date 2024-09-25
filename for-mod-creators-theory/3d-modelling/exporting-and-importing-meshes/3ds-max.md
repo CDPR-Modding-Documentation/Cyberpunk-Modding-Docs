@@ -21,33 +21,33 @@ description: 3ds Max Workflow for Cyberpunk 2077
 The plugin has some customization option if you open it in a text editor.\
 Recommended Settings are:
 
-![](<../../../.gitbook/assets/image (75).png>)
+![](<../../../.gitbook/assets/image (163).png>)
 
 \
 \- Next place "CP77\_NOESIS\_CMD.ms" in "C:\Program Files\Autodesk\3ds Max 20XX\scripts"\
 \- Open "CP77\_NOESIS\_CMD.ms" in a text editor and set your Noesis.exe path.
 
-![](<../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (89).png>)
 
 ## **In 3ds Max:**
 
 \
 Run the MaxScript from Scripting > Run Script...
 
-![](<../../../.gitbook/assets/image (30) (1).png>)
+![](<../../../.gitbook/assets/image (118).png>)
 
 Click on "Import to Scene" and select the .mesh file you want to edit. Your custom settings in "fmt\_CP77mesh.py" will effect the imported mesh.\
 \
 FBX Settings for **Import**:
 
-![](<../../../.gitbook/assets/image (108).png>)
+![](<../../../.gitbook/assets/image (196).png>)
 
 \
 MaxScript Settings for **Export:**
 
-![](<../../../.gitbook/assets/image (48) (1).png>)\\
+![](<../../../.gitbook/assets/image (136).png>)\\
 
 FBX Settings for **Export:**
 
-![](<../../../.gitbook/assets/image (90).png>)\
+![](<../../../.gitbook/assets/image (178).png>)\
 \*\*When exporting your mesh the plugin will ask you to select a mesh to export it over, in most cases you should select the original mesh.

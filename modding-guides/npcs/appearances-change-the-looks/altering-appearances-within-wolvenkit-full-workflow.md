@@ -44,7 +44,7 @@ The .app file lists the NPC's **components**, so everything that the game will a
 
 Entity files are using the `.app` files, so you can find them from there. For instructions on how to find them, just keep reaidng.
 
-<figure><img src="../../../.gitbook/assets/image (199).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (497).png" alt=""><figcaption></figcaption></figure>
 
 #### Wiki
 
@@ -84,11 +84,11 @@ For us, we'll be wanting to locate victor\_vektor.app, which is in the main\_npc
 
 Once we add this file to our project and open it, we will see an array named "appearances".
 
-<figure><img src="../../../.gitbook/assets/image (139).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (227).png" alt=""><figcaption></figcaption></figure>
 
 All of the different appearances for Victor are located in this array. Upon expanding it, we see that he only has three.
 
-<figure><img src="../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (228).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 We'll edit the **default appearance** in this guide, but the process is the same for all of them, or even [creating new appearances](../amm-custom-npcs/).
@@ -96,7 +96,7 @@ We'll edit the **default appearance** in this guide, but the process is the same
 
 Open the default appearance and then the `Components` array. This is where all of the components for that appearance are stored: clothes, body meshes, hair meshes, etc.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (141).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (229).png" alt=""><figcaption></figcaption></figure>
 
 As you can see, there are quite a lot to sort through. Don't worry, most of these things you won't have to mess with anyway.
 
@@ -115,7 +115,7 @@ To modify the body mesh, we'll export it to Blender.&#x20;
 
 First, add the mesh file to your project by clicking on the yellow arrow next to the mesh file's path:&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (142).png" alt=""><figcaption><p>Alternatively, you can also copy the path, put it into the search bar, and add it by double-clicking.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (230).png" alt=""><figcaption><p>Alternatively, you can also copy the path, put it into the search bar, and add it by double-clicking.</p></figcaption></figure>
 
 Next, we want to export the file out of Wolvenkit to enable us to edit the mesh in Blender, since right now, the file is in a format Blender can't read.
 
@@ -129,7 +129,7 @@ To export the .mesh into something that Blender can read, find the [Export Tool]
 
 Once that's open, check the box next to your body mesh and click "Export Selected".
 
-<figure><img src="../../../.gitbook/assets/image (143).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (231).png" alt=""><figcaption></figcaption></figure>
 
 ### Importing it into Blender
 
@@ -143,11 +143,11 @@ Locate your project folder, then find your mesh file in your project's [raw sect
 
 Import it.
 
-<figure><img src="../../../.gitbook/assets/image (165).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (253).png" alt=""><figcaption></figcaption></figure>
 
 If all went well, you should see a blank body mesh in your viewport.
 
-<figure><img src="../../../.gitbook/assets/image (166).png" alt=""><figcaption><p>Who'd have thought? Vik is a ken doll. As a ripperdoc, he probably keeps his junk in the trunk.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (254).png" alt=""><figcaption><p>Who'd have thought? Vik is a ken doll. As a ripperdoc, he probably keeps his junk in the trunk.</p></figcaption></figure>
 
 To edit this mesh, there are two ways to do it. You can use edit mode to edit specific vertices, or use sculpt mode if you prefer. We're going to use edit mode. Make sure you have your mesh selected, and enter edit.&#x20;
 
@@ -157,25 +157,25 @@ Side note: for the purposes of ease, I'm going to join together the components o
 
 You should see something like this:
 
-<figure><img src="../../../.gitbook/assets/image (167).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (255).png" alt=""><figcaption></figcaption></figure>
 
 These are all of the vertices that make up your mesh. Before we begin editing, you'll want to enable this button right here:
 
-<figure><img src="../../../.gitbook/assets/image (168).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (256).png" alt=""><figcaption></figcaption></figure>
 
 This enables proportional edit mode. Now, select a few vertices at random on Vic's pec muscles. It should look like this:
 
-<figure><img src="../../../.gitbook/assets/image (169).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (257).png" alt=""><figcaption></figcaption></figure>
 
 Now, to edit these vertices, we're going to press "g" and then "y" to edit them on the y-axis. Remember to scroll up until you see the circle around your cursor shrink to a little less than the width of Vic's chest. Now, we'll drag the cursor out a little to pull those areas out. Use some creative independence to determine what looks good. For me, this is fine.
 
-<figure><img src="../../../.gitbook/assets/image (170).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
 
 Now that we've done that, make sure there aren't any rough edges on your mesh and then select your mesh and **export it as a Cyberpunk GLB to the same file that you edited.**
 
 Now, you must go back to Wolvenkit to import the mesh. Even though you exported the file from Blender, it's still in a raw format and unreadable by the game. Go to "Tools>Import Tool". Select your mesh and "Import Selected".
 
-<figure><img src="../../../.gitbook/assets/image (171).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
 
 Cool! You've just edited your first body mesh! Now we can change the shirt to account for our changes.
 
@@ -193,15 +193,15 @@ The first thing we want to do is find the piece of clothing that we want to edit
 
 Before we import the mesh into Blender, let's first import the edited body mesh so that we can see what we need to change. Follow the same process we used to import it the first time. You should get something like this:
 
-<figure><img src="../../../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
 
 Now that we can see what we need to edit, let's begin. Make sure to select all of the meshes that make up the shirt, as there are several. Once you have done so, select multiple vertices in the areas that the body is clipping, similar to what we did with the body mesh. Also, remember to enable proportional editing mode in the toolbar up top. Again, press "g" to enter edit mode and "y" to edit the mesh on the y-axis. Remember to scroll up until the circle around your cursor is small enough. Edit the shirt out until it doesn't clip anymore. This looks good to me:
 
-<figure><img src="../../../.gitbook/assets/image (173).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
 
 Once you're happy with your edits, select ALL of the shirt meshes and export as a Cyberpunk GLB to **the same file you imported.**&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (174).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (262).png" alt=""><figcaption></figcaption></figure>
 
 Now, head back to Wolvenkit and import your changes. "Tools>Import Tool", check your mesh and click "import selected".
 

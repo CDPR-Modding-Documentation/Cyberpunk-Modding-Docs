@@ -30,7 +30,7 @@ This page contains a brief overview of existing materials. Use the Table of Cont
 
 #### Hands-on:
 
-* [changing-materials-colors-and-textures.md](../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") (guide)
+* [changing-materials-colors-and-textures](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention") (guide)
 * [using-a-textured-material.md](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention") (guide)
 
 ***
@@ -209,7 +209,7 @@ Below example image use `glass_tech_reflective.mi`
 
 | Non-ray traced cubemap reflection            | Ray traced reflections                       |
 | -------------------------------------------- | -------------------------------------------- |
-| ![](<../../.gitbook/assets/image (175).png>) | ![](<../../.gitbook/assets/image (176).png>) |
+| ![](<../../.gitbook/assets/image (263).png>) | ![](<../../.gitbook/assets/image (264).png>) |
 
 ## Other materials
 

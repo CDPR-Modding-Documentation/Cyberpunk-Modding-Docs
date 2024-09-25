@@ -9,13 +9,13 @@ description: How to use a PBR material in Cyberpunk
 **Published:** Jun 29 2022 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented edit:** Jun 29 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will teach you how to use a textured (PBR) material in Cyberpunk. It is a part of [changing-materials-colors-and-textures.md](../../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") — if you are missing information, check the parent page.
+This guide will teach you how to use a textured (PBR) material in Cyberpunk. It is a part of [.](./ "mention") — if you are missing information, check the parent page.
 
 ## Prerequisite
 
 You have a `CMaterialInstance` that can use your textured material.&#x20;
 
-If you don't have one yet, follow the steps under [changing-materials-colors-and-textures.md](../../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention"), or skip to [#finding-example-material-configurations](using-a-textured-material.md#finding-example-material-configurations "mention") and copy the entire material.
+If you don't have one yet, follow the steps under [.](./ "mention"), or skip to [#finding-example-material-configurations](using-a-textured-material.md#finding-example-material-configurations "mention") and copy the entire material.
 
 ## The PBR material
 

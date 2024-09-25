@@ -30,11 +30,11 @@ Export your three mesh files and import one of them into Blender. Hide all subme
 
 Submesh these parts for the `_inserts` component.
 
-<figure><img src="../../../.gitbook/assets/image (343) (1).png" alt=""><figcaption><p>Inserts submesh for wheels</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (432).png" alt=""><figcaption><p>Inserts submesh for wheels</p></figcaption></figure>
 
 Select this new submesh alone and export it to the `_inserts` mesh file. Submesh these parts for the `_painted` component.
 
-<figure><img src="../../../.gitbook/assets/image (344) (1).png" alt=""><figcaption><p>Painted submesh for wheels</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (433).png" alt=""><figcaption><p>Painted submesh for wheels</p></figcaption></figure>
 
 Select this new submesh alone and export it to the `_painted` mesh file. Then select all the other submeshes and export them to the base mesh file.
 
@@ -246,7 +246,7 @@ For the `coated` material, reuse the original mlmask file from the `poor_01` mat
 
 Open it in MLSB and disable the layers that make the wheel dirty: 15, 17, 18. To do so turn their opacity to 0. Then export the file to JSON and import it back into WolvenKit.
 
-<figure><img src="../../../.gitbook/assets/image (379).png" alt=""><figcaption><p>Coated material definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (468).png" alt=""><figcaption><p>Coated material definition</p></figcaption></figure>
 
 ### Define the metallic material
 
@@ -262,13 +262,13 @@ Duplicate the `painted.mlmask` file and name it `wheel_painted.mlmask`. Export i
 
 Assign it to your `metallic` material into `localMaterialBuffer > materials > metallic > MultilayerMask`.
 
-<figure><img src="../../../.gitbook/assets/image (380).png" alt="" width="447"><figcaption><p>Metallic material definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (469).png" alt="" width="447"><figcaption><p>Metallic material definition</p></figcaption></figure>
 
 ### Define the glossy material
 
 For this one we don't need to duplicate the mlsetup. Simply assign your `wheel_painted.mlmask` file into `localMaterialBuffer > materials > glossy > MultilayerMask`.
 
-<figure><img src="../../../.gitbook/assets/image (381).png" alt="" width="458"><figcaption><p>Glossy material definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (470).png" alt="" width="458"><figcaption><p>Glossy material definition</p></figcaption></figure>
 
 Finally concerning the `black` material this is exactly the same process as the `glossy` one.
 

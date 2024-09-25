@@ -1,5 +1,5 @@
 ---
-cover: ../../../../.gitbook/assets/page13.jpg
+cover: ../../../.gitbook/assets/page13.jpg
 coverY: 0
 ---
 
@@ -77,17 +77,17 @@ Each setting that concerns the CrystalCoat ON state needs a new `runtimeProperty
 
 When you disable either one of the toggle settings, their associated settings we be hidden from the mod settings page. This will allow for a better readability of your settings page.
 
-<figure><img src="../../../../.gitbook/assets/menu toggles (1).png" alt=""><figcaption><p>Only show settings that concern a CrystalCoat state</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/menu toggles (1).png" alt=""><figcaption><p>Only show settings that concern a CrystalCoat state</p></figcaption></figure>
 
 ## Display vehicle parts
 
 Another cool feature would be to display the vehicle parts associated with each setting so the user easily understand what he is modifying.
 
-<figure><img src="../../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.29 - 22.24.46.40.png" alt=""><figcaption><p>Display the vehicle areas affected by each setting</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.29 - 22.24.46.40.png" alt=""><figcaption><p>Display the vehicle areas affected by each setting</p></figcaption></figure>
 
 This feature requires to use additional files to add to your project.
 
-{% file src="../../../../.gitbook/assets/Mod Settings Vehicle Parts (2).zip" %}
+{% file src="../../../.gitbook/assets/Mod Settings Vehicle Parts (2).zip" %}
 Widget and resources associated with vehicle parts
 {% endfile %}
 
@@ -99,7 +99,7 @@ This ZIP archive contains 3 files:
 
 Regroup these files into a folder then open the InkAtlas file and update its `slots` array by using the XBM texture file path into the `texture` field of each array element.
 
-<figure><img src="../../../../.gitbook/assets/image (345).png" alt=""><figcaption><p>Update the InkAtlas file using the XBM file path</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (434).png" alt=""><figcaption><p>Update the InkAtlas file using the XBM file path</p></figcaption></figure>
 
 In order to create pictures for your settings you can use the photo mode of the game while your vehicle is using a specific appearance. In the example picture of the Caliburn above I have used a black matte paint with only the relevant component using a red glossy appearance.
 
@@ -129,11 +129,11 @@ ColorCode = 3eaf77_d42857
 µBlends offset V = 0
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (346).png" alt="" width="375"><figcaption><p>MLSB matte paint aspect</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (435).png" alt="" width="375"><figcaption><p>MLSB matte paint aspect</p></figcaption></figure>
 
 Next, for each impacted mesh file in the `matte` material remove all parameters except the MultilayerMask and MultilayerSetup.
 
-<figure><img src="../../../../.gitbook/assets/image (348).png" alt=""><figcaption><p>Matte material definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (437).png" alt=""><figcaption><p>Matte material definition</p></figcaption></figure>
 
 ## Create a red appearance
 
@@ -159,7 +159,7 @@ CoatTintSide = (red:127, green:127, blue:127, alpha:255)
 CoatSpecularColor = (red:191, green:191, blue:191, alpha:255)
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (350).png" alt="" width="563"><figcaption><p>Red material definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (439).png" alt="" width="563"><figcaption><p>Red material definition</p></figcaption></figure>
 
 {% hint style="success" %}
 Now our parts can all be turned into black matte paint and red except for the sun visor. So we need to allow the sun visor to use paint materials. Let's make all of our parts be able to use the same materials. It will offer more options to the users.
@@ -183,7 +183,7 @@ For this we need to modify the type used by the sun visor setting field related 
 
 Next we need to create a WorldWidgetComponent to enable CrystalCoat coloring on the sun visor.
 
-<figure><img src="../../../../.gitbook/assets/image (351).png" alt="" width="521"><figcaption><p>Create a widget for the sun visor</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (440).png" alt="" width="521"><figcaption><p>Create a widget for the sun visor</p></figcaption></figure>
 
 Finally we need to copy the missing `appearances`, `materialEntries` and `localMaterialBuffer > materials` entries from the roof component and paste them into the sun visor mesh file.
 
@@ -193,7 +193,7 @@ We can simply copy them because both components have been created from the same 
 
 We need to copy the `coated`, `metallic`, `glossy` and `matte` appearances and materials. Now our vehicle is ready for a photo shoot.
 
-<figure><img src="../../../../.gitbook/assets/photomode_30052024_012047.png" alt=""><figcaption><p>Red roof with black matte components</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/photomode_30052024_012047.png" alt=""><figcaption><p>Red roof with black matte components</p></figcaption></figure>
 
 ## Create the vehicle parts texture
 
@@ -211,19 +211,19 @@ Next use the menu `Image > Adjustments > Vibrance` and set a saturation of 100 a
 
 Next we need to crop the bottom corners so the images will fit into the widget. To do this create a rectangle selection with size 70x70 pixels. Then use `Select > Transform Selection` to rotate it to 45° so you get a diamond-shaped selection. Now save your selection using the menu `Select > Save Selection` and name it "big diamond".
 
-<figure><img src="../../../../.gitbook/assets/image (353).png" alt=""><figcaption><p>Create a diamond-shaped selection</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (442).png" alt=""><figcaption><p>Create a diamond-shaped selection</p></figcaption></figure>
 
 Now move your selection to the bottom-right corner of the first picture so the center of the selection is aligned with the corner. Then select the corresponding layer, right-click on it and select `Rasterize Layer`. Then hit the DEL key to remove the pixels. Repeat this operation for the other pictures.
 
-<figure><img src="../../../../.gitbook/assets/image (354).png" alt=""><figcaption><p>Crop the bottom-right corner of all images</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (443).png" alt=""><figcaption><p>Crop the bottom-right corner of all images</p></figcaption></figure>
 
 Now create a new selection with size 16x16 pixels and repeat the same operation with the bottom-left corner of all the pictures. You should now have this final result.
 
-<figure><img src="../../../../.gitbook/assets/Capture d’écran 2024-06-01 025907.png" alt=""><figcaption><p>Texture ready to be used</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Capture d’écran 2024-06-01 025907.png" alt=""><figcaption><p>Texture ready to be used</p></figcaption></figure>
 
 Export the vehicle\_parts.xbm file into PNG using the `Tools > Export Tool`. Now erase the PNG file with your new texture. Then import it back into WolvenKit using these options.
 
-<figure><img src="../../../../.gitbook/assets/image (356).png" alt=""><figcaption><p>Import options for the vehicle parts texture</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (445).png" alt=""><figcaption><p>Import options for the vehicle parts texture</p></figcaption></figure>
 
 ## Organize the texture parts
 
@@ -240,7 +240,7 @@ Create duplicate this element in the parts array to create the other ones.
 
 Now save the file and go into the `Part Mapping` tab to check the result. You should be able to select your pictures individually.
 
-<figure><img src="../../../../.gitbook/assets/texture_part_inkatlas.png" alt=""><figcaption><p>Vehicle parts inkatlas</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/texture_part_inkatlas.png" alt=""><figcaption><p>Vehicle parts inkatlas</p></figcaption></figure>
 
 ## Add a new feature using script
 
@@ -474,4 +474,4 @@ protected cb func OnHoverOut(e: ref&#x3C;inkPointerEvent>) -> Bool {
 
 Now you can test your mod and see that when you hover on the settings they fade out the mod list and make a picture appear to illustrate what this setting is refering to.
 
-<figure><img src="../../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.06.01 - 03.04.23.70.png" alt=""><figcaption><p>Mod settings menu displaying vehicle parts</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.06.01 - 03.04.23.70.png" alt=""><figcaption><p>Mod settings menu displaying vehicle parts</p></figcaption></figure>

@@ -13,19 +13,19 @@ Make sure you installed TweakXL.
 ### Create a new tweakXL `.yaml` file
 
 {% hint style="info" %}
-This file contains the [tweak ](../../../for-mod-creators/modding-guides/tweakxl-changing-game-records/)which will register your car with the game's database.
+This file contains the [tweak ](../../../for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/)which will register your car with the game's database.
 
 After creation, you can find it in your Wolvenkit project's [resources](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources) tab.
 {% endhint %}
 
 Create a new tweakXL file by going to “**New File**” in the top left of **wkit**, just next to the **HOME** button.
 
-<figure><img src="../../../.gitbook/assets/image (194).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
 
 Select **TweakDB** and **TweakXL file**. Name it something specific to your mod.\
 example: “`boe6_mini_cooper.yaml`”
 
-<figure><img src="../../../.gitbook/assets/image (195).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
 
 Open the `.yaml` file in your favorite text editor. I used **notepad++**.
 
@@ -89,7 +89,7 @@ After creation, you can find it in your Wolvenkit project's [Archive](https://ap
 
 Create a `.json` file in your project, the same as creating the `.yaml`. The option is about half way down the “**CR2W Files**” category. Name it the same as your vehicle (e.g. “`boe6_mini_cooper.json`”)
 
-<figure><img src="../../../.gitbook/assets/image (196).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
 
 You’ll want to create your own project path at this point. With your mouse over the new `.json` file, on the right side hit the yellow “**open in explorer**” button to find the `.json` file in your file explorer, you should see just your `.json` file and a “`base`” folder. Create a new folder/path for your project files here. I created “`boe6/mini_cooper/`”. Now in **wkit**, move your `.json` into the new folder.
 

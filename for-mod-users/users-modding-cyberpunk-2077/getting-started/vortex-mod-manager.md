@@ -78,7 +78,7 @@ If you are already logged in, proceed to the next section "[Adding Cyberpunk](vo
 1. If Vortex didn't open by itself, open it from the start menu.
 2. Log into Nexusmods by clicking on the red circle in the top right of your client
 
-<figure><img src="../../../.gitbook/assets/4 (1) (1).png" alt=""><figcaption><p>The initial dashboard on launch</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (1).png" alt=""><figcaption><p>The initial dashboard on launch</p></figcaption></figure>
 
 3. You will see either a browser window or an error message that Vortex couldn't open one – in this case, copy the URL in the box at the bottom and open the browser window yourself
 
@@ -87,11 +87,11 @@ If you are already logged in, proceed to the next section "[Adding Cyberpunk](vo
 4. Optional: log into nexusmods (if you aren’t)
 5. Allow Vortex to access your Nexus account by clicking "Authorize":
 
-<figure><img src="../../../.gitbook/assets/9 (1).png" alt=""><figcaption><p>Allow Vortex to authorise your account</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/9.png" alt=""><figcaption><p>Allow Vortex to authorise your account</p></figcaption></figure>
 
 6. Click "Log in to Vortex":
 
-<figure><img src="../../../.gitbook/assets/10 (1).png" alt=""><figcaption><p>Log into Vortex and close the page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/10.png" alt=""><figcaption><p>Log into Vortex and close the page</p></figcaption></figure>
 
 7. Instead of the red icon, you should now see your profile picture and username from nexusmods.
 
@@ -183,7 +183,7 @@ Finally, we will return to our dashboard.&#x20;
 
 No matter what settings you chose in interface, you should still have a section labeled "Tools", where at this point you should at least see four things, the last of which will be disabled:
 
-<figure><img src="../../../.gitbook/assets/image (50) (1).png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (138).png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
 
 It can be helpful here to toggle "Enable Toolbar" above it so that you can always see them wherever you are in Vortex.
 
@@ -238,7 +238,7 @@ At this point, assuming your notifications are all green or blue, you can go on 
 ### Updating your mods
 
 The collection you just installed might not have the latest versions of all mods, so let's make sure you have those. Click the Check for updates button in the orange Vortex toolbar, and it will begin checking each mod for updates. If it finds any, download these by clicking the little cloud icon with an arrow in it next to the name. To make it easier to find updates, you can set the Version filter to update available.\
-![check for updates](<../../../.gitbook/assets/image (385).png>) <img src="../../../.gitbook/assets/image (386).png" alt="version filter" data-size="original">
+![check for updates](<../../../.gitbook/assets/image (473).png>) <img src="../../../.gitbook/assets/image (474).png" alt="version filter" data-size="original">
 
 After you have updated everything, hit the Deploy Mods button in the orange toolbar. You can now safely play your game. However, you won't notice many changes, as the framework mods aren't doing much on their own...
 
@@ -318,7 +318,7 @@ Mod authors sometimes disable mod manager integration for a variety of reasons. 
    The file doesn't have any particular instruction.
 5. Optional: view the file contents – they sometimes contain helpful information:
 
-<figure><img src="../../../.gitbook/assets/image (57) (1).png" alt=""><figcaption><p>The naming convention tells us that it's a hair replacer from Wingdeer for the female body gender, changing hair 48, There's also a preview picture included.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (145).png" alt=""><figcaption><p>The naming convention tells us that it's a hair replacer from Wingdeer for the female body gender, changing hair 48, There's also a preview picture included.</p></figcaption></figure>
 
 6. Manually download the file – you know the drill by now.
 7. Return to the Vortex "mods" page. You have two ways to install the mod now:&#x20;

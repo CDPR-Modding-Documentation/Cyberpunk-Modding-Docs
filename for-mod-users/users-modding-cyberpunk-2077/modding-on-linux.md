@@ -82,11 +82,11 @@ Taken from [CET's github](https://github.com/maximegmd/CyberEngineTweaks/issues/
 2. Right click on the game > `Settings` > `Runner options`
 3. While newer versions of Lutris can use Proton, it is advised you use Wine-GE instead. Make sure you're using at least `lutris-GE-Proton8-1`
 
-<figure><img src="../../.gitbook/assets/image (118).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
 
 4. Scroll down to **DLL overrides**, click on **Add** to add a key. Add the following keys:
 
-<figure><img src="../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
 
 ## Launch Options
 
@@ -137,7 +137,7 @@ While at your library right click Cyberpunk then navigate to `Settings` -> `ADVA
 
 Now set a new variable name `WINEDLLOVERRIDES` with a value of `winmm,version=n,b`
 
-<figure><img src="../../.gitbook/assets/image (389).png" alt=""><figcaption><p>Don't forget to click the + button for the changes to save.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (527).png" alt=""><figcaption><p>Don't forget to click the + button for the changes to save.</p></figcaption></figure>
 
 {% hint style="danger" %}
 Variable Name and Value are both case sensitive, Copy-paste for certainty.

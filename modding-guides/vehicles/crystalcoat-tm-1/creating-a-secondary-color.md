@@ -1,5 +1,5 @@
 ---
-cover: ../../../../.gitbook/assets/page12.jpg
+cover: ../../../.gitbook/assets/page12.jpg
 coverY: 0
 ---
 
@@ -17,7 +17,7 @@ The most simple way is to apply the secondary color on a complete mesh so the co
 
 If a component subset could make sense to use the secondary color then you can submesh it and apply this approach with it.
 
-<figure><img src="../../../../.gitbook/assets/image (377).png" alt="" width="375"><figcaption><p>Rayfield Caliburn</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (466).png" alt="" width="375"><figcaption><p>Rayfield Caliburn</p></figcaption></figure>
 
 On this picture, the silver front wings of the vehicle have been submeshed to they can be colored entirely without affecting the rest of the body part.
 
@@ -27,7 +27,7 @@ With conventional vehicles that consist in a box with 4 square doors, this appro
 
 The approach that allows the most possibilities is to work with a UV layout.
 
-<figure><img src="../../../../.gitbook/assets/painted (1).png" alt="" width="375"><figcaption><p>UV layout for the painted areas of the Mahir Supron</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/painted (1).png" alt="" width="375"><figcaption><p>UV layout for the painted areas of the Mahir Supron</p></figcaption></figure>
 
 ### What is a UV layout
 
@@ -37,7 +37,7 @@ The mesh is made of vertices so you simply decide where you want to place these 
 
 This type of projection is particularly useful if you want to apply 2D resources across multiple parts at once. In the case of CrystalCoat you may want to create oblique stripes across the body, roof and doors of the vehicle. You can do it easily with the Mahir Supron.
 
-<figure><img src="../../../../.gitbook/assets/painted1 (1).png" alt="" width="375"><figcaption><p>Example of secondary color pattern</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/painted1 (1).png" alt="" width="375"><figcaption><p>Example of secondary color pattern</p></figcaption></figure>
 
 The red stripes on this picture would not necessarily be red but they represent shapes that you can create to define a secondary color pattern.
 
@@ -77,13 +77,13 @@ You can only import mesh components that are sharing the same UV layout together
 
 Select all the meshes using the `A` key then press `TAB` to go into `Edit mode`. Finally select the `UV Editing` view in the menu bar.
 
-<figure><img src="../../../../.gitbook/assets/image (365).png" alt=""><figcaption><p>Generate the UV layout for the painted areas</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (454).png" alt=""><figcaption><p>Generate the UV layout for the painted areas</p></figcaption></figure>
 
 You can see on the left that your UV layout has been generated. Export it to PNG using the menu `UV > Export UV Layout`. Define the size to 1024x1024 and set the `Fill Opacity` to 1.00.
 
 Open Adobe Photoshop or another image editor and create a new project with a image size of 1024x1024. Then fill it with black color by using the menu `Edit > Fill`. Import the PNG file you have just created with Blender. It should be imported into a new layer.
 
-<figure><img src="../../../../.gitbook/assets/image (366).png" alt=""><figcaption><p>Fill the UV layout with white</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (455).png" alt=""><figcaption><p>Fill the UV layout with white</p></figcaption></figure>
 
 Create a new style on the UV layout to fill it with white. Now you have created your mask for the painted areas of the vehicle.
 
@@ -93,9 +93,9 @@ The next part is to define your secondary color pattern by adding shapes on top 
 
 Before exporting the mask we will fill them with white.
 
-<figure><img src="../../../../.gitbook/assets/image (367).png" alt=""><figcaption><p>Adding shapes to your mask</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (456).png" alt=""><figcaption><p>Adding shapes to your mask</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (375).png" alt=""><figcaption><p>Secondary color pattern</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (464).png" alt=""><figcaption><p>Secondary color pattern</p></figcaption></figure>
 
 You can also use any other tool to create shapes such as the **magic wand** to select color areas or other selection tools. You can even use external images, logos and even text. Once your pattern is ready create a style on it to fill it with white just like you did previously. Then hide all the other layers except the pattern so you have something like this.
 
@@ -103,13 +103,13 @@ You can also use any other tool to create shapes such as the **magic wand** to s
 Although you can use any kind of shape to define a secondary color pattern like logos and text you should keep in mind that the InkWidget resolution on the vehicle is low so you won't have a lot of details.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (376).png" alt=""><figcaption><p>Export the secondary color pattern to PNG</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (465).png" alt=""><figcaption><p>Export the secondary color pattern to PNG</p></figcaption></figure>
 
 Finally export the image as PNG. Now it is time to export your `secondary_color.xbm` texture to PNG using the `Tools > Export Tool`. Erase the PNG export with your PNG mask using the same file name.
 
 Then use the `Tools > Import Tool` with the following settings to import your mask back into the texture file.
 
-<figure><img src="../../../../.gitbook/assets/image (374).png" alt=""><figcaption><p>Texture import settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (463).png" alt=""><figcaption><p>Texture import settings</p></figcaption></figure>
 
 ## Update the WorldWidgetComponents
 
@@ -150,7 +150,7 @@ Now let's test the mod again.
 For a component to use the secondary color you must set its appearance to either `Coated`or `Painted`in the mod settings. Concerning wheels parts you need to set their appearances to either`Metallic`or `Glossy`in the mod settings.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 02.13.35.37.png" alt=""><figcaption><p>CrystalCoat using a secondary color</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 02.13.35.37.png" alt=""><figcaption><p>CrystalCoat using a secondary color</p></figcaption></figure>
 
 > Wait ! I don't see the secondary color pattern on the color picker !
 
@@ -160,7 +160,7 @@ Remember that the texture `vehicle_visual_customization_car_preview.xbm` that co
 
 All you have to do is to [follow this paragraph](customizing-the-color-picker-widget.md#changing-the-vehicle-model-part) to modify the secondary color mask instead of the vehicle model. The secondary color mask should be a selection of the original model. The following picture is the mask I have created. Visible parts of the model will use the secondary color if it is defined.
 
-<figure><img src="../../../../.gitbook/assets/color_mask (1).png" alt="" width="375"><figcaption><p>Secondary color mask</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/color_mask (1).png" alt="" width="375"><figcaption><p>Secondary color mask</p></figcaption></figure>
 
 The most accurate way to create the mask is to duplicate the section that contains the vehicle model. Then keep only the areas that should be affected by the secondary color.
 
@@ -170,6 +170,6 @@ Your image should not be larger than 1200 pixels or the InkWidget won't display 
 
 Concerning the secondary color pattern I have choosen for the Mahir Supron, it cannot be easily seen on the color picker. This will depend on your choices.
 
-<figure><img src="../../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 16.05.50.72.png" alt=""><figcaption><p>Color picker widget using a secondary color</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 16.05.50.72.png" alt=""><figcaption><p>Color picker widget using a secondary color</p></figcaption></figure>
 
 > I have added a lot of customizable parts in the mod settings how can I make it more user-friendly ?

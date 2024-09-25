@@ -5,7 +5,7 @@ description: You can find here a list of overlays names for the KS_UV and VTK fr
 # Overlay textures by framework
 
 {% hint style="info" %}
-Confused about the difference? Check [converting-between-tattoo-frameworks](../../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/ "mention")
+Confused about the difference? Check [.](./ "mention")
 {% endhint %}
 
 {% hint style="success" %}

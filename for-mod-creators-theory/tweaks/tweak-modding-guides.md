@@ -9,7 +9,7 @@ description: Start adding your custom items to the game without replacing
 **Created:** Mar 18 2024 by Bioskop\
 **Last documented update:** Mar 24 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page links to those guides on our wiki that involve tweak editing. For a collection of all dedicated Tweak guides, please check [tweakxl-changing-game-records](../../for-mod-creators/modding-guides/tweakxl-changing-game-records/ "mention")
+This page links to those guides on our wiki that involve tweak editing. For a collection of all dedicated Tweak guides, please check [tweakxl-changing-game-records](../core-mods-explained/tweakxl/tweakxl-changing-game-records/ "mention")
 
 ***
 
@@ -20,7 +20,7 @@ The list below has been created by hand. If you find anything that's missing her
 ## Working with existing items
 
 * [changing-vendor-inventory.md](../core-mods-explained/tweakxl/tweakxl-changing-game-records/changing-vendor-inventory.md "mention")
-* [adding-stats-and-modifiers.md](../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/adding-stats-and-modifiers.md "mention")
+* [adding-stats-and-modifiers.md](../../modding-guides/items-equipment/editing-existing-items/adding-stats-and-modifiers.md "mention")
 
 ## Adding new items from scratch
 
@@ -46,7 +46,7 @@ Adding items is a somewhat involved process. Regardless of what you want to do, 
 
 ## Other resources
 
-* [tweakxl-changing-game-records](../../for-mod-creators/modding-guides/tweakxl-changing-game-records/ "mention")
+* [tweakxl-changing-game-records](../core-mods-explained/tweakxl/tweakxl-changing-game-records/ "mention")
 * [redmod-tweaks.md](../modding-tools/redmod/redmod-tweaks.md "mention")
 * [adding-items-atelier-integration.md](../../modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md "mention")
 

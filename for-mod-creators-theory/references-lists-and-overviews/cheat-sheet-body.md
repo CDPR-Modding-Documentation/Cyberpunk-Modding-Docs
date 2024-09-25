@@ -10,7 +10,7 @@ description: Which body parts are where?
 
 This page lists various properties of the player body. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.  Any links will lead you to additional context.
 
-You can find the list of skin tones, hair and facial expressions under [cheat-sheet-head](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/ "mention")
+You can find the list of skin tones, hair and facial expressions under [cheat-sheet-head](cheat-sheet-head/ "mention")
 
 The details on arms can be found under [cheat-sheet-arms.md](cheat-sheet-arms.md "mention")
 
@@ -58,12 +58,12 @@ base\characters\common\base_bodies
 
 ## Head
 
-Find this information under [cheat-sheet-head](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/ "mention").
+Find this information under [cheat-sheet-head](cheat-sheet-head/ "mention").
 
 ## Skin definitions
 
 {% hint style="info" %}
-For a list of [#skin-tones-by-index](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index "mention"), see [cheat-sheet-head](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/ "mention")
+For a list of [#skin-tones-by-index](cheat-sheet-head/#skin-tones-by-index "mention"), see [cheat-sheet-head](cheat-sheet-head/ "mention")
 {% endhint %}
 
 Skin materials are defined in the individual body files. For their paths, see [#player-base-body](cheat-sheet-body.md#player-base-body "mention").
@@ -79,7 +79,7 @@ All other properties are pulled from a [.mi file](../files-and-what-they-do/mate
 
 ### Body: material instances
 
-The names of the body's material instance files are identical to those used by the player head. Find them under [#head-material-instances](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/#head-material-instances "mention").
+The names of the body's material instance files are identical to those used by the player head. Find them under [#head-material-instances](cheat-sheet-head/#head-material-instances "mention").
 
 ## Making Body mods
 

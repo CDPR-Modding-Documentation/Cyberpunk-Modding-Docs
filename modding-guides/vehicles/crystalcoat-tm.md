@@ -23,11 +23,11 @@ CrystalCoat is made possible with two core components:
 
 In your vehicle's .ent file, add a new appearance for Crystal Coat
 
-<figure><img src="../../../.gitbook/assets/image (307).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (393).png" alt=""><figcaption></figcaption></figure>
 
 We also need an entEffectSpawnerComponent for Crystal Coat fx effects. You can copy paste this as-is from the Aerondight .ent (`base\vehicles\sport\v_sport1_rayfield_aerondight__basic_01.ent`): `EffectSpawner3546`
 
-<figure><img src="../../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
 
 ### .app
 
@@ -40,9 +40,9 @@ Define the appearance that you just created in the .ent: You can duplicate your 
 
 
 
-<figure><img src="../../../.gitbook/assets/image (310).png" alt=""><figcaption><p><code>customizable</code> material entry. Remember to add your vehicle's MLmask and MLsetup paths</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (396).png" alt=""><figcaption><p><code>customizable</code> material entry. Remember to add your vehicle's MLmask and MLsetup paths</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (309).png" alt=""><figcaption><p>adding new mesh appearance. Note that I only set the <code>customizable</code> material for submeshes that need to change color</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (395).png" alt=""><figcaption><p>adding new mesh appearance. Note that I only set the <code>customizable</code> material for submeshes that need to change color</p></figcaption></figure>
 
 * Remember to update the material values with your custom vehicle's mlsetup and mlmask paths
 * Set the `customizable` material entry for all the submeshes that change color
@@ -55,7 +55,7 @@ Define the appearance that you just created in the .ent: You can duplicate your 
 * Copy and paste all `WorldWidgetComponent`s related to Crystal Coat (all of them will start with `visual_customization_`) to your customizable appearance
 * Update the `parentTransform` and `meshTargetBinding`for each of the components to the respective car part in your appearance as needed (they don't necessarily need to match one to one: for e.g., you can use the fuel\_cap WorldWidgetComponent for something that's not a fuel cap)
 
-<figure><img src="../../../.gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure>
 
 ### .yaml / tweak edits
 
@@ -103,7 +103,7 @@ The XML file (although currently Wkit doesn't support editing XML > inkwidget) w
 
 There are a lot of components (that aren't really needed -- we will see this in the next section) however the most important section is this one:
 
-<figure><img src="../../../.gitbook/assets/Screenshot 2024-03-30 202343.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2024-03-30 202343.png" alt=""><figcaption></figcaption></figure>
 
 Here we see two `InkImageWidgets` being defined for the two colors that can be set for Crystal Coat. We also see a `textureAtlas` -> this is the mask which defines how the color is painted and controlled further with the `layout` and `renderTransform` values.
 
@@ -114,7 +114,7 @@ For most custom vehicles, it makes sense to have only one color i.e primaryColor
 {% hint style="info" %}
 Tip if you're looking to customize this further and/or get correct gradients with secondaryColor: use the `uvchecker.inkatlas` (this is already defined in the inkwidget) as a mask to see how the inkwidget wraps around a car part
 
-![](../../../.gitbook/assets/Cyberpunk\_2077\_Screenshot\_2024.03.06\_-\_17.12.42.38.png)
+![](../../.gitbook/assets/Cyberpunk\_2077\_Screenshot\_2024.03.06\_-\_17.12.42.38.png)
 {% endhint %}
 
 To do this, go back to the edit view and go to `libraryItems > Root > package > inkWidgetLibraryItemInstance > gameController`
@@ -228,6 +228,6 @@ Script credits thanks to [hgyi56](https://www.nexusmods.com/cyberpunk2077/users/
 * You can replace assets by adding the respective .inkatlases to your project and linking them inside the inkwidget (fool proof of way of doing this is by converting the inkwidget to JSON, CTR + F and replace paths)
   * This way you can replace the default car preview with your own, remove the Rayfield logo, etc. You can also change the text by editing the Lockey
 * To remove the secondary color picker, CTR + F in the inkwidget JSON for `inkCircleInnerWidget`, `colorPickerInner`, `pointerTargetSelectedInner`, `inner-circle`, `gradient_circle_inner`, `color_wheel_inner`, `CirclesInner` and set their `opacity` values: 0. Also set the `isInteractive` value to 0 (wherever it is set to 1 for the mentioned). You can then adjust the outer color picker as well, replace it with maybe a thicker color wheel like so in the inkatlas file:
-  * ![](<../../../.gitbook/assets/Screenshot 2024-03-30 174000.png>)
+  * ![](<../../.gitbook/assets/Screenshot 2024-03-30 174000.png>)
 
 This gui inkwidget is also available at [https://www.nexusmods.com/cyberpunk2077/mods/13947](https://www.nexusmods.com/cyberpunk2077/mods/13947)

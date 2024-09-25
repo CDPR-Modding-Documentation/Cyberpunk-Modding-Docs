@@ -1,5 +1,5 @@
 ---
-cover: ../../../../.gitbook/assets/page4.jpg
+cover: ../../../.gitbook/assets/page4.jpg
 coverY: 0
 ---
 
@@ -41,7 +41,7 @@ I will explain into another paragraph how the InkWidget is structured, how it wo
 
 ### Deploy the CrystalCoat InkWidget
 
-{% file src="../../../../.gitbook/assets/CrystalCoat InkWidget (2).zip" %}
+{% file src="../../../.gitbook/assets/CrystalCoat InkWidget (2).zip" %}
 CrystalCoat InkWidget
 {% endfile %}
 
@@ -58,7 +58,7 @@ You must deploy these files into your project's unique folder, for example into 
 
 When it comes to modifying a resource path into a InkWidget file it is more reliable to convert the widget into JSON and to modify the text file.
 
-<figure><img src="../../../../.gitbook/assets/image (372).png" alt="" width="479"><figcaption><p>Convert the InkWidget into JSON</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (461).png" alt="" width="479"><figcaption><p>Convert the InkWidget into JSON</p></figcaption></figure>
 
 Right-click on the InkWidget file and click on `Convert to JSON`. This will create a clear-copy of the file as readable JSON into the `raw` folder. Open it with a text editor and replace the **3 occurrences** of:
 
@@ -76,7 +76,7 @@ By your relative path to `secondary_color.inkatlas` (you must use double-backsla
 
 Then save the file and right-click on the readable JSON file in the `raw` folder of the Project Explorer and click on `Convert from JSON` to rebuild the InkWidget file.
 
-<figure><img src="../../../../.gitbook/assets/image (373).png" alt=""><figcaption><p>Convert the JSON file back into InkWidget</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (462).png" alt=""><figcaption><p>Convert the JSON file back into InkWidget</p></figcaption></figure>
 
 {% hint style="success" %}
 **Repeat this process with the other InkWidget files**
@@ -87,13 +87,13 @@ Then save the file and right-click on the readable JSON file in the `raw` folder
 
 Now your InkWidget files are ready to be used by any component. For now we will only use the `vvc_full_primary_only.inkwidget`. Copy the relative path to your InkWidget file and write it into the `widgetResource` field of the WorldWidgetComponent.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_zegnlrOAaQGgircZTY4S_image.webp" alt=""><figcaption><p>Create a WorldWidgetComponent</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_zegnlrOAaQGgircZTY4S_image.webp" alt=""><figcaption><p>Create a WorldWidgetComponent</p></figcaption></figure>
 
 You now have a WorldWidgetComponent properly configured for CrystalCoat. All you have to do in order to work with another mesh component is to duplicate this WorldWidgetComponent and then update its `meshTargetBinding > bindName` and `parentTransform > bindName` fields with the new component name.
 
 You can finally test your mod !
 
-<figure><img src="../../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 00.40.16.87.png" alt=""><figcaption><p>Colored body component</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 00.40.16.87.png" alt=""><figcaption><p>Colored body component</p></figcaption></figure>
 
 > Wait ! My doors are not colored ! This is not good !
 
@@ -112,7 +112,7 @@ This is great ! Now we need to apply CrystalCoat to all 6 doors and the side mir
 
 All you have to do is to follow this tutorial for each part of the vehicle.
 
-<figure><img src="../../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 00.38.06.16.png" alt=""><figcaption><p>CrystalCoat with all components</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 00.38.06.16.png" alt=""><figcaption><p>CrystalCoat with all components</p></figcaption></figure>
 
 > Wait ! This is cheap CrystalCoat ! What kind of green is this ?
 
@@ -124,7 +124,7 @@ Now you have added all 6 doors and side mirrors to CrystalCoat, you need to make
 
 Use the Tweak Browser and look into the vehicle record in the `destruction > detachableParts`. Then look for the parts that correspond to the one you have duplicated.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_TvE76HSOiPwDLVahpDUO_image.webp" alt=""><figcaption><p>TrunkLeft detachable part corresponding to trunk_a</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_TvE76HSOiPwDLVahpDUO_image.webp" alt=""><figcaption><p>TrunkLeft detachable part corresponding to trunk_a</p></figcaption></figure>
 
 In this picture you can see the `TrunkLeft` detachable part that corresponds to the `trunk_a` component. As we have duplicated this one to create the `trunk_a_painted_custom`, we need to add it into the list of components for this detachable part.
 

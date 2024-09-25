@@ -18,7 +18,7 @@ There are many different types of color-grading-related LUTs, such as `.CUBE` fi
 
 Initially, Cyberpunk took an approach like many other games, and encoding the LUT as an unwrapped 3D texture:
 
-<figure><img src="../../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption><p>"3D" LUT texture from ReShade project.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (97).png" alt=""><figcaption><p>"3D" LUT texture from ReShade project.</p></figcaption></figure>
 
 Afterwards, Cyberpunk would repackage LUT textures with the blue and green channels inverted to get higher quality, as the human eye values green more than other colors and is more efficient to get all gradients laid on top of green instead of blue. _**Here we can safely assume is where the switch to using true 3D textures was also made, but we will not show a 3D texture due to redundancy and inability to do so, so just assume from now on all textures are actually just a 3D cube.**_
 
@@ -76,7 +76,7 @@ Save back your DDS using NVTT and apply these settings:
 
 **If you forgot to flip your image inside of Photoshop, turn on the Image Options - Flip Vertically option inside of NVTT.**
 
-<figure><img src="../../../.gitbook/assets/image (49) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (137).png" alt=""><figcaption></figcaption></figure>
 
 #### **Wolvenkit:**
 
@@ -86,14 +86,14 @@ Save back your DDS using NVTT and apply these settings:
 * The folder in question is: `yourwolvenkitprojectname\source\raw\base\weather\24h_basic\luts`.&#x20;
 * You can also open the exact location from the 'Project explorer' in Wolvenkit. Under 'raw' folder dropdown you should see the exported `.dds` file. If you hover over it, it will show a yellow folder button that you can click to open its location.
 
-&#x20;![](<../../../.gitbook/assets/image (150).png>)
+&#x20;![](<../../../.gitbook/assets/image (238).png>)
 
 * Now to import it, hover over 'Tools' at the top left in Wolvenkit, and select 'Import Tool'.
 * Select the LUT and make sure the import settings are correct
 
 
 
-<figure><img src="../../../.gitbook/assets/image (145).png" alt=""><figcaption><p>(LUT Import Settings)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (233).png" alt=""><figcaption><p>(LUT Import Settings)</p></figcaption></figure>
 
 **Changing the settings back:**
 
@@ -101,11 +101,11 @@ Save back your DDS using NVTT and apply these settings:
 * Then change: depth and width in both sections that we modified, back to the default of 32.&#x20;
 * Under `renderTextureResource>renderResourceBlobPC>Header>mipMapInfo>0>layout` change 'rowPitch' to '512'.
 
-<figure><img src="../../../.gitbook/assets/image (146).png" alt=""><figcaption><p>(rowPitch Settings)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (234).png" alt=""><figcaption><p>(rowPitch Settings)</p></figcaption></figure>
 
 * Under `renderTextureResource>renderResourceBlobPC>Header>textureInfo` change 'type' to 'TEXTYPE\_3D'.
 
-<figure><img src="../../../.gitbook/assets/image (147).png" alt=""><figcaption><p>(textureInfo Settings)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (235).png" alt=""><figcaption><p>(textureInfo Settings)</p></figcaption></figure>
 
 That's it, now either use 'Pack mod' to pack the mod and have .archive file in the Wolvenkit project folder, or 'Install Mod' to preview it in game!&#x20;
 
@@ -117,7 +117,7 @@ If you want to change these as well, before importing you have to have the paths
 
 To achieve this with ease, I suggest exporting the LUTs you want replaced, as they will create paths and give you the names by default.
 
-<figure><img src="../../../.gitbook/assets/image (148).png" alt=""><figcaption><p>(LUTs I exported for replacement)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (236).png" alt=""><figcaption><p>(LUTs I exported for replacement)</p></figcaption></figure>
 
 Then you can go over to their locations, copy your LUT `.dds` file, copy the name of the LUT you want to replace, delete the original and overwrite it with yours while making sure it retains the name from the original. Rinse and repeat. Process for importing and adjusting the settings afterwards will be the same as before.&#x20;
 

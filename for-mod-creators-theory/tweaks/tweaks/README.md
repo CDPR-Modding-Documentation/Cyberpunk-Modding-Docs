@@ -9,7 +9,7 @@ This page will tell you what the game's weak database is, and how you can use it
 ### Wait, that's not what I want!
 
 * For the beginners' guide, check [how-to-yaml-tweak-modding-basics.md](../../core-mods-explained/tweakxl/tweakxl-changing-game-records/how-to-yaml-tweak-modding-basics.md "mention")
-* For another example, see How to change an NPC's record with Redscript: [tweakxl-changing-game-records](../../../for-mod-creators/modding-guides/tweakxl-changing-game-records/ "mention")
+* For another example, see How to change an NPC's record with Redscript: [tweakxl-changing-game-records](../../core-mods-explained/tweakxl/tweakxl-changing-game-records/ "mention")
 * Or check the second half of [new-iconic-weapon-tutorial-for-dummies.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention") for explanations of weapon properties
 
 ## What is the Tweak DB?

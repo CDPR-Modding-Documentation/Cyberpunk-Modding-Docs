@@ -1,5 +1,5 @@
 ---
-cover: ../../../../.gitbook/assets/page2.jpg
+cover: ../../../.gitbook/assets/page2.jpg
 coverY: 0
 layout:
   cover:
@@ -37,7 +37,7 @@ The name of all the customizable components of the vehicle will end with `_custo
 
 You should now have this project structure.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_yQFLYzTpLmb657ofkt4v_image.webp" alt=""><figcaption><p>Creating the body_01_painted_custom component</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_yQFLYzTpLmb657ofkt4v_image.webp" alt=""><figcaption><p>Creating the body_01_painted_custom component</p></figcaption></figure>
 
 ### Edit mesh files using Blender
 
@@ -49,7 +49,7 @@ Select the faces that correspond to the painted areas and press `P` then choose 
 Be careful not to duplicate submeshes between multiple files !
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_o5cJwY4rdbqEMRuipXPi_image.webp" alt=""><figcaption><p>Isolate the painted areas into a new submesh</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_o5cJwY4rdbqEMRuipXPi_image.webp" alt=""><figcaption><p>Isolate the painted areas into a new submesh</p></figcaption></figure>
 
 ## Define appearances and materials
 
@@ -69,7 +69,7 @@ You must rebuild the index of the `materialEntries` array after you have finishe
 
 You should now have this appearance list.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_pXqGFzi9F1CCafYbGnds_image.webp" alt=""><figcaption><p>Mesh appearances</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_pXqGFzi9F1CCafYbGnds_image.webp" alt=""><figcaption><p>Mesh appearances</p></figcaption></figure>
 
 Check `coated` material and see that it only contains the MultilayerMask and MultilayerSetup parameters using the `multilayer_vehicle_destruction.mi` as the base material.
 
@@ -79,13 +79,13 @@ CrystalCoat requires the mesh to use a specific base material in order to be col
 baseMaterial = base\vehicles\common\materials\vehicle_modding_destruction.mt
 ```
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_2UWLjhNDT51v71su4drZ_image.webp" alt=""><figcaption><p>Mesh materials definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_2UWLjhNDT51v71su4drZ_image.webp" alt=""><figcaption><p>Mesh materials definition</p></figcaption></figure>
 
 CrystalCoat is meant to apply a color on vehicle parts but it must look like something pretty, with a glossy coating. To do this add the following parameters in the `values` array. The easiest way is to copy the existing parameters from the Rayfield Caliburn vehicle and paste them into yours.
 
 Open this mesh file from the Rayfield Caliburn and go into `localMaterialBuffer > materials > premium_ext_07_customizable > values`. Then copy this list of parameters by right-clicking on them and choosing `Copy Selection From Array/Buffer`.
 
-<figure><img src="../../../../.gitbook/assets/image (378).png" alt="" width="350"><figcaption><p>Copy coating parameters from the Rayfield Caliburn</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (467).png" alt="" width="350"><figcaption><p>Copy coating parameters from the Rayfield Caliburn</p></figcaption></figure>
 
 Then right-click on the `values` array of your vehicle's body `coated` material and choose `Paste Selection To Array/Buffer`.
 
@@ -102,7 +102,7 @@ As we can modify a lot of components, the most reliable way to update the list i
 
 Each vehicle has a list of deformable parts. If you look into the vehicle record using the Tweak Browser into the `destruction` element you will see that the `body_01` component is a deformable part.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_qmzES0S96ZTtmfysni0d_image.webp" alt=""><figcaption><p>Deformable parts</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_qmzES0S96ZTtmfysni0d_image.webp" alt=""><figcaption><p>Deformable parts</p></figcaption></figure>
 
 As we have divided it into multiple components we need to add the duplicates to the list of deformable parts. To do this we must create a TweakXL override. Right-click on the `deformableParts` array and create a TweakXL override. This will create another TweakXL file into the folder `resources/r6/tweaks`.
 
