@@ -43,6 +43,6 @@ No matter the file extension, the file `contents` must be `.yaml` or `.json`&#x2
 
 ### Praxis
 
-{% content-ref url="tweakxl-changing-game-records/" %}
-[tweakxl-changing-game-records](tweakxl-changing-game-records/)
+{% content-ref url="../../../for-mod-creators/modding-guides/tweakxl-changing-game-records/" %}
+[tweakxl-changing-game-records](../../../for-mod-creators/modding-guides/tweakxl-changing-game-records/)
 {% endcontent-ref %}

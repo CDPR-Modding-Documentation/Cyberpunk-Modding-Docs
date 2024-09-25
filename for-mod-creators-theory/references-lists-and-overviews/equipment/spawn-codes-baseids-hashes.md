@@ -70,7 +70,7 @@ If you can't find any files with the method below, scroll to [#alternative-metho
 1. Inside the .app file, open the `appearances` array
 2. You will see something like this:
 
-<figure><img src="../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (24) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Ignore camera mode and open the appearance that you want (`basic_02_w`)
 4. Open the `components` array and find the component that has `mesh` in its name:
@@ -86,7 +86,7 @@ If you can't find any files with the method below, scroll to [#alternative-metho
 Now that you've found your mesh, you can **edit** it.&#x20;
 
 * To use it for the base of a new in-game item, check the [adding-new-items](../../../modding-guides/items-equipment/adding-new-items/ "mention") guide
-* To change its materials, check the [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention") guide
+* To change its materials, check the [changing-materials-colors-and-textures.md](../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") guide
 
 ## Alternative methods of finding an item
 

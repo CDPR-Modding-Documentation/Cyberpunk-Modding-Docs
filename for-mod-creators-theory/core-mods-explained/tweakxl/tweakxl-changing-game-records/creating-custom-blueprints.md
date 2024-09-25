@@ -155,7 +155,7 @@ The tweak part of making the blueprint is now over and we can jump in the game a
 
 We are going to use `Preset_Ajax_Pimp` as you can see the modSlots are not being shown in the game&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (495).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (343).png" alt=""><figcaption></figcaption></figure>
 
 For this, we are going to need to do some scripting lets create a new `.reds` file in the script folder and name it `AR_SMG_LMG_4Slot.reds`&#x20;
 
@@ -249,7 +249,7 @@ public final static func GetModsSlotIDs(type: gamedataItemType) -> array<TweakDB
 
 If we check the game now we can see that our slots are added but they are not shown correctly
 
-<figure><img src="../../../../.gitbook/assets/image (487).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (335).png" alt=""><figcaption></figcaption></figure>
 
 We need to fix the slot Icons the tooltip names and the slot name
 
@@ -330,4 +330,4 @@ Items.Mod:
 
 And now its done all of our power assault rifles now have 4 mod slots
 
-<figure><img src="../../../../.gitbook/assets/image (482).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (7) (2).png" alt=""><figcaption></figcaption></figure>

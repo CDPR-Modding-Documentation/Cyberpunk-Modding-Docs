@@ -11,7 +11,7 @@ description: Character creator options and their values
 
 This page lists various properties of the character creator. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.&#x20;
 
-Please note that this page lists **appearances** and **colours**. For **mesh paths**, please check [cheat-sheet-head](cheat-sheet-head/ "mention")
+Please note that this page lists **appearances** and **colours**. For **mesh paths**, please check [cheat-sheet-head](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/ "mention")
 
 {% hint style="info" %}
 You can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker) to find the correct appearances.&#x20;
@@ -44,7 +44,7 @@ You can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/np
 ## Skin tones&#x20;
 
 {% hint style="info" %}
-See [cheat-sheet-head](cheat-sheet-head/ "mention")-> [#head-material-instances](cheat-sheet-head/#head-material-instances "mention") for the corresponding files
+See [cheat-sheet-head](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/ "mention")-> [#head-material-instances](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/#head-material-instances "mention") for the corresponding files
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/character_creator_skin_tones.jpg" alt=""><figcaption><p>Keep reading for a textual list (compiled by <strong>wolv)</strong></p></figcaption></figure>

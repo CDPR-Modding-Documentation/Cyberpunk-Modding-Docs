@@ -21,7 +21,7 @@ Hiding an object will also hide its shadows and occluders.
 
 The distance at which this happens is controlled by the `forceAutoHideDistance` property of each world node:
 
-<figure><img src="../../../.gitbook/assets/image (345).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (259).png" alt=""><figcaption></figcaption></figure>
 
 This probably corresponds directly to the `nearAutoHideDistance` in the proxy mesh ndoes below?
 

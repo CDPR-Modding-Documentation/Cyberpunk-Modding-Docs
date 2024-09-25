@@ -24,7 +24,7 @@ Check the section's sub pages in the wiki's navigation tree for more detailed in
 
 #### Hands-on:
 
-* [changing-materials-colors-and-textures](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention") (guide)
+* [changing-materials-colors-and-textures.md](../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") (guide)
 * [self-made-normal-maps](../../modding-guides/textures-and-luts/self-made-normal-maps/ "mention")
 * [blending-materials-for-more-gooder-colours.md](multilayered/blending-materials-for-more-gooder-colours.md "mention")
 
@@ -80,7 +80,7 @@ If you have modded other games, you're used to PBR materials with a bunch of tex
 See [cheat-sheet-materials.md](../references-lists-and-overviews/cheat-sheet-materials.md "mention") -> [#pbr-material](../references-lists-and-overviews/cheat-sheet-materials.md#pbr-material "mention") for a list.
 
 {% hint style="success" %}
-To change a textured material, see [changing-materials-colors-and-textures](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention") -> [#step-2-finding-the-correct-appearance](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/#step-2-finding-the-correct-appearance "mention")
+To change a textured material, see [changing-materials-colors-and-textures.md](../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") -> [#step-2-finding-the-correct-appearance](../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#step-2-finding-the-correct-appearance "mention")
 {% endhint %}
 
 {% hint style="info" %}
@@ -94,7 +94,7 @@ This is specific to Cyberpunk, and it is incredibly cool. If you're used to text
 {% hint style="success" %}
 * What is a multilayered material and how does [multilayered](multilayered/ "mention") work?
 * What are these [properties](configuring-materials/multilayered-material-properties-1.md), how do I use them?
-* [Changing the colours](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/#multilayered-material)
+* [Changing the colours](../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material)
 * [Changing the mask](../../modding-guides/textures-and-luts/custom-multilayermasks.md)
 {% endhint %}
 

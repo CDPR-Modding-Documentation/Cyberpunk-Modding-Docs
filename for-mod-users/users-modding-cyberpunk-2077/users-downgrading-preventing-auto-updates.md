@@ -22,12 +22,12 @@ In GOG Galaxy, this can be done as a global setting — you disable auto-update 
 
 #### Only disable updates for CP2077
 
-Open the GOG Galaxy page for Cyberpunk 2077 and click the <img src="../../.gitbook/assets/image (423).png" alt="manage icon" data-size="line">manage icon next to the big play button, then `Manage installation` and `Configure...`\
+Open the GOG Galaxy page for Cyberpunk 2077 and click the <img src="../../.gitbook/assets/image (334) (1).png" alt="manage icon" data-size="line">manage icon next to the big play button, then `Manage installation` and `Configure...`\
 Disable the `Automatically update to the newest version` checkbox. Optionally, select the game patch you want to play on here.\
 \
 
 
-<figure><img src="../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (335) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Globally disable updates
 
@@ -57,7 +57,7 @@ Unlike the competition, Steam will not give you any control about auto-updating.
    1. Right-click on the file and select Properties
    2. At the bottom of the dialogue, check the Read-only box
 
-&#x20;![](<../../.gitbook/assets/image (173).png>)&#x20;
+&#x20;![](<../../.gitbook/assets/image (85).png>)&#x20;
 
 {% hint style="info" %}
 As long as Steam can't write to this file, it can't update Cyberpunk. Once you are ready to update, simply uncheck the Read-only checkbox again.

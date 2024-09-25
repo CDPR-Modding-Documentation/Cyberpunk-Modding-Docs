@@ -58,7 +58,7 @@ Importing sound effects is mostly straightforward. Simply put your sounds in you
 2. Select your sounds you want to import.
 3. Press "Import selected" (or all, whichever suits you)
 
-<figure><img src="../../.gitbook/assets/image (418).png" alt=""><figcaption><p>The Import Tool with the previously exported files on the left.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (331).png" alt=""><figcaption><p>The Import Tool with the previously exported files on the left.</p></figcaption></figure>
 
 You can usually leave the default settings as is. And your mod is done! Test it out.
 

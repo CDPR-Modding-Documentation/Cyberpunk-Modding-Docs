@@ -23,7 +23,7 @@ You can either download a template file (for example, from the [wiki's repositor
 
 Once you have the file, you can move it wherever you want it, either in the Windows Explorer or in Wolvenkit's [project explorer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer):
 
-<img src="../../.gitbook/assets/image (272).png" alt="Just remember to change the reference to the mesh or file you want to change." data-size="original">
+<img src="../../.gitbook/assets/image (184).png" alt="Just remember to change the reference to the mesh or file you want to change." data-size="original">
 
 Once you're done, we can proceed to the next section.
 

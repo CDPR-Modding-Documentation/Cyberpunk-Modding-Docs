@@ -20,7 +20,7 @@ The following graph is a visualization of the Questphase file:
 /dlc\dlc6_apart\loc_dlc6_apart_hey_gle\quest\phases\dlc6_apart_hey_gle.questphase
 ```
 
-<figure><img src="../../.gitbook/assets/image (298).png" alt=""><figcaption><p>Node editor</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (212).png" alt=""><figcaption><p>Node editor</p></figcaption></figure>
 
 ### To visualize Questphase in Wolvenkit we need to:&#x20;
 

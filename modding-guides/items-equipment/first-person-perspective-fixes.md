@@ -42,7 +42,7 @@ If you're creating a fix for someone else's asset, why not drop them the final f
 
 ## Problem #1: Your sleeves render _behind_ your arms
 
-<figure><img src="../../.gitbook/assets/image (286).png" alt=""><figcaption><p>(This can also present itself as rendering behind the body when you look down, for shirts, pants, shoes, etc.)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (198).png" alt=""><figcaption><p>(This can also present itself as rendering behind the body when you look down, for shirts, pants, shoes, etc.)</p></figcaption></figure>
 
 This is probably the most common problem I've seen, and is also thankfully the easiest to fix.
 
@@ -50,27 +50,27 @@ This is probably the most common problem I've seen, and is also thankfully the e
 
 1.  Open up the [mesh entity](../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) (`.ent`) file for the item you need to fix:
 
-    <figure><img src="../../.gitbook/assets/image (354).png" alt=""><figcaption><p>There are no appearances in a mesh entity file!</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (268).png" alt=""><figcaption><p>There are no appearances in a mesh entity file!</p></figcaption></figure>
 2.  Expand the `components` array, then find any `component`s with `Mesh` in their types, and check if they require fixing. In my example project, it's both the jacket and the sleeves.&#x20;
 
-    <figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption><p>You might have to hunt around to find the right component, depending on how many there are.</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (269).png" alt=""><figcaption><p>You might have to hunt around to find the right component, depending on how many there are.</p></figcaption></figure>
 3.  Scroll down and find the array `renderingPlaneAnimationParam`_,_ which will most likely be grayed out.
 
-    <figure><img src="../../.gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (270).png" alt=""><figcaption></figcaption></figure>
 4.  Click on it. In the right pane, change `None` to renderPlane.
 
-    <figure><img src="../../.gitbook/assets/image (357).png" alt=""><figcaption><p>Make sure to follow the same capitalization, otherwise it won't work!</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (271).png" alt=""><figcaption><p>Make sure to follow the same capitalization, otherwise it won't work!</p></figcaption></figure>
 5. Repeat this process for any other component, as needed
 6. When finished, save the file (either Ctrl + S or the Save button top left).
 7.  Install and test the mod in-game. If you did it correctly, your sleeves should now render properly.
 
-    <figure><img src="../../.gitbook/assets/image (358).png" alt=""><figcaption><p>Oh look, sleeves!</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (272).png" alt=""><figcaption><p>Oh look, sleeves!</p></figcaption></figure>
 
 
 
 ## Problem #2: It's in your face (#justStormtrooperThings)
 
-<figure><img src="../../.gitbook/assets/image (359).png" alt=""><figcaption><p>Still better than wearing a <em>real</em> helmet.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (273).png" alt=""><figcaption><p>Still better than wearing a <em>real</em> helmet.</p></figcaption></figure>
 
 To fix this problem, you need to **hide** your item in first person perspective.&#x20;
 
@@ -88,13 +88,13 @@ If you don't have a yaml because you're changing an in-game item for some reason
 2. Open the file in any text editor (recommended: [**Notepad++**](https://notepad-plus-plus.org/downloads/))
 3.  Helpful documentation on .yaml files resides [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items/archive-xl-item-structure-explained#the-control-file-yourmodname.yaml). Hopefully it looks something like this:
 
-    <figure><img src="../../.gitbook/assets/image (360).png" alt=""><figcaption><p>This is my example .yaml file with only <em>one</em> entry. Yours might have more.</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (274).png" alt=""><figcaption><p>This is my example .yaml file with only <em>one</em> entry. Yours might have more.</p></figcaption></figure>
 4. Check if there is something called `$instances`. If yes, the mod is using [archivexl-dynamic-variants](adding-new-items/archivexl-dynamic-variants/ "mention") and you are done here — go to [#dynamic-variants-hiding-fpp](first-person-perspective-fixes.md#dynamic-variants-hiding-fpp "mention")
 5. Find the line `appearanceSuffixes`_. **Again,**_ If the mod is using [archivexl-dynamic-variants](adding-new-items/archivexl-dynamic-variants/ "mention") (there is something called $instances), you can skip this step.
 6. If the line isn't there, add it. Use the same number of leading spaces as in the surrounding lines!
 7.  Add the line `itemsFactoryAppearanceSuffix.Camera` to the array. If you have something else in there, add a comma.
 
-    <figure><img src="../../.gitbook/assets/image (361).png" alt=""><figcaption><p>If there's already another entry, add a comma and a space, <em>then</em> add <code>itemsFactoryAppearanceSuffix.Camera</code>.</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (275).png" alt=""><figcaption><p>If there's already another entry, add a comma and a space, <em>then</em> add <code>itemsFactoryAppearanceSuffix.Camera</code>.</p></figcaption></figure>
 8. Repeat this process for any other items in the `.yaml` that you need to fix.&#x20;
 9. Save and close the file.
 
@@ -107,7 +107,7 @@ For dynamic appearances (if the yaml has a key called `$instances`), go to [#dyn
 1. Switch back to Wolvenkit.
 2. Open the [root entity (.ent)](../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#root-entity) file (it should have an array called `appearances`)
 
-<figure><img src="../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
 
 You now have two ways of hiding the item in first person:
 
@@ -151,7 +151,7 @@ For legacy appearances (if the yaml does not have a key called `$instances`), go
 2. Open the `appearances` array
 3. Select each appearance and add `&camera=tpp` to the name.
 
-<figure><img src="../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
 
 #### Hiding FPP in the mesh\_entity
 
@@ -169,11 +169,11 @@ Alternatively, you can duplicate the component and have two for different meshes
 
 Save and close the file. Repeat the whole process for any other items that need to be obliterated in first person. Install and test. If all went well, no more obstructed vision!
 
-<figure><img src="../../.gitbook/assets/image (365).png" alt=""><figcaption><p>I can see clearly now!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (279).png" alt=""><figcaption><p>I can see clearly now!</p></figcaption></figure>
 
 ## Problem #3: Partial hiding (#justDraculaThings)
 
-<figure><img src="../../.gitbook/assets/image (366).png" alt=""><figcaption><p>I probably could have chosen a better example, but I'm sure you can see the big clump of fur on the right.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (280).png" alt=""><figcaption><p>I probably could have chosen a better example, but I'm sure you can see the big clump of fur on the right.</p></figcaption></figure>
 
 Fixing this is very similar to Problem #2, just with a few extra steps.
 
@@ -207,11 +207,11 @@ At this point, it can be done in a few ways, depending on some factors:
 3.  In the .ent file, open the `components` array and check any component with Mesh in its name:\
 
 
-    <figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption><p>You might have to hunt around to find the right component, depending on how many there are.</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (269).png" alt=""><figcaption><p>You might have to hunt around to find the right component, depending on how many there are.</p></figcaption></figure>
 4. Open the linked .mesh file in Wolvenkit
 5. Select `Mesh Preview`&#x20;
 
-<figure><img src="../../.gitbook/assets/image (367).png" alt=""><figcaption><p>My example mesh, a lovely fur collar.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (281).png" alt=""><figcaption><p>My example mesh, a lovely fur collar.</p></figcaption></figure>
 
 6. In the right-hand panel, you will see a list of checkboxes.
 
@@ -222,7 +222,7 @@ If there is only one submesh, you need to edit it in Blender to split off or del
 7. Toggle them off until the part that is in your face turns invisible. In my example, submesh 01 hides the upper collar.
 8. Remember the number (01 in the example below)
 
-<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
 
 9. Proceed to the section for [_Chunk Masks_](first-person-perspective-fixes.md#chunk-masks)_._
 
@@ -240,18 +240,18 @@ You can learn more about chunk masks under [3d-objects-.mesh-files](../../for-mo
 6. Open up the mesh entity (.ent) file and expand the `components` array.&#x20;
 7.  Find the component that needs its parts hidden and copy the name. In my example, the component is `examplejacket1_fur`_._
 
-    <figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
 8.  Back to the appearance (.app) file. Paste the component's name from the mesh entity into the _`componentName`_ field.
 
-    <figure><img src="../../.gitbook/assets/image (371).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (285).png" alt=""><figcaption></figcaption></figure>
 9. Click on `chunkMask` and uncheck the submeshes that you want to hide. (You found out which ones that were in [#finding-the-right-submesh](first-person-perspective-fixes.md#finding-the-right-submesh "mention") - In my example it was submesh 01)
 
-<figure><img src="../../.gitbook/assets/image (372).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (286).png" alt=""><figcaption></figcaption></figure>
 
 10. **Optional**: If you need to hide more parts or affect more components/meshes, rinse and repeat.
 11. Save the appearance (.app) file and install the mod to test. If all went well, there should no longer be parts clipping into view.
 
-<figure><img src="../../.gitbook/assets/image (373).png" alt=""><figcaption><p>Results may vary depending on the item, but this is much better, no?</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (287).png" alt=""><figcaption><p>Results may vary depending on the item, but this is much better, no?</p></figcaption></figure>
 
 ### Creating a second mesh
 

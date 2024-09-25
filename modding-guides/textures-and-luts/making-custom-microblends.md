@@ -12,11 +12,11 @@ You can try making your own seamless pattern with the help of [this tutorial](ht
 
 1. After you download or make your pattern, make sure it’s a 1:1 seamless image. I recommend working on at least 1k (1024x1024) to keep the quality.
 
-![](../../.gitbook/assets/0.png)
+![](<../../.gitbook/assets/0 (1).png>)
 
 2. Turn everything you **don’t** want as microblend into transparency. You can magic wand if you’d like, but a quick way to do it is using the Color Range tool in PS. In my case, I’ll get rid of the grey areas.
 
-![](<../../.gitbook/assets/1 (2).png>) ![](<../../.gitbook/assets/2 (1).png>)
+![](<../../.gitbook/assets/1 (2).png>) ![](<../../.gitbook/assets/2 (1) (1).png>)
 
 Upper menu: Select > Color Range > Use the eyedropper to select the color you want gone.
 
@@ -33,10 +33,10 @@ If set up like this, it will be a one color microblend. To make two or more colo
 4. Save the file(s) as .png, and extract the **base\surfaces\microblends\scratches\_and\_flakes\_a.xbm** microblend from the files. Head over to Noesis and export your **custom microblend**(s) over the **scratches\_and\_flakes\_a**. You can also work with .dds by saving it in compression BC7.
 5. Now simply custom-path your microblend(s) while making sure to path them into the **µblends** window on MlsetupBuilder OR in the microblend path in the .mlsetup on WolvenKit.
 
-![](<../../.gitbook/assets/5 (1).png>)
+![](<../../.gitbook/assets/5 (1) (1).png>)
 
 ![](<../../.gitbook/assets/6 (2).png>)
 
 **IMPORTANT:** if you’re adding microblends into a custom port, don’t forget to make the microblend layer in the mlmask a neutral grey, otherwise it’ll screw with the microblend color. For me, the **50% grey (#959595)** from PS works perfectly.
 
-![](<../../.gitbook/assets/7 (1).png>)
+![](<../../.gitbook/assets/7 (1) (1).png>)

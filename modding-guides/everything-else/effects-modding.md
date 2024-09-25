@@ -23,11 +23,11 @@ As we progress through the game, we encounter many effects, such as those seen i
 
 Firstly, we choose the effect we want to import. I found an effect I want to use for overclocking during the Somewhat Damaged quest, and the quest code is Q305\_bunker. Navigate to the asset browser and search for related items, focusing on extracting the effect files.
 
-<figure><img src="../../.gitbook/assets/image (471).png" alt=""><figcaption><p>fxLibrary.lua</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (383).png" alt=""><figcaption><p>fxLibrary.lua</p></figcaption></figure>
 
 To confirm if this effect is what I'm looking for, I need the [FX player](https://www.nexusmods.com/cyberpunk2077/mods/8194) mod. Based on the Cyberpunk installation folder, go to bin\x64\plugins\cyber\_engine\_tweaks\mods\FxPlayer\modules and confirm that fxLibrary.lua operates in the same format.&#x20;
 
 Copy the file path of the desired effect to play these files in-game using CET (Cyber Engine Tweaks).
 
-<figure><img src="../../.gitbook/assets/image (472).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (384).png" alt=""><figcaption></figcaption></figure>
 

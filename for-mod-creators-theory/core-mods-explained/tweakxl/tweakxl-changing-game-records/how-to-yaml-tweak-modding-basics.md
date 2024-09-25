@@ -68,7 +68,7 @@ Using double space will guarantee your file will keep the same structure everywh
 
 Think of records as **unique containers** grouping multiple properties — which can be **other records**, or [#flats](how-to-yaml-tweak-modding-basics.md#flats "mention").&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (409).png" alt=""><figcaption><p>Don't worry, it gets easier to understand over time.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (323).png" alt=""><figcaption><p>Don't worry, it gets easier to understand over time.</p></figcaption></figure>
 
 {% hint style="danger" %}
 Record names **must** be unique!
@@ -291,11 +291,11 @@ Now, the importance of VSCode in this tutorial. VSCode has an incredibly powerfu
 
 If you pay attention to the miniature code on the right side and the scroll bar, there is a highlight that will point you exactly where things are nested:
 
-<figure><img src="../../../../.gitbook/assets/10 (1).png" alt=""><figcaption><p>You can scroll on the miniature too. The big vertical gray bar is your scroll bar, and the tiny horizontal lines are the highlights.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/10 (1) (1).png" alt=""><figcaption><p>You can scroll on the miniature too. The big vertical gray bar is your scroll bar, and the tiny horizontal lines are the highlights.</p></figcaption></figure>
 
 If you move over that highlight, you will finally have your answer.
 
-<figure><img src="../../../../.gitbook/assets/11.png" alt=""><figcaption><p>inline0 was nested inside OnEquip parameter, which is inside the main item record.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/11 (1).png" alt=""><figcaption><p>inline0 was nested inside OnEquip parameter, which is inside the main item record.</p></figcaption></figure>
 
 ***
 

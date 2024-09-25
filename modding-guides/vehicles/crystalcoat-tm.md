@@ -23,11 +23,11 @@ CrystalCoat is made possible with two core components:
 
 In your vehicle's .ent file, add a new appearance for Crystal Coat
 
-<figure><img src="../../.gitbook/assets/image (393).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (307).png" alt=""><figcaption></figcaption></figure>
 
 We also need an entEffectSpawnerComponent for Crystal Coat fx effects. You can copy paste this as-is from the Aerondight .ent (`base\vehicles\sport\v_sport1_rayfield_aerondight__basic_01.ent`): `EffectSpawner3546`
 
-<figure><img src="../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
 
 ### .app
 
@@ -40,9 +40,9 @@ Define the appearance that you just created in the .ent: You can duplicate your 
 
 
 
-<figure><img src="../../.gitbook/assets/image (396).png" alt=""><figcaption><p><code>customizable</code> material entry. Remember to add your vehicle's MLmask and MLsetup paths</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (310).png" alt=""><figcaption><p><code>customizable</code> material entry. Remember to add your vehicle's MLmask and MLsetup paths</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (395).png" alt=""><figcaption><p>adding new mesh appearance. Note that I only set the <code>customizable</code> material for submeshes that need to change color</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (309).png" alt=""><figcaption><p>adding new mesh appearance. Note that I only set the <code>customizable</code> material for submeshes that need to change color</p></figcaption></figure>
 
 * Remember to update the material values with your custom vehicle's mlsetup and mlmask paths
 * Set the `customizable` material entry for all the submeshes that change color
@@ -55,7 +55,7 @@ Define the appearance that you just created in the .ent: You can duplicate your 
 * Copy and paste all `WorldWidgetComponent`s related to Crystal Coat (all of them will start with `visual_customization_`) to your customizable appearance
 * Update the `parentTransform` and `meshTargetBinding`for each of the components to the respective car part in your appearance as needed (they don't necessarily need to match one to one: for e.g., you can use the fuel\_cap WorldWidgetComponent for something that's not a fuel cap)
 
-<figure><img src="../../.gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
 
 ### .yaml / tweak edits
 

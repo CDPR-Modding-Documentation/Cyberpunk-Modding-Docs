@@ -8,13 +8,13 @@ To make interior lights work, you first need to create the light boundary/shape 
 
 For eg in the porsche 911 .ent:
 
-<figure><img src="../../.gitbook/assets/image (410).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
 
 To create this shape, first we need to create a "cutout" of the interior mesh. Load your car's interior in a Blender project and join them all into a single mesh
 
 Then you can create a cutout mesh by overlaying an Icosphere over your car's interior mesh and then using a Shrinkwrap modifier as shown:
 
-<figure><img src="../../.gitbook/assets/image (419).png" alt=""><figcaption><p>(Credit to Similarius for sharing this method)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (2).png" alt=""><figcaption><p>(Credit to Similarius for sharing this method)</p></figcaption></figure>
 
 {% hint style="warning" %}
 Ensure the final cutout isn't high poly. Realistically, you don't need more than a few hundred vertices at maximum. High poly cutout may cause game crashes

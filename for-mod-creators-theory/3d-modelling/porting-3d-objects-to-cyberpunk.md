@@ -218,7 +218,7 @@ We can simply parent the meshes to our existing armature:
 
 Start by **deleting all vertex groups** from your new mesh, as we will now replace these and don't want anything funky to stick around to destroy our re-import:
 
-<figure><img src="../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure>
 
 You now need to transfer the weights from your original game mesh. If you deleted or overwrote the armature's original meshes during [#step-3-parenting-the-mesh-es](porting-3d-objects-to-cyberpunk.md#step-3-parenting-the-mesh-es "mention"), you can simply import it again for a second copy.
 
