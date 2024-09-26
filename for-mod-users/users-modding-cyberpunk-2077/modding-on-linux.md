@@ -35,7 +35,7 @@ This guide has information about Protontricks (recommended) and Lutris (only her
 ### Protontricks: Setting up
 
 {% hint style="warning" %}
-Make sure that you are on the most recent version of Protontricks. This guide will follow how to perform these steps on a SteamDeck, but other KDE-based distros should be similar. Other Linux distros will need to go to their respective app stores to download Protontricks.
+Make sure that you are on the most recent version of Protontricks. This guide will follow how to perform these steps on a SteamDeck, but other systems running KDE Plasma should be similar. Other Linux distros will need to go to their respective app stores, or use the Flatpak CLI tool, to download Protontricks.
 {% endhint %}
 
 {% hint style="info" %}
