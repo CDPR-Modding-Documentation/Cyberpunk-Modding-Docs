@@ -200,7 +200,7 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 3. Align each item to the centre of each grey square.
 4. Hide all other layers except your icons.
 5. Now save the image as a `.png` in the raw folder of your WolvenKit project.
-6. Import the `.png` into your WolvenKit project with the `TEXG_Generic_UI` `TextureGroup` setting and make sure that `PremultiplyAlpha` is enabled.
+6. Import the `.png` into your WolvenKit project with the `TEXG_Generic_UI` `TextureGroup` setting and make sure that "Transparency from alpha channel" is enabled.
 
 ## Hooking up the inkatlas
 
