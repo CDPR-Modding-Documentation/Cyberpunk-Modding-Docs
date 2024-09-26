@@ -288,7 +288,7 @@ In the case of the Mahir Supron the side stripes are created by the layer 2 so w
 
 The layer 0 is already a full white image so there is no need to change it. Either find another layer that is already full black or create one with an image editor software using the same image size. Then duplicate this file for all the other layers except layer 2 and reuse their name.
 
-<figure><img src="../../../.gitbook/assets/image (342) (1).png" alt=""><figcaption><p>Layers for the painted.mlmask</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (431).png" alt=""><figcaption><p>Layers for the painted.mlmask</p></figcaption></figure>
 
 Then import the layers back into the mlmask file using the `Tools > Import Tool`.
 

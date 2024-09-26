@@ -38,13 +38,13 @@ This should only happen for meshes with armatures. You can check the screenshot 
 
 You are trying to export a pose, but you didn't select your armature. Click on the armature object in the outliner:
 
-<figure><img src="../../../.gitbook/assets/image (318).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (404).png" alt=""><figcaption></figcaption></figure>
 
 ## No meshes selected
 
 You're trying to export something, but you haven't selected any meshes. Select everything that you want to export in the outliner (top-right panel) - the armature parent will be auto-selected for you.
 
-<figure><img src="../../../.gitbook/assets/image (319).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (405).png" alt=""><figcaption></figcaption></figure>
 
 ## Meshes must have UV layers
 
@@ -86,7 +86,7 @@ If your mesh is supposed to move with the body, check [#equipment-you-need-an-ar
 
 It's enough to check the "Export as Static Prop" box during export, and the error will go away.
 
-<figure><img src="../../../.gitbook/assets/image (320).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (406).png" alt=""><figcaption></figcaption></figure>
 
 ### Equipment: You need an armature
 

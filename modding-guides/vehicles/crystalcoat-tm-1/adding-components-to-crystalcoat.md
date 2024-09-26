@@ -58,7 +58,7 @@ You must deploy these files into your project's unique folder, for example into 
 
 When it comes to modifying a resource path into a InkWidget file it is more reliable to convert the widget into JSON and to modify the text file.
 
-<figure><img src="../../../.gitbook/assets/image (372).png" alt="" width="479"><figcaption><p>Convert the InkWidget into JSON</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (461).png" alt="" width="479"><figcaption><p>Convert the InkWidget into JSON</p></figcaption></figure>
 
 Right-click on the InkWidget file and click on `Convert to JSON`. This will create a clear-copy of the file as readable JSON into the `raw` folder. Open it with a text editor and replace the **3 occurrences** of:
 
@@ -76,7 +76,7 @@ By your relative path to `secondary_color.inkatlas` (you must use double-backsla
 
 Then save the file and right-click on the readable JSON file in the `raw` folder of the Project Explorer and click on `Convert from JSON` to rebuild the InkWidget file.
 
-<figure><img src="../../../.gitbook/assets/image (373).png" alt=""><figcaption><p>Convert the JSON file back into InkWidget</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (462).png" alt=""><figcaption><p>Convert the JSON file back into InkWidget</p></figcaption></figure>
 
 {% hint style="success" %}
 **Repeat this process with the other InkWidget files**

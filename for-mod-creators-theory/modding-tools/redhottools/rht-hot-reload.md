@@ -85,7 +85,7 @@ Here, you can manually trigger a reload.&#x20;
 
 _You can do this via by running "Hot Reload Scripts" from Visual Studio Code_
 
-<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
 ### Tweaks
 

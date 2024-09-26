@@ -65,12 +65,12 @@ The Flags for any dynamic material must be set to `Soft`, and the depot path mus
 
 Since that one won't change, we can leave the `MultilayerMask` alone. For the MultilayerSetup, we need to change both the `DepotPath`:
 
-<figure><img src="../../.gitbook/assets/image (321).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (407).png" alt=""><figcaption></figcaption></figure>
 
 * By making the depot path start with a `*`, we tell ArchiveXL that this is a dynamic material
 * The value for `{material}` will be passed from the appearance, like this:
 
-<figure><img src="../../.gitbook/assets/image (322).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (408).png" alt=""><figcaption></figcaption></figure>
 
 ... and the rest just works.
 

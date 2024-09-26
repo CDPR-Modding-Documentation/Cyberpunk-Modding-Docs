@@ -10,7 +10,7 @@ This page is a subsection of the [Netrunning Suit guide](./). It will teach you 
 
 None of this is required for completing this guide, but if you're curious, you can poke around the wiki and learn a lot more about materials! Just follow the links and get lost... :)
 
-* Another guide: [changing-materials-colors-and-textures.md](../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
+* Another guide: [changing-materials-colors-and-textures](../editing-existing-items/changing-materials-colors-and-textures/ "mention")
 * Theory: [multilayered](../../../for-mod-creators-theory/materials/multilayered/ "mention")
 * Theory: [configuring-materials](../../../for-mod-creators-theory/materials/configuring-materials/ "mention")&#x20;
 

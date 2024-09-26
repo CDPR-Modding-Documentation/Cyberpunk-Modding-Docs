@@ -32,7 +32,7 @@ You will need a [Wolvenkit Project](https://wiki.redmodding.org/wolvenkit/wolven
 
 ### Step 0: Figuring out the slot to replace to
 
-Start by getting the name of the hair slot, this can be easily found by going to [Cheat Sheet: Hair](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/hair.md) page and cross-reference the slot number and V build type with the mesh name to go on with the process.
+Start by getting the name of the hair slot, this can be easily found by going to [Cheat Sheet: Hair](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md) page and cross-reference the slot number and V build type with the mesh name to go on with the process.
 
 In this case, slot number 01 is called `hh_033_wa__player` while slot number 04 is `hh_089_wa__thompson_common`.
 
@@ -44,7 +44,7 @@ Locate your hair mod in the Asset Browser by enabling the Mod Browser toggle and
 
 Your Project Explorer should look something like this.
 
-<figure><img src="../../../.gitbook/assets/image (400).png" alt=""><figcaption><p><em>My hair mesh brings em all to the yard</em></p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (538).png" alt=""><figcaption><p><em>My hair mesh brings em all to the yard</em></p></figcaption></figure>
 
 {% hint style="info" %}
 Your mod project could have only one .MESH file instead of two and may be without the text "cyberware\_01" appened to it. **This is normal behavior** as CDPR have changed how certain hair models interact with cyberware since some modders did their hair mods.
@@ -62,23 +62,23 @@ With Mod Browser disabled search for the wanted slot's mesh name, in this case `
 
 Project Explorer should look like this now
 
-<figure><img src="../../../.gitbook/assets/image (391).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (529).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 3: Rename your mesh file
 
 To rename your meshes right click on a mesh and click on rename (can be done using shortcut key F2) and type the desired slot's mesh name along with its cyberware version
 
-<figure><img src="../../../.gitbook/assets/image (392).png" alt=""><figcaption><p>Type your desired mesh name in your mesh!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (530).png" alt=""><figcaption><p>Type your desired mesh name in your mesh!</p></figcaption></figure>
 
 Your files will look like this!
 
-<figure><img src="../../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (532).png" alt=""><figcaption></figcaption></figure>
 
 
 
 Now drag **your files** into your new mesh slot's folder, you will get a dialog asking you if you want to confirm overwrite, click on **Yes.** And delete the now empty folder.
 
-<figure><img src="../../../.gitbook/assets/image (395).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (533).png" alt=""><figcaption></figcaption></figure>
 
 ### Step 4: Pack 'n' go
 
@@ -86,7 +86,7 @@ Now that you've done replacing the mesh files, confirm that your mod worked by c
 
 You can also click on the down arrow next to install and set to "Install and Launch" to do these two steps for you!
 
-<figure><img src="../../../.gitbook/assets/image (396).png" alt=""><figcaption><p>Life is so fun when you have something like WolvenKit!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (534).png" alt=""><figcaption><p>Life is so fun when you have something like WolvenKit!</p></figcaption></figure>
 
 The quickest way to check if your hair slot change has worked is by making a new game and see the changes in hair style selection.
 

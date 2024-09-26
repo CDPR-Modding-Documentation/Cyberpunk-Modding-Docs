@@ -15,9 +15,9 @@ For this example, we'll be merging two **VTK** tattoos from [Belly Tattoos Pack]
 
 ### Wait, this is not what I want!
 
-* If you are looking for the body layouts, check [converting-between-tattoo-frameworks](../../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/ "mention") -> [#texture-layouts](../../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/#texture-layouts "mention")
+* If you are looking for the body layouts, check [converting-between-tattoo-frameworks](../converting-between-tattoo-frameworks/ "mention") -> [#texture-layouts](../converting-between-tattoo-frameworks/#texture-layouts "mention")
 * For a more detailed guide with illustrated steps, check [how-to-create-an-overlay-tattoo.md](../how-to-create-an-overlay-tattoo.md "mention"). You can use that guide for reference.
-* If you want additional information, check [converting-between-tattoo-frameworks](../../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/ "mention").
+* If you want additional information, check [converting-between-tattoo-frameworks](../converting-between-tattoo-frameworks/ "mention").
 
 ### Level of difficulty: Easy
 

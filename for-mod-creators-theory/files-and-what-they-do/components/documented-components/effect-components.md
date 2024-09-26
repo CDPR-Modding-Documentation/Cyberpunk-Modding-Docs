@@ -30,7 +30,7 @@ Usually called `fx_slots`, this component allows you to place your effects in th
 If you want the position of your effects to follow the movement of parts of the object you can set the _`boneName`_ an existing bone of your object\
 
 
-<figure><img src="../../../../.gitbook/assets/image (117).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (205).png" alt=""><figcaption></figcaption></figure>
 
 In this case the `relativePosition` will be relative to the bone's position
 
@@ -72,7 +72,7 @@ If you are making effects into equipment, having the same autoSpawnTag will make
 
 eventRUID in the ent component must be the same as the effect particles ruid, and ideally should be unique across everything. You can right click on a RUID field and choose "Generate new CRUID" to generate a semi-random new CRUID and then copy it across so they match.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/image (290).png" alt=""><figcaption><p>Red square: autoSpawnTag, Yellow square: eventRUID</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (376).png" alt=""><figcaption><p>Red square: autoSpawnTag, Yellow square: eventRUID</p></figcaption></figure>
 
 ## Placing effect components
 

@@ -29,7 +29,7 @@ If you want to edit other files for V, you may be able to find their paths in [c
 We will do the same thing here as in the guide[npv-preparing-the-head-in-blender.md](npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention"), just that our files will be in a different path. This section will tell you which files to add and where to put the .blend file; for detailed instructions, see the other guide.
 {% endhint %}
 
-1. Look up on [cheat-sheet-head](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/ "mention")-> [#head-file-paths](../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/#head-file-paths "mention") where to find the files you need.
+1. Look up on [cheat-sheet-head](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/ "mention")-> [#head-file-paths](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/#head-file-paths "mention") where to find the files you need.
 2. Add all the files with the corresponding extension to your Wolvenkit project.
 3. Export them all via Wolvenkit Export Tool (see [#step-2-exporting-head](npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md#step-2-exporting-head "mention"))
 4. In the NPV example files that you downloaded, find the following file:

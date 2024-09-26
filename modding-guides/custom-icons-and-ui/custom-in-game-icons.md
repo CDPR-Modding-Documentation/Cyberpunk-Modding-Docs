@@ -37,7 +37,7 @@ This includes the following files:
 | 5\_weapons                    | 360x120 (x5)       |
 | 40\_items\_inkatlas\_template | 160x160 (x40)      |
 
-<figure><img src="../../.gitbook/assets/image (258).png" alt=""><figcaption><p>The template provided contains these folders</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (344).png" alt=""><figcaption><p>The template provided contains these folders</p></figcaption></figure>
 
 **Template Credits: Apart**
 
@@ -77,7 +77,7 @@ We are renaming both files to `preview_icons` to avoid confusion in the future:
 
     <div align="left" data-full-width="true">
 
-    <figure><img src="../../.gitbook/assets/image (121).png" alt=""><figcaption><p>Image A</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (209).png" alt=""><figcaption><p>Image A</p></figcaption></figure>
 
     </div>
 7. _<mark style="color:red;">(Optional)</mark>_ If you want to connect the **inkatlas** with your item, refer to the [ArchiveXL **⇗** ](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/custom-icons-and-ui/adding-items-preview-images)guide for detailed instructions. \
@@ -93,5 +93,5 @@ We are renaming both files to `preview_icons` to avoid confusion in the future:
 
 
 
-<figure><img src="../../.gitbook/assets/image (122).png" alt=""><figcaption><p>Image B (Optional)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (210).png" alt=""><figcaption><p>Image B (Optional)</p></figcaption></figure>
 

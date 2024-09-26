@@ -210,7 +210,7 @@ Find the step-by-step guide in the [appearance section](archive-xl-item-structur
 
 ### Step 4: Add it to the .mesh
 
-This tutorial assumes you already know how to [recolour an item](../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md). Quick reminder about the mlsetup:
+This tutorial assumes you already know how to [recolour an item](../editing-existing-items/changing-materials-colors-and-textures/). Quick reminder about the mlsetup:
 
 1. Export it to json
 2. edit the `mlsetup.json` with the [MLSetupBuilder](https://github.com/Neurolinked/MlsetupBuilder)

@@ -78,7 +78,7 @@ We only need the .morphtargets to generate the actual meshes by duplicating the 
 
 The different variants in the character creator correspond to the different meshes. For example, if you select cyberware 3 in the character creator, the mesh that will get loaded is `cyberware_03`. Not so difficult, is it?
 
-To learn what the prefixes mean, check [#head-file-prefixes](../../../for-mod-creators/references-lists-and-overviews/cheat-sheet-head/#head-file-prefixes "mention").
+To learn what the prefixes mean, check [#head-file-prefixes](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/#head-file-prefixes "mention").
 
 </details>
 

@@ -17,7 +17,7 @@ If you want, you can then turn your replacers into new [custom-props](../../modd
 
 * To learn how material assignment works, check [3d-objects-.mesh-files](../files-and-what-they-do/3d-objects-.mesh-files/ "mention") and its sub-page [submeshes-materials-and-chunks.md](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention")
 * To learn more on how materials in general work,  read [materials](../materials/ "mention")&#x20;
-* For a guide on changing an existing mesh, read [changing-materials-colors-and-textures.md](../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention")
+* For a guide on changing an existing mesh, read [changing-materials-colors-and-textures](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
 
 ## Prerequisites
 

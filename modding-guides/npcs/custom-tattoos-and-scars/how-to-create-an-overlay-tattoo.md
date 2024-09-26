@@ -13,7 +13,7 @@ This guide will teach you how to create your own overlay tattoo for either of th
 
 ### Wait, this is not what I want!
 
-* If you are looking for the body layouts, check [converting-between-tattoo-frameworks](../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/ "mention") -> [#texture-layouts](../../../for-mod-creators/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/#texture-layouts "mention")
+* If you are looking for the body layouts, check [converting-between-tattoo-frameworks](converting-between-tattoo-frameworks/ "mention") -> [#texture-layouts](converting-between-tattoo-frameworks/#texture-layouts "mention")
 
 ### Level of difficulty
 
@@ -135,7 +135,7 @@ When your tattoo is complete, uncheck the eye on the skin layer
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (200).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (287).png" alt=""><figcaption></figcaption></figure>
 
 </div>
 
@@ -143,7 +143,7 @@ Your project should look like this: Your tattoo and no background
 
 <div align="left">
 
-<figure><img src="../../../.gitbook/assets/image (201).png" alt="" width="357"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (288).png" alt="" width="357"><figcaption></figcaption></figure>
 
 </div>
 
@@ -171,11 +171,11 @@ Now you need to import your file back into Wolvenkit. You have two ways to do th
 2. In Wolvenkit, open the .xbm file by either double-clicking the file, or clicking the blue icon
 3.
 
-    <figure><img src="../../../.gitbook/assets/image (202).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (289).png" alt=""><figcaption></figcaption></figure>
 4. Switch to the "**Texture Preview**" tab
 5. Right click on it and select `Replace Texture`. Choose the file you have saved.
 
-![](<../../../.gitbook/assets/image (203).png>)![](<../../../.gitbook/assets/image (204).png>)
+![](<../../../.gitbook/assets/image (290).png>)![](<../../../.gitbook/assets/image (291).png>)
 
 ## Time to test!
 

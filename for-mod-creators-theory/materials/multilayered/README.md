@@ -23,7 +23,7 @@ This wiki contains multiple guides about editing multilayered materials, such as
 
 * For editing .mlmask files: [custom-multilayermasks.md](../../../modding-guides/textures-and-luts/custom-multilayermasks.md "mention")
 * For editing .mlsetup files:&#x20;
-  * [changing-materials-colors-and-textures.md](../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md "mention") ->[#multilayered-material](../../../for-mod-creators/modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures.md#multilayered-material "mention")
+  * [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention") ->[#multilayered-material](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/#multilayered-material "mention")
   * [recolours-and-refits](../../../modding-guides/items-equipment/recolours-and-refits/ "mention") -> [r-and-r-colour-editing.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-colour-editing.md "mention")
 {% endhint %}
 

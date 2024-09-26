@@ -85,7 +85,7 @@ CrystalCoat is meant to apply a color on vehicle parts but it must look like som
 
 Open this mesh file from the Rayfield Caliburn and go into `localMaterialBuffer > materials > premium_ext_07_customizable > values`. Then copy this list of parameters by right-clicking on them and choosing `Copy Selection From Array/Buffer`.
 
-<figure><img src="../../../.gitbook/assets/image (378).png" alt="" width="350"><figcaption><p>Copy coating parameters from the Rayfield Caliburn</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (467).png" alt="" width="350"><figcaption><p>Copy coating parameters from the Rayfield Caliburn</p></figcaption></figure>
 
 Then right-click on the `values` array of your vehicle's body `coated` material and choose `Paste Selection To Array/Buffer`.
 

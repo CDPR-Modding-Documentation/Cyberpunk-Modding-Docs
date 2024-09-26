@@ -135,7 +135,7 @@ For each component in the vehicle, you’ll want a separate collection to organi
 
 Here are the major mesh groupings you will want in your project:
 
-<figure><img src="../../../.gitbook/assets/image (382).png" alt=""><figcaption><p>(courtesy of Carryhan)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (417).png" alt=""><figcaption><p>(courtesy of Carryhan)</p></figcaption></figure>
 
 Split and join objects as needed to organize the Blender project structure.
 
