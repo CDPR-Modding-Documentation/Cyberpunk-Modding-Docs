@@ -95,11 +95,15 @@ Link: [Reference images on imgur](https://imgur.com/a/NlbCHYK)
 
 ## Cheek Makeup Style
 
-to be done
+<figure><img src="../../.gitbook/assets/character_creator_cheek_makeup_options.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="158"></th><th></th></tr></thead><tbody><tr><td>01</td><td>frecles (brown_01, brown_02, brown_03, black_01)</td></tr><tr><td>02</td><td>frecles (brown_04, brown_05, brown_06, black_02)</td></tr><tr><td>03</td><td>frecles (brown_07, brown_08, brown_09, black_03)</td></tr><tr><td>04</td><td>frecles (brown_10, brown_11, brown_12, black_04)</td></tr><tr><td>05</td><td>cheeks (_color_01)</td></tr><tr><td>06</td><td>cheeks (_color_02)</td></tr><tr><td>07</td><td>cheeks (_color_03)</td></tr><tr><td>08</td><td>cheeks (_color_04)</td></tr><tr><td>09</td><td>cheeks (_color_05)</td></tr><tr><td>10</td><td>cheeks (_color_06)</td></tr><tr><td>11</td><td>cheeks (_color_07)</td></tr><tr><td>12</td><td>cheeks (_color_08)</td></tr><tr><td>13</td><td>cheeks (_color_09)</td></tr><tr><td>14</td><td>cheeks (_color_10)</td></tr></tbody></table>
 
 ## Cheek Makeup Color
 
 <figure><img src="../../.gitbook/assets/character_creator_cheek_makeup_color.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/character_creator_cheek_makeup_color_2.png" alt=""><figcaption></figcaption></figure>
 
 ## Blemish Color
 
