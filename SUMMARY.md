@@ -352,6 +352,7 @@
   * [Chassis Modifications](modding-guides/vehicles/chassis-modifications.md)
 * [🌐 World Editing](modding-guides/world-editing/README.md)
   * [World Editing: deleting objects](modding-guides/world-editing/world-editing-deleting-objects.md)
+  * [Removing OcclusionNodes](modding-guides/world-editing/removing-occlusion.md)
   * [Editing locations in Blender](modding-guides/world-editing/editing-locations-in-blender.md)
   * [Adding Objects to the World](modding-guides/world-editing/adding-objects-to-the-world.md)
   * [Adding Locations and Structures with ArchiveXL](modding-guides/world-editing/adding-locations-and-structures-with-archivexl.md)
