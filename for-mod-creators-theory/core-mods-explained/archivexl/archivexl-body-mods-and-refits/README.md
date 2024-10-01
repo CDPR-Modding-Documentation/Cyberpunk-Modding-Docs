@@ -12,6 +12,8 @@ This page explains how to enable **body mod support** in ArchiveXL:
 
 [#clothing-mods-making-use-of-the-tags](./#clothing-mods-making-use-of-the-tags "mention")
 
+To learn more about body mods, check the [overlay-list.md](../../../../modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/overlay-list.md "mention") page.
+
 ## Checking the current body
 
 Run the following code snippet in CET to see which body is currently installed:
