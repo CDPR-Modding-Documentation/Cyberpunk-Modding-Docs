@@ -94,4 +94,4 @@ You can hide items most easily via [ArchiveXL tag](../../../for-mod-creators-the
 
 ## Footstep sounds
 
-To find the correct tags for footstep sounds, check [archivexl-tags.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md "mention") -> [#footsteps-setting-footwear-sounds](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md#footsteps-setting-footwear-sounds "mention").
+To find the correct tags for footstep sounds, check [archivexl-tags.md](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md "mention") -> [#footsteps-setting-footwear-sounds](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#footsteps-setting-footwear-sounds "mention").

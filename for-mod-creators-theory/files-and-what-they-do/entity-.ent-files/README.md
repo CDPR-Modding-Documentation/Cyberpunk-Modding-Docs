@@ -48,7 +48,7 @@ From ArchiveXL item additions, this kind of file is usually called a **root enti
 ## What are suffixes?
 
 {% hint style="info" %}
-For more information on this (and for a better way of implementing this), check [archivexl-suffixes-and-substitutions.md](../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention")
+For more information on this (and for a better way of implementing this), check [archivexl-suffixes-and-substitutions.md](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention")
 {% endhint %}
 
 In a [root\_entity file](./#root-entity), you can give the game a list of appearances and have them mapped to an [appearance-.app-files](../appearance-.app-files/ "mention") by entry name. While that's pretty good already, have you ever wanted to be more specific — for example, "for a male character, use this appearance, but for a female use this other one?"
@@ -86,5 +86,5 @@ appearanceSuffixes: []
 ## Which suffixes exist?
 
 {% hint style="info" %}
-For a full list, check [#which-suffixes-exist](../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#which-suffixes-exist "mention")
+For a full list, check [#which-suffixes-exist](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#which-suffixes-exist "mention")
 {% endhint %}

@@ -55,7 +55,7 @@ Overrides component definitions via name. They can be defined in the appearance'
 You can use them to change the appearance or visibility of components outside of the current .app file (for usage instructions, see [#partsoverrides-changing-other-meshes](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-changing-other-meshes "mention")).&#x20;
 
 {% hint style="warning" %}
-You can't un-hide something via partsOverrides — you'll have to use [custom tags](../../core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags) for this.
+You can't un-hide something via partsOverrides — you'll have to use [custom tags](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags) for this.
 {% endhint %}
 
 {% hint style="info" %}

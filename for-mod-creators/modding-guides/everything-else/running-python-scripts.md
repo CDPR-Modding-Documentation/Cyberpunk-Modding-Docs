@@ -35,7 +35,7 @@ This guide is for running files outside of **Blender**.&#x20;
 
 If you want to run a Python script in Blender, you need to switch your viewport to the scripting perspective and click "play".&#x20;
 
-You can find a dedicated guide on [blender-running-python-scripts.md](blender-running-python-scripts.md "mention") in the 3d editing section.
+You can find a dedicated guide on [blender-running-python-scripts.md](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md "mention") in the 3d editing section.
 
 <figure><img src="../../../.gitbook/assets/blender_scripting_perspective.png" alt=""><figcaption><p>To run Python in Blender, go here.</p></figcaption></figure>
 

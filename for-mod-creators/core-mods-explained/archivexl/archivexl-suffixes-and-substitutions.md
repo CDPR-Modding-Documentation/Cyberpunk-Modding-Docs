@@ -44,7 +44,7 @@ The suffix for the body is `Male` / `Female`, the ArchiveXL string substitution 
 
 ### Body types
 
-ArchiveXL allows body modders to [register a custom body tag](archivexl-body-mods-and-refits/), which can then be used for suffixes and for substitutions in dynamic variants. To learn more about this, check [archivexl-body-mods-and-refits](archivexl-body-mods-and-refits/ "mention").
+ArchiveXL allows body modders to [register a custom body tag](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/), which can then be used for suffixes and for substitutions in dynamic variants. To learn more about this, check [archivexl-body-mods-and-refits](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/ "mention").
 
 {% hint style="info" %}
 You can check the current foot state by running the following command from CET:
@@ -113,10 +113,10 @@ Inside your `.app` file for `appearanceAppearanceDefinition.name`:&#x20;
 
 This lets you to select a different appearance based on body gender, camera state... (see the tables above).&#x20;
 
-By using conditional appearances, you can still make use of `partsOverrides` to use [chunkmask hiding](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md).
+By using conditional appearances, you can still make use of `partsOverrides` to use [chunkmask hiding](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md).
 
 {% hint style="info" %}
-For a hands-on example, see [archivexl-dynamic-conversion-guide.md](archivexl-dynamic-conversion-guide.md "mention") -> [#step-2-the-.app](archivexl-dynamic-conversion-guide.md#step-2-the-.app "mention")
+For a hands-on example, see [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention") -> [#step-2-the-.app](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md#step-2-the-.app "mention")
 {% endhint %}
 
 #### In your mesh\_entity.ent file
@@ -126,7 +126,7 @@ Inside your `mesh_entity.ent` for `component.name`:
 <figure><img src="../../../.gitbook/assets/archivexl_conversion_conditional_components.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-For a hands-on example, see [archivexl-dynamic-conversion-guide.md](archivexl-dynamic-conversion-guide.md "mention") -> [#method-1-conditional-components](archivexl-dynamic-conversion-guide.md#method-1-conditional-components "mention")
+For a hands-on example, see [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention") -> [#method-1-conditional-components](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md#method-1-conditional-components "mention")
 {% endhint %}
 
 ## Substitutions
@@ -138,13 +138,13 @@ Substitutions allow ArchiveXL to **load a different mesh** based on different ci
 <figure><img src="../../../.gitbook/assets/archivexl_conversion_path_substitution.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-For a hands-on example, see [archivexl-dynamic-conversion-guide.md](archivexl-dynamic-conversion-guide.md "mention") -> [#method-2-component-substitution](archivexl-dynamic-conversion-guide.md#method-2-component-substitution "mention")
+For a hands-on example, see [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention") -> [#method-2-component-substitution](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md#method-2-component-substitution "mention")
 {% endhint %}
 
 ## Which suffixes exist?
 
 {% hint style="warning" %}
-Do yourself a favour and don't use suffixes! They are outdated - use [dynamic item additions](./#dynamic-appearances) instead.
+Do yourself a favour and don't use suffixes! They are outdated - use [dynamic item additions](../../../for-mod-creators-theory/core-mods-explained/archivexl/#dynamic-appearances) instead.
 {% endhint %}
 
 For a list of active suffixes, check the tables above.
@@ -178,7 +178,7 @@ V has a female body gender and you're in photo mode (third person camera). Your 
 
 ## Which substitutions exist?
 
-Since 1.8.0, ArchiveXL supports substitutions for [#dynamic-appearances](./#dynamic-appearances "mention"). You can use them in two places:&#x20;
+Since 1.8.0, ArchiveXL supports substitutions for [#dynamic-appearances](../../../for-mod-creators-theory/core-mods-explained/archivexl/#dynamic-appearances "mention"). You can use them in two places:&#x20;
 
 * inside `mesh entity` components in the fields `name`, `depotPath` and `appearance`
 * in the `.app` appearances for the field `name`
@@ -197,22 +197,22 @@ If any of the placeholders aren't working the way you expect them, check if the 
 Substitution will only become active if the property name starts with an asterisk (`*`).
 {% endhint %}
 
-| Placeholder    | Substitution                                                                                                                                         |
-| -------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `{camera}`     | `fpp` or `tpp`                                                                                                                                       |
-| `{gender}`     | `m` or `w`                                                                                                                                           |
-| `{body}`       | `base_body` or body mod name in snake case                                                                                                           |
-| `{arms}`       | `base_arms`, `mantis_blades`, `monowire`, `projectile_launcher`                                                                                      |
-| `{feet}`       | `flat`, `lifted`, `high_heels`, `flat_shoes` (empty for mascV!)                                                                                      |
-| `{sleeves}`    | `full`, `part`                                                                                                                                       |
-| `{skin_color}` | [skin color name](../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) from customization, e.g. `03_senna`                    |
-| `{hair_color}` | [hair color name](../../references-lists-and-overviews/cheat-sheet-head/hair.md#colour-in-files-by-index) from customization. e.g. `black_liquorice` |
+| Placeholder    | Substitution                                                                                                                                                                    |
+| -------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `{camera}`     | `fpp` or `tpp`                                                                                                                                                                  |
+| `{gender}`     | `m` or `w`                                                                                                                                                                      |
+| `{body}`       | `base_body` or body mod name in snake case                                                                                                                                      |
+| `{arms}`       | `base_arms`, `mantis_blades`, `monowire`, `projectile_launcher`                                                                                                                 |
+| `{feet}`       | `flat`, `lifted`, `high_heels`, `flat_shoes` (empty for mascV!)                                                                                                                 |
+| `{sleeves}`    | `full`, `part`                                                                                                                                                                  |
+| `{skin_color}` | [skin color name](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) from customization, e.g. `03_senna`                    |
+| `{hair_color}` | [hair color name](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md#colour-in-files-by-index) from customization. e.g. `black_liquorice` |
 
 
 
 ### Substitution load order
 
-For [#dynamic-appearances](./#dynamic-appearances "mention"), you can conditionally switch out components or entire appearances **by name**. You can switch use any of the entries from [#which-substitutions-exist](archivexl-suffixes-and-substitutions.md#which-substitutions-exist "mention")
+For [#dynamic-appearances](../../../for-mod-creators-theory/core-mods-explained/archivexl/#dynamic-appearances "mention"), you can conditionally switch out components or entire appearances **by name**. You can switch use any of the entries from [#which-substitutions-exist](archivexl-suffixes-and-substitutions.md#which-substitutions-exist "mention")
 
 The order works as follows:
 

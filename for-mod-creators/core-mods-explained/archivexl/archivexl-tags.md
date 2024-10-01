@@ -9,7 +9,7 @@ This page will tell you about **tags** and how they can be used to influence ite
 
 ### Wait, this is not what I want!
 
-* Tags are used for calculating Garment Support score, see  [garment-support-how-does-it-work](../../3d-modelling/garment-support-how-does-it-work/ "mention")
+* Tags are used for calculating Garment Support score, see  [garment-support-how-does-it-work](../../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/ "mention")
 * There is an own page for [influencing-other-items.md](../../../modding-guides/items-equipment/influencing-other-items.md "mention")
 
 ## What do tags do?
@@ -40,19 +40,25 @@ Tags are case-sensitive!
 
 ### ArchiveXL tags
 
-| Tag                 | Effect                                                                                                                                                                                                                                                                          |
-| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `hide_Head`         | Hides head.                                                                                                                                                                                                                                                                     |
-| `hide_Torso`        | Hides the whole torso.                                                                                                                                                                                                                                                          |
-| `hide_LowerAbdomen` | Hides lower abdomen.                                                                                                                                                                                                                                                            |
-| `hide_UpperAbdomen` | Hides upper abdomen.                                                                                                                                                                                                                                                            |
-| `hide_CollarBone`   | Hides collar bone area.                                                                                                                                                                                                                                                         |
-| `hide_Arms`         | <p>Hides all of default arms submeshes. Cyberarms cannot be hidden with this tag<strong>*</strong>          </p><p>(<strong>*</strong><a href="../../../modding-guides/items-equipment/influencing-other-items.md#arms">Arms are terrible and we hates them, precious</a>.)</p> |
-| `hide_Thighs`       | Hides thighs.                                                                                                                                                                                                                                                                   |
-| `hide_Calves`       | Hides calves.                                                                                                                                                                                                                                                                   |
-| `hide_Ankles`       | Hides ankles.                                                                                                                                                                                                                                                                   |
-| `hide_Feet`         | Hides feet.                                                                                                                                                                                                                                                                     |
-| `hide_Legs`         | Hides the entire legs (including feet)                                                                                                                                                                                                                                          |
+{% hint style="info" %}
+Check [#hiding-body-parts-diagram](archivexl-tags.md#hiding-body-parts-diagram "mention") below!
+{% endhint %}
+
+| Tag                 | Effect                                                                                                                                                                                                                                                        |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `hide_Head`         | Hides head.                                                                                                                                                                                                                                                   |
+| `hide_Torso`        | Hides the whole torso (0, 1, 2)                                                                                                                                                                                                                               |
+| `hide_LowerAbdomen` | Hides lower abdomen. (3)                                                                                                                                                                                                                                      |
+| `hide_UpperAbdomen` | Hides upper abdomen. (2)                                                                                                                                                                                                                                      |
+| `hide_CollarBone`   | Hides collar bone area. (1)                                                                                                                                                                                                                                   |
+| `hide_Arms`         | Hides the whole arms, including hands. (There's [no easy way to partially hide arms](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-body.md#arms), you would have to [create custom tags](archivexl-tags.md#adding-custom-tags)) |
+| `hide_Thighs`       | Hides thighs. (4)                                                                                                                                                                                                                                             |
+| `hide_Calves`       | Hides calves. (5)                                                                                                                                                                                                                                             |
+| `hide_Ankles`       | Hides ankles. (6)                                                                                                                                                                                                                                             |
+| `hide_Feet`         | Hides feet. (7)                                                                                                                                                                                                                                               |
+| `hide_Legs`         | Hides the entire legs (including feet, 4, 5, 6, 7)                                                                                                                                                                                                            |
+| `HighHeels`         | Turns the current (shoe) item into high heels. (Item's yaml `$base` must be a foot item)                                                                                                                                                                      |
+| `FlatShoes`         | Turns the current (shoe) item into flat shoes. (Item's yaml `$base` must be a foot item)                                                                                                                                                                      |
 
 {% hint style="info" %}
 * Check the [#foot-states](archivexl-suffixes-and-substitutions.md#foot-states "mention") section for more tags concerning [Toggleable Feet](https://www.nexusmods.com/cyberpunk2077/mods/7049).
@@ -119,7 +125,7 @@ This tag will turn feet invisible for mascV unless the user has switch feet inst
 
 ## Footsteps: Setting footwear sounds
 
-If you don't want your new boots to sound as if V was barefoot, add one of the following tags to the [#root-entity](../../files-and-what-they-do/entity-.ent-files/#root-entity "mention"):&#x20;
+If you don't want your new boots to sound as if V was barefoot, add one of the following tags to the [#root-entity](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#root-entity "mention"):&#x20;
 
 ```
 Boots
@@ -130,13 +136,13 @@ Stilettos
 
 ## Adding Custom tags
 
-Custom tags let you set [component chunk masks](../../files-and-what-they-do/components/#chunkmask) from the .xl file without the need of touching either .app or .ent file.
+Custom tags let you set [component chunk masks](../../../for-mod-creators-theory/files-and-what-they-do/components/#chunkmask) from the .xl file without the need of touching either .app or .ent file.
 
 {% hint style="danger" %}
 For this, it is mandatory that you have unique component names. If you include your modder name, it's unlikely that anyone will overwrite them by accident.
 {% endhint %}
 
-### **Why would I need this?** [partsOverrides](../../files-and-what-they-do/appearance-.app-files/#partsoverrides) **exists!**
+### **Why would I need this?** [partsOverrides](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files/#partsoverrides) **exists!**
 
 1. PartsOverrides can't un-hide components for you. It can only hide them. If you want to load a different mesh (for example, a de-formed hakama when wearing a kimono or haori), then you're flat out of luck.
 2. By being clever about your submeshes, you can offer different versions of your mesh (cropped! No arms! No legs), and users only need to install an .xl file! No need to have different meshes or even different .archive files.

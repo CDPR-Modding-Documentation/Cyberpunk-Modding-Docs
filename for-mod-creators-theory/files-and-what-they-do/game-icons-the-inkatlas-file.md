@@ -12,7 +12,7 @@ This page explains the `.inkatlas` file and its logic.
 * Make a [custom Atelier icon](../../modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md#generating-an-icon)
 * Find templates (by [Apart](https://app.gitbook.com/u/M4VsHKJyn3PakV5tOmAF87H61wh2 "mention")) in the wiki github's [file section](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/\_resources\_and\_assets/icons)
 * Make your own inkatlas with Python: find the script on [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate\_inkatlas.py). \
-  Check [running-python-scripts.md](../3d-modelling/blender-getting-started/running-python-scripts.md "mention") if you don't know how to use this.
+  Check [running-python-scripts.md](../../for-mod-creators/modding-guides/everything-else/running-python-scripts.md "mention") if you don't know how to use this.
 * Make your own inkatlas with Photoshop CC (Adobe Creative Suite required): find the plugin on [deadlymustard's github](https://github.com/deadlymustard/inkatlas-utils)
 
 ## Summary

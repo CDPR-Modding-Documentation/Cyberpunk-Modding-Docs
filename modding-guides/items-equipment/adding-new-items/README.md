@@ -65,7 +65,7 @@ Understanding of the file structure is **not required** as long as you **follow 
 {% hint style="info" %}
 **Wait, am I not supposed to do anything first??**
 
-Actually, no! This is how you later debug your custom items — by packing your project and checking that everything works in-game.&#x20;
+Actually, no! This is how you later debug your custom items — by packing your project and checking that everything works in-game.
 
 We're starting with a dry run to get you familiar with the process.
 {% endhint %}
@@ -92,14 +92,14 @@ You should now see ~~your~~ the tutorial item. If not, consult the section [#tro
 Before you can publish your mod, you **must** complete the steps at [#the-final-touches](./#the-final-touches "mention").
 {% endhint %}
 
-You've successfully pushed a button and everything worked, but so far, you haven't done anything.&#x20;
+You've successfully pushed a button and everything worked, but so far, you haven't done anything.
 
 If you're okay with this, then you're done now. Otherwise, you'll want to keep reading.
 
 {% hint style="warning" %}
 **If you want to have many colours or both body genders:**
 
-Do yourself a favour and use [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention").&#x20;
+Do yourself a favour and use [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention").
 
 You might have been given the Easy Item Additions tool, or you might be familiar with older tutorials. Please believe me: even doing this by hand is less effort than filling out all the fields.
 
@@ -109,7 +109,7 @@ To familiarize yourself with the process, you can follow the [archivexl-dynamic-
 Otherwise, you will want to complete one or more of the following steps:
 
 * change the mod to use [different-equipment-slots.md](different-equipment-slots.md "mention") (e.g. shoes or glasses)
-* Learn about [#variants-and-suffixes](../../../for-mod-creators-theory/core-mods-explained/archivexl/#variants-and-suffixes "mention")for e.g. [#adding-a-male-instance](./#adding-a-male-instance "mention") or check the [#hiding-body-parts-diagram](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md#hiding-body-parts-diagram "mention")
+* Learn about [#variants-and-suffixes](../../../for-mod-creators-theory/core-mods-explained/archivexl/#variants-and-suffixes "mention")for e.g. [#adding-a-male-instance](./#adding-a-male-instance "mention") or check the [#hiding-body-parts-diagram](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#hiding-body-parts-diagram "mention")
 * Learn about making more variants:[#adding-an-appearance](./#adding-an-appearance "mention")
 * Create [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention")
 * Create [adding-items-atelier-integration.md](adding-items-atelier-integration.md "mention")
@@ -233,7 +233,7 @@ If it works, this is an excellent moment to take a backup! If not, check [#troub
 ## Adding a Male Instance
 
 {% hint style="warning" %}
-This is  a great opportunity to switch over to the [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention") approach.&#x20;
+This is a great opportunity to switch over to the [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention") approach.
 
 For a step-by-step guide on how to convert your mod, check[archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention").
 {% endhint %}
@@ -243,13 +243,13 @@ If an item is rigged for the female body gender, it will look wonky if worn by a
 This section of the guide will teach you how to fix that, adding versions for both body genders.
 
 {% hint style="danger" %}
-Screenshots in this part of the mod may be outdated.&#x20;
+Screenshots in this part of the mod may be outdated.
 {% endhint %}
 
 ### Finding the mesh file for the male variant
 
 {% hint style="info" %}
-To keep things simple, we'll be using a different mesh here, rather than walking you through the whole refitting and conversion process. If you want to do that, you can check out&#x20;
+To keep things simple, we'll be using a different mesh here, rather than walking you through the whole refitting and conversion process. If you want to do that, you can check out
 {% endhint %}
 
 To fix this issue, we'll need a mesh that's compatible with Male V.

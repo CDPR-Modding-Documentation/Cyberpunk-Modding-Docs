@@ -73,7 +73,7 @@ Instead of one appearance per **variant and gender**, we will squash everything 
 Gender matching now happens via condition. The different meshes for male and female body gender are loaded in the different mesh entity files.
 
 {% hint style="info" %}
-For a full list of conditions, see [archivexl-suffixes-and-substitutions.md](archivexl-suffixes-and-substitutions.md "mention")
+For a full list of conditions, see [archivexl-suffixes-and-substitutions.md](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention")
 {% endhint %}
 
 ### But that will always load the default appearance!
@@ -183,7 +183,7 @@ This will only load one body gender (the one you defined in the `mesh_entity`).
 You should use the other approach where possible; this is only documented here for the sake of completeness.
 {% endhint %}
 
-Just like with appearances, you can also use [#conditions](archivexl-suffixes-and-substitutions.md#conditions "mention") with component names.
+Just like with appearances, you can also use [#conditions](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#conditions "mention") with component names.
 
 **Pro:** Especially with many body mods, you can just put all the logic into the components
 

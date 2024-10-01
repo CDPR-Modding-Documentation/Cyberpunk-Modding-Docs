@@ -37,19 +37,19 @@ When adding items, you will normally offer multiple [**mesh appearances**](../..
 
 On top of having different colours, you also have different **circumstances** – for example camera states: not even Johnny Silverhand wears his sunglasses in first person perspective.
 
-CDPR deals with this by using [suffixes](archivexl-suffixes-and-substitutions.md#why-are-suffixes), which are tedious to use. psiberx has since created a better system ([dynamic appearances](./#dynamic-appearances) or **conditions**), which are much easier to use.
+CDPR deals with this by using [suffixes](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#why-are-suffixes), which are tedious to use. psiberx has since created a better system ([dynamic appearances](./#dynamic-appearances) or **conditions**), which are much easier to use.
 
-For more detail on this, please see the sub-page [archivexl-suffixes-and-substitutions.md](archivexl-suffixes-and-substitutions.md "mention")
+For more detail on this, please see the sub-page [archivexl-suffixes-and-substitutions.md](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention")
 
 ## Tags
 
-Tags are a way to add extra information to entities or appearances. They are defined on their own sub-page: [archivexl-tags.md](archivexl-tags.md "mention")
+Tags are a way to add extra information to entities or appearances. They are defined on their own sub-page: [archivexl-tags.md](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md "mention")
 
 ## Dynamic appearances
 
 If you have ever tried to make ten colour variants of an item for two body genders with four different states of feet, then you're familiar with the struggle. Version 1.5.0 of ArchiveXL solves this problem by introducing dynamic variants, allowing you to define **rules** to hook up your yaml straight to the mesh entity. picking components and even appearances dynamically.
 
-You can find more detail about this on the sub-page [archivexl-suffixes-and-substitutions.md](archivexl-suffixes-and-substitutions.md "mention") -> [#which-substitutions-exist](archivexl-suffixes-and-substitutions.md#which-substitutions-exist "mention")
+You can find more detail about this on the sub-page [archivexl-suffixes-and-substitutions.md](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") -> [#which-substitutions-exist](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#which-substitutions-exist "mention")
 
 * For a tutorial about this, check [archivexl-dynamic-variants](../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/ "mention")
 * If you are a mod user and want to dynamically recolour an item, check the [recolours-and-refits](../../../modding-guides/items-equipment/recolours-and-refits/ "mention") guide -> sub-page Emissive -> [#switching-existing-colours](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-emissive.md#switching-existing-colours "mention")

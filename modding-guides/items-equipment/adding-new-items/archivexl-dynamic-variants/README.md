@@ -49,7 +49,7 @@ In your `.app`:
 In your `mesh_entity`:
 
 1. To enable substitution in mesh depot paths, make sure they start with `*`
-2. Put all attributes that ArchiveXL should [switch out](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md) in the paths in `{}`
+2. Put all attributes that ArchiveXL should [switch out](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md) in the paths in `{}`
 
 e.g
 
@@ -266,7 +266,7 @@ In your mesh entity, you can use **substitutions** in path names to load differe
 
 To enable substitution, your depot path must begin with an asterisk `*`. Each substitution needs to be enclosed in braces, e.g. `{gender}`.
 
-For a list, check [#which-substitutions-exist](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#which-substitutions-exist "mention")
+For a list, check [#which-substitutions-exist](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#which-substitutions-exist "mention")
 
 <figure><img src="../../../../.gitbook/assets/dynamic_variants_substitution.png" alt=""><figcaption></figcaption></figure>
 
@@ -296,7 +296,7 @@ And that's it! With this and the [original guide](../../../../for-mod-creators-t
 
 ### Generating display names
 
-I have written a [Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/archive\_xl\_dynamic\_variants/generate\_translation\_strings.py) to auto-generate display names, you can find it on my github. If you don't know how to use this, check [running-python-scripts.md](../../../../for-mod-creators-theory/3d-modelling/blender-getting-started/running-python-scripts.md "mention").
+I have written a [Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/archive\_xl\_dynamic\_variants/generate\_translation\_strings.py) to auto-generate display names, you can find it on my github. If you don't know how to use this, check [running-python-scripts.md](../../../../for-mod-creators/modding-guides/everything-else/running-python-scripts.md "mention").
 
 ## Troubleshooting
 

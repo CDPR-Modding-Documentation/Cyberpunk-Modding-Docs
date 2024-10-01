@@ -44,7 +44,7 @@ Components need to be **unambiguously** identified by their name as defined in t
 {% endhint %}
 
 {% hint style="info" %}
-You can make use of [archivexl-suffixes-and-substitutions.md](../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") for your components.
+You can make use of [archivexl-suffixes-and-substitutions.md](../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") for your components.
 {% endhint %}
 
 #### Arms
@@ -99,9 +99,9 @@ Due to technical limitations, any visual tags that **hide** parts of the mesh **
 The following tags are used by the base game; however, to make use of them, you require [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl).&#x20;
 
 {% hint style="info" %}
-With visual tags, you can force-show hair, hide an item in first person, or turn body parts on and off. Find the full list under [archivexl-tags.md](../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md "mention")
+With visual tags, you can force-show hair, hide an item in first person, or turn body parts on and off. Find the full list under [archivexl-tags.md](../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md "mention")
 {% endhint %}
 
 ## Custom tags: un-hiding chunks
 
-If you want to un-hide chunks rather than hiding them, you need to define a custom tag via ArchiveXL. See [#adding-custom-tags](../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags "mention") for details.
+If you want to un-hide chunks rather than hiding them, you need to define a custom tag via ArchiveXL. See [#adding-custom-tags](../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags "mention") for details.
