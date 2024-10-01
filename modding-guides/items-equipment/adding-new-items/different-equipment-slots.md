@@ -92,13 +92,6 @@ If you want to know more about components, check the [wiki page](../../../for-mo
 
 You can hide items most easily via [ArchiveXL tag](../../../for-mod-creators-theory/core-mods-explained/archivexl/#camera-modes). Check the linked page for how to do that.
 
-## Setting footwear sounds
+## Footstep sounds
 
-If you don't want your new boots to sound as if V was barefoot, add one of the following tags to the [#root-entity](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#root-entity "mention"):&#x20;
-
-```
-Boots
-Heels
-Sneakers
-Stilettos
-```
+To find the correct tags for footstep sounds, check [archivexl-tags.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md "mention") -> [#footsteps-setting-footwear-sounds](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md#footsteps-setting-footwear-sounds "mention").

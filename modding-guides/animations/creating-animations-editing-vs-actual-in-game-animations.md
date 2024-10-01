@@ -40,25 +40,37 @@ First, open WolvenKit from the link above. In the video, I show how to open the 
 
 {% embed url="https://www.youtube.com/watch?v=P25T03CKAJw" %}
 
-## **Replacing an Animation (Video Walkthrough)**
+## **Replacing an Animation (Video Walkthrough: This video only shows the manual way to replace animations)**
 
-1. **Open the Blender Template**\
-   Before replacing an animation, **remove all unedited animations** from the list. This ensures you're only exporting the animations you've worked on. Otherwise, the export will take much longer and include unnecessary animations.
-2.  **Export Your Animation**\
-    In this example, I’ve fixed the backward jog animation (FPP JOG 180), so that’s what I’ll export. Save it as `player_locomotionnnn.anims.glb` in:\
+1.  **Open the Blender Template**
+
+    Before exporting, remove any unedited animations. This prevents unnecessary files from being included and speeds up the export process.
+
+    **Export Your Animation**
+
+    For example, if you've fixed the backward jog (FPP JOG 180), export it as `player_locomotionnnn.anims.glb` to:\
     `Template Folder\WolvenKit Template Folder\Player Animation Template\source\raw\base\animations\player\female\body\player_locomotionnnn.anims.glb`
 
-    Just overwrite the file when prompted.
-3. **Import to WolvenKit**\
-   In WolvenKit, click **Import** and select your edited `.glb` file. It will import to the `player_locomotionnnn.anims` file, which now contains your modified animation.
-4. **Update Animation Handles**\
-   The game animations for TPP FemV are stored in `Player Locomotion.anim`. Go to the `locomotionnnn` file, copy the **Animation Handle** for the edited animation, and paste it over the **FPP JOG 180 handle** in the `Player Locomotion.anim` file.
-5.  **Transfer AnimAnimDataChunk**\
-    Next, copy the **AnimAnimDataChunk** (the actual animation data) from the `locomotionnnn` file and paste it into the `locomotion` anim data chunk. You'll see it’s at **Number 4**.
+    Overwrite the file when prompted.
 
-    Now, go to the **animbuffer** for that animation and set the **unkindex** to 4 (or wherever your chunk is located). This links the correct data to the animation.
-6. **Frame Clamping (Optional Fix)**\
-   If the animation doesn’t play correctly in-game, enable **frame clamping** to prevent it from going over 30 FPS. This should resolve most issues.
+    **Import to WolvenKit**
+
+    In WolvenKit, click **Import** and select the edited `.glb`. This will import your modified animation into the `player_locomotionnnn.anims` file.
+
+    **Manual Method**
+
+    1. **Update Animation Handles**: Copy the animation handle from `player_locomotionnnn` and paste it over the FPP JOG 180 handle in the `Player Locomotion.anim` file.
+    2. **Transfer AnimAnimDataChunk**: Copy the AnimAnimDataChunk from `player_locomotionnnn` and paste it in the locomotion anim data chunk. Then, set the `unkindex` in the animbuffer to match the data chunk.
+
+    **Automatic Method (100x Faster)**
+
+    1. Simply rename your `.glb` to match the `.anims` file you are replacing. In this case, you would just rename the .glb to `player_locomotion.anims.glb`&#x20;
+    2. Import it, and the system will handle the rest automatically.
+    3. Again make sure to only include animations that you've included before importing.
+
+    **Optional Fix: Frame Clamping**
+
+    If the animation glitches, enable frame clamping to keep the FPS at 30.
 
 That’s it! You can use this method to replace any animation for V, including combat animations. If you want to revert to the original animation, right-click the file and select **Replace with Original**.
 

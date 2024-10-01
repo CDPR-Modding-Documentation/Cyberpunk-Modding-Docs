@@ -368,7 +368,7 @@
   * [Custom Sounds & Custom Emitters with Audioware](modding-guides/sound/custom-sounds-and-custom-emitters-with-audioware.md)
 * [❕ Quests](modding-guides/quest/README.md)
   * [Visualize Quest files](modding-guides/quest/visualize-quest-files.md)
-  * [How to Edit Voiceover and Subtitles In a Quest.](modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
+  * [How to Edit Voiceover and Subtitles In a Quest.](for-mod-creators/modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
   * [How to Remove an Animation (and Potentially Replace It)](modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
 * [🛍️ Everything else](modding-guides/everything-else/README.md)

@@ -117,6 +117,17 @@ A tag that forces female V's feet to be flat. Only works with a foot item as `$b
 This tag will turn feet invisible for mascV unless the user has switch feet installed. You want to apply this to a conditional appearance in the .app file (`&gender=m`)
 {% endhint %}
 
+## Footsteps: Setting footwear sounds
+
+If you don't want your new boots to sound as if V was barefoot, add one of the following tags to the [#root-entity](../../files-and-what-they-do/entity-.ent-files/#root-entity "mention"):&#x20;
+
+```
+Boots
+Heels
+Sneakers
+Stilettos
+```
+
 ## Adding Custom tags
 
 Custom tags let you set [component chunk masks](../../files-and-what-they-do/components/#chunkmask) from the .xl file without the need of touching either .app or .ent file.
