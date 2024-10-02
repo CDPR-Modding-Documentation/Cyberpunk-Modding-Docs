@@ -91,6 +91,18 @@ For a list of [#name-of-meshes-by-index](cheat-sheet-head/hair.md#name-of-meshes
 
 <figure><img src="../../.gitbook/assets/HAIR COLOR - VISUAL GUIDE - BY LL.png" alt=""><figcaption><p>Hair Colours in CC - Visual Guide by LadyLea</p></figcaption></figure>
 
+## Beard
+
+<table><thead><tr><th width="108"></th><th></th></tr></thead><tbody><tr><td>01</td><td>hb_000_pma_c__basehead_shadowbase_01</td></tr><tr><td>02</td><td>hb_000_pma_c__basehead_big_beard_afro</td></tr><tr><td>03</td><td>pma__morphs_default</td></tr><tr><td>04</td><td>hb_000_pma_c__basehead_handlebar_stache</td></tr><tr><td>05</td><td>hb_000_pma_c__basehead_jesse_beard</td></tr><tr><td>06</td><td>hb_000_pma_c__basehead_maelstrom_full</td></tr><tr><td>07</td><td>hb_000_pma_c__basehead_big_beard</td></tr><tr><td>08</td><td>hb_000_pma_c__basehead_short_afro</td></tr><tr><td>09</td><td>hb_000_pma_c__basehead_thick_beard_afro</td></tr><tr><td>10</td><td>hb_000_pma_c__basehead_fu_manchu</td></tr><tr><td>11</td><td>hb_000_pma_c__basehead_logan</td></tr><tr><td>12</td><td>hb_000_pma_c__basehead_patmc</td></tr></tbody></table>
+
+
+
+## Beard style
+
+<table><thead><tr><th width="107"></th><th>enabled chunks (NOT chunkmask)</th></tr></thead><tbody><tr><td>01</td><td>1111 </td></tr><tr><td>02</td><td>1100 </td></tr><tr><td>03</td><td>1110 </td></tr><tr><td>04</td><td>1101 </td></tr><tr><td>05</td><td>0010 </td></tr><tr><td>06</td><td>0011 </td></tr><tr><td>07</td><td>0001</td></tr></tbody></table>
+
+
+
 ## Eye Colour
 
 <figure><img src="../../.gitbook/assets/character_creator_eye_colour.png" alt="" width="563"><figcaption></figcaption></figure>
