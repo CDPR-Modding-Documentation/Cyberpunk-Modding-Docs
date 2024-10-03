@@ -119,9 +119,15 @@ For a list of [#name-of-meshes-by-index](cheat-sheet-head/hair.md#name-of-meshes
 
 <figure><img src="../../.gitbook/assets/character_creator_cheek_makeup_color_2.png" alt=""><figcaption></figcaption></figure>
 
-## Blemish Color
+## Blemishes
+
+### Blemish Color
 
 <figure><img src="../../.gitbook/assets/character_creator_blemish_color.png" alt=""><figcaption></figcaption></figure>
+
+### Blemishes: enabled chunks (NOT chunkmasks)
+
+<table><thead><tr><th width="174"></th><th>Enabled chunks</th></tr></thead><tbody><tr><td>01</td><td>1111</td></tr><tr><td>02</td><td>1011</td></tr><tr><td>03</td><td>0111</td></tr></tbody></table>
 
 ## Nail Color
 
