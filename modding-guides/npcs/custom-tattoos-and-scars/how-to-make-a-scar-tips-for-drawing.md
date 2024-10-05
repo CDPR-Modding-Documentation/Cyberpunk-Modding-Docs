@@ -234,7 +234,7 @@ Now that the diffuse and the normal map are done , there remains one map to do, 
 
 
 
-With a normal map, you can give differents textures just by changing the colors you are using see the examples :&#x20;
+With a roughness map, you can give differents textures just by changing the colors you are using, see the examples :&#x20;
 
 
 
