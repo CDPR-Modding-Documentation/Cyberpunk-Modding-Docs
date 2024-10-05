@@ -27,7 +27,7 @@ This is the landing page for the Wolvenkit Blender plugin. Here, you can find [#
 
 ## Compatibility
 
-<table><thead><tr><th width="313.3333333333333">Game version</th><th width="155">Plugin version</th><th>Wolvenkit version</th></tr></thead><tbody><tr><td>2.0.0 or higher</td><td>latest (at least <a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/1.5.0">1.5.0</a>)</td><td>>= 8.11.0 (<a href="https://github.com/WolvenKit/WolvenKit/releases/tag/8.11.0">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td></tr><tr><td>up to 1.6.3_hotfix1 (but before 2.0)</td><td>&#x3C; 1.5.0</td><td><a href="https://github.com/WolvenKit/WolvenKit/releases/tag/8.10.0">8.10.0</a></td></tr></tbody></table>
+<table><thead><tr><th width="313.3333333333333">Game version</th><th width="155">Plugin version</th><th>Wolvenkit version</th></tr></thead><tbody><tr><td>2.0.0 or higher</td><td><a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases">latest</a> (at least 1.5.0)</td><td>>= 8.11.0 (<a href="https://github.com/WolvenKit/WolvenKit/releases/tag/8.11.0">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td></tr><tr><td>up to 1.6.3_hotfix1 (but before 2.0)</td><td>&#x3C; 1.5.0</td><td><a href="https://github.com/WolvenKit/WolvenKit/releases/tag/8.10.0">8.10.0</a></td></tr></tbody></table>
 
 {% hint style="success" %}
 The plugin is developed on [Blender 3.6](https://www.blender.org/download/releases/3-6/) and [Blender 4.0](https://www.blender.org/download/releases/4-0/). For maximum compatibility, install the same version.
