@@ -19,27 +19,27 @@ You can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/np
 
 ## List of CC options in order
 
-| Option                                                            | Value            | Option (continued)                                                        |                             |
-| ----------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------- | --------------------------- |
-| [Skin tone](cheat-sheet-character-creator.md#skin-tones)          | 1-12             | [Eye Makeup Color](cheat-sheet-character-creator.md#eye-make-up)          |                             |
-| Skin type                                                         | Compexion: 01-04 | [Lip Makeup Style](cheat-sheet-character-creator.md#lip-makeup)           | off, default, glossy, matte |
-| [Hairstyle](cheat-sheet-character-creator.md#hairstyle)           | 1-51             | [Lip Makeup](cheat-sheet-character-creator.md#lip-makeup)                 | 01-20                       |
-| [Hair color](cheat-sheet-character-creator.md#hair-colour)        |                  | [Lip Makeup Color](cheat-sheet-character-creator.md#lip-makeup)           |                             |
-| Eyes                                                              | 1-22             | [Cheek Makeup ](cheat-sheet-character-creator.md#cheek-makeup-style)      | off, 1-14                   |
-| [Eye color](cheat-sheet-character-creator.md#eye-colour)          |                  | [Cheek Makeup Color](cheat-sheet-character-creator.md#cheek-makeup-color) |                             |
-| Eyebrows                                                          | off, 1-11        | Blemishes                                                                 | off, 01-03                  |
-| [Eyelash color](cheat-sheet-character-creator.md#hair-colour)     |                  | [Blemish Color](cheat-sheet-character-creator.md#blemish-color)           |                             |
-| Nose                                                              | 1-22             | Nails                                                                     | long, short                 |
-| Mouth                                                             | 1-22             | [Nail Color](cheat-sheet-character-creator.md#nail-color)                 |                             |
-| Jaw                                                               | 1-22             | Chest (f only)                                                            | default, small, big         |
-| Ears                                                              | 1-22             | Nipples                                                                   | off, 1-3                    |
-| Cyberware                                                         | off, 1-8         | Body Tattoos                                                              | off, 1-5                    |
-| Facial Scars                                                      | off, 1-9         | Body Scars                                                                | off, 1-2                    |
-| Facial Tattoos                                                    | off, 1-11        | Genitals                                                                  | off, vagina, penis1, penis2 |
-| Piercings                                                         | off, 1-14        | Penis Size                                                                | default, small, big         |
-| [Piercing Color](cheat-sheet-character-creator.md#piercing-color) |                  | Public Hair Style                                                         | off, 1-5                    |
-| Teeth                                                             | 0-4              | [Pubic Hair Color](cheat-sheet-character-creator.md#hair-colour)          |                             |
-| [Eye Makeup](cheat-sheet-character-creator.md#eye-make-up)        | off, 1-20        |                                                                           |                             |
+| Option                                                                      | Value            | Option (continued)                                                        |                             |
+| --------------------------------------------------------------------------- | ---------------- | ------------------------------------------------------------------------- | --------------------------- |
+| [Skin tone](cheat-sheet-character-creator.md#skin-tones)                    | 1-12             | [Eye Makeup Color](cheat-sheet-character-creator.md#eye-make-up)          |                             |
+| Skin type                                                                   | Compexion: 01-04 | [Lip Makeup Style](cheat-sheet-character-creator.md#lip-makeup)           | off, default, glossy, matte |
+| [Hairstyle](cheat-sheet-character-creator.md#hairstyle)                     | 1-51             | [Lip Makeup](cheat-sheet-character-creator.md#lip-makeup)                 | 01-20                       |
+| [Hair color](cheat-sheet-character-creator.md#hair-colour)                  |                  | [Lip Makeup Color](cheat-sheet-character-creator.md#lip-makeup)           |                             |
+| Eyes                                                                        | 1-22             | [Cheek Makeup ](cheat-sheet-character-creator.md#cheek-makeup-style)      | off, 1-14                   |
+| [Eye color](cheat-sheet-character-creator.md#eye-colour)                    |                  | [Cheek Makeup Color](cheat-sheet-character-creator.md#cheek-makeup-color) |                             |
+| Eyebrows                                                                    | off, 1-11        | Blemishes                                                                 | off, 01-03                  |
+| [Eyelash color](cheat-sheet-character-creator.md#hair-colour)               |                  | [Blemish Color](cheat-sheet-character-creator.md#blemish-color)           |                             |
+| Nose                                                                        | 1-22             | Nails                                                                     | long, short                 |
+| Mouth                                                                       | 1-22             | [Nail Color](cheat-sheet-character-creator.md#nail-color)                 |                             |
+| Jaw                                                                         | 1-22             | Chest (f only)                                                            | default, small, big         |
+| Ears                                                                        | 1-22             | Nipples                                                                   | off, 1-3                    |
+| [Cyberware](cheat-sheet-character-creator.md#cyberware)                     | off, 1-8         | Body Tattoos                                                              | off, 1-5                    |
+| [Facial Scars](cheat-sheet-character-creator.md#facial-scars-and-submeshes) | off, 1-9         | Body Scars                                                                | off, 1-2                    |
+| Facial Tattoos                                                              | off, 1-11        | Genitals                                                                  | off, vagina, penis1, penis2 |
+| Piercings                                                                   | off, 1-14        | Penis Size                                                                | default, small, big         |
+| [Piercing Color](cheat-sheet-character-creator.md#piercing-color)           |                  | Public Hair Style                                                         | off, 1-5                    |
+| Teeth                                                                       | 0-4              | [Pubic Hair Color](cheat-sheet-character-creator.md#hair-colour)          |                             |
+| [Eye Makeup](cheat-sheet-character-creator.md#eye-make-up)                  | off, 1-20        |                                                                           |                             |
 
 ## Skin tones&#x20;
 
@@ -93,7 +93,7 @@ For a list of [#name-of-meshes-by-index](cheat-sheet-head/hair.md#name-of-meshes
 
 ## Beard
 
-<table><thead><tr><th width="108"></th><th></th></tr></thead><tbody><tr><td>01</td><td>hb_000_pma_c__basehead_shadowbase_01</td></tr><tr><td>02</td><td>hb_000_pma_c__basehead_big_beard_afro</td></tr><tr><td>03</td><td>pma__morphs_default</td></tr><tr><td>04</td><td>hb_000_pma_c__basehead_handlebar_stache</td></tr><tr><td>05</td><td>hb_000_pma_c__basehead_jesse_beard</td></tr><tr><td>06</td><td>hb_000_pma_c__basehead_maelstrom_full</td></tr><tr><td>07</td><td>hb_000_pma_c__basehead_big_beard</td></tr><tr><td>08</td><td>hb_000_pma_c__basehead_short_afro</td></tr><tr><td>09</td><td>hb_000_pma_c__basehead_thick_beard_afro</td></tr><tr><td>10</td><td>hb_000_pma_c__basehead_fu_manchu</td></tr><tr><td>11</td><td>hb_000_pma_c__basehead_logan</td></tr><tr><td>12</td><td>hb_000_pma_c__basehead_patmc</td></tr></tbody></table>
+<table><thead><tr><th width="97"></th><th></th></tr></thead><tbody><tr><td>01</td><td>hb_000_pma_c__basehead_shadowbase_01</td></tr><tr><td>02</td><td>hb_000_pma_c__basehead_big_beard_afro</td></tr><tr><td>03</td><td>pma__morphs_default</td></tr><tr><td>04</td><td>hb_000_pma_c__basehead_handlebar_stache</td></tr><tr><td>05</td><td>hb_000_pma_c__basehead_jesse_beard</td></tr><tr><td>06</td><td>hb_000_pma_c__basehead_maelstrom_full</td></tr><tr><td>07</td><td>hb_000_pma_c__basehead_big_beard</td></tr><tr><td>08</td><td>hb_000_pma_c__basehead_short_afro</td></tr><tr><td>09</td><td>hb_000_pma_c__basehead_thick_beard_afro</td></tr><tr><td>10</td><td>hb_000_pma_c__basehead_fu_manchu</td></tr><tr><td>11</td><td>hb_000_pma_c__basehead_logan</td></tr><tr><td>12</td><td>hb_000_pma_c__basehead_patmc</td></tr></tbody></table>
 
 
 
@@ -106,6 +106,10 @@ For a list of [#name-of-meshes-by-index](cheat-sheet-head/hair.md#name-of-meshes
 ## Eye Colour
 
 <figure><img src="../../.gitbook/assets/character_creator_eye_colour.png" alt="" width="563"><figcaption></figcaption></figure>
+
+## Cyberware
+
+<figure><img src="../../.gitbook/assets/character_creator_cyberware_f.png" alt=""><figcaption></figcaption></figure>
 
 ## Cheek Makeup Style
 
