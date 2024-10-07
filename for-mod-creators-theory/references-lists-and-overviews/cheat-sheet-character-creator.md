@@ -153,3 +153,16 @@ Chunkmasks for different piercing meshes (for custom NPCs etc), thanks to [xbae'
 
 <table><thead><tr><th width="115">Piercing</th><th width="382">file names</th><th>chunkmask</th></tr></thead><tbody><tr><td>01</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>4<br>1<br>2</td></tr><tr><td>02</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh</td><td>15<br>2048</td></tr><tr><td>03</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh</td><td>1040<br>263</td></tr><tr><td>04</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>4<br>2268<br>1</td></tr><tr><td>05</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>536<br>2873<br>2</td></tr><tr><td>06</td><td>i1_000_pXa_c__basehead_earring_02.mesh</td><td>5153</td></tr><tr><td>07</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>2562<br>2<br>4094</td></tr><tr><td>08</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>520<br>8064<br>1</td></tr><tr><td>09</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>2052<br>35<br>4092</td></tr><tr><td>10</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>1548<br>6143<br>3</td></tr><tr><td>11</td><td>i1_000_pXa_c__basehead_earring_01.mesh</td><td>2047</td></tr><tr><td>12 (fV)</td><td>1_000_pwa_c__basehead_earring_04.mesh</td><td>4</td></tr><tr><td>12 (mV)</td><td>1_000_pma_c__basehead_earring_01.mesh</td><td>512</td></tr><tr><td>13 (fV)</td><td>1_000_pwa_c__basehead_earring_04.mesh</td><td>1</td></tr><tr><td>13 (mV)</td><td>1_000_pma_c__basehead_earring_01.mesh</td><td>8</td></tr><tr><td>14 (fV)</td><td>1_000_pwa_c__basehead_earring_04.mesh</td><td>2</td></tr><tr><td>14 (mV)</td><td>1_000_pma_c__basehead_earring_04.mesh</td><td>4</td></tr><tr><td>15 (mV)</td><td>i1_000_pma_c__basehead_earring_04.mesh</td><td>1</td></tr><tr><td>16 (mV)</td><td>i1_000_pma_c__basehead_earring_04.mesh</td><td>2</td></tr></tbody></table>
 
+## Body Tattoos
+
+The body tattoos can be found in the following folder:
+
+```
+base\characters\common\player_base_bodies\player_female_average\tattoos
+base\characters\common\player_base_bodies\player_man_average\tattoos
+```
+
+For the female body gender, there are three different chest sizes!
+
+<table><thead><tr><th width="110"></th><th width="191"></th><th>file</th></tr></thead><tbody><tr><td>01</td><td>Valentinos</td><td>tx_000_pwa_base__full_tattoo_01.mesh</td></tr><tr><td>02</td><td>geometric blackwork</td><td>tx_000_pwa_base__full_tattoo_02.mesh</td></tr><tr><td>03</td><td>serpent</td><td>tx_000_pwa_base__full_tattoo_03.mesh</td></tr><tr><td>04</td><td>flowers/mandalas</td><td>tx_000_pwa_base__full_tattoo_04.mesh</td></tr><tr><td>05</td><td>NUSA</td><td>tx_000_pwa_base__full_tattoo_05.mesh</td></tr></tbody></table>
+
