@@ -60,6 +60,13 @@ This is probably the most common problem I've seen, and is also thankfully the e
 4.  Click on it. In the right pane, change `None` to renderPlane.
 
     <figure><img src="../../.gitbook/assets/image (357).png" alt=""><figcaption><p>Make sure to follow the same capitalization, otherwise it won't work!</p></figcaption></figure>
+
+{% hint style="info" %}
+Instead of `renderPlane`, you can also use `renderPlaneLeftArm` and `renderPlaneRightArm` individually.
+{% endhint %}
+
+
+
 5. Repeat this process for any other component, as needed
 6. When finished, save the file (either Ctrl + S or the Save button top left).
 7.  Install and test the mod in-game. If you did it correctly, your sleeves should now render properly.
