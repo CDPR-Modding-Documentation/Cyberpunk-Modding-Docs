@@ -19,8 +19,13 @@ You know how to read — if you can read and struggle with this guide, then it's
 * < 1h for import, export and setup (< 5 min once you know how it works)
 * as long as you want on the actual editing&#x20;
 
+## Prerequisites:
+
+* [ ] The [Wolvenkit Blender I](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)[O Suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/) is installed and working with Blender
+* [ ] Your [Wolvenkit Project](r-and-r-your-own-wolvenkit-project.md) is named correctly to load before or overwrite the original mod
+
 {% hint style="info" %}
-You need to install the [Wolvenkit Blender I](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)[O Suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/) to ensure compatibility with Cyberpunk. You can check out the [auto-refitter](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md), which might render all of this obsolete.
+You can check out the [auto-refitter](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md), which might render all of this obsolete.
 {% endhint %}
 
 ## Step 1: Adding the meshes to your project
@@ -46,11 +51,11 @@ It might be easier and faster to simply export the base body.&#x20;
    * Female body gender: `base\characters\common\player_base_bodies\player_female_average\t0_000_pwa_base__full.mesh`
    * Male body gender: `base\characters\common\player_base_bodies\player_man_average\t0_000_pma_base__full.mesh`
    * Anything else: Check [this list ](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-body.md#player-base-body)or go hunting - here's the [Wolvenkit search documentation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files)!
-3. Check the preview to make sure that you're grabbing the right mesh, then add it to your project by double-clicking or via context menu.
+3. Check the preview to make sure that you're grabbing the right mesh, then [add it to your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
 
 ### The suit
 
-1. In the Mod Browser, now search for the following files:
+1. In the [Mod Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser), now search for the following files:
    * female body gender:\
      `manavortex\torso\netrunning_suit\meshes\pwa_netrunning_suit.mesh`\
      `manavortex\torso\netrunning_suit\meshes\pwa_emissive.mesh`
@@ -66,7 +71,7 @@ The whole process is explained [here](../../../for-mod-creators-theory/3d-modell
 
 TL;DR:&#x20;
 
-* Find "Export Tool"
+* Find the "Export Tool"
 * Select the mesh(es) you want
   * Body
   * Netrunning Suit
