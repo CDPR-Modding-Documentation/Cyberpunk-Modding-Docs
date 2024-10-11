@@ -3,8 +3,8 @@ description: How to use MO2 - it's that simple
 ---
 
 # MO2 (Mod Organizer 2)
- 
-MO2 (**Mod Organizer 2**, [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) | [Github](https://github.com/ModOrganizer2/modorganizer/releases)) is a free, widely-used mod manager, especially popular for Bethesda games like Skyrim or Fallout. It fully supports **Cyberpunk 2077** and is praised for its ease of use.&#x20;
+
+MO2 (**Mod Organizer 2**, [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) | [Github](https://github.com/ModOrganizer2/modorganizer/releases)) is a free, widely-used mod manager, especially popular for Bethesda games like Skyrim or Fallout. It fully supports **Cyberpunk 2077** and is praised for its ease of use.
 
 Using MO2 keeps your base game directory untouched and allows for easy mod installation, uninstallation, and updating. Additionally, you can create different profiles for mod configurations.
 
@@ -31,10 +31,10 @@ If you need further help with MO2 beyond this guide, feel free to ask for assist
 ### Installing CET and Red4Ext (the Script extenders)
 
 {% hint style="warning" %}
-CET and Red4Ext have to be either **installed manually or with toot builder**
+CET and Red4Ext have to be either **installed manually or with root builder**
 {% endhint %}
 
-#### Manually Install CET and RED4ext**
+#### Manually Install CET and RED4ext\*\*
 
 1. Download **Cyber Engine Tweaks (CET)** and **RED4ext** from Nexus Mods manually
 2. Install them by extracting their files to the game folder.
@@ -58,7 +58,7 @@ If you have mods from external sources:
 ### Launching the Game
 
 {% hint style="warning" %}
-**You always have to launch the game through MO2 if you use MO2 as mod manager.**&#x20;
+**You always have to launch the game through MO2 if you use MO2 as mod manager.**
 {% endhint %}
 
 1. **Always Launch the Game through MO2**:
@@ -70,6 +70,3 @@ If you have mods from external sources:
 ### Tips and Best Practices
 
 * Stay up to date with the latest versions of both **MO2** and the mods for the best experience and compatibility.
-
-&#x20;
-
