@@ -245,6 +245,7 @@
   * [AMM: Custom NPCs](modding-guides/npcs/amm-custom-npcs/README.md)
     * [AMM: Custom NPC appearances](modding-guides/npcs/amm-custom-npcs/amm-custom-npc-appearances.md)
   * [A new head for V](modding-guides/npcs/a-new-head-for-v.md)
+  * [Rig deforming for V](modding-guides/npcs/rig-deforming-for-v.md)
   * [Custom facial piercings - PRC Framework](modding-guides/npcs/custom-facial-piercings-prc-framework.md)
   * [Appearances: change the looks](modding-guides/npcs/appearances-change-the-looks/README.md)
     * [Altering Appearances within Wolvenkit - Full Workflow](modding-guides/npcs/appearances-change-the-looks/altering-appearances-within-wolvenkit-full-workflow.md)

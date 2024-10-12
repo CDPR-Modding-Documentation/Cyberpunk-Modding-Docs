@@ -14,7 +14,7 @@ This page contains **theory** about Cyberpunk's armature files.
 ### Wait, this is not what I want!
 
 * To find out how armatures and meshes are connected, check [meshes-and-armatures-rigging.md](../3d-modelling/meshes-and-armatures-rigging.md "mention")
-* To edit an armature, check TODO: insert link
+* To edit an armature, check [rig-deforming-for-v.md](../../modding-guides/npcs/rig-deforming-for-v.md "mention")
 * For a hands-on guide, check [poses-animations-make-your-own](../../modding-guides/animations/animations/poses-animations-make-your-own/ "mention")
 
 ## What's a rig?
@@ -25,11 +25,11 @@ Each armature is a hierarchical connection of bones (similar to a meatspace skel
 
 ### Control
 
-The armature controls the **pose** of the connected mesh. You can read more about this on the  [meshes-and-armatures-rigging.md](../3d-modelling/meshes-and-armatures-rigging.md "mention") page.
+Via `rotation` and `translation` of individual bones, the armature controls the **pose** of the connected mesh. You can read more about this on the  [meshes-and-armatures-rigging.md](../3d-modelling/meshes-and-armatures-rigging.md "mention") page.
 
 ### Deform
 
-Via **bone scaling**, the armature **deforms** the connected mesh. This is how custom rigs are used to change V's body shape.
+Via `scale`, the armature **deforms** the connected mesh. This is how custom rigs are used to change V's body shape.
 
-To learn more about this, check TODO: insert link
+To learn more about this, check [rig-deforming-for-v.md](../../modding-guides/npcs/rig-deforming-for-v.md "mention").
 
