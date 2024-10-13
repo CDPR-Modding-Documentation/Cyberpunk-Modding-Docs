@@ -99,3 +99,9 @@ You can check the [Troubleshooting](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXk
 
 Just install the mod via WKit, launch Cyberpunk the way you normally do.
 
+## Garment Support isn't working!
+
+GarmentSupport only works on **actual garment items** that have been equipped using the game's **transaction system**. As of October 2024, that's not the case for NPCs.&#x20;
+
+Unfortunately, you'll have to go refitting. Sorry!
+

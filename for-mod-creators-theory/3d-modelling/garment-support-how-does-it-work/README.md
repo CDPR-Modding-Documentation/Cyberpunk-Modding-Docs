@@ -30,6 +30,11 @@ This process is accomplished via 'parameters' on the mesh:
 
 <figure><img src="../../../.gitbook/assets/mesh_editing_parameters.png" alt=""><figcaption><p>These will show up as shape keys in your Blender export</p></figcaption></figure>
 
+### Why doesn't it work on my NPC?
+
+GarmentSupport only works on **actual garment items** that have been equipped using the game's **transaction system**. As of October 2024, that's not the case for NPCs. \
+You'll have to go refitting!
+
 ## Component prefixes
 
 Garment support will be applied based on garmentScore. For this, the **prefix** of the component name will be considered (components are named in your .app or .ent file's component array).
