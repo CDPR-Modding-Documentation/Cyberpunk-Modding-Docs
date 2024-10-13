@@ -64,6 +64,7 @@
   * [Cheat Sheet: Head](for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/README.md)
     * [Cheat Sheet: Hair](for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md)
     * [Cheat Sheet: Facial Expressions](for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md)
+    * [Cheat Sheet: E3 Heads](for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/cheat-sheet-e3-heads.md)
   * [Cheat Sheet: Body](for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-body.md)
   * [Cheat Sheet: Arms](for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-arms.md)
   * [Cheat sheet: Rigs and animations](for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-rigs-and-animations.md)
