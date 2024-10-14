@@ -17,7 +17,7 @@ This guide will teach you how to create AMM props in two variants:
 Its focus is on the **file structure** and the **relations between the files**.
 
 {% hint style="danger" %}
-If this is the first prop you make and you're not familiar with the import/export process yet, follow [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention") for a step-by-step guide, then come back here to create your own structure.
+For another guide regarding custom props, check [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention") – it will focus on the possibilities you have with different materials, while this guide focuses on the process and the structure.
 {% endhint %}
 
 ### Wait, this isn't what I want!
