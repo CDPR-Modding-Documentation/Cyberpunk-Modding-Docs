@@ -225,6 +225,11 @@ This will open a window in Vortex, with the thumbnail and name of the collection
 8. Click "Slow Download" (unless you're a premium user)
 9. Rinse and repeat this process until you have all mods in the collection.
 
+{% hint style="danger" %}
+Check if you have an up-to-date version of the **core mods**. Outdated collections can include earlier versions. If you update them, there's a good chance that everything will work.\
+Find a full list here: [core-mods-explained](../../../for-mod-creators-theory/core-mods-explained/ "mention")
+{% endhint %}
+
 {% hint style="info" %}
 As this is a collection, each mod will – regardless of our settings – be installed as its downloaded. As they deploy, you will see a screen pop up with a lot of code flowing by. Don't worry, this is just Vortex deploying your REDmods.
 {% endhint %}
