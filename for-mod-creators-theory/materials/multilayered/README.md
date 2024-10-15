@@ -4,6 +4,23 @@ description: 'Substance Designer 2077: How it works and why it''s actually super
 
 # Multilayered: Cyberpunk's supershader
 
+## Summary
+
+**Published:**\
+**Last documented edit:** Oct 15 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page describes Cyberpunk's multilayered supershader.
+
+### Wait, this isn't what I want!
+
+This wiki contains multiple guides about editing multilayered materials, such as:
+
+* For editing .mlmask files: [custom-multilayermasks.md](../../../modding-guides/textures-and-luts/custom-multilayermasks.md "mention")
+* For editing .mlsetup files:&#x20;
+  * [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
+  * [recolours-and-refits](../../../modding-guides/items-equipment/recolours-and-refits/ "mention") -> [r-and-r-colour-editing.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-colour-editing.md "mention")
+  * [textures-and-materials.md](../../../modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/textures-and-materials.md "mention")
+
 ## Why can't they use textures?
 
 Everyone asks this question in the beginning, but you're only a single epiphany away from a change of mind. The multilayered shader can pack up to 20 layers of texture into a single file! Read on to find out how it works.
@@ -16,18 +33,11 @@ A significant portion of assets for Cyberpunk 2077 leverage the complex multilay
 While the multilayered supershader is very common, there are hundreds of other non Substance-style shaders, some with traditional baked PBR textures.
 {% endhint %}
 
-{% hint style="success" %}
-For a list of shader properties in multilayered.mt, see [multilayered-material-properties-1.md](../configuring-materials/multilayered-material-properties-1.md "mention")
-
-This wiki contains multiple guides about editing multilayered materials, such as:
-
-* For editing .mlmask files: [custom-multilayermasks.md](../../../modding-guides/textures-and-luts/custom-multilayermasks.md "mention")
-* For editing .mlsetup files:&#x20;
-  * [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention") ->[#multilayered-material](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/#multilayered-material "mention")
-  * [recolours-and-refits](../../../modding-guides/items-equipment/recolours-and-refits/ "mention") -> [r-and-r-colour-editing.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-colour-editing.md "mention")
-{% endhint %}
-
 ## Composition
+
+{% hint style="info" %}
+For a list of shader properties in multilayered.mt, see [multilayered-material-properties-1.md](../configuring-materials/multilayered-material-properties-1.md "mention")
+{% endhint %}
 
 The multilayered shader is composed of three distinct parts:
 

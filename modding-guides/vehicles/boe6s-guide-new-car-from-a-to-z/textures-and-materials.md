@@ -1,8 +1,21 @@
 # Boe6's vehicles: Textures & Materials
 
+## Summary
+
+Published: Nov 5, 2023 by Meta Pixel\
+Last documented edit: Oct 15 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This guide is part of [.](./ "mention") and covers the material part of it.
+
 {% hint style="info" %}
 By default, cars use the [multilayered shader](../../../for-mod-creators-theory/materials/multilayered/). You can find guides about editing multilayered material linked at the top of the documenation page.
 {% endhint %}
+
+### Wait, this is not what I want!
+
+To learn more about materials, you can browse [cheat-sheet-materials.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md "mention") and its sub-pages.
+
+## Let's get started
 
 ### `.mlmask` , .`mlmaskset` & `.masklist`
 
