@@ -321,6 +321,7 @@
     * [Play animations with workspots](modding-guides/animations/animations/abusing-workspots.md)
     * [Archived: Custom poses for spawned NPCs](modding-guides/animations/animations/archived-custom-poses-for-spawned-npcs.md)
     * [Easy IK based Posing - Guide by xbaebsae](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-ik-based-posing/)
+  * [Facial Animations](modding-guides/animations/facial-animations.md)
 * [🚘 Vehicles](modding-guides/vehicles/README.md)
   * [🚗 Boe6's Guide: new car from A to Z](modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/README.md)
     * [Boe6's vehicles: What you need to know](modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/precursor-information-to-know.md)
