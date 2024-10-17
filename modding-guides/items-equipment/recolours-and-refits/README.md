@@ -6,13 +6,15 @@ description: How do I change this item?
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created & Published**: August 20 2023 by **@manavortex**
-
-{% hint style="info" %}
-If you just want to change the emissive colour, check [r-and-r-emissive.md](r-and-r-emissive.md "mention")
-{% endhint %}
+**Created & Published**: August 20 2023 by **@manavortex**\
+**Last documented update:** Oct 17 2024 by **@manavortex**
 
 This will guide you to the process of making your own custom edit of my [Netrunner Suits mod](https://www.nexusmods.com/cyberpunk2077/mods/9314). It has several sections, which you can find linked below (but please check the wiki's navigation tree anyway).
+
+### Wait, that's not what I want!
+
+* For a comprehensive (standalone) guide for refitting for the flat chest body, see [refitting-for-flat-chest.md](refitting-for-flat-chest.md "mention")
+* If you just want to change the colour of an emissive (glowing) item, check [r-and-r-emissive.md](r-and-r-emissive.md "mention")
 
 #### **Assumed level of skill**:&#x20;
 
@@ -42,7 +44,7 @@ You can check find the standard permissions on a mod's Nexus page, `Description`
 
 ### Tools and versions used
 
-<table data-header-hidden><thead><tr><th width="216">Name of program</th><th>version and download</th><th>What is it and why do I need it?</th></tr></thead><tbody><tr><td>Wolvenkit (short: WKit)</td><td>the latest stable (<a href="https://github.com/WolvenKit/WolvenKit/releases/">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/">nightly</a>)</td><td><strong>The</strong> Cyberpunk modding tool — this lets you browse files and pack your custom mod.</td></tr><tr><td>For recolours: MLSetupBuilder (short: MLSB)</td><td>the most recent, but at least <strong>1.6.7</strong> (see the <a href="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/mlsetup-builder">wiki</a> for help)</td><td>A plugin for Wolvenkit, installed from inside Wolvenkit. <em>You need this to make recolours.</em></td></tr><tr><td><strong>For refits:</strong> Blender</td><td>>= <a href="https://www.blender.org/download/releases/">4.1</a></td><td><em>You only need this if you want to do <strong>refits</strong>.</em><br>A fully-blown 3d editing software (free and open source). </td></tr><tr><td><strong>For refits:</strong> Cyberpunk Blender IO suite</td><td>>= <a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases">1.5.5.2</a></td><td><em>You only need this if you want to do <strong>refits</strong>.</em><br>The Blender plugin for integration with Wolvenkit</td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="216">Name of program</th><th>version and download</th><th>What is it and why do I need it?</th></tr></thead><tbody><tr><td>Wolvenkit (short: WKit)</td><td>the latest stable (<a href="https://github.com/WolvenKit/WolvenKit/releases/">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/">nightly</a>)</td><td><strong>The</strong> Cyberpunk modding tool — this lets you browse files and pack your custom mod.</td></tr><tr><td>For recolours: MLSetupBuilder (short: MLSB)</td><td>the most recent, but at least <strong>1.6.8</strong> (see the <a href="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/mlsetup-builder">wiki</a> for help)</td><td>A plugin for Wolvenkit, installed from inside Wolvenkit. <em>You need this to make recolours.</em></td></tr><tr><td><strong>For refits:</strong> Blender</td><td>>= <a href="https://www.blender.org/download/releases/">4.1</a></td><td><em>You only need this if you want to do <strong>refits</strong>.</em><br>A fully-blown 3d editing software (free and open source). </td></tr><tr><td><strong>For refits:</strong> Cyberpunk Blender IO suite</td><td>>= <a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases">1.5.5.2</a></td><td><em>You only need this if you want to do <strong>refits</strong>.</em><br>The Blender plugin for integration with Wolvenkit</td></tr></tbody></table>
 
 ### Skipping and skimming
 

@@ -258,6 +258,7 @@
     * [R\&R: Emissive](modding-guides/items-equipment/recolours-and-refits/r-and-r-emissive.md)
     * [R\&R: Refitting (step by step)](modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md)
     * [R\&R: Troubleshooting](modding-guides/items-equipment/recolours-and-refits/r-and-r-troubleshooting.md)
+    * [Refitting for flat chest](modding-guides/items-equipment/recolours-and-refits/refitting-for-flat-chest.md)
   * [Editing existing items](modding-guides/items-equipment/editing-existing-items/README.md)
     * [Adding decals](modding-guides/items-equipment/editing-existing-items/adding-decals.md)
     * [Changing materials, colors and textures](modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/README.md)
