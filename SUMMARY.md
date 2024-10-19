@@ -196,6 +196,7 @@
     * [Multilayered Material Properties](for-mod-creators-theory/materials/configuring-materials/multilayered-material-properties.md)
     * [Textured (PBR) material properties](for-mod-creators-theory/materials/configuring-materials/textured-material-properties.md)
     * [Liquid material properties](for-mod-creators-theory/materials/configuring-materials/liquid-material-properties.md)
+    * [Spline material properties (Monowire)](for-mod-creators-theory/materials/configuring-materials/spline-material-properties-monowire.md)
     * [FX Material Properties](for-mod-creators-theory/materials/configuring-materials/fx-material-properties.md)
     * [Multilayered Material: Properties](for-mod-creators-theory/materials/configuring-materials/multilayered-material-properties-1.md)
     * [Hair and skin material properties](for-mod-creators-theory/materials/configuring-materials/hair-and-skin-material-properties.md)
