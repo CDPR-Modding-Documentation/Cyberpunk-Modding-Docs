@@ -1,8 +1,20 @@
+---
+description: 'Vehicle modding: landing page'
+---
+
 # 🚘 Vehicles
 
-{% hint style="info" %}
-This section collects information for vehicle modding. However, all we have as of now are two links.
-{% endhint %}
+## Summary
+
+This section collects information for vehicle modding.
+
+### Wait, this is not what I want!
+
+* For [Exporting Vehicles](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/exporting-vehicles "mention") to Blender, check the Wolvenkit Wiki's step-by-step guide.
+
+
+
+## What you can find here
 
 Boe6 has been so nice to share their (very detailed) [guide on Google Doc](https://docs.google.com/document/d/1a5Xvviw\_GQxcvbxEwc3GoboaNk0igxlhiyS7ux34sIs/edit?usp=sharing) and given full permission to transfer it to the wiki. However, the transfer is a work in progress (check [boe6s-guide-new-car-from-a-to-z](boe6s-guide-new-car-from-a-to-z/ "mention"))
 
