@@ -23,7 +23,7 @@ If you want to [join up](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70
 
 ## What is an animation?&#x20;
 
-The process of binding [meshes](3d-objects-.mesh-files/) (weapons, clothes, body parts) to an **armature** is called [rigging](../3d-modelling/meshes-and-armatures-rigging.md).&#x20;
+The process of binding [meshes](3d-objects-.mesh-files/) (weapons, clothes, body parts) to an **armature** is called [rigging](../3d-modelling/meshes-and-armatures-rigging/).&#x20;
 
 The armature (also `rig` - think "skeleton") is made of **pose bones**. \
 For every **frame**, these pose bones will be in a certain position (`keyframe`). Here lies the only difference between **static photo mode poses** and **animations**:&#x20;

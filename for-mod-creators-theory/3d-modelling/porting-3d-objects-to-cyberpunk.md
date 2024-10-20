@@ -39,14 +39,14 @@ For the purpose of this guide, it doesn't matter if you are trying to[replace-a-
 If you are [creating props](../../modding-guides/everything-else/custom-props/), you use a mesh from the template project or grab any static mesh from the game.&#x20;
 
 {% hint style="warning" %}
-Do not take equipment item or weapon meshes — those include a bunch of extra data that you don't need (the [armature](meshes-and-armatures-rigging.md)). You don't need it, and it can have side effects.
+Do not take equipment item or weapon meshes — those include a bunch of extra data that you don't need (the [armature](meshes-and-armatures-rigging/)). You don't need it, and it can have side effects.
 {% endhint %}
 
 As this guide will focus on equipment items, you can skip Step 3 and 4 completely.
 
 ### Equipment items
 
-If you want V to wear the item that you're currently porting, it needs to move with the player. For that, you need [an armature](meshes-and-armatures-rigging.md). This guide will show you how to acquire one.&#x20;
+If you want V to wear the item that you're currently porting, it needs to move with the player. For that, you need [an armature](meshes-and-armatures-rigging/). This guide will show you how to acquire one.&#x20;
 
 {% hint style="info" %}
 You will delete fewer meshes if you read all of the sections below before starting.

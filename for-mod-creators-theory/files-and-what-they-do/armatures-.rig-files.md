@@ -13,7 +13,7 @@ This page contains **theory** about Cyberpunk's armature files.
 
 ### Wait, this is not what I want!
 
-* To find out how armatures and meshes are connected, check [meshes-and-armatures-rigging.md](../3d-modelling/meshes-and-armatures-rigging.md "mention")
+* To find out how armatures and meshes are connected, check [meshes-and-armatures-rigging](../3d-modelling/meshes-and-armatures-rigging/ "mention")
 * To edit an armature, check [rig-deforming-for-v.md](../../modding-guides/npcs/rig-deforming-for-v.md "mention")
 * For a hands-on guide, check [poses-animations-make-your-own](../../modding-guides/animations/animations/poses-animations-make-your-own/ "mention")
 
@@ -25,7 +25,7 @@ Each armature is a hierarchical connection of bones (similar to a meatspace skel
 
 ### Control
 
-Via `rotation` and `translation` of individual bones, the armature controls the **pose** of the connected mesh. You can read more about this on the  [meshes-and-armatures-rigging.md](../3d-modelling/meshes-and-armatures-rigging.md "mention") page.
+Via `rotation` and `translation` of individual bones, the armature controls the **pose** of the connected mesh. You can read more about this on the  [meshes-and-armatures-rigging](../3d-modelling/meshes-and-armatures-rigging/ "mention") page.
 
 ### Deform
 

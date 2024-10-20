@@ -153,7 +153,7 @@ Starting in version 1.5.0, the [wolvenkit-blender-io-suite](../../../for-mod-cre
 If you want to use the plugin instead of refitting by hand, make sure to select all meshes (Step 1 on the list below) before following the instructions under[wkit-blender-plugin-akl-autofitter.md](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md "mention").
 {% endhint %}
 
-We will use the Proportional Editing mode here, which leaves garment supports intact and prevents the risk of [string cheese](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices-a-puddle-on-the-floor). If you don't vibe with that, you can read up [here](../../../for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques.md#sculpting) on other approaches for refitting, or refer to the [community guides](../../community-guides/) section.
+We will use the Proportional Editing mode here, which leaves garment supports intact and prevents the risk of [string cheese](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices-a-puddle-on-the-floor). If you don't vibe with that, you can read up [here](../../../for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques/#sculpting) on other approaches for refitting, or refer to the [community guides](../../community-guides/) section.
 
 1. While still in `Object Mode`, expand both armatures (not the one with the body) and select all included meshes.
 2. Switch into Edit Mode by hitting Tab or selecting it from the dropdown at the topleft

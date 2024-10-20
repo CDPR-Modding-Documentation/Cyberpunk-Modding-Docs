@@ -60,7 +60,7 @@ If you import an .anims file, selecting **any armature** will give you the optio
 
 #### Transfer Vertex Weights
 
-Lets you transfer [vertex weights](../../3d-modelling/meshes-and-armatures-rigging.md) from one collection to the other (please read the info box below):
+Lets you transfer [vertex weights](../../3d-modelling/meshes-and-armatures-rigging/) from one collection to the other (please read the info box below):
 
 <figure><img src="../../../.gitbook/assets/wkit_io_suite_transfer_weights.png" alt=""><figcaption><p>Transfer weights with the click of a button!</p></figcaption></figure>
 

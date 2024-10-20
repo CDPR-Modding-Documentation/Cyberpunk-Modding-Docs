@@ -1,7 +1,7 @@
 # 🦴 Boe6's vehicles: Rigging
 
 {% hint style="info" %}
-The `.rig` file ("armature" or "skeleton") is what makes your mesh move in the game. You can find more information about that on the [meshes-and-armatures-rigging.md](../../../for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging.md "mention") page.
+The `.rig` file ("armature" or "skeleton") is what makes your mesh move in the game. You can find more information about that on the [meshes-and-armatures-rigging](../../../for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging/ "mention") page.
 {% endhint %}
 
 Parts that require a `.rig` file will not import the same. For example, the bumper’s 3D models are not positioned in-line with the `body_01` object in **blender**. Bumpers are centered around the **origin** of the 3D space. The part is then lined up correctly with the `.rig` file, which is linked in the `.ent` file.&#x20;

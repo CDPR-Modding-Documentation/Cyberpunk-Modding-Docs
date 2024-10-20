@@ -53,7 +53,7 @@ Not a file type but an internal data structure and part of [.ent](file-formats.m
 
 ## .mesh (3d object)
 
-A 3d object, holding [appearances](../../modding-guides/npcs/appearances-change-the-looks/), [materials](../materials/), and [rigging](../3d-modelling/meshes-and-armatures-rigging.md). Meshes for inanimate objects also tend to contain the physics parameters of these objects, whereas NPC meshes tend to contain some garment parameters.
+A 3d object, holding [appearances](../../modding-guides/npcs/appearances-change-the-looks/), [materials](../materials/), and [rigging](../3d-modelling/meshes-and-armatures-rigging/). Meshes for inanimate objects also tend to contain the physics parameters of these objects, whereas NPC meshes tend to contain some garment parameters.
 
 A mesh can have several **submeshes**, which can be displayed or hidden via [chunkmasks](../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides).&#x20;
 

@@ -10,7 +10,7 @@ Check the sub-pages for more detes, or check the section's sub-pages.&#x20;
 
 Due to its complexity, we don't have a dedicated guide on Blender. However, if you have no idea how to start, various other guides cover part of the process:
 
-* [Sculpting](mesh-sculpting-techniques.md)
+* [Sculpting](mesh-sculpting-techniques/)
 * [Proportional editing / Refitting](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md)
 * [Texture painting](../../modding-guides/textures-and-luts/custom-multilayermasks.md) and [normal map creation](../../modding-guides/textures-and-luts/self-made-normal-maps/)
 * [Adding submeshes](3d-editing-submeshes.md) or [Splitting meshes](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)
