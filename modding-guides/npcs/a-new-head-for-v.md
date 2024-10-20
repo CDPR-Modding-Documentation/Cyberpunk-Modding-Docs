@@ -107,7 +107,7 @@ Make sure that `sculptme` is still selected in the Outliner - the script will ta
 4. You can now **hide** all collections that you don't want to see in the Outliner.
 5. I usually only keep `sculptme`, eyes, and eyebrows visible (hiding the original head mesh)
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="324"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/head_sculpting_image_visibility.png" alt="" width="324"><figcaption></figcaption></figure>
 
 ## Step 3: The actual sculpting
 
@@ -125,8 +125,12 @@ This guide won't go into details (yet), except to tell you that the `Elastic Def
 
 ## Step 4: Exporting from Blender
 
+{% hint style="danger" %}
+As of October 2024, Wolvenkit may run into issues exporting edited morphtargets, so make sure to hang onto your .blend file!
+{% endhint %}
+
 {% hint style="info" %}
-This is also an excellent time for a save, because the script will remove the surface deform modifiers.
+This is an **excellent** time for a save, because the script will remove the surface deform modifiers.
 {% endhint %}
 
 Before you can export your sculpt, you need to **apply** the surface deform modifiers, because Wolvenkit (and Cyberpunk) will flat-out ignore them.&#x20;
@@ -144,13 +148,37 @@ Fortunately, you can do this by script as well.
 You can now export the morphtargets.
 
 1. For each armature, select **all** submeshes inside
-2.  Use the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention")'s default settings and overwrite the corresponding `.morphtarget.glb`&#x20;
+2.  Use the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention")'s default settings and **overwrite** the corresponding `.morphtarget.glb`&#x20;
 
     <figure><img src="../../.gitbook/assets/npv_basehead_export_from_blender.png" alt=""><figcaption></figcaption></figure>
-3. **Import** the files back into Wolvenkit (see the [NPV guide](npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md#step-3-importing-head) and the [morphtargets](../../for-mod-creators-theory/3d-modelling/morphtargets.md#editing-morphtargets) page as for how)
+3. **Import** the files back into Wolvenkit via [Import Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool). This **should** simply work! If it does not, you might have to overwrite the mesh file as well - see the [morphtargets](../../for-mod-creators-theory/3d-modelling/morphtargets.md#editing-morphtargets) page for instructions.
 
 ## Step 5: Testing
 
-If everything has worked, you should now have a broken character creator and a not-broken head. Otherwise, the right place to ask for help is `#mod-dev-chat` on the [redmodding Discord server](https://discord.gg/redmodding).&#x20;
+If everything has worked, you should now be able to create a new V with your new head shape. (Loading into an existing V might cause crashes)
+
+Otherwise, the right place to ask for help is `#mod-dev-chat` on the [redmodding Discord server](https://discord.gg/redmodding).&#x20;
 
 Happy modding!
+
+## Step 6 (optional): Disabling the character creator
+
+By turning off character creator slides, you can stop Cyberpunk from crashing.&#x20;
+
+For each `.morphtarget`, you can change this value to **0**:
+
+<figure><img src="../../.gitbook/assets/head_sculpting_disable_morphing.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+As of 8.15, this will **break Wolvenkit export**. Before exporting, you need to set the numTargets back to what WKit expects it to be.
+{% endhint %}
+
+## Troubleshooting
+
+### I can't export my morphtarget anymore!
+
+[Known issue](https://github.com/WolvenKit/WolvenKit/issues/1604) as of Wolvenkit 8.15 - future Wolvenkit versions will fix this. It's why you were supposed to hang on to that .blend for dear life. :)
+
+### It crashes when loading into a savegame!
+
+A known risk of custom heads, because custom cyberware/beards/tattoos won't play nice with this. See [#step-6-optional-disabling-the-character-creator](a-new-head-for-v.md#step-6-optional-disabling-the-character-creator "mention") for an (admittedly heavy-handed) solution.
