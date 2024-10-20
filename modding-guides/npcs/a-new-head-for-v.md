@@ -165,19 +165,21 @@ Happy modding!
 
 By turning off character creator slides, you can stop Cyberpunk from crashing.&#x20;
 
-For each `.morphtarget`, you can change this value to **0**:
-
-<figure><img src="../../.gitbook/assets/head_sculpting_disable_morphing.png" alt=""><figcaption></figcaption></figure>
-
 {% hint style="info" %}
 As of 8.15, this will **break Wolvenkit export**. Before exporting, you need to set the numTargets back to what WKit expects it to be.
 {% endhint %}
+
+For each `.morphtarget`, you can change this value to **0**:
+
+<figure><img src="../../.gitbook/assets/head_sculpting_disable_morphing.png" alt=""><figcaption></figcaption></figure>
 
 ## Troubleshooting
 
 ### I can't export my morphtarget anymore!
 
-[Known issue](https://github.com/WolvenKit/WolvenKit/issues/1604) as of Wolvenkit 8.15 - future Wolvenkit versions will fix this. It's why you were supposed to hang on to that .blend for dear life. :)
+If you get an exception about `blob.header.numTargets`:  check [#step-6-optional-disabling-the-character-creator](a-new-head-for-v.md#step-6-optional-disabling-the-character-creator "mention").&#x20;
+
+Otherwise: [Known issue](https://github.com/WolvenKit/WolvenKit/issues/1604) as of Wolvenkit 8.15 - future Wolvenkit versions will fix this. It's why you were supposed to hang on to that .blend for dear life. :)
 
 ### It crashes when loading into a savegame!
 
