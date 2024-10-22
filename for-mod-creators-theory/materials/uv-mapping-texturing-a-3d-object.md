@@ -45,3 +45,28 @@ Open the UV editing perspective, select a mesh, and switch to Edit Mode. If you 
 <figure><img src="../../.gitbook/assets/adding_decals_11_uv_editing.png" alt=""><figcaption></figcaption></figure>
 
 You change the mapping by editing those UV islands. For a more hands-on guide of this, refer to [adding-decals.md](../../modding-guides/items-equipment/editing-existing-items/adding-decals.md "mention") -> [#step-5-uv-projection](../../modding-guides/items-equipment/editing-existing-items/adding-decals.md#step-5-uv-projection "mention")
+
+## Recommended AddOns
+
+### [MioUV](https://github.com/mio3io/mio3\_uv) (Blender 4.2, free)
+
+If you work with UV mappings, you should definitely check out MioUV. It automates a bunch of things that used to take the better part of an afternoon:
+
+<div>
+
+<figure><img src="../../.gitbook/assets/blender_gridify_orient_edges.webp" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/blender_gridify_unwrap.webp" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/blender_rectify_unwrap.webp" alt=""><figcaption></figcaption></figure>
+
+ 
+
+<figure><img src="../../.gitbook/assets/blender_straight_unwrap.webp" alt=""><figcaption></figcaption></figure>
+
+</div>
+
