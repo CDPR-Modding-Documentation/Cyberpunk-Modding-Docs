@@ -246,6 +246,8 @@ This section will teach you how to add another hair mesh to your NPV. We will fi
 To use modded hair, find the correct files [inside the mod](../../analysing-other-mods/) and add them to your project.
 
 If you want to look up in-game hairs, check [hair.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
+
+For more&#x20;
 {% endhint %}
 
 1. Delete the current hair from the .app — there should be 2-3 components, their names will start with either `hair_` or `hh_0`

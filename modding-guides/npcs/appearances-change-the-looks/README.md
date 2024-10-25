@@ -149,6 +149,70 @@ If you copy an animated component (e.g. Johnny's vest), then you need to copy th
 If you delete a physics-enabled component, you can safely delete the corresponding AnimatedComponent.&#x20;
 {% endhint %}
 
+## Adding items from mods
+
+### Getting the .mesh
+
+1. Switch your Asset Browser to [Mod Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser)
+2. Use the [search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to find mesh files in your target .archive: \
+   `archive:my_mod_name > .mesh`
+3. Add the file(s) you want to your Wolvenkit project
+
+{% hint style="info" %}
+Many ArchiveXL mods contain a number of meshes for different body mods and body genders. You only need one of them — the one for your body mod and body gender.&#x20;
+
+Look for `w/m` to indicate gender, and `base_body` to indicate the body mod.
+{% endhint %}
+
+4. Move them to a custom path (you don't want them to interfere with the original modded files)
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Clean up the .mesh
+
+1. Before adding the necessary dependencies, delete all **appearances** from the .mesh file that you don't want:
+
+<figure><img src="../../../.gitbook/assets/image (540).png" alt=""><figcaption></figcaption></figure>
+
+2. From the `Clean up` menu, use `Delete unused Materials`
+3. Save the file
+4. From the `Materials` menu, use `add material dependencies`
+   * Wolvenkit will now run a scan of all your mods. This may take a moment!&#x20;
+5. You will now see a `textures` folder with all files for your materials.
+   * If there isn't one, the mesh only uses base game materials and textures. There's no need to custompath those — if you want to do it anyway, hold the `shift` key while selecting the option.
+
+<figure><img src="../../../.gitbook/assets/image (541).png" alt=""><figcaption></figcaption></figure>
+
+6. You can now save your mesh and optionally run [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) from the menu bar.
+7. **Optional**:  If any of the files in your texture folders are `.mi,` `.mltemplate,` or `.mlsetup` files, open them and run `add material dependencies` again (your mesh will have a weird purple hue if any of those are missing)
+8. You can now save your .mesh!
+
+### Adding the .mesh to the appearance
+
+{% hint style="info" %}
+This works for simple components. Anything more complicated with physics (.anim or .rig), you should ~~steal~~copy from an `.ent` file inside the mod!
+{% endhint %}
+
+1. Open your NPC's .app file
+2. find the appearance that you want to change
+3. duplicate an existing `entSkinnedMeshComponent`:
+
+<figure><img src="../../../.gitbook/assets/image (542).png" alt=""><figcaption></figcaption></figure>
+
+4. Select the new component. In the panel on the right, change the following properties:
+   1. mesh -> DepotPath: relative path to your mesh\
+      `tutorial\npv\your_female_character\feet\s1_converse\s1__pwa__converse.mesh`\
+      You can right-click on the .mesh file in the project browser and select `copy relative path`
+   2. mesh -> meshAppearance: the appearance that you did not delete during cleanup\
+      e.g. `black`\
+      You find this in the `appearances` array inside the `.mesh` file
+   3. name: a unique name that identifies your component. \
+      _You should get into the habit of using_ [_garment prefixes_](../../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/#component-prefixes)_, as they come in handy for clothing items._
+
+<figure><img src="../../../.gitbook/assets/image (543).png" alt=""><figcaption></figcaption></figure>
+
+4. That's it! Save and test!
+
 ## Adding new appearances
 
 Adding new appearances to an existing NPC requires you to overwrite that NPC's .ent file (see [amm-custom-npc-appearances.md](../amm-custom-npcs/amm-custom-npc-appearances.md "mention")). For that matter, it's recommended that you create a new entity instead. You can find a guide for this under [amm-custom-npcs](../amm-custom-npcs/ "mention").
