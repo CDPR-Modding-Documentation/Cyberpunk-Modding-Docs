@@ -6,6 +6,8 @@ description: >-
 
 # Refitting for flat chest
 
+**Created by ratstick. Last update 10/21/2024**
+
 None of this would have been possible without [wanderingaldecaldo](https://next.nexusmods.com/profile/wanderingaldecaldo/about-me?gameId=3333) litcherally coming over to my house to hang and then showing me how to refit. I love you bestie.
 
 If you have questions or need some help refitting for flat chest, you can [DM me on Nexus](https://next.nexusmods.com/profile/ratstick) or find me in the official modding Discord server and KS server under ratstick.
@@ -17,6 +19,14 @@ If you have questions or need some help refitting for flat chest, you can [DM me
 * [Blender 4.0](https://download.blender.org/release/Blender4.0/) (or 3.6 but things may look different for you than in these screenshots)
 * The flat chest body or this KS Body Refitting workspace .blend file you can find on the KS Discord server. [Here is a direct link to the post.](https://discord.com/channels/939996226173173760/1250076294499274842)
 * A sense of humor, dedication to accessibility in modding, and patience. Maybe some Dramamine, zooming around Blender can make me a little motion sick sometimes.
+
+#### Modder's Resource - Flat chest refit project
+
+I created a[ project you can download on Nexus ](https://www.nexusmods.com/cyberpunk2077/mods/17342?tab=files)with a few vanilla files including the one you see in the screenshots. The main file is not refitted and so has the vanilla meshes and the exported glb files. In the optional files, you can find a source folder with the same meshes and glb files refitted for reference.
+
+Feel free to upload pics of your own refits in game or in Blender!
+
+
 
 I’m working on refitting all vanilla t1 and t2 for the flat chest body, so that's what you’re gonna see in the screenshots.
 
