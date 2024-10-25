@@ -105,4 +105,14 @@ Find [redhottools](../../modding-tools/redhottools/ "mention") -> [#installation
 
 See [#inspecting-chunkmasks](../../modding-tools/redhottools/#inspecting-chunkmasks "mention") for a guide.
 
+## Level Of Detail (LOD)
+
+If a submesh does not end in LOD1, that means it's intended for **lower resolutions** (for example, if an object is far away).&#x20;
+
+By default, Wolvenkit [removes](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#lod-filter-default) these low-resolution meshes on export, since you don't normally want them for modded characters or items.
+
+{% hint style="info" %}
+Under [the-whole-world-.streamingsector](../the-whole-world-.streamingsector/ "mention"), you can find an explanation of how cyberpunk handles world sector Level of Detail (LOD).
+{% endhint %}
+
 [^1]: AppearanceCreatorMod, an AMM addon

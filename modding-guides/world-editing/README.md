@@ -15,6 +15,10 @@ For its collection of **guides**, see the child pages in the wiki's navigation t
 
 Rather than blowing up Arasaka Tower or trying to become bomb, we're using [archivexl](../../for-mod-creators-theory/core-mods-explained/archivexl/ "mention") to edit the contents of [.streamingsector](../../for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/) files.&#x20;
 
+{% hint style="info" %}
+Under [the-whole-world-.streamingsector](../../for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/ "mention"), you can find an explanation of how cyberpunk handles world sector Level of Detail (LOD).
+{% endhint %}
+
 ### Why shouldn't we edit .streamingsector files?
 
 ### Exclusivity&#x20;
