@@ -238,6 +238,10 @@ You can see that inside the .mesh file (which you can see in the component's `de
 
 To hide those bits in the .app, we simply need to uncheck the corresponding boxes - check the previous screnshot!
 
+## Adding modded items
+
+For a step-by-step guide on how to add items from mods to your NPV, check [appearances-change-the-looks](../appearances-change-the-looks/ "mention") -> [#adding-items-from-mods](../appearances-change-the-looks/#adding-items-from-mods "mention")!
+
 ## Hair
 
 This section will teach you how to add another hair mesh to your NPV. We will first remove the default hair, then replace it with the one you want.
@@ -247,7 +251,7 @@ To use modded hair, find the correct files [inside the mod](../../analysing-othe
 
 If you want to look up in-game hairs, check [hair.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
 
-For more&#x20;
+For more information on **hair files**, check the [basic-hairstyle-replacement-tutorial.md](../guides-all-about-hair/basic-hairstyle-replacement-tutorial.md "mention")
 {% endhint %}
 
 1. Delete the current hair from the .app — there should be 2-3 components, their names will start with either `hair_` or `hh_0`
