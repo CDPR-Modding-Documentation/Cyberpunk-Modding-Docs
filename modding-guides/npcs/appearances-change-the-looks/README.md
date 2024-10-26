@@ -26,7 +26,7 @@ You can find a more detailed guide under [altering-appearances-within-wolvenkit-
 * If you want to add AMM appearances to existing NPCs, check [amm-custom-npc-appearances.md](../amm-custom-npcs/amm-custom-npc-appearances.md "mention")
 * If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/ "mention")
 * If you want a more basic guide that goes into more detail for the basic stuff (including Blender), see [altering-appearances-within-wolvenkit-full-workflow.md](altering-appearances-within-wolvenkit-full-workflow.md "mention")
-* If you're after hair colours, check [Broken link](broken-reference "mention") and follow the links from there.
+* If you're after hair colours, check [hair-profiles-.hp.md](../../../for-mod-creators-theory/files-and-what-they-do/materials/hair-profiles-.hp.md "mention") and follow the links from there.
 
 ***
 
