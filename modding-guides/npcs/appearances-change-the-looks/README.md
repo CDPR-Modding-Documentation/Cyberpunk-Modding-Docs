@@ -190,7 +190,7 @@ Look for `w/m` to indicate gender, and `base_body` to indicate the body mod.
 ### Adding the .mesh to the appearance
 
 {% hint style="info" %}
-This works for simple components. Anything more complicated with physics (.anim or .rig), you should ~~steal~~copy from an `.ent` file inside the mod!
+This works for simple components. Anything more complicated with physics (.anim or .rig), you should ~~steal~~copy from an `.ent` file inside the mod (see the previous section, [#safely-adding-components](./#safely-adding-components "mention"))
 {% endhint %}
 
 1. Open your NPC's .app file
@@ -200,14 +200,15 @@ This works for simple components. Anything more complicated with physics (.anim 
 <figure><img src="../../../.gitbook/assets/image (542).png" alt=""><figcaption></figcaption></figure>
 
 4. Select the new component. In the panel on the right, change the following properties:
-   1. mesh -> DepotPath: relative path to your mesh\
+   1. `mesh` -> `DepotPath`: relative path to your mesh\
       `tutorial\npv\your_female_character\feet\s1_converse\s1__pwa__converse.mesh`\
       You can right-click on the .mesh file in the project browser and select `copy relative path`
-   2. mesh -> meshAppearance: the appearance that you did not delete during cleanup\
+   2. `mesh` -> `meshAppearance`: the appearance that you did not delete during cleanup\
       e.g. `black`\
       You find this in the `appearances` array inside the `.mesh` file
-   3. name: a unique name that identifies your component. \
+   3. `name`: a unique name that identifies your component. \
       _You should get into the habit of using_ [_garment prefixes_](../../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/#component-prefixes)_, as they come in handy for clothing items._
+   4. `chunkMask`: Extend the dropdown and make sure that [the submeshes](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes) you want are visible (just check the boxes for 0-11 if you're not sure)
 
 <figure><img src="../../../.gitbook/assets/image (543).png" alt=""><figcaption></figcaption></figure>
 
