@@ -16,7 +16,7 @@ You can find a more detailed guide under [altering-appearances-within-wolvenkit-
 **It uses the following versions:**
 
 * Cyberpunk 2077 game version >= 1.6
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.7.1-nightly.2022-11-04
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.15 (some of the UI elements will be missing in older versions)
 * (only if you want to add new appearances) [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) >= 1.15
 
 ## Wait, this isn't what I want!
