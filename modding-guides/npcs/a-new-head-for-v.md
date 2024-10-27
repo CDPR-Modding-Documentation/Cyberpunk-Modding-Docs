@@ -98,7 +98,7 @@ Each mesh in your .blend file needs a `Surface Deform` modifier that binds it to
 Make sure that `sculptme` is still selected in the Outliner - the script will target the wrong mesh if it isn't.
 {% endhint %}
 
-1. The script you need is [add\_surface\_deform.py](https://github.com/manavortex/cyberpunk2077/blob/master/python/sculpting\_convenience/add\_surface\_deform.py) from mana's github.&#x20;
+1. The script you need is [add\_surface\_deform.py](https://github.com/manavortex/cyberpunk2077/blob/master/python/sculpting\_convenience/surface\_deform/add\_surface\_deform.py) from mana's github.&#x20;
 2. Follow the [blender-running-python-scripts.md](../../for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md "mention") guide with that script, then come back here.
 3. After clicking play, all meshes but `sculptme` will now have a `surface deform` modifier:
 
@@ -121,7 +121,7 @@ You can use the **sculpt mode** to change the shape of `sculptme`  until you're 
 
 This guide won't go into details (yet), except to tell you that the `Elastic Deform` tool is your best friend here. Check [mesh-sculpting-techniques](../../for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques/ "mention") for tips and tricks how to go about this.
 
-<figure><img src="../../.gitbook/assets/mesh_sculpting_guide_safe_to_sculpt.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/mesh_sculpting_guide_safe_to_sculpt.png" alt="" width="375"><figcaption></figcaption></figure>
 
 ## Step 4: Exporting from Blender
 
@@ -139,7 +139,7 @@ Fortunately, you can do this by script as well.
 
 ### 4.1  Applying the surface deform
 
-1. Find [apply\_surface\_deform.py](https://github.com/manavortex/cyberpunk2077/blob/master/python/sculpting\_convenience/apply\_surface\_deform.py) on mana's github
+1. Find [apply\_surface\_deform.py](https://github.com/manavortex/cyberpunk2077/blob/master/python/sculpting\_convenience/surface\_deform/apply\_surface\_deform.py) on mana's github
 2. Follow the [blender-running-python-scripts.md](../../for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md "mention") guide with that script, then come back here.
 3. After clicking the play button, the Surface Deform modifier will now be gone, and your mesh will have changed shape for good.
 
