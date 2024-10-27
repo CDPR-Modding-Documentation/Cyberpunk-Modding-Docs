@@ -3,7 +3,7 @@
 ## Summary
 
 **Published:** ?? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** September 17 2024 by AllKnowingLion\
+**Last documented update:** October 26 2024 by AllKnowingLion\
 **Minimum required ArchiveXL version:** 1.5
 
 This page explains how to enable **body mod support** in ArchiveXL:
@@ -190,5 +190,6 @@ Use only one main archive! \[[#\_nim\_more\_body\_meshes\_Gymfiend\_patch.archiv
 | [Hyst's Big Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/4654)                | EBBRB    | `&body=ebbrb`      |
 | [Hyst's Big Push Up Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/9083)        | EBBPRB   | `&body=ebbprb`     |
 | [Gymfiend](https://www.nexusmods.com/cyberpunk2077/mods/6423)                               | Gymfiend | `&body=gymfiend`   |
-| [Adonis](https://www.nexusmods.com/cyberpunk2077/mods/4968)                                 | Adonis   | `&body=adonis`     |
+| [-KS- Adonis](https://www.nexusmods.com/cyberpunk2077/mods/4968)                            | Adonis   | `&body=adonis`     |
 | [Na's Flat Chest](https://www.nexusmods.com/cyberpunk2077/mods/6883)                        | Flat     | `&body=flat`       |
+| [-KS- Atlas](https://www.nexusmods.com/cyberpunk2077/mods/8766)                             | Atlas    | `&body=atlas`      |
