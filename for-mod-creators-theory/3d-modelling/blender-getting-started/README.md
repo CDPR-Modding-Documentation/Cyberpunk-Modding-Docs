@@ -50,9 +50,8 @@ Read [#navigating-the-viewport](./#navigating-the-viewport "mention") for how to
 7. The most recently selected thing is called **`Active`** (this shows up in many context menus)
    * The **Select Circle** tool does not set an **Active** selection.
 8. You can toggle **X-Ray mode** (Shortcut: `Alt+Z`) by clicking the purple icon in the screenshot above
-9.  You can hide things (Shortcut: `H`), Unhide them (Shortcut: `Alt+H`), or hide everything else (Shortcut: `Shift+H`)
-
-
+9. You can hide things (Shortcut: `H`), Unhide them (Shortcut: `Alt+H`), or hide everything else (Shortcut: `Shift+H`)
+10. You can undo your last action (Shortcut: `Ctrl+Z`), and redo an action (Shortcut: `Ctrl+Shift+Z`)
 
 ### Navigating the viewport
 
