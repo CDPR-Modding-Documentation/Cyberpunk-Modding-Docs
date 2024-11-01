@@ -37,7 +37,7 @@ Using any modeling method you like, create a so called grid surface. This should
 **Core concept:** Keep the poly count low. The less 'control points' you have, the easier it is to control the object. \
 &#x20;
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption><p>A correct grid surface</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption><p>A correct grid surface</p></figcaption></figure>
 
 <details>
 

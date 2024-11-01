@@ -166,13 +166,13 @@ Look for `w/m` to indicate gender, and `base_body` to indicate the body mod.
 
 4. Move them to a custom path (you don't want them to interfere with the original modded files)
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (540).png" alt=""><figcaption></figcaption></figure>
 
 ### Clean up the .mesh
 
 1. Before adding the necessary dependencies, delete all **appearances** from the .mesh file that you don't want:
 
-<figure><img src="../../../.gitbook/assets/image (540).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (540) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. From the `Clean up` menu, use `Delete unused Materials`
 3. Save the file

@@ -51,7 +51,7 @@ base\characters\head\player_base_heads\appearances\hairs
 * No (right):  Proceed to [#files-without-an-.app-file](replace-a-hair-mods-slot.md#files-without-an-.app-file "mention")
 * Everything is in the root, and you have no idea which is which:[#files-a-bunch-of-borked-files-in-your-projects-root](replace-a-hair-mods-slot.md#files-a-bunch-of-borked-files-in-your-projects-root "mention")
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Files: A bunch of borked files in your project's root
 
@@ -135,7 +135,7 @@ You're done here! Proceed to [#pack-n-go](replace-a-hair-mods-slot.md#pack-n-go 
 
 The modder has overwritten the hair's **control files**. It should look like this (subfolder names can vary):
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 This is good news, because it's the easy case. You only need to do two things:
 
@@ -149,7 +149,7 @@ Let's get started.
    `hh_003_pwa__hairs_89 > .app`
 3. Add all these files to your project:
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
 
 Now, we need to overwrite all these files with the ones from our other mod.
 
