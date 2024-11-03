@@ -113,7 +113,7 @@ You can use the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-
 
 #### Option 1: Fuck those bones: Python
 
-You can find a [Python script on mana's github](https://github.com/manavortex/cyberpunk2077/blob/master/python/armature\_delete\_unused\_bones.py) that will drop unused bones and vertex groups. Run it in Blender's Scripting Perspective with your armature&#x20;
+You can find a [Python script on mana's github](https://github.com/manavortex/cyberpunk2077/blob/master/python/armature\_cleanup/armature\_delete\_unused\_bones.py) that will drop unused bones and vertex groups. Run it in Blender's Scripting Perspective with your armature&#x20;
 
 #### Option 1: Fuck those bones: Noesis
 
