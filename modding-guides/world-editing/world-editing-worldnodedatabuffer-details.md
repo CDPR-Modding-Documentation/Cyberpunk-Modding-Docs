@@ -1,4 +1,4 @@
-# World Editing: worldNodeData details
+# World Editing: worldNodeDataBuffer details
 
 You can find some info in **`<Cyberpunk 2077>\tools\redmod\metadata.json`**&#x20;
 
@@ -6,6 +6,7 @@ the actual class name of `worldNodeData` is `worldCompiledNodeInstanceSetupInfo`
 
 the actual fields names are:&#x20;
 
+* `QuestPrefabRefHash`is `globalNodeId` (it can be created in nodeRefs block or reused already existing)
 * `MaxStreamingDistance` is `secondaryRefPointDistance`
 * `UkFloat1` is `streamingDistance`&#x20;
 * `Pivot` is `secondaryRefPointPosition`&#x20;
