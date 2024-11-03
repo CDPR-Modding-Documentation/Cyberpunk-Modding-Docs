@@ -4,53 +4,37 @@ description: Editing the world of Cyberpunk
 
 # 🌐 World Editing
 
-This page will give you an overview on how to edit the world of Cyberpunk 2077. &#x20;
+This page will introduce you to the very basic structure of the world and the necessary tools to effectively modify the surroundings to your liking.
 
-For its collection of **guides**, see the child pages in the wiki's navigation tree or click on "Next" at the foot of the page.
+### World Structure
 
-* For a guide on how to find the correct streamingsector, see [places.md](../../for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/places.md "mention")
-* For a list of ineresting sectors on this wiki, see [reference-world-sectors](../../for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/ "mention")
-
-## How to change the world?
-
-Rather than blowing up Arasaka Tower or trying to become bomb, we're using [archivexl](../../for-mod-creators-theory/core-mods-explained/archivexl/ "mention") to edit the contents of [.streamingsector](../../for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/) files.&#x20;
+The world of Cyberpunk2077 consists of nodes, which can represent pretty much anything from visible meshes, collision, lights, effects to sounds, areas dictating where NPCs can spawn and more. These are grouped together into streamingsectors which are packed inside the archive files of the game - meaning not directly editable without creating massive conflicts due to how mods modifying the same resources get handled.
 
 {% hint style="info" %}
-Under [the-whole-world-.streamingsector](../../for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/ "mention"), you can find an explanation of how cyberpunk handles world sector Level of Detail (LOD).
+More detailed information can be found here:
+
+[The whole world: .streamingsectors](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector)
+
+[Sectors of Interest](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors)
+
+[Node Types](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/reference-.streamingsector-node-types)
+
+[Mod Load Order](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order)
 {% endhint %}
 
-### Why shouldn't we edit .streamingsector files?
+### Tools You Will Need
 
-### Exclusivity&#x20;
+* **ArchiveXL (**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/4198)**|**[**Wiki**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/core-mods-explained/archivexl)**):** Is a framework mod that allows modifying and adding resources in a non exclusive, non destructive way. In this context it handles the node removal, addition of custom sectors and includes checks to ensure that the node you're trying to remove is the one present in game.
+* **RedHotTools (**[**GitHub**](https://github.com/psiberx/cp2077-red-hot-tools)**|**[**Wiki**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/modding-tools/redhottools)**):** Allows for inspection of nodes and objects at runtime, providing you details like nodetype, nodeinstance, the sectorpath and more.
 
-In Cyberpunk modding, files can only be edited by **one mod at a time**, and that mod will be [the first to reach the file](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order). Once you have added a file to your .archive, nobody else can edit it.
+{% hint style="info" %}
+Instructions on how to find locations using RHT can be found [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/places).
+{% endhint %}
 
-### Compatibility
-
-Sector files often change between game versions. Your edited sector file won't know and won't care, so it will overwrite the updated file nonetheless. (See for yourself - try a pre-2.0 version from one of [mana's Apartment Overhauls](https://www.nexusmods.com/users/1630319?tab=user+files) and watch everything explode).
-
-ArchiveXL will modify sectors only if the **number of expected nodes** matches the number of total nodes in the sector. On top of that, for each node affected, a type has to be specified - so if CDPR sneakily switches out one of the nodes that you've been deleted for something else, AXL will notice and refuse to implement your sector modification.
-
-## So how do I actually do it?
-
-Create an `.xl` file in your [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)'s resources folder. It has to contain the following structure:
-
-```yaml
-streaming:
-  sectors:
-    # an array of sectors, there can be multiple entries
-    - path: your\path\from\red_hot_tools\ex_in_terior_99_99_0_0-streamingsector
-      expectedNodes: 999
-      nodeDeletions:
-        # an array of nodes, ordered by type
-        - index: 0
-          type: worldNodeType
-        - index: 1
-          type: worldOtherNodeType
-      # nodeAdditions:
-        # to do: this needs to be documented
-```
-
-ArchiveXL will load that file from your game's mod folder and apply the modifications for you.
-
-For more detailed information, see the nested guides, e.g. [world-editing-deleting-objects.md](world-editing-deleting-objects.md "mention")
+* **entSpawner (**[**GitHub**](https://github.com/justarandomguyintheinternet/CP77\_entSpawner)**):** Handles the spawning of objects that can then be converted into standalone streamingsectors. It has access to all game assets and AMM prop packs installed.
+* **removalEditor (**[**GitHub**](https://github.com/justarandomguyintheinternet/CP77\_removalEditor)**):** Integrates with RedHotTools to allow easily creating node removal files for ArchiveXL.
+* **Wolvenkit (**[**GitHub**](https://github.com/WolvenKit/WolvenKit)**|**[**Wiki**](https://wiki.redmodding.org/wolvenkit)**):** Comprehensive mod creator, allows finding more detailed information about nodes e.g. finding their actors. Includes scripts to [remove occlusion nodes](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/world-editing/removing-occlusion), adding custom streamingsectors from entSpawner, adding resources like custom meshes and much more.
+* **Blender (**[**Site**](https://www.blender.org/download/)**|**[**Wiki**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/3d-modelling/blender-getting-started)**):** 3D modeling software that enables creating custom assets that aren't already in the game.
+* **FreeFly (**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/780)**|**[**Github**](https://github.com/justarandomguyintheinternet/CP77\_FreeFly)**):** Enables quick and easy traversal the map and getting to places you normally wouldn't be able to, includes noclip.
+* All mods that these mods require to function.
+* It is highly recommended to join the [redmodding discord](https://discord.gg/redmodding) to stay up to date on new techniques and tools.
