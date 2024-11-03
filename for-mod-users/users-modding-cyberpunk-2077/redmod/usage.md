@@ -68,19 +68,7 @@ You can handle deployment and load order with
 
 ## Activating mods
 
-### **GOG Galaxy**
-
-* Open GOG - _Cyberpunk 2077_
-* Click **Manage Installation** -> **Configure ...**
-* Open the **Features** Tab
-* Select **Enable mods**
-* Click **OK**
-* Play the game
-* A window will open showing progress on mod deployment.
-
-<figure><img src="../../../.gitbook/assets/redmod_gog.png" alt=""><figcaption></figcaption></figure>
-
-### **Steam** and **Epic**
+### **GOG, Steam** and **Epic**
 
 * Navigate to _Cyberpunk 2077_
 * Click **Play**
@@ -109,7 +97,7 @@ However, you can specify a load order with REDmod, which the game will respect.
 
 If a REDmod is giving you trouble, you can force a redeploy by either of the following means:
 
-1. Either of
+1. Either
    1. Delete the content of `r6/cache/modded` in your Cyberpunk directory
 2. or
    1. Uninstall the mod
@@ -124,7 +112,7 @@ If that doesn't do it, you can consult the [troubleshooting guide](usage.md#trou
 
 ### Deploying Mods - Automatically
 
-REDMod's redeploy is triggered on either of these changes:
+REDMod's redeploy is triggered on any of these changes:
 
 * **mods change**: You added or removed a mod
 * A mod's **version** changes: The version number in the `info.json` was changed.

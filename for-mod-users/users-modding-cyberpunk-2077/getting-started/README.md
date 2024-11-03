@@ -112,10 +112,15 @@ Once the game has installed, we want to make it run with mods. Click the button 
 From there, select "Manage Installation" and then "Configure". A window will pop up where you can change your desired settings:
 
 * Installation (first tab): Disable auto-updates
-* Features (second tab): Enable mods
 * DLC (third tab): Select at least Cyberpunk 2077 REDMod
 
-<figure><img src="../../../.gitbook/assets/image (197).png" alt=""><figcaption><p>You may select any additional settings you like, but these are the minimum recommended options.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/CP2077 Modding Guide GOG Setup Merged Image.png" alt=""><figcaption><p>You may select any additional settings you like, but these are the minimum recommended options.</p></figcaption></figure>
+
+Click the OK button to return to the game's page.
+
+* Click **Play** on the game's page
+* Click the **Settings** button and **Enable mods**
+* Click **Play** (Do not skip this)
 
 That's it, you are done with your install of the game! You can now move on to [installing Vortex](vortex-mod-manager.md).
 

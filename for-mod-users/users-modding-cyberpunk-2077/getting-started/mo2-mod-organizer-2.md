@@ -42,7 +42,7 @@ CET and Red4Ext have to be either **installed manually or with root builder**
 ### **Installing Mods from Nexus** <a href="#installing-mods-from-nexus" id="installing-mods-from-nexus"></a>
 
 1. Go to the Nexus Mods website for Cyberpunk 2077 mods.
-2. Download mods via the "Mod Manager Download" button. MO2 will start to automaticlly download the mod.
+2. Download mods via the "Mod Manager Download" button. MO2 will start to automatically download the mod.
 3. In MO2, open the **Downloads** tab and double-click the mod to install it.
 4. After installation, ensure the mod is enabled by checking it in the **Plugins** list or the **Installed Mods** section.
 
