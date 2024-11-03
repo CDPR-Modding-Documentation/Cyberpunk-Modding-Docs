@@ -53,7 +53,7 @@ Create `.questphase` `.streamingblock` and `.streamingsector` files&#x20;
 
     **Important**:\
     \- In the `Node/area/entriesData` we specify an `entryName/phaseName/spotId(AiSpoNodeHash)` so in the future, we can `Activate/Reactivate/Deactivate` its entities by these params\
-    \- `sourceObjectId` it's a hash for your `worldCompiledCommunityAreaNode`&#x20;
+    \- `sourceObjectId` - it should match `id`of registry item
 5.  Create `worldCommunityRegistryNode` and its `worldNodeData`&#x20;
 
     <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
