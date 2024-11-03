@@ -81,7 +81,7 @@ Cyberpunk 2077 offers limited out-of-the-box support via REDmod. To allow greate
 Since this kind of mod interacts with the game's executable (`.exe`), they will break every time CDPR updates.&#x20;
 
 This is the reason why game updates break mods — we recommend to [**turn off auto-update**](users-downgrading-preventing-auto-updates.md) and only update your game once it's safe. \
-After each patch, you can find a post on our [Discord](https://discord.com/channels/717692382849663036/787431377809178624) that is kept up-to-date as the modders update their tools.
+After each patch, you can find a post on our [Discord](https://discord.gg/redmodding) that is kept up-to-date as the modders update their tools.
 {% endhint %}
 
 ### Overview of mod folders
