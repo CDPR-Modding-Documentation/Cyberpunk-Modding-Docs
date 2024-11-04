@@ -52,10 +52,18 @@ To make sure that it's only used for shadow generation, check the `renderMask`:
 
 <figure><img src="../../../.gitbook/assets/mesh_shadow_render_mask.png" alt=""><figcaption></figcaption></figure>
 
-Creating shadow meshes
+## Creating shadow meshes
 
 To create a low-poly mesh, you can build a cage, subdivide it a few times and use a **Shrinkwrap** **modifier** to shape it like your mesh. Then, you can reduce the poly count by **decimating**.
 
 
 
 {% embed url="https://www.youtube.com/watch?v=nlrs5dWttPU" %}
+
+## Troubleshooting
+
+### My shadow mesh is always visible!
+
+Check [#configuring-a-shadow-mesh](meshes-shadows-and-shadow-meshes.md#configuring-a-shadow-mesh "mention") and make sure that `RenderInScene` is unchecked.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>The shadow is a marshmallow</p></figcaption></figure>
