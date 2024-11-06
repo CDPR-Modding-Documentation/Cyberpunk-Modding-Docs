@@ -195,63 +195,44 @@ Click on the three dots next to "Launch Game with REDmods Enabled" and set it as
 
 "REDmod Deploy Latest Load Order" is also incredibly useful if your mods are acting up: Just using the "deploy" button on the main management page can fail – by using this button, you can debug your REDmod deployment.
 
+***
+
 ## Installing mods
 
 This section will teach you how to install mods. Keep reading!
-
-### Installing collections
-
-You're almost to the mod page, but first, you need to _get_ some mods. We'll now show you how to install a collection.
 
 {% hint style="danger" %}
 You can browse different mod collections [on Nexus,](https://next.nexusmods.com/cyberpunk2077/collections) but caution: collections can be **outdated** or **abandoned**. To make sure that a collection works with the current game version, check its comments - if they are full of complaining people, it doesn't.
 {% endhint %}
 
-1. Click on "Collections" in the sidebar
-2. Select "Discover more collections."&#x20;
-3. Wait until the selection page pops up.
-4. Select [Core Mods](https://next.nexusmods.com/cyberpunk2077/collections/r1flnc) and click "Add to Vortex".
+### Installing the core mods
 
-This will open a window in Vortex, with the thumbnail and name of the collection, which profile you want to install it to if enabled, and any additional install instructions.&#x20;
+The following mods are **requirements** for many other Cyberpunk mods. We recommend that you install their latest version and keep them up-to-date, since you will run into them sooner or later.
 
-<figure><img src="../../../.gitbook/assets/Vortex_hZAXUVC7qm.png" alt=""><figcaption><p>Collection installation confirmation window</p></figcaption></figure>
+* [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107)
+* [RED4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
+* [redscript](https://www.nexusmods.com/cyberpunk2077/mods/1511)
+* [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198)
+* [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197)
+* [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780)
 
-5. Click "Install Now": This collection has no extra instructions.
-6. You will get a new window for the first mod: click the "Download" button
+Some mods that depend on **redscript** may say they require [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176), but it's unnecessary to install since **RED4ext** performs the same functionality and then more. It only still exists for users who wish to use **redscript** and **REDmod** mods at the same time, but not use RED4ext.
 
-<figure><img src="../../../.gitbook/assets/Vortex_z6cbRYDivW.png" alt=""><figcaption><p>The download window for a mod in the collection.</p></figcaption></figure>
-
-7. The Nexus "Slow/Fast" download button for the corresponding version will open. The correct version has been picked by the mod author.
-8. Click "Slow Download" (unless you're a premium user)
-9. Rinse and repeat this process until you have all mods in the collection.
+For more information on the core mods, check [core-mods-explained](../../../for-mod-creators-theory/core-mods-explained/ "mention")
 
 {% hint style="danger" %}
-Check if you have an up-to-date version of the **core mods**. Outdated collections can include earlier versions. If you update them, there's a good chance that everything will work.\
-Find a full list here: [core-mods-explained](../../../for-mod-creators-theory/core-mods-explained/ "mention")
+Check if you have an up-to-date version of the **core mods**. Outdated collections can include earlier versions. If you update them, there's a good chance that everything will work.
 {% endhint %}
 
-{% hint style="info" %}
-As this is a collection, each mod will – regardless of our settings – be installed as its downloaded. As they deploy, you will see a screen pop up with a lot of code flowing by. Don't worry, this is just Vortex deploying your REDmods.
+{% hint style="success" %}
+The game should always be able to launch with just the core mods enabled. If it doesn't, head over to the [troubleshooting page](../../user-guide-troubleshooting/#your-game-is-crashing) and make sure that you can launch and start a new game.
 {% endhint %}
+
+### Starting up the game
 
 Before you play your game, check the bell in the top right corner next to your profile picture. Click it to expand the notifications. What you want to see is all green or blue--any red or orange issues will need to be resolved before starting your game.
 
 <figure><img src="../../../.gitbook/assets/Vortex_2aNCohYP9o.png" alt=""><figcaption><p>Notifications are ordered with most recent at the top--which means there was a successful REDmod deployment notification AFTER the failure, so the failure can be safely dismissed.</p></figcaption></figure>
-
-At this point, assuming your notifications are all green or blue, you can go on to the next step: updating your just installed mods.&#x20;
-
-### Updating your mods
-
-The collection you just installed might not have the latest versions of all mods, so let's make sure you have those. Click the Check for updates button in the orange Vortex toolbar, and it will begin checking each mod for updates. If it finds any, download these by clicking the little cloud icon with an arrow in it next to the name. To make it easier to find updates, you can set the Version filter to update available.\
-![check for updates](<../../../.gitbook/assets/image (473).png>) <img src="../../../.gitbook/assets/image (474).png" alt="version filter" data-size="original">
-
-After you have updated everything, hit the Deploy Mods button in the orange toolbar. You can now safely play your game. However, you won't notice many changes, as the framework mods aren't doing much on their own...
-
-### Starting up the game
-
-{% hint style="success" %}
-The game should always launch with just the core frameworks enabled. If it doesn't, head over to the [troubleshooting page](../../user-guide-troubleshooting/#your-game-is-crashing) and make sure that you can launch and start a new game.
-{% endhint %}
 
 Since this is your first time launching the game with mods, you should see a prompt to bind an overlay key for **Cyber Engine Tweaks** (CET). (If it does not, check [here](../../user-guide-troubleshooting/#mod-isnt-working-cet).) You can assign whatever you like, this button will hide or unhide the CET overlay.
 
@@ -260,19 +241,6 @@ Since this is your first time launching the game with mods, you should see a pro
 Make sure to click save to keep your choices.
 
 <figure><img src="../../../.gitbook/assets/Cyberpunk2077_D4HpeyOrll.png" alt=""><figcaption><p>CET overlay on the main menu screen on the Settings option.</p></figcaption></figure>
-
-## Installing the core mods
-
-The following mods are **requirements** for many other Cyberpunk mods. We recommend that you install their latest version and keep them up-to-date, since you will run into them sooner or later, and the developers always (September 2025) keep them up-to-date.
-
-* [RED4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
-* [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198)
-* [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197)
-* [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780)
-* [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107)
-* [redscript](https://www.nexusmods.com/cyberpunk2077/mods/1511)
-
-For more information on the core mods, check [core-mods-explained](../../../for-mod-creators-theory/core-mods-explained/ "mention") (you don't need to know that for this guide). For each of these mods, follow the next section: [#downloading-a-mod-with-mod-manager-download-enabled](vortex-mod-manager.md#downloading-a-mod-with-mod-manager-download-enabled "mention")
 
 ### Downloading a mod with Mod Manager Download enabled
 
