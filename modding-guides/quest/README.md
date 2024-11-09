@@ -10,5 +10,7 @@
 
 ### [How to remove an Animation (and Replace It)](how-to-remove-an-animation-and-potentially-replace-it.md)
 
+### [How to use worldCommunityRegistry and worldCompiledCommunity](how-to-use-worldcommunityregistry-and-worldcompiledcommunity.md)
+
 <figure><img src="../../.gitbook/assets/Type=Up.png" alt=""><figcaption></figcaption></figure>
 
