@@ -7,7 +7,7 @@ description: 'Step 1: How to generate your V''s custom head mesh'
 ## **Summary**
 
 **Published: May 13 2023 by @manavortex**\
-**Last documented update: Jan 04 2024**
+**Last documented update: Nov 09 2024 by** [Sh00kspeared](https://app.gitbook.com/u/pLUiO9EK9NgxqLuozrAjU1uMiPx2 "mention")
 
 This page is a part of the [NPV guide](./). It will show you how to create your V's **head** in Blender. If you want to load your head back into Cyberpunk, note that you aren't changing anything in the files itself — that will come in [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention").&#x20;
 
@@ -15,11 +15,15 @@ We will not be dealing with the body, this is part of the next section as well.
 
 If you want a 3d model, you probably know what you're doing; in that case, make sure to run the script and get the shape right, then go wild.
 
+{% hint style="info" %}
+If you prefer **video instructions** over written ones, please check out[ ](https://www.youtube.com/watch?v=f9KWa\_qJDUo\&t=743s)[this tutorial](https://www.youtube.com/watch?v=f9KWa\_qJDUo\&t=743s) by Wouldiwas Sh00kspeared (Nov 2024).
+{% endhint %}
+
 ### Prerequisites
 
 * [ ] You have downloaded the prepared Wolvenkit Project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328)
 * [ ] You have [Blender](https://www.blender.org/download/) installed \
-  _(confirmed working on 3.5.1, 3.6 and 4.0)_
+  _(confirmed working on 4.1 and 4.2)_
 * [ ] You have the Wolvenkit Blender Plugin (you won't be able to export otherwise). Check [installing-the-wolvenkit-blender-plugin](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/ "mention") if you don't.
 
 In this section, we will be moving/deleting files. You can complete these steps in Wolvenkit or in the Windows File Explorer.
