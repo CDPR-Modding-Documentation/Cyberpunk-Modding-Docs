@@ -383,6 +383,7 @@
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/quest/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
   * [How to Remove an Animation (and Potentially Replace It)](modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
   * [How to use worldCommunityRegistry and worldCompiledCommunity](modding-guides/quest/how-to-use-worldcommunityregistry-and-worldcompiledcommunity.md)
+  * [How to open garage doors](modding-guides/quest/how-to-open-garage-doors.md)
 * [🛍️ Everything else](modding-guides/everything-else/README.md)
   * [How to Translate a Mod](modding-guides/everything-else/how-to-translate-a-mod.md)
   * [Custom Loading Screens](modding-guides/everything-else/custom-loading-screens.md)

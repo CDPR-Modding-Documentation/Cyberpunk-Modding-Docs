@@ -12,5 +12,7 @@
 
 ### [How to use worldCommunityRegistry and worldCompiledCommunity](how-to-use-worldcommunityregistry-and-worldcompiledcommunity.md)
 
+### [How to open garage doors](./#how-to-open-garage-doors)
+
 <figure><img src="../../.gitbook/assets/Type=Up.png" alt=""><figcaption></figcaption></figure>
 
