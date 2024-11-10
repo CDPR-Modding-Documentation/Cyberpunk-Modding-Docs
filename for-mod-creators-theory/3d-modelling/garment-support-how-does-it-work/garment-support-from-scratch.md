@@ -4,26 +4,30 @@ description: Adding garment support to a mesh that doesn't have it
 
 # Garment support from scratch
 
-#### Summary
+## Summary
 
-Created on: 29. 12. 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Created on: 29. 12. 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Last documented update: Nov 10 by [Martin Blecker](https://app.gitbook.com/u/uTg0IPgQKfba7RsC4EVdUSMuJqv2 "mention") and [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide uses the following versions:
+This guide will teach you how to add garment support to a mesh that doesn't have any.
 
-* Wolvenkit >= 8.11.2 ([Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) | [Stable](https://github.com/WolvenKit/Wolvenkit/releases))
-* Wolvenkit Blender IO Suite >= [1.5.1](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases)
-* Blender [4.0](https://www.blender.org/download/releases/4-0/) (3.6 should work as well)
+### Wait, that's not what I want!
 
-#### Difficulty
+* To learn what garment support is, check [.](./ "mention")
+* For general Blender editing tips, check [blender-getting-started](../blender-getting-started/ "mention")
+
+### Difficulty
 
 You should know what [garment support does](./), because it won't be explained here.
 
-This guide assumes that you know your way around in Wolvenkit. If you don't and you want to mess with this, kudos — I salute your frustration tolerance. In this case, the wiki's search function will be your new best friend.
+This guide assumes that you know your way around in WolvenKit. If you don't and you want to mess with this, kudos — I salute your frustration tolerance. In this case, the wiki's search function will be your new best friend.
 
 ## Prerequisites
 
-* [ ] a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
-* [ ] one or more [meshes as .glb](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes)
+* [ ] A [WolvenKit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
+* [ ] One or more [meshes as .glb](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes)
+
+<table><thead><tr><th width="180"></th><th width="179"></th><th></th></tr></thead><tbody><tr><td>Wolvenkit<br><a href="https://github.com/WolvenKit/Wolvenkit/releases">Stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a></td><td>>= 8.15 </td><td>You can't make mods without Wolvenkit</td></tr><tr><td><a href="https://www.blender.org/download/releases">Blender</a></td><td>>= 4.2</td><td>3d editing software</td></tr><tr><td><a data-mention href="../../modding-tools/wolvenkit-blender-io-suite/">wolvenkit-blender-io-suite</a></td><td>>= 1.6.0 (download tags <a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/tags">here</a>)</td><td>The Wolvenkit Blender Addon. You can't import/export to Blender without it.</td></tr></tbody></table>
 
 ## Step 0: export and join the base
 
@@ -46,20 +50,20 @@ base\characters\common\player_base_bodies\player_female_average\t0_000_pwa_base_
 
 ```
 # default head
-base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\h0_000_pwa_c__basehead.mesh
+base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\h0_000_pma_c__basehead.mesh
 # arms
-base\characters\common\player_base_bodies\player_man_average\arms_hq\a0_000_pma_base_hq__full.mesh
+base\characters\common\player_base_bodies\player_man_average\arms_hq\a0_001_pma_base_hq__full.mesh
 # base body
 base\characters\common\player_base_bodies\player_man_average\t0_000_pma_base__full.mesh
 ```
 
 [Import](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender) all those meshes to Blender, then join them all into a single mesh:
 
-1. in the viewport, click anywhere to deselect everything
-2. press `A` to select everything visible again
+1. In the viewport, click anywhere to deselect everything
+2. Press `A` to select everything visible again
 3. Shift-click on something (e.g. the head) to deselect it
-4. shift-click again to re-select it (you need a most recent selection)
-5. press `Ctrl+J` to join all those meshes together
+4. Shift-click again to re-select it (you need a most recent selection)
+5. Press `Ctrl+J` to join all those meshes together
 
 Optional: Clean up
 
