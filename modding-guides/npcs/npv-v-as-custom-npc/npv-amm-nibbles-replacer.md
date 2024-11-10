@@ -109,7 +109,7 @@ In theory, yes. In practice, you'd have to edit both AMM and the Nibbles Replace
 1. For each appearance definition in In your photomode .app file, find the component with the name `face_rig`.
 2. Make sure that the `depotPath` is of the `graph` is set to the correct `.animgraph` depending on your body gender:
 
-<pre><code><strong>/base\animations\facial\_facial_graphs\player_woman_photomode_sermo.animgraph   
+<pre><code><strong>base\animations\facial\_facial_graphs\player_woman_photomode_sermo.animgraph   
 </strong>base\animations\facial\_facial_graphs\player_man_photomode_sermo.animgraph
 </code></pre>
 
@@ -181,7 +181,10 @@ If that isn't working, refresh the appearance:&#x20;
 3. Click the `Target Replacer` button
 4. In the `scan` tab or the target tools, assign a different appearance. You can switch back right away.
 
+### My NPV has no facial expressions!
 
+1. Verify that you've updated the graph.DepotPath with the correct animgraph
+2. Verify that you only have a single face\_rig component
 
 [^1]: Cyberpunk 2077\red4ext\plugins\ArchiveXL\ArchiveXL.log
 
