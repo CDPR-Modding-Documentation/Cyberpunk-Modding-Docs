@@ -23,7 +23,7 @@ _**\*Please make sure to always read any Terms of Use and to credit the creators
 {% hint style="info" %}
 A special thank you goes to everyone who spent the time creating these guides and resources! Kindly, let us know if there are wrong or missing credits assigned, and we will correct them.&#x20;
 
-If you want to contribute and/or, add links on this page - see more on [the-wiki.md](../../the-wiki.md "mention") !
+If you want to contribute and/or, add links on this page - see more on [the-wiki](../../the-wiki/ "mention") !
 {% endhint %}
 
 ## Modding Guides - Know-How

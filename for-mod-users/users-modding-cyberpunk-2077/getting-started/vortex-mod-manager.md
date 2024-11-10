@@ -57,9 +57,13 @@ If you can download it on your own, you can skip to the [Install](vortex-mod-man
 
 ## Installation
 
-Once you run the installer, you may get a prompt from Windows, asking you if you want to allow this app to make changes to your device. Select yes, and then Vortex will begin its install.
+{% hint style="info" %}
+This guide will assume that you install Vortex to `C:\Program Files\Black Tree Gaming Ltd\Vortex`. If you install it somewhere else, please adjust accordingly.
+{% endhint %}
 
-If you chose the custom install  location option, you will a prompt asking you where you would like to install Vortex to. Further instructions will assume an install location of `C:\Program Files\Black Tree Gaming Ltd\Vortex`
+1. Run the installer by double-clicking it.
+2. If Windows shows you a prompt now, select **yes** — you want the setup to make changes on your device, it's supposed to install Vortex.
+3. Click through the setup and finish its instructions!
 
 Congrats! You've finished installation! Vortex should launch automatically and you can now move onto setup.
 
@@ -122,7 +126,15 @@ This section tells you how to set the recommended settings in Vortex, grouped by
 
 Start by clicking "Settings" in the left sidebar of your Vortex Dashboard, then select the first tab.
 
-#### Interface
+#### Interface -> Customization
+
+This section controls how Vortex looks and behaves. If this is your first time using Vortex, just leave it at the defaults and scroll down to "`Automation`".
+
+#### Interface -> Advanced
+
+<figure><img src="../../../.gitbook/assets/vortex_interface_advanced.png" alt=""><figcaption></figcaption></figure>
+
+#### Interface -> Automation
 
 The settings here tell Vortex what to do with your mods as it gets them.&#x20;
 
@@ -148,7 +160,7 @@ This setting controls the automatic REDmod conversion. In general, **you do not 
 For an explanation of what that means, see [#mod-format-redmod-or-vanilla](../#mod-format-redmod-or-vanilla "mention")
 {% endhint %}
 
-This only has one setting: automatic REDmod conversions. You will want to turn it off.
+<figure><img src="../../../.gitbook/assets/Vortex_v2077_settings.png" alt=""><figcaption></figcaption></figure>
 
 #### Mods
 
@@ -160,12 +172,12 @@ This section controls Vortex file storage. It's mostly a matter of personal pref
 This folder
 
 * **must** be on the same drive as your game installation, or deploy will fail
-* &#x20;**must not** be your game install directory
+* **must not** be your [game install directory](../the-cyberpunk-2077-game-directory/)
 {% endhint %}
 
 Where Vortex keeps its mods, ready to deploy them into the Cyberpunk game directory.&#x20;
 
-The default folder location is `{USERDATA}{game}\mods`, which resolves to `C:\Users\YourUsername\AppData\Roaming\Vortex\cyberpunk2077\mods`
+The default folder location is `{USERDATA}\{GAME}\mods`, which resolves to `C:\Users\YourUsername\AppData\Roaming\Vortex\cyberpunk2077\mods`
 
 You can keep it as this, or you can make a folder for it in a place you can easily access it, like `C:\Games\Mods`. Wherever you decide, you want to make sure it is accessible and you can remember it in case of issue.
 

@@ -14,7 +14,7 @@ This page links to those guides on our wiki that involve tweak editing. For a co
 ***
 
 {% hint style="info" %}
-The list below has been created by hand. If you find anything that's missing here, please [sign up](../../the-wiki.md#how-to-edit) and start editing!
+The list below has been created by hand. If you find anything that's missing here, please [sign up](../../the-wiki/#how-to-edit) and start editing!
 {% endhint %}
 
 ## Working with existing items

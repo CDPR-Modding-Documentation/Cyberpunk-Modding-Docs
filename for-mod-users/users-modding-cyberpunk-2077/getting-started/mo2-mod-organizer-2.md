@@ -28,16 +28,24 @@ If you need further help with MO2 beyond this guide, feel free to ask for assist
    * These can be left unchecked unless you need profile-specific INI files, save games, or automatic archive invalidation.
    * You can change these settings later as needed.
 
-### Installing CET and Red4Ext (the Script extenders)
+### Installing CET and Red4Ext (the script extenders)
 
 {% hint style="warning" %}
-CET and Red4Ext have to be either **installed manually or with root builder**
+CET and Red4Ext have to be **installed manually**
 {% endhint %}
 
 #### Manually Install CET and RED4ext\*\*
 
 1. Download **Cyber Engine Tweaks (CET)** and **RED4ext** from Nexus Mods manually
 2. Install them by extracting their files to the game folder.
+
+<details>
+
+<summary>But what about Root Builder?!</summary>
+
+Both the developer of MO2 and the guy who wrote the Cyberpunk plugin do [not recommend](https://discord.com/channels/717692382849663036/788213273530335233/1300415018864742461) Root Builder. If it's working for you, feel free to keep using it, but this is **not** the advised option for new users.
+
+</details>
 
 ### **Installing Mods from Nexus** <a href="#installing-mods-from-nexus" id="installing-mods-from-nexus"></a>
 

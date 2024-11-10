@@ -111,40 +111,44 @@ Once the game has installed, we want to make it run with mods. Click the button 
 
 From there, select "Manage Installation" and then "Configure". A window will pop up where you can change your desired settings:
 
-* Installation (first tab): Disable auto-updates
-* DLC (third tab): Select at least Cyberpunk 2077 REDMod
+1. Installation (first tab): Disable auto-updates
+2. DLC (third tab): Select at least Cyberpunk 2077 REDMod
 
 <figure><img src="../../../.gitbook/assets/CP2077 Modding Guide GOG Setup Merged Image.png" alt=""><figcaption><p>You may select any additional settings you like, but these are the minimum recommended options.</p></figcaption></figure>
 
-Click the OK button to return to the game's page.
+3. Click the OK button to return to the game's page.
+4. Click **Play** on the game's page
+5. Click the **Settings** button and **Enable mods**
+   * If you can't enable mods, that means REDmod is not installed. Go back and repeat step 2.
+6. Click **Play** (Do not skip this)
 
-* Click **Play** on the game's page
-* Click the **Settings** button and **Enable mods**
-* Click **Play** (Do not skip this)
-
-That's it, you are done with your install of the game! You can now move on to [installing Vortex](vortex-mod-manager.md).
+{% hint style="success" %}
+That's it, you are done with your install of the game! You can now move on to [#starting-to-mod](./#starting-to-mod "mention")!
+{% endhint %}
 
 ### Configuring Cyberpunk: Steam
 
-* Navigate to _Cyberpunk 2077_
-* Click **Play**
-* Click the **Settings** button and **Enable mods**
-* Click **Play** (Do not skip this)
+1. Navigate to _Cyberpunk 2077_
+2. Click **Play**
+3. Click the **Settings** button and **Enable mods**
+   * If you can't enable mods, that means REDmod is not installed. Check the game's DLCs and make sure to get it.
+4. Click **Play** (Do not skip this)
 
-That's it, you are done with your install of the game! You can now move on to [installing Vortex](vortex-mod-manager.md).
+{% hint style="success" %}
+That's it, you are done with your install of the game! You can now move on to [#starting-to-mod](./#starting-to-mod "mention")!
+{% endhint %}
 
 ### Configuring Cyberpunk: Epic
 
-To be done
+1. Navigate to _Cyberpunk 2077_
+2. Click **Play**
+3. Click the **Settings** button and **Enable mods**
+   * If you can't enable mods, that means REDmod is not installed. Check the game's DLCs and make sure to get it.
+4. Click **Play** (Do not skip this)
 
-* Navigate to _Cyberpunk 2077_
-* Click **Play**
-* Click the **Settings** button and **Enable mods**
-* Click **Play** (Do not skip this)
-
-That's it, you are done with your install of the game! You can now move on to [installing Vortex](vortex-mod-manager.md).
-
-You may now move on to mod manager and mod installation.
+{% hint style="success" %}
+That's it, you are done with your install of the game! You can now move on to [#starting-to-mod](./#starting-to-mod "mention")!
+{% endhint %}
 
 ## Starting to mod
 
