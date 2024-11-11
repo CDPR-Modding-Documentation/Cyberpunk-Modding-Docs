@@ -179,6 +179,8 @@ Game.GetVehicleSystem():EnablePlayerVehicle('Vehicle.boe6_mini_cooper', true, fa
 
 It should show up as “**TEST**” in the vehicle call menu, as we haven't linked the json file to our mod yet. Once you call it, it should drive up with the model you are mirroring.
 
+{% hint style="info" %} If at any point the result is not the one expected you can find the TweakXL log in `(Game Dir)\red4ext\plugins\TweakXL` and the ArchiveXL log in `(Game Dir)\red4ext\plugins\ArchiveXL`. It may not tell you what's wrong in great detail, but it will help you narrow down and fix the issue, or verify that there is none. {% endhint %}
+
 If the command does not add your vehicle to the vehicle call list, check if the `Tweak Records` have been saved correctly. To do this, open the **TweakDB Editor** in the **CET** overlay. Search for your vehicle’s name, and look for the `Vehicle.name` Record.
 
 {% hint style="info" %}
