@@ -390,7 +390,7 @@ Vehicle.Mini:
     enumName: Mini_Logo
 
 Vehicle.boe6_mini_cooper_data:
-    $type: VehiculeUIData
+    $type: VehicleUIData
     productionYear: 2003
     info: LocKey#boe6_mini_cooper_info
 
