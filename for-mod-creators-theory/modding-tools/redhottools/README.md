@@ -21,6 +21,10 @@ Integrated with Cyber Engine Tweaks, Wolvenkit and VisualStudio Code, RHT offers
 
 This CET widget lets you inspect the world around you, as well as the player and their equipment. Read more about it under [rht-the-world-inspector.md](rht-the-world-inspector.md "mention")
 
+### Inspect the player
+
+Via [#world-inspector-watch-the-player](rht-the-world-inspector.md#world-inspector-watch-the-player "mention") you can see the player puppet's component in both first and third person, seeing changes to their appearance in real time.
+
 ### Ink inspector
 
 This CEt widget lets you inspect the game's interface. Read more about it under [rht-ink-inspector.md](rht-ink-inspector.md "mention")
