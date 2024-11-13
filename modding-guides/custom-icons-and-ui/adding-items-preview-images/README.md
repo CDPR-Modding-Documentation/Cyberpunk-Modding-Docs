@@ -188,10 +188,18 @@ You can use [AppearanceCreatorMod](https://www.nexusmods.com/cyberpunk2077/mods/
 Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite well usually. Highly depends on how intricate your item is.
 {% endhint %}
 
+<figure><img src="../../../.gitbook/assets/icon_tutorial_06_mask_select_comparison (1).png" alt=""><figcaption><p>Before / After</p></figcaption></figure>
+
 8. Duplicate the Layer Mask onto your other layers.
 9. From here on out, you can play around with a bunch of Adjustment Layers with Clipping Masks for each of your layers/appearances. I recommend some Levels Adjustments to set proper black and white points, as well as Black & White Adjustment Layers for items that are black, grey, silver or white and so on.
 10. Once you're done with that, select each layer and its Adjustment Layers, right click them, and select "Convert to Smart Object".
 11. Give each layer a meaningful name and save your image as a `.psd`.
+
+| Adjustment Layers                                                              | Converted to Smart Objects                                                 |
+| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
+| ![](<../../../.gitbook/assets/icon\_tutorial\_07\_adjustment\_layers (1).png>) | ![](<../../../.gitbook/assets/icon\_tutorial\_08\_smart\_objects (1).png>) |
+
+
 
 #### Creating The Actual Icon
 
@@ -201,6 +209,8 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 4. Hide all other layers except your icons.
 5. Now save the image as a `.png` in the raw folder of your WolvenKit project.
 6. Import the `.png` into your WolvenKit project with the `TEXG_Generic_UI` `TextureGroup` setting and make sure that "Transparency from alpha channel" is enabled.
+
+<figure><img src="../../../.gitbook/assets/icon_tutorial_09_align_icons (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Hooking up the inkatlas
 
