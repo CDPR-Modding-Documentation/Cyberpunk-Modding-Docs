@@ -55,7 +55,7 @@ For an overview image, see [Roughness/Metalness overview](textures.md#roughness-
 
 #### Naming convention:
 
-In the game files, these files will be named `<name>_n.xbm` (e.g. `base\environment\decoration\food\packaged_food\textures\synthetic_snack_01_r.xbm`)
+In the game files, these files will be named `<name>_r.xbm` (e.g. `base\environment\decoration\food\packaged_food\textures\synthetic_snack_01_r.xbm`)
 
 ### Metalness
 
@@ -74,7 +74,7 @@ In the game files, these files will be named `<name>_m.xbm` (e.g. `base\envment\
 
 ### Atlas
 
-Used for in-game items and UI elements, these textures contain a collection of images. They are made available to the game via [**inkatlas**](../../for-mod-creators-theory/files-and-what-they-do/game-icons-the-inkatlas-file.md) files.
+Used for in-game items and UI elements, these textures contain a collection of images. They are made available to the game via [**inkatlas**](../files-and-what-they-do/game-icons-the-inkatlas-file.md) files.
 
 #### Naming convention:
 
