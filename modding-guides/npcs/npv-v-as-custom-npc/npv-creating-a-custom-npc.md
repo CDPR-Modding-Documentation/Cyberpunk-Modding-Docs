@@ -13,6 +13,10 @@ This page is a part of the [NPV guide](./). It will show you how to use the [pro
 
 It will give you a brief overview over the control files and tell you how to pull in the right meshes (and appearances).&#x20;
 
+{% hint style="info" %}
+If you prefer video tutorials, use this link to watch [Sh00kspeared's video tutorial](https://www.youtube.com/watch?v=GP9Crg8tkIg\&t=1s) on the matter.
+{% endhint %}
+
 ### Wait, this isn't what I want!
 
 * How about [amm-custom-npcs](../amm-custom-npcs/ "mention")?
