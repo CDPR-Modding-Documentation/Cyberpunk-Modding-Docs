@@ -166,6 +166,7 @@
   * [Animations: .anims](for-mod-creators-theory/files-and-what-they-do/animations-.anims.md)
   * [Camera](for-mod-creators-theory/files-and-what-they-do/camera.md)
   * [Armatures: .rig files](for-mod-creators-theory/files-and-what-they-do/armatures-.rig-files.md)
+  * [.chromaset: Razer Chroma integration](for-mod-creators-theory/files-and-what-they-do/.chromaset-razer-chroma-integration.md)
 * [🌐 3d Modelling](for-mod-creators-theory/3d-modelling/README.md)
   * [Blender: Getting Started](for-mod-creators-theory/3d-modelling/blender-getting-started/README.md)
     * [Blender: Running Python Scripts](for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md)
