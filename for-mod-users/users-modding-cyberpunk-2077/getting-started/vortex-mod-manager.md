@@ -58,7 +58,7 @@ If you can download it on your own, you can skip to the [Install](vortex-mod-man
 ## Installation
 
 {% hint style="info" %}
-This guide will assume that you install Vortex to `C:\Program Files\Black Tree Gaming Ltd\Vortex`. If you install it somewhere else, please adjust accordingly.
+This guide will assume that you install Vortex to `C:\Program Files\Black Tree Gaming Ltd\Vortex`. You can install it whereever you want, but then you need to adjust accordingly.
 {% endhint %}
 
 1. Run the installer by double-clicking it.
