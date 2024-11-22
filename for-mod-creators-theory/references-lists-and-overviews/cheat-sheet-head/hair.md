@@ -13,13 +13,22 @@ Summary
 You can find previews of hair styles and -colors under [cheat-sheet-character-creator.md](../cheat-sheet-character-creator.md "mention")
 {% endhint %}
 
-This page will give you an overview for working with Cyberpunk's hair material.&#x20;
+This page will give you an overview about existing hairstyles and their files.
+
+### Wait, this is not what I want!
 
 * There is a modding guide for how to [replace-a-hair-mods-slot.md](../../../modding-guides/npcs/guides-all-about-hair/replace-a-hair-mods-slot.md "mention")
 * For a guide on how to add hair to Cyberpunk, check [basic-hairstyle-replacement-tutorial.md](../../../modding-guides/npcs/guides-all-about-hair/basic-hairstyle-replacement-tutorial.md "mention")
 * For a more detailed explanation of the hair shader, see [hair-and-skin-material-properties.md](../../materials/configuring-materials/hair-and-skin-material-properties.md "mention")
 * If you want to change an NPC's hair instead, you can check [this](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair) or [this](../../../modding-guides/npcs/appearances-change-the-looks/#safely-adding-components) guide.
-* To look up hairstyles in more detail, you can use [NoraLee's excellent NPV part picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker)
+* To look up hairstyles in more detail, you can use [NoraLee's excellent NPV part picker](https://noraleedoes.neocities.org/npv/npv_part_picker)
+
+{% hint style="info" %}
+Find the file by pasting the file name into the [Asset Browser's search bar](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).\
+If you get multiple hits, take the one that does not include `_fpp_` in its file name, as those are for first person perspective.
+{% endhint %}
+
+## Hairstyles by image
 
 <figure><img src="https://lh7-us.googleusercontent.com/RI9Ee_FGHg0wskRK3SlVVpxbU5WuK7H0o0FDip15fb59vaJq8EfHmLshv5BoN-arccmH1kF7oYlp1fZL9jR6xWXb33NQDWol_1v44AFx7pOmTXzmbqn5syIkHVSTDMw60YH0PlAtQn8qtF1hz-iGHYo" alt="" width="563"><figcaption><p>credit to this <a href="https://www.reddit.com/r/cyberpunkgame/comments/t4nsi9/my_written_guide_on_how_to_make_hairstyles_in/">Reddit</a> post.</p></figcaption></figure>
 
