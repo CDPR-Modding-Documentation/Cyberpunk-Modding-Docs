@@ -90,13 +90,15 @@ Include only the relevant body gender!
 
 That's it, everything should work now! Let's test.
 
-1. [Install your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch)
+1. [Install your project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch)
 2. Launch the game and load into a save
 3. [check if the body tag registers](./#checking-the-current-body-mod) by running the CET command.
 
 If yes: Congratulations, you've made it much easier for people to add refits for your body!
 
 ### Troubleshooting
+
+#### General errors
 
 The process is so simple that there aren't many things to go wrong:
 
@@ -117,6 +119,10 @@ print(GetPlayer():FindComponentByName("Body:NewBody"))
 <figure><img src="../../../../.gitbook/assets/AXL_body_checking_component.png" alt=""><figcaption></figcaption></figure>
 
 If that still doesn't work, consider using the [template from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/14793), which has been tried and tested on May 18 2024 with ArchiveXL
+
+#### Invisible mesh for body xyz
+
+Make sure that your mesh has appearances and materials. If you are using [archivexl-resource-patching.md](../archivexl-resource-patching.md "mention"), it's easy to forget a new body's mesh in the list like a gonk. This has never happened to the author, by the way.
 
 ## Clothing mods: Making use of the tags
 
@@ -172,7 +178,7 @@ If you know something that should be on the list, please edit [the-wiki](../../.
 {% hint style="warning" %}
 As of 18th March 2024, [Nim's More Body Meshes](https://www.nexusmods.com/cyberpunk2077/mods/3890?tab=description) is compatible again with Gymfiend Body Mod.
 
-Use only one main archive! \[[#\_nim\_more\_body\_meshes\_Gymfiend\_patch.archive](https://www.nexusmods.com/cyberpunk2077/mods/3890?tab=files\&file\_id=72036)]
+Use only one main archive! \[[#\_nim\_more\_body\_meshes\_Gymfiend\_patch.archive](https://www.nexusmods.com/cyberpunk2077/mods/3890?tab=files\&file_id=72036)]
 {% endhint %}
 
 | Mod                                                                                         | Tag name | substitution value |
