@@ -7,6 +7,10 @@ description: >-
 
 # Adding Locations and Structures with ArchiveXL
 
+{% hint style="danger" %}
+This guide is <mark style="color:red;">outdated</mark> and should not be used anymore. For more recent information, see the [Object Spawner](https://github.com/justarandomguyintheinternet/CP77_entSpawner?tab=readme-ov-file#installation) GitHub page (Until the wiki article is updated)
+{% endhint %}
+
 **Valid as of March 21 2023**
 
 Requirements

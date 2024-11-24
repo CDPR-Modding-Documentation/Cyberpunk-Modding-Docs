@@ -4,6 +4,10 @@ description: will share info on how to add objects like door, loot, walls etc
 
 # Adding Objects to the World
 
+{% hint style="danger" %}
+This guide is <mark style="color:red;">outdated</mark> and should not be used anymore. For more recent information, see the [Object Spawner](https://github.com/justarandomguyintheinternet/CP77_entSpawner?tab=readme-ov-file#installation) GitHub page (Until the wiki article is updated)
+{% endhint %}
+
 ## Summary
 
 **Created by @Krat0es**\
@@ -22,7 +26,7 @@ This guide aims to teach you adding objects to the world.
 
 ### Recommended
 
-* [allmeshes.archive](https://mega.nz/file/eRREwQbY#L7AWM1eYijyvE7GLo6IK4MQE2ohJci9r9xcq5gk8BXQ) and updated [allpaths ](https://mega.nz/file/WEQxySrS#0QM1rbl1QaUuRdU3RcNEVvYk-rfk\_mVVDyg75y8XG40)file created by KeanuWheeze - this archive contains an ent for every single vanilla mesh in the game, allowing you to spawn anything you'd like. place the archive in your mods folder and use the allpaths text file to replace the one in your object spawner data folder in the CET directory - should be something like this: <mark style="color:blue;">`Cyberpunk  2077\bin\x64\plugins\cyber_engine_tweaks\mods\entSpawner\data`</mark>
+* [allmeshes.archive](https://mega.nz/file/eRREwQbY#L7AWM1eYijyvE7GLo6IK4MQE2ohJci9r9xcq5gk8BXQ) and updated [allpaths ](https://mega.nz/file/WEQxySrS#0QM1rbl1QaUuRdU3RcNEVvYk-rfk_mVVDyg75y8XG40)file created by KeanuWheeze - this archive contains an ent for every single vanilla mesh in the game, allowing you to spawn anything you'd like. place the archive in your mods folder and use the allpaths text file to replace the one in your object spawner data folder in the CET directory - should be something like this: <mark style="color:blue;">`Cyberpunk  2077\bin\x64\plugins\cyber_engine_tweaks\mods\entSpawner\data`</mark>
 
 ### Adding Objects to the World
 
