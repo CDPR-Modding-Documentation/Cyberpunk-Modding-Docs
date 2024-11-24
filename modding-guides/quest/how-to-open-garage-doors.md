@@ -7,13 +7,14 @@ description: Short guide how to open existing in world garage doors
 ## Summary
 
 **Published:** Nov 10 by [Sergey](https://app.gitbook.com/u/N691cVEMA0Nmecc6QHIAM73aI0z1 "mention")\
-Last documented update: Nov 10 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented update: Nov 24 by [Sergey](https://app.gitbook.com/u/N691cVEMA0Nmecc6QHIAM73aI0z1 "mention")
 
-This page will teach you how to create an auto-opening garage door via .questphase file with either [CET](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/) or [Redscript](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg\_/).
+This page will teach you how to create an auto-opening garage door via .questphase file with either [CET](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/) or [Redscript](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/).
 
 ### Wait, this is not what I want!
 
 * If you want to learn about [world-editing](../world-editing/ "mention"), please check the corresponding section.
+* [NodeRefs](../world-editing/noderefs.md) explained.
 
 ## Requirements
 
@@ -33,7 +34,7 @@ Since we are in the quest section I'll show how to open it within `.questphases`
 
 2.  Find the door you want to open. Make sure it's not a texture (collisionNode). For example, i took a maelstrom gate.
 
-    From there we need its `NodeRef`.Its global identifier. You can find it on its WorldSector.
+    From there we need its [`NodeRef`](../world-editing/noderefs.md).Its global identifier. You can find it on its WorldSector.
 
     <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
