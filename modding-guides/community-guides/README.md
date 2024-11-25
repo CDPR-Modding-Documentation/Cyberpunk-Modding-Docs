@@ -8,23 +8,31 @@ description: >-
 
 ## Summary
 
-&#x20;**Last documented edit**: June 22 2024 by LadyLea
-
-{% hint style="warning" %}
-Please note that some guides and resources may be outdated and/or may not work as intended as at the time of their creation - since over time, Modding Tools and the game itself received several updates and changes.
-
-We will link these resources (outdated and new) for archiving purposes.
-
-Having said so, you are free to check the links below and use what works best for you!
-
-_**\*Please make sure to always read any Terms of Use and to credit the creators - if you have any questions, seek the Original Creators first.\***_&#x20;
-{% endhint %}
+&#x20;**Last documented edit**: Nov 25 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 {% hint style="info" %}
-A special thank you goes to everyone who spent the time creating these guides and resources! Kindly, let us know if there are wrong or missing credits assigned, and we will correct them.&#x20;
+Please note that some guides and resources may be outdated and/or may not work as intended as at the time of their creation - since over time, Modding Tools and the game itself received several updates and changes.
 
-If you want to contribute and/or, add links on this page - see more on [the-wiki](../../the-wiki/ "mention") !
+Outdated guides **should** be marked as such. If they are not, feel free to [get in touch](https://discord.gg/redmodding) or [edit the wiki](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/the-wiki).
+
+Having said so, you are free to check the links below and use what works best for you!
 {% endhint %}
+
+### What is a "community guide"?
+
+This page collects any guides about Cyberpunk modding that are **not on the wiki**. While we **want** to catch them all, we don't port guides without their writers' approval, because we appreciate the time and effort that went into creating them.
+
+{% hint style="warning" %}
+If you want to add a guide to this list, please remember to credit the original creator.
+{% endhint %}
+
+If you are a creator and would like to [add your guide to the wiki](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/the-wiki), please **sign up and edit**! You are more than welcome here!
+
+### How to use these guides
+
+**Please make sure to always read any Terms of Use and to credit the creators.**
+
+If you have any questions, seek the original creators first.
 
 ## Modding Guides - Know-How
 
