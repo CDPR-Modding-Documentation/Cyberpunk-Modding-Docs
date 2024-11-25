@@ -60,7 +60,36 @@ And just like that, it will work. All your meshes will have the materials you de
 
 You can patch pretty much any `.ent`, `.app` or `.mesh` file! Give it a try via `.xl` file.&#x20;
 
-### Distributed patching: Scopes
+## What is the minimal patching level?
+
+### .mesh file
+
+appearances (added/replaced appearances use materials from patch mesh)
+
+```
+original_mesh:                          patch_mesh:
+  appearances:                            appearances:
+    appearance_black:                        appearance_black:
+      - black_material                          - black_material
+      - black_material                          - black_material
+    appearance_black_2:                      
+      - black_material                       
+      - black_material                       
+  materials:                              materials:
+    black_material: multilayered.mt         black_material: metal_base.remt
+```
+
+After patching, `appearance_black` would use `metal_base.remt`,  while `appearance_black_2` would still use `multilayered.mt`.
+
+### .ent file
+
+You can patch appearances, components, entity, visual tags
+
+### .app file
+
+You can patch **definitions** (components, parts values, parts overrides, visual tags)
+
+## Distributed patching: Scopes
 
 Some things are scattered across multiple files — for example, there are different player entities for first and third person. Fortunately, ArchiveXL solves this problem in the cradle by defining patchable scopes. You can find examples on the github repository:
 
