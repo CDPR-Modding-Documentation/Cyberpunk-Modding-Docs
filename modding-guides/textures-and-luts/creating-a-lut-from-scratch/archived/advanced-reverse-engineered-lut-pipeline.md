@@ -43,11 +43,11 @@ Unfortunately, I have not been able to single out a method to generate HDR LUTs 
 ## Tools used/required
 
 * DaVinci Resolve\
-  _Does not matter if it is studio, but studio will be required for the eventual HDR workflow._
+  &#xNAN;_&#x44;oes not matter if it is studio, but studio will be required for the eventual HDR workflow._
 * Photoshop
 * WolvenKit
 * NVTT Exporter and the respective Photoshop plugin.\
-  _Can be found on NVIDIA developer, does require an account to download._
+  &#xNAN;_&#x43;an be found on NVIDIA developer, does require an account to download._
 
 ### Intermission: Troubleshooting DaVinci
 
@@ -69,15 +69,7 @@ Some of you who are more familiar with DaVinci may be already going ahead and se
 
 Below are 2 sample pictures captured with the method, we will be getting a grasp with non-destructive color grading this way.
 
-<div>
-
-<figure><img src="../../../../.gitbook/assets/pt_18.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../../.gitbook/assets/pt_19.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../../../.gitbook/assets/pt_18.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../../.gitbook/assets/pt_19.png" alt=""><figcaption></figcaption></figure></div>
 
 Insert these pictures into your timeline and head into the Color tab. Then, select your clips and add them to a group, the group name doesn't really matter. We'll only be doing this to use pre-clips and post-clips.
 

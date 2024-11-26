@@ -23,9 +23,9 @@ This guide aims to teach you moving and deleting objects from the world.&#x20;
 2. Open it by double-clicking
 3. Click on `Sector Preview` again
 4. Click into the preview to highlight an object. \
-   _This will print the object's node name and -index to the log._
+   &#xNAN;_&#x54;his will print the object's node name and -index to the log._
 5. In the list on the right, find the object that you want to delete.\
-   _You can toggle the red checkmark(s) to show/hide objects in the preview_
+   &#xNAN;_&#x59;ou can toggle the red checkmark(s) to show/hide objects in the preview_
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FTyswVnWzwLaPMkbSXGot%2F%E2%80%8F%E2%80%8F%D9%84%D9%82%D8%B7%D8%A9%20%D8%A7%D9%84%D8%B4%D8%A7%D8%B4%D8%A9%20(1974).png?alt=media&#x26;token=d5433dd4-cee3-4180-88a5-0ef59e01ca1a" alt=""><figcaption><p>amazing</p></figcaption></figure>
 

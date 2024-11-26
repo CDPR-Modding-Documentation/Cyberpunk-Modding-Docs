@@ -176,7 +176,7 @@ MyBigRecord:
 
 In this example, `MyBigRecord_inline0` will have a completely different value depending on the update.&#x20;
 
-In update 2.1 the value**`1`** and related to `BaseStats.ExampleBaseStat1`, but then in update 2.2 the value will be **`8`** and related to `BaseStats.ExampleBaseStat3`.&#x20;
+In update 2.1 the valu&#x65;**`1`** and related to `BaseStats.ExampleBaseStat1`, but then in update 2.2 the value will be **`8`** and related to `BaseStats.ExampleBaseStat3`.&#x20;
 
 If you used `MyBigRecord_inline0` in your item code, your item would stop working as intended. It doesn't matter that popular modders do this, **DON'T USE INLINES AS BASE FOR YOUR RECORDS**.&#x20;
 
@@ -226,7 +226,7 @@ Let's say you want to do a new item that have the Thrusters mechanics from Rogue
 
 What's the best approach to this? Using those Thrusters boots logic in your item.
 
-Unfortunately, most items don't share the same internal name as the name you can see in the description. The best way I've found to deal with this, is going to the community Cyberpunk wiki and looking for your specific item, in this case, [those cool Boots](https://cyberpunk.fandom.com/wiki/Retrothrusters\_\(from\_Rogue\)).
+Unfortunately, most items don't share the same internal name as the name you can see in the description. The best way I've found to deal with this, is going to the community Cyberpunk wiki and looking for your specific item, in this case, [those cool Boots](https://cyberpunk.fandom.com/wiki/Retrothrusters_\(from_Rogue\)).
 
 Internally, that item is called `q115_thrusters`. Now that we know that, we can search the item in **Wolvenkit Tweak Broswe**r.
 
@@ -238,7 +238,7 @@ Read [spawn-codes-baseids-hashes.md](../../../references-lists-and-overviews/equ
 
 ### 2: Using Wolvenkit Tweak Browser
 
-Open Wolvenkit and [create a project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project) (for example, I have one project dedicated to research called TEST, which I use every time I need to search something on Wolvenkit), then open it.&#x20;
+Open Wolvenkit and [create a project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project) (for example, I have one project dedicated to research called TEST, which I use every time I need to search something on Wolvenkit), then open it.&#x20;
 
 Open the Tweak Browser tab and pin it. It should look like this:
 
@@ -282,7 +282,7 @@ You can add them to almost any item, but you'll have to research on your own how
 
 {% hint style="info" %}
 ALWAYS FIND A WORKING EXAMPLE IN THE BASE GAME IF YOU ARE NEW ON THIS AND IF YOU WANT TO KEEP YOUR SANITY. \
-_**Trust me.**_
+&#xNAN;_**Trust me.**_
 {% endhint %}
 
 Now, the importance of VSCode in this tutorial. VSCode has an incredibly powerful and useful highlighting system for text by just doing `double click` on **ANY WORD**. With this system, you'll understand how things are nested on ANY item you find. Look at this example:

@@ -16,14 +16,14 @@ We will not be dealing with the body, this is part of the next section as well.
 If you want a 3d model, you probably know what you're doing; in that case, make sure to run the script and get the shape right, then go wild.
 
 {% hint style="info" %}
-If you prefer **video instructions** over written ones, please check out[ ](https://www.youtube.com/watch?v=f9KWa\_qJDUo\&t=743s)[this tutorial](https://www.youtube.com/watch?v=f9KWa\_qJDUo\&t=743s) by Wouldiwas Sh00kspeared (Nov 2024).
+If you prefer **video instructions** over written ones, please check out[ ](https://www.youtube.com/watch?v=f9KWa_qJDUo\&t=743s)[this tutorial](https://www.youtube.com/watch?v=f9KWa_qJDUo\&t=743s) by Wouldiwas Sh00kspeared (Nov 2024).
 {% endhint %}
 
 ### Prerequisites
 
 * [ ] You have downloaded the prepared Wolvenkit Project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328)
 * [ ] You have [Blender](https://www.blender.org/download/) installed \
-  _(confirmed working on 4.1 and 4.2)_
+  &#xNAN;_(confirmed working on 4.1 and 4.2)_
 * [ ] You have the Wolvenkit Blender Plugin (you won't be able to export otherwise). Check [installing-the-wolvenkit-blender-plugin](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/ "mention") if you don't.
 
 In this section, we will be moving/deleting files. You can complete these steps in Wolvenkit or in the Windows File Explorer.
@@ -59,7 +59,7 @@ I have included all meshes and morphtargets from the game files. We'll now thin 
 ### Deleting unused files: the convenient option
 
 {% hint style="success" %}
-The best and most convenient tool for the job is [NoraLee's NPV picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker). It will give you a list of files that you need to keep.&#x20;
+The best and most convenient tool for the job is [NoraLee's NPV picker](https://noraleedoes.neocities.org/npv/npv_part_picker). It will give you a list of files that you need to keep.&#x20;
 
 The list will give you a number of **Source Mesh** entries like `h0_000_pwa_c__basehead.mesh`.&#x20;
 
@@ -121,7 +121,7 @@ Many of the files are **variants** and your V will be using **one or none of the
 * Otherwise, you need to refer to [#what-the-actual-fuck-are-all-those-files](npv-preparing-the-head-in-blender.md#what-the-actual-fuck-are-all-those-files "mention") and use the table below for some oversight.
 
 {% hint style="warning" %}
-When deleting files that you aren't using, make sure to remove both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder, both in the [archive](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#archive) and the [raw](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw) section.
+When deleting files that you aren't using, make sure to remove both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder, both in the [archive](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#archive) and the [raw](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw) section.
 {% endhint %}
 
 The following table will show you examples on what to **keep** (as in, you **delete everything else**):
@@ -181,7 +181,7 @@ If you have already changed your structure (by re-naming your folders), you need
 
 <figure><img src="../../../.gitbook/assets/npv_blender_00_import.png" alt=""><figcaption><p>Looks scary, but you don't have to do anything here!</p></figcaption></figure>
 
-5. Press the **play ▶️▶**button.
+5. Press the **play ▶️▶**&#x62;utton.
 6. The script will now import a bunch of armatures from the `morphtargets` folder. You will see them showing up in the topright corner (see the next screenshot under 7. for how it should look)
 7. Switch to the next script in the file, but **don't run it yet**:
 

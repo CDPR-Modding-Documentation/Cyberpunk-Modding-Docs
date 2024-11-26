@@ -2,13 +2,22 @@
 description: How to create a custom interface via inkwidgets and animate via inkanims
 ---
 
-# Inkwidgets: a custom interface
+# Inkwidget: interface definition
+
+## Summary
+
+Created: ???\
+Last documented update: Nov 26 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page lists theory information about interface elements. For more hands-on information, check [interface-modding.md](../../modding-guides/custom-icons-and-ui/interface-modding.md "mention").
+
+## Inkwidgets: a custom interface
 
 Inkwidgets are a mapping of widgets and effects onto a 2D plane.
 
 The structure of inkwidget is a graph/tree with parent and children nodes.
 
-## *Important elements of the inkwidget*
+### _Important elements of the inkwidget_
 
 * anchor - This is treated as the center of the widget. It is what animations are centered, scaled, and rotated around.
 * margin - This is what allows precise positioning of the widget by adding space in the corresponding direction. Can use negative numbers as values as well. Widget Preview in WolvenKit is useful when adjusting margin values.
@@ -19,11 +28,11 @@ The structure of inkwidget is a graph/tree with parent and children nodes.
 * texturePart - The name of the part of the graphic defined in the inkatlas file.
 * visible - Shows or hides the widget. Useful when testing or aligning widgets in Widget Preview.
 
-# Inkanims: apply animations to widgets in Inkwidgets
+## Inkanims: apply animations to widgets in Inkwidgets
 
 Each animation needs a definition (what kind of animation) and target (which widget animation applies to).
 
-## *Important elements of inkanim definitions*
+### _Important elements of inkanim definitions_
 
 There are a set number of different animation types. Their names are mostly self-explanatory. In WolvenKit, use 'Create Handle' on a handleinkanimInterpolator to choose a animation.
 
@@ -35,7 +44,7 @@ There are a set number of different animation types. Their names are mostly self
 
 The last definition are AdvertPauseEvents. These are the times in seconds from the start of the animation that the animated inkwidget can pause when moving out of animation range in game. Multiple of these can be defined to make it possible to pause at multiple points in the animation.
 
-## *inkanim targets*
+### _inkanim targets_
 
 Can have any number of values, relating to the corresponding inkwidget file children nodes. Define these values, adding a new element in the array for each nested child as needed. For example, if you want to animate a widget that is nested in the first child, and the sixth child within the first child, then the target path would be 0 # 0, 1 # 5.
 

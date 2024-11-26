@@ -10,11 +10,11 @@ description: 'Tutorial: How to Edit Third-Person and First Person Animations for
 **Last documented edit: Sep 27 2024 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") (Formatting)
 
 This tutorial will show you how to Edit Third-Person and First Person Animations for V.\
-_Works with JB's TPP Mod which is found on Nexus Mods and for replacing first-person animations_
+&#xNAN;_&#x57;orks with JB's TPP Mod which is found on Nexus Mods and for replacing first-person animations_
 
 ### Download the template
 
-I highly suggest using my template, which can be downloaded here: [https://drive.usercontent.google.com/download?id=1\_Z1cmk\_r2xH0YtII7t1JbqQoMgvY2m3g\&export=download\&authuser=0](https://drive.usercontent.google.com/download?id=1\_Z1cmk\_r2xH0YtII7t1JbqQoMgvY2m3g\&export=download\&authuser=0)
+I highly suggest using my template, which can be downloaded here: [https://drive.usercontent.google.com/download?id=1\_Z1cmk\_r2xH0YtII7t1JbqQoMgvY2m3g\&export=download\&authuser=0](https://drive.usercontent.google.com/download?id=1_Z1cmk_r2xH0YtII7t1JbqQoMgvY2m3g\&export=download\&authuser=0)
 
 It includes:
 

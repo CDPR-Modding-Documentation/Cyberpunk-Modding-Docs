@@ -32,7 +32,7 @@ You can find a more detailed guide under [altering-appearances-within-wolvenkit-
 
 ## Prerequisites
 
-* [ ] You have [a Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
+* [ ] You have [a Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
 * [ ] You know how to read
 
 Links will give you additional context. If you can complete the guide without them, feel free to ignore them.
@@ -51,13 +51,13 @@ You don't need to add this file to your project (and if you do it by accident, y
 
 You can try finding your NPC's .ent file on [people.md](../../../for-mod-creators-theory/references-lists-and-overviews/people.md "mention"). If you can't find your entry, the page has information how you can search for it — **please add it to the page**, this wiki is a community project!
 
-Point your [Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) to the file you have found. We want to find the .app file and add it to our project. You can right-click on the .ent file and select [Find used files](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-used-files), or you look up the path in the .ent file:
+Point your [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) to the file you have found. We want to find the .app file and add it to our project. You can right-click on the .ent file and select [Find used files](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-used-files), or you look up the path in the .ent file:
 
 <figure><img src="../../../.gitbook/assets/app_modification_guide_ent_file (1).png" alt=""><figcaption><p>If you are using <a href="https://www.nexusmods.com/cyberpunk2077/mods/790">Appearance Menu Mod</a>, this list will look familiar.</p></figcaption></figure>
 
 ## The .app file
 
-Now that you have found the .app file, let's [add it to your Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects) and look inside.
+Now that you have found the .app file, let's [add it to your Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects) and look inside.
 
 The array **appearances** will contain a list with every appearance that's defined for this NPC, matching the key `appearanceName` in the .ent file.&#x20;
 
@@ -112,23 +112,23 @@ Let's do it…
 You need to find the thing you want to add in the files, check where it is defined, and then copy all of its components.
 
 1. Search for the mesh name of the vest that you want to use (e.g. `ma_vest__high_collar*.mesh`)
-2. Select the mesh, then "[find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this)": \
-   &#x20;![](../../../.gitbook/assets/app\_modification\_find\_mesh.png)
+2. Select the mesh, then "[find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this)": \
+   &#x20;![](../../../.gitbook/assets/app_modification_find_mesh.png)
 3. If you find an .ent file called `_pwa_` or `_pma_`, that's a player mesh entity, which contains only the components you need — jackpot, use that one. Otherwise, find any .app file that sounds promising - for example Scorpion's.  \
-   ![](../../../.gitbook/assets/app\_modification\_find\_component.png)\
-   [Open it without adding](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#open-without-adding-to-project) it to the project (you don't need the file).&#x20;
+   ![](../../../.gitbook/assets/app_modification_find_component.png)\
+   [Open it without adding](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#open-without-adding-to-project) it to the project (you don't need the file).&#x20;
 4. Find and select the components in the other NPC's appearance list:\
-   ![](../../../.gitbook/assets/app\_modification\_copy\_component.png)
-5. Select "[Copy Selection From Array/Buffer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#copy-selection-from-array-buffer)"
-6. Go back to your original .app file and select either the root of the `components` array, or any component inside the array. Now right-click and select "[Paste Selection From Array/Buffer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#copy-selection-from-array-buffer)".\
-   &#x20;![](../../../.gitbook/assets/paste\_selection\_to\_buffer.png)
-7.  If you haven't done that yet, [delete](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#delete-selection-from-array-buffer) the original component(s) and its animations/dangles. Skipping this step will give Johnny two vests, and he's not the type to do that.\
+   ![](../../../.gitbook/assets/app_modification_copy_component.png)
+5. Select "[Copy Selection From Array/Buffer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#copy-selection-from-array-buffer)"
+6. Go back to your original .app file and select either the root of the `components` array, or any component inside the array. Now right-click and select "[Paste Selection From Array/Buffer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#copy-selection-from-array-buffer)".\
+   &#x20;![](../../../.gitbook/assets/paste_selection_to_buffer.png)
+7.  If you haven't done that yet, [delete](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#delete-selection-from-array-buffer) the original component(s) and its animations/dangles. Skipping this step will give Johnny two vests, and he's not the type to do that.\
 
 
     <figure><img src="../../../.gitbook/assets/app_modification_delete_original_component.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-Save the .app file, [install your mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch), and go testing!
+Save the .app file, [install your mod](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch), and go testing!
 {% endhint %}
 
 ### Animations: if you can't avoid them, copy them as well!
@@ -153,8 +153,8 @@ If you delete a physics-enabled component, you can safely delete the correspondi
 
 ### Getting the .mesh
 
-1. Switch your Asset Browser to [Mod Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser)
-2. Use the [search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to find mesh files in your target .archive: \
+1. Switch your Asset Browser to [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser)
+2. Use the [search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to find mesh files in your target .archive: \
    `archive:my_mod_name > .mesh`
 3. Add the file(s) you want to your Wolvenkit project
 
@@ -183,7 +183,7 @@ Look for `w/m` to indicate gender, and `base_body` to indicate the body mod.
 
 <figure><img src="../../../.gitbook/assets/image (541).png" alt=""><figcaption></figcaption></figure>
 
-6. You can now save your mesh and optionally run [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) from the menu bar.
+6. You can now save your mesh and optionally run [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) from the menu bar.
 7. **Optional**:  If any of the files in your texture folders are `.mi,` `.mltemplate,` or `.mlsetup` files, open them and run `add material dependencies` again (your mesh will have a weird purple hue if any of those are missing)
 8. You can now save your .mesh!
 
@@ -207,7 +207,7 @@ This works for simple components. Anything more complicated with physics (.anim 
       e.g. `black`\
       You find this in the `appearances` array inside the `.mesh` file
    3. `name`: a unique name that identifies your component. \
-      _You should get into the habit of using_ [_garment prefixes_](../../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/#component-prefixes)_, as they come in handy for clothing items._
+      &#xNAN;_&#x59;ou should get into the habit of using_ [_garment prefixes_](../../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/#component-prefixes)_, as they come in handy for clothing items._
    4. `chunkMask`: Extend the dropdown and make sure that [the submeshes](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes) you want are visible (just check the boxes for 0-11 if you're not sure)
 
 <figure><img src="../../../.gitbook/assets/image (543).png" alt=""><figcaption></figcaption></figure>

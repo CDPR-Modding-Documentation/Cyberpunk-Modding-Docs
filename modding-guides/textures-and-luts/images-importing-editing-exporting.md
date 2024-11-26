@@ -25,7 +25,7 @@ Editing textures is straightforward: just change them in your image editor of ch
 
 {% hint style="info" %}
 Wolvenkit supports the .dds file format, but since that is more complex, we won't talk about it here and stick to the `.png` format. \
-_If you're using .dds files, you probably know what you're doing anyway :)_
+&#xNAN;_&#x49;f you're using .dds files, you probably know what you're doing anyway :)_
 {% endhint %}
 
 ### Paint.NET
@@ -92,7 +92,7 @@ If you are importing a `.masklist`, all images for the resulting `.mlmask` must 
 
 ### Invalid color space
 
-Some textures need to be in a certain colour space (theory on [wikipedia](https://en.wikipedia.org/wiki/Color\_space)). For certain types of textures, the game requires certain colour spaces. Here's a list:&#x20;
+Some textures need to be in a certain colour space (theory on [wikipedia](https://en.wikipedia.org/wiki/Color_space)). For certain types of textures, the game requires certain colour spaces. Here's a list:&#x20;
 
 <table><thead><tr><th width="240">File type</th><th>required colour space</th></tr></thead><tbody><tr><td>.mlmask / .masklist</td><td>Black and White / Non-Color</td></tr></tbody></table>
 

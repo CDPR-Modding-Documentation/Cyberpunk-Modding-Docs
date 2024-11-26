@@ -28,10 +28,10 @@ This section will walk you through the process of creating an .xl file to remove
 
 This guide will feature the **manual process**, which can get tedious if you want to remove at scale. There are two ways to automate the process:
 
-* Wheeze's Removal Editor ([Link on GitHub, also has documentation there](https://github.com/justarandomguyintheinternet/CP77\_removalEditor))
+* Wheeze's Removal Editor ([Link on GitHub, also has documentation there](https://github.com/justarandomguyintheinternet/CP77_removalEditor))
 * Generating the .xl file via Blender (see [#blender-and-archivexl](world-editing-deleting-objects.md#blender-and-archivexl "mention")
 
-Although you can also work directly in your `archive/pc/mod` directory, you should [create a Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can easily pack your mod for Nexus deployment.
+Although you can also work directly in your `archive/pc/mod` directory, you should [create a Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can easily pack your mod for Nexus deployment.
 
 ## Video guide
 
@@ -77,7 +77,7 @@ streaming:
 
 1. Optional, but recommended: Run your XL file through [yamllint](https://www.yamllint.com/)
 2. Save the .xl file
-3. [Install your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game.
+3. [Install your project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game.
 
 If everything worked, your object should now be gone.
 
@@ -85,7 +85,7 @@ Otherwise, check the [#troubleshooting](world-editing-deleting-objects.md#troubl
 
 ### Packing your mod for Nexus
 
-If you have been a good bean and stuck to the instructions, you only need to [pack your Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#pack-mod) and can skip the rest of this section.
+If you have been a good bean and stuck to the instructions, you only need to [pack your Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#pack-mod) and can skip the rest of this section.
 
 If you have been working directly in your `archive/pc/mod` directory, do **not** right-click on your .xl file and pack it. You have to create the following folder structure and then pack the `archive` folder:
 
@@ -155,7 +155,7 @@ First, you need to find out the number of nodes in your sector. We will do that 
 ### Generating an .xl file
 
 1. Switch to Blender's `Scripting` perspective and create a new file.
-2. Open [**this link**](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/python/export\_sector\_deletions\_to\_xl.py) (mana's github) and copy the contents into Blender's editor.
+2. Open [**this link**](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/python/export_sector_deletions_to_xl.py) (mana's github) and copy the contents into Blender's editor.
 3. Edit the value of `output_filename` — it has to be a valid path (and can even be your Cyberpunk mod directory).
 
 {% hint style="warning" %}
@@ -178,7 +178,7 @@ This is also how you can edit other people's sector presets. Want to keep your c
 
 1. Open the generated .xl file in a text editor such as [**Notepad++**](https://notepad-plus-plus.org/downloads/).
 2. Search for `worldEntityNode`\
-   _Keyboard shortcuts to find all in document in Notepad++: `Ctrl+F` - `Alt+D`_
+   &#xNAN;_&#x4B;eyboard shortcuts to find all in document in Notepad++: `Ctrl+F` - `Alt+D`_
 3. Check the comment on top of a block to find out what it is.
 4. If you want to keep something, remove the entire block from the .xl file (see screenshot).
 
@@ -200,7 +200,7 @@ If your zip for Nexus contains an .archive file, you've done something wrong her
 
 ## Converting older node removals
 
-You can convert node removal scripts from ArchiveXL 1.8 format to 1.9 format by running [this Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/world\_sector\_stuff/convert\_sector\_edits\_to\_AXL\_1.9.py) on the file.
+You can convert node removal scripts from ArchiveXL 1.8 format to 1.9 format by running [this Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/world_sector_stuff/convert_sector_edits_to_AXL_1.9.py) on the file.
 
 You need:
 

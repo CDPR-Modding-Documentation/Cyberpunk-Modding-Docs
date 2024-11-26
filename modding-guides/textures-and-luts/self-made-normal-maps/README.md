@@ -13,7 +13,7 @@ This guide will teach you how to create a custom normal map.
 
 ### Wait, this isn't what I want!
 
-* For a different guide about this, check this [Google Doc](https://drive.google.com/file/d/11Z-SYF28nVpF\_ZbkIJ\_KHCetJK7EcT\_X/view) by Тима (Teem)#3118&#x20;
+* For a different guide about this, check this [Google Doc](https://drive.google.com/file/d/11Z-SYF28nVpF_ZbkIJ_KHCetJK7EcT_X/view) by Тима (Teem)#3118&#x20;
 * For a guide on Cyberpunk materials in Blender, see [cyberpunk-shaders-in-blender.md](../../../for-mod-creators-theory/materials/cyberpunk-shaders-in-blender.md "mention")
 * If you want to create a `.mlmask` instead, see [custom-multilayermasks.md](../custom-multilayermasks.md "mention")
 * Otherwise, you can use the wiki's search function — it uses an LLM and is actually quite useful.
@@ -44,16 +44,16 @@ For a free tool for faster normal baking, check out [xnormal](https://xnormal.ne
    * if there are no materials: Awesome, you passed the reading comprehension test! Create one by clicking the `+` button.
    * If there are materials: You failed the reading comprehension test and I am very disappointed. Delete all but one by selecting them and clicking the `-` button.
 5. Assign a material to the only remaining slots:\
-   ![](../../../.gitbook/assets/normal\_maps\_assign\_material.png)
+   ![](../../../.gitbook/assets/normal_maps_assign_material.png)
 6. Switch to the "Shading" perspective and add an "Image Texture". Select your image by clicking the corresponding button:\
-   ![](../../../.gitbook/assets/normal\_maps\_shading\_1.png)
+   ![](../../../.gitbook/assets/normal_maps_shading_1.png)
 7. The viewport should already be set to "Solid". Click on the dropdown arrow next to the options and select "Texture" from the list.&#x20;
 
 <figure><img src="../../../.gitbook/assets/normal_maps_viewport_shading.png" alt=""><figcaption><p>You will now get the selected texture directly as an overlay.</p></figcaption></figure>
 
 ## Step 1: The Displacement Map
 
-As the first step, we create a [**Displacement Map**](https://de.wikipedia.org/wiki/Displacement\_Mapping) for our 3d object. This black and white image will turn your mesh into an object with actual (simulated) depth, which we will then "bake" into a normal map.&#x20;
+As the first step, we create a [**Displacement Map**](https://de.wikipedia.org/wiki/Displacement_Mapping) for our 3d object. This black and white image will turn your mesh into an object with actual (simulated) depth, which we will then "bake" into a normal map.&#x20;
 
 <figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Displacement.jpg" alt=""><figcaption><p>image source: <a href="https://de.wikipedia.org/wiki/Displacement_Mapping">Wikipedia</a></p></figcaption></figure>
 
@@ -103,21 +103,21 @@ I create a duplicate of my entire armature, just to make certain that I don't ac
 4. Select the mesh you duplicated and rename it to "High Poly".
 5. Open the "Modifiers" tab and assign the following modifiers **after** the armature modifier (check screenshot in Step 6)
    1. **Generate -> Subdivision Surface**\
-      _**Levels Viewport:** 2 or so_\
-      _**Render:** As many as Blender lets you get away with without crashing, I used 7_\
-      _**Advanced:**_\
+      &#xNAN;_**Levels Viewport:** 2 or so_\
+      &#xNAN;_**Render:** As many as Blender lets you get away with without crashing, I used 7_\
+      &#xNAN;_**Advanced:**_\
       _**UV Smooth:** Keep Corners, Junctions_\
-      _**Boundary Smoothing**: Keep Corners_
+      &#xNAN;_**Boundary Smoothing**: Keep Corners_
    2. **Deform -> Displace**\
-      _**Coordinates**: UV_\
-      _**UV Map:** UVMap_\
-      _**Direction**: Normal_\
-      _**Strength:** -0.002 (you can play around with this)_\
-      _**Midlevel:** 0.000_
+      &#xNAN;_**Coordinates**: UV_\
+      &#xNAN;_**UV Map:** UVMap_\
+      &#xNAN;_**Direction**: Normal_\
+      &#xNAN;_**Strength:** -0.002 (you can play around with this)_\
+      &#xNAN;_**Midlevel:** 0.000_
 6. For the "Displace" Modifier, create a new picture, then click on the two sliders to show this texture in the textures tab\
-   ![](../../../.gitbook/assets/normal\_maps\_modifiers.png)
+   ![](../../../.gitbook/assets/normal_maps_modifiers.png)
 7. Load your blurred texture:\
-   ![](../../../.gitbook/assets/normal\_maps\_texture\_tab.png)
+   ![](../../../.gitbook/assets/normal_maps_texture_tab.png)
 
 {% hint style="success" %}
 If you hide your "Low Poly" mesh, the modifiers should now let you see creases on your high poly object! Exciting!!
@@ -180,9 +180,9 @@ Find the "Render Properties" tab.
    2. **Influence / Space:** Tangent
    3. **Selected to Active:** Checked
    4. **Extrusion:** 0.04 m \
-      _If your generated normal map shows artifacts, try tweaking this._
+      &#xNAN;_&#x49;f your generated normal map shows artifacts, try tweaking this._
    5. **Max Ray Distance:** 0.04 m\
-      _If your generated normal map shows artifacts, try tweaking this._
+      &#xNAN;_&#x49;f your generated normal map shows artifacts, try tweaking this._
    6. **Output / Target:** Image Textures
    7. Clear Image: Checked
    8. **Margin / Size:** 16px (or whatever suits you)
@@ -242,7 +242,7 @@ Check the [troubleshooting step for artifacts](./#my-normal-map-has-artifacts).
 * Make sure your displacement map (the one used by the modifier) is **blurred**.
 * Try lowering the strength of the **Displace** modifier on the High Poly mesh, making the creases more shallow.
 * Try changing **Extrusion** and **Max Ray Distance** in the **Bake** settings.
-* If that doesn't help, you could try a [cage](https://www.reddit.com/r/blender/comments/nu7ysh/comment/itym8vw/?utm\_source=share\&utm\_medium=web2x\&context=3), or otherwise hit Google.
+* If that doesn't help, you could try a [cage](https://www.reddit.com/r/blender/comments/nu7ysh/comment/itym8vw/?utm_source=share\&utm_medium=web2x\&context=3), or otherwise hit Google.
 
 ### Blender complains about my meshes
 

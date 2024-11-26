@@ -281,16 +281,16 @@ Now that our chunk knows which material it's supposed to look up, we need to pro
    1. If it's empty, go back up and find `preloadMaterialBuffer` instead
 3. Duplicate the last entry. This is your new decal material. Now we need to make sure it behaves like a decal, too.
    1. Change its baseMaterial to `base\materials\mesh_decal.mt`.\
-      _This will tell the game which shader to use, and_ [_mesh\_decal_](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md#decal-materials) _is for exactly this._
-   2. Unless your previous material was already using mesh\_decal, right-click on the `values` array and [`Delete all Items in Array/Buffer`](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#delete-all-items-in-array-buffer)
+      &#xNAN;_&#x54;his will tell the game which shader to use, and_ [_mesh\_decal_](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md#decal-materials) _is for exactly this._
+   2. Unless your previous material was already using mesh\_decal, right-click on the `values` array and [`Delete all Items in Array/Buffer`](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#delete-all-items-in-array-buffer)
    3. As of now, your decal will be completely transparent. Let's change that.
 4. Now we need to get the right material properties. The easiest way is to find another material that uses mesh\_decal and steal them from there:
-   1. Open the [Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) and search for `base\materials\mesh_decal.mt`
-   2. Right-click on the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this)
+   1. Open the [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) and search for `base\materials\mesh_decal.mt`
+   2. Right-click on the file and select [Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this)
    3. Sort the results by file type by clicking on the column, then find and open a `.mi` or `.mesh`
-   4. Find the decal material inside the other file, and [copy everything from its `values` array](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#copy-selection-from-array-buffer)
+   4. Find the decal material inside the other file, and [copy everything from its `values` array](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#copy-selection-from-array-buffer)
    5. Switch back to your own mesh and copy these values into your mesh\_decal material's `values` array (the one from step 3.3)
-5. Adjust the properties. Find the one that says `DiffuseTexture` and point its `DepotPath` to your decal's `.xbm` (right-click it and select [copy relative path](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#copy-relative-path))
+5. Adjust the properties. Find the one that says `DiffuseTexture` and point its `DepotPath` to your decal's `.xbm` (right-click it and select [copy relative path](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#copy-relative-path))
    1. If you don't have one, go back to [#prerequisites](adding-decals.md#prerequisites "mention") -> [#the-rest](adding-decals.md#the-rest "mention")
 6. The other properties should be numbers only. If you don't know what they do, you can delete them for now.
 
@@ -298,7 +298,7 @@ Now that our chunk knows which material it's supposed to look up, we need to pro
 
 ## Time to test!
 
-[Install your mod and start the game](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch). If you have done everything right, then your mesh should now have a decal!
+[Install your mod and start the game](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch). If you have done everything right, then your mesh should now have a decal!
 
 {% hint style="info" %}
 Consider converting your mod to use [archivexl-patching-appearances.md](archivexl-patching-appearances.md "mention")for much better compatibility and smaller mod size!

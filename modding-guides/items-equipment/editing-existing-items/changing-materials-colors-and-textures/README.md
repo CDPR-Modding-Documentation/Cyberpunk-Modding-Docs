@@ -24,7 +24,7 @@ This guide will teach you how to edit an item's material, changing its appearanc
 ## Prerequisites
 
 * Wolvenkit's most recent version  ([Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) | [Stable](https://github.com/WolvenKit/Wolvenkit/releases) — guide has been written with 8.11)
-* A [Wolvenkit Project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
+* A [Wolvenkit Project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
 * Most likely [MLSetupBuilder](../../../../for-mod-creators-theory/modding-tools/mlsetup-builder/) >= 1.6.7 (get the [latest release](https://github.com/Neurolinked/MlsetupBuilder/releases/))
 * If you are editing a basegame material, you need to install [Material and Texture Override](https://www.nexusmods.com/cyberpunk2077/mods/5266) from Nexus.
 
@@ -79,7 +79,7 @@ Again, you can look these up in the .app file!
 
 ### Add the mesh to your project
 
-1. Find the file from mesh.DepotPath in your [Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser).&#x20;
+1. Find the file from mesh.DepotPath in your [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser).&#x20;
 2. Add it to your Wolvenkit Project (double-click or right-click -> Add to Project)
 
 ## Step 1: Finding the correct material name
@@ -160,8 +160,8 @@ First, add the .mlsetup to your project. You can either expand the `CKeyValuePai
 <figure><img src="../../../../.gitbook/assets/adding_item_to_project.png" alt=""><figcaption></figcaption></figure>
 
 1. In the project explorer under Wolvenkit's `archive` folder, right-click on the `mlsetup` file\
-   _This folder will only be visible in the "source" or "archive" tab of your_ [_project explorer_](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer)
-2. Select "[Convert to JSON](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json)"
+   &#xNAN;_&#x54;his folder will only be visible in the "source" or "archive" tab of your_ [_project explorer_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer)
+2. Select "[Convert to JSON](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json)"
 
 ## Step 3: Editing the .mlsetup file
 
@@ -169,8 +169,8 @@ First, add the .mlsetup to your project. You can either expand the `CKeyValuePai
 If you don't have MLSetupBuilder installed, you need to [do that now](../../../../for-mod-creators-theory/modding-tools/mlsetup-builder/#installation). If you don't know how to use it, please check [#using-mlsb](../../../../for-mod-creators-theory/modding-tools/mlsetup-builder/#using-mlsb "mention")
 {% endhint %}
 
-1. Optional: If you don't see an `mlsetup.json` in your project, switch the [Project Explorer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer) to `source` or `raw`.
-2. Right-click on the file and [open it in MLSetupBuilder](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#open-in-mlsetupbuilder).
+1. Optional: If you don't see an `mlsetup.json` in your project, switch the [Project Explorer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer) to `source` or `raw`.
+2. Right-click on the file and [open it in MLSetupBuilder](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#open-in-mlsetupbuilder).
 
 <details>
 
@@ -251,7 +251,7 @@ Consider converting your mod to use [archivexl-patching-appearances.md](../archi
 
 First, create a new entry in MaterialEntries by duplicating the latest item as a new entry:
 
-![](../../../../.gitbook/assets/changing\_materials\_duplciate\_as\_new\_item.png)
+![](../../../../.gitbook/assets/changing_materials_duplciate_as_new_item.png)
 
 Change its name to something unique.
 

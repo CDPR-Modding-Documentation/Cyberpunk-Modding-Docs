@@ -27,8 +27,8 @@ This guide was initially written with game version 1.6 of Cyberpunk 2077.
 
 To export a location, you need to know its files — you can either pick them from [our list](../../for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/) or [go and find them](../../for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/places.md) (and add them to the list, please).
 
-1. Add all sector files that you want to edit to your project by [finding them in the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) and double-clicking them.
-2. Open the [script manager](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/script-manager)&#x20;
+1. Add all sector files that you want to edit to your project by [finding them in the asset browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) and double-clicking them.
+2. Open the [script manager](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/script-manager)&#x20;
 3. Open `Export_Sector.wscript` by double-clicking on the file name
    * You may get a pop-up: "Trying to open a system file. Should a local copy be created?"\
      If so, click **Yes**.
@@ -108,7 +108,7 @@ With ArchiveXL >= 1.8.0, this process is **outdated**. Check the other guides in
 
 <summary>I get it, show me the docs</summary>
 
-* Download this script ([raw link](https://raw.githubusercontent.com/Simarilius-uk/CP2077\_BlenderScripts/main/export\_to\_JSONs.py)) from [Sim's github](https://github.com/Simarilius-uk/CP2077\_BlenderScripts/blob/main/export\_to\_JSONs.py)&#x20;
+* Download this script ([raw link](https://raw.githubusercontent.com/Simarilius-uk/CP2077_BlenderScripts/main/export_to_JSONs.py)) from [Sim's github](https://github.com/Simarilius-uk/CP2077_BlenderScripts/blob/main/export_to_JSONs.py)&#x20;
 * Switch to Blender's scripting perspective and paste the code there
 * Adjust line 30 and change the path assigned to 'project' to the path of your cyberpunk project. Make sure to double the backslashes.\
   Example: \
@@ -116,7 +116,7 @@ With ArchiveXL >= 1.8.0, this process is **outdated**. Check the other guides in
   after:     `project = 'D:\\Cyberpunk_Modding\\world_editing\\myproject'`
 * In your Wolvenkit project's root folder, create the folder `output`
 * Run the script by clicking the ▷ button\
-  _If the script throws errors and you can't resolve them on your own or with the help of ChatGPT, find us on_ [_Discord_](https://discord.gg/redmodding)_!_
+  &#xNAN;_&#x49;f the script throws errors and you can't resolve them on your own or with the help of ChatGPT, find us on_ [_Discord_](https://discord.gg/redmodding)_!_
 * Via Windows Explorer, copy the json file from the `output` directory in your Wolvenkit project over the file with the same name in the `raw` directory.
 * In Wolvenkit, right-click on the file you just copied and select "Import from json"
 * You're done!

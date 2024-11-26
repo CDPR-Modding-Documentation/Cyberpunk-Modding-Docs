@@ -94,7 +94,7 @@ If it's not, that **could** indicate that you have the wrong .app file. It could
 
 3. Configure the yaml [as described here](./#yaml-define-the-field)
 4. Set up **one** (1) appearance for testing by [assigning the correct visual tags](./#.app-file-define-the-visual-tag). \
-   _Do not delete the other appearances yet, future you might need them for troubleshooting._
+   &#xNAN;_&#x44;o not delete the other appearances yet, future you might need them for troubleshooting._
 5. Start the game and make sure that you can spawn a custom weapon with the appearance you picked and that it
    1. shows up in inventory/photo mode
    2. shows up in first person

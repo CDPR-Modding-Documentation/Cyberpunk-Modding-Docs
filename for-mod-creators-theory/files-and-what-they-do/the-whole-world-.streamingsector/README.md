@@ -77,7 +77,7 @@ For example, the **loft apartment** uses these files:&#x20;
 `interior_-48_-31_2_0.streamingsector`: interior decoration, clutter
 
 Note that the numbers are simply duplicated and rounded down. \
-_No, I don't know how you round down 2\*16 to 31 either._
+&#xNAN;_&#x4E;o, I don't know how you round down 2\*16 to 31 either._
 {% endhint %}
 
 Some locations are partially defined in **quest sectors**, where parts of the location are locked away behind story triggers (for example half of V's apartment, as a lot of decoration will only be shown after completing quests). The exact process isn't fully understood as of May 2023.

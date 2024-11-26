@@ -6,7 +6,7 @@ description: Guide originally written by Pinkydude
 
 ## Summary
 
-**Created:** ??? by  **PinkyDude 🦝**on [Google Docs](https://docs.google.com/document/d/1-hTJJ6eKrA\_kjcRI5hKwiGt4xbzuLhuLZk\_tTthb0Ao/edit#heading=h.kvak42tu0v94)\
+**Created:** ??? by  **PinkyDude 🦝**on [Google Docs](https://docs.google.com/document/d/1-hTJJ6eKrA_kjcRI5hKwiGt4xbzuLhuLZk_tTthb0Ao/edit#heading=h.kvak42tu0v94)\
 **Last documented update:** Jul 05 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 > **Pinky's note:** _Thanks to ITzsassha for motivating me in writing this tutorial! 💛_
@@ -22,7 +22,7 @@ The example will put Mateo's shirt on Placide, but you can use any two body type
 
 <table><thead><tr><th width="155">Tool</th><th>Version</th><th>Explanation</th></tr></thead><tbody><tr><td><a href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/eli5-getting-started">Wolvenkit</a></td><td>>= 8.14 (<a href="https://github.com/WolvenKit/Wolvenkit/releases">Stable </a>| <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a>)</td><td>For modifying game files and packing your mod</td></tr><tr><td><a data-mention href="../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/">wolvenkit-blender-io-suite</a></td><td>The most recent version (<a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases">github</a>)</td><td>Importing and exporting from Wolvenkit</td></tr><tr><td><a href="https://www.blender.org/download/releases/4-1/">Blender</a></td><td>As supported by the IO suite. As of August 24, that is <a href="https://www.blender.org/download/releases/4-1/">4.0.1</a></td><td>Doing the actual work</td></tr></tbody></table>
 
-You also need a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) with the item that you want to convert.&#x20;
+You also need a [Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) with the item that you want to convert.&#x20;
 
 If you don't have one yet, you can check out [adding-new-items](adding-new-items/ "mention") and download the example project.
 
@@ -50,7 +50,7 @@ Placide uses the “Man Big” (MB) rig!
 These steps won't be covered here in detail — for a step-by-step guide, see [r-and-r-refitting-step-by-step.md](recolours-and-refits/r-and-r-refitting-step-by-step.md "mention")[#step-4-refitting](recolours-and-refits/r-and-r-refitting-step-by-step.md#step-4-refitting "mention")
 {% endhint %}
 
-Doing a simple mesh refitting wo_n_’t work since the rigs don’t match/the bones don’t align correctly!
+Doing a simple mesh refitting w&#x6F;_&#x6E;_’t work since the rigs don’t match/the bones don’t align correctly!
 
 ![](<../../.gitbook/assets/2 (3) (1).png>)
 

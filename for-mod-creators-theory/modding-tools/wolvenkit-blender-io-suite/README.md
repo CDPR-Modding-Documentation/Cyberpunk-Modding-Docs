@@ -81,7 +81,7 @@ To check out the more detailed process with a Transfer Weight modifier, check ou
 3. Press `Ctrl+L` and select `Transfer Mesh Data`
 4. In the popup at the bottom left of your viewport, change the following properties:
 
-#### ![](../../../.gitbook/assets/wkit\_io\_suite\_transfer\_weights\_by\_hand.png)
+#### ![](../../../.gitbook/assets/wkit_io_suite_transfer_weights_by_hand.png)
 
 5. Click anywhere else. You're done!
 
@@ -114,6 +114,6 @@ If the UV checker is currently assigned, pushing the button again will restore t
 The collision tools and -generator can
 
 * generate of convex colliders with the exact shape of your mesh\
-  _The number of vertices to sample should be set to match the number set in the .phys file in order to ensure successful export_
+  &#xNAN;_&#x54;he number of vertices to sample should be set to match the number set in the .phys file in order to ensure successful export_
 * generate box and capsule colliders with either user specified sizing or sized automatically to match the selected mesh
 * export edited collision bodies back to .phys \*\*\*currently requires a wolvenkit converted .phys.json file

@@ -69,7 +69,7 @@ After your edit, make sure of the following things:
 * There is still a comma (`,`) after the text you changed
 * There is still a colon (`:`) in front of the text you changed
 * The line you changed still has the same number of leading spaces (indent). \
-  _Only spaces at the beginning matter, anything else is just looking pretty._
+  &#xNAN;_&#x4F;nly spaces at the beginning matter, anything else is just looking pretty._
 {% endhint %}
 
 Save the file and start the game.&#x20;
@@ -125,7 +125,7 @@ If you are missing any properties, open the template and copy them from there.
 
 ## OK, what now?
 
-If you're satisfied with your colour, it's time to test! Save your file, then [install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your Wolvenkit project:
+If you're satisfied with your colour, it's time to test! Save your file, then [install and launch](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your Wolvenkit project:
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FUs6kZEwmFHhn8f8QCIKb%2Fwolvenkit_install_and_launch.png?alt=media&#x26;token=66c24ef4-0525-4476-80a2-aaf461f445ac" alt=""><figcaption></figcaption></figure>
 

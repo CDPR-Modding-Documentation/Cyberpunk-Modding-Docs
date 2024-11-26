@@ -33,11 +33,11 @@ I have repeatedly observed that newbies are fine with this guide, while people w
 {% endhint %}
 
 _The guide was created after reading_ [_this one_](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view) _and being left with a bunch of question marks. This guide is horribly outdated and I'm only citing it here because it got me started into the rabbit hole._\
-_To get a deeper understanding of the process, you can follow the linked resources, or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
+&#xNAN;_&#x54;o get a deeper understanding of the process, you can follow the linked resources, or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
 
 ### Wait, that's not what I want!
 
-* To troubleshoot your ArchiveXL mods, you can use [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/ "mention")'s [File Validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention").
+* To troubleshoot your ArchiveXL mods, you can use [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/ "mention")'s [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention").
 * If you want to convert a mod to dynamic appearances, check the [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention")
 * If you want to use dynamic appearances out of the box, check [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention") (this is the preferred approach as soon as you're creating different options).
 
@@ -70,7 +70,7 @@ Actually, no! This is how you later debug your custom items — by packing your 
 We're starting with a dry run to get you familiar with the process.
 {% endhint %}
 
-Press [Install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch "mention") in WolvenKit. This will do the following things:
+Press [Install and launch](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch "mention") in WolvenKit. This will do the following things:
 
 1. Wipe the folder `packed`
 2. Copy all supported file entries from `source` to their destination under `packed`
@@ -420,7 +420,7 @@ Check the following places:
     * Without leading or trailing spaces?
   * Does the second value of that entry have the correct root entity path?\
     (`tutorial\myshirt\root_entity.ent` in the picture above)\
-    _If you moved the `root_entity.ent`, you have to adjust this entry._
+    &#xNAN;_&#x49;f you moved the `root_entity.ent`, you have to adjust this entry._
 * `root_entity.ent:`
   * Do you have an appearance with the `name` matching your item's `appearanceName` in the yaml?
     * Without leading or trailing spaces?
@@ -452,12 +452,12 @@ If there are no errors in any of the log files, check the following places:
 
 ### The item spawns, but…
 
-Congratulations, you've made it into the lower left part of the diagram, and can also make use of Wolvenkit's [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) now! The error will be somewhere here:
+Congratulations, you've made it into the lower left part of the diagram, and can also make use of Wolvenkit's [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) now! The error will be somewhere here:
 
 <figure><img src="../../../.gitbook/assets/axl_troubleshooting_03_spawned_item_05_v_is_bald.jpg" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-[File validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) can help you catch the error.
+[File validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) can help you catch the error.
 {% endhint %}
 
 {% hint style="info" %}
@@ -532,7 +532,7 @@ For more detailed error handling, check the sections below, or check [this page]
 In the "Mesh Preview" tab of your mesh, you can "Generate Materials for Appearance". If the correct colours show up, you can at least rule out that the error is in the .\*mesh or its material.
 {% endhint %}
 
-The easiest way to troubleshoot your mesh is by using Wolvenkit's [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) and keep an eye on the log view.
+The easiest way to troubleshoot your mesh is by using Wolvenkit's [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) and keep an eye on the log view.
 
 <details>
 
@@ -556,7 +556,7 @@ If none of that helps, I suggest
 
 Congratulations, this is about the easiest-to-resolve error that you could've had. Your mesh is loaded correctly, there is only a problem with the rendered **material**.
 
-The easiest way to troubleshoot your materials is by using Wolvenkit's [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) and keep an eye on the log view.
+The easiest way to troubleshoot your materials is by using Wolvenkit's [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) and keep an eye on the log view.
 
 <details>
 

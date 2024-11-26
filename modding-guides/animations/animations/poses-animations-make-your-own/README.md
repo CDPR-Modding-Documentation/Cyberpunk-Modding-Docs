@@ -24,7 +24,7 @@ If you have never done this before, don't do both at once. Or... do whatever, bu
 
 {% hint style="warning" %}
 We all stand on the shoulders of giants: this process has first been documented \
-by [xbaebsae | Angy](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/), who also provided the [original animation templates](https://drive.google.com/file/d/1kL04dQy9xmK\_yRsvsS4Sn83joPzrljAr/view). You can find a link to their version of the guide in the menu on the left.&#x20;
+by [xbaebsae | Angy](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/), who also provided the [original animation templates](https://drive.google.com/file/d/1kL04dQy9xmK_yRsvsS4Sn83joPzrljAr/view). You can find a link to their version of the guide in the menu on the left.&#x20;
 
 Thank you!
 {% endhint %}
@@ -60,10 +60,10 @@ You will need the following software (install at least this version or higher):
 
 To import your pose into Cyberpunk, you need a Wolvenkit project.&#x20;
 
-1. [Create a project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#creating-a-new-wolvenkit-mod-project). Give it a name that you can identify later.
+1. [Create a project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#creating-a-new-wolvenkit-mod-project). Give it a name that you can identify later.
 2. Now, your project needs the photo mode .anims file appropriate for your pose(s). The table below shows your options.\
    \
-   [Search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for the correct photo mode file and add it to your project:
+   [Search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for the correct photo mode file and add it to your project:
 
 | body gender | file                                                           |
 | ----------- | -------------------------------------------------------------- |
@@ -72,7 +72,7 @@ To import your pose into Cyberpunk, you need a Wolvenkit project.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/add anims file to project.png" alt=""><figcaption><p>This is what adding your .anims to your project may look like</p></figcaption></figure>
 
-3. Export the file(s) to GLB via [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-location-tools). Default settings are fine.\
+3. Export the file(s) to GLB via [Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-location-tools). Default settings are fine.\
    \
    (We will **overwrite** these glb(s) with our new pose, then use Wolvenkit to merge them into the existing .anims file.)
 
@@ -84,8 +84,8 @@ You **can not move** these .glb files. Wolvenkit needs them to stay where they a
 
 Download the animation template(s) for your rig(s):
 
-* for [single characters](https://drive.google.com/file/d/1kL04dQy9xmK\_yRsvsS4Sn83joPzrljAr/view): from Angy's Google Drive or check [Easy IK based Posing](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-ik-based-posing/)
-* for [multiple characters](https://drive.google.com/file/d/1KPMGrlNa-CEgsOi4YSIEn3g7U-DNC\_pP/view): Zwei's edit of Angy's templates
+* for [single characters](https://drive.google.com/file/d/1kL04dQy9xmK_yRsvsS4Sn83joPzrljAr/view): from Angy's Google Drive or check [Easy IK based Posing](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-ik-based-posing/)
+* for [multiple characters](https://drive.google.com/file/d/1KPMGrlNa-CEgsOi4YSIEn3g7U-DNC_pP/view): Zwei's edit of Angy's templates
 
 Move/copy them somewhere, then open the one you want in Blender.&#x20;
 
@@ -181,7 +181,7 @@ The names **must** be the same, and they **must** match the name in your .anim f
 6. Double-check the names. (Yes, this is **that** important)
 7. **Optional:** To add another pose, you can go back to Step 1, then rinse and repeat.
 8. Now that you're sure that you have the correct names, switch the viewport back to **Object Mode** (the same way you switched to pose mode). Your armature should still be selected.\
-   _TODO: This step will be made **optional** when the Blender plugin update hits. Update guide when it does._
+   &#xNAN;_&#x54;ODO: This step will be made **optional** when the Blender plugin update hits. Update guide when it does._
 
 ### **Exporting**
 
@@ -196,7 +196,7 @@ Now it's time to import the file back into Wolvenkit.
 
 ## Step 3: Importing and testing
 
-1. Switch back to Wolvenkit and open the [Import Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-location-tools).
+1. Switch back to Wolvenkit and open the [Import Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-location-tools).
 2. Click on `photomode__female__idle.glb` to select it and open the import settings panel.
 3. In the panel on the right, change `Target File Format` to Anims:
 
@@ -231,7 +231,7 @@ If Wolvenkit's console tells you something like this:
 animation `anim_name` has no extra data, can't import!
 ```
 
-1. To make sure that the `.glb` file that you want to **import into** is okay, do a fresh [Wolvenkit export](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) of your `.anim` with a Wolvenkit version from after February 10 2024 (>8.13 should be ok)
+1. To make sure that the `.glb` file that you want to **import into** is okay, do a fresh [Wolvenkit export](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) of your `.anim` with a Wolvenkit version from after February 10 2024 (>8.13 should be ok)
 2. Use the Wolvenkit Blender IO suite [**1.5.3**](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/v1.5.3) **or greater** to [export as animation](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-wolvenkit). If the error does not go away, update the plugin.
 3. Import the .glb file into Wolvenkit again.
 

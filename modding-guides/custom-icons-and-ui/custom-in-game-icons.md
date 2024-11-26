@@ -28,7 +28,7 @@ If you want to use the in-game previews, you can find them under `base\gameplay\
 Download the template archive:\
 \
 [**Template Download ⇗**\
-](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas\_templates\_apart\_v1.zip/file)\
+](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas_templates_apart_v1.zip/file)\
 This includes the following files:
 
 | Template                      | Size of slot image |
@@ -75,11 +75,7 @@ We are renaming both files to `preview_icons` to avoid confusion in the future:
 5. Link the **xbm** file to the **inkatlas:** copy the relative path (right click on the file -> "copy relative path") and paste it on the texture slot on the **inkatlas** (image A)
 6.
 
-    <div align="left" data-full-width="true">
-
-    <figure><img src="../../.gitbook/assets/image (209).png" alt=""><figcaption><p>Image A</p></figcaption></figure>
-
-    </div>
+    <div align="left" data-full-width="true"><figure><img src="../../.gitbook/assets/image (209).png" alt=""><figcaption><p>Image A</p></figcaption></figure></div>
 7. _<mark style="color:red;">(Optional)</mark>_ If you want to connect the **inkatlas** with your item, refer to the [ArchiveXL **⇗** ](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/custom-icons-and-ui/adding-items-preview-images)guide for detailed instructions. \
    \
    In the YAML file created for your item, include the path in the "icon" section (Image B).\

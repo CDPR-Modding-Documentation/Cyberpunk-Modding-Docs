@@ -68,7 +68,7 @@ This is an excellent way to brick your savegame forever. Make a backup. You have
 
 While you progress through the main story, Cyberpunk will log your progress by setting `quest facts`.  These are not standardized and will only be checked under specific circumstances, usually when the game is about to trigger the next stage of a quest or event.&#x20;
 
-**Once that moment has passed, there is **_**no**_** way to re-trigger it other than loading an earlier save.** This is not an issue of tooling, it's simply due to how Cyberpunk's quest system works.
+**Once that moment has passed, there is&#x20;**_**no**_**&#x20;way to re-trigger it other than loading an earlier save.** This is not an issue of tooling, it's simply due to how Cyberpunk's quest system works.
 
 #### Can I Change the Outcomes of Quests?
 

@@ -40,9 +40,9 @@ The first step is to **isolate** the problem. Make sure that it is exactly this 
 
 1. Temporarily [remove all mods](./#step-1-temporarily-disable-all-your-mods) from your game.
 2. Install **only** the problem child together with **all** [**dependencies**](requirements-explained.md). Make sure that they're all on the most recent version. Does the problem still happen? \
-   _(If not, then it's something else)_
+   &#xNAN;_(If not, then it's something else)_
 3. Now, disable **only** the problem child. Does the problem go away?\
-   _(If not, then it's one of the dependencies)_
+   &#xNAN;_(If not, then it's one of the dependencies)_
 
 {% hint style="info" %}
 If the problematic mod is a core framework, please read [the next section](broken-mods-how-to-help.md#for-a-core-framework) as well.

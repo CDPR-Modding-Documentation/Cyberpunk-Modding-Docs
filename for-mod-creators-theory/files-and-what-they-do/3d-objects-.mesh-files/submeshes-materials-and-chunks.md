@@ -61,7 +61,7 @@ You want red and blue glowing tubes on the example helmet.
 3. [Export](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender) the new geometry and import it into Wolvenkit
 4. Your mesh will now have **six** submeshes instead of its previous **five**
 5. For each **appearance** that you have defined, add a chunkMaterial entry. \
-   _If you skip this step, the new submesh will have no material assigned, and be invisible._
+   &#xNAN;_&#x49;f you skip this step, the new submesh will have no material assigned, and be invisible._
 
 ## Chunkmasks: partially hiding meshes
 
@@ -109,7 +109,7 @@ See [#inspecting-chunkmasks](../../modding-tools/redhottools/#inspecting-chunkma
 
 If a submesh does not end in LOD1, that means it's intended for **lower resolutions** (for example, if an object is far away).&#x20;
 
-By default, Wolvenkit [removes](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#lod-filter-default) these low-resolution meshes on export, since you don't normally want them for modded characters or items.
+By default, Wolvenkit [removes](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#lod-filter-default) these low-resolution meshes on export, since you don't normally want them for modded characters or items.
 
 {% hint style="info" %}
 Under [the-whole-world-.streamingsector](../the-whole-world-.streamingsector/ "mention"), you can find an explanation of how cyberpunk handles world sector Level of Detail (LOD).

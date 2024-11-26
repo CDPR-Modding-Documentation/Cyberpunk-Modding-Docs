@@ -24,12 +24,12 @@ Wikis are the most open source thing since the invention of democracy, because e
 In terms of our wiki, that means:
 
 * **Everyone** can learn how to make mods for Cyberpunk 2077\
-  _You don't know shit about Netrunning? Doesn't matter,_ [_here's how you can make a t-shirt_](../modding-guides/items-equipment/adding-new-items/)_!_
+  &#xNAN;_&#x59;ou don't know shit about Netrunning? Doesn't matter,_ [_here's how you can make a t-shirt_](../modding-guides/items-equipment/adding-new-items/)_!_
 * We don't have to research stuff all over\
   [_Here's what we have about glowing materials_](../for-mod-creators-theory/materials/configuring-materials/emissive-material-properties.md)_. Want more than that? Here's where you can start digging..._
 * You can easily find people who can help you\
-  _Published: Feb 11 2024 by_ [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-  _If you make any progress on this, please contact_ [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") _on Discord_
+  &#xNAN;_&#x50;ublished: Feb 11 2024 by_ [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+  &#xNAN;_&#x49;f you make any progress on this, please contact_ [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") _on Discord_
 
 **Unfortunately, most people don't edit the wiki.**
 

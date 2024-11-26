@@ -26,7 +26,7 @@ Medium - you should have some general knowledge of Blender and Wolvenkit
 
 ## Setting up
 
-1. Create a [new Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
+1. Create a [new Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
 2. Find an add one of the following files (the correct one for your body gender):&#x20;
 
 ```
@@ -100,7 +100,7 @@ X and Y is **flipped** inside of Wolvenkit compared to blender, so flip those va
 {% endhint %}
 
 5. You need to do this for both sides of the body, so find the corresponding bone\
-   _If the name of your bone ends with `_r`, the corresponding bone ends with `_l`, and vice versa_
+   &#xNAN;_&#x49;f the name of your bone ends with `_r`, the corresponding bone ends with `_l`, and vice versa_
 6. Save your changes
 7. Open the other file in Wolvenkit, and repeat steps 2-6.
 8. If you are not using [Unique V Body Framework](https://www.nexusmods.com/cyberpunk2077/mods/3725), proceed to the next section - otherwise, read on.
@@ -117,12 +117,12 @@ To ensure compatibility, you need to re-name any files you edited:&#x20;
 ## Testing
 
 1. Before packing your mod, **delete** the `.mesh` file that you exported in step 1. Your mod should only contain files with the extension `.rig`.
-2. Hit the [Install and Run](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) button on the Wolvenkit toolbar
+2. Hit the [Install and Run](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) button on the Wolvenkit toolbar
 3. Start up the game
 
 ***
 
-<mark style="color:blue;">**Tada!**</mark>** if you did everything right then you can now cosplay as your favorite ant.**
+<mark style="color:blue;">**Tada!**</mark>**&#x20;if you did everything right then you can now cosplay as your favorite ant.**
 
 <figure><img src="../../.gitbook/assets/{CDA6FFB5-9AA2-4885-93E3-9A315466D1EE}.png" alt=""><figcaption><p>Peak female form.</p></figcaption></figure>
 

@@ -6,7 +6,7 @@ description: Item spawn codes and how they link to appearances
 
 ## What's a BaseID?
 
-Each item is **uniquely identified** by this string[^1]. You can use it to spawn items via [Cyber Engine Tweaks](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/console#console-ui) with the following command:&#x20;
+Each item is **uniquely identified** by this string[^1]. You can use it to spawn items via [Cyber Engine Tweaks](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/console/console#console-ui) with the following command:&#x20;
 
 ```
 Game.AddToInventory("Items.money", 5000)
@@ -17,7 +17,7 @@ Game.AddToInventory("Items.money", 5000)
 ## Lists of Base IDs
 
 {% hint style="info" %}
-You can usually find any BaseID on the [fandom](https://cyberpunk.fandom.com/wiki/Cyberpunk\_2077\_Clothing) wiki. Search for a game item, then expand the section "technical details" in the box to the right.
+You can usually find any BaseID on the [fandom](https://cyberpunk.fandom.com/wiki/Cyberpunk_2077_Clothing) wiki. Search for a game item, then expand the section "technical details" in the box to the right.
 {% endhint %}
 
 A selection of lists for looking up item codes. Alternatively, you can browse through the game's files, or search the web.
@@ -94,8 +94,8 @@ Some items don't obey [#the-naming-scheme](spawn-codes-baseids-hashes.md#the-nam
 
 ### The Tweak Browser
 
-1. Find and open the [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser) and wait for it to initialize. \
-   _As of Wolvenkit 8.14, it is pinned to the right side of the viewport_
+1. Find and open the [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser) and wait for it to initialize. \
+   &#xNAN;_&#x41;s of Wolvenkit 8.14, it is pinned to the right side of the viewport_
 2. Search for your item, e.g. `Q005_Johnny_Pants`
 3. Select one of the entries from the list on the left
 4. In the detail panel with the item's properties, find the `appearanceName`.
@@ -108,7 +108,7 @@ Some items don't obey [#the-naming-scheme](spawn-codes-baseids-hashes.md#the-nam
 
 ### The Wolvenkit Search
 
-Depending on what you are looking for, you can check [Wolvenkit Search: Finding files](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files "mention") and dig directly for the mesh file. This might be tedious, but you'll also discover a lot of things on the way, so it's definitely worth a try!
+Depending on what you are looking for, you can check [Wolvenkit Search: Finding files](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files "mention") and dig directly for the mesh file. This might be tedious, but you'll also discover a lot of things on the way, so it's definitely worth a try!
 
 
 

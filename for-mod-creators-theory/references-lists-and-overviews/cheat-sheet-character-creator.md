@@ -14,7 +14,7 @@ This page lists various properties of the character creator. Use the Table of Co
 Please note that this page lists **appearances** and **colours**. For **mesh paths**, please check [cheat-sheet-head](cheat-sheet-head/ "mention")
 
 {% hint style="info" %}
-You can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker) to find the correct appearances.&#x20;
+You can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/npv_part_picker) to find the correct appearances.&#x20;
 {% endhint %}
 
 ## List of CC options in order
@@ -61,7 +61,7 @@ For a mod fixing various mix-ups in the character creator, see [here](https://ww
 
 Lipstick colours and styles are sorted in (more or less) ascending order in the appearance list in the mesh.&#x20;
 
-Style order is Default - Glossy - Matte (no suffix, \_02_, \__03)
+Style order is Default - Glossy - Matte (no suffix, \_0&#x32;_, \__&#x30;3)
 
 Link: [Reference images on imgur](https://imgur.com/a/NlbCHYK)
 
@@ -149,7 +149,7 @@ For a list of [#name-of-meshes-by-index](cheat-sheet-head/hair.md#name-of-meshes
 
 ## Piercings and submeshes
 
-Chunkmasks for different piercing meshes (for custom NPCs etc), thanks to [xbae's NPV part picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker)
+Chunkmasks for different piercing meshes (for custom NPCs etc), thanks to [xbae's NPV part picker](https://noraleedoes.neocities.org/npv/npv_part_picker)
 
 <table><thead><tr><th width="115">Piercing</th><th width="382">file names</th><th>chunkmask</th></tr></thead><tbody><tr><td>01</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>4<br>1<br>2</td></tr><tr><td>02</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh</td><td>15<br>2048</td></tr><tr><td>03</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh</td><td>1040<br>263</td></tr><tr><td>04</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>4<br>2268<br>1</td></tr><tr><td>05</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>536<br>2873<br>2</td></tr><tr><td>06</td><td>i1_000_pXa_c__basehead_earring_02.mesh</td><td>5153</td></tr><tr><td>07</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>2562<br>2<br>4094</td></tr><tr><td>08</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>520<br>8064<br>1</td></tr><tr><td>09</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>2052<br>35<br>4092</td></tr><tr><td>10</td><td>i1_000_pXa_c__basehead_earring_01.mesh<br>i1_000_pXa_c__basehead_earring_02.mesh<br>i1_000_pXa_c__basehead_earring_03.mesh</td><td>1548<br>6143<br>3</td></tr><tr><td>11</td><td>i1_000_pXa_c__basehead_earring_01.mesh</td><td>2047</td></tr><tr><td>12 (fV)</td><td>1_000_pwa_c__basehead_earring_04.mesh</td><td>4</td></tr><tr><td>12 (mV)</td><td>1_000_pma_c__basehead_earring_01.mesh</td><td>512</td></tr><tr><td>13 (fV)</td><td>1_000_pwa_c__basehead_earring_04.mesh</td><td>1</td></tr><tr><td>13 (mV)</td><td>1_000_pma_c__basehead_earring_01.mesh</td><td>8</td></tr><tr><td>14 (fV)</td><td>1_000_pwa_c__basehead_earring_04.mesh</td><td>2</td></tr><tr><td>14 (mV)</td><td>1_000_pma_c__basehead_earring_04.mesh</td><td>4</td></tr><tr><td>15 (mV)</td><td>i1_000_pma_c__basehead_earring_04.mesh</td><td>1</td></tr><tr><td>16 (mV)</td><td>i1_000_pma_c__basehead_earring_04.mesh</td><td>2</td></tr></tbody></table>
 

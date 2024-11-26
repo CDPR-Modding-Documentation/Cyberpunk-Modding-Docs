@@ -170,9 +170,9 @@ Simple base game clothing will have a flat red layer. If you have a flat **black
 With vanilla items, you will see red GarmentSupportCap on areas that will either
 
 * directly intersect with the body \
-  _(the ends of sleeves and legs, the bottom of a shirt, the opening of a turtleneck...)_
+  &#xNAN;_(the ends of sleeves and legs, the bottom of a shirt, the opening of a turtleneck...)_
 * sit right above something that _shouldn't_ be deformed \
-  _(the player body, or a tight-fitting shirt, or the lapels of an open jacket)_
+  &#xNAN;_(the player body, or a tight-fitting shirt, or the lapels of an open jacket)_
 
 The cap **provides a shrinking limit**, so without GarmentSupportCap, every part of your mesh will apply shrinking/tucking on the meshes layered "below".&#x20;
 
@@ -204,7 +204,7 @@ It's not doing that to spite you. Most likely, you have a non-unique component I
 
 ### Importing with Garment Support
 
-Make sure that your mesh has the [Import Garment Support](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") property checked (this should be default by now).
+Make sure that your mesh has the [Import Garment Support](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") property checked (this should be default by now).
 
 If that doesn't work, you still have the option to re-create [garment-support-from-scratch.md](garment-support-from-scratch.md "mention") in Blender
 

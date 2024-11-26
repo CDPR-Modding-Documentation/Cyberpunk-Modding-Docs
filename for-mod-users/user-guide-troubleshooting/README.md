@@ -20,7 +20,7 @@ Before you start debugging, make sure that&#x20;
 * your **graphics driver** is up-to-date
 * your [**Windows**](https://support.microsoft.com/en-us/windows/get-the-latest-windows-update-7d20e88c-0568-483a-37bc-c3885390d212) is up-to-date (no, _really_) and that you are at least on Windows 10
 * you have the most recent version of [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.3-windows-x64-installer) installed
-* you have [Visual C++ Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed ([direct download](https://aka.ms/vs/17/release/vc\_redist.x64.exe), Microsoft)
+* you have [Visual C++ Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed ([direct download](https://aka.ms/vs/17/release/vc_redist.x64.exe), Microsoft)
 * your game is running from an SSD (Solid State Disk) rather than a HDD
 {% endhint %}
 
@@ -52,7 +52,7 @@ This section aims to give you a quick overview. If your exact problem isn't list
 * [Photomode screenshots are borked](./#photomode-screenshots-are-blank)
 * [Press \[none\] to continue / can't skip loading screen](./#press-none-to-continue-cant-skip-loading-screen)
 * [You have audio issues](./#audio-problems)
-* [You have trouble with CET (Cyber Engine Tweaks)](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/getting-started/installing/troubleshooting)
+* [You have trouble with CET (Cyber Engine Tweaks)](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/getting-started/installing/troubleshooting)
   * [CET is not starting](./#cet-isnt-starting)
   * [You forgot your CET keybind](./#you-forgot-your-cet-keybind)
 * [XML Document parsed with errors](./#xml-document-parsed-with-errors)
@@ -187,7 +187,7 @@ At the current time (09/2023, before PL), that has been confirmed to affect thos
 
 1. Run [mod remover](https://www.nexusmods.com/cyberpunk2077/mods/8597?tab=description) (Usage instructions are on the modpage itself)
 2. Downgrade your game to [1.63\_hotfix\_1](../users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
-3. Install [Immersive Rippers](https://www.nexusmods.com/cyberpunk2077/mods/7064?tab=files\&file\_id=47612) and all of its dependencies and all of **their** dependencies
+3. Install [Immersive Rippers](https://www.nexusmods.com/cyberpunk2077/mods/7064?tab=files\&file_id=47612) and all of its dependencies and all of **their** dependencies
 4. Load into your previously-crashing save&#x20;
 5. Move at least 100m away from the closest ripper&#x20;
 6. Copy the following commands and run them in the CET-Console:
@@ -323,7 +323,7 @@ Other than that, there are general troubleshooting steps, because **missing Wind
 
 * your graphics driver is up-to-date
 * you have the most recent version of [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.3-windows-x64-installer) installed
-* you have [Visual C++ Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed ([direct download](https://aka.ms/vs/17/release/vc\_redist.x64.exe), Microsoft)
+* you have [Visual C++ Redistributable 2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170) installed ([direct download](https://aka.ms/vs/17/release/vc_redist.x64.exe), Microsoft)
 
 Also, try starting the game **without Reshade** to rule it out as a source of crashes (this happened after the DLSS patch) and **temporarily disable your antivirus**.
 
@@ -376,7 +376,7 @@ Workaround suggested by CDPR:&#x20;
 
 Or check Reddit:
 
-* [Downclock your processor](https://www.reddit.com/r/cyberpunkgame/comments/16pluqw/comment/k2f1wwh/?utm\_source=share\&utm\_medium=web2x\&context=3) (via reddit, do so **at own risk**)
+* [Downclock your processor](https://www.reddit.com/r/cyberpunkgame/comments/16pluqw/comment/k2f1wwh/?utm_source=share\&utm_medium=web2x\&context=3) (via reddit, do so **at own risk**)
 
 #### Run as admin
 
@@ -476,7 +476,7 @@ Effectively an in-game save editor that can give you a lot of items and even cre
 
 Makes multiple NPCs nude. In all versions since 2.0, this causes missing characters, missing body parts, exploding limbs, and other issues. Do not use the mod, there is a [Naked NPCs collection ](https://next.nexusmods.com/cyberpunk2077/collections/sao1yq)by modder marnhorn that does the same thing and will work on current game versions.
 
-#### <mark style="color:blue;">**Phone Messages Overhaul**</mark>** (PMO) and **<mark style="color:blue;">**8ug8ear Romance**</mark>** (standalone)**
+#### <mark style="color:blue;">**Phone Messages Overhaul**</mark>**&#x20;(PMO) and&#x20;**<mark style="color:blue;">**8ug8ear Romance**</mark>**&#x20;(standalone)**
 
 These mods change the game journal that controls all quests to add more romance options. This method only works on the patch it's made for and therefore they will not work on version 2.1 and later.\
 Other mods that do the same thing, but in a compatible way, are [Panam Romance Enhanced](https://www.nexusmods.com/cyberpunk2077/mods/4626) and Judy Romance Enhanced, which use ArchiveXL (the safe method).
@@ -509,7 +509,7 @@ jackhumbert's mod [ctdhelper](https://www.nexusmods.com/cyberpunk2077/mods/5205)
 If you don't want to download and run script files from the internet, you can go and [#step-1-temporarily-disable-all-your-mods](./#step-1-temporarily-disable-all-your-mods "mention") by hand. Otherwise:
 
 1. Download [this script](https://raw.githubusercontent.com/DoctorPresto/Cyberpunk-Helper-Scripts/main/FindAllErrors.bat) (**right-click -> save as**)\
-   _Link goes to Presto's_ [_github repository_](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/FindAllErrors.bat)
+   &#xNAN;_&#x4C;ink goes to Presto's_ [_github repository_](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/FindAllErrors.bat)
 2. Now, do either of the following things:&#x20;
    1. Move it to your Cyberpunk install folder and double-click it
    2. Drag-and drop your Cyberpunk folder on the file that you downloaded
@@ -548,7 +548,7 @@ To find out the **type** of broken mod, take each `Directory` from the following
 <table><thead><tr><th width="249">Kind of mod</th><th width="202">Directory</th><th>explanation</th></tr></thead><tbody><tr><td>.archive</td><td>\<code>mods</code></td><td>Redmod directory: contains .archive mods (in subfolders)</td></tr><tr><td>.archive</td><td>\<code>archive\pc\mod</code></td><td>Legacy directory: contains .archive mods</td></tr><tr><td>.lua (cyber engine tweaks)</td><td>\<code>bin\x64\plugins</code></td><td>Cyber Engine Tweaks</td></tr><tr><td>redscript</td><td><code>\r6\scripts</code></td><td>redscript mods</td></tr><tr><td>red4ext</td><td><code>\r6\tweaks</code></td><td>red4ext tweaks</td></tr></tbody></table>
 
 1. Rename the game data folder ([**game folder**](#user-content-fn-5)[^5] for short – e.g. `archive/pc/mod`) to a [**backup folder**](#user-content-fn-6)[^6] by appending an underscore (e.g. /`mod_`). \
-   _Only do this with the last subfolder in the path, the result should be `\archive\pc\mod_`, not `archive_\pc_\mod_\.`_
+   &#xNAN;_&#x4F;nly do this with the last subfolder in the path, the result should be `\archive\pc\mod_`, not `archive_\pc_\mod_\.`_
 2. The folder is now hidden from the game. Since it doesn't know, it will try to look inside anyway - create a new empty folder with the original name for that  (e.g. `/archive/pc/mod).`&#x20;
 3. Start the game. You will now run into one of these two scenarios:
    * **Your problem is gone:** Jackpot. This is the correct folder for [the next section](./#go-bisect): [#go-bisect](./#go-bisect "mention")\
@@ -900,7 +900,7 @@ In any of the commands below, you need to substitute `C:/Path/to/Cyberpunk2077` 
   takeown /R /A /F "C:/Path/to/Cyberpunk2077" /D N
   ```
 * If that didn't help, run the command `whoami` to see your current user name. You will need it for the next step.\
-  _It should be identical to your Windows username, but if you have spaces or special characters, Windows might get funny about the spelling._
+  &#xNAN;_&#x49;t should be identical to your Windows username, but if you have spaces or special characters, Windows might get funny about the spelling._
 * Run the following command (putting your actual game dir and the username from `whoami`):\
 
 * ```
@@ -1066,15 +1066,15 @@ According to InputLoader's [documentation](https://www.nexusmods.com/cyberpunk20
 ## CET isn't starting
 
 CET needs **at least** VisualC 14.40.33810.0 . You can download it from the official Microsoft website \
-([direct link](https://aka.ms/vs/17/release/vc\_redist.x64.exe))
+([direct link](https://aka.ms/vs/17/release/vc_redist.x64.exe))
 
 ## You forgot your CET keybind&#x20;
 
 Delete the file `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\bindings.json.` The game should let you bind a new key at the next startup.
 
 {% hint style="info" %}
-You can find more troubleshooting help for Cyber Engine Tweaks in the [corresponding wiki](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/getting-started/installing/troubleshooting): \
-[Cyber Engine Tweaks](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/ "mention") -> [Troubleshooting](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/getting-started/installing/troubleshooting "mention")
+You can find more troubleshooting help for Cyber Engine Tweaks in the [corresponding wiki](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/getting-started/installing/troubleshooting): \
+[Cyber Engine Tweaks](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/ "mention") -> [Troubleshooting](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/getting-started/installing/troubleshooting "mention")
 {% endhint %}
 
 ## Photomode screenshots are blank
@@ -1156,8 +1156,8 @@ If you don't want to download and run script files from the internet, you can go
 
 1. Download the mod remover script by either
    * downloading it from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8597/) and following the install instructions
-   * grabbing it from [github](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/batch/cyberpunk2077\_disable\_all\_mods.bat) (**right-click -> save as**) and moving it to your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/)\
-     _Link goes to the_ [_github repository_](https://github.com/manavortex/cyberpunk2077/blob/master/batch/cyberpunk2077\_disable\_all\_mods.bat) _of the person who wrote most of this guide_.
+   * grabbing it from [github](https://raw.githubusercontent.com/manavortex/cyberpunk2077/master/batch/cyberpunk2077_disable_all_mods.bat) (**right-click -> save as**) and moving it to your [Cyberpunk game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/)\
+     &#xNAN;_&#x4C;ink goes to the_ [_github repository_](https://github.com/manavortex/cyberpunk2077/blob/master/batch/cyberpunk2077_disable_all_mods.bat) _of the person who wrote most of this guide_.
 2.  **Optional**: If you don't want the script to delete modded files for you (because you just want to disable mods), right-click on the file and select **Edit**, then find and delete line 6:
 
     ```

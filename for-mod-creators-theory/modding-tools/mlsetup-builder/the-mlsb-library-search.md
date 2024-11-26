@@ -42,7 +42,7 @@ We will add a first condition specifying in the options that our tags _Starts wi
 
 <figure><img src="../../../.gitbook/assets/mlsb_tags_guide_3" alt=""><figcaption><p>filtering Phantom Liberty only models</p></figcaption></figure>
 
-Then we can click on **Add Condition** and specify that the tags need to _Contains_ the word  `man` with a <mark style="color:yellow;">**space**</mark>** before** the word `man`\
+Then we can click on **Add Condition** and specify that the tags need to _Contains_ the word  `man` with a <mark style="color:yellow;">**space**</mark>**&#x20;before** the word `man`\
 The space is NEEDED since the also the keyword <mark style="color:yellow;">**woman**</mark> contain the word <mark style="color:yellow;">**man**</mark>
 
 <figure><img src="../../../.gitbook/assets/mlsb_tags_guide_4" alt=""><figcaption><p>The search will look like this</p></figcaption></figure>

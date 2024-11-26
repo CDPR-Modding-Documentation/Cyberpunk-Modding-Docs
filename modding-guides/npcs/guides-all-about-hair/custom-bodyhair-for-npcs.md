@@ -12,7 +12,7 @@ What you’ll need :\
 
 
 * [WolvenKIT](https://github.com/WolvenKit/WolvenKit/releases) or the game files extracted\
-  _\[basegame\_4\_animation.archive]_\
+  &#xNAN;_\[basegame\_4\_animation.archive]_\
 
 * The 010 hex editing software with the CP77 template as well as the scripts\
   [(I recommend joining the CP77 Modding server to grab those!)](https://discord.gg/fvNFPhJh8h)\
