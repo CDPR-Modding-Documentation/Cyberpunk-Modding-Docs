@@ -339,6 +339,7 @@
     * [Boe6's vehicles: Interaction collider .phys files](modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/interaction-collider-.phys-files.md)
     * [Boe6's vehicles: Textures & Materials](modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/textures-and-materials.md)
   * [🪟 Windows & Doors opening + MountedWeapons clue](modding-guides/vehicles/windows-and-doors-opening-+-mountedweapons-clue.md)
+  * [Fix Improper Interior Bounds](modding-guides/vehicles/creating_cutout_and_fixing_light_channel.md)
   * [💡 Interior lights](modding-guides/vehicles/interior-lights.md)
   * [🌈 CrystalCoat™](modding-guides/vehicles/crystalcoat-tm.md)
   * [⛱️ CrystalCoat™ & Advanced Customization](modding-guides/vehicles/crystalcoat-tm-1/README.md)
