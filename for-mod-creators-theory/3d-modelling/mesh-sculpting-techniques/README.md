@@ -6,8 +6,8 @@ description: Best Practices for actually changing meshes
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Published January 29 2023 by @manavortex | Edited by Na**\
-**Last documented edit: January 09 2024 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** January 29 2023 by **@manavortex | Edited by Na**\
+**Last documented edit:** November 27 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will give you a number of mesh sculpting techniques when it comes to editing meshes in Blender.&#x20;
 
@@ -21,6 +21,7 @@ You can find the step-by-step documentation about this under [r-and-r-refitting-
 * If this is your first time in Blender and you are lost, check [blender-getting-started](../blender-getting-started/ "mention")
 * Before doing this by hand, check the [wkit-blender-plugin-akl-autofitter.md](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md "mention")
 * For information on weight painting, check [meshes-and-armatures-rigging](../meshes-and-armatures-rigging/ "mention")
+* For a video of [eagul's sculpting process](https://youtu.be/0uDFVol_6Gw), check the link (youtube)
 
 #### Assumed skill level:&#x20;
 
@@ -103,7 +104,7 @@ You can also use the [Lattice Deform Method](./#lattice-modifier-method) below t
 
 #### Method 3
 
-You can use Blender's [mask brush and function](https://docs.blender.org/manual/en/2.80/sculpt\_paint/sculpting/hide\_mask.html) in Sculpt Mode to mask the parts that you do not want to sculpt.
+You can use Blender's [mask brush and function](https://docs.blender.org/manual/en/2.80/sculpt_paint/sculpting/hide_mask.html) in Sculpt Mode to mask the parts that you do not want to sculpt.
 
 ## Affecting Several Meshes
 
