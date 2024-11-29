@@ -8,50 +8,19 @@ This guide is part of the guide for creating an [.](./ "mention"). It will teach
 
 ## Requirements:
 
-|                                                                          | minimum version                              |
-| ------------------------------------------------------------------------ | -------------------------------------------- |
-| [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790)    | the latest version compatible with your game |
-| [Nibbles to NPCs 2.0](https://www.nexusmods.com/cyberpunk2077/mods/8125) | >= 3.5                                       |
-| an NPV as per [the tutorial](./)                                         |                                              |
+<table><thead><tr><th width="253.5"></th><th>minimum version</th></tr></thead><tbody><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/790">AppearanceMenuMod</a></td><td>the latest version compatible with your game</td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/8125">Nibbles to NPCs 2.0</a></td><td>>= 3.5</td></tr><tr><td>an NPV as per <a href="./">the tutorial</a></td><td></td></tr><tr><td>Wolvenkit</td><td>newer than Nov 29 2024 (8.16 or <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a>)</td></tr></tbody></table>
 
 {% hint style="info" %}
-You can find the original instructions in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125) under **Creating an NPC+/NPV Replacer** inside the spoiler tags.
+You can find the original instructions in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125) under **Creating an NPC+/NPV Replacer** inside the spoiler tags. If you stick to this guide, you won't need them.
 {% endhint %}
 
 {% hint style="warning" %}
 If you experience floating clothes, try **switching appearances**. Often, that resolves the issue. If not, you can check [appearances-change-the-looks](../appearances-change-the-looks/ "mention") for how to copy the correct components.
 {% endhint %}
 
-## Compatibility: NPV < 2.0.0
-
-For NPV projects >= v2.0.0 (30. October 2023), you can skip to [#the-photo-mode-.app-file](npv-amm-nibbles-replacer.md#the-photo-mode-.app-file "mention").
-
-For earlier versions, or if you have not been using the example project, you need to add the photo mode animations component.&#x20;
-
-Download Wkit Project - NPC App from the mod's [optional files](https://www.nexusmods.com/cyberpunk2077/mods/8125?tab=files).&#x20;
-
-<details>
-
-<summary>If you don't care about the expression pack</summary>
-
-you can also lift the component from Johnny's photo mode app file:&#x20;
-
-```
-base\characters\appearances\main_npc\silverhand_photomode.app
-```
-
-If you're doing that, then the component you need will be near the bottom of the appearance.
-
-</details>
-
-1. In the .app file, open the first appearance
-2. Open the `components` array
-3. Find the `entAnimationSetupExtensionComponent` with the name of `PhotomodeAnimations`&#x20;
-4. Copy it to each appearance in your NPV's .app file.
-
 ## Step 1: The photo mode .app file
 
-You enable the feature by overwriting the dummy .app file for your chosen NPV. Instead of looking up the path in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125?tab=description), we're lazy and overwrite the template file, which we find in the [Mod Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) by using the following [search query](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
+You enable the feature by overwriting the dummy .app file for your chosen NPV. Instead of looking up the path in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125?tab=description), we're lazy and overwrite the template file, which we find in the [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) by using the following [search query](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
 
 ```
 base\characters\appearances > npv
@@ -63,7 +32,7 @@ If you don't find those files, your [AMM Nibbles Replacer](https://www.nexusmods
 
 <figure><img src="../../../.gitbook/assets/npv_replacer_overwrite_app.png" alt=""><figcaption></figcaption></figure>
 
-Find the file that you want to use, and [add it to your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
+Find the file that you want to use, and [add it to your project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
 
 {% hint style="warning" %}
 If a file name shows up more than once, you already have an NPV with photo mode replacer support installed. In that case, you'll want to pick the other file — there are two for each body type.&#x20;
@@ -73,17 +42,59 @@ Adding support for more than two .app files requires you to edit both the photo 
 
 ## Step 2: Overwrite the file
 
-Instead of the dummy file, you will want to put **your own app file** there. You can copy the file by holding the `ctrl` key while dragging in the Wolvenkit Project Browser.
+Now, we will copy your NPV's app file to overwrite the photo mode .app file that you just added.
 
-<details>
+<figure><img src="../../../.gitbook/assets/npv_app_file_replace_file.png" alt=""><figcaption></figcaption></figure>
 
-<summary>Can I move my file instead?</summary>
+1. While holding the `CTRL` key, drag and drop your NPV's .app file into `base\characters\appearances\main_npc`
+2. Click on the photo mode .app file&#x20;
+3. Hit `f2` to open the rename dialogue
+4. Press `Ctrl+C` to copy the file name
+5. Close the rename dialogue (you can press `ESC`)
+6. Click on the file you just copied
+7. Press `f2` to open the rename dialogue again
+8. Press `Ctrl+V` to paste the file name from clipboard
+9. Click OK or press `Enter`
+10. You will now be asked if you want to overwrite the file. Click "Yes"!
 
-No, you can't do that, because the photo mode expressions are using a different graph for the facial setup. CDPR solved that by pulling in different entity files, but (for now) we can't do that, so we have to have duplicate files.
+## Step 3: Picking animations
 
-</details>
+{% hint style="danger" %}
+You need a Wolvenkit version released **after** Nov 29 2024 for this. If yours is older (e.g. stable 8.15), you need to [download a Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases).
+{% endhint %}
 
-## Step 3: Appearance names
+Wolvenkit now has a dialogue that will do all the hard work for you. Open your photo mode .app file, and let's get specific.
+
+{% hint style="info" %}
+To keep the values currently in your .app file, simply leave the fields blank.
+{% endhint %}
+
+1. From the `appearances` dropdown, pick `Select Facial Animation`
+2. You will now see a dialogue. Keep reading for which values you need to select.
+
+<figure><img src="../../../.gitbook/assets/npv_photomode_app_select_anims.png" alt=""><figcaption></figcaption></figure>
+
+3. From the **Animation set** dropdown, select one of the **first two** entries (the ones starting with `Photo Mode`)
+4. From the **Animation Entries** dropdown, pick a set of animations to load.&#x20;
+
+{% hint style="warning" %}
+Photo mode expressions won't work if you pick the NPC entry, and vice versa!
+{% endhint %}
+
+6. Check the box **Is photo mode .app** to automatically re-name your appearances.&#x20;
+7. **Optional:** You can use the **Expression Set** dropdown (and the text filter) to select any NPC expressions. They might or might not work - fuck around and find out!\
+   To be on the safe side, pick `Player Woman` or `Player Man` for photo mode.
+
+{% hint style="success" %}
+That's it! You're done! \
+Only read on here if you care for the theory. Otherwise, go to [#step-4-pack-and-test](npv-amm-nibbles-replacer.md#step-4-pack-and-test "mention").&#x20;
+{% endhint %}
+
+***
+
+### Theory about the photo mode .app file
+
+#### What's with the appearance names?
 
 The photo mode replacer assumes that your appearances will be named like this:
 
@@ -91,7 +102,7 @@ The photo mode replacer assumes that your appearances will be named like this:
 appearance_01
 appearance_02
 …
-appearance_100
+appearance_20
 ```
 
 For the sake of clarity, the NPV appearances are not named this way. Open the photo mode .app that you copied in the previous step, and change the names of your appearances.
@@ -104,22 +115,11 @@ In theory, yes. In practice, you'd have to edit both AMM and the Nibbles Replace
 
 </details>
 
-## Step 4: Changing the facialsetup graph
+#### What does the animation set do?
 
-1. For each appearance definition in In your photomode .app file, find the component with the name `face_rig`.
-2. Make sure that the `depotPath` is of the `graph` is set to the correct `.animgraph` depending on your body gender:
+## Step 4: Pack and test
 
-<pre><code><strong>base\animations\facial\_facial_graphs\player_woman_photomode_sermo.animgraph   
-</strong>base\animations\facial\_facial_graphs\player_man_photomode_sermo.animgraph
-</code></pre>
-
-<figure><img src="../../../.gitbook/assets/npv_photomode_replacer_animgraph.png" alt=""><figcaption></figcaption></figure>
-
-3. Save the file. You now have photo mode expressions, but no more AMM expressions. Can only have one…
-
-## Step 5: Pack and test
-
-After you have changed the appearance names and saved the file, you can [install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your Wolvenkit project.&#x20;
+After you have changed the appearance names and saved the file, you can [install and launch](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your Wolvenkit project.&#x20;
 
 Before entering photo mode, select the correct replacer in AMM:&#x20;
 
@@ -183,8 +183,11 @@ If that isn't working, refresh the appearance:&#x20;
 
 ### My NPV has no facial expressions!
 
-1. Verify that you've updated the graph.DepotPath with the correct animgraph
-2. Verify that you only have a single face\_rig component
+Repeat [#step-3-picking-animations](npv-amm-nibbles-replacer.md#step-3-picking-animations "mention"). Make sure to pick the correct options in the **first** and the **last** dropdown.
+
+### The pose packs weren't added!
+
+You made a mistake when editing your yaml file. Go back and read the yellow box.
 
 [^1]: Cyberpunk 2077\red4ext\plugins\ArchiveXL\ArchiveXL.log
 
