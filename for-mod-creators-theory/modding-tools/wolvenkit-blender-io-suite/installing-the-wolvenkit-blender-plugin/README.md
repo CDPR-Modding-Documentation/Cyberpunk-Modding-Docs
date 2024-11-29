@@ -7,7 +7,15 @@ description: Install guide
 ## Summary
 
 **Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** 22.09.2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Nov 29 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page will show you how to install the Wolvenkit Blender Plugin from a github release or tag. If you want to install the bleeding edge, please check [installing-from-github-source.md](installing-from-github-source.md "mention") instead.
+
+### Compatibility
+
+{% include "../../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
+
+
 
 ## Step 0: Uninstall the old version
 
