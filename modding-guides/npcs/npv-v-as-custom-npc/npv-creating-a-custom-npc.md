@@ -7,14 +7,16 @@ description: 'Step 2: How to create a custom NPC'
 ## Summary
 
 **Published**: May 13 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: Mar 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update**: Dec 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page is a part of the [NPV guide](./). It will show you how to use the [provided example project](./#preparation) to create a custom NPC for Cyberpunk 2077, whom you can then spawn with AppearanceMenuMod.
 
-It will give you a brief overview over the control files and tell you how to pull in the right meshes (and appearances).&#x20;
+It will give you an overview over the control files and tell you how to pull in the right meshes (and appearances).&#x20;
 
-{% hint style="info" %}
-If you prefer video tutorials, use this link to watch [Sh00kspeared's video tutorial](https://www.youtube.com/watch?v=GP9Crg8tkIg\&t=1s) on the matter.
+### Video guide
+
+{% hint style="success" %}
+[Sh00kspeared](https://app.gitbook.com/u/pLUiO9EK9NgxqLuozrAjU1uMiPx2 "mention") created a video guide for this (November 2024). You can find it [on youtube](https://www.youtube.com/watch?v=GP9Crg8tkIg\&t=1s).
 {% endhint %}
 
 ### Wait, this isn't what I want!
@@ -48,10 +50,12 @@ Remember that at any time, you can check your progress by [spawning your custom 
 ## How everything hangs together
 
 {% hint style="info" %}
-This section will explain what the template files do and how they hang together. If you like suffering, you can rely on the "fuck around and find out" approach, but I recommend at least reading through it.
+This section will explain what the template files do and how they hang together. You do not need to follow links; they add extra information or context if you want them.
+
+If you like suffering, you can rely on the "fuck around and find out" approach, but I recommend at least reading through it.
 {% endhint %}
 
-In the end, an NPV is just a custom prop with a god complex. For that reason, the [file structure](../../everything-else/custom-props/#with-variants) is the same (it's just a lot more complex, because you have more than 4 components).
+In the end, an NPV is just a [custom prop](../../everything-else/custom-props/) with a god complex. For that reason, the [file structure](../../everything-else/custom-props/#with-variants) is the same (it's just a lot more complex, because you have more than 4 components).
 
 If diagrams help you, then [click on the link](../../everything-else/custom-props/#with-variants) to see one.
 
@@ -161,7 +165,7 @@ It looks like this:
 
 <figure><img src="../../../.gitbook/assets/npv_app_structure..png" alt=""><figcaption><p>Before renaming </p></figcaption></figure>
 
-Whenever you save the file, the Wolvenkit console will show you the results of the [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). These will point you towards mistakes in your paths.
+Whenever you save the file, the Wolvenkit console will show you the results of the [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). These will point you towards mistakes in your paths.
 
 If you get a bunch of errors that complain about "mesh not found in project files" or "no depot path set, only hash given," that's no reason to panic – those errors come from files that you deleted, but which are still linked in the `.app`. If you deleted them by accident, restore them from the template project. Otherwise, you can (and should) delete the components.
 
@@ -170,7 +174,7 @@ The next section, [#how-do-i-know-what-to-put](npv-creating-a-custom-npc.md#how-
 
 If you feel completely lost, you can read up on [how to change NPC appearances](../appearances-change-the-looks/) – the concept is exactly the same.&#x20;
 
-Also, [File Validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
+Also, [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
 {% endhint %}
 
 {% hint style="success" %}
@@ -183,7 +187,7 @@ If you want to add another appearance
 
 ### How do I know what to put?
 
-To find out which variants and appearances to use, I suggest that you use NoraLee's excellent [NPV Part Picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker). It will look like this:
+To find out which variants and appearances to use, I suggest that you use NoraLee's excellent [NPV Part Picker](https://noraleedoes.neocities.org/npv/npv_part_picker). It will look like this:
 
 <figure><img src="../../../.gitbook/assets/npv_guide_part_picker_preview.png" alt=""><figcaption><p>Find it at <a href="https://noraleedoes.neocities.org/npv/npv_part_picker">https://noraleedoes.neocities.org/npv/npv_part_picker</a></p></figcaption></figure>
 
@@ -217,7 +221,7 @@ If you skip this step, you will end up with invisible cyberware or the wrong col
 When selecting a different cyberware than the preconfigured one, you **have** to set the appearance name, or the whole thing will show up in grey. The appearance names are usually identical to the cyberware (`cyberware_01`, `cyberware_02` etc.), but if you are uncertain, you can also open the mesh file and check the `appearances` list at the top.
 
 {% hint style="info" %}
-Wolvenkit's [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) triggers when you save a file, and it will help you to spot mistakes.
+Wolvenkit's [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) triggers when you save a file, and it will help you to spot mistakes.
 {% endhint %}
 
 ### Customizing piercings and chrome: Chunkmasks
@@ -236,7 +240,7 @@ Find the `piercing` or `cyberware` component in your `.app` file:
 
 #### How do I know which numbers to put?
 
-You can see that inside the .mesh file (which you can see in the component's `depotPath`). Open it in Wolvenkit, then switch to the [Mesh Preview](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor/preview#mesh-preview) tab and toggle the checkboxes on the right; those directly correspond to the boxes you need to uncheck in the `.app` file:
+You can see that inside the .mesh file (which you can see in the component's `depotPath`). Open it in Wolvenkit, then switch to the [Mesh Preview](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor/preview#mesh-preview) tab and toggle the checkboxes on the right; those directly correspond to the boxes you need to uncheck in the `.app` file:
 
 <figure><img src="../../../.gitbook/assets/npv_piercings_chunkmask_2.png" alt=""><figcaption><p>Here we see the indices of these three submeshes: this is what we need to uncheck in the .app file</p></figcaption></figure>
 
@@ -261,7 +265,7 @@ For more information on **hair files**, check the [basic-hairstyle-replacement-t
 1. Delete the current hair from the .app — there should be 2-3 components, their names will start with either `hair_` or `hh_0`
 2. Find the correct hair mesh. You have three options for this:
    1. Looking it up on [our nifty list](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md#name-in-files-by-index)
-   2. Using [NoraLee's NPV Part Picker](https://noraleedoes.neocities.org/npv/npv\_part\_picker)&#x20;
+   2. Using [NoraLee's NPV Part Picker](https://noraleedoes.neocities.org/npv/npv_part_picker)&#x20;
    3. Filtering the files and clicking through their previews: \
       female: `base\characters\common\hair > wa_ > .mesh > !shadow`\
       male: `base\characters\common\hair > ma_ > .mesh > !shadow`

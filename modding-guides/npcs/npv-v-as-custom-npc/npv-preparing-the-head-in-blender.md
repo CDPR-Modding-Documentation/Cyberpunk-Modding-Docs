@@ -7,24 +7,35 @@ description: 'Step 1: How to generate your V''s custom head mesh'
 ## **Summary**
 
 **Published: May 13 2023 by @manavortex**\
-**Last documented update: Nov 09 2024 by** [Sh00kspeared](https://app.gitbook.com/u/pLUiO9EK9NgxqLuozrAjU1uMiPx2 "mention")
+**Last documented update: Dec 01 2024 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page is a part of the [NPV guide](./). It will show you how to create your V's **head** in Blender. If you want to load your head back into Cyberpunk, note that you aren't changing anything in the files itself — that will come in [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention").&#x20;
+This page is a part of the [NPV guide](./). It will show you how to&#x20;
 
-We will not be dealing with the body, this is part of the next section as well.
+* change the **head** to your V's custom head shape in Blender
+* import the changed head back into Cyberpunk
+
+This section will **not** deal with the following (that comes in [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention")):
+
+* Changing V's body
+* Changing anything that is not the head shape (e.g. colours or materials)
 
 If you want a 3d model, you probably know what you're doing; in that case, make sure to run the script and get the shape right, then go wild.
 
-{% hint style="info" %}
-If you prefer **video instructions** over written ones, please check out[ ](https://www.youtube.com/watch?v=f9KWa_qJDUo\&t=743s)[this tutorial](https://www.youtube.com/watch?v=f9KWa_qJDUo\&t=743s) by Wouldiwas Sh00kspeared (Nov 2024).
+### Video tutorial
+
+{% hint style="success" %}
+IWouldiwas Sh00kspeared made  a video tutorial for visual learners (Nov 2024). You can find it on [youtube](https://www.youtube.com/watch?v=f9KWa_qJDUo\&t=743s), or check out the box below.
 {% endhint %}
 
 ### Prerequisites
 
 * [ ] You have downloaded the prepared Wolvenkit Project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328)
-* [ ] You have [Blender](https://www.blender.org/download/) installed \
-  &#xNAN;_(confirmed working on 4.1 and 4.2)_
-* [ ] You have the Wolvenkit Blender Plugin (you won't be able to export otherwise). Check [installing-the-wolvenkit-blender-plugin](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/ "mention") if you don't.
+* [ ] You have [Blender](https://www.blender.org/download/) installed
+* [ ] You have the Wolvenkit Blender Plugin (check [installing-the-wolvenkit-blender-plugin](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/ "mention") if you don't)
+* [ ] Blender and the plugin are on the current compatible versions [wkit-blender-plugin-current-version.md](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/wkit-blender-plugin-current-version.md "mention"))
+* [ ] You have completely read this entire section
+
+### Worth noticing
 
 In this section, we will be moving/deleting files. You can complete these steps in Wolvenkit or in the Windows File Explorer.
 
@@ -121,7 +132,7 @@ Many of the files are **variants** and your V will be using **one or none of the
 * Otherwise, you need to refer to [#what-the-actual-fuck-are-all-those-files](npv-preparing-the-head-in-blender.md#what-the-actual-fuck-are-all-those-files "mention") and use the table below for some oversight.
 
 {% hint style="warning" %}
-When deleting files that you aren't using, make sure to remove both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder, both in the [archive](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#archive) and the [raw](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw) section.
+When deleting files that you aren't using, make sure to remove both the `.mesh` file in the `head` folder and the `.morphtarget` file in the `head/morphtargets` folder.
 {% endhint %}
 
 The following table will show you examples on what to **keep** (as in, you **delete everything else**):
@@ -169,7 +180,7 @@ If you run into any **errors**, check [#step-5-optional-troubleshooting](npv-pre
 
 
     <figure><img src="../../../.gitbook/assets/npv_export_files.png" alt=""><figcaption><p>Export all your morphtargets. Mesh files will be auto-generated for you.</p></figcaption></figure>
-2. Switch to your project's `raw` folder or Wolvenkit's `raw` perspective. You will find the entire file structure mirrored there.
+2. Switch to your project's [`raw` folder](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw) or Wolvenkit's `raw` perspective. You will find the entire file structure mirrored there.
 3. In `head` folder, find the file `head_import.blend`. \
    This file is a **utility file** which will automatically import and export the files for you. For that reason, it needs to be in a certain relative path.
 
@@ -204,20 +215,14 @@ You don't need to select the eyebrows here, as those are "painted on" later via 
 <figure><img src="../../../.gitbook/assets/npv_tutorial_before_after.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-Some shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of your shape is shaped subtly wrong or looks weird in the game, **undo** your changes (Ctrl+Z), add or subtract 1 from the corresponding shape key, and run the script again.
+Some shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of V's head is shaped subtly wrong or looks weird in the game, **undo** your changes (Ctrl+Z), add or subtract 1 from the corresponding shape key, and run the script again.
 {% endhint %}
 
 #### Can I have that with textures?
 
-Yes, you absolutely can! Once you have imported everything back into Wolvenkit, you can re-export the `.mesh` files and use the [Wolvenkit Blender IO suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/) to import them with materials.
+Yes, you absolutely can! Once you have completed Step 3, you can re-export the `.mesh` files. Importing those into Blender will give you materials!
 
 ## Step 3: Importing head
-
-{% hint style="info" %}
-Unless you are editing original V, start by **deleting the morphtargets** from the template file — we don't need them anymore.
-
-Remove the entire folder, both from `raw` and `archive`. From now on, it's meshes only!
-{% endhint %}
 
 ### Exporting from Blender
 
@@ -245,8 +250,11 @@ If the head mesh has **not changed**, you ran into a problem — check the Log V
 
 Spawn your NPV and check that they look like they should.&#x20;
 
-* If they do, proceed with [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention")
 * If they don't, check [#step-5-optional-troubleshooting](npv-preparing-the-head-in-blender.md#step-5-optional-troubleshooting "mention")
+* If they do,&#x20;
+  1. create a **full backup** of your project (copy the entire folder in Windows Explorer)
+  2. delete all `.morphtarget` files from your project — we don't need them anymore (do not delete them if you are editing the player head)
+  3. then, proceed with [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention")
 
 ## Step 5 (optional): Troubleshooting
 
@@ -264,11 +272,18 @@ As of December 2023, **any** script errors have been because the person encounte
 
 <figure><img src="../../../.gitbook/assets/npv_blender_version.png" alt=""><figcaption><p>This is using Blender 2.93, which is definitely not compatible.</p></figcaption></figure>
 
-As of plugin version 1.5.5.1, you should have at least 4.0 installed.
+The supported versions are:&#x20;
 
-### The piercings are in the wrong position!
+{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
-The problem went away after the person having it upgraded Blender.&#x20;
+### A component I want is not showing!
+
+Check the following:&#x20;
+
+* The component's shape looks okay in Blender
+* The component's shape looks okay in Wolvenkit's .mesh preview
+
+If both of these things are true, then you can fix this problem in the next step of the tutorial, [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention").
 
 ### V was imported, but they're unsettlingly, subtly _wrong_
 
