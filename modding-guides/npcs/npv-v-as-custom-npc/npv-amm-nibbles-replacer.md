@@ -8,7 +8,7 @@ This guide is part of the guide for creating an [.](./ "mention"). It will teach
 
 ## Requirements:
 
-<table><thead><tr><th width="253.5"></th><th>minimum version</th></tr></thead><tbody><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/790">AppearanceMenuMod</a></td><td>the latest version compatible with your game</td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/8125">Nibbles to NPCs 2.0</a></td><td>>= 3.5</td></tr><tr><td>an NPV as per <a href="./">the tutorial</a></td><td></td></tr><tr><td>Wolvenkit</td><td>newer than Nov 29 2024 (8.16 or <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a>)</td></tr></tbody></table>
+<table><thead><tr><th width="253.5"></th><th>minimum version</th></tr></thead><tbody><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/790">AppearanceMenuMod</a></td><td>the latest version compatible with your game</td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/8125">Nibbles to NPCs 2.0</a></td><td>>= 3.5</td></tr><tr><td>an NPV as per <a href="./">the tutorial</a></td><td></td></tr><tr><td>Wolvenkit</td><td>newer than December 02 2024 (8.16 or <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a>)</td></tr></tbody></table>
 
 {% hint style="info" %}
 You can find the original instructions in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125) under **Creating an NPC+/NPV Replacer** inside the spoiler tags. If you stick to this guide, you won't need them.
@@ -18,44 +18,27 @@ You can find the original instructions in the [mod description](https://www.nexu
 If you experience floating clothes, try **switching appearances**. Often, that resolves the issue. If not, you can check [appearances-change-the-looks](../appearances-change-the-looks/ "mention") for how to copy the correct components.
 {% endhint %}
 
-## Step 1: The photo mode .app file
+## Step 1: Copy your .app file
 
-You enable the feature by overwriting the dummy .app file for your chosen NPV. Instead of looking up the path in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125?tab=description), we're lazy and overwrite the template file, which we find in the [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) by using the following [search query](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
+Create a copy of your .app file. It doesn't matter much where you put it - simply hold down `ctrl` and drag it anywhere in your project browser.
 
-```
-base\characters\appearances > npv
-```
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-If you don't find those files, your [AMM Nibbles Replacer](https://www.nexusmods.com/cyberpunk2077/mods/8125) isn't installed correctly. You'll want to fix this before proceeding.
+Open your copied file.&#x20;
+
+{% hint style="danger" %}
+Do **not** do this with your NPV `.app` file, as it will be destroyed.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/npv_replacer_overwrite_app.png" alt=""><figcaption></figcaption></figure>
+## Step 2: Convert your file
 
-Find the file that you want to use, and [add it to your project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
+1. From the `Appearances` menu, select `Convert to Photo Mode .app`
+2. In the dialogue, select which file you want to use:
 
-{% hint style="warning" %}
-If a file name shows up more than once, you already have an NPV with photo mode replacer support installed. In that case, you'll want to pick the other file — there are two for each body type.&#x20;
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Adding support for more than two .app files requires you to edit both the photo mode replacer and AMM, so it won't be covered in this tutorial.
-{% endhint %}
-
-## Step 2: Overwrite the file
-
-Now, we will copy your NPV's app file to overwrite the photo mode .app file that you just added.
-
-<figure><img src="../../../.gitbook/assets/npv_app_file_replace_file.png" alt=""><figcaption></figcaption></figure>
-
-1. While holding the `CTRL` key, drag and drop your NPV's .app file into `base\characters\appearances\main_npc`
-2. Click on the photo mode .app file&#x20;
-3. Hit `f2` to open the rename dialogue
-4. Press `Ctrl+C` to copy the file name
-5. Close the rename dialogue (you can press `ESC`)
-6. Click on the file you just copied
-7. Press `f2` to open the rename dialogue again
-8. Press `Ctrl+V` to paste the file name from clipboard
-9. Click OK or press `Enter`
-10. You will now be asked if you want to overwrite the file. Click "Yes"!
+3. Check the box under "Convert appearance names".
+4. When you click "Finish", Wolvenkit will move your file and convert the appearance names.
 
 ## Step 3: Picking animations
 
