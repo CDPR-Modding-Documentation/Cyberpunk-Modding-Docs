@@ -8,7 +8,7 @@ This guide is part of the guide for creating an [.](./ "mention"). It will teach
 
 ## Requirements:
 
-<table><thead><tr><th width="253.5"></th><th>minimum version</th></tr></thead><tbody><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/790">AppearanceMenuMod</a></td><td>the latest version compatible with your game</td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/8125">Nibbles to NPCs 2.0</a></td><td>>= 3.5</td></tr><tr><td>an NPV as per <a href="./">the tutorial</a></td><td></td></tr><tr><td>Wolvenkit</td><td>newer than December 02 2024 (8.16 or <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a>)</td></tr></tbody></table>
+<table><thead><tr><th width="253.5"></th><th>minimum version</th></tr></thead><tbody><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/790">AppearanceMenuMod</a></td><td>the latest version compatible with your game</td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/8125">Nibbles to NPCs 2.0</a></td><td>>= 3.5</td></tr><tr><td>an NPV as per <a href="./">the tutorial</a></td><td></td></tr><tr><td>Wolvenkit</td><td>newer than December 03 2024 (8.16 or <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a>)</td></tr></tbody></table>
 
 {% hint style="info" %}
 You can find the original instructions in the [mod description](https://www.nexusmods.com/cyberpunk2077/mods/8125) under **Creating an NPC+/NPV Replacer** inside the spoiler tags. If you stick to this guide, you won't need them.
@@ -35,10 +35,10 @@ Do **not** do this with your NPV `.app` file, as it will be destroyed.
 1. From the `Appearances` menu, select `Convert to Photo Mode .app`
 2. In the dialogue, select which file you want to use:
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/nibbles_npv_replacer_select_replacer.png" alt=""><figcaption></figcaption></figure>
 
-3. Check the box under "Convert appearance names".
-4. When you click "Finish", Wolvenkit will move your file and convert the appearance names.
+1. Check the box under "Convert appearance names".
+2. When you click "Finish", Wolvenkit will move your file and convert the appearance names.
 
 ## Step 3: Picking animations
 
@@ -55,7 +55,7 @@ To keep the values currently in your .app file, simply leave the fields blank.
 1. From the `appearances` dropdown, pick `Select Facial Animation`
 2. You will now see a dialogue. Keep reading for which values you need to select.
 
-<figure><img src="../../../.gitbook/assets/npv_photomode_app_select_anims.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/nibbles_replacer_pick_anim.png" alt=""><figcaption></figcaption></figure>
 
 3. From the **Animation set** dropdown, select one of the **first two** entries (the ones starting with `Photo Mode`)
 4. From the **Animation Entries** dropdown, pick a set of animations to load.&#x20;
@@ -64,8 +64,7 @@ To keep the values currently in your .app file, simply leave the fields blank.
 Photo mode expressions won't work if you pick the NPC entry, and vice versa!
 {% endhint %}
 
-6. Check the box **Is photo mode .app** to automatically re-name your appearances.&#x20;
-7. **Optional:** You can use the **Expression Set** dropdown (and the text filter) to select any NPC expressions. They might or might not work - fuck around and find out!\
+5. **Optional:** You can use the **Expression Set** dropdown (and the text filter) to select any NPC expressions. They might or might not work - fuck around and find out!\
    To be on the safe side, pick `Player Woman` or `Player Man` for photo mode.
 
 {% hint style="success" %}
