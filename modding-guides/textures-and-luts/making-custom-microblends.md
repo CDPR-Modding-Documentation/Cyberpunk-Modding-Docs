@@ -6,7 +6,7 @@ description: How to create custom microblends.
 
 **This guide was originally written by Halk and imported with their permission. You can find the original**[ **here**](https://docs.google.com/document/d/1oRjXHE08oDnaKwvgEOKxl0gZGkBADgSn2azCRwUeQLs/edit)**.**
 
-The easiest/quicker way to make custom microblends is to have access to Photoshop and use ready-to-go seamless patterns. I like to look for these in [Pixabay](https://pixabay.com/images/search/seamless%20pattern/) and [Vecteezy](https://www.vecteezy.com/search?qterm=seamless-pattern-free\&content\_type=vector).
+The easiest/quicker way to make custom microblends is to have access to Photoshop and use ready-to-go seamless patterns. I like to look for these in [Pixabay](https://pixabay.com/images/search/seamless%20pattern/) and [Vecteezy](https://www.vecteezy.com/search?qterm=seamless-pattern-free\&content_type=vector).
 
 You can try making your own seamless pattern with the help of [this tutorial](https://www.youtube.com/watch?v=uB0IG2x2wPc) (for Photoshop).
 
@@ -30,7 +30,7 @@ If set up like this, it will be a one color microblend. To make two or more colo
 
 ![](<../../.gitbook/assets/4 (3).png>)
 
-4. Save the file(s) as .png, and extract the **base\surfaces\microblends\scratches\_and\_flakes\_a.xbm** microblend from the files. Head over to Noesis and export your **custom microblend**(s) over the **scratches\_and\_flakes\_a**. You can also work with .dds by saving it in compression BC7.
+4. Save the file(s) as .png and use WolvenKIt to [import your png file](images-importing-editing-exporting.md#importing-a-texture) **with transparency** over a basegame file, e.g.  **`base\surfaces\microblends\scratches_and_flakes_a.xbm`.**
 5. Now simply custom-path your microblend(s) while making sure to path them into the **µblends** window on MlsetupBuilder OR in the microblend path in the .mlsetup on WolvenKit.
 
 ![](<../../.gitbook/assets/5 (1).png>)
