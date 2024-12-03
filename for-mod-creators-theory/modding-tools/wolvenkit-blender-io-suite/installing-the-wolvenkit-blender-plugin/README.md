@@ -64,7 +64,7 @@ Download the latest release of the plugin from **github:**&#x20;
 3. Start Blender
 4. Open the Blender Preferences (Toolbar: `Edit` -> `Preferences`) and select the `AddOns` tab
 
-<figure><img src="../../../../.gitbook/assets/blender_plugin_install.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/blender_plugin_install..png" alt=""><figcaption></figcaption></figure>
 
 5. Click the "Install" button and select the zip file you downloaded in step 2
 
