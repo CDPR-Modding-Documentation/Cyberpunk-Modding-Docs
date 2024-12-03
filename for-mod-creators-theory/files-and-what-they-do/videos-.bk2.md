@@ -31,7 +31,7 @@ Then add the file to your project for easy access
 
 ## Playing the video
 
-Assuming you have installed RAD video tools correctly (see [Prerequisites](videos-.bk2.md#prerequisites)), you should be able to open the file and it will play
+Assuming you have installed RAD video tools correctly (see [Prerequisites](videos-.bk2.md#prerequisites)), you should be able to open the file in RAD Video Tools and it will play
 
 <figure><img src="../../.gitbook/assets/NiCola ad bk2.png" alt=""><figcaption><p>The NiCola ad playing the Bink Video Player</p></figcaption></figure>
 
