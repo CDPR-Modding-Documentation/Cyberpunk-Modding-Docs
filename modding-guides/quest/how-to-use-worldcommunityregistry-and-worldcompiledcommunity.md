@@ -6,6 +6,32 @@ description: >-
 
 # How to use worldCommunityRegistry and worldCompiledCommunity
 
+## Summary
+
+**Published:** Nov 10 by [Sergey](https://app.gitbook.com/u/N691cVEMA0Nmecc6QHIAM73aI0z1 "mention")\
+Last documented update: Dec 4 by [Sergey](https://app.gitbook.com/u/N691cVEMA0Nmecc6QHIAM73aI0z1 "mention")
+
+### Wait, this is not what I want!
+
+* If you want to learn about [.](./ "mention"), please check the corresponding section.
+* If you want to learn about [world-editing](../world-editing/ "mention"), please check the corresponding section.
+* [NodeRefs](../world-editing/noderefs.md) explained.
+* [world-editing-worldnodedatabuffer-details.md](../world-editing/world-editing-worldnodedatabuffer-details.md "mention")
+
+## Requirements
+
+* [ArchiveXL](../../for-mod-creators-theory/core-mods-explained/archivexl/) 1.17.0+
+
+## Basics
+
+There are two types `worldCompiledCommunityAreaNode`  and `worldCompiledCommunityAreaNode_Streamable`
+
+The difference between them is only that `worldCompiledCommunityAreaNode` must be registered in `AlwaysLoaded` type of `.streamingsector`
+
+`worldCompiledCommunityAreaNode_Streamable` can be registered in other types of `.streamingsector` (exterior/quest/etc)
+
+## Theory
+
 Working with `worldCompiledCommunityAreaNode` and `worldCommunityRegistryNode`
 
 In general, we are specifying in `worldCompiledCommunityAreaNode` all our spots where we want to spawn NPCs/etc by its `entryName`/`phase`.
@@ -14,17 +40,7 @@ For example in the quest **Riders on the Storm** CDPR reactivates all needed NPC
 
 <figure><img src="../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
-**`AXL version 1.17.0+ required`**
-
-{% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/core-mods-explained/archivexl" %}
-
-First of all, we will need `.streamingblock` and `.streamingsector` files
-
-worldNodeData explained:
-
-{% embed url="https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/world-editing/world-editing-worldnodedata-details" %}
-
-Setup your Wkit project
+Setup your Wkit project.
 
 Create `.questphase` `.streamingblock` and `.streamingsector` files&#x20;
 
