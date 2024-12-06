@@ -27,8 +27,6 @@ This is the landing page for the Wolvenkit Blender plugin. Here, you can find [#
 
 ## Compatibility
 
-{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
-
 
 
 ## Usage

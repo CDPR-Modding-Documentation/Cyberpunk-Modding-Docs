@@ -13,8 +13,6 @@ This page will show you how to install the Wolvenkit Blender Plugin from a githu
 
 ### Compatibility
 
-{% include "../../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
-
 
 
 ## Step 0: Uninstall the old version

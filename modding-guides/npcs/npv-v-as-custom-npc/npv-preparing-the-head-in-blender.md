@@ -274,8 +274,6 @@ As of December 2023, **any** script errors have been because the person encounte
 
 The supported versions are:&#x20;
 
-{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
-
 ### A component I want is not showing!
 
 Check the following:&#x20;

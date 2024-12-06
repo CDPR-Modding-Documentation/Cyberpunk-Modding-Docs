@@ -12,6 +12,29 @@ If you don't know how to begin editing, check [mesh-sculpting-techniques](mesh-s
 
 ## Importing
 
+### Wolvenkit finds too many vertices, but Blender export is fine!
+
+The [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention") will check all your meshes against the vertex limit (\~65k) before exporting. However, under certain circumstances, Blender's default export shatters your plugin into a million parts. **This is not the plugin's fault**!
+
+#### Delete custom normal split
+
+You can check if your mesh has any custom `split normal` attributes, and delete them:
+
+<figure><img src="../../.gitbook/assets/blender_clear_split_normals.png" alt=""><figcaption></figcaption></figure>
+
+#### Check your UV splits
+
+The GLTF algorithm **really** doesn't like it if two vertices have the same UV coordinates (see [this ticket](https://github.com/KhronosGroup/glTF-Blender-IO/issues/912)).&#x20;
+
+Here's how you can fix it:
+
+1. Select the overlap
+2. move the overlap out of the UV editor's box (it will tile, so everything is fine)\
+   Shortcut: `g` -> `x` -> `1` or `g` -> `y` -> `1`
+3. Profit
+
+<figure><img src="../../.gitbook/assets/blender_uv_overlap_mesh_troubleshooting.png" alt=""><figcaption></figcaption></figure>
+
 ### My import won't show up in-game!
 
 We need to troubleshoot your **import**.&#x20;
@@ -84,9 +107,9 @@ Alternatively, you can check by hand:
 
 1. Check if your mesh is **triangulated**. If you aren't sure whether or not it is, go into edit mode, select everything, and go to Face -> Triangulate (Shortcut: Ctrl+T)
 2. Check your export settings and make sure that you have the correct box checked upon export:\
-   ![](../../.gitbook/assets/3d\_troubleshooting\_export\_tangents.png)
+   ![](../../.gitbook/assets/3d_troubleshooting_export_tangents.png)
 3. If the error persists, check that each of your submeshes has an UV map: \
-   ![](../../.gitbook/assets/mesh\_troubleshooting\_uv\_map.png)\
+   ![](../../.gitbook/assets/mesh_troubleshooting_uv_map.png)\
    If not, you have to create one (and probably UV unwrap your mesh).
 
 </details>
@@ -113,7 +136,7 @@ You can use the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-
 
 #### Option 1: Fuck those bones: Python
 
-You can find a [Python script on mana's github](https://github.com/manavortex/cyberpunk2077/blob/master/python/armature\_cleanup/armature\_delete\_unused\_bones.py) that will drop unused bones and vertex groups. Run it in Blender's Scripting Perspective with your armature&#x20;
+You can find a [Python script on mana's github](https://github.com/manavortex/cyberpunk2077/blob/master/python/armature_cleanup/armature_delete_unused_bones.py) that will drop unused bones and vertex groups. Run it in Blender's Scripting Perspective with your armature&#x20;
 
 #### Option 1: Fuck those bones: Noesis
 
@@ -137,12 +160,12 @@ t0_005_pwa_body__t_bug.mesh
 t0_005_pma_body__t_bug.mesh
 ```
 
-Try using the Netrunner body as a base for import. You can use Wolvenkit's [Select base mesh](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#select-base-mesh "mention") feature for this.
+Try using the Netrunner body as a base for import. You can use Wolvenkit's [Select base mesh](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#select-base-mesh "mention") feature for this.
 
 {% hint style="info" %}
 To create more submeshes, you can either&#x20;
 
-* Try the [Preserve Submesh Order ](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#preserve-submesh-order "mention")import setting
+* Try the [Preserve Submesh Order ](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#preserve-submesh-order "mention")import setting
 * create more submeshes with the correct naming in Blender, e.g. `submesh_01_LOD_1`, `submesh_02_LOD_1`
 {% endhint %}
 
@@ -155,7 +178,7 @@ It's time to play 3d puzzle and assemble bones from multiple sources. Unfortunat
 * find the bones that your armature is missing in other meshes
 * transfer them into your import target mesh (guide on [xbae's page](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-transferring-and-expanding-skeletons-in-meshes/))
 * export all the extra meshes into Blender&#x20;
-* [merge their rigs](https://github.com/Simarilius-uk/CP2077\_BlenderScripts/blob/main/Merge\_rigs.py), which you should do with the linked Python script
+* [merge their rigs](https://github.com/Simarilius-uk/CP2077_BlenderScripts/blob/main/Merge_rigs.py), which you should do with the linked Python script
 * and finally reimport everything back into Cyberpunk.
 
 ### Everything else
@@ -187,7 +210,7 @@ In Edit Mode, you can find a few commands in the Mesh -> Clean Up menu:
 
 #### It's still broken
 
-Your last option is the [3d print tool](https://docs.blender.org/manual/en/latest/addons/mesh/3d\_print\_toolbox.html) to (hopefully) find out what is wrong with your mesh.&#x20;
+Your last option is the [3d print tool](https://docs.blender.org/manual/en/latest/addons/mesh/3d_print_toolbox.html) to (hopefully) find out what is wrong with your mesh.&#x20;
 
 Fortunately, the tool is free, easy-to-use and already included in your Blender.
 
@@ -238,7 +261,7 @@ For example, you have moved something, but the change doesn't show in the game: 
 2. Press Ctrl+A
 3. Select "All Transforms" to apply all transformations.
 
-![](../../.gitbook/assets/mesh\_troubleshooting\_apply\_transforms.png)
+![](../../.gitbook/assets/mesh_troubleshooting_apply_transforms.png)
 
 ### My mesh is moving weirdly
 
@@ -249,7 +272,7 @@ As stated in the [importing/exporting guide](exporting-and-importing-meshes/), i
 #### Replacing the vertices
 
 1. Import the original object into Blender, without any of your changes. If you have to, reexport the working file from Wolvenkit.\
-   ![](../../.gitbook/assets/mesh\_troubleshooting\_reimport.png)
+   ![](../../.gitbook/assets/mesh_troubleshooting_reimport.png)
 2. See [#strategy-2-replacing-the-vertices](porting-3d-objects-to-cyberpunk.md#strategy-2-replacing-the-vertices "mention") on the [porting-3d-objects-to-cyberpunk.md](porting-3d-objects-to-cyberpunk.md "mention") page
 
 ### My mesh is completely warped
@@ -284,7 +307,7 @@ To check if it's this, equip **only** the edited item. If it breaks as soon as y
 
 #### Option 1 (likely to work): Import your mesh with garment supports
 
-On the .glb import setting, check the [Import Garment Support](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") box.&#x20;
+On the .glb import setting, check the [Import Garment Support](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") box.&#x20;
 
 #### Option 2 (guaranteed to work): delete GarmentSupport from the mesh
 
@@ -304,4 +327,4 @@ As of January 03 2023, we don't know how these are generated and can't tech the 
 
 #### Import settings
 
-Make sure to [import your mesh](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support) with garment support enabled. If that doesn't do the trick, you can try [re-creating](garment-support-how-does-it-work/garment-support-from-scratch.md) the garment support shapekeys in Blender.
+Make sure to [import your mesh](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support) with garment support enabled. If that doesn't do the trick, you can try [re-creating](garment-support-how-does-it-work/garment-support-from-scratch.md) the garment support shapekeys in Blender.
