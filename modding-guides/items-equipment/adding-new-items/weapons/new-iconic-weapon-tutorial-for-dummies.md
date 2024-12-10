@@ -37,9 +37,9 @@ We'll be making a fully featured new Iconic weapon in this guide, which is desig
 
 Before beginning, ensure you have the following software installed and properly set up:
 
-1. **WolvenKit (8.12+)** - [Installed & Setup](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download)
+1. **WolvenKit (8.12+)** - [Installed & Setup](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download)
 2. **MLSB (MultiLayerSetupBuilder 1.6.7+)** - [Installed & Setup](../../../../for-mod-creators-theory/modding-tools/mlsetup-builder/#installation)
-3. **A text editor:** [Notepad++](https://notepad-plus-plus.org/downloads/) or, if you want to get fancy, [Visual Studio Code](https://app.gitbook.com/s/-McniwB8YOK2HnJ7SYg\_/getting-started)
+3. **A text editor:** [Notepad++](https://notepad-plus-plus.org/downloads/) or, if you want to get fancy, [Visual Studio Code](https://app.gitbook.com/s/-McniwB8YOK2HnJ7SYg_/getting-started)
 4. **Cyberpunk 2077** - 😑
 5. Core mods: [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198), [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197), [Red4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
 6. Optional: [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/), [RedMod](../../../../for-mod-users/users-modding-cyberpunk-2077/redmod/)
@@ -74,10 +74,10 @@ Start by opening WolvenKit and create a new project. This will be the base for y
 Decide on the weapon you want to modify to make a new new iconic.
 
 {% hint style="info" %}
-For this tutorial, we will use the gun 'Unity' as our base (`Items.Preset_Unity_Default).` If you want to use a different weapon, you can refer to [spawn-codes-baseids-hashes.md](../../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention") or find a list of all in-game items [here](https://onedrive.live.com/view.aspx?resid=EF6891140DE637B3%21221903\&authkey=!AE\_n4RTzwmVHwy8).
+For this tutorial, we will use the gun 'Unity' as our base (`Items.Preset_Unity_Default).` If you want to use a different weapon, you can refer to [spawn-codes-baseids-hashes.md](../../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention") or find a list of all in-game items [here](https://onedrive.live.com/view.aspx?resid=EF6891140DE637B3%21221903\&authkey=!AE_n4RTzwmVHwy8).
 {% endhint %}
 
-To understand how the base gun works, open the [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention") in WolvenKit and search for `Items.Preset_Unity_Default`.
+To understand how the base gun works, open the [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention") in WolvenKit and search for `Items.Preset_Unity_Default`.
 
 <figure><img src="../../../../.gitbook/assets/image (295).png" alt=""><figcaption><p>Open the <a data-mention href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser">Tweak Browser</a> &#x26; search "Items.Preset_Unity_Default"</p></figcaption></figure>
 
@@ -175,7 +175,7 @@ Here's a breakdown of key fields in a different weapon (`Items.Preset_Sidewinder
     - Attacks.Bullet_GameEffect
        ...
     - Attacks.ChimeraPowerMod_ExplosiveBulletEffect
-  gameplayDescription: LocKey#92674 # used to set the description when inspecting weapon.
+  gameplayDescription: LocKey(92674) # used to set the description when inspecting weapon.
   ikOffset: {x: 0, y: 0, z: 0}
   shootingPatternPackages: [] # used by npc
   triggerModes: # trigger modes available to weapon. should have primary and secondary trigger modes here also
@@ -196,13 +196,13 @@ Here's a breakdown of key fields in a different weapon (`Items.Preset_Sidewinder
   cameraForward: {x: 0, y: 0, z: 0}
   cameraUp: {x: 0, y: 0, z: 0}
   connections: []
-  displayName: LocKey#3599 # name of weapon
+  displayName: LocKey(3599) # name of weapon
   equipAreas: []
   equipPrereqs: [] # TODO. used by game logic packages(GLP)?
   gameplayRestrictions: # restrict weapon usage in certain situations.
     - GameplayRestriction.VehicleCombatNoInterruptions
   hairSkinnedMeshComponents: []
-  localizedDescription: LocKey#3600 # white text description when hovering over an item.
+  localizedDescription: LocKey(3600) # white text description when hovering over an item.
   OnAttach: # used to apply effects to player and weapon whean equipping weapon. stamina regen speed, stagger when shooting, etc
     - Items.Base_Assault_Rifle_inline0
     - EquipmentGLP.MediumStaminaRegen
@@ -344,7 +344,7 @@ That's it, you've created a new weapon now. This weapon will look & behave exact
 
 To test it out, boot up your game and load any save.
 
-Now open up the CET [Console](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/console "mention"):
+Now open up the CET [Console](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/console/console "mention"):
 
 <figure><img src="../../../../.gitbook/assets/image (221).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
 
@@ -396,7 +396,7 @@ How do we know that it's called "Crosshairs.Tech\_Round" ?
 
 If you have the REDmod DLC installed, you can use a text editor like Notepad++ to do a full-text search under `Cyberpunk 2077/tools/REDmod`. By searching for `crosshair:`, you can find all value assignments in the game files.
 
-#### Method 2: The [Wolvenkit Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser)
+#### Method 2: The [Wolvenkit Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser)
 
 By searching for "Crosshairs." in the Tweak Browser. Most things we find inside the weapon tweak will be searchable within the Tweak Browser, and some within the Asset Browser.
 
@@ -455,7 +455,7 @@ In your full tweak file, search for the field called `displayName`. You'll likel
 This connects the displayName property of your item with a **locaization key**, which is the mechanism that the game uses to support multiple languages. Think of the `LocKey` of a list entry, with different lists being used for different languages.
 
 {% hint style="info" %}
-If you want to take a look at these lists, use WolvenKit's [LocKey browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/lockey-browser) or [search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `onscreens.json`.
+If you want to take a look at these lists, use WolvenKit's [LocKey browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/lockey-browser) or [search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `onscreens.json`.
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/image (216).png" alt=""><figcaption><p>LocKey Browser search for <code>LocKey#49794</code></p></figcaption></figure>
@@ -508,13 +508,9 @@ Add the following lines under the existing properties:
 Items.Hand_Of_Midas:
   $base: Items.Preset_Unity_Default
   crosshair: Crosshairs.Tech_Round
-  displayName: MC_gun_name
-  localizedDescription: MC_gun_description
+  displayName: LocKey("MC_gun_name")
+  localizedDescription: LocKey("MC_gun_description")
 ```
-
-{% hint style="info" %}
-Instead of `displayName: MC_gun_name`, you can also write `displayName: LocKey#MC_gun_name`. However, TweakXL will do this for you!
-{% endhint %}
 
 {% hint style="warning" %}
 This `localizedDescription:` is **not** the yellow text you see on the weapon, but the red-colored description that is shown in the Inspect screen. \
@@ -538,8 +534,8 @@ To elevate the 'Hand of Midas' to its iconic status, we need to modify the `.yam
 Items.Hand_Of_Midas:
   $base: Items.Preset_Unity_Default # $base makes it so all the properties are taken from the specified tweak (in this case, "Items.Preset_Unity_Default") and the properties specified in this tweak overwrite the parent.
   crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
-  displayName: MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
-  localizedDescription: MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  displayName: LocKey("MC_gun_name") # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: LocKey("MC_gun_description") # description of the gun (can be seen when previewing the gun from inventory with "V" key)
   tags:
     - !append-once IconicWeapon # prevent the gun from being dissassembled
   statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
@@ -603,8 +599,8 @@ Items.Hand_Of_Midas:
   crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
   tags:
     - !append-once IconicWeapon # prevent the gun from being dissassembled
-  displayName: MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
-  localizedDescription: MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  displayName: LocKey("MC_gun_name") # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: LocKey("MC_gun_description") # description of the gun (can be seen when previewing the gun from inventory with "V" key)
   statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
     - !append-once Quality.IconicItem # makes the weapon iconic
   audioName: wea_set_liberty_dex -> add this
@@ -700,8 +696,8 @@ Items.Hand_Of_Midas:
   crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
   tags:
     - !append-once IconicWeapon # prevent the gun from being dissassembled
-  displayName: MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
-  localizedDescription: MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  displayName: LocKey("MC_gun_name") # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: LocKey("MC_gun_description") # description of the gun (can be seen when previewing the gun from inventory with "V" key)
   statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
     - !append-once Quality.IconicItem # makes the weapon iconic
   audioName: wea_set_liberty_dex # sets the sounds of Dex's gun - Plan B
@@ -936,7 +932,7 @@ For an explanation of what these do, please see [types-of-tweak-records.md](../.
 
 ### Adding an iconic mod
 
-We have found an iconic mod in the [#mods\_abilities.tweak](new-iconic-weapon-tutorial-for-dummies.md#mods\_abilities.tweak "mention") for Wilson's gun, so now let's see that we apply this to the Hand of Midas.
+We have found an iconic mod in the [#mods\_abilities.tweak](new-iconic-weapon-tutorial-for-dummies.md#mods_abilities.tweak "mention") for Wilson's gun, so now let's see that we apply this to the Hand of Midas.
 
 Since our weapon demands perfection, we'll punish the player for not hitting headshots & reward them for hitting headshots. And because we want to make it hurt, we'll use HP reduction & Healing rewards.
 
@@ -957,7 +953,7 @@ Items.Cranial_Cashback:
   # - !append-once Effectors.Heal_On_Headshot
   UIData:
       $type: GameplayLogicPackageUIData
-      localizedDescription: MC_gun_iconic_description # iconic description shown in yellow text when hovering over a weapon
+      localizedDescription: LocKey("MC_gun_iconic_description") # iconic description shown in yellow text when hovering over a weapon
 ```
 
 The ability contains
@@ -1030,7 +1026,7 @@ Items.Cranial_Cashback:
   # - !append-once Effectors.Heal_On_Headshot
   UIData:
       $type: GameplayLogicPackageUIData
-      localizedDescription: LocKey#MC_gun_iconic_description # iconic description shown in yellow text when hovering over a weapon
+      localizedDescription: LocKey("MC_gun_iconic_description") # iconic description shown in yellow text when hovering over a weapon
 ```
 
 </details>
@@ -1050,7 +1046,7 @@ Now that we have [#the-full-tweak](new-iconic-weapon-tutorial-for-dummies.md#the
 
 We'll heal for 80 HP every time the player pops somebody else's skull with the Hand of Midas. How do we do that?
 
-Let's do what Edison did — we find something to be inspired by. A search for `effector` in the [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention") finds an awful lot of entries, so I've picked an example for us — a Netrunner item that restores memory:
+Let's do what Edison did — we find something to be inspired by. A search for `effector` in the [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention") finds an awful lot of entries, so I've picked an example for us — a Netrunner item that restores memory:
 
 ```yaml
 Items.MemoryReplenishmentEffector:
@@ -1197,8 +1193,8 @@ Items.Hand_Of_Midas:
   crosshair: Crosshairs.Tech_Round # other crosshairs can be found by looking for "Crosshairs." in Tweak Browser
   tags:
   - !append-once IconicWeapon # prevent the gun from being dissassembled
-  displayName: LocKey#MC_gun_name # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
-  localizedDescription: LocKey#MC_gun_description # description of the gun (can be seen when previewing the gun from inventory with "V" key)
+  displayName: LocKey("MC_gun_name") # name of the gun (will be fetched from "LocKey#MC_gun_name" secondary key in "en-us.json")
+  localizedDescription: LocKey("MC_gun_description") # description of the gun (can be seen when previewing the gun from inventory with "V" key)
   statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
   - !append-once Quality.IconicItem # makes the weapon iconic
   audioName: wea_set_liberty_dex # sets the sounds of Dex's gun - Plan B
@@ -1334,7 +1330,7 @@ Items.Cranial_Cashback:
   - !append-once Effectors.Punish_Miss
   UIData:
     $type: GameplayLogicPackageUIData
-    localizedDescription: LocKey#MC_gun_iconic_description # iconic description shown in yellow text when hovering over a weapon
+    localizedDescription: LocKey("MC_gun_iconic_description") # iconic description shown in yellow text when hovering over a weapon
 
 # -------------------------------------------------------------------------------------------------------------------------
 
@@ -1431,7 +1427,7 @@ A special request from me (@DestinyBu). If you found this guide helpful, go ahea
 
 You've created/modified a tweak but it doesn't show effect in game, what next?
 
-* Open the CET Console in game search for your Tweak in the [Tweak Browser](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/usage-1). If your tweak doesn't show, there's a validation error in the tweak.
+* Open the CET Console in game search for your Tweak in the [Tweak Browser](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/console/usage-1). If your tweak doesn't show, there's a validation error in the tweak.
 * Validate your .yaml tweaks [here ](https://www.yamllint.com/)to check for errors.
 * Open `Cyberpunk 2077\red4ext\plugins\TweakXL\TweakXL.log` and look for any error messages towards the end, this can help when TweakXL has issues loading a tweak.
 *   Check for other mods with same Tweak/Archive names.
