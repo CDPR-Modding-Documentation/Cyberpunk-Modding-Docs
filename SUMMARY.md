@@ -359,6 +359,7 @@
     * [🕹️ Improving mod settings](modding-guides/vehicles/crystalcoat-tm-1/improving-mod-settings.md)
     * [🧰 Creating a settings package](modding-guides/vehicles/crystalcoat-tm-1/creating-a-settings-package.md)
   * [Problems and Resolution](modding-guides/vehicles/problems-and-resolution/README.md)
+    * [Replacing Textures for Mod Vehicles](modding-guides/vehicles/problems-and-resolution/replacing-textures-for-mod-vehicles.md)
     * [interior and exterior of the vehicle](modding-guides/vehicles/problems-and-resolution/interior-and-exterior-of-the-vehicle.md)
     * [Shadow mesh](modding-guides/vehicles/problems-and-resolution/shadow-mesh.md)
     * [vehicle taillight](modding-guides/vehicles/problems-and-resolution/vehicle-taillight.md)
