@@ -6,30 +6,34 @@ description: How to hook up custom photo mode poses with ArchiveXL
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created & Published**: May 09 2023 **by @manavortex**
+**Published**: May 09 2023 **by @manavortex**\
+**Last documented update:** December 17 2024 **by @manavortex**
 
 This guide will walk you through **adding poses** to Cyberpunk 2077's photo mode with **ArchiveXL**.
 
 **Difficulty:** You know how to read ;)
 
-{% hint style="danger" %}
-This guide will teach you how to hook up an existing .anims file to the photo mode. If you don't have an .anims file, you can find a dummy file in the AMM [pose guide](amm-collab-anims-poses.md), or you can learn how to [make your own](poses-animations-make-your-own/).
-{% endhint %}
+### Wait, this is not what I want!
 
-**It uses the following versions:**
+* To make poses from scratch, check [poses-animations-make-your-own](poses-animations-make-your-own/ "mention")
+* To scale poses/animations, check [scaling-poses-animations.md](scaling-poses-animations.md "mention")
 
-* Cyberpunk 2077 game version 1.6.2 Hotfix
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.9.0
-* [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) 1.1.4
-* [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) 1.4.5 (the first version supporting this feature)
-* [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) 1.12.0
+### Prerequisites:
+
+We will hook up an existing `.anims` file to photo mode. If you don't have one, you can find a dummy file in the AMM [pose guide](amm-collab-anims-poses.md).
+
+**Tool versions:**
+
+* Cyberpunk 2077 2.2
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.15.0
+* [Notepad++](https://notepad-plus-plus.org/downloads/) (you can use any text editor, but N++ is recommended)
 
 {% hint style="info" %}
-You do not need any pose mode extender like PMU or MPAF anymore, although the ArchiveXL feature is compatible wiith all of them.
+You do not need any pose mode extender like PMU or MPAF anymore, and they are currently (Dec 17 2024) not compatible with 2.2
 {% endhint %}
 
 {% hint style="success" %}
-Check out [this tool](https://wolv-photomode-tools.netlify.app/) by @wolv, it will generate yaml files for you
+Check out [this tool](https://wolv-photomode-tools.netlify.app/) by @wolv, it will generate yaml files for you. It is currently (Dec 17 2024) not compatible with 2.2.
 {% endhint %}
 
 ## Getting the files
@@ -39,28 +43,177 @@ Download either of these files:
 * full Wolvenkit project ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8287))
 * Wolvenkit source folder ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8287))
 
+{% hint style="info" %}
+This tutorial assumes that your Wolvenkit project is called `your_cool_new_pose_pack`, and that your legal name is `your_beautiful_name`.&#x20;
+
+If that's not the case, please adjust accordingly!
+{% endhint %}
+
 ## Setting up the files
 
 At any point during this guide, you can press the green `Install` button on Wolvenkit's toolbar to check the mod in Wolvenkit.
 
-### Step 1: Rename the folders
+## Step 1: Rename the folders
 
-{% hint style="info" %}
-This step is optional, but if you want to release your mod, you **have** to complete it (or cause mod conflicts for your users. Don't cause mod conflicts for your users.)
-{% endhint %}
+### TL;DR
 
-We usually do this at the very end and I'm leaving you alone with it. However, this time we start by renaming the folders.
+1. &#x20;Use Wolvenkit's `Rename` feature with the `Update in project files` box checked&#x20;
+2. Use Notepad++ to edit `photomode_poses_tutorial.xl`. Search\&replace the original path (`tutorial\animations\netrunner_making_poses`) with your new folder path.
+3. Test. The. Mod.
+4. Proceed to [#step-2-hook-up-your-poses](archivexl-adding-photo-mode-poses.md#step-2-hook-up-your-poses "mention")
 
-The screenshot below shows **suggestions**. Name your files and folders whatever you want, as long as they have no uppercase letters.
+### Step by step
 
-<figure><img src="../../../.gitbook/assets/archiveXL_photomode_file_structure.png" alt=""><figcaption></figcaption></figure>
+We usually do this at the very end and I'm leaving you alone with it. However, this time we start by renaming the folders.&#x20;
+
+Here's how your project should look when you're done.&#x20;
+
+<figure><img src="../../../.gitbook/assets/axl_photo_mode_rename_files_folders.png" alt=""><figcaption></figcaption></figure>
+
+1. Select the highlighted `tutorial` folder and press f2. This will open the rename dialogue.
+2.  Change its name, and check the `Update in project files?` box
+
+    <figure><img src="../../../.gitbook/assets/axl_photomode_2_2_rename_folder.png" alt=""><figcaption></figcaption></figure>
+
+
+3. Do the same for the `netrunner_making_poses` folder (you want your file structure to be as tidy as it can be - future you will thank you for it)
+4. Switch your project browser to the resources tab and open `photomode_poses_tutorial.xl` in notepad++:
+
+<figure><img src="../../../.gitbook/assets/axl_photomode_edit_xl_file.png" alt=""><figcaption></figcaption></figure>
+
+5. Use `Edit` -> `Replace` (Keyboard shortcut: `Ctrl+H`) to open the search and replace menu. Replace the old path with your new path:\
+   `tutorial\animations\netrunner_making_poses` -> `your_beautiful_name\animations\your_cool_new_pose_pack`
+
+<figure><img src="../../../.gitbook/assets/axl_photomode_search_and_replace_repathing.png" alt=""><figcaption></figcaption></figure>
+
+6. Hit "Replace All"&#x20;
+7. Save your file (Keyboard shortcut: `Ctrl+S`)
+8. Now, rename the files under `resources` as well:
+   1. `photomode_poses_tutorial.xl` -> `your_cool_new_pose_pack.xl`
+   2. `r6\tweaks\tutorial\photomode_poses_tutorial.yaml` -> `r6\tweaks\tutorial\your_cool_new_pose_pack.yaml`
+9. Rename `r6\tweaks\tutorial` to `r6\tweaks\your_beautiful_name`
+
+That's it for the renaming. Time to test!&#x20;
+
+10. Install the mod, and make sure that you still have photo mode poses.
+
+## Step 2: hook up your poses
 
 ### The .xl file
 
 This file tells Cyberpunk to load your custom poses and will be in the same folder as the .archive file for your mod. It looks like this:
 
-<pre class="language-yaml"><code class="lang-yaml"><strong>animations:
-</strong>  - entity: base\characters\entities\player\photo_mode\player_wa_photomode.ent
+
+
+{% tabs %}
+{% tab title="2.2" %}
+```yaml
+# ##############################################################################
+# your .json file with the pose names
+# ##############################################################################
+localization:
+  onscreens:
+    en-us: tutorial\animations\netrunner_making_poses\localization.json
+
+# ##############################################################################
+# link up the .anims file with anything in the photo mode
+# ##############################################################################
+animations:
+  # ##############################################################################
+  # female body gender
+  # ##############################################################################
+  # player
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep1.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  # extra NPCs
+  - entity: base\characters\entities\player\photo_mode\alt_cunningham\alt_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: base\characters\entities\player\photo_mode\blue_moon\bmuc_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: base\characters\entities\player\photo_mode\evelyn_parker\evelyn_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: base\characters\entities\player\photo_mode\hanako_arasaka\hanako_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: base\characters\entities\player\photo_mode\judy_alvarez\judy_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: base\characters\entities\player\photo_mode\lizzy_wizzy\lizzy_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: base\characters\entities\player\photo_mode\meredith_stout\meredith_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: ep1\characters\entities\player\photo_mode\myers\myers_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: base\characters\entities\player\photo_mode\panam_palmer\panam_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: base\characters\entities\player\photo_mode\purple_force\pfuc_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims    
+  - entity: base\characters\entities\player\photo_mode\rogue_amendiares\old_rogue_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: base\characters\entities\player\photo_mode\rogue_amendiares\young_rogue_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: base\characters\entities\player\photo_mode\red_menace\rmuc_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  - entity: ep1\characters\entities\player\photo_mode\songbird\songbird_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims
+  # nibbles replacer (old)  
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_woman_average.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims    
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_fem1.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims     
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_fem2.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims    
+    
+  # ##############################################################################
+  # male body gender  
+  # ##############################################################################
+  # player
+  - entity: base\characters\entities\player\photo_mode\player_ma_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: ep1\characters\entities\player\photo_mode\player_ma_photomode_ep1.ent 
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  # extra NPCs
+  - entity: base\characters\entities\player\photo_mode\adam_smasher\adam_smasher.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: base\characters\entities\player\photo_mode\goro_takemura\goro_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: base\characters\entities\player\photo_mode\jackie_welles\jackie_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: base\characters\entities\player\photo_mode\altjohnny_silverhand\altjohnny_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims    
+  - entity: base\characters\entities\player\photo_mode\johnny_silverhand\johnny_photomode_entity.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: base\characters\entities\player\photo_mode\kerry_eurodyne\kerry_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: ep1\characters\entities\player\photo_mode\kurt\kurt_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: base\characters\entities\player\photo_mode\viktor_vektor\viktor_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: base\characters\entities\player\photo_mode\river_ward\river_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: ep1\characters\entities\player\photo_mode\solomon_reed\reed_photomode.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  # nibbles replacer (old)
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_man_average.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_man_big.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims     
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_man_big1.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims     
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_man_big2.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims   
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_masc1.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_masc2.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+
+```
+{% endtab %}
+
+{% tab title="<= 2.1" %}
+```yaml
+animations:
+  - entity: base\characters\entities\player\photo_mode\player_wa_photomode.ent
     set: tutorial\animations\netrunner_making_poses\pwa.anims
   - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep1.ent
     set: tutorial\animations\netrunner_making_poses\pwa.anims
@@ -78,7 +231,9 @@ localization:
   onscreens:
     en-us: tutorial\animations\netrunner_making_poses\localization.json
 
-</code></pre>
+```
+{% endtab %}
+{% endtabs %}
 
 You have to adjust the paths under `set` and `en-us` to your new changed folder structure.
 
@@ -100,8 +255,10 @@ Here's what those things do:
 You can name this file whatever you want, just make sure that you change the path and name in the .xl file.
 {% endhint %}
 
-* Change the yellow box `UI-Photomode-tutorial-netrunner-making-poses` to something unique to your mod.
-* The green text is the name that will show up in photo mode — the female variant is the default.
+* Change the yellow box `UI-Photomode-tutorial-netrunner-making-poses` to something **unique to your mod.**
+* To do future you a favour, use names that will make sense even after a year or two - e.g. `UI-Photomode-your_beautiful_name-my_cool_poses` instead of `UI-Photomode-ghuawstsedr-hsarht223445`
+* The green text is the name that will show up in photo mode. \
+  `femaleVariant` is the default key - if you don't need different pose names for the male body gender, leave it empty.
 
 <figure><img src="../../../.gitbook/assets/archivexl_photomode_json.png" alt=""><figcaption></figcaption></figure>
 
@@ -121,13 +278,15 @@ Optional: If you want your pose to move, you can set the duration in the .yaml a
 
 ### The .yaml file
 
-This file will go into `r6/tweaks/yourfolder` and appends the poses that you defined to the photo mode. Without this file, the animations will be in the entity, but the photo mode won't know about them.
+Without this file (`r6/tweaks/your_beautiful_name/your_cool_new_pose_pack.yaml`), the animations will be in the entity, but the photo mode won't know about them.
 
-{% hint style="success" %}
+{% hint style="warning" %}
 You can use [this tool](https://wolv-photomode-tools.netlify.app/) by @wolv to autogenerate your .yaml. If you do that, then you can skip this entire section and check [the result](archivexl-adding-photo-mode-poses.md#the-result).
+
+As of Dec 17 2024, the tool is not yet up-to-date with 2.2!
 {% endhint %}
 
-It has three sections:
+The yaml file has three sections:
 
 #### Adding the category
 
@@ -161,44 +320,70 @@ You need to add one of those for every pose from your .anim file that you want t
 `category`: This must match the category in the first block.\
 `displayName`: What'll show up in photo mode
 
-#### Spawning props with the pose \[OPTIONAL]
-
-It is possible to have certain props spawned automatically. **However, this feature works only for Player V.**
-
-<figure><img src="https://i.imgur.com/hiSBpNJ.png" alt="" width="375"><figcaption><p>Example of prop spawned with the pose after defining it in yaml</p></figcaption></figure>
-
-To define what type of props you want to spawn you need to edit `acceptedWeaponConfig:` entry . Find a list of the potential entries under [cheat-sheet-poses-acceptedweaponconfig.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations/cheat-sheet-poses-acceptedweaponconfig.md "mention")
-
-<figure><img src="https://i.imgur.com/QHdVuNb.png" alt=""><figcaption><p>I'm using KNIFE as example</p></figcaption></figure>
-
-In the case of weapons, V will either spawn the default weapon from PhotoMode or use whatever weapon has in hand while entering PhotoMode. The position of the prop is defined by `WeaponRight`/ `WeaponLeft` bone.
-
-#### Pose conditions \[Optional]
-
-You can limit the availability of poses by setting a `poseStateConfig`.  For example, the following entry in your yaml will cause the pose to be unavailable unless V is swimming forwards:
-
-<pre class="language-yaml"><code class="lang-yaml"><strong>  poseStateConfig: POSE_STATE_SWIMMING_MOVING
-</strong></code></pre>
-
 ### Telling photo mode about the poses
 
 You register your poses for photo mode by creating the following entry categories:
 
+{% tabs %}
+{% tab title=">= 2.2" %}
+```yaml
+
+# Player and Nibbles
+
+photo_mode.character.malePoses:
+  - !append-once PhotomodePoses.sit_chair_table_keyboard__2h_on_keyboard_01__thinking
+photo_mode.character.femalePoses:
+photo_mode.character.quadrupedPoses:
+
+# extra NPCs: female body gender
+
+photo_mode.character.altPoses:
+photo_mode.character.bluemoonPoses:
+photo_mode.character.evelynPoses:
+photo_mode.character.hanakoPoses:
+photo_mode.character.judyPoses:
+photo_mode.character.lizzyPoses:
+photo_mode.character.meredithPoses:
+photo_mode.character.panamPoses:
+photo_mode.character.purpleforcePoses:
+photo_mode.character.redmenacePoses:
+photo_mode.character.rogueoldPoses:
+photo_mode.character.rogueyoungPoses:
+photo_mode.character.songbirdPoses:
+photo_mode.character.myersPoses:
+
+# extra NPCs: male body gender
+photo_mode.character.adamPoses:
+photo_mode.character.altjohnnyPoses:
+photo_mode.character.johnnyPoses:
+photo_mode.character.goroPoses:
+photo_mode.character.jackiePoses:
+photo_mode.character.kerryPoses:
+photo_mode.character.riverPoses:
+photo_mode.character.viktorPoses:
+photo_mode.character.kurtPoses:
+photo_mode.character.reedPoses:
+```
+{% endtab %}
+
+{% tab title="<= 2.1" %}
 ```yaml
 photo_mode.character.malePoses
 photo_mode.character.johnnyPoses
 photo_mode.character.femalePoses
 photo_mode.character.quadrupedPoses
 ```
+{% endtab %}
+{% endtabs %}
 
 An entry looks like this:
 
 <figure><img src="../../../.gitbook/assets/archivexl_photomode_yaml_3.png" alt=""><figcaption></figcaption></figure>
 
-The entries in the list **must** match the unique keys that you've defined in the second block, and you need one entry per pose. If you have different names for differently-gendered poses, you need to use the correct lists.
+{% hint style="warning" %}
+The entries in the list **must** match the unique keys that you've defined in the second block, and you need one entry per pose.&#x20;
 
-{% hint style="info" %}
-`photo_mode.character.quadrupedPoses` enables Nibbles photo mode replacer support for AMM >= 2.2.4
+If you have different names for differently-gendered poses, you need to use the correct lists.
 {% endhint %}
 
 ## Finishing up
@@ -218,3 +403,42 @@ At any point during this guide, you can press the green `Install` button on Wolv
 <figure><img src="https://i.imgur.com/1nMpUSy.png" alt=""><figcaption><p>She has no idea what she's doing</p></figcaption></figure>
 
 <figure><img src="https://i.imgur.com/eakqwZu.png" alt=""><figcaption><p>Fortunately, you can hire specialists</p></figcaption></figure>
+
+
+
+## Optional: Further fine-tuning poses
+
+### Spawning props with the pose
+
+{% hint style="info" %}
+You can find a more detailed guide on this on [xbae's website](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-custom-photomode-props/).
+{% endhint %}
+
+
+
+It is possible to have certain props spawned automatically. **However, this feature works only for Player V.**
+
+<figure><img src="https://i.imgur.com/hiSBpNJ.png" alt="" width="375"><figcaption><p>Example of prop spawned with the pose after defining it in yaml</p></figcaption></figure>
+
+In your .yaml file (`r6/tweaks/your_beautiful_name/your_cool_new_pose_pack.yaml`), add the `acceptedWeaponConfig` attribute.
+
+{% hint style="info" %}
+Find a list of the potential entries under [poses-animations.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md "mention") ->[#acceptedweaponconfig](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md#acceptedweaponconfig "mention")
+{% endhint %}
+
+<figure><img src="https://i.imgur.com/QHdVuNb.png" alt=""><figcaption><p>I'm using KNIFE as example</p></figcaption></figure>
+
+In the case of weapons, V spawn with whatever weapon you were holding when entering PhotoMode, or the default weapon if none was defined.&#x20;
+
+The position of the prop is defined by `WeaponRight`/ `WeaponLeft` bone.
+
+### Pose conditions \[Optional]
+
+You can limit the availability of poses by setting a `poseStateConfig`.  For example, the following entry in your yaml will cause the pose to be unavailable unless V is swimming forwards:
+
+<pre class="language-yaml"><code class="lang-yaml"><strong>  poseStateConfig: POSE_STATE_SWIMMING_MOVING
+</strong></code></pre>
+
+{% hint style="info" %}
+Find a list of the potential entries under [poses-animations.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md "mention") -> [#posestateconfig](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md#posestateconfig "mention")
+{% endhint %}
