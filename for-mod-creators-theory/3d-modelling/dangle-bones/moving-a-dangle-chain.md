@@ -2,17 +2,21 @@
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created by @eagul**\
-**Published March 20 2023**
+**Created: March 20 2023 by @eagul**\
+**Last documented update: Dec 19 2024 by** [Shota Meipariani](https://app.gitbook.com/u/r1zz3EKCe5hRdd5UurCIGdk6h8Z2 "mention")
 
 This guide will go deep into detail about moving dangle bones.\
 \
-Still unknown: changing bone parenting, rotating bones, editing the animgraph physics, adding new mirrored dangle chains for better coverage. If anyone has done tests on any of these topics, please contact me.\
+Still unknown: changing bone parenting, rotating bones, editing the animgraph physics, adding new mirrored dangle chains for better coverage. If anyone has done tests on any of these topics, please contact @eagul via Discord!
 
+### Assumed skill level:&#x20;
 
-Assumed skill level: \
 \- You understand what you are doing, and know why you need to move dangle bones\
 \- You are able to read and comprehend instructions.
+
+### Video tutorial
+
+Visual learners, rejoice! Here is a more up do date guide in a video form with some helpful tools as well: [https://www.youtube.com/watch?v=kojfyn\_6jv4](https://www.youtube.com/watch?v=kojfyn_6jv4)
 
 ## <mark style="color:yellow;">MATH WARNING</mark>
 
@@ -109,8 +113,13 @@ Next, press the 3 small lines below the output, click on Show LaTeX, and copy th
 <figure><img src="../../../.gitbook/assets/image (96).png" alt=""><figcaption><p>Finished bone matrix edit in Wolvenkit</p></figcaption></figure>
 
 And now repeat all of those steps for each of your bones... enjoy...\
-After that, you should be finished!
+After that, you should be finished!\
+\
+
 
 {% embed url="https://streamable.com/sdkxvc" %}
-Final result&#x20;
+Final result \
+\
+\
+
 {% endembed %}
