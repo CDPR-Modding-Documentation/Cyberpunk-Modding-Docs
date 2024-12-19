@@ -11,7 +11,7 @@ description: 'Step 2: How to create a custom NPC'
 
 This page is a part of the [NPV guide](./). It will show you how to use the [provided example project](./#preparation) to create a custom NPC for Cyberpunk 2077, whom you can then spawn with AppearanceMenuMod.
 
-It will give you an overview over the control files and tell you how to pull in the right meshes (and appearances).&#x20;
+It will give you an overview over the control files and tell you how to pull in the right meshes (and appearances).
 
 ### Video guide
 
@@ -26,12 +26,12 @@ It will give you an overview over the control files and tell you how to pull in 
 
 ### Prerequisites
 
-This guide assumes that&#x20;
+This guide assumes that
 
 * you already have a head mesh (see [this section](npv-preparing-the-head-in-blender.md) otherwise)
 * that you're using a set of default paths (if not, you will have to adjust)
   * the corresponding files are in either of these folders\
-    `tutorial\npv\your_female_character\head` \
+    `tutorial\npv\your_female_character\head`\
     `tutorial\npv\your_male_character\head`
   * the meshes are named like their in-game equivalents, e.g. `h0_000_pwa_c__basehead.mesh` (if not, you will have to adjust)
 
@@ -89,7 +89,7 @@ return {
   -- name: The name that will be shown in the Spawn tab
     name = "Tutorial Woman",
   -- path: The path to your entity file. Must use double slash bars \\
-    path = "tutorial\\npv\\your_female_character\\ops\\your_female_character.ent",
+    path = "tutorial\\npv\\your_female_character\\_your_female_character.ent",
   -- record: This is the TweakDB record that will be used to add your character. More information below.
     record = "Character.afterlife_merc_fast_melee_w_hard",
   -- type: Character or Vehicle
@@ -110,7 +110,7 @@ return {
 }
 ```
 
-It loads our [root entity](npv-creating-a-custom-npc.md#the-root-entity) from  `tutorial\npv\your_female_character\ops\your_female_character.ent`. That's the file which tells the game what to load.
+It loads our [root entity](npv-creating-a-custom-npc.md#the-root-entity) from `tutorial\npv\your_female_character\_your_female_character.ent`. That's the file which tells the game what to load.
 
 {% hint style="success" %}
 You can and should change this file — see the inline documentation above for what to change. To do that, you can use a text editor such as [Notepad++](https://notepad-plus-plus.org/downloads/).
@@ -121,17 +121,17 @@ You can and should change this file — see the inline documentation above for w
 You find the root entity for your character here:
 
 ```
-tutorial\npv\your_female_character\ops\your_female_character.ent
-tutorial\npv\your_male_character\ops\your_male_character.ent
+tutorial\npv\your_female_character\_your_female_character.ent
+tutorial\npv\your_male_character\_your_male_character.ent
 ```
 
 {% hint style="info" %}
-[Would you like to know more?](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#root-entity) (You don't need any of this information to finish the guide.)
+[Would you like to know more?](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files#root-entity) (You don't need any of this information to finish the guide.)
 {% endhint %}
 
 The root entity hooks up your .app file and the appearance names in the .lua file, and that's about everything there is to say about it. Here's how it looks:
 
-<figure><img src="../../../.gitbook/assets/npv_root_entity.png" alt=""><figcaption><p>Adjust entries as needed. If you want to </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/npv_root_entity.png" alt=""><figcaption><p>Adjust entries as needed. If you want to</p></figcaption></figure>
 
 {% hint style="success" %}
 If you want to add more appearances:
@@ -147,32 +147,52 @@ Let's look at the .app file now.
 
 {% hint style="info" %}
 You can find a more detailed guide about adding stuff to .app files under [appearances-change-the-looks](../appearances-change-the-looks/ "mention"). It's optional, unless you're really stuck.
+
+[Do you want to know more?](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files) (You don't need any of this information to finish the guide.)
 {% endhint %}
 
-This section will tell you how to edit your NPV's appearance – their skin colour, chrome, piercings, tattoos. We will do this in the .app file.
+This section will tell you how to edit your NPV's appearance – their skin colour, chrome, piercings, tattoos. We will do this in the .app file.
 
 {% hint style="danger" %}
-When changing component names, you want to leave the [#component-prefixes](../../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/#component-prefixes "mention") (t1\_) in place — the game needs them to calculate collisions!
+When changing component names, you want to leave the [#component-prefixes](../../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/#component-prefixes "mention") (`t0_`, `hx_`) in place — the game needs them!
 {% endhint %}
 
-This is where all of your NPC's appearances are defined (`appearanceDefinition`,  linked to the root entity via `name`). The appearanceDefinition's components **define** your NPV's properties, pulling in equipment, facial expressions, hair and skin.
+An .app file holds a number of **appearances**. These are connected by **name** to your entity file:
 
-{% hint style="info" %}
-[Would you like to know more?](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files/) (You don't need any of this information to finish the guide.)
-{% endhint %}
+<figure><img src="../../../.gitbook/assets/npv_ent_to_app (1).png" alt=""><figcaption></figcaption></figure>
 
-It looks like this:
+Inside each `appearanceDefinition` (appearance for short), the `components` array defines your NPC's properties. This is where the game is told to pull in facial expressions, animations, hair, skin, and equipment.
 
-<figure><img src="../../../.gitbook/assets/npv_app_structure..png" alt=""><figcaption><p>Before renaming </p></figcaption></figure>
+This is where all of your NPC's appearances are defined (`appearanceDefinition`, linked to the root entity via `name`). The appearanceDefinition's components **define** your NPV's properties, such as
 
-Whenever you save the file, the Wolvenkit console will show you the results of the [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). These will point you towards mistakes in your paths.
+* animations
+* their shadow
+* hair
+* body&#x20;
+* clothes
 
-If you get a bunch of errors that complain about "mesh not found in project files" or "no depot path set, only hash given," that's no reason to panic – those errors come from files that you deleted, but which are still linked in the `.app`. If you deleted them by accident, restore them from the template project. Otherwise, you can (and should) delete the components.
+<figure><img src="../../../.gitbook/assets/npv_app_structure.png" alt=""><figcaption><p>Do <strong>not</strong> delete the prefixes (<code>hx_</code>, <code>l1_</code> etc) - they're used by various other mods, among them EquipmentEx</p></figcaption></figure>
+
+### Step 1: Cleaning up
+
+Deleting meshes from the mod's files left you with a bunch of inactive components. If you start the game now, there's a chance that you might **crash**.
+
+Wolvenkit's [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you finding the components that you can delete.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (546).png" alt=""><figcaption></figcaption></figure>
+
+Their names will show up in the log:
+
+<figure><img src="../../../.gitbook/assets/image (547).png" alt=""><figcaption><p>That's normal, you just deleted those files!</p></figcaption></figure>
+
+Go through the appearances and delete all components that File Validation warned you about. After that, you're good go customize your NPC!
+
+### Step 2: Customizing
 
 {% hint style="success" %}
 The next section, [#how-do-i-know-what-to-put](npv-creating-a-custom-npc.md#how-do-i-know-what-to-put "mention"), will help you find the right appearance names.
 
-If you feel completely lost, you can read up on [how to change NPC appearances](../appearances-change-the-looks/) – the concept is exactly the same.&#x20;
+If you feel completely lost, you can read up on [how to change NPC appearances](../appearances-change-the-looks/) – the concept is exactly the same.
 
 Also, [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
 {% endhint %}
@@ -194,7 +214,7 @@ To find out which variants and appearances to use, I suggest that you use NoraLe
 {% hint style="success" %}
 The NPV picker does this for you, but here's how to select your eyebrow appearance by hand:
 
-* &#x20;open up the mesh file and expand the first list `appearances`
+* open up the mesh file and expand the first list `appearances`
 * see a bunch of entries with naming schemas like `colour_01`
 * the numbers correspond with the type of eyebrow in the character editor (look them up [here](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md))
 * Select the correct colour and appearance number
@@ -231,9 +251,9 @@ If you skip this step, you will end up with the wrong or too many piercings and 
 To learn more about chunkmasks, check [this wiki page](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md) (if you can do it with the information below, you don't need to)
 {% endhint %}
 
-You have the full piercing or cyberware file, but you're only using parts of it — yet the game stubbornly shows you the whole mesh.&#x20;
+You have the full piercing or cyberware file, but you're only using parts of it — yet the game stubbornly shows you the whole mesh.
 
-Fortunately, you don't have to edit it in Blender, because you can hide the parts you aren't using via chunkmasks. \
+Fortunately, you don't have to edit it in Blender, because you can hide the parts you aren't using via chunkmasks.\
 Find the `piercing` or `cyberware` component in your `.app` file:
 
 <figure><img src="../../../.gitbook/assets/npv_piercings_chunkmask_1.png" alt=""><figcaption><p>This is where you can turn off submeshes</p></figcaption></figure>
@@ -245,6 +265,12 @@ You can see that inside the .mesh file (which you can see in the component's `de
 <figure><img src="../../../.gitbook/assets/npv_piercings_chunkmask_2.png" alt=""><figcaption><p>Here we see the indices of these three submeshes: this is what we need to uncheck in the .app file</p></figcaption></figure>
 
 To hide those bits in the .app, we simply need to uncheck the corresponding boxes - check the previous screnshot!
+
+### Adding stuff to an appearance
+
+Adding components is as easy as **right-clicking** an existing one and editing a few properties:
+
+<figure><img src="../../../.gitbook/assets/image (545).png" alt=""><figcaption><p>Make sure your component names are unique!</p></figcaption></figure>
 
 ## Adding modded items
 
@@ -265,8 +291,8 @@ For more information on **hair files**, check the [basic-hairstyle-replacement-t
 1. Delete the current hair from the .app — there should be 2-3 components, their names will start with either `hair_` or `hh_0`
 2. Find the correct hair mesh. You have three options for this:
    1. Looking it up on [our nifty list](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md#name-in-files-by-index)
-   2. Using [NoraLee's NPV Part Picker](https://noraleedoes.neocities.org/npv/npv_part_picker)&#x20;
-   3. Filtering the files and clicking through their previews: \
+   2. Using [NoraLee's NPV Part Picker](https://noraleedoes.neocities.org/npv/npv_part_picker)
+   3. Filtering the files and clicking through their previews:\
       female: `base\characters\common\hair > wa_ > .mesh > !shadow`\
       male: `base\characters\common\hair > ma_ > .mesh > !shadow`
 3. Enter the name of the hair mesh that you want to use into the Asset Browser's search bar (see next screenshot) and hit Return.
@@ -274,7 +300,7 @@ For more information on **hair files**, check the [basic-hairstyle-replacement-t
 
 <figure><img src="../../../.gitbook/assets/npv_finding_hair_files.png" alt=""><figcaption></figcaption></figure>
 
-4. This will give you a list of files, which you can mostly ignore. \
+4. This will give you a list of files, which you can mostly ignore.\
    The only thing we care about is the hair's control file, which is usually an `.ent` file:
 
 <figure><img src="../../../.gitbook/assets/npv_hair_filtering.png" alt=""><figcaption><p>This is how you find the hair's .ent file</p></figcaption></figure>
@@ -290,7 +316,7 @@ If there are multiple files, check which one uses the **most** components per ap
 
 ## The body
 
-As of version 2.2.0, the body mesh and arms are included for easier replacing.&#x20;
+As of version 2.2.0, the body mesh and arms are included for easier replacing.
 
 The process is the same as what you did with the hair: find the files in the mod, add them to your project, move them to your NPVs folder and customize them to your liking.
 
@@ -298,11 +324,11 @@ You can find more information at [cheat-sheet-body.md](../../../for-mod-creators
 
 ### And that's the gist of it!
 
-Go forth and create custom apperances!&#x20;
+Go forth and create custom apperances!
 
 You can [check this guide](../appearances-change-the-looks/), or look through the .app files for other NPCs for ideas. If you need further details, I highly recommend checking out NoraLee's [much more detailed tutorial](https://docs.google.com/document/d/1clFJhpi7H5jk73vUQPnjIwjkuQV6VnYkKMoXt1eYMb0/edit), which will also give you all the context you could possibly need.
 
-For guides on how to export a whole animated character to Blender, you can check [here](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims).&#x20;
+For guides on how to export a whole animated character to Blender, you can check [here](https://wiki.redmodding.org/wolvenkit/guides/modding-community/exporting-to-blender/exporting-rigs-and-anims).
 
 {% hint style="danger" %}
 Please remember that **before sharing your NPV**, you **have** to change the paths! You can find a full guide on the fastest way to do that [here](../../items-equipment/moving-and-renaming-in-existing-projects.md).

@@ -67,25 +67,19 @@ Find the mirror in V's apartment and note down the **numerical values**.
 
 <figure><img src="../../../.gitbook/assets/npv_head_character_creator_numbers.png" alt=""><figcaption></figcaption></figure>
 
-### Setting up the files
-
-{% hint style="info" %}
-**Body gender:**
-
-As a rule of thumb, I'll document the process for an NPV with a female body gender, because ~~as we all know, the other doesn't exist~~ I have one of those. If yours has a male body gender, your **file paths** will be slightly different, but the process is exactly the same.
-{% endhint %}
+## Preparation: Setting up the project
 
 1. Create [a Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
 2. Download the example files from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328)
 3. Merge the `source` folder in the download with the `source` folder in your Wolvenkit project directory
-4. In **Wolvenkit**'s [archive tab](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#archive), find the prepared folders per body gender:
+4. Switch to Wolvenkit and toggle the [project explorer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer) to the [source tab](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#source).
+5. We will have **one NPC per Wolvenkit project** (I mean this!), so we'll delete the files for the body gender that we won't be using (find a table after the image)
 
-<table><thead><tr><th width="179">body gender</th><th>file path</th></tr></thead><tbody><tr><td>female</td><td><code>tutorial\npv\your_female_character</code></td></tr><tr><td>male</td><td><code>tutorial\npv\your_male_character</code></td></tr></tbody></table>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-5. Delete the one you're not using (do **one Wolvenkit project** per NPC. No, really, I mean it.)
-6. In **Wolvenkit**'s [resource tab](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources), delete the `.lua` file for the body gender that you don't want to use.
 
-<figure><img src="../../../.gitbook/assets/2 delete lua not using.png" alt=""><figcaption></figcaption></figure>
+
+<table><thead><tr><th width="179">body gender</th><th>file path</th></tr></thead><tbody><tr><td>female</td><td><ul><li><code>archive\tutorial\npv\your_female_character</code></li><li><code>raw\tutorial\npv\your_female_character</code></li><li><code>resources\bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Entities\tutorial\tutorial_custom_female_character.lua</code></li></ul></td></tr><tr><td>male</td><td><ul><li><code>archive\tutorial\npv\your_male_character</code></li><li><code>raw\tutorial\npv\your_male_character</code></li><li><code>resources\bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Entities\tutorial\tutorial_custom_male_character.lua</code></li></ul></td></tr></tbody></table>
 
 {% hint style="danger" %}
 This tutorial assumes that you will rename and re-path your files **at the very end**, because the prepared files rely on a certain file structure. We'll get to it!

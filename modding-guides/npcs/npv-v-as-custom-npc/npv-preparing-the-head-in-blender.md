@@ -7,7 +7,7 @@ description: 'Step 1: How to generate your V''s custom head mesh'
 ## **Summary**
 
 **Published: May 13 2023 by @manavortex**\
-**Last documented update: Dec 01 2024 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update: Dec 19 2024 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page is a part of the [NPV guide](./). It will show you how to&#x20;
 
@@ -19,7 +19,7 @@ This section will **not** deal with the following (that comes in [npv-creating-a
 * Changing V's body
 * Changing anything that is not the head shape (e.g. colours or materials)
 
-If you want a 3d model, you probably know what you're doing; in that case, make sure to run the script and get the shape right, then go wild.
+If you want a 3d model, you probably know what you're doing; in that case, make sure to run the script and get the shape right, then go wild. If you want to export a body, you can still complete this guide, then follow the [entity export workflow](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/modding-community/exporting-to-blender) to get everything into Blender.
 
 ### Video tutorial
 
@@ -32,7 +32,7 @@ IWouldiwas Sh00kspeared made  a video tutorial for visual learners (Nov 2024). Y
 * [ ] You have downloaded the prepared Wolvenkit Project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328)
 * [ ] You have [Blender](https://www.blender.org/download/) installed
 * [ ] You have the Wolvenkit Blender Plugin (check [installing-the-wolvenkit-blender-plugin](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/ "mention") if you don't)
-* [ ] Blender and the plugin are on the current compatible versions [wkit-blender-plugin-current-version.md](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/wkit-blender-plugin-current-version.md "mention"))
+* [ ] Blender and the plugin are on the current compatible versions [wkit-blender-plugin-current-version.md](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/wkit-blender-plugin-current-version.md "mention")
 * [ ] You have completely read this entire section
 
 ### Worth noticing
@@ -47,16 +47,16 @@ The final section of [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md
 
 ## Step 1: Getting head
 
-1. Open the `head` folder in your project's `archive` section.
-   1. **Optional:** Be confused and/or panic about why there are [over 9000](#user-content-fn-1)[^1] files.list
-   2.
+1.  Open the `head` folder in your project's `archive` section.
 
-       <figure><img src="../../../.gitbook/assets/3 head folder.png" alt=""><figcaption></figcaption></figure>
-2. Look into the `head/morphtargets` folder
-   1. **Optional:** Be confused and/or panic about why there are [over 9000](#user-content-fn-2)[^2] files **again**.&#x20;
-   2.
+    1. **Optional:** Be confused and/or panic about why there are [over 9000](#user-content-fn-1)[^1] files
 
-       <figure><img src="../../../.gitbook/assets/4 scroll down to find morphtargets folder.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/3 head folder.png" alt=""><figcaption></figcaption></figure>
+2.  Look into the `head/morphtargets` folder
+
+    1. **Optional:** Be confused and/or panic about why there are [over 9000](#user-content-fn-2)[^2] files **again**.&#x20;
+
+    <figure><img src="../../../.gitbook/assets/4 scroll down to find morphtargets folder.png" alt=""><figcaption></figcaption></figure>
 3. Delete all those files that you aren't using (read on as for how)
 
 {% hint style="info" %}
@@ -65,7 +65,7 @@ The final section of [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md
 True! That's because I included **all** options for any given V. But don't worry: after you have deleted the ones that you won't be using, you should be left with a maximum of 13 `.morphtarget` files for female V and 14 files for male V.&#x20;
 {% endhint %}
 
-I have included all meshes and morphtargets from the game files. We'll now thin out the options, deleting those parts that your NPV won't be using.
+I have included **all** meshes and morphtargets from the game files. We'll now thin out the options, deleting those parts that your NPV won't be using.
 
 ### Deleting unused files: the convenient option
 
@@ -149,6 +149,8 @@ tutorial\npv\your_female_character\head\morphtargets\hx_000_pwa__morphs_tattoo_0
 tutorial\npv\your_male_character\head\morphtargets\i1_000_pma__morphs_earring_0*.morphtarget
 </code></pre></td></tr></tbody></table>
 
+<figure><img src="../../../.gitbook/assets/npv_file_deletion_chart.png" alt=""><figcaption></figcaption></figure>
+
 #### Expected result
 
 After deletions, both `head` and `head/morphtargets` should hold only the files that your V is actually using.&#x20;
@@ -157,7 +159,7 @@ For a list, see the [table above](npv-preparing-the-head-in-blender.md#okay-and-
 
 Once you're done, you should have between 4 and 13/14 files:
 
-<table data-header-hidden><thead><tr><th width="281"></th><th></th></tr></thead><tbody><tr><td>minimum number of files</td><td>4</td></tr><tr><td>maximum number of files</td><td><p>13 (female body gender)</p><p>14 (male body gender)</p></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="281"></th><th></th></tr></thead><tbody><tr><td>minimum number of files</td><td>4</td></tr><tr><td>maximum number of files</td><td><p>13 (female body gender)</p><p>15 (male body gender)</p></td></tr></tbody></table>
 
 ## Step 2: Exporting head
 
