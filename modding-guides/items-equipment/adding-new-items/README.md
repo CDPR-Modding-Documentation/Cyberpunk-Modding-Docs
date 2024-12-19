@@ -22,7 +22,9 @@ This guide will walk you through **adding your own items** to Cyberpunk 2077, wh
 | [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107) (for spawning items) | 1.28.1                | 1.28.1                |
 
 **Assumed skill level:**\
-You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible.
+You should be able to find your way around WolvenKit, but I aim to keep this as noob-friendly as possible.\
+\
+**In case you prefer visual learning, there is also a video version of this guide available here -** [https://www.youtube.com/watch?v=r3nyFm-9h9o\&t=3s](https://www.youtube.com/watch?v=r3nyFm-9h9o\&t=3s)
 
 This guide will **give you a working mod** with a **very basic structure**. In the section [#great-you-added-items-now-what](./#great-you-added-items-now-what "mention"), you're guided through various processes that will help you to understand how things connect, and teach you how to use ArchiveXL to add your own items.
 
