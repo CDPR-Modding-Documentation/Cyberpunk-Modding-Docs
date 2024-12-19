@@ -34,3 +34,8 @@ Create the following tweak file (a yaml in `r6/tweaks/your_optional_subfolder`:
       item: Items.YourOtherItemBaseId
       quantity: [ Vendors.Always_Present ]
 </code></pre>
+
+{% hint style="warning" %}
+In-game vendor inventories are generated, and cached, by the game on 24h intervals. \
+So the changes applied won't be immediately evident, but can be produced/tested on demand by skipping 24h of in-game time.
+{% endhint %}
