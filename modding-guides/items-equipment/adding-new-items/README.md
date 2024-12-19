@@ -39,6 +39,7 @@ _The guide was created after reading_ [_this one_](https://drive.google.com/file
 
 ### Wait, that's not what I want!
 
+* Visual learners rejoice: You can find a video of this guide on youtube ([https://www.youtube.com/watch?v=r3nyFm-9h9o](https://www.youtube.com/watch?v=r3nyFm-9h9o))
 * To troubleshoot your ArchiveXL mods, you can use [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/ "mention")'s [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention").
 * If you want to convert a mod to dynamic appearances, check the [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention")
 * If you want to use dynamic appearances out of the box, check [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention") (this is the preferred approach as soon as you're creating different options).
@@ -634,6 +635,6 @@ By right-clicking on a tab title, you can move it to a new document group for ea
 {% endhint %}
 
 \
-Good luck, soldier.
+Good luck, soldier.&#x20;
 
 [^1]: move it to a different location than the one it's currently in
