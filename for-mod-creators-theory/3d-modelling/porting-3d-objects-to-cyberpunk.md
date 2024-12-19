@@ -11,6 +11,8 @@ Last documented Update: Mar. 20 2024 by [manavortex](https://app.gitbook.com/u/N
 
 This page will give you information on how to get a 3d object into Cyberpunk.
 
+If you'd like to watch a video about the whole process, feel free to address the video version of this guide - [https://www.youtube.com/watch?v=r3nyFm-9h9o](https://www.youtube.com/watch?v=r3nyFm-9h9o)&#x20;
+
 ### Wait, that's not what I want!
 
 You can find other relevant guides scattered across this wiki, for example
@@ -26,11 +28,11 @@ You can find other relevant guides scattered across this wiki, for example
 * **Wolvenkit:** The latest version the latest stable ([stable](https://github.com/WolvenKit/WolvenKit/releases/) | [nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/))
 * [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention")(>= [1.5.5.2](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) for Wolvenkit 8.14)
 * Blender (>= [4.1](https://www.blender.org/download/releases/) for Wolvenkit 8.14)
-* A [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can pack your mod
+* A [Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can pack your mod
 
 ## Step 0: Finding the right base mesh
 
-To bring 3d data into Cyberpunk, Wolvenkit needs a .mesh file to import into. [Read here why](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure).&#x20;
+To bring 3d data into Cyberpunk, Wolvenkit needs a .mesh file to import into. [Read here why](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure).&#x20;
 
 For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/ "mention"), creating [custom-props](../../modding-guides/everything-else/custom-props/ "mention") or [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
 
@@ -64,7 +66,7 @@ The default fallback mesh that people use in this case is the [Netrunner Suit](t
 
 </details>
 
-You can use the [Wolvenkit search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) in the [Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) to find meshes.
+You can use the [Wolvenkit search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) in the [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) to find meshes.
 
 #### The right slot
 
@@ -97,18 +99,18 @@ For torso items, you can add `t1` for inner torso items (tight-fitting) or `t2` 
 
 ### Export from Wolvenkit
 
-For **where** to export a mesh, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
+For **where** to export a mesh, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
 
 For **how** to export a mesh, see  [wkit-blender-plugin-import-export.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention") -> [#export-from-wolvenkit](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit "mention")
 
 {% hint style="info" %}
 If your mesh won't export from Wolvenkit, try unchecking the following box(es) in the export settings (by unchecking the boxes):&#x20;
 
-* [Export Materials (default)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials-default "mention")
-* [Export Garment Support (default)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-default "mention")
+* [Export Materials (default)](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials-default "mention")
+* [Export Garment Support (default)](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-default "mention")
 {% endhint %}
 
-Once you are done, you can find the exported glb in your project's raw folder (see [Project Explorer Tabs](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#project-explorer-tabs "mention") or[File Structure: the raw folder](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure-the-raw-folder "mention") for details).
+Once you are done, you can find the exported glb in your project's raw folder (see [Project Explorer Tabs](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#project-explorer-tabs "mention") or[File Structure: the raw folder](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure-the-raw-folder "mention") for details).
 
 ## Step 2: Importing your mesh into Blender
 
@@ -264,7 +266,7 @@ See the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite
 
 ## Step 6: Importing into Wolvenkit
 
-See the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/ "mention") wiki about [Importing mesh files](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#importing-mesh-files "mention")
+See the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/ "mention") wiki about [Importing mesh files](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#importing-mesh-files "mention")
 
 ## Step 7: Success!
 
