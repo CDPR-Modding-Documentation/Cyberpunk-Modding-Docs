@@ -114,6 +114,14 @@ Alternatively, you can check by hand:
 
 </details>
 
+## Importing: bone troubles
+
+### Bones not found in import mesh(es)
+
+The armature you created in Blender has more bones than the mesh you're trying to import into. Since Wolvenkit can't create these bones (yet? Mesh import/export is hard), you're seeing an error message.
+
+To get rid of it, delete the bones in Blender, or import into a different mesh (see [#fixing-bone-troubles](troubleshooting-your-mesh-edits.md#fixing-bone-troubles "mention") as for how)
+
 ### Bone: neutral\_bone not present in export Rig(s)/Import Mesh
 
 The neutral bone is created by the glb export plugin when there are vertex groups without a parent bone. WolvenKit will not let you import if there is a mismatch.
@@ -123,6 +131,8 @@ Your armature in Blender needs to have a bone for every vertex group in the subm
 
 You then need to import over an [already-existing .mesh file](troubleshooting-your-mesh-edits.md#option-2-the-netrunner-suit) which supports all those bones.
 {% endhint %}
+
+### Fixing bone troubles
 
 The following two scripts help you finding and/or fixing the problem. Switch to the Blender Scripting perspective and create a new, blank text file. Then, toggle the Blender system console to see their output (Blender: Window -> Toggle System Console)
 
@@ -136,7 +146,7 @@ You can use the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-
 
 #### Option 1: Fuck those bones: Python
 
-You can find a [Python script on mana's github](https://github.com/manavortex/cyberpunk2077/blob/master/python/armature_cleanup/armature_delete_unused_bones.py) that will drop unused bones and vertex groups. Run it in Blender's Scripting Perspective with your armature&#x20;
+You can find a [Python script on mana's github](https://github.com/manavortex/cyberpunk2077/blob/master/python/armature_cleanup/armature_delete_unused_bones.py) that will drop unused bones and vertex groups. Run it in Blender's Scripting Perspective with your meshes selected.
 
 #### Option 1: Fuck those bones: Noesis
 
@@ -181,7 +191,7 @@ It's time to play 3d puzzle and assemble bones from multiple sources. Unfortunat
 * [merge their rigs](https://github.com/Simarilius-uk/CP2077_BlenderScripts/blob/main/Merge_rigs.py), which you should do with the linked Python script
 * and finally reimport everything back into Cyberpunk.
 
-### Everything else
+## Importing: Everything else
 
 WolvenKit will not import a mesh that has any kind of issues. Those include, but are not limited to:&#x20;
 
