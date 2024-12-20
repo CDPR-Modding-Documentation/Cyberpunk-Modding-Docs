@@ -18,12 +18,12 @@ TL;DR:
 * Change `equipmentSlot` in the yaml (for options, see Step 1)
 * Replace the `mesh_entity` (see Step 2)
 * Replace the `.mesh` (e.g., instead of a shirt, find in-game shoes)
-* Optional: [Port an external item](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk.md)
+* Optional: [Port an external item](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/)
 {% endhint %}
 
 ## Step 1: The .yaml
 
-You define the item slot in your .yaml file by specifying the **root entry type** via a `$base` record. Base records come in many different types, some include intrinsic modifiers that add slight stat improvements to items, or add special sound to items. A complete page with clothing items, their intrinsic modifier, and their baseids can be found on the official Cyberpunk 2077 wiki's article for clothing [here](https://cyberpunk.fandom.com/wiki/Cyberpunk\_2077\_Clothing).
+You define the item slot in your .yaml file by specifying the **root entry type** via a `$base` record. Base records come in many different types, some include intrinsic modifiers that add slight stat improvements to items, or add special sound to items. A complete page with clothing items, their intrinsic modifier, and their baseids can be found on the official Cyberpunk 2077 wiki's article for clothing [here](https://cyberpunk.fandom.com/wiki/Cyberpunk_2077_Clothing).
 
 ```yaml
 Items.My_Custom_Shirt:                      << name of your item (the spawn code)

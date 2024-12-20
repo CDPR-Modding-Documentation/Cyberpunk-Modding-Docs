@@ -11,6 +11,10 @@ description: Plugin error messages and how to resolve them
 
 This page will tell you how to resolve error messages from the [.](./ "mention").
 
+### Wait, this is not what I want!
+
+You can also check [troubleshooting-your-mesh-edits.md](../../3d-modelling/troubleshooting-your-mesh-edits.md "mention") for less addon-specific mesh troubleshooting
+
 ## Assign weights before exporting
 
 This should only happen for meshes with armatures.
@@ -103,15 +107,8 @@ Open the `Modifiers` tab (the orange wrench) and repeat the following steps for 
 
 ### If your submesh has >= 65,535 vertices&#x20;
 
+You need to **reduce the vertex count.**
+
 ### If your submesh has < 65,535 vertices
 
-That's due to [how the Blender .gltf export works](https://github.com/KhronosGroup/glTF-Blender-IO/issues/912#issuecomment-581564314). The only thing you can do to avoid the issue is to make sure that no two vertices share the same UV coordinate.&#x20;
-
-1. switch to the UV editing perspective ( -> [uv-mapping-texturing-a-3d-object.md](../../materials/uv-mapping-texturing-a-3d-object.md "mention"))&#x20;
-2. Turn on UV Sync Selection:
-
-<figure><img src="https://user-images.githubusercontent.com/11024420/73680340-acad8580-4681-11ea-86f2-04422745c15f.png" alt=""><figcaption></figcaption></figure>
-
-3. Once you have found an overlapping vertex, select linked (Hotkey: `Ctrl+L`)
-4. Move the entire UV island by a whole tile in any direction (Hotkey: e.g. `G` -> `X` -> `1`)
-5. Repeat the process until there are no more overlapping islands.
+That's due to [how the Blender .gltf export works](https://github.com/KhronosGroup/glTF-Blender-IO/issues/912#issuecomment-581564314). See [troubleshooting-your-mesh-edits.md](../../3d-modelling/troubleshooting-your-mesh-edits.md "mention") [#wolvenkit-finds-too-many-vertices-but-blender-export-is-fine](../../3d-modelling/troubleshooting-your-mesh-edits.md#wolvenkit-finds-too-many-vertices-but-blender-export-is-fine "mention") for how to remedy this.

@@ -7,9 +7,11 @@ description: How the Wolvenkit Blender plugin works
 ## Summary
 
 **Published**: ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit**: Nov 29 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit**: Dec 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This is the landing page for the Wolvenkit Blender plugin. Here, you can find [#usage](./#usage "mention") instructions, as well as an overview of its features:
+This is the landing page for the Wolvenkit Blender plugin.&#x20;
+
+Here, you can find [#usage](./#usage "mention") instructions, as well as an overview of its features:
 
 * [#animation-tools](./#animation-tools "mention")
 * [#mesh-tools](./#mesh-tools "mention")
@@ -27,11 +29,12 @@ This is the landing page for the Wolvenkit Blender plugin. Here, you can find [#
 
 ## Compatibility
 
-
+{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
 ## Usage
 
-As soon as you have a **mesh** or **armature** selected, the viewport toolbar (keyboard shortcut to hide/unhide: **`n`**) will show you the `CP77 Modding` tab:
+The toolbar to the right of your viewport will show you the `CP77 Modding` tab.\
+(Keyboard shortcut to hide/unhide: **`n`**)&#x20;
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_viewport.png" alt=""><figcaption></figcaption></figure>
 

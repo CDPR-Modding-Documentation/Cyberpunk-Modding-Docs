@@ -9,9 +9,11 @@ description: How to use the auto refitter
 **Published**: ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented edit**: Feb 12 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-The auto-refitter is a tool developed by [AllKnowingLion](https://app.gitbook.com/u/ntwa3K86ZPgEhR4Ds0rOU5qaKHm1 "mention") that automates the tedious process of refitting meshes for the various body mods.
+The auto-refitter is a tool developed by [AllKnowingLion](https://app.gitbook.com/u/ntwa3K86ZPgEhR4Ds0rOU5qaKHm1 "mention") that automates the tedious process of refitting meshes for the various body mods. This wiki page will show you how to use it.
 
-If you need a tutorial for manual refitting, check [r-and-r-refitting-step-by-step.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") or follow the links from there.
+### Wait, this is not what I want!
+
+* If you want to manually refit an item, check [r-and-r-refitting-step-by-step.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") or follow the links from there
 
 ## How to auto-refit
 
@@ -28,11 +30,7 @@ Future versions of the plugin will make this process much easier. For now:
 3. Delete the modifier from the other mesh
 4. After the shapekeys are gone, apply the modifier:
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/blender_plugin_apply_modifier.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/blender_plugin_apply_modifier.png" alt=""><figcaption></figcaption></figure></div>
 
 5. Select the mesh **without shapekeys** (the one you changed by applying the modifier)
 6. Switch to the Data tab and create a modifyer by hitting the + button
@@ -40,11 +38,7 @@ Future versions of the plugin will make this process much easier. For now:
 8. Select the mesh **with shapekeys** (the one with the original shape)
 9. Switch to the Data tab, select the second shapekey in the list, and transfer it:
 
-<div align="left">
-
-<figure><img src="../../../.gitbook/assets/blender_plugin_transfer_shapekeys.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../../.gitbook/assets/blender_plugin_transfer_shapekeys.png" alt=""><figcaption></figcaption></figure></div>
 
 10. Repeat the process with all other shapekeys
 11. You can now delete the original mesh.

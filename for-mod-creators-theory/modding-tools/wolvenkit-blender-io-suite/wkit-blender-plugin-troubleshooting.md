@@ -23,21 +23,19 @@ The first thing people on Discord will tell you is to read this page, so you mig
 Blender errors will show up in the system console window (View -> Toggle System Console).
 {% endhint %}
 
-## General Troubleshooting
+## Version compatibility
 
-### 0. Steam
+{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
-If you installed Blender via Steam, stay on the **stable stream** and make sure to keep Blender up-to-date.
-
-### 1. Make sure that you are on the correct Blender version
-
-As of [1.5.5.1](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases/tag/1.5.5.1), the plugin **supports 4.1.0** and requires **>= 4.0.2.** This information might be outdated by the time you read it.
+### Seeing the Blender version
 
 You can see the exact Blender version in the lower right corner of the program:
 
 <figure><img src="../../../.gitbook/assets/blender_version.png" alt=""><figcaption></figcaption></figure>
 
-### 2. Make sure that you are on the latest plugin version
+## Seeing the plugin version
+
+You can find the current supported version in the table above (under [#version-compatibility](wkit-blender-plugin-troubleshooting.md#version-compatibility "mention")), or check the [**github page's release section**](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) **.**
 
 1. Open the preferences from the menu (Edit -> Preferences)
 2. Switch to the `AddOns` tab in the bar on the left
@@ -46,12 +44,11 @@ You can see the exact Blender version in the lower right corner of the program:
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_check_version.png" alt=""><figcaption></figcaption></figure>
 
-5. Check on [**github**](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) that this is the last available version of the plugin.&#x20;
-6. If it's not, you need to update. [Uninstall ](installing-the-wolvenkit-blender-plugin/#step-0-uninstall-the-old-version)the old version, then [install](installing-the-wolvenkit-blender-plugin/#step-1-install-the-plugin) the most recent plugin
+## General Troubleshooting
 
-{% hint style="info" %}
-You need to restart Blender after updating the plugin!
-{% endhint %}
+### &#x20;Steam
+
+If you installed Blender via Steam, stay on the **stable stream** and make sure to keep Blender up-to-date.
 
 ### Check the console output
 
@@ -69,9 +66,7 @@ Please complete the steps in [#general-troubleshooting](wkit-blender-plugin-trou
 
 ### Make sure that your Wolvenkit is up-to-date
 
-You need the [latest stable release](https://github.com/WolvenKit/Wolvenkit/releases) ([install guide](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download#downloading-wolvenkit)).
-
-If that doesn't help, you can also give the [Nightly version](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) a try.
+{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
 {% hint style="success" %}
 After updating Wolvenkit, make sure to re-export your .mesh with materials!
@@ -79,15 +74,18 @@ After updating Wolvenkit, make sure to re-export your .mesh with materials!
 
 ### Make sure that your Depot is not outdated
 
-The plugin needs your Wolvenkit Depot to a) exist and b) be more or less recent.&#x20;
+The plugin needs your Wolvenkit Depot to a) exist and b) be more or less recent.
 
-If you aren't sure how old your depot is or if you have one at all, it might be time to regenerate:
+If you don't know what that is, or aren't sure how old your depot even is, it might be time to regenerate:
 
-1. In the [Wolvenkit Settings](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/settings), find the [Depot Path](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/settings#depot-path)
-   1. If it's not set, set it now
-   2. If it's set: Open the folder in Windows Explorer and delete everything there.
-2. Follow the instructions on the Wolvenkit wiki to [create a partial depot](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/create-depot#steps-partial-depot).
+1. From the `Tools` menu, select the `Depot generator`
+2. Click the **`Migrate Files`** button at the bottom and wait until WKit is done
+3. Re-export your .mesh with materials and check if your problem goes away
 
-{% hint style="success" %}
-After regenerating your depot, make sure to re-export your .mesh with materials!
-{% endhint %}
+If it does not, you can simply nuke the entire depot, as it will be re-generated whenever necessary:
+
+1. From the `Tools` menu, select the `Depot generator`
+2. Click the first button (`Open Depot Folder`) to open the folder in Windows Explorer
+3. Delete everything there
+4. Re-export your .mesh with materials
+5. Your problem should be gone now

@@ -15,7 +15,7 @@ This guide will use a masc garment, but the process works the same regardless of
 
 ### Wait, that's not what I want!
 
-* For porting objects altogether, see [porting-3d-objects-to-cyberpunk.md](porting-3d-objects-to-cyberpunk.md "mention")
+* For porting objects altogether, see [porting-3d-objects-to-cyberpunk](porting-3d-objects-to-cyberpunk/ "mention")
 * For help with refitting, see [r-and-r-refitting-step-by-step.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention")
 * For converting between bodies, see [rig-swapping-garments-other-body-conversion.md](../../modding-guides/items-equipment/rig-swapping-garments-other-body-conversion.md "mention")
 
@@ -128,7 +128,7 @@ You can use the Wolvenkit Blender IO Suite's [Mesh tools](../modding-tools/wolve
    * Ray Radius - 5m
    * Source Layers Selection - By Name
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXfkKmaVvL5wQNSDbNnb05JQaz8ZEjGocnmbnIO1-HAUabUd0xnFSxeQR5PEyirsJYqG4vL2b7qD5qbVJ9FeFnxIzpmb5igCiWgYv6CasRGPdotp\_h1islH6c8PNWKTTt3a3B35SECwVQcnGxtEG?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfkKmaVvL5wQNSDbNnb05JQaz8ZEjGocnmbnIO1-HAUabUd0xnFSxeQR5PEyirsJYqG4vL2b7qD5qbVJ9FeFnxIzpmb5igCiWgYv6CasRGPdotp_h1islH6c8PNWKTTt3a3B35SECwVQcnGxtEG?key=QoRoLud4Cahkkwf-gM7bNg)
 
 You have now successfully transferred the weights from the Netrunner suit to your ported garment. Let's clean this up.
 
@@ -137,12 +137,12 @@ You have now successfully transferred the weights from the Netrunner suit to you
 1. Select Weights -> Limit Total.&#x20;
 2. In the pop-up at the bottom left, change the `limit`  from 4 to 8.
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXeVHedoa-6PPCnmAUlfZNbRj1waen2ms48ldXWh7czTF5iPAVxpDJG5bDnPmTkHZRjhTWdzIySsMZJ\_m4FrOFKnVDr4GcdRg3UHEo3GzejZTpCBpyD-m1T3xGqLfiRgMZnTLI973Bh9v191Z61rVw?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeVHedoa-6PPCnmAUlfZNbRj1waen2ms48ldXWh7czTF5iPAVxpDJG5bDnPmTkHZRjhTWdzIySsMZJ_m4FrOFKnVDr4GcdRg3UHEo3GzejZTpCBpyD-m1T3xGqLfiRgMZnTLI973Bh9v191Z61rVw?key=QoRoLud4Cahkkwf-gM7bNg)
 
 3. Finally, select Weights -> Normalize All
 4. In the pop-up at the bottom left, un-check `Lock Active`:
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXcohVlGaqTUpw54Jokm4UHEKxlsHF-2BNAUVkcin0KIYDilBLwrdogL49kHIlvXziRFdb-f4eY3yKJcXoNSsYFnanvw9G6cQlrERIR00rW1vlnZNLtgqRyx0TrS48gv\_Fr\_ZBV3xQyLwhQWnCY3JQ?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcohVlGaqTUpw54Jokm4UHEKxlsHF-2BNAUVkcin0KIYDilBLwrdogL49kHIlvXziRFdb-f4eY3yKJcXoNSsYFnanvw9G6cQlrERIR00rW1vlnZNLtgqRyx0TrS48gv_Fr_ZBV3xQyLwhQWnCY3JQ?key=QoRoLud4Cahkkwf-gM7bNg)
 
 ## Step 3: Testing on an animated body
 
@@ -160,9 +160,9 @@ I took the time to merge and weight-fix two full bodies who are also already hoo
 
 You can download them from my Resources folder, here:
 
-🔻 [MA Body](https://drive.google.com/file/d/1duXe7h6pL5NWkbgbsMV-3VuAmFICSScd/view?usp=drive\_link) - Man Average RIG
+🔻 [MA Body](https://drive.google.com/file/d/1duXe7h6pL5NWkbgbsMV-3VuAmFICSScd/view?usp=drive_link) - Man Average RIG
 
-🔻 [WA Body](https://drive.google.com/file/d/11BLepHAH6Qhzlzg2V-R3PMh\_PP2-imAM/view?usp=drive\_link) - Woman Average RIG
+🔻 [WA Body](https://drive.google.com/file/d/11BLepHAH6Qhzlzg2V-R3PMh_PP2-imAM/view?usp=drive_link) - Woman Average RIG
 
 To add it to your .blend file, select File -> Append, and select the collection `[MA/WA]_weightCheck`:\
 
@@ -204,7 +204,7 @@ base\animations\ui\male\ui_male.anims
 base\animations\ui\female\ui_female.anims
 ```
 
-Otherwise, you can get creative with the [Wolvenkit Search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) (something like `.anims > !fpp`)
+Otherwise, you can get creative with the [Wolvenkit Search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) (something like `.anims > !fpp`)
 
 1. Pick an animation and add it to your project.
 2. [Export it](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit-1) from Wolvenkit
@@ -223,7 +223,7 @@ We can use the play button to make everything move. Now, time to hook everything
 
 2. Rotating your body, you might already notice holes or clipping:
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXdQQJtAtFZaqFjuOqkAUe9lb6QWhvhPylSMF4Kp-nW5isFvYfG-FroTEjFR5mry2co6k68XbdTidXpobq9-mzfdDrLREkxl4AXMaAz51mebRfHKPcNGlMVULEgIc1UbR\_kRNQwveXnGxKItrIMd?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdQQJtAtFZaqFjuOqkAUe9lb6QWhvhPylSMF4Kp-nW5isFvYfG-FroTEjFR5mry2co6k68XbdTidXpobq9-mzfdDrLREkxl4AXMaAz51mebRfHKPcNGlMVULEgIc1UbR_kRNQwveXnGxKItrIMd?key=QoRoLud4Cahkkwf-gM7bNg)
 
 3. Let’s check the animation by pressing the Play ▶ button on the timeline or in the Animation Tools:
 
@@ -268,7 +268,7 @@ This is where you fuck around and find out! You can always use the&#x20;
 
 3. We’ll need to clean the armpit on the `[l/r]_SHL_0_JNT` group.  You can do this by using the `Brush` tool (with the Weight slider down to 0), or with the `Radial Gradient` tool:
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXfc52WkLYSBVapsqAa\_xyVzlYWw79NGMp4bpBkEOQTp6AhYUVk0o-SeRovItFn2F\_iOPS0Pt8nstb\_YCIuDLhnrRlQZ\_zJikCVr-89zmLApT-DzevRPiGskaEXviOnUluA7cpbG7o9Lp5VYwRrl4Q?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfc52WkLYSBVapsqAa_xyVzlYWw79NGMp4bpBkEOQTp6AhYUVk0o-SeRovItFn2F_iOPS0Pt8nstb_YCIuDLhnrRlQZ_zJikCVr-89zmLApT-DzevRPiGskaEXviOnUluA7cpbG7o9Lp5VYwRrl4Q?key=QoRoLud4Cahkkwf-gM7bNg)
 
 4. Drag the gradient tool near the armpit to remove all the excessive weight, and then use the blur brush to smooth the area:
 
@@ -281,10 +281,10 @@ This is where you fuck around and find out! You can always use the&#x20;
 6. ...and the `[l/j]_biceps_A_mscl_JNT` group:\
 
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXdW52dzO3sj-sdNeqv6CRCdM7nkYhMCi-aHdirGo9xpnLpEjPQdPNTRvjavYNyo1Y-Q1EawtuRkyzUCifh4Z2GAO8aa-SKapZ4jSolG3a9X5naQtlsBMQHZG8VcXI08yfHfoDBTBvZgwQTXT0p\_Ag?key=QoRoLud4Cahkkwf-gM7bNg)\
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdW52dzO3sj-sdNeqv6CRCdM7nkYhMCi-aHdirGo9xpnLpEjPQdPNTRvjavYNyo1Y-Q1EawtuRkyzUCifh4Z2GAO8aa-SKapZ4jSolG3a9X5naQtlsBMQHZG8VcXI08yfHfoDBTBvZgwQTXT0p_Ag?key=QoRoLud4Cahkkwf-gM7bNg)\
 
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXeNgd6uakHt9QOhukviTOc3YiBKB\_3ITednbP9GqcRW4t4KM9x\_TpEFPkJq\_GeZXh6epdm-yc5DQ6DRSMdanG1PBKHFYBuPioPb-iKO2W05cXAG9aChg-\_njWZi2H9NMXJM8nFUzMGMSGKSZytqsw?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeNgd6uakHt9QOhukviTOc3YiBKB_3ITednbP9GqcRW4t4KM9x_TpEFPkJq_GeZXh6epdm-yc5DQ6DRSMdanG1PBKHFYBuPioPb-iKO2W05cXAG9aChg-_njWZi2H9NMXJM8nFUzMGMSGKSZytqsw?key=QoRoLud4Cahkkwf-gM7bNg)
 
 That’s much better! \
 
@@ -296,7 +296,7 @@ You can go back to Object mode and check your weights with the animation at any 
 
 {% endhint %}
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXfzerdqDlj5ameAzbkBxQPln4dl-rG1emwpv8iu1oYewDQkVRhFGCkmYZnpMLh-kJPNybZTck9rE1wU6pqHs3GuPEZSLwoZtY5xyxmTrL2NtELKmhz3YA68ayoHaMKBv1V3sCi\_Spvz6bEprdP3sw?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfzerdqDlj5ameAzbkBxQPln4dl-rG1emwpv8iu1oYewDQkVRhFGCkmYZnpMLh-kJPNybZTck9rE1wU6pqHs3GuPEZSLwoZtY5xyxmTrL2NtELKmhz3YA68ayoHaMKBv1V3sCi_Spvz6bEprdP3sw?key=QoRoLud4Cahkkwf-gM7bNg)
 
 This isn’t too bad, we removed most of the stretching and the sleeves behave in a natural-ish way, considering this is a large jacket :> \
 
@@ -341,7 +341,7 @@ After manually fixing weights, always do “Limit All” and “Normalize All”
 
 
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXfjhttdb8abcmpbqtg1gllUBoR6mTy8IzC2FU3qTL6f0BL8N4e-0mOoIAN1gVmk97uII34RsVt-Qiha2moSDuN8ZoWnhHHq7lza5xYfytJU2xEIeP--J3riOAVOTeq6ydZx9vqEtANTR7kQswqH?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfjhttdb8abcmpbqtg1gllUBoR6mTy8IzC2FU3qTL6f0BL8N4e-0mOoIAN1gVmk97uII34RsVt-Qiha2moSDuN8ZoWnhHHq7lza5xYfytJU2xEIeP--J3riOAVOTeq6ydZx9vqEtANTR7kQswqH?key=QoRoLud4Cahkkwf-gM7bNg)
 
 \
 It’s important to aim for Correct over Perfect, otherwise you’ll get stuck and frustrated really fast, trust me 🧡&#x20;
@@ -353,7 +353,7 @@ Don't worry about the clipping, we'll fix that in [#id-5.1-fixing-clipping](weig
 1. Change your weight container’s rig in the Armature modifier back to its original armature :\
 
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXe78rjdQ4jV8spWlQxs4bdJ5qQY0x-Zt4FXufqX-QPv-TBJHfQ\_4DC2SkLPJcrfE4nXfbeAkkWtdMWv5u6ZFfYFpEw3j6s\_5CKU6jp37D1hO0Jinql8k\_B-JvesVVQltUPJzIbZ0EJlcjUvGCIAvA?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe78rjdQ4jV8spWlQxs4bdJ5qQY0x-Zt4FXufqX-QPv-TBJHfQ_4DC2SkLPJcrfE4nXfbeAkkWtdMWv5u6ZFfYFpEw3j6s_5CKU6jp37D1hO0Jinql8k_B-JvesVVQltUPJzIbZ0EJlcjUvGCIAvA?key=QoRoLud4Cahkkwf-gM7bNg)
 
 2. Hide the MA\_weightCheck collection and un-hide your garment’s submeshes
 3. Transfer the weight from your weight container to each of your garment’s submeshes. You can use the Mesh Tools, or do it by hand (one by one).
@@ -370,16 +370,16 @@ You can toggle proportional editing on and off by pressing `o`. This guide won't
 
 2. Entering Edit Mode will reset our model back to the default pose. To fix that, we have to check the `On Cage` and `Edit Mode` buttons on the armature modifier:
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXdKCguifEvZ-KEIhdFbKsqEgNFZIZ6hX16LTx1Tdn1dL66X5sQOi65BeHGLUVtNFYhHbGJ6dSXG4mDY3E0UeXE8nQBK0Px7SiE\_W-KbBLhbBZI3rv82GiQ5KIgrr\_vt8gowVfKwK3a-UNBMDgIcyw?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdKCguifEvZ-KEIhdFbKsqEgNFZIZ6hX16LTx1Tdn1dL66X5sQOi65BeHGLUVtNFYhHbGJ6dSXG4mDY3E0UeXE8nQBK0Px7SiE_W-KbBLhbBZI3rv82GiQ5KIgrr_vt8gowVfKwK3a-UNBMDgIcyw?key=QoRoLud4Cahkkwf-gM7bNg)
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXeySt1bc2C3a7JCpoA6Zl9Rr56X9AF8Dk6AS1Bqat6BN-NJlyRCOp9o46mH6XT\_9gM0x35Hp7pzSMosGKyyxqenFkqTkbw5\_wLabDZ0XXunXkzHeCxA1-UDB6tLT7XUGaCv6MddJwC9A7foubc3hQ?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeySt1bc2C3a7JCpoA6Zl9Rr56X9AF8Dk6AS1Bqat6BN-NJlyRCOp9o46mH6XT_9gM0x35Hp7pzSMosGKyyxqenFkqTkbw5_wLabDZ0XXunXkzHeCxA1-UDB6tLT7XUGaCv6MddJwC9A7foubc3hQ?key=QoRoLud4Cahkkwf-gM7bNg)
 
 3. Repeat the step for each of your submeshes
 4. Select them all, then enter edit mode by hitting `tab`
 5. With proportional editing on, simply select the vertex in the area and slightly pull away from the body:\
 
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXdXWIdGUz0W8SdqjlKnZPOePR97WfUp3folXtC-2QKDQwEsFBhDPOKCEn\_W8J7ZZowESuXedlAD8wcGUD7yZ5gZA0qHrEXoF-mizDYse-Hzg94lxlZPtUk6OPakIFG4IQiv4A77pTaMNOdP7TkD8Q?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXWIdGUz0W8SdqjlKnZPOePR97WfUp3folXtC-2QKDQwEsFBhDPOKCEn_W8J7ZZowESuXedlAD8wcGUD7yZ5gZA0qHrEXoF-mizDYse-Hzg94lxlZPtUk6OPakIFG4IQiv4A77pTaMNOdP7TkD8Q?key=QoRoLud4Cahkkwf-gM7bNg)
 
 
 
@@ -411,6 +411,6 @@ Thank you for reading -Pkd\
 \
 
 
-![](https://lh7-rt.googleusercontent.com/docsz/AD\_4nXcbUFdtfCJya04dvL\_Q7\_8thHQwVUngE5SePWg6LwSRqSREcK9UTVUFZBB6GfFsfZOPEMzpprqWxglvgDWSwtOUQb51sdI9QHqXN7bBhF7hzxHl6mYJGzFoFfkDN5YvltGhKCUDNxaN2oBp4BhvvQ?key=QoRoLud4Cahkkwf-gM7bNg)
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcbUFdtfCJya04dvL_Q7_8thHQwVUngE5SePWg6LwSRqSREcK9UTVUFZBB6GfFsfZOPEMzpprqWxglvgDWSwtOUQb51sdI9QHqXN7bBhF7hzxHl6mYJGzFoFfkDN5YvltGhKCUDNxaN2oBp4BhvvQ?key=QoRoLud4Cahkkwf-gM7bNg)
 
 \

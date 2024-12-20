@@ -15,7 +15,7 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 
 ### Wait, this is not what I want!
 
-* Check [porting-3d-objects-to-cyberpunk.md](../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk.md "mention") for an import guide, but don't forget to come back here once you're done!
+* Check [porting-3d-objects-to-cyberpunk](../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/ "mention") for an import guide, but don't forget to come back here once you're done!
 * You can learn more about materials under [materials](../../for-mod-creators-theory/materials/ "mention").&#x20;
   * If you want to understand material assignment, check [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/ "mention")-> [#material-assignment](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#material-assignment "mention")
   * If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
@@ -32,7 +32,7 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 
 ## Setting up the project
 
-This section is already covered in the guide for [custom props](../everything-else/custom-props/#setting-up-the-project), using the source folder variant, or directly download [this archive](https://mega.nz/file/GUsSwSxY#Ast7L44g\_YimuKrcbwNCLvYL\_DworhpEQsaH05RNGJw) and extract it into your Wolvenkit project.
+This section is already covered in the guide for [custom props](../everything-else/custom-props/#setting-up-the-project), using the source folder variant, or directly download [this archive](https://mega.nz/file/GUsSwSxY#Ast7L44g_YimuKrcbwNCLvYL_DworhpEQsaH05RNGJw) and extract it into your Wolvenkit project.
 
 Optional: Complete the [creating another prop](../everything-else/custom-props/#creating-another-prop) section from the custom props guide, or alter one of the two existing template items.&#x20;
 
@@ -57,7 +57,7 @@ Delete obsolete files (Windows Explorer or WKit):
 
 We can't create .mesh files from scratch, so we'll **overwrite** an existing file. Here's how:
 
-In Wolvenkit, open the [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export) (Tools -> Export), and export everything in your folder: the mesh(es) you want to use and the textures.
+In Wolvenkit, open the [Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export) (Tools -> Export), and export everything in your folder: the mesh(es) you want to use and the textures.
 
 This will create the following files under the project's `raw` section:
 
@@ -65,7 +65,7 @@ This will create the following files under the project's `raw` section:
 
 ### Step 3: Importing
 
-1. **Optional:** Download [this archive](https://mega.nz/file/vd0X3Yaa#tcakXF6\_t0k\_EouthuKcJSPL3o2nI6b\_zVWi528Kv5k) - I have prepared it for import. \
+1. **Optional:** Download [this archive](https://mega.nz/file/vd0X3Yaa#tcakXF6_t0k_EouthuKcJSPL3o2nI6b_zVWi528Kv5k) - I have prepared it for import. \
    It contains both the original glb from sketchfab and the version I prepared for import:
 
 <figure><img src="../../.gitbook/assets/2023-04-08 17_24_44-tutorial_baseball_for_import - (Admin) FreeCommander XE.png" alt=""><figcaption><p>File content as archive, April 8 2023</p></figcaption></figure>
@@ -79,8 +79,8 @@ Use `baseball_02_d.png`, as the other one doesn't have transparency.
 The import/export process has [its own guide](../../for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/). There's also a [troubleshooting page](self-made-normal-maps/troubleshooting-normal-maps.md) if you're stuck.
 {% endhint %}
 
-4. Now that all files are in place, open the [Import Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export) in Wolvenkit (Tools -> Import), and re-import the files. The Wolvenkit preview should show your new imported mesh.
-5. optional: You can now [install the mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and spawn the prop.
+4. Now that all files are in place, open the [Import Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export) in Wolvenkit (Tools -> Import), and re-import the files. The Wolvenkit preview should show your new imported mesh.
+5. optional: You can now [install the mod](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and spawn the prop.
 
 The next step is to [assign materials](textured-items-and-cyberpunk-materials.md#material-assignments) to the object.
 
@@ -114,7 +114,7 @@ Scene Collection
 * The submesh numbers are important for [material assignment](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#material-assignment) in Wolvenkit.
 
 {% hint style="success" %}
-The easiest way to get there is by running [this python script](https://raw.githubusercontent.com/manavortex/code\_snippets/master/py/cyberpunk/util/prepare\_submeshes\_for\_export.py) (source: manavortex's github) in Blender after import:\
+The easiest way to get there is by running [this python script](https://raw.githubusercontent.com/manavortex/code_snippets/master/py/cyberpunk/util/prepare_submeshes_for_export.py) (source: manavortex's github) in Blender after import:\
 \- Switch to the "Scripting" perspective\
 \- Create a new file\
 \- Paste the contents of the script into the file\
@@ -143,7 +143,7 @@ I've always found it easiest to join all meshes into a single one:
 * Switch to Edit Mode
 * Select everything (Shortcut: `A`)
 * Separate (Shortcut: `P`) and select "By Material"\
-  ![](../../.gitbook/assets/separate\_by\_material.png)
+  ![](../../.gitbook/assets/separate_by_material.png)
 * **Optional**, but recommended: run the script again to get properly numbered submeshes.
 
 This will let us assign one material per "section" of your mesh.
@@ -156,7 +156,7 @@ Especially when exporting meshes from sketchfab, there are often duplicate mater
 
 I usually join everything into one object that'll have the same material in the game, unless I want to hide parts of it to make variants.
 
-But the opposite is also possible: You can split off parts from the original object, putting them into their own submeshes. I have done this in the [baseball example](https://mega.nz/file/vd0X3Yaa#tcakXF6\_t0k\_EouthuKcJSPL3o2nI6b\_zVWi528Kv5k): the seams will get a texture, and the rest of the mesh will be coloured with a cyberpunk material.
+But the opposite is also possible: You can split off parts from the original object, putting them into their own submeshes. I have done this in the [baseball example](https://mega.nz/file/vd0X3Yaa#tcakXF6_t0k_EouthuKcJSPL3o2nI6b_zVWi528Kv5k): the seams will get a texture, and the rest of the mesh will be coloured with a cyberpunk material.
 
 You do that by changing into the edit mode, then selecting everything that you want to split off ("Select Linked" or "Select More" is your friend here),  and **splitting** it (P -> Split Selection).
 
@@ -166,12 +166,12 @@ You can duplicate your selection first (`Shift+D`, `ESC`)
 
 Now, switch back to Object mode and select your new mesh before going back to Edit Mode. Make sure to [**scale**](self-made-normal-maps/#step-0-preparing-the-viewport) your new mesh, so that it is slightly above the surface of the old one - otherwise, you will have two things in the same place, which will look like shit.
 
-Make sure to [correctly name your new submesh](textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh), or run [the script](https://raw.githubusercontent.com/manavortex/code\_snippets/master/py/cyberpunk/util/prepare\_submeshes\_for\_export.py) again.
+Make sure to [correctly name your new submesh](textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh), or run [the script](https://raw.githubusercontent.com/manavortex/code_snippets/master/py/cyberpunk/util/prepare_submeshes_for_export.py) again.
 
 #### Unparent
 
 {% hint style="success" %}
-You can complete unparent + apply transformations via [Blender script](https://github.com/manavortex/code\_snippets/blob/master/py/cyberpunk/util/prepare\_submeshes\_for\_export.py): Switch to the Blender "Scripting" perspective, create a new file, paste the code from mana's github, and click the play button.
+You can complete unparent + apply transformations via [Blender script](https://github.com/manavortex/code_snippets/blob/master/py/cyberpunk/util/prepare_submeshes_for_export.py): Switch to the Blender "Scripting" perspective, create a new file, paste the code from mana's github, and click the play button.
 {% endhint %}
 
 Select everything (click the viewport and press A), then unparent the objects by pressing Alt+P. Select "Clear and Keep Transformation".
@@ -193,7 +193,7 @@ If your mesh still scales weirdly in Wolvenkit / the game, you can create a new 
 {% endhint %}
 
 {% hint style="success" %}
-If you need a reference object, you can use this [lightsaber](https://mega.nz/file/aJkXxTaT#3hCUT\_qULkYu4VfL3QVXYE8NJ77sTPCftZiTPRs\_6a0) from my [props](https://www.nexusmods.com/cyberpunk2077/mods/7391).
+If you need a reference object, you can use this [lightsaber](https://mega.nz/file/aJkXxTaT#3hCUT_qULkYu4VfL3QVXYE8NJ77sTPCftZiTPRs_6a0) from my [props](https://www.nexusmods.com/cyberpunk2077/mods/7391).
 {% endhint %}
 
 #### Origin
