@@ -41,19 +41,31 @@ For integration with Wolvenkit, install MLSB as a plugin:&#x20;
 2. Select "Plugins" in the left sidebar
 3. If MLSB is installed, you'll see an "Update" button, otherwise, it will say "Install". \
    Do that.
-4. If that doesn't work for any reason, you can install it by hand: download the latest release from [Neurolinked's github](https://github.com/Neurolinked/MlsetupBuilder) and extract the files to following subfolder in your Cyberpunk game directory (the number must be the same as displayed in the WKit plugin list)\
-   `Cyberpunk 2077\tools\neurolinked\mlsetupbuilder\MlsetupBuilder-1.6.7`
+
+<details>
+
+<summary>Manual install</summary>
+
+If the above doesn't work for you, you can install MLSB by hand:
+
+1. download the latest release from [Neurolinked's github ](https://github.com/Neurolinked/MlsetupBuilder/releases)
+2. extract the downloaded zip to the following subfolder in your Cyberpunk game directory:\
+   `Cyberpunk 2077\tools\neurolinked\mlsetupbuilder`
+3. The directory should now have a folder called `MLsetupBuilder-VERSION` that contains (among other things) the file `MLSetupBuilder.exe`
+4. The total path should look like this:\
+   `Cyberpunk 2077\tools\neurolinked\mlsetupbuilder\MLSetupBuilder-1.2.3\MLSetupBuilder.exe`
+
+</details>
+
+
 
 We will now launch MLSB and do the initial setup.
 
 1. In Wolvenkit's Plugin view, click "Open", this will open a Windows Explorer with the install folder (`Cyberpunk 2077\tools\neurolinked\mlsetupbuilder`)
-2. Navigate to the folder with the higest version (at the time of this guide, that is `MlsetupBuilder-1.6.7`)
+2. Navigate to the folder with the higest version (at the time of this guide, that is `MlsetupBuilder-1.6.8-Beta6`)
 3. Start `MlsetupBuilder.exe`
 4. **Optional:** You can pin that file to your start menu or create a shortcut if you want to launch MLSB directly.
-
-{% hint style="info" %}
-You need to  complete the[#configuration](./#configuration "mention") section first. Don't worry, it's not hard!
-{% endhint %}
+5. Now, complete the[#configuration](./#configuration "mention") section. Don't worry, it's not hard!
 
 ## Usage
 
