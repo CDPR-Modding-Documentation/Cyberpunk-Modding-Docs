@@ -15,7 +15,7 @@ This guide will use a masc garment, but the process works the same regardless of
 
 ### Wait, that's not what I want!
 
-* For porting objects altogether, see [porting-3d-objects-to-cyberpunk](porting-3d-objects-to-cyberpunk/ "mention")
+* For porting objects altogether, see [porting-3d-objects-to-cyberpunk.md](porting-3d-objects-to-cyberpunk.md "mention")
 * For help with refitting, see [r-and-r-refitting-step-by-step.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention")
 * For converting between bodies, see [rig-swapping-garments-other-body-conversion.md](../../modding-guides/items-equipment/rig-swapping-garments-other-body-conversion.md "mention")
 

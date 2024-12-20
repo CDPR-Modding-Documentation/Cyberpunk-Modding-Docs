@@ -18,7 +18,7 @@ TL;DR:
 * Change `equipmentSlot` in the yaml (for options, see Step 1)
 * Replace the `mesh_entity` (see Step 2)
 * Replace the `.mesh` (e.g., instead of a shirt, find in-game shoes)
-* Optional: [Port an external item](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/)
+* Optional: [Port an external item](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk.md)
 {% endhint %}
 
 ## Step 1: The .yaml

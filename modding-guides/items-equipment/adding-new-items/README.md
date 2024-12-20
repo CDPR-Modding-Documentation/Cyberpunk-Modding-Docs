@@ -116,7 +116,7 @@ Otherwise, you will want to complete one or more of the following steps:
 * Learn about making more variants:[#adding-an-appearance](./#adding-an-appearance "mention")
 * Create [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention")
 * Create [adding-items-atelier-integration.md](adding-items-atelier-integration.md "mention")
-* Learn about [porting-3d-objects-to-cyberpunk](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/ "mention")
+* Learn about [porting-3d-objects-to-cyberpunk.md](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk.md "mention")
 
 {% hint style="success" %}
 To start changing the existing files, check the [archive-xl-item-structure-explained.md](archive-xl-item-structure-explained.md "mention") page for "**`Making Changes`**" headers.

@@ -15,7 +15,7 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 
 ### Wait, this is not what I want!
 
-* Check [porting-3d-objects-to-cyberpunk](../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/ "mention") for an import guide, but don't forget to come back here once you're done!
+* Check [porting-3d-objects-to-cyberpunk.md](../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk.md "mention") for an import guide, but don't forget to come back here once you're done!
 * You can learn more about materials under [materials](../../for-mod-creators-theory/materials/ "mention").&#x20;
   * If you want to understand material assignment, check [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/ "mention")-> [#material-assignment](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#material-assignment "mention")
   * If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.

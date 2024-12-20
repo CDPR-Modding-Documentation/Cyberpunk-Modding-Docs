@@ -273,7 +273,7 @@ As stated in the [importing/exporting guide](exporting-and-importing-meshes/), i
 
 1. Import the original object into Blender, without any of your changes. If you have to, reexport the working file from Wolvenkit.\
    ![](../../.gitbook/assets/mesh_troubleshooting_reimport.png)
-2. See [#strategy-2-replacing-the-vertices](porting-3d-objects-to-cyberpunk/#strategy-2-replacing-the-vertices "mention") on the [porting-3d-objects-to-cyberpunk](porting-3d-objects-to-cyberpunk/ "mention") page
+2. See [#strategy-2-replacing-the-vertices](porting-3d-objects-to-cyberpunk.md#strategy-2-replacing-the-vertices "mention") on the [porting-3d-objects-to-cyberpunk.md](porting-3d-objects-to-cyberpunk.md "mention") page
 
 ### My mesh is completely warped
 

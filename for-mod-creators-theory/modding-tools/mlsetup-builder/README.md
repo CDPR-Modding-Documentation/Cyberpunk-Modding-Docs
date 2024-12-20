@@ -7,7 +7,7 @@ description: The tool of your choice for editing multilayered materials
 ### Summary
 
 **Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jan 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Dec 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will teach you how to download and configure **MLSetupBuilder**, the tool of choice to edit multilayered materials in Cyberpunk.&#x20;
 
@@ -51,8 +51,8 @@ We will now launch MLSB and do the initial setup.
 3. Start `MlsetupBuilder.exe`
 4. **Optional:** You can pin that file to your start menu or create a shortcut if you want to launch MLSB directly.
 
-{% hint style="warning" %}
-For MLSetupBuilder&#x20;
+{% hint style="info" %}
+You need to  complete the[#configuration](./#configuration "mention") section first. Don't worry, it's not hard!
 {% endhint %}
 
 ## Usage
@@ -164,33 +164,32 @@ Material Composer will also display all the material parameters that comes with 
 
 ## Configuration
 
-### Connecting to Wolvenkit
+When you start MLSB the first time, it will yell at you that it is not configured correctly.&#x20;
 
-We're assuming that you have already configured Wolvenkit. If you haven't, please [do so now](https://wiki.redmodding.org/wolvenkit/modding-community/eli5-getting-started/configure-modding-tools#steps).
+1. Click No (You'll regret it), because we need to download the CLI first.
 
-#### Requirements: Getting the CLI
+### Downloading the right CLI
 
-In MLSetupBuilder **1.6.7**, select the menu Help -> download Wolvenkit.CLI and extract the linked version:
+As of 1.6.8, MLSB needs to use a certain version of the Wolvenkit Command Line Interface. Fortunately, it can download it for you:
 
-<figure><img src="../../../.gitbook/assets/image (425).png" alt=""><figcaption><p>MLSB 1.7</p></figcaption></figure>
+1. Click on `Help`
+2. Click on `Download Wolvenkit.CLI`
+3. Save the file in your download folder
+4. Extract the files to a folder of your choice (for example `C:\Cyberpunk2077Mod\MLSB_WolvenKit.CLI)`
 
-In MLSB >= 1.6.8, download the most recent version of [WolvenKit Console ](https://github.com/WolvenKit/WolvenKit/releases)and extract it to a folder of your choice.
+**Now** we can configure it.
 
-1. Now, switch to MLSetupBuilder.
-2. Select "File -> Preferences"
-3. Apply the following settings:
+### MLSB: Settings
 
+1. Click `File`
+2. Click `Preferences`
+3. You will now see the settings dialogue:
 
+<figure><img src="../../../.gitbook/assets/image (548).png" alt=""><figcaption></figcaption></figure>
 
-|                      |                                                                                                                                                                                                          |
-| -------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Game folder v1.6.7   | `C:\Your\Path\To\Cyberpunk 2077\archive\pc\content`                                                                                                                                                      |
-| Game folder v1.6.8   | `C:\Your\Path\To\Cyberpunk 2077`                                                                                                                                                                         |
-| uncook folder        | You can find this folder in your WolvenKit's settings as "Depot Path" (you've seen it in the window from Step 1)                                                                                         |
-| Wolvenkit Depot Path | You can find this folder in your WolvenKit's settings as "Depot Path" (you've seen it in the window from Step 1)                                                                                         |
-| Wolvenkit-CLI.exe    | The executable of Wolvenkit Console from Step 2, You can download the last compatible and tested CLI from inside MLSB going in the menu <mark style="color:yellow;">Help > Download Wolvenkit.CLI</mark> |
-
-6. Press Ctrl+R to reload MLSB and make sure that the settings are applied.
+* Game folder is [the-cyberpunk-2077-game-directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/ "mention")
+* Uncook folder / Depot is the folder you have configured in [Wolvenkit's Settings](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/settings#depot-path)
+* `Wolvenkit-CLI.exe` is the one you just downloaded
 
 ### Building the depot
 
@@ -200,7 +199,7 @@ Again, this step is optional, you can [use MLSB](./#using-mlsb) straight away.&#
 
 <figure><img src="../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
-2. Select the following settings (if you want to uncook everything, this step can take several hours, so we'll only do the essentials for now)
+2. Select the following settings (if you want to uncook everything, this step can take over an hour, so we'll only do the essentials for now)
 
 <figure><img src="../../../.gitbook/assets/New MLSB.PNG" alt=""><figcaption></figcaption></figure>
 
@@ -216,7 +215,7 @@ This process can take some time — if you have selected everything, it can be s
 
 ### Building the Microblend Depot
 
-1. Repeat Step 1 from [#extract-a-partial-depot](./#extract-a-partial-depot "mention"), but select **Microblends** this time
+1. Repeat Step 1 from [#building-the-depot](./#building-the-depot "mention"), but select **Microblends** this time
 2. In the bottom left corner, hit "Start"
 3. Wait.
 4. When the process is complete, close the Depot Generator window.&#x20;

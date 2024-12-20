@@ -172,7 +172,7 @@
     * [Blender: Running Python Scripts](for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md)
     * [Running Python Scripts](for-mod-creators/modding-guides/everything-else/running-python-scripts.md)
   * [Importing and Exporting Meshes](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export#meshes)
-  * [Porting 3d objects to Cyberpunk](for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/README.md)
+  * [Porting 3d objects to Cyberpunk](for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk.md)
     * [Reducing vertex counts](for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/reducing-vertex-counts.md)
   * [Refitting: Mesh sculpting techniques](for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques/README.md)
     * [Sculpting the player head](for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques/sculpting-the-player-head.md)
