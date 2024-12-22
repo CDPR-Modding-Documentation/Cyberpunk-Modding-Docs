@@ -19,7 +19,7 @@ This guide assumes that you have an already working in-game item, and at least a
 * [Exporting and importing meshes](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/3d-modelling/exporting-and-importing-meshes)
 
 {% hint style="warning" %}
-To implement anything in this guide, you will need [a Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) with the mod's files. You already have that if you're fixing your own mod (hopefully). If not, check out this guide on how to [analyze other mods!](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/analysing-other-mods)
+To implement anything in this guide, you will need [a Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) with the mod's files. You already have that if you're fixing your own mod (hopefully). If not, check out this guide on how to [analyze other mods!](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/analysing-other-mods)
 {% endhint %}
 
 ### Index
@@ -31,7 +31,7 @@ To implement anything in this guide, you will need [a Wolvenkit project](https:/
 {% hint style="warning" %}
 **If you are modifying someone else's mod**:
 
-If you are changing someone else's mod, the easiest thing is to [name your Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order) the same as the mod's `.archive` file and add all the files from the original mod. You can do that by switching to the [Mod Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) and [searching](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `archive:name_of_file`&#x20;
+If you are changing someone else's mod, the easiest thing is to [name your Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order) the same as the mod's `.archive` file and add all the files from the original mod. You can do that by switching to the [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) and [searching](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `archive:name_of_file`&#x20;
 
 For more information on this, read [here](recolours-and-refits/r-and-r-your-own-wolvenkit-project.md#a-full-repack).
 {% endhint %}
@@ -89,7 +89,7 @@ This part of the guide will show you how to turn the entire item invisible. If y
    * If you are editing someone else's mod, you need to copy their `.yaml` to your project. If you don't know which file that is, check their Nexus mod files, as it will be part of the original .zip file.
 
 {% hint style="info" %}
-If you don't have a yaml because you're changing an in-game item for some reason, you need to start at [#fixing-the-root-entity](first-person-perspective-fixes.md#fixing-the-root-entity "mention"). If you [convert it to a dynamic appearance](adding-new-items/archivexl-dynamic-variants/#the-root\_entity), you can stick to these parts in the rest of the guide.
+If you don't have a yaml because you're changing an in-game item for some reason, you need to start at [#fixing-the-root-entity](first-person-perspective-fixes.md#fixing-the-root-entity "mention"). If you [convert it to a dynamic appearance](adding-new-items/archivexl-dynamic-variants/#the-root_entity), you can stick to these parts in the rest of the guide.
 {% endhint %}
 
 2. Open the file in any text editor (recommended: [**Notepad++**](https://notepad-plus-plus.org/downloads/))
@@ -295,7 +295,7 @@ To show a different item (one with the clipping bits removed) in first person pe
 For the next step, we need to export our .mesh file and edit it. You can use any 3d editing program, but this guide will use  [Blender 3.6](https://www.blender.org/download/)  and the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention").&#x20;
 
 1. Optional, but recommended: If you don't have the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") installed, do that now.
-2. In Wolvenkit, find the [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export)
+2. In Wolvenkit, find the [Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export)
 3. Export your \_fpp .mesh file.
    * If the export throws an error, uncheck the Export Materials option in the settings panel (you don't need it)
 4. You now have a `.glb` file in your project's `raw` folder. You can find it like this:
@@ -305,7 +305,7 @@ For the next step, we need to export our .mesh file and edit it. You can use any
 
 Now, hit up the [3d-editing-submeshes.md](../../for-mod-creators-theory/3d-modelling/3d-editing-submeshes.md "mention") page and edit your mesh.&#x20;
 
-When you are done, use the [Wolvenkit Import Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool) to import back the .glb file.&#x20;
+When you are done, use the [Wolvenkit Import Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool) to import back the .glb file.&#x20;
 
 <figure><img src="../../.gitbook/assets/first_person_fixes_1.png" alt=""><figcaption></figcaption></figure>
 
@@ -313,6 +313,10 @@ When you are done, use the [Wolvenkit Import Tool](https://app.gitbook.com/s/-MP
 If you stuck to the guide, you shouldn't run into any errors. If you do, check the [troubleshooting-your-mesh-edits.md](../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md "mention") page, or reach out to us on [Discord](https://discord.gg/redmodding) in `#mod-dev-chat.`
 {% endhint %}
 
-5. [Install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) the project
+5. [Install and launch](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) the project
 6. ???
 7. Profit
+
+## Technical detes
+
+> for a mesh to disappear in FPP we must set the component's `visibilityAnimationParam = n"invisible_in_fpp"`
