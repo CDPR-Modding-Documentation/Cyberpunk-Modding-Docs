@@ -12,7 +12,7 @@ description: Modify resources in a non-conflicting ways and reuse definitions.
 {% hint style="danger" %}
 The example below uses **mesh materials**, but these aren't even the tip of the iceberg. By using this technique, we can re-work everything, from CDPR's messed-up material paths up to the character creator.&#x20;
 
-Until the more comprehensive knowledge drops, this guide will be a placeholder.
+You can find a guide under [archivexl-patching-appearances.md](../../../modding-guides/items-equipment/editing-existing-items/archivexl-patching-appearances.md "mention")
 {% endhint %}
 
 This page explains **resource patching,** a very powerful ArchiveXL feature that lets you modify resources **without conflicting** with other mods or even game updates. \
