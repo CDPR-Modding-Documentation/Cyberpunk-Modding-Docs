@@ -120,93 +120,16 @@ localization:
 # ##############################################################################
 animations:
   # ##############################################################################
-  # female body gender
+  # female body gender - scope includes player + all NPCs + NPV with patched .ents
   # ##############################################################################
-  # player
-  - entity: base\characters\entities\player\photo_mode\player_wa_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: ep1\characters\entities\player\photo_mode\player_wa_photomode_ep1.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  # extra NPCs
-  - entity: base\characters\entities\player\photo_mode\alt_cunningham\alt_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: base\characters\entities\player\photo_mode\blue_moon\bmuc_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: base\characters\entities\player\photo_mode\evelyn_parker\evelyn_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: base\characters\entities\player\photo_mode\hanako_arasaka\hanako_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: base\characters\entities\player\photo_mode\judy_alvarez\judy_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: base\characters\entities\player\photo_mode\lizzy_wizzy\lizzy_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: base\characters\entities\player\photo_mode\meredith_stout\meredith_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: ep1\characters\entities\player\photo_mode\myers\myers_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: base\characters\entities\player\photo_mode\panam_palmer\panam_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: base\characters\entities\player\photo_mode\purple_force\pfuc_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims    
-  - entity: base\characters\entities\player\photo_mode\rogue_amendiares\old_rogue_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: base\characters\entities\player\photo_mode\rogue_amendiares\young_rogue_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: base\characters\entities\player\photo_mode\red_menace\rmuc_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  - entity: ep1\characters\entities\player\photo_mode\songbird\songbird_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims
-  # nibbles replacer (old)  
-  - entity: base\characters\entities\photomode_replacer\photomode_npc_woman_average.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims    
-  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_fem1.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims     
-  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_fem2.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims    
+  - entity: player_photomode_wa.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims  
     
   # ##############################################################################
-  # male body gender  
+  # male body gender - scope includes player + all NPCs + NPV with patched .ents
   # ##############################################################################
-  # player
-  - entity: base\characters\entities\player\photo_mode\player_ma_photomode.ent
+  - entity: player_photomode_ma.ent
     set: tutorial\animations\netrunner_making_poses\pma.anims
-  - entity: ep1\characters\entities\player\photo_mode\player_ma_photomode_ep1.ent 
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  # extra NPCs
-  - entity: base\characters\entities\player\photo_mode\adam_smasher\adam_smasher.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  - entity: base\characters\entities\player\photo_mode\goro_takemura\goro_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  - entity: base\characters\entities\player\photo_mode\jackie_welles\jackie_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  - entity: base\characters\entities\player\photo_mode\altjohnny_silverhand\altjohnny_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims    
-  - entity: base\characters\entities\player\photo_mode\johnny_silverhand\johnny_photomode_entity.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  - entity: base\characters\entities\player\photo_mode\kerry_eurodyne\kerry_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  - entity: ep1\characters\entities\player\photo_mode\kurt\kurt_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  - entity: base\characters\entities\player\photo_mode\viktor_vektor\viktor_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  - entity: base\characters\entities\player\photo_mode\river_ward\river_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  - entity: ep1\characters\entities\player\photo_mode\solomon_reed\reed_photomode.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  # nibbles replacer (old)
-  - entity: base\characters\entities\photomode_replacer\photomode_npc_man_average.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  - entity: base\characters\entities\photomode_replacer\photomode_npc_man_big.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims     
-  - entity: base\characters\entities\photomode_replacer\photomode_npc_man_big1.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims     
-  - entity: base\characters\entities\photomode_replacer\photomode_npc_man_big2.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims   
-  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_masc1.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-  - entity: base\characters\entities\photomode_replacer\photomode_npc_npv_masc2.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-
 ```
 {% endtab %}
 
@@ -322,7 +245,7 @@ You need to add one of those for every pose from your .anim file that you want t
 
 ### Telling photo mode about the poses
 
-You register your poses for photo mode by creating the following entry categories:
+You register your poses for photo mode by creating the following entry categories. You can use yaml anchors to minimize copy-pasting:
 
 {% tabs %}
 {% tab title=">= 2.2" %}
@@ -330,39 +253,41 @@ You register your poses for photo mode by creating the following entry categorie
 
 # Player and Nibbles
 
-photo_mode.character.malePoses:
-  - !append-once PhotomodePoses.sit_chair_table_keyboard__2h_on_keyboard_01__thinking
-photo_mode.character.femalePoses:
-photo_mode.character.quadrupedPoses:
+photo_mode.character.malePoses: &AddPoses
+  - !append PhotomodePoses.sit_chair_table_keyboard__2h_on_keyboard_01__thinking
+photo_mode.character.femalePoses: &AddPoses
+  - !append PhotomodePoses.sit_chair_table_keyboard__2h_on_keyboard_01__thinking
+
+photo_mode.character.quadrupedPoses: *AddPoses
 
 # extra NPCs: female body gender
 
-photo_mode.character.altPoses:
-photo_mode.character.bluemoonPoses:
-photo_mode.character.evelynPoses:
-photo_mode.character.hanakoPoses:
-photo_mode.character.judyPoses:
-photo_mode.character.lizzyPoses:
-photo_mode.character.meredithPoses:
-photo_mode.character.panamPoses:
-photo_mode.character.purpleforcePoses:
-photo_mode.character.redmenacePoses:
-photo_mode.character.rogueoldPoses:
-photo_mode.character.rogueyoungPoses:
-photo_mode.character.songbirdPoses:
-photo_mode.character.myersPoses:
+photo_mode.character.altPoses: *AddPoses
+photo_mode.character.bluemoonPoses: *AddPoses
+photo_mode.character.evelynPoses: *AddPoses
+photo_mode.character.hanakoPoses: *AddPoses
+photo_mode.character.judyPoses: *AddPoses
+photo_mode.character.lizzyPoses: *AddPoses
+photo_mode.character.meredithPoses: *AddPoses
+photo_mode.character.panamPoses: *AddPoses
+photo_mode.character.purpleforcePoses: *AddPoses
+photo_mode.character.redmenacePoses: *AddPoses
+photo_mode.character.rogueoldPoses: *AddPoses
+photo_mode.character.rogueyoungPoses: *AddPoses
+photo_mode.character.songbirdPoses: *AddPoses
+photo_mode.character.myersPoses: *AddPoses
 
 # extra NPCs: male body gender
-photo_mode.character.adamPoses:
-photo_mode.character.altjohnnyPoses:
-photo_mode.character.johnnyPoses:
-photo_mode.character.goroPoses:
-photo_mode.character.jackiePoses:
-photo_mode.character.kerryPoses:
-photo_mode.character.riverPoses:
-photo_mode.character.viktorPoses:
-photo_mode.character.kurtPoses:
-photo_mode.character.reedPoses:
+photo_mode.character.adamPoses: *AddPoses
+photo_mode.character.altjohnnyPoses: *AddPoses
+photo_mode.character.johnnyPoses: *AddPoses
+photo_mode.character.goroPoses: *AddPoses
+photo_mode.character.jackiePoses: *AddPoses
+photo_mode.character.kerryPoses: *AddPoses
+photo_mode.character.riverPoses: *AddPoses
+photo_mode.character.viktorPoses: *AddPoses
+photo_mode.character.kurtPoses: *AddPoses
+photo_mode.character.reedPoses: *AddPoses
 ```
 {% endtab %}
 
@@ -376,7 +301,9 @@ photo_mode.character.quadrupedPoses
 {% endtab %}
 {% endtabs %}
 
-An entry looks like this:
+Characters with `*AddPoses` will use the poses defined under `&AddPoses`. If you don't want a character to use certain poses, don't put `*AddPoses`  next to their `photomode.character`  entry.
+
+An entry without YAML anchors, where poses are manually appended to each character, looks like this:
 
 <figure><img src="../../../.gitbook/assets/archivexl_photomode_yaml_3.png" alt=""><figcaption></figcaption></figure>
 
