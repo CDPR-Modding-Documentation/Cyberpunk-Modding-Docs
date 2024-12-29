@@ -6,16 +6,17 @@ description: How to get mods working on SteamDeck or other Linux distros
 
 ## Summary
 
-This page tells you how to **set the launch options** for Steam under Linux.&#x20;
+This page tells you how to **set the launch options** for Steam under Linux.
 
 ### Wait, this is not what I want!
 
 * If you have trouble after an update and have exhausted [all the usual steps](../user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md), double-check your [#launch-options](modding-on-linux.md#launch-options "mention") (sometimes, Steam helpfully changes them to make you crash)
 * If you want to optimize Cyberpunk 2077 settings for your SteamDeck, find a guide on [/r/SteamDeck](https://www.reddit.com/r/SteamDeck/)
+* For a video about modding on mac, see [https://www.youtube.com/watch?v=x0CDcBui2qE\&t=20s](https://www.youtube.com/watch?v=x0CDcBui2qE\&t=20s)
 
 ## TL;DR
 
-You need to&#x20;
+You need to
 
 * Install `d3dcompiler_47`
 * Install `vcrun2022`
@@ -42,7 +43,7 @@ Make sure that you are on the most recent version of Protontricks. This guide wi
 If you don't want to read text, find a video documenting the process [here](https://youtu.be/CYKCOBaZpBU?t=110). Thanks to Connor for providing the screenshots and transcription!
 {% endhint %}
 
-To configure the necessary parameters, you can use the app Protontricks, which you can download through the built-in app browser "Discover":&#x20;
+To configure the necessary parameters, you can use the app Protontricks, which you can download through the built-in app browser "Discover":
 
 <figure><img src="../../.gitbook/assets/linux_modding_proton_1.png" alt=""><figcaption><p>Protontricks as Shown in Discover</p></figcaption></figure>
 
@@ -93,7 +94,7 @@ Taken from [CET's github](https://github.com/maximegmd/CyberEngineTweaks/issues/
 You need to pass a few parameters to the Cyberpunk.exe to enable mods. Read the section for your client to find out how.
 
 {% hint style="danger" %}
-If you have typos or forget characters in your launch parameters, **they will not work**. \
+If you have typos or forget characters in your launch parameters, **they will not work**.\
 You can copy-paste the text from the guide below.
 {% endhint %}
 
@@ -113,7 +114,7 @@ The command is case sensitive. Copy-paste the text from the box above to make su
 
 <figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption><p>Setting Launch Options in Steam</p></figcaption></figure>
 
-If this still doesn't work, check the [Cyber Engine Tweaks wiki](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/getting-started/installing) for additional instructions, or find us on [Discord](https://discord.gg/redmodding) in `#mod-troubleshooting`.
+If this still doesn't work, check the [Cyber Engine Tweaks wiki](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/getting-started/installing) for additional instructions, or find us on [Discord](https://discord.gg/redmodding) in `#mod-troubleshooting`.
 
 ### GOG: Launch Options
 
@@ -133,7 +134,7 @@ The command is case sensitive. Copy-paste the text from the box above to make su
 
 ### Heroic: Launch Options
 
-While at your library right click Cyberpunk then navigate to `Settings` -> `ADVANCED` and scroll down to `Environment Variables` &#x20;
+While at your library right click Cyberpunk then navigate to `Settings` -> `ADVANCED` and scroll down to `Environment Variables`
 
 Now set a new variable name `WINEDLLOVERRIDES` with a value of `winmm,version=n,b`
 
@@ -144,7 +145,7 @@ Variable Name and Value are both case sensitive, Copy-paste for certainty.
 {% endhint %}
 
 {% hint style="info" %}
-Anything that includes **`=`** and doesn't start with **`-`** goes to Environment Variables, while things starting with**`-`**usually go under Game Arguments, for example**`-skipStartScreen`**
+Anything that includes **`=`** and doesn't start with **`-`** goes to Environment Variables, while things starting with\*\*`-`**usually go under Game Arguments, for example**`-skipStartScreen`\*\*
 {% endhint %}
 
 ## Troubleshooting
@@ -167,5 +168,4 @@ You can check protontricks' [github page](https://github.com/Matoking/protontric
 
 #### Ask for help
 
-You can find us on the [modding discord](https://discord.gg/redmodding) in `#cet-troubleshooting` or `#red4ext-support`. Beware: If it turns out to be a typo in your launch options, there will be snark. ;)&#x20;
-
+You can find us on the [modding discord](https://discord.gg/redmodding) in `#cet-troubleshooting` or `#red4ext-support`. Beware: If it turns out to be a typo in your launch options, there will be snark. ;)
