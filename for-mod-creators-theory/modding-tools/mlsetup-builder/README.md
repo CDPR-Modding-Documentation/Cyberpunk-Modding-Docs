@@ -211,12 +211,12 @@ Again, this step is optional, you can [use MLSB](./#using-mlsb) straight away.&#
 
 <figure><img src="../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
-2. Select the following settings (if you want to uncook everything, this step can take over an hour, so we'll only do the essentials for now)
+2. Pick what you want to uncook. Especially the environments can take over an hour, so we're only doing the essentials here:&#x20;
 
-<figure><img src="../../../.gitbook/assets/New MLSB.PNG" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mlsb_uncook.png" alt=""><figcaption></figcaption></figure>
 
 3. Click "**Uncook**".&#x20;
-4. Wait. Do not interact with the program in any way until the process has finished - especially interacting with the console might just freeze up the entire windows cmd process. This is not MLSB's fault, but due to a Windows standard implementation.
+4. **Wait**. Do not interact with the program in any way until the process has finished - especially interacting with the console might just freeze up the entire windows cmd process. This is not MLSB's fault, but due to a Windows standard implementation. There can be a bunch of errors, ignore them.
 
 {% hint style="danger" %}
 This process can take some time — if you have selected everything, it can be several hours on slow machines. (You should've listened during step 1, choomba ;))
@@ -246,12 +246,6 @@ Alternatively, you can also delete the file and reconfigure.
 ### Generating microblends: \[ 0: Error ] - Please fill in an output path
 
 For MLSB <= 1.6.7, you have to use the exact CLI version you find under `Help` -> `Download Wolvenkit.CLI`
-
-### Help, my Layer Config List says `object Object`
-
-You need to [install the most recent version](https://github.com/Neurolinked/MlsetupBuilder/tags). If that doesn't make the error go away and your most recent version is something with 1.6.7, update the interface.js — download it [here ](https://github.com/Neurolinked/MlsetupBuilder/releases/tag/v1.6.7-final)from Neurolinked's github repository, then replace the file with the same name in MLSB's install directory, subfolder `resources\app\js`.&#x20;
-
-If you have installed it as a Wolvenkit plugin, that directory will be `Cyberpunk 2077\tools\neurolinked\mlsetupbuilder`.
 
 ### There's an exception when generating my depot!&#x20;
 
