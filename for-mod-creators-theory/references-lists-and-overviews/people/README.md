@@ -14,21 +14,20 @@ This page collects paths to .ent and .app files for various NPCs, as long as som
 Don't forget: To quickly find somebody's entry, you can use your browser's search function (`Ctrl+F`).
 {% endhint %}
 
-### Wait, this isn't what I'm looking for!
+### Wait, this isn't what I want!
 
-To change NPC appearances, see [appearances-change-the-looks](../../modding-guides/npcs/appearances-change-the-looks/ "mention")
-
-To create custom NPCs, see [amm-custom-npcs](../../modding-guides/npcs/amm-custom-npcs/ "mention")
-
-To create V as an NPC, see [npv-v-as-custom-npc](../../modding-guides/npcs/npv-v-as-custom-npc/ "mention")
+* To change NPC appearances, see [appearances-change-the-looks](../../../modding-guides/npcs/appearances-change-the-looks/ "mention")
+* To create custom NPCs, see [amm-custom-npcs](../../../modding-guides/npcs/amm-custom-npcs/ "mention")
+* To create V as an NPC, see [npv-v-as-custom-npc](../../../modding-guides/npcs/npv-v-as-custom-npc/ "mention")
+* To find the files of an AMM NPC, check the sub-page [finding-files-amm-npcs.md](finding-files-amm-npcs.md "mention")
 
 ***
 
 ## Where to find…
 
-CDPR's system of character classification is completely arbitrary and often contains redundancies. If you are looking for a character's files, you're generally much better-off to just [search for it in Wolvenkit](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).
+CDPR's system of character classification is completely arbitrary and often contains redundancies. If you are looking for a character's files, you're generally much better-off to just [search for it in Wolvenkit](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).
 
-If you can't find a character's .ent file, search for variations of their name — e.g. Johnny is `silverhand`, Viktor is `ripperdoc`. Sometimes, it is easier to find the .app file first, and then get the .ent file by using [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this).
+If you can't find a character's .ent file, search for variations of their name — e.g. Johnny is `silverhand`, Viktor is `ripperdoc`. Sometimes, it is easier to find the .app file first, and then get the .ent file by using [Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this).
 
 {% hint style="info" %}
 Major NPCs have their own .app files: \
@@ -40,7 +39,7 @@ Others are not so lucky - e.g., Mamá Welles is lobbed in with the other valenti
 
 ## Character files
 
-You can find the corresponding .app file by right-clicking on the .ent file and selecting [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention"). If that doesn't help, search for entFileName.app (e.g. `silverhand.app`)
+You can find the corresponding .app file by right-clicking on the .ent file and selecting [Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention"). If that doesn't help, search for entFileName.app (e.g. `silverhand.app`)
 
 ### Primary characters
 

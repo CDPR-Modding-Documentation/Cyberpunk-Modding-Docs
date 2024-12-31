@@ -21,7 +21,7 @@ You can find a more detailed guide under [altering-appearances-within-wolvenkit-
 
 ## Wait, this isn't what I want!
 
-* For an overview of NPC files, check [people.md](../../../for-mod-creators-theory/references-lists-and-overviews/people.md "mention")
+* For an overview of NPC files, check [people](../../../for-mod-creators-theory/references-lists-and-overviews/people/ "mention")
 * If you want to add custom NPCs to Cyberpunk 2077 with AMM, check [amm-custom-npcs](../amm-custom-npcs/ "mention")
 * If you want to add AMM appearances to existing NPCs, check [amm-custom-npc-appearances.md](../amm-custom-npcs/amm-custom-npc-appearances.md "mention")
 * If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/ "mention")
@@ -49,7 +49,7 @@ The NPC's [root entity file](../../../for-mod-creators-theory/files-and-what-the
 You don't need to add this file to your project (and if you do it by accident, you should delete it later). For details, see [amm-custom-npc-appearances.md](../amm-custom-npcs/amm-custom-npc-appearances.md "mention").
 {% endhint %}
 
-You can try finding your NPC's .ent file on [people.md](../../../for-mod-creators-theory/references-lists-and-overviews/people.md "mention"). If you can't find your entry, the page has information how you can search for it — **please add it to the page**, this wiki is a community project!
+You can try finding your NPC's .ent file on [people](../../../for-mod-creators-theory/references-lists-and-overviews/people/ "mention"). If you can't find your entry, the page has information how you can search for it — **please add it to the page**, this wiki is a community project!
 
 Point your [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) to the file you have found. We want to find the .app file and add it to our project. You can right-click on the .ent file and select [Find used files](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-used-files), or you look up the path in the .ent file:
 

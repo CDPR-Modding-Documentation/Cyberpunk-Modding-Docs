@@ -30,7 +30,7 @@ In the process, you'll learn the following things:
 
 * The [wolvenkit-blender-io-suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention")
 * Blender (the version that is compatible with the plugin)
-* Wolvenkit [stable](https://github.com/WolvenKit/Wolvenkit/releases) | [nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) ([Which one do you need?](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download#which-version-do-i-want))
+* Wolvenkit [stable](https://github.com/WolvenKit/Wolvenkit/releases) | [nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) ([Which one do you need?](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download#which-version-do-i-want))
 
 ***
 
@@ -48,7 +48,7 @@ Entity files are using the `.app` files, so you can find them from there. For in
 
 #### Wiki
 
-Under [people.md](../../../for-mod-creators-theory/references-lists-and-overviews/people.md "mention"), you can find a bunch of paths. If you're lucky, then your character is on that list.
+Under [people](../../../for-mod-creators-theory/references-lists-and-overviews/people/ "mention"), you can find a bunch of paths. If you're lucky, then your character is on that list.
 
 #### From the entity folder
 
@@ -60,7 +60,7 @@ base\characters\entities
 
 #### Via Wolvenkit Search
 
-Type something like `character > .ent` in the Wolvenkit Search Bar and scroll a lot, or click on [this link](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to learn more
+Type something like `character > .ent` in the Wolvenkit Search Bar and scroll a lot, or click on [this link](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to learn more
 
 ### By folder
 
@@ -72,7 +72,7 @@ base\characters\appearances\main_npc
 
 ### Via Wolvenkit Search
 
-Type something like `character > .app` in the Wolvenkit Search Bar and scroll a lot, or click on [this link](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to learn more
+Type something like `character > .app` in the Wolvenkit Search Bar and scroll a lot, or click on [this link](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to learn more
 
 ## Understanding the .app file
 
@@ -125,7 +125,7 @@ Next, we want to export the file out of Wolvenkit to enable us to edit the mesh 
 You can find step-by-step instructions under the plugin's [import/export page ](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes)
 {% endhint %}
 
-To export the .mesh into something that Blender can read, find the [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-workflow-documentation).&#x20;
+To export the .mesh into something that Blender can read, find the [Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#ui-workflow-documentation).&#x20;
 
 Once that's open, check the box next to your body mesh and click "Export Selected".
 
@@ -139,7 +139,7 @@ You need to have the [wolvenkit-blender-io-suite](../../../for-mod-creators-theo
 
 Open up Blender, delete everything from the default project, and click on "File>Import>Cyberpunk GLTF".&#x20;
 
-Locate your project folder, then find your mesh file in your project's [raw section](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw). It'll probably be somewhere like "Ripperdoc\_Tutorial\source\raw\base\characters\main\_npc\ripper\_doc".&#x20;
+Locate your project folder, then find your mesh file in your project's [raw section](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw). It'll probably be somewhere like "Ripperdoc\_Tutorial\source\raw\base\characters\main\_npc\ripper\_doc".&#x20;
 
 Import it.
 
@@ -186,7 +186,7 @@ Keep in mind that instead of modifying the mesh in the game files, you could hav
 ## Modifying the Clothes
 
 {% hint style="info" %}
-For more intel about clothes refitting, check [Refit Clothes Easily](https://youtu.be/RK3AAfOHh40?si=2LWG72v\_aVHjhr2b)
+For more intel about clothes refitting, check [Refit Clothes Easily](https://youtu.be/RK3AAfOHh40?si=2LWG72v_aVHjhr2b)
 {% endhint %}
 
 The first thing we want to do is find the piece of clothing that we want to edit within the .app file. For us, that's "t1\_001\_ma\_full\_\_ripper\_doc1487". Let's export it using the same process as with the body mesh (remember to add it to your project before trying to export it).
