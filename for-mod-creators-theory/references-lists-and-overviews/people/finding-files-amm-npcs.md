@@ -68,7 +68,7 @@ You will now see something like this:
 
 <figure><img src="../../../.gitbook/assets/finding_amm_npcs_finding_ID_database.png" alt=""><figcaption></figcaption></figure>
 
-### Step 3: Find the .ent file
+## Step 3: Find the .ent file
 
 Complete the following steps on the sqliteviewer website.
 
@@ -79,18 +79,40 @@ Complete the following steps on the sqliteviewer website.
 
 <figure><img src="../../../.gitbook/assets/finding_amm_npcs_finding_entity_path.png" alt=""><figcaption></figcaption></figure>
 
-## Step 4: Finding the NPC's file
-
-In the entity path column, you will either find a file name (for modded NPCs), or a TweakDB ID (for base game characters). Read the section below as for how to proceed from here.
-
-### A file path
-
-Contgratulations, you have found the character's [root entity](../../files-and-what-they-do/entity-.ent-files/#root-entity). Go to [spawn-codes-baseids-hashes.md](../equipment/spawn-codes-baseids-hashes.md "mention") and follow the steps after [#step-2-finding-the-.app-file](../equipment/spawn-codes-baseids-hashes.md#step-2-finding-the-.app-file "mention").
+## Step 4 (Optional): TweakDBId to entity path
 
 {% hint style="info" %}
-If the NPC was added by a mod, you have to use the [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) for this.
+If you already have a file name here, skip to [#step-5-read-the-root-entity](finding-files-amm-npcs.md#step-5-read-the-root-entity "mention")
 {% endhint %}
 
-### A TweakDB Id (e.g. `Character.NurseFemale`)
+In the `entity path` column, you will either find a file path (for modded NPCs), or a TweakDB ID (for base game characters).&#x20;
 
-Go to [spawn-codes-baseids-hashes.md](../equipment/spawn-codes-baseids-hashes.md "mention") and follow the steps after [#the-tweak-browser](../equipment/spawn-codes-baseids-hashes.md#the-tweak-browser "mention") to find your character's files.
+1. Open Wolvenkit's [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser)&#x20;
+2. Pull it wide to make the right panel appear
+3. In the search field at the top, search for your TweakDB ID (e.g. `Character.NurseFemale`)
+4. In the property panel at the left, find the `entityTemplatePath` (the NPC's [root entity](../../files-and-what-they-do/entity-.ent-files/#root-entity))
+
+<img src="../../../.gitbook/assets/tweak_browser_ent_file_from_tweak.png" alt="" data-size="original">
+
+## Step 5: Read the [root entity](../../files-and-what-they-do/entity-.ent-files/#root-entity)
+
+{% hint style="info" %}
+If the NPC was added by a mod, you have to switch to [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) first
+{% endhint %}
+
+1. Use [WolvenKit's search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) to find the .ent in the files.
+2. Right-click on the file and open it in WolvenKit (you don't need to add it to your project)
+3. Find your NPC's appearance in the list:
+
+<figure><img src="../../../.gitbook/assets/finding_amm_npc_root_entity.png" alt=""><figcaption></figcaption></figure>
+
+4. Note down the `appearanceName` (green box in the screenshot)
+5. Open the .app file by clicking the turquoise button
+
+## Reading the [.app file](../../files-and-what-they-do/appearance-.app-files/)
+
+<figure><img src="../../../.gitbook/assets/image (549).png" alt=""><figcaption></figcaption></figure>
+
+1. In the `appearances` list at the top of the file, find the entry with the name from the .ent file
+2. Expand the appearance's `components` array. These are all of your NPV's parts!
+3. Enjoy!
