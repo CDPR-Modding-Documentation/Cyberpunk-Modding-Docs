@@ -4,15 +4,26 @@ description: How to add appearances to existing NPCs (via AMM)
 
 # AMM: Custom NPC appearances
 
-{% hint style="warning" %}
-This guide has not yet been updated to use [archivexl-resource-patching.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching.md "mention"). As such, you will probably end up overwriting an existing NPC's file, breaking compatibility.
+## Summary
 
-Until the guide updates, you should stick to [.](./ "mention"). This guide will only tell you how to target the right (vanilla) NPC file, since the rest of the process is the same.
+Created: Nov 27 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Last documented update: Jan 02 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This guide makes use of [archivexl-resource-patching.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching.md "mention") to add appearances to an already-existing NPC.
+
+The process for this mod is exactly like it is with [.](./ "mention"), just that instead of adding a new NPC, we tell AMM and ArchiveXL to add our appearances to an existing NPC.
+
+{% hint style="danger" %}
+Do **not** overwrite an NPC's original files! This will cause compatibility issues for every single modder out there, and risk breaking the NPC with every game update. (Some people had naked Judy on the phone in Phantom Liberty, which was wildly inappropriate for the context)
+{% endhint %}
+
+{% hint style="info" %}
+You can check the [AMM Appearances for Takemura Goro](https://www.nexusmods.com/cyberpunk2077/mods/6111/) mod for a live example of this.
 {% endhint %}
 
 ## The .lua file
 
-In your project's [Resources](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources "mention") directory, create the following folder structure:
+After completing the custom NPC guide, you should have the following file in your project's [Resources](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources "mention") directory:
 
 ```
 - bin
@@ -23,13 +34,18 @@ In your project's [Resources](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wo
                     - AppearanceMenuMod
                         - Collabs
                             - Custom Appearances
+                                - your_custom_file.lua
 ```
 
-In that folder, create `your_custom_file.lua`. (You can get a template project under [.](./ "mention")).&#x20;
+Open it in a text editor like [Notepad++](https://notepad-plus-plus.org/downloads/) and add the following line (check  [finding-files-amm-npcs.md](../../../for-mod-creators-theory/references-lists-and-overviews/people/finding-files-amm-npcs.md "mention") for a step-by-step guide on finding the correct entity ID):
 
-The most important thing here is the `entity_id` - this is what tells AMM about the already existing file that you have modified.
+```lua
+  entity_id = "0xF43B2B48, 18",
+```
 
-As an example, look at the lua file I made for [Takemura's custom appearances](https://www.nexusmods.com/cyberpunk2077/mods/6111/) way back when:
+<details>
+
+<summary>Example .lua (<a href="https://www.nexusmods.com/cyberpunk2077/mods/6111/">Takemura's custom appearances</a>)</summary>
 
 ```lua
 return {
@@ -56,12 +72,53 @@ return {
 	"goro_takemura_haori_pants",
 	"goro_takemura_haori_hakama",
   }
-}
-	
+}	
 ```
 
-The rest of the process is documented in [the other guide](./#adding-more-appearances).&#x20;
+</details>
 
-_Knowing what I know today, I probably would have created a custom entity for Takemura-san in the first place, but since I chose to go down this road, I'm doomed to provide compatibility patches for the rest of eternity._&#x20;
+## The .xl file
 
-_Ah, well. There are worse fates._
+### 1. Create the file
+
+Directly in your project's [Resources](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources "mention") directory, create an empty text file called `your_project_name.archive.xl`, and open it in a text editor like [Notepad++](https://notepad-plus-plus.org/downloads/).&#x20;
+
+Paste the following text (we'll adjust it together):
+
+```yaml
+resource:
+  patch:  
+    path\to\your\app_file.app:
+      - base\characters\appearances\main_npc\goro_takemura.app 
+    path\to\your\ent_file.ent:
+      - base\quest\primary_characters\takemura.ent
+```
+
+{% hint style="info" %}
+Do **not** change the indent (number of spaces at the beginning of each line). If that happens to you, check [#id-4.-optional-fixing-that-damn-indent](amm-custom-npc-appearances.md#id-4.-optional-fixing-that-damn-indent "mention")
+{% endhint %}
+
+### 2. Adjust the .app file path
+
+1. Replace `path\to\your\app_file.app` with the **relative path** to your .app file (right-click it in Wolvenkit, then select `Copy Relative Path`)
+2. Replace `base\characters\appearances\main_npc\goro_takemura.app` with the relative path to the NPC's original .app file. Check  [finding-files-amm-npcs.md](../../../for-mod-creators-theory/references-lists-and-overviews/people/finding-files-amm-npcs.md "mention") for how to find the .app.
+
+This tells ArchiveXL to add all appearances from your .app file to the original NPC's file, making them available for the game.
+
+### 3. Adjusting the .ent file path
+
+* Replace `path\to\your\ent_file.ent` with the **relative path** to your .ent file (right-click it in Wolvenkit, then select `Copy Relative Path`)
+* Replace base\quest\primary\_characters\takemura.ent with the relative path to the NPC's original .app file. Check  [finding-files-amm-npcs.md](../../../for-mod-creators-theory/references-lists-and-overviews/people/finding-files-amm-npcs.md "mention") for how to find the .app.
+
+This tells ArchiveXL to add all appearances from your .ent file to the original NPC's file, making them available for the game.
+
+### 4. Optional: Fixing that damn indent
+
+If your custom appearances aren't working, run your .xl file through [yamllint](https://www.yamllint.com/) and fix any mistakes.
+
+
+
+{% hint style="success" %}
+That's it! You should now have more NPC appearances!
+{% endhint %}
+
