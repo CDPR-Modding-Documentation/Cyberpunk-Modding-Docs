@@ -319,7 +319,7 @@
     * [Poses/Animations: make your own](modding-guides/animations/animations/poses-animations-make-your-own/README.md)
       * [Custom Poses and Animations - Guide by xbaebsae](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/)
     * [ArchiveXL: adding Photo Mode Poses](modding-guides/animations/animations/archivexl-adding-photo-mode-poses/README.md)
-      * [Updating Photomode Pose Packs for 2.0](modding-guides/animations/animations/archivexl-adding-photo-mode-poses/updating-photomode-pose-packs-for-2.0.md)
+      * [Updating Photomode Pose Packs for 2.2](modding-guides/animations/animations/archivexl-adding-photo-mode-poses/updating-photomode-pose-packs-for-2.2.md)
     * [Removing Foot Snap IK from Poses/Animations](modding-guides/animations/animations/removing-foot-snap-ik-from-poses-animations.md)
     * [Scaling Poses/Animations](modding-guides/animations/animations/scaling-poses-animations.md)
     * [Retargeting Game Animations for different RIGs - Guide by PinkyDude](https://docs.google.com/document/d/1nHPQvkK6ijwb8iQ8y1X8CBG-wnNUCTYCjrdUCGMenW4/edit?usp=drive_link)

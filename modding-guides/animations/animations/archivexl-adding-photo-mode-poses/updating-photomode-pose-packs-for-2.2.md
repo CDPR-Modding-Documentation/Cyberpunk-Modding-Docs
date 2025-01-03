@@ -1,10 +1,8 @@
 ---
-description: >-
-  Shows mod users and mod creators how to update their pose packs for NPCs added
-  in Patch 2.2 and NPV added with AXL 1.19
+description: How to update pose packs for Patch 2.2. and ArchiveXL 1.19
 ---
 
-# Updating Photomode Pose Packs for 2.0
+# Updating Photomode Pose Packs for 2.2
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -118,7 +116,7 @@ If you're a modder who already updated your XL to add all the new photomode NPC 
     set: your_cat.anims
 </code></pre>
 
-Do not just copy and paste this entire  directly. You need to fill out your `set:` sections with the paths to the appropriate `.anims` files. See the [.xl file section of this tutorial for more info](updating-photomode-pose-packs-for-2.0.md#the-.xl-file) on how to do this.
+Do not just copy and paste this entire  directly. You need to fill out your `set:` sections with the paths to the appropriate `.anims` files. See the [.xl file section of this tutorial for more info](updating-photomode-pose-packs-for-2.2.md#the-.xl-file) on how to do this.
 
 3. **Save your .xl file.** The .xl is now updated to support vanilla Photomode NPC and Photomode NPV!
 
