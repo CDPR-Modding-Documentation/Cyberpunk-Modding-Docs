@@ -4,7 +4,7 @@ description: >-
   in Patch 2.2 and NPV added with AXL 1.19
 ---
 
-# How to Update Pose Packs for Photomode NPC/NPV
+# Updating Photomode Pose Packs for 2.0
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -118,7 +118,7 @@ If you're a modder who already updated your XL to add all the new photomode NPC 
     set: your_cat.anims
 </code></pre>
 
-Do not just copy and paste this entire  directly. You need to fill out your `set:` sections with the paths to the appropriate `.anims` files. See the [.xl file section of this tutorial for more info](how-to-update-pose-packs-for-photomode-npc-npv.md#the-.xl-file) on how to do this.
+Do not just copy and paste this entire  directly. You need to fill out your `set:` sections with the paths to the appropriate `.anims` files. See the [.xl file section of this tutorial for more info](updating-photomode-pose-packs-for-2.0.md#the-.xl-file) on how to do this.
 
 3. **Save your .xl file.** The .xl is now updated to support vanilla Photomode NPC and Photomode NPV!
 
@@ -127,7 +127,7 @@ Adding a scope to your pose pack .xl  is **required** for Photomode NPV to use m
 \
 If you do not use this scope in your pose pack .xl, and instead list each 2.2 NPC entity separately, NPVs added to Photomode with ArchiveXL will **not** be able to use your poses.\
 \
-If you already added NPC entities to your pose pack for 2.2, just add the scope as well.
+If you already added NPC entities to your pose pack for 2.2, delete them and replace them with the scope.
 {% endhint %}
 
 **Next, we update the .yaml:**&#x20;
