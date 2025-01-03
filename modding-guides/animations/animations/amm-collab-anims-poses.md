@@ -21,7 +21,7 @@ This guide will teach you how to add custom animations to **AppearanceMenuMod**'
 
 ### Wait, this is not what I want!
 
-To add poses to photo mode, check [archivexl-adding-photo-mode-poses.md](archivexl-adding-photo-mode-poses.md "mention").
+To add poses to photo mode, check [archivexl-adding-photo-mode-poses](archivexl-adding-photo-mode-poses/ "mention").
 
 {% hint style="info" %}
 This tutorial will use `animation` and `pose` interchangeably. An animation is simply a pose that moves.
@@ -30,7 +30,7 @@ This tutorial will use `animation` and `pose` interchangeably. An animation is s
 ## Prerequisites
 
 1. You have an `.anims` file, either a game file or one that you have [made yourself](poses-animations-make-your-own/)
-2. You have a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
+2. You have a [Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
 3. You have a text editor like [Notepad++](https://notepad-plus-plus.org/downloads/)
 4. You have **one** of the following things:
    1. The **Easy AMM Poses** tool ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/13904) | [Github](https://github.com/stndn0/Easy-AMM-Poses))

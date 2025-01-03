@@ -15,12 +15,12 @@ This guide will walk you through **adding poses** to Cyberpunk 2077's photo mode
 
 ### Wait, this is not what I want!
 
-* To make poses from scratch, check [poses-animations-make-your-own](poses-animations-make-your-own/ "mention")
-* To scale poses/animations, check [scaling-poses-animations.md](scaling-poses-animations.md "mention")
+* To make poses from scratch, check [poses-animations-make-your-own](../poses-animations-make-your-own/ "mention")
+* To scale poses/animations, check [scaling-poses-animations.md](../scaling-poses-animations.md "mention")
 
 ### Prerequisites:
 
-We will hook up an existing `.anims` file to photo mode. If you don't have one, you can find a dummy file in the AMM [pose guide](amm-collab-anims-poses.md).
+We will hook up an existing `.anims` file to photo mode. If you don't have one, you can find a dummy file in the AMM [pose guide](../amm-collab-anims-poses.md).
 
 **Tool versions:**
 
@@ -60,7 +60,7 @@ At any point during this guide, you can press the green `Install` button on Wolv
 1. &#x20;Use Wolvenkit's `Rename` feature with the `Update in project files` box checked&#x20;
 2. Use Notepad++ to edit `photomode_poses_tutorial.xl`. Search\&replace the original path (`tutorial\animations\netrunner_making_poses`) with your new folder path.
 3. Test. The. Mod.
-4. Proceed to [#step-2-hook-up-your-poses](archivexl-adding-photo-mode-poses.md#step-2-hook-up-your-poses "mention")
+4. Proceed to [#step-2-hook-up-your-poses](./#step-2-hook-up-your-poses "mention")
 
 ### Step by step
 
@@ -68,23 +68,23 @@ We usually do this at the very end and I'm leaving you alone with it. However, t
 
 Here's how your project should look when you're done.&#x20;
 
-<figure><img src="../../../.gitbook/assets/axl_photo_mode_rename_files_folders.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_photo_mode_rename_files_folders.png" alt=""><figcaption></figcaption></figure>
 
 1. Select the highlighted `tutorial` folder and press f2. This will open the rename dialogue.
 2.  Change its name, and check the `Update in project files?` box
 
-    <figure><img src="../../../.gitbook/assets/axl_photomode_2_2_rename_folder.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/axl_photomode_2_2_rename_folder.png" alt=""><figcaption></figcaption></figure>
 
 
 3. Do the same for the `netrunner_making_poses` folder (you want your file structure to be as tidy as it can be - future you will thank you for it)
 4. Switch your project browser to the resources tab and open `photomode_poses_tutorial.xl` in notepad++:
 
-<figure><img src="../../../.gitbook/assets/axl_photomode_edit_xl_file.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_photomode_edit_xl_file.png" alt=""><figcaption></figcaption></figure>
 
 5. Use `Edit` -> `Replace` (Keyboard shortcut: `Ctrl+H`) to open the search and replace menu. Replace the old path with your new path:\
    `tutorial\animations\netrunner_making_poses` -> `your_beautiful_name\animations\your_cool_new_pose_pack`
 
-<figure><img src="../../../.gitbook/assets/axl_photomode_search_and_replace_repathing.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/axl_photomode_search_and_replace_repathing.png" alt=""><figcaption></figcaption></figure>
 
 6. Hit "Replace All"&#x20;
 7. Save your file (Keyboard shortcut: `Ctrl+S`)
@@ -161,7 +161,7 @@ localization:
 You have to adjust the paths under `set` and `en-us` to your new changed folder structure.
 
 {% hint style="info" %}
-If you want to support more body types from the Nibbles Replacer, you can [switch to the Mod Browser](../../analysing-other-mods/) and enter the following search query to find all the entities:\
+If you want to support more body types from the Nibbles Replacer, you can [switch to the Mod Browser](../../../analysing-other-mods/) and enter the following search query to find all the entities:\
 `base\characters\entities\photomode_replacer > .ent`
 {% endhint %}
 
@@ -183,17 +183,17 @@ You can name this file whatever you want, just make sure that you change the pat
 * The green text is the name that will show up in photo mode. \
   `femaleVariant` is the default key - if you don't need different pose names for the male body gender, leave it empty.
 
-<figure><img src="../../../.gitbook/assets/archivexl_photomode_json.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/archivexl_photomode_json.png" alt=""><figcaption></figcaption></figure>
 
 ### The .anim file(s)
 
-If you have created your own animations (as a [replacer](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/) or for [AMM](amm-collab-anims-poses.md)), then you are already familiar with this kind of file. If not, it is time to appropriate one from the game files - pick any, since the process is just like with a replacer.
+If you have created your own animations (as a [replacer](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/) or for [AMM](../amm-collab-anims-poses.md)), then you are already familiar with this kind of file. If not, it is time to appropriate one from the game files - pick any, since the process is just like with a replacer.
 
 Just as a reminder, here's how they look:
 
-<figure><img src="../../../.gitbook/assets/archivexl_photomode_anim.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/archivexl_photomode_anim.png" alt=""><figcaption></figcaption></figure>
 
-You will need the green text in your [.yaml file](archivexl-adding-photo-mode-poses.md#the-.yaml-file).
+You will need the green text in your [.yaml file](./#the-.yaml-file).
 
 {% hint style="info" %}
 Optional: If you want your pose to move, you can set the duration in the .yaml as well!
@@ -204,7 +204,7 @@ Optional: If you want your pose to move, you can set the duration in the .yaml a
 Without this file (`r6/tweaks/your_beautiful_name/your_cool_new_pose_pack.yaml`), the animations will be in the entity, but the photo mode won't know about them.
 
 {% hint style="warning" %}
-You can use [this tool](https://wolv-photomode-tools.netlify.app/) by @wolv to autogenerate your .yaml. If you do that, then you can skip this entire section and check [the result](archivexl-adding-photo-mode-poses.md#the-result).
+You can use [this tool](https://wolv-photomode-tools.netlify.app/) by @wolv to autogenerate your .yaml. If you do that, then you can skip this entire section and check [the result](./#the-result).
 
 As of Dec 17 2024, the tool is not yet up-to-date with 2.2!
 {% endhint %}
@@ -222,7 +222,7 @@ I recommend doing search and replace on `netrunner_making_poses`, because it's u
 * `PhotoModePoseCategories.netrunner_making_poses`: This is the name of the category, used to assign individual pose entries to your category.
 * `displayName:` This must match the `secondaryKey` in your .json
 
-<figure><img src="../../../.gitbook/assets/archivexl_photomode_yaml_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/archivexl_photomode_yaml_1.png" alt=""><figcaption></figcaption></figure>
 
 #### Define the pose entries
 
@@ -232,14 +232,14 @@ If one of your poses is called `idle_stand`, that will break a bunch of other mo
 
 Now comes a long list of entries. They'll look like this:
 
-<figure><img src="../../../.gitbook/assets/archivexl_photomode_yaml_2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/archivexl_photomode_yaml_2.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
 You need to add one of those for every pose from your .anim file that you want to show up in photo mode.
 {% endhint %}
 
 `PhotoModePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon`: This is the unique key to assign your pose to your pose set. You'll need it in the third block.\
-`animationName`: This must match the animation name in your [.anim file](archivexl-adding-photo-mode-poses.md#the-.anim-file-s) (the green box).\
+`animationName`: This must match the animation name in your [.anim file](./#the-.anim-file-s) (the green box).\
 `category`: This must match the category in the first block.\
 `displayName`: What'll show up in photo mode
 
@@ -305,7 +305,7 @@ Characters with `*AddPoses` will use the poses defined under `&AddPoses`. If you
 
 An entry without YAML anchors, where poses are manually appended to each character, looks like this:
 
-<figure><img src="../../../.gitbook/assets/archivexl_photomode_yaml_3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/archivexl_photomode_yaml_3.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 The entries in the list **must** match the unique keys that you've defined in the second block, and you need one entry per pose.&#x20;
@@ -317,7 +317,7 @@ If you have different names for differently-gendered poses, you need to use the 
 
 Before you can share your pose pack, you need to **change the paths**. If you don't and the next modder **also** doesn't, then only one of your mods will work.
 
-You can find a full guide on changing the paths [here](../../items-equipment/moving-and-renaming-in-existing-projects.md).
+You can find a full guide on changing the paths [here](../../../items-equipment/moving-and-renaming-in-existing-projects.md).
 
 If you rename files or folders under resources, remember to delete the old control files from your game directory.
 
@@ -350,7 +350,7 @@ It is possible to have certain props spawned automatically. **However, this feat
 In your .yaml file (`r6/tweaks/your_beautiful_name/your_cool_new_pose_pack.yaml`), add the `acceptedWeaponConfig` attribute.
 
 {% hint style="info" %}
-Find a list of the potential entries under [poses-animations.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md "mention") ->[#acceptedweaponconfig](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md#acceptedweaponconfig "mention")
+Find a list of the potential entries under [poses-animations.md](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md "mention") ->[#acceptedweaponconfig](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md#acceptedweaponconfig "mention")
 {% endhint %}
 
 <figure><img src="https://i.imgur.com/QHdVuNb.png" alt=""><figcaption><p>I'm using KNIFE as example</p></figcaption></figure>
@@ -367,5 +367,5 @@ You can limit the availability of poses by setting a `poseStateConfig`.  For exa
 </strong></code></pre>
 
 {% hint style="info" %}
-Find a list of the potential entries under [poses-animations.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md "mention") -> [#posestateconfig](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md#posestateconfig "mention")
+Find a list of the potential entries under [poses-animations.md](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md "mention") -> [#posestateconfig](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md#posestateconfig "mention")
 {% endhint %}

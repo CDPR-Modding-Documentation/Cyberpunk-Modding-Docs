@@ -11,7 +11,7 @@ description: Cheat Sheets for poses and animations
 
 ## AcceptedWeaponConfig
 
-You can use this to spawn [poses with props](../../../modding-guides/animations/animations/archivexl-adding-photo-mode-poses.md#spawning-props-with-the-pose).
+You can use this to spawn [poses with props](../../../modding-guides/animations/animations/archivexl-adding-photo-mode-poses/#spawning-props-with-the-pose).
 
 ```
 POSE_WEAPON_ASSAULTRIFLE
@@ -40,7 +40,7 @@ POSE_WEAPON_FISTS
 
 ## poseStateConfig
 
-You can use this to [limit pose availability](../../../modding-guides/animations/animations/archivexl-adding-photo-mode-poses.md#pose-conditions-optional).
+You can use this to [limit pose availability](../../../modding-guides/animations/animations/archivexl-adding-photo-mode-poses/#pose-conditions-optional).
 
 {% hint style="warning" %}
 Adding a `poseStateConfig` will cause your pose to be **hidden** in other circumstances. This might confuse users and lead to bug reports, so use it sparingly.

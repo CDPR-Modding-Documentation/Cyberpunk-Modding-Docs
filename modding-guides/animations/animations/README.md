@@ -13,7 +13,7 @@ For individual guides, please check the sub-pages in the navigation tree or use 
 
 
 {% hint style="info" %}
-For a video on how to edit poses with Redmod, see [here](https://www.youtube.com/watch?v=m5IL\_TRwTew\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=3) (official video guides).
+For a video on how to edit poses with Redmod, see [here](https://www.youtube.com/watch?v=m5IL_TRwTew\&list=PL4dX1IHww9p3XvIEnKIP9q1eJXlIvYkd3\&index=3) (official video guides).
 {% endhint %}
 
 [poses-animations-make-your-own](poses-animations-make-your-own/ "mention")&#x20;
@@ -26,7 +26,7 @@ You can use the same process to make photo mode replacers or create animations w
 
 This walks you through the process of hooking an existing `.anims` file up with AppearanceMenuMod.
 
-[archivexl-adding-photo-mode-poses.md](archivexl-adding-photo-mode-poses.md "mention")&#x20;
+[archivexl-adding-photo-mode-poses](archivexl-adding-photo-mode-poses/ "mention")&#x20;
 
 How to add standalone poses to photo mode (rather than making replacers)&#x20;
 

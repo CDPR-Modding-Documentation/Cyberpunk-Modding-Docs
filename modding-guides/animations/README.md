@@ -14,7 +14,7 @@ If you want to look up what is where, please refer to the [Cheat Sheet](../../fo
 
 An animation is a collection of **static poses** played as a sequence.&#x20;
 
-If you want to **make** poses (replacer, [photo mode](animations/archivexl-adding-photo-mode-poses.md) or [AMM](animations/amm-collab-anims-poses.md)) instead, see  the next page: Creating Animations - Poses for V & NPCs.
+If you want to **make** poses (replacer, [photo mode](animations/archivexl-adding-photo-mode-poses/) or [AMM](animations/amm-collab-anims-poses.md)) instead, see  the next page: Creating Animations - Poses for V & NPCs.
 
 ## What is a rig?
 
@@ -30,7 +30,7 @@ For a list of rigs by path, see the [cheat sheet](../../for-mod-creators-theory/
 
 ### Body
 
-You can find body animation sets with the following [Wolvenkit search query](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
+You can find body animation sets with the following [Wolvenkit search query](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
 
 ```
 base\animations > locomotion > .anims
@@ -54,17 +54,13 @@ base\animations\facial > .anims
 
 They are referenced from an entAnimationSetupExtensionComponent inside the .app file, and also in the .ent files, which point to the associated animation graphs:
 
-![](../../.gitbook/assets/animations\_app\_facial\_animsetup.png)
+![](../../.gitbook/assets/animations_app_facial_animsetup.png)
 
 ## Animation Events
 
 Every individual animation in an .anims file has an Events subsection which often contains associated sound effects, visual effects, etc. The exact frame in which they play can be configured:
 
-<div align="left" data-full-width="false">
-
-<figure><img src="../../.gitbook/assets/AnimationEvents.png" alt="Image showing the Events section inside dot anims files, highlighting the anim Anim Event Sound handle and the sub parameters event name and start frame" width="563"><figcaption><p>Source file: ma_gang_unarmed_reaction_death.anims</p></figcaption></figure>
-
-</div>
+<div align="left" data-full-width="false"><figure><img src="../../.gitbook/assets/AnimationEvents.png" alt="Image showing the Events section inside dot anims files, highlighting the anim Anim Event Sound handle and the sub parameters event name and start frame" width="563"><figcaption><p>Source file: ma_gang_unarmed_reaction_death.anims</p></figcaption></figure></div>
 
 ## Animation Graphs
 
@@ -72,11 +68,7 @@ Currently browsable only in collapsible list form, .animgraph files contain the 
 
 Animation graphs are also used to determine the physics behaviors of dangling objects (usually these graphs have the word "dangle" in their filename) or of moving parts that are separated from their main object, such as the parts of a car when it explodes.
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/Animgraph.png" alt="A screenshot showing a snippet from the file humanoid dot animgraph and its first twenty animation nodes" width="563"><figcaption><p>The beginning of the humanoid.animgraph file</p></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/Animgraph.png" alt="A screenshot showing a snippet from the file humanoid dot animgraph and its first twenty animation nodes" width="563"><figcaption><p>The beginning of the humanoid.animgraph file</p></figcaption></figure></div>
 
 It is currently difficult to navigate the animation graphs. As of this writing, WolvenKit's graph editor is not yet available for this kind of file format. In the available list form, every node can be uncollapsed into more linked sub-nodes, all of which are duplicates of nodes on the main list. You can make navigation easier by numbering relevant nodes using the **debugName** field. Every duplicate of the same node will contain the text you write in that field, no matter how far down into a node tree you go:
 

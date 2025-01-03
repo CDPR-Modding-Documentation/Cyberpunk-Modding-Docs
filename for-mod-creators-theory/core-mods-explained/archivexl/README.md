@@ -17,7 +17,7 @@ As suggested by psiberx, the general usage documentation for ArchiveXL will be k
 ArchiveXL ([nexus](https://www.nexusmods.com/cyberpunk2077/mods/4198) | [github](https://github.com/psiberx/cp2077-archive-xl/)) is one of the [core frameworks](../) of Cyberpunk 2077 modding. Together with **TweakXL**, It allows you to add things to the game, such as
 
 * [equipment](../../../modding-guides/items-equipment/adding-new-items/) and [weapons](../../../modding-guides/items-equipment/adding-new-items/weapons/)
-* [photo mode poses](../../../modding-guides/animations/animations/archivexl-adding-photo-mode-poses.md)
+* [photo mode poses](../../../modding-guides/animations/animations/archivexl-adding-photo-mode-poses/)
 * world sectors ([deletions](../../../modding-guides/world-editing/world-editing-deleting-objects.md) and additions)
 * custom lipsync maps
 * Translations (check [#how-does-the-game-assign-display-names](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#how-does-the-game-assign-display-names "mention")for a guide)

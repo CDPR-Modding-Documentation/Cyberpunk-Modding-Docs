@@ -11,7 +11,7 @@ description: Make your own pose, then import it into photo mode
 
 This guide will teach you how to **create a custom pose** in Blender and import it into the game via **Wolvenkit**.&#x20;
 
-Since this guide is about creating and imported custom poses, we will make a **photo mode replacer**. To convert it to a standalone pose pack, follow the guide for either  [Photo Mode](../archivexl-adding-photo-mode-poses.md) or [Appearance Menu Mod](../amm-collab-anims-poses.md).&#x20;
+Since this guide is about creating and imported custom poses, we will make a **photo mode replacer**. To convert it to a standalone pose pack, follow the guide for either  [Photo Mode](../archivexl-adding-photo-mode-poses/) or [Appearance Menu Mod](../amm-collab-anims-poses.md).&#x20;
 
 {% hint style="warning" %}
 If you have never done this before, don't do both at once. Or... do whatever, but it might result in unnecessary frustration.

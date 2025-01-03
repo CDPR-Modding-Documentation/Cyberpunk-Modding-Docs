@@ -22,12 +22,12 @@ The guide below will teach you how to make preview icons. While it's a technical
 ### Wait, this is not what I want!
 
 * If you want to have gendered preview icons, check [here](gendered-preview-icons.md).
-* For a script to generate inkatlas files, check [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate\_inkatlas.py)
+* For a script to generate inkatlas files, check [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate_inkatlas.py)
 * To learn more about the files involved, check [game-icons-the-inkatlas-file.md](../../../for-mod-creators-theory/files-and-what-they-do/game-icons-the-inkatlas-file.md "mention")
 
 ## The required files
 
-If you downloaded the example project ([#getting-the-files](../../animations/animations/archivexl-adding-photo-mode-poses.md#getting-the-files "mention")), the preview is already hooked up. Otherwise,[ download ](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/\_resources\_and\_assets/icons)the template archive for your kind of template (kindly provided by Apart).
+If you downloaded the example project ([#getting-the-files](../../animations/animations/archivexl-adding-photo-mode-poses/#getting-the-files "mention")), the preview is already hooked up. Otherwise,[ download ](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/_resources_and_assets/icons)the template archive for your kind of template (kindly provided by Apart).
 
 ### Go away with your examples, I'll do everything by hand!
 
@@ -195,15 +195,15 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 10. Once you're done with that, select each layer and its Adjustment Layers, right click them, and select "Convert to Smart Object".
 11. Give each layer a meaningful name and save your image as a `.psd`.
 
-| Adjustment Layers                                                              | Converted to Smart Objects                                                 |
-| ------------------------------------------------------------------------------ | -------------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/icon\_tutorial\_07\_adjustment\_layers (1).png>) | ![](<../../../.gitbook/assets/icon\_tutorial\_08\_smart\_objects (1).png>) |
+| Adjustment Layers                                                          | Converted to Smart Objects                                             |
+| -------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| ![](<../../../.gitbook/assets/icon_tutorial_07_adjustment_layers (1).png>) | ![](<../../../.gitbook/assets/icon_tutorial_08_smart_objects (1).png>) |
 
 
 
 #### Creating The Actual Icon
 
-1. Open [this](../../../.gitbook/assets/item\_icons.psd) `.psd` and import the Smart Objects of your icons into it. The `.psd` is based on the `preview_icons.xbm` found in [manavortex](https://www.nexusmods.com/cyberpunk2077/users/1630319)'s [Archive XL item additions and guide](https://www.nexusmods.com/cyberpunk2077/mods/8268) and can be easily used with projects based on the [guide](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items).
+1. Open [this](../../../.gitbook/assets/item_icons.psd) `.psd` and import the Smart Objects of your icons into it. The `.psd` is based on the `preview_icons.xbm` found in [manavortex](https://www.nexusmods.com/cyberpunk2077/users/1630319)'s [Archive XL item additions and guide](https://www.nexusmods.com/cyberpunk2077/mods/8268) and can be easily used with projects based on the [guide](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items).
 2. With all layers selected in Photoshop, transform them so that the longest side is 158px.
 3. Align each item to the centre of each grey square.
 4. Hide all other layers except your icons.
@@ -259,7 +259,7 @@ Items.my_custom_shirt_redwhite:
     atlasPartName: slot_01
 ```
 
-Please refer to the [ArchiveXL guide](../../animations/animations/archivexl-adding-photo-mode-poses.md) for an explanation of the other properties, as this page will only hold information about preview icons.
+Please refer to the [ArchiveXL guide](../../animations/animations/archivexl-adding-photo-mode-poses/) for an explanation of the other properties, as this page will only hold information about preview icons.
 
 * `atlasResourcePath`: relative path to your .inkatlas file
 * `atlasPartName`: slot name in your .inkatlas file (which you can see in the `PartsMapping` tab)
