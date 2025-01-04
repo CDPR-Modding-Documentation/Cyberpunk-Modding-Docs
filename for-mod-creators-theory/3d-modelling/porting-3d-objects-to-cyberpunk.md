@@ -17,11 +17,9 @@ If you'd like to watch a video about the whole process, feel free to address the
 
 You can find other relevant guides scattered across this wiki, for example
 
-[adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention")
-
-[custom-props](../../modding-guides/everything-else/custom-props/ "mention")
-
-[textured-items-and-cyberpunk-materials.md](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
+* [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention")
+* [custom-props](../../modding-guides/everything-else/custom-props/ "mention")
+* [textured-items-and-cyberpunk-materials.md](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
 
 ## Prerequisites
 

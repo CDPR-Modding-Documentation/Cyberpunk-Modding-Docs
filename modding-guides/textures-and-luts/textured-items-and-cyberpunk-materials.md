@@ -21,6 +21,7 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
   * If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
   * For a guide about changing materials, check [changing-materials-colors-and-textures](../items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
     * If you just want to use a textured material, check [using-a-textured-material.md](../items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention")
+* If you want to dig deeper into [multilayered](../../for-mod-creators-theory/materials/multilayered/ "mention"), check our guide for [custom-multilayermasks.md](custom-multilayermasks.md "mention")
 * Find a look-up list of cool materials under [cheat-sheet-materials.md](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md "mention")
 * For a more detailed guide about prop creation, check [custom-props](../everything-else/custom-props/ "mention")
 * Or maybe you wonder  [#where-to-find-models](../everything-else/custom-props/#where-to-find-models "mention")

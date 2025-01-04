@@ -44,6 +44,10 @@ _The guide was created after reading_ [_this one_](https://drive.google.com/file
 * If you want to convert a mod to dynamic appearances, check the [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention")
 * If you want to use dynamic appearances out of the box, check [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention") (this is the preferred approach as soon as you're creating different options).
 
+#### Or maybe for something completely different?
+
+* To learn about Cyberpunk's material pipelines, check out[textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
+
 ## Step 0: Grab the example files
 
 * Create a new Wolvenkit project
