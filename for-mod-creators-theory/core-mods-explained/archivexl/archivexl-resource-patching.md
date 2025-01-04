@@ -95,8 +95,9 @@ Some things are scattered across multiple files — for example, there are diffe
 
 * the [player ent](https://github.com/psiberx/cp2077-archive-xl/blob/main/data/PlayerBaseScope.xl)
 * [player customization (e.g. appearances)](https://github.com/psiberx/cp2077-archive-xl/blob/main/data/PlayerCustomizationScope.xl)
+* [photomode .ent files](https://github.com/psiberx/cp2077-archive-xl/blob/main/archive/source/resources/PhotoModeScope.xl)
 
-Use them like this:
+### Including scopes:
 
 ```yaml
 resource:
@@ -106,6 +107,15 @@ resource:
 ```
 
 This will _include_ all the needed files for patching without the need to specify each of them manually.
+
+### Adding entries to scopes:
+
+```yaml
+photo_mode.character.altPoses: *AddPosesF
+```
+
+This will add the list `&AddPosesF` to the list of `photo_mode.character.altPoses`.\
+Photo mode scopes were added in version 1.19
 
 ### Expanding scopes
 

@@ -7,7 +7,7 @@ description: How to update pose packs for Patch 2.2. and ArchiveXL 1.19
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published**: January 3 **by @nutboy**\
-**Last documented update:** January 3 2025 **by @nutboy**
+**Last documented update:** January 4 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page is for both modders AND mod users who made or installed pose packs before patch 2.2 released, and want pose packs to be compatible with:
 
@@ -16,7 +16,9 @@ This page is for both modders AND mod users who made or installed pose packs bef
 
 Luckily you only need to edit the `.yaml` and the `.xl` file!&#x20;
 
-Use **scripts** to update every single pose pack in your mod folders, or update each pose pack **manually**.&#x20;
+You can use [python scripts](updating-photomode-pose-packs-for-2.2.md#by-python-script) to update all pose packs in your mod folders, or update each pose pack [by hand](updating-photomode-pose-packs-for-2.2.md#by-hand).
+
+## By python script
 
 {% hint style="danger" %}
 MAKE A BACKUP OF YOUR MOD FILES.&#x20;
@@ -27,17 +29,16 @@ Tip: The quick and dirty way I do this is by selecting the files or folder I wan
 If I mess up, I unzip the backup file and overwrite the files in my mod folders.&#x20;
 {% endhint %}
 
-## How to update all installed pose packs with Python scripts:
+1. **Download** these two Python Scripts from GitHub using the download button ⬇ on the far right. \
+   Save them somewhere in your computer. (I have a dedicated folder for Python scripts now)&#x20;
+   1. [**Convert Photomode XL files**](https://github.com/nut-boy/CyberpunkScripts/blob/main/convert_xl_for_photomodeNPV.py)
+   2. [**Convert Photomode YAML files**](https://github.com/nut-boy/CyberpunkScripts/blob/main/convert_yaml_for_photomodeNPV.py)
 
 {% hint style="warning" %}
 DO NOT RUN THE SCRIPTS MORE THAN ONCE ON YOUR MOD FOLDERS. \
 This will add the scope and poses multiple times and potentially create issues. If you think you made a mistake, restore your yamls and your xls from your backup before following these steps again.
 {% endhint %}
 
-1. **Download** these two Python Scripts from GitHub using the download button ⬇ on the far right. \
-   Save them somewhere in your computer. (I have a dedicated folder for Python scripts now)&#x20;
-   1. [**Convert Photomode XL files**](https://github.com/nut-boy/CyberpunkScripts/blob/main/convert_xl_for_photomodeNPV.py)
-   2. [**Convert Photomode YAML files**](https://github.com/nut-boy/CyberpunkScripts/blob/main/convert_yaml_for_photomodeNPV.py)
 2. [Follow the wiki guide for running Python scripts if this is your first time.](../../../../for-mod-creators/modding-guides/everything-else/running-python-scripts.md) Setup is fast and easy.
 3. **First we'll process the .xl files.** \
    Open the folder containing your Python scripts in one window, and your `archive/pc/mods` folder in another window.
@@ -60,124 +61,52 @@ This will add the scope and poses multiple times and potentially create issues. 
 12. It will process all your .yaml files and add the necessary characters to them. Your .yamls are done!&#x20;
 13. Open your game, look for any broken pose packs. If they don't work correctly in new Photomode even after using the scripts, it's likely there was an issue in the formatting of the original mod file. You can check over the pose pack's yaml/xl for errors yourself (if you feel comfortable doing this) or ask the modder to revise it.&#x20;
 
-{% hint style="warning" %}
+{% hint style="info" %}
 **I**f you're a modder who makes pose packs, you can also use these scripts on your mod's packed folder (instead of your installed mods folder) to automate updating for patch 2.2 NPCs & ArchiveXL 1.19 Photomode NPVs.&#x20;
 
 If you already updated your mod for 2.2, please use the scripts on a version of your mod made for 2.13 so it doesn't create duplicates. Read on below for more info.
 {% endhint %}
 
-## How to update individual pose packs manually:
+## By hand
 
-**First, update the .XL file:**
+### Update the .xl file
 
-<details>
-
-<summary>How it works</summary>
-
-With ArchiveXL 1.19, we are using a **scope** rather than an actual entity "file" to assign poses. The photomode [scope](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching.md) contains multiple `.ent` files, including the **player's ent as well as all the new Photomode NPCs' ents.**&#x20;
-
-You can see the full [list of ents contained in the Photomode scope on the ArchiveXL Github.](https://github.com/psiberx/cp2077-archive-xl/blob/main/archive/source/resources/PhotoModeScope.xl)
-
-When creating an NPV for Photomode using AXL, you also register their new Photomode `.ent` to the corresponding scope for their body gender in their .xl file.&#x20;
-
-ArchiveXL automatically merges their .ent into the scope list when you open your game.&#x20;
-
-This eliminates the need to list NPV entities separately in the XL file!&#x20;
-
-</details>
-
-1. Keep the existing entities in your .xl for backwards compatibility with pre-2.2 game versions and Nibbles replacer.
-
-{% hint style="warning" %}
-If you're a modder who already updated your XL to add all the new photomode NPC entities, delete those entries and add the scope only.
+{% hint style="success" %}
+If your XL already includes the new photomode NPC entities, delete those entries and add the scope only.
 {% endhint %}
 
-1. Add a new line under `animations:` and use the following format to register your `.anims` files:
+1. If your file already has entries for the new photo mode poses, **delete** them
+2. Now, go to [.](./ "mention") -> [#the-.xl-file](./#the-.xl-file "mention"), and follow the steps there.
 
-<pre><code>animations:
-  # female body gender - scope includes player + all NPCs + AXL photomode NPV
-<strong>  - entity: photomode_wa.ent
-</strong>    set: your_pwa.anims  
+### Update the .yaml
 
-  # male body gender - scope includes player + all NPCs + AXL photomode NPV
-  - entity: photomode_ma.ent
-    set: your_pma.anims
+If you don't have any of those sections (because your poses are only for one body gender), you can skip that part of the process.
 
-  # male big body gender - scope includes all male big NPCs + male big AXL photomode NPV
-  - entity: photomode_mb.ent
-    set: your_pma.anims
+#### 1. Create a yaml anchor
 
-  # male massive body gender - scope includes Adam Smasher + male massive AXL photomode NPV
-  - entity: photomode_mm.ent
-    set: your_pma.anims
-   
-<strong>  # nibbles - this is for the cat, not the replacer!
-</strong>  - entity: photomode_cat.ent
-    set: your_cat.anims
-</code></pre>
+Find the line `photo_mode.character.femalePoses:`  and change it:
 
-Do not just copy and paste this entire  directly. You need to fill out your `set:` sections with the paths to the appropriate `.anims` files. See the [.xl file section of this tutorial for more info](updating-photomode-pose-packs-for-2.2.md#the-.xl-file) on how to do this.
+```yaml
+#before
+photo_mode.character.femalePoses:
+#after
+photo_mode.character.femalePoses: &AddPosesF
+```
 
-3. **Save your .xl file.** The .xl is now updated to support vanilla Photomode NPC and Photomode NPV!
+Find the line `photo_mode.character.malePoses:`  and change it:
 
-{% hint style="danger" %}
-Adding a scope to your pose pack .xl  is **required** for Photomode NPV to use modded poses. \
-\
-If you do not use this scope in your pose pack .xl, and instead list each 2.2 NPC entity separately, NPVs added to Photomode with ArchiveXL will **not** be able to use your poses.\
-\
-If you already added NPC entities to your pose pack for 2.2, delete them and replace them with the scope.
+```yaml
+#before
+photo_mode.character.malePoses:
+#after
+photo_mode.character.femalePoses: &AddPosesM
+```
+
+#### **2. Update NPC poses**
+
+1. If your file already has entries for the new photo mode poses, **delete** them
+2. Now, go to [.](./ "mention") -> [#the-.yaml-file](./#the-.yaml-file "mention") -> [#id-3.-telling-photo-mode-about-the-poses](./#id-3.-telling-photo-mode-about-the-poses "mention"), and follow the steps there.
+
+{% hint style="success" %}
+You're done! **You can now use your pose pack with Photomode NPCs & AXL Photomode NPV.**&#x20;
 {% endhint %}
-
-**Next, we update the .yaml:**&#x20;
-
-1. **For female body poses:** \
-   **C**hange `photo_mode.character.malePoses:` to include `&AddPosesF`\
-   The new line should read: `photo_mode.character.femalePoses: &AddPosesF`\
-   \
-   **For male body poses:** \
-   Change `photo_mode.character.malePoses:` to include `&AddPosesM`\
-   The new line should read: `photo_mode.character.malePoses: &AddPosesM` \
-   &#x20;
-2.  **For female body poses:** \
-    Copy and paste everything from the below template into your yaml.&#x20;
-
-    ```
-
-
-    photo_mode.character.altPoses: *AddPosesF
-    photo_mode.character.bluemoonPoses: *AddPosesF
-    photo_mode.character.evelynPoses: *AddPosesF
-    photo_mode.character.hanakoPoses: *AddPosesF
-    photo_mode.character.judyPoses: *AddPosesF
-    photo_mode.character.lizzyPoses: *AddPosesF
-    photo_mode.character.meredithPoses: *AddPosesF
-    photo_mode.character.panamPoses: *AddPosesF
-    photo_mode.character.purpleforcePoses: *AddPosesF
-    photo_mode.character.redmenacePoses: *AddPosesF
-    photo_mode.character.rogueoldPoses: *AddPosesF
-    photo_mode.character.rogueyoungPoses: *AddPosesF
-    photo_mode.character.songbirdPoses: *AddPosesF
-    photo_mode.character.myersPoses: *AddPosesF
-    ```
-
-    \
-    **For male body poses:** \
-    Copy and paste everything from the below template into your yaml.
-
-    ```
-
-
-    photo_mode.character.adamPoses: *AddPosesM
-    photo_mode.character.altjohnnyPoses: *AddPosesM
-    photo_mode.character.johnnyPoses: *AddPosesM
-    photo_mode.character.goroPoses: *AddPosesM
-    photo_mode.character.jackiePoses: *AddPosesM
-    photo_mode.character.kerryPoses: *AddPosesM
-    photo_mode.character.riverPoses: *AddPosesM
-    photo_mode.character.viktorPoses: *AddPosesM
-    photo_mode.character.kurtPoses: *AddPosesM
-    photo_mode.character.reedPoses: *AddPosesM
-    ```
-3. **Save your yaml.** You can copy and paste everything into an online YAML validator such as [Yamllint](https://www.yamllint.com/) to check your work.\
-   \
-   You're done! **You can now use your pose pack with Photomode NPCs & AXL Photomode NPV.**&#x20;
