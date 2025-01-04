@@ -8,7 +8,7 @@ Last documented edit: Oct 15 2024 by [manavortex](https://app.gitbook.com/u/NfZB
 This guide is part of [.](./ "mention") and covers the material part of it.
 
 {% hint style="info" %}
-By default, cars use the [multilayered shader](../../../for-mod-creators-theory/materials/multilayered/). You can find guides about editing multilayered material linked at the top of the documenation page.
+By default, cars use the [multilayered shader](../../../for-mod-creators-theory/materials/multilayered/). You can find guides about editing multilayered material linked at the top of the documenation page that may help you if you get stuck.
 {% endhint %}
 
 ### Wait, this is not what I want!
@@ -162,15 +162,7 @@ First, you can verify the color in  . Copy the “`n`” value here, and paste i
 
 Select the color, and it’s rgb values should match the values in the “`v`” `colorScale` in the `.mltemplate`:
 
-<div>
-
-<figure><img src="../../../.gitbook/assets/image31.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/image138.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../../.gitbook/assets/image31.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image138.png" alt=""><figcaption></figcaption></figure></div>
 
 Edit the 0,1,2 (R,G,B) values to the color values needed and save. Make sure to save the .mlsetup as well with the layer set to the same color code as before.(“n” value, \[00cf56\_69039f])
 
@@ -184,15 +176,7 @@ To have multiple materials in a single .mesh file, the .glb export requires sepa
 
 First separate/split your meshes into small components, and then join them into groups:
 
-<div>
-
-<figure><img src="../../../.gitbook/assets/image48.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/image83.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../../.gitbook/assets/image48.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image83.png" alt=""><figcaption></figcaption></figure></div>
 
 For example, mine are grouped by body paint, silver trim, reflective black, matte black, and grey fabric. Take note, the order in your blender selection will be the order each submesh is called by the `.mesh` file settings. This order is important.
 
@@ -202,15 +186,7 @@ With all the objects selected in blender, export it to `.glb` and import it as y
 
 You can save and test. If it worked properly, only the first object included in the blender export will render properly at the moment.
 
-<div>
-
-<figure><img src="../../../.gitbook/assets/image6 (2).png" alt=""><figcaption><p>Corrected</p></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/image96.png" alt=""><figcaption><p>Broken</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../../../.gitbook/assets/image6 (2).png" alt=""><figcaption><p>Corrected</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/image96.png" alt=""><figcaption><p>Broken</p></figcaption></figure></div>
 
 Example of a finished body mesh in blender:
 
@@ -271,19 +247,7 @@ To fix this, duplicate the appropriate items, similar to before, once for each n
 
 You can tell if the materials are correct by opening them, and looking into the “`values`” array. Each will have similar `keyValuePairs` related to the material type. `Glass` mentions `GlassSpecular`, normal paint has many map layers, stickers dont have much, etc:
 
-<div>
-
-<figure><img src="../../../.gitbook/assets/image27 (1).png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/image123.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/image146.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../../.gitbook/assets/image27 (1).png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image123.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image146.png" alt=""><figcaption></figcaption></figure></div>
 
 For each new material layer, update the paths:
 
@@ -304,15 +268,7 @@ Submeshes should now load in order with matched materials.
 
 Editing UV maps may be necessary for some meshes if they do not display correctly, or for custom editing. Broken & Fixed UV map example:
 
-<div>
-
-<figure><img src="../../../.gitbook/assets/image59.png" alt=""><figcaption><p>Broken</p></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/image26.png" alt=""><figcaption><p>Fixed</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../../../.gitbook/assets/image59.png" alt=""><figcaption><p>Broken</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/image26.png" alt=""><figcaption><p>Fixed</p></figcaption></figure></div>
 
 To edit UV maps in **blender**, select your object to modify and enter the **UV Editing** workspace:
 
@@ -324,15 +280,7 @@ The current UV map should display on the left:
 
 In the right window in **Edit Mode**, select all vertices (“**a**” key in blender), and hit “**U**” for the UV mapping dialog. Select “**Smart UV Project**”, and hit **OK**:
 
-<div>
-
-<figure><img src="../../../.gitbook/assets/image112.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/image104.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../../.gitbook/assets/image112.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image104.png" alt=""><figcaption></figcaption></figure></div>
 
 This should update the UV mapping to an even spread map:
 

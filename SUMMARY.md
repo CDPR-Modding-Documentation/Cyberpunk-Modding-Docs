@@ -296,7 +296,7 @@
   * [Flat Chest Detector: Dynamic Binder - Guide by PinkyDude](https://docs.google.com/document/d/1C3H_UldaYEAuz8t5P06xf7HjfChjF8VNfTOtybDylgE/edit?usp=sharing)
 * [🌈 Textures, LUTs and Materials](modding-guides/textures-and-luts/README.md)
   * [Textures: Importing, editing, exporting](modding-guides/textures-and-luts/images-importing-editing-exporting.md)
-  * [Textures: Custom MultilayerMask](modding-guides/textures-and-luts/custom-multilayermasks.md)
+  * [Textures: Custom .mlmask](modding-guides/textures-and-luts/custom-multilayermasks.md)
   * [ArchiveXL: dynamic materials](modding-guides/textures-and-luts/archivexl-dynamic-materials.md)
   * [Self-made normal maps](modding-guides/textures-and-luts/self-made-normal-maps/README.md)
     * [Troubleshooting normal maps](modding-guides/textures-and-luts/self-made-normal-maps/troubleshooting-normal-maps.md)

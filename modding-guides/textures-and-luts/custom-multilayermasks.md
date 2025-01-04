@@ -2,7 +2,7 @@
 description: How to make a custom MultilayerMask for your mesh
 ---
 
-# Textures: Custom MultilayerMask
+# Textures: Custom .mlmask
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -14,7 +14,8 @@ Difficulty: You know how to read.
 
 {% hint style="info" %}
 To find out what an MLMask does, see [here](../../for-mod-creators-theory/materials/multilayered/#what-is-the-mlmask). \
-To learn about MLSetups, see [here](../../for-mod-creators-theory/materials/multilayered/#what-is-the-mlsetup).
+To learn about MLSetups, see [here](../../for-mod-creators-theory/materials/multilayered/#what-is-the-mlsetup).\
+To learn about [multilayered](../../for-mod-creators-theory/materials/multilayered/ "mention"), check the corresponding page.
 {% endhint %}
 
 ## Export the MultilayerMask
