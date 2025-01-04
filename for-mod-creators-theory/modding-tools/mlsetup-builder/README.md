@@ -49,7 +49,7 @@ For integration with Wolvenkit, install MLSB as a plugin:&#x20;
 If the above doesn't work for you, you can install MLSB by hand:
 
 1. download the latest release from [Neurolinked's github ](https://github.com/Neurolinked/MlsetupBuilder/releases)
-2. extract the downloaded zip to the following subfolder in your Cyberpunk game directory:\
+2. extract the downloaded zip to the following subfolder in your [Cyberpunk game directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/) (create it if it doesn't exist):  \
    `Cyberpunk 2077\tools\neurolinked\mlsetupbuilder`
 3. The directory should now have a folder called `MLsetupBuilder-VERSION` that contains (among other things) the file `MLSetupBuilder.exe`
 4. The total path should look like this:\
