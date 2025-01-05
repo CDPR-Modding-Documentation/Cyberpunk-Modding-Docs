@@ -485,6 +485,10 @@ Other mods that do the same thing, but in a compatible way, are [Panam Romance E
 
 This mod adds furry, animal-like NPCs to the game and optionally replaces main characters. While lore accurate to a point, the mod is made in the same way as PMO and therefore breaks quests in 2.1 and later.
 
+#### [Eye Adaptation Auto Exposure Fix - Vanilla Native Weather Option - Complete Overhaul - No More Blinding Lighting and Slower Bloom Gamma Changes - Optional SHARPENING OFF and VIGNETTE OFF](https://www.nexusmods.com/cyberpunk2077/mods/2375)
+
+This mod hasn't been updated since v1.63, and the game has made significant breaking changes that cause this mod to crash to desktop (CTD).
+
 ### spawn0
 
 Most famous for edits of the female body that defy gravity and wreak havoc on V's spinal disks, this modder has been around since the early days, and the same is true for their mods.&#x20;
