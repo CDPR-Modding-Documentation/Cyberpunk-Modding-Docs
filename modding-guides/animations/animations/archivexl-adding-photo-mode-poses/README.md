@@ -13,6 +13,10 @@ This guide will walk you through **adding poses** to Cyberpunk 2077's photo mode
 
 **Difficulty:** You know how to read ;)
 
+{% hint style="warning" %}
+[Easy Photomode Poses](https://www.nexusmods.com/cyberpunk2077/mods/18719) by wolv will do all this automatically and is up-to-date with 2.2! You can skip a bunch of reading and just use the required tool
+{% endhint %}
+
 ### Wait, this is not what I want!
 
 * To make poses from scratch, check [poses-animations-make-your-own](../poses-animations-make-your-own/ "mention")
@@ -27,14 +31,6 @@ We will hook up an existing `.anims` file to photo mode. If you don't have one, 
 * Cyberpunk 2077 2.2
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.15.0
 * [Notepad++](https://notepad-plus-plus.org/downloads/) (you can use any text editor, but N++ is recommended)
-
-{% hint style="info" %}
-You do not need any pose mode extender like PMU or MPAF anymore, and they are currently (Dec 17 2024) not compatible with 2.2
-{% endhint %}
-
-{% hint style="success" %}
-Check out [this tool](https://wolv-photomode-tools.netlify.app/) by @wolv, it will generate yaml files for you. It is currently (Dec 17 2024) not compatible with 2.2.
-{% endhint %}
 
 ## Getting the files
 
