@@ -193,18 +193,18 @@ At the current time (09/2023, before PL), that has been confirmed to affect thos
 6. Copy the following commands and run them in the CET-Console:
 
 ```
-Game.SetDebugFact("bls_ina_se1_ripperdoc_01_default_on", 0)
-Game.SetDebugFact("cct_dtn_ripdoc_01_default_on", 0)
-Game.SetDebugFact("hey_spr_ripperdoc_01_default_on", 0)
-Game.SetDebugFact("pac_wwd_ripdoc_01_default_on", 0)
-Game.SetDebugFact("std_arr_ripperdoc_01_default_on", 0)
-Game.SetDebugFact("std_rcr_ripperdoc_01_default_on", 0)
-Game.SetDebugFact("wat_kab_ripperdoc_01_default_on", 0)
-Game.SetDebugFact("wat_kab_ripperdoc_03_default_on", 0)
-Game.SetDebugFact("wat_nid_ripperdoc_01_default_on", 0)
-Game.SetDebugFact("wbr_hil_ripdoc_01_default_on", 0)
-Game.SetDebugFact("wbr_jpn_ripdoc_01_default_on", 0)
-Game.SetDebugFact("wbr_jpn_ripdoc_02_default_on", 0)
+Game.GetQuestsSystem():SetFactStr("bls_ina_se1_ripperdoc_01_default_on", 0);
+Game.GetQuestsSystem():SetFactStr("cct_dtn_ripdoc_01_default_on", 0);
+Game.GetQuestsSystem():SetFactStr("hey_spr_ripperdoc_01_default_on", 0);
+Game.GetQuestsSystem():SetFactStr("pac_wwd_ripdoc_01_default_on", 0);
+Game.GetQuestsSystem():SetFactStr("std_arr_ripperdoc_01_default_on", 0);
+Game.GetQuestsSystem():SetFactStr("std_rcr_ripperdoc_01_default_on", 0);
+Game.GetQuestsSystem():SetFactStr("wat_kab_ripperdoc_01_default_on", 0);
+Game.GetQuestsSystem():SetFactStr("wat_kab_ripperdoc_03_default_on", 0);
+Game.GetQuestsSystem():SetFactStr("wat_nid_ripperdoc_01_default_on", 0);
+Game.GetQuestsSystem():SetFactStr("wbr_hil_ripdoc_01_default_on", 0);
+Game.GetQuestsSystem():SetFactStr("wbr_jpn_ripdoc_01_default_on", 0);
+Game.GetQuestsSystem():SetFactStr("wbr_jpn_ripdoc_02_default_on", 0);
 ```
 
 7. Save your game in a new slot and close it
@@ -212,18 +212,18 @@ Game.SetDebugFact("wbr_jpn_ripdoc_02_default_on", 0)
 9. Load into your new save and and run the following CET-Commands to restore the rippers' default behaviour:&#x20;
 
 ```
-﻿Game.SetDebugFact("bls_ina_se1_ripperdoc_01_default_on", 1); 
-Game.SetDebugFact("cct_dtn_ripdoc_01_default_on", 1); 
-Game.SetDebugFact("hey_spr_ripperdoc_01_default_on", 1); 
-Game.SetDebugFact("pac_wwd_ripdoc_01_default_on", 1); 
-Game.SetDebugFact("std_arr_ripperdoc_01_default_on", 1); 
-Game.SetDebugFact("std_rcr_ripperdoc_01_default_on", 1); 
-Game.SetDebugFact("wat_kab_ripperdoc_01_default_on", 1); 
-Game.SetDebugFact("wat_kab_ripperdoc_03_default_on", 1); 
-Game.SetDebugFact("wat_nid_ripperdoc_01_default_on", 1); 
-Game.SetDebugFact("wbr_hil_ripdoc_01_default_on", 1); 
-Game.SetDebugFact("wbr_jpn_ripdoc_01_default_on", 1); 
-Game.SetDebugFact("wbr_jpn_ripdoc_02_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("bls_ina_se1_ripperdoc_01_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("cct_dtn_ripdoc_01_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("hey_spr_ripperdoc_01_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("pac_wwd_ripdoc_01_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("std_arr_ripperdoc_01_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("std_rcr_ripperdoc_01_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("wat_kab_ripperdoc_01_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("wat_kab_ripperdoc_03_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("wat_nid_ripperdoc_01_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("wbr_hil_ripdoc_01_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("wbr_jpn_ripdoc_01_default_on", 1);
+Game.GetQuestsSystem():SetFactStr("wbr_jpn_ripdoc_02_default_on", 1);
 ```
 
 10. Save your game again and remove all mods used in version 1.63
