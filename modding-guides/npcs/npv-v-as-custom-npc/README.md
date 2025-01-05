@@ -14,7 +14,7 @@ This guide will show you how to do the following things:&#x20;
 * Creating your V's head in Blender ([npv-preparing-the-head-in-blender.md](npv-preparing-the-head-in-blender.md "mention"))
 * Customizing their appearance and clothes ([npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention"))
 * Making sure that they are unique so that you can share them ( [npv-cleanup-and-troubleshooting.md](npv-cleanup-and-troubleshooting.md "mention"))
-* Creating a Nibbles replacer preset ( [npv-amm-nibbles-replacer.md](npv-amm-nibbles-replacer.md "mention"))
+* Creating a Photomode NPV ( [npv-amm-nibbles-replacer.md](npv-amm-nibbles-replacer.md "mention"))
 
 ### Wait, this is not what I want!
 

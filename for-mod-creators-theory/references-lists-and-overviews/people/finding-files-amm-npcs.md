@@ -111,7 +111,7 @@ If the NPC was added by a mod, you have to switch to [Mod Browser](https://app.g
 
 ## Reading the [.app file](../../files-and-what-they-do/appearance-.app-files/)
 
-<figure><img src="../../../.gitbook/assets/image (549).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/7 (5).png" alt=""><figcaption></figcaption></figure>
 
 1. In the `appearances` list at the top of the file, find the entry with the name from the .ent file
 2. Expand the appearance's `components` array. These are all of your NPV's parts!

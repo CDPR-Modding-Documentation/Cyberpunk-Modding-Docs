@@ -75,11 +75,13 @@ You can now save your image as a PNG with transparency. If you have exported a t
 
 ## Troubleshooting
 
+### My texture is not transparent!
+
+Check [#editing-a-texture](images-importing-editing-exporting.md#editing-a-texture "mention") and make sure that your texture even _has_ transparency, then make sure that you have the corresponding box checked in the import settings.
+
 ### My texture shows up completely black or completely white
 
 Change `Compression` to `TCM_None`, then reimport
-
-
 
 ### "Must have dimensions in powers of 2"
 

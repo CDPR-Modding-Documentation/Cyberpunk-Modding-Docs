@@ -97,48 +97,12 @@ That's it for the renaming. Time to test!&#x20;
 
 ### The .xl file
 
-This file tells Cyberpunk to load your custom poses. It goes **directly** into your project's `resources` folder.&#x20;
+This file tells Cyberpunk to load your custom poses and will be in the same folder as the .archive file for your mod. It looks like this:
 
-Once installed, it will be in the same folder as the `.archive` file for your mod — so you should name it `your_mod_name.archive.xl`&#x20;
 
-Your file should look like this:
 
 {% tabs %}
 {% tab title="2.2" %}
-<pre class="language-yaml"><code class="lang-yaml"># ##############################################################################
-# your .json file with the pose names
-# ##############################################################################
-localization:
-  onscreens:
-    en-us: tutorial\animations\netrunner_making_poses\localization.json
-
-<strong># ##############################################################################
-</strong># link up the .anims file with the photo mode
-# ##############################################################################
-animations:
-  # female body gender - scope includes player + all NPCs + AXL photomode NPV
-  - entity: photomode_wa.ent
-    set: tutorial\animations\netrunner_making_poses\pwa.anims  
-
-  # male body gender - scope includes player + all NPCs + AXL photomode NPV
-  - entity: photomode_ma.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims  
-
-  # male big body gender - scope includes all male big NPCs + male big AXL photomode NPV
-  - entity: photomode_mb.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-
-  # male massive body gender - scope includes Adam Smasher + male massive AXL photomode NPV
-  - entity: photomode_mm.ent
-    set: tutorial\animations\netrunner_making_poses\pma.anims
-   
-  # nibbles - this is for the cat, not the replacer!
-  - entity: photomode_cat.ent
-    set: tutorial\animations\netrunner_making_poses\cat.anims
-</code></pre>
-{% endtab %}
-
-{% tab title="<= 2.1" %}
 ```yaml
 # ##############################################################################
 # your .json file with the pose names
@@ -148,8 +112,25 @@ localization:
     en-us: tutorial\animations\netrunner_making_poses\localization.json
 
 # ##############################################################################
-# link up the .anims file with AMM Nibbles Replacer
+# link up the .anims file with anything in the photo mode
 # ##############################################################################
+animations:
+  # ##############################################################################
+  # female body gender - scope includes player + all NPCs + NPV with patched .ents
+  # ##############################################################################
+  - entity: player_photomode_wa.ent
+    set: tutorial\animations\netrunner_making_poses\pwa.anims  
+    
+  # ##############################################################################
+  # male body gender - scope includes player + all NPCs + NPV with patched .ents
+  # ##############################################################################
+  - entity: player_photomode_ma.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+```
+{% endtab %}
+
+{% tab title="<= 2.1" %}
+```yaml
 animations:
   - entity: base\characters\entities\player\photo_mode\player_wa_photomode.ent
     set: tutorial\animations\netrunner_making_poses\pwa.anims
@@ -165,49 +146,32 @@ animations:
     set: tutorial\animations\netrunner_making_poses\pwa.anims
   - entity: base\characters\entities\photomode_replacer\photomode_npc_man_average.ent
     set: tutorial\animations\netrunner_making_poses\pwa.anims
+localization:
+  onscreens:
+    en-us: tutorial\animations\netrunner_making_poses\localization.json
 
 ```
+{% endtab %}
+{% endtabs %}
+
+You have to adjust the paths under `set` and `en-us` to your new changed folder structure.
 
 {% hint style="info" %}
 If you want to support more body types from the Nibbles Replacer, you can [switch to the Mod Browser](../../../analysing-other-mods/) and enter the following search query to find all the entities:\
 `base\characters\entities\photomode_replacer > .ent`
 {% endhint %}
-{% endtab %}
-{% endtabs %}
 
-<details>
+Here's what those things do:
 
-<summary>What do these things do?</summary>
-
-* `animations:`&#x20;
-  * `entity:` The relative path to the [**photomode scope**](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching.md#distributed-patching-scopes) for patching. There are five of them in total; you can delete the ones you don't need.
-  * `set:` The relative path to the .anims file in your Wolvenkit project.&#x20;
-* `localization`
-  * `onscreens/en-us:` A file with translation strings. Holds the name of your photo mode pose set.
-
-Photo mode knows about custom NPCs through their own `.xl` file, where you add their `.ent` to their body gender's scope — so you don't have to do anything here!
-
-</details>
-
-{% hint style="warning" %}
-While editing .xl files, make sure to keep the **indent** (the number of spaces at the beginning of the line). If you fuck up, you can use [yamllint](https://www.yamllint.com/) to check.
-{% endhint %}
-
-1. From the `animations` section, d**elete** the blocks that you don't want
-2. Replace `tutorial\animations\netrunner_making_poses\pXa.anims`  with the relative path to your `.anim` file(s) as copied from Wolvenkit's project browser
-3. Replace `tutorial\animations\netrunner_making_poses\localization.json` with the relative path to your `.json` file as copied from Wolvenkit's project browser
-4. **O**_**ptional:** For compatibility with older game versions, copy the code under `animations:` (not the label itself) from the `<= 2.1 page` in the code box above and add it to your file._
-5. **Optional, but recommended:** Run your .xl file through [yamllint](https://www.yamllint.com/) to check for syntax errors.
-6. Save your file.&#x20;
-
-{% hint style="success" %}
-The .xl is now updated to support vanilla Photomode NPC and Photomode NPV!
-{% endhint %}
+`animations:` A list of entities and animation files that you want to add to them\
+`animations/entity:` The relative path to the photomode .ent file. There are just three of them.\
+`animations/set:` The relative path to the .anims file in your Wolvenkit project.\
+`localization/onscreens/en-us:` A file with translation strings. Holds the name of your photo mode pose set.
 
 ### localization.json
 
 {% hint style="info" %}
-You can name this file whatever you want, as long as you update the .xl file!
+You can name this file whatever you want, just make sure that you change the path and name in the .xl file.
 {% endhint %}
 
 * Change the yellow box `UI-Photomode-tutorial-netrunner-making-poses` to something **unique to your mod.**
@@ -243,9 +207,7 @@ As of Dec 17 2024, the tool is not yet up-to-date with 2.2!
 
 The yaml file has three sections:
 
-#### 1. The category
-
-<figure><img src="../../../../.gitbook/assets/archivexl_photomode_yaml_1.png" alt=""><figcaption></figcaption></figure>
+#### Adding the category
 
 The first block will introduce your new category to the photo mode.
 
@@ -254,9 +216,11 @@ I recommend doing search and replace on `netrunner_making_poses`, because it's u
 {% endhint %}
 
 * `PhotoModePoseCategories.netrunner_making_poses`: This is the name of the category, used to assign individual pose entries to your category.
-* `displayName:` This tells Cyberpunk the name of your pose. It must match the `secondaryKey` in your .json
+* `displayName:` This must match the `secondaryKey` in your .json
 
-#### 2. Pose entry definitions
+<figure><img src="../../../../.gitbook/assets/archivexl_photomode_yaml_1.png" alt=""><figcaption></figcaption></figure>
+
+#### Define the pose entries
 
 {% hint style="danger" %}
 If one of your poses is called `idle_stand`, that will break a bunch of other mods. Please re-name it in both the .anims file and the .yaml before releasing.
@@ -267,30 +231,17 @@ Now comes a long list of entries. They'll look like this:
 <figure><img src="../../../../.gitbook/assets/archivexl_photomode_yaml_2.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-You need to add one of those for every pose from your .anim file. Yes, it's a lot of copy-pasting right now!
+You need to add one of those for every pose from your .anim file that you want to show up in photo mode.
 {% endhint %}
 
-<details>
+`PhotoModePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon`: This is the unique key to assign your pose to your pose set. You'll need it in the third block.\
+`animationName`: This must match the animation name in your [.anim file](./#the-.anim-file-s) (the green box).\
+`category`: This must match the category in the first block.\
+`displayName`: What'll show up in photo mode
 
-<summary>What does this do?</summary>
-
-* <mark style="color:orange;">`PhotoModePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon`</mark>: This is the **unique key** to assign your pose to your pose set. \
-  You need this in the third part of the `.yaml` to hook up the poses with photo mode.
-* <mark style="color:yellow;">`animationName`</mark>: This must match the animation name in your [.anim file](./#the-.anim-file-s) (the green box).
-* <mark style="color:green;">`category`</mark>: This must match the category in the first block.
-* `displayName`:  The name of your pose (plain text or a LocKey in your `.json` file)
-
-</details>
-
-### 3. Telling photo mode about the poses
+### Telling photo mode about the poses
 
 You register your poses for photo mode by creating the following entry categories. You can use yaml anchors to minimize copy-pasting:
-
-{% hint style="warning" %}
-The entries in the list under `#Player` **must** match the unique keys that you've chosen during [#id-2.-pose-entry-definitions](./#id-2.-pose-entry-definitions "mention"), and you need one entry (one line) per pose.
-
-If you have different names for differently-gendered poses, you need to use the correct keys!
-{% endhint %}
 
 {% tabs %}
 {% tab title=">= 2.2" %}
@@ -350,23 +301,17 @@ photo_mode.character.quadrupedPoses
 {% endtab %}
 {% endtabs %}
 
-<details>
-
-<summary>What does this do?</summary>
-
-`&AddPosesM` and `&AddPosesF` are so-called **yaml anchors**. They allow easy re-using of lists that you defined previously.&#x20;
+Characters with `*AddPoses` will use the poses defined under `&AddPoses`. If you don't want a character to use certain poses, don't put `*AddPoses`  next to their `photomode.character`  entry.
 
 An entry without YAML anchors, where poses are manually appended to each character, looks like this:
 
-<img src="../../../../.gitbook/assets/archivexl_photomode_yaml_3.png" alt="" data-size="original">
+<figure><img src="../../../../.gitbook/assets/archivexl_photomode_yaml_3.png" alt=""><figcaption></figcaption></figure>
 
-If your pose lists are identical, you can use one anchor (`&AddPoses`), and treat the second body gender like any of the NPC pose sets.
+{% hint style="warning" %}
+The entries in the list **must** match the unique keys that you've defined in the second block, and you need one entry per pose.&#x20;
 
-</details>
-
-### 4. Double-checking
-
-Before finishing up, make sure to run your file through [yamlLint](https://www.yamllint.com/) and get rid of any errors.
+If you have different names for differently-gendered poses, you need to use the correct lists.
+{% endhint %}
 
 ## Finishing up
 
@@ -374,9 +319,7 @@ Before you can share your pose pack, you need to **change the paths**. If you do
 
 You can find a full guide on changing the paths [here](../../../items-equipment/moving-and-renaming-in-existing-projects.md).
 
-{% hint style="info" %}
-If you rename files or folders under resources, remember to **delete** the old control files from your game directory!
-{% endhint %}
+If you rename files or folders under resources, remember to delete the old control files from your game directory.
 
 ## The result
 
@@ -425,4 +368,71 @@ You can limit the availability of poses by setting a `poseStateConfig`.  For exa
 
 {% hint style="info" %}
 Find a list of the potential entries under [poses-animations.md](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md "mention") -> [#posestateconfig](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md#posestateconfig "mention")
+{% endhint %}
+
+Once installed, it will be in the same folder as the `.archive` file for your mod — so you should name it `your_mod_name.archive.xl`&#x20;
+
+Your file should look like this:
+
+<details>
+
+<summary>What do these things do?</summary>
+
+* `animations:`&#x20;
+  * `entity:` The relative path to the [**photomode scope**](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching.md#distributed-patching-scopes) for patching. There are five of them in total; you can delete the ones you don't need.
+  * `set:` The relative path to the .anims file in your Wolvenkit project.&#x20;
+* `localization`
+  * `onscreens/en-us:` A file with translation strings. Holds the name of your photo mode pose set.
+
+Photo mode knows about custom NPCs through their own `.xl` file, where you add their `.ent` to their body gender's scope — so you don't have to do anything here!
+
+</details>
+
+{% hint style="warning" %}
+While editing .xl files, make sure to keep the **indent** (the number of spaces at the beginning of the line). If you fuck up, you can use [yamllint](https://www.yamllint.com/) to check.
+{% endhint %}
+
+1. From the `animations` section, d**elete** the blocks that you don't want
+2. Replace `tutorial\animations\netrunner_making_poses\pXa.anims`  with the relative path to your `.anim` file(s) as copied from Wolvenkit's project browser
+3. Replace `tutorial\animations\netrunner_making_poses\localization.json` with the relative path to your `.json` file as copied from Wolvenkit's project browser
+4. **O**_**ptional:** For compatibility with older game versions, copy the code under `animations:` (not the label itself) from the `<= 2.1 page` in the code box above and add it to your file._
+5. **Optional, but recommended:** Run your .xl file through [yamllint](https://www.yamllint.com/) to check for syntax errors.
+6. Save your file.&#x20;
+
+{% hint style="success" %}
+The .xl is now updated to support vanilla Photomode NPC and Photomode NPV!
+{% endhint %}
+
+<details>
+
+<summary>What does this do?</summary>
+
+* <mark style="color:orange;">`PhotoModePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon`</mark>: This is the **unique key** to assign your pose to your pose set. \
+  You need this in the third part of the `.yaml` to hook up the poses with photo mode.
+* <mark style="color:yellow;">`animationName`</mark>: This must match the animation name in your [.anim file](./#the-.anim-file-s) (the green box).
+* <mark style="color:green;">`category`</mark>: This must match the category in the first block.
+* `displayName`:  The name of your pose (plain text or a LocKey in your `.json` file)
+
+</details>
+
+<details>
+
+<summary>What does this do?</summary>
+
+`&AddPosesM` and `&AddPosesF` are so-called **yaml anchors**. They allow easy re-using of lists that you defined previously.&#x20;
+
+An entry without YAML anchors, where poses are manually appended to each character, looks like this:
+
+<img src="../../../../.gitbook/assets/archivexl_photomode_yaml_3.png" alt="" data-size="original">
+
+If your pose lists are identical, you can use one anchor (`&AddPoses`), and treat the second body gender like any of the NPC pose sets.
+
+</details>
+
+Before finishing up, make sure to run your file through [yamlLint](https://www.yamllint.com/) and get rid of any errors.
+
+## Finishing up
+
+{% hint style="info" %}
+If you rename files or folders under resources, remember to **delete** the old control files from your game directory!
 {% endhint %}
