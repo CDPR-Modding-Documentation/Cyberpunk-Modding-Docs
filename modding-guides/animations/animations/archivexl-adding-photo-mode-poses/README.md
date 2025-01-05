@@ -329,6 +329,7 @@ photo_mode.character.myersPoses: *AddPosesF
 photo_mode.character.adamPoses: *AddPosesM
 photo_mode.character.altjohnnyPoses: *AddPosesM
 photo_mode.character.johnnyPoses: *AddPosesM
+photo_mode.character.johnnyNPCPoses: *AddPosesM
 photo_mode.character.goroPoses: *AddPosesM
 photo_mode.character.jackiePoses: *AddPosesM
 photo_mode.character.kerryPoses: *AddPosesM
