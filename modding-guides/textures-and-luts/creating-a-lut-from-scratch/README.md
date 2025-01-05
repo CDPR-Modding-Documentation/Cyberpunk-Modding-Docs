@@ -35,7 +35,7 @@ You can check out nullfractal's [github template](https://github.com/nullfrctl/R
 
 {% tabs %}
 {% tab title="NVIDIA Texture Tools Exporter" %}
-You can't download the NVIDIA texture tools from the [official website](https://developer.nvidia.com/nvidia-texture-tools-exporter) without an **NVIDIA account** that participates in the **developer program**. We've put a backup of the executable on the wiki's [github repository](../../../\_resources\_and\_assets/tools/NVIDIA\_Texture\_Tools\_2023.2.0.zip) — you need to decide which is the lesser evil, yet another account or downloading a random .exe from the internet.
+You can't download the NVIDIA texture tools from the [official website](https://developer.nvidia.com/nvidia-texture-tools-exporter) without an **NVIDIA account** that participates in the **developer program**. We've put a backup of the executable on the wiki's [github repository](../../../_resources_and_assets/tools/NVIDIA_Texture_Tools_2023.2.0.zip) — you need to decide which is the lesser evil, yet another account or downloading a random .exe from the internet.
 {% endtab %}
 
 {% tab title="DaVinci Resolve" %}
@@ -159,7 +159,13 @@ Save as a DDS file (only DDS) and put it in the folder that was generated after 
 
 ### WolvenKit again
 
-You should now see it in the import tool in WolvenKit. Change its TextureGroup property to `TEXG_Generic_LUT`, turn off IsGamma, VFlip, GenerateMipMaps, IsStreamable, and PremultiplyAlpha. Set compression to `TCM_None`. If your file doesn't have RawFormat as `TRF_HDRFloat`, then something in the DDS importing went wrong, and you need to re-set the format as 32x4f in NVTT.
+You should now see it in the [import tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool) in WolvenKit.&#x20;
+
+* Change its TextureGroup property to `TEXG_Generic_LUT`
+* Turn off `IsGamma`, `VFlip`, `GenerateMipMaps`, `IsStreamable`, and `Transparency from alpha channel`
+* Set compression to `TCM_None`. I
+
+f your file doesn't have RawFormat as `TRF_HDRFloat`, then something in the DDS importing went wrong, and you need to re-set the format as 32x4f in NVTT.
 
 <figure><img src="../../../.gitbook/assets/image (125).png" alt=""><figcaption><p>Settings set up correctly.</p></figcaption></figure>
 
@@ -173,20 +179,4 @@ Your LUT is now correctly set up. You can install and launch now!
 
 ## Results
 
-<div>
-
-<figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption><p>Vanilla</p></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption><p>RCM</p></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption><p>ACES</p></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption><p>LogC4</p></figcaption></figure>
-
-</div>
+<div><figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption><p>Vanilla</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption><p>RCM</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption><p>ACES</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption><p>LogC4</p></figcaption></figure></div>

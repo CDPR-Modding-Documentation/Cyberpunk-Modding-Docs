@@ -44,7 +44,7 @@ Inside your Wolvenkit project, you need an .xbm texture for your decal, and its 
 1. add any .xbm to your project (and put it in a custom path)
 2. [export it to png](../../textures-and-luts/images-importing-editing-exporting.md#exporting-a-texture)
 3. Replace this png with your decal
-4. [import the png](../../textures-and-luts/images-importing-editing-exporting.md#importing-a-texture) again (`premultiplyAlpha` must be checked)
+4. [import the png](../../textures-and-luts/images-importing-editing-exporting.md#importing-a-texture) again (`transparency from alpha channel` must be checked)
 
 ## Step 1: Cutting the decal mesh
 
