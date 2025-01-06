@@ -77,6 +77,15 @@ Right-click on your game in the list and select `Manage`. Then, click on the fol
 
 <figure><img src="../../../.gitbook/assets/cyberpunk_game_directory_epic.png" alt=""><figcaption></figcaption></figure>
 
+## Copying the folder path
+
+1. Select the folder path by clicking on the empty bit to the right of the explorer's path bar:
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+2. The entire path will be highlighted (if it's not, you can do that by pressing `Ctrl+A`)
+3. Press `Ctrl+C` to copy it to your clipboard
+
 ## Deleting residual files with Windows Search
 
 Once the Cyberpunk folder is open in your Windows Explorer, you can use the `Windows Search bar` in the upper right corner (Hotkey: `Ctrl+F`) to find files by name.&#x20;

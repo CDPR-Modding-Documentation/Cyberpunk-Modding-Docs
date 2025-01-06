@@ -75,7 +75,7 @@ Find the mirror in V's apartment and note down the **numerical values**.
 4. Switch to Wolvenkit and toggle the [project explorer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer) to the [source tab](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#source).
 5. We will have **one NPC per Wolvenkit project** (I mean this!), so we'll delete the files for the body gender that we won't be using (find a table after the image)
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (3).png" alt=""><figcaption></figcaption></figure>
 
 
 

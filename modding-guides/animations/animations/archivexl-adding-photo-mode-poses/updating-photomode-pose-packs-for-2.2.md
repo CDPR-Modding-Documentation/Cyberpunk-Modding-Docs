@@ -33,38 +33,61 @@ If I mess up, I unzip the backup file and overwrite the files in my mod folders.
    Save them somewhere in your computer. (I have a dedicated folder for Python scripts now)&#x20;
    1. [**Convert Photomode XL files**](https://github.com/nut-boy/CyberpunkScripts/blob/main/convert_xl_for_photomodeNPV.py)
    2. [**Convert Photomode YAML files**](https://github.com/nut-boy/CyberpunkScripts/blob/main/convert_yaml_for_photomodeNPV.py)
+2. If it's your first time, follow the wiki guide for [running Python scripts.](../../../../for-mod-creators/modding-guides/everything-else/running-python-scripts.md) Setup is fast and easy.
 
-{% hint style="warning" %}
-DO NOT RUN THE SCRIPTS MORE THAN ONCE ON YOUR MOD FOLDERS. \
-This will add the scope and poses multiple times and potentially create issues. If you think you made a mistake, restore your yamls and your xls from your backup before following these steps again.
-{% endhint %}
 
-2. [Follow the wiki guide for running Python scripts if this is your first time.](../../../../for-mod-creators/modding-guides/everything-else/running-python-scripts.md) Setup is fast and easy.
-3. **First we'll process the .xl files.** \
-   Open the folder containing your Python scripts in one window, and your `archive/pc/mods` folder in another window.
-4. In the Python scripts window, type `cmd` into the address bar and press enter. \
-   Command prompt will open. \
-   Type or paste `python convert_xl_for_photomodeNPV.py` and press enter again.
-5. It will prompt you for the path to your mods folder. \
-   Tab to your `archive/pc/mods` window and copy the ENTIRE path from the address bar (double click it to highlight) including `C:` or the drive letter.&#x20;
-6. Paste the path into the command prompt window, press enter. \
-   It will process all your .xl files and add the necessary scope to them. .xls are done!
-7. Next, we'll process the .yaml files. In the window currently open to `archive/pc/mods`, navigate to your `r6/tweaks` folder instead.&#x20;
-8. Go back to Command Prompt. \
-   Since this next file is processing .yamls, we need to give Python a yaml addon. \
-   Type or paste `pip install pyyaml` into command prompt and press enter.  \
+
+### Processing the .xl files
+
+1. Open the folder containing your Python scripts in Windows Explorer
+2. Type `cmd` into the address bar, and press enter. This will open a command window.
+3. Type the following and press enter (you can autocomplete with the `Tab` key) :
+
+```batch
+python convert_xl_for_photomodeNPV.py
+```
+
+4. The script will now ask you for the path to your mods folder
+   * Open [the-cyberpunk-2077-game-directory](../../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/ "mention") in a Windows Explorer window
+   * Browse to `archive/pc/mods`
+   * Copy the folder path. If you need help, check [#copying-the-folder-path](../../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/#copying-the-folder-path "mention")
+5. Right-click into the command window to paste the path (or press `Ctrl+V`)
+6. Hit Enter
+
+The script will now process all of your .xl files, adding the necessary scopes. That was it!
+
+### Processing the .yaml files
+
+Next, we'll process the .yaml files.&#x20;
+
+1. Go back to the command window from the previous section's step 1
+2. Type or paste `pip install pyyaml` into command prompt and press enter.  \
    It will confirm the install.
-9. Next, type or paste `python convert_yaml_for_photomodeNPV.py` and press enter to run the script.&#x20;
-10. When prompted, go back to your `r6/tweaks` folder. \
-    Copy the the ENTIRE path from the address bar (double click it to highlight), including `C:` or the drive letter.&#x20;
-11. Paste it into the command prompt window, press enter.
-12. It will process all your .yaml files and add the necessary characters to them. Your .yamls are done!&#x20;
-13. Open your game, look for any broken pose packs. If they don't work correctly in new Photomode even after using the scripts, it's likely there was an issue in the formatting of the original mod file. You can check over the pose pack's yaml/xl for errors yourself (if you feel comfortable doing this) or ask the modder to revise it.&#x20;
+3. Type the following and press enter (you can autocomplete with the `Tab` key):
+
+```batch
+python convert_yaml_for_photomodeNPV.py
+```
+
+4. The script will now ask you for the path to your mods folder
+   1. Open [the-cyberpunk-2077-game-directory](../../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/ "mention") in a Windows Explorer window
+   2. Browse to `r6/tweaks`
+   3. Copy the folder path. If you need help, check [#copying-the-folder-path](../../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/#copying-the-folder-path "mention")
+5. Right-click into the command window to paste the path (or press `Ctrl+V`)
+6. Hit Enter
+
+### Checking the results
+
+Open your game and look for any broken pose packs.&#x20;
+
+If they don't work correctly in new Photomode even after using the scripts, it's likely there was an issue in the formatting of the original mod file.&#x20;
+
+You can check over the pose pack's yaml/xl for errors yourself (if you feel comfortable doing this), or ask the modder to revise it.&#x20;
 
 {% hint style="info" %}
 **I**f you're a modder who makes pose packs, you can also use these scripts on your mod's packed folder (instead of your installed mods folder) to automate updating for patch 2.2 NPCs & ArchiveXL 1.19 Photomode NPVs.&#x20;
 
-If you already updated your mod for 2.2, please use the scripts on a version of your mod made for 2.13 so it doesn't create duplicates. Read on below for more info.
+If you already updated your mod for 2.2, you can run the scripts anyway, but they won't (shouldn't) do anything that isn't empty lines.
 {% endhint %}
 
 ## By hand
