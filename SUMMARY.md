@@ -251,7 +251,7 @@
     * [NPV: Preparing the head in Blender](modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md)
     * [NPV: Creating a custom NPC](modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md)
     * [NPV: Cleanup and troubleshooting](modding-guides/npcs/npv-v-as-custom-npc/npv-cleanup-and-troubleshooting.md)
-    * [NPV: Photomode (previously Nibbles Replacer)](modding-guides/npcs/npv-v-as-custom-npc/npv-amm-nibbles-replacer.md)
+    * [NPV: Photomode (formerly Nibbles Replacer)](modding-guides/npcs/npv-v-as-custom-npc/npv-amm-nibbles-replacer.md)
   * [AMM: Custom NPCs](modding-guides/npcs/amm-custom-npcs/README.md)
     * [AMM: Custom NPC appearances](modding-guides/npcs/amm-custom-npcs/amm-custom-npc-appearances.md)
   * [A new head for V](modding-guides/npcs/a-new-head-for-v.md)

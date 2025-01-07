@@ -2,11 +2,11 @@
 description: How to add your NPV to Photomode's list of spawnable characters
 ---
 
-# NPV: Photomode (previously Nibbles Replacer)
+# NPV: Photomode (formerly Nibbles Replacer)
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Published**: ?? **by @manavortex**\
+**Published**: Oct 30 2023 **by @manavortex**\
 **Last documented update:** January 4 2025 **by @nutboy**
 
 This page shows you how to **add your NPV to Photomode's spawnable character list.** It is part of the guide for creating an [.](./ "mention") .&#x20;
@@ -24,16 +24,16 @@ This is a history lesson. If you don't care, skip straight to [#how-to-create-a-
 You don't need to install any of the mods mentioned below if you don't want to.
 {% endhint %}
 
-With 2.2, CDPR added up to three spawnable Photo Mode NPCs where before, you could only spawn Nibbles. Before the update, the only way of spawning NPCs in photo mode was to use the [Nibbles Replacer](https://www.nexusmods.com/cyberpunk2077/mods/8125), a mod from xbaebsae.
+With 2.2, CDPR added up to three spawnable Photo Mode NPCs. Before that, you could only spawn **Nibbles the cat** — and modders took full advantage. The result was the [Nibbles Replacer](https://www.nexusmods.com/cyberpunk2077/mods/8125), a mod by xbaebsae.
 
 ### What did the Nibbles Replacer do?
 
-By integrating the Photo Mode with [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790), modders tricked the game into believing that NPCs were valid alternate for Nibbles the cat.&#x20;
+By integrating the Photo Mode with [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790), modders tricked the game into believing that NPCs were valid alternate appearances for Nibbles the cat.&#x20;
 
 ### What does the new photo mode do?
 
 * Adds up to 250 new spawnable NPC to the character list (this number has yet to be tested)
-* Spawn/despawn installed NPV without exiting Photomode to manage Nibbles "slots"
+* Spawn different kinds of NPVs without exiting Photomode and managing Nibbles "slots"
 * Switch NPC appearances directly in photo mode
 * NPC now can spawn props and weapons if a pose has them
 
