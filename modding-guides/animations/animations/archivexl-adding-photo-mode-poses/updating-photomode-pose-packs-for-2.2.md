@@ -122,7 +122,7 @@ Find the line `photo_mode.character.malePoses:`  and change it:
 #before
 photo_mode.character.malePoses:
 #after
-photo_mode.character.femalePoses: &AddPosesM
+photo_mode.character.malePoses: &AddPosesM
 ```
 
 #### **2. Update NPC poses**

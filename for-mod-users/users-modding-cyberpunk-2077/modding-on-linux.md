@@ -150,6 +150,14 @@ Anything that includes **`=`** and doesn't start with **`-`** goes to Environmen
 
 ## Troubleshooting
 
+### I can't install vcredist!
+
+Try running the following shell command:&#x20;
+
+```bash
+protontricks 1091500 --force vcrun2022
+```
+
 ### This is not working!
 
 #### Check the launch options

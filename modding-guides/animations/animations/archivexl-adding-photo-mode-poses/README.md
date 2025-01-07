@@ -118,13 +118,19 @@ animations:
   # ##############################################################################
   # female body gender - scope includes player + all NPCs + NPV with patched .ents
   # ##############################################################################
-  - entity: player_photomode_wa.ent
+  - entity: photomode_wa.ent
     set: tutorial\animations\netrunner_making_poses\pwa.anims  
     
   # ##############################################################################
   # male body gender - scope includes player + all NPCs + NPV with patched .ents
   # ##############################################################################
-  - entity: player_photomode_ma.ent
+  - entity: photomode_ma.ent
+    set: tutorial\animations\netrunner_making_poses\pma.anims
+    
+  # ##############################################################################
+  # male big - includes all male big bodied NPCs 
+  # ############################################################################
+  - entity: photomode_mb.ent
     set: tutorial\animations\netrunner_making_poses\pma.anims
 ```
 {% endtab %}
