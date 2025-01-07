@@ -12,6 +12,965 @@ This page contains[^1] troubleshooting[^2] information for people who are **usin
 Did you know?  You can use your browser's search function (Ctrl+F) to quickly find your problem on the page – simply type a word from your error message.
 {% endhint %}
 
+## Interactive guide
+
+{% @debugguide/debugguide content="# This YAML defines how Debug Guide behaves.
+# Define steps and options where the user can go next.
+# start is a required step, guide won't work without it:
+start:
+  title: What platform do you have the game from?
+  description: |- # You can use markdown here
+    This is ***important*** information if you need help.
+  options:
+    - label: Steam
+      target: uptodate_q_1 # target is the next step
+    - label: Epic
+      target: uptodate_q_1
+    - label: GoG
+      target: uptodate_q_1
+    - label: Not allowed to say
+      target: pirate
+
+uptodate_q_1:
+  title: Is your game up-to-date?
+  description: |- 
+    The good news is, as long as your game is a legal copy, you can mod it. 
+
+    Do you have the **most recent version** of Cyberpunk 2077?
+  options:
+    - label: Yes
+      target: is_your_game_crashing # target is the next step
+    - label: No
+      target: update_a_1
+
+update_a_1:
+  title: You need to update your game.
+  description: |- 
+    The Cyberpunk 2077 Community Modding Server only supports the most recent version of the game. If you want support, please update!
+  options:
+    - label: OK!
+      target: is_your_game_crashing
+    - label: I can't update
+      target: pirate
+
+# ================
+# core mods updating
+# ================
+
+update_core_mods:
+  title: Are your **core mods** up-to-date?
+  description: |- 
+    All the mods listed below must be on the **most recent version** 
+    - [Red4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
+    - [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198)
+    - [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197)
+    - [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780)
+    - [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107)
+    - [redscript](https://www.nexusmods.com/cyberpunk2077/mods/1511)
+    
+    You also should update these mods if you have them
+    - [CyberwareEx](https://www.nexusmods.com/cyberpunk2077/mods/9429)
+
+  options: 
+    - label: Yes
+      target: is_your_game_crashing
+    - label: No
+      target: update_dependencies_start
+
+# ================
+# Updating Windows and dependencies
+# ================
+
+update_dependencies_start:
+  title: Let's update everything!
+  description: |-
+    It's likely that the problem doesn't lie with Cyberpunk, but actually comes from something else. 
+    We'll now update everything that could be the problem.
+  options: 
+    - label: I did that already!
+      target: update_core_mods
+    - label: I want to reinstall the game now!
+      target: mod_remover
+    - label: OK!
+      target: update_dependencies_01
+
+
+update_dependencies_01:
+  title: Update VisualC Redistributable
+  description: |- 
+    - Download the latest VisualC Redistributable for 64-bit (x64) from [Microsoft](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)
+    - Run the setup
+    - If you already have it installed, **repair** your installation
+    - Restart your computer (this step is **not optional**)
+    
+    Does the game start now?
+
+  options: 
+    - label: Yes
+      target: success
+    - label: No
+      target: update_dependencies_02
+
+update_dependencies_02:
+  title: Repair VisualC Redistributable
+  description: |-     
+    If you did not reboot your computer, **do it now**. 
+    
+    You can skip this step if you already repaired an existing install of VisualC.
+    - Run the setup again
+    - Repair the existing installation
+    - Restart your computer (this step is **not optional**)
+    
+    Does the game start now?
+  options: 
+    - label: Yes
+      target: success
+    - label: No
+      target: update_dependencies_03
+    - label: Actually, I came here from RED4ext...
+      target: crashing_red4ext_02
+
+update_dependencies_03:
+  title: Install .NET Desktop Runtime
+  description: |- 
+    Make sure that you have the most recent version of the [.NET Desktop Runtime](https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/runtime-desktop-7.0.3-windows-x64-installer) installed.
+    
+    Does the game start now?    
+
+  options: 
+    - label: Yes
+      target: success
+    - label: No
+      target: update_dependencies_04
+
+update_dependencies_04:
+  title: Update Windows
+  description: |- 
+    Make sure that your Windows is up-to-date. You don't need to install Windows 11 for this, but make sure that you have all [updates](https://support.microsoft.com/en-us/windows/get-the-latest-windows-update-7d20e88c-0568-483a-37bc-c3885390d212) installed.
+    Reboot the computer if Windows wants you to.
+    
+    Does the game start now?    
+
+  options: 
+    - label: Yes
+      target: success
+    - label: No
+      target: update_dependencies_05
+
+update_dependencies_05:
+  title: Update your graphics driver
+  description: |- 
+    Since VisualC and Windows are up-to-date, this only leaves your GPU driver. Download and install the latest version:
+    - [Nvidia](https://www.nvidia.com/en-in/drivers/nvidia-update/)
+    - [AMD](https://www.amd.com/en/support/download/drivers.html)
+    
+    Reboot your computer if the setup asks you to.
+
+    Does the game start now?    
+
+  options: 
+    - label: Yes
+      target: success
+    - label: No
+      target: update_dependencies_06
+
+update_dependencies_06:
+  title: Do a clean install of your graphics driver
+  description: |- 
+    Maybe your graphics driver has gotten corrupted. Do a clean install. 
+    - For NVIDIA, download and run [Display Driver Uninstaller](https://www.guru3d.com/download/display-driver-uninstaller-download/) first
+    - For AMD, you can use their [Cleanup Utility](https://www.amd.com/en/resources/support-articles/faqs/GPU-601.html)
+    
+    Then, reinstall the driver you updated in the previous step.
+    Does your game start now?
+
+  options: 
+    - label: Yes
+      target: success
+    - label: No
+      target: update_dependencies_06
+
+# ================
+# crashing
+# ================
+
+is_your_game_crashing:
+  title: Is your game crashing?
+  options:
+    - label: Yes
+      target: crashing_q_2
+    - label: No
+      target: misc_start
+
+crashing_q_2:
+  title: When does the game crash?
+  description: We can tell what the problem is by 
+  options: 
+    - label: It doesn't even start
+      target: crashing_cybercmd
+    - label: Before the menu
+      target: crashing_cet_01
+    - label: When loading a savegame
+      target: crashing_world_start
+    - label: At a specific point
+      target: crashing_script_mod_start
+    - label: At a random point
+      target: crashing_random_start
+
+
+linux_q_2:
+  title: Linux mod installs
+  description: |- 
+    For Linux, there are a few specific steps that you have to follow. Follow [this guide](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/modding-on-linux) on our wiki.
+    Does the problem go away?
+  options:
+    - label: Yes
+      target: crashing_q_2
+    - label: I'm not on Linux
+      target: crashing_q_2
+    - label: No
+      target: is_your_game_crashing
+
+
+
+# ================
+# crashing: red4ext
+# ================
+
+crashing_cybercmd:
+  title: Do you have CyberCMD installed?
+  description: |-
+    If you have the mod **CyberCMD** installed, remove it now.
+    It does the same thing as [Red4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380), which you should install instead.
+
+    Can you start the game now?
+
+  options: 
+    - label: Yes!
+      target: success
+    - label: No
+      target: crashing_red4ext_01
+    - label: I don't have it
+      target: crashing_red4ext_01
+
+crashing_red4ext_01:
+  title: Red4Ext is not working
+  description: |-
+    You have a problem with Red4Ext (or one of its dependencies). Let's update them:
+
+    ## Update red4ext and its dependencies
+    - [Red4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
+    - [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198)
+    - [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197)
+    - [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780)
+
+    Does that make the problem go away?
+
+  options: 
+    - label: Yes!
+      target: success
+    - label: No...
+      target: update_dependencies_01
+
+crashing_red4ext_02:
+  title: Red4Ext is not working
+  description: |-
+    You have a problem with Red4Ext (or one of its dependencies), and neither updating them nor updating VisualC fixed it.     
+    Now it's time to check the log files.
+    
+    Find the most recent file under:
+    `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\red4ext\logs`
+    and open it in a text editor. 
+
+    Look out for lines with `[error]`, then try to resolve the problems. 
+
+    If you need help, you can check [this wiki page](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files#making-sense-of-them) or [find us on Discord](https://discord.gg/redmodding) in the mod-troubleshooting channel.
+
+  options: 
+    - label: OK!
+      target: success
+    
+# ================
+# crashing: after loading save
+# ================
+crashing_world_start:
+  title: Can you start a new game?
+  description: |-
+    Instead of loading an existing save, can you start a new game?
+  options: 
+    - label: Yes
+      target: crashing_weather_mod_q
+    - label: No
+      target: crashing_archive_mod
+
+crashing_weather_mod_q:
+  title: Is it a weather mod?
+  description: |-
+    Did you recently install any mods that change or influence the **weather**?
+  options: 
+    - label: Yes
+      target: crashing_weather_mod_a
+    - label: No
+      target: crashing_archive_mod
+
+crashing_weather_mod_a:
+  title: 404 - Weather not found
+  description: |-
+    The game is trying to access a weather that doesn't exist, and is crashing. 
+    Reinstall the weather mod from Nexus and follow its uninstall instructions, then remove it again.
+
+    Can you load your save now?
+  options: 
+    - label: Yes!
+      target: success
+    - label: No
+      target: crashing_archive_mod
+
+crashing_archive_mod:
+  title: A broken item
+  description: |-
+    The game is trying to load a broken **item** and is crashing when trying to spawn it into the world. 
+    In the next step, we'll find out which item it is. You need to examine the following folders:
+    - `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\archive\pc\mod`
+    - `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\mods` (it can be empty)
+  options: 
+    - label: OK!
+      target: bisect_known_folder_start
+
+
+# ================
+# crashing: script
+# ================
+crashing_script_mod_start:
+  title: You have a broken script mod
+  description: |-
+    At some point during your gameplay, a script mod is trying to do something that makes the game crash. 
+    Unfortunately, there won't be any log files to help you, but 
+
+    In the next step, we'll find out which script mod it is. You need to examine the following folders:
+    - `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\r6\scripts`
+    - `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\bin\x64\plugins\cyber_engine_tweaks\mods` 
+    
+  options: 
+    - label: OK!
+      target: bisect_known_folder_start
+
+# ================
+# crashing: random
+# ================
+crashing_random_start:
+  title: Do you have Material Texture Override installed?
+  description: |-
+    Do you have the mod Material Texture Override installed?
+    
+  options: 
+    - label: Yes 
+      target: crashing_random_mto
+    - label: No 
+      target: crashing_random_01
+
+crashing_random_01:  
+  title: Do you have Material Texture Override installed?
+  description: |-
+    Do you have the mod [Material Texture Override](https://www.nexusmods.com/cyberpunk2077/mods/5266) installed?
+    
+  options: 
+    - label: Yes 
+      target: crashing_random_mto
+    - label: No 
+      target: crashing_random_02
+
+
+crashing_random_02:  
+  title: Do you have Material Texture Override installed?
+  description: |-
+    Do you have the mod [Material Texture Override](https://www.nexusmods.com/cyberpunk2077/mods/5266) installed?
+    
+  options: 
+    - label: Yes 
+      target: crashing_random_mto
+    - label: No 
+      target: crashing_random_02
+
+crashing_random_03:  
+  title: We can't narrow down the problem
+  description: |-
+    It's really difficult to tell what kind of mod is causing the problem. You have two options now:    
+  options: 
+    - label: Bisect
+      target: bisect_start
+    - label: Nuke mods and start clean
+      target: mod_remover
+
+crashing_random_mto:  
+  title: Uninstall MTO
+  description: |-
+    Material Texture forces the game to regenerate its materials rather than relying on cached files. That's a requirement for any mods that change base game materials, but unfortunately, it can expose bugs that CDPR never fixed.
+    It's these bugs that are causing the crashes, not MTO itself.
+
+    Remove Material Texture Override and see if the crash goes away.
+  options: 
+    - label: It's gone!
+      target: success
+    - label: It's still there
+      target: crashing_random_03
+
+
+
+
+# ================
+# crashing: CET
+# ================
+
+crashing_cet_01:
+  title: You have a problem with a CET mod
+  description: |-
+    Your problem sits in the following folder:     
+    `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\bin\x64\plugins\cyber_engine_tweaks\mods`
+    Open Windows Explorer and rename the folder to mods_. Does your game start now?
+
+    If you need help, you can check [this wiki page](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files#making-sense-of-them) or [find us on Discord](https://discord.gg/redmodding) in the mod-troubleshooting channel.
+  options: 
+    - label: Yes!
+      target: bisect_cet_00
+    - label: No...
+      target: crashing_cet_not_bisect
+
+
+crashing_cet_not_bisect:
+  title: You have a different problem with a plugin
+  description: |-
+    Navigate three levels up until you are in the folder `bin\x64` and rename the entire folder `plugins` to `plugins_`. 
+    Does your game start now?
+  options: 
+    - label: Yes!
+      target: crashing_reinstall_cet
+    - label: No...
+      target: update_dependencies_start
+
+
+crashing_reinstall_cet:
+  title: Reinstall CET
+  description: |-
+    Do a clean install of Cyber Engine Tweaks: 
+    - If you are using a mod manager, make sure to delete the mod there
+    - Download the mod from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/107)
+    - Install it, and start the game. Does it work?
+  options: 
+    - label: Yes!
+      target: crashing_reinstall_cet_move_mods
+    - label: No...
+      target: mod_remover
+
+crashing_reinstall_cet_move_mods:
+  title: Move the mods from your backup
+  description: |-
+    Now that CET is starting again, let's get your mods back.
+    - From the old folder `plugins_`, move the `mods_` folder to your new CET install under `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\bin\x64\plugins\cyber_engine_tweaks`
+    - You can delete plugins_ now
+    - Rename the folder `mods_` in CET's directory to `mods` and start the game. Does it work?
+  options: 
+    - label: Yes!
+      target: success
+    - label: No...
+      target: bisect_cet_00
+
+mod_remover:
+  title: Your game is really really fucked
+  description: |-
+    Don't worry, all is not lost. But instead of individual troubleshooting, it is faster to start from a clean game:    
+    - Download [Mod Remover](https://www.nexusmods.com/cyberpunk2077/mods/8597) from Nexus
+    - Move the .bat or .exe file to [your game directory](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)
+    - If you are using MO2: Register the .bat or .exe as a tool in the mod manager
+    - Run the script
+    - **Verify your game files**
+
+    Does the game start now?
+  options: 
+    - label: Yes!
+      target: reinstalling_mods_start
+    - label: No...
+      target: update_dependencies_start
+    - label: That's it, I'm done
+      target: success_but_no
+
+reinstalling_mods_start:
+  title: Reinstalling mods
+  description: |-
+    **STOP!** Do not just put your mods back!
+    If you do that, you will be exactly where you were before running mod remover: with a broken game. 
+    
+    Install **only** the core mods, and make sure that they are on the most recent version (re-download if necessary):    
+    - [Red4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
+    - [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198)
+    - [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197)
+    - [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780)
+    - [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107)
+    - [redscript](https://www.nexusmods.com/cyberpunk2077/mods/1511)
+    
+    Does the game start with only core mods installed?
+  options: 
+    - label: Yes!
+      target: reinstalling_mods_01
+    - label: No...
+      target: update_dependencies_start
+
+reinstalling_mods_01:
+  title: Reinstalling mods, step 2
+  description: |-
+    Now you can restore folders from your backup, one after the other:
+    - Copy a folder in the backup directory, e.g. `archive` (do not delete it)
+    - Paste it into the Cyberpunk 2077 game directory
+    - Check if the game still starts    
+    
+    At which folder does your game start crashing again?
+  options: 
+    - label: None!
+      target: success
+    - label: archive
+      target: reinstalling_mods_archive
+
+reinstalling_mods_archive:
+  title: Your problem is an .archive mod
+  description: |-
+    The folder you will have to check is `archive/pc/mod`. Browse to `archive/pc`, and select it. Then, proceed to the next page.
+  options: 
+    - label: OK!
+      target: bisect_known_folder_start
+
+
+# ================
+# bisect
+# ================
+
+bisect_start:
+  title: How to quickly find the broken mod
+  description: |-
+    Bisect is a **binary search** and the fastest way to find your broken mod. You don't know which folder it is, so you'll have to do all 4 of them.
+    You can find step-by-step instructions on the [wiki page](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/user-guide-troubleshooting#bisect-video-demonstration).
+    If you are a visual learner, you will find a short video at the end of the section.
+
+    You have to examine the following folders:
+    - `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\archive\pc\mod`
+    - `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\r6\scripts`
+    - `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\r6\tweaks`
+    - `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\bin\x64\plugins\cyber_engine_tweaks\mods`
+    
+  options: 
+    - label: Sounds scary, but I'll do it
+      target: bisect_known_folder_start
+    - label: I just want to start over clean
+      target: mod_remover
+
+bisect_cet_00:
+  title: How to quickly find the broken mod
+  description: |-
+    Create a new empty folder `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\bin\x64\plugins\cyber_engine_tweaks\mods`.
+    Open the folder `mods_` and move half of the files and folders to `mods`.
+    Does the game still start? 
+    
+  options: 
+    - label: Yes!
+      target: bisect_cet_01
+    - label: No...
+      target: crashing_cet_not_bisect
+
+bisect_cet_01:
+  title: Finding the broken CET mod
+  description: |-
+    The folder you need to examine is `[Cyberpunk 2077](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory)\bin\x64\plugins\cyber_engine_tweaks\mods`.
+    Proceed to the next step! (You have already completed item 1, so start at 2)
+    
+  options: 
+    - label: OK
+      target: bisect_known_folder_start
+
+bisect_known_folder_start:
+  title: Let's get those mods examined
+  description: |-
+    You have found out which **folder** holds the containing mod. If you don't, you can check [this wiki page](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/user-guide-troubleshooting#which-kind-of-mod-is-it).
+    1. Re-name it by adding a _ to its name (e.g. `mods` => `mods_`). This is your **backup**.
+    2. Create a new empty folder with the old name. This is the **game folder**.
+    3. Move **half** of the folder content (files and folders) from the backup to the game folder. 
+
+    Is your problem back?    
+  options: 
+    - label: No!
+      target: bisect_not_these_mods
+    - label: Yes...
+      target: bisect_mods_found_01
+
+bisect_not_these_mods:
+  title: These mods are okay
+  description: |-
+    Now we know which mods **aren't** the problem. Open your backup (with the _), and once again copy **half of the files and folders** to your game folder.
+    
+    Is your problem back?  
+  options: 
+    - label: No...
+      target: bisect_mods_found_01
+    - label: Yes!
+      target: bisect_not_these_mods
+    - label: I know which mod it is!
+      target: bisect_found_the_mod
+
+bisect_not_these_mods_02:
+  title: These mods are okay
+  description: |-
+    The mods you just copied are not the problem. 
+    Go to your backup folder (with the _).
+    - If you moved mods back out of the game dir: Copy half of those
+    - If you didn't move mods back: Copy half of the total remaining mods
+    
+    Is your problem back?  
+  options: 
+    - label: No...
+      target: bisect_mods_found_01
+    - label: Yes!
+      target: bisect_not_these_mods
+    - label: I know which mod it is!
+      target: bisect_found_the_mod
+
+bisect_mods_found_01:
+  title: We're getting closer!
+  description: |-
+    You just copied a bunch of mods from your backup dir to the game dir, and now your problem is back. 
+    That means that the broken mod was part of the batch you just copied.
+    Move **half** of those mods into the backup folder again.
+    
+    Is your problem still there?    
+  options: 
+    - label: Yes...
+      target: bisect_mods_found_02
+    - label: No!
+      target: bisect_mods_found_02
+    - label: I know which mod it is!
+      target: bisect_found_the_mod
+
+
+bisect_mods_found_02:
+  title: These weren't it
+  description: |-
+    You just moved half of a batch back out of the game folder, and your problem is still there -> the batch you copied were okay.
+    From the remaining half, take **half** of the mods again, and move them to the backup folder.
+    
+    Is your problem still there?    
+  options: 
+    - label: Yes...
+      target: bisect_mods_found_02
+    - label: No!
+      target: bisect_mods_found_03
+    - label: I know which mod it is!
+      target: bisect_found_the_mod
+      
+bisect_mods_found_03:
+  title: The mod is in those files!
+  description: |-
+    You just moved a batch of mods out of the game folder into the backup folder (with the _), and your problem went away.
+    That means your problem child is one of the mods you just moved.
+    Take **half** of them and put them back into the game folder.
+    
+    Is your problem back?    
+  options: 
+    - label: Yes...
+      target: bisect_mods_found_02
+    - label: No!
+      target: bisect_mods_found_03
+    - label: I know which mod it is!
+      target: bisect_found_the_mod
+      
+  
+bisect_found_the_mod:
+  title: You found the culprit!
+  description: |-
+    Congratulations! You found out which mod it is!
+    Hit up its Nexus page and check the following:
+    - Can you update it? If yes, do so
+    - Is there a comment page? If yes, maybe it is no longer compatible with the current patch. 
+
+  options: 
+    - label: Cool!
+      target: success
+    - label: That doesn't help!
+      target: broken_mod
+
+
+broken_mod:
+  title: A broken mod
+  description: |-
+    You have a mod, but it's broken. What do we do now?    
+  options: 
+    - label: Check its dependencies
+      target: misc_dependencies
+    - label: Did you update recently?
+      target: outdated_mod
+    - label: I will play without it :(
+      target: success_but_no
+
+outdated_mod:
+  title: Is the mod outdated?
+  description: |-
+    If the mod stopped working after you updated your game, it's possible that it is simply not up-to-date yet. Here are your options:
+    - Play without it
+    - Wait for the mod author to update it (if you ask, please ask **politely**)
+    - Try and fix the mod yourself (this can be hard, but you are welcome on our [discord](http://discord.gg/redmodding) in `#mod-dev-chat`)!
+   
+    The safest way to find out is to...
+
+  options: 
+    - label: read the fucking manual
+      target: rtfm
+    - label: I will play without it :(
+      target: success_but_no
+
+
+rtfm:
+  title: Read the fucking manual
+  description: |-
+    Open the mod's Nexus page. Do the following things:
+    - **Read the mod description**. We get it, reading is hard, but somebody wrote all that text just for you!    
+    - Open the comments tab. Is there a sticky comment? Read it.
+    - Check the first two comment pages. Are a lot of people reporting the same bug? Is there a solution that you can try?
+    - Is there a bug section? Check it out. If there are no bugs, you could file one.
+    
+  options: 
+    - label: There was no solution  ;(
+      target: success_but_no
+    - label: I'll just play without the mod
+      target: success
+
+# ================
+# misc
+# ================
+misc_start:
+  title: Are you on Linux?
+  description: |- 
+    Your game is not crashing, and you have a different issue. 
+    The first question is - are you on Linux?
+  options:
+    - label: Yes
+      target: linux_01
+    - label: No
+      target: misc_q_01
+
+misc_q_01:
+  title: Is it an inactive mod?
+  description: |- 
+    Is your problem that a mod isn't working?
+  options:
+    - label: yes
+      target: misc_mod_not_working
+    - label: no
+      target: misc_q_02
+    - label: I don't know what that is
+      target: misc_q_02
+
+misc_q_02:
+  title: Do you have any sp0 mods?
+  description: |- 
+    Do you have any mods by Nexus user `spawn0000` (also known as sp0)?
+  options:
+    - label: Yes
+      target: misc_uninstall_sp0
+    - label: Of course not!
+      target: unspecified_problem
+
+misc_uninstall_sp0:
+  title: Uninstall sp0 mods
+  description: |- 
+    The modder uses outdated technologies and is infamous for causing compatibility issues. He is the only person who can change that, but he is not interested. 
+    Your best option at this point is to uninstall his mods and find a better body. You can find a list on [this wiki page](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks#which-texture-frameworks-exist) (scroll down a little)
+    
+    Does that make your problem go away?
+  options:
+    - label: Yes
+      target: success
+    - label: No
+      target: unspecified_problem
+    - label: I don't want to uninstall my cement tits!
+      target: success_but_no
+
+misc_mod_not_working:
+  title: An inactive mod
+  description: |- 
+    You're not on Linux and one of your mods isn't working. Are you using the mod manager **mo2**?
+  options:
+    - label: yes
+      target: mo2_01
+    - label: no
+      target: misc_dependencies
+
+misc_dependencies:
+  title: Install the mod's dependencies
+  description: |- 
+    You need to install all of the mod's dependencies, but here's the catch: you need to install **their** dependencies as well. 
+    Check [this wiki page](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/user-guide-troubleshooting/requirements-explained) for more intel.
+    
+    Does the problem go away?
+  options:
+    - label: yes
+      target: success
+    - label: no
+      target: broken_mod
+
+# ======= mod managers =======
+mo2_01:
+  title: You're using mo2
+  description: |- 
+    When modding with mo2, you need to install the following mods **manually**:
+    - [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107)
+    - [RED4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
+
+    Does that make your problem go away?
+  options:
+    - label: Yes
+      target: success
+    - label: no
+      target: mo2_02
+      
+mo2_02:
+  title: The problem persists
+  description: |- 
+    Since mo2 was originally intended for Bethesda games, we don't know terribly much about it. 
+    You can find everything that we *do* know on our [wiki page](https://discord.com/channels/717692382849663036/788090406416023582/1326240275458424853). If that doesn't help, you can hit up [their Discord](https://discord.gg/ewUVAqyrQX).
+  options:
+    - label: OK :/
+      target: success_but_no    
+      
+
+
+# ========== linux ==========
+linux_01:
+  title: You are modding on Linux
+  description: |- 
+    If you are on Linux, there are a few specific steps that you have to follow - see [this guide](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/modding-on-linux) on our wiki.
+    Does the problem go away?
+  options:
+    - label: Yes
+      target: success
+    - label: No
+      target: linux_02
+
+linux_02:
+  title: The Linux guide didn't help you
+  description: |- 
+    Double-check the troubleshooting section. If the steps listed there don't help you, then it's likely that we can't either.
+    You're nonetheless welcome to ask for help on our [discord](http://discord.gg/redmodding) in the `#mod-troubleshooting` channel, but you're probably better-off if you find a Linux-specific community.    
+  options:
+    - label: OK
+      target: success
+
+# ================
+# success
+# ================
+success:
+  title: Progress!
+  description: |-
+    Awesome! You solved a problem! Does your game start now?
+    
+  options: 
+    - label: Yes!
+      target: sponsors
+    - label: No
+      target: q_bisect_in_progress
+    - label: I'll just reinstall my game
+      target: mod_remover
+
+q_bisect_in_progress:
+  title: Are you bisecting?
+  description: |-
+    Are you currently bisecting your mods?
+  options: 
+    - label: Yes
+      target: bisect_mods_found_01
+    - label: No
+      target: start
+
+success_but_no:
+  title: Sorry!
+  description: |-
+    It seems we're at the end of our options, choom. Sorry! Feel free to ask for help on our [discord](http://discord.gg/redmodding) in the `#mod-troubleshooting` channel, though.    
+  options: 
+    - label: OK!
+      target: sponsors
+
+unspecified_problem:
+  title: The problem is in another castle
+  description: |-
+    It seems that you have a problem that the interactive troubleshooter does not cover yet. 
+    Please check our [troubleshooting wiki page](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/user-guide-troubleshooting). 
+    You can use your browser's search function (Ctrl+F), or check for your problem in the table of contents or the list at the start of the page.
+  options: 
+    - label: Fuck this, I'm reinstalling the game
+      target: mod_remover
+    - label: OK!
+      target: sponsors
+
+sponsors:
+  title: Check out our sponsors
+  description: |-
+    The Cyberpunk 2077 modding community wishes you a good trip to Night City! There are many great things you can do:
+
+    - Shoot gonks! Check the vending machines of our sponsor **Budget Arms** for some cheap iron!
+    - Kiss joytoys! Head to Jig Jig Street, live your best life, and scan the QR code at Wakako's pachinko parlor to enter a free giveaway!
+    - Get run over by cars: Just stand on a road somewhere and go flying. Whee! Quality medical care at Viktor's Vector in Watson!
+
+    Disclaimer: Johnny Silverhand has many suggestions as well. We suggest to ignore his advice, and won't be liable for any damage of property or persons if you don't.
+
+pirate:
+  title: We won't help you 
+  hide_back: true
+  description: |-
+    You can read the full reasons [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/user-guide-troubleshooting#you-pirated-the-game). 
+    Feel free to peruse the troubleshooting guide, but we won't help you until you buy your game.
+
+    You can get it here: 
+
+    # GOG.com (CD Projekt) 
+    Buying Cyberpunk 2077 from Good Old Games (GOG.com) directly supports CD Projekt RED, as it is their own platform!
+    - [Base Game](https://www.gog.com/en/game/cyberpunk_2077)
+    - [Phantom Liberty](https://www.gog.com/en/game/cyberpunk_2077_phantom_liberty)
+    - [Ultimate Edition](https://www.gog.com/en/game/cyberpunk_2077_ultimate_edition)
+
+    Steam (Valve)
+    Buying Cyberpunk 2077 from the Steam store supports modding on Steam Deck.
+    - [Base Game](https://store.steampowered.com/app/1091500/Cyberpunk_2077/)
+    - [Phantom Liberty](https://store.steampowered.com/app/2138330/Cyberpunk_2077_Phantom_Liberty)
+    - [Ultimate Edition](https://store.steampowered.com/bundle/32470/Cyberpunk_2077_Ultimate_Edition/)
+
+    Epic Games Store (Epic Games)
+    - [Base Game](https://store.epicgames.com/p/cyberpunk-2077)
+    - [Phantom Liberty](https://store.epicgames.com/p/cyberpunk-2077--phantom-liberty)
+    - [Ultimate Edition](https://store.epicgames.com/en-US/p/cyberpunk-2077--ultimate-edition)
+       
+  options: 
+    - label: OK, I bought the game!
+      target: start
+    - label: I can't afford the game!
+      target: sucks_to_be_poor
+    - label: Fuck you, no!
+      target: fuck_off
+
+
+sucks_to_be_poor:
+  title: Sorry, choomba
+  description: |-
+    We get it, it sucks to be poor, but pirated games do not mod well. If you don't care for an explanation, we can't help you any further. 
+       
+  options: 
+    - label: OK  ;(
+      target: sponsors
+
+fuck_off:
+  title: We appreciate your business
+  description: |-
+    The Cyberpunk 2077 Modding Community Support Team (which consists exclusively of unpaid volunteers) is glad that the interactive troubleshooter could identify your problem.  
+    Please do not ask for help on Discord, as piracy violates the TOS and we'd like to keep our server.  
+        
+  options: 
+    - label: OK
+      target: sponsors" %}
+
 ## Navigation
 
 {% hint style="danger" %}
