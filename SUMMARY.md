@@ -379,6 +379,7 @@
   * [World Editing: worldNodeDataBuffer details](modding-guides/world-editing/world-editing-worldnodedatabuffer-details.md)
   * [NodeRefs](modding-guides/world-editing/noderefs.md)
   * [Lootable world objects](modding-guides/world-editing/lootable-world-objects.md)
+  * [Toggle streamingSectorPrefabVariant](modding-guides/world-editing/toggle-streamingsectorprefabvariant.md)
 * [🎺 Sound](modding-guides/sound/README.md)
   * [Finding an audio file](modding-guides/sound/finding-an-audio-file.md)
   * [Replacing sounds effects](modding-guides/sound/replacing-sounds-effects.md)
