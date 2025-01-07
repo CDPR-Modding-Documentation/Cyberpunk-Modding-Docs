@@ -43,7 +43,7 @@ By integrating the Photo Mode with [Appearance Menu Mod](https://www.nexusmods.c
 
 Requirements:
 
-<table><thead><tr><th width="253.5"></th><th>minimum version</th></tr></thead><tbody><tr><td>Cyberpunk 2077</td><td>Game version 2.2</td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4198?tab=files">ArchiveXL</a></td><td>1.19 or newer</td></tr><tr><td>Wolvenkit</td><td>(TEMPORARY, requires github login) Click "desktop-win", expand "Run Actions" click the Artifact Download URL at the bottom of the section to download a WIP copy of WolvenKit. Extract and double click .exe to run.)<br><br>Nightly 8.15.1 published Jan 5, 2025 or newer</td></tr><tr><td>Optional: <a href="https://github.com/psiberx/cp2077-archive-xl/releases">PhotomodeEx</a> </td><td>1.0</td></tr></tbody></table>
+<table><thead><tr><th width="253.5"></th><th>minimum version</th></tr></thead><tbody><tr><td>Cyberpunk 2077</td><td>Game version 2.2</td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4198?tab=files">ArchiveXL</a></td><td>1.19 or newer</td></tr><tr><td>Wolvenkit</td><td>Wolvenkit > 8.15.1, <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a> published after Jan 25 2025</td></tr><tr><td>Optional: <a href="https://github.com/psiberx/cp2077-archive-xl/releases">PhotomodeEx</a> </td><td>1.0</td></tr></tbody></table>
 
 ## Prerequisites:
 
