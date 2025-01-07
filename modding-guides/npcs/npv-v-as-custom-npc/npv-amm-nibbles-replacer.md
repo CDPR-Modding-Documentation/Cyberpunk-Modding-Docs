@@ -208,6 +208,64 @@ Check out these articles in the Wiki: \
 
 ***
 
+## Optional: Giving your Photomode NPC Weapons for Poses
+
+Some poses spawn props, and if the pose calls for a certain weapon type (melee, handgun, etc.), it will spawn a default weapon for your NPC. You can customize your NPC further by adding specific in-game weapons to their inventory to spawn instead.&#x20;
+
+Check "AcceptedWeaponConfig" in [poses-animations.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md "mention") to see a list of the types of weapons that can spawn in poses.
+
+Here's how to give your NPC weapons:
+
+1. Open your NPC's .yaml
+2. You should see a section like this:&#x20;
+
+<pre class="language-yaml"><code class="lang-yaml">Character.your_characters_name_Photomode_Puppet
+<strong>  $type: PhotoModeSticker
+</strong>  atlasName: filename.inkatlas
+  imagePartName: character_icon
+</code></pre>
+
+Add a new line underneath it, and copy and paste this:
+
+<pre><code><strong>effectors:
+</strong>    - !append
+      $type: AddItemsEffector
+      itemsToAdd:
+        - item: 
+</code></pre>
+
+3. Find the record for the weapon(s) you'd like to add to your character's inventory. There are a few ways of doing this:&#x20;
+4. Check the [CET Console commands list](https://onedrive.live.com/view.aspx?resid=EF6891140DE637B3%21221903\&authkey=!AE_n4RTzwmVHwy8). \
+   Find the weapon(s) you want (you can CTRL + F to search by name). \
+   In the "Command" column you'll see a CET command that reads `Game.AddToInventory("Items.Item_Name")`, Copy the `Items.Item_Name` and paste it into your yaml after `- item`. \
+   \
+   It should now read:
+
+<pre><code><strong>effectors:
+</strong>    - !append
+      $type: AddItemsEffector
+      itemsToAdd:
+        - item: Items.Item_Name
+</code></pre>
+
+Alternatively, you can search "Items." in the Tweak Browser in Wolvenkit and find your weapons.
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+5. If you want to give your NPC more than one weapon, copy and paste `- item:` to a new line for each weapon you want . Spaces are important, make sure it's in line with the item entry above it. Multiple items registered properly will look like this:&#x20;
+
+```
+effectors:
+    - !append
+      $type: AddItemsEffector
+      itemsToAdd:
+        - item: Items.Item_Name
+        - item: Items.Item_Name
+        - item: Items.Item_Name
+```
+
+6. Save your yaml, check poses with weapons in game to see them. &#x20;
+
 ## Troubleshooting
 
 ### My custom poses aren't working!
