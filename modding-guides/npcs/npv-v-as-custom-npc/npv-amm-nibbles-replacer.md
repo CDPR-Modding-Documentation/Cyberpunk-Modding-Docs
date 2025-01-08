@@ -86,7 +86,8 @@ If you made any mistakes, you can simply repeat the process. Either delete the f
 
 #### 2. Open the dialogue
 
-Click on File > Add Files > Add Photomode Files
+Click on File > Add Files > Add Photomode Files. \
+&#xNAN;_&#x49;f the command stays disabled, restart WolvenKit_
 
 <figure><img src="../../../.gitbook/assets/4 (6).png" alt=""><figcaption></figcaption></figure>
 
