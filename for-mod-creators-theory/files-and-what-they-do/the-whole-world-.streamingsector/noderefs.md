@@ -24,4 +24,6 @@ every time engine parses any _absolute path_ it registers a NodeRef in the looku
 
 ### How to link NodeRef to node instance
 
-first of all you have to register NodeRef by adding it to `nodeRefs` then you have to fill the hash in `QuestPrefabRefHash` property, which is actually `globalNodeId` containing NodeRef hash (surprisingly it can be found in `metadata.json` from redmod, but not in runtime RTTI) ![Image](https://media.discordapp.net/attachments/814064062815141909/1083411084817481858/image.png?ex=6741f4b3\&is=6740a333\&hm=d81f479737c46da1e6a65259b2a6650ec7af37f08584925034b0958c7f8d5c80&=\&format=webp\&quality=lossless\&width=550\&height=187)
+1. Register the nodeRef by adding it to `nodeRefs`
+2. fill the `QuestPrefabRefHash`  property with the `globalNodeId` with your nodeRef \
+   &#xNAN;_(surprisingly it can be found in `metadata.json` from redmod, but not in runtime RTTI)_&#x20;
