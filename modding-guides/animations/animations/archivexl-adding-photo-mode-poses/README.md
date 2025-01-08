@@ -251,6 +251,8 @@ You register your poses for photo mode by creating the following entry categorie
 
 {% tabs %}
 {% tab title=">= 2.2" %}
+Add **both** code blocks:
+
 ```yaml
 # ##############################################################
 # Player
@@ -261,40 +263,9 @@ photo_mode.character.malePoses: &AddPosesM
 photo_mode.character.femalePoses: &AddPosesF
   - !append PhotomodePoses.sit_chair_table_keyboard__2h_on_keyboard_01__thinking
   - !append PhotomodePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon
-
-# ##############################################################
-# extra NPCs: female body gender
-# ##############################################################
-photo_mode.character.altPoses: *AddPosesF
-photo_mode.character.bluemoonPoses: *AddPosesF
-photo_mode.character.evelynPoses: *AddPosesF
-photo_mode.character.hanakoPoses: *AddPosesF
-photo_mode.character.judyPoses: *AddPosesF
-photo_mode.character.lizzyPoses: *AddPosesF
-photo_mode.character.meredithPoses: *AddPosesF
-photo_mode.character.panamPoses: *AddPosesF
-photo_mode.character.purpleforcePoses: *AddPosesF
-photo_mode.character.redmenacePoses: *AddPosesF
-photo_mode.character.rogueoldPoses: *AddPosesF
-photo_mode.character.rogueyoungPoses: *AddPosesF
-photo_mode.character.songbirdPoses: *AddPosesF
-photo_mode.character.myersPoses: *AddPosesF
-
-# ##############################################################
-# extra NPCs: male body gender
-# ##############################################################
-photo_mode.character.adamPoses: *AddPosesM
-photo_mode.character.altjohnnyPoses: *AddPosesM
-photo_mode.character.johnnyPoses: *AddPosesM
-photo_mode.character.johnnyNPCPoses: *AddPosesM
-photo_mode.character.goroPoses: *AddPosesM
-photo_mode.character.jackiePoses: *AddPosesM
-photo_mode.character.kerryPoses: *AddPosesM
-photo_mode.character.riverPoses: *AddPosesM
-photo_mode.character.viktorPoses: *AddPosesM
-photo_mode.character.kurtPoses: *AddPosesM
-photo_mode.character.reedPoses: *AddPosesM
 ```
+
+{% include "../../../../.gitbook/includes/photo-mode-.yaml-for-npcs.md" %}
 {% endtab %}
 
 {% tab title="<= 2.1" %}
