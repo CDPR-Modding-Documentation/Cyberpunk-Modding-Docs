@@ -83,13 +83,7 @@ This list contains linked quests that are triggered via scene files. You can fin
 
 ### variantIndices
 
-{% hint style="warning" %}
-TODO: FAFO
-
-Does this point at `nodeData` or at `nodes`? Probably nodes, but it'd be good to know for certain
-{% endhint %}
-
-contains as many values as **ranges** are needed (at least one default range). Each range starts at the index, and stops before (excludes) the index of the following range.
+contains as many values as **ranges** are needed (at least one default range). Each range is mapped on entries in `nodeData` starting at `index`, and stops before (excludes) the index of the following range.
 
 The default variant index is 0.
 
