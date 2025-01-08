@@ -14,6 +14,7 @@ This page shows you how to **add your NPV to Photomode's spawnable character lis
 ### Wait, this is not what I want!
 
 * If you want to update your custom pose packs to work with photo mode NPCs, check [archivexl-adding-photo-mode-poses](../../animations/animations/archivexl-adding-photo-mode-poses/ "mention")
+* If you want to add more appearances to vanilla photomode NPCs, check [xBaebsae's tutorial](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-expand-appearances-in-photomode-npcs/)
 * If you are trying to make or edit a NPV Nibbles replacer, read on. Nibbles Replacer is no longer compatible as of patch 2.2, and this guide will show you how to make a new Photomode NPV.
 
 ## Nibbles Replacer and Photo Mode

@@ -2,7 +2,7 @@
 description: Changing an NPC's default appearances (and adding more via AMM)
 ---
 
-# Appearances: change the looks
+# Appearances: change NPC looks
 
 ## **Summary**
 
@@ -24,6 +24,7 @@ You can find a more detailed guide under [altering-appearances-within-wolvenkit-
 * For an overview of NPC files, check [people](../../../for-mod-creators-theory/references-lists-and-overviews/people/ "mention")
 * If you want to add custom NPCs to Cyberpunk 2077 with AMM, check [amm-custom-npcs](../amm-custom-npcs/ "mention")
 * If you want to add AMM appearances to existing NPCs, check [amm-custom-npc-appearances.md](../amm-custom-npcs/amm-custom-npc-appearances.md "mention")
+* If you want to add Photomode appearances to existing NPCs, check [xBaebsae's tutorial](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-expand-appearances-in-photomode-npcs/)
 * If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/ "mention")
 * If you want a more basic guide that goes into more detail for the basic stuff (including Blender), see [altering-appearances-within-wolvenkit-full-workflow.md](altering-appearances-within-wolvenkit-full-workflow.md "mention")
 * If you're after hair colours, check [hair-profiles-.hp.md](../../../for-mod-creators-theory/files-and-what-they-do/materials/hair-profiles-.hp.md "mention") and follow the links from there.
