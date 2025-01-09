@@ -11,7 +11,7 @@ description: Activate an existing collisions in a mesh
 
 This guide shows you how to enable an object's **embedded collision** for entities without (items that you can walk through).&#x20;
 
-It's a direct follow-up to [**Adding Objects to the World**](adding-objects-to-the-world.md).
+It's a direct follow-up to [**Adding Objects to the World**](adding-locations-and-structures-with-archivexl.md).
 
 {% hint style="info" %}
 As of today (Jan 20 2024), you need a collision-enabled mesh for this. We can create our own collisions with the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention"), but the tutorial for this isn't ready yet.
@@ -25,9 +25,9 @@ As of today (Jan 20 2024), you need a collision-enabled mesh for this. We can cr
 
 * [**Wolvenkit 8.12.0+**](https://github.com/WolvenKit/WolvenKit)
 * [**Object Spawner 1.5**](https://www.nexusmods.com/cyberpunk2077/mods/2833) _(screenshots say 1.4, but it's the mod title that wasn't updated in 1.5_ :smile:_)_
-* You know how to [add objects to the world using Object Spawner](adding-objects-to-the-world.md)
-* [allmeshes.archive](https://mega.nz/file/eRREwQbY#L7AWM1eYijyvE7GLo6IK4MQE2ohJci9r9xcq5gk8BXQ) and updated [allpaths ](https://mega.nz/file/WEQxySrS#0QM1rbl1QaUuRdU3RcNEVvYk-rfk\_mVVDyg75y8XG40)file created by KeanuWheeze - this will help us to edit new ent files with embedded collisions.
-* You need a [Wolvenkit Project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
+* You know how to [adding-locations-and-structures-with-archivexl.md](adding-locations-and-structures-with-archivexl.md "mention")
+* [allmeshes.archive](https://mega.nz/file/eRREwQbY#L7AWM1eYijyvE7GLo6IK4MQE2ohJci9r9xcq5gk8BXQ) and updated [allpaths ](https://mega.nz/file/WEQxySrS#0QM1rbl1QaUuRdU3RcNEVvYk-rfk_mVVDyg75y8XG40)file created by KeanuWheeze - this will help us to edit new ent files with embedded collisions.
+* You need a [Wolvenkit Project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
 
 ## Find an eligible object
 
@@ -41,8 +41,8 @@ Not every object contains an embedded collision, so we first need to check if yo
 
 <figure><img src="../../.gitbook/assets/world_editing__embedded_collision__copy_path.png" alt=""><figcaption></figcaption></figure>
 
-* Back in WolvenKit, create or open [your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
-* Open the [_Asset Browser_](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser), turn on the [_Mod Browser_](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) option, paste the path and add the ent to your project.
+* Back in WolvenKit, create or open [your project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
+* Open the [_Asset Browser_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser), turn on the [_Mod Browser_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) option, paste the path and add the ent to your project.
 
 <figure><img src="../../.gitbook/assets/world_editing__embedded_collision__mod_browser.png" alt=""><figcaption></figcaption></figure>
 
@@ -64,7 +64,7 @@ After you added it, **turn off the Mod Browser option**; otherwise, you won't be
 Have you found it ? Amazing ! It means the mesh has a native collision that we can toggle on. :thumbsup: [Let's do this now.](enable-embedded-collisions.md#activate-the-mesh-collision)
 
 {% hint style="info" %}
-**What if there is no **<mark style="color:orange;">**meshMeshParamPhysics**</mark>** parameter in the mesh ?**
+**What if there is no&#x20;**<mark style="color:orange;">**meshMeshParamPhysics**</mark>**&#x20;parameter in the mesh ?**
 
 It means that there is no collision with it. But other solutions exist for you:
 
@@ -113,7 +113,7 @@ In our test case, I renamed the file as `mod\embedded_collision_test\decoration\
 
 * If the path of your ent changed, don't forget to add it to the allPaths.txt file used by Object Spawner.
 
-That's it! All you have to do now is to [install your mod and launch the game](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch).&#x20;
+That's it! All you have to do now is to [install your mod and launch the game](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch).&#x20;
 
 Once in-game, open and load the new entity with the new path and verify that collision is enabled. :tada:
 
