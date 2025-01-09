@@ -377,6 +377,7 @@
   * [Editing locations in Blender](modding-guides/world-editing/editing-locations-in-blender.md)
   * [Adding Locations and Structures with ArchiveXL](modding-guides/world-editing/adding-locations-and-structures-with-archivexl.md)
   * [Custom fast travel points](modding-guides/world-editing/custom-fast-travel-points.md)
+  * [Custom elevators](modding-guides/world-editing/custom-elevators.md)
   * [Enable embedded collisions](modding-guides/world-editing/enable-embedded-collisions.md)
   * [Archived: World editing via file edit](modding-guides/world-editing/archived-world-editing-via-file-edit.md)
   * [Custom advertisements](modding-guides/world-editing/custom-advertisements-1.md)
