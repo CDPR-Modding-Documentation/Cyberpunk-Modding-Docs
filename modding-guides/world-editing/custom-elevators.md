@@ -62,8 +62,12 @@ Make sure to spawn the elevator and floor terminals as `Device`(`Entity -> Devic
 <figure><img src="../../.gitbook/assets/image (555).png" alt="" width="351"><figcaption><p>Example of assigning a NodeRef</p></figcaption></figure>
 
 * In the end, we will have assigned 5 NodeRef's
-* For example:
+* For **example**:
   * `$/terminal_top`, `$/terminal_bottom`, `$/marker_top`, `$/marker_bottom`, `$/elevator`
+
+{% hint style="warning" %}
+Do not use the same NodeRef names as used in this guide, but choose your own unique ones instead.
+{% endhint %}
 
 ## Linking Devices
 
@@ -106,4 +110,13 @@ Make sure to spawn the elevator and floor terminals as `Device`(`Entity -> Devic
   * A elevator, spawned as `Device`, with its own NodeRef, and linked to both terminals (Make sure you use the terminals NodeRefs, not the markers)
   * Two terminals, spawned as `Device`, set to be persistent, with their own NodeRefs, and properly setup instance data (Linking them to the floor markers and with names)
   * Two static markers, each with their own NodeRef, positioned correctly
-* Once you have all this, you are ready to export, and import into WKit using the Object Spawner import script
+* Once you have all this, you are ready to export
+* Import into WKit using the Object Spawner import script
+
+{% hint style="warning" %}
+You **must** import the result into WolvenKit in order for the elevator to be functional
+{% endhint %}
+
+{% hint style="warning" %}
+If you make changes to the elevator, make sure to use a fresh save game (One where the old elevator was not saved in) after having imported it into WolvenKit
+{% endhint %}

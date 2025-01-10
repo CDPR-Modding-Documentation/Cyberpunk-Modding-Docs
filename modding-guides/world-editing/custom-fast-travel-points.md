@@ -22,6 +22,10 @@ description: >-
   * Creating tweaks using TweakXL (`.yaml`files)
   * Using Object Spawner (Spawning things and [importing](https://github.com/justarandomguyintheinternet/CP77_entSpawner?tab=readme-ov-file#converting-to-standalone-axl-mod) into WolvenKit)
 
+{% hint style="warning" %}
+Any NodeRef names, and custom TweakDB record names in this guide are _examples_, do not use the same ones as in the guide.
+{% endhint %}
+
 ## TweakXL Setup
 
 * In order to define the **name** and the **district** of your fast travel point, it needs to point to a `FastTravelPoints` [record](https://nativedb.red4ext.com/c/2391411111493531)
@@ -36,7 +40,7 @@ FastTravelPoints.customPoint:
 ```
 
 * Place it in a new `.yaml`file inside `Cyberpunk 2077\r6\tweaks`
-* Modify the snippet for your custom FT point
+* Modify the snippet for your custom FT point (Especially change the name of the record to something unique, e.g. `FastTravelPoints.NAMEOFTHELOCATION`)
 
 ## Spawning Nodes
 
@@ -87,5 +91,6 @@ Make sure that the category of the sector containing the marker and terminal is 
 
 * Now simply export your group from Object Spawner, and import into WKit using the Object Spawner import `.wscript`
 
-
-
+{% hint style="warning" %}
+If you make any changes to the FT point, after having already loaded the game with your custom point installed, make sure to use a fresh save (A save without the custom point saved)
+{% endhint %}
