@@ -24,7 +24,7 @@ photo_mode.character.myersPoses: *AddPosesF
 # ##############################################################
 # extra NPCs: male body gender
 # ##############################################################
-photo_mode.character.adamPoses: *AddPosesM
+photo_mode.character.adamSmasherPoses: *AddPosesM
 photo_mode.character.altjohnnyPoses: *AddPosesM
 photo_mode.character.johnnyPoses: *AddPosesM
 photo_mode.character.johnnyNPCPoses: *AddPosesM
