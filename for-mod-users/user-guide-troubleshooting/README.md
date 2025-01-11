@@ -14,6 +14,8 @@ Did you know?  You can use your browser's search function (Ctrl+F) to quickly fi
 
 ## Interactive guide
 
+[Open it in a new window](https://wolvenkit.github.io/gitbook-debug-guide/)
+
 {% @debugguide/debugguide content="# This YAML defines how Debug Guide behaves.
 # Define steps and options where the user can go next.
 # start is a required step, guide won't work without it:
