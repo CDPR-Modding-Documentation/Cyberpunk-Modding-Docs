@@ -320,7 +320,7 @@
   * [Your own HUD icons](modding-guides/custom-icons-and-ui/your-own-hud-icons.md)
   * [Interface modding](modding-guides/custom-icons-and-ui/interface-modding.md)
 * [👤 Animations](modding-guides/animations/README.md)
-  * [Creating Animations - Editing V's Actual In Game Animations](modding-guides/animations/creating-animations-editing-vs-actual-in-game-animations.md)
+  * [Editing V's Actual In Game Animations](modding-guides/animations/creating-animations-editing-vs-actual-in-game-animations.md)
   * [🤹 Creating Animations - Poses for V & NPCs](modding-guides/animations/animations/README.md)
     * [Poses/Animations: make your own](modding-guides/animations/animations/poses-animations-make-your-own/README.md)
       * [Custom Poses and Animations - Guide by xbaebsae](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/)

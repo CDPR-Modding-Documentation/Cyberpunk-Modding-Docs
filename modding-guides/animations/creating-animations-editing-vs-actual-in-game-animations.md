@@ -2,15 +2,20 @@
 description: 'Tutorial: How to Edit Third-Person and First Person Animations for V'
 ---
 
-# Creating Animations - Editing V's Actual In Game Animations
+# Editing V's Actual In Game Animations
 
 ## **Summary**
 
 **Published: Sep 27 2024 by @tylr**\
-**Last documented edit: Sep 27 2024 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") (Formatting)
+**Last documented edit:** Jan 11 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This tutorial will show you how to Edit Third-Person and First Person Animations for V.\
 &#xNAN;_&#x57;orks with JB's TPP Mod which is found on Nexus Mods and for replacing first-person animations_
+
+### Wait, this is not what I want!
+
+* Check [animations](animations/ "mention") for guides on how to do that
+* If you want to learn how to export animations to Blender, check [wkit-blender-plugin-import-export.md](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#animations](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#animations "mention")&#x20;
 
 ### Download the template
 
@@ -26,11 +31,7 @@ It's the same one I use in my tutorial videos.
 
 ## Requirements (click to download)
 
-[Cyberpunk Blender Addon 1.6.0](https://nightly.link/WolvenKit/Cyberpunk-Blender-add-on/actions/runs/10962098113/Cyberpunk%20Blender%20Plugin-PR-2024-09-20--15-31-39.zip)﻿\
-\
-[Wolvenkit 8.14.0](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases/download/8.14.1-nightly.2024-09-23/WolvenKit-8.14.1-nightly.2024-09-23.zip)﻿\
-\
-[BLENDER 4.2 ](https://download.blender.org/release/Blender4.1/blender-4.1.0-windows-x64.zip)﻿
+{% include "../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
 ## Video Format
 
