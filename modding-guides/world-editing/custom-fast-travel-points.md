@@ -12,6 +12,7 @@ description: >-
 
 * [Object Spawner](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.8. or newer)
 * [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl)
+* [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.14.1 or newer)
 * [TweakXL](https://github.com/psiberx/cp2077-tweak-xl)
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of Object Spawner import script)
 
