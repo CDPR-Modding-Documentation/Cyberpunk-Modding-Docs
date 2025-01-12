@@ -27,7 +27,7 @@ You can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/np
 | [Hair color](cheat-sheet-character-creator.md#hair-colour)                  |                  | [Lip Makeup Color](cheat-sheet-character-creator.md#lip-makeup)           |                             |
 | Eyes                                                                        | 1-22             | [Cheek Makeup ](cheat-sheet-character-creator.md#cheek-makeup-style)      | off, 1-14                   |
 | [Eye color](cheat-sheet-character-creator.md#eye-colour)                    |                  | [Cheek Makeup Color](cheat-sheet-character-creator.md#cheek-makeup-color) |                             |
-| Eyebrows                                                                    | off, 1-11        | Blemishes                                                                 | off, 01-03                  |
+| Eyebrows                                                                    | off, 1-11        | [Blemishes](cheat-sheet-character-creator.md#blemishes)                   | off, 01-03                  |
 | [Eyelash color](cheat-sheet-character-creator.md#hair-colour)               |                  | [Blemish Color](cheat-sheet-character-creator.md#blemish-color)           |                             |
 | Nose                                                                        | 1-22             | Nails                                                                     | long, short                 |
 | Mouth                                                                       | 1-22             | [Nail Color](cheat-sheet-character-creator.md#nail-color)                 |                             |
@@ -115,7 +115,7 @@ For a list of [#name-of-meshes-by-index](cheat-sheet-head/hair.md#name-of-meshes
 
 <figure><img src="../../.gitbook/assets/character_creator_cheek_makeup_options.png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="158"></th><th></th></tr></thead><tbody><tr><td>01</td><td>frecles (brown_01, brown_02, brown_03, black_01)</td></tr><tr><td>02</td><td>frecles (brown_04, brown_05, brown_06, black_02)</td></tr><tr><td>03</td><td>frecles (brown_07, brown_08, brown_09, black_03)</td></tr><tr><td>04</td><td>frecles (brown_10, brown_11, brown_12, black_04)</td></tr><tr><td>05</td><td>cheeks (_color_01)</td></tr><tr><td>06</td><td>cheeks (_color_02)</td></tr><tr><td>07</td><td>cheeks (_color_03)</td></tr><tr><td>08</td><td>cheeks (_color_04)</td></tr><tr><td>09</td><td>cheeks (_color_05)</td></tr><tr><td>10</td><td>cheeks (_color_06)</td></tr><tr><td>11</td><td>cheeks (_color_07)</td></tr><tr><td>12</td><td>cheeks (_color_08)</td></tr><tr><td>13</td><td>cheeks (_color_09)</td></tr><tr><td>14</td><td>cheeks (_color_10)</td></tr></tbody></table>
+<table><thead><tr><th width="158"></th><th></th></tr></thead><tbody><tr><td>01</td><td><a data-footnote-ref href="#user-content-fn-1">frecles</a> (brown_01, brown_02, brown_03, black_01)</td></tr><tr><td>02</td><td><a data-footnote-ref href="#user-content-fn-2">frecles</a> (brown_04, brown_05, brown_06, black_02)</td></tr><tr><td>03</td><td><a data-footnote-ref href="#user-content-fn-3">frecles</a> (brown_07, brown_08, brown_09, black_03)</td></tr><tr><td>04</td><td><a data-footnote-ref href="#user-content-fn-4">frecles</a> (brown_10, brown_11, brown_12, black_04)</td></tr><tr><td>05</td><td>cheeks (_color_01)</td></tr><tr><td>06</td><td>cheeks (_color_02)</td></tr><tr><td>07</td><td>cheeks (_color_03)</td></tr><tr><td>08</td><td>cheeks (_color_04)</td></tr><tr><td>09</td><td>cheeks (_color_05)</td></tr><tr><td>10</td><td>cheeks (_color_06)</td></tr><tr><td>11</td><td>cheeks (_color_07)</td></tr><tr><td>12</td><td>cheeks (_color_08)</td></tr><tr><td>13</td><td>cheeks (_color_09)</td></tr><tr><td>14</td><td>cheeks (_color_10)</td></tr></tbody></table>
 
 ## Cheek Makeup Color
 
@@ -166,3 +166,12 @@ For the female body gender, there are three different chest sizes!
 
 <table><thead><tr><th width="110"></th><th width="191"></th><th>file</th></tr></thead><tbody><tr><td>01</td><td>Valentinos</td><td>tx_000_pwa_base__full_tattoo_01.mesh</td></tr><tr><td>02</td><td>geometric blackwork</td><td>tx_000_pwa_base__full_tattoo_02.mesh</td></tr><tr><td>03</td><td>serpent</td><td>tx_000_pwa_base__full_tattoo_03.mesh</td></tr><tr><td>04</td><td>flowers/mandalas</td><td>tx_000_pwa_base__full_tattoo_04.mesh</td></tr><tr><td>05</td><td>NUSA</td><td>tx_000_pwa_base__full_tattoo_05.mesh</td></tr></tbody></table>
 
+
+
+[^1]: no, it's actually spelled like this. I'm sorry.
+
+[^2]: no, it's actually spelled like this. I'm sorry.
+
+[^3]: no, it's actually spelled like this. I'm sorry.
+
+[^4]: no, it's actually spelled like this. I'm sorry.
