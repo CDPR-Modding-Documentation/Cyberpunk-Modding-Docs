@@ -1,4 +1,4 @@
-# Blending materials for more gooder colours
+# Blending materials for better color vibrance
 
 ## The Problem
 
