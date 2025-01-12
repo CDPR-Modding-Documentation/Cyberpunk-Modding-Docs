@@ -187,7 +187,7 @@ For more information on this, check [uv-mapping-texturing-a-3d-object.md](../../
 
 Our decal is now showing our new material. Make sure that it has exactly one UV map by checking the `Data` tab:
 
-<figure><img src="../../../.gitbook/assets/uv_mapping_blender_data_tab.png" alt=""><figcaption><p>If there is more than one, delete all but the first (starting at the bottom)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/delete_extra_uv_map.png" alt=""><figcaption><p>If there is more than one, delete all but the first (starting at the bottom)</p></figcaption></figure>
 
 Time to change to the `UV Editing` perspective. You should be in Edit Mode (Hotkey: `Tab` if not) and have all pixels of your decal mesh selected (Hotkey: `A` if not).
 

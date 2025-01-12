@@ -32,7 +32,7 @@ To look at an object's UV mapping, you'll have to fire up Blender (or a 3d editi
 
 &#x20;An object's UV maps are visible in the Data tab:
 
-<figure><img src="../../.gitbook/assets/uv_mapping_blender_data_tab.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/delete_extra_uv_map.png" alt=""><figcaption></figcaption></figure>
 
 ## How do I edit the UV mapping?
 
@@ -48,25 +48,9 @@ You change the mapping by editing those UV islands. For a more hands-on guide of
 
 ## Recommended AddOns
 
-### [MioUV](https://github.com/mio3io/mio3\_uv) (Blender 4.2, free)
+### [MioUV](https://github.com/mio3io/mio3_uv) (Blender 4.2, free)
 
 If you work with UV mappings, you should definitely check out MioUV. It automates a bunch of things that used to take the better part of an afternoon:
 
-<div>
-
-<figure><img src="../../.gitbook/assets/blender_gridify_orient_edges.webp" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/blender_gridify_unwrap.webp" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/blender_rectify_unwrap.webp" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../.gitbook/assets/blender_straight_unwrap.webp" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../.gitbook/assets/blender_gridify_orient_edges.webp" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_gridify_unwrap.webp" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_rectify_unwrap.webp" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_straight_unwrap.webp" alt=""><figcaption></figcaption></figure></div>
 
