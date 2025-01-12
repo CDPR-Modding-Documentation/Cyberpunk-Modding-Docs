@@ -1,10 +1,11 @@
 ---
 description: Things I wish I had known before I jumped into Blender
+coverY: 0
 ---
 
 # Blender: Getting Started
 
-## Summary
+Summary
 
 **Published:** May 11 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** May 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
@@ -164,7 +165,19 @@ With the shortcuts `1`, `2` and `3`, you can switch the Selection Mode between [
 
 <figure><img src="../../../.gitbook/assets/blender_addon_select_mode.png" alt=""><figcaption></figcaption></figure>
 
-#### **Select Linked**
+There are a couple more modes that can come in handy when you're using the UV Editor.
+
+<figure><img src="../../../.gitbook/assets/Screenshot 2025-01-12 165349.png" alt=""><figcaption><p>Standard location</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image_2025-01-12_170852487.png" alt=""><figcaption><p>Editing location </p></figcaption></figure>
+
+The first one (highlighted in blue in the first image) is the standard select mode. The second one will be your friend, the extend mode, which lets you extend your existing selection  or start a new selection while your previous selection stays put. This is not possible with the standard select mode as it would overwrite the previous selection.
+
+<figure><img src="../../../.gitbook/assets/image_2025-01-12_171512854.png" alt=""><figcaption><p>Creating a seperate selection in UV Editor</p></figcaption></figure>
+
+The next mode is the subtract mode, this mode does the opposite of the extend mode we just went over.
+
+**Select Linked**
 
 With the shortcut `Ctrl+L`, Blender will select everything up to a certain boundary. By default, this boundary is the same piece of 3d geometry, but in the bottom left corner of the viewport, you can pick the delimiter:
 
