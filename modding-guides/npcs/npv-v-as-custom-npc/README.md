@@ -19,7 +19,7 @@ This guide will show you how to do the following things:&#x20;
 ### Wait, this is not what I want!
 
 * If you want to change the player head, see [a-new-head-for-v.md](../a-new-head-for-v.md "mention")
-* You can find more guides and resources for NPCs outside of the wiki. They are linked on the [community-guides](../../community-guides/ "mention") page.
+* You can find more guides and resources for NPCs outside of the wiki. They are linked under [external-npvs-v-as-npc-custom-npcs.md](../../community-guides/external-npvs-v-as-npc-custom-npcs.md "mention").
 
 #### Difficulty:
 
