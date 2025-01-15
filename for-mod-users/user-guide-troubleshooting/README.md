@@ -1964,13 +1964,8 @@ In the past, Codeware wasn't a standalone mod, but was instead [**bundled**](#us
 Actually check this. Do not rely on memory or common sense – if in doubt, re-download. ~~(This is totally not something that the guide's author learned the hard way)~~
 {% endhint %}
 
-1. Check Redscript ([github](https://github.com/jac3km4/redscript/releases/) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511))
-2.  If you are on RED4ext >= 1.13:&#x20;
-
-    uninstall cybercmd
-3.  Otherwise:&#x20;
-
-    install cybercmd ([github ](https://github.com/jac3km4/cybercmd/releases)| [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/5176))
+1. Check Redscript ([github](https://github.com/jac3km4/redscript/releases/) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511)) and update it
+2. Uninstall cybercmd ([github ](https://github.com/jac3km4/cybercmd/releases)| [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/5176)), if you have it.
 
 #### Optional, but recommended:&#x20;
 
@@ -2002,7 +1997,7 @@ You can zip the directory from the windows context menu, then delete its content
 
 * delete [`r6/cache`](#user-content-fn-30)[^30]
 * verify game files
-* create a new directory `r6/cache/modded` (this will prevent errors)
+* **Optional:** create a new directory `r6/cache/modded` (this will prevent errors)
 * Make sure that `r6/scripts` [is empty](#user-content-fn-31)[^31]
 * Make sure that `red4ext/plugins` [is empty](#user-content-fn-32)[^32] (that the red4ext core frameworks aren't getting loaded)
 
