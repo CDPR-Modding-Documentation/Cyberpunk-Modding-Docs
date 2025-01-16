@@ -28,7 +28,7 @@ Since we are in the quest section I'll show how to open it within `.questphases`
 
 1. &#x20;Create a basic structure for our quest
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
@@ -45,7 +45,7 @@ Since we are in the quest section I'll show how to open it within `.questphases`
 
 
 
-    <figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Showcase&#x20;
 
     <figure><img src="../../.gitbook/assets/output.gif" alt=""><figcaption></figcaption></figure>

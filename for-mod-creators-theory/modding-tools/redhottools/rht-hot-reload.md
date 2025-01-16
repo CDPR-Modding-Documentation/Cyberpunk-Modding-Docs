@@ -66,7 +66,7 @@ Now you can see the following actions:
 
 ## The CET overlay
 
-Hot Reload is integrated with [Cyber Engine Tweaks](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/). Depending on your workflow, you don't need these buttons.
+Hot Reload is integrated with [Cyber Engine Tweaks](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/). Depending on your workflow, you don't need these buttons.
 
 ### Archives
 
@@ -85,7 +85,7 @@ Here, you can manually trigger a reload.&#x20;
 
 _You can do this via by running "Hot Reload Scripts" from Visual Studio Code_
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Tweaks
 
