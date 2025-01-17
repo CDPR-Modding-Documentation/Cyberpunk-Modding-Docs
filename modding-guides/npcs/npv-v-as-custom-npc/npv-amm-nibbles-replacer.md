@@ -222,18 +222,20 @@ Here's how to give your NPC weapons:
 2. You should see a section like this:&#x20;
 
 <pre class="language-yaml"><code class="lang-yaml">Character.your_characters_name_Photomode_Puppet
-<strong>  $type: PhotoModeSticker
-</strong>  atlasName: filename.inkatlas
-  imagePartName: character_icon
+  $type: Character
+  entityTemplatePath: your_characters_name.ent
+  displayName: your_characters_name
+  persistentName: PhotomodePuppet
+  attachmentSlots: [ AttachmentSlots.WeaponRight, AttachmentSlots.WeaponLeft ]
 </code></pre>
 
 Add a new line underneath it, and copy and paste this:
 
-<pre><code><strong>effectors:
-</strong>    - !append
+<pre class="language-yaml"><code class="lang-yaml">  effectors:
+    - !append
       $type: AddItemsEffector
       itemsToAdd:
-        - item: 
+        - item:
 </code></pre>
 
 3. Find the record for the weapon(s) you'd like to add to your character's inventory. There are a few ways of doing this:&#x20;
@@ -243,8 +245,8 @@ Add a new line underneath it, and copy and paste this:
    \
    It should now read:
 
-<pre><code><strong>effectors:
-</strong>    - !append
+<pre class="language-yaml"><code class="lang-yaml">  effectors:
+    - !append
       $type: AddItemsEffector
       itemsToAdd:
         - item: Items.Item_Name
@@ -256,15 +258,14 @@ Alternatively, you can search "Items." in the Tweak Browser in Wolvenkit and fin
 
 5. If you want to give your NPC more than one weapon, copy and paste `- item:` to a new line for each weapon you want . Spaces are important, make sure it's in line with the item entry above it. Multiple items registered properly will look like this:&#x20;
 
-```
-effectors:
+<pre class="language-yaml"><code class="lang-yaml">  effectors:
     - !append
       $type: AddItemsEffector
       itemsToAdd:
         - item: Items.Item_Name
         - item: Items.Item_Name
         - item: Items.Item_Name
-```
+</code></pre>
 
 6. Save your yaml, check poses with weapons in game to see them. &#x20;
 
