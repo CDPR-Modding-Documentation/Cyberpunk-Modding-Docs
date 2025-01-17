@@ -14,7 +14,7 @@ _Note: this list is not exhaustive and should be expanded as needed:_
 
 ***
 
-There many attributes in the primary item record that are universal (or near universal) across multiple cyberware types.  With few exceptions, these entries can be drawn from a base record and reused across multiple items.
+There many attributes in the primary item record that are universal (or near universal) across multiple cyberware types. With few exceptions, these entries can be drawn from a base record and reused across multiple items.
 
 ```yaml
 $type: gamedataItem_Record
@@ -74,11 +74,11 @@ tags:
 
 #### <mark style="color:green;">Notes:</mark>
 
-* <mark style="color:green;">icon:</mark> The base value is sufficient if you want to use an existing UI element.  Otherwise, use an appropriate icon entry for your mod.
+* <mark style="color:green;">icon:</mark> The base value is sufficient if you want to use an existing UI element. Otherwise, use an appropriate icon entry for your mod.
 
 ### <mark style="color:blue;">Item-Specific Entries</mark>
 
-These attributes are the core elements of defining your cyberware item.  With the exception of the array entries above, these values will always change from item-to-item or slot-to-slot.
+These attributes are the core elements of defining your cyberware item. With the exception of the array entries above, these values will always change from item-to-item or slot-to-slot.
 
 ```yaml
 buyPrice:
@@ -104,15 +104,15 @@ variants:
 
 #### <mark style="color:green;">Notes:</mark>
 
-* <mark style="color:green;">buyPrice:</mark> This array should include a record to determine the humanity-to-cost ratio when buying from a vendor&#x20;
-* <mark style="color:green;">cyberwareType:</mark> Each cyberware type is given a unique value.  Two items with the same value cannot be equipped, meaning iconic variants of cyberware (such as Axolotl) cannot be equipped alongside their base variant (Newton Module).  All Kiroshi cyberware share the same value, which is accommodated in [Cyberware-EX](https://www.nexusmods.com/cyberpunk2077/mods/9429) by assigning new values to each vanilla implant.
-* <mark style="color:green;">displayName:</mark> If you are providing a custom item name using ArchiveXL, only the secondaryKey is required.  Do not include the LocKey prefix.
+* <mark style="color:green;">buyPrice:</mark> This array should include a record to determine the humanity-to-cost ratio when buying from a vendor
+* <mark style="color:green;">cyberwareType:</mark> Each cyberware type is given a unique value. Two items with the same value cannot be equipped, meaning iconic variants of cyberware (such as Axolotl) cannot be equipped alongside their base variant (Newton Module). All Kiroshi cyberware share the same value, which is accommodated in [Cyberware-EX](https://www.nexusmods.com/cyberpunk2077/mods/9429) by assigning new values to each vanilla implant.
+* <mark style="color:green;">displayName:</mark> If you are providing a custom item name using ArchiveXL, only the secondaryKey is required. Do not include the LocKey prefix.
 * <mark style="color:green;">equipArea:</mark> denotes the slot that will accept your cyberware item.
-* <mark style="color:green;">localizedDescription:</mark> No longer used by default, but the mod [Flavorful Descriptions](https://www.nexusmods.com/cyberpunk2077/mods/13575) will add this text to the bottom of all cyberware as it was before the 2.0 update.  This does require the LocKey prefix before the secondaryKey
+* <mark style="color:green;">localizedDescription:</mark> No longer used by default, but the mod [Flavorful Descriptions](https://www.nexusmods.com/cyberpunk2077/mods/13575) will add this text to the bottom of all cyberware as it was before the 2.0 update. This does require the LocKey prefix before the secondaryKey
 * <mark style="color:green;">OnEquip:</mark> This array includes all the records that define your cyberware's functionality, including Attunement if any
 * <mark style="color:green;">sellPrice:</mark> This array should include a record to determine the humanity-to-cost ratio when selling from a vendor (can use the same record as <mark style="color:green;">buyPrice</mark> if you wish)
 * <mark style="color:green;">slotPartListPreset:</mark> This array should include your StatShard, which is used to determine bonus stats for cyberware.
-* <mark style="color:green;">statModifiers:</mark> This array typically includes 3 items:
+* <mark style="color:green;">statModifiers:</mark> This array typically includes 3 items  (see [stat-modifiers.md](stat-modifiers.md "mention") for more info) &#x20;
   1. A slot-specific record such as `Items.AdvancedCardiovascularSystemModule_inline0`
   2. A record to calculate the current Attunement level for the Attunement UI
   3. If the cyberware is iconic, `Quality.IconicItem`
@@ -163,7 +163,7 @@ variants:
 * <mark style="color:green;">blueprint:</mark> This determines the number of quickhack slots available in your deck (2 through 8)
 * <mark style="color:green;">buyPrice:</mark> This record typically uses a higher ratio as operating systems tend to be more expensive.
 * <mark style="color:green;">cyberwareType:</mark> All cyberdecks share the same cyberwareType.
-* <mark style="color:green;">localizedDescription:</mark> Not currently used by [Flavorful Descriptions](https://www.nexusmods.com/cyberpunk2077/mods/13575) for cyberdecks.  If you want favor text in your cyberdeck UI, it will need to be a UI entry in the OnEquip array.
+* <mark style="color:green;">localizedDescription:</mark> Not currently used by [Flavorful Descriptions](https://www.nexusmods.com/cyberpunk2077/mods/13575) for cyberdecks. If you want favor text in your cyberdeck UI, it will need to be a UI entry in the OnEquip array.
 * <mark style="color:green;">objectActions:</mark> This array defines the device and vehicle hacks available at each tier ([_see below_](creating-cyberware-using-tweakxl.md#code-sample-adding-device-and-vehicle-hacks-to-your-cyberdeck-tiers)).
 * <mark style="color:green;">sellPrice:</mark> This record typically uses a higher ratio as operating systems tend to be more expensive.
 * <mark style="color:green;">slotPartListPreset:</mark> Not used in cyberdecks.
@@ -245,8 +245,6 @@ Items.YourCustomDeck$(quality):
     - !append DeviceAction.ServerOverloadClassHack
 ```
 
-
-
 ## <mark style="color:orange;">Attunements</mark>
 
 ***
@@ -276,13 +274,13 @@ Items.YourCustomCyberware:
 
 #### <mark style="color:green;">Notes:</mark>
 
-The value attribute in your statModifiers record is not used to apply a bonus to the player.  It is used to generate a value for the UI record within `Attunements.IntelligenceAllDamage` to display.
+The value attribute in your statModifiers record is not used to apply a bonus to the player. It is used to generate a value for the UI record within `Attunements.IntelligenceAllDamage` to display.
 
-In this case, the bonus within `Attunements.IntelligenceAllDamage` is to multiply all damage by Intelligence\*0.0005 but the UI needs to display percentages, not decimal modifiers.  This value is referenced in the Attunement record's UI data as the <mark style="color:green;">AttunementHelper</mark>.
+In this case, the bonus within `Attunements.IntelligenceAllDamage` is to multiply all damage by Intelligence\*0.0005 but the UI needs to display percentages, not decimal modifiers. This value is referenced in the Attunement record's UI data as the <mark style="color:green;">AttunementHelper</mark>.
 
 #### <mark style="color:green;">Code Sample: Adding Custom Attuments to your cyberware</mark>
 
-Below is an example of using the player's Max RAM to generate a bonus to Armor taken from an existing mod. &#x20;
+Below is an example of using the player's Max RAM to generate a bonus to Armor taken from an existing mod.
 
 ```yaml
 UIIcon.SampleCyberware_RAMArmorIcon:
@@ -324,17 +322,15 @@ Items.SampleCyberwareCommon:
       statType: BaseStats.AttunementHelper 
 ```
 
-
-
 ## <mark style="color:orange;">Technology Perk Requirements</mark>
 
 ***
 
-There are a few ways in which the functionality of Cyberware is impacted by Technology Perks.  In order for newly-created Cyberware to react to these situations appropriately, some considerations needs to be be made in your design.
+There are a few ways in which the functionality of Cyberware is impacted by Technology Perks. In order for newly-created Cyberware to react to these situations appropriately, some considerations needs to be be made in your design.
 
 ### <mark style="color:blue;">All Things Cyber</mark>
 
-Level 2 of this perk reduces the Cyberware Capacity cost for cyberware in the Integumentary System and Skeleton slots by 20%.  In the variant attribute, cyberware inteded for these slots should use:
+Level 2 of this perk reduces the Cyberware Capacity cost for cyberware in the Integumentary System and Skeleton slots by 20%. In the variant attribute, cyberware inteded for these slots should use:
 
 ```yaml
 Variants.Humanity[num]CostTinkererVariant # where [num] is the numeric cost
@@ -344,7 +340,7 @@ If you choose to create your own Tinkerer variant, remember that the 20% discoun
 
 ### <mark style="color:blue;">License To Chrome</mark>
 
-Level 3 of this perk increases the stats of all Skeleton cyberware.  This is achieved by creating a duplicate of your cyberware item that will be swapped into the player's cyberware slot seamlessly if they've purchased this perk.
+Level 3 of this perk increases the stats of all Skeleton cyberware. This is achieved by creating a duplicate of your cyberware item that will be swapped into the player's cyberware slot seamlessly if they've purchased this perk.
 
 In your base cyberware records, include:
 
@@ -361,15 +357,13 @@ tags:
   - SkipActivityLog
 ```
 
-
-
 ## <mark style="color:orange;">Armor Bonuses</mark>
 
 ***
 
 Static bonuses to Armor are calculated by 4 records, all of which evaluate the item's tier and apply the bonus accordingly.
 
-1. A standard record used by all cyberware for a particular slot.  All 4 vanilla records are identical with the exception of the name, so there is no practical limit on applying an armor bonus to any cyberware regardless of its type.  The existing records are:
+1. A standard record used by all cyberware for a particular slot. All 4 vanilla records are identical with the exception of the name, so there is no practical limit on applying an armor bonus to any cyberware regardless of its type. The existing records are:
    * `Items.AdvancedCardiovascularSystemModule_inline0`
    * `Items.AdvancedIntegumentarySystemModule_inline0`
    * `Items.AdvancedMusculoskeletalSystemModule_inline0`
@@ -412,8 +406,8 @@ Items.SampleArmorIncreasePlus:
   value: 4 # added for LegenaryPlus and PlusPlus
   modifierType: Additive
   statType: BaseStats.Armor
-<strong>
-</strong><strong>Items.SampleCyberwareCommon:
+
+<strong>Items.SampleCyberwareCommon:
 </strong>  statModifiers:
     - !append Items.AdvancedMusculoskeletalSystemModule_inline0
     - !append Items.SampleArmorBase
@@ -425,7 +419,7 @@ Items.SampleArmorIncreasePlus:
 
 The code sample above will result in the following values:
 
-1. &#x20;<mark style="color:green;">Common</mark>: 18 (base)
+1. <mark style="color:green;">Common</mark>: 18 (base)
 2. <mark style="color:green;">CommonPlus</mark>: 22 (base + plus)
 3. <mark style="color:green;">Uncommon</mark>: 27 (base + increase \* tiers added)
 4. <mark style="color:green;">UncommonPlus</mark>: 31 (base + plus + increase \* tiers added)
@@ -439,17 +433,15 @@ The code sample above will result in the following values:
 
 The armor bonus is always calculated starting from Common even if your custom cyberware only has records for higher tiers; if your base cyberware item start at Epic, the armor bonus will still be 45.
 
-
-
 ## <mark style="color:orange;">Stats Shards</mark>
 
 ***
 
-Any piece of cyberware that will receive random bonus stats requires a StatsShard record to do so.  Much of the StatsShard record is ignored, so a simple base record can be used for virtually any piece of cyberware.&#x20;
+Any piece of cyberware that will receive random bonus stats requires a StatsShard record to do so. Much of the StatsShard record is ignored, so a simple base record can be used for virtually any piece of cyberware.
 
-Much if the information in the sample is the same, generally dealing with randomizing stat bonuses during upgrades.  Key to your custom cyberware are the last 5 records in statModifiers as they control the initial stats when aquiring the cyberware item.
+Much if the information in the sample is the same, generally dealing with randomizing stat bonuses during upgrades. Key to your custom cyberware are the last 5 records in statModifiers as they control the initial stats when aquiring the cyberware item.
 
-Typically, these stats include 3 direct bonuses and 2 modifying bonuses.  Keep in mind that including more direct bonuses means that your cyberware will be found with extra stats, but they will be lost when upgrading.
+Typically, these stats include 3 direct bonuses and 2 modifying bonuses. Keep in mind that including more direct bonuses means that your cyberware will be found with extra stats, but they will be lost when upgrading.
 
 #### <mark style="color:green;">Code Sample: Adding a StatShard record to your cyberware</mark>
 
@@ -476,13 +468,11 @@ Items.SampleCyberwareCommon:
   slot: AttachmentSlots.StatsShardSlot
 ```
 
-
-
 ## <mark style="color:orange;">Arms Cyberware Specifics</mark>
 
 ***
 
-Cyberware for the Arms slot have their Cyberware Capacity cost calculated for the holstered and unholstered states in separate locations.  If you intend to use a cost other than the base 8, you will need to take them both into account.
+Cyberware for the Arms slot have their Cyberware Capacity cost calculated for the holstered and unholstered states in separate locations. If you intend to use a cost other than the base 8, you will need to take them both into account.
 
 The unholstered value, which is also used for the UI, is calculated here:
 
@@ -491,7 +481,7 @@ variants:
   - Variants.Humanity8Cost # the default record for all Arms cyberware
 ```
 
-If you only change this value, you'll find that the UI indicates a new Cyberware Capacity cost, but equipping the item will only reduce the user's Cyberware Capacity by 8.  If order to modify the cost when holstered, you'll need to make a change here:
+If you only change this value, you'll find that the UI indicates a new Cyberware Capacity cost, but equipping the item will only reduce the user's Cyberware Capacity by 8. If order to modify the cost when holstered, you'll need to make a change here:
 
 ```yaml
 Items.NanoWireHolsteredFists

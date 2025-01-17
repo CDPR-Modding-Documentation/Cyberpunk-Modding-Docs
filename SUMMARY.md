@@ -227,6 +227,7 @@
   * [Tweaks: Lists and references](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/cheat-sheet-tweak-ids)
   * [Tweak modding: Guides](for-mod-creators-theory/tweaks/tweak-modding-guides.md)
   * [Creating Cyberware using TweakXL](for-mod-creators-theory/tweaks/creating-cyberware-using-tweakxl.md)
+  * [Stat Modifiers](for-mod-creators-theory/tweaks/stat-modifiers.md)
 
 ## Modding Guides
 
