@@ -2,8 +2,8 @@
 
 ## Summary
 
-**Published:** Jan 17 2025 by [Apart](https://app.gitbook.com/u/M4VsHKJyn3PakV5tOmAF87H61wh2)\
-**Last documented edit:** Jan 17 2025 by [Apart](https://app.gitbook.com/u/M4VsHKJyn3PakV5tOmAF87H61wh2)
+**Published:** Jan 17 2025 by Apart\
+**Last documented edit:** Jan 17 2025 by Apart
 
 An explanation of the various kinds of stat modifiers and modifier types and how to use them.
 
@@ -121,16 +121,18 @@ Curve stat modifiers use a [curveset](../files-and-what-they-do/file-formats.md)
 
 #### Example(s)
 
-First, a rough example of a curveset is needed, that we will name _**crit\_chance\_curves**_ with a column named _**crit\_chance\_to\_quality**_ The point value will be matched with the reference stat (refStat) of the tweak. This curveset should lead to a value of 2, 4, 6, 9, 12.
+First, a curveset is needed, that we will name _**crit\_chance\_curves**_ with a column named _**quality\_to\_crit\_chance**_ The point will be matched with the reference stat (refStat) of the tweak.
 
-<table><thead><tr><th width="93" data-type="number">point</th><th data-type="number">value</th></tr></thead><tbody><tr><td>1</td><td>4</td></tr><tr><td>0</td><td>2</td></tr><tr><td>2</td><td>6</td></tr><tr><td>3</td><td>9</td></tr><tr><td>4</td><td>12</td></tr></tbody></table>
+<table><thead><tr><th width="93" data-type="number">point</th><th data-type="number">value</th></tr></thead><tbody><tr><td>1</td><td>4</td></tr><tr><td>0</td><td>2</td></tr><tr><td>2</td><td>6</td></tr><tr><td>3</td><td>9</td></tr><tr><td>4</td><td>14</td></tr></tbody></table>
+
+This curveset should lead to a 2% Crit Chance at Tier 1 (Common) quality, up to 14% at Tier 5 (Legendary) quality.
 
 ```yaml
 $type: CurveStatModifier
 statType: BaseStats.CritChance
 modifierType: Additive
-id: crit_chance_curves #this is an example name
-column: crit_chance_to_quality
+id: crit_chance_curves
+column: quality_to_crit_chance
 refStat: BaseStats.Quality
 refObject: Root
 ```
