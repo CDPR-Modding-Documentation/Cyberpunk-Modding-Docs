@@ -32,6 +32,15 @@ We will hook up an existing `.anims` file to photo mode. If you don't have one, 
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.15.0
 * [Notepad++](https://notepad-plus-plus.org/downloads/) (you can use any text editor, but N++ is recommended)
 
+## Required mods (2.2)
+
+Your finished pose mod will have the following dependencies:
+
+* [RED4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
+* [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198)
+* [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197)
+* [PhotomodeEx](https://www.nexusmods.com/cyberpunk2077/mods/18839)
+
 ## Getting the files
 
 Download either of these files:
@@ -264,8 +273,6 @@ photo_mode.character.femalePoses: &AddPosesF
   - !append PhotomodePoses.sit_chair_table_keyboard__2h_on_keyboard_01__thinking
   - !append PhotomodePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon
 ```
-
-{% include "../../../../.gitbook/includes/photo-mode-.yaml-for-npcs.md" %}
 {% endtab %}
 
 {% tab title="<= 2.1" %}
