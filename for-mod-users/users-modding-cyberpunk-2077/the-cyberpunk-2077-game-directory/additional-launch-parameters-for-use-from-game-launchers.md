@@ -27,7 +27,6 @@ for example \
 
 {% hint style="info" %}
 You may also pass in any parameters found in [launch-parameters.md](launch-parameters.md "mention"), but beware of the different parameter formatting!\
-\
 Launcher parameters use double-dash while launch parameters use single-dash.
 {% endhint %}
 
