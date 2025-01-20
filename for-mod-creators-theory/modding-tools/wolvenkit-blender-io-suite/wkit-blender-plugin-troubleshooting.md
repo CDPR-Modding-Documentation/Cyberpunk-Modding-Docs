@@ -25,8 +25,6 @@ Blender errors will show up in the system console window (View -> Toggle System 
 
 ## Version compatibility
 
-{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
-
 ### Seeing the Blender version
 
 You can see the exact Blender version in the lower right corner of the program:
@@ -65,8 +63,6 @@ Please complete the steps in [#general-troubleshooting](wkit-blender-plugin-trou
 {% endhint %}
 
 ### Make sure that your Wolvenkit is up-to-date
-
-{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
 {% hint style="success" %}
 After updating Wolvenkit, make sure to re-export your .mesh with materials!

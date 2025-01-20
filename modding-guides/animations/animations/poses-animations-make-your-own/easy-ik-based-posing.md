@@ -20,8 +20,6 @@ It has been originally [published by xbaebsae](https://xbaebsae.jimdofree.com/cy
 
 [xbaebsae's new simple IK Template](https://drive.google.com/file/d/1ZJMHfTNNdMMGK7AE-Vese9vrlYWJYc4F/view?usp=sharing) (includes FemaleAverage/V, MaleAverage/V, MaleBig skeletons)
 
-{% include "../../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
-
 ## Differences to regular posing templates
 
 Select the yellow boxes (they're IK related bones) to move around bone chains. Use the grab in blender (shortcut g) to grab a bone and move it where you want it. This works on hands and feet which will move the respective arm and leg accordingly.

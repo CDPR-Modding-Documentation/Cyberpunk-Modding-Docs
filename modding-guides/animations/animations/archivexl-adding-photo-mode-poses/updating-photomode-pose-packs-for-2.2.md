@@ -130,8 +130,6 @@ photo_mode.character.malePoses: &AddPosesM
 1. If your file already has entries for the new photo mode poses, **delete** them
 2. Now, add the photo mode poses for NPCs:
 
-{% include "../../../../.gitbook/includes/photo-mode-.yaml-for-npcs.md" %}
-
 {% hint style="success" %}
 You're done! **You can now use your pose pack with Photomode NPCs & AXL Photomode NPV.**&#x20;
 {% endhint %}

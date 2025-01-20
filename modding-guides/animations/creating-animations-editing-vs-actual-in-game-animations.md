@@ -31,8 +31,6 @@ It's the same one I use in my tutorial videos.
 
 ## Requirements (click to download)
 
-{% include "../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
-
 ## Video Format
 
 This tutorial is mainly in video form for simplicity. Don’t worry if this looks tough—it's actually really easy once you get the hang of it.&#x20;
