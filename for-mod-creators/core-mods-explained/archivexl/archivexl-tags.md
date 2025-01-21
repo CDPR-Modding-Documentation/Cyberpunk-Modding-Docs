@@ -17,7 +17,7 @@ This page will tell you about **tags** and how they can be used to influence ite
 [Tags](https://github.com/psiberx/cp2077-archive-xl/wiki#visual-tags) are a way to tell Cyberpunk that an item has certain properties and should behave in a certain way. This makes the game apply properties to your items, which can then be utilized by the game and ArchiveXL.
 
 {% hint style="warning" %}
-To apply visual tags to an item you must add them to [**visualTags**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/influencing-other-items#visualtags-garmentsupport) property of your appearance definition or to [**visualTagsSchema**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants#the-root\_entity) of your root entity template.
+To apply visual tags to an item you must add them to [**visualTags**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/influencing-other-items#visualtags-garmentsupport) property of your appearance definition or to [**visualTagsSchema**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants#the-root_entity) of your root entity template.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -68,25 +68,9 @@ Check [#hiding-body-parts-diagram](archivexl-tags.md#hiding-body-parts-diagram "
 
 ### Base Game Tags and ArchiveXL Tags -  Visual Guides
 
-<div>
+<div><figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - MaleBody - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Male Body - By LadyLea </p></figcaption></figure> <figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - Female Body - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Female Body - By LadyLea </p></figcaption></figure></div>
 
-<figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - MaleBody - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Male Body - By LadyLea </p></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - Female Body - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Female Body - By LadyLea </p></figcaption></figure>
-
-</div>
-
-<div>
-
-<figure><img src="../../../.gitbook/assets/HIDE TAGS - FORCE TAGS - ARMS BY LL.png" alt="" width="375"><figcaption><p>Visual Guide - Tags - Default Arms - By LadyLea </p></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - Head - By LadyLea.png" alt="" width="375"><figcaption><p>Visual Guide - Tags - Head - By LadyLea </p></figcaption></figure>
-
-</div>
+<div><figure><img src="../../../.gitbook/assets/HIDE TAGS - FORCE TAGS - ARMS BY LL.png" alt="" width="375"><figcaption><p>Visual Guide - Tags - Default Arms - By LadyLea </p></figcaption></figure> <figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - Head - By LadyLea.png" alt="" width="375"><figcaption><p>Visual Guide - Tags - Head - By LadyLea </p></figcaption></figure></div>
 
 {% hint style="warning" %}
 Tags to partially hide default arms and cyberarms are not available, however, you can make use of [Chunkmasks](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks#chunkmasks-partially-hiding-meshes) with the aid of this [component list for Arms and Cyberarms](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/references-lists-and-overviews/cheat-sheet-arms) OR you can create your own [Custom Tags](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/core-mods-explained/archivexl/archivexl-tags#adding-custom-tags).
@@ -132,6 +116,7 @@ Boots
 Heels
 Sneakers
 Stilettos
+Metal_feet
 ```
 
 ## Adding Custom tags
