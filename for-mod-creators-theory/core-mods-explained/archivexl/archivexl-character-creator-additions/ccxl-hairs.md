@@ -29,7 +29,7 @@ If you would rather understand what you're doing, please skip to [#step-1-deleti
 8. Rename the `.xl` file
 9. Change translation key in the `.json` file to something unique for your mod
 10. Change translation entries in the `.inkcharactercustomization` file
-11. Custompath everything — do not overwrite anything that still contains tutorial files!
+11. Custompath everything — do not publish anything that still contains tutorial files!
 12. Profit
 
 ## Let's go!
@@ -42,20 +42,33 @@ We will be moving **backwards** through the files: starting at the bottom, and w
 
 ## Step 1: Deleting .ent files
 
-As you do not need any `.ent` files in your CCXL hair project, delete them now.
+If you don't have any `.ent` files, you're good!&#x20;
+
+If you do have them, delete them now – we don't need them in our CCXL projects.
 
 ## Step 2: Adjusting the .app file
 
 Thanks to ArchiveXL magic, your .app file needs **only one appearance**. All other appearances will be extrapolated from it!
 
+You can use any of the existing base game hair colours, as long as the definition itself is valid.
+
+<details>
+
+<summary>If you are converting an existing mod with an .app file</summary>
+
+1. **Delete** all but the first appearance
+2. If you have anything in `partsValues`, make sure to **remove** it – the .ent file it was pointing at is gone now
+3. `partsOverrides` will make sure your hair colours assign correctly. Keep them, but clear any `depotPaths` you have set (ArchiveXL will handle that for you)
+
+</details>
+
 {% hint style="info" %}
-You have two choices - you can either adjust your existing .app file, or use the example mod's.&#x20;
+If you want to add more meshes/rigs to the template .app (for example from uuhv4), you can **duplicate** the `entSkinnedMeshComponent` and the matching `entAnimatedComponent` from the context menu.
 {% endhint %}
 
-1. Make sure to **delete** everything in `partsValues`, since the .ent file it was pointing at is gone now
-2. Check that your hair components and paths are correct (you can use File Validation to help you)
-
-You can use any of the existing base game hair colours, as long as the definition itself is valid.
+{% hint style="info" %}
+File Validation can help you making sure that your hair components and paths are correct.&#x20;
+{% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/ccxl_mesh_file_02 (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -76,14 +89,14 @@ We'll now go through everything step by step.
 As you can see, you only need a single appearance — ArchiveXL will generate all the rest.&#x20;
 
 {% hint style="info" %}
-If your hair mesh is set up differently, you need to adjust the chunk materials here!
+If your hair mesh is set up differently from the template file, you need to adjust the chunk materials here!
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/ccxl_mesh_file_01.png" alt=""><figcaption></figcaption></figure>
 
 In our example, the first submesh uses the material `@long`, and the second one the material `@cap`. &#x20;
 
-The names are generated as follows:
+The names must be set as follows:
 
 ```
 <name_of_appearance>@<name_of_material> => black_carbon@long
@@ -95,22 +108,29 @@ The tutorial hair has only two materials, and three material entries (`@context`
 
 <figure><img src="../../../../.gitbook/assets/ccxl_mesh_file_02.png" alt=""><figcaption></figcaption></figure>
 
+You can define more materials here if you need them (`@long`, `@short`, `@curls`, `@beard`, `@braid`, `@dread`, `@cap`).
+
 Now, let's look at the materials themselves.
 
 ### 3.3 Materials
 
 #### @context&#x20;
 
-The first material is special:
+This is not actually a material instance – instead, this is where you register your mesh file's material properties for ArchiveXL's character creator extensions.
+
+Please note the following:
 
 * It does not have a base material
-* It needs one value entry for every dynamic material (see below)
+* Each `value`  points at one `.mi` file in the project
 * All of its `values` must be of the type `CpuNameU64`. You can create one as follows:
 
 <figure><img src="../../../../.gitbook/assets/ccxl_mesh_file_04.png" alt=""><figcaption></figcaption></figure>
 
-* The parameter names must be named `SomethingBaseMaterial`, where `Something` must correspond with the names of the other materials with an **uppercase letter** (in our example, `@long` and `@cap`)
-* The parameter value points at the `.mi` file in the project
+{% hint style="danger" %}
+You need to create one entry for every type of material that you want ArchiveXL to expand.
+
+For a full list, see [.](./ "mention") -> [#hair-materials](./#hair-materials "mention")
+{% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/ccxl_mesh_file_03.png" alt=""><figcaption></figcaption></figure>
 
@@ -139,7 +159,7 @@ Since the dynamic context does not transfer to the `.mi`, we need to set the `Gr
 ## Step 4: The .mi files
 
 {% hint style="info" %}
-If your hair is using base game materials, you can use the `baseMaterial` from inside the `.mi` file, use it as the `baseMaterial` in your `.mesh`'s material, and delete the file.
+The `.mi` file and the `@context` are required for ArchiveXL character creator extensions. Without a .mi file, you won't have e.g. extra hair colours (e.g. [Hair Profiles CCXL](https://www.nexusmods.com/cyberpunk2077/mods/19115))
 {% endhint %}
 
 With the exception of the hair cap, the .mi file is a completely normal [material tempate file](../../../files-and-what-they-do/materials/re-using-materials-.mi.md) (link not necessary for understanding this guide).&#x20;
