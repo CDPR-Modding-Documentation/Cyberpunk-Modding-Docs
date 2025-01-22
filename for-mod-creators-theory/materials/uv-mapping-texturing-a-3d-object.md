@@ -32,7 +32,7 @@ To look at an object's UV mapping, you'll have to fire up Blender (or a 3d editi
 
 &#x20;An object's UV maps are visible in the Data tab:
 
-<figure><img src="../../.gitbook/assets/delete_extra_uv_map.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/delete_extra_uv_map (1).png" alt=""><figcaption></figcaption></figure>
 
 ## How do I edit the UV mapping?
 

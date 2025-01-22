@@ -52,6 +52,10 @@ Thanks to ArchiveXL magic, your .app file needs **only one appearance**. All oth
 
 You can use any of the existing base game hair colours, as long as the definition itself is valid.
 
+The template file has three `.app` files – one of them is for your hair's default appearance, one is for the `cyberware_01` appearance, and one is for the first person hair.&#x20;
+
+If you do not have a cyberware\_01 appearance, you can **delete** this file and adjust the file path under [#step-6-the-.incharactercustomization-file](ccxl-hairs.md#step-6-the-.incharactercustomization-file "mention")
+
 <details>
 
 <summary>If you are converting an existing mod with an .app file</summary>
@@ -228,6 +232,16 @@ This entry must be nameless, or it will overwrite the [character-creator](../../
 This entry defines the hairstyle for `cyberware_01`. &#x20;
 
 ### 6.3 `gameUiAppearanceInfo`s
+
+{% hint style="info" %}
+For more information on this, see [.inkcharactercustomization-cc-options.md](../../../files-and-what-they-do/character-creator/.inkcharactercustomization-cc-options.md "mention") -> [#gameuiappearanceinfo](../../../files-and-what-they-do/character-creator/.inkcharactercustomization-cc-options.md#gameuiappearanceinfo "mention"). This is not necessary for the purpose of this guide!
+{% endhint %}
+
+The template inkcc has three `gameUiAppearanceInfo`s, one for your hair, one for the cyberware\_01 variant, and one for FPP.
+
+If you do not have an extra appearance for cyberware\_01, you can re-use the default hair `.app` file.
+
+Make sure to adjust the paths to your corresponding .app file:
 
 <figure><img src="../../../../.gitbook/assets/ccxl_inkccfile_1.png" alt=""><figcaption></figcaption></figure>
 
