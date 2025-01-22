@@ -120,7 +120,13 @@ The tutorial hair has only two materials, and three material entries (`@context`
 
 <figure><img src="../../../../.gitbook/assets/ccxl_mesh_file_02.png" alt=""><figcaption></figcaption></figure>
 
-You can define more materials here if you need them (`@long`, `@short`, `@curls`, `@beard`, `@braid`, `@dread`, `@cap`).
+You can define more materials here if you need them (please note the box below)
+
+{% hint style="warning" %}
+You have to use the exact material names that ArchiveXL is expecting, or extra hair colours won't work.
+
+For a full list, see [.](./ "mention") -> [#hair-materials](./#hair-materials "mention")
+{% endhint %}
 
 Now, let's look at the materials themselves.
 
@@ -284,3 +290,9 @@ Now it's time to [custompath](../../../../modding-guides/items-equipment/customp
 
 
 
+## Troubleshooting
+
+### Hair colour extensions don't work on my hair!
+
+Most likely, you screwed up the names of your material definitions. They must be **exactly** as ArchiveXL expects them to be. \
+Go back to [#id-3.2-material-definitions](ccxl-hairs.md#id-3.2-material-definitions "mention") and double-check everything.
