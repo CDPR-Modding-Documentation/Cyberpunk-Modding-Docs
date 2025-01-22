@@ -34,7 +34,7 @@ If you need further help with MO2 beyond this guide, feel free to ask for assist
 CET and Red4Ext have to be **installed manually**
 {% endhint %}
 
-#### Manually Install CET and RED4ext\*\*
+#### Manually Install CET and RED4ext
 
 1. Download **Cyber Engine Tweaks (CET)** and **RED4ext** from Nexus Mods manually
 2. Install them by extracting their files to the game folder.
@@ -78,3 +78,10 @@ If you have mods from external sources:
 ### Tips and Best Practices
 
 * Stay up to date with the latest versions of both **MO2** and the mods for the best experience and compatibility.
+
+## Troubleshooting
+
+### Some mods aren't working!
+
+* Make sure that CET and RED4ext are installed **manually** (check [#installing-cet-and-red4ext-the-script-extenders](mo2-mod-organizer-2.md#installing-cet-and-red4ext-the-script-extenders "mention"))
+* Make sure that your MO2 instance is **not** directly in the [the-cyberpunk-2077-game-directory](../the-cyberpunk-2077-game-directory/ "mention"). This has been confirmed to cause problems and is a non-optional step.
