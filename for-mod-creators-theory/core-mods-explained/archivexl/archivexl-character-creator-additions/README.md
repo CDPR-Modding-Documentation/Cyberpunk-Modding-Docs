@@ -13,7 +13,7 @@ This page groups the individual CCXL addition guides. For a full explanation of 
 
 ### Wait, this is not what I want!
 
-To learn more about the character creator, check [files-and-what-they-do](../../../files-and-what-they-do/ "mention") -> [character-creator.md](../../../files-and-what-they-do/character-creator.md "mention")
+To learn more about the character creator, check [files-and-what-they-do](../../../files-and-what-they-do/ "mention") -> [character-creator](../../../files-and-what-they-do/character-creator/ "mention")
 
 ## Hair materials
 

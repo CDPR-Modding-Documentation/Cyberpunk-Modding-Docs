@@ -4,6 +4,7 @@
 * [The Wiki](the-wiki/README.md)
   * [Editing guidelines](the-wiki/editing-guidelines/README.md)
     * [Page Header: Summary](the-wiki/editing-guidelines/page-header-summary.md)
+    * [\[Shared\] wiki: editing text blocks](the-wiki/editing-guidelines/shared-wiki-editing-text-blocks.md)
 * [Glossary](glossary.md)
 
 ## For Mod Users:
@@ -177,7 +178,8 @@
     * [NodeRefs](for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/noderefs.md)
     * [.streamingBlock: Sector definitions and -variants](for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/.streamingblock-sector-definitions-and-variants.md)
   * [quests: .scene files](for-mod-creators-theory/files-and-what-they-do/quests-.scene-files.md)
-  * [Character Creator](for-mod-creators-theory/files-and-what-they-do/character-creator.md)
+  * [Character Creator](for-mod-creators-theory/files-and-what-they-do/character-creator/README.md)
+    * [.inkcharactercustomization: CC options](for-mod-creators-theory/files-and-what-they-do/character-creator/.inkcharactercustomization-cc-options.md)
 * [🌐 3d Modelling](for-mod-creators-theory/3d-modelling/README.md)
   * [Blender: Getting Started](for-mod-creators-theory/3d-modelling/blender-getting-started/README.md)
     * [Blender: Running Python Scripts](for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md)

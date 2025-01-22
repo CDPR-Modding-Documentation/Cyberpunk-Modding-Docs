@@ -107,4 +107,5 @@ Remember that clickbait comes from big media corporations optimizing for easy re
 
 The right image can sum up several paragraphs of writing. Make sure to use the right images.&#x20;
 
-If you include screenshots of anything, make sure to **highlight** the **important parts** (e.g. by drawing boxes and arrows). You can use [Greenshot](https://getgreenshot.org/downloads/) for this.&#x20;
+If you include screenshots of anything, make sure to **highlight** the **important parts** (e.g. by drawing boxes and arrows). You can use any graphic editing program (such as [Greenshot](https://getgreenshot.org/downloads/)) for this.&#x20;
+
