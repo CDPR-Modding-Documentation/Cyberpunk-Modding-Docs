@@ -149,9 +149,13 @@ Please note the following:
 <figure><img src="../../../../.gitbook/assets/ccxl_mesh_file_04.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-You need to create one entry for every type of material that you want ArchiveXL to expand.
+You need to create **one** entry for every type of material that you want ArchiveXL to expand.
 
 For a full list, see [.](./ "mention") -> [#hair-materials](./#hair-materials "mention")
+{% endhint %}
+
+{% hint style="warning" %}
+If your hair is using a material multiple times (e.g. long, long, cap), you still create **only one** LongBaseMaterial value.
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/ccxl_mesh_material_context.png" alt=""><figcaption></figcaption></figure>
