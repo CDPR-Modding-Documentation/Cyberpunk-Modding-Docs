@@ -101,17 +101,17 @@ First [turn autoupdate off for Steam](users-downgrading-preventing-auto-updates.
 \
 Here are the version-specific commands that you need to run. If you can't find your version on the list, check [here](https://steamdb.info/depot/1091501/history/) (Base Game) and [here](https://steamdb.info/depot/2138330/history/) (Phantom Liberty), and find the new Manifest ID tag.
 
+**Patch 2.2:**
+
+* Base Game: `download_depot 1091500 1091501 6971552143247463690`
+* Phantom Liberty: `download_depot 2138330 2138330 3585115081536255968`
+* REDmod: `download_depot 1091500 2060310 8197960292057385990`
+
 **Patch 2.12a:**
 
 * Base Game: `download_depot 1091500 1091501 3807385820978085162`
 * Phantom Liberty: `download_depot 2138330 2138330 5094071097429923087`
-* REDmod: `download_depot 1091500 2060310 1800196103221542454`
-
-**Patch 2.12:**
-
-* Base Game: `download_depot 1091500 1091501 3935102684525872303`
-* Phantom Liberty: `download_depot 2138330 2138330 5094071097429923087`
-* REDmod: `download_depot 1091500 2060310 2707809465866605439`
+* REDmod: `download_depot 1091500 2060310 1362194934051700882`
 
 Now, we do the thing:
 
