@@ -384,6 +384,8 @@
   * [Removing OcclusionNodes](modding-guides/world-editing/removing-occlusion.md)
   * [Editing locations in Blender](modding-guides/world-editing/editing-locations-in-blender.md)
   * [Adding Locations and Structures with ArchiveXL](modding-guides/world-editing/adding-locations-and-structures-with-archivexl.md)
+  * [Placing AISpot Nodes](modding-guides/world-editing/placing-aispot-nodes.md)
+  * [Creating Communities](modding-guides/world-editing/creating-communities.md)
   * [Setting area outlines](modding-guides/world-editing/setting-area-outlines.md)
   * [Custom fast travel points](modding-guides/world-editing/custom-fast-travel-points.md)
   * [Custom elevators](modding-guides/world-editing/custom-elevators.md)

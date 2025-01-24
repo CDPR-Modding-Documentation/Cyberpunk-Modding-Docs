@@ -6,6 +6,12 @@ description: >-
 
 # How to use worldCommunityRegistry and worldCompiledCommunity
 
+{% hint style="warning" %}
+This guide explains the theory on how to setup communties, and how they tie into quests
+
+For actually creating communities, it is recommended to instead follow the [communities with Object Spawner guide](../world-editing/creating-communities.md)
+{% endhint %}
+
 ## Summary
 
 **Published:** Nov 10 by [Sergey](https://app.gitbook.com/u/N691cVEMA0Nmecc6QHIAM73aI0z1 "mention")\
