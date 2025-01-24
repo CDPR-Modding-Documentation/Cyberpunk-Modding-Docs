@@ -7,7 +7,7 @@ description: Character creator options and their values
 ## Summary
 
 **Created:** Sep 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Sep 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Jan 23 2025 by @nutboy
 
 This page lists various properties of the character creator. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.&#x20;
 
@@ -90,6 +90,10 @@ For a list of [#name-of-meshes-by-index](cheat-sheet-head/hair.md#name-of-meshes
 ## Hair Colour
 
 <figure><img src="../../.gitbook/assets/HAIR COLOR - VISUAL GUIDE - BY LL.png" alt=""><figcaption><p>Hair Colours in CC - Visual Guide by LadyLea</p></figcaption></figure>
+
+## Hair Caps
+
+<figure><img src="../../.gitbook/assets/haircaps_reference.png" alt=""><figcaption><p>images by winksnblinks</p></figcaption></figure>
 
 ## Beard
 
