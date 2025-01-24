@@ -3,7 +3,7 @@
 ## Summary
 
 **Published:** ?? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** October 26 2024 by AllKnowingLion\
+**Last documented update:** January 23 2025 by AllKnowingLion\
 **Minimum required ArchiveXL version:** 1.5
 
 This page explains how to enable **body mod support** in ArchiveXL:
@@ -181,21 +181,5 @@ As of 18th March 2024, [Nim's More Body Meshes](https://www.nexusmods.com/cyberp
 Use only one main archive! \[[#\_nim\_more\_body\_meshes\_Gymfiend\_patch.archive](https://www.nexusmods.com/cyberpunk2077/mods/3890?tab=files\&file_id=72036)]
 {% endhint %}
 
-| Mod                                                                                         | Tag name | substitution value |
-| ------------------------------------------------------------------------------------------- | -------- | ------------------ |
-| [KS Lion's Lush Body](https://www.nexusmods.com/cyberpunk2077/mods/4901)                    | Lush     | `&body=lush`       |
-| [KS Lion's SoLush Body](https://www.nexusmods.com/cyberpunk2077/mods/8392)                  | Lush     | `&body=lush`       |
-| [KS Solo Ultimate](https://www.nexusmods.com/cyberpunk2077/mods/6944)                       | Ult      | `&body=ult`        |
-| [KS Solo 2.0](https://www.nexusmods.com/cyberpunk2077/mods/15869)                           | Solo\_OG | `&body=solo_og`    |
-| [Solo Arms (v1.8.1)](https://www.nexusmods.com/cyberpunk2077/mods/7148)                     | SoloArms | `&body=soloarms`   |
-| [KS Songbird 2.0](https://www.nexusmods.com/cyberpunk2077/mods/12898)                       | Song2    | `&body=song2`      |
-| [Hyst's Angel Body Mod](https://www.nexusmods.com/cyberpunk2077/mods/14896?tab=description) | Angel    | `&body=angel`      |
-| [Hyst's Big Butt](https://www.nexusmods.com/cyberpunk2077/mods/4420)                        | RB       | `&body=rb`         |
-| [Hyst's Big Boobs](https://www.nexusmods.com/cyberpunk2077/mods/4654)                       | EBB      | `&body=ebb`        |
-| [Hyst's Big Push Up Boobs](https://www.nexusmods.com/cyberpunk2077/mods/9083)               | EBBP     | `&body=ebbp`       |
-| [Hyst's Big Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/4654)                | EBBRB    | `&body=ebbrb`      |
-| [Hyst's Big Push Up Boobs & Butt](https://www.nexusmods.com/cyberpunk2077/mods/9083)        | EBBPRB   | `&body=ebbprb`     |
-| [Gymfiend](https://www.nexusmods.com/cyberpunk2077/mods/6423)                               | Gymfiend | `&body=gymfiend`   |
-| [-KS- Adonis](https://www.nexusmods.com/cyberpunk2077/mods/4968)                            | Adonis   | `&body=adonis`     |
-| [Na's Flat Chest](https://www.nexusmods.com/cyberpunk2077/mods/6883)                        | Flat     | `&body=flat`       |
-| [-KS- Atlas](https://www.nexusmods.com/cyberpunk2077/mods/8766)                             | Atlas    | `&body=atlas`      |
+<table><thead><tr><th width="299">Mod</th><th>Tag name</th><th>substitution value</th></tr></thead><tbody><tr><td>-<a href="https://www.nexusmods.com/cyberpunk2077/mods/4901">KS- Lion's Lush Body</a></td><td>Lush</td><td><code>&#x26;body=lush</code></td></tr><tr><td>-<a href="https://www.nexusmods.com/cyberpunk2077/mods/8392">KS- Lion's SoLush Body</a></td><td>Lush</td><td><code>&#x26;body=lush</code></td></tr><tr><td>-<a href="https://www.nexusmods.com/cyberpunk2077/mods/6944">KS- Solo Ultimate</a></td><td>Ult</td><td><code>&#x26;body=ult</code></td></tr><tr><td>-<a href="https://www.nexusmods.com/cyberpunk2077/mods/15869">KS- Solo 2.0</a></td><td>Solo_OG</td><td><code>&#x26;body=solo_og</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/7148">-KS- Solo Arms (v1.8.1)</a></td><td>SoloArms</td><td><code>&#x26;body=soloarms</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/12898">-KS- Songbird 2.0</a></td><td>Song2</td><td><code>&#x26;body=song2</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/14896?tab=description">Hyst's Angel Body Mod</a></td><td>Angel</td><td><code>&#x26;body=angel</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4420">Hyst's Big Butt</a></td><td>RB</td><td><code>&#x26;body=rb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4654">Hyst's Big Boobs</a></td><td>EBB</td><td><code>&#x26;body=ebb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/9083">Hyst's Big Push Up Boobs</a></td><td>EBBP</td><td><code>&#x26;body=ebbp</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4654">Hyst's Big Boobs &#x26; Butt</a></td><td>EBBRB</td><td><code>&#x26;body=ebbrb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/9083">Hyst's Big Push Up Boobs &#x26; Butt</a></td><td>EBBPRB</td><td><code>&#x26;body=ebbprb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/6423">Gymfiend</a></td><td>Gymfiend</td><td><code>&#x26;body=gymfiend</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4968">-KS- Adonis</a></td><td>Adonis</td><td><code>&#x26;body=adonis</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/6883">Na's Flat Chest</a></td><td>Flat</td><td><code>&#x26;body=flat</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/8766">-KS- Atlas</a></td><td>Atlas</td><td><code>&#x26;body=atlas</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/19286">General use - Small fem bodies</a></td><td>Small</td><td><code>&#x26;body=small</code></td></tr></tbody></table>
+
