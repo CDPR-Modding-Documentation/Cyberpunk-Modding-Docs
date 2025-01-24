@@ -270,11 +270,17 @@ See the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2g
 
 … or maybe not. Maybe you should try [troubleshooting-your-mesh-edits.md](troubleshooting-your-mesh-edits.md "mention") now.
 
-If everything worked, here are a few more guides that you might want to look into:
+If everything worked, you now have **replaced** an original Cyberpunk item. Since this is probably not what you want, check out the following guides:
+
+* [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention") will walk you through the steps of adding your mesh as a new piece of equipment
+* [custom-props](../../modding-guides/everything-else/custom-props/ "mention") will show you how to add props for AMM and entSpawner
+
+Here are a few more guides that could interest you?
 
 * [r-and-r-refitting-step-by-step.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") will teach you how to refit for a certain body mod
-* [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention") will walk you through the steps of adding your mesh as a new piece of equipment
 * [textured-items-and-cyberpunk-materials.md](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention") will tell you how materials work, and how you can use them to texture your item
+
+
 
 [^1]: Level of Detail
 
