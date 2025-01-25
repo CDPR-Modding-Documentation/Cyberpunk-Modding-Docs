@@ -32,6 +32,10 @@ This guide only explains how to place AISpot Nodes, for them to be actually be u
 
 ## Spawning AISpots
 
+{% hint style="warning" %}
+You **must** assign a unique NodeRef to each AISpot, in order for it to be usable
+{% endhint %}
+
 * In order to spawn a new AISpot, select the corresponding spawn category in Object Spawner:
   * `AI -> AI Spot`
 * When you spawn an AISpot, it will by default use Judy to preview the animation
