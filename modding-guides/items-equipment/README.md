@@ -4,7 +4,7 @@ description: Weapon, armour, consumable, hair, cyberware..
 
 # 👕 Items: Equipment
 
-Welcome to the **equipment** section. Here, you can find guides on how to edit equipment and wepaons in Cyberpunk. The section is split into the following subsections:
+Welcome to the **equipment** section. Here, you can find guides on how to edit equipment and weapons in Cyberpunk. The section is split into the following subsections:
 
 
 
