@@ -6,8 +6,8 @@ description: Edit hair mods to replace different slots
 
 ## Summary <a href="#required-wolvenkit" id="required-wolvenkit"></a>
 
-**Created:** Sep 22 2024 by **Silverlags**\
-**Last documented update:** Sep 22 2024 by **Silverlags**
+**Created:** Sep 22 2024 by [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")\
+**Last documented update:** Sep 22 2024 by [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
 
 This guide will walk through the basic steps of how to change a hair mod to correspond to a different slot, showing you how to change a hair mod from slot 01 to a different slot for female V.
 
@@ -172,7 +172,7 @@ You're done here! Proceed to [#pack-n-go](replace-a-hair-mods-slot.md#pack-n-go 
 
 ## Pack 'n' go
 
-Now that you've done replacing the mesh files, confirm that your mod worked by clicking on "[Install and launch game](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch)":
+Now that you've done replacing the mesh files, confirm that your mod worked by clicking on "[Install and launch game](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch)":
 
 You can also click on the down arrow next to install and set to "Install and Launch" to do these two steps for you!
 

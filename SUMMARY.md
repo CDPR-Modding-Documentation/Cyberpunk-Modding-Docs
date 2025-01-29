@@ -258,6 +258,7 @@
     * [Custom bodyhair for NPCs](modding-guides/npcs/guides-all-about-hair/custom-bodyhair-for-npcs.md)
     * [Custom Hair Colours](modding-guides/npcs/guides-all-about-hair/custom-hair-colours.md)
     * [Replace a hair mod's slot](modding-guides/npcs/guides-all-about-hair/replace-a-hair-mods-slot.md)
+    * [Convert a hair mod to hair CCXL mod](modding-guides/npcs/guides-all-about-hair/convert-a-hair-mod-to-hair-ccxl-mod.md)
   * [NPV - V as custom NPC](modding-guides/npcs/npv-v-as-custom-npc/README.md)
     * [NPV: Preparing the head in Blender](modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md)
     * [NPV: Creating a custom NPC](modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md)

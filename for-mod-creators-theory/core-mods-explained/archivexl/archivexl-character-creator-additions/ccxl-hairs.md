@@ -9,7 +9,8 @@ This page will tell you how to use ArchiveXL to add hair to the character creato
 
 ### Wait, this is not what I want!
 
-To learn more about the character creator, check [files-and-what-they-do](../../../files-and-what-they-do/ "mention") -> [character-creator](../../../files-and-what-they-do/character-creator/ "mention")
+* To learn more about the character creator, check [files-and-what-they-do](../../../files-and-what-they-do/ "mention") -> [character-creator](../../../files-and-what-they-do/character-creator/ "mention")
+* To convert an existing hair mod to CCXL, check [convert-a-hair-mod-to-hair-ccxl-mod.md](../../../../modding-guides/npcs/guides-all-about-hair/convert-a-hair-mod-to-hair-ccxl-mod.md "mention")
 
 ## Requirements
 
@@ -292,7 +293,11 @@ Now it's time to [custompath](../../../../modding-guides/items-equipment/customp
 
 <figure><img src="../../../../.gitbook/assets/ccxl_custompathing.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="warning" %}
+On some versions of WolvenKit, you might encounter an issue where a file like `.inkcharcustomization`  fails to apply the custom path, in that case you'll have to open the file and copy relative path of your `.apps`&#x20;
 
+It's recommended to look in the Log view and check if there's an error in a renaming custompaths in files.&#x20;
+{% endhint %}
 
 ## Troubleshooting
 
