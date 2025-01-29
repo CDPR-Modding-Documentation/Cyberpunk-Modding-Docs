@@ -52,7 +52,7 @@ Each Iconic weapon is a variant of a base weapon, with an hidden (from the playe
 This "hidden" mod contains a statModifiers array (to list all the stat changes this Iconic will have from the base weapon) and an OnAttach array. \
 The OnAttach array is where you'll want a GameplayLogicPackage to go. You may or may not need to define conditional effectors in there, but if you want your weapon to have the customary Iconic yellow description then be aware that there is where it's written (in the UIData of the GameplayLogicPackage).
 
-<figure><img src="../../../../.gitbook/assets/iconicstruct.png" alt=""><figcaption><p>$base: Items.IconicWeaponModAbilityBase == $type: GameplayLogicPackage</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/Screenshot 2025-01-28 182507 - Copia.png" alt=""><figcaption><p>$base: Items.IconicWeaponModAbilityBase == $type: GameplayLogicPackage</p></figcaption></figure>
 
 ## Step 0: Understanding the structure
 
