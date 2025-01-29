@@ -19,8 +19,8 @@ A comprehensive list of jargon you might see on this Wiki or around our communit
 
 * <mark style="color:red;">**Official Modkit for The Witcher 3 (WCC)**</mark>: An official CDPR command-line tool for modding The Witcher 3. Legacy WolvenKit makes extensive use of the Modkit. If you want to mod the Witcher, you're in the wrong wiki, choom!
 * <mark style="color:red;">**REDmod**</mark>: An [official CDPR command-line tool](for-mod-users/users-modding-cyberpunk-2077/redmod/) for [modding Cyberpunk 2077](for-mod-creators-theory/modding-tools/redmod/).&#x20;
-* <mark style="color:red;">**WolvenKit**</mark>: The unofficial [community modding toolkit](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/readme).&#x20;
-* <mark style="color:red;">**WolvenKit CLI**</mark>: The [command line interface version](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-cli) of WolvenKit. (Formerly CP77 Tools)
+* <mark style="color:red;">**WolvenKit**</mark>: The unofficial [community modding toolkit](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/readme).&#x20;
+* <mark style="color:red;">**WolvenKit CLI**</mark>: The [command line interface version](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-cli) of WolvenKit. (Formerly CP77 Tools)
 * <mark style="color:red;">**CP77 Tools**</mark>: The original Cyberpunk 2077 modding Command Line Tools. (Renamed and moved to WolvenKit CLI)
 * <mark style="color:red;">**Noesis**</mark>: (obsolete) A 3d viewer with plugin support for Cyberpunk 2077's file extensions. While Noesis can import and export 3D models, animations, and images, you should use Wolvenkit instead.
 * <mark style="color:red;">**010 Editor**</mark>:  (obsolete) A hex-editing software that can be paired with a custom template to parse REDengine resource files and access its content. You can use Wolvenkit instead.
@@ -54,7 +54,7 @@ _**Core Mods**_
 
 [<mark style="color:red;">**Red4Ext**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/2380): a core [script extender](https://docs.red4ext.com/), which allows modders to add new features, modify the game behavior, add new scripting functions or call existing ones in your own plugins.
 
-[<mark style="color:red;">**Redscript**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/1511):  is a core [script compiler](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg\_/) that can be integrated with the game and used to add/replace game scripts.
+[<mark style="color:red;">**Redscript**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/1511):  is a core [script compiler](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/) that can be integrated with the game and used to add/replace game scripts.
 
 [<mark style="color:red;">**Archive XL**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/4198):  [a modding tool that allows you to load custom resources](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/core-mods-explained/archivexl) without touching original game files, thus allowing multiple mods to expand same resources without conflicts. Requires <mark style="color:red;">**Red4Ext**</mark>.&#x20;
 
@@ -68,4 +68,4 @@ _**Other optional mods that greatly enhance user experience**_
 
 [<mark style="color:red;">**Cyberware-EX**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/9429): an extender of Cyberpunk's core functionality in regards to cyberware slot expansions system
 
-<mark style="color:red;">**AMM**</mark>: [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) is your ultimate Photo Mode helper that allows you to use tools to move NPCs and V around, pose them and further expand your photography portfolio with [AMM Add-on - Nibbles to NPCs 2.0](https://www.nexusmods.com/cyberpunk2077/mods/8125); change the time of day or even teleport to a curated list of locations. Unleash your creativity by changing NPCs looks - now with extended features by using [Appearance Creator Mod](https://www.nexusmods.com/cyberpunk2077/mods/10795) - decorate with endless props, and so much more awaits! Requires <mark style="color:red;">**CET**</mark> and <mark style="color:red;">**Codeware**</mark>.
+<mark style="color:red;">**AMM**</mark>: [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) is your ultimate Photo Mode helper that allows you to use tools to move NPCs and V around, pose them and further expand your photography portfolio; change the time of day or even teleport to a curated list of locations. Unleash your creativity by changing NPCs looks - now with extended features by using [Appearance Creator Mod](https://www.nexusmods.com/cyberpunk2077/mods/10795) - decorate with endless props, and so much more awaits! Requires <mark style="color:red;">**CET**</mark> and <mark style="color:red;">**Codeware**</mark>.
