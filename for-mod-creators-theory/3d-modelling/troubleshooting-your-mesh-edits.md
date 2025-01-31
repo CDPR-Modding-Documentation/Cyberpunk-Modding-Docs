@@ -5,10 +5,24 @@ description: When you can't import, or your imported mesh looks weird
 # Troubleshooting your mesh edits
 
 {% hint style="info" %}
-For a guide on exporting and importing meshes, check [wkit-blender-plugin-import-export.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention")
 
-If you don't know how to begin editing, check [mesh-sculpting-techniques](mesh-sculpting-techniques/ "mention") or [r-and-r-refitting-step-by-step.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention")
 {% endhint %}
+
+## Summary
+
+Last documented update: Jan 31 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page will help you troubleshooting your mesh edits.
+
+### Wait, this is not what I want!
+
+* For texture trouble, check [images-importing-editing-exporting.md](../../modding-guides/textures-and-luts/images-importing-editing-exporting.md "mention") -> [#troubleshooting](../../modding-guides/textures-and-luts/images-importing-editing-exporting.md#troubleshooting "mention")
+* For a guide on exporting and importing meshes, check [wkit-blender-plugin-import-export.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention")
+* If you don't know how to begin editing, check one (or all) of the following:
+  * [r-and-r-refitting-step-by-step.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention")
+  * [blender-getting-started](blender-getting-started/ "mention")
+
+This page&#x20;
 
 ## Importing
 
@@ -300,6 +314,10 @@ Check the `renderMask` attribute inside `heder / renderChunkInfos / index`_._ Fo
 The textures are most likely embedded. Here's how you can force your material to pull in external textures instead:&#x20;
 
 <figure><img src="../../.gitbook/assets/mesh_embedded_texture.png" alt=""><figcaption><p>Thanks to Adahm for the screenshot</p></figcaption></figure>
+
+### My textures are black and shiny!
+
+That's a problem with your **materials**, not with the mesh itself. Check [images-importing-editing-exporting.md](../../modding-guides/textures-and-luts/images-importing-editing-exporting.md "mention") -> [#troubleshooting](../../modding-guides/textures-and-luts/images-importing-editing-exporting.md#troubleshooting "mention")
 
 ## Garment Support
 
