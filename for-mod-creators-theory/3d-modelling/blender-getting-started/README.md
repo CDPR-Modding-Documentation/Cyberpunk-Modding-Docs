@@ -13,7 +13,10 @@ Summary
 {% hint style="success" %}
 **TL;DR:** Blender hard, but Blender free and Thog will make 3d object.&#x20;
 
-Do yourself a favour and read at least [#general-tips](./#general-tips "mention")!
+Do yourself a favour and&#x20;
+
+* read at least [#general-tips](./#general-tips "mention") from this page
+* optional: complete the Blender Donut Tutorial (find latest version via websearch)&#x20;
 {% endhint %}
 
 The open source software [Blender](https://www.blender.org/download/) is huge and intimidating — it is a tool for professionals, and many people consider it as good or even better than paid alternatives.
