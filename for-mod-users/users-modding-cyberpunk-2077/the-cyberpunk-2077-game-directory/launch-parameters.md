@@ -7,7 +7,7 @@ description: Launch parameters for Cyberpunk2077.exe (and what they do)
 ## Summary
 
 Created: Jun 17 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), based on research by [**emoose**](https://www.nexusmods.com/cyberpunk2077/mods/193)\
-Last documented update: Jan 19 2025 by [WSSDude](https://app.gitbook.com/u/4BzDhPEYGZO2eVMP8Fl4dcGAPKY2 "mention")
+Last documented update: Feb 2 2025 by [WSSDude](https://app.gitbook.com/u/4BzDhPEYGZO2eVMP8Fl4dcGAPKY2 "mention")
 
 This page lists all known launch parameters for the `Cyberpunk2077.exe` .
 
