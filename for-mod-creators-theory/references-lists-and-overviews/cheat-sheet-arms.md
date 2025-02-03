@@ -218,6 +218,19 @@ a0_006_ma__launcher_holstered_upperarm
 a0_005_ma__strongarms_holstered_r
 </code></pre></td></tr></tbody></table>
 
+## Ballistic Coprocessor and Smart Link
+
+These two items are represented identically by a game item internally called the \`weapon\_grip\`. However, the Weapon Grip is not a normal component, added or removed from the body, in the way that the arms themselves are. Instead, it is placed into an attachment slot. This has big implications for anyone hoping to manipulate them. As it is not part of the player puppet, you cannot manipulate it using Part Overrides, or Hiding Tags. Additionally, the game itself has weird and inconsistent rules for when to show the grip, and when the actually put the item into the attachment slot.
+
+As a result, most people give up and use a [mod](https://www.nexusmods.com/cyberpunk2077/mods/3897) that deletes the actual Weapon Grip meshes. It is possible to [manage](https://www.nexusmods.com/cyberpunk2077/mods/14948) the visibility via Codeware scripting, but even that isn't straight forward.
+
+<table><thead><tr><th width="155.33333333333331">Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>All</td><td><pre><code>base\gameplay\cyberware\smartgun_link\player_smartgun_link.ent
+base\gameplay\cyberware\subdermal_grip\player_subdermal_grip.ent
+</code></pre></td><td><pre><code>a0_004__weapon_grip_device
+a0_004__weapon_grip_decal_01
+a0_004__weapon_grip_decal_02
+</code></pre></td></tr></tbody></table>
+
 ## Hiding Arms
 
 {% hint style="info" %}
