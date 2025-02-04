@@ -11,6 +11,10 @@ Last documented edit: Feb 04 2025 by [manavortex](https://app.gitbook.com/u/NfZB
 
 This page tells you about Cyberpunk 2077 world editor mod.
 
+{% hint style="danger" %}
+As entSpawner is currently (Feb 2025) under active development, information on this page may be outdated. In this case, you're welcome to [become an editor](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7) and update it!
+{% endhint %}
+
 ### Wait, that's not what I want!
 
 For more information on [.](./ "mention"), check the wiki's page tree or use the "next" and "previous" buttons at the end of the page.
