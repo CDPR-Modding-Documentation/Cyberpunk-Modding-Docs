@@ -381,6 +381,7 @@
     * [Hand position on steering wheel](modding-guides/vehicles/problems-and-resolution/hand-position-on-steering-wheel.md)
   * [Chassis Modifications](modding-guides/vehicles/chassis-modifications.md)
 * [🌐 World Editing](modding-guides/world-editing/README.md)
+  * [World Editor: entSpawner](modding-guides/world-editing/world-editor-entspawner.md)
   * [World Editing: deleting objects](modding-guides/world-editing/world-editing-deleting-objects.md)
   * [Removing OcclusionNodes](modding-guides/world-editing/removing-occlusion.md)
   * [Editing locations in Blender](modding-guides/world-editing/editing-locations-in-blender.md)
