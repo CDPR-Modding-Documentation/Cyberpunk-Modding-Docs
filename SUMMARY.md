@@ -169,6 +169,7 @@
     * [Facial animations](for-mod-creators-theory/files-and-what-they-do/animations-.anims/facial-animations.md)
     * [Animations: IK and FK](for-mod-creators-theory/files-and-what-they-do/animations-.anims/animations-ik-and-fk.md)
   * [Camera](for-mod-creators-theory/files-and-what-they-do/camera.md)
+  * [.community files](for-mod-creators-theory/files-and-what-they-do/.community-files.md)
   * [Armatures: .rig files](for-mod-creators-theory/files-and-what-they-do/armatures-.rig-files.md)
   * [.chromaset: Razer Chroma integration](for-mod-creators-theory/files-and-what-they-do/.chromaset-razer-chroma-integration.md)
   * [Inkwidget: interface definition](for-mod-creators-theory/files-and-what-they-do/inkwidgets-a-custom-interface.md)
