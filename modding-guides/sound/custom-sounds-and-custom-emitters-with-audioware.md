@@ -7,7 +7,7 @@ description: >-
 # Custom Sounds & Custom Emitters with Audioware
 
 {% hint style="info" %}
-Before getting started, it's important to note that all the information below (and much more) can be found on the [Audioware Wiki](https://cyb3rpsych0s1s.github.io/audioware). This is a very basic guide. At the time of writing this, [Audioware](https://www.nexusmods.com/cyberpunk2077/mods/12001), by [Roms1383](https://next.nexusmods.com/profile/Roms1383), is in version 1.0.2. This guide was written by [Demon9ne](https://next.nexusmods.com/profile/Demon9ne).
+Before getting started, it's important to note that all the information below (and much more) can be found on the [Audioware Wiki](https://cyb3rpsych0s1s.github.io/audioware). This is a very basic guide. At the time of publishing this, [Audioware](https://www.nexusmods.com/cyberpunk2077/mods/12001), by [Roms1383](https://next.nexusmods.com/profile/Roms1383), was in version 1.0.2. The guide has since been updated for [Audioware](https://www.nexusmods.com/cyberpunk2077/mods/12001) version 1.3.2. This guide was written by [Demon9ne](https://next.nexusmods.com/profile/Demon9ne).
 {% endhint %}
 
 {% hint style="warning" %}
@@ -100,11 +100,11 @@ protected cb func OnHit(evt: ref<gameHitEvent>) -> Bool {
 		let entityID: EntityID = this.GetEntityID();
 		if EntityID.IsDefined(entityID) {
 			let audioware: ref<AudioSystemExt> = GameInstance.GetAudioSystemExt(game);
-			if !audioware.IsRegisteredEmitter(entityID) {
-				audioware.RegisterEmitter(entityID);
+			if !audioware.IsRegisteredEmitter(entityID, n"Android_Malfunction") {
+				audioware.RegisterEmitter(entityID, n"Android_Malfunction", n"");
 			};
-			if  audioware.IsRegisteredEmitter(entityID) {
-				audioware.PlayOnEmitter(StringToName("Android_Malfunction_" + RandRange(1, 3)), entityID, n"");
+			if  audioware.IsRegisteredEmitter(entityID, n"Android_Malfunction") {
+				audioware.PlayOnEmitter(StringToName("Android_Malfunction_" + RandRange(1, 3)), entityID, n"Android_Malfunction");
 			};
 		};
 	};
@@ -124,7 +124,7 @@ public class AndroidHitSfxDelayCallback extends DelayCallback {
 	let audioware: ref<AudioSystemExt>;
 	let entityID: EntityID;
 	public func Call() -> Void {
-		this.audioware.PlayOnEmitter(StringToName("Android_Malfunction_" + RandRange(1, 6)), this.entityID, n"");
+		this.audioware.PlayOnEmitter(StringToName("Android_Malfunction_" + RandRange(1, 6)), this.entityID, n"Android_Malfunction");
 	}
 }
 ```
@@ -139,10 +139,10 @@ protected cb func OnHit(evt: ref<gameHitEvent>) -> Bool {
 		let entityID: EntityID = this.GetEntityID();
 		if EntityID.IsDefined(entityID) {
 			let audioware: ref<AudioSystemExt> = GameInstance.GetAudioSystemExt(game);
-			if !audioware.IsRegisteredEmitter(entityID) {
-				audioware.RegisterEmitter(entityID);
+			if !audioware.IsRegisteredEmitter(entityID, n"Android_Malfunction") {
+				audioware.RegisterEmitter(entityID, n"Android_Malfunction", n"");
 			};
-			if  audioware.IsRegisteredEmitter(entityID) {
+			if  audioware.IsRegisteredEmitter(entityID, n"Android_Malfunction") {
 				let ds: ref<DelaySystem> = GameInstance.GetDelaySystem(game);
 				if IsDefined(ds) {
 					let callback: ref<AndroidHitSfxDelayCallback> = new AndroidHitSfxDelayCallback();
@@ -176,7 +176,7 @@ public class AndroidHitSfxDelayCallback extends DelayCallback {
 	let audioware: ref<AudioSystemExt>;
 	let entityID: EntityID;
 	public func Call() -> Void {
-		this.audioware.PlayOnEmitter(StringToName("Android_Malfunction_" + RandRange(1, 6)), this.entityID, n"");
+		this.audioware.PlayOnEmitter(StringToName("Android_Malfunction_" + RandRange(1, 6)), this.entityID, n"Android_Malfunction");
 	}
 }
 
@@ -187,10 +187,10 @@ protected cb func OnHit(evt: ref<gameHitEvent>) -> Bool {
 		let entityID: EntityID = this.GetEntityID();
 		if EntityID.IsDefined(entityID) {
 			let audioware: ref<AudioSystemExt> = GameInstance.GetAudioSystemExt(game);
-			if !audioware.IsRegisteredEmitter(entityID) {
-				audioware.RegisterEmitter(entityID);
+			if !audioware.IsRegisteredEmitter(entityID, n"Android_Malfunction") {
+				audioware.RegisterEmitter(entityID, n"Android_Malfunction", n"");
 			};
-			if  audioware.IsRegisteredEmitter(entityID) {
+			if  audioware.IsRegisteredEmitter(entityID, n"Android_Malfunction") {
 				let ds: ref<DelaySystem> = GameInstance.GetDelaySystem(game);
 				if IsDefined(ds) {
 					let callback: ref<AndroidHitSfxDelayCallback> = new AndroidHitSfxDelayCallback();
