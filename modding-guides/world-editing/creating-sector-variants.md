@@ -52,7 +52,7 @@ description: This guide explains how to add variants to your sectors, using Obje
 
 ## Testing variants
 
-* In order to quickly toggle variants on and off, during development and testing, you can use the following command in the CET-Console:
+* In order to quickly toggle variants on and off, during development and testing, you can use the following commands in the CET-Console:
 
 ```lua
 Game.GetWorldStateSystem():TogglePrefabVariant(CreateNodeRef("$/yourRefName"), "variantName", true) -- Toggle variant on
@@ -61,10 +61,10 @@ Game.GetWorldStateSystem():TogglePrefabVariant(CreateNodeRef("$/yourRefName"), "
 
 ## User Configurable Variants
 
-* In order for mod users to quickly and conviently toggle variants, one could e.g. hook up the [above](creating-sector-variants.md#testing-variants) code to some UI
+* In order for mod users to quickly and conveniently toggle variants, one could e.g. hook up the [above](creating-sector-variants.md#testing-variants) code to some UI
 * To make it easier, below there will be a ready to use Native Settings UI based menu, that allows toggling variants
-* In order to configure it, simply change the values at the top of the file:
-  * `settingsMainName/settingsSubName` : Controlls the names displayed for the category, in Native Settings UI
+* In order to configure it, simply change the values at the top of the `init.lua` file:
+  * `settingsMainName/settingsSubName` : Controls the names displayed for the category, in Native Settings UI
   * `defaultStates`: Here you define all the variants
     * `ref`: This is the variant node ref
     * `variant`: This is the variant name
