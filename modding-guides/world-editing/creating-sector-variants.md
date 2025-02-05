@@ -54,12 +54,10 @@ description: This guide explains how to add variants to your sectors, using Obje
 
 * In order to quickly toggle variants on and off, during development and testing, you can use the following command in the CET-Console:
 
-````lua
 ```lua
 Game.GetWorldStateSystem():TogglePrefabVariant(CreateNodeRef("$/yourRefName"), "variantName", true) -- Toggle variant on
 Game.GetWorldStateSystem():TogglePrefabVariant(CreateNodeRef("$/yourRefName"), "variantName", false) -- Toggle Variant off
 ```
-````
 
 ## User Configurable Variants
 
