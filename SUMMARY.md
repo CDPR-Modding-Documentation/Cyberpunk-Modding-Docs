@@ -392,6 +392,8 @@
   * [Setting area outlines](modding-guides/world-editing/setting-area-outlines.md)
   * [Custom fast travel points](modding-guides/world-editing/custom-fast-travel-points.md)
   * [Custom elevators](modding-guides/world-editing/custom-elevators.md)
+  * [Creating Sector Variants](modding-guides/world-editing/creating-sector-variants.md)
+  * [Exporting from Object Spawner](modding-guides/world-editing/exporting-from-object-spawner.md)
   * [Enable embedded collisions](modding-guides/world-editing/enable-embedded-collisions.md)
   * [Archived: World editing via file edit](modding-guides/world-editing/archived-world-editing-via-file-edit.md)
   * [Custom advertisements](modding-guides/world-editing/custom-advertisements-1.md)

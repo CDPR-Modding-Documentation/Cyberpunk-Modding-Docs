@@ -31,7 +31,7 @@ description: >-
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](https://github.com/justarandomguyintheinternet/CP77_entSpawner?tab=readme-ov-file#converting-to-standalone-axl-mod) into WolvenKit)
+  * Using Object Spawner (Spawning things and [importing](exporting-from-object-spawner.md) into WolvenKit)
 
 ## General setup
 

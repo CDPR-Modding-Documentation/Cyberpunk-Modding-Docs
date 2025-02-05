@@ -4,6 +4,10 @@ description: How to use streamingSectorPrefabVariant
 
 # Switching between sector states
 
+{% hint style="info" %}
+This page contains the theory of sector variants, for creating sectors with variants, head over to the [Creating Sector Variants](creating-sector-variants.md) guide
+{% endhint %}
+
 ## Summary
 
 **Published:** Jan 07 2025 by [Sergey](https://app.gitbook.com/u/N691cVEMA0Nmecc6QHIAM73aI0z1 "mention")\

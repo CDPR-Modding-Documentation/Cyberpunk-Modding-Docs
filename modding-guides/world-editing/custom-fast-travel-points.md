@@ -21,7 +21,7 @@ description: >-
 * You need to have a basic understanding of:
   * Working with WolvenKit
   * Creating tweaks using TweakXL (`.yaml`files)
-  * Using Object Spawner (Spawning things and [importing](https://github.com/justarandomguyintheinternet/CP77_entSpawner?tab=readme-ov-file#converting-to-standalone-axl-mod) into WolvenKit)
+  * Using Object Spawner (Spawning things and [importing](exporting-from-object-spawner.md) into WolvenKit)
 
 {% hint style="warning" %}
 Any NodeRef names, and custom TweakDB record names in this guide are _examples_, do not use the same ones as in the guide.
