@@ -50,7 +50,7 @@ Setup your Wkit project.
 
 Create `.questphase` `.streamingblock` and `.streamingsector` files&#x20;
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1.  Create `archiveXL` file and specify your `.streamingblock` and `.questphase` files&#x20;
 

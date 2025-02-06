@@ -41,7 +41,7 @@ description: >-
 * It is generally recommended to create a new group for each outline, which only contains the markers for that specific outline
 * Additionally, it is good practice to have one group containing all the outline groups
 
-<figure><img src="../../.gitbook/assets/image.png" alt="" width="391"><figcaption><p>Example project layout, one group for all outlines, containing one group per outline</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="391"><figcaption><p>Example project layout, one group for all outlines, containing one group per outline</p></figcaption></figure>
 
 ## Creating outline
 
@@ -53,7 +53,7 @@ description: >-
 * The markers will connect in the order in which they are within the group
 * To insert a marker in the middle, simply duplicate the closest marker (`CTRL-D`)
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption><p>Example of an outline group with five markers</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Example of an outline group with five markers</p></figcaption></figure>
 
 ## Linking outline to area node
 

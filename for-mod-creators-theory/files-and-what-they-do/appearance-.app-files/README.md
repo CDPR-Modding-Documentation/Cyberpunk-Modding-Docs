@@ -24,7 +24,7 @@ The real meat of the file: a list of appearance definitions, loaded via [root en
 A list of appearance definitions to be called from a [`root entity`](../entity-.ent-files/#root-entity)  file. The definitions are independent from each other (unless parentAppearance is used? Confirmation needed) and load meshes and effects via components.
 
 * `name`: the appearance's name that is listed in [its .ent file](../entity-.ent-files/#root-entity)
-* `parentAppearance`: the appearance this one inherits information from
+* `parentAppearance`: the appearance this one inherits information from (can be used for randomisation, see below)
 * `proxyMesh`: the .mesh file loaded for rendering the vehicle at a distance (confirmation needed)
 * `resolvedDependencies`: pre-loaded resources. You will usually want to delete these if you're adding items from scratch.
 * `looseDependencies`: lazy-loaded resources (confirmation needed)
@@ -59,10 +59,24 @@ You can't un-hide something via partsOverrides — you'll have to use [custom ta
 {% endhint %}
 
 {% hint style="info" %}
-If you leave the `depotPath` empty, then the component override will be handled by ArchiveXL. You should probably do this, which is why [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) will tell you about it.
+If you leave the `depotPath` empty, then the component override will be handled by ArchiveXL. You should probably do this, which is why [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) will tell you about it.
 
 For example, the base game isn't smart enough to omit an empty or unchanged mesh appearance name, overwriting your dynamic variants.
 {% endhint %}
+
+## Randomisation with parentAppearance
+
+Several appearances can be grouped by using the `parentAppearance` property. For instance in the appearance below when you spawn `service__sexworker_ma_prostitute_poor_01 → appearanceName = prostitute_poor_01` it selects a random appearance from 9 predefined appearances with `parentAppearance = prostitute_poor_01.`
+
+Overall there's at least 3 ways to randomize appearance:
+
+* based on `visualTags` in character record
+* based on `crowdAppearanceNames` in character record
+* based on `parentAppearance` in appearance definitions
+
+They can be combined: for example, visual tags selects initial appearance like `service__sexworker_ma_prostitute_poor_01`, then it's randomized again on the meshes based on `parentAppearance = prostitute_poor_01`
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## commonCookData
 
