@@ -3,9 +3,9 @@
 ## Summary
 
 **Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** August 2 2024 by LadyLea
+**Last documented update:** February 04 2025 by LadyLea
 
-This page will tell you about **tags** and how they can be used to influence item behaviour. It also teaches you how [#adding-custom-tags](archivexl-tags.md#adding-custom-tags "mention") can help you conditionally un-hide items.
+This page will tell you about **tags** and how they can be used to influence item behaviour. It also teaches you how [#adding-custom-tags](archivexl-tags.md#adding-custom-tags "mention") can help you conditionally un-hide items or add new features.
 
 ### Wait, this is not what I want!
 
@@ -153,4 +153,26 @@ overrides:
 
 Simply add the tag to your appearance's tags array near the bottom of the individual entries.
 
-<figure><img src="../../../.gitbook/assets/hiding_custom_tags.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/hiding_custom_tags.png" alt=""><figcaption><p>An example where to add your custom tag</p></figcaption></figure>
+
+## Making use of Custom Tags in your projects
+
+This section will show an example how Custom Tags are utilized with Body Mods and AXL Clothes. This reference can also be applied for other projects.
+
+Thanks to the development of Custom Tags; Hyst's Body Mods \[[EBB-EBBRB](https://www.nexusmods.com/cyberpunk2077/mods/4654)], \[[EBBP-EBBPRB](https://www.nexusmods.com/cyberpunk2077/mods/9083)] \[[ANGEL](https://www.nexusmods.com/cyberpunk2077/mods/14896)], are now updated with a new feature _Shapes Add-ons -_ which allows creators to make use of different chest states other than the default chest - either: **Squish** or **Natural \[EBBN]**. These add-ons will replace the default chest look of the modded bodies, by adding a Visual Tag.
+
+{% hint style="info" %}
+First things first, make use of [VTK - Resources for Refits](https://www.nexusmods.com/cyberpunk2077/mods/17544) as this page contains the **Shapes Add-ons** resources to refit your garment. Once the ideal shape is chosen, it is time to build up your AXL project (further details on how to make AXL clothes can be found [here ](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/items-equipment/adding-new-items)and [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants))
+{% endhint %}
+
+To make use of custom tags, _**one**_ of the Visual Tags below must be included within your .app file information list:
+
+* `hyst_boobs_natural` \[this tag will load the existing natural chest shape that is available when FemV doesn't wear clothes]
+
+OR
+
+* `hyst_boobs_squish`  \[this tag will load a squished chest shape that is ideal for tight garments such as bras or corsets]
+
+The below example shows how the tag `hyst_boobs_squish` + other [AXL Tags ](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags#archivexl-tags)are being utilized together for an AXL garment + Body Mods that are making use of [Custom Tags](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags#adding-custom-tags).
+
+<figure><img src="../../../.gitbook/assets/Custom Tags Example - CROPPED SPAGHETTI UNITARD by meluminary.png" alt=""><figcaption><p>Special thanks to <a href="https://next.nexusmods.com/profile/meluminary?gameId=3333">Meluminary</a> for giving permission to make use of her <a href="https://www.nexusmods.com/cyberpunk2077/mods/19168">CROPPED SPAGHETTI UNITARD</a> .app file as an example and visual guide</p></figcaption></figure>

@@ -6,7 +6,7 @@ description: List of words that need more context
 
 ## Summary
 
-**Published**: ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")                                                                                                                             **Last documented edit**: September 14 2024 by Silverlags
+**Published**: ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")                                                                                                                             **Last documented edit**: February 04 2024 by LadyLea
 
 A comprehensive list of jargon you might see on this Wiki or around our community. This glossary is not alphabetical, so be sure to use your browser search function to find what you're looking for. (CTRL+F for most applications)
 
@@ -64,8 +64,11 @@ _**Core Mods**_
 
 _**Other optional mods that greatly enhance user experience**_
 
-[<mark style="color:red;">**EquipmentEx**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/6945):  [an extender of Cyberpunk's core functionality](https://github.com/psiberx/cp2077-equipment-ex) in regards to clothes transmog system
-
-[<mark style="color:red;">**Cyberware-EX**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/9429): an extender of Cyberpunk's core functionality in regards to cyberware slot expansions system
-
 <mark style="color:red;">**AMM**</mark>: [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) is your ultimate Photo Mode helper that allows you to use tools to move NPCs and V around, pose them and further expand your photography portfolio; change the time of day or even teleport to a curated list of locations. Unleash your creativity by changing NPCs looks - now with extended features by using [Appearance Creator Mod](https://www.nexusmods.com/cyberpunk2077/mods/10795) - decorate with endless props, and so much more awaits! Requires <mark style="color:red;">**CET**</mark> and <mark style="color:red;">**Codeware**</mark>.
+
+[<mark style="color:red;">**PhotoMode-EX**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/18839)**:** a custom characters framework and QOL tweaks for Photo Mode.
+
+[<mark style="color:red;">**EquipmentEx**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/6945):  [an extender of Cyberpunk's core functionality](https://github.com/psiberx/cp2077-equipment-ex) in regards to clothes transmog system.
+
+[<mark style="color:red;">**Cyberware-EX**</mark>](https://www.nexusmods.com/cyberpunk2077/mods/9429): an extender of Cyberpunk's core functionality in regards to cyberware slot expansions system.
+
