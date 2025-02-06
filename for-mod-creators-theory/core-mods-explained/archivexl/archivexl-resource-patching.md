@@ -93,9 +93,9 @@ You can patch **definitions** (components, parts values, parts overrides, visual
 
 Some things are scattered across multiple files — for example, there are different player entities for first and third person. Fortunately, ArchiveXL solves this problem in the cradle by defining patchable scopes. You can find examples on the github repository:
 
-* the [player ent](https://github.com/psiberx/cp2077-archive-xl/blob/main/data/PlayerBaseScope.xl)
-* [player customization (e.g. appearances)](https://github.com/psiberx/cp2077-archive-xl/blob/main/data/PlayerCustomizationScope.xl)
-* [photomode .ent files](https://github.com/psiberx/cp2077-archive-xl/blob/main/archive/source/resources/PhotoModeScope.xl)
+* the [player ent](https://github.com/psiberx/cp2077-archive-xl/blob/main/bundle/source/resources/PlayerBaseScope.xl)
+* [player customization (e.g. appearances)](https://github.com/psiberx/cp2077-archive-xl/blob/main/bundle/source/resources/PlayerCustomizationScope.xl)
+* [photomode .ent files](https://github.com/psiberx/cp2077-archive-xl/blob/main/bundle/source/resources/PhotoModeScope.xl)
 
 ### Including scopes:
 
