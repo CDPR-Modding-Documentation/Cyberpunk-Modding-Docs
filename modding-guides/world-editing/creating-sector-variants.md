@@ -65,10 +65,15 @@ Game.GetWorldStateSystem():TogglePrefabVariant(CreateNodeRef("$/yourRefName"), "
 * To make it easier, below there will be a ready to use Native Settings UI based menu, that allows toggling variants
 * In order to configure it, simply change the values at the top of the `init.lua` file:
   * `settingsMainName/settingsSubName` : Controls the names displayed for the category, in Native Settings UI
-  * `defaultStates`: Here you define all the variants
+  * `defaultMutuallyExclusiveVariants`: Here you define string selectors for variants which should be mutually exclusive (Only one active at a time)
     * `ref`: This is the variant node ref
-    * `variant`: This is the variant name
     * `displayName`: This is a more human-readable string, gets actually shown in the UI
-    * `state`: This is the default state (Will override what is defined during export)
+    * `currentIndex`: This is the default state (Will override what is defined during export)
+    * `variants`: This array contains the variants which should be mutually exclusive, with a display name
+  * `defaultAdditiveVariants`: Here you define simple switches for variants which can be mixed and matched
+    * `ref`: This is the variant node ref
+    * `variant`: The name of the variant, as defined during export
+    * `displayName`: This is a more human-readable string, gets actually shown in the UI
+    * `defaultState`: The default state of the variant (Overrides what is set during export)&#x20;
 
 {% file src="../../.gitbook/assets/variantSwitcher.zip" %}
