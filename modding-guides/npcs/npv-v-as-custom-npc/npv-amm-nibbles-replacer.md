@@ -246,10 +246,10 @@ Add a new line underneath it, and copy and paste this:
 
 ```yaml
   effectors:
-    - !append
-      $type: AddItemsEffector
-      itemsToAdd:
-        - item: Items.Item_Name
+  - !append
+    $type: AddItemsEffector
+    itemsToAdd:
+      - item: 
 ```
 
 Alternatively, you can search "Items." in the Tweak Browser in Wolvenkit and find your weapons.
@@ -260,12 +260,12 @@ Alternatively, you can search "Items." in the Tweak Browser in Wolvenkit and fin
 
 ```yaml
   effectors:
-    - !append
-      $type: AddItemsEffector
-      itemsToAdd:
-        - item: Items.Item_Name
-        - item: Items.Item_Name
-        - item: Items.Item_Name
+  - !append
+    $type: AddItemsEffector
+    itemsToAdd:
+      - item: Items.Item_Name
+      - item: Items.Item_Name
+      - item: Items.Item_Name
 ```
 
 6. Save your yaml, check poses with weapons in game to see them.
