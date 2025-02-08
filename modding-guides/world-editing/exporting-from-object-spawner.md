@@ -68,25 +68,25 @@ That way you make sure that only the parts of your build that are currently clos
 
 ### Step 1: Export from Object Spawner
 
-* Start by going to the "Saved" tab, and adding all the groups you want to be part of your finished mod, by using the "Add to export" button of those groups
-* Next, head over to the "Export" tab
-* Enter a project name, this will be used for the folder and file names in WolvenKit
-* Now you can specify sector specific settings:
-  * Sector Category, usually just use interior or exterior
-  * [Sector Extents](exporting-from-object-spawner.md#streaming-ranges), used for determining when to stream the whole sector in / out
-  * [Sector Variants](creating-sector-variants.md)
-* Hit "Export"
+1. Start by going to the "Saved" tab, and adding all the groups you want to be part of your finished mod, by using the "Add to export" button of those groups
+2. Next, head over to the "Export" tab
+3. Enter a project name, this will be used for the folder and file names in WolvenKit
+4. Now you can specify sector specific settings:
+   1. Sector Category, usually just use interior or exterior
+   2. [Sector Extents](exporting-from-object-spawner.md#streaming-ranges), used for determining when to stream the whole sector in / out
+   3. [Sector Variants](creating-sector-variants.md)
+5. Hit "Export"
 
 <figure><img src="../../.gitbook/assets/exportUIExample" alt="" width="563"><figcaption><p>Example of the Export tab, with two groups</p></figcaption></figure>
 
 ### Step 2.5: Moving the file
 
-* Navigate to the `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\entSpawner\export` folder
-* Locate the file you just exported, it will be named `projectName_exported.json`
-* Copy the file
-* Open your WolveKit project (Make a new one if you do not have one yet)
-* Right-click the `raw` folder in the project explorer, and hit "Open in Windows Explorer"
-* Paste the file
+1. Navigate to the `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\entSpawner\export` folder
+2. Locate the file you just exported, it will be named `projectName_exported.json`
+3. Copy the file
+4. Open your WolveKit project (Make a new one if you do not have one yet)
+5. Right-click the `raw` folder in the project explorer, and hit "Open in Windows Explorer"
+6. Paste the file
 
 {% hint style="info" %}
 The file should now be located in `wkitProjectName\source\raw`
@@ -94,17 +94,17 @@ The file should now be located in `wkitProjectName\source\raw`
 
 ### Step 2: Importing into WolvenKit
 
-* Next, open the Script Manager:
-  * (Top tool-bar) Tools -> Script manager
-* Update your scripts by pressing the "Update Scripts" button
-* If the script was updated, or this is the first time you do this:
-  * Locate the `import_object_spawner` script in the "System" category
-  * Double click it, and agree to creating a local copy
-* Open the local copy, found under the "User" category
-* At the top of the now open script, locate the part that says "Modify this"
-  * Modify the path to point to the file you previously copied into the `raw` folder
-* Click the "Run" button
-* Multiple files should have been generated
-* Click the "Install" button
+1. Next, open the Script Manager:
+   1. (Top tool-bar) Tools -> Script manager
+2. Update your scripts by pressing the "Update Scripts" button
+3. If the script was updated, or this is the first time you do this:
+   1. Locate the `import_object_spawner` script in the "System" category
+   2. Double click it, and agree to creating a local copy
+4. Open the local copy, found under the "User" category
+5. At the top of the now open script, locate the part that says "Modify this"
+   1. Modify the path to point to the file you previously copied into the `raw` folder
+6. Click the "Run" button
+7. Multiple files should have been generated (At **least** one `.streamingsector`, and one `.streamingblock`
+8. Click the "Install" button
 
 <figure><img src="../../.gitbook/assets/wkitOSImport" alt=""><figcaption><p>All the steps visually shown</p></figcaption></figure>
