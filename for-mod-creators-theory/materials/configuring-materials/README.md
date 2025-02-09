@@ -33,7 +33,7 @@ You can find a wiki page with an overview of shaders under [shader-docs.md](../s
 You can see a material's default properties by opening the `.(re)mt` file in WolvenKit and inspecting the parameters array.&#x20;
 
 {% hint style="info" %}
-To find a shader template, use the [Wolvenkit Search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) (you can copy the query):&#x20;
+To find a shader template, use the [Wolvenkit Search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) (you can copy the query):&#x20;
 
 `yourMaterialType > .remt|.mt`
 {% endhint %}
@@ -49,6 +49,18 @@ Here, you can also see what value a shader template will use if you don't give i
 The interesting bit is on the right side of the arrow in the picture above, since it specifies the type of parameter:
 
 <table><thead><tr><th width="261">Type: CMaterialParameter…</th><th width="137">CKeyValue</th><th>explanation</th></tr></thead><tbody><tr><td><code>Vector</code></td><td>Vector4</td><td>A vector with X, Y, Z, W (coordinates and space). This is also used for colour values (Wolvenkit usually supports those).</td></tr><tr><td><code>Texture</code></td><td>RRef:Texture</td><td>A texture (.xbm) via DepotPath</td></tr><tr><td><code>Color</code></td><td>Color</td><td>A color (RGB/color picker)</td></tr><tr><td><code>MultilayerMask</code></td><td>RRef:MultilayerMask</td><td>a <a href="../multilayered/#what-is-the-mlmask">multilayerMask</a> (<code>.mlmask</code>) via depotPath</td></tr><tr><td><code>MultilayerSetup</code></td><td>RRef:MultilayerSetup</td><td>a <a href="../multilayered/#what-is-the-mlsetup">multilayerSetup</a> (<code>.mlsetup</code>) via depotPath</td></tr><tr><td><code>Scalar</code></td><td>CFloat/CDouble</td><td>a numeric value with decimals. Float has 7 decimals, Double has 15</td></tr><tr><td><code>TextureArray</code></td><td>???</td><td>a texarray via depotPath</td></tr><tr><td><code>StructBuffer</code></td><td>???</td><td></td></tr><tr><td><a data-footnote-ref href="#user-content-fn-1"><code>HairProfile</code></a></td><td>RRef:<code>.hp</code></td><td>A hair profile (<a href="../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#hair-profiles-.hp">.hp</a>) via depotPath</td></tr></tbody></table>
+
+## Material layering
+
+A material's relative "z-index" is determined by the `materialPriority` property in the shader. Here is how it works:
+
+If a material inherits properties from `base\materials\mesh_decal.mt` and has the enableMask checkbox enabled, it renders on top of materials without that option.
+
+If EMP\_front is enabled, that material renders on top of those with enableMask.
+
+If both enableMask and EMP\_front are enabled, the material covers everything.
+
+If materials have identical settings, they start flickering when overlapping. However, this only seems to happen if one of them is opaque (possibly).
 
 ## Transparency
 
