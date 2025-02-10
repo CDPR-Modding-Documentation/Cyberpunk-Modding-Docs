@@ -13,6 +13,8 @@ This page will give you information on how to get a 3d object into Cyberpunk.
 
 If you'd like to watch a video about the whole process, feel free to address the video version of this guide - [https://www.youtube.com/watch?v=r3nyFm-9h9o](https://www.youtube.com/watch?v=r3nyFm-9h9o)&#x20;
 
+Alternative workflow, shorter video tutorial by CyberVesna - [Importing Custom Clothes](https://youtu.be/qiwZGZG66fA)
+
 ### Wait, that's not what I want!
 
 You can find other relevant guides scattered across this wiki, for example
