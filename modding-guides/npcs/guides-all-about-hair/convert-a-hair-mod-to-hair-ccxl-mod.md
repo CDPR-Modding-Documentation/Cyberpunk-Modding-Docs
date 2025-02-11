@@ -10,6 +10,8 @@ description: >-
 
 Published: Jan 29 2025 by [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
 
+Updated: Feb 11 2025 by [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
+
 CCXL is a way of adding new slots into character customization menus. the benefit is that you won't have to change or replace the vanilla game files to do add your own! this guide is related to adding new hair slots from an already-done mod.&#x20;
 
 {% hint style="info" %}
@@ -161,14 +163,26 @@ You'll be doing a combination of both steps in that you'll add your cap's `.xbm`
 When you're finished from this step completely, rename your material instance file names to the one you chose before.
 
 {% hint style="success" %}
-I recommend you to click on "Update in Project Files" as shown below, this helps with renaming paths in this whole guide and especially with the file thats in resources.&#x20;
+I recommend you to click on "Update in Project Files" as shown below, this helps with renaming paths in this whole guide and especially with the file that's in resources.&#x20;
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (574).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Edit the .mesh file
 
-Here comes the interesting part of this guide , and I want you to follow with me **step by step** as you might encounter some problems with how the hair is shown if you skip a step.
+Here comes the interesting part of this guide as its the cornerstone of the hair mod itself.&#x20;
+
+This process can be done either by WolvenKit's Convert hair to CCXL Material button or manually by deleting and editing sections of the mesh itself
+
+### Edit automatically with WolvenKit
+
+if you happen to have the WolvenKit with the version 8.16.1-nightly.2025-02-11 or later you can do this step entirely automatically by clicking on the Materials button, click on Convert hair to CCXL materials button, then select the .mi files that you want with their style material from the dropdown menus then click Finish. You can also choose if you want to include a cap or not. Once you're done just rename the files and go to the Rename section of this step.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+### Edit manually
+
+I want you to follow with me **step by step** as you might encounter some problems with how the hair is shown if you skip a step.
 
 In this step we'll remove all references of the old materials and their appearances before letting way of the new order of materials, much simplified way of having one appearance and letting ArchiveXL do the rest of them.
 
@@ -205,6 +219,8 @@ If you've changed the materialEntries' name of `@long` you'll have to rename the
 
 6. Click on the second item named @long (or the name you've changed), in baseMaterial's DepotPath paste the relative path of the material instance that has the same name (so `myhair_long.mi` to the `@long`'s `DepotPath)` and make sure that the Flags are set to soft, do the same process for the `@cap` item.
 7. In the template mesh's `appearances`item,, right click on black\_carbon and click on "Copy Array Content". RIght click on your `appearances` item and click "Paste into Array/Buffer". If you've changed the material entry name of @long then reflect that in the appeareance by expanding `chunkMaterials` and replace the `long` text to the material entry you've had. (So it becomes `black_carbon@short` ).
+
+### Rename
 
 Now save your mesh file, rename it to the name that you want. Duplicate the mesh and add the `_cyberware` at the end of the name of the duplicated mesh.&#x20;
 

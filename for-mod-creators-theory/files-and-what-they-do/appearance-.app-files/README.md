@@ -76,7 +76,7 @@ Overall there's at least 3 ways to randomize appearance:
 
 They can be combined: for example, visual tags selects initial appearance like `service__sexworker_ma_prostitute_poor_01`, then it's randomized again on the meshes based on `parentAppearance = prostitute_poor_01`
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (577).png" alt=""><figcaption></figcaption></figure>
 
 ## commonCookData
 
