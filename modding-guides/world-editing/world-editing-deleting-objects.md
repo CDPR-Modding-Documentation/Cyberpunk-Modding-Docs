@@ -31,6 +31,10 @@ This guide will feature the **manual process**, which can get tedious if you wan
 * Wheeze's Removal Editor ([Link on GitHub, also has documentation there](https://github.com/justarandomguyintheinternet/CP77_removalEditor))
 * Generating the .xl file via Blender (see [#blender-and-archivexl](world-editing-deleting-objects.md#blender-and-archivexl "mention")
 
+
+{% hint style="warning" %} It is extremely recommended to use Removal Editor (linked above) to remove nodes from the world as it is easier to use, easier to update and maintain and faster than doing it manually. {% endhint %}
+
+
 Although you can also work directly in your `archive/pc/mod` directory, you should [create a Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can easily pack your mod for Nexus deployment.
 
 ## Video guide
