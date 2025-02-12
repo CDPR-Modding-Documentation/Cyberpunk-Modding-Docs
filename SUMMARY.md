@@ -196,6 +196,7 @@
   * [Morphtargets](for-mod-creators-theory/3d-modelling/morphtargets.md)
   * [Garment Support: How does it work?](for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/README.md)
     * [Garment support from scratch](for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/garment-support-from-scratch.md)
+    * [Painting garment support parameters](for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/painting-garment-support-parameters.md)
   * [Troubleshooting your mesh edits](for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md)
   * [Dangle bones](for-mod-creators-theory/3d-modelling/dangle-bones/README.md)
     * [Moving a Dangle Chain](for-mod-creators-theory/3d-modelling/dangle-bones/moving-a-dangle-chain.md)

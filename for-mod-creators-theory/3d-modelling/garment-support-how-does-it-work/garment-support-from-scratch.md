@@ -24,7 +24,7 @@ This guide assumes that you know your way around in WolvenKit. If you don't and 
 
 ## Prerequisites
 
-* [ ] A [WolvenKit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
+* [ ] A [WolvenKit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
 * [ ] One or more [meshes as .glb](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes)
 
 <table><thead><tr><th width="180"></th><th width="179"></th><th></th></tr></thead><tbody><tr><td>Wolvenkit<br><a href="https://github.com/WolvenKit/Wolvenkit/releases">Stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a></td><td>>= 8.15 </td><td>You can't make mods without Wolvenkit</td></tr><tr><td><a href="https://www.blender.org/download/releases">Blender</a></td><td>>= 4.2</td><td>3d editing software</td></tr><tr><td><a data-mention href="../../modding-tools/wolvenkit-blender-io-suite/">wolvenkit-blender-io-suite</a></td><td>>= 1.6.0 (download tags <a href="https://github.com/WolvenKit/Cyberpunk-Blender-add-on/tags">here</a>)</td><td>The Wolvenkit Blender Addon. You can't import/export to Blender without it.</td></tr></tbody></table>
@@ -131,3 +131,7 @@ You still need to use [component name prefixes](./#component-prefixes) for garme
 ### My garment support is clipping into the body!
 
 Try re-doing the shrinkwrap, but with a higher offset instead. Try something like 0.002 or so, whatever works for you.
+
+### My garment support looks messy or clips a lot with other clothes!
+
+Try making some garment support parameters!  Check out [Painting garment support parameters](painting-garment-support-parameters.md) for guidance.
