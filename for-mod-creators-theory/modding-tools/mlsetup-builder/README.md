@@ -205,7 +205,11 @@ As of 1.6.8, MLSB needs to use a certain version of the Wolvenkit Command Line I
 
 ### Building the depot
 
-Again, this step is optional, you can [use MLSB](./#using-mlsb) straight away.&#x20;
+{% hint style="success" %}
+With version 1.68, this is completely optional an you can just [use MLSB](./#using-mlsb). Every time you click on a mesh, MLSB will ask you to uncook it. The step below will do everything at once, but can take some time.
+
+Consider [#building-the-microblend-depot](./#building-the-microblend-depot "mention")for better material previews, though!
+{% endhint %}
 
 1. Open the menu "Build" and select "Repository" to uncook the archives:
 
