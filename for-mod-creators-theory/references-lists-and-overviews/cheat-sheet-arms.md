@@ -234,7 +234,7 @@ a0_004__weapon_grip_decal_02
 ## Hiding Arms
 
 {% hint style="info" %}
-There's no easy way to hide arms except by getting rid of everything -  The ArchiveXL `hide_arms` tag actually hides everything with an `a0_` prefix. For more information, check [#archivexl-tags](../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#archivexl-tags "mention")
+There's no easy way to hide arms except by getting rid of everything -  The ArchiveXL `hide_Arms` tag actually hides everything with an `a0_` prefix. For more information, check [#archivexl-tags](../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#archivexl-tags "mention")
 
 If you want to selectively hide arm meshes or sub-meshes you will need to become familiar with all the contents of this page, and the chances that you can do anything elegantly are slim.&#x20;
 
