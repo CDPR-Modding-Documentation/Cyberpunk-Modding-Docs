@@ -3,7 +3,7 @@
 ## Summary
 
 Published: Jan 20 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") and [IslandDancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
-Last documented edit: Jan 18-20 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [IslandDancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention"), [CyberVesna](https://app.gitbook.com/u/cmjyzwfGm7YaRhuU9Kyk4uTuE3Y2 "mention") and [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")
+Last documented edit: Feb 16 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [IslandDancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention"), [CyberVesna](https://app.gitbook.com/u/cmjyzwfGm7YaRhuU9Kyk4uTuE3Y2 "mention") , [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention"), and [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
 
 This page will tell you how to use ArchiveXL to add hair to the character creator.&#x20;
 
@@ -227,16 +227,22 @@ These entries **create** character creator additions, while the CustomizationOpt
 
 Let's take a look at the `headCustomizationOptions`. The first to entries of the type `gameuiSwitcherInfo` add our new hair to Cyberpunk's character creator menu, so that they show up when you scroll through the hairs.
 
+
+
 #### The first entry
 
 {% hint style="danger" %}
-This entry must be nameless, or it will overwrite the [character-creator](../../../files-and-what-they-do/character-creator/ "mention")'s base [switcher](../../../files-and-what-they-do/character-creator/#the-switcher)!
+If you're only using one hairstyle mesh, keep this entry nameless, or it will overwrite the [character-creator](../../../files-and-what-they-do/character-creator/ "mention")'s base [switcher](../../../files-and-what-they-do/character-creator/#the-switcher)!
 {% endhint %}
 
 * **link**: Targets one of the `headGroups` entries
 * **names**: Contains the `headGroup`'s `options`
 
 <figure><img src="../../../../.gitbook/assets/ccxl_inkcc_2.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+If you want to use a different mesh when cyberware\_01 is enabled, you will have to cut "hairstyle" from the `link` in the first entry and instead put it in `name` to have two visibly distinct meshes. Otherwise you'll only have one mesh visible.
+{% endhint %}
 
 #### The second entry: `hairstyle_cyberware`
 
@@ -305,3 +311,9 @@ It's recommended to look in the Log view and check if there's an error in a rena
 
 Most likely, you screwed up the names of your material definitions. They must be **exactly** as ArchiveXL expects them to be. \
 Go back to [#id-3.2-material-definitions](ccxl-hairs.md#id-3.2-material-definitions "mention") and double-check everything.
+
+### I have duplicate entry in hairstyles options!
+
+This happens due to having a different `localizedName` for`cyberware_hairstyle` switcher that's inside the`.inkcc` file. For example`UI-Customization-your_first_hair` in the blank switcher, and `UI-Customization-your_first_hair_cyberware`  in the `cyberware_hairstyle` switcher.&#x20;
+
+If you want to have a unique hairstyle mesh when cyberware\_01 is enabled refer to [#id-6.2-gameuiswitcherinfos](ccxl-hairs.md#id-6.2-gameuiswitcherinfos "mention"), specifically the hint about `link` and `name`.
