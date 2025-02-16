@@ -32,7 +32,13 @@ The [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "m
 
 #### Delete custom normal split
 
-You can check if your mesh has any custom `split normal` attributes, and delete them:
+You can check if your mesh has any custom `split normal` attributes, and delete them.
+
+{% hint style="danger" %}
+As this will irrevocably change your 3d object, create a **backup** first.
+{% endhint %}
+
+
 
 <figure><img src="../../.gitbook/assets/blender_clear_split_normals.png" alt=""><figcaption></figcaption></figure>
 
