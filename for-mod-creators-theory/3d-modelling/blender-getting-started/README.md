@@ -8,7 +8,7 @@ coverY: 0
 Summary
 
 **Published:** May 11 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** May 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Feb 17 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 {% hint style="success" %}
 **TL;DR:** Blender hard, but Blender free and Thog will make 3d object.&#x20;
@@ -247,6 +247,18 @@ Sounds familiar? You've run into Proportional Editing.
 * When you move (`G`) or scale (`S`) your selection, you will see a circle for the area of  its effect.&#x20;
   * By default, that circle might be huge and outside your screen. You might wanna change this and then [#save-startup-file](./#save-startup-file "mention").
   * You can change the circle's size with your mouse wheel
+
+### Face Orientation
+
+&#x20;Each mesh has an inside and an outside. Most materials don't even show the inside, so it's kinda important to know which is which.
+
+Once you have entered Edit Mode, you can show Face Orientation from the menu at the top right of your viewport:
+
+<figure><img src="../../../.gitbook/assets/blender_for_beginners_show_normals.png" alt=""><figcaption><p>Image credit: <a href="https://3dmodels.org/blog/how-to-fix-normals-in-blender/">3dmodels.com</a></p></figcaption></figure>
+
+To turn a face inside out, you can use the Normals menu (Shortcut: `Alt+N`) and select **Flip**:
+
+<figure><img src="../../../.gitbook/assets/blender_for_beginners_flip_normals.png" alt=""><figcaption></figcaption></figure>
 
 ## The Scripting perspective
 

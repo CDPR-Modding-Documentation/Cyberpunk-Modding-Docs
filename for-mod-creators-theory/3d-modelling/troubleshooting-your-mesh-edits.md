@@ -279,6 +279,8 @@ Do they show up in the Wolvenkit preview?
 * No: you probably forgot to select them when [exporting from Blender](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender). Make sure that you get them all into Wolvenkit.
 * Yes: There's either an issue with your [material assignments](../materials/materials-troubleshooting.md) or with your [chunkmasks](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md). Refer to the corresponding guides to learn how you can debug this.
 
+If that's not it, check [#my-mesh-is-inside-out](troubleshooting-your-mesh-edits.md#my-mesh-is-inside-out "mention") below.
+
 ### My mesh won't move at all
 
 Some meshes require an entAnimatedComponent along with the garment's component. Check [here](../../modding-guides/npcs/appearances-change-the-looks/#animations-if-you-cant-avoid-them-copy-them-as-well) for details.
@@ -357,8 +359,14 @@ Check the component's **id** in the mesh `.ent` or `.app` appearance's `componen
 
 If any given ID is equipped twice, it can break garment support in the way you're observing.
 
-As of January 03 2023, we don't know how these are generated and can't tech the problem away in Wolvenkit. Your only choice here is to manually randomize your ID in a text editor by switching out single digits. Remember that the resulting ID needs to be an even number!
+{% hint style="info" %}
+If you select the ID in the node tree viewer  to the left, you can use `Generate New CRUID` to create a new entry that is unique considering all your installed mods.
+{% endhint %}
 
 #### Import settings
 
 Make sure to [import your mesh](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support) with garment support enabled. If that doesn't do the trick, you can try [re-creating](garment-support-how-does-it-work/garment-support-from-scratch.md) the garment support shapekeys in Blender.
+
+## My mesh is inside-out!
+
+Check the [#face-orientation](blender-getting-started/#face-orientation "mention") and make sure that all the faces you see are blue. If not, you have to flip them – see [the link](blender-getting-started/#face-orientation) for how.
