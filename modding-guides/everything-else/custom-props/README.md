@@ -7,7 +7,7 @@ description: How to create custom props to use with AMM or sector editing
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published:** April 2023 by **@manavortex**\
-**Last documented update:** Sep 20 2024 by **@manavortex**
+**Last documented update:** Feb 18 2025 by **@manavortex**
 
 This guide will teach you how to create AMM props in two variants:
 
@@ -26,6 +26,12 @@ For another guide regarding custom props, check [textured-items-and-cyberpunk-ma
 * If you want to enable collisions, see [enable-embedded-collisions.md](../../world-editing/enable-embedded-collisions.md "mention")
 * If you want to make meshes out of 2d textures, see [your-image-as-custom-mesh.md](../../../for-mod-creators-theory/3d-modelling/your-image-as-custom-mesh.md "mention")
 * … or use the wiki's AI-assisted search function, or simply poke around
+
+### Video Guide
+
+For the tutorial's full written version, just keep reading. Please keep in mind that video guides will become outdated faster than wikis!
+
+{% embed url="https://youtu.be/3nwxM254HTI" %}
 
 ## Where to find models
 
@@ -66,13 +72,13 @@ For 3d printing, usually not textured:
 This section will tell you how to get the files, then give you an [explanation](./#explanation-what-did-you-just-download) of what they do and finally show you a [diagram](./#diagram) on how they hang together.
 
 {% hint style="success" %}
-At any part during the process, you can [install the mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game to spawn the props with AMM. In the decor tab, search for
+At any part during the process, you can [install the mod](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game to spawn the props with AMM. In the decor tab, search for
 
 `Tutorial item`\
 `Tutorial item (customizable)`
 {% endhint %}
 
-1. Create a [project in Wolvenkit](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name. This will later be the name of your archive file.
+1. Create a [project in Wolvenkit](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name. This will later be the name of your archive file.
 2. Download the AMM prop template from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8011). Download **the complete source folder**, as it will have the files as depicted below.
 3. Prepare your Wolvenkit project by [merging the source folder](#user-content-fn-1)[^1] you downloaded with the one from your project. By the end of it, you should have the following files:
 
@@ -303,7 +309,7 @@ Good: `baseball`\
 Bad: `Baseball`
 {% endhint %}
 
-4. Back in Wolvenkit, right-click on your folder and [export the entire thing to json](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json).
+4. Back in Wolvenkit, right-click on your folder and [export the entire thing to json](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json).
 5. Switch to the `raw` tab in Wolvenkit and open your json files in Notepad++
 6.  Via `Search and Replace in Files` (Ctrl+Shift+F), replace `template` with the name of your new prop and folder (e.g. `baseball`). Replace it in all files, **using Match case**:
 
@@ -312,7 +318,7 @@ Bad: `Baseball`
 8. In the project browser's raw section, right-click on the folder and select `Convert from json`. This will have updated the relationships between the files to your renamed files.
 9. Delete the files / appearances that you don't need. Save and close the mesh file.
 10. Import your meshes and textures over the ones from the template. For a guide on how to do that, check [here](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#importing-a-mesh).
-11. To make sure that everything went okay, open your new root entity (`tutorial\\amm_props\\baseball\\baseball.ent`) in Wolvenkit and save it to trigger [file validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). Check the Wolvenkit log window for errors. If you made no mistakes in the renaming process, there shouldn't be any.
+11. To make sure that everything went okay, open your new root entity (`tutorial\\amm_props\\baseball\\baseball.ent`) in Wolvenkit and save it to trigger [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). Check the Wolvenkit log window for errors. If you made no mistakes in the renaming process, there shouldn't be any.
 12. To register the prop with AMM, add another entry to the props array in your `LUA` file:
 
 ```
@@ -352,7 +358,7 @@ For general 3d model troubleshooting (including import errors), see [here](../..
 
 ### My prop doesn't even list in AMM!
 
-The problem is in your .lua file. Use [this tool](https://www.tutorialspoint.com/execute\_lua\_online.php) to check the syntax and make sure that there are no errors - usually, it is missing/extra commas and/or missing/extra braces.
+The problem is in your .lua file. Use [this tool](https://www.tutorialspoint.com/execute_lua_online.php) to check the syntax and make sure that there are no errors - usually, it is missing/extra commas and/or missing/extra braces.
 
 If the syntax is okay and your prop still doesn't show up, double-check your category and make sure that it is one of the existing ones.
 

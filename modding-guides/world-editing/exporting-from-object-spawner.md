@@ -79,32 +79,14 @@ That way you make sure that only the parts of your build that are currently clos
 
 <figure><img src="../../.gitbook/assets/exportUIExample" alt="" width="563"><figcaption><p>Example of the Export tab, with two groups</p></figcaption></figure>
 
-### Step 2.5: Moving the file
-
-1. Navigate to the `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\entSpawner\export` folder
-2. Locate the file you just exported, it will be named `projectName_exported.json`
-3. Copy the file
-4. Open your WolveKit project (Make a new one if you do not have one yet)
-5. Right-click the `raw` folder in the project explorer, and hit "Open in Windows Explorer"
-6. Paste the file
-
-{% hint style="info" %}
-The file should now be located in `wkitProjectName\source\raw`
-{% endhint %}
-
 ### Step 2: Importing into WolvenKit
 
-1. Next, open the Script Manager:
-   1. (Top tool-bar) Tools -> Script manager
-2. Update your scripts by pressing the "Update Scripts" button
-3. If the script was updated, or this is the first time you do this:
-   1. Locate the `import_object_spawner` script in the "System" category
-   2. Double click it, and agree to creating a local copy
-4. Open the local copy, found under the "User" category
-5. At the top of the now open script, locate the part that says "Modify this"
-   1. Modify the path to point to the file you previously copied into the `raw` folder
-6. Click the "Run" button
-7. Multiple files should have been generated (At **least** one `.streamingsector`, and one `.streamingblock`
-8. Click the "Install" button
+1. Open your WolvenKit project (Make a new one if you do not have one yet)
+2.  In the top menu bar, navigate to
 
-<figure><img src="../../.gitbook/assets/wkitOSImport" alt=""><figcaption><p>All the steps visually shown</p></figcaption></figure>
+    1. File -> Import -> Object Spawner .json
+
+    <figure><img src="../../.gitbook/assets/objectSpawnerWKitImportDialog" alt="" width="413"><figcaption><p>Click the "Import object spawner .json" button, then choose the file</p></figcaption></figure>
+3. In the file dialog, choose the previously exported file, named `projectName_exported.json`
+4. Multiple files should have been generated (At **least** one `.streamingsector`, and one `.streamingblock`)
+5. Click the "Install" button

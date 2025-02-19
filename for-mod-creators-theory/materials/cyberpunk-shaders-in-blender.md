@@ -3,9 +3,9 @@
 #### Summary
 
 **Published:** Jan 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Mar 26 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Feb 19 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page will teach you how to get Cyberpunk materials into Blender (and how to bake them into textures).&#x20;
+This page will teach you how to get Cyberpunk materials into Blender, **baking** the materials to textures. You can use the results for e.g. porting the items to Unreal Engine (these steps won't be covered here).
 
 ### Wait, this is not what I want!
 
