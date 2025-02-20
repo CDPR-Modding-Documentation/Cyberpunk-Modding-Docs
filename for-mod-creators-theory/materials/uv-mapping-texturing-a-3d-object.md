@@ -46,6 +46,16 @@ Open the UV editing perspective, select a mesh, and switch to Edit Mode. If you 
 
 You change the mapping by editing those UV islands. For a more hands-on guide of this, refer to [adding-decals.md](../../modding-guides/items-equipment/editing-existing-items/adding-decals.md "mention") -> [#step-5-uv-projection](../../modding-guides/items-equipment/editing-existing-items/adding-decals.md#step-5-uv-projection "mention")
 
+### How do I transfer UV maps?
+
+To transfer UV maps between two objects, they need to be **topologically identical** (they must have the same number of vertices, faces and edges). The **shape** can change.
+
+You can find the UV transfer menu under Object -> Data Transfer.
+
+{% hint style="info" %}
+You can **pin** the edges of the UV map and then unwrap everything inside by angles. This is one of the easiest ways to adapt one UV map to another (DICrash)
+{% endhint %}
+
 ## Recommended AddOns
 
 ### [MioUV](https://github.com/mio3io/mio3_uv) (Blender 4.2, free)

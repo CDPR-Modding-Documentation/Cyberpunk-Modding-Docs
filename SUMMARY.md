@@ -131,6 +131,7 @@
       * [Adding stats and modifiers](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/editing-existing-items/adding-stats-and-modifiers)
       * [Creating custom Blueprints](for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/creating-custom-blueprints.md)
       * [Creating custom AttachmentSlots](for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/creating-custom-attachmentslots.md)
+  * [👕 VendorsXL](for-mod-creators-theory/core-mods-explained/vendorsxl.md)
   * [📽️ AMM](for-mod-creators-theory/core-mods-explained/amm.md)
   * [💻 CET (Cyber Engine Tweaks)](https://wiki.redmodding.org/cyber-engine-tweaks/)
   * [🛗 Red4ext](https://wiki.redmodding.org/red4ext/)
