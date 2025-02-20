@@ -7,7 +7,7 @@ coverY: 164.22553467271553
 layout:
   cover:
     visible: true
-    size: full
+    size: hero
   title:
     visible: true
   description:
@@ -20,12 +20,12 @@ layout:
     visible: true
 ---
 
-# 👕 VendorsXL
+# 💳 VendorsXL
 
 **Published:** February 2025 by [Florence](https://app.gitbook.com/u/4gvVbWNknqVssW8cldGav2LGi4W2 "mention")
 
 {% hint style="success" %}
-Thank You to [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [keanuWheeze](https://app.gitbook.com/u/WBUIHettvKP7ke8K6KFd7L9ZTtG2 "mention") &  @**deceptious** for helping with this page.
+Thank You to [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") & [keanuWheeze](https://app.gitbook.com/u/WBUIHettvKP7ke8K6KFd7L9ZTtG2 "mention") for helping  me with this page.
 {% endhint %}
 
 ## What is [VendorsXL](https://www.nexusmods.com/cyberpunk2077/mods/19679?tab=description)
