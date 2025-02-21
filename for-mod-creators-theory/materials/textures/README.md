@@ -15,6 +15,7 @@ This page contains the **theory section** for textures in Cyberpunk. It will giv
 
 * For the hands-on guide section, check [Modding Guides -> Textures and LUTs](../../../modding-guides/textures-and-luts/)
 * If you just want to know how to import/export textures, see [here](../../../modding-guides/textures-and-luts/images-importing-editing-exporting.md).&#x20;
+* For texture import settings and what they do, check the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/ "mention") -> [Import/Export: Textures](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/textures "mention") -> [Texture Group](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/textures#texture-group "mention")
 
 ## About textures
 
