@@ -20,8 +20,7 @@ Since the neck part is scaled much larger than the chest, this will make the par
 
 ### Inverted shading, especially in the up/down direction
 
-Cyberpunk uses DirectX normal map shading, not OpenGL; the two differ in how the Y axis is interpreted. If you're using Blender to bake normal maps, use +X, -Y, and +Z, like so:
+If you have a normal map you've already baked and want to fix, simply invert the <mark style="color:green;">green</mark> layer in Photoshop/[photopea](https://www.photopea.com/).&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (579).png" alt=""><figcaption><p>Note G is using -Y, not +Y as default</p></figcaption></figure>
+Read more about this on [normal-maps-in-cyberpunk.md](../../../for-mod-creators-theory/materials/textures/normal-maps-in-cyberpunk.md "mention").
 
-If you have a normal map you've already baked and want to fix, simply invert the <mark style="color:green;">green</mark> layer in Photoshop/[photopea](https://www.photopea.com/).

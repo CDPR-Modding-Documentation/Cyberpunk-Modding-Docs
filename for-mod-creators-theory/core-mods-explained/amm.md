@@ -19,3 +19,12 @@ You can find guides related to AMM by using the Wiki's **search function**. The 
 {% content-ref url="../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md" %}
 [textured-items-and-cyberpunk-materials.md](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md)
 {% endcontent-ref %}
+
+{% content-ref url="../../modding-guides/animations/animations/amm-collab-anims-poses.md" %}
+[amm-collab-anims-poses.md](../../modding-guides/animations/animations/amm-collab-anims-poses.md)
+{% endcontent-ref %}
+
+{% content-ref url="../../modding-guides/animations/animations/custom-facial-expressions.md" %}
+[custom-facial-expressions.md](../../modding-guides/animations/animations/custom-facial-expressions.md)
+{% endcontent-ref %}
+
