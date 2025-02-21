@@ -393,6 +393,10 @@ Now transfer this data from the console to your .yaml. Once completed it should 
 ```
 {% endcode %}
 
+Note: x, y, and z are proper world coordinates for where our object will be placed.\
+i = Entity rotation on relative y-axis (ranges from -0.999 to +1.000)\
+j = Entity tilt on relative x-axis (ranges from -0.999 to +1.000)
+
 ### items:
 
 Adding items to your vendors catalogue is simple, you just update the .yaml with an items Base ID.\
