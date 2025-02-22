@@ -28,24 +28,24 @@ Since we are in the quest section I'll show how to open it within `.questphases`
 
 1. &#x20;Create a basic structure for our quest
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
 
 2.  Find the door you want to open. Make sure it's not a texture (collisionNode). For example, i took a maelstrom gate.
 
     From there we need its [`NodeRef`](../../for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/noderefs.md).Its global identifier. You can find it on its WorldSector.
 
-    <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 
 3.  Create `pauseCondition` on distance and `interactiveObjectManager` in our `.questphase`&#x20;
 
 
 
-    <figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 4.  Showcase&#x20;
 
     <figure><img src="../../.gitbook/assets/output.gif" alt=""><figcaption></figcaption></figure>

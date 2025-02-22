@@ -41,7 +41,7 @@ description: >-
 * It is generally recommended to create a new group for each outline, which only contains the markers for that specific outline
 * Additionally, it is good practice to have one group containing all the outline groups
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt="" width="391"><figcaption><p>Example project layout, one group for all outlines, containing one group per outline</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt="" width="391"><figcaption><p>Example project layout, one group for all outlines, containing one group per outline</p></figcaption></figure>
 
 ## Creating outline
 
@@ -53,14 +53,14 @@ description: >-
 * The markers will connect in the order in which they are within the group
 * To insert a marker in the middle, simply duplicate the closest marker (`CTRL-D`)
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Example of an outline group with five markers</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Example of an outline group with five markers</p></figcaption></figure>
 
 ## Linking outline to area node
 
 * In order to make an area node use the outline, select the path of the outline group from the `Outline Path`dropdown of the area node
   * Note that only groups containing at least 3 markers, and located within the same root group (In our case the common root group is `Some Mod`) are valid outlines
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt="" width="428"><figcaption><p>Example of linking the outline to an ambient area</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt="" width="428"><figcaption><p>Example of linking the outline to an ambient area</p></figcaption></figure>
 
 {% hint style="warning" %}
 Since the outlines get linked via their path, if you change the name of the outline group, or any parent group (Thus changing its path), the link will break.

@@ -254,7 +254,7 @@ Add a new line underneath it, and copy and paste this:
 
 Alternatively, you can search "Items." in the Tweak Browser in Wolvenkit and find your weapons.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. If you want to give your NPC more than one weapon, copy and paste `- item:` to a new line for each weapon you want . Spaces are important, make sure it's in line with the item entry above it. Multiple items registered properly will look like this:
 

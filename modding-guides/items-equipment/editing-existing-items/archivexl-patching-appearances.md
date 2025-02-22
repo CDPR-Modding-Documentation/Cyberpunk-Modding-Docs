@@ -25,7 +25,7 @@ Concepts discussed here can be applied to many other areas in the game. See the 
 
 For resource patching you only ship what you've made. Open your .ent/.mesh/.app files and delete appearances and materials that were there from vanilla. Keep your custom ones, **make sure your appearances have a unique name**!
 
-<figure><img src="../../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption><p>You can select multiple items in a list and then right-click and then Delete Selection.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1) (1) (1).png" alt=""><figcaption><p>You can select multiple items in a list and then right-click and then Delete Selection.</p></figcaption></figure>
 
 {% hint style="info" %}
 When deleting materials, the names might get messy. That's because mats get names from the `materialEntries`array, try to remember what materials are yours and don't forget to delete vanilla entries too. Also **update the index of materialEntries if needed**! (counting begins from 0)
@@ -37,11 +37,7 @@ You mostly can and probably _should_ delete any other fields that you don't want
 
 You should make a special folder for your mod, outside of the vanilla structures. Common pattern is `your_name\mod_name\` (e.g. `zhincore\new_gun_appearance`).&#x20;
 
-<div align="center" data-full-width="false">
-
-<figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption><p>Example folder structure of my mod.</p></figcaption></figure>
-
-</div>
+<div align="center" data-full-width="false"><figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption><p>Example folder structure of my mod.</p></figcaption></figure></div>
 
 Move all your patch files to your folder, but remember where you took them!
 

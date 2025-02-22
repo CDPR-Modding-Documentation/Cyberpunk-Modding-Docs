@@ -178,7 +178,7 @@ This process can be done either by WolvenKit's Convert hair to CCXL Material but
 
 if you happen to have the WolvenKit with the version 8.16.1-nightly.2025-02-11 or later you can do this step entirely automatically by clicking on the Materials button, click on Convert hair to CCXL materials button, then select the .mi files that you want with their style material from the dropdown menus then click Finish. You can also choose if you want to include a cap or not. Once you're done just rename the files and go to the Rename section of this step.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ### Edit manually
 

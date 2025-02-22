@@ -66,4 +66,4 @@ To create a low-poly mesh, you can build a cage, subdivide it a few times and us
 
 Check [#configuring-a-shadow-mesh](meshes-shadows-and-shadow-meshes.md#configuring-a-shadow-mesh "mention") and make sure that `RenderInScene` is unchecked.
 
-<figure><img src="../../../.gitbook/assets/image (13).png" alt=""><figcaption><p>The shadow is a marshmallow</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>The shadow is a marshmallow</p></figcaption></figure>
