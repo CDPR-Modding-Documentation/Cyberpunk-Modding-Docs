@@ -60,7 +60,7 @@ Instead of 15 `materialEntries`, we're down to one.
 Now, we need to adjust the material instances. We can delete all but one, since our `@dynamic` will contain everything that we need.&#x20;
 
 {% hint style="warning" %}
-The Flags for any dynamic material must be set to `Soft`, and the depot path must start with a \*. [File Validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) will warn you about this.
+The Flags for any dynamic material must be set to `Soft`, and the depot path must start with a \*. [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) will warn you about this.
 {% endhint %}
 
 Since that one won't change, we can leave the `MultilayerMask` alone. For the MultilayerSetup, we need to change both the `DepotPath`:
@@ -84,10 +84,17 @@ But wait, there's more. After using dynamic materials, we've been able to reduce
 
 And it's very simple to do. You simply assign empty `chunkMaterials` lists to all your appearances except the first one, and ArchiveXL will automatically use the first appearance as a template and generate the `chunkMaterials` list by substituting the appearance name:
 
-<div align="left">
-
-<figure><img src="../../.gitbook/assets/archiveXL_appearance_expansion.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="left"><figure><img src="../../.gitbook/assets/archiveXL_appearance_expansion.png" alt=""><figcaption></figcaption></figure></div>
 
 Now, you only have to maintain one chunk list, and the rest of your appearances are simplified down to a single name and nothing else.
+
+## Additional intel
+
+### Dynamic materials and .mi files
+
+To use `{material}` substitution inside .mi files, the reference must be sent to `Soft`. This works even if you do not use substitution in the path to the .mi file!
+
+{% hint style="info" %}
+[File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") may warn you about the soft references. However, in this case, its warning can be ignored.
+{% endhint %}
+
