@@ -20,7 +20,7 @@ If you have come here from the main page because you want to change the existing
 * [mesh](archive-xl-item-structure-explained.md#mesh-making-changes)
 * [.json](archive-xl-item-structure-explained.md#.json-making-changes) (translations)
 
-You do not need to touch the [mesh entity](archive-xl-item-structure-explained.md#mesh\_entity.ent).
+You do not need to touch the [mesh entity](archive-xl-item-structure-explained.md#mesh_entity.ent).
 {% endhint %}
 
 {% hint style="info" %}
@@ -79,7 +79,7 @@ Items.my_custom_shirt_redwhite:
   appearanceName: appearance_root_entity_white_red     << this is for the root_entity.ent
 ```
 
-The csv file is where ArchiveXL will find an entry with the yaml's `entityName` in the first field. It will then check the corresponding [root entity](archive-xl-item-structure-explained.md#root\_entity.ent) for an appearance with the name in `appearanceName.`
+The csv file is where ArchiveXL will find an entry with the yaml's `entityName` in the first field. It will then check the corresponding [root entity](archive-xl-item-structure-explained.md#root_entity.ent) for an appearance with the name in `appearanceName.`
 
 <figure><img src="../../../.gitbook/assets/factory_csv_wHeaders.jpg" alt=""><figcaption><p>When spawning an item, TweakXL knows which entity file to use by filtering <code>entityName</code> for a match in the first field</p></figcaption></figure>
 
@@ -148,7 +148,7 @@ With ArchiveXL >= 1.5, there is a **new way** of making these connections, savin
 If you want to do more than 5 variants (for both body genders and camera modes), that approach is strongly recommended. Since there isn't a detailed guide yet, you can find us on [Discord](https://discord.com/invite/redmodding) in the #archive-xl channel.
 {% endhint %}
 
-* [root\_entity.ent](archive-xl-item-structure-explained.md#root\_entity.ent)
+* [root\_entity.ent](archive-xl-item-structure-explained.md#root_entity.ent)
 * appearance.app
 * mesh\_entity.ent
 * the mesh file
@@ -183,7 +183,7 @@ Make sure to add the `DynamicAppearance` tag here.
 
 #### Suffixes
 
-Unless you are using [dynamic appearances](archivexl-dynamic-variants/#the-root\_entity), the root entity's `name` field is where you would put **suffixes** for different appearance variants.
+Unless you are using [dynamic appearances](archivexl-dynamic-variants/#the-root_entity), the root entity's `name` field is where you would put **suffixes** for different appearance variants.
 
 {% hint style="warning" %}
 You don't need to know [what suffixes are](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes) unless you want to make variants for different genders or camera types. In fact, you will want to skip this until you have a confirmed and working mod!
@@ -242,7 +242,7 @@ This file holds a collection of components that determine how our equipment item
 **Would you like to know more?**
 
 Full documentation of [mesh\_entity](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity)\
-The mesh entity for [dynamic appearances](archivexl-dynamic-variants/#the-mesh\_entity)\
+The mesh entity for [dynamic appearances](archivexl-dynamic-variants/#the-mesh_entity)\
 More intel on [components](../../../for-mod-creators-theory/files-and-what-they-do/components/)
 
 Understanding this is not necessary for the purpose of this guide!
@@ -287,7 +287,7 @@ An entry will look as follows:
 
 <figure><img src="../../../.gitbook/assets/archive_xl_app_file.png" alt=""><figcaption><p>Appearance.app (annotated)</p></figcaption></figure>
 
-`partsValues` will define what [mesh\_entity](archive-xl-item-structure-explained.md#mesh\_entity.ent) file(s) to load (as a list of components), while `partsOverrides` tells the [mesh](archive-xl-item-structure-explained.md#mesh) which appearance to use.skipp
+`partsValues` will define what [mesh\_entity](archive-xl-item-structure-explained.md#mesh_entity.ent) file(s) to load (as a list of components), while `partsOverrides` tells the [mesh](archive-xl-item-structure-explained.md#mesh) which appearance to use.skipp
 
 For ArchivXL >= [1.4.0](https://github.com/psiberx/cp2077-archive-xl/releases/tag/v1.4.0-rc2), appearance overrides can understand the following variables for `meshAppearance`:
 
@@ -330,14 +330,12 @@ You can leave `partsValues` alone - this just points at the file that loads the 
 
 ### Mesh
 
-The mesh file maps **materials** to appearances. To find out how exactly it does that, find the [material section](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances) on the mesh wiki page.
+The mesh file maps **materials** to appearances. To find out how exactly it does that, find the [material section](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files) on the mesh wiki page.
 
 {% hint style="info" %}
 **Would you like to know more?**
 
-[3d-objects-.mesh-files](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention")
-
-\#appearan
+[https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files)
 
 The documentation for .mesh files lives on their own page!
 
