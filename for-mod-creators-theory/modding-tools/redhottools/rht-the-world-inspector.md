@@ -17,13 +17,15 @@ Here, you can inspect world nodes and their properties:
 
 <figure><img src="../../../.gitbook/assets/rht_world_inspector.png" alt=""><figcaption></figcaption></figure>
 
+<figure><img src="../../../.gitbook/assets/world_inspector_show_vendor_id.png" alt=""><figcaption></figcaption></figure>
+
 ## World Inspector: Scan
 
 Here, you can scan for any nodes around you:
 
 <figure><img src="../../../.gitbook/assets/rht_world_inspector_scan.png" alt=""><figcaption></figcaption></figure>
 
-If you expand the node properties, you can simply hide them at run-time, or use the integration with [Removal Editor](https://github.com/justarandomguyintheinternet/CP77\_removalEditor) to create permanent presets:
+If you expand the node properties, you can simply hide them at run-time, or use the integration with [Removal Editor](https://github.com/justarandomguyintheinternet/CP77_removalEditor) to create permanent presets:
 
 <figure><img src="../../../.gitbook/assets/rht_toggle_node.png" alt=""><figcaption></figcaption></figure>
 
