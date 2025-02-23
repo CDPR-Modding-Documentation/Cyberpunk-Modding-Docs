@@ -39,7 +39,7 @@ You can check find the standard permissions on a mod's Nexus page, `Description`
 
 The checklist below will make sure that you're ready to go for the tutorial. The links in the description will tell you how to complete each step if you can't do it on your own yet.
 
-* [ ] You have [Wolvenkit installed](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download) and configured
+* [ ] You have [Wolvenkit installed](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download) and configured
 * [ ] You have [installed the mod](./#install-the-mod)
 * [ ] For **recoloring**: you have [MLSetupBuilder installed](../../../for-mod-creators-theory/modding-tools/mlsetup-builder/#installation) and [configured](./#netrunner-suit-preview)
 
@@ -52,7 +52,7 @@ Normally, you get an example project to download — but you already have all th
 
 This guide will teach you how to change stuff without the original creator's help. It's easy!
 
-Once you have a Wolvenkit project, you can [install your mod](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and see any changes you made become active right away.
+Once you have a Wolvenkit project, you can [install your mod](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and see any changes you made become active right away.
 {% endhint %}
 
 There are two ways you can go about the process: do either a **full repack** of my mod, or **create a compatibility archive**. This section will explain the differences, the [next one](r-and-r-your-own-wolvenkit-project.md#creating-your-wolvenkit-project) will walk you through the process of setting things up for either of those options.
@@ -180,7 +180,7 @@ For the general documentation on adding files to your project, see [here](../../
 <figure><img src="../../../.gitbook/assets/wolvenkit_assetbrowser.png" alt=""><figcaption></figcaption></figure>
 
 2. Find `_ArchiveXL_Netrunner_Variants`, then click on it. It will be near the bottom of the list, together with your other mods starting with `_`
-3. You can now **browse the archive**, or use [Wolvenkit's search bar](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) (next to the big red toggle button) to find files inside the archive by searching for `archive:ArchiveXL_Netrunner`.
+3. You can now **browse the archive**, or use [Wolvenkit's search bar](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) (next to the big red toggle button) to find files inside the archive by searching for `archive:ArchiveXL_Netrunner`.
 4. Once you have found the correct items (for [recolour](r-and-r-your-own-wolvenkit-project.md#selected-files-recolour) or [refit](r-and-r-your-own-wolvenkit-project.md#selected-files-refit)), this is how you add them to the project:
 
 <figure><img src="../../../.gitbook/assets/wolvenkit_add_files_to_folder.png" alt=""><figcaption></figcaption></figure>
@@ -244,7 +244,7 @@ If you want to edit a file that is not part of [High Fashion Netrunning Suits](h
 
 If it is part of a different mod, see [analysing-other-mods](../../analysing-other-mods/ "mention") and use **that** archive. You just need to adjust your search queries below.
 
-&#x20;If you want to modify base game items, you need to find their mesh (check [spawn-codes-baseids-hashes.md](../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention")). Once you have that, you can use "find used files" from the Asset Browser's context menu to find all .mlsetups, or you open the mesh in Wolvenkit to follow the [material definition chain](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#step-1-appearances).&#x20;
+&#x20;If you want to modify base game items, you need to find their mesh (check [spawn-codes-baseids-hashes.md](../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention")). Once you have that, you can use "find used files" from the Asset Browser's context menu to find all .mlsetups, or you open the mesh in Wolvenkit to follow the [material definition chain](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#step-1-appearances).&#x20;
 {% endhint %}
 
 #### **TL;DR: via search browser query**

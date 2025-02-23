@@ -3,7 +3,7 @@
 {% hint style="info" %}
 See the [Comprehensive Component Hierarchy List](../comprehensive-components-list.md) for all possible components used in the game, organized by hierachy. Use for researching and documenting components.
 
-For a json dump of all existing components and their properties, check [DrPresto's github repository.](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lists/entComponent\_types.json)
+For a json dump of all existing components and their properties, check [DrPresto's github repository.](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lists/entComponent_types.json)
 
 For a hands-on guide on how to safely change components in .app files, look [here](../../../../modding-guides/npcs/appearances-change-the-looks/#safely-adding-components).
 {% endhint %}
@@ -20,12 +20,12 @@ The [#entskinnedclothcomponent](./#entskinnedclothcomponent "mention")'s physics
 
 
 
-| [depotPath](./#depotpath)              | Loads a [.mesh](../../3d-objects-.mesh-files/)                                                                                                |
-| -------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| [chunkMask](./#chunkmask)              | Defines visibility of individual submeshes                                                                                                    |
-| meshAppearance                         | Selects an entry from the mesh's [appearances](../../3d-objects-.mesh-files/#step-1-appearances) array                                        |
-| <p>castShadows<br>castLocalShadows</p> | Enables/disables [real-time shadows](../../3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md#generated-shadows-component-properties) |
-| forceLODLevel                          | Force [level-of-detail-lod.md](../../level-of-detail-lod.md "mention")                                                                        |
+| [depotPath](./#depotpath)              | Loads a [.mesh](../../file-formats/3d-objects-.mesh-files/)                                                                                                |
+| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [chunkMask](./#chunkmask)              | Defines visibility of individual submeshes                                                                                                                 |
+| meshAppearance                         | Selects an entry from the mesh's [appearances](../../file-formats/3d-objects-.mesh-files/#step-1-appearances) array                                        |
+| <p>castShadows<br>castLocalShadows</p> | Enables/disables [real-time shadows](../../file-formats/3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md#generated-shadows-component-properties) |
+| forceLODLevel                          | Force [level-of-detail-lod.md](../../level-of-detail-lod.md "mention")                                                                                     |
 
 ### Documented mesh component types
 
@@ -71,7 +71,7 @@ Adds physics to garments and hair meshes. This is the "safe" way of doing it, op
 
 <summary>entMeshComponent</summary>
 
-Used for components on low levels of details such as [proxies](../../level-of-detail-lod.md#proxy-meshes) and [shadow meshes](../../3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md).
+Used for components on low levels of details such as [proxies](../../level-of-detail-lod.md#proxy-meshes) and [shadow meshes](../../file-formats/3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md).
 
 </details>
 

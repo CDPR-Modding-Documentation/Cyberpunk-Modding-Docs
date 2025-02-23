@@ -50,7 +50,7 @@ Not every object contains an embedded collision, so we first need to check if yo
 After you added it, **turn off the Mod Browser option**; otherwise, you won't be able to get the mesh file in the next step.
 {% endhint %}
 
-* Open the [.ent file](../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) and look for the mesh component in its components array.
+* Open the [.ent file](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity) and look for the mesh component in its components array.
   * If the selected entity is from **allmeshes** (starts with `base\meshes\` ), then there is probably only 1 <mark style="color:orange;">entPhysicalMeshComponent</mark> called _custom\_mesh_
   * If not, it means your entity is from the vanilla game; in this case, search for the component that has Mesh in its type (<mark style="color:orange;">entPhysicalMeshComponent</mark>, <mark style="color:orange;">entMeshComponent</mark>, etc...)
 * In the mesh, click on the blue arrow to open the mesh in a new tab (_we don't need to add the file_)

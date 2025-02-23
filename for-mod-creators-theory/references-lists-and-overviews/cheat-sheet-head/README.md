@@ -66,13 +66,13 @@ You can find the [definitions](../../files-and-what-they-do/3d-objects-.mesh-fil
 * Normal (bump/height map)
 * Albedo (diffuse/complexion)
 
-All other properties are pulled from a [.mi file](../../files-and-what-they-do/materials/re-using-materials-.mi.md) in the following folder:
+All other properties are pulled from a [.mi file](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) in the following folder:
 
 <table><thead><tr><th width="212"></th><th></th></tr></thead><tbody><tr><td>female body gender</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures</code></td></tr><tr><td>male body gender</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\textures</code></td></tr></tbody></table>
 
 ### Head: material instances
 
-This section only lists [.mi files](../../files-and-what-they-do/materials/re-using-materials-.mi.md) used by the player head. To see which skin is which, check [cheat-sheet-character-creator.md](../cheat-sheet-character-creator.md "mention") -> [#skin-tones](../cheat-sheet-character-creator.md#skin-tones "mention")
+This section only lists [.mi files](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) used by the player head. To see which skin is which, check [cheat-sheet-character-creator.md](../cheat-sheet-character-creator.md "mention") -> [#skin-tones](../cheat-sheet-character-creator.md#skin-tones "mention")
 
 {% hint style="warning" %}
 About half of these files are shared by NPCs. Editing or replacing these will affect all of Night City!

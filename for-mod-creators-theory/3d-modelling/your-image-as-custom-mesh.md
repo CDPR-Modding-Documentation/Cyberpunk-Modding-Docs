@@ -15,7 +15,7 @@ If you want, you can then turn your replacers into new [custom-props](../../modd
 
 ### Wait, that's not what I want!
 
-* To learn how material assignment works, check [3d-objects-.mesh-files](../files-and-what-they-do/3d-objects-.mesh-files/ "mention") and its sub-page [submeshes-materials-and-chunks.md](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention")
+* To learn how material assignment works, check [3d-objects-.mesh-files](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention") and its sub-page [submeshes-materials-and-chunks.md](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention")
 * To learn more on how materials in general work,  read [materials](../materials/ "mention")&#x20;
 * For a guide on changing an existing mesh, read [changing-materials-colors-and-textures](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
 
@@ -118,7 +118,7 @@ For better results, I cheated: I split off the ghosts' eyes, the ghosts themselv
 
 Switch to the Object Data Properties in the right sidebar, fold out "UV Maps" and click the + button. This is necessary for material projection, and Wolvenkit won't let you import if you didn't do it.
 
-![](../../.gitbook/assets/custom\_neon\_add\_UV.png)
+![](../../.gitbook/assets/custom_neon_add_UV.png)
 
 ## Naming
 
@@ -139,7 +139,7 @@ You can assign one material per submesh. To split off a part of the mesh,&#x20;
 
 Time to pull up Wolvenkit.
 
-Assuming you have Wolvenkit [installed](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download), you can now [create a new project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#creating-a-new-wolvenkit-mod-project). Let's find ourselves an in-game neon sign to replace by searching in the Asset Browser for `neon > .mesh` and scrolling through the entries until we find one that we like.
+Assuming you have Wolvenkit [installed](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download), you can now [create a new project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#creating-a-new-wolvenkit-mod-project). Let's find ourselves an in-game neon sign to replace by searching in the Asset Browser for `neon > .mesh` and scrolling through the entries until we find one that we like.
 
 {% hint style="info" %}
 You can obviously use any kind of mesh or material here!
@@ -160,12 +160,12 @@ In Blender,
 
 <figure><img src="../../.gitbook/assets/custom_neon_export.png" alt=""><figcaption></figcaption></figure>
 
-In Wolvenkit, use the [Import Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools#import-tool "mention") to import `sex_shop_neon_sign_b.glb`. The preview in the `File Information` panel should update.
+In Wolvenkit, use the [Import Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools#import-tool "mention") to import `sex_shop_neon_sign_b.glb`. The preview in the `File Information` panel should update.
 
 ## Assigning Materials
 
 {% hint style="info" %}
-I'll give the TL;DR version, you should be able to follow along. If not, feel free to read up on [how materials work in meshes](../files-and-what-they-do/3d-objects-.mesh-files/#material-assignment) or find us on [Discord](https://discord.gg/redmodding)!
+I'll give the TL;DR version, you should be able to follow along. If not, feel free to read up on [how materials work in meshes](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment) or find us on [Discord](https://discord.gg/redmodding)!
 {% endhint %}
 
 Open `sex_shop_neon_sign_b.mesh` in Wolvenkit and open the appearance `on` (as this is the one they're using on Jig Jig Street).&#x20;
@@ -173,7 +173,7 @@ Open `sex_shop_neon_sign_b.mesh` in Wolvenkit and open the appearance `on` (as t
 ### ChunkMaterials
 
 {% hint style="info" %}
-To learn more about this, check [submeshes-materials-and-chunks.md](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"). This is not necessary for completing this guide.
+To learn more about this, check [submeshes-materials-and-chunks.md](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"). This is not necessary for completing this guide.
 {% endhint %}
 
 At the very top of the mesh, we'll need to change the `chunkMaterials` as follows:
@@ -206,7 +206,7 @@ Now, we **define** the materials:&#x20;
 
 ## Testing!
 
-In Wolvenkit's top bar, select [`Install`](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install) and then boot up Cyberpunk.&#x20;
+In Wolvenkit's top bar, select [`Install`](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install) and then boot up Cyberpunk.&#x20;
 
 Let's hit up Jig Jig Street to look at our sign…
 

@@ -13,7 +13,7 @@ This page explains what **Level of Detail** is and how it works.
 
 ### Wait, this is not what I want!
 
-* To learn more about [proxy-appearances.md](appearance-.app-files/proxy-appearances.md "mention"), check the corresponding wiki page.
+* To learn more about [proxy-appearances.md](file-formats/appearance-.app-files/proxy-appearances.md "mention"), check the corresponding wiki page.
 
 ## Level of Detail
 
@@ -31,7 +31,7 @@ The further away something is, the higher it's LOD will be (the less detail you 
 
 ### But my modded items only have LOD0!
 
-That is due to Wolvenkit: the [LOD filter](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#lod-filter) property will drop any submeshes for lower resolutions.&#x20;
+That is due to Wolvenkit: the [LOD filter](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#lod-filter) property will drop any submeshes for lower resolutions.&#x20;
 
 For **equipment and weapons**, that is completely fine, because you don't need them (melee weapons aside, read on).
 
@@ -55,14 +55,14 @@ LODs corresponds to `renderLOD`s. LODs without an entry in `renderLOD` will neve
 
 <figure><img src="../../.gitbook/assets/lod_level_mesh_definition.png" alt=""><figcaption></figcaption></figure>
 
-You can see submeshes and their LODs in the [Mesh Preview](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor/preview#mesh-preview):
+You can see submeshes and their LODs in the [Mesh Preview](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor/preview#mesh-preview):
 
 <figure><img src="../../.gitbook/assets/meshes_preview_LOD.png" alt=""><figcaption></figcaption></figure>
 
 ## Proxy meshes
 
 {% hint style="info" %}
-To learn more about [proxy-appearances.md](appearance-.app-files/proxy-appearances.md "mention"), check the corresponding wiki page.
+To learn more about [proxy-appearances.md](file-formats/appearance-.app-files/proxy-appearances.md "mention"), check the corresponding wiki page.
 {% endhint %}
 
 A proxy mesh is used as an extremely low-level stand-in to be loaded for distant objects. They will almost always have `proxy` in their path or file name, and use a [PBR material](../references-lists-and-overviews/cheat-sheet-materials.md#pbr-material) such as metal\_base with low-resolution textures.
@@ -75,7 +75,7 @@ base\characters\appearances\main_npc\proxy\silverhand_default\silverhand_default
 
 ## Shadow meshes
 
-Shadow meshes are used to generate shadows at low performance cost. You can find more detailed documentation on the page about [meshes-shadows-and-shadow-meshes.md](3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md "mention").
+Shadow meshes are used to generate shadows at low performance cost. You can find more detailed documentation on the page about [meshes-shadows-and-shadow-meshes.md](file-formats/3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md "mention").
 
 ## Component property: forceLODLevel
 

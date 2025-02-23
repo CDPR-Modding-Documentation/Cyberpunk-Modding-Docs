@@ -113,7 +113,7 @@ Inside your `.app` file for `appearanceAppearanceDefinition.name`:&#x20;
 
 This lets you to select a different appearance based on body gender, camera state... (see the tables above).&#x20;
 
-By using conditional appearances, you can still make use of `partsOverrides` to use [chunkmask hiding](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md).
+By using conditional appearances, you can still make use of `partsOverrides` to use [chunkmask hiding](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md).
 
 {% hint style="info" %}
 For a hands-on example, see [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention") -> [#step-2-the-.app](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md#step-2-the-.app "mention")

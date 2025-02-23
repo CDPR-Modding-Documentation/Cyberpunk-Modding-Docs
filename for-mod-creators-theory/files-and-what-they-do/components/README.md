@@ -11,7 +11,7 @@ description: This page contains documentation for the most common component type
 {% hint style="info" %}
 See the [Comprehensive Component Hierarchy List](comprehensive-components-list.md) for all possible components used in the game, organized by hierachy. Use for researching and documenting components.
 
-For a json dump of all existing components and their properties, check [DrPresto's github repository.](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lists/entComponent\_types.json)
+For a json dump of all existing components and their properties, check [DrPresto's github repository.](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lists/entComponent_types.json)
 
 For a hands-on guide on how to safely change components in .app files, look [here](../../../modding-guides/npcs/appearances-change-the-looks/#safely-adding-components).
 {% endhint %}
@@ -40,7 +40,7 @@ Common component properties explained. For a more detailed list, please see [Doc
 
 Only used for mesh components.&#x20;
 
-For documentation of this, see the [ChunkMasks](../3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes) section on [submeshes-materials-and-chunks.md](../3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention").
+For documentation of this, see the [ChunkMasks](../file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes) section on [submeshes-materials-and-chunks.md](../file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention").
 
 #### depotPath
 

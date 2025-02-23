@@ -117,7 +117,7 @@ In the game files, these files will be named my\_texture\_rm`.xbm`
 
 ### Atlas
 
-Used for in-game items and UI elements, these textures contain a collection of images. They are made available to the game via [**inkatlas**](../../files-and-what-they-do/game-icons-the-inkatlas-file.md) files.
+Used for in-game items and UI elements, these textures contain a collection of images. They are made available to the game via [**inkatlas**](../../files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md) files.
 
 #### Naming convention:
 

@@ -109,7 +109,7 @@ This tag will turn feet invisible for mascV unless the user has switch feet inst
 
 ## Footsteps: Setting footwear sounds
 
-If you don't want your new boots to sound as if V was barefoot, add one of the following tags to the [#root-entity](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#root-entity "mention"):&#x20;
+If you don't want your new boots to sound as if V was barefoot, add one of the following tags to the [#root-entity](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity "mention"):&#x20;
 
 ```
 Boots
@@ -127,7 +127,7 @@ Custom tags let you set [component chunk masks](../../../for-mod-creators-theory
 For this, it is mandatory that you have unique component names. If you include your modder name, it's unlikely that anyone will overwrite them by accident.
 {% endhint %}
 
-### **Why would I need this?** [partsOverrides](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files/#partsoverrides) **exists!**
+### **Why would I need this?** [partsOverrides](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/#partsoverrides) **exists!**
 
 1. PartsOverrides can't un-hide components for you. It can only hide them. If you want to load a different mesh (for example, a de-formed hakama when wearing a kimono or haori), then you're flat out of luck.
 2. By being clever about your submeshes, you can offer different versions of your mesh (cropped! No arms! No legs), and users only need to install an .xl file! No need to have different meshes or even different .archive files.

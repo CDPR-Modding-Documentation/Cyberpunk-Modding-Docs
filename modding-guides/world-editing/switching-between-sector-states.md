@@ -17,8 +17,8 @@ This page will show you how to switch sector states.
 
 ### Wait, this is not what I want!
 
-* To learn more about `.streamingsector` files, check [the-whole-world-.streamingsector](../../for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/ "mention")&#x20;
-* To learn about `.streamingblocks`, check [.streamingblock-sector-definitions-and-variants.md](../../for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/.streamingblock-sector-definitions-and-variants.md "mention")
+* To learn more about `.streamingsector` files, check [the-whole-world-.streamingsector](../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/ "mention")&#x20;
+* To learn about `.streamingblocks`, check [.streamingblock-sector-definitions-and-variants.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/.streamingblock-sector-definitions-and-variants.md "mention")
 * For a list of node types, check [reference-.streamingsector-node-types.md](../../for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/reference-.streamingsector-node-types.md "mention")
 * check [.](./ "mention") -> [adding-locations-and-structures-with-archivexl.md](adding-locations-and-structures-with-archivexl.md "mention") if that's what you'd rather do
 
@@ -55,10 +55,10 @@ The link between quests and sectors' variants is not well-researched as of Jan 2
 
 ### Defining a new variant
 
-In the [.streamingsector file](../../for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/), add a new entry in each of these lists:&#x20;
+In the [.streamingsector file](../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/), add a new entry in each of these lists:&#x20;
 
-* [variantIndices](../../for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/#variantindices)
-* [variantNodes](../../for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/#variantnodes)
+* [variantIndices](../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/#variantindices)
+* [variantNodes](../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/#variantnodes)
 
 
 

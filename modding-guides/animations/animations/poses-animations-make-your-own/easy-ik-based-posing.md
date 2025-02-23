@@ -14,7 +14,7 @@ It has been originally [published by xbaebsae](https://xbaebsae.jimdofree.com/cy
 
 * If you want to learn how to make poses, check [.](./ "mention")
 * If you want to familiarize yourself with Blender, check [blender-getting-started](../../../../for-mod-creators-theory/3d-modelling/blender-getting-started/ "mention")
-* To learn about Inverse Kinematics, check [animations-ik-and-fk.md](../../../../for-mod-creators-theory/files-and-what-they-do/animations-.anims/animations-ik-and-fk.md "mention")
+* To learn about Inverse Kinematics, check [animations-ik-and-fk.md](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/animations-.anims/animations-ik-and-fk.md "mention")
 
 ### Requirements
 

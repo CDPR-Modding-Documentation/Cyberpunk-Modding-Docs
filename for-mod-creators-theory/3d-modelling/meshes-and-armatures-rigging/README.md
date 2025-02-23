@@ -12,10 +12,10 @@ This page will give you a short explanation on why 3d objects are moving.
 
 ### Wait, this is not what I want!
 
-* To learn what a rig even is, check [armatures-.rig-files.md](../../files-and-what-they-do/armatures-.rig-files.md "mention")
+* To learn what a rig even is, check [armatures-.rig-files.md](../../files-and-what-they-do/file-formats/armatures-.rig-files.md "mention")
 * Maybe you want the [weight-painting-for-gonks.md](../weight-painting-for-gonks.md "mention") guide?
 * For a documentation of the import/export options in Wolvenkit, check [here](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/import-export/models#choosing-rigs-correctly).&#x20;
-* Guides on how to transfer weights between rigs: [blender plugin](../../modding-tools/wolvenkit-blender-io-suite/#transfer-vertex-weights), [youtube video](https://www.youtube.com/watch?v=bR\_Vke\_\_voU), [wiki page](../../../modding-guides/npcs/custom-facial-piercings-prc-framework.md#weight-painting)&#x20;
+* Guides on how to transfer weights between rigs: [blender plugin](../../modding-tools/wolvenkit-blender-io-suite/#transfer-vertex-weights), [youtube video](https://www.youtube.com/watch?v=bR_Vke__voU), [wiki page](../../../modding-guides/npcs/custom-facial-piercings-prc-framework.md#weight-painting)&#x20;
 
 The connection between a mesh and a rig is made via **vertex groups**. Any number of vertices can be assigned to a group, which is then matched to a rig's bone via **name**.
 

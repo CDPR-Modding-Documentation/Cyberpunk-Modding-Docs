@@ -38,7 +38,7 @@ Now, use the [Wolvenkit Search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/w
 The files you need are different from mod to mod. However, you need at least the `.xbm` with the actual texture.
 {% endhint %}
 
-In the example, I will also add the `.mi` ([material instance](../../../for-mod-creators-theory/files-and-what-they-do/materials/re-using-materials-.mi.md)). This file holds the texture's properties (like its path). By adding the .mi file, you can customize the decal even further.
+In the example, I will also add the `.mi` ([material instance](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md)). This file holds the texture's properties (like its path). By adding the .mi file, you can customize the decal even further.
 
 Add the files to your mod by double-clicking them.&#x20;
 

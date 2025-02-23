@@ -10,7 +10,7 @@ description: A list of interesting locations and their sector files
 
 This page lists locations of interest & their world sector filenames. If you want to learn how to edit them instead, check [world-editing](../../../modding-guides/world-editing/ "mention") in the Modding Guides section.
 
-If you want to know how they work the theory is [here](../../files-and-what-they-do/the-whole-world-.streamingsector/).
+If you want to know how they work the theory is [here](../../files-and-what-they-do/file-formats/the-whole-world-.streamingsector/).
 
 #### Other existing resources:
 

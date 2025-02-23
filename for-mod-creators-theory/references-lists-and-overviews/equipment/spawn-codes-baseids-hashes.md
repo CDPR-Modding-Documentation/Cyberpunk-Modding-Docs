@@ -60,7 +60,7 @@ If you can't find any files with the method below, scroll to [#alternative-metho
 <figure><img src="../../../.gitbook/assets/spawn_codes_finding_app.png" alt=""><figcaption><p>Search WolvenKit for the first part of the BaseID</p></figcaption></figure>
 
 2. You should now have at least one .app file, where the item's appearances are defined..\
-   _To learn more about this, check_ [appearance-.app-files](../../files-and-what-they-do/appearance-.app-files/ "mention")_. This is not necessary for this guide._
+   _To learn more about this, check_ [appearance-.app-files](../../files-and-what-they-do/file-formats/appearance-.app-files/ "mention")_. This is not necessary for this guide._
    * If you have more than one file, hover over them to view their file paths, and pick the one that's inside a `player` folder.&#x20;
    * If you can't find any files, check [#alternative-methods-of-finding-an-item](spawn-codes-baseids-hashes.md#alternative-methods-of-finding-an-item "mention") below.
 3. Open the .app file (right-click, "Open without adding to project")

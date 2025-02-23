@@ -48,7 +48,7 @@ This is probably the most common problem I've seen, and is also thankfully the e
 
 ### Solution
 
-1.  Open up the [mesh entity](../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity) (`.ent`) file for the item you need to fix:
+1.  Open up the [mesh entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity) (`.ent`) file for the item you need to fix:
 
     <figure><img src="../../.gitbook/assets/image (354).png" alt=""><figcaption><p>There are no appearances in a mesh entity file!</p></figcaption></figure>
 2.  Expand the `components` array, then find any `component`s with `Mesh` in their types, and check if they require fixing. In my example project, it's both the jacket and the sleeves.&#x20;
@@ -112,7 +112,7 @@ For dynamic appearances (if the yaml has a key called `$instances`), go to [#dyn
 {% endhint %}
 
 1. Switch back to Wolvenkit.
-2. Open the [root entity (.ent)](../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#root-entity) file (it should have an array called `appearances`)
+2. Open the [root entity (.ent)](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity) file (it should have an array called `appearances`)
 
 <figure><img src="../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
 
@@ -154,7 +154,7 @@ For legacy appearances (if the yaml does not have a key called `$instances`), go
 
 #### Hiding FPP in the .app
 
-1. Open the [.app file](../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files/) in Wolvenkit
+1. Open the [.app file](../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/) in Wolvenkit
 2. Open the `appearances` array
 3. Select each appearance and add `&camera=tpp` to the name.
 
@@ -162,7 +162,7 @@ For legacy appearances (if the yaml does not have a key called `$instances`), go
 
 #### Hiding FPP in the mesh\_entity
 
-1. Open the [#mesh-component-entity-simple-entity](../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity "mention") in Wolvenkit
+1. Open the [#mesh-component-entity-simple-entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity "mention") in Wolvenkit
 2. Open the `components` array
 3. Select each component with `Mesh` in its type and add `&camera=tpp` to the name
 
@@ -236,7 +236,7 @@ If there is only one submesh, you need to edit it in Blender to split off or del
 ### Chunk Masks
 
 {% hint style="info" %}
-You can learn more about chunk masks under [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/ "mention") -> [submeshes-materials-and-chunks.md](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"). This is not necessary for the purpose of this guide.
+You can learn more about chunk masks under [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention") -> [submeshes-materials-and-chunks.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"). This is not necessary for the purpose of this guide.
 {% endhint %}
 
 1. Switch back to the appearance (.app) file&#x20;

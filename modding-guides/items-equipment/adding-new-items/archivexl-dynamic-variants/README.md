@@ -22,7 +22,7 @@ This guide will cover a sub-case of [..](../ "mention")via ArchiveXL (added in 1
 
 You need **at least** the following tools and versions (get the most recent):
 
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.11.0 (you should have it [installed and configured](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download))
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.11.0 (you should have it [installed and configured](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download))
 * [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197) >= 1.4.4
 * [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198) >= 1.5.0
 * [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) >= 1.17.0
@@ -104,7 +104,7 @@ That being said, make sure to check the section
 
 This guide assumes that you have access to the prepared example project, so go and grab it.
 
-1. Create a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
+1. Create a [Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
 2. Find the [**template project**](https://www.nexusmods.com/cyberpunk2077/mods/10516) on **Nexus**.
 3. Download it and extract the files to your project's root folder, so that the `source` directory merges with the existing one.
 
@@ -139,7 +139,7 @@ This is your dynamic project's yaml file, minus any properties that aren't influ
     atlasPartName: slot_$(icon)
 </code></pre>
 
-This section will explain how that works - except for the appearanceName, you will find that in [#the-root\_entity](./#the-root\_entity "mention").
+This section will explain how that works - except for the appearanceName, you will find that in [#the-root\_entity](./#the-root_entity "mention").
 
 #### Record names
 
@@ -155,7 +155,7 @@ tems.my_custom_shirt_dynamic_$(base_color)_$(ribbons):
     - { base_color: black, ribbons: blue, icon: 03 } # Items.my_custom_shirt_dynamic_black_blue
 ```
 
-If you [install and launch](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your project, you can immediately spawn them in Cyberpunk via Cyber Engine Tweaks:
+If you [install and launch](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) your project, you can immediately spawn them in Cyberpunk via Cyber Engine Tweaks:
 
 ```
 Game.AddToInventory("Items.my_custom_shirt_dynamic_white_red") 
@@ -178,7 +178,7 @@ All you need to do is to make sure that such an entry exists in your [localizati
 
 #### Icons
 
-The icon name in the record is also generated for each entry. They are all using the same [inkatlas](../../../../for-mod-creators-theory/files-and-what-they-do/game-icons-the-inkatlas-file.md), but you can generate that as well if you want - I've done it for the [Netrunner suits](https://www.nexusmods.com/cyberpunk2077/mods/9314), since I needed more than 100 icons.
+The icon name in the record is also generated for each entry. They are all using the same [inkatlas](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md), but you can generate that as well if you want - I've done it for the [Netrunner suits](https://www.nexusmods.com/cyberpunk2077/mods/9314), since I needed more than 100 icons.
 
 ```yaml
   $instances:
@@ -212,7 +212,7 @@ By editing the `$instances` block in the `.yaml`, you should be able to spawn 6 
 
 ### The root\_entity
 
-For a general explanation of the root entity, check [#root\_entity.ent](../archive-xl-item-structure-explained.md#root\_entity.ent "mention"). This section will only cover the differences between a dynamic and a regular root entity.
+For a general explanation of the root entity, check [#root\_entity.ent](../archive-xl-item-structure-explained.md#root_entity.ent "mention"). This section will only cover the differences between a dynamic and a regular root entity.
 
 {% hint style="info" %}
 This is where you **enable** the feature by adding the tag **`DynamicAppearance`** to the `visualTagsSchema` (the last entry in the file):
@@ -250,7 +250,7 @@ In the context of our example project, this means that you can define your **app
 
 ### The mesh\_entity
 
-For a general explanation of the mesh entity, check [#mesh\_entity.ent](../archive-xl-item-structure-explained.md#mesh\_entity.ent "mention"). This section will only cover the differences between a dynamic and a regular mesh entity.
+For a general explanation of the mesh entity, check [#mesh\_entity.ent](../archive-xl-item-structure-explained.md#mesh_entity.ent "mention"). This section will only cover the differences between a dynamic and a regular mesh entity.
 
 {% hint style="info" %}
 Unless you are using [#app-file-conditional-switching](./#app-file-conditional-switching "mention"), this is where the magic happens.
@@ -271,7 +271,7 @@ For a list, check [#which-substitutions-exist](../../../../for-mod-creators/core
 <figure><img src="../../../../.gitbook/assets/dynamic_variants_substitution.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-[File validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) can help you spot errors in your paths.
+[File validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) can help you spot errors in your paths.
 {% endhint %}
 
 #### .ent file: conditional switching
@@ -296,7 +296,7 @@ And that's it! With this and the [original guide](../../../../for-mod-creators-t
 
 ### Generating display names
 
-I have written a [Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/archive\_xl\_dynamic\_variants/generate\_translation\_strings.py) to auto-generate display names, you can find it on my github. If you don't know how to use this, check [running-python-scripts.md](../../../../for-mod-creators/modding-guides/everything-else/running-python-scripts.md "mention").
+I have written a [Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/archive_xl_dynamic_variants/generate_translation_strings.py) to auto-generate display names, you can find it on my github. If you don't know how to use this, check [running-python-scripts.md](../../../../for-mod-creators/modding-guides/everything-else/running-python-scripts.md "mention").
 
 ## Troubleshooting
 

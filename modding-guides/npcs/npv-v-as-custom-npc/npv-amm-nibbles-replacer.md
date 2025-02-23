@@ -131,8 +131,8 @@ If you want to know more about the process, feel free to expand the boxes below.
 Created `your_modder_name\photomode\npc_name_photomode` and added the following files:
 
 * Create an icon: It added the `.inkatlas` and the `.xbm` texture it uses, and connected them (we'll customize it in [#step-3-add-a-custom-icon-for-your-character](npv-amm-nibbles-replacer.md#step-3-add-a-custom-icon-for-your-character "mention"))
-* Create a photomode `.ent` file: It created a copy of your original `.ent` file, then configured it to use the [npc-animations.md](../../../for-mod-creators-theory/files-and-what-they-do/animations-.anims/npc-animations.md "mention") required by photo mode
-* Create a copy of your original `.app` file and registered it in the photomode `.ent`. In this file, your character's [facial-animations.md](../../../for-mod-creators-theory/files-and-what-they-do/animations-.anims/facial-animations.md "mention") have been configured to be photo mode compatible (including [xBaebsae's Photomode expression pack](https://www.nexusmods.com/cyberpunk2077/mods/7912))
+* Create a photomode `.ent` file: It created a copy of your original `.ent` file, then configured it to use the [npc-animations.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/animations-.anims/npc-animations.md "mention") required by photo mode
+* Create a copy of your original `.app` file and registered it in the photomode `.ent`. In this file, your character's [facial-animations.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/animations-.anims/facial-animations.md "mention") have been configured to be photo mode compatible (including [xBaebsae's Photomode expression pack](https://www.nexusmods.com/cyberpunk2077/mods/7912))
 * Create a .json: For photo mode to know your NPC's name, it needs a translation file
 
 Added the following control files under `resources`:
@@ -183,7 +183,7 @@ There is a detailed guide for [images-importing-editing-exporting.md](../../text
 Check out these articles in the Wiki:\
 \
 [images-importing-editing-exporting.md](../../textures-and-luts/images-importing-editing-exporting.md "mention")\
-[game-icons-the-inkatlas-file.md](../../../for-mod-creators-theory/files-and-what-they-do/game-icons-the-inkatlas-file.md "mention")\
+[game-icons-the-inkatlas-file.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md "mention")\
 [custom-in-game-icons.md](../../custom-icons-and-ui/custom-in-game-icons.md "mention")
 
 </details>

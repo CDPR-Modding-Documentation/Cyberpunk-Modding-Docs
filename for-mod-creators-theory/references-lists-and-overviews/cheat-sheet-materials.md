@@ -19,8 +19,8 @@ This page contains a brief overview of existing materials. Use the Table of Cont
 #### General information
 
 * How it works in the abstract: [materials](../materials/ "mention")
-* Re-using materials as templates: [re-using-materials-.mi.md](../files-and-what-they-do/materials/re-using-materials-.mi.md "mention")
-* How it works in the example: [3d-objects-.mesh-files](../files-and-what-they-do/3d-objects-.mesh-files/ "mention")
+* Re-using materials as templates: [re-using-materials-.mi.md](../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention")
+* How it works in the example: [3d-objects-.mesh-files](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention")
 
 #### Multilayered
 
@@ -80,7 +80,7 @@ Use `engine\materials\metal_base.remt`, the example below has been copied from `
 ## Cyberspace Materials
 
 {% hint style="info" %}
-[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `cyberspace|blackwall > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+[Search the asset browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `cyberspace|blackwall > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
 {% endhint %}
 
 |                                                                          |                                                                                                                                                                                               |
@@ -99,7 +99,7 @@ Use `engine\materials\metal_base.remt`, the example below has been copied from `
 ## Decal materials
 
 {% hint style="info" %}
-[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `decal > .mt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+[Search the asset browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `decal > .mt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
 {% endhint %}
 
 |                                                             |                                                                                                                                                                                             |
@@ -112,7 +112,7 @@ Use `engine\materials\metal_base.remt`, the example below has been copied from `
 ## Emissive Materials
 
 {% hint style="info" %}
-[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `emissive > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+[Search the asset browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `emissive > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
 {% endhint %}
 
 See [emissive-material-properties.md](../materials/configuring-materials/emissive-material-properties.md "mention")for how it works and how to configure it.
@@ -131,13 +131,13 @@ See [emissive-material-properties.md](../materials/configuring-materials/emissiv
 
 | material                        | description                                                                                                                   |
 | ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `base\fx\_shaders\hologram.mt`  | Holo material ([example .mi](../../\_example\_mods\_and\_templates/material\_templates/holo/hologram\_material\_template.mi)) |
+| `base\fx\_shaders\hologram.mt`  | Holo material ([example .mi](../../_example_mods_and_templates/material_templates/holo/hologram_material_template.mi))        |
 | `base\fx\_shaders\holo_mask.mt` | Special effect material that transforms a mesh into a hologram. Can use a custom texture for decal and is color controllable. |
 
 ### Blackbody Shaders
 
 {% hint style="info" %}
-[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `blackbody > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+[Search the asset browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `blackbody > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
 {% endhint %}
 
 Blackbody shaders are used for **heat**. Their colour can be adjusted via the `temperature` parameter.
@@ -152,7 +152,7 @@ Blackbody shaders are used for **heat**. Their colour can be adjusted via the `t
 ### FX Shaders
 
 {% hint style="info" %}
-[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `fx > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+[Search the asset browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `fx > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
 {% endhint %}
 
 FX shaders are animated effect shaders.
@@ -171,7 +171,7 @@ Something else to dig into: `emitters/particleDrawer/meshes`
 ### Glass
 
 {% hint style="info" %}
-[Search the asset browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `glass > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
+[Search the asset browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `glass > .mt|.remt`, then right-click the file and select [Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention")to find files using this kind of shader.
 {% endhint %}
 
 For more details on glass materials and instructions on how to configure them, see [here](../materials/#glass).&#x20;
@@ -201,7 +201,7 @@ Mirrors are generally a [farce](https://knowyourmeme.com/photos/2270291-alignmen
 * `metal_base.remt` with roughness set to black and metalness set to white. Quick in-game example here: `base\environment\decoration\furniture\bathroom\mirror\mirror_a.mesh`
 * `base\vehicles\common\materials\glass_tech_reflective.mi`: this may seem a little better depending on your use case (for eg car side mirrors). Since the base material is just `base\materials\glass.mt` - you'll need to place a black planar mesh behind the mirror mesh so that it isn't see through and adjust the `TintColor` + `GlassSpecularColor` to a light-ish grey&#x20;
 
-Reflections in both the above cases are going to be [cubemaps ](https://en.wikipedia.org/wiki/Cube\_mapping)in non-RT graphic modes so they will not be high res or even accurate most of the time (you won't see NPCs for example)
+Reflections in both the above cases are going to be [cubemaps ](https://en.wikipedia.org/wiki/Cube_mapping)in non-RT graphic modes so they will not be high res or even accurate most of the time (you won't see NPCs for example)
 
 With ray tracing, the reflection will look better and accurate
 

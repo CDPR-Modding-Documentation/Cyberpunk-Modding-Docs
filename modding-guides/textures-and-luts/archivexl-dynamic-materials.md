@@ -15,10 +15,10 @@ description: How to use ArchiveXL's new material property interpolation
 
 ### Assumed skill level
 
-* You have a general understanding of how materials work (or read up on it under [#material-assignment](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#material-assignment "mention"))
+* You have a general understanding of how materials work (or read up on it under [#material-assignment](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment "mention"))
 * You have a Wolvenkit project and a mesh as well as a bunch of .mlsetups
 
-## Why is this better than [.mi files](../../for-mod-creators-theory/files-and-what-they-do/materials/re-using-materials-.mi.md)?
+## Why is this better than [.mi files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md)?
 
 Because it's even lazier: For a mesh with 15 appearances, you need...
 

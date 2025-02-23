@@ -66,7 +66,7 @@ To quickly find physics-enabled hair, you can use the Wolvenkit Search with the 
 
 ## Hair: Control files by index
 
-Hairs and all their components are assigned and defined via [.app](../../files-and-what-they-do/appearance-.app-files/) and [.ent files](../../files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity). You can find them in the following folder:
+Hairs and all their components are assigned and defined via [.app](../../files-and-what-they-do/file-formats/appearance-.app-files/) and [.ent files](../../files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity). You can find them in the following folder:
 
 ```
 base\characters\head\player_base_heads\appearances\entity\hairs 

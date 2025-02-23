@@ -8,7 +8,7 @@ This page will tell you how to use ArchiveXL to add body tattoos to the characte
 
 ### Wait, this is not what I want!
 
-* To learn more about the character creator, check [files-and-what-they-do](../../../files-and-what-they-do/ "mention") -> [character-creator](../../../files-and-what-they-do/character-creator/ "mention")
+* To learn more about the character creator, check [files-and-what-they-do](../../../files-and-what-they-do/ "mention") -> [character-creator](../../../files-and-what-they-do/file-formats/character-creator/ "mention")
 * If you want to **create** a tattoo first, check out [custom-tattoos-and-scars](../../../../modding-guides/npcs/custom-tattoos-and-scars/ "mention")
 
 ## Requirements

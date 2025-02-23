@@ -25,13 +25,13 @@ To use it with your clothing item, you need to change the component names to use
 
 ## PartsOverrides: Changing other meshes
 
-To learn how to hide things via PartsOverrides, check [#chunkmasks-partially-hiding-meshes](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
+To learn how to hide things via PartsOverrides, check [#chunkmasks-partially-hiding-meshes](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
 
 {% hint style="info" %}
-You can't use PartsOverrides on components defined in the same .app file. Either use components from other files, or load them [#mesh-component-entity-simple-entity](../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity "mention")
+You can't use PartsOverrides on components defined in the same .app file. Either use components from other files, or load them [#mesh-component-entity-simple-entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity "mention")
 {% endhint %}
 
-In the .app file, each appearance lets you define [#partsoverrides](../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files/#partsoverrides "mention"), which — as the name implies — let you **override** previously defined components. An entry looks as follows:
+In the .app file, each appearance lets you define [#partsoverrides](../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/#partsoverrides "mention"), which — as the name implies — let you **override** previously defined components. An entry looks as follows:
 
 <figure><img src="../../.gitbook/assets/parts_values_parts_overrides.png" alt=""><figcaption><p>Overwrite the component "<code>kimono</code>" and "<code>kimono_filler</code>", which are defined in the file "<code>kimono_meshentity.ent</code>"<br>This is the reason why Cyberpunk has all the player components stored in .ent files!</p></figcaption></figure>
 
@@ -53,7 +53,7 @@ You can make use of [archivexl-suffixes-and-substitutions.md](../../for-mod-crea
 Due to cyberware, V has more arms than Shiva the Destroyer (although not at the same time). Arms are why we can't have nice things.
 {% endhint %}
 
-You can find arm component names on [cheat-sheet-body.md](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-body.md "mention") -> [#arms](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-body.md#arms "mention"). Alternatively, you can browse the corresponding entity files in the [Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) by [searching for](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) `base\characters\common\player_base_bodies > .ent`, the file names will start with `a0_.`
+You can find arm component names on [cheat-sheet-body.md](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-body.md "mention") -> [#arms](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-body.md#arms "mention"). Alternatively, you can browse the corresponding entity files in the [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) by [searching for](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) `base\characters\common\player_base_bodies > .ent`, the file names will start with `a0_.`
 
 #### Body
 
@@ -87,7 +87,7 @@ This mechanism is how e.g. your sunglasses disappear when you put on a helmet.
 Visual tags in the root entity will get applied to every appearance in the app.&#x20;
 
 **However:**\
-Due to technical limitations, any visual tags that **hide** parts of the mesh **must** go into the .app file to take effect. [File Validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will warn you about this.
+Due to technical limitations, any visual tags that **hide** parts of the mesh **must** go into the .app file to take effect. [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will warn you about this.
 {% endhint %}
 
 

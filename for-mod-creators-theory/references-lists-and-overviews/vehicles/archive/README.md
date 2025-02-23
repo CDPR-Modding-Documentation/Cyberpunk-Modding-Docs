@@ -8,11 +8,11 @@ This section contains an overview of things that you might encounter while moddi
 
 ### Appearances
 
-For the documentation on .app files (appearance definitions), see [here](../../../files-and-what-they-do/appearance-.app-files/) or check the [appearance mappings](appearances-mappings.md) subpage.
+For the documentation on .app files (appearance definitions), see [here](../../../files-and-what-they-do/file-formats/appearance-.app-files/) or check the [appearance mappings](appearances-mappings.md) subpage.
 
 ### Entity Files
 
-For the documentation on .ent files, see [here](../../../files-and-what-they-do/entity-.ent-files/).&#x20;
+For the documentation on .ent files, see [here](../../../files-and-what-they-do/file-formats/entity-.ent-files/).&#x20;
 
 An example entry for a vehicle entEntityTemplate from a vehicle's .ent file looks like this:&#x20;
 

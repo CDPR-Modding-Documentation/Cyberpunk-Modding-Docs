@@ -9,7 +9,7 @@ This page will tell you how to use ArchiveXL to add hair to the character creato
 
 ### Wait, this is not what I want!
 
-* To learn more about the character creator, check [files-and-what-they-do](../../../files-and-what-they-do/ "mention") -> [character-creator](../../../files-and-what-they-do/character-creator/ "mention")
+* To learn more about the character creator, check [files-and-what-they-do](../../../files-and-what-they-do/ "mention") -> [character-creator](../../../files-and-what-they-do/file-formats/character-creator/ "mention")
 * To convert an existing hair mod to CCXL, check [convert-a-hair-mod-to-hair-ccxl-mod.md](../../../../modding-guides/npcs/guides-all-about-hair/convert-a-hair-mod-to-hair-ccxl-mod.md "mention")
 
 ## Requirements
@@ -92,7 +92,7 @@ We'll now go through everything step by step.
 ### 3.1 Appearances
 
 {% hint style="info" %}
-To understand appearances, you can check [3d-objects-.mesh-files](../../../files-and-what-they-do/3d-objects-.mesh-files/ "mention")-> [#step-1-appearances](../../../files-and-what-they-do/3d-objects-.mesh-files/#step-1-appearances "mention"). This is not necessary to complete the guide, though!
+To understand appearances, you can check [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention")-> [#step-1-appearances](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/#step-1-appearances "mention"). This is not necessary to complete the guide, though!
 {% endhint %}
 
 As you can see, you only need a single appearance — ArchiveXL will generate all the rest.&#x20;
@@ -114,7 +114,7 @@ The names must be set as follows:
 ### 3.2 Material definitions
 
 {% hint style="info" %}
-To understand material definitions, you can check [3d-objects-.mesh-files](../../../files-and-what-they-do/3d-objects-.mesh-files/ "mention") -> [#step-2-material-registry](../../../files-and-what-they-do/3d-objects-.mesh-files/#step-2-material-registry "mention"). This is not necessary to complete the guide, though!
+To understand material definitions, you can check [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention") -> [#step-2-material-registry](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/#step-2-material-registry "mention"). This is not necessary to complete the guide, though!
 {% endhint %}
 
 The tutorial hair has only two materials, and three material entries (`@context`, `@long`, `@cap`):
@@ -134,7 +134,7 @@ Now, let's look at the materials themselves.
 ### 3.3 Materials
 
 {% hint style="info" %}
-To understand materials, you can check [3d-objects-.mesh-files](../../../files-and-what-they-do/3d-objects-.mesh-files/ "mention") -> [#step-3-material-definition](../../../files-and-what-they-do/3d-objects-.mesh-files/#step-3-material-definition "mention"). This is not necessary to complete the guide, though!
+To understand materials, you can check [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention") -> [#step-3-material-definition](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/#step-3-material-definition "mention"). This is not necessary to complete the guide, though!
 {% endhint %}
 
 #### @context&#x20;
@@ -189,7 +189,7 @@ Since the dynamic context does not transfer to the `.mi`, we need to set the `Gr
 The `.mi` file and the `@context` are required for ArchiveXL character creator extensions. Without a .mi file, you won't have e.g. extra hair colours (e.g. [Hair Profiles CCXL](https://www.nexusmods.com/cyberpunk2077/mods/19115))
 {% endhint %}
 
-With the exception of the hair cap, the .mi file is a completely normal [material tempate file](../../../files-and-what-they-do/materials/re-using-materials-.mi.md) (link not necessary for understanding this guide).&#x20;
+With the exception of the hair cap, the .mi file is a completely normal [material tempate file](../../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) (link not necessary for understanding this guide).&#x20;
 
 The hair cap base material is included within ArchiveXL. If you aren't using one, you don't need to know any of this — just move all properties without dynamic properties from the `.mesh` file into your `.mi`.
 
@@ -212,7 +212,7 @@ For an explanation of what is what, keep reading.
 Here is where everything connects to each other.&#x20;
 
 {% hint style="info" %}
-For more information about this, see [.inkcharactercustomization-cc-options.md](../../../files-and-what-they-do/character-creator/.inkcharactercustomization-cc-options.md "mention")
+For more information about this, see [.inkcharactercustomization-cc-options.md](../../../files-and-what-they-do/file-formats/character-creator/.inkcharactercustomization-cc-options.md "mention")
 {% endhint %}
 
 Open the file, we will look at the entries now.
@@ -232,7 +232,7 @@ Let's take a look at the `headCustomizationOptions`. The first to entries of the
 #### The first entry
 
 {% hint style="danger" %}
-If you're only using one hairstyle mesh, keep this entry nameless, or it will overwrite the [character-creator](../../../files-and-what-they-do/character-creator/ "mention")'s base [switcher](../../../files-and-what-they-do/character-creator/#the-switcher)!
+If you're only using one hairstyle mesh, keep this entry nameless, or it will overwrite the [character-creator](../../../files-and-what-they-do/file-formats/character-creator/ "mention")'s base [switcher](../../../files-and-what-they-do/file-formats/character-creator/#the-switcher)!
 {% endhint %}
 
 * **link**: Targets one of the `headGroups` entries
@@ -251,7 +251,7 @@ This entry defines the hairstyle for `cyberware_01`. &#x20;
 ### 6.3 `gameUiAppearanceInfo`s
 
 {% hint style="info" %}
-For more information on this, see [.inkcharactercustomization-cc-options.md](../../../files-and-what-they-do/character-creator/.inkcharactercustomization-cc-options.md "mention") -> [#gameuiappearanceinfo](../../../files-and-what-they-do/character-creator/.inkcharactercustomization-cc-options.md#gameuiappearanceinfo "mention"). This is not necessary for the purpose of this guide!
+For more information on this, see [.inkcharactercustomization-cc-options.md](../../../files-and-what-they-do/file-formats/character-creator/.inkcharactercustomization-cc-options.md "mention") -> [#gameuiappearanceinfo](../../../files-and-what-they-do/file-formats/character-creator/.inkcharactercustomization-cc-options.md#gameuiappearanceinfo "mention"). This is not necessary for the purpose of this guide!
 {% endhint %}
 
 The template inkcc has three `gameUiAppearanceInfo`s, one for your hair, one for the cyberware\_01 variant, and one for FPP.

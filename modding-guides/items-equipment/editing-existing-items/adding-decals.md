@@ -21,7 +21,7 @@ It will walk you through the following:
 
 [#step-1-cutting-the-decal-mesh](adding-decals.md#step-1-cutting-the-decal-mesh "mention")
 
-1. Adding it to the [mesh entity](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#mesh-component-entity-simple-entity)
+1. Adding it to the [mesh entity](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity)
 2. Setting up the material
 
 ### Wait, this is not what I want!
@@ -80,12 +80,12 @@ We will refine this later — select generously, too much is a lot better than t
 {% hint style="info" %}
 This guide will add a new chunk to an already-existing mesh.&#x20;
 
-For more advanced cases (such as use with dynamic variants), you can split off the decal into its own file, or you can use an extra appearance that will [hide all other submeshes](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes).&#x20;
+For more advanced cases (such as use with dynamic variants), you can split off the decal into its own file, or you can use an extra appearance that will [hide all other submeshes](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes).&#x20;
 
 **If this is your first rodeo, do not do any of that.**
 {% endhint %}
 
-If you take a look at the outliner, you will notice a new submesh in the scene collection. This is your decal mesh. We need to change its name to register it as a [new chunk](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md).
+If you take a look at the outliner, you will notice a new submesh in the scene collection. This is your decal mesh. We need to change its name to register it as a [new chunk](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md).
 
 1. Switch back to Object Mode (Hotkey: `Tab`)
 2. In the Outliner, click on your meshes until your decal mesh lights up
@@ -242,7 +242,7 @@ Now it's time to head back to Wolvenkit and activate our new decal chunk.&#x20;
 {% hint style="info" %}
 This guide will add a new chunk to an already-existing mesh.&#x20;
 
-For more advanced cases (such as use with dynamic variants), you can split off the decal into its own file, or you can use an extra appearance that will [hide all other submeshes](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes).&#x20;
+For more advanced cases (such as use with dynamic variants), you can split off the decal into its own file, or you can use an extra appearance that will [hide all other submeshes](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes).&#x20;
 
 **If this is your first rodeo, do not do any of that.**
 {% endhint %}
@@ -253,7 +253,7 @@ After successfully importing your new submesh into Wolvenkit and open it.&#x20;
 
 ### Appearances
 
-First, we need to add your new chunk to each of your [appearances](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#step-1-appearances). For this example, we will use the material `decal`.
+First, we need to add your new chunk to each of your [appearances](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#step-1-appearances). For this example, we will use the material `decal`.
 
 1. Find the `appearances` array at the top of the file and expand it.
 2. Under each appearance, find the `chunkMaterials` array and expand it.
@@ -263,7 +263,7 @@ First, we need to add your new chunk to each of your [appearances](../../../for-
 
 ### Material definition
 
-If you save your mesh now, file validation will complain that the `decal` material doesn't exist. It's right; we haven't added a [material definition](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#material-entry) yet. Let's do that.
+If you save your mesh now, file validation will complain that the `decal` material doesn't exist. It's right; we haven't added a [material definition](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-entry) yet. Let's do that.
 
 1. Find the `materialEntries` array inside your mesh and duplicate the last entry
 2. Change its `name` to `decal`
@@ -274,7 +274,7 @@ If you save your mesh now, file validation will complain that the `decal` materi
 
 ### Material instance
 
-Now that our chunk knows which material it's supposed to look up, we need to provide [the actual material](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#materialinstance-the-local-material).&#x20;
+Now that our chunk knows which material it's supposed to look up, we need to provide [the actual material](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#materialinstance-the-local-material).&#x20;
 
 1. Find the array `localMaterialBuffer`
 2. Find the array `materials` (directly underneath)

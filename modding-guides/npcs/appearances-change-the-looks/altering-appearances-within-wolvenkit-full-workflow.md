@@ -77,7 +77,7 @@ Type something like `character > .app` in the Wolvenkit Search Bar and scroll a 
 ## Understanding the .app file
 
 {% hint style="info" %}
-You can read more about this under [appearance-.app-files](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files/ "mention"), but you don't have to.
+You can read more about this under [appearance-.app-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/ "mention"), but you don't have to.
 {% endhint %}
 
 For us, we'll be wanting to locate victor\_vektor.app, which is in the main\_npc folder I listed earlier.&#x20;

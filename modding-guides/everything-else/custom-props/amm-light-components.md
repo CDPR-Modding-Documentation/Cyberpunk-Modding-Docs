@@ -23,7 +23,7 @@ For an explanation about light, check [lights-explained.md](../../../for-mod-cre
 You can learn more about effect components (e.g. how to remove or create effect spawns) on the [effect-components.md](../../../for-mod-creators-theory/files-and-what-they-do/components/documented-components/effect-components.md "mention") page.
 {% endhint %}
 
-This is as easy as finding the right component, adding it to your prop (either in the [root entity](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#root-entity) or in each appearance in the [.app file](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files/#appearances)) and naming it **Light:**
+This is as easy as finding the right component, adding it to your prop (either in the [root entity](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity) or in each appearance in the [.app file](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/#appearances)) and naming it **Light:**
 
 <figure><img src="../../../.gitbook/assets/amm_adding_lights.png" alt=""><figcaption><p>For a list of props to steal those components from, check <a data-mention href="../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-lights.md">cheat-sheet-lights.md</a></p></figcaption></figure>
 

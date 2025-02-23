@@ -117,7 +117,7 @@ value: 2.0
 
 ### Curve Stat Modifiers
 
-Curve stat modifiers use a [curveset](../files-and-what-they-do/file-formats.md) file to adjust stats on an object. A curve stat modifier requires that you provide an id and a column, so that the game knows where to find the curve you want to use. The id is the curveset file's name without extension, and the column should refer to the curveSetEntry inside the curveset file.
+Curve stat modifiers use a [curveset](../files-and-what-they-do/file-formats/) file to adjust stats on an object. A curve stat modifier requires that you provide an id and a column, so that the game knows where to find the curve you want to use. The id is the curveset file's name without extension, and the column should refer to the curveSetEntry inside the curveset file.
 
 #### Example(s)
 

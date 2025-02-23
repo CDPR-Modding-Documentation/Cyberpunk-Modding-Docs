@@ -106,7 +106,7 @@ return {
 ### File structure: The .ent
 
 {% hint style="info" %}
-Entity files tell the game what to load. You can learn more about them [here](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/) if you are curious, but you don't have to.
+Entity files tell the game what to load. You can learn more about them [here](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/) if you are curious, but you don't have to.
 {% endhint %}
 
 Open the `components` array, find the component with the name of `amm_workspot_collab`, and set the depotPath of workspotResource to the relative path of your [`.workspot`](amm-collab-anims-poses.md#file-structure-the-.workspot) file.

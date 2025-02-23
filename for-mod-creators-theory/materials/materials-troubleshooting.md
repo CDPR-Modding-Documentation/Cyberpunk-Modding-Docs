@@ -16,7 +16,7 @@ If you have [done everything correctly](../../modding-guides/textures-and-luts/i
 
 ## My material is black and shiny!
 
-That happens when one of the `depotPath`s can't be resolved. Double-check your `values` — [Wolvenkit File Validation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) can help you with this.
+That happens when one of the `depotPath`s can't be resolved. Double-check your `values` — [Wolvenkit File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) can help you with this.
 
 ### All paths are okay, it's still broken
 
@@ -30,4 +30,4 @@ Test if it is the material, or if your mistake is somewhere else. Replace your m
 
 If the gold material shows up and your custom material doesn't, then you have an issue with the material.
 
-If the gold material also doesn't show up, then your problem lies somewhere else. Maybe the entire [chunk ](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes)is hidden?
+If the gold material also doesn't show up, then your problem lies somewhere else. Maybe the entire [chunk ](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes)is hidden?

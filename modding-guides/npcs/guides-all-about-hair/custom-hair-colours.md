@@ -18,7 +18,7 @@ You can find a step-by-step walkthrough under [wkit-blender-plugin-import-export
 {% hint style="info" %}
 To learn more about .hp files and their parameters, see&#x20;
 
-* [hair-profiles-.hp.md](../../../for-mod-creators-theory/files-and-what-they-do/materials/hair-profiles-.hp.md "mention")
+* [hair-profiles-.hp.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/materials/hair-profiles-.hp.md "mention")
 * [hair-and-skin-material-properties.md](../../../for-mod-creators-theory/materials/configuring-materials/hair-and-skin-material-properties.md "mention") -> [#hair-material](../../../for-mod-creators-theory/materials/configuring-materials/hair-and-skin-material-properties.md#hair-material "mention")
 {% endhint %}
 

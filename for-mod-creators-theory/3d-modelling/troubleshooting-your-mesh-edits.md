@@ -277,7 +277,7 @@ If you don't see any warnings, make sure that the resource paths in your mesh ar
 Do they show up in the Wolvenkit preview?
 
 * No: you probably forgot to select them when [exporting from Blender](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender). Make sure that you get them all into Wolvenkit.
-* Yes: There's either an issue with your [material assignments](../materials/materials-troubleshooting.md) or with your [chunkmasks](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md). Refer to the corresponding guides to learn how you can debug this.
+* Yes: There's either an issue with your [material assignments](../materials/materials-troubleshooting.md) or with your [chunkmasks](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md). Refer to the corresponding guides to learn how you can debug this.
 
 If that's not it, check [#my-mesh-is-inside-out](troubleshooting-your-mesh-edits.md#my-mesh-is-inside-out "mention") below.
 

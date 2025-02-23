@@ -23,7 +23,7 @@ The guide below will teach you how to make preview icons. While it's a technical
 
 * If you want to have gendered preview icons, check [here](gendered-preview-icons.md).
 * For a script to generate inkatlas files, check [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate_inkatlas.py)
-* To learn more about the files involved, check [game-icons-the-inkatlas-file.md](../../../for-mod-creators-theory/files-and-what-they-do/game-icons-the-inkatlas-file.md "mention")
+* To learn more about the files involved, check [game-icons-the-inkatlas-file.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md "mention")
 
 ## The required files
 

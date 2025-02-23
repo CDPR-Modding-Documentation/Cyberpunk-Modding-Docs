@@ -13,7 +13,7 @@ This guide will show you how to create a **custom rig** for V, based on [**BODY 
 
 ### **Wait, this is not what I want!**
 
-* If you want to learn what a rig even does, check [armatures-.rig-files.md](../../for-mod-creators-theory/files-and-what-they-do/armatures-.rig-files.md "mention")
+* If you want to learn what a rig even does, check [armatures-.rig-files.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/armatures-.rig-files.md "mention")
 * If you want to create custom poses instead, check [poses-animations-make-your-own](../animations/animations/poses-animations-make-your-own/ "mention")
 
 ## Requirements:

@@ -27,7 +27,7 @@ You can find a more detailed guide under [altering-appearances-within-wolvenkit-
 * If you want to add Photomode appearances to existing NPCs, check [xBaebsae's tutorial](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-expand-appearances-in-photomode-npcs/)
 * If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/ "mention")
 * If you want a more basic guide that goes into more detail for the basic stuff (including Blender), see [altering-appearances-within-wolvenkit-full-workflow.md](altering-appearances-within-wolvenkit-full-workflow.md "mention")
-* If you're after hair colours, check [hair-profiles-.hp.md](../../../for-mod-creators-theory/files-and-what-they-do/materials/hair-profiles-.hp.md "mention") and follow the links from there.
+* If you're after hair colours, check [hair-profiles-.hp.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/materials/hair-profiles-.hp.md "mention") and follow the links from there.
 
 ***
 
@@ -40,11 +40,11 @@ Links will give you additional context. If you can complete the guide without th
 
 ## Finding the right files
 
-This section will show you how to find an NPC's [.app file](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files/), which you will add to your project. We do this by finding the NPC's [.ent file](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#root-entity), since it will be linked in there.
+This section will show you how to find an NPC's [.app file](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/), which you will add to your project. We do this by finding the NPC's [.ent file](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity), since it will be linked in there.
 
 ### The .ent file
 
-The NPC's [root entity file](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files/#root-entity) is the entry point for the game. It defines an NPC's appearances, linking them to the actual definitions inside the corresponding [.app file](./#the-.app-file).&#x20;
+The NPC's [root entity file](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity) is the entry point for the game. It defines an NPC's appearances, linking them to the actual definitions inside the corresponding [.app file](./#the-.app-file).&#x20;
 
 {% hint style="info" %}
 You don't need to add this file to your project (and if you do it by accident, you should delete it later). For details, see [amm-custom-npc-appearances.md](../amm-custom-npcs/amm-custom-npc-appearances.md "mention").
@@ -84,7 +84,7 @@ This is where the magic happens.
 
 <figure><img src="../../../.gitbook/assets/app_modification_guide_change_mesh.png" alt=""><figcaption><p>Wake up, Johnny! … Follow the white rabbit, Johnny!</p></figcaption></figure>
 
-**Remove** items by deleting their entries from the list or by setting their [chunkMasks to `0`](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes):
+**Remove** items by deleting their entries from the list or by setting their [chunkMasks to `0`](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes):
 
 <figure><img src="../../../.gitbook/assets/app_modification_guide_delete_ring.png" alt=""><figcaption><p>no more ring!</p></figcaption></figure>
 
@@ -209,7 +209,7 @@ This works for simple components. Anything more complicated with physics (.anim 
       You find this in the `appearances` array inside the `.mesh` file
    3. `name`: a unique name that identifies your component. \
       &#xNAN;_&#x59;ou should get into the habit of using_ [_garment prefixes_](../../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/#component-prefixes)_, as they come in handy for clothing items._
-   4. `chunkMask`: Extend the dropdown and make sure that [the submeshes](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes) you want are visible (just check the boxes for 0-11 if you're not sure)
+   4. `chunkMask`: Extend the dropdown and make sure that [the submeshes](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes) you want are visible (just check the boxes for 0-11 if you're not sure)
 
 <figure><img src="../../../.gitbook/assets/image (543).png" alt=""><figcaption></figcaption></figure>
 

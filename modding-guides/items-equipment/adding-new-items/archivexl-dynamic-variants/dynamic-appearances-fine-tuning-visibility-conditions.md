@@ -54,7 +54,7 @@ Then you would add the following entries to your `.app` file with the `name`s :
 
 `root_entity_dynamic_appearance_nosleeves_`
 
-Now you have options. The next step will depend on your goals. In the `.app` file, you could use `partsOverrides` to hide different parts of the mesh for each appearance (like the sleeve submesh for the no-sleeve version. See [Chunkmasks: partially hiding meshes](../../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes)), or you could set `partsValues` to different `mesh.ent` files (like a standard and looser-fitting version).
+Now you have options. The next step will depend on your goals. In the `.app` file, you could use `partsOverrides` to hide different parts of the mesh for each appearance (like the sleeve submesh for the no-sleeve version. See [Chunkmasks: partially hiding meshes](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes)), or you could set `partsValues` to different `mesh.ent` files (like a standard and looser-fitting version).
 
 ## But wait, couldn't I accomplish this by doing \[x] instead?
 

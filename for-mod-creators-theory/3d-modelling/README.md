@@ -29,7 +29,7 @@ For more hands-on advice, see the guide section, for example
 A mesh defines the shape and surface of any in-game object.&#x20;
 
 {% hint style="info" %}
-For more information on .mesh files and how they work, see [3d-objects-.mesh-files](../files-and-what-they-do/3d-objects-.mesh-files/ "mention")
+For more information on .mesh files and how they work, see [3d-objects-.mesh-files](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention")
 
 For more informations on **materials** and mesh appearances, see [materials](../materials/ "mention")
 {% endhint %}

@@ -12,15 +12,15 @@ description: How to import and export with the Wolvenkit Blender plugin
 This page lists step-by-step instructions for the export and import of game files.&#x20;
 
 {% hint style="warning" %}
-You can only export files which are part of a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects).
+You can only export files which are part of a [Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects).
 {% endhint %}
 
-The **Wolvenkit** parts of the workflow will link you to the [red wiki](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/), where you can find screenshots and (hopefully) up-to-date descriptions.
+The **Wolvenkit** parts of the workflow will link you to the [red wiki](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/), where you can find screenshots and (hopefully) up-to-date descriptions.
 
 ### Wait, this is not what I want!
 
-* [Import/Export](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export "mention") (Wolvenkit wiki)
-* [Blender Integration](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/blender-integration "mention")(Wolvenkit wiki)
+* [Import/Export](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export "mention") (Wolvenkit wiki)
+* [Blender Integration](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/blender-integration "mention")(Wolvenkit wiki)
 * If this is your first time using Blender, check [blender-getting-started](../../3d-modelling/blender-getting-started/ "mention")
 * [exporting-and-importing-meshes](../../3d-modelling/exporting-and-importing-meshes/ "mention") (has additional information that might come in handy)
 
@@ -28,15 +28,15 @@ The **Wolvenkit** parts of the workflow will link you to the [red wiki](https://
 
 ### Export from Wolvenkit
 
-For **where** to export a mesh, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
+For **where** to export a mesh, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
 
-For **how** to export a mesh, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
+For **how** to export a mesh, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
 
 {% hint style="info" %}
 If your mesh won't export from Wolvenkit, try unchecking the following box(es) in the export settings:&#x20;
 
-* [export-materials](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials "mention")
-* [export-garment-support-experimental](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-experimental "mention")
+* [export-materials](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials "mention")
+* [export-garment-support-experimental](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-experimental "mention")
 {% endhint %}
 
 ### Importing into Blender
@@ -63,7 +63,7 @@ Select File -> Export -> Cyberpunk GLB
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_export_mesh.png" alt=""><figcaption></figcaption></figure>
 
-In the file picker, **overwrite** the glb you were editing (you need to [overwrite an existing file](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#import) to import back to Wolvenkit).
+In the file picker, **overwrite** the glb you were editing (you need to [overwrite an existing file](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#import) to import back to Wolvenkit).
 
 For an explanation of the sidebar settings on the right, read on below the picture.
 
@@ -81,15 +81,15 @@ If you don't check either of these boxes, the plutin will export **all meshes an
 
 ### Importing into Wolvenkit
 
-For **where** to import a mesh, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
+For **where** to import a mesh, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
 
-For **how** to import a mesh, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
+For **how** to import a mesh, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
 
 ## Animations
 
 ### Export from Wolvenkit
 
-You can use Wolvenkit's [Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool "mention") to export .anims to .glb. The default setting is fine.
+You can use Wolvenkit's [Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool "mention") to export .anims to .glb. The default setting is fine.
 
 ### Importing into Blender
 
@@ -102,9 +102,9 @@ The process of importing animations into Blender is the same as it is with meshe
 
 ### Importing into Wolvenkit
 
-For **where** to import an .anim, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
+For **where** to import an .anim, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
 
-For **how** to import an .anim, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention") and change the [Target File Format](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#target-file-format "mention")to `Anims`.
+For **how** to import an .anim, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention") and change the [Target File Format](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#target-file-format "mention")to `Anims`.
 
 ## Entities
 
@@ -112,11 +112,11 @@ For **how** to import an .anim, see [Import/Export: Mesh (3d Model)](https://app
 
 You can export an entity by **adding it to your project** and running the corresponding script from inside Wolvenkit. Here are the relevant guides:
 
-&#x20;[Exporting Vehicles](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/exporting-vehicles "mention") (you can also use this for characters)
+&#x20;[Exporting Vehicles](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/modding-community/exporting-vehicles "mention") (you can also use this for characters)
 
-&#x20;[Exporting Characters to Blender](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/exporting-to-blender "mention")
+&#x20;[Exporting Characters to Blender](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/modding-community/exporting-to-blender "mention")
 
-&#x20;[Exporting Rigs & Anims](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/modding-community/exporting-to-blender/exporting-rigs-and-anims "mention")
+&#x20;[Exporting Rigs & Anims](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/modding-community/exporting-to-blender/exporting-rigs-and-anims "mention")
 
 ### Importing into Blender
 
@@ -177,13 +177,13 @@ The export process is not part of the plugin yet (1.5.0); it is documented [here
 {% hint style="info" %}
 To learn more about .hp files and their parameters, see&#x20;
 
-* [hair-profiles-.hp.md](../../files-and-what-they-do/materials/hair-profiles-.hp.md "mention")
+* [hair-profiles-.hp.md](../../files-and-what-they-do/file-formats/materials/hair-profiles-.hp.md "mention")
 * [hair-and-skin-material-properties.md](../../materials/configuring-materials/hair-and-skin-material-properties.md "mention") -> [#hair-material](../../materials/configuring-materials/hair-and-skin-material-properties.md#hair-material "mention")
 {% endhint %}
 
 ### Importing to Blender
 
-[Export ](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#exporting-mesh-files)a hair mesh with materials (the default setting), then[ import it](wkit-blender-plugin-import-export.md#importing-into-blender)
+[Export ](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#exporting-mesh-files)a hair mesh with materials (the default setting), then[ import it](wkit-blender-plugin-import-export.md#importing-into-blender)
 
 ### Editing the hair profile
 
@@ -203,5 +203,5 @@ Your new .hp.json file will be generated in the `raw` folder of Wolvenkit projec
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_hp_file.png" alt=""><figcaption></figcaption></figure>
 
-You can now [import it from json](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json).
+You can now [import it from json](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json).
 

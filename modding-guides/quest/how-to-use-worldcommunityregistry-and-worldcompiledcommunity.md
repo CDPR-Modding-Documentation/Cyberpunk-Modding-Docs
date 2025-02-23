@@ -21,7 +21,7 @@ Last documented update: Dec 4 by [Sergey](https://app.gitbook.com/u/N691cVEMA0Nm
 
 * If you want to learn about [.](./ "mention"), please check the corresponding section.
 * If you want to learn about [world-editing](../world-editing/ "mention"), please check the corresponding section.
-* [NodeRefs](../../for-mod-creators-theory/files-and-what-they-do/the-whole-world-.streamingsector/noderefs.md) explained.
+* [NodeRefs](../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/noderefs.md) explained.
 * [Broken link](broken-reference "mention")
 
 ## Requirements

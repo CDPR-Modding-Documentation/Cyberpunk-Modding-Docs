@@ -17,7 +17,7 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 
 * Check [porting-3d-objects-to-cyberpunk.md](../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk.md "mention") for an import guide, but don't forget to come back here once you're done!
 * You can learn more about materials under [materials](../../for-mod-creators-theory/materials/ "mention").&#x20;
-  * If you want to understand material assignment, check [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/ "mention")-> [#material-assignment](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#material-assignment "mention")
+  * If you want to understand material assignment, check [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention")-> [#material-assignment](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment "mention")
   * If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
   * For a guide about changing materials, check [changing-materials-colors-and-textures](../items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
     * If you just want to use a textured material, check [using-a-textured-material.md](../items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention")
@@ -112,7 +112,7 @@ Scene Collection
 ```
 
 * LOD\_1 indicates the [level of detail](../../for-mod-creators-theory/files-and-what-they-do/level-of-detail-lod.md). You only care for LOD\_1.
-* The submesh numbers are important for [material assignment](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#material-assignment) in Wolvenkit.
+* The submesh numbers are important for [material assignment](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment) in Wolvenkit.
 
 {% hint style="success" %}
 The easiest way to get there is by running [this python script](https://raw.githubusercontent.com/manavortex/code_snippets/master/py/cyberpunk/util/prepare_submeshes_for_export.py) (source: manavortex's github) in Blender after import:\
@@ -320,7 +320,7 @@ Save the lua file, install your mod, and launch the game. Time to test!
 
 ## Material assignments
 
-For an explanation how materials are assigned to a mesh, check [this page](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#material-assignment) - this guide will just tell you what to do.
+For an explanation how materials are assigned to a mesh, check [this page](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment) - this guide will just tell you what to do.
 
 {% hint style="info" %}
 You can copy entire materials between meshes: select one, right-click, and pick one of the "copy from…" entries.
@@ -368,7 +368,7 @@ You can name your materials whatever you like, as long as you stick to the follo
 
 #### Explanation:&#x20;
 
-MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#chunkmaterials) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../for-mod-creators-theory/files-and-what-they-do/materials/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
+MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#chunkmaterials) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../for-mod-creators-theory/files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
 
 {% hint style="success" %}
 Now, we adjust the materials — we'll just change a few properties to show you how it works, and then you can go play.&#x20;

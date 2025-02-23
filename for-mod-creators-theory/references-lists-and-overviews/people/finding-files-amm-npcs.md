@@ -90,11 +90,11 @@ In the `entity path` column, you will either find a file path (for modded NPCs),
 1. Open Wolvenkit's [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser)&#x20;
 2. Pull it wide to make the right panel appear
 3. In the search field at the top, search for your TweakDB ID (e.g. `Character.NurseFemale`)
-4. In the property panel at the left, find the `entityTemplatePath` (the NPC's [root entity](../../files-and-what-they-do/entity-.ent-files/#root-entity))
+4. In the property panel at the left, find the `entityTemplatePath` (the NPC's [root entity](../../files-and-what-they-do/file-formats/entity-.ent-files/#root-entity))
 
 <img src="../../../.gitbook/assets/tweak_browser_ent_file_from_tweak.png" alt="" data-size="original">
 
-## Step 5: Read the [root entity](../../files-and-what-they-do/entity-.ent-files/#root-entity)
+## Step 5: Read the [root entity](../../files-and-what-they-do/file-formats/entity-.ent-files/#root-entity)
 
 {% hint style="info" %}
 If the NPC was added by a mod, you have to switch to [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) first
@@ -109,7 +109,7 @@ If the NPC was added by a mod, you have to switch to [Mod Browser](https://app.g
 4. Note down the `appearanceName` (green box in the screenshot)
 5. Open the .app file by clicking the turquoise button
 
-## Reading the [.app file](../../files-and-what-they-do/appearance-.app-files/)
+## Reading the [.app file](../../files-and-what-they-do/file-formats/appearance-.app-files/)
 
 <figure><img src="../../../.gitbook/assets/7 (5).png" alt=""><figcaption></figcaption></figure>
 

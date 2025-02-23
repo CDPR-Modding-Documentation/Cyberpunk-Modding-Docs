@@ -13,7 +13,7 @@ Check the section's sub pages in the wiki's navigation tree for more detailed in
 #### General information
 
 * Handy list of references: [cheat-sheet-materials.md](../references-lists-and-overviews/cheat-sheet-materials.md "mention")
-* Re-using materials as templates: [re-using-materials-.mi.md](../files-and-what-they-do/materials/re-using-materials-.mi.md "mention")
+* Re-using materials as templates: [re-using-materials-.mi.md](../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention")
 * How it works in the example: [3d-objects-.mesh-files](../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention")
 
 #### Multilayered

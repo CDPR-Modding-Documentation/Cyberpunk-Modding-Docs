@@ -229,7 +229,7 @@ This property is used for **hiding** parts of a mesh. If the part picker gives y
 <figure><img src="../../../.gitbook/assets/chunkmask.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-You can learn more about this under [submeshes-materials-and-chunks.md](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"), but this is not necessary for the tutorial.
+You can learn more about this under [submeshes-materials-and-chunks.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"), but this is not necessary for the tutorial.
 {% endhint %}
 
 ### Customizing Cyberware
@@ -248,7 +248,7 @@ Wolvenkit's [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wol
 
 {% hint style="info" %}
 If you skip this step, you will end up with the wrong or too many piercings and cyberware.\
-To learn more about chunkmasks, check [this wiki page](../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md) (if you can do it with the information below, you don't need to)
+To learn more about chunkmasks, check [this wiki page](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md) (if you can do it with the information below, you don't need to)
 {% endhint %}
 
 You have the full piercing or cyberware file, but you're only using parts of it — yet the game stubbornly shows you the whole mesh.

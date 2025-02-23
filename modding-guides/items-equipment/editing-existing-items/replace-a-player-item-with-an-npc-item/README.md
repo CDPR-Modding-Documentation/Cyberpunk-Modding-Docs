@@ -63,7 +63,7 @@ Each appearance in the appearances array has a list of chunkMask entries (one pe
 For a full guide on [Editing mesh appearances](../changing-materials-colors-and-textures/), follow the link (you don't have to).
 {% endhint %}
 
-&#x20;For a more detailed explanation, you can check [this page](../../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#chunkmaterials), but all we care about right now is this lookup chain:
+&#x20;For a more detailed explanation, you can check [this page](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#chunkmaterials), but all we care about right now is this lookup chain:
 
 <figure><img src="https://i.imgur.com/HK6Z0LA.png" alt=""><figcaption></figcaption></figure>
 

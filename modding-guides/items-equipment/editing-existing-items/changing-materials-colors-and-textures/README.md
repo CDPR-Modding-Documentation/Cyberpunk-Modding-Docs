@@ -16,7 +16,7 @@ This guide will teach you how to edit an item's material, changing its appearanc
 * For a step-by-step walkthrough for a recolour of the Netrunner suit, check [r-and-r-colour-editing.md](../../recolours-and-refits/r-and-r-colour-editing.md "mention")
 * If you want to edit emissive (glowing) material, check [r-and-r-emissive.md](../../recolours-and-refits/r-and-r-emissive.md "mention") -> [#changing-the-presets](../../recolours-and-refits/r-and-r-emissive.md#changing-the-presets "mention")
 * For an overview of base materials and example files, you can check [here](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md).
-* If you want to learn how mesh material assignment works in general, you can check the [corresponding page](../../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/#material-assignment).
+* If you want to learn how mesh material assignment works in general, you can check the [corresponding page](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment).
 * For details on changing materials, check [.](./ "mention").
   * If you just want to use a textured material, check [using-a-textured-material.md](using-a-textured-material.md "mention")
 * You can find a video guide on [youtube](https://youtu.be/HLwjKM8YDlA) (It's also embedded below)
@@ -85,7 +85,7 @@ Again, you can look these up in the .app file!
 ## Step 1: Finding the correct material name
 
 {% hint style="info" %}
-To learn how appearances and materials connect, you can read [3d-objects-.mesh-files](../../../../for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files/ "mention"). \
+To learn how appearances and materials connect, you can read [3d-objects-.mesh-files](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention"). \
 This is not necessary for this guide.
 {% endhint %}
 

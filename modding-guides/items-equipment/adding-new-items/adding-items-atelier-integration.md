@@ -9,7 +9,7 @@ This guide will detail how to add an Atelier store with your items. It is part o
 ### Wait, this is not what I want!
 
 * Find a guide on [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention")&#x20;
-* Learn more about [game-icons-the-inkatlas-file.md](../../../for-mod-creators-theory/files-and-what-they-do/game-icons-the-inkatlas-file.md "mention")
+* Learn more about [game-icons-the-inkatlas-file.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md "mention")
 * If you are using [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention"), you can use [W's generator](https://codepen.io/Wandering-Aldecaldo/full/jOoWemp) to quickly create spawn codes and Atelier entries
 
 ## Requirements
@@ -22,7 +22,7 @@ You also have to add it to your mod's requirements, as atelier stores will cause
 
 ## Generating an icon
 
-First of all, [download](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas\_templates\_apart\_v1.zip/file) the template archive (kindly provided by Apart) and find the folder `virtual_atelier_inkatlas_icon_template` with the following files:
+First of all, [download](https://www.mediafire.com/file/3slvnkhjbz0jt65/inkatlas_templates_apart_v1.zip/file) the template archive (kindly provided by Apart) and find the folder `virtual_atelier_inkatlas_icon_template` with the following files:
 
 ```
 atelier_icon_template.inkatlas                        << map for the game  

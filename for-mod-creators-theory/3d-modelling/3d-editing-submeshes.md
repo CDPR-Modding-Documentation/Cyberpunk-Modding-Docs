@@ -10,9 +10,9 @@ If you run into problems, check [troubleshooting-your-mesh-edits.md](troubleshoo
 
 ## What are submeshes?
 
-For more information about this see [submeshes-materials-and-chunks.md](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention") and the section [#submeshes-in-blender](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#submeshes-in-blender "mention")
+For more information about this see [submeshes-materials-and-chunks.md](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention") and the section [#submeshes-in-blender](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#submeshes-in-blender "mention")
 
-To learn how you can use them for appearance management, check [#chunkmasks-partially-hiding-meshes](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
+To learn how you can use them for appearance management, check [#chunkmasks-partially-hiding-meshes](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
 
 ## Guide: Splitting off submeshes
 

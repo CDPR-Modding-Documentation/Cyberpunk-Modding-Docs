@@ -118,7 +118,7 @@ For **how** to import a mesh into Blender see  [wkit-blender-plugin-import-expor
 
 ### Step 2.5: getting a grip on the submesh count
 
-The **mesh count** in Blender corresponds to the [**submesh/chunk** ](../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md)count in Wolvenkit. In Cyberpunk, we have one submesh per material that we want to use.&#x20;
+The **mesh count** in Blender corresponds to the [**submesh/chunk** ](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md)count in Wolvenkit. In Cyberpunk, we have one submesh per material that we want to use.&#x20;
 
 If you don't know what that means, ignore the information for now - but few meshes use more than five. The current maximum is the player base body with a total count of ten submeshes per LOD[^1], so to be on the safe side, we need to stay below that.
 

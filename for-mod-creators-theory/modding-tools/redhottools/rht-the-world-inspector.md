@@ -40,7 +40,7 @@ Reverse search of world nodes and spawned entities by their node IDs (e.g. if yo
 The world inspector's `Watch` tab lets you inspect the player puppet and all of their components at runtime.&#x20;
 
 {% hint style="info" %}
-You can use the information below for AppearanceCreatorMod; check [submeshes-materials-and-chunks.md](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention") -> [#acm](../../files-and-what-they-do/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#acm "mention") for details.
+You can use the information below for AppearanceCreatorMod; check [submeshes-materials-and-chunks.md](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention") -> [#acm](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#acm "mention") for details.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/rht_world_inspector_watch.png" alt=""><figcaption><p>Invaluable for debugging clothing mods!</p></figcaption></figure>
