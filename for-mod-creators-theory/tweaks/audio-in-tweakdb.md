@@ -9,7 +9,7 @@ description: Description of how audio is linked in tweaks
 **Created:** Feb 23 2025 by [Zhincore](https://app.gitbook.com/u/OsI9JXgCSSbt40hb327iBDif7Xv1 "mention")\
 **Last documented update:** Feb 23 2025 by [Zhincore](https://app.gitbook.com/u/OsI9JXgCSSbt40hb327iBDif7Xv1 "mention")
 
-Tweaks can contain `CName` fields related to audio, these CNames refer to entries defined in the `cooked_metadata.audio_metatada` file, entries there have a name field that's used in the tweaks, multiple entries can have the same name. Fields of these entries can be numbers, objects, lists, but most importantly CNames, those can refer to other entries in the file OR event names defined in `events_metadata.json` (and searchable in [SoundDB](https://sounddb.redmodding.org/sfx)).
+Tweaks can contain `CName` fields related to audio, these CNames refer to entries defined in the `cooked_metadata.audio_metadata` file, entries there have a name field that's used in the tweaks, multiple entries can have the same name. Fields of these entries can be numbers, objects, lists, but most importantly CNames, those can refer to other entries in the file OR event names defined in `eventsmetadata.json` (and searchable in [SoundDB](https://sounddb.redmodding.org/sfx)).
 
 {% hint style="warning" %}
 This page is probably incomplete and only contains a dump of findings. If you find a discrepancy or know more, please edit it.
@@ -24,6 +24,8 @@ Vehicles have two audio fields, `playerAudioResource` - settings for player-driv
 ## Weapons
 
 Weapons have also two audio fields, `audioName` - probably the main audio settings, and `audioWeaponConfiguration` which seems to be base settings, usually in melee weapons, where audioName overwrites some of the base settings. The cooked\_metadata entries they refer to contain separately settings for player and for NPCs, but also for body types and material types for bullet impacts etc. They can get deeply nested and even recursive infinitely, watch out for that when processing them programatically.
+
+Additionaly, weapons can have `audioSwitchName` and `audioSwitchValue`, both of which are defined in `eventsmetadata.json`. This is used to tell the audio engine what weapon type this weapon is, so that maybe different sounds are played. For example `Items.Preset_Burya_Default` has `audioSwitchName: w_pistol_type` and `audioSwitchValue: w_pistol_power`, which means in the engine the switch `w_pistol_type` gets assigned the value `w_pistol_power` when playing the weapon's sounds.
 
 ## Radios
 
