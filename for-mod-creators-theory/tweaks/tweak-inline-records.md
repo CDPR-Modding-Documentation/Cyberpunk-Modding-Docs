@@ -45,7 +45,7 @@ To learn how to avoid that, just keep reading.
 
 Let's assume that we want to tweak the Hellhound's vehicle health. Here is the record:
 
-<figure><img src="../../.gitbook/assets/image (581).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/car_records_inline.png" alt=""><figcaption></figcaption></figure>
 
 As you can see, its health is based on the **shared record** `VehicleStatPreset.BaseCar_inline0`.&#x20;
 
