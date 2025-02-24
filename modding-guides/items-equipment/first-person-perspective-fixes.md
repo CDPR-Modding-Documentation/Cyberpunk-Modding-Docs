@@ -97,13 +97,10 @@ If you don't have a yaml because you're changing an in-game item for some reason
 
     <figure><img src="../../.gitbook/assets/image (360).png" alt=""><figcaption><p>This is my example .yaml file with only <em>one</em> entry. Yours might have more.</p></figcaption></figure>
 4. Check if there is something called `$instances`. If yes, the mod is using [archivexl-dynamic-variants](adding-new-items/archivexl-dynamic-variants/ "mention") and you are done here — go to [#dynamic-variants-hiding-fpp](first-person-perspective-fixes.md#dynamic-variants-hiding-fpp "mention")
-5. Find the line `appearanceSuffixes`_. **Again,**_ If the mod is using [archivexl-dynamic-variants](adding-new-items/archivexl-dynamic-variants/ "mention") (there is something called $instances), you can skip this step.
-6. If the line isn't there, add it. Use the same number of leading spaces as in the surrounding lines!
-7.  Add the line `itemsFactoryAppearanceSuffix.Camera` to the array. If you have something else in there, add a comma.
+5. Find the line `appearanceSuffixes`_. IIf it is missing or empty,_ **do not add it** – use [#dynamic-variants-hiding-fpp](first-person-perspective-fixes.md#dynamic-variants-hiding-fpp "mention") instead.
+6.  If you have `itemsFactoryAppearanceSuffix.Camera` in your appearanceSuffixes array, you are dealing with [#legacy-variants-hiding-fpp](first-person-perspective-fixes.md#legacy-variants-hiding-fpp "mention").
 
-    <figure><img src="../../.gitbook/assets/image (361).png" alt=""><figcaption><p>If there's already another entry, add a comma and a space, <em>then</em> add <code>itemsFactoryAppearanceSuffix.Camera</code>.</p></figcaption></figure>
-8. Repeat this process for any other items in the `.yaml` that you need to fix.&#x20;
-9. Save and close the file.
+    <figure><img src="../../.gitbook/assets/image (361).png" alt=""><figcaption><p>Hopefully, you won't find this in there. If you do: be careful, this mod is an antiquity! :D</p></figcaption></figure>
 
 ### Legacy variants: hiding FPP
 
@@ -151,6 +148,7 @@ For legacy appearances (if the yaml does not have a key called `$instances`), go
 
 1. Switch back to Wolvenkit.
 2. Pick **one of the two** options below (we recommend[#hiding-fpp-in-the-.app](first-person-perspective-fixes.md#hiding-fpp-in-the-.app "mention"))
+3. Complete the section under [#checking-the-root-entity](first-person-perspective-fixes.md#checking-the-root-entity "mention")
 
 #### Hiding FPP in the .app
 
@@ -171,6 +169,16 @@ For legacy appearances (if the yaml does not have a key called `$instances`), go
 {% hint style="info" %}
 Alternatively, you can duplicate the component and have two for different meshes. This will be covered in [#problem-3-partial-hiding-justdraculathings](first-person-perspective-fixes.md#problem-3-partial-hiding-justdraculathings "mention")
 {% endhint %}
+
+#### Checking the root entity
+
+{% hint style="info" %}
+If your `yaml` file had an `$instances` block, the item is already dynamic and you can skip this step.
+{% endhint %}
+
+1. Find and open the [root entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity). If you have no idea which one it is, you can open the .csv and find the file paths in there.
+2. Inside the file, make sure that you have a **`DynamicAppearance`** entry in your tags array (for a full guide with screenshot, see [archivexl-dynamic-variants](adding-new-items/archivexl-dynamic-variants/ "mention") -> [#the-root\_entity](adding-new-items/archivexl-dynamic-variants/#the-root_entity "mention"))
+3. If you don't, add it. Congratulations, you're good to go!
 
 ### Testing
 
