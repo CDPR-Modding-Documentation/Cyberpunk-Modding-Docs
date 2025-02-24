@@ -2,12 +2,12 @@
 description: >-
   Custom in-world vendor support via simple TweakDB/TweakXL records, created by
   Deceptious
-cover: ../../.gitbook/assets/19679-1739213684-282523717.png
-coverY: 164.22553467271553
+cover: ../../.gitbook/assets/VendorsXL.png
+coverY: 0
 layout:
   cover:
     visible: true
-    size: hero
+    size: full
   title:
     visible: true
   description:
@@ -20,7 +20,7 @@ layout:
     visible: true
 ---
 
-# 💳 VendorsXL
+# VendorsXL: Custom Vendors
 
 **Published:** February 2025 by [Florence](https://app.gitbook.com/u/4gvVbWNknqVssW8cldGav2LGi4W2 "mention")
 
