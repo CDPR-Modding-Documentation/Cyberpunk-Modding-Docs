@@ -248,6 +248,7 @@
 * [🔗 Community Guides](modding-guides/community-guides/README.md)
   * [External Community Guides: NPVs (V as NPC) - Custom NPCs](modding-guides/community-guides/external-npvs-v-as-npc-custom-npcs.md)
 * [👤 V & NPCs](modding-guides/npcs/README.md)
+  * [Adding Custom Appearance to NPCs in PhotoMode and AMM](modding-guides/npcs/adding-custom-appearance-to-npcs-in-photomode-and-amm.md)
   * [Creating Custom Skins - Tattoos - Scars Textures](modding-guides/npcs/custom-tattoos-and-scars/README.md)
     * [Texture Frameworks for Player V](modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/README.md)
       * [Overlay textures by framework](modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/overlay-list.md)
