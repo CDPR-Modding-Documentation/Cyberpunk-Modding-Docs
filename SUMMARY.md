@@ -404,6 +404,8 @@
   * [Switching between sector states](modding-guides/world-editing/switching-between-sector-states.md)
   * [Archived: Merging World Additions via ArchiveXL](modding-guides/world-editing/adding-locations-and-structures-with-archivexl.md)
   * [Archived: World editing via file edit](modding-guides/world-editing/archived-world-editing-via-file-edit.md)
+  * [Scripted interactions](modding-guides/world-editing/scripted-interactions/README.md)
+    * [👗 Wardrobe interaction (device)](modding-guides/world-editing/scripted-interactions/wardrobe-interaction-device.md)
 * [🎺 Sound](modding-guides/sound/README.md)
   * [Finding an audio file](modding-guides/sound/finding-an-audio-file.md)
   * [Replacing sounds effects](modding-guides/sound/replacing-sounds-effects.md)
