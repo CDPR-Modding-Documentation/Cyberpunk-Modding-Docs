@@ -5,7 +5,8 @@ description: Add an "Open wardrobe" interaction.
 # 👗 Wardrobe interaction (device)
 
 **Published:** Feb 24, 2025 by [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")\
-**Last update:** Feb 24, 2025 by [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")
+**Last update:** Feb 24, 2025 by [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")\
+**Credits:** @**keanuWheeze** for creating 90% of the scripts shared in this pages.
 
 This page is a subsection of the [.](./ "mention") guide. It will teach you how to add an interaction to open the wardrobe menu.
 

@@ -1,6 +1,6 @@
 ---
-description: This page will gather knowledge and guides about scripted interactions in Lua.
 icon: gear-code
+description: This page will gather knowledge and guides about scripted interactions in Lua.
 ---
 
 # Scripted interactions
@@ -8,7 +8,8 @@ icon: gear-code
 ### Summary
 
 **Published:** Feb 24, 2025 by [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")\
-**Last update:** Feb 24, 2025 by [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")
+**Last update:** Feb 24, 2025 by [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")\
+**Credits:** @**keanuWheeze** for creating 90% of the scripts shared in this pages.
 
 This page and its subpages contain ressources to guides about making scriped interactions for the player, for Cyberpunk 2077.
 
@@ -37,6 +38,8 @@ For the following tutorials, you will need this template. It provides a bunch of
 You will probably not use all those files, but they can be usefull depending on your needs.
 
 {% file src="../../../.gitbook/assets/interaction_script_template.zip" %}
+
+Thanks to @**keanuWheeze** for making most of the scripts.
 
 Here is a breakdown of the its content:&#x20;
 
