@@ -17,7 +17,7 @@ This tutorial will teach you how to replace **facial expressions** for Photo Mod
 
 * If you want to look at **reference expressions**, check [here](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/cheat-sheet-facial-expressions.md#expression-references-for-individual-npc-files).
 * If you want to import your own facial expressions, then currently (Mar 08 2024) you're somewhat out of luck, because the toolchain doesn't fully support you yet and we don't have a guide. Reach out [on Discord](https://discord.gg/redmodding) and help us to get this show on the road!&#x20;
-* If you want to make custom **poses** for anything that is not the face, check [poses-animations-make-your-own](poses-animations-make-your-own/ "mention")
+* If you want to make custom **poses** for anything that is not the face, check [poses-animations-make-your-own](../animations/poses-animations-make-your-own/ "mention")
 
 ## Step 1: Locate the right file
 
@@ -98,7 +98,7 @@ Find the correct names [here](../../../for-mod-creators-theory/references-lists-
 
 3. Rinse and repeat the process with all animation names
 4. Save the file
-5. [Install the project and start the game](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch)
+5. [Install the project and start the game](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch)
 
 {% hint style="success" %}
 Voila, you now have custom expressions.

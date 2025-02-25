@@ -1,8 +1,8 @@
 ---
-description: Changing an NPC's default appearances (and adding more via AMM)
+description: Changing an NPC's default appearances and adding more via Photomode and AMM
 ---
 
-# Appearances: change NPC looks
+# For NPCs - Change Appearances
 
 ## **Summary**
 

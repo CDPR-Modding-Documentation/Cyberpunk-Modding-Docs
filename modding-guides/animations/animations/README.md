@@ -24,7 +24,7 @@ This walks you through the process of hooking an existing `.anims` file up with 
 
 How to add standalone poses to photo mode (rather than making replacers)&#x20;
 
-### [custom-facial-expressions.md](custom-facial-expressions.md "mention")
+### [custom-facial-expressions.md](../facial-animations/custom-facial-expressions.md "mention")
 
 How to replace the default set of expressions with those from an NPC
 

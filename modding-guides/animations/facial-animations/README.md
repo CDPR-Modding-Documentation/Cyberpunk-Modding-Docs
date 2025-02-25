@@ -16,6 +16,6 @@ The original could only process scenerid files but its now able to process .anim
 
 Thats all well and good but you need to be able to find them, so again with the help of Loomy I've been digging into the file structures to work out how things are related. A pictures worth a 1000 words so here you go:
 
-<figure><img src="../../.gitbook/assets/image (539).png" alt=""><figcaption><p>The Relationships (as far as I can tell from FAFO so far) between scene node, dialog event to sound/anim files</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (539).png" alt=""><figcaption><p>The Relationships (as far as I can tell from FAFO so far) between scene node, dialog event to sound/anim files</p></figcaption></figure>
 
 Basically you want to find the audio on [https://sounddb.redmodding.org/subtitles](https://sounddb.redmodding.org/subtitles) get the locStringId, then the tricky bit is finding the scene its referenced by, from that you can  find the dialogLine, which lets you find the actor id, and locate the anims file. Anim for it should be in there with the locstring as its name. Am going to try scrape all the scene files to a db to make the tricky bit easier.

@@ -24,7 +24,7 @@ You can find guides related to AMM by using the Wiki's **search function**. The 
 [amm-collab-anims-poses.md](../../modding-guides/animations/animations/amm-collab-anims-poses.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../modding-guides/animations/animations/custom-facial-expressions.md" %}
-[custom-facial-expressions.md](../../modding-guides/animations/animations/custom-facial-expressions.md)
+{% content-ref url="../../modding-guides/animations/facial-animations/custom-facial-expressions.md" %}
+[custom-facial-expressions.md](../../modding-guides/animations/facial-animations/custom-facial-expressions.md)
 {% endcontent-ref %}
 
