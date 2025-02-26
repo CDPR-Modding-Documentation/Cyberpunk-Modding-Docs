@@ -88,7 +88,8 @@ This is not necessary for the purpose of this tutorial.
 2. Create or edit a `materialEntry`:
    1. Set the name to `your_tattoo`
    2. Set isLocalInstance to `true` (check the box)
-3. Create or edit a local material instance:
+3. Create or edit a local material instance:\
+   If your mesh does not have `preloadLocalMaterialInstances`, use `localInstances.materials` instead.
    1. Set baseMaterial to `your_modder_name\ccxl\your_tattoo\textures\your_tattoo.mi`\
       (the relative path to the `.mi` file)
 4. Create or edit an `appearance`: the `chunkMaterials` need to point at `your_tattoo`.
@@ -123,7 +124,7 @@ Change the `localizedName` entry to something globally unique – call it someth
 If you end up using the same translation key as somebody else, the game might show either entry, and you probably don't want that.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ccxl_tattoo_mesh_file.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 5: The Translation Entry \[The .json]
 
