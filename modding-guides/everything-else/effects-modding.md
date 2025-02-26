@@ -13,6 +13,38 @@
 * While explosions are definitely effects, lights are something else => [lights-explained.md](../../for-mod-creators-theory/files-and-what-they-do/lights-explained.md "mention")
 * To **position** effects, see [amm-light-components.md](custom-props/amm-light-components.md "mention") -> [#placing-your-light-components](custom-props/amm-light-components.md#placing-your-light-components "mention")
 
+## CET Script
+
+This script extracts all the VFX names from TweakDB and prints them in the CET Console along with their TweakDB record they are attached to; these can be reused for buffs & status effects.
+
+```
+local GetVFX = function(self)
+	local VFX = {}
+	local loops = TweakDB:GetRecords('gamedataStatusEffectFX_Record')
+	for i,v in ipairs(loops) do
+		local recordID = v:GetRecordID().value
+		local thisVFX = TweakDB:GetFlat(recordID..'.name').value
+		VFX[thisVFX]=recordID
+	end
+	
+	loops = TweakDB:GetRecords('gamedataEffector_Record')
+	for i,v in ipairs(loops) do
+		local recordID = v:GetRecordID().value
+		local thisVFX = TweakDB:GetFlat(recordID..'.vfxName')
+		if thisVFX ~= nil then
+			thisVFX = thisVFX.value
+			VFX[thisVFX]=recordID
+		end
+	end
+	for k,v in pairs(VFX) do
+		local theString = 'VFX: '..tostring(v)..'=>'..tostring(k)
+		print(theString)
+	end;
+end;
+GetVFX()
+
+```
+
 ## Recommended mods
 
 FX player ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8194)) is a CET mod that lets you play game effects.&#x20;
