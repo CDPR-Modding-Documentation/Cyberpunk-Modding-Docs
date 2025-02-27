@@ -36,6 +36,10 @@ Since 1.5, psiberx has made it possible to use **conditionals** via [dynamic app
 
 But while the solution has changed (and improved), the problems remain and require handling.
 
+{% hint style="info" %}
+You can use **dynamic path substitution** in **clothing items**, or in any #compon (the depot path's flag has to be set to **Soft** for this)
+{% endhint %}
+
 ### Body genders
 
 There are two body genders with different proportions, and you can't make them wear the same shirt (at least not without clipping). To solve that, you can do what CDPR did and have one variant per rig.

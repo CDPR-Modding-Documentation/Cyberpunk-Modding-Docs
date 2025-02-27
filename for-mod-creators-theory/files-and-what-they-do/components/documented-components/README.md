@@ -33,7 +33,8 @@ The [#entskinnedclothcomponent](./#entskinnedclothcomponent "mention")'s physics
 
 <summary>entGarmentSkinnedMeshComponent</summary>
 
-Can be used interchangeably with `entSkinnedMeshComponent`.
+This type of component supports **path substitution**, as long as the depotPath's `Flag` is set to `Soft` (see [archivexl-suffixes-and-substitutions.md](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") for more detail). \
+Can otherwise be used interchangeably with `entSkinnedMeshComponent`.
 
 This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](./#entskinnedclothcomponent).
 
