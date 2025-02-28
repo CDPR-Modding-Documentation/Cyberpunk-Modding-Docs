@@ -315,7 +315,7 @@ Mod authors sometimes disable mod manager integration for a variety of reasons. 
 8. You should now have successfully installed the file.
 9. If you have used the recommended settings, it should enable and deploy automatically. Otherwise, you need to do that yourself.
 10. Start the game
-11. Head to the character creator and create a female-bodied V
+11. Head to the character creator and create a female-bodied V.
 12. Check hair 48 – normally, it looks like this:
 
 <figure><img src="../../../.gitbook/assets/original.png" alt=""><figcaption><p>Vanilla hair 48</p></figcaption></figure>
