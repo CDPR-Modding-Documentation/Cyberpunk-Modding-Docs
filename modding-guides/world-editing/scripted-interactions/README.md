@@ -83,7 +83,7 @@ Workspot interactions :&#x20;
 
 * Sit _(template)_
   * Bench
-  * Couch
+  * [Couch](sit-on-couch-interaction-workspot.md)
   * Lean (rail)
 * Sleep
 * Coffee

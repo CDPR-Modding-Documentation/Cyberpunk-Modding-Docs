@@ -10,7 +10,7 @@ description: Add an "Open wardrobe" interaction.
 
 This page is a subsection of the [.](./ "mention") guide. It will teach you how to add an interaction to open the wardrobe menu.
 
-The logic shown here also applies to other device _like_ interactions.
+The logic shown here also applies to other similar device _like_ interactions.
 
 ## Requirements
 
@@ -25,9 +25,10 @@ The logic shown here also applies to other device _like_ interactions.
 ## Define the position
 
 1. Find the place where you want to add the interaction, this can be anything, an existing wardrobe, a new mesh you add, a secret compartment in the wall, or even in the middle of nowhere.
-2. Using entSpawner, add and position a **Meta** > **Static Marker** where the Wardrobe icon will be displayed.
-   1. Copy the X Y Z position of the marker
-   2. _(Optional)_ You can save the marker in a group to more easily change the position later if you're not happy with where the icon appears. But we won't need to export it.
+2. Using entSpawner, add and position a **Meta** > **Static Marker**:&#x20;
+   1. Position the marker where the Wardrobe icon will be displayed ;
+   2. Copy the X Y Z position of the marker.
+   3. _(Optional)_ You can save the marker in a group to more easily change the position later if you're not happy with where the icon appears. But we won't need to export it.
 
 <div data-full-width="false"><figure><img src="../../../.gitbook/assets/Wardrobe-interaction-static-marker.png" alt=""><figcaption><p>Wardrobe interaction - static marker</p></figcaption></figure></div>
 
@@ -41,21 +42,23 @@ wardrobe:init()
 ```
 
 The require contains the path to the device.\
-Its instantiation takes 2 parameters: an ID which must be unique, and the location.\
+Its instantiation takes 2 parameters:&#x20;
+
+1. An ID which must be unique accross all interactions
+2. The icon and interaction coordinates
+
 Paste the X Y Z copied before into the `Vector4`, the fourth parameter must be ignored and set to `0.0`.
-
-
 
 ## Test the result
 
-If you're working with hot reload, you can change the `interactions.lua` file from within your game folder and then directly press Reload all mods in the CET menu to see the result, without having to restart your game. Otherwise, redeploy you mod.
+If you're working with hot reload, you can change the `interactions.lua` file from within your game folder and then directly press **Reload all mods** in the CET menu to see the result, without having to restart your game. Otherwise, redeploy your mod.
 
 <figure><img src="../../../.gitbook/assets/Wardrobe-interaction-result.png" alt=""><figcaption><p>Wardrobe interaction - result (with french game <span data-gb-custom-inline data-tag="emoji" data-code="1f1eb-1f1f7">🇫🇷</span>)</p></figcaption></figure>
 
 ### Fine tune the interaction
 
 Not happy with the interaction range? or the icon visibility range? or the text label?\
-Each interaction device comes with options that you can change to your will.
+Each interaction device comes with some parameters that you can change to your will.
 
 Default wardrobe parameters :&#x20;
 
