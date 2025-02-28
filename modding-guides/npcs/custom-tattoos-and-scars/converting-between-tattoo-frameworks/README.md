@@ -12,7 +12,7 @@ description: >-
 
 **Last documented edit for VTK**: February 23 2025 by **LadyLea**
 
-**Last documented edit for Unique V Texture Framework**: January 27 2025 by **AllKnowingLion**
+**Last documented edit for Unique V Texture Framework**: February 27 2025 by **AllKnowingLion**
 
 {% hint style="warning" %}
 It is highly recommended to fully read the official description pages of the following Texture Frameworks and the respective Body Mods on Nexus Mods - as further information can be found and also to keep track of any updates.
@@ -77,6 +77,7 @@ The UV Framework was the first full body and arm texture framework. The base ver
 * (F) [Ultra High Poly Body (UHPB)](https://www.nexusmods.com/cyberpunk2077/mods/3784)
 * (F) [Vanilla High Feet](https://www.nexusmods.com/cyberpunk2077/mods/3783?tab=files) _(Alternate UV Framework base body file)_
 * (F) [Freyja](https://www.nexusmods.com/cyberpunk2077/mods/10783?tab=description)
+* (F) [Elegy](https://www.nexusmods.com/cyberpunk2077/mods/19821?tab=description)
 * (M) [Adonis](https://www.nexusmods.com/cyberpunk2077/mods/4968)
 * (M) [Atlas](https://www.nexusmods.com/cyberpunk2077/mods/8766)
 * (M) Titan Body _(Unreleased)_
