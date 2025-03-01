@@ -9,7 +9,7 @@ description: How to create a custom interface via inkwidgets and animate via ink
 Created: ???\
 Last documented update: Nov 26 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page lists theory information about interface elements. For more hands-on information, check [interface-modding.md](../../../modding-guides/custom-icons-and-ui/interface-modding.md "mention").
+This page lists theory information about interface elements. For more hands-on information, check [interface-modding.md](../../../modding-guides/custom-icons-and-ui/interface-modding.md "mention"), or for creating UI programatically: [InkWidgets](https://app.gitbook.com/s/fwsaoju1TBAUvMpI6NIw/how-do-i/inkwidgets "mention") .
 
 ## Inkwidgets: a custom interface
 
@@ -17,7 +17,7 @@ Inkwidgets are a mapping of widgets and effects onto a 2D plane.
 
 The structure of inkwidget is a graph/tree with parent and children nodes.
 
-### _Important elements of the inkwidget_
+### _Important properties of the inkwidget_
 
 * anchor - This is treated as the center of the widget. It is what animations are centered, scaled, and rotated around.
 * margin - This is what allows precise positioning of the widget by adding space in the corresponding direction. Can use negative numbers as values as well. Widget Preview in WolvenKit is useful when adjusting margin values.
@@ -32,7 +32,7 @@ The structure of inkwidget is a graph/tree with parent and children nodes.
 
 Each animation needs a definition (what kind of animation) and target (which widget animation applies to).
 
-### _Important elements of inkanim definitions_
+### _Important properties of inkanim definitions_
 
 There are a set number of different animation types. Their names are mostly self-explanatory. In WolvenKit, use 'Create Handle' on a handleinkanimInterpolator to choose a animation.
 
