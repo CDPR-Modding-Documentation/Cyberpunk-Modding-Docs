@@ -2,7 +2,7 @@
 description: 'Tutorial: How to Edit Third-Person and First Person Animations for V'
 ---
 
-# Editing V's Actual In Game Animations
+# ✏️ Editing V's Actual In Game Animations
 
 ## **Summary**
 

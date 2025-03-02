@@ -2,7 +2,7 @@
 description: Knowledge about animations in Cyberpunk, first and third person
 ---
 
-# 👤 Animations
+# 🧍 Animations
 
 ## Summary
 

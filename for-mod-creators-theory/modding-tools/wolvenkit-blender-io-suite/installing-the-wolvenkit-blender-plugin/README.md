@@ -13,25 +13,37 @@ This page will show you how to install the Wolvenkit Blender Plugin from a githu
 
 ### Compatibility
 
-## Step 0: Uninstall the old version
+## Optional: Uninstall the old version
+
+<details>
+
+<summary>Uninstalling the old version</summary>
+
+
+
+</details>
+
+
+
+## Optional: uninstall the old version
 
 {% hint style="info" %}
-If you never installed a previous version of the plugin, you can go straight to [#step-1-install-the-plugin](./#step-1-install-the-plugin "mention")
+You don't need to do this unless you have trouble updating. Go straight to [#step-0-download-the-plugin](./#step-0-download-the-plugin "mention")
 {% endhint %}
+
+<details>
+
+<summary>Uninstalling the previous plugin version</summary>
 
 1. Open the Blender Preferences (Toolbar: `Edit` -> `Preferences`) and select the `AddOns` tab
 
-<figure><img src="../../../../.gitbook/assets/blender_plugin_uninstall.png" alt=""><figcaption></figcaption></figure>
+<img src="../../../../.gitbook/assets/blender_plugin_uninstall.png" alt="" data-size="original">
 
-Complete either of the options below:
-
-#### Click the  `Remove` button
-
-The build-in Blender way. Should work. If it doesn't check the second option
-
-#### Delete the files on your disk
-
-Check the plugin's `file` entry. It will usually be something like this:
+2. Complete either of the options below:
+   * Click the  `Remove` button\
+     The build-in Blender way. Should work. If it doesn't check the second option
+   * Delete the files on your disk\
+     Check the plugin's `file` entry. It will usually be something like this:
 
 ```
 %APPDATA%\Blender Foundation\Blender\4.0\scripts\addons\i_scene_cp77_gltf
@@ -39,11 +51,11 @@ Check the plugin's `file` entry. It will usually be something like this:
 
 Navigate there with your Windows Explorer (Hotkey: `Windows+R`, paste the path above after changing your Blender version), and delete everything — either the entire folder, or all files inside.
 
-{% hint style="success" %}
-Optional: Close and re-open Blender
-{% endhint %}
+3. Optional: Close and re-open Blender
 
-## Step 1: Install the plugin
+</details>
+
+## Step 0: Download the plugin
 
 {% hint style="info" %}
 If you want to install the current development version of the plugin, read [installing-from-github-source.md](installing-from-github-source.md "mention").&#x20;
@@ -57,12 +69,14 @@ Download the latest release of the plugin from **github:**&#x20;
 
 <figure><img src="../../../../.gitbook/assets/blender_plugin_download.png" alt=""><figcaption><p>Do not download anything called "Source code", unless you know what you're doing</p></figcaption></figure>
 
-3. Start Blender
-4. Open the Blender Preferences (Toolbar: `Edit` -> `Preferences`) and select the `AddOns` tab
+## Step 1: Install the plugin
+
+1. Start Blender
+2. Open the Blender Preferences (Toolbar: `Edit` -> `Preferences`) and select the `AddOns` tab
 
 <figure><img src="../../../../.gitbook/assets/blender_plugin_install..png" alt=""><figcaption></figcaption></figure>
 
-5. Click the "Install" button and select the zip file you downloaded in step 2
+3. Click the "Install" button and select the zip file you downloaded in step 2
 
 ## Step 2: Enable the plugin
 

@@ -12,7 +12,7 @@ base\animations\ui\photomode\photomode_male_facial.anims
 <table><thead><tr><th width="95.33333333333331">Index</th><th>Expressions </th><th>CNAME keys to activate them</th></tr></thead><tbody><tr><td>1</td><td>Neutral</td><td>facial_neutral</td></tr><tr><td>2</td><td>Charm</td><td>facial_charming</td></tr><tr><td>3</td><td>Fury</td><td>facial_furious</td></tr><tr><td>4</td><td>Boredom</td><td>facial_bored</td></tr><tr><td>5</td><td>Anger</td><td>facial_pissed</td></tr><tr><td>6</td><td>Satisfaction</td><td>facial_pleased</td></tr><tr><td>7</td><td>Disgust</td><td>facial_disgusted</td></tr><tr><td>8</td><td>Happiness</td><td>facial_happy</td></tr><tr><td>9</td><td>Fear</td><td>facial_scared</td></tr><tr><td>10</td><td>Surprise</td><td>facial_surprised</td></tr><tr><td>11</td><td>Sadness</td><td>facial_sadness</td></tr><tr><td>12</td><td>Whistle</td><td>facial_whistling</td></tr></tbody></table>
 
 {% hint style="info" %}
-For a guide how to replace photo mode expressions, see [here](../../../modding-guides/animations/facial-animations/custom-facial-expressions.md).
+For a guide how to replace photo mode expressions, see [here](../../../modding-guides/animations/animations/custom-facial-expressions.md).
 {% endhint %}
 
 ## AMM facial expressions
