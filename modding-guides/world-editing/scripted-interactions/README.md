@@ -45,29 +45,29 @@ Here is a breakdown of the its content:&#x20;
 
 ```
 archive
- └── base
-      └── gameplay
-           └── devices
-                └── arcade_machines // Contains entities used to play workspot animations
+ └─ base
+     └─ gameplay
+         └─ devices
+             └─ arcade_machines // Contains entities used to play workspot animations
 resources
- └── bin
-      └── x64
-           └── plugins
-                └── cyber_engine_tweaks
-                     └── mods
-                          └── {YourModName}
-                               └── init.lua                    // Your main file
-                               └── tween                       // Library used to ease transitions between animations (https://github.com/kikito/tween.lua)
-                               └── modules
-                                    └── devices                // Device interactions "ready-to-use"
-                                         └── template          // Device template that can be extended
-                                    └── external               // Game related utilities maintained in external repositories
-                                    └── utils                  // Lua/CET utilities
-                                    └── workspots              // Workspot interactions "ready-to-use"
-                                         └── template          // Workspot template that can be extended
-                                    └── interactions.lua       // List of interactions you add to the world
-                                    └── variants.lua           // Variants and settings logic
-                                    └── variantSettings.lua    // List of settings and variants
+ └─ bin
+     └─ x64
+         └─ plugins
+             └─ cyber_engine_tweaks
+                 └─ mods
+                     └─ {YourModName}
+                         └─ init.lua                    // Your main file
+                             └─ tween                   // Library used to ease transitions between animations (https://github.com/kikito/tween.lua)
+                             └─ modules
+                                 └─ devices             // Device interactions "ready-to-use"
+                                     └─ template        // Device template that can be extended
+                                 └─ external            // Game related utilities maintained in external repositories
+                                 └─ utils               // Lua/CET utilities
+                                 └─ workspots           // Workspot interactions "ready-to-use"
+                                     └─ template        // Workspot template that can be extended
+                                 └─ interactions.lua    // List of interactions you add to the world
+                                 └─ variants.lua        // Variants and settings logic
+                                 └─ variantSettings.lua // List of settings and variants
 ```
 
 ### Interactions available
