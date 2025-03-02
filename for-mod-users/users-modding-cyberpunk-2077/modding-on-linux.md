@@ -166,6 +166,16 @@ This is the most common error. You wouldn't believe how often people show up in 
 
 Do not be these people. Copy-paste from the guide and delete any extra spaces.
 
+
+
+#### “Invalid file magic number”
+
+Delete/uninstall the current protontrick version. Try the beta-version from here and running the commands:
+
+{% embed url="https://monroeworld.com/steamdeck/proton.txt" %}
+
+
+
 #### Update protontricks
 
 Make sure to be on the last version of protontricks. If that does not work, try the **second-to-last** version — sometimes, the tools themselves break.
