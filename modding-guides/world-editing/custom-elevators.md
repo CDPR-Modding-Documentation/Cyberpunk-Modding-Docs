@@ -54,6 +54,11 @@ Make sure to spawn the elevator and floor terminals as `Device`(`Entity -> Devic
   * Select one marker, right click its position field, and select \`Paste position and rotation\`
   * Now you will have moved the marker into the same spot as the elevator
   * Repeat for each marker / floor
+* Make sure that once you are done setting up the markers, you move the elevator back to the position of the starting floor
+
+{% hint style="warning" %}
+Ensure that the "Primary Range" and "Secondary Range" (Found under the "World Node" header) of the marker nodes is higher than the one of the elevator device
+{% endhint %}
 
 ## Assigning NodeRef's
 
@@ -111,8 +116,8 @@ Do not use the same NodeRef names as used in this guide, but choose your own uni
   * A elevator, spawned as `Device`, with its own NodeRef, and linked to both terminals (Make sure you use the terminals NodeRefs, not the markers)
   * Two terminals, spawned as `Device`, set to be persistent, with their own NodeRefs, and properly setup instance data (Linking them to the floor markers and with names)
   * Two static markers, each with their own NodeRef, positioned correctly
-* Once you have all this, you are ready to export
-* Import into WKit using the Object Spawner import script
+* Once you have all this, you are ready to [export](exporting-from-object-spawner.md)
+* [Import into WKit](exporting-from-object-spawner.md)
 
 {% hint style="warning" %}
 You **must** import the result into WolvenKit in order for the elevator to be functional
