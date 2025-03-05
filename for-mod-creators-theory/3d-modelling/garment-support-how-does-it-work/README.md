@@ -105,7 +105,7 @@ An example for `t0_000_pma_base__full` (the default body component, torso+legs):
 
 ## Troubleshooting Garment Support
 
-### My garment support is shrinking too far!
+### My garment support is shrinking too far! or clipping!
 
 Check [Painting garment support parameters](painting-garment-support-parameters.md) — **paint it red**, baby!
 

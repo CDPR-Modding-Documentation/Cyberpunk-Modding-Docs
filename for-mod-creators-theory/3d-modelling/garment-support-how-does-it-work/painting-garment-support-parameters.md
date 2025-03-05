@@ -9,7 +9,7 @@ description: >-
 ## Summary
 
 Created on: 28. 10. 2023 by [revenantFun](https://app.gitbook.com/u/bkAQ2D9IRHUOAUHOfXIINTBTeWz1 "mention")\
-Last documented update: Feb 12 2025 by [revenantFun](https://app.gitbook.com/u/bkAQ2D9IRHUOAUHOfXIINTBTeWz1 "mention")
+Last documented update: Mar 4 2025 by [revenantFun](https://app.gitbook.com/u/bkAQ2D9IRHUOAUHOfXIINTBTeWz1 "mention")
 
 This page will describe the two color attributes used by Garment Support and how to edit them in Blender.
 
@@ -100,9 +100,22 @@ Note that this does not actually **prevent** the mesh beneath your garment from 
 If the cap is left black or even skipped completely, nothing will actually _break_. However, if your mesh seems like it's being too aggressive when you layer it over other things, and leaving holes in whatever you're trying to layer under it, try painting more inside faces red.
 {% endhint %}
 
+The following is an example where CDPR forgot (?) to set a cap parameter in one of the vanilla jackets and left it black.
+
+In an unmodded game this is unnoticeable because the body also morphs alongside the clothes; if the chest area gets a little more compressed than usual, nobody can tell. But as mentioned above, _modded_ bodies usually don't have garment support on them, causing this:
+
+<div><figure><img src="../../../.gitbook/assets/jacket_17.png" alt=""><figcaption><p>Jacket_17 in the vanilla game has a blank cap...</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/badcaps.png" alt=""><figcaption><p>...which produces nip-slips on modded bodies. Whoops!</p></figcaption></figure></div>
+
 ### That all seems like a lot of work. Is there an easy mode?
 
 Sure! The simplest way to add functioning garment support to your custom item is to have a flat red `_GARMENTSUPPORTWEIGHT` attribute, a flat black `_GARMENTSUPPORTCAP` attribute, and a flat black `Color` attribute. Your mesh will export and, assuming you have the proper shapekeys, will morph in (more or less) the way you'd expect!
 
 But if you'd like to get it working as clean and smooth as the vanilla morphing can be at its best, getting into the practice of manually painting your weights and caps can make that happen for you.
 
+### Example Gallery
+
+Here are some further examples of garment support parameter painting as it's seen on vanilla items:
+
+<div><figure><img src="../../../.gitbook/assets/jacket_01.png" alt="" width="388"><figcaption><p>Jacket_01</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/jumpsuit_01.png" alt=""><figcaption><p>Jumpsuit_01</p></figcaption></figure></div>
+
+<div><figure><img src="../../../.gitbook/assets/tshirt_02.png" alt="" width="233"><figcaption><p>TShirt_02</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/undershirt_03.png" alt="" width="233"><figcaption><p>Undershirt_03</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/pants_02.png" alt=""><figcaption><p>Pants_02</p></figcaption></figure></div>
