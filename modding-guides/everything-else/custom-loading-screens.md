@@ -1,74 +1,88 @@
-# Custom Loading Screens
+---
+description: Replace in-game Loading Screens with your own pictures
+icon: paintbrush-pencil
+---
 
-## Summary <a href="#summary" id="summary"></a>
+# Customize in-game Loading Screens
 
-**Created & Published:** Summer 2021 by **@Pinkydude**
+## <mark style="color:blue;">▶</mark> <mark style="color:yellow;">Summary</mark> <a href="#summary" id="summary"></a>
 
-![](<../../.gitbook/assets/0 (2)>)
+> **Created & Published:** Summer 2021 by [PinkyJulien](https://app.gitbook.com/u/iKTJipgsEBTEnUVSuliSjOUuiJq2 "mention")\
+> **Last Documented Update:** 2 March 2025 **by** [PinkyJulien](https://app.gitbook.com/u/iKTJipgsEBTEnUVSuliSjOUuiJq2 "mention")
 
-![](<../../.gitbook/assets/1 (4)>)
+For this guide, you'll need:
 
-What you’ll need :\
+* Recent [WolvenKit ](../../for-mod-creators-theory/modding-tools/wolvenkit.md)version
+* [Basic modding knowledge](../items-equipment/recolours-and-refits/r-and-r-your-own-wolvenkit-project.md)
 
+***
 
-* [Noesis](https://richwhitehouse.com/index.php?content=inc\_projects.php\&showproject=91)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit/releases) or the extracted game files
-* Photoshop / Art program
+## <mark style="color:yellow;">◼</mark> Loading Screens
 
-![](<../../.gitbook/assets/2 (3)>)
+There are two types of loading screens; each require different workflow to customize them
 
-I’ll assume you already know some basic modding\
-(extracting the files with the console or WKit etc)
+The first type of loading screens are the ones used when you launch the game.\
+I'll call them "Dynamic" loading screens - they use multiple assets and effects.&#x20;
 
-First of you’ll need to create your mod folder, it should look like this
+<figure><img src="../../.gitbook/assets/image (589).png" alt=""><figcaption><p>"Dynamic" Loading Screen</p></figcaption></figure>
 
-![](../../.gitbook/assets/3)
+And the second type are the ones used when you fast-travel or load a save file when already in-game.\
+These are simple images - I'll call them "Static" loading screens.
 
-This is where the Loading screen image are stocked, so go in that exact same folder in your Game Extracts!
+<figure><img src="../../.gitbook/assets/image (590).png" alt=""><figcaption><p>"Static" Loading Screen</p></figcaption></figure>
 
-![](<../../.gitbook/assets/4 (1)>)
+***
 
-Depending on the resolution you’re using, you’ll have to edit either the **4k** files or the **4k\_1080p** files
+## <mark style="color:yellow;">◼</mark> Customizing Static loading screens
 
-I personally need the 4k files ; There is **13 loading screens** in total, and you’ll need the .tga .dds and .xbm files for each one, meaning **39 files** in total in your mod folder
+There are two different pool of images the game can choose from depending on whenever you have Phantom Liberty installed or not. It also depends on your game progression; once you start the main PL mission, the game will use the EP1 loading screens.
 
-![](../../.gitbook/assets/5)
+<mark style="color:blue;">▶</mark> **Vanilla Static Loading Screens Folder**
 
-Now open Photoshop, and edit the .tga files with your screenshots!
+> `base\gameplay\gui\fullscreen\loading\`
 
-You’ll notice that the loading pics are vertically swapped;\
-**be sure to also vertically swap your pics so that it’ll look normal in game**
+<mark style="color:blue;">▶</mark> **Phantom Liberty Static Loading Screens Folder**
 
-![](<../../.gitbook/assets/6 (3)>)
+> `ep1\gameplay\gui\fullscreen\loading\`
 
-![](<../../.gitbook/assets/7 (3)>)
+Since these are static loading screen, customizing them is easy;
 
-Once you’re done editing all **13 .tga files**, you save them
+* If you plan on modding a personal/private loading screen mod, only edit the resolution you need\
+  &#xNAN;_(regular for high graphic setting - 720p and/or 1080p for low graphic setting)_
+* If you plan on making and sharing a public mod, it is recommend to swap all available resolutions
 
-We now open Noesis, and navigate to our mod folder
+For the sake of this guide, I'll only edit the regular HQ loading screens images
 
-![](<../../.gitbook/assets/8 (2)>)
+<figure><img src="../../.gitbook/assets/image (591).png" alt=""><figcaption><p>Phantom Liberty Static Loading Screens Folder</p></figcaption></figure>
 
-You’ll need to Right Click on your .tga files and select Export, and change the **Main Output Type to .xbm**
+Add the desired loading screens `.xbm` files to your project \
+Export them to `.png` using the [exporting tool](../../for-mod-creators-theory/modding-tools/redmod/exporting-resources-to-raw-formats/exporting-.xbm.md)
 
-![](<../../.gitbook/assets/9 (2)>)
+<figure><img src="../../.gitbook/assets/image (592).png" alt=""><figcaption><p>Exported files in your project RAW folder</p></figcaption></figure>
 
-Click export, you should see a pop up window; simply click OK
+Open the .png files in your favorite image editing software and replace them with your desired pictures
 
-![](../../.gitbook/assets/10)
+Save over the exported `.png` files in your RAW folder\
+Then use wkit [import tool](../textures-and-luts/images-importing-editing-exporting.md#importing-a-texture) to import your `.png` back to `.xbm`
 
-Once you’re done exporting all your 13 .tga files to .xbm, you can delete the .tga files from the mod folder _(or keep them somewhere else! remember to put them back in the mod folder to export them if you do want to edit them later)_
+Pack your mod, launch your game and use a fast-travel station to see your edits!
 
-You should now have 52 files - the originals and your exported .xbm with “out” at the end of the name. Delete the originals and rename your exported .xbm to take out the “out” !
+<figure><img src="../../.gitbook/assets/image (593).png" alt=""><figcaption><p>Customized Static Loading Screen</p></figcaption></figure>
 
-Then you’re left with 26 files, it should look like that :
+***
 
-![](../../.gitbook/assets/11)
+## <mark style="color:yellow;">◼</mark> Customizing Dynamic loading screens
 
-We now open CP77 Tools / Wolvenkit Console ! We need to rebuild the .xbm files
+Similar to Static loading screens, there are two different pools of Dynamic screens available if you have Phantom Liberty installed.&#x20;
 
-**cp77tools import -p \[PATH] –keep**
+<mark style="color:blue;">▶</mark> **Vanilla Dynamic Loading Screens Folder**
 
-**Pack your mod and test it!**
+> `base\gameplay\gui\world\loading_screens\`
 
-![](../../.gitbook/assets/12)
+<mark style="color:blue;">▶</mark> **Phantom Liberty Dynamic Loading Screens Folder**
+
+> `ep1\gameplay\gui\world\loading_screens\`
+
+{% hint style="warning" %}
+Swapping process for Dynamic loading screens not yet tested and need documentation.
+{% endhint %}
