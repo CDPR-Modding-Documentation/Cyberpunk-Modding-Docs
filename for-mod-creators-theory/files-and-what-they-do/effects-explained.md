@@ -11,7 +11,7 @@ description: How do effects work? How do I mod them?
 
 ### Wait, this is not what I want!
 
-* See [effects-modding.md](../../modding-guides/everything-else/effects-modding.md "mention") for a hands-on list of changing effects in Cyberpunk
+* See [effects-modding](../../modding-guides/everything-else/effects-modding/ "mention") for a hands-on list of changing effects in Cyberpunk
 * See [effect-components.md](components/documented-components/effect-components.md "mention") for effect explanations by component
 * See [fx-material-properties.md](../materials/configuring-materials/fx-material-properties.md "mention") for animated _materials_
 * While explosions are definitely effects, lights are something else => [lights-explained.md](lights-explained.md "mention")
