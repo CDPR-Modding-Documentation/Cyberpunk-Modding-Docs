@@ -15,18 +15,6 @@ This page will show you how to install the Wolvenkit Blender Plugin from a githu
 
 ## Optional: Uninstall the old version
 
-<details>
-
-<summary>Uninstalling the old version</summary>
-
-
-
-</details>
-
-
-
-## Optional: uninstall the old version
-
 {% hint style="info" %}
 You don't need to do this unless you have trouble updating. Go straight to [#step-0-download-the-plugin](./#step-0-download-the-plugin "mention")
 {% endhint %}
@@ -46,7 +34,7 @@ You don't need to do this unless you have trouble updating. Go straight to [#ste
      Check the plugin's `file` entry. It will usually be something like this:
 
 ```
-%APPDATA%\Blender Foundation\Blender\4.0\scripts\addons\i_scene_cp77_gltf
+%APPDATA%\Blender Foundation\Blender\4.3\scripts\addons\i_scene_cp77_gltf
 ```
 
 Navigate there with your Windows Explorer (Hotkey: `Windows+R`, paste the path above after changing your Blender version), and delete everything — either the entire folder, or all files inside.
@@ -97,14 +85,14 @@ Make sure the box is checked and restart Blender.
 You can do both by hand. Find your Blender install's plugin folder, the path will look something like this (replace 3.6 with your Blender version):
 
 ```
-%APPDATA%\Blender Foundation\Blender\3.6\scripts\addons
+%APPDATA%\Blender Foundation\Blender\4.3\scripts\addons
 ```
 
 Inside the plugins folder, the Wolvenkit Blender IO Suite will be installed to the subfolder `i_scene_cp77_gltf`.
 
-To uninstall the plugin, delete the entire folder.
+To **uninstall** the plugin, **delete** the entire folder.
 
-To install the plugin, find the folder in your downloaded zip file that contains the file **`__init__.py`**, move it here, and rename it.
+To **install** the plugin, **find** the folder in your **downloaded zip file** that contains the file **`__init__.py`**, move it here, and rename it.
 
 Now, **restart Blender**.
 
