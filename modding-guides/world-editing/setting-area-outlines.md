@@ -70,4 +70,4 @@ Thus it is recommended to keep the outlines in their own group which's name and 
 
 ## Finishing up
 
-* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner import `.wscript`
+* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](exporting-from-object-spawner.md)

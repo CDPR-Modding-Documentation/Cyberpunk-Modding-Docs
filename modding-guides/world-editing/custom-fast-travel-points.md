@@ -90,7 +90,7 @@ FastTravelPoints.customPoint:
 Make sure that the category of the sector containing the marker and terminal is set to `AlwaysLoaded` during export from Object Spawner
 {% endhint %}
 
-* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner import `.wscript`
+* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](exporting-from-object-spawner.md)
 
 {% hint style="warning" %}
 If you make any changes to the FT point, after having already loaded the game with your custom point installed, make sure to use a fresh save (A save without the custom point saved)

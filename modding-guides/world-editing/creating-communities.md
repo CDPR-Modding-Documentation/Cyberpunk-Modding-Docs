@@ -127,3 +127,7 @@ To delete an entry, phase or period, simply right click its header
 * Using markings is especially worth it for larger amounts of NPCs and spots
 
 <figure><img src="../../.gitbook/assets/markingsFullExample" alt=""><figcaption></figcaption></figure>
+
+## Finishing up
+
+* In order for the community to be functional, export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](exporting-from-object-spawner.md)
