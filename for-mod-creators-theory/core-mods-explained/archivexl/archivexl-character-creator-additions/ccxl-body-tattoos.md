@@ -143,7 +143,14 @@ This entry defines what the game will display instead of `UI-customization_yourm
 
 Open the .archive.xl on your project's directory. Here, double-check the paths and make sure that they point at the **relative paths** of your files.
 
-<figure><img src="../../../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+```yaml
+customizations:
+  male: your_modder_name\ccxl\your_tattoo\your_tattoo_pma.inkcharcustomization
+  female: your_modder_name\ccxl\your_tattoo\your_tattoo_pwa.inkcharcustomization
+localization:
+  onscreens:
+    en-us: your_modder_name\ccxl\your_tattoo\localization\your_tattoo.json
+```
 
 Note: If you want to do for only one gender, just delete either male or female from the .xl and make sure to pick the mesh path to load the one you want if you want either of the genders. Adapting a tattoo is usually pretty easy! Why not make your mod for both genders?
 
