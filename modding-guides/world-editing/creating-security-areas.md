@@ -10,7 +10,7 @@ description: >-
 
 * Security areas serve two main purposes:
   * Makes the minimap say "Safe/Restricted/Hostile"
-  * As an area in which specific player actions alert connected hostiles, as well as providing connectivity between devices and community NPCs (Such that pining one pings all devices and NPCs)
+  * As an area in which specific player actions alert connected hostiles, as well as providing connectivity between devices and community NPCs (Such that pinging one enemy / device pings all devices and NPCs)
 
 ## Requirements
 
