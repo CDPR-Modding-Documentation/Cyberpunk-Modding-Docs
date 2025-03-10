@@ -70,6 +70,14 @@ All you need to do is adding the last two lines to your .yaml:
     - !append OutfitSlots.NecklaceShort
 </code></pre>
 
+When selecting an entity file, make sure to match it to the corresponding body part for your clothing item. This helps ensure that animations and placements work correctly, preventing visual glitches. Always refer to `mesh_entity.ent` for defining components properly.
+
+{% hint style="warning" %}
+When mapping clothing items to base types, keep in mind that any items defined under Head/Face **root entry types**  tend to have visual bugs in FPP(First Person Perspective).&#x20;
+
+Ex: defining `gloves` as anything **OTHER THAN** face/head base types is necessary to prevent visual artifacting/bugging while in FPP.
+{% endhint %}
+
 {% hint style="info" %}
 Find a full list of outfit slots in the [github readme](https://github.com/psiberx/cp2077-equipment-ex#outfit-slots).&#x20;
 {% endhint %}
