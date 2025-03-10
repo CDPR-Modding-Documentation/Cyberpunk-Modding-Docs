@@ -398,6 +398,7 @@
   * [Placing AISpot Nodes](modding-guides/world-editing/placing-aispot-nodes.md)
   * [Creating Communities](modding-guides/world-editing/creating-communities.md)
   * [Setting area outlines](modding-guides/world-editing/setting-area-outlines.md)
+  * [Creating Security Areas](modding-guides/world-editing/creating-security-areas.md)
   * [Custom fast travel points](modding-guides/world-editing/custom-fast-travel-points.md)
   * [Custom elevators](modding-guides/world-editing/custom-elevators.md)
   * [Creating Sector Variants](modding-guides/world-editing/creating-sector-variants.md)
