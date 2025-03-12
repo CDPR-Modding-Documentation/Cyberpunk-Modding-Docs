@@ -48,6 +48,10 @@ base\characters\common\player_base_bodies\player_man_average\arms_hq\a0_000_pma_
 
 ### Rename the .mesh file
 
+{% hint style="warning" %}
+If you have downloaded the template project, you'll want to name your tattoo exactly as described below. We will rename it again later, which is easier if you stick to the workflow now.
+{% endhint %}
+
 ArchiveXL will do the heavy lifting, but if we leave the body mesh where it is right now, you will break the player body. For that reason, you need to rename the mesh file (you can use Wolvenkit's rename menu - hotkey: `f2`).
 
 For this tutorial, we'll put it in the following path (where the template files expect it):

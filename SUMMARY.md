@@ -123,6 +123,7 @@
     * [ArchiveXL: Resource patching](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching.md)
     * [ArchiveXL: Resource linking](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-linking.md)
     * [ArchiveXL: Character Creator additions](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/README.md)
+      * [CCXL Theory: Scopes and extensions](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-theory-scopes-and-extensions.md)
       * [CCXL: Hairs](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-hairs.md)
       * [CCXL: Body Tattoos](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-body-tattoos.md)
   * [▶️ TweakXL](for-mod-creators-theory/core-mods-explained/tweakxl/README.md)
