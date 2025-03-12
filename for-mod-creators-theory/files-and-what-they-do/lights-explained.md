@@ -36,3 +36,23 @@ The light is a cone. The sharpness is defined by its inner and outer angle.&#x20
 ### Area light
 
 The light is a square (like a light panel).&#x20;
+
+## Light attenuation
+
+Their are two options for light attenuation listed as LA\_InverseSquare and LA\_Linear light attenuation is the falloff of luminance away from the point of origin as the photons spread out \
+
+
+### LA\_InverseSquare
+
+Inverse square root is the default option and the physically accurate one, This should generally be set by default unless absolutely necessary. LA\_InverseSquare models the falloff of luminance according to the [inverse square root law](https://en.wikipedia.org/wiki/Inverse-square_law).
+
+{% file src="../../.gitbook/assets/Inverse_square_law.svg.png" %}
+
+
+
+### LA\_Linear
+
+Linear simply directly drops light luminance according to the set radius of the light. this setting can make a light more obvious or bright overall however does so at the cost off functioning unnatural and potently appearing too bright at distance.
+
+
+
