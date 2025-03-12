@@ -1,3 +1,7 @@
+---
+icon: sparkles
+---
+
 # Boe6's vehicles: What you need to know
 
 ### Some familiarity with WolvenKit is required.&#x20;
@@ -42,12 +46,10 @@ I go into as much detail as I can, but try to be familiar with the project explo
 
 * Must have support for `.tga` files
 * Must have support for alpha channels
-* Photoshop ([Photopea](https://www.photopea.com/)), [Krita](https://krita.org/), [Paint.net](https://getpaint.net/), and [Gimp](https://gimp.org/) are good options
+* Photoshop, [Photopea](https://www.photopea.com/), [Krita](https://krita.org/), [Paint.net](https://getpaint.net/), and [Gimp](https://gimp.org/) are all good options
 
 ### Some Python familiarity
 
-* There are some python scripts and python commands to use.
-* Be able to edit and run a `.py` script
 * Not necessary for most changes
 
 ### Mod requirements
@@ -64,4 +66,4 @@ Install these to your game before starting:
 * Have a 3D vehicle model ready to use for converting into cyberpunk.
 * Important features are details parts, doors, trunk, etc. and textures.
 * Higher face/vertice count is better. Modeled interiors are a must.
-* [Sketchfab](https://sketchfab.com/3d-models/categories/cars-vehicles?features=downloadable\&sort\_by=-likeCount\&cursor=cD0xMzE5) is one great option for finding models, but [Google](https://letmegooglethat.com/?q=3d+model+car+download+free) is also useful.
+* [Sketchfab](https://sketchfab.com/3d-models/categories/cars-vehicles?features=downloadable\&sort_by=-likeCount\&cursor=cD0xMzE5) is one great option for finding models, but [Google](https://letmegooglethat.com/?q=3d+model+car+download+free) is also useful.

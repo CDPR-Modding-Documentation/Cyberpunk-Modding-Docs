@@ -1,14 +1,22 @@
-# 🦴 Boe6's vehicles: Rigging
+---
+description: Using and Controlling Moving Meshes
+---
+
+# 🦴 Boe6's vehicles: Rigging; Making meshes move
 
 {% hint style="info" %}
 The `.rig` file ("armature" or "skeleton") is what makes your mesh move in the game. You can find more information about that on the [meshes-and-armatures-rigging](../../../for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging/ "mention") page.
 {% endhint %}
 
-Parts that require a `.rig` file will not import the same. For example, the bumper’s 3D models are not positioned in-line with the `body_01` object in **blender**. Bumpers are centered around the **origin** of the 3D space. The part is then lined up correctly with the `.rig` file, which is linked in the `.ent` file.&#x20;
+Parts that require a `.rig` file will not import the same as other meshes. For example, the bumper’s 3D models are not positioned in-line with the `body_01` object in **blender**. Bumpers are centered around the **origin** of the 3D space. The part is then lined up correctly with the `.rig` file, which is linked in the `.ent` file.&#x20;
 
 To model the front bumper, we’ll first export the base game bumper as `.glb`, and import into our **blender** project. As you can see, the game model is positioned around the origin, unlike the custom bumper.
 
-<figure><img src="../../../.gitbook/assets/image12 (1).png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+If you already import the entire vehicle with the Blender script, you can skip some of this guide. Make sure to be extra careful about the object's origin, as that is what controls the rotation center. Read more below.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/image12 (1).png" alt=""><figcaption><p>Note the origin marker at the cross between the red and green axis lines.</p></figcaption></figure>
 
 Move it with the move tool, so the corner of the bumper is at the origin and **apply all transforms**.
 
@@ -45,15 +53,7 @@ These map all the position data of each `.mesh` file. \
 For a reference of where the bones are in a model, you can export the vehicle’s `.anims` file to `.glb` and import it into **blender**. You can select each bone to see their name and properties. \
 Example:
 
-<div>
-
-<figure><img src="../../../.gitbook/assets/image122.png" alt=""><figcaption></figcaption></figure>
-
- 
-
-<figure><img src="../../../.gitbook/assets/image158.png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div><figure><img src="../../../.gitbook/assets/image122.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image158.png" alt=""><figcaption></figcaption></figure></div>
 
 Your `0,0,0` position should be in the center of the vehicle. Here is the translation data for each of the suspension wheels of a vanilla car (porsche):
 
@@ -140,6 +140,10 @@ To update the wheels, generally you want to modify the suspension bones. Since t
 
 If the suspension values are updated/changed in the `vehicle_rig`, the `deformation_rig` may cause issues in some cases. To avoid this, rename the `boneNames` in the `deformation_rig` that are the same as the `vehicle_rig`. This ensures that the vehicle only uses the `vehicle_rig` values. Do not rename front wheel suspension in the `deformation_rig`, as it will break wheel turning.
 
+{% hint style="info" %}
+Some users report success with renaming and edits when only editing the Y value of suspension. X and Z changes will likely break vehicle turning. Try at your own risk.
+{% endhint %}
+
 For the **Mini Cooper**, I edited all 4 suspension positions in the `vehicle_rig` to update wheel positions, so I renamed the 2 front in the `deformation_rig` (excluding the front, as described above):
 
 <figure><img src="../../../.gitbook/assets/image64.png" alt=""><figcaption></figcaption></figure>
@@ -159,5 +163,5 @@ Example:
 <figure><img src="../../../.gitbook/assets/image13 (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Please note that this is a “bodge” solution, it’s not the proper way to set wheel sizes, but it works.
+Please note that this is a “hacky” solution, it’s not the proper way to set wheel sizes, but it works. The "correct" solution is unknown. In all vanilla vehicles, this scale factor is set to 1.0 It is not used. This means CDPR is controlling wheel radius some other way, but I'm unaware of how.
 {% endhint %}

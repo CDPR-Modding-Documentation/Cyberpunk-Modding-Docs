@@ -1,4 +1,4 @@
-# Boe6's vehicles: Textures & Materials
+# 🖌️ Boe6's vehicles: Textures & Materials
 
 ## Summary
 
@@ -14,6 +14,8 @@ By default, cars use the [multilayered shader](../../../for-mod-creators-theory/
 ### Wait, this is not what I want!
 
 To learn more about materials, you can browse [cheat-sheet-materials.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md "mention") and its sub-pages.
+
+This guide assumes you've followed the previous pages, and have working 3D vehicle models imported into the game. (with broken textures)
 
 ## Let's get started
 
@@ -50,17 +52,21 @@ Update your `.mesh` file with the new `.mlmask` name/path file:
 
 * `RDTDataViewModel > localMaterialBuffer > materials > 0 (...maskset) > values > 0 > value`
 
-Your vehicle should now be much smoother.
-
-<figure><img src="../../../.gitbook/assets/image114.png" alt=""><figcaption></figcaption></figure>
-
 {% hint style="info" %}
 Note that you will need every .mesh file to have a corrected .mlmask path.
 {% endhint %}
 
+Your vehicle should now be much smoother.
+
+<figure><img src="../../../.gitbook/assets/image114.png" alt=""><figcaption></figcaption></figure>
 
 
-### `.mlsetup` & MLsetupBuilder
+
+### Basics of .mlsetup and MLsetupBuilder
+
+{% hint style="info" %}
+This Guide will keep information specific to vehicle modding. For a more in-depth guide on MLSB, check out the dedicated wiki page: [https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/modding-tools/mlsetup-builder](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/modding-tools/mlsetup-builder)
+{% endhint %}
 
 To change paint color, we need to edit the `.mlsetup` file.
 

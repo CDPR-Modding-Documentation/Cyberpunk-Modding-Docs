@@ -4,7 +4,7 @@ description: >-
   routes to take for lights, depending on how you would like them to look.
 ---
 
-# Boe6's vehicles: Add lights
+# 🚨 Boe6's vehicles: Add lights
 
 {% hint style="info" %}
 Lights are using **emissive** (glowing) and **glass** materials. For more documentation about that, you can check [configuring-materials](../../../for-mod-creators-theory/materials/configuring-materials/ "mention").
