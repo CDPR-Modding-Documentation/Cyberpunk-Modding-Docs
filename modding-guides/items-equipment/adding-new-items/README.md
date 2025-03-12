@@ -7,7 +7,7 @@ description: No more replacers! Add your own gear with TweakXL and ArchiveXL
 ## Summary <a href="#summary" id="summary"></a>
 
 **Created & Published**: November 04 2022 **by @manavortex**\
-**Last documented Update:** July 05 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented Update:** March 12 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will walk you through **adding your own items** to Cyberpunk 2077, which can then be spawned via console.
 
@@ -380,16 +380,18 @@ That's it! If everything works, you're done!
 
 ## Troubleshooting
 
-Before starting to troubleshoot, make sure that you have all the **requirements** installed — [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380), [ArchiveXL](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/core-mods-explained/archivexl?q=visual+tags) and [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197).
+Before starting to troubleshoot, make sure that you have all the **requirements** installed and up-to-date — [Red4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380), [ArchiveXL](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/core-mods-explained/archivexl?q=visual+tags) and [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197).
 
 {% hint style="info" %}
-The easiest way to spot what's wrong is to use Wolvenkit's new FileValidation feature, which will print warnings and errors to the log file for you, starting at version >= 8.9.1.
+The easiest way to spot what's wrong is to use Wolvenkit's [FileValidation feature](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/file-validation). You can run it from the menu bar above your editor.
 {% endhint %}
 
 First of all, check the logs for errors including the name of your mod:
 
 * `red4ext/plugins/ArchiveXL/ArchiveXL.log`
 * `red4ext/plugins/TweakXL/TweakXL.log`
+
+Fix any errors that&#x20;
 
 ### ArchiveXL added clipping!
 
@@ -419,11 +421,14 @@ If no additional yaml files are messing things up, then the error is somewhere i
 
 Check the following places:
 
+* `yourmodname.yaml`:
+  * Is the indentation correct, as shown in the picture? You can use [yamllint](https://www.yamllint.com/) to check.
+  * Did you make any typos?
 * `yourmodname.archive.xl`:
   * Is the indentation correct, as shown in the picture? You can use [yamllint](https://www.yamllint.com/) to check.
   * Did you make any typos?
 * `my_tshirt_factory.csv`:
-  * Is there an entry where the first value matches the `entityName` from the yaml (`my_tshirt` in the picture above)?
+  * Is there an entry where the **first value** matches the `entityName` from the yaml (`my_tshirt` in the picture above)?
     * Without leading or trailing spaces?
   * Does the second value of that entry have the correct root entity path?\
     (`tutorial\myshirt\root_entity.ent` in the picture above)\
@@ -431,10 +436,7 @@ Check the following places:
 * `root_entity.ent:`
   * Do you have an appearance with the `name` matching your item's `appearanceName` in the yaml?
     * Without leading or trailing spaces?
-  * Are you using any [**suffixes**](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes)? Are you using the correct ones?
-    * Try setting an empty suffix array in the .yaml, just to see if that works:\
-      `appearanceSuffixes: [ ]`
-    * Try creating a fall-back entry without any suffixes in the `root_entity`.
+  * If you are using suffixes, consider following the [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention") to make your project use [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention") instead.
 
 ### My item shows empty text instead of name/description!
 
