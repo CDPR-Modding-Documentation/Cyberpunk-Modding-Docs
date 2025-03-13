@@ -418,6 +418,7 @@
     * [🛋️ Sit on couch interaction (workspot)](modding-guides/world-editing/scripted-interactions/sit-on-couch-interaction-workspot.md)
   * [Archived: Merging World Additions via ArchiveXL](modding-guides/world-editing/adding-locations-and-structures-with-archivexl.md)
   * [Archived: World editing via file edit](modding-guides/world-editing/archived-world-editing-via-file-edit.md)
+  * [Object Spawner: Favorites and Prefabs](modding-guides/world-editing/object-spawner-favorites-and-prefabs.md)
 * [🎺 Sound](modding-guides/sound/README.md)
   * [Finding an audio file](modding-guides/sound/finding-an-audio-file.md)
   * [Replacing sounds effects](modding-guides/sound/replacing-sounds-effects.md)
