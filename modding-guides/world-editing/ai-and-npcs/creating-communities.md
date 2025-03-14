@@ -27,7 +27,7 @@ description: >-
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](exporting-from-object-spawner.md) into WolvenKit)
+  * Using Object Spawner (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
   * Know how to place `AISpot`'s, see the [corresponding page](placing-aispot-nodes.md)
 
 ## General Setup
@@ -58,7 +58,7 @@ To delete an entry, phase or period, simply right click its header
 
 * Let's start by making our community spawn a NPC, do this by adding a new entry under the `Entries` header
 
-<figure><img src="../../.gitbook/assets/newCommunityEntryExample.png" alt="" width="444"><figcaption><p>Example of a community with a single entry</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/newCommunityEntryExample.png" alt="" width="444"><figcaption><p>Example of a community with a single entry</p></figcaption></figure>
 
 * Here you can define a name for the entry, make sure it is unique
 * Here you can also define what NPC template should be used
@@ -69,7 +69,7 @@ To delete an entry, phase or period, simply right click its header
 * For our example, we will only need one phase, named `default`
 * As before, use the `+ [Phase]` button to create a new phase for our entry
 
-<figure><img src="../../.gitbook/assets/communityDefaultPhaseExample.png" alt="" width="417"><figcaption><p>Example of an entry with a single default phase</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/communityDefaultPhaseExample.png" alt="" width="417"><figcaption><p>Example of an entry with a single default phase</p></figcaption></figure>
 
 * Here you can also define what appearances the NPCs of that entry should use
   * Do this by adding more names under the appearances header
@@ -81,7 +81,7 @@ To delete an entry, phase or period, simply right click its header
 * As before, use the `+ [Period]` button to create a new period for our phase
 * For this example, let's create two periods
 
-<figure><img src="../../.gitbook/assets/phaseWithTwoPeriodsExample.png" alt="" width="382"><figcaption><p>Example phase with two time periods</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/phaseWithTwoPeriodsExample.png" alt="" width="382"><figcaption><p>Example phase with two time periods</p></figcaption></figure>
 
 *   Each period has the following options:
 
@@ -91,7 +91,7 @@ To delete an entry, phase or period, simply right click its header
     * Quantity: How many of the specified NPC should be spawned
     * Markings and Spot NodeRefs: This is where you actually define what AISpot's should be used, will be explained in the following section
 
-    <figure><img src="../../.gitbook/assets/timePeriodProperties.png" alt="" width="251"><figcaption><p>The properties of a time period</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/timePeriodProperties.png" alt="" width="251"><figcaption><p>The properties of a time period</p></figcaption></figure>
 
 ## Markings and Spot NodeRef's
 
@@ -101,7 +101,7 @@ To delete an entry, phase or period, simply right click its header
 * Make sure that you have enough spots for the amount of NPCs
 * Simply add the NodeRefs of the AISpots that you want to be used during this time period
 
-<figure><img src="../../.gitbook/assets/timePeriodspotRefsExample" alt="" width="322"><figcaption><p>Example of making the NPC of the "Day" period use one of the two defined AISpots</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/timePeriodspotRefsExample" alt="" width="322"><figcaption><p>Example of making the NPC of the "Day" period use one of the two defined AISpots</p></figcaption></figure>
 
 ### Markings
 
@@ -113,21 +113,21 @@ To delete an entry, phase or period, simply right click its header
     * Assign the marking `test_marking` to all AISpots that you want to be used
     * Add that same `test_marking` name to the list of markings of the period
 
-    <figure><img src="../../.gitbook/assets/timePeriodMarkingExample" alt="" width="321"><figcaption><p>Example of making a time period use all AISpots with the marking "test_marking"</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/timePeriodMarkingExample" alt="" width="321"><figcaption><p>Example of making a time period use all AISpots with the marking "test_marking"</p></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/aiSpotMarkingExample.png" alt="" width="322"><figcaption><p>Example of marking an AISpot, should be done to a group of multiple spots</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/aiSpotMarkingExample.png" alt="" width="322"><figcaption><p>Example of marking an AISpot, should be done to a group of multiple spots</p></figcaption></figure>
 
     ## Full example with SpotNodeRef's
 * This is a full example of having either one or two Judy's spawn in specified spots, depending on the time
 
-<figure><img src="../../.gitbook/assets/fullJudyExampleSpotNodeRefs" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/fullJudyExampleSpotNodeRefs" alt=""><figcaption></figcaption></figure>
 
 ## Full example using markings
 
 * Using markings is especially worth it for larger amounts of NPCs and spots
 
-<figure><img src="../../.gitbook/assets/markingsFullExample" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/markingsFullExample" alt=""><figcaption></figcaption></figure>
 
 ## Finishing up
 
-* In order for the community to be functional, export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](exporting-from-object-spawner.md)
+* In order for the community to be functional, export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](../exporting-from-object-spawner.md)

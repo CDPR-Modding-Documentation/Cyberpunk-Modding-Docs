@@ -19,7 +19,7 @@ description: >-
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](exporting-from-object-spawner.md) into WolvenKit)
+  * Using Object Spawner (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
 
 ## Spawning nodes
 
@@ -65,7 +65,7 @@ Ensure that the "Primary Range" and "Secondary Range" (Found under the "World No
 * In order to link and reference all the spawned object, each one will need its own, **unique** NodeRef
 * Expand the `World Node`header and fill the NodeRef field with a unique string
 
-<figure><img src="../../.gitbook/assets/image (555).png" alt="" width="351"><figcaption><p>Example of assigning a NodeRef</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (555).png" alt="" width="351"><figcaption><p>Example of assigning a NodeRef</p></figcaption></figure>
 
 * In the end, we will have assigned 5 NodeRef's
 * For **example**:
@@ -86,7 +86,7 @@ Do not use the same NodeRef names as used in this guide, but choose your own uni
     * Fill the NodeRef field with the NodeRef of the terminal that you are linking
     * Keep in mind that the elevator will see the floors in the order in which you add them, so the first one in the list should be the lowest floor
 
-    <figure><img src="../../.gitbook/assets/image (559).png" alt="" width="449"><figcaption><p>Example of the device connections for an elevator with two floors</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (559).png" alt="" width="449"><figcaption><p>Example of the device connections for an elevator with two floors</p></figcaption></figure>
 
 ## Setting up persistency
 
@@ -103,7 +103,7 @@ Do not use the same NodeRef names as used in this guide, but choose your own uni
     * Set `floorMarker`to the NodeRef of the floor's static marker (E.g. `$/marker_bottom`)
     * Optionally, use the checkboxes under `doorShouldOpenFrontLeftRight`to determine which doors of the elevator should open on this floor
 
-    <figure><img src="../../.gitbook/assets/image (558).png" alt="" width="510"><figcaption><p>Example data for a terminals ElevatorFloorSetup (<code>floorMarker</code>NodeRef gets turned into hash)</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (558).png" alt="" width="510"><figcaption><p>Example data for a terminals ElevatorFloorSetup (<code>floorMarker</code>NodeRef gets turned into hash)</p></figcaption></figure>
 *   Optionally change the elevator speed and inital starting floor by modifying:
 
     * `Entity Instance Data / LiftController / persistentState / liftSetup`
@@ -116,8 +116,8 @@ Do not use the same NodeRef names as used in this guide, but choose your own uni
   * A elevator, spawned as `Device`, with its own NodeRef, and linked to both terminals (Make sure you use the terminals NodeRefs, not the markers)
   * Two terminals, spawned as `Device`, set to be persistent, with their own NodeRefs, and properly setup instance data (Linking them to the floor markers and with names)
   * Two static markers, each with their own NodeRef, positioned correctly
-* Once you have all this, you are ready to [export](exporting-from-object-spawner.md)
-* [Import into WKit](exporting-from-object-spawner.md)
+* Once you have all this, you are ready to [export](../exporting-from-object-spawner.md)
+* [Import into WKit](../exporting-from-object-spawner.md)
 
 {% hint style="warning" %}
 You **must** import the result into WolvenKit in order for the elevator to be functional

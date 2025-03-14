@@ -101,7 +101,7 @@ Depending on your hardware, the script can take a long time – from minutes to 
 <figure><img src="../../.gitbook/assets/warning_outdated_info.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-With ArchiveXL >= 1.8.0, this process is **outdated**. Check the other guides in this section for how to generate .xl files to add, edit or [delete ](world-editing-deleting-objects.md)objects in sectors.
+With ArchiveXL >= 1.8.0, this process is **outdated**. Check the other guides in this section for how to generate .xl files to add, edit or [delete ](removing-objects/world-editing-deleting-objects.md)objects in sectors.
 {% endhint %}
 
 <details>

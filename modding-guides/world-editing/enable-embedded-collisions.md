@@ -11,7 +11,7 @@ description: Activate an existing collisions in a mesh
 
 This guide shows you how to enable an object's **embedded collision** for entities without (items that you can walk through).&#x20;
 
-It's a direct follow-up to [**Adding Objects to the World**](adding-locations-and-structures-with-archivexl.md).
+It's a direct follow-up to [**Adding Objects to the World**](archived-guides/adding-locations-and-structures-with-archivexl.md).
 
 {% hint style="info" %}
 As of today (Jan 20 2024), you need a collision-enabled mesh for this. We can create our own collisions with the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention"), but the tutorial for this isn't ready yet.
@@ -25,7 +25,7 @@ As of today (Jan 20 2024), you need a collision-enabled mesh for this. We can cr
 
 * [**Wolvenkit 8.12.0+**](https://github.com/WolvenKit/WolvenKit)
 * [**Object Spawner 1.5**](https://www.nexusmods.com/cyberpunk2077/mods/2833) _(screenshots say 1.4, but it's the mod title that wasn't updated in 1.5_ :smile:_)_
-* You know how to [adding-locations-and-structures-with-archivexl.md](adding-locations-and-structures-with-archivexl.md "mention")
+* You know how to [adding-locations-and-structures-with-archivexl.md](archived-guides/adding-locations-and-structures-with-archivexl.md "mention")
 * [allmeshes.archive](https://mega.nz/file/eRREwQbY#L7AWM1eYijyvE7GLo6IK4MQE2ohJci9r9xcq5gk8BXQ) and updated [allpaths ](https://mega.nz/file/WEQxySrS#0QM1rbl1QaUuRdU3RcNEVvYk-rfk_mVVDyg75y8XG40)file created by KeanuWheeze - this will help us to edit new ent files with embedded collisions.
 * You need a [Wolvenkit Project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
 

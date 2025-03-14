@@ -9,7 +9,7 @@ description: >-
 {% hint style="warning" %}
 This guide explains the theory on how to setup communties, and how they tie into quests
 
-For actually creating communities, it is recommended to instead follow the [communities with Object Spawner guide](../world-editing/creating-communities.md)
+For actually creating communities, it is recommended to instead follow the [communities with Object Spawner guide](../world-editing/ai-and-npcs/creating-communities.md)
 {% endhint %}
 
 ## Summary

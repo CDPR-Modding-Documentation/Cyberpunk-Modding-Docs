@@ -25,7 +25,7 @@ description: >-
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](exporting-from-object-spawner.md) into WolvenKit)
+  * Using Object Spawner (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
 
 ## Spawning the nodes
 
@@ -53,12 +53,12 @@ Make sure to spawn both as `Device`(`Entity -> Device` in Object Spawner)
   * In our case this would be `SecurityAreaControllerPS`, which can also be found under the device header of the security area
 * Select the NodeRef of the security area on the right hand side of the entry
 
-<figure><img src="../../.gitbook/assets/securityAreaConnections" alt="" width="434"><figcaption><p>The security system is now linked to our security area (The device connection has the device class name and NodeRef of the security area)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/securityAreaConnections" alt="" width="434"><figcaption><p>The security system is now linked to our security area (The device connection has the device class name and NodeRef of the security area)</p></figcaption></figure>
 
 ## Creating the outline
 
 * Next we want to create the outline of the security area
-* In order to do this, setup a `Dummy Area`, using the [guide for setting area outlines](setting-area-outlines.md) (Use a `Dummy Area` as area type)
+* In order to do this, setup a `Dummy Area`, using the [guide for setting area outlines](../setting-area-outlines.md) (Use a `Dummy Area` as area type)
 
 {% hint style="warning" %}
 Ensure that the `Dummy Area` is in the exact same position as our security area device
@@ -66,7 +66,7 @@ Ensure that the `Dummy Area` is in the exact same position as our security area 
 
 * Next, press the `Copy outline to clipboard` button, found in the Dummy Area
 
-<figure><img src="../../.gitbook/assets/dummyAreaOutline" alt="" width="386"><figcaption><p>Dummy area outline, linked to an outline group as described in the outlines guide</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/dummyAreaOutline" alt="" width="386"><figcaption><p>Dummy area outline, linked to an outline group as described in the outlines guide</p></figcaption></figure>
 
 ## Setting the outline
 
@@ -75,7 +75,7 @@ Ensure that the `Dummy Area` is in the exact same position as our security area 
 * Locate the `area` component, and expand it
 *   Right-click the `outline` header, and select `Paste outline [Number of outline markers]`
 
-    <figure><img src="../../.gitbook/assets/secArea.gif" alt="" width="259"><figcaption><p>How to copy and paste the outline</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/secArea.gif" alt="" width="259"><figcaption><p>How to copy and paste the outline</p></figcaption></figure>
 
 ## Setting area type
 
@@ -91,4 +91,4 @@ Ensure that the `Dummy Area` is in the exact same position as our security area 
   * Both have unique NodeRefs
   * Security system has a device connection to the security area
   * Dummy outline, copy pasted the outline into the security area
-* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](exporting-from-object-spawner.md)
+* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](../exporting-from-object-spawner.md)

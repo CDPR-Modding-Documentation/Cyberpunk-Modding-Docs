@@ -1,6 +1,6 @@
 ---
-icon: gear-code
 description: This page will gather knowledge and guides about scripted interactions in Lua.
+icon: gear-code
 ---
 
 # Scripted interactions
@@ -21,7 +21,7 @@ For the following, we can distinguish 2 types of interactions : devices and work
 
 ### Wait, this is not what I want!
 
-* You want to add workspots for NPCs ? Check this guide : [placing-aispot-nodes.md](../placing-aispot-nodes.md "mention")
+* You want to add workspots for NPCs ? Check this guide : [placing-aispot-nodes.md](../ai-and-npcs/placing-aispot-nodes.md "mention")
 * You want to change V's animations ? Check this section : [animations](../../animations/ "mention")  -> [creating-animations-editing-vs-actual-in-game-animations.md](../../animations/creating-animations-editing-vs-actual-in-game-animations.md "mention")
 
 ## Get into scripting

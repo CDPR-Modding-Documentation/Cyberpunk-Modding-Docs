@@ -5,7 +5,7 @@ description: How to use streamingSectorPrefabVariant
 # Switching between sector states
 
 {% hint style="info" %}
-This page contains the theory of sector variants, for creating sectors with variants, head over to the [Creating Sector Variants](creating-sector-variants.md) guide
+This page contains the theory of sector variants, for creating sectors with variants, head over to the [Creating Sector Variants](../creating-sector-variants.md) guide
 {% endhint %}
 
 ## Summary
@@ -17,16 +17,16 @@ This page will show you how to switch sector states.
 
 ### Wait, this is not what I want!
 
-* To learn more about `.streamingsector` files, check [the-whole-world-.streamingsector](../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/ "mention")&#x20;
-* To learn about `.streamingblocks`, check [.streamingblock-sector-definitions-and-variants.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/.streamingblock-sector-definitions-and-variants.md "mention")
-* For a list of node types, check [reference-.streamingsector-node-types.md](../../for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/reference-.streamingsector-node-types.md "mention")
-* check [.](./ "mention") -> [adding-locations-and-structures-with-archivexl.md](adding-locations-and-structures-with-archivexl.md "mention") if that's what you'd rather do
+* To learn more about `.streamingsector` files, check [the-whole-world-.streamingsector](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/ "mention")&#x20;
+* To learn about `.streamingblocks`, check [.streamingblock-sector-definitions-and-variants.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/.streamingblock-sector-definitions-and-variants.md "mention")
+* For a list of node types, check [reference-.streamingsector-node-types.md](../../../for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/reference-.streamingsector-node-types.md "mention")
+* check [..](../ "mention") -> [adding-locations-and-structures-with-archivexl.md](adding-locations-and-structures-with-archivexl.md "mention") if that's what you'd rather do
 
 ### World state variants
 
 Here is an overview of file relations between `.streamingsector` and -`block`:
 
-<figure><img src="../../.gitbook/assets/world_streamingsector__resume.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/world_streamingsector__resume.png" alt=""><figcaption></figcaption></figure>
 
 ### Streamingblock
 
@@ -37,7 +37,7 @@ We will focus on the main one and take a look at the first sector inside (`exter
 When creating a mod with sectors, you will need to create your own block that will list your new sectors.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/world_streamingsector__block (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/world_streamingsector__block (1).png" alt=""><figcaption></figcaption></figure>
 
 This sector has 10 variants, in this case, each one is related to a quest state.
 
@@ -47,7 +47,7 @@ When opening a variant definition, we can find the range index (to find the righ
 
 Variant's name is only used to identify the variant within the streamingblock.
 
-<figure><img src="../../.gitbook/assets/world_streamingsector__block_variant.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/world_streamingsector__block_variant.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 The link between quests and sectors' variants is not well-researched as of Jan 2024 - if you know anything more about this, please get in touch via [Discord](http://discord.gg/redmodding) or update the wiki!
@@ -55,10 +55,10 @@ The link between quests and sectors' variants is not well-researched as of Jan 2
 
 ### Defining a new variant
 
-In the [.streamingsector file](../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/), add a new entry in each of these lists:&#x20;
+In the [.streamingsector file](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/), add a new entry in each of these lists:&#x20;
 
-* [variantIndices](../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/#variantindices)
-* [variantNodes](../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/#variantnodes)
+* [variantIndices](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/#variantindices)
+* [variantNodes](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/#variantnodes)
 
 
 

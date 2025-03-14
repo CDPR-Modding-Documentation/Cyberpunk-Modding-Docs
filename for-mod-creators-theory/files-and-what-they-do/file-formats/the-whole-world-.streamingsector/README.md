@@ -163,5 +163,5 @@ Some locations are partially defined in **quest sectors**, where parts of the lo
 
 A steamingsector can split its nodes into ranges called variants. A variant is used to display/enable an amount of nodes in a specific situation (like during or after a quest). All sectors and their variants need to be declared somewhere; this place is the [streamingblock](.streamingblock-sector-definitions-and-variants.md).
 
-For more information on how to trigger variants, see [switching-between-sector-states.md](../../../../modding-guides/world-editing/switching-between-sector-states.md "mention") in the [world-editing](../../../../modding-guides/world-editing/ "mention") section.
+For more information on how to trigger variants, see [switching-between-sector-states.md](../../../../modding-guides/world-editing/archived-guides/switching-between-sector-states.md "mention") in the [world-editing](../../../../modding-guides/world-editing/ "mention") section.
 

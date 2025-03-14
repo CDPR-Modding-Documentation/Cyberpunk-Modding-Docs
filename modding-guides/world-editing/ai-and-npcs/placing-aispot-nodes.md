@@ -28,7 +28,7 @@ This guide only explains how to place AISpot Nodes, for them to be actually be u
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](exporting-from-object-spawner.md) into WolvenKit)
+  * Using Object Spawner (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
 
 ## Spawning AISpots
 
@@ -46,7 +46,7 @@ You **must** assign a unique NodeRef to each AISpot, in order for it to be usabl
 
 * To know what rigs a workspot supports, take a look at the `AI Spot -> Previewing Options -> Supported Rigs` header
 
-<figure><img src="../../.gitbook/assets/aiSpotSupportedRigs" alt="" width="301"><figcaption><p>Example AI Spot, and its workspot's supported rigs</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/aiSpotSupportedRigs" alt="" width="301"><figcaption><p>Example AI Spot, and its workspot's supported rigs</p></figcaption></figure>
 
 * Here you can also change whether you want a NPC to preview the spot, and also which NPC should do so
   * A list of all NPC records can be found in Object Spawner `Entity -> Record` (Search for `Character.`)

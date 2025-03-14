@@ -2,7 +2,7 @@
 description: How to remove items from the world with ArchiveXL
 ---
 
-# World Editing: deleting objects
+# Manual Removal
 
 ## Summary
 
@@ -18,7 +18,7 @@ Difficulty: You know how to read. Everything else will hopefully become clear !
 
 [ArchiveXL ](https://www.nexusmods.com/cyberpunk2077/mods/4198)>= 1.8.0
 
-If you want to do it in Blender: [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") >= 1.5.0
+If you want to do it in Blender: [wolvenkit-blender-io-suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") >= 1.5.0
 
 Otherwise: [RedHotTools >= 0.5.2](https://github.com/psiberx/cp2077-red-hot-tools/releases)
 
@@ -26,14 +26,11 @@ Otherwise: [RedHotTools >= 0.5.2](https://github.com/psiberx/cp2077-red-hot-tool
 
 This section will walk you through the process of creating an .xl file to remove objects from the game world.
 
-This guide will feature the **manual process**, which can get tedious if you want to remove at scale. There are two ways to automate the process:
+{% hint style="warning" %}
+This guide will feature the **manual process**, which can get tedious and is prone to errors.
 
-* Wheeze's Removal Editor ([Link on GitHub, also has documentation there](https://github.com/justarandomguyintheinternet/CP77_removalEditor))
-* Generating the .xl file via Blender (see [#blender-and-archivexl](world-editing-deleting-objects.md#blender-and-archivexl "mention")
-
-
-{% hint style="warning" %} It is extremely recommended to use Removal Editor (linked above) to remove nodes from the world as it is easier to use, easier to update and maintain and faster than doing it manually. {% endhint %}
-
+It is highly recommended to use one of the [Tool Assisted](./#tool-assisted) methods instead
+{% endhint %}
 
 Although you can also work directly in your `archive/pc/mod` directory, you should [create a Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects), so that you can easily pack your mod for Nexus deployment.
 
@@ -49,13 +46,13 @@ by ouijxou
 thanks to ProximaDust!
 {% endembed %}
 
-1. Find the node information in the **Inspect** tab of RedHotTools (see [places.md](../../for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/places.md "mention")for a detailed guide)
+1. Find the node information in the **Inspect** tab of RedHotTools (see [places.md](../../../for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/places.md "mention")for a detailed guide)
 2. Create an `.xl` file in your Wolvenkit Project's `resources` folder and name it after your world deletion (e.g. `delete_pacifica_fast_travel_terminal.xl`).
    * You can edit this file in Wolvenkit or in a text editor like [Notepad++](https://notepad-plus-plus.org/downloads/)
 
 We'll fill in the information in Step 3, this is how it will look:
 
-<figure><img src="../../.gitbook/assets/world_sector_node_removal.png" alt=""><figcaption><p>We'll fill in the information in Step 3, this is how it will look.<br>The bottom half of the screenshot is a text editor, you will NOT see this in Cyberpunk!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/world_sector_node_removal.png" alt=""><figcaption><p>We'll fill in the information in Step 3, this is how it will look.<br>The bottom half of the screenshot is a text editor, you will NOT see this in Cyberpunk!</p></figcaption></figure>
 
 3. Paste the following code into your .xl file:
 
@@ -106,7 +103,7 @@ If you don't do that, you will drown in comments from confused users who don't k
 
 ### Prerequisites: Deleting the objects
 
-1. Hit up [editing-locations-in-blender.md](editing-locations-in-blender.md "mention") and follow the instructions to import your sectors into Blender.
+1. Hit up [editing-locations-in-blender.md](../editing-locations-in-blender.md "mention") and follow the instructions to import your sectors into Blender.
 2. **Optiona, but recommended**: Save the blend file. There's no real way to undo stuff right now other than deleting them from the list by hand, and re-importing is tedious. If you save the file, you can use File -> Revert to undo all your changes.
 3. **Select** and **delete** the objects that you want to get rid of.
 
@@ -115,7 +112,7 @@ Now it's time to get exporting.
 ### Adjust the sector collections' properties
 
 {% hint style="info" %}
-This step will be made obsolete in a future update of the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") (currently 1.5.0). The guide will tell you at which point you can skip ahead if that's the case.
+This step will be made obsolete in a future update of the [wolvenkit-blender-io-suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") (currently 1.5.0). The guide will tell you at which point you can skip ahead if that's the case.
 {% endhint %}
 
 <details>
@@ -128,20 +125,20 @@ ArchiveXL deletes nodes from the sector files **by numeric index** - it doesn't 
 
 1. In the Scene Collection (usually at the top right of your Blender viewport), select a sector collection.
 
-<figure><img src="../../.gitbook/assets/editing_locations_selecting_sector.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/editing_locations_selecting_sector.png" alt=""><figcaption></figcaption></figure>
 
 2.  Below the viewport in the right side panel, switch to the `Collections` tab and expand the `Custom Properties` header. You need a property with the name of `expectedNodes` (green box).\
     If you have one, you can proceed to [#generating-an-.xl-file](world-editing-deleting-objects.md#generating-an-.xl-file "mention").\
     If you don't have one, keep reading.
 
-    <figure><img src="../../.gitbook/assets/editing_locations_expected_nodes.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/editing_locations_expected_nodes.png" alt=""><figcaption></figcaption></figure>
 
 First, you need to find out the number of nodes in your sector. We will do that in Wolvenkit.
 
 3. Find the correct sector file and open it in Wolvenkit. (You can copy the name from the `filepath` field in Custom Properties — the file should be in your project from your earlier export.)
 4.  In the CR2W editor, find the `nodes` property and look at the count. That number needs to go into your new property in Blender.
 
-    <figure><img src="../../.gitbook/assets/streamingsector_numnodes.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/streamingsector_numnodes.png" alt=""><figcaption></figcaption></figure>
 5. Click `New` to add a new property. It will be called prop and have a value of `1.000`.
 6. Click the gear and add the property's properties:\
    \
@@ -151,7 +148,7 @@ First, you need to find out the number of nodes in your sector. We will do that 
    \
    After you have made those changes, click **OK**.\\
 
-<figure><img src="../../.gitbook/assets/editing_locations_edit_properties.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/editing_locations_edit_properties.png" alt=""><figcaption></figcaption></figure>
 
 7. The value of your new property will probably still be 1 until you click in the field - then it will be updated with the only value possible.
 8. Repeat this step for **every sector file**.
@@ -166,7 +163,7 @@ First, you need to find out the number of nodes in your sector. We will do that 
 Running the script **will overwrite existing files**. That's not a problem, but you need to take care of backups yourself.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/editing_locations_blender_scripting.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/editing_locations_blender_scripting.png" alt=""><figcaption></figcaption></figure>
 
 5. When you're done, click the ▶ button in the toolbar to run the script.
 
@@ -182,11 +179,11 @@ This is also how you can edit other people's sector presets. Want to keep your c
 
 1. Open the generated .xl file in a text editor such as [**Notepad++**](https://notepad-plus-plus.org/downloads/).
 2. Search for `worldEntityNode`\
-   &#xNAN;_&#x4B;eyboard shortcuts to find all in document in Notepad++: `Ctrl+F` - `Alt+D`_
+   \&#xNAN;_Keyboard shortcuts to find all in document in Notepad++: `Ctrl+F` - `Alt+D`_
 3. Check the comment on top of a block to find out what it is.
 4. If you want to keep something, remove the entire block from the .xl file (see screenshot).
 
-<figure><img src="../../.gitbook/assets/editing_locations_deleting_nodes_xl_file.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/editing_locations_deleting_nodes_xl_file.png" alt=""><figcaption></figcaption></figure>
 
 5. Put the .xl file into `archive/pc/mod` and start the game. (Don't put your Wolvenkit project, you don't need all that sector garbage!)
 

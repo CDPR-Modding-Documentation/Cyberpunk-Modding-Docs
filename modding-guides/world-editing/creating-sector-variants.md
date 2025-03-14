@@ -4,6 +4,10 @@ description: This guide explains how to add variants to your sectors, using Obje
 
 # Creating Sector Variants
 
+{% hint style="success" %}
+Further information on how sector variants work under the hood, and how to manually work with them can be found on the [Switching between sector states](archived-guides/switching-between-sector-states.md) page
+{% endhint %}
+
 ## Usage
 
 * Sector variants allow you to assign different parts of a sector to a variant

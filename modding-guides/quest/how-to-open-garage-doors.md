@@ -20,7 +20,7 @@ This page will teach you how to create an auto-opening garage door via .questpha
 
 * [ArchiveXL](../../for-mod-creators-theory/core-mods-explained/archivexl/)
 * [RedHotTools](../../for-mod-creators-theory/modding-tools/redhottools/)
-* An existing door (if you don't have one, head to[adding-locations-and-structures-with-archivexl.md](../world-editing/adding-locations-and-structures-with-archivexl.md "mention"))
+* An existing door (if you don't have one, head to[adding-locations-and-structures-with-archivexl.md](../world-editing/archived-guides/adding-locations-and-structures-with-archivexl.md "mention"))
 
 ## Opening a door via .questphase
 
