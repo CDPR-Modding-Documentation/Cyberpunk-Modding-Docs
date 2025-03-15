@@ -22,3 +22,7 @@ The switcher component contains every `appearanceInfo` registered in [.incharact
 
 <figure><img src="../../../../.gitbook/assets/character_creator_switch_example.png" alt=""><figcaption></figcaption></figure>
 
+{% hint style="info" %}
+To make a switcher entry use an icon rather than text, set the `useThumbnails` property to true.
+{% endhint %}
+
