@@ -419,6 +419,7 @@
   * [Scripted interactions](modding-guides/world-editing/scripted-interactions/README.md)
     * [👗 Wardrobe interaction (device)](modding-guides/world-editing/scripted-interactions/wardrobe-interaction-device.md)
     * [🛋️ Sit on couch interaction (workspot)](modding-guides/world-editing/scripted-interactions/sit-on-couch-interaction-workspot.md)
+  * [Creating Object Spawner Prefabs with Blender](modding-guides/world-editing/creating-object-spawner-prefabs-with-blender.md)
   * [Archived Guides](modding-guides/world-editing/archived-guides/README.md)
     * [Archived: Merging World Additions via ArchiveXL](modding-guides/world-editing/archived-guides/adding-locations-and-structures-with-archivexl.md)
     * [Archived: World editing via file edit](modding-guides/world-editing/archived-guides/archived-world-editing-via-file-edit.md)
