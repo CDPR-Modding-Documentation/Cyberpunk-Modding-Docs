@@ -16,7 +16,7 @@ It will give you an overview over the control files and tell you how to pull in 
 ### Video guide
 
 {% hint style="success" %}
-[Sh00kspeared](https://app.gitbook.com/u/pLUiO9EK9NgxqLuozrAjU1uMiPx2 "mention") created a video guide for this (November 2024). You can find it [on youtube](https://www.youtube.com/watch?v=GP9Crg8tkIg\&t=1s).
+[Sh00kspeared](https://app.gitbook.com/u/pLUiO9EK9NgxqLuozrAjU1uMiPx2 "mention") created two video guides for this (November 2024 and January 2024). You can find a tutorial on body and head components [here ](https://www.youtube.com/watch?v=GP9Crg8tkIg\&t=2s)and a tutorial on clothing components [here](npv-creating-a-custom-npc.md#video-guide).
 {% endhint %}
 
 ### Wait, this isn't what I want!
