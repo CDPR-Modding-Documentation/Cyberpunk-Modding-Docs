@@ -30,3 +30,5 @@ Additionaly, weapons can have `audioSwitchName` and `audioSwitchValue`, both of 
 ## Radios
 
 Radios are defined in `RadioStation.*` tweaks, those contain `displayName`, `icon` and an `index`. That index refers to an item in `radioStations` array of cooked\_metadata entry named `radio_stations_config`, that item then contains name of other entry within cooked\_metadata, which then contains the tracks (event names) and blips (also event names).
+
+Names of all radio tracks are defined in the `radio_tracks_metadata` entry of cooked\_metadata, mapped by `trackEventName`.
