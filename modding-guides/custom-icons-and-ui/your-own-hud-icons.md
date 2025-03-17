@@ -13,7 +13,7 @@ This guide tells you how to add a custom HUD icon for a weapon.  It is a subsect
 
 ## Step 1: Setting up the files
 
-We need an [.inkatlas](../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md) file and a [texture](../../for-mod-creators-theory/files-and-what-they-do/file-formats/materials/textures-.xbm-files.md).&#x20;
+We need an [.inkatlas](../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md) file and a [texture](../../for-mod-creators-theory/files-and-what-they-do/materials/textures-.xbm-files.md).&#x20;
 
 1. Download the correct template from the wiki's [github repository](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/_resources_and_assets/icons). For a hudicon, that's [weapons\_hudicon.zip](../../_resources_and_assets/icons/weapon_hudicon.zip)
 2. Extract both files to a fitting subfolder in your Wolvenkit project.

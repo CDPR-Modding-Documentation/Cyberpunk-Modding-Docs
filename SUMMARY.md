@@ -141,7 +141,7 @@
 * [📂 Game Components explained](for-mod-creators-theory/files-and-what-they-do/README.md)
   * [File Formats](for-mod-creators-theory/files-and-what-they-do/file-formats/README.md)
     * [Materials](for-mod-creators-theory/files-and-what-they-do/file-formats/materials/README.md)
-      * [Textures: .xbm files](for-mod-creators-theory/files-and-what-they-do/file-formats/materials/textures-.xbm-files.md)
+      * [Textures: .xbm files](for-mod-creators-theory/files-and-what-they-do/materials/textures-.xbm-files.md)
       * [Re-using materials: .mi](for-mod-creators-theory/files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md)
       * [Hair Profiles: .hp](for-mod-creators-theory/files-and-what-they-do/file-formats/materials/hair-profiles-.hp.md)
     * [Appearance: .app files](for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/README.md)

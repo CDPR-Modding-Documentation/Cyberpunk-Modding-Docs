@@ -19,7 +19,7 @@ This page contains the **theory section** for textures in Cyberpunk. It will giv
 
 ## About textures
 
-Inside the game files, textures are stored as `.xbm` files. Think of an `.xbm` as a **wrapper** around the image itself, containing extra information for the game engine on how to handle the file.
+You can't use textures in Cyberpunk without first converting them to `.xbm`. To learn more about the reasons, check [textures-.xbm-files.md](../../files-and-what-they-do/materials/textures-.xbm-files.md "mention").
 
 {% hint style="info" %}
 By default, all textures in Cyberpunk2077 are Y-flipped (upside down). WolvenKit will take care of that for you during import/export via the `VFlip` property.

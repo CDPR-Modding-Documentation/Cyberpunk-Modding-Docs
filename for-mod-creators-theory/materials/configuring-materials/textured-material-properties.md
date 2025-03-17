@@ -37,11 +37,7 @@ The .xbm is a container around the texture. Export the xbm to png via WolvenKit.
 {% hint style="warning" %}
 If your texture has any brightness issues in-game, toggle around the isGamma flag during import.
 
-The expected `isGamma` settings are:
-
-normals: **false**\
-diffuse/albedo: **true**\
-anything that is used in .inkatlas files: **true**
+For the expected `transparency` settings, check [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/ "mention") -> [Import/Export: Textures](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/textures "mention") -> [Texture Group](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/textures#texture-group "mention")
 {% endhint %}
 
 ## Plastic
