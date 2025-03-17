@@ -8,21 +8,26 @@ description: >-
 
 ## **Summary**
 
-**Created:** July 21 2024 by **@eagul**
+**Created:** July 21 2024 by **@eagul**\
+**Last documented edit:** Jan 18 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will show you how to create your own hair in Blender from scratch.
+
+### Wait, this is not what I want!
+
+* For guides on how to edit hair in Cyberpunk 2077, please check [guides-all-about-hair](../../modding-guides/npcs/guides-all-about-hair/ "mention")
 
 ## **Prerequisites:**
 
 * Some familiarity with Blender and basic modeling skills. \
-  If you don't know how to Use Blender yet, check out [blender-getting-started](blender-getting-started/ "mention") and complete at least the donut tutorial!
+  If you don't know how to use Blender yet, check out [blender-getting-started](blender-getting-started/ "mention") and complete at least the donut tutorial!
 * The paid Blender AddOn Hair Tool (purchase it on [Gumroad](https://bartoszstyperek.gumroad.com/l/hairtool))
 
 **Usefull links:**\
 Hair Tool discord server: [https://discord.gg/GwjA9NrKww](https://discord.gg/GwjA9NrKww)\
-Hair Tool official documentation: [https://joseconseco.github.io/HairTool\_3\_Documentation/](https://joseconseco.github.io/HairTool\_3\_Documentation/)
+Hair Tool official documentation: [https://joseconseco.github.io/HairTool\_3\_Documentation/](https://joseconseco.github.io/HairTool_3_Documentation/)
 
-You can download the example project [from our github](../../\_example\_mods\_and\_templates/hair\_tool\_bob\_demo.7z)!
+You can download the example project [from our github](../../_example_mods_and_templates/hair_tool_bob_demo.7z)!
 
 
 
@@ -346,7 +351,7 @@ In the top bar menu, change settings for Curve Shape. I used 0.05m and 5 points 
 <summary>HT modeling tools</summary>
 
 Hair Tool introduces a whole curve modeling workspace, with a couple unique tools,  which greatly facilitate manually editing curves.\
-Documentation: [https://joseconseco.github.io/HairTool\_3\_Documentation/hair\_modeling/](https://joseconseco.github.io/HairTool\_3\_Documentation/hair\_modeling/)\
+Documentation: [https://joseconseco.github.io/HairTool\_3\_Documentation/hair\_modeling/](https://joseconseco.github.io/HairTool_3_Documentation/hair_modeling/)\
 
 
 </details>
