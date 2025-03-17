@@ -4,7 +4,19 @@ description: How to avoid changing every single depotPath in your mod by hand
 
 # Moving and renaming in existing projects
 
-## TL;DR:
+## With Wolvenkit
+
+Since 18.5, Wolvenkit's Rename dialog lets you [update references](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#rename) inside your project:&#x20;
+
+<figure><img src="../../.gitbook/assets/rename_file_update_references.png" alt=""><figcaption></figcaption></figure>
+
+Moving a file this way will update all references inside Wolvenkit.&#x20;
+
+{% hint style="warning" %}
+Moving a folder this way will replace the **folder path** inside your project files, so use it with care for base game folders.
+{% endhint %}
+
+## Manually:
 
 Check the following steps:
 
@@ -70,7 +82,7 @@ You know what to replace now. For every type of entry, do the following:
 
 ## Importing back
 
-Now that we have changed the paths, we need to get those changes back into our Wolvenkit project. In the project's `raw` view, right-click on the toplevel folder and select "[Convert from JSON](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json)" (however it is named, there's just one item that will let you import your json files)
+Now that we have changed the paths, we need to get those changes back into our Wolvenkit project. In the project's `raw` view, right-click on the toplevel folder and select "[Convert from JSON](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json)" (however it is named, there's just one item that will let you import your json files)
 
 ## Deleting leftover files
 
