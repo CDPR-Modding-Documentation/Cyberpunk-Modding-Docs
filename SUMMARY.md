@@ -318,7 +318,7 @@
     * [Archived: Custom bodyhair for NPCs](modding-guides/npcs/appearances-change-the-looks/custom-bodyhair-for-npcs.md)
   * [AMM: Custom NPCs](modding-guides/npcs/amm-custom-npcs/README.md)
     * [AMM: Custom NPC appearances](modding-guides/npcs/amm-custom-npcs/amm-custom-npc-appearances.md)
-  * [VendorsXL: Custom Vendors](modding-guides/npcs/vendorsxl-custom-vendors.md)
+  * [VendorsXL: Custom Vendors](for-mod-creators-theory/core-mods-explained/vendorsxl.md)
 * [🧍 Animations](modding-guides/animations/README.md)
   * [🤹 Creating Animations - Poses for V & NPCs](modding-guides/animations/animations/README.md)
     * [Poses/Animations: make your own](modding-guides/animations/animations/poses-animations-make-your-own/README.md)
