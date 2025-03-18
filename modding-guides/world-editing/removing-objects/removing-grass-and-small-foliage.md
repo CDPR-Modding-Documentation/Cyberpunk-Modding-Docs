@@ -1,7 +1,7 @@
 ---
 description: >-
-  This guide shows how to selectively block small foliage added via foliage
-  nodes, such as grass, from an area
+  This guide shows how to selectively block small foliage such as grass and
+  pebbles, which is generated at runtime for terrain
 ---
 
 # Removing grass and small foliage
@@ -36,7 +36,7 @@ description: >-
     <figure><img src="../../../.gitbook/assets/removingFoliageExtract" alt=""><figcaption><p>Right-Click the CBitMapTexture one, and select extract</p></figcaption></figure>
 
 {% hint style="success" %}
-This texture is used as a mask, to block foliage spawned via foliage nodes from appearing in certain spots
+This texture is used as a mask, to block foliage spawned at runtime based on various other embedded masks, appearing in certain spots
 
 Try and figure out which part of the texture corresponds to what part of the world
 {% endhint %}
