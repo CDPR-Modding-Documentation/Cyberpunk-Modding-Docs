@@ -23,7 +23,7 @@ For another guide regarding custom props, check [textured-items-and-cyberpunk-ma
 ### Wait, this isn't what I want!
 
 * If you want to play around with materials and an existing prop, check [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
-* If you want to enable collisions, see [enable-embedded-collisions.md](../../world-editing/enable-embedded-collisions.md "mention")
+* If you want to enable collisions, see [enable-embedded-collisions.md](../../world-editing/miscellaneous/enable-embedded-collisions.md "mention")
 * If you want to make meshes out of 2d textures, see [your-image-as-custom-mesh.md](../../../for-mod-creators-theory/3d-modelling/your-image-as-custom-mesh.md "mention")
 * … or use the wiki's AI-assisted search function, or simply poke around
 

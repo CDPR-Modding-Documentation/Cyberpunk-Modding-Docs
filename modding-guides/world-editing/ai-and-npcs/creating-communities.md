@@ -27,7 +27,7 @@ description: >-
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
+  * Using Object Spawner (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
   * Know how to place `AISpot`'s, see the [corresponding page](placing-aispot-nodes.md)
 
 ## General Setup
@@ -128,6 +128,10 @@ To delete an entry, phase or period, simply right click its header
 
 <figure><img src="../../../.gitbook/assets/markingsFullExample" alt=""><figcaption></figcaption></figure>
 
+{% hint style="success" %}
+You can right-click any entry/phase/period, to delete or duplicate it
+{% endhint %}
+
 ## Finishing up
 
-* In order for the community to be functional, export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](../exporting-from-object-spawner.md)
+* In order for the community to be functional, export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](../object-spawner/exporting-from-object-spawner.md)

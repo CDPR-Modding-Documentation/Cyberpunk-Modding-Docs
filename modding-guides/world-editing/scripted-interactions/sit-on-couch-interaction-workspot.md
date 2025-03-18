@@ -14,12 +14,12 @@ The logic shown here also applies to other similar workspot interactions.
 
 ## Requirements
 
-<table><thead><tr><th width="430">Tool/Software</th><th>Version</th></tr></thead><tbody><tr><td>Wolvenkit (<a href="https://github.com/WolvenKit/Wolvenkit/issues">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td><td>≥ 8.16.1 for Cyberpunk 2.21</td></tr><tr><td>Object Spawner (<a data-mention href="../world-editor-entspawner.md">world-editor-entspawner.md</a>)</td><td>Most recent from Feb 09, 2025</td></tr><tr><td>Visual Studio Code or any IDE to edit lua files</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="430">Tool/Software</th><th>Version</th></tr></thead><tbody><tr><td>Wolvenkit (<a href="https://github.com/WolvenKit/Wolvenkit/issues">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td><td>≥ 8.16.1 for Cyberpunk 2.21</td></tr><tr><td>Object Spawner (<a data-mention href="broken-reference">Broken link</a>)</td><td>Most recent from Feb 09, 2025</td></tr><tr><td>Visual Studio Code or any IDE to edit lua files</td><td></td></tr></tbody></table>
 
 **Knowledges required :**&#x20;
 
 * You know how to [**create a mod**](https://wiki.redmodding.org/wolvenkit/getting-started/creating-a-mod) using Wolvenkit.
-* You know how to[ **spawn objects**](../world-editor-entspawner.md) using entSpawner
+* You know how to[ **spawn objects**](broken-reference) using entSpawner
 * You [downloaded the template](./#download-the-template) that contains all the necessary files
 
 ## Define the position
@@ -64,7 +64,7 @@ The last line append the interaction to the workspots list of the file, this wil
 
 If you're working with hot reload, you can change the `interactions.lua` file from within your game folder and then directly press **Reload all mods** in the CET menu to see the result, without having to restart your game. Otherwise, redeploy your mod.
 
-{% file src="../../../.gitbook/assets/Cyberpunk 2077 (C) 2020 by CD Projekt RED 2025-02-24 19-09-16.mp4" %}
+{% file src="../../../.gitbook/assets/Sit interaction - result video.mp4" %}
 Sit interaction - result (with french game :flag\_fr:)
 {% endfile %}
 

@@ -14,12 +14,12 @@ The logic shown here also applies to other similar device _like_ interactions.
 
 ## Requirements
 
-<table><thead><tr><th width="430">Tool/Software</th><th>Version</th></tr></thead><tbody><tr><td>Wolvenkit (<a href="https://github.com/WolvenKit/Wolvenkit/issues">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td><td>≥ 8.16.1 for Cyberpunk 2.21</td></tr><tr><td>Object Spawner (<a data-mention href="../world-editor-entspawner.md">world-editor-entspawner.md</a>)</td><td>Most recent from Feb 09, 2025</td></tr><tr><td>Visual Studio Code or any IDE to edit lua files</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="430">Tool/Software</th><th>Version</th></tr></thead><tbody><tr><td>Wolvenkit (<a href="https://github.com/WolvenKit/Wolvenkit/issues">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td><td>≥ 8.16.1 for Cyberpunk 2.21</td></tr><tr><td>Object Spawner (<a data-mention href="broken-reference">Broken link</a>)</td><td>Most recent from Feb 09, 2025</td></tr><tr><td>Visual Studio Code or any IDE to edit lua files</td><td></td></tr></tbody></table>
 
 **Knowledges required :**&#x20;
 
 * You know how to [**create a mod**](https://wiki.redmodding.org/wolvenkit/getting-started/creating-a-mod) using Wolvenkit.
-* You know how to[ **spawn objects**](../world-editor-entspawner.md) using entSpawner
+* You know how to[ **spawn objects**](broken-reference) using entSpawner
 * You [downloaded the template](./#download-the-template) that contains all the necessary files
 
 ## Define the position

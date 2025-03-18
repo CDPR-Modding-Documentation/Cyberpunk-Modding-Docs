@@ -1,4 +1,8 @@
-# Removing OcclusionNodes
+---
+description: Guide on how to remove occlusion nodes, on a sector basis
+---
+
+# Removing Occlusion Nodes
 
 ## Finding and Removing Occlusion
 

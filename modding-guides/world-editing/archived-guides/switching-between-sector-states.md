@@ -5,7 +5,7 @@ description: How to use streamingSectorPrefabVariant
 # Switching between sector states
 
 {% hint style="info" %}
-This page contains the theory of sector variants, for creating sectors with variants, head over to the [Creating Sector Variants](../creating-sector-variants.md) guide
+This page contains the theory of sector variants, for creating sectors with variants, head over to the [Creating Sector Variants](../object-spawner/features-and-guides/creating-sector-variants.md) guide
 {% endhint %}
 
 ## Summary

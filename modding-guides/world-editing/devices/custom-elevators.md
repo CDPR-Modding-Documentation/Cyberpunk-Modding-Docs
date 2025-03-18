@@ -19,7 +19,7 @@ description: >-
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
+  * Using Object Spawner (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
 
 ## Spawning nodes
 
@@ -116,8 +116,8 @@ Do not use the same NodeRef names as used in this guide, but choose your own uni
   * A elevator, spawned as `Device`, with its own NodeRef, and linked to both terminals (Make sure you use the terminals NodeRefs, not the markers)
   * Two terminals, spawned as `Device`, set to be persistent, with their own NodeRefs, and properly setup instance data (Linking them to the floor markers and with names)
   * Two static markers, each with their own NodeRef, positioned correctly
-* Once you have all this, you are ready to [export](../exporting-from-object-spawner.md)
-* [Import into WKit](../exporting-from-object-spawner.md)
+* Once you have all this, you are ready to [export](../object-spawner/exporting-from-object-spawner.md)
+* [Import into WKit](../object-spawner/exporting-from-object-spawner.md)
 
 {% hint style="warning" %}
 You **must** import the result into WolvenKit in order for the elevator to be functional

@@ -21,7 +21,7 @@ description: >-
 * You need to have a basic understanding of:
   * Working with WolvenKit
   * Creating tweaks using TweakXL (`.yaml`files)
-  * Using Object Spawner (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
+  * Using Object Spawner (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
 
 {% hint style="warning" %}
 Any NodeRef names, and custom TweakDB record names in this guide are _examples_, do not use the same ones as in the guide.
@@ -90,7 +90,7 @@ FastTravelPoints.customPoint:
 Make sure that the category of the sector containing the marker and terminal is set to `AlwaysLoaded` during export from Object Spawner
 {% endhint %}
 
-* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](../exporting-from-object-spawner.md)
+* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](../object-spawner/exporting-from-object-spawner.md)
 
 {% hint style="warning" %}
 If you make any changes to the FT point, after having already loaded the game with your custom point installed, make sure to use a fresh save (A save without the custom point saved)

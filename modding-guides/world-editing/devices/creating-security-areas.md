@@ -25,7 +25,7 @@ description: >-
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
+  * Using Object Spawner (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
 
 ## Spawning the nodes
 
@@ -58,7 +58,7 @@ Make sure to spawn both as `Device`(`Entity -> Device` in Object Spawner)
 ## Creating the outline
 
 * Next we want to create the outline of the security area
-* In order to do this, setup a `Dummy Area`, using the [guide for setting area outlines](../setting-area-outlines.md) (Use a `Dummy Area` as area type)
+* In order to do this, setup a `Dummy Area`, using the [guide for setting area outlines](../object-spawner/features-and-guides/setting-area-outlines.md) (Use a `Dummy Area` as area type)
 
 {% hint style="warning" %}
 Ensure that the `Dummy Area` is in the exact same position as our security area device
@@ -91,4 +91,4 @@ Ensure that the `Dummy Area` is in the exact same position as our security area 
   * Both have unique NodeRefs
   * Security system has a device connection to the security area
   * Dummy outline, copy pasted the outline into the security area
-* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](../exporting-from-object-spawner.md)
+* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](../object-spawner/exporting-from-object-spawner.md)

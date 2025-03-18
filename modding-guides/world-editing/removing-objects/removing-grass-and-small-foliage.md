@@ -60,7 +60,7 @@ Try and figure out which part of the texture corresponds to what part of the wor
 
 * Now, make the terrain mesh use your custom foliage mask texture, as follows:
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Change the <code>MaskFoliage</code> of the terrain mesh' <code>perloadLocalMaterialInstances</code> to point to the modified foliage mask</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (612).png" alt=""><figcaption><p>Change the <code>MaskFoliage</code> of the terrain mesh' <code>perloadLocalMaterialInstances</code> to point to the modified foliage mask</p></figcaption></figure>
 
 {% hint style="warning" %}
 Make sure you set the Flags of the `Value` is set to `Default`

@@ -156,7 +156,7 @@ To export edited collision bodies back to .phys.json, simply press the "export c
 
 ### Export from Wolvenkit
 
-To export streamingsectors, you have to use the corresponding Wolvenscript. The workflow is documented [here](../../../modding-guides/world-editing/editing-locations-in-blender.md#exporting-streaming-sectors-to-blender).&#x20;
+To export streamingsectors, you have to use the corresponding Wolvenscript. The workflow is documented [here](../../../modding-guides/world-editing/miscellaneous/editing-locations-in-blender.md#exporting-streaming-sectors-to-blender).&#x20;
 
 ### Importing into Blender
 
@@ -170,7 +170,7 @@ Navigate in the file view to your Wolvenkit project's root file, and select the 
 
 ### Exporting from Blender
 
-The export process is not part of the plugin yet (1.5.0); it is documented [here](../../../modding-guides/world-editing/editing-locations-in-blender.md#importing-back-into-cyberpunk).&#x20;
+The export process is not part of the plugin yet (1.5.0); it is documented [here](../../../modding-guides/world-editing/miscellaneous/editing-locations-in-blender.md#importing-back-into-cyberpunk).&#x20;
 
 ## Hair profiles (.hp)
 

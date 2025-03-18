@@ -103,7 +103,7 @@ If you don't do that, you will drown in comments from confused users who don't k
 
 ### Prerequisites: Deleting the objects
 
-1. Hit up [editing-locations-in-blender.md](../editing-locations-in-blender.md "mention") and follow the instructions to import your sectors into Blender.
+1. Hit up [editing-locations-in-blender.md](../miscellaneous/editing-locations-in-blender.md "mention") and follow the instructions to import your sectors into Blender.
 2. **Optiona, but recommended**: Save the blend file. There's no real way to undo stuff right now other than deleting them from the list by hand, and re-importing is tedious. If you save the file, you can use File -> Revert to undo all your changes.
 3. **Select** and **delete** the objects that you want to get rid of.
 

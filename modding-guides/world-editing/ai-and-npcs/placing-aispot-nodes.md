@@ -28,7 +28,7 @@ This guide only explains how to place AISpot Nodes, for them to be actually be u
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
+  * Using Object Spawner (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
 
 ## Spawning AISpots
 
