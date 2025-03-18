@@ -92,6 +92,8 @@ Summary:&#x20;
 3. **Define** the material in either `localMaterialInstances.materials` or `externalMaterials`
 {% endhint %}
 
+#### Mesh file: diagram
+
 Here's an overview:
 
 <figure><img src="../../../../.gitbook/assets/meshes_appearances.jpg" alt=""><figcaption><p>Example: A mesh with two materials, one of them a local instance, one of them an external .mi file</p></figcaption></figure>

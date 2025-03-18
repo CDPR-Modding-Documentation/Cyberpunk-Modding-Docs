@@ -82,12 +82,14 @@ Again, you can look these up in the .app file!
 1. Find the file from mesh.DepotPath in your [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser).&#x20;
 2. Add it to your Wolvenkit Project (double-click or right-click -> Add to Project)
 
-## Step 1: Finding the correct material name
+We will now edit the mesh's **material**. Stay tuned!
 
 {% hint style="info" %}
 To learn how appearances and materials connect, you can read [3d-objects-.mesh-files](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention"). \
-This is not necessary for this guide.
+This is not necessary for this guide, but if you find yourself struggling, it's worth checking out (especially the diagram under [#mesh-file-diagram](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#mesh-file-diagram "mention"))
 {% endhint %}
+
+## Step 1: Finding the correct material name
 
 1. Open your mesh file in Wolvenkit by double-clicking it.&#x20;
 2. Find the array `appearances` at the very top, and expand it.

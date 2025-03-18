@@ -65,9 +65,11 @@ This will open MLSB with the correct file already loaded.
 Alternatively, you can also open MLSetupBuilder by hand, then press `Ctrl+I` or select `Import` from the menu.
 {% endhint %}
 
-{% hint style="warning" %}
-If your material list is saying \[object object], check the [MLSB troubleshooting page.](../../../for-mod-creators-theory/modding-tools/mlsetup-builder/#help-my-layer-config-list-says-object-object)
-{% endhint %}
+#### Close the preview
+
+For MLSB versions <= 1.6.8, you will now see a preview. Click on "Import the Multilayer Setup" on the left.
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ## (Optional) Step 2: Preview and Layer Masks
 
@@ -77,7 +79,9 @@ If you don't care for this, you can skip to [#step-3-recolouring](r-and-r-colour
 
 #### Enable preview
 
-1. Switch to MLSetupBuilder's [Library tab](../../../for-mod-creators-theory/modding-tools/mlsetup-builder/#mlsb-library).
+Prerequisite: For MLSB versions <= 1.6.8., see [#close-the-preview](r-and-r-colour-editing.md#close-the-preview "mention")
+
+1. You can now switch to MLSetupBuilder's [Library tab](../../../for-mod-creators-theory/modding-tools/mlsetup-builder/#mlsb-library).
 2. Check if the .mlsetup that you want to edit is in a subfolder `layer_mask_2`
    * No: Search for `t0_005_pwa_body__t_bug`
    * Yes: Search for `t0_001_wa_body__t_bug`
@@ -119,7 +123,7 @@ They'll lead you to **look-up tables** or extra theory.
 ### Potential breaking point
 
 {% hint style="info" %}
-If you are here to edit other mlsetups, you can skip this section
+If you are here to edit mlsetups that aren't part of the [**High Fashion Netrunner Suits**](https://www.nexusmods.com/cyberpunk2077/mods/9314), you can skip this section
 {% endhint %}
 
 {% hint style="warning" %}
