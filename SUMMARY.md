@@ -406,6 +406,7 @@
   * [Removing Objects](modding-guides/world-editing/removing-objects/README.md)
     * [Manual Removal](modding-guides/world-editing/removing-objects/world-editing-deleting-objects.md)
     * [Removing OcclusionNodes](modding-guides/world-editing/removing-objects/removing-occlusion.md)
+    * [Removing grass and small foliage](modding-guides/world-editing/removing-objects/removing-grass-and-small-foliage.md)
   * [Devices](modding-guides/world-editing/devices/README.md)
     * [Custom fast travel points](modding-guides/world-editing/devices/custom-fast-travel-points.md)
     * [Custom elevators](modding-guides/world-editing/devices/custom-elevators.md)

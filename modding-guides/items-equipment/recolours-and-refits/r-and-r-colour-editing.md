@@ -69,7 +69,7 @@ Alternatively, you can also open MLSetupBuilder by hand, then press `Ctrl+I` or 
 
 For MLSB versions <= 1.6.8, you will now see a preview. Click on "Import the Multilayer Setup" on the left.
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## (Optional) Step 2: Preview and Layer Masks
 

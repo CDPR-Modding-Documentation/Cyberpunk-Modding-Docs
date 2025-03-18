@@ -36,7 +36,7 @@ You can look up all mesh paths in [cheat-sheet-body.md](../../../references-list
 
 This is the path to acquire the gender you want to work on for vanilla V.
 
-<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
 
 For the tutorial, I will take male V's right arm:
 
@@ -44,7 +44,7 @@ For the tutorial, I will take male V's right arm:
 base\characters\common\player_base_bodies\player_man_average\arms_hq\a0_000_pma_base_hq_r.mesh
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### Rename the .mesh file
 
