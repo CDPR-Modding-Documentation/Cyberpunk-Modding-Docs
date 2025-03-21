@@ -126,6 +126,7 @@
       * [CCXL Theory: Scopes and extensions](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-theory-scopes-and-extensions.md)
       * [CCXL: Hairs](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-hairs.md)
       * [CCXL: Body Tattoos](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-body-tattoos.md)
+      * [CCXL: Creating a Switcher](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-creating-a-switcher.md)
   * [▶️ TweakXL](for-mod-creators-theory/core-mods-explained/tweakxl/README.md)
     * [🔧 TweakXL: Changing game records](for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/README.md)
       * [How to YAML: Tweak modding basics](for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/how-to-yaml-tweak-modding-basics.md)
