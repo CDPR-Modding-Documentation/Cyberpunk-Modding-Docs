@@ -59,7 +59,54 @@ tutorial
 
 ## Taking preview pictures
 
-You have two options on taking preview pictures. Both are relatively tedious, since you have to do it by hand. This is not a step-by-step, but you can find a few pointers here:
+You have two options on taking preview pictures. Both are relatively tedious, since you have to do it by hand.&#x20;
+
+You can find more detail about how to take preview pictures in [#blender](./#blender "mention") or [#in-game](./#in-game "mention") further down the section.
+
+### mana's workflow
+
+#### Prerequisites
+
+* [Photo Studio Props](https://www.nexusmods.com/cyberpunk2077/mods/7436)
+* [Invisible V](https://www.nexusmods.com/cyberpunk2077/mods/8412)
+* [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790)
+* [Appearance Creator Mod](https://www.nexusmods.com/cyberpunk2077/mods/10795)
+* Photoshop or [photopea.com](https://www.photopea.com/)
+
+#### Taking photos
+
+1. Strip V nekkid, then put on the [Invisibility Cloak](https://www.nexusmods.com/cyberpunk2077/mods/8412) and the item you want to create previews of
+2. Use [AMM](https://www.nexusmods.com/cyberpunk2077/mods/7436) to spawn "Photo Studio: Wall Cover" from the [Photo Studio Props](https://www.nexusmods.com/cyberpunk2077/mods/7436)
+3. Set the appearance to `white (matte)`&#x20;
+4. Switch to photo mode. Find a good angle and lighting for your item.
+5. Use [ACM](https://www.nexusmods.com/cyberpunk2077/mods/10795) to set the item's appearance to the darkest variant (e.g. `black`)
+6. Take a screenshot. You will use this for **masking**.
+7. Switch the background color to `black`
+8. Use ACM to cycle through the item's appearances and take a screenshot of each
+9. In Windows Explorer, find your item screenshots and move them to a folder
+10. Re-name the png to the name of your future icon (e.g. `myItem_black`). You can also do this later.
+
+#### Processing photos
+
+1. Open the dark item on the white background in photoshop or [photopea](https://www.photopea.com/)
+2. Drag all the other pictures you took on top of it. The items must be in the same space!
+3. In the **Layers** panel (bottom right)
+   1. &#x20;create a group and put all the layers inside
+   2. Drag the layer of the white background picture to the top, and select it (click on it)
+4. Press `W` to select the **Magic Wand** tool
+5. From the top bar, use the `Select Subject` button
+6. Optional: use the Select and Mask view to fine tune your selection
+7. Confirm. You now have a selection that includes only your item.
+8. In the Layers panel (bottom right),&#x20;
+   1. select the group (folder) by clicking on it
+   2. create a layer mask by clicking on the icon that looks like the Japanese flag
+9. The background will now be transparent
+10. Use the Crop Tool (Keyboard shortcut: `C`) to crop a rectangular selection with your icon in the center
+11. Select the layers, right-click, and select "Quick Export as PNG"
+
+<figure><img src="../../../.gitbook/assets/preview_icons_export_as.png" alt=""><figcaption></figcaption></figure>
+
+12. You should now have a bunch of transparent pngs. Now, let's see about [#hooking-up-the-inkatlas](./#hooking-up-the-inkatlas "mention").
 
 ### Blender
 
