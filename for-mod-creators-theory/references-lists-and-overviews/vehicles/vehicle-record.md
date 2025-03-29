@@ -2,11 +2,24 @@
 description: The TweakDB default vehicle record
 ---
 
-# Cheat Sheet: Vehicle Records
+# Cheat Sheet: Vehicle Root Record
 
-This is the main vehicle record in TweakDB, referenced from `VehicleObject` in the game, that references all the other vehicle-related records. Below is the .tweak vehicle template (that's also in the TweakDB) that you can customize for creating your own vehicle. The name `Vehicle.vehicle_template` near the top will need to be customized to your vehicle name.
+## Summary
+
+**Published:** Jul 9 2022 by jato\
+**Last documented edit:** March 29 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page documents the vehicle root record (referenced from `VehicleObject`) in the [TweakDB](../../tweaks/tweaks/). This record is the parent of all ovther vehicle-related records.
+
+## Vehicle template
+
+Below is the .tweak vehicle template (that's also in the TweakDB) that you can customize for creating your own vehicle.&#x20;
+
+{% hint style="info" %}
+The name `Vehicle.vehicle_template` near the top will need to be customized to your vehicle name.
 
 `entityTemplatePath` is an important field here, because this is the file that ties our record to the resource files needed for rendering.
+{% endhint %}
 
 {% code title="Vehicle.vehicle_template.tweak" %}
 ```yaml

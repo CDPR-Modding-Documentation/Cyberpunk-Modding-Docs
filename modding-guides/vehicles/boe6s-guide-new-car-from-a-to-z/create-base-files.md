@@ -1,35 +1,55 @@
 # 🗃️ Boe6's vehicles: Create base files
 
-#### Summary
+## Summary
 
-This page will show you how to create the base .yaml, .json, & .xl files that will tell your game about the new car.
+This section will walk you through the following steps:
 
-* [ ] [Create a new project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project) in **WolvenKit** (wKit).
+* [ ] [#create-a-new-tweakxl-.yaml-file](create-base-files.md#create-a-new-tweakxl-.yaml-file "mention")
+* [ ] [#create-a-.json-file](create-base-files.md#create-a-.json-file "mention")
+* [ ] [#add-the-.app-file](create-base-files.md#add-the-.app-file "mention")
+* [ ] [#add-the-.xl-file](create-base-files.md#add-the-.xl-file "mention")
+
+## Prerequirements
+
+* [ ] You have Wolvenkit [installed](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/eli5-getting-started) and set up
+* [ ] &#x20;[Create a new project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project) in **WolvenKit** (wKit)
+* [ ] Keep your favourite text editor ready (or get [Notepad++](https://notepad-plus-plus.org/downloads/) if you don't have one)
+
+You need the following mods:&#x20;
+
+* [ ] [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197)
+* [ ] [**Cyber Engine Tweaks**](https://www.nexusmods.com/cyberpunk2077/mods/107)
+
+## Create a new tweakXL `.yaml` file
 
 {% hint style="info" %}
-Make sure you installed TweakXL.
+This file contains the [tweak, ](../../../for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/)which will register your car with the game's database.
 {% endhint %}
 
-### Create a new tweakXL `.yaml` file
-
-{% hint style="info" %}
-This file contains the [tweak ](../../../for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/)which will register your car with the game's database.
-
-After creation, you can find it in your Wolvenkit project's [resources](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources) tab.
+{% hint style="warning" %}
+The `.yaml` language organizes things by their **level of indent** - the number of spaces at the beginning of a line. This is easy to get wrong. To check your file for errors, you can use a syntax checker such as [yamllint.com](https://www.yamllint.com/).
 {% endhint %}
+
+
 
 Create a new tweakXL file by going to “**New File**” in the top left of **wkit**, just next to the **HOME** button.
 
 <figure><img src="../../../.gitbook/assets/image (282).png" alt=""><figcaption></figcaption></figure>
 
 Select **TweakDB** and **TweakXL file**. Name it something specific to your mod.\
-example: “`boe6_mini_cooper.yaml`”
+example: `boe6_mini_cooper.yaml`
 
 <figure><img src="../../../.gitbook/assets/image (283).png" alt=""><figcaption></figcaption></figure>
 
-Open the `.yaml` file in your favorite text editor. I used **notepad++**.
+{% hint style="info" %}
+This file will be kept in your project's [**Resources**](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources) section.
+{% endhint %}
 
-Create a new tweak entry for your model.
+Open the `.yaml` file in your favorite text editor. I used [**notepad++**](https://notepad-plus-plus.org/downloads/).
+
+#### Create a new tweak entry
+
+Put the following file contents. Don't change anything here but the first line, since we'll do that together later:
 
 ```yaml
 Vehicle.boe6_mini_cooper_red:
@@ -37,34 +57,46 @@ Vehicle.boe6_mini_cooper_red:
     appearanceName: boe6_mini_cooper_red
     displayName: boe6_mini_cooper_name
     player_audio_resource: v_car_mizutani_shion_nomad
-    entityTemplatePath: boe6\mini_cooper\boe6_mini_cooper_basic.ent
+    entityTemplatePath: base\vehicles\sport\v_sport2_porsche_911turbo__basic_01.ent
 ```
 
-#### Explanation of each tweak:
+### What do these tweaks do?
 
 #### `$base`:
 
-* This should be set to the most similar in-game vehicle to your project. This is the tweak record that your car will mirror unless you set your own. You can find tweak names in the wKit tweak browser, search for the source car in the search bar on top. Look for `Vehicle.v_NAME`, it’s first entry should be “`gamedataVehicle_Record`”
-  * example: “`Vehicle.v_sport2_porsche_911turbo`”
-* Choose an existing vehicle in Cyberpunk 2077 that most resembles the vehicle you want to create. For a small sports car, the Porsche is closest. While if you're making a truck, consider the Mackinaw. Whichever you choose, this will become the base vehicle that we will edit into becoming the vehicle we desire.
+This is the tweak record that your car will mirror.\
+Chose the existing vehicle that most resembles the car you want to create. For a small sports car, that is the Porsche, for a truck, it's the Mackinaw. Later steps of this guide will show you how to fine-tune your record further.
 
-#### `appearanceName`:
+You can look up tweak names in two ways:&#x20;
 
-* Needs to be set to the appearance name in the vehicle’s `.ent` file. The `.ent` file can be found inside your source vehicle’s tweak records. Locate the vehicle’s tweaks like before, `Vehicle.v_sport2_porsche_911turbo` for example, and scroll down for an entry titled “`entityTemplatePath`”. It should have an entry similar to this:
-  * “`Base\vehicles\sport\v_sport2_porsche_911turbo__basic_01.ent`”
-  * Save this .ent file path for later.
+* on the [vehicles.md](../../../for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicles.md "mention") page
+* in Wolvenkit's Tweak Browser by searching for `Vehicle.v_NAME`. You know that you found the right entry when its first property is a `gamedataVehicle_Record`
 
-#### `displayName:`
-
-* Set to match your `json` file as done below.
-
-#### `player_audio_resource`:
-
-* This line is not necessary yet. It can be swapped for another vehicle’s engine sound later with whichever sounds closest to your desired vehicle.
+{% hint style="success" %}
+example: `Vehicle.v_sport2_porsche_911turbo`
+{% endhint %}
 
 #### `entityTemplatePath`:
 
-* This is the file we just added in the `appearanceName` step earlier. To easily get this: in the project explorer, right click on the file and hit **rename**, or press **F2**. In the open window you can copy the path starting at `base/…` You can also copy the relative path by right clicking the file and selecting “_copy relative path_”. Now you can paste it into the `.yaml` entry.
+Your vehicle's [root entity](create-base-files.md#the-root-entity) file. We haven't added it yet.
+
+{% hint style="info" %}
+we'll do this in a later step and only write it down here - you can find it as `entityTemplatePath` in your chosen tweak record, or on the [vehicles.md](../../../for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicles.md "mention") page.
+{% endhint %}
+
+#### `appearanceName`:
+
+Used to pick the appearance name (vehicle variant) in your vehicle's .ent file.&#x20;
+
+#### `displayName:`
+
+We haven't done this step yet - this has to match the `secondary key` in your `json` file. Keep reading!
+
+#### `player_audio_resource`:
+
+This line is not necessary yet. It can be swapped for another vehicle’s engine sound later with whichever sounds closest to your desired vehicle.
+
+### Make it a player vehicle
 
 Add your new vehicle tweak to the `vehicle_list` tweak, so the game can find it.
 
@@ -74,61 +106,82 @@ Vehicle.vehicle_list.list:
 ```
 
 {% hint style="info" %}
-Note the 2 spaces, followed by a dash, followed by another space, then the `!entry`. Syntax is very important for `.yaml` files
+Note the 2 spaces, followed by a dash, followed by another space, then the `!entry`. Syntax is very important for `.yaml` files!
 {% endhint %}
 
-### Create a `.json` file
+## Create a `.json` file
 
 {% hint style="info" %}
 This file contains the translation strings, such as your car's name and description.
+{% endhint %}
 
+Create a `.json` file in your project and name it after your car. The process is the same as for creating the `.yaml`:
+
+<figure><img src="../../../.gitbook/assets/boe6_vehicles_1_create_json.png" alt=""><figcaption></figcaption></figure>
+
+The option is about half way down the “**CR2W Files**” category. Name it the same as your vehicle (e.g. `boe6_mini_cooper.json`)
+
+{% hint style="info" %}
 After creation, you can find it in your Wolvenkit project's [Archive](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#archive "mention") tab.
 {% endhint %}
 
-Create a `.json` file in your project, the same as creating the `.yaml`. The option is about half way down the “**CR2W Files**” category. Name it the same as your vehicle (e.g. “`boe6_mini_cooper.json`”)
+### Custompathing your files
 
-<figure><img src="../../../.gitbook/assets/image (284).png" alt=""><figcaption></figcaption></figure>
+To avoid collisions with existing game files, you need to **keep your files in their own folder**. (This process is called custompathing - you can find a guide about it [here](../../items-equipment/custompathing-assets.md).)
 
-You’ll want to create your own project path at this point. With your mouse over the new `.json` file, on the right side hit the yellow “**open in explorer**” button to find the `.json` file in your file explorer, you should see just your `.json` file and a “`base`” folder. Create a new folder/path for your project files here. I created “`boe6/mini_cooper/`”. Now in **wkit**, move your `.json` into the new folder.
+The easiest way fo doing that is to select your .json file in the project explorer and use [Wolvenkit's Rename dialog](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#rename) (Hotkey: f2), then enter your destination folder at the beginning of the file name.
 
-Your project file structure should now be similar to this:\\
+Mine is `boe6/mini_cooper/`.
+
+<figure><img src="../../../.gitbook/assets/boe6_vehicles_custompathing_json.png" alt=""><figcaption></figcaption></figure>
+
+Your project file structure should now be similar to this:
 
 <figure><img src="../../../.gitbook/assets/image121.png" alt=""><figcaption></figcaption></figure>
 
-Open the `.json` in **wKit** by double clicking.
+### Adding translation entries
 
-Under `RDTDataViewModel`, click on “`root`” : `handle:ISerializable`.
+Open the `.json` in **wKit** by double clicking.&#x20;
 
-“`root.root`” will appear on the right side. Next to `handle:ISerializable`, click the yellow “**Create Handle**” button.
+{% hint style="warning" %}
+Wolvenkit's [cr2w editor](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor) has neither an autosave nor an undo function.&#x20;
 
-In the window that opens, click on the bottom text box to type in the following:
-
-“`localizationPersistenceOnScreenEntries`”
-
-You can use the autofill. Click “**create**”
-
-{% hint style="info" %}
-Notice that you have to manually save items in this window. Ctrl+S works. Same rule applies for `.ent` files, `.app` files, and any other files edited directly in **wkit**.
+You can (and should) frequently save your changes with `Ctrl+S` \
+To reset the file to the last time you saved, you can press `Ctrl+R`
 {% endhint %}
 
-Now under `RDTDataViewModel`, “`root`” is expandable. Click on the entries array under “`root`”.
+Now, we need to add a new translation entry:
 
-Now on the right side, click “**Create Item In Array**”
+<figure><img src="../../../.gitbook/assets/boe6_json_add_new_entry.png" alt=""><figcaption></figcaption></figure>
 
-Now we'll customize the new entry. Expand the item options and complete it to these values:
+1. Select the `root` entry in the tree view on the left
+2. In the right panel, click on the yellow button next to `handle:ISerializable`
+3. In the pop-up, filter for `localizationPersistenceOnScreenEntries` and select the entry
+4. Click `Create`
 
-* “`primaryKey`” can be left at `0`, and “`maleVarient`” can be left blank.
-* “`secondaryKey`” is what your `.yaml` is referencing. This is the name given that will link to the `.yaml`.\
-  Example: “`boe6_mini_cooper_name`”
-* “`femaleVariant`” is the actual display string. In this case, the vehicle’s name as it should be shown in the menus. Example: “`Mini Cooper S`”
+In the left-hand tree view, the `root` entry has now become expandable.&#x20;
 
-Create 2 more entries in the array by right clicking the first array entry we just created, and hit “d**uplicate item in array/buffer**” as shown:\\
+5. Click on the new `entries` array
+6. Click the button on the right panel again to add a translation entry
 
-<figure><img src="../../../.gitbook/assets/image17 (1).png" alt=""><figcaption></figcaption></figure>
+#### Customize the new entry
 
-Swap the 2nd and 3rd string values for your vehicle’s `year` and `description` text.
+This is your future vehicle name's translation key.
 
-example:
+1. Select it in the tree view on the left
+2. In the panel on the right, configure its options:
+   * `femaleVariant``:` This is the actual display string - in this case, your vehicle's name. Put something like `Mini Cooper S`.
+   * `maleVariant:` Leave this empty - `femaleVariant` is the default, and cars don't use it anyway.
+   * `primaryKey:`  Leave this at `0`, it will be autogenerated later
+   * `secondaryKey:` This will be referenced by your `.yaml` and must be globally unique. Give it a name that no other modder will pick, for example `boe6_mini_cooper_name` .
+
+#### Creating the other required entries
+
+We need two more entries. To create them, we'll simply duplicate the existing entry two times:
+
+<figure><img src="../../../.gitbook/assets/boe6_1_duplicate_entries.png" alt=""><figcaption></figcaption></figure>
+
+Configure the new entries as follows:
 
 **2nd:**
 
@@ -142,43 +195,72 @@ example:
 
 `femaleVarient: 2003`
 
-\\
+Your final `.json` should look like this:
 
-Final `.json` should look similar this:
+<figure><img src="../../../.gitbook/assets/boe6_1_final_json.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image40.png" alt=""><figcaption></figcaption></figure>
+### Double-check your .yaml
 
-Return to your `.yaml` file and make sure your vehicle’s “`displayName`” is your `secondaryKey` entry. See earlier `.yaml` screenshot.
+Return to your `.yaml` file and make sure your vehicle’s `displayName` is your `secondaryKey` entry (see [#create-a-new-tweak-entry](create-base-files.md#create-a-new-tweak-entry "mention")).
 
-At this point you can test your mod to see if it loads in-game correctly. In general, you’ll want to launch the game and test as often as you can. I recommend changing one file at a time and testing each along the way to easily diagnose issues.
+## Test. Your. Mod.
 
-In **wKit**, at the end of the same line as “**New File**”, there is an “**Install**” button. For ease of testing, click the down arrow to show options and switch to “**Install and Launch**”. Now press “**Install and Launch**” to test the mod in-game.
+You haven't done anything but created a new **record**, but you should be able to spawn it.
 
-Once in-game, you can use the [**Cyber Engine Tweaks**](https://www.nexusmods.com/cyberpunk2077/mods/107) console to add the vehicle to your inventory. Swap “`boe6_mini_cooper`” for your vehicle’s Tweak Record.
+### Why we do this
 
-Command Example:
+Repeatedly testing your mod will let you notice the moment you break something. It's much faster to find the mistake you made in one step of the tutorial than to check an entire subsection.
 
-```
-Game.GetVehicleSystem():EnablePlayerVehicle('Vehicle.boe6_mini_cooper', true, false)
-```
+For that reason, **repeat this often** (I even do it after changing a single file sometimes).
 
-It should show up as “**TEST**” in the vehicle call menu, as we haven't linked the json file to our mod yet. Once you call it, it should drive up with the model you are mirroring.
+### How we do this
 
-{% hint style="info" %}
-If at any point the result is not the one expected you can find the TweakXL log in \`(Game Dir)\red4ext\plugins\TweakXL\` and the ArchiveXL log in \`(Game Dir)\red4ext\plugins\ArchiveXL\`. It may not tell you what's wrong in great detail, but it will help you narrow down and fix the issue, or verify that there is none.
+Complete the following steps:
+
+1. In the Wolvenkit Toolbar, click the [Install and Launch](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) button
+2. Load a save where your car wasn't added to the player yet
+3.  Take the command below, and swap boe6\_mini\_cooper for the name of your vehicle:\
+
+
+    ```
+    Game.GetVehicleSystem():EnablePlayerVehicle('Vehicle.boe6_mini_cooper', true, false)
+    ```
+4. Use the [**Cyber Engine Tweaks**](https://www.nexusmods.com/cyberpunk2077/mods/107) console to run the command
+5. Call the vehicle via the summon menu. (It should show up as TEST)
+6. The vehicle should drive up to you with the model specified under `$base`
+
+{% hint style="success" %}
+If your test was successful, you should create a backup of the entire Wolvenkit Project. You don't need to keep all those backups, but they might save you hours of work!
 {% endhint %}
 
-If the command does not add your vehicle to the vehicle call list, check if the `Tweak Records` have been saved correctly. To do this, open the **TweakDB Editor** in the **CET** overlay. Search for your vehicle’s name, and look for the `Vehicle.name` Record.
+### Troubleshooting
 
-{% hint style="info" %}
-Note that the vehicle’s scan details will not be correct yet. The vehicle model and description will display as loading.
-{% endhint %}
+#### The car isn't working at all
 
-Grab the base vehicle's .ent file we found earlier (when doing tweaks). Add it to your Wolvenkit Project files.
+Here's what you can do:
 
-Move the source vehicle’s `.ent` file into your custom path. Copy the file’s new path and update your `.yaml` tweak record so `entityTemplatePath` is linking to that new path.
+* use [yamllint.com](https://www.yamllint.com/) to check your tweak file for syntax errors
+* check the TweakXL log under [`Game Directory`](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/)`\red4ext\plugins\TweakXL`&#x20;
+* check the ArchiveXL log under  [`Game Directory`](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/)`\red4ext\plugins\ArchiveXL`&#x20;
 
-Example:
+The log files won't give you much detail, but they help narrowing down the problem.
+
+#### The car isn't added to the vehicle call list
+
+Check if the Tweak Records have been saved correctly:
+
+* Open the CET overlay
+* Change to the TweakDB Editor
+* Search for your vehicle's name
+* Look for the `Vehicle.name` Record
+
+#### The car's scan details are wrong!
+
+Yes, we haven't hooked them up yet. Keep reading.
+
+## The root entity
+
+In the Asset Browser, find the base vehicle's .ent file from the [#what-do-these-tweaks-do](create-base-files.md#what-do-these-tweaks-do "mention") section, and add it to your Wolvenkit Project.
 
 ```yaml
 Vehicle.boe6_mini_cooper_red:
@@ -186,16 +268,10 @@ Vehicle.boe6_mini_cooper_red:
     appearanceName: boe6_mini_cooper_red
     displayName: boe6_mini_cooper_name
     player_audio_resource: v_car_mizutani_shion_nomad
-    entityTemplatePath: boe6\mini_cooper\v_sport2_porsche_911turbo__basic_01.ent
+    entityTemplatePath: base\vehicles\sport\v_sport2_porsche_911turbo__basic_01.ent
 ```
 
-Save the file, and test again by using the **Install and launch** button. Load a save from before you’ve used the summon command in **CET** console.
-
-Rename the `.ent` file and update the tweak in `.yaml`, like last step.
-
-Example:
-
-“`boe6\mini_cooper\boe6_mini_cooper_basic.ent`”
+Move it to your custom folder (see [#custompathing-your-files](create-base-files.md#custompathing-your-files "mention")). This should already update your `.yaml` file, but let's check just to be sure:
 
 ```yaml
 Vehicle.boe6_mini_cooper_red:
@@ -206,50 +282,61 @@ Vehicle.boe6_mini_cooper_red:
     entityTemplatePath: boe6\mini_cooper\boe6_mini_cooper_basic.ent
 ```
 
-Now we’ll clean up the `.ent` file. Open it in **wkit** by double clicking. Under “`RDTDataViewModel`”, open the “`appearances`” array.
-
-Find the appearance you’re currently mirroring and make note of it. Then select all the other appearances with ctrl+click, then right click and hit “**Delete Selection in Array/Buffer**”. This will leave you with one appearance. We’ll duplicate this later when we get to adding different paint colors.
-
-Edit the “`name`” value to edit the array item. In my case, I change it from “`porsche_911turbo__basic_johnny`” to “`boe6_mini_cooper_basic`”
-
-Also update your `.yaml` tweak to this for the `appearanceName` value.
-
-Save, **Install and Launch**, test that it still works.
-
-### Add the `.app` file
-
-{% hint style="info" %}
-This file contains your car's **components** for the individual appearances. You can read up about [appearance-.app-files](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files "mention") at the link.
+{% hint style="success" %}
+This is an excellent moment to test your mod.
 {% endhint %}
 
-Add the `.app` file to your project. Find it by navigating to the `appearanceResource` in your main appearance, which links to an `.app` file. Hit the yellow “**Add File to Mod**” button.
+### Remove game appearances
 
-You’ll want to clean the appearances from this file as well. In the `.ent` file, note the `appearanceName` value. Then look at the `.app` file for the matching item in the list. That is the appearance we want to keep. The other appearances can be deleted as you did with the `.ent` file.
+1. Open the .ent file in wkit by double-clicking
+2. Expand the `appearances` array in the tree view on the left
+3. Delete all but one appearance:&#x20;
+   1. Select the appearance you want to keep
+   2. Right-click to open the context menu
+   3. Press the Shift-key
+   4. Select "Delete all but Selection"
 
-Now we can edit the appearanceName to an appropriate value related to our car.
+We’ll duplicate this appearance later when we add different colors.
 
-Example:
+4. In the panel on the right, change the value for `name`  to your `appearanceName`  from your yaml file (`boe6_mini_cooper_red`)
+5. Test. Your. Mod.
 
-<figure><img src="../../../.gitbook/assets/image19 (1).png" alt=""><figcaption></figcaption></figure>
+## Add the `.app` file
 
-And update it in your `.app` file as well in the “`name`” value:
+This file contains your car's **components** for the individual appearances. You can (but don't have to) learn more about it under [appearance-.app-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/ "mention").
 
-<figure><img src="../../../.gitbook/assets/image80.png" alt=""><figcaption></figcaption></figure>
+1. In your `.ent` file's `appearance` on the left side, find the `appearanceResource` field
+2. Hit the yellow arrow on the right to add the file to your project
 
-Save and test. Get in the habit of testing often!
+<figure><img src="../../../.gitbook/assets/boe6_1_add_file_to_project.png" alt=""><figcaption></figcaption></figure>
 
-Notice the “`components`” list inside the appearance settings. These are the main parts of your vehicle, and all 3D model parts are referenced through here, with a `.mesh` file.
+### Clean appearances
 
-Move your `.app` file and rename it to a relevant name.\
-Example:
+The appearances in this file are picked based on the `appearanceName` field in your .ent file. If you are confused now, check the image below:
 
-“`boe6\mini_cooper\boe6_mini_cooper.app`”
+1. In the `.app` file
+   1. delete all appearances but one
+   2. rename the last appearance to whatever you want it to be (e.g. `red`)
+2. In the `.ent` file
+   1. change the appearanceName field so that it matches the name from the `.app`
 
-Update your `.ent` file so the `appearanceResource` value matches the new file name & path.
+<figure><img src="../../../.gitbook/assets/boe6_1_ent_app.png" alt=""><figcaption></figcaption></figure>
 
-Install & Test.
+3. Test. Your. Mod.
 
-### Finish setting up tweaks.
+Notice the `components` list inside the appearance settings. These are the main parts of your vehicle, and all 3D model parts are referenced through here, with a `.mesh` file.
+
+### Custompath your file
+
+Move your `.app` file and rename it to a relevant name, e.g. `boe6\mini_cooper\boe6_mini_cooper.app` .  See [#custompathing-your-files](create-base-files.md#custompathing-your-files "mention") for a reminder.
+
+If you have checked the box in the dialogue, then your .ent file will have updated automatically, but double-check it regardless.
+
+### Test your mod.
+
+## Finish setting up tweaks.
+
+### Add a brand icon
 
 We’ll start with adding a logo record for the vehicle’s brand/manufacturer.
 
@@ -262,8 +349,6 @@ UIIcon.Mini_Logo:
     atlasPartName: porsche
     atlasResourcePath: base\gameplay\gui\common\icons\weapons_manufacturers.inkatlas
 ```
-
-\\
 
 Copy the part name and path from your mirror car’s `UIIcon_Record` Tweak, which you can find in the **tweak browser** in **wKit**:
 
@@ -294,7 +379,7 @@ Vehicle.boe6_mini_cooper_data:
 The LocKey# references your entry in the `.json` file.
 {% endhint %}
 
-
+### Add a UI icon for the vehicle menu
 
 Now we create a `UIIcon Record` for the vehicle’s image in the call menu, titled `vehicle_icon` or similar.\
 Example:
@@ -320,7 +405,7 @@ Example:
     vehicleUIData: Vehicle.boe6_mini_cooper_data
 ```
 
-
+### Customize Virtual Car Dealer
 
 Add **Virtual Car Dealer** Tweak Values. Main settings are `dealerPrice`, `dealerCred`, `dealerAtlasPath`, and `dealerPartName`. We’ll just do the first 2 for now until we create the images for **Virtual Car Dealer**. These are added to you main vehicle.\
 Example:
@@ -387,14 +472,19 @@ Vehicle.vehicle_list.list:
 
 
 
-### Add the `.xl` file
+## Add the `.xl` file
 
-Now we will make our `.xl` file.
+Now we will create the `.xl` file, which lets the game know to use our `.json` file as localization.
 
-This file lets the game know to use our `.json` file as localization.
+{% hint style="info" %}
+You should call the file `your_mod_name.archive.xl`,  so that it will stay close to the packed mod.
+{% endhint %}
 
-Create a new file in **wkit** as done before. Under the **ArchiveXL** category, select “**ArchiveXL file**”. It should automatically open in your default text editor. Edit it with just 3 lines, a file structure for the `.json` file.\
-Example:
+Create a new file in **wkit** as done before. Under the **ArchiveXL** category, select “**ArchiveXL file**”.&#x20;
+
+This file will be in your project's resources section, and should automatically open in your default text editor.&#x20;
+
+Put the following content to load your translation file:
 
 ```json
 localization:
@@ -402,15 +492,22 @@ localization:
         en-us: boe6\mini_copper\boe6_mini_cooper.json
 ```
 
-Save and test.
+### Save and test
 
 The vehicle’s call menu should now show the vehicle’s name as specified in the `.json`, as well as the description info text.
-
-Rename your `.xl` file to something appropriate. Files can cause issues if you use the same file name as another mod. Example:
-
-“`resources\boe6_mini_cooper.xl`”
 
 {% hint style="info" %}
 Note that any/all `.xl` and `.yaml` files in the resources folder of your project will automatically load in-game.
 {% endhint %}
 
+## To the next step!
+
+In this step, we have&#x20;
+
+* added a new car to the game by adding a tweak record
+* added a new car manufacturer to the game by adding a tweak record
+* made sure that our new car uses our own custom files and is independent from other mods
+* added it to Virtual Car Dealer
+* added custom UI icons
+
+Now we'll proceed with adding a custom 3d model. Read on under [3d-body-modeling-import-export-meshes.md](3d-body-modeling-import-export-meshes.md "mention")

@@ -95,14 +95,13 @@
   * [NPCs and their files](for-mod-creators-theory/references-lists-and-overviews/people/README.md)
     * [Finding files: AMM NPCs](for-mod-creators-theory/references-lists-and-overviews/people/finding-files-amm-npcs.md)
   * [References: Vehicles](for-mod-creators-theory/references-lists-and-overviews/vehicles/README.md)
-    * [Vehicle .ent paths](for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicles.md)
-    * [Vehicle Drive Model Data Record](for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicle-drive-model-data-record.md)
-    * [Cheat Sheet: Vehicle Records](for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicle-record.md)
-    * [Archive](for-mod-creators-theory/references-lists-and-overviews/vehicles/archive/README.md)
+    * [Cheat Sheet: Vehicles](for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicles.md)
+    * [Cheat Sheet: Vehicle Properties](for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicle-drive-model-data-record.md)
+    * [Cheat Sheet: Vehicle Root Record](for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicle-record.md)
+    * [Cheat Sheet: Vehicles - Archive](for-mod-creators-theory/references-lists-and-overviews/vehicles/archive/README.md)
       * [Archived: Appearances Mappings](for-mod-creators-theory/references-lists-and-overviews/vehicles/archive/appearances-mappings.md)
       * [Archived: Vehicle Filename Parsing](for-mod-creators-theory/references-lists-and-overviews/vehicles/archive/vehicle-filename-parsing.md)
       * [Archived: Parts & Parts Categories](for-mod-creators-theory/references-lists-and-overviews/vehicles/archive/parts-and-parts-categories.md)
-    * [Cheat Sheat Vehicles: TweakDB](for-mod-creators-theory/references-lists-and-overviews/vehicles/tweakdb.md)
   * [Reference: World Sectors](for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/README.md)
     * [Reference: MinimapDataNodes](for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/reference-minimapdatanodes.md)
     * [Finding Locations](for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/places.md)
@@ -242,6 +241,7 @@
   * [Creating Cyberware using TweakXL](for-mod-creators-theory/tweaks/creating-cyberware-using-tweakxl.md)
   * [Stat Modifiers](for-mod-creators-theory/tweaks/stat-modifiers.md)
   * [Audio in TweakDB](for-mod-creators-theory/tweaks/audio-in-tweakdb.md)
+  * [Tweaks: Vehicles](for-mod-creators-theory/tweaks/tweaks-vehicles.md)
 
 ## Modding Guides
 

@@ -1,8 +1,6 @@
 # Archived: Vehicle Filename Parsing
 
-{% hint style="danger" %}
-This page is archived. Its contents are no longer relevant.
-{% endhint %}
+<figure><img src="../../../../.gitbook/assets/warning_outdated_info.png" alt=""><figcaption></figcaption></figure>
 
 Referenced from `base\appearances_mappings.json`, `base\vehicles\vehicle_filename_parsing.json` contains a regex string is defined that outlines the allowable file names for .ent files ([play around with this regex here](https://regex101.com/r/LYUZLN/1/)):
 

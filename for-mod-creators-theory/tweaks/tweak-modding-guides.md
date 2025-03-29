@@ -35,7 +35,7 @@ Adding items is a somewhat involved process. Regardless of what you want to do, 
 
 * [#create-a-new-car](tweak-modding-guides.md#create-a-new-car "mention")
 * [vehicle-record.md](../references-lists-and-overviews/vehicles/vehicle-record.md "mention")
-* [tweakdb.md](../references-lists-and-overviews/vehicles/tweakdb.md "mention")
+* [Broken link](broken-reference "mention")
 
 ## HUD - UI
 

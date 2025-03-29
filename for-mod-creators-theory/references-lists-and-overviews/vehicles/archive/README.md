@@ -1,8 +1,6 @@
-# Archive
+# Cheat Sheet: Vehicles - Archive
 
-{% hint style="danger" %}
-This page is archived. Its contents are no longer relevant.
-{% endhint %}
+<figure><img src="../../../../.gitbook/assets/warning_outdated_info.png" alt=""><figcaption></figcaption></figure>
 
 This section contains an overview of things that you might encounter while modding vehicles. For a full list of sub-pages, please check the link tree in the left-hand menu.&#x20;
 

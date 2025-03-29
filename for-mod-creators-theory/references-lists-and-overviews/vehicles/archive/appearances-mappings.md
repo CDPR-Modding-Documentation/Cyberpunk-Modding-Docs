@@ -1,8 +1,6 @@
 # Archived: Appearances Mappings
 
-{% hint style="danger" %}
-This page is archived. Its contents are no longer relevant.
-{% endhint %}
+<figure><img src="../../../../.gitbook/assets/warning_outdated_info.png" alt=""><figcaption></figcaption></figure>
 
 In `base\appearance_mappings.json`, entity types have their resources defined. The vehicle definition is below:
 
