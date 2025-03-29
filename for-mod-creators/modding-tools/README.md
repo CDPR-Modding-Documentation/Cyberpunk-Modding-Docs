@@ -2,7 +2,7 @@
 description: Frequently used tools for modding workflows
 ---
 
-# 🛠 Modding Tools
+# 🛠️ Modding Tools
 
 ## Editors
 
@@ -11,7 +11,7 @@ description: Frequently used tools for modding workflows
 The open source tool we all know and love, which is getting better with every bug you file.
 
 {% content-ref url="https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/" %}
-[WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/)
+[WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/)
 {% endcontent-ref %}
 
 ### Notepad++

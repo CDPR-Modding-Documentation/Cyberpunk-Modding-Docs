@@ -33,7 +33,7 @@
 
 ## For Mod Creators: Theory
 
-* [🛠️ Modding Tools](for-mod-creators-theory/modding-tools/README.md)
+* [🛠️ Modding Tools](for-mod-creators/modding-tools/README.md)
   * [WolvenKit](for-mod-creators-theory/modding-tools/wolvenkit.md)
   * [Wolvenkit Blender IO Suite](for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/README.md)
     * [Installing the Wolvenkit Blender Plugin](for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/README.md)
@@ -358,7 +358,7 @@
   * [Main Menu and Pause Menu editing](modding-guides/custom-icons-and-ui/main-menu-and-pause-menu-editing.md)
   * [Your own HUD icons](modding-guides/custom-icons-and-ui/your-own-hud-icons.md)
   * [Interface modding](modding-guides/custom-icons-and-ui/interface-modding.md)
-* [🚘 Vehicles](modding-guides/vehicles/README.md)
+* [🚘 Vehicles](for-mod-creators/modding-guides/vehicles/README.md)
   * [🚗 Boe6's Guide: basic car from A to Z](modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/README.md)
     * [Boe6's vehicles: What you need to know](modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/precursor-information-to-know.md)
     * [🗃️ Boe6's vehicles: Create base files](modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/create-base-files.md)
@@ -373,7 +373,7 @@
     * [▶️ Boe6's vehicles: .inkwidget and .inkstyle - Animated UI](modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/boe6s-vehicles-.inkwidget-and-.inkstyle-animated-ui.md)
     * [🎨 Boe6's vehicles: Paint colors & Varients](modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/boe6s-vehicles-paint-colors-and-varients.md)
     * [Boe6's vehicles: Extra Details](modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/boe6s-vehicles-extra-details.md)
-  * [🪟 Windows & Doors opening + MountedWeapons clue](modding-guides/vehicles/windows-and-doors-opening-+-mountedweapons-clue.md)
+  * [🪟 Windows & Doors opening + MountedWeapons clue](for-mod-creators/modding-guides/vehicles/windows-and-doors-opening-+-mountedweapons-clue.md)
   * [Fix Improper Interior Bounds](modding-guides/vehicles/creating_cutout_and_fixing_light_channel.md)
   * [💡 Interior lights](modding-guides/vehicles/interior-lights.md)
   * [🌈 CrystalCoat™](modding-guides/vehicles/crystalcoat-tm.md)
@@ -399,6 +399,7 @@
     * [vehicle taillight](modding-guides/vehicles/problems-and-resolution/vehicle-taillight.md)
     * [Hand position on steering wheel](modding-guides/vehicles/problems-and-resolution/hand-position-on-steering-wheel.md)
   * [Chassis Modifications](modding-guides/vehicles/chassis-modifications.md)
+  * [Weaponizing vehicles](modding-guides/vehicles/weaponizing-vehicles.md)
 * [🌐 World Editing](modding-guides/world-editing/README.md)
   * [Object Spawner](modding-guides/world-editing/object-spawner/README.md)
     * [Usage and Features](modding-guides/world-editing/object-spawner/usage-and-features.md)
