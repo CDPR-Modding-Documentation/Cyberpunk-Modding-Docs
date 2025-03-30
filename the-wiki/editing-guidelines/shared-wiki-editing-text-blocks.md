@@ -9,3 +9,8 @@ This page contains **reusable content**! Editing anything below will change it a
 
 ## This page is a stub
 
+{% include "../../.gitbook/includes/this-page-is-a-stub.md" %}
+
+## Yaml editing warning
+
+{% include "../../.gitbook/includes/yaml-editing-warning.md" %}

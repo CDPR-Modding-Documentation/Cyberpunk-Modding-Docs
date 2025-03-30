@@ -33,7 +33,7 @@ This enables the AMM light panel in the target tools.
 Not all light components actually support colour and intensity changes. Candlelight, for example, does not.
 {% endhint %}
 
-## Placing your light components
+## Placing lights and effects
 
 Your lights will be anywhere relative to your prop. How can you position them relative to the actual object?
 
