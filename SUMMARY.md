@@ -330,7 +330,7 @@
       * [Updating Photomode Pose Packs for 2.2](modding-guides/animations/animations/archivexl-adding-photo-mode-poses/updating-photomode-pose-packs-for-2.2.md)
     * [Removing Foot Snap IK from Poses/Animations](modding-guides/animations/animations/removing-foot-snap-ik-from-poses-animations.md)
     * [Scaling Poses/Animations](modding-guides/animations/animations/scaling-poses-animations.md)
-    * [CP77 Tutorial Retargeting Animations in Blender](modding-guides/animations/animations/cp77-tutorial-retargeting-animations-in-blender.md)
+    * [Retargeting Poses/Animations](modding-guides/animations/animations/retargeting-poses-animations.md)
     * [Play animations with workspots](modding-guides/animations/animations/abusing-workspots.md)
     * [Retargeting Game Animations for different RIGs - Guide by PinkyDude](https://docs.google.com/document/d/1nHPQvkK6ijwb8iQ8y1X8CBG-wnNUCTYCjrdUCGMenW4/edit?usp=drive_link)
     * [AMM: Collab anims/poses](modding-guides/animations/animations/amm-collab-anims-poses.md)
