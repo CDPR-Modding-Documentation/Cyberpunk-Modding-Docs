@@ -1,5 +1,5 @@
 ---
-description: This guide explains how to add variants to your sectors, using Object Spawner
+description: This guide explains how to add variants to your sectors, using World Builder
 ---
 
 # Creating Sector Variants
@@ -19,16 +19,16 @@ Further information on how sector variants work under the hood, and how to manua
 
 ### Tools
 
-* [Object Spawner](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases)
+* [World Builder](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases)
 * [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl)
 * [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.15.0 or newer)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of Object Spawner import script)
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of World Builder import script)
 
 ### Knowledge
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
+  * Using World Builder (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
 
 ## General Setup
 

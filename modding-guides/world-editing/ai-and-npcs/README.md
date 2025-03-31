@@ -1,7 +1,7 @@
 ---
 description: >-
   This section contains all things related to NPCs and how to place them in the
-  world using Object Spawner
+  world using World Builder
 icon: users
 ---
 

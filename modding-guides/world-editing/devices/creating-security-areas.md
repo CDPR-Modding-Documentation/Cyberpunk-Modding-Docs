@@ -1,7 +1,5 @@
 ---
-description: >-
-  This guide covers the process of setting up security areas using Object
-  Spawner
+description: This guide covers the process of setting up security areas using World Builder
 ---
 
 # Creating Security Areas
@@ -16,16 +14,16 @@ description: >-
 
 ### Tools
 
-* [Object Spawner](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.97 or newer)
+* [World Builder](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.97 or newer)
 * [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl)
 * [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.15.0 or newer)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of Object Spawner import script)
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of World Builder import script)
 
 ### Knowledge
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
+  * Using World Builder (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
 
 ## Spawning the nodes
 
@@ -34,7 +32,7 @@ description: >-
   * A security area, defining the area outline and type
 
 {% hint style="warning" %}
-Make sure to spawn both as `Device`(`Entity -> Device` in Object Spawner)
+Make sure to spawn both as `Device`(`Entity -> Device` in World Builder)
 {% endhint %}
 
 * Security system:
@@ -91,4 +89,4 @@ Ensure that the `Dummy Area` is in the exact same position as our security area 
   * Both have unique NodeRefs
   * Security system has a device connection to the security area
   * Dummy outline, copy pasted the outline into the security area
-* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](../object-spawner/exporting-from-object-spawner.md)
+* Now simply export your group from World Builder, and import into WKit using the World Builder [import feature](../object-spawner/exporting-from-object-spawner.md)

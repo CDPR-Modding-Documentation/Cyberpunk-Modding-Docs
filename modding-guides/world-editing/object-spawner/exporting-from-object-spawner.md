@@ -1,6 +1,6 @@
 ---
 description: >-
-  This guide explains how to go from an Object Spawner build to a native world
+  This guide explains how to go from an World Builder build to a native world
   edit
 ---
 
@@ -8,8 +8,8 @@ description: >-
 
 Usage
 
-* When building something using Object Spawner, it will use an intermediary format optimized for editing
-* In order to go from that editing focused format to the final native world edit, Object Spawner provides a workflow to make this as easy as possible
+* When building something using World Builder, it will use an intermediary format optimized for editing
+* In order to go from that editing focused format to the final native world edit, World Builder provides a workflow to make this as easy as possible
 
 {% hint style="info" %}
 If you just want to quickly convert your project to a native edit, jump to the [Export ](exporting-from-object-spawner.md#exporting)section. It is highly recommended to read the previous sections on the theory and things to consider tho.
@@ -19,10 +19,10 @@ If you just want to quickly convert your project to a native edit, jump to the [
 
 ### Tools
 
-* [Object Spawner](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases)
+* [World Builder](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases)
 * [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl)
 * [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.15.0 or newer)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of Object Spawner import script)
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of World Builder import script)
 
 ### Knowledge
 
@@ -32,10 +32,10 @@ If you just want to quickly convert your project to a native edit, jump to the [
 
 ## Sectors and Groups
 
-* While building in Object Spawner, you are able to save things on a root-group level
+* While building in World Builder, you are able to save things on a root-group level
   * This means you can save any group that is not contained within another group
 * The game operates on sectors, which objects are assigned to what sector is an automatic process there
-  * For the Object Spawner workflow, **each group you saved can get turned into a sector**
+  * For the World Builder workflow, **each group you saved can get turned into a sector**
 * A finished mod can consist of multiple root-groups / sectors
 
 ### Streaming Ranges
@@ -66,7 +66,7 @@ That way you make sure that only the parts of your build that are currently clos
 
 ## Exporting
 
-### Step 1: Export from Object Spawner
+### Step 1: Export from World Builder
 
 1. Start by going to the "Saved" tab, and adding all the groups you want to be part of your finished mod, by using the "Add to export" button of those groups
 2. Next, head over to the "Export" tab

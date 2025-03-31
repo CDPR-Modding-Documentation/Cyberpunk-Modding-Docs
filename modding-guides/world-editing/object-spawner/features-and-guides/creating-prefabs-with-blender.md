@@ -18,7 +18,7 @@ Created: Mar 15 2025 by  [Simarilius](https://app.gitbook.com/u/G2MqNkfgTlQ1R3G4
 
 I'm too lazy to always build every thing from scratch, so I like to optimise my workflow by spending loads of time writing a script to do stuff later. Lucky for you I share them so you get to be optimised too.
 
-Theres a script included with the Blender addon that lets us export the current selection from an imported sector to an OS group json. This can then be turned into a prefab which you can reuse and share. No more hunting for bed + pillows + duvet etc. Just find one you like in game, use RHT to get the sector names, import them to blender and ~~steal~~  borrow it, complete with all the little extras that make it feel polished.
+Theres a script included with the Blender addon that lets us export the current selection from an imported sector to an WB group json. This can then be turned into a prefab which you can reuse and share. No more hunting for bed + pillows + duvet etc. Just find one you like in game, use RHT to get the sector names, import them to blender and ~~steal~~  borrow it, complete with all the little extras that make it feel polished.
 
 ## Find some sectors
 
@@ -46,7 +46,7 @@ Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\entSpawner\data\objects
 
 Load the game up, bring up your CET console etc and in the object spawner window, switch to the saved tab. Your jsons should be in the list, and if you click on one you can hit load.
 
-At this point OS loads them at the position they were defined at, which is wherever we borrowed them from.&#x20;
+At this point WB loads them at the position they were defined at, which is wherever we borrowed them from.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/world_editing_prefab_group.png" alt=""><figcaption><p>Loads of borrowed groups</p></figcaption></figure>
 

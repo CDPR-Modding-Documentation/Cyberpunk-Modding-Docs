@@ -24,15 +24,15 @@ Not adhering to a similar structure as the game-world can lead to performance is
   * Each node additionally has its [own streaming-distance](exporting-from-object-spawner.md#streaming-ranges), defining at what distance it shows
 
 {% hint style="info" %}
-Sector extents can be configured during the [export](exporting-from-object-spawner.md) process from OS
+Sector extents can be configured during the [export](exporting-from-object-spawner.md) process from WB
 
 Each node's own streaming-distance can be controlled under it's "World Node" header
 {% endhint %}
 
-## Applying structure to OS
+## Applying structure to WB
 
 {% hint style="success" %}
-A _root group_ in OS is a group which is not part of another group, meaning it can be saved.
+A _root group_ in WB is a group which is not part of another group, meaning it can be saved.
 
 Each root group will become it's own streaming sector during export.
 {% endhint %}

@@ -1,7 +1,7 @@
 ---
 description: >-
   This is a collection of guides explaining how to setup specific devices using
-  Object Spawner
+  World Builder
 icon: desktop
 ---
 

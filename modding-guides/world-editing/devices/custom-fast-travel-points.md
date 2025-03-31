@@ -1,7 +1,7 @@
 ---
 description: >-
   This guide will describe the steps necessary to add new native fast travel
-  points, using Object Spawner
+  points, using World Builder
 ---
 
 # Custom fast travel points
@@ -10,18 +10,18 @@ description: >-
 
 ### Tools
 
-* [Object Spawner](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.8. or newer)
+* [World Builder](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.8. or newer)
 * [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl)
 * [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.14.1 or newer)
 * [TweakXL](https://github.com/psiberx/cp2077-tweak-xl)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of Object Spawner import script)
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of World Builder import script)
 
 ### Knowledge
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
   * Creating tweaks using TweakXL (`.yaml`files)
-  * Using Object Spawner (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
+  * Using World Builder (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
 
 {% hint style="warning" %}
 Any NodeRef names, and custom TweakDB record names in this guide are _examples_, do not use the same ones as in the guide.
@@ -51,12 +51,12 @@ FastTravelPoints.customPoint:
 
 ### FT Point
 
-* We will use `base\gameplay\devices\fast_travel\data_term_1.ent`, you can find it under `Entity -> Entity Template`in Object Spawner
+* We will use `base\gameplay\devices\fast_travel\data_term_1.ent`, you can find it under `Entity -> Entity Template`in World Builder
 * Optionally choose a appearance
 
 ### Static Marker
 
-* Spawn a static marker, you can find it under `Meta -> Static Marker`in Object Spawner
+* Spawn a static marker, you can find it under `Meta -> Static Marker`in World Builder
 * Place it in a fitting spot in front of the terminal
 *   Assign a custom NodeRef to the static marker:
 
@@ -82,15 +82,15 @@ FastTravelPoints.customPoint:
 
 * You should now have the following:
   * A `.yaml`tweak file containing the custom `FastTravelPoints`record
-* An Object Spawner group containing:
+* An World Builder group containing:
   * The fast travel terminal entity node, with entity instance data linking it to the marker and the custom record
   * The marker node, with a custom NodeRef assigned
 
 {% hint style="warning" %}
-Make sure that the category of the sector containing the marker and terminal is set to `AlwaysLoaded` during export from Object Spawner
+Make sure that the category of the sector containing the marker and terminal is set to `AlwaysLoaded` during export from World Builder
 {% endhint %}
 
-* Now simply export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](../object-spawner/exporting-from-object-spawner.md)
+* Now simply export your group from World Builder, and import into WKit using the World Builder [import feature](../object-spawner/exporting-from-object-spawner.md)
 
 {% hint style="warning" %}
 If you make any changes to the FT point, after having already loaded the game with your custom point installed, make sure to use a fresh save (A save without the custom point saved)

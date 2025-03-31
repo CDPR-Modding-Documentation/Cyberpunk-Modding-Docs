@@ -1,7 +1,7 @@
 ---
 description: >-
   This guide describes what communities are, what they are used for, and how to
-  set them up using Object Spawner
+  set them up using World Builder
 ---
 
 # Creating Communities
@@ -18,16 +18,16 @@ description: >-
 
 ### Tools
 
-* [Object Spawner](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.91 or newer)
+* [World Builder](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.91 or newer)
 * [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl)
 * [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.15.0 or newer)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of Object Spawner import script)
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of World Builder import script)
 
 ### Knowledge
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
+  * Using World Builder (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
   * Know how to place `AISpot`'s, see the [corresponding page](placing-aispot-nodes.md)
 
 ## General Setup
@@ -134,4 +134,4 @@ You can right-click any entry/phase/period, to delete or duplicate it
 
 ## Finishing up
 
-* In order for the community to be functional, export your group from Object Spawner, and import into WKit using the Object Spawner [import feature](../object-spawner/exporting-from-object-spawner.md)
+* In order for the community to be functional, export your group from World Builder, and import into WKit using the World Builder [import feature](../object-spawner/exporting-from-object-spawner.md)

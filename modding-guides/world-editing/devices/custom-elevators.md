@@ -1,7 +1,7 @@
 ---
 description: >-
-  This guide will describe the steps necessary to add new native elevator, using
-  Object Spawner
+  This guide will describe the steps necessary to add anew native elevator,
+  using World Builder
 ---
 
 # Custom elevators
@@ -10,16 +10,16 @@ description: >-
 
 ### Tools
 
-* [Object Spawner](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.8. or newer)
+* [World Builder](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.8. or newer)
 * [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl) (1.20 or newer)
 * [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.14.1 or newer)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of Object Spawner import script)
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of World Builder import script)
 
 ### Knowledge
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
+  * Using World Builder (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
 
 ## Spawning nodes
 
@@ -36,7 +36,7 @@ description: >-
 ### Spawning Devices
 
 {% hint style="warning" %}
-Make sure to spawn the elevator and floor terminals as `Device`(`Entity -> Device` in Object Spawner)
+Make sure to spawn the elevator and floor terminals as `Device`(`Entity -> Device` in World Builder)
 {% endhint %}
 
 * For the elevator, we will use `base\gameplay\devices\elevators\megabuilding_elevator\megabuilding_lift_1.ent`
@@ -46,7 +46,7 @@ Make sure to spawn the elevator and floor terminals as `Device`(`Entity -> Devic
 
 ### Spawning Markers
 
-* For the markers, select `Meta -> Static Marker`in Object Spawner
+* For the markers, select `Meta -> Static Marker`in World Builder
 * Spawn two markers
 * In order to properly position them, do as follows for each marker / floor:
   * Move the elevator device spawned earlier to the position you want it to stop in

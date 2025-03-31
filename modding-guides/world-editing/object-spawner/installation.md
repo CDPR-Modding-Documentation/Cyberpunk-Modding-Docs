@@ -1,5 +1,5 @@
 ---
-description: How to install Object Spawner
+description: How to install World Builder
 ---
 
 # Installation
@@ -20,7 +20,7 @@ Make sure to always keep the mod and it's dependencies up to date
 
 ## Download
 
-* Next, download Object Spawner:
+* Next, download World Builder:
   * Nexus Page
   * [GitHub](https://github.com/justarandomguyintheinternet/CP77_entSpawner)
 

@@ -1,7 +1,7 @@
 ---
 description: >-
   This guide will describe the steps necessary to setup an area outline, and
-  link it to an area node, using Object Spawner
+  link it to an area node, using World Builder
 ---
 
 # Creating Area Nodes
@@ -22,16 +22,16 @@ description: >-
 
 ### Tools
 
-* [Object Spawner](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.9. or newer)
+* [World Builder](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.9. or newer)
 * [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl)
 * [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.14.1 or newer)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of Object Spawner import script)
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of World Builder import script)
 
 ### Knowledge
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
+  * Using World Builder (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
 
 ## General setup
 
@@ -48,7 +48,7 @@ description: >-
 * An outline consists of a group containing at least 3 Outline Markers
   * Ideally, the group contains only the markers and nothing else
   * The outline is only useable within the same root group
-* Select `Area -> Outline Marker`in Object Spawner, as the spawn category
+* Select `Area -> Outline Marker`in World Builder, as the spawn category
 * Spawn the markers, one by one (Make sure you put them in the correct group, e.g. by selecting the group in the "Spawn New" tab)
 * The markers will connect in the order in which they are within the group
 * To insert a marker in the middle, simply duplicate the closest marker (`CTRL-D`)

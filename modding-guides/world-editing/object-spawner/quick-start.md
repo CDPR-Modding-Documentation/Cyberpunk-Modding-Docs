@@ -10,9 +10,9 @@ This example leaves out a lot of features and details
 
 ## About this guide
 
-* This guide requires that you have [installed OS](installation.md)
+* This guide requires that you have [installed WB](installation.md)
 * It will try and explain how to do a very simple build, incorporating the basics you need to know
-* It assumes you know how to open the CET overlay and find the main "Object Spawner" window
+* It assumes you know how to open the CET overlay and find the main "World Builder" window
 
 ## Spawning things
 

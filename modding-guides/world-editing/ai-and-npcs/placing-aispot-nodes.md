@@ -1,7 +1,7 @@
 ---
 description: >-
-  This page briefly explains how to place and preview AISpot Nodes, using Object
-  Spawner
+  This page briefly explains how to place and preview AISpot Nodes, using World
+  Builder
 ---
 
 # Placing AISpot Nodes
@@ -19,16 +19,16 @@ This guide only explains how to place AISpot Nodes, for them to be actually be u
 
 ### Tools
 
-* [Object Spawner](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.91 or newer)
+* [World Builder](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.91 or newer)
 * [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl)
 * [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.15.0 or newer)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of Object Spawner import script)
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of World Builder import script)
 
 ### Knowledge
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using Object Spawner (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
+  * Using World Builder (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
 
 ## Spawning AISpots
 
@@ -36,7 +36,7 @@ This guide only explains how to place AISpot Nodes, for them to be actually be u
 You **must** assign a unique NodeRef to each AISpot, in order for it to be usable
 {% endhint %}
 
-* In order to spawn a new AISpot, select the corresponding spawn category in Object Spawner:
+* In order to spawn a new AISpot, select the corresponding spawn category in World Builder:
   * `AI -> AI Spot`
 * When you spawn an AISpot, it will by default use Judy to preview the animation
   * This may not always work (Judy will just stand there), since not all workspots support all body rigs
@@ -49,7 +49,7 @@ You **must** assign a unique NodeRef to each AISpot, in order for it to be usabl
 <figure><img src="../../../.gitbook/assets/aiSpotSupportedRigs" alt="" width="301"><figcaption><p>Example AI Spot, and its workspot's supported rigs</p></figcaption></figure>
 
 * Here you can also change whether you want a NPC to preview the spot, and also which NPC should do so
-  * A list of all NPC records can be found in Object Spawner `Entity -> Record` (Search for `Character.`)
+  * A list of all NPC records can be found in World Builder `Entity -> Record` (Search for `Character.`)
 * Additionally, you can change the speed of the animation during the preview
   * This is helpful since each time you move the spot, the animation will restart
 

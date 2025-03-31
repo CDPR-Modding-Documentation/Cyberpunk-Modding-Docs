@@ -41,12 +41,12 @@ AMM props are just entity files (`.ent` ). The only difference is that when usin
 
 ## Cache Exclusions
 
-* OS caches a lot of data, including the list of appearances an entity / mesh has
+* WB caches a lot of data, including the list of appearances an entity / mesh has
 * This can lead to issues if you e.g. spawn a custom entity before adding custom appearances, then spawn it after you've made changes to it in WolvenKit
   * Since the list of appearances is cached, it will be empty even after adding apps to your `.ent`
 * In order to avoid caching you can add a cache exclusion in the settings:
 
-<figure><img src="../../../../.gitbook/assets/OSCacheExclusion" alt="" width="563"><figcaption><p>Now OS will always load the appearance and BBox information from the resource itself, instead of using cached data</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/OSCacheExclusion" alt="" width="563"><figcaption><p>Now WB will always load the appearance and BBox information from the resource itself, instead of using cached data</p></figcaption></figure>
 
 
 

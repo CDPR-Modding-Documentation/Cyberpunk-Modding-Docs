@@ -1,5 +1,5 @@
 ---
-description: This page covers all supported nodes / what each object type in OS does
+description: This page covers all supported nodes / what each object type in WB does
 ---
 
 # Supported nodes

@@ -401,7 +401,7 @@
   * [Weaponizing vehicles](modding-guides/vehicles/weaponizing-vehicles/README.md)
     * [🪟 Windows & Doors opening + MountedWeapons clue](modding-guides/vehicles/weaponizing-vehicles/windows-and-doors-opening-+-mountedweapons-clue.md)
 * [🌐 World Editing](modding-guides/world-editing/README.md)
-  * [Object Spawner](modding-guides/world-editing/object-spawner/README.md)
+  * [World Builder](modding-guides/world-editing/object-spawner/README.md)
     * [Usage and Features](modding-guides/world-editing/object-spawner/usage-and-features.md)
     * [Installation](modding-guides/world-editing/object-spawner/installation.md)
     * [Quick Start](modding-guides/world-editing/object-spawner/quick-start.md)

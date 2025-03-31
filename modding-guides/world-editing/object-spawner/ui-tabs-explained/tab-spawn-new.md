@@ -59,10 +59,10 @@ description: Everything there is know to effectively spawn anything you want
 
 ## RHT Integration
 
-* If you see an asset used in the gameworld, you can use [RHT](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/modding-tools/redhottools/rht-the-world-inspector) to send it directly to OS's search
+* If you see an asset used in the gameworld, you can use [RHT](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/modding-tools/redhottools/rht-the-world-inspector) to send it directly to WB's search
 * This is supported for: Entity, Entity Record, Device, Mesh, Decal, Particle, Effect, Static Sound, AI Spot and Reflection Probe
 
-<figure><img src="../../../../.gitbook/assets/OSRHT" alt="" width="375"><figcaption><p>You can send things you find with RHT directly to OS' search</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/OSRHT" alt="" width="375"><figcaption><p>You can send things you find with RHT directly to WB's search</p></figcaption></figure>
 
 ## AMM Props
 
