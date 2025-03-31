@@ -58,7 +58,7 @@ This is not an exhaustive list of all the features, but rather the biggest and m
 * [Drag and drop](ui-tabs-explained/tab-spawn-new.md#spawn-position-options) of objects directly into the world
 * [Scene view / hierarchy](ui-tabs-explained/tab-spawned.md#scene-view-controls) with loads of hotkeys, drag and drop and focus on organizing things
 * [Favorites and prefabs](ui-tabs-explained/tab-favorites-and-prefabs.md) system with custom categories and tags
-* [Randomized Nested Groups](features-and-guides/randomized-nested-groups.md)
+* [Randomized Nested Groups](randomized-nested-groups.md)
 * Modular UI
 * [AMM decor preset import](ui-tabs-explained/tab-saved.md#amm-preset-import)
 * [Drop to floor](ui-tabs-explained/tab-spawned.md#general-hotkeys) for groups and objects
