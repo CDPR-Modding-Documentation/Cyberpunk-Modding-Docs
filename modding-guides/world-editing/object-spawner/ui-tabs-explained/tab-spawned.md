@@ -41,6 +41,8 @@ Hovering the `I` icon gives you a list of all available shortcuts
   * `Esc` : Unselect all
 * To move elements:
   * Drag selected elements onto group element, to move into group
+* To reorder elements:
+  * While holding down `Shift`, drag selected elements into their new position
 
 <figure><img src="../../../../.gitbook/assets/OSOrdering" alt="" width="375"><figcaption><p>Moving and selecting, drag and drop</p></figcaption></figure>
 

@@ -417,6 +417,7 @@
       * [Tab: Export](modding-guides/world-editing/object-spawner/ui-tabs-explained/tab-export.md)
     * [Features and guides](modding-guides/world-editing/object-spawner/features-and-guides/README.md)
       * [Adding custom resources / props](modding-guides/world-editing/object-spawner/features-and-guides/adding-custom-resources-props.md)
+      * [Randomized Nested Groups](modding-guides/world-editing/object-spawner/features-and-guides/randomized-nested-groups.md)
       * [Creating Sector Variants](modding-guides/world-editing/object-spawner/features-and-guides/creating-sector-variants.md)
       * [Entity Instance Data](modding-guides/world-editing/object-spawner/features-and-guides/entity-instance-data.md)
       * [Creating Area Nodes](modding-guides/world-editing/object-spawner/features-and-guides/setting-area-outlines.md)
