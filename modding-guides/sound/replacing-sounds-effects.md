@@ -10,6 +10,10 @@ description: Guide on how to replace a sound effect using WolvenKit without REDm
 
 This guide covers how to export and import sound effects using WolvenKit by modifying opusinfo/opuspaks.&#x20;
 
+### Wait, this is not what I want!
+
+* if you'd rather convert sound effects into a useable format , go to [converting-.wem-to-.wav.md](converting-.wem-to-.wav.md "mention")
+
 {% hint style="danger" %}
 This method is not compatible with other mods that change sounds this way, that's why you should prefer using [REDmod for muting or adding sounds](../../for-mod-creators-theory/modding-tools/redmod/audio-modding.md) or [Audioware](https://www.nexusmods.com/cyberpunk2077/mods/12001) (custom audio backend).
 {% endhint %}
@@ -37,7 +41,7 @@ Once you have opusinfo in your project <mark style="color:red;">(1)</mark>, it s
 For a little more detailed walk-through see:
 
 {% content-ref url="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-sound-effects" %}
-[Import/Export: Sound effects](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-sound-effects)
+[Import/Export: Sound effects](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-sound-effects)
 {% endcontent-ref %}
 
 ### 3. Exporting it

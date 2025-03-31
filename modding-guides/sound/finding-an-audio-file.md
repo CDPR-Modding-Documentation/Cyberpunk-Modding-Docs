@@ -11,13 +11,17 @@ description: Small guide on how to find the in-game sound you're searching for.
 
 This guide explains how to use [CyberSoundDB](https://sounddb.redmodding.org), an open source web tool made by Zhincore (@zhincore on [the Discord](https://discord.gg/Epkq79kd96)).
 
+### Wait, this is not what I want!
+
+* if you'd rather convert sound effects into a useable format , go to [converting-.wem-to-.wav.md](converting-.wem-to-.wav.md "mention")
+
 ## Finding a sound effect or music
 
 In the [sound effects section of the website](https://sounddb.redmodding.org/sfx) you can search for sounds by events, tags or sound hash or using the filtering options. Once you find what you're searching for, open the detail window by clicking on the list item, there you can find where the files is located.
 
 Sounds inside `.opuspak` can be extracted using [WolvenKit's Export tool](replacing-sounds-effects.md#exporting-sfx).
 
-Sounds in a "Separate .wem file" can be simply found in [WolvenKit Asset Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/video-and-audio) by the sound's hash.
+Sounds in a "Separate .wem file" can be simply found in [WolvenKit Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/video-and-audio) by the sound's hash.
 
 If the sound is marked a virtual or nonexistent, you're out of luck for now and must find other way. Perhaps your wanted sound is a voice-over and you can find it using the section described bellow.
 

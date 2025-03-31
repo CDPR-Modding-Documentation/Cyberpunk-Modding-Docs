@@ -445,6 +445,7 @@
     * [Switching between sector states](modding-guides/world-editing/archived-guides/switching-between-sector-states.md)
 * [🎺 Sound](modding-guides/sound/README.md)
   * [Finding an audio file](modding-guides/sound/finding-an-audio-file.md)
+  * [Converting .wem to .wav](modding-guides/sound/converting-.wem-to-.wav.md)
   * [Replacing sounds effects](modding-guides/sound/replacing-sounds-effects.md)
   * [Modding Events Metadata](modding-guides/sound/audio-modding-basics.md)
   * [Playing Sounds in-game: Basics](modding-guides/sound/playing-sounds-in-game-basics.md)
