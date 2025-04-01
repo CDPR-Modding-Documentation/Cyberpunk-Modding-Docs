@@ -332,7 +332,6 @@
     * [Scaling Poses/Animations](modding-guides/animations/animations/scaling-poses-animations.md)
     * [Retargeting Poses/Animations](modding-guides/animations/animations/retargeting-poses-animations.md)
     * [Play animations with workspots](modding-guides/animations/animations/abusing-workspots.md)
-    * [Retargeting Game Animations for different RIGs - Guide by PinkyDude](https://docs.google.com/document/d/1nHPQvkK6ijwb8iQ8y1X8CBG-wnNUCTYCjrdUCGMenW4/edit?usp=drive_link)
     * [AMM: Collab anims/poses](modding-guides/animations/animations/amm-collab-anims-poses.md)
     * [Archived: Custom poses for spawned NPCs](modding-guides/animations/animations/archived-custom-poses-for-spawned-npcs.md)
   * [✏️ Editing V's Actual In Game Animations](modding-guides/animations/creating-animations-editing-vs-actual-in-game-animations.md)
