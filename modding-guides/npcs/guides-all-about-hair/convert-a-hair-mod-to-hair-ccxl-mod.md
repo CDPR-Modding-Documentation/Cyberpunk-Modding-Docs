@@ -148,7 +148,7 @@ If you've used something else, [no worries](#user-content-fn-4)[^4]. follow alon
 
 <figure><img src="../../../.gitbook/assets/image (564).png" alt=""><figcaption></figcaption></figure>
 
-2. Add the mi's`baseMaterial` master .mi file to the project and move it to the materials folder.dd the file's
+2. Add the mi's`baseMaterial` master .mi file to the project and move it to the materials folder:
 
 <figure><img src="../../../.gitbook/assets/image (565).png" alt=""><figcaption></figcaption></figure>
 
