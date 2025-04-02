@@ -233,7 +233,7 @@ While you're at it, rename the `animgraph`, `rig`, and the mesh in the shadow\_m
 This step is about the name of your hair slot in the character menu, so make sure you pick a nice name for it :)
 
 1. Rename the`your_first_hair_wa__local.json` to your mod's name (preferably to something like `myhair__local.json`) and open it, click on the item that has the text `UI-Customization-your_first_hair_wa` .
-2. In `femaleVariant` property, type the name that you want to be shown in the character creation menu (for example: `my hair`) then replace the `your_first_hair_wa` part of the with your unique mod name (`myhair`), do the same process for the `_cyberware` item below it.
+2. In `femaleVariant` property, type the name that you want to be shown in the character creation menu (for example: `my hair`) then replace the `your_first_hair_wa` part of the key with your unique mod name (`myhair`), do the same process for the `_cyberware` item below it, then rename the file.
 
 {% hint style="info" %}
 For Male V you don't need to fill the maleVariant key, as the game defaults to using whatever value in femaleVariant if a male one doesn't exist.
