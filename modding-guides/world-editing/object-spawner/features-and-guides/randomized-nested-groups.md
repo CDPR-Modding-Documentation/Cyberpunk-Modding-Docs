@@ -47,7 +47,7 @@ layout:
 
 <figure><img src="../../../../.gitbook/assets/WBRNG_RNGSettings" alt="" width="446"><figcaption><p>RNG settings, either default per element spawning, or fixed amount spawning</p></figcaption></figure>
 
-* Here you can also change the seed, or randomize it, this will re-randomize the RNG
+* Here you can also change the seed, or randomize it, this will re-randomize the RNG (Including the seeds of all contained RNGs)
 
 {% hint style="success" %}
 If you don't like how the RNG looks, simply randomize its seed using the button to its right
@@ -65,7 +65,7 @@ If you don't like how the RNG looks, simply randomize its seed using the button 
 
 ### RNG Child Settings
 
-* Any element contained inside a RNG has its own settings
+* Any element contained inside an RNG has its own settings
 * Change them under the `Entry Randomization` header
 
 <figure><img src="../../../../.gitbook/assets/WBRNGEntrySettings" alt="" width="277"><figcaption><p>Individual elements settings, such as probability, randomized rotation and appearance</p></figcaption></figure>
@@ -82,7 +82,7 @@ This is what makes RNGs very powerful, being able to nest RNGs inside RNGs
 
 ## Example
 
-* In this example we will create RNG which consists of a vending machine, with some trash
+* In this example we will create an RNG which consists of a vending machine, with some trash
 
 ### Base RNG
 
