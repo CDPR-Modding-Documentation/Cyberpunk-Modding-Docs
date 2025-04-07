@@ -21,7 +21,7 @@ Make sure to always keep the mod and it's dependencies up to date
 ## Download
 
 * Next, download World Builder:
-  * Nexus Page
+  * [Nexus Page](https://www.nexusmods.com/cyberpunk2077/mods/20660)
   * [GitHub](https://github.com/justarandomguyintheinternet/CP77_entSpawner)
 
 ## Installing
