@@ -187,7 +187,7 @@ If you select WolvenKit's "Open in File Explorer" option, you can copy the path 
 </details>
 
 {% hint style="success" %}
-For a documentation of multilayer properties, see [here](../../../../for-mod-creators-theory/materials/configuring-materials/multilayered-material-properties-1.md). \
+For a documentation of multilayer properties, see [here](broken-reference). \
 For a list of reference images, check [multilayered-previews.md](../../../../for-mod-creators-theory/materials/multilayered/multilayered-previews.md "mention")
 {% endhint %}
 

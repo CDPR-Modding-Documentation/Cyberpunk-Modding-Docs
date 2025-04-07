@@ -36,7 +36,7 @@ While the multilayered supershader is very common, there are hundreds of other n
 ## Composition
 
 {% hint style="info" %}
-For a list of shader properties in multilayered.mt, see [multilayered-material-properties-1.md](../configuring-materials/multilayered-material-properties-1.md "mention")
+For a list of shader properties in multilayered.mt, see [Broken link](broken-reference "mention")
 {% endhint %}
 
 The multilayered shader is composed of three distinct parts:
@@ -67,7 +67,7 @@ As shown above, each mesh using the multilayer shader uses a unique **mlmask** f
 To edit .mlsetup files, it's recommended that you use the [mlsetup-builder](../../modding-tools/mlsetup-builder/ "mention") software.
 
 {% hint style="info" %}
-For a definition of the properties, see [multilayered-material-properties-1.md](../configuring-materials/multilayered-material-properties-1.md "mention").
+For a definition of the properties, see [Broken link](broken-reference "mention").
 
 For a guide on how to edit one, check [r-and-r-colour-editing.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-colour-editing.md "mention").
 {% endhint %}

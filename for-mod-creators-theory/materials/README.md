@@ -19,7 +19,7 @@ Check the section's sub pages in the wiki's navigation tree for more detailed in
 #### Multilayered
 
 * General information: [multilayered](multilayered/ "mention")
-* Properties and definition: [multilayered-material-properties-1.md](configuring-materials/multilayered-material-properties-1.md "mention")
+* Properties and definition: [Broken link](broken-reference "mention")
 * Preview images: [multilayered-previews.md](multilayered/multilayered-previews.md "mention")
 
 #### Hands-on:
@@ -93,7 +93,7 @@ This is specific to Cyberpunk, and it is incredibly cool. If you're used to text
 
 {% hint style="success" %}
 * What is a multilayered material and how does [multilayered](multilayered/ "mention") work?
-* What are these [properties](configuring-materials/multilayered-material-properties-1.md), how do I use them?
+* What are these [properties](broken-reference), how do I use them?
 * [Changing the colours](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/#multilayered-material)
 * [Changing the mask](../../modding-guides/textures-and-luts/custom-multilayermasks.md)
 {% endhint %}

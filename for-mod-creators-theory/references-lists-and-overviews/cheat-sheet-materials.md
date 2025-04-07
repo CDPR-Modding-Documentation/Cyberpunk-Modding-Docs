@@ -25,7 +25,7 @@ This page contains a brief overview of existing materials. Use the Table of Cont
 #### Multilayered
 
 * General information: [multilayered](../materials/multilayered/ "mention")
-* Properties and definition: [multilayered-material-properties-1.md](../materials/configuring-materials/multilayered-material-properties-1.md "mention")
+* Properties and definition: [Broken link](broken-reference "mention")
 * Preview images: [multilayered-previews.md](../materials/multilayered/multilayered-previews.md "mention")
 
 #### Hands-on:
