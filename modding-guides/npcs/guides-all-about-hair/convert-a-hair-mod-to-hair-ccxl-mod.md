@@ -10,7 +10,7 @@ description: >-
 
 Published: Jan 29 2025 by [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
 
-Updated: Feb 11 2025 by [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
+Updated: April 6 2025 by [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
 
 CCXL is a way of adding new slots into character customization menus. the benefit is that you won't have to change or replace the vanilla game files to do add your own! this guide is related to adding new hair slots from an already-done mod.&#x20;
 
@@ -134,7 +134,7 @@ Your hair mod was done with a custom texture that you've brought along for the r
 
 At the end of this step your textures have been successfully pathed to the .mi that's in the template, the  `your_first_hair_wa_long.mi` file should look like this. If so save, delete the template hair texture files, and move on ahead with the next step.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (563).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (617).png" alt=""><figcaption></figcaption></figure>
 
 ### I use base game ("vanilla") textures
 
