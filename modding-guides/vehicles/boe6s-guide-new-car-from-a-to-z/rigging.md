@@ -148,12 +148,36 @@ For the **Mini Cooper**, I edited all 4 suspension positions in the `vehicle_rig
 
 <figure><img src="../../../.gitbook/assets/image64.png" alt=""><figcaption></figcaption></figure>
 
-To change the size of the wheel, you need to change both the 3D models and the rig files. You can update the wheels by first replacing all the wheel and tire meshes with ones to match your vehicle. This is similar to how the doors, windows, and hood work. Make sure to have the center of the wheel as the mesh’s origin. \
+You can update the wheels by first replacing all the wheel and tire meshes with ones to match your vehicle. This is similar to how the doors, windows, and hood function.
+
+For the wheel to rotate properly, make sure to have the center of the wheel as the mesh’s origin. \
 Example:
 
 <figure><img src="../../../.gitbook/assets/image44.png" alt=""><figcaption></figcaption></figure>
 
-Once the wheel model is updated, you need to update the `.rig` files.
+Once the wheel model is updated, you need to update size data of the wheels.
+
+This is set in your vehicle's tweaks. `vehWheelDimentionsSetup` contains both front and back settings. Update rimRadius, tireRadius, tireWidth, & wheelOffset to match your model's size.&#x20;
+
+{% hint style="info" %}
+These values should macth 1:1 with meters. \*not confirmed.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/wheelDimensions.PNG" alt=""><figcaption><p>Example base game vehWheelDimensions tweaks</p></figcaption></figure>
+
+{% hint style="info" %}
+Thanks to MAX\_SA5 for finding these controls!
+{% endhint %}
+
+Save and test!
+
+{% hint style="warning" %}
+Below is an older method which is no longer recommended. In all vanilla vehicles, the scale factor is set to 1.0 and is not used to control wheel size. CDPR (and myself) recommend using tweaks.
+
+It has been kept documented here as a reference and for niche use cases.
+{% endhint %}
+
+As an additional method of controlling the wheel size, you can update the `.rig` files.
 
 In both the `deformation_rig` and `vehicle_rig`, find the wheel bones (`wheel_back_left`, `wheel_front_right`, etc.) and update the `Scale` values. \
 Example:
@@ -162,6 +186,4 @@ Example:
 
 <figure><img src="../../../.gitbook/assets/image13 (1).png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="info" %}
-Please note that this is a “hacky” solution, it’s not the proper way to set wheel sizes, but it works. The "correct" solution is unknown. In all vanilla vehicles, this scale factor is set to 1.0 It is not used. This means CDPR is controlling wheel radius some other way, but I'm unaware of how.
-{% endhint %}
+The wheels should now be making proper contact with the ground!
