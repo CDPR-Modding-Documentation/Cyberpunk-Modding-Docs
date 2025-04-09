@@ -310,6 +310,13 @@ It's recommended to look in the Log view and check if there's an error in a rena
 Most likely, you screwed up the names of your material definitions. They must be **exactly** as ArchiveXL expects them to be. \
 Go back to [#id-3.2-material-definitions](ccxl-hairs.md#id-3.2-material-definitions "mention") and double-check everything.
 
+If that doesn't help, check the log (see [#my-hair-is-always-black](ccxl-hairs.md#my-hair-is-always-black "mention"))
+
+### My hair is always black!
+
+That happens when the material patching/expansion didn't work. \
+Search the [ArchiveXL log](../../../../for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md#a-list-of-framework-logfiles) for the name of the broken hair mesh. Most likely, there is a warning or an error that you can fix.
+
 ### I have duplicate entry in hairstyles options!
 
 This happens due to having a different `localizedName` for`cyberware_hairstyle` switcher that's inside the`.inkcc` file. For example`UI-Customization-your_first_hair` in the blank switcher, and `UI-Customization-your_first_hair_cyberware`  in the `cyberware_hairstyle` switcher.&#x20;
