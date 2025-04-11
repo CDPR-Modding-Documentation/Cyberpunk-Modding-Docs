@@ -83,8 +83,6 @@ We need to change your car's type to a weaponized vehicle. Here's how we do that
 This file is used by TweakXL to make changes to the game's static database — for example, changing a car. If you want to learn more about tweak modding, you can check out [tweak-modding-guides.md](../../../for-mod-creators-theory/tweaks/tweak-modding-guides.md "mention"), but be vareful. This rabbit hole runs deep.
 {% endhint %}
 
-{% include "../../../.gitbook/includes/yaml-editing-warning.md" %}
-
 ### 1. Adding the file
 
 You can skip this step if you already have a yaml file.

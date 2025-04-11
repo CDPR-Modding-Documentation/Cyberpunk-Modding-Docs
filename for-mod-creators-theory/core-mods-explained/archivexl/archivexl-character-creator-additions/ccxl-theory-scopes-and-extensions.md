@@ -27,3 +27,21 @@ The full list of hair style materials as supported by CCXL extension:
 {% hint style="info" %}
 While `@cap01` falls back to CapBaseMaterial, this is how you can define an extra hair cap texture for `cyberware_01`.&#x20;
 {% endhint %}
+
+## Material colour extensions
+
+Material colour extension makes use of both [mesh-appearance-auto-expansion.md](../mesh-appearance-auto-expansion.md "mention") and [archivexl-resource-patching.md](../archivexl-resource-patching.md "mention").
+
+First, you require an intermediary layer of .mi files that define individual properties, for example **colours**. All of these need to derive from a common ancestor, which defines all other properties.
+
+<figure><img src="../../../../.gitbook/assets/ccxl_material_colour_extensions.png" alt=""><figcaption></figcaption></figure>
+
+You can make use of  [mesh-appearance-auto-expansion.md](../mesh-appearance-auto-expansion.md "mention") to use the correct .mi files, while allowing auto-extendability for future patching via the `@context`.&#x20;
+
+{% hint style="info" %}
+You can find another example for this under [ccxl-hairs.md](ccxl-hairs.md "mention")&#x20;
+{% endhint %}
+
+<figure><img src="../../../../.gitbook/assets/ccxl_makeup_mesh_example.png" alt=""><figcaption></figcaption></figure>
+
+To define multiple different make-up stypes in one mesh, you can simply put the textures directly into the local material - e.g. `@makeup`, `@makeup_02`
