@@ -44,4 +44,9 @@ You can find another example for this under [ccxl-hairs.md](ccxl-hairs.md "menti
 
 <figure><img src="../../../../.gitbook/assets/ccxl_makeup_mesh_example.png" alt=""><figcaption></figcaption></figure>
 
-To define multiple different make-up stypes in one mesh, you can simply put the textures directly into the local material - e.g. `@makeup`, `@makeup_02`
+{% hint style="warning" %}
+Defining multiple make-up styles in one mesh will break extensibility (read below). To be extensible, you need one mesh per style.
+{% endhint %}
+
+To define multiple different make-up stypes in one mesh, you can put the textures directly into the local material - e.g. `@makeup`, `@makeup_02`.
+
