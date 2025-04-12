@@ -39,7 +39,11 @@ We will be moving **backwards** through the files: starting at the bottom, and w
 
 1. Start by downloading the example project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/19228)
 2. Unpack the `source` folder into the root of your existing hair project so that it merges with yours
-3. Move any `.mesh`, `.animgraph`, and `.rig` files from your original hair to `your_modder_name\ccxl\your_first_addition\meshes`
+3. Move any `.mesh`, `.animgraph`, and `.rig` files from your original hair to `your_modder_name\ccxl\your_first_addition\meshes`&#x20;
+
+## Step 0: Deleting empty meshes
+
+Starting with 8.16.2, Wolvenkit has the menu option `Project` -> `Clean up` -> `Delete empty meshes`. This will delete placeholder files from your hair mod.
 
 ## Step 1: Deleting .ent files
 
@@ -49,6 +53,41 @@ If you do have them, delete them now – we don't need them in our CCXL projects
 
 ## Step 2: Adjusting the .app file
 
+<details>
+
+<summary>If you are converting an existing mod with an .app file</summary>
+
+It is often easier to convert the existing file and replace the template mod's `.app` with it, especially when you are using more than one hair mesh.
+
+1. **Delete** all but the first appearance
+
+1) If you have anything in `partsValues`, make sure to **remove** it – the .ent file it was pointing at is gone now
+2) `partsOverrides` will make sure your hair colours assign correctly. Keep them, but clear any `depotPaths` you have set (ArchiveXL will handle that for you)
+
+</details>
+
+### Your .app should look like this:
+
+<figure><img src="../../../../.gitbook/assets/ccxl_mesh_file_02 (1).png" alt=""><figcaption></figcaption></figure>
+
+## Wait, I'm missing meshes!
+
+If you have more than one .mesh file, for every additional mesh, complete the following steps:&#x20;
+
+1. Duplicate the `entAnimatedComponent`&#x20;
+   1. Change the `rig` 's depot path to the relative path of the corresponding .rig file
+   2. Change the `graph's` depot path to relative path of the corresponding .animgraph file
+   3. Change the `name` so that it's unique (add `_pt_1` at the end or number it)
+2. Duplicate the `entSkinnedMeshComponent` &#x20;
+   1. change the depot path to point it at your extra mesh
+   2. Select `parentTransform` and change the `bindName` to your `entAnimatedComponent`'s name (step 1c above)
+   3. Select `skinning` and change the `bindName` to your `entAnimatedComponent`'s name (step 1c above)
+   4. Change the `name` to be unique
+3. Optional: Component uniqueness
+   1. If you are running into issues, you can assign unique `id`s to all of your components. Go through them one by one, select their `id` attribute, and select "`Generate new CRUID`" from the context menu.
+
+### How does this work?
+
 Thanks to ArchiveXL magic, your .app file needs **only one appearance**. All other appearances will be extrapolated from it!
 
 You can use any of the existing base game hair colours, as long as the definition itself is valid.
@@ -57,16 +96,6 @@ The template file has three `.app` files – one of them is for your hair's defa
 
 If you do not have a cyberware\_01 appearance, you can **delete** this file and adjust the file path under [#step-6-the-.incharactercustomization-file](ccxl-hairs.md#step-6-the-.incharactercustomization-file "mention")
 
-<details>
-
-<summary>If you are converting an existing mod with an .app file</summary>
-
-1. **Delete** all but the first appearance
-2. If you have anything in `partsValues`, make sure to **remove** it – the .ent file it was pointing at is gone now
-3. `partsOverrides` will make sure your hair colours assign correctly. Keep them, but clear any `depotPaths` you have set (ArchiveXL will handle that for you)
-
-</details>
-
 {% hint style="info" %}
 If you want to add more meshes/rigs to the template .app (for example from uuhv4), you can **duplicate** the `entSkinnedMeshComponent` and the matching `entAnimatedComponent` from the context menu.
 {% endhint %}
@@ -74,8 +103,6 @@ If you want to add more meshes/rigs to the template .app (for example from uuhv4
 {% hint style="info" %}
 File Validation can help you making sure that your hair components and paths are correct.&#x20;
 {% endhint %}
-
-<figure><img src="../../../../.gitbook/assets/ccxl_mesh_file_02 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3: The .mesh files
 
@@ -133,8 +160,14 @@ Now, let's look at the materials themselves.
 
 ### 3.3 Materials
 
+You have to repeat this step for every mesh file in your project. Be careful, as different meshes may use different texture sets. In this case, you need an extra `.mi` file for them.
+
 {% hint style="info" %}
 To understand materials, you can check [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention") -> [#step-3-material-definition](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/#step-3-material-definition "mention"). This is not necessary to complete the guide, though!
+{% endhint %}
+
+{% hint style="info" %}
+You can read more about @context and appearance extrapolation under [#material-colour-extensions](ccxl-theory-scopes-and-extensions.md#material-colour-extensions "mention"). This is not necessary to complete the guide, though.
 {% endhint %}
 
 #### @context&#x20;
@@ -166,7 +199,7 @@ If your hair is using a material multiple times (e.g. long, long, cap), you stil
 This material defines the hair cards. It points at the `.mi` file in your project, where the hair's textures are defined.
 
 {% hint style="warning" %}
-All ResourcePaths must have `Soft` flags for this to work, including the baseMaterial! (see screenshot)
+All ResourcePaths must have `Soft` flags for this to work, including the `baseMaterial`! (see screenshot)
 {% endhint %}
 
 Since the dynamic context does not transfer to the `.mi`, we need to set the `HairProfile` here.&#x20;
