@@ -172,10 +172,23 @@ That is becauuse they're rigged to a bone that your car does not have. The easie
 
 You can check [weight-painting-for-gonks.md](../../../for-mod-creators-theory/3d-modelling/weight-painting-for-gonks.md "mention") for more detail about that.
 
-## _Making the weapons move_
+## _Step 4: Making the weapons move_
 
 _To be done_
 
-## Delete the reference files
+## Step 5: Delete the reference files
 
 Before you release your mod, do not forget to delete the reference files that you added in step 0. Never include files in your .archive that don't need to be there!
+
+## Troubleshooting
+
+### My guns are on the car, but nothing happens when I fire them!
+
+That means you're missing the correct `entSlot`s.&#x20;
+
+Check your `entSlotComponent`  (usually called `vehicle_slots`) and make sure that you have the vehicle slots corresponding to the weapons you added to your .yaml file.&#x20;
+
+{% hint style="warning" %}
+The spelling doesn't need to be the same! For example, the Shion has `Vehicle.Vehicle_Power_Weapon_Left_A`, but the entSlot is called `VehiclePowerWeaponLeftA`. Check the original vehicle's file for tbhe correct spelling!
+{% endhint %}
+
