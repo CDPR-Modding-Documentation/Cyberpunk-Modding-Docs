@@ -1,4 +1,4 @@
-# ❕ Quests
+# ❕ Quests & Scenes
 
 ## Inside Quests:
 
@@ -6,7 +6,7 @@
 
 ### [How to Edit Voiceover and Subtitles ](../../for-mod-creators/modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
 
-### [How to change position and rotation of an entMeshComponent](how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
+### [How to change position and rotation of an entMeshComponent](../everything-else/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
 
 ### [How to remove an Animation (and Replace It)](how-to-remove-an-animation-and-potentially-replace-it.md)
 
