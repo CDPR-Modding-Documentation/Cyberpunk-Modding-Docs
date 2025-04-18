@@ -11,6 +11,10 @@ description: All the properties that make your car go fast (or slow)
 
 This page lists those properties that control how a vehicle behaves. By changing/tweaking them, you can modify a vehicle's behaviour.
 
+Legend:
+* An explanation that begins with (?) needs verifying.
+* A value range that is filled with a dash '-' indicates that the value either is a ref or boolean, or that the value range is open for experimentation as there are no specific, known limitations.
+
 N.B. Descriptions of the properties are conclusions of multiple contributors' trial and error process. While the best effort was done to identify and describe completely and accurately what those properties mean and how to work with them, there is no guarantee of it being so.
 
 ### Wait, this is not what I want!
@@ -21,67 +25,129 @@ N.B. Descriptions of the properties are conclusions of multiple contributors' tr
 
 ## Vehicle Records: Performance
 
-The root of vehicle data and information is under the gamedataVehicle_Record, and those entries generally follow the name pattern `Vehicle.v_{vehicle_name}`. Below is a high-level sketch of the tree of this structure, insofar relevant for the vehicle performance. Here is [the full overview](../../../for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicle-record.md).
+The root of vehicle data and information is under the gamedataVehicle_Record, and those entries generally follow the name pattern `Vehicle.{vehicle_name}`. Below is a high-level sketch of the tree of this structure, insofar relevant for the vehicle performance. Here is [the full overview](../../../for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicle-record.md).
 
-<!-- TODO: Convert this to yaml if it is the standard here -->
+<!-- TODO: Revisit, this is not a correct formatting -->
+```yaml
+groups:
+  Vehicle.{name}
+    type: gamedataVehicle_Record
+    members:
+      vehAirControl:
+        type: gamedataVehicleAirControl_Record
+        members:
+          pitch:
+            type: TweakDBID
+            value: gamedataVehicleAirControlAxis_Record
+          roll:
+            type: TweakDBID
+            value: gamedataVehicleAirControlAxis_Record
+          yaw:
+            type: TweakDBID
+            value: gamedataVehicleAirControlAxis_Record
+      vehDriveModelData:
+        type: gamedataVehicleDriveModelData_Record
+        members:
+          burnOut:
+            type: gamedataVehicleBurnOut_Record
+          driveHelpers:
+            type: array:TweakDBID
+            value: [ "gamedataDriveWheelsAccelerateNoise_Record", "gamedataDynamicDownforceHelper_Record", "gamedataHandbrakeFrictionModifier_Record", "gamedataInAirGravityModifier_Record", "gamedataRearWheelsFrictionModifier_Record", "gamedataRotationLimiter_Record", "gamedataUphillDriveHelper_Record" ]
+          wheelSetup:
+            type: TweakDBID
+            value: gamedataVehicleWheelDrivingSetup_4_Record
+            members:
+              backPreset:
+                type: TweakDBID
+                value: gamedataVehicleWheelDrivingPreset_Record
+              frontPreset:
+                type: TweakDBID
+                value: gamedataVehicleWheelDrivingPreset_Record
+              LB:
+                type: TweakDBID
+                value: gamedataVehicleWheelRole_Record
+              LF:
+                type: TweakDBID
+                value: gamedataVehicleWheelRole_Record
+              RB:
+                type: TweakDBID
+                value: gamedataVehicleWheelRole_Record
+              RF:
+                type: TweakDBID
+                value: gamedataVehicleWheelRole_Record
+          wheelsFrictionMap:
+            type: type: TweakDBID
+            value: gamedataVehicleWheelsFrictionMap_Record
+      vehEngineData:
+        type: TweakDBID
+        value: gamedataVehicleEngineData_Record
+     gearCurvesPath:
+        type: TweakDBID
+        value: TODO
+     gears:
+        type: array:TweakDBID
+        value: ["gamedataVehicleGearRecord"]
 ```
-gamedataVehicle_Record
-   vehAirControl
-   vehDriveModelData (gamedataVehicleDriveModelData_Record)
-     burnOut (gamedataVehicleBurnOut_Record)
-     driveHelpers[*]
-       gamedataDriveWheelsAccelerateNoise_Record
-       gamedataDynamicDownforceHelper_Record
-       gamedataHandbrakeFrictionModifier_Record
-       gamedataInAirGravityModifier_Record
-       gamedataRearWheelsFrictionModifier_Record
-       gamedataRotationLimiter_Record
-       gamedataUphillDriveHelper_Record
-     wheelSetup (gamedataVehicleWheelDrivingSetup_4_Record)
-       backPreset  (gamedataVehicleWheelDrivingPreset_Record)
-       frontPreset (gamedataVehicleWheelDrivingPreset_Record)
-       LB          (gamedataVehicleWheelRole_Record)
-       LF          (gamedataVehicleWheelRole_Record)
-       RB          (gamedataVehicleWheelRole_Record)
-       RF          (gamedataVehicleWheelRole_Record)
-     wheelsFrictionMap (gamedataVehicleWheelsFrictionMap_Record)
-   vehEngineData (gamedataVehicleEngineData_Record)
-     gearCurvesPath
-     gears[gamedataVehicleGearRecord]
-```
 
-<!-- TODO investigate and add(?)
-
-### vehAirControl
+### gamedataVehicleAirControl_Record
 
 | Property | Data Type | Value Range | Meaning |
 | :--- | :--- | :--- | :--- |
-| | | | |
--->
+| anglePID | Vector3 | | |
+| flippedOverRecoveryPID | Vector3 | | |
+| massReference | float | | |
+| pitch | ref | - | |
+| roll | ref | - | |
+| velocityPID | Vector3 | | |
+| yaw | ref | - | |
+
+#### gamedataVehicleAirControlAxis_Record
+
+| Property | Data Type | Value Range | Meaning |
+| :--- | :--- | :--- | :--- |
+| angleCorrectionFactorMax | float | | |
+| angleCorrectionFactorMin | float | | |
+| angleCorrectionThresholdMax | float | | |
+| angleCorrectionThresholdMin | float | | |
+| angleDampFactor | float | | |
+| brakeMultiplierWhenNoInput | float | | |
+| controlAxis | ref | - | |
+| inputDampFactor | float | | |
+| maxAngleCompensation | float | | |
+| maxAngleToCompensateThreshold | float | | |
+| maxVelocity | float | | |
+| maxVelocityCompensation | float | | |
+| stabilizeAxis | boolean | - | |
+| velocityDampFactor | float | | |
+| velocityDampingFactorMax | float | | |
+| velocityDampingFactorMin | float | | |
+| velocityDampingThresholdMax | float | | |
+| velocityDampingThresholdMin | float | | |
+| zeroAngleThreshold | float | | | |
 
 ### gamedataVehicleDriveModelData_Record
 
 | Property | Data Type | Value Range | Meaning |
 | :--- | :--- | :--- | :--- |
-| airResistanceFactor | float | | The coefficient of air resistance against the vehicle when in motion. A higher value means more air resistance. It affects how quickly the car slows down after throttle lift-off. |
-| antiSwaybarDampingScalor | float | | |
+| airResistanceFactor | float | -1 to 1 | The coefficient of air resistance against the vehicle when in motion. A higher value means more air resistance. It affects how quickly the car slows down after throttle lift-off. |
+| antiSwaybarDampingScalor | float | -1 to 1 | A higher value counteres left-right swaying of the vehicle, resulting in greater stability. A negative number will make the car wobble a lot for the slightest reason! |
 | bankBodyFBTanMultiplier | float | | |
 | bankBodyLRTanMultiplier | float | | |
-| bodyFriction | float | | |
+| bodyFriction | float |  | The level of friction between the car and objects it touches, such as walls and roads. A higher value means losing more speed on hitting walls but also better grip and car stability on uneven roads. It is one factor of many that affects grip and how the car sticks to the ground. |
 | brakingEstimationMagicFactor | float | | |
-| brakingFrictionFactor | float | | |
-| burnOut | ref | | |
-| center_of_mass_offset | Vector3 | | |
-| chassis_mass | float | | |
+| brakingFrictionFactor | float | | (?) How "hard" the vehicle brakes |
+| burnOut | ref | - | A compound object that describes specific behavior of tyre burnout, e.g. for a race launch. |
+| center_of_mass_offset | Vector3 | | (?) Where the center of mass is (relative to the vehicle's spawn point) |
+| chassis_mass | float | - | Presumably, the mass of the chassis, in LBS. This value is related with `total_mass`. It makes sense that this value is always &le; `total_maws`, but it is not clear exactly what role does the difference between the two play in the car movemnent. Nonetheless, experiments show a lower car stability at high speeds when these two values are not equal. |
 | differentialOvershootFactor | float | | |
-| driveHelpers | array | | |
-| flatTireSim | ref | | |
+| driveHelpers | array | - | An array of vehicle physics modifiers. |
+| flatTireSim | ref | - | |
 | forwardWeightTransferFactor | float | | |
 | handbrakeBrakingTorque | float | | |
 | lowVelStoppingDeceleration | float | | |
-| maxWheelTurnDeg | float | | |
-| momentOfInertia | Vector3 | | |
-| momentOfInertiaScale | Vector3 | | |
+| maxWheelTurnDeg | float | | Determines the maximum steering angle. |
+| momentOfInertia | Vector3 | - | |
+| momentOfInertiaScale | Vector3 | - | |
 | perfectSteeringFactor | float | | |
 | sideWeightTransferFactor | float | | |
 | slipAngleCurveScale | float | | |
@@ -93,7 +159,7 @@ gamedataVehicle_Record
 | slopeTractionReductionMax | float | | |
 | smoothWheelContactDecreaseTime | float | | |
 | smoothWheelContactIncreseTime | float | | |
-| total_mass | float | | |
+| total_mass | float | - | The total mass of the vehicle, in LBS. See `chassis_mass` for a longer explanation and a warning. |
 | turnUpdateBaseSpeedThreshold | float | | |
 | turnUpdateInputDiffForFastChange | float | | |
 | turnUpdateInputDiffForSlowChange | float | | |
@@ -110,12 +176,27 @@ gamedataVehicle_Record
 | turningRollFactorWeakContactMul | float | | |
 | turningRollFactorWeakContactThresholdMax | float | | |
 | turningRollFactorWeakContactThresholdMin | float | | |
-| useAlternativeTurnUpdate | boolean | | |
-| waterParams | ref | | |
-| wheelSetup | ref | | |
-| wheelTurnMaxAddPerSecond | float | | |
-| wheelTurnMaxSubPerSecond | float | | |
-| wheelsFrictionMap | ref | | |
+| useAlternativeTurnUpdate | boolean | - | |
+| waterParams | ref | - | |
+| wheelSetup | ref | - | A compound object that contains much of things related with the wheel behavior. |
+| wheelTurnMaxAddPerSecond | float | | The maximum speed of steering. |
+| wheelTurnMaxSubPerSecond | float | | The maximum speed of the steering wheel/handles returning to the neutral position. |
+| wheelsFrictionMap | ref | - | |
+
+In addition to the above, motorcycles (gamedataBikeDriveModelData_Record) also have:
+
+| Property | Data Type | Value Range | Meaning |
+| :--- | :--- | :--- | :--- |
+| bikeCOMOffsetDampFactor | float | | |
+| bikeCurvesPath | ref | - | |
+| bikeMaxCOMLongOffset | float | | |
+| bikeMaxTilt | float | | (?) How far it will tilt in a curve |
+| bikeMinCOMLongOffset | float | | |
+| bikeTiltCustomSpeed | float | | |
+| bikeTiltPID | array:Float | | |
+| bikeTiltReturnSpeed | float | | (?) How far it will un-tilt when you go straight again |
+| bikeTiltSpeed | float | | (?) How fast it will tilt in a curve |
+
 
 #### gamedataVehicleBurnOut_Record
 
@@ -147,30 +228,30 @@ gamedataVehicle_Record
 | accelerationNoiseMaxSpeed | float | | |
 | maxApplyTime | float | | |
 | maxForcesDifference | float | | |
-| minApplyTime | float | | |
+| minApplyTime | float | &ge; 0 | |
 | minForcesDifference | float | | |
-| type | ref | | |
+| type | ref | - | |
 
 #### gamedataDynamicDownforceHelper_Record
 
 | Property | Data Type | Value Range | Meaning |
 | :--- | :--- | :--- | :--- |
 | maxSpeed | float | | |
-| maxSpeedFactorAir | float | | |
-| maxSpeedFactorGround | float | | |
+| maxSpeedFactorAir | float | | (?) This appears to help car come back to the ground once it separates from it, like aerodynamic downforce. |
+| maxSpeedFactorGround | float | | (?) This appears to help the car stick to the ground, like aerodynamic downforce. |
 | minSpeed | float | | |
-| type | ref | | |
+| type | ref | - | |
 
 #### gamedataHandbrakeFrictionModifier_Record
 
 | Property | Data Type | Value Range | Meaning |
 | :--- | :--- | :--- | :--- |
 | additionalBrakeForLongUse | float | | |
-| blendOutTime | float | | |
+| blendOutTime | float | &ge; 0 | |
 | postHandbrakeTractionBoost | float | | |
 | rearWheelsLatFrictionCoef | float | | |
 | rearWheelsLongFrictionCoef | float | | |
-| type | ref | | |
+| type | ref | - | |
 
 #### gamedataInAirGravityModifier_Record
 
@@ -181,7 +262,7 @@ gamedataVehicle_Record
 | maxDriveSpeed | float | | |
 | minDriveSpeed | float | | |
 | smoothingFactor | float | | |
-| type | ref | float | |
+| type | ref | - | |
 | zVelReductionEnd | float | | |
 | zVelReductionStart | float | | |
 
@@ -201,9 +282,11 @@ gamedataVehicle_Record
 
 #### gamedataRotationLimiter_Record
 
+This structure seems aimed at drifting characteristics of the vehicle.
+
 | Property | Data Type | Value Range | Meaning |
 | :--- | :--- | :--- | :--- |
-| driftExceededAngle | | float | |
+| driftExceededAngle | float | | |
 | driftFullAngleBegin | float | | |
 | driftFullAngleEnd | float | | |
 | driftLimit | float | | |
@@ -227,6 +310,8 @@ gamedataVehicle_Record
 This property maps the behavior of the wheels. It has four variables LF, RF, LB, RB that determine the roles of the four wheels, and it also had detailed setups for the wheels under its `.frontPreset` and `.backPreset`.
 
 ##### gamedataVehicleWheelDrivingPreset_Record
+
+N.B. Vehicles generally have two instances of this entry, one for the front wheel(s) and one for the back wheel(s).
 
 | Property | Data Type | Value Range | Meaning |
 | :--- | :--- | :--- | :--- |
@@ -253,15 +338,15 @@ This property maps the behavior of the wheels. It has four variables LF, RF, LB,
 | tireRollingResistanceCoef | float | | |
 | visualSuspensionCompressionLength | float | | |
 | visualSuspensionDroop | float | | |
-| wheelsVerticalOffset | float | | |
+| wheelsVerticalOffset | float | | Repositions the vehicles's wheels vertically. A lesser number (including negative) means car body being lower, and vice versa for a higher nimber. Too low vehicle means collisions with bumps on the road that can distrub driving. Too high vehicle may impact its ability to corner. |
 
 ##### gamedataVehicleWheelRole_Record
 
 | Property | Data Type | Value Range | Meaning |
 | :--- | :--- | :--- | :--- |
-| isDrive | boolean| - | |
-| isHandBrake | boolean | - | |
-| isMainBrake | boolean | - | |
+| isDrive | boolean| - | (?) Does the wheel contribute to the car movemnent. |
+| isHandBrake | boolean | - | (?) Will handbrake have an affect on this weel. |
+| isMainBrake | boolean | - | (?) Will the main brake have an effect on this wheel. |
 
 <!-- TODO:
 #### The .wheelsFrictionMap property
@@ -277,14 +362,14 @@ This property maps the behavior of the wheels. It has four variables LF, RF, LB,
 | finalGearTorqueDecimationScalor | float | | |
 | flyWheelMomentOfInertia | float | | The coefficient of the flywheel interia. A lower value means more ease in gaining or losing speed. Vice versa vor a higher value and a slower gain or decrease of speed. |
 | forceReverseRPMToMin | boolean | - | |
-| gearChangeCooldown | float | | |
-| gearChangeTime | float | | |
+| gearChangeCooldown | float | &ge; 0 | The time (in seconds) before another gear change can take place after a gear change. |
+| gearChangeTime | float | &ge; 0 | The time (in seconds) that it takes to change a gear. |
 | gearCurvesPath | ref | - | |
-| gears | array | | |
-| maxRPM | float | | Maximum engine RPM. |
-| minRPM | float | | Minimum engine RPM. Beware of this setting in relation with the gears information. If the gear information suggests that a lower RPM is needed to stop the car than minRPM, stopping the car might become a non-straightforward thing. |
-| resistanceTorque | float | | |
-| reverseDirDelay | float | | |
+| gears | array | - | The array with information on each of the vehicle's gears. |
+| maxRPM | float | - | Maximum engine RPM. |
+| minRPM | float | &ge; 0 | Minimum engine RPM. Beware of this setting in relation with the gears information. If the gear information suggests that a lower RPM is needed to stop the car than minRPM, stopping the car might become a non-straightforward thing. |
+| resistanceTorque | float | - | The decrease in torque with during throttle lift-off. A negative number will result in likely unwanted acceleration. Zero will render this effect neutral. |
+| reverseDirDelay | float | &ge; 0 | The time (in seconds) it takes to switch from braking to car moving in reverse direction. A lesser value will allow the to start going in reverse sooner, a greater value will make it less likely to inadvertently start moving in reverse. |
 | wheelsResistanceRatio | float | | |
 
 #### gamedataVehicleGearRecord
@@ -293,11 +378,11 @@ Each of items of this type represent **one** gear of a vehicle. A vehicle will t
 
 | Property | Data Type | Value Range | Meaning |
 | :--- | :--- | :--- | :--- |
-| maxEngineRPM | float |  |  |
-| maxSpeed | float |  |  |
-| minEngineRPM | float |  |  |
-| minSpeed | float |  |  |
-| torqueMultiplier | float |  |  |
+| maxEngineRPM | float | > 0  |  |
+| maxSpeed | float | - |  |
+| minEngineRPM | float | &ge; 0 |  |
+| minSpeed | float | &ge; 0 |  |
+| torqueMultiplier | float | - |  |
 
 ## Vehicle.VehicleDriveModelDataDefault\_4w.tweak
 
