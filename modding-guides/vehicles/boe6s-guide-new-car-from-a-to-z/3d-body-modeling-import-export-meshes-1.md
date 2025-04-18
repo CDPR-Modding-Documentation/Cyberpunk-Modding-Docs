@@ -86,7 +86,7 @@ Easiest way to mark components as invisible is to break the `entPhysicalMeshComp
 
 I do this by renaming the file with an added “`-disabled`” in the name. This breaks the file path, and notes that it is disabled for reference later. example:
 
-<figure><img src="../../../.gitbook/assets/image1 (2).png" alt=""><figcaption><p>disregard "entVisualController". See note below</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image1 (2) (1).png" alt=""><figcaption><p>disregard "entVisualController". See note below</p></figcaption></figure>
 
 {% hint style="info" %}
 Note: This method used to use the entVisualController to disable visibility. Thanks to **TheSpliffz** who corrected this method to the physical component path.

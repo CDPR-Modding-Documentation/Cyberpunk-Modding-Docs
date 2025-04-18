@@ -50,7 +50,7 @@ Example:
 
 <figure><img src="../../../.gitbook/assets/image61.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image3 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image3 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For lights like brakes, headlights, or reverse lights - you need to edit the vertex paint in **Blender**. Select the light emitting object in **blender** and switch to "**Vertex Paint"** mode. \
 Example:

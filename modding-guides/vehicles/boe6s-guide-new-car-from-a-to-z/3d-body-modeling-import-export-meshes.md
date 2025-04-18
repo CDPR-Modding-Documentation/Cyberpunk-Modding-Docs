@@ -32,7 +32,7 @@ Hit **refresh** to load all items, and select your proxy mesh you just added, th
 
 Example:
 
-<div data-full-width="true"><figure><img src="../../../.gitbook/assets/image5 (1).png" alt=""><figcaption></figcaption></figure></div>
+<div data-full-width="true"><figure><img src="../../../.gitbook/assets/image5 (1) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 Open a new project in blender, delete the base cube. Hit `File > Import > Cyberpunk GLTF` and load the `proxymesh.glb`
 
