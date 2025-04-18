@@ -26,7 +26,10 @@ The root of vehicle data and information is under the gamedataVehicle_Record, an
 <!-- TODO: Convert this to yaml if it is the standard here -->
 ```
 gamedataVehicle_Record
-   vehAirControl
+   vehAirControl (gamedataVehicleAirControl_Record)
+     pitch (gamedataVehicleAirControlAxis_Record)
+     roll (gamedataVehicleAirControlAxis_Record)
+     yaw (gamedataVehicleAirControlAxis_Record)
    vehDriveModelData (gamedataVehicleDriveModelData_Record)
      burnOut (gamedataVehicleBurnOut_Record)
      driveHelpers[*]
@@ -50,14 +53,41 @@ gamedataVehicle_Record
      gears[gamedataVehicleGearRecord]
 ```
 
-<!-- TODO investigate and add(?)
-
-### vehAirControl
+### gamedataVehicleAirControl_Record
 
 | Property | Data Type | Value Range | Meaning |
 | :--- | :--- | :--- | :--- |
-| | | | |
--->
+| anglePID | Vector3 | | |
+| flippedOverRecoveryPID | Vector3 | | |
+| massReference | float | | |
+| pitch | ref | | |
+| roll | ref | | |
+| velocityPID | Vector3 | | |
+| yaw | ref | | |
+
+#### gamedataVehicleAirControlAxis_Record
+
+| Property | Data Type | Value Range | Meaning |
+| :--- | :--- | :--- | :--- |
+| angleCorrectionFactorMax | float | | |
+| angleCorrectionFactorMin | float | | |
+| angleCorrectionThresholdMax | float | | |
+| angleCorrectionThresholdMin | float | | |
+| angleDampFactor | float | | |
+| brakeMultiplierWhenNoInput | float | | |
+| controlAxis | ref | | |
+| inputDampFactor | float | | |
+| maxAngleCompensation | float | | |
+| maxAngleToCompensateThreshold | float | | |
+| maxVelocity | float | | |
+| maxVelocityCompensation | float | | |
+| stabilizeAxis | boolean | | |
+| velocityDampFactor | float | | |
+| velocityDampingFactorMax | float | | |
+| velocityDampingFactorMin | float | | |
+| velocityDampingThresholdMax | float | | |
+| velocityDampingThresholdMin | float | | |
+| zeroAngleThreshold | float | | | |
 
 ### gamedataVehicleDriveModelData_Record
 
