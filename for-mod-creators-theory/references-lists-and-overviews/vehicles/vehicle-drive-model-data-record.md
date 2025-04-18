@@ -23,34 +23,66 @@ N.B. Descriptions of the properties are conclusions of multiple contributors' tr
 
 The root of vehicle data and information is under the gamedataVehicle_Record, and those entries generally follow the name pattern `Vehicle.v_{vehicle_name}`. Below is a high-level sketch of the tree of this structure, insofar relevant for the vehicle performance. Here is [the full overview](../../../for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicle-record.md).
 
-<!-- TODO: Convert this to yaml if it is the standard here -->
-```
-gamedataVehicle_Record
-   vehAirControl (gamedataVehicleAirControl_Record)
-     pitch (gamedataVehicleAirControlAxis_Record)
-     roll (gamedataVehicleAirControlAxis_Record)
-     yaw (gamedataVehicleAirControlAxis_Record)
-   vehDriveModelData (gamedataVehicleDriveModelData_Record)
-     burnOut (gamedataVehicleBurnOut_Record)
-     driveHelpers[*]
-       gamedataDriveWheelsAccelerateNoise_Record
-       gamedataDynamicDownforceHelper_Record
-       gamedataHandbrakeFrictionModifier_Record
-       gamedataInAirGravityModifier_Record
-       gamedataRearWheelsFrictionModifier_Record
-       gamedataRotationLimiter_Record
-       gamedataUphillDriveHelper_Record
-     wheelSetup (gamedataVehicleWheelDrivingSetup_4_Record)
-       backPreset  (gamedataVehicleWheelDrivingPreset_Record)
-       frontPreset (gamedataVehicleWheelDrivingPreset_Record)
-       LB          (gamedataVehicleWheelRole_Record)
-       LF          (gamedataVehicleWheelRole_Record)
-       RB          (gamedataVehicleWheelRole_Record)
-       RF          (gamedataVehicleWheelRole_Record)
-     wheelsFrictionMap (gamedataVehicleWheelsFrictionMap_Record)
-   vehEngineData (gamedataVehicleEngineData_Record)
-     gearCurvesPath
-     gears[gamedataVehicleGearRecord]
+<!-- TODO: Revisit, this is not a correct formatting -->
+```yaml
+groups:
+  Vehicle.{name}
+    type: gamedataVehicle_Record
+    members:
+      vehAirControl:
+        type: gamedataVehicleAirControl_Record
+        members:
+          pitch:
+            type: TweakDBID
+            value: gamedataVehicleAirControlAxis_Record
+          roll:
+            type: TweakDBID
+            value: gamedataVehicleAirControlAxis_Record
+          yaw:
+            type: TweakDBID
+            value: gamedataVehicleAirControlAxis_Record
+      vehDriveModelData:
+        type: gamedataVehicleDriveModelData_Record
+        members:
+          burnOut:
+            type: gamedataVehicleBurnOut_Record
+          driveHelpers:
+            type: array:TweakDBID
+            value: [ "gamedataDriveWheelsAccelerateNoise_Record", "gamedataDynamicDownforceHelper_Record", "gamedataHandbrakeFrictionModifier_Record", "gamedataInAirGravityModifier_Record", "gamedataRearWheelsFrictionModifier_Record", "gamedataRotationLimiter_Record", "gamedataUphillDriveHelper_Record" ]
+          wheelSetup:
+            type: TweakDBID
+            value: gamedataVehicleWheelDrivingSetup_4_Record
+            members:
+              backPreset:
+                type: TweakDBID
+                value: gamedataVehicleWheelDrivingPreset_Record
+              frontPreset:
+                type: TweakDBID
+                value: gamedataVehicleWheelDrivingPreset_Record
+              LB:
+                type: TweakDBID
+                value: gamedataVehicleWheelRole_Record
+              LF:
+                type: TweakDBID
+                value: gamedataVehicleWheelRole_Record
+              RB:
+                type: TweakDBID
+                value: gamedataVehicleWheelRole_Record
+              RF:
+                type: TweakDBID
+                value: gamedataVehicleWheelRole_Record
+          wheelsFrictionMap:
+            type: type: TweakDBID
+            value: gamedataVehicleWheelsFrictionMap_Record
+      vehEngineData:
+        type: TweakDBID
+        value: gamedataVehicleEngineData_Record
+     gearCurvesPath:
+        type: TweakDBID
+        value: TODO
+     gears:
+        type: array:TweakDBID
+        value: ["gamedataVehicleGearRecord"]
 ```
 
 ### gamedataVehicleAirControl_Record
