@@ -147,6 +147,21 @@ gamedataVehicle_Record
 | wheelTurnMaxSubPerSecond | float | | |
 | wheelsFrictionMap | ref | | |
 
+In addition to the above, motorcycles (gamedataBikeDriveModelData_Record) also have:
+
+| Property | Data Type | Value Range | Meaning |
+| :--- | :--- | :--- | :--- |
+| bikeCOMOffsetDampFactor | float | | |
+| bikeCurvesPath | ref | | |
+| bikeMaxCOMLongOffset | float | | |
+| bikeMaxTilt | float | | |
+| bikeMinCOMLongOffset | float | | |
+| bikeTiltCustomSpeed | float | | |
+| bikeTiltPID | array:Float | float | |
+| bikeTiltReturnSpeed | float | | |
+| bikeTiltSpeed | float | | |
+
+
 #### gamedataVehicleBurnOut_Record
 
 | Property | Data Type | Value Range | Meaning |
