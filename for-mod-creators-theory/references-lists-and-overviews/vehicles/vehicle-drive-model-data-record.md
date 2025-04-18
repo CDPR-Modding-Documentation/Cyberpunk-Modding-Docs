@@ -11,6 +11,8 @@ description: All the properties that make your car go fast (or slow)
 
 This page lists those properties that control how a vehicle behaves. By changing/tweaking them, you can modify a vehicle's behaviour.
 
+N.B. Descriptions of the properties are conclusions of multiple contributors' trial and error process. While the best effort was done to identify and describe completely and accurately what those properties mean and how to work with them, there is no guarantee of it being so.
+
 ### Wait, this is not what I want!
 
 * For a guide on **adding** vehicles, see [boe6s-guide-new-car-from-a-to-z](../../../modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/ "mention")
