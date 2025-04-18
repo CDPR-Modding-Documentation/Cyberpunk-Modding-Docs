@@ -11,6 +11,10 @@ description: All the properties that make your car go fast (or slow)
 
 This page lists those properties that control how a vehicle behaves. By changing/tweaking them, you can modify a vehicle's behaviour.
 
+Legend:
+* An explanation that begins with (?) needs verifying.
+* A value range that is filled with a dash '-' indicates that the value either is a ref or boolean, or that the value range is open for experimentation as there are no specific, known limitations.
+
 N.B. Descriptions of the properties are conclusions of multiple contributors' trial and error process. While the best effort was done to identify and describe completely and accurately what those properties mean and how to work with them, there is no guarantee of it being so.
 
 ### Wait, this is not what I want!
