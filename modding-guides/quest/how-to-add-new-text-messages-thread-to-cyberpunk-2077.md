@@ -22,7 +22,7 @@ To keep the project modular, it is good to use the following structure that basi
 
 
 
-<figure><img src="../../.gitbook/assets/image1.png" alt=""><figcaption><p>General structure of project tree</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image1 (3).png" alt=""><figcaption><p>General structure of project tree</p></figcaption></figure>
 
 When it comes to the structure of the **quest** folder, I prefer to split it based on the rank of the quests, threads will be attached to:
 
@@ -38,7 +38,7 @@ As can be seen, every subfolder already has one questphase that is root for new 
 
 ### Structure of the addingnewmessages\_tutorial\_rootphase.questphase
 
-<figure><img src="../../.gitbook/assets/image2.png" alt=""><figcaption><p>General structure of the <strong>addingnewmessages_tutorial_rootphase.questphase</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2 (1).png" alt=""><figcaption><p>General structure of the <strong>addingnewmessages_tutorial_rootphase.questphase</strong></p></figcaption></figure>
 
 #### Mod initialization and reset loop phase
 
@@ -69,11 +69,11 @@ Here user gets:
 
 * pop-up screen with the confirmation that the mod has been installed properly (**\[1152] UIManager** node); after accepting the popup **\[1148] FactsDBManager** node sets the fact responsible for blocking the mod from unwanted mod activation once again while watching TV, after that signal is sent back to **\[1271] Pause condition** node
 
-<figure><img src="../../.gitbook/assets/image3.png" alt=""><figcaption><p>In-game screenshot of the confirmation popup</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image3 (2).png" alt=""><figcaption><p>In-game screenshot of the confirmation popup</p></figcaption></figure>
 
 * text messages with the confirmation that the mod has been installed properly (**\[9] Journal** and **\[10] Journal** nodes in Activation confirmation section of the a**ddingnewmessages\_tutorial\_rootphase.questphase**):
 
-<figure><img src="../../.gitbook/assets/image4.png" alt=""><figcaption><p>In-game screenshot of the messages</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image4 (1).png" alt=""><figcaption><p>In-game screenshot of the messages</p></figcaption></figure>
 
 #### Main phases of the mod
 
@@ -81,7 +81,7 @@ After some short delay (**\[1141] PauseCondtition** node) after receiving last m
 
 ### Example phase with message thread (test.questphase)
 
-<figure><img src="../../.gitbook/assets/image5.png" alt=""><figcaption><p>Example questphase with messages thread</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image5 (2).png" alt=""><figcaption><p>Example questphase with messages thread</p></figcaption></figure>
 
 * It is important that underlined socket names of the **\[1] Input** and **\[2] Output** nodes _**MUST BE**_ the same as the phase in the main graph (see Main body section on the image above).
 * Nodes can be added in the graph view (right click on the free space and select from available selection) but must be edited in **questQuestPhaseResource** tab.
@@ -121,13 +121,13 @@ When it comes to activation triggers (**\[4] Condition** and **\[5] PauseConditi
 
 Real path – it is the path to the entry in **journal** file, i.e.:
 
-<figure><img src="../../.gitbook/assets/image6.png" alt=""><figcaption><p>Connection between questphase path and journal structure</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image6 (3).png" alt=""><figcaption><p>Connection between questphase path and journal structure</p></figcaption></figure>
 
 * **secondaryKey** – links the entry from the onscreens to journal entry; it is the same for every language;
 * **realPath** – links the entry from the journal to quest node
 * **femaleVariant –** is default text variant for all subtitles, onscreen texts
 
-<figure><img src="../../.gitbook/assets/image7.png" alt=""><figcaption><p>Connection between journal structure and onscreens entry</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image7 (1).png" alt=""><figcaption><p>Connection between journal structure and onscreens entry</p></figcaption></figure>
 
 ### ArchiveXL file
 
@@ -156,7 +156,7 @@ localization:
 
 Images are linked with messages via imageId as shown in the picture:
 
-<figure><img src="../../.gitbook/assets/image8.png" alt=""><figcaption><p>Bonus: Linking custom image with messages</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image8 (2).png" alt=""><figcaption><p>Bonus: Linking custom image with messages</p></figcaption></figure>
 
 TweakDB entry:
 

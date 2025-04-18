@@ -32,7 +32,7 @@ I would suggest trying to create one in an existing location first, so you famil
 
 <figure><img src="../../.gitbook/assets/image25.png" alt=""><figcaption><p>Files for mV</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image4 (1).png" alt=""><figcaption><p>Files for fV</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image4.png" alt=""><figcaption><p>Files for fV</p></figcaption></figure>
 
 3. Export to GLB so you end up with those files in the raw folder.
 
@@ -42,7 +42,7 @@ I would suggest trying to create one in an existing location first, so you famil
 
 <figure><img src="../../.gitbook/assets/image12.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image1 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image1.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image9.png" alt=""><figcaption></figcaption></figure>
 
@@ -57,7 +57,7 @@ For easier selection merge head mesh vertices by distance. To do this, select th
 
 5. Import your piercing mesh. I’ll use the septum half ring as an example. Make sure the mesh is already UV unwrapped if using custom mesh.
 
-<figure><img src="../../.gitbook/assets/image3 (1).png" alt=""><figcaption><p>I’ve hidden the rest of the piercings for visibility, only leaving the one that will help me to adjust the position.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image3.png" alt=""><figcaption><p>I’ve hidden the rest of the piercings for visibility, only leaving the one that will help me to adjust the position.</p></figcaption></figure>
 
 6. Duplicate the vanilla piercing. To do so select it in the viewport (object mode), press shift+D and then click the right mouse button. Hide the original mesh.
 7. With vanilla mesh duplicate selected, go to edit mode (TAB) and press Del -> vertices. You will end up with an empty submesh.
@@ -79,15 +79,15 @@ Now we need to either weight paint, or **transfer weights** if your new piercing
 
 You can see the current weights the mesh has in Weight Paint mode.
 
-<figure><img src="../../.gitbook/assets/image8 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image8.png" alt=""><figcaption></figcaption></figure>
 
 I’ve selected the vanilla piercing here. By clicking different vertex groups you can see the colour of the mesh changes. This colour denotes how much influence each bone has on the mesh. Red is 100% and dark blue is 0%.
 
-<figure><img src="../../.gitbook/assets/image5 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image5.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image15.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image7 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image7.png" alt=""><figcaption></figcaption></figure>
 
 1. Go back to object mode if you’re in weight paint mode. Select your mesh and remove all vertex groups.
 
@@ -95,7 +95,7 @@ I’ve selected the vanilla piercing here. By clicking different vertex groups y
 
 2. Go to modifiers (wrench icon) and add Data transfer modifier with below options. The source would be the vanilla piercing submesh that has weights.
 
-<figure><img src="../../.gitbook/assets/image2 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2.png" alt=""><figcaption></figcaption></figure>
 
 3.  Click Generate Data Layers, then apply the modifier.
 
@@ -172,7 +172,7 @@ To test your mod, set piercings to slider 12 for fV or 14 for mV and you should 
 
 1. You can only export the head morphtarget as it is the only one we’ll need.
 
-<figure><img src="../../.gitbook/assets/image6 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image6.png" alt=""><figcaption></figcaption></figure>
 
 2. Import selected one into Blender, merge by distance, duplicate the mesh and delete all vertices from your duplicate in edit mode. This is similar to points 4-8 from the first section of the guide, except we’re working just with head mesh, not piercing meshes.
 3. Weight paint your piercing. Since the location is not covered by any vanilla piercing, transfer the weights from your head mesh. Delete unused vertex groups (the ones that do not affect your piercing, ie have 0 weight).\
