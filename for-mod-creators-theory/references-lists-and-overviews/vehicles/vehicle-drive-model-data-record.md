@@ -19,6 +19,36 @@ N.B. Descriptions of the properties are conclusions of multiple contributors' tr
 * For a guide on how to visually change base game vehicles, see [altering-appearances-within-wolvenkit-full-workflow.md](../../../modding-guides/npcs/appearances-change-the-looks/altering-appearances-within-wolvenkit-full-workflow.md "mention") (the process is the same for cars)
 * If you want to know how to change an existing car, check [tweak-modding-guides.md](../../tweaks/tweak-modding-guides.md "mention"), for example [adding-stats-and-modifiers.md](../../../modding-guides/items-equipment/editing-existing-items/adding-stats-and-modifiers.md "mention")
 
+## Vehicle Records: Performance
+
+The root of vehicle data and information is under the gamedataVehicle_Record, and those entries generally follow the name pattern `Vehicle.v_{vehicle_name}`. Below is a high-level sketch of the tree of this structure, insofar relevant for the vehicle performance. Here is [the full overview](../../../for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicle-record.md).
+
+```
+gamedataVehicle_Record
+   vehAirControl
+   vehDriveModelData
+     burnOut (gamedataVehicleBurnOut_Record)
+     driveHelpers[*]
+       gamedataDriveWheelsAccelerateNoise_Record
+       gamedataDynamicDownforceHelper_Record
+       gamedataHandbrakeFrictionModifier_Record
+       gamedataInAirGravityModifier_Record
+       gamedataRearWheelsFrictionModifier_Record
+       gamedataRotationLimiter_Record
+       gamedataUphillDriveHelper_Record
+     wheelSetup (gamedataVehicleWheelDrivingSetup_4_Record)
+       backPreset  (gamedataVehicleWheelDrivingPreset_Record)
+       frontPreset (gamedataVehicleWheelDrivingPreset_Record)
+       LB          (gamedataVehicleWheelRole_Record)
+       LF          (gamedataVehicleWheelRole_Record)
+       RB          (gamedataVehicleWheelRole_Record)
+       RF          (gamedataVehicleWheelRole_Record)
+     wheelsFrictionMap (gamedataVehicleWheelsFrictionMap_Record)
+   vehEngineData
+     gearCurvesPath
+     gears[gamedataVehicleGearRecord]
+```
+
 ## Vehicle.VehicleDriveModelDataDefault\_4w.tweak
 
 <details>
