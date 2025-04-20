@@ -6,9 +6,6 @@ description: All the properties that make your car go fast (or slow)
 
 ## Summary
 
-**Created:** Jul 9, 2022 by jato\
-**Last documented edit:** March 29 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
-
 This page lists those properties that control how a vehicle behaves. By changing/tweaking them, you can modify a vehicle's behaviour.
 
 Legend:
@@ -633,3 +630,6 @@ groups:
 </code></pre></td><td></td></tr><tr><td>wheelTurnMaxAddPerSecond</td><td>Float</td><td>65</td><td></td></tr><tr><td>wheelTurnMaxSubPerSecond</td><td>Float</td><td>100</td><td></td></tr><tr><td>wheelsFrictionMap</td><td>TweakDBID</td><td><pre><code>"CarDrivingFrictionMap.Default" 
 </code></pre></td><td></td></tr></tbody></table>
 
+## Page History
+**Created:** Jul 9, 2022 by jato\
+**Last documented edit:** March 29 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
