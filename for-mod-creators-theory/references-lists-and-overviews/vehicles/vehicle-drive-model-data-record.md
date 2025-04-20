@@ -632,4 +632,5 @@ groups:
 
 ## Page History
 **Created:** Jul 9, 2022 by jato\
-**Last documented edit:** March 29 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Intermediate edits:** March 29 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Rework:** in April 2025 by [martine-dee](https://github.com/martine-dee). While this encompasses so much more than the Drive Model, it gives a comprehensive overview in line with the original intent to show 'All the properties that make your car go fast (or slow)'. My strong suggestion is to DO keep this information in one page as a single-stop with all information.
