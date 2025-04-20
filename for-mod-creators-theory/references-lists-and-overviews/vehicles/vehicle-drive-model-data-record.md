@@ -93,10 +93,10 @@ groups:
 | anglePID | Vector3 | - | (1.0, 0.0, 0.0) | |
 | flippedOverRecoveryPID | Vector3 | - | (-175.0, 0.0, 0.0) | |
 | massReference | float | - | 1600.0 | |
-| pitch | ref | - | `Vehicle.VehicleAirControlCar_inline1` | |
-| roll | ref | - | `Vehicle.VehicleAirControlCar_inline2` | |
+| pitch | TweakDBID | - | ID |  |
+| roll | TweakDBID | - | ID | |
 | velocityPID | Vector3 | - | (1.0, 0.0, 0.0) | |
-| yaw | ref | - | `Vehicle.VehicleAirControlCar_inline0` | |
+| yaw | TweakDBID | - | ID | |
 
 #### gamedataVehicleAirControlAxis_Record
 
@@ -108,7 +108,7 @@ groups:
 | angleCorrectionThresholdMin | float | - | 10.0 | |
 | angleDampFactor | float | - | 0.5 | |
 | brakeMultiplierWhenNoInput | float | - | 3.0 | |
-| controlAxis | ref | - | LR | |
+| controlAxis | ? | - | LR | |
 | inputDampFactor | float | - | 1.0 | |
 | maxAngleCompensation | float | - | 100.0 | |
 | maxAngleToCompensateThreshold | float | - | 100.0 | |
@@ -133,12 +133,12 @@ groups:
 | bodyFriction | float | - | 0.6 | The level of friction between the car and objects it touches, such as walls and roads. A higher value means losing more speed on hitting walls but also better grip and car stability on uneven roads. It is one factor of many that affects grip and how the car sticks to the ground. |
 | brakingEstimationMagicFactor | float | - | 0.5 | |
 | brakingFrictionFactor | float | - | 1.4 | (?) How "hard" the vehicle brakes |
-| burnOut | ref | - | `Vehicle.v_sport1_rayfield_caliburn_inline11` | A compound object that describes specific behavior of tyre burnout, e.g. for a race launch. |
+| burnOut | TweakDBID | - | ID | A compound object that describes specific behavior of tyre burnout, e.g. for a race launch. |
 | center_of_mass_offset | Vector3 | - | (0, -0.13, 0.08) | (?) Where the center of mass is (relative to the vehicle's spawn point) |
 | chassis_mass | float | - | 1750.0 | Presumably, the mass of the chassis, in LBS. This value is related with `total_mass`. It makes sense that this value is always &le; `total_maws`, but it is not clear exactly what role does the difference between the two play in the car movemnent. Nonetheless, experiments show a lower car stability at high speeds when these two values are not equal. |
 | differentialOvershootFactor | float | - | 0.0 | |
-| driveHelpers | array of refs | - | An array of vehicle physics modifiers. |
-| flatTireSim | ref | - | `Vehicle.VehicleFlatTireSimulation_AWD_4w` | |
+| driveHelpers | array of TweakDBIDs | - | An array of vehicle physics modifiers. |
+| flatTireSim | TweakDBID | - | ID | |
 | forwardWeightTransferFactor | float | - | 0.3 | |
 | handbrakeBrakingTorque | float | - | 1600.0 | |
 | lowVelStoppingDeceleration | float | - | 0.8 | |
@@ -174,18 +174,18 @@ groups:
 | turningRollFactorWeakContactThresholdMax | float | - | 0.6 | |
 | turningRollFactorWeakContactThresholdMin | float | - | 0.9 | |
 | useAlternativeTurnUpdate | boolean | - | true | |
-| waterParams | ref | - | `Vehicle.VehicleWaterDefault_4w` | | 
-| wheelSetup | ref | - | A compound object that contains much of things related with the wheel behavior. |
+| waterParams | TweakDBID | - | ID | | 
+| wheelSetup | TweakDBID | - | ID | A compound object that contains much of things related with the wheel behavior. |
 | wheelTurnMaxAddPerSecond | float | - | 100.0 | The maximum speed of steering. |
 | wheelTurnMaxSubPerSecond | float | - | 130.0 | The maximum speed of the steering wheel/handles returning to the neutral position. |
-| wheelsFrictionMap | ref | - | `CarDrivingFrictionMap.Super_Sport_Friction_Map` | |
+| wheelsFrictionMap | TweakDBID | - | ID | |
 
 In addition to the above, motorcycles (gamedataBikeDriveModelData_Record) also have:
 
 | Property | Data Type | Value Range | Sample Value  | Meaning |
 | :--- | :--- | :--- | :--- | :--- |
 | bikeCOMOffsetDampFactor | float | - | 0.25 | |
-| bikeCurvesPath | ref | - | `base\gameplay\vehicles\curves\default_bike.bikecurveset` | |
+| bikeCurvesPath | TweakDBID | - | ID | |
 | bikeMaxCOMLongOffset | float | - | 0.77 | |
 | bikeMaxTilt | float | - | 38.0 | (?) How far it will tilt in a curve |
 | bikeMinCOMLongOffset | float | - | 0.87 | |
@@ -227,7 +227,7 @@ In addition to the above, motorcycles (gamedataBikeDriveModelData_Record) also h
 | maxForcesDifference | float | - | 1.0 | |
 | minApplyTime | float | &ge; 0 | 0.8 | |
 | minForcesDifference | float | - | 1.0 | |
-| type | ref | - | `Vehicle.DriveWheelsAccelerateNoise_HelperType` | |
+| type | TweakDBID | - | ID | |
 
 #### gamedataDynamicDownforceHelper_Record
 
@@ -237,7 +237,7 @@ In addition to the above, motorcycles (gamedataBikeDriveModelData_Record) also h
 | maxSpeedFactorAir | float | - | 0.0 | (?) This appears to help car come back to the ground once it separates from it, like aerodynamic downforce. |
 | maxSpeedFactorGround | float | - | 0.4 | (?) This appears to help the car stick to the ground, like aerodynamic downforce. |
 | minSpeed | float | - | 10.0 | |
-| type | ref | - | `Vehicle.DynamicDownforceHelper_HelperType` | |
+| type | TweakDBID | - | ID | |
 
 #### gamedataHandbrakeFrictionModifier_Record
 
@@ -248,7 +248,7 @@ In addition to the above, motorcycles (gamedataBikeDriveModelData_Record) also h
 | postHandbrakeTractionBoost | float | - | 2.0 | |
 | rearWheelsLatFrictionCoef | float | - | 0.9 | |
 | rearWheelsLongFrictionCoef | float | - | 0.6 | |
-| type | ref | - | `Vehicle.HandbrakeFrictionModifier_HelperType` | |
+| type | TweakDBID | - | ID | |
 
 #### gamedataInAirGravityModifier_Record
 
@@ -259,7 +259,7 @@ In addition to the above, motorcycles (gamedataBikeDriveModelData_Record) also h
 | maxDriveSpeed | float | - | 20.0 | |
 | minDriveSpeed | float | - | 3.0 | |
 | smoothingFactor | float | - | 0.2 | |
-| type | ref | - | Vehicle.InAirGravityModifier_HelperType | |
+| type | TweakDBID | - | ID | |
 | zVelReductionEnd | float | - | -10.0 | |
 | zVelReductionStart | float | - | -4.0 | |
 
@@ -275,7 +275,7 @@ In addition to the above, motorcycles (gamedataBikeDriveModelData_Record) also h
 | minLatSlipRatio | float | - | 0.25 | |
 | minLongFrictionCoef | float | - | 0.8 | |
 | minLongSlipRatio | float | - | 0.3 | |
-| type | ref | - | `Vehicle.RearWheelsFrictionModifier_HelperType` | |
+| type | TweakDBID | - | ID | |
 
 #### gamedataRotationLimiter_Record
 
@@ -292,7 +292,7 @@ This structure seems aimed at drifting characteristics of the vehicle.
 | handbrakeLimit | float | - | 2.49 | |
 | maxAngularSpeedRad | float | - | 2.6 | |
 | smoothingTime | float | - | 0.2 | |
-| type | ref | - | `Vehicle.RotationLimier_HelperType` | |
+| type | TweakDBID | - | ID | |
 
 #### gamedataUphillDriveHelper_Record
 
@@ -300,7 +300,7 @@ This structure seems aimed at drifting characteristics of the vehicle.
 | :--- | :--- | :--- | :--- | :--- |
 | slopeCompensationFactor | float | - | 0.5 | |
 | slopeCompensationMaxAngle | float | - | 20.0 | |
-| type | ref | - | `Vehicle.UphillDriveHelper_HelperType` | |
+| type | TweakDBID | - | ID | |
 
 #### The .wheelSetup property
 
@@ -361,7 +361,7 @@ N.B. Vehicles generally have two instances of this entry, one for the front whee
 | forceReverseRPMToMin | boolean | - | false | |
 | gearChangeCooldown | float | &ge; 0 | 0.3 | The time (in seconds) before another gear change can take place after a gear change. |
 | gearChangeTime | float | &ge; 0 | 0.22 | The time (in seconds) that it takes to change a gear. |
-| gearCurvesPath | ref | - | `base\gameplay\vehicles\curves\engine_torque\large_torquey_na.curveset` | |
+| gearCurvesPath | TweakDBID | - | ID | |
 | gears | array | - | | The array with information on each of the vehicle's gears. |
 | maxRPM | float | - | 7100.0 | Maximum engine RPM. |
 | minRPM | float | &ge; 0 | 800.0 | Minimum engine RPM. Beware of this setting in relation with the gears information. If the gear information suggests that a lower RPM is needed to stop the car than minRPM, stopping the car might become a non-straightforward thing. |
