@@ -10,7 +10,10 @@ This page lists those properties that control how a vehicle behaves. By changing
 
 Legend:
 * An explanation that begins with (?) needs verifying.
-* A value range that is filled with a dash '-' indicates that the value either is a ref or boolean, or that the value range is open for experimentation as there are no specific, known limitations.
+* A value range that is filled with a dash '-' indicates either that:
+** The value range is open for experimentation as there are no specific, known limitations, or
+** That the value range is inferrable, e.g. a boolean or a TweakDBID.
+** Unknown fields have a question mark, '?', as content.
 
 N.B. Descriptions of the properties are conclusions of multiple contributors' trial and error process. While the best effort was done to identify and describe completely and accurately what those properties mean and how to work with them, there is no guarantee of it being so.
 
