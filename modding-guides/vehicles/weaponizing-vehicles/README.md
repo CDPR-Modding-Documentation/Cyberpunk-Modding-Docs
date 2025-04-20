@@ -189,6 +189,9 @@ That means you're missing the correct `entSlot`s.&#x20;
 Check your `entSlotComponent`  (usually called `vehicle_slots`) and make sure that you have the vehicle slots corresponding to the weapons you added to your .yaml file.&#x20;
 
 {% hint style="warning" %}
-The spelling doesn't need to be the same! For example, the Shion has `Vehicle.Vehicle_Power_Weapon_Left_A`, but the entSlot is called `VehiclePowerWeaponLeftA`. Check the original vehicle's file for tbhe correct spelling!
+The spelling doesn't need to be the same!&#x20;
 {% endhint %}
 
+For example, the Shion has `Vehicle.Vehicle_Power_Weapon_Left_A`, but the entSlot is called `VehiclePowerWeaponLeftA`. This is defined in the tweak record:
+
+<figure><img src="../../../.gitbook/assets/weapons_vehicles_tweakrecord_slot.png" alt=""><figcaption></figcaption></figure>
