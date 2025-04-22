@@ -29,6 +29,8 @@ Here, you can find [#usage](./#usage "mention") instructions, as well as an over
 
 ## Compatibility
 
+{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
+
 ## Usage
 
 The toolbar to the right of your viewport will show you the `CP77 Modding` tab.\
