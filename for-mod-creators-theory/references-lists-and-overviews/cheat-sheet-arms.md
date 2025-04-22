@@ -4,6 +4,16 @@ description: Arms are why we can't have nice things.
 
 # Cheat Sheet: Arms
 
+## Summary
+
+This page lists the different player arms, their component names, and the paths to their files.
+
+### Wait, this is not what I want!
+
+To make your clothes react to different arms, check [archivexl-suffixes-and-substitutions.md](../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") -> [#arm-states](../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#arm-states "mention")
+
+
+
 The player base body does not come with arms attached — this made it easier for the developers to switch out the different kinds of cyber arms. It makes everything harder for you.
 
 ## Default Arms
