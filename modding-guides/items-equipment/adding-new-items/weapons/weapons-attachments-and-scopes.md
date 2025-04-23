@@ -11,11 +11,7 @@ description: How to mod weapon attachments
 
 This page will tell you how to mod weapon attachments and scopes.
 
-{% hint style="info" %}
-This page is a work in progress. If you're missing any information, please [sign up as an editor](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7) and edit it in!
-{% endhint %}
-
-
+{% include "../../../../.gitbook/includes/if-you-can-contribute-please-sign-up.md" %}
 
 ## Component visibility
 

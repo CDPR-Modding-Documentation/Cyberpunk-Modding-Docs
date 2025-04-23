@@ -23,4 +23,4 @@ For a guide, check Modding Guides ->[sound](../../modding-guides/sound/ "mention
 
 
 
-There is nothing here yet! Maybe you'd like to [sign up and edit](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7)?
+{% include "../../.gitbook/includes/this-page-is-a-stub-if-yo....md" %}

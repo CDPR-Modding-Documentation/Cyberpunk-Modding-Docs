@@ -11,7 +11,7 @@ description: How to contribute to the thing you're currently reading (please do)
 
 This page gives you some intel on how the wiki works and why you should start contributing.&#x20;
 
-To skip the pep talk, you can jump directly to [#how-to-edit](./#how-to-edit "mention") or [**sign up here**](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7) (github/Google account required)
+To skip the pep talk, you can jump directly to [#how-to-edit](./#how-to-edit "mention") or [**sign up here**](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/IZreyNnVlImKaeMtoJLY) (github/Google account required)
 
 ## Why you should edit the wiki
 
@@ -109,7 +109,7 @@ Good luck, soldier!
 
 ## How to edit
 
-Before you can edit, you need to sign up to Gitbook (no way around it). It's integrated with github, so you can use that or your google log-in.&#x20;
+Before you can edit, you need to [sign up to Gitbook](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/IZreyNnVlImKaeMtoJLY) (no way around it). It's integrated with github, so you can use that or your google log-in.&#x20;
 
 As of today (March 2024), I've never received a single spam mail from them.
 

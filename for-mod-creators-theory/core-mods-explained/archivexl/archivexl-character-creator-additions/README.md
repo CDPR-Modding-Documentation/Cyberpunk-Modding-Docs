@@ -28,7 +28,7 @@ To learn more about the character creator, check [files-and-what-they-do](../../
 
 To prevent the character creator from becoming a cluttered unusable mess, we **strongly encourage** sticking to already-established switcher groups.
 
-If the list below doesn't meet your needs, feel free to [sign up](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7) and [edit it!](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/the-wiki)
+{% include "../../../../.gitbook/includes/if-you-can-contribute-please-sign-up.md" %}
 
 {% hint style="warning" %}
 Do **not** change the index! If two switchers have the same index, then only the first one will be used.

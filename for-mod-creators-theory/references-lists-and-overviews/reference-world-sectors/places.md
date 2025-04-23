@@ -12,7 +12,7 @@ For a list of existing node types and information about them, see [reference-.st
 
 There are several overviews of interesting locations:
 
-<table><thead><tr><th width="290"></th><th></th></tr></thead><tbody><tr><td><a data-mention href="./">.</a></td><td>Wiki: List of world sectors for e.g. V's apartment. Sign up and edit!</td></tr><tr><td><a href="https://wiki.redmodding.org/cyber-engine-tweaks/teleportation-locations">CET wiki</a></td><td>List of interesting locations for teleporting</td></tr><tr><td><a href="https://discord.com/invite/47jV2rNdgn">AMM DIscord</a></td><td>An entire channel dedicated to locations</td></tr></tbody></table>
+<table><thead><tr><th width="290"></th><th></th></tr></thead><tbody><tr><td><a data-mention href="./">.</a></td><td>Wiki: List of world sectors for e.g. V's apartment.</td></tr><tr><td><a href="https://wiki.redmodding.org/cyber-engine-tweaks/teleportation-locations">CET wiki</a></td><td>List of interesting locations for teleporting</td></tr><tr><td><a href="https://discord.com/invite/47jV2rNdgn">AMM DIscord</a></td><td>An entire channel dedicated to locations</td></tr></tbody></table>
 
 ## Getting an item's world sector
 
@@ -79,7 +79,7 @@ You might want to consider using a unique mesh rather than a standard cup or bot
 
 ### Method 3: Via script
 
-Go [here for PL](https://colab.research.google.com/github/Simarilius-uk/sectorStuff/blob/main/AllBlocks\_colab\_w\_streamingblock\_PL.ipynb) ([old link](https://colab.research.google.com/github/Simarilius-uk/sectorStuff/blob/main/AllBlocks\_colab\_w\_streamingblock.ipynb)) and either use the script in your webbrowser (recommended) or download the script locally to run it with Python.&#x20;
+Go [here for PL](https://colab.research.google.com/github/Simarilius-uk/sectorStuff/blob/main/AllBlocks_colab_w_streamingblock_PL.ipynb) ([old link](https://colab.research.google.com/github/Simarilius-uk/sectorStuff/blob/main/AllBlocks_colab_w_streamingblock.ipynb)) and either use the script in your webbrowser (recommended) or download the script locally to run it with Python.&#x20;
 
 #### When running from browser:
 
