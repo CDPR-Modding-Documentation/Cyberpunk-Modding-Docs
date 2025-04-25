@@ -125,6 +125,7 @@
       * [CCXL Theory: Scopes and extensions](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-theory-scopes-and-extensions.md)
       * [CCXL: Hairs](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-hairs.md)
       * [CCXL: Body Tattoos](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-body-tattoos.md)
+      * [CCXL: Eyebrows](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-eyebrows.md)
       * [CCXL: Creating a Switcher](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-creating-a-switcher.md)
     * [Mesh appearance auto expansion](for-mod-creators-theory/core-mods-explained/archivexl/mesh-appearance-auto-expansion.md)
   * [▶️ TweakXL](for-mod-creators-theory/core-mods-explained/tweakxl/README.md)
