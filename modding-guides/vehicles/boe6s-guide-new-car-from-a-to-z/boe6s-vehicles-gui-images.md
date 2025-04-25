@@ -113,9 +113,9 @@ The .png files need to be named exactly like the `atlasPartName` property in the
 {% endhint %}
 
 2. In Wolvenkit, select File -> Add Files... -> Generate .inkatlas \
-   ![](../../../.gitbook/assets/image.png)
+   ![](../../../.gitbook/assets/boe6_icons_inkatlas_1.png)
 3. Fill the dialogue like this:\
-   ![](<../../../.gitbook/assets/image (1).png>)
+   ![](../../../.gitbook/assets/inkatlas_generator.png)
 4. Click the "Finish" button
 5. Wolvenkit has generated two new .png files for you. Import them via the Import Tool.
 6. Check your newly-generated inkatlas. You should see a preview, and everything should in general be fine.

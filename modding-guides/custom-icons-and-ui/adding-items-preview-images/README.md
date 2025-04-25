@@ -25,28 +25,13 @@ The guide below will teach you how to make preview icons. While it's a technical
 * For a script to generate inkatlas files, check [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate_inkatlas.py)
 * To learn more about the files involved, check [game-icons-the-inkatlas-file.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md "mention")
 
-## The required files
+## Required tools
 
-If you downloaded the example project ([#getting-the-files](../../animations/animations/archivexl-adding-photo-mode-poses/#getting-the-files "mention")), the preview is already hooked up. Otherwise,[ download ](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/_resources_and_assets/icons)the template archive for your kind of template (kindly provided by Apart).
+You need at least Wolvenkit 8.16.2 for this (download [stable](https://github.com/WolvenKit/Wolvenkit/releases) | [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases)), as it can generate inkatlas files.
 
-### Go away with your examples, I'll do everything by hand!
+## Destination path
 
-Okay, you do you. Here's how:
-
-<details>
-
-<summary>Finding the files by hand</summary>
-
-1. search in Wolvenkit for `icons > .inkatlas`
-2. Pick one of CDPR's icon files (look inside first, you want the right kind of icon — weapons have different icons than equipment) and add it to your project
-3. Right-click on the file in the asset browser and select "`find used files`"
-4. Find the `.xbm` file and add it to your project as well
-5. **Move** both of these files to your custom folder, as you don't want to overwrite game default icons
-6. Optionally: Re-name them. This guide assumes that they're named `preview_icons.inkatlas` and `preview_icons.xbm`
-
-</details>
-
-You should now have a structure like this:
+If you downloaded the example project ([#getting-the-files](../../animations/animations/archivexl-adding-photo-mode-poses/#getting-the-files "mention")), you will already find a preview, which we will overwrite:
 
 ```
 tutorial  
@@ -56,6 +41,16 @@ tutorial
           - preview_icons.inkatlas       <<<  
           - preview_icons.xbm            <<<  
 ```
+
+## Image dimensions
+
+You need to know the correct dimensions for your images:
+
+| Item type    | Width   | Height(s) |
+| ------------ | ------- | --------- |
+| Clothing     | 130-160 | 76-160    |
+| Gun          | 320     | 80-160    |
+| Melee weapon | 320     | 60 - 145  |
 
 ## Taking preview pictures
 
@@ -259,16 +254,27 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 
 <figure><img src="../../../.gitbook/assets/icon_tutorial_09_align_icons (1).png" alt=""><figcaption></figcaption></figure>
 
-## Hooking up the inkatlas
+## Generating the inkatlas
 
-1. Open the file in WolvenKit.
-2. Open the list `slots`.
-3. For the first two `inkTextureSlot` items, set the value for `DepotPath` to the relative path of your xbm (`tutorial\torso\my_custom_shirt\ops\preview_icons.xbm`):
+{% hint style="info" %}
+If you're missing the menu entry, you need to update Wolvenkit (download [stable](https://github.com/WolvenKit/Wolvenkit/releases) | [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases)).
+{% endhint %}
 
-<figure><img src="../../../.gitbook/assets/inkatlas_slot_names.png" alt=""><figcaption></figcaption></figure>
+1. Create an icon for each of your item's colour variants. Keep the [#image-dimensions](./#image-dimensions "mention") in mind - if you save your files with the right aspect ratio or in the right size, you won't have to resize them later.
 
-4. Save the file. If it doesn't update, reload it (Hotkey: `Ctrl+R`)
-5. You now have a tab "PartMapping", where you can see which texture corresponds to which slot: select it on the left and check the `partsName`, which corresponds to the entry in the slot's `parts` array:
+{% hint style="warning" %}
+The .png files need to be named exactly like the `atlasPartName` property in the yaml.
+{% endhint %}
+
+In Wolvenkit, select File -> Add Files... -> Generate .inkatlas \
+![](../../../.gitbook/assets/boe6_icons_inkatlas_1.png)
+
+2. Fill the dialogue like this:\
+   ![](../../../.gitbook/assets/inkatlas_generation_icon_page.png)\
+
+3. Click the "Finish" button
+4. Wolvenkit has generated two new .png files for you. Import them via the Import Tool.
+5. Check your newly-generated inkatlas. You should see a preview, and everything should in general be fine.
 
 <figure><img src="../../../.gitbook/assets/inkatlas_icon_to_slot_assignment.png" alt=""><figcaption></figcaption></figure>
 
@@ -303,7 +309,7 @@ Items.my_custom_shirt_redwhite:
   appearanceSuffixes: []
   icon:
     atlasResourcePath: tutorial\torso\my_custom_shirt\ops\preview_icons.inkatlas
-    atlasPartName: slot_01
+    atlasPartName: redwhite
 ```
 
 Please refer to the [ArchiveXL guide](../../animations/animations/archivexl-adding-photo-mode-poses/) for an explanation of the other properties, as this page will only hold information about preview icons.
