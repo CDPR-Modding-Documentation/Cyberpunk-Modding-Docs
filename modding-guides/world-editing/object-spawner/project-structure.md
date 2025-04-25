@@ -44,4 +44,4 @@ Each root group will become it's own streaming sector during export.
     * If you put both parts into the same root group, thus the same sector, the game would always load lobby + apartment
     * Putting each part into its own root group, thus sector, means the game can load the lobby while you're at ground level, with the other part only being loaded once the player is close
 
-    <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption><p>Two root groups will turn into two saved groups, will turn into two sectors each with their own streaming box extents</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Two root groups will turn into two saved groups, will turn into two sectors each with their own streaming box extents</p></figcaption></figure>

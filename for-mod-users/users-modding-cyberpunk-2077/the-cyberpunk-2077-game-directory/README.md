@@ -81,7 +81,7 @@ Right-click on your game in the list and select `Manage`. Then, click on the fol
 
 1. Select the folder path by clicking on the empty bit to the right of the explorer's path bar:
 
-<figure><img src="../../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2. The entire path will be highlighted (if it's not, you can do that by pressing `Ctrl+A`)
 3. Press `Ctrl+C` to copy it to your clipboard

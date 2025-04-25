@@ -1,114 +1,77 @@
 # 🖼️ Boe6's vehicles: GUI Images
 
-Next we get to create the GUI images for the vehicle. This includes the call menu, dealership website, and the vehicle’s manufacturer logo.
+## Summary
 
-First we’ll update the vehicle brand’s logo.
+**Last documented update:** April 25 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-Locate the file referenced in your `UIIcon.Brand_Logo:` record and add it to the project.
+This page will show you how to create custom GUI images for your vehicle.
 
-Example: `base\gameplay\gui\common\icons\weapon_manufacturers.inkatlas`
-
-Open the .inkatlas file, and navigate to: `“RDTDataViewModel > slots > 1/0 > texture”`
+## 1. The vendor icon
 
 {% hint style="info" %}
-Both the first default and the “1080”.xbm can be changed to reference the same image file.
+If you are using one of the existing in-game brands, you can skip this step and go straight to [#id-2.-the-call-menu](boe6s-vehicles-gui-images.md#id-2.-the-call-menu "mention")
 {% endhint %}
 
-Add the first “weapon\_manufacturers.xbm” file to your project.
+### Step 1: Adding the files to your project
 
-Move and rename both .inkatlas and .xbm to appropriate paths.
-
-Examples:&#x20;
-
-`boe6\mini_cooper\assets\logos.inkatlas`&#x20;
-
-`boe6\mini_cooper\assets\logos.xbm`
-
-Update Mini\_Logo Tweak .yaml Record, example:
-
-```
-atlasResourcePath: boe6\mini_cooper\assets\logos.inkatlas
-```
-
-Update .inkatlas > slots > texture. Example:
+1. Find the file that is referenced in your record's `UIIcon.Brand_Logo`  and add it to your project (e.g. `base\gameplay\gui\common\icons\weapon_manufacturers.inkatlas` ).
+2. Open the file, and find the .xbm referenced in `slots[0]` > `texture`&#x20;
+3. Add this file to your project as well
+4. Copy the texture path from `slot[1]`  to `slot[1]` (they should be using the same texture)
+5. Save the inkatlas and close it
+6. Now, [move](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#rename) the xbm (use Wolvenkit's rename dialogue, and check the box)
+7. Repeat the process for the .inkatlas. The paths should update automatically, you should now have something like this:
 
 <figure><img src="../../../.gitbook/assets/inkatlasupdate.PNG" alt=""><figcaption></figcaption></figure>
 
-Save and test. Please note you’ll see this texture when scanning the car. It should show as the new car’s default logo.
+8.  Now update the tweak: `UIIcon.Brand_Logo:` part of your yaml with the new atlasResourcePath.\
+    Example:
 
-Now we update the .xbm file.
+    <pre><code>UIIcon.Brand_Logo:
+    <strong>  atlasResourcePath: boe6\mini_cooper\assets\logos.inkatlas
+    </strong></code></pre>
 
-Open the .xbm in wKit, and open the “setup” path.
+That's it - your car should now use your local files.
 
-Example:
-
-<figure><img src="../../../.gitbook/assets/xbmSetup.PNG" alt=""><figcaption></figcaption></figure>
-
-Please note that you’ll need these settings for properly importing and exporting .xbm files shortly.
-
-Export your logos.xbm file as a .tga file.
+### Step 2: Editing your texture
 
 {% hint style="info" %}
-.png will not preserve transparency, as cyberpunk requires alpha layers.
+For step-by-step procedures and the right settings, see [images-importing-editing-exporting.md](../../textures-and-luts/images-importing-editing-exporting.md "mention")
 {% endhint %}
 
-Export example:
+1. Export your .xbm to a .png file (see the info box)
+2. Use your favourite graphics editor to exchange the "Mini" icon with your personal brand icon
+3. Save the .png file with alpha channel (if you don't know how, refer to the link in the info box)
+4. Use the import tool to import the texture again. "Transparency from alpha channel" should be automatically selected.
 
-<figure><img src="../../../.gitbook/assets/exportxbmexample.PNG" alt=""><figcaption><p>The .tga format is useful for it's alpha transparency layer support.</p></figcaption></figure>
+### Changing the texture slot name
 
-.tga files can be edited by any photo editor that supports the alpha channels. I use Photoshop, and I believe paint.net is also supported.
+This part is optional.
 
-You’ll need a logo source that is black and white, black being transparent. Ensure your logo is 100% solid white.
-
-Aim to replace a similarly shaped logo in the existing image. Make sure you update both the RGB and alpha channels.
-
-Examples:
-
-<div><figure><img src="../../../.gitbook/assets/logowithalpha.PNG" alt=""><figcaption><p>alpha layer shown in red</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/logowithoutalpha.PNG" alt=""><figcaption></figcaption></figure></div>
-
-Save the .tga file, and make sure to not use compression.
-
-Open the Import Tool (under Tools) and refresh.
-
-Select the edited .tga file, and set the import settings to mirror those in the “setup” options in the .xbm file. We viewed this earlier.
-
-In my case, I changed Compression to `TCM_DXTAlpha`
-
-Save and test that the mirror car’s brand still renders when scanned.
-
-Open the .inkatlas in wkit and switch the tab to “Part Mapping”
-
-{% hint style="info" %}
-You may have to close the .inkatlas and reopen for the Part Mapping to update.
-{% endhint %}
-
-Find and select your logo, example:
+1. Open your .inkatlas file, and switch to the `Part Mapping` tab
+2. Click on your logo and make sure that it's all inside the box:
 
 <figure><img src="../../../.gitbook/assets/logoinatlas.PNG" alt=""><figcaption><p>Notice the 'yaiba' text. This is what we will update next.</p></figcaption></figure>
 
-Edit the inkTextureAtlas > RDTDataViewModel > slots 0/1 > parts > logo replacing. Change the partName to your brand. Example:
+3. In the UI on the right, change partName to refer to your brand. The slot name will update automatically. For example:
 
 <figure><img src="../../../.gitbook/assets/inatlasbrandedit.PNG" alt=""><figcaption></figcaption></figure>
 
-Delete other logo maps under "parts" to clean up the file.
-
-Example of clean slots:
+4. If your image does not fit the slot, you can switch back to the first tab and delete all other slots, then change the `clippingRectInUVCoords` property:
 
 <figure><img src="../../../.gitbook/assets/cleanslotsooooohyeah.PNG" alt=""><figcaption></figcaption></figure>
 
-Open “clippingRectInUVCoords” to fix the bounds of your logo on the Part Mapping.
-
-Updated clipping example:
-
 <figure><img src="../../../.gitbook/assets/niceclipping.PNG" alt=""><figcaption><p>Notice how the edges of the rectangle match the limits of the logo width/height</p></figcaption></figure>
 
-Update UIIcon.Brand\_Logo: Tweak, atlasPartName: Brand.
+#### Updating the file
 
+Now update the tweak: `UIIcon.Brand_Logo:` part of your yaml with the new atlasPartName.\
 Example:
 
-```
-atlasPartName: mini
-```
+<pre><code>UIIcon.Brand_Logo:
+<strong>  atlasResourcePath: boe6\mini_cooper\assets\logos.inkatlas
+</strong><strong>  atlasPartName: mini
+</strong></code></pre>
 
 Save and test.
 
@@ -116,38 +79,62 @@ Logo should now show as the updated image when scanned in-game. Example:
 
 <figure><img src="../../../.gitbook/assets/ingamedetails.PNG" alt=""><figcaption></figcaption></figure>
 
-### Call Menu and Virtual Car Dealer Images
+## 2. The call menu
 
-The call menu vehicle icon, or the dealerAtlasPath is similar to other UI atlas textures.
+Now we'll set your car's icon(s) for the call menu.&#x20;
 
-Verify your .xbm image has the right setup/import attributes:
+{% hint style="warning" %}
+You need at least Wolvenkit 8.16.2 for this (download [stable](https://github.com/WolvenKit/Wolvenkit/releases) | [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases))
+{% endhint %}
 
-<figure><img src="../../../.gitbook/assets/xbmsetuptwice.PNG" alt=""><figcaption></figcaption></figure>
+### Step 1: Change the .yaml
 
-Link the .xbm to the .inkatlas with updated file paths and update the .inkatlas clipping values.
+Add the following lines to your .yaml (you need to repeat this process for every colour variant, unless you are using the `$instances` approach to tweak generation):
 
-<figure><img src="../../../.gitbook/assets/linkxbmandinkatlas.PNG" alt=""><figcaption></figcaption></figure>
-
-### Update Virtual Car Dealer Tweaks
-
-Don't forget to update your .yaml tweaks as well. Example:
-
+```yaml
+...
+  icon: 
+    atlasPartName: boe6_mini_cooper_vcd
+    atlasResourcePath: boe6\mini_cooper\assets\vehicle_icons.inkatlas
 ```
-Vehicle.boe6_mini_cooper.dealerPrice: 63000
-Vehicle.boe6_mini_cooper.dealerCred: 8
-Vehicle.boe6_mini_cooper.dealerAtlasPath: "boe6/mini_cooper/assets/boe6_mini_cooper_vcd.inkatlas"
-Vehicle.boe6_mini_cooper.dealerPartName: "boe6_mini_cooper_vcd"
-```
+
+Now, it's time to take preview pictures.
+
+### Step 2: Vehicle summon icons
 
 {% hint style="info" %}
-dealerPrice sets the total cost on the Virtual Car Dealer website
-
-dealerCred sets the required Street Cred level of the player to be able to purchase the vehicle
-
-dealerAtlasPath relative game path to the inkatlas with your xbm icon(s)
-
-dealerPartName id of the icon used in the .inkatlas file
+Everyone hates preview pictures, and you need one for every colour of your car. If you don't know how to do this, look at [#taking-preview-pictures](../../custom-icons-and-ui/adding-items-preview-images/#taking-preview-pictures "mention") for a workflow.
 {% endhint %}
+
+1. Create a 500x500px icon for each of your car's colour variants.&#x20;
+
+{% hint style="warning" %}
+The .png files need to be named exactly like the `atlasPartName` property in the yaml.
+{% endhint %}
+
+2. In Wolvenkit, select File -> Add Files... -> Generate .inkatlas \
+   ![](../../../.gitbook/assets/image.png)
+3. Fill the dialogue like this:\
+   ![](<../../../.gitbook/assets/image (1).png>)
+4. Click the "Finish" button
+5. Wolvenkit has generated two new .png files for you. Import them via the Import Tool.
+6. Check your newly-generated inkatlas. You should see a preview, and everything should in general be fine.
+7. If you start the game now, your car should have preview icons in the vehicle summon menu.
+
+### Step 3: Virtual Car Dealer images
+
+For the sake of simplicity, this guide will re-use the same icons for the Virtual Car Dealer preview.&#x20;
+
+Simply add the following lines to your .yaml:
+
+<pre class="language-yaml"><code class="lang-yaml"><strong>
+</strong>Vehicle.boe6_mini_cooper.dealerPrice: 63000
+Vehicle.boe6_mini_cooper.dealerCred: 8
+Vehicle.boe6_mini_cooper.dealerAtlasPath: boe6\mini_cooper\assets\vehicle_icons.inkatlas
+Vehicle.boe6_mini_cooper.dealerPartName: boe6_mini_cooper_vcd
+</code></pre>
+
+That's it — Virtual Car Dealer now knows what image goes with your car, and also what it should cost.
 
 The images should display properly on both the vehicle call menu, and the virtual car dealer website.
 
