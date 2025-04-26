@@ -49,7 +49,7 @@ You still need to adjust the paths for files you add, but we will do that togeth
 
 The files are split up by body gender. Anything with `pma` in their name is for masc V, `pwa` for fem.
 
-The .`inkcharactercustomization` file is the entry point for the character creator. You need only one per eyebrow&#x20;
+The .`inkcharactercustomization` file is the entry point for the character creator. You need only one per body gender&#x20;
 
 Each additional eyebrow slot needs the following files **per body gender**:
 
@@ -99,6 +99,13 @@ Below the switcherInfo, the template has two `gameuiAppearanceInfo` entries for 
 3. Make sure that the resource `flags` property is set to `Soft`
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdZe9wKNF23okr3FdRIXuuP6koklaEtScvSRqCsm5rWT3MQshbzX4TW_lGAu6SC9Eh_G7aLGl5k9N8v-VMeF6k7sHnjzPtRXrc0CsUlIKGYA-D1uanyx0D87QYCG5SefYc1f6Mf?key=WyWwGiOMdeG66pqGGsWGixWY" alt=""><figcaption></figcaption></figure>
+
+`headGroups`
+
+1. Expand the `headGroups` entry and you will see three `gameuiOptionsGroup` entries: `TPP`, `character_customization` and `TPP_photomode`.&#x20;
+2. Each of these three entries need to have each of the names of your eyebrows from the `gameuiSwitcherInfo` added to `options`. So when adding additional eyebrows, you would add`your_eyebrows_03` etc. to each of those three entries. &#x20;
+
+<div data-full-width="false"><figure><img src="../../../../.gitbook/assets/billede.png" alt=""><figcaption></figcaption></figure></div>
 
 ### Duplicating entries
 
