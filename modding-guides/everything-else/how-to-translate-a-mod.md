@@ -2,7 +2,22 @@
 description: >-
   This is a basic step by step guide (with images) aimed to help you to start
   and upload a Translation Mod.
+cover: ../../.gitbook/assets/translation.png
 coverY: 0
+layout:
+  cover:
+    visible: true
+    size: full
+  title:
+    visible: true
+  description:
+    visible: true
+  tableOfContents:
+    visible: true
+  outline:
+    visible: true
+  pagination:
+    visible: true
 ---
 
 # How to Translate a Mod
@@ -29,7 +44,7 @@ For this guide, you need to install the following requirements:
 * [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl/releases)
 * [RED4ext](https://github.com/WopsS/RED4ext/releases)
 * The mod you want to translate
-* A [Wolvenkit Project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
+* A [Wolvenkit Project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
 
 ***
 
@@ -317,12 +332,12 @@ If you want to translate them anyway, you need to **add the audio files** from y
 #### The files are included
 
 {% hint style="info" %}
-You can listen to audio files by simply selecting them in the Wolvenkit Project Browser and using the built-in audio player. See [Audio files](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-cli/usage/video-and-audio-files-cli#audio-files "mention") on the Wolvenkit wiki for a screenshot.
+You can listen to audio files by simply selecting them in the Wolvenkit Project Browser and using the built-in audio player. See [Audio files](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-cli/usage/video-and-audio-files-cli#audio-files "mention") on the Wolvenkit wiki for a screenshot.
 {% endhint %}
 
 Assuming that the original mod author did not rename the files, this makes it easier for you.
 
-1. [search Wolvenkit](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) with each file name
+1. [search Wolvenkit](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) with each file name
 2. Add the file to your Wolvenkit project
 3. Overwrite the original file
 
@@ -332,7 +347,7 @@ When you pack your mod now, it will use the translated files. If it doesn't, mak
 
 <summary>The files were all re-named, how do I find them?</summary>
 
-You'l have no choice but to find the right file from hand in the sources, which means you have to [search Wolvenkit](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for the extension `.wem`.
+You'l have no choice but to find the right file from hand in the sources, which means you have to [search Wolvenkit](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for the extension `.wem`.
 
 To filter the files by quest, use [reference-quest-ids.md](../../for-mod-creators-theory/references-lists-and-overviews/reference-quest-ids.md "mention") and filter the folder names by quest ID. If you don't know which quest a line belongs to, you might be lucky and find it per search (Hotkey: `Ctrl+F`) on the [Cyberpunk Transcript](https://arasakas-ronin.netlify.app/).
 
