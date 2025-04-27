@@ -63,15 +63,26 @@ This part is optional.
 
 <figure><img src="../../../.gitbook/assets/niceclipping.PNG" alt=""><figcaption><p>Notice how the edges of the rectangle match the limits of the logo width/height</p></figcaption></figure>
 
-#### Updating the file
+### Step 3: Updating the .yaml
 
-Now update the tweak: `UIIcon.Brand_Logo:` part of your yaml with the new atlasPartName.\
-Example:
+We need to register the new car vendor in your .yaml file. Append the following lines:
 
-<pre><code>UIIcon.Brand_Logo:
-<strong>  atlasResourcePath: boe6\mini_cooper\assets\logos.inkatlas
-</strong><strong>  atlasPartName: mini
-</strong></code></pre>
+```yaml
+Vehicle.your_vehicle
+  ...
+  manufacturer: Vehicle.Brand
+    
+Vehicle.Brand:
+  $type: VehicleManufacturer_Record
+  enumName: Brand_Logo
+
+UIIcon.Brand_Logo:
+  $type: UIIcon_Record
+  atlasResourcePath: boe6\mini_cooper\assets\logos.inkatlas
+  atlasPartName: mini
+```
+
+Your vehicle will now use the brand `Vehicle.Brand`, which will use the logo that you defined below.
 
 Save and test.
 
