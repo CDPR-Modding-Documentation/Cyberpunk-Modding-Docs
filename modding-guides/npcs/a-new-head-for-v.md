@@ -2,7 +2,7 @@
 description: How to change V's head
 ---
 
-# A new head for V
+# For V - Changing V's Head
 
 ## Summary
 
@@ -18,7 +18,7 @@ If you want to edit other files for V, you may be able to find their paths in [c
 ## Step 0: Prerequisites
 
 * You have [Blender](https://www.blender.org/download/) installed
-* You have [a Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
+* You have [a Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
 * You have the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") installed and ready to go
 
 {% hint style="info" %}
@@ -33,7 +33,7 @@ This guide assumes that you'll be starting from 0. If you want to use character 
 You can consult [cheat-sheet-head](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/ "mention")-> [#head-file-paths](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/#head-file-paths "mention") for more information about head files. This is not necessary for the scope of this guide.
 {% endhint %}
 
-1. [Add](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects) **all** morphtarget files for your body gender to your Wolvenkit project:
+1. [Add](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects) **all** morphtarget files for your body gender to your Wolvenkit project:
 
 <table><thead><tr><th width="147">body gender</th><th>Asset Browser search query</th></tr></thead><tbody><tr><td>fem</td><td><code>base\characters\head\player_base_heads\player_female_average > .morphtarget</code></td></tr><tr><td>masc</td><td><code>base\characters\head\player_base_heads\player_man_average > .morptharget</code></td></tr></tbody></table>
 
@@ -41,7 +41,7 @@ You can consult [cheat-sheet-head](../../for-mod-creators-theory/references-list
 Make sure to include **all** morphtargets in the folder: cyberware, tattoos, scars, and for mascV, beards.
 {% endhint %}
 
-2. Export them all via [Wolvenkit Export Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) (you can find step-by-step instructions in the NPV guide under [#step-2-exporting-head](npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md#step-2-exporting-head "mention"))
+2. Export them all via [Wolvenkit Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) (you can find step-by-step instructions in the NPV guide under [#step-2-exporting-head](npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md#step-2-exporting-head "mention"))
 
 ### 1.2 Importing into Blender&#x20;
 
@@ -52,6 +52,10 @@ Make sure to include **all** morphtargets in the folder: cyberware, tattoos, sca
 2. If there is a collection with the name `glTF_not_exported`, collapse or delete it - we don't need all those things.
 
 ## Step 2: Sculpting prep
+
+{% hint style="info" %}
+If you are trying to port an NPC's head, you can skip straight to step 4 and read the expandable at the beginning
+{% endhint %}
 
 <details>
 
@@ -98,7 +102,7 @@ Each mesh in your .blend file needs a `Surface Deform` modifier that binds it to
 Make sure that `sculptme` is still selected in the Outliner - the script will target the wrong mesh if it isn't.
 {% endhint %}
 
-1. The script you need is [add\_surface\_deform.py](https://github.com/manavortex/cyberpunk2077/blob/master/python/sculpting\_convenience/surface\_deform/add\_surface\_deform.py) from mana's github.&#x20;
+1. The script you need is [add\_surface\_deform.py](https://github.com/manavortex/cyberpunk2077/blob/master/python/sculpting_convenience/surface_deform/add_surface_deform.py) from mana's github.&#x20;
 2. Follow the [blender-running-python-scripts.md](../../for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md "mention") guide with that script, then come back here.
 3. After clicking play, all meshes but `sculptme` will now have a `surface deform` modifier:
 
@@ -133,13 +137,36 @@ As of October 2024, Wolvenkit may run into issues exporting edited morphtargets,
 This is an **excellent** time for a save, because the script will remove the surface deform modifiers.
 {% endhint %}
 
+<details>
+
+<summary>If you want to use an NPC's head</summary>
+
+For every morphtarget that you want to replace, do the following:&#x20;
+
+1. Import the .morphtarget into Blender
+2. Import the corresponding NPC mesh into Blender
+
+For every submesh inside the morphtarget, do the following:
+
+1. Select the morphtarget
+2. Enter edit mode (Hotkey: `Tab`)
+3. Select all vertices (Hotkey: `A`)
+4. Delete all vertices (Hotkey: `X`, `Enter`)
+5. Switch back to object mode (Hotkey: `Tab`)
+6. Ctrl+click on the NPC mesh in the 3d viewport or the Outliner
+7. Join it into the empty .morphtarget (Hotkey: `Ctrl+J`)
+
+You can now go straight to [#id-4.2-exporting-the-morphtargets-from-blender](a-new-head-for-v.md#id-4.2-exporting-the-morphtargets-from-blender "mention")
+
+</details>
+
 Before you can export your sculpt, you need to **apply** the surface deform modifiers, because Wolvenkit (and Cyberpunk) will flat-out ignore them.&#x20;
 
 Fortunately, you can do this by script as well.
 
 ### 4.1  Applying the surface deform
 
-1. Find [apply\_surface\_deform.py](https://github.com/manavortex/cyberpunk2077/blob/master/python/sculpting\_convenience/surface\_deform/apply\_surface\_deform.py) on mana's github
+1. Find [apply\_surface\_deform.py](https://github.com/manavortex/cyberpunk2077/blob/master/python/sculpting_convenience/surface_deform/apply_surface_deform.py) on mana's github
 2. Follow the [blender-running-python-scripts.md](../../for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md "mention") guide with that script, then come back here.
 3. After clicking the play button, the Surface Deform modifier will now be gone, and your mesh will have changed shape for good.
 
@@ -151,7 +178,7 @@ You can now export the morphtargets.
 2.  Use the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention")'s default settings and **overwrite** the corresponding `.morphtarget.glb`&#x20;
 
     <figure><img src="../../.gitbook/assets/npv_basehead_export_from_blender.png" alt=""><figcaption></figcaption></figure>
-3. **Import** the files back into Wolvenkit via [Import Tool](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool). This **should** simply work! If it does not, you might have to overwrite the mesh file as well - see the [morphtargets](../../for-mod-creators-theory/3d-modelling/morphtargets.md#editing-morphtargets) page for instructions.
+3. **Import** the files back into Wolvenkit via [Import Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool). This **should** simply work! If it does not, you might have to overwrite the mesh file as well - see the [morphtargets](../../for-mod-creators-theory/3d-modelling/morphtargets.md#editing-morphtargets) page for instructions.
 
 ## Step 5: Testing
 
