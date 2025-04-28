@@ -17,7 +17,7 @@ If you want to edit other files for V, you may be able to find their paths in [c
 
 ## Step 0: Prerequisites
 
-* You have [Blender](https://www.blender.org/download/) installed
+* You have [Blender](https://www.blender.org/download/) installed and know your way around it (if you don't, see [blender-getting-started](../../for-mod-creators-theory/3d-modelling/blender-getting-started/ "mention"))
 * You have [a Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
 * You have the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") installed and ready to go
 
