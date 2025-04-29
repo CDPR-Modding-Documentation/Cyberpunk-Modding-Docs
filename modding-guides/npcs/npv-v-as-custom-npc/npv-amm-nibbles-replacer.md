@@ -48,7 +48,7 @@ Requirements:
 
 ## Prerequisites:
 
-* You have a custom NPC Wolvenkit project with an [.app file](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files) and a [root entity](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files#root-entity) file.\
+* You have a custom NPC Wolvenkit project with an [.app file](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files) and a [root entity](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity) file.\
   If you don't have one, you can download the template project from [.](./ "mention")
 * You have configured your modder name in [Wolvenkit's settings](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/settings#your-name) (click the link if you haven't)
 
