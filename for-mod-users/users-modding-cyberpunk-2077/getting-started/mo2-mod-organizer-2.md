@@ -4,6 +4,8 @@ description: How to use MO2 - it's that simple
 
 # MO2 (Mod Organizer 2)
 
+**Last documented update:** April 30 2025 by **MyNameIsSpirits**
+
 MO2 (**Mod Organizer 2**, [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) | [Github](https://github.com/ModOrganizer2/modorganizer/releases)) is a free, widely-used mod manager, especially popular for Bethesda games like Skyrim or Fallout. It fully supports **Cyberpunk 2077** and is praised for its ease of use.
 
 Using MO2 keeps your base game directory untouched and allows for easy mod installation, uninstallation, and updating. Additionally, you can create different profiles for mod configurations.
@@ -31,7 +33,16 @@ If you need further help with MO2 beyond this guide, feel free to ask for assist
 ### Installing CET and Red4Ext (the script extenders)
 
 {% hint style="warning" %}
-CET and Red4Ext have to be **installed manually**
+~~CET and Red4Ext have to be **installed manually**~~
+
+Zash released an MO2 plugin update in January that allows you to install CET and RED4ext just like any other mod! This plugin means:
+
+* you do not have to install these two mods manually
+* you do not need to use Root Builder
+
+This plugin update **does not come automatically** with a fresh MO2 install: it can be found in [this GitHub repository](https://github.com/ZashIn/modorganizer-basic_games/releases/tag/cyberpunk-v3.0), which also includes a step by step tutorial for installing it.
+
+However, installing this plugin is entirely optional (though I still **highly** recommend it!). If you do not want to install it, then you should proceed to install CET and RED4ext manually by following the steps below.
 {% endhint %}
 
 #### Manually Install CET and RED4ext
@@ -44,6 +55,8 @@ CET and Red4Ext have to be **installed manually**
 <summary>But what about Root Builder?!</summary>
 
 Both the developer of MO2 and the guy who wrote the Cyberpunk plugin do [not recommend](https://discord.com/channels/717692382849663036/788213273530335233/1300415018864742461) Root Builder. If it's working for you, feel free to keep using it, but this is **not** the advised option for new users.
+
+If you have chosen to install the plugin update mentioned above, then Root Builder is not at all necessary. It can (and should) be disabled via **Settings > Plugins.**
 
 </details>
 
@@ -83,5 +96,5 @@ If you have mods from external sources:
 
 ### Some mods aren't working!
 
-* Make sure that CET and RED4ext are installed **manually** (check [#installing-cet-and-red4ext-the-script-extenders](mo2-mod-organizer-2.md#installing-cet-and-red4ext-the-script-extenders "mention"))
+* If you aren't using the updated plugin, make sure that CET and RED4ext are installed **manually** (check [#installing-cet-and-red4ext-the-script-extenders](mo2-mod-organizer-2.md#installing-cet-and-red4ext-the-script-extenders "mention"))
 * Make sure that your MO2 instance is **not** directly in the [the-cyberpunk-2077-game-directory](../the-cyberpunk-2077-game-directory/ "mention"). This has been confirmed to cause problems and is a non-optional step.
