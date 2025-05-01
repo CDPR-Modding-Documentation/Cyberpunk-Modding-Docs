@@ -109,17 +109,21 @@ For a list of [#name-of-meshes-by-index](cheat-sheet-head/hair.md#name-of-meshes
 
 ## Eye Colour
 
-<figure><img src="../../.gitbook/assets/character_creator_eye_colour.png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/eye_color.png" alt="" width="563"><figcaption></figcaption></figure>
 
 ## Cyberware
 
-<figure><img src="../../.gitbook/assets/character_creator_cyberware_f.png" alt=""><figcaption></figcaption></figure>
+{% hint style="info" %}
+Cyberware 9 - 16 can be found in the **freckles** make-up mesh
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/cyberware.png" alt=""><figcaption></figcaption></figure>
 
 ## Cheek Makeup Style
 
 <figure><img src="../../.gitbook/assets/character_creator_cheek_makeup_options.png" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="158"></th><th></th></tr></thead><tbody><tr><td>01</td><td><a data-footnote-ref href="#user-content-fn-1">frecles</a> (brown_01, brown_02, brown_03, black_01)</td></tr><tr><td>02</td><td><a data-footnote-ref href="#user-content-fn-2">frecles</a> (brown_04, brown_05, brown_06, black_02)</td></tr><tr><td>03</td><td><a data-footnote-ref href="#user-content-fn-3">frecles</a> (brown_07, brown_08, brown_09, black_03)</td></tr><tr><td>04</td><td><a data-footnote-ref href="#user-content-fn-4">frecles</a> (brown_10, brown_11, brown_12, black_04)</td></tr><tr><td>05</td><td>cheeks (_color_01)</td></tr><tr><td>06</td><td>cheeks (_color_02)</td></tr><tr><td>07</td><td>cheeks (_color_03)</td></tr><tr><td>08</td><td>cheeks (_color_04)</td></tr><tr><td>09</td><td>cheeks (_color_05)</td></tr><tr><td>10</td><td>cheeks (_color_06)</td></tr><tr><td>11</td><td>cheeks (_color_07)</td></tr><tr><td>12</td><td>cheeks (_color_08)</td></tr><tr><td>13</td><td>cheeks (_color_09)</td></tr><tr><td>14</td><td>cheeks (_color_10)</td></tr></tbody></table>
+<table><thead><tr><th width="158"></th><th></th></tr></thead><tbody><tr><td>01</td><td><a data-footnote-ref href="#user-content-fn-1">frecles</a> (brown_01, brown_02, brown_03, black_01)</td></tr><tr><td>02</td><td><a data-footnote-ref href="#user-content-fn-1">frecles</a> (brown_04, brown_05, brown_06, black_02)</td></tr><tr><td>03</td><td><a data-footnote-ref href="#user-content-fn-1">frecles</a> (brown_07, brown_08, brown_09, black_03)</td></tr><tr><td>04</td><td><a data-footnote-ref href="#user-content-fn-1">frecles</a> (brown_10, brown_11, brown_12, black_04)</td></tr><tr><td>05</td><td>cheeks (_color_01)</td></tr><tr><td>06</td><td>cheeks (_color_02)</td></tr><tr><td>07</td><td>cheeks (_color_03)</td></tr><tr><td>08</td><td>cheeks (_color_04)</td></tr><tr><td>09</td><td>cheeks (_color_05)</td></tr><tr><td>10</td><td>cheeks (_color_06)</td></tr><tr><td>11</td><td>cheeks (_color_07)</td></tr><tr><td>12</td><td>cheeks (_color_08)</td></tr><tr><td>13</td><td>cheeks (_color_09)</td></tr><tr><td>14</td><td>cheeks (_color_10)</td></tr></tbody></table>
 
 ## Cheek Makeup Color
 
@@ -173,9 +177,3 @@ For the female body gender, there are three different chest sizes!
 
 
 [^1]: no, it's actually spelled like this. I'm sorry.
-
-[^2]: no, it's actually spelled like this. I'm sorry.
-
-[^3]: no, it's actually spelled like this. I'm sorry.
-
-[^4]: no, it's actually spelled like this. I'm sorry.
