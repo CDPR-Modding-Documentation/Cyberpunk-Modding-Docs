@@ -113,11 +113,13 @@ For a list of [#name-of-meshes-by-index](cheat-sheet-head/hair.md#name-of-meshes
 
 ## Cyberware
 
-{% hint style="info" %}
-Cyberware 9 - 16 can be found in the **freckles** make-up mesh
-{% endhint %}
-
 <figure><img src="../../.gitbook/assets/cyberware.png" alt=""><figcaption></figcaption></figure>
+
+### 2.2 Cyberware
+
+Cyberware added with patch 2.2 is distributed across preexisting files:
+
+<table><thead><tr><th width="95.73333740234375">CC index</th><th width="415.4666748046875">file</th><th>appearance</th></tr></thead><tbody><tr><td>8</td><td><code>makeup_eyes_01.mesh</code></td><td><code>cyberware_01</code></td></tr><tr><td>9</td><td><code>cyberware_04.mesh</code></td><td><code>cyberware_08</code></td></tr><tr><td>10</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_09</code></td></tr><tr><td>11</td><td><code>tattoo_02.mesh</code></td><td><code>cyberware_10</code></td></tr><tr><td>12</td><td><code>makeup_freckles_01.morphtarget</code></td><td><code>cyberware_11</code></td></tr><tr><td>13</td><td><code>cyberware_04.mesh</code></td><td><code>cyberware_12</code></td></tr><tr><td>14</td><td><code>makeup_freckles_01.morphtarget</code></td><td><code>cyberware_13</code></td></tr><tr><td>15</td><td><code>cyberware_06.mesh</code></td><td><code>cyberware_14</code></td></tr></tbody></table>
 
 ## Cheek Makeup Style
 
