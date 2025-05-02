@@ -4,7 +4,7 @@ description: 'Step 2: How to create a custom NPC'
 
 # NPV: Creating a custom NPC
 
-## Summary
+## hSummary
 
 **Published**: May 13 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update**: Dec 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
@@ -189,12 +189,12 @@ Go through the appearances and delete all components that File Validation warned
 
 ### Step 2: Customizing
 
-{% hint style="success" %}
 The next section, [#how-do-i-know-what-to-put](npv-creating-a-custom-npc.md#how-do-i-know-what-to-put "mention"), will help you find the right appearance names.
 
 If you feel completely lost, you can read up on [how to change NPC appearances](../appearances-change-the-looks/) – the concept is exactly the same.
 
-Also, [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
+{% hint style="success" %}
+&#x20;[File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
 {% endhint %}
 
 {% hint style="success" %}
@@ -207,7 +207,13 @@ If you want to add another appearance
 
 ### How do I know what to put?
 
-To find out which variants and appearances to use, I suggest that you use NoraLee's excellent [NPV Part Picker](https://noraleedoes.neocities.org/npv/npv_part_picker). It will look like this:
+If you prefer to do things the hard way, you can head to [cheat-sheet-character-creator.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-character-creator.md "mention") and look up your individual parts. Otherwise, I suggest that you use NoraLee's excellent [NPV Part Picker](https://noraleedoes.neocities.org/npv/npv_part_picker).
+
+{% hint style="info" %}
+The part picker does not yet support the appearances added after 2.1. Our [cheat-sheet-character-creator.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-character-creator.md "mention") is up-to-date, though!
+{% endhint %}
+
+It will look like this:
 
 <figure><img src="../../../.gitbook/assets/npv_guide_part_picker_preview.png" alt=""><figcaption><p>Find it at <a href="https://noraleedoes.neocities.org/npv/npv_part_picker">https://noraleedoes.neocities.org/npv/npv_part_picker</a></p></figcaption></figure>
 
@@ -239,6 +245,8 @@ If you skip this step, you will end up with invisible cyberware or the wrong col
 {% endhint %}
 
 When selecting a different cyberware than the preconfigured one, you **have** to set the appearance name, or the whole thing will show up in grey. The appearance names are usually identical to the cyberware (`cyberware_01`, `cyberware_02` etc.), but if you are uncertain, you can also open the mesh file and check the `appearances` list at the top.
+
+For cyberware added after 2.2, please see [cheat-sheet-head](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/ "mention") -> [#cyberware](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/#cyberware "mention")
 
 {% hint style="info" %}
 Wolvenkit's [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) triggers when you save a file, and it will help you to spot mistakes.
