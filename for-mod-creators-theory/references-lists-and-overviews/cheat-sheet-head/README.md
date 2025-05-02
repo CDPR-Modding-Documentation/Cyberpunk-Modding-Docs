@@ -97,3 +97,23 @@ base/characters/common/character_customisation_items/eyebrows/textures/
 Provided below is a table with the eyebrows and their associated texture files.
 
 <table><thead><tr><th width="157">Eyebrow</th><th>Diffuse Texture</th><th>Alpha Mask</th></tr></thead><tbody><tr><td>01</td><td>heb__base_d01.xbm</td><td>heb_wa__base_ds01.xbm</td></tr><tr><td>02</td><td>heb__base_d02.xbm</td><td>heb_wa__base_ds02.xbm</td></tr><tr><td>03</td><td>heb__base_d03.xbm</td><td>heb_wa__base_ds03.xbm</td></tr><tr><td>04</td><td>heb__base_d04.xbm</td><td>heb_wa__base_ds04.xbm</td></tr><tr><td>05</td><td>heb__base_d05.xbm</td><td>heb_wa__base_ds05.xbm</td></tr><tr><td>06</td><td>heb__base_d06.xbm</td><td>heb_wa__base_ds06.xbm</td></tr><tr><td>07</td><td>heb__base_d07.xbm</td><td>heb_wa__base_ds07.xbm</td></tr><tr><td>08</td><td>heb__base_d08.xbm</td><td>heb_wa__base_ds08.xbm</td></tr></tbody></table>
+
+## Cyberware
+
+Cyberware added with patch 2.2 is distributed across preexisting files:
+
+{% hint style="danger" %}
+These appearances do not exist in the .mesh! Read below the table for how to make them work!
+{% endhint %}
+
+<table><thead><tr><th width="95.73333740234375">CC index</th><th width="415.4666748046875">file</th><th>appearance</th></tr></thead><tbody><tr><td>8</td><td><code>makeup_eyes_01.mesh</code></td><td><code>cyberware_01</code></td></tr><tr><td>9</td><td><code>cyberware_04.mesh</code></td><td><code>cyberware_08</code></td></tr><tr><td>10</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_09</code></td></tr><tr><td>11</td><td><code>tattoo_02.mesh</code></td><td><code>cyberware_10</code></td></tr><tr><td>12</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_11</code></td></tr><tr><td>13</td><td><code>cyberware_04.mesh</code></td><td><code>cyberware_12</code></td></tr><tr><td>14</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_13</code></td></tr><tr><td>15</td><td><code>cyberware_06.mesh</code></td><td><code>cyberware_14</code></td></tr><tr><td>16</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_15</code></td></tr></tbody></table>
+
+You can find the cyberware [material instances](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) with the following [search query](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):&#x20;
+
+```
+base\characters\common\character_customisation_items\cyberware\face\cyberware > .mi
+```
+
+To change the appearance (e.g. for your custom NPC), edit the `baseMaterial` properties of your local material:
+
+<figure><img src="../../../.gitbook/assets/cyberware_2-2_custompath_mi.png" alt=""><figcaption></figcaption></figure>
