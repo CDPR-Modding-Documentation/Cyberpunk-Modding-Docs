@@ -41,7 +41,10 @@ Tags are case-sensitive!
 ### ArchiveXL tags
 
 {% hint style="info" %}
-Check [#hiding-body-parts-diagram](archivexl-tags.md#hiding-body-parts-diagram "mention") below!
+* Check [#base-game-tags-and-archivexl-tags-visual-guides](archivexl-tags.md#base-game-tags-and-archivexl-tags-visual-guides "mention") for a diagram
+* Check the [#foot-states](archivexl-suffixes-and-substitutions.md#foot-states "mention") section for more tags concerning [Toggleable Feet](https://www.nexusmods.com/cyberpunk2077/mods/7049)
+* Check [#footsteps-setting-footwear-sounds](archivexl-tags.md#footsteps-setting-footwear-sounds "mention") for shoe sound tags
+* Check the [#root-entity-tags](archivexl-tags.md#root-entity-tags "mention") section below for more tags
 {% endhint %}
 
 | Tag                 | Effect                                                                                                                                                                                                                                                        |
@@ -59,12 +62,9 @@ Check [#hiding-body-parts-diagram](archivexl-tags.md#hiding-body-parts-diagram "
 | `hide_Legs`         | Hides the entire legs (including feet, 4, 5, 6, 7)                                                                                                                                                                                                            |
 | `HighHeels`         | Turns the current (shoe) item into high heels. (Item's yaml `$base` must be a foot item)                                                                                                                                                                      |
 | `FlatShoes`         | Turns the current (shoe) item into flat shoes. (Item's yaml `$base` must be a foot item)                                                                                                                                                                      |
+| `AppearanceParts`   | Goes into the .app file. Enables [partsValues](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/#partsvalues) for non-player-equipment                                                                              |
 
-{% hint style="info" %}
-* Check the [#foot-states](archivexl-suffixes-and-substitutions.md#foot-states "mention") section for more tags concerning [Toggleable Feet](https://www.nexusmods.com/cyberpunk2077/mods/7049).
-* Check the [#setting-footwear-sounds](../../../modding-guides/items-equipment/adding-new-items/different-equipment-slots.md#setting-footwear-sounds "mention") for shoe sound tags.
-* Check the [#root-entity-tags](archivexl-tags.md#root-entity-tags "mention") section below for more tags.
-{% endhint %}
+
 
 ### Base Game Tags and ArchiveXL Tags -  Visual Guides
 
@@ -107,7 +107,7 @@ A tag that forces female V's feet to be flat. Only works with a foot item as `$b
 This tag will turn feet invisible for mascV unless the user has switch feet installed. You want to apply this to a conditional appearance in the .app file (`&gender=m`)
 {% endhint %}
 
-## Footsteps: Setting footwear sounds
+### Footsteps: Setting footwear sounds
 
 If you don't want your new boots to sound as if V was barefoot, add one of the following tags to the [#root-entity](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity "mention"):&#x20;
 

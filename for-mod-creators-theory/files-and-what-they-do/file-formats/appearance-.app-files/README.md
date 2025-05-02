@@ -41,7 +41,7 @@ Components that you add in the [`root entity`](../entity-.ent-files/#root-entity
 #### partsValues
 
 {% hint style="info" %}
-This only works for player equipment and weapons (April 2023)
+By default, this only works for **player equipment**. To enable it for different item types, add `AppearanceParts` to the appearance's `visualTags` array.
 {% endhint %}
 
 Allows you to add one or more [component entities](../entity-.ent-files/#mesh-component-entity-simple-entity) into your appearance. They will be treated as if the components were part of the appearance's `components` array.
