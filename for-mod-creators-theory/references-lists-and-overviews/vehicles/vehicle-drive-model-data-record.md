@@ -17,6 +17,20 @@ Legend:
 
 N.B. Descriptions of the properties are conclusions of multiple contributors' trial and error process. While the best effort was done to identify and describe completely and accurately what those properties mean and how to work with them, there is no guarantee of it being so.
 
+### Vehicle speed units
+
+*N.B. Original research.*
+
+Vehicle speed units are a complex element of the game. Given that one unit of the in-game space (the coordinates, also seen in the camera mode) is one meter, the originally displayed mph value in Cyberpunk 2077 vehicles is about double the actual mph speed. For example, when the game shows '200' mph, that is about 100 mph (160.934 km/h).
+
+The game engine uses different internal speed units when setting up the vehicle. Its speed unit is about 2.4017577 mph (3.86525568 km/h). For example, the maxSpeed of 100 in the dynamic downforce parameters is about 240 mph, or 386 km/h.
+
+### Speed breaker/limiter
+
+*N.B. Original research.*
+
+The game has a speed breaker, which resets the vehicle's speed to 0 if it hits a certain threshold. This threshold is around or somewhat lower than 100 of the game engine's internal speed units. It is possible to remove (or rescale?) this speed breaker threshold in version 1.63 of the game, e.g., with the LTBF mod.
+
 ### Wait, this is not what I want!
 
 * For a guide on **adding** vehicles, see [boe6s-guide-new-car-from-a-to-z](../../../modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/ "mention")
