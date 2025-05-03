@@ -17,6 +17,20 @@ Legend:
 
 N.B. Descriptions of the properties are conclusions of multiple contributors' trial and error process. While the best effort was done to identify and describe completely and accurately what those properties mean and how to work with them, there is no guarantee of it being so.
 
+### Vehicle speed units
+
+*N.B. Original research.*
+
+Vehicle speed units are a complex element of the game. Given that one unit of the in-game space (the coordinates, also seen in the camera mode) is one meter, the originally displayed mph value in Cyberpunk 2077 vehicles is about double the actual mph speed. For example, when the game shows '200' mph, that is about 100 mph (160.934 km/h).
+
+The game engine uses different internal speed units when setting up the vehicle. Its speed unit is about 2.4017577 mph (3.86525568 km/h). For example, the maxSpeed of 100 in the dynamic downforce parameters is about 240 mph, or 386 km/h.
+
+### Speed breaker/limiter
+
+*N.B. Original research.*
+
+The game has a speed breaker, which resets the vehicle's speed to 0 if it hits a certain threshold. This threshold is around or somewhat lower than 100 of the game engine's internal speed units. It is possible to remove (or rescale?) this speed breaker threshold in version 1.63 of the game, e.g., with the LTBF mod.
+
 ### Wait, this is not what I want!
 
 * For a guide on **adding** vehicles, see [boe6s-guide-new-car-from-a-to-z](../../../modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/ "mention")
@@ -236,11 +250,11 @@ In addition to the above, motorcycles (gamedataBikeDriveModelData_Record) also h
 
 | Property | Data Type | Value Range | Sample Value  | Meaning |
 | :--- | :--- | :--- | :--- | :--- |
-| maxSpeed | float | - | 40.0 | |
-| maxSpeedFactorAir | float | - | 0.0 | (?) This appears to help car come back to the ground once it separates from it, like aerodynamic downforce. |
-| maxSpeedFactorGround | float | - | 0.4 | (?) This appears to help the car stick to the ground, like aerodynamic downforce. |
-| minSpeed | float | - | 10.0 | |
-| type | TweakDBID | - | ID | |
+| maxSpeed | float | - | 40.0 | (?) The speed up to which the dynamic downforce graph stretches. Unit: engine's internal. |
+| maxSpeedFactorAir | float | - | 0.0 | (?) Scales the effect that helps vehicle come back to the ground once it separates from it, like an aerodynamic downforce. |
+| maxSpeedFactorGround | float | - | 0.4 | Scales the effect that enables the vehicle to corner better at high speed while on the ground, an effect similar to an aerodynamic downforce. It could have other effects. |
+| minSpeed | float | - | 10.0 | (?) The speed from which the dynamic downforce graph stretches. Unit: engine's internal. |
+| type | TweakDBID | - | ID | (?) Is the link to the dynamic force curve data. |
 
 #### gamedataHandbrakeFrictionModifier_Record
 
@@ -316,11 +330,11 @@ N.B. Vehicles generally have two instances of this entry, one for the front whee
 | Property | Data Type | Value Range | Sample Value  | Meaning |
 | :--- | :--- | :--- | :--- | :--- |
 | extremeCompressionEventScalor | float | - | 0.46 | |
-| frictionMulLateral | float | - | 0.94 | |
-| frictionMulLongitudinal | float | - | 0.94 | |
+| frictionMulLateral | float | - | 0.94 | The lateral (along the left-right axis) friction between the tyres and the road. You can experiment with different values for the front and the back set of tires, but beware that it can increase the vehicle's proneness to spins. |
+| frictionMulLongitudinal | float | - | 0.94 | The longitudinal (along the front-back axis) friction between the tyres and the road. You can experiment with different values for the front and the back set of tires, but beware that it can increase the vehicle's proneness to spins. |
 | logicalSuspensionCompressionLength | float | - | 0.56 | |
 | mass | float | - | 23.0 | |
-| maxBrakingTorque | float | - | 720.0 | |
+| maxBrakingTorque | float | - | 720.0 | Contributes to stronger braking. A higher value here means quicker braking. You will notice it on the braking distance growing shorter as this values gets higher. |
 | springBoundDampingLowRate | float | - | 2200.0 | |
 | springDamping | float | - | 4100.0 | |
 | springDampingHighRateCompression | float | - | 0.3 | |
@@ -338,7 +352,7 @@ N.B. Vehicles generally have two instances of this entry, one for the front whee
 | tireRollingResistanceCoef | float | - | 0.002 | |
 | visualSuspensionCompressionLength | float | - | 0.04 | |
 | visualSuspensionDroop | float | - | 0.14 | |
-| wheelsVerticalOffset | float | - | 0.02 | Repositions the vehicles's wheels vertically. A lesser number (including negative) means car body being lower, and vice versa for a higher nimber. Too low vehicle means collisions with bumps on the road that can distrub driving. Too high vehicle may impact its ability to corner. |
+| wheelsVerticalOffset | float | - | 0.02 | Repositions the vehicles's wheels vertically. A lesser number (including negative) means the vehicle's body is lower, and vice versa for a higher number. Too low a vehicle means collisions with bumps on the road that can disturb driving. A too-high vehicle may impact its ability to corner. You can try combining this with the downforce parameters for a higher vehicle that is more maneuverable than otherwise. |
 
 ##### gamedataVehicleWheelRole_Record
 
