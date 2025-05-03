@@ -101,7 +101,7 @@ You can find more detail about how to take preview pictures in [#blender](./#ble
 
 <figure><img src="../../../.gitbook/assets/preview_icons_export_as.png" alt=""><figcaption></figcaption></figure>
 
-12. You should now have a bunch of transparent pngs. Now, let's see about [#hooking-up-the-inkatlas](./#hooking-up-the-inkatlas "mention").
+12. You should now have a bunch of transparent pngs. Now, let's see about [#generating-the-inkatlas](./#generating-the-inkatlas "mention").
 
 ### Blender
 
