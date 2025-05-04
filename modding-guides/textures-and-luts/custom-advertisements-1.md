@@ -51,7 +51,9 @@ A: Replacers all target the same file to overwrite, creating conflicts with othe
 
 First, establish a new name for your ad. The convention is to use the name of the ad you are editing (e.g. broseph), followed by your mod author name (e.g. nremind), followed by a 2 digit number (e.g. 01) all lower-case and seperated by underscores. So in this example, the full name would be broseph_nremind_01. This is important for ease of integration between mods, and allowing users to easily know who created the mod. Use this to replace all instances of broseph in all files and file names. In the case of `.inkatlas` files, you'll notice that some files are called "broseph_atlas.inkatlas". Remember that you are replacing broseph, so the correct rename example for this file would be "broseph_nremind_01_atlas.inkatlas"
 
-Now that you know what to rename the files to, add the `.inkwidget` and `.inkatlas` files of the ad you wish to modify to your WolvenKit project. Right-click them and export to json. Open the json files in a text editor of your choice, and rename all instances of the ad name to your new ad name. For example, search and replace "broseph_atlas.inkatlas" to "broseph_nremind_01_atlas.inkatlas" in every instance in the file. Rename the png files with the same naming convention.
+Now that you know what to rename the files to, add the `.inkwidget` and `.inkatlas` files of the ad you wish to modify to your WolvenKit project. Right-click them and export to json. Open the json files in a text editor of your choice, and rename all instances of the ad name to your new ad name. For example, search and replace "broseph_atlas.inkatlas" to "broseph_nremind_01_atlas.inkatlas" in every instance in the file. Unless making your own `.inkanim` files, make sure not to search and replace any paths to this file. Rename the png files with the same naming convention.
+
+Best practice is to move all your files to a new mod directory (the final destination for the compressed archive files aka resources should not be in base\, which should be for vanilla game files/resources). Create a new folder in your WolvenKit project at path `raw\your_mod_name` with your preferred mod name. You can create subfolders for the ad you are modifying like `raw\your_mod_name\broseph`. When these raw files are compressed into `archive` file, the path will be `archive\your_mod_name\broseph`. It is important that this the same path as in your `.inkwidget` and `.inkatlas` files (make sure to update the `base\gameplay\gui\world\adverts` to `your_mod_name\` in these files, taking care to not update `inkanim` unless you want to change ad animations), and also must match the path in `gamedataAdvertisement_Record` in Step 3 below.
 
 {% hint style="info" %}
 It is not necessary to include your own `.inkanim` file. It's better to just link to the default one for the original ad, unless you are specifically making your own custom animation (moving the ad elements around differently, and changing the special animated effects). For more information on editing animations and widgets, refer to [this page](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/files-and-what-they-do/file-formats/inkwidgets-a-custom-interface#inkanims-apply-animations-to-widgets-in-inkwidgets).
@@ -67,7 +69,7 @@ Before:
 ```
 Adverts.kangtao_Animated:
   $type: gamedataAdvertisement_Record
-  resource: base\gameplay\gui\world\adverts\kangtao\kangtao_animated.inkwidget
+  resource: your_mod_name\kangtao\kangtao_animated.inkwidget
   definitions:
     - Adverts.kangtao_4x3
     - Adverts.kangtao_16x9
@@ -99,7 +101,7 @@ After:
 ```
 Adverts.kangtao_nremind_01_Animated:
   $type: gamedataAdvertisement_Record
-  resource: base\gameplay\gui\world\adverts\kangtao\kangtao_nremind_01_animated.inkwidget
+  resource: your_mod_name\kangtao\kangtao_nremind_01_animated.inkwidget
   definitions:
     - Adverts.kangtao_nremind_01_4x3
     - Adverts.kangtao_nremind_01_16x9
@@ -203,12 +205,10 @@ If you want to post your mod on Nexus, you might want to do two things:
 
 ## Step 6: Post-Publishing: Adding your mod for selection in a in-game menu.
 
-Once your mod has been published with its own Tweak records, it can be merged with everyone else's ads, making it available for toggling within a in-game menu with preview images. It supports automatic detection of advertisement extension mods, and can seamlessly integrate with your mod, displaying your ads if and only if your mod is installed. See [Advert Controller](https://www.nexusmods.com/cyberpunk2077/mods/18118).
+Once your mod has been published with its own Tweak records, it can be merged with everyone else's ads (assuming you did Steps 2 and 3), making it available for toggling within a in-game menu with preview images. The following mod supports automatic detection of advertisement extension mods, seamlessly integrating with your mod and displaying your ads if and only if your mod is installed. This can also be helpful during the creation of your new ad. As long as your files are correct, and you've added records to the game controller, you will easily see it in-game (no further steps are necessary from mod version 4.00+). See [Advert Controller](https://www.nexusmods.com/cyberpunk2077/mods/18118).
 
 {% hint style="info" %}
 Disclaimer: The [author](https://www.nexusmods.com/users/24832504) of a large portion of this guide created this menu for advertisements.
 {% endhint %}
-
-DM this author if you would like to add your advertisement to this mod. There are no content limitations or restrictions on what will be integrated. This author will not gatekeep anything as long as you are not breaking asset permissions according to nexus rules.
 
 Happy modding, choom!
