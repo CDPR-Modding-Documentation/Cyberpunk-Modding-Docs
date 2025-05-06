@@ -1,5 +1,6 @@
 ---
 description: Things I wish I had known before I jumped into Blender
+cover: ../../../.gitbook/assets/blender_massacre_title_picture.png
 coverY: 0
 ---
 
