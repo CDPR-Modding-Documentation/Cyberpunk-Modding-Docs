@@ -260,6 +260,12 @@ To turn a face inside out, you can use the Normals menu (Shortcut: `Alt+N`) and 
 
 <figure><img src="../../../.gitbook/assets/blender_for_beginners_flip_normals.png" alt=""><figcaption></figcaption></figure>
 
+#### Flipped faces
+
+Sometimes, faces are messed up. To find faces with flipped normals, go into Edge Selection Mode (Hotkey: `2`) and use **Select -> Select Sharp Edges:**
+
+<figure><img src="../../../.gitbook/assets/blender_for_beginners_s-arp_edges.png" alt=""><figcaption></figcaption></figure>
+
 ## The Scripting perspective
 
 Blender offers a fully-fledged Python environment, which is used by **Netrunners** to develop **plugins** like the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention").&#x20;
