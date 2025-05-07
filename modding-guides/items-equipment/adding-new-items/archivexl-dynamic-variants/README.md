@@ -284,6 +284,29 @@ Just like in the .app file, you can apply conditional switching to component nam
 
 <figure><img src="../../../../.gitbook/assets/dynamic_variants_conditional_switching.png" alt=""><figcaption></figcaption></figure>
 
+Components can also be selected by variant, this currently cannot be broken down by variant parts (eg variant.1, variant.2 etc) but it uses the full variant after the ! in the yaml.
+
+```yaml
+$instances:
+    - { base_color: white, ribbons: red  }
+    - { base_color: black, ribbons: red  }
+    - { base_color: black, ribbons: blue }
+appearanceName: root_entity_dynamic_appearance_!$(base_color)+$(ribbons)
+```
+
+In this above example you can create filtered components by instance as follows. The one without the ! will be used by default if the variant is not in the list (eg black\_pink).
+
+```
+entSkinnedMeshComponent: MyJacketDecals!white_red
+entSkinnedMeshComponent: MyJacketDecals!black_red
+entSkinnedMeshComponent: MyJacketDecals!black_blue
+entSkinnedMeshComponent: MyJacketDecals
+```
+
+This is what your compontent can look like; in this example a different light is used based on the variant.
+
+<figure><img src="../../../../.gitbook/assets/sasha.ent.png" alt=""><figcaption></figcaption></figure>
+
 ## The diagram
 
 Now let's look at what we just did and check the diagram. You'll see that the control files are almost identical to the[ vanilla variants](../archive-xl-item-structure-explained.md#the-final-result), but that the rest of the files has gotten a lot more manageable:
