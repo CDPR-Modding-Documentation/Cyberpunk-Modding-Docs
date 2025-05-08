@@ -105,6 +105,26 @@ An example for `t0_000_pma_base__full` (the default body component, torso+legs):
 
 ## Troubleshooting Garment Support
 
+
+
+### Garment support isn't working/working oddly
+
+#### Component IDs
+
+Check the component's **id** in the mesh `.ent` or `.app` appearance's `components` array:
+
+<figure><img src="../../../.gitbook/assets/mesh_troubleshooting_component_ID.png" alt=""><figcaption></figcaption></figure>
+
+If any given ID is equipped twice, it can break garment support in the way you're observing.
+
+{% hint style="info" %}
+If you select the ID in the node tree viewer  to the left, you can use `Generate New CRUID` to create a new entry that is unique considering all your installed mods.
+{% endhint %}
+
+#### Import settings
+
+Make sure to [import your mesh](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support) with garment support enabled. If that doesn't do the trick, you can try [re-creating](garment-support-from-scratch.md) the garment support shapekeys in Blender.
+
 ### My garment support is shrinking too far! or clipping!
 
 Check [Painting garment support parameters](painting-garment-support-parameters.md) — **paint it red**, baby!
@@ -123,8 +143,32 @@ If that doesn't work, you still have the option to re-create [garment-support-fr
 
 ### Yeeting Garment Support
 
-If you're fed up with this shit and just want your item to stop cosplaying as an exploding pixel cloud, you can use [#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh](../troubleshooting-your-mesh-edits.md#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh "mention").
+If you're fed up with this shit and just want your item to stop cosplaying as an exploding pixel cloud, open the expandable.
 
 {% hint style="danger" %}
 This will prevent your garment from shrinking under other, "larger" garments, and practically guarantee that it clips.
 {% endhint %}
+
+<details>
+
+<summary>Delete garment support</summary>
+
+**This is not the advised course of action, more a desperate last-resort. Try everything else first!**
+
+<figure><img src="../../../.gitbook/assets/stringcheese1.png" alt=""><figcaption><p>Looks like we have guests from beyond the Blackwall</p></figcaption></figure>
+
+{% hint style="info" %}
+To check if it's this, equip **only** the edited item. If it breaks as soon as you put on another clothing item with [garment supports](./#the-algorithm), then the solution below applies.
+{% endhint %}
+
+<figure><img src="../../../.gitbook/assets/garment_support_broken.png" alt=""><figcaption></figcaption></figure>
+
+#### Option 1 (likely to work): Import your mesh with garment supports
+
+On the .glb import setting, check the [Import Garment Support](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") box.&#x20;
+
+#### Option 2 (guaranteed to work): delete GarmentSupport from the mesh
+
+<figure><img src="../../../.gitbook/assets/mesh_editing_parameters.png" alt=""><figcaption><p>This will break automatic shrinking when you put clothes over your item. But hey, if the alternative is a broken mess…</p></figcaption></figure>
+
+</details>

@@ -4,18 +4,17 @@ description: When you can't import, or your imported mesh looks weird
 
 # Troubleshooting your mesh edits
 
-{% hint style="info" %}
 
-{% endhint %}
 
 ## Summary
 
-Last documented update: Jan 31 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented update: May 8 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will help you troubleshooting your mesh edits.
 
 ### Wait, this is not what I want!
 
+* There is an own page for [#troubleshooting-garment-support](garment-support-how-does-it-work/#troubleshooting-garment-support "mention")
 * For texture trouble, check [images-importing-editing-exporting.md](../../modding-guides/textures-and-luts/images-importing-editing-exporting.md "mention") -> [#troubleshooting](../../modding-guides/textures-and-luts/images-importing-editing-exporting.md#troubleshooting "mention")
 * For a guide on exporting and importing meshes, check [wkit-blender-plugin-import-export.md](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention")
 * If you don't know how to begin editing, check one (or all) of the following:
@@ -329,43 +328,7 @@ That's a problem with your **materials**, not with the mesh itself. Check [image
 
 ## Garment Support
 
-### My mesh is string cheese/exploding vertices/a puddle on the floor
-
-This section will tell you how to delete garment support. If you don't want that (you shouldn't! It's cool!), check the **next section**.
-
-<figure><img src="../../.gitbook/assets/stringcheese1.png" alt=""><figcaption><p>Looks like we have guests from beyond the Blackwall</p></figcaption></figure>
-
-{% hint style="info" %}
-To check if it's this, equip **only** the edited item. If it breaks as soon as you put on another clothing item with [garment supports](garment-support-how-does-it-work/#the-algorithm), then the solution below applies.
-{% endhint %}
-
-<figure><img src="../../.gitbook/assets/garment_support_broken.png" alt=""><figcaption></figcaption></figure>
-
-#### Option 1 (likely to work): Import your mesh with garment supports
-
-On the .glb import setting, check the [Import Garment Support](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") box.&#x20;
-
-#### Option 2 (guaranteed to work): delete GarmentSupport from the mesh
-
-<figure><img src="../../.gitbook/assets/mesh_editing_parameters.png" alt=""><figcaption><p>This will break automatic shrinking when you put clothes over your item. But hey, if the alternative is a broken mess…</p></figcaption></figure>
-
-### I'm doing everything right, but garment support still explodes!
-
-#### Component IDs
-
-Check the component's **id** in the mesh `.ent` or `.app` appearance's `components` array:
-
-<figure><img src="../../.gitbook/assets/mesh_troubleshooting_component_ID.png" alt=""><figcaption></figcaption></figure>
-
-If any given ID is equipped twice, it can break garment support in the way you're observing.
-
-{% hint style="info" %}
-If you select the ID in the node tree viewer  to the left, you can use `Generate New CRUID` to create a new entry that is unique considering all your installed mods.
-{% endhint %}
-
-#### Import settings
-
-Make sure to [import your mesh](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support) with garment support enabled. If that doesn't do the trick, you can try [re-creating](garment-support-how-does-it-work/garment-support-from-scratch.md) the garment support shapekeys in Blender.
+You can find this on its own page, [#troubleshooting-garment-support](garment-support-how-does-it-work/#troubleshooting-garment-support "mention")
 
 ## My mesh is inside-out!
 
