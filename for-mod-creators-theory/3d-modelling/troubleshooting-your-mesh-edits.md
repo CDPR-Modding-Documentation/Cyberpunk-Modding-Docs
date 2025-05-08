@@ -257,6 +257,10 @@ If you don't have a 3d print entry in the tools of your 3d viewport, you might n
 
 ## In-Game
 
+### My mesh explodes!
+
+This is most likely an issue with Garment Support. Please check the corresponding wiki page for troubleshooting, especially the part about [unique IDs](garment-support-how-does-it-work/#my-garment-support-explodes-on-contact-with-another-item).
+
 ### My mesh won't show up
 
 #### In Blender

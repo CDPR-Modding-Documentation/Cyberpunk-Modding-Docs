@@ -170,7 +170,7 @@ In the `.app` file inside the `ent(Physical)MeshComponent`s that you have copied
 
 That is becauuse they're rigged to a bone that your car does not have. The easiest way to fix this is to export their mesh into Blender and (in Edit mode) assign all weights to the first group.
 
-You can check [weight-painting-for-gonks.md](../../../for-mod-creators-theory/3d-modelling/weight-painting-for-gonks.md "mention") for more detail about that.
+You can check [weight-painting-for-gonks.md](../../../for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging/weight-painting-for-gonks.md "mention") for more detail about that.
 
 ## _Step 4: Making the weapons move_
 

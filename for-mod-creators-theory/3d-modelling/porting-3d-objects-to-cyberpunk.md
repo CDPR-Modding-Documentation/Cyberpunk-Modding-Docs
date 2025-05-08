@@ -258,7 +258,7 @@ Nobody likes weight painting.
 
 This is what you need to do if your mesh moves unevenly or if parts of it are clipping through the body although things are fitting correctly. Pray that you don't have to do it, because it sucks.
 
-If you're unfortunate, you can find a guide on [weight-painting-for-gonks.md](weight-painting-for-gonks.md "mention")!
+If you're unfortunate, you can find a guide on [weight-painting-for-gonks.md](meshes-and-armatures-rigging/weight-painting-for-gonks.md "mention")!
 
 ## Step 5: Exporting from Blender
 

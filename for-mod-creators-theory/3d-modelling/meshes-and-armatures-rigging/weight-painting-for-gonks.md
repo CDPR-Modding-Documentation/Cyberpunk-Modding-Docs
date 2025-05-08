@@ -15,19 +15,19 @@ This guide will use a masc garment, but the process works the same regardless of
 
 ### Wait, that's not what I want!
 
-* For porting objects altogether, see [porting-3d-objects-to-cyberpunk.md](porting-3d-objects-to-cyberpunk.md "mention")
-* For help with refitting, see [r-and-r-refitting-step-by-step.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention")
-* For converting between bodies, see [rig-swapping-garments-other-body-conversion.md](../../modding-guides/items-equipment/rig-swapping-garments-other-body-conversion.md "mention")
+* For porting objects altogether, see [porting-3d-objects-to-cyberpunk.md](../porting-3d-objects-to-cyberpunk.md "mention")
+* For help with refitting, see [r-and-r-refitting-step-by-step.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention")
+* For converting between bodies, see [rig-swapping-garments-other-body-conversion.md](../../../modding-guides/items-equipment/rig-swapping-garments-other-body-conversion.md "mention")
 
 ## Requirements
 
 For this guide, you need:&#x20;
 
-| Tool                                                                                     | Version                                                                                                                                                        |
-| ---------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [WolvenKit](https://wiki.redmodding.org/wolvenkit/readme)                                | >= 8.14                                                                                                                                                        |
-| The [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention") | >= 1.5.5.2, recommended: [1.6.0 develop](../modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/installing-from-github-source.md) |
-| Blender                                                                                  | >= 4.1, recommended: 4.2                                                                                                                                       |
+| Tool                                                                                        | Version                                                                                                                                                           |
+| ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [WolvenKit](https://wiki.redmodding.org/wolvenkit/readme)                                   | >= 8.14                                                                                                                                                           |
+| The [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention") | >= 1.5.5.2, recommended: [1.6.0 develop](../../modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/installing-from-github-source.md) |
+| Blender                                                                                     | >= 4.1, recommended: 4.2                                                                                                                                          |
 
 You also need a Wolvenkit project with an item where you want to fix the weights.
 
@@ -69,8 +69,8 @@ Unfortunately, a perfect fit does (usually) not exist. But don't worry, we can f
 
 ### 2.1.: Importing the Netrunner suit
 
-1. [Export](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit) the Netrunner suit to glb
-2. [Import](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender) it into your Blend file
+1. [Export](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit) the Netrunner suit to glb
+2. [Import](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender) it into your Blend file
 3. You'll notice it has 3 submeshes. Merge them into a single submesh:
    1. Click into the viewport to deselect everything
    2. Hold the `shift` key and click on each of the three meshes
@@ -109,7 +109,7 @@ When porting assets from other games, a good habit is to always clean the Vertex
 ## Step 3: Transferring weights
 
 {% hint style="info" %}
-You can use the Wolvenkit Blender IO Suite's [Mesh tools](../modding-tools/wolvenkit-blender-io-suite/#mesh-tools) for step 1-5. However, this guide will show you the full manual process.
+You can use the Wolvenkit Blender IO Suite's [Mesh tools](../../modding-tools/wolvenkit-blender-io-suite/#mesh-tools) for step 1-5. However, this guide will show you the full manual process.
 {% endhint %}
 
 1. Click the **weight source** (the Netrunner suit)
@@ -175,15 +175,15 @@ You can now skip to [#id-3.4-connecting-the-meshes-to-the-armature](weight-paint
 
 1. From the Blender AddOn's Animation Tools Panel, select the correct rig for your mesh. You'll most likely want `man_base` or `woman_base`:
 
-<figure><img src="../../.gitbook/assets/weight_painting_add_animation.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/weight_painting_add_animation.png" alt=""><figcaption></figcaption></figure>
 
 2. Change your weight container's `armature modifier` to point at the rig you just imported:
 
-<figure><img src="../../.gitbook/assets/weight_painting_reparenting.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/weight_painting_reparenting.png" alt=""><figcaption></figcaption></figure>
 
 ### 3.2 Getting a body
 
-You can use the same body that you've already used for refitting. This tutorial won't cover this — look it up in [r-and-r-refitting-step-by-step.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention").&#x20;
+You can use the same body that you've already used for refitting. This tutorial won't cover this — look it up in [r-and-r-refitting-step-by-step.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention").&#x20;
 
 1. Import your body mesh into Blender
 2. Join all the submeshes together
@@ -193,7 +193,7 @@ You can use the same body that you've already used for refitting. This tutorial 
 
 You can see that our added armature already has A-Pose and T-Pose hooked up:
 
-<figure><img src="../../.gitbook/assets/weight_painting_animset_before.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/weight_painting_animset_before.png" alt=""><figcaption></figcaption></figure>
 
 We need a bit more than that, so let's grab ourselves an .anim from the game files.&#x20;
 
@@ -207,8 +207,8 @@ base\animations\ui\female\ui_female.anims
 Otherwise, you can get creative with the [Wolvenkit Search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) (something like `.anims > !fpp`)
 
 1. Pick an animation and add it to your project.
-2. [Export it](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit-1) from Wolvenkit
-3. [Import](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender) the glb into Blender
+2. [Export it](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit-1) from Wolvenkit
+3. [Import](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender) the glb into Blender
 
 This will populate the Animsets list.
 
@@ -244,13 +244,13 @@ From experience, we know which bones are responsible for the bat wings, but we'l
 1. Enter Weight Paint mode (at the top left of the Blender viewport)
 2. Open and expand the Vertex Group list on the right:
 
-<figure><img src="../../.gitbook/assets/weight_painting_start_painting.png" alt=""><figcaption><p>This is where you'll check each bone's area of effect, and the "pull" it has on the mesh - the <strong>weight painting</strong>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/weight_painting_start_painting.png" alt=""><figcaption><p>This is where you'll check each bone's area of effect, and the "pull" it has on the mesh - the <strong>weight painting</strong>.</p></figcaption></figure>
 
 3. On the right, select the first vertex group (`Hips`)
 4. Use the `Blur` tool to fix anything that looks janky
 5. Select the next vertex group on the list (`Spine`)
 
-<figure><img src="../../.gitbook/assets/weightpainting_blur_tool.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/weightpainting_blur_tool.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 This is where you fuck around and find out! You can always use the&#x20;
@@ -310,7 +310,7 @@ The garment's collar is also a troublesome area; we can see how mine stretches a
    2.  Click on any light blue area\
 
 
-       <figure><img src="../../.gitbook/assets/weightpainting_sample_weight.png" alt=""><figcaption></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/weightpainting_sample_weight.png" alt=""><figcaption></figcaption></figure>
 
 
    3. I’ll once again use the Radial Gradient tool to apply weights in an equal way&#x20;
@@ -361,7 +361,7 @@ Don't worry about the clipping, we'll fix that in [#id-5.1-fixing-clipping](weig
 ### 5.1 Fixing clipping
 
 {% hint style="info" %}
-You can toggle proportional editing on and off by pressing `o`. This guide won't cover proportional editing in detail, but you can look it up under[#step-4-refitting](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md#step-4-refitting "mention") in the R\&R guide.
+You can toggle proportional editing on and off by pressing `o`. This guide won't cover proportional editing in detail, but you can look it up under[#step-4-refitting](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md#step-4-refitting "mention") in the R\&R guide.
 {% endhint %}
 
 1. For each of your (now weighted) submeshes, change the rig in the armature modifier to animate them.
@@ -389,7 +389,7 @@ You can toggle proportional editing on and off by pressing `o`. This guide won't
 
 ## Step 6: Finishing up
 
-You can now [export](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender) your mesh from Blender, then [import it](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-wolvenkit) back into Wolvenkit.
+You can now [export](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender) your mesh from Blender, then [import it](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-wolvenkit) back into Wolvenkit.
 
 And that’s about it for this tutorial/workflow on how I handle weight painting!
 

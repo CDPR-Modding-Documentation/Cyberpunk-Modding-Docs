@@ -18,7 +18,7 @@ This guide will teach you how to&#x20;
 ### Wait, this is not what I want!
 
 * For an overview of existing hair files and -colours, check [hair.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
-* For a more detailed guide on hair physics, check [dangle-bones](../../../for-mod-creators-theory/3d-modelling/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../../for-mod-creators-theory/3d-modelling/dangle-bones/moving-a-dangle-chain.md "mention")
+* For a more detailed guide on hair physics, check [dangle-bones](../../../for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../../for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging/dangle-bones/moving-a-dangle-chain.md "mention")
 
 You can find a video tutorial by eagul on youtube:
 
@@ -101,7 +101,7 @@ You can check the [#splitting-off-submeshes-mildly-advanced](../../textures-and-
 ## The Physics
 
 {% hint style="info" %}
-For more detes about physics, check [dangle-bones](../../../for-mod-creators-theory/3d-modelling/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../../for-mod-creators-theory/3d-modelling/dangle-bones/moving-a-dangle-chain.md "mention"). This is not necessary for the scope of this guide!
+For more detes about physics, check [dangle-bones](../../../for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging/dangle-bones/ "mention") or [moving-a-dangle-chain.md](../../../for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging/dangle-bones/moving-a-dangle-chain.md "mention"). This is not necessary for the scope of this guide!
 {% endhint %}
 
 Remember when I said “like a helmet”? That also means your hair will not have any physics. Some short hair won’t have physics to wave around to begin with, but if you want your bangs and ponytails to wave when you open the character editor, get ready for some trial and error.
