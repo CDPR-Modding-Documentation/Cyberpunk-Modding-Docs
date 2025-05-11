@@ -91,6 +91,14 @@ To read more about Tweak modding, check [tweaks](../../../../for-mod-creators-th
 
 ## Step 3: Editing and understanding your new tweak
 
+{% hint style="warning" %}
+Before you start with this section, make sure to read the block below!
+{% endhint %}
+
+{% include "../../../../.gitbook/includes/yaml-editing-warning.md" %}
+
+***
+
 Open the overridden tweak file in a code editor of your choice (such as [Notepad++](https://notepad-plus-plus.org/downloads/) or VS Code). You will be presented with a `.yaml` file containing roughly a million fields.
 
 <figure><img src="../../../../.gitbook/assets/image (382).png" alt=""><figcaption><p>"Items.Preset_Unity_Default" tweak opened in VS Code</p></figcaption></figure>
