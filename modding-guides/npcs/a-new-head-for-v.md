@@ -84,6 +84,8 @@ You now have between 32 (femV) and 45 (mascV) collections in Blender. That's a l
 
 We'll make use of Blender's modifiers, specifically `Surface Deform`, to do the heavy lifting for us. For that purpose, we'll use a **dedicated sculpting mesh**, and make everything else take its shape.
 
+For that, we will use the **base head mesh.** Follow along to create a copy.
+
 1. In the **Outliner** at the top right of your viewport, find the collection with the name of `h0_000_pXa__morphs.morphtarget` (x being w or m) and **expand** it.
 2. Find the mesh starting with submesh\_00\_LOD\_1 (it can have a suffix like .001), and select it by clicking on it
 3. Duplicate it (Hotkey: `Shift+D`, `ESC`)
