@@ -22,18 +22,23 @@ See the Finding audio page for a usage guide:
 [finding-an-audio-file.md](../../modding-guides/sound/finding-an-audio-file.md)
 {% endcontent-ref %}
 
-## Blender Plugins
+### Python Helper Scripts
+
+Create Inkatlas files, error checking and more.
+
+[https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts)
+
+## Blender
+
+### Blender Plugins
 
 |                                                                               |                                                                                     |
 | ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | [Import with material](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) | for WKit export "With Materials"                                                    |
 | [TexTools](https://github.com/SavMartin/TexTools-Blender)                     | <p>Justifies UVs, generation of hair cards <br><em>Mesh has to be in quads</em></p> |
-|                                                                               |                                                                                     |
 
-## Blender Scripts
+### Blender Scripts
 
-|                                                                                                            |                                             |
-| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| [Merge armatures (rigs)](https://github.com/Simarilius-uk/CP2077\_BlenderScripts/blob/main/Merge\_rigs.py) | Ctrl+J only works if they don't share bones |
-|                                                                                                            |                                             |
-|                                                                                                            |                                             |
+|                                                                                                          |                                             |
+| -------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| [Merge armatures (rigs)](https://github.com/Simarilius-uk/CP2077_BlenderScripts/blob/main/Merge_rigs.py) | Ctrl+J only works if they don't share bones |

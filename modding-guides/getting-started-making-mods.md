@@ -56,7 +56,13 @@ From the [Fan Content guidelines](https://www.cdprojektred.com/en/fan-content):&
 
 Giving you a straight answer would be too easy: that depends on the type of mod you want to make.
 
-Here's the different kinds of mod:
+That said you can see some recommendations for tooling here:
+
+{% content-ref url="../for-mod-creators/modding-tools/" %}
+[modding-tools](../for-mod-creators/modding-tools/)
+{% endcontent-ref %}
+
+## Mod Types
 
 ### Changing game item stats
 
@@ -84,7 +90,7 @@ Everything you need to know is explained in  [boe6s-guide-new-car-from-a-to-z](v
 
 #### Where do I go from here?
 
-Start by installing Wolvenkit and the required tools. There's a full walkthrough in the red wiki: [Download, Install and Setup](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/getting-started/download "mention")
+Start by installing Wolvenkit and the required tools. There's a full walkthrough in the red wiki: [Download, Install and Setup](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download "mention")
 
 You can now fuck around and find out on your own. If you feel overwhelmed, I recommend the following guides (in that order):&#x20;
 

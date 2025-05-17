@@ -5,7 +5,7 @@ description: A list of modding frameworks and libraries, and links to their docu
 # ⚒️ Core Mods explained
 
 {% hint style="info" %}
-In the context of Cyberpunk modding, the core mods are often interchangeable called "(core) frameworks".&#x20;
+In the context of Cyberpunk modding, the core mods are often interchangeably called "(core) frameworks".&#x20;
 {% endhint %}
 
 {% hint style="success" %}
@@ -39,7 +39,7 @@ Since this kind of mod interacts with the game on such a fundamental level, they
 ### Redscript <a href="#redscript" id="redscript"></a>
 
 {% content-ref url="https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/" %}
-[Redscript](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg\_/)
+[Redscript](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/)
 {% endcontent-ref %}
 
 Redscript ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/1511) | [GitHub](https://github.com/jac3km4/redscript)) is an open-source programming language and toolkit (currently includes a compiler, a decompiler and a disassembler), natively working with Cyberpunk 2077's **scripting runtime**.&#x20;
@@ -58,7 +58,7 @@ Some examples for existing mod include, but are not limited to
 ### Cyber Engine Tweaks (CET) <a href="#cyber-engine-tweaks" id="cyber-engine-tweaks"></a>
 
 {% content-ref url="https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/" %}
-[Cyber Engine Tweaks](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/)
+[Cyber Engine Tweaks](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/)
 {% endcontent-ref %}
 
 **Requires RED4ext.**
