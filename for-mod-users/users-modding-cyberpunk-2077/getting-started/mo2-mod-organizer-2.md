@@ -4,7 +4,7 @@ description: How to use MO2 - it's that simple
 
 # MO2 (Mod Organizer 2)
 
-**Last documented update:** April 30 2025 by **MyNameIsSpirits**
+**Last documented update:** May 10 2025 by **MyNameIsSpirits**
 
 MO2 (**Mod Organizer 2**, [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) | [Github](https://github.com/ModOrganizer2/modorganizer/releases)) is a free, widely-used mod manager, especially popular for Bethesda games like Skyrim or Fallout. It fully supports **Cyberpunk 2077** and is praised for its ease of use.
 
@@ -17,13 +17,13 @@ If you need further help with MO2 beyond this guide, feel free to ask for assist
 ### **Download and Install MO2**
 
 1. Download MO2 from either [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/6194) (yes, Skyrim Nexus) or [GitHub](https://github.com/Modorganizer2/modorganizer/releases)
-2. Install MO2
+2. Install MO2:
    * When installing, choose the **Global Instance** option (recommended for multiple games).
    * Or choose **Portable Instance** if you want a separate installation of MO2 for each game.
 
 ### **Setting Up the Game**
 
-1. **Launch MO2**
+1. **Launch MO2.**
 2. **Create a new instance**:
    * Browse to the Cyberpunk 2077 installation folder to create the new game instance.
 3. **Customize your Profile Settings (Optional)**:
@@ -40,7 +40,7 @@ Zash released an MO2 plugin update in January that allows you to install CET and
 * you do not have to install these two mods manually
 * you do not need to use Root Builder
 
-This plugin update **does not come automatically** with a fresh MO2 install: it can be found in [this GitHub repository](https://github.com/ZashIn/modorganizer-basic_games/releases/tag/cyberpunk-v3.0), which also includes a step by step tutorial for installing it.
+This plugin update **does not come automatically** with a fresh MO2 install (yet): it can be found in [this GitHub repository](https://github.com/ZashIn/modorganizer-basic_games/releases/tag/cyberpunk-v3.0), which also includes a step by step tutorial for installing it. **You should close and re-open MO2 afterwards,** which will (hopefully) give you a pop-up. Say yes to everything it asks, and you should be good to go.
 
 However, installing this plugin is entirely optional (though I still **highly** recommend it!). If you do not want to install it, then you should proceed to install CET and RED4ext manually by following the steps below.
 {% endhint %}
@@ -97,4 +97,5 @@ If you have mods from external sources:
 ### Some mods aren't working!
 
 * If you aren't using the updated plugin, make sure that CET and RED4ext are installed **manually** (check [#installing-cet-and-red4ext-the-script-extenders](mo2-mod-organizer-2.md#installing-cet-and-red4ext-the-script-extenders "mention"))
+* If you **are** using the updated plugin and you're getting REDscript errors on startup, make sure you've closed and re-opened MO2 after updating the plugin.
 * Make sure that your MO2 instance is **not** directly in the [the-cyberpunk-2077-game-directory](../the-cyberpunk-2077-game-directory/ "mention"). This has been confirmed to cause problems and is a non-optional step.
