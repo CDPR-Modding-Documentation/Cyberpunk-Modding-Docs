@@ -1556,6 +1556,10 @@ If you don't vibe with text, there's a [#bisect-video-demonstration](./#bisect-v
 
 {% embed url="https://youtu.be/c1BkM6NFfkI" %}
 
+#### Bisect with a mod manager
+
+<figure><img src="../../.gitbook/assets/bisect_with_mod_manager.png" alt=""><figcaption></figcaption></figure>
+
 ## Audio problems
 
 If your CPU is too busy, the game will try to save resources by dropping audio, starting with dialogue audio. Disabling spatial audio from the main menu might help:
