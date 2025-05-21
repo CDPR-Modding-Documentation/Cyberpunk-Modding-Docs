@@ -13,6 +13,7 @@ This guide will teach you how to create a custom normal map.
 
 ### Wait, this isn't what I want!
 
+* For general information, check [normal-maps-in-cyberpunk.md](../../../for-mod-creators-theory/materials/textures/normal-maps-in-cyberpunk.md "mention")
 * For a different guide about this, check this [Google Doc](https://drive.google.com/file/d/11Z-SYF28nVpF_ZbkIJ_KHCetJK7EcT_X/view) by Тима (Teem)#3118&#x20;
 * For a guide on Cyberpunk materials in Blender, see [cyberpunk-shaders-in-blender.md](../../../for-mod-creators-theory/materials/cyberpunk-shaders-in-blender.md "mention")
 * If you want to create a `.mlmask` instead, see [custom-multilayermasks.md](../custom-multilayermasks.md "mention")
@@ -22,7 +23,7 @@ This guide will teach you how to create a custom normal map.
 
 |                     |                                                                                                                                                                                                                          |
 | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Version             | [Blender](https://www.blender.org/download/)>= 3.6 (working on 4.0)                                                                                                                                                      |
+| Version             | [Blender](https://www.blender.org/download/)>= 4.2                                                                                                                                                                       |
 | Assumed skill level | <ul><li>You know what a <a href="https://en.wikipedia.org/wiki/Normal_mapping">normal map</a> is</li><li>You're able to draw stick figures</li><li>You are not afraid of Blender</li><li>You know how to read.</li></ul> |
 
 {% hint style="info" %}
