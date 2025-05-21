@@ -215,6 +215,7 @@
 * [🔮 Textures, Materials and Shaders](for-mod-creators-theory/materials/README.md)
   * [🖼️ Textures](for-mod-creators-theory/materials/textures/README.md)
     * [Normal Maps in Cyberpunk](for-mod-creators-theory/materials/textures/normal-maps-in-cyberpunk.md)
+    * [Vantablack leather through Metalness](for-mod-creators-theory/materials/textures/vantablack-leather-through-metalness.md)
   * [Shaders](for-mod-creators-theory/materials/shaders/README.md)
     * [Shader Docs](for-mod-creators-theory/materials/shaders/shader-docs.md)
   * [Material properties](for-mod-creators-theory/materials/configuring-materials/README.md)

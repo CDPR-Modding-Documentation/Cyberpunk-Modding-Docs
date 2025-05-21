@@ -31,3 +31,9 @@ Test if it is the material, or if your mistake is somewhere else. Replace your m
 If the gold material shows up and your custom material doesn't, then you have an issue with the material.
 
 If the gold material also doesn't show up, then your problem lies somewhere else. Maybe the entire [chunk ](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes)is hidden?
+
+## My black \<material> looks grey in sunlight!
+
+By default all the base game leather materials in the game have a metalness of zero and can only be scaled based on roughness. Black leather looks like black leather, even under direct sunlight because inside all the cracks and crevices the leather is black as night. However, because the game has leather setup without metalness options, the cracks and crevices are also flooded with light and so the whole material looks like a washed out flat grey.
+
+For more information, see [vantablack-leather-through-metalness.md](textures/vantablack-leather-through-metalness.md "mention")
