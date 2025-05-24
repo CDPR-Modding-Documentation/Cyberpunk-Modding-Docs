@@ -43,6 +43,7 @@ _The guide was created after reading_ [_this one_](https://drive.google.com/file
 * To troubleshoot your ArchiveXL mods, you can use [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/ "mention")'s [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention").
 * If you want to convert a mod to dynamic appearances, check the [archivexl-dynamic-conversion-guide.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-conversion-guide.md "mention")
 * If you want to use dynamic appearances out of the box, check [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention") (this is the preferred approach as soon as you're creating different options).
+* If you're making a weapon, check [weapons](weapons/ "mention"), or the more elaborate [new-iconic-weapon-tutorial-for-dummies.md](weapons/new-iconic-weapon-tutorial-for-dummies.md "mention") guide.
 
 #### Or maybe for something completely different?
 
