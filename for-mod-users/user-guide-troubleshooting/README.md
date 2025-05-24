@@ -6,6 +6,8 @@ description: If your mods are causing trouble, here's what you can do
 
 ## Summary
 
+Last documented update: Mar 24 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
 This page contains[^1] troubleshooting[^1] information for people who are **using** mods rather than making mods. You will find step-by-step guides, grouped by different problems.
 
 {% hint style="info" %}
@@ -1134,10 +1136,14 @@ If that doesn't solve your problem, or if the issue is save-game related, feel f
 You only need to read this if you can start a new game without mods, but crash on loading a previous save game. For any other problem, please see the corresponding section(s).
 {% endhint %}
 
-Some mods store data in save files. Removing those mods **may** (but doesn't have to) lead to your save game crashing until you install them again.&#x20;
+Some mods store data in save files. Removing those mods **may** (but doesn't have to) lead to your save game crashing **until you install them again**.&#x20;
 
-At the current time (09/2023, before PL), that has been confirmed to affect those mods:
+At the current time (05/2025, before PL), that has been confirmed to affect mods that add new weather states, and [Immersive Rippers](https://www.nexusmods.com/cyberpunk2077/mods/7064?tab=posts).
 
+* Weather mods: If the mod adds new weathers, and one of those is active in your save game, the game will try to set the weather to `{this does not exist}` . Trying to access things that don't exist will cause a crash.\
+  Known offenders (this is not a complete list):
+  * [Enhanced Weather](https://www.nexusmods.com/cyberpunk2077/mods/3901)
+  * [Nova City 2](https://www.nexusmods.com/cyberpunk2077/mods/12490)
 * [Immersive Rippers](https://www.nexusmods.com/cyberpunk2077/mods/7064?tab=posts) - see the expandable list below for uninstall instructions, or check the mod's pinned post on Nexus
 
 <details>
