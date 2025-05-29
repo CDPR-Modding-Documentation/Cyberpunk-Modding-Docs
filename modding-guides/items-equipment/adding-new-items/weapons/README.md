@@ -13,6 +13,7 @@ This guide will teach you how to change the ArchiveXL item addition process to m
 
 #### Wait, this is not what I want!
 
+* For a step-by-step guide with examples, check [standalone-weapon-appearance.md](standalone-weapon-appearance.md "mention")
 * For a much more detailed step-by-step guide, check [new-iconic-weapon-tutorial-for-dummies.md](new-iconic-weapon-tutorial-for-dummies.md "mention")
 * For an overview of weapon properties, check [cheat-sheet-weapon-basestats.md](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/weapons/cheat-sheet-weapon-basestats.md "mention")
 * For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/weapons/cheat-sheet-weapon-audio.md "mention")

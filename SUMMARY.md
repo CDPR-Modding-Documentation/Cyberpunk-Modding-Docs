@@ -280,6 +280,7 @@
     * [Your own Atelier Store](modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md)
     * [🔫 ItemAdditions: Weapons](modding-guides/items-equipment/adding-new-items/weapons/README.md)
       * [☠️ New Iconic Weapon: Step by Step](modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md)
+      * [Standalone Weapon Appearance](modding-guides/items-equipment/adding-new-items/weapons/standalone-weapon-appearance.md)
       * [Throwing weapons: projectiles](modding-guides/items-equipment/adding-new-items/weapons/throwing-weapons-projectiles.md)
       * [Weapons: Attachments and Scopes](modding-guides/items-equipment/adding-new-items/weapons/weapons-attachments-and-scopes.md)
   * [Custompathing assets](modding-guides/items-equipment/custompathing-assets.md)

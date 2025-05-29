@@ -29,7 +29,7 @@ We'll be making a fully featured new Iconic weapon in this guide, which is desig
 
 #### Wait, this is not what I want!
 
-* You can find another guide about this topic under [.](./ "mention")
+* You can find other guides about this topic under [.](./ "mention") and [standalone-weapon-appearance.md](standalone-weapon-appearance.md "mention")
 * For an overview of weapon properties, check [cheat-sheet-weapon-basestats.md](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/weapons/cheat-sheet-weapon-basestats.md "mention")
 * For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/weapons/cheat-sheet-weapon-audio.md "mention")
 
