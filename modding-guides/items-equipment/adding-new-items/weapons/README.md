@@ -209,6 +209,14 @@ Set $base like this:
 
 Make sure all the items under "resolvedDependencies" are deleted in your appearances, especially if they are using "Soft" or "Embedded" flags. The game might load vanilla meshes instead of your own meshes.&#x20;
 
+### Reticle (dot) position of the scope I attach to my weapon is not aligned with the point of impact (regardless of which scope)!
+
+Make sure the ikOffset of the weapon is zero for every axis:
+
+```
+  ikOffset: {x: 0, y: 0, z: 0}
+```
+
 [^1]: as linked in your .app's baseEntity field
 
 [^2]: baseEntity in your app file
