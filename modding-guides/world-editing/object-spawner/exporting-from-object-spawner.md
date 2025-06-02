@@ -47,7 +47,7 @@ If you just want to quickly convert your project to a native edit, jump to the [
     * It is usually dependent on the size of the object
     * Can be found under each object's "World Node" header
 
-    <figure><img src="../../../.gitbook/assets/worldNodeStreamingRange" alt="" width="274"><figcaption><p>Streaming Ranges of an object</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/WBWorldNodeProperties" alt="" width="274"><figcaption><p>Streaming Ranges of an object</p></figcaption></figure>
 *   Sector Range:
 
     * This determines when then entire sector gets streamed in / out

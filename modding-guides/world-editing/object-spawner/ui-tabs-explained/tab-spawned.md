@@ -101,6 +101,9 @@ If you want to save a sub-group, to make it reusable, [make it a prefab](tab-fav
 Enable precision mode by holding down shift while using the transform controls
 {% endhint %}
 
+* You can quickly add or subtract 90° from any of the rotation axis by `Shift + Left/Right Clicking` the axis controls
+* To teleport yourself to an object's position, simply right-click the `Set to player position` icon to the right of the position controls
+
 ## Group properties
 
 * When having multiple elements selected (Or a group), you can use the "Group Properties" header to control certain properties of all elements of a type
@@ -120,8 +123,9 @@ A NodeRef is a unique identifier which can be used to reference one specific obj
 * The ranges found under the World Node header of each object control when that specifc object streams in / out
 * To make setting these easier, there is a "Auto-Set" button
   * As seen in the [Group properties](tab-spawned.md#group-properties) section, you can also auto-generate the values for all your builds objects at once
+* Additionally, you can activate the `Override Streaming` option, which will let you define a different position from which the streaming distances will be measured from (Instead of using the node position)
 
-<figure><img src="../../../../.gitbook/assets/image (614).png" alt="" width="375"><figcaption><p>World Node properties, which every type of object / node you can spawn has</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/WBWorldNodeProperties" alt="" width="387"><figcaption><p>World Node properties, which every type of object / node you can spawn has</p></figcaption></figure>
 
 {% hint style="warning" %}
 Having too large or too small primary/secondary range can lead to bugs
