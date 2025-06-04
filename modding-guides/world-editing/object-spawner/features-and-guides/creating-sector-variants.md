@@ -33,7 +33,7 @@ Further information on how sector variants work under the hood, and how to manua
 ## General Setup
 
 * Variants are something you should keep in mind during the building process, if you want to use them
-* You will be able to assign each group, which sits directly within in main group, to a variant
+* You will be able to assign each group, which sits directly within the main group, to a variant
 
 <figure><img src="../../../../.gitbook/assets/sectorVariantValidGroupsExample" alt="" width="248"><figcaption><p>Example of what groups will be assignable</p></figcaption></figure>
 
@@ -43,7 +43,7 @@ Further information on how sector variants work under the hood, and how to manua
 ## Assigning variants
 
 * Once you have added your group(s) to the export, you can start assigning variants
-* Variant settings can be found under the same named header (One per group)
+* Variant settings can be found under the equally named header (One per group)
 * By default, each group will be assigned to the `default` variant, meaning they will be always active
 
 <figure><img src="../../../../.gitbook/assets/sectorVariantExample" alt=""><figcaption><p>Example of a variants setup for a group, in the export tab</p></figcaption></figure>
