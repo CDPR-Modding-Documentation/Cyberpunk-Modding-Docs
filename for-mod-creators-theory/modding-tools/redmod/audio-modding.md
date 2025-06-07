@@ -1,4 +1,10 @@
-# Audio Modding
+# Audio Modding: Redmod
+
+## Summary <a href="#summary" id="summary"></a>
+
+**Last documented update:** June 06 2025 by [Lizzie Kieser](https://app.gitbook.com/u/T87dp3CmmkfQfjAnlwvPxLhqCnV2)
+
+REDmod allows you to add new and override existing audio events. Note that any events added or overridden will use a different Wwise event, removing any special parameters and Wwise logic attached (e.g. overriding a gun sound event will result in it no longer receiving time-dilation effects processing).
 
 ### Audio Modding - WolvenKit Integration
 
@@ -14,7 +20,7 @@ The REDmod sound import tool can be used in a [WolvenKit](https://github.com/Wol
 
 ### Audio Modding - Manually
 
-Place raw `.wav` audio files inside `<Cyberpunk 2077>/mods/<name>/customSounds`. Include a **info.json** file with your mod (`<Cyberpunk 2077>/mods/<name>/customSounds/info.json`) where you sepcify how to use your custom sounds.
+Place raw `.wav` audio files inside `<Cyberpunk 2077>/mods/<name>/customSounds`. Include a **info.json** file with your mod (`<Cyberpunk 2077>/mods/<name>/customSounds/info.json`) where you sepcify how to use your custom sounds. You may use nested folders with `\\` (see last entry in example).
 
 #### Example
 
@@ -38,22 +44,31 @@ Place raw `.wav` audio files inside `<Cyberpunk 2077>/mods/<name>/customSounds`.
       "gain": 1.0,
       "pitch": 0.1
     }
+    {
+      "name": "my_new_sound",
+      "type": "mod_sfx_room",
+      "file": "mysounds\\new_sound.wav",
+      "gain": 0.4,
+      "pitch": 0.05
+    },
   ]
 }
 ```
 
 ### Parameters
 
-* **name** - the game audio event to override
-* **type** - the sound type. Options are:
-  * **mod\_skip**: do not play this sound event
-  * **mod\_sfx\_2d**: will be played without any positions / attenuation
-  * **mod\_sfx\_city**: has a longer attenuation that is suitable for city sounds
-  * **mod\_sfx\_low\_occlusion**: has a long attenuation that isn't occluded much e.g. a VO or quest sound that you don't want to be muffled
-  * **mod\_sfx\_occlusion**: medium attenuation with normal occlusion
-  * **mod\_sfx\_radio**: needs to be tuned to a broadcast channel (e.g. radio)
-  * **mod\_sfx\_room**: has a shorter attenuation suitable for something that can be heard across a room
-  * **mod\_sfx\_street**: has a medium attenuation, good for something to be heard down a street
-  * **mod\_sfx\_ui**: for menu and ui sound replacement
-* **file** - the `.wav` file to use (inside `/customSounds`)
-* **gain** and **pitch**
+* **name** - `String` The game audio event to override.&#x20;
+* **type** - `String` The sound type. Options are:
+  * **mod\_skip**: Do not play this sound event
+  * **mod\_sfx\_2d**: Will be played without any positions / attenuation
+  * **mod\_sfx\_city**: Has a longer attenuation that is suitable for city sounds
+  * **mod\_sfx\_low\_occlusion**: Has a long attenuation that isn't occluded much e.g. a VO or quest sound that you don't want to be muffled
+  * **mod\_sfx\_occlusion**: Medium attenuation with normal occlusion
+  * **mod\_sfx\_radio**: Needs to be tuned to a broadcast channel (e.g. radio)
+  * **mod\_sfx\_room**: Has a shorter attenuation suitable for something that can be heard across a room
+  * **mod\_sfx\_street**: Has a medium attenuation, good for something to be heard down a street
+  * **mod\_sfx\_ui**: For menu and UI sound replacement
+* **file** - `String` The `.wav` file to use (inside `/customSounds`)
+* **gain** - `Float` How loud the sound is; ranges from 0 to 1.
+* **pitch** - `Float` The amount of pitch variance applied to the sound; ranges from 0 to 1.
+
