@@ -330,6 +330,7 @@
     * [Poses/Animations: make your own](modding-guides/animations/animations/poses-animations-make-your-own/README.md)
       * [Custom Poses and Animations - Guide by xbaebsae](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/)
       * [Easy IK based Posing](modding-guides/animations/animations/poses-animations-make-your-own/easy-ik-based-posing.md)
+      * [Pose Making for Gonks](modding-guides/animations/animations/poses-animations-make-your-own/pose-making-for-gonks.md)
     * [ArchiveXL: adding Photo Mode Poses](modding-guides/animations/animations/archivexl-adding-photo-mode-poses/README.md)
       * [Updating Photomode Pose Packs for 2.2](modding-guides/animations/animations/archivexl-adding-photo-mode-poses/updating-photomode-pose-packs-for-2.2.md)
     * [Removing Foot Snap IK from Poses/Animations](modding-guides/animations/animations/removing-foot-snap-ik-from-poses-animations.md)
