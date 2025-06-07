@@ -1,5 +1,8 @@
 # Scaling Poses/Animations
 
+**Created by** [Zwei Valerie](https://app.gitbook.com/u/YvPrbtYFcff1iVuhhxhlJJEYw8l1 "mention")\
+**Last Published Update:** ???
+
 I noticed Photo Mode V is huge, and sometimes, specific pose packs have different character scaling. For example, the MascV in [MrsFlower’s MascV idle pose pack](https://www.nexusmods.com/cyberpunk2077/mods/4366) is smaller than the MascV in my [MascV Joytoys](https://www.nexusmods.com/cyberpunk2077/mods/6786) and [MascV Yorinobu](https://www.nexusmods.com/cyberpunk2077/mods/6784) pose packs. With the enabling of Holopointz, I was able to figure out why this occurs and how to “adjust” the scaling.
 
 This guide is mainly a supplement to xBaebsae’s tutorials and resources. This guide allows you to scale armatures as desired for your VP, personal, etc., needs when you make pose packs and/or animations. This is TPP only.
@@ -30,7 +33,7 @@ IF YOU NEED TO RESET THE SCALE, HIT ALT + S!
 
 Go to the right-hand side of the screen while your armature of choice is selected, and go into the Items tab. It should look like this.
 
-![](https://lh7-us.googleusercontent.com/-TZIOwTDZGOeKVe1WzA9rvX4KaQaNQLwjmHjLzUVXF4AbUEBhrexLh8dxRavv31K7inA-XA7QdPlC0xS\_tGJk7LduPZzoknHhnMihUELIXzR1bWKiqvdwye-7gQYU5ak3wxBRIvWyWqh\_EQ6-iqFDLY)
+![](https://lh7-us.googleusercontent.com/-TZIOwTDZGOeKVe1WzA9rvX4KaQaNQLwjmHjLzUVXF4AbUEBhrexLh8dxRavv31K7inA-XA7QdPlC0xS_tGJk7LduPZzoknHhnMihUELIXzR1bWKiqvdwye-7gQYU5ak3wxBRIvWyWqh_EQ6-iqFDLY)
 
 ## STEP FOUR
 
@@ -38,7 +41,7 @@ There are several ways to do this. Please remember that X moves side-to-side and
 
 Let’s say we want to make FemV taller than MascV at around the same “height” as Man Big. I put in some values below.
 
-![](https://lh7-us.googleusercontent.com/YlGirnCe\_\_SZP478u-JQwV\_F67GfWapsL0eCfGCdqiSsi8aTXsrrqElujswyinLrhkBjbIjWbOHmjjteapzF5vML07KYWZHJhqSoEhcJ7oiS-ZMb0AVV6AVyHTaK5mEqQh7vsLDsskt-5Z6MnFcjf2o)
+![](https://lh7-us.googleusercontent.com/YlGirnCe__SZP478u-JQwV_F67GfWapsL0eCfGCdqiSsi8aTXsrrqElujswyinLrhkBjbIjWbOHmjjteapzF5vML07KYWZHJhqSoEhcJ7oiS-ZMb0AVV6AVyHTaK5mEqQh7vsLDsskt-5Z6MnFcjf2o)
 
 ## STEP FIVE
 
@@ -49,14 +52,14 @@ After you hit Ctrl + A and apply the scale, the armature will change appropriate
 \
 
 
-![](https://lh7-us.googleusercontent.com/sSAepxfQuFTGxk6mN6hyoWWJ7d6zWmzph19j-xmW7\_I6Dn7-\_JlbHLGRADvTykjOvUU8ZA2jdu2iCnmaCZ\_xB750klk4daZA49azUfvfyKHVdFmzgMxdAW42aL\_WkcDG0y9pYsnV4SCLYLukL\_jQWQ8)
+![](https://lh7-us.googleusercontent.com/sSAepxfQuFTGxk6mN6hyoWWJ7d6zWmzph19j-xmW7_I6Dn7-_JlbHLGRADvTykjOvUU8ZA2jdu2iCnmaCZ_xB750klk4daZA49azUfvfyKHVdFmzgMxdAW42aL_WkcDG0y9pYsnV4SCLYLukL_jQWQ8)
 
 \
 
 
 If you look closely, the armature has changed proportions from when the scale was applied.
 
-![](https://lh7-us.googleusercontent.com/G-SIfdjczD-lL7ucvzHSwqJQF6RtvJGjN\_kq2qzFdzhZNXaurvL080O3gjc889w8U9YTkjYEd1wBUrgwravGxX2kLkbhuduOCqF-JNqpxDRW9D-paZUrBXbda1N8LS-xMCbn8aE0CdOJoeK3CDOJLSM)
+![](https://lh7-us.googleusercontent.com/G-SIfdjczD-lL7ucvzHSwqJQF6RtvJGjN_kq2qzFdzhZNXaurvL080O3gjc889w8U9YTkjYEd1wBUrgwravGxX2kLkbhuduOCqF-JNqpxDRW9D-paZUrBXbda1N8LS-xMCbn8aE0CdOJoeK3CDOJLSM)
 
 If you did not get your desired result or created a curse, hit CTRL + Z and keep adjusting the values, and apply as needed. This may need to take some trial and error. :)
 
@@ -69,7 +72,7 @@ Have fun! I hope this inspires a lot of awesome poses, especially shippy ones. Y
 \
 
 
-![](https://lh7-us.googleusercontent.com/WCwjvTanYBNtVbo0tLYjS6UdvTB4oDTRPhYDl7X1SLkDkoBBRyXdyNRc9pd3HBJ1P3oxktz0EoDPjMiLCJEydgXCRZSjTUqKIIF7umqbDfD27MZ6uiTsX434l83ImX-BGFAR3neOkki\_py0UpbOv8cI)
+![](https://lh7-us.googleusercontent.com/WCwjvTanYBNtVbo0tLYjS6UdvTB4oDTRPhYDl7X1SLkDkoBBRyXdyNRc9pd3HBJ1P3oxktz0EoDPjMiLCJEydgXCRZSjTUqKIIF7umqbDfD27MZ6uiTsX434l83ImX-BGFAR3neOkki_py0UpbOv8cI)
 
 \
 
