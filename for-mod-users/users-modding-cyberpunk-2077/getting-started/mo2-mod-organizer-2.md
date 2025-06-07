@@ -75,7 +75,9 @@ If you would rather use the (experimental) plugin, read [#script-extenders-plugi
 If you would rather install the mods by hand, read [#script-extenders-manual-install](mo2-mod-organizer-2.md#script-extenders-manual-install "mention")instead.
 {% endhint %}
 
-I'm going to stress this as hard as I can: the plugin I just talked about is still somewhat new. I haven't had any issues with it so far, and I was able to guide someone who'd never even heard of MO2 previously, and they also have not experienced any issues.
+There exists a plugin for MO2 that will allow you to install CET and RED4ext the same way as any other mod (i.e. not manually). This is nice if you prefer to keep all of your mods within MO2's mod list, but it is an optional process. If you don't care about having CET and RED4ext installed in MO2, then I would recommend you to install them manually as detailed above. Otherwise, read on.
+
+I'm going to stress this as hard as I can: this plugin is not part of the main MO2 build and is therefore prone to bugs. I haven't had any issues with it so far, and I was able to guide someone who'd never even heard of MO2 previously, and they also have not experienced any issues.
 
 **With that said,** there is always a possibility that something simply doesn't work as expected. If you're absolutely, totally, undoubtedly 100% sure that you followed the below steps correctly and it still doesn't work, I would advise you to visit the official MO2 Discord server linked at the top of this guide and seek help there.
 
@@ -117,7 +119,7 @@ I'm going to stress this as hard as I can: the plugin I just talked about is sti
 
 ### **Installing Mods from Nexus** <a href="#installing-mods-from-nexus" id="installing-mods-from-nexus"></a>
 
-1. Go to the Nexus Mods website for Cyberpunk 2077 mods.
+1. Go to the [Nexus Mods](https://www.nexusmods.com/games/cyberpunk2077?modSort=new) website for Cyberpunk 2077 mods.
 2. Download mods via the "Mod Manager Download" button. MO2 will start to automatically download the mod.
 3. In MO2, open the **Downloads** tab and double-click the mod to install it.
 4. After installation, ensure the mod is enabled by checking it in the **Plugins** list or the **Installed Mods** section.
@@ -134,7 +136,7 @@ If you have mods from external sources:
 ### Launching the Game
 
 {% hint style="warning" %}
-**When using mo2 as a mod manager, you always have to launch the game through MO2.**
+**When using MO2 as a mod manager, you always have to launch the game through MO2.**
 {% endhint %}
 
 1. **Always Launch the Game through MO2**:
