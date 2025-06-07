@@ -403,6 +403,7 @@
   * [Chassis Modifications](modding-guides/vehicles/chassis-modifications.md)
   * [Weaponizing vehicles](modding-guides/vehicles/weaponizing-vehicles/README.md)
     * [🪟 Windows & Doors opening + MountedWeapons clue](modding-guides/vehicles/weaponizing-vehicles/windows-and-doors-opening-+-mountedweapons-clue.md)
+  * [Spinning fans on cars](modding-guides/vehicles/spinning-fans-on-cars.md)
 * [🌐 World Editing](modding-guides/world-editing/README.md)
   * [World Builder](modding-guides/world-editing/object-spawner/README.md)
     * [Usage and Features](modding-guides/world-editing/object-spawner/usage-and-features.md)
