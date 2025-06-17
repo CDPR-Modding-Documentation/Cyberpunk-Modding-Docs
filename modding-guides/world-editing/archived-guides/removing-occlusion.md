@@ -2,7 +2,7 @@
 description: Guide on how to remove occlusion nodes, on a sector basis
 ---
 
-# Removing Occlusion Nodes
+# Archived: Removing Occlusion Nodes
 
 ## Finding and Removing Occlusion
 
@@ -10,7 +10,15 @@ Author: spirit
 
 Last update: September 24th 2024
 
+Archived: June 17th 2025
+
 ***
+
+{% hint style="danger" %}
+This guide is _**outdated**_ as [VolumetricSelection2077](https://github.com/notaspirit/VolumetricSelection2077) supports occlusion nodes with version 1000.0.0-beta8 and up and [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools) has correct occlusion node detection in version 1.3.0-beta.7 and up.
+
+Both offer a much simpler, precise and refined way of removing occlusion nodes.
+{% endhint %}
 
 ### Introduction
 
