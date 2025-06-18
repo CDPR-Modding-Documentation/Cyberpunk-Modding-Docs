@@ -484,3 +484,4 @@
   * [Customize your Save Files' look](modding-guides/everything-else/customize-your-save-files-look.md)
   * [Customize game's infos on GOG](modding-guides/everything-else/customise-cp77-info-on-gog.md)
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/everything-else/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
+  * [Player State Machines](modding-guides/everything-else/player-state-machines.md)
