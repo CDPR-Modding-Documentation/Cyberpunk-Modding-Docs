@@ -251,3 +251,142 @@ If you want to selectively hide arm meshes or sub-meshes you will need to become
 Remember: Arms are why we can't have nice things.
 {% endhint %}
 
+### Arm override list, courtesy of Kiasuburger
+
+```yaml
+overrides:
+  tags:
+    hide_arm_left:
+      a0_001_pwa_base_hq__full: {hide: [0, 1, 2, 3]}
+      a0_000_ma_base__full_ag_hq1491: {hide: [0, 1, 2, 3]}
+      left_arm: {hide: [0, 1, 2, 3]}
+      # Monowire
+      ## wa _and_ ma
+      a0_002_wa__monowire_whip_l_cableless: {hide: [0, 1, 2, 3]}
+      ## ma
+      a0_002_ma__monowire_whip_l: {hide: [0, 1, 2, 3]}
+      # Mantis Blades
+      ## wa
+      a0_003_wa__mantisblade_left: {hide: [0, 1, 2, 3]}
+      a0_003_wa__mantisblade_upperarm_left: {hide: [0]}
+      a0_003_wa__mantisblade_nails_l: {hide: [0]}
+      ### a0_003_wa__mantisblade_left_mechanisms
+      ### a0_003_wa__mantisblade_left_mechanisms6263
+      ### a0_003_wa__mantisblade_left_blade
+      a0_003_wa__mantisblade_photomode_left2804: {hide: [0, 1, 2, 3]}
+      a0_003_wa__mantisblade_photomode_upperarm_left: {hide: [0]}
+      a0_003_wa__mantisblade_holstered_left: {hide: [0, 1, 2, 3]}
+      a0_003_wa__mantisblade_holstered_upperarm_left: {hide: [0]}
+      ## ma
+      a0_003_ma__mantisblade_left: {hide: [0, 1, 2, 3]}
+      a0_003_ma__mantisblade_upperarm_left: {hide: [0]}
+      a0_003_ma__mantisblade_nails_l: {hide: [0]}
+      ### a0_003_ma__mantisblade_left_mechanisms
+      ### a0_003_ma__mantisblade_left_blade
+      a0_003_ma__mantisblade_holstered_left6562: {hide: [0, 1, 2, 3]}
+      a0_003_ma__mantisblade_holstered_upperarm_left: {hide: [0]}
+      # Gorilla Arms
+      ## wa
+      a0_005_wa__strongarms_l: {hide: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]}
+      a0_005_wa__strongarms_int_l: {hide: [0, 1]}
+      a0_005_wa__strongarms_cyberware_l: {hide: [0, 1, 2]}
+      a0_005_wa__strongarms_photo_mode_l: {hide: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]}
+      a0_005_wa__strongarms_photo_mode_cyberware_l: {hide: [0]}
+      a0_005_wa__strongarms_holstered_l: {hide: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]}
+      a0_005_wa__strongarms_holstered_cyberware_l: {hide: [0]}
+      ## ma
+      a0_005_ma__strongarms_l: {hide: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]}
+      a0_005_ma__strongarms_int_l: {hide: [0, 1]}
+      a0_005_ma__strongarms_cyberware_l: {hide: [0, 1, 2]}
+      a0_005_ma__strongarms_holstered_l: {hide: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]}
+      a0_005_ma__strongarms_holstered_cyberware_l: {hide: [0]}
+      # Launcher
+      ## wa
+      a0_006_wa__launcher_shells8722: {hide: [0, 2, 3, 4, 5, 6, 7, 8]}
+      a0_006_wa__launcher_upperarm: {hide: [0, 1, 2]}
+      a0_006_wa__launcher_nails_l: {hide: [0]}
+      a0_006_wa__launcher_holstered_photo_mode8630: {hide: [0, 1, 2, 3, 4, 5, 6]}
+      a0_006_wa__launcher_upperarm_photo_mode: {hide: [0, 1, 2]}
+      ### a0_006_wa__launcher_muscles
+      ### a0_006_wa__launcher_mechanisms
+      a0_006_wa__launcher_holstered4156: {hide: [0, 1, 2, 3, 4, 5, 6]}
+      a0_006_wa__launcher_holstered_upperarm: {hide: [0, 1, 2]}
+      ## ma
+      a0_006_ma__launcher_shells1525: {hide: [0, 2, 3, 4]}
+      a0_006_ma__launcher_upperarm: {hide: [0, 1, 2, 3, 4, 5, 6]}
+      a0_006_ma__launcher_nails_l: {hide: [0]}
+      ### a0_006_ma__launcher_muscles
+      ### a0_006_ma__launcher_mechanisms
+      a0_006_ma__launcher_holstered1283: {hide: [0, 1, 2, 3, 4, 5, 6]}
+      a0_006_ma__launcher_holstered_upperarm: {hide: [0, 1, 2, 3, 4, 5, 6]}
+    hide_nails_left:
+      a0_000_pwa_base_nails_l: {hide: [0, 1, 2, 3, 4, 5]}
+      a0_000_pwa_base__nails_l: {hide: [0, 1, 2, 3, 4, 5]}
+      a0_000_pwa_fpp__nails_l: {hide: [0, 1, 2, 3, 4, 5]}
+      a0_000_pma_base__nails_l: {hide: [0]}
+      # Monowire
+      a0_002_ma__monowire_whip_l: {hide: [2]}
+      a0_002_wa__monowire_whip_l_cableless: {hide: [2]}
+
+    hide_arm_right:
+      a0_001_pwa_base_hq__full8640: {hide: [0, 1, 2]}
+      a0_000_ma_base__full_ag_hq6168: {hide: [0, 1, 2]}
+      right_arm: {hide: [0, 1, 2]}
+      # Monowire
+      ## wa _and_ ma
+      a0_002_wa__monowire_whip_r_cableless: {hide: [0, 1, 2, 3, 4]}
+      ## ma
+      a0_002_ma__monowire_whip_r: {hide: [0, 1, 2, 3, 4]}
+      # Mantis Blades
+      ## wa
+      a0_003_wa__mantisblade_right: {hide: [0, 1, 2, 3]}
+      a0_003_wa__mantisblade_upperarm_right: {hide: [0]}
+      a0_003_wa__mantisblade_nails_r: {hide: [0]}
+      ### a0_003_wa__mantisblade_right_mechanisms
+      ### a0_003_wa__mantisblade_right_mechanisms2035
+      ### a0_003_wa__mantisblade_right_blade
+      a0_003_wa__mantisblade_photomode_right: {hide: [0, 1, 2]}
+      a0_003_wa__mantisblade_photomode_upperarm_right: {hide: [0]}
+      a0_003_wa__mantisblade_holstered_right: {hide: [0, 1, 2]}
+      a0_003_wa__mantisblade_holstered_upperarm_right: {hide: [0]}
+      ## ma
+      a0_003_ma__mantisblade_right: {hide: [0, 1, 2, 3]}
+      a0_003_ma__mantisblade_upperarm_right: {hide: [0]}
+      a0_003_ma__mantisblade_nails_r: {hide: [0]}
+      ### a0_003_ma__mantisblade_right_mechanisms
+      ### a0_003_ma__mantisblade_right_blade
+      a0_003_ma__mantisblade_holstered_right: {hide: [0, 1, 2]}
+      a0_003_ma__mantisblade_holstered_upperarm_right: {hide: [0]}
+      # Gorilla Arms
+      ## wa
+      a0_005_wa__strongarms_r: {hide: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]}
+      a0_005_wa__strongarms_int_r: {hide: [0, 1]}
+      a0_005_wa__strongarms_cyberware_r: {hide: [0, 1, 2]}
+      a0_005_wa__strongarms_photo_mode_r: {hide: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]}
+      a0_005_wa__strongarms_photo_mode_cyberware_r: {hide: [0]}
+      a0_005_wa__strongarms_holstered_r: {hide: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]}
+      a0_005_wa__strongarms_holstered_cyberware_r: {hide: [0]}
+      ## ma
+      a0_005_ma__strongarms_r: {hide: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]}
+      a0_005_ma__strongarms_int_r: {hide: [0, 1]}
+      a0_005_ma__strongarms_cyberware_r: {hide: [0, 1, 2]}
+      a0_005_ma__strongarms_holstered_r: {hide: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]}
+      a0_005_ma__strongarms_holstered_cyberware_r: {hide: [0]}
+      # Launcher
+      ## wa
+      a0_006_wa__launcher_holstered_right: {hide: [0, 1, 2]}
+      a0_006_wa__launcher_nails_r: {hide: [0]}
+      a0_006_wa__launcher_holstered_photo_mode_right: {hide: [0, 1, 2]}
+      ## ma
+      a0_006_ma__launcher_upperarm_right: {hide: [0, 1, 2]}
+      a0_006_ma__launcher_nails_r: {hide: [0]}
+      a0_006_ma__launcher_holstered_upperarm_right: {hide: [0, 1, 2]}
+    hide_nails_right:
+      a0_000_pwa_base_nails_r: {hide: [0, 1, 2, 3, 4, 5]}
+      a0_000_pwa_base__nails_r: {hide: [0, 1, 2, 3, 4, 5]}
+      a0_000_pwa_fpp__nails_r: {hide: [0, 1, 2, 3, 4, 5]}
+      a0_000_pma_base__nails_r: {hide: [0]}
+      # Monowire
+      a0_002_ma__monowire_whip_r: {hide: [2]}
+      a0_002_wa__monowire_whip_r_cableless: {hide: [2]
+```
