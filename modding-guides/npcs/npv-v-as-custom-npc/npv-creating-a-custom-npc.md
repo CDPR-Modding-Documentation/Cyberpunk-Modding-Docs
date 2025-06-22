@@ -273,7 +273,7 @@ To set your custom eyelash colour, you need to set it inside the mesh file (as t
 <figure><img src="../../../.gitbook/assets/npv-eyelash-color-1.png" alt=""><figcaption></figcaption></figure>
 
 2. Find and expand the appearance you are using (the same you set in the `.app` file).
-3. Find the chunk saying `eyelashes_MAT` and change its value to the correct eyelash colour (e.g. `eyelashes__blue_steel`).&#x20;
+3. Find the chunk saying `eyelashes_MAT` (respectively `eyeMat3` for mV) and change its value to the correct eyelash colour (e.g. `eyelashes__blue_steel`).&#x20;
 4. Save the file
 5. **Optional:** If you want, you can clean up the eye mesh now. Check the eyes before you do!
    1. Select the appearance you are using, then right-click to open the context menu
