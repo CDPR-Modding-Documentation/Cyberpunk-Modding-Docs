@@ -4,7 +4,7 @@ description: 'Step 2: How to create a custom NPC'
 
 # NPV: Creating a custom NPC
 
-## hSummary
+## Summary
 
 **Published**: May 13 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update**: Dec 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
@@ -171,7 +171,7 @@ This is where all of your NPC's appearances are defined (`appearanceDefinition`,
 * body&#x20;
 * clothes
 
-<figure><img src="../../../.gitbook/assets/npv_app_structure.png" alt=""><figcaption><p>Do <strong>not</strong> delete the prefixes (<code>hx_</code>, <code>l1_</code> etc) - they're used by various other mods, among them EquipmentEx</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/npv_app_structure.png" alt=""><figcaption><p>Keep the prefixes in your component names (<code>hx_</code>, <code>l1_</code> etc) - they're used by various other mods, among them EquipmentEx</p></figcaption></figure>
 
 ### Step 1: Cleaning up
 
