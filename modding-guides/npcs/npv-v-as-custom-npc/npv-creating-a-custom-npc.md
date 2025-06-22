@@ -197,13 +197,23 @@ If you feel completely lost, you can read up on [how to change NPC appearances](
 &#x20;[File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
 {% endhint %}
 
-{% hint style="success" %}
-If you want to add another appearance
+#### Adding another component
 
-* duplicate an existing entry
+If you need more components than you have, you can **duplicate** an existing one:
+
+* Select and right-click
+* Duplicate it from the context menu
+* Change the key `name` to something unique
+* Change the `depot path` to the relative path of your mesh
+
+#### Adding another appearance
+
+To create more appearances, you can also duplicate an existing entry:
+
+* Select and right-click
+* Duplicate it from the context menu
 * change the key `name` to match the one in your root entity
 * change the components
-{% endhint %}
 
 ### How do I know what to put?
 
