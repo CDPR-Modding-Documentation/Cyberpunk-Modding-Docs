@@ -1091,6 +1091,10 @@ Otherwise:
 * If the game never even starts, see [#crash-on-startup](./#crash-on-startup "mention")
 * If the game crashes when you're trying to load a save, see [#crash-on-loading-a-save](./#crash-on-loading-a-save "mention")
 
+#### Something with Watchdog
+
+Check [#watchdog-timeout](./#watchdog-timeout "mention")
+
 #### 2.0 / PL: Missing tweakdb.bin or inaccessible memory
 
 ```
@@ -1232,6 +1236,64 @@ That being said, if the crashes exceed what you're willing to live with, you'll 
 * [temporarily disabling](./#step-1-temporarily-disable-all-your-mods) certain types of mod to home in on the cause (see the [bisect section](./#go-bisect) for an overviev)
 
 Best of luck!
+
+## Watchdog Timeout
+
+Your red4ext.log has an error message like this:
+
+```
+[error] File: E:\R6.Release\dev\src\common\engine\src\engineWatchdog.cpp
+[error] Message: Watchdog timeout! (120 seconds)
+```
+
+This can happen [#in-photo-mode](./#in-photo-mode "mention") or [#on-game-start](./#on-game-start "mention")
+
+<details>
+
+<summary>What is the watchdog?</summary>
+
+A **watchdog** is a background process (daemon!) to keep an eye up for crashes. If the application it's watching hasn't responded after time interval X, the watchdog will assume that it died, and cause a crash. This prevents quiet crashes in the background.
+
+</details>
+
+### In photo mode
+
+Sorry to tell you, but your GPU just isn't up to the screenshot. Try scaling things down.
+
+#### Increase the timeout
+
+If you are dead-set on that photo, you can try increasing the watchdog timeout to give the game more time to render. Open the following file with a text editor (create it if it doesn't exist):
+
+```
+Cyberpunk 2077\engine\config\platform\pc\user.ini
+```
+
+... and add the following lines ([original source](https://forums.cdprojektred.com/index.php?threads/cyberpunk-2077-pc-crash-issues.11040656/page-99#post-12377786)):
+
+```ini
+[Engine/Watchdog]
+ActiveIfDebuggerPresent = true
+ActiveIfDialogBlocking = false
+ActiveIfScriptBreakpointBlocking = false
+DumpJobExecutionContext = true
+Enabled = false
+KillProcess = false
+ThreadFrequencyHz = 15
+TimeoutSeconds = 604800
+```
+
+This will set the timeout to something over 2 hours, and should hopefully be long enough to render that screenshot for you.
+
+### On game start
+
+First, **check your antivirus**. Make sure that you have an exception for the [Cyberpunk 2077 game directory](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/) (guide on [rackspace](https://docs.rackspace.com/docs/set-windows-defender-folder-exclusions)).
+
+If that's not it, **check the last loaded plugin**.
+
+Scroll up and check the last line saying `Loading plugin from` .&#x20;
+
+* [ ] Is that mod up-to-date?
+* [ ] Try disabling it - does that make the error go away?
 
 ## Corrupt or missing script files
 
