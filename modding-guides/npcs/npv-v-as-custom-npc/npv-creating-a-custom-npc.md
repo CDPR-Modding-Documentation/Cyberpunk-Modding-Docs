@@ -262,6 +262,25 @@ For cyberware added after 2.2, please see [cheat-sheet-head](../../../for-mod-cr
 Wolvenkit's [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) triggers when you save a file, and it will help you to spot mistakes.
 {% endhint %}
 
+### Customizing eyelash colour
+
+If you do not want to customize your eyelash colour, you can skip ahead to [#customizing-piercings-and-chrome-chunkmasks](npv-creating-a-custom-npc.md#customizing-piercings-and-chrome-chunkmasks "mention").
+
+To set your custom eyelash colour, you need to set it inside the mesh file (as the player's eyelashes are coloured independently from the eye).
+
+1. Open up the mesh file `he_000_pxa_basehead`. You can find it in your project browser, or open it from the component:
+
+<figure><img src="../../../.gitbook/assets/npv-eyelash-color-1.png" alt=""><figcaption></figcaption></figure>
+
+2. Find and expand the appearance you are using (the same you set in the `.app` file).
+3. Find the chunk saying `eyelashes_MAT` and change its value to the correct eyelash colour (e.g. `eyelashes__blue_steel`).&#x20;
+4. Save the file
+5. **Optional:** If you want, you can clean up the eye mesh now. Check the eyes before you do!
+   1. Select the appearance you are using, then right-click to open the context menu
+   2. Hold Shift and select "delete everything but selection"
+   3. From the `Clean Up` menu, select "delete unused materials"
+   4. Save the file again
+
 ### Customizing piercings and chrome: Chunkmasks
 
 {% hint style="info" %}
