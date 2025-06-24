@@ -251,6 +251,12 @@ If you want to selectively hide arm meshes or sub-meshes you will need to become
 Remember: Arms are why we can't have nice things.
 {% endhint %}
 
+{% hint style="info" %}
+For reasons best known to CDPR, the monowire arm meshes displayed in game for fem V are different from the ones linked in the components listed above. They have different geometry and submesh counts.  \
+\
+In order to hide fem V monowire arms you have to hide specifc submeshes on each arm that otherwise don't seem to exist in the linked meshes. The submeshes are \[0, 4, 5, 6, 7] for the left arm and \[0, 2, 5, 6, 7] for the right arm. They are written accordingly in the list below.&#x20;
+{% endhint %}
+
 ### Arm override list, courtesy of Kiasuburger
 
 ```yaml
@@ -262,7 +268,7 @@ overrides:
       left_arm: {hide: [0, 1, 2, 3]}
       # Monowire
       ## wa _and_ ma
-      a0_002_wa__monowire_whip_l_cableless: {hide: [0, 1, 2, 3]}
+      a0_002_wa__monowire_whip_l_cableless: {hide: [0, 4, 5, 6, 7]}
       ## ma
       a0_002_ma__monowire_whip_l: {hide: [0, 1, 2, 3]}
       # Mantis Blades
@@ -334,7 +340,7 @@ overrides:
       right_arm: {hide: [0, 1, 2]}
       # Monowire
       ## wa _and_ ma
-      a0_002_wa__monowire_whip_r_cableless: {hide: [0, 1, 2, 3, 4]}
+      a0_002_wa__monowire_whip_r_cableless: {hide: [0, 2, 5, 6, 7]}
       ## ma
       a0_002_ma__monowire_whip_r: {hide: [0, 1, 2, 3, 4]}
       # Mantis Blades
