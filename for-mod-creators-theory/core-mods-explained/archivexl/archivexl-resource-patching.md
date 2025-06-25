@@ -131,3 +131,39 @@ resource:
 {% hint style="danger" %}
 You can't overwrite scopes, and you can't remove anything from them. Only appending is possible!
 {% endhint %}
+
+## Partial templates: @Context&#x20;
+
+### Different parameters per .mesh
+
+What if you need to customize your template further? For example, everything uses the same `.mlsetups`, but you need different normal maps?
+
+That's where `@context` comes in.
+
+{% hint style="danger" %}
+This only works for **dynamic** materials — e.g. `@material`!
+{% endhint %}
+
+### Adjusting the target mesh
+
+This is for the mesh that you will be patching.
+
+1. Create a material entry called `@context`.  This must be the first material in your list:
+
+<figure><img src="../../../.gitbook/assets/resource_patching_context.png" alt=""><figcaption></figcaption></figure>
+
+2. In the `values` array, create a `CpuNameU64`:
+
+<figure><img src="../../../.gitbook/assets/resource_patching_cpuname.png" alt=""><figcaption></figcaption></figure>
+
+3. Give it a custom name (like `ManasCustomNormal`), and set the depot path of your normal map as its`Value`.
+4. Do the same for any other mesh(es) that you want to patch and which should use a custom texture.
+
+### Adjusting the patch mesh
+
+Any dynamic material inside your patch mesh can now **resolve substitution** for the parameter you just defined (the name will be converted to **`camel case`**):
+
+<figure><img src="../../../.gitbook/assets/resource_patching_patch_mesh.png" alt=""><figcaption></figcaption></figure>
+
+... and that's it. Depending on your defined parameters, the material will now have a different normal map per mesh (or fall back to the default parameter if it can't be resolved).
+
