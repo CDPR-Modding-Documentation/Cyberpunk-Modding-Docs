@@ -464,6 +464,7 @@
   * [Custom Sounds & Custom Emitters with Audioware](modding-guides/sound/custom-sounds-and-custom-emitters-with-audioware.md)
 * [❕ Quests & Scenes](modding-guides/quest/README.md)
   * [How to edit in-Game Messages](modding-guides/quest/how-to-edit-in-game-messages.md)
+  * [Name & Ordinals - Sockets 101](modding-guides/quest/name-and-ordinals-sockets-101.md)
   * [Visualize Quest files](modding-guides/quest/visualize-quest-files.md)
   * [How to Edit Voiceover and Subtitles In a Quest.](for-mod-creators/modding-guides/quest/how-to-edit-voiceover-and-subtitles-in-a-quest..md)
   * [How to Remove an Animation (and Potentially Replace It)](modding-guides/quest/how-to-remove-an-animation-and-potentially-replace-it.md)
