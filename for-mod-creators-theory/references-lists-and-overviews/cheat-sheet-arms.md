@@ -394,5 +394,5 @@ overrides:
       a0_000_pma_base__nails_r: {hide: [0]}
       # Monowire
       a0_002_ma__monowire_whip_r: {hide: [2]}
-      a0_002_wa__monowire_whip_r_cableless: {hide: [2]
+      a0_002_wa__monowire_whip_r_cableless: {hide: [2]}
 ```
