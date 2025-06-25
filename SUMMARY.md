@@ -471,6 +471,7 @@
   * [How to open garage doors](modding-guides/quest/how-to-open-garage-doors.md)
   * [Creating custom scenes](modding-guides/quest/creating-custom-scenes.md)
   * [Creating custom shards](modding-guides/quest/creating-custom-shards.md)
+  * [Adding Animations](modding-guides/quest/adding-animations.md)
   * [How to add new text messages thread to Cyberpunk 2077](modding-guides/quest/how-to-add-new-text-messages-thread-to-cyberpunk-2077.md)
 * [🛍️ Everything else](modding-guides/everything-else/README.md)
   * [How to Translate a Mod](modding-guides/everything-else/how-to-translate-a-mod.md)
