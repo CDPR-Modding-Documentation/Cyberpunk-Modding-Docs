@@ -37,11 +37,7 @@ This method of layering materials unfortunately drastically reduces the effect o
 4. Copy the `DepotPath` of the `normalTexture` and paste it into the `µblends` field in MLSB.
 5. In the µblends Parameters box, you can mess around with its size (`Tiles`, higher number means smaller texture—it gets tiled more often across the same surface area), opacity (`contrast`) and intensity (`normals`, can be higher than `1`).
 
-<div data-full-width="false">
-
-<figure><img src="../../../.gitbook/assets/mltemplate_to_n_xbm.png" alt=""><figcaption><p>using cotton_twill_clean_01_30_n.xbm as a microblend</p></figcaption></figure>
-
-</div>
+<div data-full-width="false"><figure><img src="../../../.gitbook/assets/mltemplate_to_n_xbm.png" alt=""><figcaption><p>using cotton_twill_clean_01_30_n.xbm as a microblend</p></figcaption></figure></div>
 
 <figure><img src="../../../.gitbook/assets/Cyberpunk2077 2024-05-29 00-25-22.png" alt=""><figcaption><p>cotton_twill_clean_01_30_n.xbm in-game</p></figcaption></figure>
 
@@ -49,7 +45,7 @@ This method of layering materials unfortunately drastically reduces the effect o
 
 | µblend normals at 1.0                                            | µblend normals at -1.0                                           |
 | ---------------------------------------------------------------- | ---------------------------------------------------------------- |
-| ![](../../../.gitbook/assets/normal\_positive.png)               | ![](../../../.gitbook/assets/normal\_negative.png)               |
+| ![](../../../.gitbook/assets/normal_positive.png)                | ![](../../../.gitbook/assets/normal_negative.png)                |
 | ![](<../../../.gitbook/assets/Screenshot 2024-09-22 154016.png>) | ![](<../../../.gitbook/assets/Screenshot 2024-09-22 154006.png>) |
 
 ## The Opacity
@@ -58,11 +54,11 @@ Cyberpunk allows layers in your `mlsetup` to exceed `Opacity 1.0`. What this doe
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-09-22 150310.png" alt=""><figcaption><p>denim_camo_01_30 at Opacity 3 to enhance colour and pattern. Normals set to undefined. Texture intensity is controlled via µblend.</p></figcaption></figure>
 
-| ↓ Green base, opacity 3.0                          | ↓ Green base, opacity 1.0                          |
-| -------------------------------------------------- | -------------------------------------------------- |
-| ![](../../../.gitbook/assets/camo\_green\_3-0.png) | ![](../../../.gitbook/assets/camo\_green\_1-0.png) |
-| ↓ Grey base, opacity 3.0                           | ↓ Grey base, opacity 1.0                           |
-| ![](../../../.gitbook/assets/camo\_grey\_3-0.png)  | ![](../../../.gitbook/assets/camo\_grey\_1-0.png)  |
+| ↓ Green base, opacity 3.0                        | ↓ Green base, opacity 1.0                        |
+| ------------------------------------------------ | ------------------------------------------------ |
+| ![](../../../.gitbook/assets/camo_green_3-0.png) | ![](../../../.gitbook/assets/camo_green_1-0.png) |
+| ↓ Grey base, opacity 3.0                         | ↓ Grey base, opacity 1.0                         |
+| ![](../../../.gitbook/assets/camo_grey_3-0.png)  | ![](../../../.gitbook/assets/camo_grey_1-0.png)  |
 
 ## The Shininess
 
@@ -80,9 +76,9 @@ If you want your material to be very shiny, pick a value where the first number 
 
 Confusingly, the opposite might be true, as well. In the following example, `0.6667,0.3333` is shinier than `0.3333,0.6667`. It's quite illustrative of the interaction between the two numbers because they're the exact opposites.
 
-|                velvet\_clean\_01\_30 @ 0.6667,0.3333                |                velvet\_clean\_01\_30 @ 0.3333,0.6667                |
-| :-----------------------------------------------------------------: | :-----------------------------------------------------------------: |
-| ![](../../../.gitbook/assets/velvet\_clean\_01\_30\_6667\_3333.png) | ![](../../../.gitbook/assets/velvet\_clean\_01\_30\_3333\_6667.png) |
+|              velvet\_clean\_01\_30 @ 0.6667,0.3333             |              velvet\_clean\_01\_30 @ 0.3333,0.6667             |
+| :------------------------------------------------------------: | :------------------------------------------------------------: |
+| ![](../../../.gitbook/assets/velvet_clean_01_30_6667_3333.png) | ![](../../../.gitbook/assets/velvet_clean_01_30_3333_6667.png) |
 
 ## The Versatility
 
@@ -93,6 +89,13 @@ Most of my `mlsetups` bascially exclusively contain layers of `velvet_clean_01_3
 | ![](<../../../.gitbook/assets/Cyberpunk2077 2024-09-22 15-15-34.png>) | ![](<../../../.gitbook/assets/Screenshot 2024-09-22 145959.png>) |
 | ![](<../../../.gitbook/assets/Cyberpunk2077 2024-09-22 15-17-32.png>) | ![](<../../../.gitbook/assets/Screenshot 2024-09-22 150153.png>) |
 | ![](<../../../.gitbook/assets/Cyberpunk2077 2024-09-22 15-44-40.png>) | ![](<../../../.gitbook/assets/Screenshot 2024-09-22 161255.png>) |
+
+## Microblends (μblend)
+
+Microblends interact with the multilayer mask levels in order to paint patterns or additional textures into the material. In the below example there is a two by two grid differing by microblend contrast. These 4 grids are further sub divided up into 16 grids which are levels of the multilayer mask.\
+At high contrast levels the full range of the microblend is used and then multiplied with the multilayer level to give transparency or opacity. At low contrast levels, the microblend is truncated at the high and low parts of the blend texture, and then the pattern is painted with opacity or transparency.
+
+<figure><img src="../../../.gitbook/assets/microblend.png" alt=""><figcaption><p>ublend contrast 0.25 / ublend contrast 0.5<br>ublend contrast 0.75 / ublend contrast 1.0</p></figcaption></figure>
 
 ## The Outro
 
