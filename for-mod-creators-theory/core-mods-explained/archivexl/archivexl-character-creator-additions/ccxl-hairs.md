@@ -358,8 +358,10 @@ It's recommended to look in the Log view and check if there's an error in a rena
 
 ### Hair colour extensions don't work on my hair!
 
-Most likely, you screwed up the names of your material definitions. They must be **exactly** as ArchiveXL expects them to be. \
+Most likely, you screwed up the names of your material definitions. They must be **exactly** as ArchiveXL expects them to be.\
 Go back to [#id-3.2-material-definitions](ccxl-hairs.md#id-3.2-material-definitions "mention") and double-check everything.
+
+Otherwise, check that your `componentsOverride` in the `partsOverrides` of the `.app` is correctly named. (see [#your-.app-partsoverrides-should-look-like-this](ccxl-hairs.md#your-.app-partsoverrides-should-look-like-this "mention"))
 
 If that doesn't help, check the log (see [#my-hair-is-always-black](ccxl-hairs.md#my-hair-is-always-black "mention"))
 
