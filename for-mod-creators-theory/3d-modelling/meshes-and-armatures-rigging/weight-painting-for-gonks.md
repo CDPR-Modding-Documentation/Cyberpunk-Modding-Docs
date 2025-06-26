@@ -118,8 +118,11 @@ You can use the Wolvenkit Blender IO Suite's [Mesh tools](../../modding-tools/wo
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcyZ6tylAk-LgvRC_vkYJdprRpB7w-M9cVZTezfmWK1rCxZBZK26F8Bq_WHfosR5ahpEqw-aoRDX2EzhV0UOUqcH1DQOuPqe871WnDMVXdSA9uJEQtzodYHeVCMHXuBWhNnseIlEqTxyzIhtBLr?key=QoRoLud4Cahkkwf-gM7bNg" alt=""><figcaption></figcaption></figure>
 
-4. Select `Weights` -> `Transfer Weights`\
+{% hint style="warning" %}
+Before proceeding, you must have the armature in the rest position! This can be done by selecting the armature, going into **data** (the green stick man icon on the right sidebar), then clicking '**Rest Position**'.
+{% endhint %}
 
+4. Select `Weights` -> `Transfer Weights`
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe_9hSYshu_AdyuVILLIt5I7WU1gdT_1zVDdxI6C7uDnqwRTh8CQpJXqa2EIpU8RDrJERNZfsHsCciQoCBPHfNXXhi-ECIimEmd2XYH1yrnhEtnrYq8R-PPXQeYV-jmMeMzCn0z3qK3g_JjHZj_FQ?key=QoRoLud4Cahkkwf-gM7bNg" alt=""><figcaption></figcaption></figure>
 
