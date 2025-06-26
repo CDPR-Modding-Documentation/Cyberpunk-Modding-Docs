@@ -85,7 +85,7 @@ You **can not move** these .glb files. Wolvenkit needs them to stay where they a
 Download the animation template(s) for your rig(s):
 
 * for [single characters](https://drive.google.com/file/d/1kL04dQy9xmK_yRsvsS4Sn83joPzrljAr/view): from Angy's Google Drive or check [Easy IK based Posing](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-ik-based-posing/)
-* for [multiple characters](https://drive.google.com/file/d/1KPMGrlNa-CEgsOi4YSIEn3g7U-DNC_pP/view): Zwei's edit of Angy's templates
+* To pose multiple characters, just put two characters into one .blend file (the command is called [append](https://blenderartists.org/t/append-a-whole-blend-file-in-one-go/1468736))
 
 Move/copy them somewhere, then open the one you want in Blender.&#x20;
 
