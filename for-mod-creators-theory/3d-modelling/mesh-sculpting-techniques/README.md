@@ -60,6 +60,7 @@ The obvious approach is to change your mesh by moving vertices. This process is 
 {% hint style="info" %}
 The downside of the sculpt mode is that it can edit **only the selected mesh**. \
 For a workaround, see [here](./#affecting-several-meshes).
+(EDIT: There is a new blender plugin [here](https://github.com/gampboi93/ez_join_and_unjoin_mesh_cyberpunk_2077/tree/main) or [here on nexusmods](https://www.nexusmods.com/cyberpunk2077/mods/22449) That allows you to join separated meshes and separate them again with the click of a button, and keep all of the data (including materials, modifiers and original mesh names)
 {% endhint %}
 
 The Sculpt Mode is pretty much What You See Is What You Get.&#x20;
@@ -107,6 +108,8 @@ You can also use the [Lattice Deform Method](./#lattice-modifier-method) below t
 You can use Blender's [mask brush and function](https://docs.blender.org/manual/en/2.80/sculpt_paint/sculpting/hide_mask.html) in Sculpt Mode to mask the parts that you do not want to sculpt.
 
 ## Affecting Several Meshes
+There is a new blender plugin [here](https://github.com/gampboi93/ez_join_and_unjoin_mesh_cyberpunk_2077/tree/main) or [here on nexusmods](https://www.nexusmods.com/cyberpunk2077/mods/22449) That allows you to join separated meshes and separate them again with the click of a button, and keep all of the data (including materials, modifiers and original mesh names)
+{% endhint %}
 
 ### Material Separation Method
 
