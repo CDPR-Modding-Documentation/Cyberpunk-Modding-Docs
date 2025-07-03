@@ -144,13 +144,13 @@ Let’s go into edit mode. Click the little drop-down on the top left and click 
 
 Ignore my badly drawn arrow again. This is what you should see. All of the vertices selected. Don’t worry about it. Also, select the little compass arrow button on the left. We only need to move the mesh left, right, in, or out right now.
 
-![](../../../.gitbook/assets/12.png)
+![](<../../../.gitbook/assets/12 (2).png>)
 
 We’re going to click somewhere else in the viewport to deselect the vertices. What we’re going to do, instead, is only select a handful of vertices in the area we need to refit. Also, we’re going to use proportional mode.
 
 
 
-![](../../../.gitbook/assets/14.png)
+![](<../../../.gitbook/assets/14 (1).png>)
 
 This button. Start small, like 0.01 or something. Check out [step four of the R\&R: Refitting guide](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step#step-4-refitting) for more info.
 
@@ -162,19 +162,19 @@ Unfortunately, this part of the refit process is kinda partly vibes-based.
 
 I’m going to start in this part. You can select a couple vertices by holding down CTRL and clicking the vertex next to it. You can also click and drag to create a box, but sometimes that selects the vertices behind the body, so use with caution!
 
-![](../../../.gitbook/assets/15.png)
+![](<../../../.gitbook/assets/15 (1).png>)
 
 Generally, if the mesh is clipping into the front or back of the body, you’ll use the green arrow to move it in or out. If it’s clipping into the sides, use the red arrow. If it’s clipping into the shoulders, use the blue arrow. Sometimes you might need to get a lil weird with it and do a couple back and forth, but that’s what proportional mode is for.
 
-![](../../../.gitbook/assets/16.png)
+![](<../../../.gitbook/assets/16 (1).png>)
 
 Sometimes you get lucky and can pull bigger sections out. But WATCH OUT! It can make lumpy any places you moved with a smaller proportional size. Like I said, sometimes this part is vibes-based.
 
-![](../../../.gitbook/assets/17.png)
+![](<../../../.gitbook/assets/17 (1).png>)
 
 Nice!
 
-![](../../../.gitbook/assets/18.png)
+![](<../../../.gitbook/assets/18 (1).png>)
 
 I forgot to refit those tiny little things in the center, I fixed it off-screen.
 
@@ -184,13 +184,13 @@ Alright! Good enough. Eventually, I want to sculpt these a bit better. But for n
 
 Switch back to object mode and go to that funky lil green icon again. Click the plus button to add the Basis back.
 
-![](../../../.gitbook/assets/19.png)
+![](<../../../.gitbook/assets/19 (1).png>)
 
 Next, we’re gonna go back to the top of this menu, where we applied the script (the wrench icon).
 
 Add modifier:
 
-![](../../../.gitbook/assets/20.png)
+![](<../../../.gitbook/assets/20 (1).png>)
 
 Deform > Shrinkwrap
 

@@ -311,6 +311,7 @@
     * [NPV: Cleanup and troubleshooting](modding-guides/npcs/npv-v-as-custom-npc/npv-cleanup-and-troubleshooting.md)
     * [NPV: Photomode (formerly Nibbles Replacer)](modding-guides/npcs/npv-v-as-custom-npc/npv-amm-nibbles-replacer.md)
     * [How to add a CCXL hair color to an NPV](modding-guides/npcs/npv-v-as-custom-npc/how-to-add-a-ccxl-hair-color-to-an-npv.md)
+    * [How to add a new appearance to an NPV](modding-guides/npcs/npv-v-as-custom-npc/how-to-add-a-new-appearance-to-an-npv.md)
   * [For NPCs - Change Appearances](modding-guides/npcs/appearances-change-the-looks/README.md)
     * [Altering Appearances within Wolvenkit - Full Workflow](modding-guides/npcs/appearances-change-the-looks/altering-appearances-within-wolvenkit-full-workflow.md)
     * [Adding Custom Appearance to NPCs in PhotoMode and AMM](modding-guides/npcs/appearances-change-the-looks/adding-custom-appearance-to-npcs-in-photomode-and-amm.md)

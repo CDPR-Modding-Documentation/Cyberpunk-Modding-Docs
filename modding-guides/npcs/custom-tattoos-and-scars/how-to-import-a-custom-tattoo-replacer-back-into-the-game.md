@@ -16,7 +16,7 @@ This will help you from Step 6 and forward from NCT’s guide.
 
 1. After your tattoo is where you want it, and you’ve turned off all the other layers, **flip your file vertically** - do not just _rotate_, you gotta use the **Flip Canvas Vertical** option. Save your file as a **.png** on a **transparent background**.\
    From:\
-   ![](<../../../.gitbook/assets/0 (1).png>)\
+   ![](<../../../.gitbook/assets/0 (1) (1).png>)\
    To:\
    ![](<../../../.gitbook/assets/1 (3).png>)
 2. Open WKit and [create a new project](https://wiki.redmodding.org/wolvenkit/getting-started/creating-a-mod#starting-a-project), name it as you want your mod’s .archive to look like in the mod folder. Or not, I’m not your dad. **Do not save your WKit projects in the Cyberpunk folder.**
@@ -48,4 +48,4 @@ This will help you from Step 6 and forward from NCT’s guide.
 
 6. Once everything is correctly set up, just click **Install** on the upper menu so it packs and installs your replacement to the game, then test it! _(I am not sure if you need to do anything else to use it as a REDmod, but I don’t use REDmod so I won’t guarantee it works if you just use “Install as REDmod”.)_
 
-![](<../../../.gitbook/assets/8 (1).png>) ![](<../../../.gitbook/assets/9 (1).png>)
+![](<../../../.gitbook/assets/8 (1) (1).png>) ![](<../../../.gitbook/assets/9 (1) (1).png>)

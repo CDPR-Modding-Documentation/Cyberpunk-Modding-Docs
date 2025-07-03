@@ -179,4 +179,4 @@ Your LUT is now correctly set up. You can install and launch now!
 
 ## Results
 
-<div><figure><img src="../../../.gitbook/assets/1.png" alt=""><figcaption><p>Vanilla</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/2.png" alt=""><figcaption><p>RCM</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/3.png" alt=""><figcaption><p>ACES</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption><p>LogC4</p></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/1 (2).png" alt=""><figcaption><p>Vanilla</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/2 (1).png" alt=""><figcaption><p>RCM</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/3 (2).png" alt=""><figcaption><p>ACES</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/4 (3).png" alt=""><figcaption><p>LogC4</p></figcaption></figure></div>

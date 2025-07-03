@@ -3,7 +3,7 @@
 ## **Summary**
 
 **Published: Dec 11 2024 by SDH0**\
-**Last documented edit: Dec 11 2024 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit: Dec 11 2024 by** [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will teach you how to replace textures on a modded vehicle.
 
@@ -90,7 +90,7 @@ Now [import your texture](../../textures-and-luts/images-importing-editing-expor
 You can see in the project explorer that your texture has been replaced
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/12 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/12 (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 6. Testing your mod
 
@@ -102,7 +102,7 @@ You can use the **Install and Launch** button to do both at once!
 
 If you spawn the car, you will now see that the texture has changed!
 
-<figure><img src="../../../.gitbook/assets/13 (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/13 (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 If you want to share your texture edit, you can do so by sharing the installed .archive.
