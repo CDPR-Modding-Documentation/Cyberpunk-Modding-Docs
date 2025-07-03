@@ -3,7 +3,7 @@ cover: ../../../.gitbook/assets/page13.jpg
 coverY: 0
 ---
 
-# 🕹️ Improving mod settings
+# Improving mod settings
 
 We have added customizable parts in the mod settings [in this paragraph](customizing-the-roof.md#add-a-new-feature-to-the-script). So we can define parts appearance when CrystalCoat is ON and also when it is OFF. Most of the time, users will want to customize only one of the CrystalCoat states at a time.
 

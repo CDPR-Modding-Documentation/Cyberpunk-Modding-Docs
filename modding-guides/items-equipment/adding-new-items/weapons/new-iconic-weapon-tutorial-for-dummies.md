@@ -2,28 +2,14 @@
 description: Tutorial for gonks
 cover: ../../../../.gitbook/assets/merchants_of_death_ultrawide.png
 coverY: 46
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
-# ☠️ New Iconic Weapon: Step by Step
+# New Iconic Weapon: Step by Step
 
 ## Summary
 
 Published: December 2023 by destinybu\
-Last documented edit: Feb 07 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented edit: Feb 07 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 We'll be making a fully featured new Iconic weapon in this guide, which is designed for first-timers and goes into details into every aspect about weapon modding. (not appearances)
 
@@ -1429,7 +1415,7 @@ Here's a demo for how iconic weapon should behave.
 
 You are now a certified weapon modder. Pat your self on the back twice, you've done it.\
 \
-A special request from me (@DestinyBu). If you found this guide helpful, go ahead and document your own findings on the Wiki and maybe ping me if you ever get around to finishing your Mod. A big thanks to [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")for (inspiring) forcing me to do this.
+A special request from me (@DestinyBu). If you found this guide helpful, go ahead and document your own findings on the Wiki and maybe ping me if you ever get around to finishing your Mod. A big thanks to [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")for (inspiring) forcing me to do this.
 
 ## Troubleshooting (Check this when you're stuck)
 

@@ -2,7 +2,7 @@
 description: Welcome to the Cyberpunk 2077 modding wiki!
 ---
 
-# 🏠 Home
+# Home
 
 This is the dedicated repository for modding guides, resources and know-how.&#x20;
 

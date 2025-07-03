@@ -1,9 +1,9 @@
 ---
-cover: ../../../../.gitbook/assets/page14.jpg
+cover: ../../../.gitbook/assets/page14.jpg
 coverY: 0
 ---
 
-# 🧰 Creating a settings package
+# Creating a settings package
 
 When you install the mod and you go into the mod settings menu, you will see that you have default values. When you modify these values you can then click on a button to reset all values to default.
 

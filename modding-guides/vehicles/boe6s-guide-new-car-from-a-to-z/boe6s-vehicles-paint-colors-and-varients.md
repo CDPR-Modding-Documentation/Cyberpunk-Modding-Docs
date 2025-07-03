@@ -1,4 +1,4 @@
-# 🎨 Boe6's vehicles: Paint colors & Varients
+# Boe6's vehicles: Paint colors & Varients
 
 Due to how variants appearances are handled in cyberpunk, it is best to not focus on adding color or other variants until the base vehicle is 100% complete. Once new appearances are added, each component needs to be updated for each variation. So if you add 16 colors, all future edits will take 16x effort. This is why I recommend saving it until the end.
 

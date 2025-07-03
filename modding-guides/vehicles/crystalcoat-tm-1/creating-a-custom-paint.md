@@ -3,7 +3,7 @@ cover: ../../../.gitbook/assets/page7.jpg
 coverY: 0
 ---
 
-# 🍁 Creating a custom paint
+# Creating a custom paint
 
 Let's say we want to give the user some choices to customize his vehicle. It would be great to allow for multiple paint aspects just like in real life.
 

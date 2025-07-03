@@ -1,17 +1,6 @@
 ---
 description: Personalize how your save files looks in game :)
 icon: paintbrush-pencil
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Customize your Save Files' look

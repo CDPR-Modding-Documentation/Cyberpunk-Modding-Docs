@@ -2,7 +2,7 @@
 description: Overview and introduction
 ---
 
-# 🔮 Textures, Materials and Shaders
+# Textures, Materials and Shaders
 
 This is the landing page for **materials** in Cyberpunk 2077. It contains a definition and a rough overview.
 

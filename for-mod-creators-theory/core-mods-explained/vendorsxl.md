@@ -4,20 +4,6 @@ description: >-
   Deceptious
 cover: ../../.gitbook/assets/19679-1739213684-282523717.png
 coverY: 164.22553467271553
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # VendorsXL: Custom Vendors
@@ -25,7 +11,7 @@ layout:
 **Published:** February 2025 by [Florence](https://app.gitbook.com/u/4gvVbWNknqVssW8cldGav2LGi4W2 "mention")
 
 {% hint style="success" %}
-Thank You to [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [keanuWheeze](https://app.gitbook.com/u/WBUIHettvKP7ke8K6KFd7L9ZTtG2 "mention") & @r for helping with this page.
+Thank You to [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [keanuWheeze](https://app.gitbook.com/u/WBUIHettvKP7ke8K6KFd7L9ZTtG2 "mention") & @r for helping with this page.
 {% endhint %}
 
 ## What is [VendorsXL](https://www.nexusmods.com/cyberpunk2077/mods/19679?tab=description)

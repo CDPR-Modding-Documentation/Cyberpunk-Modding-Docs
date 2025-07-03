@@ -2,11 +2,9 @@
 description: Weapon, armour, consumable, hair, cyberware..
 ---
 
-# 👕 Items: Equipment
+# Items: Equipment
 
 Welcome to the **equipment** section. Here, you can find guides on how to edit equipment and weapons in Cyberpunk. The section is split into the following subsections:
-
-
 
 {% content-ref url="adding-new-items/" %}
 [adding-new-items](adding-new-items/)
@@ -26,9 +24,9 @@ Welcome to the **equipment** section. Here, you can find guides on how to edit e
 
 ## Wait, that's not what I want!
 
-This section contains hands-on guide for **editing equipment**.&#x20;
+This section contains hands-on guide for **editing equipment**.
 
-If you want specific information (where is...), check here:&#x20;
+If you want specific information (where is...), check here:
 
 [references-lists-and-overviews](../../for-mod-creators-theory/references-lists-and-overviews/ "mention") contains overviews, such as
 
@@ -44,4 +42,3 @@ For general troubleshooting and help with Wolvenkit's interface, see
 [images-importing-editing-exporting.md](../textures-and-luts/images-importing-editing-exporting.md "mention")
 
 [exporting-and-importing-meshes](../../for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/ "mention")
-

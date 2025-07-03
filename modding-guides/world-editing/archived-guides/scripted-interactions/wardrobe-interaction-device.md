@@ -2,7 +2,7 @@
 description: Add an "Open wardrobe" interaction.
 ---
 
-# 👗 Wardrobe interaction (device)
+# Wardrobe interaction (device)
 
 **Published:** Feb 24, 2025 by [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")\
 **Last update:** Feb 24, 2025 by [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")\

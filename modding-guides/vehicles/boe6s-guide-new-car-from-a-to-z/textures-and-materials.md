@@ -1,9 +1,9 @@
-# 🖌️ Boe6's vehicles: Textures & Materials
+# Boe6's vehicles: Textures & Materials
 
 ## Summary
 
 Published: Nov 5, 2023 by Meta Pixel\
-Last documented edit: Oct 15 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented edit: Oct 15 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide is part of [.](./ "mention") and covers the material part of it.
 

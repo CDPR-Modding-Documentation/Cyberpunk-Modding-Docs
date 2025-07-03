@@ -2,7 +2,7 @@
 description: Initial research on facial anim files and how to find them
 ---
 
-# 👤 Facial Animations
+# Facial Animations
 
 Summary
 

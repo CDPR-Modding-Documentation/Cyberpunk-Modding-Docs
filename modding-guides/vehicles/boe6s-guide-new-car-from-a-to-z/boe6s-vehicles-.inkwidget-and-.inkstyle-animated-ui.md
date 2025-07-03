@@ -1,4 +1,4 @@
-# ▶️ Boe6's vehicles: .inkwidget and .inkstyle - Animated UI
+# Boe6's vehicles: .inkwidget and .inkstyle - Animated UI
 
 {% hint style="info" %}
 .inkwidget and .inkstyle files are not currently well documented. (3/11/25)\

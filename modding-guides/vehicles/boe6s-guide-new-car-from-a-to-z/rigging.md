@@ -2,7 +2,7 @@
 description: Using and Controlling Moving Meshes
 ---
 
-# 🦴 Boe6's vehicles: Rigging; Making meshes move
+# Boe6's vehicles: Rigging; Making meshes move
 
 {% hint style="info" %}
 The `.rig` file ("armature" or "skeleton") is what makes your mesh move in the game. You can find more information about that on the [meshes-and-armatures-rigging](../../../for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging/ "mention") page.

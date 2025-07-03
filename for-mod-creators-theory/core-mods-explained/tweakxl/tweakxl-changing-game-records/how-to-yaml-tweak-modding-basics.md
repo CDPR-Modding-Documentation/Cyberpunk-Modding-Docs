@@ -3,17 +3,6 @@ description: >-
   This is a tutorial created with new modders in mind. It's not optimal; it's
   slow, tedious, and redundant. However, it was the only way I could understand
   how to make YAML tweaks.
-layout:
-  title:
-    visible: true
-  description:
-    visible: false
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # How to YAML: Tweak modding basics

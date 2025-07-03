@@ -2,7 +2,7 @@
 description: Editing the world of Cyberpunk
 ---
 
-# 🌐 World Editing
+# World Editing
 
 This page will introduce you to the very basic structure of the world and the necessary tools to effectively modify the surroundings to your liking.
 

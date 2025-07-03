@@ -2,23 +2,9 @@
 description: Changing the game's database entries
 cover: ../../../.gitbook/assets/TweakXL_cover_image
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
-# ▶️ TweakXL
+# TweakXL
 
 ## What is TweakXL?
 

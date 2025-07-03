@@ -1,4 +1,4 @@
-# 👤 V & NPCs
+# V & NPCs
 
 This is the landing page for guides on how to change people. Here you can learn how to modify or create custom NPCs.&#x20;
 

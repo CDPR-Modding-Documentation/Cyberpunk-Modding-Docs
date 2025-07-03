@@ -4,7 +4,7 @@ description: >-
   This controls how it hits/collides with walls, players, etc.
 ---
 
-# 💥 Boe6's vehicles: Interaction collider .phys files
+# Boe6's vehicles: Interaction collider .phys files
 
 Add the `.phys` file to your project, rename, and move the file as appropriate. It is linked through the `.ent` file. \
 Path:

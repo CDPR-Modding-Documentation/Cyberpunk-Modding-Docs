@@ -2,7 +2,7 @@
 description: This page will gather knowledge and guides about animations.
 ---
 
-# 🤹 Creating Animations - Poses for V & NPCs
+# Creating Animations - Poses for V & NPCs
 
 ## Summary
 

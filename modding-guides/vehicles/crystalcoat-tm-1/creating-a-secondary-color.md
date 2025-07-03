@@ -3,7 +3,7 @@ cover: ../../../.gitbook/assets/page12.jpg
 coverY: 0
 ---
 
-# 🧩 Creating a secondary color
+# Creating a secondary color
 
 ## How it works
 

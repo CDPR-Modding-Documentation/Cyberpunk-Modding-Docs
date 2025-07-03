@@ -2,7 +2,7 @@
 description: What do the different files do? How do I mod them?
 ---
 
-# 📂 Game components explained
+# Game Components explained
 
 
 

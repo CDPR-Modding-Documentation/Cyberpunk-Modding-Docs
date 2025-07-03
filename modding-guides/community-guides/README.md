@@ -4,7 +4,7 @@ description: >-
   internet.
 ---
 
-# 🔗 Community Guides
+# Community Guides
 
 ## Summary
 

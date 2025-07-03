@@ -2,7 +2,7 @@
 description: Manual Import
 ---
 
-# 🚗 Boe6's vehicles: Manually Importing Meshes to Wkit
+# Boe6's vehicles: Manually Importing Meshes to Wkit
 
 ### Importing the first .mesh
 

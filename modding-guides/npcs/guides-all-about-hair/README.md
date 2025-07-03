@@ -6,7 +6,7 @@ description: Hair guides
 
 ## Summary
 
-Last documented edit: March 17 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented edit: March 17 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page collects information on making and porting hair related projects for player V.&#x20;
 
@@ -18,4 +18,5 @@ To see the guides, please check the page tree in the left sidebar, or click the 
 
 ### Wait, this is not what I want!
 
-* Check out [hair-modeling-beginner-tutorial.md](../../../for-mod-creators-theory/3d-modelling/hair-modeling-beginner-tutorial.md "mention") for how to create hair from scratch in Blender.
+* Check out [hair-modeling-beginner-tutorial.md](../../../for-mod-creators-theory/3d-modelling/hair-modeling-beginner-tutorial.md "mention") for how to create hair from scratch in Blender
+* For information on [how-to-add-a-ccxl-hair-color-to-an-npv.md](../npv-v-as-custom-npc/how-to-add-a-ccxl-hair-color-to-an-npv.md "mention"), check the corresponding guide

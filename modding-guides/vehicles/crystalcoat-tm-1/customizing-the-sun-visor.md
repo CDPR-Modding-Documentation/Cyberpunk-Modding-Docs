@@ -3,7 +3,7 @@ cover: ../../../.gitbook/assets/page9.jpg
 coverY: 0
 ---
 
-# ☀️ Customizing the sun visor
+# Customizing the sun visor
 
 All we need to do is to perform the same steps as we did for the roof. Except that we won't make this component colorable with CrystalCoat. Instead it will only be able to use predefined appearances.
 

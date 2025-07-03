@@ -2,7 +2,7 @@
 description: Modding your game, for users
 ---
 
-# ❔ Using Mods
+# Using Mods
 
 {% content-ref url="../user-guide-troubleshooting/" %}
 [user-guide-troubleshooting](../user-guide-troubleshooting/)
@@ -10,8 +10,8 @@ description: Modding your game, for users
 
 ## Summary
 
-**Published:** Jun 15, 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Aug 25 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** Jun 15, 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Aug 25 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will give you a brief introduction of **how** mods work and how to install them by hand.
 

@@ -2,7 +2,7 @@
 description: Changing NPC's info on scan and its archetype.
 ---
 
-# 👪 Changing NPCs - Tweak edit (REDMod)
+# Changing NPCs - Tweak edit (REDMod)
 
 **Created & Published**: October 19 2023 by [daemon2077](https://app.gitbook.com/u/XREbvwu6Q0e6vAu65AnL9ntMvAD3 "mention")\
 **Game Version 2.01**

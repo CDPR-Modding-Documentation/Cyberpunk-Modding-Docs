@@ -2,7 +2,7 @@
 description: Choosing the right way to shoot while driving a vehicle.
 ---
 
-# 🪟 Windows & Doors opening + MountedWeapons clue
+# Windows & Doors opening + MountedWeapons clue
 
 Most of the vehicles have the windows going down when you get your gun, allowing you to shoot without breaking it. Others have the door opening because the window can't retract itself, or because the glass is replaced by opaque screens.\
 And special ones have mounted weapons, so no windows or doors, but big guns and missiles.

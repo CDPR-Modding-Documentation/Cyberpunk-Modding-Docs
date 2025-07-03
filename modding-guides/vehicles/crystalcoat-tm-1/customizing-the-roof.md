@@ -3,7 +3,7 @@ cover: ../../../.gitbook/assets/page8.jpg
 coverY: 0
 ---
 
-# 🛖 Customizing the roof
+# Customizing the roof
 
 Once we have created our customization mechanism we can create as many options as we want and extend this to any sub-part of the vehicle.
 

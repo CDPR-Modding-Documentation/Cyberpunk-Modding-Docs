@@ -2,7 +2,7 @@
 description: More detailed explanations for the guide "Adding new items"
 ---
 
-# ℹ️ ItemAdditions: File structure explained
+# ItemAdditions: File structure explained
 
 ## Summary
 

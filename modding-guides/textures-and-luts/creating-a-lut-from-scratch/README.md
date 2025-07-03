@@ -6,7 +6,7 @@ cover: ../../../.gitbook/assets/ACES_2.png
 coverY: 29
 ---
 
-# 🌈 Creating a LUT from scratch
+# Creating a LUT from scratch
 
 {% hint style="danger" %}
 This method is for LDR. Little to none is known about HDR LUT creation, so please, do not expect anything on HDR LUTs.

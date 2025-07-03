@@ -4,12 +4,12 @@ description: >-
   TweakXL.
 ---
 
-# 🪝 Tweaks
+# Tweaks
 
 ## **Summary**
 
 **Created:** Mar 18 2024 by @Bioskop\
-**Last documented update:** Mar 24 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Mar 24 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This is the landing page for the Tweaks section of the wiki. It doesn't contain any information on its own, but you can explore its subcategories in the menu bar or use the links at the bottom of the page to browse them.
 

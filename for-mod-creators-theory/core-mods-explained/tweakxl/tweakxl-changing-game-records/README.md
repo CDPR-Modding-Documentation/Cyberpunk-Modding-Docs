@@ -2,11 +2,11 @@
 description: How to change item stats with TweakXL
 ---
 
-# 🔧 TweakXL: Changing game records
+# TweakXL: Changing game records
 
 ## Summary
 
-**Last documented edit**: Feb 09 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit**: Feb 09 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 Changing item stats happens by making changes via **TweakXL** or **REDmod** in the [tweaks](../../../tweaks/tweaks/ "mention").
 
@@ -37,7 +37,7 @@ You can find more information about this on the [TweakXL github's wiki page](htt
 You can change tweaks with&#x20;
 
 * REDMod (see [changing-npcs-tweak-edit-redmod.md](changing-npcs-tweak-edit-redmod.md "mention"))
-* Cyber Engine Tweaks (see Scissor's tutorial ([Google Doc](https://docs.google.com/document/d/1pPN\_RiluE-4PwGWOxdEVOegfBEaEsd5APHndr82FdPo/edit)))
+* Cyber Engine Tweaks (see Scissor's tutorial ([Google Doc](https://docs.google.com/document/d/1pPN_RiluE-4PwGWOxdEVOegfBEaEsd5APHndr82FdPo/edit)))
 * &#x20;TweakXL (see [changing-vendor-inventory.md](changing-vendor-inventory.md "mention"))
 
 {% hint style="info" %}

@@ -2,7 +2,7 @@
 description: Add an "Sit" interaction.
 ---
 
-# 🛋️ Sit on couch interaction (workspot)
+# Sit on couch interaction (workspot)
 
 **Published:** Feb 24, 2025 by [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")\
 **Last update:** Feb 24, 2025 by [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")\

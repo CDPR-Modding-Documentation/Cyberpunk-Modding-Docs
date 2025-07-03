@@ -4,28 +4,14 @@ description: >-
   specific as I can be.
 cover: ../../../.gitbook/assets/image18 (1).png
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: hero
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
-# 🚗 Boe6's Guide: basic car from A to Z
+# Boe6's Guide: basic car from A to Z
 
 ## Summary
 
 **Published:** Oct 19 2023 by [Meta Pixel](https://app.gitbook.com/u/9PYjUBpLrFhif4MmMN1WyrRuFFG3 "mention"), based on knowledge by [Boe6Eod7Nty](https://app.gitbook.com/u/iq3Mkow3iEgQH4rO6jJjq3hazpc2 "mention")\
-**Last documented update:** May 04 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** May 04 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will show you how to add a car to the game.
 

@@ -2,7 +2,7 @@
 description: How to make interior lights work for your custom car
 ---
 
-# 💡 Interior lights
+# Interior lights
 
 To make interior lights work, you first need to create the light boundary/shape which will contain the interior light. This is defined in an `entLightChannelComponent` in your vehicle's ent
 

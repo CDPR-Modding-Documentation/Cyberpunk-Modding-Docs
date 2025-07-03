@@ -4,7 +4,7 @@ description: >-
   to complete.
 ---
 
-# ⏹️ Boe6's vehicles: Make the Proxymesh
+# Boe6's vehicles: Make the Proxymesh
 
 There are many ways of converting a high-res model to a low-res model, but for this guide the “**Remesh**” modifier in **Blender** will be used.&#x20;
 

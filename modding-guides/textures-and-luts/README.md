@@ -2,7 +2,7 @@
 description: Modify Cyberpunk's visuals
 ---
 
-# 🌈 Textures and LUTs
+# Textures, LUTs and Materials
 
 This section contains guides for&#x20;
 

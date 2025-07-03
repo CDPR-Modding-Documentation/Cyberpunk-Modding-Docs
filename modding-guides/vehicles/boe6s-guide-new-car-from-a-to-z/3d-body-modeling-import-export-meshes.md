@@ -2,7 +2,7 @@
 description: Manual Import
 ---
 
-# 🚗 Boe6's vehicles: Manually Exporting Meshes to Blender
+# Boe6's vehicles: Manually Exporting Meshes to Blender
 
 {% hint style="danger" %}
 To import vehicles models from **Wolvenkit** into **Blender**, use [**THIS GUIDE**](https://wiki.redmodding.org/wolvenkit/modding-community/exporting-to-blender/exporting-vehicles) .

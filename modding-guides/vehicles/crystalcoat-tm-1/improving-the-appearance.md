@@ -1,9 +1,9 @@
 ---
-cover: ../../../../.gitbook/assets/page5.jpg
+cover: ../../../.gitbook/assets/page5.jpg
 coverY: 0
 ---
 
-# 🌸 Improving the appearance
+# Improving the appearance
 
 ## Modifying the base paint color
 
@@ -24,7 +24,7 @@ mlsetup = base\vehicles\standard\v_standard25_mahir_supron\entities\meshes\textu
 
 Add the mlsetup file to your project and place it into your unique folder. Then rename it with a simple name like `coated.mlsetup`. Then assign it to all your `*_painted_custom` components in their respective `coated` material definition: `localMaterialBuffer > materials > coated > MultilayeredSetup`.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_lrABOW0jC0Nv4oYolil5_image.webp" alt=""><figcaption><p>Copy the material setup into your project</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_lrABOW0jC0Nv4oYolil5_image.webp" alt=""><figcaption><p>Copy the material setup into your project</p></figcaption></figure>
 
 Then right-click on the file and convert it to JSON. You must install the MlsetupBuilder plugin for WolvenKit in order to modify a mlsetup file.
 
@@ -32,7 +32,7 @@ To do so go into HOME in the menu bar and then `Plugins` to display the plugins 
 
 Then right-click on the `coated.mlsetup.json` file and choose `Open in MlsetupBuilder`. Import the layers into the editor by clicking on the orange button.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_Fe8mEQEgFDT2IPULeia8_image.webp" alt=""><figcaption><p>Import layers into the editor</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_Fe8mEQEgFDT2IPULeia8_image.webp" alt=""><figcaption><p>Import layers into the editor</p></figcaption></figure>
 
 If you have correctly setup MlsetupBuilder you can display a 3D model of the vehicle in the tool. To do so click on the `Models library` tab then search for "Supron" and click on the body part.
 
@@ -44,7 +44,7 @@ You can also look at the color used by the layer to find the relevant one. We kn
 
 For the Mahir Supron the layer responsible for the painted areas is the layer 0.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_Y5Np43v2klnk2lC3T2nu_image.webp" alt=""><figcaption><p>Layer 0 is responsible for painted areas for this vehicle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_Y5Np43v2klnk2lC3T2nu_image.webp" alt=""><figcaption><p>Layer 0 is responsible for painted areas for this vehicle</p></figcaption></figure>
 
 We shall use a dark gray or a somewhat black color to replace the base vehicle color.
 
@@ -55,7 +55,7 @@ You can use the code `720cfa_d42857` for layer 0 and `3eaf77_69039f` for layer 2
 If you want to keep everything else identical you can just export the file using `File > Mlsetup > Export` and erase the JSON file and then convert it back into mlsetup in WolvenKit.
 
 {% hint style="danger" %}
-On some computers when exiting MlsetupBuilder tool the computer may crash with a [BSoD](https://en.wikipedia.org/wiki/Blue\_screen\_of\_death). In order to avoid this crash I have experienced that using CTRL + R to reload the instance and then using the menu to exit `File > Exit` tends to avoid crashes.
+On some computers when exiting MlsetupBuilder tool the computer may crash with a [BSoD](https://en.wikipedia.org/wiki/Blue_screen_of_death). In order to avoid this crash I have experienced that using CTRL + R to reload the instance and then using the menu to exit `File > Exit` tends to avoid crashes.
 {% endhint %}
 
 > Wait ! My vehicle still has rust and garbage all over it ! This is bad work !
@@ -72,7 +72,7 @@ Export the file using `File > Mlsetup > Export` and erase the JSON file. Finally
 
 The paint is now fixed to keep a neutral color that will suit any CrystalCoat tint. I have also cleaned the rust and dust.
 
-<figure><img src="../../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 00.45.22.08.png" alt=""><figcaption><p>Fixed paint</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 00.45.22.08.png" alt=""><figcaption><p>Fixed paint</p></figcaption></figure>
 
 > Wait ! Are you kidding ? My windows are covered with crap !
 
@@ -94,7 +94,7 @@ Window components are the following:
 
 Assign your custom files to these components and then open the `window_fl` mesh file. Go into the `preloadLocalMaterialInstances` array and look into the `glass` material definition.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_z3JEPoMlmLXcuuuTvETy_image.webp" alt=""><figcaption><p>window_fl material definition</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_z3JEPoMlmLXcuuuTvETy_image.webp" alt=""><figcaption><p>window_fl material definition</p></figcaption></figure>
 
 This mesh is using a MI file as the base material. MI files are instances of a MT file bundled with predefined parameters so it can be reused easily on multiple components.
 
@@ -112,7 +112,7 @@ Then save the file and assign it to all your window mesh files. Also remove any 
 
 Your windows are now clean and have a tint that feels more realistic / more visible.
 
-<figure><img src="../../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 00.50.37.01.png" alt=""><figcaption><p>Fixed windows</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/Cyberpunk 2077 Screenshot 2024.05.28 - 00.50.37.01.png" alt=""><figcaption><p>Fixed windows</p></figcaption></figure>
 
 > Wait ! When I choose the color it says "CrystalCoat by Rayfield" and a sports car is displayed !
 >

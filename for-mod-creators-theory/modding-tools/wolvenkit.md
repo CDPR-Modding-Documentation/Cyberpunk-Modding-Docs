@@ -4,20 +4,6 @@ cover: >-
   ../../.gitbook/assets/assets_-MP_ozZVx2gRZUPXkd4r_-MfU4nOqozQF9jbfQej2_-MfUDMbz0Yr2sAxCjfHv_wkit_sammy_text_doublestack
   (1600x400).webp
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # WolvenKit

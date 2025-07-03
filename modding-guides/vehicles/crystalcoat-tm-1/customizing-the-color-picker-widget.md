@@ -1,9 +1,9 @@
 ---
-cover: ../../../../.gitbook/assets/page6.jpg
+cover: ../../../.gitbook/assets/page6.jpg
 coverY: 0
 ---
 
-# 🎨 Customizing the color picker widget
+# Customizing the color picker widget
 
 Creating a custom color picker widget for your vehicle requires to handle an image editor like Adobe Photoshop or a free alternative and to have a bit of creativity in order to get a decent result. I will explain in details how I do so you can do it more easily.
 
@@ -39,7 +39,7 @@ For each of these keywords (including quotes) you will find exactly 4 results.
 
 As we do not have defined a secondary color yet, we want to hide the inner circle. For results 1 and 2 of these researches you need to change the `visible` field that is a few lines under the matching word. Change its value to `"visible": 0`.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_iaxKeytvG6IRbK9M6Kub_image.webp" alt=""><figcaption><p>Toggle visibility to 0</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_iaxKeytvG6IRbK9M6Kub_image.webp" alt=""><figcaption><p>Toggle visibility to 0</p></figcaption></figure>
 
 You should have performed **8 modifications**.
 
@@ -153,7 +153,7 @@ Instead, we need to generate a hash number of our secondary key using a specific
 
 To create the hash number go into WolvenKit and use the menu `Tools > Hash Tool`. Copy your secondary key and paste it into the `Text` field of the new window.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_UeL2W1LNRas2YGCL81Rb_image.webp" alt=""><figcaption><p>Creating a hash number</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_UeL2W1LNRas2YGCL81Rb_image.webp" alt=""><figcaption><p>Creating a hash number</p></figcaption></figure>
 
 As soon as your enter a text value into the `Text` field, you will see lot of numbers automatically generated into the other fields. This is what hashing is all about: translating an input data into a number that is unique and consistent regarding the input data.
 
@@ -213,7 +213,7 @@ private final func SpawnVehicleVisualCustomizationSelectorPopup() -> Void {
 
 Now you can test your mod.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_Uidhx3i0oRg9uO3JEHxr_color_picker.webp" alt=""><figcaption><p>Custom color picker with primary color only</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_Uidhx3i0oRg9uO3JEHxr_color_picker.webp" alt=""><figcaption><p>Custom color picker with primary color only</p></figcaption></figure>
 
 > Wait ! There is still a sports car displayed ! This is not my vehicle !
 
@@ -247,13 +247,13 @@ Before validating, be sure to enter the entity appearance to load in the upper r
 Uncheck "With Materials" before validating or the import will be unnecessarily long.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_MIZiMyA7YifplJfIm9x5_image.webp" alt=""><figcaption><p>Import the entity into Blender</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_MIZiMyA7YifplJfIm9x5_image.webp" alt=""><figcaption><p>Import the entity into Blender</p></figcaption></figure>
 
 Now hide the armature and remove all decals you see around the vehicle. The idea is to obtain a clean 3D model and take a screenshot of it. Then we will dump the project.
 
 Decals are all these flat rectangle elements. Click on them and remove them all. Generally they are grouped together for each component so selecting one will select a group of decals.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_LkN74w98bPuPcD3Eao0E_image.webp" alt=""><figcaption><p>Remove all decals from the model</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_LkN74w98bPuPcD3Eao0E_image.webp" alt=""><figcaption><p>Remove all decals from the model</p></figcaption></figure>
 
 If you notice that some elements are not placed correctly like the license plate you can simply remove them, if this is a window it is better to move it to the right place.
 
@@ -263,11 +263,11 @@ To display it as green, select the plane then on the right menu go into the mate
 
 Then in the material definition go into the `Viewport Display` section and set the color to full green.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_cOTDkEHEvF0O5lG6drvF_image.webp" alt=""><figcaption><p>Prepare the background plane</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_cOTDkEHEvF0O5lG6drvF_image.webp" alt=""><figcaption><p>Prepare the background plane</p></figcaption></figure>
 
 Now activate the `TexturePaint` mode in the upper left corner of the viewport, place the camera from the top by clicking on the Z axis node in the upper right corner of the viewport. Zoom and center the view on the vehicle then take a screenshot of it. Be sure to keep a few space around the vehicle model.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_R7yiFPNxaqNLySa59amL_image.webp" alt=""><figcaption><p>Take a screenshot of the vehicle from the top view</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_R7yiFPNxaqNLySa59amL_image.webp" alt=""><figcaption><p>Take a screenshot of the vehicle from the top view</p></figcaption></figure>
 
 ### Open the screenshot in your favorite image editor
 
@@ -279,7 +279,7 @@ First isolate the model by leaving a few space around. Then use the **magic wand
 Some vehicles may also have holes from the top view. In this case do not forget to select these green areas too.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_UhH2C0hFta0ft5oc0RE6_image.webp" alt=""><figcaption><p>Isolate the model and select all the green areas</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_UhH2C0hFta0ft5oc0RE6_image.webp" alt=""><figcaption><p>Isolate the model and select all the green areas</p></figcaption></figure>
 
 Once you have selected all the green areas, invert the selection by right-clicking on it and select "Invert" (I don't use English so I may be wrong on the exact word).
 
@@ -287,19 +287,19 @@ The selection will now select everything except the green areas. Press CTRL + C 
 
 You can now delete the layer containing the green background.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_JU6YkNIXImwM9asl4mpF_image.webp" alt=""><figcaption><p>Isolate the model into a new layer</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_JU6YkNIXImwM9asl4mpF_image.webp" alt=""><figcaption><p>Isolate the model into a new layer</p></figcaption></figure>
 
 Now we want to make this model look a bit more like a drawing so what I do is first increase the brightness of the picture by 50%.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_0u4Rd2EUDmS63lP8cvQ6_image.webp" alt=""><figcaption><p>Increase the brightness by 50%</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_0u4Rd2EUDmS63lP8cvQ6_image.webp" alt=""><figcaption><p>Increase the brightness by 50%</p></figcaption></figure>
 
 Next apply a filter on the picture to make it look a bit more like a drawing. Use the `Filter > Filter Gallery...` menu. Then select `Artistic > Paint Daubs` (French is "Barbouillage") with parameters `Brush Size = 2`, `Sharpness = 20`and `Brush Type = Simple`.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_5ozLlPi87dKMWU85SoOL_image.webp" alt=""><figcaption><p>Apply Paint Daubs filter</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_5ozLlPi87dKMWU85SoOL_image.webp" alt=""><figcaption><p>Apply Paint Daubs filter</p></figcaption></figure>
 
 Finally reduce the Saturation of the image by 100% to remove pink borders.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_hHW2xctRPe7ckV7FREKc_image.webp" alt=""><figcaption><p>Reduce the saturation by 100%</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_hHW2xctRPe7ckV7FREKc_image.webp" alt=""><figcaption><p>Reduce the saturation by 100%</p></figcaption></figure>
 
 Our model is now ready to be used into WolvenKit.
 
@@ -315,13 +315,13 @@ In order to use our model into the color picker widget we need to use a XBM text
 base\gameplay\gui\widgets\notifications\vehicle_visual_customization_car_preview.xbm
 ```
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_Nco1YgXoGPSTqXIu6tVW_image.webp" alt=""><figcaption><p>Export the XBM texture to TGA</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_Nco1YgXoGPSTqXIu6tVW_image.webp" alt=""><figcaption><p>Export the XBM texture to TGA</p></figcaption></figure>
 
 Open the TGA file into your image editor. You will see that it uses 5 channels: RGB, Red, Green, Blue and Alpha. When you click on the RGB channel it displays all the three colored channels together while if you click on the Alpha channel it will display another image with only gray shades.
 
 When we modify something in the picture we need to modify it both in the RGB channel and also in the Alpha channel. When we manipulate layers they will only apply in the RGB channel.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_F6ftzQJ9lok6ZGPdGJxF_picture_description.webp" alt=""><figcaption><p>Texture parts and channels</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_F6ftzQJ9lok6ZGPdGJxF_picture_description.webp" alt=""><figcaption><p>Texture parts and channels</p></figcaption></figure>
 
 On the picture we can see multiple parts. The idea is to replace the main model by our vehicle and then eventually to replace the secondary color mask with ours or to hide it. Finally replace the light beam, and both the headlight and tail light elements. We will leave the white square mask and the Cosmetic\_Troll data code as they are.
 
@@ -333,19 +333,19 @@ Now use the RGB channel and paste your model layer in the image. Then resize it 
 
 When your model is placed and resized correctly select the original layer eventually unlock it if necessary and then select a large area to cover the entire original vehicle part. Then fill the areas with black color to remove the original vehicle picture.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_GSleYyUv4Qs9SzBGsOhm_image.webp" alt=""><figcaption><p>Place the new model and remove the original one</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_GSleYyUv4Qs9SzBGsOhm_image.webp" alt=""><figcaption><p>Place the new model and remove the original one</p></figcaption></figure>
 
 Then go into the Alpha channel and remove the vehicle part using a black area.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_v03pcLoVhpZu0fpugeT2_image.webp" alt=""><figcaption><p>Remove the original model in the Alpha channel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_v03pcLoVhpZu0fpugeT2_image.webp" alt=""><figcaption><p>Remove the original model in the Alpha channel</p></figcaption></figure>
 
 Now go back into the RGB channel, select your model layer then hold CTRL key and left-click on the layer image to create a selection around it.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_SsLdXX4Ff2v6Aar5kcGJ_image.webp" alt=""><figcaption><p>Create a selection around your model</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_SsLdXX4Ff2v6Aar5kcGJ_image.webp" alt=""><figcaption><p>Create a selection around your model</p></figcaption></figure>
 
 Then go into the Alpha channel and fill your selection with white color. It should be placed at the exact same position as the model image on the RGB channel.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_gt50p9dxRuQP0EYvPp2G_image.webp" alt=""><figcaption><p>Modify the alpha channel for the model</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_gt50p9dxRuQP0EYvPp2G_image.webp" alt=""><figcaption><p>Modify the alpha channel for the model</p></figcaption></figure>
 
 Finally go back into RGB channel, then layers tab and merge the model layer with the base layer.
 
@@ -357,21 +357,21 @@ All you have to do is to fill the secondary color mask area with black color on 
 
 First we want to know where is the element into the game when headlights are turned on. For the Mahir Supron there are several light elements the create.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_FRuXgsz4Hv1ZgvdcrPjV_image.webp" alt=""><figcaption><p>Headlights components</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_FRuXgsz4Hv1ZgvdcrPjV_image.webp" alt=""><figcaption><p>Headlights components</p></figcaption></figure>
 
 To keep things simple, we will only create a single light component on the right of the vehicle. In the image editor let's create a simple shape in a new layer at the same position as the main headlight component.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_FGd41XrGtwprarBQ3rUh_image.webp" alt=""><figcaption><p>Create a new headlight component and fill it</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_FGd41XrGtwprarBQ3rUh_image.webp" alt=""><figcaption><p>Create a new headlight component and fill it</p></figcaption></figure>
 
 Now we have a new headlight component in a dedicated layer, let's move it at the position of the existing one and replace it for the RGB channel like we did for the previous part.
 
 Concerning the Alpha channel we will do differently. Once the element is placed correctly, duplicate the layer using CTRL + J in the RGB channel and create a style on it to make it full white. To do so right-click on the new layer and select the first element of the list. Then add a color coating with white color.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_OOdokmzyGCQ6OGAwsjid_image.webp" alt=""><figcaption><p>Create a new element for the alpha channel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_OOdokmzyGCQ6OGAwsjid_image.webp" alt=""><figcaption><p>Create a new element for the alpha channel</p></figcaption></figure>
 
 Then merge the style you have just created with the layer itself by right-clicking on it and choose this option.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_4cuDmID0eI6i32C0Bxfl_image.webp" alt="" width="306"><figcaption><p>Merge layer style</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_4cuDmID0eI6i32C0Bxfl_image.webp" alt="" width="306"><figcaption><p>Merge layer style</p></figcaption></figure>
 
 Now your alpha element is placed right over the RGB element. Select the alpha element layer then hold CTRL and left click on the layer image to create a selection around your element. Then press CTRL + C.
 
@@ -381,31 +381,31 @@ Finally switch back and forth from RGB channel to Alpha channel to check that bo
 
 You can finally merge the headlight layer with the base layer.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_AHzgy4wCvWOaxA3B2uoO_image.webp" alt=""><figcaption><p>Comparing the RGB and Alpha channels</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_AHzgy4wCvWOaxA3B2uoO_image.webp" alt=""><figcaption><p>Comparing the RGB and Alpha channels</p></figcaption></figure>
 
 ### Changing the tail light part
 
 Now we are going to repeat the same process for the tail light element. Except that instead of filling it with gray color, we are going to use the gradient tool with a dark red and a light red color.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_BjUiloHBXEZUxRN8mkQj_image.webp" alt=""><figcaption><p>Tail light location on the vehicle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_BjUiloHBXEZUxRN8mkQj_image.webp" alt=""><figcaption><p>Tail light location on the vehicle</p></figcaption></figure>
 
 Create a new layer, then create a simple selection at the tail light location and select the gradient tool. Select the basic gradient and fill the selection.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_d0xQr6OUUsAjb0QIFQ6t_image.webp" alt=""><figcaption><p>Create the tail light element</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_d0xQr6OUUsAjb0QIFQ6t_image.webp" alt=""><figcaption><p>Create the tail light element</p></figcaption></figure>
 
 Now place the element at the location of the existing one. Right-click on the layer and add a new style with a red external glowing effect in order to create a similar effect as the original element.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_8GO1QmJK9hTpXCqe9JYT_image.webp" alt=""><figcaption><p>Create a glowing effect on the tail light element</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_8GO1QmJK9hTpXCqe9JYT_image.webp" alt=""><figcaption><p>Create a glowing effect on the tail light element</p></figcaption></figure>
 
 Now remove the original tail light element as usual (both in RGB and Alpha channels) and place the new one at the same spot. Before merging the style with the layer, duplicate the layer and modify its style to have a white glowing effect and a white filling color for the alpha element.
 
 Then merge the style of the alpha element, then select both this layer and the base layer and merge them.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_zEQSepFt7JWXoWWNaDE0_image.webp" alt="" width="313"><figcaption><p>Merge the alpha element with the base layer</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_zEQSepFt7JWXoWWNaDE0_image.webp" alt="" width="313"><figcaption><p>Merge the alpha element with the base layer</p></figcaption></figure>
 
 Now create a rectangle selection that goes from the right border of the picture until you have the alpha element into it. Then copy the selection, go into the Alpha channel and paste it so it will be at the same location.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_a4j5aThin2Cc39aSauHk_image.webp" alt="" width="359"><figcaption><p>Copy the alpha element from the RGB channel to the Alpha channel</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_a4j5aThin2Cc39aSauHk_image.webp" alt="" width="359"><figcaption><p>Copy the alpha element from the RGB channel to the Alpha channel</p></figcaption></figure>
 
 Go back into the RGB channel and delete the alpha element by selecting the spot and filling it with black color. Show the red tail light element back and merge its style then merge the layer with the base layer.
 
@@ -415,11 +415,11 @@ The last element we need to change is the light beam. Essential it will consist 
 
 First create a new layer containing a copy of the light beam by selecting a rectangle along the top and right borders.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_PqE4Kij4aTDAT09tMnnS_image.webp" alt=""><figcaption><p>Create a new light beam element from the existing one</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_PqE4Kij4aTDAT09tMnnS_image.webp" alt=""><figcaption><p>Create a new light beam element from the existing one</p></figcaption></figure>
 
 Now click on the base layer and use the magic wand tool to select the headlight component area then move the selection by dragging it (not the headlight element) up to the light beam until it is all into it. Click on the new light beam layer. Also hide the base layer to better see the result. Then hit the DELETE key to remove pixels in the selection for our new layer. Then delete the remainings below it too.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_UIk0ZEEvuXR1C7XtmCfC_image.webp" alt=""><figcaption><p>Remove pixels into the selection on the light beam element</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_UIk0ZEEvuXR1C7XtmCfC_image.webp" alt=""><figcaption><p>Remove pixels into the selection on the light beam element</p></figcaption></figure>
 
 Then toggle the visibility of the light beam element to OFF and turn the base layer back ON. Remove the original light beam both in the RGB and Alpha channels as we did for the previous parts.
 
@@ -427,7 +427,7 @@ Then toggle the new light beam layer back ON and merge it with the base layer. T
 
 You should now have this final result.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_p76Hq4H223qF3agcxiuH_image.webp" alt=""><figcaption><p>RGB and Alpha channels for the texture</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_p76Hq4H223qF3agcxiuH_image.webp" alt=""><figcaption><p>RGB and Alpha channels for the texture</p></figcaption></figure>
 
 {% hint style="warning" %}
 Your image should not be larger than 1200 pixels or the InkWidget won't display the texture parts correctly.
@@ -435,7 +435,7 @@ Your image should not be larger than 1200 pixels or the InkWidget won't display 
 
 Now save the picture as TARGA / TGA image and be sure to select 32-bits/pixel and import it back into WolvenKit using the `Tools > Import Tool`.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_rJO1OKsA3tISRzZjuEdv_image.webp" alt=""><figcaption><p>Save to TGA using 32-bits/pixel option</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_rJO1OKsA3tISRzZjuEdv_image.webp" alt=""><figcaption><p>Save to TGA using 32-bits/pixel option</p></figcaption></figure>
 
 ### Setting the texture parts
 
@@ -449,7 +449,7 @@ base\gameplay\gui\widgets\notifications\vehicle_visual_customization_car_preview
 
 Then open it and set the relative path to your XBM file in place of the three elements of the `slots` array.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_dtpUJGjpA0LGBIOpiJij_image.webp" alt=""><figcaption><p>Set the XBM relative path in the InkAtlas file</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_dtpUJGjpA0LGBIOpiJij_image.webp" alt=""><figcaption><p>Set the XBM relative path in the InkAtlas file</p></figcaption></figure>
 
 Now go into the `Part Mapping` tab and see that eventually all parts are already well placed so you won't have to modify parts. In the case you need to modify some of them. Let's explain how it works.
 
@@ -478,7 +478,7 @@ Bottom: (240 + 40) / 850 = 0,3294117647058824
 
 The decimals are important in order to keep precision. Then go back into the first tab and open the first slot element then update the fields with these values to define the new part area.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_td0NMGWD3t9AQNRjRe80_image.webp" alt=""><figcaption><p>Define new UV coordinates of the texture parts</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_td0NMGWD3t9AQNRjRe80_image.webp" alt=""><figcaption><p>Define new UV coordinates of the texture parts</p></figcaption></figure>
 
 If you want to check the new visual area after you have modified the coordinates you need to save the file and reopen it. Do this for all required parts until none of them overlaps another.
 
@@ -492,7 +492,7 @@ base\\gameplay\\gui\\widgets\\notifications\\vehicle_visual_customization_car_pr
 
 Then convert your JSON file back into InkWidget. You can now test your mod.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_nFJRpRLXqr2IOvdr4TlC_image.webp" alt=""><figcaption><p>Testing the widget with our new model</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_nFJRpRLXqr2IOvdr4TlC_image.webp" alt=""><figcaption><p>Testing the widget with our new model</p></figcaption></figure>
 
 > Wait ! Light components do not correspond to what is on the actual vehicle !
 
@@ -504,7 +504,7 @@ For this vehicle we need to use only one of each and to place them differently. 
 
 For this step we can edit the widget directly in WolvenKit. Open the file and go into this element hierarchy `libraryItems > package > rootWidget > children > container > children > CenterGroup > children > Car > children`.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_U0P8qczEds4eXfm7Kai7_image.webp" alt=""><figcaption><p>Light components into the InkWidget</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_U0P8qczEds4eXfm7Kai7_image.webp" alt=""><figcaption><p>Light components into the InkWidget</p></figcaption></figure>
 
 Here you have the list of elements related to the vehicle.
 
@@ -534,7 +534,7 @@ If you test the mod now you may see that details of the outer circle have disapp
 
 Now let's see the result.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_0GFszx7B9bl2KIjhgp9x_image.webp" alt=""><figcaption><p>Custom color picker widget</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_0GFszx7B9bl2KIjhgp9x_image.webp" alt=""><figcaption><p>Custom color picker widget</p></figcaption></figure>
 
 > Wonderful ! My color picker widget is now perfect !
 >

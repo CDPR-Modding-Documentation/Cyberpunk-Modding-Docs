@@ -1,4 +1,4 @@
-# 🗃️ Boe6's vehicles: Create base files
+# Boe6's vehicles: Create base files
 
 ## Summary
 

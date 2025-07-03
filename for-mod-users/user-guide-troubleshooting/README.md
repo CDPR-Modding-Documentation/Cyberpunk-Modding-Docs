@@ -2,11 +2,11 @@
 description: If your mods are causing trouble, here's what you can do
 ---
 
-# 🆘 Troubleshooting
+# Troubleshooting
 
 ## Summary
 
-Last documented update: Mar 24 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented update: Mar 24 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page contains[^1] troubleshooting[^1] information for people who are **using** mods rather than making mods. You will find step-by-step guides, grouped by different problems.
 

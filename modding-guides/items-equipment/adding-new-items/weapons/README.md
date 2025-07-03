@@ -2,11 +2,11 @@
 description: Adding weapons
 ---
 
-# 🔫 ItemAdditions: Weapons
+# ItemAdditions: Weapons
 
 ## Summary
 
-&#x20;**Published: July 08. 2023 by** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+&#x20;**Published: July 08. 2023 by** [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 &#x20;**Last documented update: Feb 07 2024 by @manavortex**
 
 This guide will teach you how to change the ArchiveXL item addition process to make it work for a weapon.

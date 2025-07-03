@@ -2,12 +2,12 @@
 description: What kinds of textures exist, and what do they do?
 ---
 
-# 🖼️ Textures
+# Textures
 
 ## Summary
 
-**Published:** Mar 5 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit:** Feb 21 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** Mar 5 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** Feb 21 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page contains the **theory section** for textures in Cyberpunk. It will give you an overview about different kinds of texture, and what the game is using them for.
 

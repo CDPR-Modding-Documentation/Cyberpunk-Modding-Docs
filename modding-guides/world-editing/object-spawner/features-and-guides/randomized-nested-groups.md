@@ -1,16 +1,5 @@
 ---
 description: This page explains how to create RNGs
-layout:
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
 # Randomized Nested Groups

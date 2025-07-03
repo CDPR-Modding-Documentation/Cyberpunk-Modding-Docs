@@ -1,35 +1,21 @@
 ---
-cover: ../../../../.gitbook/assets/page1.jpg
+cover: ../../../.gitbook/assets/page1.jpg
 coverY: -32.5621925509487
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
-# 🗃️ Project setup
+# Project setup
 
 ## Create a new WolvenKit project
 
 In this section I will explain the minimal steps required in order to enable the feature on the vehicle. I will use the Mahir Supron vehicle as an example. You can buy this vehicle at the autofixer.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_uuFaYcYTZJlW0cLo244b_mahir_supron.webp" alt=""><figcaption><p>Mahir Supron FS3</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_uuFaYcYTZJlW0cLo244b_mahir_supron.webp" alt=""><figcaption><p>Mahir Supron FS3</p></figcaption></figure>
 
 ## Enable the feature
 
 First you need to make your vehicle entity aware of the CrystalCoat feature. To do this you need to use TweakXL. Open WolvenKit and look into the Tweak Browser. Type your vehicle record name and right-click on it. Then create a TweakXL Override.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_ZzvHmcgxZwl7u50P0Ft9_image.webp" alt=""><figcaption><p>Create a TweakXL Override</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_ZzvHmcgxZwl7u50P0Ft9_image.webp" alt=""><figcaption><p>Create a TweakXL Override</p></figcaption></figure>
 
 This will generate a new YAML file with the record name into your project at `resources/r6/tweaks`. Open it and write this content. If needed, replace the vehicle record name at line 1 with yours. We will fill the `customizableAppearance` field later.
 
@@ -63,7 +49,7 @@ The easiest way is to copy the effect entry from the Rayfield Caliburn's ENT fil
 base\vehicles\sport\v_sport1_rayfield_caliburn__basic_01.ent
 ```
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_xmR17YHpCE9H8J9VULYH_image.webp" alt=""><figcaption><p>Copy the effect from the Rayfield Caliburn file</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_xmR17YHpCE9H8J9VULYH_image.webp" alt=""><figcaption><p>Copy the effect from the Rayfield Caliburn file</p></figcaption></figure>
 
 ## Create a new entity appearance
 
@@ -75,14 +61,14 @@ Create a root folder named `<mynickname>_modding` and place everything into it.
 
 Open the ENT file in WolvenKit. Click on the `appearances` array and then create a new appearance on the right.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_wPq4gycb2Sf9qj7A3lvI_image.webp" alt=""><figcaption><p>Create a new entity appearance</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_wPq4gycb2Sf9qj7A3lvI_image.webp" alt=""><figcaption><p>Create a new entity appearance</p></figcaption></figure>
 
 Now define a unique name for the CrystalCoat appearance and write it down into the two fields:
 
 * appearanceName
 * name
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_cVodnGxwW4SzRcFvLkzB_image.webp" alt=""><figcaption><p>Define the appearance details</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_cVodnGxwW4SzRcFvLkzB_image.webp" alt=""><figcaption><p>Define the appearance details</p></figcaption></figure>
 
 It is not mandatory to use the same name in both fields but it will make things more simple. I would advise you to define a name that will not collide with another mod. You could for example use your nickname followed by the vehicle model followed by a CrystalCoat suffix:
 
@@ -122,4 +108,4 @@ You shall duplicate the base appearance of the vehicle and change its name with 
 
 Then you shall add `engine\ink\textures\4x4_transparent.xbm` into the `resolvedDependencies` array of the appearance.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_1FwC91ajwQNPV0mNAcKG_image.webp" alt=""><figcaption><p>Add the new resource dependency into the appearance</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_1FwC91ajwQNPV0mNAcKG_image.webp" alt=""><figcaption><p>Add the new resource dependency into the appearance</p></figcaption></figure>

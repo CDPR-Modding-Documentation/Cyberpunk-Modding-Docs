@@ -2,7 +2,7 @@
 description: Adding CrystalCoat to your custom vehicle
 ---
 
-# 🌈 CrystalCoat™
+# CrystalCoat™
 
 ## Background
 
@@ -114,7 +114,7 @@ For most custom vehicles, it makes sense to have only one color i.e primaryColor
 {% hint style="info" %}
 Tip if you're looking to customize this further and/or get correct gradients with secondaryColor: use the `uvchecker.inkatlas` (this is already defined in the inkwidget) as a mask to see how the inkwidget wraps around a car part
 
-![](../../.gitbook/assets/Cyberpunk\_2077\_Screenshot\_2024.03.06\_-\_17.12.42.38.png)
+![](../../.gitbook/assets/Cyberpunk_2077_Screenshot_2024.03.06_-_17.12.42.38.png)
 {% endhint %}
 
 To do this, go back to the edit view and go to `libraryItems > Root > package > inkWidgetLibraryItemInstance > gameController`

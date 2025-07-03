@@ -2,11 +2,11 @@
 description: How to manipulate vendor inventories
 ---
 
-# 💰 Changing vendor inventory
+# Changing vendor inventory
 
 ### Summary
 
-**Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Published:** ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** Jan 28 2024 by [Sei Jax](https://app.gitbook.com/u/zYGdVaac39RTacR8mmEoIGU0WhD3 "mention")
 
 {% hint style="info" %}

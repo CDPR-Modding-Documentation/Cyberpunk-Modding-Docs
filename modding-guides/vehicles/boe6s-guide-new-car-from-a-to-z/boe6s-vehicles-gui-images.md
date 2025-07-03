@@ -1,8 +1,8 @@
-# 🖼️ Boe6's vehicles: GUI Images
+# Boe6's vehicles: GUI Images
 
 ## Summary
 
-**Last documented update:** April 25 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** April 25 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will show you how to create custom GUI images for your vehicle.
 

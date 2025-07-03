@@ -3,7 +3,7 @@ cover: ../../../.gitbook/assets/page10.jpg
 coverY: 0
 ---
 
-# 🛞 Customizing the wheels
+# Customizing the wheels
 
 Concerning the wheels we want to make them colorable with CrystalCoat but we would like to select their paint aspect independently of the rest of the vehicle. So we can have a vehicle with metallic paint and wheels using the glossy paint.
 

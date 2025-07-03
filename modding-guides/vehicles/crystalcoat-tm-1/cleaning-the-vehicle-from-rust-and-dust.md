@@ -3,7 +3,7 @@ cover: ../../../.gitbook/assets/page11.jpg
 coverY: 0
 ---
 
-# 🌇 Cleaning the vehicle from rust and dust
+# Cleaning the vehicle from rust and dust
 
 In order to clean a vehicle part we need to add its mesh file to our project, then assign this new file to the component in the APP file.
 

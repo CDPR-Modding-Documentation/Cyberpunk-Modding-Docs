@@ -1,4 +1,4 @@
-# 🚘 Vehicles
+# Vehicles
 
 ## Summary
 

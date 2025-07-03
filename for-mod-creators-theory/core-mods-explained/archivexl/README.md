@@ -2,11 +2,11 @@
 description: Adding stuff to the game, for the major-leagues
 ---
 
-# 💹 ArchiveXL
+# ArchiveXL
 
 ## Summary
 
-**Published:** August 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** August 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 {% hint style="success" %}
 As suggested by psiberx, the general usage documentation for ArchiveXL will be kept in this wiki for ease of use. You can find the [readme](https://github.com/psiberx/cp2077-archive-xl) on github or check the repository's [wiki section](https://github.com/psiberx/cp2077-archive-xl/wiki).

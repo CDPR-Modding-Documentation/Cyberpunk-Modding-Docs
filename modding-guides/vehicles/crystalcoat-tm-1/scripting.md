@@ -1,29 +1,15 @@
 ---
-cover: ../../../../.gitbook/assets/page3.jpg
+cover: ../../../.gitbook/assets/page3.jpg
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
-# ‼️ Scripting
+# Scripting
 
 ## Implementing a new feature
 
 In order to get a nice result for our CrystalCoat implementation we need to use some scripting. This script will also allow us to go deeper into the customization later.
 
-{% file src="../../../../.gitbook/assets/CrystalCoat_ScriptTemplate (4).reds" %}
+{% file src="../../../.gitbook/assets/CrystalCoat_ScriptTemplate (4).reds" %}
 Script template for CrystalCoat
 {% endfile %}
 
@@ -39,7 +25,7 @@ Then edit the script using VSCode. You need to perform some replacements into th
 Perform case-sensitive replacements to avoid mistakes.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_0GCmaBXX3e3gwex8daEz_image.webp" alt=""><figcaption><p>Case-sensitive replacement</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_0GCmaBXX3e3gwex8daEz_image.webp" alt=""><figcaption><p>Case-sensitive replacement</p></figcaption></figure>
 
 ## Script setup
 
@@ -71,7 +57,7 @@ The script needs to monitor entity loading and it must hook only if this is the 
 
 You need to replace `mahir_supron__basic_player_01` by the base appearance name of the vehicle you can find in the vehicle record using the Tweak Browser at the field named `appearanceName`. You should have replaced **1 occurrence**.
 
-<figure><img src="../../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_mBELJ0qcN9JS0BRGZBI8_image.webp" alt=""><figcaption><p>Finding the base appearance of the vehicle</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/spaces_4gzcGtLrr90pVjAWVdTc_uploads_mBELJ0qcN9JS0BRGZBI8_image.webp" alt=""><figcaption><p>Finding the base appearance of the vehicle</p></figcaption></figure>
 
 ### Entity file relative path
 

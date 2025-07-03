@@ -2,12 +2,12 @@
 description: 'Tutorial: How to Edit Third-Person and First Person Animations for V'
 ---
 
-# ✏️ Editing V's Actual In Game Animations
+# Editing V's Actual In Game Animations
 
 ## **Summary**
 
 **Published: Sep 27 2024 by @tylr**\
-**Last documented edit:** Jan 11 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit:** Jan 11 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This tutorial will show you how to Edit Third-Person and First Person Animations for V.\
 &#xNAN;_&#x57;orks with JB's TPP Mod which is found on Nexus Mods and for replacing first-person animations_

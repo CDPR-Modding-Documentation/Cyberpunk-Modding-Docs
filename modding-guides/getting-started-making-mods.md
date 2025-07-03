@@ -2,12 +2,12 @@
 description: You want to make mods? Awesome!
 ---
 
-# 🎉 Getting started: Making mods
+# Getting started: Making mods
 
 ## Summary
 
-**Created:** Jul 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jul 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Created:** Jul 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Jul 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page is for people who are just getting started.
 

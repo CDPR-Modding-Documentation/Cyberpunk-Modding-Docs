@@ -2,7 +2,7 @@
 description: Appearance Menu Mod
 ---
 
-# 📽️ AMM
+# AMM
 
 Appearance Menu Mod has its own documentation on their official [Discord](https://discord.com/invite/47jV2rNdgn) server.
 

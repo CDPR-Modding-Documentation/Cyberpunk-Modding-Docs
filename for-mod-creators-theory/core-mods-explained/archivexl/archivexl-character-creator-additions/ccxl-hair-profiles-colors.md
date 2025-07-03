@@ -13,7 +13,7 @@ Last documented edit: [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLx
 
 ### Wait, this is not what I want!
 
-* To learn how to make hair profiles (hair colors), go here: [Custom Hair Colors](../../../../modding-guides/npcs/guides-all-about-hair/custom-hair-colours.md)
+* To learn how to make hair profiles (hair colors), go here: [Custom Hair Colors](../../../../modding-guides/npcs/guides-all-about-hair/custom-hair-colours/)
 * To learn to add a hairstyle to character creator, read [CCXL hairs](ccxl-hairs.md)
 * To learn more about the character creator, check [files-and-what-they-do](../../../files-and-what-they-do/ "mention") -> [character-creator](../../../files-and-what-they-do/file-formats/character-creator/ "mention")
 * To convert an existing hairstyle to CCXL, check [convert-a-hair-mod-to-hair-ccxl-mod.md](../../../../modding-guides/npcs/guides-all-about-hair/convert-a-hair-mod-to-hair-ccxl-mod.md "mention")

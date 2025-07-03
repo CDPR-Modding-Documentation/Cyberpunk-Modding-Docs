@@ -3,25 +3,11 @@ description: >-
   This tutorial provides a brand new way to implement CrystalCoat for any kind
   of vehicle and to make any part of a vehicle customizable by the user during
   runtime. The only limit is your imagination !
-cover: ../../../../.gitbook/assets/banner.png
+cover: ../../../.gitbook/assets/banner.png
 coverY: 0
-layout:
-  cover:
-    visible: true
-    size: full
-  title:
-    visible: true
-  description:
-    visible: true
-  tableOfContents:
-    visible: true
-  outline:
-    visible: true
-  pagination:
-    visible: true
 ---
 
-# ⛱️ CrystalCoat™ & Advanced Customization
+# CrystalCoat™ & Advanced Customization
 
 ## Summary
 
@@ -85,7 +71,7 @@ Although I explain things step by step it may not be exhaustive otherwise this t
 
 You can test my mod [Crystal Coat for Rayfield Caliburn](https://www.nexusmods.com/cyberpunk2077/mods/14749) to have an idea of what can be done.
 
-<figure><img src="../../../../.gitbook/assets/caliburn_cc_mod.png" alt=""><figcaption><p>Customizable Rayfield Caliburn</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/caliburn_cc_mod.png" alt=""><figcaption><p>Customizable Rayfield Caliburn</p></figcaption></figure>
 
 Things you will be able to do after learning this tutorial:
 

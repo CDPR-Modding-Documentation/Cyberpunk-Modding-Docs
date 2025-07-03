@@ -3,7 +3,7 @@ cover: ../../../.gitbook/assets/page4.jpg
 coverY: 0
 ---
 
-# 🏳️‍🌈 Adding components to CrystalCoat
+# Adding components to CrystalCoat
 
 ## Create a WorldWidgetComponent
 

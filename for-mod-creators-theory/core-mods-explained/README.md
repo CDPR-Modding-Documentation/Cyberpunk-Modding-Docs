@@ -2,7 +2,7 @@
 description: A list of modding frameworks and libraries, and links to their documentation
 ---
 
-# ⚒️ Core Mods explained
+# Core Mods explained
 
 {% hint style="info" %}
 In the context of Cyberpunk modding, the core mods are often interchangeably called "(core) frameworks".&#x20;
