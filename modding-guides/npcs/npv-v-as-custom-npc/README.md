@@ -107,9 +107,9 @@ You should now see a person in front of you.
 
 ## Get cracking
 
-Now it's time to do the actual work.&#x20;
+Now it's time to do the actual work. If you want to have your V's specific facial features (which you probably do!), you must do extra work in Blender to have them on your NPV.
 
-* If you want to create your V's head for Cyberpunk, go to [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention")
+* If you want to have your V's head for Cyberpunk, go to [npv-preparing-the-head-in-blender.md](npv-preparing-the-head-in-blender.md "mention")
 * If you just want to set up the file structure, go to [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md "mention")
 
 {% hint style="danger" %}
