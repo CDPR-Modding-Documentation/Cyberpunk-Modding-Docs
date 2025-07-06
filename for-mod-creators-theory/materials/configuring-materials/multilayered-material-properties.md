@@ -6,8 +6,8 @@ description: Properties of the multilayered material
 
 ## Summary
 
-**Created:** Jan 14 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Apr 07 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Created:** Jan 14 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Apr 07 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page documents multilayered shader properties.&#x20;
 
@@ -131,3 +131,17 @@ Using ClearCoat lets you put additional hues over an mlsetup:&#x20;
 Please note that this uses light colour mixing!
 
 <figure><img src="../../../.gitbook/assets/light_colour_mixing.png" alt=""><figcaption></figcaption></figure>
+
+## multilayer\_blackbody\_inject.mt
+
+Putting multilayerblackbody\_inject.mt into debugging mode allows for the addition of emissives on top of your multilayer setup. The simplest example of this is on the DLC magic rune katana.
+
+<figure><img src="../../../.gitbook/assets/ml_bb_inject.png" alt=""><figcaption><p>Material Setup for Emissive Multilayer Setup</p></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/rebecca_kicks_icon.png" alt=""><figcaption><p>Example of Emissive on top of mlsetup<br>Emissive painted on the UV DamageTypeRGBMask</p></figcaption></figure>
+
+Debug and MaximumTemperature are required to be 1 to stop the whole mesh from randomly flashing.
+
+You can also use FireHSV or PoisonHSV combined with red and green layers on the mask to create three different Emissive masks on a single xbm file; however through testing it's currently assumed only one can be used at a time. However you can change the % Hue value to use any colour for the emissive.
+
+An additional texture can be added with DamageTypeNoise. This texture can be scaled with the x/y numbers of the UV setting and scrolled with z/w numbers. More contrast can be added into the noise by increasing the value of IntensityAdd.
