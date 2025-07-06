@@ -84,7 +84,8 @@ That way you make sure that only the parts of your build that are currently clos
 1. Open your WolvenKit project (Make a new one if you do not have one yet)
 2.  In the top menu bar, navigate to
 
-    1. File -> Import -> Object Spawner .json
+    1. File -> Import -> Object Spawner .json\
+       &#xNAN;_&#x49;f the context menu entry is greyed out, you need to install the_ [_Wolvenkit Resources Plugin_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/home/home-plugins#wolvenkit-resources)
 
     <figure><img src="../../../.gitbook/assets/objectSpawnerWKitImportDialog" alt="" width="413"><figcaption><p>Click the "Import object spawner .json" button, then choose the file</p></figcaption></figure>
 3. In the file dialog, choose the previously exported file, named `projectName_exported.json`
