@@ -1,6 +1,6 @@
 # Scene Node Definitions
 
-## :scissors: Cut Control&#x20;
+## :scissors:Cut Control&#x20;
 
 &#x20;[`scnCutControlNode`](https://nativedb.red4ext.com/c/4636270759012682)&#x20;
 
@@ -17,6 +17,14 @@ The `CutControlNode`'s job is to inspect this tag on the incoming signal and rou
 #### Why the Name "CutControl"?
 
 The name can be confusing. It does not mean it can only "cut" as in interrupt a node. Think of it like using scissors on a wire - the Cut Control node literally cuts the signal into two: the true signal via Out0 and the false signal via Out1.
+
+{% hint style="danger" %}
+To further add to the confusion: `scnCutControlNode` works differently from it's quest node equivalent ie `questCutControlNodeDefinition`&#x20;
+
+
+
+`questCutControlNodeDefinition`'s job is to actually handle cuts as in interrupts. It first cuts all the assigned nodes from its `CutSource` socket (which only go to `CutDestination` of other sockets) and then fires its `Out` socket
+{% endhint %}
 
 ### Sockets
 
@@ -223,4 +231,163 @@ _should wor&#x6B;_&#xB9; : This is untested but it should work. Existing scene f
 1. **Scene logic** – drop Flow Control where you need “play this node only the first N times.”
 2. **Quest logic** – use it as a lightweight latch; sockets give you full control, numbers give you auto-limits.
 3. Remember: the counters are scoped within a **scene instance** (for scenes) or the **Phase node** (for quests) ends.
+
+***
+
+## **🌐Hub**
+
+### What it does
+
+The Hub node is one of the simplest but most essential tools for organizing scene graphs. Its sole function is to be a **signal merger** or **funnel**. It takes any number of incoming execution paths and combines them into a single, unified output path.
+
+Like the CutControlNode, the Hub is a "dumb," stateless node. It contains no internal logic. It doesn't care which input socket received a signal or how many signals it has received; it simply fires a signal from its Out socket every time any of its In sockets are triggered.
+
+While the Hub's main job is to merge inputs, it's important to remember that its single Out socket can be connected to multiple downstream nodes. This allows a Hub to also act as a signal distributor, broadcasting a unified signal to several paths at once. This is often used to trigger multiple parallel events after a set of preceding conditions have been met and merged.
+
+### Sockets
+
+| Pin            | Direction | Type      | Description                                                                                                                        |
+| -------------- | --------- | --------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| `In`, `In1`, … | In        | Execution | Any number of dynamically created input sockets. When you drag a connection to a Hub, a new input socket is automatically created. |
+| `Out`          | Out       | Execution | A single output socket that fires whenever any input is triggered.                                                                 |
+
+### Examples & Use-cases
+
+**Example 1: Converging Logic Branches (The "Collector")**
+
+This is the most common use case: cleaning up the graph after several different logic branches have concluded.
+
+* **The Goal:** Ensure that multiple, mutually exclusive outcomes all lead to the same final step.
+* **The Mechanism:** As seen in the example image, a scene might have several FactsDBManager nodes that set different game states (holo\_setup\_active, holo\_setup\_started, holo\_setup\_ended). Each of these represents the end of a small logic branch. Instead of drawing a messy "spider web" of connections from all these nodes to a single End node, a Hub (\[289]) is used as a collector. Each FactsDBManager connects to one of the Hub's input sockets. The Hub then provides a single, clean output connection to the final End node (\[235]).
+
+<figure><img src="../../.gitbook/assets/image (636).png" alt=""><figcaption><p>Hub example</p></figcaption></figure>
+
+**Example 2: Re-joining after a Condition**
+
+* **The Goal:** After splitting the execution flow with a CutControlNode (e.g., for a lifepath-specific dialogue line), you often need to bring the paths back together to continue with actions that are common to all outcomes.
+* **The Mechanism:**
+  1. A CutControlNode splits the flow: Out0 (Success) goes to a "Corpo" dialogue Section, and Out1 (Failure) goes to the "Streetkid" dialogue Section.
+  2. The Out sockets of both the "Corpo" and "Streetkid" Section nodes are connected to the input sockets of a single Hub.
+  3. The Hub's single Out socket then connects to the next part of the scene that all players experience, regardless of which dialogue branch they took.
+
+
+
+Checklist
+
+* Use a Hub whenever you need to merge two or more execution paths into a single path or when you need to split signals
+* It's an organizational tool: stateless, with no internal logic or properties.
+* It helps keep complex scene graphs tidy and easy to read by reducing visual clutter.
+
+
+
+## 🚪Xor
+
+`scnXorNode`
+
+The `Xor` node (short for Exclusive OR) is a **'first-come, first-served' gate**. It's designed to solve a common problem: what to do when multiple different events could trigger the same outcome, and you need to ensure that outcome only happens _once_.
+
+It listens to all its inputs, but only allows the **very first** signal that arrives to pass through to its `Out` socket. Once it has fired, it enters a "latched" or "closed" state and will ignore all subsequent signals. This prevents unwanted "double triggers" from multiple sources.
+
+### **Sockets**
+
+| Pin              | Direction | Type      | Description                                                                 |
+| ---------------- | --------- | --------- | --------------------------------------------------------------------------- |
+| `In`, `In1`, ... | In        | Execution | Any number of dynamically created input sockets.                            |
+| `Cancel`         | In        |           |                                                                             |
+| `Out`            | Out       | Execution | Fires a single time when the _first_ signal is received on any `In` socket. |
+
+### **Examples & Use-cases**
+
+**Example 1: Player Action vs. Timer (The Holocall Race)**
+
+* **Scene:** `ep1\quest\holocalls\alex\alex_holocall.scene`
+
+<figure><img src="../../.gitbook/assets/image (637).png" alt=""><figcaption></figcaption></figure>
+
+**The Goal:** A holocall is ringing. The scene must proceed if the player picks it up, OR if a certain amount of time passes and the player _doesn't_ pick it up. We only care about whichever happens first.
+
+* **The Mechanism:**
+  1. The flow is broadcast to two `PauseCondition` nodes simultaneously.
+  2. `PauseCondition [326]` is a `SystemCondition` waiting for the player to perform a `PhonePickUp`.
+  3. `PauseCondition [22]` is a `TimeCondition` acting as a timer (in this case, 4 seconds and 15 milliseconds).
+  4. Both of these nodes feed into the inputs of the `Xor` node `[104]`.
+  5. **Scenario A (Player is fast):** The player picks up the phone. Node `[326]` fires, its signal passes through `Xor [104]`, and the scene continues down the "answered call" path. A few moments later, the timer in `[22]` finishes. Its signal hits the already-fired `Xor` node and is swallowed, preventing the "missed call" path from also triggering.
+  6. **Scenario B (Player is slow):** The timer in `[22]` finishes first. Its signal passes through `Xor [104]` and the scene proceeds down the "missed call" path. If the player eventually picks up the phone, the signal from `[326]` hits the `Xor` and is ignored.
+
+
+
+**Example 2: Player Action vs. Proximity Trigger (The Cryo-Freezer Reveal)**
+
+<figure><img src="../../.gitbook/assets/image (640).png" alt=""><figcaption></figcaption></figure>
+
+
+
+* **Scene:** base\quest\side\_quests\sq021\scenes\sq021\_03\_trailer\_park.scene
+
+**The Goal:** After the player agrees to talk, a welcome scene should trigger as soon as either the player or Sobchak enters the trailer. The scene must not trigger twice if they both enter.
+
+* **The Mechanism:**
+  1. The player makes a Choice \[1085]. The first option outputs to start two simultaneous checks.
+  2. **Path 1 (Check NPC):** PauseCondition \[685] checks if Sobchak is IsInside the trailer's trigger area.
+  3. **Path 2 (Check Player):** PauseCondition \[599] checks if the Player is IsInside the same trigger area.
+  4. Both conditions feed into the Xor node \[1098].
+  5. The Xor's output starts the conversation Section \[781].
+* **Why the Xor is Necessary:**\
+  The player and Sobchak can easily be inside the trigger area at the same time.
+  * If a Hub were used, it would receive a signal from the player check and a signal from the Sobchak check, firing its output twice. This would cause the welcome dialogue in Section \[781] to restart, creating a bug.
+  * The Xor guarantees that the first entity detected - whether it's the player or the NPC, triggers the scene. The Xor immediately latches shut, and when the second entity is detected moments later, that signal is simply ignored. The conversation correctly starts only once.
+
+
+
+**Checklist**
+
+* Use Xor whenever you need to ensure an action is triggered **exactly once**, especially when there are multiple possible triggers (e.g., player action, a timer, a proximity check).
+* It's a "one-shot" gate: it fires on the first signal it receives and then ignores everything else until it is reset.
+
+***
+
+## 🔗And
+
+### What it does
+
+The And node is a **synchronization point** or a **gatekeeper**. Its purpose is to pause the execution flow until multiple, separate, parallel paths have all been completed.
+
+It waits until it has received a signal on **every single one** of its input sockets. Only when the last required signal has arrived does the And node fire a single signal from its Out socket.
+
+
+
+**Sockets**
+
+| Pin          | Direction | Type      | Description                                                                                                                                                                |
+| ------------ | --------- | --------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| In, In1, ... | In        | Execution | The node will wait until a signal has been received on every one of these input sockets. The number of sockets is determined by how many connections are made to the node. |
+| Out          | Out       | Execution | Fires a single time, only after all input sockets have received a signal.                                                                                                  |
+
+### **Examples**
+
+**Example 1: Waiting for Characters to Spawn**
+
+* **Scene:** base/quest/side\_quests/sq026/scenes/sq026\_12\_penthouse\_gameplay.scene
+
+<figure><img src="../../.gitbook/assets/image (641).png" alt=""><figcaption></figcaption></figure>
+
+This is the most common and critical use case for an And node: ensuring all necessary characters are present before a scene begins.
+
+* **The Goal:** Start a conversation in a penthouse, but only after two specific characters, Roxanne and Tom, have both finished spawning and are present in the scene.
+* **The Mechanism:**
+  1. The execution flow splits to start two simultaneous checks.
+  2. **Path 1:** PauseCondition \[283] pauses the flow until the character roxanne has CharacterSpawned.
+  3. **Path 2:** PauseCondition \[281] pauses the flow until the character tom has CharacterSpawned.
+  4. The outputs of both PauseCondition nodes are connected to the inputs of the And node \[289].
+  5. The Out socket of the And node connects to the next part of the scene (e.g., the main dialogue Section).
+* **Why the And is Necessary:**\
+  Spawning characters can take a variable amount of time. Without the And node, the scene's timing would be unreliable.
+  * If you only waited for Roxanne to spawn, the conversation could start while Tom is still invisible or not yet in the world, leading to characters talking to empty space or other visual bugs.
+  * The And node acts as the rendezvous point. It doesn't matter if Roxanne spawns first or Tom spawns first. The And node will patiently wait, holding the scene, until it receives signals from both spawn checks. Only then does it allow the scene to proceed, guaranteeing that all participants are ready and the scene can play out correctly.
+
+***
+
+
+
+
 
