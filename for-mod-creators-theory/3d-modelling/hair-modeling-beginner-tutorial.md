@@ -15,19 +15,19 @@ This guide will show you how to create your own hair in Blender from scratch.
 
 ### Wait, this is not what I want!
 
-* For guides on how to edit hair in Cyberpunk 2077, please check [guides-all-about-hair](../../../modding-guides/npcs/guides-all-about-hair/ "mention")
+* For guides on how to edit hair in Cyberpunk 2077, please check [guides-all-about-hair](../../modding-guides/npcs/guides-all-about-hair/ "mention")
 
 ## **Prerequisites:**
 
 * Some familiarity with Blender and basic modeling skills. \
-  If you don't know how to use Blender yet, check out [blender-getting-started](../blender-getting-started/ "mention") and complete at least the donut tutorial!
+  If you don't know how to use Blender yet, check out [blender-getting-started](blender-getting-started/ "mention") and complete at least the donut tutorial!
 * The paid Blender AddOn Hair Tool (purchase it on [Gumroad](https://bartoszstyperek.gumroad.com/l/hairtool))
 
 **Usefull links:**\
 Hair Tool discord server: [https://discord.gg/GwjA9NrKww](https://discord.gg/GwjA9NrKww)\
 Hair Tool official documentation: [https://joseconseco.github.io/HairTool\_3\_Documentation/](https://joseconseco.github.io/HairTool_3_Documentation/)
 
-You can download the example project [from our github](../../../_example_mods_and_templates/hair_tool_bob_demo.7z)!
+You can download the example project [from our github](../../_example_mods_and_templates/hair_tool_bob_demo.7z)!
 
 
 
@@ -42,7 +42,7 @@ Using any modeling method you like, create a so called grid surface. This should
 **Core concept:** Keep the poly count low. The less 'control points' you have, the easier it is to control the object. \
 &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (19) (1).png" alt=""><figcaption><p>A correct grid surface</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption><p>A correct grid surface</p></figcaption></figure>
 
 <details>
 
@@ -57,12 +57,12 @@ I model by simply extruding edges, and some sculpt mode mixed in.\
 Loop Tools addon is good for cleanup ('relax').\
 \
 Set Viewport display to 'Wire'. You can change the opacity in viewport overlays menu, and assign random colors in shading menu. \
-![](<../../../.gitbook/assets/image (20).png>)![](<../../../.gitbook/assets/image (21).png>)
+![](<../../.gitbook/assets/image (20).png>)![](<../../.gitbook/assets/image (21).png>)
 
-<img src="../../../.gitbook/assets/image (22).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (22).png" alt="" data-size="original">
 
 You can set 'Mean Vertex Crease to 1 on specific edge loops, if you want them to remain sharp while using a subdiv modifier.\
-![](<../../../.gitbook/assets/image (29).png>)
+![](<../../.gitbook/assets/image (29).png>)
 
 </details>
 
@@ -75,7 +75,7 @@ You can set 'Mean Vertex Crease to 1 on specific edge loops, if you want them to
 When building hair card meshes, you want bottom layers to be opaque, and surface layers to be progressively more transparent. The bottom layers will prevent the scalp from shining through, while the covering layers will provide a volumetric effect, and hide the sharp contours of high-alpha bottom layers.\
 \
 Here is an example of a hair texture. Notice multiple strands, which become more and more transparent the further to the right they are. \
-![](<../../../.gitbook/assets/image (30).png>)
+![](<../../.gitbook/assets/image (30).png>)
 
 There are multiple textures with similar density, this will introduce a bit of diversity and randomness. Hair tool is able to randomly distribute select UV boxes to a selection of cards, using UV tools which will be described later.
 
@@ -86,11 +86,11 @@ Why not just use a ton of lower density textures? It is certainly an option, but
 \
 Open the HT panel (N), expand the Hair System, Sub-Systems and Deformers menus.
 
-<figure><img src="../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 Press CTRL + Shift + H, then Transfer Hair system to Empty Curve. The hair object will now be a curves object parented to the grid surface.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption><p>Change viewport display settings if you like</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption><p>Change viewport display settings if you like</p></figcaption></figure>
 
 Add the following deformers:\
 \- Align tilt to source surface\
@@ -102,22 +102,22 @@ Additionally, set the desired profile width in the Profile tab.
 
 <summary>Deformer settings and tips</summary>
 
-![](<../../../.gitbook/assets/image (26).png>)
+![](<../../.gitbook/assets/image (26).png>)
 
 Increase subdivision steps to 4. This affects the 'virtual' curve's subdivision, but it will not affect the final poly count. If you need more points near the roots, use the Slide Points deformer. Change Uniform factor to change the distribution of curves across the sharp edge.
 
-<img src="../../../.gitbook/assets/image (27).png" alt="" data-size="original">
+<img src="../../.gitbook/assets/image (27).png" alt="" data-size="original">
 
 An incredibly usefull deformer. Aligns the tilt of the curve to the source surface. Enable twist fix if the curve is twisting in unexpected ways.
 
-![](<../../../.gitbook/assets/image (28).png>)
+![](<../../.gitbook/assets/image (28).png>)
 
 Mirror deformer will create a symmetric copy around the origin of the object, unless a different target is specified. For now, the symmetry is perfect (which is not desired), but that will be fixed later.\
 The order of deformers matters. They work from top to bottom, just like modifiers. You can think of them as such.&#x20;
 
 </details>
 
-<figure><img src="../../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (31).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
 
 ## Step 1.3: Adding volume to the first layer
 
@@ -149,26 +149,26 @@ Add the following deformers:\
 
 <summary>Deformer settings and tips</summary>
 
-![](<../../../.gitbook/assets/image (34).png>)
+![](<../../.gitbook/assets/image (34).png>)
 
 The duplicate deformer will multiply each filtered curve, and distribute the children in a set radius. \
 Make sure to enable Even Thickness to prevent children clipping through eachother if generated on an angled surface.\
 \
 Distribution Shape value is 0 by default. A value closer to 1 will pull the generated curves closer to the parent, and a negative value will push them away toward the circumference of the radius. Here, a value of 0.2 resulted in nice layering toward the tips.
 
-![](<../../../.gitbook/assets/image (36).png>)
+![](<../../.gitbook/assets/image (36).png>)
 
 A duplicate deformer is often paired with a Clump deformer. This pulls the duplicated children toward their parent.
 
-![](<../../../.gitbook/assets/image (37).png>)
+![](<../../.gitbook/assets/image (37).png>)
 
 Attach to surface deformer will pull the roots of the curves toward the source surface. Make sure to personalize the input values on this deformer, they can vary significantly for each hairstyle. You want to avoid creating patches of clipping, as shown here:
 
-![](<../../../.gitbook/assets/image (38).png>)![](<../../../.gitbook/assets/image (39).png>)
+![](<../../.gitbook/assets/image (38).png>)![](<../../.gitbook/assets/image (39).png>)
 
 </details>
 
-<figure><img src="../../../.gitbook/assets/image (40).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (40).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
 
 ## Step 1.4: Breaking up the perfection
 
@@ -184,10 +184,10 @@ Add the following deformers:\
 
 The Add Tilt deformer with a randomize input mask is capable of... you guessed it... adding... a random tilt... to individual strands...\
 Press the downward arrow right of the tilt value to randomize said value.\
-![](<../../../.gitbook/assets/image (41).png>)
+![](<../../.gitbook/assets/image (41).png>)
 
 For this hair, I will be using a fairly low random tilt, to have a straight, and neat hair look. For messier hairstyles, or more outside layers, a higher tilt value can be beneficial.\
-![](<../../../.gitbook/assets/image (42).png>)
+![](<../../.gitbook/assets/image (42).png>)
 
 You can mess with the flip seed to achieve a better result for specific strands, if needed.\
 \
@@ -197,7 +197,7 @@ Adding some random tilt can also help greatly when hair like this is viewed from
 
 The Noise Deform deformer is incredibly usefull for introducing some randomness to the curves.
 
-![](<../../../.gitbook/assets/image (43).png>)
+![](<../../.gitbook/assets/image (43).png>)
 
 
 
@@ -205,7 +205,7 @@ Both the random Tilt and Noise Deform deformers should be **below** the mirror d
 
 </details>
 
-<figure><img src="../../../.gitbook/assets/image (44).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (44).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
 
 ## Step 1.5: A quick preview
 
@@ -220,25 +220,25 @@ If you plan to use a custom shader or textures, read on.
 
 In the Profile menu, you can find 2 input fields, one for the material, one for UV Data.
 
-![](<../../../.gitbook/assets/image (45).png>)\
+![](<../../.gitbook/assets/image (45).png>)\
 
 
 When selecting a custom shader, this happens:
 
-![](<../../../.gitbook/assets/image (46).png>)\
+![](<../../.gitbook/assets/image (46).png>)\
 
 
 To fix this issue, copy the HTool\_UV node from the HT default material, and plug it into the image nodes in your custom shader.
 
-![](<../../../.gitbook/assets/image (47).png>)
+![](<../../.gitbook/assets/image (47).png>)
 
 Now, your UV's will most likely be completely messed up. To fix this, navigate to UV Editing workspace.
 
-![](<../../../.gitbook/assets/image (48).png>)
+![](<../../.gitbook/assets/image (48).png>)
 
 Press the Hair UV button in the top-right corner of the UV editor and follow the instructions to set up new UV boxes for your hair.
 
-![](<../../../.gitbook/assets/image (49).png>)\
+![](<../../.gitbook/assets/image (49).png>)\
 
 
 Then, navigate back to your deformers, where you can find the UV Regions Distribute deformer. Use it to assign UV boxes to the layer.\
@@ -248,13 +248,13 @@ Then, navigate back to your deformers, where you can find the UV Regions Distrib
 
 Navigate to Render settings, select EEVEE, and enable Ambient Occlusion!
 
-<figure><img src="../../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
 
 And now, you should have a decent preview of what you have created already :D\
 Here, I added a Lenghten deformer to re-gain some of the length lost to UV transparency (which i forgot to account for before).\
 
 
-<figure><img src="../../../.gitbook/assets/image (52).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption><p>Current progress</p></figcaption></figure>
 
 ## Step 1.6: Generating the second layer
 
@@ -271,7 +271,7 @@ By simply pressing the \[2] (or higher number, if more systems shade data), you 
 
 </details>
 
-<figure><img src="../../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
 Hide the filter subsystem of the second layer.&#x20;
 
@@ -285,17 +285,17 @@ Add the following deformers:\
 <summary>Deformer settings and tips</summary>
 
 Slide points will give you more curve resolution towards eighter end of the strands. Here we need a bit more points at the roots.\
-![](<../../../.gitbook/assets/image (56).png>)
+![](<../../.gitbook/assets/image (56).png>)
 
 \
 Add the Attach to Surface deformer below the Push Out, but before you start tweaking the input curve.
 
-![](<../../../.gitbook/assets/image (60).png>)\
+![](<../../.gitbook/assets/image (60).png>)\
 
 
 The Push Out deformer will allow you to create a second layer from the same grid surface. Add a Profile Curve input mask to the Influence Range value of the Push Out deformer. Use the influence range input to finely control how much each part of the curve gets pushed out. You want the curves in this subsystem to be just above the first layer. Make sure to push the roots out above the first layer too!
 
-![](<../../../.gitbook/assets/image (58).png>)![](<../../../.gitbook/assets/image (59).png>)
+![](<../../.gitbook/assets/image (58).png>)![](<../../.gitbook/assets/image (59).png>)
 
 
 
@@ -303,7 +303,7 @@ The Push Out deformer will allow you to create a second layer from the same grid
 
 
 
-<figure><img src="../../../.gitbook/assets/image (61).png" alt=""><figcaption><p>Enable random wire color in shading options for convenience. Blue is the second layer</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (61).png" alt=""><figcaption><p>Enable random wire color in shading options for convenience. Blue is the second layer</p></figcaption></figure>
 
 ## Step 1.7: Adding volume to the second layer
 
@@ -318,9 +318,9 @@ These are the changes I made:\
 \- Slightly increased Lenghten, and added a random Trim deformer. Average length slightly increased.\
 \- Selected lower density UV boxes for this layer.
 
-<figure><img src="../../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 1.8: Final layers
 
@@ -331,9 +331,9 @@ I am adding 2 more layers, low density, with large push out values.&#x20;
 
 <summary>Screenshots of my layers</summary>
 
-![](<../../../.gitbook/assets/image (68).png>)![](../../../.gitbook/assets/image-1.png)
+![](<../../.gitbook/assets/image (68).png>)![](../../.gitbook/assets/image-1.png)
 
-![](<../../../.gitbook/assets/image (69).png>)![](<../../../.gitbook/assets/image (70).png>)
+![](<../../.gitbook/assets/image (69).png>)![](<../../.gitbook/assets/image (70).png>)
 
 To create the 4th layer, I used a Set Radius deformer. It allows you to control the width of cards, without needing to make the profile unique.
 
@@ -356,7 +356,7 @@ Documentation: [https://joseconseco.github.io/HairTool\_3\_Documentation/hair\_m
 
 </details>
 
-<figure><img src="../../../.gitbook/assets/image (71).png" alt=""><figcaption><p>Manually placed guide curves for the fringe</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (71).png" alt=""><figcaption><p>Manually placed guide curves for the fringe</p></figcaption></figure>
 
 Add the following deformers:\
 \- Align Tilt\
@@ -364,7 +364,7 @@ Add the following deformers:\
 \- Radius set, and taper the roots (flip influence range arrow)\
 \- Optionally other procedural deformers, I added a Lenghten, but you can just as well simply edit the curves directly.
 
-<figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption><p>First layer of manually placed curves</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (73).png" alt=""><figcaption><p>First layer of manually placed curves</p></figcaption></figure>
 
 Then, duplicate the object, make subsystems unique, push it out using the deformer or manually do it, in order to create the next layer. \
 It is inefficient to model every curve manually, so make use of the duplicate strands deformer, as showcased earlier in the procedural section. \
@@ -374,19 +374,19 @@ It is inefficient to model every curve manually, so make use of the duplicate st
 
 <summary>Deformers and layers</summary>
 
-![](<../../../.gitbook/assets/image (76).png>)
+![](<../../.gitbook/assets/image (76).png>)
 
 These are the deformers I used for the second and third layer of the fringe. Each layer is made from 5 or 6 guide curves with 5 vertices each.&#x20;
 
-![](<../../../.gitbook/assets/image (77).png>)![](<../../../.gitbook/assets/image (78).png>)
+![](<../../.gitbook/assets/image (77).png>)![](<../../.gitbook/assets/image (78).png>)
 
 </details>
 
-<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption><p>Hair after modeling 2 more layers for the fringe</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (79).png" alt=""><figcaption><p>Hair after modeling 2 more layers for the fringe</p></figcaption></figure>
 
 Again, if your poly count allows, it's good to add some thin coverling layers on top, they will aid with realism and blend the fringe a bit better into the main part of the hair.
 
-<figure><img src="../../../.gitbook/assets/image (80).png" alt=""><figcaption><p>One more low-density layer with broken flow</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (80).png" alt=""><figcaption><p>One more low-density layer with broken flow</p></figcaption></figure>
 
 ## Step 3: Baking Subsystems and manually finishing
 
@@ -398,7 +398,7 @@ Any hairstyle will have some strands that cannot be tamed. Sometimes they are re
 
 This operation is called Baking Subsystems. You can access it by pressing the 3 dots next to the Sub-Systems menu. Baking will allow you to finish procedural operations manually.
 
-![](<../../../.gitbook/assets/image (81).png>)
+![](<../../.gitbook/assets/image (81).png>)
 
 If your strands are not attached to the scalp, and you want them to remain this way, make sure to un-check the attach to surface option in the context menu which appears in the bottom left when baking.
 
@@ -418,26 +418,26 @@ I'm baking layer 3 and 4, which do not use Duplicate strands deformers, so I can
 
 </details>
 
-<figure><img src="../../../.gitbook/assets/image (82).png" alt=""><figcaption><p>Layer 3 after baking, with strand overlay enabled.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (82).png" alt=""><figcaption><p>Layer 3 after baking, with strand overlay enabled.</p></figcaption></figure>
 
 After baking your subsystems, you can use any curve modeling tools to edit them further.\
 HT's Hair Modeling is very well suited for this.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (83).png" alt=""><figcaption><p>After manually adding some flow variation to Layers 3 and 4</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (83).png" alt=""><figcaption><p>After manually adding some flow variation to Layers 3 and 4</p></figcaption></figure>
 
 ## Step 4: Finishing Touches
 
 Add a couple extra strands to break up the flow, if desired.
 
-<figure><img src="../../../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 
 Add some deformers to the strands, be creative!
 
 ## Final result:
 
-<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (87).png" alt=""><figcaption><p>There's a bit of shading issues near the top of the fringe, but they won't be an issue when ported to Cyberpunk. If the goal is different... figure it out i guess, good luck.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (87).png" alt=""><figcaption><p>There's a bit of shading issues near the top of the fringe, but they won't be an issue when ported to Cyberpunk. If the goal is different... figure it out i guess, good luck.</p></figcaption></figure>
 

@@ -36,3 +36,10 @@ The dread flow map is inverted, as the dreadlocks have strands running in the op
 {% embed url="https://www.youtube.com/watch?v=RvR32uctPHY" %}
 Video courtesy of IslandDancer. Paint job is deliberately shitty.
 {% endembed %}
+
+{% embed url="https://www.youtube.com/watch?v=Mf1sM1y0X2Q" %}
+Anissotropy in action, courtesy of IslandDancer
+{% endembed %}
+
+
+

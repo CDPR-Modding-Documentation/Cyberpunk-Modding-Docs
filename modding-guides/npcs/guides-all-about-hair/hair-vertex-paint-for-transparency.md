@@ -13,7 +13,7 @@ This page explains how to use Blender's **Vertex Paint** mode to make better and
 
 ### Wait, this is not what I want!
 
-* Check out [hair-modeling-beginner-tutorial](../../../for-mod-creators-theory/3d-modelling/hair-modeling-beginner-tutorial/ "mention") for how to create hair from scratch in Blender
+* Check out [hair-modeling-beginner-tutorial.md](../../../for-mod-creators-theory/3d-modelling/hair-modeling-beginner-tutorial.md "mention") for how to create hair from scratch in Blender
 * Browse [.](./ "mention") in the left submenu to find all of our hair guides
 
 ## Do I want this?

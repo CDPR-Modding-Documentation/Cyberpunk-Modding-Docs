@@ -18,5 +18,5 @@ To see the guides, please check the page tree in the left sidebar, or click the 
 
 ### Wait, this is not what I want!
 
-* Check out [hair-modeling-beginner-tutorial](../../../for-mod-creators-theory/3d-modelling/hair-modeling-beginner-tutorial/ "mention") for how to create hair from scratch in Blender
+* Check out [hair-modeling-beginner-tutorial.md](../../../for-mod-creators-theory/3d-modelling/hair-modeling-beginner-tutorial.md "mention") for how to create hair from scratch in Blender
 * For information on [how-to-add-a-ccxl-hair-color-to-an-npv.md](../npv-v-as-custom-npc/how-to-add-a-ccxl-hair-color-to-an-npv.md "mention"), check the corresponding guide
