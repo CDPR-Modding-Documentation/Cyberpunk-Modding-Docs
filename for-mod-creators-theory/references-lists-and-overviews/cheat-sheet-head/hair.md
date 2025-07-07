@@ -7,7 +7,7 @@ description: Overview of hair related things
 Summary
 
 **Published**: November 04 2022 by @manavortex\
-**Last documented update**: Oct 06 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update**: Oct 06 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 {% hint style="info" %}
 You can find previews of hair styles and -colors under [cheat-sheet-character-creator.md](../cheat-sheet-character-creator.md "mention")
@@ -129,3 +129,11 @@ base\characters\head\player_base_heads\player_man_average
 Any beard uses the same two components, `beard` and `beard_shadow_01`.&#x20;
 
 Beard 01 will **only** use the shadowbase.
+
+## Cyberware\_01
+
+For `cyberware_01`, an additional mask file is used to block out parts of the hair cap in favour of the cyberware lines:&#x20;
+
+```
+base\characters\common\character_customisation_items\cyberware\face\textures\hh_cyberware_cap_mask_01.xbm
+```
