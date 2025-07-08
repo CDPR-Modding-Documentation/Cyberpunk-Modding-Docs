@@ -28,18 +28,10 @@ Wait, this is not what I want!
 ## RemovalEditor, RedHotTools and ArchiveXL
 
 {% hint style="info" %}
-You can either watch the [#video-guide](world-editing-deleting-objects.md#video-guide "mention"), or follow the [#step-by-step](world-editing-deleting-objects.md#step-by-step "mention") instructions.
+Follow the [#step-by-step](world-editing-deleting-objects.md#step-by-step "mention") instructions, if you want some additional background info you can also read the info on the Removal Editor [GitHub page](https://github.com/justarandomguyintheinternet/CP77_removalEditor?tab=readme-ov-file#installation).
 
 If you get stuck, refer to the [user-guide-troubleshooting](../../../for-mod-users/user-guide-troubleshooting/ "mention") section at the end of the guide!
 {% endhint %}
-
-## Video guide
-
-Visual learners, celebrate: Proxima Dust made a video guide for this! Everyone else, proceed to the next section for a full step-by-step guide.
-
-{% embed url="https://youtu.be/r2g7cR4-j0E" %}
-thanks to ProximaDust!
-{% endembed %}
 
 ## Step-by-step
 
@@ -55,7 +47,7 @@ In this section, you find the object that you want to remove in the game, and cr
 
 <figure><img src="../../../.gitbook/assets/removal_editor_create_preset.png" alt=""><figcaption></figcaption></figure>
 
-6. Click the "Edit" button. This will switch Removal Editor to the Staging view:
+6. Click the "Edit" button. This will switch Removal Editor to the editing view:
 
 <figure><img src="../../../.gitbook/assets/removal_editor_staging.png" alt=""><figcaption></figcaption></figure>
 
@@ -84,16 +76,20 @@ Now that the preset is active, we can use RedHotTools to easily remove them.
 
 6. Optional: Repeat this process with as many things as you want.
 
+{% hint style="warning" %}
+In order for the removals to be persistently applied, you must install the generated `.xl` file, as is explained in the next section
+{% endhint %}
+
 ### 3. Testing
 
-Now that you're done removing objects, let's test.&#x20;
+Now that you're done building the list of objects to remove, let's test.&#x20;
 
-While you were busy clicking buttons, RemovalEditor has done the hard work in the backtground, and generated an `.xl` file for you. This file can be read by ArchiveXL, which will apply your removals.
+While you were busy clicking buttons, RemovalEditor has done the hard work in the background, and has generated a `.xl` file for you. This file can be read by ArchiveXL, which will apply your removals.
 
 1. Close the game
 2. Open your [the-cyberpunk-2077-game-directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/ "mention") in Windows Explorer
 3. Find the `.xl` file under\
-   `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\removalEditor\data` .\
+   `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\removalEditor\data` ,\
    It will have the same name as the preset that you created in step 1.5.
 4. Copy the file to your mod directory: `Cyberpunk 2077\archive\pc\mod`&#x20;
 5. Start the game. Your object(s) should now be gone.

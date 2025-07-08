@@ -15,6 +15,12 @@ This page tells you how to do node removals by hand.&#x20;
 This workflow is **extremely not recommended** and only demonstrates the underlying principle. All these steps are **more than techedd away** by now, and you should follow the[world-editing-deleting-objects.md](world-editing-deleting-objects.md "mention")guide.
 {% endhint %}
 
+## Video Guide
+
+Visual learners, celebrate: Proxima Dust made a video guide for this! Everyone else, proceed to the next section for a full step-by-step guide.
+
+{% embed url="https://youtu.be/r2g7cR4-j0E" %}
+
 ## Create a Wolvenkit project
 
 1. Create a [Wolvenkit Project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
