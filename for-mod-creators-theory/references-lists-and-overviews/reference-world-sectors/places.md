@@ -25,7 +25,7 @@ There are several overviews of interesting locations:
 5. Open the CET overlay
 6. Open RedHotTool's [#inspect](../../modding-tools/redhottools/#inspect "mention") or [#scan](../../modding-tools/redhottools/#scan "mention") tab and see the sector information:
 
-<figure><img src="../../../.gitbook/assets/world_sector_node_removal.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 ## Legacy information
 

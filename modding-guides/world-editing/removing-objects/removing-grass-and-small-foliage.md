@@ -1,10 +1,19 @@
 ---
-description: >-
-  This guide shows how to selectively block small foliage such as grass and
-  pebbles, which is generated at runtime for terrain
+description: How to change generated runtime terrain
 ---
 
 # Removing grass and small foliage
+
+## Summary
+
+**Published:** Mar 18 2025 by [justarandomguyintheinternet](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/commits?author=justarandomguyintheinternet)\
+Last documented update: Jul 08 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This guide shows how to selectively block small foliage such as grass and pebbles, which is generated at runtime for terrain.
+
+### Wait, that's not what I want!
+
+If you would rather edit other objects: don't. [Remove the original](world-editing-deleting-objects.md), then spawn your edited object in the same spot.
 
 ## Requirements
 

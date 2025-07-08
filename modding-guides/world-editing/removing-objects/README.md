@@ -11,19 +11,34 @@ icon: trash-can
 The terms `Object` and `Node` will be used interchangeably in most guides, Node is just the more general description of _something_ that is part of the game world
 {% endhint %}
 
-## Tool Assisted
+## The right workflow
 
-{% hint style="warning" %}
-It is extremely recommended to use Removal Editor or VS2077 (Depending on the job) to remove nodes from the world as it is easier to use, easier to update and maintain and faster than doing it manually.
+You can pick between four different workflows for object removal.&#x20;
+
+{% hint style="info" %}
+If you want to **edit** objects instead, see [removing-grass-and-small-foliage.md](removing-grass-and-small-foliage.md "mention").
 {% endhint %}
 
-* [Removal Editor](https://github.com/justarandomguyintheinternet/CP77_removalEditor) (Documentations can be found on the GitHub page)
-  * Best if you want to manually choose what to remove, but don't want to worry about any further steps (Such as creating a .xl file yourself)
-* [VS2077](https://github.com/notaspirit/VolumetricSelection2077)
-  * Best if you want to delete everything (With filters) within a certain area / volume
-* Generating the .xl file via Blender, see [#blender-and-archivexl](./#blender-and-archivexl "mention")
+#### Remove objects in-game
 
-## Manually
+Best for **beginners** who want to get **quick results**: the easiest workflow. If you follow the instructions, you're ten minutes away from having a shareable mod.
 
-* While it is not recommended anymore to use the manual method, it can be helpful to understand how the removing actually works, as no matter the tool and process, removing nodes uses the same [underlying technique](https://github.com/psiberx/cp2077-archive-xl)
+⇒ See [world-editing-deleting-objects.md](world-editing-deleting-objects.md "mention").
 
+#### Remove a FUCKTON of objects
+
+Best to remove a certain **kind** of object or clean up a large **area**. Think "nuke it from the orbit", but it supports filtering.
+
+⇒ Check [VS2077](https://github.com/notaspirit/VolumetricSelection2077)
+
+#### Remove objects in Blender
+
+Best if you want to see where we came from: this is the very first workflow we had, and it will take you on an extended tour of the past. If you are easily frustrated or have no idea about modding, you should stay away from this.
+
+⇒ See [world-object-removal-with-blender.md](world-object-removal-with-blender.md "mention")
+
+#### Remove objects by hand
+
+Best if you enjoy suffering. We don't recommend the manual process anymore, but it can be helpful to understand what's going on under the hood.
+
+⇒ See [removing-objects-by-hand.md](removing-objects-by-hand.md "mention")
