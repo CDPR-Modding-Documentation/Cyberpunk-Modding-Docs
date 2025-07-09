@@ -7,7 +7,7 @@ description: No more replacers! Add your own gear with TweakXL and ArchiveXL
 ## Summary <a href="#summary" id="summary"></a>
 
 **Created & Published**: November 04 2022 **by @manavortex**\
-**Last documented Update:** March 12 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented Update:** March 12 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will walk you through **adding your own items** to Cyberpunk 2077, which can then be spawned via console.
 
@@ -410,7 +410,9 @@ Most likely, you have ignored the [hint box](./#get-the-files-create-the-structu
 You can find out which entity file your item uses by right-clicking on your mesh and selecting "find files using this". Add the .ent file to the list and open it in WolvenKit. Then, [replace the contents](../../npcs/appearances-change-the-looks/#safely-adding-components) of the "components" array with those of an .ent file from the correct folder — don't forget to change the path to your mesh again!
 {% endhint %}
 
-### I spawn my item, but it's not added to my inventory!
+### I can't add my item with the spawn code!
+
+When you can't spawn your item with CET, then the error is between the yaml, the factory, and the root entity.&#x20;
 
 {% hint style="warning" %}
 Before you start digging into your file structure, check if there are any leftover yaml files from earlier versions/deploys in your tweaks directory. Do a full text search in e.g. Notepad++ in any files in the folder with the name of the item you want to spawn.
