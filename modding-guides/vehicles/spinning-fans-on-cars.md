@@ -1,4 +1,4 @@
-# Spinning fans on cars
+# Spinning Fans on Vehicles
 
 You can find spinning ventilation fans all over the map. You can use one of those and incorporate it into you own mods for anything that spins, for example the cooling fan on a car engine.
 
@@ -22,7 +22,7 @@ Inside the file, there are three `components`:
 
 You're probably already familiar with `entGarmentSkinnedMeshComponent`s from other mods you've already made, so this tutorial won't go into explaining the `entMeshComponent`. Related info can be found on the [Wiki](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity) though. Of note is that the `entMeshComponent` must be parented to the `gameTransformAnimatorComponent`. This is done by setting the `bindName` of the `parentTransform` of the `entMeshComponent` to the `name` of the `gameTransformAnimatorComponent`. In our case, the `bindName` is `TransformAnimator0567` (pictured below).
 
-The `gameTransformAnimatorComponent` defines how fast the fan spins and on which axis. These settings can be found in the dropdown under `animations > gameTransformAnimationDefinition > timeline > items`. There, the `duration` sets the speed (higher numbers means faster), and under `impl > axis`, you can set which axis it spins on. For example, if the `.mesh` is parallel to the horizon, you'd want it to spin on the Z axis. The `.mesh` of the fan in this `.ent` is oriented vertically though, so it spins on the Y axis.
+The `gameTransformAnimatorComponent` defines how fast the fan spins and on which axis. These settings can be found in the dropdown under `animations > gameTransformAnimationDefinition > timeline > items`. There, the `duration` sets the speed (lower numbers means faster), and under `impl > axis`, you can set which axis it spins on. For example, if the `.mesh` is parallel to the horizon, you'd want it to spin on the Z axis. The `.mesh` of the fan in this `.ent` is oriented vertically though, so it spins on the Y axis.
 
 <figure><img src="../../.gitbook/assets/Screenshot 2025-05-08 134450.png" alt=""><figcaption></figcaption></figure>
 

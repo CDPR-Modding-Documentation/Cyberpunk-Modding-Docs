@@ -408,7 +408,7 @@
   * [Chassis Modifications](modding-guides/vehicles/chassis-modifications.md)
   * [Weaponizing vehicles](modding-guides/vehicles/weaponizing-vehicles/README.md)
     * [Windows & Doors opening + MountedWeapons clue](modding-guides/vehicles/weaponizing-vehicles/windows-and-doors-opening-+-mountedweapons-clue.md)
-  * [Spinning fans on cars](modding-guides/vehicles/spinning-fans-on-cars.md)
+  * [Spinning Fans on Vehicles](modding-guides/vehicles/spinning-fans-on-cars.md)
   * [Fluid Animations for Vehicles](modding-guides/vehicles/fluid-animations-for-vehicles.md)
 * [World Editing](modding-guides/world-editing/README.md)
   * [World Builder](modding-guides/world-editing/object-spawner/README.md)
