@@ -1,5 +1,5 @@
 ---
-description: How to create custom props to use with AMM or sector editing
+description: How to create custom props to use with AMM
 ---
 
 # AMM: Custom Props
@@ -26,6 +26,7 @@ For another guide regarding custom props, check [textured-items-and-cyberpunk-ma
 * If you want to enable collisions, see [enable-embedded-collisions.md](../../world-editing/miscellaneous/enable-embedded-collisions.md "mention")
 * If you want to make meshes out of 2d textures, see [your-image-as-custom-mesh.md](../../../for-mod-creators-theory/3d-modelling/your-image-as-custom-mesh.md "mention")
 * … or use the wiki's AI-assisted search function, or simply poke around
+* If you want to use a custom model (Or other resource type) with World Builder, see [Adding custom resources](../../world-editing/object-spawner/features-and-guides/adding-custom-resources-props.md)
 
 ### Video Guide
 
