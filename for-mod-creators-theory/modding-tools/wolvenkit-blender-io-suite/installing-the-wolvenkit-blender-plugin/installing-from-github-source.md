@@ -2,13 +2,13 @@
 
 ## Summary
 
-**Published:** 22.09.2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** 22.09.2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** 22.09.2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** 22.09.2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will show you how to download and install the [..](../ "mention") from github source.&#x20;
+This guide will show you how to download and install the [..](../ "mention") from github source.   You only need this if you want the newest features and fixes.
 
-{% hint style="info" %}
-Unless you either **know what you're doing** or have been **told by someone in the** [**discord support channel**](https://discord.com/channels/717692382849663036/1033120509216444550) to install the current development version, you should stick to the release version.
+{% hint style="danger" %}
+Unless you either **know what you're doing** or have been **told by someone in the** [**discord support channel**](https://discord.com/channels/717692382849663036/1033120509216444550) to install the current development version, you should not be here. Head to [.](./ "mention") -> [#step-0-download-the-plugin](./#step-0-download-the-plugin "mention").
 {% endhint %}
 
 ## Step 1: Download from github
@@ -33,7 +33,9 @@ Unless you either **know what you're doing** or have been **told by someone in t
 C:\Users\USERNAME\AppData\Roaming\Blender Foundation\Blender\VERSION\scripts\addons\i_scene_cp77_gltf\__init__.py
 ```
 
-4. Everything before the `__init__.py`  is the path to the current install.
+4. Everything before the `__init__.py`  is the path to the current install (replace VERSION with your Blender version, e.g. `4.4`)
+5. Open an Windows Explorer there\
+   &#xNAN;_&#x41;s a shortcut, you can press `Windows+R`, paste `%APPDATA%\Blender Foundation\Blender` into the box, and press Enter._
 
 ### 2.2: Delete the old install
 

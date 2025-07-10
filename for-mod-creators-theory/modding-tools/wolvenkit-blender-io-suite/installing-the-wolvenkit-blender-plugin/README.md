@@ -6,12 +6,14 @@ description: Install guide
 
 ## Summary
 
-**Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Nov 29 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Nov 29 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will show you how to install the Wolvenkit Blender Plugin from a github release or tag. If you want to install the bleeding edge, please check [installing-from-github-source.md](installing-from-github-source.md "mention") instead.
 
 ### Compatibility
+
+{% include "../../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
 ## Optional: Uninstall the old version
 
@@ -46,7 +48,7 @@ Navigate there with your Windows Explorer (Hotkey: `Windows+R`, paste the path a
 ## Step 0: Download the plugin
 
 {% hint style="info" %}
-If you want to install the current development version of the plugin, read [installing-from-github-source.md](installing-from-github-source.md "mention").&#x20;
+If you want to install the current development version of the plugin, read [installing-from-github-source.md](installing-from-github-source.md "mention") (NOT for beginners)
 {% endhint %}
 
 Download the latest release of the plugin from **github:**&#x20;
