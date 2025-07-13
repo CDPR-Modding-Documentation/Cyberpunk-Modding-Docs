@@ -132,7 +132,7 @@ Created `your_modder_name\photomode\npc_name_photomode` and added the following 
 
 * Create an icon: It added the `.inkatlas` and the `.xbm` texture it uses, and connected them (we'll customize it in [#step-3-add-a-custom-icon-for-your-character](npv-amm-nibbles-replacer.md#step-3-add-a-custom-icon-for-your-character "mention"))
 * Create a photomode `.ent` file: It created a copy of your original `.ent` file, then configured it to use the [npc-animations.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/animations-.anims/npc-animations.md "mention") required by photo mode
-* Create a copy of your original `.app` file and registered it in the photomode `.ent`. In this file, your character's [facial-animations.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/animations-.anims/facial-animations.md "mention") have been configured to be photo mode compatible (including [xBaebsae's Photomode expression pack](https://www.nexusmods.com/cyberpunk2077/mods/7912))
+* Create a copy of your original `.app` file and registered it in the photomode `.ent`. In this file, your character's [facial-animations.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/animations-.anims/facial-animations.md "mention") have been configured to be photo mode compatible (including [xBaebsae's Photomode expression pack](https://www.nexusmods.com/cyberpunk2077/mods/7912)) by updating the `man_face_base_animations` and `face_rig` components (you can do this step manually by copying them from a different appearance inside the .app file)
 * Create a .json: For photo mode to know your NPC's name, it needs a translation file
 
 Added the following control files under `resources`:
