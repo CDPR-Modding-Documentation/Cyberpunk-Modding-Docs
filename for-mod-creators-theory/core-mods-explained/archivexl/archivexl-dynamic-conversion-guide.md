@@ -6,8 +6,8 @@ description: How to convert your mod to use dynamic variants... in ten minutes
 
 ## Summary
 
-**Published:** June 30 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** June 30 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** June 30 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** June 30 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will teach you how to convert your existing ArchiveXL mod to the "new" system.
 
@@ -207,5 +207,42 @@ This is our mesh's depot path:
 *tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt_p{gender}a.mesh
 ```
 
-A combination of&#x20;
+At runtime, ArchiveXL will substitute `{gender}` with `w` or `m`, so depending on your V's body gender, the game will load one of these paths:&#x20;
+
+```
+tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt_pwa.mesh
+tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt_pma.mesh
+```
+
+You can find a full list of component substitution on [archivexl-suffixes-and-substitutions.md](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention").
+
+<details>
+
+<summary>Instead of body gender, you can also use this for <strong>body mods</strong>: </summary>
+
+<pre><code><strong>*tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt__{body}.mesh
+</strong></code></pre>
+
+becomes
+
+```
+tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt__base_body.mesh
+tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt__lush.mesh
+tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt__ebbwtfbbq.mesh
+...and many more
+```
+
+</details>
+
+{% hint style="info" %}
+Wolvenkit ≥ 8.16.2 lets you convert paths to dynamic from editor panel's context menu  (to the right of the tree view)
+{% endhint %}
+
+#### That's it!
+
+By using substitutions, your mesh path will auto-adjust to the current circumstances, and simply load the correct mesh.
+
+{% hint style="info" %}
+If you want to avoid mesh duplication, check out the page about [archivexl-resource-linking.md](archivexl-resource-linking.md "mention")
+{% endhint %}
 
