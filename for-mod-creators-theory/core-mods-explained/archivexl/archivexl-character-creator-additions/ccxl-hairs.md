@@ -2,8 +2,8 @@
 
 ## Summary
 
-Published: Jan 20 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") and [IslandDancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
-Last documented edit: Feb 16 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [IslandDancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention"), [CyberVesna](https://app.gitbook.com/u/cmjyzwfGm7YaRhuU9Kyk4uTuE3Y2 "mention") , [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention"), and [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
+Published: Jan 20 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") and [IslandDancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
+Last documented edit: July 14 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention"), [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [IslandDancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention"), [CyberVesna](https://app.gitbook.com/u/cmjyzwfGm7YaRhuU9Kyk4uTuE3Y2 "mention")  and [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
 
 This page will tell you how to use ArchiveXL to add hair to the character creator.&#x20;
 
@@ -88,7 +88,10 @@ If you have more than one .mesh file, for every additional mesh, complete the fo
    2. Select `parentTransform` and change the `bindName` to your `entAnimatedComponent`'s name (step 1c above)
    3. Select `skinning` and change the `bindName` to your `entAnimatedComponent`'s name (step 1c above)
    4. Change the `name` to be unique
-3. Optional: Component uniqueness
+3. Duplicate the `appearancePartComponentOverrides` in `partsOverrides`
+   1. change the `componentName` to your new `entSkinnedMeshComponent` 's name from step 2
+   2. repeat this step for each new meshComponent you add
+4. Optional: Component uniqueness
    1. If you are running into issues, you can assign unique `id`s to all of your components. Go through them one by one, select their `id` attribute, and select "`Generate new CRUID`" from the context menu.
 
 ### How does this work?
