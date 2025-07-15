@@ -1,0 +1,18 @@
+WilsonWeaponMod : IconicWeaponModBase
+{
+	OnAttach = 
+	[
+		"Items.WilsonWeaponModAbility"
+	];
+	statModifiers += 
+	[
+		{
+			statType = "BaseStats.ReloadTimeBonus";
+			modifierType = "Additive";
+			value = -0.1f;
+		} : ConstantStatModifier, 
+		
+    
+    
+	];
+}
