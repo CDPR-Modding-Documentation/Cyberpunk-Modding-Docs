@@ -4,9 +4,10 @@
 
 This page lists various properties of the player head. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.
 
-{% hint style="info" %}
-Check [cheat-sheet-character-creator.md](../cheat-sheet-character-creator.md "mention") for color values and appearances
-{% endhint %}
+### More head-related cheat sheets
+
+* For character creator stuff (colors, appearance names), check [cheat-sheet-character-creator.md](../cheat-sheet-character-creator.md "mention")
+* For hair, facial expressions, or info on the E3 heads, check the child pages in the navigation tree on the left
 
 ### Wait, this isn't what I'm looking for!
 

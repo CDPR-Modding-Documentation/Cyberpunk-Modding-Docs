@@ -6,7 +6,7 @@ description: Character creator options and their values
 
 ## Summary
 
-**Created:** Sep 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Created:** Sep 01 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** Jan 23 2025 by @nutboy
 
 This page lists various properties of the character creator. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.&#x20;
@@ -14,7 +14,7 @@ This page lists various properties of the character creator. Use the Table of Co
 Please note that this page lists **appearances** and **colours**. For **mesh paths**, please check [cheat-sheet-head](cheat-sheet-head/ "mention")
 
 {% hint style="info" %}
-You can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/npv_part_picker) to find the correct appearances.&#x20;
+You can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/npv_part_picker) to find the correct appearances. As of July 2025, it is not up-to-date with the new appearances that were added with 2.2.
 {% endhint %}
 
 ## List of CC options in order
