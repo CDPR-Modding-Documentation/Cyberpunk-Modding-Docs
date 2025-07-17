@@ -26,14 +26,11 @@ You can look up the component names and their properties in the .ent files per b
 Female arms are using different meshes for the first person perspective. You will find this is a common theme.
 {% endhint %}
 
-| Type         | Folder or .ent files                                                                                                                                         | Component names                                                                   |
-| ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------- |
-| First Person | `base\characters\common\player_base_bodies\player_female_average\fpp`                                                                                        | <pre><code>left_arm    
+<table><thead><tr><th>Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>First Person</td><td><code>base\characters\common\player_base_bodies\player_female_average\fpp</code></td><td><pre><code>left_arm    
 right_arm  
-</code></pre>                                 |
-| Third Person | <p><code>base\characters\common\player_base_bodies\player_female_average\arms_hq</code><br><br><code>arms_full</code> is only used by character creator!</p> | <pre><code>a0_001_pwa_base_hq__full  
+</code></pre></td></tr><tr><td>Third Person</td><td><code>base\characters\common\player_base_bodies\player_female_average\arms_hq</code><br><br><code>arms_full</code> is only used by character creator!</td><td><pre><code>a0_001_pwa_base_hq__full  
 a0_001_pwa_base_hq__full8640 
-</code></pre> |
+</code></pre></td></tr></tbody></table>
 
 {% hint style="info" %}
 An in app example how to include Component Names and hiding them via chunkmask (untick the submesh numbers to hide the mesh).
@@ -43,11 +40,9 @@ An in app example how to include Component Names and hiding them via chunkmask (
 
 ### Male
 
-| Folder or .ent files                                                                                                                                         | Component names                                                                        |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------- |
-| <p><code>base\characters\common\player_base_bodies\player_man_average\arms_hq</code></p><p><br><code>arms_full</code> is only used by character creator!</p> | <pre><code>a0_000_ma_base__full_ag_hq1491
+<table><thead><tr><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td><p><code>base\characters\common\player_base_bodies\player_man_average\arms_hq</code></p><p><br><code>arms_full</code> is only used by character creator!</p></td><td><pre><code>a0_000_ma_base__full_ag_hq1491
 a0_000_ma_base__full_ag_hq6168
-</code></pre> |
+</code></pre></td></tr></tbody></table>
 
 ## Cyber Arms
 
