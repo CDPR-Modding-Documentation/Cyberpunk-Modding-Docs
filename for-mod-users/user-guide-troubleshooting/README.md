@@ -6,7 +6,7 @@ description: If your mods are causing trouble, here's what you can do
 
 ## Summary
 
-Last documented update: Mar 24 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented update: 19 July 2025 by minnie
 
 This page contains[^1] troubleshooting[^1] information for people who are **using** mods rather than making mods. You will find step-by-step guides, grouped by different problems.
 
@@ -1337,6 +1337,65 @@ If that doesn't solve your problem, you can&#x20;
 > Cyberpunk 2077 encountered an error caused by corrupted or missing archives and and will now be forced to close. Please verify...
 
 One of the .archive files in your folder is broken. To find out which one, try the [bisect](./#finding-the-broken-mod-bisecting) approach, starting with the first two folders.
+
+***
+
+## Help! 2.3 broke everything!
+
+{% hint style="info" %}
+Patch 2.3 changed a lot with the new Autodrive feature, as well as changing audio files. This section may not list _every_ mo&#x64;_,_ but it'll help by listing similar ones.
+{% endhint %}
+
+### **My menu doesn’t work properly! It’s all blank!**
+
+When you first load into your game after updating to 2.3, you will be asked to agree to the new EULA. If this pop-up and/or your main menu have no text on them, don't worry. It's a known issue. You can fix it by doing the following:\
+\
+2\. Open your game and accept the EULA\
+\
+3\. Close your game\
+\
+**If your issue was a main menu mod:** \
+\- You should be safe to reinstall your mod. Lucky you!\
+\
+**If your issue was a HUD mod:**\
+\- You _should_ also be safe to reinstall your mod, but some users have reported issues when loading a save with a mod that edits your HUD. At least you can get past the main menu now!
+
+1. Uninstall _any_ mods that alter the main menu or HUD.&#x20;
+2. Open your game and accept the EULA
+3. Close your game
+4. Now what?
+   * If your issue was a main menu mod, you should be safe to reinstall your mod. Lucky you!
+   * If your issue was a HUD mod, you _should_ also be safe to reinstall your mod.&#x20;
+
+{% hint style="info" %}
+Some users have reported further issues when loading a save after reinstalling HUD mods. Hey, at least you know a potential culprit!
+{% endhint %}
+
+<figure><img src="../../.gitbook/assets/cyberpunk_main_menu.png" alt=""><figcaption><p>Your main menu should look something like this now!</p></figcaption></figure>
+
+### **My sound cuts out in the main menu and doesn't come back!**
+
+Any audio mod you may have will be effected by some of the changes made in 2.3. The damage ranges from no audio after a few seconds, all the way to CTD.&#x20;
+
+{% hint style="info" %}
+Until your audio mod(s) are updated, you should remove them from your game and patiently wait for your beloved modders to update them.&#x20;
+{% endhint %}
+
+### **My game crashes when I get into my vehicle**
+
+There have been a few different types of mods reported to cause this, so unfortunately there isn't an easy mod to point to this time. Here's some that are confirmed to cause issues:
+
+1. Anything related to the **camera**, such as Third Person Perspective or Immersive First Person.
+2. **Animation mods.** Unfortunately that's as specific as we can really get. If you have a mod that alters V's animations in game (and not in PhotoMode), this could be your answer.
+3. Gore mods. Strange, but it happens. Update them all.
+4. Specifically the _**Tempus BR-12 Gauge**_ mod has confirmed to cause crashes upon entering a vehicle, but this seems to be the only weapon mod.
+
+**I don't have any of these mods!**\
+First, double check. It may be a mod that isn't obviously named after what it does. If it has a chance of altering animations, the camera during gameplay, or anything adjacent to this, chances are it will need an update. \
+\
+If you're 100% sure you don't have any of these, it's [bisecting time](./#finding-the-broken-mod-bisecting). Aren't you lucky! When you manage to find the culprit, consider letting us know on the [modding discord](https://discord.gg/redmodding) in `#mod-troubleshooting` so we can look out for it as more people update their games.&#x20;
+
+<figure><img src="../../.gitbook/assets/car_on_fire.png" alt=""><figcaption><p>Now you can get back to real driving.</p></figcaption></figure>
 
 ## The game isn't starting: other reasons
 
