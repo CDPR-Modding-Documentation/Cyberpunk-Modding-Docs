@@ -252,8 +252,9 @@ First, we need an .ent file to hold our component.&#x20;
 
 Now we only need to add our .ent file to the player entity. ArchiveXL can do that for us.
 
-1. In your project's resources folder, create a new .xl file (or an empty text file with the .archive.xl extension)
-2. In the text file, paste the following content (delete the gender that you're not using):
+1. Switch your project browser to the `Resources` tab
+2. In the resources folder, create a new .xl file (or an empty text file with the .archive.xl extension)
+3. In the text file, paste the following content (delete the gender that you're not using):
 
 ```yaml
 resource:
