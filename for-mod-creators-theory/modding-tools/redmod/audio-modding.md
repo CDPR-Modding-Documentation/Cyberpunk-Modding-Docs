@@ -2,15 +2,17 @@
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Last documented update:** June 06 2025 by [Lizzie Kieser](https://app.gitbook.com/u/T87dp3CmmkfQfjAnlwvPxLhqCnV2)
+**Last documented update:** July 18 2025 by [Lizzie Kieser](https://app.gitbook.com/u/T87dp3CmmkfQfjAnlwvPxLhqCnV2)
 
 REDmod allows you to add new and override existing audio events. Note that any events added or overridden will use a different Wwise event, removing any special parameters and Wwise logic attached (e.g. overriding a gun sound event will result in it no longer receiving time-dilation effects processing).
+
+This will not override `.wem` files; it will instead override audio events, which are what use `.wem` files.  That way, you can override events that layer or randomize between multiple sounds without manually altering each sound.
 
 ### Audio Modding - WolvenKit Integration
 
 The REDmod sound import tool can be used in a [WolvenKit](https://github.com/WolvenKit/Wolvenkit) project.
 
-* Add the `.wav` sound files you wish to import to your **/customSounds** folder in your mod project
+* Add the `.wav` sound files you wish to import to your `/customSounds` folder in your mod project
 * Click Tools > _Sound Modding Tool_
 * In the Sound Modding Tool, choose which event to mod from the list of game sound events
 * Adjust the [parameters](audio-modding.md#parameters) in the bottom right
@@ -20,7 +22,7 @@ The REDmod sound import tool can be used in a [WolvenKit](https://github.com/Wol
 
 ### Audio Modding - Manually
 
-Place raw `.wav` audio files inside `<Cyberpunk 2077>/mods/<name>/customSounds`. Include a **info.json** file with your mod (`<Cyberpunk 2077>/mods/<name>/customSounds/info.json`) where you sepcify how to use your custom sounds. You may use nested folders with `\\` (see last entry in example).
+Place raw `.wav` audio files inside `<Cyberpunk 2077>/mods/<name>/customSounds`. Include a **info.json** file with your mod (`<Cyberpunk 2077>/mods/<name>/info.json`) where you sepcify how to use your custom sounds. You may use nested folders with `\\` (see last entry in example).
 
 #### Example
 
