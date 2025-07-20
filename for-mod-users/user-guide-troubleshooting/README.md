@@ -1348,17 +1348,7 @@ Patch 2.3 changed a lot with the new Autodrive feature, as well as changing audi
 
 ### **My menu doesn’t work properly! It’s all blank!**
 
-When you first load into your game after updating to 2.3, you will be asked to agree to the new EULA. If this pop-up and/or your main menu have no text on them, don't worry. It's a known issue. You can fix it by doing the following:\
-\
-2\. Open your game and accept the EULA\
-\
-3\. Close your game\
-\
-**If your issue was a main menu mod:** \
-\- You should be safe to reinstall your mod. Lucky you!\
-\
-**If your issue was a HUD mod:**\
-\- You _should_ also be safe to reinstall your mod, but some users have reported issues when loading a save with a mod that edits your HUD. At least you can get past the main menu now!
+When you first load into your game after updating to 2.3, you will be asked to agree to the new EULA. If this pop-up and/or your main menu have no text on them, don't worry. It's a known issue. You can fix it by doing the following:
 
 1. Uninstall _any_ mods that alter the main menu or HUD.&#x20;
 2. Open your game and accept the EULA
