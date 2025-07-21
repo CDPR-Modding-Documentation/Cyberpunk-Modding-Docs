@@ -85,7 +85,7 @@ I'm going to stress this as hard as I can: this plugin is not part of the main M
 
 <summary>Installing the plugin (must read!)</summary>
 
-1. Head over to the GitHub repository linked above and download the file `game_cyberpunk2077.py` by clicking on it, it's at the bottom of the page. **Do not download the source code.**
+1. Head over to the [GitHub repository](https://github.com/ModOrganizer2/modorganizer-basic_games/blob/master/games/game_cyberpunk2077.py) and download the file `game_cyberpunk2077.py` by clicking on the top-right three-dot menu, and clicking "Download."
 2. Place this file into `basic_games/games` which is located in the MO2 plugin folder. No need to go diving through all your folders to find it, you can find it easily:
    1.  Navigate to **Show Open Folders menu...** on the main MO2 screen.
 
