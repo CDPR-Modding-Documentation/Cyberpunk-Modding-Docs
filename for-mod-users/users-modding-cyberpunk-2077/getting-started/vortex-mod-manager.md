@@ -248,12 +248,6 @@ Before you play your game, check the bell in the top right corner next to your p
 
 Since this is your first time launching the game with mods, you should see a prompt to bind an overlay key for **Cyber Engine Tweaks** (CET). (If it does not, check [here](../../user-guide-troubleshooting/#mod-isnt-working-cet).) You can assign whatever you like, this button will hide or unhide the CET overlay.
 
-&#x20;While you have it open, you can navigate to the "Settings" option, and select "Skip Start Menu" and "Suppress Intro Movies" (if you don't want them). The setting will become active after the next restart.
-
-Make sure to click save to keep your choices.
-
-<figure><img src="../../../.gitbook/assets/Cyberpunk2077_D4HpeyOrll.png" alt=""><figcaption><p>CET overlay on the main menu screen on the Settings option.</p></figcaption></figure>
-
 ### Downloading a mod with Mod Manager Download enabled
 
 Let's get a mod that'll change something. For this example, we've picked KS UV framework, which will change V's feet.
