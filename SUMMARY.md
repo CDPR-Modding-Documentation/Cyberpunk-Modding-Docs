@@ -414,6 +414,7 @@
   * [Spinning Fans on Vehicles](modding-guides/vehicles/spinning-fans-on-cars.md)
   * [Fluid Animations for Vehicles](modding-guides/vehicles/fluid-animations-for-vehicles.md)
   * [Overheating Parts on Vehicles](modding-guides/vehicles/overheating-parts-on-vehicles.md)
+  * [Vehicle Destruction](modding-guides/vehicles/vehicle-destruction.md)
 * [World Editing](modding-guides/world-editing/README.md)
   * [World Builder](modding-guides/world-editing/object-spawner/README.md)
     * [Usage and Features](modding-guides/world-editing/object-spawner/usage-and-features.md)
