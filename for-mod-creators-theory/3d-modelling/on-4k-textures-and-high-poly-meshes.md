@@ -29,6 +29,8 @@ For that reason, extra detail is **sloppy**: most of the time, the game will hav
 
 In addition, high-resolution files are **bigger**: loading them will take longer and clog up VRAM, thus causing lags and stutters.&#x20;
 
+It will also massively slow down your workflow if you're making the mod. All the tools will take a _lot_ longer to load and process things, and will be more prone to crashing. As will your sanity.
+
 ***
 
 ## File size
@@ -100,6 +102,24 @@ As you can see, the numbers are getting bigger quickly. That's why Cyberpunk's s
 Extra polygons offer little improvement, unless the object is extremely close to the camera. If that is not the case, they can even **cause problems** by introducing visual glitches such as **tearing**.
 
 <table><thead><tr><th width="160.93939208984375">Screen Coverage</th><th width="224.36358642578125">Object Type</th><th width="213.63623046875">Typical Poly Count</th><th>Visual Return</th></tr></thead><tbody><tr><td>15%</td><td>Player Character/weapon</td><td>40,000-120,000</td><td>1.00</td></tr><tr><td>10%</td><td>NPC/Enemy</td><td>20,000-40,000</td><td>0.80</td></tr><tr><td>5%</td><td>Significant Prop</td><td>4,000-20,000</td><td>0.60</td></tr><tr><td>3%</td><td>Small Prop</td><td>1,000-4,000</td><td>0.40</td></tr><tr><td>1%</td><td>Distant Prop</td><td>&#x3C;1,000</td><td>0.20</td></tr><tr><td>0.5%</td><td>Very Distant Object</td><td>500</td><td>0.10</td></tr></tbody></table>
+
+### Workflow Issues
+
+While working with high-poly models and 8K textures might sound appealing in theory, in practice they _will_ destroy your workflow and your mental health along with it. **Everything will take more time and effort**, for basically no perceptual gains in-game. Here's why:
+
+1. If you're working with 8X the polycounts and texture resolution, it will take you _considerably_ longer to do basically anything in the modding pipeline.&#x20;
+2. More geometry will increase the likelihood that your edge flow breaks down in some places, because you are routing 8X the number of edges. It also makes it  harder to visually see where its going wrong because there are so many highlighted orange dots and lines.
+3. Skinning will be a pain. Skinning low-poly objects is easy, high-poly? not so much, because things like manual painting are very fiddly. 1 speck of paint on the wrong vertex in the wrong place = nasty deformations.
+4. If you encounter any nasty stretching/squashing/other modelling issues, it will take you that much longer to fix it.
+5. If your mesh is skinned and has physics, and you have 8 bone influences per vertex, each frame will take significantly longer to compute. That means sluggish previews, slower exports, and longer iteration times during testing and troubleshooting.
+6. Importing, exporting, baking, rendering, and previewing 8k textures takes fucking AGES. All the time you could spend iterating and hot reloading resources is spent waiting for Wkit to finish dying.&#x20;
+7. Lastly, **it ruins the joy of modding for you**, the modder. Instead of spending time editing, changing things, and learning from the process, you’re going to lose your shit to your case fans spinning up to jet turbine levels and blender crashes, hoping it's shitty autosave function saved _something._&#x20;
+
+{% hint style="warning" %}
+If you don't trust me, just make an 8K mod from scratch and find out for yourself. You've been warned:
+{% endhint %}
+
+<div align="center"><figure><img src="../../.gitbook/assets/proof.png" alt="" width="563"><figcaption></figcaption></figure></div>
 
 ### Ray tracing
 
