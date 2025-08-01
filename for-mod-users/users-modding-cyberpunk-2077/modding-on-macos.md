@@ -4,6 +4,10 @@ description: How to get mods working on the MacOS build of Cyberpunk 2077
 
 # Modding on MacOS
 
+{% hint style="danger" %}
+This guide is currently a work in progress.
+{% endhint %}
+
 {% hint style="info" %}
 ## Modding Support on MacOS (or Lack Thereof)
 
