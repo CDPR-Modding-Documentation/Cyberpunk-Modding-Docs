@@ -24,6 +24,7 @@
     * [Change logs](for-mod-users/users-modding-cyberpunk-2077/redmod/change-logs.md)
   * [Downgrading / Preventing auto-updates](for-mod-users/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
   * [Modding on Linux](for-mod-users/users-modding-cyberpunk-2077/modding-on-linux.md)
+  * [Modding on MacOS](for-mod-users/users-modding-cyberpunk-2077/modding-on-macos.md)
 * [Troubleshooting](for-mod-users/user-guide-troubleshooting/README.md)
   * [Users: Troubleshooting after a game update](for-mod-users/user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md)
   * [Users: troubleshooting requirements](for-mod-users/user-guide-troubleshooting/requirements-explained.md)
