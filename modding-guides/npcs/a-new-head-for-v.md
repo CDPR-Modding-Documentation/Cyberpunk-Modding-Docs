@@ -6,8 +6,8 @@ description: How to change V's head
 
 ## Summary
 
-**Published:** September 30 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Last documented edit: Oct 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** September 30 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Last documented edit: Oct 20 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will teach you how to edit the player head to create custom head shapes. You don't need to understand the complex parts of the process, as long as you **follow the instructions to the letter**.
 
@@ -184,6 +184,8 @@ You can now export the morphtargets.
 3. **Import** the files back into Wolvenkit via [Import Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool). This **should** simply work! If it does not, you might have to overwrite the mesh file as well - see the [morphtargets](../../for-mod-creators-theory/3d-modelling/morphtargets.md#editing-morphtargets) page for instructions.
 
 ## Step 5: Testing
+
+Now [install your mod](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and start the game.&#x20;
 
 If everything has worked, you should now be able to create a new V with your new head shape. (Loading into an existing V might cause crashes)
 
