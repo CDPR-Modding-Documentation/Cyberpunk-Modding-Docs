@@ -2,8 +2,8 @@
 
 ## Summary
 
-Published: Jan 20 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") and [IslandDancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
-Last documented edit: July 14 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention"), [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [IslandDancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention"), [CyberVesna](https://app.gitbook.com/u/cmjyzwfGm7YaRhuU9Kyk4uTuE3Y2 "mention")  and [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
+Published: Jan 20 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") and [Anthony](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
+Last documented edit: July 14 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention"), [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [Anthony](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention"), [CyberVesna](https://app.gitbook.com/u/cmjyzwfGm7YaRhuU9Kyk4uTuE3Y2 "mention")  and [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
 
 This page will tell you how to use ArchiveXL to add hair to the character creator.&#x20;
 
@@ -243,7 +243,7 @@ Since the dynamic context does not transfer to the `.mi`, we need to set the `Gr
 The `.mi` file and the `@context` are required for ArchiveXL character creator extensions. Without a .mi file, you won't have e.g. extra hair colours (e.g. [Hair Profiles CCXL](https://www.nexusmods.com/cyberpunk2077/mods/19115))
 {% endhint %}
 
-With the exception of the hair cap, the .mi file is a completely normal [material tempate file](../../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) (link not necessary for understanding this guide).&#x20;
+With the exception of the hair cap, the .mi file is a completely normal [material template file](../../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) (link not necessary for understanding this guide).&#x20;
 
 The hair cap base material is included within ArchiveXL. If you aren't using one, you don't need to know any of this — just move all properties without dynamic properties from the `.mesh` file into your `.mi`.
 
