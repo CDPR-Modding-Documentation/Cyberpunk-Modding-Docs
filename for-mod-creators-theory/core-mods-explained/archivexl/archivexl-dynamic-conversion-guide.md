@@ -95,6 +95,10 @@ New:  `*mesh_{variant.2}_{variant.1}`
 This is where file validation currently stops working (as of June 2024). If you make any mistakes here, you will always see the first mesh appearance.
 {% endhint %}
 
+{% hint style="warning" %}
+This assumes that the appearance names inside the mesh start with the prefix `mesh_`. If yours don't, you need to adjust accordingly.
+{% endhint %}
+
 ### What did we just do?
 
 * By adding a leading `*`, we told ArchiveXL that this field is involved in magic (substitution in this case)
