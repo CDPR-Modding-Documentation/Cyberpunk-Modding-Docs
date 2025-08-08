@@ -102,7 +102,7 @@ You can use any of the existing base game hair colours, as long as the definitio
 
 The template file has three `.app` files – one of them is for your hair's default appearance, one is for the `cyberware_01` appearance, and one is for the first person hair.&#x20;
 
-If you do not have a cyberware\_01 appearance, you can **delete** this file and adjust the file path under [#step-6-the-.incharactercustomization-file](ccxl-hairs.md#step-6-the-.incharactercustomization-file "mention")
+If you do not have a cyberware\_01 appearance, you can **delete** this file and adjust the file path under [#step-6-the-.inkcharactercustomization-file](ccxl-hairs.md#step-6-the-.inkcharactercustomization-file "mention")
 
 {% hint style="info" %}
 If you want to add more meshes/rigs to the template .app (for example from uuhv4), you can **duplicate** the `entSkinnedMeshComponent` and the matching `entAnimatedComponent` from the context menu.
@@ -161,7 +161,7 @@ You can define more materials here if you need them (please note the box below)
 {% hint style="warning" %}
 You have to use the exact material names that ArchiveXL is expecting, or extra hair colours won't work.
 
-For a full list, see [.](./ "mention") -> [#hair-materials](./#hair-materials "mention")
+For a full list, see [ccxl-theory-scopes-and-extensions.md](ccxl-theory-scopes-and-extensions.md "mention") -> [#hair-materials](ccxl-theory-scopes-and-extensions.md#hair-materials "mention")
 {% endhint %}
 
 Now, let's look at the materials themselves.
