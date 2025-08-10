@@ -16,7 +16,7 @@ For this guide, you will need:&#x20;
 
 * Recent version of [Blender](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/)
 * Basic modding knowledge
-* Know your ways around [Blender](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/) and have some [basic garment refiting](../../../for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques/) knowledge
+* Know your ways around [Blender](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/) and have some [basic garment refiting](../../../for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques.md) knowledge
 
 Depending on what type of garment you want to port, and from where you go it, there are multiple ways to tackle refiting it to fit Cyberpunk' bodies "A-pose"&#x20;
 

@@ -12,7 +12,7 @@ If you're totally new and totally lost in Blender, you can read [blender-getting
 
 #### **Assumed level of skill**:&#x20;
 
-You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on [Discord](https://discord.gg/redmodding) so that I can improve it.&#x20;
+You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on [Discord](https://discord.gg/redmodding) so that I can improve it.&#x20;
 
 #### **Time to complete:**&#x20;
 
@@ -50,12 +50,12 @@ It might be easier and faster to simply export the base body.&#x20;
 2. In the Wolvenkit search bar, find the base body mesh:
    * Female body gender: `base\characters\common\player_base_bodies\player_female_average\t0_000_pwa_base__full.mesh`
    * Male body gender: `base\characters\common\player_base_bodies\player_man_average\t0_000_pma_base__full.mesh`
-   * Anything else: Check [this list ](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-body.md#player-base-body)or go hunting - here's the [Wolvenkit search documentation](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files)!
-3. Check the preview to make sure that you're grabbing the right mesh, then [add it to your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
+   * Anything else: Check [this list ](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-body.md#player-base-body)or go hunting - here's the [Wolvenkit search documentation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files)!
+3. Check the preview to make sure that you're grabbing the right mesh, then [add it to your project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects).
 
 ### The suit
 
-1. In the [Mod Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser), now search for the following files:
+1. In the [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser), now search for the following files:
    * female body gender:\
      `manavortex\torso\netrunning_suit\meshes\pwa_netrunning_suit.mesh`\
      `manavortex\torso\netrunning_suit\meshes\pwa_emissive.mesh`
@@ -86,7 +86,7 @@ If you failed to export because of error messages like this one:
 
 `Message: Error while finding the file: manavortex\torso\netrunning_suit\textures_netrunning_suit.mi`
 
-then you need to uncheck [Export Materials (default)](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials-default "mention") in the export tool's settings panel
+then you need to uncheck [Export Materials (default)](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials-default "mention") in the export tool's settings panel
 
 </details>
 
@@ -153,7 +153,7 @@ Starting in version 1.5.0, the [wolvenkit-blender-io-suite](../../../for-mod-cre
 If you want to use the plugin instead of refitting by hand, make sure to select all meshes (Step 1 on the list below) before following the instructions under[wkit-blender-plugin-akl-autofitter.md](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md "mention").
 {% endhint %}
 
-We will use the Proportional Editing mode here, which leaves garment supports intact and prevents the risk of [string cheese](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices-a-puddle-on-the-floor). If you don't vibe with that, you can read up [here](../../../for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques/#sculpting) on other approaches for refitting, or refer to the [community guides](../../community-guides/) section.
+We will use the Proportional Editing mode here, which leaves garment supports intact and prevents the risk of [string cheese](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices-a-puddle-on-the-floor). If you don't vibe with that, you can read up [here](../../../for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques.md#sculpting) on other approaches for refitting, or refer to the [community guides](../../community-guides/) section.
 
 1. While still in `Object Mode`, expand both armatures (not the one with the body) and select all included meshes.
 2. Switch into Edit Mode by hitting Tab or selecting it from the dropdown at the topleft

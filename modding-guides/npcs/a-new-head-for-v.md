@@ -131,7 +131,7 @@ Save your .blend file before you start with this. In fact, save it twice. You ca
 
 You can use the **sculpt mode** to change the shape of `sculptme`  until you're satisfied.&#x20;
 
-This guide won't go into details (yet), except to tell you that the `Elastic Deform` tool is your best friend here. Check [mesh-sculpting-techniques](../../for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques/ "mention") for tips and tricks how to go about this.
+This guide won't go into details (yet), except to tell you that the `Elastic Deform` tool is your best friend here. Check [mesh-sculpting-techniques.md](../../for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques.md "mention") for tips and tricks how to go about this.
 
 <figure><img src="../../.gitbook/assets/mesh_sculpting_guide_safe_to_sculpt.png" alt="" width="375"><figcaption></figcaption></figure>
 
