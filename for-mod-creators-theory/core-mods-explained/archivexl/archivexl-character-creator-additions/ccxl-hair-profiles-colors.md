@@ -9,7 +9,7 @@ description: >-
 ## Summary
 
 Published: May 17, 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")\
-Last documented edit: [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention") on May 17, 2025
+Last documented edit: [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention") on Aug 4, 2025
 
 ### Wait, this is not what I want!
 
@@ -121,6 +121,8 @@ Open your .yaml file. Delete the old path after `atlasresourcepath:`
 
 Copy the path to your renamed/updated inkatlas file and paste it into the yaml where the old path was.&#x20;
 
+Do not update the first line to replace `modderinitials_modname` yet--we'll come back to that later!
+
 **Save** your yaml.&#x20;
 
 ***
@@ -137,7 +139,7 @@ It will open a window. Ignore the inkatlas if it says "none" underneath, it's no
 
 If there are any other files listed in the window, you have broken paths.&#x20;
 
-The first file listed is the file you need to open, and the indented list of other file(s) underneath are the paths that need to be udpated.
+The first file listed is the file you need to open, and the indented list of other file(s) underneath are the paths that need to be updated.
 
 Open any files listed and expand menus as necessary to find the incorrect file path, or right click the first header RDTDataViewModel and click "Search and Replace", searching and replacing instances of "moddername", "modderinitials", or "modname" in the project. Remember to save your files as you update any broken paths.
 
@@ -244,7 +246,7 @@ In each of the files, you can highlight everything that you want to keep, and ri
 Placeholders will be found in the following locations in each file:
 
 * .mesh - list of **appearances**
-* .inkcharcustomization files - in each appearance's **definitions** section. \
+* .inkcharcustomization files - in each appearance's **definitions** section\
   (There are up to 3 appearance sections in the PWA file and 4 in the PMA file whose definitions list you'd have to expand and delete extra placeholders from.)
 * .inkatlas - **parts** sections
 * .yaml - you must open in a text editor and delete the **entire line** of a placeholder you no longer need, including the - and any indents/spaces on that line.
@@ -325,3 +327,7 @@ You have successfully added new colors to character creator!
 ### My hair is black or blonde!
 
 * you've messed up the name of an appearance in your mesh or did not update the paths to the .mi files in your mesh
+
+### My hair colors don't work on hat hairs!
+
+* you didn't add your hair color name to the **tag** section under its definition in the inkcc. Do this for each color in each section
