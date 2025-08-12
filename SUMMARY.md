@@ -352,6 +352,7 @@
   * [Editing V's Actual In Game Animations](modding-guides/animations/creating-animations-editing-vs-actual-in-game-animations.md)
   * [Facial Animations](modding-guides/animations/facial-animations.md)
     * [AMM/Photomode: Other Facial Expressions](modding-guides/animations/animations/custom-facial-expressions.md)
+  * [Animation List](modding-guides/animations/animation-list.md)
 * [Textures, LUTs and Materials](modding-guides/textures-and-luts/README.md)
   * [Textures: Importing, editing, exporting](modding-guides/textures-and-luts/images-importing-editing-exporting.md)
   * [Textures: Custom .mlmask](modding-guides/textures-and-luts/custom-multilayermasks.md)
