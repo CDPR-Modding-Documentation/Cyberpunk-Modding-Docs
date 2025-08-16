@@ -25,6 +25,42 @@ If you want to edit other files for V, you may be able to find their paths in [c
 This guide assumes that you'll be starting from 0. If you want to use character creator options, please reference the [npv-preparing-the-head-in-blender.md](npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention") to the point where you apply all shapekeys.
 {% endhint %}
 
+<details>
+
+<summary>Wait, how does this work? Aren't my V's values in the save file?</summary>
+
+Yesn't. Your character's looks are actually a bunch of numbers. The game will translate these numbers to **offsets**, which corresponds to **morphs** (partial deforms) on the player base head.&#x20;
+
+Compared to other games like BG3, this means that Cyberpunk uses only one head mesh and lets you have a character creator. The downside is that making custom heads is slightly more involved than it is in comparable games.
+
+This guide will show you the following things:
+
+* Get the correct files into Blender
+* Apply the numeric presets from the character creator (**shapekeys**)
+* Export the files again
+* Import them back into Wolvenkit
+
+</details>
+
+## Step 0: Custom head files
+
+{% hint style="info" %}
+You only need this if you are using a custom head sculpt or EKT Character creator. Otherwise, read on under [#step-1-preparing-the-files](a-new-head-for-v.md#step-1-preparing-the-files "mention").
+{% endhint %}
+
+1. Switch the Asset Browser to the [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser)
+2. [Search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for the morphtarget files for your body gender (you can find the paths under [cheat-sheet-head](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/ "mention") -> [#head-file-paths](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/#head-file-paths "mention")):
+
+```
+base\characters\head\player_base_heads\player_female_average > .morphtarget
+base\characters\head\player_base_heads\player_man_average > .morphtarget
+```
+
+2. Add the files to your project
+3. Overwrite the files in the template project with the files you just added
+
+You now have the modded `.morphtarget` files in your project and are ready to proceed.
+
 ## Step 1: Preparing the files
 
 ### 1.1 Exporting from Wolvenkit
