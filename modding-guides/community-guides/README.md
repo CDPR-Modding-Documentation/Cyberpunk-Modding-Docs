@@ -129,3 +129,8 @@ Please see the corresponding [sub-page](external-npvs-v-as-npc-custom-npcs.md) f
 |                                                                                                              |
 | ------------------------------------------------------------------------------------------------------------ |
 | [CET dialogue popup](https://discord.com/channels/717692382849663036/807165519018459156/1024789918641311794) |
+
+## Weapon
+
+<table><thead><tr><th>Creating your own weapon with WolvenKit</th><th>Creator</th><th data-hidden></th></tr></thead><tbody><tr><td><a href="https://arca.live/b/cyberpunkmodding/143448038?category=info&#x26;p=1">Melee weapon part 1</a></td><td><a href="https://next.nexusmods.com/profile/kbjwasd?gameId=3333">kbjwasd</a></td><td></td></tr><tr><td><a href="https://arca.live/b/cyberpunkmodding/143602674?category=info&#x26;p=1">Melee weapon part 2</a></td><td><a href="https://next.nexusmods.com/profile/kbjwasd?gameId=3333">kbjwasd</a></td><td></td></tr><tr><td><a href="https://arca.live/b/cyberpunkmodding/144028914?category=info&#x26;p=1">Melee weapon part 3</a></td><td><a href="https://next.nexusmods.com/profile/kbjwasd?gameId=3333">kbjwasd</a></td><td></td></tr></tbody></table>
+

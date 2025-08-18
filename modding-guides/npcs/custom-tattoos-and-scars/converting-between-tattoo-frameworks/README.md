@@ -48,7 +48,7 @@ The earliest initial texture framework by [Halvkyrie](https://next.nexusmods.com
 
 Unique Arms utilizes the following texture uv Layouts for Arms:
 
-{% include "../../../../.gitbook/includes/untitled.md" %}
+{% include "../../../../.gitbook/includes/untitled (1).md" %}
 
 #### Texture Paths
 
