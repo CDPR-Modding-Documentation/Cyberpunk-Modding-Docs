@@ -9,7 +9,7 @@ description: >-
 ## Summary
 
 Published: May 17, 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")\
-Last documented edit: [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention") on Aug 4, 2025
+Last documented edit: [86maylin](https://app.gitbook.com/u/LhwshjuFJ4QwCwG11Ze4zIVyGqM2 "mention") on Aug 14, 2025
 
 ### Wait, this is not what I want!
 
@@ -102,6 +102,10 @@ Next, rename the **.inkatlas** and icon **.xbms** with "Update in project files"
 ***
 
 ## Step 2: Update renamed paths in files
+
+Open each of the .mi files, and edit the dynamic paths (paths with an asterisk in front) to your updated path. Make sure that the `Flags` of the path is set to `Soft` for dynamic paths.
+
+<figure><img src="../../../../.gitbook/assets/ccxl_hairprofiles_edit_mi.png" alt=""><figcaption></figcaption></figure>
 
 Open your .xl file in your text editor of choice, such as Notepad++ or Visual Studio Pro.&#x20;
 
@@ -331,3 +335,8 @@ You have successfully added new colors to character creator!
 ### My hair colors don't work on hat hairs!
 
 * you didn't add your hair color name to the **tag** section under its definition in the inkcc. Do this for each color in each section
+
+### My hair colors make the hair invisible! <a href="#my-hair-colors-dont-work-on-hat-hairs" id="my-hair-colors-dont-work-on-hat-hairs"></a>
+
+* double check the .mi files for dynamic paths that weren't updated by the rename process.
+* check ArchiveXL logs located at Cyberpunk 2077\red4ext\plugins\ArchiveXL for details.
