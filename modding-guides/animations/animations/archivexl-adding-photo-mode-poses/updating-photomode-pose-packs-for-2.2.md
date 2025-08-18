@@ -2,12 +2,12 @@
 description: How to update pose packs for Patch 2.2. and ArchiveXL 1.19
 ---
 
-# Updating Photomode Pose Packs for 2.2
+# Archived: Updating Photomode Pose Packs for 2.2
 
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published**: January 3 **by @nutboy**\
-**Last documented update:** January 4 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** January 4 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page is for both modders AND mod users who made or installed pose packs before patch 2.2 released, and want pose packs to be compatible with:
 
@@ -128,7 +128,11 @@ photo_mode.character.malePoses: &AddPosesM
 #### **2. Update NPC poses**
 
 1. If your file already has entries for the new photo mode poses, **delete** them
-2. Now, add the photo mode poses for NPCs:
+2. Now, add the photo mode poses for NPCs.
+
+{% hint style="danger" %}
+If you are on game version 2.3 or newer, go to [updating-photomode-pose-packs-for-2.3.md](updating-photomode-pose-packs-for-2.3.md "mention") for the latest version of this list, or your poses will not work with all the NPC added with the latest game patch.
+{% endhint %}
 
 ```yaml
 # ##############################################################
