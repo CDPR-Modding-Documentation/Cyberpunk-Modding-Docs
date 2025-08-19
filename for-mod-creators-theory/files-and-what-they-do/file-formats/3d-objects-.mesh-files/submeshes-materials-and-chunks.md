@@ -6,25 +6,26 @@ description: How (and why) to split up meshes
 
 ## Summary
 
-Published: January 06 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Published: January 06 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Last documented update: Aug 08 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page explains the relationship between submeshes (parts of a mesh), materials ("skins" for any given part of a mesh) and chunks (submeshes as seen from the outside).
+
+### Wait, this is not what I want!
+
+* Check the parent page [.](./ "mention") for more general informatiton
+  * In [#material-assignment](./#material-assignment "mention")you will get a general introduction and practical instructions
+  * Check the [#mesh-preview](./#mesh-preview "mention") tab to see a preview of the mesh
 
 ## Why are submeshes?
 
-In Cyberpunk, you can assign **one material per submesh**.&#x20;
-
-{% hint style="info" %}
-Material assignment is done in the .mesh file's [`appearances`](./#step-1-appearances) array via [chunkMaterials](./#chunkmaterials).&#x20;
-
-The chunkMaterial entries correspond to [material entry](./#material-entry) names.
-
-You can see which submesh is wich in the [#mesh-preview](./#mesh-preview "mention") tab.
-{% endhint %}
+A mesh consists out of multiple **parts** — you might have noticed this in Blender and wondered why CDPR split up their items like this. The reason is that each **submesh** can have a different **material** assigned, and that it is possible to hide and show them under different circumstances.
 
 At first, this seems a bit counter-intuitive, but keep in mind that Cyberpunk's entire material system is geared for **flexibility**. By altering **a single submesh material**, a black Arasaka helmet with red lights and a Hello Kitty hologram can become a black Militech helmet with red lights and a Hello Kitty hologram!
 
 <figure><img src="../../../../.gitbook/assets/chunkmasks_chunkmaterials.png" alt=""><figcaption></figcaption></figure>
 
-To learn how materials work, check the parent page: [.](./ "mention")
+To learn how materials work, check the parent page: [.](./ "mention") -> [#material-assignment](./#material-assignment "mention")
 
 <details>
 
@@ -61,7 +62,7 @@ You want red and blue glowing tubes on the example helmet.
 3. [Export](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender) the new geometry and import it into Wolvenkit
 4. Your mesh will now have **six** submeshes instead of its previous **five**
 5. For each **appearance** that you have defined, add a chunkMaterial entry. \
-   &#xNAN;_&#x49;f you skip this step, the new submesh will have no material assigned, and be invisible._
+   &#xNAN;_&#x49;f you skip this step, the new submesh will have no material assigned, and be invisible._ [_File Validation_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) _will warn you about this._
 
 ## Chunkmasks: partially hiding meshes
 
@@ -83,7 +84,7 @@ The numbers in the dropdown correspond to the submeshes: unchecking an entry wil
 You can only use chunkMasks to **hide** submeshes. If you want to conditionally **show** them, you have to use custom ArchiveXL tags (see [archivexl-tags.md](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md "mention") -> [#adding-custom-tags](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags "mention"))
 {% endhint %}
 
-To learn about hiding other items with chunkmasks, check out [#partsoverrides-hiding-chunks](../../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-hiding-chunks "mention")
+To use this on **other items**, check out [#partsoverrides-changing-other-meshes](../../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-changing-other-meshes "mention").
 
 ## How to see chunkmasks in-game?
 
@@ -92,7 +93,7 @@ You have two options, [ACM ](#user-content-fn-1)[^1]\(for NPCs, including V) and
 ### ACM
 
 {% hint style="info" %}
-You can download [Appearance Creator Mod](https://www.nexusmods.com/cyberpunk2077/mods/10795) on Nexus. It requires [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780), [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107), and all of their requirements.
+You can download [Appearance Creator Mod](https://www.nexusmods.com/cyberpunk2077/mods/10795) on Nexus. It requires [Cyber Engine Tweaks](https://www.nexusmods.com/cyberpunk2077/mods/107), [Codeware](https://www.nexusmods.com/cyberpunk2077/mods/7780), and all of its requirements.
 {% endhint %}
 
 With ACM installed, make sure that the target is under the cursor in the middle of the screen (you can use photo mode to look at V). Then, find the correct mesh/component in the UI and click on the correct button:
@@ -103,11 +104,11 @@ With ACM installed, make sure that the target is under the cursor in the middle 
 
 Find [redhottools](../../../modding-tools/redhottools/ "mention") -> [#installation-guide](../../../modding-tools/redhottools/#installation-guide "mention") for instructions on how to install this.&#x20;
 
-See [#inspecting-chunkmasks](../../../modding-tools/redhottools/#inspecting-chunkmasks "mention") for a guide.
+See [#world-inspector-watch-the-player](../../../modding-tools/redhottools/rht-the-world-inspector.md#world-inspector-watch-the-player "mention") for a guide.
 
 ## Level Of Detail (LOD)
 
-If a submesh does not end in LOD1, that means it's intended for **lower resolutions** (for example, if an object is far away).&#x20;
+If a submesh name does not end in LOD1, that means it's intended for **lower resolutions** (for example, if an object is far away).&#x20;
 
 By default, Wolvenkit [removes](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#lod-filter-default) these low-resolution meshes on export, since you don't normally want them for modded characters or items.
 

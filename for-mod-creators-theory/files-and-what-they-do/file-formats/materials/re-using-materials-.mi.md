@@ -6,13 +6,15 @@ description: Material Instances and external materials
 
 ## Summary
 
-**Published**: ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")        **Last documented update**: May 01 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published**: Apr 5 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")        **Last documented update**: Aug 12 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will teach you how .mi files work
+This guide will teach you how you can use `.mi` files to re-use materials across multiple meshes. By combining this with [archivexl-dynamic-materials.md](../../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention"), this mechanic allows **maximum flexibility**.
 
-{% hint style="info" %}
-As of May 2024, you can also use [archivexl-dynamic-materials.md](../../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention"), which is a more flexible implementation of the same basegame mechanic. However, you may want to understand this, because CDPR are using it a lot.
-{% endhint %}
+### Wait, this is not what I want!
+
+* To learn how materials work in the first place, check [3d-objects-.mesh-files](../3d-objects-.mesh-files/ "mention") -> [#material-assignment](../3d-objects-.mesh-files/#material-assignment "mention")&#x20;
+* You can find [configuring-materials](../../../materials/configuring-materials/ "mention") documented in their own wiki section
+* For examples of `.mi` files in action, check the player's [skin materials](../../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index)
 
 ## What is a material instance?
 
@@ -48,6 +50,39 @@ For a collection of example .mi files, check [manavortex's MEGA](https://mega.nz
 Instead of copy-pasting six properties, you now copy-paste only two.
 
 <figure><img src="../../../../.gitbook/assets/mi_files_the_solution.png" alt=""><figcaption><p>Only add the properties that you want to change in relation to the .mi file</p></figcaption></figure>
+
+## The Daisy Chain illustrated
+
+Look at this example of two chained .mi files:
+
+<figure><img src="../../../../.gitbook/assets/mi_file_daisy_chain_property_overwriting.png" alt=""><figcaption></figcaption></figure>
+
+### Step 1: \_emissive\_base.mi
+
+This file is an **external material instance** of `metal_base.remt`. Any [configuring-materials](../../../materials/configuring-materials/ "mention") that are **not defined** will take the default values from the **`shader template`**.
+
+* No `BaseColor` attribute is defined - the default value is `engine\textures\editor\grey.xbm`
+* `EmissiveEV > 0` makes the material **glow**
+* A white texture as the `Emissive` mask means that **all of the material** glows
+* A white [`BaseColorScale`](../../../materials/configuring-materials/tinting-textures-in-wolvenkit.md) makes the glow's color white
+
+TL;DR: Anything using this material will look like a **white** neon tube.
+
+### Step 2: emissive\_blue.mi
+
+This file is an **external material instance** of `_emissive_base.mi`. Any properties that are **not defined** will  use the defautl values from the **.mi file**.
+
+* No `EmissiveEV` is defined, so it will use the baseMaterial's value of `4.31680632`
+* No `Emissive` mask is defined, so it will take `engine\textures\editor\white.xbm` from the `.mi`
+* A  blue [`BaseColorScale`](../../../materials/configuring-materials/tinting-textures-in-wolvenkit.md) overwrites the white glow from the .mi file, changing the glow colour
+
+TL;DR: Anything using this material will look like a <mark style="color:blue;">**blue**</mark> neon tube.
+
+In other words, this is how `emissive_blue.mi` actually looks:
+
+<figure><img src="../../../../.gitbook/assets/emissive_template_expanded.png" alt=""><figcaption><p>... and everything else that's <a href="../../../materials/configuring-materials/#checking-material-properties">defined inside</a> metal_base.remt</p></figcaption></figure>
+
+
 
 ## Making material templates
 

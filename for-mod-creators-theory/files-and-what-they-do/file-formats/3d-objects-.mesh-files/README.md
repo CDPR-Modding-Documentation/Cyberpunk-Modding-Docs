@@ -9,16 +9,18 @@ description: Documentation on .mesh files and their properties.
 **Published:** ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented edit:** Sep 19 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page contains information on .mesh files and their properties.
+This page contains information on .mesh files, such as what they are, how the game loads them, and how their appearances are defined and selected.
 
 ### Wait, that's not what I want!
 
-* See [wkit-blender-plugin-import-export.md](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention") for a guide on export/import
+* To export/import meshes, see [wkit-blender-plugin-import-export.md](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention")&#x20;
+* To stop copy-pasting so much, check [archivexl-dynamic-materials.md](../../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention") or [re-using-materials-.mi.md](../materials/re-using-materials-.mi.md "mention")
 * To edit a mesh's appearance, check [changing-materials-colors-and-textures](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
   * If you just want to use a textured material, check [using-a-textured-material.md](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention")
-* To learn about mesh materials, see [textured-items-and-cyberpunk-materials.md](../../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
-* To hide parts of a mesh under different circumstances, check [first-person-perspective-fixes.md](../../../../modding-guides/items-equipment/first-person-perspective-fixes.md "mention")
-* To stop copy-pasting so much, check [archivexl-dynamic-materials.md](../../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention")
+  * For a guided exercise, see [textured-items-and-cyberpunk-materials.md](../../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
+* To hide parts of a mesh under different circumstances, check [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention") or [first-person-perspective-fixes.md](../../../../modding-guides/items-equipment/first-person-perspective-fixes.md "mention")
+
+Let's get started.
 
 ## What's a mesh?
 
@@ -54,12 +56,12 @@ Many meshes have dedicated shadow meshes, which have a much lower level of detai
 
 You can see which submesh is which in the `Mesh Preview` tab after opening the mesh file:
 
-<figure><img src="../../../../.gitbook/assets/mesh_preview_tab.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/mesh_appearances_gui_explained.png" alt=""><figcaption><p>Materials must be defined for each LOD (<a href="../../level-of-detail-lod.md">level of detail</a> — most modded items only have one)</p></figcaption></figure>
 
-With the boxes on the left, you can toggle submeshes on and off.
+With the boxes in the right panel, you can toggle submeshes on and off.
 
 {% hint style="info" %}
-Submesh numbers correspond directly to a component's [#chunkmask](../../components/#chunkmask "mention") property. For technical reasons, the chunkmask dropdown supports up to 64 entries — just ignore the missing numbers.
+Submesh numbers correspond directly to a component's [#chunkmask](../../components/#chunkmask "mention") property. Changes you make here are **not persistent** — to hide parts of an item, see [#chunkmasks-partially-hiding-meshes](submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention").
 {% endhint %}
 
 ## Material assignment
@@ -72,27 +74,25 @@ This section describes how you tell the game exactly how your mesh should look �
 
 ### Theory
 
-A mesh file has one or more **appearances**, which are used by [components](../../components/) to define how a thing looks. Think of an appearance as a full package: this shirt is black, it has red stitches, and there's an Arasaka logo on it.&#x20;
+#### Appearances
 
-In general, the game does **not** change anything about these appearances.&#x20;
+A mesh file has one or more **appearances**, which are used by [components](../../components/) to define how a thing looks. Think of an appearance as a skin for any given object: this shirt is black, it has red stitches, and there's an Arasaka logo on it.&#x20;
 
 {% hint style="info" %}
 If a Netrunner sits next to an explosion, we simply change their suit's appearance from `netrunner_suit_clean` to `netrunner_suit_dirty` and call it a day.
 {% endhint %}
 
-#### Appearances
+The base game does **not** change these appearances after they have been set up.&#x20;
+
+#### Appearance definitions
 
 Each appearance is defined by an entry in the `appearances` array at the top of the file.&#x20;
 
-Every appearance has one or more `chunkMaterials,` which correspond to the item's individual `submeshes` (the different parts it has in Blender).  These entries are selected by **name**.
+A meshMeshAppearance has one or more `chunkMaterials,` which correspond to the item's individual `submeshes` (the different parts it has in Blender).  These entries are selected by **name**.
 
 You can switch to the **Mesh Preview** tab to see those chunks. Here is how it looks:
 
-<figure><img src="../../../../.gitbook/assets/mesh_appearances_gui_explained.png" alt=""><figcaption><p>Materials must be defined for each LOD (<a href="../../level-of-detail-lod.md">level of detail</a> — most modded items only have one)</p></figcaption></figure>
-
-{% hint style="info" %}
-You can toggle chunks on and off here, but that is purely cosmetic. To hide parts of an item, see [#chunkmasks-partially-hiding-meshes](submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention").
-{% endhint %}
+<figure><img src="../../../../.gitbook/assets/mesh_appearances_gui_explained.png" alt=""><figcaption><p>You have seen this picture before ( <a data-mention href="./#mesh-preview">#mesh-preview</a>)</p></figcaption></figure>
 
 Now, where are those materials coming from?
 

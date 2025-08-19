@@ -20,10 +20,10 @@ It's important to remember that materials are simply instances of shaders. The v
 
 ### The Daisy Chain
 
-Meshes rarely use shaders directly, but instead rely on any number of [.mi files](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) (check the player's [skin materials](../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) for an example, or check [re-using-materials-.mi.md](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention") ->[#why-do-i-need-this](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md#why-do-i-need-this "mention")).&#x20;
+Meshes rarely use shaders directly, but instead rely on any number of [.mi files](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) .&#x20;
 
 {% hint style="success" %}
-If the [**baseMaterial** path](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/#materialinstance-the-local-material) ends in .mi, you're looking at a daisy chain.
+If the [**baseMaterial** path](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/#materialinstance-the-local-material) ends in .mi, you're looking at a daisy chain. Check the player's [skin materials](../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) for an example, or check [re-using-materials-.mi.md](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention") ->[#why-do-i-need-this](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md#why-do-i-need-this "mention")
 {% endhint %}
 
 This approach lets you bundle [shared properties](../configuring-materials/). If you have 30 materials with 4 properties and 3 of them never change, then it's the perfect time for a [.mi file](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md).
