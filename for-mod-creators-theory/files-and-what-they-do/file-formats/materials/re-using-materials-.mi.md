@@ -6,7 +6,7 @@ description: Material Instances and external materials
 
 ## Summary
 
-**Published**: ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")        **Last documented update**: May 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published**: ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")        **Last documented update**: May 01 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will teach you how .mi files work
 
@@ -16,7 +16,7 @@ As of May 2024, you can also use [archivexl-dynamic-materials.md](../../../../mo
 
 ## What is a material instance?
 
-A .mi file **encapsulates** a material in a **reusable** template file, which you can use a .mi file as `base material` in a [material definition](../../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-3-material-definition).
+A .mi file **encapsulates** a material in a **reusable** template file, which you can use a .mi file as `base material` in  [#material-instances](../3d-objects-.mesh-files/#material-instances "mention").
 
 It is possible to use multiple .mi files in a row. For an example of this, check the player's [skin materials](../../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index).
 
