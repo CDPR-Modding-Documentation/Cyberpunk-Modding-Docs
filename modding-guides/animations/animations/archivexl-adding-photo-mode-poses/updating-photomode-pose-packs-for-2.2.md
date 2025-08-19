@@ -1,15 +1,15 @@
 ---
-description: How to update pose packs for Patch 2.2. and ArchiveXL 1.19
+description: How to update pose packs for Patch 2.3. and ArchiveXL 1.24
 ---
 
-# Archived: Updating Photomode Pose Packs for 2.2
+# Updating Photomode Pose Packs for 2.3
 
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published**: January 3 **by @nutboy**\
 **Last documented update:** January 4 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page is for both modders AND mod users who made or installed pose packs before patch 2.2 released, and want pose packs to be compatible with:
+This page is for both modders AND mod users who made or installed pose packs before patch 2.4 released, and want pose packs to be compatible with:
 
 * new vanilla Photomode NPC
 * modded Photomode NPV added with ArchiveXL
@@ -85,9 +85,9 @@ If they don't work correctly in new Photomode even after using the scripts, it's
 You can check over the pose pack's yaml/xl for errors yourself (if you feel comfortable doing this), or ask the modder to revise it.&#x20;
 
 {% hint style="info" %}
-**I**f you're a modder who makes pose packs, you can also use these scripts on your mod's packed folder (instead of your installed mods folder) to automate updating for patch 2.2 NPCs & ArchiveXL 1.19 Photomode NPVs.&#x20;
+**I**f you're a modder who makes pose packs, you can also use these scripts on your mod's packed folder (instead of your installed mods folder) to automate updating for patch 2.3 NPCs & ArchiveXL 1.24 Photomode NPVs.&#x20;
 
-If you already updated your mod for 2.2, you can run the scripts anyway, but they won't (shouldn't) do anything that isn't empty lines.
+If you already updated your mod for 2.3, you can run the scripts anyway, but they won't (shouldn't) do anything that isn't empty lines.
 {% endhint %}
 
 ## By hand
@@ -134,38 +134,75 @@ photo_mode.character.malePoses: &AddPosesM
 If you are on game version 2.3 or newer, go to [updating-photomode-pose-packs-for-2.3.md](updating-photomode-pose-packs-for-2.3.md "mention") for the latest version of this list, or your poses will not work with all the NPC added with the latest game patch.
 {% endhint %}
 
-```yaml
-# ##############################################################
+<pre class="language-yaml"><code class="lang-yaml"># ##############################################################
 # extra NPCs: female body gender
 # ##############################################################
-photo_mode.character.altPoses: *AddPosesF
-photo_mode.character.bluemoonPoses: *AddPosesF
-photo_mode.character.evelynPoses: *AddPosesF
-photo_mode.character.hanakoPoses: *AddPosesF
-photo_mode.character.judyPoses: *AddPosesF
-photo_mode.character.lizzyPoses: *AddPosesF
-photo_mode.character.meredithPoses: *AddPosesF
-photo_mode.character.panamPoses: *AddPosesF
-photo_mode.character.purpleforcePoses: *AddPosesF
-photo_mode.character.redmenacePoses: *AddPosesF
-photo_mode.character.rogueoldPoses: *AddPosesF
-photo_mode.character.rogueyoungPoses: *AddPosesF
-photo_mode.character.songbirdPoses: *AddPosesF
-photo_mode.character.myersPoses: *AddPosesF
+photo_mode.character.alexPoses: *AddPosesFem
+photo_mode.character.altPoses: *AddPosesFem
+photo_mode.character.aurorePoses: *AddPosesFem
+photo_mode.character.bluemoonPoses: *AddPosesFem
+photo_mode.character.cheriPoses: *AddPosesFem
+photo_mode.character.clairePoses: *AddPosesFem
+photo_mode.character.dakotaPoses: *AddPosesFem
+photo_mode.character.evelynPoses: *AddPosesFem
+photo_mode.character.hanakoPoses: *AddPosesFem
+photo_mode.character.jessePoses: *AddPosesFem
+photo_mode.character.judyPoses: *AddPosesFem
+photo_mode.character.lanaPoses: *AddPosesFem
+photo_mode.character.linaPoses: *AddPosesFem
+photo_mode.character.lizzyPoses: *AddPosesFem
+photo_mode.character.meredithPoses: *AddPosesFem
+photo_mode.character.mistyPoses: *AddPosesFem
+photo_mode.character.myersPoses: *AddPosesFem
+photo_mode.character.panamPoses: *AddPosesFem
+photo_mode.character.purpleforcePoses: *AddPosesFem
+photo_mode.character.rachelPoses: *AddPosesFem
+photo_mode.character.redmenacePoses: *AddPosesFem
+photo_mode.character.reginaPoses: *AddPosesFem
+photo_mode.character.ritaPoses: *AddPosesFem
+photo_mode.character.rogueoldPoses: *AddPosesFem
+photo_mode.character.rogueyoungPoses: *AddPosesFem
+photo_mode.character.songbirdPoses: *AddPosesFem
+photo_mode.character.stellaPoses: *AddPosesFem
+photo_mode.character.wakakoPoses: *AddPosesFem
+
+<strong># ##############################################################
+</strong># extra NPCs: male body (average) gender
+# ##############################################################
+photo_mode.character.aymericPoses: *AddPosesM
+photo_mode.character.altjohnnyPoses: *AddPosesM
+photo_mode.character.dantePoses: *AddPosesM
+photo_mode.character.dinoPoses: *AddPosesM
+photo_mode.character.dumdumPoses: *AddPosesM
+photo_mode.character.garryPoses: *AddPosesM
+photo_mode.character.johnnyNPCPoses: *AddPosesM
+photo_mode.character.johnnyPoses: *AddPosesM
+photo_mode.character.kerryPoses: *AddPosesM
+photo_mode.character.muamarPoses: *AddPosesM
+photo_mode.character.sebastianPoses: *AddPosesM
+photo_mode.character.viktorPoses: *AddPosesM
+photo_mode.character.wadePoses: *AddPosesM
 
 # ##############################################################
-# extra NPCs: male body gender
+# extra NPCs: male body (bigman) gender
 # ##############################################################
-photo_mode.character.adamPoses: *AddPosesM
-photo_mode.character.johnnyNPCPoses: *AddPosesM
+photo_mode.character.dexterPoses: *AddPosesM
 photo_mode.character.goroPoses: *AddPosesM
 photo_mode.character.jackiePoses: *AddPosesM
-photo_mode.character.kerryPoses: *AddPosesM
-photo_mode.character.riverPoses: *AddPosesM
-photo_mode.character.viktorPoses: *AddPosesM
 photo_mode.character.kurtPoses: *AddPosesM
+photo_mode.character.ozobPoses: *AddPosesM
 photo_mode.character.reedPoses: *AddPosesM
-```
+photo_mode.character.riverPoses: *AddPosesM
+photo_mode.character.roycePoses: *AddPosesM
+
+# ##############################################################
+# extra NPCs: 
+# ##############################################################
+# photo_mode.character.adamSmasherPoses
+# photo_mode.character.brendanPoses
+# photo_mode.character.iguanaPoses
+# photo_mode.character.quadrupedPoses
+</code></pre>
 
 {% hint style="success" %}
 You're done! **You can now use your pose pack with Photomode NPCs & AXL Photomode NPV.**&#x20;
