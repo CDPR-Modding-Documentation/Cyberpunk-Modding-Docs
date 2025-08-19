@@ -9,7 +9,7 @@ description: >-
 ## Summary
 
 Published: May 17, 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")\
-Last documented edit: [86maylin](https://app.gitbook.com/u/LhwshjuFJ4QwCwG11Ze4zIVyGqM2 "mention") on Aug 14, 2025
+Last documented edit: [86maylin](https://app.gitbook.com/u/LhwshjuFJ4QwCwG11Ze4zIVyGqM2 "mention") on Aug 20, 2025
 
 ### Wait, this is not what I want!
 
@@ -242,6 +242,14 @@ Now that we have new hair colors, we replace the old names in all the other file
    Save, repeat for the last json.&#x20;
 
 If you had less colors than placeholders, open your files after converting back from .json.&#x20;
+
+{% hint style="warning" %}
+**Make sure the color names are unique!**
+
+A good way is by adding moddername/modname/modderinitial at the front/end of the color names.
+
+If the name is the same as another mod, it will override or be overridden!&#x20;
+{% endhint %}
 
 ### (optional) Delete extra placeholders
 
