@@ -15,7 +15,7 @@ _Last updated: 20 August 2025_
 ## Main Quests
 
 {% code overflow="wrap" fullWidth="true" %}
-```ini
+```
 [MainQuest] ep1/quests/main_quest/q300_phantom_liberty = Phantom Liberty
 [MainQuest] ep1/quests/main_quest/q301_crash = Dog Eat Dog
 [MainQuest] ep1/quests/main_quest/q301_finding_myers = Hole in the Sky
@@ -114,7 +114,7 @@ _Last updated: 20 August 2025_
 ## Side Quests
 
 {% code overflow="wrap" fullWidth="true" %}
-```ini
+```
 [SideQuest] ep1/quests/minor_quest/wst_ep1_11_bill_meeting = New Person, Same Old Mistakes
 [SideQuest] quests/meta/07_nc_underground = The Beast In Me
 [SideQuest] quests/side_quest/sq004_riders_on_the_storm = Riders on the Storm
@@ -172,7 +172,7 @@ _Last updated: 20 August 2025_
 ## Minor Quests
 
 {% code fullWidth="true" %}
-```ini
+```
 [MinorQuest] ep1/quests/minor_quest/mq033_ep1 = Tomorrow Never Knows
 [MinorQuest] ep1/quests/minor_quest/mq300_safehouse = Water Runs Dry
 [MinorQuest] ep1/quests/minor_quest/mq301_bomb = Balls to the Wall
@@ -266,7 +266,7 @@ _Last updated: 20 August 2025_
 ## Street Stories
 
 {% code fullWidth="true" %}
-```ini
+```
 [StreetStory] ep1/quests/street_stories/combat_zone_reward = Hi Ho Silver Lining
 [StreetStory] ep1/quests/street_stories/sts_ep1_01 = Gig: Dogtown Saints
 [StreetStory] ep1/quests/street_stories/sts_ep1_03 = Gig: The Man Who Killed Jason Foreman
@@ -364,7 +364,7 @@ _Last updated: 20 August 2025_
 ## CyberPsychos
 
 {% code fullWidth="true" %}
-```ini
+```
 [CyberPsycho] quests/minor_quest/ma_bls_ina_se1_07 = Cyberpsycho Sighting: The Wasteland
 [CyberPsycho] quests/minor_quest/ma_bls_ina_se1_08 = Cyberpsycho Sighting: House on a Hill
 [CyberPsycho] quests/minor_quest/ma_bls_ina_se1_22 = Cyberpsycho Sighting: Second Chances
@@ -390,7 +390,7 @@ _Last updated: 20 August 2025_
 ## Contract
 
 {% code fullWidth="true" %}
-```ini
+```
 [Contract] ep1/quests/sandbox_activities/sa_ep1_15 = sa_ep1_15
 [Contract] quests/minor_activities/badlands/se1/ma_bls_ina_se1_02 = Reported Crime: Comrade Red
 [Contract] quests/minor_activities/badlands/se1/ma_bls_ina_se1_03 = Reported Crime: Blood in the Air
@@ -446,7 +446,7 @@ _Last updated: 20 August 2025_
 ## Vehicle Quests
 
 {% code fullWidth="true" %}
-```ini
+```
 [VehicleQuest] ep1/quests/sandbox_activities/courier_outro = Courier outro
 [VehicleQuest] quests/vehicle_metaquest/arch = Nazaré "Racer"
 [VehicleQuest] quests/vehicle_metaquest/archer_quartz = Quartz EC-L r275
@@ -493,7 +493,7 @@ _Last updated: 20 August 2025_
 ## Courier Quests
 
 {% code fullWidth="true" %}
-```ini
+```
 [CourierQuest] ep1/quests/sandbox_activities/courier_test = Just Another Story
 [CourierSideQuest] ep1/quests/sandbox_activities/courier_intro_journal = Push It to the Limit
 [CourierSideQuest] ep1/quests/sandbox_activities/courier_outro_dock = Baby Let Me Take You
