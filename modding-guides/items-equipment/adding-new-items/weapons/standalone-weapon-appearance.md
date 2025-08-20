@@ -81,7 +81,7 @@ Anything with `_decal` in its name will be projected on top of the rest of the g
    2. sight (`ironsights`)
    3. magazines (`mag_std` and `mag_stdr`)
    4. receiver (`rcv`, if you have)
-2. For each of those files, open `localMaterialInstances.materials`
+2. For each of those files, open `localMaterialBuffer.materials`
 3. Find the material called default and open it
 4. Open its `values` array
 5. Find the property called MultilayerSetup and add it to your project:

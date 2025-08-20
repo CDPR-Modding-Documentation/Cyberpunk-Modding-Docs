@@ -336,7 +336,9 @@ Items.Hand_Of_Midas: -> Add this
 
 That's it, you've created a new weapon now. This weapon will look & behave exactly like the Unity handgun, but trust me, it's new.
 
-To test it out, boot up your game and load any save.
+At this stage your tweak file exists only in your mod's project folder. It can't do anything in game from there, so you will need to use the "Install" button to install your tweak file to the game directory. Then you can test it.
+
+To test it out, boot up your game and load any save.&#x20;
 
 Now open up the CET [Console](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/console/console "mention"):
 
