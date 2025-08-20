@@ -9,7 +9,7 @@ description: >-
 ## Summary
 
 Published: May 17, 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")\
-Last documented edit: [86maylin](https://app.gitbook.com/u/LhwshjuFJ4QwCwG11Ze4zIVyGqM2 "mention") on Aug 20, 2025
+Last documented edit: [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention") on Aug 19, 2025
 
 ### Wait, this is not what I want!
 
@@ -159,10 +159,10 @@ Install your mod with WolvenKit, open your game, and open Character Customizatio
 
 Now that your mod's file structure is set up, delete the placeholder .hp files in the `hair_profiles` folder and replace them with your own .hp files. &#x20;
 
-<figure><img src="../../../../.gitbook/assets/CCXL_hp_image14.png" alt=""><figcaption><p>Delete these, and add in your own</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ccxl_hp_update_001.png" alt=""><figcaption><p>Delete these, and add in your own</p></figcaption></figure>
 
 {% hint style="warning" %}
-**Make sure you've named each .hp file its own unique name.**&#x20;
+**Follow the "modderinitials\_modname\_colorname" naming convention.**&#x20;
 
 If you are converting an old hair colors replacer mod where the names are basegame hair color names, give them new unique names.
 {% endhint %}
@@ -175,7 +175,7 @@ If you are including custom gradients for the hair cap (scalp base) of hairs and
 
 There is not currently a full tutorial for how to make custom gradients, so here's a short and sweet version: You can find a basegame cap gradient such as by searching `hh_cap_grad` in WolvenKit's asset browser, add it to your project, export as PNG, then edit it in Photoshop or an image editing program of your choice to make something close to your hair colors. Once done, convert the files back from PNG to .xbm and put them in the `cap_gradients` folder.
 
-Name each of your gradient .xbms to `hh_cap_grad__color`, with "color" being the corresponding .hp color name. Make sure not to remove the extra \_ betwee "grad" and your color name. &#x20;
+Name each of your gradient .xbms to `modderinitials_modname_color`, to match your .hp file names.&#x20;
 
 ### No custom gradients? No problem
 
@@ -194,7 +194,7 @@ In WolvenKit's asset browser. Double click to add it to project.&#x20;
 
 2. Delete the template gradients by highlighting and right click deleting them.&#x20;
 
-<figure><img src="../../../../.gitbook/assets/CCXL_hp_image11.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ccxl_hp_update_002.png" alt=""><figcaption></figcaption></figure>
 
 3. Drag the black carbon gradient .xbm into your empty cap\_gradients mod folder, then delete the empty base folder from your project.
 
@@ -203,7 +203,7 @@ In WolvenKit's asset browser. Double click to add it to project.&#x20;
 4. Hover the black carbon file with your mouse, use the orange button to copy the path (or right click > Copy relative path).&#x20;
 5. In the materials folder, open your .mi file ending in `_cap` (NOT `_cap_mask)` )
 
-<figure><img src="../../../../.gitbook/assets/CCXL_hp_image9.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ccxl_hp_update_003.png" alt=""><figcaption></figcaption></figure>
 
 6. Expand values section, click **GradientMap.** In the window on the right side, paste the path to your black carbon gradient into the **DepotPath** box.&#x20;
 7. Change Flags to **default,** then **save.**
@@ -236,8 +236,9 @@ Now that we have new hair colors, we replace the old names in all the other file
    It will put the converted **.json** in your RAW folder section of the project explorer.
 2. Convert the inkatlas, and PWA/PMA inkcharcustomization files to **.json**&#x20;
 3. Open your **.json** files and your **.yaml** in a text editor such as Visual Studio Code or Notepad++ and **CTRL+F**
-4. In the search box, type the name of the first placeholder color (you can use the .yaml as reference if needed.) \
-   In the replace box, put the name of your first hair color. It must be the same name as your .hp files and same as the suffix of the gradient .xbms.&#x20;
+4. In the search box, type the name of the first placeholder color: `modderinitials_modname_bleached_aqua` \
+   In the replace box, put the name of your first hair color. It must be the same name as your .hp files/gradient .xbms. \
+   Repeat the search and replace for each color.
 5. Save your file. Tab to the next .json. Run the search and replace again. \
    Save, repeat for the last json.&#x20;
 
@@ -301,7 +302,7 @@ If you've never made custom icons or used inkatlases before, check out these art
 7. Click through each color in the definitions list, and update the `icon:` section, replacing `$(color)` with the corresponding color each time. Save your inkcharcustomization file.&#x20;
 8. Next, highlight all definitions you just updated. Right click > Copy from array buffer
 
-<figure><img src="../../../../.gitbook/assets/CCXL_hp_image25.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/ccxl_hp_update_004.png" alt=""><figcaption></figcaption></figure>
 
 9. Collapse this first `gameuiAppearanceInfo` section, then expand the next one underneath.&#x20;
 10. Right click definitions, click "Clear Array/Buffer". \
