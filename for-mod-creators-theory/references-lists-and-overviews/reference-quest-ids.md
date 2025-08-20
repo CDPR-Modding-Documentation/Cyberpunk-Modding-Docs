@@ -250,7 +250,6 @@ _Last updated: 20 August 2025_
 [MinorQuest] quests/minor_quest/mq058_semimaru_crystalcoat = Where Eagles Dare
 [MinorQuest] quests/minor_quest/mq059_freedom = Freedom
 [MinorQuest] quests/minor_quest/mq060_nitro = Nitro (Youth Energy)
-[MinorQuest] quests/minor_quest/mq402_stargazing = One More Hour 
 [MinorQuest] quests/minor_quest/mws_se5_07 = Shape of a Pony
 [MinorQuest] quests/minor_quest/mws_wat_08_trauma_drama = Career Opportunities
 [MinorQuest] quests/minor_quest/ue_metro_start = Don't Sleep on the Subway
