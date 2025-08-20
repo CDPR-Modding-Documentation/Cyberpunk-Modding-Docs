@@ -11,6 +11,8 @@ description: >-
 Published: May 17, 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")\
 Last documented edit: [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention") on Aug 19, 2025
 
+**In case you prefer visual learning, there is also a video version of this guide available here -** [**https://www.youtube.com/watch?v=yhQO5m4oqds**](https://www.youtube.com/watch?v=yhQO5m4oqds)
+
 ### Wait, this is not what I want!
 
 * To learn how to make hair profiles (hair colors), go here: [Custom Hair Colors](../../../../modding-guides/npcs/guides-all-about-hair/custom-hair-colours/)
@@ -247,9 +249,7 @@ If you had less colors than placeholders, open your files after converting back 
 {% hint style="warning" %}
 **Make sure the color names are unique!**
 
-A good way is by adding moddername/modname/modderinitial at the front/end of the color names.
-
-If the name is the same as another mod, it will override or be overridden!&#x20;
+If the name is the same as another mod, it will override the other mod or be overridden!&#x20;
 {% endhint %}
 
 ### (optional) Delete extra placeholders
