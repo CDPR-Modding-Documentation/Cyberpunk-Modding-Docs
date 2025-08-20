@@ -23,7 +23,7 @@ Technically speaking, you don't. You can [install mods manually](../#manual-inst
 {% hint style="info" %}
 If you have PTSD from modding Skyrim or Fallout with Vortex, be assured that Vortex for Cyberpunk is integrated **extremely** well. Go ahead, give it a try!
 
-If you run into issues with Vortex that aren't addressed in this guide, you can contact [Nexus support](https://wiki.nexusmods.com/index.php/Category:Vortex) or join our [Discord](https://discord.gg/redmodding) and find (volunteer) help in the #vortex-support channel.
+If you run into issues with Vortex that aren't addressed in this guide, you can contact [Nexus support](https://github.com/Nexus-Mods/Vortex/wiki) or join our [Discord](https://discord.gg/redmodding) and find (volunteer) help in the #vortex-support channel.
 {% endhint %}
 
 ## TL;DR
