@@ -3,7 +3,7 @@
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published**: August 18 2025 **by** [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention") | [Zwei Valerie](https://app.gitbook.com/u/YvPrbtYFcff1iVuhhxhlJJEYw8l1 "mention")\
-**Last documented update: August 18 2025**
+**Last documented update: August 21 2025**
 
 This page will show you how to update a pose pack to make it compatible with the new (vanilla) NPC added to Photomode with game patch 2.3.
 
@@ -49,7 +49,6 @@ photo_mode.character.wakakoPoses: *AddPosesF
 # ##############################################################
 photo_mode.character.johnnyNPCPoses: *AddPosesM
 photo_mode.character.goroPoses: *AddPosesM
-photo_mode.character.jackiePoses: *AddPosesM
 photo_mode.character.kerryPoses: *AddPosesM
 photo_mode.character.viktorPoses: *AddPosesM
 photo_mode.character.aymericPoses: *AddPosesM

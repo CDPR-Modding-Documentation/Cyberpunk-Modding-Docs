@@ -343,7 +343,7 @@
       * [Pose Making for Gonks](modding-guides/animations/animations/poses-animations-make-your-own/pose-making-for-gonks.md)
     * [ArchiveXL: adding Photo Mode Poses](modding-guides/animations/animations/archivexl-adding-photo-mode-poses/README.md)
       * [Updating Photomode Pose Packs for 2.3](modding-guides/animations/animations/archivexl-adding-photo-mode-poses/updating-photomode-pose-packs-for-2.3.md)
-      * [Updating Photomode Pose Packs for 2.3](modding-guides/animations/animations/archivexl-adding-photo-mode-poses/updating-photomode-pose-packs-for-2.2.md)
+      * [Updating Photomode Pose Packs for 2.2](modding-guides/animations/animations/archivexl-adding-photo-mode-poses/updating-photomode-pose-packs-for-2.2.md)
     * [Removing Foot Snap IK from Poses/Animations](modding-guides/animations/animations/removing-foot-snap-ik-from-poses-animations.md)
     * [Scaling Poses/Animations](modding-guides/animations/animations/scaling-poses-animations.md)
     * [Retargeting Poses/Animations](modding-guides/animations/animations/retargeting-poses-animations.md)
