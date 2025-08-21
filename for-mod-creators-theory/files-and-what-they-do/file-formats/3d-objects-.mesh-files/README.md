@@ -68,9 +68,13 @@ Submesh numbers correspond directly to a component's [#chunkmask](../../componen
 
 This section describes how you tell the game exactly how your mesh should look — the technical term for this is "material assignment". This section will hopefully remove all confusion about where those textures go, and how those pesky t-shirt appearances work.
 
+{% hint style="success" %}
+Understanding this will save you a lot of trouble in the long term, so grab a coffee or tea and understand the theory section. If you have questions, feel free to hit us up on [Discord](https://discord.com/invite/redmodding) in `#mod-development` or `#textures-and-models`.
+{% endhint %}
+
 * If you just want to know how to assign or add a new material, skip ahead to [#practice](./#practice "mention")
-* To learn more about submeshes and chunkmasks, check [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention")
 * This page only contains mesh-specific information. Find more details on materials under [materials](../../../materials/ "mention")
+* To learn more about submeshes and chunkmasks, check [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention")
 
 ### Theory
 
@@ -90,41 +94,80 @@ Each appearance is defined by an entry in the `appearances` array at the top of 
 
 A meshMeshAppearance has one or more `chunkMaterials,` which correspond to the item's individual `submeshes` (the different parts it has in Blender).  These entries are selected by **name**.
 
-You can switch to the **Mesh Preview** tab to see those chunks. Here is how it looks:
+<figure><img src="../../../../.gitbook/assets/mesh_material_assignments_dropdown.png" alt=""><figcaption><p>The dropdown menu was added in Wolvenkit 8.16.2. If that hasn't released yet, you can install a <a href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download/the-wolvenkit-nightly">Nightly</a>.</p></figcaption></figure>
+
+To see your chunks and their materials, you can switch to the **Mesh Preview** tab. Here is how it looks:
 
 <figure><img src="../../../../.gitbook/assets/mesh_appearances_gui_explained.png" alt=""><figcaption><p>You have seen this picture before ( <a data-mention href="./#mesh-preview">#mesh-preview</a>)</p></figcaption></figure>
 
-Now, where are those materials coming from?
+<details>
+
+<summary>More examples</summary>
+
+Our random example file `t1_029_wa_full__swim_turtleneck.mesh` has 16 appearances: `default`, `blue`, `golden`...
+
+Each of these appearances has three chunks per LOD. We'll look at the first three:
+
+**Blue**
+
+submesh\_00: ml\_t1\_029\_wa\_full\_\_swim\_turtleneck\_blue\_masksset\
+submesh\_01: ml\_t1\_029\_wa\_full\_\_swim\_turtleneck\_blue\_masksset\
+submesh\_02: lambert1
+
+**Golden**
+
+submesh\_00: ml\_t1\_029\_wa\_full\_\_swim\_turtleneck\_golden\_masksset\
+submesh\_01: ml\_t1\_029\_wa\_full\_\_swim\_turtleneck\_golden\_masksset\
+submesh\_02: lambert1
+
+The first two layers are different, the third one has&#x20;
+
+</details>
+
+Now, how are the materials getting into the dropdown menu?
 
 #### Definitions
 
-These materials are **defined** in the `materialEntries` list. Each `materialEntry` holds the following properties:
+These materials are **defined** in the `materialEntries` list:
 
-* the material's name (which you can use to assign chunkMaterials),
+<figure><img src="../../../../.gitbook/assets/mesh_material_assignments_materials.png" alt=""><figcaption></figcaption></figure>
+
+Each `materialEntry` holds the following properties:
+
+* the material's name (which you can use to assign **chunkMaterials**),
 * whether this is a **local** or an **external** material (more about this in [#material-instances](./#material-instances "mention") below!),
 * the index of the material instance in the corresponding list
 
+You will have noticed by now that these entries **do not hold materials**. They are only **definitions** — the actual information is somewhere else.
+
 #### Material instances
 
-**Local** material instances are situated inside the .mesh, either inside `localMaterialInstances.materials`, or in `preloadLocalMaterialInstances`.&#x20;
+A **material instance** holds the things you are actually interested in: how the mesh should look. They define the following properties:
 
-They define a base material, and configure its **properties**.&#x20;
+* `baseMaterial`:  which [shader template](../../../materials/shaders/) (`.mt`/`.remt`) will be used. Sometimes, this happens through a `.mi` file — this is an **external material** (more about this below)
+* `values`: a list of properties which pass information to the shader, for example which **diffuse texture** to use, or that the entire t-shirt should be [tinted red](../../../materials/configuring-materials/tinting-textures-in-wolvenkit.md).&#x20;
 
-The base material defines which [shader template](../../../materials/shaders/) (`.mt`/`.remt`) will be used. Sometimes, this happens through a `.mi` file — this is an **external material** (more about this later).
+{% hint style="info" %}
+Properties you define in the `values` array will always overwrite properties from the baseMaterial - if your base material is blue and the mesh says that it should be red, then the item will be red.
+{% endhint %}
 
-The `values` array holds a list of properties which pass information to the shader, for example which **diffuse texture** to use, or that the entire t-shirt should be [tinted red](../../../materials/configuring-materials/tinting-textures-in-wolvenkit.md).&#x20;
+Material instances come in two flavours (that's what the `isLocalInstance` checkbox in the material definition is for):
+
+#### Local materials
+
+These are right there in your .mesh file, and you can edit them directly. You'll find them either in `localMaterialBuffer.materials`, or in `preloadMaterialInstances`.
+
+{% hint style="info" %}
+If `preloadMaterialInstances` is empty, the list will be hidden in the easy [editor mode](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor/editor-difficulty-mode).
+{% endhint %}
 
 #### External materials
 
-**External** materials are the same as local materials, but instead of a .mesh, they're sitting inside a [`.mi` file](../materials/re-using-materials-.mi.md), so they can be re-used across multiple meshes without copy-pasting everything. &#x20;
+This is the same as a local material **inside an external file** so they can be used in multiple places.
 
 If a material is defined as external, it will be pulled in via **file path** through either `externalMaterials` or `preloadExternalMaterials`. For an example of this, take a look at hairs (e.g. `ep1\characters\common\hair\hh_201_wa__dawn\hh_121_wa__dawn.mesh`) — they do not use local materials at all. &#x20;
 
-Alternatively, you can **extend** `.mi` files by using them as the base material.
-
-{% hint style="info" %}
-Properties you define in the `values` array will always overwrite properties from the baseMaterial - if your `.mi` file is blue and you turn it red in the `.mesh`, then the item will be red.
-{% endhint %}
+You can also use these [`.mi` files](../materials/re-using-materials-.mi.md) as a base material and overwrite their properties in the **values** array. This process is called **daisy chaining** and can save you a lot of work.
 
 #### Mesh file: diagram
 
@@ -141,9 +184,9 @@ Now that you've learned how everything hangs together, let's take an actual look
 {% hint style="success" %}
 Summary:&#x20;
 
-1. **Assign** material for submesh in appearance -> chunkMaterials
-2. **Register** the material by **name** in `materialEntries`
-3. **Define** the material in either `localMaterialInstances.materials` or `externalMaterials`
+1. **Register** a material in `materialEntries`. Here's where you give it a name.
+2. **Define** the material in either `localMaterialInstances.materials` or `externalMaterials`
+3. **Assign** material for submesh in appearance -> chunkMaterials
 {% endhint %}
 
 #### Step 1: Appearances
