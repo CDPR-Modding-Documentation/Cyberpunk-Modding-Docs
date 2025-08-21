@@ -552,6 +552,7 @@ You have successfully added new eye options to character creator!
   This mod is no longer necessary, as AXL now has a built-in eye normal fix.&#x20;
 * Your mod's normals aren't pathed correctly \
   (in .mesh or .xl links if you're using multiple normals)
+* Check that your normal map was imported correctly. Open the normal .xbm, expand `setup`, and ensure that the compression is set to `TCM_Normals`. If you have multiple normal maps, export the normals then re-import with the correct settings to do it in bulk.&#x20;
 * Your mod is missing a normals file for the eyes
   * Use the `modderinitials_eyes_n.xbm` texture provided with the template project, if it looks like it will fit the shape of your eye textures\
     \
