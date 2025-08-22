@@ -103,6 +103,14 @@ Extra polygons offer little improvement, unless the object is extremely close to
 
 <table><thead><tr><th width="160.93939208984375">Screen Coverage</th><th width="224.36358642578125">Object Type</th><th width="213.63623046875">Typical Poly Count</th><th>Visual Return</th></tr></thead><tbody><tr><td>15%</td><td>Player Character/weapon</td><td>40,000-120,000</td><td>1.00</td></tr><tr><td>10%</td><td>NPC/Enemy</td><td>20,000-40,000</td><td>0.80</td></tr><tr><td>5%</td><td>Significant Prop</td><td>4,000-20,000</td><td>0.60</td></tr><tr><td>3%</td><td>Small Prop</td><td>1,000-4,000</td><td>0.40</td></tr><tr><td>1%</td><td>Distant Prop</td><td>&#x3C;1,000</td><td>0.20</td></tr><tr><td>0.5%</td><td>Very Distant Object</td><td>500</td><td>0.10</td></tr></tbody></table>
 
+### Quad Overdraw
+
+GPUs don't handle pixels individually, but split them into **quads** (groups of 2x2 pixels). Overdraw is when multiple quads are competing for the same pixels.&#x20;
+
+Even if the visibility only affects one pixel, the GPU still processes the entire quad, wasting up to three pixels per quad.
+
+It might sound trivial, but the quad overdraw **adds up**. That's why a clean topology is important, and why you should make high-poly meshes **game ready** before releasing your mods.
+
 ### Workflow Issues
 
 While working with high-poly models and 8K textures might sound appealing in theory, in practice they _will_ destroy your workflow and your mental health along with it. **Everything will take more time and effort**, for basically no perceptual gains in-game. Here's why:
