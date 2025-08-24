@@ -16,22 +16,33 @@ If you are using one of the existing in-game brands, you can skip this step and 
 
 1. Find the file that is referenced in your record's `UIIcon.Brand_Logo`  and add it to your project (e.g. `base\gameplay\gui\common\icons\weapon_manufacturers.inkatlas` ).
 2. Open the file, and find the .xbm referenced in `slots[0]` > `texture`&#x20;
-3. Add this file to your project as well
-4. Copy the texture path from `slot[1]`  to `slot[1]` (they should be using the same texture)
+3. Add this file to your project as well (`base\gameplay\gui\common\icons\weapon_manufacturers.xbm`)
+4. Copy the texture path from `slot[0]`  to `slot[1]` (they should be using the same texture)
 5. Save the inkatlas and close it
-6. Now, [move](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#rename) the xbm (use Wolvenkit's rename dialogue, and check the box)
-7. Repeat the process for the .inkatlas. The paths should update automatically, you should now have something like this:
+6. Now, [move](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#rename) the `xbm` (use Wolvenkit's rename dialogue, and check the box)
+7. Repeat the process for the `.inkatlas`. The paths should update automatically, you should now have something like this:
 
 <figure><img src="../../../.gitbook/assets/inkatlasupdate.PNG" alt=""><figcaption></figcaption></figure>
 
-8.  Now update the tweak: `UIIcon.Brand_Logo:` part of your yaml with the new atlasResourcePath.\
-    Example:
+#### Using local files
 
-    <pre><code>UIIcon.Brand_Logo:
-    <strong>  atlasResourcePath: boe6\mini_cooper\assets\logos.inkatlas
-    </strong></code></pre>
+To make sure that your car uses the local files, make sure that your .yaml contains all of the following (the third block should be new):
 
-That's it - your car should now use your local files.
+<pre class="language-yaml"><code class="lang-yaml"><strong>Vehicle.your_vehicle
+</strong>  ...
+  manufacturer: Vehicle.Brand
+    
+Vehicle.Brand:
+  $type: VehicleManufacturer_Record
+  enumName: Brand_Logo
+
+UIIcon.Brand_Logo:
+  $type: UIIcon_Record
+  atlasResourcePath: boe6\mini_cooper\assets\logos.inkatlas
+  atlasPartName: mini
+</code></pre>
+
+That's it - your car should now use your local files. You can check this by removing the `atlasPartName` line and checking if you still have a logo, or leave it in and check that you don't.
 
 ### Step 2: Editing your texture
 
@@ -62,27 +73,6 @@ This part is optional.
 <figure><img src="../../../.gitbook/assets/cleanslotsooooohyeah.PNG" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/niceclipping.PNG" alt=""><figcaption><p>Notice how the edges of the rectangle match the limits of the logo width/height</p></figcaption></figure>
-
-### Step 3: Updating the .yaml
-
-We need to register the new car vendor in your .yaml file. Append the following lines:
-
-```yaml
-Vehicle.your_vehicle
-  ...
-  manufacturer: Vehicle.Brand
-    
-Vehicle.Brand:
-  $type: VehicleManufacturer_Record
-  enumName: Brand_Logo
-
-UIIcon.Brand_Logo:
-  $type: UIIcon_Record
-  atlasResourcePath: boe6\mini_cooper\assets\logos.inkatlas
-  atlasPartName: mini
-```
-
-Your vehicle will now use the brand `Vehicle.Brand`, which will use the logo that you defined below.
 
 Save and test.
 
