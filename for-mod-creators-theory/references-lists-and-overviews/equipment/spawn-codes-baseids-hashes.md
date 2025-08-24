@@ -31,7 +31,7 @@ We're finding the item **by name**. If you don't even know that much, check the 
 {% endhint %}
 
 1. Head to the [fandom wiki](https://cyberpunk.fandom.com/wiki) and search for your item. For this guide, we'll be using the `Reinforced Puffer Vest`.
-2. In the box on the left, find the Technical section. This will list your base ID:
+2. In the box on the right, find the **Technical** section. This will list your base ID:
 
 <figure><img src="../../../.gitbook/assets/spawn_codes_fandom_wiki_technical.png" alt="" width="298"><figcaption></figcaption></figure>
 
@@ -68,16 +68,17 @@ If you can't find any files with the method below, scroll to [#alternative-metho
 ### Step 3: Finding the mesh
 
 1. Inside the .app file, open the `appearances` array
-2. You will see something like this:
+2. You will see something like this. The suffices are for body gender and camera mode:
 
 <figure><img src="../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
-3. Ignore camera mode and open the appearance that you want (`basic_02_w`)
+3. Find the appearance you want (`basic_02_w` or `basic_02_m`) and open it.&#x20;
 4. Open the `components` array and find the component that has `mesh` in its name:
 
 <figure><img src="../../../.gitbook/assets/finding_items_mesh_file.png" alt=""><figcaption></figcaption></figure>
 
-5. You want mesh file's `DepotPath`. This is where Wolvenkit stores the 3d object, which contains the materials.
+5. You want mesh file's `DepotPath`. \
+   &#xNAN;_&#x59;ou can learn more about_ [3d-objects-.mesh-files](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention")_, but it's not necessary for this guide_
 
 <figure><img src="../../../.gitbook/assets/finding_items_mesh_appearance.png" alt=""><figcaption><p>While basic_01 uses the default appearance, this one uses <strong>bbstripes</strong></p></figcaption></figure>
 
