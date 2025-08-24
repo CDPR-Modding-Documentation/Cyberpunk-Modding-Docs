@@ -4,7 +4,6 @@
 * [The Wiki](the-wiki/README.md)
   * [Editing guidelines](the-wiki/editing-guidelines/README.md)
     * [Page Header: Summary](the-wiki/editing-guidelines/page-header-summary.md)
-    * [\[Shared\] wiki: editing text blocks](the-wiki/editing-guidelines/shared-wiki-editing-text-blocks.md)
 * [Glossary](glossary.md)
 
 ## For Mod Users:
@@ -417,6 +416,7 @@
   * [Chassis Modifications](modding-guides/vehicles/chassis-modifications.md)
   * [Weaponizing vehicles](modding-guides/vehicles/weaponizing-vehicles/README.md)
     * [Windows & Doors opening + MountedWeapons clue](modding-guides/vehicles/weaponizing-vehicles/windows-and-doors-opening-+-mountedweapons-clue.md)
+    * [Vehicle Weapon Variants (A, B, C)](modding-guides/vehicles/weaponizing-vehicles/vehicle-weapon-variants-a-b-c.md)
   * [Spinning Fans on Vehicles](modding-guides/vehicles/spinning-fans-on-cars.md)
   * [Fluid Animations for Vehicles](modding-guides/vehicles/fluid-animations-for-vehicles.md)
   * [Overheating Parts on Vehicles](modding-guides/vehicles/overheating-parts-on-vehicles.md)
