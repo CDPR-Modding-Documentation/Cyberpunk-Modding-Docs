@@ -57,7 +57,7 @@ You will see three components listed under “components”.
 
 All three of these components are needed for CrystalCoat to function.
 
-![](<../../.gitbook/assets/0 (3).png>)
+![](<../../.gitbook/assets/0 (1).png>)
 
 Open your vehicle’s entity file, and delete any of the existing components with the same names as these (there could be a total of three, one of each).
 
@@ -87,7 +87,7 @@ For Secondary color:
 
 Set its value to “engine\textures\editor\white.xbm”
 
-![](<../../.gitbook/assets/1 (6).png>)
+![](<../../.gitbook/assets/1 (1).png>)
 
 In the reference picture you can see four extra entries under the “values” array: “CoatTintFwd”, “CoatTintSide”, “CoatSpecularColor”, and “Opacity”. These mainly affect the paint of the car when CrystalCoat is not in use (the base paint). They’re optional, but highly recommended. Create these entries and assign them the exact same values if you wish to include them.
 
@@ -97,7 +97,7 @@ Now go back to your vehicle’s entity file.
 
 Remember those three components you copied to your entity file? We will now be dealing with just “vehicleVisualCustomization”. The other two can remain untouched.
 
-![](<../../.gitbook/assets/2 (5).png>)
+![](<../../.gitbook/assets/2 (1).png>)
 
 Expand “vehicleVisualCustomization”.
 
@@ -105,7 +105,7 @@ Expand “effectDescs”.
 
 Here you will see a list of entEffectDescs. Think of these as groups. For now, ignore “vvc\_color\_rims” and “vvc\_color\_rims\_instant”. We will only deal with the other three: “vvc\_color”, “vvc\_color\_instant”, and “vvc\_damage\_glitch”.
 
-![](<../../.gitbook/assets/3 (6).png>)
+![](<../../.gitbook/assets/3 (1).png>)
 
 This next process will be identical for all three of these entries, so I will guide you through one of them; being “vvc\_color”.
 
@@ -121,7 +121,7 @@ Under “componentNames”, you will see an entry named “xxx”. Here you will
 * 1 = hood
 * 2 = trunk
 
-![](<../../.gitbook/assets/4 (7).png>)
+![](<../../.gitbook/assets/4 (1).png>)
 
 You may add up to 16 entries under “componentNames”. If you create more than 16 entries under “componentNames”, your game will crash on load.
 
@@ -133,7 +133,7 @@ On the top right window of WolvenKit, you will see an entry named “componentIn
 
 Expand the dropdown box. You will see a list of empty checkboxes. We added three components named “body”, “hood”, and “trunk” under “componentNames”. Since we added three entries, we will check the top three boxes, starting from “0”.
 
-![](<../../.gitbook/assets/5 (5).png>)
+![](<../../.gitbook/assets/5 (1).png>)
 
 If you added more entries, check the same amount of checkboxes as the number of components you added.
 
@@ -159,7 +159,7 @@ Under the your vehicle’s record id entry, add these five entries:
 
 Under “excludedComponentsGeneric:”, add a list of every component that you created in your vehicle entity file under “vvc\_color\_xxx” -> compiledEffectInfo -> componentNames.
 
-![](<../../.gitbook/assets/6 (7).png>)
+![](<../../.gitbook/assets/6 (1).png>)
 
 ### Profit <a href="#wx28anr763wa" id="wx28anr763wa"></a>
 

@@ -7,13 +7,13 @@ description: >-
 # Vortex Mod Manager
 
 {% hint style="danger" %}
-#### Windows 10 or higher is required to use Vortex mod manager. If you are not using Windows, see our Manual Install page.
+**Windows 10 or higher is required to use Vortex mod manager. If you are not using Windows, see our Manual Install page.**
 {% endhint %}
 
 Vortex is a multi-game mod manager developed for and by [NexusMods](https://www.nexusmods.com/), the website where most [Cyberpunk 2077 mods](https://www.nexusmods.com/cyberpunk2077) are hosted. Here you can download mods manually or with Vortex and keep track your download history.
 
 {% hint style="info" %}
-To use Vortex, you need an account there. If you don't have one, you can sign up [here](https://users.nexusmods.com/register) – don't worry, it's free.
+To use Vortex, you need an account there. If you don't have one, you can sign up [here](https://users.nexusmods.com/register) – don't worry, it's free.
 {% endhint %}
 
 ## Why do I need this?
@@ -34,7 +34,7 @@ If you run into issues with Vortex that aren't addressed in this guide, you can 
 
 ## Download
 
-&#x20;Once you are signed in on Nexus, it's time to download Vortex Mod Manager.
+Once you are signed in on Nexus, it's time to download Vortex Mod Manager.
 
 {% hint style="info" %}
 If you can download it on your own, you can skip to the [Install](vortex-mod-manager.md#installation) or [Setup](vortex-mod-manager.md#setup) section of this guide.
@@ -69,7 +69,7 @@ Congrats! You've finished installation! Vortex should launch automatically and y
 
 ## Setup
 
-Here is where we get into the weeds, the particulars of Vortex setup before we can use it.&#x20;
+Here is where we get into the weeds, the particulars of Vortex setup before we can use it.
 
 {% hint style="info" %}
 If you can setup Vortex on your own, skip to the [Settings](vortex-mod-manager.md#settings) section of this guide. (Why are you reading this?)
@@ -82,7 +82,7 @@ If you are already logged in, proceed to the next section "[Adding Cyberpunk](vo
 1. If Vortex didn't open by itself, open it from the start menu.
 2. Log into Nexusmods by clicking on the red circle in the top right of your client
 
-<figure><img src="../../../.gitbook/assets/4 (1).png" alt=""><figcaption><p>The initial dashboard on launch</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (1) (1).png" alt=""><figcaption><p>The initial dashboard on launch</p></figcaption></figure>
 
 3. You will see either a browser window or an error message that Vortex couldn't open one – in this case, copy the URL in the box at the bottom and open the browser window yourself
 
@@ -112,7 +112,7 @@ This section will tell you how to add Cyberpunk to Vortex's managed games.
 <figure><img src="../../../.gitbook/assets/qwMyrKkBeA.png" alt=""><figcaption><p>The games page, with the extension dialogue open</p></figcaption></figure>
 
 6. The extension should download automatically
-7. You need to restart Vortex – agree to the prompt.
+7. You need to restart Vortex – agree to the prompt.
 8. Optional: If Vortex was able to auto-detect your game install, you are done now and can proceed with the [Settings](vortex-mod-manager.md#settings) section.
 9. Vortex will tell you that it couldn't detect your game install and prompt you to set it manually. Click "Continue".
 10. In the explorer window that now pops up, navigate to the folder containing your Cyberpunk exe (e.g. `C:\Games\Cyberpunk 2077\bin\x64`)
@@ -136,7 +136,7 @@ This section controls how Vortex looks and behaves. If this is your first time u
 
 #### Interface -> Automation
 
-The settings here tell Vortex what to do with your mods as it gets them.&#x20;
+The settings here tell Vortex what to do with your mods as it gets them.
 
 Here's a screenshot of the recommended settings with an explanation below:
 
@@ -175,7 +175,7 @@ This folder
 * **must not** be your [game install directory](../the-cyberpunk-2077-game-directory/)
 {% endhint %}
 
-Where Vortex keeps its mods, ready to deploy them into the Cyberpunk game directory.&#x20;
+Where Vortex keeps its mods, ready to deploy them into the Cyberpunk game directory.
 
 The default folder location is `{USERDATA}\{GAME}\mods`, which resolves to `C:\Users\YourUsername\AppData\Roaming\Vortex\cyberpunk2077\mods`
 
@@ -185,13 +185,13 @@ You can keep it as this, or you can make a folder for it in a place you can easi
 
 #### Mods: Download
 
-Where Vortex stores downloaded archives. Can be wherever you like, even on a different drive.&#x20;
+Where Vortex stores downloaded archives. Can be wherever you like, even on a different drive.
 
-We recommend keeping an extra folder in there for manually downloaded mods, as Vortex can manage these as well – you just have to drag-and-drop them into the client.
+We recommend keeping an extra folder in there for manually downloaded mods, as Vortex can manage these as well – you just have to drag-and-drop them into the client.
 
 ### Dashboard
 
-Finally, we will return to our dashboard.&#x20;
+Finally, we will return to our dashboard.
 
 No matter what settings you chose in interface, you should still have a section labeled "Tools", where at this point you should at least see four things, the last of which will be disabled:
 
@@ -199,7 +199,7 @@ No matter what settings you chose in interface, you should still have a section 
 
 It can be helpful here to toggle "Enable Toolbar" above it so that you can always see them wherever you are in Vortex.
 
-These are different options to launch the game via Vortex.&#x20;
+These are different options to launch the game via Vortex.
 
 {% hint style="success" %}
 Click on the three dots next to "Launch Game with REDmods Enabled" and set it as primary. This will make Vortex pick this option when you click on the Cyberpunk 2077 picture on the far left.
@@ -253,10 +253,10 @@ Since this is your first time launching the game with mods, you should see a pro
 Let's get a mod that'll change something. For this example, we've picked KS UV framework, which will change V's feet.
 
 {% hint style="info" %}
-Usually, you want to start at the description page to see the exact file that you need to download. For a detailed guide on the parts of a mod page and how to navigate Nexus, see our Downloading Mods section.&#x20;
+Usually, you want to start at the description page to see the exact file that you need to download. For a detailed guide on the parts of a mod page and how to navigate Nexus, see our Downloading Mods section.
 {% endhint %}
 
-For now, you can simply go straight to the [Files](https://www.nexusmods.com/cyberpunk2077/mods/3783?tab=files) page of the KSUV mod.&#x20;
+For now, you can simply go straight to the [Files](https://www.nexusmods.com/cyberpunk2077/mods/3783?tab=files) page of the KSUV mod.
 
 <figure><img src="../../../.gitbook/assets/firefox_fTsoyV0ZuQ.png" alt=""><figcaption><p>The example mod's "Mod Manager Download" button</p></figcaption></figure>
 
@@ -264,7 +264,7 @@ So that you can see the changes in-game immediately, to know if you've installed
 
 Once your timer counts down, it should begin downloading in Vortex. The setting "Bring Vortex to foreground when starting downloads in browser" is enabled by default, so if you didn't change it, the Vortex window should pop up now. Otherwise, click over to it, and you should be able to see a 1 next to Downloads in the sidebar.
 
-Assuming you're using recommended settings, the mod won't have installed itself, so you will click on "Mods" in the left sidebar. You should already have mods installed, enabled, and downloaded from the collection. Scroll down until you locate the blue "Never Installed" button next to the mod you want to install. Click it once, and if you're using recommended settings, it should enable and deploy automatically.&#x20;
+Assuming you're using recommended settings, the mod won't have installed itself, so you will click on "Mods" in the left sidebar. You should already have mods installed, enabled, and downloaded from the collection. Scroll down until you locate the blue "Never Installed" button next to the mod you want to install. Click it once, and if you're using recommended settings, it should enable and deploy automatically.
 
 For this mod, a window will pop up, warning you that it may need manual adjustment, due to multiple .archive files. These are important windows to pay attention to, because many mods that have multiple files _do_ require manual adjustment. This information is usually found on the description page, which is why you want to read it carefully before download.
 
@@ -284,8 +284,8 @@ Let's install a mod without a mod manager download button and manage it in Vorte
 Mod authors sometimes disable mod manager integration for a variety of reasons. Usually, Vortex can handle these files just fine – if not, it will complain about it, and loudly so.
 {% endhint %}
 
-1. Click [this link](https://www.nexusmods.com/cyberpunk2077/mods/6072), which will take you straight to the files tab.&#x20;
-2. Select whichever one you like, like the "Arey", third option down.&#x20;
+1. Click [this link](https://www.nexusmods.com/cyberpunk2077/mods/6072), which will take you straight to the files tab.
+2. Select whichever one you like, like the "Arey", third option down.
 3. Optional: Check what it looks like
    1. Click on the "images" tab (to the right of "files")
    2. Find the picture named "Arey"
@@ -300,8 +300,8 @@ Mod authors sometimes disable mod manager integration for a variety of reasons. 
 <figure><img src="../../../.gitbook/assets/image (145).png" alt=""><figcaption><p>The naming convention tells us that it's a hair replacer from Wingdeer for the female body gender, changing hair 48, There's also a preview picture included.</p></figcaption></figure>
 
 6. Manually download the file – you know the drill by now.
-7. Return to the Vortex "mods" page. You have two ways to install the mod now:&#x20;
-   * Drag-and-drop the downloaded file on your client, or&#x20;
+7. Return to the Vortex "mods" page. You have two ways to install the mod now:
+   * Drag-and-drop the downloaded file on your client, or
    * use "Install From File" in the orange bar and select the file you just downloaded in the explorer window that pops up
 
 <figure><img src="../../../.gitbook/assets/Vortex_IQf9zJTfPr.png" alt=""><figcaption><p>The "Install From File" button</p></figcaption></figure>
@@ -310,7 +310,7 @@ Mod authors sometimes disable mod manager integration for a variety of reasons. 
 9. If you have used the recommended settings, it should enable and deploy automatically. Otherwise, you need to do that yourself.
 10. Start the game
 11. Head to the character creator and create a female-bodied V.
-12. Check hair 48 – normally, it looks like this:
+12. Check hair 48 – normally, it looks like this:
 
 <figure><img src="../../../.gitbook/assets/original.png" alt=""><figcaption><p>Vanilla hair 48</p></figcaption></figure>
 
@@ -319,10 +319,3 @@ If your hair is two big buns--you did it! If it's just the normal single bun wit
 <figure><img src="../../../.gitbook/assets/Cyberpunk2077_pqEv0Cw6wV.jpg" alt=""><figcaption><p>Arey hair in place of hairstyle 48</p></figcaption></figure>
 
 Congratulations! You know how to use Vortex!
-
-
-
-
-
-
-

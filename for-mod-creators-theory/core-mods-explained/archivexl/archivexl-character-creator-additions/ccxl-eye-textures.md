@@ -8,8 +8,8 @@ description: >-
 
 ### Summary
 
-Published: Aug 9, 2025  by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention") | [island\_dancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
-Last documented edit: Aug 19, 2025 by [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention")
+**Published:** Aug 9, 2025  by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention") | [island\_dancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
+**Last documented edit**: Aug 24, 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")&#x20;
 
 #### Wait, this is not what I want!
 
@@ -370,8 +370,6 @@ If you have an eye design with one name, but multiple sclera options, you can us
 
 Substitute "**scleracolor**" for your sclera colors, and "**eyename**" for whatever you've named your eyes option(s).
 
-If you  follow this convention, it will make it easier when we're [adding our custom icons](ccxl-eye-textures.md#step-6-add-custom-icons) a few steps below. &#x20;
-
 </details>
 
 **Example:** I named my texture "eyename"s to **blurple**, **green\_goblin**, **pink\_panther,** and I have two options of each texture for **white** sclera and **black** sclera.
@@ -422,10 +420,9 @@ Now that we have added your new eye textures with their new names, we need to up
 1. Duplicate your last definitions entry and rename it to match the next appearance in your mesh
 2. Repeat until there is an entry for every appearance option in your mesh
 3. Highlight all the new definitions you added manually and right click > Copy from Array/Buffer
-4. Expand the second **gameuiAppearanceInfo** entry below the one you just edited&#x20;
-5. Right click the **definitions** array and select Paste into Array/Buffer&#x20;
+4. Right click the **definitions** array and select Paste into Array/Buffer&#x20;
 
-You should now have the same number of definitions in each **gameuiAppearanceInfo** section and the same number in your patch.mesh appearances list, all with matching names.
+You should now have the same number of definitions your **gameuiAppearanceInfo** section and the same number in your patch.mesh appearances list, all with matching names.
 
 </details>
 
@@ -434,9 +431,6 @@ You should now have the same number of definitions in each **gameuiAppearanceInf
 <summary><em>(optional)</em> If you have less appearances than placeholders</summary>
 
 1. Highlight all extra placeholders definitions and right click > Delete Item in Array/Buffer
-2. Expand the second **gameuiAppearanceInfo** entry below the one you just edited
-3. Expand the **definitions** section
-4. Highlight all extra placeholders definitions and right click > Delete Item in Array/Buffer
 
 </details>
 
