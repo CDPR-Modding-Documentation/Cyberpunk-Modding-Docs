@@ -66,6 +66,10 @@ All the hotkeys from the main tree view are still available, such as right click
 * Numeric input: After enabling editing (Rotate / Scale), input numeric values (Supports decimal and negative) to rotate / scale by that amount (Scale is applied as multiplier, rotation is relative)
   * E.g. `R + Z + 90 + LMB / Enter` will rotate the object by 90 on the `Z` axis and confirm the edit
 
+{% hint style="success" %}
+Press `RMB` to cancle any changes
+{% endhint %}
+
 <figure><img src="../../../.gitbook/assets/OSMoveControls" alt="" width="375"><figcaption><p>Example of the basic transforms</p></figcaption></figure>
 
 ## Spawning things

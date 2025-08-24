@@ -39,10 +39,6 @@ Hover the `I` icon in the top toolbar, to get a list of all hotkeys available
 
 <figure><img src="../../../.gitbook/assets/orga.gif" alt="" width="375"><figcaption><p>Add group, drag and drop, range select, and finally CTRL-G hotkey</p></figcaption></figure>
 
-{% hint style="success" %}
-In order to save what you have built, it needs to be inside a group
-{% endhint %}
-
 * Make a new group by hitting the "Add group" button
 * Rename the group by double-clicking its entry (This works for everything)
 * Now lets move what you have spawned so far into the group:
@@ -58,6 +54,14 @@ Use groups inside groups to further organize your build
 * You can also bring up a context menu by right-clicking an element:
 
 <figure><img src="../../../.gitbook/assets/OSContextMenu" alt="" width="249"><figcaption><p>Tip: Bring up the context window of a group, then select "Set as "Spawn new" group"</p></figcaption></figure>
+
+## Saving things
+
+* A root group is a group which is not part of another group
+
+{% hint style="success" %}
+In order to save what you have built, it needs to be inside a root-group
+{% endhint %}
 
 ## Moving things
 
