@@ -1,3 +1,7 @@
+---
+description: Redmod allows you to add new and edit existing audio events.
+---
+
 # Audio Modding: Redmod
 
 ## Summary <a href="#summary" id="summary"></a>
