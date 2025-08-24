@@ -14,7 +14,7 @@ This page contains an overview on weapon property records and explains their pro
 #### Wait, this is not what I want!
 
 * For a full dump of all base stats, check [cheat-sheet-base-stats.md](../cheat-sheet-base-stats.md "mention")
-* If you're looking for a guide to add weapons, check [weapons](../../../../modding-guides/items-equipment/adding-new-items/weapons/ "mention") or  [new-iconic-weapon-tutorial-for-dummies.md](../../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
+* If you're looking for a guide to add weapons, check [weapons](../../../../modding-guides/items-equipment/adding-new-items/weapons/ "mention") or  [new-iconic-weapon-step-by-step.md](../../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention")
 * For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](cheat-sheet-weapon-audio.md "mention")
 * For an overview of weapons and their .ent files, check [weapons.md](../../equipment/weapons.md "mention")
 

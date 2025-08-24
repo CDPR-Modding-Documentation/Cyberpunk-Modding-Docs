@@ -6,15 +6,15 @@ description: Weapon IDs and the tweaks they use
 
 ## Summary
 
-**Created:** Apr 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Apr 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Created:** Apr 01 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Apr 01 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page collects tweak IDs (and their description) for iconic wepaons, grouped by weapon type
 
 ### Wait, this is not what I want!
 
 * To learn what Tweaks are, check [tweaks](../../../tweaks/ "mention")
-* To learn more about this, check [new-iconic-weapon-tutorial-for-dummies.md](../../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention") ->[#step-12-making-an-iconic-mod-special-ability](../../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#step-12-making-an-iconic-mod-special-ability "mention")
+* To learn more about this, check [new-iconic-weapon-step-by-step.md](../../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention") ->[#step-12-making-an-iconic-mod-special-ability](../../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#step-12-making-an-iconic-mod-special-ability "mention")
 * To look up iconic modifiers, open `Cyberpunk 2077\tools\redmod\tweaks` and check\
   `base\gameplay\static_data\database\items\weapons\parts\iconic_mods.tweak`
 * More intel on [#browsing-the-tweakdb](../../../tweaks/tweaks/#browsing-the-tweakdb "mention")

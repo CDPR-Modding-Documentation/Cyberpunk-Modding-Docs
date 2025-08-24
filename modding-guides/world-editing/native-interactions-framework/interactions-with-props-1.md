@@ -17,7 +17,7 @@ Make sure to familiarize yourself with the topics described in the `Knowledge Re
 * Know how to work with [World Builder](../object-spawner/), including:
   * [Building ](../object-spawner/quick-start.md)and [exporting](../object-spawner/exporting-from-object-spawner.md)
   * [Entity Instance Data](../object-spawner/features-and-guides/entity-instance-data.md) editing
-* Adding custom [LocKey's](../../items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#so-we-edit-onscreens.json)
+* Adding custom [LocKey's](../../items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#so-we-edit-onscreens.json)
 * Adding [custom images and creating inkAtlas](../../custom-icons-and-ui/adding-items-preview-images/#generating-the-inkatlas)
 * Importing [custom videos](../../everything-else/breach-screen-replacer.md#convert-your-mp4-video-file)
 
@@ -32,7 +32,7 @@ Make sure to familiarize yourself with the topics described in the `Knowledge Re
   * This fact will be set to 1 once the apartment is purchased
 * **Apartment Name**:
   * This is the main-displayed name of the apartment (On the map, tutorial and messages)
-  * This is a **LocKey**, you can either use WolvenKit's [LocKey Browser](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/lockey-browser) to find existing ones, or [add your own](../../items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#so-we-edit-onscreens.json)
+  * This is a **LocKey**, you can either use WolvenKit's [LocKey Browser](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/lockey-browser) to find existing ones, or [add your own](../../items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#so-we-edit-onscreens.json)
 * **Cost**:
   * This is simply the cost of the apartment
 * **Use Custom Key (Optional)**:

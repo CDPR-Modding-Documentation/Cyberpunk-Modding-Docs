@@ -6,8 +6,8 @@ description: Which kinds of tweak records exist? How are they defined? What do t
 
 ## Summary
 
-**Created:** Jan 13 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jan 13 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Created:** Jan 13 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Jan 13 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page lists types of tweak records with their properties and lists of occurrences in the wild. They are grouped by **type**. If this wiki has more information, there will be a link at the start of the block.
 
@@ -46,7 +46,7 @@ A table with name of tweak type and a brief description of what it does
 A wrapper of [#prereq](types-of-tweak-records.md#prereq "mention") with additional finetuning.
 
 {% hint style="info" %}
-For more information on this, check the [new-iconic-weapon-tutorial-for-dummies.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention") guide ([#creating-a-custom-condition](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#creating-a-custom-condition "mention"))
+For more information on this, check the [new-iconic-weapon-step-by-step.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention") guide ([#creating-a-custom-condition](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#creating-a-custom-condition "mention"))
 {% endhint %}
 
 ```swift
@@ -83,9 +83,9 @@ An effector is the tweak version of an `if-condition`: it is using [#condition](
 </code></pre>
 
 {% hint style="info" %}
-For more information on this, check the [new-iconic-weapon-tutorial-for-dummies.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention") guide:\
-&#x20;[#wilsons-iconic-iron](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#wilsons-iconic-iron "mention")\
-&#x20;[#designing-effectors](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#designing-effectors "mention")
+For more information on this, check the [new-iconic-weapon-step-by-step.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention") guide:\
+&#x20;[#wilsons-iconic-iron](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#wilsons-iconic-iron "mention")\
+&#x20;[#designing-effectors](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#designing-effectors "mention")
 {% endhint %}
 
 #### Properties
@@ -103,7 +103,7 @@ The prerequisite for e.g. an [#effector](types-of-tweak-records.md#effector "men
 {% hint style="info" %}
 You can find a full list under [cheat-sheet-prereqs.md](../../references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-prereqs.md "mention")
 
-For more information on this, check the [new-iconic-weapon-tutorial-for-dummies.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention") guide ([#creating-a-custom-prereq](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#creating-a-custom-prereq "mention"))
+For more information on this, check the [new-iconic-weapon-step-by-step.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention") guide ([#creating-a-custom-prereq](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#creating-a-custom-prereq "mention"))
 {% endhint %}
 
 ## Item modifiers
@@ -114,7 +114,7 @@ This type of record adds a quality to an item, modifying its stats.
 
 #### Qualities
 
-Set an item's quality via [statModifier](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#step-7-make-it-iconic). To
+Set an item's quality via [statModifier](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#step-7-make-it-iconic). To
 
 ```
 Quality.Random

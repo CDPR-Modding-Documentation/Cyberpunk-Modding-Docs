@@ -8,7 +8,7 @@ coverY: 0
 
 ## What is TweakXL?
 
-For a detailed guide with many explanations of properties, check the second half of[new-iconic-weapon-tutorial-for-dummies.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
+For a detailed guide with many explanations of properties, check the second half of[new-iconic-weapon-step-by-step.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention")
 
 TweakXL ([nexus](https://www.nexusmods.com/cyberpunk2077/mods/4197) | [github](https://github.com/psiberx/cp2077-tweak-xl)) is a mod by psiberx. It lets you alter Cyberpunk's [Tweak Database](../../tweaks/tweaks/), changing properties of NPCs and items or even adding new entries.
 

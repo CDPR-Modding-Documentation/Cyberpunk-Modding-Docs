@@ -21,7 +21,7 @@ Download the packed project from [here](https://www.nexusmods.com/cyberpunk2077/
 #### Wait, this is not what I want! <a href="#wait-this-is-not-what-i-want" id="wait-this-is-not-what-i-want"></a>
 
 * What do you mean? Of course this is _exactly_ what you want.
-* For an in-depth guide about weapon additions, check [new-iconic-weapon-tutorial-for-dummies.md](new-iconic-weapon-tutorial-for-dummies.md "mention")
+* For an in-depth guide about weapon additions, check [new-iconic-weapon-step-by-step.md](new-iconic-weapon-step-by-step.md "mention")
 * If you want to add clothes, check [..](../ "mention")
 * To learn more about weapon properties, head to [cheat-sheet-weapon-basestats.md](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/weapons/cheat-sheet-weapon-basestats.md "mention")
 

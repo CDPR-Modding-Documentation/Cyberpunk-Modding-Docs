@@ -1,5 +1,4 @@
 ---
-description: Tutorial for gonks
 cover: ../../../../.gitbook/assets/merchants_of_death_ultrawide.png
 coverY: 46
 ---
@@ -30,9 +29,9 @@ Before beginning, ensure you have the following software installed and properly 
 5. Core mods: [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198), [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197), [Red4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
 6. Optional: [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/), [RedMod](../../../../for-mod-users/users-modding-cyberpunk-2077/redmod/)
 
-If you are stuck, refer to the [#troubleshooting-check-this-when-youre-stuck](new-iconic-weapon-tutorial-for-dummies.md#troubleshooting-check-this-when-youre-stuck "mention") at the end of the page.
+If you are stuck, refer to the [#troubleshooting-check-this-when-youre-stuck](new-iconic-weapon-step-by-step.md#troubleshooting-check-this-when-youre-stuck "mention") at the end of the page.
 
-## Iconic Weapons in a nutshell
+## Step 1: Create a New Project in WolvenKit
 
 Each Iconic weapon is a variant of a base weapon, with an hidden (from the player) mod. \
 This "hidden" mod contains a statModifiers array (to list all the stat changes this Iconic will have from the base weapon) and an OnAttach array. \
@@ -49,15 +48,28 @@ Just use something to search the insides of the files for the definitions (VS ca
 
 ## Step 1: Create a New Project in WolvenKit
 
-Start by opening WolvenKit and create a new project. This will be the base for your new iconic weapon mod.
+1. **WolvenKit (8.12+):** [Installation & Setup Guide](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download)
+2. **MLSB (MultiLayerSetupBuilder 1.6.7+):** Installation & Setup Guide
+3. **Text Editor:** [Notepad++](https://notepad-plus-plus.org/downloads/) or [Visual Studio Code](https://app.gitbook.com/s/-McniwB8YOK2HnJ7SYg_/getting-started)
+4. **Cyberpunk 2077**
+5. **Core Mods:** [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198), [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197), [Red4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
+6. **Optional:** [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/)
+
+### Step 1: Create a New Project in WolvenKit
+
+Open WolvenKit and create a new project. This will be the foundation for your new iconic weapon mod.
 
 <figure><img src="../../../../.gitbook/assets/image (292).png" alt=""><figcaption><p>Create a new WolvenKit project as shown here</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (293).png" alt=""><figcaption><p>A clean project should look like this (as of Wolvenkit 8.12, your interface may look different)</p></figcaption></figure>
 
-## Step 2: Choose the weapon and create an override
+## Step 2: Choose the Base Weapon
 
 Decide on the weapon you want to modify to make a new new iconic.
+
+### Step 2: Choose the Base Weapon
+
+Select a base weapon for your iconic weapon. For this tutorial, we'll use 'Unity' with item ID `Items.Preset_Unity_Default`.
 
 {% hint style="info" %}
 For this tutorial, we will use the gun 'Unity' as our base (`Items.Preset_Unity_Default).` If you want to use a different weapon, you can refer to [spawn-codes-baseids-hashes.md](../../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention") or find a list of all in-game items [here](https://onedrive.live.com/view.aspx?resid=EF6891140DE637B3%21221903\&authkey=!AE_n4RTzwmVHwy8).
@@ -67,7 +79,9 @@ To understand how the base gun works, open the [Tweak Browser](https://app.gitbo
 
 <figure><img src="../../../../.gitbook/assets/image (295).png" alt=""><figcaption><p>Open the <a data-mention href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser">Tweak Browser</a> &#x26; search "Items.Preset_Unity_Default"</p></figcaption></figure>
 
-After locating the Unity gun in the tweak browser, right-click on the item and select "Add TweakXL Override". This allows you to modify and customize the weapon’s attributes to create your new iconic weapon.
+### Step 3: Create a TweakXL Override
+
+In the tweak browser, find `Items.Preset_Unity_Default`, right-click it, and select "Add TweakXL Override". This step is crucial for customizing the weapon.
 
 <figure><img src="../../../../.gitbook/assets/image (381).png" alt=""><figcaption><p>Red arrow = Tweak Name, where you can override it. Blue Box= Details about selected tweak. White arrow = Overridden (New) Tweak</p></figcaption></figure>
 
@@ -87,7 +101,11 @@ Before you start with this section, make sure to read the block below!
 
 Open the overridden tweak file in a code editor of your choice (such as [Notepad++](https://notepad-plus-plus.org/downloads/) or VS Code). You will be presented with a `.yaml` file containing roughly a million fields.
 
-<figure><img src="../../../../.gitbook/assets/image (382).png" alt=""><figcaption><p>"Items.Preset_Unity_Default" tweak opened in VS Code</p></figcaption></figure>
+### Step 4: Open the Overridden Tweak
+
+Open the overridden tweak file in a code editor like Notepad++ or VS Code. You'll see a `.yaml` file with various fields.
+
+<figure><img src="../../../../.gitbook/assets/image (382).png" alt=""><figcaption><p>"Items.Preset_Unit</p></figcaption></figure>
 
 ### How does it work?
 
@@ -95,7 +113,13 @@ Open the overridden tweak file in a code editor of your choice (such as [Notepad
 For first time modders, understanding all this in one go will be difficult. You can just keep these explanations handy and revisit them when required.
 {% endhint %}
 
-The .yaml file may seem complex at first glance, but the actual structure is extremely simple. Your weapon has properties – those stand on the left side of the `:`, such as `ammo`. The properties have different values, and those stand on the right side of the `:`, such as `Ammo.RifleAmmo`.
+The .yaml file may seem complex at first glance, but the actual structure is extremely simple. Your weapon has properties – those stand on the left side of the `:`, such as `ammo`. The properties have different values, and those stand on the right side of the `:`, such as `Ammo.RifleAmmo`.\
+\
+Note: For first time modders, understanding all this in one go will be difficult, so keep these explanations handy and revisit them as and when required)
+
+### Step 5: Understand the .yaml File
+
+The `.yaml` file might seem complex. Here's a breakdown of key fields from another weapon tweak (`Items.Preset_Sidewinder_Default`). Keep these explanations handy for reference. (Thanks to BuffMcMuff)
 
 <details>
 
@@ -327,6 +351,10 @@ rate(cycle time), mag size, smart range
 
 Making a new weapon is fairly simple. In your tweak file, change the Item ID in the very first line to "Items.Hand\_Of\_Midas" and save (Hotkey: `Ctrl+S`).
 
+### Step 6: Create a New Weapon
+
+Change the item ID at the top of your `.yaml` file from `Items.Preset_Unity_Default` to `Items.Hand_Of_Midas`. Save the file to create your new weapon.
+
 {% code lineNumbers="true" %}
 ```yaml
 Items.Preset_Unity_Default: -> Remove this
@@ -334,7 +362,8 @@ Items.Hand_Of_Midas: -> Add this
 ```
 {% endcode %}
 
-That's it, you've created a new weapon now. This weapon will look & behave exactly like the Unity handgun, but trust me, it's new.
+That's it, you've created a new weapon now. This weapon will look & behave exactly like the Unity handgun, but trust me, it's new. \
+To test it out, boot up your game and load any save.
 
 At this stage your tweak file exists only in your mod's project folder. It can't do anything in game from there, so you will need to use the "Install" button to install your tweak file to the game directory. Then you can test it.
 
@@ -407,7 +436,7 @@ We're only changing a single property in the Hand of Midas. For that, we have a 
 We can, and we should!
 
 {% hint style="warning" %}
-In later steps of this guide, you'll need to look up properties. Either keep a copy of your full tweak file (e.g. on your desktop), or refer to [#an-annotated-example](new-iconic-weapon-tutorial-for-dummies.md#an-annotated-example "mention") above.
+In later steps of this guide, you'll need to look up properties. Either keep a copy of your full tweak file (e.g. on your desktop), or refer to [#an-annotated-example](new-iconic-weapon-step-by-step.md#an-annotated-example "mention") above.
 {% endhint %}
 
 ### Using $base instead of $type
@@ -760,7 +789,7 @@ The ability contains
 
 Let's start by registering the description.
 
-1. Open the `.json` file that you've created when [#setting-up-a-localizationkey](new-iconic-weapon-tutorial-for-dummies.md#setting-up-a-localizationkey "mention")
+1. Open the `.json` file that you've created when [#setting-up-a-localizationkey](new-iconic-weapon-step-by-step.md#setting-up-a-localizationkey "mention")
 2. Add another entry (you can duplicate an existing entry)
 3. Set the `secondaryKey` to the value in your tweak file, `MC_gun_iconic_description`
 4. Set `femaleVariant` to your text — this will be showin on the tooltip in yellow.
@@ -825,7 +854,7 @@ If not, you may have to respawn it via CET.
 
 ### Designing effectors
 
-Now that we have [#the-full-tweak](new-iconic-weapon-tutorial-for-dummies.md#the-full-tweak "mention"), we'll fill in the two [effectors](../../../../for-mod-creators-theory/tweaks/tweaks/types-of-tweak-records.md#effector), one to punish the player for missing, and the other to reward them for headshots.
+Now that we have [#the-full-tweak](new-iconic-weapon-step-by-step.md#the-full-tweak "mention"), we'll fill in the two [effectors](../../../../for-mod-creators-theory/tweaks/tweaks/types-of-tweak-records.md#effector), one to punish the player for missing, and the other to reward them for headshots.
 
 #### Heal on headshot
 
@@ -847,7 +876,7 @@ Items.MemoryReplenishmentEffector:
   statModifierGroups: []
 ```
 
-The player's health is also a statPool item, it's called `BaseStatPools.Health`. We can copy this example and change it to meet our needs (for the final result, see [#the-final-effector](new-iconic-weapon-tutorial-for-dummies.md#the-final-effector "mention")):
+The player's health is also a statPool item, it's called `BaseStatPools.Health`. We can copy this example and change it to meet our needs (for the final result, see [#the-final-effector](new-iconic-weapon-step-by-step.md#the-final-effector "mention")):
 
 ```yaml
 Effectors.Heal_On_Headshot:

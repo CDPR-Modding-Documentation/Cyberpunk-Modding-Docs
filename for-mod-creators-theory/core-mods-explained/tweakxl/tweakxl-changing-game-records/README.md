@@ -28,8 +28,8 @@ You can find more information about this on the [TweakXL github's wiki page](htt
 [changing-npcs-tweak-edit-redmod.md](changing-npcs-tweak-edit-redmod.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md" %}
-[new-iconic-weapon-tutorial-for-dummies.md](../../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md)
+{% content-ref url="../../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md" %}
+[new-iconic-weapon-step-by-step.md](../../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md)
 {% endcontent-ref %}
 
 ## How to edit tweaks?

@@ -6,8 +6,8 @@ description: How to read the game's tweak database
 
 ### Summary
 
-**Published:** Jan 13 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit:** Jan 13 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** Jan 13 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** Jan 13 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page tells you how to **browse** the TweakDB. \
 If you don't know what that is, you might want to read [.](./ "mention") first.
@@ -35,20 +35,20 @@ A big part of tweak modding is exploration — poking through tweaks until you f
 You can do this **directly in your game**. Changes will not persist if you restart, and sometimes you may have to reload for them to become active, but this is the fastest and most comfortable way to fuck around and find out.
 
 {% hint style="info" %}
-For documentation of the [TweakDB Editor](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-\_ua1-887967055/console/usage-1 "mention"), please refer to the [Cyber Engine Tweaks](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-\_ua1-887967055/ "mention") wiki.
+For documentation of the [TweakDB Editor](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/console/usage-1 "mention"), please refer to the [Cyber Engine Tweaks](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/ "mention") wiki.
 {% endhint %}
 
 ## The Wolvenkit Tweak Browser
 
-The easiest way to create tweaks is to use the Wolvenkit [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention"). This will generate tweak files for you which contain the current record's properties, whether they're directly defined or inherited from other records.
+The easiest way to create tweaks is to use the Wolvenkit [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention"). This will generate tweak files for you which contain the current record's properties, whether they're directly defined or inherited from other records.
 
 {% hint style="info" %}
-For an example on how to do this, check [#step-2-choose-the-weapon-and-create-an-override](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#step-2-choose-the-weapon-and-create-an-override "mention") from the [new-iconic-weapon-tutorial-for-dummies.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention") guide.
+For an example on how to do this, check [#step-2-choose-the-weapon-and-create-an-override](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#step-2-choose-the-weapon-and-create-an-override "mention") from the [new-iconic-weapon-step-by-step.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention") guide.
 {% endhint %}
 
 ### Example: Using the Wolvenkit Tweak browser
 
-If you search for `WilsonWeaponModAbility` in the Wolvenkit [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention"), you will find something like this:
+If you search for `WilsonWeaponModAbility` in the Wolvenkit [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention"), you will find something like this:
 
 ```yaml
 Items.WilsonWeaponModAbility:
@@ -116,10 +116,10 @@ The example uses IntelliJ to look up a weapon record — [Visual Studio Code](ht
 {% endhint %}
 
 {% hint style="info" %}
-This was initially a part of [new-iconic-weapon-tutorial-for-dummies.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention"), where you can also find explanations of various weapon properties.&#x20;
+This was initially a part of [new-iconic-weapon-step-by-step.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention"), where you can also find explanations of various weapon properties.&#x20;
 {% endhint %}
 
-In this example, we want to learn about Wilson's iconic gun and the effects of its WeaponMod. Check [#wilsons-iconic-iron](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md#wilsons-iconic-iron "mention") for the integrated version, or start searching:
+In this example, we want to learn about Wilson's iconic gun and the effects of its WeaponMod. Check [#wilsons-iconic-iron](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#wilsons-iconic-iron "mention") for the integrated version, or start searching:
 
 Press `Ctrl + Shift + F` to open up the search dialog box and search for `Preset_Lexington_Wilson`.
 
@@ -131,7 +131,7 @@ tweaks/base/gameplay/static_data/database/items/weapons/ranged/handguns/lexingto
 
 <figure><img src="../../../.gitbook/assets/image (277).png" alt=""><figcaption><p><code>Preset_Lexington_Wilson</code>, but in .tweak format.</p></figcaption></figure>
 
-This is the same tweak you'd find in the [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser), but it's much easier to read and understand.
+This is the same tweak you'd find in the [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser), but it's much easier to read and understand.
 
 To follow this weapon's iconic weapon mod, find the section where it is defined:
 

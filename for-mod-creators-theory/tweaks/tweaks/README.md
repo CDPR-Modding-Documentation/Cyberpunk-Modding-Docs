@@ -2,7 +2,7 @@
 
 ## Summary
 
-Last documented update: Mar 26 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented update: Mar 26 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will tell you what the game's weak database is, and how you can use it to change or create game items.&#x20;
 
@@ -10,7 +10,7 @@ This page will tell you what the game's weak database is, and how you can use it
 
 * For the beginners' guide, check [how-to-yaml-tweak-modding-basics.md](../../core-mods-explained/tweakxl/tweakxl-changing-game-records/how-to-yaml-tweak-modding-basics.md "mention")
 * For another example, see How to change an NPC's record with Redscript: [tweakxl-changing-game-records](../../core-mods-explained/tweakxl/tweakxl-changing-game-records/ "mention")
-* Or check the second half of [new-iconic-weapon-tutorial-for-dummies.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention") for explanations of weapon properties
+* Or check the second half of [new-iconic-weapon-step-by-step.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention") for explanations of weapon properties
 
 ## What is the Tweak DB?
 
@@ -36,7 +36,7 @@ You can see existing entries by browsing the .tweak under `Cyberpunk 2077tools\r
 
 ### Data type: Record
 
-A record is a **collection** of key-value pairs. Its nature is defined by the property **$type**. You can browse existing records in Wolvenkit's [Tweak Browser](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser), or use CET's Tweak Editor to look at the values in-game.
+A record is a **collection** of key-value pairs. Its nature is defined by the property **$type**. You can browse existing records in Wolvenkit's [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser), or use CET's Tweak Editor to look at the values in-game.
 
 <details>
 

@@ -6,14 +6,14 @@ description: We need guns, lots of guns.
 
 ## Summary
 
-**Last documented edit**: Feb 07 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit**: Feb 07 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page lists weapon .ent files by associated iron for your convenience.
 
 #### Wait, this is not what I want!
 
-* Do you want to complete your stash? [Check Reddit](https://www.reddit.com/r/cyberpunkgame/comments/16vlul2/list\_of\_all\_of\_vs\_stash\_wall\_weapons\_in\_20/)!
-* For a guide on adding custom weapons, check [weapons](../../../modding-guides/items-equipment/adding-new-items/weapons/ "mention") or [new-iconic-weapon-tutorial-for-dummies.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-tutorial-for-dummies.md "mention")
+* Do you want to complete your stash? [Check Reddit](https://www.reddit.com/r/cyberpunkgame/comments/16vlul2/list_of_all_of_vs_stash_wall_weapons_in_20/)!
+* For a guide on adding custom weapons, check [weapons](../../../modding-guides/items-equipment/adding-new-items/weapons/ "mention") or [new-iconic-weapon-step-by-step.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention")
 * For an overview of weapon properties, check [cheat-sheet-weapon-basestats.md](../cheat-sheet-tweak-ids/weapons/cheat-sheet-weapon-basestats.md "mention")
 * For an overview of weapon audio profiles, check [cheat-sheet-weapon-audio.md](../cheat-sheet-tweak-ids/weapons/cheat-sheet-weapon-audio.md "mention")
 
