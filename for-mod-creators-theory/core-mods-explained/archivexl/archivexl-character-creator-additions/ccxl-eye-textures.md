@@ -9,7 +9,7 @@ description: >-
 ### Summary
 
 **Published:** Aug 9, 2025  by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention") | [island\_dancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
-**Last documented edit**: Aug 24, 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")&#x20;
+**Last documented edit**: Aug 24, 2025 by [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention")&#x20;
 
 #### Wait, this is not what I want!
 
@@ -502,12 +502,8 @@ If you've never made custom icons or used inkatlases before, check out these art
 
 
     <figure><img src="../../../../.gitbook/assets/ccxleyes024.png" alt="" width="482"><figcaption></figcaption></figure>
-8. Next, highlight all definitions you just updated. Right click > Copy from array buffer
-9. Collapse this first `gameuiAppearanceInfo` section, then expand the next one underneath.
-10. Right click definitions, click "Clear Array/Buffer".\
-    (if it doesn't allow you to clear, expand the definitions list, highlight all the definitions, and right click clear array/buffer that way)
-11. Once cleared, right click definitions again, paste selection into array buffer.
-12. Save.
+
+&#x20;
 
 ## Step 9: Test your finished mod
 
