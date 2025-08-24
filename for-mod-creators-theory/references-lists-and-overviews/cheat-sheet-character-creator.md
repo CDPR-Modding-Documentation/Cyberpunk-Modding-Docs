@@ -149,7 +149,9 @@ Check [cheat-sheet-head](cheat-sheet-head/ "mention") -> [#cyberware](cheat-shee
 
 ## Facial Scars and submeshes
 
-<table><thead><tr><th width="105"></th><th></th><th>chunkmask</th></tr></thead><tbody><tr><td>01</td><td>hx_000_pXa__morphs_scars_01</td><td>2049</td></tr><tr><td>02</td><td>hx_000_pXa__morphs_scars_01</td><td>2050</td></tr><tr><td>03</td><td>hx_000_pXa__morphs_scars_01</td><td>2052</td></tr><tr><td>04</td><td>hx_000_pXa__morphs_scars_01</td><td>2064</td></tr><tr><td>05</td><td>hx_000_pXa__morphs_scars_01</td><td>2080</td></tr><tr><td>06</td><td>hx_000_pXa__morphs_scars_01</td><td>2112</td></tr><tr><td>07</td><td>hx_000_pXa__morphs_scars_01</td><td>2176</td></tr><tr><td>08</td><td>hx_000_pXa__morphs_scars_01</td><td>2304</td></tr><tr><td>09</td><td>hx_000_pXa__morphs_scars_01</td><td>3072</td></tr></tbody></table>
+
+
+<table><thead><tr><th width="105"></th><th></th><th>chunkmask</th></tr></thead><tbody><tr><td>01</td><td>hx_000_pXa__morphs_scars_01</td><td>2049</td></tr><tr><td>02</td><td>hx_000_pXa__morphs_scars_01</td><td>2050</td></tr><tr><td>03</td><td>hx_000_pXa__morphs_scars_01</td><td>2052</td></tr><tr><td>04</td><td>hx_000_pXa__morphs_scars_01</td><td>2064</td></tr><tr><td>05</td><td>hx_000_pXa__morphs_scars_01</td><td>2080</td></tr><tr><td>06</td><td>hx_000_pXa__morphs_scars_01</td><td>2112</td></tr><tr><td>07</td><td>hx_000_pXa__morphs_scars_01</td><td>2176</td></tr><tr><td>08</td><td>hx_000_pXa__morphs_scars_01</td><td>2304</td></tr><tr><td>09</td><td>hx_000_pXa__morphs_scars_01</td><td>3072</td></tr><tr><td>10</td><td>hx_000_pXa__morphs_scars_01</td><td>2056</td></tr><tr><td>11</td><td>hx_000_pXa__morphs_scars_01</td><td>2176</td></tr><tr><td>12</td><td>hx_000_pXa__morphs_scars_01</td><td>2064</td></tr><tr><td>13</td><td>hx_000_pXa__morphs_scars_01</td><td>2056</td></tr></tbody></table>
 
 ## Piercing Color
 
