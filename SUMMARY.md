@@ -463,7 +463,7 @@
     * [Getting Started](modding-guides/world-editing/native-interactions-framework/getting-started.md)
     * [Interaction Settings](modding-guides/world-editing/native-interactions-framework/interaction-settings.md)
     * [Interactions with Props](modding-guides/world-editing/native-interactions-framework/interactions-with-props.md)
-    * [Apartment Purchasing \[WIP\]](modding-guides/world-editing/native-interactions-framework/interactions-with-props-1.md)
+    * [Apartment Purchasing](modding-guides/world-editing/native-interactions-framework/interactions-with-props-1.md)
   * [Miscellaneous](modding-guides/world-editing/miscellaneous/README.md)
     * [Enable embedded collisions](modding-guides/world-editing/miscellaneous/enable-embedded-collisions.md)
     * [Lootable world objects](modding-guides/world-editing/miscellaneous/lootable-world-objects.md)

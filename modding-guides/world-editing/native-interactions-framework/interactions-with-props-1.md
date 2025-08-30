@@ -2,7 +2,7 @@
 description: This page covers how to setup a purchasing interaction for custom apartments
 ---
 
-# Apartment Purchasing \[WIP]
+# Apartment Purchasing
 
 {% hint style="warning" %}
 The apartment purchasing interaction is more advanced than other interactions, and requires a decent level of knowledge in various areas of modding
@@ -84,7 +84,7 @@ Usually, you would place the the "Purchase" mappin at the location of the intera
 * **Atlas Part** (If `Use Icon Record` is off):
   * This is the name of the atlas part within your `.inkatlas` which is to be used as the image
 * **Purchase Message** (Optional):
-  * This is a **LocKey** which is the message which will be sent my El Capitan once the apartment is purchasable (Message contains the text specified by the **LocKey** + Image)
+  * This is a **LocKey** which is the message which will be sent by El Capitan once the apartment is purchasable (Message contains the text specified by the **LocKey** + Image)
 
 ### Tutorial Settings
 
@@ -94,7 +94,7 @@ Usually, you would place the the "Purchase" mappin at the location of the intera
   * If this is turned on, the tutorial will be shown (Once) if the player is near (<1.5m) the `Entrance Position`
 * **Video Path**:
   * Path to a `.bk2` file which is the video that will be played
-  * Video must have a resolution of 1280x720
+  * Video should be 16:9, preferrably at a resolution of 1280x720
 * **Video Message**:
   * **LocKey** for the text that will be displayed alongside the video
 * **Entrance Position**:
@@ -114,6 +114,12 @@ Usually, you would place the the "Purchase" mappin at the location of the intera
     * `controller -> persistentState -> allowAutomaticRentStatusChange`
     * `controller -> persistentState -> randomizeInitialOverdue`
 
+{% hint style="success" %}
+Tablet Interaction: Is made up of a tablet and a "hand placing" animation, tablet will play a little glowing hand effect during the animation
+
+Door Terminal: Wall mounted motel terminal, no animation. Will initially show "Free" and switch to "Occupied" once purchased (Make sure to follow the additional steps outlined above)
+{% endhint %}
+
 ### Apartment Door
 
 * Technically any door that can be opened / closed should work, but for this example we will be using:
@@ -130,3 +136,47 @@ Usually, you would place the the "Purchase" mappin at the location of the intera
 {% hint style="warning" %}
 Keep in mind that for the door to be properly locked, and be unlockable with the keycard, you need to [export ](../object-spawner/exporting-from-object-spawner.md)the door from WorldBuilder and import the project into WolvenKit
 {% endhint %}
+
+## WolvenKit Template Project
+
+{% hint style="warning" %}
+You **MUST** change any unique values and paths in the template project to avoid conflicts.
+
+This means changing LocKey's primaryKey and ensuring folder and file names are changed from the default
+{% endhint %}
+
+* To make setting up the additional data (LocKey's and image) in WolvenKit easier, you can use the provided template project
+
+{% file src="../../../.gitbook/assets/nifApartmentTemplateWKit.zip" %}
+
+### Using the template
+
+* Create a new WolvenKit project
+* Navigate to the projects root folder (Click the yellow folder icon folder in the project explorer)
+* Place the contents of the template zip inside the folder
+* You should now have the following files and folders:
+
+<figure><img src="../../../.gitbook/assets/nifApartmentTemplate.png" alt="" width="375"><figcaption></figcaption></figure>
+
+### Custom Path Files
+
+* Base folder:
+  * Right click the `wheeze` folder and choose rename
+  * Enter a unique name
+  * Check `Update in Project Files` before confirming
+* XL File:
+  * Rename the `apartmentLoc.xl` file
+  * Open the file and adjust the path `wheeze\en-us.json` (Must be adjusted since the folder name has changed)
+
+### Custom Text
+
+* To change the text used, simply open the `en-us.json` file in WolvenKit
+* There are 3 entries, for the apartment name, the custom message sent by el capitan and the text displayed with the video tutorial
+  * Change those
+* Change the `primaryKey` of each one to something unique (Go big)
+  * The LocKey that you enter in NIF is simply `LocKey#primaryKey`
+
+### Custom Image
+
+* To change the image, modify the `raw\rootName\apartment_image.png` file
+* Then, simply use the `Tools -> Import Tool` to import the modified file
