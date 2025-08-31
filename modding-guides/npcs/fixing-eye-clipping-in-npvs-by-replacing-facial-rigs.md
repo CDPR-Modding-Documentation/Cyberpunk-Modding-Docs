@@ -1,12 +1,11 @@
 ---
-description: (Adapted from xBaebsae’s skeleton transfer method)
+description: The subtle art of stuffing bones into meat
 ---
 
 # Fixing Eye Clipping in NPVs by Replacing Facial Rigs
 
-**Created:** August 11, 2025 by [@saltypigloaf](https://tinyurl.com/spl-server)\
-Adapted from xBaebsae’s [skeleton transfer method](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-transferring-and-expanding-skeletons-in-meshes/)\
-**Last documented update:** N/A&#x20;
+**Created:** August 11, 2025 by [saltypigloaf](https://app.gitbook.com/u/yM6HClAkcKNdJsz4fmRLM7qDIKL2 "mention")\
+**Last documented update:** August 30, 2025 by [saltypigloaf](https://app.gitbook.com/u/yM6HClAkcKNdJsz4fmRLM7qDIKL2 "mention")
 
 ***
 
@@ -29,7 +28,6 @@ In vanilla _Cyberpunk 2077_, V’s face only ever uses **Rig 000 and it's associ
 This guide assumes you already know how to:
 
 * Import/export meshes with WolvenKit
-* Work with JSON files in a text editor without breaking syntax
 
 > 💡 **If you’ve built NPVs before, you already meet these requirements.** This guide focuses on the **rig replacement** process, not general WolvenKit navigation.
 
@@ -55,20 +53,17 @@ We replace the head skeleton in your mesh with one from the correct donor rig th
 
 ### **Tools Needed**
 
-<table><thead><tr><th width="180">Software</th><th width="193">Version</th><th>Notes</th></tr></thead><tbody><tr><td>Wolvenkit<br><a href="https://github.com/WolvenKit/Wolvenkit/releases">Stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a></td><td>>= 8.6 recommended </td><td>You can't make mods without Wolvenkit</td></tr><tr><td>Text editor</td><td>N/A</td><td>Notepad, Notepad++, VS Code, etc</td></tr></tbody></table>
-
-> 💡 **Tip:** Use a text editor with JSON syntax highlighting (VS Code recommended); it makes spotting bracket mismatches much easier.
+<table><thead><tr><th width="180">Software</th><th width="193">Version</th><th>Notes</th></tr></thead><tbody><tr><td>Wolvenkit<br><a href="https://github.com/WolvenKit/Wolvenkit/releases">Stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a></td><td>>= 8.6 recommended </td><td>You can't make mods without Wolvenkit</td></tr></tbody></table>
 
 ***
 
 ### **Workflow Overview**
 
 1. Identify donor rig for your NPV’s face/eye shape.
-2. Export both donor and target meshes.
-3. Copy skeleton data from donor JSON to target JSON.
-4. Copy linked renderChunk data for bone positions.
-5. Re-import edited JSON into WolvenKit.
-6. Update your **face\_rig**.
+2. Export target mesh to GLB.
+3. Copy skeleton data from donor to target in WolvenKit.
+4. Re-import target mesh into WolvenKit.
+5. Update the face\_rig component
 
 ***
 
@@ -88,7 +83,7 @@ We replace the head skeleton in your mesh with one from the correct donor rig th
 > * `h0_`**`011`**`_pma_c__middle_763`
 
 * Import the necessary files into WolvenKit:
-  * **Source mesh** (donor head with correct rig, identified aboveve)
+  * **Source mesh** (donor head with correct rig, identified above)
   * New **facialsetup** and **rig** files
   * **Target mesh** (NPV head you want to fix)
 * Duplicate the target mesh to keep an untouched backup.
@@ -97,56 +92,37 @@ We replace the head skeleton in your mesh with one from the correct donor rig th
 
 ***
 
-#### 2. Export to JSON
+#### 2. Export target mesh to GLB
 
-* Right-click both meshes → **Export to JSON**.
-* Using the **Export Tool**, export the target mesh to GLB.
+* Export your target mesh using the Export Tool in WolvenKit.
+
+> ⚠ **Note:** You won't need to edit this GLB directly, but the step of exporting and importing is absolutely necessary.
 
 ***
 
 #### 3. Copy Skeleton Data
 
-1. Open both JSONs in your text editor.
-2. In **source JSON**:
-   * Search for `"bound"`.
-   * Scroll up to `"Bone Names"`.
-   * Select everything from `"Bone Names"` down to just before `"boundingBox"`.
-   * **Copy** this block.
-3. In **target JSON**:
-   * Make the same selection.
-   * **Paste** to replace it.
-
-<figure><img src="../../.gitbook/assets/wiki_boundingbox.png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/wiki_bonenames.png" alt=""><figcaption></figcaption></figure>
-
-> 💡 **Tip:** Keep both files open side-by-side so you can verify matching selection points.
+* Open both both the target and donor meshes in WolvenKit.
+* Change the **Editor Mode** to **Advanced** in both
+* In the target mesh, delete the following arrays:
+  * `"boneNames"`.
+  * `"boneRigMatrices"`.
+  * `"boneVertexEpsilons"`
+  * `"renderResourceBlob/header/bonePositions"`
+* In donor mesh, copy each of these arrays, one at a time, and paste them into the target mesh:
 
 ***
 
-#### 4. Copy RenderChunk Data (same procedure as before)
-
-1. In **source JSON**:
-   * Search for `"customData": []`.
-   * Select from the line above it down to `"bonePositions"`.
-   * **Copy**.
-2. In **target JSON**:
-   * Select the same section.
-   * **Paste** to replace it.
-
-***
-
-#### 5. Save & Re-Import
+#### 4. Re-import target mesh into WolvenKit
 
 * Save your changes.
-* In WolvenKit, right-click the target mesh JSON → **Import from JSON**.
 * Using the **Import Tool**, import your target mesh from GLB.
 
-> ⚠ **Important:** If you see errors on JSON import, check for missing commas or extra brackets from the copy-paste step.
+> ⚠ **Important:** This step is crucial for allowing WolvenKit to correctly calculate the new bone values.  Without it, your NPVs face will droop and sag.
 
 ***
 
-#### **6. Update the `face_rig` Component**
+#### **5. Update the `face_rig` Component**
 
 After replacing the skeleton in the mesh, you need to update the **`face_rig`** component so the game points to the correct donor rig and facial setup.
 
@@ -163,5 +139,6 @@ After replacing the skeleton in the mesh, you need to update the **`face_rig`** 
 
 ### **Credits**
 
-* **Original Method & Screenshots:** [xBaebsae](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-transferring-and-expanding-skeletons-in-meshes/)
-* @eagull, @manavortex, and @scorpiontank for their invaluable input&#x20;
+* **Original JSON Method:** [xBaebsae](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-transferring-and-expanding-skeletons-in-meshes/)
+* @eagull, [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") , and @scorpiontank for their invaluable input
+* [Zwei Valerie](https://app.gitbook.com/u/YvPrbtYFcff1iVuhhxhlJJEYw8l1 "mention") and [lLorion](https://app.gitbook.com/u/PBj6mVsHrzUk8L79wwGi1JC8qnp2 "mention") for trials/testing
