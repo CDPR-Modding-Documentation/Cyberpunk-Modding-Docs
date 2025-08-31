@@ -1,86 +1,10 @@
 # Scene Node Definitions
 
-## :scissors:Cut Control&#x20;
-
-&#x20;[`scnCutControlNode`](https://nativedb.red4ext.com/c/4636270759012682)&#x20;
-
-### What it does
-
-The `scnCutControlNode` is a fundamental logic gate in the scene system. Its one and only function is to act as a simple, high-speed Result-Route&#x72;**. It's a signal splitter.**
-
-The node itself is "dumb," stateless, and contains no internal logic or data fields. Its power comes from its interaction with the signals it receives. Signals can be **tagged with a `SUCCESS` or `FAILURE` state** by a "smart" node that sent it.
-
-If you're familiar with programming, a Cut Control is basically an if-else statement that operates the check on the signal.
-
-The `CutControlNode`'s job is to inspect this tag on the incoming signal and route the execution flow down one of its two dedicated paths. This provides designers with a clean, reusable component to create conditional branches based on the outcome of a gameplay action or check.
-
-#### Why the Name "CutControl"?
-
-The name can be confusing. It does not mean it can only "cut" as in interrupt a node. Think of it like using scissors on a wire - the Cut Control node literally cuts the signal into two: the true signal via Out0 and the false signal via Out1.
-
-{% hint style="danger" %}
-To further add to the confusion: `scnCutControlNode` works differently from it's quest node equivalent ie `questCutControlNodeDefinition`&#x20;
-
-
-
-`questCutControlNodeDefinition`'s job is to actually handle cuts as in interrupts. It first cuts all the assigned nodes from its `CutSource` socket (which only go to `CutDestination` of other sockets) and then fires its `Out` socket
-{% endhint %}
-
-### Sockets
-
-#### Inputs
-
-| Socket Name (ID) | Type    | Description                                                                                                                |
-| ---------------- | ------- | -------------------------------------------------------------------------------------------------------------------------- |
-| **In** (`0,0`)   | `Input` | The single entry point. It receives a signal that has been tagged with a `SUCCESS` or `FAILURE` state by an upstream node. |
-
-#### Outputs
-
-| Socket Name (ID)  | Recommended Editor Label | Description                                                        |
-| ----------------- | ------------------------ | ------------------------------------------------------------------ |
-| **Out0** (`0, 1`) | **Success / True**       | The path taken when the incoming signal is tagged with `SUCCESS`.  |
-| **Out1** (`1, 0`) | **Failure / False**      | The path taken when the incoming signal is tagged with `FAILURE`.  |
-
-### The Source of the Logic: "Smart" Nodes
-
-The conditional check does **not** happen inside the `CutControlNode`. It happens in an upstream "smart" node that then generates the tagged signal. The most common state producers are:
-
-1. **`scnChoiceNode`:** A specific dialogue option can have a condition (like a stat check or payment) attached to it as a property. When the player selects that option, the `ChoiceNode` performs the check and tags its output signal with the result.
-2. `scnQuestNode` -> `Condition` node: sometimes a Condition node is set upstream and at a later point, the signals are converged into a single output (via a Hub) - which then again at a later point is split into the true/false signals via `CutControlNode` &#x20;
-
-### Examples
-
-#### Example 1: Narrative Branching (The Lifepath Check)
-
-This is the clearest example of the node's primary purpose. **Scene:** `base/open_world/street_stories/watson/kabuki/sts_wat_kab_04/scenes/sts_wat_kab_04_receptionist.scene`
-
-* **The Goal:** Show a different version of a conversation based on V's Lifepath.
-* **The Mechanism:**
-  1. The player makes a dialogue choice. A `questConditionNode` upstream checks the player's lifepath and fires a signal tagged `SUCCESS` for Corpo or `FAILURE` for others.
-  2. The **`CutControlNode [84]`** receives this tagged signal.
-  3. It routes the flow:
-     * **`Out0 (Success)`** leads to `Section [15]`, the professional "Corpo" dialogue.
-     * **`Out1 (Failure)`** leads to `Section [28]`, the rougher "Streetkid" dialogue.
-
-#### Example 2: Looping Dialogue State (The Braindance Dealer)
-
-This shows how the node is used to control a looping conversation. **Scene:** `base/quest/main_quests/part1/q105/scenes/q105_04c_braindance_dealer.scene`
-
-* **The Goal:** Keep the player in a conversation until they successfully purchase the required item.
-* **The Mechanism:**
-  1. After the player makes a choice, a linked `questConditionNode` checks if the objective is complete.
-  2. It sends a `SUCCESS` or `FAILURE` tagged signal to the **`CutControlNode [1437]`**.
-  3. The `CutControl` routes the flow:
-     * **`Out0 (Success)`** breaks the loop and ends the conversation.
-     * **`Out1 (Failure)`** routes the flow back to the start of the idle/choice loop, preventing the conversation from ending prematurely.
-
-***
-
 ## 🔀Flow Control
 
 [`scnFlowControlNode`](https://nativedb.red4ext.com/c/3716001461228230) and [`questFlowControlNodeDefinition`](https://nativedb.red4ext.com/c/34001554939364)
 
-A compact **gating tool** that counts how many signals arrive while it is **open** and how many arrive while it is **closed**. It is a _very_ stateful node. It is not dumb.
+A compact **gating tool** that counts how many signals arrive while it is **open** and how many arrive while it is **closed**. It is a stateful node.
 
 \
 You steer it in two ways:
@@ -347,6 +271,10 @@ It listens to all its inputs, but only allows the **very first** signal that arr
 ***
 
 ## 🔗And
+
+{% hint style="warning" %}
+This is a signal-stopping node
+{% endhint %}
 
 ### What it does
 
