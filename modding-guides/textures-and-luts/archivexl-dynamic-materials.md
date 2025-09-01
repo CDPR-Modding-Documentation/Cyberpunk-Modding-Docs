@@ -86,31 +86,15 @@ And it's very simple to do. You simply assign empty `chunkMaterials` lists to al
 
 Now, you only have to maintain one chunk list, and the rest of your appearances are simplified down to a single name and nothing else.
 
-## Additional intel
+#### Mesh Appearance: Auto Expansion
 
-### Dynamic materials and .mi files
-
-To use `{material}` substitution inside .mi files, the reference must be sent to `Soft`. This works even if you do not use substitution in the path to the .mi file!
-
-{% hint style="info" %}
-[File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") may warn you about the soft references. However, in this case, its warning can be ignored.
-{% endhint %}
-
-
-
-## Mesh Appearance: Auto Expansion
-
-We've eliminated a lot of repetition with those dynamic material paths, but can we take it even further? We still have to define an appearance with chunkMaterials, and while Search\&Replace certainly helps, can't we do away with those altogether?
-
-The answer is a clear **yesn't**: You still need to define mesh appearances, but we can eliminate (most of) the chunk materials.
+Here's another example:
 
 Any appearances **without `chunkMaterials`** that come directly after the first one will use that as a template for **appearance expansion**.&#x20;
 
 Internally, ArchiveXL will **copy the `chunkMaterials`**, then **replace the appearance name**.
 
 <figure><img src="../../.gitbook/assets/mesh_appearances_auto_expansion.png" alt=""><figcaption></figcaption></figure>
-
-### Examples
 
 ```
 arasaka                          6thstreet
@@ -123,3 +107,19 @@ arasaka                          6thstreet
   - arasaka_logo@logo_glow          - 6thstreet_logo@logo_glow  
   - third_chunk_material           - third_chunk_material           
 ```
+
+
+
+## Additional intel
+
+### Dynamic materials and .mi files
+
+To use `{material}` substitution inside .mi files, the reference must be sent to `Soft`. This works even if you do not use substitution in the path to the .mi file!
+
+{% hint style="info" %}
+[File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") may warn you about the soft references. However, in this case, its warning can be ignored.
+{% endhint %}
+
+
+
+####
