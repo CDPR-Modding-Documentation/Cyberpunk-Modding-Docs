@@ -40,3 +40,5 @@ With Props: Interaction uses additional props, which need to be placed
 * [Iguana Petting](interactions-with-props.md): Includes the Iguana, and an option to give it some pats
 * [Yakitori Eating](interactions-with-props.md): Sitting, with the option to eat a yakitori skewer (3 Eating steps)
 * [Basketball](interactions-with-props.md): Two different throwing animations, based on body stats (Either dunking or regular throw)
+* [Apartment Purchasing](apartment-purchasing.md): Allows for purchasing a property (Unlocking a door), including message from El Capitan, map markers, tutorial popup and more
+* [Appearance Changing](interaction-settings.md): Simple interaction that opens the CC Menu (Either Hairdresser, Ripperdoc or all options)
