@@ -129,7 +129,7 @@
       * [CCXL: Creating a Switcher](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-creating-a-switcher.md)
       * [CCXL: Hair Profiles (Colors)](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-hair-profiles-colors.md)
       * [CCXL: Eye Textures](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-eye-textures.md)
-    * [Mesh appearance auto expansion](for-mod-creators-theory/core-mods-explained/archivexl/mesh-appearance-auto-expansion.md)
+    * [ArchiveXL: dynamic materials](modding-guides/textures-and-luts/archivexl-dynamic-materials.md)
   * [TweakXL](for-mod-creators-theory/core-mods-explained/tweakxl/README.md)
     * [TweakXL: Changing game records](for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/README.md)
       * [How to YAML: Tweak modding basics](for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/how-to-yaml-tweak-modding-basics.md)

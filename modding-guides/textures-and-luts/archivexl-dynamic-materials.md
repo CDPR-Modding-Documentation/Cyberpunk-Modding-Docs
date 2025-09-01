@@ -6,8 +6,8 @@ description: How to use ArchiveXL's new material property interpolation
 
 ## Summary
 
-**Published:** May 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** May 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** May 01 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** May 01 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 ## Prerequistes
 
@@ -21,8 +21,6 @@ description: How to use ArchiveXL's new material property interpolation
 ## Why is this better than [.mi files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md)?
 
 Because it's even lazier: For a mesh with 15 appearances, you need...
-
-
 
 |                         | legacy | dynamic materials                   |
 | ----------------------- | ------ | ----------------------------------- |
@@ -98,3 +96,30 @@ To use `{material}` substitution inside .mi files, the reference must be sent to
 [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") may warn you about the soft references. However, in this case, its warning can be ignored.
 {% endhint %}
 
+
+
+## Mesh Appearance: Auto Expansion
+
+We've eliminated a lot of repetition with those dynamic material paths, but can we take it even further? We still have to define an appearance with chunkMaterials, and while Search\&Replace certainly helps, can't we do away with those altogether?
+
+The answer is a clear **yesn't**: You still need to define mesh appearances, but we can eliminate (most of) the chunk materials.
+
+Any appearances **without `chunkMaterials`** that come directly after the first one will use that as a template for **appearance expansion**.&#x20;
+
+Internally, ArchiveXL will **copy the `chunkMaterials`**, then **replace the appearance name**.
+
+<figure><img src="../../.gitbook/assets/mesh_appearances_auto_expansion.png" alt=""><figcaption></figcaption></figure>
+
+### Examples
+
+```
+arasaka                          6thstreet
+  - black_base                     - black_base
+  - arasaka@logo_glow              - 6thstreet@logo_glow
+  - third_chunk_material           - third_chunk_material           
+  
+arasaka                          6thstreet
+  - black_base                      - black_base
+  - arasaka_logo@logo_glow          - 6thstreet_logo@logo_glow  
+  - third_chunk_material           - third_chunk_material           
+```
