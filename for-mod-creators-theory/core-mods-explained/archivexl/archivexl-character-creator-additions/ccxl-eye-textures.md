@@ -521,9 +521,12 @@ You have successfully added new eye options to character creator!
 
 ### My icons are black!
 
-* double check that your OptionsIcons in each definitions entry correctly matches the format in the first line of your yaml, and that all your names are exactly the same, with the same underscore placements, etc.
-* double check that your .xbms are pathed correctly in the inkatlas
-* double check that your inkatlas "parts" listed are named the same as all texture .xbm names listed in your .yaml
+* In the `.inkcharcustomization` file, check each entry in `definitions`. Make sure that the `icon` value matches your `.yaml` file and is **not empty:**
+
+<figure><img src="../../../../.gitbook/assets/ccxl_troubleshooting_black_icons.png" alt="" width="375"><figcaption></figcaption></figure>
+
+* In your `.inkatlas`, check that your .xbm files are pathed correctly (you can run [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention"))
+* In your `.inkatlas`, double check that your `parts` names are matching the `.yaml` file
 
 ### My icons are white!
 
