@@ -97,7 +97,7 @@ For a list of [#name-of-meshes-by-index](cheat-sheet-head/hair.md#name-of-meshes
 
 ## Beard
 
-<table><thead><tr><th width="97"></th><th></th></tr></thead><tbody><tr><td>01</td><td>hb_000_pma_c__basehead_shadowbase_01</td></tr><tr><td>02</td><td>hb_000_pma_c__basehead_big_beard_afro</td></tr><tr><td>03</td><td>pma__morphs_default</td></tr><tr><td>04</td><td>hb_000_pma_c__basehead_handlebar_stache</td></tr><tr><td>05</td><td>hb_000_pma_c__basehead_jesse_beard</td></tr><tr><td>06</td><td>hb_000_pma_c__basehead_maelstrom_full</td></tr><tr><td>07</td><td>hb_000_pma_c__basehead_big_beard</td></tr><tr><td>08</td><td>hb_000_pma_c__basehead_short_afro</td></tr><tr><td>09</td><td>hb_000_pma_c__basehead_thick_beard_afro</td></tr><tr><td>10</td><td>hb_000_pma_c__basehead_fu_manchu</td></tr><tr><td>11</td><td>hb_000_pma_c__basehead_logan</td></tr><tr><td>12</td><td>hb_000_pma_c__basehead_patmc</td></tr></tbody></table>
+<table><thead><tr><th width="97"></th><th></th></tr></thead><tbody><tr><td>01</td><td>hb_000_pma_c__basehead_shadowbase_01</td></tr><tr><td>02</td><td>hb_000_pma_c__basehead_big_beard_afro</td></tr><tr><td>03</td><td>pma__morphs_default / hb_000_pma_c__basehead</td></tr><tr><td>04</td><td>hb_000_pma_c__basehead_handlebar_stache</td></tr><tr><td>05</td><td>hb_000_pma_c__basehead_jesse_beard</td></tr><tr><td>06</td><td>hb_000_pma_c__basehead_maelstrom_full</td></tr><tr><td>07</td><td>hb_000_pma_c__basehead_big_beard</td></tr><tr><td>08</td><td>hb_000_pma_c__basehead_short_afro</td></tr><tr><td>09</td><td>hb_000_pma_c__basehead_thick_beard_afro</td></tr><tr><td>10</td><td>hb_000_pma_c__basehead_fu_manchu</td></tr><tr><td>11</td><td>hb_000_pma_c__basehead_logan</td></tr><tr><td>12</td><td>hb_000_pma_c__basehead_patmc</td></tr></tbody></table>
 
 
 
