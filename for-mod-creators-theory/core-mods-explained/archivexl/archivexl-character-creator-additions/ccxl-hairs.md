@@ -2,8 +2,8 @@
 
 ## Summary
 
-Published: Jan 20 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") and [Anthony](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
-Last documented edit: July 14 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention"), [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [Anthony](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention"), [CyberVesna](https://app.gitbook.com/u/cmjyzwfGm7YaRhuU9Kyk4uTuE3Y2 "mention")  and [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
+Published: Jan 20 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") and [island\_dancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
+Last documented edit: July 14 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention"), [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [island\_dancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention"), [CyberVesna](https://app.gitbook.com/u/cmjyzwfGm7YaRhuU9Kyk4uTuE3Y2 "mention")  and [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
 
 This page will tell you how to use ArchiveXL to add hair to the character creator.&#x20;
 
@@ -368,10 +368,10 @@ Otherwise, check that your `componentsOverride` in the `partsOverrides` of the `
 
 If that doesn't help, check the log (see [#my-hair-is-always-black](ccxl-hairs.md#my-hair-is-always-black "mention"))
 
-### My hair is always black!
+### My hair colour doesn't change at all!
 
-That happens when the material patching/expansion didn't work. \
-Search the [ArchiveXL log](../../../../for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md#a-list-of-framework-logfiles) for the name of the broken hair mesh. Most likely, there is a warning or an error that you can fix.
+* Check if material patching/expansion worked: Search the [ArchiveXL log](../../../../for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md#a-list-of-framework-logfiles) for the name of the broken hair mesh. Most likely, there is a warning or an error that you can fix.
+* In your `.app` file(s), check the `partsOverrides`. Make sure that the component names are correct, and that the appearance is the same as the one you assigned in the `components` array.
 
 ### I have duplicate entry in hairstyles options!
 
