@@ -6,17 +6,16 @@ description: Hair guides
 
 ## Summary
 
-Last documented edit: March 17 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented edit: Sep 08 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page collects information on making and porting hair related projects for player V.&#x20;
+This page collects all **hair guides**.
 
-Please check the nested pages in the Wiki's browser for more information, or click the "Next" button at the bottom of the page.&#x20;
-
-This page collects all hair guides on the Cyberpunk 2077 wiki.
-
+{% hint style="info" %}
 To see the guides, please check the page tree in the left sidebar, or click the "next" panel at the bottom of the page.
+{% endhint %}
 
 ### Wait, this is not what I want!
 
 * Check out [hair-modeling-beginner-tutorial.md](../../../for-mod-creators-theory/3d-modelling/hair-modeling-beginner-tutorial.md "mention") for how to create hair from scratch in Blender
 * For information on [how-to-add-a-ccxl-hair-color-to-an-npv.md](../npv-v-as-custom-npc/how-to-add-a-ccxl-hair-color-to-an-npv.md "mention"), check the corresponding guide
+* The [hair.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md "mention") has lists of all existing hairs and their files

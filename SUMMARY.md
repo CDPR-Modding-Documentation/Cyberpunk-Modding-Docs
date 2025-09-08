@@ -337,6 +337,7 @@
       * [How to convert a CCXL hair color into a replacer](modding-guides/npcs/guides-all-about-hair/custom-hair-colours/how-to-convert-a-ccxl-hair-color-into-a-replacer.md)
     * [Hair: Vertex paint for transparency](modding-guides/npcs/guides-all-about-hair/hair-vertex-paint-for-transparency.md)
   * [Creating facial cyberware](modding-guides/npcs/creating-facial-cyberware.md)
+  * [Character Creator additions](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/README.md)
 * [Animations](modding-guides/animations/README.md)
   * [Creating Animations - Poses for V & NPCs](modding-guides/animations/animations/README.md)
     * [Poses/Animations: make your own](modding-guides/animations/animations/poses-animations-make-your-own/README.md)
