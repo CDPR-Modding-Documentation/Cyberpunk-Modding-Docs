@@ -7,19 +7,21 @@ This page lists various properties of the player head. Use the Table of Contents
 ### More head-related cheat sheets
 
 * For character creator stuff (colors, appearance names), check [cheat-sheet-character-creator.md](../cheat-sheet-character-creator.md "mention")
-* For hair, facial expressions, or info on the E3 heads, check the child pages in the navigation tree on the left
+* For [hair](hair.md), [facial expressions](cheat-sheet-facial-expressions.md), or[ info on the E3 heads](cheat-sheet-e3-heads.md), check the child pages in the navigation tree on the left
 
 ### Wait, this isn't what I'm looking for!
 
 * If you want to [edit the player's head](../../../modding-guides/npcs/a-new-head-for-v.md), you need [meshes](../../files-and-what-they-do/3d-objects-.mesh-files) and [morphtargets](../../3d-modelling/morphtargets.md).
 * If you want to make a custom NPC, check [npv-v-as-custom-npc](../../../modding-guides/npcs/npv-v-as-custom-npc/ "mention")
-* You can find much additional information about the player head under [npv-preparing-the-head-in-blender.md](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention")
+* You can find additional information about the player head under [npv-preparing-the-head-in-blender.md](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention")
 
 ***
 
 ## Head file paths
 
-<table data-header-hidden><thead><tr><th width="166.33333333333331">Body gender</th><th width="166">file extension</th><th>file path</th></tr></thead><tbody><tr><td>female</td><td><code>.mesh</code></td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\</code></td></tr><tr><td>female</td><td><code>.morphtarget</code></td><td><code>base\characters\head\player_base_heads\player_female_average</code></td></tr><tr><td>male</td><td><code>.mesh</code></td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead</code></td></tr><tr><td>male</td><td><code>.morphtarget</code></td><td><code>base\characters\head\player_base_heads\player_man_average</code></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="166.33333333333331">Body gender</th><th>file path</th></tr></thead><tbody><tr><td>p<strong>w</strong>a mesh</td><td><br><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\</code></td></tr><tr><td>p<strong>w</strong>a morphtarget</td><td><code>base\characters\head\player_base_heads\player_female_average > .morphtarget</code></td></tr><tr><td>p<strong>m</strong>a mesh</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead</code></td></tr><tr><td>p<strong>m</strong>a morphtarget</td><td><code>base\characters\head\player_base_heads\player_man_average > .morphtarget</code></td></tr></tbody></table>
+
+
 
 {% hint style="info" %}
 The folders contain the entire player head. The minimum amount of meshes rendered is 3 (head, teeth, eyes), and can go up to 13 (fem V)/14 (masc V).
@@ -27,15 +29,7 @@ The folders contain the entire player head. The minimum amount of meshes rendere
 
 ### Head file prefixes
 
-|       |                                                                                                                                       |
-| ----- | ------------------------------------------------------------------------------------------------------------------------------------- |
-| h0\_  | head (with ears)                                                                                                                      |
-| hb\_  | male V only: beard                                                                                                                    |
-| heb\_ | eyebrows                                                                                                                              |
-| he\_  | eyes                                                                                                                                  |
-| ht\_  | teeth                                                                                                                                 |
-| hx\_  | <p>applied on top of h0:</p><ul><li>cyberware</li><li>makeup</li><li>freckles</li><li>pimples</li><li>tattoos</li><li>scars</li></ul> |
-| l1\_  | ear ring (01-04)                                                                                                                      |
+<table><thead><tr><th width="117.333251953125"></th><th></th></tr></thead><tbody><tr><td>h0_</td><td>head (with ears)</td></tr><tr><td>hb_</td><td>male V only: <a href="../cheat-sheet-character-creator.md#beard">beard</a></td></tr><tr><td>heb_</td><td>eyebrows</td></tr><tr><td>he_</td><td><a href="../cheat-sheet-character-creator.md#eye-colour">eyes</a></td></tr><tr><td>ht_</td><td>teeth</td></tr><tr><td>hx_<br></td><td><ul><li><a href="../cheat-sheet-character-creator.md#cyberware">cyberware</a></li></ul><ul><li><a href="../cheat-sheet-character-creator.md#lip-makeup">lip </a><a href="../cheat-sheet-character-creator.md#lip-makeup">makeup</a> / <a href="../cheat-sheet-character-creator.md#eye-make-up">eye makeup</a></li><li><a href="../cheat-sheet-character-creator.md#cheek-makeup-style">freckles / cheek makeup</a></li><li><a href="../cheat-sheet-character-creator.md#blemishes">pimples (blemishes)</a></li><li>tattoos</li><li><a href="../cheat-sheet-character-creator.md#facial-scars-and-submeshes">scars</a></li></ul></td></tr><tr><td>l1_</td><td>earrings/piercings (01-04)</td></tr></tbody></table>
 
 ## Complexions
 
@@ -60,7 +54,7 @@ The files are ending in `01..05`. Each complexion has its own appearance in the 
 
 Skin materials are defined in the base head `.mesh` file (while the shape comes from the .morphtarget):
 
-<table><thead><tr><th width="251"></th><th></th></tr></thead><tbody><tr><td>female body gender</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\h0_000_pwa_c__basehead.mesh</code></td></tr><tr><td>male body gender</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\h0_000_pma_c__basehead.mesh</code></td></tr></tbody></table>
+<table><thead><tr><th width="130.333251953125">body gender</th><th></th></tr></thead><tbody><tr><td>female </td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\h0_000_pwa_c__basehead.mesh</code></td></tr><tr><td>male </td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\h0_000_pma_c__basehead.mesh</code></td></tr></tbody></table>
 
 You can find the [definitions](../../files-and-what-they-do/3d-objects-.mesh-files#step-3-material-definition) in the localMaterialBuffer. Each material overrides the following [properties](../../materials/configuring-materials/#checking-material-properties) locally:
 
@@ -69,7 +63,7 @@ You can find the [definitions](../../files-and-what-they-do/3d-objects-.mesh-fil
 
 All other properties are pulled from a [.mi file](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) in the following folder:
 
-<table><thead><tr><th width="212"></th><th></th></tr></thead><tbody><tr><td>female body gender</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures</code></td></tr><tr><td>male body gender</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\textures</code></td></tr></tbody></table>
+<table><thead><tr><th width="128">body gender</th><th></th></tr></thead><tbody><tr><td>female </td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures</code></td></tr><tr><td>male </td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\textures</code></td></tr></tbody></table>
 
 ### Head: material instances
 
