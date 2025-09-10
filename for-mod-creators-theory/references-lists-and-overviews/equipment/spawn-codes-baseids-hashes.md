@@ -22,13 +22,35 @@ You can usually find any BaseID on the [fandom](https://cyberpunk.fandom.com/wik
 
 A selection of lists for looking up item codes. Alternatively, you can browse through the game's files, or search the web.
 
-## Step by step
+## Step 1: Finding the right item
 
-### Step 1: Finding the right item
+We have several ways of finding items in Cyberpunk:&#x20;
 
-{% hint style="info" %}
-We're finding the item **by name**. If you don't even know that much, check the [equipment-databases.md](equipment-databases.md "mention") and see if you can find the name from a picture.
-{% endhint %}
+* [#by-item-name](spawn-codes-baseids-hashes.md#by-item-name "mention")
+* [#from-a-screenshot](spawn-codes-baseids-hashes.md#from-a-screenshot "mention")
+* [#by-wearing-the-item](spawn-codes-baseids-hashes.md#by-wearing-the-item "mention")
+
+If these do not help (or in edge cases), check [#alternative-methods-of-finding-an-item](spawn-codes-baseids-hashes.md#alternative-methods-of-finding-an-item "mention").
+
+### By wearing the item
+
+The developer utility [redhottools](../../modding-tools/redhottools/ "mention") offers you the option to watch the player: [#world-inspector-watch-the-player](../../modding-tools/redhottools/rht-the-world-inspector.md#world-inspector-watch-the-player "mention"):&#x20;
+
+<figure><img src="../../../.gitbook/assets/rht_world_inspector_watch.png" alt=""><figcaption></figcaption></figure>
+
+#### How do you find your item in the list of components?
+
+As of 1.2.2, RHT does not yet have a filter, so you will have to scroll through the list of components. Here are a few tips:
+
+* Their **Component Type** is usually `entGarmentSkinnedMeshComponent` or `entSkinnedMeshComponent`. For body parts, it can also be `entMorphtargetSkinnedMeshComponent`.
+* Garment items usually have [prefixes](../../3d-modelling/garment-support-how-does-it-work/#component-prefixes) (`t1_` or `t2_` for torso, `l1_` for legs, `hh_` for hair etc
+* If you re-equip an item or change a face slider, the component will be at the bottom of the list
+
+### From a screenshot
+
+This one is difficult. If you're lucky, then one of the [equipment-databases.md](equipment-databases.md "mention") has it. Otherwise, your best bet is to join our Discord server and ask in [#whats-that-mod](https://discord.com/channels/717692382849663036/1185911417963040919).
+
+### By item name
 
 1. Head to the [fandom wiki](https://cyberpunk.fandom.com/wiki) and search for your item. For this guide, we'll be using the `Reinforced Puffer Vest`.
 2. In the box on the right, find the **Technical** section. This will list your base ID:
