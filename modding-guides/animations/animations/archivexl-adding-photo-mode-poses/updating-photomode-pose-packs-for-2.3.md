@@ -59,16 +59,15 @@ photo_mode.character.garryPoses: *AddPosesM
 photo_mode.character.muamarPoses: *AddPosesM
 photo_mode.character.sebastianPoses: *AddPosesM
 photo_mode.character.wadePoses: *AddPosesM
+photo_mode.character.dexterPoses: *AddPosesM
 
 # ##############################################################
 # extra NPCs: male big
 # ##############################################################
-photo_mode.character.riverPoses:
 photo_mode.character.jackiePoses: 
 photo_mode.character.riverPoses:
 photo_mode.character.kurtPoses:
-photo_mode.character.reedPoses:
-photo_mode.character.dexterPoses: 
+photo_mode.character.reedPoses: 
 photo_mode.character.ozobPoses: 
 photo_mode.character.roycePoses: 
 photo_mode.character.jessePoses: 
