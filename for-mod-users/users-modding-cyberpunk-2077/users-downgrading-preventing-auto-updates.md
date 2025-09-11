@@ -83,11 +83,11 @@ Sorry, choomba, you're fucked. No downgrading possible.
 
 ### Steam
 
-Since 2.2, Steam supports downgrading to version `1.63` , `2.13`  or `2.21`
+Since 2.2, Steam supports downgrading to version `1.63` , `2.13` , `2.21` or `2.3`
 
 Right-click on the game in Steam and select Properties, then go here:&#x20;
 
-<figure><img src="../../.gitbook/assets/2025.07.18-00.16.50_steamwebhelper.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/2025.09.11-19.57.05_steamwebhelper (1).png" alt=""><figcaption></figcaption></figure>
 
 For downgrading to other versions, see the expandable box below.
 
@@ -101,17 +101,17 @@ First [turn autoupdate off for Steam](users-downgrading-preventing-auto-updates.
 \
 Here are the version-specific commands that you need to run. If you can't find your version on the list, check [here](https://steamdb.info/depot/1091501/history/) (Base Game) and [here](https://steamdb.info/depot/2138330/history/) (Phantom Liberty), and find the new Manifest ID tag.
 
+**Patch 2.3:**
+
+* Base Game: `download_depot 1091500 1091501 6814019010317238099`
+* Phantom Liberty: `download_depot 2138330 2138330 2681614462109514084`
+* REDmod: `download_depot 1091500 2060310 6234713401507336211`
+
 **Patch 2.21:**
 
 * Base Game: `download_depot 1091500 1091501 8420445566849588826`
 * Phantom Liberty: `download_depot 2138330 2138330 6387618923890239308`
 * REDmod: `download_depot 1091500 2060310 5840271637798999751`
-
-**Patch 2.2:**
-
-* Base Game: `download_depot 1091500 1091501 6971552143247463690`
-* Phantom Liberty: `download_depot 2138330 2138330 3585115081536255968`
-* REDmod: `download_depot 1091500 2060310 8197960292057385990`
 
 Now, we do the thing:
 
