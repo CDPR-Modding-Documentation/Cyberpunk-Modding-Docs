@@ -9,7 +9,7 @@ description: >-
 ## Summary
 
 Created: April 25 2025 by [lumad11](https://app.gitbook.com/u/duXEIdJ7AETQBVeMRsxMnaGWO0m1 "mention")\
-Last documented update: April 25 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented update: April 25 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will teach you how to add custom eyebrows to the character creator with ArchiveXL.
 
@@ -130,7 +130,12 @@ Your appearance should look like this:
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdJsMOCQRk41es1DrfhtIINUC1WrWj8FNl7jfbrJowqpfK6e0EsQXVg2xlLeBVfyDJ3E6dYl5YKaZUGFM_2So3t4WbKIXZAIuzkKAVoqr4mecP8XGzL6KCpnpqpSulFOflH2P-b?key=WyWwGiOMdeG66pqGGsWGixWY" alt=""><figcaption></figcaption></figure>
 
-4. Next, scroll all the down to ‘resolvedDependencies’ and paste the same relative path from ‘morphResource’ into the entry here.&#x20;
+4. Scroll down and open `partsOverrides` -> `appearanceAppearancePartOverrides` -> `componentsOverrides` -> `appearancePartOverrides`
+5. Make sure the `componentName` is the same as the morphtarget component `name`, chunkMask value is correct and `partResource` is `null`
+
+<figure><img src="../../../../.gitbook/assets/2025-09-16 13 43 56.png" alt=""><figcaption></figcaption></figure>
+
+6. Next, scroll all the down to ‘resolvedDependencies’ and paste the same relative path from `morphResource` into the entry here.&#x20;
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdHQpmDNiBlnxf9WAD-irNLA7MjrWlFC3Ovn1mKosN7o9AaGI70YbWJb5lxJ0C0Fq6KX-9dxy7ykxeZinYChP2m9g8JyroXMxaVrkoBJMK7XKgI4irWZ_3TjymhN6gDlTTb49C4TA?key=WyWwGiOMdeG66pqGGsWGixWY" alt=""><figcaption></figcaption></figure>
 
