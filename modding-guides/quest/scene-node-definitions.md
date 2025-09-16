@@ -1,6 +1,106 @@
-# Scene Node Definitions
+---
+description: Documentation of how specific quest and scene nodes work
+---
 
-## 🔀Flow Control
+# Quest and Scene Node Definitions
+
+
+
+## 🔀 Switch
+
+`questSwitchNodeDefinition`
+
+### What it does
+
+The Switch node is a conditional branching tool that evaluates an array of conditions and routes execution flow based on which conditions are true. It operates in one of two modes controlled by the `behaviour` property:
+
+* **First\_Fulfilled**: Sequential evaluation that stops at the first TRUE condition and activates only that output path (like a switch/case statement)
+* **All\_Fulfilled**: Evaluates all conditions and activates every output path whose condition is TRUE, allowing multiple simultaneous branches
+
+Each condition in the array maps to a specific output socket via its `socketId`. The socket naming follows the pattern `Case{socketId}` (e.g., Case1469077306, Case605022730). The node also provides an "Otherwise" socket that fires when no conditions match (First\_Fulfilled mode) or when you need a default fallback path.
+
+{% hint style="info" %}
+You can add a new socket/condition pair directly to a Switch node by right clicking on it and selecting 'Add Case' in Wolvenkit
+{% endhint %}
+
+### Sockets
+
+| Socket         | Direction | Type      | Description                                                                           |
+| -------------- | --------- | --------- | ------------------------------------------------------------------------------------- |
+| In             | In        | Execution | Triggers the condition evaluation                                                     |
+| Case{socketId} | Out       | Execution | Dynamic output sockets created for each condition, named with their socketId value    |
+| Otherwise      | Out       | Execution | Default fallback path when no conditions match (primarily used with First\_Fulfilled) |
+| CutDestination | -         | Interrupt | Standard bypass/interrupt socket                                                      |
+
+Properties:
+
+| Name       | Type                       | Description                     | Values                                          |
+| ---------- | -------------------------- | ------------------------------- | ----------------------------------------------- |
+| behaviour  | questESwitchBehaviourType  | Determines evaluation mode      | `First_Fulfilled` (0), `All_Fulfilled` (1)      |
+| conditions | array\<questConditionItem> | Array of conditions to evaluate | Each item contains a `condition` and `socketId` |
+
+### Examples & Use-cases
+
+#### Example 1: Priority-Based Skill Check (First\_Fulfilled)
+
+**Goal**: Check player skills in priority order for dialogue options.
+
+```
+Switch (First_Fulfilled):
+  - Condition 1: Intelligence > 10 → Socket: Case1234 → "Hack the system"
+  - Condition 2: Strength > 10 → Socket: Case5678 → "Break down door"
+  - Condition 3: Charisma > 10 → Socket: Case9012 → "Convince guard"
+  - Otherwise → "Wait for opportunity"
+```
+
+**Result**: Only the first matching condition fires. If player has both high Intelligence and Strength, only the hacking path activates.
+
+#### Example 2: Parallel Objective Activation (All\_Fulfilled)
+
+**Questphase**: `ep1\openworld\sandbox_activities\ep1_mq304_airdrops.questphase`
+
+**Goal**: Activate all available airdrop locations that haven't been looted yet.
+
+```
+Switch (All_Fulfilled):
+  - Condition 1: sa_ep1_30_mq304_finished < 1 → Socket: Case1469077306 → PauseCondition for trigger #sa_ep1_30_tr
+  - Condition 2: sa_ep1_31_mq304_finished < 1 → Socket: Case605022730 → PauseCondition for trigger #sa_ep1_31_tr
+  - Condition 3: sa_ep1_34_mq304_finished < 1 → Socket: Case3351238505 → PauseCondition for trigger #sa_ep1_34_tr
+```
+
+**Result**: All unlooted locations activate simultaneously. Player can approach them in any order.
+
+#### Example 3: NPC Interaction Tracking (All\_Fulfilled)
+
+Questphase: `base\quest\bugfixing\sidequests\sq025\sq025_quest_bugfixes.questphase`
+
+**Scene**: Delamain garage quest **Goal**: Track which NPCs player talked to before leaving.
+
+```
+Switch (All_Fulfilled):
+  - Condition 1: (IsOutside garage AND talked_to_main_screen) → Socket: Case1549766358
+  - Condition 2: (IsOutside garage AND talked_to_receptionist) → Socket: Case3731022821
+```
+
+**Result**:
+
+* Talked to main screen only → Case1549766358 fires
+* Talked to receptionist only → Case3731022821 fires
+* Talked to both → BOTH sockets fire simultaneously
+
+### Checklist
+
+* **First\_Fulfilled** for mutually exclusive paths or priority-based selection
+* **All\_Fulfilled** for parallel execution of multiple valid conditions
+* Order matters in First\_Fulfilled - place higher priority conditions first
+* Each condition needs a unique `socketId` that maps to its `Case{socketId}` output socket
+* Socket IDs are arbitrary numbers (often large integers like 1469077306) that uniquely identify each case
+* For tracking temporal state or "most recent" conditions, use quest facts with timestamps - Switch is stateless
+* The "Otherwise" socket works best with First\_Fulfilled as a catch-all fallback
+
+***
+
+## :vertical\_traffic\_light: Flow Control
 
 [`scnFlowControlNode`](https://nativedb.red4ext.com/c/3716001461228230) and [`questFlowControlNodeDefinition`](https://nativedb.red4ext.com/c/34001554939364)
 
@@ -160,6 +260,8 @@ _should wor&#x6B;_&#xB9; : This is untested but it should work. Existing scene f
 
 ## **🌐Hub**
 
+`scnHubNode`&#x20;
+
 ### What it does
 
 The Hub node is one of the simplest but most essential tools for organizing scene graphs. Its sole function is to be a **signal merger** or **funnel**. It takes any number of incoming execution paths and combines them into a single, unified output path.
@@ -201,6 +303,10 @@ Checklist
 * Use a Hub whenever you need to merge two or more execution paths into a single path or when you need to split signals
 * It's an organizational tool: stateless, with no internal logic or properties.
 * It helps keep complex scene graphs tidy and easy to read by reducing visual clutter.
+
+
+
+Note for quest hub ie `questLogicalHubNodeDefinition` - usually it's a single In socket only but it's otherwise exactly the same.
 
 
 

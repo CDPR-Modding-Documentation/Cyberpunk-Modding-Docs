@@ -499,7 +499,7 @@
   * [Creating custom shards](modding-guides/quest/creating-custom-shards.md)
   * [Adding Animations](modding-guides/quest/adding-animations.md)
   * [How to add new text messages thread to Cyberpunk 2077](modding-guides/quest/how-to-add-new-text-messages-thread-to-cyberpunk-2077.md)
-  * [Scene Node Definitions](modding-guides/quest/scene-node-definitions.md)
+  * [Quest and Scene Node Definitions](modding-guides/quest/scene-node-definitions.md)
 * [Everything else](modding-guides/everything-else/README.md)
   * [How to Translate a Mod](modding-guides/everything-else/how-to-translate-a-mod.md)
   * [Breach Screen - Replacer](modding-guides/everything-else/breach-screen-replacer.md)
