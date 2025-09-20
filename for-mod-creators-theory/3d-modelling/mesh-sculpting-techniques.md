@@ -45,7 +45,12 @@ This page documents other techniques so you've heard about them. If you're new a
 
 ### Prerequisite: Deleting shapekeys
 
-Before you start editing your mesh, you should delete its shapekeys. This is necessary for the Sculpt Mode to show your changes in real time, and you don't need them anymore after editing your mesh.
+Before you start editing your mesh, you should **delete its shapekeys**. This is necessary for the Sculpt Mode to show your changes in real time, and you don't need them anymore after editing your mesh.
+
+1. Switch to Object Mode if you aren't
+2. Select your mesh
+3. Select any shapekey (not "Basis")
+4. Click on the down arrow (**v**) and select "delete all shapekeys", or delete them one by one starting at the bottom
 
 <figure><img src="../../.gitbook/assets/mesh_deform_shapekeys.png" alt=""><figcaption><p>Order matters, because deleting a shapekey will apply it. Start at the bottom!</p></figcaption></figure>
 
