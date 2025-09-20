@@ -6,11 +6,11 @@ description: >-
 
 # Tab: Spawned
 
-<figure><img src="../../../../.gitbook/assets/OSSpawnedMain" alt="" width="375"><figcaption><p>The main view where you organize, move, and edit your build<br>Split into top part showing what you have spawned, and a group based sructure, and bottom part showing properties of the selected element(s)</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/OSSpawnedMain" alt="" width="375"><figcaption><p>The main view where you organize, move, and edit your build<br>Split into top part showing what you have spawned, and a group based structure, and bottom part showing properties of the selected element(s)</p></figcaption></figure>
 
 ## Toolbar
 
-* At the top (Underneat the search and add group options), you will find the toolbar:
+* At the top (Underneath the search and add group options), you will find the toolbar:
 
 <figure><img src="../../../../.gitbook/assets/image (613).png" alt="" width="375"><figcaption></figcaption></figure>
 
@@ -52,7 +52,7 @@ Hovering the `I` icon gives you a list of all available shortcuts
 
 * You can change whether or not an object or group is visible by either:
   * Use the little "Eye" icon on the right of a element
-  * Press `H`, to toggle visiblity of all selected element
+  * Press `H`, to toggle visibility of all selected element
 
 <figure><img src="../../../../.gitbook/assets/OSVisibility" alt="" width="375"><figcaption><p>Change visibility of element</p></figcaption></figure>
 
@@ -120,7 +120,7 @@ A NodeRef is a unique identifier which can be used to reference one specific obj
 {% endhint %}
 
 * As already mentioned in the [Exporting to WolvenKit](../exporting-from-object-spawner.md#streaming-ranges) guide, there are multiple values controlling streaming ranges
-* The ranges found under the World Node header of each object control when that specifc object streams in / out
+* The ranges found under the World Node header of each object control when that specific object streams in / out
 * To make setting these easier, there is a "Auto-Set" button
   * As seen in the [Group properties](tab-spawned.md#group-properties) section, you can also auto-generate the values for all your builds objects at once
 * Additionally, you can activate the `Override Streaming` option, which will let you define a different position from which the streaming distances will be measured from (Instead of using the node position)
