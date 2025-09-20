@@ -1,10 +1,8 @@
 ---
-description: >-
-  This tutorial will teach you how to replace your Cyberpunk 2077 Breaching
-  Screen
+description: How to replace a video with your custom .mp4
 ---
 
-# Breach Screen - Replacer
+# Video Replacer - Breach Screen
 
 ## Tools needed:
 

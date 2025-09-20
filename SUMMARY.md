@@ -505,7 +505,7 @@
   * [Quest and Scene Node Definitions](modding-guides/quest/scene-node-definitions.md)
 * [Everything else](modding-guides/everything-else/README.md)
   * [How to Translate a Mod](modding-guides/everything-else/how-to-translate-a-mod.md)
-  * [Breach Screen - Replacer](modding-guides/everything-else/breach-screen-replacer.md)
+  * [Video Replacer - Breach Screen](modding-guides/everything-else/breach-screen-replacer.md)
   * [Effects modding](modding-guides/everything-else/effects-modding/README.md)
     * [Creating Custom FX](modding-guides/everything-else/effects-modding/creating-custom-fx.md)
   * [AMM: Custom Props](modding-guides/everything-else/custom-props/README.md)
