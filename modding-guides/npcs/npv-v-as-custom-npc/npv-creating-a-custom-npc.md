@@ -6,8 +6,8 @@ description: 'Step 2: How to create a custom NPC'
 
 ## Summary
 
-**Published**: May 13 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: Dec 01 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published**: May 13 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update**: Dec 01 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page is a part of the [NPV guide](./). It will show you how to use the [provided example project](./#preparation) to create a custom NPC for Cyberpunk 2077, whom you can then spawn with AppearanceMenuMod.
 
@@ -305,9 +305,31 @@ To hide those bits in the .app, we simply need to uncheck the corresponding boxe
 
 ### Adding stuff to an appearance
 
-Adding components is as easy as **right-clicking** an existing one and editing a few properties:
+The easiest way to add components is to duplicate an existing component.&#x20;
+
+#### For a single appearance
+
+For a single appearance, **right-click** an existing component, and edit the properties:
 
 <figure><img src="../../../.gitbook/assets/image (545).png" alt=""><figcaption><p>Make sure your component names are unique!</p></figcaption></figure>
+
+#### For all appearances
+
+To edit all appearances, use the menu bar entries under `Appearances` -> `Edit Components.`
+
+1. Select "Create new component from existing"
+2. Use the filter to find an appearance that you want to duplicate (e.g for a clothing item, duplicate a clothing component)
+3. Give the component a **unique** name! You need this in the next step
+
+<figure><img src="../../../.gitbook/assets/npv_adding_component_duplicate_existing.png" alt=""><figcaption></figcaption></figure>
+
+4. Now, use "Change mesh component properties"
+5. For "New component name", select the one from step 3
+6. The other properties should be self-explanatory — this will edit the component's depot path, mesh appearance, and chunk mask.
+
+<figure><img src="../../../.gitbook/assets/npv_adding_components_properties.png" alt=""><figcaption></figcaption></figure>
+
+7. If you need to change more about your component, use the [Search Bar](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor/editor-toolbar#search-bar "mention") to display only your new component across all appearances.
 
 ## Adding modded items
 
