@@ -86,6 +86,10 @@ And it's very simple to do. You simply assign empty `chunkMaterials` lists to al
 
 Now, you only have to maintain one chunk list, and the rest of your appearances are simplified down to a single name and nothing else.
 
+{% hint style="info" %}
+To use appearance expansion for patch meshes, you should add the **template name** to the empty appearance's tags. In our example above, that would be `black_gold`.
+{% endhint %}
+
 #### Mesh Appearance: Auto Expansion
 
 Here's another example:
