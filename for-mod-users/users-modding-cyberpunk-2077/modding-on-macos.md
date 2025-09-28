@@ -57,6 +57,22 @@ xattr -r -d com.apple.quarantine "/Applications/Cyberpunk 2077/engine/tools/"
 {% endstep %}
 
 {% step %}
+### Download input loader for macOS
+
+Find the latest release on the [GitHub Releases](https://github.com/risner/cyberpunk2077-input-loader-mac/releases/) for redscript
+
+{% endstep %}
+
+{% step %}
+### Install input loader to your game directory
+
+Copy the contents of the zip/folder to your Cyberpunk 2077 install folder (the one with `Cyberpunk2077.app`). The default locations can be found here:
+
+* Steam: `~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/`
+* Non-Steam (e.g. GOG or AppStore): `/Applications/Cyberpunk 2077/`&#x20;
+{% endstep %}
+
+{% step %}
 ### Make sure your script is executable
 
 ```bash
@@ -73,7 +89,7 @@ The MacOS build of Cyberpunk 2077 will not start redscript automatically like th
 
 _a) Steam:_
 
-**TODO:** Steam is tricky one, as it doesn't allow to pick custom executable. Main idea is to rename original executable `Cyberpunk2077` to `Cyberpunk2077_real`, then ranaming `launch_modded.sh`  script to executable-like file, adjusting the code to call actual executable after redscript is compiled and finally making it recognize-able for macOS as such. If you find it hard, use option two or three, by running it manually with every new mod or every time.
+**TODO:** Steam is tricky one, as it doesn't allow to pick custom executable. Main idea is to rename original executable `Cyberpunk2077` to `Cyberpunk2077_real`, then renaming `launch_modded.sh`  script to executable-like file, adjusting the code to call actual executable after redscript is compiled and finally making it recognize-able for macOS as such. If you find it hard, use option two or three, by running it manually with every new mod or every time.
 
 1. Rename the executable inside `Cyberpunk2077.app` :
 
