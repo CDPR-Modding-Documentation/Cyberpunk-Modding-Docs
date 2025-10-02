@@ -6,8 +6,8 @@ description: An item addition with dynamic appearances, and what you can do for 
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Published:** 29 Oct. 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: Jul 05 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** 29 Oct. 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update**: Jul 05 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will cover a sub-case of [..](../ "mention")via ArchiveXL (added in 1.13). Dynamic variants are both **easier** and **more flexible**. Unless you don't need different appearances, you will want to default to this approach.
 
@@ -168,6 +168,10 @@ Game.AddToInventory("Items.my_custom_shirt_dynamic_black_blue")
 Like the record names, the `displayName` property is also generated for each entry:
 
 ```yaml
+displayName: my_custom_shirt_dynamic_i18n_$(base_color)_$(ribbons)
+```
+
+```yaml
   $instances:
     - { base_color: white, ribbons: red,  icon: 01 } # my_custom_shirt_dynamic_i18n_white_red
     - { base_color: black, ribbons: red,  icon: 02 } # my_custom_shirt_dynamic_i18n_black_red
@@ -179,6 +183,12 @@ All you need to do is to make sure that such an entry exists in your [localizati
 #### Icons
 
 The icon name in the record is also generated for each entry. They are all using the same [inkatlas](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md), but you can generate that as well if you want - I've done it for the [Netrunner suits](https://www.nexusmods.com/cyberpunk2077/mods/9314), since I needed more than 100 icons.
+
+```yaml
+icon:
+    atlasResourcePath: tutorial\torso\my_custom_shirt_dynamic_variants\ops\preview_icons.inkatlas
+    atlasPartName: slot_$(icon)
+```
 
 ```yaml
   $instances:
