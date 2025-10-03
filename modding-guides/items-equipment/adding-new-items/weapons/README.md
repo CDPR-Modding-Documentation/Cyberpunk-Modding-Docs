@@ -206,6 +206,11 @@ Set $base like this:
   $base: Items.IconicWeaponModBase
 ```
 
+### My weapon is invisible in FPP!
+
+* Try using a different weapon `$base`  in your yaml - for example, `Items.Preset_Hammer_Default` works, while `Items.Preset_Hammer_Sasquatch` doesn't
+* Copy the components from the `mesh_entity` to the .app as mentioned in [#getting-the-mesh\_entity.ent](./#getting-the-mesh_entity.ent "mention")
+
 ### My weapon is spawning as the original weapon/my mesh edit isn't reflecting!
 
 Make sure all the items under "resolvedDependencies" are deleted in your appearances, especially if they are using "Soft" or "Embedded" flags. The game might load vanilla meshes instead of your own meshes.&#x20;
