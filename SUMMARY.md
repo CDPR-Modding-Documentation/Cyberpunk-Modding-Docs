@@ -159,6 +159,7 @@
     * [Videos: .bk2](for-mod-creators-theory/files-and-what-they-do/file-formats/videos-.bk2.md)
     * [.community files](for-mod-creators-theory/files-and-what-they-do/file-formats/.community-files.md)
     * [Razer Chroma integration: .chromaset](for-mod-creators-theory/files-and-what-they-do/file-formats/.chromaset-razer-chroma-integration.md)
+    * [Save file: .dat](for-mod-creators-theory/files-and-what-they-do/file-formats/save-file-.dat.md)
     * [Entity: .ent files](for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/README.md)
       * [Collision](for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/collision.md)
     * [Game icons: .inkatlas files](for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md)

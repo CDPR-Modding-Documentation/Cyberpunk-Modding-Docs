@@ -21,6 +21,14 @@ This file contains a list of appearances with their associated **components**. T
 
 Holds a list of components.
 
+## .dat (Save file data)
+
+This file contains compressed save game information, as well as descriptors for a node tree that represents the save data internally.
+
+{% content-ref url="save-file-.dat.md" %}
+[save-file-.dat.md](save-file-.dat.md)
+{% endcontent-ref %}
+
 ## .ent (Entity)
 
 ### Root entity
