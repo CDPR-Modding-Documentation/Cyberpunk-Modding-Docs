@@ -9,7 +9,7 @@ This guide is currently a work in progress.
 {% endhint %}
 
 {% hint style="info" %}
-## Modding Support on MacOS (or Lack Thereof)
+### Modding Support on MacOS (or Lack Thereof)
 
 At the time of writing, the only framework mod that is unofficially supported on the MacOS build of Cyberpunk 2077 is [redscript](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/) starting with the 0.5.29 build. As such, the only mods that are supported on MacOS are pure **redscript-only** mods (i.e. no Codeware, no ArchiveXL, etc.)
 
@@ -20,7 +20,7 @@ Additionally, due to the security features built into MacOS, modding the game is
 
 {% stepper %}
 {% step %}
-### Download redscript for macOS
+#### Download redscript for macOS
 
 Find the latest release on the [GitHub Releases](https://github.com/jac3km4/redscript/releases/) for redscript
 
@@ -30,16 +30,16 @@ Be sure to download `redscript-vX.X.XX-macos.zip` , NOT `redscript-cli-aarch64-d
 {% endstep %}
 
 {% step %}
-### Install redscript to your game directory
+#### Install redscript to your game directory
 
 Copy the contents of the zip/folder to your Cyberpunk 2077 install folder (the one with `Cyberpunk2077.app`). The default locations can be found here:
 
 * Steam: `~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/`
-* Non-Steam (e.g. GOG or AppStore): `/Applications/Cyberpunk 2077/`&#x20;
+* Non-Steam (e.g. GOG or AppStore): `/Applications/Cyberpunk 2077/`
 {% endstep %}
 
 {% step %}
-### Unblock redscript in macOS
+#### Unblock redscript in macOS
 
 Open the Terminal app and run the following command to tell MacOS redscript is safe to run:
 
@@ -57,23 +57,22 @@ xattr -r -d com.apple.quarantine "/Applications/Cyberpunk 2077/engine/tools/"
 {% endstep %}
 
 {% step %}
-### Download input loader for macOS
+#### Download input loader for macOS
 
 Find the latest release on the [GitHub Releases](https://github.com/risner/cyberpunk2077-input-loader-mac/releases/) for redscript
-
 {% endstep %}
 
 {% step %}
-### Install input loader to your game directory
+#### Install input loader to your game directory
 
 Copy the contents of the zip/folder to your Cyberpunk 2077 install folder (the one with `Cyberpunk2077.app`). The default locations can be found here:
 
 * Steam: `~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/`
-* Non-Steam (e.g. GOG or AppStore): `/Applications/Cyberpunk 2077/`&#x20;
+* Non-Steam (e.g. GOG or AppStore): `/Applications/Cyberpunk 2077/`
 {% endstep %}
 
 {% step %}
-### Make sure your script is executable
+#### Make sure your script is executable
 
 ```bash
 chmod +x "/Applications/Cyberpunk 2077/launch_modded.sh"
@@ -89,7 +88,7 @@ The MacOS build of Cyberpunk 2077 will not start redscript automatically like th
 
 _a) Steam:_
 
-**TODO:** Steam is tricky one, as it doesn't allow to pick custom executable. Main idea is to rename original executable `Cyberpunk2077` to `Cyberpunk2077_real`, then renaming `launch_modded.sh`  script to executable-like file, adjusting the code to call actual executable after redscript is compiled and finally making it recognize-able for macOS as such. If you find it hard, use option two or three, by running it manually with every new mod or every time.
+**TODO:** Steam is tricky one, as it doesn't allow to pick custom executable. Main idea is to rename original executable `Cyberpunk2077` to `Cyberpunk2077_real`, then renaming `launch_modded.sh` script to executable-like file, adjusting the code to call actual executable after redscript is compiled and finally making it recognize-able for macOS as such. If you find it hard, use option two or three, by running it manually with every new mod or every time.
 
 1. Rename the executable inside `Cyberpunk2077.app` :
 
@@ -146,7 +145,7 @@ Manually launch the script every time or with every new mod installed.
 
 or
 
-* From Terminal, `cd` to your Cyberpunk 2077 folder (the same as before) and run `./launch_modded.sh`&#x20;
+* From Terminal, `cd` to your Cyberpunk 2077 folder (the same as before) and run `./launch_modded.sh`
 
 ### 3. Manually run redscript, then launch the game normally
 

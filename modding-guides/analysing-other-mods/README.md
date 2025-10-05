@@ -68,11 +68,21 @@ That's it! You now have the file in your mod project and can start editing.
 
 Make sure that you actually have a Wolvenkit project opened (you will see the project name in the top-right corner next to the close button). Can't add files to a project if there's no project!
 
-### Everything is scrambled / there are a bunch of .bin files
+### All file names are numbers / there are only bin files
 
 You have found a mod that is not compatible with the current hashing algorithm. Long (and sad) story short, from time to time that needs an update, and then anything packed with a different version of the algorithm won't resolve anymore.
 
-You can try opening the `.archive` with Wolvenkit [8.9](https://github.com/WolvenKit/WolvenKit/releases/tag/8.9.0) or [8.7](https://github.com/WolvenKit/WolvenKit/releases/tag/8.7.0) - anything older will be incompatible with game versions >= 1.6.&#x20;
+{% hint style="info" %}
+The good news is that **you can still use those files**. The bad news is that you have to guess which is which.&#x20;
+{% endhint %}
+
+To try and resolve that, switch to the mod browser, and click the crosshair bu<sub>tt</sub>on next to the search bar. This will scan your mods for a way to resolve those hashes.
+
+<figure><img src="../../.gitbook/assets/analysing_mods_broken_hashes.png" alt=""><figcaption></figcaption></figure>
+
+If that doesn't work, you can try opening the `.archive` with Wolvenkit [8.9](https://github.com/WolvenKit/WolvenKit/releases/tag/8.9.0) or [8.7](https://github.com/WolvenKit/WolvenKit/releases/tag/8.7.0) - anything older will be incompatible with game versions >= 1.6.&#x20;
+
+If neither of these work, then you'll have to try and guess.
 
 #### Didn't work
 
