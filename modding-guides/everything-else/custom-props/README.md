@@ -216,6 +216,12 @@ If you stick to this naming convention and have your filenames end in `_d` or `_
 
 You can learn more about textured materials [here](../../../for-mod-creators-theory/materials/#textured). This is not necessary for the purpose of this guide.
 
+{% hint style="info" %}
+**Optional Blender helper — Atlasify Selected Object**  
+If your source mesh comes with many material slots/textures but you only need a single textured mesh for `template_textured.mesh`, this Blender script duplicates the selected object, builds **BaseColor** and **Normal** atlases, remaps UVs to a new `BAKE_ATLAS`, and assigns a single material—so you end up with **one slot, one material, one base color and one normal texture**.  
+**GitHub:** https://github.com/AlexRynas/Atlasify_Selected_Object
+{% endhint %}
+
 #### template\_multilayered.mesh
 
 A pre-configured [mesh](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) for a multilayered material. Uses the following files in the subfolder `textures`:
