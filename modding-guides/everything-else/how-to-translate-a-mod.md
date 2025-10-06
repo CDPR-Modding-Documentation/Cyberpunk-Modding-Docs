@@ -15,6 +15,10 @@ Last documented edit: 25 May 2024 by Vanaukas
 
 This guide will teach you how to add translation files for existing mods.&#x20;
 
+### Wait, this is not what I want!
+
+For a general explanation on how to add translations, check [translation-files-.json.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/translation-files-.json.md "mention")
+
 ***
 
 {% hint style="info" %}
