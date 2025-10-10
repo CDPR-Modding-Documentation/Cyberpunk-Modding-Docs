@@ -178,6 +178,7 @@
       * [Environment: Level of Detail](for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/environment-level-of-detail.md)
       * [NodeRefs](for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/noderefs.md)
       * [.streamingBlock: Sector definitions and -variants](for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector/.streamingblock-sector-definitions-and-variants.md)
+    * [Translation files: .json](for-mod-creators-theory/files-and-what-they-do/file-formats/translation-files-.json.md)
   * [Audio files](for-mod-creators-theory/files-and-what-they-do/audio-files.md)
   * [Camera](for-mod-creators-theory/files-and-what-they-do/camera.md)
   * [Components](for-mod-creators-theory/files-and-what-they-do/components/README.md)

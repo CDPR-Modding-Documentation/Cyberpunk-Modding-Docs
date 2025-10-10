@@ -101,6 +101,65 @@ An example for `t0_000_pma_base__full` (the default body component, torso+legs):
 -1970
 ```
 
+If you're using Equipment-EX slots for your clothing items, then the score is determined by outfit slot you are using. The scoring follows the same logic,  i.e. items in slots with higher scores will squish items in slots with lower scores. The garment scores for each outfit slot are:
+
+```
+OutfitSlots.Head = 310000
+OutfitSlots.Balaclava = 160000
+OutfitSlots.Mask = 170000
+OutfitSlots.Glasses = 190000
+OutfitSlots.Eyes = 130000
+OutfitSlots.EyeLeft = 140000
+OutfitSlots.EyeRight = 140000
+OutfitSlots.Wreath = 180000
+OutfitSlots.EarLeft = 140000
+OutfitSlots.EarRight = 140000
+OutfitSlots.Neckwear = 200000
+OutfitSlots.NecklaceTight = 190000
+OutfitSlots.NecklaceShort = 190000
+OutfitSlots.NecklaceLong = 190000
+OutfitSlots.TorsoUnder = 120000
+OutfitSlots.TorsoInner = 150000
+OutfitSlots.TorsoMiddle = 180000
+OutfitSlots.TorsoOuter = 210000
+OutfitSlots.TorsoAux = 240000
+OutfitSlots.Back = 220000
+OutfitSlots.Waist = 200000
+OutfitSlots.ShoulderLeft = 200000
+OutfitSlots.ShoulderRight = 200000
+OutfitSlots.ElbowLeft = 200000
+OutfitSlots.ElbowRight = 200000
+OutfitSlots.WristLeft = 160000
+OutfitSlots.WristRight = 160000
+OutfitSlots.Hands = 160000
+OutfitSlots.HandLeft = 170000
+OutfitSlots.HandRight = 170000
+OutfitSlots.HandPropLeft = 310000
+OutfitSlots.HandPropRight = 310000
+OutfitSlots.FingersLeft = 180000
+OutfitSlots.FingersRight = 180000
+OutfitSlots.FingernailsLeft = 100000
+OutfitSlots.FingernailsRight = 100000
+OutfitSlots.LegsInner = 130000
+OutfitSlots.LegsMiddle = 160000
+OutfitSlots.LegsOuter = 190000
+OutfitSlots.ThighLeft = 140000
+OutfitSlots.ThighRight = 140000
+OutfitSlots.KneeLeft = 140000
+OutfitSlots.KneeRight = 140000
+OutfitSlots.AnkleLeft = 140000
+OutfitSlots.AnkleRight = 140000
+OutfitSlots.Feet = 180000
+OutfitSlots.ToesLeft = 120000
+OutfitSlots.ToesRight = 120000
+OutfitSlots.ToenailsLeft = 100000
+OutfitSlots.ToenailsRight = 100000
+OutfitSlots.BodyUnder = 110000
+OutfitSlots.BodyInner = 140000
+OutfitSlots.BodyMiddle = 170000
+OutfitSlots.BodyOuter = 300000
+```
+
 
 
 ## Troubleshooting Garment Support
