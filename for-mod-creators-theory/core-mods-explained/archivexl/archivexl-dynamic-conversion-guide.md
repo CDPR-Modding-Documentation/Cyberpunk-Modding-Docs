@@ -123,9 +123,9 @@ By using `!` in the `appearanceName`, we're telling ArchiveXL that everything af
 This is the reason why we've used only `appearance_root_entity_` as the appearanceName, and not the whole ordeal.
 {% endhint %}
 
-The `+` in the `variant` **splits it up**. If we didn't have it, we couldn't use `variant_1` and `variant_2`.
+The `+` in the `variant` allows you to reference each substitution by its index. In this case, `variant.1` is the first element (before the `+`), `variant.2` (after the `+`), and if you wanted more substitution variables, you could add more `+` and reference `variant.3`, `variant.4`, etc.
 
-#### How would that look?
+#### What if I don't use +?
 
 Let's compare our setup ( `*mesh_{variant.2}_{variant.1}`)  to the alternative.
 
@@ -138,7 +138,7 @@ appearanceName: appearance_root_entity!$(shirt)_$(ribbons)
 Our `meshAppearance` would be `*mesh_{variant}`.
 
 {% hint style="info" %}
-Without the split, we need to make sure to pass the variant `exactly as expected`.
+Without the split, there's no way to reference the individual substitutions.
 {% endhint %}
 
 ## Recap
