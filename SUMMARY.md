@@ -362,7 +362,6 @@
 * [Textures, LUTs and Materials](modding-guides/textures-and-luts/README.md)
   * [Textures: Importing, editing, exporting](modding-guides/textures-and-luts/images-importing-editing-exporting.md)
   * [Textures: Custom .mlmask](modding-guides/textures-and-luts/custom-multilayermasks.md)
-  *
   * [Self-made normal maps](modding-guides/textures-and-luts/self-made-normal-maps/README.md)
     * [Troubleshooting normal maps](modding-guides/textures-and-luts/self-made-normal-maps/troubleshooting-normal-maps.md)
   * [Making Custom Microblends](modding-guides/textures-and-luts/making-custom-microblends.md)
@@ -428,6 +427,7 @@
   * [Overheating Parts on Vehicles](modding-guides/vehicles/overheating-parts-on-vehicles.md)
   * [Vehicle Destruction](modding-guides/vehicles/vehicle-destruction.md)
   * [For Reference: Exhaust Backfire](modding-guides/vehicles/for-reference-exhaust-backfire.md)
+  * [Changing Handling & Speed For Modded Vehicles](modding-guides/vehicles/changing-handling-and-speed-for-modded-vehicles.md)
 * [World Editing](modding-guides/world-editing/README.md)
   * [World Builder](modding-guides/world-editing/object-spawner/README.md)
     * [Usage and Features](modding-guides/world-editing/object-spawner/usage-and-features.md)
