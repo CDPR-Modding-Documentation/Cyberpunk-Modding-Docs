@@ -6,9 +6,26 @@ description: >-
 
 # Adding custom resources / props
 
+## Summary
+
+**Created:** Mar 18 2025 by [keanuWheeze](https://app.gitbook.com/u/WBUIHettvKP7ke8K6KFd7L9ZTtG2 "mention")\
+**Last documented edit**: Oct 20 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+
+This page will show you how to register existing props with WorldBuilder.
+
 ## Custom resource list
 
-*   To permanently add any custom resource (E.g. `.ent`, `.mesh`, `.mi` etc.) to the list of things you can spawn via the "Spawn New" tab, you can do the following:
+To permanently add any custom resource (E.g. `.ent`, `.mesh`, `.mi` etc.) to the list of things you can spawn via the "Spawn New" tab, you can do the following:
+
+### With Wolvenkit (recommended)
+
+From the File menu, select Add New... and then&#x20;
+
+{% hint style="success" %}
+You can spawn things from their resource path without registering them with WorldBuilder. On the "Spawn New" tab, paste it into the search bar, and when you are told that it was not found, select "Spawn anyway".
+{% endhint %}
+
+*
 
     * Locate the data folder, found in `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\entSpawner\data\spawnables\...`
     * Find the specific sub folder for the type of resource you wish to spawn
@@ -17,10 +34,6 @@ description: >-
     * Add all the resource paths you want to the file, each path being on a new line
 
     <figure><img src="../../../../.gitbook/assets/OSCustomResourcesFolderStructure" alt="" width="563"><figcaption><p>Example of how it looks like when you have added your text file containing the cutom paths, in this case containing <code>.ent</code> paths</p></figcaption></figure>
-
-{% hint style="success" %}
-If you do not want to do this, and just want to quickly spawn something from it's resource path, simply paste it into the "Spawn New" tabs search bar, and press "Spawn anyways" if you get told that it cannot be found
-{% endhint %}
 
 ## Importing AMM props
 

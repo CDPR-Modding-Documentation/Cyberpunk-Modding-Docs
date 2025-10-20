@@ -17,11 +17,12 @@ This guide will teach you how to create AMM props in two variants:
 Its focus is on the **file structure** and the **relations between the files**.
 
 {% hint style="danger" %}
-For another guide regarding custom props, check [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention") – it will focus on the possibilities you have with different materials, while this guide focuses on the process and the structure.
+For another guide regarding custom props, check [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention") – it will focus on the possibilities you have with different materials, while this guide focuses on the process and the structure.
 {% endhint %}
 
 ### Wait, this isn't what I want!
 
+* To register existing props or items with WorldBuilder, check [adding-custom-resources-props.md](../../world-editing/object-spawner/features-and-guides/adding-custom-resources-props.md "mention")
 * If you want to play around with materials and an existing prop, check [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
 * If you want to enable collisions, see [enable-embedded-collisions.md](../../world-editing/miscellaneous/enable-embedded-collisions.md "mention")
 * If you want to make meshes out of 2d textures, see [your-image-as-custom-mesh.md](../../../for-mod-creators-theory/3d-modelling/your-image-as-custom-mesh.md "mention")
@@ -217,9 +218,9 @@ If you stick to this naming convention and have your filenames end in `_d` or `_
 You can learn more about textured materials [here](../../../for-mod-creators-theory/materials/#textured). This is not necessary for the purpose of this guide.
 
 {% hint style="info" %}
-**Optional Blender helper — Atlasify Selected Object**  
-If your source mesh comes with many material slots/textures but you only need a single textured mesh for `template_textured.mesh`, this Blender script duplicates the selected object, builds **BaseColor** and **Normal** atlases, remaps UVs to a new `BAKE_ATLAS`, and assigns a single material—so you end up with **one slot, one material, one base color and one normal texture**.  
-**GitHub:** https://github.com/AlexRynas/Atlasify_Selected_Object
+**Optional Blender helper — Atlasify Selected Object**\
+If your source mesh comes with many material slots/textures but you only need a single textured mesh for `template_textured.mesh`, this Blender script duplicates the selected object, builds **BaseColor** and **Normal** atlases, remaps UVs to a new `BAKE_ATLAS`, and assigns a single material—so you end up with **one slot, one material, one base color and one normal texture**.\
+**GitHub:** https://github.com/AlexRynas/Atlasify\_Selected\_Object
 {% endhint %}
 
 #### template\_multilayered.mesh
