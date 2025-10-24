@@ -6,7 +6,7 @@ description: EntSlotComponent and EntEffectSpawnerComponent
 
 ## Summary
 
-**Published**: Feb 09 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Published**: Feb 09 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented edit:** Mar 4 2024 by [86maylin](https://app.gitbook.com/u/LhwshjuFJ4QwCwG11Ze4zIVyGqM2 "mention")
 
 This page will tell you how effect components work and how they interact with each other.
@@ -15,7 +15,7 @@ This page will tell you how effect components work and how they interact with ea
 
 For an overview on existing effect materials, check [fx-material-properties.md](../../../materials/configuring-materials/fx-material-properties.md "mention")
 
-For a guide on how to use effects, check [amm-light-components.md](../../../../modding-guides/everything-else/custom-props/amm-light-components.md "mention")
+For a guide on how to use effects, check [amm-light-components.md](../../../3d-modelling/custom-props/amm-light-components.md "mention")
 
 ## Effect component types
 
@@ -76,5 +76,5 @@ eventRUID in the ent component must be the same as the effect particles ruid, an
 
 ## Placing effect components
 
-Please check [amm-light-components.md](../../../../modding-guides/everything-else/custom-props/amm-light-components.md "mention") -> [#placing-your-light-components](../../../../modding-guides/everything-else/custom-props/amm-light-components.md#placing-your-light-components "mention") for a detailed guide!
+Please check [amm-light-components.md](../../../3d-modelling/custom-props/amm-light-components.md "mention") -> [#placing-your-light-components](../../../3d-modelling/custom-props/amm-light-components.md#placing-your-light-components "mention") for a detailed guide!
 

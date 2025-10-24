@@ -6,14 +6,14 @@ description: How to customize NPCs with AMM
 
 ## **Summary**
 
-**Published:** Nov 27 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: Jun 02 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** Nov 27 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update**: Jun 02 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will show you how to create fully custom NPCs for AMM.
 
 ### Wait, that's not what I want!
 
-* If you want to create [custom-props](../../everything-else/custom-props/ "mention") instead, check the link.
+* If you want to create [custom-props](../../../for-mod-creators-theory/3d-modelling/custom-props/ "mention") instead, check the link.
 * If you want to add new appearances to already existing NPCs, check [amm-custom-npc-appearances.md](amm-custom-npc-appearances.md "mention")
 * If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/ "mention"). (It's a more advanced version of this workflow)
 
@@ -37,7 +37,7 @@ You need **at least** the following versions and mods (newer is fine):
 
 ## Step 0: Setting up
 
-1. Create a [Wolvenkit project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name that you can remember
+1. Create a [Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name that you can remember
 2. Download the example project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/11268/)
 3. Extract the downloaded zip file into your project's root directory (the `source` folders should merge).
 4. You should now see the following files:
@@ -63,9 +63,9 @@ Alright, here's how you go about making changes:
 
 Read this section if you want to take the example project and mod a different NPC than Mamá Welles. Otherwise, you can check out [#adding-more-appearances](./#adding-more-appearances "mention") below.
 
-1. Find the NPC's `.app` or `.ent` file by using the [Wolvenkit Search](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).
-2. If you've found an `.app`, use "[find files using this](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this)" to find the correct `.ent`
-3. [Add them both to your project](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects)
+1. Find the NPC's `.app` or `.ent` file by using the [Wolvenkit Search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files).
+2. If you've found an `.app`, use "[find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this)" to find the correct `.ent`
+3. [Add them both to your project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects)
 4. Replace the .ent and the .app in your project with the NPC's original files
 5. Adjust the .lua:
    1. `entity_info` => `path` **must** point at your `.ent` file
@@ -87,7 +87,7 @@ In the `.lua` file, add an appearance to the `appearances` array to register it 
 2. Optional, but recommended: Delete all appearances that you don't want, but keep one for the next step.
 3. Create a new appearance:
    1. Select an existing item
-   2. Right-click and select "[Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
+   2. Right-click and select "[Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
    3. In the new entry, change the following fields:
       1. `name`: must match the name that you just registered in the `.lua`
       2. `appearanceName`: must match the name that you are going to use in the .app file in step 3.3
@@ -98,7 +98,7 @@ In the `.lua` file, add an appearance to the `appearances` array to register it 
 2. Optional, but recommended: Delete all appearances that you don't want, but keep one for the next step.
 3. Create a new appearance:
    1. Select an existing appearance
-   2. Right-click and select "[Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP\_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
+   2. Right-click and select "[Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
    3. Change the appearance's `name` to the value you used in step 2.3.2
 
 Now it's time to adjust the components. This guide won't go into detail about this — see [appearances-change-the-looks](../appearances-change-the-looks/ "mention") for more intel on the process.

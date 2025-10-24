@@ -11,12 +11,12 @@ Serves as the top-level container for **entities** and their properties within t
 For the purpose of modding, we distinguish between two different kinds of entity files.&#x20;
 
 {% hint style="info" %}
-To see a minimal example in action, see the guide for [creating custom props](../../../../modding-guides/everything-else/custom-props/#entity-file).
+To see a minimal example in action, see the guide for [creating custom props](../../../3d-modelling/custom-props/#entity-file).
 {% endhint %}
 
 ## Mesh/Component entity (simple entity)
 
-The minimal way of adding something (e.g. meshes) to the game. This entity can be directly spawned (e.g. [via AMM](../../../../modding-guides/everything-else/custom-props/#without-variants)) or referenced from within[ ](../appearance-.app-files/)[appearance-.app-files](../appearance-.app-files/ "mention").
+The minimal way of adding something (e.g. meshes) to the game. This entity can be directly spawned (e.g. [via AMM](../../../3d-modelling/custom-props/#without-variants)) or referenced from within[ ](../appearance-.app-files/)[appearance-.app-files](../appearance-.app-files/ "mention").
 
 <figure><img src="../../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>This entity adds four physical mesh components, which will appear when it is spawned. It does not reference an .app file and does not have appearances.</p></figcaption></figure>
 
@@ -30,7 +30,7 @@ This is good practice to avoid repetition, and also to make it easy on yourself 
 
 ## Root entity
 
-The **entry point** for the game to display an [NPC](../../../../modding-guides/npcs/appearances-change-the-looks/#the-.ent-file) or [prop](../../../../modding-guides/everything-else/custom-props/). This kind of entity only defines those [components](../../components/) that are shared among all appearances. Meshes are defined in the [app file](../appearance-.app-files/), where they can be assigned different properties (e.g. materials) per appearance.&#x20;
+The **entry point** for the game to display an [NPC](../../../../modding-guides/npcs/appearances-change-the-looks/#the-.ent-file) or [prop](../../../3d-modelling/custom-props/). This kind of entity only defines those [components](../../components/) that are shared among all appearances. Meshes are defined in the [app file](../appearance-.app-files/), where they can be assigned different properties (e.g. materials) per appearance.&#x20;
 
 {% hint style="warning" %}
 This file is how the game handles **item uniqueness**. For that reason, you should have one root entity per item. If you put multiple entries into the same file, then you can't wear them simultaneously (for e.g. EquipmentEx).
@@ -41,7 +41,7 @@ From ArchiveXL item additions, this kind of file is usually called a **root enti
 <figure><img src="../../../../.gitbook/assets/root_entity.png" alt=""><figcaption></figcaption></figure>
 
 * An entity file can define multiple appearances, which can point to different .app files.&#x20;
-* For [creating props](../../../../modding-guides/everything-else/custom-props/), **root entities** are used as the defining key (one entity => one item, which can have multiple appearances)
+* For [creating props](../../../3d-modelling/custom-props/), **root entities** are used as the defining key (one entity => one item, which can have multiple appearances)
 * Names support [suffixes](../../../../modding-guides/items-equipment/adding-new-items/#suffixes-and-whether-you-need-them), allowing you to load different appearances based on body gender or camera mode. These are only used for player equipment and look like `&FPP`
 * How you split your .app files is largely a matter of taste. At CDPR, they usually shove everything into one file.
 

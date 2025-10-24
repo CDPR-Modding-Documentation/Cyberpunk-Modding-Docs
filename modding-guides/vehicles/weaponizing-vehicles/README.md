@@ -8,7 +8,7 @@ icon: raygun
 ## Summary
 
 Published: Mar 29 2025 by MisterChedda\
-Last documented edit: Mar 30 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented edit: Mar 30 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will teach you how to turn a civilian car into a weaponized vehicle by copying the correct properties from a car that is already combat-ready.
 
@@ -148,7 +148,7 @@ They look like this:
 ### 3. Adjusting the weapon positions
 
 {% hint style="info" %}
-To find the right offsets, check [#placing-lights-and-effects](../../everything-else/custom-props/amm-light-components.md#placing-lights-and-effects "mention"). The process is the same here - although the offsets are finicky and you'll probably end up falling back to trial\&error.
+To find the right offsets, check [#placing-lights-and-effects](../../../for-mod-creators-theory/3d-modelling/custom-props/amm-light-components.md#placing-lights-and-effects "mention"). The process is the same here - although the offsets are finicky and you'll probably end up falling back to trial\&error.
 {% endhint %}
 
 You can adjust your wepaon's position relative to the car in two places:&#x20;

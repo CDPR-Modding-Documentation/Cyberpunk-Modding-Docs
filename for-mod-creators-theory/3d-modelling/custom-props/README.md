@@ -17,17 +17,17 @@ This guide will teach you how to create AMM props in two variants:
 Its focus is on the **file structure** and the **relations between the files**.
 
 {% hint style="danger" %}
-For another guide regarding custom props, check [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention") – it will focus on the possibilities you have with different materials, while this guide focuses on the process and the structure.
+For another guide regarding custom props, check [textured-items-and-cyberpunk-materials.md](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention") – it will focus on the possibilities you have with different materials, while this guide focuses on the process and the structure.
 {% endhint %}
 
 ### Wait, this isn't what I want!
 
-* To register existing props or items with WorldBuilder, check [adding-custom-resources-props.md](../../world-editing/object-spawner/features-and-guides/adding-custom-resources-props.md "mention")
-* If you want to play around with materials and an existing prop, check [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
-* If you want to enable collisions, see [enable-embedded-collisions.md](../../world-editing/miscellaneous/enable-embedded-collisions.md "mention")
-* If you want to make meshes out of 2d textures, see [your-image-as-custom-mesh.md](../../../for-mod-creators-theory/3d-modelling/your-image-as-custom-mesh.md "mention")
+* To register existing props or items with WorldBuilder, check [adding-custom-resources-props.md](../../../modding-guides/world-editing/object-spawner/features-and-guides/adding-custom-resources-props.md "mention")
+* If you want to play around with materials and an existing prop, check [textured-items-and-cyberpunk-materials.md](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
+* If you want to enable collisions, see [enable-embedded-collisions.md](../../../modding-guides/world-editing/miscellaneous/enable-embedded-collisions.md "mention")
+* If you want to make meshes out of 2d textures, see [your-image-as-custom-mesh.md](../your-image-as-custom-mesh.md "mention")
 * … or use the wiki's AI-assisted search function, or simply poke around
-* If you want to use a custom model (Or other resource type) with World Builder, see [Adding custom resources](../../world-editing/object-spawner/features-and-guides/adding-custom-resources-props.md)
+* If you want to use a custom model (Or other resource type) with World Builder, see [Adding custom resources](../../../modding-guides/world-editing/object-spawner/features-and-guides/adding-custom-resources-props.md)
 
 ### Video Guide
 
@@ -85,7 +85,7 @@ At any part during the process, you can [install the mod](https://app.gitbook.co
 3. Prepare your Wolvenkit project by [merging the source folder](#user-content-fn-1)[^1] you downloaded with the one from your project. By the end of it, you should have the following files:
 
 {% hint style="warning" %}
-If you want to move or rename anything, please do it as specified in [moving-and-renaming-in-existing-projects.md](../../items-equipment/moving-and-renaming-in-existing-projects.md "mention"). Doing anything else will **break the mod**.
+If you want to move or rename anything, please do it as specified in [moving-and-renaming-in-existing-projects.md](../../../modding-guides/items-equipment/moving-and-renaming-in-existing-projects.md "mention"). Doing anything else will **break the mod**.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/amm_props_structure.png" alt=""><figcaption><p>For an overview of how these files hang together, theck the <a data-mention href="./#diagram">#diagram</a> section of this guide.</p></figcaption></figure>
@@ -179,7 +179,7 @@ You add props by putting meshes directly into the components array:
 One entity file per prop, one entry in AMM's prop browser (e.g. `cube`). After spawning it, you can toggle its appearances (`white`, `black`, `glowing`) the same way you do it with NPCs.
 
 {% hint style="info" %}
-If you have [added clothing items](../../items-equipment/adding-new-items/), then this will be familiar to you. If you haven't, please ignore the link and keep reading — this is the simpler version!
+If you have [added clothing items](../../../modding-guides/items-equipment/adding-new-items/), then this will be familiar to you. If you haven't, please ignore the link and keep reading — this is the simpler version!
 {% endhint %}
 
 Edit this kind of prop by opening the following file in Wolvenkit:
@@ -215,7 +215,7 @@ A pre-configured [mesh](../../../for-mod-creators/files-and-what-they-do/3d-obje
 If you stick to this naming convention and have your filenames end in `_d` or `_n`, Wolvenkit will recognize and identify the correct settings for image import.
 {% endhint %}
 
-You can learn more about textured materials [here](../../../for-mod-creators-theory/materials/#textured). This is not necessary for the purpose of this guide.
+You can learn more about textured materials [here](../../materials/#textured). This is not necessary for the purpose of this guide.
 
 {% hint style="info" %}
 **Optional Blender helper — Atlasify Selected Object**\
@@ -227,11 +227,11 @@ If your source mesh comes with many material slots/textures but you only need a 
 
 A pre-configured [mesh](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) for a multilayered material. Uses the following files in the subfolder `textures`:
 
-* `6_layers.mlsetup`: A [multilayer setup](../../items-equipment/editing-existing-items/changing-materials-colors-and-textures/#multilayered-material) with colour properties
-* `6_layers.mlmask`: A [multilayer mask](../../../for-mod-creators-theory/materials/multilayered/), determining which parts of the mesh are affected by which layer of the mlsetup. In this case, it just contains six blank layers.
+* `6_layers.mlsetup`: A [multilayer setup](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/#multilayered-material) with colour properties
+* `6_layers.mlmask`: A [multilayer mask](../../materials/multilayered/), determining which parts of the mesh are affected by which layer of the mlsetup. In this case, it just contains six blank layers.
 * `template_01_n.xbm`: A normal (bump) map, adding depth to the object.
 
-You can learn more about multilayered materials [here](../../../for-mod-creators-theory/materials/#multilayered). This is not necessary for the purpose of this guide.
+You can learn more about multilayered materials [here](../../materials/#multilayered). This is not necessary for the purpose of this guide.
 
 {% hint style="success" %}
 If you have downloaded the example Wolvenkit project, you can now install it and launch the game, seeing everything in action.
@@ -325,7 +325,7 @@ Bad: `Baseball`
 7. **Optional**: If you have changed the folder structure (e.g. moved your folder from the subfolder `stuff` to the subfolder `misc`), run another `Search and Replace in Files` (Ctrl+Shift+F) to adjust your file paths.
 8. In the project browser's raw section, right-click on the folder and select `Convert from json`. This will have updated the relationships between the files to your renamed files.
 9. Delete the files / appearances that you don't need. Save and close the mesh file.
-10. Import your meshes and textures over the ones from the template. For a guide on how to do that, check [here](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#importing-a-mesh).
+10. Import your meshes and textures over the ones from the template. For a guide on how to do that, check [here](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#importing-a-mesh).
 11. To make sure that everything went okay, open your new root entity (`tutorial\\amm_props\\baseball\\baseball.ent`) in Wolvenkit and save it to trigger [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). Check the Wolvenkit log window for errors. If you made no mistakes in the renaming process, there shouldn't be any.
 12. To register the prop with AMM, add another entry to the props array in your `LUA` file:
 
@@ -356,13 +356,13 @@ If not, it is time to hit up the [troubleshooting](./#troubleshooting).
 
 Before you can share your custom props, you **have** to change the folder structure and file paths. Otherwise, two people overwrite `tutorial.lua`, and one of the mods stops working.
 
-You can find a step-by-step guide on the process [here](../../items-equipment/moving-and-renaming-in-existing-projects.md).
+You can find a step-by-step guide on the process [here](../../../modding-guides/items-equipment/moving-and-renaming-in-existing-projects.md).
 
 ## Troubleshooting
 
 This section will only cover troubleshooting steps for this guide.\
-For anything related to mesh imports, see [here](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#troubleshooting).\
-For general 3d model troubleshooting (including import errors), see [here](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md).
+For anything related to mesh imports, see [here](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#troubleshooting).\
+For general 3d model troubleshooting (including import errors), see [here](../troubleshooting-your-mesh-edits.md).
 
 ### My prop doesn't even list in AMM!
 
@@ -388,6 +388,6 @@ If that's not it and if you have a customizable prop (with a root entity), try a
 
 ### My prop spawns, but something about it is weird!
 
-In general, your answer is probably in the guide on [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention"), section 2 ([processing the mesh](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)) – check that guide's [troubleshooting section](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#troubleshooting).
+In general, your answer is probably in the guide on [textured-items-and-cyberpunk-materials.md](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention"), section 2 ([processing the mesh](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)) – check that guide's [troubleshooting section](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#troubleshooting).
 
 [^1]: Use the Windows Explorer to move the downloaded source folder on top of the Wolvenkit project's source folder.

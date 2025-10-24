@@ -6,8 +6,8 @@ description: How to replace an in-game item with your custom mesh
 
 ## Summary
 
-Published: Oct. 14 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Last documented Update: Mar. 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Published: Oct. 14 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Last documented Update: Mar. 20 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will give you information on how to get a 3d object into Cyberpunk.
 
@@ -20,7 +20,7 @@ Alternative workflow, shorter video tutorial by CyberVesna - [Importing Custom C
 You can find other relevant guides scattered across this wiki, for example
 
 * [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention")
-* [custom-props](../../modding-guides/everything-else/custom-props/ "mention")
+* [custom-props](custom-props/ "mention")
 * [textured-items-and-cyberpunk-materials.md](../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
 
 ## Prerequisites
@@ -34,11 +34,11 @@ You can find other relevant guides scattered across this wiki, for example
 
 To bring 3d data into Cyberpunk, Wolvenkit needs a .mesh file to import into. [Read here why](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure).&#x20;
 
-For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/ "mention"), creating [custom-props](../../modding-guides/everything-else/custom-props/ "mention") or [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
+For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item](../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/ "mention"), creating [custom-props](custom-props/ "mention") or [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
 
 ### Static items
 
-If you are [creating props](../../modding-guides/everything-else/custom-props/), you use a mesh from the template project or grab any static mesh from the game.&#x20;
+If you are [creating props](custom-props/), you use a mesh from the template project or grab any static mesh from the game.&#x20;
 
 {% hint style="warning" %}
 Do not take equipment item or weapon meshes — those include a bunch of extra data that you don't need (the [armature](meshes-and-armatures-rigging/)). You don't need it, and it can have side effects.
@@ -275,7 +275,7 @@ See the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2g
 If everything worked, you now have **replaced** an original Cyberpunk item. Since this is probably not what you want, check out the following guides:
 
 * [adding-new-items](../../modding-guides/items-equipment/adding-new-items/ "mention") will walk you through the steps of adding your mesh as a new piece of equipment
-* [custom-props](../../modding-guides/everything-else/custom-props/ "mention") will show you how to add props for AMM and entSpawner
+* [custom-props](custom-props/ "mention") will show you how to add props for AMM and entSpawner
 
 Here are a few more guides that could interest you?
 

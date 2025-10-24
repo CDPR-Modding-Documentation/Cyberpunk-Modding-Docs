@@ -12,8 +12,8 @@ You can find guides related to AMM by using the Wiki's **search function**. The 
 [amm-custom-npcs](../../modding-guides/npcs/amm-custom-npcs/)
 {% endcontent-ref %}
 
-{% content-ref url="../../modding-guides/everything-else/custom-props/" %}
-[custom-props](../../modding-guides/everything-else/custom-props/)
+{% content-ref url="../3d-modelling/custom-props/" %}
+[custom-props](../3d-modelling/custom-props/)
 {% endcontent-ref %}
 
 {% content-ref url="../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md" %}

@@ -55,9 +55,9 @@ This section will explain what the template files do and how they hang together.
 If you like suffering, you can rely on the "fuck around and find out" approach, but I recommend at least reading through it.
 {% endhint %}
 
-In the end, an NPV is just a [custom prop](../../everything-else/custom-props/) with a god complex. For that reason, the [file structure](../../everything-else/custom-props/#with-variants) is the same (it's just a lot more complex, because you have more than 4 components).
+In the end, an NPV is just a [custom prop](../../../for-mod-creators-theory/3d-modelling/custom-props/) with a god complex. For that reason, the [file structure](../../../for-mod-creators-theory/3d-modelling/custom-props/#with-variants) is the same (it's just a lot more complex, because you have more than 4 components).
 
-If diagrams help you, then [click on the link](../../everything-else/custom-props/#with-variants) to see one.
+If diagrams help you, then [click on the link](../../../for-mod-creators-theory/3d-modelling/custom-props/#with-variants) to see one.
 
 ## The .lua file
 

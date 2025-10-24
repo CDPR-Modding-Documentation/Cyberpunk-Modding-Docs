@@ -2,8 +2,8 @@
 
 ## Summary
 
-Published: Feb 09 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Last documented edit: Feb 09 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Published: Feb 09 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Last documented edit: Feb 09 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page gives you an overview about lights at a glance.&#x20;
 
@@ -11,7 +11,7 @@ This page gives you an overview about lights at a glance.&#x20;
 
 * To learn about shadows in the world, check [environment-shadows.md](file-formats/the-whole-world-.streamingsector/environment-shadows.md "mention")
 * To learn about shadows for equipment items, check [meshes-shadows-and-shadow-meshes.md](file-formats/3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md "mention")
-* For a guide how to add lights to AMM props, check [amm-light-components.md](../../modding-guides/everything-else/custom-props/amm-light-components.md "mention")
+* For a guide how to add lights to AMM props, check [amm-light-components.md](../3d-modelling/custom-props/amm-light-components.md "mention")
 * For a quick overview on lights and their properties, check [cheat-sheet-lights.md](../references-lists-and-overviews/cheat-sheet-lights.md "mention") (currently WIP)
 * If you want to learn more about **blocking** light, check [occluders-light-and-light-blocking.md](occluders-light-and-light-blocking.md "mention")
 

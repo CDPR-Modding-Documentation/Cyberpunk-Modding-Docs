@@ -7,7 +7,7 @@ icon: sparkles
 ## Summary
 
 **Created:** Oct 19 2023 by [Meta Pixel](https://app.gitbook.com/u/9PYjUBpLrFhif4MmMN1WyrRuFFG3 "mention")\
-**Last documented edit:** March 29 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit:** March 29 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will give you an overview about the skills you should have, and info on how to acquire them if you don't.&#x20;
 
@@ -112,7 +112,7 @@ These do not count as a tutorial.
 ## You have a 3D model to use
 
 {% hint style="info" %}
-If you don't, check [custom-props](../../everything-else/custom-props/ "mention") -> [#where-to-find-models](../../everything-else/custom-props/#where-to-find-models "mention") for sources.
+If you don't, check [custom-props](../../../for-mod-creators-theory/3d-modelling/custom-props/ "mention") -> [#where-to-find-models](../../../for-mod-creators-theory/3d-modelling/custom-props/#where-to-find-models "mention") for sources.
 {% endhint %}
 
 Your model should be high-quality and include the following:
