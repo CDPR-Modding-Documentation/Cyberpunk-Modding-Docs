@@ -32,7 +32,7 @@ Because it's even lazier: For a mesh with 15 appearances, you need...
 | #`chunkMaterials` lists | 15     | <mark style="color:green;">1</mark> |
 
 {% hint style="success" %}
-To be **even lazier**, check out [archivexl-resource-patching.md](../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching.md "mention") and [archivexl-resource-linking.md](../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-linking.md "mention")!
+To be **even lazier**, check out [archivexl-resource-patching](../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching/ "mention") and [archivexl-resource-linking.md](../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-linking.md "mention")!
 {% endhint %}
 
 ## The problem

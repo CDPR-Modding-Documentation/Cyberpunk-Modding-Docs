@@ -30,7 +30,7 @@ While `@cap01` falls back to CapBaseMaterial, this is how you can define an extr
 
 ## Material colour extensions
 
-Material colour extension makes use of both [Broken link](broken-reference "mention") and [archivexl-resource-patching.md](../archivexl-resource-patching.md "mention").
+Material colour extension makes use of both [Broken link](broken-reference "mention") and [archivexl-resource-patching](../archivexl-resource-patching/ "mention").
 
 First, you require an intermediary layer of .mi files that define individual properties, for example **colours**. All of these need to derive from a common ancestor, which defines all other properties.
 

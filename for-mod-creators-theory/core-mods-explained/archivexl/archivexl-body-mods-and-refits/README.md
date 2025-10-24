@@ -2,7 +2,7 @@
 
 ## Summary
 
-**Published:** ?? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Published:** ?? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** April 21 2025 by LadyLea\
 **Minimum required ArchiveXL version:** 1.5
 
@@ -31,7 +31,7 @@ print(Game.GetScriptableSystemsContainer():Get("PuppetStateSystem"):GetBodyTypeS
 ## Body modders: Adding support
 
 {% hint style="success" %}
-Starting with version **1.14**, you can use [archivexl-resource-patching.md](../archivexl-resource-patching.md "mention") to inject your tags into the existing files!
+Starting with version **1.14**, you can use [archivexl-resource-patching](../archivexl-resource-patching/ "mention") to inject your tags into the existing files!
 
 You can download the [template from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/14793), or create one yourself.
 {% endhint %}
@@ -49,7 +49,7 @@ You can download the [template from Nexus](https://www.nexusmods.com/cyberpunk20
 
 ### 2. Patch the player entity files
 
-We'll make use of [archivexl-resource-patching.md](../archivexl-resource-patching.md "mention") for this.
+We'll make use of [archivexl-resource-patching](../archivexl-resource-patching/ "mention") for this.
 
 #### Set up the patch .ent
 
@@ -122,7 +122,7 @@ If that still doesn't work, consider using the [template from Nexus](https://www
 
 #### Invisible mesh for body xyz
 
-Make sure that your mesh has appearances and materials. If you are using [archivexl-resource-patching.md](../archivexl-resource-patching.md "mention"), it's easy to forget a new body's mesh in the list like a gonk. This has never happened to the author, by the way.
+Make sure that your mesh has appearances and materials. If you are using [archivexl-resource-patching](../archivexl-resource-patching/ "mention"), it's easy to forget a new body's mesh in the list like a gonk. This has never happened to the author, by the way.
 
 ## Clothing mods: Making use of the tags
 

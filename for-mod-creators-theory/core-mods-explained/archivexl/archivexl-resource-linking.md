@@ -7,7 +7,7 @@
 
 Starting with version 1.14, ArchiveXL allows you to create **resource symlinks**. This guide will teach you how to avoid duplicate meshes for dynamic substitution that way.
 
-If you want to avoid duplicate material definitions, check [archivexl-resource-patching.md](archivexl-resource-patching.md "mention").
+If you want to avoid duplicate material definitions, check [archivexl-resource-patching](archivexl-resource-patching/ "mention").
 
 ## Why do I need this?
 
@@ -17,7 +17,7 @@ While [archivexl-body-mods-and-refits](archivexl-body-mods-and-refits/ "mention"
 
 <figure><img src="../../../.gitbook/assets/image (421).png" alt="" width="184"><figcaption></figcaption></figure>
 
-While [archivexl-resource-patching.md](archivexl-resource-patching.md "mention") will let you keep your materials in one spot, why would the **chest size** be relevant for a pair of socks? Rhetorical question, it's not. But body types don't care.
+While [archivexl-resource-patching](archivexl-resource-patching/ "mention") will let you keep your materials in one spot, why would the **chest size** be relevant for a pair of socks? Rhetorical question, it's not. But body types don't care.
 
 This is where **linking** comes in.
 

@@ -363,7 +363,7 @@ Your file should look like this:
 <summary>What do these things do?</summary>
 
 * `animations:`&#x20;
-  * `entity:` The relative path to the [**photomode scope**](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching.md#distributed-patching-scopes) for patching. There are five of them in total; you can delete the ones you don't need.
+  * `entity:` The relative path to the [**photomode scope**](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching/#distributed-patching-scopes) for patching. There are five of them in total; you can delete the ones you don't need.
   * `set:` The relative path to the .anims file in your Wolvenkit project.&#x20;
 * `localization`
   * `onscreens/en-us:` A file with translation strings. Holds the name of your photo mode pose set.

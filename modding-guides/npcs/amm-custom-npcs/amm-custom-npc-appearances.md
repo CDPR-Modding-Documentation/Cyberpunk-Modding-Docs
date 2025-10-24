@@ -6,10 +6,10 @@ description: How to add appearances to existing NPCs (via AMM)
 
 ## Summary
 
-Created: Nov 27 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Last documented update: Jan 02 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Created: Nov 27 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Last documented update: Jan 02 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide makes use of [archivexl-resource-patching.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching.md "mention") to add appearances to an already-existing NPC.
+This guide makes use of [archivexl-resource-patching](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching/ "mention") to add appearances to an already-existing NPC.
 
 The process for this mod is exactly like it is with [.](./ "mention"), just that instead of adding a new NPC, we tell AMM and ArchiveXL to add our appearances to an existing NPC.
 

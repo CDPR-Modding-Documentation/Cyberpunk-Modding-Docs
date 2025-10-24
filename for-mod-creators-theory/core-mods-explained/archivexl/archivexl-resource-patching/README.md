@@ -6,25 +6,25 @@ description: Modify resources in a non-conflicting ways and reuse definitions.
 
 ## Summary
 
-**Published:** May 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Published:** May 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** July 23 2024 by [Zhincore](https://app.gitbook.com/u/OsI9JXgCSSbt40hb327iBDif7Xv1 "mention")
 
 {% hint style="danger" %}
 The example below uses **mesh materials**, but these aren't even the tip of the iceberg. By using this technique, we can re-work everything, from CDPR's messed-up material paths up to the character creator.&#x20;
 
-You can find a guide under [archivexl-patching-appearances.md](../../../modding-guides/items-equipment/editing-existing-items/archivexl-patching-appearances.md "mention")
+You can find a guide under [archivexl-patching-appearances.md](../../../../modding-guides/items-equipment/editing-existing-items/archivexl-patching-appearances.md "mention")
 {% endhint %}
 
 This page explains **resource patching,** a very powerful ArchiveXL feature that lets you modify resources **without conflicting** with other mods or even game updates. \
 Also allows you to reuse e.g. material definitions in multiple meshes, possibilities are endless!
 
 {% hint style="success" %}
-For the most efficient way to define multiple materials, check out [archivexl-dynamic-materials.md](../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention")!
+For the most efficient way to define multiple materials, check out [archivexl-dynamic-materials.md](../../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention")!
 {% endhint %}
 
 ## Why do I need this?
 
-While [archivexl-body-mods-and-refits](archivexl-body-mods-and-refits/ "mention") has solved one problem, it introduced a new one. You now have a bunch of meshes inside your .archive, and you have to copy the materials across each of them.
+While [archivexl-body-mods-and-refits](../archivexl-body-mods-and-refits/ "mention") has solved one problem, it introduced a new one. You now have a bunch of meshes inside your .archive, and you have to copy the materials across each of them.
 
 Not only does resource patching fix that issue, it also allows multiple mods to modify the same resource without conflicts! Now you can have multiple mods add appearances to the same weapon and more.
 
@@ -150,11 +150,11 @@ This is for the mesh that you will be patching.
 
 1. Create a material entry called `@context`.  This must be the first material in your list:
 
-<figure><img src="../../../.gitbook/assets/resource_patching_context.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/resource_patching_context.png" alt=""><figcaption></figcaption></figure>
 
 2. In the `values` array, create a `CpuNameU64`:
 
-<figure><img src="../../../.gitbook/assets/resource_patching_cpuname.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/resource_patching_cpuname.png" alt=""><figcaption></figcaption></figure>
 
 3. Give it a custom name (like `ManasCustomNormal`), and set the depot path of your normal map as its`Value`.
 4. Do the same for any other mesh(es) that you want to patch and which should use a custom texture.
@@ -163,7 +163,7 @@ This is for the mesh that you will be patching.
 
 Any dynamic material inside your patch mesh can now **resolve substitution** for the parameter you just defined (the name will be converted to **`camel case`**):
 
-<figure><img src="../../../.gitbook/assets/resource_patching_patch_mesh.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/resource_patching_patch_mesh.png" alt=""><figcaption></figcaption></figure>
 
 ... and that's it. Depending on your defined parameters, the material will now have a different normal map per mesh (or fall back to the default parameter if it can't be resolved).
 
