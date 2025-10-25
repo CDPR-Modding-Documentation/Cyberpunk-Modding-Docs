@@ -70,7 +70,13 @@ You are creating a **patch file**, which will be used to change data in the orig
 
 <figure><img src="../../../.gitbook/assets/mesh_file_reset_renderresourceblob.png" alt=""><figcaption></figcaption></figure>
 
-## Step 2: Custompath your patch files
+## Step 2: Rename your material(s)
+
+While the appearance name must be the same as in the original mesh, the appearance name must be different. Expand the material node and right-click on a material to change its name; this will update it in all places that need updating:
+
+<figure><img src="../../../.gitbook/assets/AXL_patchmesh_rename_material.png" alt=""><figcaption></figcaption></figure>
+
+## Step 3: Custompath your patch files
 
 If you install your mod right now, your item would be broken and the game might even crash. To avoid that, we need to **move your patch files**.
 
@@ -90,7 +96,7 @@ Moving any `.mlsetup` files that you edited will remove the dependency to [Mater
 4. If you still have files open, Wolvenkit will want to reload these. Click "Yes" - the paths were updated for you.
 5. Optional: Run [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) from the menu bar (`Project` -> `Run File Validation on the entire project`) to check if there are any errors.
 
-## Step 3: Configure ArchiveXL
+## Step 4: Configure ArchiveXL
 
 Now we need to tell ArchiveXL about our patch file(s). We do that via an `.archive.xl` file in our `resources` folder — use any text editor, such as [Notepad++](https://notepad-plus-plus.org/downloads/).
 
@@ -130,6 +136,6 @@ In WolvenKit's Project Explorer you can right-click a file and choose "Copy rela
 
 5. Delete any lines that you aren't using.
 
-## Step 4: Test!
+## Step 5: Test!
 
 And you should be good to go! [Install your mod](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and test it.
