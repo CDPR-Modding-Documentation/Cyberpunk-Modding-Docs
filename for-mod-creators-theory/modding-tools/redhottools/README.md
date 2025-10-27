@@ -44,9 +44,24 @@ This feature is enabled automatically
 
 ## Installation guide
 
+### Without a mod manager
+
 You can download RedHotTools on [psiberx's github](https://github.com/psiberx/cp2077-red-hot-tools/releases):
 
 <figure><img src="../../../.gitbook/assets/install_redhottools.png" alt=""><figcaption></figcaption></figure>
 
 To install it, extract both downloaded files **directly** into your [Cyberpunk 2077 game directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/).
 
+### With Mod Organizer 2
+
+Historically, RHT and MO2 have not been officially compatible, which means you cannot test mod changes using Hot Reload if you're using Mod Organizer 2. Fortunately, there's now one documented work-around that is 99% of the functionality that works as-of Cyberpunk 2.31:
+
+1. Starting from a fresh install with no mods manually installed, install your mods (including the ones that say "manual install only") using MO2. That means following [this guide](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/getting-started/mo2-mod-organizer-2#script-extenders-plugin-installation-guide) for MO2 setup.
+2. Run your game once and quit normally (if it's a truly clean install, you should get prompted to set up your CET hotkey).
+3. You should now have some files in your MO2 Overwrite; let's back those up, as it will contain (among other things) your CET bind. Create an empty mod called "Overwrites", right-click on Overwrite and "Move content to mod..." to your new empty mod. Consider this a backup you can always go back to if installing RHT messes up your install.
+
+<figure><img width="201" height="309" alt="image" src="https://github.com/user-attachments/assets/cb9d4359-f3f3-4e49-ae6b-f2dab9b15773" /><figcaption><p>MO2 "Create empty mod"</p></figcaption></figure>
+
+4. Install RHT and RHT Overlay as two separate mods, using "Install mod" on each .zip file downloaded from the [GitHub releases for RHT](https://github.com/psiberx/cp2077-red-hot-tools/releases). Importantly, do NOT install RHT via Wolvenkit's Plugins page (actually make sure it's actively uninstalled)!
+5. Now you should be able to use hot reload. Unfortunately, you can't use the Hot Reload shortcut from Wolvenkit, but you can do it manually: While your game is running, move your `.archive` file for your mod (found in `/(your_project)/packed/archive/pc/mod`) into the `/archive/pc/hot` folder. Your `.archive` file will disappear while in that folder, which should mean the game picked up your changes. Each time you make changes to your mod, click Create Zip in Wolvenkit, and drag the `.archive` into the `hot` folder to see them show up immediately!
+6. In theory, to keep your install clean, you can clear your Overwrite after each session. But I haven't had any issues with just letting it continue; but if you do run into issues, clear your Overwrite and you should be back to where you were after you set up your Overwrite empty mod in step 3.
