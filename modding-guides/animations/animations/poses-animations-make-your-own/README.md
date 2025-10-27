@@ -271,3 +271,7 @@ $fst_root.001|Noesis Frames|Noesis Layer: Invalid Joint Transform, joint Armatur
 That is because there is ancient data in the template, which Wolvenkit doesn't know how to handle. Delete everything called "Noesis" from the list of animations below:
 
 <figure><img src="../../../../.gitbook/assets/animation_poses_delete_noesis.png" alt=""><figcaption></figcaption></figure>
+
+### "Look at camera" (from PhotoMode-EX, etc.) does not seem to have the correct range of motion
+
+It seems that look at only works in the _positive-Y_ direction (there's a [long thread](https://discord.com/channels/717692382849663036/813768799358156880/1328882879262101548) debugging this on the Discord). The fix is to have your pose's head point roughly in the positive-Y direction in Blender; in other words use the head, facing positive-Y, as the point of reference for the rest of the body. (For example, if your pose is a standing V with his/her head turned to the right, you should have the head facing positive-Y and then the body turned to the left of the head, rather than having the body point positive-Y and the head turned to the right of the body.) Usually, you can make this happen by taking the root bone and rotating it in Edit mode, but with the IK poser it's not that simple.
