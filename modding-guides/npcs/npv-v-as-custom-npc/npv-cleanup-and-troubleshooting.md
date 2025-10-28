@@ -55,9 +55,11 @@ That is due to **appearance proxies**, which are how the game saves performance.
 
 ### Clothes are floating!
 
-For each of the mesh components that aren't moving, expand it and find the `skinning` entry. Make sure that the `bindName` points at `root`:
+Open your .app file and expand the `components` array again. For each of the mesh components that aren't moving, expand it and find the `skinning` entry. Make sure that the `bindName` points at `root`:
 
 <figure><img src="../../../.gitbook/assets/npv_skinning_root.png" alt=""><figcaption></figcaption></figure>
+
+Repeat this for `parentTransform`, if necessary.
 
 ### My feet are wrong for the shoes!
 
