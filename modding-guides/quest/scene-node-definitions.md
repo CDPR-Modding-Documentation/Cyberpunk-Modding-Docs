@@ -286,7 +286,7 @@ This is the most common use case: cleaning up the graph after several different 
 * **The Goal:** Ensure that multiple, mutually exclusive outcomes all lead to the same final step.
 * **The Mechanism:** As seen in the example image, a scene might have several FactsDBManager nodes that set different game states (holo\_setup\_active, holo\_setup\_started, holo\_setup\_ended). Each of these represents the end of a small logic branch. Instead of drawing a messy "spider web" of connections from all these nodes to a single End node, a Hub (\[289]) is used as a collector. Each FactsDBManager connects to one of the Hub's input sockets. The Hub then provides a single, clean output connection to the final End node (\[235]).
 
-<figure><img src="../../.gitbook/assets/image (636).png" alt=""><figcaption><p>Hub example</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (636) (1).png" alt=""><figcaption><p>Hub example</p></figcaption></figure>
 
 **Example 2: Re-joining after a Condition**
 

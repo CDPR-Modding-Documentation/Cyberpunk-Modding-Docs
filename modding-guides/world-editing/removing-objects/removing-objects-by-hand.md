@@ -56,7 +56,7 @@ streaming:
 
 1. Open the [World Inspector](../../../for-mod-creators-theory/modding-tools/redhottools/#world-inspector) and switch to the `Inspect` tab. You will now see  something like this:
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (636).png" alt=""><figcaption></figcaption></figure>
 
 2.  The information in the screenshot above corresponds to your `.xl` file:
 

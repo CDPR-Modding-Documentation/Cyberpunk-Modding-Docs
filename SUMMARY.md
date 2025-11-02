@@ -287,6 +287,7 @@
     * [ItemAdditions: File structure explained](modding-guides/items-equipment/adding-new-items/archive-xl-item-structure-explained.md)
     * [ItemAdditions: Dynamic Appearances](modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/README.md)
       * [Dynamic Appearances: fine-tuning visibility conditions](modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/dynamic-appearances-fine-tuning-visibility-conditions.md)
+      * [Dynamic appearances: Understanding the process](modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/dynamic-appearances-understanding-the-process.md)
     * [ItemAdditions: files from scratch](modding-guides/items-equipment/adding-new-items/adding-new-items-files-from-scratch.md)
     * [Different equipment slots](modding-guides/items-equipment/adding-new-items/different-equipment-slots.md)
     * [Your own Atelier Store](modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md)

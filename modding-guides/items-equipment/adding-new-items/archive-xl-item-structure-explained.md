@@ -250,7 +250,7 @@ Understanding this is not necessary for the purpose of this guide!
 
 By bundling them in this file, we save ourselves a lot of copy-pasting inside the .app file. The only component we actually need to change is the one with "Mesh" in its name, typically `entGarmentSkinnedMeshComponent`:
 
-<figure><img src="../../../.gitbook/assets/archivexl_item_structure_mesh_entity.png" alt=""><figcaption><p>The only component we actually need to change is the <code>entGarmentSkinnedMeshComponent</code></p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/archivexl_item_structure_mesh_entity (1).png" alt=""><figcaption><p>The only component we actually need to change is the <code>entGarmentSkinnedMeshComponent</code></p></figcaption></figure>
 
 The component's `name` will be used in `appearance.app`'s materialOverride array (see [below](archive-xl-item-structure-explained.md#appearance-making-changes))
 

@@ -9,9 +9,11 @@ description: >-
 ## Summary
 
 **Published**: Sep 09 2024 by [Sumi](https://app.gitbook.com/u/7RcQS2blS1QZY9a7AwDx4GUHnsJ2 "mention")\
-**Last documented edit:** Sep 09 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit:** Sep 09 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page is an extension of [ItemAdditions: Dynamic Appearances](./) and explains how to fine-tune item visibility conditions beyond the basic scope.
+
+Please also check [.](./ "mention") -> [#step-1-connecting-the-decal-and-understanding-variants](./#step-1-connecting-the-decal-and-understanding-variants "mention") for more examples.
 
 ## Via root entity
 
