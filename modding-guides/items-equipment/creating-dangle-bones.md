@@ -43,7 +43,9 @@ Start with a suitable mesh that has most of the bones you will want, typically t
 
 ### 2. Create your new model and bones
 
-Import this into Blender; you should get both the model of whatever mesh you started with, as well as an armature with actual parenting relationships. (Your armature's bones will be pointing off to the left -- this is wrong but expected.) You can now "draw the owl" of the rest of your model, replacing the mesh with your own mesh, and adding new bones to your armature for any dangle bones you will want. Please note that you **can not move any existing bones in this process** -- the way we will export your rig/armature later only impacts net-new bones. Other things to note:
+Import this into Blender; you should get both the model of whatever mesh you started with, as well as an armature with actual parenting relationships. (Your armature's bones will be pointing off to the left -- this is wrong but expected.)
+
+You can now "draw the owl" of the rest of your model, replacing the mesh with your own mesh, and adding new bones to your armature for any dangle bones you will want. Please note that you **can not move any existing bones in this process** -- the way we will export your rig/armature later only impacts net-new bones. Other things to note:
 
 * To avoid issues with the mesh import into Wolvenkit, you'll want to delete the Root bone from your armature. This does not appear to be an issue for the final mesh/rig combination, but it is odd. (Generally it doesn't seem to be a problem if the bones in the mesh and rig do not match 1:1, as long as the intersection of their sets of bones is a superset of the vertex groups in the mesh. In other words, as long as every vertex group has a corresponding bone in both the mesh and the rig, you should be okay.)
 * The part of your mesh that you want to be controlled by the dangle should be modeled in its "rest" orientation. Your bones should roughly follow, erring on the side of "nearer" the body rather than "further" from the body.
@@ -53,10 +55,16 @@ Import this into Blender; you should get both the model of whatever mesh you sta
     
 ### 3. Get your new bones, mesh, and rig into Wolvenkit
 
-Once your mesh is done (or, more likely, once you're ready to test an initial form of your mesh), it's time to get it into Wolvenkit, along with your modified rig. (We will handle the animgraph later.) Because you can't create bones out of thin air while doing a Wolvenkit-import of a .glb (unless [this issue](https://github.com/WolvenKit/WolvenKit/issues/2321) gets resolved), we will add the bones to the .mesh in two steps. First, we will add new bones to a .mesh.json and then Wolvenkit-JSON-convert that into the .mesh format. Then, we will Blender-export our .glb with new vertex weights (corresponding to the new bones added) and Wolvenkit-import this .glb. The rig is more straightforward: We will add our bones to a .rig.json and then Wolvenkit-JSON-convert that into our .rig.
-    * .mesh.json: Use the Mesh Appender script, with your new mesh selected, and the "base mesh" being the .mesh.json of the mesh you started with (e.g. the T-Bug .mesh.json). If this works, you should get a count of all the new bones added. Now, convert this .mesh.json to .mesh in Wolvenkit. If you look at your .mesh, you should have all the new bones (only visible in "advanced mode"), but the actual model preview should show whatever mesh you started with.
-    * .glb: Export from Blender as usual, ensuring that your mesh has weight painting for the new bones you've created in the step above. Now Wolvenkit-import this .glb over the .mesh you created in the previous step. If this works, not only should you see your new bones in the .mesh, you should also see your model in the model preview. This and the previous step have to happen in this order, every time you make changes to the bones or mesh!
-    * .rig: Use the Rig Appender script, with your new armature selected, and the "base rig" being `(wo)man_base_deformation.rig.json`. Convert this in Wolvenkit to get your .rig.
+Once your mesh is done (or, more likely, once you're ready to test an initial form of your mesh), it's time to get it into Wolvenkit, along with your modified rig. (We will handle the animgraph later.)
+
+Because you can't create bones out of thin air while doing a Wolvenkit-import of a .glb (unless [this issue](https://github.com/WolvenKit/WolvenKit/issues/2321) gets resolved), we will add the bones to the .mesh in two steps: First, we will add new bones to a .mesh.json and then Wolvenkit-JSON-convert that into the .mesh format. Then, we will Blender-export our .glb with new vertex weights (corresponding to the new bones added) and Wolvenkit-import this .glb.
+
+The rig is more straightforward: We will add our bones to a .rig.json and then Wolvenkit-JSON-convert that into our .rig.
+
+* .mesh.json: Use the Mesh Appender script, with your new mesh selected, and the "base mesh" being the .mesh.json of the mesh you started with (e.g. the T-Bug .mesh.json). If this works, you should get a count of all the new bones added. Now, convert this .mesh.json to .mesh in Wolvenkit. If you look at your .mesh, you should have all the new bones (only visible in "advanced mode"), but the actual model preview should show whatever mesh you started with.
+* .glb: Export from Blender as usual, ensuring that your mesh has weight painting for the new bones you've created in the step above. Now Wolvenkit-import this .glb over the .mesh you created in the previous step. If this works, not only should you see your new bones in the .mesh, you should also see your model in the model preview. This and the previous step have to happen in this order, every time you make changes to the bones or mesh!
+* .rig: Use the Rig Appender script, with your new armature selected, and the "base rig" being `(wo)man_base_deformation.rig.json`. You only have to re-run this step if you move/add/delete bones. Convert this in Wolvenkit to get your .rig.
+
 Quick sanity-checks at this point: Wolvenkit-export your new .mesh, using `withRig` with your new .rig, and then import that into Blender. The mesh should be your new model, with proper weight painting on new bones, and your armature should be connected and include your new bones, and your _new_ bones should also be rotated off in weird directions, just like the bones from the base rig.
 
 ### 4. Hook up the mesh_entity and test in-game
@@ -77,7 +85,8 @@ Time to hook up all these pieces and test in-game! In your `mesh_entity.ent`, cr
 
 Next, it's time to generate the animgraph. The Animgraph Generator is partially self-documenting, but the important bits
 
-** Issues you may run into at this point **
+**Issues you may run into at this point**
 
 * If your mesh doesn't seem to move at all:
     * Is it photo mode? For some reason, mesh physics doesn't seem to kick in until you un-equip and re-equip your item
+    * Otherwise, make sure your mesh_entity has the animated component and it points to the correct .rig and .animgraph
