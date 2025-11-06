@@ -50,7 +50,7 @@ You can now "draw the owl" of the rest of your model, replacing the mesh with yo
 * To avoid issues with the mesh import into Wolvenkit, you'll want to delete the Root bone from your armature. This does not appear to be an issue for the final mesh/rig combination, but it is odd. (Generally it doesn't seem to be a problem if the bones in the mesh and rig do not match 1:1, as long as the intersection of their sets of bones is a superset of the vertex groups in the mesh. In other words, as long as every vertex group has a corresponding bone in both the mesh and the rig, you should be okay.)
 * The part of your mesh that you want to be controlled by the dangle should be modeled in its "rest" orientation. Your bones should roughly follow, erring on the side of "nearer" the body rather than "further" from the body.
 * Any new bones need to be parented to the existing armature somewhere.
-* If you think you'll want "half-cone" or "hinge" dangles, the animgraph generator will have the cone point towards +Z of the bone rotation, so use Blender's roll functionality to ensure the bone orientation is how you want it.
+* If you think you'll want "half-cone" or "hinge" dangles, the animgraph generator will have the cone half or the hinge direction point towards +Z of the bone rotation, so use Blender's roll functionality to ensure the bone orientation is how you want it.
 * Don't forget to weight-paint your mesh with your new bones (how to do this is outside the scope of this article, but you could look at some examples from Cyberpunk vanilla items to see how dangle weights are typically painted).
     
 ### 3. Get your new bones, mesh, and rig into Wolvenkit
