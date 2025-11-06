@@ -69,7 +69,7 @@ Quick sanity-checks at this point: Wolvenkit-export your new .mesh, using `withR
 
 ### 4. Hook up the mesh_entity and test in-game
 
-Time to hook up all these pieces and test in-game! In your `mesh_entity.ent`, create a new `entAnimatedComponent` with `graph` set to a placeholder `animgraph` (you can use Claire's pants dangle animgraph), and `rig` set to your new `.rig`. You should be able to test your new mesh in-game; there won't be any dangling yet, but it should load your mesh in its rest position!
+Time to hook up all these pieces and test in-game! In your `mesh_entity.ent`, create a new `entAnimatedComponent` with `graph` set to a placeholder `animgraph` (if the animgraph doesn't have your bones, there should be no ill effect -- you can use Claire's pants dangle `animgraph` for now), and `rig` set to your new `.rig`. You should be able to test your new mesh in-game; there won't be any dangling yet, but it should load your mesh in its rest position!
 
 **Issues you may run into at this point**
 
@@ -78,8 +78,8 @@ Time to hook up all these pieces and test in-game! In your `mesh_entity.ent`, cr
 * If the Wolvenkit import of your .glb fails:
     * `Value was either too large or too small for an unsigned byte`: It's because your .mesh has more than 255 bones. Start with a .mesh that has fewer bones (again T-Bug seems to be the perfect set), or create fewer dangle bones. Remember you can't delete bones from the .mesh using this process, only add.
     * Missing the Root bone: Delete your Root from your armature, and start back over from the .mesh.json export. (Even in vanilla, it seems often that the .rig has a Root bone but the .mesh does not, so this should be fine.)
-* If the vertices with new bones appear to either collapse to your character's origin, or somewhere halfway between its rest position and the origin:
-    * One or more of your bones that has vertex weights do not exist in one of, or both of, your .mesh or .rig files. Convert both to .json, and for each new bone, ensure that it exists in both files.
+* Mesh issues in-game:
+    * If the vertices with new bones appear to either collapse to your character's origin, or somewhere halfway between its rest position and the origin: One or more of your bones that has vertex weights do not exist in one of, or both of, your .mesh or .rig files. Convert both to .json, and for each new bone, ensure that it exists in both files.
 
 ### 5. Generate the animgraph
 
