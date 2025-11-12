@@ -90,3 +90,13 @@ Next, it's time to generate the animgraph. The Animgraph Generator is partially 
 * If your mesh doesn't seem to move at all:
     * Is it photo mode? For some reason, mesh physics doesn't seem to kick in until you un-equip and re-equip your item
     * Otherwise, make sure your mesh_entity has the animated component and it points to the correct .rig and .animgraph
+
+## Addendum
+
+### .rig files
+
+All coordinates here are in CP space (flipped X-Z from Blender space)
+
+`aPoseLS`: each bone's transform relative to its parent
+`aPoseMS`: each bone's transform in overall model space
+`boneTransforms`: not entirely sure why this is different from either of the above, but `aPoseLS` is used for these, unless it doesn't exist in that object, in which case it uses this object
