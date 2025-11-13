@@ -6,26 +6,29 @@ description: How to port props using the Props Creation Kit for World Builder
 
 ## ▶ <mark style="color:yellow;">Summary</mark> <a href="#summary" id="summary"></a>
 
-> **Created & Published**: Jully 2025 by [PinkyJulien](https://app.gitbook.com/u/iKTJipgsEBTEnUVSuliSjOUuiJq2 "mention") ([Original Link](https://docs.google.com/document/d/1id5LszqjS5xs-OKshXc1JDjLLHwa5zZTFVE2ifQ18J0/edit?tab=t.0))
+**Created & Published**: Jully 2025 by [PinkyJulien](https://app.gitbook.com/u/iKTJipgsEBTEnUVSuliSjOUuiJq2 "mention") ([Original Link](https://docs.google.com/document/d/1id5LszqjS5xs-OKshXc1JDjLLHwa5zZTFVE2ifQ18J0/edit?tab=t.0))\
+Last documented edit: Nov 13 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-In this tutorial, I’ll show you my own prop-making workflow, using my own updated [Props Creation Kit](https://www.nexusmods.com/cyberpunk2077/mods/5979)
+In this tutorial, I’ll show you my own prop-making workflow, using my own updated [Props Creation Kit](https://www.nexusmods.com/cyberpunk2077/mods/5979). This tutorial will be focused on making props for [World Builder](https://www.nexusmods.com/cyberpunk2077/mods/20660)!
 
-{% hint style="info" %}
-This tutorial will be focused on making props for [World Builder](https://www.nexusmods.com/cyberpunk2077/mods/20660)!
+### Wait, this is not what I want!
 
-I recommend you follow the wiki modding tutorial if you’re planning on making props for AMM, as I won’t be covering the necessary files here.  [AMM: Custom Props](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/everything-else/custom-props)
-{% endhint %}
+* If you want to make props for AMM, check  [AMM: Custom Props](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/everything-else/custom-props)
+* To quickly get the scaffold files, you can check out Wolvenkit's Prop Generator (≥ 1.17.2 | [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases))
 
-I’ll also assume you know your ways around Blender, WolvenKit and know how to pack a mod - if not, once again, check out the modding wiki
+## Prerequisites
+
+I’ll assume you know your ways around Blender, WolvenKit and know how to pack a mod - if not, once again, check out the modding wiki
 
 * [Getting started: Making Mods](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/getting-started-making-mods)
 * [Blender: Getting Started](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/3d-modelling/blender-getting-started)
 
 ### ▶ <mark style="color:yellow;">Requirements</mark> <a href="#requirements" id="requirements"></a>
 
-* a recent version of [WolvenKit](https://wiki.redmodding.org/wolvenkit/readme) <mark style="color:yellow;">| used in tuto: 8.16.1</mark>
-* a recent version of the [CP77 Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) <mark style="color:yellow;">| used in tuto: 1.6.4</mark>
-* [Blender](https://www.blender.org/) <mark style="color:yellow;">| used in tuto: 4.4.3</mark>
+{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
+
+<mark style="color:yellow;">Tutorial uses: WKit 8.16.1, Blender 4.4.3 and plugin version 1.6.4</mark>
+
 * my updated [Props Creation Kit](https://www.nexusmods.com/cyberpunk2077/mods/5979)
 * [World Builder](https://www.nexusmods.com/cyberpunk2077/mods/20660)
 * a 3D model to port
@@ -122,6 +125,10 @@ Since the floppy disk comes with its own textures maps, I’ll delete the files 
 I have no use for the emissive “**e01**” map since nothing on my floppy disk will glow, so I delete it too, only keeping the three maps I need; the diffuse map “**d01**”, the normal map “**n01**” and the roughness/metalness map “**rm01**”
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdUu1ryc1-uw2AnnK2NNpMfnL4zY0idvSkrl4zb86ZYuJ_yToKWMBgCM9LWeglQHWEzzbm7MfbW9OUwGTe9ppPCEhRN9a7JP2Zl1b9m8G6AHupbkBxkk0mpCnE1OnK9qtLzkfDu3A?key=AdJcyfKc-rq9OsJ-Sb9gww" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+**AS OF NOVEMBER 2025** - The propkit pack now includes individual roughness and metalness maps
+{% endhint %}
 
 Now that I know what I’m porting, I can also rename my files
 
