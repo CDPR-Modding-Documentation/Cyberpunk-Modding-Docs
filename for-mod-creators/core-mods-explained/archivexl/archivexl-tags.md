@@ -2,7 +2,7 @@
 
 ## Summary
 
-**Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Published:** ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** April 21 2025 by LadyLea
 
 This page will tell you about **tags** and how they can be used to influence item behaviour. It also teaches you how [#adding-custom-tags](archivexl-tags.md#adding-custom-tags "mention") can help you conditionally un-hide items or add new features.
@@ -68,7 +68,7 @@ Tags are case-sensitive!
 
 ### Base Game Tags and ArchiveXL Tags -  Visual Guides
 
-<div><figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - MaleBody - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Male Body - By LadyLea </p></figcaption></figure> <figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - Female Body - By LadyLea.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Female Body - By LadyLea </p></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/masc_hide_tags.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Male Body - By LadyLea </p></figcaption></figure> <figure><img src="../../../.gitbook/assets/fem_hide_tags.png" alt="" width="563"><figcaption><p>Visual Guide - Tags - Female Body - By LadyLea </p></figcaption></figure></div>
 
 <div><figure><img src="../../../.gitbook/assets/HIDE TAGS - FORCE TAGS - ARMS BY LL.png" alt="" width="375"><figcaption><p>Visual Guide - Tags - Default Arms - By LadyLea </p></figcaption></figure> <figure><img src="../../../.gitbook/assets/VisualGuide - AXL Tags &#x26; Base Tags - Head - By LadyLea.png" alt="" width="375"><figcaption><p>Visual Guide - Tags - Head - By LadyLea </p></figcaption></figure></div>
 
