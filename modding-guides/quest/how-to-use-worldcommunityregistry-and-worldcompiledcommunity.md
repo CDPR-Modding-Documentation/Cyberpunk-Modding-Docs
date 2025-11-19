@@ -29,7 +29,7 @@ Last documented update: Dec 4 by [Sergey](https://app.gitbook.com/u/N691cVEMA0Nm
 
 ## Basics
 
-There are two types `worldCompiledCommunityAreaNode`  and `worldCompiledCommunityAreaNode_Streamable`
+There are two types `worldCompiledCommunityAreaNode` and `worldCompiledCommunityAreaNode_Streamable`
 
 The difference between them is only that `worldCompiledCommunityAreaNode` must be registered in `AlwaysLoaded` type of `.streamingsector`
 
@@ -47,51 +47,43 @@ For example in the quest **Riders on the Storm** CDPR reactivates all needed NPC
 
 Setup your Wkit project.
 
-Create `.questphase` `.streamingblock` and `.streamingsector` files&#x20;
+Create `.questphase` `.streamingblock` and `.streamingsector` files
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-1.  Create `archiveXL` file and specify your `.streamingblock` and `.questphase` files&#x20;
+1.  Create `archiveXL` file and specify your `.streamingblock` and `.questphase` files
 
     <figure><img src="../../.gitbook/assets/image (4) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption><p>we will use .questphase file later</p></figcaption></figure>
-
-
-2.  Create NodeRefs for `worldAiSpotNode` and `worldCompiledCommunityAreaNode`&#x20;
+    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (2).png" alt=""><figcaption><p>we will use .questphase file later</p></figcaption></figure>
+2.  Create NodeRefs for `worldAiSpotNode` and `worldCompiledCommunityAreaNode`
 
     <figure><img src="../../.gitbook/assets/image (8) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
 3.  Create `worldAiSpotNode` and its `worldNodeData` and assign created `NodeRef`before
 
     <figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption><p>In the spot property u need to specify workspot that you want to use</p></figcaption></figure>
-
-
-4.  Create `worldCompiledCommunityAreaNode` and its `worldNodeData`&#x20;
+4.  Create `worldCompiledCommunityAreaNode` and its `worldNodeData`
 
     <figure><img src="../../.gitbook/assets/image (12) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
     **Important**:\
     \- In the `Node/area/entriesData` we specify an `entryName/phaseName/spotId(AiSpoNodeHash)` so in the future, we can `Activate/Reactivate/Deactivate` its entities by these params\
     \- `sourceObjectId` - it should match `id`of registry item
-5.  Create `worldCommunityRegistryNode` and its `worldNodeData`&#x20;
+5.  Create `worldCommunityRegistryNode` and its `worldNodeData`
 
     <figure><img src="../../.gitbook/assets/image (13) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-
 
 Details about the registry:
 
 **Important:**
 
-`communitiesData` - there are we specifying the type of NPC its template, entryName, and all possible phases&#x20;
+`communitiesData` - there are we specifying the type of NPC its template, entryName, and all possible phases
 
 <figure><img src="../../.gitbook/assets/image (14) (1).png" alt=""><figcaption><p>In this example, i set Panam with entryName panam and phase A to be able to activate on the spot we created earlier</p></figcaption></figure>
 
 `workspotsPersistentData` - there we are adding a new spot into the engine's global registry by the hash of our `AiSpotNode`
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (15) (2).png" alt=""><figcaption></figcaption></figure>
 
 Trying to spawn:
 

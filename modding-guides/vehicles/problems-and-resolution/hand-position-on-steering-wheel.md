@@ -4,9 +4,9 @@ description: To modify the hand position on the steering wheel
 
 # Hand position on steering wheel
 
-<figure><img src="../../../.gitbook/assets/image (401).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (398) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (402).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (399) (1).png" alt=""><figcaption></figcaption></figure>
 
 It can be modified from the ".rig" file
 
@@ -14,13 +14,11 @@ It can be modified from the ".rig" file
 
 "steering\_left" the position of one's left hand
 
+The position center of the hand is calculated based on the information below
 
+**X: X on steering wheel**
 
-The position center of the hand is calculated based on the information below&#x20;
-
-**X: X on steering wheel**&#x20;
-
-**Y: Y on steering wheel**&#x20;
+**Y: Y on steering wheel**
 
 **Z: Self**
 

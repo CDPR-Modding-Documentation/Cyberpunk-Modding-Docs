@@ -1,4 +1,4 @@
 ---
-title: '⚠ Warning: Never work direc...'
+title: 'Warning: Never work direc...'
 ---
 

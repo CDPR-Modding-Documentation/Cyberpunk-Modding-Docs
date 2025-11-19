@@ -9,8 +9,8 @@ description: 3ds Max Workflow for Cyberpunk 2077
 \
 \- 3ds Max 2014-2022\
 \- [WolvenKit.CLI / CP77Tools](https://github.com/WolvenKit/WolvenKit/releases)\
-\- [Noesis (64-bit)](https://richwhitehouse.com/index.php?content=inc\_projects.php)\
-\- [AlphaZomega's Noesis Plugin and MaxScript](https://www.mediafire.com/file/uhc9d68mvj7oqj6/fmt\_CP77mesh\_1.6.zip/file)
+\- [Noesis (64-bit)](https://richwhitehouse.com/index.php?content=inc_projects.php)\
+\- [AlphaZomega's Noesis Plugin and MaxScript](https://www.mediafire.com/file/uhc9d68mvj7oqj6/fmt_CP77mesh_1.6.zip/file)
 
 ## **Setup:**
 
@@ -40,7 +40,7 @@ Click on "Import to Scene" and select the .mesh file you want to edit. Your cust
 \
 FBX Settings for **Import**:
 
-![](<../../../.gitbook/assets/image (196).png>)
+![](<../../../.gitbook/assets/image (104) (1).png>)
 
 \
 MaxScript Settings for **Export:**

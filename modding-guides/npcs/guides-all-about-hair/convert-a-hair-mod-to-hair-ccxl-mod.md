@@ -12,7 +12,7 @@ Published: Jan 29 2025 by [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uR
 
 Updated: April 6 2025 by [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
 
-CCXL is a way of adding new slots into character customization menus. the benefit is that you won't have to change or replace the vanilla game files to do add your own! this guide is related to adding new hair slots from an already-done mod.&#x20;
+CCXL is a way of adding new slots into character customization menus. the benefit is that you won't have to change or replace the vanilla game files to do add your own! this guide is related to adding new hair slots from an already-done mod.
 
 {% hint style="info" %}
 This guide is a simplification of the [CCXL: Hairs](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-hairs.md) page. Some parts of that page might be omitted from this guide to make the process simple, otherwise you can check the page for more detailed information.
@@ -29,16 +29,14 @@ This guide is for a normal hair replacer (direct mesh replace) mod and single-me
 * [Wolvenkit](https://github.com/WolvenKit/WolvenKit/releases) to analyze mod, work on your mod, and pack mod.
 
 {% hint style="info" %}
-ArchiveXL 1.20 or later is required for hair CCXL mods to work.&#x20;
+ArchiveXL 1.20 or later is required for hair CCXL mods to work.
 {% endhint %}
 
 {% hint style="info" %}
 A [Wolvenkit project](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-projects) will be **required** for this guide. if you don't know how to make one check out [R\&R: Your own WolvenKit project](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/items-equipment/recolours-and-refits/r-and-r-your-own-wolvenkit-project#creating-your-wolvenkit-project).
 {% endhint %}
 
-Steps will be demonstrated using the Female V template, but the process is exactly the same with the Male V template so you can follow along just fine!&#x20;
-
-
+Steps will be demonstrated using the Female V template, but the process is exactly the same with the Male V template so you can follow along just fine!
 
 ## Step 1: Adding the template
 
@@ -48,7 +46,7 @@ Steps will be demonstrated using the Female V template, but the process is exact
 
 <figure><img src="../../../.gitbook/assets/openrootfolder.png" alt=""><figcaption><p>Open Root Folder button</p></figcaption></figure>
 
-2. Now open the template that you've downloaded from Nexus. Click on "source" and drag the contents inside the zipped file into your WolvenKit project folder.&#x20;
+2. Now open the template that you've downloaded from Nexus. Click on "source" and drag the contents inside the zipped file into your WolvenKit project folder.
 
 <figure><img src="../../../.gitbook/assets/draghairccxltemplatefiles.png" alt=""><figcaption><p>Drag and drop the files in the zipped template into the project folder</p></figcaption></figure>
 
@@ -67,11 +65,9 @@ To make sure that the initial template mod works we'll need to install and see i
 
 Now that's done you can exit the game and continue, otherwise update ArchiveXL.
 
-
-
 ## Step 2: add your already-done hair mod files
 
-To convert a hair mod we'll need the main hair `.mesh` file. This is the most important file as this whole mod [revolves around ](#user-content-fn-1)[^1]. There are other files that we'll need, but if your mod doesn't have you can continue with the guide without any issues as the template has placeholders that you can use.&#x20;
+To convert a hair mod we'll need the main hair `.mesh` file. This is the most important file as this whole mod [revolves around ](#user-content-fn-1)[^1]. There are other files that we'll need, but if your mod doesn't have you can continue with the guide without any issues as the template has placeholders that you can use.
 
 The files are:
 
@@ -83,24 +79,24 @@ The files are:
 
 <summary>Wait! I don't use a custom hair texture</summary>
 
-Some mods utilize the material instance files that's in the game itself to make their own hairs.&#x20;
+Some mods utilize the material instance files that's in the game itself to make their own hairs.
 
 No worries, this will be thoroughly detailed later.
 
 </details>
 
 {% hint style="danger" %}
-Use **unique names** for your mod files before starting on the project, this prevent conflicts with any other mod out there.&#x20;
+Use **unique names** for your mod files before starting on the project, this prevent conflicts with any other mod out there.
 
 For the sake of simplicity, the files in this guide will use the name `myhair` and will make appended variations of it, Do **not** use it in your project.
 {% endhint %}
 
 Start with putting the files in your project by:
 
-1. &#x20;Add the files aforementioned from your own hair mod archive to the project.
+1. Add the files aforementioned from your own hair mod archive to the project.
 
 {% hint style="info" %}
-A detailed process of this step can be found in [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/npcs/guides-all-about-hair/replace-a-hair-mods-slot#step-0-get-the-modded-files). but the TL;DR is to flip the switch to asset browser to mod browser and add the files that is in there.&#x20;
+A detailed process of this step can be found in [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/npcs/guides-all-about-hair/replace-a-hair-mods-slot#step-0-get-the-modded-files). but the TL;DR is to flip the switch to asset browser to mod browser and add the files that is in there.
 {% endhint %}
 
 2. Move the files into their own appropriate locations. The table below will help
@@ -132,19 +128,19 @@ Your hair mod was done with a custom texture that you've brought along for the r
 
 <figure><img src="../../../.gitbook/assets/image (561).png" alt=""><figcaption></figcaption></figure>
 
-At the end of this step your textures have been successfully pathed to the .mi that's in the template, the  `your_first_hair_wa_long.mi` file should look like this. If so save, delete the template hair texture files, and move on ahead with the next step.&#x20;
+At the end of this step your textures have been successfully pathed to the .mi that's in the template, the `your_first_hair_wa_long.mi` file should look like this. If so save, delete the template hair texture files, and move on ahead with the next step.
 
 <figure><img src="../../../.gitbook/assets/image (617).png" alt=""><figcaption></figcaption></figure>
 
 ### I use base game ("vanilla") textures
 
-You've used the game's default hair textures to make your hair mod.&#x20;
+You've used the game's default hair textures to make your hair mod.
 
-if you happen to use the `_long` .mi for your mod then good news!, you've used the textures that's in the template, so you don't have to do anything about the \_long.mi file, [you can keep it as it is! ](#user-content-fn-3)[^3]
+if you happen to use the `_long` .mi for your mod then good news!, you've used the textures that's in the template, so you don't have to do anything about the \_long.mi file, [you can keep it as it is!](#user-content-fn-3)[^3]
 
 If you've used something else, [no worries](#user-content-fn-4)[^4]. follow along this part:
 
-1. Open your mesh and expand the  `externalMaterials` item(1), then open one of the mi files that are not cap (2).
+1. Open your mesh and expand the `externalMaterials` item(1), then open one of the mi files that are not cap (2).
 
 <figure><img src="../../../.gitbook/assets/image (564).png" alt=""><figcaption></figcaption></figure>
 
@@ -152,25 +148,25 @@ If you've used something else, [no worries](#user-content-fn-4)[^4]. follow alon
 
 <figure><img src="../../../.gitbook/assets/image (565).png" alt=""><figcaption></figcaption></figure>
 
-Keep an eye on what the appended name of the material instance, you will use it in the next step. I suggest that you keep the appended name in the mi file, So if the material instance name ends with `__short` then keep that name around, you will use it in the next step.&#x20;
+Keep an eye on what the appended name of the material instance, you will use it in the next step. I suggest that you keep the appended name in the mi file, So if the material instance name ends with `__short` then keep that name around, you will use it in the next step.
 
 ### I use custom caps, what about me??
 
-Don't worry we got you [ :)](#user-content-fn-5)[^5]
+Don't worry we got you :)[^5]
 
 You'll be doing a combination of both steps in that you'll add your cap's `.xbm` textures into the project then edit the cap mi file which is `your_first_hair_wa_cap.mi` to include your cap textures inside them.
 
 When you're finished from this step completely, rename your material instance file names to the one you chose before.
 
 {% hint style="success" %}
-I recommend you to click on "Update in Project Files" as shown below, this helps with renaming paths in this whole guide and especially with the file that's in resources.&#x20;
+I recommend you to click on "Update in Project Files" as shown below, this helps with renaming paths in this whole guide and especially with the file that's in resources.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/image (574).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Edit the .mesh file
 
-Here comes the interesting part of this guide as its the cornerstone of the hair mod itself.&#x20;
+Here comes the interesting part of this guide as its the cornerstone of the hair mod itself.
 
 This process can be done either by WolvenKit's Convert hair to CCXL Material button or manually by deleting and editing sections of the mesh itself
 
@@ -194,7 +190,7 @@ It should look like this:
 
 <figure><img src="../../../.gitbook/assets/image (569).png" alt=""><figcaption></figcaption></figure>
 
-2. In your mesh, right click on `appearances` and click on "Reset Object", do the same step for `externalMaterials`, `localMaterialBuffer`, and `materialEntries`. After doing this you should see a number zero or a "\[0]" next to the aforementioned items. This step removes all reference of materials that the mesh used before. &#x20;
+2. In your mesh, right click on `appearances` and click on "Reset Object", do the same step for `externalMaterials`, `localMaterialBuffer`, and `materialEntries`. After doing this you should see a number zero or a "\[0]" next to the aforementioned items. This step removes all reference of materials that the mesh used before.
 
 Now your mesh will be devoid of any reference of materials (for now..)
 
@@ -222,7 +218,7 @@ If you've changed the materialEntries' name of `@long` you'll have to rename the
 
 ### Rename
 
-Now save your mesh file, rename it to the name that you want. Duplicate the mesh and add the `_cyberware` at the end of the name of the duplicated mesh.&#x20;
+Now save your mesh file, rename it to the name that you want. Duplicate the mesh and add the `_cyberware` at the end of the name of the duplicated mesh.
 
 While you're at it, rename the `animgraph`, `rig`, and the mesh in the shadow\_meshes folder to the name you wanted. At the end of this step, your mesh folder structure should look something like this:
 
@@ -249,7 +245,7 @@ This step is about editing the .app file which is responsible for which mesh and
 
 1.  Open `your_first_hair_wa.app` file, and:
 
-    1. Expand components then click on `hair_dangle` , copy relative path of your `.animgraph` file and paste it into the `graph` 's `DepotPath` field on the right of the window, do the same step for `rig` 's `DepotPath`field by copying relative path of `.rig` file.&#x20;
+    1. Expand components then click on `hair_dangle` , copy relative path of your `.animgraph` file and paste it into the `graph` 's `DepotPath` field on the right of the window, do the same step for `rig` 's `DepotPath`field by copying relative path of `.rig` file.
     2. Click on the `hh_your_first_hair_wa` item n and copy the relative path of your `.mesh` file and paste it in the `mesh` 's `DepotPath` field. Rename the `name` field to your mod's name.
     3. Click on hh\_your\_first\_hair\_wa\_shadow item, and copy ther relative path of the `.mesh` file in shadow\_meshes folder and paste it in `mesh` 's `DepotPath` field.
     4. Click on the `resolvedDependencies` property of the .app file and replace the index number 3's DepotPath field with the relative path of your `.mesh` file and index number 4's `DepotPath`'s `field` with the relative path of your \_`shadow.mesh` file
@@ -259,8 +255,6 @@ This step is about editing the .app file which is responsible for which mesh and
 3. Open `your_first_hair_wa_fpp.app` and expand components to select the only item in there which is called `hh_your_first_hair_wa_shadow` , copy the `_shadow.mesh` file's relative path to the `mesh`'s `DepotPath`'s field, then in resolvedDependencies property , paste the same path in its `DepotPath`'s field. Save and close the file.
 
 Once you're done from all the steps above rename the files and keep their appended name `(_fpp` and `_cyberware`) intact.
-
-&#x20;
 
 You've almost reached the finish line! next step is the last file that you'll have to (somewhat) meticulously edit and put paths in, pay attention as it has bit more than the last step.
 
@@ -274,15 +268,15 @@ TL;DR: Keep the names consistent across the .inkcc file.
 
 The `.inkcc`, short for `.inkcharcustomization` file is the link between what we've done so far and the character customization menu. In this file we'll link our .app file and put the name of the .json file we've had opened two steps ago.
 
-This file has two main items: `headCustomizationGroups` and `headGroups`.`headCustomizationGroups` is mainly split into two parts:&#x20;
+This file has two main items: `headCustomizationGroups` and `headGroups`.`headCustomizationGroups` is mainly split into two parts:
 
-1. The empty item and the `hairstyle_cyberware` item at items numbered 0 and 1.&#x20;
+1. The empty item and the `hairstyle_cyberware` item at items numbered 0 and 1.
 
-These two files are responsible for getting the name that will be displayed in the in-game slot, and to get the item names below it.  Below is a visual demonstration of what needs to be done in this section.
+These two files are responsible for getting the name that will be displayed in the in-game slot, and to get the item names below it. Below is a visual demonstration of what needs to be done in this section.
 
 <figure><img src="../../../.gitbook/assets/image (572).png" alt=""><figcaption></figcaption></figure>
 
-2. The `your_first_hair_wa`, `your_first_hair_wa_cyberware`, and `your_first_hair_wa_fpp`items numbered 2, 3, and 4.&#x20;
+2. The `your_first_hair_wa`, `your_first_hair_wa_cyberware`, and `your_first_hair_wa_fpp`items numbered 2, 3, and 4.
 
 These three items takes the relative paths of their respective .app files names.
 
@@ -290,12 +284,12 @@ Finally, the `headGroups` main items will have the names that we'll assign for t
 
 ### Alright, show me the steps.
 
-Open `_pwa.inkcharcustomization` (or `_pma`)  and do the following:
+Open `_pwa.inkcharcustomization` (or `_pma`) and do the following:
 
 Expand `headCustomizationOptions` , in there you will see five items . Now:
 
-1. Expand the no-name item that has number 0 to the left of it, expand its `options` property and expand its item as well.&#x20;
-   1. Go to the `.json` file and copy the first item's`secondaryKey` property value and paste it in the `localizedName` field.  So the localizedName field now has the value`UI-Customization-myhair` This tells the hair slot file that we'll use the name set in the .json file as its display name in-game.&#x20;
+1. Expand the no-name item that has number 0 to the left of it, expand its `options` property and expand its item as well.
+   1. Go to the `.json` file and copy the first item's`secondaryKey` property value and paste it in the `localizedName` field. So the localizedName field now has the value`UI-Customization-myhair` This tells the hair slot file that we'll use the name set in the .json file as its display name in-game.
    2. Now expand the `names` property and rename both `your_first_hair_wa` and `your_first_hair_wa_fpp` to a name that you would use, like `myhair` and `myhair_fpp`.
    3. Do the same steps for the second item which is named `hairstyle_cyberware`, with the only difference being to rename `your_first_hair_wa_cyberware` to `myhair_cyberware` and the `names` values to `myhair_cyberware` and `myhair_fpp`.
 2. Click on the third item named `your_first_hair_wa`, `and:`
@@ -314,9 +308,9 @@ Now that's done, save the file and close it.
 
 We've reached at the custom pathing and .archive.xl file editing part. This step doesn't have anything complex in it, just simple path rename here and there, and aligning the .archive.xl file to complete this whole setup together neatly.
 
-Since we've been renaming the files since the start of step 3, that means we won't get deeper into all files and do renaming and pathing for every file.[^6]
+Since we've been renaming the files since the start of step 3, that means we won't get deeper into all files and do renaming and pathing for every file.
 
-Right click on the folder named `your_first_addition` and click rename, then replace `your_modder_name`and `your_first_addition` with a name unique to you and to your files.&#x20;
+Right click on the folder named `your_first_addition` and click rename, then replace `your_modder_name`and `your_first_addition` with a name unique to you and to your files.
 
 When you're finished check the "Update in project files?" box then click Finish.
 
@@ -328,11 +322,11 @@ As a good measure, check WolvenKit's Log for any issues regarding project file r
 Sometimes you might face an issue auto-updating with a file or two. If that happens go back to the problematic file and fix the paths within it.
 {% endhint %}
 
-Now open the `your_first_hair_wa_ccxl_mod.archive.xl` file in any edtior program like Notepad++ or Visual Studio Code,&#x20;
+Now open the `your_first_hair_wa_ccxl_mod.archive.xl` file in any edtior program like Notepad++ or Visual Studio Code,
 
 This is the file that will tell ArchiveXL on what to do for the hair mod as a whole.
 
-Now we'll need to copy relative paths of files to the needed locations in the `.xl` file. The visual guide below can help you in knowing which file relative path goes to where.&#x20;
+Now we'll need to copy relative paths of files to the needed locations in the `.xl` file. The visual guide below can help you in knowing which file relative path goes to where.
 
 <figure><img src="../../../.gitbook/assets/Untitled design.png" alt=""><figcaption></figcaption></figure>
 
@@ -340,7 +334,7 @@ Now we'll need to copy relative paths of files to the needed locations in the `.
 Make sure there's a leading space when putting the paths in the .archive.xl file.
 {% endhint %}
 
-When you're done save the .archive.xl file and rename it according to your project mod name, which can be found in the "Project" button in the toolbar,  then "Project Configuration" , then check Mod Name's field.
+When you're done save the .archive.xl file and rename it according to your project mod name, which can be found in the "Project" button in the toolbar, then "Project Configuration" , then check Mod Name's field.
 
 Make sure that everything is connected correctly click on "Project" on WolvenKit's toolbar and click "Scan project for broken file references" to check if there are incorrect paths in files. If there's only the .mi file and has a file path that starts with `archivexl\` that means you're good to go.
 
@@ -358,7 +352,7 @@ If the mod works you should see it in the character creation screen by going a s
 
 ### Hair Profile color CCXL mod's hair colors hides my mesh away
 
-This is due to improper pathing in the `localMaterialBuffer` item in your .mesh file, go back to step 4 and check in the `localMaterialBuffer` part of the guide.&#x20;
+This is due to improper pathing in the `localMaterialBuffer` item in your .mesh file, go back to step 4 and check in the `localMaterialBuffer` part of the guide.
 
 [^1]: (and come on, its a hair mod of course we'll need the hair)
 
@@ -369,5 +363,3 @@ This is due to improper pathing in the `localMaterialBuffer` item in your .mesh 
 [^4]: two cookies just to this step easier :) :cookie::cookie:
 
 [^5]: you're getting three cookies :cookie::cookie::cookie:
-
-[^6]: free cookie 🍪

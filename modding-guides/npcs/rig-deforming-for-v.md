@@ -2,12 +2,12 @@
 description: A short tutorial on how to modify your V's body by resizing bone shape.
 ---
 
-# Rig deforming for V
+# For V - Rig deforming
 
 ## Summary:
 
 **Published**: Oct 12 2024 by @chris\
-**Last edited:** Oct 12 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last edited:** Oct 12 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will show you how to create a **custom rig** for V, based on [**BODY SHAPING - Tutorial**](https://www.nexusmods.com/cyberpunk2077/mods/2884)
 
@@ -18,16 +18,16 @@ This guide will show you how to create a **custom rig** for V, based on [**BODY 
 
 ## Requirements:
 
-<table><thead><tr><th width="155"></th><th width="232"></th><th></th></tr></thead><tbody><tr><td>Wolvenkit</td><td>latest >= 8.14</td><td> <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a> | <a href="https://github.com/WolvenKit/Wolvenkit/releases">Stable</a> | <a href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download">Install guide (wiki</a>)</td></tr><tr><td>Blender</td><td>latest (>= 4.2)</td><td><a href="https://www.blender.org/download/">blender.org</a></td></tr><tr><td><em>Optional</em></td><td><em>Unique V Body Framework</em></td><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/3725"><em>get it from Nexus</em></a></td></tr></tbody></table>
+<table><thead><tr><th width="155"></th><th width="232"></th><th></th></tr></thead><tbody><tr><td>Wolvenkit</td><td>latest >= 8.14</td><td><a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a> | <a href="https://github.com/WolvenKit/Wolvenkit/releases">Stable</a> | <a href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download">Install guide (wiki</a>)</td></tr><tr><td>Blender</td><td>latest (>= 4.2)</td><td><a href="https://www.blender.org/download/">blender.org</a></td></tr><tr><td><em>Optional</em></td><td><em>Unique V Body Framework</em></td><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/3725"><em>get it from Nexus</em></a></td></tr></tbody></table>
 
-### Level of difficulty:&#x20;
+### Level of difficulty:
 
 Medium - you should have some general knowledge of Blender and Wolvenkit
 
 ## Setting up
 
 1. Create a [new Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project)
-2. Find an add one of the following files (the correct one for your body gender):&#x20;
+2. Find an add one of the following files (the correct one for your body gender):
 
 ```
 femV:  base\characters\common\base_bodies\woman_average\t0_000_wa_base__full.mesh
@@ -54,9 +54,9 @@ mascV: base\characters\common\base_bodies\man_average\t0_000_ma_base__full.mesh
 <figure><img src="../../.gitbook/assets/{3C5F60B1-7FAA-4D48-BC25-78B8D5262342}.png" alt=""><figcaption></figcaption></figure>
 
 4. Switch the viewport to to `Pose Mode` ( at the top left)
-5. You can now select and **scale** individual bones.&#x20;
+5. You can now select and **scale** individual bones.
 
-![](<../../.gitbook/assets/{E13E7DA1-9217-4D4E-BAB0-BE216398BE7A} (7).png>)
+![](<../../.gitbook/assets/{E13E7DA1-9217-4D4E-BAB0-BE216398BE7A} (1).png>)
 
 <figure><img src="../../.gitbook/assets/{0750C598-35A7-4F9C-8992-FE4AC79817B4}.png" alt=""><figcaption><p><mark style="color:red;">Select the bones tab, select the bone you want to edit, and scale.</mark></p></figcaption></figure>
 
@@ -100,14 +100,14 @@ X and Y is **flipped** inside of Wolvenkit compared to blender, so flip those va
 {% endhint %}
 
 5. You need to do this for both sides of the body, so find the corresponding bone\
-   &#xNAN;_&#x49;f the name of your bone ends with `_r`, the corresponding bone ends with `_l`, and vice versa_
+   \&#xNAN;_If the name of your bone ends with `_r`, the corresponding bone ends with `_l`, and vice versa_
 6. Save your changes
 7. Open the other file in Wolvenkit, and repeat steps 2-6.
 8. If you are not using [Unique V Body Framework](https://www.nexusmods.com/cyberpunk2077/mods/3725), proceed to the next section - otherwise, read on.
 
 ### Unique V Body Framework: Compatibility
 
-To ensure compatibility, you need to re-name any files you edited:&#x20;
+To ensure compatibility, you need to re-name any files you edited:
 
 | Before                              | After                               |
 | ----------------------------------- | ----------------------------------- |
@@ -133,6 +133,6 @@ Thanks for reading hope it worked -<mark style="background-color:purple;">Chris<
 ### **My rig edit isn't showing up!**
 
 * Disable (remove) any other rig edits
-* Check if your mod's `.archive` file has been installed to the correct folder: \
+* Check if your mod's `.archive` file has been installed to the correct folder:\
   [`Cyberpunk 2077`](../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/)`\archive\pc\mod`
 * Make sure that it comes first in the load order by prefixing its name with a `#`

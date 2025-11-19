@@ -29,8 +29,6 @@ If you're here looking to retagert your Static Poses Pack, I recommend checking 
 * Latest version of [Blender](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/) and [Blender CP77 Plugin](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#summary)
 * General modding and [pose making](poses-animations-make-your-own/) knowledge
 
-
-
 ![](../../../.gitbook/assets/pkd_retargeting_animations_1.gif)
 
 ***
@@ -46,7 +44,7 @@ First, you’ll need to grab the [**Rokoko Plugin from their official website**]
 And [install it like any Blender Addon](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/#step-1-install-the-plugin)
 
 > _`Edit > Preferences > Add-ons`_\
-> _`drop down arrow on the top right > Install from Disk…`_
+> &#xNAN;_`drop down arrow on the top right > Install from Disk…`_
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXecrcDkKxa5SiEKj6S7ipWS_Yos2ApmuTGTANAEAYb8roc3RqaNOADEcoYFhwQOvUbNlAEJNqzkRFekaG9oCstzPK8rEQDu_ZHg1fcOhyKIhqEBdqiTUMaBmZd083G8v2YlPsihIQ?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption><p>Rokoko Addon in the Add-Ons window</p></figcaption></figure>
 
@@ -125,11 +123,11 @@ Since we’re retargeting a vanilla animation to another rig, the armatures shar
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcBItjw5s54ly_CD38rIpNg04S9imI2hZTuUJiNYWhn8vQ3aiMMHTyLWRYMlYF5YCgPgSGOgOQapfYxf7RHYENHf7YWv1-XLdp8A5Sm1p6wl0ZgO_S05SNxQ2e_O-kHYcBy1Pmjhg?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption><p>Example of a bones naming missmatch when building the bone list</p></figcaption></figure>
 
-In the example above, we can see that the `LeftUpLeg` and `RightUpLeft`  bones doesn’t automatically match; to fix that, simply click on the miss-matching bones names and select the correct matching one
+In the example above, we can see that the `LeftUpLeg` and `RightUpLeft` bones doesn’t automatically match; to fix that, simply click on the miss-matching bones names and select the correct matching one
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfMlYl1O-jxSVGoRlRYNc9pFP1UO33RfJRNx6_fzJ96vXeDMNa9zAi1IfCUaHVpsliohFRudHaGtU1N9qbqMWuljs99O2a-tMfy3C_luH2uUysNxdotRSP-CR9J60qVau7K84dBfQ?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption></figcaption></figure>
 
-I recommend leaving the `Root`, `Trajectory` and `Reference_Joint`  bone fields empty **regardless** of the type of animation you’re retargeting, but **especially** if you're porting an external animation
+I recommend leaving the `Root`, `Trajectory` and `Reference_Joint` bone fields empty **regardless** of the type of animation you’re retargeting, but **especially** if you're porting an external animation
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXevf__cH0kUqcRIurch56XQAyan9UapfoOcHO6C6q5koDzuFsYxHkpJFx9PYIQkORDnJIa687jJ0_9rVsb7RQ4erm-12RSon1GyMLuTEGvSNawVbHbOEIP6Md5Ydw9dBO_XGhDByQ?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption><p>Leave these fields empty!</p></figcaption></figure>
 
@@ -139,7 +137,7 @@ We then need to check `Auto Scale` and make sure to use the `Rest Pose`
 
 Once you **verified** the bone list and checked everything, you can press `Retarget Animation`
 
-Your Template model should automatically get into a pose \
+Your Template model should automatically get into a pose\
 Press **space** or the **start button ▶** on the timeline to see the animation!
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXefMBnZ3-Rdq5a4bl5rWIE4BlYb1l8hHrw1ry10vM4x0e9wOUP9NiBjaxJ4SiEr9aiiN1oPuBbJsjSoWemDRMTVz0Gb-eFGMFNLNQysBO5eqNSyKS8eRxfCBTeZshIk1_57rnkBmQ?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption></figcaption></figure>
@@ -235,7 +233,7 @@ Thanks to **Halkuonn** for sharing this fix!
 
 <figure><img src="../../../.gitbook/assets/image (616).png" alt=""><figcaption></figcaption></figure>
 
-Your animation is now ready to test! \
+Your animation is now ready to test!\
 Plop it in game by either making a quick replacer or an [AMM Poses Pack](amm-collab-anims-poses.md#summary)
 
 {% hint style="warning" %}
@@ -263,7 +261,7 @@ For this example, I’ll be using one of Fortnite animation
 First, we'll need to change our template's armature **Rest Position**
 
 For a proper retarget, both source and target armatures should have similar **Rest Poses**\
-This is **really important** if you want the animation to look somewhat identical to its original source and avoid weird deformations!&#x20;
+This is **really important** if you want the animation to look somewhat identical to its original source and avoid weird deformations!
 
 Select your imported **Source Armature** and change it’s pose to **Rest Position**
 
@@ -273,7 +271,7 @@ Then, select your CP77 **Target Armature** and make sure it's currently set to *
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXft1wJUz7xLSnUW47fciB5c-KQ-RMAB6gerA0wqlYftxzozruznf-fdteCoj3BV2ESELgvHmkat60DNYiLLFkpdU2azuwoOztS8pvxxHmRpQNZ7RVNMF_hqOTrR4TSRUlfGpOeeIw?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption></figcaption></figure>
 
-With your **Target Armature** still selected, switch to **Pose Mode** \
+With your **Target Armature** still selected, switch to **Pose Mode**\
 and change the **Transform Orientations** to `Local` for an easier workflow
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXej1C9NEqe62DRPRUOXd_DgjRS6cdKpVPUTExFZ8qalYz0hYtjuIJoYStCfv26hHgeq8Ch18nWcJfVlJiA8n8nM1AWvVFeG5w65b1AZMftnfmyhJq9M3I3vkuyE8NBNeebHEoXh?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption></figcaption></figure>
@@ -281,7 +279,7 @@ and change the **Transform Orientations** to `Local` for an easier workflow
 Our goal here is to move our CP77 **Target Armature** to best match the **Source Armature** pose
 
 The poses _doesn’t need_ to perfectly match and be layed on top of one another\
-&#xNAN;_(they shouldn't, especially if the models don’t have the same heights)_&#x20;
+\&#xNAN;_(they shouldn't, especially if the models don’t have the same heights)_
 
 Just make sure that the bones are angled and rotated in a **similar** way
 
@@ -290,7 +288,7 @@ Just make sure that the bones are angled and rotated in a **similar** way
 I’m making it rough for this tutorial, but the closer you’ll match the **Source pose**, the better the retarget will be! Be precise if you wish to 👌
 
 Once your pose is done, select your whole armature `(CTRL+A)`\
-Then go into&#x20;
+Then go into
 
 `Pose > Apply > Apply Pose as Rest Pose`
 
@@ -310,7 +308,7 @@ If the heights of the models differ a lot, check which bones match each area of 
 For example, the Fortnite armature has 5 Spine Bones, while the CP77 Armature only has 4\
 But the area doesn't match; I can’t simply input `Spine1` into `spine_01`
 
-By comparing each skeletons and bones placement, I've noticed `Spine1` fits the `spine_03` placement&#x20;
+By comparing each skeletons and bones placement, I've noticed `Spine1` fits the `spine_03` placement
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcs6XLcXZd975WP78sLQoR6FmiZyatyCmdx4Mu-JG7VUmQL5wMZG9a3JUI5548Nj4dclwB92KzULTESAbvhcYO1bOIE3o2FZHUpe1prPNpKIWM549AKiQSA3UqemXbzbMkewt9UTA?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption></figcaption></figure>
 
@@ -335,7 +333,7 @@ Head over the **Graph Editor** tab
 
 In **pose mode**, select the bone you’d want to fix
 
-With the **Move Tool** active, move the different “waves” on the graph; \
+With the **Move Tool** active, move the different “waves” on the graph;\
 each waves correspond to this bone’s **quaternion rotations**
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfLnoyzhPh_0jm-4xJlnA_rQseZM2cRrW9yxBbhenjY3dovofn1td5ZweAUA-y9LXVYQEM13IuVUtt8_34_BdsCzCZV-QgFLFndhOXswPvIg2KG0hpJbya0SX5QpYFnlQhPaOud?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption></figcaption></figure>
@@ -348,7 +346,7 @@ Be careful not to move the selected wave forward or backward in the timeline as 
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeyAXwKoaodt-t9dhj726M--MpWKDmj94QrVMnjGCoaZiWNXDk2oA_wUtLc5wfKu26AJ558Ihp5a4FMk1JLO6FrQKx67fR2AVDaLfSPZl6S3cFJZRTiDxjifKzaflhVee5g0E9iYg?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption></figcaption></figure>
 
-You can select any other bone at any point and go back-and-forth fixing what needs fixing \
+You can select any other bone at any point and go back-and-forth fixing what needs fixing\
 There’s no need to “apply” or insert new keyframes for the change to take effect on your animation
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXeGD2wCIjFYwlkJz-Ssn8_f_WmdYqjykNCUsj5ahl70hXF-BZZBNorXXvq3MbJyWu2StpqH2F0RRLmGNkdLEEMkYEonO0cTCOUMfjYN6IapJByDStairuMGM7ApvkVV4cxky23yKQ?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption><p>&#x3C;3 &#x3C;3 &#x3C;3</p></figcaption></figure>

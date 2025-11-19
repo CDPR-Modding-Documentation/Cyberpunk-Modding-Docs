@@ -1,27 +1,24 @@
-# Custom bodyhair for NPCs
+# Archived: Custom bodyhair for NPCs
 
 ## Summary <a href="#summary" id="summary"></a>
 
 **Created & Published**: Summer 2021 **by @Pinkydude**
 
-![](<../../../.gitbook/assets/0 (3)>)
+![](<../../../.gitbook/assets/0 (1)>)
 
 ![](../../../.gitbook/assets/1)
 
-What you’ll need :\
-
+What you’ll need :\\
 
 * [WolvenKIT](https://github.com/WolvenKit/WolvenKit/releases) or the game files extracted\
-  &#xNAN;_\[basegame\_4\_animation.archive]_\
-
+  \&#xNAN;_\[basegame\_4\_animation.archive]_\\
 * The 010 hex editing software with the CP77 template as well as the scripts\
-  [(I recommend joining the CP77 Modding server to grab those!)](https://discord.gg/fvNFPhJh8h)\
-
+  [(I recommend joining the CP77 Modding server to grab those!)](https://discord.gg/fvNFPhJh8h)\\
 * The WolvenKIT console (CP77Tools)
 
 **🟨 WON’T WORK With AMM’s naked/shirtless custom appearances**
 
-![](<../../../.gitbook/assets/2 (4)>)
+![](<../../../.gitbook/assets/2 (1)>)
 
 I’ll assume you already know some basic modding\
 (extracting the files with the console or WKit etc)

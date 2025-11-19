@@ -43,11 +43,11 @@ Unfortunately, I have not been able to single out a method to generate HDR LUTs 
 ## Tools used/required
 
 * DaVinci Resolve\
-  &#xNAN;_&#x44;oes not matter if it is studio, but studio will be required for the eventual HDR workflow._
+  \&#xNAN;_Does not matter if it is studio, but studio will be required for the eventual HDR workflow._
 * Photoshop
 * WolvenKit
 * NVTT Exporter and the respective Photoshop plugin.\
-  &#xNAN;_&#x43;an be found on NVIDIA developer, does require an account to download._
+  \&#xNAN;_Can be found on NVIDIA developer, does require an account to download._
 
 ### Intermission: Troubleshooting DaVinci
 
@@ -111,7 +111,7 @@ After this is done, export using the NVIDIA Texture Tools plugin as a 32x4f DDS 
 
 Once you are done, put the texture into WolvenKit and import using these settings:
 
-<figure><img src="../../../../.gitbook/assets/image (185).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (180) (1).png" alt=""><figcaption></figcaption></figure>
 
 Afterwards, set the depth, height, and with properties to 32, then go to `renderTextureResource -> renderResourceBlobPC -> header -> sizeInfo` and set all of the properties there to 32 also. Don't forget to change the texture type to 3D in `textureInfo`!
 

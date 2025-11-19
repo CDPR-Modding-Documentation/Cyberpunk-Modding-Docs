@@ -10,15 +10,15 @@ description: Or how to fit ported garments to Cyberpunk's "A Pose"
 > [Original guide written on Tumblr](https://www.tumblr.com/pinkyjulien/758176432758374401/hi-can-i-ask-if-you-perhaps-have-a-tip-for)
 
 For a lot of ports, the first step is usually getting the garment to fit the Cyberpunk' bodies "A" pose\
-This tutorial will guide you in tackling this first step!&#x20;
+This tutorial will guide you in tackling this first step!
 
-For this guide, you will need:&#x20;
+For this guide, you will need:
 
 * Recent version of [Blender](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/)
 * Basic modding knowledge
 * Know your ways around [Blender](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/) and have some [basic garment refiting](../../../for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques.md) knowledge
 
-Depending on what type of garment you want to port, and from where you go it, there are multiple ways to tackle refiting it to fit Cyberpunk' bodies "A-pose"&#x20;
+Depending on what type of garment you want to port, and from where you go it, there are multiple ways to tackle refiting it to fit Cyberpunk' bodies "A-pose"
 
 ***
 
@@ -28,7 +28,7 @@ Most models that are shared for 3D render purposes _(downloaded from Open3DLab o
 
 <figure><img src="../../../.gitbook/assets/image (594).png" alt=""><figcaption></figcaption></figure>
 
-Select the RIG controls and enter Pose Mode, \
+Select the RIG controls and enter Pose Mode,\
 you'll be able to rotate the controls to fit the model over the CP77 body
 
 <figure><img src="../../../.gitbook/assets/image (595).png" alt=""><figcaption></figcaption></figure>
@@ -41,7 +41,7 @@ If the different submeshes doesn't not automatically follow the rig, make sure t
 
 ## <mark style="color:yellow;">◼</mark> Example 2: My model has a rig
 
-Refiting rigged models without custom controls will be similar to the first example! \
+Refiting rigged models without custom controls will be similar to the first example!\
 Some models come with their own rigs _(models directly extracted from games with modding tools that have rig options, for example)_
 
 It's a tiny bit less practical than refiting custom control models cause you'll have to find and move the right bones needed to affect the sleeves in the desired way
@@ -78,14 +78,13 @@ Toggle the **X-ray** vision to be able to select back faces
 
 <figure><img src="../../../.gitbook/assets/image (602).png" alt=""><figcaption></figcaption></figure>
 
-And enable **Proportional Editing**\
+And enable **Proportional Editing**\\
 
-
-<figure><img src="../../../.gitbook/assets/image (604).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (603) (1).png" alt=""><figcaption></figcaption></figure>
 
 This will come in extremly handy and allow us to "smoothly" rotate / move / edit part of the mesh without creating "staircase" effect and harsh corners
 
-Since we want our garment to go from T-pose to A-pose, I'll first select the whole arm area; \
+Since we want our garment to go from T-pose to A-pose, I'll first select the whole arm area;\
 press **G** to reduce the **Proportional Editing**'s effect radius _(we don't want the chest to be affected)_
 
 <figure><img src="../../../.gitbook/assets/image (605).png" alt=""><figcaption></figcaption></figure>
@@ -100,7 +99,7 @@ Without un-selecting the sleeve, press **G** to enter free movement - increase t
 
 <figure><img src="../../../.gitbook/assets/image (607).png" alt=""><figcaption></figcaption></figure>
 
-Do this again and again until the sleeve is in the correct position \
+Do this again and again until the sleeve is in the correct position\
 I recommend changing the selection often during the whole procedure _(Take your time!)_
 
 <figure><img src="../../../.gitbook/assets/image (608).png" alt=""><figcaption></figcaption></figure>

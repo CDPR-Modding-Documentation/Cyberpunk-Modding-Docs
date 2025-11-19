@@ -6,15 +6,15 @@ description: The tool of your choice for editing multilayered materials
 
 ### Summary
 
-**Published:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Dec 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Dec 20 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page will teach you how to download and configure **MLSetupBuilder**, the tool of choice to edit multilayered materials in Cyberpunk.&#x20;
+This page will teach you how to download and configure **MLSetupBuilder**, the tool of choice to edit multilayered materials in Cyberpunk.
 
 At the bottom of the page, you will find [#video-guides](./#video-guides "mention"). Keep in mind that they are outdated.
 
 {% hint style="info" %}
-MLSB <= 1.6.8 <mark style="color:red;">does</mark> <mark style="color:red;"></mark><mark style="color:red;">**not**</mark> <mark style="color:red;"></mark><mark style="color:red;">include a full material preview</mark>. The 3d view will only show you which parts of a mesh are affected by your material. If you want to preview a material in colour, you'll have to do this in Blender — use the [wolvenkit-blender-io-suite](../wolvenkit-blender-io-suite/ "mention")'s [mesh import](../wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes).
+MLSB <= 1.6.8 <mark style="color:red;">does</mark> <mark style="color:red;">**not**</mark> <mark style="color:red;">include a full material preview</mark>. The 3d view will only show you which parts of a mesh are affected by your material. If you want to preview a material in colour, you'll have to do this in Blender — use the [wolvenkit-blender-io-suite](../wolvenkit-blender-io-suite/ "mention")'s [mesh import](../wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes).
 {% endhint %}
 
 ### Wait, that's not what I want!
@@ -33,13 +33,13 @@ There is a dedicated channel on the [Redmodding Discord](https://discord.com/cha
 
 ## Installation
 
-For integration with Wolvenkit, install MLSB as a plugin:&#x20;
+For integration with Wolvenkit, install MLSB as a plugin:
 
 <figure><img src="../../../.gitbook/assets/installing_MLSB.png" alt=""><figcaption></figcaption></figure>
 
 1. Click on "Home" in Wolvenkit's title bar
 2. Select "Plugins" in the left sidebar
-3. If MLSB is installed, you'll see an "Update" button, otherwise, it will say "Install". \
+3. If MLSB is installed, you'll see an "Update" button, otherwise, it will say "Install".\
    Do that.
 
 <details>
@@ -48,16 +48,14 @@ For integration with Wolvenkit, install MLSB as a plugin:&#x20;
 
 If the above doesn't work for you, you can install MLSB by hand:
 
-1. download the latest release from [Neurolinked's github ](https://github.com/Neurolinked/MlsetupBuilder/releases)
-2. extract the downloaded zip to the following subfolder in your [Cyberpunk game directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/) (create it if it doesn't exist):  \
+1. download the latest release from [Neurolinked's github](https://github.com/Neurolinked/MlsetupBuilder/releases)
+2. extract the downloaded zip to the following subfolder in your [Cyberpunk game directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/) (create it if it doesn't exist):\
    `Cyberpunk 2077\tools\neurolinked\mlsetupbuilder`
 3. The directory should now have a folder called `MLsetupBuilder-VERSION` that contains (among other things) the file `MLSetupBuilder.exe`
 4. The total path should look like this:\
    `Cyberpunk 2077\tools\neurolinked\mlsetupbuilder\MLSetupBuilder-1.2.3\MLSetupBuilder.exe`
 
 </details>
-
-
 
 We will now launch MLSB and do the initial setup.
 
@@ -70,17 +68,17 @@ We will now launch MLSB and do the initial setup.
 ## Usage
 
 {% hint style="info" %}
-To make the most of MLSB's features, you will want to [configure](./#configuration) it first. However, you can start using the tool right away.&#x20;
+To make the most of MLSB's features, you will want to [configure](./#configuration) it first. However, you can start using the tool right away.
 {% endhint %}
 
 Here's how (or scroll down for the screenshot):
 
 1. In the project explorer under Wolvenkit's `archive` folder, right-click on am `mlsetup` file\
-   &#xNAN;_&#x54;his folder will only be visible in the "source" or "archive" tab of your_ [_project explorer_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer)
-2. Select  "[Convert to JSON](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json)"
+   \&#xNAN;_This folder will only be visible in the "source" or "archive" tab of your_ [_project explorer_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer)
+2. Select "[Convert to JSON](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json)"
 3. This will generate an `mlsetup.json` file in your project's [`raw` folder](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer).\
-   &#xNAN;_&#x54;his folder will only be visible in the "source" or "raw" tab of your project explorer_
-4. Right-click on the newly created `mlsetup.json` file&#x20;
+   \&#xNAN;_This folder will only be visible in the "source" or "raw" tab of your project explorer_
+4. Right-click on the newly created `mlsetup.json` file
 5. Select "Open in MLSetupBuilder"
 
 <figure><img src="../../../.gitbook/assets/mlsb_exporting_file.png" alt=""><figcaption></figcaption></figure>
@@ -93,7 +91,7 @@ As of Version 1.6.7, this is what you will see now:
 
 Start by importing the file from the preview. That will populate the Layer Config box with the MLSetup that you just loaded.
 
-The preview was hiding an empty 3d viewport. To [use that](./#about-that-3d-viewport), you will need to [configure](./#configuration) MLSB first, but you can already click through the individual layers and assign [material properties](broken-reference) (such as roughness, normal strength, base material and colour) from the "Material Properties" panel.&#x20;
+The preview was hiding an empty 3d viewport. To [use that](./#about-that-3d-viewport), you will need to [configure](./#configuration) MLSB first, but you can already click through the individual layers and assign [material properties](broken-reference/) (such as roughness, normal strength, base material and colour) from the "Material Properties" panel.
 
 {% hint style="info" %}
 Don't forget to hit "Apply" after you have changed a material.
@@ -101,7 +99,7 @@ Don't forget to hit "Apply" after you have changed a material.
 
 Once you're done:
 
-* select File -> Export&#x20;
+* select File -> Export
 * overwrite the original `mlsetup.json`
 * switch back to Wolvenkit
 * in the "`raw`" folder, right-click on your file
@@ -113,7 +111,7 @@ Congratulations — you now have an `.mlsetup`! If you pack your mod and launch 
 
 There are 3 important functions to note:
 
-1. Materials: this manages the tiles, opacity, offset, and roughness of the texture.&#x20;
+1. Materials: this manages the tiles, opacity, offset, and roughness of the texture.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2024-03-12 180851.png" alt=""><figcaption></figcaption></figure>
 
@@ -157,7 +155,7 @@ Here, you can either browse to your model directly, or use text search:
 
 After selecting a model, you can close the library browser again. Now selecting a layer will show you directly which parts of the mesh it corresponds to.
 
-<figure><img src="../../../.gitbook/assets/mlsb_ui.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MLSB_ui (1).png" alt=""><figcaption></figcaption></figure>
 
 That's it! Happy recoloring!
 
@@ -176,7 +174,7 @@ Material Composer will also display all the material parameters that comes with 
 
 ## Configuration
 
-When you start MLSB the first time, it will yell at you that it is not configured correctly.&#x20;
+When you start MLSB the first time, it will yell at you that it is not configured correctly.
 
 1. Click No (You'll regret it), because we need to download the CLI first.
 
@@ -215,18 +213,18 @@ Consider [#building-the-microblend-depot](./#building-the-microblend-depot "ment
 
 <figure><img src="../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
 
-2. Pick what you want to uncook. Especially the environments can take over an hour, so we're only doing the essentials here:&#x20;
+2. Pick what you want to uncook. Especially the environments can take over an hour, so we're only doing the essentials here:
 
 <figure><img src="../../../.gitbook/assets/mlsb_uncook.png" alt=""><figcaption></figcaption></figure>
 
-3. Click "**Uncook**".&#x20;
+3. Click "**Uncook**".
 4. **Wait**. Do not interact with the program in any way until the process has finished - especially interacting with the console might just freeze up the entire windows cmd process. This is not MLSB's fault, but due to a Windows standard implementation. There can be a bunch of errors, ignore them.
 
 {% hint style="danger" %}
 This process can take some time — if you have selected everything, it can be several hours on slow machines. (You should've listened during step 1, choomba ;))
 {% endhint %}
 
-5. When the process is complete, close the Depot Generator window.&#x20;
+5. When the process is complete, close the Depot Generator window.
 6. Optional: if you can't see any changes, press `Ctrl+R` to relaod MLSB.
 
 ### Building the Microblend Depot
@@ -234,7 +232,7 @@ This process can take some time — if you have selected everything, it can be s
 1. Repeat Step 1 from [#building-the-depot](./#building-the-depot "mention"), but select **Microblends** this time
 2. In the bottom left corner, hit "Start"
 3. Wait.
-4. When the process is complete, close the Depot Generator window.&#x20;
+4. When the process is complete, close the Depot Generator window.
 5. Optional: if you can't see any changes, press `Ctrl+R` to relaod MLSB.
 
 That's it, you're done now and can use the [3d viewport](./#about-that-3d-viewport)!
@@ -251,13 +249,13 @@ Alternatively, you can also delete the file and reconfigure.
 
 For MLSB <= 1.6.7, you have to use the exact CLI version you find under `Help` -> `Download Wolvenkit.CLI`
 
-### There's an exception when generating my depot!&#x20;
+### There's an exception when generating my depot!
 
 Does the progress bar still move? If yes, then you're good - ignore this.
 
 If not, you haven't left your fingers off MLSB and need to start over. Click "Uncook", then go afk until it's done.
 
-If that doesn't help either, it's worth trying Wolvenkit Console's latest [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases).&#x20;
+If that doesn't help either, it's worth trying Wolvenkit Console's latest [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases).
 
 ## Video Guides
 

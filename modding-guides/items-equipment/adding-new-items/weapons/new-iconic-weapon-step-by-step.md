@@ -33,8 +33,8 @@ If you are stuck, refer to the [#troubleshooting-check-this-when-youre-stuck](ne
 
 ## Step 1: Create a New Project in WolvenKit
 
-Each Iconic weapon is a variant of a base weapon, with an hidden (from the player) mod. \
-This "hidden" mod contains a statModifiers array (to list all the stat changes this Iconic will have from the base weapon) and an OnAttach array. \
+Each Iconic weapon is a variant of a base weapon, with an hidden (from the player) mod.\
+This "hidden" mod contains a statModifiers array (to list all the stat changes this Iconic will have from the base weapon) and an OnAttach array.\
 The OnAttach array is where you'll want a GameplayLogicPackage to go. You may or may not need to define conditional effectors in there, but if you want your weapon to have the customary Iconic yellow description then be aware that there is where it's written (in the UIData of the GameplayLogicPackage).
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2025-01-28 182507 - Copia.png" alt=""><figcaption><p>$base: Items.IconicWeaponModAbilityBase == $type: GameplayLogicPackage</p></figcaption></figure>
@@ -362,12 +362,12 @@ Items.Hand_Of_Midas: -> Add this
 ```
 {% endcode %}
 
-That's it, you've created a new weapon now. This weapon will look & behave exactly like the Unity handgun, but trust me, it's new. \
+That's it, you've created a new weapon now. This weapon will look & behave exactly like the Unity handgun, but trust me, it's new.\
 To test it out, boot up your game and load any save.
 
 At this stage your tweak file exists only in your mod's project folder. It can't do anything in game from there, so you will need to use the "Install" button to install your tweak file to the game directory. Then you can test it.
 
-To test it out, boot up your game and load any save.&#x20;
+To test it out, boot up your game and load any save.
 
 Now open up the CET [Console](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/console/console "mention"):
 
@@ -491,7 +491,7 @@ Good thinking, but no. In Cyberpunk, only **one** mod can edit any given file. T
 
 Place a dedicated [`en-us.json`](https://mega.nz/file/3uB2CL5L#Y18wD4pGo1L7Y699GNvy6UaKVb8BqkjDP-FeYi9VcQM) file in your `midas_collection`\\`localization` folder. This is where we'll add our own translation entries – after that, we only need to tell ArchiveXL about the file and lean back.
 
-<figure><img src="../../../../.gitbook/assets/image (218).png" alt=""><figcaption><p>Red arrow = localization json added correctly. Green arrow = add new element in the json. Yellow arrow = key fields in new entry</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (217) (1).png" alt=""><figcaption><p>Red arrow = localization json added correctly. Green arrow = add new element in the json. Yellow arrow = key fields in new entry</p></figcaption></figure>
 
 ### Setting up a localizationKey
 
@@ -538,11 +538,9 @@ Items.Hand_Of_Midas:
 ```
 
 {% hint style="warning" %}
-This `localizedDescription:` is **not** the yellow text you see on the weapon, but the red-colored description that is shown in the Inspect screen. \
+This `localizedDescription:` is **not** the yellow text you see on the weapon, but the red-colored description that is shown in the Inspect screen.\
 The text that is shown (as yellow-colored) on the weapon is instead defined in the `UIData` of the Iconic Mod (at Step 12)
 {% endhint %}
-
-
 
 These lines set the display name and the description of your weapon using the keys defined in your localization file. The **values** on the right side of the `:` must match the `secondaryKey` values from your `en-us.json` file and be **globally unique**.
 
@@ -633,7 +631,7 @@ There are a lot of values to play around with in a tweak file. You are often bet
 
 ## Step 9: Making an Iconic Mod (Special Ability & Stats)
 
-The main thing that makes an iconic weapon so special is its iconic mod. These are like any other weapon mod, but hidden from the UI. \
+The main thing that makes an iconic weapon so special is its iconic mod. These are like any other weapon mod, but hidden from the UI.\
 They carry the Stat changes from the base model of the weapon, the golden text description on the UI Tooltip and any dedicated Effectors.
 
 Before you start hacking up your own, it is very important you have a look at the existing Iconic Mods in game.
@@ -1144,7 +1142,7 @@ Prereqs.Is_Weapon_Ranged:
 ## Bonus: Audio - Gun Go Boom
 
 Firing sounds of guns are dictated by the value of their `audioName` flat.\
-Swapping them to those of another gun is as easy as changing that value.&#x20;
+Swapping them to those of another gun is as easy as changing that value.
 
 ```yaml
 # Hand of Midas weapon tweak
@@ -1161,7 +1159,7 @@ For a list of soundsets already in the game, refer to [cheat-sheet-weapon-audio.
 {% hint style="danger" %}
 Beware that firing sounds are, natively, separately set for each firing mode.
 
-Meaning, for example, giving the `audioName` of a weapon that usually fires as Burst to a weapon that doesn't could result in missing sounds (or the other way around).&#x20;
+Meaning, for example, giving the `audioName` of a weapon that usually fires as Burst to a weapon that doesn't could result in missing sounds (or the other way around).
 
 Having [Trigger Mode Control](https://www.nexusmods.com/cyberpunk2077/mods/13077) installed passively fixes this problem in the background, allowing for correct sounds on all firemode combinations.\
 (refer to its own [documentation](https://github.com/Seijaxx/TriggerModeControl/wiki/rangedAttacks-and-triggerModes) if interested about how to customize firemodes and attack types)
@@ -1171,7 +1169,7 @@ Having [Trigger Mode Control](https://www.nexusmods.com/cyberpunk2077/mods/13077
 
 We can add custom sounds using RedMod but, due to how that works (as a replacer), we could end up influencing other guns and/or generating conflicts.
 
-<figure><img src="../../../../.gitbook/assets/image (214).png" alt=""><figcaption><p>An explanation for how audio works internally, should you decide to go the RedMod route.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (213) (1).png" alt=""><figcaption><p>An explanation for how audio works internally, should you decide to go the RedMod route.</p></figcaption></figure>
 
 ## Summary: The iconic weapon in action
 

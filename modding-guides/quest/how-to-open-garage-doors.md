@@ -26,11 +26,11 @@ This page will teach you how to create an auto-opening garage door via .questpha
 
 Since we are in the quest section I'll show how to open it within `.questphases` and using "native" nodes.
 
-1. &#x20;Create a basic structure for our quest
+1. Create a basic structure for our quest
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (11) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 2.  Find the door you want to open. Make sure it's not a texture (collisionNode). For example, i took a maelstrom gate.
 
@@ -38,19 +38,13 @@ Since we are in the quest section I'll show how to open it within `.questphases`
 
     <figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
-
-
-3.  Create `pauseCondition` on distance and `interactiveObjectManager` in our `.questphase`&#x20;
-
-
+    <figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
+3.  Create `pauseCondition` on distance and `interactiveObjectManager` in our `.questphase`
 
     <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-4.  Showcase&#x20;
+4.  Showcase
 
     <figure><img src="../../.gitbook/assets/output.gif" alt=""><figcaption></figcaption></figure>
-
-
 
 ## Worth mentioning.
 

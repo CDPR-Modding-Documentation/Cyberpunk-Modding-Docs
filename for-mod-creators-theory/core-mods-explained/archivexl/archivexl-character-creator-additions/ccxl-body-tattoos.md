@@ -1,7 +1,5 @@
 # CCXL: Body Tattoos
 
-
-
 ## Summary
 
 This page will tell you how to use ArchiveXL to add body tattoos to the character creator
@@ -27,7 +25,7 @@ If you ignore this advice, you're making things needlessly difficult for yoursel
 In this tutorial, we will create an **overlay mesh** from a base game body mesh, which you can get from the [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser "mention").
 
 {% hint style="info" %}
-If you want to create an overlay from a modded body, use the [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser "mention") instead.
+If you want to create an overlay from a modded body, use the [Asset Browser #Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser "mention") instead.
 {% endhint %}
 
 {% hint style="success" %}
@@ -74,14 +72,14 @@ In this section, we will configure your `.mesh` file to load the texture(s) via 
 
 ### Explanation
 
-The textures are inside the `textures` folder. They are loaded by the `.mi` file.&#x20;
+The textures are inside the `textures` folder. They are loaded by the `.mi` file.
 
 If you want to tweak the parameters, make sure to edit this file (we will look at it in more detail later).
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
-You can learn more about meshes and materials on the [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention") page, and about .mi files under [re-using-materials-.mi.md](../../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention").&#x20;
+You can learn more about meshes and materials on the [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") page, and about .mi files under [re-using-materials-.mi.md](../../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention").
 
 This is not necessary for the purpose of this tutorial.
 {% endhint %}
@@ -118,11 +116,11 @@ Since our imported mesh is named as `your_tattoo_pma`, the dynamic renaming feat
 
 ### Moving the other files
 
-You can use the dynamic renaming feature (check the box) to safely move all the files in your project.&#x20;
+You can use the dynamic renaming feature (check the box) to safely move all the files in your project.
 
 ### The inkcharcustomization file?
 
-Change the `localizedName` entry to something globally unique – call it something like `UI-customization_yourmoddername_my-first-tattoo`.&#x20;
+Change the `localizedName` entry to something globally unique – call it something like `UI-customization_yourmoddername_my-first-tattoo`.
 
 {% hint style="info" %}
 If you end up using the same translation key as somebody else, the game might show either entry, and you probably don't want that.
@@ -138,8 +136,7 @@ This works the same as in [ccxl-hairs.md](ccxl-hairs.md "mention") -> [#step-5-t
 
 This entry defines what the game will display instead of `UI-customization_yourmoddername_my-first-tattoo` (as defined in our .inkcharcustomization file).
 
-`FemaleVariant` is used as default, so you can leave the male variant empty.\
-
+`FemaleVariant` is used as default, so you can leave the male variant empty.\\
 
 <figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
 
@@ -157,4 +154,3 @@ localization:
 ```
 
 Note: If you want to do for only one gender, just delete either male or female from the .xl and make sure to pick the mesh path to load the one you want if you want either of the genders. Adapting a tattoo is usually pretty easy! Why not make your mod for both genders?
-

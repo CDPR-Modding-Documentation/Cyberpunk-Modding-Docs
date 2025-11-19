@@ -49,7 +49,7 @@ Requirements:
 
 ## Prerequisites:
 
-* You have a custom NPC Wolvenkit project with an [.app file](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files) and a [root entity](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity) file.\
+* You have a custom NPC Wolvenkit project with an [.app file](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files) and a [root entity](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity) file.\
   If you don't have one, you can download the template project from [.](./ "mention")
 * You have configured your modder name in [Wolvenkit's settings](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/settings#your-name) (click the link if you haven't)
 
@@ -66,8 +66,7 @@ Here's how:
 3. Scroll down to your installed NPV's mod folder.\
    \
    Note: Mod files are in alphabetical order of archive name, but split into two sections for capitalized archive names and lowercase archive names.
-
-4) Open the NPV mod folder. Locate both the `.app` and the `.ent` file. Double click to add them to your project.\
+4. Open the NPV mod folder. Locate both the `.app` and the `.ent` file. Double click to add them to your project.\
    \
    Note: You may have an .app for a Nibbles replacer as well as your NPV's regular AMM app. Use the AMM app (not the Nibbles replacer app) if you want to keep your character's appearance names.
 
@@ -255,7 +254,7 @@ Add a new line underneath it, and copy and paste this:
 
 Alternatively, you can search "Items." in the Tweak Browser in Wolvenkit and find your weapons.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. If you want to give your NPC more than one weapon, copy and paste `- item:` to a new line for each weapon you want . Spaces are important, make sure it's in line with the item entry above it. Multiple items registered properly will look like this:
 

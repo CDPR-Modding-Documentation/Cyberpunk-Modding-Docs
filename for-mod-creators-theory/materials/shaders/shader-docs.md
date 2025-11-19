@@ -86,29 +86,29 @@ base/materials/mesh_decal.mt
 | RoughnessTexture         | Roughness\* | Roughness\* | Roughness\* |       ?      |
 | MetalnessTexture         | Metalness\* | Metalness\* | Metalness\* |       ?      |
 
-| Properties               |    Description   |
-| ------------------------ | :--------------: |
-| VertexOffsetFactor       |         ?        |
-| DiffuseColor             | Procedural Color |
-| DiffuseAlpha             |       Alpha      |
-| UVOffsetX/Y              |         ?        |
-| UVRotation               |         ?        |
-| UVScaleX/Y               |         ?        |
-| SecondaryMaskUVScale     |         ?        |
-| SecondaryMaskUVInfluence |         ?        |
-| NormalAlpha              |         ?        |
-| UseNormalAlphaTex        |         ?        |
-| NormalsBlendingMode      |         ?        |
-| RoughnessScale           |         ?        |
-| RoughnessBias            |         ?        |
-| MetalnessScale           |         ?        |
-| MetalnessBias            |         ?        |
-| AlphaMaskContrast        |         ?        |
-| RoughnessMetalnessAlpha  |         ?        |
-| AnimationSpeed           |         ?        |
-| AnimationFramesWidth     |         ?        |
-| AnimationFramesHeight    |         ?        |
-| DepthThreshold           |         ?        |
+| Properties               |                    Description                   |
+| ------------------------ | :----------------------------------------------: |
+| VertexOffsetFactor       |                         ?                        |
+| DiffuseColor             |                 Procedural Color                 |
+| DiffuseAlpha             |                       Alpha                      |
+| UVOffsetX/Y              |                         ?                        |
+| UVRotation               |                         ?                        |
+| UVScaleX/Y               |                         ?                        |
+| SecondaryMaskUVScale     |                         ?                        |
+| SecondaryMaskUVInfluence |                         ?                        |
+| NormalAlpha              |                         ?                        |
+| UseNormalAlphaTex        |                         ?                        |
+| NormalsBlendingMode      |                         ?                        |
+| RoughnessScale           |                         ?                        |
+| RoughnessBias            |                         ?                        |
+| MetalnessScale           |                         ?                        |
+| MetalnessBias            |                         ?                        |
+| AlphaMaskContrast        |                         ?                        |
+| RoughnessMetalnessAlpha  | Control reflection intensity (1 = full, 0 = off) |
+| AnimationSpeed           |                         ?                        |
+| AnimationFramesWidth     |                         ?                        |
+| AnimationFramesHeight    |                         ?                        |
+| DepthThreshold           |                         ?                        |
 
 #### Notes
 
@@ -116,7 +116,7 @@ base/materials/mesh_decal.mt
 
 ### glass
 
-There are many different other glass shaders. This is the most basic one, used for small objects:&#x20;
+There are many different other glass shaders. This is the most basic one, used for small objects:
 
 ```
 base\materials\glass.mt
@@ -199,7 +199,7 @@ base\fx\shaders\television_ad.mt
 
 #### Note
 
-* AdTexture: TV screen will play looping animations that are actually sprites like a .gif. We believe this is for optimization purposes since videos are heavy.&#x20;
+* AdTexture: TV screen will play looping animations that are actually sprites like a .gif. We believe this is for optimization purposes since videos are heavy.
 * TilesWidth, TilesHeight, and PixelsHeight combine will help the game define the dimension of your tile (sprite) on the sprite sheet.
 * You should calculate your sprite sheet dimension so it completely fits in a square sheet. For example, a simple dimension is 5x5 tiles with 300x300 pixel sprite. Such a dimension will produce animation with 25 frames of a square sprite.
 * More examples of such sprite sheets can be found in the path below

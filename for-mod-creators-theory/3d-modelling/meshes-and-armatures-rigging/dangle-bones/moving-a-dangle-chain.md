@@ -9,7 +9,7 @@ This guide will go deep into detail about moving dangle bones.\
 \
 Still unknown: changing bone parenting, rotating bones, editing the animgraph physics, adding new mirrored dangle chains for better coverage. If anyone has done tests on any of these topics, please contact @eagul via Discord!
 
-### Assumed skill level:&#x20;
+### Assumed skill level:
 
 \- You understand what you are doing, and know why you need to move dangle bones\
 \- You are able to read and comprehend instructions.
@@ -22,7 +22,7 @@ Visual learners, rejoice! Here is a more up do date guide in a video form with s
 
 \
 Okay.... Let's get started.\
-If you are doing physics stuff, and need to move the dangle bones to fix the leverage effect, or for any other reason, you are in the right place. \
+If you are doing physics stuff, and need to move the dangle bones to fix the leverage effect, or for any other reason, you are in the right place.\
 \
 I will be using my long hair dangles project for examples here.\
 Read 'Leverage effect' section in 'Dangle Bones' page for the reasoning behind why this process is necessary. (Using a normal hair dangle skeleton is not an option because it is parented to the 'head' bone, which causes horrible clipping and unnatural movements when the head turns. It might be possible to change the parenting to spine3 bone, but i have yet to test. Even if it is possible, the process described below would still be usefull to move the chains into the right positions)\
@@ -35,15 +35,14 @@ You will need to do a couple things:\
 \
 I would also recommend having a rigged and weight painted mesh ready, for testing purposes.\
 \
-I will explain each step of the process more in-detail below.\
-
+I will explain each step of the process more in-detail below.\\
 
 ## MultiMesh Export
 
 Usually, you can get the skeleton in it's real form into blender by using WithRig export on the mesh.\
 However, if the .mesh contains bones that are not present in the .rig, you will need to use MultiMesh Export.\
-You need to find a second (or even more) .rig file, so all the bones that are present in the mesh have a counterpart in the .rig. You then need to also add the meshes that correspond to the new .rigs and then export. \
-Attached images show settings i used to export base\characters\garment\citizen\_formal\torso\t1\_072\_shirt\_\_netwatch\t1\_072\_ma\_shirt\_\_netwatch\_dangle.mesh with rig, which i used for long hair dangles.&#x20;
+You need to find a second (or even more) .rig file, so all the bones that are present in the mesh have a counterpart in the .rig. You then need to also add the meshes that correspond to the new .rigs and then export.\
+Attached images show settings i used to export base\characters\garment\citizen\_formal\torso\t1\_072\_shirt\_\_netwatch\t1\_072\_ma\_shirt\_\_netwatch\_dangle.mesh with rig, which i used for long hair dangles.
 
 <figure><img src="../../../../.gitbook/assets/image (168).png" alt=""><figcaption></figcaption></figure>
 
@@ -53,24 +52,22 @@ Attached images show settings i used to export base\characters\garment\citizen\_
 
 ## Editing the .rig
 
-Open the .rig file in Wolvenkit. Under boneNames you can find which index corresponds to which bone. Expand boneTransforms. Locate the bones you want to move. Moving a bone in a chain will also move every bone that's parented to it (located lower than it in the chain). In the case of the image above, moving the bone selected in yellow, also moved the entire chain. In this case i moved bone 8 (selected in yellow) by 0.283076668 on the Y axis.&#x20;
+Open the .rig file in Wolvenkit. Under boneNames you can find which index corresponds to which bone. Expand boneTransforms. Locate the bones you want to move. Moving a bone in a chain will also move every bone that's parented to it (located lower than it in the chain). In the case of the image above, moving the bone selected in yellow, also moved the entire chain. In this case i moved bone 8 (selected in yellow) by 0.283076668 on the Y axis.
 
-<figure><img src="../../../../.gitbook/assets/image (124).png" alt=""><figcaption><p>Original </p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (124).png" alt=""><figcaption><p>Original</p></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (127).png" alt=""><figcaption><p>Edited</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (182).png" alt=""><figcaption><p>Result</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (148) (1).png" alt=""><figcaption><p>Result</p></figcaption></figure>
 
 ## Animgraph edit
 
 As you can see, the skeleton exploded. This is (to my understanding) caused by collision hitboxes on the spine bones. It will only happen if you have moved the dangle chain inside of those hitboxes. If this happens to your skeleton/mesh, follow these steps to fix it:\
-1\) Open the .animgraph file in Wolvenkit. Expand the 'rootNode' array, and keep expanding untill you see collisionRoundedShape and then lower the roundedCornerRadius for each of the bones untill your skeleton no longer explodes. \
+1\) Open the .animgraph file in Wolvenkit. Expand the 'rootNode' array, and keep expanding untill you see collisionRoundedShape and then lower the roundedCornerRadius for each of the bones untill your skeleton no longer explodes.\
 \
-Here i set the value to 0, the animations work fine, but a correctly set value might reduce clipping in some poses.&#x20;
+Here i set the value to 0, the animations work fine, but a correctly set value might reduce clipping in some poses.
 
-<figure><img src="../../../../.gitbook/assets/image (119).png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../../.gitbook/assets/image (110) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (106).png" alt=""><figcaption><p>Result</p></figcaption></figure>
 
@@ -82,11 +79,11 @@ The .mesh also contains bone matrices. To my understanding, these are used to ma
 \
 In this case, I'm editing bones 79-83. The goal is to move each of them by -0.283076668 on the Y axis.\
 \
-Open the .mesh in Wolvenkit and navigate to boneRigMatrices.&#x20;
+Open the .mesh in Wolvenkit and navigate to boneRigMatrices.
 
 <figure><img src="../../../../.gitbook/assets/image (100).png" alt=""><figcaption><p>Not edited bone matrix of bone 79.</p></figcaption></figure>
 
-Next, open [https://matrixcalc.org/](https://matrixcalc.org/) and copy paste each of the entries of the bone matrix into the calculator. Then press inverse.&#x20;
+Next, open [https://matrixcalc.org/](https://matrixcalc.org/) and copy paste each of the entries of the bone matrix into the calculator. Then press inverse.
 
 <figure><img src="../../../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 
@@ -94,7 +91,7 @@ Notice how the bottom row of the inverse matrix corresponds to the coordinates o
 
 <figure><img src="../../../../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
 
-Next, copy the new Y coordinate from the bone you duplicated and moved.&#x20;
+Next, copy the new Y coordinate from the bone you duplicated and moved.
 
 <figure><img src="../../../../.gitbook/assets/image (151).png" alt=""><figcaption></figcaption></figure>
 
@@ -114,12 +111,10 @@ Next, press the 3 small lines below the output, click on Show LaTeX, and copy th
 
 And now repeat all of those steps for each of your bones... enjoy...\
 After that, you should be finished!\
-\
-
+\\
 
 {% embed url="https://streamable.com/sdkxvc" %}
-Final result \
+Final result\
 \
-\
-
+\\
 {% endembed %}

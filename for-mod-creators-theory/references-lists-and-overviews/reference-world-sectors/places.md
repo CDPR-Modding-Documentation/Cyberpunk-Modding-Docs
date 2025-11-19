@@ -29,7 +29,7 @@ There are several overviews of interesting locations:
 
 ## Legacy information
 
-With the release of [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/) 0.5.2, the information in the box below has become obsolete and will only be preserved for posterity.&#x20;
+With the release of [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/) 0.5.2, the information in the box below has become obsolete and will only be preserved for posterity.
 
 ### Getting the player's coordinates
 
@@ -43,15 +43,15 @@ print(GetPlayer():GetWorldPosition())
 
 <summary>Finding sectors: Legacy information</summary>
 
-## Finding a specific sector
+### Finding a specific sector
 
 For technical stuff about sectors and the really manual way to look for things go [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/files-and-what-they-do/the-whole-world-.streamingsector). For less masochistic methods read on.
 
-### Prerequisite: Getting the coordinates
+#### Prerequisite: Getting the coordinates
 
 Complete [#getting-the-players-coordinates](places.md#getting-the-players-coordinates "mention"). Copy the result and put it into a txt file somewhere.
 
-### Method 1: the Wolvenkit preview
+#### Method 1: the Wolvenkit preview
 
 1. In Wolvenkit, open the file `base\worlds\03_night_city\_compiled\default\blocks\all.streamingblock`
 2. Switch to the second tab "All Sector Preview"
@@ -61,37 +61,31 @@ Complete [#getting-the-players-coordinates](places.md#getting-the-players-coordi
 
 You can double-click on the red text to load the corresponding streamingsector file into the streamingblock's preview!
 
-
-
 <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FGzn7chW8b7Kia3ogCFjy%2Fstreamingsector_finding_sector.png?alt=media&#x26;token=8121dbe6-6c21-43fe-b5a4-cda97b58a30a" alt="veri nise" data-size="original">
 
-For details on how to find other LOD levels, check [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/files-and-what-they-do/the-whole-world-.streamingsector#calculating-the-files).&#x20;
+For details on how to find other LOD levels, check [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/files-and-what-they-do/the-whole-world-.streamingsector#calculating-the-files).
 
-### Method 2: Following the meshes
+#### Method 2: Following the meshes
 
-If you know a mesh that's used inside the location, you can right-click the mesh file inside Wolvenkit's asset browser and use "**Find files using this**".&#x20;
+If you know a mesh that's used inside the location, you can right-click the mesh file inside Wolvenkit's asset browser and use "**Find files using this**".
 
 You might want to consider using a unique mesh rather than a standard cup or bottle.
 
-
-
 <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FJfiWdJYZtgTynfdwObbH%2Fstreamingsectors_find_files_using_this.png?alt=media&#x26;token=a8d590c2-7421-4b43-a61f-ba9fe8a2a056" alt="" data-size="original">
 
-### Method 3: Via script
+#### Method 3: Via script
 
-Go [here for PL](https://colab.research.google.com/github/Simarilius-uk/sectorStuff/blob/main/AllBlocks_colab_w_streamingblock_PL.ipynb) ([old link](https://colab.research.google.com/github/Simarilius-uk/sectorStuff/blob/main/AllBlocks_colab_w_streamingblock.ipynb)) and either use the script in your webbrowser (recommended) or download the script locally to run it with Python.&#x20;
+Go [here for PL](https://colab.research.google.com/github/Simarilius-uk/sectorStuff/blob/main/AllBlocks_colab_w_streamingblock_PL.ipynb) ([old link](https://colab.research.google.com/github/Simarilius-uk/sectorStuff/blob/main/AllBlocks_colab_w_streamingblock.ipynb)) and either use the script in your webbrowser (recommended) or download the script locally to run it with Python.
 
-#### When running from browser:
+**When running from browser:**
 
 Change the x, y and z coordinate to the coordinates that you found[ via CET](places.md#prerequisite-getting-the-coordinates):thumbsup:
 
-
-
 <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FzqTXNEq2qAMPvHS713vW%2Fexport_streaming_blender_search_script.png?alt=media&#x26;token=ff5f9877-4b3a-458d-8241-aef6e2a96294" alt="or via CET: print(GetPlayer():GetWorldPosition())" data-size="original">
 
-#### When running locally:
+**When running locally:**
 
-The script requires you to have a local json export of `all.streamingblock` somewhere.&#x20;
+The script requires you to have a local json export of `all.streamingblock` somewhere.
 
 Change line 11 to the absolute path of your json (remember the double slashes):
 
@@ -109,7 +103,4 @@ Now, run the script via Python. It'll give you a list of interior/exterior secto
 
 The blocks at the bottom can be used to generate a streamingblock json file for just the results, which can be imported to wolvenkit to preview them as per Method 1. if running the script locally you will need to download the sectors.streamingblock file from the github and edit the templatepath variable to point at it.
 
-
-
 </details>
-

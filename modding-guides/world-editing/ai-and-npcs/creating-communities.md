@@ -117,7 +117,7 @@ To delete an entry, phase or period, simply right click its header
 
     <figure><img src="../../../.gitbook/assets/aiSpotMarkingExample.png" alt="" width="322"><figcaption><p>Example of marking an AISpot, should be done to a group of multiple spots</p></figcaption></figure>
 
-    ## Full example with SpotNodeRef's
+    ### Full example with SpotNodeRef's
 * This is a full example of having either one or two Judy's spawn in specified spots, depending on the time
 
 <figure><img src="../../../.gitbook/assets/fullJudyExampleSpotNodeRefs" alt=""><figcaption></figcaption></figure>

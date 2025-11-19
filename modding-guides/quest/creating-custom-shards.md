@@ -10,7 +10,7 @@ This page will teach you how to create custom shards for Cyberpunk 2077 using [W
 ## Requirements
 
 * [WolvenKit](../../for-mod-creators-theory/modding-tools/wolvenkit.md)
-* [Cyber Engine Tweaks](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/)
+* [Cyber Engine Tweaks](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP5jWcLZLbbbzO-_ua1-887967055/)
 * [World Builder](../world-editing/object-spawner/)
 * [Hot Reload](../../for-mod-creators-theory/modding-tools/redhottools/rht-hot-reload.md) (optional)
 * A text editor
@@ -58,9 +58,9 @@ RDTDataViewModel
   * gameJournalPrimaryFolderEntry (_id:_ onscreens)
     * gameJournalFolderEntry (_id:_ emails)
       * gameJournalFolderEntry (_id:_ quests)
-        * gameJournalFolderEntry (_id:_ minor\_quest)&#x20;
-          * gameJournalFolderEntry (_id:_ new\_shards)&#x20;
-            * gameJournalOnscreenGroup (_id:_ shards)&#x20;
+        * gameJournalFolderEntry (_id:_ minor\_quest)
+          * gameJournalFolderEntry (_id:_ new\_shards)
+            * gameJournalOnscreenGroup (_id:_ shards)
               * gameJournalOnscreen (_description:_ Value: LocKey#9999999999999999998, _id_: 01\_shard, _tag:_ articles, _title:_ Value: LocKey#9999999999999999999)
 
 That's a lot of nesting, so summarize, you should add the following to `shards.journal`:
@@ -170,7 +170,7 @@ Open up Cyberpunk 2077 and spawn a `shard_case_container.ent`. The correct one i
 
 <figure><img src="../../.gitbook/assets/shards_tutorial_04.png" alt=""><figcaption><p>You can kind of see the glow at the edge of the shard case in this screencap. It's much more obvious in motion.</p></figcaption></figure>
 
-Position the shard case where you like, and then add it to a group called `new_shards`. You can change the appearance of the shard under 'Entity Template.'&#x20;
+Position the shard case where you like, and then add it to a group called `new_shards`. You can change the appearance of the shard under 'Entity Template.'
 
 <figure><img src="../../.gitbook/assets/shards_tutorial_04-02.png" alt=""><figcaption></figcaption></figure>
 
@@ -180,9 +180,9 @@ Save the group by pressing the floppy disk icon across from its name. Switch ove
 
 Now, we're going to take the exported `.json` file and add it to our WolvenKit project's `raw` folder. It should be in your game's base folder under `bin/64x/plugins/cyber_engine_tweaks/mods/entSpawner/export`. The file should be called `new_shards_exported.json`.
 
-Back in WolvenKit, go to **Tools** -> **Script manager**. Delete import\_object\_spawner under User if it's there. Then double click import\_object\_spawner under System (do not press the green arrow) and click yes to make a local copy, which will then open in the WolvenKit editor.&#x20;
+Back in WolvenKit, go to **Tools** -> **Script manager**. Delete import\_object\_spawner under User if it's there. Then double click import\_object\_spawner under System (do not press the green arrow) and click yes to make a local copy, which will then open in the WolvenKit editor.
 
-In this script, change the `const inputFilePathInRawFolder` value to `new_shards_exported.json` and then click run.&#x20;
+In this script, change the `const inputFilePathInRawFolder` value to `new_shards_exported.json` and then click run.
 
 <figure><img src="../../.gitbook/assets/shards_tutorial_05.png" alt=""><figcaption></figcaption></figure>
 
@@ -192,9 +192,9 @@ This will generate a folder called `new_shards` that contains `all.streamingBloc
 
 ## 5. Linking up the spawned shard case
 
-Copy the data path of the `shards.streamingsector` by either right clicking on it and selecting 'Copy relative path to game file' or clicking the orange button next to its name. Double click `all.streamingblock` to open it and find the _descriptors_ field. Select the first entry and the value of the _data_ DepotPath field to the path you just copied.&#x20;
+Copy the data path of the `shards.streamingsector` by either right clicking on it and selecting 'Copy relative path to game file' or clicking the orange button next to its name. Double click `all.streamingblock` to open it and find the _descriptors_ field. Select the first entry and the value of the _data_ DepotPath field to the path you just copied.
 
-Now, double click `new_shards.xl` in your resources folder. This will open up the file in your default text editor. Change the _blocks_ path to the **relative path of `all.streamingblock.`**&#x20;
+Now, double click `new_shards.xl` in your resources folder. This will open up the file in your default text editor. Change the _blocks_ path to the **relative path of `all.streamingblock.`**
 
 ### `new_shards.xl` contents:
 
@@ -204,7 +204,7 @@ streaming:
     - mod\new_shards\sectors\new_shards\all.streamingblock
 ```
 
-Back in WolvenKit, double click `new_shards.streamingsector` to open it up. Select the first entry under _nodes_ and change the _debugName_ to 01\_shard\_case.&#x20;
+Back in WolvenKit, double click `new_shards.streamingsector` to open it up. Select the first entry under _nodes_ and change the _debugName_ to 01\_shard\_case.
 
 Now find _instanceData_ in this same entry. Click the plus sign and add entEntityInstanceData. Expand _instanceData_, select _buffer_, and add ShardCaseContainer.
 
@@ -214,7 +214,7 @@ Finally, change the value of the _itemTDBID_ field in ShardCaseContainer to `Ite
 
 ## 6. Creating new `.yaml` files
 
-Create a new TweakXL file and call it `new_shards_01_shard`. The TweakXL file type is listed under the TweakDB category. The resulting file path will be `r6\tweaks\new_shards\new_shards_01_shard.yaml`.&#x20;
+Create a new TweakXL file and call it `new_shards_01_shard`. The TweakXL file type is listed under the TweakDB category. The resulting file path will be `r6\tweaks\new_shards\new_shards_01_shard.yaml`.
 
 Add the following to `new_shards_01_shard.yaml`:
 

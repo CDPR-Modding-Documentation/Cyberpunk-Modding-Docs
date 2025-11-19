@@ -36,13 +36,9 @@ You'll need [WolvenKit](https://github.com/WolvenKit/Wolvenkit/releases), [NVIDI
 
 ### **Okay, now we can get started!**
 
-Create a new WolvenKit project and call it whatever you want.&#x20;
+Create a new WolvenKit project and call it whatever you want.
 
-<div align="center">
-
-<figure><img src="../../../.gitbook/assets/create_project (2).png" alt=""><figcaption></figcaption></figure>
-
-</div>
+<div align="center"><figure><img src="../../../.gitbook/assets/create_project (2).png" alt=""><figcaption></figcaption></figure></div>
 
 After that, import the file `base\weather\24h_basic\luts\cp2077_gen_lut_nge_v017.xbm` into your project.
 
@@ -80,25 +76,23 @@ Save back your DDS using NVTT and apply these settings:
 
 #### **Wolvenkit:**
 
-* Open the Wolvenkit project where you have the original LUT of the game in `.xbm`&#x20;
+* Open the Wolvenkit project where you have the original LUT of the game in `.xbm`
 * Take your newly made LUT and name it the same as the original LUT, so: `cp2077_gen_lut_nge_v017.dds`.
-* Move it to the folder where you exported the original LUT from the game in `.dds` format, and overwrite that one with yours.&#x20;
-* The folder in question is: `yourwolvenkitprojectname\source\raw\base\weather\24h_basic\luts`.&#x20;
+* Move it to the folder where you exported the original LUT from the game in `.dds` format, and overwrite that one with yours.
+* The folder in question is: `yourwolvenkitprojectname\source\raw\base\weather\24h_basic\luts`.
 * You can also open the exact location from the 'Project explorer' in Wolvenkit. Under 'raw' folder dropdown you should see the exported `.dds` file. If you hover over it, it will show a yellow folder button that you can click to open its location.
 
-&#x20;![](<../../../.gitbook/assets/image (238).png>)
+![](<../../../.gitbook/assets/image (237) (1).png>)
 
 * Now to import it, hover over 'Tools' at the top left in Wolvenkit, and select 'Import Tool'.
 * Select the LUT and make sure the import settings are correct
-
-
 
 <figure><img src="../../../.gitbook/assets/image (233).png" alt=""><figcaption><p>(LUT Import Settings)</p></figcaption></figure>
 
 **Changing the settings back:**
 
-* When your LUT imports, double click on the `.xbm` file to open it in an editor.&#x20;
-* Then change: depth and width in both sections that we modified, back to the default of 32.&#x20;
+* When your LUT imports, double click on the `.xbm` file to open it in an editor.
+* Then change: depth and width in both sections that we modified, back to the default of 32.
 * Under `renderTextureResource>renderResourceBlobPC>Header>mipMapInfo>0>layout` change 'rowPitch' to '512'.
 
 <figure><img src="../../../.gitbook/assets/image (234).png" alt=""><figcaption><p>(rowPitch Settings)</p></figcaption></figure>
@@ -107,25 +101,23 @@ Save back your DDS using NVTT and apply these settings:
 
 <figure><img src="../../../.gitbook/assets/image (235).png" alt=""><figcaption><p>(textureInfo Settings)</p></figcaption></figure>
 
-That's it, now either use 'Pack mod' to pack the mod and have .archive file in the Wolvenkit project folder, or 'Install Mod' to preview it in game!&#x20;
+That's it, now either use 'Pack mod' to pack the mod and have .archive file in the Wolvenkit project folder, or 'Install Mod' to preview it in game!
 
-This will replace the sdr LUT for the base game (Night City).&#x20;
+This will replace the sdr LUT for the base game (Night City).
 
-I**f you want the LUT to also apply to Dogtown, or HDR:** `cp2077_gen_lut_nge_hdr_v017` is HDR lut. `cp2077_gen_lut_ep1_sdr_v02b` and(?) `cp2077_gen_lut_ep1_sdr_v002`is Dogtown.&#x20;
+I**f you want the LUT to also apply to Dogtown, or HDR:** `cp2077_gen_lut_nge_hdr_v017` is HDR lut. `cp2077_gen_lut_ep1_sdr_v02b` and(?) `cp2077_gen_lut_ep1_sdr_v002`is Dogtown.
 
-If you want to change these as well, before importing you have to have the paths for these LUTs correct, along with the names.&#x20;
+If you want to change these as well, before importing you have to have the paths for these LUTs correct, along with the names.
 
 To achieve this with ease, I suggest exporting the LUTs you want replaced, as they will create paths and give you the names by default.
 
 <figure><img src="../../../.gitbook/assets/image (236).png" alt=""><figcaption><p>(LUTs I exported for replacement)</p></figcaption></figure>
 
-Then you can go over to their locations, copy your LUT `.dds` file, copy the name of the LUT you want to replace, delete the original and overwrite it with yours while making sure it retains the name from the original. Rinse and repeat. Process for importing and adjusting the settings afterwards will be the same as before.&#x20;
-
-
+Then you can go over to their locations, copy your LUT `.dds` file, copy the name of the LUT you want to replace, delete the original and overwrite it with yours while making sure it retains the name from the original. Rinse and repeat. Process for importing and adjusting the settings afterwards will be the same as before.
 
 ## Results!
 
 | Before                                                                                         | After                                                                                   |
 | ---------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------- |
-| <img src="../../../.gitbook/assets/photomode_26012023_200639.png" alt="" data-size="original"> | ![](../../../.gitbook/assets/photomode\_26012023\_200249.png)                           |
+| <img src="../../../.gitbook/assets/photomode_26012023_200639.png" alt="" data-size="original"> | ![](../../../.gitbook/assets/photomode_26012023_200249.png)                             |
 | As you can see, vanilla's red saturation leaves more to be desired.                            | After our edits the red saturation is a lot better and the contrast is more satisfying! |

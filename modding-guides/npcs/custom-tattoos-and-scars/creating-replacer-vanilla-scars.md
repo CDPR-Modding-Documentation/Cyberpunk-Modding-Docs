@@ -28,10 +28,10 @@ This guide will teach you how to create scars by replacing vanilla one. In this 
 * [ ] A drawing software like Clip Paint Studio, Photoshop or [photopea.com](https://www.photopea.com/)
 * [ ] Some time and patience to create scars
 
-## Step 1: Settings up&#x20;
+## Step 1: Settings up
 
 1. Create a [Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name that you can remember. Since we're replacing a basegame asset, make sure that it starts with `basegame`: `basegame_my_scars_replacer`
-2. To create scars replacer, you need the following files  (they're shared for both body genders) from this folder:
+2. To create scars replacer, you need the following files (they're shared for both body genders) from this folder:
 
 ```
 base/characters/common/character_customization_items/scars/face/textures
@@ -44,13 +44,13 @@ You can find them by navigating the [Wolvenkit Asset Browser](https://app.gitboo
 3. Add the files to your project by double-clicking
 4. Use the [Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) to export them
 5. In your Project Explorer's [Raw view](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw), find the png files and click on the folder icon next to one to show them in Windows Explorer.
-6. Open all of them on a drawing software like  photoshop, clip studio paint or [photopea.com](https://www.photopea.com/)
+6. Open all of them on a drawing software like photoshop, clip studio paint or [photopea.com](https://www.photopea.com/)
 
 ## Step 2: Scar creation :
 
 Let's start by creating the scar's bumpmap. Open `pma__basehead_scars_n01.png` (the yellow-greenish one).
 
-The image should look like this :&#x20;
+The image should look like this :
 
 ![](<../../../.gitbook/assets/1 (1) (1).png>)
 
@@ -58,7 +58,7 @@ _The vanilla size are 1024x1024, I have upscaled mine to 4096x4096, but that's p
 
 1. You will need to erase one of the pre-existing scars. Use the pipette tools and take the same color as the background.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (378).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (377) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 2. Add a new layer and paint over this part of the image.
 
@@ -66,8 +66,7 @@ _The vanilla size are 1024x1024, I have upscaled mine to 4096x4096, but that's p
 By creating a new layer, you will preserve the original edit and can toggle your changes on and off in the layers palette.
 {% endhint %}
 
-![](<../../../.gitbook/assets/3 (1) (1).png>)\
-
+![](<../../../.gitbook/assets/3 (1) (1).png>)\\
 
 <div align="left"><figure><img src="../../../.gitbook/assets/4 (2).png" alt="" width="354"><figcaption></figcaption></figure></div>
 
@@ -94,17 +93,17 @@ The scar replaced spans the entire face, so this is the best scar to replace. To
 
 ### Editing the roughness map
 
-1. Now that you have a scar, open `h0_000_pma__basehead_scars_m01` (the black-and-white one, your metallic map).&#x20;
+1. Now that you have a scar, open `h0_000_pma__basehead_scars_m01` (the black-and-white one, your metallic map).
 2. On the yellow image, switch to the red channel again and copy everything (Hotkey: `Ctrl+A`, `Ctrl+C`)
-3. Paste it into the metallic image (Hotkey: `Ctrl+V`). \
-   It should now be on another layer. If not, undo the paste (Hotkey: `Ctrl+Z`), create a new layer in the layer palette, and paste it again.&#x20;
+3. Paste it into the metallic image (Hotkey: `Ctrl+V`).\
+   It should now be on another layer. If not, undo the paste (Hotkey: `Ctrl+Z`), create a new layer in the layer palette, and paste it again.
 4. The pasted scar should automatically be black and white. If not, change that via the Edit -> Image -> Greyscale option.
 5. Invert the image (Hotkey: `Ctrl+I`) so that it looks like the picture below:
 
 <figure><img src="../../../.gitbook/assets/8 (1).png" alt=""><figcaption></figcaption></figure>
 
 6. Now change the contrast of the formerly red channel so that the scar is black (Image -> Adjustments -> Brightness/Contrast).
-7. Repeat the process with the green channel from the normal map.&#x20;
+7. Repeat the process with the green channel from the normal map.
 8. Now change the brightness of the formerly green channel to a light grey Image -> Adjustments -> Brightness/Contrast).
 9. Set the blending mode of the green scar layer to `Difference`. This will give you an inverted image, but that's fine.
 10. Now, merge the two layers (hotkey: `Ctrl+E`)
@@ -117,9 +116,7 @@ Replace in your wolvenkit project all the png with the new one, « Import » and
 
 Go to Character Customization and select the scar 4.
 
-
-
-## Known issue :&#x20;
+## Known issue :
 
 Here is the issue that I have had to deal with and you will certainly meet it.
 
@@ -127,17 +124,12 @@ In-game, this kind of issue can happen , nose textures cut and strange square sh
 
 To remedy this problem, create a new project and obtain the 4 file types as seen above and replace them with those that you modified, export, import, install and that's it, the problem should no longer be present. If the problem persists, start the procedure again.
 
-
-
 {% tabs %}
 {% tab title="Nose texture cut" %}
 <div align="left"><figure><img src="../../../.gitbook/assets/image (266).png" alt="" width="371"><figcaption></figcaption></figure></div>
 {% endtab %}
 
 {% tab title="Strange square shadow" %}
-<div align="left"><figure><img src="../../../.gitbook/assets/image (268).png" alt="" width="315"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (267) (1).png" alt="" width="315"><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}
-
-
-

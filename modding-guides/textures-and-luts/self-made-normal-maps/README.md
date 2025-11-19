@@ -6,15 +6,15 @@ description: How to create normal maps (bumpmaps) with Blender
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Published** January 06 2023 by @manavortex \
-**Last documented update:** January 20 2024 by @manavortex&#x20;
+**Published** January 06 2023 by @manavortex\
+**Last documented update:** January 20 2024 by @manavortex
 
 This guide will teach you how to create a custom normal map.
 
 ### Wait, this isn't what I want!
 
 * For general information, check [normal-maps-in-cyberpunk.md](../../../for-mod-creators-theory/materials/textures/normal-maps-in-cyberpunk.md "mention")
-* For a different guide about this, check this [Google Doc](https://drive.google.com/file/d/11Z-SYF28nVpF_ZbkIJ_KHCetJK7EcT_X/view) by Тима (Teem)#3118&#x20;
+* For a different guide about this, check this [Google Doc](https://drive.google.com/file/d/11Z-SYF28nVpF_ZbkIJ_KHCetJK7EcT_X/view) by Тима (Teem)#3118
 * For a guide on Cyberpunk materials in Blender, see [cyberpunk-shaders-in-blender.md](../../../for-mod-creators-theory/materials/cyberpunk-shaders-in-blender.md "mention")
 * If you want to create a `.mlmask` instead, see [custom-multilayermasks.md](../custom-multilayermasks.md "mention")
 * Otherwise, you can use the wiki's search function — it uses an LLM and is actually quite useful.
@@ -34,8 +34,6 @@ If you don't have Photoshop, [Photopea](https://www.photopea.com/) offers almost
 For a free tool for faster normal baking, check out [xnormal](https://xnormal.net/).
 {% endhint %}
 
-
-
 ## Step 0: Preparing the viewport
 
 1. [Export your mesh](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit) from WolvenKit
@@ -48,17 +46,15 @@ For a free tool for faster normal baking, check out [xnormal](https://xnormal.ne
    ![](../../../.gitbook/assets/normal_maps_assign_material.png)
 6. Switch to the "Shading" perspective and add an "Image Texture". Select your image by clicking the corresponding button:\
    ![](../../../.gitbook/assets/normal_maps_shading_1.png)
-7. The viewport should already be set to "Solid". Click on the dropdown arrow next to the options and select "Texture" from the list.&#x20;
+7. The viewport should already be set to "Solid". Click on the dropdown arrow next to the options and select "Texture" from the list.
 
 <figure><img src="../../../.gitbook/assets/normal_maps_viewport_shading.png" alt=""><figcaption><p>You will now get the selected texture directly as an overlay.</p></figcaption></figure>
 
 ## Step 1: The Displacement Map
 
-As the first step, we create a [**Displacement Map**](https://de.wikipedia.org/wiki/Displacement_Mapping) for our 3d object. This black and white image will turn your mesh into an object with actual (simulated) depth, which we will then "bake" into a normal map.&#x20;
+As the first step, we create a [**Displacement Map**](https://de.wikipedia.org/wiki/Displacement_Mapping) for our 3d object. This black and white image will turn your mesh into an object with actual (simulated) depth, which we will then "bake" into a normal map.
 
 <figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Displacement.jpg" alt=""><figcaption><p>image source: <a href="https://de.wikipedia.org/wiki/Displacement_Mapping">Wikipedia</a></p></figcaption></figure>
-
-
 
 {% hint style="info" %}
 This tutorial won't cover the process of how to draw such a map in-depth, but there will be a few tips how to do that in Blender.
@@ -70,15 +66,15 @@ The displacement image should be saved in 32 bit image depth rather than the usu
 
 ### Texture Paint Mode
 
-The Texture Paint perspective lets you draw directly on your mesh's surface:&#x20;
+The Texture Paint perspective lets you draw directly on your mesh's surface:
 
 <figure><img src="../../../.gitbook/assets/normal_maps_texture_paint.png" alt=""><figcaption><p>You will probably want to fix this up in Photoshop (Photopea).</p></figcaption></figure>
 
 ### UV edit mode
 
-To see how the mesh is projected on your image, you can check out the UV edit mode.&#x20;
+To see how the mesh is projected on your image, you can check out the UV edit mode.
 
-Switch to "Edit" (shortcut: Tab) and select all vertices (shortcut: ctrl+A). You will now see them projected on the texture:&#x20;
+Switch to "Edit" (shortcut: Tab) and select all vertices (shortcut: ctrl+A). You will now see them projected on the texture:
 
 <figure><img src="../../../.gitbook/assets/normal_maps_uv_editing (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -98,23 +94,23 @@ Take your displacement map and create a **slightly blurry version** of it. This 
 I create a duplicate of my entire armature, just to make certain that I don't accidentally overwrite anything I want to keep. Only work on the new object, since we're getting destructive here.
 {% endhint %}
 
-1. Make sure that your viewport is in Object Mode&#x20;
-2. Select all objects that you want to go on the same normal map, then **join** them together (shortcut: Ctrl+J).&#x20;
-3. Create a duplicate of this mesh (Ctrl+D, ESC to stop moving), then rename that to "Low Poly".&#x20;
+1. Make sure that your viewport is in Object Mode
+2. Select all objects that you want to go on the same normal map, then **join** them together (shortcut: Ctrl+J).
+3. Create a duplicate of this mesh (Ctrl+D, ESC to stop moving), then rename that to "Low Poly".
 4. Select the mesh you duplicated and rename it to "High Poly".
 5. Open the "Modifiers" tab and assign the following modifiers **after** the armature modifier (check screenshot in Step 6)
    1. **Generate -> Subdivision Surface**\
-      &#xNAN;_**Levels Viewport:** 2 or so_\
-      &#xNAN;_**Render:** As many as Blender lets you get away with without crashing, I used 7_\
-      &#xNAN;_**Advanced:**_\
-      _**UV Smooth:** Keep Corners, Junctions_\
-      &#xNAN;_**Boundary Smoothing**: Keep Corners_
+      \&#xNAN;_**Levels Viewport:** 2 or so_\
+      \&#xNAN;_**Render:** As many as Blender lets you get away with without crashing, I used 7_\
+      \&#xNAN;_**Advanced:**_\
+      &#xNAN;_**UV Smooth:** Keep Corners, Junctions_\
+      \&#xNAN;_**Boundary Smoothing**: Keep Corners_
    2. **Deform -> Displace**\
-      &#xNAN;_**Coordinates**: UV_\
-      &#xNAN;_**UV Map:** UVMap_\
-      &#xNAN;_**Direction**: Normal_\
-      &#xNAN;_**Strength:** -0.002 (you can play around with this)_\
-      &#xNAN;_**Midlevel:** 0.000_
+      \&#xNAN;_**Coordinates**: UV_\
+      \&#xNAN;_**UV Map:** UVMap_\
+      \&#xNAN;_**Direction**: Normal_\
+      \&#xNAN;_**Strength:** -0.002 (you can play around with this)_\
+      \&#xNAN;_**Midlevel:** 0.000_
 6. For the "Displace" Modifier, create a new picture, then click on the two sliders to show this texture in the textures tab\
    ![](../../../.gitbook/assets/normal_maps_modifiers.png)
 7. Load your blurred texture:\
@@ -138,10 +134,10 @@ Switch to the "Shading" perspective again. Add another image texture and create 
 
 ## Step 4: Prepare the low poly mesh
 
-The high poly mesh needs to be **completely covered** by the low poly one, like plastic wrap. That will normally not be the case yet, so we need to **inflate** the poly mesh:&#x20;
+The high poly mesh needs to be **completely covered** by the low poly one, like plastic wrap. That will normally not be the case yet, so we need to **inflate** the poly mesh:
 
 1. Set the viewport to Object Mode
-2. Select the Low Poly mesh&#x20;
+2. Select the Low Poly mesh
 3. Switch into Edit Mode (Hotkey: `Tab`)
 4. Select all vertices (Hotkey: `ctrl+A`)
 5. **Optional:** Merge by distance (Hotkey: `M`)
@@ -150,8 +146,8 @@ The high poly mesh needs to be **completely covered** by the low poly one, like 
 
 ### If your mesh inflates asymmetrically
 
-1. Undo your action and select all vertices again.&#x20;
-2. Put the 3d cursor in the center of the selected vertices: \
+1. Undo your action and select all vertices again.
+2. Put the 3d cursor in the center of the selected vertices:\
    `Right-Click -> Snap Vertices -> Cursor To Selected`
 3.  Set the Pivot Point to 3D cursor (Shortcut: `.` (dot), `Numpad 6`)
 
@@ -180,10 +176,10 @@ Find the "Render Properties" tab.
    1. **Bake Type:** Normal
    2. **Influence / Space:** Tangent
    3. **Selected to Active:** Checked
-   4. **Extrusion:** 0.04 m \
-      &#xNAN;_&#x49;f your generated normal map shows artifacts, try tweaking this._
+   4. **Extrusion:** 0.04 m\
+      \&#xNAN;_If your generated normal map shows artifacts, try tweaking this._
    5. **Max Ray Distance:** 0.04 m\
-      &#xNAN;_&#x49;f your generated normal map shows artifacts, try tweaking this._
+      \&#xNAN;_If your generated normal map shows artifacts, try tweaking this._
    6. **Output / Target:** Image Textures
    7. Clear Image: Checked
    8. **Margin / Size:** 16px (or whatever suits you)
@@ -192,7 +188,7 @@ Find the "Render Properties" tab.
 <figure><img src="../../../.gitbook/assets/normal_maps_final (1).png" alt=""><figcaption><p>Things are looking like this now? Great, then click "Bake"!</p></figcaption></figure>
 
 {% hint style="info" %}
-Baking takes time (several minutes) and most of your PC's free resources. This is normal.&#x20;
+Baking takes time (several minutes) and most of your PC's free resources. This is normal.
 {% endhint %}
 
 If everything went well, the image editor on the bottom left will change and display your normal map.
@@ -234,7 +230,7 @@ Make sure to [remove the normal mapping](./#step-3-prepare-the-material) from yo
 First of all, make sure that all your normals are pointing the right way. In the viewport editor, click the "Show Overlays" button and select "Geometry -> Face Orientation" near the bottomn. Blue means outside, red means inside.
 {% endhint %}
 
-The baking process works by capturing the rays of light that bounce between the high poly mesh and the low poly mesh. If you have artifacts, then some of those rays bounced off something else first, which makes them register as inverted. That's the reason why steep creases are a problem — a ray of light might get caught in there and be flipped around.&#x20;
+The baking process works by capturing the rays of light that bounce between the high poly mesh and the low poly mesh. If you have artifacts, then some of those rays bounced off something else first, which makes them register as inverted. That's the reason why steep creases are a problem — a ray of light might get caught in there and be flipped around.
 
 Check the [troubleshooting step for artifacts](./#my-normal-map-has-artifacts).
 
@@ -261,17 +257,15 @@ Here is an example of the issue :\
 Open the UV of your 3D model and select the vertices that are outside on the left of your UV
 
 \
-![](<../../../.gitbook/assets/image (6) (1) (1) (1).png>)\
-
+![](<../../../.gitbook/assets/image (6) (1) (1) (1).png>)\\
 
 <figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption><p><br>Press P and then click on Selection</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Now you have two separate submeshes. Export them both into the same .glb file for Wolvenkit.
-2. Open Photoshop, Paint.net or [Photopea](https://www.photopea.com/) to invert the **green** channel. Save your new .png under a name like \<name\_inverted\_n> \
+2. Open Photoshop, Paint.net or [Photopea](https://www.photopea.com/) to invert the **green** channel. Save your new .png under a name like \<name\_inverted\_n> \\
 
-
-<figure><img src="../../../.gitbook/assets/image (12) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Import your inverted normal map in Wolvenkit. Now, you can create a new material for the normal-inverted parts of your mesh!

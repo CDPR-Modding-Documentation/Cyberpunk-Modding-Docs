@@ -6,7 +6,7 @@ description: Item spawn codes and how they link to appearances
 
 ## What's a BaseID?
 
-Each item is **uniquely identified** by this string[^1]. You can use it to spawn items via [Cyber Engine Tweaks](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/console/console#console-ui) with the following command:&#x20;
+Each item is **uniquely identified** by this string[^1]. You can use it to spawn items via [Cyber Engine Tweaks](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/console/console#console-ui) with the following command:
 
 ```
 Game.AddToInventory("Items.money", 5000)
@@ -24,7 +24,7 @@ A selection of lists for looking up item codes. Alternatively, you can browse th
 
 ## Step 1: Finding the right item
 
-We have several ways of finding items in Cyberpunk:&#x20;
+We have several ways of finding items in Cyberpunk:
 
 * [#by-item-name](spawn-codes-baseids-hashes.md#by-item-name "mention")
 * [#from-a-screenshot](spawn-codes-baseids-hashes.md#from-a-screenshot "mention")
@@ -34,7 +34,7 @@ If these do not help (or in edge cases), check [#alternative-methods-of-finding-
 
 ### By wearing the item
 
-The developer utility [redhottools](../../modding-tools/redhottools/ "mention") offers you the option to watch the player: [#world-inspector-watch-the-player](../../modding-tools/redhottools/rht-the-world-inspector.md#world-inspector-watch-the-player "mention"):&#x20;
+The developer utility [redhottools](../../modding-tools/redhottools/ "mention") offers you the option to watch the player: [#world-inspector-watch-the-player](../../modding-tools/redhottools/rht-the-world-inspector.md#world-inspector-watch-the-player "mention"):
 
 <figure><img src="../../../.gitbook/assets/rht_world_inspector_watch.png" alt=""><figcaption></figcaption></figure>
 
@@ -82,8 +82,8 @@ If you can't find any files with the method below, scroll to [#alternative-metho
 <figure><img src="../../../.gitbook/assets/spawn_codes_finding_app.png" alt=""><figcaption><p>Search WolvenKit for the first part of the BaseID</p></figcaption></figure>
 
 2. You should now have at least one .app file, where the item's appearances are defined..\
-   _To learn more about this, check_ [appearance-.app-files](../../files-and-what-they-do/file-formats/appearance-.app-files/ "mention")_. This is not necessary for this guide._
-   * If you have more than one file, hover over them to view their file paths, and pick the one that's inside a `player` folder.&#x20;
+   &#xNAN;_&#x54;o learn more about this, check_ [appearance-.app-files](../../files-and-what-they-do/file-formats/appearance-.app-files "mention")_. This is not necessary for this guide._
+   * If you have more than one file, hover over them to view their file paths, and pick the one that's inside a `player` folder.
    * If you can't find any files, check [#alternative-methods-of-finding-an-item](spawn-codes-baseids-hashes.md#alternative-methods-of-finding-an-item "mention") below.
 3. Open the .app file (right-click, "Open without adding to project")
 
@@ -94,19 +94,19 @@ If you can't find any files with the method below, scroll to [#alternative-metho
 
 <figure><img src="../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
 
-3. Find the appearance you want (`basic_02_w` or `basic_02_m`) and open it.&#x20;
+3. Find the appearance you want (`basic_02_w` or `basic_02_m`) and open it.
 4. Open the `components` array and find the component that has `mesh` in its name:
 
 <figure><img src="../../../.gitbook/assets/finding_items_mesh_file.png" alt=""><figcaption></figcaption></figure>
 
-5. You want mesh file's `DepotPath`. \
-   &#xNAN;_&#x59;ou can learn more about_ [3d-objects-.mesh-files](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention")_, but it's not necessary for this guide_
+5. You want mesh file's `DepotPath`.\
+   \&#xNAN;_You can learn more about_ [3d-objects-.mesh-files](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention")_, but it's not necessary for this guide_
 
 <figure><img src="../../../.gitbook/assets/finding_items_mesh_appearance.png" alt=""><figcaption><p>While basic_01 uses the default appearance, this one uses <strong>bbstripes</strong></p></figcaption></figure>
 
 ## You found the item, what now?
 
-Now that you've found your mesh, you can **edit** it.&#x20;
+Now that you've found your mesh, you can **edit** it.
 
 * To use it for the base of a new in-game item, check the [adding-new-items](../../../modding-guides/items-equipment/adding-new-items/ "mention") guide
 * To change its materials, check the [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention") guide
@@ -117,8 +117,8 @@ Some items don't obey [#the-naming-scheme](spawn-codes-baseids-hashes.md#the-nam
 
 ### The Tweak Browser
 
-1. Find and open the [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser) and wait for it to initialize. \
-   &#xNAN;_&#x41;s of Wolvenkit 8.14, it is pinned to the right side of the viewport_
+1. Find and open the [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser) and wait for it to initialize.\
+   \&#xNAN;_As of Wolvenkit 8.14, it is pinned to the right side of the viewport_
 2. Search for your item, e.g. `Q005_Johnny_Pants`
 3. Select one of the entries from the list on the left
 4. In the detail panel with the item's properties, find the `appearanceName`.
@@ -133,7 +133,4 @@ Some items don't obey [#the-naming-scheme](spawn-codes-baseids-hashes.md#the-nam
 
 Depending on what you are looking for, you can check [Wolvenkit Search: Finding files](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files "mention") and dig directly for the mesh file. This might be tedious, but you'll also discover a lot of things on the way, so it's definitely worth a try!
 
-
-
 [^1]: Netrunner-ese for "text"
-
