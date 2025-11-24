@@ -274,4 +274,4 @@ That is because there is ancient data in the template, which Wolvenkit doesn't k
 
 ### "Look at camera" (from PhotoMode-EX, etc.) does not seem to have the correct range of motion
 
-For look at to work properly, your V's head must be facing roughly forward in Blender (i.e. positive Y, towards the camera when you load Blender), as it only will track the eyes around a 60 degree arc in that direction. If you moved your head already, you should be able to rotate the entire pose around the Root bone to make the head face roughly in the positive-Y direction.
+For look at to work properly, your V's head must be facing roughly forward in Blender (i.e. positive Y, towards the camera when you load Blender), as it only will track the eyes around a 60 degree arc in that direction. If you moved your head already, you should be able to rotate the entire pose around the Root bone to make the head face roughly in the positive-Y direction. (See [this thread](https://discord.com/channels/717692382849663036/813768799358156880/1328882879262101548) for more information.)
