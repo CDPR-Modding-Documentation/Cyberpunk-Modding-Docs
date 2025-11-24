@@ -6,12 +6,12 @@ description: Make your own pose, then import it into photo mode
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Published:** September 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Published:** September 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last Documented Update: June** 19 2024 by LadyLea
 
-This guide will teach you how to **create a custom pose** in Blender and import it into the game via **Wolvenkit**.&#x20;
+This guide will teach you how to **create a custom pose** in Blender and import it into the game via **Wolvenkit**.
 
-Since this guide is about creating and imported custom poses, we will make a **photo mode replacer**. To convert it to a standalone pose pack, follow the guide for either  [Photo Mode](../archivexl-adding-photo-mode-poses/) or [Appearance Menu Mod](../amm-collab-anims-poses.md).&#x20;
+Since this guide is about creating and imported custom poses, we will make a **photo mode replacer**. To convert it to a standalone pose pack, follow the guide for either [Photo Mode](../archivexl-adding-photo-mode-poses/) or [Appearance Menu Mod](../amm-collab-anims-poses.md).
 
 {% hint style="warning" %}
 If you have never done this before, don't do both at once. Or... do whatever, but it might result in unnecessary frustration.
@@ -23,15 +23,15 @@ If you have never done this before, don't do both at once. Or... do whatever, bu
 * For more general knowledge, check the [..](../../ "mention")section.
 
 {% hint style="warning" %}
-We all stand on the shoulders of giants: this process has first been documented \
-by [xbaebsae | Angy](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/), who also provided the [original animation templates](https://drive.google.com/file/d/1kL04dQy9xmK_yRsvsS4Sn83joPzrljAr/view). You can find a link to their version of the guide in the menu on the left.&#x20;
+We all stand on the shoulders of giants: this process has first been documented\
+by [xbaebsae | Angy](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/), who also provided the [original animation templates](https://drive.google.com/file/d/1kL04dQy9xmK_yRsvsS4Sn83joPzrljAr/view). You can find a link to their version of the guide in the menu on the left.
 
 Thank you!
 {% endhint %}
 
 ### Skipping and skimming
 
-This guide will include the minimum amount of fluff and will **link** background information rather than giving it.&#x20;
+This guide will include the minimum amount of fluff and will **link** background information rather than giving it.
 
 For that reason, _**you shouldn't skip or skim**_ unless the section tells you that it's optional.
 
@@ -42,7 +42,7 @@ Any links in the text will either
 * provide additional information which you **do not need** to complete this guide
 * lead to step-by-step instructions for any given process
 
-Follow them if  you want to learn more, or if you are unclear on how to complete the current step, then come back here.
+Follow them if you want to learn more, or if you are unclear on how to complete the current step, then come back here.
 
 ## Prerequisites
 
@@ -58,7 +58,7 @@ You will need the following software (install at least this version or higher):
 
 ### Your Wolvenkit project
 
-To import your pose into Cyberpunk, you need a Wolvenkit project.&#x20;
+To import your pose into Cyberpunk, you need a Wolvenkit project.
 
 1. [Create a project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#creating-a-new-wolvenkit-mod-project). Give it a name that you can identify later.
 2. Now, your project needs the photo mode .anims file appropriate for your pose(s). The table below shows your options.\
@@ -87,11 +87,11 @@ Download the animation template(s) for your rig(s):
 * for [single characters](https://drive.google.com/file/d/1kL04dQy9xmK_yRsvsS4Sn83joPzrljAr/view): from Angy's Google Drive or check [Easy IK based Posing](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-ik-based-posing/)
 * To pose multiple characters, just put two characters into one .blend file (the command is called [append](https://blenderartists.org/t/append-a-whole-blend-file-in-one-go/1468736))
 
-Move/copy them somewhere, then open the one you want in Blender.&#x20;
+Move/copy them somewhere, then open the one you want in Blender.
 
 ## Step 1: Posing the mannequin
 
-This step will happen in **Blender**.&#x20;
+This step will happen in **Blender**.
 
 {% hint style="info" %}
 If the written instructions aren't clear enough for you, check the screenshots below them.
@@ -143,7 +143,7 @@ If the written instructions aren't clear enough for you, check the screenshots b
 
 You now need to create an animation that Wolvenkit can add into the existing file. For that purpose, we will create a **nonlinear animation** in Blender.
 
-1. In the panel at the bottom, click on `<No Action>` to select it.&#x20;
+1. In the panel at the bottom, click on `<No Action>` to select it.
 2. In the Armature -> Animation Data panel, click on the **New** button.
 
 <figure><img src="../../../../.gitbook/assets/armature to animation data.png" alt="" width="222"><figcaption><p>Armature -> Animation Data panel looks like this</p></figcaption></figure>
@@ -152,7 +152,7 @@ You now need to create an animation that Wolvenkit can add into the existing fil
    1. Make sure that the keyframe selected in the animation timeline is 0 (see "Animation Timeline" screenshot below)
    2. Click into the main viewport next to the armature
    3. Open the Keyframe menu (Pose -> Animation -> Insert Keyframe, Hotkey: `I)`
-   4. Select `Whole Character` (Hotkey: `W).` The menu will close now.&#x20;
+   4. Select `Whole Character` (Hotkey: `W).` The menu will close now.
    5. Press the right arrow to select the next keyframe
    6. Repeat the steps 3 and 4
    7. After you have done that, click on the `Push Down Action` button
@@ -161,7 +161,7 @@ You now need to create an animation that Wolvenkit can add into the existing fil
 
 <figure><img src="../../../../.gitbook/assets/animations_blender_keyframes_2.png" alt=""><figcaption><p>Animation timeline</p></figcaption></figure>
 
-4. Now, **rename** both your NLA strip **and** your animation to **`idle_stand_01`**.  This will overwrite the "Tabula Rasa" animation. (Find a list of animations and their associated names [here](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-photo-mode.md#idle).)\
+4. Now, **rename** both your NLA strip **and** your animation to **`idle_stand_01`**. This will overwrite the "Tabula Rasa" animation. (Find a list of animations and their associated names [here](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-photo-mode.md#idle).)\
    \
    If you aren't planning on replacing the in-game idle poses (i,e., Tabula Rasa), _it is still required that your NLA strip and your animation have the same name._
 
@@ -181,7 +181,7 @@ The names **must** be the same, and they **must** match the name in your .anim f
 6. Double-check the names. (Yes, this is **that** important)
 7. **Optional:** To add another pose, you can go back to Step 1, then rinse and repeat.
 8. Now that you're sure that you have the correct names, switch the viewport back to **Object Mode** (the same way you switched to pose mode). Your armature should still be selected.\
-   &#xNAN;_&#x54;ODO: This step will be made **optional** when the Blender plugin update hits. Update guide when it does._
+   \&#xNAN;_TODO: This step will be made **optional** when the Blender plugin update hits. Update guide when it does._
 
 ### **Exporting**
 
@@ -205,7 +205,7 @@ Now it's time to import the file back into Wolvenkit.
 4. Hit the **Import Selected** button.
 
 {% hint style="success" %}
-Youc an now test your mod: Install your Wolvenkit project by clicking the green button on the taskbar, and launch the game.&#x20;
+Youc an now test your mod: Install your Wolvenkit project by clicking the green button on the taskbar, and launch the game.
 
 If all went well, entering photo mode will show your new pose.
 {% endhint %}
@@ -214,14 +214,14 @@ If all went well, entering photo mode will show your new pose.
 
 ### My pose is twitching!
 
-1. Open your `.anims` file in Wolvenkit&#x20;
+1. Open your `.anims` file in Wolvenkit
 2. expand the `animations` array at the top of the file
 3. For each `animAnimSetEntry`, change the property `animation` -> `animBuffer` -> `numTracks` to 2
 
 <figure><img src="../../../../.gitbook/assets/animations_fix_twitching.png" alt=""><figcaption></figcaption></figure>
 
 4. If that doesn't work, change the numTracks to `0`
-5. If that still doesn't work, make sure that your pose has **at least two keyframes** by going back to [#step-2-creating-the-animation](./#step-2-creating-the-animation "mention") and not skimming this time.&#x20;
+5. If that still doesn't work, make sure that your pose has **at least two keyframes** by going back to [#step-2-creating-the-animation](./#step-2-creating-the-animation "mention") and not skimming this time.
 
 ### Can't import: No extra data
 
@@ -274,4 +274,4 @@ That is because there is ancient data in the template, which Wolvenkit doesn't k
 
 ### "Look at camera" (from PhotoMode-EX, etc.) does not seem to have the correct range of motion
 
-For look at to work properly, your V's head must be facing roughly forward in Blender (i.e. positive Y, towards the camera when you load Blender), as it only will track the eyes around a 60 degree arc in that direction. If you moved your head already, you should be able to rotate the entire pose around the Root bone to make the head face roughly in the positive-Y direction. (See [this thread](https://discord.com/channels/717692382849663036/813768799358156880/1328882879262101548) for more information.)
+It seems that look at only works in the _positive-Y_ direction (there's a [long thread](https://discord.com/channels/717692382849663036/813768799358156880/1328882879262101548) debugging this on the Discord). The fix is to have your pose's head point roughly in the positive-Y direction in Blender; in other words use the head, facing positive-Y, as the point of reference for the rest of the body. (For example, if your pose is a standing V with his/her head turned to the right, you should have the head facing positive-Y and then the body turned to the left of the head, rather than having the body point positive-Y and the head turned to the right of the body.) Usually, you can make this happen by taking the root bone and rotating it in Edit mode, but with the IK poser it's not that simple.
