@@ -521,3 +521,8 @@
     * [Creating Custom FX](modding-guides/everything-else/effects-modding/creating-custom-fx.md)
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/everything-else/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
   * [Player State Machines](modding-guides/everything-else/player-state-machines.md)
+
+***
+
+* [guide](guide.md)
+* [Debug Guide](debug-guide.md)
