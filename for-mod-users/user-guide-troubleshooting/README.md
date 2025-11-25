@@ -20,7 +20,7 @@ Did you know? You can use your browser's search function (Ctrl+F) to quickly fin
 
 [Open it in a new window](https://wolvenkit.github.io/gitbook-debug-guide/)
 
-
+{% @debugguide/debugguide %}
 
 ### Navigation
 
