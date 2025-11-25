@@ -8,7 +8,7 @@ description: If your mods are causing trouble, here's what you can do
 
 ### Summary
 
-Last documented update: 27th August 2025 by [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention")
+Last documented update: 25th November 2025 by [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention")
 
 This page contains troubleshooting information for people who are **using** mods rather than making mods. You will find step-by-step guides, grouped by different problems.
 
@@ -659,9 +659,9 @@ Don't worry! As long as you have less than 2048 mods, bisection lets you find th
 Some mods install themselves to multiple directories, but **that doesn't matter**. Due to the fact how mod loading works, you can find the error like this.
 
 {% hint style="warning" %}
-**Mod managers**
+<mark style="color:red;">**Mod managers**</mark>
 
-If you are using Vortex, you should enable and disable mods through Vortex rather than directly on disk. The principle below still works, you're just selecting the halves inside Vortex instead of moving them between directories. For more clarification, check out the [Bisect with a mod manager](./#bisect-with-a-mod-manager) section. MO2 also follows the same process.\
+If you are using a mod manager, you should enable and disable mods through it rather than directly on disk. Go to the [<mark style="color:red;">**Bisect with a mod manager**</mark>](./#bisect-with-a-mod-manager) section for instructions.\
 \
 If you do opt to work directly on disk, **do not save changes to files if Vortex prompts for it**.
 {% endhint %}
