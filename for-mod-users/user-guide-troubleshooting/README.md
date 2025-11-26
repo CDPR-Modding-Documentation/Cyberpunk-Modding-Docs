@@ -718,11 +718,11 @@ If you don't vibe with text, there's a [#bisect-video-demonstration](./#bisect-v
    3. Go back to step 2 for the next round – the problem might be there or not.
 6. Repeat this process until you know which mod is causing the crash. Then, you can either try to update it, or do a full uninstall
 
-**Bisect: Video demonstration**
+#### **Bisect: Video demonstration**
 
 {% embed url="https://youtu.be/c1BkM6NFfkI" %}
 
-**Bisect with a mod manager**
+#### **Bisect with a mod manager**
 
 <figure><img src="../../.gitbook/assets/bisect_with_mod_manager.png" alt=""><figcaption></figcaption></figure>
 
