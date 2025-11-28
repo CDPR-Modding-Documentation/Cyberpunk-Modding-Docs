@@ -4,11 +4,9 @@ description: When you can't import, or your imported mesh looks weird
 
 # Troubleshooting your mesh edits
 
-
-
 ## Summary
 
-Last documented update: May 8 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented update: May 8 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will help you troubleshooting your mesh edits.
 
@@ -21,7 +19,7 @@ This page will help you troubleshooting your mesh edits.
   * [r-and-r-refitting-step-by-step.md](../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention")
   * [blender-getting-started](blender-getting-started/ "mention")
 
-This page&#x20;
+This page
 
 ## Importing
 
@@ -37,13 +35,11 @@ You can check if your mesh has any custom `split normal` attributes, and delete 
 As this will irrevocably change your 3d object, create a **backup** first.
 {% endhint %}
 
-
-
 <figure><img src="../../.gitbook/assets/blender_clear_split_normals.png" alt=""><figcaption></figcaption></figure>
 
 #### Check your UV splits
 
-The GLTF algorithm **really** doesn't like it if two vertices have the same UV coordinates (see [this ticket](https://github.com/KhronosGroup/glTF-Blender-IO/issues/912)).&#x20;
+The GLTF algorithm **really** doesn't like it if two vertices have the same UV coordinates (see [this ticket](https://github.com/KhronosGroup/glTF-Blender-IO/issues/912)).
 
 Here's how you can fix it:
 
@@ -56,7 +52,7 @@ Here's how you can fix it:
 
 ### My import won't show up in-game!
 
-We need to troubleshoot your **import**.&#x20;
+We need to troubleshoot your **import**.
 
 #### Does the Wolvenkit preview update?
 
@@ -72,7 +68,7 @@ No: [#do-you-have-extra-shapekeys](troubleshooting-your-mesh-edits.md#do-you-hav
 
 #### Do you have extra shapekeys?
 
-In Blender, check your shapekey section. It should look like the green box (or be empty).&#x20;
+In Blender, check your shapekey section. It should look like the green box (or be empty).
 
 <figure><img src="../../.gitbook/assets/mesh_import_export_check_shapekeys.png" alt=""><figcaption></figcaption></figure>
 
@@ -82,13 +78,14 @@ If it does not, you need to **apply** any extra shapekeys, because Wolvenkit wil
 
 <summary>Get the edit out of the shapekeys</summary>
 
-
-
 Do the following things:
 
 1.
 
-    <figure><img src="../../.gitbook/assets/mesh_import_export_fix_shapekeys.png" alt=""><figcaption></figcaption></figure>
+```
+<figure><img src="../../.gitbook/assets/mesh_import_export_fix_shapekeys.png" alt=""><figcaption></figcaption></figure>
+```
+
 2. Duplicate your mesh: Select it in Object Mode, then press Shift+D
 3. Click the arrow under the `-` button next to the shapekey box
 4. Click `New Shape from Mix`
@@ -127,7 +124,7 @@ Alternatively, you can check by hand:
 1. Check if your mesh is **triangulated**. If you aren't sure whether or not it is, go into edit mode, select everything, and go to Face -> Triangulate (Shortcut: Ctrl+T)
 2. Check your export settings and make sure that you have the correct box checked upon export:\
    ![](../../.gitbook/assets/3d_troubleshooting_export_tangents.png)
-3. If the error persists, check that each of your submeshes has an UV map: \
+3. If the error persists, check that each of your submeshes has an UV map:\
    ![](../../.gitbook/assets/mesh_troubleshooting_uv_map.png)\
    If not, you have to create one (and probably UV unwrap your mesh).
 
@@ -146,7 +143,7 @@ To get rid of it, delete the bones in Blender, or import into a different mesh (
 The neutral bone is created by the glb export plugin when there are vertex groups without a parent bone. WolvenKit will not let you import if there is a mismatch.
 
 {% hint style="info" %}
-Your armature in Blender needs to have a bone for every vertex group in the submesh, and there must not be vertices with no vertex group assigned.&#x20;
+Your armature in Blender needs to have a bone for every vertex group in the submesh, and there must not be vertices with no vertex group assigned.
 
 You then need to import over an [already-existing .mesh file](troubleshooting-your-mesh-edits.md#option-2-the-netrunner-suit) which supports all those bones.
 {% endhint %}
@@ -161,7 +158,7 @@ The following two scripts help you finding and/or fixing the problem. Switch to 
 
 **Vertices without weights**
 
-You can use the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention")'s [#mesh-tools](../modding-tools/wolvenkit-blender-io-suite/#mesh-tools "mention") to `Group Ungroup Verts` — if you're lucky, that will solve the problem.&#x20;
+You can use the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention")'s [#mesh-tools](../modding-tools/wolvenkit-blender-io-suite/#mesh-tools "mention") to `Group Ungroup Verts` — if you're lucky, that will solve the problem.
 
 #### Option 1: Fuck those bones: Python
 
@@ -189,36 +186,36 @@ t0_005_pwa_body__t_bug.mesh
 t0_005_pma_body__t_bug.mesh
 ```
 
-Try using the Netrunner body as a base for import. You can use Wolvenkit's [Select base mesh](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#select-base-mesh "mention") feature for this.
+Try using the Netrunner body as a base for import. You can use Wolvenkit's [Import/Export: Mesh (3d Model) #Select base mesh](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#select-base-mesh "mention") feature for this.
 
 {% hint style="info" %}
-To create more submeshes, you can either&#x20;
+To create more submeshes, you can either
 
-* Try the [Preserve Submesh Order ](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#preserve-submesh-order "mention")import setting
+* Try the [Import/Export: Mesh (3d Model) #Preserve Submesh Order ](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#preserve-submesh-order "mention")import setting
 * create more submeshes with the correct naming in Blender, e.g. `submesh_01_LOD_1`, `submesh_02_LOD_1`
 {% endhint %}
 
-If you end up with missing bones,&#x20;
+If you end up with missing bones,
 
 #### Option 3: Transferring bones
 
-It's time to play 3d puzzle and assemble bones from multiple sources. Unfortunately, there is no simple solution for this yet. You need to&#x20;
+It's time to play 3d puzzle and assemble bones from multiple sources. Unfortunately, there is no simple solution for this yet. You need to
 
 * find the bones that your armature is missing in other meshes
 * transfer them into your import target mesh (guide on [xbae's page](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-transferring-and-expanding-skeletons-in-meshes/))
-* export all the extra meshes into Blender&#x20;
+* export all the extra meshes into Blender
 * [merge their rigs](https://github.com/Simarilius-uk/CP2077_BlenderScripts/blob/main/Merge_rigs.py), which you should do with the linked Python script
 * and finally reimport everything back into Cyberpunk.
 
 ## Importing: Everything else
 
-WolvenKit will not import a mesh that has any kind of issues. Those include, but are not limited to:&#x20;
+WolvenKit will not import a mesh that has any kind of issues. Those include, but are not limited to:
 
 * non-flat faces
 * zero faces/edges
 * loose vertices/edges
 
-**There is no guarantee that any of the steps below will actually solve your problem.**&#x20;
+**There is no guarantee that any of the steps below will actually solve your problem.**
 
 #### **Edit Mode**
 
@@ -227,11 +224,10 @@ In Edit Mode, you can find a few commands in the Mesh -> Clean Up menu:
 * Delete Loose
 * Split Non-Planar Faces
 * Split Concave Faces
-* Merge By Distance\
-
+* Merge By Distance\\
 
 {% hint style="warning" %}
-&#x20;If you select your whole mesh, **Merge By Distance** will merge the individual parts, obliterating the seams. To avoid that, make sure to do them one after another:\
+If you select your whole mesh, **Merge By Distance** will merge the individual parts, obliterating the seams. To avoid that, make sure to do them one after another:\
 \- Select a vertex/edge/face in Edit Mode\
 \- hold down Ctrl Num+ to select everything connected\
 \- use Merge By Distance before proceeding to the next part of your mesh
@@ -239,7 +235,7 @@ In Edit Mode, you can find a few commands in the Mesh -> Clean Up menu:
 
 #### It's still broken
 
-Your last option is the [3d print tool](https://docs.blender.org/manual/en/latest/addons/mesh/3d_print_toolbox.html) to (hopefully) find out what is wrong with your mesh.&#x20;
+Your last option is the [3d print tool](https://docs.blender.org/manual/en/4.0/addons/mesh/3d_print_toolbox.html) to (hopefully) find out what is wrong with your mesh.
 
 Fortunately, the tool is free, easy-to-use and already included in your Blender.
 
@@ -251,9 +247,7 @@ If you don't have a 3d print entry in the tools of your 3d viewport, you might n
 
 * Zero Edges: Those are bad, fix them (click on them, then press X and just delete them)
 * Non-Flat Faces: Those are even worse, as they can make the game crash. You need to split them up until they are flat, or investigate the surrounding edges/vertices to see what's going wrong here.
-* Zero Faces: Only fix if you have <100 of them — the tool doesn't always identify them correctly (the mesh analyzed above was `h0_000_pwa_c__basehead`, which is absolutely fine).&#x20;
-
-
+* Zero Faces: Only fix if you have <100 of them — the tool doesn't always identify them correctly (the mesh analyzed above was `h0_000_pwa_c__basehead`, which is absolutely fine).
 
 ## In-Game
 
@@ -266,13 +260,13 @@ This is most likely an issue with Garment Support. Please check the correspondin
 #### In Blender
 
 * make sure that you have exactly one UV map
-* check **Face Orientation** — most materials won't show backfaces (red). You can import submeshes with the suffix `_doubled` to make WolvenKit generate them for you, like it does with hair.&#x20;
+* check **Face Orientation** — most materials won't show backfaces (red). You can import submeshes with the suffix `_doubled` to make WolvenKit generate them for you, like it does with hair.
 
 <figure><img src="../../.gitbook/assets/mesh_troubleshooting_checks.png" alt=""><figcaption></figcaption></figure>
 
 #### In Wolvenkit
 
-When saving your mesh, check the console for errors. In version >= 8.9.0, a basic material validation is taking place. \
+When saving your mesh, check the console for errors. In version >= 8.9.0, a basic material validation is taking place.\
 If you don't see any warnings, make sure that the resource paths in your mesh are correct and that you aren't loading invisible textures.
 
 ### Parts of my mesh are missing
@@ -300,7 +294,7 @@ For example, you have moved something, but the change doesn't show in the game: 
 
 ### My mesh is moving weirdly
 
-E.g. you've changed a shape, but now everything moves at an offset.&#x20;
+E.g. you've changed a shape, but now everything moves at an offset.
 
 As stated in the [importing/exporting guide](exporting-and-importing-meshes/), it is easy to fuck up the mesh's properties, and this is most likely what happened. The easiest way to "fix" this is to apply your shape deformation to the original object.
 
@@ -316,13 +310,13 @@ If you have [added the item](../../modding-guides/items-equipment/adding-new-ite
 
 ### My shadow mesh is always visible
 
-Check the `renderMask` attribute inside `heder / renderChunkInfos / index`_._ For shadow  meshes, there shouldn't be anything but `MCF_RenderInShadows`.
+Check the `renderMask` attribute inside `heder / renderChunkInfos / index`_._ For shadow meshes, there shouldn't be anything but `MCF_RenderInShadows`.
 
 <figure><img src="../../.gitbook/assets/shadow_mesh.png" alt=""><figcaption></figcaption></figure>
 
 ### My mesh ignores my texture edits!
 
-The textures are most likely embedded. Here's how you can force your material to pull in external textures instead:&#x20;
+The textures are most likely embedded. Here's how you can force your material to pull in external textures instead:
 
 <figure><img src="../../.gitbook/assets/mesh_embedded_texture.png" alt=""><figcaption><p>Thanks to Adahm for the screenshot</p></figcaption></figure>
 
