@@ -148,6 +148,12 @@ Your armature in Blender needs to have a bone for every vertex group in the subm
 You then need to import over an [already-existing .mesh file](troubleshooting-your-mesh-edits.md#option-2-the-netrunner-suit) which supports all those bones.
 {% endhint %}
 
+### But the add-on let me export!
+
+Then some vertex groups had vertex weights so small that Blender rounded them down to 0.&#x20;
+
+Import the exported `.glb` file and run the checks again — some verts will have no weight now, and you can fix them.
+
 ### Fixing bone troubles
 
 The following two scripts help you finding and/or fixing the problem. Switch to the Blender Scripting perspective and create a new, blank text file. Then, toggle the Blender system console to see their output (Blender: Window -> Toggle System Console)
