@@ -60,6 +60,8 @@ They have to be treated as a different `entPhysicalMeshComponent` in the .app so
 
 
 
+
+
 ## Step 1: Importing our meshes
 
 This step will show you how to choose the correct export position for your mesh so that we can import it into Wolvenkit. In this guide, I will be adding the `front left door` as an example but the process is the same for other dynamic meshes, so follow the guide according to your mesh.
@@ -74,6 +76,10 @@ Let's start a new Blender project for this export process, separate from the pro
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-13 213236.png" alt="" width="375"><figcaption></figcaption></figure>
 
 {% include "../../../.gitbook/includes/picture-1a.md" %}
+
+
+
+
 
 ### Finding the export position
 
@@ -90,6 +96,8 @@ Importing the porsche fl door into Blender, we see that it's not positioned how 
 
 3. Let's create a copy of our custom car's door (Select it in the outliner on the right - shortcut: `Shift+D`)
 4. Keep the backup in place - hide it for now. We'll need it later
+
+
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-13 192933.png" alt=""><figcaption></figcaption></figure>
 
@@ -125,6 +133,10 @@ Select the first submesh of your door mesh by clicking it on the right panel, ho
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-13 202222.png" alt=""><figcaption></figcaption></figure>
 
+
+
+
+
 Then press Tab to go into Edit mode and press A to select everything. Move the whole door to the origin by selecting Mesh -> Snap -> Selection to Cursor (Keep Offset):
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-13 202355.png" alt=""><figcaption></figcaption></figure>
@@ -136,6 +148,8 @@ Now in the top right, click the red X ball to view the door from the side throug
 * Press 'G'  (allowing you to move the whole selection) and then 'Y' to only move it in the Y axis (back and forth) with your mouse (press enter or click to finalize)
 * Do the same by pressing 'G' and 'Z' to position it vertically, how you think it should line up
 * Look through the Y axis and move it in the X axis accordingly
+
+
 
 {% hint style="danger" %}
 <p align="center">DO NOT rotate your door mesh, ONLY move it in X,Y,Z with the G shortcut</p>
@@ -165,13 +179,21 @@ I emphasize that there is not just ONE single correct position. If the door open
 
 It's not easy to pick an export position and it might not work for your custom mesh on the 1st try as it depends on where you manually place your mesh by eye and the actual animation itself. Some trial and error is most likely needed. For now, we will export the door mesh from Blender.&#x20;
 
+
+
 Export and find the path of the .glb in your Wolvenkit project inside the raw folder and replace it with the door mesh in the export position we just chose. Next, go to Tools in Wolvenkit and import the glb.
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-13 212714.png" alt="" width="375"><figcaption></figcaption></figure>
 
+
+
 ***
 
-### Step 3: Returning the mesh back to its original position
+
+
+
+
+## Step 3: Placing the mesh back to its original position
 
 In order for this dynamic mesh to appear in the game and be controlled by the animation file, it needs to be parented to a **bone** from the **deformation rig (**&#x79;ou have to edit the X, Y, Z `boneTransform` values inside the `.rig` file).
 
@@ -192,6 +214,8 @@ For this example, my car is mirroring the porsche 911 so I will open its app by 
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-14 020542.png" alt="" width="563"><figcaption></figcaption></figure>
 
+
+
 Opening the components list for the default appearance and scrolling down, I find the physical mesh component that corresponds to the front left door. We can see in the _**parentTransform**_ at the bottom that it is parented to the "`door_front_left_a`" bone from the deformation .rig file.
 
 I can just copy this whole component and paste it into my car's custom .app file and replace the mesh path of the original porsche front left door mesh with my custom mesh's path that we just imported.
@@ -210,6 +234,8 @@ If you don't have a front left door .mesh for your custom car in your project al
 Then you will need to properly configure it with the right materials and textures
 {% endhint %}
 
+
+
 Lastly, expand the `boneNames` list on the top and go to the fuel cap or fuel snap and rename one of those with a unique custom name like so:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-17 043212.png" alt="" width="563"><figcaption></figcaption></figure>
@@ -218,11 +244,13 @@ Lastly, expand the `boneNames` list on the top and go to the fuel cap or fuel sn
 >
 > Don't forget to do this as it can cause issues with the base game car whose .ent and .rig we copied, renamed and are using for our own car mod
 
+
+
 ***
 
 
 
-## Finding the X,Y,Z values
+### Finding the X,Y,Z values
 
 
 
@@ -234,9 +262,13 @@ Let's head back into Blender, hide the porsche door and make our original door c
 
 
 
+
+
 The door in the export position is highlighted in orange. Let's assume that we put 0,0,0 as x,y,z in the "door\_front\_left\_a" bone in the deformation rig. Where would the door be in the game in this case?
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-13 215925.png" alt=""><figcaption></figcaption></figure>
+
+
 
 
 
@@ -257,7 +289,11 @@ So, we want to move the door mesh we just exported back into the original door's
 1. Select all of the submeshes of the door mesh **in the original position**&#x20;
 2. Press 'N' to bring up the transform panel on the right and make sure to _**click on GLOBAL**_ to view the global values and not the local ones
 
+
+
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-14 000538.png" alt=""><figcaption></figcaption></figure>
+
+
 
 
 
@@ -266,6 +302,8 @@ To do the calculations, I just open 3 different pages in my browser. I copy and 
 Now, select all of the submeshes of the door in the export position and take note of each global XYZ value as well:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-14 001148.png" alt=""><figcaption></figcaption></figure>
+
+
 
 
 
@@ -279,6 +317,8 @@ Let's start with the X value. In the original position mesh, it is -0.950735 and
 Be careful, your Wkit and Blender might use different decimal symbols depending on how you have them set up. In my case, Blender uses dots to separate decimal places and Wkit uses commas. This might differ in your case. So, I copy the result from the browser page and put it into Wkit with a comma as a decimal separator
 {% endhint %}
 
+
+
 For my example custom door mesh, I will enter -0,902328 into Wkit for the X value for my door mesh.
 
 
@@ -291,6 +331,12 @@ In the same way, the Y and Z values for this example are:
 
 <p align="center"></p>
 
+<p align="center"></p>
+
+<h3 align="center">What do these values mean?</h3>
+
+<p align="center"></p>
+
 <p align="center">What do the positive and negative values mean? </p>
 
 <p align="center">This is simply explained by Boe6 in the following excerpt taken from their guide:</p>
@@ -298,8 +344,6 @@ In the same way, the Y and Z values for this example are:
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-14 003447 (1).png" alt=""><figcaption></figcaption></figure>
 
 
-
-## What do these values mean?
 
 
 
@@ -311,13 +355,19 @@ The door placed in the export position at the origin (black crosshair), clearly 
 
 
 
+
+
 Our values do exactly that by moving it 0.902328 to the left and 1.051761 forward. The Z value is quite small so it's not as easy to see but if we view from the y axis:
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-14 004446.png" alt=""><figcaption></figcaption></figure>
 
+
+
 Now we can see that the door in the export position (highlighted in orange) needs to also be very slightly lowered, to match the original position. This confirms our Z value which is `negative (-)`
 
 
+
+<h2 align="center"></h2>
 
 <h2 align="center">Checking the result</h2>
 

@@ -33,6 +33,8 @@ The left part of the image is the starting point before the door opens and the r
 
 
 
+
+
 Now let's see how the door mesh will move in relation to the car body as it's following the rotation of the bone. In this case, the door export position chosen for this example is clearly _**too far away**_ from the origin in the Y axis (green) meaning that the Y value is too low:
 
 
@@ -41,7 +43,9 @@ Now let's see how the door mesh will move in relation to the car body as it's fo
 
 
 
-> <h3 align="center">How would this look inside the game?</h3>
+
+
+> <h3 align="center"><em>How would this look inside the game?</em></h3>
 
 <figure><img src="../../../.gitbook/assets/Case1.png" alt=""><figcaption></figcaption></figure>
 
@@ -53,7 +57,11 @@ However, as the door starts to open, it gets farther and farther away from the c
 
 <p align="center"></p>
 
+
+
 ***
+
+<h2 align="center"></h2>
 
 <h2 align="center">Methodology</h2>
 
@@ -95,7 +103,7 @@ Aim your crosshairs at your car and open the door with AMM. Now we can examine h
 
 <p align="center"></p>
 
-<h2 align="center">Example 1: mesh is floating</h2>
+<h3 align="center">Example 1: mesh is floating</h3>
 
 <p align="center"></p>
 
@@ -132,7 +140,7 @@ This means that, after you made the X,Y value adjustment in this scenario, the r
 
 
 
-<h2 align="center">Example 2: mesh is clipping</h2>
+<h3 align="center">Example 2: mesh is clipping</h3>
 
 
 
