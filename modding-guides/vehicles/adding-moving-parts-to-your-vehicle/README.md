@@ -3,17 +3,19 @@
 ## Summary
 
 **Added:** Nov 21 2025 by [morph25689](https://app.gitbook.com/u/XF3JSoVcGAhNNvwLSPMtah435ZB3 "mention")\
-**Last documented changes:** Nov 21 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") (formatting)
+**Last documented changes:** Dec 02 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") (formatting)
 
 This guide will teach you how to&#x20;
 
 * add dynamic meshes to your vehicle
-* ensure that they are positioned correctly (relative to the car)
+* ensure that they are positioned correctly (relative to the car's body)
 * make sure these meshes don't visibly clip or float in the air when the animation plays
 
 ### Wait, that's not what I want!
 
 * To get started, check [boe6s-guide-new-car-from-a-to-z](../boe6s-guide-new-car-from-a-to-z/ "mention") and come back once you've reached the "rigged meshes" section
+
+
 
 ### What do you mean by "dynamic meshes"?
 
@@ -31,14 +33,16 @@ The **moving** parts of the vehicle, such as:
 These parts have an animation associated with them - they're parented to **bones** in the **deformation rig** that are not static.
 
 {% hint style="warning" %}
-Static meshes are easier to work with - dynamic parts have to be exported from a position around the origin in Blender and then later placed correctly in relation to the body .mesh by editing values in the deformation .rig
+Static meshes are easier to work with - dynamic parts have to be exported from a position around the origin in Blender and then later placed correctly in relation to the car body by editing values in the deformation .rig
 {% endhint %}
 
 {% hint style="success" %}
-Adding moving parts always follows the same process. Only the positioning values will change (see [Step 3](./#finding-the-x-y-z-values)).
+Adding moving parts always follows the same process
 
 **Wheels**, **Tires** and the **Steering Wheel** are much easier but have a little more work after [Step 3](./#finding-the-x-y-z-values)
 {% endhint %}
+
+<h3 align="center"></h3>
 
 <h3 align="center">Can I get around that extra work?</h3>
 
@@ -83,7 +87,7 @@ Let's start a new Blender project for this export process, separate from the pro
 
 ### Finding the export position
 
-My car mod in this example is using the .ent and .rig files of the porsche 911 as a base. So I want to import the porsche front left door into Blender and see how it's positioned so that I can understand how my custom door mesh should be positioned when exporting:
+My car mod in this example is using the `.ent` and `.rig` files of the porsche 911 as a base. So I want to import the _porsche front left door_ into Blender and see how it's positioned so that I can understand how my custom door mesh should be positioned when exporting:
 
 
 
@@ -105,19 +109,29 @@ Importing the porsche fl door into Blender, we see that it's not positioned how 
 
 <summary>Why is the porsche door positioned like this?</summary>
 
-Consider the origin in Blender as if it's the "door\_front\_left\_a" bone in the deformation .rig that the door mesh is parented to. The .anims file that has the animation data tells the door bone how to move and rotate and the door mesh follows, copying its movements.
+Consider the origin in Blender as if it's the "`door_front_left_a`" bone in the deformation .rig that the door mesh is parented to. The `.anims` file that has the animation data tells the door bone how to move and rotate and the door mesh follows, copying its movements.
+
+
 
 In this case, the door opens normally like in most cars by rotating around a fixed point (the hinges on the door that are connected to the body of the car).&#x20;
 
+{% hint style="success" %}
 This is a rotation around the z axis with the point of rotation being the origin in Blender. The door is positioned in this way so that the part of the door that is at the origin stays fixed in space while the rest of the door rotates around the z axis.
+{% endhint %}
 
-> This is crucial because it means that positioning your mesh slightly differently but still around the origin will change how the door opening animation moves our door in-game
+
+
+> This is crucial because it means that positioning our mesh slightly differently but still around the origin will change how the door opening animation moves our door in-game
 
 {% hint style="warning" %}
 This has NOTHING to do with the position of the door mesh when the door animation is NOT playing. The export position ONLY affects how the animation, or more precisely the door bone, makes the door move!!!
 {% endhint %}
 
-No matter where you export the door from inside Blender, in _**Step 2**_, we will position the door mesh correctly to appear just like in _**Picture 1A**_. The problem arises when the animation makes the door move since it requires the door mesh to be exported from a particular position around the origin in Blender!!!
+
+
+No matter where you export the door from inside Blender, in [_**Step 3**_](./#finding-the-x-y-z-values), we will position the door mesh correctly to appear just like in _**Picture 1A**_ above.
+
+The problem arises when the animation makes the door move since it requires the door mesh to be exported from a particular position around the origin in Blender!!!
 
 </details>
 
@@ -128,6 +142,8 @@ No matter where you export the door from inside Blender, in _**Step 2**_, we wil
 
 
 You should try to place the part of your door that you want to remain stationary during the animation, right on the origin in blender. That point is close to the edge of the door somewhere in the hinges. Look at the porsche door we imported as a reference to position your mesh approximately.
+
+
 
 Select the first submesh of your door mesh by clicking it on the right panel, hold Shift and click the last submesh to select them all. Then make sure you click the Median Point as a transform Pivot Point:
 
@@ -369,18 +385,18 @@ Now we can see that the door in the export position (highlighted in orange) need
 
 <h2 align="center"></h2>
 
-<h2 align="center">Checking the result</h2>
+<h3 align="center">Entering the XYZ values and checking the result</h3>
 
 
 
-After inputting your own values in the "door\_front\_left\_a" boneTransforms and saving it, you can open your .ent, go into Entity Preview and see if your mesh is positioned correctly in relation to the body.&#x20;
+After inputting your own values in the "`door_front_left_a`" boneTransforms and saving it, you can open your .ent, go into _Entity Preview_ and see if your mesh is positioned correctly in relation to the body.&#x20;
 
 
 
 {% hint style="danger" %}
 NOTICE: Tires and wheels won't be correctly displayed in entity preview if you have only adjusted the boneTransforms values in the deformation .rig until those values are also updated in the vehicle .rig!
 
-Refer to the "_Adding Tires, Wheels and Brake Calipers_" page in this guide for adding these meshes
+Refer to the "[_Adding Tires, Wheels and Brake Calipers_](adding-wheels-tires-and-brake-calipers.md)" page in this guide for adding these meshes
 {% endhint %}
 
 
@@ -393,12 +409,6 @@ Refer to the "_Adding Tires, Wheels and Brake Calipers_" page in this guide for 
 
 <p align="center"></p>
 
-> What if instead of the front left door mesh, you wanted to add another dynamic mesh like the trunk of the car?&#x20;
->
-> Then in the beginning of [Step 3](./#finding-the-x-y-z-values), you would have to have an `entPhysicalMeshComponent` in your app with your custom trunk .mesh file path and the appropriate _parentTransform_ so that it is parented to the trunk bone in the rig
->
-> Just copy the trunk component from the .app of the car you're mirroring. In my example it's the porsche 911 that I chose for my car
-
 
 
 {% hint style="success" %}
@@ -408,6 +418,20 @@ You can now load your mod in the game and check how the animation moves your mes
 {% hint style="danger" %}
 However, if the mesh is clipping into the body or floating in the air, you will have to follow the next page of the guide and readjust the export position, going through [Step 3](./#finding-the-x-y-z-values) again with new values and retest in-game
 {% endhint %}
+
+
+
+
+
+### What if you wanted to add a different dynamic mesh like the trunk?
+
+> Then in the beginning of [Step 3](./#step-3-placing-the-mesh-back-to-its-original-position), you would have to have an `entPhysicalMeshComponent` in your app with your custom trunk .mesh file path and the appropriate _parentTransform_ so that it is parented to the `trunk_a` bone in the rig
+>
+> Just copy the trunk component from the .app of the car you're mirroring. In my example it's the porsche 911 that I chose for my car
+>
+> Lastly, you would input the XYZ transform values you found in the boneTransforms of the  `trunk_a` bone in the deformation .rig
+
+
 
 
 
