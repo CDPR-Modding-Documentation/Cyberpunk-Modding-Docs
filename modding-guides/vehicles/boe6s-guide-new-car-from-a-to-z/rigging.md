@@ -8,7 +8,7 @@ description: Using and Controlling Moving Meshes
 The `.rig` file ("armature" or "skeleton") is what makes your mesh move in the game. You can find more information about that on the [meshes-and-armatures-rigging](../../../for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging/ "mention") page.
 {% endhint %}
 
-Parts that require a `.rig` file will not import the same as other meshes. For example, the bumper’s 3D models are not positioned in-line with the `body_01` object in **blender**. Bumpers are centered around the **origin** of the 3D space. The part is then lined up correctly with the `.rig` file, which is linked in the `.ent` file.&#x20;
+Parts that require a `.rig` file will not import the same as other meshes. For example, the bumper’s 3D models are not positioned in-line with the `body_01` object in **blender**. Bumpers are centered around the **origin** of the 3D space. The part is then lined up correctly with the `.rig` file, which is linked in the `.ent` file.
 
 To model the front bumper, we’ll first export the base game bumper as `.glb`, and import into our **blender** project. As you can see, the game model is positioned around the origin, unlike the custom bumper.
 
@@ -22,10 +22,10 @@ Move it with the move tool, so the corner of the bumper is at the origin and **a
 
 <figure><img src="../../../.gitbook/assets/image41.png" alt=""><figcaption></figcaption></figure>
 
-If you do not have the rig file already, you can now add it to the project. Open your vehicle’s `.ent` file and open this path: `RDTDataViewModel > components > deformation_rig > rig`&#x20;
+If you do not have the rig file already, you can now add it to the project. Open your vehicle’s `.ent` file and open this path: `RDTDataViewModel > components > deformation_rig > rig`
 
-Add the file to the project, and rename/move it. \
-Example: “`boe6\mini_cooper\boe6_mini_cooper.rig`”&#x20;
+Add the file to the project, and rename/move it.\
+Example: “`boe6\mini_cooper\boe6_mini_cooper.rig`”
 
 Update the `.ent` rig path with the new file:
 
@@ -47,10 +47,10 @@ Open the .rig file and notice these 3 arrays:
 
 <figure><img src="../../../.gitbook/assets/image169.png" alt=""><figcaption></figcaption></figure>
 
-These map all the position data of each `.mesh` file. \
-`boneNames` tells you which index value is each item, `boneParentIndex` tells you what each bone’s parent is (example; `wheel_back_left` is a child of `suspension_back_left`. If you change suspension position, wheel will move with it.), and `boneTransforms` is the positional and rotational values for each bone.&#x20;
+These map all the position data of each `.mesh` file.\
+`boneNames` tells you which index value is each item, `boneParentIndex` tells you what each bone’s parent is (example; `wheel_back_left` is a child of `suspension_back_left`. If you change suspension position, wheel will move with it.), and `boneTransforms` is the positional and rotational values for each bone.
 
-For a reference of where the bones are in a model, you can export the vehicle’s `.anims` file to `.glb` and import it into **blender**. You can select each bone to see their name and properties. \
+For a reference of where the bones are in a model, you can export the vehicle’s `.anims` file to `.glb` and import it into **blender**. You can select each bone to see their name and properties.\
 Example:
 
 <div><figure><img src="../../../.gitbook/assets/image122.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../.gitbook/assets/image158.png" alt=""><figcaption></figcaption></figure></div>
@@ -61,18 +61,18 @@ Your `0,0,0` position should be in the center of the vehicle. Here is the transl
 
 These are `frontLeft`, `frontRight`, `backLeft`, and `backRight` respectively. The Translation values are `XYZ` values:
 
-* &#x20;`(-) x` = left of car, driver side
+* `(-) x` = left of car, driver side
 * `(+) x` = right of car, passenger side
-* &#x20;`(-) y` = back of car
+* `(-) y` = back of car
 * `(+) y` = front of car
-* &#x20;`(-) z` = bottom of car
+* `(-) z` = bottom of car
 * `(+) z` = top of car.
 
 It may help to visualize the car as if from a top-down ariel view, left is `-x`, right is `+x`, up is `+y`, down is `-y`.
 
 You’ll need to update the `.mlmask` and `.mlsetup` files in these `.mesh` files as well, however they may show up at a different location. If they are not listed under “`localMaterialBuffer`”, check under the “`preloadLocalMaterialInstances`” array. The masks set should be in there instead.
 
-Modify the existing `X Y Z` values for the bumper, changing one value at a time to see the amount changed. I suggest starting with a value of +/- 0.1.&#x20;
+Modify the existing `X Y Z` values for the bumper, changing one value at a time to see the amount changed. I suggest starting with a value of +/- 0.1.
 
 For moving parts, such as hoods and doors, we start by replacing the 3D model. Notice the rotation point in-game is a pivot along the origin in 3d space:
 
@@ -91,17 +91,17 @@ Swap the `.mesh`’s `.mlmask` and `.mlsetup` to the same as your `body_01` has 
 You can also change how components are connected in the vehicle rig.
 
 * For components that don’t have their own movement or bones, they are attached to another component that does. This can be changed to attach a model to another model’s movement.
-* `.app` file “`RDTDataViewModel > appearances > 0 > components > entPhysicalMeshComponent > parentTransform > bindName`” \
+* `.app` file “`RDTDataViewModel > appearances > 0 > components > entPhysicalMeshComponent > parentTransform > bindName`”\
   Example:
 
 <figure><img src="../../../.gitbook/assets/image149.png" alt=""><figcaption></figcaption></figure>
 
-* Components that do have their own bones are set to the bindName “`vehicle_slots`”, and their `slotName` is set to a `boneName` value in the `.rig` file. \
+* Components that do have their own bones are set to the bindName “`vehicle_slots`”, and their `slotName` is set to a `boneName` value in the `.rig` file.\
   Example of `body_01` in `.app`:
 
 <figure><img src="../../../.gitbook/assets/image62.png" alt=""><figcaption></figcaption></figure>
 
-If a component is linked to another component, we cannot use the `.rig` file to move it. Instead, in the `.app` file is each component’s `localTransform`. This can be used to change the position and orientation relative to the parent component. \
+If a component is linked to another component, we cannot use the `.rig` file to move it. Instead, in the `.app` file is each component’s `localTransform`. This can be used to change the position and orientation relative to the parent component.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image214.png" alt=""><figcaption></figcaption></figure>
@@ -128,7 +128,7 @@ Rigging wheels requires a 2nd `.rig` file that is used for vehicle handling. It 
 
 * `.ent file > RDTDataViewModel > components > vehicle_rig > rig (path to wheelbase rig)`
 
-You can add this new rig to your project and rename/move it.&#x20;
+You can add this new rig to your project and rename/move it.
 
 Notice that the new rig file only has wheel related bones:
 
@@ -150,17 +150,17 @@ For the **Mini Cooper**, I edited all 4 suspension positions in the `vehicle_rig
 
 You can update the wheels by first replacing all the wheel and tire meshes with ones to match your vehicle. This is similar to how the doors, windows, and hood function.
 
-For the wheel to rotate properly, make sure to have the center of the wheel as the mesh’s origin. \
+For the wheel to rotate properly, make sure to have the center of the wheel as the mesh’s origin.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image44.png" alt=""><figcaption></figcaption></figure>
 
 Once the wheel model is updated, you need to update size data of the wheels.
 
-This is set in your vehicle's tweaks. `vehWheelDimentionsSetup` contains both front and back settings. Update rimRadius, tireRadius, tireWidth, & wheelOffset to match your model's size.&#x20;
+This is set in your vehicle's tweaks. `vehWheelDimentionsSetup` contains both front and back settings. Update rimRadius, tireRadius, tireWidth, & wheelOffset to match your model's size.
 
 {% hint style="info" %}
-These values should macth 1:1 with meters. \*not confirmed.
+These values should match 1:1 with meters. \*not confirmed.
 {% endhint %}
 
 <figure><img src="../../../.gitbook/assets/wheelDimensions.PNG" alt=""><figcaption><p>Example base game vehWheelDimensions tweaks</p></figcaption></figure>
@@ -179,7 +179,7 @@ It has been kept documented here as a reference and for niche use cases.
 
 As an additional method of controlling the wheel size, you can update the `.rig` files.
 
-In both the `deformation_rig` and `vehicle_rig`, find the wheel bones (`wheel_back_left`, `wheel_front_right`, etc.) and update the `Scale` values. \
+In both the `deformation_rig` and `vehicle_rig`, find the wheel bones (`wheel_back_left`, `wheel_front_right`, etc.) and update the `Scale` values.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image55.png" alt=""><figcaption></figcaption></figure>
