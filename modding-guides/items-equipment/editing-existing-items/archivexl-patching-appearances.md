@@ -2,7 +2,7 @@
 description: Modifying game items with minimal conflicts
 ---
 
-# ArchiveXL: Patching appearances
+# Resource Patching: Mesh Appearances
 
 ## Summary
 
@@ -26,6 +26,10 @@ Concepts discussed here can be applied to many other areas in the game. See the 
 * A text editor such as [Notepad++](https://notepad-plus-plus.org/downloads/)
 
 ## Step 0: Finding the correct file
+
+{% hint style="info" %}
+This paragraph assumes that you want to modify an item that's part of V or their equipment. If that's not what you're doing, just go ahead and stick to your other file(s).
+{% endhint %}
 
 1. Use [redhottools](../../../for-mod-creators-theory/modding-tools/redhottools/ "mention") -> [#world-inspector-watch-the-player](../../../for-mod-creators-theory/modding-tools/redhottools/rht-the-world-inspector.md#world-inspector-watch-the-player "mention") to find the correct mesh and appearance name on the player puppet.
    1. If the many components confuse you, you can use [Appearance Creator Mod](https://www.nexusmods.com/cyberpunk2077/mods/10795) — you can go through the list of components one by one and **toggle** them off until you have found the correct one. Use that name to find it in RedHotTools.
@@ -63,9 +67,9 @@ You are creating a **patch file**, which will be used to change data in the orig
 
 1. If you are changing an **appearance** in a `.mesh` file, you do not need
    * renderResourceBlob
-   * parameters&#x20;
+   * parameters
    * lodLevelInfo
-2. Right-click each of them and select `Reset Object`.&#x20;
+2. Right-click each of them and select `Reset Object`.
 3. Save your file.
 
 <figure><img src="../../../.gitbook/assets/mesh_file_reset_renderresourceblob.png" alt=""><figcaption></figcaption></figure>
@@ -81,10 +85,10 @@ While the appearance name must be the same as in the original mesh, the appearan
 If you install your mod right now, your item would be broken and the game might even crash. To avoid that, we need to **move your patch files**.
 
 {% hint style="info" %}
-Moving any `.mlsetup` files that you edited will remove the dependency to [Material Texture Override](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/error-codes#mto-requirement).&#x20;
+Moving any `.mlsetup` files that you edited will remove the dependency to [Material Texture Override](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/error-codes#mto-requirement).
 {% endhint %}
 
-1. Create a custom folder for your mod: keep it outside of `base` and `ep1`. The common pattern is `your_name\mod_name\` (e.g. `zhincore\new_gun_appearance`).&#x20;
+1. Create a custom folder for your mod: keep it outside of `base` and `ep1`. The common pattern is `your_name\mod_name\` (e.g. `zhincore\new_gun_appearance`).
 
 <div align="center" data-full-width="false"><figure><img src="../../../.gitbook/assets/image (15) (1).png" alt=""><figcaption><p>Example folder structure of my mod.</p></figcaption></figure></div>
 
@@ -101,11 +105,11 @@ Moving any `.mlsetup` files that you edited will remove the dependency to [Mater
 Now we need to tell ArchiveXL about our patch file(s). We do that via an `.archive.xl` file in our `resources` folder — use any text editor, such as [Notepad++](https://notepad-plus-plus.org/downloads/).
 
 1. Switch your Project Explorer to the `resources` or `source` tab
-2. Create the file `your_mod_name.archive.xl`  (`File` -> `New File`, or via text editor)
+2. Create the file `your_mod_name.archive.xl` (`File` -> `New File`, or via text editor)
 
 <figure><img src="../../../.gitbook/assets/image (18) (1).png" alt=""><figcaption><p>My .archive.xl file.</p></figcaption></figure>
 
-3. Open the file in your favorite text editor and add the following lines. Mind the **indent** (the number of leading spaces)!&#x20;
+3. Open the file in your favorite text editor and add the following lines. Mind the **indent** (the number of leading spaces)!
 
 ```yaml
 resource:
@@ -120,11 +124,11 @@ resource:
 
 <summary>Wait, how does this work?</summary>
 
-You are creating a map with instructions for ArchiveXL.&#x20;
+You are creating a map with instructions for ArchiveXL.
 
 Each key (anything ending with a `:`) is a **patch file path**, while the array entries below (anything starting with a `-`) are the **destination files**.
 
-AXL will take the data from the patch file, and add it to every file in the list.&#x20;
+AXL will take the data from the patch file, and add it to every file in the list.
 
 </details>
 
