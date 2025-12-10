@@ -6,7 +6,7 @@ description: How does load order work in Cyberpunk?
 
 ## Summary
 
-**Written & Published**: Nov 22, 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Written & Published**: Nov 22, 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will explain to you what Load Order is and how it works, then tell you how to influence it.
 
@@ -17,6 +17,7 @@ You're not supposed to manage load order conflicts outside of `.archive` mods an
 * For REDmods, see [#conflicts-and-load-order](redmod/usage.md#conflicts-and-load-order "mention")
 * For .archive mods, use Fuzzo's **Archive Conflict Checker Tool** ([Nexus link](https://www.nexusmods.com/cyberpunk2077/mods/11126)).
 * There currently is no tool to check tweak conflicts
+* Check [#load-order-and-wolvenkit](load-order.md#load-order-and-wolvenkit "mention") if you are making a mod.
 
 ## What is Load Order?
 
@@ -39,13 +40,19 @@ Since **i\_know\_nothing\_about\_back\_problems** will load first, the conflicti
 
 The game loads mods in the following order (higher wins):
 
-### 1. Legacy mods
+### 1. .archive mods
 
-All .archive files in `Cyberpunk 2077/archive/pc/mod` in alphabetical order (see below).
+All .archive files in `Cyberpunk 2077/archive/pc/mod` in [ASCII-alphabetical order](load-order.md#load-order-ascii-sort).
 
 {% hint style="warning" %}
-Note: If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file. The file may contain archive names, one mod archive name in each line. Example:
+Note: If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file.&#x20;
 {% endhint %}
+
+<details>
+
+<summary>modlist.txt example</summary>
+
+The file may contain archive names, one mod archive name in each line. Example:
 
 ```
 modb.archive
@@ -54,9 +61,11 @@ moda.archive
 
 This means the game will load `modb` before `moda`, even though the filenames are not in alphabetical order. This allows for conflict management without renaming the physical files.
 
+</details>
+
 ### 2. REDmods
 
-Anything in `Cyberpunk 2077/mods`. All REDmod archives are loaded strictly after all archive files found inside `/archive/pc/mod`.
+Folders in `Cyberpunk 2077/mods` are loaded strictly **after** `/archive/pc/mod` in [ASCII-alphabetical order](load-order.md#load-order-ascii-sort). &#x20;
 
 ### Load order: ASCII sort
 
@@ -68,11 +77,7 @@ This is ASCII ordering:
 
 #### Example
 
-| Mod name       | Pos | why              |
-| -------------- | --- | ---------------- |
-| MyMod.archive  | 2   | M comes before m |
-| myMod.archive  | 3   |                  |
-| !myMod.archive | 1   | ! comes before A |
+<table><thead><tr><th width="174.27423095703125">Mod name</th><th width="80.2952880859375">Pos</th><th>why</th></tr></thead><tbody><tr><td>MyMod.archive</td><td>2</td><td>M comes before m</td></tr><tr><td>myMod.archive</td><td>3</td><td></td></tr><tr><td>!myMod.archive</td><td>1</td><td>! comes before A</td></tr></tbody></table>
 
 ## How to use this?
 
@@ -86,7 +91,13 @@ Prefixing your archive file names with non-alphanumeric characters works fine in
 You will forget the warning above and re-learn this the hard way.
 {% endhint %}
 
-## More Examples
+## Load order and Wolvenkit
+
+By default, [installing a mod with Wolvenkit](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install) will create an [archive mod](load-order.md#id-1.-.archive-mods) which is subject to the rules above (see [#load-order-ascii-sort](load-order.md#load-order-ascii-sort "mention")). Unless you specifically need to **overwrite other modded files**, you can completely ignore this.
+
+To re-name your packed files, use Project -> Configure (check also: [WolvenKit Projects #Project naming and mod load order](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order "mention"))
+
+### More Examples
 
 If you are creating a **compatibility mod** (something that modifies the files of another installed mod), then yours needs to load **first**.
 
