@@ -9,7 +9,12 @@ description: How Cyberpunk localization works
 **Created:** Oct 06 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** Oct 06 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page explains how the game uses .json files, how they are used for localization, and how you can use localization files to add your own translations
+This page explains&#x20;
+
+* how the game uses .json files
+* how you can [add your own translations](translation-files-.json.md#adding-translations-with-archivexl)
+* how you can [change existing translations](translation-files-.json.md#overwriting-existing-entries)
+* how you can support [multiple languages](translation-files-.json.md#adding-multiple-languages)
 
 ### Wait, this is not what I want!
 
@@ -18,8 +23,6 @@ This page explains how the game uses .json files, how they are used for localiza
 ## What's a JSON file, precious?
 
 This file type is where CDPR keep their lookup tables. Basically, any entries that need to be looked up at runtime get chucked into a json file and kept around for later.
-
-
 
 ## JSON for translations
 
@@ -34,7 +37,7 @@ The default example to look at is `base\localization\en-us\onscreens\onscreens.j
 
 <figure><img src="../../../.gitbook/assets/json_default_translation.png" alt=""><figcaption></figcaption></figure>
 
-A `localizationPersistenceOnScreenEntry` has four properties:&#x20;
+A `localizationPersistenceOnScreenEntry` has four properties:
 
 <table><thead><tr><th width="205.3333740234375"></th><th></th></tr></thead><tbody><tr><td>femaleVariant</td><td>Default text</td></tr><tr><td>maleVariant</td><td>Special text for masc variant (e.g. for gendered languages), you can leave this empty unless you need it</td></tr><tr><td>primaryKey</td><td>The numeric key the game uses to look up translation entries. If you add entries, set this to 0 and let ArchiveXL handle it.</td></tr><tr><td>secondaryKey</td><td>The textual key the game uses to look up translation entries. Must be unique.</td></tr></tbody></table>
 
@@ -53,7 +56,7 @@ localization:
 
 #### Overwriting existing entries
 
-Make sure that the **secondary key** of your translation entry is identical with the one from the entry you want to replace.&#x20;
+Make sure that the **secondary key** of your translation entry is identical with the one from the entry you want to replace.
 
 #### Adding multiple entries
 
@@ -69,7 +72,7 @@ localization:
 
 #### Adding multiple languages
 
-One block per language:&#x20;
+One block per language:
 
 ```yaml
 localization:  
