@@ -58,6 +58,10 @@ localization:
 
 Make sure that the **secondary key** of your translation entry is identical with the one from the entry you want to replace.
 
+{% hint style="info" %}
+Do not overwrite original .json files - ArchiveXL will handle the merging for you. Put your files in a custom path.
+{% endhint %}
+
 #### Adding multiple entries
 
 One line per entry:
