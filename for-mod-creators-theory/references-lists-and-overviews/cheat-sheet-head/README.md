@@ -21,15 +21,13 @@ This page lists various properties of the player head. Use the Table of Contents
 
 <table data-header-hidden><thead><tr><th width="166.33333333333331">Body gender</th><th>file path</th></tr></thead><tbody><tr><td>p<strong>w</strong>a mesh</td><td><br><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\</code></td></tr><tr><td>p<strong>w</strong>a morphtarget</td><td><code>base\characters\head\player_base_heads\player_female_average > .morphtarget</code></td></tr><tr><td>p<strong>m</strong>a mesh</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead</code></td></tr><tr><td>p<strong>m</strong>a morphtarget</td><td><code>base\characters\head\player_base_heads\player_man_average > .morphtarget</code></td></tr></tbody></table>
 
-
-
 {% hint style="info" %}
 The folders contain the entire player head. The minimum amount of meshes rendered is 3 (head, teeth, eyes), and can go up to 13 (fem V)/14 (masc V).
 {% endhint %}
 
 ### Head file prefixes
 
-<table><thead><tr><th width="117.333251953125"></th><th></th></tr></thead><tbody><tr><td>h0_</td><td>head (with ears)</td></tr><tr><td>hb_</td><td>male V only: <a href="../cheat-sheet-character-creator.md#beard">beard</a></td></tr><tr><td>heb_</td><td>eyebrows</td></tr><tr><td>he_</td><td><a href="../cheat-sheet-character-creator.md#eye-colour">eyes</a></td></tr><tr><td>ht_</td><td>teeth</td></tr><tr><td>hx_<br></td><td><ul><li><a href="../cheat-sheet-character-creator.md#cyberware">cyberware</a></li></ul><ul><li><a href="../cheat-sheet-character-creator.md#lip-makeup">lip </a><a href="../cheat-sheet-character-creator.md#lip-makeup">makeup</a> / <a href="../cheat-sheet-character-creator.md#eye-make-up">eye makeup</a></li><li><a href="../cheat-sheet-character-creator.md#cheek-makeup-style">freckles / cheek makeup</a></li><li><a href="../cheat-sheet-character-creator.md#blemishes">pimples (blemishes)</a></li><li>tattoos</li><li><a href="../cheat-sheet-character-creator.md#facial-scars-and-submeshes">scars</a></li></ul></td></tr><tr><td>l1_</td><td>earrings/piercings (01-04)</td></tr></tbody></table>
+<table><thead><tr><th width="117.333251953125"></th><th></th></tr></thead><tbody><tr><td>h0_</td><td>head (with ears)</td></tr><tr><td>hb_</td><td>male V only: <a href="../cheat-sheet-character-creator.md#beard">beard</a></td></tr><tr><td>heb_</td><td>eyebrows</td></tr><tr><td>he_</td><td><a href="../cheat-sheet-character-creator.md#eye-colour">eyes</a></td></tr><tr><td>ht_</td><td>teeth</td></tr><tr><td>hx_<br></td><td><ul><li><a href="../cheat-sheet-character-creator.md#cyberware">cyberware</a></li><li><a href="../cheat-sheet-character-creator.md#lip-makeup">lip </a><a href="../cheat-sheet-character-creator.md#lip-makeup">makeup</a> / <a href="../cheat-sheet-character-creator.md#eye-make-up">eye makeup</a></li><li><a href="../cheat-sheet-character-creator.md#cheek-makeup-style">freckles / cheek makeup</a></li><li><a href="../cheat-sheet-character-creator.md#blemishes">pimples (blemishes)</a></li><li>tattoos</li><li><a href="../cheat-sheet-character-creator.md#facial-scars-and-submeshes">scars</a></li></ul></td></tr><tr><td>l1_</td><td>earrings/piercings (01-04)</td></tr></tbody></table>
 
 ## Complexions
 
@@ -54,7 +52,7 @@ The files are ending in `01..05`. Each complexion has its own appearance in the 
 
 Skin materials are defined in the base head `.mesh` file (while the shape comes from the .morphtarget):
 
-<table><thead><tr><th width="130.333251953125">body gender</th><th></th></tr></thead><tbody><tr><td>female </td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\h0_000_pwa_c__basehead.mesh</code></td></tr><tr><td>male </td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\h0_000_pma_c__basehead.mesh</code></td></tr></tbody></table>
+<table><thead><tr><th width="130.333251953125">body gender</th><th></th></tr></thead><tbody><tr><td>female</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\h0_000_pwa_c__basehead.mesh</code></td></tr><tr><td>male</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\h0_000_pma_c__basehead.mesh</code></td></tr></tbody></table>
 
 You can find the [definitions](../../files-and-what-they-do/3d-objects-.mesh-files#step-3-material-definition) in the localMaterialBuffer. Each material overrides the following [properties](../../materials/configuring-materials/#checking-material-properties) locally:
 
@@ -63,7 +61,7 @@ You can find the [definitions](../../files-and-what-they-do/3d-objects-.mesh-fil
 
 All other properties are pulled from a [.mi file](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) in the following folder:
 
-<table><thead><tr><th width="128">body gender</th><th></th></tr></thead><tbody><tr><td>female </td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures</code></td></tr><tr><td>male </td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\textures</code></td></tr></tbody></table>
+<table><thead><tr><th width="128">body gender</th><th></th></tr></thead><tbody><tr><td>female</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\textures</code></td></tr><tr><td>male</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\textures</code></td></tr></tbody></table>
 
 ### Head: material instances
 
@@ -93,7 +91,27 @@ Provided below is a table with the eyebrows and their associated texture files.
 
 <table><thead><tr><th width="157">Eyebrow</th><th>Diffuse Texture</th><th>Alpha Mask</th></tr></thead><tbody><tr><td>01</td><td>heb__base_d01.xbm</td><td>heb_wa__base_ds01.xbm</td></tr><tr><td>02</td><td>heb__base_d02.xbm</td><td>heb_wa__base_ds02.xbm</td></tr><tr><td>03</td><td>heb__base_d03.xbm</td><td>heb_wa__base_ds03.xbm</td></tr><tr><td>04</td><td>heb__base_d04.xbm</td><td>heb_wa__base_ds04.xbm</td></tr><tr><td>05</td><td>heb__base_d05.xbm</td><td>heb_wa__base_ds05.xbm</td></tr><tr><td>06</td><td>heb__base_d06.xbm</td><td>heb_wa__base_ds06.xbm</td></tr><tr><td>07</td><td>heb__base_d07.xbm</td><td>heb_wa__base_ds07.xbm</td></tr><tr><td>08</td><td>heb__base_d08.xbm</td><td>heb_wa__base_ds08.xbm</td></tr></tbody></table>
 
+## Eye make-up
+
+Eye make-up [.mi files](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) can be found in the following folder:&#x20;
+
+```
+base\characters\common\character_customisation_items\makeup\eyes
+```
+
+The individual make-up styles are black and white **masks** stored in the `textures` subfolder.
+
 ## Cyberware
+
+Player cyberware [.mi files](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) can be found in the following folder:
+
+```
+base\characters\common\character_customisation_items\cyberware\face
+```
+
+In the `textures` subfolder you can find the individual texture files used by the [.mi file](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md).
+
+### 2.2 Cyberware
 
 Cyberware added with patch 2.2 is distributed across preexisting files:
 
@@ -103,7 +121,7 @@ These appearances do not exist in the .mesh! Read below the table for how to mak
 
 <table><thead><tr><th width="95.73333740234375">CC index</th><th width="415.4666748046875">file</th><th>appearance</th></tr></thead><tbody><tr><td>8</td><td><code>makeup_eyes_01.mesh</code></td><td><code>cyberware_01</code></td></tr><tr><td>9</td><td><code>cyberware_04.mesh</code></td><td><code>cyberware_08</code></td></tr><tr><td>10</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_09</code></td></tr><tr><td>11</td><td><code>tattoo_02.mesh</code></td><td><code>cyberware_10</code></td></tr><tr><td>12</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_11</code></td></tr><tr><td>13</td><td><code>cyberware_04.mesh</code></td><td><code>cyberware_12</code></td></tr><tr><td>14</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_13</code></td></tr><tr><td>15</td><td><code>cyberware_06.mesh</code></td><td><code>cyberware_14</code></td></tr><tr><td>16</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_15</code></td></tr></tbody></table>
 
-You can find the cyberware [material instances](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) with the following [search query](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):&#x20;
+You can find the cyberware [material instances](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) with the following [search query](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
 
 ```
 base\characters\common\character_customisation_items\cyberware\face\cyberware > .mi
