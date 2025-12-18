@@ -37,8 +37,7 @@ Don't blindly copy the exact values I used, play around with them and see what w
 
 Using any modeling method you like, create a so called grid surface. This should have the topology of a plane (no holes, loops, etc). Mark the root edge sharp.\
 \
-**Core concept:** Keep the poly count low. The less 'control points' you have, the easier it is to control the object.\
-
+**Core concept:** Keep the poly count low. The less 'control points' you have, the easier it is to control the object.<br>
 
 <figure><img src="../../.gitbook/assets/image (19) (1).png" alt=""><figcaption><p>A correct grid surface</p></figcaption></figure>
 

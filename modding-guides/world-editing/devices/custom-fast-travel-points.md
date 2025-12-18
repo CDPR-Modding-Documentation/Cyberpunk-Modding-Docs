@@ -70,13 +70,13 @@ FastTravelPoints.customPoint:
 
 * In order to tell the FT Point what marker to use, and what record to use, we will use entity instance data
 * Open the `Entity Instance Data`header of the FT Terminal
-*   Expand the entry `DataTerm | Entity`
+*   Expand the entry FastTravelComponent `|fastTravel` &#x20;
 
-    * Locate and expand the `linkedFastTravelPoint`header
+    * Locate and expand the `FastTravelPointData | fastTravelNodes`header
     * Set `markerRef`to the NodeRef of the marker (`$/ft/custom/marker`)
     * Set `pointRecord`to the custom `FastTravelPoints`record (`FastTravelPoints.customPoint`)
 
-    <figure><img src="../../../.gitbook/assets/image (554).png" alt="" width="471"><figcaption><p>Example of instance data setup (NodeRef will turn into hash)</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-29 003154.png" alt=""><figcaption><p>Example of instance data setup (NodeRef will turn into hash)</p></figcaption></figure>
 
 ## Finishing up
 

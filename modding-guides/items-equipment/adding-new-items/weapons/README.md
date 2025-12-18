@@ -6,8 +6,8 @@ description: Adding weapons
 
 ## Summary
 
-&#x20;**Published: July 08. 2023 by** [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-&#x20;**Last documented update: Feb 07 2024 by @manavortex**
+**Published: July 08. 2023 by** [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update: Feb 07 2024 by @manavortex**
 
 This guide will teach you how to change the ArchiveXL item addition process to make it work for a weapon.
 
@@ -35,7 +35,7 @@ In the app file, you can also find the value for the yaml file's `$base` propert
 
 ## Getting the mesh\_entity.ent
 
-You need the correct mesh entity to go with your appearance file. You can find them under `base\weapons`\ - search for the name of your weapon, or just navigate through the folders.&#x20;
+You need the correct mesh entity to go with your appearance file. You can find them under `base\weapons`\ - search for the name of your weapon, or just navigate through the folders.
 
 This file makes the weapon show up in photo mode. Instead of going into the PartsValues, it will be linked in the app file's root as `baseEntity` (there's a screenshot below). Leave it alone for now, it's easier to make the appearances working correctly in the .app file and then copying over an entire component array.
 
@@ -82,37 +82,37 @@ The list links you to sections of the guide which tell you to change things. **O
 Here's what's worked for me (@manavortex):
 
 1. Find the .app file of a suitable base weapon, add it to your project, and rename it. Don't change anything for now, future you might need the original data for troubleshooting later.
-2. Find the correct .ent file. It might be linked in the .app's `baseEntity` field. If not, you can find it with the following Wolvenkit search query:&#x20;
+2. Find the correct .ent file. It might be linked in the .app's `baseEntity` field. If not, you can find it with the following Wolvenkit search query:
 
 ```
 base\weapons > entities > .ent
 ```
 
 {% hint style="info" %}
-Optimally, the number of components in the `.ent` file should be the same as in any appearance's `component` array (red arrow on the screenshot above).&#x20;
+Optimally, the number of components in the `.ent` file should be the same as in any appearance's `component` array (red arrow on the screenshot above).
 
 If it's not, that **could** indicate that you have the wrong .app file. It could also mean nothing, but if you run into trouble in step 6, this might be why.
 {% endhint %}
 
 3. Configure the yaml [as described here](./#yaml-define-the-field)
-4. Set up **one** (1) appearance for testing by [assigning the correct visual tags](./#.app-file-define-the-visual-tag). \
-   &#xNAN;_&#x44;o not delete the other appearances yet, future you might need them for troubleshooting._
+4. Set up **one** (1) appearance for testing by [assigning the correct visual tags](./#.app-file-define-the-visual-tag).\
+   \&#xNAN;_Do not delete the other appearances yet, future you might need them for troubleshooting._
 5. Start the game and make sure that you can spawn a custom weapon with the appearance you picked and that it
    1. shows up in inventory/photo mode
    2. shows up in first person
 
-If that's not the case, check the [mesh entity](#user-content-fn-1)[^1] (see the blue box in step 2).&#x20;
+If that's not the case, check the [mesh entity](#user-content-fn-1)[^1] (see the blue box in step 2).
 
 If that doesn't help, you may have taken the wrong .app file - go looking again.
 
 {% hint style="warning" %}
-You haven't changed anything at this point: the goal here is to make sure that your visual tags are correct and that you can spawn a weapon addition.&#x20;
+You haven't changed anything at this point: the goal here is to make sure that your visual tags are correct and that you can spawn a weapon addition.
 
 It's **crucial** that you make this work — anything you do after this point will add complexity and make troubleshooting more difficult, so this is where you shore up your bases.
 {% endhint %}
 
 6. **Optional:** You just added a weapon to the game that didn't exist before. Take a moment to bask in the success!
-7. Custompath your [mesh entity](#user-content-fn-2)[^2]:&#x20;
+7. Custompath your [mesh entity](#user-content-fn-2)[^2]:
    1. Create a copy of the file and move it to a custom folder
    2. rename it
    3. Change the `baseEntity` path in your .app file
@@ -129,7 +129,7 @@ It's **crucial** that you make this work — anything you do after this point wi
 Fix any issues that might arise before you proceed.
 
 {% hint style="info" %}
-&#x20;This is why we kept the original appearances around: if you run into any issues here, you can compare your stuff with the original, un-changed game variants.&#x20;
+This is why we kept the original appearances around: if you run into any issues here, you can compare your stuff with the original, un-changed game variants.
 
 Don't forget that you can
 
@@ -186,7 +186,7 @@ First of all, unequip and re-equip the item. If that doesn't fix it, try **respa
 
 ### My iconic melee weapon ignores its localizedDescription!
 
-That is due to a base game change (bug?): iconic weapons don't show fluff texts anymore (huge thanks to [@RMKSoundSystem on Discord](https://discord.com/channels/717692382849663036/953004282142163014/1174741877120061531) for learning that).&#x20;
+That is due to a base game change (bug?): iconic weapons don't show fluff texts anymore (huge thanks to [@RMKSoundSystem on Discord](https://discord.com/channels/717692382849663036/953004282142163014/1174741877120061531) for learning that).
 
 To make it work again, you need to either
 
@@ -208,12 +208,13 @@ Set $base like this:
 
 ### My weapon is invisible in FPP!
 
-* Try using a different weapon `$base`  in your yaml - for example, `Items.Preset_Hammer_Default` works, while `Items.Preset_Hammer_Sasquatch` doesn't
+* Try using a different weapon `$base` in your yaml - for example, `Items.Preset_Hammer_Default` works, while `Items.Preset_Hammer_Sasquatch` doesn't
+* Nested records: Check if your item spawns if you remove any custom records that you also defined in your `.yaml` — e.g. a broken entry in `slotPartListPreset` can turn the entire thing invisible in FPP
 * Copy the components from the `mesh_entity` to the .app as mentioned in [#getting-the-mesh\_entity.ent](./#getting-the-mesh_entity.ent "mention")
 
 ### My weapon is spawning as the original weapon/my mesh edit isn't reflecting!
 
-Make sure all the items under "resolvedDependencies" are deleted in your appearances, especially if they are using "Soft" or "Embedded" flags. The game might load vanilla meshes instead of your own meshes.&#x20;
+Make sure all the items under "resolvedDependencies" are deleted in your appearances, especially if they are using "Soft" or "Embedded" flags. The game might load vanilla meshes instead of your own meshes.
 
 ### Reticle (dot) position of the scope I attach to my weapon is not aligned with the point of impact (regardless of which scope)!
 

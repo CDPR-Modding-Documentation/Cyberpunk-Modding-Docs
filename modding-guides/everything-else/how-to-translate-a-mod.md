@@ -13,11 +13,11 @@ coverY: 0
 Published: 19 Mar 2024 by [iwasniko](https://app.gitbook.com/u/2YqtOa5pIqh3hmxj7vpeWFgLCmr1 "mention")\
 Last documented edit: 25 May 2024 by Vanaukas
 
-This guide will teach you how to add translation files for existing mods.&#x20;
+This guide will teach you how to add translation files for existing mods.
 
 ### Wait, this is not what I want!
 
-For a general explanation on how to add translations, check [translation-files-.json.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/translation-files-.json.md "mention")
+* For a general explanation on how to add translations (or edit existing ones), check [translation-files-.json.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/translation-files-.json.md "mention")
 
 ***
 
@@ -43,7 +43,7 @@ There is no one way to do translations to existing Mods, but I am going to show 
 * [If the author provided a `.json.json` resource](how-to-translate-a-mod.md#if-the-author-provided-a-.json.json-resource)
 * [Extracting the Localization File from a `.archive` mod](how-to-translate-a-mod.md#extracting-the-localization-file-from-a-.archive-mod)
 
-For the purposes of this guide, I will use my mod as example. The file names and file structure used aren't mandatory, but as general rule avoid using symbols in your file/folder names besides `-` and `_`.&#x20;
+For the purposes of this guide, I will use my mod as example. The file names and file structure used aren't mandatory, but as general rule avoid using symbols in your file/folder names besides `-` and `_`.
 
 ***
 
@@ -103,13 +103,13 @@ It's important that you respect the format of the text of the Mod that you are t
 
 Install all the previously mentioned requirements and download the `.json.json` file from the mod page. Create a **Wolvenkit** project.
 
-### Step One: Importing `.json.json` to your project&#x20;
+### Step One: Importing `.json.json` to your project
 
 Open the project, hover over `raw` folder in `Project Explorer` and click on the yellow icon to open the `raw` folder on `Windows Explorer:`
 
 <figure><img src="https://i.imgur.com/vKJ4VO9.png" alt=""><figcaption></figcaption></figure>
 
-On `Windows Explorer`, move the already downloaded `.json.json` file over `raw` and make some folder to hold it. For this example I'll call that folder `localization` and inside this folder, I'm going to create another folder related to the language I want to use.&#x20;
+On `Windows Explorer`, move the already downloaded `.json.json` file over `raw` and make some folder to hold it. For this example I'll call that folder `localization` and inside this folder, I'm going to create another folder related to the language I want to use.
 
 For this example, I'll make two folders: `es-es` and `es-mx`, because they are fairly similar and also my main language and then I'll copy and paste the same `.json.json` in both folders. This is how it'll look inside **Wolvenkit**:
 
@@ -141,11 +141,11 @@ Is important to remember that you can't use `Enter` to do line breaks or your fi
 
 #### 2) T**ranslating the `.json` file in Wolvenkit after importing**
 
-A file with `.json` extension (only one extension) is already compiled and not able to be opened on a text editor, but it can be opened in Wolvenkit. This method is somewhat easier to read because the `XML` text formatting won't be decompiled, allowing for better readability.&#x20;
+A file with `.json` extension (only one extension) is already compiled and not able to be opened on a text editor, but it can be opened in Wolvenkit. This method is somewhat easier to read because the `XML` text formatting won't be decompiled, allowing for better readability.
 
 Let's see how a `.json` file looks inside **Wolvenkit**:
 
-<figure><img src="https://i.imgur.com/jJRewQB.png" alt=""><figcaption><p>Don't worry, onscreens.json in the base game files is way more  bigger than this</p></figcaption></figure>
+<figure><img src="https://i.imgur.com/jJRewQB.png" alt=""><figcaption><p>Don't worry, onscreens.json in the base game files is way more bigger than this</p></figcaption></figure>
 
 Each numbered entry is one specific `LocKey` (_**Loc**alization **Key**_) and they can hold item names, item descriptions, ability descriptions and anything that can be read on items.
 
@@ -184,7 +184,7 @@ Select `ArchiveXL` and then `ArchiveXL file`. Change the generated name to the s
 
 #### 2) Fill your ArchiveXL file
 
-After clicking `Create`, your file should open automatically in your main text editor (in my case, **VSCode**).&#x20;
+After clicking `Create`, your file should open automatically in your main text editor (in my case, **VSCode**).
 
 The following code structure should be used to fill your ArchiveXL file:
 
@@ -219,7 +219,7 @@ Is important that you keep the indentation as shown in the code examples. It's a
 
 #### Packing your mod
 
-**Wolvenkit** will pack your mod with a one click press. You can also install your files for yourself to test them and see if your changes are properly working.&#x20;
+**Wolvenkit** will pack your mod with a one click press. You can also install your files for yourself to test them and see if your changes are properly working.
 
 Click on `Pack mod` to create a ready to upload zip file and `Install mod` to install it in your game files.
 
@@ -303,7 +303,7 @@ Most mods will be using in-game files for this. You'll run into one of two cases
 
 ### Prerequisites
 
-You need a Wolvenkit Project with the relevant files from the original mod:&#x20;
+You need a Wolvenkit Project with the relevant files from the original mod:
 
 * `.wem` for audio translations
 
@@ -311,7 +311,7 @@ For how to get there, see [analysing-other-mods](../analysing-other-mods/ "menti
 
 #### The files are linked
 
-The mod is only "pointing" at the original game files, and they're loaded from the player's local copy and will be in whatever language they're running.&#x20;
+The mod is only "pointing" at the original game files, and they're loaded from the player's local copy and will be in whatever language they're running.
 
 {% hint style="warning" %}
 TODO: Which file(s) defines those? If there is no original mod author and the mod links to in-game files, how can we [custompath](../items-equipment/custompathing-assets.md) them?
@@ -322,7 +322,7 @@ If you want to translate them anyway, you need to **add the audio files** from y
 #### The files are included
 
 {% hint style="info" %}
-You can listen to audio files by simply selecting them in the Wolvenkit Project Browser and using the built-in audio player. See [Audio files](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-cli/usage/video-and-audio-files-cli#audio-files "mention") on the Wolvenkit wiki for a screenshot.
+You can listen to audio files by simply selecting them in the Wolvenkit Project Browser and using the built-in audio player. See [Video and audio files (CLI) #Audio files](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-cli/usage/video-and-audio-files-cli#audio-files "mention") on the Wolvenkit wiki for a screenshot.
 {% endhint %}
 
 Assuming that the original mod author did not rename the files, this makes it easier for you.

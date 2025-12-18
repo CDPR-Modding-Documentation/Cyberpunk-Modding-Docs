@@ -108,7 +108,9 @@ Draw your scar : I know this is not a simple scar if I have done this one, it's 
 
 Save your scar as a .PNG.
 
-It's time for the baking part, you will need a bump map converter, I use [CrazyBump](https://www.youtube.com/watch?v=x_5suERXhRw\&list=PLKC44ub7XfxmFwTiVLIvgcahWheRXiFGO) which is the best in my opinion I will teach you how to convert your diffuse map with Crazy Bump.
+It's time for the baking part, you will need a bump map converter, I use [CrazyBump](https://www.youtube.com/watch?v=x_5suERXhRw\&list=PLKC44ub7XfxmFwTiVLIvgcahWheRXiFGO) which is the best in my opinion I will teach you how to convert your diffuse map with Crazy Bump.&#x20;
+
+<mark style="color:red;">Cyberpunk 2077 use Direct X normal map so becareful to generate the good type of normal map</mark>
 
 Download it and when you are in , click on "Open photograph from file".
 
