@@ -6,7 +6,7 @@ description: >-
 
 # Custompathing assets
 
-**Published: January 16 2024 by @madmaximusjb and** [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published: January 16 2024 by @madmaximusjb and** [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will teach you how to set game assets as new files. Don't worry, it's really simple!\
 We're taking this Liberty handgun mesh (I think it used to belong to some Dexter guy\`?) and make our own copy of the file.
@@ -31,15 +31,13 @@ Once you're done, we can proceed to the next section.
 
 ## Custompathing (in) game files
 
-You have added a game file to your project, or you have downloaded a template file, and now want to change the references.&#x20;
+You have added a game file to your project, or you have downloaded a template file, and now want to change the references.
 
 If your file type isn't included in the lists of examples, you need to look through the file, or use Wolvenkit's [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation)
 
 ### .mesh
 
-{% hint style="info" %}
-For more information about .this, check [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention")
-{% endhint %}
+\{% hint style="info" %\} For more information about .this, check [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") \{% endhint %\}
 
 Find your `CMaterialInstance` in either `localMaterialBuffer.materials` or `preloadLocalMaterials`, then change any depot paths in the properties:
 
@@ -47,9 +45,7 @@ Find your `CMaterialInstance` in either `localMaterialBuffer.materials` or `prel
 
 ### .inkatlas
 
-{% hint style="info" %}
-For more information about this, check [game-icons-the-inkatlas-file.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md "mention")
-{% endhint %}
+\{% hint style="info" %\} For more information about this, check [game-icons-the-inkatlas-file.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md "mention") \{% endhint %\}
 
 For modded files, you only need slot 0 - 1 and 2 can be blank.
 

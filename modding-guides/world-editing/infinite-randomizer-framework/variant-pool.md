@@ -21,11 +21,9 @@ Each variant in the variants list has the following structure:
 | weight       | Relative Bias Towards This Entry. This Value Must Be Non Negative. | No, Defaults To 1         |
 | appearance   | Resources Appearance                                               | No, Defaults to "default" |
 
-{% hint style="warning" %}
-Appearances are ignored for `worldTerrainMeshNode` and `worldStaticDecalNode`.
-{% endhint %}
+\{% hint style="warning" %\} Appearances are ignored for `worldTerrainMeshNode` and `worldStaticDecalNode`. \{% endhint %\}
 
-The weight is not a fixed percentage but rather a relative bias that depends on the amount of entries and their weights. \
+The weight is not a fixed percentage but rather a relative bias that depends on the amount of entries and their weights.\
 For example a variant with a weight of 2 will be picked twice as often as a variant with a weight of 1, while two variants with an equal weight will be equally likely to be picked.\
 Do keep in mind that Cyberpunk uses a lot of instanced nodes for meshes leading to some resources being replaced together as they are part of the same node. This is not something that can easily be changed.
 

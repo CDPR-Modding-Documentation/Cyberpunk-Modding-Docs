@@ -2,20 +2,20 @@
 
 ## Summary
 
-**Created:** Nov 10 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Nov 10 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Created:** Nov 10 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Nov 10 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page contains our wiki editing guidelines.
 
 ### Wait, this is not what I want!
 
-* If you would rather learn how to edit the wiki, please check [..](../ "mention") -> [#how-to-edit](../#how-to-edit "mention")
+* If you would rather learn how to edit the wiki, please check [..](../../ "mention") -> [#how-to-edit](../../#how-to-edit "mention")
 
 ## Basics
 
 ### 1. Name your merge requests
 
-The first thing you should do after clicking the "Edit in Change Request" button is to give your merge request a title. Not only will future you be grateful, nothing is more annoying than returning to something like this:&#x20;
+The first thing you should do after clicking the "Edit in Change Request" button is to give your merge request a title. Not only will future you be grateful, nothing is more annoying than returning to something like this:
 
 <figure><img src="../../.gitbook/assets/wiki_name_your_merge_requests.png" alt="" width="216"><figcaption></figcaption></figure>
 
@@ -31,15 +31,13 @@ When updating a page, please adjust the "last documented update" line. (I keep f
 
 You can add images into the editor by either **pasting from clipboard** or **drag-and-dropping a file**.
 
-Unfortunately, gitbook's default name is as helpful as the NCPD customer feedback box:&#x20;
+Unfortunately, gitbook's default name is as helpful as the NCPD customer feedback box:
 
 <figure><img src="../../.gitbook/assets/wiki_image_names_suck.png" alt=""><figcaption><p>They <a href="https://github.com/orgs/GitbookIO/discussions/691">know about this</a>, but haven't changed it yet.</p></figcaption></figure>
 
 Please **name your images**. As of November 2024, you can find the "`Files`" section on the left, in a tab behind the "`Pages`" tree:
 
 <figure><img src="../../.gitbook/assets/wiki_rename_your_images.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ## Styleguide
 
@@ -51,7 +49,7 @@ The internet is full of guides on writing nonfiction. [This one](https://slatest
 
 #### KISS: Keep it simple, stupid
 
-Keep guides **short** and **concise**.&#x20;
+Keep guides **short** and **concise**.
 
 {% hint style="info" %}
 Remember that most of the world are not native speakers of English. Keep your sentences short and use **clear language**.
@@ -105,7 +103,6 @@ Remember that clickbait comes from big media corporations optimizing for easy re
 
 <figure><img src="../../.gitbook/assets/wiki_sun_tzu_meme.png" alt=""><figcaption></figcaption></figure>
 
-The right image can sum up several paragraphs of writing. Make sure to use the right images.&#x20;
+The right image can sum up several paragraphs of writing. Make sure to use the right images.
 
-If you include screenshots of anything, make sure to **highlight** the **important parts** (e.g. by drawing boxes and arrows). You can use any graphic editing program (such as [Greenshot](https://getgreenshot.org/downloads/)) for this.&#x20;
-
+If you include screenshots of anything, make sure to **highlight** the **important parts** (e.g. by drawing boxes and arrows). You can use any graphic editing program (such as [Greenshot](https://getgreenshot.org/downloads/)) for this.

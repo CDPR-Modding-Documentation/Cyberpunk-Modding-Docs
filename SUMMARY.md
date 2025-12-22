@@ -1,7 +1,6 @@
 # Table of contents
 
-* [Home](README.md)
-* [The Wiki](the-wiki/README.md)
+* [The Wiki](README.md)
   * [Editing guidelines](the-wiki/editing-guidelines/README.md)
     * [Page Header: Summary](the-wiki/editing-guidelines/page-header-summary.md)
 * [Glossary](glossary.md)
