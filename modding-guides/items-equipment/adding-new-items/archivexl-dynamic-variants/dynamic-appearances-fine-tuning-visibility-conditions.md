@@ -9,7 +9,7 @@ description: >-
 ## Summary
 
 **Published**: Sep 09 2024 by [Sumi](https://app.gitbook.com/u/7RcQS2blS1QZY9a7AwDx4GUHnsJ2 "mention")\
-**Last documented edit:** Sep 09 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit:** Dec 14 2025 by [Sumi](https://app.gitbook.com/u/7RcQS2blS1QZY9a7AwDx4GUHnsJ2 "mention")
 
 This page is an extension of [ItemAdditions: Dynamic Appearances](./) and explains how to fine-tune item visibility conditions beyond the basic scope.
 
@@ -46,13 +46,13 @@ appearanceName: root_entity_dynamic_appearance_$(type)_!$(base_color)+$(ribbons)
 
 This will look up the following names in your root entity:
 
-`root_entity_dynamic_appearance_sleeves_`&#x20;
+`root_entity_dynamic_appearance_sleeves_`
 
 `root_entity_dynamic_appearance_nosleeves_`
 
 Then you would add the following entries to your `.app` file with the `name`s :
 
-`root_entity_dynamic_appearance_sleeves_`&#x20;
+`root_entity_dynamic_appearance_sleeves_`
 
 `root_entity_dynamic_appearance_nosleeves_`
 
@@ -60,4 +60,4 @@ Now you have options. The next step will depend on your goals. In the `.app` fil
 
 ## But wait, couldn't I accomplish this by doing \[x] instead?
 
-Yes, probably. During your exploration of the wiki you will likely come across many different ways to create item variants. The benefit is that you don't have to manage as many root entity files, but it's just a matter of preference and what works best for your project.
+Yes, there are several ways to organize your item variants. The benefit is that you can use a single entry in your .yaml file for multiple variations, but it's just a matter of preference and what works best for your project.
