@@ -12,12 +12,16 @@ This page will explain to you what Load Order is and how it works, then tell you
 
 ## TL;DR
 
-You're not supposed to manage load order conflicts outside of `.archive` mods and REDmods. If you ever feel the need to do that, a modder fucked up. An exception to this are **Tweak mods**, as the tweakDB is also a database of static values, conflicts can happen (e.g. two mods both edit the weapon stats of the Masamune).
+{% hint style="info" %}
+You're not supposed to manage load order conflicts. If you ever feel the need to do that, a modder fucked up.&#x20;
+{% endhint %}
+
+In that case you may still influence`.archive` mods and REDmods. **Tweak mods** may conflict as well since tweakDB is a database of static values (e.g. two mods both edit the weapon stats of the Masamune).
 
 * For REDmods, see [#conflicts-and-load-order](redmod/usage.md#conflicts-and-load-order "mention")
-* For .archive mods, use Fuzzo's **Archive Conflict Checker Tool** ([Nexus link](https://www.nexusmods.com/cyberpunk2077/mods/11126)).
+* For .archive mods, rename files in ASCII alphabetical order. Do not use any [tools](https://www.nexusmods.com/cyberpunk2077/mods/11126) **other than your mod manager** to change mod load order, as they create more problems than they solve.
 * There currently is no tool to check tweak conflicts
-* Check [#load-order-and-wolvenkit](load-order.md#load-order-and-wolvenkit "mention") if you are making a mod.
+* Check [#load-order-and-wolvenkit](load-order.md#load-order-and-wolvenkit "mention") if you are making a mod
 
 ## What is Load Order?
 
@@ -42,10 +46,22 @@ The game loads mods in the following order (higher wins):
 
 ### 1. .archive mods
 
-All .archive files in `Cyberpunk 2077/archive/pc/mod` in [ASCII-alphabetical order](load-order.md#load-order-ascii-sort).
+All .archive files in `Cyberpunk 2077/archive/pc/mod` in [ASCII-alphabetical order](load-order.md#load-order-ascii-sort).&#x20;
+
+Example: To load the conflicting file from **realistic\_boobs\_DDDDDDDDD\_cup.archive** before **i\_know\_nothing\_about\_back\_problems.archive** you could simply change the capitalisation. This will lead to the following order&#x20;
+
+```
+Realistic_boobs_DDDDDDDDD_cup.archive
+i_know_nothing_about_back_problems.archive
+```
+
+If you change the load order by renaming a file, it is suggested to indicate said change in your mod manager, for example by also renaming the mod in the manager to reflect the change made. \
+\
+In this case if the mod is named "**Backbreaker Boobs"**, you could change it's name in the manager to **"Backbreaker Boobs - renamed to load before Backpain is a myth"**. \
+This helps keep an overview about changed file names and load order and minimises confusion later on when adding more mods.&#x20;
 
 {% hint style="warning" %}
-Note: If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file.&#x20;
+Note: If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file. If you don't want to readjust the order after every single new mod install delete this file.
 {% endhint %}
 
 <details>
@@ -65,7 +81,7 @@ This means the game will load `modb` before `moda`, even though the filenames ar
 
 ### 2. REDmods
 
-Folders in `Cyberpunk 2077/mods` are loaded strictly **after** `/archive/pc/mod` in [ASCII-alphabetical order](load-order.md#load-order-ascii-sort). &#x20;
+Folders in `Cyberpunk 2077/mods` are loaded strictly **after** `/archive/pc/mod` in [ASCII-alphabetical order](load-order.md#load-order-ascii-sort).&#x20;
 
 ### Load order: ASCII sort
 
@@ -81,7 +97,7 @@ This is ASCII ordering:
 
 ## How to use this?
 
-You can re-name your folders and .archive files following the rules under [#load-order-ascii-sort](load-order.md#load-order-ascii-sort "mention") to influence in which order the game will load your mods, or you can use Fuzzo's **Archive Conflict Checker Tool** ([Nexus link](https://www.nexusmods.com/cyberpunk2077/mods/11126)).
+You can re-name your folders and .archive files following the rules under [#load-order-ascii-sort](load-order.md#load-order-ascii-sort "mention") to influence in which order the game will load your mods.
 
 {% hint style="danger" %}
 Prefixing your archive file names with non-alphanumeric characters works fine in case of Cyberpunk, but is a terrible habit that might break file paths in other games or operating systems.
