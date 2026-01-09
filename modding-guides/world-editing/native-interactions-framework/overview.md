@@ -16,7 +16,7 @@ Interactions are one of two categories:
 
 Simple: No additional setup is needed
 
-With Props: Interaction uses additional props, which need to be placed
+With Props: Interaction uses additional props, which need to be placed via [World Builder](../object-spawner/)
 {% endhint %}
 
 ## Supported Interactions
@@ -33,7 +33,7 @@ With Props: Interaction uses additional props, which need to be placed
 * [Mirror](interactions-with-props.md): Leaning in front of mirror, with appearance changing and facial expression options. Requires mirror device and mirror /reflection mesh props
 * [Billiard](interactions-with-props.md): Simple billiard playing interaction, either sinking the ball or not. Requires balls and stick props
 * [Meditate](interaction-settings.md): A simple sitting down on the floor animation, applies a buff
-* [Dance](interaction-settings.md): Indefinite dancing animation, in the players current position
+* [Dance](interaction-settings.md): Indefinite dancing animation, at the players current position
 * [Chair](interaction-settings.md): Sitting down, with a bit tighter entering / exiting animation, making it well suited for sitting with a table in front
 * [Lean](interaction-settings.md): Leaning over a railing, optionally also with smoking
 * [Netrunner Chair](interaction-settings.md): Leaned back sitting animation suited for netrunner / ripperdoc chairs
@@ -42,3 +42,4 @@ With Props: Interaction uses additional props, which need to be placed
 * [Basketball](interactions-with-props.md): Two different throwing animations, based on body stats (Either dunking or regular throw)
 * [Apartment Purchasing](apartment-purchasing.md): Allows for purchasing a property (Unlocking a door), including message from El Capitan, map markers, tutorial popup and more
 * [Appearance Changing](interaction-settings.md): Simple interaction that opens the CC Menu (Either Hairdresser, Ripperdoc or all options)
+* [Teleport](interaction-settings.md): Teleports the player to a specified NodeRef when used, will also preload the destination location, to avoid loading screens

@@ -478,6 +478,7 @@
     * [Interaction Settings](modding-guides/world-editing/native-interactions-framework/interaction-settings.md)
     * [Interactions with Props](modding-guides/world-editing/native-interactions-framework/interactions-with-props.md)
     * [Apartment Purchasing](modding-guides/world-editing/native-interactions-framework/apartment-purchasing.md)
+    * [Using the API](modding-guides/world-editing/native-interactions-framework/using-the-api.md)
   * [Infinite Randomizer Framework](modding-guides/world-editing/infinite-randomizer-framework/README.md)
     * [Variant Pool](modding-guides/world-editing/infinite-randomizer-framework/variant-pool.md)
     * [Category](modding-guides/world-editing/infinite-randomizer-framework/category.md)
