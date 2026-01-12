@@ -6,8 +6,8 @@ description: Plugin error messages and how to resolve them
 
 ## Summary
 
-**Published:** Apr 19 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Apr 19 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** Apr 19 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Apr 19 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will tell you how to resolve error messages from the [.](./ "mention").
 
@@ -50,9 +50,27 @@ You're trying to export something, but you haven't selected any meshes. Select e
 
 <figure><img src="../../../.gitbook/assets/image (405).png" alt=""><figcaption></figcaption></figure>
 
+## Degenerate Geometry
+
+Some issues with the geometry can prevent mesh import in WolvenKit.
+
+### Zero Faces
+
+Faces so tiny that their surface area is 0 (also [bad for performance](../../3d-modelling/on-4k-textures-and-high-poly-meshes.md#quad-overdraw)). To get rid of them, do one of the following:&#x20;
+
+#### Fix on export
+
+You can check the "Fix" box in the export dialogue
+
+#### Degenerate Dissolve
+
+Select Mesh -> Clean Up -> Degenerate Dissolve. This will collapse faces and edges without a surface.
+
+<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Mesh -> Clean Up -> Degenerate Dissolve (Blender 4.2 - 5.0)</p></figcaption></figure>
+
 ## Meshes must have UV layers
 
-For Cyberpunk material assignments to work, your mesh must have UV maps.&#x20;
+For Cyberpunk material assignments to work, your mesh must have UV maps.
 
 {% hint style="info" %}
 For more information on this, check [uv-mapping-texturing-a-3d-object.md](../../materials/uv-mapping-texturing-a-3d-object.md "mention").
@@ -80,7 +98,7 @@ You have vertex groups in your mesh that don't have a corresponding bone in the 
 
 ## Armature missing
 
-The armature (rig, skeleton) is the thing that makes your mesh move in-game.&#x20;
+The armature (rig, skeleton) is the thing that makes your mesh move in-game.
 
 If your mesh isn't supposed to move, check [#amm-props-you-dont-need-an-armature](wkit-blender-plugin-error-messages.md#amm-props-you-dont-need-an-armature "mention")
 
@@ -99,13 +117,13 @@ You should have an armature in your .blend file because you're importing over an
 Open the `Modifiers` tab (the orange wrench) and repeat the following steps for each mesh:
 
 1. Make sure that there is exactly one `Armature` modifier present. If there is none, click `Add Modifier` and add one.
-2. Click into `Object` and select the armature that your mesh is parented to.&#x20;
+2. Click into `Object` and select the armature that your mesh is parented to.
 
 <figure><img src="../../../.gitbook/assets/blender_addon_select_armature.png" alt="" width="345"><figcaption></figcaption></figure>
 
 ## Each submesh must have less than 65,535 vertices
 
-### If your submesh has >= 65,535 vertices&#x20;
+### If your submesh has >= 65,535 vertices
 
 You need to **reduce the vertex count.**
 
