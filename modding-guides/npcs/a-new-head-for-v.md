@@ -71,7 +71,7 @@ You can consult [cheat-sheet-head](../../for-mod-creators-theory/references-list
 
 1. [Add](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects) **all** morphtarget files for your body gender to your Wolvenkit project:
 
-<table><thead><tr><th width="147">body gender</th><th>Asset Browser search query</th></tr></thead><tbody><tr><td>fem</td><td><code>base\characters\head\player_base_heads\player_female_average > .morphtarget</code></td></tr><tr><td>masc</td><td><code>base\characters\head\player_base_heads\player_man_average > .morptharget</code></td></tr></tbody></table>
+<table><thead><tr><th width="147">body gender</th><th>Asset Browser search query</th></tr></thead><tbody><tr><td>fem</td><td><code>base\characters\head\player_base_heads\player_female_average > .morphtarget</code></td></tr><tr><td>masc</td><td><code>base\characters\head\player_base_heads\player_man_average > .morphtarget</code></td></tr></tbody></table>
 
 {% hint style="danger" %}
 Make sure to include **all** morphtargets in the folder: cyberware, tattoos, scars, and for mascV, beards.
