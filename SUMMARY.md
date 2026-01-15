@@ -288,6 +288,7 @@
     * [ItemAdditions: Dynamic Appearances](modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/README.md)
       * [Dynamic Appearances: fine-tuning visibility conditions](modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/dynamic-appearances-fine-tuning-visibility-conditions.md)
       * [Dynamic appearances: Understanding the process](modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/dynamic-appearances-understanding-the-process.md)
+      * [Dynamic Appearances: Adding custom hat hairs](modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/dynamic-appearances-adding-custom-hat-hairs.md)
     * [ItemAdditions: files from scratch](modding-guides/items-equipment/adding-new-items/adding-new-items-files-from-scratch.md)
     * [Different equipment slots](modding-guides/items-equipment/adding-new-items/different-equipment-slots.md)
     * [Your own Atelier Store](modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md)
