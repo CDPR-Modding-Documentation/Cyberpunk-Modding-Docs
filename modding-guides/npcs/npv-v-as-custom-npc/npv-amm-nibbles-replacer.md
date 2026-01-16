@@ -278,7 +278,7 @@ Alternatively, you can search "Items." in the Tweak Browser in Wolvenkit and fin
 
 ### My NPV isn't showing up in Photomode!
 
-* Make sure that you have [PhotomodeEx](https://www.nexusmods.com/cyberpunk2077/mods/18839) installed. (As of Aug 9 2025, the mod is not yet up-to-date for 2.3, but psi is working on it)
+* Make sure that you have [PhotomodeEx](https://www.nexusmods.com/cyberpunk2077/mods/18839) installed.
 * For updates from <= 2.2: Disable AMM's "Photomode Enhancements" in the AMM settings
 * Check the [TweakXL log](../../../for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md#a-list-of-framework-logfiles) and search for your yaml's file name to see if there are any errors. If there are, use [yamllint](https://www.yamllint.com/) to fix them.
 * Check the [ArchiveXL.log](../../../for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md#a-list-of-framework-logfiles) and search for your yaml's file name to see if there are any errors. If there are, compare your .yaml file against the template and make sure that the sections' indent is matching. You can also try and use [yamllint](https://www.yamllint.com/) to fix them.
