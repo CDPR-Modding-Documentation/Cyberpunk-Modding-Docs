@@ -8,11 +8,13 @@ description: How does load order work in Cyberpunk?
 
 **Written & Published**: Nov 22, 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
+**Last documented update:** January 20th, 2026 by [minnierylands](https://app.gitbook.com/u/VSIYzNHUyRPaBCk2ExHhQzpPfo82 "mention")
+
 This page will explain to you what Load Order is and how it works, then tell you how to influence it.
 
 ## TL;DR
 
-{% hint style="info" %}
+{% hint style="danger" %}
 You're not supposed to manage load order conflicts. If you ever feel the need to do that, a modder fucked up.&#x20;
 {% endhint %}
 
@@ -60,9 +62,13 @@ If you change the load order by renaming a file, it is suggested to indicate sai
 In this case if the mod is named "**Backbreaker Boobs"**, you could change it's name in the manager to **"Backbreaker Boobs - renamed to load before Backpain is a myth"**. \
 This helps keep an overview about changed file names and load order and minimises confusion later on when adding more mods.&#x20;
 
-{% hint style="warning" %}
-Note: If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file. If you don't want to readjust the order after every single new mod install delete this file.
+{% hint style="danger" %}
+#### Note: If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file. **Delete this file and save yourself from a world of pain.**
+
+**If you really need to change where a mod loads, change the name of the file.**
 {% endhint %}
+
+
 
 <details>
 

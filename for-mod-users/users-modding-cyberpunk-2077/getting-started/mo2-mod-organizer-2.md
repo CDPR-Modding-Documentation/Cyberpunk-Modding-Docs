@@ -4,9 +4,11 @@ description: How to use MO2 - it's that simple
 
 # MO2 (Mod Organizer 2)
 
+## Summary
+
 **Last documented update:** May 19 2025 by **MyNameIsSpirits**
 
-MO2 (**Mod Organizer 2**, [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) | [Github](https://github.com/ModOrganizer2/modorganizer/releases)) is a free, widely-used mod manager, especially popular for Bethesda games like Skyrim or Fallout. It fully supports **Cyberpunk 2077** and is praised for its ease of use.
+MO2 (**Mod Organizer 2**, [Nexus](https://www.nexusmods.com/skyrimspecialedition/mods/6194?tab=files) | [Github](https://github.com/ModOrganizer2/modorganizer/releases)) is a free, widely-used mod manager, especially popular for Bethesda games. It also fully supports **Cyberpunk 2077**.
 
 Using MO2 keeps your base game directory untouched and allows for easy mod installation, uninstallation, and updating. Additionally, you can create different profiles for mod configurations.
 
@@ -16,28 +18,36 @@ If you need further help with MO2 beyond this guide, feel free to ask for assist
 
 ## **Before we start...**
 
-{% hint style="info" %}
+{% hint style="warning" %}
 **MO2 will not play nice with manually installed mods - remove them.**
 {% endhint %}
 
-MO2 keeps all of your mods in a separate location from Cyberpunk's base game directory: **however,** when you launch Cyberpunk through MO2, it will load mods from both MO2 **and** the game folders.
+MO2 keeps all your mods in a location separate from Cyberpunk's base game directory. When you launch Cyberpunk through MO2, **it will load mods from both MO2 and the game folders**.
 
 It's best to let MO2 handle all of your mods and leave the base game directory clean.
 
-#### But I have so many mods to uninstall!
+<details>
 
-You don't need to go through your folders and manually delete all of your mods, nor should you reinstall the entire game. We have a handy [mod remover script](https://www.nexusmods.com/cyberpunk2077/mods/8597) (courtesy of our dear manavortex) that will automatically do it for you. After running it and validating your files, you will have a 100% clean installation of the game **and** a backup folder of the mods it removed, in case you change your mind about MO2 and want those mods back.
+<summary><strong>But I have so many mods to uninstall!</strong></summary>
+
+You don't need to manually delete all of your mods, nor should you reinstall the entire game.&#x20;
+
+We have a handy [mod remover script](https://www.nexusmods.com/cyberpunk2077/mods/8597) (courtesy of our dear manavortex) that will automatically do it for you.
+
+After running it and validating your files, you will have a 100% clean installation of the game **and** a backup folder of the mods it removed, in case you change your mind about MO2 and want those mods back.
+
+</details>
 
 {% hint style="info" %}
-I'll say it again: don't just reinstall the game. You'll be wasting your time. Use the mod remover.
+TL;DR: Don't reinstall the game. You'll be wasting your time. Use the [mod remover](https://www.nexusmods.com/cyberpunk2077/mods/8597).
 {% endhint %}
 
-### **Download and Install MO2**
+## **Download and Install MO2**
 
 1. Download MO2 from either [Nexus Mods](https://www.nexusmods.com/skyrimspecialedition/mods/6194) (yes, Skyrim Nexus) or [GitHub](https://github.com/Modorganizer2/modorganizer/releases)
 2. Install MO2:
-   * When installing, choose either the **Global Instance** option (recommended for multiple games)...
-   * ...or choose **Portable Instance** if you want a separate installation of MO2 for each game.
+   * When installing, choose either the **`Global Instance`** option (recommended for multiple games)...
+   * ...or choose **`Portable Instance`** if you want a separate installation of MO2 for each game.
 
 {% hint style="danger" %}
 **Do not install MO2 inside Cyberpunk's directory!** This has been confirmed to cause issues.
@@ -55,7 +65,7 @@ I'll say it again: don't just reinstall the game. You'll be wasting your time. U
 ### Installing CET and Red4Ext (the script extenders)
 
 {% hint style="warning" %}
-You can either install these mods **manually**, or install Zash's plugin update (see [#plugin-installation-guide](mo2-mod-organizer-2.md#plugin-installation-guide "mention"))
+You can either install these mods **manually**, or install Zash's plugin update (see ) [#script-extenders-plugin-installation-guide](mo2-mod-organizer-2.md#script-extenders-plugin-installation-guide "mention")
 {% endhint %}
 
 #### Script extenders: Manual install
@@ -75,7 +85,9 @@ If you would rather use the (experimental) plugin, read [#script-extenders-plugi
 If you would rather install the mods by hand, read [#script-extenders-manual-install](mo2-mod-organizer-2.md#script-extenders-manual-install "mention")instead.
 {% endhint %}
 
-There exists a plugin for MO2 that will allow you to install CET and RED4ext the same way as any other mod (i.e. not manually). This is nice if you prefer to keep all of your mods within MO2's mod list, but it is an optional process. If you don't care about having CET and RED4ext installed in MO2, then I would recommend you to install them manually as detailed above. Otherwise, read on.
+There _is_ a plugin for MO2 that will allow you to install CET and RED4ext through MO2. This is nice if you prefer to keep all of your mods within MO2's mod list, but it is an optional process.&#x20;
+
+If you don't care about having CET and RED4ext installed in MO2, then I would recommend you to install them manually as detailed above. Otherwise, read on.
 
 I'm going to stress this as hard as I can: this plugin is not part of the main MO2 build and is therefore prone to bugs. I haven't had any issues with it so far, and I was able to guide someone who'd never even heard of MO2 previously, and they also have not experienced any issues.
 
@@ -134,7 +146,7 @@ If you have mods from external sources:
 ### Launching the Game
 
 {% hint style="warning" %}
-**When using MO2 as a mod manager, you always have to launch the game through MO2.**
+#### **When using MO2 as a mod manager, you always have to launch the game through MO2.**
 {% endhint %}
 
 1. **Always Launch the Game through MO2**:

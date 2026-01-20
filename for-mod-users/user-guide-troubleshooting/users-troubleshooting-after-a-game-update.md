@@ -4,15 +4,19 @@ description: The game just updated, and you're crashing. Now what?
 
 # Users: Troubleshooting after a game update
 
-## Overview
+## Summary
 
-Who doesn't know it? Your modded game is working, then there's an update, and from one moment to the next everything is a smoking crater. Unfortunately, that's normal: as long as you're living on earth, things fall down when you let go of them, and game updates break mods.&#x20;
+**Last documented update:** January 20th, 2026 by [minnierylands](https://app.gitbook.com/u/VSIYzNHUyRPaBCk2ExHhQzpPfo82 "mention")
+
+Who doesn't know it? Your modded game is working, then there's an update, and from one moment to the next everything is a smoking crater. Unfortunately, that's normal: as long as you're living on earth, things fall down when you let go of them, and game updates break mods.
 
 This page will give you a brief overview on what you can do in the situation described above by linking to the corresponding sections of the [troubleshooting guide](./).
 
-{% hint style="info" %}
+{% hint style="warning" %}
 If you are on Linux and have exhausted these options, make sure to double-check the [launch options](../users-modding-cyberpunk-2077/modding-on-linux.md), as Steam sometimes resets these between updates.
 {% endhint %}
+
+***
 
 ## What can I do?
 
@@ -22,8 +26,10 @@ The first step is to update your core frameworks. Check every mod on [this page]
 
 You're too fast, choomba: modders haven't gotten around to updating the frameworks yet. That leaves you with two options:
 
-* [remove all mods](./#the-nuclear-option-a-clean-install) and play vanilla until the updates arrive
-* [downgrade your game](../users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md#downgrading)
+* [Remove all mods](./#removing-all-your-mods) and play vanilla until the updates arrive
+* [Downgrade your game](../users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md#downgrading)
+
+***
 
 ### I updated my frameworks, but the game is still crashing!
 
@@ -33,13 +39,15 @@ You can try to temporarily disable any mod from the **script section** of[ known
 
 Your game and the core frameworks need to be **version-compatible**. You can make sure of that by
 
-1. [resetting your install](./#is-there-a-shortcut)
-2. One by one, [installing all of the frameworks you need](./#a-fresh-install-starting-from-scratch)
-3. [Restoring your mods from the backup](./#adding-back-your-mods)
+1. [Resetting your install](./#removing-all-your-mods)
+2. [One by one, installing all of the frameworks you need](../../for-mod-creators-theory/core-mods-explained/#tl-dr-what-do-i-download)
+3. Restoring your mods from the backup. [You can check here to see where each type of mod lives.](../users-modding-cyberpunk-2077/#overview-of-mod-folders)
 
 {% hint style="success" %}
-Make sure to follow the instructions carefully – they will prevent you from running into a bunch of other issues.&#x20;
+Make sure to follow the instructions carefully – they will prevent you from running into a bunch of other issues.
 {% endhint %}
+
+***
 
 ## What other options do I have?
 
@@ -47,13 +55,13 @@ If these instructions didn't help you, there probably are no updates yet and you
 
 Of course, you can always
 
-* look around in the [troubleshooting guide](./) or use your browser's search function there (Ctrl+F and type)
-* check a [list of known problem children](./#finding-the-broken-mod-known-problem-children) and disable them for now
-* [further troubleshoot](./#game-doesnt-start-there-is-an-error-arbout-scripts) your installation
+* Look around in the [troubleshooting guide](./) or use your browser's search function there (Ctrl+F and type)
+* Check a [list of known problem children](./#finding-the-broken-mod-known-problem-children) and disable them for now
+* [Further troubleshoot](./#the-game-doesnt-launch) your installation
 * Reset your installation:
-  * Fall back to a clean state ([via mod](https://www.nexusmods.com/cyberpunk2077/mods/8597/) | [precise](./#is-there-a-shortcut) | [nuclear: fast](./#the-nuclear-option-a-clean-install) | [nuclear: very fast](./#modular-minimal-download-download-less-than-1gb))
-  * Enable all [core mods](users-troubleshooting-after-a-game-update.md#starting-from-scratch) and make sure that the game starts
-  * Re-enable your other mods (check [bisect](users-troubleshooting-after-a-game-update.md#finding-the-broken-mod-bisecting) for how to do it fastest)
+  * [Fall back to a clean state](./#removing-all-your-mods)
+  * Enable all [core mods](../../for-mod-creators-theory/core-mods-explained/#tl-dr-what-do-i-download) and make sure that the game starts
+  * Re-enable your other mods ([check the bisect guide for how to do it fastest](./#bisecting))
 * Find help on [Discord ](https://discord.gg/redmodding)in #mod-troubleshooting
 
 {% hint style="warning" %}

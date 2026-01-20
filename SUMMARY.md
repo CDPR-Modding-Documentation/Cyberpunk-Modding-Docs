@@ -21,15 +21,15 @@
     * [Commands](for-mod-users/users-modding-cyberpunk-2077/redmod/commands/README.md)
       * [Deploy](for-mod-users/users-modding-cyberpunk-2077/redmod/commands/deploy.md)
     * [Change logs](for-mod-users/users-modding-cyberpunk-2077/redmod/change-logs.md)
-  * [Downgrading / Preventing auto-updates](for-mod-users/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
+  * [Downgrading / Preventing Auto-Updates](for-mod-users/users-modding-cyberpunk-2077/users-downgrading-preventing-auto-updates.md)
   * [Modding on Linux](for-mod-users/users-modding-cyberpunk-2077/modding-on-linux.md)
   * [Modding on macOS](for-mod-users/users-modding-cyberpunk-2077/modding-on-macos.md)
 * [Troubleshooting](for-mod-users/user-guide-troubleshooting/README.md)
   * [Users: Troubleshooting after a game update](for-mod-users/user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md)
-  * [Users: troubleshooting requirements](for-mod-users/user-guide-troubleshooting/requirements-explained.md)
+  * [Users: Troubleshooting Requirements](for-mod-users/user-guide-troubleshooting/requirements-explained.md)
   * [Users: Troubleshooting CET](https://wiki.redmodding.org/cyber-engine-tweaks/getting-started/installing/troubleshooting)
-  * [Finding and reading log files](for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md)
-  * [Broken mods: How to help](for-mod-users/user-guide-troubleshooting/broken-mods-how-to-help.md)
+  * [Finding and Reading Log Files](for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md)
+  * [Broken Mods: How To Help](for-mod-users/user-guide-troubleshooting/broken-mods-how-to-help.md)
 
 ## For Mod Creators: Theory
 
