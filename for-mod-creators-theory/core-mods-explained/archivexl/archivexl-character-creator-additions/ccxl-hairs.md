@@ -93,6 +93,19 @@ If you have more than one .mesh file, for every additional mesh, complete the fo
 4. Optional: Component uniqueness
    1. If you are running into issues, you can assign unique `id`s to all of your components. Go through them one by one, select their `id` attribute, and select "`Generate new CRUID`" from the context menu.
 
+### My hair mesh is not animated
+
+If one or more of your hair meshes do not have physics (i.e. lacks a corresponding rig + animgraph and has no "dangle" bones), you can follow these steps:
+
+1. Delete the `entAnimatedComponent` "hair\_dangle" corresponding to this mesh by right clicking on it and selecting "Delete Item in Array/Buffer"
+2. Expand the  `entSkinnedMeshComponent` for the mesh and change the following:
+   1. Under `parentTransform`, change the `bindName` to `root`
+   2. Under `skinning`, change the `bindName` to `root`
+
+Once done, the .app should look like this:
+
+<figure><img src="../../../../.gitbook/assets/nophys-app.png" alt=""><figcaption></figcaption></figure>
+
 ### How does this work?
 
 Thanks to ArchiveXL magic, your .app file needs **only one appearance**. All other appearances will be extrapolated from it!
