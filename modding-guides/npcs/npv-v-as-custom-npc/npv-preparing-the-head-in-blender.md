@@ -234,6 +234,10 @@ This will overwrite already existing files, leaving you with a set of import-rea
 
 Now it's time to get them back into Wolvenkit.
 
+{% hint style="info" %}
+Before you import and apply these changes to your .mesh files, it's a good moment to go through:[fixing-eye-clipping-in-npvs-by-replacing-facial-rigs.md](../fixing-eye-clipping-in-npvs-by-replacing-facial-rigs.md "mention"), but this can be done later, if you are not sure.
+{% endhint %}
+
 1. Find the Import Tool (Tools -> Import Tool)
 2. Click "Import All". You shouldn't see any errors.
 3. You're done!
