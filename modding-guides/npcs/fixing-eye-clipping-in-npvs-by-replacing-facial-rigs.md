@@ -43,7 +43,7 @@ In your NPV **WolvenKit** project:
 * We are going to **re-import** these meshes later, so **export** them if you don't have them exported already.
 * Go to: **Tools** > **Script Manager** and add a new script:
 
-<figure><img src="../../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 * **Copy** this script into the editor, you just opened:
 
