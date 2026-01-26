@@ -76,7 +76,7 @@ You are creating a **patch file**, which will be used to change data in the orig
 
 ## Step 2: Rename your material(s)
 
-While the appearance name must be the same as in the original mesh, the appearance name must be different. Expand the material node and right-click on a material to change its name; this will update it in all places that need updating:
+While the appearance name must be the same as in the original mesh, the material name must be different. Expand the material node and right-click on a material to change its name; this will update it in all places that need updating:
 
 <figure><img src="../../../.gitbook/assets/AXL_patchmesh_rename_material.png" alt=""><figcaption></figcaption></figure>
 
