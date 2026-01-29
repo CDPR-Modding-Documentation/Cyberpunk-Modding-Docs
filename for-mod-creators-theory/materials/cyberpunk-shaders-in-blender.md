@@ -1,25 +1,26 @@
-# Cyberpunk Shaders in Blender
+# Cyberpunk Shaders in Blender - Baking to PBR
 
 #### Summary
 
-**Published:** Jan 20 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Feb 19 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** Jan 20 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Feb 19 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will teach you how to get Cyberpunk materials into Blender, **baking** the materials to textures. You can use the results for e.g. porting the items to Unreal Engine (these steps won't be covered here).
 
 ### Wait, this is not what I want!
 
 * If this is your first time in Blender, check out [blender-getting-started](../3d-modelling/blender-getting-started/ "mention")
+* If you want to learn more about [configuring-materials](configuring-materials/ "mention"), check the wiki section
 
 ## How to get Cyberpunk Shaders into Blender?
 
-Most Cyberpunk shaders are procedurally generated from [mlsetups](multilayered/#what-is-the-mlsetup) and [mlmasks](multilayered/#what-is-the-mlmask). As such, there aren't any textures that you can import.&#x20;
+Most Cyberpunk shaders are procedurally generated from [mlsetups](multilayered/#what-is-the-mlsetup) and [mlmasks](multilayered/#what-is-the-mlmask). As such, there aren't any textures that you can import.
 
 So how is everyone doing it?
 
-This is where the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention") comes in:&#x20;
+This is where the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention") comes in:
 
-* On [export](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit), Wolvenkit creates a `.material.json` file containing the `.mesh` file's [material setup](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment) in a machine-readable form.&#x20;
+* On [export](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit), Wolvenkit creates a `.material.json` file containing the `.mesh` file's [material setup](../files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment) in a machine-readable form.
 * When [importing a .glb](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender) into Blender, the plugin reads this file and automatically generates a list of materials. After selecting a mesh, you can see all available options in the Materials tab:
 
 <figure><img src="../../.gitbook/assets/blender_materials_tab.png" alt=""><figcaption><p>You need to select a mesh first</p></figcaption></figure>
@@ -42,7 +43,7 @@ To change the assigned material, complete the following steps:
 ### Video guide
 
 {% embed url="https://youtu.be/zLtgWcygYII" %}
-by Simarilius, thank you <3&#x20;
+by Simarilius, thank you <3
 {% endembed %}
 
 {% embed url="https://www.youtube.com/watch?v=NjkdYzLZ7WQ" %}

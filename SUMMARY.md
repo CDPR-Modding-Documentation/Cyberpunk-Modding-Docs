@@ -242,7 +242,7 @@
     * [Multilayered: Previews](for-mod-creators-theory/materials/multilayered/multilayered-previews.md)
     * [Blending materials for more gooder colours](for-mod-creators-theory/materials/multilayered/blending-materials-for-more-gooder-colours.md)
   * [Materials: troubleshooting](for-mod-creators-theory/materials/materials-troubleshooting.md)
-  * [Cyberpunk Shaders in Blender](for-mod-creators-theory/materials/cyberpunk-shaders-in-blender.md)
+  * [Cyberpunk Shaders in Blender - Baking to PBR](for-mod-creators-theory/materials/cyberpunk-shaders-in-blender.md)
   * [UV Mapping: texturing a 3d object](for-mod-creators-theory/materials/uv-mapping-texturing-a-3d-object.md)
 * [Tweaks](for-mod-creators-theory/tweaks/README.md)
   * [TweakDB: Game database](for-mod-creators-theory/tweaks/tweaks/README.md)

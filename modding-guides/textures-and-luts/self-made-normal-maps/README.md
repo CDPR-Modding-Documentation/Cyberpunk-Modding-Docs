@@ -14,8 +14,7 @@ This guide will teach you how to create a custom normal map.
 ### Wait, this isn't what I want!
 
 * For general information, check [normal-maps-in-cyberpunk.md](../../../for-mod-creators-theory/materials/textures/normal-maps-in-cyberpunk.md "mention")
-* For a different guide about this, check this [Google Doc](https://drive.google.com/file/d/11Z-SYF28nVpF_ZbkIJ_KHCetJK7EcT_X/view) by Тима (Teem)#3118
-* For a guide on Cyberpunk materials in Blender, see [cyberpunk-shaders-in-blender.md](../../../for-mod-creators-theory/materials/cyberpunk-shaders-in-blender.md "mention")
+* Or maybe you want to know about  [cyberpunk-shaders-in-blender.md](../../../for-mod-creators-theory/materials/cyberpunk-shaders-in-blender.md "mention")
 * If you want to create a `.mlmask` instead, see [custom-multilayermasks.md](../custom-multilayermasks.md "mention")
 * Otherwise, you can use the wiki's search function — it uses an LLM and is actually quite useful.
 
