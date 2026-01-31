@@ -40,14 +40,26 @@ If you would rather edit other objects: don't. [Remove the original](world-editi
 
     <figure><img src="../../../.gitbook/assets/removingFoliageTextre" alt=""><figcaption><p>Find the one which is a BW texture, and the corresponding CBitMap texture one, which is named <code>...foliage.xbm</code></p></figcaption></figure>
 
-
-
     <figure><img src="../../../.gitbook/assets/removingFoliageExtract" alt=""><figcaption><p>Right-Click the CBitMapTexture one, and select extract</p></figcaption></figure>
 
 {% hint style="success" %}
 This texture is used as a mask, to block foliage spawned at runtime based on various other embedded masks, appearing in certain spots
 
 Try and figure out which part of the texture corresponds to what part of the world
+{% endhint %}
+
+{% hint style="warning" %}
+Some terrain cell meshes (mostly out of bounds) do not have a foliage mask by default.\
+If this is the case :
+
+* Open a cell that already has a foliage mask.
+* Right-click and copy the following entry :\
+  **preloadLocalMaterialInstances → Values → CKeyValuePair MaskFoliage**
+* Paste this item into the target cell in its **preloadLocalMaterialInstances → Values**.
+
+You may also use the source cell’s **foliage CBitMapTexture** as a template before continuing with the tutorial.
+
+**Important:** remember to set a custom path for your `.xbm`.
 {% endhint %}
 
 ## Finding the right part
