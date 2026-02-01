@@ -437,6 +437,7 @@
   * [Vehicle Destruction](modding-guides/vehicles/vehicle-destruction.md)
   * [For Reference: Exhaust Backfire](modding-guides/vehicles/for-reference-exhaust-backfire.md)
   * [Changing Handling & Speed For Modded Vehicles](modding-guides/vehicles/changing-handling-and-speed-for-modded-vehicles.md)
+  * [inkWidgets On Vehicles](modding-guides/vehicles/inkwidgets-on-vehicles.md)
 * [World Editing](modding-guides/world-editing/README.md)
   * [World Builder](modding-guides/world-editing/object-spawner/README.md)
     * [Usage and Features](modding-guides/world-editing/object-spawner/usage-and-features.md)

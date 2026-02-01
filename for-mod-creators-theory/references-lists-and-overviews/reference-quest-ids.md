@@ -10,7 +10,7 @@ The list below has the quests by type, with name, for the full journal data that
 _Last updated: 20 August 2025_
 {% endhint %}
 
-{% file src="../../.gitbook/assets/journal-quest-data (2).json" %}
+{% file src="../../.gitbook/assets/journal-quest-data (1).json" %}
 
 ## Main Quests
 
@@ -166,8 +166,7 @@ _Last updated: 20 August 2025_
 {% endcode %}
 
 \
-\
-
+\\
 
 ## Minor Quests
 
@@ -259,8 +258,7 @@ _Last updated: 20 August 2025_
 ```
 {% endcode %}
 
-\
-
+\\
 
 ## Street Stories
 
@@ -487,8 +485,6 @@ _Last updated: 20 August 2025_
 ```
 {% endcode %}
 
-
-
 ## Courier Quests
 
 {% code fullWidth="true" %}
@@ -498,4 +494,3 @@ _Last updated: 20 August 2025_
 [CourierSideQuest] ep1/quests/sandbox_activities/courier_outro_dock = Baby Let Me Take You
 ```
 {% endcode %}
-
