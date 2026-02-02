@@ -117,7 +117,8 @@ To delete an entry, phase or period, simply right click its header
 
     <figure><img src="../../../.gitbook/assets/aiSpotMarkingExample.png" alt="" width="322"><figcaption><p>Example of marking an AISpot, should be done to a group of multiple spots</p></figcaption></figure>
 
-    ### Full example with SpotNodeRef's
+### Full example with SpotNodeRef's
+
 * This is a full example of having either one or two Judy's spawn in specified spots, depending on the time
 
 <figure><img src="../../../.gitbook/assets/fullJudyExampleSpotNodeRefs" alt=""><figcaption></figcaption></figure>
@@ -131,6 +132,12 @@ To delete an entry, phase or period, simply right click its header
 {% hint style="success" %}
 You can right-click any entry/phase/period, to delete or duplicate it
 {% endhint %}
+
+## Randomization
+
+* It is possible to enable random selection of workspots using both direct **NodeRefs** and **Markings**.\
+  To do so, set a lower NPC **Quantity** than the total number of available workspot NodeRefs/Markings.
+* For example, if an entry has a **Quantity** of `1` but references multiple workspot NodeRefs, one of those workspots will be selected at random each time the sector is loaded.
 
 ## Finishing up
 

@@ -44,6 +44,11 @@ You **must** assign a unique NodeRef to each AISpot, in order for it to be usabl
 
 ### Previewing Options
 
+{% hint style="info" %}
+It is important to be mindful of the **Supported Rigs** and the preview NPC used.\
+If you preview a workspot with a different rig than the NPC(s) assigned to it, clipping or other visual issues may occur.
+{% endhint %}
+
 * To know what rigs a workspot supports, take a look at the `AI Spot -> Previewing Options -> Supported Rigs` header
 
 <figure><img src="../../../.gitbook/assets/aiSpotSupportedRigs" alt="" width="301"><figcaption><p>Example AI Spot, and its workspot's supported rigs</p></figcaption></figure>
@@ -52,6 +57,13 @@ You **must** assign a unique NodeRef to each AISpot, in order for it to be usabl
   * A list of all NPC records can be found in World Builder `Entity -> Record` (Search for `Character.`)
 * Additionally, you can change the speed of the animation during the preview
   * This is helpful since each time you move the spot, the animation will restart
+
+{% hint style="danger" %}
+At this time, some workspots do not display their associated props in preview, but they may appear correctly once compiled.\
+It is recommended to verify desired prop-related workspots by compiling the archive.
+
+**Example :** children playing soccer will not show their footballs in preview, but the props will appear after compilation.
+{% endhint %}
 
 ### Spot Options
 
