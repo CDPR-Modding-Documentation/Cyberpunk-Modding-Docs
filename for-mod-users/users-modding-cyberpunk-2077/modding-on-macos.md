@@ -34,8 +34,9 @@ Be sure to download `redscript-vX.X.XX-macos.zip` , NOT `redscript-cli-aarch64-d
 
 Copy the contents of the zip/folder to your Cyberpunk 2077 install folder (the one with `Cyberpunk2077.app`). The default locations can be found here:
 
+* GOG: `/Applications/Cyberpunk 2077/`
 * Steam: `~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/`
-* Non-Steam (e.g. GOG or AppStore): `/Applications/Cyberpunk 2077/`
+* App Store: `/Applications/Cyberpunk2077.app/Contents/Data/`
 {% endstep %}
 
 {% step %}
@@ -43,16 +44,22 @@ Copy the contents of the zip/folder to your Cyberpunk 2077 install folder (the o
 
 Open the Terminal app and run the following command to tell MacOS redscript is safe to run:
 
+* GOG:
+
+```bash
+xattr -r -d com.apple.quarantine "/Applications/Cyberpunk 2077/engine/tools/"
+```
+
 * Steam:
 
 ```bash
 xattr -r -d com.apple.quarantine "~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/engine/tools/"
 ```
 
-* Non-Steam (e.g. GOG or AppStore):
+* App Store:
 
 ```bash
-xattr -r -d com.apple.quarantine "/Applications/Cyberpunk 2077/engine/tools/"
+xattr -r -d com.apple.quarantine "/Applications/Cyberpunk2077.app/Contents/Data/engine/tools/"
 ```
 {% endstep %}
 
@@ -67,8 +74,9 @@ Find the latest release on the [GitHub Releases](https://github.com/risner/cyber
 
 Copy the contents of the zip/folder to your Cyberpunk 2077 install folder (the one with `Cyberpunk2077.app`). The default locations can be found here:
 
+* GOG: `/Applications/Cyberpunk 2077/`
 * Steam: `~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/`
-* Non-Steam (e.g. GOG or AppStore): `/Applications/Cyberpunk 2077/`
+* App Store: `/Applications/Cyberpunk2077.app/Contents/Data/`
 {% endstep %}
 
 {% step %}
@@ -86,7 +94,19 @@ The MacOS build of Cyberpunk 2077 will not start redscript automatically like th
 
 ### 1. Link bash script to your game client
 
-_a) Steam:_
+_a) GOG:_
+
+1. Launch GOG Galaxy → **Cyberpunk 2077 → More → Manage Installation → Configure → Add another executable / arguments**
+2.  Locate the game path and ensure to select the script
+
+    ```
+    /Applications/Cyberpunk 2077/launch_modded.sh
+    ```
+3. Press **Select an executable to link,** ensure **Default executable** is **checked** and press **OK**.
+
+Now GOG Galaxy will run your script whenever you press **Play**.
+
+_b) Steam:_
 
 **TODO:** Steam is tricky one, as it doesn't allow to pick custom executable. Main idea is to rename original executable `Cyberpunk2077` to `Cyberpunk2077_real`, then renaming `launch_modded.sh` script to executable-like file, adjusting the code to call actual executable after redscript is compiled and finally making it recognize-able for macOS as such. If you find it hard, use option two or three, by running it manually with every new mod or every time.
 
@@ -96,7 +116,7 @@ _a) Steam:_
 mv "~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077" "~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077_real"
 ```
 
-2. Using preferable text editor (use `Text Edit`, if you don't have any), adjust `launch_modded.sh` to our changes:
+2. Using preferable text editor (use `Text Edit`, if you don't have any), adjust `launch_modded.sh` to these changes:
 
 * Locate following line:
 
@@ -123,21 +143,36 @@ mv "~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/launch_m
 <pre class="language-bash"><code class="lang-bash"><strong>chmod +X "~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077"
 </strong></code></pre>
 
-_b) GOG:_
+_c) App Store_
 
-1. Launch GOG Galaxy → **Cyberpunk 2077 → More → Manage Installation → Configure → Add another executable / arguments**
-2.  Locate the game path and ensure to select the script
+Some values within `launch_modded.sh` will need to be edited for it to launch the game correctly.
 
-    ```
-    /Applications/Cyberpunk 2077/launch_modded.sh
-    ```
-3. Press **Select an executable to link,** ensure **Default executable** is **checked** and press **OK**.
+1. Adjust `launch_modded.sh` to these changes using preferable text editor (use `Text Edit`, if you don't have any):
 
-Now GOG Galaxy will run your script whenever you press **Play**.
+* Locate following lines:
 
-c) App Store
+```bash
+"$game_dir/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077"
+```
 
-Manually launch the script every time or with every new mod installed.
+* Replace it with following:
+
+```bash
+"$game_dir/../MacOS/Cyberpunk2077"
+```
+
+2. Make sure it's executable:
+
+<pre class="language-bash"><code class="lang-bash"><strong>chmod +X "/Applications/Cyberpunk2077.app/Contents/Data/launch_modded.sh"
+</strong></code></pre>
+
+Be sure the script opens with Terminal by default, right click `launch_modded.sh` → Show info → Open with: → Select 'Terminal'
+
+3. _(Optional)_ Create a shortcut to open more easily
+
+```bash
+ln -s "/Applications/Cyberpunk2077.app/Contents/Data/launch_modded.sh" "/Applications/Cyberpunk 2077 Modded"
+```
 
 ### 2. Run the Included Bash Script to Start Cyberpunk 2077
 
