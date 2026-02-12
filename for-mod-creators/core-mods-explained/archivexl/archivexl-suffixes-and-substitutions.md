@@ -50,6 +50,8 @@ The suffix for the body is `Male` / `Female`, the ArchiveXL string substitution 
 
 ArchiveXL allows body modders to [register a custom body tag](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/), which can then be used for suffixes and for substitutions in dynamic variants. To learn more about this, check [archivexl-body-mods-and-refits](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/ "mention").
 
+For conditions, you will match on `&body=` with the body type in camel_case.
+
 {% hint style="info" %}
 You can check the current foot state by running the following command from CET:
 
@@ -135,7 +137,7 @@ For a hands-on example, see [archivexl-dynamic-conversion-guide.md](../../../for
 
 ## Substitutions
 
-Substitutions are a feature of **dynamic appearances** . They can only be used inside your `mesh_entity.ent`.
+Substitutions are a feature of **dynamic appearances**. They can only be used in specific files and fields, found [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions#which-substitutions-exist).
 
 Substitutions allow ArchiveXL to **load a different mesh** based on different circumstances.
 
