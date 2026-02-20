@@ -96,7 +96,7 @@ base\characters\entities\player\deformations_rigs_ma\player_man_fpp_deformations
 4. Here, we copy the values from Blender' s `BoneTransforms` tab.
 
 {% hint style="danger" %}
-X and Y is **flipped** inside of Wolvenkit compared to blender, so flip those values.
+Z and Y axes in Blender are **flipped** compared to Wolvenkit, so flip those values when inputting.
 {% endhint %}
 
 5. You need to do this for both sides of the body, so find the corresponding bone\
