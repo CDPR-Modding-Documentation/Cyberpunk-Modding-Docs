@@ -316,7 +316,7 @@ If you have [added the item](../../modding-guides/items-equipment/adding-new-ite
 
 ### My shadow mesh is always visible
 
-Check the `renderMask` attribute inside `heder / renderChunkInfos / index`_._ For shadow meshes, there shouldn't be anything but `MCF_RenderInShadows`.
+Check the `renderMask` attribute inside `renderResourceBlob / header / renderChunkInfos / index`_._ For shadow meshes, there shouldn't be anything but `MCF_RenderInShadows`.
 
 <figure><img src="../../.gitbook/assets/shadow_mesh.png" alt=""><figcaption></figcaption></figure>
 
