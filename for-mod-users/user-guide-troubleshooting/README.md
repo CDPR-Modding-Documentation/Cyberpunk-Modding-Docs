@@ -335,7 +335,7 @@ Redscript is quite good at telling you where to look for issues, but the mods it
 The pop-up mentions consulting the logs for more information. It can be helpful to double check if you have duplicate files, making sure you have script files for specific mods, or just for reference.&#x20;
 
 {% hint style="success" %}
-You can find the redscript log here: `r6/log/redscript_rCURRENT.log`
+You can find the redscript log here: `r6/logs/redscript_rCURRENT.log`
 {% endhint %}
 
 {% hint style="info" %}
