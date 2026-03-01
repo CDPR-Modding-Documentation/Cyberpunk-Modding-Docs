@@ -3,7 +3,7 @@
 ## Summary
 
 Published: Jan 20 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") and [island\_dancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
-Last documented edit: July 14 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention"), [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), [island\_dancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention"), [CyberVesna](https://app.gitbook.com/u/cmjyzwfGm7YaRhuU9Kyk4uTuE3Y2 "mention") and [Silverlags](https://app.gitbook.com/u/3GmqMieZ5BZ87uRqI3Y1Uj7tEHy1 "mention")
+Last documented edit: March 01 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will tell you how to use ArchiveXL to add hair to the character creator.
 
@@ -22,7 +22,7 @@ If you would rather understand what you're doing, please skip to [#step-1-deleti
 
 1. Download example project
 2. Add your `.mesh` file to the project
-3. Copy the `appearances`, `materialEntries`, and `localMaterialDefinitions` from the template mesh
+3. Copy the `appearances`, `materialEntries`, and `localMaterialBuffer.materials` from the template mesh
 4. Overwrite it with your own
 5. Overwrite the `.rig` and the `.animgraph` with your own, if you have them
 6. Adjust `.app` file entry
