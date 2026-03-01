@@ -8,7 +8,7 @@ This wiki page is about the .bk2 file format used in the game.
 
 ## TL;DR
 
-The .bk2 file format is used in many games including Cyberpunk 2077. It stands for Bink 2 and can be played and/or converted to regular video format or single frames using [RAD Video Tools](https://www.radgametools.com/bnkdown.htm).&#x20;
+The .bk2 file format is used in many games including Cyberpunk 2077. It stands for Bink 2 and can be played and/or converted to regular video format or single frames using [RAD Video Tools](https://www.radgametools.com/bnkdown.htm).
 
 ## How did I get there ?
 
@@ -21,9 +21,9 @@ I wanted some screenshot of a Cyberpunk ad to print as a poster for a friend. Th
 
 ## Getting the video files
 
-For example in this wiki page, I'll use the NiCola ad as an example. You will want to have a WolvenKit project created for easy access to the video file.&#x20;
+For example in this wiki page, I'll use the NiCola ad as an example. You will want to have a WolvenKit project created for easy access to the video file.
 
-In Cyberpunk, all the video files have the .bk2 extension. Thus, you can just search .bk2 in the search bar of the asset browser. Since I want the NiCola ad, I'll here search for `nicola > .bk2` (See [this wiki page](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files) for more about searching files).&#x20;
+In Cyberpunk, all the video files have the .bk2 extension. Thus, you can just search .bk2 in the search bar of the asset browser. Since I want the NiCola ad, I'll here search for `nicola > .bk2` (See [this wiki page](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files) for more about searching files).
 
 <figure><img src="../../../.gitbook/assets/Searching bk2.png" alt=""><figcaption></figcaption></figure>
 
@@ -45,10 +45,19 @@ Then, navigate to the .bk2 file and press on Convert a file (see screenshot)
 
 Then, in the opened window, you can configure the output, file format and location. You can then press convert on the right side of the screen.
 
-<figure><img src="../../../.gitbook/assets/Convert Bink.png" alt=""><figcaption></figcaption></figure>
 
-And now you have the video you want in the format you desire. You can also export individual frames if you want to!
+
+<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+
+It's best to use Bink2, as there is an additional byte offset step that needs to be adjusted for.
+
+## Byte Offset requirement
+
+Once your bk2 file has been created, you will need to edit the file with a hex editor. HxD is a good windows solution that is free. \
+The 4th byte will need to be changed to 6A and then save the file, ready for import into your mod.
+
+<figure><img src="../../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
 
 ## Closing words
 
-Now you have everything, if you want to know more about the Bink Converter you can watch [this video](https://www.youtube.com/watch?v=FUtSw5VsNzI). Everything here have been found in the Discord community after a quick search in there.&#x20;
+Now you have everything, if you want to know more about the Bink Converter you can watch [this video](https://www.youtube.com/watch?v=FUtSw5VsNzI). Everything here have been found in the Discord community after a quick search in there.
