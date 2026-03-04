@@ -6,10 +6,10 @@ description: How to add decals to existing items
 
 ## Summary
 
-**Published:** Jan 21 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Mar 21 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** Jan 21 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Mar 21 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will teach you how to add decals to existing items.&#x20;
+This guide will teach you how to add decals to existing items.
 
 {% hint style="info" %}
 You can find a [#video](adding-decals.md#video "mention") at the end of the guide (courtesy of Island Dancer).
@@ -21,7 +21,7 @@ It will walk you through the following:
 
 [#step-1-cutting-the-decal-mesh](adding-decals.md#step-1-cutting-the-decal-mesh "mention")
 
-1. Adding it to the [mesh entity](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity)
+1. Adding it to the [mesh entity](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity)
 2. Setting up the material
 
 ### Wait, this is not what I want!
@@ -39,7 +39,7 @@ It will walk you through the following:
 
 This guide assumes that you have an existing Wolvenkit project with your item and just want to add the decal mesh. If you don't have one, you can grab the template project from [archivexl-dynamic-variants](../adding-new-items/archivexl-dynamic-variants/ "mention").
 
-Inside your Wolvenkit project, you need an .xbm texture for your decal, and its .png export that we'll use for Blender. If you don't have a texture yet, you can&#x20;
+Inside your Wolvenkit project, you need an .xbm texture for your decal, and its .png export that we'll use for Blender. If you don't have a texture yet, you can
 
 1. add any .xbm to your project (and put it in a custom path)
 2. [export it to png](../../textures-and-luts/images-importing-editing-exporting.md#exporting-a-texture)
@@ -48,7 +48,7 @@ Inside your Wolvenkit project, you need an .xbm texture for your decal, and its 
 
 ## Step 1: Cutting the decal mesh
 
-For this guide, I will be using a sock mesh.&#x20;
+For this guide, I will be using a sock mesh.
 
 Start by [exporting your mesh](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit) from Wolvenkit and [importing it into Blender](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender). You should see something like this:
 
@@ -57,12 +57,12 @@ Start by [exporting your mesh](../../../for-mod-creators-theory/modding-tools/wo
 1. In the viewport, click on the submesh that you want to have the decal.
 
 {% hint style="info" %}
-&#x20;If you want it to span multiple submeshes, you should merge them into one submesh to cut from. Shift-click to select them all, then **duplicate** them (Hotkey: `Shift-D`) and **join** them together (Hotkey: `Ctrl+J`).
+If you want it to span multiple submeshes, you should merge them into one submesh to cut from. Shift-click to select them all, then **duplicate** them (Hotkey: `Shift-D`) and **join** them together (Hotkey: `Ctrl+J`).
 {% endhint %}
 
 2. Switch to Edit Mode (shortcut: `Tab`)
 3. Turn the viewport to the side (shortcut: `Numpad 3`)
-4. Turn on X-Ray mode (shortcut: `Alt+Z`). This lets you select right through the mesh, in my example, on both sides of the leg.&#x20;
+4. Turn on X-Ray mode (shortcut: `Alt+Z`). This lets you select right through the mesh, in my example, on both sides of the leg.
 5. Use the selection tool (shortcut: `W`, it should be active) to select your decal mesh. It should look something like the left side of the screenshot below.
 
 {% hint style="info" %}
@@ -71,16 +71,16 @@ We will refine this later — select generously, too much is a lot better than t
 
 6. Duplicate these vertices (Shortcut: `Shift+D`)
 7. Split them into a new submesh or new submeshes (Shortcut: `P` -> Selection)
-8. You should now have something like the right half of the screenshot.&#x20;
+8. You should now have something like the right half of the screenshot.
 
 <figure><img src="../../../.gitbook/assets/adding_decals_2_selecting_mesh.png" alt=""><figcaption><p>Awesome! Time to refine it further.</p></figcaption></figure>
 
 ## Step 2: Renaming our new submesh
 
 {% hint style="info" %}
-This guide will add a new chunk to an already-existing mesh.&#x20;
+This guide will add a new chunk to an already-existing mesh.
 
-For more advanced cases (such as use with dynamic variants), you can split off the decal into its own file, or you can use an extra appearance that will [hide all other submeshes](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes).&#x20;
+For more advanced cases (such as use with dynamic variants), you can split off the decal into its own file, or you can use an extra appearance that will [hide all other submeshes](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes).
 
 **If this is your first rodeo, do not do any of that.**
 {% endhint %}
@@ -89,7 +89,7 @@ If you take a look at the outliner, you will notice a new submesh in the scene c
 
 1. Switch back to Object Mode (Hotkey: `Tab`)
 2. In the Outliner, click on your meshes until your decal mesh lights up
-3. Change the name: it needs to be the submesh with the highest number (see the red box in the screenshot below). Double-click the name, then change it to (in this example)`submesh_04_LOD_1`.&#x20;
+3. Change the name: it needs to be the submesh with the highest number (see the red box in the screenshot below). Double-click the name, then change it to (in this example)`submesh_04_LOD_1`.
 
 {% hint style="warning" %}
 Depending on your mesh, you will end up with a different number than 4!
@@ -102,29 +102,29 @@ Depending on your mesh, you will end up with a different number than 4!
 With your new submesh selected, it's now time to clean up.
 
 1. Switch back to Edit Mode (Hotkey: `Tab`)
-2. &#x20;Cut away all vertices that you don't need. (Hotkey: `X`)
+2. Cut away all vertices that you don't need. (Hotkey: `X`)
 
 {% hint style="info" %}
 As the decal shader supports transparency, you can be generous here as well. Having too much is better than having too little!
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/adding_decals_4_refining_submesh.png" alt=""><figcaption><p>Double-click on the name, then change it to <code>submesh_0x_LOD_1</code>. </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/adding_decals_4_refining_submesh.png" alt=""><figcaption><p>Double-click on the name, then change it to <code>submesh_0x_LOD_1</code>.</p></figcaption></figure>
 
 3. After cutting away everything that you don't want/need as part of your decal, select the rest (Hotkey: `A`)
-4.  The decal should be one piece, so let's make sure to merge by distance now (hotkey: `M`).&#x20;
+4.  The decal should be one piece, so let's make sure to merge by distance now (hotkey: `M`).
 
     <figure><img src="../../../.gitbook/assets/adding_decals_5_merge_by_distance.png" alt=""><figcaption></figcaption></figure>
 
-Now, let's make sure that our decal is above the surface of the original mesh by using the `Shrinkwrap Modifier`. &#x20;
+Now, let's make sure that our decal is above the surface of the original mesh by using the `Shrinkwrap Modifier`.
 
 {% hint style="info" %}
-I'll show you how to do this in a way that preserves potential garment support. If you run into issues with your decal mesh (being invisible or crooked), you can always [delete it later](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh).&#x20;
+I'll show you how to do this in a way that preserves potential garment support. If you run into issues with your decal mesh (being invisible or crooked), you can always [delete it later](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md#option-2-guaranteed-to-work-delete-garmentsupport-from-the-mesh).
 {% endhint %}
 
 5. Switch back to Object Mode (Hotkey: `Tab`)
 6. Duplicate your mesh (Hotkey: `Shift+D`)
 7. Select just one of the two meshes, and switch to the Data tab
-8. Delete all shapekeys (starting at the bottom).&#x20;
+8. Delete all shapekeys (starting at the bottom).
 
 {% hint style="info" %}
 If your mesh doesn't have any, you can skip step 13 and delete your extra duplicate.
@@ -171,7 +171,7 @@ With your new submesh selected in Object Mode, switch to the Shading perspective
 
 4. Click on "open" in the orange node and point the path to your decal png
 5. Drag-and-drop the "Color" dot on the orange box to the "Base Color" dot on the green one
-6. If your mesh's surface hasn't changed yet, you need to assign the material:&#x20;
+6. If your mesh's surface hasn't changed yet, you need to assign the material:
    1. Open the Material tab
    2. Switch to Edit mode (Hotkey: `Tab`)
    3. Select all vertices (Hotkey: `A`)
@@ -198,7 +198,7 @@ You will see something like this (to learn more about UV maps, look up our [theo
 We will now unwrap our decal. I'll do both UV islands at once - if you have only one (because your decal is on a jacket or something), then your life will be easier.
 
 {% hint style="info" %}
-You should be unwrapping a roughly rectangular 2d surface that has undergone `merge by distance`. If you haven't done that yet, refer to [Step 3](adding-decals.md#step-3-fixing-up-the-decal), item 4 — or read up on UV seams.&#x20;
+You should be unwrapping a roughly rectangular 2d surface that has undergone `merge by distance`. If you haven't done that yet, refer to [Step 3](adding-decals.md#step-3-fixing-up-the-decal), item 4 — or read up on UV seams.
 {% endhint %}
 
 1. With everything selected in the `UV Editor` on the left, select UV -> Unwrap -> Unwrap (Hotkey: `Ctrl+U`)
@@ -208,17 +208,17 @@ You should be unwrapping a roughly rectangular 2d surface that has undergone `me
 I'll show you a simple example of doing it by hand. If you want anything more complex, you should hit up Google, as there are plenty of best practices and even Blender add-ons.
 {% endhint %}
 
-At the end, we want a nice and straight grid over the full width and height of the decal, with the correct orientation. Let's start by fixing up the UV islands.&#x20;
+At the end, we want a nice and straight grid over the full width and height of the decal, with the correct orientation. Let's start by fixing up the UV islands.
 
 3. Select a row or column. From the right-click menu, select one of the following:
-   1. `Straighten`:  Will put them all in a line
+   1. `Straighten`: Will put them all in a line
    2. `Align Auto`, which does one of the following:
-      * `Align Horizontally`: Will put them all on the same Y-axis&#x20;
-      * `Align Vertically:` Will put them all on the same X-axis&#x20;
+      * `Align Horizontally`: Will put them all on the same Y-axis
+      * `Align Vertically:` Will put them all on the same X-axis
 4. Keep doing that until you have a nice grid.
 
 {% hint style="info" %}
-While straightening out your UV layout, keep an eye on your decal in the viewport on the right. Sometimes, vertices **need** to be crooked, or your mapping will look like shit.&#x20;
+While straightening out your UV layout, keep an eye on your decal in the viewport on the right. Sometimes, vertices **need** to be crooked, or your mapping will look like shit.
 
 If you can't get a grip on your OCD, you can shift vertices over the mesh's surface by clicking on them, then pressing `G` twice and sliding them along the edges.
 {% endhint %}
@@ -237,23 +237,23 @@ If you need an exact identical layout, know that the UV mapping **tiles infinite
    3. Fix the UV mapping (Right-click: Flip horizontal/vertical, or rotate)
 7. When you are done, [export your mesh from Blender to glb](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender). Include all submeshes.
 
-Now it's time to head back to Wolvenkit and activate our new decal chunk.&#x20;
+Now it's time to head back to Wolvenkit and activate our new decal chunk.
 
 {% hint style="info" %}
-This guide will add a new chunk to an already-existing mesh.&#x20;
+This guide will add a new chunk to an already-existing mesh.
 
-For more advanced cases (such as use with dynamic variants), you can split off the decal into its own file, or you can use an extra appearance that will [hide all other submeshes](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes).&#x20;
+For more advanced cases (such as use with dynamic variants), you can split off the decal into its own file, or you can use an extra appearance that will [hide all other submeshes](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes).
 
 **If this is your first rodeo, do not do any of that.**
 {% endhint %}
 
 ## **Step 6: Adding a new material**
 
-After successfully importing your new submesh into Wolvenkit and open it.&#x20;
+After successfully importing your new submesh into Wolvenkit and open it.
 
 ### Appearances
 
-First, we need to add your new chunk to each of your [appearances](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#step-1-appearances). For this example, we will use the material `decal`.
+First, we need to add your new chunk to each of your [appearances](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-1-appearances). For this example, we will use the material `decal`.
 
 1. Find the `appearances` array at the top of the file and expand it.
 2. Under each appearance, find the `chunkMaterials` array and expand it.
@@ -263,7 +263,7 @@ First, we need to add your new chunk to each of your [appearances](../../../for-
 
 ### Material definition
 
-If you save your mesh now, file validation will complain that the `decal` material doesn't exist. It's right; we haven't added a [material definition](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-entry) yet. Let's do that.
+If you save your mesh now, file validation will complain that the `decal` material doesn't exist. It's right; we haven't added a [material definition](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-entry) yet. Let's do that.
 
 1. Find the `materialEntries` array inside your mesh and duplicate the last entry
 2. Change its `name` to `decal`
@@ -274,14 +274,14 @@ If you save your mesh now, file validation will complain that the `decal` materi
 
 ### Material instance
 
-Now that our chunk knows which material it's supposed to look up, we need to provide [the actual material](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#materialinstance-the-local-material).&#x20;
+Now that our chunk knows which material it's supposed to look up, we need to provide [the actual material](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#materialinstance-the-local-material).
 
 1. Find the array `localMaterialBuffer`
 2. Find the array `materials` (directly underneath)
    1. If it's empty, go back up and find `preloadMaterialBuffer` instead
 3. Duplicate the last entry. This is your new decal material. Now we need to make sure it behaves like a decal, too.
    1. Change its baseMaterial to `base\materials\mesh_decal.mt`.\
-      &#xNAN;_&#x54;his will tell the game which shader to use, and_ [_mesh\_decal_](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md#decal-materials) _is for exactly this._
+      \&#xNAN;_This will tell the game which shader to use, and_ [_mesh\_decal_](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md#decal-materials) _is for exactly this._
    2. Unless your previous material was already using mesh\_decal, right-click on the `values` array and [`Delete all Items in Array/Buffer`](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#delete-all-items-in-array-buffer)
    3. As of now, your decal will be completely transparent. Let's change that.
 4. Now we need to get the right material properties. The easiest way is to find another material that uses mesh\_decal and steal them from there:
@@ -301,7 +301,7 @@ Now that our chunk knows which material it's supposed to look up, we need to pro
 [Install your mod and start the game](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch). If you have done everything right, then your mesh should now have a decal!
 
 {% hint style="info" %}
-Consider converting your mod to use [archivexl-patching-appearances.md](archivexl-patching-appearances.md "mention")for much better compatibility and smaller mod size!
+Consider converting your mod to use [archivexl-patching-appearances.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching/archivexl-patching-appearances.md "mention")for much better compatibility and smaller mod size!
 {% endhint %}
 
 ## Troubleshooting
@@ -318,9 +318,6 @@ See [troubleshooting-your-mesh-edits.md](../../../for-mod-creators-theory/3d-mod
 
 See [materials-troubleshooting.md](../../../for-mod-creators-theory/materials/materials-troubleshooting.md "mention")
 
-
-
 ## Video
 
 {% embed url="https://www.youtube.com/watch?v=wWVGVo_X8ss" %}
-

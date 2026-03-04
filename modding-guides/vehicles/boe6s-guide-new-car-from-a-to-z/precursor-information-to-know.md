@@ -9,13 +9,13 @@ icon: sparkles
 **Created:** Oct 19 2023 by [Meta Pixel](https://app.gitbook.com/u/9PYjUBpLrFhif4MmMN1WyrRuFFG3 "mention")\
 **Last documented edit:** March 29 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page will give you an overview about the skills you should have, and info on how to acquire them if you don't.&#x20;
+This page will give you an overview about the skills you should have, and info on how to acquire them if you don't.
 
 {% hint style="danger" %}
 Due to the high complexity, this is **not** a good first mod. Keep reading to save a lot of time and frustration later on!
 {% endhint %}
 
-A new standalone car is about **the most complex Cyberpunk mod** you can make.&#x20;
+A new standalone car is about **the most complex Cyberpunk mod** you can make.
 
 While this tutorial **has** been completed by newbies, they spent most of their time on the [discord](https://discord.com/invite/redmodding) asking for help and support instead of making a car.
 
@@ -36,9 +36,9 @@ Install these to your game before starting:
 * [Virtual Car Dealer](https://www.nexusmods.com/cyberpunk2077/mods/4454)
 * [Material and Texture override](https://www.nexusmods.com/cyberpunk2077/mods/5266) (you can remove it once you've fully custompathed your car)
 
-## Some familiarity with WolvenKit is required.&#x20;
+## Some familiarity with WolvenKit is required.
 
-I go into as much detail as I can, but you should be able to find your way around.&#x20;
+I go into as much detail as I can, but you should be able to find your way around.
 
 {% hint style="success" %}
 Check the [Creating a Mod](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/creating-a-mod "mention") tutorial on the Wolvenkit wiki to learn your way around.
@@ -79,7 +79,7 @@ Putting the wrong data type will break your mod or make the game crash. Here is 
 ## You know your way around blender
 
 {% hint style="success" %}
-Unless you are comfortable in Blender already, check out [blender-getting-started](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/ "mention") and complete at least the donut tutorial.&#x20;
+Unless you are comfortable in Blender already, check out [blender-getting-started](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/ "mention") and complete at least the donut tutorial.
 {% endhint %}
 
 You should know your way around at least the following parts:
@@ -87,12 +87,12 @@ You should know your way around at least the following parts:
 * Object/edit mode
 * Object management
 * Object edits
-* Joining  and separating models
+* Joining and separating models
 * Know the difference between object origin, world origin, and the blender cursor
 * [Cyberpunk 2077 glTF Importer plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) / Wolvenkit resources plugin\
   (View Options > plugins to install)
 
-## Knowledge of a photo editor of your choice.&#x20;
+## Knowledge of a photo editor of your choice.
 
 If you don't have one, check out [Photopea](https://www.photopea.com/) - it's photoshop, in your browser, for free.
 
@@ -102,9 +102,9 @@ If you don't have one, check out [Photopea](https://www.photopea.com/) - it's ph
 
 ## Some Python familiarity
 
-Only necessary for advanced workflows - you can probably do without. if you want to learn a cool new skill, check out&#x20;
+Only necessary for advanced workflows - you can probably do without. if you want to learn a cool new skill, check out
 
-* [running-python-scripts.md](../../../for-mod-creators/modding-guides/everything-else/running-python-scripts.md "mention")&#x20;
+* [running-python-scripts.md](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/running-python-scripts.md "mention")
 * [blender-running-python-scripts.md](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md "mention")
 
 These do not count as a tutorial.

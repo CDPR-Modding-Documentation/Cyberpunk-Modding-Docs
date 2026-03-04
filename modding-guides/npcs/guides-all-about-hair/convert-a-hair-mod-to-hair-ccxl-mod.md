@@ -122,15 +122,15 @@ Your hair mod was done with a custom texture that you've brought along for the r
 1. Open the `your_first_hair_wa_long.mi` file.
 2. Edit the `CKeyValuePair` values of Flow, Strand\_Alpha, Strand\_Graident, and Strand\_ID. This can be done by first right clicking on the fitting name (for flow you would select the file that ends with \_flow), click copy relative path to game file (**1**), then click on the fitting `CKeyValuePair` value name then paste the path to the DepotPath of the `CKeyValuePair`.
 
-<figure><img src="../../../.gitbook/assets/image (560).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (569).png" alt=""><figcaption></figcaption></figure>
 
 (If you have Nightly version of WolvenKit you can skip right clicking by clicking on the orange button next to the files themselves)
 
-<figure><img src="../../../.gitbook/assets/image (561).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (570).png" alt=""><figcaption></figcaption></figure>
 
 At the end of this step your textures have been successfully pathed to the .mi that's in the template, the `your_first_hair_wa_long.mi` file should look like this. If so save, delete the template hair texture files, and move on ahead with the next step.
 
-<figure><img src="../../../.gitbook/assets/image (617).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (622).png" alt=""><figcaption></figcaption></figure>
 
 ### I use base game ("vanilla") textures
 
@@ -142,11 +142,11 @@ If you've used something else, [no worries](#user-content-fn-4)[^4]. follow alon
 
 1. Open your mesh and expand the `externalMaterials` item(1), then open one of the mi files that are not cap (2).
 
-<figure><img src="../../../.gitbook/assets/image (564).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (572).png" alt=""><figcaption></figcaption></figure>
 
 2. Add the mi's`baseMaterial` master .mi file to the project and move it to the materials folder:
 
-<figure><img src="../../../.gitbook/assets/image (565).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (573).png" alt=""><figcaption></figcaption></figure>
 
 Keep an eye on what the appended name of the material instance, you will use it in the next step. I suggest that you keep the appended name in the mi file, So if the material instance name ends with `__short` then keep that name around, you will use it in the next step.
 
@@ -162,7 +162,7 @@ When you're finished from this step completely, rename your material instance fi
 I recommend you to click on "Update in Project Files" as shown below, this helps with renaming paths in this whole guide and especially with the file that's in resources.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (574).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (582).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Edit the .mesh file
 
@@ -174,7 +174,7 @@ This process can be done either by WolvenKit's Convert hair to CCXL Material but
 
 if you happen to have the WolvenKit with the version 8.16.1-nightly.2025-02-11 or later you can do this step entirely automatically by clicking on the Materials button, click on Convert hair to CCXL materials button, then select the .mi files that you want with their style material from the dropdown menus then click Finish. You can also choose if you want to include a cap or not. Once you're done just rename the files and go to the Rename section of this step.
 
-<figure><img src="../../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (267).png" alt=""><figcaption></figcaption></figure>
 
 ### Edit manually
 
@@ -184,17 +184,17 @@ In this step we'll remove all references of the old materials and their appearan
 
 1. Open your mesh and the template mesh (which is `hh_your_first_hair_wa.mesh)`, collapse all items open in your file, and put them side by side by dragging one of the tabs to the right. This helps to see the whole process for what we'll do.
 
-<figure><img src="../../../.gitbook/assets/image (568).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (576).png" alt=""><figcaption></figcaption></figure>
 
 It should look like this:
 
-<figure><img src="../../../.gitbook/assets/image (569).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (577).png" alt=""><figcaption></figcaption></figure>
 
 2. In your mesh, right click on `appearances` and click on "Reset Object", do the same step for `externalMaterials`, `localMaterialBuffer`, and `materialEntries`. After doing this you should see a number zero or a "\[0]" next to the aforementioned items. This step removes all reference of materials that the mesh used before.
 
 Now your mesh will be devoid of any reference of materials (for now..)
 
-<figure><img src="../../../.gitbook/assets/image (570).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (578).png" alt=""><figcaption></figcaption></figure>
 
 3. Select `materialEntries` in the template mesh file and right click on "Copy Array Contents", then right click on your mesh's `materialEntries` and click "Paste Selection into Arrary/Buffer". This makes it so that it copies over the needed entries of materials from the template mesh.
 
@@ -222,7 +222,7 @@ Now save your mesh file, rename it to the name that you want. Duplicate the mesh
 
 While you're at it, rename the `animgraph`, `rig`, and the mesh in the shadow\_meshes folder to the name you wanted. At the end of this step, your mesh folder structure should look something like this:
 
-<figure><img src="../../../.gitbook/assets/image (566).png" alt=""><figcaption><p>that was *quite* the step, no? (don't worry the next ones are much simpler)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (574).png" alt=""><figcaption><p>that was *quite* the step, no? (don't worry the next ones are much simpler)</p></figcaption></figure>
 
 ## Step 5: Edit the .json file
 
@@ -237,7 +237,7 @@ For Male V you don't need to fill the maleVariant key, as the game defaults to u
 
 In the end the items should be named `UI-Customization-myhair` and `UI-Customization-myhair_cyberware`,and your json file will look like this. Save the file but don't close it yet.
 
-<figure><img src="../../../.gitbook/assets/image (567).png" alt=""><figcaption><p>As easy as it gets :D</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (575).png" alt=""><figcaption><p>As easy as it gets :D</p></figcaption></figure>
 
 ## Step 6: Edit the .app files
 
@@ -274,7 +274,7 @@ This file has two main items: `headCustomizationGroups` and `headGroups`.`headCu
 
 These two files are responsible for getting the name that will be displayed in the in-game slot, and to get the item names below it. Below is a visual demonstration of what needs to be done in this section.
 
-<figure><img src="../../../.gitbook/assets/image (572).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (580).png" alt=""><figcaption></figcaption></figure>
 
 2. The `your_first_hair_wa`, `your_first_hair_wa_cyberware`, and `your_first_hair_wa_fpp`items numbered 2, 3, and 4.
 
@@ -300,7 +300,7 @@ Now expand headGroups, and expand each item in there, then replace the names in 
 
 In the end, the name consistency should look like this (hairstyle\_cyberware handle collapsed for view)
 
-<figure><img src="../../../.gitbook/assets/image (573).png" alt=""><figcaption><p><em>pheew</em> that was something, yeah?</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (581).png" alt=""><figcaption><p><em>pheew</em> that was something, yeah?</p></figcaption></figure>
 
 Now that's done, save the file and close it.
 
@@ -314,7 +314,7 @@ Right click on the folder named `your_first_addition` and click rename, then rep
 
 When you're finished check the "Update in project files?" box then click Finish.
 
-<figure><img src="../../../.gitbook/assets/image (575).png" alt=""><figcaption><p>John WolvenKit, in the flesh <span data-gb-custom-inline data-tag="emoji" data-code="1f5e3">🗣️</span><span data-gb-custom-inline data-tag="emoji" data-code="1f5e3">🗣️</span></p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (583).png" alt=""><figcaption><p>John WolvenKit, in the flesh <span data-gb-custom-inline data-tag="emoji" data-code="1f5e3">🗣️</span><span data-gb-custom-inline data-tag="emoji" data-code="1f5e3">🗣️</span></p></figcaption></figure>
 
 {% hint style="info" %}
 As a good measure, check WolvenKit's Log for any issues regarding project file rename update.
@@ -344,7 +344,7 @@ Finally, delete the temporary files by going to "Project" then click on "Delete 
 
 Confirm that work and mod works by clicking on the down arrow next to the "Launch" button and select "Install and launch", then click "Install and launch".
 
-<figure><img src="../../../.gitbook/assets/image (576).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (584).png" alt=""><figcaption></figcaption></figure>
 
 If the mod works you should see it in the character creation screen by going a step back on the hair style slots in the game.
 

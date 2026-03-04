@@ -31,7 +31,7 @@ Items.GenericShardableCyberwareBlueprint:
   rootElement: Items.GenericShardableCyberwareBlueprint_inline0
 ```
 
-**`rootElement`** is a record of type **`gamedataItemBlueprintElement_Record`.** \
+**`rootElement`** is a record of type **`gamedataItemBlueprintElement_Record`.**\
 It has the following flats (properties):
 
 ```yaml
@@ -96,7 +96,7 @@ Items.Power_AR_SMG_LMG_WeaponMod4Element:
   childElements: []
 ```
 
-Here we have to create 2 new prereqIDs&#x20;
+Here we have to create 2 new prereqIDs
 
 ```yaml
 Items.EpicItemBlueprintElement_inline0:
@@ -153,11 +153,11 @@ Items.Base_Power_Assault_Rifle:
 
 The tweak part of making the blueprint is now over and we can jump in the game and check the records
 
-We are going to use `Preset_Ajax_Pimp` as you can see the modSlots are not being shown in the game&#x20;
+We are going to use `Preset_Ajax_Pimp` as you can see the modSlots are not being shown in the game
 
-<figure><img src="../../../../.gitbook/assets/image (495).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (505).png" alt=""><figcaption></figcaption></figure>
 
-For this, we are going to need to do some scripting lets create a new `.reds` file in the script folder and name it `AR_SMG_LMG_4Slot.reds`&#x20;
+For this, we are going to need to do some scripting lets create a new `.reds` file in the script folder and name it `AR_SMG_LMG_4Slot.reds`
 
 We need to wrap multiple functions to make this work, so at first we are going to add a function that has our AttachmentSlots in it
 
@@ -172,7 +172,7 @@ public static func GetExtraWeaponModSlots()-> array<TweakDBID>
 }
 ```
 
-And another function  that checks for these slots
+And another function that checks for these slots
 
 ```swift
 @addMethod(UIItemsHelper)
@@ -249,7 +249,7 @@ public final static func GetModsSlotIDs(type: gamedataItemType) -> array<TweakDB
 
 If we check the game now we can see that our slots are added but they are not shown correctly
 
-<figure><img src="../../../../.gitbook/assets/image (487).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (498).png" alt=""><figcaption></figcaption></figure>
 
 We need to fix the slot Icons the tooltip names and the slot name
 
@@ -275,7 +275,7 @@ public final static func GetLootingShadowIcon(slotID: TweakDBID, itemType: gamed
 }
 ```
 
-For the  tooltip names we are going to wrap this method
+For the tooltip names we are going to wrap this method
 
 ```swift
 @wrapMethod(UIItemsHelper)
@@ -290,7 +290,7 @@ public final static func GetEmptySlotName(slotId: TweakDBID) -> String {
 }
 ```
 
-And for slot name&#x20;
+And for slot name
 
 ```swift
 @wrapMethod(UIItemsHelper)
@@ -330,4 +330,4 @@ Items.Mod:
 
 And now its done all of our power assault rifles now have 4 mod slots
 
-<figure><img src="../../../../.gitbook/assets/image (482).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (493).png" alt=""><figcaption></figcaption></figure>

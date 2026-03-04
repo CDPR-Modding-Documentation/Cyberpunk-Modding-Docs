@@ -985,7 +985,7 @@ Yes, seriously, too many mods. This number seems pretty random, but generally do
 
 The solution? Toggle off `Enable Analytics` in settings:
 
-<figure><img src="../../.gitbook/assets/image (149).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (122).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -1262,7 +1262,7 @@ Make sure **all** your mods that could mess with audio have been updated since t
 
 If your CPU is too busy, the game will try to save resources by dropping audio, starting with dialogue audio. Disabling spatial audio from the main menu might help
 
-<figure><img src="../../.gitbook/assets/image (108).png" alt=""><figcaption><p>The setting you need to disable!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (125).png" alt=""><figcaption><p>The setting you need to disable!</p></figcaption></figure>
 
 </details>
 
@@ -1871,7 +1871,7 @@ Thanks to @ArsenicTouch for the guides!
 3. Mouse over `Manage installation`
 4. Select the following menu entry:
 
-![](<../../.gitbook/assets/image (170).png>)
+![](<../../.gitbook/assets/image (38).png>)
 {% endtab %}
 
 {% tab title="Steam" %}

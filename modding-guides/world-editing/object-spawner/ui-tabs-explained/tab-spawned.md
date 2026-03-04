@@ -12,7 +12,7 @@ description: >-
 
 * At the top (Underneath the search and add group options), you will find the toolbar:
 
-<figure><img src="../../../../.gitbook/assets/image (613).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (254).png" alt="" width="375"><figcaption></figcaption></figure>
 
 * From the left to right you have:
   * [3-D Editor mode](../3-d-editor-mode.md) toggle
@@ -45,8 +45,6 @@ Hovering the `I` icon gives you a list of all available shortcuts
   * While holding down `Shift`, drag selected elements into their new position
 
 <figure><img src="../../../../.gitbook/assets/OSOrdering" alt="" width="375"><figcaption><p>Moving and selecting, drag and drop</p></figcaption></figure>
-
-
 
 ### Changing visibility
 

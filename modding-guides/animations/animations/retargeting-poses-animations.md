@@ -231,7 +231,7 @@ In my own experience, this fix multiple issues like animations flickering and tw
 Thanks to **Halkuonn** for sharing this fix!
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (616).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (621).png" alt=""><figcaption></figcaption></figure>
 
 Your animation is now ready to test!\
 Plop it in game by either making a quick replacer or an [AMM Poses Pack](amm-collab-anims-poses.md#summary)

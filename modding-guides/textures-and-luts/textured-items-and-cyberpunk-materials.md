@@ -9,33 +9,33 @@ description: Importing textured items (and creating an AMM prop set in the proce
 **Published: February 11 2023 by** [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update**: Mar 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will walk you through **importing 3d objects** into Cyberpunk 2077, which can then be spawned via [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790).&#x20;
+This guide will walk you through **importing 3d objects** into Cyberpunk 2077, which can then be spawned via [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790).
 
 **Level of difficulty:** You know how to read.
 
 ### Wait, this is not what I want!
 
-* Check [porting-3d-objects-to-cyberpunk.md](../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk.md "mention") for an import guide, but don't forget to come back here once you're done!
-* You can learn more about materials under [materials](../../for-mod-creators-theory/materials/ "mention").&#x20;
-  * If you want to understand material assignment, check [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention")-> [#material-assignment](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment "mention")
+* Check [porting-3d-objects-to-cyberpunk](../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/ "mention") for an import guide, but don't forget to come back here once you're done!
+* You can learn more about materials under [materials](../../for-mod-creators-theory/materials/ "mention").
+  * If you want to understand material assignment, check [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention")-> [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment "mention")
   * If you only want to know how to apply Cyberpunk materials to parts of your mesh, check "[Splitting off submeshes](textured-items-and-cyberpunk-materials.md#splitting-off-submeshes-mildly-advanced)" below.
   * For a guide about changing materials, check [changing-materials-colors-and-textures](../items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
     * If you just want to use a textured material, check [using-a-textured-material.md](../items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention")
 * If you want to dig deeper into [multilayered](../../for-mod-creators-theory/materials/multilayered/ "mention"), check our guide for [custom-multilayermasks.md](custom-multilayermasks.md "mention")
 * Find a look-up list of cool materials under [cheat-sheet-materials.md](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md "mention")
 * For a more detailed guide about prop creation, check [custom-props](../../for-mod-creators-theory/3d-modelling/custom-props/ "mention")
-* Or maybe you wonder  [#where-to-find-models](../../for-mod-creators-theory/3d-modelling/custom-props/#where-to-find-models "mention")
+* Or maybe you wonder [#where-to-find-models](../../for-mod-creators-theory/3d-modelling/custom-props/#where-to-find-models "mention")
 
 ## **Requirements**
 
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases), most recent for your game version ([stable](https://github.com/WolvenKit/Wolvenkit/releases) | [nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases)), guide was made using 8.8.1)&#x20;
+* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases), most recent for your game version ([stable](https://github.com/WolvenKit/Wolvenkit/releases) | [nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases)), guide was made using 8.8.1)
 * [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) (> 2.0.2)
 
 ## Setting up the project
 
 This section is already covered in the guide for [custom props](../../for-mod-creators-theory/3d-modelling/custom-props/#setting-up-the-project), using the source folder variant, or directly download [this archive](https://mega.nz/file/GUsSwSxY#Ast7L44g_YimuKrcbwNCLvYL_DworhpEQsaH05RNGJw) and extract it into your Wolvenkit project.
 
-Optional: Complete the [creating another prop](../../for-mod-creators-theory/3d-modelling/custom-props/#creating-another-prop) section from the custom props guide, or alter one of the two existing template items.&#x20;
+Optional: Complete the [creating another prop](../../for-mod-creators-theory/3d-modelling/custom-props/#creating-another-prop) section from the custom props guide, or alter one of the two existing template items.
 
 {% hint style="success" %}
 This guide will assume that you are editing `template_no_variants.mesh`, as our focus is on mesh import and material assignment. You can delete the folder `amm_props\template`, since we won't need it.
@@ -66,13 +66,13 @@ This will create the following files under the project's `raw` section:
 
 ### Step 3: Importing
 
-1. **Optional:** Download [this archive](https://mega.nz/file/vd0X3Yaa#tcakXF6_t0k_EouthuKcJSPL3o2nI6b_zVWi528Kv5k) - I have prepared it for import. \
+1. **Optional:** Download [this archive](https://mega.nz/file/vd0X3Yaa#tcakXF6_t0k_EouthuKcJSPL3o2nI6b_zVWi528Kv5k) - I have prepared it for import.\
    It contains both the original glb from sketchfab and the version I prepared for import:
 
 <figure><img src="../../.gitbook/assets/2023-04-08 17_24_44-tutorial_baseball_for_import - (Admin) FreeCommander XE.png" alt=""><figcaption><p>File content as archive, April 8 2023</p></figcaption></figure>
 
 2. Use the Windows Explorer to copy these .glb files and textures into the same folder as the ones you exported in the previous step.
-3. Replace the files from your export with the files from your download. The names need to be exactly the same.&#x20;
+3. Replace the files from your export with the files from your download. The names need to be exactly the same.
 
 Use `baseball_02_d.png`, as the other one doesn't have transparency.
 
@@ -88,7 +88,7 @@ The next step is to [assign materials](textured-items-and-cyberpunk-materials.md
 #### Wait, where did Step 2 go?
 
 {% hint style="success" %}
-Good! You've been paying attention! \
+Good! You've been paying attention!\
 \
 Step 2 is to prepare the downloaded 3d asset to work with Cyberpunk. Depending on your target file, this can be any level of difficult, but the steps below should be enough for most meshes.
 {% endhint %}
@@ -96,7 +96,7 @@ Step 2 is to prepare the downloaded 3d asset to work with Cyberpunk. Depending o
 ### Step 2: Processing the downloaded mesh
 
 {% hint style="info" %}
-All of these steps will be taking place in Blender.&#x20;
+All of these steps will be taking place in Blender.
 
 If this is your first time and you're lost, check out [blender-getting-started](../../for-mod-creators-theory/3d-modelling/blender-getting-started/ "mention")
 {% endhint %}
@@ -112,7 +112,7 @@ Scene Collection
 ```
 
 * LOD\_1 indicates the [level of detail](../../for-mod-creators-theory/files-and-what-they-do/level-of-detail-lod.md). You only care for LOD\_1.
-* The submesh numbers are important for [material assignment](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment) in Wolvenkit.
+* The submesh numbers are important for [material assignment](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment) in Wolvenkit.
 
 {% hint style="success" %}
 The easiest way to get there is by running [this python script](https://raw.githubusercontent.com/manavortex/code_snippets/master/py/cyberpunk/util/prepare_submeshes_for_export.py) (source: manavortex's github) in Blender after import:\
@@ -130,7 +130,7 @@ Since it clearly works for e.g. the body mesh with ten submeshes, make of this w
 
 #### Submesh by material
 
-Sketchfab meshes often use dozens of submeshes, but we want to split by cyberpunk's logic:&#x20;
+Sketchfab meshes often use dozens of submeshes, but we want to split by cyberpunk's logic:
 
 {% hint style="info" %}
 Every submesh can have its own material assigned in the mesh, and can be hidden or displayed via chunkmask. This is how you assign Cyberpunk materials to parts of your imported asset.
@@ -159,7 +159,7 @@ I usually join everything into one object that'll have the same material in the 
 
 But the opposite is also possible: You can split off parts from the original object, putting them into their own submeshes. I have done this in the [baseball example](https://mega.nz/file/vd0X3Yaa#tcakXF6_t0k_EouthuKcJSPL3o2nI6b_zVWi528Kv5k): the seams will get a texture, and the rest of the mesh will be coloured with a cyberpunk material.
 
-You do that by changing into the edit mode, then selecting everything that you want to split off ("Select Linked" or "Select More" is your friend here),  and **splitting** it (P -> Split Selection).
+You do that by changing into the edit mode, then selecting everything that you want to split off ("Select Linked" or "Select More" is your friend here), and **splitting** it (P -> Split Selection).
 
 {% hint style="info" %}
 You can duplicate your selection first (`Shift+D`, `ESC`)
@@ -179,13 +179,13 @@ Select everything (click the viewport and press A), then unparent the objects by
 
 #### Applying transformations
 
-Since those are saved relatively and Wolvenkit will ignore them, your objects might end up larger or smaler than you expect them, or be in different places.&#x20;
+Since those are saved relatively and Wolvenkit will ignore them, your objects might end up larger or smaler than you expect them, or be in different places.
 
-Select your objects in the viewport, then press `Ctrl+A` and choose "All Transforms".&#x20;
+Select your objects in the viewport, then press `Ctrl+A` and choose "All Transforms".
 
 #### Scale it
 
-Scale your 3d object in Blender until it has the size you expect it to be in-game.&#x20;
+Scale your 3d object in Blender until it has the size you expect it to be in-game.
 
 If you do this in the object mode, you need to [apply transformations](textured-items-and-cyberpunk-materials.md#applying-transformations) afterwards. Alternatively, you can scale the vertices in edit mode.
 
@@ -201,7 +201,7 @@ If you need a reference object, you can use this [lightsaber](https://mega.nz/fi
 
 Keep in mind that your prop will rotate around the world origin, and position it accordingly.
 
-<figure><img src="../../.gitbook/assets/blender_point_of_origin.png" alt=""><figcaption><p>AMM will rotate your object around the point 0,0,0. </p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/blender_point_of_origin.png" alt=""><figcaption><p>AMM will rotate your object around the point 0,0,0.</p></figcaption></figure>
 
 {% hint style="success" %}
 Once you are done, import the glb file over your original mesh (you can consult the [troubleshooting section ](textured-items-and-cyberpunk-materials.md#troubleshooting)below).
@@ -212,7 +212,7 @@ Your import has been successful when the preview in Wolvenkit changes (you might
 ## Material assignments
 
 {% hint style="info" %}
-For an overview of materials that you might want to use for something, check [here](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md).&#x20;
+For an overview of materials that you might want to use for something, check [here](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md).
 
 You can check a material's properties by opening the file inside of Wolvenkit and checking the last entry of the "parameters" array, or search for "files using this" and looking at how they're doing things.
 {% endhint %}
@@ -220,7 +220,7 @@ You can check a material's properties by opening the file inside of Wolvenkit an
 ### Setting up our materials
 
 {% hint style="info" %}
-You can find explanation and documentation about materials [here](../../for-mod-creators-theory/materials/).&#x20;
+You can find explanation and documentation about materials [here](../../for-mod-creators-theory/materials/).
 {% endhint %}
 
 #### Add a new material entry
@@ -228,12 +228,12 @@ You can find explanation and documentation about materials [here](../../for-mod-
 1. Select the entry "texture" inside the array `materialEntries`
 2. Duplicate it
 3. Select the new entry
-4. Change the name to `mlsetup`&#x20;
+4. Change the name to `mlsetup`
 5. Change the index to `1`
 
 #### Assign the submesh
 
-Open the array `appearances`, select the first appearance (`default`) and select the array `chunkMaterials`.  Create a new entry, or duplicate the existing one. Make sure the list order shows
+Open the array `appearances`, select the first appearance (`default`) and select the array `chunkMaterials`. Create a new entry, or duplicate the existing one. Make sure the list order shows
 
 ```
 0    mlsetup
@@ -242,8 +242,8 @@ Open the array `appearances`, select the first appearance (`default`) and select
 
 #### Transfer the material
 
-1. Open `baseball_textured.mesh`&#x20;
-2. Find the CMaterialInstance "texture" inside `localMaterialBuffer.materials`.&#x20;
+1. Open `baseball_textured.mesh`
+2. Find the CMaterialInstance "texture" inside `localMaterialBuffer.materials`.
 3. Select it, then copy it via right-click (Copy (Selection) from Array/Buffer)
 4. Switch to `baseball_tml.mesh`
 5. Select `localMaterialBuffer.materials`
@@ -270,10 +270,10 @@ Save the mesh. You can check the "Mesh Preview" tab if the materials show up. If
 
 ### Let's set up our entity file
 
-1. Open the baseball's entity file (`your_name\your_prop_pack\baseball\baseball.ent`).&#x20;
+1. Open the baseball's entity file (`your_name\your_prop_pack\baseball\baseball.ent`).
 2. Open the `components` array.
 3. Select the second component (`amm_prop_slot1`)
-4. Change the mesh -> depotPath to the path of your baseball mesh (`your_name\your_prop_pack\baseball\baseball_ml.mesh`).&#x20;
+4. Change the mesh -> depotPath to the path of your baseball mesh (`your_name\your_prop_pack\baseball\baseball_ml.mesh`).
 5. Leave `meshAppearance` on `default`, unless your mesh has multiple appearances: This is where you select which entry in the mesh's appearance array will be used.
 6. **D**elete the other **`amm_prop_slot`** components. (These are where you would add more mesh files to your prop - but keeping them makes your prop be full of glowing cubes).
 7. Save the entity file.
@@ -286,7 +286,7 @@ If you have more than four mesh files assigned to your entity's components, the 
 
 Open the lua file under `resources\bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Props\your_prop_pack.lua`.
 
-Set modder to your name and unique\_identifier to anything, e.g. `your_name_your_props`. Now, adjust the first entry in the "props" list to point to your entity file:&#x20;
+Set modder to your name and unique\_identifier to anything, e.g. `your_name_your_props`. Now, adjust the first entry in the "props" list to point to your entity file:
 
 ```lua
 return {  
@@ -320,7 +320,7 @@ Save the lua file, install your mod, and launch the game. Time to test!
 
 ## Material assignments
 
-For an explanation how materials are assigned to a mesh, check [this page](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment) - this guide will just tell you what to do.
+For an explanation how materials are assigned to a mesh, check [this page](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment) - this guide will just tell you what to do.
 
 {% hint style="info" %}
 You can copy entire materials between meshes: select one, right-click, and pick one of the "copy from…" entries.
@@ -338,17 +338,17 @@ Open `appearances/default/chunkMaterials`. You need to have one per submesh.
 
 For a more detailed explanation/guide, see the next section. If you don't care, you can skip straight to the next section and fix up the [material entries](textured-items-and-cyberpunk-materials.md#material-entries).
 
-#### Explanation:&#x20;
+#### Explanation:
 
 `chunkMaterials` are where you assign materials by submeshes. The identifier here is the **name**.\
-Before changes, the first (and only) submesh will use the material  `mat_textured`. Our newly imported mesh (the baseball) has _two_.
+Before changes, the first (and only) submesh will use the material `mat_textured`. Our newly imported mesh (the baseball) has _two_.
 
-&#x20;Add a new chunkMaterial to the array by either
+Add a new chunkMaterial to the array by either
 
-* &#x20;right-click the existing chunkMaterial and select `duplicate`
+* right-click the existing chunkMaterial and select `duplicate`
 * select the array `chunkMaterials` and then click the yellow (+) button int he side panel
 
-then change the name of the **first** entry to `mat_ingame`:&#x20;
+then change the name of the **first** entry to `mat_ingame`:
 
 {% hint style="info" %}
 You can name your materials whatever you like, as long as you stick to the following rules:
@@ -360,20 +360,19 @@ You can name your materials whatever you like, as long as you stick to the follo
 
 ### Material entries
 
-1.  Find the array `materialEntries` at the root level of the mesh and open it. It will have two entries:\
-
+1.  Find the array `materialEntries` at the root level of the mesh and open it. It will have two entries:\\
 
     <figure><img src="../../.gitbook/assets/materials_materialentries.png" alt=""><figcaption></figcaption></figure>
 2. Select the second entry and change its name to the one from your chunkMaterial (`mat_ingame`). Numerical order does not matter here.
 
-#### Explanation:&#x20;
+#### Explanation:
 
-MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#chunkmaterials) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../for-mod-creators-theory/files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
+MaterialEntries are a **lookup map** between the material names in the chunkMaterials and the actual materials (see [here](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#chunkmaterials) for an explanation). You can have **local** or **external** materials or a mix of both; check [this page](../../for-mod-creators-theory/files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md#maximally-lazy-external-materials) for an explanation.
 
 {% hint style="success" %}
-Now, we adjust the materials — we'll just change a few properties to show you how it works, and then you can go play.&#x20;
+Now, we adjust the materials — we'll just change a few properties to show you how it works, and then you can go play.
 
-For another guide on how to edit materials in detail, check [here.](../items-equipment/editing-existing-items/changing-materials-colors-and-textures/)&#x20;
+For another guide on how to edit materials in detail, check [here.](../items-equipment/editing-existing-items/changing-materials-colors-and-textures/)
 {% endhint %}
 
 ### Setting up the materials
@@ -381,10 +380,10 @@ For another guide on how to edit materials in detail, check [here.](../items-equ
 Find the array `localMaterialBuffer/materials` and open it. It contains two materials. Wolvenkit will display the names corresponding to the [material entries](textured-items-and-cyberpunk-materials.md#material-entries) so you can see which is which.
 
 {% hint style="info" %}
-For an explanation of material parameters, see [this page](../../for-mod-creators-theory/materials/).&#x20;
+For an explanation of material parameters, see [this page](../../for-mod-creators-theory/materials/).
 {% endhint %}
 
-The first one, `mat_textured`, is the one that we will use for the seams. If you imported your textures by overwriting the original export, you shouldn't need to do anything here.&#x20;
+The first one, `mat_textured`, is the one that we will use for the seams. If you imported your textures by overwriting the original export, you shouldn't need to do anything here.
 
 Instead, we will change the second material, `mat_ingame`.
 
@@ -396,7 +395,7 @@ If you rather want to make your own mlsetups, see [here](../items-equipment/edit
 * Expand the material and its `values` array
 * Delete the parameter `MultilayerMask`
 * GlobalNormal: Re-use the same as your textured material (by default: `tutorial\amm_props\template\textures\template_01_n.xbm`)
-* **MultilayerSetup**:  Set it to `base\characters\garment\gang_nomad\legs\l1_021_pants__cargo_computer\textures\leather_red_basic.mlsetup`
+* **MultilayerSetup**: Set it to `base\characters\garment\gang_nomad\legs\l1_021_pants__cargo_computer\textures\leather_red_basic.mlsetup`
 
 <figure><img src="https://i.imgur.com/GQ8fELd.png" alt=""><figcaption><p>Not a moon</p></figcaption></figure>
 
@@ -407,10 +406,12 @@ If you rather want to make your own mlsetups, see [here](../items-equipment/edit
 * Set the baseMaterial to `base\environment\decoration\containers\cases\coffin\textures\m_z_gold.mi`
 *
 
-    <figure><img src="../../.gitbook/assets/textures_baseball_gold.png" alt=""><figcaption><p>Also not a moon</p></figcaption></figure>
+```
+<figure><img src="../../.gitbook/assets/textures_baseball_gold.png" alt=""><figcaption><p>Also not a moon</p></figcaption></figure>
+```
 
 The possibilities are basically endless, so go and explore them already! For a nifty list with materials to get you started, check [here](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md).\
-For a guide on creating AMM props, see [here](../../for-mod-creators-theory/3d-modelling/custom-props/).&#x20;
+For a guide on creating AMM props, see [here](../../for-mod-creators-theory/3d-modelling/custom-props/).
 
 ## Troubleshooting
 
@@ -422,7 +423,7 @@ AMM can't find your .ent file. Check the paths in the lua.
 
 ### My prop is invisible (but AMM targets it)!
 
-This can be one of the following issues:&#x20;
+This can be one of the following issues:
 
 * the path from .ent to .mesh is wrong
 * the mesh appearance in the .ent file can't be found (check spelling in both .ent and .mesh)
@@ -430,9 +431,9 @@ This can be one of the following issues:&#x20;
 * Check your mesh's **face orientation** in Blender — inside-facing meshes are usually transparent.
 * Check your mesh's chunkmasks in the .ent file: maybe you have accidentally hidden a submesh?
 
-If that doesn't help as well, try assigning a default game material (search for anything ending in .mt and put the path in your material's `baseMaterial.DepotPath`).&#x20;
+If that doesn't help as well, try assigning a default game material (search for anything ending in .mt and put the path in your material's `baseMaterial.DepotPath`).
 
-* Try assigning a default game material by searching for&#x20;
+* Try assigning a default game material by searching for
 
 ### My prop is all over the place / too big / too small
 

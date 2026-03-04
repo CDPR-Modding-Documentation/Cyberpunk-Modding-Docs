@@ -6,10 +6,10 @@ description: Shady biz
 
 ## Summary
 
-**Published**: Mar 02 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: Mar 02 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published**: Mar 02 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update**: Mar 02 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page explains how meshes are casting shadows.&#x20;
+This page explains how meshes are casting shadows.
 
 ### Wait, this is not what I want!
 
@@ -18,7 +18,7 @@ This page explains how meshes are casting shadows.&#x20;
 
 ## How to cast shadows
 
-There are two different ways to cast shadows: **real-time** (generated) shadows, and **proxy** shadows.&#x20;
+There are two different ways to cast shadows: **real-time** (generated) shadows, and **proxy** shadows.
 
 {% hint style="success" %}
 Most in-game items use both.
@@ -26,13 +26,13 @@ Most in-game items use both.
 
 ### Generated shadows: Component properties
 
-Your mesh casts an actual shadow.&#x20;
+Your mesh casts an actual shadow.
 
 {% hint style="warning" %}
 The real-time shadow will be extremely detailed, but it can impact **performance**, and it can glitch out or cause spectacular raytracing bugs. [#proxy-shadows-shadow-mesh](meshes-shadows-and-shadow-meshes.md#proxy-shadows-shadow-mesh "mention")es avoid these issues.
 {% endhint %}
 
-You activate real-time shadows by checking the following properties in your [mesh component](../../components/documented-components/#equipment-hair) (which you can find in your [.app](../appearance-.app-files/#components) or [.ent](../entity-.ent-files/#mesh-component-entity-simple-entity) file):
+You activate real-time shadows by checking the following properties in your [mesh component](../../components/documented-components/#equipment-hair) (which you can find in your [.app](../appearance-.app-files#components) or [.ent](../entity-.ent-files#mesh-component-entity-simple-entity) file):
 
 <figure><img src="../../../../.gitbook/assets/mesh_shadow_component_properties.png" alt=""><figcaption></figcaption></figure>
 
@@ -46,7 +46,7 @@ Shadow meshes are usually added as `entMeshComponents`.
 
 #### Configuring a shadow mesh
 
-Your average shadow mesh has only one default material with a blank local instance of `engine\materials\metal_base.remt`.  If the shadow mesh is loaded in a scene, it will lead to white, marshmallow-y overlays.
+Your average shadow mesh has only one default material with a blank local instance of `engine\materials\metal_base.remt`. If the shadow mesh is loaded in a scene, it will lead to white, marshmallow-y overlays.
 
 To make sure that it's only used for shadow generation, check the `renderMask`:
 
@@ -56,8 +56,6 @@ To make sure that it's only used for shadow generation, check the `renderMask`:
 
 To create a low-poly mesh, you can build a cage, subdivide it a few times and use a **Shrinkwrap** **modifier** to shape it like your mesh. Then, you can reduce the poly count by **decimating**.
 
-
-
 {% embed url="https://www.youtube.com/watch?v=nlrs5dWttPU" %}
 
 ## Troubleshooting
@@ -66,4 +64,4 @@ To create a low-poly mesh, you can build a cage, subdivide it a few times and us
 
 Check [#configuring-a-shadow-mesh](meshes-shadows-and-shadow-meshes.md#configuring-a-shadow-mesh "mention") and make sure that `RenderInScene` is unchecked.
 
-<figure><img src="../../../../.gitbook/assets/image (13) (1).png" alt=""><figcaption><p>The shadow is a marshmallow</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (283).png" alt=""><figcaption><p>The shadow is a marshmallow</p></figcaption></figure>

@@ -18,7 +18,7 @@ This guide will cover a sub-case of [..](../ "mention")via ArchiveXL (added in 1
 In your `root_entity`:
 
 1. Add the `DynamicAppearance` tag
-2. Delete all but one entry from the appearances array.&#x20;
+2. Delete all but one entry from the appearances array.
    1. Name it like your `entityName` in the yaml
    2. Leave the `appearanceName` blank
 
@@ -32,7 +32,7 @@ In your `.app`:
 In your `mesh_entity`:
 
 1. To enable substitution in mesh depot paths, make sure they start with `*`
-2. Put all attributes that ArchiveXL should [switch out](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md) in the paths in `{}`
+2. Put all attributes that ArchiveXL should [switch out](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md) in the paths in `{}`
 
 e.g
 
@@ -120,7 +120,7 @@ This guide assumes that you have access to the prepared example project, so go a
 
 </details>
 
-1. If you haven't, go and create a [Wolvenkit Project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project). I'll name mine `my_archive_xl_item`,&#x20;
+1. If you haven't, go and create a [Wolvenkit Project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project). I'll name mine `my_archive_xl_item`,
 2. In the `File` -> `Add files`... menu, select `ArchiveXL item`
 
 <figure><img src="../../../../.gitbook/assets/dynamic_variants_add_file.png" alt=""><figcaption></figcaption></figure>
@@ -133,47 +133,47 @@ This guide assumes that you have access to the prepared example project, so go a
 
 <summary>The fields, Mason! What do they mean?</summary>
 
-#### Item Type
+**Item Type**
 
 This determines the equipment type of your item, which slot you equip it in. It also determines the base game item for the generator.
 
-#### Item Name
+**Item Name**
 
 Your item's unique name. This will be used to generate spawn codes and translation entries (you can change them later).
 
-#### Item Subtype
+**Item Subtype**
 
 Allows fine-tuning of the Item Type (e.g. instead of a generic head item, you can pick a mask)
 
-#### EquipmentEx slot
+**EquipmentEx slot**
 
 EquipmentEx decides what slot to equip your item in based on its type and subtype, but you can override this - for example, a tight netrunner suit can be worn on the innermost layer. This also influences item layering via [Garment Support](../../../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/) (which item is worn above/below)
 
-#### Visibility Tags
+**Visibility Tags**
 
-Hides parts of the player body. For a list of what the tags do, see [archivexl-tags.md](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md "mention") -> [#archivexl-tags](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#archivexl-tags "mention")
+Hides parts of the player body. For a list of what the tags do, see [archivexl-tags.md](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md "mention") -> [#archivexl-tags](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md#archivexl-tags "mention")
 
-#### Garment support tags
+**Garment support tags**
 
 In theory, this allows fine-tuning of garment support (e.g. by defining a coat as XLarge). In praxis, you're better-off relying on EquipmentEx for this.
 
-#### Hide in First Person
+**Hide in First Person**
 
 Should the item be hidden in first person? (This hides the entire item, not just parts of it - use this for e.g. face masks or glasses. You can check [#app-file-conditional-switching](dynamic-appearances-understanding-the-process.md#app-file-conditional-switching "mention") or [dynamic-appearances-fine-tuning-visibility-conditions.md](dynamic-appearances-fine-tuning-visibility-conditions.md "mention") for more.)
 
-#### Add mesh materials
+**Add mesh materials**
 
 This will add all of the template item's materials to your mod and custompath them. Takes at least a few extra seconds. Instead of doing this, you can also open the `.mesh` files and select Materials -> Add dependencies.
 
-#### Item variants
+**Item variants**
 
 This field lets you define colour variants for your item. You can easily set this up via dynamic appearances later, so go nuts, you crazy diamond.
 
-#### Use two variant fields
+**Use two variant fields**
 
 Use this if your item has more than one variant (for example, a t-shirt colour and a decal)
 
-#### Secondary variants
+**Secondary variants**
 
 Here you can enter values for your secondary variant. In the example, I'll be using the decal options - `galaxy`, `witcher`, and `samurai`.
 
@@ -181,7 +181,7 @@ Here you can enter values for your secondary variant. In the example, I'll be us
 
 ### 0.1: Import the icons
 
-Import the auto-generated .png icon files ([Import Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#importing) -> Import All). They are just dummy icons, but they will help telling apart your shirts while you work on them.&#x20;
+Import the auto-generated .png icon files ([Import Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#importing) -> Import All). They are just dummy icons, but they will help telling apart your shirts while you work on them.
 
 {% hint style="info" %}
 You can now delete the .png files.
@@ -202,7 +202,7 @@ Depending on the options you picked, your project will now look similar to this:
 ## Step 1: Connecting the decal (and understanding variants)
 
 {% hint style="warning" %}
-Before starting this section, create a copy of your `mesh_entity.ent`  now (press the ctrl-key and drag it on itself), as you need the original file for one of the alternative approaches.
+Before starting this section, create a copy of your `mesh_entity.ent` now (press the ctrl-key and drag it on itself), as you need the original file for one of the alternative approaches.
 {% endhint %}
 
 This section will teach you how to make use of the variant to switch out item parts via `.yaml`. As a reminder, this is our yaml:
@@ -219,15 +219,15 @@ This section will teach you how to make use of the variant to switch out item pa
 
 </details>
 
-By default, our `_mesh.ent`  looks like this (because the generator re-uses CDPR's file structure)
+By default, our `_mesh.ent` looks like this (because the generator re-uses CDPR's file structure)
 
 <figure><img src="../../../../.gitbook/assets/image (653).png" alt=""><figcaption></figcaption></figure>
 
-As you can see, the paths are already dynamic - the `m` or `w` has been replaced with `{gender}`. This makes sure that our mod will display the right file based on your V's body gender.&#x20;
+As you can see, the paths are already dynamic - the `m` or `w` has been replaced with `{gender}`. This makes sure that our mod will display the right file based on your V's body gender.
 
 {% hint style="info" %}
-This is incredibly powerful — for example, by using `{body}`, you make ArchiveXL pick the correct refit per body mod. \
-[archivexl-suffixes-and-substitutions.md](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") contains a full list of suffixes and substitutions, but do finish this guide and its exercises before playing around even further!
+This is incredibly powerful — for example, by using `{body}`, you make ArchiveXL pick the correct refit per body mod.\
+[archivexl-suffixes-and-substitutions.md](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") contains a full list of suffixes and substitutions, but do finish this guide and its exercises before playing around even further!
 {% endhint %}
 
 Now, let's get that decal connected.
@@ -239,7 +239,7 @@ Now, let's get that decal connected.
    * `samurai`
    * `witcher`
 4. In the mesh depot path, replace `samurai.mesh` with `{variant.2}.mesh`
-5. Change the `meshAppearance` to `samurai` (since the generator set that up for us)&#x20;
+5. Change the `meshAppearance` to `samurai` (since the generator set that up for us)
 
 Thanks to ArchiveXL's substitution, we only need one component to pick our choice from three `.mesh` files — based on the value for `secondary` in the `yaml`.
 
@@ -251,12 +251,12 @@ This approach is not recommended for anything user-editable. For details, see [#
 
 Dynamic mesh picking based on yaml params saves a lot of duplication, typos can lead to crashes — if you enter `semurai` instead of `samurai`, the game will try to find (for female V)\
 `manavortex\equipment\torso_inner\my_custom_shirt\meshes\t1_079_pwa_tshirt__casual_dec_semurai.mesh`\
-and then crash because it doesn't exist.&#x20;
+and then crash because it doesn't exist.
 
 This is generally bad, so which options do we have to prevent it?
 
 {% hint style="info" %}
-The boxes below contain **suggestions** and detail **different ways** to tackle the same problem with ArchiveXL. You can combine them or completely ignore them, as you want.&#x20;
+The boxes below contain **suggestions** and detail **different ways** to tackle the same problem with ArchiveXL. You can combine them or completely ignore them, as you want.
 {% endhint %}
 
 <details>
@@ -281,7 +281,7 @@ By slightly changing our `.yaml`, we create different appearances in the root.en
 
 <figure><img src="../../../../.gitbook/assets/axl_dynamic_appearance_name.png" alt=""><figcaption></figcaption></figure>
 
-&#x20;This will create the following appearance names:
+This will create the following appearance names:
 
 `my_custom_shirt_galaxy_!$(base_color)`\
 `my_custom_shirt_witcher_!$(base_color)`\
@@ -299,7 +299,7 @@ This is what we kept the original mesh entity for, as we will use this in the .a
 
 If you were to spawn this t-shirt now, it would have all three decals. We don't want this. Luckily, we can use [`partsOverrides`](../../influencing-other-items.md#partsoverrides-changing-other-meshes) to hide things from the `.app` (but not show them, that's why we turned them all visible).
 
-In the .app file,&#x20;
+In the .app file,
 
 1. Change the path under `partsValues` to `mesh_entity_copy.ent`
 2. Duplicate the entire appearance two more times
@@ -327,7 +327,7 @@ For details, expand the box.
 
 <summary>How University Outfit uses dynamic variants</summary>
 
-#### Polo: Collar states
+**Polo: Collar states**
 
 The mod supports two collar states on the polo - `open` and `closed`.
 
@@ -337,7 +337,7 @@ The mod supports two collar states on the polo - `open` and `closed`.
 | collar | 0,1                    | 2,3                  |
 | tie    | 0,1                    | 2,3                  |
 
-#### Polo: Sleeve lengths
+**Polo: Sleeve lengths**
 
 You can pick three sleeve lengths for the polo: `short`, `long`, and `gloved`. The mesh chunks are set up as follows:
 
@@ -347,7 +347,7 @@ You can pick three sleeve lengths for the polo: `short`, `long`, and `gloved`. T
 
 (Yes, `long` and `gloved` share the same mesh for the part from shoulder to elbow, only the part below that is different).
 
-So I ended up with six appearances in the `_root.ent` and `.app`:&#x20;
+So I ended up with six appearances in the `_root.ent` and `.app`:
 
 `university_polo_short_sleeves_open_collar_`\
 `university_polo_long_sleeves_open_collar_`\
@@ -356,7 +356,7 @@ So I ended up with six appearances in the `_root.ent` and `.app`:&#x20;
 `university_polo_long_sleeves_closed_collar_`\
 `university_polo_gloved_sleeves_closed_collar_`
 
-#### Sweatshirt: polo collar
+**Sweatshirt: polo collar**
 
 On top of that, I am using [ArchiveXL custom tags](../../influencing-other-items.md#custom-tags-un-hiding-chunks) to display yet another collar when the sweatshirt is worn on top of it. For this, I'm also using the "open collar" tie, so I had to make sure that it fits both... I spent a lot of time re-fitting on this mod.
 
@@ -374,7 +374,7 @@ And that's it! With this and the [original guide](../../../../for-mod-creators-t
 
 ### Generating display names
 
-I have written a [Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/archive_xl_dynamic_variants/generate_translation_strings.py) to auto-generate display names, you can find it on my github. If you don't know how to use this, check [running-python-scripts.md](../../../../for-mod-creators/modding-guides/everything-else/running-python-scripts.md "mention").
+I have written a [Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/archive_xl_dynamic_variants/generate_translation_strings.py) to auto-generate display names, you can find it on my github. If you don't know how to use this, check [running-python-scripts.md](../../../../for-mod-creators-theory/3d-modelling/blender-getting-started/running-python-scripts.md "mention").
 
 ### Creating preview icons
 

@@ -8,7 +8,7 @@ description: Editing and Replacing videos in CyberPunk 2077 with
 
 
 
-<figure><img src="../../../.gitbook/assets/image (196).png" alt="" width="433"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (672).png" alt="" width="433"><figcaption></figcaption></figure>
 
 
 
@@ -34,7 +34,7 @@ Converting to back to .bk2 requires a [byte offset](videos-.bk2.md#byte-offset-r
 
 For this tutorial, visit Viktor's RipperDoc, the boxing video consistantly plays on his screen.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (660).png" alt=""><figcaption></figcaption></figure>
 
 [Add](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/asset-browser#adding-files-to-projects) `q001_boxinggame.bk2` to your project
 
@@ -42,17 +42,17 @@ For this tutorial, visit Viktor's RipperDoc, the boxing video consistantly plays
 
 Click Open In Windows Explorer   &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (661).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (662).png" alt=""><figcaption></figcaption></figure>
 
 ### Give it a Play
 
-<figure><img src="../../../.gitbook/assets/image (72).png" alt="" width="365"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (663).png" alt="" width="365"><figcaption></figcaption></figure>
 
 Converting to a common file format
 
-<figure><img src="../../../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (667).png" alt=""><figcaption></figcaption></figure>
 
 1. Open RAD Video Editor and browse to (`\source\archive\base\movies\fluff`)&#x20;
 2. Select File
@@ -62,7 +62,7 @@ Converting to a common file format
 
 
 
-<figure><img src="../../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (666).png" alt=""><figcaption></figcaption></figure>
 
 
 
@@ -79,11 +79,11 @@ Converting to a common file format
 
 **FPS:** 15fps is the game speed, 30fps is possible, but not recommended.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (669).png" alt=""><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (670).png" alt=""><figcaption></figcaption></figure>
 
 <mark style="color:$danger;">**You must export to Bink 2.**</mark>
 
@@ -95,7 +95,7 @@ Once your bk2 file has been created, you will need to edit the file with a hex e
 
 [HxD](https://mh-nexus.de/en/hxd/) is a good windows solution that is free. <br>
 
-![](<../../../.gitbook/assets/image (192).png>)
+![](<../../../.gitbook/assets/image (671).png>)
 
 Change the 4th byte to 6A and save to: `source\archive\base\movies\fluff`
 

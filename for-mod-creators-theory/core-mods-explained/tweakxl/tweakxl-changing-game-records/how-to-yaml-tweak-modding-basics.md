@@ -45,9 +45,9 @@ This
 
 In the past, using indentation wasn't mandatory and mostly used by pro coders to order their files as a good practice. However, for YAML files, **indentation is MANDATORY**. If you indent wrong, **your mod won't work**, simple as.
 
-The best way to indent, in my opinion, is using 2 blank spaces (pressing `space bar` twice) to make indentations.&#x20;
+The best way to indent, in my opinion, is using 2 blank spaces (pressing `space bar` twice) to make indentations.
 
-"_But what about just using tab?_" you may think. **DON'T. DON'T USE TAB FOR INDENTATION.** Using tab for indentation could cause issues, because not all text editors interpret tab in the same way.&#x20;
+"_But what about just using tab?_" you may think. **DON'T. DON'T USE TAB FOR INDENTATION.** Using tab for indentation could cause issues, because not all text editors interpret tab in the same way.
 
 Using double space will guarantee your file will keep the same structure everywhere. It even feels natural and **VSCode** will put nice and useful lines to show your indentation.
 
@@ -55,9 +55,9 @@ Using double space will guarantee your file will keep the same structure everywh
 
 ### Records
 
-Think of records as **unique containers** grouping multiple properties — which can be **other records**, or [#flats](how-to-yaml-tweak-modding-basics.md#flats "mention").&#x20;
+Think of records as **unique containers** grouping multiple properties — which can be **other records**, or [#flats](how-to-yaml-tweak-modding-basics.md#flats "mention").
 
-<figure><img src="../../../../.gitbook/assets/image (409).png" alt=""><figcaption><p>Don't worry, it gets easier to understand over time.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (347).png" alt=""><figcaption><p>Don't worry, it gets easier to understand over time.</p></figcaption></figure>
 
 {% hint style="danger" %}
 Record names **must** be unique!
@@ -77,7 +77,7 @@ Flats are **values**. They can be numbers (integers <_like 1 or 2_> or floats <_
 
 ### Inlines
 
-This is where most new modders make mistakes.&#x20;
+This is where most new modders make mistakes.
 
 **Inline** is a way to create records without nesting them under a record name, but coded and nested directly in the property of another record. Yeah, I know, it's hard to understand. Let's do some examples.
 
@@ -124,7 +124,7 @@ _When to use inlines or whole named records?_ That depends on your project. Some
 Later in this tutorial, you'll see that some records are named to something like this `RecordName_inline0`, `RecordName_inline1`, etc. Those `inlineX` names are created automatically for easier reading and the number can change **without ANY warning** on every single game update. The number generated will be dependent on the position of the inline record inside another record. Inline means literally "_**this is IN LINE X**_".
 
 {% hint style="info" %}
-**NEVER use**`inlineX` **records as base in your items**, that will only create headaches for the future you. Using `inlineX` records as base for your items is a **BAD PRACTICE** and could prevent your mod from working on **ANY update**.&#x20;
+**NEVER use**`inlineX` **records as base in your items**, that will only create headaches for the future you. Using `inlineX` records as base for your items is a **BAD PRACTICE** and could prevent your mod from working on **ANY update**.
 
 **Please, DON'T USE** `inlineX` **RECORDS AS BASE FOR YOUR OWN RECORDS.**
 {% endhint %}
@@ -163,11 +163,11 @@ MyBigRecord:
      statType: BaseStats.ExampleBaseStat2
 ```
 
-In this example, `MyBigRecord_inline0` will have a completely different value depending on the update.&#x20;
+In this example, `MyBigRecord_inline0` will have a completely different value depending on the update.
 
-In update 2.1 the valu&#x65;**`1`** and related to `BaseStats.ExampleBaseStat1`, but then in update 2.2 the value will be **`8`** and related to `BaseStats.ExampleBaseStat3`.&#x20;
+In update 2.1 the valu&#x65;**`1`** and related to `BaseStats.ExampleBaseStat1`, but then in update 2.2 the value will be **`8`** and related to `BaseStats.ExampleBaseStat3`.
 
-If you used `MyBigRecord_inline0` in your item code, your item would stop working as intended. It doesn't matter that popular modders do this, **DON'T USE INLINES AS BASE FOR YOUR RECORDS**.&#x20;
+If you used `MyBigRecord_inline0` in your item code, your item would stop working as intended. It doesn't matter that popular modders do this, **DON'T USE INLINES AS BASE FOR YOUR RECORDS**.
 
 [Check psiberx's YAML bible about inline records](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks#inline-records).
 
@@ -193,10 +193,10 @@ You can find more about this under [types-of-tweak-records.md](../../../tweaks/t
 
 **Tweaks and Scripts are 2 sides of the same coin.**
 
-On its own, a tweak does nothing — the engine makes use of the records via **scripts**.&#x20;
+On its own, a tweak does nothing — the engine makes use of the records via **scripts**.
 
 {% hint style="info" %}
-Think of a script as the **instruction**, and a tweak as the **definition**. That way, a script doesn't actually need to understand what it's doing, and all the logic is neatly encapsulated. \
+Think of a script as the **instruction**, and a tweak as the **definition**. That way, a script doesn't actually need to understand what it's doing, and all the logic is neatly encapsulated.\
 \
 For example: Take 500g (_the **instruction**)_ of `Items.Flour` (_the **definition**_).
 {% endhint %}
@@ -211,7 +211,7 @@ Having clarified some very basic concepts, let's start this guide:
 
 ### 1: Find the thing you want to do
 
-Let's say you want to do a new item that have the Thrusters mechanics from Rogue Boots that you use in certain endings.&#x20;
+Let's say you want to do a new item that have the Thrusters mechanics from Rogue Boots that you use in certain endings.
 
 What's the best approach to this? Using those Thrusters boots logic in your item.
 
@@ -227,7 +227,7 @@ Read [spawn-codes-baseids-hashes.md](../../../references-lists-and-overviews/equ
 
 ### 2: Using Wolvenkit Tweak Browser
 
-Open Wolvenkit and [create a project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project) (for example, I have one project dedicated to research called TEST, which I use every time I need to search something on Wolvenkit), then open it.&#x20;
+Open Wolvenkit and [create a project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project) (for example, I have one project dedicated to research called TEST, which I use every time I need to search something on Wolvenkit), then open it.
 
 Open the Tweak Browser tab and pin it. It should look like this:
 
@@ -255,7 +255,7 @@ Put the cursor above the YAML files and click on the yellow folder to open the f
 
 Open the 3 YAML files in **VSCode**:
 
-<figure><img src="../../../../.gitbook/assets/6 (4).png" alt=""><figcaption><p>You probably will have less cooler colors, sorry choom.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/6 (3).png" alt=""><figcaption><p>You probably will have less cooler colors, sorry choom.</p></figcaption></figure>
 
 Now, from the latest inline (`inline1` in this example), copy the whole contents and paste it below the anterior record (in this case, `inline0`):
 
@@ -265,13 +265,13 @@ Now, copy the mixed contents and paste them into the base record (the item on th
 
 <figure><img src="../../../../.gitbook/assets/8 (2).png" alt=""><figcaption><p>Almost there, keep going...</p></figcaption></figure>
 
-Those records below the main item record (`inline0` and `inline1`) are the ones that manages the Thrusters logic/mechanics.&#x20;
+Those records below the main item record (`inline0` and `inline1`) are the ones that manages the Thrusters logic/mechanics.
 
-You can add them to almost any item, but you'll have to research on your own how to do it on each case. Not all items needs the effects nested in the same places, and not all effects needs to be nested like this.&#x20;
+You can add them to almost any item, but you'll have to research on your own how to do it on each case. Not all items needs the effects nested in the same places, and not all effects needs to be nested like this.
 
 {% hint style="info" %}
-ALWAYS FIND A WORKING EXAMPLE IN THE BASE GAME IF YOU ARE NEW ON THIS AND IF YOU WANT TO KEEP YOUR SANITY. \
-&#xNAN;_**Trust me.**_
+ALWAYS FIND A WORKING EXAMPLE IN THE BASE GAME IF YOU ARE NEW ON THIS AND IF YOU WANT TO KEEP YOUR SANITY.\
+\&#xNAN;_**Trust me.**_
 {% endhint %}
 
 Now, the importance of VSCode in this tutorial. VSCode has an incredibly powerful and useful highlighting system for text by just doing `double click` on **ANY WORD**. With this system, you'll understand how things are nested on ANY item you find. Look at this example:
@@ -280,11 +280,11 @@ Now, the importance of VSCode in this tutorial. VSCode has an incredibly powerfu
 
 If you pay attention to the miniature code on the right side and the scroll bar, there is a highlight that will point you exactly where things are nested:
 
-<figure><img src="../../../../.gitbook/assets/10 (1) (1).png" alt=""><figcaption><p>You can scroll on the miniature too. The big vertical gray bar is your scroll bar, and the tiny horizontal lines are the highlights.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/10 (1).png" alt=""><figcaption><p>You can scroll on the miniature too. The big vertical gray bar is your scroll bar, and the tiny horizontal lines are the highlights.</p></figcaption></figure>
 
 If you move over that highlight, you will finally have your answer.
 
-<figure><img src="../../../../.gitbook/assets/11 (1).png" alt=""><figcaption><p>inline0 was nested inside OnEquip parameter, which is inside the main item record.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/11.png" alt=""><figcaption><p>inline0 was nested inside OnEquip parameter, which is inside the main item record.</p></figcaption></figure>
 
 ***
 
@@ -296,7 +296,7 @@ I've tested this method with many users, and all of them have been able to creat
 
 I hope this will be helpful for you.
 
-Thank you for reading, and **good luck in your projects**!&#x20;
+Thank you for reading, and **good luck in your projects**!
 
 {% hint style="info" %}
 [**REMEMBER TO BOOKMARK THE PSIBERX YAML TWEAK BIBLE**](https://github.com/psiberx/cp2077-tweak-xl/wiki/YAML-Tweaks)

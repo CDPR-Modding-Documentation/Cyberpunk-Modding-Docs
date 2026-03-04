@@ -2,12 +2,10 @@
 description: Only update once all frameworks are stable!
 ---
 
-# Downgrading / Preventing auto-updates
-
-
+# Downgrading / Preventing Auto-Updates
 
 {% hint style="info" %}
-Things fall down when you let go of them, and mods break whenever a game updates. That is due to [framework compatibility](../../for-mod-creators-theory/core-mods-explained/).&#x20;
+Things fall down when you let go of them, and mods break whenever a game updates. That is due to [framework compatibility](../../for-mod-creators-theory/core-mods-explained/).
 
 **Always make sure that your framework mods are up-to-date.**
 
@@ -22,12 +20,11 @@ In GOG Galaxy, this can be done as a global setting — you disable auto-update 
 
 #### Only disable updates for CP2077
 
-Open the GOG Galaxy page for Cyberpunk 2077 and click the <img src="../../.gitbook/assets/image (423).png" alt="manage icon" data-size="line">manage icon next to the big play button, then `Manage installation` and `Configure...`\
+Open the GOG Galaxy page for Cyberpunk 2077 and click the <img src="../../.gitbook/assets/image (359).png" alt="manage icon" data-size="line">manage icon next to the big play button, then `Manage installation` and `Configure...`\
 Disable the `Automatically update to the newest version` checkbox. Optionally, select the game patch you want to play on here.\
-\
+\\
 
-
-<figure><img src="../../.gitbook/assets/image (424).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (360).png" alt=""><figcaption></figcaption></figure>
 
 #### Globally disable updates
 
@@ -37,7 +34,7 @@ Open the settings and select the entry `Game features` in the sidebar, then unch
 
 ### Epic
 
-In the EPIC launcher, this is a global setting — you can only disable auto-update for all of your games.&#x20;
+In the EPIC launcher, this is a global setting — you can only disable auto-update for all of your games.
 
 Open the settings menu and scroll down to `MANAGE GAMES`, then disable auto-updates.
 
@@ -47,7 +44,7 @@ Open the settings menu and scroll down to `MANAGE GAMES`, then disable auto-upda
 
 Unlike the competition, Steam will not give you any control about auto-updating. For that reason, you need to forbid it from writing to a specific file on disk, without which it will be literally unable to update. Here's how:
 
-1. Find the `steamapps` folder (:&#x20;
+1. Find the `steamapps` folder (:
    1. Right-click on Cyberpunk 2077 in your Steam Library and select **`Properties`**
    2. On the side bar, click on **`Local Files`**
    3. Select **`Browse`**. This will take you to Cyberpunk's install directory, which is **inside** the folder we want (e.g. `C:\Steam\steamapps\common\Cyberpunk 2077`)
@@ -57,7 +54,7 @@ Unlike the competition, Steam will not give you any control about auto-updating.
    1. Right-click on the file and select Properties
    2. At the bottom of the dialogue, check the Read-only box
 
-&#x20;![](<../../.gitbook/assets/image (173).png>)&#x20;
+![](<../../.gitbook/assets/image (41).png>)
 
 {% hint style="info" %}
 As long as Steam can't write to this file, it can't update Cyberpunk. Once you are ready to update, simply uncheck the Read-only checkbox again.
@@ -85,7 +82,7 @@ Sorry, choomba, you're fucked. No downgrading possible.
 
 Since 2.2, Steam supports downgrading to version `1.63` , `2.13` , `2.21` or `2.3`
 
-Right-click on the game in Steam and select Properties, then go here:&#x20;
+Right-click on the game in Steam and select Properties, then go here:
 
 <figure><img src="../../.gitbook/assets/2025.09.11-19.57.05_steamwebhelper (1).png" alt=""><figcaption></figcaption></figure>
 

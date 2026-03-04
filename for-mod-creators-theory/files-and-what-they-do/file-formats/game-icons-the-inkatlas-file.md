@@ -8,18 +8,18 @@ This page explains the `.inkatlas` file and its logic.
 
 ## Wait, this is not what I want!
 
-* Learn how to make [adding-items-preview-images](../../../modding-guides/custom-icons-and-ui/adding-items-preview-images/ "mention")&#x20;
+* Learn how to make [adding-items-preview-images](../../../modding-guides/custom-icons-and-ui/adding-items-preview-images/ "mention")
 * Make a [custom Atelier icon](../../../modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md#generating-an-icon)
 * Find templates (by [Apart](https://app.gitbook.com/u/M4VsHKJyn3PakV5tOmAF87H61wh2 "mention")) in the wiki github's [file section](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/_resources_and_assets/icons)
-* Make your own inkatlas with Python: find the script on [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate_inkatlas.py). \
-  Check [running-python-scripts.md](../../../for-mod-creators/modding-guides/everything-else/running-python-scripts.md "mention") if you don't know how to use this.
+* Make your own inkatlas with Python: find the script on [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate_inkatlas.py).\
+  Check [running-python-scripts.md](../../3d-modelling/blender-getting-started/running-python-scripts.md "mention") if you don't know how to use this.
 * Make your own inkatlas with Photoshop CC (Adobe Creative Suite required): find the plugin on [deadlymustard's github](https://github.com/deadlymustard/inkatlas-utils)
 
 ## Summary
 
-The .inkatlas is a map file that slices [**textures**](../../materials/textures/) into [sprites](https://stackoverflow.com/a/34575810) (slots), which are then used by the game for pretty much everything that is a picture - from your HUD to peoples' phone avatars to item preview icons in shops or custom atelier images.&#x20;
+The .inkatlas is a map file that slices [**textures**](../../materials/textures/) into [sprites](https://stackoverflow.com/a/34575810) (slots), which are then used by the game for pretty much everything that is a picture - from your HUD to peoples' phone avatars to item preview icons in shops or custom atelier images.
 
-Unlike other games, Inkatlas files don't slice by pixel coordinates but by **percentage** as a float value between 0 and 1 . The starting point is the TOPLEFT corner, the ending point is the BOTTOMRIGHT corner.&#x20;
+Unlike other games, Inkatlas files don't slice by pixel coordinates but by **percentage** as a float value between 0 and 1 . The starting point is the TOPLEFT corner, the ending point is the BOTTOMRIGHT corner.
 
 Each slot (`inkTextureAtlasMapper`) has four coordinates. This is a single slot across the entire inkatlas:
 
@@ -40,7 +40,7 @@ As of Wolvenkit 8.11.1, this requires reopening the file.
 
 ## Inkatlas: Slot names
 
-You target sprites (slots in the inkatlas) via the `atlasPartName` property:&#x20;
+You target sprites (slots in the inkatlas) via the `atlasPartName` property:
 
 <pre class="language-yaml"><code class="lang-yaml"><strong>UIIcon.clothing_my_custom_shirt_factory_name_appearance_root_entity_white_red_Female_:
 </strong>    $type: UIIcon
@@ -48,11 +48,10 @@ You target sprites (slots in the inkatlas) via the `atlasPartName` property:&#x2
     atlasPartName: slot_01
 </code></pre>
 
-Any atlasPartName in the `yaml` must correspond with the name of a part in the inkTextureAtlasMapper.  If the corresponding entry can't be found, an empty icon will be displayed.
+Any atlasPartName in the `yaml` must correspond with the name of a part in the inkTextureAtlasMapper. If the corresponding entry can't be found, an empty icon will be displayed.
 
 <figure><img src="../../../.gitbook/assets/inkatlas_slot_names.png" alt=""><figcaption><p>You can change field names at your leisure. Depending on the template, there are a bunch of slotIcons already hooked up.</p></figcaption></figure>
 
 You can see which sprite is targeted by any given entry in the `Part Mapping:`
 
 <figure><img src="../../../.gitbook/assets/inkatlas partsMapping.png" alt=""><figcaption><p>If you don't have a partsMapping tab, check your texture path and reopen the InkAtlas</p></figcaption></figure>
-

@@ -2,7 +2,7 @@
 description: Adding CrystalCoat to your custom vehicle
 ---
 
-# CrystalCoat™
+# CrystalCoat™ (Outdated)
 
 ## Background
 
@@ -23,31 +23,27 @@ CrystalCoat is made possible with two core components:
 
 In your vehicle's .ent file, add a new appearance for Crystal Coat
 
-<figure><img src="../../.gitbook/assets/image (393).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (334).png" alt=""><figcaption></figcaption></figure>
 
 We also need an entEffectSpawnerComponent for Crystal Coat fx effects. You can copy paste this as-is from the Aerondight .ent (`base\vehicles\sport\v_sport1_rayfield_aerondight__basic_01.ent`): `EffectSpawner3546`
 
-<figure><img src="../../.gitbook/assets/image (394).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (335).png" alt=""><figcaption></figcaption></figure>
 
 ### .app
 
-Define the appearance that you just created in the .ent: You can duplicate your default appearance to start with.&#x20;
+Define the appearance that you just created in the .ent: You can duplicate your default appearance to start with.
 
 #### Updating mesh appearances
 
 * For all the meshes that will change color, we need to add a new mesh appearance that uses the .mt I mentioned earlier
 * To do this, simply duplicate your default mesh appearance, add a new `customizable` material entry, and copy-paste the material definition from for eg. `base\vehicles\sport\v_sport1_rayfield_aerondight\entities\meshes\v_sport1_rayfield_aerondight__ext01_hood_a_01.mesh`
 
+<figure><img src="../../.gitbook/assets/image (337).png" alt=""><figcaption><p><code>customizable</code> material entry. Remember to add your vehicle's MLmask and MLsetup paths</p></figcaption></figure>
 
-
-<figure><img src="../../.gitbook/assets/image (396).png" alt=""><figcaption><p><code>customizable</code> material entry. Remember to add your vehicle's MLmask and MLsetup paths</p></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (395).png" alt=""><figcaption><p>adding new mesh appearance. Note that I only set the <code>customizable</code> material for submeshes that need to change color</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (336).png" alt=""><figcaption><p>adding new mesh appearance. Note that I only set the <code>customizable</code> material for submeshes that need to change color</p></figcaption></figure>
 
 * Remember to update the material values with your custom vehicle's mlsetup and mlmask paths
 * Set the `customizable` material entry for all the submeshes that change color
-
-
 
 #### Adding `WorldWidgetComponent`
 
@@ -55,7 +51,7 @@ Define the appearance that you just created in the .ent: You can duplicate your 
 * Copy and paste all `WorldWidgetComponent`s related to Crystal Coat (all of them will start with `visual_customization_`) to your customizable appearance
 * Update the `parentTransform` and `meshTargetBinding`for each of the components to the respective car part in your appearance as needed (they don't necessarily need to match one to one: for e.g., you can use the fuel\_cap WorldWidgetComponent for something that's not a fuel cap)
 
-<figure><img src="../../.gitbook/assets/image (397).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (338).png" alt=""><figcaption></figcaption></figure>
 
 ### .yaml / tweak edits
 
@@ -114,12 +110,12 @@ For most custom vehicles, it makes sense to have only one color i.e primaryColor
 {% hint style="info" %}
 Tip if you're looking to customize this further and/or get correct gradients with secondaryColor: use the `uvchecker.inkatlas` (this is already defined in the inkwidget) as a mask to see how the inkwidget wraps around a car part
 
-![](../../.gitbook/assets/Cyberpunk_2077_Screenshot_2024.03.06_-_17.12.42.38.png)
+<img src="../../.gitbook/assets/Cyberpunk_2077_Screenshot_2024.03.06_-_17.12.42.38.png" alt="" data-size="original">
 {% endhint %}
 
 To do this, go back to the edit view and go to `libraryItems > Root > package > inkWidgetLibraryItemInstance > gameController`
 
-You should see `primaryColor` and `secondaryColor`&#x20;
+You should see `primaryColor` and `secondaryColor`
 
 From here you need to swap the mask with a completely white mask, adjust the layout an d renderTransform values so that primaryColor occupies the entire space. Then you need to make secondaryColor disappear similarly: you can delete the textureAtlas value and make the size = 1,1 which should make it disappear.
 
@@ -129,7 +125,7 @@ If you don't want to do all of this, feel free to download this inkwidget where 
 Remember to update the `widgetResource` path in every `WorldWidgetComponent` to the custom inkwidget in your project
 {% endhint %}
 
-You can see a demonstration of this primaryColor-only functionality in this custom vehicle mod:  [https://www.nexusmods.com/cyberpunk2077/mods/13396](https://www.nexusmods.com/cyberpunk2077/mods/13396)&#x20;
+You can see a demonstration of this primaryColor-only functionality in this custom vehicle mod: [https://www.nexusmods.com/cyberpunk2077/mods/13396](https://www.nexusmods.com/cyberpunk2077/mods/13396)
 
 Note - you might also notice glitchAnims (and a dedicated an .inkanim file): these are used when the car gets hit by a bullet or collission. Feel free to remove or tweak thos as well.
 

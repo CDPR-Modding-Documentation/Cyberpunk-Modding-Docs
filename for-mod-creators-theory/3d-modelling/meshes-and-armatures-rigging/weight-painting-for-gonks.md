@@ -7,7 +7,7 @@ description: How to check weights directly in Blender
 ## Summary
 
 **Created:** ??? by PinkyDude 🦝\
-**Last documented edit:** Sep 22 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit:** Sep 22 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will show you Pinky's weight painting workflow, sharing tips and tricks on how to fix weights on garments for both refits and custom ports. You can find the original tutorial on [Google Docs](https://docs.google.com/document/d/1nOjvikFu2P3OzE3AGb-vgBCeJNA2tTQXf86skncCgsc/edit).
 
@@ -15,13 +15,13 @@ This guide will use a masc garment, but the process works the same regardless of
 
 ### Wait, that's not what I want!
 
-* For porting objects altogether, see [porting-3d-objects-to-cyberpunk.md](../porting-3d-objects-to-cyberpunk.md "mention")
+* For porting objects altogether, see [porting-3d-objects-to-cyberpunk](../porting-3d-objects-to-cyberpunk/ "mention")
 * For help with refitting, see [r-and-r-refitting-step-by-step.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention")
 * For converting between bodies, see [rig-swapping-garments-other-body-conversion.md](../../../modding-guides/items-equipment/rig-swapping-garments-other-body-conversion.md "mention")
 
 ## Requirements
 
-For this guide, you need:&#x20;
+For this guide, you need:
 
 | Tool                                                                                        | Version                                                                                                                                                           |
 | ------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -39,7 +39,7 @@ For this example, I’ll be starting the weight from scratch for my Tracksuit Ja
 
 ### 1.1: Finding a donor mesh
 
-It's best practice to ~~steal~~copy the weights from an existing in-game item.&#x20;
+It's best practice to ~~steal~~copy the weights from an existing in-game item.
 
 A good candidate is the **tight** version of T-Bug's netrunner suit, as it has the required bones for almost everything:
 
@@ -101,8 +101,7 @@ For that reason, you should now clean up your mesh and merge the vertices by dis
 
 #### Cleaning existing vertex groups
 
-When porting assets from other games, a good habit is to always clean the Vertex Groups before transferring weights :\
-
+When porting assets from other games, a good habit is to always clean the Vertex Groups before transferring weights :\\
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXe7G9HtYbRmRM6MlTypu59qgi2qR23Q7QaXQoXLKoC1MrsP6V4a14ukMxfRUt29ocqrH9gZLEvXkuqh2--mHJ4L3KAZnFGvLjc-djXZI0yy1t_4bH5ZBFoeBC1VP92aoetaKV6IC5FAgllTPQH6kw?key=QoRoLud4Cahkkwf-gM7bNg" alt=""><figcaption></figcaption></figure>
 
@@ -137,8 +136,8 @@ You have now successfully transferred the weights from the Netrunner suit to you
 
 ### 3.1 Cleaning up
 
-1. Select Weights -> Limit Total.&#x20;
-2. In the pop-up at the bottom left, change the `limit`  from 4 to 8.
+1. Select Weights -> Limit Total.
+2. In the pop-up at the bottom left, change the `limit` from 4 to 8.
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeVHedoa-6PPCnmAUlfZNbRj1waen2ms48ldXWh7czTF5iPAVxpDJG5bDnPmTkHZRjhTWdzIySsMZJ_m4FrOFKnVDr4GcdRg3UHEo3GzejZTpCBpyD-m1T3xGqLfiRgMZnTLI973Bh9v191Z61rVw?key=QoRoLud4Cahkkwf-gM7bNg)
 
@@ -149,7 +148,7 @@ You have now successfully transferred the weights from the Netrunner suit to you
 
 ## Step 3: Testing on an animated body
 
-We could now transfer the garment's weight to our submeshes, import the result into the game, notice that something is off with the weights, fix it in Blender, rinse, repeat, and waste a lot of time.&#x20;
+We could now transfer the garment's weight to our submeshes, import the result into the game, notice that something is off with the weights, fix it in Blender, rinse, repeat, and waste a lot of time.
 
 Instead of doing that, we'll simply hook our garment to an animated body.
 
@@ -167,8 +166,7 @@ You can download them from my Resources folder, here:
 
 🔻 [WA Body](https://drive.google.com/file/d/11BLepHAH6Qhzlzg2V-R3PMh_PP2-imAM/view?usp=drive_link) - Woman Average RIG
 
-To add it to your .blend file, select File -> Append, and select the collection `[MA/WA]_weightCheck`:\
-
+To add it to your .blend file, select File -> Append, and select the collection `[MA/WA]_weightCheck`:\\
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfHzzH8jc8oiqT3EwAUYWMiJVsyGj--ji7dEveFd9FAQOnPX_mY0ZGMu3hmMuosYYrv1gcdxHrikg9IxxrHCIZ20PQVTt_tf_Ktv1DFyrfHTpMqNSoKkdxQ0ZjamapwIzpOLVXaIOQczgqHrtHzyQ?key=QoRoLud4Cahkkwf-gM7bNg" alt=""><figcaption></figcaption></figure>
 
@@ -186,7 +184,7 @@ You can now skip to [#id-3.4-connecting-the-meshes-to-the-armature](weight-paint
 
 ### 3.2 Getting a body
 
-You can use the same body that you've already used for refitting. This tutorial won't cover this — look it up in [r-and-r-refitting-step-by-step.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention").&#x20;
+You can use the same body that you've already used for refitting. This tutorial won't cover this — look it up in [r-and-r-refitting-step-by-step.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention").
 
 1. Import your body mesh into Blender
 2. Join all the submeshes together
@@ -198,9 +196,9 @@ You can see that our added armature already has A-Pose and T-Pose hooked up:
 
 <figure><img src="../../../.gitbook/assets/weight_painting_animset_before.png" alt=""><figcaption></figcaption></figure>
 
-We need a bit more than that, so let's grab ourselves an .anim from the game files.&#x20;
+We need a bit more than that, so let's grab ourselves an .anim from the game files.
 
-For fitting clothes, you might want to use the inventory idle animations:&#x20;
+For fitting clothes, you might want to use the inventory idle animations:
 
 ```
 base\animations\ui\male\ui_male.anims
@@ -256,7 +254,7 @@ From experience, we know which bones are responsible for the bat wings, but we'l
 <figure><img src="../../../.gitbook/assets/weightpainting_blur_tool.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-This is where you fuck around and find out! You can always use the&#x20;
+This is where you fuck around and find out! You can always use the
 {% endhint %}
 
 ### 4.1 Fixing the bat wings
@@ -269,7 +267,7 @@ This is where you fuck around and find out! You can always use the&#x20;
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXc0EKzDcAhoFsq2Dq67ISfG71OUmMM2MZ5FtUx7yyvQRLz9b5sc8JofXZ6-jn1uEGhfCGAS9OnZ-1FNaig3d13XZRj_oClIvLL0A1s81DuDEYlGI1P39XDjh7SC00ikKU0deOVcwAIM-8yaXOHALQ?key=QoRoLud4Cahkkwf-gM7bNg" alt=""><figcaption></figcaption></figure>
 
-3. We’ll need to clean the armpit on the `[l/r]_SHL_0_JNT` group.  You can do this by using the `Brush` tool (with the Weight slider down to 0), or with the `Radial Gradient` tool:
+3. We’ll need to clean the armpit on the `[l/r]_SHL_0_JNT` group. You can do this by using the `Brush` tool (with the Weight slider down to 0), or with the `Radial Gradient` tool:
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfc52WkLYSBVapsqAa_xyVzlYWw79NGMp4bpBkEOQTp6AhYUVk0o-SeRovItFn2F_iOPS0Pt8nstb_YCIuDLhnrRlQZ_zJikCVr-89zmLApT-DzevRPiGskaEXviOnUluA7cpbG7o9Lp5VYwRrl4Q?key=QoRoLud4Cahkkwf-gM7bNg)
 
@@ -281,55 +279,46 @@ This is where you fuck around and find out! You can always use the&#x20;
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcQV2rF6Zutf9vIzcI7QFE_OCg9kho6hJpzN5uf0pX9ilfto2h-nMDx5GFfaumE0wMcbTgBQsKxDUoVhYq4-ctEo9oqnw-gwAlVseJkVQbgvsFDcBu8vRONfld7uabEnEqgn1OACR2JApox4QqleQ?key=QoRoLud4Cahkkwf-gM7bNg" alt=""><figcaption></figcaption></figure>
 
-6. ...and the `[l/j]_biceps_A_mscl_JNT` group:\
+6. ...and the `[l/j]_biceps_A_mscl_JNT` group:\\
 
-
-![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdW52dzO3sj-sdNeqv6CRCdM7nkYhMCi-aHdirGo9xpnLpEjPQdPNTRvjavYNyo1Y-Q1EawtuRkyzUCifh4Z2GAO8aa-SKapZ4jSolG3a9X5naQtlsBMQHZG8VcXI08yfHfoDBTBvZgwQTXT0p_Ag?key=QoRoLud4Cahkkwf-gM7bNg)\
-
+![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdW52dzO3sj-sdNeqv6CRCdM7nkYhMCi-aHdirGo9xpnLpEjPQdPNTRvjavYNyo1Y-Q1EawtuRkyzUCifh4Z2GAO8aa-SKapZ4jSolG3a9X5naQtlsBMQHZG8VcXI08yfHfoDBTBvZgwQTXT0p_Ag?key=QoRoLud4Cahkkwf-gM7bNg)\\
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXeNgd6uakHt9QOhukviTOc3YiBKB_3ITednbP9GqcRW4t4KM9x_TpEFPkJq_GeZXh6epdm-yc5DQ6DRSMdanG1PBKHFYBuPioPb-iKO2W05cXAG9aChg-_njWZi2H9NMXJM8nFUzMGMSGKSZytqsw?key=QoRoLud4Cahkkwf-gM7bNg)
 
-That’s much better! \
-
+That’s much better! \\
 
 7. Scroll down to the `[l/r]_latissimusDorsi_mscl_JNT` group and smooth out the area a bit.
 
 {% hint style="info" %}
-You can go back to Object mode and check your weights with the animation at any time!\
-
+You can go back to Object mode and check your weights with the animation at any time!\\
 {% endhint %}
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfzerdqDlj5ameAzbkBxQPln4dl-rG1emwpv8iu1oYewDQkVRhFGCkmYZnpMLh-kJPNybZTck9rE1wU6pqHs3GuPEZSLwoZtY5xyxmTrL2NtELKmhz3YA68ayoHaMKBv1V3sCi_Spvz6bEprdP3sw?key=QoRoLud4Cahkkwf-gM7bNg)
 
-This isn’t too bad, we removed most of the stretching and the sleeves behave in a natural-ish way, considering this is a large jacket :> \
-
+This isn’t too bad, we removed most of the stretching and the sleeves behave in a natural-ish way, considering this is a large jacket :> \\
 
 ### 4.3 Fixing the collar
 
-The garment's collar is also a troublesome area; we can see how mine stretches and clips in all kind of weird way.&#x20;
+The garment's collar is also a troublesome area; we can see how mine stretches and clips in all kind of weird way.
 
 1. We'll go over the list in order again, starting from the `Spine` bones and adding weights here to harmonize the whole collar:
    1. Select the Sample Weight tool
-   2.  Click on any light blue area\
-
+   2.  Click on any light blue area\\
 
        <figure><img src="../../../.gitbook/assets/weightpainting_sample_weight.png" alt=""><figcaption></figcaption></figure>
-
-
-   3. I’ll once again use the Radial Gradient tool to apply weights in an equal way&#x20;
+   3. I’ll once again use the Radial Gradient tool to apply weights in an equal way
 
 {% hint style="danger" %}
 Be careful when using the Gradient tool
 {% endhint %}
 
-When weight painting with the gradient tool, the weight will apply on BOTH side of the mesh; front and back! To avoid this, rotate the camera and angle your model so your gradient only affect the desired area\
-
+When weight painting with the gradient tool, the weight will apply on BOTH side of the mesh; front and back! To avoid this, rotate the camera and angle your model so your gradient only affect the desired area\\
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcku3iszhksEflHIBODraezV0x9ElO1qT3l6D1FrdtVxjjhahI4EXrT_Z4QkCs2EEd1noao58r5YB7vWDi7qA9Q6exiKUiYH_ZBd3IoyJiQZLpN5irYmMAI0gUqUVzssO6V7bUtnUTCUMmPUz7N?key=QoRoLud4Cahkkwf-gM7bNg" alt=""><figcaption></figcaption></figure>
 
 2. Check the following vertex groups. Smooth out jagged edges, and remove incorrect weights.
-3. Main vertex groups (avoid editing them too much, if you can avoid it):&#x20;
-   1. `[Left/Right]Shoulder`&#x20;
+3. Main vertex groups (avoid editing them too much, if you can avoid it):
+   1. `[Left/Right]Shoulder`
    2. `Neck`, `Neck1`
    3. `Head`
    4. \[`l/r]_sternocleidomastoid_[top/bot]_mscl_JNT`
@@ -342,19 +331,16 @@ When weight painting with the gradient tool, the weight will apply on BOTH side 
 After manually fixing weights, always do “Limit All” and “Normalize All” from the Weights tab!
 {% endhint %}
 
-
-
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXfjhttdb8abcmpbqtg1gllUBoR6mTy8IzC2FU3qTL6f0BL8N4e-0mOoIAN1gVmk97uII34RsVt-Qiha2moSDuN8ZoWnhHHq7lza5xYfytJU2xEIeP--J3riOAVOTeq6ydZx9vqEtANTR7kQswqH?key=QoRoLud4Cahkkwf-gM7bNg)
 
 \
-It’s important to aim for Correct over Perfect, otherwise you’ll get stuck and frustrated really fast, trust me 🧡&#x20;
+It’s important to aim for Correct over Perfect, otherwise you’ll get stuck and frustrated really fast, trust me 🧡
 
 Don't worry about the clipping, we'll fix that in [#id-5.1-fixing-clipping](weight-painting-for-gonks.md#id-5.1-fixing-clipping "mention").
 
 ## Step 5: Transferring back
 
-1. Change your weight container’s rig in the Armature modifier back to its original armature :\
-
+1. Change your weight container’s rig in the Armature modifier back to its original armature :\\
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXe78rjdQ4jV8spWlQxs4bdJ5qQY0x-Zt4FXufqX-QPv-TBJHfQ_4DC2SkLPJcrfE4nXfbeAkkWtdMWv5u6ZFfYFpEw3j6s_5CKU6jp37D1hO0Jinql8k_B-JvesVVQltUPJzIbZ0EJlcjUvGCIAvA?key=QoRoLud4Cahkkwf-gM7bNg)
 
@@ -379,12 +365,9 @@ You can toggle proportional editing on and off by pressing `o`. This guide won't
 
 3. Repeat the step for each of your submeshes
 4. Select them all, then enter edit mode by hitting `tab`
-5. With proportional editing on, simply select the vertex in the area and slightly pull away from the body:\
-
+5. With proportional editing on, simply select the vertex in the area and slightly pull away from the body:\\
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXdXWIdGUz0W8SdqjlKnZPOePR97WfUp3folXtC-2QKDQwEsFBhDPOKCEn_W8J7ZZowESuXedlAD8wcGUD7yZ5gZA0qHrEXoF-mizDYse-Hzg94lxlZPtUk6OPakIFG4IQiv4A77pTaMNOdP7TkD8Q?key=QoRoLud4Cahkkwf-gM7bNg)
-
-
 
 6. Use the bar at the bottom of the viewport and move the cursor to change the animation. You'll find and fix more clipping here.
 7. Once you're done, change the armature modifier back to the original one.
@@ -398,22 +381,17 @@ And that’s about it for this tutorial/workflow on how I handle weight painting
 
 ### Author's remarks
 
-Don’t let weight painting occupy your entire brain while working on a project; it will never be perfect, a lot of vanilla garments have weight paint problems with stretching crotch and armpits area, it’s not something we can 100% control or avoid\
+Don’t let weight painting occupy your entire brain while working on a project; it will never be perfect, a lot of vanilla garments have weight paint problems with stretching crotch and armpits area, it’s not something we can 100% control or avoid\\
 
+As long as it’s not too visible or mesh breaking, clipping and stretching are easily dealt with in Photoshop or other post-render editing softwares 🤏\\
 
-As long as it’s not too visible or mesh breaking, clipping and stretching are easily dealt with in Photoshop or other post-render editing softwares 🤏\
+Again, I’m no expert, but I hope this tutorial will help you tackle some annoying aspects of Weight painting!\\
 
-
-Again, I’m no expert, but I hope this tutorial will help you tackle some annoying aspects of Weight painting!\
-
-
-Have fun and happy modding y’all! 💛\
-
+Have fun and happy modding y’all! 💛\\
 
 Thank you for reading -Pkd\
-\
-
+\\
 
 ![](https://lh7-rt.googleusercontent.com/docsz/AD_4nXcbUFdtfCJya04dvL_Q7_8thHQwVUngE5SePWg6LwSRqSREcK9UTVUFZBB6GfFsfZOPEMzpprqWxglvgDWSwtOUQb51sdI9QHqXN7bBhF7hzxHl6mYJGzFoFfkDN5YvltGhKCUDNxaN2oBp4BhvvQ?key=QoRoLud4Cahkkwf-gM7bNg)
 
-\
+\\

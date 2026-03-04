@@ -16,7 +16,7 @@ This will help you from Step 6 and forward from NCT’s guide.
 
 1. After your tattoo is where you want it, and you’ve turned off all the other layers, **flip your file vertically** - do not just _rotate_, you gotta use the **Flip Canvas Vertical** option. Save your file as a **.png** on a **transparent background**.\
    From:\
-   ![](<../../../.gitbook/assets/0 (1) (1) (1).png>)\
+   ![](<../../../.gitbook/assets/0 (1).png>)\
    To:\
    ![](<../../../.gitbook/assets/1 (3).png>)
 2. Open WKit and [create a new project](https://wiki.redmodding.org/wolvenkit/getting-started/creating-a-mod#starting-a-project), name it as you want your mod’s .archive to look like in the mod folder. Or not, I’m not your dad. **Do not save your WKit projects in the Cyberpunk folder.**
@@ -36,16 +36,14 @@ This will help you from Step 6 and forward from NCT’s guide.
 
 4. After you have the **.xbm** you need, replicate the **EXACT SAME PATHING** in the **Raw** folder. Put your **edited .png** there and **rename** it to **match the .xbm** of the tattoo you’re replacing. As such, for me, it’ll look like this:\
    \
-   ![](<../../../.gitbook/assets/5 (2).png>)\
-
+   ![](<../../../.gitbook/assets/5 (2).png>)\\
 5. Head over to the **Import/Export Tool** window and make sure you’re in the **Import** tab. Find the **.png** you just renamed, select it, then click **“Process Selected”**.\
    \
-   ![](<../../../.gitbook/assets/6 (3).png>)\
+   ![](<../../../.gitbook/assets/6 (2).png>)\
    \
    If everything went right, you will get a toast message from WKit informing you of that, and the Log tab will also say that the process was done. Still, you can double click on the **.xbm** of the **Archive** in the **File Explorer,** then head over to **Texture Preview** and check if your tattoo imported correctly. If it did, it’ll be **flipped back to the original orientation of the NCT guide you first worked on before flipping on Step 1**.\
    \
-   ![](<../../../.gitbook/assets/7 (2).png>)\
-
+   ![](<../../../.gitbook/assets/7 (2).png>)\\
 6. Once everything is correctly set up, just click **Install** on the upper menu so it packs and installs your replacement to the game, then test it! _(I am not sure if you need to do anything else to use it as a REDmod, but I don’t use REDmod so I won’t guarantee it works if you just use “Install as REDmod”.)_
 
-![](<../../../.gitbook/assets/8 (1) (1).png>) ![](<../../../.gitbook/assets/9 (1) (1).png>)
+![](<../../../.gitbook/assets/8 (1).png>) ![](<../../../.gitbook/assets/9 (1).png>)

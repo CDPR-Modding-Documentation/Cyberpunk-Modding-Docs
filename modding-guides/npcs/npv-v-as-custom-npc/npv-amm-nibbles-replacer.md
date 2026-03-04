@@ -89,13 +89,13 @@ If you made any mistakes, you can simply repeat the process. Either delete the f
 Click on File > Add Files > Add Photomode Files.\
 \&#xNAN;_If the command stays disabled, restart WolvenKit_
 
-<figure><img src="../../../.gitbook/assets/4 (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4 (7).png" alt=""><figcaption></figcaption></figure>
 
 #### 2. Fill out the dialogue
 
 Wolvenkit will pre-fill everything based on your project name and your file names, but you can still customize the options. (Keep reading)
 
-<figure><img src="../../../.gitbook/assets/3 (5).png" alt=""><figcaption><p>If you have more than one .app or .ent already in the project, you can select the correct one from the drop down.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/3 (6).png" alt=""><figcaption><p>If you have more than one .app or .ent already in the project, you can select the correct one from the drop down.</p></figcaption></figure>
 
 3. Double-check the **NPC name**, as Wolvenkit guesses it from your project and file names and you will see it every time you spawn your NPC in the photo mode picker. Remove any special characters from the file names.
 4. Make sure that the right `.app` and `.ent` file are selected (if multiple of those are in the project, Wolvenkit can't tell which you want)\
@@ -104,7 +104,7 @@ Wolvenkit will pre-fill everything based on your project name and your file name
 5. Next to NPC Name, select the body type of the character you're adding from the drop down. (Selecting the wrong one _may_ lead to horrors.)
 6. When you click "Finish", Wolvenkit will generate everything you need to spawn a photo mode NPC. You should now see something like this (Project browser's `source` tab):
 
-<figure><img src="../../../.gitbook/assets/2 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/2 (5).png" alt=""><figcaption></figcaption></figure>
 
 <details>
 
@@ -114,7 +114,7 @@ Wolvenkit will pre-fill everything based on your project name and your file name
 
 Delete the original `.app` and `.ent` file (they are a part of your NPV's mod, you don't need them in this mod as well).
 
-<img src="../../../.gitbook/assets/1 (5).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/1 (6).png" alt="" data-size="original">
 
 </details>
 
@@ -149,7 +149,7 @@ It's time to test your Photomode NPV!
 1. Click [install](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) in Wolvenkit's toolbar and open your game.
 2. Enter Photomode. In the characters tab, you should see a new icon at the very bottom (you might need to scroll) with blue text:
 
-<figure><img src="../../../.gitbook/assets/17 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/17 (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click the icon and your character will appear!
 
@@ -164,11 +164,11 @@ There is a detailed guide for [images-importing-editing-exporting.md](../../text
 1. In the [Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool), check the box next to the `.xbm`
 2. Click on `Export Selected`
 
-<figure><img src="../../../.gitbook/assets/9 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/9 (5).png" alt=""><figcaption></figcaption></figure>
 
 3. This will export a PNG to your `raw` folder:
 
-<figure><img src="../../../.gitbook/assets/10 (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/10 (5).png" alt=""><figcaption></figcaption></figure>
 
 4. Open this PNG in Photoshop or an image editor of your choice and update it with an image of your character.
 
@@ -197,13 +197,13 @@ Check out these articles in the Wiki:\
 7. Click import selected. It will overwrite the existing placeholder .xbm in your project files.
 8. Select your `.inkAtlas` file or open it and check the `Part Mapping` tab to check if your new icon appears:
 
-<figure><img src="../../../.gitbook/assets/15 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/16 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/16 (1).png" alt=""><figcaption></figcaption></figure>
 
 9. Press install and check in game to see your new character icon!
 
-<figure><img src="../../../.gitbook/assets/19 (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -254,7 +254,7 @@ Add a new line underneath it, and copy and paste this:
 
 Alternatively, you can search "Items." in the Tweak Browser in Wolvenkit and find your weapons.
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 5. If you want to give your NPC more than one weapon, copy and paste `- item:` to a new line for each weapon you want . Spaces are important, make sure it's in line with the item entry above it. Multiple items registered properly will look like this:
 

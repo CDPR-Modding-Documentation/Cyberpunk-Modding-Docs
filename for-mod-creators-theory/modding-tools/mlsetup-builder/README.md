@@ -195,7 +195,7 @@ As of 1.6.8, MLSB needs to use a certain version of the Wolvenkit Command Line I
 2. Click `Preferences`
 3. You will now see the settings dialogue:
 
-<figure><img src="../../../.gitbook/assets/image (548).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (557).png" alt=""><figcaption></figcaption></figure>
 
 * Game folder is [the-cyberpunk-2077-game-directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/ "mention")
 * Uncook folder / Depot is the folder you have configured in [Wolvenkit's Settings](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/settings#depot-path)
@@ -211,7 +211,7 @@ Consider [#building-the-microblend-depot](./#building-the-microblend-depot "ment
 
 1. Open the menu "Build" and select "Repository" to uncook the archives:
 
-<figure><img src="../../../.gitbook/assets/image (113).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (86).png" alt=""><figcaption></figcaption></figure>
 
 2. Pick what you want to uncook. Especially the environments can take over an hour, so we're only doing the essentials here:
 

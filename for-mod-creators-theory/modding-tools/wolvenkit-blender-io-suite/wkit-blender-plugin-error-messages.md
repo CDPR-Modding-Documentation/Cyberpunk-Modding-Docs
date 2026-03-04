@@ -42,13 +42,13 @@ This should only happen for meshes with armatures. You can check the screenshot 
 
 You are trying to export a pose, but you didn't select your armature. Click on the armature object in the outliner:
 
-<figure><img src="../../../.gitbook/assets/image (404).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (342).png" alt=""><figcaption></figcaption></figure>
 
 ## No meshes selected
 
 You're trying to export something, but you haven't selected any meshes. Select everything that you want to export in the outliner (top-right panel) - the armature parent will be auto-selected for you.
 
-<figure><img src="../../../.gitbook/assets/image (405).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (343).png" alt=""><figcaption></figcaption></figure>
 
 ## Degenerate Geometry
 
@@ -66,7 +66,7 @@ You can check the "Fix" box in the export dialogue
 
 Select Mesh -> Clean Up -> Degenerate Dissolve. This will collapse faces and edges without a surface.
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption><p>Mesh -> Clean Up -> Degenerate Dissolve (Blender 4.2 - 5.0)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (654).png" alt=""><figcaption><p>Mesh -> Clean Up -> Degenerate Dissolve (Blender 4.2 - 5.0)</p></figcaption></figure>
 
 ## Meshes must have UV layers
 
@@ -108,7 +108,7 @@ If your mesh is supposed to move with the body, check [#equipment-you-need-an-ar
 
 It's enough to check the "Export as Static Prop" box during export, and the error will go away.
 
-<figure><img src="../../../.gitbook/assets/image (406).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (344).png" alt=""><figcaption></figcaption></figure>
 
 ### Equipment: You need an armature
 

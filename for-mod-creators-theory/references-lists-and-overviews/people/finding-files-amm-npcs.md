@@ -6,8 +6,8 @@ description: How to find an AMM NPC in the files
 
 ## Summary
 
-**Published**: Dec 31 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: Dec 31 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published**: Dec 31 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update**: Dec 31 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will show you how to find an AMM NPC's files.
 
@@ -18,8 +18,6 @@ This page will show you how to find an AMM NPC's files.
 * To change NPC appearances, see [appearances-change-the-looks](../../../modding-guides/npcs/appearances-change-the-looks/ "mention")
 * To create custom NPCs, see [amm-custom-npcs](../../../modding-guides/npcs/amm-custom-npcs/ "mention")
 * To create V as an NPC, see [npv-v-as-custom-npc](../../../modding-guides/npcs/npv-v-as-custom-npc/ "mention")
-
-
 
 In this guide, we'll go looking for `nurse_wa_nurse_wa_01`.
 
@@ -85,16 +83,16 @@ Complete the following steps on the sqliteviewer website.
 If you already have a file name here, skip to [#step-5-read-the-root-entity](finding-files-amm-npcs.md#step-5-read-the-root-entity "mention")
 {% endhint %}
 
-In the `entity path` column, you will either find a file path (for modded NPCs), or a TweakDB ID (for base game characters).&#x20;
+In the `entity path` column, you will either find a file path (for modded NPCs), or a TweakDB ID (for base game characters).
 
-1. Open Wolvenkit's [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser)&#x20;
+1. Open Wolvenkit's [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser)
 2. Pull it wide to make the right panel appear
 3. In the search field at the top, search for your TweakDB ID (e.g. `Character.NurseFemale`)
-4. In the property panel at the left, find the `entityTemplatePath` (the NPC's [root entity](../../files-and-what-they-do/file-formats/entity-.ent-files/#root-entity))
+4. In the property panel at the left, find the `entityTemplatePath` (the NPC's [root entity](../../files-and-what-they-do/file-formats/entity-.ent-files#root-entity))
 
 <img src="../../../.gitbook/assets/tweak_browser_ent_file_from_tweak.png" alt="" data-size="original">
 
-## Step 5: Read the [root entity](../../files-and-what-they-do/file-formats/entity-.ent-files/#root-entity)
+## Step 5: Read the [root entity](../../files-and-what-they-do/file-formats/entity-.ent-files#root-entity)
 
 {% hint style="info" %}
 If the NPC was added by a mod, you have to switch to [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) first
@@ -109,9 +107,9 @@ If the NPC was added by a mod, you have to switch to [Mod Browser](https://app.g
 4. Note down the `appearanceName` (green box in the screenshot)
 5. Open the .app file by clicking the turquoise button
 
-## Reading the [.app file](../../files-and-what-they-do/file-formats/appearance-.app-files/)
+## Reading the [.app file](../../files-and-what-they-do/file-formats/appearance-.app-files)
 
-<figure><img src="../../../.gitbook/assets/7 (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/7 (6).png" alt=""><figcaption></figcaption></figure>
 
 1. In the `appearances` list at the top of the file, find the entry with the name from the .ent file
 2. Expand the appearance's `components` array. These are all of your NPV's parts!

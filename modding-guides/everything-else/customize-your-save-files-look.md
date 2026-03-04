@@ -21,13 +21,13 @@ Regardless of your game installation or launcher, you'll find your save files in
 Here are listed all of your AutoSave, QuickSave and ManualSave\
 Simply right click and rename any of the saves folder to change the name displayed in game
 
-<figure><img src="../../.gitbook/assets/image (11).png" alt=""><figcaption><p>Renamed Save Folders</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (589).png" alt=""><figcaption><p>Renamed Save Folders</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (581).png" alt=""><figcaption><p>Renamed Save Files in game</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (590).png" alt=""><figcaption><p>Renamed Save Files in game</p></figcaption></figure>
 
-You can even customize the thumbnails if you want to \
+You can even customize the thumbnails if you want to\
 Simply open any of the Save Folders and edit the `screenshot.png` file in any image editing software
 
-<figure><img src="../../.gitbook/assets/image (583).png" alt=""><figcaption><p>Save Folder content</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (592).png" alt=""><figcaption><p>Save Folder content</p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (584).png" alt=""><figcaption><p>Customized Name and Thumbnail</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (593).png" alt=""><figcaption><p>Customized Name and Thumbnail</p></figcaption></figure>

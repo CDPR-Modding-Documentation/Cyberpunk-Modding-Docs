@@ -6,10 +6,10 @@ description: PartsOverrides, visual tags, and how to use them
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Published:** November 12 2022 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** January 21 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** November 12 2022 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** January 21 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page will teach you how your clothing can influence other clothing items, for example hiding the sleeves under a jacket. You have to do this manually for every item that you want to affect, a much better way to address the problem is the game's [Garment Support](../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/) system.&#x20;
+This page will teach you how your clothing can influence other clothing items, for example hiding the sleeves under a jacket. You have to do this manually for every item that you want to affect, a much better way to address the problem is the game's [Garment Support](../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/) system.
 
 ## Requirement: ArchiveXL >= 1.1.6
 
@@ -19,7 +19,7 @@ For even further customization options for wardrobe items, see [EquipmentEx](htt
 
 ## GarmentSupport: Layering your item on top
 
-Cyberpunk 2077 uses a clever system to layer clothes on top of each other while minimizing clipping. It's called GarmentSupport, and as of 2024, it's almost completely functional.&#x20;
+Cyberpunk 2077 uses a clever system to layer clothes on top of each other while minimizing clipping. It's called GarmentSupport, and as of 2024, it's almost completely functional.
 
 To use it with your clothing item, you need to change the component names to use the right prefixes. Check the [#component-prefixes](../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/#component-prefixes "mention") section on [garment-support-how-does-it-work](../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/ "mention") for details.
 
@@ -28,10 +28,10 @@ To use it with your clothing item, you need to change the component names to use
 To learn how to hide things via PartsOverrides, check [#chunkmasks-partially-hiding-meshes](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
 
 {% hint style="info" %}
-You can't use PartsOverrides on components defined in the same .app file. Either use components from other files, or load them [#mesh-component-entity-simple-entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity "mention")
+You can't use PartsOverrides on components defined in the same .app file. Either use components from other files, or load them [entity-.ent-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity "mention")
 {% endhint %}
 
-In the .app file, each appearance lets you define [#partsoverrides](../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/#partsoverrides "mention"), which — as the name implies — let you **override** previously defined components. An entry looks as follows:
+In the .app file, each appearance lets you define [appearance-.app-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files#partsoverrides "mention"), which — as the name implies — let you **override** previously defined components. An entry looks as follows:
 
 <figure><img src="../../.gitbook/assets/parts_values_parts_overrides.png" alt=""><figcaption><p>Overwrite the component "<code>kimono</code>" and "<code>kimono_filler</code>", which are defined in the file "<code>kimono_meshentity.ent</code>"<br>This is the reason why Cyberpunk has all the player components stored in .ent files!</p></figcaption></figure>
 
@@ -40,11 +40,11 @@ Where **partsValues** lets you define the individual entity files that you'll lo
 <figure><img src="../../.gitbook/assets/partsOverrides2.png" alt=""><figcaption><p>componentsOverride > .ent file</p></figcaption></figure>
 
 {% hint style="warning" %}
-Components need to be **unambiguously** identified by their name as defined in the .ent file. For that reason, it's good practice to have globally unique identifiers.&#x20;
+Components need to be **unambiguously** identified by their name as defined in the .ent file. For that reason, it's good practice to have globally unique identifiers.
 {% endhint %}
 
 {% hint style="info" %}
-You can make use of [archivexl-suffixes-and-substitutions.md](../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") for your components.
+You can make use of [archivexl-suffixes-and-substitutions.md](../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") for your components.
 {% endhint %}
 
 #### Arms
@@ -70,8 +70,7 @@ Normally, you can override only components from .ent files that you include via 
 
 <figure><img src="../../.gitbook/assets/partsOverrides3.png" alt=""><figcaption><p>This is hiding a submesh of the default body, which isn't part of the referenced <code>pants_leggins.ent.</code><br>This is only possible because of ArchiveXL!</p></figcaption></figure>
 
-To delete an already existing reference, set the numeric value to the right of the depot path to 0: \
-
+To delete an already existing reference, set the numeric value to the right of the depot path to 0: \\
 
 <figure><img src="../../.gitbook/assets/archive_xl_remove_reference.png" alt=""><figcaption></figcaption></figure>
 
@@ -84,24 +83,22 @@ This mechanism is how e.g. your sunglasses disappear when you put on a helmet.
 {% endhint %}
 
 {% hint style="warning" %}
-Visual tags in the root entity will get applied to every appearance in the app.&#x20;
+Visual tags in the root entity will get applied to every appearance in the app.
 
 **However:**\
 Due to technical limitations, any visual tags that **hide** parts of the mesh **must** go into the .app file to take effect. [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will warn you about this.
 {% endhint %}
 
-
-
 <figure><img src="../../.gitbook/assets/visual_tags_preview.png" alt=""><figcaption></figcaption></figure>
 
 ### ArchiveXL
 
-The following tags are used by the base game; however, to make use of them, you require [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl).&#x20;
+The following tags are used by the base game; however, to make use of them, you require [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl).
 
 {% hint style="info" %}
-With visual tags, you can force-show hair, hide an item in first person, or turn body parts on and off. Find the full list under [archivexl-tags.md](../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md "mention")
+With visual tags, you can force-show hair, hide an item in first person, or turn body parts on and off. Find the full list under [archivexl-tags.md](../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md "mention")
 {% endhint %}
 
 ## Custom tags: un-hiding chunks
 
-If you want to un-hide chunks rather than hiding them, you need to define a custom tag via ArchiveXL. See [#adding-custom-tags](../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags "mention") for details.
+If you want to un-hide chunks rather than hiding them, you need to define a custom tag via ArchiveXL. See [#adding-custom-tags](../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags "mention") for details.

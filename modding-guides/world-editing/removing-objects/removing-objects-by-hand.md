@@ -9,7 +9,7 @@ description: How to remove objects, the hard way
 **Created:** July 08 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** July 08 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page tells you how to do node removals by hand.&#x20;
+This page tells you how to do node removals by hand.
 
 {% hint style="danger" %}
 This workflow is **extremely not recommended** and only demonstrates the underlying principle. All these steps are **more than techedd away** by now, and you should follow the[world-editing-deleting-objects.md](world-editing-deleting-objects.md "mention")guide.
@@ -54,9 +54,9 @@ streaming:
 
 ### Do the work
 
-1. Open the [World Inspector](../../../for-mod-creators-theory/modding-tools/redhottools/#world-inspector) and switch to the `Inspect` tab. You will now see  something like this:
+1. Open the [World Inspector](../../../for-mod-creators-theory/modding-tools/redhottools/#world-inspector) and switch to the `Inspect` tab. You will now see something like this:
 
-<figure><img src="../../../.gitbook/assets/image (636).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (635).png" alt=""><figcaption></figcaption></figure>
 
 2.  The information in the screenshot above corresponds to your `.xl` file:
 
@@ -78,9 +78,8 @@ streaming:
 
 ### Testing
 
-1. Run your XL file through [yamllint](https://www.yamllint.com/) and fix any errors. This will&#x20;
+1. Run your XL file through [yamllint](https://www.yamllint.com/) and fix any errors. This will
 2. Save the .xl file
 3. [Install your project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game.
 
 If everything worked, your object should now be gone.
-

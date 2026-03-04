@@ -27,7 +27,7 @@ You should now have this project structure.
 
 ### Edit mesh files using Blender
 
-Export both mesh files and then open one of them in Blender. You can see that the interesting chunk is the first one with index 0 so you can hide the other ones.&#x20;
+Export both mesh files and then open one of them in Blender. You can see that the interesting chunk is the first one with index 0 so you can hide the other ones.
 
 Select the faces that correspond to the painted areas and press `P` then choose `Selection` to create the submesh. Now export the new submesh alone into the mesh file that corresponds to `body_01_painted_custom` and then export the other submeshes to the base mesh file.
 
@@ -41,7 +41,7 @@ Be careful not to duplicate submeshes between multiple files !
 
 Import both files back into WolvenKit. Now we need to configure the new mesh component to allow it to be colored.
 
-First open the APP file and set the `meshAppearance` of `body_01_painted_custom` to `standard`.&#x20;
+First open the APP file and set the `meshAppearance` of `body_01_painted_custom` to `standard`.
 
 Then open the mesh file of `body_01_painted_custom`and remove all appearances. Create two appearances named respectively `standard` and `coated`.
 
@@ -71,7 +71,7 @@ CrystalCoat is meant to apply a color on vehicle parts but it must look like som
 
 Open this mesh file from the Rayfield Caliburn and go into `localMaterialBuffer > materials > premium_ext_07_customizable > values`. Then copy this list of parameters by right-clicking on them and choosing `Copy Selection From Array/Buffer`.
 
-<figure><img src="../../../.gitbook/assets/image (467).png" alt="" width="350"><figcaption><p>Copy coating parameters from the Rayfield Caliburn</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (402).png" alt="" width="350"><figcaption><p>Copy coating parameters from the Rayfield Caliburn</p></figcaption></figure>
 
 Then right-click on the `values` array of your vehicle's body `coated` material and choose `Paste Selection To Array/Buffer`.
 

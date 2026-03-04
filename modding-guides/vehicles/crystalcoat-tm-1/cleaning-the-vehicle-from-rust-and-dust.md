@@ -43,7 +43,7 @@ Assign this new mlsetup file to the material definition. Then open the mlsetup f
 
 Mlsetup files are shared between multiple components so once you have edited the mlsetup you will just have to assign it to the other components that use the same mlsetup.
 
-<figure><img src="../../../.gitbook/assets/clean_vehicle (2).png" alt=""><figcaption><p>Vehicle cleaned from rust and dust</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/clean_vehicle (1).png" alt=""><figcaption><p>Vehicle cleaned from rust and dust</p></figcaption></figure>
 
 > Wait ! I can see yellow on the doors plastic parts ! Also the aluminium on wheels is messy !
 
@@ -61,25 +61,25 @@ Finally create a mlmask layer using this UV layout. The result will be perfect t
 
 ### Fixing the plastic layer mask
 
-Open one of your doors mesh file and look in the `poor_06` material. Add the mlmask file to your project and add the `_clean` suffix to it.&#x20;
+Open one of your doors mesh file and look in the `poor_06` material. Add the mlmask file to your project and add the `_clean` suffix to it.
 
 Export the mlmask, the 6 doors mesh files and the body mesh file using the `Tools > Export Tool`. Plastic parts are defined in the original component for each component, so you don't need to export `_custom` components files.
 
 Import all the mesh files into Blender, hide unused chunks and select all the chunks that include plastic parts (one per component). Then go into `Edit mode` using the `Tab` key and select all the areas affected by plastic. You can move the different mesh objects to make things easier.
 
-<figure><img src="../../../.gitbook/assets/image (452).png" alt=""><figcaption><p>Select plastic parts</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (387).png" alt=""><figcaption><p>Select plastic parts</p></figcaption></figure>
 
 Then use the `UV Editing` view in the menu bar to display the UV layout that corresponds to your selection. Use this menu to export the layout to a PNG image `UV > Export UV Layout`.
 
-<figure><img src="../../../.gitbook/assets/image (453).png" alt=""><figcaption><p>Export the UV layout associated with plastic parts</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (388).png" alt=""><figcaption><p>Export the UV layout associated with plastic parts</p></figcaption></figure>
 
 Then be sure to set a size of 1024x1024 and to set a `Fill Opacity` of 1.00. Also name your PNG file `layer11.png` so we know which layer is associated with this layout.
 
-<figure><img src="../../../.gitbook/assets/image (449).png" alt=""><figcaption><p>Export parameters for the UV layout</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (384).png" alt=""><figcaption><p>Export parameters for the UV layout</p></figcaption></figure>
 
 Now into a image editor like Adobe Photoshop open the mask layer 11 from your mlmask PNG files set. Then import the UV layout you have just created into that project and create a layer style on it to fill it with white.
 
-<figure><img src="../../../.gitbook/assets/image (451).png" alt=""><figcaption><p>Create a layer style for the UV layout layer</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (386).png" alt=""><figcaption><p>Create a layer style for the UV layout layer</p></figcaption></figure>
 
 Then merge layers and save the PNG file in-place. Import the mlmask layers set back into WolvenKit using the `Tools > Import Tool`. Finally affect this new mlmask file to impacted components into their `poor_06` material at `localMaterialBuffer > materials > poor_06 > MultilayerMask`.
 

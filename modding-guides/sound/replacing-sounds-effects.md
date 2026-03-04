@@ -8,7 +8,7 @@ description: Guide on how to replace a sound effect using WolvenKit without REDm
 
 **Published:** June 9, 2024 **by** Zhincore
 
-This guide covers how to export and import sound effects using WolvenKit by modifying opusinfo/opuspaks.&#x20;
+This guide covers how to export and import sound effects using WolvenKit by modifying opusinfo/opuspaks.
 
 ### Wait, this is not what I want!
 
@@ -26,7 +26,7 @@ This method is not compatible with other mods that change sounds this way, that'
 
 ### 1. Obtaining opusinfo
 
-In order to be able to export sound effects, you must first add `sfx_container.opusinfo` to your project. Find that file in the Asset browser using [the search](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files) and double click it to add it.&#x20;
+In order to be able to export sound effects, you must first add `sfx_container.opusinfo` to your project. Find that file in the Asset browser using [the search](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files) and double click it to add it.
 
 ### 2. Selecting hashes
 
@@ -56,13 +56,13 @@ Once you've selected your hashes and pressed "Finish", you can press the Export 
 Using this method you can only replace existing sounds. To add new ones use the [REDmod method](../../for-mod-creators-theory/modding-tools/redmod/audio-modding.md) or [Audioware](https://www.nexusmods.com/cyberpunk2077/mods/12001).
 {% endhint %}
 
-Importing sound effects is mostly straightforward. Simply put your sounds in your project's `raw\base` folder. The sound must be in `.wav` format and it's file name must be exact hash of an existing sound. Best bet is [exporting it first](replacing-sounds-effects.md#exporting-sfx).&#x20;
+Importing sound effects is mostly straightforward. Simply put your sounds in your project's `raw\base` folder. The sound must be in `.wav` format and it's file name must be exact hash of an existing sound. Best bet is [exporting it first](replacing-sounds-effects.md#exporting-sfx).
 
-1. Open the Import tool  (top menu -> Tools -> Import tool).
+1. Open the Import tool (top menu -> Tools -> Import tool).
 2. Select your sounds you want to import.
 3. Press "Import selected" (or all, whichever suits you)
 
-<figure><img src="../../.gitbook/assets/image (418).png" alt=""><figcaption><p>The Import Tool with the previously exported files on the left.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (482).png" alt=""><figcaption><p>The Import Tool with the previously exported files on the left.</p></figcaption></figure>
 
 You can usually leave the default settings as is. And your mod is done! Test it out.
 

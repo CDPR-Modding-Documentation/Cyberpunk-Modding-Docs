@@ -59,9 +59,9 @@ Just use something to search the insides of the files for the definitions (VS ca
 
 Open WolvenKit and create a new project. This will be the foundation for your new iconic weapon mod.
 
-<figure><img src="../../../../.gitbook/assets/image (292).png" alt=""><figcaption><p>Create a new WolvenKit project as shown here</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (173).png" alt=""><figcaption><p>Create a new WolvenKit project as shown here</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (293).png" alt=""><figcaption><p>A clean project should look like this (as of Wolvenkit 8.12, your interface may look different)</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (174).png" alt=""><figcaption><p>A clean project should look like this (as of Wolvenkit 8.12, your interface may look different)</p></figcaption></figure>
 
 ## Step 2: Choose the Base Weapon
 
@@ -77,13 +77,13 @@ For this tutorial, we will use the gun 'Unity' as our base (`Items.Preset_Unity_
 
 To understand how the base gun works, open the [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser "mention") in WolvenKit and search for `Items.Preset_Unity_Default`.
 
-<figure><img src="../../../../.gitbook/assets/image (295).png" alt=""><figcaption><p>Open the <a data-mention href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser">Tweak Browser</a> &#x26; search "Items.Preset_Unity_Default"</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (176).png" alt=""><figcaption><p>Open the <a data-mention href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser">Tweak Browser</a> &#x26; search "Items.Preset_Unity_Default"</p></figcaption></figure>
 
 ### Step 3: Create a TweakXL Override
 
 In the tweak browser, find `Items.Preset_Unity_Default`, right-click it, and select "Add TweakXL Override". This step is crucial for customizing the weapon.
 
-<figure><img src="../../../../.gitbook/assets/image (381).png" alt=""><figcaption><p>Red arrow = Tweak Name, where you can override it. Blue Box= Details about selected tweak. White arrow = Overridden (New) Tweak</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (178).png" alt=""><figcaption><p>Red arrow = Tweak Name, where you can override it. Blue Box= Details about selected tweak. White arrow = Overridden (New) Tweak</p></figcaption></figure>
 
 {% hint style="info" %}
 To read more about Tweak modding, check [tweaks](../../../../for-mod-creators-theory/tweaks/tweaks/ "mention"). This isn't necessary for understanding this guide!
@@ -105,7 +105,7 @@ Open the overridden tweak file in a code editor of your choice (such as [Notepad
 
 Open the overridden tweak file in a code editor like Notepad++ or VS Code. You'll see a `.yaml` file with various fields.
 
-<figure><img src="../../../../.gitbook/assets/image (382).png" alt=""><figcaption><p>"Items.Preset_Unit</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (179).png" alt=""><figcaption><p>"Items.Preset_Unit</p></figcaption></figure>
 
 ### How does it work?
 
@@ -371,7 +371,7 @@ To test it out, boot up your game and load any save.
 
 Now open up the CET [Console](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/console/console "mention"):
 
-<figure><img src="../../../../.gitbook/assets/image (221).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
 
 Type in the command below and hit Enter.
 
@@ -379,7 +379,7 @@ Type in the command below and hit Enter.
  Game.AddToInventory("Items.Hand_Of_Midas",1)
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (223).png" alt=""><figcaption><p>Your newly created weapon is now in game.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Your newly created weapon is now in game.</p></figcaption></figure>
 
 You can now see your newly created weapon in your inventory.
 
@@ -407,9 +407,9 @@ Game.AddToInventory("Items.Hand_Of_Midas",1)
 Game.AddToInventory("Items.Preset_Unity_Default",1)
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (224).png" alt=""><figcaption><p>Default Unity crosshair</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Default Unity crosshair</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (225).png" alt=""><figcaption><p>Hand of Midas crosshair</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Hand of Midas crosshair</p></figcaption></figure>
 
 You should now be able to see that both the Unity & Hand Of Midas, although otherwise identical, now have different crosshairs.
 
@@ -425,7 +425,7 @@ If you have the REDmod DLC installed, you can use a text editor like Notepad++ t
 
 By searching for "Crosshairs." in the Tweak Browser. Most things we find inside the weapon tweak will be searchable within the Tweak Browser, and some within the Asset Browser.
 
-<figure><img src="../../../../.gitbook/assets/image (220).png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1).png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
 
 Editing the Tweak will allow us to modify all of our gun's behaviors, and I encourage you to play around with these.
 
@@ -471,7 +471,7 @@ What good is a new gun without a new name? We need to tell our game about these.
 2. Create a new folder named after your mod, for example `midas_collection`
 3. Within this folder, make a subfolder named `localization`
 
-<figure><img src="../../../../.gitbook/assets/image (215).png" alt=""><figcaption><p>mod name folder &#x26; localization folder</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (196).png" alt=""><figcaption><p>mod name folder &#x26; localization folder</p></figcaption></figure>
 
 ### How does the game assign display names?
 
@@ -483,7 +483,7 @@ This connects the displayName property of your item with a **locaization key**, 
 If you want to take a look at these lists, use WolvenKit's [LocKey browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/lockey-browser) or [search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `onscreens.json`.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (216).png" alt=""><figcaption><p>LocKey Browser search for <code>LocKey#49794</code></p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (197).png" alt=""><figcaption><p>LocKey Browser search for <code>LocKey#49794</code></p></figcaption></figure>
 
 ### So we edit onscreens.json?
 
@@ -546,7 +546,7 @@ These lines set the display name and the description of your weapon using the ke
 
 After completing these steps, install your mod and launch the game. Your new weapon, "Hand Of Midas", should now appear with its unique name and description, fully integrated into Cyberpunk 2077's multi-language environment.
 
-<figure><img src="../../../../.gitbook/assets/image (219).png" alt=""><figcaption><p>Name &#x26; Description of the gun are now taken from "en-us.json" that we've created</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (199).png" alt=""><figcaption><p>Name &#x26; Description of the gun are now taken from "en-us.json" that we've created</p></figcaption></figure>
 
 ## Step 7: Make it Iconic
 
@@ -588,7 +588,7 @@ To prevent it from being disassembled, we also add `IconicWeapon` to its `tags` 
 
 Once these modifications are in place, install your mod and enjoy the newfound Iconic status of the 'Hand of Midas' in the game.
 
-<figure><img src="../../../../.gitbook/assets/image (211).png" alt=""><figcaption><p>Setting "Quality.IconicItem" will give it a special background in the inventory &#x26; also specify that the item is Iconic.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (193).png" alt=""><figcaption><p>Setting "Quality.IconicItem" will give it a special background in the inventory &#x26; also specify that the item is Iconic.</p></figcaption></figure>
 
 Technically, you've already made a new Iconic weapon & I should call quits on this tutorial, but it's never as easy as that, is it? Give yourself a pat on the back & onto the next step.
 
@@ -848,7 +848,7 @@ Items.Cranial_Cashback:
 Install your mod — if your gun shows the yellow iconic description on hover, you're good to go.\
 If not, you may have to respawn it via CET.
 
-<figure><img src="../../../../.gitbook/assets/image (278).png" alt=""><figcaption><p>Iconic description is visible when hovering over gun</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (190).png" alt=""><figcaption><p>Iconic description is visible when hovering over gun</p></figcaption></figure>
 
 ### Designing effectors
 

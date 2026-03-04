@@ -26,7 +26,7 @@ This page will teach you how to turn a civilian car into a weaponized vehicle by
 
 ## Step 0: Add the reference files
 
-Decide which car you want to ~~steal~~borrow the weapon from, then add its .ent and .app file to your project for easier reference (you can look them up on [vehicles.md](../../../for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicles.md "mention")).&#x20;
+Decide which car you want to ~~steal~~borrow the weapon from, then add its .ent and .app file to your project for easier reference (you can look them up on [vehicles.md](../../../for-mod-creators-theory/references-lists-and-overviews/vehicles/vehicles.md "mention")).
 
 For this project, we're using the Hellhound, and the corresponding files are
 
@@ -40,7 +40,7 @@ These will be called "reference files" through the rest of the guide.
 ## Step 1: Changing the .ent file
 
 {% hint style="info" %}
-This file is where your game looks up your car when spawning it from its record. You can learn more about [entity-.ent-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/ "mention") on the link, but you don't have to!
+This file is where your game looks up your car when spawning it from its record. You can learn more about [entity-.ent-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files "mention") on the link, but you don't have to!
 {% endhint %}
 
 ### 1. Changing the car's type
@@ -64,14 +64,14 @@ We need to change your car's type to a weaponized vehicle. Here's how we do that
 
 ### 3. Adding the attachment slots
 
-1. In the reference `.ent`, find the `gameAttachmentSlots`  component (it will probably be called `AttachmentSlots`).
+1. In the reference `.ent`, find the `gameAttachmentSlots` component (it will probably be called `AttachmentSlots`).
 2. Copy it and paste it into your .ent file
 
 <figure><img src="../../../.gitbook/assets/vehicle_weapons_attachment_slots.png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Adding the effect
 
-1. In the reference file, search for **effect components**. Look for `entEffectSpawnerComponent` s. \
+1. In the reference file, search for **effect components**. Look for `entEffectSpawnerComponent` s.\
    In the hellhound, this is called `fx_explosion`.
 2. Select and copy it.
 3. Paste it into your car `.ent`'s `components` array.
@@ -91,12 +91,12 @@ You can skip this step if you already have a yaml file.
 2. Right-click and select "Add TweakXL override"
 3. Do the same for the record that you're ~~stealing~~copying from.
 4. In your project's [Resources section](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#resources), find the .yaml file and look at it. Then, delete all properties but the following:
-   * `vehDataPackage`&#x20;
-   * `weapons`  (your car might not have it)
+   * `vehDataPackage`
+   * `weapons` (your car might not have it)
 
 ### 2. Adding the weapons
 
-1. Find the `weapons` array in your reference yaml and copy it to your own files.&#x20;
+1. Find the `weapons` array in your reference yaml and copy it to your own files.
 2. You can delete those entries that you don't want
 3. Delete the reference yaml, you don't need it anymore!
 
@@ -104,7 +104,7 @@ You can skip this step if you already have a yaml file.
 
 Now, you'll have to tell your car that it's a weaponized vehicle. Do that by modifying the `vehDataPackage`. (Thanks to boe6 for pointing it out!)
 
-You can do this in-line:&#x20;
+You can do this in-line:
 
 ```yaml
   vehDataPackage:   
@@ -115,25 +115,23 @@ You can do this in-line:&#x20;
 ## **Step 3: Changing the .app file**
 
 {% hint style="info" %}
-This file is loaded by the .ent file, and contains an item's different appearances. You can learn more about [appearance-.app-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/ "mention") at the link, but you don't have to.
+This file is loaded by the .ent file, and contains an item's different appearances. You can learn more about [appearance-.app-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files "mention") at the link, but you don't have to.
 {% endhint %}
 
 Open your car's `.app` file and the reference `.app` file.
 
 ### **1. Adding visual tags**
 
-For **every appearance** in your .app file, you need to add the combat-related **visual tags** (you can ignore faction tags such as `Nomad` or `NCPD`).&#x20;
+For **every appearance** in your .app file, you need to add the combat-related **visual tags** (you can ignore faction tags such as `Nomad` or `NCPD`).
 
 ```
 DualPowerWeaponPosA
 MissileWeaponPosA
 ```
 
-
-
 They look like this:
 
-<figure><img src="../../../.gitbook/assets/image (615).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (620).png" alt=""><figcaption></figcaption></figure>
 
 ### 2. Adding the actual weapons
 
@@ -143,7 +141,7 @@ They look like this:
 
 2. Copy them
 3. Paste them into your own car's `.app` appearance(s)
-4. Your car now has weapons.&#x20;
+4. Your car now has weapons.
 
 ### 3. Adjusting the weapon positions
 
@@ -151,7 +149,7 @@ They look like this:
 To find the right offsets, check [#placing-lights-and-effects](../../../for-mod-creators-theory/3d-modelling/custom-props/amm-light-components.md#placing-lights-and-effects "mention"). The process is the same here - although the offsets are finicky and you'll probably end up falling back to trial\&error.
 {% endhint %}
 
-You can adjust your wepaon's position relative to the car in two places:&#x20;
+You can adjust your wepaon's position relative to the car in two places:
 
 #### The weapon's origin
 
@@ -161,7 +159,7 @@ In the `.ent` file's `vehicle_slots` slot (Step [1.2](./#id-2.-adding-the-weapon
 
 #### The weapon mesh's position
 
-In the `.app` file inside the `ent(Physical)MeshComponent`s that you have copied:&#x20;
+In the `.app` file inside the `ent(Physical)MeshComponent`s that you have copied:
 
 * change the `localTransform` property
 * make sure that the `parentTransform` points at the bindName `vehicle_slots` and the slotName `Base`
@@ -184,12 +182,12 @@ Before you release your mod, do not forget to delete the reference files that yo
 
 ### My guns are on the car, but nothing happens when I fire them!
 
-That means you're missing the correct `entSlot`s.&#x20;
+That means you're missing the correct `entSlot`s.
 
-Check your `entSlotComponent`  (usually called `vehicle_slots`) and make sure that you have the vehicle slots corresponding to the weapons you added to your .yaml file.&#x20;
+Check your `entSlotComponent` (usually called `vehicle_slots`) and make sure that you have the vehicle slots corresponding to the weapons you added to your .yaml file.
 
 {% hint style="warning" %}
-The spelling doesn't need to be the same!&#x20;
+The spelling doesn't need to be the same!
 {% endhint %}
 
 For example, the Shion has `Vehicle.Vehicle_Power_Weapon_Left_A`, but the entSlot is called `VehiclePowerWeaponLeftA`. This is defined in the tweak record:

@@ -10,9 +10,7 @@ This page lists the different player arms, their component names, and the paths 
 
 ### Wait, this is not what I want!
 
-To make your clothes react to different arms, check [archivexl-suffixes-and-substitutions.md](../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") -> [#arm-states](../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#arm-states "mention")
-
-
+To make your clothes react to different arms, check [archivexl-suffixes-and-substitutions.md](../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") -> [#arm-states](../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#arm-states "mention")
 
 The player base body does not come with arms attached — this made it easier for the developers to switch out the different kinds of cyber arms. It makes everything harder for you.
 
@@ -47,7 +45,7 @@ a0_000_ma_base__full_ag_hq6168
 ## Cyber Arms
 
 {% hint style="info" %}
-Cyber arms are complex, with active and inactive states, and in the case of the female body, separate entities and meshes for the inactive state in First and Third Person Perspectives.&#x20;
+Cyber arms are complex, with active and inactive states, and in the case of the female body, separate entities and meshes for the inactive state in First and Third Person Perspectives.
 
 They also have separate Rigs and Animations, which are not included here to avoid complete information overload.
 
@@ -126,7 +124,7 @@ a0_003_ma__mantisblade_upperarm_right
 a0_003_ma__mantisblade_right_blade
 a0_003_ma__mantisblade_right_mechanisms
 a0_003_ma__mantisblade_nails_r
-</code></pre></td></tr><tr><td>Inactive <br>FPP and TPP</td><td><code>base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_ma__mantisblade_holstered.ent</code></td><td><pre><code>a0_003_ma__mantisblade_holstered_left6562
+</code></pre></td></tr><tr><td>Inactive<br>FPP and TPP</td><td><code>base\characters\cyberware\player\a0_003__mantisblade\entities\a0_003_ma__mantisblade_holstered.ent</code></td><td><pre><code>a0_003_ma__mantisblade_holstered_left6562
 a0_003_ma__mantisblade_holstered_upperarm_left
 a0_003_ma__mantisblade_holstered_right
 a0_003_ma__mantisblade_holstered_upperarm_right
@@ -239,17 +237,17 @@ a0_004__weapon_grip_decal_02
 ## Hiding Arms
 
 {% hint style="info" %}
-There's no easy way to hide arms except by getting rid of everything -  The ArchiveXL `hide_Arms` tag actually hides everything with an `a0_` prefix. For more information, check [#archivexl-tags](../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#archivexl-tags "mention")
+There's no easy way to hide arms except by getting rid of everything - The ArchiveXL `hide_Arms` tag actually hides everything with an `a0_` prefix. For more information, check [#archivexl-tags](../core-mods-explained/archivexl/archivexl-tags.md#archivexl-tags "mention")
 
-If you want to selectively hide arm meshes or sub-meshes you will need to become familiar with all the contents of this page, and the chances that you can do anything elegantly are slim.&#x20;
+If you want to selectively hide arm meshes or sub-meshes you will need to become familiar with all the contents of this page, and the chances that you can do anything elegantly are slim.
 
 Remember: Arms are why we can't have nice things.
 {% endhint %}
 
 {% hint style="info" %}
-For reasons best known to CDPR, the monowire arm meshes displayed in game for fem V are different from the ones linked in the components listed above. They have different geometry and submesh counts.  \
+For reasons best known to CDPR, the monowire arm meshes displayed in game for fem V are different from the ones linked in the components listed above. They have different geometry and submesh counts.\
 \
-In order to hide fem V monowire arms you have to hide specifc submeshes on each arm that otherwise don't seem to exist in the linked meshes. The submeshes are \[0, 4, 5, 6, 7] for the left arm and \[0, 2, 5, 6, 7] for the right arm. They are written accordingly in the list below.&#x20;
+In order to hide fem V monowire arms you have to hide specifc submeshes on each arm that otherwise don't seem to exist in the linked meshes. The submeshes are \[0, 4, 5, 6, 7] for the left arm and \[0, 2, 5, 6, 7] for the right arm. They are written accordingly in the list below.
 {% endhint %}
 
 ### Arm override list, courtesy of Kiasuburger

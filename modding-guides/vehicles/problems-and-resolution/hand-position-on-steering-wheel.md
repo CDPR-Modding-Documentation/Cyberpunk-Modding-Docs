@@ -26,13 +26,13 @@ If you want to see the exact location in Blander
 
 Add the above location information to each hand position
 
-<figure><img src="../../../.gitbook/assets/image (245).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (308).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (247).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (310).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (246).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (309).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (248).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (311).png" alt=""><figcaption></figcaption></figure>
 
 "steering\_wheel\_zro"This is the steering position
 

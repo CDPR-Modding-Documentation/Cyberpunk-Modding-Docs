@@ -6,7 +6,7 @@ description: What are CNames? How do they work?
 
 ## Summary
 
-**Published**: Jan 05 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published**: Jan 05 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 ## How are dependencies resolved?
 
@@ -50,11 +50,9 @@ but accidentally it might just load in time, which is why this crash is so rando
 
 Compatible [flags](dependency-resolution.md#flags): `Soft`
 
-Represents a dependency where the [reference holder](#user-content-fn-2)[^2] is only pointing at a resource.
+Represents a dependency where the [reference holder](#user-content-fn-1)[^1] is only pointing at a resource.
 
-
-
-<figure><img src="../../.gitbook/assets/image (392).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (172).png" alt=""><figcaption></figcaption></figure>
 
 ## Flags
 
@@ -62,7 +60,7 @@ Represents a dependency where the [reference holder](#user-content-fn-2)[^2] is 
 
 Used by: [#rref](dependency-resolution.md#rref "mention")
 
-Indicates that the engine should load the requested resource **together** with the [reference holder](#user-content-fn-3)[^3].
+Indicates that the engine should load the requested resource **together** with the [reference holder](#user-content-fn-1)[^1].
 
 {% hint style="info" %}
 Default is a recommended flag when you're unsure which flag to use.
@@ -92,10 +90,4 @@ Unknown, but probably a legacy artifact from Witcher3
 
 Unknown, but probably a legacy artifact from Witcher3
 
-
-
 [^1]: the file you're currently editing
-
-[^2]: the file you're currently editing
-
-[^3]: the file you're currently editing

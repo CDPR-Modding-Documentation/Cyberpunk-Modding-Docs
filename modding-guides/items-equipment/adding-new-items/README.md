@@ -35,7 +35,7 @@ I have repeatedly observed that newbies are fine with this guide, while people w
 {% endhint %}
 
 _The guide was created after reading_ [_this one_](https://drive.google.com/file/d/1aQjb8MpimB9LDNl7y1iTXH13MUvMrKsH/view) _and being left with a bunch of question marks. This guide is horribly outdated and I'm only citing it here because it got me started into the rabbit hole._\
-&#xNAN;_&#x54;o get a deeper understanding of the process, you can follow the linked resources, or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
+\&#xNAN;_To get a deeper understanding of the process, you can follow the linked resources, or consult ArchiveXL's_ [_documentation_](https://github.com/psiberx/cp2077-archive-xl)_._
 
 ### Wait, that's not what I want!
 
@@ -78,7 +78,7 @@ Actually, no! This is how you later debug your custom items — by packing your 
 We're starting with a dry run to get you familiar with the process.
 {% endhint %}
 
-Press [Install and launch](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch "mention") in WolvenKit. This will do the following things:
+Press [Toolbar #Install and launch](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch "mention") in WolvenKit. This will do the following things:
 
 1. Wipe the folder `packed`
 2. Copy all supported file entries from `source` to their destination under `packed`
@@ -117,11 +117,11 @@ To familiarize yourself with the process, you can follow the [archivexl-dynamic-
 Otherwise, you will want to complete one or more of the following steps:
 
 * change the mod to use [different-equipment-slots.md](different-equipment-slots.md "mention") (e.g. shoes or glasses)
-* Learn about [#variants-and-suffixes](../../../for-mod-creators-theory/core-mods-explained/archivexl/#variants-and-suffixes "mention")for e.g. [#adding-a-male-instance](./#adding-a-male-instance "mention") or check the [#hiding-body-parts-diagram](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#hiding-body-parts-diagram "mention")
+* Learn about [#variants-and-suffixes](../../../for-mod-creators-theory/core-mods-explained/archivexl/#variants-and-suffixes "mention")for e.g. [#adding-a-male-instance](./#adding-a-male-instance "mention") or check the [#hiding-body-parts-diagram](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md#hiding-body-parts-diagram "mention")
 * Learn about making more variants:[#adding-an-appearance](./#adding-an-appearance "mention")
 * Create [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention")
 * Create [adding-items-atelier-integration.md](adding-items-atelier-integration.md "mention")
-* Learn about [porting-3d-objects-to-cyberpunk.md](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk.md "mention")
+* Learn about [porting-3d-objects-to-cyberpunk](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/ "mention")
 
 {% hint style="success" %}
 To start changing the existing files, check the [archive-xl-item-structure-explained.md](archive-xl-item-structure-explained.md "mention") page for "**`Making Changes`**" headers.
@@ -392,7 +392,7 @@ First of all, check the logs for errors including the name of your mod:
 * `red4ext/plugins/ArchiveXL/ArchiveXL.log`
 * `red4ext/plugins/TweakXL/TweakXL.log`
 
-Fix any errors that&#x20;
+Fix any errors that
 
 ### ArchiveXL added clipping!
 
@@ -412,7 +412,7 @@ You can find out which entity file your item uses by right-clicking on your mesh
 
 ### I can't add my item with the spawn code!
 
-When you can't spawn your item with CET, then the error is between the yaml, the factory, and the root entity.&#x20;
+When you can't spawn your item with CET, then the error is between the yaml, the factory, and the root entity.
 
 {% hint style="warning" %}
 Before you start digging into your file structure, check if there are any leftover yaml files from earlier versions/deploys in your tweaks directory. Do a full text search in e.g. Notepad++ in any files in the folder with the name of the item you want to spawn.
@@ -435,7 +435,7 @@ Check the following places:
     * Without leading or trailing spaces?
   * Does the second value of that entry have the correct root entity path?\
     (`tutorial\myshirt\root_entity.ent` in the picture above)\
-    &#xNAN;_&#x49;f you moved the `root_entity.ent`, you have to adjust this entry._
+    \&#xNAN;_If you moved the `root_entity.ent`, you have to adjust this entry._
 * `root_entity.ent:`
   * Do you have an appearance with the `name` matching your item's `appearanceName` in the yaml?
     * Without leading or trailing spaces?
@@ -644,6 +644,6 @@ By right-clicking on a tab title, you can move it to a new document group for ea
 {% endhint %}
 
 \
-Good luck, soldier.&#x20;
+Good luck, soldier.
 
 [^1]: move it to a different location than the one it's currently in

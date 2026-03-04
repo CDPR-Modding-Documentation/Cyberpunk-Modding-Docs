@@ -1,10 +1,10 @@
 # How to add new text messages thread to Cyberpunk 2077
 
-## Summary&#x20;
+## Summary
 
-Created: Apr 17 2025 by Bill&#x20;
+Created: Apr 17 2025 by Bill
 
-Last documented update: Apr 17 2025 by Bill&#x20;
+Last documented update: Apr 17 2025 by Bill
 
 This page will teach you how to create custom message threads for Cyberpunk 2077.
 
@@ -13,16 +13,13 @@ This page will teach you how to create custom message threads for Cyberpunk 2077
 To keep the project modular, it is good to use the following structure that basically mimics game structure:
 
 * **mod** – root directory for mods
-  *   **MOD\_NAME** – folder in root directory that will store everything for the mod;
+  * **MOD\_NAME** – folder in root directory that will store everything for the mod;
+    * **images** – folder that will store assets related to the images;
+    * **journal** – folder that will only store journal file;
+    * **onscreens** - folder that will store text files;
+    * **quest** - folder that will store anything related to quest progression (phases, scenes etc).
 
-      * **images** – folder that will store assets related to the images;
-      * **journal** – folder that will only store journal file;
-      * **onscreens** - folder that will store text files;
-      * **quest** - folder that will store anything related to quest progression (phases, scenes etc).
-
-
-
-<figure><img src="../../.gitbook/assets/image1 (3).png" alt=""><figcaption><p>General structure of project tree</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image1 (2).png" alt=""><figcaption><p>General structure of project tree</p></figcaption></figure>
 
 When it comes to the structure of the **quest** folder, I prefer to split it based on the rank of the quests, threads will be attached to:
 
@@ -30,7 +27,7 @@ When it comes to the structure of the **quest** folder, I prefer to split it bas
 * **minor** – in that folder questphases for the threads related to the minor quests (mostly fixer jobs, gigs or hidden mission like JinGuji);
 * **side** – in that folder questphases for the threads related to the side quests (for example Peralez’ questline, Judy questline, Panam questline etc);
 * **romance** – in that folder questphases for the threads related to the romance line with chosen character;
-* **phantom\_liberty** – in that folder questphases for the threads related to Phantom Liberty expansion;  \
+* **phantom\_liberty** – in that folder questphases for the threads related to Phantom Liberty expansion;\
   In the **quest** folder, there are already two questphases:
 * **addingnewmessages\_tutorial\_rootphase.questphase** – the main questphase of the mod that will be linked to the game via ArchiveXL.
 
@@ -121,7 +118,7 @@ When it comes to activation triggers (**\[4] Condition** and **\[5] PauseConditi
 
 Real path – it is the path to the entry in **journal** file, i.e.:
 
-<figure><img src="../../.gitbook/assets/image6 (3).png" alt=""><figcaption><p>Connection between questphase path and journal structure</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image6 (2).png" alt=""><figcaption><p>Connection between questphase path and journal structure</p></figcaption></figure>
 
 * **secondaryKey** – links the entry from the onscreens to journal entry; it is the same for every language;
 * **realPath** – links the entry from the journal to quest node

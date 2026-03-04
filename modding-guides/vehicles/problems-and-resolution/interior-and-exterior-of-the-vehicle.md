@@ -16,19 +16,19 @@ What distinguishes the interior and exterior of the vehicle is the "\_cutout" me
 
 "_cutout" can be found in "RDTDataViewMode -> appearances -> components_" within ".app"
 
-<figure><img src="../../../.gitbook/assets/image (411).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (349).png" alt=""><figcaption></figcaption></figure>
 
 Make a mesh to fit the vehicle and replace it
 
-<figure><img src="../../../.gitbook/assets/image (412).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (350).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (413).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (351).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (414).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (352).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (353).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (416).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (354).png" alt=""><figcaption></figcaption></figure>
 
 There are things to watch out for when making the "cutout" mesh It should be smaller than the outdoors But if it's too small, the water will enter the inside\
 There's some tolerance But it's better to be as accurate as possible\

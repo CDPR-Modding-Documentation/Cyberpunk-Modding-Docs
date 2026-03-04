@@ -4,8 +4,6 @@ description: Documentation of how specific quest and scene nodes work
 
 # Quest and Scene Node Definitions
 
-
-
 ## 🔀 Switch
 
 `questSwitchNodeDefinition`
@@ -126,7 +124,7 @@ Every time a signals hits **In** the node of a Flow Control:
 
 It checks the `isOpen` property. One of the following things happen:
 
-1. If it is set to true (i.e. it's opened) then the `openCounter` is incremented.&#x20;
+1. If it is set to true (i.e. it's opened) then the `openCounter` is incremented.
    1. Then a simple range check is done: has the `openCounter` we just incremented reached the `closesAt` yet?
 2. If it is set to false (i.e. it's closed) then the `closeCounter` is incremented
    1. Then a simple range check is done, has the `closeCounter` we just incremented reached the `opensAt`yet?
@@ -138,8 +136,6 @@ It checks the `isOpen` property. One of the following things happen:
 * if the currrent final flipped state = open → it forwards the signal via it's output socket
 * or if the final state is closed → it swallows/does not forward the signal
 
-
-
 What do the sockets do then? They are overrides. You can just not use `opensAt` and `closesAt` params, and use Flow Control as a simple 'latch' with the sockets alone.
 
 **The Sockets always win**
@@ -148,14 +144,10 @@ What do the sockets do then? They are overrides. You can just not use `opensAt` 
 * `Close` sets state = closed.
 * `Toggle`toggles the state.
 
-
-
 Scope:
 
 * **Scene runtime** stores the counters in the scene resource and are reset outside the scene
 * **Quest runtime** stores them in a fact scoped to the _Phase_ that owns the node
-
-
 
 If you know how to code, you can also understand the Flow Control with this Python snippet:
 
@@ -219,8 +211,6 @@ class FlowControl:
 _should wor&#x6B;_&#xB9; : This is untested but it should work. Existing scene files never never uses the sockets on a scene Flow Control node. But it should be easy to verify! If you do, please update this part of the guide or let us know in #quest-and-scenes in the Cyberpunk discord.
 {% endhint %}
 
-
-
 **Key properties**
 
 | Name       | Meaning                                               | Typical values                           |
@@ -244,11 +234,11 @@ _should wor&#x6B;_&#xB9; : This is untested but it should work. Existing scene f
 
 #### Choosing between **numbers** and **sockets**
 
-| Want                                      | Easiest choice                                               |
-| ----------------------------------------- | ------------------------------------------------------------ |
-| “Fire a fixed N times, then never again.” | Just set `opensAt / closesAt` and ignore sockets.            |
-| “Enable/disable it on command.”           | Leave numbers at `0 / 0`  and wire **Open / Close** sockets. |
-| “Cap at N but allow re-arm.”              | Window `[0-N)`, plus **Open** pin to re-arm trigger.         |
+| Want                                      | Easiest choice                                              |
+| ----------------------------------------- | ----------------------------------------------------------- |
+| “Fire a fixed N times, then never again.” | Just set `opensAt / closesAt` and ignore sockets.           |
+| “Enable/disable it on command.”           | Leave numbers at `0 / 0` and wire **Open / Close** sockets. |
+| “Cap at N but allow re-arm.”              | Window `[0-N)`, plus **Open** pin to re-arm trigger.        |
 
 ### Checklist
 
@@ -260,7 +250,7 @@ _should wor&#x6B;_&#xB9; : This is untested but it should work. Existing scene f
 
 ## **🌐Hub**
 
-`scnHubNode`&#x20;
+`scnHubNode`
 
 ### What it does
 
@@ -286,7 +276,7 @@ This is the most common use case: cleaning up the graph after several different 
 * **The Goal:** Ensure that multiple, mutually exclusive outcomes all lead to the same final step.
 * **The Mechanism:** As seen in the example image, a scene might have several FactsDBManager nodes that set different game states (holo\_setup\_active, holo\_setup\_started, holo\_setup\_ended). Each of these represents the end of a small logic branch. Instead of drawing a messy "spider web" of connections from all these nodes to a single End node, a Hub (\[289]) is used as a collector. Each FactsDBManager connects to one of the Hub's input sockets. The Hub then provides a single, clean output connection to the final End node (\[235]).
 
-<figure><img src="../../.gitbook/assets/image (636) (1).png" alt=""><figcaption><p>Hub example</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (636).png" alt=""><figcaption><p>Hub example</p></figcaption></figure>
 
 **Example 2: Re-joining after a Condition**
 
@@ -296,19 +286,13 @@ This is the most common use case: cleaning up the graph after several different 
   2. The Out sockets of both the "Corpo" and "Streetkid" Section nodes are connected to the input sockets of a single Hub.
   3. The Hub's single Out socket then connects to the next part of the scene that all players experience, regardless of which dialogue branch they took.
 
-
-
 Checklist
 
 * Use a Hub whenever you need to merge two or more execution paths into a single path or when you need to split signals
 * It's an organizational tool: stateless, with no internal logic or properties.
 * It helps keep complex scene graphs tidy and easy to read by reducing visual clutter.
 
-
-
 Note for quest hub ie `questLogicalHubNodeDefinition` - usually it's a single In socket only but it's otherwise exactly the same.
-
-
 
 ## 🚪Xor
 
@@ -344,13 +328,9 @@ It listens to all its inputs, but only allows the **very first** signal that arr
   5. **Scenario A (Player is fast):** The player picks up the phone. Node `[326]` fires, its signal passes through `Xor [104]`, and the scene continues down the "answered call" path. A few moments later, the timer in `[22]` finishes. Its signal hits the already-fired `Xor` node and is swallowed, preventing the "missed call" path from also triggering.
   6. **Scenario B (Player is slow):** The timer in `[22]` finishes first. Its signal passes through `Xor [104]` and the scene proceeds down the "missed call" path. If the player eventually picks up the phone, the signal from `[326]` hits the `Xor` and is ignored.
 
-
-
 **Example 2: Player Action vs. Proximity Trigger (The Cryo-Freezer Reveal)**
 
 <figure><img src="../../.gitbook/assets/image (640).png" alt=""><figcaption></figcaption></figure>
-
-
 
 * **Scene:** base\quest\side\_quests\sq021\scenes\sq021\_03\_trailer\_park.scene
 
@@ -366,8 +346,6 @@ It listens to all its inputs, but only allows the **very first** signal that arr
   The player and Sobchak can easily be inside the trigger area at the same time.
   * If a Hub were used, it would receive a signal from the player check and a signal from the Sobchak check, firing its output twice. This would cause the welcome dialogue in Section \[781] to restart, creating a bug.
   * The Xor guarantees that the first entity detected - whether it's the player or the NPC, triggers the scene. The Xor immediately latches shut, and when the second entity is detected moments later, that signal is simply ignored. The conversation correctly starts only once.
-
-
 
 **Checklist**
 
@@ -387,8 +365,6 @@ This is a signal-stopping node
 The And node is a **synchronization point** or a **gatekeeper**. Its purpose is to pause the execution flow until multiple, separate, parallel paths have all been completed.
 
 It waits until it has received a signal on **every single one** of its input sockets. Only when the last required signal has arrived does the And node fire a single signal from its Out socket.
-
-
 
 **Sockets**
 
@@ -420,8 +396,3 @@ This is the most common and critical use case for an And node: ensuring all nece
   * The And node acts as the rendezvous point. It doesn't matter if Roxanne spawns first or Tom spawns first. The And node will patiently wait, holding the scene, until it receives signals from both spawn checks. Only then does it allow the scene to proceed, guaranteeing that all participants are ready and the scene can play out correctly.
 
 ***
-
-
-
-
-

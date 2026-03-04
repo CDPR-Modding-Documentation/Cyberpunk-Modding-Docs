@@ -3,9 +3,9 @@
 ## Summary
 
 **Published:** July 15. 2023 by [MxOrcBoi](https://app.gitbook.com/u/YRvTJDa38nMHXIZUnmSdbzZv4lw2 "mention")\
-**Last documented edit:** Mar 24 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit:** Mar 24 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide tells you how to add a custom HUD icon for a weapon.  It is a subsection of the [weapons](../items-equipment/adding-new-items/weapons/ "mention") guide, but since the same principle applies for all parts of the UI, it can be used standalone.
+This guide tells you how to add a custom HUD icon for a weapon. It is a subsection of the [weapons](../items-equipment/adding-new-items/weapons/ "mention") guide, but since the same principle applies for all parts of the UI, it can be used standalone.
 
 ## The final result
 
@@ -13,7 +13,7 @@ This guide tells you how to add a custom HUD icon for a weapon.  It is a subsect
 
 ## Step 1: Setting up the files
 
-We need an [.inkatlas](../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md) file and a [texture](../../for-mod-creators-theory/files-and-what-they-do/materials/textures-.xbm-files.md).&#x20;
+We need an [.inkatlas](../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md) file and a [texture](../../for-mod-creators-theory/files-and-what-they-do/file-formats/materials/textures-.xbm-files.md).
 
 1. Download the correct template from the wiki's [github repository](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/_resources_and_assets/icons). For a hudicon, that's [weapons\_hudicon.zip](../../_resources_and_assets/icons/weapon_hudicon.zip)
 2. Extract both files to a fitting subfolder in your Wolvenkit project.
@@ -49,7 +49,7 @@ If you're cool with your slot's name being `your_custom_hudicon`, you can change
 
 ## Editing the .yaml file
 
-Now that you have a custom preview icon, it's time to hook it up. You do this by editing the .yaml file.&#x20;
+Now that you have a custom preview icon, it's time to hook it up. You do this by editing the .yaml file.
 
 You'll find written instructions below the screenshot.
 
@@ -70,4 +70,4 @@ Add a new property to the weapon that refers to the record you have created abov
 | `hudIcon` | `HUDWeaponIcons.TheFallout` |
 | --------- | --------------------------- |
 
-That's it! After starting the game,&#x20;
+That's it! After starting the game,

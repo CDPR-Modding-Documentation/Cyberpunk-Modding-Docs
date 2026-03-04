@@ -18,7 +18,7 @@ TL;DR:
 * Change `equipmentSlot` in the yaml (for options, see Step 1)
 * Replace the `mesh_entity` (see Step 2)
 * Replace the `.mesh` (e.g., instead of a shirt, find in-game shoes)
-* Optional: [Port an external item](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk.md)
+* Optional: [Port an external item](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/)
 {% endhint %}
 
 ## Step 1: The .yaml
@@ -46,7 +46,7 @@ You can use the following base types:
 | Slot                                                                                                            | Records                                                                                                                                                                                                                                                                                                                                 |
 | --------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | <p>Head<br><code>Items.GenericHeadClothing</code><br></p>                                                       | <p>Helmet,</p><p>HelmetHair,</p><p>Helmet_Intrinsic,<br>HelmetHair_Intrinsic,</p><p>Helmet_EP1_Intrinsic_Armor,</p><p>Helmet_EP1_Intrinsic_Runner,</p><p>Helmet_EP1_Intrinsic_ExplosionDmg,</p><p>Helmet_EP1_Intrinsic_Zoom,</p><p>Hat,</p><p>Cap,</p><p>Scarf,</p><p>ScarfHair,</p><p>Balaclava,</p><p>Balaclava_Intrinsic</p>         |
-| <p>Face<br><code>Items.Glasses</code><br><code>Items.Visor</code><br><code>Items.GenericFaceClothing</code></p> | <p>Glasses, <br>Mask, <br>Mask_Intrinsic,<br>Visor,</p><p>Visor_Intrinsic_QH,</p><p>Visor_Intrinsic_Zoom,<br>Tech,<br>Tech_Intrinsic_Zoom</p>                                                                                                                                                                                           |
+| <p>Face<br><code>Items.Glasses</code><br><code>Items.Visor</code><br><code>Items.GenericFaceClothing</code></p> | <p>Glasses,<br>Mask,<br>Mask_Intrinsic,<br>Visor,</p><p>Visor_Intrinsic_QH,</p><p>Visor_Intrinsic_Zoom,<br>Tech,<br>Tech_Intrinsic_Zoom</p>                                                                                                                                                                                             |
 | <p>Outer Torso<br><code>Items.GenericOuterChestClothing</code></p>                                              | <p>Coat,<br>Coat_Intrinsic,<br>Dress,<br>FormalJacket,<br>FormalJacket_Intrinsic,<br>Jacket,<br>Jacket_Intrinsic_Armor,<br>Jumpsuit,<br>Jumpsuit_Intrinsic,</p><p>LooseShirt,<br>Vest,<br>Vest_Intrinsic_Armor,<br>Vest_Intrinsic_Reload,<br>Vest_EP1_Intrinsic_Armor,<br>Vest_EP1_Intrinsic_Grenade,<br>Vest_EP1_Intrinsic_Inhaler</p> |
 | <p>Inner Torso<br><code>Items.GenericInnerChestClothing</code></p>                                              | <p>FormalShirt,</p><p>Shirt,<br>TankTop,</p><p>TightJumpsuit,<br>TightJumpsuit_Intrinsic,</p><p>TShirt,<br>Undershirt,<br>Undershirt_Intrinsic</p>                                                                                                                                                                                      |
 | <p>Legs<br><code>Items.GenericLegClothing</code><br><code>Items.Skirt</code></p>                                | <p>FormalPants,<br>Pants<br>Pants_Intrinsic_Armor,<br>Pants_Intrinsic_Carry,</p><p>Shorts,<br>Skirt</p>                                                                                                                                                                                                                                 |
@@ -73,24 +73,24 @@ All you need to do is adding the last two lines to your .yaml:
 When selecting an entity file, make sure to match it to the corresponding body part for your clothing item. This helps ensure that animations and placements work correctly, preventing visual glitches. Always refer to `mesh_entity.ent` for defining components properly.
 
 {% hint style="warning" %}
-When mapping clothing items to base types, keep in mind that any items defined under Head/Face **root entry types**  tend to have visual bugs in FPP(First Person Perspective).&#x20;
+When mapping clothing items to base types, keep in mind that any items defined under Head/Face **root entry types** tend to have visual bugs in FPP(First Person Perspective).
 
 Ex: defining `gloves` as anything **OTHER THAN** face/head base types is necessary to prevent visual artifacting/bugging while in FPP.
 {% endhint %}
 
 {% hint style="info" %}
-Find a full list of outfit slots in the [github readme](https://github.com/psiberx/cp2077-equipment-ex#outfit-slots).&#x20;
+Find a full list of outfit slots in the [github readme](https://github.com/psiberx/cp2077-equipment-ex#outfit-slots).
 {% endhint %}
 
 ## Step 2: the entity file
 
-Some item properties are defined in the file `mesh_entity.ent` via **components**. If you use the wrong kind of entity, you might end up with your shirt being a puddle around your feet, or [string cheese](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices-a-puddle-on-the-floor). To get around that, you need to make sure to pick a **file** that correspond's to your item's **body part.**&#x20;
+Some item properties are defined in the file `mesh_entity.ent` via **components**. If you use the wrong kind of entity, you might end up with your shirt being a puddle around your feet, or [string cheese](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices-a-puddle-on-the-floor). To get around that, you need to make sure to pick a **file** that correspond's to your item's **body part.**
 
 You can find all entity files under `base\characters\garment\player_equipment:`
 
 <figure><img src="../../../.gitbook/assets/archivexl_adding_items_mesh_entity_path.png" alt=""><figcaption><p>Pick any file from inside the correct folder.</p></figcaption></figure>
 
-If you want to be super thorough, you can stick to the right gender&#x20;
+If you want to be super thorough, you can stick to the right gender
 
 {% hint style="info" %}
 If you want to know more about components, check the [wiki page](../../../for-mod-creators-theory/files-and-what-they-do/components/). This is completely unnecessary for the purpose of this guide!
@@ -102,4 +102,4 @@ You can hide items most easily via [ArchiveXL tag](../../../for-mod-creators-the
 
 ## Footstep sounds
 
-To find the correct tags for footstep sounds, check [archivexl-tags.md](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md "mention") -> [#footsteps-setting-footwear-sounds](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#footsteps-setting-footwear-sounds "mention").
+To find the correct tags for footstep sounds, check [archivexl-tags.md](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md "mention") -> [#footsteps-setting-footwear-sounds](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md#footsteps-setting-footwear-sounds "mention").

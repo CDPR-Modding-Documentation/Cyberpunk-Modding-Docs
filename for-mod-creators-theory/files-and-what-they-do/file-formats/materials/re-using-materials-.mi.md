@@ -6,19 +6,19 @@ description: Material Instances and external materials
 
 ## Summary
 
-**Published**: Apr 5 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")        **Last documented update**: Aug 12 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published**: Apr 5 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") **Last documented update**: Aug 12 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will teach you how you can use `.mi` files to re-use materials across multiple meshes. By combining this with [archivexl-dynamic-materials.md](../../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention"), this mechanic allows **maximum flexibility**.
+This guide will teach you how you can use `.mi` files to re-use materials across multiple meshes. By combining this with [archivexl-dynamic-materials.md](../../../core-mods-explained/archivexl/archivexl-dynamic-materials.md "mention"), this mechanic allows **maximum flexibility**.
 
 ### Wait, this is not what I want!
 
-* To learn how materials work in the first place, check [3d-objects-.mesh-files](../3d-objects-.mesh-files/ "mention") -> [#material-assignment](../3d-objects-.mesh-files/#material-assignment "mention")&#x20;
+* To learn how materials work in the first place, check [3d-objects-.mesh-files](../3d-objects-.mesh-files "mention") -> [3d-objects-.mesh-files](../3d-objects-.mesh-files#material-assignment "mention")
 * You can find [configuring-materials](../../../materials/configuring-materials/ "mention") documented in their own wiki section
 * For examples of `.mi` files in action, check the player's [skin materials](../../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index)
 
 ## What is a material instance?
 
-A .mi file **encapsulates** a material in a **reusable** template file, which you can use a .mi file as `base material` in  [#material-instances](../3d-objects-.mesh-files/#material-instances "mention").
+A .mi file **encapsulates** a material in a **reusable** template file, which you can use a .mi file as `base material` in [3d-objects-.mesh-files](../3d-objects-.mesh-files#material-instances "mention").
 
 It is possible to use multiple .mi files in a row. For an example of this, check the player's [skin materials](../../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index).
 
@@ -70,19 +70,17 @@ TL;DR: Anything using this material will look like a **white** neon tube.
 
 ### Step 2: emissive\_blue.mi
 
-This file is an **external material instance** of `_emissive_base.mi`. Any properties that are **not defined** will  use the defautl values from the **.mi file**.
+This file is an **external material instance** of `_emissive_base.mi`. Any properties that are **not defined** will use the defautl values from the **.mi file**.
 
 * No `EmissiveEV` is defined, so it will use the baseMaterial's value of `4.31680632`
 * No `Emissive` mask is defined, so it will take `engine\textures\editor\white.xbm` from the `.mi`
-* A  blue [`BaseColorScale`](../../../materials/configuring-materials/tinting-textures-in-wolvenkit.md) overwrites the white glow from the .mi file, changing the glow colour
+* A blue [`BaseColorScale`](../../../materials/configuring-materials/tinting-textures-in-wolvenkit.md) overwrites the white glow from the .mi file, changing the glow colour
 
 TL;DR: Anything using this material will look like a <mark style="color:blue;">**blue**</mark> neon tube.
 
 In other words, this is how `emissive_blue.mi` actually looks:
 
 <figure><img src="../../../../.gitbook/assets/emissive_template_expanded.png" alt=""><figcaption><p>... and everything else that's <a href="../../../materials/configuring-materials/#checking-material-properties">defined inside</a> metal_base.remt</p></figcaption></figure>
-
-
 
 ## Making material templates
 

@@ -2,7 +2,7 @@
 description: How to update pose packs for Patch 2.3. and ArchiveXL 1.24
 ---
 
-# Updating Photomode Pose Packs for 2.3
+# Updating Photomode Pose Packs for 2.2
 
 ## Summary <a href="#summary" id="summary"></a>
 
@@ -14,28 +14,26 @@ This page is for both modders AND mod users who made or installed pose packs bef
 * new vanilla Photomode NPC
 * modded Photomode NPV added with ArchiveXL
 
-Luckily you only need to edit the `.yaml` and the `.xl` file!&#x20;
+Luckily you only need to edit the `.yaml` and the `.xl` file!
 
 You can use [python scripts](updating-photomode-pose-packs-for-2.2.md#by-python-script) to update all pose packs in your mod folders, or update each pose pack [by hand](updating-photomode-pose-packs-for-2.2.md#by-hand).
 
 ## By python script
 
 {% hint style="danger" %}
-MAKE A BACKUP OF YOUR MOD FILES.&#x20;
+MAKE A BACKUP OF YOUR MOD FILES.
 
 Create a folder on your desktop (or anywhere that isn't your Cyberpunk2077 folder) with a copy of all the .xl files in your `archive/pc/mods` folder, and also make a copy of your `r6/tweaks` folder before proceeding.
 
-Tip: The quick and dirty way I do this is by selecting the files or folder I want to make a backup of, and then right clicking and sending it to a zip file. \
-If I mess up, I unzip the backup file and overwrite the files in my mod folders.&#x20;
+Tip: The quick and dirty way I do this is by selecting the files or folder I want to make a backup of, and then right clicking and sending it to a zip file.\
+If I mess up, I unzip the backup file and overwrite the files in my mod folders.
 {% endhint %}
 
-1. **Download** these two Python Scripts from GitHub using the download button ⬇ on the far right. \
-   Save them somewhere in your computer. (I have a dedicated folder for Python scripts now)&#x20;
+1. **Download** these two Python Scripts from GitHub using the download button ⬇ on the far right.\
+   Save them somewhere in your computer. (I have a dedicated folder for Python scripts now)
    1. [**Convert Photomode XL files**](https://github.com/nut-boy/CyberpunkScripts/blob/main/convert_xl_for_photomodeNPV.py)
    2. [**Convert Photomode YAML files**](https://github.com/nut-boy/CyberpunkScripts/blob/main/convert_yaml_for_photomodeNPV.py)
-2. If it's your first time, follow the wiki guide for [running Python scripts.](../../../../for-mod-creators/modding-guides/everything-else/running-python-scripts.md) Setup is fast and easy.
-
-
+2. If it's your first time, follow the wiki guide for [running Python scripts.](../../../../for-mod-creators-theory/3d-modelling/blender-getting-started/running-python-scripts.md) Setup is fast and easy.
 
 ### Processing the .xl files
 
@@ -58,10 +56,10 @@ The script will now process all of your .xl files, adding the necessary scopes. 
 
 ### Processing the .yaml files
 
-Next, we'll process the .yaml files.&#x20;
+Next, we'll process the .yaml files.
 
 1. Go back to the command window from the previous section's step 1
-2. Type or paste `pip install pyyaml` into command prompt and press enter.  \
+2. Type or paste `pip install pyyaml` into command prompt and press enter.\
    It will confirm the install.
 3. Type the following and press enter (you can autocomplete with the `Tab` key):
 
@@ -78,14 +76,14 @@ python convert_yaml_for_photomodeNPV.py
 
 ### Checking the results
 
-Open your game and look for any broken pose packs.&#x20;
+Open your game and look for any broken pose packs.
 
-If they don't work correctly in new Photomode even after using the scripts, it's likely there was an issue in the formatting of the original mod file.&#x20;
+If they don't work correctly in new Photomode even after using the scripts, it's likely there was an issue in the formatting of the original mod file.
 
-You can check over the pose pack's yaml/xl for errors yourself (if you feel comfortable doing this), or ask the modder to revise it.&#x20;
+You can check over the pose pack's yaml/xl for errors yourself (if you feel comfortable doing this), or ask the modder to revise it.
 
 {% hint style="info" %}
-**I**f you're a modder who makes pose packs, you can also use these scripts on your mod's packed folder (instead of your installed mods folder) to automate updating for patch 2.3 NPCs & ArchiveXL 1.24 Photomode NPVs.&#x20;
+**I**f you're a modder who makes pose packs, you can also use these scripts on your mod's packed folder (instead of your installed mods folder) to automate updating for patch 2.3 NPCs & ArchiveXL 1.24 Photomode NPVs.
 
 If you already updated your mod for 2.3, you can run the scripts anyway, but they won't (shouldn't) do anything that isn't empty lines.
 {% endhint %}
@@ -107,7 +105,7 @@ If you don't have any of those sections (because your poses are only for one bod
 
 #### 1. Create a yaml anchor
 
-Find the line `photo_mode.character.femalePoses:`  and change it:
+Find the line `photo_mode.character.femalePoses:` and change it:
 
 ```yaml
 #before
@@ -116,7 +114,7 @@ photo_mode.character.femalePoses:
 photo_mode.character.femalePoses: &AddPosesF
 ```
 
-Find the line `photo_mode.character.malePoses:`  and change it:
+Find the line `photo_mode.character.malePoses:` and change it:
 
 ```yaml
 #before
@@ -205,5 +203,5 @@ photo_mode.character.roycePoses: *AddPosesM
 </code></pre>
 
 {% hint style="success" %}
-You're done! **You can now use your pose pack with Photomode NPCs & AXL Photomode NPV.**&#x20;
+You're done! **You can now use your pose pack with Photomode NPCs & AXL Photomode NPV.**
 {% endhint %}

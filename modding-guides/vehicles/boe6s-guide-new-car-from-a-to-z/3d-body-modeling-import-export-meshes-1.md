@@ -6,7 +6,7 @@ description: Manual Import
 
 ### Importing the first .mesh
 
-In **Wkit**, open the `.app` file and navigate to the default appearance. Open the components and find “`body_01`” and expand it. Look for the “`mesh`” value, and add it to your project.&#x20;
+In **Wkit**, open the `.app` file and navigate to the default appearance. Open the components and find “`body_01`” and expand it. Look for the “`mesh`” value, and add it to your project.
 
 {% hint style="info" %}
 If you used the blender script when exporting to blender, this file will already be in your project explorer.
@@ -16,7 +16,7 @@ Example:
 
 <figure><img src="../../../.gitbook/assets/image77.png" alt=""><figcaption></figcaption></figure>
 
-Use the **export tool** as we did with the proxy mesh to convert it to a `.glb` file.&#x20;
+Use the **export tool** as we did with the proxy mesh to convert it to a `.glb` file.
 
 Import this `body.glb` file into the blender project.
 
@@ -58,12 +58,12 @@ Copy the original file’s name, delete it, and rename your new part with the ol
 
 Open the import tool in wkit, find the correct body `.glb` and import it into the game.
 
-Select the updated `.mesh` file in the **Project Explorer**, and it will open in the **File Information** window. It should show your new mesh. \
+Select the updated `.mesh` file in the **Project Explorer**, and it will open in the **File Information** window. It should show your new mesh.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image29 (1).png" alt=""><figcaption></figcaption></figure>
 
-Rename your new `.mesh` file to a project-specific name, and move it to a custom folder. \
+Rename your new `.mesh` file to a project-specific name, and move it to a custom folder.\
 Example:
 
 “`boe6\mini_cooper\meshes\boe6_mini_cooper_body.mesh`”
@@ -73,20 +73,20 @@ Update your .app file with the path to the new body file. You’ll need to updat
 * `RDTDataViewModel > appearances > 0 > components > body_01 > mesh`
 * `RDTDataViewModel > appearances > 0 > components > AppearanceVisualController > appearanceDependancy > body_01 > mesh`
 
-Test the mod in-game. It should look very wrong since we only replaced one mesh. \
+Test the mod in-game. It should look very wrong since we only replaced one mesh.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image176.png" alt=""><figcaption></figcaption></figure>
 
 Optionally, we can make all other visible components invisible while we’re modeling.
 
-Easiest way to mark components as invisible is to break the `entPhysicalMeshComponent` appearances path.&#x20;
+Easiest way to mark components as invisible is to break the `entPhysicalMeshComponent` appearances path.
 
 * `RDTDataViewModel > appearances > 0 > components > entMeshComponent/entPhysicalMeshComponent > meshname > mesh`
 
 I do this by renaming the file with an added “`-disabled`” in the name. This breaks the file path, and notes that it is disabled for reference later. example:
 
-<figure><img src="../../../.gitbook/assets/image1 (2).png" alt=""><figcaption><p>disregard "entVisualController". See note below</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image1 (1).png" alt=""><figcaption><p>disregard "entVisualController". See note below</p></figcaption></figure>
 
 {% hint style="info" %}
 Note: This method used to use the entVisualController to disable visibility. Thanks to **TheSpliffz** who corrected this method to the physical component path.
@@ -96,7 +96,7 @@ You may receive a warning in the log when saving the .mesh if you use this metho
 
 <figure><img src="../../../.gitbook/assets/image183.png" alt=""><figcaption></figcaption></figure>
 
-Save and test in-game. The renamed component should now not render in-game. \
+Save and test in-game. The renamed component should now not render in-game.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image90.png" alt=""><figcaption></figcaption></figure>
@@ -119,7 +119,7 @@ Repeat the above instructions as many times as needed.
 
 ### Adding Glass meshes
 
-For the non-moving windows, we’ll start by enabling the vanilla mesh by removing the “`-disabled`” tag. Then we can add the mesh to our project. Move/rename your files as appropriate. \
+For the non-moving windows, we’ll start by enabling the vanilla mesh by removing the “`-disabled`” tag. Then we can add the mesh to our project. Move/rename your files as appropriate.\
 Example:
 
 {% hint style="info" %}
@@ -130,7 +130,7 @@ Moving windows, such as the front door windows, can be created after the "Riggin
 
 Update the `.app` file with both `.mesh` paths for the component.
 
-Export it to `.glb`, replace it with your model’s window, and import it back.&#x20;
+Export it to `.glb`, replace it with your model’s window, and import it back.
 
 Save and Test.
 
@@ -142,19 +142,19 @@ Save and test.
 
 ### Adding new components to your .app file
 
-To add a new component instead of replacing a default one, you can duplicate the `entVisualControllerDependency` of the most similar component by right-clicking and selecting “`Duplicate Item in Array/Buffer`”. \
+To add a new component instead of replacing a default one, you can duplicate the `entVisualControllerDependency` of the most similar component by right-clicking and selecting “`Duplicate Item in Array/Buffer`”.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image144.png" alt=""><figcaption></figcaption></figure>
 
 Edit the new component’s “`componentName`”, here I use “`body_02`”, as it is for exterior trim bodywork.
 
-Edit the “`mesh`” value to the correct new `.mesh` file. \
+Edit the “`mesh`” value to the correct new `.mesh` file.\
 Example:
 
 “`boe6\mini_cooper\meshes\boe6_mini_cooper_body_trim.mesh`”
 
-You also need to duplicate the `entPhysicalMeshComponent` of the part you are copying. Rename it with the “`name`” value to the one you used earlier, (`body_02`). Set the “`mesh`” value to the same mesh path. \
+You also need to duplicate the `entPhysicalMeshComponent` of the part you are copying. Rename it with the “`name`” value to the one you used earlier, (`body_02`). Set the “`mesh`” value to the same mesh path.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image82.png" alt=""><figcaption></figcaption></figure>
@@ -169,7 +169,7 @@ Read through these to see if you can address these issues before moving on to th
 
 If your model is rendering the wrong side of the model, (outside parts are only rendering looking from inside to out), then you’ll need to flip the normals in blender. (edit mode > normals > flip)
 
-&#x20;Broken example:
+Broken example:
 
 <figure><img src="../../../.gitbook/assets/borkedNormals.PNG" alt=""><figcaption></figcaption></figure>
 
@@ -216,4 +216,3 @@ If your UV maps are incorrect, they may look unbalanced like this:
 <figure><img src="../../../.gitbook/assets/warpedUVMaps.PNG" alt=""><figcaption></figcaption></figure>
 
 This is a common issue and is fixed with UV mapping. This is described later in the Textures & Materials section further on. You can safely ignore this issue for now.
-

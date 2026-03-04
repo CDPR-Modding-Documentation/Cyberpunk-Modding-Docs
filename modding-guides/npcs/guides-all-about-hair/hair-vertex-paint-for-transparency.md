@@ -6,14 +6,14 @@ description: How vertex paint makes better hairs
 
 ## Summary
 
-**Published:** Jan 18 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") based on research by [IslandDancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
-**Last documented edit:** Jan 18 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")&#x20;
+**Published:** Jan 18 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") based on research by [island\_dancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
+**Last documented edit:** Jan 18 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page explains how to use Blender's **Vertex Paint** mode to make better and more natural-looking hair.
 
 ### Wait, this is not what I want!
 
-* Check out [hair-modeling-beginner-tutorial.md](../../../for-mod-creators-theory/3d-modelling/hair-modeling-beginner-tutorial.md "mention") for how to create hair from scratch in Blender
+* Check out [hair-modeling-beginner-tutorial](../../../for-mod-creators-theory/3d-modelling/hair-modeling-beginner-tutorial/ "mention") for how to create hair from scratch in Blender
 * Browse [.](./ "mention") in the left submenu to find all of our hair guides
 
 ## Do I want this?
@@ -50,4 +50,3 @@ However, it's likely that vertex paint color gets mapped onto shader attributes 
 <figure><img src="../../../.gitbook/assets/hair_modding_vertex_paint.png" alt=""><figcaption><p>Exhibit A: <a href="https://www.nexusmods.com/cyberpunk2077/mods/19096">Faith's Hair</a> by Island Dancer</p></figcaption></figure>
 
 ## Video
-

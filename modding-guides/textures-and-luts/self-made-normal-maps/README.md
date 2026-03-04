@@ -184,7 +184,7 @@ Find the "Render Properties" tab.
    8. **Margin / Size:** 16px (or whatever suits you)
 3. **Save. Your. File.**
 
-<figure><img src="../../../.gitbook/assets/normal_maps_final (1).png" alt=""><figcaption><p>Things are looking like this now? Great, then click "Bake"!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/normal_maps_final.png" alt=""><figcaption><p>Things are looking like this now? Great, then click "Bake"!</p></figcaption></figure>
 
 {% hint style="info" %}
 Baking takes time (several minutes) and most of your PC's free resources. This is normal.
@@ -251,20 +251,20 @@ This is a workaround and won't solve the problem. If you know how to fix this fo
 {% endhint %}
 
 Here is an example of the issue :\
-![](<../../../.gitbook/assets/image (5) (1) (1) (1).png>)
+![](<../../../.gitbook/assets/image (410).png>)
 
 Open the UV of your 3D model and select the vertices that are outside on the left of your UV
 
 \
-![](<../../../.gitbook/assets/image (6) (1) (1) (1).png>)\\
+![](<../../../.gitbook/assets/image (411).png>)\\
 
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1).png" alt=""><figcaption><p><br>Press P and then click on Selection</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (412).png" alt=""><figcaption><p><br>Press P and then click on Selection</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (10) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (414).png" alt=""><figcaption></figcaption></figure>
 
 1. Now you have two separate submeshes. Export them both into the same .glb file for Wolvenkit.
 2. Open Photoshop, Paint.net or [Photopea](https://www.photopea.com/) to invert the **green** channel. Save your new .png under a name like \<name\_inverted\_n> \\
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Import your inverted normal map in Wolvenkit. Now, you can create a new material for the normal-inverted parts of your mesh!

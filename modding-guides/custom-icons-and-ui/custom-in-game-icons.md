@@ -36,7 +36,7 @@ This includes the following files:
 | 5\_weapons                    | 360x120 (x5)       |
 | 40\_items\_inkatlas\_template | 160x160 (x40)      |
 
-<figure><img src="../../.gitbook/assets/image (344).png" alt=""><figcaption><p>The template provided contains these folders</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (203).png" alt=""><figcaption><p>The template provided contains these folders</p></figcaption></figure>
 
 **Template Credits: Apart**
 
@@ -86,4 +86,4 @@ We are renaming both files to `preview_icons` to avoid confusion in the future:
     atlasPartName: slot_01
 ```
 
-<figure><img src="../../.gitbook/assets/image (210).png" alt=""><figcaption><p>Image B (Optional)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (205).png" alt=""><figcaption><p>Image B (Optional)</p></figcaption></figure>

@@ -20,16 +20,14 @@ The following graph is a visualization of the Questphase file:
 /dlc\dlc6_apart\loc_dlc6_apart_hey_gle\quest\phases\dlc6_apart_hey_gle.questphase
 ```
 
-<figure><img src="../../.gitbook/assets/image (298).png" alt=""><figcaption><p>Node editor</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (159).png" alt=""><figcaption><p>Node editor</p></figcaption></figure>
 
-### To visualize Questphase in Wolvenkit we need to:&#x20;
+### To visualize Questphase in Wolvenkit we need to:
 
-* Identify and locate a .questphase file on the Asset browser.&#x20;
+* Identify and locate a .questphase file on the Asset browser.
 * Click on "Add it to the project" or "open without adding to the project" (image A)
 * When you open the .questphase file you'll see first a "resource" window with all the questphase dependencies/archives and info. (Image B)
 * Switch to Graph editor on the tabs (image C)
-
-
 
 <figure><img src="../../.gitbook/assets/WKit - F.jpg" alt=""><figcaption></figcaption></figure>
 

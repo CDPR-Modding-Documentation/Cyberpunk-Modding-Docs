@@ -6,8 +6,8 @@ description: How to hot reload things with RedHotTools
 
 ## Summary
 
-**Published:** Aug 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit:** Aug 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** Aug 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** Aug 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page describes Red Hot Tools's **Hot Reload mechanism**.
 
@@ -17,10 +17,10 @@ Although there is a CET overlay, Hot Reload is fully integrated with Wolvenkit a
 
 ### The theory
 
-As you know, Cyberpunk 2077 loads its mods from `archive/pc/mod`. While you run around in Night City, it will keep them open and use the files inside as it needs them.&#x20;
+As you know, Cyberpunk 2077 loads its mods from `archive/pc/mod`. While you run around in Night City, it will keep them open and use the files inside as it needs them.
 
 {% hint style="info" %}
-As far as the game is concerned, the `.archive` files never change.&#x20;
+As far as the game is concerned, the `.archive` files never change.
 {% endhint %}
 
 By placing `.archive`s inside the `hot` folder, you put them under the control of RHT, which will add them to the game's internal pool of never-changing content:
@@ -29,7 +29,7 @@ By placing `.archive`s inside the `hot` folder, you put them under the control o
 
 ### But the folder is always empty!
 
-That's because RHT moves the file into `mods` and splices them into the game's resource pool.&#x20;
+That's because RHT moves the file into `mods` and splices them into the game's resource pool.
 
 {% hint style="info" %}
 Don't worry if your files disappear from `hot`, that means everything is working as intended.
@@ -55,7 +55,7 @@ Simply push the "Hot Reload" button in your toolbar:
 
 ### Visual Studio Code
 
-You can download the RHT plugin `red-hot-vscode-x.x.x.vsix` from [github](https://github.com/psiberx/cp2077-red-hot-tools/releases/):&#x20;
+You can download the RHT plugin `red-hot-vscode-x.x.x.vsix` from [github](https://github.com/psiberx/cp2077-red-hot-tools/releases/):
 
 <figure><img src="../../../.gitbook/assets/rht_vscode_github.png" alt=""><figcaption></figcaption></figure>
 
@@ -70,7 +70,7 @@ Hot Reload is integrated with [Cyber Engine Tweaks](https://app.gitbook.com/o/-M
 
 ### Archives
 
-Here, you can manually trigger a reload of archive extensions (read: `.xl` files). \
+Here, you can manually trigger a reload of archive extensions (read: `.xl` files).\
 You only have to do this if you edit an .xl file in `archive/pc/mods`.
 
 {% hint style="warning" %}
@@ -81,17 +81,16 @@ Pushing the button will not reload `.archive` files. RHT will do that automatica
 
 ### Scripts
 
-Here, you can manually trigger a reload.&#x20;
+Here, you can manually trigger a reload.
 
 _You can do this via by running "Hot Reload Scripts" from Visual Studio Code_
 
-<figure><img src="../../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (408).png" alt=""><figcaption></figcaption></figure>
 
 ### Tweaks
 
-Here, you can manually trigger a reload.&#x20;
+Here, you can manually trigger a reload.
 
 _You can do this via by running "Hot Reload Scripts" from Visual Studio Code_
 
 <figure><img src="../../../.gitbook/assets/rht_hot_reload__tweaks.png" alt=""><figcaption></figcaption></figure>
-

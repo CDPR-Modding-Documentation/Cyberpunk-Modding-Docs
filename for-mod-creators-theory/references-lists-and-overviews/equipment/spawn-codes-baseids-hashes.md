@@ -92,7 +92,7 @@ If you can't find any files with the method below, scroll to [#alternative-metho
 1. Inside the .app file, open the `appearances` array
 2. You will see something like this. The suffices are for body gender and camera mode:
 
-<figure><img src="../../../.gitbook/assets/image (112).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (85).png" alt=""><figcaption></figcaption></figure>
 
 3. Find the appearance you want (`basic_02_w` or `basic_02_m`) and open it.
 4. Open the `components` array and find the component that has `mesh` in its name:

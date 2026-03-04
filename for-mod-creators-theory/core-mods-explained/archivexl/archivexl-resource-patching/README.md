@@ -10,16 +10,16 @@ description: Modify resources in a non-conflicting ways and reuse definitions.
 **Last documented update:** July 23 2024 by [Zhincore](https://app.gitbook.com/u/OsI9JXgCSSbt40hb327iBDif7Xv1 "mention")
 
 {% hint style="danger" %}
-The example below uses **mesh materials**, but these aren't even the tip of the iceberg. By using this technique, we can re-work everything, from CDPR's messed-up material paths up to the character creator.&#x20;
+The example below uses **mesh materials**, but these aren't even the tip of the iceberg. By using this technique, we can re-work everything, from CDPR's messed-up material paths up to the character creator.
 
-You can find a guide under [archivexl-patching-appearances.md](../../../../modding-guides/items-equipment/editing-existing-items/archivexl-patching-appearances.md "mention")
+You can find a guide under [archivexl-patching-appearances.md](archivexl-patching-appearances.md "mention")
 {% endhint %}
 
-This page explains **resource patching,** a very powerful ArchiveXL feature that lets you modify resources **without conflicting** with other mods or even game updates. \
+This page explains **resource patching,** a very powerful ArchiveXL feature that lets you modify resources **without conflicting** with other mods or even game updates.\
 Also allows you to reuse e.g. material definitions in multiple meshes, possibilities are endless!
 
 {% hint style="success" %}
-For the most efficient way to define multiple materials, check out [archivexl-dynamic-materials.md](../../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention")!
+For the most efficient way to define multiple materials, check out [archivexl-dynamic-materials.md](../archivexl-dynamic-materials.md "mention")!
 {% endhint %}
 
 ## Why do I need this?
@@ -58,7 +58,7 @@ And just like that, it will work. All your meshes will have the materials you de
 
 ## What else can I patch?
 
-You can patch pretty much any `.ent`, `.app` or `.mesh` file! Give it a try via `.xl` file.&#x20;
+You can patch pretty much any `.ent`, `.app` or `.mesh` file! Give it a try via `.xl` file.
 
 ## What is the minimal patching level?
 
@@ -79,7 +79,7 @@ original_mesh:                          patch_mesh:
     black_material: multilayered.mt         black_material: metal_base.remt
 ```
 
-After patching, `appearance_black` would use `metal_base.remt`,  while `appearance_black_2` would still use `multilayered.mt`.
+After patching, `appearance_black` would use `metal_base.remt`, while `appearance_black_2` would still use `multilayered.mt`.
 
 ### .ent file
 
@@ -132,7 +132,7 @@ resource:
 You can't overwrite scopes, and you can't remove anything from them. Only appending is possible!
 {% endhint %}
 
-## Partial templates: @Context&#x20;
+## Partial templates: @Context
 
 ### Different parameters per .mesh
 
@@ -148,7 +148,7 @@ This only works for **dynamic** materials — e.g. `@material`!
 
 This is for the mesh that you will be patching.
 
-1. Create a material entry called `@context`.  This must be the first material in your list:
+1. Create a material entry called `@context`. This must be the first material in your list:
 
 <figure><img src="../../../../.gitbook/assets/resource_patching_context.png" alt=""><figcaption></figcaption></figure>
 
@@ -166,4 +166,3 @@ Any dynamic material inside your patch mesh can now **resolve substitution** for
 <figure><img src="../../../../.gitbook/assets/resource_patching_patch_mesh.png" alt=""><figcaption></figcaption></figure>
 
 ... and that's it. Depending on your defined parameters, the material will now have a different normal map per mesh (or fall back to the default parameter if it can't be resolved).
-

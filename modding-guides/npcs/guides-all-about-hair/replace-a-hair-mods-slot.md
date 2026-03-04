@@ -20,8 +20,6 @@ This guide will walk through the basic steps of how to change a hair mod to corr
 You will need a [Wolvenkit Project](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-projects) to search and edit files. If you don't know how to make one check out [R\&R: Your own Wolvenkit project](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/items-equipment/recolours-and-refits/r-and-r-your-own-wolvenkit-project)
 {% endhint %}
 
-
-
 ## Step 0: Get the modded files
 
 {% hint style="success" %}
@@ -32,7 +30,7 @@ TL;DR: You need to add all files from the hair mod to your project. If you don't
 2. Locate your hair mod
 
 {% hint style="info" %}
-You can find files by mod by searching for `archive:hairmod_slot_1`,  or by finding the mod in the mod browser's list.
+You can find files by mod by searching for `archive:hairmod_slot_1`, or by finding the mod in the mod browser's list.
 {% endhint %}
 
 3. Add all files inside the mod to your project. These files will be called "your hair" in the rest of this guide.
@@ -48,14 +46,14 @@ base\characters\head\player_base_heads\appearances\hairs
 ```
 
 * Yes (left): Proceed to [#files-with-an-.app-file](replace-a-hair-mods-slot.md#files-with-an-.app-file "mention")
-* No (right):  Proceed to [#files-without-an-.app-file](replace-a-hair-mods-slot.md#files-without-an-.app-file "mention")
+* No (right): Proceed to [#files-without-an-.app-file](replace-a-hair-mods-slot.md#files-without-an-.app-file "mention")
 * Everything is in the root, and you have no idea which is which:[#files-a-bunch-of-borked-files-in-your-projects-root](replace-a-hair-mods-slot.md#files-a-bunch-of-borked-files-in-your-projects-root "mention")
 
-<figure><img src="../../../.gitbook/assets/image (1) (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (545).png" alt=""><figcaption></figcaption></figure>
 
 ### Files: A bunch of borked files in your project's root
 
-Happens when a mod has been packed with incompatible Wolvenkit versions.&#x20;
+Happens when a mod has been packed with incompatible Wolvenkit versions.
 
 1. Delete all files - we'll start over
 2. Starting with Wolvenkit 8.15, you can find a scan button in the Asset Browser. If you do not have it, install a [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases).
@@ -68,9 +66,9 @@ Happens when a mod has been packed with incompatible Wolvenkit versions.&#x20;
 
 The modder has taken and overwritten original game assets, and you'll have to do the same.
 
-<figure><img src="../../../.gitbook/assets/image (538).png" alt=""><figcaption><p><em>My hair mesh brings em all to the yard</em></p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (543).png" alt=""><figcaption><p><em>My hair mesh brings em all to the yard</em></p></figcaption></figure>
 
-&#x20;In this section, we'll do the following things:
+In this section, we'll do the following things:
 
 * Find a compatible hair in the files
 * Move your hair to overwrite that one instead
@@ -93,8 +91,8 @@ Let's get started:
 
 <figure><img src="../../../.gitbook/assets/hair_mod_slot_components.png" alt=""><figcaption></figcaption></figure>
 
-4. This hair has  `.rig` and `.animgraph` files, which means that it has physics. Does your hair have those files included?
-   * **Yes:** You can use this hair. Continue to #5&#x20;
+4. This hair has `.rig` and `.animgraph` files, which means that it has physics. Does your hair have those files included?
+   * **Yes:** You can use this hair. Continue to #5
    * **No:** You can't use this hair. Go back to the previous section and pick a different hair slot from the list.
 
 {% hint style="info" %}
@@ -111,35 +109,33 @@ You will reassign the hair to a different slot by **overwriting different game f
 
 1. Right-click on a mesh and click on rename (can be done using shortcut key F2) and type the desired slot's mesh name along with its cyberware version
 
-<figure><img src="../../../.gitbook/assets/image (530).png" alt=""><figcaption><p>Type your desired mesh name in your mesh!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (535).png" alt=""><figcaption><p>Type your desired mesh name in your mesh!</p></figcaption></figure>
 
-2. Repeat this with all files for your hair.&#x20;
+2. Repeat this with all files for your hair.
 3. Your project browser will now look like this:
 
-<figure><img src="../../../.gitbook/assets/image (532).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (537).png" alt=""><figcaption></figcaption></figure>
 
 4. Drag each of the files to the new mesh's folder (`hh_089_ma_thompson`)
 5. You will see a dialogue asking you to overwrite. Select "Yes":
 
-<figure><img src="../../../.gitbook/assets/image (533).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (538).png" alt=""><figcaption></figcaption></figure>
 
-6. Delete the now empty folder `hh_033_wa_player`.  We don't need it anymore.
+6. Delete the now empty folder `hh_033_wa_player`. We don't need it anymore.
 
 {% hint style="success" %}
 You're done here! Proceed to [#pack-n-go](replace-a-hair-mods-slot.md#pack-n-go "mention")
 {% endhint %}
 
-
-
 ### Files: With an .app file
 
 The modder has overwritten the hair's **control files**. It should look like this (subfolder names can vary):
 
-<figure><img src="../../../.gitbook/assets/image (1) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (544).png" alt=""><figcaption></figcaption></figure>
 
 This is good news, because it's the easy case. You only need to do two things:
 
-* Pick a new hair slot&#x20;
+* Pick a new hair slot
 * Move your .app files to overwrite the ones from that hair.
 
 Let's get started.
@@ -149,7 +145,7 @@ Let's get started.
    `hh_003_pwa__hairs_89 > .app`
 3. Add all these files to your project:
 
-<figure><img src="../../../.gitbook/assets/image (2) (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (546).png" alt=""><figcaption></figcaption></figure>
 
 Now, we need to overwrite all these files with the ones from our other mod.
 
@@ -159,7 +155,7 @@ Now, we need to overwrite all these files with the ones from our other mod.
 
 #### Wait, we're missing a file!
 
-1. Your mod didn't have `hh_003_pwa__hairs_89_cyberware_01.app`.&#x20;
+1. Your mod didn't have `hh_003_pwa__hairs_89_cyberware_01.app`.
 2. _Optional: Take a moment to curse these incompetent guide writers, or yell very loud._
 3. Select `hh_003_pwa__hairs_89.app` in the mod browser
 4. Hold the ctrl key down and drag it on itself
@@ -176,7 +172,7 @@ Now that you've done replacing the mesh files, confirm that your mod worked by c
 
 You can also click on the down arrow next to install and set to "Install and Launch" to do these two steps for you!
 
-<figure><img src="../../../.gitbook/assets/image (534).png" alt=""><figcaption><p>Life is so fun when you have something like WolvenKit!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (539).png" alt=""><figcaption><p>Life is so fun when you have something like WolvenKit!</p></figcaption></figure>
 
 {% hint style="info" %}
 The quickest way to check if your hair slot change has worked is by making a new game and see the changes in hair style selection.
@@ -198,7 +194,7 @@ If your mod does not have any `.app` files, you have the following options:
 
 * Overwrite it with a duplicate: just duplicate one of the existing files, and add it a second time. This may cause clipping.
 * You can overwrite it with a shadow mesh:
-  * &#x20;Search for `base\characters\common\hair\shadow_meshes\hh_ > wa` (`> ma` for a masc V)
+  * Search for `base\characters\common\hair\shadow_meshes\hh_ > wa` (`> ma` for a masc V)
   * Find something that looks vaguely similar
   * overwrite
 * You can find a different hair to overwrite
@@ -206,6 +202,3 @@ If your mod does not have any `.app` files, you have the following options:
 #### A .rig or .anim file
 
 You need to find a different hair to overwrite.
-
-
-

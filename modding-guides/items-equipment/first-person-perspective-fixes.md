@@ -5,9 +5,9 @@ description: Common Problems and How to Fix Them
 # First Person Perspective Fixes
 
 **Published:** October 08 2023 by [FronkenZeepa](https://app.gitbook.com/u/pj9Ccv6IrMVhmNUW9HVbn6CYZ2B2 "mention")\
-**Last documented update:** February 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** February 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-In this guide, I will do my best to address the most common first person issues I've seen, and how to fix them.&#x20;
+In this guide, I will do my best to address the most common first person issues I've seen, and how to fix them.
 
 ## **Prerequisite and other relevant Guides**
 
@@ -31,7 +31,7 @@ To implement anything in this guide, you will need [a Wolvenkit project](https:/
 {% hint style="warning" %}
 **If you are modifying someone else's mod**:
 
-If you are changing someone else's mod, the easiest thing is to [name your Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order) the same as the mod's `.archive` file and add all the files from the original mod. You can do that by switching to the [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) and [searching](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `archive:name_of_file`&#x20;
+If you are changing someone else's mod, the easiest thing is to [name your Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#project-naming-and-mod-load-order) the same as the mod's `.archive` file and add all the files from the original mod. You can do that by switching to the [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) and [searching](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `archive:name_of_file`
 
 For more information on this, read [here](recolours-and-refits/r-and-r-your-own-wolvenkit-project.md#a-full-repack).
 {% endhint %}
@@ -42,44 +42,40 @@ If you're creating a fix for someone else's asset, why not drop them the final f
 
 ## Problem #1: Your sleeves render _behind_ your arms
 
-<figure><img src="../../.gitbook/assets/image (286).png" alt=""><figcaption><p>(This can also present itself as rendering behind the body when you look down, for shirts, pants, shoes, etc.)</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (137).png" alt=""><figcaption><p>(This can also present itself as rendering behind the body when you look down, for shirts, pants, shoes, etc.)</p></figcaption></figure>
 
 This is probably the most common problem I've seen, and is also thankfully the easiest to fix.
 
 ### Solution
 
-1.  Open up the [mesh entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity) (`.ent`) file for the item you need to fix:
+1.  Open up the [mesh entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity) (`.ent`) file for the item you need to fix:
 
-    <figure><img src="../../.gitbook/assets/image (354).png" alt=""><figcaption><p>There are no appearances in a mesh entity file!</p></figcaption></figure>
-2.  Expand the `components` array, then find any `component`s with `Mesh` in their types, and check if they require fixing. In my example project, it's both the jacket and the sleeves.&#x20;
+    <figure><img src="../../.gitbook/assets/image (138).png" alt=""><figcaption><p>There are no appearances in a mesh entity file!</p></figcaption></figure>
+2.  Expand the `components` array, then find any `component`s with `Mesh` in their types, and check if they require fixing. In my example project, it's both the jacket and the sleeves.
 
-    <figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption><p>You might have to hunt around to find the right component, depending on how many there are.</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (139).png" alt=""><figcaption><p>You might have to hunt around to find the right component, depending on how many there are.</p></figcaption></figure>
 3.  Scroll down and find the array `renderingPlaneAnimationParam`_,_ which will most likely be grayed out.
 
-    <figure><img src="../../.gitbook/assets/image (356).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (140).png" alt=""><figcaption></figcaption></figure>
 4.  Click on it. In the right pane, change `None` to renderPlane.
 
-    <figure><img src="../../.gitbook/assets/image (357).png" alt=""><figcaption><p>Make sure to follow the same capitalization, otherwise it won't work!</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (141).png" alt=""><figcaption><p>Make sure to follow the same capitalization, otherwise it won't work!</p></figcaption></figure>
 
 {% hint style="info" %}
 Instead of `renderPlane`, you can also use `renderPlaneLeftArm` and `renderPlaneRightArm` individually.
 {% endhint %}
 
-
-
 5. Repeat this process for any other component, as needed
 6. When finished, save the file (either Ctrl + S or the Save button top left).
 7.  Install and test the mod in-game. If you did it correctly, your sleeves should now render properly.
 
-    <figure><img src="../../.gitbook/assets/image (358).png" alt=""><figcaption><p>Oh look, sleeves!</p></figcaption></figure>
-
-
+    <figure><img src="../../.gitbook/assets/image (142).png" alt=""><figcaption><p>Oh look, sleeves!</p></figcaption></figure>
 
 ## Problem #2: It's in your face (#justStormtrooperThings)
 
-<figure><img src="../../.gitbook/assets/image (359).png" alt=""><figcaption><p>Still better than wearing a <em>real</em> helmet.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (143).png" alt=""><figcaption><p>Still better than wearing a <em>real</em> helmet.</p></figcaption></figure>
 
-To fix this problem, you need to **hide** your item in first person perspective.&#x20;
+To fix this problem, you need to **hide** your item in first person perspective.
 
 This part of the guide will show you how to turn the entire item invisible. If you don't want that, check [#problem-3-partial-hiding-justdraculathings](first-person-perspective-fixes.md#problem-3-partial-hiding-justdraculathings "mention")
 
@@ -95,12 +91,12 @@ If you don't have a yaml because you're changing an in-game item for some reason
 2. Open the file in any text editor (recommended: [**Notepad++**](https://notepad-plus-plus.org/downloads/))
 3.  Helpful documentation on .yaml files resides [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-guides/items-equipment/adding-new-items/archive-xl-item-structure-explained#the-control-file-yourmodname.yaml). Hopefully it looks something like this:
 
-    <figure><img src="../../.gitbook/assets/image (360).png" alt=""><figcaption><p>This is my example .yaml file with only <em>one</em> entry. Yours might have more.</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (144).png" alt=""><figcaption><p>This is my example .yaml file with only <em>one</em> entry. Yours might have more.</p></figcaption></figure>
 4. Check if there is something called `$instances`. If yes, the mod is using [archivexl-dynamic-variants](adding-new-items/archivexl-dynamic-variants/ "mention") and you are done here — go to [#dynamic-variants-hiding-fpp](first-person-perspective-fixes.md#dynamic-variants-hiding-fpp "mention")
 5. Find the line `appearanceSuffixes`_. IIf it is missing or empty,_ **do not add it** – use [#dynamic-variants-hiding-fpp](first-person-perspective-fixes.md#dynamic-variants-hiding-fpp "mention") instead.
 6.  If you have `itemsFactoryAppearanceSuffix.Camera` in your appearanceSuffixes array, you are dealing with [#legacy-variants-hiding-fpp](first-person-perspective-fixes.md#legacy-variants-hiding-fpp "mention").
 
-    <figure><img src="../../.gitbook/assets/image (361).png" alt=""><figcaption><p>Hopefully, you won't find this in there. If you do: be careful, this mod is an antiquity! :D</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (145).png" alt=""><figcaption><p>Hopefully, you won't find this in there. If you do: be careful, this mod is an antiquity! :D</p></figcaption></figure>
 
 ### Legacy variants: hiding FPP
 
@@ -109,9 +105,9 @@ For dynamic appearances (if the yaml has a key called `$instances`), go to [#dyn
 {% endhint %}
 
 1. Switch back to Wolvenkit.
-2. Open the [root entity (.ent)](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity) file (it should have an array called `appearances`)
+2. Open the [root entity (.ent)](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity) file (it should have an array called `appearances`)
 
-<figure><img src="../../.gitbook/assets/image (362).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
 
 You now have two ways of hiding the item in first person:
 
@@ -127,13 +123,13 @@ This will not work with [archivexl-dynamic-variants](adding-new-items/archivexl-
 
 #### Hiding FPP via appearance definition
 
-1. Find and expand the `appearances` array.&#x20;
+1. Find and expand the `appearances` array.
 2.  For each entry in there, you need to complete the following steps (the example project has only one entry).
 
     1. Select each entry
     2. Duplicate it via right-click menu
     3. For the old entry: Change its `name` to end in `&TPP` (third person perspective)
-    4. For the new entry:&#x20;
+    4. For the new entry:
        1. Change the `name` to end in `&FPP` (first person camera)
        2. Change the depotPath to `base\characters\appearances\player\items\empty_appearance.app`
        3. change the `appearanceName` to `default`
@@ -152,15 +148,15 @@ For legacy appearances (if the yaml does not have a key called `$instances`), go
 
 #### Hiding FPP in the .app
 
-1. Open the [.app file](../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/) in Wolvenkit
+1. Open the [.app file](../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files) in Wolvenkit
 2. Open the `appearances` array
 3. Select each appearance and add `&camera=tpp` to the name.
 
-<figure><img src="../../.gitbook/assets/image (347).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (158).png" alt=""><figcaption></figcaption></figure>
 
 #### Hiding FPP in the mesh\_entity
 
-1. Open the [#mesh-component-entity-simple-entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity "mention") in Wolvenkit
+1. Open the [entity-.ent-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity "mention") in Wolvenkit
 2. Open the `components` array
 3. Select each component with `Mesh` in its type and add `&camera=tpp` to the name
 
@@ -176,7 +172,7 @@ Alternatively, you can duplicate the component and have two for different meshes
 If your `yaml` file had an `$instances` block, the item is already dynamic and you can skip this step.
 {% endhint %}
 
-1. Find and open the [root entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity). If you have no idea which one it is, you can open the .csv and find the file paths in there.
+1. Find and open the [root entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity). If you have no idea which one it is, you can open the .csv and find the file paths in there.
 2. Inside the file, make sure that you have a **`DynamicAppearance`** entry in your tags array (for a full guide with screenshot, see [archivexl-dynamic-variants](adding-new-items/archivexl-dynamic-variants/ "mention") -> [#the-root\_entity](adding-new-items/archivexl-dynamic-variants/#the-root_entity "mention"))
 3. If you don't, add it. Congratulations, you're good to go!
 
@@ -184,25 +180,23 @@ If your `yaml` file had an `$instances` block, the item is already dynamic and y
 
 Save and close the file. Repeat the whole process for any other items that need to be obliterated in first person. Install and test. If all went well, no more obstructed vision!
 
-<figure><img src="../../.gitbook/assets/image (365).png" alt=""><figcaption><p>I can see clearly now!</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (149).png" alt=""><figcaption><p>I can see clearly now!</p></figcaption></figure>
 
 ## Problem #3: Partial hiding (#justDraculaThings)
 
-<figure><img src="../../.gitbook/assets/image (366).png" alt=""><figcaption><p>I probably could have chosen a better example, but I'm sure you can see the big clump of fur on the right.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (150).png" alt=""><figcaption><p>I probably could have chosen a better example, but I'm sure you can see the big clump of fur on the right.</p></figcaption></figure>
 
 Fixing this is very similar to Problem #2, just with a few extra steps.
 
-
-
 ### Solution
 
-1. Create an additional FPP appearance by following the steps in [#hiding-fpp-via-appearance-definition](first-person-perspective-fixes.md#hiding-fpp-via-appearance-definition "mention"). **Skip 2.4.3 and 2.4.4**.&#x20;
+1. Create an additional FPP appearance by following the steps in [#hiding-fpp-via-appearance-definition](first-person-perspective-fixes.md#hiding-fpp-via-appearance-definition "mention"). **Skip 2.4.3 and 2.4.4**.
 2. The `depotPath` should point at the same .app file as the \&TPP appearance.
 3. Change the value for appearanceName. For example, add \_fpp
 
 <figure><img src="../../.gitbook/assets/first_person_root_ent_app.png" alt=""><figcaption></figcaption></figure>
 
-4. Open your .app file and expand the `appearances` array.&#x20;
+4. Open your .app file and expand the `appearances` array.
 
 {% hint style="info" %}
 You need to repeat the following steps for every appearance in the .app.
@@ -219,14 +213,13 @@ At this point, it can be done in a few ways, depending on some factors:
 
 1. Open up the appearance's `partsValue` array
 2. Open the .ent file that is linked inside
-3.  In the .ent file, open the `components` array and check any component with Mesh in its name:\
+3.  In the .ent file, open the `components` array and check any component with Mesh in its name:\\
 
-
-    <figure><img src="../../.gitbook/assets/image (355).png" alt=""><figcaption><p>You might have to hunt around to find the right component, depending on how many there are.</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (139).png" alt=""><figcaption><p>You might have to hunt around to find the right component, depending on how many there are.</p></figcaption></figure>
 4. Open the linked .mesh file in Wolvenkit
-5. Select `Mesh Preview`&#x20;
+5. Select `Mesh Preview`
 
-<figure><img src="../../.gitbook/assets/image (367).png" alt=""><figcaption><p>My example mesh, a lovely fur collar.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (151).png" alt=""><figcaption><p>My example mesh, a lovely fur collar.</p></figcaption></figure>
 
 6. In the right-hand panel, you will see a list of checkboxes.
 
@@ -237,36 +230,36 @@ If there is only one submesh, you need to edit it in Blender to split off or del
 7. Toggle them off until the part that is in your face turns invisible. In my example, submesh 01 hides the upper collar.
 8. Remember the number (01 in the example below)
 
-<figure><img src="../../.gitbook/assets/image (368).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (152).png" alt=""><figcaption></figcaption></figure>
 
 9. Proceed to the section for [_Chunk Masks_](first-person-perspective-fixes.md#chunk-masks)_._
 
 ### Chunk Masks
 
 {% hint style="info" %}
-You can learn more about chunk masks under [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention") -> [submeshes-materials-and-chunks.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"). This is not necessary for the purpose of this guide.
+You can learn more about chunk masks under [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") -> [submeshes-materials-and-chunks.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"). This is not necessary for the purpose of this guide.
 {% endhint %}
 
-1. Switch back to the appearance (.app) file&#x20;
+1. Switch back to the appearance (.app) file
 2. Expand your first person appearance.
 3. Expand the `partsOverrides` array. If it's empty, click on the array itself, then in the right pane, click create item in array.
-4. Select `componentsOverrides` by clicking on it.&#x20;
-5. In the right panel, click on the yellow + to create a new item in array.&#x20;
-6. Open up the mesh entity (.ent) file and expand the `components` array.&#x20;
+4. Select `componentsOverrides` by clicking on it.
+5. In the right panel, click on the yellow + to create a new item in array.
+6. Open up the mesh entity (.ent) file and expand the `components` array.
 7.  Find the component that needs its parts hidden and copy the name. In my example, the component is `examplejacket1_fur`_._
 
-    <figure><img src="../../.gitbook/assets/image (370).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (154).png" alt=""><figcaption></figcaption></figure>
 8.  Back to the appearance (.app) file. Paste the component's name from the mesh entity into the _`componentName`_ field.
 
-    <figure><img src="../../.gitbook/assets/image (371).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (155).png" alt=""><figcaption></figcaption></figure>
 9. Click on `chunkMask` and uncheck the submeshes that you want to hide. (You found out which ones that were in [#finding-the-right-submesh](first-person-perspective-fixes.md#finding-the-right-submesh "mention") - In my example it was submesh 01)
 
-<figure><img src="../../.gitbook/assets/image (372).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
 
 10. **Optional**: If you need to hide more parts or affect more components/meshes, rinse and repeat.
 11. Save the appearance (.app) file and install the mod to test. If all went well, there should no longer be parts clipping into view.
 
-<figure><img src="../../.gitbook/assets/image (373).png" alt=""><figcaption><p>Results may vary depending on the item, but this is much better, no?</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (157).png" alt=""><figcaption><p>Results may vary depending on the item, but this is much better, no?</p></figcaption></figure>
 
 ### Creating a second mesh
 
@@ -281,39 +274,46 @@ To show a different item (one with the clipping bits removed) in first person pe
 3. Change their names to end in \_fpp to indicate that this is a mesh for the **first person perspective** (or do whatever you want, but this guide assumes...)
 4.
 
-    <figure><img src="../../.gitbook/assets/files.png" alt=""><figcaption></figcaption></figure>
-5. In the `.app` file, open your first person appearance.&#x20;
+```
+<figure><img src="../../.gitbook/assets/files.png" alt=""><figcaption></figcaption></figure>
+```
+
+5. In the `.app` file, open your first person appearance.
 6. Add a `partsOverride` by following the steps under [#chunk-masks](first-person-perspective-fixes.md#chunk-masks "mention") (skip step 9)
-7. Change the depotPath to your new \_fpp meshentity file.&#x20;
+7. Change the depotPath to your new \_fpp meshentity file.
 8.
 
-    <figure><img src="../../.gitbook/assets/app.png" alt=""><figcaption></figcaption></figure>
-9. Save and close the .app – it is now pointing at  your new \_fpp meshentity.
-10. In the \_fpp meshentity file, open the components array&#x20;
+```
+<figure><img src="../../.gitbook/assets/app.png" alt=""><figcaption></figcaption></figure>
+```
+
+9. Save and close the .app – it is now pointing at your new \_fpp meshentity.
+10. In the \_fpp meshentity file, open the components array
 11. Select the component with Mesh in its name, open it and change the depotPath for the mesh to your new \_fpp mesh file.
 12.
 
-    <figure><img src="../../.gitbook/assets/ent.png" alt=""><figcaption></figcaption></figure>
-
+```
+<figure><img src="../../.gitbook/assets/ent.png" alt=""><figcaption></figcaption></figure>
+```
 
 13. Save and close the .ent - it is now pointing at your \_fpp mesh.
 
 ### Editing the .mesh
 
-For the next step, we need to export our .mesh file and edit it. You can use any 3d editing program, but this guide will use  [Blender 3.6](https://www.blender.org/download/)  and the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention").&#x20;
+For the next step, we need to export our .mesh file and edit it. You can use any 3d editing program, but this guide will use [Blender 3.6](https://www.blender.org/download/) and the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention").
 
 1. Optional, but recommended: If you don't have the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") installed, do that now.
 2. In Wolvenkit, find the [Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export)
 3. Export your \_fpp .mesh file.
    * If the export throws an error, uncheck the Export Materials option in the settings panel (you don't need it)
 4. You now have a `.glb` file in your project's `raw` folder. You can find it like this:
-   1. Switch the Project Explorer to the `source` or `raw` tab&#x20;
+   1. Switch the Project Explorer to the `source` or `raw` tab
    2. Right-click on your exported file
    3. Select the option to show it in Windows Explorer
 
-Now, hit up the [3d-editing-submeshes.md](../../for-mod-creators-theory/3d-modelling/3d-editing-submeshes.md "mention") page and edit your mesh.&#x20;
+Now, hit up the [3d-editing-submeshes.md](../../for-mod-creators-theory/3d-modelling/3d-editing-submeshes.md "mention") page and edit your mesh.
 
-When you are done, use the [Wolvenkit Import Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool) to import back the .glb file.&#x20;
+When you are done, use the [Wolvenkit Import Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool) to import back the .glb file.
 
 <figure><img src="../../.gitbook/assets/first_person_fixes_1.png" alt=""><figcaption></figcaption></figure>
 

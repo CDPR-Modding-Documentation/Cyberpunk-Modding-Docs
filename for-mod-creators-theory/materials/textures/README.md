@@ -14,12 +14,12 @@ This page contains the **theory section** for textures in Cyberpunk. It will giv
 ### Wait, this is not what I want!
 
 * For the hands-on guide section, check [Modding Guides -> Textures and LUTs](../../../modding-guides/textures-and-luts/)
-* If you just want to know how to import/export textures, see [here](../../../modding-guides/textures-and-luts/images-importing-editing-exporting.md).&#x20;
-* For texture import settings and what they do, check the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/ "mention") -> [Import/Export: Textures](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/textures "mention") -> [Texture Group](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/textures#texture-group "mention")
+* If you just want to know how to import/export textures, see [here](../../../modding-guides/textures-and-luts/images-importing-editing-exporting.md).
+* For texture import settings and what they do, check the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/ "mention") -> [Import/Export: Textures](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/textures "mention") -> [Import/Export: Textures #Texture Group](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/textures#texture-group "mention")
 
 ## About textures
 
-You can't use textures in Cyberpunk without first converting them to `.xbm`. To learn more about the reasons, check [textures-.xbm-files.md](../../files-and-what-they-do/materials/textures-.xbm-files.md "mention").
+You can't use textures in Cyberpunk without first converting them to `.xbm`. To learn more about the reasons, check [textures-.xbm-files.md](../../files-and-what-they-do/file-formats/materials/textures-.xbm-files.md "mention").
 
 {% hint style="info" %}
 By default, all textures in Cyberpunk2077 are Y-flipped (upside down). WolvenKit will take care of that for you during import/export via the `VFlip` property.
@@ -31,7 +31,7 @@ By default, all textures in Cyberpunk2077 are Y-flipped (upside down). WolvenKit
 If you stick to CDPR's naming convention, Wolvenkit can automatically pick the right import settings for you!
 {% endhint %}
 
-Across the game files, textures are clearly marked via **suffix**. If there are multiple textures with the same suffix, they will just be numbered.&#x20;
+Across the game files, textures are clearly marked via **suffix**. If there are multiple textures with the same suffix, they will just be numbered.
 
 #### Example:
 
@@ -105,7 +105,7 @@ In the game files, these files will be named `<name>_m.xbm` (e.g. `base\envment\
 
 ### Combined Roughness/Metalness
 
-Some shaders use a combi-texture for roughness and metalness.&#x20;
+Some shaders use a combi-texture for roughness and metalness.
 
 {% hint style="info" %}
 Since by default, roughness and metalness are inverted (white in one is black in the other), you can only use this for shaders that expect such a texture.
@@ -122,10 +122,6 @@ Used for in-game items and UI elements, these textures contain a collection of i
 #### Naming convention:
 
 In the game files, these files will be named `atlas_<name>.xbm` (e.g. `base\gameplay\gui\fullscreen\hacking_minigame\atlas_minigame_programs.xbm`)
-
-
-
-
 
 ## Additional intel
 

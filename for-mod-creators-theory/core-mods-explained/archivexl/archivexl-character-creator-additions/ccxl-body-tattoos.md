@@ -34,7 +34,7 @@ You can look up all mesh paths in [cheat-sheet-body.md](../../../references-list
 
 This is the path to acquire the gender you want to work on for vanilla V.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (250).png" alt=""><figcaption></figcaption></figure>
 
 For the tutorial, I will take male V's right arm:
 
@@ -42,7 +42,7 @@ For the tutorial, I will take male V's right arm:
 base\characters\common\player_base_bodies\player_man_average\arms_hq\a0_000_pma_base_hq_r.mesh
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (1) (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (251).png" alt=""><figcaption></figcaption></figure>
 
 ### Rename the .mesh file
 
@@ -76,7 +76,7 @@ The textures are inside the `textures` folder. They are loaded by the `.mi` file
 
 If you want to tweak the parameters, make sure to edit this file (we will look at it in more detail later).
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (5) (2).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 You can learn more about meshes and materials on the [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") page, and about .mi files under [re-using-materials-.mi.md](../../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention").
@@ -96,13 +96,13 @@ This is not necessary for the purpose of this tutorial.
       (the relative path to the `.mi` file)
 4. Create or edit an `appearance`: the `chunkMaterials` need to point at `your_tattoo`.
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (258).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 3: Setting up the .app
 
 As this is a template project, the `.app` is already configured. Since you moved the .mesh to `your_modder_name\ccxl\your_tattoo\models\your_tattoo_pma.mesh`, you don't need to change anything here:
 
-<figure><img src="../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (261).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Renaming the files
 
@@ -112,7 +112,7 @@ Now, use dynamic renaming feature and rename your files.
 
 Since our imported mesh is named as `your_tattoo_pma`, the dynamic renaming feature will allow you to rename it to whatever you want. If you ignored our advice, have fun correcting all those entries one by one:
 
-<figure><img src="../../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (263).png" alt=""><figcaption></figcaption></figure>
 
 ### Moving the other files
 
@@ -138,7 +138,7 @@ This entry defines what the game will display instead of `UI-customization_yourm
 
 `FemaleVariant` is used as default, so you can leave the male variant empty.\\
 
-<figure><img src="../../../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (265).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 6: The .xl file
 

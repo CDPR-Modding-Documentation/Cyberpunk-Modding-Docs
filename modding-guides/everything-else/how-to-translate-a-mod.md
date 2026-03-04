@@ -17,7 +17,7 @@ This guide will teach you how to add translation files for existing mods.
 
 ### Wait, this is not what I want!
 
-* For a general explanation on how to add translations (or edit existing ones), check [translation-files-.json.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/translation-files-.json.md "mention")
+* For a general explanation on how to add translations (or edit existing ones), check [translation-files--json.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/translation-files--json.md "mention")
 
 ***
 

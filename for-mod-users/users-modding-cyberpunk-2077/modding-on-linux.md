@@ -83,11 +83,11 @@ Taken from [CET's github](https://github.com/maximegmd/CyberEngineTweaks/issues/
 2. Right click on the game > `Settings` > `Runner options`
 3. While newer versions of Lutris can use Proton, it is advised you use Wine-GE instead. Make sure you're using at least `lutris-GE-Proton8-1`
 
-<figure><img src="../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
 
 4. Scroll down to **DLL overrides**, click on **Add** to add a key. Add the following keys:
 
-<figure><img src="../../.gitbook/assets/image (207).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
 
 ## Launch Options
 
@@ -138,7 +138,7 @@ While at your library right click Cyberpunk then navigate to `Settings` -> `ADVA
 
 Now set a new variable name `WINEDLLOVERRIDES` with a value of `winmm,version=n,b`
 
-<figure><img src="../../.gitbook/assets/image (527).png" alt=""><figcaption><p>Don't forget to click the + button for the changes to save.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (533).png" alt=""><figcaption><p>Don't forget to click the + button for the changes to save.</p></figcaption></figure>
 
 {% hint style="danger" %}
 Variable Name and Value are both case sensitive, Copy-paste for certainty.
@@ -152,7 +152,7 @@ Anything that includes **`=`** and doesn't start with **`-`** goes to Environmen
 
 ### I can't install vcredist!
 
-Try running the following shell command:&#x20;
+Try running the following shell command:
 
 ```bash
 protontricks 1091500 --force vcrun2022
@@ -166,15 +166,11 @@ This is the most common error. You wouldn't believe how often people show up in 
 
 Do not be these people. Copy-paste from the guide and delete any extra spaces.
 
-
-
 #### “Invalid file magic number”
 
 Delete/uninstall the current protontrick version. Try the beta-version from here and running the commands:
 
 {% embed url="https://monroeworld.com/steamdeck/proton.txt" %}
-
-
 
 #### Update protontricks
 

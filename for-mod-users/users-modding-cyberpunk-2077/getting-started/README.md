@@ -125,7 +125,7 @@ You don't need to create a subfolder for Cyberpunk, as GOG will do that for you.
 
 7. **Optional, but recommended**: Disable auto-updates by unchecking the second box "`Keep this game up to date automatically`"
 
-<figure><img src="../../../.gitbook/assets/image (195).png" alt=""><figcaption><p>How the window should look for recommended install.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (78).png" alt=""><figcaption><p>How the window should look for recommended install.</p></figcaption></figure>
 
 ***
 
@@ -183,7 +183,7 @@ Once the game has installed, we want to make it run with mods.&#x20;
 
 1. Click the button to the right of the **`Play`** button (formerly the `install` button) pictured below.
 
-<figure><img src="../../../.gitbook/assets/image (161).png" alt=""><figcaption><p>The Cyberpunk 2077 main page on GOG, with the sidebar open on the left</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (29).png" alt=""><figcaption><p>The Cyberpunk 2077 main page on GOG, with the sidebar open on the left</p></figcaption></figure>
 
 ***
 

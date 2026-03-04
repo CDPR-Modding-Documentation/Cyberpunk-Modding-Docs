@@ -2,8 +2,8 @@
 
 ## Summary
 
-**Published**: Mar 02 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: Mar 02 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published**: Mar 02 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update**: Mar 02 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page explains how the level of detail is handled in environment files.
 
@@ -21,12 +21,12 @@ Hiding an object will also hide its shadows and occluders.
 
 The distance at which this happens is controlled by the `forceAutoHideDistance` property of each world node:
 
-<figure><img src="../../../../.gitbook/assets/image (345).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (323).png" alt=""><figcaption></figcaption></figure>
 
 This probably corresponds directly to the `nearAutoHideDistance` in the proxy mesh ndoes below?
 
 ## Proxy meshes
 
-There is a specialized node type for world proxy meshes: the `worldGenericProxyMeshNode`.  (Which raises the question if there are specialized / extended `worldXXProxyMeshNodes?)`
+There is a specialized node type for world proxy meshes: the `worldGenericProxyMeshNode`. (Which raises the question if there are specialized / extended `worldXXProxyMeshNodes?)`
 
 <figure><img src="../../../../.gitbook/assets/streamingsector_proxyMeshNode.png" alt=""><figcaption></figcaption></figure>

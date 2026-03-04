@@ -29,13 +29,13 @@ Download and install [_RAD Video Tools_](https://www.radgametools.com/bnkdown.ht
 
 1. Open _RAD Video Tools_ and browse your _video file_ that that will replace the _Breach Screen_
 
-<figure><img src="../../.gitbook/assets/image (242).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (305).png" alt=""><figcaption></figcaption></figure>
 
 2. Select the video file and click _Bink it!_
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-04-02 190658.png" alt=""><figcaption></figcaption></figure>
 
-3. As destination file name, you put the name of your video and the extension bk2 (e.g  _splash\_logo.bk2_)&#x20;
+3. As destination file name, you put the name of your video and the extension bk2 (e.g _splash\_logo.bk2_)
 4. Click _Bink_
 
 <figure><img src="../../.gitbook/assets/Screenshot 2024-04-02 190955.png" alt=""><figcaption></figcaption></figure>
@@ -58,9 +58,9 @@ base\movies\fullscreen\e3_2020_loading\
 
 4. Add that file to your Project and your project should look like this
 
-<figure><img src="../../.gitbook/assets/image (240).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (303).png" alt=""><figcaption></figcaption></figure>
 
-5. Select _`splash_logo.bk2`_ and right-click it&#x20;
+5. Select _`splash_logo.bk2`_ and right-click it
 6. Select "Open in Explorer". This will open Windows Explorer in the correct folder.
 7. Copy your own converted video in this location and replace the original one
 8. Go back to WolvenKit and save you changes

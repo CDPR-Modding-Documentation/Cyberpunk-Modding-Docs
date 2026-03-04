@@ -64,7 +64,7 @@ FastTravelPoints.customPoint:
     * Make sure the NodeRef is unique
     * E.g. `$/ft/custom/marker`
 
-    <figure><img src="../../../.gitbook/assets/image (553).png" alt="" width="354"><figcaption><p>Example of how to assign NodeRef</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (562).png" alt="" width="354"><figcaption><p>Example of how to assign NodeRef</p></figcaption></figure>
 
 ## Setting up instance data
 

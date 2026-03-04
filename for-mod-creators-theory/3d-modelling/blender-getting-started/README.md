@@ -12,12 +12,12 @@ Summary
 **Last documented update:** Feb 17 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 {% hint style="success" %}
-**TL;DR:** Blender hard, but Blender free and Thog will make 3d object.&#x20;
+**TL;DR:** Blender hard, but Blender free and Thog will make 3d object.
 
-Do yourself a favour and&#x20;
+Do yourself a favour and
 
 * read at least [#general-tips](./#general-tips "mention") from this page
-* optional: complete the Blender Donut Tutorial (find latest version via websearch)&#x20;
+* optional: complete the Blender Donut Tutorial (find latest version via websearch)
 {% endhint %}
 
 The open source software [Blender](https://www.blender.org/download/) is huge and intimidating — it is a tool for professionals, and many people consider it as good or even better than paid alternatives.
@@ -43,15 +43,15 @@ Read [#navigating-the-viewport](./#navigating-the-viewport "mention") for how to
 1. **Use keyboard shortcuts** - they will speed things up by at least 70%. Put a post-it on your monitor and only remove it when you know them by heart.
    * See [#keyboard-shortcuts-global](./#keyboard-shortcuts-global "mention") below for a list
    * See [#customizing-the-interface](./#customizing-the-interface "mention") for how to create custom shortcuts (it's easy and you should do it)
-2. That being said, **use the** [**Search Menu**](https://blender.stackexchange.com/questions/141118/how-to-access-the-search-menu-2-8-used-to-be-spacebar-in-2-79) (Hotkey: `F3` or `Space`, depending on your settings) . \
+2. That being said, **use the** [**Search Menu**](https://blender.stackexchange.com/questions/141118/how-to-access-the-search-menu-2-8-used-to-be-spacebar-in-2-79) (Hotkey: `F3` or `Space`, depending on your settings) .\
    It gives you access to all of Blender's functions! Click on the link to see it in action
-3. The main action happens in your `Viewport` (the big one on the left).&#x20;
+3. The main action happens in your `Viewport` (the big one on the left).
    * You can use the Perspective Selector (pink) to swap around custom-defined workspaces.
    * Check [#customizing-the-interface](./#customizing-the-interface "mention") for more detes.
-4. Understand when to use **Object Mode** and when to use **Edit** or **Pose** Mode.  Read [#view-port-modes](./#view-port-modes "mention") for more detes.
+4. Understand when to use **Object Mode** and when to use **Edit** or **Pose** Mode. Read [#view-port-modes](./#view-port-modes "mention") for more detes.
    * You can switch between Edit Mode and Object Mode with `Tab` (turquoise dropdown on screenshot 1)
 5. You can switch the current selection tool with a long click on the tool's surface (shortcut to cycle: `W`)
-6. You can (de)select multiple things by ctrl-clicking on them.&#x20;
+6. You can (de)select multiple things by ctrl-clicking on them.
 7. The most recently selected thing is called **`Active`** (this shows up in many context menus)
    * The **Select Circle** tool does not set an **Active** selection.
 8. You can toggle **X-Ray mode** (Shortcut: `Alt+Z`) by clicking the purple icon in the screenshot above
@@ -93,7 +93,7 @@ You can switch between the most commonly used modes, **Object** and **Edit,** wi
 
 Here's what they do:
 
-<table><thead><tr><th width="201"></th><th></th></tr></thead><tbody><tr><td>Object Mode</td><td>This is where you switch the active 3d object. The other modes only work on the current selection.<br>Read <a data-mention href="./#object-mode">#object-mode</a> below for more detes.</td></tr><tr><td>Edit Mode</td><td>Lets you alter the objects 3d data by moving pixels around. Read <a data-mention href="./#edit-mode">#edit-mode</a> below for more detes.</td></tr><tr><td>Pose Mode</td><td>Only available when you have an <strong>armature</strong> (rig, skeleton) selected. This is where you <a href="../../../modding-guides/animations/animations/poses-animations-make-your-own/">make poses</a>.</td></tr><tr><td>Sculpt Mode</td><td><strong>You usually don't need this!</strong><br>Sculpt the mesh as if it's clay. Requires you to <strong>delete shapekeys</strong>, and leads to bad topologies. Proportional Editing is much better.<br><em>See =></em> <a data-mention href="../mesh-sculpting-techniques.md">mesh-sculpting-techniques.md</a><em>.</em></td></tr><tr><td>Vertex Paint</td><td>Lets you create Vertex Paint Data. You only need this for <a href="../garment-support-how-does-it-work/#painting-your-parameters">custom garment support</a> (so as a beginner, stay away from it)</td></tr><tr><td>Weight Paint</td><td>Weights determine how an object moves with the armature. Everyone hates it, but you can usually get around weight painting by simply <a href="../porting-3d-objects-to-cyberpunk.md#step-4-weight-transfer">stealing weights</a> from an in-game item.</td></tr><tr><td>Texture Paint</td><td>"We have <a href="https://www.adobe.com/products/substance3d/apps/painter.html">Adobe Substance Painter</a> at home!" It's free, it's 3d, but using it sucks. Before switching to Substance Painter, I painted in photoshop and used it just for positioning/rough guidelines.</td></tr></tbody></table>
+<table><thead><tr><th width="201"></th><th></th></tr></thead><tbody><tr><td>Object Mode</td><td>This is where you switch the active 3d object. The other modes only work on the current selection.<br>Read <a data-mention href="./#object-mode">#object-mode</a> below for more detes.</td></tr><tr><td>Edit Mode</td><td>Lets you alter the objects 3d data by moving pixels around. Read <a data-mention href="./#edit-mode">#edit-mode</a> below for more detes.</td></tr><tr><td>Pose Mode</td><td>Only available when you have an <strong>armature</strong> (rig, skeleton) selected. This is where you <a href="../../../modding-guides/animations/animations/poses-animations-make-your-own/">make poses</a>.</td></tr><tr><td>Sculpt Mode</td><td><strong>You usually don't need this!</strong><br>Sculpt the mesh as if it's clay. Requires you to <strong>delete shapekeys</strong>, and leads to bad topologies. Proportional Editing is much better.<br><em>See =></em> <a data-mention href="../mesh-sculpting-techniques.md">mesh-sculpting-techniques.md</a><em>.</em></td></tr><tr><td>Vertex Paint</td><td>Lets you create Vertex Paint Data. You only need this for <a href="../garment-support-how-does-it-work/#painting-your-parameters">custom garment support</a> (so as a beginner, stay away from it)</td></tr><tr><td>Weight Paint</td><td>Weights determine how an object moves with the armature. Everyone hates it, but you can usually get around weight painting by simply <a href="../porting-3d-objects-to-cyberpunk/#step-4-weight-transfer">stealing weights</a> from an in-game item.</td></tr><tr><td>Texture Paint</td><td>"We have <a href="https://www.adobe.com/products/substance3d/apps/painter.html">Adobe Substance Painter</a> at home!" It's free, it's 3d, but using it sucks. Before switching to Substance Painter, I painted in photoshop and used it just for positioning/rough guidelines.</td></tr></tbody></table>
 
 ### Keyboard Shortcuts (global)
 
@@ -144,7 +144,7 @@ With any active selection, you can toggle the following actions by hotkey, and t
 * Move (Hotkey: `G`) Reposition something
 
 {% hint style="success" %}
-**You can lock each of those operations on an axis!**&#x20;
+**You can lock each of those operations on an axis!**
 
 For example, press `G` -> `Z` to move your selection up and down. Press Z again to remove the lock.
 {% endhint %}
@@ -153,7 +153,7 @@ For example, press `G` -> `Z` to move your selection up and down. Press Z again 
 
 By pressing `.`, you can change the current `Pivot Point:`
 
-<figure><img src="../../../.gitbook/assets/image (422).png" alt="" width="375"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (357).png" alt="" width="375"><figcaption></figcaption></figure>
 
 This is the **origin** for your transforms:
 
@@ -173,9 +173,9 @@ There are a couple more modes that can come in handy when you're using the UV Ed
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-01-12 165349.png" alt=""><figcaption><p>Standard location</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image_2025-01-12_170852487.png" alt=""><figcaption><p>Editing location </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image_2025-01-12_170852487.png" alt=""><figcaption><p>Editing location</p></figcaption></figure>
 
-The first one (highlighted in blue in the first image) is the standard select mode. The second one will be your friend, the extend mode, which lets you extend your existing selection  or start a new selection while your previous selection stays put. This is not possible with the standard select mode as it would overwrite the previous selection.
+The first one (highlighted in blue in the first image) is the standard select mode. The second one will be your friend, the extend mode, which lets you extend your existing selection or start a new selection while your previous selection stays put. This is not possible with the standard select mode as it would overwrite the previous selection.
 
 <figure><img src="../../../.gitbook/assets/image_2025-01-12_171512854.png" alt=""><figcaption><p>Creating a seperate selection in UV Editor</p></figcaption></figure>
 
@@ -185,15 +185,13 @@ The next mode is the subtract mode, this mode does the opposite of the extend mo
 
 With the shortcut `Ctrl+L`, Blender will select everything up to a certain boundary. By default, this boundary is the same piece of 3d geometry, but in the bottom left corner of the viewport, you can pick the delimiter:
 
-
-
 <figure><img src="../../../.gitbook/assets/blender_select_linked.png" alt="" width="213"><figcaption></figcaption></figure>
 
 See [#seams-and-sharps](./#seams-and-sharps "mention") how to make use of this!
 
 #### Select Loops
 
-Hold `Alt` and left click to instantly select an entire loop of vertices, edges, or faces.&#x20;
+Hold `Alt` and left click to instantly select an entire loop of vertices, edges, or faces.
 
 {% hint style="info" %}
 This doesn't work well with geometries that are **complex** or **triangulated** (Cyberpunk meshes are usually at least one of these things). You can [un-triangulate](https://blender.stackexchange.com/questions/13727/how-do-you-un-triangulate-a-mesh) a mesh for easier loop selection (hotkey: `Alt+J`), then re-triangulate it again before exporting (Hotkey: `Ctrl+T`)
@@ -209,7 +207,7 @@ this will instantly select all boundary loops for the given selection, great for
 
 #### **Select shortest path**
 
-Works in Edge, Vertex, or Face Selection Mode. Select at least one element, then `Ctrl+click` on **any other element** to select the shortest path of edges, vertices, or faces between them.&#x20;
+Works in Edge, Vertex, or Face Selection Mode. Select at least one element, then `Ctrl+click` on **any other element** to select the shortest path of edges, vertices, or faces between them.
 
 {% hint style="info" %}
 Double-check that the shortest path is actually the path you want. If it's not, **un-do** (Hotkey: `Ctrl+Z`) and shift-click on an edge closer to your selection.
@@ -221,7 +219,7 @@ In Edge Selection Mode (Hotkey: `2`), you can (un)mark **edges** as **seams** or
 
 <figure><img src="../../../.gitbook/assets/blender_ui_guide_3_seams_and_sharps.png" alt=""><figcaption><p>Seams are orange, Sharps are blue</p></figcaption></figure>
 
-A **seam** (orange line in the viewport) is where the UV map will be split.&#x20;
+A **seam** (orange line in the viewport) is where the UV map will be split.
 
 {% hint style="info" %}
 A [full explanation on UV mapping](../../materials/uv-mapping-texturing-a-3d-object.md) blows the scope of this guide, but you can read on if you're curious.
@@ -237,7 +235,7 @@ A sharp (blue line in the viewport) **will cause a sharp crease/fold** in the ma
 You can find a detailed guide on this under [r-and-r-refitting-step-by-step.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") -> [#step-4-refitting](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md#step-4-refitting "mention")
 {% endhint %}
 
-"I'm moving a single vertex, but my entire mesh is affected!"&#x20;
+"I'm moving a single vertex, but my entire mesh is affected!"
 
 Sounds familiar? You've run into Proportional Editing.
 
@@ -245,13 +243,13 @@ Sounds familiar? You've run into Proportional Editing.
 
 * Click the button or press `O` to turn it off and on
 * When it's active, **moving**, **scaling** or **rotating** will have an effect on anything **close to your selection**. This makes refitting super easy! No more jagged edges!
-* When you move (`G`) or scale (`S`) your selection, you will see a circle for the area of  its effect.&#x20;
+* When you move (`G`) or scale (`S`) your selection, you will see a circle for the area of its effect.
   * By default, that circle might be huge and outside your screen. You might wanna change this and then [#save-startup-file](./#save-startup-file "mention").
   * You can change the circle's size with your mouse wheel
 
 ### Face Orientation
 
-&#x20;Each mesh has an inside and an outside. Most materials don't even show the inside, so it's kinda important to know which is which.
+Each mesh has an inside and an outside. Most materials don't even show the inside, so it's kinda important to know which is which.
 
 Once you have entered Edit Mode, you can show Face Orientation from the menu at the top right of your viewport:
 
@@ -269,7 +267,7 @@ Sometimes, faces are messed up. To find faces with flipped normals, go into Edge
 
 ## The Scripting perspective
 
-Blender offers a fully-fledged Python environment, which is used by **Netrunners** to develop **plugins** like the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention").&#x20;
+Blender offers a fully-fledged Python environment, which is used by **Netrunners** to develop **plugins** like the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention").
 
 Since you are reading this, you're probably not one of those. Don't worry! Some of our guides tell you to run Python scripts, but we have a dedicated guide for that: [blender-running-python-scripts.md](blender-running-python-scripts.md "mention")
 

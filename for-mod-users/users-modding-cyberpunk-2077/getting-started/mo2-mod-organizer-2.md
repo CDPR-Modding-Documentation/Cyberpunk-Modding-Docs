@@ -101,10 +101,10 @@ I'm going to stress this as hard as I can: this plugin is not part of the main M
 2. Place this file into `basic_games/games` which is located in the MO2 plugin folder. No need to go diving through all your folders to find it, you can find it easily:
    1.  Navigate to **Show Open Folders menu...** on the main MO2 screen.
 
-       <figure><img src="../../../.gitbook/assets/image (620).png" alt=""><figcaption><p>Show Open Folders menu</p></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (626).png" alt=""><figcaption><p>Show Open Folders menu</p></figcaption></figure>
    2.  Click on **Open MO2 Plugins folder.**
 
-       <figure><img src="../../../.gitbook/assets/image (619).png" alt=""><figcaption><p>Open MO2 Plugins</p></figcaption></figure>
+       <figure><img src="../../../.gitbook/assets/image (625).png" alt=""><figcaption><p>Open MO2 Plugins</p></figcaption></figure>
    3. This will open the plugins folder in Windows Explorer. From here, go into the folder called `basic_games`, and then into `games`.
    4. This is where you'll drop the file you downloaded from GitHub. However, there will already be a file in here called `game_cyberpunk2077.py` which **you should back up in case something goes wrong** (simply copying it to your desktop will suffice, as long as you remember where you put it).
    5. After you've backed up the original file, now you can drop the file you downloaded from GitHub into this folder. Replace the original file if it asks you to (again, **back it up** first!).

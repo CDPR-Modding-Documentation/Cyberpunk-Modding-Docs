@@ -72,7 +72,7 @@ It is often easier to convert the existing file and replace the template mod's `
 
 ## Your .app partsOverrides should look like this:
 
-<figure><img src="../../../../.gitbook/assets/image (618).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (623).png" alt=""><figcaption></figcaption></figure>
 
 ## Wait, I'm missing meshes!
 

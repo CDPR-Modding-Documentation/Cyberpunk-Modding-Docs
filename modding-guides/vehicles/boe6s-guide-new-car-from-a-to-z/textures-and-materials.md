@@ -29,7 +29,7 @@ Find the `.mlmask` corresponding file by opening a `.mesh` in **wkit** to edit. 
 
 Add the `.mlmask` to the project.
 
-Rename and move the `.mlmask` file into your project filepath. \
+Rename and move the `.mlmask` file into your project filepath.\
 Example:
 
 “`boe6\mini_cooper\meshes\textures\boe6_mini_cooper_exterior_maskset.mlmask”`
@@ -40,7 +40,7 @@ Export the `.mlmask` file. It should result in a `.masklist` file and a folder w
 
 Notice the first white image, and the remaining black images with white cutouts.
 
-These textures don’t map onto the new vehicle’s mesh correctly. These can be edited to add more detail to your model.&#x20;
+These textures don’t map onto the new vehicle’s mesh correctly. These can be edited to add more detail to your model.
 
 As a temporary solution, we can edit the first image to be pure white, and the rest to be pure black. Example:
 
@@ -60,8 +60,6 @@ Your vehicle should now be much smoother.
 
 <figure><img src="../../../.gitbook/assets/image114.png" alt=""><figcaption></figcaption></figure>
 
-
-
 ### Basics of .mlsetup and MLsetupBuilder
 
 {% hint style="info" %}
@@ -77,9 +75,9 @@ You will need the **MLsetupBuilder** plugin for editing these files. Install it 
 
 The `.mlsetup` file we need is linked in the `.mesh` file, similar to the `.mlmask`:
 
-* &#x20;`RDTDataViewModel > localMaterialBuffer > materials > 0 / masksset > values > MultilayerSetup > Value`
+* `RDTDataViewModel > localMaterialBuffer > materials > 0 / masksset > values > MultilayerSetup > Value`
 
-Add this `.mlsetup` file to the project. Rename and move it. \
+Add this `.mlsetup` file to the project. Rename and move it.\
 Example:
 
 “`boe6\mini_cooper\meshes\textures\boe6_mini_cooper_exterior.mlsetup`”
@@ -98,7 +96,7 @@ Import the `.mlsetup.json` file by hitting the arrow in the top left:
 You can also right-click on the .mlsetup.json file and choose "Open in MlSetupbuilder". The file will be automatically loaded when it opens.
 {% endhint %}
 
-Once you open the file, a window will appear on the left with a list of materials. These are the texture layers of your mesh.&#x20;
+Once you open the file, a window will appear on the left with a list of materials. These are the texture layers of your mesh.
 
 {% hint style="info" %}
 Note that layers 0,1,2,etc are linked the .mlmask layers.
@@ -132,7 +130,7 @@ Once you have finished editing a layer, you can save it by clicking “**Apply e
 
 Then you can select another layer and edit the next one if needed. If you select a new layer without applying the edits, the changes will be lost.
 
-Once finished, you can **Export** to save it to your file explorer, and then load it in **wkit** by right clicking the `.json` and selecting “**convert from JSON**”. \
+Once finished, you can **Export** to save it to your file explorer, and then load it in **wkit** by right clicking the `.json` and selecting “**convert from JSON**”.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image57.png" alt=""><figcaption></figcaption></figure>
@@ -145,7 +143,7 @@ Working color:
 
 Custom RGB value colors can be set with a custom `.mltemplate` file. Here we will only set RGB values, but this file can control other material settings/textures as well.
 
-Find the material you want to have a custom RGB value for in **MlsetupBuilder**, and click on the material name to show it’s file path. \
+Find the material you want to have a custom RGB value for in **MlsetupBuilder**, and click on the material name to show it’s file path.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image107.png" alt=""><figcaption></figcaption></figure>
@@ -162,7 +160,7 @@ This array contains all colors in the material. Open one of the `Multilayers` an
 
 <figure><img src="../../../.gitbook/assets/image103.png" alt=""><figcaption></figcaption></figure>
 
-First, you can verify the color in  . Copy the “`n`” value here, and paste it into MlsetupBuilder in the Color filter:
+First, you can verify the color in . Copy the “`n`” value here, and paste it into MlsetupBuilder in the Color filter:
 
 <figure><img src="../../../.gitbook/assets/image191.png" alt=""><figcaption></figcaption></figure>
 
@@ -173,8 +171,6 @@ Select the color, and it’s rgb values should match the values in the “`v`”
 Edit the 0,1,2 (R,G,B) values to the color values needed and save. Make sure to save the .mlsetup as well with the layer set to the same color code as before.(“n” value, \[00cf56\_69039f])
 
 Save and test.
-
-
 
 ### Multiple materials
 
@@ -192,7 +188,7 @@ With all the objects selected in blender, export it to `.glb` and import it as y
 
 You can save and test. If it worked properly, only the first object included in the blender export will render properly at the moment.
 
-<div><figure><img src="../../../.gitbook/assets/image6 (2).png" alt=""><figcaption><p>Corrected</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/image96.png" alt=""><figcaption><p>Broken</p></figcaption></figure></div>
+<div><figure><img src="../../../.gitbook/assets/image6 (1).png" alt=""><figcaption><p>Corrected</p></figcaption></figure> <figure><img src="../../../.gitbook/assets/image96.png" alt=""><figcaption><p>Broken</p></figcaption></figure></div>
 
 Example of a finished body mesh in blender:
 
@@ -205,7 +201,9 @@ To correct this, start by duplicating an item in the `chunkMaterials` list. Path
 * `.mesh > RDTDataViewModel > appearances > 0 > chunkMaterials`
 *
 
-    <figure><img src="../../../.gitbook/assets/image167.png" alt=""><figcaption></figcaption></figure>
+```
+<figure><img src="../../../.gitbook/assets/image167.png" alt=""><figcaption></figcaption></figure>
+```
 
 Make sure to edit the name to a unique name, as we are creating new `materialEntries`. Repeat as needed. In my case I needed 6 extra layers:
 
@@ -223,7 +221,7 @@ Make sure to update the index values of each item in the materialEntries array. 
 ALL items in the list update the index of both new items, and old ones that moved down the list
 {% endhint %}
 
-Next we’ll update the `materialBuffer` with new `.mlsetup` and `.mlmask` files. Keep in mind the `.mlmask` files can be edited to match the model to a texture. However we’ll be working around that by using the same method used previously, to have a `.mlmask` file with one additional white layer.&#x20;
+Next we’ll update the `materialBuffer` with new `.mlsetup` and `.mlmask` files. Keep in mind the `.mlmask` files can be edited to match the model to a texture. However we’ll be working around that by using the same method used previously, to have a `.mlmask` file with one additional white layer.
 
 {% hint style="info" %}
 Note the 0 layer will always be white.
@@ -243,7 +241,7 @@ Now to finish the materials setup, open the following `.mesh` path:
 
 * `.mesh > RDTDataViewModel > localMaterialBuffer > materials`
 
-This array contains every `CMaterialInstance` for the `.mesh` file. This array has it’s items named via the `materialEntries` list we just edited. Since we added items to that list, those names now show in this `localMaterialBuffer > materials` list. However the data in each item is still it’s original.&#x20;
+This array contains every `CMaterialInstance` for the `.mesh` file. This array has it’s items named via the `materialEntries` list we just edited. Since we added items to that list, those names now show in this `localMaterialBuffer > materials` list. However the data in each item is still it’s original.
 
 For example, in this picture, the array hasn’t been updated yet, however the names are updated. This means the index 1 item, …”`masksset_texture`” has the properties of “`reflector`”, which would normally be the 2nd item.
 
@@ -267,8 +265,6 @@ For the `mlmask`, use the “`masksset_00`” for the layer you want to enable.
 <figure><img src="../../../.gitbook/assets/image95.png" alt=""><figcaption></figcaption></figure>
 
 Submeshes should now load in order with matched materials.
-
-
 
 ### Fix broken UVs
 

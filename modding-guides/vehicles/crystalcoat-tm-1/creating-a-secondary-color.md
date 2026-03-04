@@ -17,13 +17,13 @@ The most simple way is to apply the secondary color on a complete mesh so the co
 
 If a component subset could make sense to use the secondary color then you can submesh it and apply this approach with it.
 
-<figure><img src="../../../.gitbook/assets/image (466).png" alt="" width="375"><figcaption><p>Rayfield Caliburn</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (401).png" alt="" width="375"><figcaption><p>Rayfield Caliburn</p></figcaption></figure>
 
 On this picture, the silver front wings of the vehicle have been submeshed to they can be colored entirely without affecting the rest of the body part.
 
 With conventional vehicles that consist in a box with 4 square doors, this approach won't give a nice result most of the time. Except for wheels.
 
-### Approach #2: use a mask&#x20;
+### Approach #2: use a mask
 
 The approach that allows the most possibilities is to work with a UV layout.
 
@@ -45,7 +45,7 @@ The easiest way to create such mask is to use a image editor like Adobe Photosho
 
 Most of the time the components of a vehicle are sharing the same UV layout that is to say they are all sharing the UV space without overlapping each other. In this case they use the same mlmask file in their material definition.
 
-You will notice that wheels are always using a dedicated UV layout so you won't be able to use the same InkWidget to apply a secondary color for both the painted areas of the vehicle and for its wheels.&#x20;
+You will notice that wheels are always using a dedicated UV layout so you won't be able to use the same InkWidget to apply a secondary color for both the painted areas of the vehicle and for its wheels.
 
 ### What if the UV layout is different between parts
 
@@ -77,13 +77,13 @@ You can only import mesh components that are sharing the same UV layout together
 
 Select all the meshes using the `A` key then press `TAB` to go into `Edit mode`. Finally select the `UV Editing` view in the menu bar.
 
-<figure><img src="../../../.gitbook/assets/image (454).png" alt=""><figcaption><p>Generate the UV layout for the painted areas</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (389).png" alt=""><figcaption><p>Generate the UV layout for the painted areas</p></figcaption></figure>
 
 You can see on the left that your UV layout has been generated. Export it to PNG using the menu `UV > Export UV Layout`. Define the size to 1024x1024 and set the `Fill Opacity` to 1.00.
 
 Open Adobe Photoshop or another image editor and create a new project with a image size of 1024x1024. Then fill it with black color by using the menu `Edit > Fill`. Import the PNG file you have just created with Blender. It should be imported into a new layer.
 
-<figure><img src="../../../.gitbook/assets/image (455).png" alt=""><figcaption><p>Fill the UV layout with white</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (390).png" alt=""><figcaption><p>Fill the UV layout with white</p></figcaption></figure>
 
 Create a new style on the UV layout to fill it with white. Now you have created your mask for the painted areas of the vehicle.
 
@@ -93,9 +93,9 @@ The next part is to define your secondary color pattern by adding shapes on top 
 
 Before exporting the mask we will fill them with white.
 
-<figure><img src="../../../.gitbook/assets/image (456).png" alt=""><figcaption><p>Adding shapes to your mask</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (391).png" alt=""><figcaption><p>Adding shapes to your mask</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (464).png" alt=""><figcaption><p>Secondary color pattern</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (399).png" alt=""><figcaption><p>Secondary color pattern</p></figcaption></figure>
 
 You can also use any other tool to create shapes such as the **magic wand** to select color areas or other selection tools. You can even use external images, logos and even text. Once your pattern is ready create a style on it to fill it with white just like you did previously. Then hide all the other layers except the pattern so you have something like this.
 
@@ -103,13 +103,13 @@ You can also use any other tool to create shapes such as the **magic wand** to s
 Although you can use any kind of shape to define a secondary color pattern like logos and text you should keep in mind that the InkWidget resolution on the vehicle is low so you won't have a lot of details.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (465).png" alt=""><figcaption><p>Export the secondary color pattern to PNG</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (400).png" alt=""><figcaption><p>Export the secondary color pattern to PNG</p></figcaption></figure>
 
 Finally export the image as PNG. Now it is time to export your `secondary_color.xbm` texture to PNG using the `Tools > Export Tool`. Erase the PNG export with your PNG mask using the same file name.
 
 Then use the `Tools > Import Tool` with the following settings to import your mask back into the texture file.
 
-<figure><img src="../../../.gitbook/assets/image (463).png" alt=""><figcaption><p>Texture import settings</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (398).png" alt=""><figcaption><p>Texture import settings</p></figcaption></figure>
 
 ## Update the WorldWidgetComponents
 

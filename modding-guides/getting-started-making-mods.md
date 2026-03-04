@@ -13,7 +13,7 @@ This page is for people who are just getting started.
 
 ## How do I start?
 
-First of all, you are welcome to join us on the [REDmodding Discord](https://discord.gg/redmodding) – it's not mandatory, though.
+First of all, you are welcome to join us on the [REDmodding Discord](https://discord.gg/redmodding) – it's not mandatory, though.
 
 But before you can call yourself a modder, you must master an important skill:
 
@@ -26,7 +26,7 @@ If there are mods that already do what you want, you can [analyze them](analysin
 The short answer: **Yes**, you are allowed. CDPR says so.
 
 {% hint style="warning" %}
-Never forget that **somebody made that mod**. Another person poured time and creativity in the thing you're holding – treat it respectfully.&#x20;
+Never forget that **somebody made that mod**. Another person poured time and creativity in the thing you're holding – treat it respectfully.
 
 **Always give credit where credit is due** and **don't be a jerk.**
 {% endhint %}
@@ -37,18 +37,16 @@ Never forget that **somebody made that mod**. Another person poured time and cre
 
 Every mod is **a change of CDPR's product**. We have their [**permission**](https://www.cdprojektred.com/en/fan-content) to do that:
 
-* We’re happy for you to make mods for our games (i.e. software that modifies or works with our games – e.g. changing the UI or adding new mechanics) so long as it doesn’t breach the relevant game’s EULA (e.g. no cheating – this is especially important for GWENT!). \
+* We’re happy for you to make mods for our games (i.e. software that modifies or works with our games – e.g. changing the UI or adding new mechanics) so long as it doesn’t breach the relevant game’s EULA (e.g. no cheating – this is especially important for GWENT!).\
   If you want to make a mod for another game or service using our content, or make the mod a standalone product, ask us in advance via legal@cdprojektred.com (we just don’t want the next Soulkiller virus).
 
 But how about intellectual property?
 
-From the [Fan Content guidelines](https://www.cdprojektred.com/en/fan-content):&#x20;
+From the [Fan Content guidelines](https://www.cdprojektred.com/en/fan-content):
 
 * So, we kindly ask that you give us from the moment of creation of your fan content a **non-exclusive**, permanent, irrevocable, worldwide, sub-licensable, royalty-free licence to use, modify, reproduce, create derivative works from, distribute, exploit, transmit, perform and communicate your fan content in connection with our games. From our side, rest assured that if your creation stands out we will do our best to reach out, have a chat and grant you appropriate recognition.
 
 "We kindly ask" means "you have to". And guess what? CDPR really like open source, so we're surfing on their ticket.
-
-
 
 </details>
 
@@ -58,8 +56,8 @@ Giving you a straight answer would be too easy: that depends on the type of mod 
 
 That said you can see some recommendations for tooling here:
 
-{% content-ref url="../for-mod-creators/modding-tools/" %}
-[modding-tools](../for-mod-creators/modding-tools/)
+{% content-ref url="../for-mod-creators-theory/modding-tools/" %}
+[modding-tools](../for-mod-creators-theory/modding-tools/)
 {% endcontent-ref %}
 
 ## Mod Types
@@ -81,7 +79,7 @@ That said you can see some recommendations for tooling here:
 
 #### Where do I go from here?
 
-Everything you need to know is explained in  [boe6s-guide-new-car-from-a-to-z](vehicles/boe6s-guide-new-car-from-a-to-z/ "mention")
+Everything you need to know is explained in [boe6s-guide-new-car-from-a-to-z](vehicles/boe6s-guide-new-car-from-a-to-z/ "mention")
 
 ### Anything 3d: Gear, body parts and chrome
 
@@ -92,7 +90,7 @@ Everything you need to know is explained in  [boe6s-guide-new-car-from-a-to-z](v
 
 Start by installing Wolvenkit and the required tools. There's a full walkthrough in the red wiki: [Download, Install and Setup](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download "mention")
 
-You can now fuck around and find out on your own. If you feel overwhelmed, I recommend the following guides (in that order):&#x20;
+You can now fuck around and find out on your own. If you feel overwhelmed, I recommend the following guides (in that order):
 
 1. [recolours-and-refits](items-equipment/recolours-and-refits/ "mention") will show you the process and the workflows
 2. [adding-new-items](items-equipment/adding-new-items/ "mention") shows you how to add game items. You can use the results of step 1 as a base.

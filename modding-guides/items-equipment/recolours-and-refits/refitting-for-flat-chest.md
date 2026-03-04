@@ -26,17 +26,15 @@ I created a[ project you can download on Nexus ](https://www.nexusmods.com/cyber
 
 Feel free to upload pics of your own refits in game or in Blender!
 
-
-
 I’m working on refitting all vanilla t1 and t2 for the flat chest body, so that's what you’re gonna see in the screenshots.
 
 {% hint style="info" %}
-&#x20;You can make your clothing item dynamic for the flat chest body! Just use the tag `flat`
+You can make your clothing item dynamic for the flat chest body! Just use the tag `flat`
 {% endhint %}
 
 ### Step 1: Export your meshes <a href="#ozayndoydnwh" id="ozayndoydnwh"></a>
 
-Two guides already explain how to add the meshes to your project and import/export using the Blender plugin.&#x20;
+Two guides already explain how to add the meshes to your project and import/export using the Blender plugin.
 
 {% content-ref url="r-and-r-refitting-step-by-step.md" %}
 [r-and-r-refitting-step-by-step.md](r-and-r-refitting-step-by-step.md)
@@ -54,7 +52,7 @@ This will help you see mesh clipping a lot better.
 
 At the top click, the little down arrow next to the balls (ha):
 
-![](<../../../.gitbook/assets/8 (3).png>)
+![](<../../../.gitbook/assets/8 (4).png>)
 
 Ignore my badly drawn arrow and click on "Object" then "Random",
 
@@ -66,11 +64,11 @@ Now, when you import meshes, they'll all be a different color.
 
 I use a custom .blend file with multiple bodies in it. Your workspace should have the body and the clothing item in the viewport.
 
-![](<../../../.gitbook/assets/0 (2).png>)
+![](<../../../.gitbook/assets/0 (3).png>)
 
 This specific mesh has three submeshes. However, one of them is on the back so we won't need to refit that one, only the two that cover the chest.
 
-![](<../../../.gitbook/assets/1 (4).png>)
+![](<../../../.gitbook/assets/1 (5).png>)
 
 ### Step 3: Remove shape keys <a href="#yifm7gas2a69" id="yifm7gas2a69"></a>
 
@@ -78,7 +76,7 @@ You will get an error if you try to apply the script to a mesh that has shape ke
 
 Select one of the submeshes and hit the little green button here. I am sure it has an actual name if you hover over it.
 
-![](<../../../.gitbook/assets/2 (3).png>)
+![](<../../../.gitbook/assets/2 (4).png>)
 
 Remove GarmentSupport by clicking on it and then clicking the minus button. Then click on Basis and click the minus button again.
 
@@ -88,7 +86,7 @@ You **must** do it in this order. GarmentSupport, then Basis.
 
 The shape keys section should now be completely blank.
 
-![](<../../../.gitbook/assets/3 (4).png>)
+![](<../../../.gitbook/assets/3 (5).png>)
 
 I’m gonna do this for the other submesh brb.
 
@@ -98,17 +96,17 @@ k im back
 
 Theoretically, you should see this menu if you have the I/O tool properly installed:
 
-![](<../../../.gitbook/assets/4 (5).png>)
+![](<../../../.gitbook/assets/4 (6).png>)
 
 The CP77 Modding tab has everything we need. You’re going to expand the Mesh Tools section if it isn’t already.
 
 Go to the AKL refitter section and select flat chest from the drop-down.
 
-![](<../../../.gitbook/assets/5 (3).png>)
+![](<../../../.gitbook/assets/5 (4).png>)
 
-You don’t have to do this step one by one, you can select all the meshes that need to be refitted. This has pros and cons.&#x20;
+You don’t have to do this step one by one, you can select all the meshes that need to be refitted. This has pros and cons.
 
-**Pros:** Sometimes waiting for the script to run can take a bit. You can see the mesh change all at once.&#x20;
+**Pros:** Sometimes waiting for the script to run can take a bit. You can see the mesh change all at once.
 
 **Cons:** Might not be able to see how some finer details don’t need to be refit or could be refit manually for better results.
 
@@ -122,7 +120,7 @@ As I mentioned, this mesh specifically has two meshes that cover the breasts and
 
 I selected the other two meshes and clicked "refit the selected mesh." This is the output.
 
-![](<../../../.gitbook/assets/7 (4).png>)
+![](<../../../.gitbook/assets/7 (5).png>)
 
 Well, looks like there’s some stuff we gotta manually adjust! This happens most often with bras and the like. Not to worry! These small adjustments are relatively easy.
 
@@ -130,7 +128,7 @@ Well, looks like there’s some stuff we gotta manually adjust! This happens mos
 
 Before we can adjust, we have to apply the modifier. Since we removed the shape keys, we shouldn't see any error when we do this.
 
-![](<../../../.gitbook/assets/10 (2).png>)
+![](<../../../.gitbook/assets/10 (3).png>)
 
 Click the down arrow next to the script modifier and click apply (or CTRL A on your keyboard).
 
@@ -144,13 +142,11 @@ Let’s go into edit mode. Click the little drop-down on the top left and click 
 
 Ignore my badly drawn arrow again. This is what you should see. All of the vertices selected. Don’t worry about it. Also, select the little compass arrow button on the left. We only need to move the mesh left, right, in, or out right now.
 
-![](<../../../.gitbook/assets/12 (2).png>)
+![](<../../../.gitbook/assets/12 (1).png>)
 
 We’re going to click somewhere else in the viewport to deselect the vertices. What we’re going to do, instead, is only select a handful of vertices in the area we need to refit. Also, we’re going to use proportional mode.
 
-
-
-![](<../../../.gitbook/assets/14 (1).png>)
+![](../../../.gitbook/assets/14.png)
 
 This button. Start small, like 0.01 or something. Check out [step four of the R\&R: Refitting guide](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step#step-4-refitting) for more info.
 
@@ -162,19 +158,19 @@ Unfortunately, this part of the refit process is kinda partly vibes-based.
 
 I’m going to start in this part. You can select a couple vertices by holding down CTRL and clicking the vertex next to it. You can also click and drag to create a box, but sometimes that selects the vertices behind the body, so use with caution!
 
-![](<../../../.gitbook/assets/15 (1).png>)
+![](../../../.gitbook/assets/15.png)
 
 Generally, if the mesh is clipping into the front or back of the body, you’ll use the green arrow to move it in or out. If it’s clipping into the sides, use the red arrow. If it’s clipping into the shoulders, use the blue arrow. Sometimes you might need to get a lil weird with it and do a couple back and forth, but that’s what proportional mode is for.
 
-![](<../../../.gitbook/assets/16 (1).png>)
+![](../../../.gitbook/assets/16.png)
 
 Sometimes you get lucky and can pull bigger sections out. But WATCH OUT! It can make lumpy any places you moved with a smaller proportional size. Like I said, sometimes this part is vibes-based.
 
-![](<../../../.gitbook/assets/17 (1).png>)
+![](../../../.gitbook/assets/17.png)
 
 Nice!
 
-![](<../../../.gitbook/assets/18 (1).png>)
+![](../../../.gitbook/assets/18.png)
 
 I forgot to refit those tiny little things in the center, I fixed it off-screen.
 
@@ -184,13 +180,13 @@ Alright! Good enough. Eventually, I want to sculpt these a bit better. But for n
 
 Switch back to object mode and go to that funky lil green icon again. Click the plus button to add the Basis back.
 
-![](<../../../.gitbook/assets/19 (1).png>)
+![](../../../.gitbook/assets/19.png)
 
 Next, we’re gonna go back to the top of this menu, where we applied the script (the wrench icon).
 
 Add modifier:
 
-![](<../../../.gitbook/assets/20 (1).png>)
+![](../../../.gitbook/assets/20.png)
 
 Deform > Shrinkwrap
 

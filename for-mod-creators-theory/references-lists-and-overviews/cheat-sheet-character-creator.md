@@ -9,7 +9,7 @@ description: Character creator options and their values
 **Created:** Sep 01 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** Jan 23 2025 by @nutboy
 
-This page lists various properties of the character creator. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.&#x20;
+This page lists various properties of the character creator. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for.
 
 Please note that this page lists **appearances** and **colours**. For **mesh paths**, please check [cheat-sheet-head](cheat-sheet-head/ "mention")
 
@@ -25,7 +25,7 @@ You can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/np
 | Skin type                                                                   | Compexion: 01-04 | [Lip Makeup Style](cheat-sheet-character-creator.md#lip-makeup)           | off, default, glossy, matte |
 | [Hairstyle](cheat-sheet-character-creator.md#hairstyle)                     | 1-51             | [Lip Makeup](cheat-sheet-character-creator.md#lip-makeup)                 | 01-20                       |
 | [Hair color](cheat-sheet-character-creator.md#hair-colour)                  |                  | [Lip Makeup Color](cheat-sheet-character-creator.md#lip-makeup)           |                             |
-| Eyes                                                                        | 1-22             | [Cheek Makeup ](cheat-sheet-character-creator.md#cheek-makeup-style)      | off, 1-14                   |
+| Eyes                                                                        | 1-22             | [Cheek Makeup](cheat-sheet-character-creator.md#cheek-makeup-style)       | off, 1-14                   |
 | [Eye color](cheat-sheet-character-creator.md#eye-colour)                    |                  | [Cheek Makeup Color](cheat-sheet-character-creator.md#cheek-makeup-color) |                             |
 | Eyebrows                                                                    | off, 1-11        | [Blemishes](cheat-sheet-character-creator.md#blemishes)                   | off, 01-03                  |
 | [Eyelash color](cheat-sheet-character-creator.md#hair-colour)               |                  | [Blemish Color](cheat-sheet-character-creator.md#blemish-color)           |                             |
@@ -41,7 +41,7 @@ You can use [NoraLee's NPV part picker](https://noraleedoes.neocities.org/npv/np
 | Teeth                                                                       | 0-4              | [Pubic Hair Color](cheat-sheet-character-creator.md#hair-colour)          |                             |
 | [Eye Makeup](cheat-sheet-character-creator.md#eye-make-up)                  | off, 1-20        |                                                                           |                             |
 
-## Skin tones&#x20;
+## Skin tones
 
 {% hint style="info" %}
 See [cheat-sheet-head](cheat-sheet-head/ "mention")-> [#head-material-instances](cheat-sheet-head/#head-material-instances "mention") for the corresponding files
@@ -59,7 +59,7 @@ See [cheat-sheet-head](cheat-sheet-head/ "mention")-> [#head-material-instances]
 For a mod fixing various mix-ups in the character creator, see [here](https://www.nexusmods.com/cyberpunk2077/mods/6788).
 {% endhint %}
 
-Lipstick colours and styles are sorted in (more or less) ascending order in the appearance list in the mesh.&#x20;
+Lipstick colours and styles are sorted in (more or less) ascending order in the appearance list in the mesh.
 
 Style order is Default - Glossy - Matte (no suffix, \_0&#x32;_, \__&#x30;3)
 
@@ -99,13 +99,9 @@ For a list of [#name-of-meshes-by-index](cheat-sheet-head/hair.md#name-of-meshes
 
 <table><thead><tr><th width="97"></th><th></th></tr></thead><tbody><tr><td>01</td><td>hb_000_pma_c__basehead_shadowbase_01</td></tr><tr><td>02</td><td>hb_000_pma_c__basehead_big_beard_afro</td></tr><tr><td>03</td><td>pma__morphs_default / hb_000_pma_c__basehead</td></tr><tr><td>04</td><td>hb_000_pma_c__basehead_handlebar_stache</td></tr><tr><td>05</td><td>hb_000_pma_c__basehead_jesse_beard</td></tr><tr><td>06</td><td>hb_000_pma_c__basehead_maelstrom_full</td></tr><tr><td>07</td><td>hb_000_pma_c__basehead_big_beard</td></tr><tr><td>08</td><td>hb_000_pma_c__basehead_short_afro</td></tr><tr><td>09</td><td>hb_000_pma_c__basehead_thick_beard_afro</td></tr><tr><td>10</td><td>hb_000_pma_c__basehead_fu_manchu</td></tr><tr><td>11</td><td>hb_000_pma_c__basehead_logan</td></tr><tr><td>12</td><td>hb_000_pma_c__basehead_patmc</td></tr></tbody></table>
 
-
-
 ## Beard style
 
-<table><thead><tr><th width="107"></th><th>enabled chunks (NOT chunkmask)</th></tr></thead><tbody><tr><td>01</td><td>1111 </td></tr><tr><td>02</td><td>1100 </td></tr><tr><td>03</td><td>1110 </td></tr><tr><td>04</td><td>1101 </td></tr><tr><td>05</td><td>0010 </td></tr><tr><td>06</td><td>0011 </td></tr><tr><td>07</td><td>0001</td></tr></tbody></table>
-
-
+<table><thead><tr><th width="107"></th><th>enabled chunks (NOT chunkmask)</th></tr></thead><tbody><tr><td>01</td><td>1111</td></tr><tr><td>02</td><td>1100</td></tr><tr><td>03</td><td>1110</td></tr><tr><td>04</td><td>1101</td></tr><tr><td>05</td><td>0010</td></tr><tr><td>06</td><td>0011</td></tr><tr><td>07</td><td>0001</td></tr></tbody></table>
 
 ## Eye Colour
 
@@ -145,17 +141,13 @@ Check [cheat-sheet-head](cheat-sheet-head/ "mention") -> [#cyberware](cheat-shee
 
 <figure><img src="../../.gitbook/assets/character_creator_nail_colour.png" alt="" width="563"><figcaption></figcaption></figure>
 
-
-
 ## Facial Scars and submeshes
-
-
 
 <table><thead><tr><th width="105"></th><th></th><th>chunkmask</th></tr></thead><tbody><tr><td>01</td><td>hx_000_pXa__morphs_scars_01</td><td>2049</td></tr><tr><td>02</td><td>hx_000_pXa__morphs_scars_01</td><td>2050</td></tr><tr><td>03</td><td>hx_000_pXa__morphs_scars_01</td><td>2052</td></tr><tr><td>04</td><td>hx_000_pXa__morphs_scars_01</td><td>2064</td></tr><tr><td>05</td><td>hx_000_pXa__morphs_scars_01</td><td>2080</td></tr><tr><td>06</td><td>hx_000_pXa__morphs_scars_01</td><td>2112</td></tr><tr><td>07</td><td>hx_000_pXa__morphs_scars_01</td><td>2176</td></tr><tr><td>08</td><td>hx_000_pXa__morphs_scars_01</td><td>2304</td></tr><tr><td>09</td><td>hx_000_pXa__morphs_scars_01</td><td>3072</td></tr><tr><td>10</td><td>hx_000_pXa__morphs_scars_01</td><td>2056</td></tr><tr><td>11</td><td>hx_000_pXa__morphs_scars_01</td><td>2176</td></tr><tr><td>12</td><td>hx_000_pXa__morphs_scars_01</td><td>2064</td></tr><tr><td>13</td><td>hx_000_pXa__morphs_scars_01</td><td>2056</td></tr></tbody></table>
 
 ## Piercing Color
 
-<figure><img src="../../.gitbook/assets/character_crrator_piercing_color.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/character_creator_piercing_colour.png" alt=""><figcaption></figcaption></figure>
 
 ## Piercings and submeshes
 
@@ -175,7 +167,5 @@ base\characters\common\player_base_bodies\player_man_average\tattoos
 For the female body gender, there are three different chest sizes!
 
 <table><thead><tr><th width="110"></th><th width="191"></th><th>file</th></tr></thead><tbody><tr><td>01</td><td>Valentinos</td><td>tx_000_pwa_base__full_tattoo_01.mesh</td></tr><tr><td>02</td><td>geometric blackwork</td><td>tx_000_pwa_base__full_tattoo_02.mesh</td></tr><tr><td>03</td><td>serpent</td><td>tx_000_pwa_base__full_tattoo_03.mesh</td></tr><tr><td>04</td><td>flowers/mandalas</td><td>tx_000_pwa_base__full_tattoo_04.mesh</td></tr><tr><td>05</td><td>NUSA</td><td>tx_000_pwa_base__full_tattoo_05.mesh</td></tr></tbody></table>
-
-
 
 [^1]: no, it's actually spelled like this. I'm sorry.

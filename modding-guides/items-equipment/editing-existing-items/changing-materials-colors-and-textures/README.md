@@ -6,24 +6,24 @@ description: Changing how an item looks in-game
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Published:** November 05 2022 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit:** Jun 29 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** November 05 2022 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** Jun 29 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will teach you how to edit an item's material, changing its appearance.&#x20;
+This guide will teach you how to edit an item's material, changing its appearance.
 
 ### Wait, this is not what I want!
 
 * For a step-by-step walkthrough for a recolour of the Netrunner suit, check [r-and-r-colour-editing.md](../../recolours-and-refits/r-and-r-colour-editing.md "mention")
 * If you want to edit emissive (glowing) material, check [r-and-r-emissive.md](../../recolours-and-refits/r-and-r-emissive.md "mention") -> [#changing-the-presets](../../recolours-and-refits/r-and-r-emissive.md#changing-the-presets "mention")
 * For an overview of base materials and example files, you can check [here](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md).
-* If you want to learn how mesh material assignment works in general, you can check the [corresponding page](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment).
+* If you want to learn how mesh material assignment works in general, you can check the [corresponding page](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment).
 * For details on changing materials, check [.](./ "mention").
   * If you just want to use a textured material, check [using-a-textured-material.md](using-a-textured-material.md "mention")
 * You can find a video guide on [youtube](https://youtu.be/HLwjKM8YDlA) (It's also embedded below)
 
 ## Prerequisites
 
-* Wolvenkit's most recent version  ([Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) | [Stable](https://github.com/WolvenKit/Wolvenkit/releases) — guide has been written with 8.11)
+* Wolvenkit's most recent version ([Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) | [Stable](https://github.com/WolvenKit/Wolvenkit/releases) — guide has been written with 8.11)
 * A [Wolvenkit Project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects)
 * Most likely [MLSetupBuilder](../../../../for-mod-creators-theory/modding-tools/mlsetup-builder/) >= 1.6.7 (get the [latest release](https://github.com/Neurolinked/MlsetupBuilder/releases/))
 * If you are editing a basegame material, you need to install [Material and Texture Override](https://www.nexusmods.com/cyberpunk2077/mods/5266) from Nexus.
@@ -39,8 +39,6 @@ Once you know what you're doing: <5 minutes and as much time for fine tuning as 
 
 This guide will take you through the following steps:
 
-
-
 ## Video guide
 
 Please keep in mind that video guides might be outdated, as they are much more difficult to update than a wiki page. Refer to the written guide below if you run into any troubles!
@@ -52,7 +50,7 @@ Please keep in mind that video guides might be outdated, as they are much more d
 **Estimated time: \~5 minutes for total noobs**, unless you get side-tracked badly
 
 {% hint style="warning" %}
-This process is detailed under [spawn-codes-baseids-hashes.md](../../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention") -> [#step-by-step](../../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#step-by-step "mention").&#x20;
+This process is detailed under [spawn-codes-baseids-hashes.md](../../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention") -> [#step-by-step](../../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md#step-by-step "mention").
 
 Make sure to follow it so you're editing the correct material!
 {% endhint %}
@@ -63,7 +61,7 @@ Make sure to follow it so you're editing the correct material!
 
 #### mesh.DepotPath:
 
-One per body gender (m/w), this is shared by all appearances (`basic_01`, `basic_02`, `rich_01`, `rich_02`). For the female vest, it's&#x20;
+One per body gender (m/w), this is shared by all appearances (`basic_01`, `basic_02`, `rich_01`, `rich_02`). For the female vest, it's
 
 `base\characters\garment\player_equipment\torso\t2_002_vest__puffy\t2_002_pwa_vest__puffy.mesh`
 
@@ -79,19 +77,19 @@ Again, you can look these up in the .app file!
 
 ### Add the mesh to your project
 
-1. Find the file from mesh.DepotPath in your [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser).&#x20;
+1. Find the file from mesh.DepotPath in your [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser).
 2. Add it to your Wolvenkit Project (double-click or right-click -> Add to Project)
 
 We will now edit the mesh's **material**. Stay tuned!
 
 {% hint style="info" %}
-To learn how appearances and materials connect, you can read [3d-objects-.mesh-files](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention"). \
-This is not necessary for this guide, but if you find yourself struggling, it's worth checking out (especially the diagram under [#mesh-file-diagram](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#mesh-file-diagram "mention"))
+To learn how appearances and materials connect, you can read [3d-objects-.mesh-files](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention").\
+This is not necessary for this guide, but if you find yourself struggling, it's worth checking out (especially the diagram under [3d-objects-.mesh-files](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#mesh-file-diagram "mention"))
 {% endhint %}
 
 ## Step 1: Finding the correct material name
 
-1. Open your mesh file in Wolvenkit by double-clicking it.&#x20;
+1. Open your mesh file in Wolvenkit by double-clicking it.
 2. Find the array `appearances` at the very top, and expand it.
 3. Find the appearance by the name that you found in Step 0 (example: `bwstripes`), and expand it
 4. Find the chunk material names. These define the material:
@@ -146,7 +144,7 @@ You will (hopefully) see a material with three entries in `values` (order doesn'
 
 <summary>Do you want to know more?</summary>
 
-In this guide, we'll focus on editing the MultilayerSetup.&#x20;
+In this guide, we'll focus on editing the MultilayerSetup.
 
 * For a detailed explanation of those properties, see [multilayered-material-properties.md](../../../../for-mod-creators-theory/materials/configuring-materials/multilayered-material-properties.md "mention")
 * If you want an explanation of the Multilayered shader, check [here](../../../../for-mod-creators-theory/materials/multilayered/).
@@ -162,7 +160,7 @@ First, add the .mlsetup to your project. You can either expand the `CKeyValuePai
 <figure><img src="../../../../.gitbook/assets/adding_item_to_project.png" alt=""><figcaption></figcaption></figure>
 
 1. In the project explorer under Wolvenkit's `archive` folder, right-click on the `mlsetup` file\
-   &#xNAN;_&#x54;his folder will only be visible in the "source" or "archive" tab of your_ [_project explorer_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer)
+   \&#xNAN;_This folder will only be visible in the "source" or "archive" tab of your_ [_project explorer_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer)
 2. Select "[Convert to JSON](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json)"
 
 ## Step 3: Editing the .mlsetup file
@@ -182,16 +180,16 @@ Open up MlSetupBuilder and load your .mlsetup.json file.
 
 If you select WolvenKit's "Open in File Explorer" option, you can copy the path from the explorer's address bar and paste it into the MlSetupBuilder's address bar.
 
-<img src="../../../../.gitbook/assets/image (198).png" alt="" data-size="original">
+<img src="../../../../.gitbook/assets/image (123).png" alt="" data-size="original">
 
 </details>
 
 {% hint style="success" %}
-For a documentation of multilayer properties, see [here](broken-reference). \
+For a documentation of multilayer properties, see [here](broken-reference/).\
 For a list of reference images, check [multilayered-previews.md](../../../../for-mod-creators-theory/materials/multilayered/multilayered-previews.md "mention")
 {% endhint %}
 
-3. [Draw the rest of the owl](https://knowyourmeme.com/memes/how-to-draw-an-owl) and [edit the mlsetup](../../../../for-mod-creators-theory/modding-tools/mlsetup-builder/#using-mlsb).&#x20;
+3. [Draw the rest of the owl](https://knowyourmeme.com/memes/how-to-draw-an-owl) and [edit the mlsetup](../../../../for-mod-creators-theory/modding-tools/mlsetup-builder/#using-mlsb).
 4. Export the file, overwriting the original `.mlsetup.json`
 5. Switch back to Wolvenkit
 6. Right-click on the `.mlsetup.json` and [import it from json.](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/import-export/import-export-as-json)
@@ -202,24 +200,23 @@ This is already working. You can pack the project and see it in action!
 If it doesn't work, you need to install [Material and Texture Override](https://www.nexusmods.com/cyberpunk2077/mods/5266) from Nexus.
 {% endhint %}
 
-<figure><img src="../../../../.gitbook/assets/image (102).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (61).png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Being done
 
 Congratulations! You modded an item! If that's all you wanted, you can now go and do whatever you want. You can even delete the mesh from your mod and pack only the `.mlsetup`!
 
-Of course you have only changed an in-game texture, which may cause side effects — especially if other mods do the same. \
+Of course you have only changed an in-game texture, which may cause side effects — especially if other mods do the same.\
 To change that, keep reading!
 
 ## Step 5: Custompathing
 
 Instead of changing an in-game file, you can also replace it with your own.
 
-1. Rename your file to something nobody else will touch, e.g. `manavortex\mlsetups\my_custom_vest_appearance.mlsetup`&#x20;
-2. Copy the new relative path (right-click), and update your mesh:\
+1. Rename your file to something nobody else will touch, e.g. `manavortex\mlsetups\my_custom_vest_appearance.mlsetup`
+2. Copy the new relative path (right-click), and update your mesh:\\
 
-
-<figure><img src="../../../../.gitbook/assets/image (156).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (24).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
 Keep your folder and file names unique! If you have two mods adding a file at the same location, the second one **will be unable to overwrite it** and will use the first mod's file. That is, unless your mods are in REDmod format, which will be loaded even later and in order of their folder names.
@@ -229,7 +226,7 @@ Understood? No? That's fine. Just keep it unique. :D
 
 ## Step 6: Renaming materials
 
-You can rename a material by changing the "name" property inside the `CMeshMaterialEntry` in the `materials` array:&#x20;
+You can rename a material by changing the "name" property inside the `CMeshMaterialEntry` in the `materials` array:
 
 <figure><img src="../../../../.gitbook/assets/rename_material.png" alt=""><figcaption></figcaption></figure>
 
@@ -239,12 +236,12 @@ As of Wolvenkit 8.15, chunkmaterials will not auto-update, but you can use Searc
 
 ## Step 6 (optional): adding new materials
 
-To add a new material to a mesh, you can simply right-click on the `materials` array:&#x20;
+To add a new material to a mesh, you can simply right-click on the `materials` array:
 
 <figure><img src="../../../../.gitbook/assets/changing_material_add_new_material.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-Consider converting your mod to use [archivexl-patching-appearances.md](../archivexl-patching-appearances.md "mention")for much better compatibility and smaller mod size!
+Consider converting your mod to use [archivexl-patching-appearances.md](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching/archivexl-patching-appearances.md "mention")for much better compatibility and smaller mod size!
 {% endhint %}
 
 <details>
@@ -259,13 +256,11 @@ Change its name to something unique.
 
 Now, add an entry in the `localMaterialBuffer`.`materials` (or `preloadLocalMaterialInstances`):
 
-<img src="../../../../.gitbook/assets/editing_material_adding_entry (1).png" alt="The new material will have the name you defined in the CMeshMaterialEntry in the previous step." data-size="original">
+<img src="../../../../.gitbook/assets/editing_material_adding_entry (2).png" alt="The new material will have the name you defined in the CMeshMaterialEntry in the previous step." data-size="original">
 
 You can now use your new material just like the regular, old materials.
 
 </details>
-
-
 
 [^1]: Defines the material's colours
 

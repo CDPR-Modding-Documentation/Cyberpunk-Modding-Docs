@@ -6,8 +6,8 @@ description: Technical details about normal maps
 
 ## Summary
 
-Created: Feb 21 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Last documented update: Feb 21 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Created: Feb 21 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Last documented update: Feb 21 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page contains technical details about Cyberpunk's normal maps. You can find a detailed explanation video at the end of the page.
 
@@ -23,13 +23,13 @@ Cyberpunk uses **DirectX** normal maps (screenshot: left). You can read more det
 If your normal map is **inverted**, you can use Photoshop or [photopea](https://www.photopea.com/) to invert your **green channel**.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/image (580).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (588).png" alt=""><figcaption></figcaption></figure>
 
 ### Baking in Blender
 
 If you're using Blender to bake normal maps, use +X, -Y, and +Z, like so:
 
-<figure><img src="../../../.gitbook/assets/image (579).png" alt=""><figcaption><p>Note G is using -Y, not +Y as default</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (587).png" alt=""><figcaption><p>Note G is using -Y, not +Y as default</p></figcaption></figure>
 
 ## Video explanation
 

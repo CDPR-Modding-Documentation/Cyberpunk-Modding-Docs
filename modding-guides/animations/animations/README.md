@@ -10,7 +10,7 @@ This page and its subpages contain links to guides about making animations and p
 
 For individual guides, please check the sub-pages in the navigation tree or use the "Next" button at the bottom of this page to browse through.
 
-### [poses-animations-make-your-own](poses-animations-make-your-own/ "mention")&#x20;
+### [poses-animations-make-your-own](poses-animations-make-your-own/ "mention")
 
 This guide will teach you how to make your own static poses in Blender and import them into an existing .anim file.
 
@@ -20,11 +20,10 @@ You can use the same process to make photo mode replacers or create animations w
 
 This walks you through the process of hooking an existing `.anims` file up with AppearanceMenuMod.
 
-### [archivexl-adding-photo-mode-poses](archivexl-adding-photo-mode-poses/ "mention")&#x20;
+### [archivexl-adding-photo-mode-poses](archivexl-adding-photo-mode-poses/ "mention")
 
-How to add standalone poses to photo mode (rather than making replacers)&#x20;
+How to add standalone poses to photo mode (rather than making replacers)
 
-### [custom-facial-expressions.md](custom-facial-expressions.md "mention")
+### [custom-facial-expressions.md](../facial-animations/custom-facial-expressions.md "mention")
 
 How to replace the default set of expressions with those from an NPC
-

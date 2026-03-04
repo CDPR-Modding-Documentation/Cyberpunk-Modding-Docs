@@ -4,7 +4,7 @@ description: >-
   using World Builder
 ---
 
-# Custom elevators
+# Custom Elevators
 
 ## Requirements
 
@@ -65,7 +65,7 @@ Ensure that the "Primary Range" and "Secondary Range" (Found under the "World No
 * In order to link and reference all the spawned object, each one will need its own, **unique** NodeRef
 * Expand the `World Node`header and fill the NodeRef field with a unique string
 
-<figure><img src="../../../.gitbook/assets/image (555).png" alt="" width="351"><figcaption><p>Example of assigning a NodeRef</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (564).png" alt="" width="351"><figcaption><p>Example of assigning a NodeRef</p></figcaption></figure>
 
 * In the end, we will have assigned 5 NodeRef's
 * For **example**:
@@ -86,7 +86,7 @@ Do not use the same NodeRef names as used in this guide, but choose your own uni
     * Fill the NodeRef field with the NodeRef of the terminal that you are linking
     * Keep in mind that the elevator will see the floors in the order in which you add them, so the first one in the list should be the lowest floor
 
-    <figure><img src="../../../.gitbook/assets/image (559).png" alt="" width="449"><figcaption><p>Example of the device connections for an elevator with two floors</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (567).png" alt="" width="449"><figcaption><p>Example of the device connections for an elevator with two floors</p></figcaption></figure>
 
 ## Setting up persistency
 
@@ -103,12 +103,9 @@ Do not use the same NodeRef names as used in this guide, but choose your own uni
     * Set `floorMarker`to the NodeRef of the floor's static marker (E.g. `$/marker_bottom`)
     * Optionally, use the checkboxes under `doorShouldOpenFrontLeftRight`to determine which doors of the elevator should open on this floor
 
-    <figure><img src="../../../.gitbook/assets/image (558).png" alt="" width="510"><figcaption><p>Example data for a terminals ElevatorFloorSetup (<code>floorMarker</code>NodeRef gets turned into hash)</p></figcaption></figure>
-*   Optionally change the elevator speed and inital starting floor by modifying:
-
-    * `Entity Instance Data / LiftController / persistentState / liftSetup`
-
-
+    <figure><img src="../../../.gitbook/assets/image (566).png" alt="" width="510"><figcaption><p>Example data for a terminals ElevatorFloorSetup (<code>floorMarker</code>NodeRef gets turned into hash)</p></figcaption></figure>
+* Optionally change the elevator speed and inital starting floor by modifying:
+  * `Entity Instance Data / LiftController / persistentState / liftSetup`
 
 ## Finishing up
 

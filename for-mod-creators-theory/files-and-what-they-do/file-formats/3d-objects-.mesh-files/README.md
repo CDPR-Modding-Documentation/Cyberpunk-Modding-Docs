@@ -13,8 +13,8 @@ This page contains information on .mesh files, such as what they are, how the ga
 
 ### Wait, that's not what I want!
 
-* To export/import meshes, see [wkit-blender-plugin-import-export.md](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention")&#x20;
-* To stop copy-pasting so much, check [archivexl-dynamic-materials.md](../../../../modding-guides/textures-and-luts/archivexl-dynamic-materials.md "mention") or [re-using-materials-.mi.md](../materials/re-using-materials-.mi.md "mention")
+* To export/import meshes, see [wkit-blender-plugin-import-export.md](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention")
+* To stop copy-pasting so much, check [archivexl-dynamic-materials.md](../../../core-mods-explained/archivexl/archivexl-dynamic-materials.md "mention") or [re-using-materials-.mi.md](../materials/re-using-materials-.mi.md "mention")
 * To edit a mesh's appearance, check [changing-materials-colors-and-textures](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
   * If you just want to use a textured material, check [using-a-textured-material.md](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention")
   * For a guided exercise, see [textured-items-and-cyberpunk-materials.md](../../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
@@ -80,19 +80,19 @@ Understanding this will save you a lot of trouble in the long term, so grab a co
 
 #### Appearances
 
-A mesh file has one or more **appearances**, which are used by [components](../../components/) to define how a thing looks. Think of an appearance as a skin for any given object: this shirt is black, it has red stitches, and there's an Arasaka logo on it.&#x20;
+A mesh file has one or more **appearances**, which are used by [components](../../components/) to define how a thing looks. Think of an appearance as a skin for any given object: this shirt is black, it has red stitches, and there's an Arasaka logo on it.
 
 {% hint style="info" %}
 If a Netrunner sits next to an explosion, we simply change their suit's appearance from `netrunner_suit_clean` to `netrunner_suit_dirty` and call it a day.
 {% endhint %}
 
-The base game does **not** change these appearances after they have been set up.&#x20;
+The base game does **not** change these appearances after they have been set up.
 
 #### Appearance definitions
 
-Each appearance is defined by an entry in the `appearances` array at the top of the file.&#x20;
+Each appearance is defined by an entry in the `appearances` array at the top of the file.
 
-A meshMeshAppearance has one or more `chunkMaterials,` which correspond to the item's individual `submeshes` (the different parts it has in Blender).  These entries are selected by **name**.
+A meshMeshAppearance has one or more `chunkMaterials,` which correspond to the item's individual `submeshes` (the different parts it has in Blender). These entries are selected by **name**.
 
 <figure><img src="../../../../.gitbook/assets/mesh_material_assignments_dropdown.png" alt=""><figcaption><p>The dropdown menu was added in Wolvenkit 8.16.2. If that hasn't released yet, you can install a <a href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download/the-wolvenkit-nightly">Nightly</a>.</p></figcaption></figure>
 
@@ -120,7 +120,7 @@ submesh\_00: ml\_t1\_029\_wa\_full\_\_swim\_turtleneck\_golden\_masksset\
 submesh\_01: ml\_t1\_029\_wa\_full\_\_swim\_turtleneck\_golden\_masksset\
 submesh\_02: lambert1
 
-The first two layers are different, the third one has&#x20;
+The first two layers are different, the third one has
 
 </details>
 
@@ -144,8 +144,8 @@ You will have noticed by now that these entries **do not hold materials**. They 
 
 A **material instance** holds the things you are actually interested in: how the mesh should look. They define the following properties:
 
-* `baseMaterial`:  which [shader template](../../../materials/shaders/) (`.mt`/`.remt`) will be used. Sometimes, this happens through a `.mi` file — this is an **external material** (more about this below)
-* `values`: a list of properties which pass information to the shader, for example which **diffuse texture** to use, or that the entire t-shirt should be [tinted red](../../../materials/configuring-materials/tinting-textures-in-wolvenkit.md).&#x20;
+* `baseMaterial`: which [shader template](../../../materials/shaders/) (`.mt`/`.remt`) will be used. Sometimes, this happens through a `.mi` file — this is an **external material** (more about this below)
+* `values`: a list of properties which pass information to the shader, for example which **diffuse texture** to use, or that the entire t-shirt should be [tinted red](../../../materials/configuring-materials/tinting-textures-in-wolvenkit.md).
 
 {% hint style="info" %}
 Properties you define in the `values` array will always overwrite properties from the baseMaterial - if your base material is blue and the mesh says that it should be red, then the item will be red.
@@ -165,7 +165,7 @@ If `preloadMaterialInstances` is empty, the list will be hidden in the easy [edi
 
 This is the same as a local material **inside an external file** so they can be used in multiple places.
 
-If a material is defined as external, it will be pulled in via **file path** through either `externalMaterials` or `preloadExternalMaterials`. For an example of this, take a look at hairs (e.g. `ep1\characters\common\hair\hh_201_wa__dawn\hh_121_wa__dawn.mesh`) — they do not use local materials at all. &#x20;
+If a material is defined as external, it will be pulled in via **file path** through either `externalMaterials` or `preloadExternalMaterials`. For an example of this, take a look at hairs (e.g. `ep1\characters\common\hair\hh_201_wa__dawn\hh_121_wa__dawn.mesh`) — they do not use local materials at all.
 
 You can also use these [`.mi` files](../materials/re-using-materials-.mi.md) as a base material and overwrite their properties in the **values** array. This process is called **daisy chaining** and can save you a lot of work.
 
@@ -182,7 +182,7 @@ Now that you've learned how everything hangs together, let's take an actual look
 #### TL;DR: I just want to add a new material!
 
 {% hint style="success" %}
-Summary:&#x20;
+Summary:
 
 1. **Register** a material in `materialEntries`. Here's where you give it a name.
 2. **Define** the material in either `localMaterialInstances.materials` or `externalMaterials`

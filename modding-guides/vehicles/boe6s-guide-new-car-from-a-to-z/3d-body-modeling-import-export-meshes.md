@@ -24,11 +24,11 @@ Open the “`AppearanceVisualController`” in the appearance’s item list. It 
 
 Go ahead and add this mesh to the project by clicking the yellow arrow.
 
-This mesh is used at distance, before your vehicle is loaded fully. We’ll be using it as a reference for our modeling in blender, as it is a low poly, complete model with wheels and all.&#x20;
+This mesh is used at distance, before your vehicle is loaded fully. We’ll be using it as a reference for our modeling in blender, as it is a low poly, complete model with wheels and all.
 
 Open the **Export Tool**, under the **Tools** menu on the top of **wkit**.
 
-Hit **refresh** to load all items, and select your proxy mesh you just added, then hit “**Export Selected**”. This should have created a `.glb` and `.json` file under the new “`raw`” folder above the resources in the **Project Explorer**.&#x20;
+Hit **refresh** to load all items, and select your proxy mesh you just added, then hit “**Export Selected**”. This should have created a `.glb` and `.json` file under the new “`raw`” folder above the resources in the **Project Explorer**.
 
 Example:
 
@@ -36,15 +36,15 @@ Example:
 
 Open a new project in blender, delete the base cube. Hit `File > Import > Cyberpunk GLTF` and load the `proxymesh.glb`
 
-Your proxy mesh should now load in blender.&#x20;
+Your proxy mesh should now load in blender.
 
 Example:
 
 <figure><img src="../../../.gitbook/assets/image60.png" alt=""><figcaption></figcaption></figure>
 
-You can now import your source 3d models for your vehicle.&#x20;
+You can now import your source 3d models for your vehicle.
 
-The proxy mesh will initially be positioned offset from other vanilla meshes. This is due to the vehicle’s `.rig` file settings(will be discussed later).&#x20;
+The proxy mesh will initially be positioned offset from other vanilla meshes. This is due to the vehicle’s `.rig` file settings(will be discussed later).
 
 Example showing the offset:
 
@@ -54,8 +54,7 @@ To get the exact offset, open the `.rig` file located at this path in the `.ent`
 
 * `RDTDataViewModel > components > deformation_rig > rig`
 
-Open the `boneNames` list and look for the index (number to the left) of “`Base`”, in this case 2:\
-
+Open the `boneNames` list and look for the index (number to the left) of “`Base`”, in this case 2:\\
 
 <figure><img src="../../../.gitbook/assets/image128.png" alt=""><figcaption></figcaption></figure>
 
@@ -64,8 +63,6 @@ Then close `boneNames` and open `boneTransforms`. Open the same index value as �
 <figure><img src="../../../.gitbook/assets/image78.png" alt=""><figcaption></figcaption></figure>
 
 (Values that are set at “`_.___E-17`” are in scientific notation, and if the `E` number is negative as they are here, the number is close to 0)
-
-
 
 Look at the `Z` value and noticee how it is `0.4399999` in the example. (\~0.44) This is the number we will translate the proxy mesh by. Return to blender and select the proxymesh object. Translate it by the same value just found in the `.rig` file by using the `Transform Location` values in the `Object Properties` menu: (positive to negative)
 
@@ -91,7 +88,7 @@ Example with both rendered:
 
 <figure><img src="../../../.gitbook/assets/image39.png" alt=""><figcaption></figcaption></figure>
 
-**Apply all transformations to all objects in blender.** This is required after any blender changes, if you skip this before exporting from Blender into WolvenKit, any positioning changes will not be saved.&#x20;
+**Apply all transformations to all objects in blender.** This is required after any blender changes, if you skip this before exporting from Blender into WolvenKit, any positioning changes will not be saved.
 
 {% hint style="info" %}
 Always Remember to apply all after modifying something in Blender.
@@ -139,7 +136,7 @@ For each component in the vehicle, you’ll want a separate collection to organi
 
 Here are the major mesh groupings you will want in your project:
 
-<figure><img src="../../../.gitbook/assets/image (417).png" alt=""><figcaption><p>(courtesy of Carryhan)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (481).png" alt=""><figcaption><p>(courtesy of Carryhan)</p></figcaption></figure>
 
 Split and join objects as needed to organize the Blender project structure.
 

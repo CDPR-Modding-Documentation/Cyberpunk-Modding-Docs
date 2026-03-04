@@ -168,7 +168,7 @@ This is where all of your NPC's appearances are defined (`appearanceDefinition`,
 * animations
 * their shadow
 * hair
-* body&#x20;
+* body
 * clothes
 
 <figure><img src="../../../.gitbook/assets/npv_app_structure.png" alt=""><figcaption><p>Keep the prefixes in your component names (<code>hx_</code>, <code>l1_</code> etc) - they're used by various other mods, among them EquipmentEx</p></figcaption></figure>
@@ -177,13 +177,13 @@ This is where all of your NPC's appearances are defined (`appearanceDefinition`,
 
 Deleting meshes from the mod's files left you with a bunch of inactive components. If you start the game now, there's a chance that you might **crash**.
 
-Wolvenkit's [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you finding the components that you can delete.&#x20;
+Wolvenkit's [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you finding the components that you can delete.
 
-<figure><img src="../../../.gitbook/assets/image (546).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (555).png" alt=""><figcaption></figcaption></figure>
 
 Their names will show up in the log:
 
-<figure><img src="../../../.gitbook/assets/image (547).png" alt=""><figcaption><p>That's normal, you just deleted those files!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (556).png" alt=""><figcaption><p>That's normal, you just deleted those files!</p></figcaption></figure>
 
 Go through the appearances and delete all components that File Validation warned you about. After that, you're good go customize your NPC!
 
@@ -194,7 +194,7 @@ The next section, [#how-do-i-know-what-to-put](npv-creating-a-custom-npc.md#how-
 If you feel completely lost, you can read up on [how to change NPC appearances](../appearances-change-the-looks/) – the concept is exactly the same.
 
 {% hint style="success" %}
-&#x20;[File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
+[File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention") will help you by detecting broken links: keep an eye on Wolvenkit's log when you save a file.
 {% endhint %}
 
 #### Adding another component
@@ -273,7 +273,7 @@ To set your custom eyelash colour, you need to set it inside the mesh file (as t
 <figure><img src="../../../.gitbook/assets/npv-eyelash-color-1.png" alt=""><figcaption></figcaption></figure>
 
 2. Find and expand the appearance you are using (the same you set in the `.app` file).
-3. Find the chunk saying `eyelashes_MAT` (respectively `eyeMat3` for mV) and change its value to the correct eyelash colour (e.g. `eyelashes__blue_steel`).&#x20;
+3. Find the chunk saying `eyelashes_MAT` (respectively `eyeMat3` for mV) and change its value to the correct eyelash colour (e.g. `eyelashes__blue_steel`).
 4. Save the file
 5. **Optional:** If you want, you can clean up the eye mesh now. Check the eyes before you do!
    1. Select the appearance you are using, then right-click to open the context menu
@@ -305,13 +305,13 @@ To hide those bits in the .app, we simply need to uncheck the corresponding boxe
 
 ### Adding stuff to an appearance
 
-The easiest way to add components is to duplicate an existing component.&#x20;
+The easiest way to add components is to duplicate an existing component.
 
 #### For a single appearance
 
 For a single appearance, **right-click** an existing component, and edit the properties:
 
-<figure><img src="../../../.gitbook/assets/image (545).png" alt=""><figcaption><p>Make sure your component names are unique!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (554).png" alt=""><figcaption><p>Make sure your component names are unique!</p></figcaption></figure>
 
 #### For all appearances
 
@@ -329,7 +329,7 @@ To edit all appearances, use the menu bar entries under `Appearances` -> `Edit C
 
 <figure><img src="../../../.gitbook/assets/npv_adding_components_properties.png" alt=""><figcaption></figcaption></figure>
 
-7. If you need to change more about your component, use the [Search Bar](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor/editor-toolbar#search-bar "mention") to display only your new component across all appearances.
+7. If you need to change more about your component, use the [Editor Toolbar #Search Bar](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor/editor-toolbar#search-bar "mention") to display only your new component across all appearances.
 
 ## Adding modded items
 

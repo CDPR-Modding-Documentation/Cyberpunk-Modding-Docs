@@ -9,7 +9,7 @@ description: How to read the game's tweak database
 **Published:** Jan 13 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented edit:** Jan 13 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page tells you how to **browse** the TweakDB. \
+This page tells you how to **browse** the TweakDB.\
 If you don't know what that is, you might want to read [.](./ "mention") first.
 
 {% hint style="info" %}
@@ -18,7 +18,7 @@ If you're looking for all tweak database entries of the type XYZ, you might be l
 
 ## Introduction
 
-By browsing the TweakDB, you can inspect the game's database and change [entity ](#user-content-fn-1)[^1]properties in real time.&#x20;
+By browsing the TweakDB, you can inspect the game's database and change [entity ](#user-content-fn-1)[^1]properties in real time.
 
 To inspect the TweakDB, you have three options. This page will document each of them.
 
@@ -27,7 +27,7 @@ To inspect the TweakDB, you have three options. This page will document each of 
 * To create new tweak files, read [#the-wolvenkit-tweak-browser](browsing-the-tweak-database.md#the-wolvenkit-tweak-browser "mention")
 
 {% hint style="info" %}
-A big part of tweak modding is exploration — poking through tweaks until you find just the right thing to copy or change, or looking for something specific in hundreds of files.&#x20;
+A big part of tweak modding is exploration — poking through tweaks until you find just the right thing to copy or change, or looking for something specific in hundreds of files.
 {% endhint %}
 
 ## Editing values with Cyber Engine Tweaks
@@ -72,7 +72,7 @@ As it's next to impossible to understand the item's structure like this, check t
 You need the [REDmod DLC](../../../for-mod-users/users-modding-cyberpunk-2077/redmod/#installation) for this.
 {% endhint %}
 
-In your game directory  [`Cyberpunk 2077`](#user-content-fn-2)[^2], find the subfolder `tools\redmod\tweaks` ("**tweak folder**"):
+In your game directory [`Cyberpunk 2077`](#user-content-fn-2)[^2], find the subfolder `tools\redmod\tweaks` ("**tweak folder**"):
 
 <figure><img src="../../../.gitbook/assets/browsing_tweak_files.png" alt=""><figcaption><p>If these folders are missing, make sure that you have a valid REDmod <a data-mention href="../../../for-mod-users/users-modding-cyberpunk-2077/redmod/#installation">#installation</a></p></figcaption></figure>
 
@@ -112,11 +112,11 @@ Get-ChildItem -Recurse -Filter *.tweak | ForEach-Object {
 ### Example: browsing .tweak files
 
 {% hint style="info" %}
-The example uses IntelliJ to look up a weapon record — [Visual Studio Code](https://code.visualstudio.com/download) is functionally identical.&#x20;
+The example uses IntelliJ to look up a weapon record — [Visual Studio Code](https://code.visualstudio.com/download) is functionally identical.
 {% endhint %}
 
 {% hint style="info" %}
-This was initially a part of [new-iconic-weapon-step-by-step.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention"), where you can also find explanations of various weapon properties.&#x20;
+This was initially a part of [new-iconic-weapon-step-by-step.md](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md "mention"), where you can also find explanations of various weapon properties.
 {% endhint %}
 
 In this example, we want to learn about Wilson's iconic gun and the effects of its WeaponMod. Check [#wilsons-iconic-iron](../../../modding-guides/items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#wilsons-iconic-iron "mention") for the integrated version, or start searching:
@@ -129,7 +129,7 @@ You will find it in the following path:
 tweaks/base/gameplay/static_data/database/items/weapons/ranged/handguns/lexington/preset_base_lexington.tweak
 ```
 
-<figure><img src="../../../.gitbook/assets/image (277).png" alt=""><figcaption><p><code>Preset_Lexington_Wilson</code>, but in .tweak format.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (189).png" alt=""><figcaption><p><code>Preset_Lexington_Wilson</code>, but in .tweak format.</p></figcaption></figure>
 
 This is the same tweak you'd find in the [Tweak Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser), but it's much easier to read and understand.
 
@@ -142,12 +142,12 @@ To follow this weapon's iconic weapon mod, find the section where it is defined:
 }
 ```
 
-This will take us to `iconic_mods.tweak`. \
-The file holds `WilsonWeaponModAbility` with a bunch of `statModifiers`:&#x20;
+This will take us to `iconic_mods.tweak`.\
+The file holds `WilsonWeaponModAbility` with a bunch of `statModifiers`:
 
 <details>
 
-<summary><code>iconic_mods.tweak</code> -> <code>WilsonWeaponMod</code> </summary>
+<summary><code>iconic_mods.tweak</code> -> <code>WilsonWeaponMod</code></summary>
 
 ```swift
 WilsonWeaponMod : IconicWeaponModBase
@@ -204,8 +204,6 @@ WilsonWeaponMod : IconicWeaponModBase
 }
 ```
 
-
-
 </details>
 
 … which aren't too different from the weapon modifiers. Let's ignore them for now and focus on the interesting part:
@@ -245,8 +243,6 @@ WilsonWeaponModAbility : IconicWeaponModAbilityBase
     ];
 }
 ```
-
-
 
 </details>
 

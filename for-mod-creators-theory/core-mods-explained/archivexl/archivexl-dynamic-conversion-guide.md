@@ -19,7 +19,7 @@ We will go through the process step-by-step. I'll explain what I'm doing as I go
 
 ## Step 0: The .yaml
 
-Instead of one entry per **item variant**, we only need one entry per **item**.&#x20;
+Instead of one entry per **item variant**, we only need one entry per **item**.
 
 Our variants are defined via `$instances` and generated via substitutions. Let's take a look at this:
 
@@ -41,14 +41,14 @@ Defines the variants — you'll get a gold star for paying attention, but we're 
 
 ## Step 1: The root entity
 
-Instead of one entry **per variant and gender**, we only need one entry **in total**.&#x20;
+Instead of one entry **per variant and gender**, we only need one entry **in total**.
 
-Our appearance's `name` must still match the `.yaml`, but only up to the variant separator: we're going with `appearance_root_entity_`.&#x20;
+Our appearance's `name` must still match the `.yaml`, but only up to the variant separator: we're going with `appearance_root_entity_`.
 
 <figure><img src="../../../.gitbook/assets/archivexl_conversion_root_entity_before_after.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-By leaving the `appearanceName` blank, we're telling ArchiveXL to re-use `name`.  If you want to use a specific appearance name (or if you don't want `appearance_root_entity_` in your .app), you can put something different here.
+By leaving the `appearanceName` blank, we're telling ArchiveXL to re-use `name`. If you want to use a specific appearance name (or if you don't want `appearance_root_entity_` in your .app), you can put something different here.
 {% endhint %}
 
 ### What did we do here?
@@ -73,7 +73,7 @@ Instead of one appearance per **variant and gender**, we will squash everything 
 Gender matching now happens via condition. The different meshes for male and female body gender are loaded in the different mesh entity files.
 
 {% hint style="info" %}
-For a full list of conditions, see [archivexl-suffixes-and-substitutions.md](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention")
+For a full list of conditions, see [archivexl-suffixes-and-substitutions.md](archivexl-suffixes-and-substitutions.md "mention")
 {% endhint %}
 
 ### But that will always load the default appearance!
@@ -82,14 +82,14 @@ Right! You've been paying attention! Let's take a look at that next.
 
 ## Step 3: The mesh entity
 
-We will only change a single field (`meshAppearance`).&#x20;
+We will only change a single field (`meshAppearance`).
 
 Before, it was `mesh_white_red` (the default appearance), and each appearance overwrote it via `partsOverride`. We're now changing it to `dynamic`:
 
 <figure><img src="../../../.gitbook/assets/archivexl_conversion_mesh_entity.png" alt=""><figcaption></figcaption></figure>
 
 Old: `mesh_white_red`\
-New:  `*mesh_{variant.2}_{variant.1}`
+New: `*mesh_{variant.2}_{variant.1}`
 
 {% hint style="info" %}
 This is where file validation currently stops working (as of June 2024). If you make any mistakes here, you will always see the first mesh appearance.
@@ -102,14 +102,14 @@ This assumes that the appearance names inside the mesh start with the prefix `me
 ### What did we just do?
 
 * By adding a leading `*`, we told ArchiveXL that this field is involved in magic (substitution in this case)
-* By replacing `white` with `{variant.2}`, we're using the second parameter from the yaml's `appearanceName` (shirt).  &#x20;
-* By replacing `red` with `{variant.1}`, we're using the first parameter from the yaml's `appearanceName` (ribbons).  &#x20;
+* By replacing `white` with `{variant.2}`, we're using the second parameter from the yaml's `appearanceName` (shirt).
+* By replacing `red` with `{variant.1}`, we're using the first parameter from the yaml's `appearanceName` (ribbons).
 
 ### Parameters? Variants? What?
 
 Let's unpack this.
 
-In this example, we have the following mesh appearances:&#x20;
+In this example, we have the following mesh appearances:
 
 * `mesh_white_red`
 * `mesh_black_red`
@@ -127,9 +127,9 @@ The `+` in the `variant` allows you to reference each substitution by its index.
 
 #### What if I don't use +?
 
-Let's compare our setup ( `*mesh_{variant.2}_{variant.1}`)  to the alternative.
+Let's compare our setup ( `*mesh_{variant.2}_{variant.1}`) to the alternative.
 
-yaml:&#x20;
+yaml:
 
 ```yaml
 appearanceName: appearance_root_entity!$(shirt)_$(ribbons)
@@ -143,13 +143,13 @@ Without the split, there's no way to reference the individual substitutions.
 
 ## Recap
 
-Unless you got hopelessly lost, this should have taken no more than ten minutes, and your mod just works(tm).&#x20;
+Unless you got hopelessly lost, this should have taken no more than ten minutes, and your mod just works(tm).
 
-You now have one `root_entity` entry,  two `appearanceAppearanceDefinition`s in your `.app`, and one `mesh_entity` per body gender.
+You now have one `root_entity` entry, two `appearanceAppearanceDefinition`s in your `.app`, and one `mesh_entity` per body gender.
 
 ## Let's simplify this even further.
 
-Currently, we have two mesh\_entities:&#x20;
+Currently, we have two mesh\_entities:
 
 ```
 tutorial\torso\my_custom_shirt\mesh_entity_pwa.ent
@@ -187,7 +187,7 @@ This will only load one body gender (the one you defined in the `mesh_entity`).
 You should use the other approach where possible; this is only documented here for the sake of completeness.
 {% endhint %}
 
-Just like with appearances, you can also use [#conditions](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md#conditions "mention") with component names.
+Just like with appearances, you can also use [#conditions](archivexl-suffixes-and-substitutions.md#conditions "mention") with component names.
 
 **Pro:** Especially with many body mods, you can just put all the logic into the components
 
@@ -211,18 +211,18 @@ This is our mesh's depot path:
 *tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt_p{gender}a.mesh
 ```
 
-At runtime, ArchiveXL will substitute `{gender}` with `w` or `m`, so depending on your V's body gender, the game will load one of these paths:&#x20;
+At runtime, ArchiveXL will substitute `{gender}` with `w` or `m`, so depending on your V's body gender, the game will load one of these paths:
 
 ```
 tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt_pwa.mesh
 tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt_pma.mesh
 ```
 
-You can find a full list of component substitution on [archivexl-suffixes-and-substitutions.md](../../../for-mod-creators/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention").
+You can find a full list of component substitution on [archivexl-suffixes-and-substitutions.md](archivexl-suffixes-and-substitutions.md "mention").
 
 <details>
 
-<summary>Instead of body gender, you can also use this for <strong>body mods</strong>: </summary>
+<summary>Instead of body gender, you can also use this for <strong>body mods</strong>:</summary>
 
 <pre><code><strong>*tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt__{body}.mesh
 </strong></code></pre>
@@ -239,7 +239,7 @@ tutorial\torso\my_custom_shirt\meshes\t1_custom_shirt__ebbwtfbbq.mesh
 </details>
 
 {% hint style="info" %}
-Wolvenkit ≥ 8.16.2 lets you convert paths to dynamic from editor panel's context menu  (to the right of the tree view)
+Wolvenkit ≥ 8.16.2 lets you convert paths to dynamic from editor panel's context menu (to the right of the tree view)
 {% endhint %}
 
 #### That's it!
@@ -249,4 +249,3 @@ By using substitutions, your mesh path will auto-adjust to the current circumsta
 {% hint style="info" %}
 If you want to avoid mesh duplication, check out the page about [archivexl-resource-linking.md](archivexl-resource-linking.md "mention")
 {% endhint %}
-

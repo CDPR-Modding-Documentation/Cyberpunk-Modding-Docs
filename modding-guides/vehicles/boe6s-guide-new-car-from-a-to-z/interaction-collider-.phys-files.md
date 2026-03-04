@@ -6,7 +6,7 @@ description: >-
 
 # Boe6's vehicles: Interaction collider .phys files
 
-Add the `.phys` file to your project, rename, and move the file as appropriate. It is linked through the `.ent` file. \
+Add the `.phys` file to your project, rename, and move the file as appropriate. It is linked through the `.ent` file.\
 Path:
 
 * `.ent file > RDTDataViewModel > components > chassis > collisionResource`
@@ -21,20 +21,19 @@ Now you’ll need 2 python scripts created by “_The Magnificent Doctor Presto!
 
 Download both **export\_phys.py** and **import\_.phys.py**
 
-In **Blender**, open the “**Scripting**” workspace:\
-
+In **Blender**, open the “**Scripting**” workspace:\\
 
 <figure><img src="../../../.gitbook/assets/image143.png" alt=""><figcaption></figcaption></figure>
 
 At the top of the text editor that just openned, use the folder icon to find the importing `.py` file we just downloaded.
 
-<figure><img src="../../../.gitbook/assets/image8 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image8.png" alt=""><figcaption></figcaption></figure>
 
 This should open the `.py` file into the text editor. It should look like this:
 
 <figure><img src="../../../.gitbook/assets/image203.png" alt=""><figcaption></figcaption></figure>
 
-Edit the “`physJsonPath`” value to the converted `phys.json` file. \
+Edit the “`physJsonPath`” value to the converted `phys.json` file.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image206.png" alt=""><figcaption></figcaption></figure>
@@ -47,14 +46,13 @@ Once you’ve run the script, you should have vertices that look close to the ou
 
 Switch back to the Layout workspace.
 
-The easiest way to edit these in blender is to enable your vehicle’s body mesh, is to switch to Wireframe shading, by holding Z, and moving your mouse to “Wireframe”. \
+The easiest way to edit these in blender is to enable your vehicle’s body mesh, is to switch to Wireframe shading, by holding Z, and moving your mouse to “Wireframe”.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image109.png" alt=""><figcaption></figcaption></figure>
 
-This will allow you to see your body mesh, but also see vertices behind and around it. \
-Example:\
-
+This will allow you to see your body mesh, but also see vertices behind and around it.\
+Example:\\
 
 <figure><img src="../../../.gitbook/assets/image66.png" alt=""><figcaption></figcaption></figure>
 
@@ -66,12 +64,12 @@ The `.phys` file should now be finished. Import from `json`, update path referen
 
 <figure><img src="../../../.gitbook/assets/image91.png" alt=""><figcaption></figcaption></figure>
 
-Once the script has been run, you should have a new file with the “`new_`” prefix added in the same folder as the `phys.json`. \
+Once the script has been run, you should have a new file with the “`new_`” prefix added in the same folder as the `phys.json`.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image111.png" alt=""><figcaption></figcaption></figure>
 
-This file can now be converted back from json and used in game. \
+This file can now be converted back from json and used in game.\
 Example:
 
 <figure><img src="../../../.gitbook/assets/image177.png" alt=""><figcaption></figcaption></figure>

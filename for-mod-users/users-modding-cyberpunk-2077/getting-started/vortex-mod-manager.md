@@ -101,7 +101,7 @@ If you are already logged in, proceed to the next section "[Adding Cyberpunk](vo
 1. If Vortex didn't open by itself, open it from the start menu
 2. Log into Nexusmods by clicking on the red circle in the top right of your client
 
-<figure><img src="../../../.gitbook/assets/4 (1) (1).png" alt=""><figcaption><p>The initial dashboard on launch</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/4.png" alt=""><figcaption><p>The initial dashboard on launch</p></figcaption></figure>
 
 3. You will see either a browser window or an error message that Vortex couldn't open one – in this case, copy the URL in the box at the bottom and open the browser window yourself
 
@@ -110,11 +110,11 @@ If you are already logged in, proceed to the next section "[Adding Cyberpunk](vo
 4. Optional: Log into Nexusmods (if you aren’t already)
 5. Allow Vortex to access your Nexus account by clicking "Authorize":
 
-<figure><img src="../../../.gitbook/assets/9 (1).png" alt=""><figcaption><p>Allow Vortex to authorise your account</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/9.png" alt=""><figcaption><p>Allow Vortex to authorise your account</p></figcaption></figure>
 
 6. Click "Log in to Vortex":
 
-<figure><img src="../../../.gitbook/assets/10 (1).png" alt=""><figcaption><p>Log into Vortex and close the page</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/10.png" alt=""><figcaption><p>Log into Vortex and close the page</p></figcaption></figure>
 
 7. Instead of the red icon, you should now see your profile picture and username from nexusmods.
 
@@ -289,7 +289,7 @@ Finally, we will return to our dashboard.
 
 No matter what settings you chose in interface, you should still have a section labeled "Tools", where at this point you should at least see four things, the last of which will be disabled:
 
-<figure><img src="../../../.gitbook/assets/image (138).png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (111).png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
 
 It can be helpful here to toggle "Enable Toolbar" above it so that you can always see them wherever you are in Vortex.
 

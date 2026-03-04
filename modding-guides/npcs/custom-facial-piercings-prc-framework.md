@@ -6,7 +6,7 @@ description: Adding custom facial piercings through PRC Framework.
 
 ## **Summary**
 
-**Created & Published:  July 12 2023 by Mx\_OrcBoi**
+**Created & Published: July 12 2023 by Mx\_OrcBoi**
 
 PRC Framework was created by **eagul**, he also taught me how to do them, so I'm passing on the knowledge.
 
@@ -25,9 +25,7 @@ I would suggest trying to create one in an existing location first, so you famil
 ## Getting started
 
 1. Download and install the below:\
-   [https://www.nexusmods.com/cyberpunk2077/mods/8590\
-   ](https://www.nexusmods.com/cyberpunk2077/mods/8590)[https://www.nexusmods.com/cyberpunk2077/mods/7179\
-   ](https://www.nexusmods.com/cyberpunk2077/mods/7179)
+   [https://www.nexusmods.com/cyberpunk2077/mods/8590<br>](https://www.nexusmods.com/cyberpunk2077/mods/8590)[https://www.nexusmods.com/cyberpunk2077/mods/7179<br>](https://www.nexusmods.com/cyberpunk2077/mods/7179)
 2. In wkit, import the below to your project depending on which V you want to create the piercings for:
 
 <figure><img src="../../.gitbook/assets/image25.png" alt=""><figcaption><p>Files for mV</p></figcaption></figure>
@@ -48,8 +46,7 @@ I would suggest trying to create one in an existing location first, so you famil
 
 Each shape key corresponds with the number on the character creation slider. Basis is 1 on all sliders or no shape keys active. The rest is divided into ears, nose, eyes, mouth and jaw and subsequent numbers correspond to the character creator settings (1x is slider 2, 2x is slider 3 and so on).
 
-You can see the shape keys actually working by selecting one of them and setting Value to 1.\
-
+You can see the shape keys actually working by selecting one of them and setting Value to 1.\\
 
 For easier selection merge head mesh vertices by distance. To do this, select the head mesh, go into edit mode (Tab) and go to Mesh -> Clean Up -> Merge by Distance. Set merge distance to 0.0001.
 
@@ -79,7 +76,7 @@ Now we need to either weight paint, or **transfer weights** if your new piercing
 
 You can see the current weights the mesh has in Weight Paint mode.
 
-<figure><img src="../../.gitbook/assets/image8.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image8 (1).png" alt=""><figcaption></figcaption></figure>
 
 I’ve selected the vanilla piercing here. By clicking different vertex groups you can see the colour of the mesh changes. This colour denotes how much influence each bone has on the mesh. Red is 100% and dark blue is 0%.
 
@@ -127,19 +124,13 @@ Once you’re done export your mesh as gltf 2.0 with below settings. Save it ove
 
 If your piercing is influenced by more than 4 bones, also include this option on export.
 
-
-
 <figure><img src="../../.gitbook/assets/image17.png" alt=""><figcaption></figcaption></figure>
 
 Next import it in wkit.
 
-
-
-<figure><img src="../../.gitbook/assets/image18.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image18 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Creating the mod
-
-
 
 1. Add to project a morphtarget from PRC or create folder structure manually. They need to be named exactly like this, do not create a custom folder.
 
@@ -154,21 +145,13 @@ Next import it in wkit.
 
 4. Now you can delete the character folders in base and install the mod.
 
-
-
 **Naming is important**, your mod needs to load before PRC, so it is best to follow PRC’s naming convention: PRC\_f/m\_slot#.
-
-
 
 To test your mod, set piercings to slider 12 for fV or 14 for mV and you should see your creation.
 
 <figure><img src="../../.gitbook/assets/image23.png" alt=""><figcaption></figcaption></figure>
 
-
-
 ## Supplement for creating piercings in non-vanilla locations
-
-
 
 1. You can only export the head morphtarget as it is the only one we’ll need.
 
@@ -179,8 +162,7 @@ To test your mod, set piercings to slider 12 for fV or 14 for mV and you should 
    Since piercings are solid objects we don't want them to stretch, so go through the vertex groups that affect your piercing in weight paint mode and colour them in one sold weight colour (you can use the picker to pick one from somewhere around the middle of the mesh).
 4. Once you’re done with the weight painting proceed to creating your shape keys as in the morphtarget creation section of this guide. You can use your original head mesh as reference.\
    \
-   **Tip:** If you want to test if your mesh works ok before going through all shape keys make sure you create at least one, otherwise it will flatline your game. Creating means moving at least one of the shape key positions to where they should be, not at the same position as the basis shape key.\
-
+   **Tip:** If you want to test if your mesh works ok before going through all shape keys make sure you create at least one, otherwise it will flatline your game. Creating means moving at least one of the shape key positions to where they should be, not at the same position as the basis shape key.\\
 5. When done, delete the original head mesh and rename your own submesh. It should be called submesh\_00\_LOD\_1.
 6. Export your file to gltf with the same settings as in the guide.
 7. Import your file in wkit over the existing head file, place in the correct folder and rename to whichever slot you’d like to use.
@@ -188,15 +170,15 @@ To test your mod, set piercings to slider 12 for fV or 14 for mV and you should 
 
 <figure><img src="../../.gitbook/assets/image21.png" alt=""><figcaption></figcaption></figure>
 
-Change the path to: \
-`eagul\piercingmorphs\wa_linked.mesh` for fV \
+Change the path to:\
+`eagul\piercingmorphs\wa_linked.mesh` for fV\
 `eagul\piercingmorphs\ma_linked.mesh` for mV
 
 If you ever need to re-export your mesh again for editing you’ll have to change this back to the original path.
 
 Now install your mod and enjoy.
 
-<figure><img src="../../.gitbook/assets/image26 (2).jpg" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image26 (1).jpg" alt=""><figcaption></figcaption></figure>
 
 ## Textures are showing weirdly on my custom piercing meshes!
 
@@ -217,4 +199,3 @@ Unzip them into your project to ../yourmodname/source/archive folder:
 Now install your mod. The textures should show properly now.
 
 <figure><img src="../../.gitbook/assets/custom_weird_mat_fixed.png" alt=""><figcaption><p>Textures are ok now.</p></figcaption></figure>
-

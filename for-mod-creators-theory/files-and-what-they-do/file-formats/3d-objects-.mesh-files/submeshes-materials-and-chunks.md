@@ -39,7 +39,7 @@ Our fictional helmet appearance uses the materials `helmet_mlsetup_black`, `viso
 
 **Submesh 2** is a decal — a hologram projected on the visor. This one uses hello\_kitty. Alternative appearances use Venom and Pacman. (Or whatever else you can dream of)
 
-**Submesh 3** are the regular decals - for this appearance, Arasaka style.&#x20;
+**Submesh 3** are the regular decals - for this appearance, Arasaka style.
 
 **Submesh 4** are emissive tubes — they come in red, white, and blue.
 
@@ -51,7 +51,7 @@ In Blender, our helmet would look like this:
 
 <figure><img src="../../../../.gitbook/assets/chunkmasks_the_model_in_blender.png" alt=""><figcaption></figcaption></figure>
 
-You can create more submeshes by splitting off parts of a mesh, and incrementing the submesh index.&#x20;
+You can create more submeshes by splitting off parts of a mesh, and incrementing the submesh index.
 
 #### Example:
 
@@ -61,27 +61,27 @@ You want red and blue glowing tubes on the example helmet.
 2. Re-name `submesh_04_LOD_1.001` to `submesh_05_LOD_1`
 3. [Export](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#exporting-from-blender) the new geometry and import it into Wolvenkit
 4. Your mesh will now have **six** submeshes instead of its previous **five**
-5. For each **appearance** that you have defined, add a chunkMaterial entry. \
-   &#xNAN;_&#x49;f you skip this step, the new submesh will have no material assigned, and be invisible._ [_File Validation_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) _will warn you about this._
+5. For each **appearance** that you have defined, add a chunkMaterial entry.\
+   \&#xNAN;_If you skip this step, the new submesh will have no material assigned, and be invisible._ [_File Validation_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation) _will warn you about this._
 
 ## Chunkmasks: partially hiding meshes
 
 {% hint style="info" %}
-To hide parts of the body, you can also use ArchiveXL tags. See [#base-game-tags-and-archivexl-tags-visual-guides](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#base-game-tags-and-archivexl-tags-visual-guides "mention") and the corresponding wiki page for more information.
+To hide parts of the body, you can also use ArchiveXL tags. See [#base-game-tags-and-archivexl-tags-visual-guides](../../../core-mods-explained/archivexl/archivexl-tags.md#base-game-tags-and-archivexl-tags-visual-guides "mention") and the corresponding wiki page for more information.
 {% endhint %}
 
 Imagine you want to hide the helmet's glowing parts (because you are being stealthy). You could just define another appearance where the glowing tubes are turned off — but you would have to add one for every variant you make. `arasaka_hellokitty_glow` and `arasaka_hellokitty_noglow`, the same for Militech, NightCorps and NCPD… ain't nobody got time for this.
 
 That's why CDPR came up with **chunkmasks**.
 
-The mesh is loaded via [**component**](../../components/) in an [.ent](../entity-.ent-files/#mesh-component-entity-simple-entity) or [.app](../appearance-.app-files/#components) file. Here, you will find the `chunkMask` attribute, which looks like this:
+The mesh is loaded via [**component**](../../components/) in an [.ent](../entity-.ent-files#mesh-component-entity-simple-entity) or [.app](../appearance-.app-files#components) file. Here, you will find the `chunkMask` attribute, which looks like this:
 
 <figure><img src="../../../../.gitbook/assets/chunkmask.png" alt=""><figcaption><p>Set this to 0 to completely hide all parts of a mesh.</p></figcaption></figure>
 
 The numbers in the dropdown correspond to the submeshes: unchecking an entry will **hide** it, **regardless of the assigned materials**.
 
 {% hint style="warning" %}
-You can only use chunkMasks to **hide** submeshes. If you want to conditionally **show** them, you have to use custom ArchiveXL tags (see [archivexl-tags.md](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md "mention") -> [#adding-custom-tags](../../../../for-mod-creators/core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags "mention"))
+You can only use chunkMasks to **hide** submeshes. If you want to conditionally **show** them, you have to use custom ArchiveXL tags (see [archivexl-tags.md](../../../core-mods-explained/archivexl/archivexl-tags.md "mention") -> [#adding-custom-tags](../../../core-mods-explained/archivexl/archivexl-tags.md#adding-custom-tags "mention"))
 {% endhint %}
 
 To use this on **other items**, check out [#partsoverrides-changing-other-meshes](../../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-changing-other-meshes "mention").
@@ -102,18 +102,18 @@ With ACM installed, make sure that the target is under the cursor in the middle 
 
 ### RedHotTools
 
-Find [redhottools](../../../modding-tools/redhottools/ "mention") -> [#installation-guide](../../../modding-tools/redhottools/#installation-guide "mention") for instructions on how to install this.&#x20;
+Find [redhottools](../../../modding-tools/redhottools/ "mention") -> [#installation-guide](../../../modding-tools/redhottools/#installation-guide "mention") for instructions on how to install this.
 
 See [#world-inspector-watch-the-player](../../../modding-tools/redhottools/rht-the-world-inspector.md#world-inspector-watch-the-player "mention") for a guide.
 
 ## Level Of Detail (LOD)
 
-If a submesh name does not end in LOD1, that means it's intended for **lower resolutions** (for example, if an object is far away).&#x20;
+If a submesh name does not end in LOD1, that means it's intended for **lower resolutions** (for example, if an object is far away).
 
 By default, Wolvenkit [removes](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#lod-filter-default) these low-resolution meshes on export, since you don't normally want them for modded characters or items.
 
 {% hint style="info" %}
-Under [the-whole-world-.streamingsector](../the-whole-world-.streamingsector/ "mention"), you can find an explanation of how cyberpunk handles world sector Level of Detail (LOD).
+Under [the-whole-world-.streamingsector](../the-whole-world-.streamingsector "mention"), you can find an explanation of how cyberpunk handles world sector Level of Detail (LOD).
 {% endhint %}
 
 [^1]: AppearanceCreatorMod, an AMM addon
