@@ -157,7 +157,7 @@
       * [Facial animations](for-mod-creators-theory/files-and-what-they-do/file-formats/animations-.anims/facial-animations.md)
       * [Animations: IK and FK](for-mod-creators-theory/files-and-what-they-do/file-formats/animations-.anims/animations-ik-and-fk.md)
     * [Behaviors: .behavior files](for-mod-creators-theory/files-and-what-they-do/file-formats/behaviors-.behavior-files.md)
-    * [Videos: .bk2](for-mod-creators-theory/files-and-what-they-do/file-formats/videos-.bk2.md)
+    * [Videos: .bk2 Editing](for-mod-creators-theory/files-and-what-they-do/file-formats/videos-.bk2.md)
     * [.community files](for-mod-creators-theory/files-and-what-they-do/file-formats/.community-files.md)
     * [Razer Chroma integration: .chromaset](for-mod-creators-theory/files-and-what-they-do/file-formats/.chromaset-razer-chroma-integration.md)
     * [Save file: .dat](for-mod-creators-theory/files-and-what-they-do/file-formats/save-file-.dat.md)

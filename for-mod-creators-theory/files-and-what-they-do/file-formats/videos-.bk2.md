@@ -1,63 +1,182 @@
 ---
-description: Details about the game's video format
+description: Editing and Replacing videos in CyberPunk 2077 with
 ---
 
-# Videos: .bk2
+# Videos: .bk2 Editing
 
-This wiki page is about the .bk2 file format used in the game.
+
+
+
+
+<figure><img src="../../../.gitbook/assets/image (196).png" alt="" width="433"><figcaption></figcaption></figure>
+
+
+
+
+
+This wiki page is about the .bk2 file format used in the game, and how to edit them.
 
 ## TL;DR
 
-The .bk2 file format is used in many games including Cyberpunk 2077. It stands for Bink 2 and can be played and/or converted to regular video format or single frames using [RAD Video Tools](https://www.radgametools.com/bnkdown.htm).
+The .bk2 file format is used in many games including Cyberpunk 2077. It stands for [Bink 2 By Rad Tools ](https://www.radgametools.com/bnkmain.htm)and needs to be used to extract and recompress the video that you want to replace.&#x20;
 
-## How did I get there ?
-
-I wanted some screenshot of a Cyberpunk ad to print as a poster for a friend. That's how I ended up on this journey to find how to get a readable video from the game files.
+It is recommended to export to MP4 (recommended) or single frames using. \
+Converting to back to .bk2 requires a [byte offset](videos-.bk2.md#byte-offset-requirement) for the video to appear in the game.
 
 ## Prerequisites
 
 * WolvenKit (obviously)
 * RAD Video Tools (available [here](https://www.radgametools.com/bnkdown.htm), 2mo)
 
-## Getting the video files
+## Selecting A Video File
 
-For example in this wiki page, I'll use the NiCola ad as an example. You will want to have a WolvenKit project created for easy access to the video file.
+[Searching in the asset browser](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files) for .bk2 files will get you every video in the game. For this example we will be using the boxing video (q001\_boxinggame.bk2)&#x20;
 
-In Cyberpunk, all the video files have the .bk2 extension. Thus, you can just search .bk2 in the search bar of the asset browser. Since I want the NiCola ad, I'll here search for `nicola > .bk2` (See [this wiki page](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files) for more about searching files).
+For this tutorial, visit Viktor's RipperDoc, the boxing video consistantly plays on his screen.&#x20;
 
-<figure><img src="../../../.gitbook/assets/Searching bk2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
-Then add the file to your project for easy access
+[Add](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/asset-browser#adding-files-to-projects) `q001_boxinggame.bk2` to your project
 
-## Playing the video
+### Locating video file on your computer
 
-Assuming you have installed RAD video tools correctly (see [Prerequisites](videos-.bk2.md#prerequisites)), you should be able to open the file in RAD Video Tools and it will play
+Click Open In Windows Explorer   &#x20;
 
-<figure><img src="../../../.gitbook/assets/NiCola ad bk2.png" alt=""><figcaption><p>The NiCola ad playing the Bink Video Player</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
 
-## Converting to a common file format
+<figure><img src="../../../.gitbook/assets/image (69).png" alt=""><figcaption></figcaption></figure>
 
-For this, you will have to open RAD video tools from the search bar/start menu/whatever if you don't use Windows.
+### Give it a Play
 
-Then, navigate to the .bk2 file and press on Convert a file (see screenshot)
+<figure><img src="../../../.gitbook/assets/image (72).png" alt="" width="365"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/RAD main window.png" alt=""><figcaption></figcaption></figure>
+Converting to a common file format
 
-Then, in the opened window, you can configure the output, file format and location. You can then press convert on the right side of the screen.
+<figure><img src="../../../.gitbook/assets/image (182).png" alt=""><figcaption></figcaption></figure>
+
+1. Open RAD Video Editor and browse to (`\source\archive\base\movies\fluff`)&#x20;
+2. Select File
+3. Convert
+
+### Output Options
 
 
 
-<figure><img src="../../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (134).png" alt=""><figcaption></figcaption></figure>
 
-It's best to use Bink2, as there is an additional byte offset step that needs to be adjusted for.
+
+
+1. Convert&#x20;
+2. Defaults to MP4, keep it.
+
+### Video Specifications:
+
+**Length:** Should match **the converted .mp4**
+
+**Export:** MP4
+
+**Size:** 480p
+
+**FPS:** 15fps is the game speed, 30fps is possible, but not recommended.&#x20;
+
+<figure><img src="../../../.gitbook/assets/image (188).png" alt=""><figcaption></figcaption></figure>
+
+
+
+<figure><img src="../../../.gitbook/assets/image (190).png" alt=""><figcaption></figcaption></figure>
+
+<mark style="color:$danger;">**You must export to Bink 2.**</mark>
 
 ## Byte Offset requirement
 
-Once your bk2 file has been created, you will need to edit the file with a hex editor. HxD is a good windows solution that is free. \
-The 4th byte will need to be changed to 6A and then save the file, ready for import into your mod.
+For reasons unknown, CyberPunk requires the **4th byte** of your .bk2 file to to be changed to: `6A`
 
-<figure><img src="../../../.gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+Once your bk2 file has been created, you will need to edit the file with a hex editor.&#x20;
 
-## Closing words
+[HxD](https://mh-nexus.de/en/hxd/) is a good windows solution that is free. <br>
 
-Now you have everything, if you want to know more about the Bink Converter you can watch [this video](https://www.youtube.com/watch?v=FUtSw5VsNzI). Everything here have been found in the Discord community after a quick search in there.
+![](<../../../.gitbook/assets/image (192).png>)
+
+Change the 4th byte to 6A and save to: `source\archive\base\movies\fluff`
+
+
+
+### [Install Your Mod](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/menu/toolbar#install-mod)
+
+Since the working directory is RAW, there is no need to import.
+
+
+
+
+
+Notes:
+
+[YouTube Video](https://www.youtube.com/watch?v=FUtSw5VsNzI) for more on RAD Tools.&#x20;
+
+[Discord](https://discord.gg/redmodding) community.
+
+
+
+### <mark style="color:green;">Python Script</mark>: Automate byte offset all .bk2 files
+
+This will automatically change the byte offset in all your .bk2 files at once in the cwd and subdirs. <br>
+
+```python
+import os
+import glob
+
+def modify_fourth_byte(file_path):
+    """
+    Opens a file in read/write binary mode and overwrites 
+    the 4th byte (index 3) with 0x6A.
+    """
+    try:
+        # Print the filename as processing begins
+        print(f"Working on: '{file_path}'...", end=" ", flush=True)
+
+        # Check file size before opening
+        file_size = os.path.getsize(file_path)
+        
+        if file_size < 4:
+            print(f"\nSkipping: File is only {file_size} bytes (needs at least 4).")
+            return
+
+        with open(file_path, "r+b") as f:
+            # Navigate to 4th byte (index 3) and overwrite
+            f.seek(3)
+            f.write(bytes([0x6A]))
+            
+        print("Done (4th byte set to 0x6A).")
+        
+    except PermissionError:
+        print(f"\nError: Permission denied for '{file_path}'.")
+    except Exception as e:
+        print(f"\nAn unexpected error occurred with '{file_path}': {e}")
+
+def main():
+    # Use recursive glob pattern to find files in all subdirectories
+    # '**/*.bk2' tells glob to look in current and all sub-folders
+    bk2_files = glob.glob("**/*.bk2", recursive=True)
+
+    if not bk2_files:
+        print("No .bk2 files found in the current directory or subdirectories.")
+        return
+
+    print(f"Found {len(bk2_files)} file(s) across all directories. Starting processing...")
+
+    for file_path in bk2_files:
+        modify_fourth_byte(file_path)
+
+    print("-" * 30)
+    print("Batch processing complete.")
+
+if __name__ == "__main__":
+    main()
+```
+
+
+
+Authors note: Thank you to `Dark Fortune Teller on` [Discord](https://discord.gg/redmodding)&#x20;
+
+
+

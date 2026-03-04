@@ -1,6 +1,6 @@
 # inkWidgets On Vehicles
 
-The information on this page is intended for modders who have already created one or two vehicle mods and are interested in the inner workings and advanced styling of `.inkwidgets`. Knowledge of [Boe6](https://www.nexusmods.com/profile/Boe6/mods)'s [tutorial](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/boe6s-vehicles-.inkwidget-and-.inkstyle-animated-ui) is required. The tutorial explains the basics on how to set up an `.inkwidget` in the `.app` and link it to the `.mesh` the widget is going to be displayed on and contains more info on analog gauges.
+The information on this page is intended for modders who have already created one or two vehicle mods and are interested in the inner workings and advanced styling of `.inkwidgets`. Knowledge of [Boe6](https://www.nexusmods.com/profile/Boe6/mods)'s [basic car tutorial](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/boe6s-vehicles-.inkwidget-and-.inkstyle-animated-ui) is required. The basic car tutorial explains how to set up an `.inkwidget` in the `.app` and link it to the `.mesh` the widget is going to be displayed on and contains more info on analog gauges.
 
 #### Functional elements of vehicle inkWidgets
 
@@ -18,7 +18,7 @@ The information on this page is intended for modders who have already created on
 * Color themes day/night - unused in the vanilla game and as such unreliable.
 * Animations There is no one single vehicle in the game that implements all of these at once. I don't know how to create these from scratch and have been combining them by using multiple `.inkwidgets` and multiple `.mesh` files they're bound to. Here are some examples of gauges featured in vanilla vehicles:
 
-| ↓ Gauge / Car →              | 911 | MaiMai | Tanishi | Thrax | Shion | R7 |
+| Car → Gauge ↓                | 911 | MaiMai | Tanishi | Thrax | Shion | R7 |
 | ---------------------------- | --- | ------ | ------- | ----- | ----- | -- |
 | Analog speedometer           | ✅   |        | ✅       |       |       |    |
 | Analog tachometer            | ✅   |        | ✅       |       |       |    |
@@ -38,9 +38,9 @@ The information on this page is intended for modders who have already created on
 **Canvas**
 
 * The `inkCanvasWidget` is the first type of widget you will encouter. This one is a collection of multiple individual widgets or other `inkCanvasWidgets`.
-* Other types of widgets use this one as a parent. Settings of the parent affect the children. This is especially important for `layout`, `size`, and `scale` of the `inkCanvasWidget` is this will become new canvas size for its `children`. Their placement is relative to the position of the `inkCanvasWidget`.
+* Other types of widgets use this one as a parent. Settings of the parent affect the children. This is especially important for the `layout`, `size`, and `scale` of the `inkCanvasWidget` as this will become the new canvas size for its `children`. Their placement is relative to the position of the `inkCanvasWidget`.
 * For example, if an `inkCanvasWidget` is placed 100 pixels to the left edge of your entire `.inkwidget`, any `children` within the `inkCanvasWidget` placed at 0 will be 100 pixels to the left edge of your entire `.inkwidget`.
-* More information on `layout`, `size`, and `scale` are further down on this page. These settings affect are present for each type of widget.
+* More information on `layout`, `size`, and `scale` are further down on this page. These settings are present for each type of widget.
 
 **Text**
 
@@ -73,6 +73,8 @@ The information on this page is intended for modders who have already created on
 * The distance between the individual widgets or groups of widgets inside of a `…PanelWidget` is defined via the `childMargin` setting.
 * When hiding individual widgets or groups of widgets within a `…PanelWidget`, the other widgets or groups within the `…PanelWidget` can either remain stationary, or move up to fill the now empty space left by the hidden widgets or groups. This is controlled via the `affectsLayoutWhenHidden` setting for each widget or group. Enabling it will make the other widgets or groups fill the space.
 
+The list of widgets present here is incomplete. If you know more about the widgets not listed here, please add the information.
+
 #### Global settings
 
 **Positioning & UV mapping**
@@ -94,7 +96,7 @@ The information on this page is intended for modders who have already created on
 * The `.inkstyle` also defines separate colour themes for the `.inkwidget` regardless of time of day that are used to set colours globally for the entire `.inkwidget` across widgets that feature a `propertyManager`. I haven't looked at how this works in detail. For example, this functionality is used for the `.inkstyle` of the Thrax, which holds six total `inkStyle` entries, two more than the default four outlined above. If you have more information about this, please add it here.
 * If you want to offer mod users different colour schemes for your `.inkwidget`, you could create multiple `.archive` files that each hold an `.inkstyle` file with different colors for the `day` `inkStyle` entries.
 * When adding a new entry to the `properties` within the `.inkstyle`, it must be added to all `states` present in the `.inkstyle`.
-* Adding a new entry via the "Add New Element" button in WolvenKit doesn't allow specifiying which type of `property` you'd like to add. New entries of a specific type can only be created by duplicating or copy-pasting an existing `property` of the same type.
+* Adding a new entry via the "Add New Element" button in WolvenKit doesn't allow specification of the type of `property` you'd like to add. New entries of a specific type can only be created by duplicating or copy-pasting an existing `property` of the same type.
 * The WolvenKit editor doesn't save changes made to `Variant → Float` `properties`. This `Variant` is used for example to control `opacity` on the Quadra R7. To change this `property`, convert the `.inkstyle` to `.json`. Open the file in your favourite text editor and use its search function to search for the name of the `propertyPath`. Change the `"Value"` there, save the file and convert it from `.json` back to `.inkstyle`.
 * `tintColor` is defined as an `HDRColor` within the `.inkwidget`. As such, `tintColors` set within the `.inkstyle` should be of the type `Variant → HDRColor`. Although `Variant → Color` is used in the `.inkstyle` of vanilla vehicles as well. The ARCH Nazaré is one example.
 * `Variant → Color` uses regular RGB values on a scale from 0 to 255. `Variant → HDRColor` uses RGBPercent on a scale from 0 to 1. You can convert colours to RGBPercent using online converters such as [ConvertingColors.com](https://convertingcolors.com/rgbpercent-color-100_100_100.html?search=RGBPercent\(100%,%20100%,%20100%\)).
@@ -107,7 +109,8 @@ The information on this page is intended for modders who have already created on
 
 * Animations are defined in the `.inkanim` file. They feature different sets of animations for different parts of the `.inkwidget`. For example, animations for the animated equaliser are often called `eq_loop`. Animations work by running through different sets of instructions that transform the widget they are linked to. This can be "scale this to 1.5 times the size on the X axis for this amount of time".
 * Changing the scale of an animation is easily done by converting the `.inkanim` file to `.json` and running a find and replace on the text file for the value of the scale, such as `"X": 1.5,` in the example above. This can be useful if the display on the radio of your car has different dimensions than the vanilla car your `.inkwidget` originates from.
-* The animation is linked to the widget by the path to the widget within the tree structure of the inkWidget. For example, the equaliser on the Chevillion Thrax is found at the following path: `libraryItems > 0 Root > package > inkWidgetLibraryItemInstace > rootWidget > children > children> 8 12_radio > 0 radio_eq_waves`. If you duplicate any of the `children` in `12_radio` and move it to positon `0` where `radio_eq_waves` used to be, your duplicated widget will be animated instead of `radio_eq_waves`. This also applies to the children of the `rootWidget`. `12_radio` needs to stay at position `8` within the list of `children` for the animations to remain functional for `radio_eq_waves`. I haven't looked into how this link is established within the `.inkanim` nor how to influence it.
+* The animation is linked to the widget by the path to the widget within the tree structure of the inkWidget. For example, the equaliser on the Chevillion Thrax is found at the following path: `libraryItems > 0 Root > package > inkWidgetLibraryItemInstace > rootWidget > children > children> 8 12_radio > 0 radio_eq_waves`. If you duplicate any of the `children` in `12_radio` and move it to positon `0` where `radio_eq_waves` used to be, your duplicated widget will be animated instead of `radio_eq_waves`. This also applies to the children of the `rootWidget`. `12_radio` needs to stay at position `8` within the list of `children` for the animations to remain functional for `radio_eq_waves`.
+* The link between a specific animation and the widget it animates is established within the `targets` dropdown in the `.inkanim` file. This dropdown is found under `RDTDataViewModel > sequences > name_of_animation > targets`. Continuing with using the Thrax as our example, the `name_of_animation` of the first `sequence` is `radio_eq_wave`. Its `targets` are defined as `[8, 0, 0]`, `[8, 0, 1]`, `[8, 0, 2]` and so on. These are the positions of the widgets within the tree structure of the `.inkwidget` as outlined above. `[8, 0, 0]` refers to child number 8 of the `rootWidget`, which is `12_radio` in our example. Then, child number 0 of `12_radio`, which is `radio_eq_waves`, and lastly, child number 0 of `radio_eq_waves`, which is `waves_left_3` . There are six `targets` within the `eq_loop` animation, each targeting one of the six children of `radio_eq_waves`.
 
 #### Creating an `.inkwidget`
 
@@ -130,7 +133,9 @@ The exported images have the exact same canvas size. In addition to the individu
 * Clear out every element from the `.inkwidget` you don't need by removing the checkmark next to `visible`. This will hide the elements and clean up your canvas without messing up the actual structure of the `.inkwidget`. As outlined above, this is important for animations to continue functioning.
 * Hide the first `inkCanvasWidget` from the bottom and check the Widget Preview which part of the `.inkwidget` you've hidden. Repeat this throughout the hierarchy until the only widgets left on the canvas are the functional ones required for your dashboard (speedometer, tachometer, clock, radio, and so on).
 * Then, go through your functional widgets and reset the `layout`, `propertyManager`, `renderTransform` and every other unwanted setting, especially those that might affect the position, size, and scale of your mockup. Use your own discretion to decide which settings you might still want to use.
-* Take caution when it comes to animated widgets like the tachobar, gearbox or equaliser. Settings like `renderTransformPivot` and `size` are important for them to animate properly. The following screenshots are a before and after of cleaning out the `.inkwidget` for the Mizutani Shion. The only other change besides the cleanup was making the tachometer, tachobar, and gearbox visible against the background.
+* Take caution when it comes to animated widgets like the tachobar, gearbox or equaliser. Settings like `renderTransformPivot` and `size` are important for them to animate properly.
+
+The following screenshots are a before and after of cleaning out the `.inkwidget` for the Mizutani Shion. The only other change besides the cleanup was making the tachometer, tachobar, and gearbox visible against the background.
 
 | Mizutani Shion UI - before                                    | Mizutani Shion UI - after                                     |
 | ------------------------------------------------------------- | ------------------------------------------------------------- |
@@ -138,7 +143,7 @@ The exported images have the exact same canvas size. In addition to the individu
 
 * Now, add your mockup image to the almost empty canvas. This can be done by re-using an already existing `inkImageWidget` you don't need. Go through the hierarchy of the previously hidden `inkCanvasWidgets` and look for an `inkCanvasWidget` that contains a lot of `inkImageWidgets`. We'll re-use these to hold the individual images our dashboard is made up of.
 * First, we'll start with the mockup itself because we'll use it to to position the functional elements correctly
-* Copy the file path to your `.inkatlas` into the `textureAtlas` text field of the `inkImageWidget` and the `partName` of your mockup to the `texturePart` textfield.
+* Copy the file path to your `.inkatlas` into the `textureAtlas` text field of the `inkImageWidget` and the `partName` of your mockup to the `texturePart` text field.
 * Reset the `layout`, `propertyManager`, `renderTransform` and every other setting that might affect the position, size, and scale of your mockup. Enable `fitToContent` if it isn't already. Just to be sure, set the `size` to the pixel dimensions of your canvas (1024x1024 or 2048x2048).
 * Repeat this for all parents, if possible. This should position your mockup at the exact centre of the `.inkwidget` and fill it completely.
 * If resetting position(s) and dimension(s) for the parent(s) shouldn't be possible for whatever reason and your mockup is offset, keep in mind that it is. You will need to recreate this offset in all of your widgets.
