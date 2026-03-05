@@ -1,16 +1,12 @@
 ---
-description: Editing and Replacing videos in CyberPunk 2077 with
+description: Editing and Replacing videos in CyberPunk 2077 with RAD Video Tools
 ---
 
-# Videos: .bk2 Editing
+# Videos: .bk2
 
 
 
-
-
-<figure><img src="../../../.gitbook/assets/image (672).png" alt="" width="433"><figcaption></figcaption></figure>
-
-
+<figure><img src="../../../.gitbook/assets/image (673).png" alt="" width="563"><figcaption></figcaption></figure>
 
 
 
@@ -20,27 +16,27 @@ This wiki page is about the .bk2 file format used in the game, and how to edit t
 
 The .bk2 file format is used in many games including Cyberpunk 2077. It stands for [Bink 2 By Rad Tools ](https://www.radgametools.com/bnkmain.htm)and needs to be used to extract and recompress the video that you want to replace.&#x20;
 
-It is recommended to export to MP4 (recommended) or single frames using. \
 Converting to back to .bk2 requires a [byte offset](videos-.bk2.md#byte-offset-requirement) for the video to appear in the game.
 
 ## Prerequisites
 
 * WolvenKit (obviously)
-* RAD Video Tools (available [here](https://www.radgametools.com/bnkdown.htm), 2mo)
+* RAD Video Tools (available [here](https://www.radgametools.com/bnkdown.htm))
+* Video Editor of Choice
 
 ## Selecting A Video File
 
-[Searching in the asset browser](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files) for .bk2 files will get you every video in the game. For this example we will be using the boxing video (q001\_boxinggame.bk2)&#x20;
+[Searching in the asset browser](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files) for .bk2 files will get you every video in the game. For this tutorial we will be using the boxing video (`q001_boxinggame.bk2`)&#x20;
 
-For this tutorial, visit Viktor's RipperDoc, the boxing video consistantly plays on his screen.&#x20;
+Visit Viktor's RipperDoc, the boxing video consistently plays on his screen for easy testing.&#x20;
 
 <figure><img src="../../../.gitbook/assets/image (660).png" alt=""><figcaption></figcaption></figure>
 
 [Add](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/asset-browser#adding-files-to-projects) `q001_boxinggame.bk2` to your project
 
-### Locating video file on your computer
+### Locating Video File on Your Computer
 
-Click Open In Windows Explorer   &#x20;
+Click: Open In Windows Explorer   &#x20;
 
 <figure><img src="../../../.gitbook/assets/image (661).png" alt=""><figcaption></figcaption></figure>
 
@@ -50,26 +46,24 @@ Click Open In Windows Explorer   &#x20;
 
 <figure><img src="../../../.gitbook/assets/image (663).png" alt="" width="365"><figcaption></figcaption></figure>
 
-Converting to a common file format
+Converting to MP4 file format
 
 <figure><img src="../../../.gitbook/assets/image (667).png" alt=""><figcaption></figcaption></figure>
 
-1. Open RAD Video Editor and browse to (`\source\archive\base\movies\fluff`)&#x20;
+1. Open RAD Video Editor and browse to: `\source\archive\base\movies\fluff`
 2. Select File
 3. Convert
 
+**Note**: you can batch convert files in both directions by selecting multiple files.
+
 ### Output Options
 
-
-
 <figure><img src="../../../.gitbook/assets/image (666).png" alt=""><figcaption></figcaption></figure>
-
-
 
 1. Convert&#x20;
 2. Defaults to MP4, keep it.
 
-### Video Specifications:
+### <mark style="color:$warning;">Video Specifications:</mark>
 
 **Length:** Should match **the converted .mp4**
 
@@ -87,7 +81,7 @@ Converting to a common file format
 
 <mark style="color:$danger;">**You must export to Bink 2.**</mark>
 
-## Byte Offset requirement
+## Byte Offset Requirement
 
 For reasons unknown, CyberPunk requires the **4th byte** of your .bk2 file to to be changed to: `6A`
 
@@ -99,17 +93,11 @@ Once your bk2 file has been created, you will need to edit the file with a hex e
 
 Change the 4th byte to 6A and save to: `source\archive\base\movies\fluff`
 
-
-
 ### [Install Your Mod](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/menu/toolbar#install-mod)
 
-Since the working directory is RAW, there is no need to import.
+Since the working directory is Archive, there is no need to import.
 
-
-
-
-
-Notes:
+### Resources:
 
 [YouTube Video](https://www.youtube.com/watch?v=FUtSw5VsNzI) for more on RAD Tools.&#x20;
 
@@ -119,8 +107,9 @@ Notes:
 
 ### <mark style="color:green;">Python Script</mark>: Automate byte offset all .bk2 files
 
-This will automatically change the byte offset in all your .bk2 files at once in the cwd and subdirs. <br>
+This will automatically change the byte offset in all your .bk2 files at once in the working directory and subdirs. <br>
 
+{% code expandable="true" %}
 ```python
 import os
 import glob
@@ -173,10 +162,11 @@ def main():
 if __name__ == "__main__":
     main()
 ```
+{% endcode %}
 
 
 
-Authors note: Thank you to `Dark Fortune Teller on` [Discord](https://discord.gg/redmodding)&#x20;
+**Authors note**: Thank you to `Dark Fortune Teller on` [Discord](https://discord.gg/redmodding) for doing the hard work finding about the Byte offset&#x20;
 
 
 
