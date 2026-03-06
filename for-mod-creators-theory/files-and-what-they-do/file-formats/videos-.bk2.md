@@ -6,7 +6,7 @@ description: Editing and Replacing videos in CyberPunk 2077 with RAD Video Tools
 
 
 
-<figure><img src="../../../.gitbook/assets/image (673).png" alt="" width="563"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bk2 viktor workshop.png" alt="Viktor in his shop watching a modified video edit" width="563"><figcaption></figcaption></figure>
 
 
 
@@ -30,7 +30,7 @@ Converting to back to .bk2 requires a [byte offset](videos-.bk2.md#byte-offset-r
 
 Visit Viktor's RipperDoc, the boxing video consistently plays on his screen for easy testing.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (660).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bk2 wolvenkit.png" alt="asset browser"><figcaption></figcaption></figure>
 
 [Add](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/asset-browser#adding-files-to-projects) `q001_boxinggame.bk2` to your project
 
@@ -38,17 +38,17 @@ Visit Viktor's RipperDoc, the boxing video consistently plays on his screen for 
 
 Click: Open In Windows Explorer   &#x20;
 
-<figure><img src="../../../.gitbook/assets/image (661).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bk2 wolvenkit (1).png" alt="project file selection"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (662).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bk2 explorer.png" alt="windows explorer"><figcaption></figcaption></figure>
 
 ### Give it a Play
 
-<figure><img src="../../../.gitbook/assets/image (663).png" alt="" width="365"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bk2 boxing.png" alt="preview video" width="365"><figcaption></figcaption></figure>
 
 Converting to MP4 file format
 
-<figure><img src="../../../.gitbook/assets/image (667).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bk2 rad tool (3).png" alt="RAD Tools"><figcaption></figcaption></figure>
 
 1. Open RAD Video Editor and browse to: `\source\archive\base\movies\fluff`
 2. Select File
@@ -58,7 +58,7 @@ Converting to MP4 file format
 
 ### Output Options
 
-<figure><img src="../../../.gitbook/assets/image (666).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bk2 rad tool (2).png" alt="RAD Tools"><figcaption></figcaption></figure>
 
 1. Convert&#x20;
 2. Defaults to MP4, keep it.
@@ -73,11 +73,11 @@ Converting to MP4 file format
 
 **FPS:** 15fps is the game speed, 30fps is possible, but not recommended.&#x20;
 
-<figure><img src="../../../.gitbook/assets/image (669).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bk2 rad tool (5).png" alt="RAD Tools"><figcaption></figcaption></figure>
 
 
 
-<figure><img src="../../../.gitbook/assets/image (670).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bk2 rad tool (6).png" alt="RAD Tools"><figcaption></figcaption></figure>
 
 <mark style="color:$danger;">**You must export to Bink 2.**</mark>
 
@@ -89,7 +89,7 @@ Once your bk2 file has been created, you will need to edit the file with a hex e
 
 [HxD](https://mh-nexus.de/en/hxd/) is a good windows solution that is free. <br>
 
-![](<../../../.gitbook/assets/image (671).png>)
+![hxd byte offset](<../../../.gitbook/assets/bk2 byte offset (1).png>)
 
 Change the 4th byte to 6A and save to: `source\archive\base\movies\fluff`
 
