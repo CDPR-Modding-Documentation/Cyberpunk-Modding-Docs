@@ -369,7 +369,7 @@ It's recommended to look in the Log view and check if there's an error in a rena
 
 ## Troubleshooting
 
-### Hair colour extensions don't work on my hair!
+### Hair colour extensions (modded hair colors) don't work on my hair!
 
 Most likely, you screwed up the names of your material definitions. They must be **exactly** as ArchiveXL expects them to be.\
 Go back to [#id-3.2-material-definitions](ccxl-hairs.md#id-3.2-material-definitions "mention") and double-check everything.
