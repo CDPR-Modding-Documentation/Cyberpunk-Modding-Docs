@@ -16,9 +16,13 @@ This page explains&#x20;
 * how you can [change existing translations](translation-files-.json.md#overwriting-existing-entries)
 * how you can support [multiple languages](translation-files-.json.md#adding-multiple-languages)
 
+
+
+{% hint style="info" icon="question" %}
 ### Wait, this is not what I want!
 
 * For a more detailed guide, check [how-to-translate-a-mod.md](../../../modding-guides/everything-else/how-to-translate-a-mod.md "mention")
+{% endhint %}
 
 ## What's a JSON file, precious?
 

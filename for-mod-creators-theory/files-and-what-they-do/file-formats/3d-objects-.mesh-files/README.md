@@ -11,6 +11,7 @@ description: Documentation on .mesh files and their properties.
 
 This page contains information on .mesh files, such as what they are, how the game loads them, and how their appearances are defined and selected.
 
+{% hint style="info" icon="question" %}
 ### Wait, that's not what I want!
 
 * To export/import meshes, see [wkit-blender-plugin-import-export.md](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention")
@@ -19,6 +20,7 @@ This page contains information on .mesh files, such as what they are, how the ga
   * If you just want to use a textured material, check [using-a-textured-material.md](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention")
   * For a guided exercise, see [textured-items-and-cyberpunk-materials.md](../../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
 * To hide parts of a mesh under different circumstances, check [submeshes-materials-and-chunks.md](submeshes-materials-and-chunks.md "mention") or [first-person-perspective-fixes.md](../../../../modding-guides/items-equipment/first-person-perspective-fixes.md "mention")
+{% endhint %}
 
 Let's get started.
 

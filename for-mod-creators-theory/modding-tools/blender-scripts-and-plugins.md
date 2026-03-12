@@ -1,3 +1,7 @@
+---
+description: Commonly Used Tools and scripts for creating the best mods
+---
+
 # Tools, scripts and plugins
 
 ## Tools
@@ -32,10 +36,10 @@ Create Inkatlas files, error checking and more.
 
 ### Blender Plugins
 
-|                                                                               |                                                                                     |
-| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
-| [Import with material](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) | for WKit export "With Materials"                                                    |
-| [TexTools](https://github.com/SavMartin/TexTools-Blender)                     | <p>Justifies UVs, generation of hair cards <br><em>Mesh has to be in quads</em></p> |
+|                                                                               |                                                                                    |
+| ----------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| [Import with material](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) | for WKit export "With Materials"                                                   |
+| [TexTools](https://github.com/SavMartin/TexTools-Blender)                     | <p>Justifies UVs, generation of hair cards<br><em>Mesh has to be in quads</em></p> |
 
 ### Blender Scripts
 

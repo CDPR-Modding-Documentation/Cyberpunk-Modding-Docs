@@ -2,7 +2,9 @@
 
 ## What is an asset?
 
-An asset is a specific, objectified concept in the game that can be highly detailed like a blade of grass, or larger like a building, or intangible like sound effects. Unity defines an asset as, "Shorthand for anything that goes into a video game – characters, objects, sound effects, maps, environments, etc." Every asset is defined in a set of [normalized](https://en.wikipedia.org/wiki/Database\_normalization) asset files that describe its relationship to the game, other assets, and itself.
+An asset is a specific, objectified concept in the game that can be highly detailed like a blade of grass, or larger like a building, or intangible like sound effects. Unity defines an asset as, "Shorthand for anything that goes into a video game – characters, objects, sound effects, maps, environments, etc."&#x20;
+
+Every asset is defined in a set of [normalized](https://en.wikipedia.org/wiki/Database_normalization) asset files that describe its relationship to the game, other assets, and itself.
 
 ## Visual Asset-Related File Formats
 
@@ -11,28 +13,32 @@ The following list contains file formats that are used to compose visual assets 
 {% hint style="info" %}
 The community-devloped tool **WolvenKit** can be used to browse game archives and extract game files.\
 \
-[Learn more](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP\_ozZVx2gRZUPXkd4r/)
+[Learn more](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/)
 {% endhint %}
 
 ### MESH
 
 3d models
 
-### XBM
+### XBM (images and Textures)
 
-2d textures
-
-### ENT (entity)
-
-Parent file for most visual assets which is directly linked by the [**Tweak DB**](../tweaks/tweaks/#what-is-the-tweak-db)
+2d textures mapped onto meshes, advertisements, or any other game asset that uses an image in the game.&#x20;
 
 ### APP (appearance)
 
 Sets up appearances for assets such as NPCs and vehicles referenced by [**entity files**](assets.md#ent-entity)
 
-### MT (material template)
+### BK2 (Videos)
 
-Base shader files for REDengine
+[**Bink 2**](https://www.radgametools.com/bnkdown.htm) file format (.bk2) that us used for any videos in game (Televsion, quest overlays, or some billboards)&#x20;
+
+### ENT (entity)
+
+Parent file for most visual assets which is directly linked by the [**Tweak DB**](../tweaks/tweaks/#what-is-the-tweak-db)
+
+### HP (hair profile)
+
+Color ramp data to set colors for meshes using the hair [**shader**](../materials/shaders/)
 
 ### MI (material instance)
 
@@ -50,13 +56,14 @@ Material setup component of the [**Multilayer supershader**](../materials/multil
 
 Pre-defined tiling surface component of the [**Multilayer supershader**](../materials/multilayered/)
 
-### HP (hair profile)
+### MT (material template)
 
-Color ramp data to set colors for meshes using the hair [**shader**](../materials/shaders/)
+Base shader files for REDengine
+
+***
 
 ## Visual Asset Graphs
 
 #### Vehicles
 
 ![](<../../.gitbook/assets/CP2077 Vehicle Example.svg>)
-

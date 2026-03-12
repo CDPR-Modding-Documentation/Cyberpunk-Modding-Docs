@@ -19,7 +19,7 @@ Make sure to familiarize yourself with the topics described in the `Knowledge Re
   * [Entity Instance Data](../object-spawner/features-and-guides/entity-instance-data.md) editing
 * Adding custom [LocKey's](../../items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#so-we-edit-onscreens.json)
 * Adding [custom images and creating inkAtlas](../../custom-icons-and-ui/adding-items-preview-images/#generating-the-inkatlas)
-* Importing [custom videos](../../everything-else/breach-screen-replacer.md#convert-your-mp4-video-file)
+* Importing [custom videos](/broken/pages/x92B2VKTRfEOaOWgoCM9#convert-your-mp4-video-file)
 
 ## Interaction Settings
 

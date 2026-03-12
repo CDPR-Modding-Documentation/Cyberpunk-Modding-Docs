@@ -15,8 +15,8 @@ For an exhaustive list, see the [W2RC File Format Table.](./#w2rc-file-format-ta
 
 This file contains a list of appearances with their associated **components**. To load them, you require a [root entity](./#root-entity) .ent. The .app files also contain extensive parameters for wounds and dismemberment, determining which meshes to use for different types of garment an NPC might be wearing, and even the physics behavior of these meshes.
 
-{% content-ref url="appearance-.app-files/" %}
-[appearance-.app-files](appearance-.app-files/)
+{% content-ref url="appearance-.app-files" %}
+[appearance-.app-files](appearance-.app-files)
 {% endcontent-ref %}
 
 Holds a list of components.
@@ -34,7 +34,7 @@ This file contains compressed save game information, as well as descriptors for 
 ### Root entity
 
 {% hint style="info" %}
-[As of Phantom Liberty, there are duplicates of many .ent files in the filebase. Whenever you come across a duplicate, pick the one that has "ep1" in its name.](#user-content-fn-1)[^1]
+As of Phantom Liberty, there are duplicates of many .ent files in the filebase. Whenever you come across a duplicate, pick the one that has "ep1" in its name.
 {% endhint %}
 
 The **entry point** for the game to display an [NPC](../../../modding-guides/npcs/appearances-change-the-looks/#the-.ent-file) or [prop](../../3d-modelling/custom-props/). It is a collection of components that the entity is comprised of, determining their parameters or referencing the files that have said parameters. For instance, NPC .ent files have over a hundred components each, such as entAnimatedComponent (references the correct .anims, .animgraph and .rig files), entTemplateAppearance (references all .app files that are applicable to the entity) and entEffectSpawner (references all .effect files for decals or particles that the entity can spawn). Many of these components have configurable parameters, and the .ent file itself has many under the "entity" section. Many of these parameters, however, are merely the initial state of the entity and are modified in gameplay (such as the boolean isRagdolling).
@@ -45,8 +45,8 @@ From ArchiveXL item additions, this kind of file is usually called a **root enti
 
 **For player items**, an .ent file can serve as a **wrapper**, splitting components out of the .app file by putting them in their own file.
 
-{% content-ref url="entity-.ent-files/" %}
-[entity-.ent-files](entity-.ent-files/)
+{% content-ref url="entity-.ent-files" %}
+[entity-.ent-files](entity-.ent-files)
 {% endcontent-ref %}
 
 ## Components
@@ -57,24 +57,30 @@ Not a file type but an internal data structure and part of [.ent](./#.ent-entity
 [components](../components/)
 {% endcontent-ref %}
 
+## .bk2 (Bink2 Video)
+
+A common file format for in game videos used by tons of gamestudios using Bink2 format. Requires [RADTools](https://www.radgametools.com/bnkdown.htm) for file conversion between mp4 and .bk2 files.&#x20;
+
 ## .inkatlas (Texture mapping)
+
+Applies textures to meshes
 
 ## .mesh (3d object)
 
 A 3d object, holding [appearances](../../../modding-guides/npcs/appearances-change-the-looks/), [materials](../../materials/), and [rigging](../../3d-modelling/meshes-and-armatures-rigging/). Meshes for inanimate objects also tend to contain the physics parameters of these objects, whereas NPC meshes tend to contain some garment parameters.
 
-A mesh can have several **submeshes**, which can be displayed or hidden via [chunkmasks](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides).&#x20;
+A mesh can have several **submeshes**, which can be displayed or hidden via [chunkmasks](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides).
 
 ## .mi / .mt / .remt
 
-A material definition for a shader. You can assign those to **CMaterialInstance** entries in your mesh and then define their qualities by changing their parameters.&#x20;
+A material definition for a shader. You can assign those to **CMaterialInstance** entries in your mesh and then define their qualities by changing their parameters.
 
 {% hint style="info" %}
-For further detes on materials, see [here](../../materials/). \
+For further detes on materials, see [here](../../materials/).\
 For an explanation on .mi files, see [here](materials/re-using-materials-.mi.md).
 {% endhint %}
 
-### Relevant properties:&#x20;
+### Relevant properties:
 
 |                                                                       |                                                                                          |
 | --------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
@@ -93,10 +99,10 @@ OpusPaks are collections of opus audio files, they are described by the `sfx_con
 
 ## .streamingsector (world data)
 
-This file holds world environment information and -properties. Due to its complexity, information is grouped on its sub-page.&#x20;
+This file holds world environment information and -properties. Due to its complexity, information is grouped on its sub-page.
 
-{% content-ref url="the-whole-world-.streamingsector/" %}
-[the-whole-world-.streamingsector](the-whole-world-.streamingsector/)
+{% content-ref url="the-whole-world-.streamingsector" %}
+[the-whole-world-.streamingsector](the-whole-world-.streamingsector)
 {% endcontent-ref %}
 
 ## .wem (audio)
@@ -117,24 +123,24 @@ If you stick to the game's naming schema, Wolvenkit will auto-detect the right i
 
 ### Normal maps
 
-Can be either blue or yellow (inverted), both exist. For a guide how to make your own, see [here](../../../modding-guides/textures-and-luts/self-made-normal-maps/).&#x20;
+Can be either blue or yellow (inverted), both exist. For a guide how to make your own, see [here](../../../modding-guides/textures-and-luts/self-made-normal-maps/).
 
-Cyberpunk normal maps are swizzled (a technique originally employed in DTX-5).&#x20;
+Cyberpunk normal maps are swizzled (a technique originally employed in DTX-5).
 
 * The red channel stores the X axis
 * The green channel stores the Y axis
-* The blue channel is empty, since the Z-data will be calculated from red and blue.&#x20;
+* The blue channel is empty, since the Z-data will be calculated from red and blue.
 
 ### Texture Atlases
 
 Texture atlases contain multiple textures that the game may choose at random (such as blood splatters, as seen in **fx\_blood\_splatter\_2x2\_01\_d.xbm**) or play sequentially (as seen in **splash\_texture.atlas\_n.xbm**, used by the game for the blood puddle animation). Texture atlases won't always have "atlas" in their filename, but can still be quickly identified by the size of the grid. For instance, "3x3" in the filename means a grid of nine textures. In the asset browser, right-clicking on the file and selecting "Find Files Using This" will take you to files that allow further customization of how the game interacts with the grid.
 
-### Relevant properties:&#x20;
+### Relevant properties:
 
-|         |                                                                                                                                              |
-| ------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
-| IsGamma | <p>Override in-game gamma (lighting)? <br><br>- Set to "false" for normals<br>- Set to "true" for diffuse/albedo and any parts of the UI</p> |
-|         |                                                                                                                                              |
+|         |                                                                                                                                             |
+| ------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| IsGamma | <p>Override in-game gamma (lighting)?<br><br>- Set to "false" for normals<br>- Set to "true" for diffuse/albedo and any parts of the UI</p> |
+|         |                                                                                                                                             |
 
 ## W2RC File Format Table
 
@@ -272,8 +278,6 @@ Texture atlases contain multiple textures that the game may choose at random (su
 | [csv](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/csv.txt) | Standard CSV file, spreadsheets containing definitions for various parameters and enums that are used in other files |
 | [wem](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/wem.txt) | Audio file                                                                                                           |
 
-
-
 ## Archive Format
 
 #### File Structure
@@ -345,5 +349,3 @@ The following data only applies for archives created with WolvenKit
 | Offset | uint64    | Offset of the data        |
 | ZSize  | uint32    | Size of compressed data   |
 | Size   | uint32    | Size of uncompressed data |
-
-[^1]: 

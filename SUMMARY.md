@@ -522,7 +522,6 @@
   * [Customize in-game Loading Screens](modding-guides/everything-else/custom-loading-screens.md)
   * [Customize your Save Files' look](modding-guides/everything-else/customize-your-save-files-look.md)
   * [Customize game's infos on GOG](modding-guides/everything-else/customise-cp77-info-on-gog.md)
-  * [Video Replacer - Breach Screen](modding-guides/everything-else/breach-screen-replacer.md)
   * [Effects modding](modding-guides/everything-else/effects-modding/README.md)
     * [Creating Custom FX](modding-guides/everything-else/effects-modding/creating-custom-fx.md)
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/everything-else/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)

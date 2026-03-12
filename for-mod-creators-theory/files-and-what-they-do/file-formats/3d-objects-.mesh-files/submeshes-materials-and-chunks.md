@@ -11,11 +11,15 @@ Last documented update: Aug 08 2025 by [mana vortex](https://app.gitbook.com/u/N
 
 This page explains the relationship between submeshes (parts of a mesh), materials ("skins" for any given part of a mesh) and chunks (submeshes as seen from the outside).
 
+###
+
+{% hint style="info" icon="question" %}
 ### Wait, this is not what I want!
 
 * Check the parent page [.](./ "mention") for more general informatiton
   * In [#material-assignment](./#material-assignment "mention")you will get a general introduction and practical instructions
   * Check the [#mesh-preview](./#mesh-preview "mention") tab to see a preview of the mesh
+{% endhint %}
 
 ## Why are submeshes?
 

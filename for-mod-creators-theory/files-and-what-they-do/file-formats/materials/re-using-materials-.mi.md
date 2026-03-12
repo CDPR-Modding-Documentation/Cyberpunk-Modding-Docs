@@ -10,11 +10,15 @@ description: Material Instances and external materials
 
 This guide will teach you how you can use `.mi` files to re-use materials across multiple meshes. By combining this with [archivexl-dynamic-materials.md](../../../core-mods-explained/archivexl/archivexl-dynamic-materials.md "mention"), this mechanic allows **maximum flexibility**.
 
+###
+
+{% hint style="info" icon="question" %}
 ### Wait, this is not what I want!
 
 * To learn how materials work in the first place, check [3d-objects-.mesh-files](../3d-objects-.mesh-files "mention") -> [3d-objects-.mesh-files](../3d-objects-.mesh-files#material-assignment "mention")
 * You can find [configuring-materials](../../../materials/configuring-materials/ "mention") documented in their own wiki section
 * For examples of `.mi` files in action, check the player's [skin materials](../../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index)
+{% endhint %}
 
 ## What is a material instance?
 
@@ -32,7 +36,7 @@ Put yourself in the shoes of a hypothetical modder.
 
 * You are creating a mod that offers multiple versions of the same item (e.g. toy props or hair)
 * You have created a base material
-* You duplicate and re-duplicate the material for each of your variants, changing the properties that defines the colour
+* You duplicate and re-duplicate the material for each of your variants, changing the properties that defines the color
 * You wish that there was less copy-pasting involved
 
 <figure><img src="../../../../.gitbook/assets/mi_files_materials_the_problem.png" alt=""><figcaption><p>You only change 2 of 6 properties, but you always have to copy all of them!!</p></figcaption></figure>

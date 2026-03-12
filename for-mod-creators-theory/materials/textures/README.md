@@ -11,11 +11,15 @@ description: What kinds of textures exist, and what do they do?
 
 This page contains the **theory section** for textures in Cyberpunk. It will give you an overview about different kinds of texture, and what the game is using them for.
 
+###
+
+{% hint style="info" icon="question" %}
 ### Wait, this is not what I want!
 
 * For the hands-on guide section, check [Modding Guides -> Textures and LUTs](../../../modding-guides/textures-and-luts/)
 * If you just want to know how to import/export textures, see [here](../../../modding-guides/textures-and-luts/images-importing-editing-exporting.md).
 * For texture import settings and what they do, check the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2gRZUPXkd4r/ "mention") -> [Import/Export: Textures](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/textures "mention") -> [Import/Export: Textures #Texture Group](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/textures#texture-group "mention")
+{% endhint %}
 
 ## About textures
 

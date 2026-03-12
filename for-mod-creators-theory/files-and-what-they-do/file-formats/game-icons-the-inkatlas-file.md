@@ -6,6 +6,9 @@ Apart has prepared a reference project with an import-ready inkatlas. You can do
 
 This page explains the `.inkatlas` file and its logic.
 
+##
+
+{% hint style="info" icon="question" %}
 ## Wait, this is not what I want!
 
 * Learn how to make [adding-items-preview-images](../../../modding-guides/custom-icons-and-ui/adding-items-preview-images/ "mention")
@@ -14,6 +17,7 @@ This page explains the `.inkatlas` file and its logic.
 * Make your own inkatlas with Python: find the script on [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate_inkatlas.py).\
   Check [running-python-scripts.md](../../3d-modelling/blender-getting-started/running-python-scripts.md "mention") if you don't know how to use this.
 * Make your own inkatlas with Photoshop CC (Adobe Creative Suite required): find the plugin on [deadlymustard's github](https://github.com/deadlymustard/inkatlas-utils)
+{% endhint %}
 
 ## Summary
 

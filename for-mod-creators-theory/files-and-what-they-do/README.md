@@ -4,8 +4,7 @@ description: What do the different files do? How do I mod them?
 
 # Game Components explained
 
-
-
-{% hint style="success" %}
+{% hint style="success" icon="arrow-left" %}
 Please see the individual subpages in the menu to get to the content, or use the "Next" button at the bottom of the page.
 {% endhint %}
+

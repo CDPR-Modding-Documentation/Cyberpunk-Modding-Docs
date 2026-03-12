@@ -8,9 +8,8 @@ description: Details about in-game textures
 
 **Last documented update**: Apr 06 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This wiki page contains documentation about xbm files and their properties.
-
-### Wait, this isn't what I want!
+{% hint style="info" %}
+## Wait, this isn't what I want!
 
 Would you rather…
 
@@ -18,6 +17,9 @@ Would you rather…
 * [Edit, import, or export](../../../../modding-guides/textures-and-luts/images-importing-editing-exporting.md) textures?
 * Learn about [textured materials](../../../materials/#textured)?
 * Use [a textured material](../../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md#material-assignments) on your mesh?
+{% endhint %}
+
+
 
 ## Texture files
 
@@ -38,7 +40,7 @@ Any CR2W file includes a section telling the engine how to read it, the **header
 
 ### Setup
 
-The setup section of the XBM file is in essence an extension of the header.
+The setup section of the .xbm file is in essence an extension of the header.
 
 It contains settings that, more than just describing basic information about the texture, such as:
 
