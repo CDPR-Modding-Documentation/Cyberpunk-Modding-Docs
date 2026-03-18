@@ -131,6 +131,7 @@
       * [CCXL: Body Tattoos](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-body-tattoos.md)
       * [CCXL: Eyebrows](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-eyebrows.md)
       * [CCXL: Eye Textures](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-eye-textures.md)
+      * [CCXL: Eyelashes](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-eyelashes.md)
     * [ArchiveXL: dynamic materials](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-dynamic-materials.md)
   * [TweakXL](for-mod-creators-theory/core-mods-explained/tweakxl/README.md)
     * [TweakXL: Changing game records](for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/README.md)
