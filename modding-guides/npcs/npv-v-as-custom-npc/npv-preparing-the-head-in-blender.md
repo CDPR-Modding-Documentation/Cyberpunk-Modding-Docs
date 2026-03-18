@@ -268,15 +268,7 @@ Optimally, this process just runs with no hitches. However, during beta testing 
 
 You **need** to use the [wolvenkit-blender-io-suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") for export. Make sure that it is installed and up-to-date.
 
-### Blender script errors
-
-You can check if Blender has run into errors by opening the **Blender console window** - from the menu, select Window -> Toggle System Console.
-
-As of December 2023, **any** script errors have been because the person encountering them has been using the wrong [Blender](https://www.blender.org/download/) version. You can see which version is currently running either [via UI](https://blenderartists.org/t/what-blender-version-am-i-using/1327264) or by checking the path in the system console window's title:
-
-<figure><img src="../../../.gitbook/assets/npv_blender_version.png" alt=""><figcaption><p>This is using Blender 2.93, which is definitely not compatible.</p></figcaption></figure>
-
-The supported versions are:
+{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
 ### A component I want is not showing!
 
