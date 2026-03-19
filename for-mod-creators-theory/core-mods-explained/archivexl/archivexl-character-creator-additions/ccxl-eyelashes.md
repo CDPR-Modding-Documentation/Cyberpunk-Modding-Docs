@@ -9,7 +9,7 @@ description: >-
 ## Summary
 
 Published: March 18th 2026 by [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention")\
-Last documented edit: [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention") on March 18, 2026
+Last documented edit: [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention") on March 19, 2026
 
 ### Wait, this is not what I want!
 
@@ -232,7 +232,7 @@ I also recommend importing the head **.morphtarget** so you can check the lashes
 
 * Now adjust your pwa eyelash to be in the correct place on the male face.
 * Open the side panel by pressing N. Go to Shape Keys Batch Transfer.
-* Set the source as the donor pma eyelash morphtarget submesh. Set the target as your eyelash submesh. And press Transfer Shape Keys.
+* Set the source as the donor pwa eyelash morphtarget submesh. Set the target as your eyelash submesh. And press Transfer Shape Keys.
 * Next go to Modifiers (blue wrench). Change your Armature to be the donor morphtarget armature, in this case `Armature__he_000_pma__morphs`. Parent your .morphtarget to the new armature and move it inside the same collection.
 * Check all the Shape Keys and adjust if necessary.&#x20;
 * Export the .morphtarget to the pma .morphtarget and .mesh.&#x20;
