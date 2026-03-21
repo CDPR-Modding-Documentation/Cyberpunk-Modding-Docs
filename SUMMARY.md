@@ -242,6 +242,7 @@
   * [Multilayered: Cyberpunk's supershader](for-mod-creators-theory/materials/multilayered/README.md)
     * [Multilayered: Previews](for-mod-creators-theory/materials/multilayered/multilayered-previews.md)
     * [Blending materials for more gooder colours](for-mod-creators-theory/materials/multilayered/blending-materials-for-more-gooder-colours.md)
+  * [Decal materials](for-mod-creators-theory/materials/decal-materials.md)
   * [Materials: troubleshooting](for-mod-creators-theory/materials/materials-troubleshooting.md)
   * [Cyberpunk Shaders in Blender - Baking to PBR](for-mod-creators-theory/materials/cyberpunk-shaders-in-blender.md)
   * [UV Mapping: texturing a 3d object](for-mod-creators-theory/materials/uv-mapping-texturing-a-3d-object.md)
