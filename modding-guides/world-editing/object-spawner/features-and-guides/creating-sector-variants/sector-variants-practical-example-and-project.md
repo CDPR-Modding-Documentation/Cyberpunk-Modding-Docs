@@ -55,9 +55,8 @@ When installing the example project, you will have a little pool with ladders to
 * Water fill levels (by default, it will be empty)
 * Three colours for the casing/trim (one of them will be always active)
 * A flamingo (off by default, you can toggle it on)
-* A chicken
-  * which you can toggle off and on
-  * and which has two different appearances (default or white)
+* A white chicken
+* A brown chicken
 
 \
 <img src="../../../../../.gitbook/assets/Capture d&#x27;écran 2026-03-16 070309 (2).png" alt="" data-size="original">![](<../../../../../.gitbook/assets/Capture d'écran 2026-03-16 070334.png>)
@@ -74,7 +73,9 @@ Game.GetTeleportationFacility():Teleport(GetPlayer(), ToVector4{ x = -1350.1178,
 
 ## Step 1: Group structure
 
-Each of the variants needs to go into its own group. Anything under `unvarianted_assets` is always loaded, the rest will be toggled on and off according to your settings.
+Each of the variants needs to go into its own group.&#x20;
+
+All of these groups can be toggled on and off according to your settings. We're setting `unvarianted_assets`  as always loaded in [#step-2-export](sector-variants-practical-example-and-project.md#step-2-export "mention"), so there's no toggling that one.
 
 <figure><img src="../../../../../.gitbook/assets/Capture d&#x27;écran 2026-03-16 125125.png" alt=""><figcaption></figcaption></figure>
 
@@ -116,9 +117,10 @@ This section assumes that you'll create your own script for toggling already-exi
 
 <figure><img src="../../../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-## Step 4: Scripting the menu
+## Step 4: Customizing the menu
 
-There are two .lua files in your project. Open them with a text editor.
+There are several .lua files in the project, but you only need to edit two (`variants.lua` and `variantSettings.lua`). \
+Open them with a text editor.
 
 ### Variants.lua
 
