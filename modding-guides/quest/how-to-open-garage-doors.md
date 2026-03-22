@@ -30,7 +30,7 @@ Since we are in the quest section I'll show how to open it within `.questphases`
 
 <figure><img src="../../.gitbook/assets/image (276).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 2.  Find the door you want to open. Make sure it's not a texture (collisionNode). For example, i took a maelstrom gate.
 
@@ -38,7 +38,7 @@ Since we are in the quest section I'll show how to open it within `.questphases`
 
     <figure><img src="../../.gitbook/assets/image (279).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 3.  Create `pauseCondition` on distance and `interactiveObjectManager` in our `.questphase`
 
     <figure><img src="../../.gitbook/assets/image (274).png" alt=""><figcaption></figcaption></figure>

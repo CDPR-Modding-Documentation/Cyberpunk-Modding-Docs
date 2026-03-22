@@ -19,7 +19,7 @@ icon: globe
 * [UI Tabs Explained](ui-tabs-explained/): Detailed explanation of each UI tab, what it is used for and what features it offers
 * [Adding custom resources](features-and-guides/adding-custom-resources-props.md): Explains how to place custom resources (E.g. Entities or custom meshes), and share them in an easy-to-use way with other modders
 * [Randomized Nested Groups](features-and-guides/randomized-nested-groups.md): Documentation on what RNGs are, why they can speed up your building process, and how to create them, with an example
-* [Creating Sector Variants](features-and-guides/creating-sector-variants.md): Covers what sector variants are used for, how to split your build into variants and how to toggle them
+* [Creating Sector Variants](features-and-guides/creating-sector-variants/): Covers what sector variants are used for, how to split your build into variants and how to toggle them
 * [Entity Instance Data](features-and-guides/entity-instance-data.md): Explains what it is, and what it can all do
 * [Creating Area Nodes](features-and-guides/setting-area-outlines.md): Covers how areas are built with WB, how to create the outline using markers and link it to an area node
 * [Creating Prefabs with Blender](features-and-guides/creating-prefabs-with-blender.md): Explains how to convert a part of the game-world into a ready to use WB Prefab / Group

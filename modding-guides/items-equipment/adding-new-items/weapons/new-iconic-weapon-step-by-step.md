@@ -371,7 +371,7 @@ To test it out, boot up your game and load any save.
 
 Now open up the CET [Console](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/console/console "mention"):
 
-<figure><img src="../../../../.gitbook/assets/image (2).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Red arrow = Open CET Console. Green arrow = Command to spawn in the newly created gun</p></figcaption></figure>
 
 Type in the command below and hit Enter.
 
@@ -379,7 +379,7 @@ Type in the command below and hit Enter.
  Game.AddToInventory("Items.Hand_Of_Midas",1)
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (3).png" alt=""><figcaption><p>Your newly created weapon is now in game.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (3) (1).png" alt=""><figcaption><p>Your newly created weapon is now in game.</p></figcaption></figure>
 
 You can now see your newly created weapon in your inventory.
 
@@ -407,9 +407,9 @@ Game.AddToInventory("Items.Hand_Of_Midas",1)
 Game.AddToInventory("Items.Preset_Unity_Default",1)
 ```
 
-<figure><img src="../../../../.gitbook/assets/image (4).png" alt=""><figcaption><p>Default Unity crosshair</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption><p>Default Unity crosshair</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (5).png" alt=""><figcaption><p>Hand of Midas crosshair</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption><p>Hand of Midas crosshair</p></figcaption></figure>
 
 You should now be able to see that both the Unity & Hand Of Midas, although otherwise identical, now have different crosshairs.
 
@@ -425,7 +425,7 @@ If you have the REDmod DLC installed, you can use a text editor like Notepad++ t
 
 By searching for "Crosshairs." in the Tweak Browser. Most things we find inside the weapon tweak will be searchable within the Tweak Browser, and some within the Asset Browser.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
 
 Editing the Tweak will allow us to modify all of our gun's behaviors, and I encourage you to play around with these.
 

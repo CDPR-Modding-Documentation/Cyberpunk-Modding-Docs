@@ -74,7 +74,7 @@ That way you make sure that only the parts of your build that are currently clos
 4. Now you can specify sector specific settings:
    1. Sector Category, usually just use interior or exterior
    2. [Sector Extents](exporting-from-object-spawner.md#streaming-ranges), used for determining when to stream the whole sector in / out
-   3. [Sector Variants](features-and-guides/creating-sector-variants.md)
+   3. [Sector Variants](features-and-guides/creating-sector-variants/)
 5. Hit "Export"
 
 <figure><img src="../../../.gitbook/assets/exportUIExample" alt="" width="563"><figcaption><p>Example of the Export tab, with two groups</p></figcaption></figure>
@@ -85,7 +85,7 @@ That way you make sure that only the parts of your build that are currently clos
 2.  In the top menu bar, navigate to
 
     1. File -> Import -> Object Spawner .json\
-       &#xNAN;_&#x49;f the context menu entry is greyed out, you need to install the_ [_Wolvenkit Resources Plugin_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/home/home-plugins#wolvenkit-resources)
+       \&#xNAN;_If the context menu entry is greyed out, you need to install the_ [_Wolvenkit Resources Plugin_](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/home/home-plugins#wolvenkit-resources)
 
     <figure><img src="../../../.gitbook/assets/objectSpawnerWKitImportDialog" alt="" width="413"><figcaption><p>Click the "Import object spawner .json" button, then choose the file</p></figcaption></figure>
 3. In the file dialog, choose the previously exported file, named `projectName_exported.json`

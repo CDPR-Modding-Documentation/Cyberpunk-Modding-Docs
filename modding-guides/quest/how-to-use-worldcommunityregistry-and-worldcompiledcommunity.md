@@ -55,7 +55,7 @@ Create `.questphase` `.streamingblock` and `.streamingsector` files
 
     <figure><img src="../../.gitbook/assets/image (288).png" alt=""><figcaption></figcaption></figure>
 
-    <figure><img src="../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption><p>we will use .questphase file later</p></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption><p>we will use .questphase file later</p></figcaption></figure>
 2.  Create NodeRefs for `worldAiSpotNode` and `worldCompiledCommunityAreaNode`
 
     <figure><img src="../../.gitbook/assets/image (291).png" alt=""><figcaption></figcaption></figure>

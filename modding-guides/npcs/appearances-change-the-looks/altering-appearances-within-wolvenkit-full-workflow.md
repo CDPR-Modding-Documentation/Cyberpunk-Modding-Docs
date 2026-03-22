@@ -84,11 +84,11 @@ For us, we'll be wanting to locate victor\_vektor.app, which is in the main\_npc
 
 Once we add this file to our project and open it, we will see an array named "appearances".
 
-<figure><img src="../../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).png" alt=""><figcaption></figcaption></figure>
 
 All of the different appearances for Victor are located in this array. Upon expanding it, we see that he only has three.
 
-<figure><img src="../../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 We'll edit the **default appearance** in this guide, but the process is the same for all of them, or even [creating new appearances](../amm-custom-npcs/).
@@ -96,7 +96,7 @@ We'll edit the **default appearance** in this guide, but the process is the same
 
 Open the default appearance and then the `Components` array. This is where all of the components for that appearance are stored: clothes, body meshes, hair meshes, etc.
 
-<figure><img src="../../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 As you can see, there are quite a lot to sort through. Don't worry, most of these things you won't have to mess with anyway.
 
@@ -115,7 +115,7 @@ To modify the body mesh, we'll export it to Blender.
 
 First, add the mesh file to your project by clicking on the yellow arrow next to the mesh file's path:
 
-<figure><img src="../../../.gitbook/assets/image (10).png" alt=""><figcaption><p>Alternatively, you can also copy the path, put it into the search bar, and add it by double-clicking.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption><p>Alternatively, you can also copy the path, put it into the search bar, and add it by double-clicking.</p></figcaption></figure>
 
 Next, we want to export the file out of Wolvenkit to enable us to edit the mesh in Blender, since right now, the file is in a format Blender can't read.
 

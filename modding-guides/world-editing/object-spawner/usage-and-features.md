@@ -64,7 +64,7 @@ This is not an exhaustive list of all the features, but rather the biggest and m
 * [Drop to floor](ui-tabs-explained/tab-spawned.md#general-hotkeys) for groups and objects
 * [RHT integration](ui-tabs-explained/tab-spawn-new.md#rht-integration) to send an existing world node directly to the WB search
 * [Entity Instance Data](features-and-guides/entity-instance-data.md) support for entity type nodes
-* [Sector variants support](features-and-guides/creating-sector-variants.md)
+* [Sector variants support](features-and-guides/creating-sector-variants/)
 * [Devices with device connections](../devices/) (E.g. Elevators and custom FT points)
 * [Collider shapes](supported-nodes.md#collision), scalable (With generation option for meshes)
 * 5 types of area nodes, [easy creation of area outlines](features-and-guides/setting-area-outlines.md)
