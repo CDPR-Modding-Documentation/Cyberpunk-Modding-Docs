@@ -6,8 +6,8 @@ description: '"I can show you the world"'
 
 ## Summary
 
-**Created:** Aug 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit:** Aug 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Created:** Aug 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** Aug 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page describes RHT's World Inspector, telliung you what you can do with it.
 
@@ -25,7 +25,11 @@ Here, you can scan for any nodes around you:
 
 <figure><img src="../../../.gitbook/assets/rht_world_inspector_scan.png" alt=""><figcaption></figcaption></figure>
 
-If you expand the node properties, you can simply hide them at run-time, or use the integration with [Removal Editor](https://github.com/justarandomguyintheinternet/CP77_removalEditor) to create permanent presets:
+If you expand the node properties, you can simply hide them at run-time, or use the integration with [Removal Editor](https://github.com/justarandomguyintheinternet/CP77_removalEditor) to create permanent preset.&#x20;
+
+{% hint style="info" %}
+To copy the data string from a node (eg: Mesh Resource Path), place your mouse pointer over the text string then hold Shift and press the middle mouse button. This will copy the text string to the clipboard.
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/rht_toggle_node.png" alt=""><figcaption></figcaption></figure>
 
@@ -37,7 +41,7 @@ Reverse search of world nodes and spawned entities by their node IDs (e.g. if yo
 
 ## World Inspector: Watch (the player)
 
-The world inspector's `Watch` tab lets you inspect the player puppet and all of their components at runtime.&#x20;
+The world inspector's `Watch` tab lets you inspect the player puppet and all of their components at runtime.
 
 {% hint style="info" %}
 You can use the information below for AppearanceCreatorMod; check [submeshes-materials-and-chunks.md](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention") -> [#acm](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#acm "mention") for details.
