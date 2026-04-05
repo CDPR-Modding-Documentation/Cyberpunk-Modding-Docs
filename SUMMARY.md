@@ -463,6 +463,7 @@
       * [Entity Instance Data](modding-guides/world-editing/object-spawner/features-and-guides/entity-instance-data.md)
       * [Creating Area Nodes](modding-guides/world-editing/object-spawner/features-and-guides/setting-area-outlines.md)
       * [Creating Prefabs with Blender](modding-guides/world-editing/object-spawner/features-and-guides/creating-prefabs-with-blender.md)
+      * [Geometry-cache meshes for streaming-sector collision nodes](modding-guides/world-editing/object-spawner/features-and-guides/geometry-cache-meshes-for-streaming-sector-collision-nodes.md)
   * [Removing Objects](modding-guides/world-editing/removing-objects/README.md)
     * [Removing world objects with Removal Editor](modding-guides/world-editing/removing-objects/world-editing-deleting-objects.md)
     * [World Object Removal with Blender](modding-guides/world-editing/removing-objects/world-object-removal-with-blender.md)
