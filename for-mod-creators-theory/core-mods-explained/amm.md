@@ -1,5 +1,6 @@
 ---
 description: Appearance Menu Mod
+icon: user-hair
 ---
 
 # AMM

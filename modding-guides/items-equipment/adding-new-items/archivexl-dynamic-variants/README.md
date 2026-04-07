@@ -374,7 +374,7 @@ And that's it! With this and the [original guide](../../../../for-mod-creators-t
 
 ### Generating display names
 
-I have written a [Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/archive_xl_dynamic_variants/generate_translation_strings.py) to auto-generate display names, you can find it on my github. If you don't know how to use this, check [running-python-scripts.md](../../../../for-mod-creators-theory/3d-modelling/blender-getting-started/running-python-scripts.md "mention").
+I have written a [Python script](https://github.com/manavortex/cyberpunk2077/blob/master/python/archive_xl_dynamic_variants/generate_translation_strings.py) to auto-generate display names, you can find it on my github. If you don't know how to use this, check [running-python-scripts.md](../../../everything-else/running-python-scripts.md "mention").
 
 ### Creating preview icons
 

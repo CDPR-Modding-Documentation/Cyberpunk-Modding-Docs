@@ -104,7 +104,7 @@ If you don't have one, check out [Photopea](https://www.photopea.com/) - it's ph
 
 Only necessary for advanced workflows - you can probably do without. if you want to learn a cool new skill, check out
 
-* [running-python-scripts.md](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/running-python-scripts.md "mention")
+* [running-python-scripts.md](../../everything-else/running-python-scripts.md "mention")
 * [blender-running-python-scripts.md](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md "mention")
 
 These do not count as a tutorial.

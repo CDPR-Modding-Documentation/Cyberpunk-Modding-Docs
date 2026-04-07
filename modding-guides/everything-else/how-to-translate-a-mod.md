@@ -38,7 +38,7 @@ For this guide, you need to install the following requirements:
 
 ***
 
-There is no one way to do translations to existing Mods, but I am going to show two ways to do it in this guide:
+There is no one way to do translations to existing mods, but I am going to show two ways to do it in this guide:
 
 * [If the author provided a `.json.json` resource](how-to-translate-a-mod.md#if-the-author-provided-a-.json.json-resource)
 * [Extracting the Localization File from a `.archive` mod](how-to-translate-a-mod.md#extracting-the-localization-file-from-a-.archive-mod)
@@ -51,7 +51,15 @@ For the purposes of this guide, I will use my mod as example. The file names and
 
 ### Internal naming convention for supported languages
 
-Internally, supported languages are stored into folders with acronyms related to each supported language. It should like this:
+{% hint style="info" %}
+As of April 2026, you still have to create these folders yourself.
+{% endhint %}
+
+<details>
+
+<summary>Suggested folder structure</summary>
+
+Internally, supported languages are stored into folders with acronyms related to each supported language. It should look like this:
 
 <figure><img src="https://i.imgur.com/MGqTLAO.png" alt=""><figcaption><p>You can see this folder tree inside Assets Browser.</p></figcaption></figure>
 
@@ -78,6 +86,8 @@ Each acronym corresponds to the following languages:
 * `zh-tw`: Traditional Chinese (繁體中文)
 
 This list will be helpful later to setup the **ArchiveXL** files to properly add your translation (don't worry, is properly explained too).
+
+</details>
 
 ### Code nomenclature for text formatting
 

@@ -18,11 +18,9 @@ The open source CP77 lynchpin we all know and love, which is getting better with
 
 ## Hex - 010 Editor
 
-{% content-ref url="../../for-mod-creators-theory/modding-tools/010-editor.md" %}
-[010-editor.md](../../for-mod-creators-theory/modding-tools/010-editor.md)
+{% content-ref url="modding-tools-archived/010-editor.md" %}
+[010-editor.md](modding-tools-archived/010-editor.md)
 {% endcontent-ref %}
-
-
 
 ## 3D Graphics
 
@@ -30,13 +28,13 @@ The open source CP77 lynchpin we all know and love, which is getting better with
 
 Open Source 3D modelling
 
-{% content-ref url="../../for-mod-creators-theory/3d-modelling/blender-getting-started/" %}
-[blender-getting-started](../../for-mod-creators-theory/3d-modelling/blender-getting-started/)
+{% content-ref url="../3d-modelling/blender-getting-started/" %}
+[blender-getting-started](../3d-modelling/blender-getting-started/)
 {% endcontent-ref %}
 
 #### See Also
 
-[Blender Plugins and Scripts](../../for-mod-creators-theory/modding-tools/blender-scripts-and-plugins.md#blender)
+[Blender Plugins and Scripts](blender-scripts-and-plugins.md#blender)
 
 ### 3ds Max
 
@@ -54,17 +52,13 @@ Open Source 3D modelling
 
 Convert .mesh files into a wide variety of other 3d file extensions (like GLB and FBX)
 
-{% content-ref url="../../for-mod-creators-theory/modding-tools/noesis.md" %}
-[noesis.md](../../for-mod-creators-theory/modding-tools/noesis.md)
+{% content-ref url="modding-tools-archived/noesis.md" %}
+[noesis.md](modding-tools-archived/noesis.md)
 {% endcontent-ref %}
-
-
-
-
 
 ## 2D Graphics
 
-### &#x20;Gimp
+### Gimp
 
 Open source Photoshop alternative.
 
@@ -86,10 +80,10 @@ Free 2D image software with alpha layer support - great for basic editing and pr
 
 ### MLSetupBuilder
 
-Edit multilayered materials&#x20;
+Edit multilayered materials
 
-{% content-ref url="../../for-mod-creators-theory/modding-tools/mlsetup-builder/" %}
-[mlsetup-builder](../../for-mod-creators-theory/modding-tools/mlsetup-builder/)
+{% content-ref url="mlsetup-builder/" %}
+[mlsetup-builder](mlsetup-builder/)
 {% endcontent-ref %}
 
 ## See Also
@@ -100,6 +94,6 @@ Edit multilayered materials&#x20;
 
 These tools are no longer maintained/supported
 
-{% content-ref url="../../for-mod-creators-theory/modding-tools/savegame-editor-cybercat.md" %}
-[savegame-editor-cybercat.md](../../for-mod-creators-theory/modding-tools/savegame-editor-cybercat.md)
+{% content-ref url="savegame-editor-cybercat.md" %}
+[savegame-editor-cybercat.md](savegame-editor-cybercat.md)
 {% endcontent-ref %}

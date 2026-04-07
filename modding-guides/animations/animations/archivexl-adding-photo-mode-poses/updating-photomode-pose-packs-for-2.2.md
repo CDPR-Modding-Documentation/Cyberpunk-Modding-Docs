@@ -33,7 +33,7 @@ If I mess up, I unzip the backup file and overwrite the files in my mod folders.
    Save them somewhere in your computer. (I have a dedicated folder for Python scripts now)
    1. [**Convert Photomode XL files**](https://github.com/nut-boy/CyberpunkScripts/blob/main/convert_xl_for_photomodeNPV.py)
    2. [**Convert Photomode YAML files**](https://github.com/nut-boy/CyberpunkScripts/blob/main/convert_yaml_for_photomodeNPV.py)
-2. If it's your first time, follow the wiki guide for [running Python scripts.](../../../../for-mod-creators-theory/3d-modelling/blender-getting-started/running-python-scripts.md) Setup is fast and easy.
+2. If it's your first time, follow the wiki guide for [running Python scripts.](../../../everything-else/running-python-scripts.md) Setup is fast and easy.
 
 ### Processing the .xl files
 

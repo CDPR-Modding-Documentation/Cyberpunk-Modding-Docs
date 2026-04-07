@@ -1,5 +1,6 @@
 ---
 description: Adding stuff to the game, for the major-leagues
+icon: folder-plus
 ---
 
 # ArchiveXL

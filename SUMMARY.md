@@ -42,6 +42,7 @@
     * [WKit Blender Plugin: Import/Export](for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md)
     * [WKit Blender Plugin: AKL Autofitter](for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md)
     * [WKit Blender Plugin: Error messages](for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-error-messages.md)
+    * [WKit Blender Plugin: Material Tools](for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-material-tools.md)
     * [WKit Blender Plugin: Troubleshooting](for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-troubleshooting.md)
   * [MLSETUP Builder](for-mod-creators-theory/modding-tools/mlsetup-builder/README.md)
     * [The MLSB library search](for-mod-creators-theory/modding-tools/mlsetup-builder/the-mlsb-library-search.md)
@@ -60,9 +61,10 @@
     * [REDmod: Tweaks](for-mod-creators-theory/modding-tools/redmod/redmod-tweaks.md)
     * [Audio Modding: Redmod](for-mod-creators-theory/modding-tools/redmod/audio-modding.md)
   * [Tools, scripts and plugins](for-mod-creators-theory/modding-tools/blender-scripts-and-plugins.md)
-  * [Noesis](for-mod-creators-theory/modding-tools/noesis.md)
-  * [010 Editor](for-mod-creators-theory/modding-tools/010-editor.md)
   * [Savegame Editor: CyberCAT](for-mod-creators-theory/modding-tools/savegame-editor-cybercat.md)
+  * [Modding Tools: Archived](for-mod-creators-theory/modding-tools/modding-tools-archived/README.md)
+    * [010 Editor (ARCHIVED)](for-mod-creators-theory/modding-tools/modding-tools-archived/010-editor.md)
+    * [Noesis (ARCHIVED)](for-mod-creators-theory/modding-tools/modding-tools-archived/noesis.md)
 * [References, lists and overviews](for-mod-creators-theory/references-lists-and-overviews/README.md)
   * [Assets explained](for-mod-creators-theory/references-lists-and-overviews/assets.md)
   * [Cheat Sheet: Character Creator](for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-character-creator.md)
@@ -196,7 +198,6 @@
 * [3d Modelling](for-mod-creators-theory/3d-modelling/README.md)
   * [Blender: Getting Started](for-mod-creators-theory/3d-modelling/blender-getting-started/README.md)
     * [Blender: Running Python Scripts](for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md)
-    * [Running Python Scripts](for-mod-creators-theory/3d-modelling/blender-getting-started/running-python-scripts.md)
   * [Importing and Exporting Meshes](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export#meshes)
   * [Your image as custom mesh](for-mod-creators-theory/3d-modelling/your-image-as-custom-mesh.md)
   * [Porting 3d objects to Cyberpunk](for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/README.md)
@@ -530,6 +531,7 @@
     * [Creating Custom FX](modding-guides/everything-else/effects-modding/creating-custom-fx.md)
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/everything-else/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
   * [Player State Machines](modding-guides/everything-else/player-state-machines.md)
+  * [Running Python Scripts](modding-guides/everything-else/running-python-scripts.md)
 
 ***
 

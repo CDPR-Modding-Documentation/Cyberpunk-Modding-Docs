@@ -7,7 +7,7 @@ description: 'Substance Designer 2077: How it works and why it''s actually super
 ## Summary
 
 **Published:**\
-**Last documented edit:** Oct 15 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit:** Oct 15 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page describes Cyberpunk's multilayered supershader.
 
@@ -16,7 +16,8 @@ This page describes Cyberpunk's multilayered supershader.
 This wiki contains multiple guides about editing multilayered materials, such as:
 
 * For editing .mlmask files: [custom-multilayermasks.md](../../../modding-guides/textures-and-luts/custom-multilayermasks.md "mention")
-* For editing .mlsetup files:&#x20;
+* For editing .mlsetup files:
+  * Check [this video guide](https://youtu.be/ont3VGbnZ3g) for editing it in Blender
   * [changing-materials-colors-and-textures](../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
   * [recolours-and-refits](../../../modding-guides/items-equipment/recolours-and-refits/ "mention") -> [r-and-r-colour-editing.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-colour-editing.md "mention")
   * [textures-and-materials.md](../../../modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/textures-and-materials.md "mention")
@@ -36,7 +37,7 @@ While the multilayered supershader is very common, there are hundreds of other n
 ## Composition
 
 {% hint style="info" %}
-For a list of shader properties in multilayered.mt, see [Broken link](broken-reference "mention")
+For a list of shader properties in multilayered.mt, see [broken-reference](broken-reference/ "mention")
 {% endhint %}
 
 The multilayered shader is composed of three distinct parts:
@@ -67,7 +68,7 @@ As shown above, each mesh using the multilayer shader uses a unique **mlmask** f
 To edit .mlsetup files, it's recommended that you use the [mlsetup-builder](../../modding-tools/mlsetup-builder/ "mention") software.
 
 {% hint style="info" %}
-For a definition of the properties, see [Broken link](broken-reference "mention").
+For a definition of the properties, see [broken-reference](broken-reference/ "mention").
 
 For a guide on how to edit one, check [r-and-r-colour-editing.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-colour-editing.md "mention").
 {% endhint %}
@@ -86,14 +87,14 @@ For a guide on how to edit one, check [r-and-r-colour-editing.md](../../../moddi
 
 ## Technical Details
 
-| Multilayered Shaders                                                             |
-| -------------------------------------------------------------------------------- |
-| engine\materials\multilayered.mt                                                 |
-| base\materials\multilayered\_clear\_coat.mt  \|  Adds clearcoat effect           |
-| base\materials\vehicle\_destr\_blendshape.mt  \|  Adds procedural vehicle damage |
-| base\materials\cloth\_mov\_multilayered.mt                                       |
-| base\materials\multilayered\_terrain.mt                                          |
-| base\materials\ver\_mov\_multilayered.mt                                         |
+| Multilayered Shaders                                                           |
+| ------------------------------------------------------------------------------ |
+| engine\materials\multilayered.mt                                               |
+| base\materials\multilayered\_clear\_coat.mt \| Adds clearcoat effect           |
+| base\materials\vehicle\_destr\_blendshape.mt \| Adds procedural vehicle damage |
+| base\materials\cloth\_mov\_multilayered.mt                                     |
+| base\materials\multilayered\_terrain.mt                                        |
+| base\materials\ver\_mov\_multilayered.mt                                       |
 
 ### `multilayered`
 
