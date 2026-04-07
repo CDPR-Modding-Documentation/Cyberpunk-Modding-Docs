@@ -32,7 +32,7 @@ Make sure to familiarize yourself with the topics described in the `Knowledge Re
   * This fact will be set to 1 once the apartment is purchased
 * **Apartment Name**:
   * This is the main-displayed name of the apartment (On the map, tutorial and messages)
-  * This is a **LocKey**, you can either use WolvenKit's [LocKey Browser](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/lockey-browser) to find existing ones, or [add your own](../../items-equipment/adding-new-items/weapons/new-iconic-weapon-step-by-step.md#so-we-edit-onscreens.json)
+  * This is a **LocKey**, you can either use WolvenKit's [LocKey Browser](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/lockey-browser) to find existing ones, or [add your own](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/files-and-what-they-do/file-formats/translation-files--json)
 * **Cost**:
   * This is simply the cost of the apartment
 * **Use Custom Key (Optional)**:
