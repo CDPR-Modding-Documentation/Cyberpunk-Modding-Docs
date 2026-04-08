@@ -425,7 +425,7 @@ If you have the REDmod DLC installed, you can use a text editor like Notepad++ t
 
 By searching for "Crosshairs." in the Tweak Browser. Most things we find inside the weapon tweak will be searchable within the Tweak Browser, and some within the Asset Browser.
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption><p>List of crosshairs obtained with a Tweak Browser search</p></figcaption></figure>
 
 Editing the Tweak will allow us to modify all of our gun's behaviors, and I encourage you to play around with these.
 

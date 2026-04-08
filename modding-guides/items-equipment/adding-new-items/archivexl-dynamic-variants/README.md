@@ -311,7 +311,7 @@ Now, create a `partsOverrides`, and then two `componentOverrides` inside. For ev
 2. `meshAppearance` to an empty string (displays as `None`, this will make AXL ignore it)
 3. `componentName` to the name of a component that you want to hide (you can copy them from the `mesh_entity_copy.ent`)
 
-<figure><img src="../../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 For every appearance, hide the **other two decals**.
 
