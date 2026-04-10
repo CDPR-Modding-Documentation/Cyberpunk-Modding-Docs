@@ -4,12 +4,12 @@ description: >-
   make it yourself.
 ---
 
-# How to add a new appearance to an NPV
+# NPV: How to add a new appearance to an NPV
 
 ## Summary
 
 Created: Jul 3 2025 by [ratstick](https://app.gitbook.com/u/OX4mIc9xYzR97rBe1QUOsmixekJ2 "mention")\
-Last documented update Jul 14 2025 by [ratstick](https://app.gitbook.com/u/OX4mIc9xYzR97rBe1QUOsmixekJ2 "mention")
+Last documented update Apr 10 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will show you how to add an appearance to an already-existing NPV.
 
@@ -17,7 +17,7 @@ This page will show you how to add an appearance to an already-existing NPV.
 
 Commissioned an NPV or had someone make one for you and want to add new appearances yourself? It’s easy! Well, sort of. All the hard work has been done, but there are still some things you’ll want to consider. Here’s a guide walking you through it, step by step.
 
-Don’t hesitate to DM me on Discord or Nexus (`ratsstick/ratstick` respectively)  if you need help, or if the guide is unclear! You can find me in the [modding community discord](https://discord.gg/redmodding), the AMM server, the KS server, and Veegee’s server. <3
+Don’t hesitate to DM me on Discord or Nexus (`ratsstick/ratstick` respectively) if you need help, or if the guide is unclear! You can find me in the [modding community discord](https://discord.gg/redmodding), the AMM server, the KS server, and Veegee’s server. <3
 
 ### Disclaimer
 
@@ -27,25 +27,41 @@ These steps will be the same for adding new hairstyles, tattoos, cyberware, anyt
 
 ### The Mr. Potato Head and Barbie Dress-Up Metaphor
 
-The `.ent` file tells the game what file to reference for a given entity to load its appearances. You can read more about it here[entity-.ent-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/ "mention")
+You can think of it like a Mr. Potato Head or Barbie doll. The `component`s are the eyes, nose, ears, mouth, hats and such. When we add components to the .app file (see below), we’re putting on another item.
 
-The `.app` file tells the game what to load when spawning the character entity. You can read more about it here [appearance-.app-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/ "mention").
+#### The .ent file
 
-The `.app` file is where most of the work takes place. It’s where we’ll start. You can think of it like a Mr. Potato Head doll. The components are the eyes, nose, ears, mouth, hats and such of the Mr. Potato Head doll. When we add items to the .app file, we’re playing dress up with our Mr. Potato Head or Barbie.
+A list of appearances for any given entity. Every name points to an `.app` file and an associated appearancce.\
+&#xNAN;_&#x59;ou can (but don't have to) read more about it here:_ [entity-.ent-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/ "mention")
+
+#### The .app file
+
+A list of appearances with their associated components. This file tells the game what to load when spawning the character.\
+&#xNAN;_&#x59;ou can (but don't have to) read more about it here_ [appearance-.app-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/ "mention")
+
+Most of the work takes place here, and this is where we'll start.
+
+### Do I need \<XYZ framework>?
+
+Most likely not.
+
+The player has to support first and third person and character customization options. As of 2026, ArchiveXL lets us add things more easily; but in the past, people had to get tricky. That's where frameworks like `More Head/Body Meshes` are from.
+
+An NPC is just a list of components in your .app. Want extra cyberware? You can just add the mesh!
 
 {% hint style="info" %}
-An NPV is not the player, so many scripts and mechanics don’t apply to it and many frameworks like More Head Meshes or More Body Meshes aren't required for the item to function. You want to add additional cyberware? You can just add the mesh!
-
-You may still need files from certain texture frameworks, but you’ll find that out when you’re beginning to custom path textures.
+You may still need files from certain texture frameworks, but you’ll find that out when you’re beginning to custompath textures.
 {% endhint %}
 
-### What does “custom pathing” mean, and why do we do it?
-
-Custom pathing is changing the folder structure or the name of a file so that vanilla or other modded files don’t overwrite what you’re putting together. This means that if I have Arkhe’s Universal Skin Tone mod installed, but your NPV uses a different skin file, then your file wouldn’t be overwritten by me having that mod installed.
+### What's “custom pathing”, and why do we do it?
 
 {% hint style="info" %}
-If you'd like to learn more about the general concept of custom pathing in modding, you can check out the[custompathing-assets.md](../../items-equipment/custompathing-assets.md "mention") page.
+You can learn more about this on out the[custompathing-assets.md](../../items-equipment/custompathing-assets.md "mention") page.
 {% endhint %}
+
+Custom pathing is the process of moving files/folders into a unique place so that they don't influence existing mods or game files.&#x20;
+
+For example: We're both have Arthe's Universal Skin Tone installed, but your NPV uses a different skin tone from my V. If you do not custompath your file, one of the two will have the wrong skin tone on my computer.
 
 I take a broad approach to custom pathing and path nearly everything that isn’t an engine file or file type not commonly edited. I still recommend doing this for vanilla clothing items, as replacers are still used for some clothing items. In general, I recommend custom pathing the following file types:
 
@@ -61,7 +77,7 @@ I take a broad approach to custom pathing and path nearly everything that isn’
 
 If you already have a Wolvenkit project for your NPV, you can skip this step and go straight to [#step-2-duplicating-an-existing-appearance](how-to-add-a-new-appearance-to-an-npv.md#step-2-duplicating-an-existing-appearance "mention").
 
-1. Open WolvenKit and select “create a new project”.&#x20;
+1. Open WolvenKit and select “create a new project”.
 2. Fill out the stuff. Make sure you use underscores instead of spaces. WolvenKit will freak out, and your mod may not work if you use spaces in folders and such.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd6GxJ4Vr1k3iqCCnhvKq-lnTKNhDrauJqfEKtAKjD3nnTbOwdVSFvKu6oniwAW2vD0sNXA_8hFYtHVmY0NaqGNIqbVO5d1BIvnimBl4v68tZByY4nnFob69VanGx5_FVfdEcoSqQ?key=v-1XJeip1aB1Hl1kfJwyYA" alt=""><figcaption></figcaption></figure>
@@ -69,8 +85,7 @@ If you already have a Wolvenkit project for your NPV, you can skip this step and
 3. Follow the guide for [analysing-other-mods](../../analysing-other-mods/ "mention") on how to add your NPV's files from the `.archive` you have installed. Add every file in the archive.
 4. You'll want to make sure you add any extra files like the `.lua` for spawning via AMM or a custom `.xl` file that may contain things like localization or scope info. Don't worry if none of that makes sense, the only thing you need to worry about is getting all the NPV files into your project.
 5. The `.xl` file will be found in `archive/pc/mod` and goes directly into your project's `source/resources` folder
-6.  The `.lua` file goes into the resources folder, too. When we pack this, we need to make sure AMM can read our file. You'll want to create a new folder in `source/resources` using the following path: `bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Entities` . You can use Wolvenkit's Create Folder button to create the entire thing in one go, then move the .lua file there. To do that, right click on the resources folder and select "Create new folder" (or hit F7 on your keyboard). Then, copy and paste the path shown above! You click the yellow button to open the folder in Windows Explorer and move the `.lua` file into it.\
-
+6.  The `.lua` file goes into the resources folder, too. When we pack this, we need to make sure AMM can read our file. You'll want to create a new folder in `source/resources` using the following path: `bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Entities` . You can use Wolvenkit's Create Folder button to create the entire thing in one go, then move the .lua file there. To do that, right click on the resources folder and select "Create new folder" (or hit F7 on your keyboard). Then, copy and paste the path shown above! You click the yellow button to open the folder in Windows Explorer and move the `.lua` file into it.\\
 
     <figure><img src="../../../.gitbook/assets/Screenshot 2025-07-14 201648.png" alt=""><figcaption><p>This is what it should look like if you're using the "Create Folder" function inside Wolvenkit</p></figcaption></figure>
 
@@ -93,8 +108,7 @@ Since all the hard work has been done for you with the base appearance, you can 
 ### Step 3: Playing Barbie Dress-Up (Adding items)
 
 1. Once the name has been changed, click the carat next to the appearance to expand it.
-2.  Click the carat next to `components` \
-
+2.  Click the carat next to `components` \\
 
     <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcBu5Ktp-OF9PXPzWj-cniyIp4me1iOOluR8u_NzWkwQkF2gt4t9H-lWjsGhSxB3FFqjzJGGhijPkACdnda38bEAYjhGeAH9IJs2AwFpuPvkqaSq43VGTDbs4NwLOdBoccQIcIg?key=v-1XJeip1aB1Hl1kfJwyYA" alt=""><figcaption></figcaption></figure>
 3. In some template NPV .app files, clothing has its own section. If your .app file looks different, you can find the clothing components by looking for `entGarmentSkinnedMeshComponent` or `entSkinnedMeshComponent` and checking the component names for clothing prefixes. Some modded items may use custom names but it should (hopefully) be obvious which of those are clothing items. The clothing prefixes are as follows:
@@ -116,9 +130,9 @@ These prefixes aren't necessary for NPVs to function. However, ACM uses them to 
 
 Now it's time to play Barbie dress-up!
 
-#### Finding clothing items&#x20;
+#### Finding clothing items
 
-You can either[ search ](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files)for the name of the item if you know what it is, or peruse the asset browser. You can also use the Tweak Browser after finding a vanilla item's baseID to find the mesh you need. You can follow[ this guide ](../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md)to see how to do that.&#x20;
+You can either[ search ](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files)for the name of the item if you know what it is, or peruse the asset browser. You can also use the Tweak Browser after finding a vanilla item's baseID to find the mesh you need. You can follow[ this guide ](../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md)to see how to do that.
 
 {% hint style="info" %}
 With the [Toggle Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) button, you can switch the Asset Browser to search only in modded files.
@@ -128,11 +142,9 @@ With the [Toggle Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wol
 
 I want to use the vanilla Converse so I need to add the mesh to my project.
 
-1. Right-click on the .mesh \
-   &#xNAN;_(p)ma = (player) male average; (p)wa = (player) woman average_
-2. Click “Add selected items to the project”.  This will duplicate the folder structure in your project as well.
-
-
+1. Right-click on the .mesh\
+   \&#xNAN;_(p)ma = (player) male average; (p)wa = (player) woman average_
+2. Click “Add selected items to the project”. This will duplicate the folder structure in your project as well.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdO-_3ZzmuLcduIkRPu4fOQIehQ1X6zVRCTeSEmK17hsxcWxRrG9pUsYnmKp_hngRLpcCoSKO6XUcC4wlxjcO2S4vEfgf6Z6T7oOJigS5vU7eQLy3FI-9E2RI__wSQsHmNnKJKBiw?key=v-1XJeip1aB1Hl1kfJwyYA" alt=""><figcaption></figcaption></figure>
 
@@ -146,11 +158,11 @@ Nice, we're following custom pathing best practices. Next, we need to tell the g
 
 Sincere there's already a shoe component in this appearance, I'm going to just swap the mesh path and mesh and appearance names.
 
-1. ight-click on the mesh and select “copy relative path to game file”.&#x20;
+1. ight-click on the mesh and select “copy relative path to game file”.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXefEt3rgrSUv5QyA3vEIkvTTF_VlN5Xp1fM8dfzJfyz7W04cUcUeSOw2HYcGQ_NGq8VUGgUaXljY-y_y_U8EfIug6PRQQUd2oKb9ahcy-ZzS6qBqiaXXwy_tGNPDuqccGGgBQpvzA?key=v-1XJeip1aB1Hl1kfJwyYA" alt=""><figcaption></figcaption></figure>
 
-2. Paste it into the “DepotPath” section on the right pane.&#x20;
+2. Paste it into the “DepotPath” section on the right pane.
 3. The component can be renamed to whatever you want. I’m going to put “converse”.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdgEPVSTlY_YXy2WT2prtAkUM9jMp1mIbOBxEwFQU7R6XyhRDriHWZR0a9CGaMxbhqq_bIukkXGUpVVDgT13GjKMkT7PeB-37UG3RdLnv4HabQ5L7GRCh6Lwvt86h7xv9hAj_JXHA?key=v-1XJeip1aB1Hl1kfJwyYA" alt=""><figcaption></figcaption></figure>
@@ -173,7 +185,7 @@ The component in the .app should now have the mesh appearance, component name, a
 This will reduce the time it takes Wolvenkit to complete file validation and makes it easier for you to review the mesh appearances if you need to make any changes or updates to textures and the like.
 {% endhint %}
 
-Now, it’s time to clean up the mesh appearances! If you use more than one appearance in the mesh, it’s fine to keep those entries in the mesh file. I only want to use the black appearance, so I’m going to delete the rest of the material entries. WolvenKit has a very handy tool that will do this part for you.&#x20;
+Now, it’s time to clean up the mesh appearances! If you use more than one appearance in the mesh, it’s fine to keep those entries in the mesh file. I only want to use the black appearance, so I’m going to delete the rest of the material entries. WolvenKit has a very handy tool that will do this part for you.
 
 1. Select the appearance entries you don’t want, then right click and hit “Delete Item in Array/Buffer”. Alternatively, you can also select the entry you want, hold shift, and click "Delete everything but selection".
 
@@ -191,13 +203,13 @@ Everyone say “thank you Wolvenkit devs.”
 Mods that change base game files are increasingly more rare, but this is how you can keep your NPV clean and ensure only the appearances your NPV is using will be used, regardless of the mods your friends are using.
 {% endhint %}
 
-Now to edit the path of the textures.&#x20;
+Now to edit the path of the textures.
 
 1. Find the `localMaterialBuffer` and click the carat on the left to expand it. Do the same thing for `materials`, `CMaterialInstance` and the values. These contain the paths to the textures we’re going to change.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXetjm7BQ7djJCk7Nh0g_rIJ_ZN37BmgCdh9Ls25loIqTENpThzyP1RCCujRxyx3BBi6_6rluXL46At_q5QeIul6Wel6Uhuue8jeSgBZNpjB2t-L3czikgm4fJrTLmKDiPySuAARHw?key=v-1XJeip1aB1Hl1kfJwyYA" alt=""><figcaption></figcaption></figure>
 
-2. Click the yellow arrow to add the texture to your project. We can ignore the `baseMaterial` because that’s an engine\materials file and I don’t think those are ever changed in any mod. Just like when we added the mesh to our project, the textures will replicate the folder structure.&#x20;
+2. Click the yellow arrow to add the texture to your project. We can ignore the `baseMaterial` because that’s an engine\materials file and I don’t think those are ever changed in any mod. Just like when we added the mesh to our project, the textures will replicate the folder structure.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd3C83_o2klgtugywibR__aHbpBHmI4kJfJ8Z0j_4Z_zPr8BYZ4dZcbwXRXIx0uICkBgHghYSBy2plRThL4kOyfpbj1qQ6YbzcNHbNkFPLjJxNqKDM0q6MSXOIwsPlIy8r0lW-L?key=v-1XJeip1aB1Hl1kfJwyYA" alt=""><figcaption></figcaption></figure>
 
@@ -213,7 +225,7 @@ This guide is getting hella long already, so I won’t bore you with adding more
 
 #### Hiding body submeshes
 
-One thing you may want to do is hide some of the body submeshes to prevent clipping through clothes.&#x20;
+One thing you may want to do is hide some of the body submeshes to prevent clipping through clothes.
 
 1. Find the `t0` mesh component in your appearance and toggle off or on the chunkmasks. You can also open the mesh and switch to the preview tab to see which submeshes you may want to hide.
 
@@ -227,7 +239,7 @@ Save the `.app` file after you’re done updating and adding your clothing. This
 
 Now, we need to tell the game that there’s a new appearance that can be used for the entity. That means we have to update the `.ent` file. Find that file in your project and click the blue icon to open it.
 
-1. Right-click on any one of the `.ent` entries and select “Duplicate in array/buffer.”&#x20;
+1. Right-click on any one of the `.ent` entries and select “Duplicate in array/buffer.”
 2. Just like we did when we duplicated the .app appearance, we’ll need to rename it. Rename it to the same name you used for the appearance. Pay close attention to the formatting of the “name” field. You only need to append the new name to the end of the NPV name.
 
 This is what it should look like.
@@ -264,7 +276,7 @@ If you're raring to go, and not using a mod manager like MO2, you can just click
 
 <figure><img src="../../../.gitbook/assets/add_apperances_to_npvs_install_and_launch.png" alt=""><figcaption></figcaption></figure>
 
-This will pack your mod, install it to the game directory, and then launch the game for you.&#x20;
+This will pack your mod, install it to the game directory, and then launch the game for you.
 
 However, I think it's important to also know how to pack the project so you know where to find the packed file and if you need to install it to a mod manager.
 
@@ -278,7 +290,7 @@ However, I think it's important to also know how to pack the project so you know
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdSXWTgz6R-ncAiBd8BD9q9IGiXy_ol79MuBzZWKMtPflmkQCEFagPxa4ahmK7zsYKqLexRnfZI5TdsFkfARNey3t_soz2tT452u9pmlA24lgA5c53-2lkuXAB8AVsmauL_Lg-jFw?key=v-1XJeip1aB1Hl1kfJwyYA" alt=""><figcaption></figcaption></figure>
 
-3. You can click Build and Install or you can click the yellow folder in the Project Explorer to open the project folder.&#x20;
+3. You can click Build and Install or you can click the yellow folder in the Project Explorer to open the project folder.
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXcIDS_CMbRfVjUQvUHPKGXgfFWCtQywjYwJsgCEQioxAUryTwO096OMVQFwwDP1nf8v0hdh7jIM3Kqz802PtvxOY2cwVeNOEFGnOlnob6WcV2g0q5ZQOMMhEMJEpVcX5tLUEx0C?key=v-1XJeip1aB1Hl1kfJwyYA" alt=""><figcaption></figcaption></figure>
 
@@ -294,6 +306,6 @@ And that’s it! Install and go, test it out!
 
 ### Final Notes
 
-Garment support doesn’t work on NPVs. You can hide submeshes in ACM or in Wolvenkit. You can also edit the mesh(es) in Blender to cut out or [resize](../../items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md) the parts that clip with other items.&#x20;
+Garment support doesn’t work on NPVs. You can hide submeshes in ACM or in Wolvenkit. You can also edit the mesh(es) in Blender to cut out or [resize](../../items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md) the parts that clip with other items.
 
 This process should work for NPC+ too. And again, please don’t hesitate to reach out to me (`ratstick`) if you need help!
