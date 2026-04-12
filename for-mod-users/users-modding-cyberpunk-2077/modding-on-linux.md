@@ -31,7 +31,7 @@ The guide below has been confirmed working for dozens of people on SteamDeck, va
 
 To play games on Linux, you need various programs and libraries. On the steam deck, most are preinstalled, and all you need is a tool to configure them.
 
-This guide has information about Protontricks (recommended) and Lutris (only here for the sake of completeness). If you use anything else, we can not support you
+This guide has information about Protontricks (recommended) and Lutris (only here for the sake of completeness). If you use anything else, we can not support you.
 
 ### Protontricks: Setting up
 
@@ -76,6 +76,10 @@ Apply via "OK". You may receive an error below or similar. If you do, click "Yes
 <figure><img src="../../.gitbook/assets/vc_run.png" alt=""><figcaption><p>Example Installation Warning</p></figcaption></figure>
 
 ### Lutris: setting up
+
+{% hint style="warning" icon="triangle-exclamation" %}
+**Use Lutris only if you cannot make Protontricks work!**
+{% endhint %}
 
 Taken from [CET's github](https://github.com/maximegmd/CyberEngineTweaks/issues/821)
 
