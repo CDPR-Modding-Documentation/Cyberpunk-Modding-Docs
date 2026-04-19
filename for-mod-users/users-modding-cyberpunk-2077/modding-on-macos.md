@@ -53,7 +53,7 @@ xattr -r -d com.apple.quarantine "/Applications/Cyberpunk 2077/engine/tools/"
 * Steam:
 
 ```bash
-xattr -r -d com.apple.quarantine "~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/engine/tools/"
+xattr -r -d com.apple.quarantine "$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/engine/tools/"
 ```
 
 * App Store:
@@ -82,8 +82,22 @@ Copy the contents of the zip/folder to your Cyberpunk 2077 install folder (the o
 {% step %}
 **Make sure your script is executable**
 
+* GOG:
+
 ```bash
 chmod +x "/Applications/Cyberpunk 2077/launch_modded.sh"
+```
+
+* Steam:
+
+```bash
+chmod +x "$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/launch_modded.sh"
+```
+
+* App Store:
+
+```bash
+chmod +x "/Applications/Cyberpunk2077.app/Contents/Data/launch_modded.sh"
 ```
 {% endstep %}
 {% endstepper %}
@@ -108,40 +122,51 @@ Now GOG Galaxy will run your script whenever you press **Play**.
 
 _b) Steam:_
 
-**TODO:** Steam is tricky one, as it doesn't allow to pick custom executable. Main idea is to rename original executable `Cyberpunk2077` to `Cyberpunk2077_real`, then renaming `launch_modded.sh` script to executable-like file, adjusting the code to call actual executable after redscript is compiled and finally making it recognize-able for macOS as such. If you find it hard, use option two or three, by running it manually with every new mod or every time.
+Steam does not let you choose a different executable on macOS, so the workaround is to temporarily replace the top-level launcher with the script.
 
 1. Rename the executable inside `Cyberpunk2077.app` :
 
 ```bash
-mv "~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077" "~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077_real"
+mv "$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077" \
+   "$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077_real"
 ```
 
-2. Using preferable text editor (use `Text Edit`, if you don't have any), adjust `launch_modded.sh` to these changes:
-
-* Locate following line:
+2. Using your preferred text editor (use `TextEdit` if you do not have another one), update `launch_modded.sh` so it uses a fixed macOS path, changes into the game directory before running the tools, and launches the renamed executable:
 
 ```bash
-"$game_dir/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077" "$@"
+#!/usr/bin/env bash
+game_dir="$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077"
+
+cd "$game_dir" || exit 1
+
+"$game_dir/engine/tools/scc" -compile "$game_dir/r6/scripts"
+perl "$game_dir/engine/tools/inputloader.pl"
+exec "$game_dir/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077_real" "$@"
 ```
 
-* Replace it with following:
-
-```bash
-"$game_dir/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077.real" "$@"
-```
-
-* Save the file with `Command` + `S` .
+Save the file with `Command` + `S`.
 
 3. Rename the launch script to executable:
 
 ```bash
-mv "~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/launch_modded.sh" "~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077"
+mv "$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/launch_modded.sh" \
+   "$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077"
 ```
 
 4. Make sure it's executable:
 
-<pre class="language-bash"><code class="lang-bash"><strong>chmod +X "~/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077"
+<pre class="language-bash"><code class="lang-bash"><strong>chmod +x "$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077"
 </strong></code></pre>
+
+If you want to undo this later, restore the original launcher and put the script back:
+
+```bash
+mv "$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077_real" \
+   "$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077.app/Contents/MacOS/Cyberpunk2077"
+
+mv "$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/Cyberpunk2077" \
+   "$HOME/Library/Application Support/Steam/steamapps/common/Cyberpunk 2077/launch_modded.sh"
+```
 
 _c) App Store_
 
@@ -163,7 +188,7 @@ Some values within `launch_modded.sh` will need to be edited for it to launch th
 
 2. Make sure it's executable:
 
-<pre class="language-bash"><code class="lang-bash"><strong>chmod +X "/Applications/Cyberpunk2077.app/Contents/Data/launch_modded.sh"
+<pre class="language-bash"><code class="lang-bash"><strong>chmod +x "/Applications/Cyberpunk2077.app/Contents/Data/launch_modded.sh"
 </strong></code></pre>
 
 Be sure the script opens with Terminal by default, right click `launch_modded.sh` → Show info → Open with: → Select 'Terminal'
