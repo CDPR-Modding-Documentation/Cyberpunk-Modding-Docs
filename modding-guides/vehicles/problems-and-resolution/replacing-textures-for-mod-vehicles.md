@@ -45,9 +45,9 @@ Add the files to your mod by double-clicking them.
 
 After adding the texture, you can now [export it to .png](../../textures-and-luts/images-importing-editing-exporting.md).
 
-<figure><img src="../../../.gitbook/assets/04 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/04.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/05 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/05.png" alt=""><figcaption></figcaption></figure>
 
 The resulting texture will show up in your project's [`raw` folder](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw) (use the `source` tab to see all project files)
 
@@ -65,7 +65,7 @@ Now replace the .png with the picture that you want:
 The file name must be the same
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/08 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/08.png" alt=""><figcaption></figcaption></figure>
 
 ### 5. Importing the texture
 

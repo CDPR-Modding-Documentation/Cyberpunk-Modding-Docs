@@ -15,7 +15,7 @@ This guide will teach you how to set game assets as new files. Don't worry, it's
 
 The game **identifies files** by their paths. For example, `base\characters\main_npc\silverhand\a0_001_ma_arms__silverhand.mesh` is Johnny's signature arm. The game will read that file whenever it spawns everyone's favourite terrorist — any changes you make will affect him.
 
-If you want to use your own copy of that arm (for a custom NPC), the solution is **custompathing**.&#x20;
+If you want to use your own copy of that arm (for a custom NPC), the solution is **custompathing**.
 
 By moving the arm to e.g. `your_modder_name\npcs\johnnys_evil_halfbrother\a0_001_ma_arms__silverhand.mesh` , you can change whatever you want, and the original won't be affected.
 
@@ -34,13 +34,13 @@ base\characters\main_npc\silverhand\textures\ml_a0_001_ma_arms__silverhand.mlset
 
 ### Step 1: Renaming to target
 
-The easiest (and recommended) way to do this is Wolvenkit's [Rename](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#rename) dialogue.&#x20;
+The easiest (and recommended) way to do this is Wolvenkit's [Rename](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#rename) dialogue.
 
 With a file or folder selected in the project browser, click "Rename" in the context menu (or press f2):
 
 <figure><img src="../../.gitbook/assets/custompathing_assets_rename_dialog.png" alt=""><figcaption></figcaption></figure>
 
-In the box, put the full name of where you want your file/folder to go. In our example, that'll be \
+In the box, put the full name of where you want your file/folder to go. In our example, that'll be\
 `your_modder_name\npcs\johnnys_evil_halfbrother\` .
 
 Make sure to check the box so that Wolvenkit can update all references across your project!
@@ -55,6 +55,6 @@ You now have your very own copy of Johnny's arm, with its own `.mlsetup` file. Y
 
 The blue text tells you which references have been updated:
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Until next time, chooms!

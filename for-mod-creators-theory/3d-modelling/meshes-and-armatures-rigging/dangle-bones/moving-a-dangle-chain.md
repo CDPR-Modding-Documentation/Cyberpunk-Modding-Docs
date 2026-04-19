@@ -58,7 +58,7 @@ Open the .rig file in Wolvenkit. Under boneNames you can find which index corres
 
 <figure><img src="../../../../.gitbook/assets/image (101).png" alt=""><figcaption><p>Edited</p></figcaption></figure>
 
-<figure><img src="../../../../.gitbook/assets/image (148) (1).png" alt=""><figcaption><p>Result</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (121).png" alt=""><figcaption><p>Result</p></figcaption></figure>
 
 ## Animgraph edit
 
@@ -67,7 +67,7 @@ As you can see, the skeleton exploded. This is (to my understanding) caused by c
 \
 Here i set the value to 0, the animations work fine, but a correctly set value might reduce clipping in some poses.
 
-<figure><img src="../../../../.gitbook/assets/image (110) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (83).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../../.gitbook/assets/image (80).png" alt=""><figcaption><p>Result</p></figcaption></figure>
 

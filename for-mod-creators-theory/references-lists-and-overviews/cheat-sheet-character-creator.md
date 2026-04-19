@@ -147,7 +147,7 @@ Check [cheat-sheet-head](cheat-sheet-head/ "mention") -> [#cyberware](cheat-shee
 
 ## Piercing Color
 
-<figure><img src="../../.gitbook/assets/character_creator_piercing_colour.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/character_crrator_piercing_color.png" alt=""><figcaption></figcaption></figure>
 
 ## Piercings and submeshes
 

@@ -63,8 +63,6 @@ You can open a Windows Explorer in the game folder like this:
 
 <figure><img src="../../../.gitbook/assets/game_folder_open_explorer.png" alt=""><figcaption></figcaption></figure>
 
-
-
 </details>
 
 ### It's not there!
@@ -76,24 +74,18 @@ If you don't know your game directory, you can find it through your game launche
 Right-click on the game in your library, then select `Manage` -> `Browse local files`
 
 <figure><img src="../../../.gitbook/assets/cyberpunk_game_directory_steam.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endtab %}
 
 {% tab title="GOG" %}
 With the game selected in your library, click on the `More` button, then on `Manage Installation` and `Show folder…`
 
 <figure><img src="../../../.gitbook/assets/cyberpunk_dir_gog_show_files.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endtab %}
 
 {% tab title="Epic Games" %}
 Right-click on your game in the list and select `Manage`. Then, click on the folder icon:
 
 <figure><img src="../../../.gitbook/assets/cyberpunk_game_directory_epic.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endtab %}
 {% endtabs %}
 
@@ -125,9 +117,9 @@ You can either double-click on the `virtual-atelier-full` folder (first item) to
 
 {% tabs %}
 {% tab title="Finding the Folder Path in the Search Results" %}
-<h3 align="center">Finding the folder path in the search results</h3>
+<h4 align="center">Finding the folder path in the search results</h4>
 
-If you right-click on a folder or file, you will see a menu entry "`open folder/file location`".&#x20;
+If you right-click on a folder or file, you will see a menu entry "`open folder/file location`".
 
 This will open a new Windows Explorer window in the folder **containing** the item you selected, letting you browse and delete.
 
@@ -135,7 +127,7 @@ This will open a new Windows Explorer window in the folder **containing** the it
 {% endtab %}
 
 {% tab title="Deleting From the Search Results" %}
-<h3 align="center">Deleting from the search results</h3>
+<h4 align="center">Deleting from the search results</h4>
 
 Select multiple items from the list by holding the `Ctrl` key while you click.
 

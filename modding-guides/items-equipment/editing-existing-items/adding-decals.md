@@ -187,7 +187,7 @@ For more information on this, check [uv-mapping-texturing-a-3d-object.md](../../
 
 Our decal is now showing our new material. Make sure that it has exactly one UV map by checking the `Data` tab:
 
-<figure><img src="../../../.gitbook/assets/delete_extra_uv_map (1).png" alt=""><figcaption><p>If there is more than one, delete all but the first (starting at the bottom)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/delete_extra_uv_map.png" alt=""><figcaption><p>If there is more than one, delete all but the first (starting at the bottom)</p></figcaption></figure>
 
 Time to change to the `UV Editing` perspective. You should be in Edit Mode (Hotkey: `Tab` if not) and have all pixels of your decal mesh selected (Hotkey: `A` if not).
 
@@ -270,7 +270,7 @@ If you save your mesh now, file validation will complain that the `decal` materi
 3. Make sure that `isLocalInstance` is checked
 4. Increment its `index` by one (e.g. 29 -> 30)
 
-<figure><img src="../../../.gitbook/assets/adding_decals_15_definition (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/adding_decals_15_definition.png" alt=""><figcaption></figcaption></figure>
 
 ### Material instance
 

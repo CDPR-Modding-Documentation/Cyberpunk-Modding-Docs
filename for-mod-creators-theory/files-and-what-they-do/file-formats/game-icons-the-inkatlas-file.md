@@ -9,7 +9,7 @@ This page explains the `.inkatlas` file and its logic.
 ##
 
 {% hint style="info" icon="question" %}
-## Wait, this is not what I want!
+### Wait, this is not what I want!
 
 * Learn how to make [adding-items-preview-images](../../../modding-guides/custom-icons-and-ui/adding-items-preview-images/ "mention")
 * Make a [custom Atelier icon](../../../modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md#generating-an-icon)

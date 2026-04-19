@@ -8,7 +8,7 @@
 As with AMM 2.0, this guide is rather obsolete, but will be kept archived!
 {% endhint %}
 
-![](<../../../.gitbook/assets/0 (2)>)
+![](../../../.gitbook/assets/0)
 
 ![](<../../../.gitbook/assets/1 (4)>)
 
@@ -21,7 +21,7 @@ What you’ll need :
   [(I recommend joining the CP77 Modding server to grab those!)](https://discord.gg/fvNFPhJh8h)\\
 * The WolvenKIT console (CP77Tools)
 
-![](<../../../.gitbook/assets/2 (2)>)
+![](../../../.gitbook/assets/2)
 
 I’ll assume you already know some basic modding\
 (extracting the files with the console or WKit etc)

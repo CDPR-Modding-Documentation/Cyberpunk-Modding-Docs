@@ -10,13 +10,11 @@ description: This page explains how meshes are casting shadows.
 **Last documented update**: Mar 02 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 {% hint style="info" icon="question" %}
-### Wait, this is not what I want!
+#### Wait, this is not what I want!
 
 * Find information about shadows in the environment under [environment-shadows.md](../the-whole-world-.streamingsector/environment-shadows.md "mention")
 * To learn more about [level-of-detail-lod.md](../../level-of-detail-lod.md "mention"), check the corresponding wiki page.
 {% endhint %}
-
-
 
 ## How to cast shadows
 

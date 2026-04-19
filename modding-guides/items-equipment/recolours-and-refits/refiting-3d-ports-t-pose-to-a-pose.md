@@ -80,7 +80,7 @@ Toggle the **X-ray** vision to be able to select back faces
 
 And enable **Proportional Editing**\\
 
-<figure><img src="../../../.gitbook/assets/image (603) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (612).png" alt=""><figcaption></figcaption></figure>
 
 This will come in extremly handy and allow us to "smoothly" rotate / move / edit part of the mesh without creating "staircase" effect and harsh corners
 

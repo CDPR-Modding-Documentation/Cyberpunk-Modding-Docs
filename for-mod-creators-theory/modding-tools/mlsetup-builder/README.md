@@ -155,13 +155,13 @@ Here, you can either browse to your model directly, or use text search:
 
 After selecting a model, you can close the library browser again. Now selecting a layer will show you directly which parts of the mesh it corresponds to.
 
-<figure><img src="../../../.gitbook/assets/MLSB_ui (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/MLSB_ui.png" alt=""><figcaption></figcaption></figure>
 
 That's it! Happy recoloring!
 
 ### Other Tools inside MLSB
 
-<figure><img src="../../../.gitbook/assets/additionalTool (1).png" alt=""><figcaption><p>List of tools inside MLSB</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/additionalTool.png" alt=""><figcaption><p>List of tools inside MLSB</p></figcaption></figure>
 
 Inside MLSB there are some other tools, the most important one is the Material Composer.
 

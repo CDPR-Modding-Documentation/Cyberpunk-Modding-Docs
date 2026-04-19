@@ -4,7 +4,7 @@
 
 **Created & Published**: Summer 2021 by **@Pinkydude**
 
-![](<../../.gitbook/assets/0 (2)>)
+![](../../.gitbook/assets/0)
 
 ![](<../../.gitbook/assets/1 (1)>)
 
@@ -16,7 +16,7 @@ What you’ll need :\\
 * [My Netrunner suit Remover mod](https://www.nexusmods.com/cyberpunk2077/mods/2628)
 * [AMM](https://www.nexusmods.com/cyberpunk2077/mods/790?tab=description)
 
-![](<../../.gitbook/assets/2 (2)>)
+![](../../.gitbook/assets/2)
 
 First off, grab my FixSwap and Removers mods and drop them in your Mod Folder
 

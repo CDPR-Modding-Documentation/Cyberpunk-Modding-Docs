@@ -11,7 +11,7 @@ description: Modding your game, for mod users
 ## Summary
 
 **Published:** Jun 15, 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** January 18, 2026 by [minnierylands](https://app.gitbook.com/u/VSIYzNHUyRPaBCk2ExHhQzpPfo82 "mention")&#x20;
+**Last documented update:** January 18, 2026 by [minnierylands](https://app.gitbook.com/u/VSIYzNHUyRPaBCk2ExHhQzpPfo82 "mention")
 
 This page will give you a brief introduction of **how** mods work and how to install them.
 
@@ -45,13 +45,13 @@ If you're on Linux/Steam Deck, you need to follow [this guide](modding-on-linux.
 
 ## Mod Manager Options
 
-Below you can find links to guides for all three supported mod managers for Cyberpunk 2077.&#x20;
+Below you can find links to guides for all three supported mod managers for Cyberpunk 2077.
 
 {% hint style="success" %}
 If you had terrible experiences with Vortex for other games, be assured: Cyberpunk integration is working extremely well. Maybe give it another chance?
 {% endhint %}
 
-<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><h4><strong>Vortex</strong></h4></td><td align="center">Recommended for most mod users. Easy to use.</td><td data-object-fit="contain"><a href="../../.gitbook/assets/vortex-logomark.png">vortex-logomark.png</a></td><td><a href="getting-started/vortex-mod-manager.md">vortex-mod-manager.md</a></td></tr><tr><td align="center"><h4><strong>Mod Organizer 2</strong></h4></td><td align="center">Recommended for anyone already used to MO2. More complicated to use.</td><td data-object-fit="cover"><a href="../../.gitbook/assets/37225415.png">37225415.png</a></td><td><a href="getting-started/mo2-mod-organizer-2.md">mo2-mod-organizer-2.md</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th align="center"></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><strong>Vortex</strong></td><td align="center">Recommended for most mod users. Easy to use.</td><td data-object-fit="contain"><a href="../../.gitbook/assets/vortex-logomark.png">vortex-logomark.png</a></td><td><a href="getting-started/vortex-mod-manager.md">vortex-mod-manager.md</a></td></tr><tr><td align="center"><strong>Mod Organizer 2</strong></td><td align="center">Recommended for anyone already used to MO2. More complicated to use.</td><td data-object-fit="cover"><a href="../../.gitbook/assets/37225415.png">37225415.png</a></td><td><a href="getting-started/mo2-mod-organizer-2.md">mo2-mod-organizer-2.md</a></td></tr></tbody></table>
 
 ***
 
@@ -60,13 +60,13 @@ If you had terrible experiences with Vortex for other games, be assured: Cyberpu
 "Manual install" is a glorified term for "extracting the downloaded archive into your game directory".
 
 {% hint style="danger" %}
-**You have to make sure that the right files end up in the correct folders.** \
-This method is very error prone, which is why we recommend using a mod manager.&#x20;
+**You have to make sure that the right files end up in the correct folders.**\
+This method is very error prone, which is why we recommend using a mod manager.
 {% endhint %}
 
 You can check the file structure by opening the downloaded file, or by using this feature on Nexus:
 
-<figure><img src="../../.gitbook/assets/installing-nexus-preview-file-structure (1).png" alt=""><figcaption><p>Some mod authors have this disabled, meaning you won't see this option on the mod page.</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/installing-nexus-preview-file-structure.png" alt=""><figcaption><p>Some mod authors have this disabled, meaning you won't see this option on the mod page.</p></figcaption></figure>
 
 {% hint style="warning" %}
 The file structure is different for REDmods and non-REDmods (often referred to as "`legacy`" mods). Mod authors usually tell you which type their mod is. To lean what the difference is, [read here](./#whats-the-difference).
@@ -76,9 +76,9 @@ The file structure is different for REDmods and non-REDmods (often referred to a
 
 ### What Are Requirements?
 
-A requirement (sometimes called "dependencies"), are mods that other mods rely on.&#x20;
+A requirement (sometimes called "dependencies"), are mods that other mods rely on.
 
-This means the mod you want to download **will not work** if you don't **download the listed requirements first**.&#x20;
+This means the mod you want to download **will not work** if you don't **download the listed requirements first**.
 
 For more detailed information, see [requirements-explained.md](../user-guide-troubleshooting/requirements-explained.md "mention").
 
@@ -105,10 +105,10 @@ Cyberpunk 2077 offers limited out-of-the-box support via REDmod. To allow greate
 {% hint style="warning" %}
 Since this kind of mod interacts with the game's executable (`.exe`), they will break every time CDPR updates.
 
-This is the reason why game updates break mods — although you can [**turn off auto-update**](users-downgrading-preventing-auto-updates.md) and only update your game once mods have updated.&#x20;
+This is the reason why game updates break mods — although you can [**turn off auto-update**](users-downgrading-preventing-auto-updates.md) and only update your game once mods have updated.
 
 \
-After each patch, you can find a post on our [Discord](https://discord.gg/redmodding) that is kept up-to-date as the modders update their tools.&#x20;
+After each patch, you can find a post on our [Discord](https://discord.gg/redmodding) that is kept up-to-date as the modders update their tools.
 
 Be aware that **once all the core mods have updated**, you will _not_ recieve support until you have **updated your game and all your core mods**.
 {% endhint %}
@@ -154,7 +154,7 @@ As a rule of thumb, here's which files go where (unless the mod's instructions t
 ## REDmod
 
 {% hint style="danger" %}
-#### Generally, you'll be told to avoid REDmod when possible. But why?
+**Generally, you'll be told to avoid REDmod when possible. But why?**
 
 **Compatibility issues**\
 REDmod was CDPR's attempt to standardize mod loading, but there were various compatibility issues with it, and it never quite took off. Most mod authors stick to "`legacy`" versions of mods.
@@ -165,9 +165,7 @@ REDmods are loaded after everything else, so that format is simply not an option
 **Vortex autoconvert**\
 In theory, Vortex can automatically convert legacy mods to REDmod. In practice, that didn't help with any of the compatibility issues mentioned before, and even caused some of them.
 
-
-
-#### **If you'd still like to know the difference, or there's a mod that only offers REDmod format and you cannot live without it, read on.**
+**If you'd still like to know the difference, or there's a mod that only offers REDmod format and you cannot live without it, read on.**
 {% endhint %}
 
 If REDmod is not installed and activated, your mods in `/mods` will not load.
@@ -187,9 +185,9 @@ By contrast, vanilla mods (from `/archive/pc/mod`) will be loaded individually a
 REDmods are installed in `Cyberpunk 2077\mods`, where every mod has a subfolder with an `info.json`.
 
 {% hint style="warning" %}
-If the mod contains only files inside the folder `archives`, you can un-REDmod-ify it by moving all of those files to `archive/pc/mod`.&#x20;
+If the mod contains only files inside the folder `archives`, you can un-REDmod-ify it by moving all of those files to `archive/pc/mod`.
 
-For a guide on the correct folder structure, [click here](./#fixing-broken-mod-file-paths).&#x20;
+For a guide on the correct folder structure, [click here](./#fixing-broken-mod-file-paths).
 {% endhint %}
 
 ***
@@ -197,7 +195,7 @@ For a guide on the correct folder structure, [click here](./#fixing-broken-mod-f
 ### Mod format: REDmod or Legacy?
 
 {% hint style="danger" %}
-#### If in doubt, install the non-REDmod (`"legacy"`) format. To learn why, read below.
+**If in doubt, install the non-REDmod (`"legacy"`) format. To learn why, read below.**
 {% endhint %}
 
 #### What's the difference?
@@ -209,19 +207,19 @@ All REDmods mods will be **preloaded** by `redMod.exe` before the game starts up
 <summary>REDmod when using Vortex</summary>
 
 {% hint style="danger" %}
-#### As of 2026, the Vortex "autoconvert" option **will break your mods**.&#x20;
+**As of 2026, the Vortex "autoconvert" option will break your mods.**
 
-In the 0.12.0 version of the Cyberpunk 2077 Vortex Extension, a bug was introduced that would **enable this toggle without warning**.&#x20;
+In the 0.12.0 version of the Cyberpunk 2077 Vortex Extension, a bug was introduced that would **enable this toggle without warning**.
 
 Thankfully, version 0.12.1 of the extension has squashed that bug, but Vortex will not automatically acknowledge the new version. [You can get version 0.12.1 here](https://www.nexusmods.com/site/mods/196).
 
-#### **How can I check my extension version?**
+**How can I check my extension version?**
 
 In Vortex, there's an "`Extensions`" tab on the left hand side. Click it.
 
 Check what it says under "`Version`" for the "`Cyberpunk2077`" extension.
 
-<p align="center"><img src="../../.gitbook/assets/vortex_ex_2.png" alt="" data-size="original"></p>
+<img src="../../.gitbook/assets/vortex_ex_2.png" alt="" data-size="original">
 
 If it says `0.12.1`, you're good to go!
 
@@ -233,7 +231,7 @@ Go back to your Vortex "`Extensions`" page
 
 Drop the zip you just downloaded into the box that says "`Drop File(s)`"
 
-<p align="center"><img src="../../.gitbook/assets/vortex_extension_page (2).png" alt="" data-size="original"></p>
+<img src="../../.gitbook/assets/vortex_extension_page (2).png" alt="" data-size="original">
 
 You need to go back into your "`V2077`" settings and **turn the toggle off**!
 
@@ -241,14 +239,12 @@ Go to your "`Mods`" page in Vortex, press `CTRL + A` on your keyboard (you may n
 
 A bar should pop up at the bottom. Click "`Reinstall`". It shouldn't take too long!
 
-<p align="center"><img src="../../.gitbook/assets/vortex_reinstall.png" alt="" data-size="original"></p>
+<img src="../../.gitbook/assets/vortex_reinstall.png" alt="" data-size="original">
 
 You should now be free of the autoconvert bug.
 {% endhint %}
 
 Vortex will let you define load order for REDmods. To support compatibility, it offers you automatic conversion.
-
-
 
 </details>
 
@@ -324,9 +320,9 @@ If you get stuck at all along the way, come ask us in [#mod-troubleshooting on t
 
 {% tabs %}
 {% tab title="Manually Fixing Folder Paths" %}
-<h4 align="center">Manually Fixing Folder Paths</h4>
+<p align="center"><strong>Manually Fixing Folder Paths</strong></p>
 
-1. Extract the `.zip`/`.rar`/`.7z` to your `Downloads` folder (or whichever folder you're working in).&#x20;
+1. Extract the `.zip`/`.rar`/`.7z` to your `Downloads` folder (or whichever folder you're working in).
 
 {% hint style="warning" %}
 You might get an extra unnecessary folder depending on where you extracted the folder to. If you want it to extract straight into the Downloads folder, remove the extra folder at the end of the path so it looks something like this:
@@ -340,7 +336,7 @@ In the case of Scenario 3 (pictured above), you can just move the folders out of
 
 ***
 
-2. You should now have the mod files inside your Downloads folder. \
+2. You should now have the mod files inside your Downloads folder.\
    Locate the files you want to move and check their file extensions.
 
 {% hint style="warning" %}
@@ -351,7 +347,7 @@ If you don't have file extensions turned on, you can check this part of the file
 
 ***
 
-3. We need to create the correct file path. This is an `.archive` file, so it needs to go into `archive/pc/mod`&#x20;
+3. We need to create the correct file path. This is an `.archive` file, so it needs to go into `archive/pc/mod`
 
 {% hint style="info" %}
 If you aren't sure where your file should go, check out [#mod-folders-by-file-extension](./#mod-folders-by-file-extension "mention").
@@ -359,7 +355,7 @@ If you aren't sure where your file should go, check out [#mod-folders-by-file-ex
 
 ***
 
-4. Create a folder by right clicking. Name it `archive`&#x20;
+4. Create a folder by right clicking. Name it `archive`
 
 ***
 
@@ -389,8 +385,6 @@ For our .archive you should have a folder path like this now:
 
 ***
 
-
-
 11. Go back to the Downloads folder (or any subfolder that holds the files we need to move)
 
 ***
@@ -402,7 +396,7 @@ For our .archive you should have a folder path like this now:
 13. Navigate back to the mod folder we created in step 8, then press CTRL + V (this pastes the files)
 
 {% hint style="info" %}
-Your file and folder structure should now look like this:&#x20;
+Your file and folder structure should now look like this:
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/fixedmodfolderpath_endresult.png" alt=""><figcaption></figcaption></figure>
@@ -422,9 +416,9 @@ If you're using a mod manager, skip this step and continue from the next one!
 <figure><img src="../../.gitbook/assets/howtomakezip.png" alt=""><figcaption><p>Send to -> Compressed (zipped) folder, a visual guide.</p></figcaption></figure>
 
 {% hint style="info" %}
-You can name the newly created .zip to whatever you want, but it is **recommended** you name it something identifying, like the **original mod name**, so you can easily find the mod on Nexus. \
+You can name the newly created .zip to whatever you want, but it is **recommended** you name it something identifying, like the **original mod name**, so you can easily find the mod on Nexus.\
 \
-&#xNAN;_&#x41;dding the mod to your mod manager this way means it won't be able to locate the mod on Nexus by itself, so naming it the same makes it easier for you in the future._
+\&#xNAN;_Adding the mod to your mod manager this way means it won't be able to locate the mod on Nexus by itself, so naming it the same makes it easier for you in the future._
 {% endhint %}
 
 ***
@@ -439,7 +433,7 @@ For Vortex, drag the `.zip` to the bottom of the `downloads` page and drop it th
 {% endtab %}
 
 {% tab title="Fixing Folder Paths in Vortex" %}
-<h4 align="center">Fixing Folder Paths in Vortex</h4>
+<p align="center"><strong>Fixing Folder Paths in Vortex</strong></p>
 
 1. Press _"Mod Manager Download"_ as you normally would.
 
@@ -459,7 +453,7 @@ For Vortex, drag the `.zip` to the bottom of the `downloads` page and drop it th
 
 ***
 
-4. You should get a popup that says "You have reached the fallback installer!". \
+4. You should get a popup that says "You have reached the fallback installer!".\
    Click "Yes, Install to staging anyway".
 
 <figure><img src="../../.gitbook/assets/Vortex Step 3.png" alt=""><figcaption></figcaption></figure>
@@ -480,7 +474,7 @@ For Vortex, drag the `.zip` to the bottom of the `downloads` page and drop it th
 
 ***
 
-7. The mod should now be under "Disabled." \
+7. The mod should now be under "Disabled."\
    Right click the mod name again to bring up the menu.
 
 ***
@@ -542,7 +536,7 @@ In this example, I want to use the "COOL VERSION", so I would click through the 
 
 ***
 
-17. Repeat this process for any other folders that contains files you **need** to make sure your mod works.&#x20;
+17. Repeat this process for any other folders that contains files you **need** to make sure your mod works.
 
 {% hint style="info" %}
 Don't worry, there's a table on this page <sub>(</sub>[<sub>here!</sub>](./#mod-folders-by-file-extension)<sub>)</sub> which shows the paths you need to create for each file type!
@@ -566,10 +560,10 @@ Don't worry, there's a table on this page <sub>(</sub>[<sub>here!</sub>](./#mod-
 {% endtab %}
 
 {% tab title="Fixing Folder Paths in MO2" %}
-<h4 align="center">Fixing Folder Paths in MO2</h4>
+<p align="center"><strong>Fixing Folder Paths in MO2</strong></p>
 
 It's recommend to set up your MO2 Installer to default to the **manual installer** instead of using the Simple Installer plugin.\
-MO2 already checks for a correct path and will warn you if the mod you are trying to install deviates from the expected structure, but removing the Simple Installer plugin helpful for both new users as well as MO2 veterans regardless. \
+MO2 already checks for a correct path and will warn you if the mod you are trying to install deviates from the expected structure, but removing the Simple Installer plugin helpful for both new users as well as MO2 veterans regardless.\
 It might seem like overkill, but it's a valuable tool to make sure the user checks for a working file structure - so the mod ends up where it's supposed to be!
 
 {% hint style="info" %}
@@ -578,7 +572,7 @@ If you are unsure where files should go, refer back to the "[Overview of mod fol
 
 ***
 
-<h4 align="center">Setting up your MO2 installer</h4>
+<p align="center"><strong>Setting up your MO2 installer</strong></p>
 
 1. Open your MO2 settings and click the `plugins` tab.
 
@@ -589,12 +583,12 @@ If you are unsure where files should go, refer back to the "[Overview of mod fol
 
 <figure><img src="../../.gitbook/assets/Screenshot 2.png" alt=""><figcaption></figcaption></figure>
 
-Now you can go to Nexus and download mods using the `Download with Manager` button as per usual! \
+Now you can go to Nexus and download mods using the `Download with Manager` button as per usual!\
 \
-Often times mod authors set a correct file structure, but due to how packaging works they end up with an additional folder that MO2 doesn't know how to handle. \
+Often times mod authors set a correct file structure, but due to how packaging works they end up with an additional folder that MO2 doesn't know how to handle.\
 \
-In these instances, you have to manually change the Cyberpunk 2077 directory in the installer. \
-This is explained in [Example #1](./#example-1-adjusting-the-cyberpunk-2077-directory) (below). \
+In these instances, you have to manually change the Cyberpunk 2077 directory in the installer.\
+This is explained in [Example #1](./#example-1-adjusting-the-cyberpunk-2077-directory) (below).\
 \
 To see how to create new folders from scratch, for mods that have no folder structure or are only partially correct, see [Example #2](./#example-2-creating-your-own-folders) (further down).
 
@@ -604,23 +598,23 @@ If you make a mistake you can cancel out of the installation process during any 
 
 ***
 
-<h4 align="center">Example #1: Adjusting the Cyberpunk 2077 directory</h4>
+<p align="center"><strong>Example #1: Adjusting the Cyberpunk 2077 directory</strong></p>
 
 1. MO2 is unhappy because it doesn't recognize a correct file path, due to an additional folder inside the mod.
 
-<figure><img src="../../.gitbook/assets/Screenshot 3 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 3.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-2. This is easily fixed by making MO2 recognise the additional folder as the Cyberpunk 2077 directory itself. \
+2. This is easily fixed by making MO2 recognise the additional folder as the Cyberpunk 2077 directory itself.\
    \
    Right click the folder and select "`Set as <cyberpunk 2077> directory`"
 
-<figure><img src="../../.gitbook/assets/Screenshot 4 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 4.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-3. Now we are left with the `.archive` file going into `Cyberpunk 2077/archive/pc/mod/` \
+3. Now we are left with the `.archive` file going into `Cyberpunk 2077/archive/pc/mod/`\
    \
    MO2 gives us the green light for the installation.\
    \
@@ -634,12 +628,12 @@ You should now be good to go! If MO2 isn't giving you the green light, or the fo
 
 ***
 
-<h4 align="center">Example #2: Creating your own folders</h4>
+<p align="center"><strong>Example #2: Creating your own folders</strong></p>
 
 1. MO2 doesn't recognize the file path due to the `.archive` having the incorrect folder structure.
 
 {% hint style="warning" %}
-All `.archive` files should be inside `archive/pc/mod/`. \
+All `.archive` files should be inside `archive/pc/mod/`.\
 For more info on where each file type should go, [you can check here](./#mod-folders-by-file-extension).
 {% endhint %}
 
@@ -647,14 +641,14 @@ For more info on where each file type should go, [you can check here](./#mod-fol
 
 ***
 
-2. Right click the `Cyberpunk 2077` directory. \
-   Select "`Create directory`".&#x20;
+2. Right click the `Cyberpunk 2077` directory.\
+   Select "`Create directory`".
 
-<figure><img src="../../.gitbook/assets/Screenshot 7 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 7.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-3. Name the new folder "`archive`" \
+3. Name the new folder "`archive`"\
    Press `OK`
 
 <figure><img src="../../.gitbook/assets/Screenshot 8.png" alt=""><figcaption></figcaption></figure>
@@ -663,26 +657,26 @@ For more info on where each file type should go, [you can check here](./#mod-fol
 You should now see something that looks like this:
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/Screenshot 9 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 9.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-4. Right click the `archive` directory. \
+4. Right click the `archive` directory.\
    Select "`Create directory`"
 
 ***
 
-5. Name the new folder "`pc`" \
+5. Name the new folder "`pc`"\
    Press `OK`
 
 ***
 
-6. Right click the `pc` directory. \
+6. Right click the `pc` directory.\
    Select "`Create directory`"
 
 ***
 
-7. Name the new folder "`mod`" \
+7. Name the new folder "`mod`"\
    Press `OK`
 
 {% hint style="success" %}
@@ -693,7 +687,7 @@ Your screen should now look like this:
 
 ***
 
-8. Drag the .archive file into the mod folder.&#x20;
+8. Drag the .archive file into the mod folder.
 
 {% hint style="success" %}
 MO2 should then give you the green light for installation.
@@ -707,7 +701,7 @@ You can finalise the process by clicking `OK` to install your mod!
 For bigger and more complicated mods - like those that come with multiple `.archive` files to choose between - you can use the checkmarks to enable/disable files and folders.
 
 You can also drag multiple files to the correct location.\
-Create your own structure (pictured above) and drag the files you need into the correct places while disabling unnecessary files.&#x20;
+Create your own structure (pictured above) and drag the files you need into the correct places while disabling unnecessary files.
 
 MO2 will ignore and ultimately not install them.
 {% endhint %}

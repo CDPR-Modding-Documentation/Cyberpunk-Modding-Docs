@@ -6,8 +6,8 @@ description: What is UV mapping and how does it work?
 
 ## Summary
 
-**Published:** Jan 21 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Jan 21 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** Jan 21 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented update:** Jan 21 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page contains the theory of how to connect meshes (3d objects) with textures (which are 2d after all)
 
@@ -18,7 +18,7 @@ This page contains the theory of how to connect meshes (3d objects) with texture
 
 ## What is "UV mapping" and can I eat it?
 
-This is the technical term for the process of mapping a flat texture on your three-dimensional object. The most hands-on example for this is Christmas chocolate:&#x20;
+This is the technical term for the process of mapping a flat texture on your three-dimensional object. The most hands-on example for this is Christmas chocolate:
 
 <figure><img src="../../.gitbook/assets/uv_mapping_chocolate.png" alt=""><figcaption></figcaption></figure>
 
@@ -30,9 +30,9 @@ Regardless of that, **you can not eat it**.
 To look at an object's UV mapping, you'll have to fire up Blender (or a 3d editing software of your choice).
 {% endhint %}
 
-&#x20;An object's UV maps are visible in the Data tab:
+An object's UV maps are visible in the Data tab:
 
-<figure><img src="../../.gitbook/assets/delete_extra_uv_map (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/delete_extra_uv_map.png" alt=""><figcaption></figcaption></figure>
 
 ## How do I edit the UV mapping?
 
@@ -63,4 +63,3 @@ You can **pin** the edges of the UV map and then unwrap everything inside by ang
 If you work with UV mappings, you should definitely check out MioUV. It automates a bunch of things that used to take the better part of an afternoon:
 
 <div><figure><img src="../../.gitbook/assets/blender_gridify_orient_edges.webp" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_gridify_unwrap.webp" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_rectify_unwrap.webp" alt=""><figcaption></figcaption></figure> <figure><img src="../../.gitbook/assets/blender_straight_unwrap.webp" alt=""><figcaption></figcaption></figure></div>
-

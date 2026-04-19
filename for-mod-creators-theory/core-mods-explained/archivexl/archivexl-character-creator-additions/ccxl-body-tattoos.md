@@ -76,7 +76,7 @@ The textures are inside the `textures` folder. They are loaded by the `.mi` file
 
 If you want to tweak the parameters, make sure to edit this file (we will look at it in more detail later).
 
-<div align="left"><figure><img src="../../../../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
 You can learn more about meshes and materials on the [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") page, and about .mi files under [re-using-materials-.mi.md](../../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention").

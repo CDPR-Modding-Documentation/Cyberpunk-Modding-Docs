@@ -314,9 +314,9 @@ I am adding 2 more layers, low density, with large push out values.
 
 <summary>Screenshots of my layers</summary>
 
-![](<../../../.gitbook/assets/image (65) (1).png>) ![](../../../.gitbook/assets/image-1.png)
+![](<../../../.gitbook/assets/image (462).png>) ![](../../../.gitbook/assets/image-1.png)
 
-![](<../../../.gitbook/assets/image (67) (1).png>) ![](<../../../.gitbook/assets/image (464).png>)
+![](<../../../.gitbook/assets/image (463).png>) ![](<../../../.gitbook/assets/image (464).png>)
 
 To create the 4th layer, I used a Set Radius deformer. It allows you to control the width of cards, without needing to make the profile unique.
 

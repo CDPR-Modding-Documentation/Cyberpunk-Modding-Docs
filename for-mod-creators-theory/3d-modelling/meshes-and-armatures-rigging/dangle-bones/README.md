@@ -22,7 +22,7 @@ Dangle bones are a 'chain' of linked bones which are used by the game engine to 
 \
 The image below depicts how a dangle skeleton looks. The .animgraph will move the dangle bone chains, which are connected to the mesh using weights, which will then in turn animate the mesh.
 
-<figure><img src="../../../../.gitbook/assets/image (93) (1).png" alt=""><figcaption><p>Modern_bob mesh with it's dangle skeleton</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (52).png" alt=""><figcaption><p>Modern_bob mesh with it's dangle skeleton</p></figcaption></figure>
 
 ## Transfering a skeleton and weights
 

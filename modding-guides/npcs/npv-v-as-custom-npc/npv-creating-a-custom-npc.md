@@ -159,7 +159,7 @@ When changing component names, you want to leave the [#component-prefixes](../..
 
 An .app file holds a number of **appearances**. These are connected by **name** to your entity file:
 
-<figure><img src="../../../.gitbook/assets/npv_ent_to_app (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/npv_ent_to_app.png" alt=""><figcaption></figcaption></figure>
 
 Inside each `appearanceDefinition` (appearance for short), the `components` array defines your NPC's properties. This is where the game is told to pull in facial expressions, animations, hair, skin, and equipment.
 

@@ -108,7 +108,7 @@ Draw your scar : I know this is not a simple scar if I have done this one, it's 
 
 Save your scar as a .PNG.
 
-It's time for the baking part, you will need a bump map converter, I use [CrazyBump](https://www.youtube.com/watch?v=x_5suERXhRw\&list=PLKC44ub7XfxmFwTiVLIvgcahWheRXiFGO) which is the best in my opinion I will teach you how to convert your diffuse map with Crazy Bump.&#x20;
+It's time for the baking part, you will need a bump map converter, I use [CrazyBump](https://www.youtube.com/watch?v=x_5suERXhRw\&list=PLKC44ub7XfxmFwTiVLIvgcahWheRXiFGO) which is the best in my opinion I will teach you how to convert your diffuse map with Crazy Bump.
 
 <mark style="color:red;">Cyberpunk 2077 use Direct X normal map so becareful to generate the good type of normal map</mark>
 
@@ -118,7 +118,7 @@ Download it and when you are in , click on "Open photograph from file".
 
 Choose your png file of the diffuse map.
 
-<figure><img src="../../../.gitbook/assets/image (501) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (511).png" alt=""><figcaption></figcaption></figure>
 
 Choose a shape, personally I will pick the right one
 
@@ -126,13 +126,13 @@ Choose a shape, personally I will pick the right one
 
 Make those sliders slide the way you want and then "save normals to file"
 
-<figure><img src="../../../.gitbook/assets/image (505) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (513).png" alt=""><figcaption></figcaption></figure>
 
 Now you will need to go on WolvenKit, replace with "Replace Texture" your normal map with the new one you just baked.
 
 {% tabs %}
 {% tab title="Replace" %}
-<figure><img src="../../../.gitbook/assets/image (507) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (514).png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Result" %}

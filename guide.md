@@ -762,19 +762,19 @@ Use the stepper below to perform the bisect (binary search) in the folder you id
 
 {% stepper %}
 {% step %}
-### Step 1 — Backup the folder
+#### Step 1 — Backup the folder
 
 Re-name it by adding a \_ to its name (e.g. `mods` => `mods_`). This is your **backup**.
 {% endstep %}
 
 {% step %}
-### Step 2 — Create a clean game folder
+#### Step 2 — Create a clean game folder
 
 Create a new empty folder with the old name. This is the **game folder**.
 {% endstep %}
 
 {% step %}
-### Step 3 — Move half the contents
+#### Step 3 — Move half the contents
 
 Move **half** of the folder content (files and folders) from the backup to the game folder.
 

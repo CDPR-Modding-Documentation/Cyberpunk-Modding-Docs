@@ -58,7 +58,7 @@ _The vanilla size are 1024x1024, I have upscaled mine to 4096x4096, but that's p
 
 1. You will need to erase one of the pre-existing scars. Use the pipette tools and take the same color as the background.
 
-<div align="left"><figure><img src="../../../.gitbook/assets/image (377) (1).png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (206).png" alt=""><figcaption></figcaption></figure></div>
 
 2. Add a new layer and paint over this part of the image.
 
@@ -82,7 +82,7 @@ The scar replaced spans the entire face, so this is the best scar to replace. To
 5. Copy the entire layer (Hotkey: `Ctrl+A`, `Ctrl+C`)
 6. In the Layers Palette, select the _**red**_ channel and paste your scar. The image will now be black and white.
 
-![](<../../../.gitbook/assets/6 (1) (1).png>)
+![](../../../.gitbook/assets/6.png)
 
 7. In the Layers Palette, select all three channels (or RGB) to see colours again.
 8. Now you need to turn your image green. There are various ways to do that, for example Image -> Adjustments -> Hue/Saturation.
@@ -130,6 +130,6 @@ To remedy this problem, create a new project and obtain the 4 file types as seen
 {% endtab %}
 
 {% tab title="Strange square shadow" %}
-<div align="left"><figure><img src="../../../.gitbook/assets/image (267) (1).png" alt="" width="315"><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../.gitbook/assets/image (182).png" alt="" width="315"><figcaption></figcaption></figure></div>
 {% endtab %}
 {% endtabs %}

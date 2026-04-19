@@ -6,10 +6,10 @@ description: How to merge two or more existing tattoos
 
 ## Summary
 
-**Published**: Feb 03 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), initial guide by Yggnire\
+**Published**: Feb 03 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), initial guide by Yggnire\
 **Last documented edit**: 18 May 2024 by YoursTrulyBilly
 
-This guide will teach you how to merge multiple tattoos into one.&#x20;
+This guide will teach you how to merge multiple tattoos into one.
 
 For this example, we'll be merging two **VTK** tattoos from [Belly Tattoos Pack](https://www.nexusmods.com/cyberpunk2077/mods/9246) and [Low Back Tattoo Pack](https://www.nexusmods.com/cyberpunk2077/mods/14557) by [Yggnire](https://www.nexusmods.com/cyberpunk2077/users/54960262)
 
@@ -45,11 +45,9 @@ The guide is extremely detailed and has screenshots for each step!
 To see which files you need to edit, check this: [overlay-list.md](../converting-between-tattoo-frameworks/overlay-list.md "mention").
 {% endhint %}
 
-
-
 ## Step 1: Create a Wolvenkit Project:
 
-Depending on the supported framework, you need to name your project like this:&#x20;
+Depending on the supported framework, you need to name your project like this:
 
 | Framework | Prefix | Example name         |
 | --------- | ------ | -------------------- |
@@ -60,7 +58,7 @@ If you don't know how to create a project, you can look it up on the [Wolvenkit 
 
 ## Step 2: Add the modded files
 
-Switch the [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#using-the-asset-browser) tab to [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) and find the two archives that you want to merge.&#x20;
+Switch the [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#using-the-asset-browser) tab to [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) and find the two archives that you want to merge.
 
 You'll have to add `v_overlay.xbm` from inside these .archives [to your Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#adding-files-to-projects). Since they'll overwrite each other, read on to find out how to do that.
 
@@ -86,7 +84,7 @@ It's best to rename each tattoo after adding to make it easier for you to know w
 5. Add the file `v_overlay.xbm` again — this will be your final overlay.xbm
 
 {% hint style="success" %}
-If you want to merge into a clean template, check [merging-existing-tattoos-into-a-clean-template.md](merging-existing-tattoos-into-a-clean-template.md "mention").&#x20;
+If you want to merge into a clean template, check [merging-existing-tattoos-into-a-clean-template.md](merging-existing-tattoos-into-a-clean-template.md "mention").
 {% endhint %}
 
 ## Step 3: Export for edit
@@ -94,8 +92,6 @@ If you want to merge into a clean template, check [merging-existing-tattoos-into
 1. Go to [Tools > Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool). You only need to export three of the files, but you can click `Export All`:
 
 <div><figure><img src="../../../../.gitbook/assets/Screenshot 2024-05-18 152356.png" alt=""><figcaption></figcaption></figure> <figure><img src="../../../../.gitbook/assets/Screenshot 2024-05-18 152425.png" alt=""><figcaption></figcaption></figure></div>
-
-
 
 2. You can now find the exported .png files in `source\raw\base\v_textures\body`. Time to look at them.
 3. If you can't see the files in the [Project Explorer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer), switch it to either [source](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#source) or [raw](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw), or just navigate your Windows Explorer to the folder.
@@ -112,7 +108,7 @@ If you don't have photoshop, you can use [photopea.com](https://www.photopea.com
 
 <summary>I need a reference!</summary>
 
-You can download [Night City Tattoos](https://www.nexusmods.com/cyberpunk2077/mods/1155?tab=files), specifically the Layout Templates For Custom Tattoos:&#x20;
+You can download [Night City Tattoos](https://www.nexusmods.com/cyberpunk2077/mods/1155?tab=files), specifically the Layout Templates For Custom Tattoos:
 
 <img src="../../../../.gitbook/assets/Screenshot 2024-05-18 152819.png" alt="" data-size="original">
 
@@ -122,7 +118,7 @@ If you need the body texture as a reference, check [merging-existing-tattoos-int
 
 </details>
 
-1. Open `lowbacktattoo.png` in Photoshop.&#x20;
+1. Open `lowbacktattoo.png` in Photoshop.
 2. Drag-and-drop the second file (`skulltattoo.png`) into your open tab.
 3. **Optional:** If the pictures aren't the same size, use the `W`: box at the top of the file to scale it up or down.
 
@@ -138,10 +134,10 @@ If you need the body texture as a reference, check [merging-existing-tattoos-int
 We have one last thing to do before we can import our file back, and that is **fixing the transparency**. Don't worry, we'll do it step-by-step:
 
 1. Ctrl+click on the thumbnail in the layer palette. This will select everything, considering transparency.\
-   &#x20;![](../../../../.gitbook/assets/select_current_layer.png)
+   ![](../../../../.gitbook/assets/select_current_layer.png)
 2. Find the `Channels` palette. It should be right below your Layers palette, but if it's not, you might have to turn it on via **Window -> Channels**
 3. At the bottom of the Channels palette, click the "Save selection as channel" icon. This will create "Alpha 1":\
-   ![](<../../../../.gitbook/assets/merging_textures_alpha_channel (1).png>)
+   ![](../../../../.gitbook/assets/merging_textures_alpha_channel.png)
 
 #### Exporting
 
@@ -151,7 +147,7 @@ We have one last thing to do before we can import our file back, and that is **f
 ## Step 6: Importing into Wolvenkit
 
 1. Return to WolvenKit, and open the [Import Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#import-tool)
-2. Find  and select v\_overlay.png
+2. Find and select v\_overlay.png
 3. In the sidebar, make sure that `Transparency from alpha channel` is checked
 4. Import!
 5. Check the files in Wolvenkit. They should have changed.
@@ -160,7 +156,7 @@ We have one last thing to do before we can import our file back, and that is **f
 ## Step 7: Testing the mod
 
 1. Make sure that **no other tattoo mods** are installed — or there's a chance that you'll get to see those, rather than your new edit.
-2. [Install your mod](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch). Time to test!&#x20;
+2. [Install your mod](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch). Time to test!
 
 <figure><img src="../../../../.gitbook/assets/Screenshot 2024-05-18 153418.png" alt=""><figcaption></figcaption></figure>
 

@@ -6,7 +6,7 @@ description: How to add custom preview images by using a custom .inkatlas file
 
 ## Summary
 
-**Uploaded:** ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Uploaded:** ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** Mar 18 2024 **by** [yellingintothevoid](https://www.nexusmods.com/users/127630298)
 
 This guide will teach you how to make custom inventory preview icons.
@@ -54,7 +54,7 @@ You need to know the correct dimensions for your images:
 
 ## Taking preview pictures
 
-You have two options on taking preview pictures. Both are relatively tedious, since you have to do it by hand.&#x20;
+You have two options on taking preview pictures. Both are relatively tedious, since you have to do it by hand.
 
 You can find more detail about how to take preview pictures in [#blender](./#blender "mention") or [#in-game](./#in-game "mention") further down the section.
 
@@ -72,7 +72,7 @@ You can find more detail about how to take preview pictures in [#blender](./#ble
 
 1. Strip V nekkid, then put on the [Invisibility Cloak](https://www.nexusmods.com/cyberpunk2077/mods/8412) and the item you want to create previews of
 2. Use [AMM](https://www.nexusmods.com/cyberpunk2077/mods/7436) to spawn "Photo Studio: Wall Cover" from the [Photo Studio Props](https://www.nexusmods.com/cyberpunk2077/mods/7436)
-3. Set the appearance to `white (matte)`&#x20;
+3. Set the appearance to `white (matte)`
 4. Switch to photo mode. Find a good angle and lighting for your item.
 5. Use [ACM](https://www.nexusmods.com/cyberpunk2077/mods/10795) to set the item's appearance to the darkest variant (e.g. `black`)
 6. Take a screenshot. You will use this for **masking**.
@@ -86,13 +86,13 @@ You can find more detail about how to take preview pictures in [#blender](./#ble
 1. Open the dark item on the white background in photoshop or [photopea](https://www.photopea.com/)
 2. Drag all the other pictures you took on top of it. The items must be in the same space!
 3. In the **Layers** panel (bottom right)
-   1. &#x20;create a group and put all the layers inside
+   1. create a group and put all the layers inside
    2. Drag the layer of the white background picture to the top, and select it (click on it)
 4. Press `W` to select the **Magic Wand** tool
 5. From the top bar, use the `Select Subject` button
 6. Optional: use the Select and Mask view to fine tune your selection
 7. Confirm. You now have a selection that includes only your item.
-8. In the Layers panel (bottom right),&#x20;
+8. In the Layers panel (bottom right),
    1. select the group (folder) by clicking on it
    2. create a layer mask by clicking on the icon that looks like the Japanese flag
 9. The background will now be transparent
@@ -230,18 +230,16 @@ You can use [AppearanceCreatorMod](https://www.nexusmods.com/cyberpunk2077/mods/
 Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite well usually. Highly depends on how intricate your item is.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/icon_tutorial_06_mask_select_comparison (1).png" alt=""><figcaption><p>Before / After</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/icon_tutorial_06_mask_select_comparison.png" alt=""><figcaption><p>Before / After</p></figcaption></figure>
 
 8. Duplicate the Layer Mask onto your other layers.
 9. From here on out, you can play around with a bunch of Adjustment Layers with Clipping Masks for each of your layers/appearances. I recommend some Levels Adjustments to set proper black and white points, as well as Black & White Adjustment Layers for items that are black, grey, silver or white and so on.
 10. Once you're done with that, select each layer and its Adjustment Layers, right click them, and select "Convert to Smart Object".
 11. Give each layer a meaningful name and save your image as a `.psd`.
 
-| Adjustment Layers                                                          | Converted to Smart Objects                                             |
-| -------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
-| ![](<../../../.gitbook/assets/icon_tutorial_07_adjustment_layers (1).png>) | ![](<../../../.gitbook/assets/icon_tutorial_08_smart_objects (1).png>) |
-
-
+| Adjustment Layers                                                    | Converted to Smart Objects                                       |
+| -------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| ![](../../../.gitbook/assets/icon_tutorial_07_adjustment_layers.png) | ![](../../../.gitbook/assets/icon_tutorial_08_smart_objects.png) |
 
 #### Creating The Actual Icon
 
@@ -252,7 +250,7 @@ Smooth <5, Feather <1, Contrast 30-50, and Shift Edge of around -30% works quite
 5. Now save the image as a `.png` in the raw folder of your WolvenKit project.
 6. Import the `.png` into your WolvenKit project with the `TEXG_Generic_UI` `TextureGroup` setting and make sure that "Transparency from alpha channel" is enabled.
 
-<figure><img src="../../../.gitbook/assets/icon_tutorial_09_align_icons (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/icon_tutorial_09_align_icons.png" alt=""><figcaption></figcaption></figure>
 
 ## Generating the inkatlas
 
@@ -266,12 +264,11 @@ If you're missing the menu entry, you need to update Wolvenkit (download [stable
 The .png files need to be named exactly like the `atlasPartName` property in the yaml.
 {% endhint %}
 
-In Wolvenkit, select File -> Add Files... -> Generate .inkatlas \
+In Wolvenkit, select File -> Add Files... -> Generate .inkatlas\
 ![](../../../.gitbook/assets/boe6_icons_inkatlas_1.png)
 
 2. Fill the dialogue like this:\
-   ![](../../../.gitbook/assets/inkatlas_generation_icon_page.png)\
-
+   ![](../../../.gitbook/assets/inkatlas_generation_icon_page.png)\\
 3. Click the "Finish" button
 4. Wolvenkit has generated two new .png files for you. Import them via the Import Tool.
 5. Check your newly-generated inkatlas. You should see a preview, and everything should in general be fine.

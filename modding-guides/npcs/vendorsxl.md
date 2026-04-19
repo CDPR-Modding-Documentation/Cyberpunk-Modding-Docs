@@ -139,7 +139,7 @@ Looking at the third block of text in the World Inspector, we can see the entity
 
 ### appearanceName:
 
-Choose an appearance, you can either use the current NPC appearance or you can choose an existing appearance from the entity, to view alternative appearances I recommend using  as it will allow you to preview the different appearances in your game.\
+Choose an appearance, you can either use the current NPC appearance or you can choose an existing appearance from the entity, to view alternative appearances I recommend using as it will allow you to preview the different appearances in your game.\
 \
 If you do not already have Appearance Menu Mod installed, you can download it on Nexus Mods.\
 \
@@ -331,16 +331,16 @@ Now that I have found the name that I want to use "Florence" I will copy & paste
 
 Deciding what pose you want your vendor to have, the pose is applied via .workspot, if you are unhappy with the default '.workspot' you can search in WolvenKit to find alternatives.\
 \
-Open a WolvenKit project and navigate to the Asset Browser, You can type different things to find '.workspots, some useful examples are, 'stand', 'lean', 'sit', 'kneel', 'dirt', 'ground' etc. \
+Open a WolvenKit project and navigate to the Asset Browser, You can type different things to find '.workspots, some useful examples are, 'stand', 'lean', 'sit', 'kneel', 'dirt', 'ground' etc.\
 \
 For this example I found a workspot by searching 'stand ground':
 
 <div data-full-width="true"><figure><img src="../../.gitbook/assets/VendorsXL_Workspot.png" alt=""><figcaption><p>bodyguard__stand_ground__2h_back__01.workspot</p></figcaption></figure></div>
 
-Once you've found a '.workspot' that sounds suitable,  update your .yaml with the '.workspot' path.\
+Once you've found a '.workspot' that sounds suitable, update your .yaml with the '.workspot' path.\
 For this tutorial we are going to use the default '.workspot' however you can change it for your vendor.\
 \
-&#xNAN;_<mark style="color:yellow;">You can get the '.workspot' path by right clicking the file in WolvenKit and clicking 'Copy Relative Path'</mark>_
+\&#xNAN;_<mark style="color:yellow;">You can get the '.workspot' path by right clicking the file in WolvenKit and clicking 'Copy Relative Path'</mark>_
 
 {% code fullWidth="true" %}
 ```yaml
@@ -389,8 +389,6 @@ Adding items to your vendors catalogue is simple, you just update the .yaml with
 \
 To find Base ID's for vanilla items you can refer to the [Equipment Databases](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/references-lists-and-overviews/equipment/equipment-databases) page. For this tutorial I will be using the [Cyberpunk 2077 Item Hash List](https://onedrive.live.com/view.aspx?resid=EF6891140DE637B3%21221903\&authkey=!AE_n4RTzwmVHwy8) to find the items I want.
 
-
-
 {% embed url="https://docs.google.com/spreadsheets/d/1enmQ0G94KSUhM31JoZBhYhpkmDKbBAW_D3rREk4dtWc/edit?usp=sharing" %}
 
 I have chosen to add 'Erebus', 'Errata' & 'Fang' to my vendors catalogue.\
@@ -399,7 +397,7 @@ Filter your search in the [Cyberpunk 2077 Item Hash List](https://onedrive.live.
 \
 <mark style="color:yellow;">Keep in mind that there are tabs for different categories, so you may need to switch tabs.</mark>
 
-<figure><img src="../../.gitbook/assets/florence_tabs (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/florence_tabs.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/florence_filter.png" alt=""><figcaption><p>Press [Ctrl] + [F] in the <a href="https://onedrive.live.com/view.aspx?resid=EF6891140DE637B3%21221903&#x26;authkey=!AE_n4RTzwmVHwy8">Cyberpunk 2077 Item Hash List</a> to filter your search.</p></figcaption></figure>
 
@@ -426,7 +424,7 @@ Once your .yaml is updated, the items will be availible in the vendors catalogue
 
 Before starting the game to view the '.workspot' ( Appearance / Pose ), The VendorID needs to be updated as the .ent in this example is using an existing vendor & their inventory.\
 \
-&#xNAN;_<mark style="color:yellow;">If you are using a custom '.ent' you can skip this step.</mark>_\
+\&#xNAN;_<mark style="color:yellow;">If you are using a custom '.ent' you can skip this step.</mark>_\
 \
 To find a specific VendorID you can use cheat sheet made by [<mark style="color:yellow;">manavortex</mark>](https://next.nexusmods.com/profile/manavortex): [Cheat Sheet: Vendor ID's](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/cheat-sheet-vendor-ids)\
 Find out what location the vendor is from, you can either do this by looking at the map, or you can refer back to the World Inspector overview to see what district & area the vendor is from.\

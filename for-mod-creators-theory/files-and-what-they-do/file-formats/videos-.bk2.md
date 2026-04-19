@@ -4,17 +4,13 @@ description: Editing and Replacing videos in CyberPunk 2077 with RAD Video Tools
 
 # Videos: .bk2
 
-
-
 <figure><img src="../../../.gitbook/assets/bk2 viktor workshop.png" alt="Viktor in his shop watching a modified video edit" width="563"><figcaption></figcaption></figure>
-
-
 
 This wiki page is about the .bk2 file format used in the game, and how to edit them.
 
 ## TL;DR
 
-The .bk2 file format is used in many games including Cyberpunk 2077. It stands for [Bink 2 By Rad Tools ](https://www.radgametools.com/bnkmain.htm)and needs to be used to extract and recompress the video that you want to replace.&#x20;
+The .bk2 file format is used in many games including Cyberpunk 2077. It stands for [Bink 2 By Rad Tools ](https://www.radgametools.com/bnkmain.htm)and needs to be used to extract and recompress the video that you want to replace.
 
 Converting to back to .bk2 requires a [byte offset](videos-.bk2.md#byte-offset-requirement) for the video to appear in the game.
 
@@ -26,9 +22,9 @@ Converting to back to .bk2 requires a [byte offset](videos-.bk2.md#byte-offset-r
 
 ## Selecting A Video File
 
-[Searching in the asset browser](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files) for .bk2 files will get you every video in the game. For this tutorial we will be using the boxing video (`q001_boxinggame.bk2`)&#x20;
+[Searching in the asset browser](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files) for .bk2 files will get you every video in the game. For this tutorial we will be using the boxing video (`q001_boxinggame.bk2`)
 
-Visit Viktor's RipperDoc, the boxing video consistently plays on his screen for easy testing.&#x20;
+Visit Viktor's RipperDoc, the boxing video consistently plays on his screen for easy testing.
 
 <figure><img src="../../../.gitbook/assets/bk2 wolvenkit.png" alt="asset browser"><figcaption></figcaption></figure>
 
@@ -36,7 +32,7 @@ Visit Viktor's RipperDoc, the boxing video consistently plays on his screen for 
 
 ### Locating Video File on Your Computer
 
-Click: Open In Windows Explorer   &#x20;
+Click: Open In Windows Explorer
 
 <figure><img src="../../../.gitbook/assets/bk2 wolvenkit (1).png" alt="project file selection"><figcaption></figcaption></figure>
 
@@ -58,9 +54,9 @@ Converting to MP4 file format
 
 ### Output Options
 
-<figure><img src="../../../.gitbook/assets/bk2 rad tool (2).png" alt="RAD Tools"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/bk2 rad tool (1).png" alt="RAD Tools"><figcaption></figcaption></figure>
 
-1. Convert&#x20;
+1. Convert
 2. Defaults to MP4, keep it.
 
 ### <mark style="color:$warning;">Video Specifications:</mark>
@@ -71,11 +67,9 @@ Converting to MP4 file format
 
 **Size:** 480p
 
-**FPS:** 15fps is the game speed, 30fps is possible, but not recommended.&#x20;
+**FPS:** 15fps is the game speed, 30fps is possible, but not recommended.
 
 <figure><img src="../../../.gitbook/assets/bk2 rad tool (5).png" alt="RAD Tools"><figcaption></figcaption></figure>
-
-
 
 <figure><img src="../../../.gitbook/assets/bk2 rad tool (6).png" alt="RAD Tools"><figcaption></figcaption></figure>
 
@@ -85,9 +79,9 @@ Converting to MP4 file format
 
 For reasons unknown, CyberPunk requires the **4th byte** of your .bk2 file to to be changed to: `6A`
 
-Once your bk2 file has been created, you will need to edit the file with a hex editor.&#x20;
+Once your bk2 file has been created, you will need to edit the file with a hex editor.
 
-[HxD](https://mh-nexus.de/en/hxd/) is a good windows solution that is free. <br>
+[HxD](https://mh-nexus.de/en/hxd/) is a good windows solution that is free.<br>
 
 ![hxd byte offset](<../../../.gitbook/assets/bk2 byte offset (1).png>)
 
@@ -99,15 +93,13 @@ Since the working directory is Archive, there is no need to import.
 
 ### Resources:
 
-[YouTube Video](https://www.youtube.com/watch?v=FUtSw5VsNzI) for more on RAD Tools.&#x20;
+[YouTube Video](https://www.youtube.com/watch?v=FUtSw5VsNzI) for more on RAD Tools.
 
 [Discord](https://discord.gg/redmodding) community.
 
-
-
 ### <mark style="color:green;">Python Script</mark>: Automate byte offset all .bk2 files
 
-This will automatically change the byte offset in all your .bk2 files at once in the working directory and subdirs. <br>
+This will automatically change the byte offset in all your .bk2 files at once in the working directory and subdirs.<br>
 
 {% code expandable="true" %}
 ```python
@@ -164,9 +156,4 @@ if __name__ == "__main__":
 ```
 {% endcode %}
 
-
-
-**Authors note**: Thank you to `Dark Fortune Teller on` [Discord](https://discord.gg/redmodding) for doing the hard work finding about the Byte offset&#x20;
-
-
-
+**Authors note**: Thank you to `Dark Fortune Teller on` [Discord](https://discord.gg/redmodding) for doing the hard work finding about the Byte offset

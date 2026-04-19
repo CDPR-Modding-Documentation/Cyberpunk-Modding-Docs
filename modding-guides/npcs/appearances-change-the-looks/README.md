@@ -58,7 +58,7 @@ You can try finding your NPC's .ent file on [people](../../../for-mod-creators-t
 
 Point your [Asset Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser) to the file you have found. We want to find the .app file and add it to our project. You can right-click on the .ent file and select [Find used files](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-used-files), or you look up the path in the .ent file:
 
-<figure><img src="../../../.gitbook/assets/app_modification_guide_ent_file (1).png" alt=""><figcaption><p>If you are using <a href="https://www.nexusmods.com/cyberpunk2077/mods/790">Appearance Menu Mod</a>, this list will look familiar.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/app_modification_guide_ent_file.png" alt=""><figcaption><p>If you are using <a href="https://www.nexusmods.com/cyberpunk2077/mods/790">Appearance Menu Mod</a>, this list will look familiar.</p></figcaption></figure>
 
 ## The .app file
 

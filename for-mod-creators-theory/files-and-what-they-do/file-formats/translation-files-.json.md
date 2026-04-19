@@ -9,17 +9,15 @@ description: How Cyberpunk localization works
 **Created:** Oct 06 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** Oct 06 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page explains&#x20;
+This page explains
 
 * how the game uses .json files
 * how you can [add your own translations](translation-files-.json.md#adding-translations-with-archivexl)
 * how you can [change existing translations](translation-files-.json.md#overwriting-existing-entries)
 * how you can support [multiple languages](translation-files-.json.md#adding-multiple-languages)
 
-
-
 {% hint style="info" icon="question" %}
-### Wait, this is not what I want!
+#### Wait, this is not what I want!
 
 * For a more detailed guide, check [how-to-translate-a-mod.md](../../../modding-guides/everything-else/how-to-translate-a-mod.md "mention")
 {% endhint %}

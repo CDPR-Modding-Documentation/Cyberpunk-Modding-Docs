@@ -37,7 +37,7 @@ We will focus on the main one and take a look at the first sector inside (`exter
 When creating a mod with sectors, you will need to create your own block that will list your new sectors.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/world_streamingsector__block (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/world_streamingsector__block.png" alt=""><figcaption></figcaption></figure>
 
 This sector has 10 variants, in this case, each one is related to a quest state.
 

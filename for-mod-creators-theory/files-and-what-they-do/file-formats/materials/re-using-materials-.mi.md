@@ -13,7 +13,7 @@ This guide will teach you how you can use `.mi` files to re-use materials across
 ###
 
 {% hint style="info" icon="question" %}
-### Wait, this is not what I want!
+#### Wait, this is not what I want!
 
 * To learn how materials work in the first place, check [3d-objects-.mesh-files](../3d-objects-.mesh-files "mention") -> [3d-objects-.mesh-files](../3d-objects-.mesh-files#material-assignment "mention")
 * You can find [configuring-materials](../../../materials/configuring-materials/ "mention") documented in their own wiki section

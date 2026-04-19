@@ -16,7 +16,7 @@ While it is _possible_ to install mods by hand, we recommend using a mod manager
 
 This guide will walk you through installing and configuring your game. If you have already done that, you can configure the mod manager of your choice:
 
-<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><h4>Vortex</h4></td><td data-object-fit="contain"><a href="../../../.gitbook/assets/vortex-logomark.png">vortex-logomark.png</a></td><td><a href="vortex-mod-manager.md">vortex-mod-manager.md</a></td></tr><tr><td align="center"><h4>Mod Organizer 2</h4></td><td><a href="../../../.gitbook/assets/37225415.png">37225415.png</a></td><td><a href="mo2-mod-organizer-2.md">mo2-mod-organizer-2.md</a></td></tr></tbody></table>
+<table data-card-size="large" data-view="cards"><thead><tr><th align="center"></th><th data-hidden data-card-cover data-type="image">Cover image</th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td align="center"><strong>Vortex</strong></td><td data-object-fit="contain"><a href="../../../.gitbook/assets/vortex-logomark.png">vortex-logomark.png</a></td><td><a href="vortex-mod-manager.md">vortex-mod-manager.md</a></td></tr><tr><td align="center"><strong>Mod Organizer 2</strong></td><td><a href="../../../.gitbook/assets/37225415.png">37225415.png</a></td><td><a href="mo2-mod-organizer-2.md">mo2-mod-organizer-2.md</a></td></tr></tbody></table>
 
 {% hint style="info" %}
 To learn how to install mods, check [Using Mods](../)
@@ -56,7 +56,7 @@ For the purpose of this guide, we will assume the following install paths:
 #### Permissions
 
 {% hint style="warning" %}
-Folder permissions **can** cause problems down the line, especially for Windows users.&#x20;
+Folder permissions **can** cause problems down the line, especially for Windows users.
 
 Most users never run into these, but you can prevent them altogether by installing your game to a folder like `C:\Games` rather than `C:\Program Files.`
 {% endhint %}
@@ -65,8 +65,8 @@ By default, all three platforms (GOG, Steam, and Epic) want to install the game 
 
 This **can** cause problems in two different spots by "protecting" the Cyberpunk install directory from:
 
-* Modding tools such as mod managers (like our recommendation [Vortex](vortex-mod-manager.md))&#x20;
-* CDPR's own REDmod launcher.&#x20;
+* Modding tools such as mod managers (like our recommendation [Vortex](vortex-mod-manager.md))
+* CDPR's own REDmod launcher.
 
 But hey, at least things are very secure.
 
@@ -76,7 +76,7 @@ You likely won't run into any of these problems, but you can rule them out altog
 
 ### Installation Guide
 
-Now we will go through the install options to use on each platform to accomplish this, and the recommended settings for modded Cyberpunk 2077.&#x20;
+Now we will go through the install options to use on each platform to accomplish this, and the recommended settings for modded Cyberpunk 2077.
 
 {% hint style="info" %}
 Just choose the header below for which platform you're using!
@@ -84,14 +84,14 @@ Just choose the header below for which platform you're using!
 
 {% tabs %}
 {% tab title="Installing Through GOG" %}
-### Installing Cyberpunk: GOG
+#### Installing Cyberpunk: GOG
 
 {% hint style="success" %}
 If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-gog)
 {% endhint %}
 
 1. Open GOG Galaxy, click on "`Owned Games`" in the left sidebar.\
-   Scroll until you find Cyberpunk.&#x20;
+   Scroll until you find Cyberpunk.
 
 ***
 
@@ -137,27 +137,23 @@ You don't need to create a subfolder for Cyberpunk, as GOG will do that for you.
 {% endtab %}
 
 {% tab title="Installing Through Steam" %}
-### Installing Cyberpunk: Steam
+#### Installing Cyberpunk: Steam
 
 {% hint style="success" %}
 If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-steam)
 {% endhint %}
 
 To be done
-
-
 {% endtab %}
 
 {% tab title="Installing Through Epic" %}
-### Installing Cyberpunk: Epic
+#### Installing Cyberpunk: Epic
 
 {% hint style="success" %}
 If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-epic)
 {% endhint %}
 
 To be done
-
-
 {% endtab %}
 {% endtabs %}
 
@@ -165,7 +161,7 @@ To be done
 
 ## Configuring the Game
 
-Great, now the game is installed!&#x20;
+Great, now the game is installed!
 
 To get the recommended settings, and to start modding your game, follow one of the guides below.
 
@@ -177,9 +173,9 @@ Just choose the header below for which platform you're using!
 
 {% tabs %}
 {% tab title="Configuring Through GOG" %}
-### Configuring Cyberpunk: GOG
+#### Configuring Cyberpunk: GOG
 
-Once the game has installed, we want to make it run with mods.&#x20;
+Once the game has installed, we want to make it run with mods.
 
 1. Click the button to the right of the **`Play`** button (formerly the `install` button) pictured below.
 
@@ -216,7 +212,7 @@ That's it, you are done with your install of the game! You can now move on to [#
 {% endtab %}
 
 {% tab title="Configuring Through Steam" %}
-### Configuring Cyberpunk: Steam
+#### Configuring Cyberpunk: Steam
 
 1. Navigate to _Cyberpunk 2077_
 
@@ -239,7 +235,7 @@ That's it, you are done with your install of the game! You can now move on to [#
 {% endtab %}
 
 {% tab title="Configuring Through Epic" %}
-### Configuring Cyberpunk: Epic
+#### Configuring Cyberpunk: Epic
 
 1. Navigate to _Cyberpunk 2077_
 

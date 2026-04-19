@@ -25,8 +25,6 @@ There are several overviews of interesting locations:
 5. Open the CET overlay
 6. Open RedHotTool's [#inspect](../../modding-tools/redhottools/#inspect "mention") or [#scan](../../modding-tools/redhottools/#scan "mention") tab and see the sector information:
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
-
 ## Legacy information
 
 With the release of [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/) 0.5.2, the information in the box below has become obsolete and will only be preserved for posterity.
@@ -43,15 +41,15 @@ print(GetPlayer():GetWorldPosition())
 
 <summary>Finding sectors: Legacy information</summary>
 
-### Finding a specific sector
+#### Finding a specific sector
 
 For technical stuff about sectors and the really manual way to look for things go [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/files-and-what-they-do/the-whole-world-.streamingsector). For less masochistic methods read on.
 
-#### Prerequisite: Getting the coordinates
+**Prerequisite: Getting the coordinates**
 
 Complete [#getting-the-players-coordinates](places.md#getting-the-players-coordinates "mention"). Copy the result and put it into a txt file somewhere.
 
-#### Method 1: the Wolvenkit preview
+**Method 1: the Wolvenkit preview**
 
 1. In Wolvenkit, open the file `base\worlds\03_night_city\_compiled\default\blocks\all.streamingblock`
 2. Switch to the second tab "All Sector Preview"
@@ -65,7 +63,7 @@ You can double-click on the red text to load the corresponding streamingsector f
 
 For details on how to find other LOD levels, check [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-know-how/files-and-what-they-do/the-whole-world-.streamingsector#calculating-the-files).
 
-#### Method 2: Following the meshes
+**Method 2: Following the meshes**
 
 If you know a mesh that's used inside the location, you can right-click the mesh file inside Wolvenkit's asset browser and use "**Find files using this**".
 
@@ -73,7 +71,7 @@ You might want to consider using a unique mesh rather than a standard cup or bot
 
 <img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FJfiWdJYZtgTynfdwObbH%2Fstreamingsectors_find_files_using_this.png?alt=media&#x26;token=a8d590c2-7421-4b43-a61f-ba9fe8a2a056" alt="" data-size="original">
 
-#### Method 3: Via script
+**Method 3: Via script**
 
 Go [here for PL](https://colab.research.google.com/github/Simarilius-uk/sectorStuff/blob/main/AllBlocks_colab_w_streamingblock_PL.ipynb) ([old link](https://colab.research.google.com/github/Simarilius-uk/sectorStuff/blob/main/AllBlocks_colab_w_streamingblock.ipynb)) and either use the script in your webbrowser (recommended) or download the script locally to run it with Python.
 

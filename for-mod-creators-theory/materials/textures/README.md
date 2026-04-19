@@ -14,7 +14,7 @@ This page contains the **theory section** for textures in Cyberpunk. It will giv
 ###
 
 {% hint style="info" icon="question" %}
-### Wait, this is not what I want!
+#### Wait, this is not what I want!
 
 * For the hands-on guide section, check [Modding Guides -> Textures and LUTs](../../../modding-guides/textures-and-luts/)
 * If you just want to know how to import/export textures, see [here](../../../modding-guides/textures-and-luts/images-importing-editing-exporting.md).

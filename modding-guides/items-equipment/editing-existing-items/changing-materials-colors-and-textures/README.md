@@ -256,7 +256,7 @@ Change its name to something unique.
 
 Now, add an entry in the `localMaterialBuffer`.`materials` (or `preloadLocalMaterialInstances`):
 
-<img src="../../../../.gitbook/assets/editing_material_adding_entry (2).png" alt="The new material will have the name you defined in the CMeshMaterialEntry in the previous step." data-size="original">
+<img src="../../../../.gitbook/assets/editing_material_adding_entry.png" alt="The new material will have the name you defined in the CMeshMaterialEntry in the previous step." data-size="original">
 
 You can now use your new material just like the regular, old materials.
 

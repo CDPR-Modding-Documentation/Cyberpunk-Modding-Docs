@@ -22,13 +22,13 @@ description: >-
 
 {% stepper %}
 {% step %}
-#### Enable **Game Physics** targeting mode in RedHotTools World Inspector.
+**Enable Game Physics targeting mode in RedHotTools World Inspector.**
 
 <figure><img src="../../../../.gitbook/assets/redhottools-targetingmode-gamephysics.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Target the desired object in-game.&#x20;
+**Target the desired object in-game.**
 
 In World Inspector, note the **streaming-sector file name** and the **node definition index** within that sector.
 
@@ -36,19 +36,19 @@ In World Inspector, note the **streaming-sector file name** and the **node defin
 {% endstep %}
 
 {% step %}
-#### Find and open the streaming-sector file in WolvenKit.
+**Find and open the streaming-sector file in WolvenKit.**
 
 <figure><img src="../../../../.gitbook/assets/wolvenkit-streaming-sector.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Find the node whose index matches step 1.2.
+**Find the node whose index matches step 1.2.**
 
 <figure><img src="../../../../.gitbook/assets/wolvenkit-streaming-sector-nodedef.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
-#### Locate the `sectorHash` field on that node.&#x20;
+**Locate the `sectorHash` field on that node.**
 
 You will enter this value into the World Builder collider Sector Hash parameter.
 
@@ -56,7 +56,7 @@ You will enter this value into the World Builder collider Sector Hash parameter.
 {% endstep %}
 
 {% step %}
-#### Open the sector preview tab in WolvenKit&#x20;
+**Open the sector preview tab in WolvenKit**
 
 find the node with the index from **step 1.2** in the nodes tree.
 
@@ -64,7 +64,7 @@ find the node with the index from **step 1.2** in the nodes tree.
 {% endstep %}
 
 {% step %}
-#### Search for exact collider which represents object
+**Search for exact collider which represents object**
 
 Use the visibility toggle to find the tree entry (and its index in the name) for the actor that represents the collision of the targeted object.
 
@@ -72,7 +72,7 @@ Use the visibility toggle to find the tree entry (and its index in the name) for
 {% endstep %}
 
 {% step %}
-#### Return to the sector data tab.&#x20;
+**Return to the sector data tab.**
 
 Under `compiledData` → `Actors`, open the actor whose index matches step 1.7. Expand Shapes, then the first item. The fields you need are `Hash` and `ShapeType`; use them for the World Builder collider parameters.
 
@@ -84,7 +84,7 @@ Under `compiledData` → `Actors`, open the actor whose index matches step 1.7. 
 
 {% stepper %}
 {% step %}
-#### Spawn the desired mesh object and add a simple collider for it.
+**Spawn the desired mesh object and add a simple collider for it.**
 
 {% hint style="warning" %}
 **Important:** the mesh object and the collider must be in the same group at the same hierarchy level.
@@ -94,7 +94,7 @@ Under `compiledData` → `Actors`, open the actor whose index matches step 1.7. 
 {% endstep %}
 
 {% step %}
-#### Enabling PhysX mesh for collider
+**Enabling PhysX mesh for collider**
 
 Select the collider, enable **`PhysX Mesh`** (the `PhysX Mesh Settings` section appears), and expand it.
 
@@ -106,7 +106,7 @@ With PhysX Mesh enabled, the simple collider shown in-game is only for editing; 
 {% endstep %}
 
 {% step %}
-### Set the PhysX mesh parameters
+#### Set the PhysX mesh parameters
 
 * **Target name:** name of the object you are attaching the collider to
 * **Sector hash:** value of the `sectorHash` field from step 1.5

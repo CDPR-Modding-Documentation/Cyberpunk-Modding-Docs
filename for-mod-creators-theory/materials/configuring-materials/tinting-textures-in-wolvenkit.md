@@ -13,7 +13,7 @@ This page will show you how to create colour variants of textured materials with
 
 ## The problem
 
-Who doesn't know it? You have a textured shirt, and you want to create multiple colour variants.&#x20;
+Who doesn't know it? You have a textured shirt, and you want to create multiple colour variants.
 
 Most game engines "solve" this by including a different-coloured texture. This leads to huge mod files and [bad performance](../../3d-modelling/on-4k-textures-and-high-poly-meshes.md#texture-resolution-and-visual-return) and thus, we do not like it.
 
@@ -23,15 +23,13 @@ Fortunately, Cyberpunk materials are smarter than this.
 
 Many shaders offer a parameter to **tint** textures on-the-fly by setting a material property:
 
-<figure><img src="broken-reference" alt=""><figcaption><p><code>base\characters\garment\player_equipment\torso\t2_115_jacket__military\t2_115_pma_jacket__military.mesh</code></p></figcaption></figure>
-
 As you can see, both materials are using the same textures — the tinting happens via `BaseColorScale` parameter. You can use that to avoid texture duplication.
 
 See [#supporting-materials](tinting-textures-in-wolvenkit.md#supporting-materials "mention") for a list.
 
 ### How to add the parameter
 
-1. Select the material's **values** array&#x20;
+1. Select the material's **values** array
 2. In the panel on the right, click the yellow + button
 3. In the "Select Existing Type" popup, select Vector or Color
 

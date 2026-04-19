@@ -71,7 +71,7 @@ Locate the Archive section of your project explorer.
 
 Select the first folder, then right click and click Rename (or press F2).
 
-<figure><img src="../../../../.gitbook/assets/CCXL_hp_image21 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/CCXL_hp_image21.png" alt=""><figcaption></figcaption></figure>
 
 * Change folder "moddername" to **YOUR OWN** modder name, and check the box "update in project files"
 * Change the next folder "modname\_ccxl" to **a unique project name** for this project, and check the box "update in project files"

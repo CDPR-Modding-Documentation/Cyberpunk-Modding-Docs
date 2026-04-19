@@ -26,12 +26,12 @@ Please check [#why-do-i-need-sector-variants](./#why-do-i-need-sector-variants "
 The example project shows you a bunch of options. You are not limited to these — use sector variants to do whatever you want.
 
 {% hint style="info" %}
-Sufficiently complex sector variants are known as [quest modding](../../../../quest/). You might want to stop before that happens.&#x20;
+Sufficiently complex sector variants are known as [quest modding](../../../../quest/). You might want to stop before that happens.
 {% endhint %}
 
 ## Prerequisites
 
-* WorldBuilder ([github](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/20660))&#x20;
+* WorldBuilder ([github](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/20660))
 * A texteditor such as[ Notepad++](https://notepad-plus-plus.org/downloads/)
 * You have downloaded and installed the example project (the link is directly below this text)
 
@@ -59,9 +59,7 @@ When installing the example project, you will have a little pool with ladders to
 * A brown chicken
 
 \
-<img src="../../../../../.gitbook/assets/Capture d&#x27;écran 2026-03-16 070309 (2).png" alt="" data-size="original">![](<../../../../../.gitbook/assets/Capture d'écran 2026-03-16 070334.png>)
-
-
+<img src="../../../../../.gitbook/assets/Capture d&#x27;écran 2026-03-16 070309.png" alt="" data-size="original">![](<../../../../../.gitbook/assets/Capture d'écran 2026-03-16 070334.png>)
 
 ## Step 0: Teleport to the pool
 
@@ -73,9 +71,9 @@ Game.GetTeleportationFacility():Teleport(GetPlayer(), ToVector4{ x = -1350.1178,
 
 ## Step 1: Group structure
 
-Each of the variants needs to go into its own group.&#x20;
+Each of the variants needs to go into its own group.
 
-All of these groups can be toggled on and off according to your settings. We're setting `unvarianted_assets`  as always loaded in [#step-2-export](sector-variants-practical-example-and-project.md#step-2-export "mention"), so there's no toggling that one.
+All of these groups can be toggled on and off according to your settings. We're setting `unvarianted_assets` as always loaded in [#step-2-export](sector-variants-practical-example-and-project.md#step-2-export "mention"), so there's no toggling that one.
 
 <figure><img src="../../../../../.gitbook/assets/Capture d&#x27;écran 2026-03-16 125125.png" alt=""><figcaption></figcaption></figure>
 
@@ -89,7 +87,7 @@ What do these options mean?
 
 ### Variant Node Ref
 
-This is your **unique identifier** across **all sectors**. Make sure that it's unique (e.g. prefix it with your name).&#x20;
+This is your **unique identifier** across **all sectors**. Make sure that it's unique (e.g. prefix it with your name).
 
 ### Checkbox Default On
 
@@ -119,7 +117,7 @@ This section assumes that you'll create your own script for toggling already-exi
 
 ## Step 4: Customizing the menu
 
-There are several .lua files in the project, but you only need to edit two (`variants.lua` and `variantSettings.lua`). \
+There are several .lua files in the project, but you only need to edit two (`variants.lua` and `variantSettings.lua`).\
 Open them with a text editor.
 
 ### Variants.lua
@@ -130,7 +128,7 @@ Here, you can set the display name that your mod uses in ModSettings. You can ig
 
 ### variantSettings.lua
 
-This is the main file where you create all options for your variants. Check the screenshot below - the code should be pretty much self-explanatory (every block controls a variant).&#x20;
+This is the main file where you create all options for your variants. Check the screenshot below - the code should be pretty much self-explanatory (every block controls a variant).
 
 {% hint style="info" %}
 The code folding feature in Notepad++ lets you collapse sections (you can see the little - buttons on the screenshot below). That makes it easy to identify the bits that you duplicate/delete.

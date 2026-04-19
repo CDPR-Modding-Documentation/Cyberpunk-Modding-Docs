@@ -56,7 +56,7 @@ mascV: base\characters\common\base_bodies\man_average\t0_000_ma_base__full.mesh
 4. Switch the viewport to to `Pose Mode` ( at the top left)
 5. You can now select and **scale** individual bones.
 
-![](<../../.gitbook/assets/{E13E7DA1-9217-4D4E-BAB0-BE216398BE7A} (1).png>)
+![](../../.gitbook/assets/{E13E7DA1-9217-4D4E-BAB0-BE216398BE7A}.png)
 
 <figure><img src="../../.gitbook/assets/{0750C598-35A7-4F9C-8992-FE4AC79817B4}.png" alt=""><figcaption><p><mark style="color:red;">Select the bones tab, select the bone you want to edit, and scale.</mark></p></figcaption></figure>
 

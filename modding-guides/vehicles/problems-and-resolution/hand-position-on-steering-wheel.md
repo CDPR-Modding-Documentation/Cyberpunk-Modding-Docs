@@ -4,9 +4,9 @@ description: To modify the hand position on the steering wheel
 
 # Hand position on steering wheel
 
-<figure><img src="../../../.gitbook/assets/image (398) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (339).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (399) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (340).png" alt=""><figcaption></figcaption></figure>
 
 It can be modified from the ".rig" file
 

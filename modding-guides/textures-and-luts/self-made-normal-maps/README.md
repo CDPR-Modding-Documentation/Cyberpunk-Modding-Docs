@@ -14,7 +14,7 @@ This guide will teach you how to create a custom normal map.
 ### Wait, this isn't what I want!
 
 * For general information, check [normal-maps-in-cyberpunk.md](../../../for-mod-creators-theory/materials/textures/normal-maps-in-cyberpunk.md "mention")
-* Or maybe you want to know about  [cyberpunk-shaders-in-blender.md](../../../for-mod-creators-theory/materials/cyberpunk-shaders-in-blender.md "mention")
+* Or maybe you want to know about [cyberpunk-shaders-in-blender.md](../../../for-mod-creators-theory/materials/cyberpunk-shaders-in-blender.md "mention")
 * If you want to create a `.mlmask` instead, see [custom-multilayermasks.md](../custom-multilayermasks.md "mention")
 * Otherwise, you can use the wiki's search function — it uses an LLM and is actually quite useful.
 
@@ -75,7 +75,7 @@ To see how the mesh is projected on your image, you can check out the UV edit mo
 
 Switch to "Edit" (shortcut: Tab) and select all vertices (shortcut: ctrl+A). You will now see them projected on the texture:
 
-<figure><img src="../../../.gitbook/assets/normal_maps_uv_editing (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/normal_maps_uv_editing.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 Feel free to change the UV mapping. You can [export](../../../for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/#wolvenkit-.gdb-1) this back into Cyberpunk!
@@ -102,7 +102,7 @@ I create a duplicate of my entire armature, just to make certain that I don't ac
       \&#xNAN;_**Levels Viewport:** 2 or so_\
       \&#xNAN;_**Render:** As many as Blender lets you get away with without crashing, I used 7_\
       \&#xNAN;_**Advanced:**_\
-      &#xNAN;_**UV Smooth:** Keep Corners, Junctions_\
+      \&#xNAN;_**UV Smooth:** Keep Corners, Junctions_\
       \&#xNAN;_**Boundary Smoothing**: Keep Corners_
    2. **Deform -> Displace**\
       \&#xNAN;_**Coordinates**: UV_\
@@ -192,7 +192,7 @@ Baking takes time (several minutes) and most of your PC's free resources. This i
 
 If everything went well, the image editor on the bottom left will change and display your normal map.
 
-<figure><img src="../../../.gitbook/assets/normals_a_good_result (1).png" alt=""><figcaption><p>A normal map with no artifacts or distortions: this is the kind of result we want.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/normals_a_good_result.png" alt=""><figcaption><p>A normal map with no artifacts or distortions: this is the kind of result we want.</p></figcaption></figure>
 
 You can export the image via the hamburger menu in the image editor (bottom left panel of the screenshot).
 
@@ -265,6 +265,6 @@ Open the UV of your 3D model and select the vertices that are outside on the lef
 1. Now you have two separate submeshes. Export them both into the same .glb file for Wolvenkit.
 2. Open Photoshop, Paint.net or [Photopea](https://www.photopea.com/) to invert the **green** channel. Save your new .png under a name like \<name\_inverted\_n> \\
 
-<figure><img src="../../../.gitbook/assets/image (11) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (415).png" alt=""><figcaption></figcaption></figure>
 
 3. Import your inverted normal map in Wolvenkit. Now, you can create a new material for the normal-inverted parts of your mesh!

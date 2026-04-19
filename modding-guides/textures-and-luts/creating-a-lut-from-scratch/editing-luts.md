@@ -82,7 +82,7 @@ Save back your DDS using NVTT and apply these settings:
 * The folder in question is: `yourwolvenkitprojectname\source\raw\base\weather\24h_basic\luts`.
 * You can also open the exact location from the 'Project explorer' in Wolvenkit. Under 'raw' folder dropdown you should see the exported `.dds` file. If you hover over it, it will show a yellow folder button that you can click to open its location.
 
-![](<../../../.gitbook/assets/image (237) (1).png>)
+![](<../../../.gitbook/assets/image (135).png>)
 
 * Now to import it, hover over 'Tools' at the top left in Wolvenkit, and select 'Import Tool'.
 * Select the LUT and make sure the import settings are correct

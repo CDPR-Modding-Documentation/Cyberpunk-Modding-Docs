@@ -14,7 +14,7 @@ This page explains the relationship between submeshes (parts of a mesh), materia
 ###
 
 {% hint style="info" icon="question" %}
-### Wait, this is not what I want!
+#### Wait, this is not what I want!
 
 * Check the parent page [.](./ "mention") for more general informatiton
   * In [#material-assignment](./#material-assignment "mention")you will get a general introduction and practical instructions

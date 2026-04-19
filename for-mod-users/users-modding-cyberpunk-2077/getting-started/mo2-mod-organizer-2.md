@@ -30,7 +30,7 @@ It's best to let MO2 handle all of your mods and leave the base game directory c
 
 <summary><strong>But I have so many mods to uninstall!</strong></summary>
 
-You don't need to manually delete all of your mods, nor should you reinstall the entire game.&#x20;
+You don't need to manually delete all of your mods, nor should you reinstall the entire game.
 
 We have a handy [mod remover script](https://www.nexusmods.com/cyberpunk2077/mods/8597) (courtesy of our dear manavortex) that will automatically do it for you.
 
@@ -85,7 +85,7 @@ If you would rather use the (experimental) plugin, read [#script-extenders-plugi
 If you would rather install the mods by hand, read [#script-extenders-manual-install](mo2-mod-organizer-2.md#script-extenders-manual-install "mention")instead.
 {% endhint %}
 
-There _is_ a plugin for MO2 that will allow you to install CET and RED4ext through MO2. This is nice if you prefer to keep all of your mods within MO2's mod list, but it is an optional process.&#x20;
+There _is_ a plugin for MO2 that will allow you to install CET and RED4ext through MO2. This is nice if you prefer to keep all of your mods within MO2's mod list, but it is an optional process.
 
 If you don't care about having CET and RED4ext installed in MO2, then I would recommend you to install them manually as detailed above. Otherwise, read on.
 
@@ -116,11 +116,11 @@ I'm going to stress this as hard as I can: this plugin is not part of the main M
 
     1.  Go to Settings.
 
-        <figure><img src="../../../.gitbook/assets/image (621) (1).png" alt=""><figcaption><p>Settings</p></figcaption></figure>
+        <figure><img src="../../../.gitbook/assets/image (627).png" alt=""><figcaption><p>Settings</p></figcaption></figure>
     2. Head to the **Plugins** section.
     3. Search for **Root Builder** and make sure the **"Enabled"** checkbox is **not checked.** If Root Builder doesn't show up, that means you didn't have it installed in the first place. That's okay! You don't need to do anything more.
 
-    <figure><img src="../../../.gitbook/assets/image (623) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/image (628).png" alt=""><figcaption></figcaption></figure>
 6. If you have CET and RED4ext installed manually, you should remove them from Cyberpunk's game folders. The easiest way to do this is via [mod remover](https://www.nexusmods.com/cyberpunk2077/mods/8597).
 7. After you've done all of this, close and re-open MO2. If you've followed all of these steps correctly, you should receive a pop-up which you should say yes to.
 8. Launch the game. If everything is done correctly, CET should open immediately and ask you to set a keybind. You've done it!
@@ -146,7 +146,7 @@ If you have mods from external sources:
 ### Launching the Game
 
 {% hint style="warning" %}
-#### **When using MO2 as a mod manager, you always have to launch the game through MO2.**
+**When using MO2 as a mod manager, you always have to launch the game through MO2.**
 {% endhint %}
 
 1. **Always Launch the Game through MO2**:

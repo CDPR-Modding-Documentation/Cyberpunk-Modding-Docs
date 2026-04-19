@@ -51,7 +51,7 @@ It mainly consists of three nodes:
 
 #### Phantom Liberty section
 
-<figure><img src="../../.gitbook/assets/image2_2 (1).png" alt=""><figcaption><p>Phantom Liberty section of the <strong>addingnewmessages_tutorial_rootphase.questphase</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2_2.png" alt=""><figcaption><p>Phantom Liberty section of the <strong>addingnewmessages_tutorial_rootphase.questphase</strong></p></figcaption></figure>
 
 **\[1268] Condition** node - checks if Phantom Liberty is active for the player
 
@@ -60,7 +60,7 @@ It mainly consists of three nodes:
 
 #### Activation confirmation section
 
-<figure><img src="../../.gitbook/assets/image2_3 (1).png" alt=""><figcaption><p>Activation confirmation section of the <strong>addingnewmessages_tutorial_rootphase.questphase</strong></p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image2_3.png" alt=""><figcaption><p>Activation confirmation section of the <strong>addingnewmessages_tutorial_rootphase.questphase</strong></p></figcaption></figure>
 
 Here user gets:
 

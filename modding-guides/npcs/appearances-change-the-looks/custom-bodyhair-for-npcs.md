@@ -4,7 +4,7 @@
 
 **Created & Published**: Summer 2021 **by @Pinkydude**
 
-![](<../../../.gitbook/assets/0 (2)>)
+![](../../../.gitbook/assets/0)
 
 ![](../../../.gitbook/assets/1)
 
@@ -18,7 +18,7 @@ What you’ll need :\\
 
 **🟨 WON’T WORK With AMM’s naked/shirtless custom appearances**
 
-![](<../../../.gitbook/assets/2 (2)>)
+![](../../../.gitbook/assets/2)
 
 I’ll assume you already know some basic modding\
 (extracting the files with the console or WKit etc)
