@@ -52,7 +52,7 @@ These steps won't be covered here in detail — for a step-by-step guide, see [r
 
 Doing a simple mesh refitting w&#x6F;_&#x6E;_’t work since the rigs don’t match/the bones don’t align correctly!
 
-![](<../../.gitbook/assets/2 (3).png>)
+![](<../../.gitbook/assets/2 (3) (1).png>)
 
 ## Step 2: Rig swapping
 
@@ -116,4 +116,4 @@ As always, have fun and I wish y’all a good modding, chooms! 💛
 
 Thank you for reading -Pkd
 
-![](../../.gitbook/assets/13.png)
+![](<../../.gitbook/assets/13 (1).png>)

@@ -149,7 +149,7 @@ It's time to test your Photomode NPV!
 1. Click [install](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) in Wolvenkit's toolbar and open your game.
 2. Enter Photomode. In the characters tab, you should see a new icon at the very bottom (you might need to scroll) with blue text:
 
-<figure><img src="../../../.gitbook/assets/17 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/17 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Click the icon and your character will appear!
 
@@ -197,13 +197,13 @@ Check out these articles in the Wiki:\
 7. Click import selected. It will overwrite the existing placeholder .xbm in your project files.
 8. Select your `.inkAtlas` file or open it and check the `Part Mapping` tab to check if your new icon appears:
 
-<figure><img src="../../../.gitbook/assets/15 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/15 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/16 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/16 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 9. Press install and check in game to see your new character icon!
 
-<figure><img src="../../../.gitbook/assets/19 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/19 (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

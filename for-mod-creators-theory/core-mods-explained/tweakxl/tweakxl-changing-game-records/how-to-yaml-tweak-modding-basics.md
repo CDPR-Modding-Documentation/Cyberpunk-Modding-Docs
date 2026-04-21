@@ -263,7 +263,7 @@ Now, from the latest inline (`inline1` in this example), copy the whole contents
 
 Now, copy the mixed contents and paste them into the base record (the item on this case). This is how it should look:
 
-<figure><img src="../../../../.gitbook/assets/8 (2).png" alt=""><figcaption><p>Almost there, keep going...</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/8 (2) (1).png" alt=""><figcaption><p>Almost there, keep going...</p></figcaption></figure>
 
 Those records below the main item record (`inline0` and `inline1`) are the ones that manages the Thrusters logic/mechanics.
 
@@ -276,15 +276,15 @@ ALWAYS FIND A WORKING EXAMPLE IN THE BASE GAME IF YOU ARE NEW ON THIS AND IF YOU
 
 Now, the importance of VSCode in this tutorial. VSCode has an incredibly powerful and useful highlighting system for text by just doing `double click` on **ANY WORD**. With this system, you'll understand how things are nested on ANY item you find. Look at this example:
 
-<figure><img src="../../../../.gitbook/assets/9 (2).png" alt=""><figcaption><p>I love VSCode, look at this beauty.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/9 (2) (1).png" alt=""><figcaption><p>I love VSCode, look at this beauty.</p></figcaption></figure>
 
 If you pay attention to the miniature code on the right side and the scroll bar, there is a highlight that will point you exactly where things are nested:
 
-<figure><img src="../../../../.gitbook/assets/10 (1).png" alt=""><figcaption><p>You can scroll on the miniature too. The big vertical gray bar is your scroll bar, and the tiny horizontal lines are the highlights.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/10 (1) (1).png" alt=""><figcaption><p>You can scroll on the miniature too. The big vertical gray bar is your scroll bar, and the tiny horizontal lines are the highlights.</p></figcaption></figure>
 
 If you move over that highlight, you will finally have your answer.
 
-<figure><img src="../../../../.gitbook/assets/11.png" alt=""><figcaption><p>inline0 was nested inside OnEquip parameter, which is inside the main item record.</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/11 (1).png" alt=""><figcaption><p>inline0 was nested inside OnEquip parameter, which is inside the main item record.</p></figcaption></figure>
 
 ***
 

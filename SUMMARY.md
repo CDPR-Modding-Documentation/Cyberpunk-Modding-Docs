@@ -532,6 +532,7 @@
   * [How to Change Position and Rotation of an entMeshComponent](modding-guides/everything-else/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
   * [Player State Machines](modding-guides/everything-else/player-state-machines.md)
   * [Running Python Scripts](modding-guides/everything-else/running-python-scripts.md)
+* [HUD Painter Resource](modding-guides/hud-painter-resource.md)
 
 ***
 
