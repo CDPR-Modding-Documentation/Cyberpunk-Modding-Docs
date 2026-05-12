@@ -12,7 +12,7 @@ description: How to remove objects, the hard way
 This page tells you how to do node removals by hand.
 
 {% hint style="danger" %}
-This workflow is **extremely not recommended** and only demonstrates the underlying principle. All these steps are **more than techedd away** by now, and you should follow the[world-editing-deleting-objects.md](world-editing-deleting-objects.md "mention")guide.
+This workflow is **extremely not recommended** and only demonstrates the underlying principle. All these steps are **more than tech'd away** by now, and you should follow the [world-editing-deleting-objects.md](world-editing-deleting-objects.md "mention") guide.
 {% endhint %}
 
 ## Video Guide
