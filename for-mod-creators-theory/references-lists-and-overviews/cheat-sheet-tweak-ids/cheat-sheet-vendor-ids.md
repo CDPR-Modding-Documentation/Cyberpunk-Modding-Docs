@@ -155,17 +155,17 @@ Vendors.wat\_kabuki\_armorsmith\_01
 
 _<mark style="color:yellow;">(Little China)</mark>_
 
-Vendors.wat\_ich\_clothingshop\_01\
-Vendors.wat\_Ich\_cyberware\_store\_01\
-Vendors.wat\_Ich\_foodshop\_01\
-Vendors.wat\_Ich\_foodshop\_02\
-Vendors.wat\_ich\_foodshop\_03\
-Vendors.wat\_Ich\_gunsmith\_01\
-Vendors.wat\_Ich\_medicstore\_01\
-Vendors.wat\_Ich\_melee\_01\
-Vendors.wat\_Ich\_melee\_02\
-Vendors.wat\_ich\_netrunner\_01\
-Vendors.wat\_ich\_ripperdoc\_01\
+Vendors.wat\_lch\_clothingshop\_01\
+Vendors.wat\_lch\_cyberware\_store\_01\
+Vendors.wat\_lch\_foodshop\_01\
+Vendors.wat\_lch\_foodshop\_02\
+Vendors.wat\_lch\_foodshop\_03\
+Vendors.wat\_lch\_gunsmith\_01\
+Vendors.wat\_lch\_medicstore\_01\
+Vendors.wat\_lch\_melee\_01\
+Vendors.wat\_lch\_melee\_02\
+Vendors.wat\_lch\_netrunner\_01\
+Vendors.wat\_lch\_ripperdoc\_01\
 Vendors.wat\_little\_china\_armorsmith\_01
 
 _<mark style="color:yellow;">(North Side)</mark>_
