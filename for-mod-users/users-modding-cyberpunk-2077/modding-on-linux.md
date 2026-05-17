@@ -140,7 +140,7 @@ The command is case sensitive. Copy-paste the text from the box above to make su
 
 While at your library right click Cyberpunk then navigate to `Settings` -> `ADVANCED` and scroll down to `Environment Variables`
 
-Now set a new variable name `WINEDLLOVERRIDES` with a value of `winmm,version=n,b`
+Now set a new variable name `WINEDLLOVERRIDES` with a value of `winmm,version=n,b`  without any quotation marks.
 
 <figure><img src="../../.gitbook/assets/image (533).png" alt=""><figcaption><p>Don't forget to click the + button for the changes to save.</p></figcaption></figure>
 
