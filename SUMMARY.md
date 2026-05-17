@@ -303,7 +303,7 @@
   * [Custompathing assets](modding-guides/items-equipment/custompathing-assets.md)
   * [Transferring Dangle Bones](modding-guides/items-equipment/transferring-dangle-bones.md)
   * [RIG Swapping Garments - other body conversion](modding-guides/items-equipment/rig-swapping-garments-other-body-conversion.md)
-  * [Rig Editing Garments for Gonks](modding-guides/items-equipment/rig-editing-garments-for-gonks.md)
+  * [OUTDATED -- Rig Editing Garments for Gonks](modding-guides/items-equipment/rig-editing-garments-for-gonks.md)
   * [First Person Perspective Fixes](modding-guides/items-equipment/first-person-perspective-fixes.md)
   * [FPP Fixes: Easy Refitting Gloves for femV FPP Appearance - Guide by xbaebsae](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-refitting-gloves-for-fpp-appearance/)
   * [Flat Chest Detector: Dynamic Binder - Guide by PinkyDude](https://docs.google.com/document/d/1C3H_UldaYEAuz8t5P06xf7HjfChjF8VNfTOtybDylgE/edit?usp=sharing)

@@ -1,4 +1,8 @@
-# Rig Editing Garments for Gonks
+---
+hidden: true
+---
+
+# OUTDATED -- Rig Editing Garments for Gonks
 
 ## <mark style="color:blue;">▶</mark> <mark style="color:yellow;">Summary</mark> <a href="#summary" id="summary"></a>
 
@@ -8,13 +12,20 @@ This will be a rough copy/paste of a tutorial from a Discord chat.
 
 I’ll go over how to edit a RIG: both the actual .rig files and garment’s armatures. This is useful for moving dangle bones, present in hair meshes or necklaces, and also for porting custom motorcycles that do not fit the game’ vanilla bike rigs, for example 🤠
 
+
+
+#### **EDIT by PinkyDude - 24.02.2026**
+
+{% hint style="danger" icon="message-minus" %}
+I realized this guide is uncomplete and, worse, potentially misguiding people. I do not have the energy to rework it so the guide is now hidden - anyone is free to edit/add to it if they wish to
+{% endhint %}
+
 ### ▶ <mark style="color:yellow;">Requirements</mark> <a href="#requirements" id="requirements"></a>
 
 * a recent version of [WolvenKit](https://wiki.redmodding.org/wolvenkit/readme) <mark style="color:yellow;">| used in tuto: 8.16.1</mark>
 * a recent version of the [CP77 Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on) <mark style="color:yellow;">| used in tuto: 1.6.4</mark>
 * a recent version of Blender <mark style="color:yellow;">| used in tuto: 4.4.3</mark>
-* Eagul’s [Bone position and Matrix scripts for Blender\
-  ](https://drive.google.com/drive/folders/1kCMdFteY9qNWnRLIV5OxiBRY4higSONs?usp=drive_link)_The scripts included in the linked folder have been slightly edited to make them easier to use!_
+* Eagul’s [Bone position and Matrix scripts for Blender<br>](https://drive.google.com/drive/folders/1kCMdFteY9qNWnRLIV5OxiBRY4higSONs?usp=drive_link)_The scripts included in the linked folder have been slightly edited to make them easier to use!_
 
 Huge thanks to [Eagul](https://next.nexusmods.com/profile/eagull?gameId=3333) for letting me include his scripts directly in this tutorial, and for his guidance while I was working on the [Thundergod](https://www.nexusmods.com/cyberpunk2077/mods/21522) 🙏
 
@@ -63,10 +74,8 @@ Once refitted, click on your mesh’ Armature and switch to Edit Mode
 Only move the bones that interest you (you can hide all the others) and reference other meshes to know where to position them:
 
 * The Neck bone should match the vanilla WA RIG Neck position
-* The dyng\_necklace\_01 bone should be at the first hoop on the collar itself, like the original collar mesh&#x20;
+* The dyng\_necklace\_01 bone should be at the first hoop on the collar itself, like the original collar mesh
 * The second dyng\_necklace\_02 bone should be at the second hoop, above the leather pendant
-
-
 
 It’s now time to prepare your scripts!
 
@@ -74,11 +83,11 @@ I personally change the Timeline window at the bottom into a Text Editor, then s
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd-5QvmYoAWuAgsTbrmDgchkmrhpeB1e4XZagJVRtDYiCsXAbWmw3sVzchaCkGgGjUJJgEB34uxsWEiR8bXWHpn5TDGP-paASc8Ae2j3dJaNlFZXBLVSEliILD_oC6LDBfWbRRE?key=ai1S6sFeCblBDAjdio0ziA" alt=""><figcaption></figcaption></figure>
 
-In the first window, open the **rigscript\_boneposition.py** file&#x20;
+In the first window, open the **rigscript\_boneposition.py** file
 
 In the second, open the **rigscript\_meshmatrices.py** file
 
-You’ll also need to open Blender’s console window \
+You’ll also need to open Blender’s console window\
 Click in the "Window" tab at the top > "Toggle System Console"
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXfkCAvRbtWBWkcjUZRO8Gd5fwC3a_dIRgEVflGtee-NdjcKwLXY1EdOHNFLKz91VisGLeg3_sbOB7fUw5r7-u8IkyQvDPLCGVqyCVeDCE7rSJHU4vAHQOuQngKN7xa6IkxdxFvV7Q?key=ai1S6sFeCblBDAjdio0ziA" alt=""><figcaption></figcaption></figure>
