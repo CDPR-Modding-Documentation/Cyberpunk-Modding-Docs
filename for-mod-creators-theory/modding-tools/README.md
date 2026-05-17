@@ -64,6 +64,10 @@ Open source Photoshop alternative.
 
 {% embed url="https://www.gimp.org/" %}
 
+### Inkscape
+
+{% embed url="https://inkscape.org/" %}
+
 ### Krita
 
 {% embed url="https://krita.org/" %}
