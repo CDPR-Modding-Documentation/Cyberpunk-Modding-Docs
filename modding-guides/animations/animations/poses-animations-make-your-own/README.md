@@ -22,9 +22,11 @@ If you have never done this before, don't do both at once. Or... do whatever, bu
 * For an overview of all poses in photo mode, check [cheat-sheet-photo-mode.md](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-photo-mode.md "mention")
 * For more general knowledge, check the [..](../../ "mention")section.
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 We all stand on the shoulders of giants: this process has first been documented\
-by [xbaebsae | Angy](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/), who also provided the [original animation templates](https://drive.google.com/file/d/1kL04dQy9xmK_yRsvsS4Sn83joPzrljAr/view). You can find a link to their version of the guide in the menu on the left.
+by [xbaebsae | Angy](https://xbaebsae.jimdofree.com/cyberpunk-2077-tutorials/cp2077-custom-poses-and-animations/), who also provided the [original animation templates](https://drive.google.com/file/d/1kL04dQy9xmK_yRsvsS4Sn83joPzrljAr/view). While that guide is quite obsolete now, its templates still rock to this day.&#x20;
+
+You can find a link to their version of the guide in the menu on the left, but keep in mind that templates in there may generate errors.
 
 Thank you!
 {% endhint %}
@@ -80,10 +82,10 @@ You **can not move** these .glb files. Wolvenkit needs them to stay where they a
 
 Download the animation template(s) for your rig(s):
 
-* for [single characters](https://drive.google.com/file/d/1kL04dQy9xmK_yRsvsS4Sn83joPzrljAr/view): from Angy's Google Drive or check [Easy IK based Posing](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-ik-based-posing/)
+* for single characters: [female average](../../../../_resources_and_assets/poses/xBaebsae_AnimTemplate_FemaleAverage.blend), [male average](../../../../_resources_and_assets/poses/xBaebsae_AnimTemplate_MaleAverage.blend), [male big](../../../../_resources_and_assets/poses/xBaebsae_AnimTemplate_MaleBig.blend), [male child](../../../../_resources_and_assets/poses/xBaebsae_AnimTemplate_MaleChild.blend), [male/female big combined](../../../../_resources_and_assets/poses/xBaebsae_AnimTemplate_FemMascBig_Combined.blend)
 * To pose multiple characters, just put two characters into one .blend file (the command is called [append](https://blenderartists.org/t/append-a-whole-blend-file-in-one-go/1468736))
 
-Move/copy them somewhere, then open the one you want in Blender.
+Move/copy them somewhere. Since this is quite a fun project, it is also a good way to start playing around with Blender: it would be a good idea starting building a folder! Once you are ready, open the one you want in Blender.
 
 ## Step 1: Posing the mannequin
 
@@ -93,7 +95,7 @@ This step will happen in **Blender**.
 If the written instructions aren't clear enough for you, check the screenshots below them.
 {% endhint %}
 
-1. Open up the file
+1. Open up the file. regardelss of the file, you will thee a few items on the field on the right: the ones that we are interested on is Armature, and Floor. Floor stands for the floor in game. Armature is the actual puppet we will need to pose by acting on its joints.&#x20;
 2. Select the armature by clicking on one of the bones in the viewport (the red circle on the screenshot below). They will be highlighted if you did it right.
 
 <figure><img src="../../../../.gitbook/assets/animations_tutorial_blender_viewport.png" alt=""><figcaption><p>Your viewport directly after opening the file.</p></figcaption></figure>
@@ -102,7 +104,7 @@ If the written instructions aren't clear enough for you, check the screenshots b
 
 <figure><img src="../../../../.gitbook/assets/pose mode.png" alt=""><figcaption><p>"Pose Mode" dropdown looks like this</p></figcaption></figure>
 
-3. Now, you need to **create your pose**. Before you do that, check the box below:
+3. Now, you need to **create your pose**. If it is your first time, before you do that, **check the box below**:
 
 <details>
 
@@ -110,20 +112,18 @@ If the written instructions aren't clear enough for you, check the screenshots b
 
 **General**
 
-* The real human skeleton changes pose **only** via **bone rotation** — moving bones leads to dislocated joints. **Do not move bones**.
+* The real human skeleton changes pose **only** via **bone rotation** — moving bones leads to dislocated joints. **Do not move bones**.&#x20;
+* The armature has constraints which will both limit and influence other bones as you modify them. The bestest way is to check the **Rotate** tool icon on the left, then the joint you want to modify. &#x20;
+* You can limit a tool's effect to an axis by pressing `x`, `y` or `z`. Press the key a second time to use the **local** axis rather than the **global** one, and a third time to remove the limitation. You can also see different ways to orientate the axis by the pull down menu at the center of the 3D toolbar.&#x20;
+* You relative position to the joint matters! Get closer for finer movements, or move around and try a few different axis orientations to see what is best for your purposes!
 
-**Tooling**
+**Good to know!**
 
 * Instead of **overwriting** the entire `.anims` file, Wolvenkit will splice the NLA tracks that you will create below into the container. For that reason, you can have as many .blend and .glb files as you want and import them in sequence, or have all your poses in a single .blend.
 
-**Tool usage**
-
-* You can limit a tool's effect to an axis by pressing `x`, `y` or `z`. Press the key a second time to use the **local** axis rather than the **global** one, and a third time to remove the limitation.
-* Viewport zoom matters. Get closer for finer movements!
-
 </details>
 
-5. As of today (September 2023), we can only create poses and animations by **adjusting each bone by hand**. This is how:
+5. As of today, the cheapest way we can create poses and animations is by **adjusting each bone by hand**. This is how:
    1. Select a bone by clicking on it (it will appear highlighted)
    2. Rotate the bone by either
       * pressing `R` to enter rotation mode, then moving the mouse to rotate the bone (read up on axis limitation in the expandable box above)\
@@ -147,8 +147,8 @@ You now need to create an animation that Wolvenkit can add into the existing fil
 3. Now, we need to add keyframes, one for the **fallback position** and one for the **pose**.
    1. Make sure that the keyframe selected in the animation timeline is 0 (see "Animation Timeline" screenshot below)
    2. Click into the main viewport next to the armature
-   3. Open the Keyframe menu (Pose -> Animation -> Insert Keyframe, Hotkey: `I)`
-   4. Select `Whole Character` (Hotkey: `W).` The menu will close now.
+   3. Open the Keyframe menu (Pose -> Animation -> Insert Keyframe, Hotkey: `K`
+   4. Select `Whole Character` (Hotkey: `W` ).The menu will close now.
    5. Press the right arrow to select the next keyframe
    6. Repeat the steps 3 and 4
    7. After you have done that, click on the `Push Down Action` button
@@ -218,6 +218,12 @@ If all went well, entering photo mode will show your new pose.
 
 4. If that doesn't work, change the numTracks to `0`
 5. If that still doesn't work, make sure that your pose has **at least two keyframes** by going back to [#step-2-creating-the-animation](./#step-2-creating-the-animation "mention") and not skimming this time.
+
+### Can't import: Invalid Joint Transform IK\_LeftHand
+
+You went and used legacy xBaebsae IK templates, eh choombatta?
+
+Go and get the right ones up here at the start of the page, you silly sausage.
 
 ### Can't import: No extra data
 
