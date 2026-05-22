@@ -15,9 +15,9 @@ description: I'm done, what's next?
 
 <summary>Why are we doing this?</summary>
 
-When **packing** a mod, Wolvenkit generates an .archive file with the files in your project's `source` folder. The problem here is that each file can only be **modified once**.&#x20;
+When **packing** a mod, Wolvenkit generates an .archive file with the files in your project's `source` folder. The problem here is that each file can only be **modified once**.
 
-Assume both you and your friend make an NPV. They made Alice, you are making Bob. And because your friend was lazy, they didn't complete this step. And since their project is called `Alice_NPV.archive`,  none of your changes will even show!
+Assume both you and your friend make an NPV. They made Alice, you are making Bob. And because your friend was lazy, they didn't complete this step. And since their project is called `Alice_NPV.archive`, none of your changes will even show!
 
 That's why you'll have to re-path your folder. If you don't, you will ruin someone's day.
 
@@ -29,7 +29,7 @@ You need to **re-name the template folders**. Unless you want to make more NPVs,
 
 ### My NPV breaks AMM!
 
-That's how you know that you have syntax errors in your NPV's `.lua` file. Copy the contents of the file into a [lua validator](https://www.tutorialspoint.com/execute_lua_online.php), then run the code and make sure to fix all errors.&#x20;
+That's how you know that you have syntax errors in your NPV's `.lua` file. Copy the contents of the file into a [lua validator](https://www.tutorialspoint.com/execute_lua_online.php), then run the code and make sure to fix all errors.
 
 {% hint style="info" %}
 It's usually missing quotation marks or commas. The tool above will give you a line number. Compare the line with the working template and fix the differences.
@@ -41,13 +41,21 @@ If you feel stuck, you can ask ChatGPT – just tell it that you're trying to fi
 
 #### You can't select them in AMM
 
-The error is with your `.lua` file – either it's not in the correct folder, or AMM fails to load it.
+The error is with your `.lua` file – either it's not in the correct folder, or AMM fails to load it. Make sure that the [file's syntax](https://coddy.tech/playground/lua) is correct.
 
 #### If you can select the NPV in AMM
 
-If you click on the button, but nothing happens, that means that the game can't find your `.ent` file. The error is between your `.lua` and your `.ent`.&#x20;
+You click on the button, but nothing happens: the game can't find your `.ent` file. The error is between your `.lua` and your `.ent`.
 
-Most likely, the path to the .ent file is not correct. If it is, make sure that it has **no upper-case characters**.&#x20;
+Most likely, the path to the .ent file is not correct. If it is, make sure that you have **no upper-case characters** under `archive`.
+
+### My NPV's idle animations are wrong
+
+That's a known issue when you're running [Photomode NPCs Extended](https://www.nexusmods.com/cyberpunk2077/mods/18837) - at some point, the game gets confused because you have too many of them, and starts mixing up their idle anims. Your options here are:&#x20;
+
+* disable the other mod
+* Edit the file `Photomode_NPCs_Extended_xBaebsae.yaml` and delete entries that you aren't using (mind the whitespaces)
+* Live with it :)
 
 ### My NPV turns into someone else if I walk away from them!
 
@@ -81,7 +89,7 @@ That happens when you're loading an appearance that the game doesn't know about 
 
 <figure><img src="../../../.gitbook/assets/npv_troubleshooting_lua_ent.png" alt=""><figcaption></figcaption></figure>
 
-If that was not it, double-check the `path` in your lua file and make sure that it points to the correct .ent file, and not to a backup or backup project.&#x20;
+If that was not it, double-check the `path` in your lua file and make sure that it points to the correct .ent file, and not to a backup or backup project.
 
 {% hint style="info" %}
 This particular problem is **always** between those two files. Other mistakes will have other effects.
@@ -89,7 +97,7 @@ This particular problem is **always** between those two files. Other mistakes wi
 
 ### Another NPV is showing!
 
-This is the reason for the [#re-path-your-folder](npv-cleanup-and-troubleshooting.md#re-path-your-folder "mention") section in this guide. If you want more information, read  [#why-are-we-doing-this](npv-cleanup-and-troubleshooting.md#why-are-we-doing-this "mention"). Otherwise, you can temporarily remove all other NPVs or make sure to complete the re-pathing.
+This is the reason for the [#re-path-your-folder](npv-cleanup-and-troubleshooting.md#re-path-your-folder "mention") section in this guide. If you want more information, read [#why-are-we-doing-this](npv-cleanup-and-troubleshooting.md#why-are-we-doing-this "mention"). Otherwise, you can temporarily remove all other NPVs or make sure to complete the re-pathing.
 
 ### I'm getting errors in Wolvenkit!
 
@@ -103,7 +111,6 @@ Just install the mod via WKit, launch Cyberpunk the way you normally do.
 
 ## Garment Support isn't working!
 
-GarmentSupport only works on **actual garment items** that have been equipped using the game's **transaction system**. As of October 2024, that's not the case for NPCs.&#x20;
+GarmentSupport only works on **actual garment items** that have been equipped using the game's **transaction system**. As of October 2024, that's not the case for NPCs.
 
 Unfortunately, you'll have to go refitting. Sorry!
-
