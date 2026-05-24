@@ -32,7 +32,7 @@ This process is accomplished via 'parameters' on the mesh:
 
 ### Why doesn't it work on my NPC?
 
-GarmentSupport only works on **actual garment items** that have been equipped using the game's **transaction system**. As of October 2024, that's not the case for NPCs. \
+GarmentSupport only works on **actual garment items** that have been equipped using the game's **transaction system**. As of October 2024, that's not the case for NPCs.\
 You'll have to go refitting!
 
 ## Component prefixes
@@ -43,13 +43,9 @@ A high garment score means that the item is "on top", squishing anything worn "b
 
 The prefixes are as follows:
 
-
-
 <table><thead><tr><th width="130"></th><th></th></tr></thead><tbody><tr><td><p>h0_</p><p>t0_</p><p>s0_</p><p>l0_<br>...</p></td><td>Any component with a 0 in its prefix will be treated like a body mesh (no deform/squishing of <strong>any</strong> meshes with x0_ prefixes across .ent files)</td></tr><tr><td>h1_</td><td>Head inner (mask, sunglasses)</td></tr><tr><td>h2_</td><td>Head outer (helmet, bandana)</td></tr><tr><td>t1_</td><td>Torso inner (shirts)</td></tr><tr><td>t2_</td><td>Torso outer (jackets, coats...)</td></tr><tr><td>s1_</td><td>Shoes</td></tr><tr><td>l1_</td><td>legs (pants that aren't leggins)</td></tr></tbody></table>
 
 ## How it looks if it's broken
-
-
 
 <figure><img src="../../../.gitbook/assets/garment_support_broken.png" alt=""><figcaption><p>Often, you can salvage things by deleting the parameters in WolvenKit</p></figcaption></figure>
 
@@ -101,7 +97,7 @@ An example for `t0_000_pma_base__full` (the default body component, torso+legs):
 -1970
 ```
 
-If you're using Equipment-EX slots for your clothing items, then the score is determined by outfit slot you are using. The scoring follows the same logic,  i.e. items in slots with higher scores will squish items in slots with lower scores. The garment scores for each outfit slot are:
+If you're using Equipment-EX slots for your clothing items, then the score is determined by outfit slot you are using. The scoring follows the same logic, i.e. items in slots with higher scores will squish items in slots with lower scores. The garment scores for each outfit slot are:
 
 ```
 OutfitSlots.Head = 310000
@@ -160,11 +156,7 @@ OutfitSlots.BodyMiddle = 170000
 OutfitSlots.BodyOuter = 300000
 ```
 
-
-
 ## Troubleshooting Garment Support
-
-
 
 ### Garment support isn't working/working oddly
 
@@ -177,7 +169,7 @@ Check the component's **id** in the mesh `.ent` or `.app` appearance's `componen
 If any given ID is equipped twice, it can break garment support in the way you're observing.
 
 {% hint style="info" %}
-If you select the ID in the node tree viewer  to the left, you can use `Generate New CRUID` to create a new entry that is unique considering all your installed mods.
+If you select the ID in the node tree viewer to the left, you can use `Generate New CRUID` to create a new entry that is unique considering all your installed mods.
 {% endhint %}
 
 #### Import settings
@@ -192,11 +184,11 @@ Check [Painting garment support parameters](painting-garment-support-parameters.
 
 It's not doing that to spite you. Most likely, you have a non-unique component ID, and the game can't tell the two items apart. Here's how to resolve that:
 
-<figure><img src="../../../.gitbook/assets/unique_cruids.png" alt=""><figcaption><p>The CRUID editor is available in Wolvenkit 8.14+ - you can go grab the <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a>, too </p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/unique_cruids.png" alt=""><figcaption><p>The CRUID editor is available in Wolvenkit 8.14+ - you can go grab the <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a>, too</p></figcaption></figure>
 
 ### Importing with Garment Support
 
-Make sure that your mesh has the [Import Garment Support](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") property checked (this should be default by now).
+Make sure that your mesh has the [Import/Export: Mesh (3d Model) #Import Garment Support](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") property checked (this should be default by now).
 
 If that doesn't work, you still have the option to re-create [garment-support-from-scratch.md](garment-support-from-scratch.md "mention") in Blender
 
@@ -222,11 +214,11 @@ To check if it's this, equip **only** the edited item. If it breaks as soon as y
 
 <figure><img src="../../../.gitbook/assets/garment_support_broken.png" alt=""><figcaption></figcaption></figure>
 
-#### Option 1 (likely to work): Import your mesh with garment supports
+**Option 1 (likely to work): Import your mesh with garment supports**
 
-On the .glb import setting, check the [Import Garment Support](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") box.&#x20;
+On the .glb import setting, check the [Import/Export: Mesh (3d Model) #Import Garment Support](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#import-garment-support "mention") box.
 
-#### Option 2 (guaranteed to work): delete GarmentSupport from the mesh
+**Option 2 (guaranteed to work): delete GarmentSupport from the mesh**
 
 <figure><img src="../../../.gitbook/assets/mesh_editing_parameters.png" alt=""><figcaption><p>This will break automatic shrinking when you put clothes over your item. But hey, if the alternative is a broken mess…</p></figcaption></figure>
 

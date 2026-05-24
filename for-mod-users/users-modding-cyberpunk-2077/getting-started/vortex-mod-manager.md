@@ -216,7 +216,7 @@ It will convert all of your "legacy" mods into REDmod format, and has a habit of
 <figure><img src="../../../.gitbook/assets/Vortex_v2077_settings.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-#### **Vortex Extension Bug**
+**Vortex Extension Bug**
 
 In the 0.12.0 version of the Cyberpunk 2077 Vortex Extension, a bug was introduced that would **enable this toggle without warning**.
 

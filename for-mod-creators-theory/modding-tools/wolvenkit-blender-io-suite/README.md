@@ -9,7 +9,7 @@ description: How the Wolvenkit Blender plugin works
 **Published**: ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented edit**: Dec 20 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This is the landing page for the Wolvenkit Blender plugin.&#x20;
+This is the landing page for the Wolvenkit Blender plugin.
 
 Here, you can find [#usage](./#usage "mention") instructions, as well as an overview of its features:
 
@@ -35,11 +35,9 @@ You can find a detailed install guide under [installing-the-wolvenkit-blender-pl
 ## Usage
 
 The toolbar to the right of your viewport will show you the `CP77 Modding` tab.\
-(Keyboard shortcut to hide/unhide: **`n`**)&#x20;
+(Keyboard shortcut to hide/unhide: **`n`**)
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_viewport.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ## Animation Tools
 
@@ -67,7 +65,7 @@ If you import an .anims file, selecting **any armature** will give you the optio
 The collision tools and -generator can
 
 * generate of convex colliders with the exact shape of your mesh\
-  &#xNAN;_&#x54;he number of vertices to sample should be set to match the number set in the .phys file in order to ensure successful export_
+  \&#xNAN;_The number of vertices to sample should be set to match the number set in the .phys file in order to ensure successful export_
 * generate box and capsule colliders with either user specified sizing or sized automatically to match the selected mesh
 * export edited collision bodies back to .phys \*\*\*currently requires a wolvenkit converted .phys.json file
 
@@ -75,14 +73,14 @@ The collision tools and -generator can
 
 ## Mesh Tools
 
-| <p>Select a mesh in the viewport to see all options.<br><br>You can find the following tools here:<br><br>Modelling<br><a data-mention href="./#change-armature-target">#change-armature-target</a><br><a data-mention href="./#uv-checker">#uv-checker</a><br><a data-mention href="./#weight-transfer">#weight-transfer</a><br><br>Mesh Cleanup<br><a data-mention href="./#prep.-it">#prep.-it</a><br><a data-mention href="./#group-ungroup-verts">#group-ungroup-verts</a><br><a data-mention href="./#delete-unused-vert-groups">#delete-unused-vert-groups</a><br><br><a data-mention href="./#akl-autofitter">#akl-autofitter</a><br><br>Vertex Colours<br><a data-mention href="./#apply-vertex-colour-preset">#apply-vertex-colour-preset</a><br><a data-mention href="./#save-vertex-colour-preset">#save-vertex-colour-preset</a><br><a data-mention href="./#delete-vertex-colour-preset">#delete-vertex-colour-preset</a><br><br>Material Export<br><a data-mention href="./#export-hair-profile">#export-hair-profile</a><br><a data-mention href="./#export-mlsetup">#export-mlsetup</a><br><br><br><br><br><br><br></p> | <p></p><div><figure><img src="../../../.gitbook/assets/wkit_blender_io_suite_meshtools.png" alt=""><figcaption></figcaption></figure></div> |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| <p>Select a mesh in the viewport to see all options.<br><br>You can find the following tools here:<br><br>Modelling<br><a data-mention href="./#change-armature-target">#change-armature-target</a><br><a data-mention href="./#uv-checker">#uv-checker</a><br><a data-mention href="./#weight-transfer">#weight-transfer</a><br><br>Mesh Cleanup<br><a data-mention href="./#prep.-it">#prep.-it</a><br><a data-mention href="./#group-ungroup-verts">#group-ungroup-verts</a><br><a data-mention href="./#delete-unused-vert-groups">#delete-unused-vert-groups</a><br><br><a data-mention href="./#akl-autofitter">#akl-autofitter</a><br><br>Vertex Colours<br><a data-mention href="./#apply-vertex-colour-preset">#apply-vertex-colour-preset</a><br><a data-mention href="./#save-vertex-colour-preset">#save-vertex-colour-preset</a><br><a data-mention href="./#delete-vertex-colour-preset">#delete-vertex-colour-preset</a><br><br>Material Export<br><a data-mention href="./#export-hair-profile">#export-hair-profile</a><br><a data-mention href="./#export-mlsetup">#export-mlsetup</a><br><br><br><br><br><br><br></p> | <img src="../../../.gitbook/assets/wkit_blender_io_suite_meshtools.png" alt="" data-size="original"> |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
 
 ### Modelling
 
 #### Change Armature Target
 
-Lets you change the armature modifier of all selected meshes.&#x20;
+Lets you change the armature modifier of all selected meshes.
 
 The checkbox `Also Reparent Selected Meshes to the Armature` moves the selected meshes into the armature's hierarchy as children.
 
@@ -102,8 +100,6 @@ Lets you transfer [vertex weights](../../3d-modelling/meshes-and-armatures-riggi
 
 <figure><img src="../../../.gitbook/assets/cyberpunk_io_suite_weight_transfer.png" alt=""><figcaption></figcaption></figure>
 
-
-
 {% hint style="info" %}
 The plugin will transfer weights by submesh name. If your target armature has more submeshes than your source armature, simply create duplicates and rename them accordingly.
 {% endhint %}
@@ -121,7 +117,7 @@ To check out the more detailed process with a Transfer Weight modifier, check ou
 3. Press `Ctrl+L` and select `Transfer Mesh Data`
 4. In the popup at the bottom left of your viewport, change the following properties:
 
-#### ![](../../../.gitbook/assets/wkit_io_suite_transfer_weights_by_hand.png)
+![](../../../.gitbook/assets/wkit_io_suite_transfer_weights_by_hand.png)
 
 5. Click anywhere else. You're done!
 

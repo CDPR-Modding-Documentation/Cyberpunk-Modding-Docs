@@ -21,8 +21,6 @@ description: >-
   * Working with WolvenKit
   * Using World Builder (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
 
-
-
 {% hint style="info" icon="code-branch" %}
 [Akiway's fork of World Builder](https://github.com/Akiway/CP77_entSpawner/releases/latest) is a more advanced version that put the focus on **Quality of Life**.
 
@@ -32,40 +30,40 @@ The version **a.1.2.0** brings a new **Quick Elevator Setup** feature to help yo
 ## Creating the elevator
 
 {% tabs %}
-{% tab title="Akiway's fork a.1.2.0 or newer" %}
-## Quick Setup Elevator tutorial in video
+{% tab title="Akiway" %}
+### Quick Setup Elevator tutorial in video
 
 {% embed url="https://www.youtube.com/watch?list=PL3AzCsUebgGMU-jRkt7eBAAYmJIhpHPgo&v=pwbwUzF0DUU" %}
 
-## Quick Setup Elevator explained
+### Quick Setup Elevator explained
 
-### Spawning the elevator
+#### Spawning the elevator
 
-1. In <mark style="color:purple;">Spawn New</mark> tab, search for an object of type <mark style="background-color:blue;">**Entity**</mark> and variant <mark style="background-color:blue;">**Device**</mark>.
-2. Filter the results by <mark style="color:purple;">Device Class Name</mark> and select <mark style="background-color:blue;">**LiftControllerPS**</mark>.
+1. In [Spawn New tab](../object-spawner/ui-tabs-explained/tab-spawn-new.md), search for an object of type <mark style="background-color:blue;">**Entity**</mark> and variant <mark style="background-color:blue;">**Device**</mark>.
+2. Filter the results by [<mark style="color:purple;">Device Class Name</mark>](#user-content-fn-1)[^1] and select <mark style="background-color:blue;">**LiftControllerPS**</mark>.
 3. Select the elevator you want, some of them have differents appearances.
 4. Position the elevator where you want it to be.
 
-### Setting the first floor
+#### Setting the first floor
 
 {% hint style="warning" icon="hashtag" %}
 **A node reference is an unique identifier**, but **it is not a path**. <mark style="color:purple;">Auto-generation</mark> <i class="fa-rotate-exclamation" style="color:purple;">:rotate-exclamation:</i> uses the current group structure to create it. To avoid modding conflicts, you might want to set a custom value instead.
 
-![](<../../../.gitbook/assets/image (267).png>)
+<img src="../../../.gitbook/assets/image (267).png" alt="" data-size="original">
 {% endhint %}
 
 In the elevator properties, click on the <mark style="color:purple;">Quick Elevator Setup</mark> button, a popup should appear :
 
 <figure><img src="../../../.gitbook/assets/image (656).png" alt=""><figcaption></figcaption></figure>
 
-1. Start by creating a unique [<mark style="color:purple;">node ref</mark>](#user-content-fn-1)[^1] <i class="fa-hashtag" style="color:purple;">:hashtag:</i> for the elevator, this can be done by clicking on the [<mark style="color:purple;">generate button</mark>](#user-content-fn-2)[^2] <i class="fa-rotate-exclamation" style="color:purple;">:rotate-exclamation:</i> on the right of the input.
+1. Start by creating a unique [<mark style="color:purple;">node ref</mark>](#user-content-fn-2)[^2] <i class="fa-hashtag" style="color:purple;">:hashtag:</i> for the elevator, this can be done by clicking on the [<mark style="color:purple;">generate button</mark>](#user-content-fn-3)[^3] <i class="fa-rotate-exclamation" style="color:purple;">:rotate-exclamation:</i> on the right of the input.
 2. Click on <mark style="color:purple;">+ Add Floor</mark> in the Floor Manager. Each floor contains at least a terminal and a ground marker.
    * The terminal allows the player to call the elevator, it is also needed to register the floor in the elevator memory.
    * The ground marker indicates where the elevator should move for this floor.
-   * Both the terminal and the marker have a [<mark style="color:purple;">node ref</mark>](#user-content-fn-1)[^1] <i class="fa-hashtag" style="color:purple;">:hashtag:</i> that are [<mark style="color:purple;">auto-generated</mark>](#user-content-fn-2)[^2] <i class="fa-rotate-exclamation" style="color:purple;">:rotate-exclamation:</i> (customizable).
-3. <i class="fa-language" style="color:purple;">:language:</i> Choose a floor name :&#x20;
+   * Both the terminal and the marker have a [<mark style="color:purple;">node ref</mark>](#user-content-fn-2)[^2] <i class="fa-hashtag" style="color:purple;">:hashtag:</i> that are [<mark style="color:purple;">auto-generated</mark>](#user-content-fn-3)[^3] <i class="fa-rotate-exclamation" style="color:purple;">:rotate-exclamation:</i> (customizable).
+3. <i class="fa-language" style="color:purple;">:language:</i> Choose a floor name :
    * You can use any [LocKey#](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/lockey-browser) value to have a translated text.
-   * <mark style="background-color:blue;">**Localization suggestions**</mark> offers you a selection of already existing translations used for this exact purpose. \
+   * <mark style="background-color:blue;">**Localization suggestions**</mark> offers you a selection of already existing translations used for this exact purpose.\
      ![](<../../../.gitbook/assets/image (4).png>)
    * This input also accept direct text that won't be translated in other languages (not recommended).
 4. <i class="fa-door-open" style="color:blue;">:door-open:</i> Select which door should open.\
@@ -73,7 +71,7 @@ In the elevator properties, click on the <mark style="color:purple;">Quick Eleva
 5. _(Optional)_ <i class="fa-door-closed" style="color:blue;">:door-closed:</i> Add external doors.
    * These doors are meant to prevent the player from falling into the elevator shaft, they automatically open when the elevator is at the same floor and the player is nearby.
    * You can add as many external doors as you want.
-   * External door also requires a [<mark style="color:purple;">node ref</mark>](#user-content-fn-1)[^1] <i class="fa-hashtag" style="color:purple;">:hashtag:</i> that is [<mark style="color:purple;">auto-generated</mark>](#user-content-fn-2)[^2] <i class="fa-rotate-exclamation" style="color:purple;">:rotate-exclamation:</i> by default (customizable).<br>
+   * External door also requires a [<mark style="color:purple;">node ref</mark>](#user-content-fn-2)[^2] <i class="fa-hashtag" style="color:purple;">:hashtag:</i> that is [<mark style="color:purple;">auto-generated</mark>](#user-content-fn-3)[^3] <i class="fa-rotate-exclamation" style="color:purple;">:rotate-exclamation:</i> by default (customizable).<br>
 
 {% hint style="success" icon="door-open" %}
 To help you visualizing which door you want to open, the elevator display **on-screen indicators with door numbers**. To see them, you can close the popup and look at the elevator.
@@ -85,9 +83,9 @@ To help you visualizing which door you want to open, the elevator display **on-s
 Two externals doors are suggested, but if you wish to use another <mark style="background-color:blue;">**DoorControllerPS**</mark> device, you can do it. Check out this page for manual addition : [custom-elevator-doors.md](custom-elevator-doors.md "mention")
 {% endhint %}
 
-### Setting the next floors
+#### Setting the next floors
 
-Repeat the same process and then, outside of the Quick Elevator Setup popup, select the floor group (containing your terminal, marker and optional doors) and move it. Place it where you want your floor to be.
+Repeat the same process and then, outside of the <mark style="color:purple;">Quick Elevator Setup</mark> popup, select the floor group (containing your terminal, marker and optional doors) and move it. Place it where you want your floor to be.
 
 {% hint style="info" %}
 The external doors and terminal are positioned approximately at door n°1, you may need to adjust their position independently per floor.
@@ -103,9 +101,9 @@ Place the elevator at the exact position you want it to arrive, and copy-paste i
 {% endtab %}
 
 {% tab title="Official 0.8 or newer" %}
-## Spawning nodes
+### Spawning nodes
 
-### Overview
+#### Overview
 
 * In this guide, we will build a simple elevator with 2 floors
 * For this we will need 3 device nodes:
@@ -115,7 +113,7 @@ Place the elevator at the exact position you want it to arrive, and copy-paste i
   * One per floor
   * These determine the position to which the elevator drives
 
-### Spawning Devices
+#### Spawning Devices
 
 {% hint style="warning" %}
 Make sure to spawn the elevator and floor terminals as `Device`(`Entity -> Device` in World Builder)
@@ -126,7 +124,7 @@ Make sure to spawn the elevator and floor terminals as `Device`(`Entity -> Devic
 * For the terminals we will use `base\gameplay\devices\elevators\terminals\elevator_floor_terminal_1.ent`
   * Spawn two of them as `Device`, and place one per stop
 
-### Spawning Markers
+#### Spawning Markers
 
 * For the markers, select `Meta -> Static Marker`in World Builder
 * Spawn two markers
@@ -142,7 +140,7 @@ Make sure to spawn the elevator and floor terminals as `Device`(`Entity -> Devic
 Ensure that the "Primary Range" and "Secondary Range" (Found under the "World Node" header) of the marker nodes is higher than the one of the elevator device
 {% endhint %}
 
-## Assigning NodeRef's
+### Assigning NodeRef's
 
 * In order to link and reference all the spawned object, each one will need its own, **unique** NodeRef
 * Expand the `World Node`header and fill the NodeRef field with a unique string
@@ -157,7 +155,7 @@ Ensure that the "Primary Range" and "Secondary Range" (Found under the "World No
 Do not use the same NodeRef names as used in this guide, but choose your own unique ones instead.
 {% endhint %}
 
-## Linking Devices
+### Linking Devices
 
 * Next we need to tell the elevator which floors it can use
 * To do this, we will go to the `Device -> Device Connections` header of the elevator
@@ -170,12 +168,12 @@ Do not use the same NodeRef names as used in this guide, but choose your own uni
 
     <figure><img src="../../../.gitbook/assets/image (567).png" alt="" width="449"><figcaption><p>Example of the device connections for an elevator with two floors</p></figcaption></figure>
 
-## Setting up persistency
+### Setting up persistency
 
 * In order for the elevator to be fully functional, the terminals must be set to be persistent
 * Do this by checking the `Persistent`checkbox of each terminal
 
-## Setting up instance data
+### Setting up instance data
 
 * In order for each terminal to know which floor marker to use, and what its name is supposed to be, we will use entity instance data
 *   For each terminal, navigate to:
@@ -188,8 +186,6 @@ Do not use the same NodeRef names as used in this guide, but choose your own uni
     <figure><img src="../../../.gitbook/assets/image (566).png" alt="" width="510"><figcaption><p>Example data for a terminals ElevatorFloorSetup (<code>floorMarker</code>NodeRef gets turned into hash)</p></figcaption></figure>
 * Optionally change the elevator speed and inital starting floor by modifying:
   * `Entity Instance Data / LiftController / persistentState / liftSetup`
-
-
 {% endtab %}
 {% endtabs %}
 
@@ -212,8 +208,10 @@ _World Builder preview is not fully functionnal due to hard limitations._
 If you make changes to the elevator, make sure to use a fresh save game (One where the old elevator was not saved in) after having imported it into WolvenKit
 {% endhint %}
 
-[^1]: **A node reference is an unique identifier**, it is not a path.\
+[^1]: A device class defines the entity's properties as well as its behavior and connections to the game's systems.
+
+[^2]: **A node reference is an unique identifier**, it is not a path.\
     To avoid modding conflicts, make sure to set a ref that follows a pattern of your own.\
     Example : `#/author/modName/group/#myObjectidentifier`
 
-[^2]: <mark style="color:purple;">Auto-generation</mark> <i class="fa-rotate-exclamation" style="color:purple;">:rotate-exclamation:</i> uses the current group structure and element name to create a node ref. The reference unicity cannot be guaranteed with the other mods, so it is recommended to set a custom value.
+[^3]: <mark style="color:purple;">Auto-generation</mark> <i class="fa-rotate-exclamation" style="color:purple;">:rotate-exclamation:</i> uses the current group structure and element name to create a node ref. The reference unicity cannot be guaranteed with the other mods, so it is recommended to set a custom value.

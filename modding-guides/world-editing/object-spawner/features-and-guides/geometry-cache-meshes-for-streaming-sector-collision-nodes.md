@@ -106,7 +106,7 @@ With PhysX Mesh enabled, the simple collider shown in-game is only for editing; 
 {% endstep %}
 
 {% step %}
-#### Set the PhysX mesh parameters
+**Set the PhysX mesh parameters**
 
 * **Target name:** name of the object you are attaching the collider to
 * **Sector hash:** value of the `sectorHash` field from step 1.5

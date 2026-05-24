@@ -117,7 +117,7 @@ You can either double-click on the `virtual-atelier-full` folder (first item) to
 
 {% tabs %}
 {% tab title="Finding the Folder Path in the Search Results" %}
-<h4 align="center">Finding the folder path in the search results</h4>
+<p align="center"><strong>Finding the folder path in the search results</strong></p>
 
 If you right-click on a folder or file, you will see a menu entry "`open folder/file location`".
 
@@ -127,7 +127,7 @@ This will open a new Windows Explorer window in the folder **containing** the it
 {% endtab %}
 
 {% tab title="Deleting From the Search Results" %}
-<h4 align="center">Deleting from the search results</h4>
+<p align="center"><strong>Deleting from the search results</strong></p>
 
 Select multiple items from the list by holding the `Ctrl` key while you click.
 

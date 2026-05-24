@@ -15,7 +15,7 @@ This page will explain to you what Load Order is and how it works, then tell you
 ## TL;DR
 
 {% hint style="danger" %}
-You're not supposed to manage load order conflicts. If you ever feel the need to do that, a modder fucked up.&#x20;
+You're not supposed to manage load order conflicts. If you ever feel the need to do that, a modder fucked up.
 {% endhint %}
 
 In that case you may still influence`.archive` mods and REDmods. **Tweak mods** may conflict as well since tweakDB is a database of static values (e.g. two mods both edit the weapon stats of the Masamune).
@@ -48,27 +48,25 @@ The game loads mods in the following order (higher wins):
 
 ### 1. .archive mods
 
-All .archive files in `Cyberpunk 2077/archive/pc/mod` in [ASCII-alphabetical order](load-order.md#load-order-ascii-sort).&#x20;
+All .archive files in `Cyberpunk 2077/archive/pc/mod` in [ASCII-alphabetical order](load-order.md#load-order-ascii-sort).
 
-Example: To load the conflicting file from **realistic\_boobs\_DDDDDDDDD\_cup.archive** before **i\_know\_nothing\_about\_back\_problems.archive** you could simply change the capitalisation. This will lead to the following order&#x20;
+Example: To load the conflicting file from **realistic\_boobs\_DDDDDDDDD\_cup.archive** before **i\_know\_nothing\_about\_back\_problems.archive** you could simply change the capitalisation. This will lead to the following order
 
 ```
 Realistic_boobs_DDDDDDDDD_cup.archive
 i_know_nothing_about_back_problems.archive
 ```
 
-If you change the load order by renaming a file, it is suggested to indicate said change in your mod manager, for example by also renaming the mod in the manager to reflect the change made. \
+If you change the load order by renaming a file, it is suggested to indicate said change in your mod manager, for example by also renaming the mod in the manager to reflect the change made.\
 \
-In this case if the mod is named "**Backbreaker Boobs"**, you could change it's name in the manager to **"Backbreaker Boobs - renamed to load before Backpain is a myth"**. \
-This helps keep an overview about changed file names and load order and minimises confusion later on when adding more mods.&#x20;
+In this case if the mod is named "**Backbreaker Boobs"**, you could change it's name in the manager to **"Backbreaker Boobs - renamed to load before Backpain is a myth"**.\
+This helps keep an overview about changed file names and load order and minimises confusion later on when adding more mods.
 
 {% hint style="danger" %}
-#### Note: If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file. **Delete this file and save yourself from a world of pain.**
+**Note: If a file called `modlist.txt` is found inside `archive/pc/mod` then the game will load archives according to the order inside that file. Delete this file and save yourself from a world of pain.**
 
 **If you really need to change where a mod loads, change the name of the file.**
 {% endhint %}
-
-
 
 <details>
 
@@ -87,7 +85,7 @@ This means the game will load `modb` before `moda`, even though the filenames ar
 
 ### 2. REDmods
 
-Folders in `Cyberpunk 2077/mods` are loaded strictly **after** `/archive/pc/mod` in [ASCII-alphabetical order](load-order.md#load-order-ascii-sort).&#x20;
+Folders in `Cyberpunk 2077/mods` are loaded strictly **after** `/archive/pc/mod` in [ASCII-alphabetical order](load-order.md#load-order-ascii-sort).
 
 ### Load order: ASCII sort
 

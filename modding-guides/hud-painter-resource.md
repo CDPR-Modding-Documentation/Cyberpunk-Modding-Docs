@@ -11,7 +11,7 @@ description: >-
 **Published**: Apr 21 2026 by [nak](https://app.gitbook.com/u/bs7aSz6bIRelsXqp1IvSmwehIkg2 "mention")\
 **Last documented update**: Apr 21 2026 by [nak](https://app.gitbook.com/u/bs7aSz6bIRelsXqp1IvSmwehIkg2 "mention")
 
-This page shows you how to create presets for [HUD Painter](https://www.nexusmods.com/cyberpunk2077/mods/14935).&#x20;
+This page shows you how to create presets for [HUD Painter](https://www.nexusmods.com/cyberpunk2077/mods/14935).
 
 ### Wait, this is not what I want!
 
@@ -20,13 +20,13 @@ This page shows you how to create presets for [HUD Painter](https://www.nexusmod
 ## Overview
 
 {% hint style="warning" %}
-<mark style="color:$primary;">The content on this page contains some</mark> <mark style="color:$primary;"></mark><mark style="color:$primary;">**very minor**</mark> <mark style="color:$primary;"></mark><mark style="color:$primary;">spoilers, in the form of loading screens and journal menu screenshots at a later stage in the game.</mark>&#x20;
+<mark style="color:$primary;">The content on this page contains some</mark> <mark style="color:$primary;">**very minor**</mark> <mark style="color:$primary;">spoilers, in the form of loading screens and journal menu screenshots at a later stage in the game.</mark>
 {% endhint %}
 
 #### For each option in the [HUD Painter](https://www.nexusmods.com/cyberpunk2077/mods/14935) menu I have provided the following:
 
 1. Search terms (so you can use ctrl+f to find something specific).
-2. In game screenshots where the associated option is set to <mark style="color:$success;">**green**</mark> and all other options are set to white. Essentially, any HUD/UI elements that are <mark style="color:$success;">**green**</mark> are controlled by that option.&#x20;
+2. In game screenshots where the associated option is set to <mark style="color:$success;">**green**</mark> and all other options are set to white. Essentially, any HUD/UI elements that are <mark style="color:$success;">**green**</mark> are controlled by that option.
 
 Each screenshot has its own tab (for the sake of sane formatting).
 
@@ -67,8 +67,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Main Menu" %}
-
-
 <figure><img src="../.gitbook/assets/8.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
@@ -185,14 +183,10 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Crafting" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-18 161423.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Perks" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-18 161618.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
@@ -238,8 +232,6 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tab title="Backpack" %}
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 162820.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endtab %}
 
 {% tab title="Skills" %}
@@ -271,20 +263,14 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Splash Screen" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 163409.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Settings Menu" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 163514.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
 {% tab title="Load Menu" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 163506.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
@@ -305,8 +291,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Journal" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 164310.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
@@ -387,8 +371,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Launch Menu" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 180807.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
@@ -401,8 +383,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Load Menu" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 180925.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
@@ -471,8 +451,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Inventory" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 181927.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
@@ -485,8 +463,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Perks" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 182010.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
@@ -499,7 +475,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -547,7 +523,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -584,8 +560,6 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tab title="Perks" %}
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 230924.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endtab %}
 {% endtabs %}
 
@@ -597,7 +571,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="HUD" %}
-<figure><img src="../.gitbook/assets/Screenshot 2026-04-19 232020 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-04-19 232020.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -609,7 +583,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -634,8 +608,6 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tab title="Cyberware" %}
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 233444.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endtab %}
 
 {% tab title="Inventory" %}
@@ -672,8 +644,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% tabs %}
 {% tab title="HUD" %}
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 234651.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endtab %}
 
 {% tab title="Quickhack Scanner" %}
@@ -681,8 +651,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Main Menu" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 234453.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
@@ -699,8 +667,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Skills" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-19 234542.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
@@ -725,8 +691,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Inventory" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-20 132237.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
@@ -823,7 +787,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -839,7 +803,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -871,7 +835,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -887,7 +851,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -931,7 +895,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -947,7 +911,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -963,7 +927,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -979,7 +943,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1131,8 +1095,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Map" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-20 154135.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 
@@ -1157,7 +1119,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1229,7 +1191,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1261,7 +1223,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1277,7 +1239,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1293,7 +1255,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1309,7 +1271,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="Fast Travel Map" %}
-<figure><img src="../.gitbook/assets/Screenshot 2026-04-20 162449 (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/Screenshot 2026-04-20 162449.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
 
@@ -1341,7 +1303,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1357,7 +1319,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1373,7 +1335,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1389,7 +1351,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1405,7 +1367,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1421,7 +1383,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1437,7 +1399,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1453,7 +1415,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1469,7 +1431,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1485,7 +1447,7 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tabs %}
 {% tab title="First Tab" %}
-**W.I.P**&#x20;
+**W.I.P**
 {% endtab %}
 
 {% tab title="Second Tab" %}
@@ -1560,8 +1522,6 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% tab title="Database" %}
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-20 170447.png" alt=""><figcaption></figcaption></figure>
-
-
 {% endtab %}
 {% endtabs %}
 
@@ -1729,8 +1689,6 @@ However, all of the significant options are covered comprehensively enough for y
 {% endtab %}
 
 {% tab title="Character" %}
-
-
 <figure><img src="../.gitbook/assets/Screenshot 2026-04-20 173758.png" alt=""><figcaption></figcaption></figure>
 {% endtab %}
 {% endtabs %}
@@ -1854,4 +1812,3 @@ However, all of the significant options are covered comprehensively enough for y
 
 {% endtab %}
 {% endtabs %}
-

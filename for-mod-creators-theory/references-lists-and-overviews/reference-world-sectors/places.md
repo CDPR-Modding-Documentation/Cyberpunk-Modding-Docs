@@ -41,7 +41,7 @@ print(GetPlayer():GetWorldPosition())
 
 <summary>Finding sectors: Legacy information</summary>
 
-#### Finding a specific sector
+**Finding a specific sector**
 
 For technical stuff about sectors and the really manual way to look for things go [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/files-and-what-they-do/the-whole-world-.streamingsector). For less masochistic methods read on.
 

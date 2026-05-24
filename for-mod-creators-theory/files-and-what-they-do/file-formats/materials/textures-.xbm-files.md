@@ -9,7 +9,7 @@ description: Details about in-game textures
 **Last documented update**: Apr 06 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 {% hint style="info" %}
-### Wait, this isn't what I want!
+#### Wait, this isn't what I want!
 
 Would you rather…
 

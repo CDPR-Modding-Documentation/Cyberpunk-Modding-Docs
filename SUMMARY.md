@@ -461,6 +461,7 @@
       * [Randomized Nested Groups](modding-guides/world-editing/object-spawner/features-and-guides/randomized-nested-groups.md)
       * [Creating Sector Variants](modding-guides/world-editing/object-spawner/features-and-guides/creating-sector-variants/README.md)
         * [Sector Variants Practical Example & Project](modding-guides/world-editing/object-spawner/features-and-guides/creating-sector-variants/sector-variants-practical-example-and-project.md)
+      * [Brush painting](modding-guides/world-editing/object-spawner/features-and-guides/brush-painting.md)
       * [Entity Instance Data](modding-guides/world-editing/object-spawner/features-and-guides/entity-instance-data.md)
       * [Creating Area Nodes](modding-guides/world-editing/object-spawner/features-and-guides/setting-area-outlines.md)
       * [Creating Prefabs with Blender](modding-guides/world-editing/object-spawner/features-and-guides/creating-prefabs-with-blender.md)

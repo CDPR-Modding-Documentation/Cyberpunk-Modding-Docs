@@ -29,7 +29,7 @@ Now let's see how the door mesh will move in relation to the car body as it's fo
 
 <figure><img src="../../../.gitbook/assets/Screenshot 2025-11-18 035912.png" alt="" width="563"><figcaption></figcaption></figure>
 
-> <h4 align="center"><em>How would this look inside the game?</em></h4>
+> <p align="center"><em><strong>How would this look inside the game?</strong></em></p>
 
 <figure><img src="../../../.gitbook/assets/Case1.png" alt=""><figcaption></figcaption></figure>
 

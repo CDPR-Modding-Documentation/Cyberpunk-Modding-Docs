@@ -11,6 +11,7 @@ description: Section for other features and guides
   * [Adding custom resources / props](adding-custom-resources-props.md)
   * [Randomized Nested Groups](randomized-nested-groups.md)
   * [Creating Sector Variants](creating-sector-variants/)
+  * [Brush painting](brush-painting.md)
   * [Entity Instance Data](entity-instance-data.md)
   * [Creating Area Nodes](setting-area-outlines.md)
   * [Creating Prefabs with Blender](creating-prefabs-with-blender.md)

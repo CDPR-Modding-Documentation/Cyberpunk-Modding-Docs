@@ -84,7 +84,7 @@ Just choose the header below for which platform you're using!
 
 {% tabs %}
 {% tab title="Installing Through GOG" %}
-#### Installing Cyberpunk: GOG
+**Installing Cyberpunk: GOG**
 
 {% hint style="success" %}
 If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-gog)
@@ -137,7 +137,7 @@ You don't need to create a subfolder for Cyberpunk, as GOG will do that for you.
 {% endtab %}
 
 {% tab title="Installing Through Steam" %}
-#### Installing Cyberpunk: Steam
+**Installing Cyberpunk: Steam**
 
 {% hint style="success" %}
 If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-steam)
@@ -147,7 +147,7 @@ To be done
 {% endtab %}
 
 {% tab title="Installing Through Epic" %}
-#### Installing Cyberpunk: Epic
+**Installing Cyberpunk: Epic**
 
 {% hint style="success" %}
 If you already have the game installed, you can skip this section and proceed with [Configuring Cyberpunk](./#configuring-cyberpunk-epic)
@@ -173,7 +173,7 @@ Just choose the header below for which platform you're using!
 
 {% tabs %}
 {% tab title="Configuring Through GOG" %}
-#### Configuring Cyberpunk: GOG
+**Configuring Cyberpunk: GOG**
 
 Once the game has installed, we want to make it run with mods.
 
@@ -212,7 +212,7 @@ That's it, you are done with your install of the game! You can now move on to [#
 {% endtab %}
 
 {% tab title="Configuring Through Steam" %}
-#### Configuring Cyberpunk: Steam
+**Configuring Cyberpunk: Steam**
 
 1. Navigate to _Cyberpunk 2077_
 
@@ -235,7 +235,7 @@ That's it, you are done with your install of the game! You can now move on to [#
 {% endtab %}
 
 {% tab title="Configuring Through Epic" %}
-#### Configuring Cyberpunk: Epic
+**Configuring Cyberpunk: Epic**
 
 1. Navigate to _Cyberpunk 2077_
 

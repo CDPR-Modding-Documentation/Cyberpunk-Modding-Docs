@@ -9,7 +9,7 @@ This guide is currently a work in progress.
 {% endhint %}
 
 {% hint style="info" %}
-#### Modding Support on MacOS (or Lack Thereof)
+**Modding Support on MacOS (or Lack Thereof)**
 
 At the time of writing, the only framework mod that is unofficially supported on the MacOS build of Cyberpunk 2077 is [redscript](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/) starting with the 0.5.29 build. As such, the only mods that are supported on MacOS are pure **redscript-only** mods (i.e. no Codeware, no ArchiveXL, etc.)
 
