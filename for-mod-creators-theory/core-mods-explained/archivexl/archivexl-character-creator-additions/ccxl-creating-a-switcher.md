@@ -28,8 +28,6 @@ Creating new switchers allows us to add new options to the character creator wit
 * All necessary meshes, materials, textures, and .app files for your addition
 * A .json file for your translation entries, if applicable
 
-
-
 ## Putting it all together
 
 Knowing how a switcher works is important when it comes to creating new switchers with CCXL. Now that we are familiar with the inner workings of a switcher, we can get started.
@@ -91,8 +89,6 @@ Open a .inkcharcustomization file to get started:
 
 First we must determine which group our switcher belongs to. A good way to figure this out is knowing where the camera should focus in the character creator when using our switcher (arms, head, or body).
 
-
-
 ### Create a cyclic switcher
 
 Click on _headCustomizationOptions_ (or whichever category you want to use) and then "Add New Element":
@@ -120,8 +116,6 @@ At minimum, we should change the following attributes to have a working switcher
 
 You should reference [the table](ccxl-creating-a-switcher.md#switcher-attributes) above to learn more about each attribute.
 
-
-
 With the minimum requirements met, your switcher should look something like this:
 
 <figure><img src="../../../../.gitbook/assets/bareMinimum switcher.png" alt=""><figcaption></figcaption></figure>
@@ -147,8 +141,6 @@ Our second should look like this:
 The only thing changing right now is our _name_, to match the ones referenced in our gameuiSwitcherInfo _options_.
 
 We can add our _resource_ (path to a .app file) and _definitions_ (appearance definitions in said .app file) now, or come back to it later.
-
-
 
 Right now, we still need to add our switcher and appearances to our _groups_.
 
@@ -183,8 +175,6 @@ I've borrowed some files to use in this demonstration, in order to give our swit
 
 For a detailed explanation on how these will work together, see [CCXL: Body Tattoos](ccxl-body-tattoos.md).
 
-
-
 Going back to our gameuiAppearanceInfo, let's add our .app file to the _resource_ path:
 
 <figure><img src="../../../../.gitbook/assets/appearanceInfo resource path.png" alt=""><figcaption></figcaption></figure>
@@ -205,3 +195,14 @@ Referencing the [table ](ccxl-creating-a-switcher.md#switcher-attributes)above, 
 
 Once that's done, you can copy everything over to the other .inkcharcustomization file. Be sure to change the _definitions_ of the gameuiAppearanceInfo to correspond with the correct gender when doing so.
 
+
+
+### Troubleshooting :&#x20;
+
+Switcher only show in the NewGame Menu and not in the HairDresser/RipperDoc Menu :&#x20;
+
+This is one reason of why it's not working :&#x20;
+
+1. delete the path (resource : DepotPath) to the .app in the gameuiAppareaceInfo : switcher\_off if you have added one
+
+<figure><img src="../../../../.gitbook/assets/image (681).png" alt=""><figcaption></figcaption></figure>
