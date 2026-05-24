@@ -1,4 +1,4 @@
-# 🗺️ Modding Guides
+# Modding Guides
 
 {% hint style="info" %}
 This page contains instructions on **making** mods. If you want to install mods instead, check [here](../../for-mod-users/users-modding-cyberpunk-2077/).

@@ -3,9 +3,9 @@
 ## Summary
 
 **Published:** ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** April 21 2025 by LadyLea
+**Last documented update:** 22 May 2026 by LadyLea
 
-This page will tell you about **tags** and how they can be used to influence item behaviour. It also teaches you how [#adding-custom-tags](archivexl-tags.md#adding-custom-tags "mention") can help you conditionally un-hide items or add new features.
+This page will tell you about **tags** and how they can be used to influence item behaviour. It also teaches you how [#adding-custom-tags](archivexl-tags.md#adding-custom-tags "mention") can help you conditionally un-hide  / hide items or add new features.
 
 ### Wait, this is not what I want!
 
@@ -155,17 +155,19 @@ Simply add the tag to your appearance's tags array near the bottom of the indivi
 
 ## Conditional component (un)loading
 
+### Custom Tags: Clothes
+
 With ArchiveXL tags, you can conditionally switch out components — even those of other mods and garments. For example, you can load a narrower/compressed version of a garment when it's worn under a jacket:
 
 <figure><img src="../../../.gitbook/assets/axl_conditional_components_haori.png" alt=""><figcaption><p>hakama (monk_skirt) - shrinks under kimono/haori</p></figcaption></figure>
 
-To achieve this, we have two components in the mesh\_entity:&#x20;
+To achieve this, we have two components in the mesh\_entity:
 
 <figure><img src="../../../.gitbook/assets/conditional_components_mesh_entity.png" alt=""><figcaption></figcaption></figure>
 
 The second component is **turned off** via [chunkmask](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md), the first one is displayed by default.
 
-The trigger item (the kimono/haori on the left) uses the `manavortex_kimono`  tag. This is the .xl file:
+The trigger item (the kimono/haori on the left) uses the `manavortex_kimono` tag. This is the .xl file:
 
 ```yaml
 overrides:
@@ -174,29 +176,35 @@ overrides:
       l1_manavortex_hakama_under_kimono: {show: [0, 1, 2, 3]}
 ```
 
-The original mesh is hidden via [`partsOverride`](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-changing-other-meshes) in the kimono's .app (I could also have used a second tag to hide the `l1_manavortex_hakama`  component  via .xl file):
+The original mesh is hidden via [`partsOverride`](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-changing-other-meshes) in the kimono's .app (I could also have used a second tag to hide the `l1_manavortex_hakama` component via .xl file):
 
 <figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-### Tags and Boobies
+### Custom Tags: Bodies - Switching States
 
-Naturally, this mechanism was immediately turned towards the things that really matter (boobs).&#x20;
-
-Hyst's Body Mods ([EVB](https://www.nexusmods.com/cyberpunk2077/mods/11489), [EBB-EBBRB](https://www.nexusmods.com/cyberpunk2077/mods/4654), [EBBP-EBBPRB](https://www.nexusmods.com/cyberpunk2077/mods/9083) and [ANGEL](https://www.nexusmods.com/cyberpunk2077/mods/14896)) make use of the mechanism to switch between the squish and natural (EBBN) chest states. By adding the corresponding tag, your garment can determine which boob state should be displayed.
+VTK Bodies, such as Hyst's Body Mods ([EVB](https://www.nexusmods.com/cyberpunk2077/mods/11489), [EBB-EBBRB](https://www.nexusmods.com/cyberpunk2077/mods/4654), [EBBP-EBBPRB](https://www.nexusmods.com/cyberpunk2077/mods/9083), [ANGEL](https://www.nexusmods.com/cyberpunk2077/mods/14896) [EVE](https://www.nexusmods.com/cyberpunk2077/mods/29810)) make use of custom tags, as they are implemented to make the bodies and clothes switch to different chest states. By adding the corresponding tag, your garment can determine which chest state should be displayed.
 
 {% hint style="info" %}
 First things first, make use of [VTK - Resources for Refits](https://www.nexusmods.com/cyberpunk2077/mods/17544) as this page contains the **Shapes Add-ons** resources to refit your garment. Once the ideal shape is chosen, it is time to build up your AXL project (further details on how to make AXL clothes can be found [here ](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/items-equipment/adding-new-items)and [here](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants))
 {% endhint %}
 
-To make use of custom tags, _**one**_ of the Visual Tags below must be included within your .app file information list:
+To make use of custom tags, _**one**_ of the Hyst's Visual State Tags below must be included within your .app file information list:
 
-#### natural chest state (no bra)
+#### Natural Chest State \[No bra outfits]
 
-* `hyst_boobs_natural` - To be used for \[EBB-EBBRB], \[EBBP-EBBPRB], \[ANGEL]
-* `hyst_evb_boobs_natural` - To be used for \[EVB]
+* `hyst_boobs_natural` - Used for \[EBB-EBBRB], \[EBBP-EBBPRB], \[ANGEL]
+* `hyst_evb_boobs_natural` - Used for \[EVB]
 
-#### squished chest shape (tight garment)
+#### Squished Chest State \[Tight garment outfits]
 
-* `hyst_boobs_squish`- To be used for \[EBB-EBBRB], \[EBBP-EBBPRB], \[ANGEL]
+* `hyst_boobs_squish` - Used for \[EBB-EBBRB], \[EBBP-EBBPRB], \[ANGEL], \[EVE]
+
+#### **Force Nipples On \[Risqué outfits]**
+
+* `hyst_boobs_nipple` - Used for \[EVE]
+
+#### [Hide SeamFix](https://www.nexusmods.com/cyberpunk2077/mods/7054) for Fem-V VTK Bodies
+
+* `hide_vtk_seamfix` - Used for [Fem-V VTK Based body mods](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks#v-texture-kit) (this tag can be combined with the tags above)
 
 <figure><img src="../../../.gitbook/assets/Custom Tags Example - CROPPED SPAGHETTI UNITARD by meluminary.png" alt=""><figcaption><p>Special thanks to <a href="https://next.nexusmods.com/profile/meluminary?gameId=3333">Meluminary</a> for giving permission to make use of her <a href="https://www.nexusmods.com/cyberpunk2077/mods/19168">CROPPED SPAGHETTI UNITARD</a> .app file as an example and visual guide</p></figcaption></figure>

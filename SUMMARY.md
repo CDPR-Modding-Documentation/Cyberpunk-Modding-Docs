@@ -222,7 +222,7 @@
     * [Autodesk/FBX (Noesis)](for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/autodesk-fbx-noesis.md)
     * [with 3DS MAX (archived)](for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/3ds-max.md)
   * [On 4k textures and high poly meshes](for-mod-creators-theory/3d-modelling/on-4k-textures-and-high-poly-meshes.md)
-* [🗺️ Modding Guides](for-mod-creators-theory/modding-guides/README.md)
+* [Modding Guides](for-mod-creators-theory/modding-guides/README.md)
   * [👹 WolvenKit Guide Section](https://wiki.redmodding.org/wolvenkit/guides/modding-community)
 * [Textures, Materials and Shaders](for-mod-creators-theory/materials/README.md)
   * [Textures](for-mod-creators-theory/materials/textures/README.md)
@@ -526,6 +526,7 @@
   * [Adding Animations](modding-guides/quest/adding-animations.md)
   * [How to add new text messages thread to Cyberpunk 2077](modding-guides/quest/how-to-add-new-text-messages-thread-to-cyberpunk-2077.md)
   * [Quest and Scene Node Definitions](modding-guides/quest/scene-node-definitions.md)
+* [HUD Painter Resource](modding-guides/hud-painter-resource.md)
 * [Everything else](modding-guides/everything-else/README.md)
   * [How to Translate a Mod](modding-guides/everything-else/how-to-translate-a-mod.md)
   * [Customize in-game Loading Screens](modding-guides/everything-else/custom-loading-screens.md)
@@ -537,9 +538,8 @@
   * [Player State Machines](modding-guides/everything-else/player-state-machines.md)
   * [Running Python Scripts](modding-guides/everything-else/running-python-scripts.md)
   * [LocKeys: Values and formatting](modding-guides/everything-else/lockeys-values-and-formatting.md)
-* [HUD Painter Resource](modding-guides/hud-painter-resource.md)
 
 ***
 
-* [guide](guide.md)
-* [Debug Guide](debug-guide.md)
+* [Debug Guide](debug-guide/README.md)
+  * [guide](debug-guide/guide.md)
