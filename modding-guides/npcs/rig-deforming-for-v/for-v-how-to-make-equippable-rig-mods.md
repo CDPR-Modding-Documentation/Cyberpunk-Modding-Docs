@@ -52,6 +52,8 @@ Here's what the template project should look like:&#x20;
 
 <figure><img src="../../../.gitbook/assets/rig_framework_5.png" alt=""><figcaption></figcaption></figure>
 
+(It may have a few extra files if you're using the template with FPP support.)
+
 ## Step 1: Replace template folder & file names
 
 {% hint style="info" %}
@@ -157,20 +159,30 @@ Install mod and test.&#x20;
 
 Your new rig should have successfully replaced the template one!&#x20;
 
-## Step 4: Custom Icon(s)
+## Step 4: Custom Icon(s) & Item Name/Description
+
+Open the localization.json in Wolvenkit (not a text editor).
+
+You'll see two entries, one ending in \_desc. The entry ending in desc is for your description and the other your item name. Expand them. &#x20;
+
+The `femaleVariant` section is where you write the text you'll see in game (it will show for masc as well even though it's named that). Change the `femaleVariant` text to whatever you want for the item name and description entries and save your localization.json
+
+{% hint style="info" %}
+More on localization here: [translation-files-.json.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/translation-files-.json.md "mention")
+{% endhint %}
 
 Last step is updating the template icon. Using Wolvenkit's exporter, export the two .xbm files in the project. One is simply a smaller version of the main icon.
 
-Edit the files it generated in the raw folder with a photo/design editor of your choice. Do **not** resize them.&#x20;
+Edit the files it generated in the raw folder with a photo/design editor of your choice. Do **not** resize their pixel width/height.&#x20;
 
 Save over these files.&#x20;
 
 Import them back over the .xbm in WolvenKit.&#x20;
 
 {% hint style="info" %}
-If you know how to use Wolvenkit's Inkatlas Generator, you can also use that.&#x20;
+If you know how to use Wolvenkit's Inkatlas Generator, you can also use it to generate your icon.&#x20;
 
-Just make sure you name your icon .png "equippable\_rig\_icon" before converting, and tell it to replace the existing .inkatlas
+Just make sure you name your icon .png "equippable\_rig\_icon" before converting, and tell it to **replace** the existing .inkatlas
 {% endhint %}
 
 Install mod and test.&#x20;

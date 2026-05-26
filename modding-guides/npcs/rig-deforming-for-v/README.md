@@ -131,6 +131,10 @@ If you want to make your mod specifically for V or a certain NPC, or make it an 
 
 ## **Troubleshooting**
 
+### **My rig edit isn't showing when I look down in first person!**
+
+Any changes you made to bones in the third person rig, you must also make to the same bones in the first person rig, or else your rig edits will only show in third person. (You must edit them separately, you can't just duplicate the third person rig and use it to replace first person.)
+
 ### **My rig edit isn't showing up!**
 
 * Disable (remove) any other rig edits
