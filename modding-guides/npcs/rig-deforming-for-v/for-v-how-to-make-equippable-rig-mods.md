@@ -11,9 +11,9 @@ description: >-
 **Published**: May 24 2026 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")\
 **Last edited:** May 24 2026 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")
 
-This tutorial will show you how to make a rig mod that is an equippable inventory item for player masc or fem V.&#x20;
+This tutorial will show you how to make a rig mod that is an equippable inventory item for player masc or fem V.
 
-A benefit of making a rig an equippable item is that you can have multiple installed at once.&#x20;
+A benefit of making a rig an equippable item is that you can have multiple installed at once.
 
 ### **Wait, this is not what I want!**
 
@@ -23,10 +23,10 @@ A benefit of making a rig an equippable item is that you can have multiple insta
 
 ## Requirements:
 
-* You made an edited .rig file using the [For V and NPC - Rig deforming](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/4gzcGtLrr90pVjAWVdTc/~/edit/~/changes/2291/modding-guides/npcs/rig-deforming-for-v) tutorial.
+* You made an edited .rig file using the [For V and NPC - Rig deforming](./) tutorial.
 * You have downloaded the [template project from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/29957).
 
-<table><thead><tr><th width="155">Mod / Tool</th><th width="232">Version</th><th>Links</th></tr></thead><tbody><tr><td>Wolvenkit</td><td>latest >= 8.17.1 Stable</td><td><a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a> | <a href="https://github.com/WolvenKit/Wolvenkit/releases">Stable</a> | <a href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download">Install guide (wiki</a>)</td></tr><tr><td>ArchiveXL</td><td>latest</td><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4198">NexusMods</a></td></tr><tr><td>TweakXL</td><td>latest</td><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4197">NexusMods</a></td></tr><tr><td>EquipmentEX  (optional)</td><td>latest </td><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/6945">NexusMods</a></td></tr></tbody></table>
+<table><thead><tr><th width="155">Mod / Tool</th><th width="232">Version</th><th>Links</th></tr></thead><tbody><tr><td>Wolvenkit</td><td>latest >= 8.17.1 Stable</td><td><a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">Nightly</a> | <a href="https://github.com/WolvenKit/Wolvenkit/releases">Stable</a> | <a href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download">Install guide (wiki</a>)</td></tr><tr><td>ArchiveXL</td><td>latest</td><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4198">NexusMods</a></td></tr><tr><td>TweakXL</td><td>latest</td><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4197">NexusMods</a></td></tr><tr><td>EquipmentEX (optional)</td><td>latest</td><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/6945">NexusMods</a></td></tr></tbody></table>
 
 ## Step 0: Preparing your WolvenKit Project
 
@@ -34,21 +34,21 @@ A benefit of making a rig an equippable item is that you can have multiple insta
 This template is the same for both V and NPC rig mods.
 {% endhint %}
 
-Start by making a new project in WolvenKit. Name your project.&#x20;
+Start by making a new project in WolvenKit. Name your project.
 
 I recommend using a format such as "moddername\_modname" or "modderinitials\_modname" to match the template's .xl file.
 
 <figure><img src="../../../.gitbook/assets/rig_framework_2.png" alt=""><figcaption></figcaption></figure>
 
-Open your new project's root folder by clicking the yellow folder button on the top right of the project explorer.&#x20;
+Open your new project's root folder by clicking the yellow folder button on the top right of the project explorer.
 
 <figure><img src="../../../.gitbook/assets/rig_framework_1.png" alt=""><figcaption></figcaption></figure>
 
-In your computer's file explorer, unzip the template project. Open and drag the template files into your project. The template archive/resources folders will merge with the project folders.&#x20;
+In your computer's file explorer, unzip the template project. Open and drag the template files into your project. The template archive/resources folders will merge with the project folders.
 
-Go back to WKit. It will show the new files in the project explorer. If it does not, hit the blue refresh 🔄 button next to the yellow root folder button.&#x20;
+Go back to WKit. It will show the new files in the project explorer. If it does not, hit the blue refresh 🔄 button next to the yellow root folder button.
 
-Here's what the template project should look like:&#x20;
+Here's what the template project should look like:
 
 <figure><img src="../../../.gitbook/assets/rig_framework_5.png" alt=""><figcaption></figcaption></figure>
 
@@ -73,7 +73,7 @@ The entire template in a nutshell:
 "**modname**" — change this to a UNIQUE NAME for your mod\
 Do not use the same name for multiple mods.
 
-Do this for file names and then open each file and do the same search and replace for all paths and names inside each file.&#x20;
+Do this for file names and then open each file and do the same search and replace for all paths and names inside each file.
 {% endhint %}
 
 Here are the full steps:
@@ -116,7 +116,7 @@ Update the template clothing factory path in the .xl to your new clothing factor
 
 Repeat for the localization.json file, copying and pasting it over the template localization.json path.
 
-Next, open the **.yaml** file.&#x20;
+Next, open the **.yaml** file.
 
 CTRL+F all instances of "moddername" "modname" "modderinitials" and replace them with your details.
 
@@ -124,13 +124,13 @@ CTRL+F all instances of "moddername" "modname" "modderinitials" and replace them
 
 Next, open the first file in your project **fem** or **masc** folder. Right click the `RDTDataViewModel` header.
 
-Select "Search and Replace in selection" and set the search for "modderinitials" and the replacement to **your initials**. Click Finish.&#x20;
+Select "Search and Replace in selection" and set the search for "modderinitials" and the replacement to **your initials**. Click Finish.
 
 Repeat the right click search and replace for all instances of "moddername" "modname" "modderinitials" and replace them with your details.
 
 <figure><img src="../../../.gitbook/assets/rig_framework_6.png" alt=""><figcaption></figcaption></figure>
 
-Save the file.&#x20;
+Save the file.
 
 Repeat this process for all other files in the project:
 
@@ -143,27 +143,27 @@ Repeat this process for all other files in the project:
 ### (optional) Install mod and test <a href="#step-2-update-renamed-paths-inside-files" id="step-2-update-renamed-paths-inside-files"></a>
 
 After renaming files, you should be able to install and test the mod as is on the player.\
-Using the template rig that came with this project, you should be able to tell right away that it works, as your V's chest will have transformed horrifically.&#x20;
+Using the template rig that came with this project, you should be able to tell right away that it works, as your V's chest will have transformed horrifically.
 
-## Step 3: Add your .rig to the project  <a href="#step-2-update-renamed-paths-inside-files" id="step-2-update-renamed-paths-inside-files"></a>
+## Step 3: Add your .rig to the project <a href="#step-2-update-renamed-paths-inside-files" id="step-2-update-renamed-paths-inside-files"></a>
 
-Copy/paste or add your edited .rig file into your project if you don't already have one. Anywhere is fine, it doesn't have to be in the existing folders.&#x20;
+Copy/paste or add your edited .rig file into your project if you don't already have one. Anywhere is fine, it doesn't have to be in the existing folders.
 
 Copy the path of the template .rig.
 
-Delete the template .rig.&#x20;
+Delete the template .rig.
 
 Rename your new rig file, but highlight everything in the box including the folder names. Paste the path of the template rig and save.
 
-Install mod and test.&#x20;
+Install mod and test.
 
-Your new rig should have successfully replaced the template one!&#x20;
+Your new rig should have successfully replaced the template one!
 
 ## Step 4: Custom Icon(s) & Item Name/Description
 
 Open the localization.json in Wolvenkit (not a text editor).
 
-You'll see two entries, one ending in \_desc. The entry ending in desc is for your description and the other your item name. Expand them. &#x20;
+You'll see two entries, one ending in \_desc. The entry ending in desc is for your description and the other your item name. Expand them.
 
 The `femaleVariant` section is where you write the text you'll see in game (it will show for masc as well even though it's named that). Change the `femaleVariant` text to whatever you want for the item name and description entries and save your localization.json
 
@@ -173,19 +173,19 @@ More on localization here: [translation-files-.json.md](../../../for-mod-creator
 
 Last step is updating the template icon. Using Wolvenkit's exporter, export the two .xbm files in the project. One is simply a smaller version of the main icon.
 
-Edit the files it generated in the raw folder with a photo/design editor of your choice. Do **not** resize their pixel width/height.&#x20;
+Edit the files it generated in the raw folder with a photo/design editor of your choice. Do **not** resize their pixel width/height.
 
-Save over these files.&#x20;
+Save over these files.
 
-Import them back over the .xbm in WolvenKit.&#x20;
+Import them back over the .xbm in WolvenKit.
 
 {% hint style="info" %}
-If you know how to use Wolvenkit's Inkatlas Generator, you can also use it to generate your icon.&#x20;
+If you know how to use Wolvenkit's Inkatlas Generator, you can also use it to generate your icon.
 
 Just make sure you name your icon .png "equippable\_rig\_icon" before converting, and tell it to **replace** the existing .inkatlas
 {% endhint %}
 
-Install mod and test.&#x20;
+Install mod and test.
 
 If everything works as it should and you're seeing your rig equip properly in inventory, you can pack your mod and it's good to go!
 
@@ -197,10 +197,9 @@ If everything works as it should and you're seeing your rig equip properly in in
 
 #### My rig doesn't load when I equip my item / equipping makes my inventory character glitch for a long time then nothing happens!
 
-* A path is wrong in your project or was not updated properly. Use WolvenKit's "Scan files for broken references" to check which paths need to be updated.&#x20;
+* A path is wrong in your project or was not updated properly. Use WolvenKit's "Scan files for broken references" to check which paths need to be updated.
 
 #### I don't want the rig item to be in the left toes slot in EquipmentEx! <a href="#my-icons-are-white" id="my-icons-are-white"></a>
 
 * Change it to another slot by editing `placementSlots` section of the .yaml\
   There is a list of slot options [here on the EquipmentEX github](https://github.com/psiberx/cp2077-equipment-ex#outfit-slots)
-

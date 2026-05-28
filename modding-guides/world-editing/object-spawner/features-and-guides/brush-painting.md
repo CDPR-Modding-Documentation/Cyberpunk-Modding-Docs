@@ -13,7 +13,7 @@ Last documented edit: May 24 2026 by [Akiway](https://app.gitbook.com/u/2021vbDr
 ### What is it for?
 
 Brush painting allows you to add elements randomly to an area using a brush tool.\
-The randomization of its content can be configured in two ways :&#x20;
+The randomization of its content can be configured in two ways :
 
 1. **The probabilities** : It defines how many of each element could appear at each stroke, it uses the existing features of [Randomized groups](randomized-nested-groups.md#creating-a-rng).
 2. **The variations** : It is global to the brush tool and defines if randomization should also apply to the properties of the elements (size, rotation).
@@ -58,7 +58,7 @@ The brush is only available in [3D Editor mode](../3-d-editor-mode.md), so start
 
 <div data-with-frame="true"><figure><img src="../../../../.gitbook/assets/image (665).png" alt=""><figcaption><p>Action menu of Spawned hierarchy</p></figcaption></figure></div>
 
-Settings are :&#x20;
+Settings are :
 
 * **Size** : radius of the brush circle.
 * **Intensity** : quantity of strokes per second.
@@ -71,7 +71,7 @@ Settings are :&#x20;
 {% hint style="success" %}
 The brush status has a tooltip that gives you info on it. Configuration issues are listed inside.
 
-![](<../../../../.gitbook/assets/image (668).png>)
+<img src="../../../../.gitbook/assets/image (667).png" alt="" data-size="original">
 {% endhint %}
 {% endstep %}
 
@@ -157,14 +157,14 @@ So any content placed outside of the brush won't get deleted. And if anything wr
 
 [^1]: The <mark style="color:purple;">target group</mark> <i class="fa-square-plus" style="color:purple;">:square-plus:</i> is the group used as destination for any newly added item.\
     \
-    <i class="fa-check" style="color:$success;">:check:</i> <mark style="color:$success;">This applies to :</mark>&#x20;
+    <i class="fa-check" style="color:$success;">:check:</i> <mark style="color:$success;">This applies to :</mark>
 
     * Items spawned from the [Spawn New tab](../ui-tabs-explained/tab-spawn-new.md).
     * Favorites/prefab loaded from the [Favorites sub-tab](../ui-tabs-explained/tab-favorites-and-prefabs.md).
     * Repeated spawn using the 'R' shortcut while in [3D editor](../3-d-editor-mode.md).
     * Items generated in <mark style="color:purple;">brush paint mode</mark> <i class="fa-paintbrush" style="color:purple;">:paintbrush:</i>.
 
-    <i class="fa-xmark" style="color:$danger;">:xmark:</i> <mark style="color:$danger;">This does not apply to :</mark>&#x20;
+    <i class="fa-xmark" style="color:$danger;">:xmark:</i> <mark style="color:$danger;">This does not apply to :</mark>
 
     * Duplicated element.
     * Groups loaded from the [Saved tab](../ui-tabs-explained/tab-saved.md).

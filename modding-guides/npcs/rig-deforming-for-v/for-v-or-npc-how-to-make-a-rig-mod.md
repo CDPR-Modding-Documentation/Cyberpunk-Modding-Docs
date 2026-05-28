@@ -11,9 +11,9 @@ description: >-
 **Published**: May 24 2026 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")\
 **Last edited:** May 24 2026 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention")
 
-This tutorial will show you how to make a rig mod that changes player V's body and/or a specific NPC's body. Rigs can be used with or without body mods.&#x20;
+This tutorial will show you how to make a rig mod that changes player V's body and/or a specific NPC's body. Rigs can be used with or without body mods.
 
-This method uses ArchiveXL to patch the deformations component. It does not require load order management and is compatible with all other non-rig mods.&#x20;
+This method uses ArchiveXL to patch the deformations component. It does not require load order management and is compatible with all other non-rig mods.
 
 ### **Wait, this is not what I want!**
 
@@ -22,7 +22,7 @@ This method uses ArchiveXL to patch the deformations component. It does not requ
 
 ## Requirements:
 
-* You made an edited .rig file using the [For V and NPC - Rig deforming](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/4gzcGtLrr90pVjAWVdTc/~/edit/~/changes/2291/modding-guides/npcs/rig-deforming-for-v) tutorial.
+* You made an edited .rig file using the [For V and NPC - Rig deforming](./) tutorial.
 * You have downloaded the [template project from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/29957).
 
 <table><thead><tr><th width="155">Mod / Tool</th><th width="536.6666259765625">Version</th></tr></thead><tbody><tr><td>ArchiveXL</td><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4198">latest</a></td></tr><tr><td>Wolvenkit version</td><td>>= 8.17.1 <a href="https://github.com/WolvenKit/WolvenKit/releases/tag/8.15.0">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a> (<a href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/getting-started/download#downloading-wolvenkit">install guide</a>)</td></tr></tbody></table>
@@ -33,21 +33,21 @@ This method uses ArchiveXL to patch the deformations component. It does not requ
 This template is the same for both V and NPC rig mods.
 {% endhint %}
 
-Start by making a new project in WolvenKit. Name your project.&#x20;
+Start by making a new project in WolvenKit. Name your project.
 
 I recommend using a format such as "moddername\_modname" or "modderinitials\_modname" to match the template's .xl file.
 
 <figure><img src="../../../.gitbook/assets/rig_framework_2.png" alt=""><figcaption></figcaption></figure>
 
-Open your new project's root folder by clicking the yellow folder button on the top right of the project explorer.&#x20;
+Open your new project's root folder by clicking the yellow folder button on the top right of the project explorer.
 
 <figure><img src="../../../.gitbook/assets/rig_framework_1.png" alt=""><figcaption></figcaption></figure>
 
-In your computer's file explorer, unzip the template project. Open and drag the template files into your project. The template archive/resources folders will merge with the project folders.&#x20;
+In your computer's file explorer, unzip the template project. Open and drag the template files into your project. The template archive/resources folders will merge with the project folders.
 
-Go back to WKit. It will show the new files in the project explorer. If it does not, hit the blue refresh 🔄 button next to the yellow root folder button.&#x20;
+Go back to WKit. It will show the new files in the project explorer. If it does not, hit the blue refresh 🔄 button next to the yellow root folder button.
 
-Here's what the template project should look like:&#x20;
+Here's what the template project should look like:
 
 <figure><img src="../../../.gitbook/assets/rig_framework_3.png" alt=""><figcaption></figcaption></figure>
 
@@ -116,7 +116,7 @@ Remember to check the box this time before confirming.
 #### If you are making a rig mod for **fem V**:
 
 * Delete the **masc** folder from the project
-* Open the .xl, delete these lines:&#x20;
+* Open the .xl, delete these lines:
 
 ```
     moddername\modname\masc\modderinitials_modname_rig_ma.ent:
@@ -127,40 +127,40 @@ Remember to check the box this time before confirming.
 
 On the line under `patch`, there is a path to the placeholder template ent. Delete this line, but keep the indents and colon `:` at the end of the line.
 
-Copy and paste the relative path to your project's .ent file before the colon, making sure not to mess up the indenting or add any extra spaces.&#x20;
+Copy and paste the relative path to your project's .ent file before the colon, making sure not to mess up the indenting or add any extra spaces.
 
 Save your .xl
 
 ### (optional) Install mod and test <a href="#step-2-update-renamed-paths-inside-files" id="step-2-update-renamed-paths-inside-files"></a>
 
 After renaming files, you should be able to install and test the mod as is on the player.\
-Using the template rig that came with this project, you should be able to tell right away that it works, as your V's chest will have transformed horrifically.&#x20;
+Using the template rig that came with this project, you should be able to tell right away that it works, as your V's chest will have transformed horrifically.
 
-## Step 2: Add your own .rig to the project  <a href="#step-2-update-renamed-paths-inside-files" id="step-2-update-renamed-paths-inside-files"></a>
+## Step 2: Add your own .rig to the project <a href="#step-2-update-renamed-paths-inside-files" id="step-2-update-renamed-paths-inside-files"></a>
 
-Copy/paste or add your edited .rig file into your project if you don't already have one.&#x20;
+Copy/paste or add your edited .rig file into your project if you don't already have one.
 
-Copy the full path of the template .rig.&#x20;
+Copy the full path of the template .rig.
 
-Delete the template .rig.&#x20;
+Delete the template .rig.
 
 Rename your rig file, but highlight everything in the box including the folder names. Paste the path of the template rig and save.
 
-Install mod and test.&#x20;
+Install mod and test.
 
-Your new rig should have successfully replaced the template one, and you're done! You can pack your mod and share it.&#x20;
+Your new rig should have successfully replaced the template one, and you're done! You can pack your mod and share it.
 
-## (optional) Step 3: Applying the rig to a specific NPC by editing the .xl&#x20;
+## (optional) Step 3: Applying the rig to a specific NPC by editing the .xl
 
 First, you need to find your character's .ent files. There is a resource here: [people](../../../for-mod-creators-theory/references-lists-and-overviews/people/ "mention")
 
-Make sure you made edits to the correct body rig for the NPC. Male Big NPC for example would require you to edit the male big rig.&#x20;
+Make sure you made edits to the correct body rig for the NPC. Male Big NPC for example would require you to edit the male big rig.
 
 Delete "`player_wa.ent`" or "`player_ma.ent`" from the .xl but preserve indents, dashes, and spaces on that line.
 
-Copy and paste the .ent(s) of the character(s) you want to give the rig to after the `-`&#x20;
+Copy and paste the .ent(s) of the character(s) you want to give the rig to after the `-`
 
-Only one .ent per line. Use a line break, matching indents, and dash for each .ent. Example below.&#x20;
+Only one .ent per line. Use a line break, matching indents, and dash for each .ent. Example below.
 
 If you want to give the rig to multiple NPC, or if your NPC has multiple .ent files, you must list each one.
 
@@ -168,9 +168,9 @@ If you want to give the rig to multiple NPC, or if your NPC has multiple .ent fi
 
 ## (Legacy) Unique V Rig Framework
 
-If you want to make your rig utilize the existing Unique V framework instead of using the template, you can simply use your custom rig file and add the base game animgraph file to your project.&#x20;
+If you want to make your rig utilize the existing Unique V framework instead of using the template, you can simply use your custom rig file and add the base game animgraph file to your project.
 
-Rename both files to the following paths and pack the archive with only those two files.&#x20;
+Rename both files to the following paths and pack the archive with only those two files.
 
 Masc V:
 
@@ -186,20 +186,20 @@ base\characters\base_entities\woman_base\deformations_rigs\female_plr_deformatio
 base\characters\base_entities\woman_base\deformations_rigs\female_plr_deformations.animgraph
 ```
 
-Remember to list the Unique V Framework Mod as a dependency on your mod page.&#x20;
+Remember to list the Unique V Framework Mod as a dependency on your mod page.
 
 ## Troubleshooting
 
 **My rig shows up, but it's not the rig I expected?**
 
-* If your mod was originally for the unique V framework, make sure you **uninstall** the framework while testing.&#x20;
+* If your mod was originally for the unique V framework, make sure you **uninstall** the framework while testing.
 * Ensure you have no other rigs or rig mods installed.
-* If the rig that shows up horribly morphs V's boobs, then you're using the rig that came with the project template. Replace this file with your own custom rig.&#x20;
+* If the rig that shows up horribly morphs V's boobs, then you're using the rig that came with the project template. Replace this file with your own custom rig.
 
 **No rig shows up in game!**
 
 * Go to Project > Scan for broken file references. If anything shows up, fix the path in that file.
 
-**My rig doesn't work on an NPC in photomode!**&#x20;
+**My rig doesn't work on an NPC in photomode!**
 
-* Some NPC have special .ents for Photomode. Find them in Wolvenkit's asset browser.&#x20;
+* Some NPC have special .ents for Photomode. Find them in Wolvenkit's asset browser.

@@ -6,7 +6,7 @@ description: Heroes, villains, the extended cast and innocent bystanders
 
 ## Summary
 
-**Last documented update**: January 6 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update**: January 6 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page collects paths to .ent and .app files for various NPCs, as long as somebody considered them interesting enough to document them here.
 
@@ -30,16 +30,16 @@ CDPR's system of character classification is completely arbitrary and often cont
 If you can't find a character's .ent file, search for variations of their name — e.g. Johnny is `silverhand`, Viktor is `ripperdoc`. Sometimes, it is easier to find the .app file first, and then get the .ent file by using [Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this).
 
 {% hint style="info" %}
-Major NPCs have their own .app files: \
-`base\characters\appearances\main_npc\`.&#x20;
+Major NPCs have their own .app files:\
+`base\characters\appearances\main_npc\`.
 
-Others are not so lucky - e.g., Mamá Welles is lobbed in with the other valentino goons: \
+Others are not so lucky - e.g., Mamá Welles is lobbed in with the other valentino goons:\
 `base\characters\appearances\gang\gang__valentinos_wa.app`
 {% endhint %}
 
 ## Character files
 
-You can find the corresponding .app file by right-clicking on the .ent file and selecting [Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention"). If that doesn't help, search for entFileName.app (e.g. `silverhand.app`)
+You can find the corresponding .app file by right-clicking on the .ent file and selecting [Asset Browser #Find files using this](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#find-files-using-this "mention"). If that doesn't help, search for entFileName.app (e.g. `silverhand.app`)
 
 ### Primary characters
 
@@ -47,7 +47,7 @@ You can find the corresponding .app file by right-clicking on the .ent file and 
 
 ### Secondary characters
 
-<table data-full-width="false"><thead><tr><th width="187">Character</th><th width="260">Entity File Path</th><th width="306">remark</th></tr></thead><tbody><tr><td>Meredith</td><td><code>base\quest\tertiary_characters\stout.ent</code></td><td>The app file is named <code>meredith_stout.app</code></td></tr><tr><td>Dex</td><td><code>base\quest\secondary_characters\dex.ent</code></td><td></td></tr><tr><td>Smasher</td><td><code>base\characters\entities\boss\adam_smasher.ent</code></td><td>The app file is named <code>boss_adam_smasher_mm.app</code></td></tr><tr><td>T-Bug</td><td><code>base\quest\tertiary_characters\tbug.ent</code></td><td></td></tr><tr><td>Claire</td><td><code>base\quest\tertiary_characters\claire.ent</code></td><td>The .app file is called <code>clair.app</code> (sic)</td></tr><tr><td>Placide</td><td><code>base\quest\tertiary_characters\placide.ent</code></td><td></td></tr><tr><td>Saul </td><td><code>base\quest\secondary_characters\saul.ent</code></td><td></td></tr><tr><td>Mitch</td><td><code>base\quest\tertiary_characters\mitch.ent</code></td><td></td></tr><tr><td>US Cracks</td><td><p>sq017_red_menace.ent</p><p>sq017_purple_force.ent</p><p>sq017_blue_moon.ent</p></td><td>The band shares one .app file, you can find it under <code>us_cracks_band.app</code></td></tr><tr><td>Lizzy Wizzy</td><td><code>base\quest\tertiary_characters\lizzy_wizzy.ent</code></td><td>The .app file is named <code>celebrity_chrome.app</code></td></tr><tr><td>Mama Welles</td><td><code>base\quest\tertiary_characters\mama_welles.ent</code></td><td><code>gang__valentinos_wa.app</code><br><code>(_sq018__mama_welles)</code></td></tr><tr><td>Mr. Blue Eyes</td><td><code>base\quest\main_quests\epilogue\q203\characters\q203_mr_x.ent</code></td><td><p>You can find his appearance as <code>_q003_gman</code> in </p><p><code>citizen__corporat_ma.app</code></p></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="187">Character</th><th width="260">Entity File Path</th><th width="306">remark</th></tr></thead><tbody><tr><td>Meredith</td><td><code>base\quest\tertiary_characters\stout.ent</code></td><td>The app file is named <code>meredith_stout.app</code></td></tr><tr><td>Dex</td><td><code>base\quest\secondary_characters\dex.ent</code></td><td></td></tr><tr><td>Smasher</td><td><code>base\characters\entities\boss\adam_smasher.ent</code></td><td>The app file is named <code>boss_adam_smasher_mm.app</code></td></tr><tr><td>T-Bug</td><td><code>base\quest\tertiary_characters\tbug.ent</code></td><td></td></tr><tr><td>Claire</td><td><code>base\quest\tertiary_characters\claire.ent</code></td><td>The .app file is called <code>clair.app</code> (sic)</td></tr><tr><td>Placide</td><td><code>base\quest\tertiary_characters\placide.ent</code></td><td></td></tr><tr><td>Saul</td><td><code>base\quest\secondary_characters\saul.ent</code></td><td></td></tr><tr><td>Mitch</td><td><code>base\quest\tertiary_characters\mitch.ent</code></td><td></td></tr><tr><td>US Cracks</td><td><p>sq017_red_menace.ent</p><p>sq017_purple_force.ent</p><p>sq017_blue_moon.ent</p></td><td>The band shares one .app file, you can find it under <code>us_cracks_band.app</code></td></tr><tr><td>Lizzy Wizzy</td><td><code>base\quest\tertiary_characters\lizzy_wizzy.ent</code></td><td>The .app file is named <code>celebrity_chrome.app</code></td></tr><tr><td>Mama Welles</td><td><code>base\quest\tertiary_characters\mama_welles.ent</code></td><td><code>gang__valentinos_wa.app</code><br><code>(_sq018__mama_welles)</code></td></tr><tr><td>Mr. Blue Eyes</td><td><code>base\quest\main_quests\epilogue\q203\characters\q203_mr_x.ent</code></td><td><p>You can find his appearance as <code>_q003_gman</code> in</p><p><code>citizen__corporat_ma.app</code></p></td></tr></tbody></table>
 
 ### Fixers
 
@@ -63,6 +63,12 @@ Characters who have very little screen time
 
 Characters who don't even have names (but who are interesting regardless)
 
-<table data-full-width="false"><thead><tr><th width="187">Character</th><th width="260">Entity File Path</th><th width="306">remark</th></tr></thead><tbody><tr><td>Ripperdocs</td><td>service__ripperdoc_ma.ent<br>service__ripperdoc_mb.ent<br>service__ripperdoc_wa.ent</td><td><code>service__ripperdoc_ma.app</code><br><code>service__ripperdoc_mb.app</code><br><code>service__ripperdoc_wa.app</code></td></tr><tr><td>Trauma Team</td><td>corpo__traumateam_ma.ent</td><td><code>corpo__traumateam_ma.app</code></td></tr><tr><td>Maxtac</td><td>corpo__max_tac_ma.ent<br>max_tac_mb.ent<br>max_tac_wa.ent</td><td><code>max_tac.app</code><br><code>max_tac_mb.app</code><br><code>max_tac_wa.app</code></td></tr><tr><td>NCPD</td><td><p>corpo__ncpd_ma.ent</p><p>corpo__ncpd_mb.ent<br>corpo__ncpd_wa.ent</p></td><td></td></tr><tr><td>Militech goons</td><td>corpo__militech_ma.ent<br>corpo__militech_mah.ent<br>corpo__militech_mb.ent<br>corpo__militech_wa.ent</td><td>mah seems to be the heavies (soldier types)</td></tr><tr><td>Netwatch</td><td>corpo__netwatch_ma.ent</td><td></td></tr><tr><td>Kangtao </td><td>corpo__kangtao_ma.ent<br>corpo__kangtao_mah.ent</td><td>mah seems to be the heavies (soldier types)</td></tr><tr><td>Arasaka</td><td>corpo__arasaka_ma.ent<br>corpo__arasaka_mah.ent<br>corpo__arasaka_mb.ent<br>corpo__arasaka_mm.ent<br>corpo__arasaka_wa.ent</td><td>mah seems to be the heavies (soldier types)</td></tr><tr><td>Barghest</td><td>gang__kurtz_army_ma.ent<br>gang__kurtz_army_mb.ent<br>gang__kurtz_army_wa.ent</td><td></td></tr><tr><td>Black Ops </td><td>corpo__black_ops_ma.ent<br>corpo__black_ops_mb.ent<br>corpo__black_ops_wa.ent</td><td></td></tr></tbody></table>
+<table data-full-width="false"><thead><tr><th width="187">Character</th><th width="260">Entity File Path</th><th width="306">remark</th></tr></thead><tbody><tr><td>Ripperdocs</td><td>service__ripperdoc_ma.ent<br>service__ripperdoc_mb.ent<br>service__ripperdoc_wa.ent</td><td><code>service__ripperdoc_ma.app</code><br><code>service__ripperdoc_mb.app</code><br><code>service__ripperdoc_wa.app</code></td></tr><tr><td>Trauma Team</td><td>corpo__traumateam_ma.ent</td><td><code>corpo__traumateam_ma.app</code></td></tr><tr><td>Maxtac</td><td>corpo__max_tac_ma.ent<br>max_tac_mb.ent<br>max_tac_wa.ent</td><td><code>max_tac.app</code><br><code>max_tac_mb.app</code><br><code>max_tac_wa.app</code></td></tr><tr><td>NCPD</td><td><p>corpo__ncpd_ma.ent</p><p>corpo__ncpd_mb.ent<br>corpo__ncpd_wa.ent</p></td><td></td></tr><tr><td>Militech goons</td><td>corpo__militech_ma.ent<br>corpo__militech_mah.ent<br>corpo__militech_mb.ent<br>corpo__militech_wa.ent</td><td>mah seems to be the heavies (soldier types)</td></tr><tr><td>Netwatch</td><td>corpo__netwatch_ma.ent</td><td></td></tr><tr><td>Kangtao</td><td>corpo__kangtao_ma.ent<br>corpo__kangtao_mah.ent</td><td>mah seems to be the heavies (soldier types)</td></tr><tr><td>Arasaka</td><td>corpo__arasaka_ma.ent<br>corpo__arasaka_mah.ent<br>corpo__arasaka_mb.ent<br>corpo__arasaka_mm.ent<br>corpo__arasaka_wa.ent</td><td>mah seems to be the heavies (soldier types)</td></tr><tr><td>Barghest</td><td>gang__kurtz_army_ma.ent<br>gang__kurtz_army_mb.ent<br>gang__kurtz_army_wa.ent</td><td></td></tr><tr><td>Black Ops</td><td>corpo__black_ops_ma.ent<br>corpo__black_ops_mb.ent<br>corpo__black_ops_wa.ent</td><td></td></tr></tbody></table>
 
 There are `_ep1_` variants of a bunch of the generic corpos that can be found in the ep1 files, not sure how they differ from the basegame versions. (ie corpo\_\_ep1\_ncpd\_ma.ent)
+
+### Various TPP V
+
+TPP Vs are basically like NPCs.&#x20;
+
+<table data-full-width="false"><thead><tr><th width="187">Character</th><th width="260">Entity File Path</th><th width="306">remark</th></tr></thead><tbody><tr><td>Mirror V</td><td>player_wa_tpp_reflexion.ent<br>player_ma_tpp_reflexion.ent</td><td></td></tr><tr><td>Photomode V</td><td><p>player_wa_photomode.ent<br>player_ma_photomode.ent</p><p>player_wa_photomode_ep1.ent<br>player_ma_photomode_ep1.ent</p></td><td></td></tr><tr><td>Cutscene V</td><td>player_wa_tpp_cutscene.ent<br>player_ma_tpp_cutscene.ent</td><td>Also known as "Hover V" in AMM</td></tr><tr><td>AMM V</td><td><code>base\amm_characters\entity\player_wa_tpp_walking.ent</code><br><code>base\amm_characters\entity\player_ma_tpp_walking.ent</code></td><td>AMM spawned V</td></tr></tbody></table>

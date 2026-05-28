@@ -9,7 +9,7 @@ description: A short tutorial on how to modify your V's body by resizing bone sh
 **Published**: Oct 12 2024 by @chris\
 **Last edited:** Oct 12 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will show you how to create a **custom rig**, based on [**BODY SHAPING - Tutorial**](https://www.nexusmods.com/cyberpunk2077/mods/2884)**.**&#x20;
+This guide will show you how to create a **custom rig**, based on [**BODY SHAPING - Tutorial**](https://www.nexusmods.com/cyberpunk2077/mods/2884)**.**
 
 ### **Wait, this is not what I want!**
 
@@ -120,14 +120,14 @@ Thanks for reading hope it worked -<mark style="background-color:purple;">Chris<
 
 ## **How to make your rig for only V (or a specific NPC)**
 
-So you got the rig edit working, but you may have noticed it applies to almost all female characters in game, not just V. This is because we edited a base game file that's shared by lots of characters including V, and by replacing it, made a "global" rig. \
+So you got the rig edit working, but you may have noticed it applies to almost all female characters in game, not just V. This is because we edited a base game file that's shared by lots of characters including V, and by replacing it, made a "global" rig.\
 \
 If a global rig is what you wanted, you can pack your mod as is.
 
-If you want to make your mod specifically for V or a certain NPC, or make it an equippable item, see tutorials below:&#x20;
+If you want to make your mod specifically for V or a certain NPC, or make it an equippable item, see tutorials below:
 
-* [For V or NPC - How to make a rig mod](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/4gzcGtLrr90pVjAWVdTc/~/edit/~/changes/2291/modding-guides/npcs/rig-deforming-for-v/for-v-or-npc-how-to-make-a-rig-mod)
-* [For V - How to make Equippable Rig mods](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/4gzcGtLrr90pVjAWVdTc/~/edit/~/changes/2291/modding-guides/npcs/rig-deforming-for-v/for-v-how-to-make-equippable-rig-mods)
+* [For V or NPC - How to make a rig mod](for-v-or-npc-how-to-make-a-rig-mod.md)
+* [For V - How to make Equippable Rig mods](for-v-how-to-make-equippable-rig-mods.md)
 
 ## **Troubleshooting**
 
