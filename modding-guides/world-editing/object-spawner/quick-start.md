@@ -14,6 +14,10 @@ This example leaves out a lot of features and details
 * It will try and explain how to do a very simple build, incorporating the basics you need to know
 * It assumes you know how to open the CET overlay and find the main "World Builder" window
 
+### Wait, that's not what I want!
+
+* If you want to import AMM decor presets into World Builder, go here: [Searching and Loading, AMM Preset Import](ui-tabs-explained/tab-saved.md)
+
 ## Spawning things
 
 * Lets start by spawning some things, we will start with some meshes
