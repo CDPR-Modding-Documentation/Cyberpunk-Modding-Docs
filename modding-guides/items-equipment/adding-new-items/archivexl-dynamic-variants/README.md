@@ -125,7 +125,8 @@ This guide assumes that you have access to the prepared example project, so go a
 
 <figure><img src="../../../../.gitbook/assets/dynamic_variants_add_file.png" alt=""><figcaption></figcaption></figure>
 
-3. Fill out the wizard with your item's information. For the example project, I'll create a t-shirt:
+3. Fill out the wizard with your item's information. The created item will be set up for both body genders.\
+   For the example project, I'll create a t-shirt:
 
 <figure><img src="../../../../.gitbook/assets/archivexl_itemaddition_generator.png" alt=""><figcaption></figcaption></figure>
 
