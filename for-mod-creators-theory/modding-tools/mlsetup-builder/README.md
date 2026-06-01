@@ -170,7 +170,31 @@ Inside MLSB there are some other tools, the most important one is the Material C
 From this window you can import and export <mark style="color:yellow;">.Material.json</mark> files ( these files are exported by <mark style="color:red;">Wolvenkit</mark> with the <mark style="color:red;">WithMaterial</mark> option). You can edit the materials parameters, adding material or removing them from the material file.\
 Material templates found in the .Material.json file can be put in the Library and then used later for another edit of materials of a completely different mesh.\
 You can duplicate entries just changing the name of the material and putting them in the buffer again (that's what i did to have 10 different material colors that comes for the glass material of the <mark style="color:yellow;">Kendachi Monokatana</mark> mod).\
-Material Composer will also display all the material parameters that comes with the material template (materials baked by the CDPR system have their parameters hidden if they were left as default before the baking of the release).
+Material Composer will also display all the material parameters that comes with the material template (materials baked by the CDPR system have their parameters hidden if they were left as default before the baking of the release).<br>
+
+### Importing a custom mesh
+
+Occasionally you may find yourself wanting to edit `.mlsetup` files for custom meshes, this can be rather difficult to do blind however, when you can't actually see the changes you make. Thankfully MLSB includes a feature that allows you to import custom meshes in the models library.&#x20;
+
+{% hint style="info" icon="lightbulb" %}
+## Make sure you've already extracted your mesh
+
+MLSB does not read `.mesh` files raw. Rather instead it reads a `.glb` file, which is a converted `.mesh` file. The wiki already has a guide on how to do this, [wkit-blender-plugin-import-export.md](../wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention").
+{% endhint %}
+
+To start head over to the models library in MLSB and then look for a `+` icon next to the tags filter.
+
+<figure><img src="../../../.gitbook/assets/Setting up MLSetupBuilder 29-05-2026-6.png" alt="Screenshot of MLSetupBuilder showing the Models Library tab. A red arrow highlights a + icon that lets you load your own mesh. The left panel displays a long searchable list of game models. The right panel shows the tag system for said models. "><figcaption></figcaption></figure>
+
+Once you've clicked on that icon a small pop-up will appear asking you to direct it towards your extracted `.glb` file.  Simply click the folder icon and navigate to wherever you have extracted your `.glb` file.
+
+<figure><img src="../../../.gitbook/assets/Setting up MLSetupBuilder 29-05-2026-7.png" alt="Screenshot of the “Add/Edit custom models entry” dialog in MLSetupBuilder. A red box highlights the “Path” field containing an example full file path. The orange “Save” button is visible below the field."><figcaption></figcaption></figure>
+
+Once you've directed it toward your `.glb` file all you have to do is press that save button, and your custom mesh should appear right in the 3D Viewport on the left!
+
+<figure><img src="../../../.gitbook/assets/Setting up MLSetupBuilder 29-05-2026-8.png" alt="Screenshot of MLSetupBuilder’s Models Library after adding a custom mesh. On the left, the 3D viewport (outlined in red) now displays a preview of the custom “Collarless Crystal Jock Bomber” jacket mesh. On the right, the model list shows the newly added custom entry."><figcaption></figcaption></figure>
+
+Thats how you import a custom mesh into MLSB. From here you can see any changes you make to layers, view different appearance options the mesh might have, and even render screenshots of the mesh in the 3D window.
 
 ## Configuration
 
