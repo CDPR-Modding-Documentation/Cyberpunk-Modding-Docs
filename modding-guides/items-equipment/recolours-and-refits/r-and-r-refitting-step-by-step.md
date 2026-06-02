@@ -10,14 +10,14 @@ This page is a subsection of the [Netrunning Suit guide](./). It will teach you 
 If you're totally new and totally lost in Blender, you can read [blender-getting-started](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/ "mention"). This is not necessary for the purpose of this guide!
 {% endhint %}
 
-#### **Assumed level of skill**:&#x20;
+#### **Assumed level of skill**:
 
-You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on [Discord](https://discord.gg/redmodding) so that I can improve it.&#x20;
+You know how to read — if you can read and struggle with this guide, then it's not yet good enough. Please reach out to [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") on [Discord](https://discord.gg/redmodding) so that I can improve it.
 
-#### **Time to complete:**&#x20;
+#### **Time to complete:**
 
 * < 1h for import, export and setup (< 5 min once you know how it works)
-* as long as you want on the actual editing&#x20;
+* as long as you want on the actual editing
 
 ## Prerequisites:
 
@@ -44,7 +44,7 @@ Check the Nexus page of the body mod you're using — there's a good chance that
 
 #### From the mod itself
 
-It might be easier and faster to simply export the base body.&#x20;
+It might be easier and faster to simply export the base body.
 
 1. Switch to the [Mod Browser](../../analysing-other-mods/#step-1-switch-to-mod-browser)
 2. In the Wolvenkit search bar, find the base body mesh:
@@ -67,9 +67,9 @@ It might be easier and faster to simply export the base body.&#x20;
 
 ## Step 2: Exporting the meshes from WKit
 
-The whole process is explained [here](../../../for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/#gltf-binary-.glb).&#x20;
+The whole process is explained [here](../../../for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/#gltf-binary-.glb).
 
-TL;DR:&#x20;
+TL;DR:
 
 * Find the "Export Tool"
 * Select the mesh(es) you want
@@ -86,7 +86,7 @@ If you failed to export because of error messages like this one:
 
 `Message: Error while finding the file: manavortex\torso\netrunning_suit\textures_netrunning_suit.mi`
 
-then you need to uncheck [Export Materials (default)](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials-default "mention") in the export tool's settings panel
+then you need to uncheck [Import/Export: Mesh (3d Model) #Export Materials (default)](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials-default "mention") in the export tool's settings panel
 
 </details>
 
@@ -110,13 +110,13 @@ Open Blender and create a new file. You will probably be greeted by a bunch of s
 
 <figure><img src="../../../.gitbook/assets/netrunning_suits_blender_delete_standard.png" alt=""><figcaption></figcaption></figure>
 
-Now, let's import our meshes.&#x20;
+Now, let's import our meshes.
 
 From the "File" menu, select "Import" and then one of the entries for "gltf":
 
 <figure><img src="../../../.gitbook/assets/netrunning_suits_blender_import.png" alt=""><figcaption></figcaption></figure>
 
-You will now see a file picker.&#x20;
+You will now see a file picker.
 
 <figure><img src="../../../.gitbook/assets/netrunner_blender_file_picker.png" alt=""><figcaption></figcaption></figure>
 
@@ -139,18 +139,18 @@ You are currently in Object Mode, which will let you select whole objects.
     3. Click on "Use Nodes" to uncheck it
     4. Set a base colour that is not white to see clipping
 
-
-
-
-
     <figure><img src="../../../.gitbook/assets/netrunners_refitting_colour_body.png" alt=""><figcaption></figcaption></figure>
 
 ## Step 4: Refitting
 
 {% hint style="success" %}
-Starting in version 1.5.0, the [wolvenkit-blender-io-suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") features an [auto-refitter](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md), which supports many custom bodies and will be expanded in the future.&#x20;
+Starting in version 1.5.0, the [wolvenkit-blender-io-suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") features an [auto-refitter](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md).
 
 If you want to use the plugin instead of refitting by hand, make sure to select all meshes (Step 1 on the list below) before following the instructions under[wkit-blender-plugin-akl-autofitter.md](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md "mention").
+{% endhint %}
+
+{% hint style="info" %}
+If you feel totally lost in Blender, you can check out our guide under [blender-getting-started](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/ "mention"), especially the [Edit Mode](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/#edit-mode) section.
 {% endhint %}
 
 We will use the Proportional Editing mode here, which leaves garment supports intact and prevents the risk of [string cheese](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md#my-mesh-is-string-cheese-exploding-vertices-a-puddle-on-the-floor). If you don't vibe with that, you can read up [here](../../../for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques.md#sculpting) on other approaches for refitting, or refer to the [community guides](../../community-guides/) section.
@@ -169,18 +169,18 @@ We will use the Proportional Editing mode here, which leaves garment supports in
 
 <figure><img src="../../../.gitbook/assets/netrunner_refit_select_vertices.png" alt=""><figcaption></figcaption></figure>
 
-5. Show the body mesh again:&#x20;
+5. Show the body mesh again:
    1. Shift-click on the eye icon next to the body armature to show everything
    2. left-click on the eye icon (no shift, just a regular click) to hide only the armature)
 
 ### The tools
 
-We will use scaling (shortcut: `S`) and movement (shortcut: `G`). &#x20;
+We will use scaling (shortcut: `S`) and movement (shortcut: `G`).
 
 * You can lock the axis on which you are moving by pressing `X`, `Y` or `Z`
 * You can scale the strength of the proportional modifier by using the mouse wheel — but only after you have a tool selected.
 
-I'm afraid that this is where you [draw the rest of the owl](https://knowyourmeme.com/memes/how-to-draw-an-owl) - you need to refit the suit. Try playing around with the settings. For example, you can start by pressing `G` - `Y` to let out the chest, then try scaling.&#x20;
+I'm afraid that this is where you [draw the rest of the owl](https://knowyourmeme.com/memes/how-to-draw-an-owl) - you need to refit the suit. Try playing around with the settings. For example, you can start by pressing `G` - `Y` to let out the chest, then try scaling.
 
 Do this until you have covered all skin that you don't want exposed. Now it's time to export our edited meshes, and import them back.
 
@@ -190,12 +190,12 @@ Do this until you have covered all skin that you don't want exposed. Now it's ti
 
 ## Step 5: Exporting
 
-1. Switch back to Object mode by pressing `Tab`&#x20;
+1. Switch back to Object mode by pressing `Tab`
 2. select all meshes under one armature (e.g. the emissive meshes)
-   * If you  are exporting without the Wolvenkit Plugin, select the armature as well.&#x20;
-3. From the menu, select File -> Export&#x20;
+   * If you are exporting without the Wolvenkit Plugin, select the armature as well.
+3. From the menu, select File -> Export
 
-<figure><img src="../../../.gitbook/assets/netrunner_guide_refit_export.png" alt=""><figcaption><p>If you  are exporting without the Wolvenkit Plugin, find the correct settings in the <a href="../../../for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/#gltf-binary-.glb-1">import/export guide</a>, then check <code>Selected Only</code>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/netrunner_guide_refit_export.png" alt=""><figcaption><p>If you are exporting without the Wolvenkit Plugin, find the correct settings in the <a href="../../../for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/#gltf-binary-.glb-1">import/export guide</a>, then check <code>Selected Only</code>.</p></figcaption></figure>
 
 4. **Overwrite** the file you originally imported from (`pwa_emissive.glb`)
 5. Repeat the process with the other armature.
@@ -216,7 +216,7 @@ Time to test! Install and launch your Wolvenkit project:
 
 <figure><img src="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F-MP_ozZVx2gRZUPXkd4r%2Fuploads%2FUs6kZEwmFHhn8f8QCIKb%2Fwolvenkit_install_and_launch.png?alt=media&#x26;token=66c24ef4-0525-4476-80a2-aaf461f445ac" alt=""><figcaption></figcaption></figure>
 
-If you did everything right, your refit will now be active. If not, it's troubleshooting time.&#x20;
+If you did everything right, your refit will now be active. If not, it's troubleshooting time.
 
 * Check the [Export/Import](../../../for-mod-creators-theory/3d-modelling/exporting-and-importing-meshes/) guide for step-by-step instructions
 * If anything is wrong with your mesh, head to [troubleshooting-your-mesh-edits.md](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md "mention")
