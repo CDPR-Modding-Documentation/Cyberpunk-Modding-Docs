@@ -232,12 +232,14 @@ A sharp (blue line in the viewport) **will cause a sharp crease/fold** in the ma
 ### Proportional Editing
 
 {% hint style="success" %}
+While it might initially annoy you, this feature is incredibly cool and you should almost never turn it off.
+
 You can find a detailed guide on this under [r-and-r-refitting-step-by-step.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md "mention") -> [#step-4-refitting](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md#step-4-refitting "mention")
 {% endhint %}
 
 "I'm moving a single vertex, but my entire mesh is affected!"
 
-Sounds familiar? You've run into Proportional Editing.
+Sounds familiar? You've run into [Proportional Editing](https://docs.blender.org/manual/en/latest/editors/3dview/controls/proportional_editing.html).
 
 <figure><img src="../../../.gitbook/assets/blender_proportional_editing.png" alt=""><figcaption></figcaption></figure>
 
