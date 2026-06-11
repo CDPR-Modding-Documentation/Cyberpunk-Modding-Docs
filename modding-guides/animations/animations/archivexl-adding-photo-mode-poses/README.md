@@ -49,7 +49,7 @@ Download either of these files:
 * Wolvenkit source folder ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8287))
 
 {% hint style="info" %}
-This tutorial assumes that your Wolvenkit project is called `your_cool_new_pose_pack`, and that your legal name is `your_beautiful_name`.&#x20;
+This tutorial assumes that your Wolvenkit project is called `your_cool_new_pose_pack`, and that your legal name is `your_beautiful_name`.
 
 If that's not the case, please adjust accordingly!
 {% endhint %}
@@ -62,16 +62,16 @@ At any point during this guide, you can press the green `Install` button on Wolv
 
 ### TL;DR
 
-1. &#x20;Use Wolvenkit's `Rename` feature with the `Update in project files` box checked&#x20;
+1. Use Wolvenkit's `Rename` feature with the `Update in project files` box checked
 2. Use Notepad++ to edit `photomode_poses_tutorial.xl`. Search\&replace the original path (`tutorial\animations\netrunner_making_poses`) with your new folder path.
 3. Test. The. Mod.
 4. Proceed to [#step-2-hook-up-your-poses](./#step-2-hook-up-your-poses "mention")
 
 ### Step by step
 
-We usually do this at the very end and I'm leaving you alone with it. However, this time we start by renaming the folders.&#x20;
+We usually do this at the very end and I'm leaving you alone with it. However, this time we start by renaming the folders.
 
-Here's how your project should look when you're done.&#x20;
+Here's how your project should look when you're done.
 
 <figure><img src="../../../../.gitbook/assets/axl_photo_mode_rename_files_folders.png" alt=""><figcaption></figcaption></figure>
 
@@ -79,8 +79,6 @@ Here's how your project should look when you're done.&#x20;
 2.  Change its name, and check the `Update in project files?` box
 
     <figure><img src="../../../../.gitbook/assets/axl_photomode_2_2_rename_folder.png" alt=""><figcaption></figcaption></figure>
-
-
 3. Do the same for the `netrunner_making_poses` folder (you want your file structure to be as tidy as it can be - future you will thank you for it)
 4. Switch your project browser to the resources tab and open `photomode_poses_tutorial.xl` in notepad++:
 
@@ -91,14 +89,14 @@ Here's how your project should look when you're done.&#x20;
 
 <figure><img src="../../../../.gitbook/assets/axl_photomode_search_and_replace_repathing.png" alt=""><figcaption></figcaption></figure>
 
-6. Hit "Replace All"&#x20;
+6. Hit "Replace All"
 7. Save your file (Keyboard shortcut: `Ctrl+S`)
 8. Now, rename the files under `resources` as well:
    1. `photomode_poses_tutorial.xl` -> `your_cool_new_pose_pack.xl`
    2. `r6\tweaks\tutorial\photomode_poses_tutorial.yaml` -> `r6\tweaks\tutorial\your_cool_new_pose_pack.yaml`
 9. Rename `r6\tweaks\tutorial` to `r6\tweaks\your_beautiful_name`
 
-That's it for the renaming. Time to test!&#x20;
+That's it for the renaming. Time to test!
 
 10. Install the mod, and make sure that you still have photo mode poses.
 
@@ -107,8 +105,6 @@ That's it for the renaming. Time to test!&#x20;
 ### The .xl file
 
 This file tells Cyberpunk to load your custom poses and will be in the same folder as the .archive file for your mod. It looks like this:
-
-
 
 {% tabs %}
 {% tab title="2.2" %}
@@ -191,7 +187,7 @@ You can name this file whatever you want, just make sure that you change the pat
 
 * Change the yellow box `UI-Photomode-tutorial-netrunner-making-poses` to something **unique to your mod.**
 * To do future you a favour, use names that will make sense even after a year or two - e.g. `UI-Photomode-your_beautiful_name-my_cool_poses` instead of `UI-Photomode-ghuawstsedr-hsarht223445`
-* The green text is the name that will show up in photo mode. \
+* The green text is the name that will show up in photo mode.\
   `femaleVariant` is the default key - if you don't need different pose names for the male body gender, leave it empty.
 
 <figure><img src="../../../../.gitbook/assets/archivexl_photomode_json.png" alt=""><figcaption></figcaption></figure>
@@ -260,8 +256,6 @@ You register your poses for photo mode by creating the following entry categorie
 
 {% tabs %}
 {% tab title=">= 2.2" %}
-Add **both** code blocks:
-
 ```yaml
 # ##############################################################
 # Player
@@ -272,6 +266,43 @@ photo_mode.character.malePoses: &AddPosesM
 photo_mode.character.femalePoses: &AddPosesF
   - !append PhotomodePoses.sit_chair_table_keyboard__2h_on_keyboard_01__thinking
   - !append PhotomodePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon
+```
+
+To register your poses for NPCs (and NPVs), add the next code block as well.\
+The yaml anchor must match the one in the block above (`&AddPosesF` ⇒ `*AddPosesF`)
+
+```yaml
+# ##############################################################
+# extra NPCs: female body gender
+# ##############################################################
+photo_mode.character.altPoses: *AddPosesF
+photo_mode.character.bluemoonPoses: *AddPosesF
+photo_mode.character.evelynPoses: *AddPosesF
+photo_mode.character.hanakoPoses: *AddPosesF
+photo_mode.character.judyPoses: *AddPosesF
+photo_mode.character.lizzyPoses: *AddPosesF
+photo_mode.character.meredithPoses: *AddPosesF
+photo_mode.character.panamPoses: *AddPosesF
+photo_mode.character.purpleforcePoses: *AddPosesF
+photo_mode.character.redmenacePoses: *AddPosesF
+photo_mode.character.rogueoldPoses: *AddPosesF
+photo_mode.character.rogueyoungPoses: *AddPosesF
+photo_mode.character.songbirdPoses: *AddPosesF
+photo_mode.character.myersPoses: *AddPosesF
+
+# ##############################################################
+# extra NPCs: male body gender
+# ##############################################################
+photo_mode.character.adamPoses: *AddPosesM
+photo_mode.character.johnnyNPCPoses: *AddPosesM
+photo_mode.character.goroPoses: *AddPosesM
+photo_mode.character.jackiePoses: *AddPosesM
+photo_mode.character.kerryPoses: *AddPosesM
+photo_mode.character.riverPoses: *AddPosesM
+photo_mode.character.viktorPoses: *AddPosesM
+photo_mode.character.kurtPoses: *AddPosesM
+photo_mode.character.reedPoses: *AddPosesM
+
 ```
 {% endtab %}
 
@@ -285,14 +316,14 @@ photo_mode.character.quadrupedPoses
 {% endtab %}
 {% endtabs %}
 
-Characters with `*AddPoses` will use the poses defined under `&AddPoses`. If you don't want a character to use certain poses, don't put `*AddPoses`  next to their `photomode.character`  entry.
+Characters with `*AddPoses` will use the poses defined under `&AddPoses`. If you don't want a character to use certain poses, don't put `*AddPoses` next to their `photomode.character` entry.
 
 An entry without YAML anchors, where poses are manually appended to each character, looks like this:
 
 <figure><img src="../../../../.gitbook/assets/archivexl_photomode_yaml_3.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="warning" %}
-The entries in the list **must** match the unique keys that you've defined in the second block, and you need one entry per pose.&#x20;
+The entries in the list **must** match the unique keys that you've defined in the second block, and you need one entry per pose.
 
 If you have different names for differently-gendered poses, you need to use the correct lists.
 {% endhint %}
@@ -315,8 +346,6 @@ At any point during this guide, you can press the green `Install` button on Wolv
 
 <figure><img src="https://i.imgur.com/eakqwZu.png" alt=""><figcaption><p>Fortunately, you can hire specialists</p></figcaption></figure>
 
-
-
 ## Optional: Further fine-tuning poses
 
 ### Spawning props with the pose
@@ -324,8 +353,6 @@ At any point during this guide, you can press the green `Install` button on Wolv
 {% hint style="info" %}
 You can find a more detailed guide on this on [xbae's website](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-custom-photomode-props/).
 {% endhint %}
-
-
 
 It is possible to have certain props spawned automatically. **However, this feature works only for Player V.**
 
@@ -339,13 +366,13 @@ Find a list of the potential entries under [poses-animations.md](../../../../for
 
 <figure><img src="https://i.imgur.com/QHdVuNb.png" alt=""><figcaption><p>I'm using KNIFE as example</p></figcaption></figure>
 
-In the case of weapons, V spawn with whatever weapon you were holding when entering PhotoMode, or the default weapon if none was defined.&#x20;
+In the case of weapons, V spawn with whatever weapon you were holding when entering PhotoMode, or the default weapon if none was defined.
 
 The position of the prop is defined by `WeaponRight`/ `WeaponLeft` bone.
 
 ### Pose conditions \[Optional]
 
-You can limit the availability of poses by setting a `poseStateConfig`.  For example, the following entry in your yaml will cause the pose to be unavailable unless V is swimming forwards:
+You can limit the availability of poses by setting a `poseStateConfig`. For example, the following entry in your yaml will cause the pose to be unavailable unless V is swimming forwards:
 
 <pre class="language-yaml"><code class="lang-yaml"><strong>  poseStateConfig: POSE_STATE_SWIMMING_MOVING
 </strong></code></pre>
@@ -354,7 +381,7 @@ You can limit the availability of poses by setting a `poseStateConfig`.  For exa
 Find a list of the potential entries under [poses-animations.md](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md "mention") -> [#posestateconfig](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-tweak-ids/poses-animations.md#posestateconfig "mention")
 {% endhint %}
 
-Once installed, it will be in the same folder as the `.archive` file for your mod — so you should name it `your_mod_name.archive.xl`&#x20;
+Once installed, it will be in the same folder as the `.archive` file for your mod — so you should name it `your_mod_name.archive.xl`
 
 Your file should look like this:
 
@@ -362,9 +389,9 @@ Your file should look like this:
 
 <summary>What do these things do?</summary>
 
-* `animations:`&#x20;
+* `animations:`
   * `entity:` The relative path to the [**photomode scope**](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching/#distributed-patching-scopes) for patching. There are five of them in total; you can delete the ones you don't need.
-  * `set:` The relative path to the .anims file in your Wolvenkit project.&#x20;
+  * `set:` The relative path to the .anims file in your Wolvenkit project.
 * `localization`
   * `onscreens/en-us:` A file with translation strings. Holds the name of your photo mode pose set.
 
@@ -377,11 +404,11 @@ While editing .xl files, make sure to keep the **indent** (the number of spaces 
 {% endhint %}
 
 1. From the `animations` section, d**elete** the blocks that you don't want
-2. Replace `tutorial\animations\netrunner_making_poses\pXa.anims`  with the relative path to your `.anim` file(s) as copied from Wolvenkit's project browser
+2. Replace `tutorial\animations\netrunner_making_poses\pXa.anims` with the relative path to your `.anim` file(s) as copied from Wolvenkit's project browser
 3. Replace `tutorial\animations\netrunner_making_poses\localization.json` with the relative path to your `.json` file as copied from Wolvenkit's project browser
 4. **O**_**ptional:** For compatibility with older game versions, copy the code under `animations:` (not the label itself) from the `<= 2.1 page` in the code box above and add it to your file._
 5. **Optional, but recommended:** Run your .xl file through [yamllint](https://www.yamllint.com/) to check for syntax errors.
-6. Save your file.&#x20;
+6. Save your file.
 
 {% hint style="success" %}
 The .xl is now updated to support vanilla Photomode NPC and Photomode NPV!
@@ -391,11 +418,11 @@ The .xl is now updated to support vanilla Photomode NPC and Photomode NPV!
 
 <summary>What does this do?</summary>
 
-* <mark style="color:orange;">`PhotoModePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon`</mark>: This is the **unique key** to assign your pose to your pose set. \
+* <mark style="color:orange;">`PhotoModePoses.sit_chair_table_keyboard__2h_on_keyboard__make_amm_addon`</mark>: This is the **unique key** to assign your pose to your pose set.\
   You need this in the third part of the `.yaml` to hook up the poses with photo mode.
 * <mark style="color:yellow;">`animationName`</mark>: This must match the animation name in your [.anim file](./#the-.anim-file-s) (the green box).
 * <mark style="color:green;">`category`</mark>: This must match the category in the first block.
-* `displayName`:  The name of your pose (plain text or a LocKey in your `.json` file)
+* `displayName`: The name of your pose (plain text or a LocKey in your `.json` file)
 
 </details>
 
@@ -403,7 +430,7 @@ The .xl is now updated to support vanilla Photomode NPC and Photomode NPV!
 
 <summary>What does this do?</summary>
 
-`&AddPosesM` and `&AddPosesF` are so-called **yaml anchors**. They allow easy re-using of lists that you defined previously.&#x20;
+`&AddPosesM` and `&AddPosesF` are so-called **yaml anchors**. They allow easy re-using of lists that you defined previously.
 
 An entry without YAML anchors, where poses are manually appended to each character, looks like this:
 
