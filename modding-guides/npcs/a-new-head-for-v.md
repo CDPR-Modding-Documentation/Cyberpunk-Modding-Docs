@@ -178,7 +178,7 @@ As of October 2024, Wolvenkit may run into issues exporting edited morphtargets,
 {% endhint %}
 
 {% hint style="info" %}
-This is an **excellent** time for a save, because the script will remove the surface deform modifiers.
+This is an **excellent** time to save your blend file
 {% endhint %}
 
 <details>
@@ -206,15 +206,54 @@ You can now go straight to [#id-4.2-exporting-the-morphtargets-from-blender](a-n
 
 Before you can export your sculpt, you need to **apply** the surface deform modifiers, because Wolvenkit (and Cyberpunk) will flat-out ignore them.
 
-Fortunately, you can do this by script as well.
+Fortunately, you can do this by script as well:
 
-### 4.1 Applying the surface deform
+1. Run [apply\_surface\_deform\_and\_export.py](https://github.com/manavortex/cyberpunk2077/blob/master/python/sculpting_convenience/surface_deform/apply_surface_deform_and_export.py) from mana's github
+2. Select the folder you imported the morphtargets **from**
+3. Click the button
+4. **Wait** until the script is done. This shouldn't take more than a few minutes - if it's >5, something went wrong. In that case, check&#x20;
+
+<figure><img src="../../.gitbook/assets/custom_head_for_V_export.png" alt=""><figcaption></figcaption></figure>
+
+5. **Import** the files back into Wolvenkit via Import Tool. This **should** simply work! If it does not, you might have to overwrite the mesh file as well - see the [morphtargets page](../../for-mod-creators-theory/3d-modelling/morphtargets.md#editing-morphtargets) for instructions.
+6. If you are experiencing errors, import a single failing file to get the exact error message (it will be shown in red). If you can't resolve it on your own, feel free to get in touch via [Discord](https://discord.gg/redmodding)!
+
+<details>
+
+<summary>Wait, what does the script do?</summary>
+
+This script will preserve your edits by running on a **copy of your blend file**. You might notice a bunch of files called \_`EXPORT_TEMP.blend` , these are exactly what it looks like and you can delete them when you're done.
+
+It will
+
+1. Ask you for a folder
+2. Determine the file extension (if any `.morphtarget.glb` files are in the folder, then it will use that extension - otherwise, it'll use `.glb`)
+3. Run over every mesh in every collection and apply the surface\_deform modifier to every shapekey
+4. Ask for confirmation
+5. Export all collections to the folder you picked
+6. Switch back to your original file
+
+</details>
+
+### 4.1 If the script above didn't work
+
+{% hint style="success" %}
+If you have successfully completed the steps above, you can go straight to [#step-5-testing](a-new-head-for-v.md#step-5-testing "mention"): you only need this if you weren't able to complete the steps above.
+{% endhint %}
+
+This is the **previous workflow** without the updated script.&#x20;
+
+{% hint style="danger" %}
+This will **not create a backup** for you. Make sure to save your blend file, as the shapekeys will be destroyed!
+{% endhint %}
+
+#### 4.1.1 Applying the surface deform
 
 1. Find [apply\_surface\_deform.py](https://github.com/manavortex/cyberpunk2077/blob/master/python/sculpting_convenience/surface_deform/apply_surface_deform.py) on mana's github
 2. Follow the [blender-running-python-scripts.md](../../for-mod-creators-theory/3d-modelling/blender-getting-started/blender-running-python-scripts.md "mention") guide with that script, then come back here.
 3. After clicking the play button, your mesh will have changed shape for good.
 
-### 4.2 Exporting the morphtargets from Blender
+#### 4.1.2 Exporting the morphtargets from Blender
 
 You can now export the morphtargets.
 
@@ -268,7 +307,7 @@ A known risk of custom heads, because custom cyberware/beards/tattoos won't play
 
 Eyeballs do not take kindly to sculpting. You could adjust the pupil shape by editing rig bones, but let's first try a less involved solution (tl;dr: replace the eyeballs with the original game eyeballs and move them into the right position)
 
-1. Create a copy of your edited eye`.morphtarget`&#x20;
+1. Create a copy of your edited eye`.morphtarget`
 2. Overwrite the original file with the base game file (right-click, or just add the original file to your mod again)
 3. Export them both; then import them into Blender
 4. Select the basegame morphtarget, and enter edit mode (Hotkey: `Tab`)
