@@ -93,7 +93,7 @@ Provided below is a table with the eyebrows and their associated texture files.
 
 ## Eye make-up
 
-Eye make-up [.mi files](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) can be found in the following folder:&#x20;
+Eye make-up [.mi files](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) can be found in the following folder:
 
 ```
 base\characters\common\character_customisation_items\makeup\eyes
@@ -119,7 +119,7 @@ Cyberware added with patch 2.2 is distributed across preexisting files:
 These appearances do not exist in the .mesh! Read below the table for how to make them work!
 {% endhint %}
 
-<table><thead><tr><th width="95.73333740234375">CC index</th><th width="415.4666748046875">file</th><th>appearance</th></tr></thead><tbody><tr><td>8</td><td><code>makeup_eyes_01.mesh</code></td><td><code>cyberware_01</code></td></tr><tr><td>9</td><td><code>cyberware_04.mesh</code></td><td><code>cyberware_08</code></td></tr><tr><td>10</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_09</code></td></tr><tr><td>11</td><td><code>tattoo_02.mesh</code></td><td><code>cyberware_10</code></td></tr><tr><td>12</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_11</code></td></tr><tr><td>13</td><td><code>cyberware_04.mesh</code></td><td><code>cyberware_12</code></td></tr><tr><td>14</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_13</code></td></tr><tr><td>15</td><td><code>cyberware_06.mesh</code></td><td><code>cyberware_14</code></td></tr><tr><td>16</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_15</code></td></tr></tbody></table>
+<table><thead><tr><th width="95.73333740234375">CC index</th><th width="415.4666748046875">file</th><th>appearance</th></tr></thead><tbody><tr><td>8</td><td><code>makeup_eyes_01.mesh</code></td><td><code>cyberware_01</code></td></tr><tr><td>9</td><td><code>cyberware_04.mesh</code></td><td><code>cyberware_08</code></td></tr><tr><td>10</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_09</code></td></tr><tr><td>11</td><td><code>tattoo_02.mesh</code></td><td><code>cyberware_10</code></td></tr><tr><td>12</td><td><code>makeup_freckles_01.mesh</code><br><code>basehead_tattoo_06.mesh</code></td><td><code>cyberware_11</code></td></tr><tr><td>13</td><td><code>cyberware_04.mesh</code></td><td><code>cyberware_12</code></td></tr><tr><td>14</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_13</code></td></tr><tr><td>15</td><td><code>cyberware_06.mesh</code></td><td><code>cyberware_14</code></td></tr><tr><td>16</td><td><code>makeup_freckles_01.mesh</code></td><td><code>cyberware_15</code></td></tr></tbody></table>
 
 You can find the cyberware [material instances](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) with the following [search query](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files):
 
