@@ -15,11 +15,15 @@ This tutorial will show you how to Edit Third-Person and First Person Animations
 ### Wait, this is not what I want!
 
 * Check [animations](animations/ "mention") for guides on how to do that
-* If you want to learn how to export animations to Blender, check [wkit-blender-plugin-import-export.md](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#animations](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#animations "mention")&#x20;
+* If you want to learn how to export animations to Blender, check [wkit-blender-plugin-import-export.md](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#animations](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#animations "mention")
+
+### Concepts
+
+Because this tutorial involves editing one of V's .anims files more-or-less directly, the file .anims file in your project will be an **edited copy** of the original, including all the animations you didn't touch as well. Since this isn't a patch, the result will be that only one installed mod will win control over the file (see [load-order.md](../../for-mod-users/users-modding-cyberpunk-2077/load-order.md "mention") for more info). Patching is possible with some formats, but not .anims (yet) so true patching in this context will require programmatically hooking into the post-load event. (reviewer please link relevant page thank u i love u)
 
 ### Download the template
 
-I highly suggest using my template, which can be downloaded here: [https://drive.usercontent.google.com/download?id=1\_Z1cmk\_r2xH0YtII7t1JbqQoMgvY2m3g\&export=download\&authuser=0](https://drive.usercontent.google.com/download?id=1_Z1cmk_r2xH0YtII7t1JbqQoMgvY2m3g\&export=download\&authuser=0)
+Ratstick suggests using their template, which you can download on [Google Drive](https://drive.usercontent.google.com/download?id=1_Z1cmk_r2xH0YtII7t1JbqQoMgvY2m3g\&export=download\&authuser=0).
 
 It includes:
 
@@ -29,11 +33,17 @@ It includes:
 
 It's the same one I use in my tutorial videos.
 
+{% hint style="info" %}
+Alternatively, you can find older versions of the pose files on [our github](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/_resources_and_assets/poses).
+{% endhint %}
+
 ## Requirements (click to download)
+
+{% include "../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
 ## Video Format
 
-This tutorial is mainly in video form for simplicity. Don’t worry if this looks tough—it's actually really easy once you get the hang of it.&#x20;
+This tutorial is mainly in video form for simplicity. Don’t worry if this looks tough—it's actually really easy once you get the hang of it.
 
 First, open WolvenKit from the link above. In the video, I show how to open the project file from my template and install the Cyberpunk Blender Addon.
 
@@ -63,7 +73,7 @@ First, open WolvenKit from the link above. In the video, I show how to open the 
 
     **Automatic Method (100x Faster)**
 
-    1. Simply rename your `.glb` to match the `.anims` file you are replacing. In this case, you would just rename the .glb to `player_locomotion.anims.glb`&#x20;
+    1. Simply rename your `.glb` to match the `.anims` file you are replacing. In this case, you would just rename the .glb to `player_locomotion.anims.glb`
     2. Import it, and the system will handle the rest automatically.
     3. Again make sure to only include animations that you've included before importing.
 
@@ -104,4 +114,3 @@ For example, I import **Panam’s sniper combat locomotion** animation. As you�
 This process took just **two minutes**. To import that edited animation into the game, simply follow the steps outlined earlier for replacing an animation. Once replaced, V will use this animation whenever walking fast.
 
 {% embed url="https://www.youtube.com/watch?v=qFz8myUqVhk" %}
-
