@@ -289,19 +289,47 @@ photo_mode.character.rogueoldPoses: *AddPosesF
 photo_mode.character.rogueyoungPoses: *AddPosesF
 photo_mode.character.songbirdPoses: *AddPosesF
 photo_mode.character.myersPoses: *AddPosesF
+photo_mode.character.alexPoses: *AddPosesF
+photo_mode.character.aurorePoses: *AddPosesF
+photo_mode.character.cheriPoses: *AddPosesF
+photo_mode.character.clairePoses: *AddPosesF
+photo_mode.character.dakotaPoses: *AddPosesF
+photo_mode.character.lanaPoses: *AddPosesF
+photo_mode.character.linaPoses: *AddPosesF
+photo_mode.character.mistyPoses: *AddPosesF
+photo_mode.character.rachelPoses: *AddPosesF
+photo_mode.character.reginaPoses: *AddPosesF
+photo_mode.character.ritaPoses: *AddPosesF
+photo_mode.character.stellaPoses: *AddPosesF
+photo_mode.character.wakakoPoses: *AddPosesF
 
 # ##############################################################
 # extra NPCs: male body gender
 # ##############################################################
-photo_mode.character.adamPoses: *AddPosesM
 photo_mode.character.johnnyNPCPoses: *AddPosesM
 photo_mode.character.goroPoses: *AddPosesM
-photo_mode.character.jackiePoses: *AddPosesM
 photo_mode.character.kerryPoses: *AddPosesM
-photo_mode.character.riverPoses: *AddPosesM
 photo_mode.character.viktorPoses: *AddPosesM
+photo_mode.character.aymericPoses: *AddPosesM
+photo_mode.character.dantePoses: *AddPosesM
+photo_mode.character.dinoPoses: *AddPosesM
+photo_mode.character.dumdumPoses: *AddPosesM
+photo_mode.character.garryPoses: *AddPosesM
+photo_mode.character.muamarPoses: *AddPosesM
+photo_mode.character.sebastianPoses: *AddPosesM
+photo_mode.character.wadePoses: *AddPosesM
+photo_mode.character.dexterPoses: *AddPosesM
+
+# ##############################################################
+# extra NPCs: male big
+# ##############################################################
+photo_mode.character.jackiePoses: *AddPosesM
+photo_mode.character.riverPoses: *AddPosesM
 photo_mode.character.kurtPoses: *AddPosesM
-photo_mode.character.reedPoses: *AddPosesM
+photo_mode.character.reedPoses: *AddPosesM 
+photo_mode.character.ozobPoses: *AddPosesM
+photo_mode.character.roycePoses: *AddPosesM
+photo_mode.character.jessePoses: *AddPosesM
 
 ```
 {% endtab %}
