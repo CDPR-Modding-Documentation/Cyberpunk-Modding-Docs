@@ -18,7 +18,7 @@ TweakXL ([nexus](https://www.nexusmods.com/cyberpunk2077/mods/4197) | [github](h
 By placing `.yaml` or `.tweak` files in Cyberpunk `2077/r6/tweaks`, or .xl files in `Cyberpunk 2077/archive/pc/mod`.
 
 {% hint style="warning" %}
-No matter the file extension, the file `contents` must be `.yaml` or `.json`
+No matter the file extension, the file `contents` must be in `.yaml` or `.json`  syntax.
 {% endhint %}
 
 ## Where are the guides?

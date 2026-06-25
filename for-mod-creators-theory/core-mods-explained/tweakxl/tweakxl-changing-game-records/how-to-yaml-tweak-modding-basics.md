@@ -1,11 +1,15 @@
 ---
 description: >-
-  This is a tutorial created with new modders in mind. It's not optimal; it's
-  slow, tedious, and redundant. However, it was the only way I could understand
-  how to make YAML tweaks.
+  This is a tutorial created with new modders in mind. This will teach you the
+  basics - ALL the basics.
 ---
 
 # How to YAML: Tweak modding basics
+
+## Summary
+
+**Created:** May 5, 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention"), major overhaul by: ??? \
+**Last documented update:** May 5, 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 {% hint style="info" %}
 This is a tutorial created with new modders in mind. Some terms may not be correct, but you will be able to create a functional tweak with this method. It's not optimal; it's slow, tedious, and redundant. However, it was the only way I could understand how to make YAML tweaks.
@@ -31,11 +35,25 @@ After downloading and installing all the requirements (and yes, **SAVE** that bo
 
 YAML tweaks are like a `decompiled` version of the **.tweaks** files that you can find inside the REDmod folder. YAML format is easier to read and understand, but have some differences with REDmod syntax. You can also try and make tweaks using the [REDmod syntax inside TweakXL](https://github.com/psiberx/cp2077-tweak-xl/wiki/RED-Tweaks), but personally I have no experience with that yet.
 
-There are some concepts you need to understand before starting:
+There are some concepts you need to understand before starting.
+
+### When your mod just stops working
+
+{% hint style="success" %}
+No matter how careful you are, eventually, this will happen to you: a single error in your yaml breaks the entire file. Read [Indentation](how-to-yaml-tweak-modding-basics.md#indentation) and [Key Uniqueness](how-to-yaml-tweak-modding-basics.md#key-uniqueness) below to learn what not to do.
+{% endhint %}
+
+When you're there, head to [yamllint.com](https://www.yamllint.com/) and check your file for errors, then fix them. If that doesn't help, keep reading.
+
+#### The log file
+
+If there are any issues with your yaml file, the TweakXL log will tell you about it. You can find it here:
+
+[`Cyberpunk 2077`](../../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/)`\red4ext\plugins\TweakXL\TweakXL.log`
 
 ### Indentation
 
-Indentation organizes code using blank spaces, as shown below:
+Indentation organizes code using **blank spaces**, as shown below:
 
 ```
 This
@@ -43,13 +61,37 @@ This
     indentation
 ```
 
-In the past, using indentation wasn't mandatory and mostly used by pro coders to order their files as a good practice. However, for YAML files, **indentation is MANDATORY**. If you indent wrong, **your mod won't work**, simple as.
+For YAML files, **indentation is MANDATORY**, since it's used to structure code (in the example above, `is` is a child element of `This` and can be accessed as `This.is`).&#x20;
 
-The best way to indent, in my opinion, is using 2 blank spaces (pressing `space bar` twice) to make indentations.
+Use space ( ) to indent lines.
 
-"_But what about just using tab?_" you may think. **DON'T. DON'T USE TAB FOR INDENTATION.** Using tab for indentation could cause issues, because not all text editors interpret tab in the same way.
+{% hint style="danger" icon="knife-kitchen" %}
+"_But what about just using tab?_" you may think.&#x20;
 
-Using double space will guarantee your file will keep the same structure everywhere. It even feels natural and **VSCode** will put nice and useful lines to show your indentation.
+**DON'T.** \
+**DON'T USE TAB FOR INDENTATION.**&#x20;
+
+If you indent wrong, **your mod won't work**, simple as this.
+{% endhint %}
+
+This is why you should be using a proper editor such as [VSCode](https://code.visualstudio.com/download) or [Notepad++](https://notepad-plus-plus.org/downloads/): they will show you the structure of your file while you're editing it.
+
+### Key Uniqueness
+
+Duplicate keys will **break** your yaml file. Make sure to avoid them ([yamllint](https://www.yamllint.com/) will scan for this).
+
+Example of an invalid file:
+
+```yaml
+my_key:
+  my_child_key:
+    my_grandchild_key:
+      # a lot of code 
+  my_other_child_key:
+    # yet more code
+  my_child_key:
+    # some different code because I forgot that I already had it defined above
+```
 
 ***
 

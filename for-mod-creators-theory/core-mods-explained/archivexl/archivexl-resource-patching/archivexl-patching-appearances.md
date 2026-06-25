@@ -17,6 +17,7 @@ Concepts discussed here can be applied to many other areas in the game. See the 
 
 ### Wait, this is not what I want!
 
+* Maybe you want to know [#what-else-can-i-patch](./#what-else-can-i-patch "mention")
 * To learn how to recolour an item, check [changing-materials-colors-and-textures](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
 
 ## Prerequisites
@@ -66,9 +67,9 @@ The guide below shows this process for the `.mesh` file. If you are changing a d
 You are creating a **patch file**, which will be used to change data in the original file via ArchiveXL. To rule out side effects, you should delete everything that you aren't changing.
 
 1. If you are changing an **appearance** in a `.mesh` file, you do not need
-   * renderResourceBlob
-   * parameters
-   * lodLevelInfo
+   * `renderResourceBlob`
+   * `parameters`
+   * `lodLevelInfo`
 2. Right-click each of them and select `Reset Object`.
 3. Save your file.
 
@@ -76,7 +77,9 @@ You are creating a **patch file**, which will be used to change data in the orig
 
 ## Step 2: Rename your material(s)
 
-While the appearance name must be the same as in the original mesh, the material name must be different. Expand the material node and right-click on a material to change its name; this will update it in all places that need updating:
+While the **appearance name** must be the same as in the original mesh, the **material name** must be different (this is necessary for ArchiveXL to keep track of what's what).&#x20;
+
+Expand the material node and right-click on a material to change its name; this will update it in all places that need updating:
 
 <figure><img src="../../../../.gitbook/assets/AXL_patchmesh_rename_material.png" alt=""><figcaption></figcaption></figure>
 
@@ -104,12 +107,14 @@ Moving any `.mlsetup` files that you edited will remove the dependency to [Mater
 
 Now we need to tell ArchiveXL about our patch file(s). We do that via an `.archive.xl` file in our `resources` folder — use any text editor, such as [Notepad++](https://notepad-plus-plus.org/downloads/).
 
+{% include "../../../../.gitbook/includes/yaml-editing-warning.md" %}
+
 1. Switch your Project Explorer to the `resources` or `source` tab
 2. Create the file `your_mod_name.archive.xl` (`File` -> `New File`, or via text editor)
 
 <figure><img src="../../../../.gitbook/assets/image (418).png" alt=""><figcaption><p>My .archive.xl file.</p></figcaption></figure>
 
-3. Open the file in your favorite text editor and add the following lines. Mind the **indent** (the number of leading spaces)!
+3. Open the file in your favorite text editor and add the following lines.&#x20;
 
 ```yaml
 resource:
@@ -135,7 +140,7 @@ AXL will take the data from the patch file, and add it to every file in the list
 4. Replace the example file paths with the paths of your actual files
 
 {% hint style="info" %}
-In WolvenKit's Project Explorer you can right-click a file and choose "Copy relative path" and just paste in into your `.xl` file. You don't have to write the paths manually
+You don't have to write the paths manually: in WolvenKit's Project Explorer, right-click any file and choose "Copy relative path" — then paste in into your `.xl` file.
 {% endhint %}
 
 5. Delete any lines that you aren't using.

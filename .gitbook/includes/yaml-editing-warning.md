@@ -2,7 +2,8 @@
 title: yaml editing warning
 ---
 
-`.yaml` files use **indentation** (the number of spaces at the beginning of a line) to organize entries in groups. This is easy to break!
+{% hint style="warning" %}
+`.yaml` files use **indentation** (the number of spaces at the beginning of a line) to organize entries in hierarchies. This is easy to break!&#x20;
 
-If you run into problems, you can check your file on [yamllint.com](https://www.yamllint.com/). \
-If that doesn't help, see if `red4ext/plugins/TweakXL/TweakXL.log` has any hits for your mod.
+You can validate your file on [yamllint.com](https://www.yamllint.com/), or check [How To Yaml](../../for-mod-creators-theory/core-mods-explained/tweakxl/tweakxl-changing-game-records/how-to-yaml-tweak-modding-basics.md#indentation) for more information.
+{% endhint %}

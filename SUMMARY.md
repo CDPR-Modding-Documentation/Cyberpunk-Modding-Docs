@@ -123,6 +123,7 @@
       * [Archived: Registering the Body Tag - app. Version](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/archived-registering-the-body-tag.md)
     * [ArchiveXL: Resource patching](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching/README.md)
       * [Resource Patching: Mesh Appearances](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching/archivexl-patching-appearances.md)
+      * [Resource Patching: Scopes](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-patching/resource-patching-scopes.md)
     * [ArchiveXL: Resource linking](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-resource-linking.md)
     * [ArchiveXL: Character Creator additions](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/README.md)
       * [CCXL Theory: Scopes and extensions](for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/ccxl-theory-scopes-and-extensions.md)
