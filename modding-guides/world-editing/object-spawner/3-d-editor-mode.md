@@ -15,6 +15,7 @@ description: >-
   * You can rotate, move and zoom the camera
   * Move objects by dragging their arrows
   * Multitude of hotkeys (Once again inspired by blender)
+* Only provides editing controls for objects spawned using World Builder
 
 {% hint style="success" %}
 A list of all controls can also be found by hovering the information icon "ℹ" which can be found to the far right of the editor mode toggle
