@@ -47,6 +47,8 @@ All the hotkeys from the main tree view are still available, such as right click
 
 <figure><img src="../../../.gitbook/assets/OSSelectMenu" alt="" width="375"><figcaption><p>Click to select, and box select</p></figcaption></figure>
 
+Note that you can only select objects spawned in by World Builder.
+
 ### `Shift-D` Menu
 
 * In cases where the selected object is wrong, you can use the **Depth Select** menu instead
@@ -62,7 +64,7 @@ All the hotkeys from the main tree view are still available, such as right click
 * Additionally, hotkeys are available (Basically the same as in blender):
   * `G/R/S + X/Y/Z`: Enables movement/rotation/scaling along the specified axis (For scaling you can also leave out the axis, to scale uniformly)
   * `LMB / RMB`: Confirm / cancel edit
-* Holding `Shift` while pressing the axis key will lock the editing on the specified axis. E.g. `G,  Shift + Z` will enable movement, locked to the horizontal plane
+* Holding `Shift` while pressing the axis key will lock the editing on the specified axis. E.g. `G, Shift + Z` will enable movement, locked to the horizontal plane
 * Numeric input: After enabling editing (Rotate / Scale), input numeric values (Supports decimal and negative) to rotate / scale by that amount (Scale is applied as multiplier, rotation is relative)
   * E.g. `R + Z + 90 + LMB / Enter` will rotate the object by 90 on the `Z` axis and confirm the edit
 

@@ -6,6 +6,10 @@ description: >-
 
 # Geometry-cache meshes for streaming-sector collision nodes
 
+## Concepts
+
+The purpose of this tutorial is to allow for simpler world editing by reusing an existing collider that's already cached in the current vanilla streaming sector, rather than attempting to create and import a new collider.&#x20;
+
 ## Requirements
 
 * [WolvenKit](https://github.com/WolvenKit/WolvenKit)
