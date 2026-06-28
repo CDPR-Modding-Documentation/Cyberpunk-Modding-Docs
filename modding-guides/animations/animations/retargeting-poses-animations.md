@@ -23,10 +23,20 @@ Retargeting is also useful for Static poses packs to avoid shrinked shoulders wh
 
 If you're here looking to retagert your Static Poses Pack, I recommend checking this other [**Retargeting Tutorial**](https://docs.google.com/document/d/1CrPTKiGJzy2Tj_klJVHhRdXZgqD7yC2ZsJuRu9nqQuc/edit) by **Halkuonn**, which uses a different plugin better suited for static poses
 
-### <mark style="color:blue;">▶</mark> <mark style="color:yellow;">Requirements</mark>
+### <mark style="color:blue;">▶</mark> <mark style="color:yellow;">Requirements</mark>&#x20;
+
+_<mark style="color:yellow;">— Updated on 28/06/2026 by PinkyDude</mark>_
+
+If you're unable to retarget your animation using the **latest** Blender and Rokoko plugin, try installing this setup - that's the one I use for my animation modding and should work without issues:
+
+{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
+
+
 
 * Latest version of [WolvenKit](../../../for-mod-creators-theory/modding-tools/wolvenkit.md)
-* Latest version of [Blender](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/) and [Blender CP77 Plugin](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#summary)
+* &#x20;[**Blender**](../../../for-mod-creators-theory/3d-modelling/blender-getting-started/) **4.1**&#x20;
+* &#x20;[**Blender CP77 Plugin**](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#summary) **1.5.5.2**
+* **Rokoko 1.4.1**
 * General modding and [pose making](poses-animations-make-your-own/) knowledge
 
 ![](../../../.gitbook/assets/pkd_retargeting_animations_1.gif)
@@ -44,7 +54,7 @@ First, you’ll need to grab the [**Rokoko Plugin from their official website**]
 And [install it like any Blender Addon](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/#step-1-install-the-plugin)
 
 > _`Edit > Preferences > Add-ons`_\
-> &#xNAN;_`drop down arrow on the top right > Install from Disk…`_
+> \&#xNAN;_`drop down arrow on the top right > Install from Disk…`_
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXecrcDkKxa5SiEKj6S7ipWS_Yos2ApmuTGTANAEAYb8roc3RqaNOADEcoYFhwQOvUbNlAEJNqzkRFekaG9oCstzPK8rEQDu_ZHg1fcOhyKIhqEBdqiTUMaBmZd083G8v2YlPsihIQ?key=-34AOAcLx7ftX-VWeAWU2Q" alt=""><figcaption><p>Rokoko Addon in the Add-Ons window</p></figcaption></figure>
 
