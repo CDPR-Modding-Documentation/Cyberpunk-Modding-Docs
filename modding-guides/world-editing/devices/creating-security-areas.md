@@ -82,11 +82,23 @@ Ensure that the `Dummy Area` is in the exact same position as our security area 
   * `controller -> persistentState -> securityAreaType`
   * There you can select the type of area you want
 
+
+
+## **Linking the community**
+
+* If your security area should alert NPCs in your custom community, you also need to link the security area to the community
+* Open the Device -> Device Connections header of the security area, and add a new entry
+* Fill the device class name field with: `CommunityProxyPS` and select the NodeRef of your Community node
+* **Important: ensure your community, security area, and security system are all in the same group.** Otherwise the device connection may not be linked properly on Wolvenkit import
+
+
+
 ## Recap
 
 * You should now have:
   * A security system and security area, spawned as device
   * Both have unique NodeRefs
   * Security system has a device connection to the security area
+  * Security area has a device connection to the community
   * Dummy outline, copy pasted the outline into the security area
 * Now simply export your group from World Builder, and import into WKit using the World Builder [import feature](../object-spawner/exporting-from-object-spawner.md)
