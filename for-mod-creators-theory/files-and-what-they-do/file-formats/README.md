@@ -37,7 +37,7 @@ This file contains compressed save game information, as well as descriptors for 
 As of Phantom Liberty, there are duplicates of many .ent files in the filebase. Whenever you come across a duplicate, pick the one that has "ep1" in its name.
 {% endhint %}
 
-The **entry point** for the game to display an [NPC](../../../modding-guides/npcs/appearances-change-the-looks/#the-.ent-file) or [prop](../../3d-modelling/custom-props/). It is a collection of components that the entity is comprised of, determining their parameters or referencing the files that have said parameters. For instance, NPC .ent files have over a hundred components each, such as entAnimatedComponent (references the correct .anims, .animgraph and .rig files), entTemplateAppearance (references all .app files that are applicable to the entity) and entEffectSpawner (references all .effect files for decals or particles that the entity can spawn). Many of these components have configurable parameters, and the .ent file itself has many under the "entity" section. Many of these parameters, however, are merely the initial state of the entity and are modified in gameplay (such as the boolean isRagdolling).
+The **entry point** for the game to display an [NPC](../../../modding-guides/npcs/appearances-change-the-looks/#the-.ent-file) or [prop](../../../modding-guides/everything-else/custom-props/). It is a collection of components that the entity is comprised of, determining their parameters or referencing the files that have said parameters. For instance, NPC .ent files have over a hundred components each, such as entAnimatedComponent (references the correct .anims, .animgraph and .rig files), entTemplateAppearance (references all .app files that are applicable to the entity) and entEffectSpawner (references all .effect files for decals or particles that the entity can spawn). Many of these components have configurable parameters, and the .ent file itself has many under the "entity" section. Many of these parameters, however, are merely the initial state of the entity and are modified in gameplay (such as the boolean isRagdolling).
 
 From ArchiveXL item additions, this kind of file is usually called a **root entity**.
 
@@ -59,7 +59,7 @@ Not a file type but an internal data structure and part of [.ent](./#.ent-entity
 
 ## .bk2 (Bink2 Video)
 
-A common file format for in game videos used by tons of gamestudios using Bink2 format. Requires [RADTools](https://www.radgametools.com/bnkdown.htm) for file conversion between mp4 and .bk2 files.&#x20;
+A common file format for in game videos used by tons of gamestudios using Bink2 format. Requires [RADTools](https://www.radgametools.com/bnkdown.htm) for file conversion between mp4 and .bk2 files.
 
 ## .inkatlas (Texture mapping)
 

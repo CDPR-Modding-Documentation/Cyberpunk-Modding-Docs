@@ -23,8 +23,8 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
     * If you just want to use a textured material, check [using-a-textured-material.md](../items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention")
 * If you want to dig deeper into [multilayered](../../for-mod-creators-theory/materials/multilayered/ "mention"), check our guide for [custom-multilayermasks.md](custom-multilayermasks.md "mention")
 * Find a look-up list of cool materials under [cheat-sheet-materials.md](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md "mention")
-* For a more detailed guide about prop creation, check [custom-props](../../for-mod-creators-theory/3d-modelling/custom-props/ "mention")
-* Or maybe you wonder [#where-to-find-models](../../for-mod-creators-theory/3d-modelling/custom-props/#where-to-find-models "mention")
+* For a more detailed guide about prop creation, check [custom-props](../everything-else/custom-props/ "mention")
+* Or maybe you wonder [#where-to-find-models](../everything-else/custom-props/#where-to-find-models "mention")
 
 ## **Requirements**
 
@@ -33,9 +33,9 @@ This guide will walk you through **importing 3d objects** into Cyberpunk 2077, w
 
 ## Setting up the project
 
-This section is already covered in the guide for [custom props](../../for-mod-creators-theory/3d-modelling/custom-props/#setting-up-the-project), using the source folder variant, or directly download [this archive](https://mega.nz/file/GUsSwSxY#Ast7L44g_YimuKrcbwNCLvYL_DworhpEQsaH05RNGJw) and extract it into your Wolvenkit project.
+This section is already covered in the guide for [custom props](../everything-else/custom-props/#setting-up-the-project), using the source folder variant, or directly download [this archive](https://mega.nz/file/GUsSwSxY#Ast7L44g_YimuKrcbwNCLvYL_DworhpEQsaH05RNGJw) and extract it into your Wolvenkit project.
 
-Optional: Complete the [creating another prop](../../for-mod-creators-theory/3d-modelling/custom-props/#creating-another-prop) section from the custom props guide, or alter one of the two existing template items.
+Optional: Complete the [creating another prop](../everything-else/custom-props/#creating-another-prop) section from the custom props guide, or alter one of the two existing template items.
 
 {% hint style="success" %}
 This guide will assume that you are editing `template_no_variants.mesh`, as our focus is on mesh import and material assignment. You can delete the folder `amm_props\template`, since we won't need it.
@@ -411,7 +411,7 @@ If you rather want to make your own mlsetups, see [here](../items-equipment/edit
 ```
 
 The possibilities are basically endless, so go and explore them already! For a nifty list with materials to get you started, check [here](../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-materials.md).\
-For a guide on creating AMM props, see [here](../../for-mod-creators-theory/3d-modelling/custom-props/).
+For a guide on creating AMM props, see [here](../everything-else/custom-props/).
 
 ## Troubleshooting
 

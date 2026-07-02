@@ -20,7 +20,7 @@ Alternative workflow, shorter video tutorial by CyberVesna - [Importing Custom C
 You can find other relevant guides scattered across this wiki, for example
 
 * [adding-new-items](../../../modding-guides/items-equipment/adding-new-items/ "mention")
-* [custom-props](../custom-props/ "mention")
+* [custom-props](../../../modding-guides/everything-else/custom-props/ "mention")
 * [textured-items-and-cyberpunk-materials.md](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
 
 ## Prerequisites
@@ -34,11 +34,11 @@ You can find other relevant guides scattered across this wiki, for example
 
 To bring 3d data into Cyberpunk, Wolvenkit needs a .mesh file to import into. [Read here why](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export#file-structure).
 
-For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item](../../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/ "mention"), creating [custom-props](../custom-props/ "mention") or [adding-new-items](../../../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
+For the purpose of this guide, it doesn't matter if you are trying to[replace-a-player-item-with-an-npc-item](../../../modding-guides/items-equipment/editing-existing-items/replace-a-player-item-with-an-npc-item/ "mention"), creating [custom-props](../../../modding-guides/everything-else/custom-props/ "mention") or [adding-new-items](../../../modding-guides/items-equipment/adding-new-items/ "mention"). You will overwrite an existing in-game mesh, the file path doesn't matter.
 
 ### Static items
 
-If you are [creating props](../custom-props/), you use a mesh from the template project or grab any static mesh from the game.
+If you are [creating props](../../../modding-guides/everything-else/custom-props/), you use a mesh from the template project or grab any static mesh from the game.
 
 {% hint style="warning" %}
 Do not take equipment item or weapon meshes — those include a bunch of extra data that you don't need (the [armature](../meshes-and-armatures-rigging/)). You don't need it, and it can have side effects.
@@ -89,9 +89,13 @@ Search for something like this:
 ```
 namespace > slot > gender > .mesh
 
-player: player > torso > pwa > .mesh 
-npc:    common > torso > pwa > .mesh 
+player: player > torso > _pwa_ > .mesh 
+npc:    common > torso > _wa_ > .mesh 
 ```
+
+{% hint style="info" %}
+You can further fine tune your query, for example by adding `> t1` to find only inner torso items, or  `> !decal`  to filter decal items
+{% endhint %}
 
 For torso items, you can add `t1` for inner torso items (tight-fitting) or `t2` for outer torso items (worn above t1).
 
@@ -154,7 +158,7 @@ No matter which strategy you use, we need to get the prerequisites done first. W
 
 1. Import the result of Step 1 into Blender (see the [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention")'s documentation about [#importing-into-blender](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender "mention"))
 
-Clean up any residual modifiers and transforms (we don't want them):
+Clean up any residual modifiers and transforms on the mesh that you want to port (we don't want them):
 
 1. **If your mesh has an armature modifier** with a non-Cyberpunk armature, delete it
    1. (click on the `x` in the modifier panel)
@@ -163,60 +167,37 @@ Clean up any residual modifiers and transforms (we don't want them):
    2. Select **Unparent** (Hotkey: `Alt+P`)
    3. Select the second option "**Clear Parent and Keep Transforms**"
 
-### Strategy 1: Replacing the 3d data
+### Parenting the meshes
+
+We now need to parent the meshes that we want to port to our existing Cyberpunk armature.
+
+1. Select all of your meshes (click on them, or select them in the Outliner)
+2. In the Cyberpunk plugin, find **Mesh Tools -> Utilities -> Change Armature Target**
+3. In the pop-up, select your cyberpunk import
+4. Make sure the "Re-parent..." box is checked
+5. Click OK
+
+<figure><img src="../../../.gitbook/assets/parent_armature.png" alt=""><figcaption></figcaption></figure>
+
+### Re-naming the meshes
 
 {% hint style="info" %}
-If you are doing this, you can skip[#strategy-2-parenting-the-meshes](./#strategy-2-parenting-the-meshes "mention").
+Unless you have more than one mesh, you can skip this section
 {% endhint %}
 
-We start by deleting the original's vertex data.
-
-1. In [Object Mode](#user-content-fn-2)[^2], select all of the original meshes.
-2. Switch to Edit Mode (Hotkey: `Tab`)
-3. Make sure that all vertices are selected (Hotkey: `A`)
-4. Delete all vertices (Hotkey: `x`, option: **Vertices**)
-
-<figure><img src="../../../.gitbook/assets/porting_edit_mode_select_vertices.png" alt=""><figcaption></figcaption></figure>
-
-5. Switch back to Object Mode (Hotkey: `Tab`)
-
-We'll merge our new meshes into the empty containers now:
-
-1. Click on your new mesh
-2. Click on the empty original mesh in the Outliner (yes, order matters)
-3. Join them (Hotkey: `Ctrl+J`)
-
-<figure><img src="../../../.gitbook/assets/porting_clothes_after_merge.png" alt=""><figcaption><p>The new mesh should be from the Outliner and its data should be in one of the original meshes. If it's the other way around, <strong>Undo</strong> (Hotkey: <code>Ctrl+Z</code>) and select them in the right order. (You could've listened!)</p></figcaption></figure>
-
-Repeat the same for all meshes that you want to import to Cyberpunk.
+Upon import, Wolvenkit will read each geometry chunk in order and turn it into a submesh. To make sure that these are sorted correctly, you should re-name your meshes to match the naming pattern of `submesh_XX_LOD_1` (xx being the number, starting at 00).&#x20;
 
 {% hint style="info" %}
-If you need more submeshes, simply duplicate an existing one (Hotkey: `Ctrl+D`, `ESC`) and change its name by incrementing the number. Make sure it still ends in `LOD_1`, not in `LOD_2` — that will tell the game it's low-poly, and cause it to be hidden until you're further away.
+Blender's suffixes ( e.g. `.001`) don't matter - just ignore them
 {% endhint %}
 
-That's it. All your meshes are parented to the armature now.
-
-### Strategy 2: Parenting the meshes
-
-{% hint style="info" %}
-If you are doing this, you can skip [#strategy-1-replacing-the-3d-data](./#strategy-1-replacing-the-3d-data "mention").
-{% endhint %}
-
-We can simply parent the meshes to our existing armature:
-
-1. Click on your mesh
-2. Click on the Armature object in the Outliner
-3. Select Parent (Hotkey: `Ctrl+P`)
-4. Select "Armature Deform"
-
-<figure><img src="../../../.gitbook/assets/porting_parent_object.png" alt=""><figcaption></figcaption></figure>
-
-5. Make sure to rename your mesh: Wolvenkit doesn't know what to do with meshes that aren't part of the sequence starting at `submesh_00_LOD_1`. (Blender's .000 suffixes will be ignored)\
-   You can delete the original meshes, or you keep them for Step 4.
+1. Double-click on the first mesh in the outliner, and change its name to `submesh_00_LOD_1`
+2. Double-click on the second, and change its name to `submesh_01_LOD_1`
+3. Proceed until you have re-named all meshes
 
 ## Step 4: Weight Transfer
 
-Start by **deleting all vertex groups** from your new mesh, as we will now replace these and don't want anything funky to stick around to destroy our re-import:
+Start by **deleting all vertex groups** from your new mesh, as we will now **replace these** and don't want anything funky to stick around to destroy our re-import:
 
 <figure><img src="../../../.gitbook/assets/image (324).png" alt=""><figcaption></figcaption></figure>
 
@@ -269,7 +250,7 @@ See the [WolvenKit](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-MP_ozZVx2g
 If everything worked, you now have **replaced** an original Cyberpunk item. Since this is probably not what you want, check out the following guides:
 
 * [adding-new-items](../../../modding-guides/items-equipment/adding-new-items/ "mention") will walk you through the steps of adding your mesh as a new piece of equipment
-* [custom-props](../custom-props/ "mention") will show you how to add props for AMM and entSpawner
+* [custom-props](../../../modding-guides/everything-else/custom-props/ "mention") will show you how to add props for AMM and entSpawner
 
 Here are a few more guides that could interest you?
 
@@ -277,5 +258,3 @@ Here are a few more guides that could interest you?
 * [textured-items-and-cyberpunk-materials.md](../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention") will tell you how materials work, and how you can use them to texture your item
 
 [^1]: Level of Detail
-
-[^2]: You can see the mode in the topleft corner of the viewport.

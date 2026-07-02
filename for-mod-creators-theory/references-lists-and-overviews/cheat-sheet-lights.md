@@ -9,11 +9,11 @@ description: Lights and their properties at a glance
 **Published**: Feb 09 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented edit**: Feb 09 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page gives you an overview about lights at a glance.&#x20;
+This page gives you an overview about lights at a glance.
 
 ### Wait, this isn't what I want!
 
-For a guide how to add lights to AMM props, check [amm-light-components.md](../3d-modelling/custom-props/amm-light-components.md "mention")
+For a guide how to add lights to AMM props, check [amm-light-components.md](../../modding-guides/everything-else/custom-props/amm-light-components.md "mention")
 
 For an overview and explanation of lights, check [lights-explained.md](../files-and-what-they-do/lights-explained.md "mention") (currently WIP)
 
@@ -30,4 +30,3 @@ Recolourable via AMM panel. Has a Light and a LightGlow component, no flicker
 [Search Wolvenkit](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `candle > .ent`
 
 Fixed colour, flickering light, soft natural glow
-

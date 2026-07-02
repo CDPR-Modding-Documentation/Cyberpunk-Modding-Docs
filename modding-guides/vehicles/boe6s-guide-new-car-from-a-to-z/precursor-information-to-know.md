@@ -112,7 +112,7 @@ These do not count as a tutorial.
 ## You have a 3D model to use
 
 {% hint style="info" %}
-If you don't, check [custom-props](../../../for-mod-creators-theory/3d-modelling/custom-props/ "mention") -> [#where-to-find-models](../../../for-mod-creators-theory/3d-modelling/custom-props/#where-to-find-models "mention") for sources.
+If you don't, check [custom-props](../../everything-else/custom-props/ "mention") -> [#where-to-find-models](../../everything-else/custom-props/#where-to-find-models "mention") for sources.
 {% endhint %}
 
 Your model should be high-quality and include the following:

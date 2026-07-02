@@ -203,8 +203,6 @@
   * [Your image as custom mesh](for-mod-creators-theory/3d-modelling/your-image-as-custom-mesh.md)
   * [Porting 3d objects to Cyberpunk](for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/README.md)
     * [Reducing vertex counts](for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/reducing-vertex-counts.md)
-  * [AMM: Custom Props](for-mod-creators-theory/3d-modelling/custom-props/README.md)
-    * [AMM: Light Components](for-mod-creators-theory/3d-modelling/custom-props/amm-light-components.md)
   * [Refitting: Mesh sculpting techniques](for-mod-creators-theory/3d-modelling/mesh-sculpting-techniques.md)
   * [3d editing: Submeshes](for-mod-creators-theory/3d-modelling/3d-editing-submeshes.md)
   * [Meshes and Armatures: Rigging](for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging/README.md)
@@ -301,6 +299,7 @@
       * [Standalone Weapon Appearance](modding-guides/items-equipment/adding-new-items/weapons/standalone-weapon-appearance.md)
       * [Throwing weapons: projectiles](modding-guides/items-equipment/adding-new-items/weapons/throwing-weapons-projectiles.md)
       * [Weapons: Attachments and Scopes](modding-guides/items-equipment/adding-new-items/weapons/weapons-attachments-and-scopes.md)
+    * [Porting 3d objects to Cyberpunk](for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/README.md)
   * [Custompathing assets](modding-guides/items-equipment/custompathing-assets.md)
   * [Transferring Dangle Bones](modding-guides/items-equipment/transferring-dangle-bones.md)
   * [RIG Swapping Garments - other body conversion](modding-guides/items-equipment/rig-swapping-garments-other-body-conversion.md)
@@ -539,6 +538,8 @@
   * [Player State Machines](modding-guides/everything-else/player-state-machines.md)
   * [Running Python Scripts](modding-guides/everything-else/running-python-scripts.md)
   * [LocKeys: Values and formatting](modding-guides/everything-else/lockeys-values-and-formatting.md)
+  * [AMM: Custom Props](modding-guides/everything-else/custom-props/README.md)
+    * [AMM: Light Components](modding-guides/everything-else/custom-props/amm-light-components.md)
 
 ***
 

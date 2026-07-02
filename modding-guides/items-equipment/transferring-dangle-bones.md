@@ -6,23 +6,25 @@ description: How to transfer physics from one mesh to another for cross-rigs ref
 
 ## <mark style="color:blue;">▶</mark> <mark style="color:yellow;">Summary</mark> <a href="#summary" id="summary"></a>
 
-> Created & Published: August 2024 by [PinkyJulien](https://app.gitbook.com/u/iKTJipgsEBTEnUVSuliSjOUuiJq2 "mention") _(_[_Original link_](https://docs.google.com/document/d/1t6dx-3WeOsK3dsz6TwsRUpPJxznp3ShBNaN1PcRoLpE/edit?tab=t.0)_)_&#x20;
+> Created & Published: August 2024 by [PinkyJulien](https://app.gitbook.com/u/iKTJipgsEBTEnUVSuliSjOUuiJq2 "mention") _(_[_Original link_](https://docs.google.com/document/d/1t6dx-3WeOsK3dsz6TwsRUpPJxznp3ShBNaN1PcRoLpE/edit?tab=t.0)_)_
+
+{% hint style="warning" %}
+With version 2.0 of the Blender Addon, this guide is outdated – the process has become much more simple. Find us on [Discord](https://discord.gg/redmodding) in the `#blender-add-on` channel to ask about it. Maybe you can update this tutorial after!
+{% endhint %}
 
 This guide won't go over how to port or refit a garment, or how to create and pack a mod.
 
-I assume you're already familiar with WolvenKit, Blender, and how to navigate both softwares; if not, I recommend checking the other guides available in the Modding Wiki!&#x20;
+I assume you're already familiar with WolvenKit, Blender, and how to navigate both softwares; if not, I recommend checking the other guides available in the Modding Wiki!
 
 {% hint style="info" %}
-Transferring dangle chains from one rig to another won’t be perfect; depending on the rigs, it might create a more-or-less visible offset (stretching and/or floating). In my own experiences, transferring dangles from WA to MA seems to be ok; MA to WA should also be ok.&#x20;
+Transferring dangle chains from one rig to another won’t be perfect; depending on the rigs, it might create a more-or-less visible offset (stretching and/or floating). In my own experiences, transferring dangles from WA to MA seems to be ok; MA to WA should also be ok.
 
 For a precise and proper transfer, refer yourself to Eagul’s tutorial on [moving-a-dangle-chain.md](../../for-mod-creators-theory/3d-modelling/meshes-and-armatures-rigging/dangle-bones/moving-a-dangle-chain.md "mention")
 {% endhint %}
 
 ### <mark style="color:blue;">▶</mark> <mark style="color:yellow;">Requirements</mark> <a href="#requirements" id="requirements"></a>
 
-* a recent version of [WolvenKit](https://wiki.redmodding.org/wolvenkit/readme)&#x20;
-* a recent version of the [CP77 Blender Plugin](https://github.com/WolvenKit/Cyberpunk-Blender-add-on)&#x20;
-* Blender 4.4 or above&#x20;
+{% include "../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
 ***
 
@@ -106,7 +108,7 @@ Once that’s done, don’t forget to **save your .mesh!**
 
 Now that our mesh container is ready, we need to refit our model and transfer the dyng bones from the WA rig to the MA rig 👉
 
-I’ll skip the refitting part; I’ll also assume you know how to rig transfer a WA mesh to a MA rig (if not, check out my [Rig Transfer tutorial here](rig-swapping-garments-other-body-conversion.md))&#x20;
+I’ll skip the refitting part; I’ll also assume you know how to rig transfer a WA mesh to a MA rig (if not, check out my [Rig Transfer tutorial here](rig-swapping-garments-other-body-conversion.md))
 
 Before transferring the weights from your PMA source to the rig transferred garment, I recommend locking the dyng bones vertex groups to make sure they won’t lose their assigned weight values when you transfer the weight from your MA source!
 
@@ -120,7 +122,7 @@ Expand the Armature list and select all of the dyng bones
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXdoe4CaJGffO0-H1Y6avlWLi58JfQPGEdWs8hIEuDFtUQES_OiHRjxsQBaraY2QUmukVox4RouBeG9-VkuneDMwU1lxxiefn5YyK2Y3MIZKpiZLQzsqtnpOkd2eHGyh9hVexIPsHaGO35JtRkvlf7Tuk4Hb?key=hYoc8I2SJxI3cd4pfkCg5g" alt=""><figcaption></figcaption></figure>
 
-Place your cursor in the 3D viewport and press P&#x20;
+Place your cursor in the 3D viewport and press P
 
 A pop up window will appear to confirm that you want to separate the selected bones; simply click on it to confirm
 

@@ -9,7 +9,7 @@ description: Activate an existing collisions in a mesh
 **Published: January 20, 2024 by** [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")\
 **Last documented update: January 25, 2024 by** [Akiway](https://app.gitbook.com/u/2021vbDrMKZ0TbHeIx2wzPyAYtl2 "mention")
 
-This guide shows you how to enable an object's **embedded collision** for entities without (items that you can walk through).&#x20;
+This guide shows you how to enable an object's **embedded collision** for entities without (items that you can walk through).
 
 It's a direct follow-up to [**Adding Objects to the World**](../archived-guides/adding-locations-and-structures-with-archivexl.md).
 
@@ -19,7 +19,7 @@ As of today (Jan 20 2024), you need a collision-enabled mesh for this. We can cr
 
 ### Wait, this is not what I want!
 
-* If you want to create [custom-props](../../../for-mod-creators-theory/3d-modelling/custom-props/ "mention") for AMM, check the corresponding guide. Note that this mechanism applies for them as well!
+* If you want to create [custom-props](../../everything-else/custom-props/ "mention") for AMM, check the corresponding guide. Note that this mechanism applies for them as well!
 
 ## Requirements
 
@@ -31,7 +31,7 @@ As of today (Jan 20 2024), you need a collision-enabled mesh for this. We can cr
 
 ## Find an eligible object
 
-Not every object contains an embedded collision, so we first need to check if your desired mesh has one.&#x20;
+Not every object contains an embedded collision, so we first need to check if your desired mesh has one.
 
 * Once in-game, search for the item you want to spawn; I'll be using `base\meshes\base_environment_decoration_furniture_industrial_industrial_table_industrial_table_g.ent`
 
@@ -50,7 +50,7 @@ Not every object contains an embedded collision, so we first need to check if yo
 After you added it, **turn off the Mod Browser option**; otherwise, you won't be able to get the mesh file in the next step.
 {% endhint %}
 
-* Open the [.ent file](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity) and look for the mesh component in its components array.
+* Open the [.ent file](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity) and look for the mesh component in its components array.
   * If the selected entity is from **allmeshes** (starts with `base\meshes\` ), then there is probably only 1 <mark style="color:orange;">entPhysicalMeshComponent</mark> called _custom\_mesh_
   * If not, it means your entity is from the vanilla game; in this case, search for the component that has Mesh in its type (<mark style="color:orange;">entPhysicalMeshComponent</mark>, <mark style="color:orange;">entMeshComponent</mark>, etc...)
 * In the mesh, click on the blue arrow to open the mesh in a new tab (_we don't need to add the file_)
@@ -77,7 +77,7 @@ It means that there is no collision with it. But other solutions exist for you:
 
 Turning it on is pretty simple; we only have 2 things to change, all in the .ent file previously added:
 
-* Update the `filterData` and change the values like in the screenshot. Those values determine which entities can collide with, and how to simulate the collision.&#x20;
+* Update the `filterData` and change the values like in the screenshot. Those values determine which entities can collide with, and how to simulate the collision.
 
 <figure><img src="../../../.gitbook/assets/world_editing__embedded_collision__filter_data.png" alt=""><figcaption></figcaption></figure>
 
@@ -89,7 +89,7 @@ This information is not well-researched as of Jan 2024 - if you know anything mo
 
 <figure><img src="../../../.gitbook/assets/world_editing__embedded_collision__navigation_impact.png" alt=""><figcaption></figcaption></figure>
 
-* **Optional**_:_ depending on the item, you may want to enable (or not) lighting-based shadows. You can do so by setting these 3 properties to `Always`.&#x20;
+* **Optional**_:_ depending on the item, you may want to enable (or not) lighting-based shadows. You can do so by setting these 3 properties to `Always`.
 
 <figure><img src="../../../.gitbook/assets/world_editing__embedded_collision__shadows.png" alt=""><figcaption></figcaption></figure>
 
@@ -113,7 +113,7 @@ In our test case, I renamed the file as `mod\embedded_collision_test\decoration\
 
 * If the path of your ent changed, don't forget to add it to the allPaths.txt file used by Object Spawner.
 
-That's it! All you have to do now is to [install your mod and launch the game](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch).&#x20;
+That's it! All you have to do now is to [install your mod and launch the game](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch).
 
 Once in-game, open and load the new entity with the new path and verify that collision is enabled. :tada:
 

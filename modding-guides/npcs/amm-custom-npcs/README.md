@@ -13,7 +13,7 @@ This guide will show you how to create fully custom NPCs for AMM.
 
 ### Wait, that's not what I want!
 
-* If you want to create [custom-props](../../../for-mod-creators-theory/3d-modelling/custom-props/ "mention") instead, check the link.
+* If you want to create [custom-props](../../everything-else/custom-props/ "mention") instead, check the link.
 * If you want to add new appearances to already existing NPCs, check [amm-custom-npc-appearances.md](amm-custom-npc-appearances.md "mention")
 * If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/ "mention"). (It's a more advanced version of this workflow)
 
@@ -87,7 +87,7 @@ In the `.lua` file, add an appearance to the `appearances` array to register it 
 2. Optional, but recommended: Delete all appearances that you don't want, but keep one for the next step.
 3. Create a new appearance:
    1. Select an existing item
-   2. Right-click and select "[Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
+   2. Right-click and select "[File Editor #Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
    3. In the new entry, change the following fields:
       1. `name`: must match the name that you just registered in the `.lua`
       2. `appearanceName`: must match the name that you are going to use in the .app file in step 3.3
@@ -98,7 +98,7 @@ In the `.lua` file, add an appearance to the `appearances` array to register it 
 2. Optional, but recommended: Delete all appearances that you don't want, but keep one for the next step.
 3. Create a new appearance:
    1. Select an existing appearance
-   2. Right-click and select "[Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
+   2. Right-click and select "[File Editor #Duplicate item in Array/Buffer](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/file-editor#duplicate-item-in-array-buffer "mention")" from the context menu. This will create an exact copy of your existing appearance.
    3. Change the appearance's `name` to the value you used in step 2.3.2
 
 Now it's time to adjust the components. This guide won't go into detail about this — see [appearances-change-the-looks](../appearances-change-the-looks/ "mention") for more intel on the process.
