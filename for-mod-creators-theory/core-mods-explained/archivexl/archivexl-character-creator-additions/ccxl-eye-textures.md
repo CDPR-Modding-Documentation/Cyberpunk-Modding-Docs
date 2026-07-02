@@ -8,8 +8,8 @@ description: >-
 
 ### Summary
 
-**Published:** Aug 9, 2025  by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention") | [island\_dancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
-**Last documented edit**: Aug 24, 2025 by [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention")&#x20;
+**Published:** Aug 9, 2025 by [nutboy](https://app.gitbook.com/u/y772Qw4Ul9cmqXiuTKkTpLxDVzQ2 "mention") | [island\_dancer](https://app.gitbook.com/u/s8gktWvqEZWGRxQIsePwOnEI2Mo2 "mention")\
+**Last documented edit**: Aug 24, 2025 by [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention")
 
 #### Wait, this is not what I want!
 
@@ -29,13 +29,13 @@ Start by making a new project in WolvenKit. Name your project.
 
 Open your new project's root folder by clicking the yellow folder button on the top right of the project explorer: ![](https://1427525421-files.gitbook.io/~/files/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4gzcGtLrr90pVjAWVdTc%2Fuploads%2FQOUwXFL3LY52anlLHxKY%2Fimage.png?alt=media\&token=a8e6b27e-d5ea-4d67-bec7-1d15d11f33cd)
 
-In file explorer, open and drag the template files into your project.&#x20;
+In file explorer, open and drag the template files into your project.
 
 It will show the files in WolvenKit's project explorer. If it does not, hit the blue refresh 🔄 button next to the yellow root folder button.
 
 Here's what the project template will look like:
 
-<p align="center"><img src="../../../../.gitbook/assets/ccxleyes001.png" alt="" data-size="original"></p>
+<div align="center"><img src="../../../../.gitbook/assets/ccxleyes001.png" alt=""></div>
 
 ## Step 1: Replace template folder & file names
 
@@ -92,9 +92,9 @@ Rename the following:
 
 Next, rename the **.inkcharactercustomization** files with "Update in project files" checked.
 
-Next, rename the **.inkatlas** and icon **.xbms** with "Update in project files" checked.&#x20;
+Next, rename the **.inkatlas** and icon **.xbms** with "Update in project files" checked.
 
-Next, rename the placeholder files in the **textures** folders by replacing `modderinitials` with your initials, with "Update in project files" checked.&#x20;
+Next, rename the placeholder files in the **textures** folders by replacing `modderinitials` with your initials, with "Update in project files" checked.
 
 ***
 
@@ -106,16 +106,16 @@ In WolvenKit, copy the path to the inkcharactercustomization file by hovering it
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes006.png" alt="" width="563"><figcaption></figcaption></figure>
 
-In the xl, under customizations, delete the old path after `female:` and paste in your new path. Next, delete and paste the same path after `male:` as well.&#x20;
+In the xl, under customizations, delete the old path after `female:` and paste in your new path. Next, delete and paste the same path after `male:` as well.
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes007.png" alt=""><figcaption></figcaption></figure>
 
-Next, copy the relative path to your `patch.mesh`  from Wolvenkit, and replace the placeholder path on the line under `resource: patch:`&#x20;
+Next, copy the relative path to your `patch.mesh` from Wolvenkit, and replace the placeholder path on the line under `resource: patch:`
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes008.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
-Do not delete the `:` after the path.&#x20;
+Do not delete the `:` after the path.
 {% endhint %}
 
 S**ave** your .xl file.
@@ -130,7 +130,7 @@ Copy the path to your renamed/updated inkatlas file and paste it into the yaml w
 
 **Save** your yaml.
 
-Next, open your patch.mesh and right click the RDTDataViewModel header.&#x20;
+Next, open your patch.mesh and right click the RDTDataViewModel header.
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes010.png" alt="" width="563"><figcaption></figcaption></figure>
 
@@ -138,23 +138,23 @@ Select "Search and Replace in selection" and set the search for "modderinitials"
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes011.png" alt="" width="563"><figcaption></figcaption></figure>
 
-Wolvenkit logs will print an update about the replacements.&#x20;
+Wolvenkit logs will print an update about the replacements.
 
-Next, scroll down to **localMaterialBuffer** and expand materials and values until you see **Albedo**.&#x20;
+Next, scroll down to **localMaterialBuffer** and expand materials and values until you see **Albedo**.
 
-You'll see there's one file path of **moddername**/**modname** that still needs to be replaced.&#x20;
+You'll see there's one file path of **moddername**/**modname** that still needs to be replaced.
 
 Update the path to match your files. Make sure to keep everything else the same, including the asterisk `*` at the beginning and `{material}`
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes012 (1).png" alt="" width="563"><figcaption></figcaption></figure>
 
 {% hint style="info" %}
-{material} is a substitution; it tells AXL to match the names of the files in your **materials** folder for each appearance listed in the patch.mesh **appearances** section.&#x20;
+{material} is a substitution; it tells AXL to match the names of the files in your **materials** folder for each appearance listed in the patch.mesh **appearances** section.
 {% endhint %}
 
 Next right click, and convert inkcharcustomization file to **.json**
 
-Scroll down to the raw folder to find the .json it created.&#x20;
+Scroll down to the raw folder to find the .json it created.
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes013.png" alt=""><figcaption></figcaption></figure>
 
@@ -179,7 +179,7 @@ At the top of WolvenKit's UI, go to Project > Scan File for Broken File Referenc
 
 It will open a window. Ignore the inkatlas if it says "none" underneath, it's not an issue. If there are no other missing paths logged, you did it! You're ready to move onto [the next step](ccxl-eye-textures.md#test-your-updated-project).
 
-If there are any other files listed in the window, you have broken paths that need to be fixed. \
+If there are any other files listed in the window, you have broken paths that need to be fixed.\
 Expand below to fix this.
 
 <details>
@@ -188,7 +188,7 @@ Expand below to fix this.
 
 The first file listed in the broken file reference window is the file you need to open, and the indented list of other file(s) underneath are the paths that need to be updated.
 
-Open any files listed and expand menus as necessary to find the incorrect file path, or right click the first header RDTDataViewModel and click "Search and Replace", searching and replacing instances of "moddername", "modderinitials", or "modname" in the project.&#x20;
+Open any files listed and expand menus as necessary to find the incorrect file path, or right click the first header RDTDataViewModel and click "Search and Replace", searching and replacing instances of "moddername", "modderinitials", or "modname" in the project.
 
 Remember to save your files as you update any broken paths.
 
@@ -198,7 +198,7 @@ Repeat scanning for broken file references until the only one left is inkatlas -
 
 ### Test your updated project
 
-Install your mod with WolvenKit, open your game, and open Character Customization to ensure everything still works: template icons show in the eye list, template eye colors show on the character when you select them, etc.&#x20;
+Install your mod with WolvenKit, open your game, and open Character Customization to ensure everything still works: template icons show in the eye list, template eye colors show on the character when you select them, etc.
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes026.png" alt=""><figcaption></figcaption></figure>
 
@@ -216,81 +216,78 @@ Now that the project is set up, it's finally time to add textures to your eyes! 
 
 If you already have .xbm **diffuse** and **normal** textures from another eye mod project, go ahead and add them to your project's **textures** folder, then skip to [#step-5-naming-your-textures-appearances](ccxl-eye-textures.md#step-5-naming-your-textures-appearances "mention")
 
-If you're converting a Unique Eyes mod, go to [#converting-textures-from-a-unique-eyes-mod](ccxl-eye-textures.md#converting-textures-from-a-unique-eyes-mod "mention")&#x20;
+If you're converting a Unique Eyes mod, go to [#converting-textures-from-a-unique-eyes-mod](ccxl-eye-textures.md#converting-textures-from-a-unique-eyes-mod "mention")
 
 If you're starting from scratch, go to [#creating-new-textures](ccxl-eye-textures.md#creating-new-textures "mention")
 
 ### Converting textures from a Unique Eyes mod
 
-* If you are updating a mod that was made for Halvkyrie's Unique Eyes, open the Wolvenkit **Asset Browser** with **Mod Browser** turned on.&#x20;
-* In Asset Browser, navigate to the mod archive that contains your textures. They will look like the image below (normals and roughness files may not be included depending on the mod).&#x20;
-* To start you will need the files ending with `_diffuse`. Add the diffuse files to your project.&#x20;
+* If you are updating a mod that was made for Halvkyrie's Unique Eyes, open the Wolvenkit **Asset Browser** with **Mod Browser** turned on.
+* In Asset Browser, navigate to the mod archive that contains your textures. They will look like the image below (normals and roughness files may not be included depending on the mod).
+* To start you will need the files ending with `_diffuse`. Add the diffuse files to your project.
 * Delete the template project's placeholder files in the materials folder, and then drag the diffuse files you just added to the project into your project's materials folder. Delete the `base/eyes/textures` folders that were created.
 
 <p align="center"><br><img src="../../../../.gitbook/assets/ccxleyes014.png" alt=""></p>
 
-
-
 * Next, in Asset Browser, click some of the mod's `_normal`s and `_roughness` files to check if each number is a copy of the same image.
-* If all the numbered `_normal`s files look to be the same image, only add one to your project.&#x20;
+* If all the numbered `_normal`s files look to be the same image, only add one to your project.
   * If there are multiple images for normals, see [#using-multiple-unique-normals-in-one-project](ccxl-eye-textures.md#using-multiple-unique-normals-in-one-project "mention")
   * If the mod doesn't include a `_normal` option at all, you can do one of two things:
     * Use the `modderinitials_eyes_n.xbm` texture provided with the template project, if it looks like it will fit the shape of your eyes/iris, or
-    * Open your `patch.mesh`, and navigate to the localMaterialBuffer, expanding **@eyes** > **values** > **Normal**. \
-      Path to the game's placeholder normal by copying and pasting this: \
-      `engine\textures\editor\normal.xbm`  into the Normal section. \
-      Save your file.&#x20;
+    * Open your `patch.mesh`, and navigate to the localMaterialBuffer, expanding **@eyes** > **values** > **Normal**.\
+      Path to the game's placeholder normal by copying and pasting this:\
+      `engine\textures\editor\normal.xbm` into the Normal section.\
+      Save your file.
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes016.png" alt=""><figcaption></figcaption></figure>
 
-* If a `_roughness` file is included and looks like the below image, you can **skip** adding it to your project, it is not needed for CCXL eyes.&#x20;
+* If a `_roughness` file is included and looks like the below image, you can **skip** adding it to your project, it is not needed for CCXL eyes.
 
 <p align="center"><br><img src="../../../../.gitbook/assets/ccxleyes015.png" alt=""></p>
 
 <figure><img src="../../../../.gitbook/assets/roughness_xbm_setup.png" alt=""><figcaption></figcaption></figure>
 
-* If the mod offers a custom roughness map (and does not look like the image above):&#x20;
+* If the mod offers a custom roughness map (and does not look like the image above):
   * Add the roughness file(s) to your project in the materials folder and rename it.
-  * &#x20;Note that the basegame eye roughness map is not a conventional greyscale roughness map. It is an RGB colour image with linear gamma. See xbm setup above. If using a custom roughness map, you must use the import settings shown in the xbm setup above or it will not display correctly in-game.
+  * Note that the basegame eye roughness map is not a conventional greyscale roughness map. It is an RGB colour image with linear gamma. See xbm setup above. If using a custom roughness map, you must use the import settings shown in the xbm setup above or it will not display correctly in-game.
   * Next, open your `patch.mesh` and expand your localMaterialBuffer > **@eyes** > **values** section
   * Right click the "Normal" value and duplicate it
   * Change "Normal" to "Roughness"
   * Replace the path to the normal with the path to your Roughness file
-  * Save your file.&#x20;
+  * Save your file.
 
 ### Creating new textures
 
-You can download a [folder of eye texture resources from the template page here](https://www.nexusmods.com/cyberpunk2077/mods/23351?tab=files). It contains sclera, irises, and normal maps to get you started for both diffuse and gradient eyes.&#x20;
+You can download a [folder of eye texture resources from the template page here](https://www.nexusmods.com/cyberpunk2077/mods/23351?tab=files). It contains sclera, irises, and normal maps to get you started for both diffuse and gradient eyes.
 
 #### Use template placeholder textures to make your own
 
-* Export the project placeholder textures to PNG in the raw folder, then open them in an image editing program of your choice.&#x20;
-* Save over the PNGs, and import them back in to Wolvenkit to replace the existing textures.&#x20;
-* The eye mesh UV map is inverted on the y axis. Therefore your custom `Albedo` texture also needs to be inverted y:&#x20;
+* Export the project placeholder textures to PNG in the raw folder, then open them in an image editing program of your choice.
+* Save over the PNGs, and import them back in to Wolvenkit to replace the existing textures.
+* The eye mesh UV map is inverted on the y axis. Therefore your custom `Albedo` texture also needs to be inverted y:
 
 <figure><img src="../../../../.gitbook/assets/inverted_y_03.png" alt=""><figcaption></figcaption></figure>
 
-* Normal maps should **not** be inverted y. Doing so will change the direction of the xyz vectors encoded as per pixel greyscale value in the rgb channels of the texture. Normal maps are vector maps and not colour images.  You should instead re-generate a normal map using an inverted y `Albedo` texture -> convert to greyscale -> height map:
+* Normal maps should **not** be inverted y. Doing so will change the direction of the xyz vectors encoded as per pixel greyscale value in the rgb channels of the texture. Normal maps are vector maps and not colour images. You should instead re-generate a normal map using an inverted y `Albedo` texture -> convert to greyscale -> height map:
 
 <figure><img src="../../../../.gitbook/assets/graph.webp" alt=""><figcaption></figcaption></figure>
 
 * The above screenshot is from Substance Designer and shows a node group that generates a normal map generated from an albedo texture. You can achieve something similar using stock Blender nodes, although the graph will be much less concise.
-* If you downloaded the tutorial resources file (Eye Texture Design Resources.zip) from Nexus, you will find template textures and photoshop.psd files you can use to make creating eye textures easier: \
+* If you downloaded the tutorial resources file (Eye Texture Design Resources.zip) from Nexus, you will find template textures and photoshop.psd files you can use to make creating eye textures easier:\
   \
   ![](../../../../.gitbook/assets/sclera.png)![](../../../../.gitbook/assets/1-blank_sclera_veins_n.png)\
   \
-  Just remember that when combining normal maps you need to do so in Blender/Substance Designer and not GIMP/Photoshop. \
+  Just remember that when combining normal maps you need to do so in Blender/Substance Designer and not GIMP/Photoshop.\
   \
   You need to convert from rgb colour to xyz vector, then multiply add (multiply by 2 then subtract 1). Now you can sum vector components and the direction of the vector can be positive or negative and its magnitude greater than 1.0. Once you have summed vectors, you have to re-normalize xyz back down to a range of 0 to 1.0 which can be converted back to rgb colour.\
   \
-  Substance Designer is nice because it has stock nodes like "Normal Combine" and "Normal Blend" which do all of these operations for you, so its as simple as adding nodes and connecting them with wires.\
-
+  Substance Designer is nice because it has stock nodes like "Normal Combine" and "Normal Blend" which do all of these operations for you, so its as simple as adding nodes and connecting them with wires.\\
 * For more info on how to export/import and edit textures: [images-importing-editing-exporting.md](../../../../modding-guides/textures-and-luts/images-importing-editing-exporting.md "mention")
 
 #### Other ways to add eye textures
 
 {% hint style="info" %}
-Including `_d` (diffuse), `_n` (normal), or `_r` (roughness) at the end of the file name helps Wolvenkit to automatically use the correct import settings for your PNG images.&#x20;
+Including `_d` (diffuse), `_n` (normal), or `_r` (roughness) at the end of the file name helps Wolvenkit to automatically use the correct import settings for your PNG images.
 {% endhint %}
 
 <details>
@@ -300,13 +297,13 @@ Including `_d` (diffuse), `_n` (normal), or `_r` (roughness) at the end of the f
 <figure><img src="../../../../.gitbook/assets/ccxleyes019.png" alt="" width="563"><figcaption></figcaption></figure>
 
 Want a more detailed, 3D effect in your character's eyes, showing more depth?\
-Or maybe your mod has a few of different iris shapes with their own normals?&#x20;
+Or maybe your mod has a few of different iris shapes with their own normals?
 
 [**Download the example project here**](https://www.nexusmods.com/cyberpunk2077/mods/23351)**. (NexusMods link)**
 
 * Learn more about normals here: [normal-maps-in-cyberpunk.md](../../../materials/textures/normal-maps-in-cyberpunk.md "mention")
 * See [self-made-normal-maps](../../../../modding-guides/textures-and-luts/self-made-normal-maps/ "mention") to make your own custom normal maps
-* This project uses links in .xl to connect one normal to multiple dynamic appearances within the project without having to repack a file over and over with different names. \
+* This project uses links in .xl to connect one normal to multiple dynamic appearances within the project without having to repack a file over and over with different names.\
   See [archivexl-resource-linking.md](../archivexl-resource-linking.md "mention")for more info
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes017.png" alt="" width="563"><figcaption></figcaption></figure>
@@ -319,14 +316,12 @@ Or maybe your mod has a few of different iris shapes with their own normals?&#x2
 
 <summary>.mlsetup Eyes</summary>
 
-Prefer to use Cyberpunk's Multilayered materials to create your eyes?&#x20;
+Prefer to use Cyberpunk's Multilayered materials to create your eyes?
 
-[**Download the example project here.**](https://www.nexusmods.com/cyberpunk2077/mods/23351) **(NexusMods link)**\
-
+[**Download the example project here.**](https://www.nexusmods.com/cyberpunk2077/mods/23351) **(NexusMods link)**\\
 
 * See [custom-multilayermasks.md](../../../../modding-guides/textures-and-luts/custom-multilayermasks.md "mention") for how to make your own masks
-
-- For more info about multilayered materials: [multilayered](../../../materials/multilayered/ "mention")
+* For more info about multilayered materials: [multilayered](../../../materials/multilayered/ "mention")
 
 <sub>Credits: Thank you to Beaniebby for the project materials</sub>
 
@@ -345,7 +340,7 @@ TBD
 Like usernames, eye appearance names must be **unique** and used only **once** across all CCXL eye mods, not just your own, but other modder's as well, or they will overwrite each other.
 
 {% hint style="danger" %}
-Tips to avoid conflicts:&#x20;
+Tips to avoid conflicts:
 
 * Always include your "moddername" in the appearance name to make it unique to you
 * For "eyename": Be as descriptive as you like without spaces, use underscores `_` between words
@@ -356,11 +351,10 @@ In your **textures** folder, one by one, select and rename your textures to foll
 
 <p align="center"><code>modderinitials_eyename_d</code></p>
 
-"**modderinitials**" — change this to YOUR INITIALS\
-&#xNAN;**"eyename"** — change this to a **unique name** for that texture\
+"**modderinitials**" — change this to YOUR\_INITIALS\_**eyename** so that it's a **unique name** for that texture\
 "`_d`" — include this suffix at the end of the file for Wolvenkit import/export settings
 
-You do not need to check the "update in project files" box when renaming.&#x20;
+You do not need to check the "update in project files" box when renaming.
 
 <details>
 
@@ -376,15 +370,15 @@ Substitute "**scleracolor**" for your sclera colors, and "**eyename**" for whate
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes021.png" alt=""><figcaption></figcaption></figure>
 
-Next, open your `patch.mesh` and expand your **Appearances** section.&#x20;
+Next, open your `patch.mesh` and expand your **Appearances** section.
 
-You already updated your "modderinitials" in [#step-2-update-renamed-paths-inside-files](ccxl-eye-textures.md#step-2-update-renamed-paths-inside-files "mention"), so we'll use the Search and Replace function to replace only the placeholder names (ex: black\_blue) with your new unique "**eyename**"s.&#x20;
+You already updated your "modderinitials" in [#step-2-update-renamed-paths-inside-files](ccxl-eye-textures.md#step-2-update-renamed-paths-inside-files "mention"), so we'll use the Search and Replace function to replace only the placeholder names (ex: black\_blue) with your new unique "**eyename**"s.
 
 **Example:**
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes020.png" alt="" width="563"><figcaption></figcaption></figure>
 
-The full appearance names should match your texture file names, only without the suffix `_d`&#x20;
+The full appearance names should match your texture file names, only without the suffix `_d`
 
 {% hint style="success" %}
 If you have more eye appearances than the placeholders available in the template project, you can right click > duplicate an existing entry and rename it to add more. Repeat until there is an entry for every option.
@@ -411,7 +405,7 @@ Now that we have added your new eye textures with their new names, we need to up
 6. Repeat step 5 for each color for each placeholder.
 7. Save your .json file
 8. Right click it in the raw folder, convert it back from .json
-9. Open your newly updated inkcc file. Expand **headCustomizationOptions** > **gameuiAppearanceInfo** > **definitions** and check to make sure the definitions match the appearance names in your `patch.mesh`&#x20;
+9. Open your newly updated inkcc file. Expand **headCustomizationOptions** > **gameuiAppearanceInfo** > **definitions** and check to make sure the definitions match the appearance names in your `patch.mesh`
 
 <details>
 
@@ -420,7 +414,7 @@ Now that we have added your new eye textures with their new names, we need to up
 1. Duplicate your last definitions entry and rename it to match the next appearance in your mesh
 2. Repeat until there is an entry for every appearance option in your mesh
 3. Highlight all the new definitions you added manually and right click > Copy from Array/Buffer
-4. Right click the **definitions** array and select Paste into Array/Buffer&#x20;
+4. Right click the **definitions** array and select Paste into Array/Buffer
 
 You should now have the same number of definitions your **gameuiAppearanceInfo** section and the same number in your patch.mesh appearances list, all with matching names.
 
@@ -436,9 +430,9 @@ You should now have the same number of definitions your **gameuiAppearanceInfo**
 
 ### Update .yaml names
 
-1. Next, open your .yaml.&#x20;
-2. In the section under `$instances:`, edit or delete the placeholder names. After each "`eyename:`" add your own eyename. No need to include your modderinitials here, just the eyename.&#x20;
-3. Repeat for each line until all of your appearance options are listed.&#x20;
+1. Next, open your .yaml.
+2. In the section under `$instances:`, edit or delete the placeholder names. After each "`eyename:`" add your own eyename. No need to include your modderinitials here, just the eyename.
+3. Repeat for each line until all of your appearance options are listed.
 
 **Example:**
 
@@ -448,7 +442,7 @@ _(Optional)_ If you have multiple sclera options, make sure to include each of t
 
 _(Optional)_ If you had more **placeholders** than appearances, delete any extra lines you did not update.
 
-_(Optional)_ If you have more **appearances** than placeholder options, copy and paste one of the existing options, making sure you copy the **entire line** to add onto the list. All indents/spaces must be the same as the line(s) above, and do not change or delete the `-` or `{ }` brackets. &#x20;
+_(Optional)_ If you have more **appearances** than placeholder options, copy and paste one of the existing options, making sure you copy the **entire line** to add onto the list. All indents/spaces must be the same as the line(s) above, and do not change or delete the `-` or `{ }` brackets.
 
 ***
 
@@ -458,7 +452,7 @@ _(Optional)_ If you have more **appearances** than placeholder options, copy and
 * If you downloaded the tutorial resources file (Eye Texture Design Resources.zip) from Nexus you will find two template photoshop.psd files called `tutorial_icon_2k.psd` and `tutorial_icon_160x160.psd`. You can use these to create icons using your newly created albedo texture.
 * Your albedo texture should be inverted y axis, but we want our icons to be the right way up, so we invert y again, `ctrl+a`, `ctrl+c` to copy to clipboard. Open `tutorial_icon_2k.psd` and `ctrl+v` to paste as new layer. Use the template layer as a guide for where the pupil should line up. When you are satisfied with placement, flatten all layers, scale the image to 160 x 160 pixels and `ctrl+a`, `ctrl+c` to copy to clipboard.
 * Open `tutorial_icon_160x160.psd` and `ctrl+v` to paste in as new layer. Move the transparency mask up to your new layer and delete the old layer. `ctrl+shift+s` to save as new image as PNG.
-* &#x20;I recommend making a folder of your icon PNGs, with each named exactly after each of your "eyename" (no "modderinitials", no `_d` suffix, just the eye name itself)&#x20;
+* I recommend making a folder of your icon PNGs, with each named exactly after each of your "eyename" (no "modderinitials", no `_d` suffix, just the eye name itself)
 
 If you do not have Adobe Photoshop, you can also open .psd files with [Photopea](https://www.photopea.com/) which is a free online image editor.
 
@@ -470,7 +464,7 @@ If you are on [8.16.2 Nightly](https://github.com/WolvenKit/WolvenKit-nightly-re
 2. From the dropdown select **Add Files**
 3. Select **Generate .inkatlas**
 4. Fill in **inkatlas file name** using the convention `modderinitials_modname_icons` making sure that it matches the placeholder inkatlas name
-5. Then fill in **tile width and height** with `160`&#x20;
+5. Then fill in **tile width and height** with `160`
 6. Lastly navigate the **PNG raw folder** field to where you have stored your icons. Press finish and your inkatlas is generated
 7. Now import the 2 .png files it created in your raw folder.
 8. Next you can delete the old placeholder .inkatlas and the 2 .xbm's inside the icons folder
@@ -489,8 +483,7 @@ If you've never made custom icons or used inkatlases before, check out these art
 
 <figure><img src="../../../../.gitbook/assets/ccxleyes023.png" alt=""><figcaption></figcaption></figure>
 
-2.  On the first line, you'll see there's one instance of "`modderinitials_modname`" that we never replaced. Update it to your name and mod name, save the file.\
-
+2.  On the first line, you'll see there's one instance of "`modderinitials_modname`" that we never replaced. Update it to your name and mod name, save the file.\\
 
     <figure><img src="../../../../.gitbook/assets/ccxleyes025.png" alt="" width="563"><figcaption></figcaption></figure>
 3. Next, we need to update our inkcc files to match this change so it knows which icons to use. Open one of your .inkcharcustomization files.
@@ -498,12 +491,9 @@ If you've never made custom icons or used inkatlases before, check out these art
 5. Click your first appearance. It will open a panel on the right, where you'll see a section called "`icon:`"\
    It may be empty, but it might read `OptionsIcons.modderinitials_modname_black_blue` (or some other color)
 6. Copy and paste the first line of our .yaml into this `icon:` section. Then change `$(eyename)` to the color name you have open.
-7.  Click through each color in the definitions list, and update the `icon:` section, replacing `$(eyename)` with the corresponding color each time. Save your inkcharcustomization file.\
-
+7.  Click through each color in the definitions list, and update the `icon:` section, replacing `$(eyename)` with the corresponding color each time. Save your inkcharcustomization file.\\
 
     <figure><img src="../../../../.gitbook/assets/ccxleyes024.png" alt="" width="482"><figcaption></figcaption></figure>
-
-&#x20;
 
 ## Step 9: Test your finished mod
 
@@ -532,7 +522,7 @@ You have successfully added new eye options to character creator!
 
 * Reimport your icons .xbms with compression settings set to `TCF_None`
 
-### No eye textures / Eyeballs are invisible / I only see a creepy set of weird eyes inside V's skull!&#x20;
+### No eye textures / Eyeballs are invisible / I only see a creepy set of weird eyes inside V's skull!
 
 * Material paths are wrong in your patch.mesh
 * Your path to patch mesh is wrong in .xl
@@ -541,17 +531,16 @@ You have successfully added new eye options to character creator!
 
 ### My eye textures look extremely dark in the Character Creator screen
 
-* Make sure you do not have the [Eye Depth (Normals) fix mod](https://www.nexusmods.com/cyberpunk2077/mods/13083) installed, if so, uninstall it. \
-  This mod is no longer necessary, as AXL now has a built-in eye normal fix.&#x20;
-* Your mod's normals aren't pathed correctly \
+* Make sure you do not have the [Eye Depth (Normals) fix mod](https://www.nexusmods.com/cyberpunk2077/mods/13083) installed, if so, uninstall it.\
+  This mod is no longer necessary, as AXL now has a built-in eye normal fix.
+* Your mod's normals aren't pathed correctly\
   (in .mesh or .xl links if you're using multiple normals)
-* Check that your normal map was imported correctly. Open the normal .xbm, expand `setup`, and ensure that the compression is set to `TCM_Normals`. If you have multiple normal maps, export the normals then re-import with the correct settings to do it in bulk.&#x20;
+* Check that your normal map was imported correctly. Open the normal .xbm, expand `setup`, and ensure that the compression is set to `TCM_Normals`. If you have multiple normal maps, export the normals then re-import with the correct settings to do it in bulk.
 * Your mod is missing a normals file for the eyes
   * Use the `modderinitials_eyes_n.xbm` texture provided with the template project, if it looks like it will fit the shape of your eye textures\
     \
-    OR\
-
-  * Open your `patch.mesh`, and navigate to the localMaterialBuffer, expanding **@eyes** > **values** > **Normal**. \
-    Path to the game's placeholder normal by copying and pasting this: \
-    `engine\textures\editor\normal.xbm`  into the Normal section. \
-    Save your file.&#x20;
+    OR\\
+  * Open your `patch.mesh`, and navigate to the localMaterialBuffer, expanding **@eyes** > **values** > **Normal**.\
+    Path to the game's placeholder normal by copying and pasting this:\
+    `engine\textures\editor\normal.xbm` into the Normal section.\
+    Save your file.
