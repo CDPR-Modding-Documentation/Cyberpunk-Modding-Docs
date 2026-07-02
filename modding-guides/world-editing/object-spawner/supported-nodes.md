@@ -27,7 +27,15 @@ If there is some type of node / a property of a node which is not currently supp
 
 ## Collision
 
-<table data-full-width="true"><thead><tr><th width="148">Variant Name</th><th width="538">Purpose</th><th width="50">Notes</th><th>Node Name (In Engine)</th></tr></thead><tbody><tr><td>Collision Shape</td><td>A scalable collision shape, can be a box, capsule or sphere. Options to choose the material, affecting impact effect.</td><td>---</td><td><code>worldCollisionNode</code></td></tr></tbody></table>
+<table data-full-width="true"><thead><tr><th width="148">Variant Name</th><th width="538">Purpose</th><th width="50">Notes</th><th>Node Name (In Engine)</th></tr></thead><tbody><tr><td>Collision Shape</td><td>A scalable collision shape, can be a box, capsule or sphere. Options to choose the material, affecting impact effect.</td><td>---</td><td><code>worldCollisionNode</code></td></tr><tr><td>Collision Mesh</td><td>A scalable collision mesh, which can be any convex or triangular collision mesh in the geometry cache. Options to choose the material, affecting impact effect.</td><td>---</td><td><code>worldCollisionNode</code></td></tr></tbody></table>
+
+{% hint style="warning" %}
+Collision Meshes require the optional "Collision Mesh Preview" archive to function during the preview.&#x20;
+
+While in the preview scale is not applied to collision meshes, it is however applied in the final `worldStreamingSector`.
+
+Mods shipping custom `worldStreamingSector`s which contain Collision Meshes require [UnlimitedGeometryCacheStreaming](https://www.nexusmods.com/cyberpunk2077/mods/29096). If it is not installed collision meshes may not work.
+{% endhint %}
 
 ## Lights
 
