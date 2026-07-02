@@ -51,7 +51,7 @@ If you just want to quickly convert your project to a native edit, jump to the [
 *   Sector Range:
 
     * This determines when then entire sector gets streamed in / out
-    * This over-rules the object based ranges, meaning when the sector streams out all objects within also stream out, even if their individual range is larger
+    * This applies on top of the object based ranges, meaning when the sector streams out (unloads), all objects within also stream out, even if their individual range is larger.&#x20;
     * Can be found in the export tab, under each groups header
 
     <figure><img src="../../../.gitbook/assets/sectorExtents" alt="" width="563"><figcaption><p>Streaming extents of a group / soon to be sector</p></figcaption></figure>
