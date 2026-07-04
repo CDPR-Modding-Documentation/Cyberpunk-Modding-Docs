@@ -1,39 +1,25 @@
 ---
-description: How to create custom props to use with AMM
+description: How to create custom props to use with AMM and WorldBuilder
 ---
 
-# AMM: Custom Props
+# Adding props
 
 ## Summary <a href="#summary" id="summary"></a>
 
 **Published:** April 2023 by **@manavortex**\
-**Last documented update:** Feb 18 2025 by **@manavortex**
+**Last documented update:** Jul 4 2026 by **@manavortex**
 
-This guide will teach you how to create AMM props in two variants:
+This guide will show you the **minimal way** of creating spawnable props with WolvenKit via the built-in generator.
 
-* the old way by using a [mesh entity](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) with a [.mesh](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with only one appearance
-* customizable by chaining a [`root entity`](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity), an [`.app`](../../../for-mod-creators/files-and-what-they-do/appearance-.app-files), and a [`.mesh`](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with multiple appearances
+### Wait, this is not what I want!
 
-Its focus is on the **file structure** and the **relations between the files**.
-
-{% hint style="danger" %}
-For another guide regarding custom props, check [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention") – it will focus on the possibilities you have with different materials, while this guide focuses on the process and the structure.
-{% endhint %}
-
-### Wait, this isn't what I want!
-
+* To learn the file structure and understand how this works, read [custom-props.md](custom-props.md "mention"). **This page also has a video guide**!
+* To use Cyberpunk materials with your props, check [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
 * To register existing props or items with WorldBuilder, check [adding-custom-resources-props.md](../../world-editing/object-spawner/features-and-guides/adding-custom-resources-props.md "mention")
-* If you want to play around with materials and an existing prop, check [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
 * If you want to enable collisions, see [enable-embedded-collisions.md](../../world-editing/miscellaneous/enable-embedded-collisions.md "mention")
 * If you want to make meshes out of 2d textures, see [your-image-as-custom-mesh.md](../../../for-mod-creators-theory/3d-modelling/your-image-as-custom-mesh.md "mention")
-* … or use the wiki's AI-assisted search function, or simply poke around
 * If you want to use a custom model (Or other resource type) with World Builder, see [Adding custom resources](../../world-editing/object-spawner/features-and-guides/adding-custom-resources-props.md)
-
-### Video Guide
-
-For the tutorial's full written version, just keep reading. Please keep in mind that video guides will become outdated faster than wikis!
-
-{% embed url="https://youtu.be/3nwxM254HTI" %}
+* … or use the wiki's search function, or simply poke around
 
 ## Where to find models
 
@@ -62,332 +48,364 @@ For 3d printing, usually not textured:
 
 ## **Requirements:**
 
-* Cyberpunk 2077 game version
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) >= 8.12 for 2.1, 8.8.1 for 1.6.1 (DLSS)
-* [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) (>= version 2.1, anything earlier won't have customizable appearances)
-* Optional, but recommended if you want to create multiple props: [Notepad++](https://notepad-plus-plus.org/downloads/)
+* [Appearance Menu Mod](https://www.nexusmods.com/cyberpunk2077/mods/790) or [WorldBuilder](https://github.com/Akiway/CP77_entSpawner/releases/) to spawn your prop
+* &#x20;[Notepad++](https://notepad-plus-plus.org/downloads/) to edit text files
+
+{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
 **Level of difficulty:** You know how to read.
 
-## Setting up the project
+## Skipping and skimming
 
-This section will tell you how to get the files, then give you an [explanation](./#explanation-what-did-you-just-download) of what they do and finally show you a [diagram](./#diagram) on how they hang together.
+<figure><img src="../../../.gitbook/assets/slow_down_kitten.jpg" alt=""><figcaption></figcaption></figure>
 
-{% hint style="success" %}
-At any part during the process, you can [install the mod](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu/toolbar#install-and-launch) and launch the game to spawn the props with AMM. In the decor tab, search for
+If you follow this guide to the letter, you will end up with a working prop. If you decide to skip steps, or if you're sloppy about the instructions, you will run into problems. Do yourself a favour and be thorough!
 
-`Tutorial item`\
-`Tutorial item (customizable)`
+* Any links in this guide will lead to **extra information**. You should not need to follow any of them to complete this guide, but if you're curious, feel free to browse around.
+* Optional steps will always begin with the word **`Optional:`**
+* Optional sections will tell you in the first sentence where to go if you skip them
+
+## Step 1: Creating a prop
+
+This section will walk you through **setting up the file structure**. At the end of this, you should have a spawnable prop, which will be the copy of an existing game item.
+
+### 1.1 Creating a project
+
+Create a [project in Wolvenkit](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name (mine will be "swords").&#x20;
+
+{% hint style="info" %}
+The project name will become the name of your mod.
 {% endhint %}
 
-1. Create a [project in Wolvenkit](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects) and give it a name. This will later be the name of your archive file.
-2. Download the AMM prop template from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8011). Download **the complete source folder**, as it will have the files as depicted below.
-3. Prepare your Wolvenkit project by [merging the source folder](#user-content-fn-1)[^1] you downloaded with the one from your project. By the end of it, you should have the following files:
+### 1.2 Add container files
+
+We can't create files on import, so we'll have to start with an existing game file (which we will then re-name). I will use a piece of concrete, but you can pick whatever you want:\
+`base\environment\decoration\construction\concrete_debris\concrete_debris_piece_h.mesh`&#x20;
+
+1. In the **Asset Browser**, [search](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-search-finding-files) for `environment > .mesh`, and double-click on one to add it to your project
+2. **Optional:** You can include up to four meshes in a prop. If you want, you can add more files.
+3. In the **Project Explorer** on the left, select your mesh file, and hit F2 to bring up the rename dialogue
+
+<figure><img src="../../../.gitbook/assets/custom_prop_rename.png" alt=""><figcaption></figcaption></figure>
+
+3. Pick a custom file path and -name for your prop. This path will be used to spawn it in WorldBuilder — use something like `your_modder_name\props\prop_pack\prop\prop.mesh`
+4. Make sure that the box "Update in project files" is checked, then click "finish".
+
+### 1.3 Creating the prop
+
+{% hint style="info" %}
+See [Prop generator](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/generators/prop-generator "mention") in the red wiki for a full description of the tool
+{% endhint %}
+
+I (manavortex) have written a generator for Wolvenkit, which will do all the hard work for you. Let's use it:
+
+1. Open the generator (`File` -> `Generate files` -> `Prop (Decoration)`)
+2. Pick a `Parent folder` from the dropdown (use the folder from 1.2.2, e.g. (`manavortex\props\swords\red_sword`)
+3. `Name` will be auto-populated. You can change it if you want.
+4. In `Define appearances`, list the appearances that you want to create. I'll make two, so I'll set `default, glowing`
+5. `Mesh files`: Skip ahead and set the first entry to the file you added in 1.2.1 (`manavortex\props\swords\red_sword\red_sword.mesh`)
+6. Go back to `Write to meshes` (under `Appearances`), and check the box with `1`. This will create the appearances `default` and `glowing` in the skeleton mesh.
+7. Click "Finish"
+
+<figure><img src="../../../.gitbook/assets/custom_prop__generator.png" alt="" width="375"><figcaption></figcaption></figure>
+
+### 1.4 The file structure
+
+{% hint style="success" %}
+This section is **optional** - if you want to skip it, go to [#id-1.5-testing](./#id-1.5-testing "mention").&#x20;
+{% endhint %}
+
+In the Project Explorer's source tab, you should now see something like this:
+
+<figure><img src="../../../.gitbook/assets/custom_prop_file_structure.png" alt="" width="288"><figcaption></figcaption></figure>
+
+This section will give a brief explanation what these files do.
+
+#### prop\_name.ent
+
+Your prop's [root entity](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity).&#x20;
+
+If you have **one appearance**, it will contain components loading in your .mesh files.\
+If you have multiple appearances, it will register each appearance, pointing at `your_prop.app` .
+
+#### prop\_name.app
+
+{% hint style="info" %}
+You will only have this file if you selected more than one appearance.
+{% endhint %}
+
+Your prop's [appearance definitions](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/#app-appearance-definition):&#x20;
+
+* One entry for each of the appearances you added with the generator
+* In each appearance, one component per mesh file that you selected
+
+#### prop\_name.mesh
+
+The [.mesh file](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/#mesh-3d-object) contains your 3d data. Right now, this is a game item, but we will customize it in [#step-2-adding-your-own-item](./#step-2-adding-your-own-item "mention").
+
+#### mod\_name.lua
+
+This file registers your prop(s) with AMM. You can open it with a text editor to make changes — if you do and the mod breaks, use a [lua online compiler](https://onecompiler.com/lua) to check what's wrong with it.
+
+#### mod\_name.txt
+
+This file tells WorldBuilder about your props.&#x20;
+
+{% hint style="info" %}
+By default, only the .mesh files will be registered. If you want to tell WB about your entities, run `File` -> `Generate files` -> `WorldBuilder asset file`, and check the .ent files as well.
+{% endhint %}
+
+### 1.5 Testing
+
+{% hint style="success" %}
+This section is **optional** (but highly recommended). If you want to skip it, go to [#step-2-adding-your-own-item](./#step-2-adding-your-own-item "mention")
+{% endhint %}
+
+Let's make sure that this is working (it _is_ working, but I want you to see it).
+
+In Wolvenkit's toolbar, hit the green Play ([Install and Launch](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/menu#install-and-launch-game)) button to install the mod and start the game.
+
+#### Spawning the prop with AMM
+
+1. Pull up the AMM menu
+2. Open the Decor tab
+3. In the search box, enter the **prop name** that you picked in the dialogue (`Red Sword` for me)&#x20;
+4. Spawn the item
+
+#### Spawning the prop with WorldBuilder
+
+ToDo: Look up what exactly the menu items are called
+
+## Step 2: Your own item
+
+You have created a prop and it's spawning. Now it's time to actually put your custom 3d data and textures there!
+
+### 2.1 Blender
+
+1. Use the Export Tool to export the meshes from 1.2
+2. In the Project Explorer, copy the absolute path to the raw folder: right-click on an item, then hold `Ctrl` and `Shift` to change the context menu entry.
+
+<figure><img src="../../../.gitbook/assets/custom_props_copy_absolute_path_to_raw_folder.png" alt=""><figcaption></figcaption></figure>
+
+3. Now, open Blender
+4. **Optional:** Delete everything from the scene (move your mouse over the viewport, hit `A`, then hit `X` and click `Delete`)
+5. Select `File` -> `Import` -> `Cyberpunk GLTF`
+6. In the file selection dialogue, click into the path box at the top, and paste your path (Ctrl+V). That will open the folder.
+
+<figure><img src="../../../.gitbook/assets/custom_props__blender_import.png" alt=""><figcaption><p>Screenshot taken with version 2.0 of the Blender addon - interface might change in future versions</p></figcaption></figure>
+
+6. Select your file, and hit Enter (or click the "Import gltf" button)
+
+You should now see something like this:
+
+<figure><img src="../../../.gitbook/assets/image (660).png" alt=""><figcaption></figcaption></figure>
+
+### 2.2 Converting your download
+
+{% hint style="info" %}
+For this guide, we'll be using a [sketchfab model](https://sketchfab.com/3d-models/adventure-time-demon-sword-5ea5c6014c544432b4eda438a4813974) that I downloaded in `.glb` format — if your download is from a different source, your structure may look different.&#x20;
+{% endhint %}
 
 {% hint style="warning" %}
-If you want to move or rename anything, please do it as specified in [moving-and-renaming-in-existing-projects.md](../../items-equipment/moving-and-renaming-in-existing-projects.md "mention"). Doing anything else will **break the mod**.
+You may be tempted to use 4k textures. Don't — most people won't even _see_ them, and they will clog up your memory while the engine has to work overtime to size them down. Use 2k at max or check [here](../../../for-mod-creators-theory/3d-modelling/on-4k-textures-and-high-poly-meshes.md) to learn more.
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/amm_props_structure.png" alt=""><figcaption><p>For an overview of how these files hang together, theck the <a data-mention href="./#diagram">#diagram</a> section of this guide.</p></figcaption></figure>
+#### 2.2.1 Importing into Blender&#x20;
 
-4. Optional, but recommended: Start the game and spawn the props, as in the green hint box at [the beginning of this section](./#setting-up-the-project).
-5. Optional, but very recommended: Read through the next section to understand what's going on here.
-6. If you're the more hands-on kind of learner, skip to [#using-other-meshes](./#using-other-meshes "mention") or [#creating-another-prop](./#creating-another-prop "mention") to fuck around and find out.
+You can usually drag and drop the downloaded files into Blender, and it will offer you an import dialogue. If not, hit up Google.
+
+#### 2.2.2 Mesh conversion
 
 {% hint style="info" %}
-The first part of the structure is up to you, although for the sake of the tutorial you might want to stick to it. There's a section later on [how to change your paths](./#the-final-touches).
-
-The second part (under "resources") is where AMM will look for custom props. You can't change it other than creating subfolders under "Custom Props".
+This process is covered in detail in the [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")guide. I'll only tell you which buttons to push.
 {% endhint %}
 
-### Explanation: what did you just download?
+1. In the Outliner, click through the file structure until you see triangles (meshes)
+2. Ctrl+click on all of them to select them
+3. Join (Ctrl+J) to put them all in one mesh
+4. Enter Edit Mode (Hotkey: `tab`)
+5. Hit A to select all vertices
+6. Right-click, and select `Separate` -> `By Material`
 
-{% hint style="success" %}
-This section gives an explanation of the included files, explaining the difference in file structure between props with vs without variants.
+<figure><img src="../../../.gitbook/assets/image (668).png" alt=""><figcaption></figcaption></figure>
 
-If you don't want to know this, you can skip ahead to [#using-other-meshes](./#using-other-meshes "mention") or [#creating-another-prop](./#creating-another-prop "mention") to get crackin', or check the [diagram](./#diagram) to see how the files connect.
-{% endhint %}
+7. Switch back to Object Mode (Hotkey: `tab`)
+8. Un-parent the meshes (Hotkey: `Alt+P`), Select `Clear Parent and Keep Transform`.
+9. **Optional**: _Scale_ the meshes (Hotkey: `s`)
+10. **Optional:** `Move` the meshes (Hotkey: `G`). If you turn them in game, they will turn around the world origin.
+11. Optional: Apply transforms (Hotkey: `Ctrl+A`, `All Transforms`)
 
-#### LUA file
+Now, re-name the meshes to meet Cyberpunk's naming scheme:
 
-This file registers your prop with AMM. File content looks like this:
-
-```lua
-return {
-  -- put your name. Unless that's what you're called, not judging.
-  modder = "your_name_here",
-  
-  -- you're supposed to put your _OWN_ thing here
-  unique_identifier = "amm_custom_props_tutorial",
-
-  props = {
-    {
-      name = "Tutorial item (customizable)",
-      path = "tutorial\\amm_props\\template\\template.ent",
-      category = "Misc",
-      distanceFromGround = 1,
-      appearances = {
-          "template_item_textured",
-          "template_item_multilayered",
-      }
-    }, 
-    {
-      name = "Tutorial item",
-      path = "tutorial\\amm_props\\template_no_variants\\template_no_variants.ent",
-      category = "Misc",
-      distanceFromGround = 1,
-    },
-  }
-}
-```
-
-Without a `lua` file, AMM won't know about your props, and thus can't spawn them.
-
-Here's what the lines do:
-
-<table data-header-hidden><thead><tr><th width="237"></th><th></th></tr></thead><tbody><tr><td><code>name</code></td><td>what you search for in AMM</td></tr><tr><td><code>category</code></td><td>what AMM sorty by (you can only reuse exisitng categories)</td></tr><tr><td><code>distanceFromGround</code></td><td>how far away from the ground should your prop be? (This moves the origin in Blender's 3d viewport)</td></tr><tr><td><code>appearances</code></td><td>If you're using a root entity, these are the appearance names to switch through and the entries in AMM's "appearance" dropdown / spawn tab</td></tr></tbody></table>
-
-{% hint style="success" %}
-When you edit the .lua, it's usually enough to `reload all mods` in CET.
-{% endhint %}
-
-#### Entity file
-
-Defined in your `LUA` file, this file holds the **game entity** that AMM spawns when you click the button. There are two ways of using entity files:
-
-#### [**Mesh entity**](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) **(the legacy version)**
+12. Double-click on every mesh in the Outliner at the top right, and change its name to `submesh_xx_LOD_1` (xx is the number, starting at 00). You can use the mesh that you imported as an example to get it right.&#x20;
 
 {% hint style="info" %}
-**Fun fact:** The cluttered prop browser annoyed manavortex so much that she helped Max implement the [alternative workflow](./#root-entity) described below the picture, and wrote this guide!
-
-It was **that** bad!
+Blender will add suffixes like .001 to keep track of things - you can ignore them!
 {% endhint %}
 
-One entity file per variant. The props will not have appearances — AMM's prop browser has one entry per entity file (e.g. `cube_black`, `cube_white`, `cube_glowing`).
+12. In the Outliner at the top right, make sure that all meshes that you want to export are selected
+13. Switch to edit mode again (Hotkey Tab) and triangulate (hotkey: `Ctrl+T`, `enter`)
+14. Use `File` -> `Export` -> `Cyberpunk GLB`, and **overwrite** the file you exported from WolvenKit with the following settings:
+    1. Skinned Mesh: turn it **off**
+    2. Fix meshes: turn it **on**
+15. Now, export from Blender: **overwrite** the file you previously exported.
 
-Edit this kind of prop by opening the following file in Wolvenkit:
-
-<pre><code><strong>tutorial\amm_props\template_no_variants\template_no_variants.ent
-</strong></code></pre>
-
-You add props by putting meshes directly into the components array:
-
-<figure><img src="../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>tutorial\amm_props\template_no_variants\template_no_variants.ent<br>Mesh/Component entity, loading something directly. You can read more about the theory <a href="../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
-
-#### [**Root entity**](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity)
-
-One entity file per prop, one entry in AMM's prop browser (e.g. `cube`). After spawning it, you can toggle its appearances (`white`, `black`, `glowing`) the same way you do it with NPCs.
-
-{% hint style="info" %}
-If you have [added clothing items](../../items-equipment/adding-new-items/), then this will be familiar to you. If you haven't, please ignore the link and keep reading — this is the simpler version!
-{% endhint %}
-
-Edit this kind of prop by opening the following file in Wolvenkit:
-
-```
-tutorial\amm_props\template\template.ent
-```
-
-Instead of adding items directly via the components array, we link **appearances** to an [.app file](../../../for-mod-creators/files-and-what-they-do/appearance-.app-files). The only component we keep in the [root entity](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity) is the **targeting component** for the CET cursor: this way, it will be added to each appearance in the .app file.
-
-<figure><img src="../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>tutorial\amm_props\template\template.ent<br>Root entity, pointing towards an .app file. You can read more about the theory <a href="../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
-
-#### Appearance file
-
-[This file](../../../for-mod-creators/files-and-what-they-do/appearance-.app-files) holds a list of `appearances`. Inside each `appearance`, you can define any number of things to be loaded (components) and specify or override their behaviour.
-
-{% hint style="info" %}
-We will only use `entPhysicalMeshComponent`s, and they must be named `amm_prop_slot1` .. `amm_prop_slot4` if you want to enable scaling.
-{% endhint %}
-
-{% hint style="warning" %}
-If you have more than four mesh files assigned to your app's components, the prop will no longer be scaleable (as of AMM 2.1). You can get around this limitation by **making meshes with more submeshes** instead of having individual files.
-{% endhint %}
-
-#### template\_textured.mesh
-
-A pre-configured [mesh](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) for a textured material. Uses the following files in the subfolder `textures`:
-
-* `template_01_d.xbm`: A diffuse (albedo) map, colouring the mesh
-* `template_01_n.xbm`: A normal (bump) map, adding depth to the object.
-
-{% hint style="info" %}
-If you stick to this naming convention and have your filenames end in `_d` or `_n`, Wolvenkit will recognize and identify the correct settings for image import.
-{% endhint %}
-
-You can learn more about textured materials [here](../../../for-mod-creators-theory/materials/#textured). This is not necessary for the purpose of this guide.
-
-{% hint style="info" %}
-**Optional Blender helper — Atlasify Selected Object**\
-If your source mesh comes with many material slots/textures but you only need a single textured mesh for `template_textured.mesh`, this Blender script duplicates the selected object, builds **BaseColor** and **Normal** atlases, remaps UVs to a new `BAKE_ATLAS`, and assigns a single material—so you end up with **one slot, one material, one base color and one normal texture**.\
-**GitHub:** https://github.com/AlexRynas/Atlasify\_Selected\_Object
-{% endhint %}
-
-#### template\_multilayered.mesh
-
-A pre-configured [mesh](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) for a multilayered material. Uses the following files in the subfolder `textures`:
-
-* `6_layers.mlsetup`: A [multilayer setup](../../items-equipment/editing-existing-items/changing-materials-colors-and-textures/#multilayered-material) with colour properties
-* `6_layers.mlmask`: A [multilayer mask](../../../for-mod-creators-theory/materials/multilayered/), determining which parts of the mesh are affected by which layer of the mlsetup. In this case, it just contains six blank layers.
-* `template_01_n.xbm`: A normal (bump) map, adding depth to the object.
-
-You can learn more about multilayered materials [here](../../../for-mod-creators-theory/materials/#multilayered). This is not necessary for the purpose of this guide.
-
-{% hint style="success" %}
-If you have downloaded the example Wolvenkit project, you can now install it and launch the game, seeing everything in action.
-{% endhint %}
-
-### Diagram
-
-Okay, now that we've gone through the theory, let's have a quick overview how everything hangs together:
-
-#### Without variants
-
-<figure><img src="../../../.gitbook/assets/amm_prop_no_variants.jpg" alt=""><figcaption><p>No app file, directly pulling in a mesh with defined appearance</p></figcaption></figure>
-
-#### With variants
-
-<figure><img src="../../../.gitbook/assets/amm_props_with_variants.jpg" alt=""><figcaption><p>The better option — not actually that much more complex, is it? :)</p></figcaption></figure>
-
-## Using other meshes
-
-You can point the prop at a different mesh by changing the depot path of the **component**. If you have no idea how to do that, read on!
-
-### With variants
-
-1. Open the `appearance` file `tutorial\amm_props\template\template.app`
-2. Find the array `appearances` at the top of the file
-3. For each appearance, open the `components` array
-4. Click on the first component `amm_prop_slot1`. In the panel to the right of the tree, change the following properties:
-   * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
-   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances), otherwise the first appearance from the list will be used as default.
-
-<figure><img src="../../../.gitbook/assets/cuzstom_props_change_mesh_2.png" alt=""><figcaption><p>For props with variants: <code>template.app</code></p></figcaption></figure>
-
-5. If you want to use more than one mesh, repeat the process for the other components. If you want to use more than 4, check [#why-only-4-components](./#why-only-4-components "mention") below.
-6. Repeat the process for the other appearances.
-7. Save the file and start the game. If you've done everything right, you will now see your new mesh.
-
-### Without variants
-
-1. Open the [`mesh entity`](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) `tutorial\amm_props\template_no_variants\template_no_variants.ent`
-2. Find the `components` array and open it
-3. Click on the first component `amm_prop_slot1`. In the panel to the right of the tree, change the following properties:
-   * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
-   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances), otherwise the first appearance from the list will be used as default.
-
-<figure><img src="../../../.gitbook/assets/custom_props_change_mesh.png" alt=""><figcaption><p>For props without appearances: <code>template_no_variants.ent</code></p></figcaption></figure>
-
-4. If you want to load more than one mesh, repeat the process for the other components. If you want to use more than four, read [#why-only-4-components](./#why-only-4-components "mention")
-5. If you don't want to load more than one mesh, select `amm_prop_slot2` and delete the `depotPath`. Otherwise, you'll see your prop and a floating cube.
-6. Finally, change the `defaultAppearance` to [a valid appearance in your .mesh file](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances). If no appearance with this name can be found, the prop will be invisible when it spawns.
-
-### Why only 4 components?
-
-Currently (October 31 2023), AppearanceMenuMod can only **scale objects** by targeting their components by name. For that reason, yours have to be named as they are.
-
-If you use more than 4 components or change their name, then your prop will no longer scale.
-
-## Creating another prop
-
-{% hint style="success" %}
-This step is **optional**. If you just want to see how this works, you can pack your project with Wolvenkit and search AMM for "tutorial item". However, assuming that you actually want to make cool things, you will be doing this a lot.
-{% endhint %}
-
-If you want to create another prop, here's the fastest non-script way to go about it (tried and tested by manavortex).
-
-1. In Windows Explorer, duplicate the `template` folder
-2. Rename the new folder (`template - Copy`) to the name of your prop (e.g. `baseball`).
+<figure><img src="../../../.gitbook/assets/custom_props_blender_export.png" alt=""><figcaption><p>Interface as of plugin version 2.0, it might change in the future. Important is that you export without armature/rigging.</p></figcaption></figure>
 
 {% hint style="danger" %}
-It's important that you stick to a schema here, because otherwise, the search and replace below will **not work** and you have to change all the paths by hand.
-
-Use the **exact same value** to replace `template` in both the folder and the file names!
-
-Good: folder: baseball, file: baseball.ent\
-Bad: folder: baseball, file: my\_baseball.ent
+If you don't **exactly overwrite the file**, you won't be able to import into WKit.
 {% endhint %}
 
-3. Rename all files inside of the folder: replace `template` with the name of your prop (e.g. `baseball`). Not all files will have template in their names; just ignore the ones that don't.
+Now you can use the Import Tool to [import it back](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-wolvenkit-1).
+
+### 2.3 Textures
+
+{% hint style="info" %}
+If your textures are in a folder in your download, rather than embedded in the file, re-name it to `textures`  and skip to 2.3.4 below the picture
+{% endhint %}
 
 {% hint style="danger" %}
-Capitalization matters. If you use uppercase letters in folder names, the game will get confused, and Wolvenkit will secretly convert them back to lowercase before packing.
-
-Good: `baseball`\
-Bad: `Baseball`
+When saving files, make sure that everything has **lower case letters and numbers** only. No spaces, no uppercase letters, no emojis, no ascii art!
 {% endhint %}
 
-4. Back in Wolvenkit, right-click on your folder and [export the entire thing to json](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#export-as-json).
-5. Switch to the `raw` tab in Wolvenkit and open your json files in Notepad++
-6.  Via `Search and Replace in Files` (Ctrl+Shift+F), replace `template` with the name of your new prop and folder (e.g. `baseball`). Replace it in all files, **using Match case**:
+We're not quite done in Blender yet: we need to export the textures, too.
 
-    <figure><img src="../../../.gitbook/assets/amm_customizable_props_replace_in_files.png" alt=""><figcaption><p>Make sure to check "<strong>Match case</strong>", or you will be unable to re-import the .ent file!</p></figcaption></figure>
-7. **Optional**: If you have changed the folder structure (e.g. moved your folder from the subfolder `stuff` to the subfolder `misc`), run another `Search and Replace in Files` (Ctrl+Shift+F) to adjust your file paths.
-8. In the project browser's raw section, right-click on the folder and select `Convert from json`. This will have updated the relationships between the files to your renamed files.
-9. Delete the files / appearances that you don't need. Save and close the mesh file.
-10. Import your meshes and textures over the ones from the template. For a guide on how to do that, check [here](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#importing-a-mesh).
-11. To make sure that everything went okay, open your new root entity (`tutorial\\amm_props\\baseball\\baseball.ent`) in Wolvenkit and save it to trigger [file validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation). Check the Wolvenkit log window for errors. If you made no mistakes in the renaming process, there shouldn't be any.
-12. To register the prop with AMM, add another entry to the props array in your `LUA` file:
+1. Switch to the **Shading** tab at the top
+2. In the node editor, click on one of the orange texture nodes to select the texture in the editor
+3. In the texture editor (bottom left), export the image (Hotkey: `Ctrl+Alt+S`). Save it in the same folder as your mesh, or put it in the subfolder `textures`
 
-```
-    {
-      name = "Baseball (customizable)",
-      path = "tutorial\\amm_props\\baseball\\baseball.ent",
-      category = "Misc",
-      distanceFromGround = 1,
-      appearances = {
-          "baseball_textured",
-          "baseball_multilayered",
-      }
-    }, 
-```
+<figure><img src="../../../.gitbook/assets/custom_props_textures.png" alt=""><figcaption></figcaption></figure>
 
-13. Save the LUA file.
-14. Install and launch the game
-15. Spawn your new prop `Baseball (customizable)` with AMM.
+Now, let's re-name our files to match Cyberpunk's naming scheme. That will let WKit pick the correct import settings:
 
-If everything went well, you should see something like this now:
+4. The diffuse/albedo (actual colour of the item) needs to end in \_d0X (make it `d_01` for the first texture set, `d_02`, and so on)
+5. The normal map (the buumpmap, blue/purple or yellow) needs to end in \_n0X
+6. Roughness (if present) needs to end in \_r0X
+7. Metalness (if present) needs to end in \_m0X
+8. **Optional:** If any of the textures you used has transparency, check this guide.
+9. **Optional:** Both image width and image height should be even numbers (1024, 2048 etc).&#x20;
+10. **Optional:** Re-scale your textures (max width/height: 2048)
 
-<figure><img src="https://i.imgur.com/GQ8fELd.png" alt=""><figcaption><p>Not a moon</p></figcaption></figure>
+#### Import
 
-If not, it is time to hit up the [troubleshooting](./#troubleshooting).
+Let's get those files into the project!
 
-## The final touches
+1. Switch back to WolvenKit
+2. Use the Import tool to import all textures and .glb file(s) - you can use `Import All`
+3. You might see warnings. These are fine: as long as the text is not red, you can ignore it.
+4. If you click on your .mesh, the preview should change. If not, check the log and hit up [troubleshooting-your-mesh-edits.md](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md "mention").
+5. Optional: If any texture imports failed, check [#troubleshooting](../../textures-and-luts/images-importing-editing-exporting.md#troubleshooting "mention")
 
-Before you can share your custom props, you **have** to change the folder structure and file paths. Otherwise, two people overwrite `tutorial.lua`, and one of the mods stops working.
+### Step 3: Your textures
 
-You can find a step-by-step guide on the process [here](../../items-equipment/moving-and-renaming-in-existing-projects.md).
+{% hint style="info" %}
+This process is covered in detail in the [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")guide, so this guide will only show you how to hook up one (1) textured material.
+{% endhint %}
+
+This section will show you how to configure your object to use textures instead of Cyberpunk's prodedurally generated materials.  However, [Cyberpunk materials](../../../for-mod-creators-theory/materials/configuring-materials/) are cool, and you'll definitely want to learn about them (check also [changing-materials-colors-and-textures](../../items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")).
+
+{% hint style="success" %}
+All this takes place in WKit.
+{% endhint %}
+
+### 3.1 Materials
+
+We'll configure the materials first, then update the appearances to use them.
+
+#### Prep
+
+1. Double-click your .mesh file in the Project Explorer to open it. You will now see something like this (the arrows show you where the materials are defined):
+2. **Optional: If the materials are in the red list from the screenshot**
+   1. Select `Clean Up` from the menu bar
+   2. Expand the `Convert material preloading state` submenu
+   3. Select Convert preload materials to local
+
+* From the menu bar, select `Clean Up` -> `Adjust Submesh Counts`. This will make sure that you have exactly as many chunks in your appearances as you need.
+
+<figure><img src="../../../.gitbook/assets/custom_props__clean_up.png" alt=""><figcaption></figcaption></figure>
+
+#### Using a textured material
+
+1. Optional: Expand the `materialEntries` node, where the materials are defined.
+2. Select the first material (`CMaterialInstance`)
+3. Right-click, and select `Rename Material`. If you do not have this option, you have selected the wrong thing.
+4. Name it something that you can remember (e.g. `textured_1`, or `sword_metal` )\
+   &#xNAN;_&#x44;oing this will make the entry in `materialEntries` change._ \
+   _Alternatively, you can also use this entry directly, but that won't update material names in the appearances._
+5. Change `baseMaterial` to `engine\materials\metal_base.remt` — that will make it a textured material
+6. Click on the `values` array
+7. Right-click and select `Clear Array/Buffer` to delete all properties
+8. In the right-hand panel, click on the yellow + button to add a new parameter
+9. Select `Texture` and click Create
+
+<figure><img src="../../../.gitbook/assets/custom_prop_material_properties.png" alt=""><figcaption></figcaption></figure>
+
+10. Select the entry in the values array
+11. Right-click, and `Duplicate Item in Array/Buffer`. Do this once for every xbm file you have.
+12. In the panel on the right, click the refresh button next to the dropdown menu for `Key`. This will read the material parameters from the base material:
+
+<figure><img src="../../../.gitbook/assets/custom_prop_material_properties_2.png" alt=""><figcaption></figcaption></figure>
+
+Now let's connect our textures. We use the `CKeyValuePair` in the values array that we just created. This **parameter** is of the type texture, so we can pick our textures from the dropdown.
+
+1. For `Key`, select the property name corresponding to your texture
+2. For `Value`, select the `.xbm` file corresponding to the name
+
+You can find a full list of options under [textured-material-properties.md](../../../for-mod-creators-theory/materials/configuring-materials/textured-material-properties.md "mention"). Your options for textures are:
+
+* `BaseColor`: The texture ending in `_d01` (material color). By default, this is using `engine\textures\editor\grey.xbm` and is grey.
+* `Normal:` Bumpmap (height map). By default, it is using `engine\textures\editor\normal.xbm` and is just flat.\
+  ℹ️ Importing the normal map into wkit with the correct settings should have turned it yellow.
+* `Roughness`: (greyscale) How rough or glossy the surface _&#x69;_&#x73;. By default, it uses `engine\textures\editor\white.xbm` and is maximally rough.
+* `Metalness`: (greyscale) How metallic the surface is. By default, it uses `engine\textures\editor\black.xbm` and is not metallic at all.
+* `Emissive`: (greyscale mask): Which parts of the mesh you want to glow, and how much. By default, items do not glow at all.
+
+#### Another material
+
+{% hint style="info" %}
+This is optional - you can skip to [#id-3.2-appearances](./#id-3.2-appearances "mention").
+{% endhint %}
+
+After splitting the hilt into a different submesh in Blender and adjusting the submesh count in the prep step of this section, my appearances now have two submeshes, which can use different materials.&#x20;
+
+I already have my `sword_metal` material, now I need another for the hilt.
+
+1. Expand `materialEntries`&#x20;
+2. Select the last item in the list
+3. From the context menu, select Duplicate as new item(s)
+4. Change the name of the new material to e.g. `sword_hilt`
+5. Go to `localMaterialBuffer.materials`&#x20;
+6. Click on the material node that you want do duplicate
+
+{% hint style="info" %}
+If this material is the last in the list, you can simply duplicate the item and skip to 10.
+{% endhint %}
+
+7. From the context menu, select `Copy from Array/Buffer`&#x20;
+8. Select the last item or the materials array (the parent node)
+9. From the context menu, select `Paste into Array/Buffer` . This will give you a new material with your new name.
+10. Select and expand your metallic material (`sword_metal`)
+11. Add another Texture parameter to the `values` array of the metal material (or duplicate an existing one)
+    1. Set its `key` to Metalness
+    2. Set its `value` to `engine\textures\editor\white.xbm`&#x20;
+12. Add another
+    1. Set its `key` to Roughness
+    2. Set its `value` to `engine\textures\editor\black.xbm`&#x20;
+
+<figure><img src="../../../.gitbook/assets/custom_prop_metallic_roughness.png" alt=""><figcaption></figcaption></figure>
+
+### 3.2 Appearances
+
+Now, all that is left to do is to pick the right materials per mesh appearance! Fortunately, this is easy:
+
+1. Expand the `appearances` array at the top of the file. If you press `Ctrl`, all child nodes will be expanded as well.
+2. For every appearance, select the chunkMaterials node
+3. In the panel on the right, you can pick materials per chunk in the dropdowns.&#x20;
+
+{% hint style="info" %}
+If you are not sure which chunk is which, you can switch to the Mesh Preview tab, and toggle the checkboxes. This is only a preview, and will have no effect on the game.
+{% endhint %}
 
 ## Troubleshooting
 
-This section will only cover troubleshooting steps for this guide.\
-For anything related to mesh imports, see [here](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#troubleshooting).\
-For general 3d model troubleshooting (including import errors), see [here](../../../for-mod-creators-theory/3d-modelling/troubleshooting-your-mesh-edits.md).
-
-### My prop doesn't even list in AMM!
-
-The problem is in your .lua file. Use [this tool](https://www.tutorialspoint.com/execute_lua_online.php) to check the syntax and make sure that there are no errors - usually, it is missing/extra commas and/or missing/extra braces.
-
-If the syntax is okay and your prop still doesn't show up, double-check your category and make sure that it is one of the existing ones.
-
-### My prop won't spawn!
-
-#### ... and I can't target it!
-
-AMM can't find your .ent file. Make sure that your .lua points to the correct path in your archive (right-click -> copy relative path and paste it to your lua file.
-
-{% hint style="info" %}
-Make sure that you don't delete any quotation marks or commas while you do that. If you're unsure, you can double-check [this step](./#my-prop-doesnt-even-list-in-amm).
-{% endhint %}
-
-#### ... it all looks good, but there is no prop!
-
-Toy around with the **scaling**. Sometimes, your prop doesn't show because it's the size of Johnny's ego and hovers somewhere above your city block – or the opposite, it's microscopically tiny. Don't be afraid to change it by the factor 10 or even 100 and see if that does anything.
-
-If that's not it and if you have a customizable prop (with a root entity), try adding an appearance `default` to the mesh. The game will fall back to that one if there are issues with your custom appearances.
-
-### My prop spawns, but something about it is weird!
-
-In general, your answer is probably in the guide on [textured-items-and-cyberpunk-materials.md](../../textures-and-luts/textured-items-and-cyberpunk-materials.md "mention"), section 2 ([processing the mesh](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#step-2-processing-the-downloaded-mesh)) – check that guide's [troubleshooting section](../../textures-and-luts/textured-items-and-cyberpunk-materials.md#troubleshooting).
-
-[^1]: Use the Windows Explorer to move the downloaded source folder on top of the Wolvenkit project's source folder.
+There are no dedicated troubleshooting steps for this workflow yet. For the general package, check [#troubleshooting](custom-props.md#troubleshooting "mention").

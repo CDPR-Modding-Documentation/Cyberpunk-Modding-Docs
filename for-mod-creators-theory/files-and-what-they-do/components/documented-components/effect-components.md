@@ -15,7 +15,7 @@ This page will tell you how effect components work and how they interact with ea
 
 For an overview on existing effect materials, check [fx-material-properties.md](../../../materials/configuring-materials/fx-material-properties.md "mention")
 
-For a guide on how to use effects, check [amm-light-components.md](../../../../modding-guides/everything-else/custom-props/amm-light-components.md "mention")
+For a guide on how to use effects, check [Broken link](/broken/pages/0fwS9Da6EqLbMl7czlNM "mention")
 
 ## Effect component types
 
@@ -75,4 +75,4 @@ eventRUID in the ent component must be the same as the effect particles ruid, an
 
 ## Placing effect components
 
-Please check [amm-light-components.md](../../../../modding-guides/everything-else/custom-props/amm-light-components.md "mention") -> [#placing-your-light-components](../../../../modding-guides/everything-else/custom-props/amm-light-components.md#placing-your-light-components "mention") for a detailed guide!
+Please check [Broken link](/broken/pages/0fwS9Da6EqLbMl7czlNM "mention") -> [Broken link](/broken/pages/0fwS9Da6EqLbMl7czlNM#placing-your-light-components "mention") for a detailed guide!

@@ -538,7 +538,8 @@
   * [Player State Machines](modding-guides/everything-else/player-state-machines.md)
   * [Running Python Scripts](modding-guides/everything-else/running-python-scripts.md)
   * [LocKeys: Values and formatting](modding-guides/everything-else/lockeys-values-and-formatting.md)
-  * [AMM: Custom Props](modding-guides/everything-else/custom-props/README.md)
+  * [Adding props](modding-guides/everything-else/custom-props/README.md)
+    * [Custom Props (old workflow)](modding-guides/everything-else/custom-props/custom-props.md)
     * [AMM: Light Components](modding-guides/everything-else/custom-props/amm-light-components.md)
 
 ***

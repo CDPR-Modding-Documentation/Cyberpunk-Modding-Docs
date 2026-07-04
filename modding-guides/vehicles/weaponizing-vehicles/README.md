@@ -146,7 +146,7 @@ They look like this:
 ### 3. Adjusting the weapon positions
 
 {% hint style="info" %}
-To find the right offsets, check [#placing-lights-and-effects](../../everything-else/custom-props/amm-light-components.md#placing-lights-and-effects "mention"). The process is the same here - although the offsets are finicky and you'll probably end up falling back to trial\&error.
+To find the right offsets, check [Broken link](/broken/pages/0fwS9Da6EqLbMl7czlNM#placing-lights-and-effects "mention"). The process is the same here - although the offsets are finicky and you'll probably end up falling back to trial\&error.
 {% endhint %}
 
 You can adjust your wepaon's position relative to the car in two places:
