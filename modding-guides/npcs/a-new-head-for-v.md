@@ -85,12 +85,10 @@ Make sure to include **all** morphtargets in the folder: cyberware, tattoos, sca
 
 <figure><img src="../../.gitbook/assets/head_sculpting_guide_with_materials.png" alt=""><figcaption></figcaption></figure>
 
-2. If there is a collection with the name `glTF_not_exported`, collapse or delete it - we don't need all those things.
-
 ## Step 2: Sculpting prep
 
 {% hint style="info" %}
-If you are trying to port an NPC's head, you can skip straight to step 4 and read the expandable at the beginning
+If you are trying to port an NPC's head, you can skip straight to [#step-4-exporting-from-blender](a-new-head-for-v.md#step-4-exporting-from-blender "mention") and read the expandable at the beginning
 {% endhint %}
 
 <details>
