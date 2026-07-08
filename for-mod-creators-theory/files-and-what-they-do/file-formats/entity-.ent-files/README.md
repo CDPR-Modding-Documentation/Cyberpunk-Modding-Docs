@@ -16,7 +16,7 @@ To see a minimal example in action, see the guide for [creating custom props](..
 
 ## Mesh/Component entity (simple entity)
 
-The minimal way of adding something (e.g. meshes) to the game. This entity can be directly spawned (e.g. [via AMM](../../../../modding-guides/everything-else/custom-props/#without-variants)) or referenced from within[ ](../appearance-.app-files)[appearance-.app-files](../appearance-.app-files "mention").
+The minimal way of adding something (e.g. meshes) to the game. This entity can be directly spawned (e.g. [via AMM](../../../../modding-guides/everything-else/custom-props/#without-variants)) or referenced from within[ ](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files)[https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files "mention").
 
 <figure><img src="../../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>This entity adds four physical mesh components, which will appear when it is spawned. It does not reference an .app file and does not have appearances.</p></figcaption></figure>
 
@@ -30,7 +30,7 @@ This is good practice to avoid repetition, and also to make it easy on yourself 
 
 ## Root entity
 
-The **entry point** for the game to display an [NPC](../../../../modding-guides/npcs/appearances-change-the-looks/#the-.ent-file) or [prop](../../../../modding-guides/everything-else/custom-props/). This kind of entity only defines those [components](../../components/) that are shared among all appearances. Meshes are defined in the [app file](../appearance-.app-files), where they can be assigned different properties (e.g. materials) per appearance.
+The **entry point** for the game to display an [NPC](../../../../modding-guides/npcs/appearances-change-the-looks/#the-.ent-file) or [prop](../../../../modding-guides/everything-else/custom-props/). This kind of entity only defines those [components](../../components/) that are shared among all appearances. Meshes are defined in the [app file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files), where they can be assigned different properties (e.g. materials) per appearance.
 
 {% hint style="warning" %}
 This file is how the game handles **item uniqueness**. For that reason, you should have one root entity per item. If you put multiple entries into the same file, then you can't wear them simultaneously (for e.g. EquipmentEx).
@@ -51,9 +51,9 @@ From ArchiveXL item additions, this kind of file is usually called a **root enti
 For more information on this (and for a better way of implementing this), check [archivexl-suffixes-and-substitutions.md](../../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention")
 {% endhint %}
 
-In a [root\_entity file](./#root-entity), you can give the game a list of appearances and have them mapped to an [appearance-.app-files](../appearance-.app-files "mention") by entry name. While that's pretty good already, have you ever wanted to be more specific — for example, "for a male character, use this appearance, but for a female use this other one?"
+In a [root\_entity file](./#root-entity), you can give the game a list of appearances and have them mapped to an [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files "mention") by entry name. While that's pretty good already, have you ever wanted to be more specific — for example, "for a male character, use this appearance, but for a female use this other one?"
 
-This is where suffixes come in. You append them to an appearance's name in the [root\_entity](./#root-entity), and the game will pick the correct appearance (and the correct[ app file](../appearance-.app-files), and the correct mesh!) based on the best match.
+This is where suffixes come in. You append them to an appearance's name in the [root\_entity](./#root-entity), and the game will pick the correct appearance (and the correct[ app file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files), and the correct mesh!) based on the best match.
 
 {% hint style="success" %}
 Find step-by-step walkthrough on using suffixes in the [ArchiveXL item addition guide](../../../../modding-guides/items-equipment/adding-new-items/#adding-a-male-instance).

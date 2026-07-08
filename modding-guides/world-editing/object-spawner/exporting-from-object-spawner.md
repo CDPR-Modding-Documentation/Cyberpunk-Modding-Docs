@@ -74,7 +74,7 @@ That way you make sure that only the parts of your build that are currently clos
 4. Now you can specify sector specific settings:
    1. Sector Category, usually just use interior or exterior
    2. [Sector Extents](exporting-from-object-spawner.md#streaming-ranges), used for determining when to stream the whole sector in / out
-   3. [Sector Variants](features-and-guides/creating-sector-variants/)
+   3. [Sector Variants](features-and-guides/creating-sector-variants.md)
 5. Hit "Export"
 
 <figure><img src="../../../.gitbook/assets/exportUIExample" alt="" width="563"><figcaption><p>Example of the Export tab, with two groups</p></figcaption></figure>

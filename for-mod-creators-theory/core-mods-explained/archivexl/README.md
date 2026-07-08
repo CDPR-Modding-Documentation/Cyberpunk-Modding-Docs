@@ -32,7 +32,7 @@ Let's dive right in.
 
 ### What are variants, what do I need them for?
 
-When adding items, you will normally offer multiple [**mesh appearances**](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files) (variants), for example, the same shirt in black, white, and red. This is what you're modding for, after all: making cool things.
+When adding items, you will normally offer multiple [**mesh appearances**](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files) (variants), for example, the same shirt in black, white, and red. This is what you're modding for, after all: making cool things.
 
 ### And what are suffixes?
 

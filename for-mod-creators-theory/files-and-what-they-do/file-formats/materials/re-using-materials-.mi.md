@@ -15,14 +15,14 @@ This guide will teach you how you can use `.mi` files to re-use materials across
 {% hint style="info" icon="question" %}
 **Wait, this is not what I want!**
 
-* To learn how materials work in the first place, check [3d-objects-.mesh-files](../3d-objects-.mesh-files "mention") -> [3d-objects-.mesh-files](../3d-objects-.mesh-files#material-assignment "mention")
+* To learn how materials work in the first place, check [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") -> [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment "mention")
 * You can find [configuring-materials](../../../materials/configuring-materials/ "mention") documented in their own wiki section
 * For examples of `.mi` files in action, check the player's [skin materials](../../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index)
 {% endhint %}
 
 ## What is a material instance?
 
-A .mi file **encapsulates** a material in a **reusable** template file, which you can use a .mi file as `base material` in [3d-objects-.mesh-files](../3d-objects-.mesh-files#material-instances "mention").
+A .mi file **encapsulates** a material in a **reusable** template file, which you can use a .mi file as `base material` in [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-instances](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-instances "mention").
 
 It is possible to use multiple .mi files in a row. For an example of this, check the player's [skin materials](../../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index).
 

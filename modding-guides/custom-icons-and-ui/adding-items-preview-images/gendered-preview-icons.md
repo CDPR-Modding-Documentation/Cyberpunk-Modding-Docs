@@ -14,7 +14,7 @@ Without it, the game has no way to tell male and female items apart.
 ```
 
 {% hint style="info" %}
-If you want to know more about this, you can read up here: [#what-are-suffixes](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#what-are-suffixes "mention")
+If you want to know more about this, you can read up here: [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#what-are-suffixes](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#what-are-suffixes "mention")
 
 If you don't have a gendered item yet, see the original ArchiveXL guide, section "[adding a male instance](../../items-equipment/adding-new-items/#adding-a-male-instance)".
 {% endhint %}
@@ -45,7 +45,7 @@ UIIcon.clothing_ENTITYNAME_APPEARANCENAME_SUFFIXES_VISUALTAGS
 
 ### Wait, what?
 
-`ENTITYNAME,` `APPEARANCENAME`, `SUFFIXES` and `VISUALTAGS`above are placeholders for the corresponeding fields in your YAML.&#x20;
+`ENTITYNAME,` `APPEARANCENAME`, `SUFFIXES` and `VISUALTAGS`above are placeholders for the corresponeding fields in your YAML.
 
 For example, if you have the following item:
 

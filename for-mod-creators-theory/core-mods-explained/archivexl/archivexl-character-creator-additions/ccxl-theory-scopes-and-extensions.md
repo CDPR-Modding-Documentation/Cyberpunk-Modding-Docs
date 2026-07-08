@@ -25,21 +25,21 @@ The full list of hair style materials as supported by CCXL extension:
 | `@lashes`              | `LashesBaseMaterial`       |
 
 {% hint style="info" %}
-While `@cap01` falls back to CapBaseMaterial, this is how you can define an extra hair cap texture for `cyberware_01`.&#x20;
+While `@cap01` falls back to CapBaseMaterial, this is how you can define an extra hair cap texture for `cyberware_01`.
 {% endhint %}
 
 ## Material colour extensions
 
-Material colour extension makes use of both [Broken link](broken-reference "mention") and [archivexl-resource-patching](../archivexl-resource-patching/ "mention").
+Material colour extension makes use of both [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/broken-reference/README.md](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/broken-reference/README.md "mention") and [archivexl-resource-patching](../archivexl-resource-patching/ "mention").
 
 First, you require an intermediary layer of .mi files that define individual properties, for example **colours**. All of these need to derive from a common ancestor, which defines all other properties.
 
 <figure><img src="../../../../.gitbook/assets/ccxl_material_colour_extensions.png" alt=""><figcaption></figcaption></figure>
 
-You can make use of  [Broken link](broken-reference "mention") to use the correct .mi files, while allowing auto-extendability for future patching via the `@context`.&#x20;
+You can make use of [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/broken-reference/README.md](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/core-mods-explained/archivexl/archivexl-character-creator-additions/broken-reference/README.md "mention") to use the correct .mi files, while allowing auto-extendability for future patching via the `@context`.
 
 {% hint style="info" %}
-You can find another example for this under [ccxl-hairs.md](ccxl-hairs.md "mention")&#x20;
+You can find another example for this under [ccxl-hairs.md](ccxl-hairs.md "mention")
 {% endhint %}
 
 <figure><img src="../../../../.gitbook/assets/ccxl_makeup_mesh_example.png" alt=""><figcaption></figcaption></figure>
@@ -49,4 +49,3 @@ Defining multiple make-up styles in one mesh will break extensibility (read belo
 {% endhint %}
 
 To define multiple different make-up stypes in one mesh, you can put the textures directly into the local material - e.g. `@makeup`, `@makeup_02`.
-

@@ -323,7 +323,7 @@ Items.my_custom_shirt_redwhite:
 ```
 
 {% hint style="info" %}
-If you are unclear about why this step was taken, we recommend [reading up on suffixes](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes)!
+If you are unclear about why this step was taken, we recommend [reading up on suffixes](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes)!
 {% endhint %}
 
 ### Edit the root\_entity.ent

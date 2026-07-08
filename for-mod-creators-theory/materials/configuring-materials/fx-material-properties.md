@@ -24,7 +24,7 @@ This shader glimmers
 
 `base\fx\_shaders\hologram.mt`
 
-Holo material ([example .mi](../../../_example_mods_and_templates/material_templates/holo/hologram_material_template.mi))
+Holo material ([example .mi](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/_example_mods_and_templates/material_templates/holo/hologram_material_template.mi))
 
 ## oda\_helm
 

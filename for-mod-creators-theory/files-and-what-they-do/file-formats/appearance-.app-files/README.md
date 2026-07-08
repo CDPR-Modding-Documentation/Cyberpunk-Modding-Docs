@@ -12,7 +12,7 @@ To learn how to influence items inside appearances, check [#partsoverrides-chang
 
 ## Appearances
 
-The real meat of the file: a list of appearance definitions, loaded via [root entity](../entity-.ent-files#root-entity).
+The real meat of the file: a list of appearance definitions, loaded via [root entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity).
 
 ### appearanceResource
 
@@ -21,9 +21,9 @@ The real meat of the file: a list of appearance definitions, loaded via [root en
 
 ### appearanceDefinition
 
-A list of appearance definitions to be called from a [`root entity`](../entity-.ent-files#root-entity) file. The definitions are independent from each other (unless parentAppearance is used? Confirmation needed) and load meshes and effects via components.
+A list of appearance definitions to be called from a [`root entity`](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity) file. The definitions are independent from each other (unless parentAppearance is used? Confirmation needed) and load meshes and effects via components.
 
-* `name`: the appearance's name that is listed in [its .ent file](../entity-.ent-files#root-entity)
+* `name`: the appearance's name that is listed in [its .ent file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity)
 * `parentAppearance`: the appearance this one inherits information from (can be used for randomisation, see below)
 * `proxyMesh`: the .mesh file loaded for rendering the vehicle at a distance (confirmation needed)
 * `resolvedDependencies`: pre-loaded resources. You will usually want to delete these if you're adding items from scratch.
@@ -34,7 +34,7 @@ A list of appearance definitions to be called from a [`root entity`](../entity-.
 A list of components that are part of your current appearance. There are various types of components, which are documented [here](../../components/).\\
 
 {% hint style="info" %}
-Components that you add in the [`root entity`](../entity-.ent-files#root-entity) will be shared among all appearances in the .app.
+Components that you add in the [`root entity`](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity) will be shared among all appearances in the .app.
 {% endhint %}
 
 #### partsValues
@@ -43,13 +43,13 @@ Components that you add in the [`root entity`](../entity-.ent-files#root-entity)
 By default, this only works for **player equipment**. To enable it for different item types, add `AppearanceParts` to the appearance's `visualTags` array.
 {% endhint %}
 
-Allows you to add one or more [component entities](../entity-.ent-files#mesh-component-entity-simple-entity) into your appearance. They will be treated as if the components were part of the appearance's `components` array.
+Allows you to add one or more [component entities](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity) into your appearance. They will be treated as if the components were part of the appearance's `components` array.
 
 <figure><img src="../../../../.gitbook/assets/partsvalues.png" alt=""><figcaption></figcaption></figure>
 
 #### partsOverrides
 
-Overrides component definitions via name. They can be defined in the appearance's own components array or loaded via [component entity](../entity-.ent-files#mesh-component-entity-simple-entity).
+Overrides component definitions via name. They can be defined in the appearance's own components array or loaded via [component entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity).
 
 You can use them to change the appearance or visibility of components outside of the current .app file (for usage instructions, see [#partsoverrides-changing-other-meshes](../../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-changing-other-meshes "mention")).
 

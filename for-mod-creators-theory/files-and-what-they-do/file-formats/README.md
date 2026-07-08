@@ -15,8 +15,8 @@ For an exhaustive list, see the [W2RC File Format Table.](./#w2rc-file-format-ta
 
 This file contains a list of appearances with their associated **components**. To load them, you require a [root entity](./#root-entity) .ent. The .app files also contain extensive parameters for wounds and dismemberment, determining which meshes to use for different types of garment an NPC might be wearing, and even the physics behavior of these meshes.
 
-{% content-ref url="appearance-.app-files" %}
-[appearance-.app-files](appearance-.app-files)
+{% content-ref url="https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files" %}
+[https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files)
 {% endcontent-ref %}
 
 Holds a list of components.
@@ -45,8 +45,8 @@ From ArchiveXL item additions, this kind of file is usually called a **root enti
 
 **For player items**, an .ent file can serve as a **wrapper**, splitting components out of the .app file by putting them in their own file.
 
-{% content-ref url="entity-.ent-files" %}
-[entity-.ent-files](entity-.ent-files)
+{% content-ref url="https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files" %}
+[https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files)
 {% endcontent-ref %}
 
 ## Components
@@ -101,8 +101,8 @@ OpusPaks are collections of opus audio files, they are described by the `sfx_con
 
 This file holds world environment information and -properties. Due to its complexity, information is grouped on its sub-page.
 
-{% content-ref url="the-whole-world-.streamingsector" %}
-[the-whole-world-.streamingsector](the-whole-world-.streamingsector)
+{% content-ref url="https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector" %}
+[https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector)
 {% endcontent-ref %}
 
 ## .wem (audio)

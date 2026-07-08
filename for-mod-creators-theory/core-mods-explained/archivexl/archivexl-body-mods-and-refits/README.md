@@ -163,7 +163,7 @@ If you're sticking to the classical approach, you need to add the following line
     - !append itemsFactoryAppearanceSuffix.BodyType
 ```
 
-Now, you can use the suffixes in your [root entity](../../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity) just like camera states or body genders:
+Now, you can use the suffixes in your [root entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity) just like camera states or body genders:
 
 ```
 appearanceName: my_custom_shirt&FPP&NewBody

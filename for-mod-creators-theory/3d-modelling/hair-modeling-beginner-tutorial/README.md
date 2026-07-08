@@ -27,7 +27,7 @@ This guide will show you how to create your own hair in Blender from scratch.
 Hair Tool discord server: [https://discord.gg/GwjA9NrKww](https://discord.gg/GwjA9NrKww)\
 Hair Tool official documentation: [https://joseconseco.github.io/HairTool\_3\_Documentation/](https://joseconseco.github.io/HairTool_3_Documentation/)
 
-You can download the example project [from our github](../../../_example_mods_and_templates/hair_tool_bob_demo.7z)!
+You can download the example project [from our github](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/_example_mods_and_templates/hair_tool_bob_demo.7z)!
 
 {% hint style="info" %}
 Don't blindly copy the exact values I used, play around with them and see what works best for your hairstyle!

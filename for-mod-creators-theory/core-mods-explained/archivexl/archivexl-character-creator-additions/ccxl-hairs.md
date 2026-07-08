@@ -98,7 +98,7 @@ If you have more than one .mesh file, for every additional mesh, complete the fo
 If one or more of your hair meshes do not have physics (i.e. lacks a corresponding rig + animgraph and has no "dangle" bones), you can follow these steps:
 
 1. Delete the `entAnimatedComponent` "hair\_dangle" corresponding to this mesh by right clicking on it and selecting "Delete Item in Array/Buffer"
-2. Expand the  `entSkinnedMeshComponent` for the mesh and change the following:
+2. Expand the `entSkinnedMeshComponent` for the mesh and change the following:
    1. Under `parentTransform`, change the `bindName` to `root`
    2. Under `skinning`, change the `bindName` to `root`
 
@@ -139,7 +139,7 @@ We'll now go through everything step by step.
 ### 3.1 Appearances
 
 {% hint style="info" %}
-To understand appearances, you can check [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention")-> [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-1-appearances "mention"). This is not necessary to complete the guide, though!
+To understand appearances, you can check [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention")-> [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-1-appearances](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-1-appearances "mention"). This is not necessary to complete the guide, though!
 {% endhint %}
 
 As you can see, you only need a single appearance — ArchiveXL will generate all the rest.
@@ -161,7 +161,7 @@ The names must be set as follows:
 ### 3.2 Material definitions
 
 {% hint style="info" %}
-To understand material definitions, you can check [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") -> [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-2-material-registry "mention"). This is not necessary to complete the guide, though!
+To understand material definitions, you can check [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") -> [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-2-material-registry](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-2-material-registry "mention"). This is not necessary to complete the guide, though!
 {% endhint %}
 
 The tutorial hair has only two materials, and three material entries (`@context`, `@long`, `@cap`):
@@ -183,7 +183,7 @@ Now, let's look at the materials themselves.
 You have to repeat this step for every mesh file in your project. Be careful, as different meshes may use different texture sets. In this case, you need an extra `.mi` file for them.
 
 {% hint style="info" %}
-To understand materials, you can check [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") -> [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-3-material-definition "mention"). This is not necessary to complete the guide, though!
+To understand materials, you can check [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") -> [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-3-material-definition](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-3-material-definition "mention"). This is not necessary to complete the guide, though!
 {% endhint %}
 
 {% hint style="info" %}

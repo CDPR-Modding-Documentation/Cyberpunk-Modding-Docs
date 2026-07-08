@@ -20,7 +20,7 @@ So how is everyone doing it?
 
 This is where the [wolvenkit-blender-io-suite](../modding-tools/wolvenkit-blender-io-suite/ "mention") comes in:
 
-* On [export](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit), Wolvenkit creates a `.material.json` file containing the `.mesh` file's [material setup](../files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment) in a machine-readable form.
+* On [export](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit), Wolvenkit creates a `.material.json` file containing the `.mesh` file's [material setup](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment) in a machine-readable form.
 * When [importing a .glb](../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender) into Blender, the plugin reads this file and automatically generates a list of materials. After selecting a mesh, you can see all available options in the Materials tab:
 
 <figure><img src="../../.gitbook/assets/blender_materials_tab.png" alt=""><figcaption><p>You need to select a mesh first</p></figcaption></figure>

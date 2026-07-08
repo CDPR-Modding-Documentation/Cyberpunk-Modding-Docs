@@ -18,25 +18,20 @@ This page will explain how NPC animations are selected and connected within the 
 
 ## entAnimatedComponent
 
-The very base for any animations is the entAnimatedComponent with the name of `root`. \
-You can usually find it insde the [root entity's](../entity-.ent-files/#root-entity) `components` array:
+The very base for any animations is the entAnimatedComponent with the name of `root`.\
+You can usually find it insde the [root entity's](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity) `components` array:
 
 <figure><img src="../../../../.gitbook/assets/entAnim_root.png" alt=""><figcaption></figcaption></figure>
 
-`animations.gameplay` animations does...&#x20;
+`animations.gameplay` animations does...
 
 (we needed to put those, or no photo mode animations. Where are they read? Why aren't they overwritten by SetupExtensionComponents?)
 
-
-
 ### entAnimatedSetupExtensionComponent
 
-One or more extensions to the [#entanimatedcomponent](npc-animations.md#entanimatedcomponent "mention") for different contexts. \
-You can usually find them insde the [root entity's](../entity-.ent-files/#root-entity) `components` array:
+One or more extensions to the [#entanimatedcomponent](npc-animations.md#entanimatedcomponent "mention") for different contexts.\
+You can usually find them insde the [root entity's](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity) `components` array:
 
 <figure><img src="../../../../.gitbook/assets/entAnimExtension.png" alt=""><figcaption></figcaption></figure>
 
 As of January 2025, we don't exactly know what they do and where they are read. Maybe ask psi at some point.
-
-
-

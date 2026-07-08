@@ -34,7 +34,7 @@ It includes:
 It's the same one I use in my tutorial videos.
 
 {% hint style="info" %}
-Alternatively, you can find older versions of the pose files on [our github](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/tree/main/_resources_and_assets/poses).
+Alternatively, you can find older versions of the pose files on [our github](../../_resources_and_assets/poses).
 {% endhint %}
 
 ## Requirements (click to download)

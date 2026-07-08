@@ -15,7 +15,7 @@ If you want, you can then turn your replacers into new [custom-props](../../modd
 
 ### Wait, that's not what I want!
 
-* To learn how material assignment works, check [3d-objects-.mesh-files](../files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") and its sub-page [submeshes-materials-and-chunks.md](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention")
+* To learn how material assignment works, check [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") and its sub-page [submeshes-materials-and-chunks.md](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention")
 * To learn more on how materials in general work, read [materials](../materials/ "mention")
 * For a guide on changing an existing mesh, read [changing-materials-colors-and-textures](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
 
@@ -163,7 +163,7 @@ In Wolvenkit, use the [Tools #Import Tool](https://app.gitbook.com/s/-MP_ozZVx2g
 ## Assigning Materials
 
 {% hint style="info" %}
-I'll give the TL;DR version, you should be able to follow along. If not, feel free to read up on [how materials work in meshes](../files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment) or find us on [Discord](https://discord.gg/redmodding)!
+I'll give the TL;DR version, you should be able to follow along. If not, feel free to read up on [how materials work in meshes](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment) or find us on [Discord](https://discord.gg/redmodding)!
 {% endhint %}
 
 Open `sex_shop_neon_sign_b.mesh` in Wolvenkit and open the appearance `on` (as this is the one they're using on Jig Jig Street).

@@ -7,7 +7,7 @@ description: How to add different vehicle variants and switch between them
 ## Summary
 
 **Published:** Aug 24 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") based on research by [oranje3.interactive](https://app.gitbook.com/u/WmuhC8ydOkY9iXg8LizCbfpsUdA3 "mention")\
-**Last documented update**: Aug 24 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")&#x20;
+**Last documented update**: Aug 24 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will teach you how to use different variants for vehicle guns on the example of the **Mizutani Shion**.
 
@@ -15,8 +15,6 @@ This guide will teach you how to use different variants for vehicle guns on the 
 
 * To learn more about [.](./ "mention"), check the corresponding wiki page.
 * If you want to create different appearances for player weapons, check [weapons](../../items-equipment/adding-new-items/weapons/ "mention")
-
-
 
 ## Different positions
 
@@ -38,4 +36,4 @@ You assign the weapon variant via `visualTags` in the `.app` file (they must cor
 
 ## Weapon appearances
 
-By using different appearances with their own components, you can pick different appearances and chunkmasks per component. You can read more about this under [#material-assignment](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment "mention").
+By using different appearances with their own components, you can pick different appearances and chunkmasks per component. You can read more about this under [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment "mention").

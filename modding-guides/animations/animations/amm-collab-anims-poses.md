@@ -9,7 +9,7 @@ description: How to add your poses to AMM
 **Created by @manavortex**\
 **Published April 16 2023**
 
-#### **Versions:**&#x20;
+#### **Versions:**
 
 | Wolvenkit         | >= 8.9.0 (or whatever works for you)         |
 | ----------------- | -------------------------------------------- |
@@ -44,7 +44,7 @@ The screenshots show the example project, but it's absolutely no problem if you 
 <figure><img src="../../../.gitbook/assets/amm_custom_poses_file_structure.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="success" %}
-If you have downloaded the example Wolvenkit project, you can start it (the "Install" button has an "Install and launch" option in the dropdown) to see everything in action: \
+If you have downloaded the example Wolvenkit project, you can start it (the "Install" button has an "Install and launch" option in the dropdown) to see everything in action:\
 \- Spawn an NPC (generic male or female)\
 \- Switch to the `Poses` tab\
 \- Find the `Netrunner making AMM mods` category and select one of the poses\
@@ -53,7 +53,7 @@ If you have downloaded the example Wolvenkit project, you can start it (the "Ins
 
 ### Easy AMM poses
 
-Instead of following the process below, you can use the [Easy AMM poses ](https://www.nexusmods.com/cyberpunk2077/mods/13904)generator, which will walk you through the process.&#x20;
+Instead of following the process below, you can use the [Easy AMM poses ](https://www.nexusmods.com/cyberpunk2077/mods/13904)generator, which will walk you through the process.
 
 The pose generator will generate the entire structure out of your `.anim` file and your user input. You can then follow the steps under [#connecting-the-files](amm-collab-anims-poses.md#connecting-the-files "mention") to move your files around.
 
@@ -66,7 +66,7 @@ Visual learners rejoice: There is a video!
 Start by customizing your file structure. If you leave it as it is and publish the mod and somebody else does the same, only one of the two will work. Create a folder structure that is unique to you.
 
 {% hint style="info" %}
-It is good practice to leave `base` for the game files, and simply have a folder with your username at the root level of `archive`.&#x20;
+It is good practice to leave `base` for the game files, and simply have a folder with your username at the root level of `archive`.
 {% endhint %}
 
 {% hint style="danger" %}
@@ -75,7 +75,7 @@ Your file structure **must not** contain spaces, capital letters, or any funky c
 
 ### File structure: The .lua
 
-1. Any lua poses for AMM must be inside `Custom Poses`,  but you can rename `your_optional_subfolder` to whatever you want (or even delete it).
+1. Any lua poses for AMM must be inside `Custom Poses`, but you can rename `your_optional_subfolder` to whatever you want (or even delete it).
 2. Rename `amm_tutorial.lua` to something that identifies your pose pack, e.g. `netrunner_coding`
 3. Open the file in your text editor. Let's look at the first half of the entries (we'll check the second half later):
 
@@ -100,13 +100,13 @@ return {
 
 4. Change `modder` to your name so people know who made this.
 5. Change `category` to the name of your pose pack. This will be used for AMM to sort your poses into categories, which people will use to browse, so don't go overboard.
-6. Change `entity_path`: Right-click on your .ent file in WKit and select `Copy relative Path` and paste it into the lua.&#x20;
+6. Change `entity_path`: Right-click on your .ent file in WKit and select `Copy relative Path` and paste it into the lua.
 7. Replace all `\` in your entity path with `\\`. **This is critical and your mod will not work if you don't!**
 
 ### File structure: The .ent
 
 {% hint style="info" %}
-Entity files tell the game what to load. You can learn more about them [here](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/) if you are curious, but you don't have to.
+Entity files tell the game what to load. You can learn more about them [here](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files) if you are curious, but you don't have to.
 {% endhint %}
 
 Open the `components` array, find the component with the name of `amm_workspot_collab`, and set the depotPath of workspotResource to the relative path of your [`.workspot`](amm-collab-anims-poses.md#file-structure-the-.workspot) file.
@@ -125,9 +125,9 @@ An .anims file is targeting a specific rig and holds a list of animations. These
 
 ### File structure: The .workspot
 
-Scroll to the bottom of the file and  find the node named `workspotTree`. Open it and find the list `finalAnimsets`.&#x20;
+Scroll to the bottom of the file and find the node named `workspotTree`. Open it and find the list `finalAnimsets`.
 
-Each of the `workWorkspotAnimsetEntries` inside `finalAnimset` connects animation files and rigs.&#x20;
+Each of the `workWorkspotAnimsetEntries` inside `finalAnimset` connects animation files and rigs.
 
 {% hint style="info" %}
 You can delete entries if you don't have animations for that rig.
@@ -145,7 +145,7 @@ For each of the entries you keep, make sure that the following paths point at th
 * `loadingHandles[0]`
 
 {% hint style="warning" %}
-If you have launched the game before, make sure to delete the file&#x20;
+If you have launched the game before, make sure to delete the file
 
 `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Poses\your_optional_subfolder\amm_tutorial.lua`
 {% endhint %}
@@ -156,7 +156,7 @@ A good time to check: make sure that everything works again and that the files a
 
 ## Custom poses
 
-Now that we have the basic structure covered, let's talk about pose names. This time, we start at the end and make our way backwards.&#x20;
+Now that we have the basic structure covered, let's talk about pose names. This time, we start at the end and make our way backwards.
 
 ### Custom poses: The .anims
 
@@ -176,17 +176,15 @@ An animation's name must match the `.lua` and the `.workspot`, spelling mistakes
 
 ### Custom poses: The .workspot
 
-Open your .workspot file and expand the following nodes:&#x20;
+Open your .workspot file and expand the following nodes:
 
 * workspotTree
   * rootEntry
     * list
 
-First, we're going to look at `workSequences.`This data type is used for pose transitions and -definitions (e.g. an NPC standing up). For our purpose, we don't need any of the fancy stuff.&#x20;
+First, we're going to look at `workSequences.`This data type is used for pose transitions and -definitions (e.g. an NPC standing up). For our purpose, we don't need any of the fancy stuff.
 
 While this list in the example file contains two `workSequences,` you're gonna need one per however many animations/poses you have. Duplicate to your hearts content.
-
-
 
 <figure><img src="../../../.gitbook/assets/amm_custom_poses_workSequence.png" alt=""><figcaption><p>Here's how a workSequence looks. Note the duplicate ID property - and each of those has to be unique!</p></figcaption></figure>
 
@@ -201,7 +199,7 @@ You need one workSequence for each of your animations!
    1. Find the `workSequence`'s property `id` and increment its numeric value +1 from the previous `id` (_orange on screenshot_)
    2. Find the `workAnimClip`'s property `id` and increment its numeric value +1 from the previous `id` (_orange on screenshot_)
 5. To clarify - our first example `workSequence` had a property `id` of 2 and its `workAnimClip`'s propery `id` was 3. Our second example `workSequence` had a property `id` of 4 and its `workAnimClip` had a property `id` of 5. Therefore, your next `workSequence` should have a property `id` of 6 and its `workAnimClip`'s property `id` should be 7, and so on. **But good news!** WolvenKit's File Validation can fill in these numbers for you. Visit [this page](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/file-validation) for more information.
-6. **Optional, but recommended:** Set the `workSequence`'s property `idleAnim`  to the name of your appearance (_purple on screenshot_). This is purely for your convenience, as you can see which is which when scrolling through the list.
+6. **Optional, but recommended:** Set the `workSequence`'s property `idleAnim` to the name of your appearance (_purple on screenshot_). This is purely for your convenience, as you can see which is which when scrolling through the list.
 
 {% hint style="danger" %}
 The numeric values for all the`id` properties - under `workSequence and workAnimClip -` need to be **unique** within the scope of the `workspotTree`. As soon as you have duplications here, things will be out of order.
@@ -235,7 +233,7 @@ The lists tell AMM which poses belong to which rig, allowing to hide them when t
 ## Troubleshooting
 
 {% hint style="warning" %}
-If you have launched the project in its default state before starting to customize it, delete the file&#x20;
+If you have launched the project in its default state before starting to customize it, delete the file
 
 `Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Poses\your_optional_subfolder\amm_tutorial.lua`
 {% endhint %}
@@ -246,7 +244,7 @@ A pose gets correctly added by AMM if you see it in the list and can delete it.
 
 ### AMM doesn't show my poses
 
-The problem is in your `.lua`, AMM fails to pick up the pose information you provided. You can check `AppearanceMenuMod.log`, which might tell you what's wrong, but it's probably fastest to just start over from the template `.lua` file.&#x20;
+The problem is in your `.lua`, AMM fails to pick up the pose information you provided. You can check `AppearanceMenuMod.log`, which might tell you what's wrong, but it's probably fastest to just start over from the template `.lua` file.
 
 {% hint style="info" %}
 Make sure that you don't add or delete any commas or quotation marks.
@@ -254,7 +252,7 @@ Make sure that you don't add or delete any commas or quotation marks.
 
 ### I click, but nothing happens (no pose shows up in AMM)
 
-The problem is between your `.lua` and your `.ent` file: the poses were registered correctly with AMM, but Cyberpunk can find nothing to spawn.&#x20;
+The problem is between your `.lua` and your `.ent` file: the poses were registered correctly with AMM, but Cyberpunk can find nothing to spawn.
 
 ### The NPC briefly T-poses, and then the game crashes
 
@@ -267,6 +265,3 @@ The error is between Blender and your .anims file. Double-check names and make s
 ### The wrong pose is triggered
 
 You messed up the indices in the `.workspot` file. [Go back](amm-collab-anims-poses.md#custom-poses-the-.workspot) and make sure that they're all unique.
-
-
-

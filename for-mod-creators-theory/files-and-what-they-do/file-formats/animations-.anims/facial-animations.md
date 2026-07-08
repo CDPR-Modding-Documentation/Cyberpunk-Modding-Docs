@@ -14,7 +14,7 @@ This page will explain how facial animations are selected within the files, and 
 
 ## entAnimatedComponent
 
-The very base for any animations is the entAnimatedComponent with the name of `face_rig`. \
-It is defined per appearance in the [.app file](../appearance-.app-files/), where you can find it inside the `components` array:
+The very base for any animations is the entAnimatedComponent with the name of `face_rig`.\
+It is defined per appearance in the [.app file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files), where you can find it inside the `components` array:
 
 TODO: put screenshot

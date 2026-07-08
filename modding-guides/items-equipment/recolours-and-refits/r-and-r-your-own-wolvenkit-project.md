@@ -10,7 +10,7 @@ This page is a part of the [.](./ "mention") guide and will walk you through the
 * solve load order via **project name**
 * get the files from the mod that we want to change
 
-**Time to complete:**&#x20;
+**Time to complete:**
 
 * \~30 minutes for the tutorial
 * once you know how it works: < 5 minutes to create a project and add the correct files from a mod
@@ -28,9 +28,9 @@ The principles you learn here are universal. Once you have understood how this w
 {% endhint %}
 
 {% hint style="warning" %}
-If you are editing modded items, you should **seek permission** first. For your personal use, you can (legally) do what you want, but making mods takes **time and effort**.&#x20;
+If you are editing modded items, you should **seek permission** first. For your personal use, you can (legally) do what you want, but making mods takes **time and effort**.
 
-Please respect mod creators' wishes in that regard.&#x20;
+Please respect mod creators' wishes in that regard.
 
 You can check find the standard permissions on a mod's Nexus page, `Description` tab, under the **Permissions and Credit** header right next to the requirements.
 {% endhint %}
@@ -48,7 +48,7 @@ The checklist below will make sure that you're ready to go for the tutorial. The
 To edit an appearance, you need to **make a mod**. For that, you need a Wolvenkit project.
 
 {% hint style="info" %}
-Normally, you get an example project to download — but you already have all the necessary files, since you downloaded them from Nexus.&#x20;
+Normally, you get an example project to download — but you already have all the necessary files, since you downloaded them from Nexus.
 
 This guide will teach you how to change stuff without the original creator's help. It's easy!
 
@@ -69,17 +69,17 @@ Once you've made your decision, you can proceed to the next section and [create 
 
 ### A full repack
 
-Your mod completely **overwrites** the original mod, creating your own local copy.&#x20;
+Your mod completely **overwrites** the original mod, creating your own local copy.
 
 {% hint style="info" %}
 I do this with mods for my own personal use — I don't care if the original mod is updated, my character will only ever wear that one custom variant.
 {% endhint %}
 
-#### Pros:&#x20;
+#### Pros:
 
 * Anything I do to the mod in the future won't affect you
 
-#### Cons:&#x20;
+#### Cons:
 
 * Anything I do to the mod in the future won't affect you
 * If you update or reinstall the original mod, you will overwrite your changes
@@ -93,7 +93,7 @@ You'll create a compatibility mod that will exist **together** with the original
 I do this with mods where I only want to change little things, e.g. removing a submesh. When the original mod updates, I can update my compatibility mod in <5 minutes.
 {% endhint %}
 
-#### Pros:&#x20;
+#### Pros:
 
 * You can still update and reinstall the original without overwriting your changes
 * Your mod has only exactly those files that you've actually changed
@@ -114,13 +114,12 @@ The .archive that Wolvenkit packs for you will have the same name as your projec
 {% endhint %}
 
 1. From Wolvenkit's menu bar, select File -> New Project
-2.  Fill the fields in the dialogue:\
-
+2.  Fill the fields in the dialogue:\\
 
     <figure><img src="../../../.gitbook/assets/wolvenkit_create_project.png" alt=""><figcaption></figcaption></figure>
-3. `Creation Location`: This is where your loose files are going to live. From here, Wkit can pack it as a mod and install it to your game directory. \
+3. `Creation Location`: This is where your loose files are going to live. From here, Wkit can pack it as a mod and install it to your game directory.\
    Select any folder outside of your game directory.
-4. `Project Name`:  The name of your project, and subsequently, the name of your .archive file.&#x20;
+4. `Project Name`: The name of your project, and subsequently, the name of your .archive file.
    * If you want to **overwrite**: Name it the same as the original mod's `.archive` (`_ArchiveXL_Netrunner_Variants`)
    *   If you want to **patch**: To maintain [load-order.md](../../../for-mod-users/users-modding-cyberpunk-2077/load-order.md "mention"), your project needs to come before the original in [ascii sort order](https://theasciicode.com.ar/). Pick any of the following:
 
@@ -138,15 +137,15 @@ In Cyberpunk, any file can only **be modded once**. When something has altered a
 
 At some point during start-up, Cyberpunk 2077 will open up the mod directory, grab a list of all mods, and load them. Naturally, it will start at the top of that list, so your mod needs to be **further up** than the original.
 
-We achieve that via **file name** - hence #4 on the above list.&#x20;
+We achieve that via **file name** - hence #4 on the above list.
 
 </details>
 
 ## Add files from the mod to your project
 
-This part will show you how to add files to your project (you can't change them if you don't).&#x20;
+This part will show you how to add files to your project (you can't change them if you don't).
 
-### Prerequisites&#x20;
+### Prerequisites
 
 You have installed the mod from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/9314).
 
@@ -162,15 +161,15 @@ To alter an existing item, you need to **create a mod** that will overwrite the 
 Do not move or rename any of those files, they need to be exactly where Wolvenkit puts them.
 {% endhint %}
 
-The section&#x20;
+The section
 
 1. describes the process of [#how-to-export-files](r-and-r-your-own-wolvenkit-project.md#how-to-export-files "mention")
-2. tells you which files to use it on for \
+2. tells you which files to use it on for\
    [#selected-files-recolour](r-and-r-your-own-wolvenkit-project.md#selected-files-recolour "mention")\
    [#selected-files-refit](r-and-r-your-own-wolvenkit-project.md#selected-files-refit "mention")
 
 {% hint style="info" %}
-For the general documentation on adding files to your project, see [here](../../analysing-other-mods/#step-1-switch-to-mod-browser).&#x20;
+For the general documentation on adding files to your project, see [here](../../analysing-other-mods/#step-1-switch-to-mod-browser).
 {% endhint %}
 
 ### How to export files
@@ -187,7 +186,7 @@ For the general documentation on adding files to your project, see [here](../../
 
 ### Selected files: full repack
 
-If you want to overwrite the complete mod, run this query in Wolvenkit's Mod Browser:&#x20;
+If you want to overwrite the complete mod, run this query in Wolvenkit's Mod Browser:
 
 ```
 archive:ArchiveXL_Netrunner
@@ -218,9 +217,9 @@ To: `resources\r6\scripts\manavortex`
 
 #### \_ArchiveXL\_Netrunner\_variants.archive.xl
 
-From:  either\
-&#x20;   vanilla install: `Cyberpunk 2077\archive\pc\mod`\
-&#x20;   REDmod: `Cyberpunk 2077\mods\RANDOMNUMBER_ArchiveXL_Netrunner_variants\archives`\
+From: either\
+vanilla install: `Cyberpunk 2077\archive\pc\mod`\
+REDmod: `Cyberpunk 2077\mods\RANDOMNUMBER_ArchiveXL_Netrunner_variants\archives`\
 To: `resources`
 
 <figure><img src="../../../.gitbook/assets/netrunner_suits_resource_files.png" alt=""><figcaption></figcaption></figure>
@@ -240,11 +239,11 @@ Add all those files to your project, then skip the rest of this page and go to [
 All material colour definitions are stored in `.mlsetup` files, which we'll be editing in [r-and-r-colour-editing.md](r-and-r-colour-editing.md "mention").
 
 {% hint style="info" %}
-If you want to edit a file that is not part of [High Fashion Netrunning Suits](https://www.nexusmods.com/cyberpunk2077/mods/9314), you need to find it first.&#x20;
+If you want to edit a file that is not part of [High Fashion Netrunning Suits](https://www.nexusmods.com/cyberpunk2077/mods/9314), you need to find it first.
 
 If it is part of a different mod, see [analysing-other-mods](../../analysing-other-mods/ "mention") and use **that** archive. You just need to adjust your search queries below.
 
-&#x20;If you want to modify base game items, you need to find their mesh (check [spawn-codes-baseids-hashes.md](../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention")). Once you have that, you can use "find used files" from the Asset Browser's context menu to find all .mlsetups, or you open the mesh in Wolvenkit to follow the [material definition chain](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#step-1-appearances).&#x20;
+If you want to modify base game items, you need to find their mesh (check [spawn-codes-baseids-hashes.md](../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md "mention")). Once you have that, you can use "find used files" from the Asset Browser's context menu to find all .mlsetups, or you open the mesh in Wolvenkit to follow the [material definition chain](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-1-appearances).
 {% endhint %}
 
 #### **TL;DR: via search browser query**
@@ -267,10 +266,8 @@ archive:ArchiveXL_Netrunner > .mlsetup > carbon > white > bronze
 
 * All material definitions in this mod are in the folder `manavortex\torso\netrunning_suit\textures`
 * The first level subfolders group the `.mlsetup` files by material (e.g. `nylon`, `snake`, `other`)
-* The texture files inside the folders are named like `material_baseColor_accentColor`. Base colour and accent colour **should** correspond with the in-game suit name.&#x20;
+* The texture files inside the folders are named like `material_baseColor_accentColor`. Base colour and accent colour **should** correspond with the in-game suit name.
 * If there is a subfolder inside the material folder, the `mlsetup`s inside are using the **secondary `mlmask`**. That's not going to mean anything to you, but we'll get back to it on [r-and-r-colour-editing.md](r-and-r-colour-editing.md "mention").
-
-
 
 If the names aren't clear enough or if you can't guess which file you have to take, you can open `netrunner_recolours_translation.json` in Wolvenkit:
 
@@ -296,7 +293,7 @@ Simply add both files to your project, then hit up the [r-and-r-refitting-step-b
 
 ## OK, what now?
 
-Depending on which files you added, you now proceed to the next guide:&#x20;
+Depending on which files you added, you now proceed to the next guide:
 
 [r-and-r-colour-editing.md](r-and-r-colour-editing.md "mention") / [r-and-r-emissive.md](r-and-r-emissive.md "mention")
 

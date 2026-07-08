@@ -14,12 +14,12 @@ The logic shown here also applies to other similar workspot interactions.
 
 ## Requirements
 
-<table><thead><tr><th width="430">Tool/Software</th><th>Version</th></tr></thead><tbody><tr><td>Wolvenkit (<a href="https://github.com/WolvenKit/Wolvenkit/issues">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td><td>≥ 8.16.1 for Cyberpunk 2.21</td></tr><tr><td>Object Spawner (<a data-mention href="broken-reference">Broken link</a>)</td><td>Most recent from Feb 09, 2025</td></tr><tr><td>Visual Studio Code or any IDE to edit lua files</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="430">Tool/Software</th><th>Version</th></tr></thead><tbody><tr><td>Wolvenkit (<a href="https://github.com/WolvenKit/Wolvenkit/issues">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td><td>≥ 8.16.1 for Cyberpunk 2.21</td></tr><tr><td>Object Spawner (<a data-mention href="https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/modding-guides/world-editing/archived-guides/scripted-interactions/broken-reference/README.md">https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/modding-guides/world-editing/archived-guides/scripted-interactions/broken-reference/README.md</a>)</td><td>Most recent from Feb 09, 2025</td></tr><tr><td>Visual Studio Code or any IDE to edit lua files</td><td></td></tr></tbody></table>
 
-**Knowledges required :**&#x20;
+**Knowledges required :**
 
 * You know how to [**create a mod**](https://wiki.redmodding.org/wolvenkit/getting-started/creating-a-mod) using Wolvenkit.
-* You know how to[ **spawn objects**](broken-reference) using entSpawner
+* You know how to[ **spawn objects**](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/modding-guides/world-editing/archived-guides/scripted-interactions/broken-reference/README.md) using entSpawner
 * You [downloaded the template](./#download-the-template) that contains all the necessary files
 
 ## Define the position
@@ -36,7 +36,7 @@ The logic shown here also applies to other similar workspot interactions.
 
 ## Add the interaction
 
-In the `interactions.lua` file, add your new device interaction inside the `interactions.setupInteractions()` function :&#x20;
+In the `interactions.lua` file, add your new device interaction inside the `interactions.setupInteractions()` function :
 
 {% code overflow="wrap" %}
 ```lua
@@ -73,7 +73,7 @@ Sit interaction - result (with french game :flag\_fr:)
 Not happy with the interaction range? or the icon visibility range? or the text label?\
 Each interaction workspot comes with some parameters that you can change to your will.
 
-Default couch parameters :&#x20;
+Default couch parameters :
 
 ```lua
 o.interactionPosition = interactionPosition
@@ -116,7 +116,7 @@ o.exitSounds = {
 }
 ```
 
-To change these, you can set their value before initializing the interaction, like so :&#x20;
+To change these, you can set their value before initializing the interaction, like so :
 
 ```lua
 local couch = require("modules/workspots/couchWorkspot"):new(5, Vector4.new(1803.76, 2260.53, 180.74, 0.0), Vector4.new(1803.76, 2260.53, 180.34, 0.0), EulerAngles.new(0, 0, 160))

@@ -15,7 +15,7 @@ description: How to use ArchiveXL's new material property interpolation
 
 ### Assumed skill level
 
-* You have a general understanding of how materials work (or read up on it under [3d-objects-.mesh-files](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment "mention"))
+* You have a general understanding of how materials work (or read up on it under [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-assignment "mention"))
 * You have a Wolvenkit project and a mesh as well as a bunch of .mlsetups
 
 ## Why is this better than [.mi files](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md)?

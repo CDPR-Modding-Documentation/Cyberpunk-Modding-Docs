@@ -48,7 +48,7 @@ This is probably the most common problem I've seen, and is also thankfully the e
 
 ### Solution
 
-1.  Open up the [mesh entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity) (`.ent`) file for the item you need to fix:
+1.  Open up the [mesh entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity) (`.ent`) file for the item you need to fix:
 
     <figure><img src="../../.gitbook/assets/image (138).png" alt=""><figcaption><p>There are no appearances in a mesh entity file!</p></figcaption></figure>
 2.  Expand the `components` array, then find any `component`s with `Mesh` in their types, and check if they require fixing. In my example project, it's both the jacket and the sleeves.
@@ -105,7 +105,7 @@ For dynamic appearances (if the yaml has a key called `$instances`), go to [#dyn
 {% endhint %}
 
 1. Switch back to Wolvenkit.
-2. Open the [root entity (.ent)](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity) file (it should have an array called `appearances`)
+2. Open the [root entity (.ent)](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity) file (it should have an array called `appearances`)
 
 <figure><img src="../../.gitbook/assets/image (146).png" alt=""><figcaption></figcaption></figure>
 
@@ -148,7 +148,7 @@ For legacy appearances (if the yaml does not have a key called `$instances`), go
 
 #### Hiding FPP in the .app
 
-1. Open the [.app file](../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files) in Wolvenkit
+1. Open the [.app file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files) in Wolvenkit
 2. Open the `appearances` array
 3. Select each appearance and add `&camera=tpp` to the name.
 
@@ -156,7 +156,7 @@ For legacy appearances (if the yaml does not have a key called `$instances`), go
 
 #### Hiding FPP in the mesh\_entity
 
-1. Open the [entity-.ent-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity "mention") in Wolvenkit
+1. Open the [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity "mention") in Wolvenkit
 2. Open the `components` array
 3. Select each component with `Mesh` in its type and add `&camera=tpp` to the name
 
@@ -172,7 +172,7 @@ Alternatively, you can duplicate the component and have two for different meshes
 If your `yaml` file had an `$instances` block, the item is already dynamic and you can skip this step.
 {% endhint %}
 
-1. Find and open the [root entity](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity). If you have no idea which one it is, you can open the .csv and find the file paths in there.
+1. Find and open the [root entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity). If you have no idea which one it is, you can open the .csv and find the file paths in there.
 2. Inside the file, make sure that you have a **`DynamicAppearance`** entry in your tags array (for a full guide with screenshot, see [archivexl-dynamic-variants](adding-new-items/archivexl-dynamic-variants/ "mention") -> [#the-root\_entity](adding-new-items/archivexl-dynamic-variants/#the-root_entity "mention"))
 3. If you don't, add it. Congratulations, you're good to go!
 
@@ -237,7 +237,7 @@ If there is only one submesh, you need to edit it in Blender to split off or del
 ### Chunk Masks
 
 {% hint style="info" %}
-You can learn more about chunk masks under [3d-objects-.mesh-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") -> [submeshes-materials-and-chunks.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"). This is not necessary for the purpose of this guide.
+You can learn more about chunk masks under [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") -> [submeshes-materials-and-chunks.md](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention"). This is not necessary for the purpose of this guide.
 {% endhint %}
 
 1. Switch back to the appearance (.app) file

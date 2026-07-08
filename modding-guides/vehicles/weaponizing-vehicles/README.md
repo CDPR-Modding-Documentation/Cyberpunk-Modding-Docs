@@ -40,7 +40,7 @@ These will be called "reference files" through the rest of the guide.
 ## Step 1: Changing the .ent file
 
 {% hint style="info" %}
-This file is where your game looks up your car when spawning it from its record. You can learn more about [entity-.ent-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files "mention") on the link, but you don't have to!
+This file is where your game looks up your car when spawning it from its record. You can learn more about [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files "mention") on the link, but you don't have to!
 {% endhint %}
 
 ### 1. Changing the car's type
@@ -115,7 +115,7 @@ You can do this in-line:
 ## **Step 3: Changing the .app file**
 
 {% hint style="info" %}
-This file is loaded by the .ent file, and contains an item's different appearances. You can learn more about [appearance-.app-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files "mention") at the link, but you don't have to.
+This file is loaded by the .ent file, and contains an item's different appearances. You can learn more about [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files "mention") at the link, but you don't have to.
 {% endhint %}
 
 Open your car's `.app` file and the reference `.app` file.

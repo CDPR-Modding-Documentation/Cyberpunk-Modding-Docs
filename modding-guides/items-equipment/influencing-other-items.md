@@ -28,10 +28,10 @@ To use it with your clothing item, you need to change the component names to use
 To learn how to hide things via PartsOverrides, check [#chunkmasks-partially-hiding-meshes](../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md#chunkmasks-partially-hiding-meshes "mention")
 
 {% hint style="info" %}
-You can't use PartsOverrides on components defined in the same .app file. Either use components from other files, or load them [entity-.ent-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity "mention")
+You can't use PartsOverrides on components defined in the same .app file. Either use components from other files, or load them [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity "mention")
 {% endhint %}
 
-In the .app file, each appearance lets you define [appearance-.app-files](../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files#partsoverrides "mention"), which — as the name implies — let you **override** previously defined components. An entry looks as follows:
+In the .app file, each appearance lets you define [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files#partsoverrides](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files#partsoverrides "mention"), which — as the name implies — let you **override** previously defined components. An entry looks as follows:
 
 <figure><img src="../../.gitbook/assets/parts_values_parts_overrides.png" alt=""><figcaption><p>Overwrite the component "<code>kimono</code>" and "<code>kimono_filler</code>", which are defined in the file "<code>kimono_meshentity.ent</code>"<br>This is the reason why Cyberpunk has all the player components stored in .ent files!</p></figcaption></figure>
 

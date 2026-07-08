@@ -20,21 +20,21 @@ It's important to remember that materials are simply instances of shaders. The v
 
 ### The Daisy Chain
 
-Meshes rarely use shaders directly, but instead rely on any number of [.mi files](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) .&#x20;
+Meshes rarely use shaders directly, but instead rely on any number of [.mi files](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md) .
 
 {% hint style="success" %}
-If the [**baseMaterial** path](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/#materialinstance-the-local-material) ends in .mi, you're looking at a daisy chain. Check the player's [skin materials](../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) for an example, or check [re-using-materials-.mi.md](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention") ->[#why-do-i-need-this](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md#why-do-i-need-this "mention")
+If the [**baseMaterial** path](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#materialinstance-the-local-material) ends in .mi, you're looking at a daisy chain. Check the player's [skin materials](../../references-lists-and-overviews/cheat-sheet-head/#skin-tones-by-index) for an example, or check [re-using-materials-.mi.md](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention") ->[#why-do-i-need-this](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md#why-do-i-need-this "mention")
 {% endhint %}
 
 This approach lets you bundle [shared properties](../configuring-materials/). If you have 30 materials with 4 properties and 3 of them never change, then it's the perfect time for a [.mi file](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md).
 
 Daisy-chaining those together lets you define and refine templates. For example, every human has skin, and all skin has veins and blood vessels — but the player, your average Maelstrom gangoon and bog-standard vanilla NPCs are not using the same textures. And that is before skin colours come in.
 
-<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Daisy_chain.JPG/1200px-Daisy_chain.JPG" alt=""><figcaption><p>Daisy chaining (Image: Wikimedia commons). <br><strong>Caution</strong>: Cyclic dependencies <em>will</em> crash your game!</p></figcaption></figure>
+<figure><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Daisy_chain.JPG/1200px-Daisy_chain.JPG" alt=""><figcaption><p>Daisy chaining (Image: Wikimedia commons).<br><strong>Caution</strong>: Cyclic dependencies <em>will</em> crash your game!</p></figcaption></figure>
 
 ### How does the daisy chain work?
 
-Think of them as photoshop layers, applied in reverse order: the first one that's loaded is the shader itself with its default properties, then each .mi in the chain gets applied on top of that.&#x20;
+Think of them as photoshop layers, applied in reverse order: the first one that's loaded is the shader itself with its default properties, then each .mi in the chain gets applied on top of that.
 
 Properties in the mesh will be applied last, and will thus overwrite anything from the chain.
 

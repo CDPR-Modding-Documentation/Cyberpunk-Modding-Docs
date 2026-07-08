@@ -300,7 +300,7 @@ We’ll duplicate this appearance later when we add different colors.
 
 ## Add the `.app` file
 
-This file contains your car's **components** for the individual appearances. You can (but don't have to) learn more about it under [appearance-.app-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files "mention").
+This file contains your car's **components** for the individual appearances. You can (but don't have to) learn more about it under [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files "mention").
 
 1. In your `.ent` file's `appearance` on the left side, find the `appearanceResource` field
 2. Hit the yellow arrow on the right to add the file to your project

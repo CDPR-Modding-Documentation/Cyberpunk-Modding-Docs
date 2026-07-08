@@ -15,11 +15,11 @@ Rather than boring you with theory, we're making a simple build with different k
 
 ### Wait, this is not what I want!
 
-* Find basic information about [.](./ "mention") on the parent page.
+* Find basic information about [creating-sector-variants.md](../creating-sector-variants.md "mention") on the parent page.
 
 ### Why would I need this?
 
-Please check [#why-do-i-need-sector-variants](./#why-do-i-need-sector-variants "mention") on the main page for this intel.
+Please check [#why-do-i-need-sector-variants](../creating-sector-variants.md#why-do-i-need-sector-variants "mention") on the main page for this intel.
 
 ### What can I do with variants?
 

@@ -16,7 +16,7 @@ This example leaves out a lot of features and details
 
 ### Wait, that's not what I want!
 
-* If you want to import AMM decor presets into World Builder, go here: [Searching and Loading, AMM Preset Import](ui-tabs-explained/tab-saved.md)
+* If you want to import AMM decor presets into World Builder, go here: [Searching and Loading, AMM Preset Import](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/modding-guides/world-editing/object-spawner/ui-tabs-explained/tab-saved.md)
 
 ## Spawning things
 

@@ -14,7 +14,7 @@ This page is a sub-page of [Adding Weapons](./) and tells you how to create a cu
 To create a custom throwing weapon, check the parent guide and use knife as a base type.
 
 {% hint style="info" %}
-Everything but the yaml works exactly like adding regular items (with a [root](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity) or [mesh entity](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity), an [.app file](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/#appearances) and your weapon's mesh). This example will use a root entity.
+Everything but the yaml works exactly like adding regular items (with a [root](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity) or [mesh entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity), an [.app file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files#appearances) and your weapon's mesh). This example will use a root entity.
 {% endhint %}
 
 {% hint style="success" %}
@@ -50,17 +50,17 @@ If your weapon wasn't throwable before, it is now — but the projectile is stil
 A projectile needs an `.ent` file as the factory's entry point, not an `.app`.
 {% endhint %}
 
-You can find all projectile entities in `base\gameplay\projectiles`. &#x20;
+You can find all projectile entities in `base\gameplay\projectiles`.
 
 {% hint style="danger" %}
 Ignore anything that has `default` in its name.
 {% endhint %}
 
-There are two kinds of .ent files: the ones that support multiple appearances, and the ones that don't. You can tell them apart by opening them and checking the `appearances` array (the first entry in the list).&#x20;
+There are two kinds of .ent files: the ones that support multiple appearances, and the ones that don't. You can tell them apart by opening them and checking the `appearances` array (the first entry in the list).
 
 Pick the right kind of entity for your weapon:
 
-#### [Root entity](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#root-entity)
+#### [Root entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity)
 
 Use e.g. this entity file if you want to use multiple appearances:
 
@@ -68,7 +68,7 @@ Use e.g. this entity file if you want to use multiple appearances:
 base\gameplay\projectiles\knife\tanto_projectile.ent
 ```
 
-#### [Mesh entity](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity)
+#### [Mesh entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity)
 
 Use e.g. this entity file if a single appearance is enough for you:
 
@@ -87,7 +87,7 @@ KnifeAttacks.MyNewWeaponThrowAttackProjectile:
   projectileTemplateName: my_new_weapon_projectile_name
 ```
 
-Make sure that the corresponding entry points at your **projectile's entity file** from [step 1](throwing-weapons-projectiles.md#step-1-the-entity-file).&#x20;
+Make sure that the corresponding entry points at your **projectile's entity file** from [step 1](throwing-weapons-projectiles.md#step-1-the-entity-file).
 
 {% hint style="success" %}
 Your factory should have two entries: one for the projectile, one for the weapon itself.
@@ -111,7 +111,7 @@ If you're using a mesh entity (with an empty `appearances` array), you can **ski
 ## Step 4: The right mesh
 
 {% hint style="info" %}
-If you are using a mesh entity (without an `.app` file), that's where you will find the `component`s.  Skip step 1 on the list below.
+If you are using a mesh entity (without an `.app` file), that's where you will find the `component`s. Skip step 1 on the list below.
 {% endhint %}
 
 1. Open your `.app` file . For each of the `appearance`s, do the following:
@@ -123,7 +123,7 @@ If you are using a mesh entity (without an `.app` file), that's where you will f
 
 ## Step 5: Test
 
-If you did everything correctly, you should now have a custom projectile for thrown weapons.&#x20;
+If you did everything correctly, you should now have a custom projectile for thrown weapons.
 
 ## Troubleshooting
 

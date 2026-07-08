@@ -4,8 +4,6 @@ description: This guide explains how to add variants to your sectors, using Worl
 
 # Creating Sector Variants
 
-
-
 ## Summary
 
 Published: Mar 18 2025 by [keanuWheeze](https://app.gitbook.com/u/WBUIHettvKP7ke8K6KFd7L9ZTtG2 "mention")\
@@ -15,15 +13,15 @@ This page walks you through creating sector variants with WorldBuilder
 
 ### Wait, that's not what I want!
 
-* For an example, check [sector-variants-practical-example-and-project.md](sector-variants-practical-example-and-project.md "mention")
-* For how to manually create sector variants, check [Switching between sector states](../../../archived-guides/switching-between-sector-states.md) (archived)
+* For an example, check [sector-variants-practical-example-and-project.md](creating-sector-variants/sector-variants-practical-example-and-project.md "mention")
+* For how to manually create sector variants, check [Switching between sector states](../../archived-guides/switching-between-sector-states.md) (archived)
 
 ## Why do I need sector variants?
 
 This feature allows **switching** between multiple versions of the same build **while the game is running**, for example
 
 * turning Johnny or Nibbles on and off
-* "Moving" smartframes around&#x20;
+* "Moving" smartframes around
 * Having multiple presets, for example light colours and -brightness
 * turning an entire build on and off (great for non-immersive mods and shenanigans)
 
@@ -47,7 +45,7 @@ Despite the name, you can have as many variants in a single .archive as you want
 
 * You need to have a basic understanding of:
   * Working with WolvenKit
-  * Using World Builder (Spawning things and [importing](../../exporting-from-object-spawner.md) into WolvenKit)
+  * Using World Builder (Spawning things and [importing](../exporting-from-object-spawner.md) into WolvenKit)
 
 ## General Setup
 
@@ -55,7 +53,7 @@ If you want to use variants, keep them in mind during the building process — g
 
 * You will be able to assign each group, which sits directly within the main group, to a variant
 
-<figure><img src="../../../../../.gitbook/assets/sectorVariantValidGroupsExample" alt="" width="248"><figcaption><p>Example of what groups will be assignable</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/sectorVariantValidGroupsExample" alt="" width="248"><figcaption><p>Example of what groups will be assignable</p></figcaption></figure>
 
 * In the above example, you will be able to assign each of the three groups to a variant
   * All objects placed directly within the root group (The group that you saved and export), will be part of the **default** variant
@@ -66,7 +64,7 @@ If you want to use variants, keep them in mind during the building process — g
 * Variant settings can be found under the equally named header (One per group)
 * By default, each group will be assigned to the `default` variant, meaning they will be always active
 
-<figure><img src="../../../../../.gitbook/assets/sectorVariantExample" alt=""><figcaption><p>Example of a variants setup for a group, in the export tab</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/sectorVariantExample" alt=""><figcaption><p>Example of a variants setup for a group, in the export tab</p></figcaption></figure>
 
 * Variant Node Ref:
   * This **MUST** be set to an unique NodeRef in order for the variants to be controllable
@@ -85,7 +83,7 @@ Game.GetWorldStateSystem():TogglePrefabVariant(CreateNodeRef("$/yourRefName"), "
 
 ## User Configurable Variants
 
-* In order for mod users to quickly and conveniently toggle variants, one could e.g. hook up the [above](./#testing-variants) code to some UI
+* In order for mod users to quickly and conveniently toggle variants, one could e.g. hook up the [above](creating-sector-variants.md#testing-variants) code to some UI
 * To make it easier, below there will be a ready to use Native Settings UI based menu, that allows toggling variants
 * In order to configure it, simply change the values at the top of the `init.lua` file:
   * `settingsMainName/settingsSubName` : Controls the names displayed for the category, in Native Settings UI
@@ -100,9 +98,9 @@ Game.GetWorldStateSystem():TogglePrefabVariant(CreateNodeRef("$/yourRefName"), "
     * `displayName`: This is a more human-readable string, gets actually shown in the UI
     * `defaultState`: The default state of the variant (Overrides what is set during export)
 
-{% file src="../../../../../.gitbook/assets/VariantSwitcherUpdated.rar" %}
+{% file src="../../../../.gitbook/assets/VariantSwitcherUpdated.rar" %}
 
 ## Practical example and project template
 
-You can find more documentation and a project template with WB saves/export template/export files included in it to visualize how it all works in game and on wolvenkit at the following page : \
-[sector-variants-practical-example-and-project.md](sector-variants-practical-example-and-project.md "mention")
+You can find more documentation and a project template with WB saves/export template/export files included in it to visualize how it all works in game and on wolvenkit at the following page :\
+[sector-variants-practical-example-and-project.md](creating-sector-variants/sector-variants-practical-example-and-project.md "mention")

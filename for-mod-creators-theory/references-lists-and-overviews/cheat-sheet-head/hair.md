@@ -36,7 +36,7 @@ If you get multiple hits, take the one that does not include `_fpp_` in its file
 
 ## Name of meshes by index
 
-These names correspond to the `mesh` files.&#x20;
+These names correspond to the `mesh` files.
 
 To find a hair's control files, check the next section: [#hair-control-files-by-index](hair.md#hair-control-files-by-index "mention")
 
@@ -44,7 +44,7 @@ To find a hair's control files, check the next section: [#hair-control-files-by-
 Many hairs have different meshes if cyberware\_01 is used. In this case, the alternative file name will be given in _italics_.
 {% endhint %}
 
-All the files below can be found under the following subfolder:&#x20;
+All the files below can be found under the following subfolder:
 
 ```
 base\characters\common\hair\<hair name default variant>\<hair name as given>.mesh
@@ -66,7 +66,7 @@ To quickly find physics-enabled hair, you can use the Wolvenkit Search with the 
 
 ## Hair: Control files by index
 
-Hairs and all their components are assigned and defined via [.app](../../files-and-what-they-do/file-formats/appearance-.app-files/) and [.ent files](../../files-and-what-they-do/file-formats/entity-.ent-files/#mesh-component-entity-simple-entity). You can find them in the following folder:
+Hairs and all their components are assigned and defined via [.app](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files) and [.ent files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity). You can find them in the following folder:
 
 ```
 base\characters\head\player_base_heads\appearances\entity\hairs 
@@ -76,13 +76,11 @@ base\characters\head\player_base_heads\appearances\entity\hairs
 
 <summary>How to find these files?</summary>
 
-
-
 The last number in the file name matches the first number in the [.mesh file name](hair.md#name-in-files-by-index):
 
 <img src="../../../.gitbook/assets/cheatsheet_hair_entity_lookup.png" alt="" data-size="original">
 
-e.g., if you wanted to edit the entity file for female V's hair 28 `hh_083_wa__ponytail_01`, you could search for&#x20;
+e.g., if you wanted to edit the entity file for female V's hair 28 `hh_083_wa__ponytail_01`, you could search for
 
 ```
 player_base_heads > hairs > hairs_083
@@ -98,11 +96,9 @@ hairs_083 > .app > .pwa
 
 <table data-full-width="false"><thead><tr><th width="73" data-type="number">01</th><th width="371">Femme frame</th><th width="341">Masc frame</th></tr></thead><tbody><tr><td>1</td><td>hh_033_pwa__hairs_151</td><td>hh_037_pma__hairs_145_fpp</td></tr><tr><td>2</td><td>hh_000_pwa__hairs_059<br><em>bhh_000_pwa__hairs_059_cyberware_01</em></td><td>hh_001_pma__hairs_053<br><em>hh_001_pma__hairs_053_cyberware_01</em></td></tr><tr><td>3</td><td>hh_034_pwa__hairs_006<br><em>hh_034_pwa__hairs_006_cyberware_01</em></td><td>hh_002_pma__hairs_035<br><em>hh_002_pma__hairs_035_cyberware_01</em></td></tr><tr><td>4</td><td>hh_003_pwa__hairs_89<br><em>hh_003_pwa__hairs_89_cyberware_01</em></td><td>hh_003_pma__hairs_028<br><em>hh_003_pma__hairs_028_cyberware_01</em></td></tr><tr><td>5</td><td>hh_004_pwa__hairs_090</td><td>hh_004_pma__hairs_075</td></tr><tr><td>6</td><td>hh_078_wa__evelyn</td><td>hh_005_pma__hairs_036<br><em>hh_005_pma__hairs_036_cyberware_01</em></td></tr><tr><td>7</td><td>hh_035_pwa__hairs_083_braid_01</td><td>hh_006_pma__hairs_059<br><em>hh_006_pma__hairs_059_cyberware_01</em></td></tr><tr><td>8</td><td>hh_036_pwa__hairs_093</td><td>hh_007_pma__hairs_030</td></tr><tr><td>9</td><td>hh_008_pwa__hairs_082<br><em>hh_008_pwa__hairs_082_cyberware_01</em></td><td>hh_008_pma__hairs_062</td></tr><tr><td>10</td><td>hh_009_pwa__hairs_079</td><td>hh_009_pma__hairs_085</td></tr><tr><td>11</td><td>hh_010_pwa__hairs_091</td><td>hh_010_pma__hairs_037<br><em>hh_010_pma__hairs_037_cyberware_01</em></td></tr><tr><td>12</td><td>hh_011_pwa__hairs_063</td><td>hh_011_pma__hairs_039<br><em>hh_011_pma__hairs_039_cyberware_01</em></td></tr><tr><td>13</td><td>hh_012_pwa__hairs_042<br><em>hh_012_pwa__hairs_042_cyberware_01</em></td><td>hh_012_pma__hairs_051<br>hh_012_pma__hairs_051_cyberware_01</td></tr><tr><td>14</td><td><p>hh_013_pwa__hairs_999</p><p><em>hh_013_pwa__hairs_999_cyberware_01</em></p></td><td>hh_014_pma__hairs_025<br><em>hh_014_pma__hairs_025_cyberware_01</em></td></tr><tr><td>15</td><td>hh_008_pwa__hairs_082</td><td>hh_014_pma__hairs_025<br><em>hh_014_pma__hairs_025_cyberware_01</em></td></tr><tr><td>16</td><td>hh_011_pwa__hairs_063</td><td>hh_015_pma__hairs_008<br><em>hh_015_pma__hairs_008_cyberware_01</em></td></tr><tr><td>17</td><td>hh_029_pwa__hairs_088</td><td>hh_016_pma__hairs_011</td></tr><tr><td>18</td><td>hh_040_pwa__hairs_049</td><td>hh_017_pma__hairs_026<br><em>hh_017_pma__hairs_026_cyberware_01</em></td></tr><tr><td>19</td><td>hh_041_pwa__hairs_039</td><td>hh_018_pma__hairs_027</td></tr><tr><td>20</td><td>hh_044_pwa__hairs_140</td><td>hh_019_pma__hairs_031</td></tr><tr><td>21</td><td>hh_045_pwa__hairs_141</td><td>hh_020_pma__hairs_032<br><em>hh_020_pma__hairs_032_cyberware_01</em></td></tr><tr><td>22</td><td>hh_021_pwa__hairs_051<br><em>hh_021_pwa__hairs_051_cyberware_01</em></td><td>hh_021_pma__hairs_040</td></tr><tr><td>23</td><td>hh_022_pwa__hairs_060<br><em>hh_022_pwa__hairs_060_cyberware_01</em></td><td>hh_022_pma__hairs_047<br><em>hh_022_pma__hairs_047_cyberware_01</em></td></tr><tr><td>24</td><td>hh_023_pwa__hairs_064</td><td>hh_023_pma__hairs_048</td></tr><tr><td>25</td><td>hh_024_pwa__hairs_068</td><td>hh_024_pma__hairs_058</td></tr><tr><td>26</td><td>hh_025_pwa__hairs_081</td><td>hh_025_pma__hairs_060<br><em>hh_025_pma__hairs_060_cyberware_01</em></td></tr><tr><td>27</td><td>hh_027_pwa__hairs_083_straight_01<br>hh_035_pwa__hairs_083_braid_01</td><td>hh_026_pma__hairs_061</td></tr><tr><td>28</td><td>hh_027_pwa__hairs_083_straight_01<br>hh_026_pwa__hairs_083_bulb_01</td><td>hh_027_pma__hairs_065</td></tr><tr><td>29</td><td>hh_028_pwa__hairs_077</td><td>hh_028_pma__hairs_068</td></tr><tr><td>30</td><td>hh_029_pwa__hairs_088</td><td>hh_029_pma__hairs_073</td></tr><tr><td>31</td><td>hh_030_pwa__hairs_118</td><td>hh_030_pma__hairs_082<br><em>hh_030_pma__hairs_082_cyberware_01</em></td></tr><tr><td>32</td><td>hh_031_pwa__hairs_115</td><td>hh_031_pma__hairs_089<br><em>hh_031_pma__hairs_089_cyberware_01</em></td></tr><tr><td>33</td><td>hh_032_pwa__hairs_121</td><td>bhh_032_pma__hairs_103</td></tr><tr><td>34</td><td>hh_033_pwa__hairs_151<br><em>hh_033_pwa__hairs_151_cyberware_01</em></td><td>hh_033_pma__hairs_120<br><em>hh_033_pma__hairs_120_cyberware_01</em></td></tr><tr><td>35</td><td>hh_034_pwa__hairs_006<br><em>hh_034_pwa__hairs_006_cyberware_01</em></td><td>hh_034_pma__hairs_007<br><em>hh_034_pma__hairs_007_cyberware_01</em></td></tr><tr><td>36</td><td>hh_083_wa__ponytail_bulb_01</td><td>hh_035_pma__hairs_112</td></tr><tr><td>37</td><td>hh_036_pwa__hairs_093</td><td>hh_036_pma__hairs_113</td></tr><tr><td>38</td><td>hh_038_pwa__hairs_085</td><td><p>hh_000_pma__hairs_045</p><p><em>hh_000_pma__hairs_045_cyberware_01</em></p></td></tr><tr><td>39</td><td>hh_039_pwa__hairs_054<br>hh_039_pwa__hairs_054_cyberware_01</td><td>hh_039_pma__hairs_094</td></tr><tr><td>40</td><td>hh_040_pwa__hairs_049</td><td>hh_040_pma__hairs_049</td></tr><tr><td>41</td><td>hh_041_pwa__hairs_039<br><em>hh_041_pwa__hairs_039_cyberware_01</em></td><td>hh_041_pma__hairs_122</td></tr><tr><td>42</td><td>hh_042_pwa__hairs_103</td><td>hh_042_pma__hairs_093</td></tr><tr><td>43</td><td>hh_043_pwa__hairs_106</td><td>hh_043_pma__hairs_006</td></tr><tr><td>44</td><td>hh_044_pwa__hairs_140<br><em>hh_044_pwa__hairs_140_cyberware_01</em></td><td>hh_044_pma__hairs_140<br><em>hh_044_pma__hairs_140_cyberware_01</em></td></tr><tr><td>45</td><td>hh_045_pwa__hairs_141</td><td>hh_045_pma__hairs_141</td></tr><tr><td>46</td><td>hh_046_pwa__hairs_142<br><em>hh_046_pwa__hairs_142_cyberware_01</em></td><td>hh_046_pma__hairs_142<br><em>hh_046_pma__hairs_142_cyberware_01</em></td></tr><tr><td>47</td><td>hh_047_pwa__hairs_143<br><em>hh_047_pwa__hairs_143_cyberware_01</em></td><td>hh_047_pma__hairs_143<br><em>hh_047_pma__hairs_143_cyberware_01</em></td></tr><tr><td>48</td><td>hh_048_pwa__hairs_144<br><em>hh_048_pwa__hairs_144_cyberware_01</em></td><td>hh_048_pma__hairs_144<br><em>hh_048_pma__hairs_144_cyberware_01</em></td></tr><tr><td>49</td><td>hh_049_pwa__hairs_146<br><em>hh_049_pwa__hairs_146_cyberware_01</em></td><td>hh_049_pma__hairs_146<br><em>hh_049_pma__hairs_146_cyberware_01</em></td></tr><tr><td>50</td><td>hh_013_pwa__hairs_999<br><em>hh_013_pwa__hairs_999_cyberware_01</em></td><td>hh_050_pma__hairs_999<br><em>hh_050_pma__hairs_999_cyberware_01</em></td></tr></tbody></table>
 
-
-
 ## Beards
 
-Beards are only used by mascV. Their entity files can be found in this folder:&#x20;
+Beards are only used by mascV. Their entity files can be found in this folder:
 
 ```
 base\characters\head\player_base_heads\appearances\entity\facial_hairs\
@@ -126,13 +122,13 @@ base\characters\head\player_base_heads\player_man_average
 
 ### Beard component names
 
-Any beard uses the same two components, `beard` and `beard_shadow_01`.&#x20;
+Any beard uses the same two components, `beard` and `beard_shadow_01`.
 
 Beard 01 will **only** use the shadowbase.
 
 ## Cyberware\_01
 
-For `cyberware_01`, an additional mask file is used to block out parts of the hair cap in favour of the cyberware lines:&#x20;
+For `cyberware_01`, an additional mask file is used to block out parts of the hair cap in favour of the cyberware lines:
 
 ```
 base\characters\common\character_customisation_items\cyberware\face\textures\hh_cyberware_cap_mask_01.xbm

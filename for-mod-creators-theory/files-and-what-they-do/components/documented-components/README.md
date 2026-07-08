@@ -18,12 +18,12 @@ The [#entskinnedclothcomponent](./#entskinnedclothcomponent "mention")'s physics
 
 ### Shared properties of mesh components
 
-| [depotPath](./#depotpath)              | Loads a [.mesh](../../file-formats/3d-objects-.mesh-files)                                                                                                 |
-| -------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [chunkMask](./#chunkmask)              | Defines visibility of individual submeshes                                                                                                                 |
-| meshAppearance                         | Selects an entry from the mesh's [appearances](../../file-formats/3d-objects-.mesh-files#step-1-appearances) array                                         |
-| <p>castShadows<br>castLocalShadows</p> | Enables/disables [real-time shadows](../../file-formats/3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md#generated-shadows-component-properties) |
-| forceLODLevel                          | Force [level-of-detail-lod.md](../../level-of-detail-lod.md "mention")                                                                                     |
+| [depotPath](./#depotpath)              | Loads a [.mesh](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files)                                                         |
+| -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [chunkMask](./#chunkmask)              | Defines visibility of individual submeshes                                                                                                                                                                                                 |
+| meshAppearance                         | Selects an entry from the mesh's [appearances](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-1-appearances) array |
+| <p>castShadows<br>castLocalShadows</p> | Enables/disables [real-time shadows](../../file-formats/3d-objects-.mesh-files/meshes-shadows-and-shadow-meshes.md#generated-shadows-component-properties)                                                                                 |
+| forceLODLevel                          | Force [level-of-detail-lod.md](../../level-of-detail-lod.md "mention")                                                                                                                                                                     |
 
 ### Documented mesh component types
 
@@ -31,7 +31,7 @@ The [#entskinnedclothcomponent](./#entskinnedclothcomponent "mention")'s physics
 
 <summary>entGarmentSkinnedMeshComponent</summary>
 
-This type of component supports **path substitution**, as long as they are loaded via [entity-.ent-files](../../file-formats/entity-.ent-files#mesh-component-entity-simple-entity "mention") and the depotPath's `Flag` is set to `Soft` (see [archivexl-suffixes-and-substitutions.md](../../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") for more detail).\
+This type of component supports **path substitution**, as long as they are loaded via [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity "mention") and the depotPath's `Flag` is set to `Soft` (see [archivexl-suffixes-and-substitutions.md](../../../core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md "mention") for more detail).\
 Can otherwise be used interchangeably with `entSkinnedMeshComponent`.
 
 This is the good kind of mesh component, the one that will work without trouble, as opposed to [entSkinnedClothComponent](./#entskinnedclothcomponent).

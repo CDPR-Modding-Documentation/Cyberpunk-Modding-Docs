@@ -35,7 +35,7 @@ You can check out nullfractal's [github template](https://github.com/nullfrctl/R
 
 {% tabs %}
 {% tab title="NVIDIA Texture Tools Exporter" %}
-You can't download the NVIDIA texture tools from the [official website](https://developer.nvidia.com/nvidia-texture-tools-exporter) without an **NVIDIA account** that participates in the **developer program**. We've put a backup of the executable on the wiki's [github repository](../../../_resources_and_assets/tools/NVIDIA_Texture_Tools_2023.2.0.zip) — you need to decide which is the lesser evil, yet another account or downloading a random .exe from the internet.
+You can't download the NVIDIA texture tools from the [official website](https://developer.nvidia.com/nvidia-texture-tools-exporter) without an **NVIDIA account** that participates in the **developer program**. We've put a backup of the executable on the wiki's [github repository](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/_resources_and_assets/tools/NVIDIA_Texture_Tools_2023.2.0.zip) — you need to decide which is the lesser evil, yet another account or downloading a random .exe from the internet.
 {% endtab %}
 
 {% tab title="DaVinci Resolve" %}

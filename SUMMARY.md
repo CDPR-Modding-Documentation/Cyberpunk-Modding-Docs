@@ -461,7 +461,7 @@
     * [Features and guides](modding-guides/world-editing/object-spawner/features-and-guides/README.md)
       * [Adding custom resources / props](modding-guides/world-editing/object-spawner/features-and-guides/adding-custom-resources-props.md)
       * [Randomized Nested Groups](modding-guides/world-editing/object-spawner/features-and-guides/randomized-nested-groups.md)
-      * [Creating Sector Variants](modding-guides/world-editing/object-spawner/features-and-guides/creating-sector-variants/README.md)
+      * [Creating Sector Variants](modding-guides/world-editing/object-spawner/features-and-guides/creating-sector-variants.md)
         * [Sector Variants Practical Example & Project](modding-guides/world-editing/object-spawner/features-and-guides/creating-sector-variants/sector-variants-practical-example-and-project.md)
       * [Brush painting](modding-guides/world-editing/object-spawner/features-and-guides/brush-painting.md)
       * [Entity Instance Data](modding-guides/world-editing/object-spawner/features-and-guides/entity-instance-data.md)

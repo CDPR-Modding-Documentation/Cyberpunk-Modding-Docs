@@ -174,7 +174,7 @@ This is where you **enable** the feature by adding the tag **`DynamicAppearance`
 <figure><img src="../../../../.gitbook/assets/dynamic_variants_enable_feature.png" alt=""><figcaption><p>It's <strong><code>DynamicAppearance</code>, without S.</strong></p></figcaption></figure>
 
 {% hint style="warning" %}
-For dynamic appearances, your `root_entity` file will contain **one entry**. You can give every item [its own root entity](../../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity), or share a file across the mod.
+For dynamic appearances, your `root_entity` file will contain **one entry**. You can give every item [its own root entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity), or share a file across the mod.
 {% endhint %}
 
 The appearance name in the root entity corresponds to the `appearanceName` property in the `.yaml` without the variant:
@@ -201,7 +201,7 @@ You can define appearances for different circumstances by changing the appearanc
 
 In the context of our example project, this means that you can define your **appearances** like this:
 
-<table><thead><tr><th width="450">Appearance name</th><th>Explanation</th></tr></thead><tbody><tr><td><code>app_file_dynamic_appearance</code></td><td>Your regular appearance. Is displayed when none of the conditional ones apply.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;camera=tpp</code></td><td>This is only active in third person perspective. The item will be completely invisible in first person.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;camera=fpp</code></td><td>This becomes active whenever you are in first person perspective. You'll usually want this to<a href="../../first-person-perspective-fixes.md#problem-2-its-in-your-face-juststormtrooperthings"> remove the mesh from your face</a> via <a href="../../../../for-mod-creators/files-and-what-they-do/appearance-.app-files#partsoverrides">partsOverrides</a>.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;gender=male</code></td><td>You shouldn't do this — instead, use <a data-mention href="dynamic-appearances-understanding-the-process.md#substitutions">#substitutions</a> in the mesh file path.</td></tr></tbody></table>
+<table><thead><tr><th width="450">Appearance name</th><th>Explanation</th></tr></thead><tbody><tr><td><code>app_file_dynamic_appearance</code></td><td>Your regular appearance. Is displayed when none of the conditional ones apply.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;camera=tpp</code></td><td>This is only active in third person perspective. The item will be completely invisible in first person.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;camera=fpp</code></td><td>This becomes active whenever you are in first person perspective. You'll usually want this to<a href="../../first-person-perspective-fixes.md#problem-2-its-in-your-face-juststormtrooperthings"> remove the mesh from your face</a> via <a href="https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/appearance-.app-files#partsoverrides">partsOverrides</a>.</td></tr><tr><td><code>app_file_dynamic_appearance&#x26;gender=male</code></td><td>You shouldn't do this — instead, use <a data-mention href="dynamic-appearances-understanding-the-process.md#substitutions">#substitutions</a> in the mesh file path.</td></tr></tbody></table>
 
 ### The mesh\_entity
 

@@ -21,7 +21,7 @@ It will walk you through the following:
 
 [#step-1-cutting-the-decal-mesh](adding-decals.md#step-1-cutting-the-decal-mesh "mention")
 
-1. Adding it to the [mesh entity](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity)
+1. Adding it to the [mesh entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity)
 2. Setting up the material
 
 ### Wait, this is not what I want!
@@ -253,7 +253,7 @@ After successfully importing your new submesh into Wolvenkit and open it.
 
 ### Appearances
 
-First, we need to add your new chunk to each of your [appearances](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-1-appearances). For this example, we will use the material `decal`.
+First, we need to add your new chunk to each of your [appearances](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#step-1-appearances). For this example, we will use the material `decal`.
 
 1. Find the `appearances` array at the top of the file and expand it.
 2. Under each appearance, find the `chunkMaterials` array and expand it.
@@ -263,7 +263,7 @@ First, we need to add your new chunk to each of your [appearances](../../../for-
 
 ### Material definition
 
-If you save your mesh now, file validation will complain that the `decal` material doesn't exist. It's right; we haven't added a [material definition](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-entry) yet. Let's do that.
+If you save your mesh now, file validation will complain that the `decal` material doesn't exist. It's right; we haven't added a [material definition](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#material-entry) yet. Let's do that.
 
 1. Find the `materialEntries` array inside your mesh and duplicate the last entry
 2. Change its `name` to `decal`
@@ -274,7 +274,7 @@ If you save your mesh now, file validation will complain that the `decal` materi
 
 ### Material instance
 
-Now that our chunk knows which material it's supposed to look up, we need to provide [the actual material](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#materialinstance-the-local-material).
+Now that our chunk knows which material it's supposed to look up, we need to provide [the actual material](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files#materialinstance-the-local-material).
 
 1. Find the array `localMaterialBuffer`
 2. Find the array `materials` (directly underneath)

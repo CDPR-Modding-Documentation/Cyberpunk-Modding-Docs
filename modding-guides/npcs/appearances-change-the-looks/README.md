@@ -44,11 +44,11 @@ Links will give you additional context. If you can complete the guide without th
 If you want to edit (or add) photo mode appearances, you need to change the [photo mode files](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-photo-mode.md) instead!
 {% endhint %}
 
-This section will show you how to find an NPC's [.app file](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files), which you will add to your project. We do this by finding the NPC's [.ent file](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity), since it will be linked in there.
+This section will show you how to find an NPC's [.app file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files), which you will add to your project. We do this by finding the NPC's [.ent file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity), since it will be linked in there.
 
 ### The .ent file
 
-The NPC's [root entity file](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity) is the entry point for the game. It defines an NPC's appearances, linking them to the actual definitions inside the corresponding [.app file](./#the-.app-file).
+The NPC's [root entity file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity) is the entry point for the game. It defines an NPC's appearances, linking them to the actual definitions inside the corresponding [.app file](./#the-.app-file).
 
 {% hint style="info" %}
 You don't need to add this file to your project (and if you do it by accident, you should delete it later). For details, see [amm-custom-npc-appearances.md](../amm-custom-npcs/amm-custom-npc-appearances.md "mention").

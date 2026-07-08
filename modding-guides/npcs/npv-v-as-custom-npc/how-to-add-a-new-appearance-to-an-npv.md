@@ -32,12 +32,12 @@ You can think of it like a Mr. Potato Head or Barbie doll. The `component`s are 
 #### The .ent file
 
 A list of appearances for any given entity. Every name points to an `.app` file and an associated appearancce.\
-&#xNAN;_&#x59;ou can (but don't have to) read more about it here:_ [entity-.ent-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/ "mention")
+\&#xNAN;_You can (but don't have to) read more about it here:_ [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files "mention")
 
 #### The .app file
 
 A list of appearances with their associated components. This file tells the game what to load when spawning the character.\
-&#xNAN;_&#x59;ou can (but don't have to) read more about it here_ [appearance-.app-files](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/ "mention")
+\&#xNAN;_You can (but don't have to) read more about it here_ [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files "mention")
 
 Most of the work takes place here, and this is where we'll start.
 
@@ -59,7 +59,7 @@ You may still need files from certain texture frameworks, but you’ll find that
 You can learn more about this on out the[custompathing-assets.md](../../items-equipment/custompathing-assets.md "mention") page.
 {% endhint %}
 
-Custom pathing is the process of moving files/folders into a unique place so that they don't influence existing mods or game files.&#x20;
+Custom pathing is the process of moving files/folders into a unique place so that they don't influence existing mods or game files.
 
 For example: We're both have Arthe's Universal Skin Tone installed, but your NPV uses a different skin tone from my V. If you do not custompath your file, one of the two will have the wrong skin tone on my computer.
 

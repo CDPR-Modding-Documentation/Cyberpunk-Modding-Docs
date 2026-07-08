@@ -6,7 +6,7 @@ description: Which body parts are where?
 
 ## Summary
 
-**Last documented edit**: January 06 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit**: January 06 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page lists various properties of the player body. Use the Table of Contents or your browser's search (Hotkey: `Ctrl+F`) to quickly find what you're looking for. Any links will lead you to additional context.
 
@@ -70,7 +70,7 @@ For a list of [#skin-tones-by-index](cheat-sheet-head/#skin-tones-by-index "ment
 
 Skin materials are defined in the individual body files. For their paths, see [#player-base-body](cheat-sheet-body.md#player-base-body "mention").
 
-You can find the [definitions](../files-and-what-they-do/3d-objects-.mesh-files#step-3-material-definition) in the localMaterialBuffer. Each material overrides the following properties locally:
+You can find the [definitions](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files#step-3-material-definition) in the localMaterialBuffer. Each material overrides the following properties locally:
 
 * Normal (bump/height map)
 * Albedo (diffuse/complexion)

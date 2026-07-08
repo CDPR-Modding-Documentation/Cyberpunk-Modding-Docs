@@ -6,7 +6,7 @@ description: How to make your own custom ads
 
 #### Summary
 
-**Published:** February 04 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Published:** February 04 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented edit:** March 28 by [nremind](https://next.nexusmods.com/profile/nremind)
 
 ### Other guides on this
@@ -16,7 +16,7 @@ You can also check out [xlipstream's guide on Nexus](https://www.nexusmods.com/c
 ## Step 0: Create a Wolvenkit project
 
 1. Create a [Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects#create-a-new-wolvenkit-mod-project) for your mod.
-2. Download the Wolvenkit template project from [github](../../_example_mods_and_templates/world/advertising/ad_replacers_full__wolvenkit_source.zip). Download the zip file to your computer:
+2. Download the Wolvenkit template project from [github](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/_example_mods_and_templates/world/advertising/ad_replacers_full__wolvenkit_source.zip). Download the zip file to your computer:
 
 <figure><img src="../../.gitbook/assets/download_from_github.png" alt=""><figcaption></figcaption></figure>
 

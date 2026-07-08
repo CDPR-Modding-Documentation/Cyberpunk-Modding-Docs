@@ -19,7 +19,7 @@ This page contains **theory** about Cyberpunk's armature files.
 
 ## What's a rig?
 
-A `rig` (also `armature`, the terms will be used interchangeable) is the **skeleton structure** used to control and animate [`meshes`](3d-objects-.mesh-files).
+A `rig` (also `armature`, the terms will be used interchangeable) is the **skeleton structure** used to control and animate [`meshes`](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files).
 
 Each armature is a hierarchical connection of bones (similar to a meatspace skeleton — the foot bone's connected to the leg bone).
 

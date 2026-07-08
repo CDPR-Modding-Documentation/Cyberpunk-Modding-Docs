@@ -5,7 +5,7 @@
 **Published:** ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** 22 May 2026 by LadyLea
 
-This page will tell you about **tags** and how they can be used to influence item behaviour. It also teaches you how [#adding-custom-tags](archivexl-tags.md#adding-custom-tags "mention") can help you conditionally un-hide  / hide items or add new features.
+This page will tell you about **tags** and how they can be used to influence item behaviour. It also teaches you how [#adding-custom-tags](archivexl-tags.md#adding-custom-tags "mention") can help you conditionally un-hide / hide items or add new features.
 
 ### Wait, this is not what I want!
 
@@ -47,22 +47,22 @@ Tags are case-sensitive!
 * Check the [#root-entity-tags](archivexl-tags.md#root-entity-tags "mention") section below for more tags
 {% endhint %}
 
-| Tag                 | Effect                                                                                                                                                                                                                             |
-| ------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `hide_Head`         | Hides head.                                                                                                                                                                                                                        |
-| `hide_Torso`        | Hides the whole torso (0, 1, 2)                                                                                                                                                                                                    |
-| `hide_LowerAbdomen` | Hides lower abdomen. (3)                                                                                                                                                                                                           |
-| `hide_UpperAbdomen` | Hides upper abdomen. (2)                                                                                                                                                                                                           |
-| `hide_CollarBone`   | Hides collar bone area. (1)                                                                                                                                                                                                        |
-| `hide_Arms`         | Hides the whole arms, including hands. (There's [no easy way to partially hide arms](../../references-lists-and-overviews/cheat-sheet-body.md#arms), you would have to [create custom tags](archivexl-tags.md#adding-custom-tags)) |
-| `hide_Thighs`       | Hides thighs. (4)                                                                                                                                                                                                                  |
-| `hide_Calves`       | Hides calves. (5)                                                                                                                                                                                                                  |
-| `hide_Ankles`       | Hides ankles. (6)                                                                                                                                                                                                                  |
-| `hide_Feet`         | Hides feet. (7)                                                                                                                                                                                                                    |
-| `hide_Legs`         | Hides the entire legs (including feet, 4, 5, 6, 7)                                                                                                                                                                                 |
-| `HighHeels`         | Turns the current (shoe) item into high heels. (Item's yaml `$base` must be a foot item)                                                                                                                                           |
-| `FlatShoes`         | Turns the current (shoe) item into flat shoes. (Item's yaml `$base` must be a foot item)                                                                                                                                           |
-| `AppearanceParts`   | Goes into the .app file. Enables [partsValues](../../files-and-what-they-do/file-formats/appearance-.app-files#partsvalues) for non-player-equipment                                                                               |
+| Tag                 | Effect                                                                                                                                                                                                                                                |
+| ------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `hide_Head`         | Hides head.                                                                                                                                                                                                                                           |
+| `hide_Torso`        | Hides the whole torso (0, 1, 2)                                                                                                                                                                                                                       |
+| `hide_LowerAbdomen` | Hides lower abdomen. (3)                                                                                                                                                                                                                              |
+| `hide_UpperAbdomen` | Hides upper abdomen. (2)                                                                                                                                                                                                                              |
+| `hide_CollarBone`   | Hides collar bone area. (1)                                                                                                                                                                                                                           |
+| `hide_Arms`         | Hides the whole arms, including hands. (There's [no easy way to partially hide arms](../../references-lists-and-overviews/cheat-sheet-body.md#arms), you would have to [create custom tags](archivexl-tags.md#adding-custom-tags))                    |
+| `hide_Thighs`       | Hides thighs. (4)                                                                                                                                                                                                                                     |
+| `hide_Calves`       | Hides calves. (5)                                                                                                                                                                                                                                     |
+| `hide_Ankles`       | Hides ankles. (6)                                                                                                                                                                                                                                     |
+| `hide_Feet`         | Hides feet. (7)                                                                                                                                                                                                                                       |
+| `hide_Legs`         | Hides the entire legs (including feet, 4, 5, 6, 7)                                                                                                                                                                                                    |
+| `HighHeels`         | Turns the current (shoe) item into high heels. (Item's yaml `$base` must be a foot item)                                                                                                                                                              |
+| `FlatShoes`         | Turns the current (shoe) item into flat shoes. (Item's yaml `$base` must be a foot item)                                                                                                                                                              |
+| `AppearanceParts`   | Goes into the .app file. Enables [partsValues](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files#partsvalues) for non-player-equipment |
 
 ### Base Game Tags and ArchiveXL Tags - Visual Guides
 
@@ -107,7 +107,7 @@ This tag will turn feet invisible for mascV unless the user has switch feet inst
 
 ### Footsteps: Setting footwear sounds
 
-If you don't want your new boots to sound as if V was barefoot, add one of the following tags to the [entity-.ent-files](../../files-and-what-they-do/file-formats/entity-.ent-files#root-entity "mention"):
+If you don't want your new boots to sound as if V was barefoot, add one of the following tags to the [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#root-entity "mention"):
 
 ```
 Boots
@@ -125,7 +125,7 @@ Custom tags let you set [component chunk masks](../../files-and-what-they-do/com
 For this, it is mandatory that you have unique component names. If you include your modder name, it's unlikely that anyone will overwrite them by accident.
 {% endhint %}
 
-### **Why would I need this?** [partsOverrides](../../files-and-what-they-do/file-formats/appearance-.app-files#partsoverrides) **exists!**
+### **Why would I need this?** [partsOverrides](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files#partsoverrides) **exists!**
 
 1. PartsOverrides can't un-hide components for you. It can only hide them. If you want to load a different mesh (for example, a de-formed hakama when wearing a kimono or haori), then you're flat out of luck.
 2. By being clever about your submeshes, you can offer different versions of your mesh (cropped! No arms! No legs), and users only need to install an .xl file! No need to have different meshes or even different .archive files.

@@ -114,7 +114,7 @@ Four **mappings** take place here:
 2. `appearanceName`: In the [root entity](archive-xl-item-structure-explained.md#rootentity.ent) specified in the factory, it will look for an appearance by this name.
 
 {% hint style="info" %}
-The appearance name will only be considered up to the first [suffix](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes). If you want to know what those pesky & things are doing, read up the corresponding documentation.
+The appearance name will only be considered up to the first [suffix](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes). If you want to know what those pesky & things are doing, read up the corresponding documentation.
 
 You don't need to know this unless you **aren't** using [dynamic appearances](archivexl-dynamic-variants/) and want to add variants for different genders or camera perspectives. We're making them go away by putting`appearanceSuffixes: []`.
 {% endhint %}
@@ -127,7 +127,7 @@ You don't need to know this unless you **aren't** using [dynamic appearances](ar
 `$base` defines which slot the item will use. For the full documentation, see "[Different equipment slots](different-equipment-slots.md)".
 
 {% hint style="info" %}
-The inherited properties can cause problems (see "[**Suffixes, and whether you need them**](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes)" for more detail).
+The inherited properties can cause problems (see "[**Suffixes, and whether you need them**](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes)" for more detail).
 
 You don't need to know this unless you want to add variants for different genders or camera perspectives: we're avoiding them by putting`appearanceSuffixes: []`.
 {% endhint %}
@@ -162,7 +162,7 @@ This is how the files connect to each other. If your head explodes now, don't wo
 ### root\_entity.ent
 
 {% hint style="info" %}
-[Would you like to know more?](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity) Full documentation of the root\_entity is on its own page.
+[Would you like to know more?](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity) Full documentation of the root\_entity is on its own page.
 
 Understanding this is not necessary for the purpose of this guide.
 {% endhint %}
@@ -186,7 +186,7 @@ Make sure to add the `DynamicAppearance` tag here.
 Unless you are using [dynamic appearances](archivexl-dynamic-variants/#the-root_entity), the root entity's `name` field is where you would put **suffixes** for different appearance variants.
 
 {% hint style="warning" %}
-You don't need to know [what suffixes are](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes) unless you want to make variants for different genders or camera types. In fact, you will want to skip this until you have a confirmed and working mod!
+You don't need to know [what suffixes are](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#what-are-suffixes) unless you want to make variants for different genders or camera types. In fact, you will want to skip this until you have a confirmed and working mod!
 
 To disable them, each entry in your [.yaml](archive-xl-item-structure-explained.md#the-control-file-yourmodname.yaml) contains the following line:\
 `appearanceSuffixes: []`
@@ -241,7 +241,7 @@ This file holds a collection of components that determine how our equipment item
 {% hint style="info" %}
 **Would you like to know more?**
 
-Full documentation of [mesh\_entity](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity)\
+Full documentation of [mesh\_entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity)\
 The mesh entity for [dynamic appearances](archivexl-dynamic-variants/#the-mesh_entity)\
 More intel on [components](../../../for-mod-creators-theory/files-and-what-they-do/components/)
 
@@ -369,7 +369,7 @@ For our purposes it's enough to say that you can **define** your individual appe
    3. Select the new item, open `values`, and select `MultilayerSetup`.
    4. Set `baseMaterial/DepotPath` to the `.mlsetup` file that you want.
 
-For further information and guides, check [here](../editing-existing-items/changing-materials-colors-and-textures/#step-2-finding-the-correct-appearance) or see [3d-objects-.mesh-files](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention").
+For further information and guides, check [here](../editing-existing-items/changing-materials-colors-and-textures/#step-2-finding-the-correct-appearance) or see [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention").
 
 ## The final result
 

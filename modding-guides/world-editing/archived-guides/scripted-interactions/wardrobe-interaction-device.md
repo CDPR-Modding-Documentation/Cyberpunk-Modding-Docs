@@ -14,18 +14,18 @@ The logic shown here also applies to other similar device _like_ interactions.
 
 ## Requirements
 
-<table><thead><tr><th width="430">Tool/Software</th><th>Version</th></tr></thead><tbody><tr><td>Wolvenkit (<a href="https://github.com/WolvenKit/Wolvenkit/issues">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td><td>≥ 8.16.1 for Cyberpunk 2.21</td></tr><tr><td>Object Spawner (<a data-mention href="broken-reference">Broken link</a>)</td><td>Most recent from Feb 09, 2025</td></tr><tr><td>Visual Studio Code or any IDE to edit lua files</td><td></td></tr></tbody></table>
+<table><thead><tr><th width="430">Tool/Software</th><th>Version</th></tr></thead><tbody><tr><td>Wolvenkit (<a href="https://github.com/WolvenKit/Wolvenkit/issues">stable</a> | <a href="https://github.com/WolvenKit/WolvenKit-nightly-releases/releases">nightly</a>)</td><td>≥ 8.16.1 for Cyberpunk 2.21</td></tr><tr><td>Object Spawner (<a data-mention href="https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/modding-guides/world-editing/archived-guides/scripted-interactions/broken-reference/README.md">https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/modding-guides/world-editing/archived-guides/scripted-interactions/broken-reference/README.md</a>)</td><td>Most recent from Feb 09, 2025</td></tr><tr><td>Visual Studio Code or any IDE to edit lua files</td><td></td></tr></tbody></table>
 
-**Knowledges required :**&#x20;
+**Knowledges required :**
 
 * You know how to [**create a mod**](https://wiki.redmodding.org/wolvenkit/getting-started/creating-a-mod) using Wolvenkit.
-* You know how to[ **spawn objects**](broken-reference) using entSpawner
+* You know how to[ **spawn objects**](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/modding-guides/world-editing/archived-guides/scripted-interactions/broken-reference/README.md) using entSpawner
 * You [downloaded the template](./#download-the-template) that contains all the necessary files
 
 ## Define the position
 
 1. Find the place where you want to add the interaction, this can be anything, an existing wardrobe, a new mesh you add, a secret compartment in the wall, or even in the middle of nowhere.
-2. Using entSpawner, add and position a **Meta** > **Static Marker**:&#x20;
+2. Using entSpawner, add and position a **Meta** > **Static Marker**:
    1. Position the marker where the Wardrobe icon will be displayed ;
    2. Copy the X Y Z position of the marker.
    3. _(Optional)_ You can save the marker in a group to more easily change the position later if you're not happy with where the icon appears. But we won't need to export it.
@@ -34,7 +34,7 @@ The logic shown here also applies to other similar device _like_ interactions.
 
 ## Add the interaction
 
-In the `interactions.lua` file, add your new device interaction inside the `interactions.setupInteractions()` function :&#x20;
+In the `interactions.lua` file, add your new device interaction inside the `interactions.setupInteractions()` function :
 
 ```lua
 local wardrobe = require("modules/devices/wardrobeDevice"):new(1, Vector4.new(1779.53, 2257.57, 183.47, 0.0))
@@ -42,7 +42,7 @@ wardrobe:init()
 ```
 
 The require contains the path to the device.\
-Its instantiation takes 2 parameters:&#x20;
+Its instantiation takes 2 parameters:
 
 1. An ID which must be unique accross all interactions
 2. The icon and interaction coordinates
@@ -60,7 +60,7 @@ If you're working with hot reload, you can change the `interactions.lua` file fr
 Not happy with the interaction range? or the icon visibility range? or the text label?\
 Each interaction device comes with some parameters that you can change to your will.
 
-Default wardrobe parameters :&#x20;
+Default wardrobe parameters :
 
 ```lua
 self.detectionAngle = 80
@@ -71,7 +71,7 @@ self.iconColor = HDRColor.new({ Red = 0.15829999744892, Green = 1.3033000230789,
 self.name = GetLocalizedText("LocKey#35138")
 ```
 
-To change these, you can set their value before initializing the interaction, like so :&#x20;
+To change these, you can set their value before initializing the interaction, like so :
 
 ```lua
 local wardrobe = require("modules/devices/wardrobeDevice"):new(1, Vector4.new(1779.53, 2257.57, 183.47, 0.0))

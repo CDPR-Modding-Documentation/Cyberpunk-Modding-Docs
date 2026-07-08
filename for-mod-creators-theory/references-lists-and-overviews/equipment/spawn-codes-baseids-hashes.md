@@ -82,7 +82,7 @@ If you can't find any files with the method below, scroll to [#alternative-metho
 <figure><img src="../../../.gitbook/assets/spawn_codes_finding_app.png" alt=""><figcaption><p>Search WolvenKit for the first part of the BaseID</p></figcaption></figure>
 
 2. You should now have at least one .app file, where the item's appearances are defined..\
-   &#xNAN;_&#x54;o learn more about this, check_ [appearance-.app-files](../../files-and-what-they-do/file-formats/appearance-.app-files "mention")_. This is not necessary for this guide._
+   \&#xNAN;_To learn more about this, check_ [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files "mention")_. This is not necessary for this guide._
    * If you have more than one file, hover over them to view their file paths, and pick the one that's inside a `player` folder.
    * If you can't find any files, check [#alternative-methods-of-finding-an-item](spawn-codes-baseids-hashes.md#alternative-methods-of-finding-an-item "mention") below.
 3. Open the .app file (right-click, "Open without adding to project")
@@ -100,7 +100,7 @@ If you can't find any files with the method below, scroll to [#alternative-metho
 <figure><img src="../../../.gitbook/assets/finding_items_mesh_file.png" alt=""><figcaption></figcaption></figure>
 
 5. You want mesh file's `DepotPath`.\
-   \&#xNAN;_You can learn more about_ [3d-objects-.mesh-files](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention")_, but it's not necessary for this guide_
+   \&#xNAN;_You can learn more about_ [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention")_, but it's not necessary for this guide_
 
 <figure><img src="../../../.gitbook/assets/finding_items_mesh_appearance.png" alt=""><figcaption><p>While basic_01 uses the default appearance, this one uses <strong>bbstripes</strong></p></figcaption></figure>
 

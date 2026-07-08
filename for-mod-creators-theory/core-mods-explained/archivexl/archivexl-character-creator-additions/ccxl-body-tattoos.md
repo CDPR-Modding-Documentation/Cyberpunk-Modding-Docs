@@ -79,7 +79,7 @@ If you want to tweak the parameters, make sure to edit this file (we will look a
 <div align="left"><figure><img src="../../../../.gitbook/assets/image (260).png" alt=""><figcaption></figcaption></figure></div>
 
 {% hint style="info" %}
-You can learn more about meshes and materials on the [3d-objects-.mesh-files](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") page, and about .mi files under [re-using-materials-.mi.md](../../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention").
+You can learn more about meshes and materials on the [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention") page, and about .mi files under [re-using-materials-.mi.md](../../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention").
 
 This is not necessary for the purpose of this tutorial.
 {% endhint %}

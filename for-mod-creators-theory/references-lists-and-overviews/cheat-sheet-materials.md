@@ -20,12 +20,12 @@ More and detailed information can be found under [configuring-materials](../mate
 
 * How it works in the abstract: [materials](../materials/ "mention")
 * Re-using materials as templates: [re-using-materials-.mi.md](../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention")
-* How it works in the example: [3d-objects-.mesh-files](../files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention")
+* How it works in the example: [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention")
 
 #### Multilayered
 
 * General information: [multilayered](../materials/multilayered/ "mention")
-* Properties and definition: [broken-reference](broken-reference/ "mention")
+* Properties and definition: [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/references-lists-and-overviews/broken-reference/README.md](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/references-lists-and-overviews/broken-reference/README.md "mention")
 * Preview images: [multilayered-previews.md](../materials/multilayered/multilayered-previews.md "mention")
 
 #### Hands-on:
@@ -127,10 +127,10 @@ See [emissive-material-properties.md](../materials/configuring-materials/emissiv
 
 ### Holo Shaders
 
-| material                        | description                                                                                                                   |
-| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
-| `base\fx\_shaders\hologram.mt`  | Holo material ([example .mi](../../_example_mods_and_templates/material_templates/holo/hologram_material_template.mi))        |
-| `base\fx\_shaders\holo_mask.mt` | Special effect material that transforms a mesh into a hologram. Can use a custom texture for decal and is color controllable. |
+| material                        | description                                                                                                                                                                                     |
+| ------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `base\fx\_shaders\hologram.mt`  | Holo material ([example .mi](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/_example_mods_and_templates/material_templates/holo/hologram_material_template.mi)) |
+| `base\fx\_shaders\holo_mask.mt` | Special effect material that transforms a mesh into a hologram. Can use a custom texture for decal and is color controllable.                                                                   |
 
 ### Blackbody Shaders
 
@@ -186,7 +186,7 @@ For a full documentation of this material, check [glass-material-properties.md](
 
 For a full documentation of this material, check [glass-material-properties.md](../materials/configuring-materials/glass-material-properties.md "mention") -> [#see-through-cloth](../materials/configuring-materials/glass-material-properties.md#see-through-cloth "mention")
 
-<table><thead><tr><th width="344"></th><th></th></tr></thead><tbody><tr><td>base\materials\glass_onesided.mt</td><td>take from mana's <a href="https://www.nexusmods.com/cyberpunk2077/mods/13447">Barong Tagalog</a> mod, <code>manavortex\clothing\torso\barong_tagalog\meshes\pma__barong__base_body.mesh</code> or <a href="../../_example_mods_and_templates/material_templates/transparent/transparent_cloth.mi">download the .mi file</a></td></tr></tbody></table>
+<table><thead><tr><th width="344"></th><th></th></tr></thead><tbody><tr><td>base\materials\glass_onesided.mt</td><td>take from mana's <a href="https://www.nexusmods.com/cyberpunk2077/mods/13447">Barong Tagalog</a> mod, <code>manavortex\clothing\torso\barong_tagalog\meshes\pma__barong__base_body.mesh</code> or <a href="https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/_example_mods_and_templates/material_templates/transparent/transparent_cloth.mi">download the .mi file</a></td></tr></tbody></table>
 
 ## Liquid materials
 

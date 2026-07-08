@@ -11,7 +11,7 @@ This page lists various properties of the player head. Use the Table of Contents
 
 ### Wait, this isn't what I'm looking for!
 
-* If you want to [edit the player's head](../../../modding-guides/npcs/a-new-head-for-v.md), you need [meshes](../../files-and-what-they-do/3d-objects-.mesh-files) and [morphtargets](../../3d-modelling/morphtargets.md).
+* If you want to [edit the player's head](../../../modding-guides/npcs/a-new-head-for-v.md), you need [meshes](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files) and [morphtargets](../../3d-modelling/morphtargets.md).
 * If you want to make a custom NPC, check [npv-v-as-custom-npc](../../../modding-guides/npcs/npv-v-as-custom-npc/ "mention")
 * You can find additional information about the player head under [npv-preparing-the-head-in-blender.md](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention")
 
@@ -54,7 +54,7 @@ Skin materials are defined in the base head `.mesh` file (while the shape comes 
 
 <table><thead><tr><th width="130.333251953125">body gender</th><th></th></tr></thead><tbody><tr><td>female</td><td><code>base\characters\head\player_base_heads\player_female_average\h0_000_pwa_c__basehead\h0_000_pwa_c__basehead.mesh</code></td></tr><tr><td>male</td><td><code>base\characters\head\player_base_heads\player_man_average\h0_000_pma_c__basehead\h0_000_pma_c__basehead.mesh</code></td></tr></tbody></table>
 
-You can find the [definitions](../../files-and-what-they-do/3d-objects-.mesh-files#step-3-material-definition) in the localMaterialBuffer. Each material overrides the following [properties](../../materials/configuring-materials/#checking-material-properties) locally:
+You can find the [definitions](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files#step-3-material-definition) in the localMaterialBuffer. Each material overrides the following [properties](../../materials/configuring-materials/#checking-material-properties) locally:
 
 * Normal (bump/height map)
 * Albedo (diffuse/complexion)

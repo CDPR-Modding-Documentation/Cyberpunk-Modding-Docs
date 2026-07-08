@@ -32,7 +32,7 @@ Your mesh casts an actual shadow.
 The real-time shadow will be extremely detailed, but it can impact **performance**, and it can glitch out or cause spectacular raytracing bugs. [#proxy-shadows-shadow-mesh](meshes-shadows-and-shadow-meshes.md#proxy-shadows-shadow-mesh "mention")es avoid these issues.
 {% endhint %}
 
-You activate real-time shadows by checking the following properties in your [mesh component](../../components/documented-components/#equipment-hair) (which you can find in your [.app](../appearance-.app-files#components) or [.ent](../entity-.ent-files#mesh-component-entity-simple-entity) file):
+You activate real-time shadows by checking the following properties in your [mesh component](../../components/documented-components/#equipment-hair) (which you can find in your [.app](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files#components) or [.ent](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity) file):
 
 <figure><img src="../../../../.gitbook/assets/mesh_shadow_component_properties.png" alt=""><figcaption></figcaption></figure>
 

@@ -78,7 +78,7 @@ Imagine you want to hide the helmet's glowing parts (because you are being steal
 
 That's why CDPR came up with **chunkmasks**.
 
-The mesh is loaded via [**component**](../../components/) in an [.ent](../entity-.ent-files#mesh-component-entity-simple-entity) or [.app](../appearance-.app-files#components) file. Here, you will find the `chunkMask` attribute, which looks like this:
+The mesh is loaded via [**component**](../../components/) in an [.ent](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity) or [.app](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files#components) file. Here, you will find the `chunkMask` attribute, which looks like this:
 
 <figure><img src="../../../../.gitbook/assets/chunkmask.png" alt=""><figcaption><p>Set this to 0 to completely hide all parts of a mesh.</p></figcaption></figure>
 
@@ -117,7 +117,7 @@ If a submesh name does not end in LOD1, that means it's intended for **lower res
 By default, Wolvenkit [removes](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#lod-filter-default) these low-resolution meshes on export, since you don't normally want them for modded characters or items.
 
 {% hint style="info" %}
-Under [the-whole-world-.streamingsector](../the-whole-world-.streamingsector "mention"), you can find an explanation of how cyberpunk handles world sector Level of Detail (LOD).
+Under [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector "mention"), you can find an explanation of how cyberpunk handles world sector Level of Detail (LOD).
 {% endhint %}
 
 [^1]: AppearanceCreatorMod, an AMM addon

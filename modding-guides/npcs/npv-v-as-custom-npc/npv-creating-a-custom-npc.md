@@ -126,7 +126,7 @@ tutorial\npv\your_male_character\_your_male_character.ent
 ```
 
 {% hint style="info" %}
-[Would you like to know more?](../../../for-mod-creators-theory/files-and-what-they-do/entity-.ent-files#root-entity) (You don't need any of this information to finish the guide.)
+[Would you like to know more?](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/entity-.ent-files#root-entity) (You don't need any of this information to finish the guide.)
 {% endhint %}
 
 The root entity hooks up your .app file and the appearance names in the .lua file, and that's about everything there is to say about it. Here's how it looks:
@@ -148,7 +148,7 @@ Let's look at the .app file now.
 {% hint style="info" %}
 You can find a more detailed guide about adding stuff to .app files under [appearances-change-the-looks](../appearances-change-the-looks/ "mention"). It's optional, unless you're really stuck.
 
-[Do you want to know more?](../../../for-mod-creators-theory/files-and-what-they-do/appearance-.app-files) (You don't need any of this information to finish the guide.)
+[Do you want to know more?](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/appearance-.app-files) (You don't need any of this information to finish the guide.)
 {% endhint %}
 
 This section will tell you how to edit your NPV's appearance – their skin colour, chrome, piercings, tattoos. We will do this in the .app file.

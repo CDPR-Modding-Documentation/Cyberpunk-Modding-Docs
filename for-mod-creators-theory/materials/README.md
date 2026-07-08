@@ -14,12 +14,12 @@ Check the section's sub pages in the wiki's navigation tree for more detailed in
 
 * Handy list of references: [cheat-sheet-materials.md](../references-lists-and-overviews/cheat-sheet-materials.md "mention")
 * Re-using materials as templates: [re-using-materials-.mi.md](../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md "mention")
-* How it works in the example: [3d-objects-.mesh-files](../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention")
+* How it works in the example: [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention")
 
 #### Multilayered
 
 * General information: [multilayered](multilayered/ "mention")
-* Properties and definition: [broken-reference](broken-reference/ "mention")
+* Properties and definition: [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/materials/broken-reference/README.md](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/materials/broken-reference/README.md "mention")
 * Preview images: [multilayered-previews.md](multilayered/multilayered-previews.md "mention")
 
 #### Hands-on:
@@ -30,7 +30,7 @@ Check the section's sub pages in the wiki's navigation tree for more detailed in
 
 ## Definition: Shader
 
-In its original state, a [3d-objects-.mesh-files](../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention") is a collection of **vertices** (pixels). The space between those vertices is filled by **faces**, which form the 3d object's surface.
+In its original state, a [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention") is a collection of **vertices** (pixels). The space between those vertices is filled by **faces**, which form the 3d object's surface.
 
 The shader is the thing that goes on top of the surface, rendering a **material** such as glass, skin, concrete, steel…
 
@@ -50,10 +50,10 @@ Not every parameter of a shader can be configured: since skin always has subsurf
 ## Definition: Material
 
 {% hint style="info" %}
-For details how materials are used on a mesh, see the [3d-objects-.mesh-files](../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention"), or learn how materials can be defined in a mesh via [3d-objects-.mesh-files](../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#materialinstance-the-local-material "mention") or loaded externally from
+For details how materials are used on a mesh, see the [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention"), or learn how materials can be defined in a mesh via [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#materialinstance-the-local-material](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#materialinstance-the-local-material "mention") or loaded externally from
 {% endhint %}
 
-**In the context of Cyberpunk**, a material is the thing that lets the shader define the surface properties of a [3d-objects-.mesh-files](../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention"). Typically, you create a local instance, which will then pull in a shader via `baseMaterial`.
+**In the context of Cyberpunk**, a material is the thing that lets the shader define the surface properties of a [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files "mention"). Typically, you create a local instance, which will then pull in a shader via `baseMaterial`.
 
 The property `baseMaterial` can point at a `.mt` / `.remt` file directly, or to an intermediary `.mi` file:
 
@@ -64,7 +64,7 @@ The property `baseMaterial` can point at a `.mt` / `.remt` file directly, or to 
 {% hint style="info" %}
 Each part of a mesh (submesh) can have a different material assigned.
 
-Do you want to know more? ( =>[3d-objects-.mesh-files](../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#chunkmaterials "mention"))
+Do you want to know more? ( =>[https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#chunkmaterials](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#chunkmaterials "mention"))
 {% endhint %}
 
 {% hint style="success" %}
@@ -93,7 +93,7 @@ This is specific to Cyberpunk, and it is incredibly cool. If you're used to text
 
 {% hint style="success" %}
 * What is a multilayered material and how does [multilayered](multilayered/ "mention") work?
-* What are these [properties](broken-reference/), how do I use them?
+* What are these [properties](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/materials/broken-reference/README.md), how do I use them?
 * [Changing the colours](../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/#multilayered-material)
 * [Changing the mask](../../modding-guides/textures-and-luts/custom-multilayermasks.md)
 {% endhint %}

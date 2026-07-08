@@ -37,7 +37,7 @@ While the multilayered supershader is very common, there are hundreds of other n
 ## Composition
 
 {% hint style="info" %}
-For a list of shader properties in multilayered.mt, see [broken-reference](broken-reference/ "mention")
+For a list of shader properties in multilayered.mt, see [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/materials/multilayered/broken-reference/README.md](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/materials/multilayered/broken-reference/README.md "mention")
 {% endhint %}
 
 The multilayered shader is composed of three distinct parts:
@@ -68,7 +68,7 @@ As shown above, each mesh using the multilayer shader uses a unique **mlmask** f
 To edit .mlsetup files, it's recommended that you use the [mlsetup-builder](../../modding-tools/mlsetup-builder/ "mention") software.
 
 {% hint style="info" %}
-For a definition of the properties, see [broken-reference](broken-reference/ "mention").
+For a definition of the properties, see [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/materials/multilayered/broken-reference/README.md](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/materials/multilayered/broken-reference/README.md "mention").
 
 For a guide on how to edit one, check [r-and-r-colour-editing.md](../../../modding-guides/items-equipment/recolours-and-refits/r-and-r-colour-editing.md "mention").
 {% endhint %}

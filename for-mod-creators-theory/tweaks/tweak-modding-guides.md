@@ -7,7 +7,7 @@ description: Start adding your custom items to the game without replacing
 ## Summary
 
 **Created:** Mar 18 2024 by Bioskop\
-**Last documented update:** Mar 24 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Mar 24 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page links to those guides on our wiki that involve tweak editing. For a collection of all dedicated Tweak guides, please check [tweakxl-changing-game-records](../core-mods-explained/tweakxl/tweakxl-changing-game-records/ "mention")
 
@@ -35,7 +35,7 @@ Adding items is a somewhat involved process. Regardless of what you want to do, 
 
 * [#create-a-new-car](tweak-modding-guides.md#create-a-new-car "mention")
 * [vehicle-record.md](../references-lists-and-overviews/vehicles/vehicle-record.md "mention")
-* [Broken link](broken-reference "mention")
+* [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/tweaks/broken-reference/README.md](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/tweaks/broken-reference/README.md "mention")
 
 ## HUD - UI
 
@@ -49,4 +49,3 @@ Adding items is a somewhat involved process. Regardless of what you want to do, 
 * [tweakxl-changing-game-records](../core-mods-explained/tweakxl/tweakxl-changing-game-records/ "mention")
 * [redmod-tweaks.md](../modding-tools/redmod/redmod-tweaks.md "mention")
 * [adding-items-atelier-integration.md](../../modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md "mention")
-

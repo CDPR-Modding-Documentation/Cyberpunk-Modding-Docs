@@ -13,7 +13,7 @@ While these guides are for specific devices and setups, the information is trans
 
 ## Theory
 
-* Devices in the game are just [entity ](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files/)nodes, which additionally have the option to specify device connections
+* Devices in the game are just [entity ](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files)nodes, which additionally have the option to specify device connections
   * These can be used to e.g. Connect a door terminal to the door it controls
 
 ## Guides

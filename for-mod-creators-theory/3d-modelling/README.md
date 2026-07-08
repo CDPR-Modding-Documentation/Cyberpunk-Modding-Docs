@@ -4,7 +4,7 @@ description: Find knowledge on editing 3d models here
 
 # 3d Modelling
 
-Check the sub-pages for more detes, or check the section's sub-pages.&#x20;
+Check the sub-pages for more detes, or check the section's sub-pages.
 
 ## Relevant guides
 
@@ -26,17 +26,17 @@ For more hands-on advice, see the guide section, for example
 
 ### Mesh
 
-A mesh defines the shape and surface of any in-game object.&#x20;
+A mesh defines the shape and surface of any in-game object.
 
 {% hint style="info" %}
-For more information on .mesh files and how they work, see [3d-objects-.mesh-files](../files-and-what-they-do/file-formats/3d-objects-.mesh-files/ "mention")
+For more information on .mesh files and how they work, see [https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files "mention")
 
 For more informations on **materials** and mesh appearances, see [materials](../materials/ "mention")
 {% endhint %}
 
 ### Morphtarget
 
-Morphtargets are a special kind of mesh used for alternate and additional shapes beyond the static shape a `.mesh` can define. If your source is a `.morphtarget`, you need to primarily work with that rather than the `.mesh`.&#x20;
+Morphtargets are a special kind of mesh used for alternate and additional shapes beyond the static shape a `.mesh` can define. If your source is a `.morphtarget`, you need to primarily work with that rather than the `.mesh`.
 
 {% hint style="info" %}
 Read more on the [morphtargets.md](morphtargets.md "mention") page

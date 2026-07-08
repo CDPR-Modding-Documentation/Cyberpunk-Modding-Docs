@@ -15,8 +15,8 @@ This guide will still work, but [.](./ "mention") shows a faster workflow with t
 
 This guide will teach you how to create AMM props in two variants:
 
-* the old way by using a [mesh entity](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) with a [.mesh](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with only one appearance
-* customizable by chaining a [`root entity`](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity), an [`.app`](../../../for-mod-creators/files-and-what-they-do/appearance-.app-files), and a [`.mesh`](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with multiple appearances
+* the old way by using a [mesh entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) with a [.mesh](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with only one appearance
+* customizable by chaining a [`root entity`](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity), an [`.app`](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/appearance-.app-files), and a [`.mesh`](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) file with multiple appearances
 
 Its focus is on the **file structure** and the **relations between the files**.
 
@@ -156,7 +156,7 @@ When you edit the .lua, it's usually enough to `reload all mods` in CET.
 
 Defined in your `LUA` file, this file holds the **game entity** that AMM spawns when you click the button. There are two ways of using entity files:
 
-#### [**Mesh entity**](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) **(the legacy version)**
+#### [**Mesh entity**](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) **(the legacy version)**
 
 {% hint style="info" %}
 **Fun fact:** The cluttered prop browser annoyed manavortex so much that she helped Max implement the [alternative workflow](custom-props.md#root-entity) described below the picture, and wrote this guide!
@@ -173,9 +173,9 @@ Edit this kind of prop by opening the following file in Wolvenkit:
 
 You add props by putting meshes directly into the components array:
 
-<figure><img src="../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>tutorial\amm_props\template_no_variants\template_no_variants.ent<br>Mesh/Component entity, loading something directly. You can read more about the theory <a href="../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/mesh_entity.png" alt=""><figcaption><p>tutorial\amm_props\template_no_variants\template_no_variants.ent<br>Mesh/Component entity, loading something directly. You can read more about the theory <a href="https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
-#### [**Root entity**](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity)
+#### [**Root entity**](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity)
 
 One entity file per prop, one entry in AMM's prop browser (e.g. `cube`). After spawning it, you can toggle its appearances (`white`, `black`, `glowing`) the same way you do it with NPCs.
 
@@ -189,13 +189,13 @@ Edit this kind of prop by opening the following file in Wolvenkit:
 tutorial\amm_props\template\template.ent
 ```
 
-Instead of adding items directly via the components array, we link **appearances** to an [.app file](../../../for-mod-creators/files-and-what-they-do/appearance-.app-files). The only component we keep in the [root entity](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity) is the **targeting component** for the CET cursor: this way, it will be added to each appearance in the .app file.
+Instead of adding items directly via the components array, we link **appearances** to an [.app file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/appearance-.app-files). The only component we keep in the [root entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity) is the **targeting component** for the CET cursor: this way, it will be added to each appearance in the .app file.
 
-<figure><img src="../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>tutorial\amm_props\template\template.ent<br>Root entity, pointing towards an .app file. You can read more about the theory <a href="../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/root_entity.png" alt=""><figcaption><p>tutorial\amm_props\template\template.ent<br>Root entity, pointing towards an .app file. You can read more about the theory <a href="https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#root-entity">here</a> — you don't need to know for the rest of this guide.</p></figcaption></figure>
 
 #### Appearance file
 
-[This file](../../../for-mod-creators/files-and-what-they-do/appearance-.app-files) holds a list of `appearances`. Inside each `appearance`, you can define any number of things to be loaded (components) and specify or override their behaviour.
+[This file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/appearance-.app-files) holds a list of `appearances`. Inside each `appearance`, you can define any number of things to be loaded (components) and specify or override their behaviour.
 
 {% hint style="info" %}
 We will only use `entPhysicalMeshComponent`s, and they must be named `amm_prop_slot1` .. `amm_prop_slot4` if you want to enable scaling.
@@ -207,7 +207,7 @@ If you have more than four mesh files assigned to your app's components, the pro
 
 #### template\_textured.mesh
 
-A pre-configured [mesh](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) for a textured material. Uses the following files in the subfolder `textures`:
+A pre-configured [mesh](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) for a textured material. Uses the following files in the subfolder `textures`:
 
 * `template_01_d.xbm`: A diffuse (albedo) map, colouring the mesh
 * `template_01_n.xbm`: A normal (bump) map, adding depth to the object.
@@ -226,7 +226,7 @@ If your source mesh comes with many material slots/textures but you only need a 
 
 #### template\_multilayered.mesh
 
-A pre-configured [mesh](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) for a multilayered material. Uses the following files in the subfolder `textures`:
+A pre-configured [mesh](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files) for a multilayered material. Uses the following files in the subfolder `textures`:
 
 * `6_layers.mlsetup`: A [multilayer setup](../../items-equipment/editing-existing-items/changing-materials-colors-and-textures/#multilayered-material) with colour properties
 * `6_layers.mlmask`: A [multilayer mask](../../../for-mod-creators-theory/materials/multilayered/), determining which parts of the mesh are affected by which layer of the mlsetup. In this case, it just contains six blank layers.
@@ -261,7 +261,7 @@ You can point the prop at a different mesh by changing the depot path of the **c
 3. For each appearance, open the `components` array
 4. Click on the first component `amm_prop_slot1`. In the panel to the right of the tree, change the following properties:
    * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
-   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances), otherwise the first appearance from the list will be used as default.
+   * `mesh -> meshAppearance`. Put something that [actually exists in your file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances), otherwise the first appearance from the list will be used as default.
 
 <figure><img src="../../../.gitbook/assets/cuzstom_props_change_mesh_2.png" alt=""><figcaption><p>For props with variants: <code>template.app</code></p></figcaption></figure>
 
@@ -271,17 +271,17 @@ You can point the prop at a different mesh by changing the depot path of the **c
 
 ### Without variants
 
-1. Open the [`mesh entity`](../../../for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) `tutorial\amm_props\template_no_variants\template_no_variants.ent`
+1. Open the [`mesh entity`](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/entity-.ent-files#mesh-component-entity-simple-entity) `tutorial\amm_props\template_no_variants\template_no_variants.ent`
 2. Find the `components` array and open it
 3. Click on the first component `amm_prop_slot1`. In the panel to the right of the tree, change the following properties:
    * `mesh -> DepotPath`. Put the relative path to your .mesh (right-click on the file)
-   * `mesh -> meshAppearance`. Put something that [actually exists in your file](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances), otherwise the first appearance from the list will be used as default.
+   * `mesh -> meshAppearance`. Put something that [actually exists in your file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances), otherwise the first appearance from the list will be used as default.
 
 <figure><img src="../../../.gitbook/assets/custom_props_change_mesh.png" alt=""><figcaption><p>For props without appearances: <code>template_no_variants.ent</code></p></figcaption></figure>
 
 4. If you want to load more than one mesh, repeat the process for the other components. If you want to use more than four, read [#why-only-4-components](custom-props.md#why-only-4-components "mention")
 5. If you don't want to load more than one mesh, select `amm_prop_slot2` and delete the `depotPath`. Otherwise, you'll see your prop and a floating cube.
-6. Finally, change the `defaultAppearance` to [a valid appearance in your .mesh file](../../../for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances). If no appearance with this name can be found, the prop will be invisible when it spawns.
+6. Finally, change the `defaultAppearance` to [a valid appearance in your .mesh file](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators/files-and-what-they-do/3d-objects-.mesh-files#step-1-appearances). If no appearance with this name can be found, the prop will be invisible when it spawns.
 
 ### Why only 4 components?
 
