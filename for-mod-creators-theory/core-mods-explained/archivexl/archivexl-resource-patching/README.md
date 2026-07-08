@@ -79,17 +79,18 @@ You can only patch **appearances** - it is not possible to overwrite materials o
 Example: You want to change a material
 
 ```
-original_mesh:                          patch_mesh:
-  appearances:                            appearances:
-    appearance_black:                        appearance_black:
-      - black_material                          - black_material
-      - black_material                          - black_material
-    appearance_black_2:                      
-      - black_material                       
-      - black_material_2                       
-  materials:                              materials:
-    black_material:   multilayered.mt       black_material: metal_base.remt
-    black_material_2: multilayered.mt         
+original_mesh:                                patch_mesh:
+   appearances:                                  appearances:
+       appearance_black:                            appearance_black:
+          - black_material                              - black_material_patch
+          - black_material                              - black_material_patch
+       appearance_black_2:                            
+          - black_material                             
+          - black_material_2                     
+
+       materials:                                    materials:
+          - black_material:   multilayered.mt             - black_material_patch: metal_base.remt
+          - black_material_2: multilayered.mt               
 ```
 
 After patching, `appearance_black` would use `metal_base.remt`, while `appearance_black_2` would still use `multilayered.mt`.&#x20;
