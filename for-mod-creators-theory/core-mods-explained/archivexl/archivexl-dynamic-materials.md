@@ -49,6 +49,10 @@ This is where the new technique kicks in.
 
 We start by changing our `chunkMaterial` names. By appending the suffix `@dynamic`, we're telling ArchiveXL to map them to the `CMeshMaterialEntry` with the same name.
 
+{% hint style="info" %}
+You can use any suffix and it will match up any material - e.g., if you'd use `red@stitches`, the corresponding material would be `@stitches`.
+{% endhint %}
+
 Instead of 15 `materialEntries`, we're down to one.
 
 <figure><img src="../../../.gitbook/assets/archivexl_dynamic_materials_the_instance" alt=""><figcaption></figcaption></figure>
