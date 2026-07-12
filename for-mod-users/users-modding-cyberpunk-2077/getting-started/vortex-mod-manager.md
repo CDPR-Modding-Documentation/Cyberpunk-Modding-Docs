@@ -8,7 +8,7 @@ description: >-
 
 ## Summary
 
-**Last documented update:** January 20th, 2026 by [minnierylands](https://app.gitbook.com/u/VSIYzNHUyRPaBCk2ExHhQzpPfo82 "mention")
+**Last documented update:** July 12th, 2026 by [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention")
 
 {% hint style="danger" %}
 **Windows 10 or higher is required to use Vortex mod manager. If you are not using Windows, see our Manual Install page.**
@@ -128,39 +128,21 @@ This section will tell you how to add Cyberpunk to Vortex's managed games.
 2. In the page that now shows, type "`Cyberpunk`" into the search bar
 3. Hover over its thumbnail and click "`Manage`"
 4. You will now see a popup complaining about "`Game support not installed`". Don't panic, this is expected!
+5. You will require the vortex extension for Cyberpunk 2077. You can download this through Vortex on the Extensions tab.&#x20;
+6. Search for Cyberpunk 2077 and click install.
+   1. Your Vortex extension should now be installed, and should say `0.12.1` (or whatever the latest version is on nexus mods) in the `Version` column.
 
-{% hint style="warning" %}
-**Important Note: Downloading The Cyberpunk Extension**
-
-As of January 2026, downloading the Cyberpunk Vortex Extension through Vortex itself will not download the latest version. It will download the previous version, which has an unfortunate bug.
-
-For now, you will have to **manually download the extension. Check below to see how!**
-{% endhint %}
-
-5. [You can download the Cyberpunk 2077 Vortex Extension here](https://www.nexusmods.com/site/mods/196?tab=files). The link should take you straight to the `FILES` tab.
-6. Click `Manual download` - this will download it straight to your computer.
-
-{% hint style="danger" %}
-Currently, the `Mod manager download` button is not functioning as expected. You **need** to click `Manual download`
-{% endhint %}
-
-7. Navigate to Vortex and find the `Extensions` tab on the left side of the window.
-
-<figure><img src="../../../.gitbook/assets/vortex_ex_1.png" alt=""><figcaption><p>This is the extensions tab!</p></figcaption></figure>
-
-8. On the `Extensions` page, you should see a box at the bottom that says `Drop File(s)` - you need to take the Cyberpunk Extension `.zip` file you just downloaded and drop it into this box.
-
-<figure><img src="../../../.gitbook/assets/vortex_extension_page (1).png" alt=""><figcaption></figcaption></figure>
-
-9. Your Vortex extension should now be installed, and should say `0.12.1` in the `Version` column.
+<figure><img src="../../../.gitbook/assets/vortex-extensions.png" alt=""><figcaption><p>This is the extensions tab!</p></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/vortex_ex_2.png" alt=""><figcaption><p>This is what you want to see!</p></figcaption></figure>
 
-9. You need to restart Vortex – agree to the prompt if there is one. If not, manually close Vortex and re-open it.
-10. Optional: If Vortex was able to auto-detect your game install, you are done now and can proceed with the [Settings](vortex-mod-manager.md#settings) section.
-11. Vortex will tell you that it couldn't detect your game install and prompt you to set it manually. Click "Continue".
-12. In the explorer window that now pops up, navigate to the folder containing your Cyberpunk exe (e.g. `C:\Games\Cyberpunk 2077\bin\x64`)
-13. Once you are in the right folder, click "`Select Folder`"
+9. If the extension is not the latest version, [you can download the Cyberpunk 2077 Vortex Extension here](https://www.nexusmods.com/site/mods/196?tab=files). The link should take you straight to the `FILES` tab.
+   1. Click `Mod manager download` - this will download it straight to Vortex.
+10. You need to restart Vortex – agree to the prompt if there is one. If not, manually close Vortex and re-open it.
+11. Optional: If Vortex was able to auto-detect your game install, you are done now and can proceed with the [Settings](vortex-mod-manager.md#settings) section.
+12. Vortex will tell you that it couldn't detect your game install and prompt you to set it manually. Click "Continue".
+13. In the explorer window that now pops up, navigate to the folder containing your Cyberpunk exe (e.g. `C:\Games\Cyberpunk 2077\bin\x64`)
+14. Once you are in the right folder, click "`Select Folder`"
 
 Vortex can now manage your game! Proceed to the next section, [Settings](vortex-mod-manager.md#settings).
 
@@ -220,7 +202,7 @@ It will convert all of your "legacy" mods into REDmod format, and has a habit of
 
 In the 0.12.0 version of the Cyberpunk 2077 Vortex Extension, a bug was introduced that would **enable this toggle without warning**.
 
-Thankfully, version 0.12.1 of the extension has squashed that bug, but Vortex will not automatically acknowledge the new version. [You can get version 0.12.1 here](https://www.nexusmods.com/site/mods/196).
+Thankfully, version 0.12.1+ of the extension has squashed that bug, but Vortex will not automatically acknowledge the new version. [You can get version 0.12.1+ here](https://www.nexusmods.com/site/mods/196).
 
 **How can I check my extension version?**
 
@@ -230,7 +212,7 @@ Check what it says under "`Version`" for the "`Cyberpunk2077`" extension.
 
 <img src="../../../.gitbook/assets/vortex_ex_2.png" alt="" data-size="original">
 
-If it says `0.12.1`, you're good to go!
+If it says `0.12.1+`, you're good to go!
 
 If not, you'll need to **manually** update it.
 
