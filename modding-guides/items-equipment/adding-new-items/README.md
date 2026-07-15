@@ -4,10 +4,14 @@ description: No more replacers! Add your own gear with TweakXL and ArchiveXL
 
 # Adding new items
 
+<figure><img src="../../../.gitbook/assets/warning_outdated_info.png" alt=""><figcaption></figcaption></figure>
+
+This guide features an **older workflow**. It **still works** and will **help you understand** how everything hangs together – however, check out [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention") for the up-to-date instructions.
+
 ## Summary <a href="#summary" id="summary"></a>
 
 **Created & Published**: November 04 2022 **by @manavortex**\
-**Last documented Update:** March 12 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented Update:** August 15 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will walk you through **adding your own items** to Cyberpunk 2077, which can then be spawned via console.
 
