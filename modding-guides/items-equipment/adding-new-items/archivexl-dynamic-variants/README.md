@@ -193,14 +193,118 @@ Check [adding-items-preview-images](../../../custom-icons-and-ui/adding-items-pr
 ### Generated files
 
 {% hint style="info" %}
-**Optional, but recommended:** Read[dynamic-appearances-understanding-the-process.md](dynamic-appearances-understanding-the-process.md "mention")to figure out **what** your new files do and **how** they do it
+**Optional, but recommended:** Read [dynamic-appearances-understanding-the-process.md](dynamic-appearances-understanding-the-process.md "mention") to figure out **what** your new files do and **how** they do it.
 {% endhint %}
 
 Depending on the options you picked, your project will now look similar to this:
 
 <figure><img src="../../../../.gitbook/assets/dynamic_file_project_files_after_generator.png" alt=""><figcaption></figcaption></figure>
 
-## Step 1: Connecting the decal (and understanding variants)
+{% hint style="success" %}
+Congratulations, you now have a working game item.
+{% endhint %}
+
+#### What kind of guide is this? I don't want a basegame item copy!
+
+Yes, but generating the exact item that you want is so complex that we couldn't possibly implement it. Proceed to the next section.
+
+## Step 1: Customizing the generated item
+
+Since the generated files are almost certainly not what you need, this section will show you how to adjust the item.&#x20;
+
+{% hint style="info" %}
+If that's not what you want, you can skip to Step 2.&#x20;
+
+If you change anything here, names and paths in Step 2 will be different. Adjust accordingly!
+{% endhint %}
+
+The generated structure includes 4 meshes per body gender:
+
+<figure><img src="../../../../.gitbook/assets/dynamic_items_generated_meshes.png" alt=""><figcaption><p>pma = player male aerage, pwa = player woman average</p></figcaption></figure>
+
+### Safely changing mesh paths
+
+During this section, you will edit the `mesh_entity`. In there, you need to adjust file paths, which have been generated as dynamic – meaning that they will look like this:
+
+```
+*manavortex/equipment/torso_inner/my_custom_shirt/meshes/t1_079_p{gender}a_tshirt_casual.mesh
+```
+
+Since the default path starts with a \* and has the `Soft` flag, ArchiveXL will resolve these [placeholders](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md) at runtime to `t1_079_pwa_tshirt__casual.mesh`  or `t1_079_pma_tshirt__casual.mesh`.&#x20;
+
+Instead of preserving the substitution, you can simply paste a non-dynamic path to one of your files (select it in the project browser, `Copy relative path`, paste it to the `DepotPath` box). After that, you can right-click the box, and select `Convert to dynamic`.
+
+If you want to have only one body gender, check 1.2 below.
+
+### 1.1 Changing the mesh count
+
+Usually, you have either more or fewer meshes than you actually want to use.&#x20;
+
+#### Adjust the .mesh count
+
+If you have more than you need: delete the files you don't want to use
+
+If you need more: copy an existing file, then re-name it. Make sure to do this for both body genders.
+
+#### Adjust the components
+
+The item's individual parts are pulled in via `mesh_entity` (you can learn more about this on  [dynamic-appearances-understanding-the-process.md](dynamic-appearances-understanding-the-process.md "mention")).&#x20;
+
+In the editor panel on the left, find the `components`.&#x20;
+
+If you have deleted meshes, delete the corresponding components. If you have added extra entries, duplicate an existing component and change its `name` and `DepotPath`.
+
+{% hint style="info" %}
+The component prefixes are important for [garment support](../../../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/#component-prefixes). Don't remove them!
+{% endhint %}
+
+### 1.2 Renaming files and components
+
+You do this inside the `mesh_entity` file.
+
+Generated file names are based on the original item. You can rename these files, but you have to adjust the `DepotPath` entries in the `mesh_entity` afterwards (see [#safely-changing-mesh-paths](./#safely-changing-mesh-paths "mention") for how to do that).
+
+You can also change the component names in the mesh\_entity to whatever you want – just keep in mind that the component prefixes are important for [garment support](../../../../for-mod-creators-theory/3d-modelling/garment-support-how-does-it-work/#component-prefixes) and you should not remove them.
+
+### 1.2 Removing a body gender
+
+The easiest way to support only one body gender is to display an invisible item for the other. Do the following things:
+
+1. Delete the meshes you don't want from the project browser
+2. For each component in the `mesh_entity`, adjust the `DepotPath` to be no longer dynamic (you can use the right-click menu)
+
+As of now, the game will crash if the item is equipped by the unsupported body gender. Add a conditional appearance to prevent this:
+
+3. Open the `.app` file&#x20;
+4. For each entry in the `appearances` array, change the `name` field and add `&gender=w` or `&gender=m`
+
+{% hint style="info" %}
+You can learn more about this under [dynamic-appearances-fine-tuning-visibility-conditions.md](dynamic-appearances-fine-tuning-visibility-conditions.md "mention").
+{% endhint %}
+
+### 1.3 Body mod support
+
+To add body mod support, you need to re-name your meshes to include the body's tag (find a full list under [#supporting-mods](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/#supporting-mods "mention")):
+
+```
+old: t1_079_pwa_tshirt__casual.mesh
+new: t1_079_pwa_tshirt__casual__base_body.mesh
+```
+
+After that, adjust the mesh paths to include the {body} placeholder:
+
+```
+old: *manavortex/equipment/torso_inner/my_custom_shirt/meshes/t1_079_p{gender}a_tshirt_casual.mesh
+new: *manavortex/equipment/torso_inner/my_custom_shirt/meshes/t1_079_p{gender}a_tshirt_casual__{body}.mesh
+```
+
+You can now add support for body mods by copying the `base_body` mesh and renaming it so that it matches the corresponding tag (e.g. `ebb`, `ebbwtfbbq`).
+
+{% hint style="info" %}
+If no mesh for a custom body is found, the game will load the `base_body` one instead.
+{% endhint %}
+
+## Step 2: Connecting the decal (and understanding variants)
 
 {% hint style="warning" %}
 Before starting this section, create a copy of your `mesh_entity.ent` now (press the ctrl-key and drag it on itself), as you need the original file for one of the alternative approaches.

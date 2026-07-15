@@ -14,6 +14,17 @@ You will be able to change the template project just by following the steps, but
 Depending on how you learn best, you can also fuck around and try to understand the connections yourself. In that case, check [#exercise-1-create-more-records](dynamic-appearances-understanding-the-process.md#exercise-1-create-more-records "mention") at the end of the section.
 {% endhint %}
 
+### The .mesh files
+
+These files contain the item's **geometry**, its **materials**, and the **armature** it is rigged to. They are pulled into your mod by [#the-mesh\_entity](dynamic-appearances-understanding-the-process.md#the-mesh_entity "mention").
+
+You can delete meshes that you aren't using – make sure to remove the corresponding components from the mesh entity. &#x20;
+
+For more information on .mesh files, check the following pages:
+
+* [#whats-a-mesh](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/#whats-a-mesh "mention")
+* [submeshes-materials-and-chunks.md](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md "mention")
+
 ### The yaml
 
 For a general explanation of what the yaml file does, check [#the-control-file-yourmodname.yaml](../archive-xl-item-structure-explained.md#the-control-file-yourmodname.yaml "mention"). This section will only cover the differences between a dynamic and a regular yaml.
