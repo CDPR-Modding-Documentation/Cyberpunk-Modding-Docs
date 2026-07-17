@@ -343,6 +343,10 @@ This section explains how to connect the t-shirt's logo. It will show you two wa
 Before starting this section, create a copy of your `mesh_entity.ent` now (press the ctrl-key and drag it on itself), as you need the original file for one of the alternative approaches.
 {% endhint %}
 
+{% hint style="warning" %}
+If you stop before  "Exercise 1", the game will crash if users edit your yaml. Not only will the second half of this section prevent you from getting bug reports, but it will also show you what options you have to hook up different things, so it is well worth reading.
+{% endhint %}
+
 This section will teach you how to make use of the variant to switch out item parts via `.yaml`. As a reminder, this is our yaml:
 
 <figure><img src="../../../../.gitbook/assets/yaml_and_variants.png" alt=""><figcaption></figcaption></figure>
@@ -382,19 +386,23 @@ Now, let's get that decal connected.
 Thanks to ArchiveXL's substitution, we only need one component to pick our choice from three `.mesh` files — based on the value for `secondary` in the `yaml`.
 
 {% hint style="info" %}
-This approach is not recommended for anything user-editable. For details, see [#exercise-1-other-options](./#exercise-1-other-options "mention")
+This approach is not recommended for anything user-editable because it **can lead to crashes**. For details, see [#exercise-1-other-options](./#exercise-1-other-options "mention")
 {% endhint %}
 
-## Exercise 1: Other options
+### Exercise 1: Other options
 
-Dynamic mesh picking based on yaml params saves a lot of duplication, typos can lead to crashes — if you enter `semurai` instead of `samurai`, the game will try to find (for female V)\
+Dynamic mesh picking based on yaml params saves a lot of duplication. However, **the game will crash** if you tell it to load a mesh that does not exist.&#x20;
+
+This is a problem, because if you enter `semurai` instead of `samurai`, the game will try to find (for female V)\
 `manavortex\equipment\torso_inner\my_custom_shirt\meshes\t1_079_pwa_tshirt__casual_dec_semurai.mesh`\
-and then crash because it doesn't exist.
+and then crash because it can't.
 
 This is generally bad, so which options do we have to prevent it?
 
 {% hint style="info" %}
 The boxes below contain **suggestions** and detail **different ways** to tackle the same problem with ArchiveXL. You can combine them or completely ignore them, as you want.
+
+I (manavortex) usually stick to the first approach, which is far more flexible, but both of these solutions are valid (and the second one offers tremendous flexibility).
 {% endhint %}
 
 <details>
