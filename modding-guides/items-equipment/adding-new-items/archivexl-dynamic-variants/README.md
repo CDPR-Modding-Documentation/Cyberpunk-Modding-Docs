@@ -290,27 +290,54 @@ You can learn more about this under [dynamic-appearances-fine-tuning-visibility-
 
 ### 1.3 Body mod support
 
-To add body mod support, you need to re-name your meshes to include the body's tag (find a full list under [#supporting-mods](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/#supporting-mods "mention")):
+{% hint style="warning" %}
+Even if you are using a modded body, you should always work with the vanilla player body as a base, and create refits once you are certain that everything works as intende. CDPR's body is incredibly high-quality as a game asset, and it is the natural starting point to refit in any direction. It is much easier to refit medium boobs to either a flat chest or "more realistic female body" than it is to shrink humongous tits to vanilla proportions and further.
+{% endhint %}
 
-```
-old: t1_079_pwa_tshirt__casual.mesh
-new: t1_079_pwa_tshirt__casual__base_body.mesh
-```
+Thanks to ArchiveXL, body mod support has become trivial. Unfortunately, refitting has not become trivial and you will still have to do this in Blender (although the [wkit-blender-plugin-akl-autofitter.md](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md "mention")  can help).
 
-After that, adjust the mesh paths to include the {body} placeholder:
+To enable this feature, you only need to&#x20;
+
+* change the `depotPath` in your components to include the `{body}` placeholder
+* re-name your mesh files to include the body's tag in their path (find a full list under [#supporting-mods](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/#supporting-mods "mention"))
+
+#### Adjust the component mesh paths:
 
 ```
 old: *manavortex/equipment/torso_inner/my_custom_shirt/meshes/t1_079_p{gender}a_tshirt_casual.mesh
 new: *manavortex/equipment/torso_inner/my_custom_shirt/meshes/t1_079_p{gender}a_tshirt_casual__{body}.mesh
 ```
 
-You can now add support for body mods by copying the `base_body` mesh and renaming it so that it matches the corresponding tag (e.g. `ebb`, `ebbwtfbbq`).
+#### Change mesh file paths:
 
-{% hint style="info" %}
-If no mesh for a custom body is found, the game will load the `base_body` one instead.
-{% endhint %}
+Re-name all your existing meshes by adding `base_body`  to their paths. This `must` correspond to the `{body}`  placeholder in the component path.&#x20;
+
+Example:
+
+```
+old: t1_079_pwa_tshirt__casual.mesh
+new: t1_079_pwa_tshirt__casual__base_body.mesh
+```
+
+This mesh will be used if ArchiveXL can't detect any body-specific ones - so you only need to create extra meshes where refits are needed (usually boobs).
+
+#### Refitting
+
+For each refit you want to create,
+
+* copy the  `_base_body` .mesh
+* replace the `_base_body`  in its path with the camelcase tag for the modded body (see  [#supporting-mods](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/#supporting-mods "mention"))
+
+Example:
+
+```
+original: t1_079_pwa_tshirt__casual__base_body.mesh
+refit:    t1_079_pwa_tshirt__casual__ebbwtfbbq.mesh
+```
 
 ## Step 2: Connecting the decal (and understanding variants)
+
+This section explains how to connect the t-shirt's logo. It will show you two ways to do this. If you don't have a logo, you are done with this part of the guide and can go to [Step 3](./#step-3-what-now).
 
 {% hint style="warning" %}
 Before starting this section, create a copy of your `mesh_entity.ent` now (press the ctrl-key and drag it on itself), as you need the original file for one of the alternative approaches.
@@ -472,6 +499,13 @@ So I ended up with six appearances in the `_root.ent` and `.app`:
 On top of that, I am using [ArchiveXL custom tags](../../influencing-other-items.md#custom-tags-un-hiding-chunks) to display yet another collar when the sweatshirt is worn on top of it. For this, I'm also using the "open collar" tie, so I had to make sure that it fits both... I spent a lot of time re-fitting on this mod.
 
 </details>
+
+## Step 3: What now?
+
+You now have a working item that you can play around with. First thing is to **create a full back-up of your project**, because you **will** break things as you fuck around and find out.
+
+* More color variants: Check [#adding-an-appearance](../#adding-an-appearance "mention")
+* Body mod support: Go back to section 1.3 Body mod support
 
 ## The diagram
 
