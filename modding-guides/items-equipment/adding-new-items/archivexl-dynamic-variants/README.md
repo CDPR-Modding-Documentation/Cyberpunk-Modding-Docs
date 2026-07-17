@@ -224,7 +224,13 @@ The generated structure includes 4 meshes per body gender:
 
 ### Safely changing mesh paths
 
-During this section, you will edit the `mesh_entity`. In there, you need to adjust file paths, which have been generated as dynamic – meaning that they will look like this:
+During this section, you will edit the `mesh_entity`. This file contains multiple `components`, some of which are pulling in `.mesh` files by path.&#x20;
+
+{% hint style="info" %}
+Select a node in the tree on the left, then edit its properties in the panel to the right.
+{% endhint %}
+
+In there, you need to adjust file paths, which have been generated as dynamic – meaning that they will look like this:
 
 ```
 *manavortex/equipment/torso_inner/my_custom_shirt/meshes/t1_079_p{gender}a_tshirt_casual.mesh
