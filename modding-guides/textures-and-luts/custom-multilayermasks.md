@@ -85,11 +85,11 @@ Do this as often as necessary.&#x20;
 
 ## Import the MultilayerMask
 
-_.mlmask_ file supports 2 resolution images for masks, e.g. 256x256 / 512x512. You can use low res masks (images) for layers with less details and high res masks for more details or use masks with same resolution for all layers. Items like clothes have masks resolution up to 2048x2048, but you don't have to use more than that in most cases
+.mlmask file supports 2 resolution images for masks, e.g. 256x256 / 512x512. You can use low res masks (images) for layers with less details and high res masks for more details or use masks with same resolution for all layers. Items like clothes have masks resolution up to 2048x2048, but you don't have to use more than that in most cases
 
-Once you're done, open the masklisk and make sure that you have exactly as many entries as you have images in your folder (adding or deleting them as needed). Then, in Wolvenkit, import the masklist via **Import Tool**.
+Once you're done, open the .masklist file and make sure that you have exactly as many entries as you have images in your folder (adding or deleting them as needed). Then, in Wolvenkit, import the masklist via **Import Tool**.
 
-You can now assign your new Masklisk to your mesh and use it together with custom [MultilayerSetups](../../for-mod-creators-theory/materials/multilayered/#what-is-the-mlsetup).&#x20;
+You can now assign your new .mlmask file to your mesh and use it together with custom [MultilayerSetups](../../for-mod-creators-theory/materials/multilayered/#what-is-the-mlsetup).&#x20;
 
 <figure><img src="../../.gitbook/assets/mlsetup_before_after.png" alt=""><figcaption><p>before => after</p></figcaption></figure>
 
