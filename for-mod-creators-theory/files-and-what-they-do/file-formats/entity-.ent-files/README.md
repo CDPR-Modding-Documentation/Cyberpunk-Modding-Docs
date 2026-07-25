@@ -23,7 +23,7 @@ The minimal way of adding something (e.g. meshes) to the game. This entity can b
 For **player equipment** (weapons and armour), you can use mesh entities to **encapsulate** parts of your item. You load such .ent files via `partsValues`, which will be added to the corresponding appearance as if the components had been in the .app file itself.
 
 {% hint style="danger" %}
-As of April 2023, `partsValues` will be ignored for anything but player equipment.
+If your item is not a clothing item, you have to add `AppearanceParts` to the tags array of the appearance, or its `partsValues` will be ignored.
 {% endhint %}
 
 This is good practice to avoid repetition, and also to make it easy on yourself if you want to change paths later in your project (imagine having defined 20 appearances with 5 components each, and then wanting to rename your mesh folder…)
