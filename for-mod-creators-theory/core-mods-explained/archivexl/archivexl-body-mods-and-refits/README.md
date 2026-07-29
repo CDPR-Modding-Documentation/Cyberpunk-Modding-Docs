@@ -6,11 +6,13 @@
 **Last documented update:** 22 May 2026 by LadyLea\
 **Minimum required ArchiveXL version:** 1.5
 
-This page explains how to enable **body mod support** in ArchiveXL. The guide assumes that you are familiar with Wolvenkit.
+This page explains how to enable **body mod support** in ArchiveXL. The guide assumes that you are familiar with Wolvenkit. It contains the following sections:
 
 [#body-modders-adding-support](./#body-modders-adding-support "mention")
 
 [#clothing-mods-making-use-of-the-tags](./#clothing-mods-making-use-of-the-tags "mention")
+
+### Wait, that's not what I want!
 
 To learn more about body mods, check the [Texture Frameworks for Player V](../../../../modding-guides/npcs/custom-tattoos-and-scars/converting-between-tattoo-frameworks/) page.
 
@@ -31,12 +33,20 @@ print(Game.GetScriptableSystemsContainer():Get("PuppetStateSystem"):GetBodyTypeS
 ## Body modders: Adding support
 
 {% hint style="success" %}
-Starting with version **1.14**, you can use [archivexl-resource-patching](../archivexl-resource-patching/ "mention") to inject your tags into the existing files!
+You only need this if you have created **your own body mod**. The section below lets you register a custom tag, which lets other modders react to your body being active (e.g. for clothing refits).
 
-You can download the [template from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/14793), or create one yourself.
+If your body mod has the same shape as the basegame body, you do not need to do this.
 {% endhint %}
 
+## 0. Download the template project
+
+Optional, but recommended - you can skip this step, but it's easier if you don't.
+
+Start by creating a Wolvenkit project, then downloading the [template from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/14793) and merging it with your project's source folder.
+
+{% hint style="info" %}
 The example below registers `BoobsForBackProblems`. If your body mod is called differently (recommended), you should adjust accordingly.
+{% endhint %}
 
 ### 1. Registering the body mod
 
