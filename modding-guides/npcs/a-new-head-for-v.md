@@ -123,7 +123,7 @@ For that, we will use the **base head mesh.** Follow along to create a copy.
 1. Make sure that you are in **Object mode**
 2. In the **Outliner** at the top right of your viewport, find the collection with the name of `h0_000_pXa__morphs.morphtarget` (x being w or m) and **expand** it.
 3. Find the mesh starting with submesh\_00\_LOD\_1 (it can have a suffix like .001), and select it by clicking on it
-4. Duplicate it (Hotkey: `Shift+D`, `ESC`)
+4. Duplicate it (Hotkey: `Shift+D`, `ESC`) Your cursor must be in the main window with your mesh or the Hotkey will not work.
 5. Rename your duplicate to e.g. `sculptme`. This is the mesh we'll be editing.
 6. Select sculptme, then switch to the `Data` tab of `Properties` (at the bottom right of your viewport), and disable `Shape Key Edit Mode`:
 
