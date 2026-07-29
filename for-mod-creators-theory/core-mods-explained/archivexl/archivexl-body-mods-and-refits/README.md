@@ -6,7 +6,7 @@
 **Last documented update:** 22 May 2026 by LadyLea\
 **Minimum required ArchiveXL version:** 1.5
 
-This page explains how to enable **body mod support** in ArchiveXL:
+This page explains how to enable **body mod support** in ArchiveXL. The guide assumes that you are familiar with Wolvenkit.
 
 [#body-modders-adding-support](./#body-modders-adding-support "mention")
 
@@ -36,6 +36,8 @@ Starting with version **1.14**, you can use [archivexl-resource-patching](../arc
 You can download the [template from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/14793), or create one yourself.
 {% endhint %}
 
+The example below registers `BoobsForBackProblems`. If your body mod is called differently (recommended), you should adjust accordingly.
+
 ### 1. Registering the body mod
 
 1. Create an .xl file in your Wolvenkit Project's resources folder (File -> New file -> ArchiveXL)
@@ -43,8 +45,8 @@ You can download the [template from Nexus](https://www.nexusmods.com/cyberpunk20
 3. Put the following file content:
 
 <pre class="language-yaml"><code class="lang-yaml"><strong>player:
-</strong>  bodyTypes: [ NewBody ]  # for substitutions, this will be converted 
-                          # to snake case: new_body
+</strong>  bodyTypes: [ BoobsForBackProblems ]  # for substitutions, this will be converted 
+                                       # to snake case: boobs_for_back_problems
 </code></pre>
 
 ### 2. Patch the player entity files
@@ -64,8 +66,8 @@ If you downloaded the template project, a patch .ent will already be included.
 3. Add a new, blank EntEntityTemplate to your project
 4. Give it a good name and move it somewhere
 5. Open the file and select the `components` array
-6. Add a new `entMeshComponent` and name it `Body:YourBodyTag`
-7. Now, proceed with the rest of the guide
+6. In the panel on the right, click on the yellow + button to add a new `entMeshComponent` .
+7. Now, keep reading
 
 </details>
 
@@ -74,7 +76,7 @@ If you downloaded the template project, a patch .ent will already be included.
 
 #### Register the patch .ent
 
-Make sure that your patch .ent is added to the game by telling ArchiveXL about it. Add the following block to your `.xl` file:
+Make sure that your patch .ent is added to the game by telling ArchiveXL about it. Add the following block to your `.xl` file and adjust the paths:
 
 ```yaml
 resource:
@@ -106,23 +108,28 @@ The process is so simple that there aren't many things to go wrong:
 2. Double-check your `.yaml` via [yamllint](https://www.yamllint.com/) and make sure you don't have syntax errors (indent matters)
 3. Check [ArchiveXL's log file](../../../../for-mod-users/user-guide-troubleshooting/finding-and-reading-log-files.md#a-list-of-framework-logfiles)
 
-If that doesn't work, check if the component gets added correctly. There are two ways to do this:
+If none of that gets you anywhere, check if the component gets added correctly. There are two ways to do this:
 
 #### CET:
 
+{% hint style="info" %}
+Please adjust to your component name from step 2.1
+{% endhint %}
+
 ```
-print(GetPlayer():FindComponentByName("Body:NewBody"))
+print(GetPlayer():FindComponentByName("Body:BoobsForBackProblems"))
 ```
 
 #### [RedHotTools](../../../modding-tools/redhottools/):
 
 <figure><img src="../../../../.gitbook/assets/AXL_body_checking_component.png" alt=""><figcaption></figcaption></figure>
 
-If that still doesn't work, consider using the [template from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/14793), which has been tried and tested on May 18 2024 with ArchiveXL
+If that still doesn't work, consider using the [template from Nexus](https://www.nexusmods.com/cyberpunk2077/mods/14793), which has been confirmed working on May 18 2024.
 
 #### Invisible mesh for body xyz
 
-Make sure that your mesh has appearances and materials. If you are using [archivexl-resource-patching](../archivexl-resource-patching/ "mention"), it's easy to forget a new body's mesh in the list like a gonk. This has never happened to the author, by the way.
+Make sure that your mesh has appearances and materials. If you are using [archivexl-resource-patching](../archivexl-resource-patching/ "mention"), it's easy to forget a new body's mesh in the list like a gonk. \
+&#xNAN;_&#x54;his has totally never happened to the author, by the way._
 
 ## Clothing mods: Making use of the tags
 
@@ -177,6 +184,14 @@ If you know something that should be on the list, please edit [the-wiki](../../.
 
 The following body mods support dynamic body switching.
 
-<table><thead><tr><th width="293">Body Mod - Male V</th><th width="229">Tag Name</th><th>Substitution Value</th></tr></thead><tbody><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4968">-KS- Adonis</a></td><td>Adonis</td><td><code>&#x26;body=adonis</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/8766">-KS- Atlas</a></td><td>Atlas</td><td><code>&#x26;body=atlas</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/6423?tab=description">VTK - Gymfiend</a></td><td>Gymfiend</td><td><code>&#x26;body=gymfiend</code></td></tr></tbody></table>
+{% hint style="info" %}
+To use the substitution values from the table for [conditional appearances](../../../../modding-guides/items-equipment/adding-new-items/archivexl-dynamic-variants/dynamic-appearances-understanding-the-process.md#app-file-conditional-switching), use them as `&body=value`&#x20;
+{% endhint %}
 
-<table><thead><tr><th width="293">Body Mod - Female V</th><th width="220">Tag Name</th><th>Substitution Value</th></tr></thead><tbody><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4901">-KS- Lion's Lush Body</a></td><td>Lush</td><td><code>&#x26;body=lush</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/8392">-KS- Lion's SoLush Body</a></td><td>Lush</td><td><code>&#x26;body=lush</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/6944">-KS- Solo Ultimate</a></td><td>Ult</td><td><code>&#x26;body=ult</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/15869">-KS- Solo 2.0</a></td><td>Solo_OG</td><td><code>&#x26;body=solo_og</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/7148">-KS- Solo Arms (v1.8.1)</a></td><td>SoloArms</td><td><code>&#x26;body=soloarms</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/12898">-KS- Songbird 2.0</a></td><td>Song2</td><td><code>&#x26;body=song2</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/6883">Na's Flat Chest</a></td><td>Flat</td><td><code>&#x26;body=flat</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/19821?tab=description">ELEGY</a></td><td>ELEGY</td><td><code>&#x26;body=elegy</code></td></tr><tr><td></td><td></td><td></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4420">VTK - Hyst - Realistic Butt</a></td><td>RB</td><td><code>&#x26;body=rb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4654">VTK - Hyst - Enhanced Big Breasts</a></td><td>EBB</td><td><code>&#x26;body=ebb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/9083">VTK - Hyst - Enhanced Big Breasts Push Up</a></td><td>EBBP</td><td><code>&#x26;body=ebbp</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4654?tab=description">VTK - Hyst - Enhanced Big Breasts + Realistic Butt</a></td><td>EBBRB</td><td><code>&#x26;body=ebbrb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/9083">VTK - Hyst - Enhanced Big Breasts Push Up + Realistic Butt</a></td><td>EBBPRB</td><td><code>&#x26;body=ebbprb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/14896">VTK - Hyst - Angel</a></td><td>Angel</td><td><code>&#x26;body=angel</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/29810">VTK - Hyst - EVE</a></td><td>EVE</td><td><code>&#x26;body=eve</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/11489">VTK - Hyst - Enhanced Vanilla Body</a> <strong>**</strong></td><td>EVB</td><td><code>&#x26;body=evb</code></td></tr><tr><td><p><a href="https://www.nexusmods.com/cyberpunk2077/mods/7054">VTK - Vanilla HD Body - 3.0</a></p><p><strong>**</strong></p></td><td>VHD</td><td><code>&#x26;body=vhd</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/24846">VTK Ishtar - FemV Voluptuous Body</a>                 </td><td>Ishtar</td><td><code>&#x26;body=ishtar</code></td></tr><tr><td><strong>*</strong><em><strong>*NOTE</strong>: These tags are not required unless your mod <strong>specially modifies</strong> body meshes for these body mods. Otherwise the value is <code>base_body</code>since these bodies are Vanilla shaped (see official mod page for further info.)</em></td><td></td><td></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/19286">General use:<br>-FemV Small or Big Body</a></td><td>Small<br>Big</td><td><p><code>&#x26;body=small</code></p><p><code>&#x26;body=big</code></p></td></tr></tbody></table>
+{% hint style="info" %}
+You can avoid multiple copies of the same .mesh files by using [archivexl-resource-linking.md](../archivexl-resource-linking.md "mention")
+{% endhint %}
+
+<table><thead><tr><th width="293">Body Mod - Male V</th><th width="229">Tag Name</th><th>Substitution Value</th></tr></thead><tbody><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4968">-KS- Adonis</a></td><td>Adonis</td><td><code>adonis</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/8766">-KS- Atlas</a></td><td>Atlas</td><td><code>atlas</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/6423?tab=description">VTK - Gymfiend</a></td><td>Gymfiend</td><td><code>gymfiend</code></td></tr></tbody></table>
+
+<table><thead><tr><th width="293">Body Mod - Female V</th><th width="220">Tag Name</th><th>Substitution Value</th></tr></thead><tbody><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4901">-KS- Lion's Lush Body</a></td><td>Lush</td><td><code>lush</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/8392">-KS- Lion's SoLush Body</a></td><td>Lush</td><td><code>lush</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/6944">-KS- Solo Ultimate</a></td><td>Ult</td><td><code>ult</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/15869">-KS- Solo 2.0</a></td><td>Solo_OG</td><td><code>solo_og</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/7148">-KS- Solo Arms (v1.8.1)</a></td><td>SoloArms</td><td><code>soloarms</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/12898">-KS- Songbird 2.0</a></td><td>Song2</td><td><code>song2</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/6883">Na's Flat Chest</a></td><td>Flat</td><td><code>flat</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/19821?tab=description">ELEGY</a></td><td>ELEGY</td><td><code>elegy</code></td></tr><tr><td></td><td></td><td></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4420">VTK - Hyst - Realistic Butt</a></td><td>RB</td><td><code>rb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4654">VTK - Hyst - Enhanced Big Breasts</a></td><td>EBB</td><td><code>ebb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/9083">VTK - Hyst - Enhanced Big Breasts Push Up</a></td><td>EBBP</td><td><code>ebbp</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/4654?tab=description">VTK - Hyst - Enhanced Big Breasts + Realistic Butt</a></td><td>EBBRB</td><td><code>ebbrb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/9083">VTK - Hyst - Enhanced Big Breasts Push Up + Realistic Butt</a></td><td>EBBPRB</td><td><code>ebbprb</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/14896">VTK - Hyst - Angel</a></td><td>Angel</td><td><code>angel</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/29810">VTK - Hyst - EVE</a></td><td>EVE</td><td><code>eve</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/11489">VTK - Hyst - Enhanced Vanilla Body</a> <strong>**</strong></td><td>EVB</td><td><code>evb</code></td></tr><tr><td><p><a href="https://www.nexusmods.com/cyberpunk2077/mods/7054">VTK - Vanilla HD Body - 3.0</a></p><p><strong>**</strong></p></td><td>VHD</td><td><code>vhd</code></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/24846">VTK Ishtar - FemV Voluptuous Body</a>                 </td><td>Ishtar</td><td><code>ishtar</code></td></tr><tr><td><strong>*</strong><em><strong>*NOTE</strong>: These tags are not required unless your mod <strong>specially modifies</strong> body meshes for these body mods. Otherwise the value is <code>base_body</code>since these bodies are Vanilla shaped (see official mod page for further info.)</em></td><td></td><td></td></tr><tr><td><a href="https://www.nexusmods.com/cyberpunk2077/mods/19286">General use:<br>-FemV Small or Big Body</a></td><td>Small<br>Big</td><td><p><code>small</code></p><p><code>big</code></p></td></tr></tbody></table>
