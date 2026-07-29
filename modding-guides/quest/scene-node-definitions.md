@@ -396,3 +396,75 @@ This is the most common and critical use case for an And node: ensuring all nece
   * The And node acts as the rendezvous point. It doesn't matter if Roxanne spawns first or Tom spawns first. The And node will patiently wait, holding the scene, until it receives signals from both spawn checks. Only then does it allow the scene to proceed, guaranteeing that all participants are ready and the scene can play out correctly.
 
 ***
+
+## **💬Choice Nodes**
+
+[`scnChoiceNode`](https://nativedb.red4ext.com/c/7416259956839667)
+
+{% hint style="info" %}
+This section simply just documents this node and some properties after experimenting in-game and educated guesses, it won't go in-depth as the sections above (though someone more experienced may help expand this section).
+{% endhint %}
+
+### What it does
+
+Choice nodes are responsible for showing the player a list of options to choose from in a given context (dialogue options, doing an action, etc.). For each option, you can define an output to continue the scene.
+
+### Properties
+
+#### `outputSockets`
+
+The output sockets for the node.
+
+#### `options`&#x20;
+
+[`scnChoiceNodeOption`](https://nativedb.red4ext.com/s/7172003163220256)&#x20;
+
+The list of options to display to the user, when defining options for a choice node (from what I understand), you must define the same amount of output sockets (starting from 0) to represent each option.
+
+Each options has various properties you can define, which effects how it will be presented to the player.
+
+**`scnChoiceNodeOption.iconTagIds`**
+
+An array of [TweakDB](../../for-mod-creators-theory/tweaks/tweaks/) IDs to display next to that specific option as an icon (though I'm not sure what happens if there are more than 1 ID). From what I see, these IDs should be an instance of the [`gamedataChoiceCaptionIconPart_Record`](https://nativedb.red4ext.com/c/271744142003442) table.
+
+As an example, here's how an option is displayed if it has the tag ID `ChoiceCaptionParts.SitIcon`.
+
+<figure><img src="../../.gitbook/assets/choice_nodes_options_icon_tags_example.png" alt=""><figcaption></figcaption></figure>
+
+**`scnChoiceNodeOption.screenplayOptionId`**
+
+This ID must match with an entry in the scene's `screenplayStore.options` collection, where there must be one entry that has an an `itemId` of the same number. Here
+
+The scene's `screenplayStore.options` contains a list of [`scnscreenplayChoiceOption`](https://nativedb.red4ext.com/s/7940123519578008), where it must have one entry that has an `itemId` of the same number. Here is also where you would set the `locstringId` for the option. For example, the image above has an id of `1603775378586464256`.
+
+#### `reminderParams`&#x20;
+
+[`scnChoiceNodeNsActorReminderParams`](https://nativedb.red4ext.com/c/4365044256379241)
+
+If used, this property helps define timers that determine how long until an NPC (possibly other entities too) reminds the player (when they say "Hey, V?", "I'm waiting", etc.).
+
+{% hint style="info" %}
+The number for timers should be in milliseconds (e.g. a timer with 60,000 represents 60 seconds).
+{% endhint %}
+
+**`reminderParams.waitTimeForReminderA`**
+
+Determines how long until the NPC reminds the player for the _**first**_ time.
+
+**`reminderParams.waitTimeForReminderB`**
+
+Determines how long until the NPC reminds the player for the _**second**_ time.
+
+**`reminderParams.waitTimeForReminderC`**
+
+Determines how long until the NPC reminds the player for the _**third**_ time.
+
+**`reminderParams.waitTimeForLooping`**
+
+Determines how long until the NPC reminds the player _**after the third**_ time.
+
+After the NPC reminds the player for the **third** time, the game then uses this timer for future reminders on a loop.​
+
+
+
+***

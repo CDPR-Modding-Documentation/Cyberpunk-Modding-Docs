@@ -4,7 +4,7 @@
 
 Last documented update: Mar 26 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page will tell you what the game's weak database is, and how you can use it to change or create game items.&#x20;
+This page will tell you what the game's tweak database is, and how you can use it to change or create game items.
 
 ### Wait, that's not what I want!
 
@@ -14,12 +14,12 @@ This page will tell you what the game's weak database is, and how you can use it
 
 ## What is the Tweak DB?
 
-Cyberpunk 2077 uses a single static database file, which registers and defines gameplay elements.&#x20;
+Cyberpunk 2077 uses a single static database file, which registers and defines gameplay elements.
 
 You can find it under [`Cyberpunk 2077`](#user-content-fn-1)[^1]`\r6\cache\tweakdb.bin`
 
 {% hint style="info" %}
-This file is not meant to be human-readable.&#x20;
+This file is not meant to be human-readable.
 {% endhint %}
 
 To create a new gameplay item, mod developers must [add](../../../modding-guides/items-equipment/adding-new-items/) to the Tweak DB.
@@ -238,8 +238,6 @@ Character.Jackie:
 
 ```
 
-
-
 </details>
 
 ### Data type: Flat
@@ -250,15 +248,13 @@ A flat is a key-value pair used by [records](./#data-type-record).
 characterType: NPCType.Human
 ```
 
-`characterType` is the **name** of the property, wheras `NPCType.Human` is the assigned **value**. \
+`characterType` is the **name** of the property, wheras `NPCType.Human` is the assigned **value**.\
 In this case, the syntax indicates an enum.
 
 The Tweak DB can be interacted with using Cyberpunk's official **REDmod**, or numerous community solutions such as **TweakXL**, **CET**, and **redscript**.
 
 * Via tweak file: [tweakxl](../../core-mods-explained/tweakxl/ "mention")
 * Via script: [Cyber Engine Tweaks](https://wiki.redmodding.org/cyber-engine-tweaks/) / redscript / Cyberpunk's official REDmod
-
-
 
 {% hint style="info" %}
 For an explanation of the TweakDB, browse this section, or check [TweakXL's github documentation](https://github.com/psiberx/cp2077-tweak-xl/wiki/TweakDB).
