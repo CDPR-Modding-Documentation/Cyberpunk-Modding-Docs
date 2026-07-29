@@ -15,10 +15,10 @@ description: How to use ArchiveXL's new material property interpolation
 
 ### Assumed skill level
 
-* You have a general understanding of how materials work (or read up on it under [#material-assignment](../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment "mention"))
+* You have a general understanding of how materials work (or read up on it under [#material-assignment](../../../files-and-what-they-do/file-formats/3d-objects-.mesh-files/#material-assignment "mention"))
 * You have a Wolvenkit project and a mesh as well as a bunch of .mlsetups
 
-## Why is this better than [.mi files](../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md)?
+## Why is this better than [.mi files](../../../files-and-what-they-do/file-formats/materials/re-using-materials-.mi.md)?
 
 Because it's even lazier: For a mesh with 15 appearances, you need...
 
@@ -32,14 +32,14 @@ Because it's even lazier: For a mesh with 15 appearances, you need...
 | #`chunkMaterials` lists | 15     | <mark style="color:green;">1</mark> |
 
 {% hint style="success" %}
-To be **even lazier**, check out [archivexl-resource-patching](archivexl-resource-patching/ "mention") and [archivexl-resource-linking.md](archivexl-resource-linking.md "mention")!
+To be **even lazier**, check out [archivexl-resource-patching](../archivexl-resource-patching/ "mention") and [archivexl-resource-linking.md](../archivexl-resource-linking.md "mention")!
 {% endhint %}
 
 ## The problem
 
 Normally, your materials look like this: a bunch of different appearances with the same `.mlmask`, but one `.mlsetup` file for each colour:
 
-<figure><img src="../../../.gitbook/assets/archivexl_non-dynamic_materials.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/archivexl_non-dynamic_materials.png" alt=""><figcaption></figcaption></figure>
 
 The more variations you have, the more duplication you have, because you need to register a `materialEntry` for each material, and then create a material for each of those. Traditionally, you do that by duplicating the last entry and changing the depot path. Tedious and not fun, right?
 
@@ -55,7 +55,7 @@ You can use any suffix and it will match up any material - e.g., if you'd use `r
 
 Instead of 15 `materialEntries`, we're down to one.
 
-<figure><img src="../../../.gitbook/assets/archivexl_dynamic_materials_the_instance" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/archivexl_dynamic_materials_the_instance" alt=""><figcaption></figcaption></figure>
 
 ## Step 2: the material instance
 
@@ -67,12 +67,12 @@ The Flags for any dynamic material must be set to `Soft`, and the depot path mus
 
 Since that one won't change, we can leave the `MultilayerMask` alone. For the MultilayerSetup, we need to change both the `DepotPath`:
 
-<figure><img src="../../../.gitbook/assets/image (345).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (345).png" alt=""><figcaption></figcaption></figure>
 
 * By making the depot path start with a `*`, we tell ArchiveXL that this is a dynamic material
 * The value for `{material}` will be passed from the appearance, like this:
 
-<figure><img src="../../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/image (346).png" alt=""><figcaption></figcaption></figure>
 
 ... and the rest just works.
 
@@ -86,7 +86,7 @@ But wait, there's more. After using dynamic materials, we've been able to reduce
 
 And it's very simple to do. You simply assign empty `chunkMaterials` lists to all your appearances except the first one, and ArchiveXL will automatically use the first appearance as a template and generate the `chunkMaterials` list by substituting the appearance name:
 
-<div align="left"><figure><img src="../../../.gitbook/assets/archiveXL_appearance_expansion.png" alt=""><figcaption></figcaption></figure></div>
+<div align="left"><figure><img src="../../../../.gitbook/assets/archiveXL_appearance_expansion.png" alt=""><figcaption></figcaption></figure></div>
 
 Now, you only have to maintain one chunk list, and the rest of your appearances are simplified down to a single name and nothing else.
 
@@ -102,7 +102,7 @@ Any appearances **without `chunkMaterials`** that come directly after the first 
 
 Internally, ArchiveXL will **copy the `chunkMaterials`**, then **replace the appearance name**.
 
-<figure><img src="../../../.gitbook/assets/mesh_appearances_auto_expansion.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/mesh_appearances_auto_expansion.png" alt=""><figcaption></figcaption></figure>
 
 ```
 arasaka                          6thstreet

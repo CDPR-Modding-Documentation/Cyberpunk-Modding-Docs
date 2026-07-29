@@ -19,7 +19,7 @@ This page explains **resource patching,** a very powerful ArchiveXL feature that
 Also allows you to reuse e.g. material definitions in multiple meshes, possibilities are endless!
 
 {% hint style="success" %}
-For the most efficient way to define multiple materials, check out [archivexl-dynamic-materials.md](../archivexl-dynamic-materials.md "mention")!
+For the most efficient way to define multiple materials, check out [archivexl-dynamic-materials](../archivexl-dynamic-materials/ "mention")!
 {% endhint %}
 
 ## Why do I need this?

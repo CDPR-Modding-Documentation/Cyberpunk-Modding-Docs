@@ -8,7 +8,7 @@ description: Material Instances and external materials
 
 **Published**: Apr 5 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") **Last documented update**: Aug 12 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will teach you how you can use `.mi` files to re-use materials across multiple meshes. By combining this with [archivexl-dynamic-materials.md](../../../core-mods-explained/archivexl/archivexl-dynamic-materials.md "mention"), this mechanic allows **maximum flexibility**.
+This guide will teach you how you can use `.mi` files to re-use materials across multiple meshes. By combining this with [archivexl-dynamic-materials](../../../core-mods-explained/archivexl/archivexl-dynamic-materials/ "mention"), this mechanic allows **maximum flexibility**.
 
 ###
 

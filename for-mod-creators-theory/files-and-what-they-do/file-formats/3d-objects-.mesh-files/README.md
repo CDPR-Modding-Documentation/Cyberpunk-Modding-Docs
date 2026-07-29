@@ -15,7 +15,7 @@ This page contains information on .mesh files, such as what they are, how the ga
 **Wait, that's not what I want!**
 
 * To export/import meshes, see [wkit-blender-plugin-import-export.md](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md "mention") -> [#meshes](../../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#meshes "mention")
-* To stop copy-pasting so much, check [archivexl-dynamic-materials.md](../../../core-mods-explained/archivexl/archivexl-dynamic-materials.md "mention") or [re-using-materials-.mi.md](../materials/re-using-materials-.mi.md "mention")
+* To stop copy-pasting so much, check [archivexl-dynamic-materials](../../../core-mods-explained/archivexl/archivexl-dynamic-materials/ "mention") or [re-using-materials-.mi.md](../materials/re-using-materials-.mi.md "mention")
 * To edit a mesh's appearance, check [changing-materials-colors-and-textures](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/ "mention")
   * If you just want to use a textured material, check [using-a-textured-material.md](../../../../modding-guides/items-equipment/editing-existing-items/changing-materials-colors-and-textures/using-a-textured-material.md "mention")
   * For a guided exercise, see [textured-items-and-cyberpunk-materials.md](../../../../modding-guides/textures-and-luts/textured-items-and-cyberpunk-materials.md "mention")
