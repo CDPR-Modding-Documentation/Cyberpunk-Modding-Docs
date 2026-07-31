@@ -7,12 +7,12 @@ description: >-
 # Basic Hairstyle Replacement Tutorial
 
 **Published:** March 15 2024 by D.I.S.C.O\
-**Last documented update**: March 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update**: March 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will teach you how to&#x20;
+This guide will teach you how to
 
 * port a hair mesh from a different game to Cyberpunk
-* add physics ("dangle bones") to parts of it&#x20;
+* add physics ("dangle bones") to parts of it
 * use the UUH4V framework to avoid conflict with NPCS
 
 ### Wait, this is not what I want!
@@ -48,16 +48,16 @@ Begin by importing the player’s head. This will allow you to adjust your mesh 
 2. [Export the mesh](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#export-from-wolvenkit) from Wolvenkit
 3. [Import the mesh](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-import-export.md#importing-into-blender) into Blender
 
-<img src="https://lh7-us.googleusercontent.com/c7r1m8lnmv4ZQKUBMP80hb1KfXuB3zkouaU8KxfVHCI-b_8Zxo8MHAvo7E2ATDEowIPsLtpPCkpAEdpWJ8ybDIqe-adatU5HQpqkOpYJ8dt0I9gLaJHYmMBbV6H_9CBuOQHshWPlxMjJHyUFBre4IFw" alt="" data-size="original">![](https://lh7-us.googleusercontent.com/2Ezimo8M6XC82ieS8jtJlYi_rHTaWqBRsqIb3ARPUM3cQoakKTJ84gWpu9Xn3TU0MLVDNiBnvC-kQYmaBCsOAnR2ELH0fi4SH7MCLvvohUyvszhnYOy8UG4AOHMBBQ95folmwBov8PZ_OUFQbcY-Ig8)
+![](https://lh7-us.googleusercontent.com/c7r1m8lnmv4ZQKUBMP80hb1KfXuB3zkouaU8KxfVHCI-b_8Zxo8MHAvo7E2ATDEowIPsLtpPCkpAEdpWJ8ybDIqe-adatU5HQpqkOpYJ8dt0I9gLaJHYmMBbV6H_9CBuOQHshWPlxMjJHyUFBre4IFw) ![](https://lh7-us.googleusercontent.com/2Ezimo8M6XC82ieS8jtJlYi_rHTaWqBRsqIb3ARPUM3cQoakKTJ84gWpu9Xn3TU0MLVDNiBnvC-kQYmaBCsOAnR2ELH0fi4SH7MCLvvohUyvszhnYOy8UG4AOHMBBQ95folmwBov8PZ_OUFQbcY-Ig8)
 
 ### Adjusting the hair
 
-1. Import your hairstyle mesh. \
+1. Import your hairstyle mesh.\
    This tutorial is using the Festive Hunter’s hairstyle from Nier Reincarnation, since a future version of this tutorial will also cover the addition of ornaments to your hair
 
 ![](https://lh7-us.googleusercontent.com/DqWvm3pd9kU2DRY7KRYVfStxPWIJegTPAICZKHHqCi8esvj1uv1h_OdfaQ9FKdeTmP_aOw_Ns2-hDdsZq9EozTwT9iIA6oqnIYB5XdDW36HilS4G5XkFGpca2yrf2OjDWR0rPAPdkkgB8axunJ83hcc)
 
-2. The modded hair will come with its own armature (bones), modifiers and materials. Delete all those, since you don't need them:&#x20;
+2. The modded hair will come with its own armature (bones), modifiers and materials. Delete all those, since you don't need them:
    * Bones: The "armature" object in the Outliner (top right panel)
    * Vertex groups: In the "data" tab (green triangle) under object properties (bottom right panel)
    * Modifiers: In the "modifiers" tab (orange wrench)
@@ -66,7 +66,7 @@ Begin by importing the player’s head. This will allow you to adjust your mesh 
 
 ![](https://lh7-us.googleusercontent.com/SG7_PIkHi6MyWwUNKNxLGZmnmtTTfflsUl4zsdiR-VaJSbxMY7h_-9pN-75hO8jf88PatAAz7hySLYTQkF0YF3TyCFq66zQxwO1mQZPolEwQDGKAy5bp-ExMc1BUnbYGfIiAg2mXrAWXnaOARY6VVCM)
 
-3. Reposition and refit the hairstyle to fit V's head.&#x20;
+3. Reposition and refit the hairstyle to fit V's head.
 
 {% hint style="info" %}
 Be sure to check around the edges of the hairstyle to avoid clippings with the head.
@@ -82,9 +82,7 @@ Unlike clothes, most head meshes only have one bone: `Head`. More complex design
 2. Switch to Edit mode (Hotkey: `Tab`)
 3. Select all vertices (Hotkey: `A`)
 4. In the `Data` tab of the Properties panel (green triangle), create the `Head` entry (see screenshot below)
-5. Click on `Assign`&#x20;
-
-
+5. Click on `Assign`
 
 <figure><img src="https://lh7-us.googleusercontent.com/VHjAZsEyg3F9jANWC0pOL0WQymSHMJrOMZZ6DQ4odapLefFfhmR_vBjzSWsBb5rTSABMFj8q99StXSEcyiLQGPW4HkntooIloG-E1pQBUib126EWMIQ6jpEVmJKdVpKPDoc24L4cOhwzwPIbV9ojEdk" alt=""><figcaption></figcaption></figure>
 
@@ -121,7 +119,7 @@ Remember when I said “like a helmet”? That also means your hair will not hav
 You always have to do this, even if you want to add your hair via ArchiveXL as a wig.
 {% endhint %}
 
-Search for a vanilla hairstyle from the game that resembles your physics part the most, and export them with Wolvenkit.&#x20;
+Search for a vanilla hairstyle from the game that resembles your physics part the most, and export them with Wolvenkit.
 
 {% hint style="info" %}
 You can find overviews of all existing hair styles under [hair.md](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/hair.md "mention")
@@ -143,13 +141,11 @@ I've done this enough time to have some experience regarding which mesh should I
 
 ![](https://lh7-us.googleusercontent.com/dfrzjeTG6X-6tnGvo-257aTNIB3A_QBhKJae8WfhQHhU4_VE-e8dDtkN2pwCL5Wuege2UNFa3N9JaJsARC-rdZOmwVzPK1WkWbTs6X19NJhobOQJg2lNsy72cijeZBRrjYmcO14NHznQWif587fQGBo)
 
-_While you can put your ornaments and hairstyle together, I recommend keeping them separate. You can import any head item and use its armature instead. This is my personal preference to keep things tidy, to avoid confusion when we handle hair’s material and texture later. It’s best that you keep the hair and ornament in two separate mesh files._&#x20;
+_While you can put your ornaments and hairstyle together, I recommend keeping them separate. You can import any head item and use its armature instead. This is my personal preference to keep things tidy, to avoid confusion when we handle hair’s material and texture later. It’s best that you keep the hair and ornament in two separate mesh files._
 
 -And we are now done with the Mesh Section, but we can’t export it just yet. We need to make sure that our hair will actually show up as hair in the game, so we shall move on to the next part.
 
 ![](https://lh7-us.googleusercontent.com/oZssWeROO7BeHPG9Rz7LHloNLX4h4kK_rZJShBGyQezxdfVU3J6Auu4A6UKxphzfe5Mr8zWmK6vH3yP56_iTjtZt2cv-v4vo_ooRP7jMMr6wXueClE-sP54gznn9fRGF7MVN22JB8Hnev6WByHcPgc0)
-
-
 
 ## The Texture
 
@@ -167,7 +163,7 @@ Excluding beards, caps and private hairs, CP2077 has 5 types of hair textures. E
 
 **Short straight strands** - `base\characters\common\hair\textures\hh_short01_alpha01_r.xbm`
 
-Most hairstyles I see use long straight strands, but don’t be afraid to use other types of hair and experiment with them.&#x20;
+Most hairstyles I see use long straight strands, but don’t be afraid to use other types of hair and experiment with them.
 
 Keep in mind that no matter what type you choose, you will always need three accompanying texture files for the hair texture to work properly. These files are `gradient`, `id` and `flow`. You can find them by replacing `alpha` in the file name with any of the terms above.
 
@@ -177,9 +173,25 @@ Keep in mind that no matter what type you choose, you will always need three acc
 
 ![](https://lh7-us.googleusercontent.com/hggdgqoO_MnS91zYsrvdYxfUqErapBSaYjrxIqCB3oeSAwIm4JKpEs5IpOTFFq4H1hdAy9EVEj_hEuGW2Zjz7QMLbAa4A61wh3o2JjFaWzurFvMkwkC34UdEurFnSN-ebhTV2l8WXPcFwGZjWtg2f3s)
 
-This is how your UV should ideally look like. Everything is where the alpha will work.&#x20;
+This is how your UV should ideally look like. Everything is where the alpha will work.
 
 ![](https://lh7-us.googleusercontent.com/mCiabspnfeyj-RuZMMWQfDHQPdY16m1Q3d0DvA7D9oQQwFItpW0RDml7Hma7iuBaZLvY5aK5d-8uYfYSjqRBeF0S5dwvKGbswI_JMClEvoUbifbRR2HicRaPgFB5bmGY3VeF74xvVyGke_gOXPQ1heE)
+
+#### Additional tips for editing UV Maps
+
+{% file src="../../../.gitbook/assets/hair_card_uvs_islanddancer.mp4" %}
+
+**Blender Shortcuts:**
+
+**H** = hide\
+**Alt + H** = unhide\
+**S** = scale\
+**S X** = scale (constrain to x-axis)\
+**S Y** = scale (constraint to y-axis)\
+**L** = select all contiguous geometry (select an entire single hair card)\
+**A** = select all
+
+&#x20;                      <sup>Thanks to</sup> [<sup>IslandDancer</sup>](https://www.nexusmods.com/profile/IslandDancer/mods) <sup>for</sup> [<sup>providing the preview video</sup>](https://discord.com/channels/717692382849663036/786891742829215745/1409260520346746940) <sup>and essential shortcuts.</sup>
 
 You can preview how your hair will look in Blender by creating a material and importing all the textures mentioned above. This part is optional, but it's nice to check for gaps before you export.
 
@@ -195,11 +207,9 @@ You can preview how your hair will look in Blender by creating a material and im
 
 This is what your mesh should look like. The black and white represents how hair color gradients will show itself on your hairstyle. Black is the root color., white is the tip color.
 
-![](https://lh7-us.googleusercontent.com/UKY62V9EKjuFtVwHtB-mAaQWM5GZnXsiq7rybKQ_laoHieuGspFhlBJGfA65hgb9W3gNAXyGdQgOa9Au3ydcL2jftMuTVUEdt6a4jPH9XrvJsn88ZzYhIvbvv2uMKdWB2_iFVfRz6eTf_AkACp5Jylw)![](https://lh7-us.googleusercontent.com/LK9Wl4VrmZtVpIhHxgcrSG-O-eIrp_yBkrno5rTJbhYaJnAuRs98lKwzaISjmeZUnYZ8BRtqegn0oSeBBpN78mHUoo7JywvXgc-gcA9pli1H1tsS2sFn4Wr8UVRdgY6zi-rCWkhj6bawxYHlYgOVNlQ)
+![](https://lh7-us.googleusercontent.com/UKY62V9EKjuFtVwHtB-mAaQWM5GZnXsiq7rybKQ_laoHieuGspFhlBJGfA65hgb9W3gNAXyGdQgOa9Au3ydcL2jftMuTVUEdt6a4jPH9XrvJsn88ZzYhIvbvv2uMKdWB2_iFVfRz6eTf_AkACp5Jylw) ![](https://lh7-us.googleusercontent.com/LK9Wl4VrmZtVpIhHxgcrSG-O-eIrp_yBkrno5rTJbhYaJnAuRs98lKwzaISjmeZUnYZ8BRtqegn0oSeBBpN78mHUoo7JywvXgc-gcA9pli1H1tsS2sFn4Wr8UVRdgY6zi-rCWkhj6bawxYHlYgOVNlQ)
 
 -Now you can export your mesh.
-
-
 
 ## Wolvenkit
 
@@ -235,8 +245,6 @@ Oh right, we got a hat, don’t we?
 
 The hat’s texture is the same as any other item in the game. You can use MultilayerSetup files or metal\_base.remt, it’s all up to you. Check [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators/materials/configuring-materials) if you don’t know how to do that.
 
-
-
 -Replace another mesh other than what you have for your hairstyle, and install the mod.
 
 ![](https://lh7-us.googleusercontent.com/BfsyEaDDuNuoVFmCXfq_iGeZ8xh1AanfME-Zt-htODX0qvQlNTks8Ol8bTiXOYJFczk2j84hRonR2cSQ5yTtShJOYBW4rrS8AWmHpJFnxbjDcWKDAgq5CA5I8mGeLzDdTtA9m2LuVkpngEq7QR7fgj8)
@@ -245,4 +253,4 @@ _**Tadaa! A simple hairstyle replacement with a fancy hat.**_
 
 <figure><img src="../../../.gitbook/assets/Picture3.png" alt=""><figcaption><p>A complete hairstyle replacement, just like what I wanted.</p></figcaption></figure>
 
-\
+\\

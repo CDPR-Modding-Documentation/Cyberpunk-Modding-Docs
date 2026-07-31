@@ -330,7 +330,7 @@ We'll configure the materials first, then update the appearances to use them.
 2. Select the first material (`CMaterialInstance`)
 3. Right-click, and select `Rename Material`. If you do not have this option, you have selected the wrong thing.
 4. Name it something that you can remember (e.g. `textured_1`, or `sword_metal` )\
-   &#xNAN;_&#x44;oing this will make the entry in `materialEntries` change._ \
+   _&#x44;oing this will make the entry in `materialEntries` change._ \
    _Alternatively, you can also use this entry directly, but that won't update material names in the appearances._
 5. Change `baseMaterial` to `engine\materials\metal_base.remt` — that will make it a textured material
 6. Click on the `values` array

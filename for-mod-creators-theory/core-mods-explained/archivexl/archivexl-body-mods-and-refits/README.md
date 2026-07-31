@@ -139,7 +139,7 @@ If that still doesn't work, consider using the [template from Nexus](https://www
 #### Invisible mesh for body xyz
 
 Make sure that your mesh has appearances and materials. If you are using [archivexl-resource-patching](../archivexl-resource-patching/ "mention"), it's easy to forget a new body's mesh in the list like a gonk. \
-&#xNAN;_&#x54;his has totally never happened to the author, by the way._
+_&#x54;his has totally never happened to the author, by the way._
 
 ## Clothing mods: Making use of the tags
 
