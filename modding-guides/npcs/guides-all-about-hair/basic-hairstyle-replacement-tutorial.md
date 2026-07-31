@@ -151,65 +151,7 @@ _While you can put your ornaments and hairstyle together, I recommend keeping th
 
 If you are porting a hairstyle from another game, it is highly recommended that you just adapt the UV of your hairstyle to fit CP2077’s shared hair texture instead of using the original texture. This will allow your hair to use the game’s hair color system, as well as saving you a lot of hassle when handling the materials.
 
-Excluding beards, caps and private hairs, CP2077 has 5 types of hair textures. Export them from Wkit and add them into Blender so that you can use it as reference for UV editing.
 
-**Curly hair strands** - `base\characters\common\hair\textures\hh_curly01_alpha01_r.xbm`
-
-**Dreadlocks** - `base\characters\common\hair\textures\hh_dread01_alpha01_r.xbm`
-
-**Kinky hair strands** - `base\characters\common\hair\textures\hh_kinky01_alpha01_r.xbm`
-
-**Long straight strands** - `base\characters\common\hair\textures\hh_long01_alpha01_r.xbm`
-
-**Short straight strands** - `base\characters\common\hair\textures\hh_short01_alpha01_r.xbm`
-
-Most hairstyles I see use long straight strands, but don’t be afraid to use other types of hair and experiment with them.
-
-Keep in mind that no matter what type you choose, you will always need three accompanying texture files for the hair texture to work properly. These files are `gradient`, `id` and `flow`. You can find them by replacing `alpha` in the file name with any of the terms above.
-
--Open UV Editing and edit the UV to fit the white parts of the alpha texture. The black parts of the alpha map are where the mesh will be transparent, thus creating the image of strands of hair. Keep in mind that the hair root is pointing upwards, while the hair tip is pointing downwards. The direction is important for gradient handling. Scale and rotate the UV to fit the alpha.
-
-![](https://lh7-us.googleusercontent.com/sMGwNj0bVINtWOIUmThTeEV2wptuKX8DkygMnEe0wTskuBla2a37jonKhsUJc24aF19kVVwOL3D15zge9knyme31RvkDWh4MWSaXRpp-pn77FFa2jlrlWp1oCAyz610Z5MIglB6d-QC0JZJBvl2qktY)
-
-![](https://lh7-us.googleusercontent.com/hggdgqoO_MnS91zYsrvdYxfUqErapBSaYjrxIqCB3oeSAwIm4JKpEs5IpOTFFq4H1hdAy9EVEj_hEuGW2Zjz7QMLbAa4A61wh3o2JjFaWzurFvMkwkC34UdEurFnSN-ebhTV2l8WXPcFwGZjWtg2f3s)
-
-This is how your UV should ideally look like. Everything is where the alpha will work.
-
-![](https://lh7-us.googleusercontent.com/mCiabspnfeyj-RuZMMWQfDHQPdY16m1Q3d0DvA7D9oQQwFItpW0RDml7Hma7iuBaZLvY5aK5d-8uYfYSjqRBeF0S5dwvKGbswI_JMClEvoUbifbRR2HicRaPgFB5bmGY3VeF74xvVyGke_gOXPQ1heE)
-
-#### Additional tips for editing UV Maps
-
-{% file src="../../../.gitbook/assets/hair_card_uvs_islanddancer.mp4" %}
-
-**Blender Shortcuts:**
-
-**H** = hide\
-**Alt + H** = unhide\
-**S** = scale\
-**S X** = scale (constrain to x-axis)\
-**S Y** = scale (constraint to y-axis)\
-**L** = select all contiguous geometry (select an entire single hair card)\
-**A** = select all
-
-&#x20;                      <sup>Thanks to</sup> [<sup>IslandDancer</sup>](https://www.nexusmods.com/profile/IslandDancer/mods) <sup>for</sup> [<sup>providing the preview video</sup>](https://discord.com/channels/717692382849663036/786891742829215745/1409260520346746940) <sup>and essential shortcuts.</sup>
-
-You can preview how your hair will look in Blender by creating a material and importing all the textures mentioned above. This part is optional, but it's nice to check for gaps before you export.
-
--Create a material and assign it on your mesh before opening the Shading tab.
-
--Connect alpha texture to Alpha slot of Principled BDSF.
-
--Create a mix node, set to color and multiply. Connect id texture to slot A and gradient texture to slot B, and connect the output of the multiply node to a Gamma node and set the value to 2.4. Connect the output of the Gamma node to Base Color of Principled BDSF.
-
--Connect flow texture to Rebuild Normal Z to Normal Map to Tangent of Principled BDSF.
-
--Turn on Viewport Shading.
-
-This is what your mesh should look like. The black and white represents how hair color gradients will show itself on your hairstyle. Black is the root color., white is the tip color.
-
-![](https://lh7-us.googleusercontent.com/UKY62V9EKjuFtVwHtB-mAaQWM5GZnXsiq7rybKQ_laoHieuGspFhlBJGfA65hgb9W3gNAXyGdQgOa9Au3ydcL2jftMuTVUEdt6a4jPH9XrvJsn88ZzYhIvbvv2uMKdWB2_iFVfRz6eTf_AkACp5Jylw) ![](https://lh7-us.googleusercontent.com/LK9Wl4VrmZtVpIhHxgcrSG-O-eIrp_yBkrno5rTJbhYaJnAuRs98lKwzaISjmeZUnYZ8BRtqegn0oSeBBpN78mHUoo7JywvXgc-gcA9pli1H1tsS2sFn4Wr8UVRdgY6zi-rCWkhj6bawxYHlYgOVNlQ)
-
--Now you can export your mesh.
 
 ## Wolvenkit
 

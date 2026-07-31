@@ -327,6 +327,7 @@
     * [Custom Hair Colours](modding-guides/npcs/guides-all-about-hair/custom-hair-colours/README.md)
       * [How to convert a CCXL hair color into a replacer](modding-guides/npcs/guides-all-about-hair/custom-hair-colours/how-to-convert-a-ccxl-hair-color-into-a-replacer.md)
     * [Hair: Vertex paint for transparency](modding-guides/npcs/guides-all-about-hair/hair-vertex-paint-for-transparency.md)
+    * [Hair: Use Cyberpunk's materials](modding-guides/npcs/guides-all-about-hair/hair-use-cyberpunks-materials.md)
   * [For V - Changing V's Head](modding-guides/npcs/a-new-head-for-v.md)
   * [For V: Creating facial cyberware](modding-guides/npcs/creating-facial-cyberware.md)
   * [For V and NPC - Rig deforming](modding-guides/npcs/rig-deforming-for-v/README.md)
