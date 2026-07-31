@@ -89,8 +89,8 @@ Now, we change the hair in Blender to use Cyberpunk's material.
 
 <figure><img src="../../../.gitbook/assets/blender_create_new_material.png" alt=""><figcaption></figcaption></figure>
 
-7. Find the list near the top. You should have a material there; if not, click the + button
-8. From the dropdown on the bottom left of the list, select the hair material that came with the import of the hair mesh
+5. Find the list near the top. You should have a material there; if not, click the + button
+6. From the dropdown on the bottom left of the list, select the hair material that came with the import of the hair mesh
 
 Your hair should now show Cyberpunk's hair material (and probably looks terrible).
 
