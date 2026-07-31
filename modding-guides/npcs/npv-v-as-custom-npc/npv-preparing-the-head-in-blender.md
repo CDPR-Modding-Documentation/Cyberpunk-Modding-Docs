@@ -47,6 +47,23 @@ The final section of [npv-creating-a-custom-npc.md](npv-creating-a-custom-npc.md
 
 ## Step 1: Getting head
 
+<details>
+
+<summary>Adding files from a custom head</summary>
+
+{% hint style="info" %}
+You only need this  if you are using a custom character creator or player head - otherwise, you can skip this section and go straight to [#step-1-getting-head](npv-preparing-the-head-in-blender.md#step-1-getting-head "mention").
+{% endhint %}
+
+1. Switch the Asset browser to [Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) by toggling the button
+2. Enter the following search query (pick your body gender):\
+   female: `base\characters\head\player_base_heads\player_female_average > .morphtarget` \
+   male: `base\characters\head\player_base_heads\player_man_average > .morphtarget`
+3. Add all these files to your project
+4. Overwrite the files in the template project with the ones you just added
+
+</details>
+
 1.  Open the `head` folder in your project's `archive` section.
 
     1. **Optional:** Be confused and/or panic about why there are [over 9000](#user-content-fn-1)[^1] files
