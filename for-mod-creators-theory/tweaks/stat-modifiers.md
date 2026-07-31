@@ -3,7 +3,7 @@
 ## Summary
 
 **Published:** Jan 17 2025 by Apart\
-**Last documented edit:** Jan 17 2025 by Apart
+**Last documented edit:** July 31 2026 by Apart
 
 An explanation of the various kinds of stat modifiers and modifier types and how to use them.
 
@@ -35,12 +35,14 @@ An additive modifier type "adds" to a stat. It is also possible to subtract usin
 
 We have a weapon that has a base value (a) of 5% Crit Chance. We'd like to add another 5% Crit Chance (b), using the following formula: (a+b=10)
 
+{% code lineNumbers="true" %}
 ```yaml
 $type: ConstantStatModifier
 statType: BaseStats.CritChance
 modifierType: Additive
 value: 5.0
 ```
+{% endcode %}
 
 ### Multiplier
 
@@ -50,7 +52,7 @@ A multiplier modifier "multiplies" a stat. A multiplier stat can also be used to
 
 We have a weapon that has a base value (a) of 5% Crit Chance. We'd like to double our Crit Chance to 10%, using the following formula: (a\*b=10)
 
-<pre class="language-yaml"><code class="lang-yaml"><strong>$type: ConstantStatModifier
+<pre class="language-yaml" data-line-numbers><code class="lang-yaml"><strong>$type: ConstantStatModifier
 </strong>statType: BaseStats.CritChance
 modifierType: Multiplier
 value: 2.0
@@ -58,44 +60,50 @@ value: 2.0
 
 We have a weapon that has a base value (a) of 5% Crit Chance. We'd like to remove our Crit Chance by making it 0, using the following formula: (a\*b=0)
 
+{% code lineNumbers="true" %}
 ```yaml
 $type: ConstantStatModifier
 statType: BaseStats.CritChance
 modifierType: Multiplier
 value: 0.0
 ```
+{% endcode %}
 
 ### AdditiveMultiplier
 
-An additive multiplier "adds" something to a stat by "multiplying" it.&#x20;
+An additive multiplier "adds" something to a stat by "multiplying" it.
 
 #### Example(s)
 
 We have a weapon that has a base value (a) of 100% Crit Damage. We'd like to add an additional 20% Crit Damage, using the following formula: (a+(a\*b)=120)
 
+{% code lineNumbers="true" %}
 ```yaml
 $type: ConstantStatModifier
 statType: BaseStats.CritDamage
 modifierType: AdditiveMultiplier
 value: 0.2
 ```
+{% endcode %}
 
 ## Stat Modifier Types
 
 ### Constant Stat Modifiers
 
-The stat modifier we've used in the previous step for our examples, a constant stat modifier, is the most commonly used type of stat modifier there is.&#x20;
+The stat modifier we've used in the previous step for our examples, a constant stat modifier, is the most commonly used type of stat modifier there is.
 
 #### Example(s)
 
 A basic stat modifier that adds Crit Damage.
 
+{% code lineNumbers="true" %}
 ```yaml
 $type: ConstantStatModifier
 statType: BaseStats.CritDamage
 modifierType: Additive
 value: 100.0
 ```
+{% endcode %}
 
 ### Combined Stat Modifiers
 
@@ -105,6 +113,7 @@ Combined stat modifiers take one stat, and use one other stat to change it, comb
 
 A combine stat modifier that increases Crit Chance by 2% for each quality level.
 
+{% code lineNumbers="true" %}
 ```yaml
 $type: CombinedStatModifier
 statType: BaseStats.CritDamage
@@ -114,6 +123,20 @@ refObject: Root
 opSymbol: "*"
 value: 2.0
 ```
+{% endcode %}
+
+#### Operation Symbols
+
+The opSymbol is short for [Operation Symbol](https://en.wikipedia.org/wiki/Glossary_of_mathematical_symbols#Arithmetic_operators). The operation symbol for multiplication (asterisk) is the most frequently used, but all other operation symbols (+, -, /) are also supported, using the following formula:&#x20;
+
+```
+(refStat from refObject) opSymbol (value) = result
+```
+
+However, there are also other custom operation symbols.
+
+* **inv** - Changes the formula to `(value) / (refStat from refObject) = result`
+* **\*(1-x)** - Changes the formula to `(value) opSymbol (1 - refStat from refObject) = result`
 
 ### Curve Stat Modifiers
 
