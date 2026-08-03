@@ -164,12 +164,12 @@ public class MyModEnabledEvents extends DefaultTransition {
     // do whatever you want here to set up the state
   }
 
-  protected func OnUpdate(stateContext: ref<StateContext>, scriptInterface: ref<StateGameScriptInterface>) -> Void {
+  protected func OnUpdate(timeDelta: Float, stateContext: ref<StateContext>, scriptInterface: ref<StateGameScriptInterface>) -> Void {
     // will run as often as it can
   }
   
   // you can also use an Ontick with a custom tickRate instead
-  // protected func OnTick(stateContext: ref<StateContext>, scriptInterface: ref<StateGameScriptInterface>) -> Void { }
+  // protected func OnTick(timeDelta: Float, stateContext: ref<StateContext>, scriptInterface: ref<StateGameScriptInterface>) -> Void { }
   
   protected func OnExit(stateContext: ref<StateContext>, scriptInterface: ref<StateGameScriptInterface>) -> Void {
     // clean-up whatever you did in this state
@@ -188,7 +188,7 @@ In the tweak group, `transitionTo` is an array of the state names that it can tr
 
 {% columns %}
 {% column %}
-`transitionCondition` is `"="`&#x20;
+`transitionCondition` is `"="`
 
 Call a `To[stateName]()` method prior to attempting to transition - this is how the disabled-to-enabled transition is defined, and will be decided by `MyModDisabledDecisions`'s `ToMyModEnabled()`
 {% endcolumn %}
@@ -210,7 +210,7 @@ Usually state machines prefer one method over the other, but in more complicated
 
 In your `Decisions` class, you can also use `this.EnableOnEnterCondition([true || false])` to turn on/off the EnterCondition checking of that state, which can reduce execution time for more expensive checks - the game will often use this with listeners on blackboard variables (setup in `OnAttach` & destructed in `OnDeatch`).
 
-The `alias`  in the tweak group is a list of names that this state can also be referred to, and can then be used in the `transitionTo` list. This prevents you from having to list many states with the same transition conditions, and is useful for sub-state-machine definitions. See `allVehicleContexts` in the InputContext state machine for examples.
+The `alias` in the tweak group is a list of names that this state can also be referred to, and can then be used in the `transitionTo` list. This prevents you from having to list many states with the same transition conditions, and is useful for sub-state-machine definitions. See `allVehicleContexts` in the InputContext state machine for examples.
 
 ### Starting/Stopping the State Machine
 
