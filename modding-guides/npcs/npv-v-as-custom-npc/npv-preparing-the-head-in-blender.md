@@ -310,4 +310,9 @@ If that's not it, then you ran into the shapekey offset issue: some shapekeys do
 
 Check [a-new-head-for-v.md](../a-new-head-for-v.md "mention") -> [#troubleshooting](../a-new-head-for-v.md#troubleshooting "mention")
 
+### My head is an abomination!
+
+Custom-sculpted player heads don't take kindly to face sliders being applied (the result may look like squished putty). \
+Run your morphtargets through Blender again, but this time, **skip the step** that applies the character creator sliders, or set all numbers to 1.
+
 [^1]: not literally
