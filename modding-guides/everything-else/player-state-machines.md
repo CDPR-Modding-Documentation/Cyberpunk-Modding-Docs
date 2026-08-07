@@ -1,13 +1,24 @@
 ---
-description: How to manipulate existing PSMs, or create your own.
+description: How PSMs work and how to create your own.
 ---
 
-# Player State Machines
+# Creating Player State Machines
 
-A basic state machine (that'll we'll refer to as `MyMod` in this guide) that you can start/stop as needed can be created by using [TweakXL](../../for-mod-creators-theory/core-mods-explained/tweakxl/) tweaks (all .tweak files in this guide) and [Redscript](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/) classes.
+## **Summary**
+
+**Published**: ?? by [Jack Humbert](https://app.gitbook.com/u/59174977a63c61001282b010 "mention")\
+**Last documented update**: Aug 8 2026 by [Zhincore](https://app.gitbook.com/u/OsI9JXgCSSbt40hb327iBDif7Xv1 "mention")
+
+This guide shows how to create and use your own Player State Machine and explains how they work.
+
+## Registering a PSM
+
+A basic state machine (that'll we'll refer to as `MyMod` in this guide) that you can start/stop as needed can be created by using [TweakXL](../../for-mod-creators-theory/core-mods-explained/tweakxl/) tweaks and [Redscript](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/-McniwB8YOK2HnJ7SYg_/) classes. You can pick whether you prefer .tweak format (closer to original and REDmod tweaks) or .yaml.
 
 The basic thing needed is your state machine being added to the definition list flats:
 
+{% tabs %}
+{% tab title=".tweak" %}
 {% code title="stateMachine.tweak" %}
 ```fsharp
 playerStateMachine {
@@ -17,6 +28,19 @@ playerStateMachine {
 }
 ```
 {% endcode %}
+{% endtab %}
+
+{% tab title=".yaml" %}
+{% code title="stateMachine.yaml" %}
+```yaml
+playerStateMachine.stateMachineListDefinitions:
+	- !append playerStateMachineDefinitions.MyMod
+playerStateMachine.stateMachineList_prePhysics:
+	- !append MyMod
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
 
 {% hint style="info" %}
 You can use `stateMachineList_postPhysics` instead if you'd like - only the `Crosshair` state machine uses this.
@@ -24,6 +48,8 @@ You can use `stateMachineList_postPhysics` instead if you'd like - only the `Cro
 
 You'll also need to create a group like this:
 
+{% tabs %}
+{% tab title=".tweak" %}
 {% code title="stateMachine.tweak" %}
 ```fsharp
 playerStateMachine.MyMod {
@@ -34,11 +60,29 @@ playerStateMachine.MyMod {
 }
 ```
 {% endcode %}
+{% endtab %}
+
+{% tab title=".yaml" %}
+{% code title="stateMachine.yaml" %}
+```yaml
+playerStateMachine.MyMod.typeName: MyMod
+playerStateMachine.MyMod.definitionName: MyMod
+playerStateMachine.MyMod.default: False
+```
+{% endcode %}
+
+{% hint style="info" %}
+.yaml tweaks indeed don't have groups. Doing `playerStateMachine.MyMod: { typeName: MyMod }` does NOT work as State Machines use **flats**, not records.
+{% endhint %}
+{% endtab %}
+{% endtabs %}
 
 * `default` will tell the game whether or not to start the state machine automatically - in this case, we want to control when it starts and assign the owner manually, so we'll set it to false.
 
 And the actual definition:
 
+{% tabs %}
+{% tab title=".tweak" %}
 {% code title="stateMachine.tweak" %}
 ```fsharp
 playerStateMachineDefinitions.MyMod {
@@ -61,10 +105,38 @@ playerStateMachineDefinitions.MyMod {
 ```
 {% endcode %}
 
-### State Definitions
+
+{% endtab %}
+
+{% tab title=".yaml" %}
+{% code title="stateMachine.yaml" overflow="wrap" %}
+```yaml
+# Note the n"", it is marking the value as CName data type
+playerStateMachineDefinitions.MyMod.stateMachineBodyName: n"gamestateMachineStateMachineBody"
+
+playerStateMachineDefinitions.MyMod.name: MyMod
+playerStateMachineDefinitions.MyMod.type: MyMod
+	
+# the prefix used in your state definitions below
+playerStateMachineDefinitions.MyMod.packageName: playerStateMachineMyMod
+	
+# a list of all state tweak groups, without the package name
+playerStateMachineDefinitions.MyMod.states:
+	- myModEnabled
+	-	myModDisabled
+	
+playerStateMachineDefinitions.MyMod.startingState: myModDisabled
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
+
+## State Definitions
 
 Finally, you'll need to add each of your states as groups (not a record - just a list of flats) - we'll start with the disabled state, since that's the initial state of the machine:
 
+{% tabs %}
+{% tab title=".tweak" %}
 {% code title="stateMachine.tweak" %}
 ```fsharp
 playerStateMachineMyMod.myModDisabled {
@@ -81,7 +153,7 @@ playerStateMachineMyMod.myModDisabled {
 	bool hasOnTick = false;
 	float tickRate = 0.2;
 	
-	// these two arrays much match in length
+	// these two arrays must match in length
 	string[] transitionTo = [ 
 		"myModEnabled"
 	];
@@ -92,9 +164,36 @@ playerStateMachineMyMod.myModDisabled {
 ```
 {% endcode %}
 
+
+{% endtab %}
+
+{% tab title=".yaml" %}
+{% code title="" overflow="wrap" %}
+```yaml
+playerStateMachineMyMod.myModDisabled.affinity: n"None"
+playerStateMachineMyMod.myModDisabled.alias: []
+	
+# each of these controls whether the function is used
+playerStateMachineMyMod.myModDisabled.hasEnterCondition: true
+playerStateMachineMyMod.myModDisabled.hasExitCondition: false
+playerStateMachineMyMod.myModDisabled.hasOnEnter: true
+playerStateMachineMyMod.myModDisabled.hasOnExit: false
+playerStateMachineMyMod.myModDisabled.hasOnUpdate: false
+playerStateMachineMyMod.myModDisabled.hasOnTick: false
+playerStateMachineMyMod.myModDisabled.tickRate: 0.2
+
+# these two arrays must match in length
+playerStateMachineMyMod.myModDisabled.transitionTo: [ "myModEnabled" ]
+playerStateMachineMyMod.myModDisabled.transitionCondition: [ "=" ]
+# uses MyModDisabledDecisions.ToMyModEnabled()
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
+
 On the Redscript side, you can use two different classes to affect your state, a `Decisions` class, and an `Events` class, both of which are prefixed by your state's name with the first letter capitalized - the same modification is needed for any `To[stateName]()` (e.g. `ToMyModEnabled()`) functions:
 
-{% code title="MyModStateMachine.reds" %}
+{% code title="MyModStateMachine.reds" overflow="wrap" %}
 ```swift
 public class MyModDisabledDecisions extends DefaultTransition {
 
@@ -122,6 +221,8 @@ public class MyModDisabledEvents extends DefaultTransition {
 
 For the myModEnabled state, we'll have similar definitions:
 
+{% tabs %}
+{% tab title=".tweak" %}
 {% code title="stateMachine.tweak" %}
 ```fsharp
 playerStateMachineMyMod.myModEnabled {
@@ -148,6 +249,33 @@ playerStateMachineMyMod.myModEnabled {
 }
 ```
 {% endcode %}
+
+
+{% endtab %}
+
+{% tab title=".yaml" %}
+{% code title="stateMachine.yaml" overflow="wrap" %}
+```yaml
+playerStateMachineMyMod.myModEnabled.affinity: n"None"
+playerStateMachineMyMod.myModEnabled.alias: []
+	
+# each of these controls whether the function is used
+playerStateMachineMyMod.myModEnabled.hasEnterCondition: false
+playerStateMachineMyMod.myModEnabled.hasExitCondition: false
+playerStateMachineMyMod.myModEnabled.hasOnEnter: true
+playerStateMachineMyMod.myModEnabled.hasOnExit: true
+playerStateMachineMyMod.myModEnabled.hasOnUpdate: true
+playerStateMachineMyMod.myModEnabled.hasOnTick: false
+playerStateMachineMyMod.myModEnabled.tickRate: 0.2
+
+# these two arrays must match in length
+playerStateMachineMyMod.myModEnabled.transitionTo: [ "myModDisabled" ]
+playerStateMachineMyMod.myModEnabled.transitionCondition: [ "" ]
+# "" causes MyModDisabledDecisions.EnterCondition() to run continuously
+```
+{% endcode %}
+{% endtab %}
+{% endtabs %}
 
 {% code title="MyModStateMachine.reds" %}
 ```swift
@@ -212,7 +340,7 @@ In your `Decisions` class, you can also use `this.EnableOnEnterCondition([true |
 
 The `alias` in the tweak group is a list of names that this state can also be referred to, and can then be used in the `transitionTo` list. This prevents you from having to list many states with the same transition conditions, and is useful for sub-state-machine definitions. See `allVehicleContexts` in the InputContext state machine for examples.
 
-### Starting/Stopping the State Machine
+## Starting/Stopping the State Machine
 
 Where you have access to the `player`, via `GetLocalPlayerControlledGameObject()` or some other method, you can start the state machine like this:
 
@@ -241,3 +369,43 @@ And stop it like this:
 ...
 ```
 {% endcode %}
+
+## Patching existing State Machines
+
+Most of these principles can be used to add states to existing state machines. You simply need to create the new state, add it to list of states in the PSM definition and then hook it up to other states or replace the starting state.
+
+For example, to add a new weapon state you can do:
+
+{% code title="" overflow="wrap" %}
+```yaml
+# Add to definition
+playerStateMachineDefinitions.Weapon.states:
+  - !append myCustomState
+  
+# Hook up to other states. Remember to update both arrays!
+playerStateMachineWeapon.ready.transitionTo:
+  - !append myCustomState
+playerStateMachineWeapon.ready.transitionCondition:
+  - !append ""
+  
+# Define the state itself as normal
+playerStateMachineWeapon.myCustomState.affinity: n"None"
+playerStateMachineWeapon.myCustomState.alias: [n"allActionStates"]
+
+playerStateMachineWeapon.myCustomState.stateBodyClassName: ""
+playerStateMachineWeapon.myCustomState.hasEnterCondition: true
+playerStateMachineWeapon.myCustomState.hasOnEnter: true
+playerStateMachineWeapon.myCustomState.hasOnUpdate: true
+playerStateMachineWeapon.myCustomState.hasOnTick: false
+playerStateMachineWeapon.myCustomState.hasOnExit: true
+playerStateMachineWeapon.myCustomState.hasExitCondition: false
+playerStateMachineWeapon.myCustomState.tickRate: 0.2
+playerStateMachineWeapon.myCustomState.transitionTo:
+  ["allNotReadyStates", "ready"]
+playerStateMachineWeapon.myCustomState.transitionCondition: ["", "="]
+```
+{% endcode %}
+
+On the Redscript side it works the same as custom PSM, simply define the Decisions and Events classes (here it would be `MyCustomStateDecisions` , etc.).
+
+Look into vanilla game's `weaponTransition.script` or other for your wanted PSM, for inspiration and proper hooking up.
