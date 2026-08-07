@@ -221,6 +221,10 @@ If you've been previously afraid of scripting: This is a good place to stop! :))
 
 8. Find line 26 and following in the script, and alter the values to those of your V (which you get from **the character preset**, see [here](npv-preparing-the-head-in-blender.md#the-character-preset) for further explanation).
 
+{% hint style="danger" %}
+If you are using a **custom head sculpt** (not something that changes the character creator, but a mod that replaces the players head), set these shapekeys to 1
+{% endhint %}
+
 <figure><img src="../../../.gitbook/assets/npv_blender_01_apply_shapekeys.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
