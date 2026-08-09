@@ -24,10 +24,11 @@ You can look up the component names and their properties in the .ent files per b
 Female arms are using different meshes for the first person perspective. You will find this is a common theme.
 {% endhint %}
 
-<table><thead><tr><th>Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>First Person</td><td><code>base\characters\common\player_base_bodies\player_female_average\fpp</code></td><td><pre><code>left_arm    
+<table><thead><tr><th width="121.39996337890625">Type</th><th>Folder or .ent files</th><th>Component names</th></tr></thead><tbody><tr><td>First Person</td><td><code>base\characters\common\player_base_bodies\player_female_average\fpp > a0_000</code><br><code>base\weapons\melee\fists\appearances\base_arms_female.ent</code><br><code>base\weapons\melee\fists\appearances\base_arms_male.ent</code></td><td><pre><code>left_arm    
 right_arm  
-</code></pre></td></tr><tr><td>Third Person</td><td><code>base\characters\common\player_base_bodies\player_female_average\arms_hq</code><br><br><code>arms_full</code> is only used by character creator!</td><td><pre><code>a0_001_pwa_base_hq__full  
-a0_001_pwa_base_hq__full8640 
+</code></pre></td></tr><tr><td>Third Person</td><td><code>base\characters\common\player_base_bodies\player_female_average\arms_hq</code><br><br><code>base\characters\common\player_base_bodies\appearances\entity\a0_000_pwa_base__full.ent</code><br><code>base\characters\common\player_base_bodies\appearances\entity\a0_000_pma_base__full.ent</code><br></td><td><pre><code>a0_001_pwa_base_hq__full8640 
+a0_001_pwa_base_hq__full
+</code></pre><pre><code>arms_full:only used by character creator!
 </code></pre></td></tr></tbody></table>
 
 {% hint style="info" %}
