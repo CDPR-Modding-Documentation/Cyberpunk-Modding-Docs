@@ -10,7 +10,7 @@ description: A list of interesting locations and their sector files
 
 This page lists locations of interest & their world sector filenames. If you want to learn how to edit them instead, check [world-editing](../../../modding-guides/world-editing/ "mention") in the Modding Guides section.
 
-If you want to know how they work the theory is [here](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/the-whole-world-.streamingsector).
+If you want to know how they work the theory [here](../../files-and-what-they-do/file-formats/the-whole-world-.streamingsector/#variantnodes)
 
 #### Other existing resources:
 
