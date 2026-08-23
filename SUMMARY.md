@@ -481,6 +481,7 @@
     * [Custom Elevator Doors](modding-guides/world-editing/devices/custom-elevator-doors.md)
     * [Creating Security Areas](modding-guides/world-editing/devices/creating-security-areas.md)
     * [Device Operations Container](modding-guides/world-editing/devices/device-operations-container.md)
+    * [Syncing Multiple Radios](modding-guides/world-editing/devices/syncing-multiple-radios.md)
   * [AI and NPCs](modding-guides/world-editing/ai-and-npcs/README.md)
     * [Placing AISpot Nodes](modding-guides/world-editing/ai-and-npcs/placing-aispot-nodes.md)
     * [Creating Communities](modding-guides/world-editing/ai-and-npcs/creating-communities.md)

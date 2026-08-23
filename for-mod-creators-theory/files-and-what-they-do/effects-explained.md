@@ -25,7 +25,7 @@ This page is a stub, but this wiki is a community project! Please [sign up](http
 
 All effect files are registered in `static_effects.csv`. Since that file can only be edited once, you have to merge your own .es files by script.
 
-For instructions on how to do that, check [Scripting Cyberpunk](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/fwsaoju1TBAUvMpI6NIw/ "mention") -> [Effects](https://app.gitbook.com/s/fwsaoju1TBAUvMpI6NIw/how-do-i/effects "mention")
+For instructions on how to do that, check [Scripting Cyberpunk](https://app.gitbook.com/o/-MP5ijqI11FeeX7c8-N8/s/fwsaoju1TBAUvMpI6NIw/ "mention") -> [Effects](https://app.gitbook.com/s/fwsaoju1TBAUvMpI6NIw/scripting-cyberpunk/using-scripts-for.../effects "mention")
 
 ## Effect duration
 

@@ -7,9 +7,9 @@ description: How to create a custom interface via inkwidgets and animate via ink
 ## Summary
 
 Created: ???\
-Last documented update: Nov 26 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Last documented update: Nov 26 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page lists theory information about interface elements. For more hands-on information, check [interface-modding.md](../../../modding-guides/custom-icons-and-ui/interface-modding.md "mention"), or for creating UI programatically: [InkWidgets](https://app.gitbook.com/s/fwsaoju1TBAUvMpI6NIw/how-do-i/inkwidgets "mention") .
+This page lists theory information about interface elements. For more hands-on information, check [interface-modding.md](../../../modding-guides/custom-icons-and-ui/interface-modding.md "mention"), or for creating UI programatically: [InkWidgets](https://app.gitbook.com/s/fwsaoju1TBAUvMpI6NIw/scripting-cyberpunk/using-scripts-for.../inkwidgets "mention") .
 
 ## Inkwidgets: a custom interface
 
