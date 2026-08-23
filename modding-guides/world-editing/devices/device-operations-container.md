@@ -6,6 +6,12 @@ description: >-
 
 # Device Operations Container
 
+### Summary
+
+**Published: 23/04/2026 by** [@Spuddeh](https://discord.com/users/124447344279158784)
+
+**Last documented update: 23/08/2026 by** [@Spuddeh](https://discord.com/users/124447344279158784)
+
 Every entity that extends `Device` has a built-in system for reacting to state changes and triggering effects: sound, VFX, animations, component toggles, all without writing a single line of Redscript. It's driven entirely by data you set up in the `.ent` file.
 
 The system is called `DeviceOperationsContainer` and lives on the device's persistent state (PS) chunk. It hooks into `EvaluateBaseStateTriggers`, which is called automatically in `deviceBase.swift` whenever the device's state changes.
@@ -28,9 +34,7 @@ This page documents a system that is still being actively explored by the moddin
 * Basic understanding of how device entities are structured in CP2077
 *   Familiarity with WWise event names if you are using `PlaySoundDeviceOperation`
 
-
-
-    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Setting up the container is done entirely in the .ent file before packing — no in-game tools needed for that part. To actually place the device in the world you will need World Builder, or you can edit an existing device entity that is already present in a sector.</p></div>
+    <div data-gb-custom-block data-tag="hint" data-style="info" class="hint hint-info"><p>Setting up the container is done entirely in the .ent file before packing, so no in-game tools are needed for that part. To actually place the device in the world you will need World Builder, or you can edit an existing device entity that is already present in a sector.</p></div>
 
 ### How It Works
 
@@ -47,48 +51,81 @@ If you want to trace this yourself, `deviceBase.swift` in the [adamsmasher/cyber
 `deviceOperationsSetup` must be placed on the **PS chunk** (e.g. `FanControllerPS`), not the root entity chunk. If you put it on the root, it will never be evaluated.
 {% endhint %}
 
-### &#x20;Trigger Types
+### Trigger Types
 
-| `$type`                          | Fires when...                                                                |
-| -------------------------------- | ---------------------------------------------------------------------------- |
-| `BaseStateOperationsTrigger`     | Device state changes to an `EDeviceStatus` value (ON/OFF/UNPOWERED/DISABLED) |
-| `DeviceActionOperationsTrigger`  | A specific device action class is executed                                   |
-| `FactOperationsTrigger`          | A quest fact changes to a specific value                                     |
-| `TriggerVolumeOperationsTrigger` | Player or NPC enters or exits a trigger volume                               |
-| `SensesOperationsTrigger`        | The entity is sensed (seen or heard)                                         |
-| `HitOperationsTrigger`           | The entity takes damage below a health threshold                             |
-| `FocusModeOperationsTrigger`     | Player enters or exits scanner mode                                          |
-| `DoorStateOperationsTrigger`     | Door state changes (OPEN/CLOSED/LOCKED)                                      |
-| `ActivatorOperationsTrigger`     | Entity initializes, fires once on load                                       |
-| `CustomActionOperationsTriggers` | A custom-named action ID is triggered                                        |
+| `$type`                            | Fires when...                                                                |
+| ---------------------------------- | ---------------------------------------------------------------------------- |
+| `BaseStateOperationsTrigger`       | Device state changes to an `EDeviceStatus` value (ON/OFF/UNPOWERED/DISABLED) |
+| `DeviceActionOperationsTrigger`    | A specific device action class is executed                                   |
+| `FactOperationsTrigger`            | A quest fact changes to a specific value                                     |
+| `TriggerVolumeOperationsTrigger`   | Player or NPC enters or exits a trigger volume                               |
+| `SensesOperationsTrigger`          | The entity is sensed (seen or heard)                                         |
+| `HitOperationsTrigger`             | The entity takes damage below a health threshold                             |
+| `FocusModeOperationsTrigger`       | Player enters or exits scanner mode                                          |
+| `DoorStateOperationsTrigger`       | Door state changes (OPEN/CLOSED/LOCKED)                                      |
+| `ActivatorOperationsTrigger`       | Entity initialises, fires once on load                                       |
+| `CustomActionOperationsTriggers`   | A custom-named action ID is triggered                                        |
+| `InteractionAreaOperationsTrigger` | Player enters or exits the device's interaction area                         |
+
+That is all of them, and every one is reactive. There is no timer or interval trigger, so nothing here fires on a clock.
+
+A few details that are easy to miss:
+
+* `DeviceActionOperationsTrigger` matches on the action's **class name**, read from `m_triggerData.action.GetClassName()`. The `action` field holds an instance of the class and only its type is compared, so there is nothing to fill in inside it.
+* `FactOperationsTrigger` takes a comparison, not just equality: `Equal`, `NotEqual`, `More`, `MoreOrEqual`, `Less`, `LessOrEqual`.
+* `BaseStateOperationsTrigger` and `DoorStateOperationsTrigger` remember the last state they saw and skip repeats, so they fire on a change rather than on every evaluation.
 
 ### Operation Types
 
-| `$type`                                 | What it does                                                        |
-| --------------------------------------- | ------------------------------------------------------------------- |
-| `PlaySoundDeviceOperation`              | Plays or stops a WWise audio event                                  |
-| `PlayEffectDeviceOperation`             | Starts or stops a VFX particle effect                               |
-| `PlayTransformAnimationDeviceOperation` | Plays, pauses, or resets a transform animation                      |
-| `ToggleComponentsDeviceOperation`       | Enables or disables named components on the entity                  |
-| `GenericDeviceOperation`                | Combination operation: VFX, SFX, component toggles, mesh appearance |
-| `MeshAppearanceDeviceOperation`         | Switches the mesh appearance                                        |
-| `FactsDeviceOperation`                  | Sets or modifies a quest fact value                                 |
-| `StimDeviceOperation`                   | Broadcasts a distraction stimulus                                   |
-| `ApplyStatusEffectDeviceOperation`      | Applies a status effect to nearby entities                          |
-| `ApplyDamageDeviceOperation`            | Deals damage to nearby entities                                     |
-| `SetMessageDeviceOperation`             | Sends a message to another device                                   |
+| `$type`                                   | What it does                                                        |
+| ----------------------------------------- | ------------------------------------------------------------------- |
+| `PlaySoundDeviceOperation`                | Plays or stops a WWise audio event                                  |
+| `PlayEffectDeviceOperation`               | Starts or stops a VFX particle effect                               |
+| `PlayTransformAnimationDeviceOperation`   | Plays, pauses, or resets a transform animation                      |
+| `ToggleComponentsDeviceOperation`         | Enables or disables named components on the entity                  |
+| `GenericDeviceOperation`                  | Combination operation: VFX, SFX, component toggles, mesh appearance |
+| `MeshAppearanceDeviceOperation`           | Switches the mesh appearance                                        |
+| `FactsDeviceOperation`                    | Sets or modifies a quest fact value                                 |
+| `StimDeviceOperation`                     | Broadcasts a distraction stimulus                                   |
+| `ApplyStatusEffectDeviceOperation`        | Applies a status effect to nearby entities                          |
+| `ApplyDamageDeviceOperation`              | Deals damage to nearby entities                                     |
+| `SetMessageDeviceOperation`               | Sets the message on another node's LCD screen                       |
+| `ItemsDeviceOperation`                    | Grants or removes inventory items                                   |
+| `TeleportDeviceOperation`                 | Teleports a target to a point                                       |
+| `TeleportNodetoSlotOperation`             | Teleports another node's object onto a slot on this device          |
+| `PlayerWokrspotDeviceOperation`           | Puts the player into a workspot (the engine's own spelling)         |
+| `PlayBinkDeviceOperation`                 | Plays a Bink video                                                  |
+| `ToggleCustomActionDeviceOperation`       | Enables or disables a custom action                                 |
+| `ToggleOffMeshConnectionsDeviceOperation` | Toggles navmesh off-mesh links                                      |
+| `RequestCLSStateChangeDeviceOperation`    | Requests a crowd lighting system state change                       |
 
 For effect operations, `EEffectOperationType` values are `START`, `STOP`, and `BRAKE_LOOP` (lets a looping effect finish its current cycle before stopping).
+
+Every operation also carries `isEnabled` (on by default), `executeOnce` (turns itself off after running), and `disableDevice`. The `delay` field is not on the operation: it sits on the trigger's reference to it, so the same operation can be instant from one trigger and delayed from another.
+
+#### What It Cannot Do
+
+Three limits, each of which sends people down a dead end.
+
+**It cannot perform a device action.** There is no operation that makes a device do one of its own actions. That is the boundary of the whole system: only a quest node or Redscript can do it, so anything needing a device to act belongs in a quest phase.
+
+**It cannot switch a WWise switch group.** `PlaySoundDeviceOperation` is `PlaySound` and `StopSound` on an event name, and nothing here performs an `AudioSwitch`. Audio events work, audio states do not, so radio stations are out of reach.
+
+**It cannot reach another device, with two narrow exceptions.** Nearly every operation acts on its own owner. Two resolve a NodeRef to another node, and both are hardcoded to one job: `SetMessageDeviceOperation` only ever sets an LCD screen's message (the controller class is fixed to `LcdScreenControllerPS`), and `TeleportNodetoSlotOperation` only teleports an object onto a slot. Neither lets you say "do X on device Y".
+
+For that, use a quest fact. Device A writes one with `FactsDeviceOperation`, device B reads it with `FactOperationsTrigger`, and the two never need to be wired together or know about each other. They only need to agree on the fact name.
+
+`SFactOperationData` has an `operationType` of `Set` (writes the value exactly) or `Add` (adds to what is already there), so a fact can be a counter as well as a flag. Bear in mind these are global quest facts that go into the player's save and stay there, shared with every other mod, so put your mod's name in them.
 
 ### Example: Adding Sound to a Fan
 
 The vanilla `Fan` class has no audio. `TurnOnDevice()` and `TurnOffDevice()` don't play anything. Here's how to fix that with `DeviceOperationsContainer`.
 
-1. Open the `.ent` file in WolvenKit and find the `FanControllerPS` chunk. Locate `deviceOperationsSetup`; it will be `null`.
+1. Open the `.ent` file in WolvenKit and find the `FanControllerPS` chunk. Locate `deviceOperationsSetup`; it will be empty.
 
 <figure><img src="../../../.gitbook/assets/device operations - null.png" alt="The FanControllerPS chunk in WolvenKit&#x27;s entity editor, with deviceOperationsSetup shown as null"><figcaption><p>The PS chunk is where the container lives. The root entity chunk will not work.</p></figcaption></figure>
 
-2. Create a `DeviceOperationsContainer` with empty `operations[]` and `triggers[]` arrays.
+2. Create a `DeviceOperationsContainer` with empty `operations` and `triggers` arrays.
 
 <figure><img src="../../../.gitbook/assets/device operations - new.png" alt="A newly created DeviceOperationsContainer with both arrays collapsed and empty"><figcaption><p>Both arrays start empty. Operations go in first, then triggers that reference them by name.</p></figcaption></figure>
 
@@ -106,7 +143,7 @@ The vanilla `Fan` class has no audio. `TurnOnDevice()` and `TurnOffDevice()` don
 
 5. Make sure the entity has a `gameaudioSoundComponent`. It doesn't need an `audioName` set; it just needs to exist for `PlaySoundDeviceOperation` to have something to route through.
 
-<figure><img src="../../../.gitbook/assets/device operations - gameaudiosound component.png" alt="The entity&#x27;s components list in WolvenKit showing a gameaudioSoundComponent entry"><figcaption><p>No audioName needed on the component itself. Its presence is enough.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/device operations - gameaudiosound component.png" alt="The entity&#x27;s components list in WolvenKit showing a gameaudioSoundComponent entry"><figcaption><p>No <code>audioName</code> needed on the component itself. Its presence is enough.</p></figcaption></figure>
 
 {% hint style="warning" %}
 `operationName` is a CName. Any whitespace, including a trailing space, will cause silent failure. The trigger fires, no operation runs, and there's no error message.
@@ -114,12 +151,14 @@ The vanilla `Fan` class has no audio. `TurnOnDevice()` and `TurnOffDevice()` don
 
 ### Common Mistakes
 
-| Mistake                                      | What you'll see                | Fix                                              |
-| -------------------------------------------- | ------------------------------ | ------------------------------------------------ |
-| Space in `operationName`                     | Trigger fires, nothing happens | Check the name character by character            |
-| Missing `gameaudioSoundComponent`            | No sound                       | Add the component to the entity                  |
-| HandleID collision                           | WolvenKit import error         | Make sure all HandleIds in the buffer are unique |
-| Container on entity root instead of PS chunk | Effects never fire             | Move `deviceOperationsSetup` to the PS chunk     |
+| Mistake                                          | What you'll see                | Fix                                                                                                                                                    |
+| ------------------------------------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Space in `operationName`                         | Trigger fires, nothing happens | Check the name character by character                                                                                                                  |
+| Missing `gameaudioSoundComponent`                | No sound                       | Add the component to the entity                                                                                                                        |
+| HandleID collision                               | WolvenKit import error         | Make sure all HandleIds in the buffer are unique                                                                                                       |
+| Container on entity root instead of PS chunk     | Effects never fire             | Move `deviceOperationsSetup` to the PS chunk                                                                                                           |
+| Testing on a save that already loaded the device | Your changes are ignored       | The operations array is saved with the device. In World Builder, use the reload button next to the device's Persistent checkbox, or load an older save |
+| Trying to set this up in World Builder           | The field is not there to edit | `deviceOperationsSetup` starts empty, and World Builder's instance data editor only shows fields that already have a value. Build it in the `.ent`     |
 
 ### What You Can Do With This
 
@@ -131,3 +170,4 @@ Since any entity extending `Device` has access to this system, it opens up a lot
 * **State-driven animations**: start and stop transform animations without Redscript
 * **Chain reactions via quest facts**: `FactsDeviceOperation` sets a fact, which triggers `FactOperationsTrigger` on another device
 * **Distraction stimuli**: `StimDeviceOperation` broadcasts when a device activates, useful for AI reactions
+* **Driving a quest from a device**: a fact written here can be read by a quest phase, and a quest phase _can_ perform actions on other devices. That combination gets you past the "cannot perform a device action" limit above, and it is how one radio can be made to control others
