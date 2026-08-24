@@ -1,0 +1,134 @@
+# Button labels for a sound system.
+#
+# Replace YourMod with your mod's name, in the record path and in the name field both.
+# Interactions.* is a table shared with every installed mod, so a prefix that is not unique
+# to you collides with another mod's records.
+#
+# One record per entry in the device's soundSystemSettings. The TweakDBID on an entry sets
+# three things at once: the action's name, its caption, and the choice record the UI
+# resolves, so one record per entry is all that is needed.
+#
+# Every caption here is a LocKey the base game already ships, so the buttons read exactly
+# like the game's own radio in whatever language the player is using. Nothing here authors
+# a string, and nothing here needs translating.
+#
+# Fourteen stations is more than a screen can show. Keep the entries you want and delete
+# the rest.
+
+Interactions.YourMod_AttitudeRock:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_AttitudeRock
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationAttRock
+
+Interactions.YourMod_AggroIndustrial:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_AggroIndustrial
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationAggroIndie
+
+Interactions.YourMod_ElectroIndustrial:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_ElectroIndustrial
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationElectroIndie
+
+Interactions.YourMod_HipHop:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_HipHop
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationHipHop
+
+Interactions.YourMod_Pop:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_Pop
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationPop
+
+Interactions.YourMod_MinimalTechno:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_MinimalTechno
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationMinimalTechno
+
+Interactions.YourMod_AggroTechno:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_AggroTechno
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationAggroTechno
+
+Interactions.YourMod_Jazz:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_Jazz
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationJazz
+
+Interactions.YourMod_Downtempo:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_Downtempo
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationDownTempo
+
+Interactions.YourMod_Latino:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_Latino
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationLatino
+
+Interactions.YourMod_Metal:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_Metal
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationMetal
+
+Interactions.YourMod_Growl:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_Growl
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationGrowlFm
+
+Interactions.YourMod_DarkStar:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_DarkStar
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationDarkStar
+
+Interactions.YourMod_ImpulseFm:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_ImpulseFm
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-Radio-RadioStationImpulseFM
+
+
+# A sound event entry is labelled the same way. There is no station name to borrow, so this
+# one uses the game's word for a jukebox. Any LocKey the game ships will do.
+#
+# If nothing in the game says what you need, ship your own key. Add an entry to a
+# localizationPersistenceOnScreenEntries .json in your archive with a secondaryKey of your
+# own, register that file in your .xl under localization -> onscreens, and point caption at
+# LocKey#Your-Key. That string is yours to translate, unlike the ones above.
+
+Interactions.YourMod_Jukebox:
+  $type: gamedataInteractionBase_Record
+  action: Choice1
+  name: YourMod_Jukebox
+  captionIcon: ChoiceCaptionParts.None
+  caption: LocKey#Gameplay-Devices-DisplayNames-Jukebox
+
+
+# An off entry needs no record. Point its interactionName at the base game's Interactions.Off
+# and the screen labels it "Turn OFF" on its own.

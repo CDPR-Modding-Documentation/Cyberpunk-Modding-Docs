@@ -21,3 +21,5 @@ While these guides are for specific devices and setups, the information is trans
 * [Custom fast travel points](custom-fast-travel-points.md)
 * [Custom elevators](custom-elevators.md)
 * [Creating Security Areas](creating-security-areas.md)
+* [Syncing Multiple Radios](syncing-multiple-radios.md)
+* [Sound Systems and Speakers](sound-systems-and-speakers.md)

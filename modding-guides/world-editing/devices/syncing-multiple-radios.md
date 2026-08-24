@@ -34,6 +34,10 @@ Three parts, and none of them are obvious on their own.
 
 **A radio cannot control another radio.** There is no master radio class. The game has a master and slave system for devices, but the radio is not part of it, and the sound system that is part of it cannot be a radio.
 
+{% hint style="info" %}
+That sound system drives any number of speakers with no questphase at all, and plays the same fourteen stations. What it cannot give you is a real radio, with the prompt and the station list a player expects, which is what this guide builds. [Sound Systems and Speakers](sound-systems-and-speakers.md) covers that route.
+{% endhint %}
+
 **A device can set a quest fact when the player uses it.** That is the Device Operations Container. Pressing "Next Station" on the radio sets a fact you name to 1.
 
 **A quest can run a device action on any device it can name.** A questphase can wait on that fact and send "Next Station" to as many other radios as you like.
@@ -250,7 +254,9 @@ Save both files.
 
 World Builder lists paths it already knows about, and it does not know about your new files. There are two ways round that, and either is fine.
 
+{% hint style="info" %}
 **Install your mod before trying either.** World Builder is only handing the game a path, and the game still has to be able to load a file at it.
+{% endhint %}
 
 #### Option A: paste the path in
 
@@ -500,3 +506,7 @@ The console does not print return values on its own. A bare call shows nothing a
 **Two very fast presses can count as one.** There is a brief moment between the questphase noticing the fact and resetting it. A press in that window is missed, and the slaves end up one station behind. Turning the master off and on again fixes it.
 
 **Only fourteen stations can be a starting station.** `startingStation` is a fixed list, so the resync always returns the network to one of the base game stations.
+
+{% hint style="info" %}
+**A sound system has no resync to go wrong.** It pushes every change straight to its speakers, so they never drift apart. If you do not need a radio's own controls, [Sound Systems and Speakers](sound-systems-and-speakers.md) is the simpler build.
+{% endhint %}
