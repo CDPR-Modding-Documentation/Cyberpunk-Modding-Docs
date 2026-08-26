@@ -12,7 +12,7 @@ This is the dedicated repository for all those that want to reference the API, a
 
 {% hint style="success" %}
 **Make this wiki better**!\
-[Become an editor](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/H70HZBOeUulIpkQnBLK7), share your knowledge so others may learn, check out our [Discord Server](https://discord.gg/redmodding).
+[Become an editor](https://app.gitbook.com/invite/-MP5ijqI11FeeX7c8-N8/IZreyNnVlImKaeMtoJLY), share your knowledge so others may learn, check out our [Discord Server](https://discord.gg/redmodding).
 {% endhint %}
 
 <table data-card-size="large" data-column-title-hidden data-view="cards"><thead><tr><th></th><th data-hidden></th><th data-hidden></th><th data-hidden data-card-cover data-type="files"></th><th data-hidden data-card-target data-type="content-ref"></th></tr></thead><tbody><tr><td>Modding Troubleshooting</td><td></td><td></td><td><a href=".gitbook/assets/using_mods.png">using_mods.png</a></td><td><a href="for-mod-users/user-guide-troubleshooting/">user-guide-troubleshooting</a></td></tr><tr><td>Mod Dev - Getting Started</td><td></td><td></td><td><a href=".gitbook/assets/making_mods.png">making_mods.png</a></td><td><a href="https://app.gitbook.com/s/4gzcGtLrr90pVjAWVdTc/modding-guides">Modding Guides</a></td></tr></tbody></table>
