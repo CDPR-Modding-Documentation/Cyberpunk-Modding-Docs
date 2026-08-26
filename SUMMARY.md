@@ -545,6 +545,7 @@
   * [Adding props](modding-guides/everything-else/custom-props/README.md)
     * [Custom Props (old workflow)](modding-guides/everything-else/custom-props/custom-props.md)
     * [AMM: Light Components](modding-guides/everything-else/custom-props/amm-light-components.md)
+  * [How I UwU-transformed Cyberpunk 2077's localization](modding-guides/everything-else/how-i-uwu-transformed-cyberpunk-2077s-localization.md)
 
 ***
 
