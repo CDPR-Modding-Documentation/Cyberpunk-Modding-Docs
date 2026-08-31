@@ -5,7 +5,7 @@ description: Common Problems and How to Fix Them
 # First Person Perspective Fixes
 
 **Published:** October 08 2023 by [FronkenZeepa](https://app.gitbook.com/u/pj9Ccv6IrMVhmNUW9HVbn6CYZ2B2 "mention")\
-**Last documented update:** February 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** August 30 2026 by [LadyLea](https://app.gitbook.com/u/uy45wfp6e4cKEXzUyO30l7kuNmI3 "mention")
 
 In this guide, I will do my best to address the most common first person issues I've seen, and how to fix them.
 
@@ -25,8 +25,10 @@ To implement anything in this guide, you will need [a Wolvenkit project](https:/
 ### Index
 
 * [Your sleeves render behind your arms](first-person-perspective-fixes.md#problem-1-your-sleeves-render-behind-your-arms)
+* [Drawing your weapon makes the legs invisible](first-person-perspective-fixes.md#problem-2-drawing-your-weapon-makes-the-legs-invisible)
 * [Head/Face/Glasses/Mask/Helmet visible and obstructing vision](first-person-perspective-fixes.md#problem-2-head-face-glasses-mask-helmet-visible-and-obstructing-vision.)
 * [You only need to hide a certain part of the clothing, like the collar/fur/stitching](first-person-perspective-fixes.md#problem-3-you-only-need-to-hide-a-certain-part-of-the-clothing-like-the-collar-fur-stitching.)
+* [Easy Refitting Gloves for femV FPP Appearance](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-easy-refitting-gloves-for-fpp-appearance/) \[External Link]
 
 {% hint style="warning" %}
 **If you are modifying someone else's mod**:
@@ -51,7 +53,7 @@ This is probably the most common problem I've seen, and is also thankfully the e
 1.  Open up the [mesh entity](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/file-formats/entity-.ent-files#mesh-component-entity-simple-entity) (`.ent`) file for the item you need to fix:
 
     <figure><img src="../../.gitbook/assets/image (138).png" alt=""><figcaption><p>There are no appearances in a mesh entity file!</p></figcaption></figure>
-2.  Expand the `components` array, then find any `component`s with `Mesh` in their types, and check if they require fixing. In my example project, it's both the jacket and the sleeves.
+2.  Expand the `components` array, then find any `components` with `Mesh` in their types, and check if they require fixing. In my example project, it's both the jacket and the sleeves.
 
     <figure><img src="../../.gitbook/assets/image (139).png" alt=""><figcaption><p>You might have to hunt around to find the right component, depending on how many there are.</p></figcaption></figure>
 3.  Scroll down and find the array `renderingPlaneAnimationParam`_,_ which will most likely be grayed out.
@@ -71,7 +73,31 @@ Instead of `renderPlane`, you can also use `renderPlaneLeftArm` and `renderPlane
 
     <figure><img src="../../.gitbook/assets/image (142).png" alt=""><figcaption><p>Oh look, sleeves!</p></figcaption></figure>
 
-## Problem #2: It's in your face (#justStormtrooperThings)
+## Problem #2: Drawing your weapon makes the legs invisible
+
+Turns out not only the hands/sleeves can have issues in FPP but also legs. Credits to [Apzurv|EzioMaverick](https://www.nexusmods.com/profile/Apzurv) for the previews and solution.
+
+<figure><img src="../../.gitbook/assets/1. BEFORE - ISSUE - Drawing your weapon makes the legs invisible.png" alt=""><figcaption><p>BEFORE - No fix is implemented </p></figcaption></figure>
+
+If you encounter a similar situation as shown in the preview above, most specifically when you draw your weapon in first person, the legs become invisible. This occurs either when you equip a leg garment or a full body garment.
+
+#### Solution
+
+1. In the .ent file of the leg garment, leave the `renderingPlaneAnimationParam` section empty. If it has `renderPlane` included, it causes the issue shown in the _BEFORE_ preview. `renderPlane` is mostly needed for the arm related stuff.&#x20;
+
+<figure><img src="../../.gitbook/assets/2.5. SOLUTION - ISSUE FIXED - Drawing your weapon makes the legs invisible.png" alt=""><figcaption></figcaption></figure>
+
+You only use `renderPlane` on sleeves/gloves of your outfit's fpp appearance as shown in [Problem #1](first-person-perspective-fixes.md#problem-1-your-sleeves-render-behind-your-arms).&#x20;
+
+Always separate your sleeves/gloves into a submesh, that you can reference via a different component in the .ent file. And use `renderPlane`.
+
+Rest of the outfit, should have its own component and no `renderPlane`.
+
+That way your sleeves don't render below your hands when guns are equipped and your outfit doesn't warp when you look down
+
+<figure><img src="../../.gitbook/assets/2. AFTER - ISSUE FIXED - Drawing your weapon makes the legs invisible.png" alt=""><figcaption><p>AFTER - Fix implemented in the .ent file. Legs no longer invisible while drawing a weapon</p></figcaption></figure>
+
+## Problem #3: It's in your face (#justStormtrooperThings)
 
 <figure><img src="../../.gitbook/assets/image (143).png" alt=""><figcaption><p>Still better than wearing a <em>real</em> helmet.</p></figcaption></figure>
 
@@ -182,7 +208,7 @@ Save and close the file. Repeat the whole process for any other items that need 
 
 <figure><img src="../../.gitbook/assets/image (149).png" alt=""><figcaption><p>I can see clearly now!</p></figcaption></figure>
 
-## Problem #3: Partial hiding (#justDraculaThings)
+## Problem #4: Partial hiding (#justDraculaThings)
 
 <figure><img src="../../.gitbook/assets/image (150).png" alt=""><figcaption><p>I probably could have chosen a better example, but I'm sure you can see the big clump of fur on the right.</p></figcaption></figure>
 
