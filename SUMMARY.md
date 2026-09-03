@@ -530,6 +530,7 @@
   * [Adding Animations](modding-guides/quest/adding-animations.md)
   * [How to add new text messages thread to Cyberpunk 2077](modding-guides/quest/how-to-add-new-text-messages-thread-to-cyberpunk-2077.md)
   * [Quest and Scene Node Definitions](modding-guides/quest/scene-node-definitions.md)
+  * [Adding a custom voiceline to a scene](modding-guides/quest/adding-a-custom-voiceline-to-a-scene.md)
 * [HUD Painter Resource](modding-guides/hud-painter-resource.md)
 * [Everything else](modding-guides/everything-else/README.md)
   * [How to Translate a Mod](modding-guides/everything-else/how-to-translate-a-mod.md)
