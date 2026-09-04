@@ -2,8 +2,8 @@
 
 ## Summary
 
-**Published:** Jan 17 2025 by Apart\
-**Last documented edit:** July 31 2026 by Apart
+**Published:** Jan 17 2025 by [Apart](https://app.gitbook.com/u/M4VsHKJyn3PakV5tOmAF87H61wh2 "mention") (edited July 31 2026)\
+**Last documented edit:** September 04 by [Zhincore](https://app.gitbook.com/u/OsI9JXgCSSbt40hb327iBDif7Xv1 "mention")
 
 An explanation of the various kinds of stat modifiers and modifier types and how to use them.
 
@@ -25,7 +25,7 @@ For a full list of available stats in Cyberpunk 2077, see [Cheat Sheet: Tweaks](
 
 ## Modifier Types
 
-There are five types of modifiers, with the three most common ones being: [Additive](stat-modifiers.md#additive), [Multiplier](stat-modifiers.md#multiplier), and [AdditiveMultiplier](stat-modifiers.md#additivemultiplier). The remaining two, Count and Invalid, are not as common and rarely used.
+There are three types of modifiers (you might find five, but the last two are Count and Invalid which are not valid values):
 
 ### Additive
 
@@ -33,7 +33,7 @@ An additive modifier type "adds" to a stat. It is also possible to subtract usin
 
 #### Example(s)
 
-We have a weapon that has a base value (a) of 5% Crit Chance. We'd like to add another 5% Crit Chance (b), using the following formula: (a+b=10)
+We have a weapon that has a base value $$a$$ of 5% Crit Chance. We'd like to add another 5% Crit Chance ($$b$$), using the following formula  $$a+b=10$$ we change the weapon's Crit Chance to 10%.
 
 {% code lineNumbers="true" %}
 ```yaml
@@ -50,7 +50,7 @@ A multiplier modifier "multiplies" a stat. A multiplier stat can also be used to
 
 #### Example(s)
 
-We have a weapon that has a base value (a) of 5% Crit Chance. We'd like to double our Crit Chance to 10%, using the following formula: (a\*b=10)
+We have a weapon that has a base value $$a$$ of 5% Crit Chance. We'd like to double our Crit Chance to 10%, using the following formula: $$a * 2.0 = 10$$
 
 <pre class="language-yaml" data-line-numbers><code class="lang-yaml"><strong>$type: ConstantStatModifier
 </strong>statType: BaseStats.CritChance
@@ -58,7 +58,7 @@ modifierType: Multiplier
 value: 2.0
 </code></pre>
 
-We have a weapon that has a base value (a) of 5% Crit Chance. We'd like to remove our Crit Chance by making it 0, using the following formula: (a\*b=0)
+We have a weapon that has a base value $$a$$ of 5% Crit Chance. We'd like to remove our Crit Chance by making it 0, using the following formula: $$a * 0 = 0$$
 
 {% code lineNumbers="true" %}
 ```yaml
@@ -75,7 +75,7 @@ An additive multiplier "adds" something to a stat by "multiplying" it.
 
 #### Example(s)
 
-We have a weapon that has a base value (a) of 100% Crit Damage. We'd like to add an additional 20% Crit Damage, using the following formula: (a+(a\*b)=120)
+We have a weapon that has a base value $$a$$ of 100% Crit Damage. We'd like to add an additional 20% Crit Damage ($$b$$), using the following formula: $$a+(a*b)=120$$
 
 {% code lineNumbers="true" %}
 ```yaml

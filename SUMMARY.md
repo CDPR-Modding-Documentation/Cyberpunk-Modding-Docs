@@ -257,6 +257,7 @@
   * [Tweak modding: Guides](for-mod-creators-theory/tweaks/tweak-modding-guides.md)
   * [Creating Cyberware using TweakXL](for-mod-creators-theory/tweaks/creating-cyberware-using-tweakxl.md)
   * [Stat Modifiers](for-mod-creators-theory/tweaks/stat-modifiers.md)
+  * [Stat Pools](for-mod-creators-theory/tweaks/stat-pools.md)
   * [Audio in TweakDB](for-mod-creators-theory/tweaks/audio-in-tweakdb.md)
   * [Tweaks: Vehicles](for-mod-creators-theory/tweaks/tweaks-vehicles.md)
 
