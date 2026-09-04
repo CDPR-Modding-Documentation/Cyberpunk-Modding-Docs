@@ -125,3 +125,19 @@ Allows targeting via CET.
 WIP
 
 </details>
+
+<details>
+
+<summary>gameTransformAnimatorComponent</summary>
+
+Define animations usable by other components. See [transform-animator.md](transform-animator.md "mention")
+
+</details>
+
+<details>
+
+<summary>gameRootTransformAnimatorComponent</summary>
+
+Define animations that affect the entire entity. See [transform-animator.md](transform-animator.md "mention")
+
+</details>

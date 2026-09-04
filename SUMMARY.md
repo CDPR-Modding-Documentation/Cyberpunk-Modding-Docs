@@ -191,6 +191,7 @@
     * [Comprehensive Component Hierarchy List](for-mod-creators-theory/files-and-what-they-do/components/comprehensive-components-list.md)
     * [Documented Components](for-mod-creators-theory/files-and-what-they-do/components/documented-components/README.md)
       * [Effect components](for-mod-creators-theory/files-and-what-they-do/components/documented-components/effect-components.md)
+      * [Transform Animator](for-mod-creators-theory/files-and-what-they-do/components/documented-components/transform-animator.md)
   * [Crowds: random NPCs](for-mod-creators-theory/files-and-what-they-do/crowds-random-npcs.md)
   * [Dependency resolution](for-mod-creators-theory/files-and-what-they-do/dependency-resolution.md)
   * [Effects and particles](for-mod-creators-theory/files-and-what-they-do/effects-explained.md)
