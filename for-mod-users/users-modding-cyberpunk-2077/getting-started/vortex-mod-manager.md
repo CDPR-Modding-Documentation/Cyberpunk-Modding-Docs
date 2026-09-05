@@ -8,13 +8,13 @@ description: >-
 
 ## Summary
 
-**Last documented update:** July 12th, 2026 by [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention")
+**Last documented update:** September 5th, 2026 by [minnierylands](https://app.gitbook.com/u/VSIYzNHUyRPaBCk2ExHhQzpPfo82 "mention")
 
 {% hint style="danger" %}
 **Windows 10 or higher is required to use Vortex mod manager. If you are not using Windows, see our Manual Install page.**
 {% endhint %}
 
-Vortex is a multi-game mod manager developed for and by [NexusMods](https://www.nexusmods.com/), the website where most [Cyberpunk 2077 mods](https://www.nexusmods.com/cyberpunk2077) are hosted. Here you can download mods manually or with Vortex and keep track your download history.
+Vortex is a multi-game mod manager developed for and by [Nexus Mods](https://www.nexusmods.com/), the website where most [Cyberpunk 2077 mods](https://www.nexusmods.com/cyberpunk2077) are hosted. Here you can download mods manually or with Vortex and keep track your download history.
 
 {% hint style="info" %}
 To use Vortex, you need an account there. If you don't have one, you can sign up [here](https://users.nexusmods.com/register) – don't worry, it's free.
@@ -59,7 +59,7 @@ If you can download it on your own, you can skip to the [Install](vortex-mod-man
 
 3. You'll now see a download page. If you don't have Nexus Premium:
    1. Select "Slow Download"
-   2. Wait through the five seconds cooldown
+   2. Wait through the five seconds cool down
 4. Optional, depending on your browser:
    * Select your download location for files that you don't want to keep
 5. Wait until the installer is downloaded
@@ -73,7 +73,7 @@ Nice, now the installer should be downloaded! You can proceed with the steps in 
 ## Installation
 
 {% hint style="info" %}
-This guide will assume that you install Vortex to `C:\Program Files\Black Tree Gaming Ltd\Vortex`. You can install it whereever you want, but then you need to adjust accordingly.
+This guide will assume that you install Vortex to `C:\Program Files\Black Tree Gaming Ltd\Vortex`. You can install it wherever you want, but then you need to adjust accordingly.
 {% endhint %}
 
 1. Run the installer by double-clicking it.
@@ -94,67 +94,86 @@ Here is where we get into the weeds, the particulars of Vortex setup before we c
 If you can setup Vortex on your own, skip to the [Settings](vortex-mod-manager.md#settings) section of this guide. (Why are you reading this?)
 {% endhint %}
 
-#### Logging In To Nexusmods
+#### Logging In To Nexus Mods
 
-If you are already logged in, proceed to the next section "[Adding Cyberpunk](vortex-mod-manager.md#vortex-adding-cyberpunk)"
+{% hint style="success" icon="exclamation" %}
+If you are already logged in, proceed to the next section: [Adding Cyberpunk](vortex-mod-manager.md#vortex-adding-cyberpunk)
+{% endhint %}
 
 1. If Vortex didn't open by itself, open it from the start menu
-2. Log into Nexusmods by clicking on the red circle in the top right of your client
+2. Log into Nexus Mods by clicking on the red circle in the top right of your client
 
-<figure><img src="../../../.gitbook/assets/4 (3).png" alt=""><figcaption><p>The initial dashboard on launch</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/login_new_layout.png" alt=""><figcaption><p>This icon may be red!</p></figcaption></figure>
 
-3. You will see either a browser window or an error message that Vortex couldn't open one – in this case, copy the URL in the box at the bottom and open the browser window yourself
+3. This should open a browser window that looks like this:
+
+<figure><img src="../../../.gitbook/assets/vortex_login_auth.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+If you see the below error message instead, copy the URL in the box at the bottom and open the browser window yourself.
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/Vortex_9t21yxISb5.png" alt=""><figcaption><p>If your browser doesn't open automatically, copy the url starting with users.nexusmods in the box</p></figcaption></figure>
 
-4. Optional: Log into Nexusmods (if you aren’t already)
-5. Allow Vortex to access your Nexus account by clicking "Authorize":
+4. Allow Vortex to access your Nexus Mods account by clicking "Authorize":
 
-<figure><img src="../../../.gitbook/assets/9 (2).png" alt=""><figcaption><p>Allow Vortex to authorise your account</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vortex_login_auth_2.png" alt=""><figcaption><p>Allow Vortex to authorise your account</p></figcaption></figure>
 
 6. Click "Log in to Vortex":
 
 <figure><img src="../../../.gitbook/assets/10 (1).png" alt=""><figcaption><p>Log into Vortex and close the page</p></figcaption></figure>
 
-7. Instead of the red icon, you should now see your profile picture and username from nexusmods.
+7. Instead of the blank/red icon, you should now see your profile picture and username from Nexus Mods.
 
 ***
 
-#### Vortex: Adding Cyberpunk
+### Managing Cyberpunk
 
 This section will tell you how to add Cyberpunk to Vortex's managed games.
 
 1. On the sidebar on the left side of your dashboard, click "`Games`"
-2. In the page that now shows, type "`Cyberpunk`" into the search bar
+2. In the page that shows up, type "`Cyberpunk`" into the search bar
 3. Hover over its thumbnail and click "`Manage`"
 4. You will now see a popup complaining about "`Game support not installed`". Don't panic, this is expected!
 5. You will require the vortex extension for Cyberpunk 2077. You can download this through Vortex on the Extensions tab.&#x20;
 6. Search for Cyberpunk 2077 and click install.
-   1. Your Vortex extension should now be installed, and should say `0.12.1` (or whatever the latest version is on nexus mods) in the `Version` column.
+   1. Your Vortex extension should now be installed, and should say `0.13.0` (or whatever the latest version is on Nexus Mods) in the `Version` column.
 
-<figure><img src="../../../.gitbook/assets/vortex-extensions.png" alt=""><figcaption><p>This is the extensions tab!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vortex_new_ui_menuside.png" alt=""><figcaption><p>This is the extensions tab!</p></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/vortex_ex_2.png" alt=""><figcaption><p>This is what you want to see!</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vortex_extension_13.png" alt=""><figcaption><p>This is what you want to see!</p></figcaption></figure>
 
-9. If the extension is not the latest version, [you can download the Cyberpunk 2077 Vortex Extension here](https://www.nexusmods.com/site/mods/196?tab=files). The link should take you straight to the `FILES` tab.
-   1. Click `Mod manager download` - this will download it straight to Vortex.
-10. You need to restart Vortex – agree to the prompt if there is one. If not, manually close Vortex and re-open it.
-11. Optional: If Vortex was able to auto-detect your game install, you are done now and can proceed with the [Settings](vortex-mod-manager.md#settings) section.
-12. Vortex will tell you that it couldn't detect your game install and prompt you to set it manually. Click "Continue".
-13. In the explorer window that now pops up, navigate to the folder containing your Cyberpunk exe (e.g. `C:\Games\Cyberpunk 2077\bin\x64`)
-14. Once you are in the right folder, click "`Select Folder`"
+7. If your extension is not the latest version, [you can download the Cyberpunk 2077 Vortex Extension here](https://www.nexusmods.com/site/mods/196?tab=files).&#x20;
+8. Click `Mod manager download` - this will download it straight to Vortex.
+9. **You need to restart Vortex** – agree to the prompt if there is one. If not, manually close Vortex and re-open it.
 
+{% hint style="success" icon="exclamation" %}
+If Vortex was able to auto-detect your game install, you're all set and can proceed to the [Settings](vortex-mod-manager.md#settings) section!
+{% endhint %}
+
+10. Vortex will tell you that it couldn't detect your game install and prompt you to set it manually. Click "`Continue`".
+11. In the explorer window that pops up, navigate to the folder containing your Cyberpunk exe (e.g. `C:\Games\Cyberpunk 2077\bin\x64`)
+12. Once you are in the correct folder, click "`Select Folder`"
+
+{% hint style="success" icon="face-smile-beam" %}
 Vortex can now manage your game! Proceed to the next section, [Settings](vortex-mod-manager.md#settings).
+{% endhint %}
 
 ***
 
-### Settings
+### Vortex General Settings
 
-This section tells you how to set the recommended settings in Vortex, grouped by tab. If a tab isn't covered, there are no recommendations and you can do what you like.
+This section tells you how to set the recommended settings in Vortex, grouped by tab. This guide won't go through every setting available, only the ones relevant to modding Cyberpunk. If a tab isn't covered, there are no specific recommendations - you can choose what you'd prefer.
 
-Start by clicking "Settings" in the left sidebar of your Vortex Dashboard, then select the first tab.
+{% hint style="info" icon="exclamation" %}
+Start by clicking "`Settings`" in the left sidebar of your Vortex Dashboard, then select the first tab.
+{% endhint %}
 
-#### Interface -> Customization
+<figure><img src="../../../.gitbook/assets/vortex_new_ui_menuside_settings.png" alt=""><figcaption><p>Should be at the bottom of the list!</p></figcaption></figure>
+
+#### Interface
+
+<figure><img src="../../../.gitbook/assets/vortex_settings_interface.png" alt=""><figcaption></figcaption></figure>
 
 This section controls how Vortex looks and behaves. If this is your first time using Vortex, just leave it at the defaults and scroll down to "`Automation`".
 
@@ -172,7 +191,7 @@ Here's a screenshot of the recommended settings with an explanation below:
 
 To put a mod in the game, Vortex requires you to complete four steps. The folders for these are configured in the [Mods section](vortex-mod-manager.md#mods).
 
-1. Downloading: Putting the mod into Vortex's download cache, either by clicking the button on Nexus or by dragging-and-dropping an archive onto the client. The archive will now live in Vortex's **download directory**.
+1. Downloading: Putting the mod into Vortex's download cache, either by clicking the button on Nexus or by dragging-and-dropping a file onto the Vortex window. The archive will now live in Vortex's **download directory**.
 2. Installing: Unpacks the mod and copies it to Vortex's **staging** directory.
 3. Enabling: This mod should be included in the next deploy
 4. Deploying: The mod has been copied from Vortex's **staging** directory to your Cyberpunk **game** directory.
@@ -183,105 +202,82 @@ To put a mod in the game, Vortex requires you to complete four steps. The folder
 In theory, you can configure Vortex so that you hit the download button on the website and it will download, install, enable and deploy for you. The downside with that is that you might not notice errors as they pop up in the background, which is why we recommend doing that one single click by yourself.
 {% endhint %}
 
+#### Downloads
+
+Where Vortex stores downloaded archives. Can be wherever you like, even on a different drive.
+
+<figure><img src="../../../.gitbook/assets/vortex_settings_downloads.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" icon="exclamation" %}
+We recommend keeping an extra folder in there for manually downloaded mods, as Vortex can manage these as well – you just have to drag-and-drop them into the Vortex window.
+{% endhint %}
+
+***
+
+#### Cyberpunk Specific Settings
+
+You can find the game specific settings by clicking the Cyberpunk 2077 image on the left hand sidebar, then clicking "`Game Settings`"
+
+<figure><img src="../../../.gitbook/assets/vortex_new_ui_gamesettings (1).png" alt=""><figcaption><p>Should be at the bottom!</p></figcaption></figure>
+
+***
+
 #### V2077 Settings
 
-{% hint style="danger" %}
-**This toggle says "(NOT recommended)" for a reason. Do NOT enable it.**
+There is only one option under V2077 Settings:
 
-This setting controls the automatic REDmod conversion. In general, **you do not want this**.
+<figure><img src="../../../.gitbook/assets/v2077_settings_new.png" alt=""><figcaption></figcaption></figure>
 
-It will convert all of your "legacy" mods into REDmod format, and has a habit of breaking a lot of them in the process.
-
-**For a full explanation of what that means, give** [**this**](../#mod-format-redmod-or-legacy) **a read.**
-{% endhint %}
-
-<figure><img src="../../../.gitbook/assets/Vortex_v2077_settings.png" alt=""><figcaption></figcaption></figure>
-
-{% hint style="danger" %}
-**Vortex Extension Bug**
-
-In the 0.12.0 version of the Cyberpunk 2077 Vortex Extension, a bug was introduced that would **enable this toggle without warning**.
-
-Thankfully, version 0.12.1+ of the extension has squashed that bug, but Vortex will not automatically acknowledge the new version. [You can get version 0.12.1+ here](https://www.nexusmods.com/site/mods/196).
-
-**How can I check my extension version?**
-
-In Vortex, there's an "`Extensions`" tab on the left hand side. Click it.
-
-Check what it says under "`Version`" for the "`Cyberpunk2077`" extension.
-
-<img src="../../../.gitbook/assets/vortex_ex_2.png" alt="" data-size="original">
-
-If it says `0.12.1+`, you're good to go!
-
-If not, you'll need to **manually** update it.
-
-1. [Click "**Manual Download**" on the top file from the extension's download page.](https://www.nexusmods.com/site/mods/196?tab=files)
-2. Go back to your Vortex "`Extensions`" page
-3. Drop the zip you just downloaded into the box that says "`Drop File(s)`"
-
-<img src="../../../.gitbook/assets/vortex_extension_page (2).png" alt="" data-size="original">
-
-4. The old version (`0.12.0`) should now be disabled. Click "`Remove`" on the old extension.
-5. You need to go back into your "`V2077`" settings and **turn the toggle off**!
-6. Go to your "`Mods`" page in Vortex, press `CTRL + A` on your keyboard (you may need to click on one of your enabled mods first)
-7. A bar should pop up at the bottom. Click "`Reinstall`". It shouldn't take too long!
-
-<img src="../../../.gitbook/assets/vortex_reinstall.png" alt="" data-size="original">
-
-You should now be free of the autoconvert bug.
-{% endhint %}
+It is recommended to keep this toggled **off -** turning it on could mean you miss potential issues with mods being installed.
 
 ***
 
 #### Mods
 
-This section controls Vortex file storage. It's mostly a matter of personal preference and disk space availability on your end.
+This section controls Vortex file storage. It's mostly a matter of personal preference and your disk space availability.
 
-#### Mods: Staging
+<figure><img src="../../../.gitbook/assets/vortex_new_ui_gamesettings_mods.png" alt=""><figcaption></figcaption></figure>
 
-{% hint style="danger" %}
-This folder
+#### Mods -> Mod Staging Folder
 
-* **must** be on the same drive as your game installation, or deploy will fail
-* **must not** be your [game install directory](../the-cyberpunk-2077-game-directory/)
+This is where Vortex keeps mods, ready to deploy them into the Cyberpunk game directory.
+
+{% hint style="danger" icon="exclamation" %}
+This folder:
+
+* **must** be on the **same drive as your game installation**, or deploy will fail
+* **must not** be your [game install directory](../the-cyberpunk-2077-game-directory/) (where your game files are)
 {% endhint %}
 
-Where Vortex keeps its mods, ready to deploy them into the Cyberpunk game directory.
+The default folder location is `{USERDATA}\{GAME}\mods`, which translates to:\
+&#x20;`C:\Users\YourUsername\AppData\Roaming\Vortex\cyberpunk2077\mods`
 
-The default folder location is `{USERDATA}\{GAME}\mods`, which resolves to `C:\Users\YourUsername\AppData\Roaming\Vortex\cyberpunk2077\mods`
+You can keep it as this, or you can make a folder for it in a place you can easily access it, such as:\
+&#x20;`C:\Games\Mods`.&#x20;
 
-You can keep it as this, or you can make a folder for it in a place you can easily access it, like `C:\Games\Mods`. Wherever you decide, you want to make sure it is accessible and you can remember it in case of issue.
+{% hint style="warning" icon="thought-bubble" %}
+Wherever you decide, you want to make sure it is accessible and you can remember it in case of issue.
+{% endhint %}
 
 <figure><img src="../../../.gitbook/assets/Vortex_6MtEr1CcWX.png" alt=""><figcaption><p>Mod staging folder default location</p></figcaption></figure>
 
-***
+#### Mods -> Deployment Method
 
-#### Mods: Download
+Make sure the Deployment Method is set to "`Hardlink Deployment`" - this should be the default setting.
 
-Where Vortex stores downloaded archives. Can be wherever you like, even on a different drive.
-
-We recommend keeping an extra folder in there for manually downloaded mods, as Vortex can manage these as well – you just have to drag-and-drop them into the client.
+<figure><img src="../../../.gitbook/assets/vortex_new_ui_gamesettings_deployment.png" alt=""><figcaption><p>Keep it set as Hardlink Deployment!</p></figcaption></figure>
 
 ***
 
-### Dashboard
+### Tools
 
-Finally, we will return to our dashboard.
+Along the sidebar, you should see a heading labelled "`Tools`".&#x20;
 
-No matter what settings you chose in interface, you should still have a section labeled "Tools", where at this point you should at least see four things, the last of which will be disabled:
+You should at least see four things, the last of which will be disabled:
 
-<figure><img src="../../../.gitbook/assets/image (111).png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vortex_newui_cyberpunksettings_tools2.png" alt=""><figcaption><p>The default tools on the dashboard.</p></figcaption></figure>
 
-It can be helpful here to toggle "Enable Toolbar" above it so that you can always see them wherever you are in Vortex.
-
-These are different options to launch the game via Vortex.
-
-{% hint style="success" %}
-Click on the three dots next to "Launch Game with REDmods Enabled" and set it as primary. This will make Vortex pick this option when you click on the Cyberpunk 2077 picture on the far left.
-{% endhint %}
-
-"REDmod Deploy Latest Load Order" is also incredibly useful if your mods are acting up: Just using the "deploy" button on the main management page can fail – by using this button, you can debug your REDmod deployment.
+These are different options to launch the game via Vortex. In most cases, you won't have to mess with any of these options at all.
 
 ***
 
@@ -502,15 +498,21 @@ Just as before, download the mod. This time, it'll be `Manual download` - which 
 {% step %}
 **Back To Vortex**
 
-Open your Vortex window back up and navigate to the `Downloads` tab on the left side. You should see a box at the bottom that says `Drop URL(s) or File(s).` You can drop the zip file you just downloaded into this box.
+Open your Vortex window back up and navigate to the `Downloads` tab on the left side.
 
-<figure><img src="../../../.gitbook/assets/vortex_downloads_tab.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vortex_newui_downloadsbutton.png" alt=""><figcaption><p>It's all the way down here!</p></figcaption></figure>
+
+You should see a box at the bottom that says `Drop URL(s) or File(s).` You can drop the zip file you just downloaded into this box.
+
+<figure><img src="../../../.gitbook/assets/vortex_newui_downloadspage.png" alt=""><figcaption></figcaption></figure>
 
 If that doesn't work, there is another way!
 
-Navigate to the `Mods` tab. Along the top bar, you should see a button that says `Install From File` - click this and select the zip file you just downloaded.
+1. Click on the Cyberpunk image on the sidebar.
+2. Navigate to the `Mods` tab.&#x20;
+3. Along the top bar, you should see a button that says `Install From File` - click this and select the zip file you just downloaded.
 
-<figure><img src="../../../.gitbook/assets/vortex_install_from_file.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vortex_newui_installfromfile.png" alt=""><figcaption></figcaption></figure>
 {% endstep %}
 
 {% step %}
