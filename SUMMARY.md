@@ -482,7 +482,7 @@
     * [Custom fast travel points](modding-guides/world-editing/devices/custom-fast-travel-points.md)
     * [Custom Elevators](modding-guides/world-editing/devices/custom-elevators.md)
     * [Custom Elevator Doors](modding-guides/world-editing/devices/custom-elevator-doors.md)
-    * [Creating Security Areas](modding-guides/world-editing/devices/creating-security-areas.md)
+    * [Security System](modding-guides/world-editing/devices/creating-security-areas.md)
     * [Device Operations Container](modding-guides/world-editing/devices/device-operations-container.md)
     * [Syncing Multiple Radios](modding-guides/world-editing/devices/syncing-multiple-radios.md)
     * [Sound Systems and Speakers](modding-guides/world-editing/devices/sound-systems-and-speakers.md)
