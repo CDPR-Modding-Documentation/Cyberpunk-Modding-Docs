@@ -5,7 +5,7 @@ description: Hierarchy of WolvenKit.RED4.Types.entIComponent
 # Comprehensive Component Hierarchy List
 
 {% hint style="info" %}
-Full list of components, organized by hierarchy, useful for researching and documenting new components. For a json dump of all existing components and their properties, check [DrPresto's github repository.](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lists/entComponent\_types.json)
+Full list of components, organized by hierarchy, useful for researching and documenting new components. For a json dump of all existing components and their properties, check [DrPresto's github repository.](https://github.com/DoctorPresto/Cyberpunk-File-Types/blob/main/lists/entComponent_types.json)
 
 For a hands-on guide on how to safely change components in .app files, look [here](../../../modding-guides/npcs/appearances-change-the-looks/#safely-adding-components).
 {% endhint %}
@@ -25,7 +25,7 @@ If you decide to document a component, make a new expandable entry on on the [Do
   * entMorphTargetManagerComponent
 * entFacialCustomizationComponent
 * entIMoverComponent
-  * gameRootTransformAnimatorComponent
+  * [gameRootTransformAnimatorComponent](documented-components/transform-animator.md)
   * moveComponent
 * entIPlacedComponent
   * entAmbientSoundEmitterComponent
@@ -119,7 +119,7 @@ If you decide to document a component, make a new expandable entry on on the [Do
   * gameStaticAreaShapeComponent
     * gameStaticTriggerAreaComponent
   * [gameTargetingComponent](documented-components/#gametargetingcomponent)
-  * gameTransformAnimatorComponent
+  * [gameTransformAnimatorComponent](documented-components/transform-animator.md)
   * mpInteractionActivatorComponent
   * senseComponent
   * senseSensorObjectComponent

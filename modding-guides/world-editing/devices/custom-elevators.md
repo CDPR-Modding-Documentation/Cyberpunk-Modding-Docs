@@ -2,6 +2,7 @@
 description: >-
   This guide will describe the steps necessary to add a new native elevator,
   using World Builder
+icon: elevator
 ---
 
 # Custom Elevators
@@ -30,7 +31,7 @@ The version **a.1.2.0** brings a new **Quick Elevator Setup** feature to help yo
 ## Creating the elevator
 
 {% tabs %}
-{% tab title="Akiway" %}
+{% tab title="Quick Setup (Akiway's WB ≥ a.1.2.0)" icon="bolt" %}
 ### Quick Setup Elevator tutorial in video
 
 {% embed url="https://www.youtube.com/watch?list=PL3AzCsUebgGMU-jRkt7eBAAYmJIhpHPgo&v=pwbwUzF0DUU" %}
@@ -100,7 +101,7 @@ Place the elevator at the exact position you want it to arrive, and copy-paste i
 {% endhint %}
 {% endtab %}
 
-{% tab title="Official 0.8 or newer" %}
+{% tab title="Manual (official WB ≥ 0.8)" icon="hand" %}
 ### Spawning nodes
 
 #### Overview
