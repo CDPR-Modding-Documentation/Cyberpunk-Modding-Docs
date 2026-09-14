@@ -178,7 +178,7 @@ overrides:
 
 The original mesh is hidden via [`partsOverride`](../../../modding-guides/items-equipment/influencing-other-items.md#partsoverrides-changing-other-meshes) in the kimono's .app (I could also have used a second tag to hide the `l1_manavortex_hakama` component via .xl file):
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### Custom Tags: Bodies - Switching States
 

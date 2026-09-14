@@ -6,6 +6,8 @@
 
 ### [How to Edit Voiceover and Subtitles](how-to-edit-voiceover-and-subtitles-in-a-quest..md)
 
+### [Generating vanilla lipsync animation sets](generating-vanilla-lipsync-animation-sets.md)
+
 ### [How to change position and rotation of an entMeshComponent](../everything-else/how-to-change-position-and-rotation-of-an-entmeshcomponent.md)
 
 ### [How to remove an Animation (and Replace It)](how-to-remove-an-animation-and-potentially-replace-it.md)

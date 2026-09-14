@@ -55,6 +55,6 @@ You now have your very own copy of Johnny's arm, with its own `.mlsetup` file. Y
 
 The blue text tells you which references have been updated:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Until next time, chooms!

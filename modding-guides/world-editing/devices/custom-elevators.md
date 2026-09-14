@@ -77,7 +77,7 @@ In the elevator properties, click on the <mark style="color:purple;">Quick Eleva
 {% hint style="success" icon="door-open" %}
 To help you visualizing which door you want to open, the elevator display **on-screen indicators with door numbers**. To see them, you can close the popup and look at the elevator.
 
-<img src="../../../.gitbook/assets/image (2).png" alt="" data-size="original">
+<img src="../../../.gitbook/assets/image (2) (2).png" alt="" data-size="original">
 {% endhint %}
 
 {% hint style="info" icon="door-closed" %}
