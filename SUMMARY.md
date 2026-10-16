@@ -508,6 +508,7 @@
     * [Editing locations in Blender](modding-guides/world-editing/miscellaneous/editing-locations-in-blender.md)
     * [Props Making for Gonks](modding-guides/world-editing/miscellaneous/props-making-for-gonks.md)
     * [Apply GameplayRestriction](modding-guides/world-editing/miscellaneous/apply-gameplayrestriction.md)
+    * [Adding street name signs to the world](modding-guides/world-editing/miscellaneous/adding-street-name-signs-to-the-world.md)
   * [Archived Guides](modding-guides/world-editing/archived-guides/README.md)
     * [Archived: Merging World Additions via ArchiveXL](modding-guides/world-editing/archived-guides/adding-locations-and-structures-with-archivexl.md)
     * [Archived: World editing via file edit](modding-guides/world-editing/archived-guides/archived-world-editing-via-file-edit.md)
