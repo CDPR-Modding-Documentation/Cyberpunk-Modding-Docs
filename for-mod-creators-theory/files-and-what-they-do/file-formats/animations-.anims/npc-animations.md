@@ -14,7 +14,7 @@ This page will explain how NPC animations are selected and connected within the 
 ### Wait, this is not what I want!
 
 * For a guide on creating a custom NPC, check [amm-custom-npcs](../../../../modding-guides/npcs/amm-custom-npcs/ "mention")
-* For a guide on creating an even more custom NPC, check [npv-v-as-custom-npc](../../../../modding-guides/npcs/npv-v-as-custom-npc/ "mention")
+* For a guide on creating an even more custom NPC, check [npv-v-as-custom-npc](../../../../modding-guides/npcs/npv-v-as-custom-npc/npv-v-as-custom-npc/ "mention")
 
 ## entAnimatedComponent
 

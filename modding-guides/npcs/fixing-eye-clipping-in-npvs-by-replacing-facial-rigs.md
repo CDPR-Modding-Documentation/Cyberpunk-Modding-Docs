@@ -25,7 +25,7 @@ In vanilla _Cyberpunk 2077_, V’s face only ever uses **Rig 000 and it's associ
 
 ### **Before You Start**
 
-This guide assumes you have already followed this guide: [npv-preparing-the-head-in-blender.md](npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention")
+This guide assumes you have already followed this guide: [npv-preparing-the-head-in-blender.md](npv-v-as-custom-npc/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention")
 
 ***
 
@@ -408,7 +408,7 @@ After replacing the skeleton in the mesh, you need to update the **`face_rig`** 
 * **Done.**
 
 {% hint style="info" %}
-If the script didn't work correctly, don't be scared to figure out what the logs are saying.&#x20;
+If the script didn't work correctly, don't be scared to figure out what the logs are saying.
 
 This code is not complicated and should be easy enough to edit.
 {% endhint %}

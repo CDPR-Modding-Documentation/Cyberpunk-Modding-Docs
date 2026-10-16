@@ -12,8 +12,8 @@ This page lists various properties of the player head. Use the Table of Contents
 ### Wait, this isn't what I'm looking for!
 
 * If you want to [edit the player's head](../../../modding-guides/npcs/a-new-head-for-v.md), you need [meshes](https://github.com/CDPR-Modding-Documentation/Cyberpunk-Modding-Docs/blob/main/for-mod-creators-theory/files-and-what-they-do/3d-objects-.mesh-files) and [morphtargets](../../3d-modelling/morphtargets.md).
-* If you want to make a custom NPC, check [npv-v-as-custom-npc](../../../modding-guides/npcs/npv-v-as-custom-npc/ "mention")
-* You can find additional information about the player head under [npv-preparing-the-head-in-blender.md](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention")
+* If you want to make a custom NPC, check [npv-v-as-custom-npc](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-v-as-custom-npc/ "mention")
+* You can find additional information about the player head under [npv-preparing-the-head-in-blender.md](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention")
 
 ***
 

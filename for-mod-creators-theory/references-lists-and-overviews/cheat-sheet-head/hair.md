@@ -20,7 +20,7 @@ This page will give you an overview about existing hairstyles and their files.
 * There is a modding guide for how to [replace-a-hair-mods-slot.md](../../../modding-guides/npcs/guides-all-about-hair/replace-a-hair-mods-slot.md "mention")
 * For a guide on how to add hair to Cyberpunk, check [basic-hairstyle-replacement-tutorial.md](../../../modding-guides/npcs/guides-all-about-hair/basic-hairstyle-replacement-tutorial.md "mention")
 * For a more detailed explanation of the hair shader, see [hair-and-skin-material-properties.md](../../materials/configuring-materials/hair-and-skin-material-properties.md "mention")
-* If you want to change an NPC's hair instead, you can check [this](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair) or [this](../../../modding-guides/npcs/appearances-change-the-looks/#safely-adding-components) guide.
+* If you want to change an NPC's hair instead, you can check [this](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair) or [this](../../../modding-guides/npcs/appearances-change-the-looks/#safely-adding-components) guide.
 * To look up hairstyles in more detail, you can use [NoraLee's excellent NPV part picker](https://noraleedoes.neocities.org/npv/npv_part_picker)
 
 {% hint style="info" %}

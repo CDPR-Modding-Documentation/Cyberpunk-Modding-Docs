@@ -31,8 +31,8 @@ IWouldiwas Sh00kspeared made a video tutorial for visual learners (Nov 2024). Yo
 
 * [ ] You have downloaded the prepared Wolvenkit Project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328)
 * [ ] You have [Blender](https://www.blender.org/download/) installed
-* [ ] You have the Wolvenkit Blender Plugin (check [installing-the-wolvenkit-blender-plugin](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/ "mention") if you don't)
-* [ ] Blender and the plugin are on the current compatible versions [wkit-blender-plugin-current-version.md](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/wkit-blender-plugin-current-version.md "mention")
+* [ ] You have the Wolvenkit Blender Plugin (check [installing-the-wolvenkit-blender-plugin](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/ "mention") if you don't)
+* [ ] Blender and the plugin are on the current compatible versions [wkit-blender-plugin-current-version.md](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/wkit-blender-plugin-current-version.md "mention")
 * [ ] You have completely read this entire section
 
 ### Worth noticing
@@ -68,12 +68,12 @@ You only need this  if you are using a custom character creator or player head -
 
     1. **Optional:** Be confused and/or panic about why there are [over 9000](#user-content-fn-1)[^1] files
 
-    <figure><img src="../../../.gitbook/assets/3 head folder.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/3 head folder.png" alt=""><figcaption></figcaption></figure>
 2.  Look into the `head/morphtargets` folder
 
     1. **Optional:** Be confused and/or panic about why there are [over 9000](#user-content-fn-1)[^1] files **again**.
 
-    <figure><img src="../../../.gitbook/assets/4 scroll down to find morphtargets folder.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/4 scroll down to find morphtargets folder.png" alt=""><figcaption></figcaption></figure>
 3. Delete all those files that you aren't using (read on as for how)
 
 {% hint style="info" %}
@@ -110,7 +110,7 @@ We only need the .morphtargets to generate the actual meshes by duplicating the 
 
 The different variants in the character creator correspond to the different meshes. For example, if you select cyberware 3 in the character creator, the mesh that will get loaded is `cyberware_03`. Not so difficult, is it?
 
-To learn what the prefixes mean, check [#head-file-prefixes](../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/#head-file-prefixes "mention").
+To learn what the prefixes mean, check [#head-file-prefixes](../../../../for-mod-creators-theory/references-lists-and-overviews/cheat-sheet-head/#head-file-prefixes "mention").
 
 </details>
 
@@ -140,7 +140,7 @@ Number in file name <=> Number in character creator
 {% endhint %}
 
 {% hint style="info" %}
-Do not delete any files if you're [editing the player head](../a-new-head-for-v.md) (Ignore this hint if you aren't).
+Do not delete any files if you're [editing the player head](../../a-new-head-for-v.md) (Ignore this hint if you aren't).
 {% endhint %}
 
 Many of the files are **variants** and your V will be using **one or none of them.** That means you have a bunch of files to delete.
@@ -166,7 +166,7 @@ tutorial\npv\your_female_character\head\morphtargets\hx_000_pwa__morphs_tattoo_0
 tutorial\npv\your_male_character\head\morphtargets\i1_000_pma__morphs_earring_0*.morphtarget
 </code></pre></td></tr></tbody></table>
 
-<figure><img src="../../../.gitbook/assets/npv_file_deletion_chart.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/npv_file_deletion_chart.png" alt=""><figcaption></figcaption></figure>
 
 #### Expected result
 
@@ -196,7 +196,7 @@ If you run into any **errors**, check [#step-5-optional-troubleshooting](npv-pre
     2. Check the box in the header to select everything
     3. Click "Export Selected"
 
-    <figure><img src="../../../.gitbook/assets/npv_export_files.png" alt=""><figcaption><p>Export all your morphtargets. Mesh files will be auto-generated for you.</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/npv_export_files.png" alt=""><figcaption><p>Export all your morphtargets. Mesh files will be auto-generated for you.</p></figcaption></figure>
 2. Switch to your project's [`raw` folder](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/project-explorer#raw) or Wolvenkit's `raw` perspective. You will find the entire file structure mirrored there.
 3. In `head` folder, find the file `head_import.blend`.\
    This file is a **utility file** which will automatically import and export the files for you. For that reason, it needs to be in a certain relative path.
@@ -207,13 +207,13 @@ If you have already changed your structure (by re-naming your folders), you need
 
 4. Open it in Blender. It will take you to the **scripting** perspective, where you'll see something like this:
 
-<figure><img src="../../../.gitbook/assets/npv_blender_00_import.png" alt=""><figcaption><p>Looks scary, but you don't have to do anything here!</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/npv_blender_00_import.png" alt=""><figcaption><p>Looks scary, but you don't have to do anything here!</p></figcaption></figure>
 
 5. Press the **play ▶️▶**&#x62;utton.
 6. The script will now import a bunch of armatures from the `morphtargets` folder. You will see them showing up in the topright corner (see the next screenshot under 7. for how it should look)
 7. Switch to the next script in the file, but **don't run it yet**:
 
-<figure><img src="../../../.gitbook/assets/npv_blender_00_import_2.png" alt=""><figcaption><p>select "01_apply_shapekeys.py" from the dropdown menu</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/npv_blender_00_import_2.png" alt=""><figcaption><p>select "01_apply_shapekeys.py" from the dropdown menu</p></figcaption></figure>
 
 {% hint style="info" %}
 If you've been previously afraid of scripting: This is a good place to stop! :))
@@ -225,7 +225,7 @@ If you've been previously afraid of scripting: This is a good place to stop! :))
 If you are using a **custom head sculpt** (not something that changes the character creator, but a mod that replaces the players head), set these shapekeys to 1
 {% endhint %}
 
-<figure><img src="../../../.gitbook/assets/npv_blender_01_apply_shapekeys.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/npv_blender_01_apply_shapekeys.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="info" %}
 You don't need to select the eyebrows here, as those are "painted on" later via mesh appearance. The mesh only needs to have the right shape, which is what we're doing here.
@@ -233,7 +233,7 @@ You don't need to select the eyebrows here, as those are "painted on" later via 
 
 9. After you've changed the values to those of your V, click the "play" button again. This will apply the morphs to your V's face:
 
-<figure><img src="../../../.gitbook/assets/npv_tutorial_before_after.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/npv_tutorial_before_after.png" alt=""><figcaption></figcaption></figure>
 
 {% hint style="danger" %}
 Some shapekeys don't correspond 1:1 with their numbers in the character creator. If a part of V's head is shaped subtly wrong or looks weird in the game, **undo** your changes (Ctrl+Z), add or subtract 1 from the corresponding shape key, and run the script again.
@@ -249,14 +249,14 @@ Yes, you absolutely can! Once you have completed Step 3, you can re-export the `
 
 Now that your head looks the way you want, it's time to run the final script, which will export your changed head to .glb for you:
 
-<figure><img src="../../../.gitbook/assets/npv_blender_03_export.png" alt=""><figcaption><p>Select and run it</p></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/npv_blender_03_export.png" alt=""><figcaption><p>Select and run it</p></figcaption></figure>
 
 This will overwrite already existing files, leaving you with a set of import-ready mesh files.
 
 Now it's time to get them back into Wolvenkit.
 
 {% hint style="info" %}
-Before you import and apply these changes to your .mesh files, it's a good moment to go through:[fixing-eye-clipping-in-npvs-by-replacing-facial-rigs.md](../fixing-eye-clipping-in-npvs-by-replacing-facial-rigs.md "mention"), but this can be done later, if you are not sure.
+Before you import and apply these changes to your .mesh files, it's a good moment to go through:[fixing-eye-clipping-in-npvs-by-replacing-facial-rigs.md](../../fixing-eye-clipping-in-npvs-by-replacing-facial-rigs.md "mention"), but this can be done later, if you are not sure.
 {% endhint %}
 
 1. Find the Import Tool (Tools -> Import Tool)
@@ -287,9 +287,9 @@ Optimally, this process just runs with no hitches. However, during beta testing 
 
 ### Blender won't export
 
-You **need** to use the [wolvenkit-blender-io-suite](../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") for export. Make sure that it is installed and up-to-date.
+You **need** to use the [wolvenkit-blender-io-suite](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") for export. Make sure that it is installed and up-to-date.
 
-{% include "../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
+{% include "../../../../.gitbook/includes/wkit-blender-plugin-current-version.md" %}
 
 ### A component I want is not showing!
 
@@ -308,7 +308,7 @@ If that's not it, then you ran into the shapekey offset issue: some shapekeys do
 
 ### My pupils are fucked!
 
-Check [a-new-head-for-v.md](../a-new-head-for-v.md "mention") -> [#troubleshooting](../a-new-head-for-v.md#troubleshooting "mention")
+Check [a-new-head-for-v.md](../../a-new-head-for-v.md "mention") -> [#troubleshooting](../../a-new-head-for-v.md#troubleshooting "mention")
 
 ### My head is an abomination!
 

@@ -102,7 +102,7 @@ You can now fuck around and find out on your own. If you feel overwhelmed, I rec
 
 #### Where do I go from here?
 
-You can check out the [npcs](npcs/ "mention") section. If you feel lost or need a mod to fuck around and find out with, take the example project from the [npv-creating-a-custom-npc.md](npcs/npv-v-as-custom-npc/npv-creating-a-custom-npc.md "mention") (but ignore everything about making a custom head).
+You can check out the [npcs](npcs/ "mention") section. If you feel lost or need a mod to fuck around and find out with, take the example project from the [npv-creating-a-custom-npc.md](npcs/npv-v-as-custom-npc/npv-v-as-custom-npc/npv-creating-a-custom-npc.md "mention") (but ignore everything about making a custom head).
 
 Otherwise, you can take a look at these guides:
 

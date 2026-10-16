@@ -15,7 +15,7 @@ This guide will show you how to create fully custom NPCs for AMM.
 
 * If you want to create [custom-props](../../everything-else/custom-props/ "mention") instead, check the link.
 * If you want to add new appearances to already existing NPCs, check [amm-custom-npc-appearances.md](amm-custom-npc-appearances.md "mention")
-* If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/ "mention"). (It's a more advanced version of this workflow)
+* If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/npv-v-as-custom-npc/ "mention"). (It's a more advanced version of this workflow)
 
 ### OK, let's go
 
@@ -50,9 +50,9 @@ Any links in this section will go to the NPV guide, which is a more complex vers
 
 The archive contains
 
-* [#the-.lua-file](../npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-.lua-file "mention")to tell AMM about our files
-* [#the-root-entity](../npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-root-entity "mention"), which is where we register our appearances with the game (it's a copy of `base\quest\tertiary_characters\mama_welles.ent`)
-* [#the-app-file](../npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-app-file "mention"), which actually contains the appearances (it's a copy of `base\characters\appearances\gang\gang__valentinos_wa.app`)
+* [#the-.lua-file](../npv-v-as-custom-npc/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-.lua-file "mention")to tell AMM about our files
+* [#the-root-entity](../npv-v-as-custom-npc/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-root-entity "mention"), which is where we register our appearances with the game (it's a copy of `base\quest\tertiary_characters\mama_welles.ent`)
+* [#the-app-file](../npv-v-as-custom-npc/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#the-app-file "mention"), which actually contains the appearances (it's a copy of `base\characters\appearances\gang\gang__valentinos_wa.app`)
 * … and a bunch of custom meshes for the `mama_welles_comfy` appearance.
 
 When you're making your own NPC, you should make sure to take the root entity from a compatible character — what animation template and which set of facial expressions they use. If you don't know what that means, just look at Takemura-san and Viktor when they walk.

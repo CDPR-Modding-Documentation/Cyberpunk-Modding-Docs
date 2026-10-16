@@ -56,7 +56,7 @@ You may still need files from certain texture frameworks, but you’ll find that
 ### What's “custom pathing”, and why do we do it?
 
 {% hint style="info" %}
-You can learn more about this on out the[custompathing-assets.md](../../items-equipment/custompathing-assets.md "mention") page.
+You can learn more about this on out the[custompathing-assets.md](../../../items-equipment/custompathing-assets.md "mention") page.
 {% endhint %}
 
 Custom pathing is the process of moving files/folders into a unique place so that they don't influence existing mods or game files.
@@ -82,12 +82,12 @@ If you already have a Wolvenkit project for your NPV, you can skip this step and
 
 <figure><img src="https://lh7-rt.googleusercontent.com/docsz/AD_4nXd6GxJ4Vr1k3iqCCnhvKq-lnTKNhDrauJqfEKtAKjD3nnTbOwdVSFvKu6oniwAW2vD0sNXA_8hFYtHVmY0NaqGNIqbVO5d1BIvnimBl4v68tZByY4nnFob69VanGx5_FVfdEcoSqQ?key=v-1XJeip1aB1Hl1kfJwyYA" alt=""><figcaption></figcaption></figure>
 
-3. Follow the guide for [analysing-other-mods](../../analysing-other-mods/ "mention") on how to add your NPV's files from the `.archive` you have installed. Add every file in the archive.
+3. Follow the guide for [analysing-other-mods](../../../analysing-other-mods/ "mention") on how to add your NPV's files from the `.archive` you have installed. Add every file in the archive.
 4. You'll want to make sure you add any extra files like the `.lua` for spawning via AMM or a custom `.xl` file that may contain things like localization or scope info. Don't worry if none of that makes sense, the only thing you need to worry about is getting all the NPV files into your project.
 5. The `.xl` file will be found in `archive/pc/mod` and goes directly into your project's `source/resources` folder
 6.  The `.lua` file goes into the resources folder, too. When we pack this, we need to make sure AMM can read our file. You'll want to create a new folder in `source/resources` using the following path: `bin\x64\plugins\cyber_engine_tweaks\mods\AppearanceMenuMod\Collabs\Custom Entities` . You can use Wolvenkit's Create Folder button to create the entire thing in one go, then move the .lua file there. To do that, right click on the resources folder and select "Create new folder" (or hit F7 on your keyboard). Then, copy and paste the path shown above! You click the yellow button to open the folder in Windows Explorer and move the `.lua` file into it.\\
 
-    <figure><img src="../../../.gitbook/assets/Screenshot 2025-07-14 201648.png" alt=""><figcaption><p>This is what it should look like if you're using the "Create Folder" function inside Wolvenkit</p></figcaption></figure>
+    <figure><img src="../../../../.gitbook/assets/Screenshot 2025-07-14 201648.png" alt=""><figcaption><p>This is what it should look like if you're using the "Create Folder" function inside Wolvenkit</p></figcaption></figure>
 
 ### Step 2: Duplicating an existing appearance
 
@@ -132,7 +132,7 @@ Now it's time to play Barbie dress-up!
 
 #### Finding clothing items
 
-You can either[ search ](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files)for the name of the item if you know what it is, or peruse the asset browser. You can also use the Tweak Browser after finding a vanilla item's baseID to find the mesh you need. You can follow[ this guide ](../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md)to see how to do that.
+You can either[ search ](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-search-finding-files)for the name of the item if you know what it is, or peruse the asset browser. You can also use the Tweak Browser after finding a vanilla item's baseID to find the mesh you need. You can follow[ this guide ](../../../../for-mod-creators-theory/references-lists-and-overviews/equipment/spawn-codes-baseids-hashes.md)to see how to do that.
 
 {% hint style="info" %}
 With the [Toggle Mod Browser](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/asset-browser#mod-browser) button, you can switch the Asset Browser to search only in modded files.
@@ -274,7 +274,7 @@ This guide assumes you’ve never opened WolvenKit in your life so I’m going t
 
 If you're raring to go, and not using a mod manager like MO2, you can just click "Install Mod" or "Install and launch" if you're ready to test it right now.
 
-<figure><img src="../../../.gitbook/assets/add_apperances_to_npvs_install_and_launch.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/add_apperances_to_npvs_install_and_launch.png" alt=""><figcaption></figcaption></figure>
 
 This will pack your mod, install it to the game directory, and then launch the game for you.
 
@@ -306,6 +306,6 @@ And that’s it! Install and go, test it out!
 
 ### Final Notes
 
-Garment support doesn’t work on NPVs. You can hide submeshes in ACM or in Wolvenkit. You can also edit the mesh(es) in Blender to cut out or [resize](../../items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md) the parts that clip with other items.
+Garment support doesn’t work on NPVs. You can hide submeshes in ACM or in Wolvenkit. You can also edit the mesh(es) in Blender to cut out or [resize](../../../items-equipment/recolours-and-refits/r-and-r-refitting-step-by-step.md) the parts that clip with other items.
 
 This process should work for NPC+ too. And again, please don’t hesitate to reach out to me (`ratstick`) if you need help!

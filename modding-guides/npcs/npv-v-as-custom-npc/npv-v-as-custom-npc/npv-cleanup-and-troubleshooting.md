@@ -23,7 +23,7 @@ That's why you'll have to re-path your folder. If you don't, you will ruin someo
 
 </details>
 
-You need to **re-name the template folders**. Unless you want to make more NPVs, it will be enough to re-name `tutorial` to `your_username`. Find a full guide to the process under [moving-and-renaming-in-existing-projects.md](../../items-equipment/moving-and-renaming-in-existing-projects.md "mention").
+You need to **re-name the template folders**. Unless you want to make more NPVs, it will be enough to re-name `tutorial` to `your_username`. Find a full guide to the process under [moving-and-renaming-in-existing-projects.md](../../../items-equipment/moving-and-renaming-in-existing-projects.md "mention").
 
 ## Troubleshooting
 
@@ -51,7 +51,7 @@ Most likely, the path to the .ent file is not correct. If it is, make sure that 
 
 ### My NPV's idle animations are wrong
 
-That's a known issue when you're running [Photomode NPCs Extended](https://www.nexusmods.com/cyberpunk2077/mods/18837) - at some point, the game gets confused because you have too many of them, and starts mixing up their idle anims. Your options here are:&#x20;
+That's a known issue when you're running [Photomode NPCs Extended](https://www.nexusmods.com/cyberpunk2077/mods/18837) - at some point, the game gets confused because you have too many of them, and starts mixing up their idle anims. Your options here are:
 
 * disable the other mod
 * Edit the file `Photomode_NPCs_Extended_xBaebsae.yaml` and delete entries that you aren't using (mind the whitespaces)
@@ -59,13 +59,13 @@ That's a known issue when you're running [Photomode NPCs Extended](https://www.n
 
 ### My NPV turns into someone else if I walk away from them!
 
-That is due to **appearance proxies**, which are how the game saves performance. If you're using the most recent [NPV template project](https://www.nexusmods.com/cyberpunk2077/mods/8328?tab=files\&file_id=45042), you shouldn't have any, but if you set up your files from scratch, you'll have to [disable the proxy appearance](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/proxy-appearances.md#i-hate-it-how-do-i-kill-it).
+That is due to **appearance proxies**, which are how the game saves performance. If you're using the most recent [NPV template project](https://www.nexusmods.com/cyberpunk2077/mods/8328?tab=files\&file_id=45042), you shouldn't have any, but if you set up your files from scratch, you'll have to [disable the proxy appearance](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/appearance-.app-files/proxy-appearances.md#i-hate-it-how-do-i-kill-it).
 
 ### Clothes are floating!
 
 Open your .app file and expand the `components` array again. For each of the mesh components that aren't moving, expand it and find the `skinning` entry. Make sure that the `bindName` points at `root`:
 
-<figure><img src="../../../.gitbook/assets/npv_skinning_root.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/npv_skinning_root.png" alt=""><figcaption></figcaption></figure>
 
 Repeat this for `parentTransform`, if necessary.
 
@@ -73,9 +73,9 @@ Repeat this for `parentTransform`, if necessary.
 
 You need to **manually enable** the correct foot mesh.
 
-Hide [chunks](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md) 5-7 of the base body (original component name is `t0_000_pXa_base__full`):
+Hide [chunks](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/3d-objects-.mesh-files/submeshes-materials-and-chunks.md) 5-7 of the base body (original component name is `t0_000_pXa_base__full`):
 
-<figure><img src="../../../.gitbook/assets/npv_hide_feet.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/npv_hide_feet.png" alt=""><figcaption></figcaption></figure>
 
 Add an extra component and point the `depotPath` to the mesh for the correct feet. This is either `l0_000_pXa_base__cs_flat` or `l0_000_pXa_base__cs_heels`.
 
@@ -87,7 +87,7 @@ If you don't have these meshes (they should be included in the sample project), 
 
 That happens when you're loading an appearance that the game doesn't know about — the problem is between your .lua file and your root entity. The names must match exactly, and must contain not typos or leading/trailing spaces.
 
-<figure><img src="../../../.gitbook/assets/npv_troubleshooting_lua_ent.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/npv_troubleshooting_lua_ent.png" alt=""><figcaption></figcaption></figure>
 
 If that was not it, double-check the `path` in your lua file and make sure that it points to the correct .ent file, and not to a backup or backup project.
 

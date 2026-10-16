@@ -22,7 +22,7 @@ If you want to edit other files for V, you may be able to find their paths in [c
 * You have the [wolvenkit-blender-io-suite](../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention") installed and ready to go
 
 {% hint style="info" %}
-This guide assumes that you'll be starting from 0. If you want to use character creator options, please reference the [npv-preparing-the-head-in-blender.md](npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention") to the point where you apply all shapekeys.
+This guide assumes that you'll be starting from 0. If you want to use character creator options, please reference the [npv-preparing-the-head-in-blender.md](npv-v-as-custom-npc/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md "mention") to the point where you apply all shapekeys.
 {% endhint %}
 
 <details>
@@ -77,7 +77,7 @@ You can consult [cheat-sheet-head](../../for-mod-creators-theory/references-list
 Make sure to include **all** morphtargets in the folder: cyberware, tattoos, scars, and for mascV, beards.
 {% endhint %}
 
-2. Export them all via [Wolvenkit Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) (you can find step-by-step instructions in the NPV guide under [#step-2-exporting-head](npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md#step-2-exporting-head "mention"))
+2. Export them all via [Wolvenkit Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool) (you can find step-by-step instructions in the NPV guide under [#step-2-exporting-head](npv-v-as-custom-npc/npv-v-as-custom-npc/npv-preparing-the-head-in-blender.md#step-2-exporting-head "mention"))
 
 ### 1.2 Importing into Blender
 

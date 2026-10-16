@@ -25,7 +25,7 @@ You can find a more detailed guide under [altering-appearances-within-wolvenkit-
 * If you want to add custom NPCs to Cyberpunk 2077 with AMM, check [amm-custom-npcs](../amm-custom-npcs/ "mention")
 * If you want to add AMM appearances to existing NPCs, check [amm-custom-npc-appearances.md](../amm-custom-npcs/amm-custom-npc-appearances.md "mention")
 * If you want to add Photomode appearances to existing NPCs, check [xBaebsae's tutorial](https://xbaebsae.jimdofree.com/cyberpunk-2077-guides/cp2077-expand-appearances-in-photomode-npcs/)
-* If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/ "mention")
+* If you want to add V as an NPC, check [npv-v-as-custom-npc](../npv-v-as-custom-npc/npv-v-as-custom-npc/ "mention")
 * If you want a more basic guide that goes into more detail for the basic stuff (including Blender), see [altering-appearances-within-wolvenkit-full-workflow.md](altering-appearances-within-wolvenkit-full-workflow.md "mention")
 * If you're after hair colours, check [hair-profiles-.hp.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/materials/hair-profiles-.hp.md "mention") and follow the links from there.
 * if you want to create a scene with Johnny, where he glitches in, talks, glitches out, check [this guide](../../quest/johnny-glitching-and-talking-with-v.md) .
@@ -96,7 +96,7 @@ This is where the magic happens.
 ## (Safely) adding components
 
 {% hint style="info" %}
-For a detailed guide on adding hair, check [npv-creating-a-custom-npc.md](../npv-v-as-custom-npc/npv-creating-a-custom-npc.md "mention") - [#hair](../npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair "mention")
+For a detailed guide on adding hair, check [npv-creating-a-custom-npc.md](../npv-v-as-custom-npc/npv-v-as-custom-npc/npv-creating-a-custom-npc.md "mention") - [#hair](../npv-v-as-custom-npc/npv-v-as-custom-npc/npv-creating-a-custom-npc.md#hair "mention")
 {% endhint %}
 
 If you want to add a new item, first **duplicate an existing one**. After that, you can pretend that it is just another change:

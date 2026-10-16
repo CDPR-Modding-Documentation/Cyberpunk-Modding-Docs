@@ -17,7 +17,7 @@ This page will show you how to find an AMM NPC's files.
 
 * To change NPC appearances, see [appearances-change-the-looks](../../../modding-guides/npcs/appearances-change-the-looks/ "mention")
 * To create custom NPCs, see [amm-custom-npcs](../../../modding-guides/npcs/amm-custom-npcs/ "mention")
-* To create V as an NPC, see [npv-v-as-custom-npc](../../../modding-guides/npcs/npv-v-as-custom-npc/ "mention")
+* To create V as an NPC, see [npv-v-as-custom-npc](../../../modding-guides/npcs/npv-v-as-custom-npc/npv-v-as-custom-npc/ "mention")
 
 In this guide, we'll go looking for `nurse_wa_nurse_wa_01`.
 
