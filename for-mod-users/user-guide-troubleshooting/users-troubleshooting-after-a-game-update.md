@@ -13,7 +13,7 @@ Who doesn't know it? Your modded game is working, then there's an update, and fr
 This page will give you a brief overview on what you can do in the situation described above by linking to the corresponding sections of the [troubleshooting guide](./).
 
 {% hint style="warning" %}
-If you are on Linux and have exhausted these options, make sure to double-check the [launch options](../users-modding-cyberpunk-2077/modding-on-linux.md), as Steam sometimes resets these between updates.
+If you are on Linux and have exhausted these options, make sure to double-check the [launch options](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/modding-on-linux.md), as Steam sometimes resets these between updates.
 {% endhint %}
 
 ***

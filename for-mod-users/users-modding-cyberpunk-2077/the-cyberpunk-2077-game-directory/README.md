@@ -23,6 +23,8 @@ This page will tell you
 
 The game directory is called `Cyberpunk 2077` (unless you re-named it). It's where Windows puts everything it needs to run the game when you click the icon — including mods.
 
+This is **not** referring to the `mods` folder you may see when looking through your files, that is specifically for REDmod
+
 <details>
 
 <summary>What's the difference between folders and files?</summary>
@@ -48,7 +50,7 @@ Click on the picture below to zoom in!
 
 Unless you changed the default settings, your game is installed here:
 
-<table data-header-hidden><thead><tr><th width="102"></th><th></th></tr></thead><tbody><tr><td>Steam</td><td><code>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077</code></td></tr><tr><td>GOG</td><td><code>C:\Program Files (x86)\GOG Galaxy\Games\Cyberpunk 2077</code></td></tr><tr><td>Epic</td><td><code>C:\Program Files\Epic Games\Cyberpunk 2077</code></td></tr></tbody></table>
+<table data-header-hidden><thead><tr><th width="171"></th><th></th></tr></thead><tbody><tr><td>Steam (Windows)</td><td><code>C:\Program Files (x86)\Steam\steamapps\common\Cyberpunk 2077</code></td></tr><tr><td>Steam (Linux)</td><td><code>/home/user/.local/share/Steam/steamapps/common/Cyberpunk 2077</code></td></tr><tr><td>GOG</td><td><code>C:\Program Files (x86)\GOG Galaxy\Games\Cyberpunk 2077</code></td></tr><tr><td>Epic</td><td><code>C:\Program Files\Epic Games\Cyberpunk 2077</code></td></tr></tbody></table>
 
 <details>
 
@@ -99,6 +101,28 @@ Right-click on your game in the list and select `Manage`. Then, click on the fol
 
 2. The entire path will be highlighted (if it's not, you can do that by pressing `Ctrl+A`)
 3. Press `Ctrl+C` to copy it to your clipboard
+
+
+
+## Copy full file path (Linux)
+
+### Note:
+
+The Linux directory path goes to your `/steamapps/common/` directory, NOT the `steamapps/compatdata/` files that Proton creates
+
+
+
+1. Open your installed game files through Steam, Lutris, or Heroic
+2. Get the full file path with:
+   1. Your file explorer
+      1. Right click empty space
+      2. Click "Properties"
+      3. Copy the full file path shown as "Location:"
+   2. Terminal
+      1. Right click empty space in your file explorer
+         1. Click "Open in Terminal"
+            1. Type `pwd` and press enter (yes that is the entire command)
+            2. Copy the output
 
 ***
 

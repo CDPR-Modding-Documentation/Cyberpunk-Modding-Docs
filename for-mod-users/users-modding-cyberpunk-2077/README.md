@@ -40,7 +40,7 @@ Overall, your mods will not work unless you
 * Have REDmod **enabled** <sub>_(_</sub>[<sub>_REDmod_</sub>](redmod/) <sub>_exclusive)_</sub>
 
 {% hint style="warning" %}
-If you're on Linux/Steam Deck, you need to follow [this guide](modding-on-linux.md) to the letter
+If you're on Linux/Steam Deck, you need to follow [this guide](the-cyberpunk-2077-game-directory/modding-on-linux.md) to the letter, then come back here
 {% endhint %}
 
 ## Mod Manager Options
@@ -57,7 +57,11 @@ If you had terrible experiences with Vortex for other games, be assured: Cyberpu
 
 ### Manual Install
 
-"Manual install" is a glorified term for "extracting the downloaded archive into your game directory".
+"Manual install" is a glorified term for "extracting the downloaded archive into your game directory". Extract the archive to your [game directory](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directoryhttps://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory) and not a folder inside it.
+
+_When extracting a mod into the directory, it may be inside a `bin` file, and your unzipping software (especially on Linux) may place the mod `bin` file inside the existing `bin` file. This is not what we want._&#x20;
+
+**To fix**: Move the new `bin` file out of the original then drag it back into your game directory. The file system will ask if you want to merge the files because they have the same name, say ye&#x73;**.**
 
 {% hint style="danger" %}
 **You have to make sure that the right files end up in the correct folders.**\

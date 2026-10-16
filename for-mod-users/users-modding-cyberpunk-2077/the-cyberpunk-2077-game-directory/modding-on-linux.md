@@ -10,7 +10,7 @@ This page tells you how to **set the launch options** for Steam under Linux.
 
 ### Wait, this is not what I want!
 
-* If you have trouble after an update and have exhausted [all the usual steps](../user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md), double-check your [#launch-options](modding-on-linux.md#launch-options "mention") (sometimes, Steam helpfully changes them to make you crash)
+* If you have trouble after an update and have exhausted [all the usual steps](../../user-guide-troubleshooting/users-troubleshooting-after-a-game-update.md), double-check your [#launch-options](modding-on-linux.md#launch-options "mention") (sometimes, Steam helpfully changes them to make you crash)
 * If you want to optimize Cyberpunk 2077 settings for your SteamDeck, find a guide on [/r/SteamDeck](https://www.reddit.com/r/SteamDeck/)
 * For a video about modding on mac, see [https://www.youtube.com/watch?v=x0CDcBui2qE\&t=20s](https://www.youtube.com/watch?v=x0CDcBui2qE\&t=20s)
 
@@ -45,27 +45,27 @@ If you don't want to read text, find a video documenting the process [here](http
 
 To configure the necessary parameters, you can use the app Protontricks, which you can download through the built-in app browser "Discover":
 
-<figure><img src="../../.gitbook/assets/linux_modding_proton_1.png" alt=""><figcaption><p>Protontricks as Shown in Discover</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/linux_modding_proton_1.png" alt=""><figcaption><p>Protontricks as Shown in Discover</p></figcaption></figure>
 
 2. Open Protontricks (you can search for this by selecting start menu)
 
-<figure><img src="../../.gitbook/assets/linux_modding_protontricks_2.png" alt=""><figcaption><p>Opening Protontricks</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/linux_modding_protontricks_2.png" alt=""><figcaption><p>Opening Protontricks</p></figcaption></figure>
 
 3. When Protontrick opens, select Cyberpunk:
 
-<figure><img src="../../.gitbook/assets/linux_modding_3.png" alt=""><figcaption><p>Finding Cyberpunk 2077 in Protontricks</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/linux_modding_3.png" alt=""><figcaption><p>Finding Cyberpunk 2077 in Protontricks</p></figcaption></figure>
 
 4. Choose "Select the default wineprefix":
 
-<figure><img src="../../.gitbook/assets/linux_modding_4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/linux_modding_4.png" alt=""><figcaption></figcaption></figure>
 
 5. Add an override: Check **both** of the checkboxes below
 
-<figure><img src="../../.gitbook/assets/protontricks_dll_1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/protontricks_dll_1.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/protontricks_dll_2.png" alt=""><figcaption><p>Selecting <code>d3dcompiler_47</code></p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/protontricks_dll_2.png" alt=""><figcaption><p>Selecting <code>d3dcompiler_47</code></p></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/protontricks_dll_3.png" alt=""><figcaption><p>Selecting <code>vcrun2022</code></p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/protontricks_dll_3.png" alt=""><figcaption><p>Selecting <code>vcrun2022</code></p></figcaption></figure>
 
 {% hint style="info" %}
 If you do not see `vcrun2022` please verify you're on the latest version of Protontricks
@@ -73,7 +73,7 @@ If you do not see `vcrun2022` please verify you're on the latest version of Prot
 
 Apply via "OK". You may receive an error below or similar. If you do, click "Yes" to continue the installation.
 
-<figure><img src="../../.gitbook/assets/vc_run.png" alt=""><figcaption><p>Example Installation Warning</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/vc_run.png" alt=""><figcaption><p>Example Installation Warning</p></figcaption></figure>
 
 ### Lutris: setting up
 
@@ -87,11 +87,11 @@ Taken from [CET's github](https://github.com/maximegmd/CyberEngineTweaks/issues/
 2. Right click on the game > `Settings` > `Runner options`
 3. While newer versions of Lutris can use Proton, it is advised you use Wine-GE instead. Make sure you're using at least `lutris-GE-Proton8-1`
 
-<figure><img src="../../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (211).png" alt=""><figcaption></figcaption></figure>
 
 4. Scroll down to **DLL overrides**, click on **Add** to add a key. Add the following keys:
 
-<figure><img src="../../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (212).png" alt=""><figcaption></figcaption></figure>
 
 ## Launch Options
 
@@ -102,7 +102,7 @@ If you have typos or forget characters in your launch parameters, **they will no
 You can copy-paste the text from the guide below.
 {% endhint %}
 
-For a full list of launch options, check [launch-parameters.md](the-cyberpunk-2077-game-directory/launch-parameters.md "mention"). Use them at own risk!
+For a full list of launch options, check [launch-parameters.md](launch-parameters.md "mention"). Use them at own risk!
 
 ### Steam: Launch Options
 
@@ -116,7 +116,7 @@ WINEDLLOVERRIDES="winmm,version=n,b" %command%
 The command is case sensitive. Copy-paste the text from the box above to make sure.
 {% endhint %}
 
-<figure><img src="../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption><p>Setting Launch Options in Steam</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/linux_modding_8.png" alt=""><figcaption><p>Setting Launch Options in Steam</p></figcaption></figure>
 
 If this still doesn't work, check the [Cyber Engine Tweaks wiki](https://app.gitbook.com/s/-MP5jWcLZLbbbzO-_ua1-887967055/getting-started/installing) for additional instructions, or find us on [Discord](https://discord.gg/redmodding) in `#mod-troubleshooting`.
 
@@ -124,7 +124,7 @@ If this still doesn't work, check the [Cyber Engine Tweaks wiki](https://app.git
 
 You can find the launch options for GOG in the game's config menu under `Manage Installation` -> `Configure...`
 
-<figure><img src="../../.gitbook/assets/gog_set_launch_args.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/gog_set_launch_args.png" alt=""><figcaption></figcaption></figure>
 
 As under Steam, you have to add the following:
 
@@ -140,9 +140,9 @@ The command is case sensitive. Copy-paste the text from the box above to make su
 
 While at your library right click Cyberpunk then navigate to `Settings` -> `ADVANCED` and scroll down to `Environment Variables`
 
-Now set a new variable name `WINEDLLOVERRIDES` with a value of `winmm,version=n,b`  without any quotation marks.
+Now set a new variable name `WINEDLLOVERRIDES` with a value of `winmm,version=n,b` without any quotation marks.
 
-<figure><img src="../../.gitbook/assets/image (533).png" alt=""><figcaption><p>Don't forget to click the + button for the changes to save.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (533).png" alt=""><figcaption><p>Don't forget to click the + button for the changes to save.</p></figcaption></figure>
 
 {% hint style="danger" %}
 Variable Name and Value are both case sensitive, Copy-paste for certainty.
@@ -151,6 +151,14 @@ Variable Name and Value are both case sensitive, Copy-paste for certainty.
 {% hint style="info" %}
 Anything that includes **`=`** and doesn't start with **`-`** goes to Environment Variables, while things starting with\*\*`-`**usually go under Game Arguments, for example**`-skipStartScreen`\*\*
 {% endhint %}
+
+
+
+## You're not done just yet!
+
+So far you've just installed the dependencies, head back to [Using Mods: Manual Install](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077#manual-install) to continue
+
+
 
 ## Troubleshooting
 

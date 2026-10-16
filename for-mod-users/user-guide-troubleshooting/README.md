@@ -190,7 +190,7 @@ You're welcome to read through the troubleshooting guide - it might even help yo
 
 **I'm playing the game on macOS**
 
-* If you're playing on macOS native, [you need to check this guide first](../users-modding-cyberpunk-2077/modding-on-macos.md).
+* If you're playing on macOS native, [you need to check this guide first](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/modding-on-macos.md).
 
 {% hint style="warning" %}
 TL;DR: modding on Mac natively is in the very early stages, and there are very few mods available to use.
@@ -654,7 +654,7 @@ The game isn't launching and doesn't even give you an error. How are you suppose
 * If you're using [RED4ext](https://www.nexusmods.com/cyberpunk2077/mods/2380), uninstall [cybercmd](https://www.nexusmods.com/cyberpunk2077/mods/5176)
 * If you're using any FrameGen/DLSS/FSR mods, like OptiScaler, remove them
 * If you're using any external programs like ReShade, remove them
-* If you're on Linux, **double-check the** [**launch options**](../users-modding-cyberpunk-2077/modding-on-linux.md). Steam sometimes resets these between updates.
+* If you're on Linux, **double-check the** [**launch options**](../users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/modding-on-linux.md). Steam sometimes resets these between updates.
 {% endhint %}
 
 ***

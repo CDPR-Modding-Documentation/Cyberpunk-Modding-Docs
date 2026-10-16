@@ -32,7 +32,7 @@ To learn how to install mods, check [Using Mods](../)
   * [.NET 6.0+](https://dotnet.microsoft.com/en-us/download/dotnet/6.0)
 * You have updated the following things:
   * [Your graphics card](https://www.wikihow.com/Update-Your-Graphics-Driver) driver
-  * The latest [Windows Update](https://www.wikihow.com/Update-Windows) for your operating system (checkout [modding-on-linux.md](../modding-on-linux.md "mention") if that's what you're doing)
+  * The latest [Windows Update](https://www.wikihow.com/Update-Windows) for your operating system (checkout [modding-on-linux.md](../the-cyberpunk-2077-game-directory/modding-on-linux.md "mention") if that's what you're doing)
 
 ***
 
