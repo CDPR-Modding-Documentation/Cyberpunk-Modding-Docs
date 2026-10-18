@@ -33,7 +33,7 @@ More detailed information can be found here:
 Instructions on how to find locations using RHT can be found [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/places).
 {% endhint %}
 
-* **World Builder** **(**[**GitHub**](https://github.com/justarandomguyintheinternet/CP77_entSpawner)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/20660)**|**[**Wiki**](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/world-editing/object-spawner)**):** Main tool for adding new nodes to the game-world. Supports dozens of node types and has access to all game resources, including AMM props. Mods made using it are native world edits, using ArchiveXL to make the game load the custom sectors.
+* **World Builder** **(**[**GitHub**](https://github.com/Akiway/CP77_entSpawner/releases/tag/a.1.5.0)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/20660)**|**[**Wiki**](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/world-editing/object-spawner)**):** Main tool for adding new nodes to the game-world. Supports dozens of node types and has access to all game resources, including AMM props. Mods made using it are native world edits, using ArchiveXL to make the game load the custom sectors.
 
 {% hint style="info" %}
 A fork of World Builder with extended features that aren't yet in the main repository is available exclusively on [GitHub](https://github.com/Akiway/CP77_entSpawner).
