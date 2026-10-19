@@ -32,7 +32,9 @@ If you get multiple hits, take the one that does not include `_fpp_` in its file
 
 <figure><img src="https://lh7-us.googleusercontent.com/RI9Ee_FGHg0wskRK3SlVVpxbU5WuK7H0o0FDip15fb59vaJq8EfHmLshv5BoN-arccmH1kF7oYlp1fZL9jR6xWXb33NQDWol_1v44AFx7pOmTXzmbqn5syIkHVSTDMw60YH0PlAtQn8qtF1hz-iGHYo" alt="" width="563"><figcaption><p>credit to this <a href="https://www.reddit.com/r/cyberpunkgame/comments/t4nsi9/my_written_guide_on_how_to_make_hairstyles_in/">Reddit</a> post.</p></figcaption></figure>
 
-<figure><img src="https://lh7-us.googleusercontent.com/mdAHWojzo5xwy3ThQ4wv3RrxCY7eHCcbAcxJ2CAP1lmDqB77t3SBJe2saznl3n9bVS3eI-qtY4pOzu-NezU7r16hE9aD3vg-Iqe7xqsTPNU2YycCC6965KK3pR7FAmeWof9Ei3CMr22ENEyeetGLjHI" alt="" width="563"><figcaption><p>credit to this <a href="https://www.reddit.com/r/cyberpunkgame/comments/t4nsi9/my_written_guide_on_how_to_make_hairstyles_in/">Reddit</a> post.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/hair_cheat_sheet_femv.png" alt=""><figcaption></figcaption></figure>
+
+
 
 ## Name of meshes by index
 
