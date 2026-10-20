@@ -35,8 +35,6 @@ PMA = Player Man Average (male character)
 inkcc = shorthand for "inkcharcustomization" files
 {% endhint %}
 
-
-
 ## Step 0: Make a project
 
 Start by making a new project in WolvenKit. Name your project.
@@ -44,8 +42,6 @@ Start by making a new project in WolvenKit. Name your project.
 Open your new project's root folder by clicking the yellow folder button on the top right of the project explorer: ![](../../../../.gitbook/assets/CCXL_hp_image1.png)
 
 In file explorer, open and drag the template files into your project. It will show the files in WolvenKit's project explorer. If it does not, hit the blue refresh 🔄 button next to the yellow root folder button.
-
-
 
 ***
 
@@ -68,9 +64,8 @@ Do not use the same name for multiple mods.
 
 #### Updating the template names
 
-Locate the Archive section of your project explorer.
-
-Select the first folder, then right click and click Rename (or press F2).
+* Locate the Archive section of your project explorer.
+* Select the first folder, then right click and click Rename (or press F2).
 
 <figure><img src="../../../../.gitbook/assets/ccxl_eyelashes_moddername.png" alt=""><figcaption></figcaption></figure>
 
@@ -87,7 +82,7 @@ WolvenKit's logs will print a list of places it updated the names.
 
 Don't worry. Rename your folder back to the placeholder name and do **not** check the update in project files box. Then, rename it again to your new replacement name.
 
-Remember to check the box this time before confirming.
+Remember to **check** the box this time before confirming.
 {% endhint %}
 
 Next rename the following:
@@ -100,18 +95,16 @@ Next rename the following:
 
 * `CCXL_moddername_modname.xl` file - rename to be the same as your project name.
 
-
-
 ***
 
 ## Step 2: Test your mod
 
-Install your mod, open the game and check that everything is working in the character customization. Your option should appear in the switcher for `Eyelashes`.&#x20;
+Install your mod, open the game and check that everything is working in the character customization. Your option should appear in the switcher for `Eyelashes`.
 
 {% hint style="warning" %}
 Ensure all the color options work. If you see just a blob in the middle of the eye on Male V, don't worry, we'll change that later.
 
-Since the placeholder mesh is the same as the vanilla option, you may not see a difference in shape.&#x20;
+Since the placeholder mesh is the same as the vanilla option, you may not see a difference in shape.
 {% endhint %}
 
 If the option appears and the colors work, you are good to continue.
@@ -119,8 +112,6 @@ If the option appears and the colors work, you are good to continue.
 If not, run file validation on the project and fix any issues with the paths that show up. If there are no issues and things are still not working, check the [#troubleshooting](ccxl-eyelashes.md#troubleshooting "mention") section.
 
 <figure><img src="../../../../.gitbook/assets/project_validation.png" alt=""><figcaption></figcaption></figure>
-
-
 
 ***
 
@@ -133,10 +124,10 @@ Firstly, you should decide if you are doing drawn eyelashes or modeled eyelashes
 <figure><img src="../../../../.gitbook/assets/ccxl_eyelashes_femlashes.png" alt=""><figcaption><p>Modeled eyelashes (each strand is 2 planes intersecting)</p></figcaption></figure>
 
 {% hint style="info" %}
-Generally modeled eyelashes will provide a higher quality result. In vanilla Male V has drawn eyelashes, and Fem V has modeled eyelashes. Both options can be used for either V.&#x20;
+Generally modeled eyelashes will provide a higher quality result. In vanilla Male V has drawn eyelashes, and Fem V has modeled eyelashes. Both options can be used for either V.
 {% endhint %}
 
-This guide will not go into how to model eyelashes, there are a ton of guides for that. For general 3D-modeling information, see [3d-modelling](../../../3d-modelling/ "mention").&#x20;
+This guide will not go into how to model eyelashes, there are a ton of guides for that. For general 3D-modeling information, see [3d-modelling](../../../3d-modelling/ "mention").
 
 Keep these in mind when making your eyelashes:
 
@@ -177,13 +168,13 @@ PMA: base\characters\head\player_base_heads\player_man_average\h0_000_pma__morph
 
 Now let's rename the .mesh and .morphtarget files. Replace the `modname` with the unique name of your mod, ensure you tick the "Update in project files?" option just like the previous steps.
 
-Next we will export all the .mesh and .morphtarget files. Tick "Export Garment Support" off for the meshes.&#x20;
+Next we will export all the .mesh and .morphtarget files. Tick "Export Garment Support" off for the meshes.
 
-Now's the time to make your custom lashes.&#x20;
+Now's the time to make your custom lashes.
 
 After you are done with that, replace the template .mesh and .morphtarget following these steps:
 
-* From [Blender](https://www.blender.org/), export into the .mesh and .morphtarget files you exported from Wolvenkit.&#x20;
+* From [Blender](https://www.blender.org/), export into the .mesh and .morphtarget files you exported from Wolvenkit.
   * Export **only** the eyelash submesh, not the eyeball or eye wetness submeshes. If your eyelashes are in multiple submeshes, you will have to do extra work.
 
 {% hint style="danger" %}
@@ -234,27 +225,25 @@ I also recommend importing the head **.morphtarget** so you can check the lashes
 * Open the side panel by pressing N. Go to Shape Keys Batch Transfer.
 * Set the source as the donor pwa eyelash morphtarget submesh. Set the target as your eyelash submesh. And press Transfer Shape Keys.
 * Next go to Modifiers (blue wrench). Change your Armature to be the donor morphtarget armature, in this case `Armature__he_000_pma__morphs`. Parent your .morphtarget to the new armature and move it inside the same collection.
-* Check all the Shape Keys and adjust if necessary.&#x20;
-* Export the .morphtarget to the pma .morphtarget and .mesh.&#x20;
+* Check all the Shape Keys and adjust if necessary.
+* Export the .morphtarget to the pma .morphtarget and .mesh.
 * Import to Wolvenkit. .mesh first, then .morphtarget.
 
 {% hint style="warning" %}
-If you get an error about a vertex group creating a neutral bone in Blender, remove that vertex group.&#x20;
+If you get an error about a vertex group creating a neutral bone in Blender, remove that vertex group.
 {% endhint %}
-
-
 
 ***
 
 ## Step 4: Custom lash texture
 
-Rename the files in **textures** by replacing `modname` with your unique mod name, ensure "Update in project files" is checked.&#x20;
+Rename the files in **textures** by replacing `modname` with your unique mod name, ensure "Update in project files" is checked.
 
 Provided in the template project is both the vanilla Male V eyelashes: `modname_drawn_lashes_alpha.xbm`, and the vanilla single lash strand used by Fem V eyelashes: `modname_single_lash_alpha.xbm`.
 
 If you are not doing a custom texture or drawn lashes, **you can skip to the next section now.**
 
-If you have a custom eyelash strand texture or you are doing drawn lashes, you can export the relevant `.xbm`. Replace the exported `.png` with your new texture and import back into Wolvenkit.&#x20;
+If you have a custom eyelash strand texture or you are doing drawn lashes, you can export the relevant `.xbm`. Replace the exported `.png` with your new texture and import back into Wolvenkit.
 
 {% hint style="danger" %}
 Make sure your eyelash texture looks like the original file, you should not have colors in your alpha texture.
@@ -266,23 +255,21 @@ If you are doing drawn lashes, open the .mi files and update the values -> CKeyV
 
 Save the .mi file.
 
-
-
 ***
 
 ## Step 5: The .app file
 
-Rename the `.app` files by replacing `modname` with your mod name, ensure "Update in project files" is checked.&#x20;
+Rename the `.app` files by replacing `modname` with your mod name, ensure "Update in project files" is checked.
 
 Next convert the `.app` file to `.json` by right clicking on it and selecting "Convert to JSON".
 
 <figure><img src="../../../../.gitbook/assets/ccxl_eyelashes_json.png" alt=""><figcaption></figcaption></figure>
 
-The **.json** file will appear in your raw folder.&#x20;
+The **.json** file will appear in your raw folder.
 
 1. Open your **.json** file in a code editor such as [Visual Studio Code](https://code.visualstudio.com/) or [Notepad++](https://notepad-plus-plus.org/downloads/) and press **CTRL+F.**
 2. Select the Replace option.
-3. Enter into the find field: `moddername_modname` \
+3. Enter into the find field: `moddername_modname`\
    and into the replace field your actual modder name and mod name in the same format, e.g. `icxrus_reallycooleyelashmod`.
 4. Select "Replace all". The editor should inform you that 3 occurences were replaced.
 5. Save your file and go back to Wolvenkit.
@@ -290,27 +277,23 @@ The **.json** file will appear in your raw folder.&#x20;
 
 Repeat for the other `.app` file.
 
-
-
 ***
 
 ## Step 6: The .inkcharcustomization file
 
 This file is how we tell ArchiveXL what we want to add and to what switcher.
 
-Convert the **.inkcharcustomization** file to **.json** using "Convert to JSON" just like in the previous section. The **.json** file will appear in your raw folder.&#x20;
+Convert the **.inkcharcustomization** file to **.json** using "Convert to JSON" just like in the previous section. The **.json** file will appear in your raw folder.
 
 1. Open your **.json** file in a code editor such as Visual Studio Code or Notepad++ and press **CTRL+F.**
 2. Select the Replace option.
-3. Enter into the find field: `moddername_modname` \
+3. Enter into the find field: `moddername_modname`\
    and into the replace field your actual modder name and mod name in the same format, e.g. `icxrus_reallycooleyelashmod`.
 4. Select "Replace all". The editor should inform you that 6 occurences were replaced.
 5. Save your file and go back to Wolvenkit.
 6. Right click on the **.json** in the raw folder and select "Convert from JSON".
 
 Repeat for the other `.inkcharcustomization` file.
-
-
 
 ***
 
@@ -330,13 +313,11 @@ Next you can change the **femaleVariant** and **maleVariant** to be what you wan
 
 Save the file.
 
-
-
 ***
 
 ## Step 8: Remove unnecessary files
 
-You can now delete the **alpha.xbm** you aren't using in the **textures** folder, if you haven't already.&#x20;
+You can now delete the **alpha.xbm** you aren't using in the **textures** folder, if you haven't already.
 
 * If you didn't edit the .mi file, this will be the `drawn_lashes_alpha.xbm`.
 
@@ -349,8 +330,6 @@ Check [#shorthand](ccxl-eyelashes.md#shorthand "mention") for what the gendered 
 You also need to clear these from the **.xl file**. If you are doing a Fem V only eyelash mod, delete from **customizations** the **male:** line completely (don't leave empty lines) and from **resource scope** everything that is under the comment `# Male V`. And vice versa for Male V only eyelashes.
 
 <figure><img src="../../../../.gitbook/assets/ccxl_eyelashes_xledit.png" alt=""><figcaption><p>Example of Fem V only .xl file</p></figcaption></figure>
-
-
 
 ***
 
@@ -366,15 +345,11 @@ If a path is mismatched, you can grab the correct path by right clicking the fil
 
 Save the file after any changes.
 
-
-
 ***
 
 ## Step 10: Install the mod
 
 You're done! Now you can install the mod and see if everything works. If something isn't working, recheck all the steps and the [#troubleshooting](ccxl-eyelashes.md#troubleshooting "mention") section.
-
-
 
 ***
 
@@ -384,7 +359,7 @@ If you want to support custom head sculpts like EKT Asian, you can create a simp
 
 1. Create a new wolvenkit project.
 2. Copy over the `.morphtarget` file from the original eyelash mod. Remember, the folder path must be the exact same as in the original mod!
-3. Turn on Mod Browser and find the **eye .morphtarget** of your head replacer.&#x20;
+3. Turn on Mod Browser and find the **eye .morphtarget** of your head replacer.
    1. The location of the `.morphtarget` is the same as the one listed in the drop down in [#step-3-.mesh-and-.morphtarget-files](ccxl-eyelashes.md#step-3-.mesh-and-.morphtarget-files "mention").
 4. Add it to your project and export both `.morphtargets`.
 5. Import them into Blender and follow the steps detailed in [#transferring-shape-keys](ccxl-eyelashes.md#transferring-shape-keys "mention").
@@ -392,8 +367,6 @@ If you want to support custom head sculpts like EKT Asian, you can create a simp
 7. Import to Wolvenkit.
 8. Delete the `base` folder in your Project Explorer.
 9. Pack and install the override mod alongside the main mod file.
-
-
 
 ***
 
@@ -420,4 +393,3 @@ If you want to support custom head sculpts like EKT Asian, you can create a simp
 #### My eyelashes disappeared!
 
 * Select the **Vanilla** option in the Eyelashes switcher **before uninstalling** your eyelash addition.
-
