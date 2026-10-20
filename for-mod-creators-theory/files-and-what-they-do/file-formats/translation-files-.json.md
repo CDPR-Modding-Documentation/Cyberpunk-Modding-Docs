@@ -58,7 +58,10 @@ localization:
 
 #### Overwriting existing entries
 
-Make sure that the **secondary key** of your translation entry is identical with the one from the entry you want to replace.
+You can overwrite entries that belong to the vanilla game or entries that have been added by other mods. Depending on what you want to overwrite, you'll need to specify the primary or secory key in your entry.
+
+* Game entries: Specify the **primary** key
+* Entries from mods: Specify the **secondary** key
 
 {% hint style="info" %}
 Do not overwrite original .json files - ArchiveXL will handle the merging for you. Put your files in a custom path.
