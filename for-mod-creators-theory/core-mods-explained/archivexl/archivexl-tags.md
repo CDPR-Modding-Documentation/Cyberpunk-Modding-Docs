@@ -11,6 +11,7 @@ This page will tell you about **tags** and how they can be used to influence ite
 
 * Tags are used for calculating Garment Support score, see [garment-support-how-does-it-work](../../3d-modelling/garment-support-how-does-it-work/ "mention")
 * There is an own page for [influencing-other-items.md](../../../modding-guides/items-equipment/influencing-other-items.md "mention")
+* Examples of ArchiveXL tags to fix First person perspective clipping: [First Person Perspective Fixes](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/items-equipment/first-person-perspective-fixes)
 
 ## What do tags do?
 

@@ -51,6 +51,7 @@ after:
 * You can find the technical documentation for dynamic variants on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki/Dynamic-Appearances).
 * If you want to create an Atelier store, see [adding-items-atelier-integration.md](../adding-items-atelier-integration.md "mention")
 * To quickly generate instances with up to two keys, check out [W's generator](https://codepen.io/Wandering-Aldecaldo/full/BaeKRyp) (Codepen.IO)
+* Examples of ArchiveXL tags to fix First person perspective clipping: [First Person Perspective Fixes](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/items-equipment/first-person-perspective-fixes)
 
 ### Prerequisites
 
