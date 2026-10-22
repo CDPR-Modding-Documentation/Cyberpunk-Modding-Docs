@@ -6,8 +6,8 @@ description: gameTransformAnimatorComponent and gameRootTransformAnimatorCompone
 
 ## Summary
 
-**Published**: Sep 09 2026 by [Akiway](https://github.com/Akiway)\
-**Last documented edit:** Sep 09 2026 by [Akiway](https://github.com/Akiway)
+**Published**: Sep 09, 2026 by [Akiway](https://github.com/Akiway)\
+**Last documented edit:** Sep 09, 2026 by [Akiway](https://github.com/Akiway)
 
 This page explains how `gameTransformAnimatorComponent` works: what the component holds, how a clip is built out of tracks, what actually makes something move, and which classes ask it to play.
 

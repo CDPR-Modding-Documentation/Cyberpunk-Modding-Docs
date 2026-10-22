@@ -6,8 +6,7 @@ description: What are Dangle Bones, and how do they work?
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created by @eagul**\
-**Published March 20 2023**
+**Published:** March 20, 2023 by **@eagul**
 
 This guide will teach you everything you need to know about dangle bones, focussing mostly on hair meshes. However, dangle bones can also be applied to any other mesh
 

@@ -2,11 +2,11 @@
 description: Documentation on .quest* and .scene files
 ---
 
-# Quests: .scene files
+# Quests: .quest\* and .scene files
 
 ## Summary
 
-**Last documented update**: January 26, 2025 by [Zhincore](https://app.gitbook.com/u/OsI9JXgCSSbt40hb327iBDif7Xv1 "mention")
+**Last documented edit**: January 26, 2025 by [Zhincore](https://app.gitbook.com/u/OsI9JXgCSSbt40hb327iBDif7Xv1 "mention")
 
 This page will explain how **quests** and **scenes** work.
 

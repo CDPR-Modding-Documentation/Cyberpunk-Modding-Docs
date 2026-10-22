@@ -6,8 +6,8 @@ description: How to change V's head
 
 ## Summary
 
-**Published:** September 30 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Last documented edit: Oct 20 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** September 30, 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit**: Oct 22, 2026 by [lLorion](https://app.gitbook.com/u/t6NjRklnymTbtMgH4Rb8c2MckA93 "mention")
 
 This guide will teach you how to edit the player head to create custom head shapes. You don't need to understand the complex parts of the process, as long as you **follow the instructions to the letter**.
 
@@ -128,6 +128,14 @@ For that, we will use the **base head mesh.** Follow along to create a copy.
 6. Select sculptme, then switch to the `Data` tab of `Properties` (at the bottom right of your viewport), and disable `Shape Key Edit Mode`:
 
 <figure><img src="../../.gitbook/assets/head_sculpt_shape_key_edit_mode.png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="warning" %}
+Keep in mind that sculpting with the 'Basis' shape key selected will affect _all_ other shape keys with the equivalent changes you make on Basis.\
+\
+If you are working on or are porting a completely custom head and don't care about character creator sliders that aren't 01, you are safe to ignore this warning and leave the rest of the shapes untouched. \
+\
+Basis is all sliders at 01.
+{% endhint %}
 
 Now, we're ready to hook up the magic.
 

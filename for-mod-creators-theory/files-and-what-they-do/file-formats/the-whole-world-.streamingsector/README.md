@@ -6,7 +6,7 @@ description: Documentation on .streamingsector files
 
 ## Summary
 
-**Last documented update**: January 80, 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit**: January 08, 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will tell you what .streamingsector files do and how they do it.
 

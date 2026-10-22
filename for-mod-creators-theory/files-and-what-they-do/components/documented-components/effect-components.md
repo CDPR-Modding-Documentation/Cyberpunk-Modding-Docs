@@ -6,8 +6,8 @@ description: EntSlotComponent and EntEffectSpawnerComponent
 
 ## Summary
 
-**Published**: Feb 09 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit:** Mar 4 2024 by [86maylin](https://app.gitbook.com/u/LhwshjuFJ4QwCwG11Ze4zIVyGqM2 "mention")
+**Published**: Feb 09, 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** Mar 04, 2024 by [86maylin](https://app.gitbook.com/u/LhwshjuFJ4QwCwG11Ze4zIVyGqM2 "mention")
 
 This page will tell you how effect components work and how they interact with each other.
 

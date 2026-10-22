@@ -6,7 +6,8 @@ description: Theory on the quest system
 
 ## Summary
 
-**Written & Published**: Dec 9 2023 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")                                                                                              **Last documented update**: Apr 7 2024 by **Deceptious**
+**Published**: Dec 09, 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") \
+**Last documented edit**: Apr 07, 2024 by **Deceptious**
 
 {% hint style="info" %}
 This is the theory page. If you want more hands-on advice, check the [quest](../../../../modding-guides/quest/ "mention") section under **Modding Guides.**

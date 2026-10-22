@@ -2,8 +2,8 @@
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Created: March 20 2023 by @eagul**\
-**Last documented update: Dec 19 2024 by** [Shota Meipariani](https://app.gitbook.com/u/r1zz3EKCe5hRdd5UurCIGdk6h8Z2 "mention")
+**Published:** March 20, 2023 by @eagul\
+**Last documented edit:** Dec 19, 2024 by [Shota Meipariani](https://app.gitbook.com/u/r1zz3EKCe5hRdd5UurCIGdk6h8Z2 "mention")
 
 This guide will go deep into detail about moving dangle bones.\
 \

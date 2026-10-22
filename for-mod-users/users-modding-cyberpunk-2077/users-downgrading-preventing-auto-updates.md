@@ -80,11 +80,11 @@ Sorry, choomba, you're fucked. No downgrading possible.
 
 ### Steam
 
-Since 2.2, Steam supports downgrading to version `1.63` , `2.13` , `2.21` or `2.3`
+Since 2.2, Steam supports downgrading to certain versions, like 2.13.
 
-Right-click on the game in Steam and select Properties, then go here:
+Right-click on the game in your Steam library and select Properties, then go into the 'Game Versions & Betas' section:
 
-<figure><img src="../../.gitbook/assets/2025.09.11-19.57.05_steamwebhelper (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/Screenshot 2026-10-21 235056.png" alt=""><figcaption></figcaption></figure>
 
 For downgrading to other versions, see the expandable box below.
 

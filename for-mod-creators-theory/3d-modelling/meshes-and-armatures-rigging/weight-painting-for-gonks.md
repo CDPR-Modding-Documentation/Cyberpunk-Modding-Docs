@@ -6,8 +6,8 @@ description: How to check weights directly in Blender
 
 ## Summary
 
-**Created:** ??? by PinkyDude 🦝\
-**Last documented edit:** Sep 22 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** N/A by PinkyDude 🦝\
+**Last documented edit:** Sep 22, 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will show you Pinky's weight painting workflow, sharing tips and tricks on how to fix weights on garments for both refits and custom ports. You can find the original tutorial on [Google Docs](https://docs.google.com/document/d/1nOjvikFu2P3OzE3AGb-vgBCeJNA2tTQXf86skncCgsc/edit).
 

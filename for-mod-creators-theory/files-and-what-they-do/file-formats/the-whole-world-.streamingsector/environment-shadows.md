@@ -2,10 +2,10 @@
 
 ## Summary
 
-**Published**: Mar 02 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update**: Mar 02 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published**: Mar 02, 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit**: Mar 02, 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page explains how shadows are configured for nodes in streamingsectors.&#x20;
+This page explains how shadows are configured for nodes in streamingsectors.
 
 ### Wait, this is not what I want!
 
@@ -22,4 +22,3 @@ Shadows are only cast as long as a mesh is visible.
 ### Global and local shadows
 
 A global shadow will not render small details — these will only be included if the castLocalShadows property is active.
-

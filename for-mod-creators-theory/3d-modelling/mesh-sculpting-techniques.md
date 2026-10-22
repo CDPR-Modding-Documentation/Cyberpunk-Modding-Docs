@@ -6,8 +6,8 @@ description: Best Practices for actually changing meshes
 
 ## Summary <a href="#summary" id="summary"></a>
 
-**Published:** January 29 2023 by **@manavortex | Edited by Na**\
-**Last documented edit:** November 27 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** January 29, 2023 by **@manavortex | Edited by Na**\
+**Last documented edit:** November 27, 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will give you a number of mesh sculpting techniques when it comes to editing meshes in Blender.
 

@@ -8,8 +8,8 @@ description: >-
 
 ## **Summary**
 
-**Created:** July 21 2024 by **@eagul**\
-**Last documented edit:** Jan 18 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** July 21, 2024 by **@eagul**\
+**Last documented edit:** Jan 18, 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This guide will show you how to create your own hair in Blender from scratch.
 

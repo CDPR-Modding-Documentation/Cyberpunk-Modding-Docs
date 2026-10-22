@@ -2,12 +2,12 @@
 description: How to replace an in-game item with your custom mesh
 ---
 
-# Porting 3d objects to Cyberpunk
+# Porting 3D objects to Cyberpunk
 
 ## Summary
 
-Published: Oct. 14 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Last documented Update: Mar. 20 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published:** Oct 14, 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** Mar 20, 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will give you information on how to get a 3d object into Cyberpunk.
 

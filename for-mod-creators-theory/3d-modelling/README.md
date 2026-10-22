@@ -1,8 +1,8 @@
 ---
-description: Find knowledge on editing 3d models here
+description: Find knowledge on editing 3D models here
 ---
 
-# 3d Modelling
+# 3D Modelling
 
 Check the sub-pages for more detes, or check the section's sub-pages.
 
