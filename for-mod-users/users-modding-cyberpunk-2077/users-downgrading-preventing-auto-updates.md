@@ -115,11 +115,12 @@ Now, we do the thing:
 1. Open Steam
 2. Press `Win+R`
 3. Type `steam://open/console` to get into the steamdb console
-4. In the console, enter this command exactly to start the download (it'll be the entire 60 GB so be prepared): `download_depot 1091500 1091501 3807385820978085162`
+4. In the console, enter the command above for the Base Game to start the download (it'll be the entire 60 GB so be prepared)
 5. After the game finishes downloading, go to the installation location listed in the console, and copy either just the changed files (you can view the manifest for the new version) or the whole thing over your game directory to overwrite the new changes.
-6. If you have the Phantom Liberty DLC, you will need to do the steps 4 and 5 again for the DLC itself with the command: `download_depot 2138330 2138330 5094071097429923087`
+6. If you have the Phantom Liberty DLC, you will need to repeat the steps 4 and 5 again for the Phantom Liberty code above
+7. And again for REDmod if you want REDmod support
 
-This should leave you with the correct previous game version. You can right-click cyberpunk2077.exe to verify the versions in Properties > Details.
+This should leave you with the correct previous game version. You can right-click `Cyberpunk2077.exe` to verify the versions in Properties > Details.
 
 You might still need to do a script cache reset or other cleanup before the game starts up nice, so head on over to [those instructions](../user-guide-troubleshooting/#troubleshooting-after-an-update) if need be.
 
