@@ -33,25 +33,37 @@ If your mod contains **scripts or .xl files**, you need to **compile them** befo
 
 <details>
 
-<summary>Script mods</summary>
+<summary>Compile scripts</summary>
 
 You need to either upload with `redmod.exe`, or use validate-mod-scripts with the -compile flag:
 
 ```
 Verify mod scripts
-        validate-mod-scripts -root <game root path> [-compile] -directory <mod directory>
-        PARAMS
-                -directory <mod directory>  Directory of target mod files.
-                -root                       Game root path.
-                -compile                    If this parameter is added, the command will compile mod scripts at the same time.
-        EXAMPLE
-                validate-mod-scripts -directory "C:/temp/my_mod_folder2"
-                validate-mod-scripts -root "C:/temp/my_game_folder" -compile -directory "C:/temp/my_mod_folder2"
+  validate-mod-scripts -root <game root path> [-compile] -directory <mod directory>
+  PARAMS
+    -directory <mod directory>  Directory of target mod files.
+    -root           Game root path.
+    -compile        If this parameter is added, the command will compile mod scripts at the same time.
+  EXAMPLE
+    validate-mod-scripts -directory "C:/temp/my_mod_folder2"
+    validate-mod-scripts -root "C:/temp/my_game_folder" -compile -directory "C:/temp/my_mod_folder2"
 ```
 
 </details>
 
-To upload a mod on mod.io, you should stick to the following file structure:
+<details>
+
+<summary>Convert to JSON</summary>
+
+If you use `redmod.exe` to upload your file to mod.io, then the conversation will happen automatically.
+
+It's unclear if there is a way to do this locally (it does not seem to be part of the `validate-mod-scripts` step). Eventually, Wolvenkit will support this, but as for now, you'd best use an [online converter](https://jsonformatter.org/yaml-to-json).
+
+</details>
+
+### File structure
+
+To upload a mod on mod.io, you should stick to the following file structure and -formats (see the section above):
 
 ```
 - your_subfolder_name
