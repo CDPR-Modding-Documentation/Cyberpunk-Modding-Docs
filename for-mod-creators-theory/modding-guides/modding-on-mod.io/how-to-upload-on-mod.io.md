@@ -55,9 +55,13 @@ Verify mod scripts
 
 <summary>Convert to JSON</summary>
 
-If you use `redmod.exe` to upload your file to mod.io, then the conversation will happen automatically.
+You can convert to json by running the cloud-validation step locally:
 
-It's unclear if there is a way to do this locally (it does not seem to be part of the `validate-mod-scripts` step). Eventually, Wolvenkit will support this, but as for now, you'd best use an [online converter](https://jsonformatter.org/yaml-to-json).
+```
+redmod.exe cloud-validation -target-platform=windows -directory=" "
+```
+
+Eventually, Wolvenkit will support this, but as for now, you can either use redmod, or an [online converter](https://jsonformatter.org/yaml-to-json).
 
 </details>
 
