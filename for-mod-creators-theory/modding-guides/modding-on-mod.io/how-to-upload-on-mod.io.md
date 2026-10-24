@@ -22,15 +22,20 @@ This page tells you **how** to upload on mod.io, how to pack your mods for uploa
 This will eventually be supported by Wolvenkit. As of October 24, it is not.
 {% endhint %}
 
+### Formats
+
+* Script mods must be **compiled** before upload. See the expendable box below.
+* Tweak mods must be in .json format - `.yaml/.tweak` is not supported.
+
 {% hint style="warning" %}
-If your mod contains **scripts**, you need to **compile them** before upload - expand the box!
+If your mod contains **scripts or .xl files**, you need to **compile them** before upload - expand the box!
 {% endhint %}
 
 <details>
 
 <summary>Script mods</summary>
 
-If your mod is a script mod, you need to **compile** the script with redmod.exe:
+You need to either upload with `redmod.exe`, or use validate-mod-scripts with the -compile flag:
 
 ```
 Verify mod scripts
@@ -51,11 +56,12 @@ To upload a mod on mod.io, you should stick to the following file structure:
 ```
 - your_subfolder_name
   - your_mod.archive
+  - your_mod.archive.xl          // file must be in .json format, not .yaml
 - scripts
-  - your_mod.redscripts
+  - your_mod.redscripts          
   - your_mod.redscripts.h64
 - tweaks
-  - your_mod_tweak.json
+  - your_mod_tweak.json          // file must be in .json format, not .yaml
 ```
 
 ## Testing your mod
