@@ -28,7 +28,7 @@ No. There are no donation points, no cash rewards, and unless somebody finds you
 
 ### Doesn't sound like a good deal.
 
-24h after the patch release, Cyberpunk had 49 mods _in total_ and _over a million downloads_. Console players are desperate for mods. They've been standing outside in the cold, pressing their noses against the cold glass of the windows on Nexus, watching us have our holiday — and they couldn't digest the protein.&#x20;
+24h after the patch release, Cyberpunk had 49 mods _in total_ and _over a million downloads_. Console players are desperate for mods. They've been standing outside in the cold, pressing their noses against the cold glass of the windows on Nexus, watching us have our holiday dinner on overflowing tables — and they couldn't digest the protein.&#x20;
 
 Now they can.
 
