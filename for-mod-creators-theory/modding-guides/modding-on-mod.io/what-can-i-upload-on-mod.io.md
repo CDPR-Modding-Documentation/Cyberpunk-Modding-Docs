@@ -48,7 +48,7 @@ You can see CDPR's list on [mod.io](https://mod.iohttps/mod.io/g/cyberpunk-2077/
 
 ### By feature
 
-<table><thead><tr><th width="243.699951171875"></th><th></th></tr></thead><tbody><tr><td>Cosmetic mods</td><td>Replacers only: no CCXL possible</td></tr><tr><td>Clothing mods</td><td>Replacers only: no item additions possible</td></tr><tr><td>Scripting mods</td><td>If it's natively supported; see <a href="https://mod.io/g/cyberpunk-2077/r/how-to-create-mods-for-cross-platform-mod-support">this page</a> for more detail</td></tr><tr><td>Pose mods</td><td>Replacers only, no additions possible</td></tr><tr><td>Rig edits</td><td>Replacers only</td></tr><tr><td>Quest mods</td><td>No quest patching, </td></tr></tbody></table>
+<table><thead><tr><th width="243.699951171875"></th><th></th></tr></thead><tbody><tr><td>Cosmetic mods</td><td>Replacers only: no CCXL possible</td></tr><tr><td>Clothing mods</td><td>Replacers only: no item additions possible</td></tr><tr><td>Scripting mods</td><td>If it's natively supported; see <a href="https://mod.io/g/cyberpunk-2077/r/how-to-create-mods-for-cross-platform-mod-support">this page</a> for more detail</td></tr><tr><td>Pose mods</td><td>Replacers only, no additions possible</td></tr><tr><td>Rig edits</td><td>Replacers only</td></tr><tr><td>Quest mods</td><td>No quest patching - you can overwrite original files. Journal patching and translations are supported.</td></tr><tr><td>CET spawn </td><td>Not supported: we can't add records yet</td></tr></tbody></table>
 
 ### By file type
 
