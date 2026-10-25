@@ -461,14 +461,15 @@ If you do not have Adobe Photoshop, you can also open .psd files with [Photopea]
 If you are on [8.16.2 Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) or higher version of Wolvenkit you can generate the inkatlas straight within Wolvenkit:
 
 1. Navigate to the top bar and click on **File**
-2. From the dropdown select **Add Files**
-3. Select **Generate .inkatlas**
-4. Fill in **inkatlas file name** using the convention `modderinitials_modname_icons` making sure that it matches the placeholder inkatlas name
-5. Then fill in **tile width and height** with `160`
-6. Lastly navigate the **PNG raw folder** field to where you have stored your icons. Press finish and your inkatlas is generated
-7. Now import the 2 .png files it created in your raw folder.
-8. Next you can delete the old placeholder .inkatlas and the 2 .xbm's inside the icons folder
-9. Now move your newly generated .inkatlas and the 2 .xbm's we just converted from .png to where you deleted the placeholder ones from
+2. From the dropdown select **Generate files**
+3. Select `Icon File (.inkatlas)`&#x20;
+4. Optional: check the [documentation in the Wolvenkit wiki](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/generators/inkatlas-generator)
+5. Fill in **inkatlas file name** using the convention `modderinitials_modname_icons` making sure that it matches the placeholder inkatlas name
+6. Then fill in **tile width and height** with `160`
+7. Lastly navigate the **PNG raw folder** field to where you have stored your icons. Press finish and your inkatlas is generated
+8. Now import the 2 .png files it created in your raw folder.
+9. Next you can delete the old placeholder .inkatlas and the 2 .xbm's inside the icons folder
+10. Now move your newly generated .inkatlas and the 2 .xbm's we just converted from .png to where you deleted the placeholder ones from
 
 If you've never made custom icons or used inkatlases before, check out these articles first:
 
@@ -509,7 +510,7 @@ You have successfully added new eye options to character creator!
 
 * make sure you uninstalled the [ICONIC](https://www.nexusmods.com/cyberpunk2077/mods/11041) mod and/or [Appearance Change Unlocker](https://www.nexusmods.com/cyberpunk2077/mods/3850) mods
 
-### My icons are black!
+### My icons are black or blank!
 
 * In the `.inkcharcustomization` file, check each entry in `definitions`. Make sure that the `icon` value matches your `.yaml` file and is **not empty:**
 
@@ -518,9 +519,9 @@ You have successfully added new eye options to character creator!
 * In your `.inkatlas`, check that your .xbm files are pathed correctly (you can run [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation "mention"))
 * In your `.inkatlas`, double check that your `parts` names are matching the `.yaml` file
 
-### My icons are white!
+### My icons look bad or are white!
 
-* Reimport your icons .xbms with compression settings set to `TCF_None`
+* Make sure to import them with the preset `TexG_Generic_UI`. You can also try importing without `sRGB (IsGamma)`,  or set compression to `TCX_NONE`.
 
 ### No eye textures / Eyeballs are invisible / I only see a creepy set of weird eyes inside V's skull!
 
@@ -529,18 +530,32 @@ You have successfully added new eye options to character creator!
 * Your .xbms are in the wrong folder
 * The inkcc definitions names do not match the appearance names in your mesh
 
+#### Check the .app appearance
+
+While you're in the mirror, you can use the [redhottools](../../../modding-tools/redhottools/ "mention") World Inspector's [scan tab](../../../modding-tools/redhottools/rht-the-world-inspector.md#world-inspector-scan) to inspect the player entity (use the NPCPuppet, as it's the third person mirror one) — the component that you changed last will be at the very bottom of the list:
+
+<figure><img src="../../../../.gitbook/assets/ccxl_eyes_redhottools.png" alt=""><figcaption></figcaption></figure>
+
+#### Check your mesh material paths
+
+If the appearance matches the .app file, then it's also possible that your dynamic materials inside the `.mesh` don't get resolved correctly.&#x20;
+
+Inside `localMaterialBuffer.materials`, make sure that your paths are okay!  You can use Wolvenkit's [File Validation](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/file-validation#running-file-validation) to check if the paths are correct. If there are any errors or warnings, they are not.
+
 ### My eye textures look extremely dark in the Character Creator screen
 
 * Make sure you do not have the [Eye Depth (Normals) fix mod](https://www.nexusmods.com/cyberpunk2077/mods/13083) installed, if so, uninstall it.\
-  This mod is no longer necessary, as AXL now has a built-in eye normal fix.
+  This mod is no longer necessary, as 2.5 no longer has a default normal assigned.
 * Your mod's normals aren't pathed correctly\
   (in .mesh or .xl links if you're using multiple normals)
-* Check that your normal map was imported correctly. Open the normal .xbm, expand `setup`, and ensure that the compression is set to `TCM_Normals`. If you have multiple normal maps, export the normals then re-import with the correct settings to do it in bulk.
+* Check that your normal map was imported correctly. Open the normal .xbm, expand `setup`, and ensure that the compression is set to `TCM_Normals`. \
+  _&#x49;f you have multiple normal maps, export them, then re-import with the correct settings._
 * Your mod is missing a normals file for the eyes
   * Use the `modderinitials_eyes_n.xbm` texture provided with the template project, if it looks like it will fit the shape of your eye textures\
     \
-    OR\\
+    OR
   * Open your `patch.mesh`, and navigate to the localMaterialBuffer, expanding **@eyes** > **values** > **Normal**.\
     Path to the game's placeholder normal by copying and pasting this:\
     `engine\textures\editor\normal.xbm` into the Normal section.\
     Save your file.
+

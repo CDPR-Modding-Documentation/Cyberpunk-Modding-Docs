@@ -9,13 +9,12 @@ description: How to add custom preview images by using a custom .inkatlas file
 **Uploaded:** ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** Jul 8 2026 **by** [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This guide will teach you how to make custom inventory preview icons.
+This guide will teach you how to make custom inventory preview icons.\
+Technically, it is a subsection of the [ArchiveXL item additions guide](../../items-equipment/adding-new-items/), but you can use it to make any kind of preview item.
 
 {% hint style="info" %}
-Technically, this guide is a subsection of the [ArchiveXL item additions guide](../../items-equipment/adding-new-items/), but you can use it to make any kind of preview item.
+Unless specified otherwise, links provide additional information and are not necessary reading.
 {% endhint %}
-
-The guide below will teach you how to make preview icons.&#x20;
 
 **Difficulty Level**:&#x20;
 
@@ -27,7 +26,6 @@ While the process is easy, it also is, unfortunately, quite tedious!
 ### Wait, this is not what I want!
 
 * If you want to have gendered preview icons, check [here](gendered-preview-icons.md).
-* For a script to generate inkatlas files, check [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate_inkatlas.py)
 * To learn more about the files involved, check [game-icons-the-inkatlas-file.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md "mention")
 
 ## Required tools
@@ -36,19 +34,25 @@ You need at Wolvenkit >= 8.16.2 for this (download [stable](https://github.com/W
 
 ## Raw icon images
 
-We will use Wolvenkit's inkatlas generator to create the entire .inkatlas.&#x20;
+We will use [Wolvenkit's inkatlas generator](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/editor/generators/inkatlas-generator) to create the entire .inkatlas.&#x20;
 
 For that, you need a folder with .png files for each item that you want to import.&#x20;
 
-### Image dimensions
+{% hint style="info" %}
+You need to know the correct dimensions for your images. Wolvenkit's inkatlas generator provides a few presets, but if your icons are cropped incorrectly in-game, do check a vanilla .inkatlas.
+{% endhint %}
 
-You need to know the correct dimensions for your images:
+<details>
+
+<summary>Image dimension table</summary>
 
 | Item type    | Width   | Height(s) |
 | ------------ | ------- | --------- |
 | Clothing     | 130-160 | 76-160    |
 | Gun          | 320     | 80-160    |
 | Melee weapon | 320     | 60 - 145  |
+
+</details>
 
 ## Taking preview pictures
 
@@ -78,7 +82,7 @@ You only want the item on your preview shot, so let's do the following things:
 5. Open photo mode
 6. Find a good angle. After this, you must not move the camera!
 7. Take a screenshot of the dark item against the white background – this will be used later for masking in photoshop.
-8. In Windows Explorer, find your screenshot, move it to a folder, and give it the name of your future icon (e.g. `my_chest_item_black`).
+8. In Windows Explorer, find your screenshot, move it to a folder, and give it the name of your future icon (e.g. `my_chest_item_black.png`).
 9. Switch the surface cover's appearance to `black`.
 10. Optional: Add some more light to the scene
 
@@ -94,31 +98,36 @@ If you have sub-versions (e.g. white shoes with black/red/white/green shoelaces)
 2. For each appearance in your mesh, set the ACM components and click "load appearance"
 3. Take a screnshot of each \
    E.g., you already took a photo of `black`, now it's time to do `white`, `red`, `green`, etc.
-4. Move all those screenshots to the same folder as the black item
-5. Re-name the files to correspond with the icon names (e.g. `my_chest_item_white`  etc)
-6. `Optional:` Close the game
+4. Move all those screenshots to the same folder as the file from the previous step.
+5. Re-name the files to correspond with the icon names (e.g. `my_chest_item_white.png`  etc)
+6. Optional: Close the game
 
 #### Processing the photos
 
 1. Open the black item on the white background in photoshop or [photopea](https://www.photopea.com/)
 2. Drag all the other pictures you took on top of it. This will add them as additional layers.
 3. In the **Layers** panel (bottom right)
-   1. create a group and put all the layers inside
+   1. create a **group** and put all the layers inside
    2. Drag the layer of the white background picture to the top, and select it (click on it)
 4. Press `W` to select the **Magic Wand** tool
 5. From the top bar, use the `Select Subject` button
-6. **Optional:** use the Select and Mask view to fine-tune your selection
+6. **Optional:** Use the Select and Mask view to fine-tune your selection
 7. Confirm. You now have your item selected, and the background not selected.
 8. In the Layers panel (bottom right),
    1. select the group (folder) by clicking on it
    2. create a **layer mask** by clicking on the icon that looks like the Japanese flag
 9. The background will now be transparent.
-10. Use the **Crop Tool** (Keyboard shortcut: `C`) to crop a rectangular selection with your icon in the center. You can hold shift while dragging to enforce rectangularity.
+10. Use the **Crop Tool** (Keyboard shortcut: `C`) to crop a selection with your icon in the center. \
+    _&#x59;ou can hold shift while dragging to enforce a square — do not do this for weapons._
 11. Select the layers, right-click, and select "Quick Export as PNG"
 
 <figure><img src="../../../.gitbook/assets/preview_icons_export_as.png" alt=""><figcaption></figcaption></figure>
 
-12. You should now have a bunch of transparent pngs. Now, let's see about [#generating-the-inkatlas](./#generating-the-inkatlas "mention").
+12. You should now have a bunch of transparent pngs.&#x20;
+
+{% hint style="success" %}
+If this worked for you, skip ahead to [#generating-the-inkatlas](./#generating-the-inkatlas "mention"). If not, check out [#yellingintothevoids-workflow](./#yellingintothevoids-workflow "mention") below.
+{% endhint %}
 
 ### yellingintothevoid's workflow
 
