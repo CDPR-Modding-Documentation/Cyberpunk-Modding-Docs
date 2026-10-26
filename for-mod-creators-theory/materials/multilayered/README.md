@@ -28,7 +28,7 @@ Everyone asks this question in the beginning, but you're only a single epiphany 
 
 ## About
 
-A significant portion of assets for Cyberpunk 2077 leverage the complex multilayered.mt supershader. The supershader has several different component files which are used to create masks to blend procedural textures without baking them. You can read more about this technique in [this documentation](https://magazine.substance3d.com/cyberpunk-2077-a-world-full-of-substance/) by CDPR Technical Art Director Krzysztof Krzyścin.
+A significant portion of assets for Cyberpunk 2077 leverage the complex multilayered.mt supershader. The supershader has several different component files which are used to create masks to blend procedural textures without baking them. You can read more about this technique in [this documentation](https://www.adobe.com/products/substance3d/magazine/cyberpunk-2077-a-world-full-of-substance.html) by CDPR Technical Art Director Krzysztof Krzyścin.
 
 {% hint style="info" %}
 While the multilayered supershader is very common, there are hundreds of other non Substance-style shaders, some with traditional baked PBR textures.
