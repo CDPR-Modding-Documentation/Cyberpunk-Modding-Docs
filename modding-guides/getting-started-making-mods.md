@@ -109,6 +109,15 @@ Otherwise, you can take a look at these guides:
 1. [amm-custom-npcs](npcs/amm-custom-npcs/ "mention")
 2. [appearances-change-the-looks](npcs/appearances-change-the-looks/ "mention")
 
+### Anything more complex
+
+**The good news**: You can do pretty much anything with this game\
+The bad news: Not without programming you can't
+
+#### Where do I go from here?
+
+Scripting stuff has [its own wiki](https://wiki.redmodding.org/scripting-cyberpunk).
+
 ## Synopsis
 
 Go forth and create mods! If you found any of our tutorials useful, maybe put a link in your mod description? See you around!
