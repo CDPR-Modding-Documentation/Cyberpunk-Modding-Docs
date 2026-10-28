@@ -55,7 +55,7 @@ Just use something to search the insides of the files for the definitions (VS ca
 5. **Core Mods:** [ArchiveXL](https://www.nexusmods.com/cyberpunk2077/mods/4198), [TweakXL](https://www.nexusmods.com/cyberpunk2077/mods/4197), [Red4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380)
 6. **Optional:** [RedHotTools](https://github.com/psiberx/cp2077-red-hot-tools/releases/)
 
-### Step 1: Create a New Project in WolvenKit
+### Create a New Project in WolvenKit
 
 Open WolvenKit and create a new project. This will be the foundation for your new iconic weapon mod.
 
@@ -67,7 +67,7 @@ Open WolvenKit and create a new project. This will be the foundation for your ne
 
 Decide on the weapon you want to modify to make a new new iconic.
 
-### Step 2: Choose the Base Weapon
+### 2.1: Choose the Base Weapon
 
 Select a base weapon for your iconic weapon. For this tutorial, we'll use 'Unity' with item ID `Items.Preset_Unity_Default`.
 
@@ -79,7 +79,7 @@ To understand how the base gun works, open the [Tweak Browser](https://app.gitbo
 
 <figure><img src="../../../../.gitbook/assets/image (176).png" alt=""><figcaption><p>Open the <a data-mention href="https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/editor/tweak-browser">Tweak Browser</a> &#x26; search "Items.Preset_Unity_Default"</p></figcaption></figure>
 
-### Step 3: Create a TweakXL Override
+### 2.2: Create a TweakXL Override
 
 In the tweak browser, find `Items.Preset_Unity_Default`, right-click it, and select "Add TweakXL Override". This step is crucial for customizing the weapon.
 
@@ -101,13 +101,13 @@ Before you start with this section, make sure to read the block below!
 
 Open the overridden tweak file in a code editor of your choice (such as [Notepad++](https://notepad-plus-plus.org/downloads/) or VS Code). You will be presented with a `.yaml` file containing roughly a million fields.
 
-### Step 4: Open the Overridden Tweak
+### 3.1: Open the Overridden Tweak
 
 Open the overridden tweak file in a code editor like Notepad++ or VS Code. You'll see a `.yaml` file with various fields.
 
 <figure><img src="../../../../.gitbook/assets/image (179).png" alt=""><figcaption><p>"Items.Preset_Unit</p></figcaption></figure>
 
-### How does it work?
+### 3.2: How does it work?
 
 {% hint style="info" %}
 For first time modders, understanding all this in one go will be difficult. You can just keep these explanations handy and revisit them when required.
@@ -117,7 +117,7 @@ The .yaml file may seem complex at first glance, but the actual structure is ext
 \
 Note: For first time modders, understanding all this in one go will be difficult, so keep these explanations handy and revisit them as and when required)
 
-### Step 5: Understand the .yaml File
+### 3.3: Understand the .yaml File
 
 The `.yaml` file might seem complex. Here's a breakdown of key fields from another weapon tweak (`Items.Preset_Sidewinder_Default`). Keep these explanations handy for reference. (Thanks to BuffMcMuff)
 
@@ -351,7 +351,7 @@ rate(cycle time), mag size, smart range
 
 Making a new weapon is fairly simple. In your tweak file, change the Item ID in the very first line to "Items.Hand\_Of\_Midas" and save (Hotkey: `Ctrl+S`).
 
-### Step 6: Create a New Weapon
+### 4.2: Create a New Weapon
 
 Change the item ID at the top of your `.yaml` file from `Items.Preset_Unity_Default` to `Items.Hand_Of_Midas`. Save the file to create your new weapon.
 
@@ -387,7 +387,7 @@ Unfortunately, there is no way to tell it apart from the Unity handgun.
 
 We'll get to fixing that, but first, a little cleanup: open up your WolvenKit & rename your overridden tweak file to "hand\_of\_midas.yaml". We will store all the edits that need to be done to our new weapon in this file.
 
-### 4.2: Changing the carbon copy
+### 4.3: Changing the carbon copy
 
 Let's change something that will differentiate our weapon from the default Unity.
 
@@ -439,7 +439,7 @@ We can, and we should!
 In later steps of this guide, you'll need to look up properties. Either keep a copy of your full tweak file (e.g. on your desktop), or refer to [#an-annotated-example](new-iconic-weapon-step-by-step.md#an-annotated-example "mention") above.
 {% endhint %}
 
-### Using $base instead of $type
+### 5.1: Using $base instead of $type
 
 ```yaml
 Items.Hand_Of_Midas:
@@ -463,6 +463,38 @@ Items.Hand_Of_Midas:
   crosshair: Crosshairs.Tech_Round
 ```
 
+### 5.2: Setting up the weapon as iconic
+
+Now that we know how working on a cloned record is like, lets make it so our new weapon is an iconic one:
+
+```yaml
+Items.Hand_Of_Midas:
+  $base: Items.Preset_Unity_Default
+  crosshair: Crosshairs.Tech_Round
+  blueprint: Items.Iconic_Ranged_Weapon_Blueprint # will make space for our iconic mod
+  tags:
+    - !append IconicWeapon # to prevent the gun from being dissassembled
+  statModifiers:
+    - !append Quality.IconicItem # will actually flag the item as "iconic"
+  statModifierGroups:
+    - !append Quality.IconicQualityRandomization # to enable ingame upgrades
+    - !remove Items.QualityRandomization # to prevent unexpected qualities on acquisition
+```
+
+{% hint style="warning" %}
+```
+Items.Iconic_Ranged_Weapon_Blueprint
+```
+
+Is indeed the variant for ranged weapons, a melee weapon would use
+
+```
+Items.Iconic_Melee_Blueprint
+```
+
+instead
+{% endhint %}
+
 ## Step 6: The personal touch
 
 What good is a new gun without a new name? We need to tell our game about these.
@@ -473,7 +505,7 @@ What good is a new gun without a new name? We need to tell our game about these.
 
 <figure><img src="../../../../.gitbook/assets/image (196).png" alt=""><figcaption><p>mod name folder &#x26; localization folder</p></figcaption></figure>
 
-### How does the game assign display names?
+### 6.1: How does the game assign display names?
 
 In your full tweak file, search for the field called `displayName`. You'll likely encounter something like `displayName: LocKey#49794`.
 
@@ -485,7 +517,7 @@ If you want to take a look at these lists, use WolvenKit's [LocKey browser](http
 
 <figure><img src="../../../../.gitbook/assets/image (197).png" alt=""><figcaption><p>LocKey Browser search for <code>LocKey#49794</code></p></figcaption></figure>
 
-### So we edit onscreens.json?
+### 6.2: So we edit onscreens.json?
 
 Good thinking, but no. In Cyberpunk, only **one** mod can edit any given file. That is why [archivexl](../../../../for-mod-creators-theory/core-mods-explained/archivexl/ "mention") exists, and we'll use it to create a new translation entry for us.
 
@@ -493,7 +525,7 @@ Place a dedicated [`en-us.json`](https://mega.nz/file/3uB2CL5L#Y18wD4pGo1L7Y699G
 
 <figure><img src="../../../../.gitbook/assets/image (198).png" alt=""><figcaption><p>Red arrow = localization json added correctly. Green arrow = add new element in the json. Yellow arrow = key fields in new entry</p></figcaption></figure>
 
-### Setting up a localizationKey
+### 6.3: Setting up a localizationKey
 
 Open the file in Wolvenkit and create a new entry in `localizationPersistenceOnScreenEntry`. It has the following properties:
 
@@ -505,7 +537,7 @@ Create another entry with the secondaryKey of `MC_gun_description` and write a l
 
 \{% hint style="info" %\} For more detailed guidance on these properties, check out the [ArchiveXL Wiki](https://github.com/psiberx/cp2077-archive-xl/wiki#localization). \{% endhint %\}
 
-### Tell ArchiveXL about our new translation file.
+### 6.4: Tell ArchiveXL about our new translation file.
 
 In your WolvenKit project, go to the resources folder and create a plain text file with the following contents:
 
@@ -681,11 +713,11 @@ If not, you may have to respawn it via CET.
 
 <figure><img src="../../../../.gitbook/assets/image (190).png" alt=""><figcaption><p>Iconic description is visible when hovering over gun</p></figcaption></figure>
 
-### Designing effectors
+## Step 7: Designing effectors
 
-Now that we have [#the-full-tweak](new-iconic-weapon-step-by-step.md#the-full-tweak "mention"), we'll fill in the two [effectors](../../../../for-mod-creators-theory/tweaks/tweaks/types-of-tweak-records.md#effector), one to punish the player for missing, and the other to reward them for headshots.
+Now that we have an iconic weapon with an original iconic mod, we'll fill in the two [effectors](../../../../for-mod-creators-theory/tweaks/tweaks/types-of-tweak-records.md#effector), one to punish the player for missing, and the other to reward them for headshots.
 
-#### Heal on headshot
+### 7.1: Heal on headshot
 
 We'll heal for 80 HP every time the player pops somebody else's skull with the Hand of Midas. How do we do that?
 
@@ -727,7 +759,7 @@ However, the prerequisite for this effector is `Items.MemoryReplenishmentEffecto
 
 We could now try to find an existing preReq that checks for headshots, but we can also write our own.
 
-#### Creating a custom prereq
+### 7.2: Creating a custom prereq
 
 <pre class="language-yaml"><code class="lang-yaml"><strong># Prereq to check if headshot &#x26; target is alive and hit with a ranged weapon
 </strong>Prereqs.Is_Target_Alive_And_Headshot:
@@ -748,7 +780,7 @@ We could now try to find an existing preReq that checks for headshots, but we ca
 
 Now we have a custom preqrequisite, but we still have to **fine-tune** and **link it**:
 
-#### Creating a custom condition
+### 7.3: Creating a custom condition
 
 {% hint style="info" %}
 For more information on this, check [types-of-tweak-records.md](../../../../for-mod-creators-theory/tweaks/tweaks/types-of-tweak-records.md "mention") ->[#condition](../../../../for-mod-creators-theory/tweaks/tweaks/types-of-tweak-records.md#condition "mention")
@@ -779,7 +811,7 @@ Conditions are at the heart of a prerequisite, and here we have four.
 3. `Prereqs.Is_Attack_Ranged` -> (Custom) We don't want quick melee attacks to heal
 4. `Prereqs.Is_Weapon_Ranged` -> (Custom) We don't want grenades to be counted for this check.
 
-#### The final effector
+### 7.4: The final effector
 
 Now let's change our effector to use this prerequisite.
 
@@ -823,7 +855,7 @@ Prereqs.Has_Player_Shot:
     - Prereqs.Is_Weapon_Ranged # condition to check that the gun is source of damage and not a grenade
 ```
 
-#### Test it!
+### 7.5: Test it!
 
 Uncomment the effector in your weapon tweak and test your mod. You should now be healing every time you hit headshots.
 
