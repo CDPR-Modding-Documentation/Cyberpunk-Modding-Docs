@@ -1,0 +1,428 @@
+//////////////////////////////////////////////////////////////////////////
+// Scripting Modding language reference: code snippets
+// 
+// The purpose of this file is to contain "compilable" code that:
+// - shows usage of new modding language features
+// - verifies script compiler (in terms of syntax)
+//
+// To avoid names clash all types and function names
+// are constructed with "Ref_" prefix and contain number of example.
+//
+//
+// Do not modify unless for compiler/documentation correction.
+// If modified plase update Confluence file as well.
+//////////////////////////////////////////////////////////////////////////
+//
+// Table of contents:
+// 1. Syntax
+//   1.1. New Keywords
+//     1.1.1. let / var
+//     1.1.2. return value
+//     1.1.3. default array value
+//     1.1.4. casting as
+//     1.1.5. variable anywhere
+//   1.2. Attributes
+//     1.2.1. addField
+//     1.2.2. wrapMethod
+//     1.2.3. replaceMethod
+//     1.2.4. prefix
+//     1.2.5. postfix
+//     1.2.6. addMethod
+//     1.2.7. Modules
+//   1.3. Persistent Variables
+//   1.4. New Functions
+//     1.4.1 Game instance Getter
+//////////////////////////////////////////////////////////////////////////
+
+
+//////////////////////////////////////////////////////////////////////////
+// 1. Syntax
+
+//////////////////////////////////////////////////////////////////////////
+// 1.1. New Keywords
+
+
+//////////////////////////////////////////////////////////////////////////
+// 1.1.1. Let / Var
+
+function Ref_1_1_1_LetVarKey()
+{
+    //newly added keword: let
+    let myvar: Bool;
+    var myVar2: Int;
+    //they act the same
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 1.1.2. Define Return Value
+
+//both way are used to set a return value
+function Ref_1_1_2_ReturnValueDoubleDot() : Bool 
+{
+    return true;
+}
+
+function Ref_1_1_2_ReturnValueArrow() -> Int32 
+{
+    return 152;
+}
+
+//it is now possible to use the void type as a return value 
+//to explicitely say that the function does not have a return value
+function Ref_1_1_2_ReturnValueArrowVoid() -> Void
+{
+    //will compile
+    return;
+    
+    //will NOT compile
+    //return 152;
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 1.1.3. Defineing Default array values
+
+function Ref_1_1_3_ArraysDefault()
+{
+    //from now on arrays can be defined with a default values
+
+    var myArray : array< Int32 > = [1,2,3,4,6];
+    //you can use function calls
+    var functionArray : array< Int32 > = [1,2,Ref_1_1_2_ReturnValueArrow(),4];
+
+    //fixed size arrays also benefit from it:
+    var fixedArray : Int32[5] = [0,1,2,3,4];
+    //they also have securities at compile time
+    //will NOT Compile
+    //var fixedArray2 : Int32[2] = [0,1,2,3,4]; //too many values in default
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 1.1.4. Casting and 'as' keyword
+
+function Ref_1_1_4_CastingAs()
+{
+    //from now on Casting can use the 'as keyword'
+
+    var myInt : Int32  = 1;
+    var myVariant : Variant;
+
+    myVariant = myInt as Variant;
+    //is equal to
+    myVariant = ((Variant) myInt);
+
+}
+
+// safe cast 
+  public static ref_1_5_function InnerCast() -> EInputKey {    
+    let stored: Uint64 = Cast<Uint64>(72);
+    let numericValue: Int32 = Cast<Int32>(stored);    
+    let enumValue: EInputKey = (EInputKey)numericValue;    
+    return enumValue;
+  }
+
+//////////////////////////////////////////////////////////////////////////
+// 1.1.5. Variable Anywhere
+
+function Ref_1_1_5_VariableAnywhere()
+{
+    //from now on  var declaration can be done anywhere in the body of the function
+    var myPlayer : PlayerPuppet;
+
+    if( myPlayer )
+    {
+        //Do PlayerThing
+        var myGame : GameInstance = myPlayer.GetGame();
+        //myGame avalable here
+        myGame = NULL;
+        if (isInit == 155) // Yes isInit is declared after but due to the way it is implemented the variable declaration is 'technically' moved at the top and is available here
+        {
+            return;
+        }
+    }
+    else
+    {
+        return;
+    }
+    //myGame avalable here
+    myGame = NULL;
+
+    //yes it cause some strange behavior
+    var isInit : Int32 = 0;
+
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 1.2. Attributes
+//
+// These Features are essentials to modify and add customcode to already existing classes
+
+class Ref_1_2_AttributesTest
+{
+    function overrideFunc()
+    {
+
+    }
+    function wrapFunc()
+    {
+
+    }
+}
+
+
+//////////////////////////////////////////////////////////////////////////
+// 1.2.1. addField
+
+// adds a new custom made variable to an already defined and existing class
+// useful for modifying base game class
+@addField( Ref_1_2_AttributesTest )
+var addedCustomVar : Int32;
+
+//////////////////////////////////////////////////////////////////////////
+// 1.2.2. wrapMethod
+
+//this is used to wrap an existing function around with custom code
+//the function name needs to correspond to an existing function
+//the wrapping and other attributes are load order based, meaning that mods loaded first will wrap the function first:
+//ex:
+//
+// mod1 : wrap Ref_1_2_AttributesTest wrapFunc
+// mod2 : wrap Ref_1_2_AttributesTest wrapFunc
+//
+// order of execution : mod2 -> mod1 -> original
+// finally order is also dependent on patch type, meaning thar wraps will always be executed before prefixes and postfixes
+// order is wraps -> Prefix -> Original -> PostFix
+@wrapMethod( Ref_1_2_AttributesTest )
+function wrapFunc()
+{
+    // Custom Code
+    wrapFunc(); // this call is needed to call the underlying original function, 
+    //it can be called at the beginning / end, and will return the return value of the original function
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 1.2.3. replaceMethod
+
+//this is used to replace an existing function around with custom code
+//the function name needs to correspond to an existing function
+//the replace and other attributes are load order based, meaning that mods loaded first will replace the function first:
+//ex:
+//
+// mod1 : replace Ref_1_2_AttributesTest overrideFunc
+// mod2 : replace Ref_1_2_AttributesTest overrideFunc
+//
+// order of execution : mod2 
+// in the case of the replacemethod, only the latest loaded one is actually called, the others are ignored
+// finally order is also dependent on patch type, meaning thar wraps will always be executed before prefixes and postfixes
+// order is wraps -> Prefix -> Replaced Method -> PostFix
+@replaceMethod( Ref_1_2_AttributesTest )
+function overrideFunc()
+{
+    // Custom Code
+    // in the case of the replaceMethod we do not call on the original
+    return; 
+
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 1.2.4. prefix
+
+//this is used to wrap an existing function with custom code executed always before the original
+//the function name needs to correspond to an existing function or can be another name
+//the wrapping and other attributes are load order based, meaning that mods loaded first will wrap the function first:
+//ex:
+//
+// mod1 : wrap Ref_1_2_AttributesTest wrapFunc
+// mod2 : wrap Ref_1_2_AttributesTest wrapFunc
+//
+// order of execution : mod2 -> mod1 -> original
+// finally order is also dependent on patch type, meaning thar wraps will always be executed before prefixes and postfixes
+// order is wraps -> Prefix -> Original -> PostFix
+@prefix( Ref_1_2_AttributesTest )
+function wrapFunc()
+{
+    // Custom Code
+    return; // prefixes does not need to call original functions as it will be called after all prefixes are done or execution is stopped by a prefix
+}
+
+//a property of prefixes is that they can be defined in another way, which let them define a custom name, and have a return valuer of a boolean
+@prefix( "Ref_1_2_AttributesTest.wrapFunc" )
+function wrapFuncPatch() : Bool
+{
+    // Custom Code
+
+    // custom prefixes like this need to return a boolean
+    // this bool dictates if the original function and other prefixes in line are to be executed
+    // this does not affects postfixes
+    return false; 
+
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 1.2.5. postfix
+
+//this is used to wrap an existing function with custom code executed always after the original
+//the function name needs to correspond to an existing function or can be another name
+//the wrapping and other attributes are load order based, meaning that mods loaded first will wrap the function first:
+//ex:
+//
+// mod1 : wrap Ref_1_2_AttributesTest wrapFunc
+// mod2 : wrap Ref_1_2_AttributesTest wrapFunc
+//
+// order of execution : mod2 -> mod1 -> original
+// finally order is also dependent on patch type, meaning thar wraps will always be executed before prefixes and postfixes
+// order is wraps -> Prefix -> Original -> PostFix
+@postfix( Ref_1_2_AttributesTest )
+function wrapFunc()
+{
+    // Custom Code
+    return; // postfixes does not need to call original functions as itwas already executed before it
+}
+
+//a property of postfixes is that they can be defined in another way, which let them define a custom name
+@postfix( "Ref_1_2_AttributesTest.wrapFunc" )
+function wrapFuncPatch() 
+{
+    // Custom Code
+
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 1.2.6. addMethod
+
+//this is used to add a new function with custom code
+//the function name can be anything other than already existing functions in the class
+//this is load order based, meaning that if two mods try adding a function with the same name
+// the loading will fail for all mods present on the user system and will backup into loading only the base game:
+
+@addMethod( Ref_1_2_AttributesTest )
+function newMethods()
+{
+    // Custom Code 
+
+}
+
+//////////////////////////////////////////////////////////////////////////
+// 1.2.7. Modules
+
+// modules are used to create namespaces for custom classes and functions
+// this is useful to avoid conflicts and manage dependencies
+// modules a declared by using the @module "NameofTheModule.SubName.XXX"
+// all of these needs to be done at the top of the file before any class or functions
+// very inspired by python imports
+
+// @module "myMod.Runtime"
+
+//to use a module you can import it :
+//@using "maths.ModulePi.maths"
+
+//////////////////////////////////////////////////////////////////////////
+// 1.2.7.2 Conditional Functions
+
+//with modules Come the ability to conditionally load at runtmie specific versions of a function using
+// @if(ModuleExists("MyModule.Runtime"))
+//this feature is in an unstable state for now, 
+
+//the syntax is:
+//@if ( findexpr )
+//findexpr = ModuleExists ( identstr ) || !ModuleExists( identstr )
+//identstr = "str" && !"str2" ... // this can go on
+//exemple : @if( ModuleExists( "MyDep.UI" && "myDep2.Widget") || ModuleExists( "MyPackagedDeps.CustomUI" ) )
+//This Feature can be use in tandem with Patching, letting you the possibility to create Conditional patches
+
+//the functions using this feature are limited in some things:
+// Only 2 Version of the function can be Defined max
+// Only 1 or less Version of the function can be Loaded at the same Time
+//if both versions condition are fullfilled we will load the first declared one
+
+// Will Not Compile
+//
+//@if(ModuleExists("CustomLib.Runtime"))
+//@wrapMethod()
+//function IsEP1() : Bool
+//{
+// return !IsEP1();
+//}
+//@if(!ModuleExists("CustomLib.Runtime"))
+//@wrapMethod()
+//function IsEP1() : Bool
+//{
+// return !IsEP1();
+//}
+
+//Too many Versions
+//@if(ModuleExists("Another one"))
+//@wrapMethod()
+//function IsEP1() : Bool
+//{
+// return !IsEP1();
+//}
+////////////////
+//  /!\/!\/!\/!\
+//if no versions condition is fulfilled then the function will not be loaded
+//Be careful where you use this type of function as if it is used when the function does not exist it may cause a crash or unexpected behavior
+//
+//Always be sure to either have a version with the inverse condition or have the places where it is used being encased with the same @if 
+//
+//this is not a problem in the case of conditional patches, only newly added function and @addMethod functions are concerned
+//  /!\/!\/!\/!\
+////////////////
+//
+
+//////////////////////////////////////////////////////////////////////////
+// 1.3. Persistent Variables
+//
+// The persistent variable system is a custom made system using the framework of the @addField system
+// this uses a new 'ModdingSystem' to store and retrieve variables stored on the disk and persistent across saves and reload
+// this system is mainly made for creating config variables in the backend
+
+//here is how we add new config variables
+// the supported types are : Bool , Int32, Int64, Float, String
+//these correspond to an expected : 
+// BooleanToggle, IntSlider, KeybindsToggle, FloatSlider, ComboToggle
+// used in Uis
+
+//Those next exemples are all commented as to not add dummy configs
+
+//@addField( ModdingSystem )
+//var ref_1_3_isInit : Bool;
+
+//@addField( ModdingSystem )
+//var ref_1_3_intCounter : Int32;
+
+//to Access config variables you can do it like this:
+
+function ref_1_3_AccessConfig()
+{
+    //First Get the moddingSystem
+    //var moddingSys : ModdingSystem = GetGameInstanceFromEngine().GetModdingSystem();
+
+    //then access any config added
+    //if( moddingSys.ref_1_3_isInit)
+    //{
+    //    moddingSys.ref_1_3_intCounter+=1;
+    //}
+}
+
+//the modding system expose 5 important functions for making a custom UI showing those configs:
+//import function GetAllModsConfigsNames( ) : array< CName >;
+//import function GetAllModsConfigsTypes( ) : array< gameModSettingType >;
+//import function GetModsConfigValueByName( name : CName ) : Variant;
+//import function SetModsConfigValueByName( name : CName, value : Variant );
+//import function SaveCurrentConfigsValue( );
+
+//these functions are useful to get and set configs 
+
+//////////////////////////////////////////////////////////////////////////
+// 1.4. New Functions
+
+//////////////////////////////////////////////////////////////////////////
+// 1.4.1 Game instance Getter
+
+function 1_4_1_GetGameInstanceAnywhere()
+{
+    // you can now Get the Game instance anywhere in scripts
+    var gi : GameInstance = GetGameInstanceFromEngine();
+    //this provide a way to get the game instance in cases where you wouldn't have access to it,
+    //like if you do not have the player or a context.
+}
+
