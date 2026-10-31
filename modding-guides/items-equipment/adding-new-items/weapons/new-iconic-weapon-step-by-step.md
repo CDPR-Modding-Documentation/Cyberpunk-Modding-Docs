@@ -477,7 +477,7 @@ Items.Hand_Of_Midas:
   statModifiers:
     - !append Quality.IconicItem # will actually flag the item as "iconic"
   statModifierGroups:
-    - !append Quality.IconicQualityRandomization # to enable ingame upgrades
+    - !append-once Items.IconicQualityRandomization # to enable ingame upgrades
     - !remove Items.QualityRandomization # to prevent unexpected qualities on acquisition
 ```
 
@@ -877,7 +877,7 @@ Items.Hand_Of_Midas:
   statModifiers: # stats for a weapon - reload time/aim speed/magazine size/recoil kick/damage per second/etc.
     - !append Quality.IconicItem # makes the weapon iconic
   statModifierGroups: # stats for a weapon also, but grouped (generally by category)
-    - !append Items.IconicQualityRandomization # necessary for ingame upgrade
+    - !append-once Items.IconicQualityRandomization # necessary for ingame upgrade
     - !remove Items.QualityRandomization # to prevent stacking with the previous
   slotPartListPreset: # attachments & mods 
     - !append
