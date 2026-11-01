@@ -62,7 +62,7 @@ That said you can see some recommendations for tooling here:
 
 ### And if I want to make mods for mod.io?
 
-We've got you covered — check [Modding on mod.io](https://app.gitbook.com/s/V8IFViBI9k2aiwNySH5C/for-mod-creators-theory/modding-guides/modding-on-mod.io "mention").
+We've got you covered — check [Modding on mod.io](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/modding-guides/modding-on-mod.io).
 
 ## Mod Types
 
