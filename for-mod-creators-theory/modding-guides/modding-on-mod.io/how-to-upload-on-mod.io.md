@@ -107,3 +107,17 @@ Cyberpunk 2077
 
 You can find a detailed step-by-step guide of the upload process on [mod.io](./).
 
+## Can I put this on Nexus?
+
+{% hint style="danger" %}
+Please don't. Doing so might break somebody's game (this **has** happened).
+{% endhint %}
+
+On PC, mod.io-packed mods are installed to `%Public%\mod.io<user_id>\mods<mod_id>`, where files will be loaded from the subfolder you made. Downloading such a mod via Vortex will end up with the top level folder peeled away and all the files merged into the game's directory.&#x20;
+
+Depending on how you packed, this will overwrite r6/cache/final.redscripts, which will end up in the aforementioned game breaking.
+
+#### Great, so how do I pack?
+
+Use Wolvenkit to pack your project, the generated zip file will be Nexus-ready immediately. Make sure to put your script files in `resources/r6/scripts/yourname/modname.reds`, and your tweak files likewise in `resources/r6/tweaks/yourname/modname.json` , and all will be well.
+

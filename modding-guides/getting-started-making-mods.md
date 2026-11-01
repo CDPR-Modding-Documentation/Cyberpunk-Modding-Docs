@@ -60,6 +60,10 @@ That said you can see some recommendations for tooling here:
 [modding-tools](../for-mod-creators-theory/modding-tools/)
 {% endcontent-ref %}
 
+### And if I want to make mods for mod.io?
+
+We've got you covered — check [Modding on mod.io](https://app.gitbook.com/s/V8IFViBI9k2aiwNySH5C/for-mod-creators-theory/modding-guides/modding-on-mod.io "mention").
+
 ## Mod Types
 
 ### Changing game item stats
