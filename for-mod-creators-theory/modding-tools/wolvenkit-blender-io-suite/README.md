@@ -39,6 +39,16 @@ The toolbar to the right of your viewport will show you the `CP77 Modding` tab.\
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_viewport.png" alt=""><figcaption></figcaption></figure>
 
+
+
+***
+
+<figure><img src="../../../.gitbook/assets/image (686).png" alt=""><figcaption></figcaption></figure>
+
+The information below hasn't been updated since the 2.5 update! While the features are all still there, they may look different.
+
+***
+
 ## Animation Tools
 
 In the **animation tools**, you can find

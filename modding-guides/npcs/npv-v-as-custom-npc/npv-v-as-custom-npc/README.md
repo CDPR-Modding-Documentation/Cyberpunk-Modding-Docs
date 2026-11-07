@@ -38,7 +38,7 @@ If you run into issues with this guide, the right place to ask for help is `#mod
 
 * Cyberpunk 2077 game version >= 2.3
 * Wolvenkit >= 8.15 ([Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases) | [Stable](https://github.com/WolvenKit/Wolvenkit/releases))
-* The 3d editing tools ( see [WKit Blender Plugin: Current version](https://app.gitbook.com/s/4gzcGtLrr90pVjAWVdTc/for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/wkit-blender-plugin-current-version "mention") for the currently supported version):
+* The 3d editing tools ( see [Broken link](/broken/pages/kJRwxDCP8YKgtpZ72cC2 "mention") for the currently supported version):
   * [Blender](https://www.blender.org/download/)
   * [wolvenkit-blender-io-suite](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/ "mention")
 * [AppearanceMenuMod](https://www.nexusmods.com/cyberpunk2077/mods/790) >= 2.1
