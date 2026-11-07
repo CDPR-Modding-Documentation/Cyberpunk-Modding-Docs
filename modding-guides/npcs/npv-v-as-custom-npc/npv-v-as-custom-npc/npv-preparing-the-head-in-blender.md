@@ -32,7 +32,7 @@ IWouldiwas Sh00kspeared made a video tutorial for visual learners (Nov 2024). Yo
 * [ ] You have downloaded the prepared Wolvenkit Project from [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/8328)
 * [ ] You have [Blender](https://www.blender.org/download/) installed
 * [ ] You have the Wolvenkit Blender Plugin (check [installing-the-wolvenkit-blender-plugin](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/ "mention") if you don't)
-* [ ] Blender and the plugin are on the current compatible versions [wkit-blender-plugin-current-version.md](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/wkit-blender-plugin-current-version.md "mention")
+* [ ] Blender and the plugin are on the current compatible versions [WKit Blender Plugin: Current version](https://app.gitbook.com/s/4gzcGtLrr90pVjAWVdTc/for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/installing-the-wolvenkit-blender-plugin/wkit-blender-plugin-current-version "mention")
 * [ ] You have completely read this entire section
 
 ### Worth noticing

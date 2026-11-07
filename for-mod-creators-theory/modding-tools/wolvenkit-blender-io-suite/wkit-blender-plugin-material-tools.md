@@ -1,26 +1,17 @@
 ---
-description: How to edit .mlsetup files in Blender
+description: Easy Multilayer editing straight in Blender
 ---
 
-# WKit Blender Plugin: Material Tools
+# WKit Blender Plugin: Material tools
 
 ## Summary
 
-Published: Apr 7 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-Last documented edit: Apr 7 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+Published: November 8 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+Last documented update: November 8 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page explains how to use the Wolvenkit  Blender IO Suite to edit .mlsetupfiles. You can find a [#video-guide](wkit-blender-plugin-material-tools.md#video-guide "mention")at the  end of the page.
+{% include "../../../.gitbook/includes/this-page-is-a-stub.md" %}
 
-### Wait, this is not what I want!
+{% embed url="https://www.youtube.com/watch?v=ont3VGbnZ3g" %}
 
-* You can learn about [multilayered](../../materials/multilayered/ "mention") on its own page
-* Or maybe you want create [custom-multilayermasks.md](../../../modding-guides/textures-and-luts/custom-multilayermasks.md "mention")?
-*
+<figure><img src="../../../.gitbook/assets/image (685).png" alt=""><figcaption></figcaption></figure>
 
-## There is nothing here yet!
-
-{% include "../../../.gitbook/includes/this-page-is-a-stub-if-yo....md" %}
-
-## Video guide
-
-{% embed url="https://youtu.be/ont3VGbnZ3g" %}

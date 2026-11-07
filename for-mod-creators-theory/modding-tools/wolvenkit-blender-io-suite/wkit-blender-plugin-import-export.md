@@ -6,10 +6,10 @@ description: How to import and export with the Wolvenkit Blender plugin
 
 ## Summary
 
-**Published**: ??? by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit**: May 26 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Published**: ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit**: May 26 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page lists step-by-step instructions for the export and import of game files.&#x20;
+This page lists step-by-step instructions for the export and import of game files.
 
 {% hint style="warning" %}
 You can only export files which are part of a [Wolvenkit project](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/wolvenkit-projects).
@@ -33,7 +33,7 @@ For **where** to export a mesh, see [Tools: Import/Export UI](https://app.gitboo
 For **how** to export a mesh, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention")
 
 {% hint style="info" %}
-If your mesh won't export from Wolvenkit, try unchecking the following box(es) in the export settings:&#x20;
+If your mesh won't export from Wolvenkit, try unchecking the following box(es) in the export settings:
 
 * [export-materials](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-materials "mention")
 * [export-garment-support-experimental](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#export-garment-support-experimental "mention")
@@ -75,7 +75,7 @@ Do not check this box if you are exporting a .glb file without animation data (i
 
 #### Limit to Selected Meshes
 
-By default, the Wolvenkit Blender IO Suite will only export **selected meshes** and their parent armatures. Unchecking this box will display the Export Visible Meshes checkbox, which is unchecked by default.&#x20;
+By default, the Wolvenkit Blender IO Suite will only export **selected meshes** and their parent armatures. Unchecking this box will display the Export Visible Meshes checkbox, which is unchecked by default.
 
 If you don't check either of these boxes, the plutin will export **all meshes and armatures** into the same .glb file. You usually do not want this.
 
@@ -89,7 +89,7 @@ For **how** to import a mesh, see [Import/Export: Mesh (3d Model)](https://app.g
 
 ### Export from Wolvenkit
 
-You can use Wolvenkit's [Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool "mention") to export .anims to .glb. The default setting is fine.
+You can use Wolvenkit's [Tools: Import/Export UI #Export Tool](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export#export-tool "mention") to export .anims to .glb. The default setting is fine.
 
 ### Importing into Blender
 
@@ -104,7 +104,7 @@ The process of importing animations into Blender is the same as it is with meshe
 
 For **where** to import an .anim, see [Tools: Import/Export UI](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/tools/tools-import-export "mention")
 
-For **how** to import an .anim, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention") and change the [Target File Format](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#target-file-format "mention")to `Anims`.
+For **how** to import an .anim, see [Import/Export: Mesh (3d Model)](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models "mention") and change the [Import/Export: Mesh (3d Model) #Target File Format](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/models#target-file-format "mention")to `Anims`.
 
 ## Entities
 
@@ -112,11 +112,11 @@ For **how** to import an .anim, see [Import/Export: Mesh (3d Model)](https://app
 
 You can export an entity by **adding it to your project** and running the corresponding script from inside Wolvenkit. Here are the relevant guides:
 
-&#x20;[Exporting Vehicles](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/modding-community/exporting-vehicles "mention") (you can also use this for characters)
+[Broken link](/broken/spaces/-MP_ozZVx2gRZUPXkd4r/pages/xyxzYztR8eVEwCto4EKV "mention") (you can also use this for characters)
 
-&#x20;[Exporting Characters to Blender](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/modding-community/exporting-to-blender "mention")
+[Exporting Game Entities to Blender](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/modding-community/exporting-to-blender "mention")
 
-&#x20;[Exporting Rigs & Anims](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/modding-community/exporting-to-blender/exporting-rigs-and-anims "mention")
+[Exporting Rigs & Anims](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/modding-community/exporting-to-blender/exporting-rigs-and-anims "mention")
 
 ### Importing into Blender
 
@@ -156,7 +156,7 @@ To export edited collision bodies back to .phys.json, simply press the "export c
 
 ### Export from Wolvenkit
 
-To export streamingsectors, you have to use the corresponding Wolvenscript. The workflow is documented [here](../../../modding-guides/world-editing/miscellaneous/editing-locations-in-blender.md#exporting-streaming-sectors-to-blender).&#x20;
+To export streamingsectors, you have to use the corresponding Wolvenscript. The workflow is documented [here](../../../modding-guides/world-editing/miscellaneous/editing-locations-in-blender.md#exporting-streaming-sectors-to-blender).
 
 ### Importing into Blender
 
@@ -170,12 +170,12 @@ Navigate in the file view to your Wolvenkit project's root file, and select the 
 
 ### Exporting from Blender
 
-The export process is not part of the plugin yet (1.5.0); it is documented [here](../../../modding-guides/world-editing/miscellaneous/editing-locations-in-blender.md#importing-back-into-cyberpunk).&#x20;
+The export process is not part of the plugin yet (1.5.0); it is documented [here](../../../modding-guides/world-editing/miscellaneous/editing-locations-in-blender.md#importing-back-into-cyberpunk).
 
 ## Hair profiles (.hp)
 
 {% hint style="info" %}
-To learn more about .hp files and their parameters, see&#x20;
+To learn more about .hp files and their parameters, see
 
 * [hair-profiles-.hp.md](../../files-and-what-they-do/file-formats/materials/hair-profiles-.hp.md "mention")
 * [hair-and-skin-material-properties.md](../../materials/configuring-materials/hair-and-skin-material-properties.md "mention") -> [#hair-material](../../materials/configuring-materials/hair-and-skin-material-properties.md#hair-material "mention")
@@ -187,7 +187,7 @@ To learn more about .hp files and their parameters, see&#x20;
 
 ### Editing the hair profile
 
-Select the imported hair and switch to Blender's **`Shading`**  perspective. Here, you can alter the gradients,
+Select the imported hair and switch to Blender's **`Shading`** perspective. Here, you can alter the gradients,
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_hair_colour.png" alt=""><figcaption></figcaption></figure>
 
@@ -195,7 +195,7 @@ Select the imported hair and switch to Blender's **`Shading`**  perspective. Her
 
 1. **Recommended:** make sure that your material name in Blender ends with `_cards`
 2. Make sure that your hair mesh is selected
-3. In the CP77 Modding panel, select `Export Hair Profile`&#x20;
+3. In the CP77 Modding panel, select `Export Hair Profile`
 
 <figure><img src="../../../.gitbook/assets/blender_plugin_export_hp.png" alt=""><figcaption></figcaption></figure>
 
@@ -204,4 +204,3 @@ Your new .hp.json file will be generated in the `raw` folder of Wolvenkit projec
 <figure><img src="../../../.gitbook/assets/blender_plugin_hp_file.png" alt=""><figcaption></figcaption></figure>
 
 You can now [import it from json](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/import-export/import-export-as-json#import-as-json).
-

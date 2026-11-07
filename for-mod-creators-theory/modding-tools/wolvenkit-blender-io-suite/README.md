@@ -7,7 +7,7 @@ description: How the Wolvenkit Blender plugin works
 ## Summary
 
 **Published**: ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit**: Dec 20 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented edit**: Nov 11 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This is the landing page for the Wolvenkit Blender plugin.
 
@@ -25,7 +25,7 @@ You can find a detailed install guide under [installing-the-wolvenkit-blender-pl
 
 * If this is your first time using Blender, you can check out [blender-getting-started](../../3d-modelling/blender-getting-started/ "mention")
 * For detailed usage instructions, check [wkit-blender-plugin-import-export.md](wkit-blender-plugin-import-export.md "mention")
-* The plug-in's source code and original readme are on [github](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/)
+* The plug-in's source code and readme are on [github](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/)
 * If you run into issues using the plugin, you can check [wkit-blender-plugin-troubleshooting.md](wkit-blender-plugin-troubleshooting.md "mention")
 
 ## Compatibility

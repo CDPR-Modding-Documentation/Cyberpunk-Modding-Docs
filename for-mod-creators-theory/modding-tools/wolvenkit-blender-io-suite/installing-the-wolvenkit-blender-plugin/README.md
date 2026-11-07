@@ -7,9 +7,15 @@ description: Install guide
 ## Summary
 
 **Published:** ??? by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented update:** Nov 29 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Last documented update:** Nov 11 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page will show you how to install the Wolvenkit Blender Plugin from a github release or tag. If you want to install the bleeding edge, please check [installing-from-github-source.md](installing-from-github-source.md "mention") instead.
+This page will show you how to install the Wolvenkit Blender Plugin from a github release or tag.&#x20;
+
+### Wait, this is not what I want!
+
+* If you want to install the bleeding edge, check [installing-from-github-source.md](installing-from-github-source.md "mention")&#x20;
+
+
 
 ### Compatibility
 
@@ -18,7 +24,8 @@ This page will show you how to install the Wolvenkit Blender Plugin from a githu
 ## Optional: Uninstall the old version
 
 {% hint style="info" %}
-You don't need to do this unless you have trouble updating. Go straight to [#step-0-download-the-plugin](./#step-0-download-the-plugin "mention")
+You don't need to do this if you never installed the addon before, and hopefully never again after 2.5!\
+Go straight to [#step-0-download-the-plugin](./#step-0-download-the-plugin "mention")
 {% endhint %}
 
 <details>
@@ -30,7 +37,7 @@ You don't need to do this unless you have trouble updating. Go straight to [#ste
 <img src="../../../../.gitbook/assets/blender_plugin_uninstall.png" alt="" data-size="original">
 
 2. Complete either of the options below:
-   * Click the  `Remove` button\
+   * Click the `Remove` button\
      The build-in Blender way. Should work. If it doesn't check the second option
    * Delete the files on your disk\
      Check the plugin's `file` entry. It will usually be something like this:
@@ -51,7 +58,7 @@ Navigate there with your Windows Explorer (Hotkey: `Windows+R`, paste the path a
 If you want to install the current development version of the plugin, read [installing-from-github-source.md](installing-from-github-source.md "mention") (NOT for beginners)
 {% endhint %}
 
-Download the latest release of the plugin from **github:**&#x20;
+Download the latest release of the plugin from **github:**
 
 1. On the [releases](https://github.com/WolvenKit/Cyberpunk-Blender-add-on/releases) page, find the most recent release
 2. Scroll past the change notes to the **Assets** section
@@ -62,23 +69,25 @@ Download the latest release of the plugin from **github:**&#x20;
 ## Step 1: Install the plugin
 
 1. Start Blender
-2. Open the Blender Preferences (Toolbar: `Edit` -> `Preferences`) and select the `AddOns` tab
+2. Open the Blender Preferences (Toolbar: `Edit` -> `Preferences`) and select the `Get Extensions` tab
+3. At the top right, select `Install from Disk` from the dropdown
 
-<figure><img src="../../../../.gitbook/assets/blender_plugin_install..png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../../.gitbook/assets/blender_plugin_install.png" alt=""><figcaption></figcaption></figure>
 
-3. Click the "Install" button and select the zip file you downloaded in step 2
+4. Select the zip file you downloaded in step 0
 
-## Step 2: Enable the plugin
+## Step 2: Enable and configure the plugin
 
-{% hint style="info" %}
-You only need to do this if you never installed the plugin before.
-{% endhint %}
-
-After you have successfully installed the plugin, you can now use the search bar to find it:
+After you have successfully installed the plugin, switch to the Add-Ons tab and make sure that it is enabled:
 
 <figure><img src="../../../../.gitbook/assets/blender_plugin_enable.png" alt=""><figcaption></figcaption></figure>
 
-Make sure the box is checked and restart Blender.
+* Point `Depot Path` at your [Wolvenkit Depot](https://app.gitbook.com/s/-MP_ozZVx2gRZUPXkd4r/wolvenkit-app/usage/create-depot)
+* Set Game Directory to [the-cyberpunk-2077-game-directory](../../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/ "mention")
+
+{% hint style="success" %}
+**Restart Blender!**
+{% endhint %}
 
 ## Troubleshooting
 
@@ -97,6 +106,3 @@ To **uninstall** the plugin, **delete** the entire folder.
 To **install** the plugin, **find** the folder in your **downloaded zip file** that contains the file **`__init__.py`**, move it here, and rename it.
 
 Now, **restart Blender**.
-
-
-
