@@ -9,6 +9,11 @@ description: Easy Multilayer editing straight in Blender
 Published: November 8 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 Last documented update: November 8 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
+### Wait, this is not what I want!
+
+* Maybe you want to learn more about [multilayered](../../materials/multilayered/ "mention")?
+*
+
 {% include "../../../.gitbook/includes/this-page-is-a-stub.md" %}
 
 {% embed url="https://www.youtube.com/watch?v=ont3VGbnZ3g" %}

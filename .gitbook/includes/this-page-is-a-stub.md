@@ -2,8 +2,6 @@
 title: This page is a stub
 ---
 
-# This page needs editing!
-
 If you're reading this, you'll have to find out on your own what this page is supposed to explain — sorry about that! \
 Once you've done it, we'd love for you to put it here for the next confused gonk!
 

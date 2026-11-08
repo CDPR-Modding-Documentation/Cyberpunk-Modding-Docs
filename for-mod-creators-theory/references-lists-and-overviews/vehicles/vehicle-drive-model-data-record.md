@@ -8,15 +8,14 @@ description: All the properties that make your car go fast (or slow)
 
 This page lists those properties that control how a vehicle behaves. By changing/tweaking them, you can modify a vehicle's behaviour.
 
-Legend:
+### Wait, this is not what I want!
 
-* An explanation that begins with (?) needs verifying.
-* A value range that is filled with a dash '-' indicates either that:\
-  \*\* The value range is open for experimentation as there are no specific, known limitations, or\
-  \*\* That the value range is inferrable, e.g. a boolean or a TweakDBID.\
-  \*\* Unknown fields have a question mark, '?', as content.
+* The [wolvenkit-blender-io-suite](../../modding-tools/wolvenkit-blender-io-suite/ "mention") offers a nifty interface to tweak vehicle data — check [wkit-blender-plugin-vehicle-customization.md](../../modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-vehicle-customization.md "mention") for more.
+* For a guide on **adding** vehicles, see [boe6s-guide-new-car-from-a-to-z](../../../modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/ "mention")
+* For a guide on how to visually change base game vehicles, see [altering-appearances-within-wolvenkit-full-workflow.md](../../../modding-guides/npcs/appearances-change-the-looks/altering-appearances-within-wolvenkit-full-workflow.md "mention") (the process is the same for cars)
+* If you want to know how to change an existing car, check [tweak-modding-guides.md](../../tweaks/tweak-modding-guides.md "mention"), for example [adding-stats-and-modifiers.md](../../../modding-guides/items-equipment/editing-existing-items/adding-stats-and-modifiers.md "mention")
 
-N.B. Descriptions of the properties are conclusions of multiple contributors' trial and error process. While the best effort was done to identify and describe completely and accurately what those properties mean and how to work with them, there is no guarantee of it being so.
+
 
 ### Vehicle speed units
 
@@ -31,12 +30,6 @@ The game engine uses different internal speed units when setting up the vehicle.
 _N.B. Original research._
 
 The game has a speed breaker, which resets the vehicle's speed to 0 if it hits a certain threshold. This threshold is around or somewhat lower than 100 of the game engine's internal speed units. It is possible to remove (or rescale?) this speed breaker threshold in version 1.63 of the game, e.g., with the LTBF mod.
-
-### Wait, this is not what I want!
-
-* For a guide on **adding** vehicles, see [boe6s-guide-new-car-from-a-to-z](../../../modding-guides/vehicles/boe6s-guide-new-car-from-a-to-z/ "mention")
-* For a guide on how to visually change base game vehicles, see [altering-appearances-within-wolvenkit-full-workflow.md](../../../modding-guides/npcs/appearances-change-the-looks/altering-appearances-within-wolvenkit-full-workflow.md "mention") (the process is the same for cars)
-* If you want to know how to change an existing car, check [tweak-modding-guides.md](../../tweaks/tweak-modding-guides.md "mention"), for example [adding-stats-and-modifiers.md](../../../modding-guides/items-equipment/editing-existing-items/adding-stats-and-modifiers.md "mention")
 
 ## Vehicle Records: Performance
 
@@ -102,6 +95,18 @@ groups:
         type: array:TweakDBID
         value: ["gamedataVehicleGearRecord"]
 ```
+
+### Legend
+
+* An explanation that begins with (?) needs verifying.
+* A value range that is filled with a dash '-' indicates either that:\
+  \*\* The value range is open for experimentation as there are no specific, known limitations, or\
+  \*\* That the value range is inferrable, e.g. a boolean or a TweakDBID.\
+  \*\* Unknown fields have a question mark, '?', as content.
+
+N.B. Descriptions of the properties are conclusions of multiple contributors' trial and error process. While the best effort was done to identify and describe completely and accurately what those properties mean and how to work with them, there is no guarantee of it being so.
+
+
 
 ### gamedataVehicleAirControl\_Record
 
@@ -395,5 +400,5 @@ Each of items of this type represent **one** gear of a vehicle. A vehicle will t
 ## Page History
 
 **Created:** Jul 9, 2022 by jato\
-**Intermediate edits:** March 29 2025 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Intermediate edits:** March 29 2025 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Rework:** in April 2025 by [martine-dee](https://github.com/martine-dee). While this encompasses so much more than the Drive Model, it gives a comprehensive overview in line with the original intent to show 'All the properties that make your car go fast (or slow)'. My strong suggestion is to DO keep this information in one page as a single-stop with all information.
