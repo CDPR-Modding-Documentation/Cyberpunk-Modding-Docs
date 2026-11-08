@@ -23,6 +23,8 @@ Fortunately, Cyberpunk materials are smarter than this.
 
 Many shaders offer a parameter to **tint** textures on-the-fly by setting a material property:
 
+<figure><img src="../../../.gitbook/assets/image (687).png" alt=""><figcaption></figcaption></figure>
+
 As you can see, both materials are using the same textures — the tinting happens via `BaseColorScale` parameter. You can use that to avoid texture duplication.
 
 See [#supporting-materials](tinting-textures-in-wolvenkit.md#supporting-materials "mention") for a list.
