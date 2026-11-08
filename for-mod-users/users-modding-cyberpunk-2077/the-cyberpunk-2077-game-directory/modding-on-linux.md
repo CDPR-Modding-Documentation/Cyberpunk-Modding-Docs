@@ -170,6 +170,22 @@ Try running the following shell command:
 protontricks 1091500 --force vcrun2022
 ```
 
+### "Error 998" / "RED4ext could not be loaded"!
+
+If the game starts with a popup like `RED4ext (error 998) - No access to memory location - RED4ext could not be loaded` (and/or `Unable to load cyber_engine_tweaks.asi. Error: 998`), and `red4ext/logs` only contains an empty file, the real Microsoft Visual C++ 2022 runtime is missing from the game's prefix.
+
+Proton ships its own `msvcp140` / `vcruntime140`, so the files look like they are there, but they are not enough for the RED4ext and CET DLLs to initialize. Switching Proton versions will not fix it. Install `vcrun2022` into the prefix:
+
+```bash
+protontricks 1091500 --force vcrun2022
+```
+
+If you do not have protontricks, winetricks works too:
+
+```bash
+WINEPREFIX=~/.local/share/Steam/steamapps/compatdata/1091500/pfx winetricks -q --force vcrun2022
+```
+
 ### This is not working!
 
 #### Check the launch options
