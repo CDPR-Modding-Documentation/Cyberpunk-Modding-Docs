@@ -43,4 +43,16 @@ By pressing the `Bake 24h Cycle` button, you can give your hardware a workout wh
 
 This will create (bake) an animation. You can play it with the space key, or if you (like me) have bound that to something more useful, from the menu under `Blender` -> `System` -> `Redraw Timer` -> `Animation Play`.
 
+### Export to anim&#x20;
+
+From the menu, select `Render` -> `Render Animation` , and pick a target folder:
+
+<figure><img src="../../../.gitbook/assets/image (689).png" alt=""><figcaption></figcaption></figure>
+
+{% hint style="info" %}
+You can set the max samples to 256 without losing too much quality.
+{% endhint %}
+
+This gives you one image for every single frame, which you can then compile into a video like the one below.
+
 {% embed url="https://files.gitbook.com/v0/b/gitbook-x-prod.appspot.com/o/spaces%2F4gzcGtLrr90pVjAWVdTc%2Fuploads%2F9Kcg5DONS8WSZ0UOaj8x%2F24h_render_cycle.mp4?alt=media&token=244f50dc-e772-4e65-8193-b2bdbc9b0a9c" %}
