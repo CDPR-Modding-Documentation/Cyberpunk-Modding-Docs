@@ -2,13 +2,13 @@
 description: How does load order work in Cyberpunk?
 ---
 
-# Archive files Load Order
+# Load Order
 
 ## Summary
 
 **Written & Published**: Nov 22, 2023 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-**Last documented update:** January 20th, 2026 by [minnierylands](https://app.gitbook.com/u/VSIYzNHUyRPaBCk2ExHhQzpPfo82 "mention")
+**Last documented update:** November 10th, 2026 by [icxrus](https://app.gitbook.com/u/R7jBoGTs0NQ60YSE39s5jrdLiei2 "mention")
 
 This page will explain to you what Load Order is and how it works, then tell you how to influence it.
 
@@ -110,6 +110,12 @@ Prefixing your archive file names with non-alphanumeric characters works fine in
 {% hint style="info" %}
 You will forget the warning above and re-learn this the hard way.
 {% endhint %}
+
+## TweakXL Load Order
+
+Files in `r6/tweaks` are loaded in lexicographical order by file and folder name, meaning the last loaded file wins. Example: `z_tweak.yaml` wins over `y_tweak.yaml`.
+
+This only really matters for files overriding base game tweaks or tweaks added by other mods.
 
 ## Load order and Wolvenkit
 

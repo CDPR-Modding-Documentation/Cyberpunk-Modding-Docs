@@ -17,7 +17,7 @@
   * [Getting Started: Installing Cyberpunk](for-mod-users/users-modding-cyberpunk-2077/getting-started/README.md)
     * [MO2 (Mod Organizer 2)](for-mod-users/users-modding-cyberpunk-2077/getting-started/mo2-mod-organizer-2.md)
     * [Vortex Mod Manager](for-mod-users/users-modding-cyberpunk-2077/getting-started/vortex-mod-manager.md)
-  * [Archive files Load Order](for-mod-users/users-modding-cyberpunk-2077/load-order.md)
+  * [Load Order](for-mod-users/users-modding-cyberpunk-2077/load-order.md)
   * [REDmod](for-mod-users/users-modding-cyberpunk-2077/redmod/README.md)
     * [REDMod: Usage](for-mod-users/users-modding-cyberpunk-2077/redmod/usage.md)
     * [Commands](for-mod-users/users-modding-cyberpunk-2077/redmod/commands/README.md)
