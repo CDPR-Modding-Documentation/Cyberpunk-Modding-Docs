@@ -23,10 +23,10 @@ Everything used here is a base game system. The sound system and speakers are th
 
 ### Requirements
 
-* [**WolvenKit 8.14+**](https://github.com/WolvenKit/WolvenKit)
-* [**World Builder**](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/world-editing/object-spawner)
-* [**ArchiveXL**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/core-mods-explained/archivexl)
-* [**TweakXL**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/core-mods-explained/tweakxl)
+* [**World Builder**](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/world-editing/object-spawner) **(**[**GitHub**](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases/latest)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/20660)**) -** 2.0.0 or newer
+* [**ArchiveXL**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/core-mods-explained/archivexl) **(**[**GitHub**](https://github.com/psiberx/cp2077-archive-xl/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/4198)**)**
+* [**TweakXL**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/core-mods-explained/tweakxl) **(**[**GitHub**](https://github.com/psiberx/cp2077-codeware/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/7780)**)**
+* **WolvenKit (**[**GitHub**](https://github.com/WolvenKit/WolvenKit/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/2201)**)** - 8.14 or newer
 * A [Wolvenkit Project](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/usage/wolvenkit-projects)
 * Knowledge of adding world objects with World Builder and merging them via ArchiveXL
 
@@ -69,14 +69,14 @@ The sound system starts itself when the area loads. You do not need a quest, a t
 
 ## Creating the sound system
 
-{% hint style="info" icon="code-branch" %}
-[Akiway's fork of World Builder](https://github.com/Akiway/CP77_entSpawner/releases/latest) is a more advanced version that put the focus on **Quality of Life**.
+{% hint style="success" icon="bolt" %}
+**Quick Setup**
 
-The version **a.1.5.0** brings a new **Quick Sound System Setup** feature to help you create one in minutes, without the headache of searching in properties.
+The version **2.0** brings a new **Quick Sound System Setup** feature to help you create one in minutes, without the headache of searching in properties.
 {% endhint %}
 
 {% tabs %}
-{% tab title="Quick Setup (Akiway's WB ≥ a.1.5.0)" icon="bolt" %}
+{% tab title="Quick Setup (WB ≥ 2.0.0)" icon="bolt" %}
 ### Quick Sound System Setup in video
 
 {% embed url="https://youtu.be/bEmKu0AziEM" %}
@@ -147,8 +147,6 @@ Right-click anywhere to access a context menu, to add / remove a device.
 {% hint style="danger" icon="volume-xmark" %}
 **No speaker connected, nothing will be audible.** The graph says this in place of the speaker row when the row is empty. The sound system is only a controller, it never makes sound itself.
 {% endhint %}
-
-
 {% endstep %}
 
 {% step %}
@@ -265,7 +263,7 @@ A sound system stores its entries in the save. If a device ignores your changes,
 {% endstepper %}
 {% endtab %}
 
-{% tab title="Manual (official WB)" icon="hand" %}
+{% tab title="Manual (WB ≤ 1.0.81)" icon="hand" %}
 {% stepper %}
 {% step %}
 ### 1. Copy the sound system into your project

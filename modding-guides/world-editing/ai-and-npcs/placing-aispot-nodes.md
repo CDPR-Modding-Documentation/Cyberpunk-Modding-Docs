@@ -19,10 +19,10 @@ This guide only explains how to place AISpot Nodes, for them to be actually be u
 
 ### Tools
 
-* [World Builder](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (v.0.91 or newer)
-* [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl)
-* [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.15.0 or newer)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of World Builder import script)
+* [**World Builder**](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/world-editing/object-spawner) **(**[**GitHub**](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases/latest)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/20660)**) -** 0.91 or newer
+* [**ArchiveXL**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/core-mods-explained/archivexl) **(**[**GitHub**](https://github.com/psiberx/cp2077-archive-xl/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/4198)**)**
+* **Codeware (**[**GitHub**](https://github.com/psiberx/cp2077-codeware/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/7780)**) -** 1.15.0 or newer
+* **WolvenKit (**[**GitHub**](https://github.com/WolvenKit/WolvenKit/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/2201)**)**
 
 ### Knowledge
 

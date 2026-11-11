@@ -11,10 +11,10 @@ icon: elevator
 
 ### Tools
 
-* [World Builder](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) (0.8 or newer, or [Akiway's fork](https://github.com/Akiway/CP77_entSpawner/releases/latest) a.1.2.0 or newer)
-* [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl) (1.20 or newer)
-* [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.14.1 or newer)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of World Builder import script)
+* **World Builder** **(**[**GitHub**](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases/latest)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/20660)**) -** 2.0.0 or newer
+* **ArchiveXL** **(**[**GitHub**](https://github.com/psiberx/cp2077-archive-xl/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/4198)**) -** 1.20 or newer
+* **Codeware (**[**GitHub**](https://github.com/psiberx/cp2077-codeware/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/7780)**) -** 1.14.1 or newer
+* **WolvenKit (**[**GitHub**](https://github.com/WolvenKit/WolvenKit/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/2201)**) -** With latest version of World Builder import script
 
 ### Knowledge
 
@@ -22,16 +22,16 @@ icon: elevator
   * Working with WolvenKit
   * Using World Builder (Spawning things and [importing](../object-spawner/exporting-from-object-spawner.md) into WolvenKit)
 
-{% hint style="info" icon="code-branch" %}
-[Akiway's fork of World Builder](https://github.com/Akiway/CP77_entSpawner/releases/latest) is a more advanced version that put the focus on **Quality of Life**.
+{% hint style="success" icon="bolt" %}
+**Quick Setup**
 
-The version **a.1.2.0** brings a new **Quick Elevator Setup** feature to help you create one in minutes, without the headache of searching in properties.
+The version **2.0** brings a new **Quick Elevator Setup** feature to help you create one in minutes, without the headache of searching in properties.
 {% endhint %}
 
 ## Creating the elevator
 
 {% tabs %}
-{% tab title="Quick Setup (Akiway's WB ≥ a.1.2.0)" icon="bolt" %}
+{% tab title="Quick Setup (WB ≥ 2.0.0)" icon="bolt" %}
 ### Quick Setup Elevator tutorial in video
 
 {% embed url="https://www.youtube.com/watch?list=PL3AzCsUebgGMU-jRkt7eBAAYmJIhpHPgo&v=pwbwUzF0DUU" %}
@@ -101,7 +101,7 @@ Place the elevator at the exact position you want it to arrive, and copy-paste i
 {% endhint %}
 {% endtab %}
 
-{% tab title="Manual (official WB ≥ 0.8)" icon="hand" %}
+{% tab title="Manual (WB ≥ 0.8.0)" icon="hand" %}
 ### Spawning nodes
 
 #### Overview

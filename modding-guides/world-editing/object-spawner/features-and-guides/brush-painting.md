@@ -20,13 +20,7 @@ The randomization of its content can be configured in two ways :
 
 ### Requirement
 
-* [World Builder - Akiway's fork](https://github.com/Akiway/CP77_entSpawner/releases/latest) (a.1.3.0 or newer)
-
-{% hint style="info" icon="code-branch" %}
-[Akiway's fork of World Builder](https://github.com/Akiway/CP77_entSpawner/releases/latest) is a more advanced version that put the focus on **Quality of Life**.
-
-The version **a.1.3.0** brings the new **Brush painting** feature.
-{% endhint %}
+* **World Builder** **(**[**GitHub**](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases/latest)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/20660)**) -** 2.0.0 or newer
 
 ## How to use
 

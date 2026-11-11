@@ -33,12 +33,7 @@ More detailed information can be found here:
 Instructions on how to find locations using RHT can be found [here](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/references-lists-and-overviews/reference-world-sectors/places).
 {% endhint %}
 
-* **World Builder** **(**[**GitHub**](https://github.com/Akiway/CP77_entSpawner/releases/tag/a.1.5.0)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/20660)**|**[**Wiki**](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/world-editing/object-spawner)**):** Main tool for adding new nodes to the game-world. Supports dozens of node types and has access to all game resources, including AMM props. Mods made using it are native world edits, using ArchiveXL to make the game load the custom sectors.
-
-{% hint style="info" %}
-A fork of World Builder with extended features that aren't yet in the main repository is available exclusively on [GitHub](https://github.com/Akiway/CP77_entSpawner).
-{% endhint %}
-
+* **World Builder** **(**[**GitHub**](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases/latest)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/20660)**|**[**Wiki**](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/world-editing/object-spawner)**):** Main tool for adding new content to the game-world. Supports dozens of node types and has access to all game resources, including AMM props. Mods made using it are native world edits, using ArchiveXL to make the game load the custom sectors.
 * **UnlimitedGeometryCacheStreaming** ([Nexus](https://www.nexusmods.com/cyberpunk2077/mods/29096)|[GitHub](https://github.com/notaspirit/UnlimitedGeometryCacheStreaming)): Allows streaming sectors to use any collision mesh entry anywhere, is required for the finished mod as well if it contains collision meshes.
 * **removalEditor (**[**GitHub**](https://github.com/justarandomguyintheinternet/CP77_removalEditor)**):** Integrates with RedHotTools to allow easily creating node removal files for ArchiveXL.
 * **VolumetricSelection2077 (**[**GitHub**](https://github.com/notaspirit/VolumetricSelection2077)**):** Quickly and easily remove parts of the world using an in game selection box.

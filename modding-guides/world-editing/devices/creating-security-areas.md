@@ -26,15 +26,15 @@ icon: shield
 
 #### Tools
 
-* World Builder ([official](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) ≥ 0.97 or newer, or [Akiway's fork](https://github.com/Akiway/CP77_entSpawner/releases/latest) ≥ a.1.5.0)
-* [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl)
-* [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.15.0 or newer)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) (With latest version of World Builder import script)
+* **World Builder** **(**[**GitHub**](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases/latest)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/20660)**) -** 2.0.0 or newer
+* **ArchiveXL** **(**[**GitHub**](https://github.com/psiberx/cp2077-archive-xl/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/4198)**)**
+* **Codeware (**[**GitHub**](https://github.com/psiberx/cp2077-codeware/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/7780)**) -** 1.15.0 or newer
+* **WolvenKit (**[**GitHub**](https://github.com/WolvenKit/WolvenKit/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/2201)**) -** With latest version of World Builder import script
 
-{% hint style="info" icon="code-branch" %}
-[Akiway's fork of World Builder](https://github.com/Akiway/CP77_entSpawner/releases/latest) is a more advanced version that put the focus on **Quality of Life**.
+{% hint style="success" icon="bolt" %}
+**Quick Setup**
 
-The version **a.1.5.0** brings a new **Quick Security System Setup** feature that helps you to build and manage your network in a single popup : system, areas, outlines, communities and driven devices.
+The version **2.0** brings a new **Quick Security System Setup** feature that helps you to build and manage your network in a single popup : system, areas, outlines, communities and driven devices.
 {% endhint %}
 
 #### Knowledge
@@ -46,7 +46,7 @@ The version **a.1.5.0** brings a new **Quick Security System Setup** feature tha
 ## Creating the security system
 
 {% tabs %}
-{% tab title="Quick Setup (Akiway's WB ≥ a.1.5.0)" icon="bolt" %}
+{% tab title="Quick Setup (WB ≥ 2.0.0)" icon="bolt" %}
 ### Quick Setup in video
 
 _Video coming soon..._
@@ -156,7 +156,7 @@ Selecting a driven device in the graph exposes its own settings (state, backdoor
 {% endstepper %}
 {% endtab %}
 
-{% tab title="Manual (official ≥ 0.97)" icon="hand" %}
+{% tab title="Manual (WB ≥ 0.97)" icon="hand" %}
 {% stepper %}
 {% step %}
 ### Spawning the nodes
@@ -236,8 +236,6 @@ Ensure that the `Dummy Area` is in the exact same position as our security area 
 {% endstepper %}
 {% endtab %}
 {% endtabs %}
-
-
 
 ## Recap
 

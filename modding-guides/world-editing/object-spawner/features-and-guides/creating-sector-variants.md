@@ -35,11 +35,10 @@ Despite the name, you can have as many variants in a single .archive as you want
 
 ### Tools
 
-* WorldBuilder ([github](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases) | [Nexus](https://www.nexusmods.com/cyberpunk2077/mods/20660))
-* [ArchiveXL](https://github.com/psiberx/cp2077-archive-xl)
-* [Codeware ](https://github.com/psiberx/cp2077-codeware/releases)(1.15.0 or newer)
-* [WolvenKit](https://github.com/WolvenKit/WolvenKit) ([Stable](https://github.com/WolvenKit/WolvenKit/releases) | [Nightly](https://github.com/WolvenKit/WolvenKit-nightly-releases/releases))
-* The latest version of World Builder import script (Wolvenkit will update scripts during start)
+* [**World Builder**](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/world-editing/object-spawner) **(**[**GitHub**](https://github.com/justarandomguyintheinternet/CP77_entSpawner/releases/latest)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/20660)**)**
+* [**ArchiveXL**](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-creators-theory/core-mods-explained/archivexl) **(**[**GitHub**](https://github.com/psiberx/cp2077-archive-xl/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/4198)**)**
+* **Codeware (**[**GitHub**](https://github.com/psiberx/cp2077-codeware/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/7780)**) -** 1.15.0 or newer
+* **WolvenKit (**[**GitHub**](https://github.com/WolvenKit/WolvenKit/releases)**|**[**Nexus**](https://www.nexusmods.com/cyberpunk2077/mods/2201)**)**
 
 ### Knowledge
 

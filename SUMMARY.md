@@ -468,7 +468,7 @@
       * [Tab: Spawn New](modding-guides/world-editing/object-spawner/ui-tabs-explained/tab-spawn-new.md)
       * [Tab: Favorites and Prefabs](modding-guides/world-editing/object-spawner/ui-tabs-explained/tab-favorites-and-prefabs.md)
       * [Tab: Spawned](modding-guides/world-editing/object-spawner/ui-tabs-explained/tab-spawned.md)
-      * [Tab: Saved](modding-guides/world-editing/object-spawner/ui-tabs-explained/tab-saved.md)
+      * [Tab: Projects](modding-guides/world-editing/object-spawner/ui-tabs-explained/tab-saved.md)
       * [Tab: Export](modding-guides/world-editing/object-spawner/ui-tabs-explained/tab-export.md)
     * [Features and guides](modding-guides/world-editing/object-spawner/features-and-guides/README.md)
       * [Adding custom resources / props](modding-guides/world-editing/object-spawner/features-and-guides/adding-custom-resources-props.md)
