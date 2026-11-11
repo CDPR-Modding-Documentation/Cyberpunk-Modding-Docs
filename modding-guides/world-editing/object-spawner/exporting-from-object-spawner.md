@@ -116,7 +116,7 @@ Cyberpunk 2077\bin\x64\plugins\cyber_engine_tweaks\mods\entSpawner\export\yourPr
 
     * If the entry is greyed out, install the [WolvenKit Resources plugin](https://wiki.redmodding.org/wolvenkit/wolvenkit-app/home/home-plugins#wolvenkit-resources)
 
-    <figure><img src="../../../.gitbook/assets/object_spawner_wkit_import.png" alt="" width="413"><figcaption><p>Click the "Import object spawner .json" button, then choose the file</p></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/object_spawner_wkit_import.png" alt="" width="413"><figcaption><p>Used to be called "Import object spawner .json" in WKit versions &#x3C;10</p></figcaption></figure>
 3. In the file dialog, choose your previously exported file `yourProjectName_exported.json` file
 
 WolvenKit creates these files in your project:
