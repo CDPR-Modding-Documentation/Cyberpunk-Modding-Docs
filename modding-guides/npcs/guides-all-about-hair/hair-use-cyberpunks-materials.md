@@ -9,7 +9,7 @@ description: Using the game's UV layout and textures on ported hair
 **Created:** Jul 31 2026 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention") (split out from original page created by Eagul – research mostly done by IslandDancer)\
 **Last documented edit:** Jul 31 2027 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page will show you how to make ported hair compatible with Cyberpunk's texture layout.&#x20;
+This page will show you how to make ported hair compatible with Cyberpunk's texture layout.
 
 {% hint style="info" %}
 You can find a video in the expendable box below (thanks to IslandDancer for making it)!
@@ -29,7 +29,7 @@ You should be able to select and move things in Blender without panicking. If yo
 
 #### Estimated time
 
-Someone who knows what they're doing can usually do this in <30minutes. If it's your first time, you'll need an hour or to (more if you have to start over).&#x20;
+Someone who knows what they're doing can usually do this in <30minutes. If it's your first time, you'll need an hour or to (more if you have to start over).
 
 ## Why do I need this?
 
@@ -43,7 +43,7 @@ By using Cyberpunk's original materials, you can get the maximum quality for the
 
 ### Mod file size
 
-Packing additional textures will increase the file size of your mod – unnecessarily so, if you complete this guide. Depending on [your resolution](../../../for-mod-creators-theory/3d-modelling/on-4k-textures-and-high-poly-meshes.md), you can save dozens of megabytes.&#x20;
+Packing additional textures will increase the file size of your mod – unnecessarily so, if you complete this guide. Depending on [your resolution](../../../for-mod-creators-theory/3d-modelling/on-4k-textures-and-high-poly-meshes.md), you can save dozens of megabytes.
 
 ### Compatibility
 
@@ -55,7 +55,7 @@ If your hair texture is too high-resolution or if the strands are too fine, the 
 
 ### Step 0: picking a hair texture
 
-Excluding beards, caps and private hairs, CP2077 has 5 types of hair textures.&#x20;
+Excluding beards, caps and private hairs, CP2077 has 5 types of hair textures.
 
 Pick one of them, then add it to your Wolvenkit project and export it as png. You can then import this into Blender as a reference for UV editing.
 
@@ -96,7 +96,7 @@ Your hair should now show Cyberpunk's hair material (and probably looks terrible
 
 #### 1.3 (optional): use the alpha texture as base texture
 
-It will be easier to see your hair if you assign the alpha texture instead of the base hair colour.&#x20;
+It will be easier to see your hair if you assign the alpha texture instead of the base hair colour.
 
 The fastest way to do that:
 
@@ -122,17 +122,17 @@ If you don't care about this, you can skip ahead to [#step-3-changing-the-layout
 
 This is cyberpunk's alpha texture for long straight hair: the black parts are transparent, the white ones are visible. There are different kinds of hair strand mapped out, which I'll explain below the screenshot.
 
-<figure><img src="../../../.gitbook/assets/hair_texture_layout.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/hair_texture_layout" alt=""><figcaption></figcaption></figure>
 
-<table><thead><tr><th width="60.679072281094705">.</th><th width="195.17463862423028">What is it</th><th>Explanation</th></tr></thead><tbody><tr><td>a</td><td>cover strand</td><td>The yellow chunk has next to no transparency and will look kind of flat. Its intended purpose is to cover up visible bits of the scalp via hair cap - if you use this on hair strands, the result might look ass.</td></tr><tr><td>b</td><td>load-bearing strand (3 options)</td><td>This kind of strand should make up most of the lower levels of your hair. It's dense and has little transparency. <br>I usually try to avoid gaps in this layer, as they lead to poor coverage.</td></tr><tr><td>c</td><td>thinner strand (4 options)</td><td>We're getting to the upper layers of the hair. Unless V just left the hair stylist, the topmost hair strands will be lighter and less dense - so they will also be more reflective.<br>You can use two strands on one card if you're okay with the gap - this can add variety.</td></tr><tr><td>d</td><td>flyhair</td><td>Frizz: what fashion magazines pretend you shouldn't have. This adds the final touch of realism to any hair.</td></tr></tbody></table>
+<table><thead><tr><th width="60.679072281094705">.</th><th width="195.17463862423028">What is it</th><th>Explanation</th></tr></thead><tbody><tr><td>a</td><td>cover strand</td><td>The yellow chunk has next to no transparency and will look kind of flat. Its intended purpose is to cover up visible bits of the scalp via hair cap - if you use this on hair strands, the result might look ass.</td></tr><tr><td>b</td><td>load-bearing strand (3 options)</td><td>This kind of strand should make up most of the lower levels of your hair. It's dense and has little transparency.<br>I usually try to avoid gaps in this layer, as they lead to poor coverage.</td></tr><tr><td>c</td><td>thinner strand (4 options)</td><td>We're getting to the upper layers of the hair. Unless V just left the hair stylist, the topmost hair strands will be lighter and less dense - so they will also be more reflective.<br>You can use two strands on one card if you're okay with the gap - this can add variety.</td></tr><tr><td>d</td><td>flyhair</td><td>Frizz: what fashion magazines pretend you shouldn't have. This adds the final touch of realism to any hair.</td></tr></tbody></table>
 
 ### Step 3: Changing the layout
 
 {% hint style="info" %}
-Before you start moving anything, read [#additional-tips](hair-use-cyberpunks-materials.md#additional-tips "mention")  to do future you a favour!
+Before you start moving anything, read [#additional-tips](hair-use-cyberpunks-materials.md#additional-tips "mention") to do future you a favour!
 {% endhint %}
 
-Now that we've understood how this works, we can actually change our mapping. Here are some essential keyboard shortcuts that you'll need (courtesy of  [IslandDancer](https://www.nexusmods.com/profile/IslandDancer/mods)):
+Now that we've understood how this works, we can actually change our mapping. Here are some essential keyboard shortcuts that you'll need (courtesy of [IslandDancer](https://www.nexusmods.com/profile/IslandDancer/mods)):
 
 **Blender Shortcuts:**
 
@@ -170,8 +170,8 @@ This is fully optional, you can not do this and make more work for future you :)
 
 ### Preserve hair stacks
 
-Your original hair will have **stacks of hair cards** assigned to the **same part of the texture**. Once you've moved your hair strands around, these stacks will be **irretrievably merged**, and if you want to come back later to tweak your hair mesh (because some parts of it look bad in the Afterlife or whatever), you will have a hard time teasing them apart.&#x20;
+Your original hair will have **stacks of hair cards** assigned to the **same part of the texture**. Once you've moved your hair strands around, these stacks will be **irretrievably merged**, and if you want to come back later to tweak your hair mesh (because some parts of it look bad in the Afterlife or whatever), you will have a hard time teasing them apart.
 
-Fortunately, the UV layout **tiles** (imagine an infinitiely big repeated image) - which means that you can put a stack into place and then move it to a different UV tile (hotkey: g -> x -> 1, or g -> y -> 1, can be >1 or negative as well).&#x20;
+Fortunately, the UV layout **tiles** (imagine an infinitiely big repeated image) - which means that you can put a stack into place and then move it to a different UV tile (hotkey: g -> x -> 1, or g -> y -> 1, can be >1 or negative as well).
 
 This lets you preserve your hair card stacks for future edits.
