@@ -485,6 +485,7 @@
     * [World Object Removal with Blender](modding-guides/world-editing/removing-objects/world-object-removal-with-blender.md)
     * [Removing objects by hand](modding-guides/world-editing/removing-objects/removing-objects-by-hand.md)
     * [Removing grass and small foliage](modding-guides/world-editing/removing-objects/removing-grass-and-small-foliage.md)
+    * [Updating .xl files for a new game version](modding-guides/world-editing/removing-objects/updating-.xl-files-for-a-new-game-version.md)
   * [Devices](modding-guides/world-editing/devices/README.md)
     * [Custom fast travel points](modding-guides/world-editing/devices/custom-fast-travel-points.md)
     * [Custom Elevators](modding-guides/world-editing/devices/custom-elevators.md)
