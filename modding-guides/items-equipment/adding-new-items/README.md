@@ -70,7 +70,7 @@ Understanding of the file structure is **not required** as long as you **follow 
 
 ### You should now have the following files:
 
-<figure><img src="../../../.gitbook/assets/archive_xl_adding_items_file_structure.png" alt=""><figcaption><p>These files do not contain an Atelier store. If you want to add one, see <a href="adding-items-atelier-integration.md">here</a>.</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/archive_xl_adding_items_file_structure.png" alt=""><figcaption><p>These files do not contain an Atelier store. If you want to add one, see <a href="adding-items-atelier-integration/">here</a>.</p></figcaption></figure>
 
 ### Start the game
 
@@ -124,7 +124,7 @@ Otherwise, you will want to complete one or more of the following steps:
 * Learn about [#variants-and-suffixes](../../../for-mod-creators-theory/core-mods-explained/archivexl/#variants-and-suffixes "mention")for e.g. [#adding-a-male-instance](./#adding-a-male-instance "mention") or check the [#hiding-body-parts-diagram](../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-tags.md#hiding-body-parts-diagram "mention")
 * Learn about making more variants:[#adding-an-appearance](./#adding-an-appearance "mention")
 * Create [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention")
-* Create [adding-items-atelier-integration.md](adding-items-atelier-integration.md "mention")
+* Create [adding-items-atelier-integration](adding-items-atelier-integration/ "mention")
 * Learn about [porting-3d-objects-to-cyberpunk](../../../for-mod-creators-theory/3d-modelling/porting-3d-objects-to-cyberpunk/ "mention")
 
 {% hint style="success" %}

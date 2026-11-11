@@ -49,4 +49,4 @@ Adding items is a somewhat involved process. Regardless of what you want to do, 
 
 * [tweakxl-changing-game-records](../core-mods-explained/tweakxl/tweakxl-changing-game-records/ "mention")
 * [redmod-tweaks.md](../modding-tools/redmod/redmod-tweaks.md "mention")
-* [adding-items-atelier-integration.md](../../modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md "mention")
+* [adding-items-atelier-integration](../../modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration/ "mention")

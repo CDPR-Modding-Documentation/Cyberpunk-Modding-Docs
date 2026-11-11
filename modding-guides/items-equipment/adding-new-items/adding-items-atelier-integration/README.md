@@ -4,13 +4,13 @@ description: How to set up an atelier store for your mod
 
 # Your own Atelier Store
 
-This guide will detail how to add an Atelier store with your items. It is part of the [Adding new items](./) ArchiveXL tutorial, but you can complete these steps independently.
+This guide will detail how to add an Atelier store with your items. It is part of the [Adding new items](../) ArchiveXL tutorial, but you can complete these steps independently.
 
 ### Wait, this is not what I want!
 
-* Find a guide on [adding-items-preview-images](../../custom-icons-and-ui/adding-items-preview-images/ "mention")
-* Learn more about [game-icons-the-inkatlas-file.md](../../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md "mention")
-* If you are using [archivexl-dynamic-variants](archivexl-dynamic-variants/ "mention"), you can use [W's generator](https://codepen.io/Wandering-Aldecaldo/full/jOoWemp) to quickly create spawn codes and Atelier entries
+* Find a guide on [adding-items-preview-images](../../../custom-icons-and-ui/adding-items-preview-images/ "mention")
+* Learn more about [game-icons-the-inkatlas-file.md](../../../../for-mod-creators-theory/files-and-what-they-do/file-formats/game-icons-the-inkatlas-file.md "mention")
+* If you are using [archivexl-dynamic-variants](../archivexl-dynamic-variants/ "mention"), you can use [W's generator](https://codepen.io/Wandering-Aldecaldo/full/jOoWemp) to quickly create spawn codes and Atelier entries
 
 ## Requirements
 
@@ -24,7 +24,7 @@ You also have to add it to your mod's requirements, as atelier stores will cause
 
 You need a single `.png` file with your store's icon (200x200 px). It needs to be in a folder all by itself, and its file name should be `slot_01.png`.
 
-Now, run the inkatlas generator in WolvenKit with the following settings:&#x20;
+Now, run the inkatlas generator in WolvenKit with the following settings:
 
 |                         |                                                                                               |
 | ----------------------- | --------------------------------------------------------------------------------------------- |
@@ -50,7 +50,7 @@ tutorial
         - atelier_icon_1080p.xbm       <<<  
 ```
 
-Now, create your icon. The process is the same as for "[preview images](../../custom-icons-and-ui/adding-items-preview-images/#fixing-up-your-texture)". The resulting slot will be named `slot_01`.
+Now, create your icon. The process is the same as for "[preview images](../../../custom-icons-and-ui/adding-items-preview-images/#fixing-up-your-texture)". The resulting slot will be named `slot_01`.
 
 ### Creating the atelier file
 
@@ -58,9 +58,8 @@ Now, create your icon. The process is the same as for "[preview images](../../cu
 
 <summary>Example store file (if you don't want to use the generator)</summary>
 
-```
-@addMethod(gameuiInGameMenuGameController)
-protected cb func RegisterYOURNAMESStore(event: ref<VirtualShopRegistration>) -> Bool {
+<pre class="language-swift"><code class="lang-swift"><strong>@addMethod(gameuiInGameMenuGameController)
+</strong>protected cb func RegisterYOURNAMESStore(event: ref&#x3C;VirtualShopRegistration>) -> Bool {
   event.AddStore(
     n"YOURNAME",
     "Your Store Name",
@@ -74,7 +73,7 @@ protected cb func RegisterYOURNAMESStore(event: ref<VirtualShopRegistration>) ->
 	[ "Legendary" ]
   );
 }
-```
+</code></pre>
 
 </details>
 
@@ -87,7 +86,7 @@ protected cb func RegisterYOURNAMESStore(event: ref<VirtualShopRegistration>) ->
 | Atlas Resource                                             | <p><code>tutorial/torso/my_custom_shirt/ops/atelier_icon.inkatlas</code><br></p> |
 | Texture Part                                               | `slot_01`                                                                        |
 
-2. Now, add your item.
+2. Now, add your item. (If you want to create a self-updating atelier store, you can skip this step!)
 
 {% hint style="warning" %}
 In `atlasResource`, you have to replace all `\` with `/`
@@ -121,6 +120,10 @@ resources
     - scripts
       - MyTutorialAtelierStore-atelier-store.reds         << new file
 ```
+
+{% hint style="info" %}
+Optional: Check out [a-self-updating-atelier-store.md](a-self-updating-atelier-store.md "mention")
+{% endhint %}
 
 Now, it's time to test! Install the mod and start Cyberpunk.
 

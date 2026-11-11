@@ -49,7 +49,7 @@ after:
 
 * If you want to understand how things work, check out the links during the rest of the guide.
 * You can find the technical documentation for dynamic variants on [ArchiveXL's github](https://github.com/psiberx/cp2077-archive-xl/wiki/Dynamic-Appearances).
-* If you want to create an Atelier store, see [adding-items-atelier-integration.md](../adding-items-atelier-integration.md "mention")
+* If you want to create an Atelier store, see [adding-items-atelier-integration](../adding-items-atelier-integration/ "mention")
 * To quickly generate instances with up to two keys, check out [W's generator](https://codepen.io/Wandering-Aldecaldo/full/BaeKRyp) (Codepen.IO)
 * Examples of ArchiveXL tags to fix First person perspective clipping: [First Person Perspective Fixes](https://wiki.redmodding.org/cyberpunk-2077-modding/modding-guides/items-equipment/first-person-perspective-fixes)
 
@@ -211,10 +211,10 @@ Yes, but generating the exact item that you want is so complex that we couldn't 
 
 ## Step 1: Customizing the generated item
 
-Since the generated files are almost certainly not what you need, this section will show you how to adjust the item.&#x20;
+Since the generated files are almost certainly not what you need, this section will show you how to adjust the item.
 
 {% hint style="info" %}
-If that's not what you want, you can skip to Step 2.&#x20;
+If that's not what you want, you can skip to Step 2.
 
 If you change anything here, names and paths in Step 2 will be different. Adjust accordingly!
 {% endhint %}
@@ -225,19 +225,19 @@ The generated structure includes 4 meshes per body gender:
 
 ### Safely changing mesh paths
 
-During this section, you will edit the `mesh_entity`. This file contains multiple `components`, some of which are pulling in `.mesh` files by path.&#x20;
+During this section, you will edit the `mesh_entity`. This file contains multiple `components`, some of which are pulling in `.mesh` files by path.
 
 {% hint style="info" %}
 Select a node in the tree on the left, then edit its properties in the panel to the right.
 {% endhint %}
 
-In there, you need to adjust file paths, which have been generated as dynamic – meaning that they will look like this:
+In there, you need to adjust file paths, which have been generated as dynamic – meaning that they will look like this:
 
 ```
 *manavortex/equipment/torso_inner/my_custom_shirt/meshes/t1_079_p{gender}a_tshirt_casual.mesh
 ```
 
-Since the default path starts with a \* and has the `Soft` flag, ArchiveXL will resolve these [placeholders](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md) at runtime to `t1_079_pwa_tshirt__casual.mesh`  or `t1_079_pma_tshirt__casual.mesh`.&#x20;
+Since the default path starts with a \* and has the `Soft` flag, ArchiveXL will resolve these [placeholders](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-suffixes-and-substitutions.md) at runtime to `t1_079_pwa_tshirt__casual.mesh` or `t1_079_pma_tshirt__casual.mesh`.
 
 Instead of preserving the substitution, you can simply paste a non-dynamic path to one of your files (select it in the project browser, `Copy relative path`, paste it to the `DepotPath` box). After that, you can right-click the box, and select `Convert to dynamic`.
 
@@ -245,7 +245,7 @@ If you want to have only one body gender, check 1.2 below.
 
 ### 1.1 Changing the mesh count
 
-Usually, you have either more or fewer meshes than you actually want to use.&#x20;
+Usually, you have either more or fewer meshes than you actually want to use.
 
 #### Adjust the .mesh count
 
@@ -255,9 +255,9 @@ If you need more: copy an existing file, then re-name it. Make sure to do this f
 
 #### Adjust the components
 
-The item's individual parts are pulled in via `mesh_entity` (you can learn more about this on  [dynamic-appearances-understanding-the-process.md](dynamic-appearances-understanding-the-process.md "mention")).&#x20;
+The item's individual parts are pulled in via `mesh_entity` (you can learn more about this on [dynamic-appearances-understanding-the-process.md](dynamic-appearances-understanding-the-process.md "mention")).
 
-In the editor panel on the left, find the `components`.&#x20;
+In the editor panel on the left, find the `components`.
 
 If you have deleted meshes, delete the corresponding components. If you have added extra entries, duplicate an existing component and change its `name` and `DepotPath`.
 
@@ -282,7 +282,7 @@ The easiest way to support only one body gender is to display an invisible item 
 
 As of now, the game will crash if the item is equipped by the unsupported body gender. Add a conditional appearance to prevent this:
 
-3. Open the `.app` file&#x20;
+3. Open the `.app` file
 4. For each entry in the `appearances` array, change the `name` field and add `&gender=w` or `&gender=m`
 
 {% hint style="info" %}
@@ -295,9 +295,9 @@ You can learn more about this under [dynamic-appearances-fine-tuning-visibility-
 Even if you are using a modded body, you should always work with the vanilla player body as a base, and create refits once you are certain that everything works as intende. CDPR's body is incredibly high-quality as a game asset, and it is the natural starting point to refit in any direction. It is much easier to refit medium boobs to either a flat chest or "more realistic female body" than it is to shrink humongous tits to vanilla proportions and further.
 {% endhint %}
 
-Thanks to ArchiveXL, body mod support has become trivial. Unfortunately, refitting has not become trivial and you will still have to do this in Blender (although the [wkit-blender-plugin-akl-autofitter.md](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md "mention")  can help).
+Thanks to ArchiveXL, body mod support has become trivial. Unfortunately, refitting has not become trivial and you will still have to do this in Blender (although the [wkit-blender-plugin-akl-autofitter.md](../../../../for-mod-creators-theory/modding-tools/wolvenkit-blender-io-suite/wkit-blender-plugin-akl-autofitter.md "mention") can help).
 
-To enable this feature, you only need to&#x20;
+To enable this feature, you only need to
 
 * change the `depotPath` in your components to include the `{body}` placeholder
 * re-name your mesh files to include the body's tag in their path (find a full list under [#supporting-mods](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/#supporting-mods "mention"))
@@ -311,7 +311,7 @@ new: *manavortex/equipment/torso_inner/my_custom_shirt/meshes/t1_079_p{gender}a_
 
 #### Change mesh file paths:
 
-Re-name all your existing meshes by adding `base_body`  to their paths. This **must** correspond to the `{body}`  placeholder in the component path.&#x20;
+Re-name all your existing meshes by adding `base_body` to their paths. This **must** correspond to the `{body}` placeholder in the component path.
 
 Example:
 
@@ -326,8 +326,8 @@ This mesh will be used if ArchiveXL can't detect any body-specific ones - so you
 
 For each refit you want to create,
 
-* copy the  `_base_body` .mesh
-* replace the `_base_body`  in its path with the camelcase tag for the modded body (see  [#supporting-mods](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/#supporting-mods "mention"))
+* copy the `_base_body` .mesh
+* replace the `_base_body` in its path with the camelcase tag for the modded body (see [#supporting-mods](../../../../for-mod-creators-theory/core-mods-explained/archivexl/archivexl-body-mods-and-refits/#supporting-mods "mention"))
 
 Example:
 
@@ -345,7 +345,7 @@ Before starting this section, create a copy of your `mesh_entity.ent` now (press
 {% endhint %}
 
 {% hint style="warning" %}
-If you stop before  "Exercise 1", the game will crash if users edit your yaml. Not only will the second half of this section prevent you from getting bug reports, but it will also show you what options you have to hook up different things, so it is well worth reading.
+If you stop before "Exercise 1", the game will crash if users edit your yaml. Not only will the second half of this section prevent you from getting bug reports, but it will also show you what options you have to hook up different things, so it is well worth reading.
 {% endhint %}
 
 This section will teach you how to make use of the variant to switch out item parts via `.yaml`. As a reminder, this is our yaml:
@@ -387,7 +387,7 @@ This approach is not recommended for anything user-editable because it **can lea
 
 ### Exercise 1: Other options
 
-Dynamic mesh picking based on yaml params saves a lot of duplication. However, **the game will crash** if you tell it to load a mesh that does not exist.&#x20;
+Dynamic mesh picking based on yaml params saves a lot of duplication. However, **the game will crash** if you tell it to load a mesh that does not exist.
 
 This is a problem, because if you enter `semurai` instead of `samurai`, the game will try to find (for female V)\
 `manavortex\equipment\torso_inner\my_custom_shirt\meshes\t1_079_pwa_tshirt__casual_dec_semurai.mesh`\

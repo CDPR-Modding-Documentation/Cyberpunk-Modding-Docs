@@ -12,8 +12,8 @@ This page explains the `.inkatlas` file and its logic.
 #### Wait, this is not what I want!
 
 * Learn how to make [adding-items-preview-images](../../../modding-guides/custom-icons-and-ui/adding-items-preview-images/ "mention")
-* Make a [custom Atelier icon](../../../modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration.md#generating-an-icon)
-* Find templates (by [Apart](https://app.gitbook.com/u/M4VsHKJyn3PakV5tOmAF87H61wh2 "mention")) in the wiki github's [file section](../../../_resources_and_assets/icons)
+* Make a [custom Atelier icon](../../../modding-guides/items-equipment/adding-new-items/adding-items-atelier-integration/#generating-an-icon)
+* Find templates (by [Apart](https://app.gitbook.com/u/M4VsHKJyn3PakV5tOmAF87H61wh2 "mention")) in the wiki github's [file section](../../../_resources_and_assets/icons/)
 * Make your own inkatlas with Python: find the script on [The Magnificent Doctor Presto's github](https://github.com/DoctorPresto/Cyberpunk-Helper-Scripts/blob/main/generate_inkatlas.py).\
   Check [running-python-scripts.md](../../../modding-guides/everything-else/running-python-scripts.md "mention") if you don't know how to use this.
 * Make your own inkatlas with Photoshop CC (Adobe Creative Suite required): find the plugin on [deadlymustard's github](https://github.com/deadlymustard/inkatlas-utils)
