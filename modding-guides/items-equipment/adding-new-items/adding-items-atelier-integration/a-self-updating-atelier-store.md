@@ -146,6 +146,7 @@ If you are using an [VendorsXL](https://www.nexusmods.com/cyberpunk2077/mods/196
   // read the vendor by name (you set this in your vendor's .yaml file)
   let vendor = TweakDBInterface.GetItemRecord(TDBID.Create("Character.tutorial_custom_vendor"));
   // check if the vendor is defined - if yes, set their inventory and update the record
+  // If your vendor is in the same mod as your atelier store, you can remove the check.
   if IsDefined(vendor) {
     TweakDBManager.SetFlat(t"Character.tutorial_custom_vendor.items", validTweaks);
     TweakDBManager.UpdateRecord(t"Character.tutorial_custom_vendor");  
