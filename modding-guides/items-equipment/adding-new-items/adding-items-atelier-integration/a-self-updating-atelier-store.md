@@ -168,3 +168,90 @@ If you are using an [VendorsXL](https://www.nexusmods.com/cyberpunk2077/mods/196
 ## Step 4: Enjoy!
 
 Bask in never having to update your atelier store (and vendor inventory) again, and take a moment to appreciate Buzzler, Ange(Berdragon)Vil and psiberx, who carried me through this script.
+
+#### Optional: Set quantity, quality and price per item
+
+The method above gives every item the same price and quality. If you want to set these values individually without editing your `.reds` file whenever you add an item, you can define them in your `.yaml` list instead.
+
+#### Step 1: Update your .yaml file
+
+Keep the same `YourCustomAtelierStore.Inventory` list, but use the following format for each entry:
+
+`Items.RecordID|Quantity|Quality|Price`
+
+```yaml
+YourCustomAtelierStore.Inventory:
+  $type: array:String
+  $value:
+    - !append-once "Items.Preset_Silverhand_3516"
+    - !append-once "Items.CommonMaterial1||Common"
+    - !append-once "Items.RareMaterial1|100|Rare|50"
+    - !append-once "Items.Q005_Johnny_Glasses||IconicItem|100"
+    - !append-once "Items.PerkPointSkillbook|||1000"
+```
+
+Any field after the item ID may be left empty. Its value will then come from the defaults at the top of your `.reds` file. For example, `|||1000` overrides only the price, while `||IconicItem|100` overrides quality and price. Keep the `|` separators in place.
+
+**Note:** When the price is omitted, some item tooltips may not display a price, even though checkout uses the default price of 1 €$ (observed in testing).
+
+#### Step 2: Update your Atelier .reds file
+
+Replace the registration method from Step 2 with the example below. Change the store ID, name and icon path to your own values. After that, new items only need a `.yaml` entry.
+
+```swift
+@addMethod(gameuiInGameMenuGameController)
+protected cb func RegisterYOURNAMESStore(event: ref<VirtualShopRegistration>) -> Bool {
+  // Defaults for omitted YAML fields.
+  let defaultQuantity: Int32 = 1;
+  let defaultQuality: String = "Legendary";
+  let defaultPrice: Int32 = 1;
+
+  let itemStrings: array<String>;
+  let quantities: array<Int32>;
+  let qualities: array<String>;
+  let prices: array<Int32>;
+  let entries = TweakDBInterface.GetStringArray(t"YourCustomAtelierStore.Inventory");
+
+  for entry in entries {
+    // Split ItemID|Quantity|Quality|Price; missing fields use defaults.
+    let input = entry + "||||";
+    let first = StrFindFirst(input, "|");
+    let itemID = StrLeft(input, first);
+    let rest = StrMid(input, first + 1);
+    let second = StrFindFirst(rest, "|");
+    let quantityText = StrLeft(rest, second);
+    rest = StrMid(rest, second + 1);
+    let third = StrFindFirst(rest, "|");
+    let qualityText = StrLeft(rest, third);
+    let priceRest = StrMid(rest, third + 1);
+    let priceText = StrLeft(priceRest, StrFindFirst(priceRest, "|"));
+
+    // Skip items from mods that are not installed.
+    if IsDefined(TweakDBInterface.GetItemRecord(TDBID.Create(itemID))) {
+      let quantity = defaultQuantity;
+      let quality = defaultQuality;
+      let price = defaultPrice;
+      if StrLen(quantityText) > 0 { quantity = StringToInt(quantityText); }
+      if StrLen(qualityText) > 0 { quality = qualityText; }
+      if StrLen(priceText) > 0 { price = StringToInt(priceText); }
+      ArrayPush(itemStrings, itemID);
+      ArrayPush(quantities, quantity);
+      ArrayPush(qualities, quality);
+      ArrayPush(prices, price);
+    }
+  }
+
+  event.AddStore(
+    n"YOURNAME",
+    "Your Store Name",
+    itemStrings,
+    prices,
+    r"tutorial/torso/my_custom_shirt/ops/atelier_icon.inkatlas",
+    n"slot_01",
+    qualities,
+    quantities
+  );
+}
+```
+
+Change `defaultQuantity`, `defaultQuality` and `defaultPrice` at the top if you want different values when a field is omitted. Items that have no matching TweakDB item record are skipped. This variant covers Atelier registration; if you also use the VendorsXL example in Step 3, its vendor inventory logic needs to be adapted separately.
