@@ -17,7 +17,7 @@ Here, you can inspect world nodes and their properties:
 
 <figure><img src="../../../.gitbook/assets/rht_world_inspector.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/world_inspector_show_vendor_id.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/wb_inspect_NPC.png" alt=""><figcaption><p>You can also inspect NPCs - you are four clicks away from turning her into a custom photo mode character (add .ent to project, find appearance in .ent, add .app file to project, run File -> Generate Files... -> Add Photomode Files)</p></figcaption></figure>
 
 ## World Inspector: Scan
 
@@ -25,7 +25,7 @@ Here, you can scan for any nodes around you:
 
 <figure><img src="../../../.gitbook/assets/rht_world_inspector_scan.png" alt=""><figcaption></figcaption></figure>
 
-If you expand the node properties, you can simply hide them at run-time, or use the integration with [Removal Editor](https://github.com/justarandomguyintheinternet/CP77_removalEditor) to create permanent preset.&#x20;
+If you expand the node properties, you can simply hide them at run-time, or use the integration with [Removal Editor](https://github.com/justarandomguyintheinternet/CP77_removalEditor) to create permanent preset.
 
 {% hint style="info" %}
 To copy the data string from a node (eg: Mesh Resource Path), place your mouse pointer over the text string then hold Shift and press the middle mouse button. This will copy the text string to the clipboard.
