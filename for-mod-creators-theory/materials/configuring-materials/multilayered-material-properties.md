@@ -9,7 +9,7 @@ description: Properties of the multilayered material
 **Created:** Jan 14 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
 **Last documented update:** Apr 07 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
-This page documents multilayered shader properties.&#x20;
+This page documents multilayered shader properties.
 
 * For an **overview** of glass shaders, see [cheat-sheet-materials.md](../../references-lists-and-overviews/cheat-sheet-materials.md "mention")-> [#multilayered](../../references-lists-and-overviews/cheat-sheet-materials.md#multilayered "mention")
 * For an **explanation** of material properties and further links, see [.](./ "mention")
@@ -20,7 +20,7 @@ If a layer with a greyscale mask is invisible, set MicroblendContrast in the `.m
 
 ## Multilayered Material
 
-For a full documentation, check the corresponding [page](../multilayered/).&#x20;
+For a full documentation, check the corresponding [page](../multilayered/).
 
 To set it up, use these keys for the "values" array of your material:
 
@@ -32,17 +32,15 @@ To set it up, use these keys for the "values" array of your material:
 
 <figure><img src="../../../.gitbook/assets/material_docu_multilayered_example.png" alt=""><figcaption><p>an example multilayered material</p></figcaption></figure>
 
-
-
 ## Material properties
 
 ### colorScale
 
-Sets a color from within the [mltemplate](multilayered-material-properties.md#what-is-the-mltemplate) file. Hex codes corresponds to rows and columns in substance painter.
+Sets a color from within the [mltemplate](multilayered-material-properties.md#what-is-the-mltemplate) file. The hex-code looking names correspond to rows and columns in substance painter: the first value corresponds to the hue, the second to the saturation. Surprisingly enough, hue sorting is consistent between files, whereas saturation sorting is not.
 
 ### material
 
-Depot path to the base material [mltemplate](multilayered-material-properties.md#what-is-the-mltemplate) from which the surface inherits its properties (lightbreaking, subsurface scattering…).&#x20;
+Depot path to the base material [mltemplate](multilayered-material-properties.md#what-is-the-mltemplate) from which the surface inherits its properties (lightbreaking, subsurface scattering…).
 
 Example values:\
 `base\surfaces\materials\paint\car_paint\car_paint_metallic_01.mltemplate`\
@@ -112,7 +110,7 @@ Like [#normalstrength](multilayered-material-properties.md#normalstrength "menti
 
 ### microblendOffsetU
 
-X-offset for the microblend texture.&#x20;
+X-offset for the microblend texture.
 
 ### microblendOffsetV
 
@@ -122,7 +120,7 @@ Y-offset for the microblend texture
 
 Discovered and shared by [Rebecca](https://discord.com/channels/717692382849663036/1082772930892664943/1358835907905589431), thanks a tonne!
 
-Using ClearCoat lets you put additional hues over an mlsetup:&#x20;
+Using ClearCoat lets you put additional hues over an mlsetup:
 
 <figure><img src="../../../.gitbook/assets/clearcoat_1.png" alt=""><figcaption></figcaption></figure>
 
