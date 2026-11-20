@@ -150,7 +150,7 @@ You then need to import over an [already-existing .mesh file](troubleshooting-yo
 
 ### But the add-on let me export!
 
-Then some vertex groups had vertex weights so small that Blender rounded them down to 0.&#x20;
+Then some vertex groups had vertex weights so small that Blender rounded them down to 0.
 
 Import the exported `.glb` file and run the checks again — some verts will have no weight now, and you can fix them.
 
@@ -260,6 +260,12 @@ If you don't have a 3d print entry in the tools of your 3d viewport, you might n
 ### My mesh explodes!
 
 This is most likely an issue with Garment Support. Please check the corresponding wiki page for troubleshooting, especially the part about [unique IDs](garment-support-how-does-it-work/#my-garment-support-explodes-on-contact-with-another-item).
+
+### My mesh appears twisted/inverted
+
+Mesh imports/exports work differently after Blender plugin version 2.5. If you're parenting to an armature from a `.glb` that was exported before Blender plugin version 2.5, your mesh is going to be twisted in-game.
+
+To resolve this, get a fresh armature from an import on Blender plugin version 2.5 (e.g. you can use [#option-2-the-netrunner-suit](troubleshooting-your-mesh-edits.md#option-2-the-netrunner-suit "mention")) and re-export your mesh pointing to that armature.
 
 ### My mesh won't show up
 
