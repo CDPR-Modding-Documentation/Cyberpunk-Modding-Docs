@@ -22,6 +22,7 @@ You need to
 * Install `vcrun2022`
 * Adjust the Steam launch option to be:\
   `WINEDLLOVERRIDES="winmm,version=n,b" %command%`
+* If you experience the game not launching with Redscript installed, change your launch arguments to be: `WINEDLLOVERRIDES="winmm,version=n,b" TZ=UTC %command%`
 
 {% hint style="danger" %}
 The guide below has been confirmed working for dozens of people on SteamDeck, various Linux distributions, and Mac OS. Follow it **by the letter** and it will work for you as well.
@@ -152,13 +153,9 @@ Variable Name and Value are both case sensitive, Copy-paste for certainty.
 Anything that includes **`=`** and doesn't start with **`-`** goes to Environment Variables, while things starting with\*\*`-`**usually go under Game Arguments, for example**`-skipStartScreen`\*\*
 {% endhint %}
 
-
-
 ## You're not done just yet!
 
 So far you've just installed the dependencies, head back to [Using Mods: Manual Install](https://wiki.redmodding.org/cyberpunk-2077-modding/for-mod-users/users-modding-cyberpunk-2077#manual-install) to continue
-
-
 
 ## Troubleshooting
 
@@ -193,6 +190,11 @@ WINEPREFIX=~/.local/share/Steam/steamapps/compatdata/1091500/pfx winetricks -q -
 This is the most common error. You wouldn't believe how often people show up in the support discord channel, yell in frustration for 10 minutes, and then found out that they included an extra space, forgot a letter, or made a simple typo.
 
 Do not be these people. Copy-paste from the guide and delete any extra spaces.
+
+#### My game won't launch at all with Redscript installed!
+
+There is an outstanding bug with Redscript's logging library under proton.\
+If your game does not launch with it installed ensure your launch arguments include `TZ=UTC` like so: `WINEDLLOVERRIDES="winmm,version=n,b" TZ=UTC %command%`
 
 #### “Invalid file magic number”
 
