@@ -6,8 +6,8 @@ description: psiberx's RedHotTools - a powerful utility for better mod developme
 
 ## Summary
 
-**Created:** Jun 13 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
-**Last documented edit:** Aug 18 2024 by [manavortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
+**Created:** Jun 13 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")\
+**Last documented edit:** Aug 18 2024 by [mana vortex](https://app.gitbook.com/u/NfZBoxGegfUqB33J9HXuCs6PVaC3 "mention")
 
 This page will give you an overview about psiberx's mod **RedHotTools**, give you an [#installation-guide](./#installation-guide "mention"), and link you to more detailed documentation on the sub-pages.
 
@@ -44,13 +44,20 @@ This feature is enabled automatically
 
 ## Installation guide
 
-### Without a mod manager
-
 You can download RedHotTools on [psiberx's github](https://github.com/psiberx/cp2077-red-hot-tools/releases):
 
-<figure><img src="../../../.gitbook/assets/install_redhottools.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/redhottools_install_download.png" alt=""><figcaption></figcaption></figure>
 
-To install it, extract both downloaded files **directly** into your [Cyberpunk 2077 game directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/).
+### With Vortex
+
+Drag\&drop the zip file that you downloaded on Vortex, then follow the instructions.
+
+### Manual install
+
+1. Open the .zip file that you downloaded.&#x20;
+2. If it contains a top level folder starting with RedHotTools, go into that folder
+3. You should see two folders: `bin` and `red4ext`&#x20;
+4. Extract these folders **directly** into your [Cyberpunk 2077 game directory](../../../for-mod-users/users-modding-cyberpunk-2077/the-cyberpunk-2077-game-directory/) (you can drag\&drop them) so that they merge with the existing folders.
 
 ### With Mod Organizer 2
 
@@ -60,7 +67,7 @@ Historically, RHT and MO2 have not been officially compatible, which means you c
 2. Run your game once and quit normally (if it's a truly clean install, you should get prompted to set up your CET hotkey).
 3. You should now have some files in your MO2 Overwrite; let's back those up, as it will contain (among other things) your CET bind. Create an empty mod called "Overwrites", right-click on Overwrite and "Move content to mod..." to your new empty mod. Consider this a backup you can always go back to if installing RHT messes up your install.
 
-<figure><img width="201" height="309" alt="image" src="https://github.com/user-attachments/assets/cb9d4359-f3f3-4e49-ae6b-f2dab9b15773" /><figcaption><p>MO2 "Create empty mod"</p></figcaption></figure>
+<figure><img src="https://github.com/user-attachments/assets/cb9d4359-f3f3-4e49-ae6b-f2dab9b15773" alt="image" height="309" width="201"><figcaption><p>MO2 "Create empty mod"</p></figcaption></figure>
 
 4. Install RHT and RHT Overlay as two separate mods, using "Install mod" on each .zip file downloaded from the [GitHub releases for RHT](https://github.com/psiberx/cp2077-red-hot-tools/releases). Importantly, do NOT install RHT via Wolvenkit's Plugins page (actually make sure it's actively uninstalled)!
 5. Now you should be able to use hot reload. Unfortunately, you can't use the Hot Reload shortcut from Wolvenkit, but you can do it manually: While your game is running, move your `.archive` file for your mod (found in `/(your_project)/packed/archive/pc/mod`) into the `/archive/pc/hot` folder. Your `.archive` file will disappear while in that folder, which should mean the game picked up your changes. Each time you make changes to your mod, click Create Zip in Wolvenkit, and drag the `.archive` into the `hot` folder to see them show up immediately!
