@@ -44,6 +44,10 @@ This feature is enabled automatically
 
 ## Installation guide
 
+{% hint style="info" %}
+You need to have [RED4Ext](https://www.nexusmods.com/cyberpunk2077/mods/2380) and [CET](https://www.nexusmods.com/cyberpunk2077/mods/107) installed to use RHT
+{% endhint %}
+
 You can download RedHotTools on [psiberx's github](https://github.com/psiberx/cp2077-red-hot-tools/releases):
 
 <figure><img src="../../../.gitbook/assets/redhottools_install_download.png" alt=""><figcaption></figcaption></figure>
